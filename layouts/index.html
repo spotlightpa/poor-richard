@@ -1,1 +1,11 @@
-{{ define "noop" }}{{ end }}
+{{ define "main" }}
+  <section class="hero is-primary is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="title">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

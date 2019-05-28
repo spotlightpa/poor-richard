@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 </head>
 <body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        Home
+      </a>
+    </div>
+  </nav>
   <main>
     {{ block "main" . }}
       {{ .Content }}
