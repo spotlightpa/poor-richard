@@ -1,6 +1,6 @@
 [build]
 base = ""
-command = "hugo version && hugo --minify"
+command = "hugo version && hugo --debug || { sleep 120; false; }"
 publish = "public"
 
 [build.environment]
