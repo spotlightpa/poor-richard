@@ -1,0 +1,13 @@
+{
+  "name": "poor-richard",
+  "version": "0.0.1",
+  "description": "Static website for Spotlight PA",
+  "repository": "git@github.com:spotlightpa/poor-richard.git",
+  "author": "Spotlight PA",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "bulma": "^0.7.5",
+    "postcss-cli": "^6.1.2"
+  }
+}

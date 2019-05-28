@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
+  {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 </head>
 <body>
   <main>
