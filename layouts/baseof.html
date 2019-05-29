@@ -15,6 +15,13 @@
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
+
+  {{ $icon := resources.Get "/img/logo-816.png" }}
+  {{ range $size := slice "32x32" "192x192" "720x720" }}
+    {{ $iconShrunk := $icon.Resize $size | fingerprint }}
+    <link rel="shortcut icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
+    <link rel="apple-touch-icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
+  {{ end }}
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
