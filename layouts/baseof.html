@@ -15,9 +15,9 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        Home
-      </a>
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+      {{ end }}
     </div>
   </nav>
   <main>
