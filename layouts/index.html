@@ -1,5 +1,10 @@
 {{ define "main" }}
-  <section class="hero is-capitol is-large">
+  {{ $bgImg := resources.Get "/img/capitol-bw.jpeg" }}
+  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+  <section
+    class="hero is-capitol is-large"
+    style="background-image: url('{{ $bgImg.RelPermalink }}');"
+  >
     <div class="hero-body">
       <div class="container">
         <div class="title">
