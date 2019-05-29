@@ -3,8 +3,15 @@
     <div class="hero-body">
       <div class="container">
         <div class="title">
-          {{ .Content }}
+            {{ .Description|markdownify }}
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        {{ .Content }}
       </div>
     </div>
   </section>
