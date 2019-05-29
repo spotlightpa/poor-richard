@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="title">
-            {{ .Description|markdownify }}
+            {{ .Param "hero-content" | markdownify }}
         </div>
       </div>
     </div>
