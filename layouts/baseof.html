@@ -24,13 +24,7 @@
   {{ end }}
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
-      {{ end }}
-    </div>
-  </nav>
+  {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
   <main>
     {{ block "main" . }}
       {{ .Content }}

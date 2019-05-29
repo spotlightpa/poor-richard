@@ -7,6 +7,6 @@ enableRobotsTXT = true
 
 [[menu.main]]
     name = "Home"
-    logo = "tktk"
+    identifier = "home"
     url = "/"
     weight = 1

@@ -1,0 +1,21 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    {{ range .Site.Menus.main }}
+      {{ if eq .Identifier "home" }}
+        {{ $logo := resources.Get "/img/banner-3840.png" }}
+        {{ $logo = $logo.Resize "x28" | fingerprint }}
+        <a href="{{ .URL }}" class="navbar-item">
+          <img
+            src="{{ $logo.RelPermalink }}"
+            alt="{{ .Name }}"
+            height="28"
+          >
+        </a>
+      {{ else }}
+        <a href="{{ .URL }}" class="navbar-item">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</nav>
