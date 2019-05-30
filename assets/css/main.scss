@@ -1,24 +1,24 @@
-$spotlight-lightblue: #99D9F1;
-$spotlight-lightblue-trans: rgba(0, 160, 220, .40);
+$spotlight-lightblue: #99d9f1;
+$spotlight-lightblue-trans: rgba(0, 160, 220, 0.4);
 $spotlight-darkblue: rgba(0, 158, 219, 1);
 
 $primary: $spotlight-darkblue;
 $info: $spotlight-lightblue;
 
-@import 'bulma.sass';
+@import "bulma.sass";
 
 .is-capitol {
-    background-color: #ccc;
-    background-size: cover;
-    background-position: center;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
 
-    .title {
-        background-color: $info;
-        color: white;
-        padding: $radius;
-    }
+  .title {
+    background-color: $info;
+    color: white;
+    padding: $radius;
+  }
 
-    strong {
-        color: $primary;
-    }
+  strong {
+    color: $primary;
+  }
 }
