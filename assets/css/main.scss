@@ -4,7 +4,14 @@ $spotlight-darkblue: rgba(0, 158, 219, 1);
 
 $primary: $spotlight-darkblue;
 $info: $spotlight-lightblue;
+$weight-light: 300;
+$weight-normal: 500;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 900;
+$family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
 
+@import "fonts.scss";
 @import "bulma.sass";
 
 .is-capitol {
@@ -20,5 +27,6 @@ $info: $spotlight-lightblue;
 
   strong {
     color: $primary;
+    font-weight: $weight-bold;
   }
 }
