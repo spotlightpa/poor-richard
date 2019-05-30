@@ -1,9 +1,32 @@
 [build]
 base = ""
-command = "hugo version && hugo --debug || { sleep 120; false; }"
+command = "hugo version && hugo --minify"
 publish = "public"
 
 [build.environment]
 HUGO_VERSION = "0.55.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview]
+command = """
+    hugo version &&
+    hugo --debug --minify --environment stage --baseURL $DEPLOY_PRIME_URL ||
+    { sleep 120; false; }
+"""
+
+[context.branch-deploy]
+command = """
+    hugo version &&
+    hugo --minify --environment stage --baseURL $DEPLOY_PRIME_URL
+"""
+
+[[headers]]
+for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable" # 1 year
+
+[[headers]]
+for = "/*.(jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)"
+[headers.values]
+Cache-Control = "public, max-age=1209600" # 2 weeks
