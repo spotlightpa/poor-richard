@@ -1,4 +1,5 @@
-$spotlight-lightblue: rgba(0, 160, 220, .40);
+$spotlight-lightblue: #99D9F1;
+$spotlight-lightblue-trans: rgba(0, 160, 220, .40);
 $spotlight-darkblue: rgba(0, 158, 219, 1);
 
 $primary: $spotlight-darkblue;
@@ -10,15 +11,14 @@ $info: $spotlight-lightblue;
     background-color: #ccc;
     background-size: cover;
     background-position: center;
-    * {
-        color: white;
-        text-shadow: #222 0 0 $radius;
-    }
+
     .title {
         background-color: $info;
+        color: white;
+        padding: $radius;
     }
+
     strong {
-        color: black;
-        text-shadow: #fff 0 0 $radius;
+        color: $primary;
     }
 }
