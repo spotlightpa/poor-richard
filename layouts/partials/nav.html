@@ -2,13 +2,11 @@
   <div class="navbar-brand">
     {{ range .Site.Menus.main }}
       {{ if eq .Identifier "home" }}
-        {{ $logo := resources.Get "/img/banner-3840.png" }}
-        {{ $logo = $logo.Resize "x28" | fingerprint }}
+        {{ $logo := resources.Get "/img/banner.svg" | fingerprint }}
         <a href="{{ .URL }}" class="navbar-item">
           <img
             src="{{ $logo.RelPermalink }}"
             alt="{{ .Name }}"
-            height="28"
           >
         </a>
       {{ else }}
