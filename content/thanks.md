@@ -1,5 +1,5 @@
 +++
-title = "Thanks You"
+title = "Thank You"
 type = "thanks-page"
 +++
 
