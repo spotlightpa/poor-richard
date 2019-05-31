@@ -16,8 +16,8 @@
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 
-  {{ $icon := resources.Get "/img/logo-816.png" }}
-  {{ $iconSolid := resources.Get "/img/logo-whitebg-816.png" }}
+  {{ $icon := resources.Get "/img/logos/logo-816.png" }}
+  {{ $iconSolid := resources.Get "/img/logos/logo-whitebg-816.png" }}
   {{ range $size := slice "32x32" "192x192" "720x720" }}
     {{ $iconShrunk := $icon.Resize $size | fingerprint }}
     <link rel="shortcut icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
@@ -37,5 +37,7 @@
       {{ .Content }}
     {{ end }}
   </main>
+  {{ block "signup" . }}{{ partial "signup.html" . }}{{ end }}
+  {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 </body>
 </html>

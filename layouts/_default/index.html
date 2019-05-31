@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $bgImg := resources.Get "/img/capitol-bw.jpeg" }}
+  {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
   {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
   <section
     class="hero is-capitol is-large"
@@ -7,8 +7,10 @@
   >
     <div class="hero-body">
       <div class="container">
-        <div class="title is-size-5-mobile">
+        <div class="title has-background-info">
+          <span class="is-size-5-mobile has-text-white">
             {{ .Param "hero-content" | markdownify }}
+          </span>
         </div>
       </div>
     </div>

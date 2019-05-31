@@ -1,0 +1,44 @@
+{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" | fingerprint }}
+{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" | fingerprint }}
+
+<form
+  class="section has-background-info"
+  action="/thanks/"
+  method="post"
+  netlify
+>
+  <p class="is-hidden">
+    <label>
+      Don’t fill this out if you're human: <input name="bot-field">
+    </label>
+  </p>
+  <div class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <label class="label is-medium" for="signup-email">
+        Sign up for news about Spotlight PA
+      </label>
+      <fieldset class="field has-addons">
+        <div class="control has-icons-left has-icons-right is-expanded">
+          <input
+            id="signup-email"
+            class="input is-large"
+            type="email"
+            name="email"
+            placeholder="janedoe@example.com"
+          >
+          <span class="icon is-large is-left has-text-primary">
+            {{ $iconEmail.Content|safeHTML }}
+          </span>
+          <span class="icon is-large is-right validator-icon">
+            {{ $iconCheck.Content|safeHTML }}
+          </span>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-large is-primary">
+            Sign Up
+          </button>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</form>

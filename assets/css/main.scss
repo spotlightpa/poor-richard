@@ -20,8 +20,6 @@ $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
   background-position: center;
 
   .title {
-    background-color: $info;
-    color: white;
     padding: $radius;
   }
 
@@ -29,4 +27,17 @@ $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
     color: $primary;
     font-weight: $weight-bold;
   }
+}
+
+.icon svg {
+  fill: currentColor;
+  height: 1em;
+}
+
+.input:valid:not(:placeholder-shown) ~ .validator-icon {
+  color: $success !important;
+}
+
+.input:invalid:not(:placeholder-shown) ~ .validator-icon {
+  visibility: hidden;
 }

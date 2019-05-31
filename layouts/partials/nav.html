@@ -2,7 +2,7 @@
   <div class="navbar-brand">
     {{ range .Site.Menus.main }}
       {{ if eq .Identifier "home" }}
-        {{ $logo := resources.Get "/img/banner.svg" | fingerprint }}
+        {{ $logo := resources.Get "/img/logos/banner.svg" | fingerprint }}
         <a href="{{ .URL }}" class="navbar-item">
           <img
             src="{{ $logo.RelPermalink }}"
