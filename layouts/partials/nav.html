@@ -1,19 +1,18 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
+    {{ $logo := resources.Get "/img/logos/banner.svg" }}
+    <a href="/" class="navbar-item">
+      <img
+        src="data:image/svg+xml;base64,{{ $logo.Content|base64Encode }}"
+        alt="{{ .Name }}"
+        width="100"
+
+      >
+    </a>
     {{ range .Site.Menus.main }}
-      {{ if eq .Identifier "home" }}
-        {{ $logo := resources.Get "/img/logos/banner.svg" | fingerprint }}
-        <a href="{{ .URL }}" class="navbar-item">
-          <img
-            src="{{ $logo.RelPermalink }}"
-            alt="{{ .Name }}"
-          >
-        </a>
-      {{ else }}
-        <a href="{{ .URL }}" class="navbar-item">
-          {{ .Name }}
-        </a>
-      {{ end }}
+      <a href="{{ .URL }}" class="navbar-item">
+        {{ .Name }}
+      </a>
     {{ end }}
   </div>
 </nav>

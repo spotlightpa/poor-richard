@@ -1,7 +1,36 @@
 <footer class="footer has-background-grey-lighter">
-  <div class="content has-text-centered">
-    <p>
-      &copy; {{ now.Format "2006" }}
-    </p>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <h3 class="has-text-weight-bold">Pages</h3>
+        <ul>
+          {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL }}" class="">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="column is-3">
+        <h3 class="has-text-weight-bold">Follow Us</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/SpotlightPennsylvania" class="">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/SpotlightPA" class="">
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <p class="has-text-centered">
+    &copy; {{ now.Format "2006" }}
+  </p>
 </footer>

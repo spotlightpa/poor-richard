@@ -17,3 +17,16 @@ googleAnalytics = "UA-141126362-1"
     identifier = "home"
     url = "/"
     weight = 1
+
+
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    identifier = "contact"
+    url = "/contact/"
+    weight = 3
