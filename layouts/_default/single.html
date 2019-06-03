@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
+  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+  <section
+    class="hero is-capitol is-large"
+    style="background-image: url('{{ $bgImg.RelPermalink }}');"
+  >
+    <div class="hero-body">
+      <div class="container">
+        <div class="title has-background-info">
+          <span class="is-size-5-mobile has-text-white">
+            {{ .Param "hero-content" | markdownify }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}

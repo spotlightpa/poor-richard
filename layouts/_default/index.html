@@ -1,25 +1,63 @@
 {{ define "main" }}
+  {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" | fingerprint }}
+  {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" | fingerprint }}
   {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
   {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
-  <section
-    class="hero is-capitol is-large"
-    style="background-image: url('{{ $bgImg.RelPermalink }}');"
-  >
-    <div class="hero-body">
-      <div class="container">
-        <div class="title has-background-info">
-          <span class="is-size-5-mobile has-text-white">
-            {{ .Param "hero-content" | markdownify }}
-          </span>
+  <div class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-half is-parent">
+        <div class="tile is-child notification is-primary">
+          <form name="signup-homepage" class=" container is-fluid control">
+            <h2 class="title">
+              Get Updates from Spotlight PA
+            </h2>
+            <div class="field">
+              <div class="control">
+                <input class="input is-medium" type="text" placeholder="Jane Doe">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left has-icons-right is-expanded">
+                <input
+                  class="input is-medium"
+                  type="email"
+                  name="email"
+                  placeholder="janedoe@example.com"
+                >
+                <span class="icon is-large is-left has-text-primary">
+                  {{ $iconEmail.Content|safeHTML }}
+                </span>
+                <span class="icon is-large is-right validator-icon">
+                  {{ $iconCheck.Content|safeHTML }}
+                </span>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <button type="submit" class="button is-white is-large">Get Updates</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="columns">
-      <div class="content column is-three-fifths is-offset-one-fifth">
-        {{ .Content }}
+      <div class="tile is-half is-parent">
+        <section
+          class="tile is-child notification is-capitol"
+          style="background-image: url('{{ $bgImg.RelPermalink }}');"
+        >
+          <div class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <div class="title has-background-info">
+                  <span class="is-size-5-mobile has-text-white">
+                    {{ .Param "hero-content" | markdownify }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+  </div>
 {{ end }}
