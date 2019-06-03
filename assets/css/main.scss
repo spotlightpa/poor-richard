@@ -12,6 +12,12 @@ $weight-semibold: 600;
 $weight-bold: 900;
 $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
 
+// Responsive wrap fallback
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 @import "fonts.scss";
 @import "bulma.sass";
 
