@@ -29,6 +29,12 @@ $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
   }
 }
 
+main {
+  $chrome-size: $navbar-height + nth($footer-padding, 1) +
+    nth($footer-padding, 3);
+  min-height: calc(100vh - #{$chrome-size});
+}
+
 .icon svg {
   fill: currentColor;
   height: 1em;
