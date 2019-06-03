@@ -4,9 +4,14 @@ description = "Holding powerful private and public forces across Pennsylvania to
 hero-content = "The mission of **Spotlight PA** is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
 +++
 
-Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
+<strong class="has-text-primary">Spotlight PA</strong> is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
 
-Our collaborative newsroom is powered by the Lenfest Institute for Journalism and The Philadelphia Inquirer in partnership with the Pittsburgh Post­Gazette and LNP Media Group. Spotlight PA strives to serve as a collaborator and resource to all newsrooms in the state to help uncover and enhance stories of statewide importance that otherwise would go unnoticed or untold. We pursue investigations with the potential for meaningful, real­world change, and that’s the sole measure of our success.
+Our collaborative newsroom is powered by the [Lenfest Institute for Journalism][lenfest] and [The Philadelphia Inquirer][inky] in partnership with the [Pittsburgh Post­-Gazette][pg] and [LNP Media Group][lnp]. Spotlight PA strives to serve as a collaborator and resource to all newsrooms in the state to help uncover and enhance stories of statewide importance that otherwise would go unnoticed or untold. We pursue investigations with the potential for meaningful, real­world change, and that’s the sole measure of our success.
+
+[lenfest]: https://www.lenfestinstitute.org
+[inky]: https://www.inquirer.com
+[pg]: https://www.post-gazette.com
+[lnp]: https://lnpmediagroup.com
 
 Investigative reporting takes time, money and dedicated journalists. Unfortunately, aggressive reporting on Pennsylvania’s state government has withered as newsrooms have faced financial pressure and cut back on coverage. With the support of donors and readers, like you, Spotlight PA fills that void in a bold way, deploying a team of talented journalists with a diverse set of skills and experiences to investigate one of the largest, costliest and most opaque state capitals in the U.S.
 
