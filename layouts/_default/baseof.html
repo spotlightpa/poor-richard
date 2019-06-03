@@ -16,13 +16,11 @@
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 
-  {{ $icon := resources.Get "/img/logos/logo-816.png" }}
-  {{ $iconSolid := resources.Get "/img/logos/logo-whitebg-816.png" }}
+  {{ $icon := resources.Get "/img/logos/logo-dark-894.png" }}
   {{ range $size := slice "32x32" "192x192" "720x720" }}
     {{ $iconShrunk := $icon.Resize $size | fingerprint }}
     <link rel="shortcut icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
-    {{ $iconSolidShrunk := $iconSolid.Resize $size | fingerprint }}
-    <link rel="apple-touch-icon" href="{{ $iconSolidShrunk.RelPermalink }}" sizes="{{ $size }}">
+    <link rel="apple-touch-icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
   {{ end }}
 
   {{ range slice "500" "600" "900" }}
