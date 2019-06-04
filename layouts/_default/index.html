@@ -1,15 +1,24 @@
 {{ define "main" }}
-  {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" | fingerprint }}
-  {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" | fingerprint }}
+  {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+  {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
   {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
   {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
   <div class="section">
     <div class="tile is-ancestor">
       <div class="tile is-half is-parent">
         <div class="tile is-child notification is-primary">
-          <form name="signup-homepage" class=" container is-fluid control">
+          <form
+            name="signup-homepage"
+            class=" container is-fluid control"
+            action="/thanks/"
+            method="post"
+            netlify
+          >
             <h2 class="title">
-              Get Updates from Spotlight PA
+              <span class="has-text-info">
+                Get Updates from
+              </span>
+              Spotlight PA
             </h2>
             <div class="field">
               <div class="control">
@@ -32,9 +41,14 @@
                 </span>
               </div>
             </div>
-            <div class="field is-grouped">
+            <div class="field is-grouped is-grouped-right">
               <div class="control">
-                <button type="submit" class="button is-white is-large">Get Updates</button>
+                <button
+                  type="submit"
+                  class="button is-medium"
+                >
+                  Get Updates
+                </button>
               </div>
             </div>
           </form>
