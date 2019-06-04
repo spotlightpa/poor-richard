@@ -16,6 +16,12 @@
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
 
+  {{ if .Param "no-index" }}
+    <meta name="robots" content="noindex">
+  {{ else }}
+    <meta name="robots" content="index,follow">
+  {{ end }}
+
   {{ $icon := resources.Get "/img/logos/logo-dark-894.png" }}
   {{ range $size := slice "32x32" "192x192" "720x720" }}
     {{ $iconShrunk := $icon.Resize $size | fingerprint }}
