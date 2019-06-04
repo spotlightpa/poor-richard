@@ -10,4 +10,8 @@ type = "contact-page"
 +++
 
 # Contact Spotlight PA
-To send in a news tip, please email [tips@spotlightpa.org](mailto:tips@spotlightpa.org). For general comments, please use the form below.
+To send in a news tip, please email [tips@spotlightpa.org](mailto:tips@spotlightpa.org).
+
+For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org)
+
+For general comments, please use the form below.
