@@ -16,28 +16,32 @@
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth">
       <label class="label is-medium" for="signup-email">
-        Sign up for news about Spotlight PA
+        Sign up for news about Spotlight PA
       </label>
-      <div class="field has-addons">
-        <div class="control has-icons-left has-icons-right is-expanded">
-          <input
-            id="signup-email"
-            class="input is-large"
-            type="email"
-            name="email"
-            placeholder="janedoe@example.com"
-          >
-          <span class="icon is-large is-left has-text-primary">
-            {{ $iconEmail.Content|safeHTML }}
-          </span>
-          <span class="icon is-large is-right validator-icon">
-            {{ $iconCheck.Content|safeHTML }}
-          </span>
+      <div class="field-body">
+        <div class="field has-addons">
+          <div class="control has-icons-left has-icons-right is-expanded">
+            <input
+              id="signup-email"
+              class="input is-large is-medium-mobile"
+              type="email"
+              name="email"
+              placeholder="janedoe@example.com"
+            >
+            <span class="icon is-large is-left has-text-primary">
+              {{ $iconEmail.Content|safeHTML }}
+            </span>
+            <span class="icon is-large is-right validator-icon">
+              {{ $iconCheck.Content|safeHTML }}
+            </span>
+          </div>
         </div>
-        <div class="control">
-          <button type="submit" class="button is-large is-primary">
-            Get Updates
-          </button>
+        <div class="field">
+          <div class="control">
+            <button type="submit" class="button is-large is-primary">
+              Get Updates
+            </button>
+          </div>
         </div>
       </div>
     </div>

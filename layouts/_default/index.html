@@ -1,8 +1,23 @@
 {{ define "main" }}
+  {{ $banner := resources.Get "/img/logos/banner.svg" }}
+  {{ $bannerURL := $banner.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
   {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
   {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
   {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
   {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+
+  <div class="section">
+    <picture class="level">
+      <p class="level-item has-text-centered">
+        <img
+          src="{{ $bannerURL }}"
+          alt="Spotlight PA banner"
+          style="max-width: 75vw;"
+        >
+      </p>
+    </picture>
+  </div>
+
   <div class="section">
     <div class="tile is-ancestor">
       <div class="tile is-half is-parent">
@@ -19,11 +34,11 @@
                 Don’t fill this out if you're human: <input name="bot-field">
               </label>
             </p>
-            <h2 class="title">
+            <h2 class="title is-size-4-mobile">
               <span class="has-text-info">
-                Get Updates from
+                Get updates from
               </span>
-              Spotlight PA
+              Spotlight PA
             </h2>
             <div class="field">
               <div class="control">

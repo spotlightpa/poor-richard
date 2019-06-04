@@ -1,26 +1,49 @@
-<nav class="navbar has-background-white-bis" role="navigation" aria-label="main navigation">
+<nav
+  class="navbar has-background-white-bis"
+  role="navigation"
+  aria-label="main navigation"
+>
   <div class="navbar-brand">
-    {{ $logo := resources.Get "/img/logos/banner.svg" }}
+    {{ $logo := resources.Get "/img/logos/logo-dark.svg" }}
+    {{ $logoURL := $logo.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
     <a href="/" class="navbar-item">
       <img
-        src="data:image/svg+xml;base64,{{ $logo.Content|base64Encode }}"
-        alt="{{ .Name }}"
-        width="100"
-
+        src="{{ $logoURL }}"
+        alt="Spotlight PA logo"
+        width="50"
       >
     </a>
-    {{ $thisPage := .Page }}
-    {{ range .Site.Menus.main }}
-      {{ $cls := "" }}
-      {{ if $thisPage.IsMenuCurrent "main" . }}
-        {{ $cls = " is-active" }}
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="#navbar-menu-items,.navbar-burger"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div
+    id="navbar-menu-items"
+    class="navbar-menu"
+  >
+    <div class="navbar-start">
+      {{ $thisPage := .Page }}
+      {{ range .Site.Menus.main }}
+        {{ $cls := "" }}
+        {{ if $thisPage.IsMenuCurrent "main" . }}
+          {{ $cls = " is-active" }}
+        {{ end }}
+        <a
+          href="{{ .URL }}"
+          class="navbar-item {{- $cls -}}"
+        >
+          {{ .Name }}
+        </a>
       {{ end }}
-      <a
-        href="{{ .URL }}"
-        class="navbar-item {{- $cls -}}"
-      >
-        {{ .Name }}
-      </a>
-    {{ end }}
+    </div>
   </div>
 </nav>
