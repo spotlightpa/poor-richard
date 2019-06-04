@@ -35,7 +35,9 @@
       {{ .Content }}
     {{ end }}
   </main>
-  {{ block "signup" . }}{{ partial "signup.html" . }}{{ end }}
-  {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+  <footer>
+    {{ block "signup" . }}{{ partial "signup.html" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+  </footer>
 </body>
 </html>
