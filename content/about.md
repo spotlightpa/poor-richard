@@ -2,6 +2,12 @@
 title = "About Spotlight PA"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism"
 hero-content = "The mission of **Spotlight PA** is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
+
+[menu.main]
+    identifier = "about"
+    name = "About"
+    pre = ""
+    weight = 2
 +++
 
 <strong class="has-text-primary">Spotlight PA</strong> is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.

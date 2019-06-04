@@ -9,8 +9,16 @@
 
       >
     </a>
+    {{ $thisPage := .Page }}
     {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="navbar-item">
+      {{ $cls := "" }}
+      {{ if $thisPage.IsMenuCurrent "main" . }}
+        {{ $cls = " is-active" }}
+      {{ end }}
+      <a
+        href="{{ .URL }}"
+        class="navbar-item {{- $cls -}}"
+      >
         {{ .Name }}
       </a>
     {{ end }}
