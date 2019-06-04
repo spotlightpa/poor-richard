@@ -1,0 +1,114 @@
+{{ define "main" }}
+  {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+  {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+  <form
+    name="contact-page"
+    class="section control"
+    action="/contact/thanks/"
+    method="post"
+    netlify
+  >
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="contact-name">From</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded">
+                <input
+                  id="contact-name"
+                  class="input"
+                  type="text"
+                  placeholder="Jane Doe"
+                  name="name"
+                  required
+                >
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="janedoe@example.com"
+                  name="email"
+                  required
+                >
+                <span class="icon is-left has-text-primary">
+                  {{ $iconEmail.Content|safeHTML }}
+                </span>
+                <span class="icon is-right validator-icon">
+                  {{ $iconCheck.Content|safeHTML }}
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="contact-subject">Subject</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input
+                  id="contact-subject"
+                  class="input"
+                  type="text"
+                  placeholder="My question about Spotlight PA"
+                  name="subject"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="contact-comment">Comment</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea
+                  id="contact-comment"
+                  class="textarea"
+                  placeholder="Explain how we can help you"
+                  name="comment"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <!-- Left empty for spacing -->
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <button
+                  class="button is-primary"
+                  type="submit"
+                >
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+{{ end }}
