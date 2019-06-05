@@ -13,13 +13,15 @@ function on(ev, qs, cb) {
   });
 }
 
-on("click", "[data-target]", function(ev) {
-  var targets = ev.currentTarget.getAttribute("data-target");
-  var toggleClass = ev.currentTarget.getAttribute("data-toggle-class");
-  toggleClass = toggleClass ? toggleClass : "is-active";
-  if (targets) {
-    each(targets, function(el) {
-      el.classList.toggle(toggleClass);
-    });
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  on("click", "[data-target]", function(ev) {
+    var targets = ev.currentTarget.getAttribute("data-target");
+    var toggleClass = ev.currentTarget.getAttribute("data-toggle-class");
+    toggleClass = toggleClass ? toggleClass : "is-active";
+    if (targets) {
+      each(targets, function(el) {
+        el.classList.toggle(toggleClass);
+      });
+    }
+  });
 });

@@ -10,8 +10,8 @@
   {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
-  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
-  <script defer src='{{ $js.RelPermalink }}'></script>
+  {{ $js := resources.Get "js/main.js" | minify }}
+  <script>{{ $js.Content|safeJS }}</script>
 
   <!-- Metadata -->
   {{ template "_internal/google_analytics_async.html" . }}
