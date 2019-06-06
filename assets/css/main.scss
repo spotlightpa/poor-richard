@@ -33,15 +33,15 @@ body {
   background-color: #ccc;
   background-size: cover;
   background-position: center;
+}
 
-  .title {
-    padding: $radius;
-  }
+.has-spotlight-bold strong {
+  color: $primary;
+  font-weight: $weight-bold;
+}
 
-  strong {
-    color: $primary;
-    font-weight: $weight-bold;
-  }
+.has-radius-padding {
+  padding: $radius;
 }
 
 .icon svg {

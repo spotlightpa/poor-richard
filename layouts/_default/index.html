@@ -3,8 +3,8 @@
   {{ $bannerURL := $banner.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
   {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
   {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
-  {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
-  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+  {{ $bgImg := resources.Get "/img/bgs/capitol-side.jpeg" }}
+  {{ $bgImg = $bgImg.Resize "800x" | fingerprint }}
 
   <div class="section">
     <picture class="level">
@@ -85,14 +85,14 @@
       </div>
       <div class="tile is-half is-parent">
         <section
-          class="tile is-child notification is-capitol"
+          class="tile is-child notification is-info"
           style="background-image: url('{{ $bgImg.RelPermalink }}');"
         >
           <div class="hero">
             <div class="hero-body">
               <div class="container">
-                <div class="title has-background-info">
-                  <span class="is-size-5-mobile has-text-white">
+                <div class="title has-background-info has-radius-padding">
+                  <span class="is-size-5-mobile has-text-white has-spotlight-bold">
                     {{ .Param "hero-content" | markdownify }}
                   </span>
                 </div>
