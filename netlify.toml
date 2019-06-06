@@ -11,14 +11,14 @@ HUGO_ENABLEGITINFO = "true"
 [context.deploy-preview]
 command = """
     hugo version &&
-    hugo --debug --minify --environment stage --baseURL $DEPLOY_PRIME_URL ||
+    hugo --debug --minify --environment staging --baseURL $DEPLOY_PRIME_URL ||
     { sleep 120; false; }
 """
 
 [context.branch-deploy]
 command = """
     hugo version &&
-    hugo --minify --environment stage --baseURL $DEPLOY_PRIME_URL
+    hugo --minify --environment staging --baseURL $DEPLOY_PRIME_URL
 """
 
 [[headers]]
