@@ -29,10 +29,23 @@ body {
 @import "fonts.scss";
 @import "bulma.sass";
 
-.is-capitol {
-  background-color: #ccc;
+.has-bg-image {
+  position: relative;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  &.is-blurred::before {
+    background: inherit;
+    content: "";
+    filter: blur(4px);
+    height: 104%;
+    left: -2%;
+    position: absolute;
+    top: -2%;
+    width: 104%;
+  }
 }
 
 .has-spotlight-bold strong {

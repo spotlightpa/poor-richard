@@ -2,7 +2,7 @@
   {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
   {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
   <section
-    class="hero is-capitol is-large"
+    class="hero has-bg-image is-large has-background-grey-light"
     style="background-image: url('{{ $bgImg.RelPermalink }}');"
   >
     <div class="hero-body">
