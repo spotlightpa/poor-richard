@@ -22,10 +22,10 @@
     </p>
     <div class="columns">
       <div class="content column is-three-fifths is-offset-one-fifth">
+        <div class="field">
+          <label class="label" for="contact-name">From</label>
+        </div>
         <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" for="contact-name">From</label>
-          </div>
           <div class="field-body">
             <div class="field">
               <p class="control is-expanded">
@@ -61,58 +61,37 @@
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" for="contact-subject">Subject</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <input
-                  id="contact-subject"
-                  class="input"
-                  type="text"
-                  placeholder="My question about Spotlight PA"
-                  name="subject"
-                >
-              </div>
-            </div>
+        <div class="field">
+          <label class="label" for="contact-subject">Subject</label>
+          <div class="control">
+            <input
+              id="contact-subject"
+              class="input"
+              type="text"
+              placeholder="My question about Spotlight PA"
+              name="subject"
+            >
           </div>
         </div>
-
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" for="contact-comment">Comment</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <textarea
-                  id="contact-comment"
-                  class="textarea"
-                  placeholder="Explain how we can help you"
-                  name="comment"
-                ></textarea>
-              </div>
-            </div>
+        <div class="field">
+          <label class="label" for="contact-comment">Comment</label>
+          <div class="control">
+            <textarea
+              id="contact-comment"
+              class="textarea"
+              placeholder="Explain how we can help you"
+              name="comment"
+            ></textarea>
           </div>
         </div>
-
-        <div class="field is-horizontal">
-          <div class="field-label">
-            <!-- Left empty for spacing -->
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <button
-                  class="button is-primary"
-                  type="submit"
-                >
-                  Send message
-                </button>
-              </div>
-            </div>
+        <div class="field">
+          <div class="control">
+            <button
+              class="button is-primary"
+              type="submit"
+            >
+              Send comment
+            </button>
           </div>
         </div>
       </div>
