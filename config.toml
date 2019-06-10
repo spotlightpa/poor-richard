@@ -18,3 +18,18 @@ googleAnalytics = "UA-141126362-1"
         "/img/logos/banner-whitebg-3840.png"
     ]
     description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
+
+[[menu.social]]
+    name = "Facebook"
+    url = "https://www.facebook.com/SpotlightPennsylvania"
+    weight = 1
+
+[[menu.social]]
+    name = "Twitter"
+    url = "https://www.twitter.com/SpotlightPA"
+    weight = 2
+
+[[menu.social]]
+    name = "Github"
+    url = "https://www.github.com/spotlightpa/"
+    weight = 3

@@ -1,0 +1,5 @@
+{{- $url := "" -}}
+{{- with .Get "href" }}{{ $url = . }}{{ end -}}
+<p class="has-text-right has-text-weight-bold">
+  <a href="{{ $url }}">{{ .Inner }}</a>
+</p>
