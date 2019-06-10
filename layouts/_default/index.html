@@ -9,80 +9,74 @@
     class="hero has-bg-image is-on-gradient is-black has-background-link is-fullheight-with-navbar"
     style="background-image: url('{{ $bgImg.RelPermalink }}');"
   >
-    <div class="">
-      <div class="custom-container">
-        <div class="custom-box1">
-          <h1 class="title has-text-white has-text-weight-bold is-size-1 is-size-2-mobile">
-            <span class="">
-              {{ .Title }}
-            </span>
-          </h1>
-        </div>
-        <div class="custom-box2">
-          <h2 class="subtitle has-text-weight-light is-size-2 is-size-4-mobile">
-            <span class="">
-              {{ .Description }}
-            </span>
-          </h2>
-          <div class="notification has-background-black-ter">
-            <form
-              name="signup-homepage"
-              class=""
-              action="/thanks/"
-              method="post"
-              netlify
-            >
-              <p class="is-hidden">
-                <label>
-                  Don’t fill this out if you're human: <input name="bot-field">
-                </label>
-              </p>
-              <h2 class="title is-uppercase has-text-centered is-size-4">
-                Sign up now for updates
-              </h2>
-              <div class="field">
-                <label class="is-sr-only" for="home-name">Name</label>
-                <div class="control">
-                  <input
-                    id="home-name"
-                    class="input is-medium"
-                    type="text"
-                    name="name"
-                    placeholder="Jane Doe"
-                  >
-                </div>
+    <div class="custom-container">
+      <div class="custom-box1">
+        <h1 class="title has-text-white has-text-weight-bold is-size-1 is-size-2-mobile has-margin-bottom">
+          {{ .Title }}
+        </h1>
+      </div>
+      <div class="custom-box2">
+        <h2 class="subtitle has-text-weight-light is-size-2 is-size-4-mobile has-margin-bottom">
+          {{ .Description }}
+        </h2>
+        <div class="notification has-background-black-ter">
+          <form
+            name="signup-homepage"
+            class=""
+            action="/thanks/"
+            method="post"
+            netlify
+          >
+            <p class="is-hidden">
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field">
+              </label>
+            </p>
+            <h2 class="title is-uppercase has-text-centered is-size-4">
+              Sign up now for updates
+            </h2>
+            <div class="field">
+              <label class="is-sr-only" for="home-name">Name</label>
+              <div class="control">
+                <input
+                  id="home-name"
+                  class="input is-medium"
+                  type="text"
+                  name="name"
+                  placeholder="Jane Doe"
+                >
               </div>
-              <div class="field">
-                <label class="is-sr-only" for="home-email">Email</label>
-                <div class="control has-icons-left has-icons-right is-expanded">
-                  <input
-                    id="home-email"
-                    class="input is-medium"
-                    type="email"
-                    name="email"
-                    placeholder="janedoe@example.com"
-                  >
-                  <span class="icon is-large is-left has-text-primary">
-                    {{ $iconEmail.Content|safeHTML }}
-                  </span>
-                  <span class="icon is-large is-right validator-icon">
-                    {{ $iconCheck.Content|safeHTML }}
-                  </span>
-                </div>
+            </div>
+            <div class="field">
+              <label class="is-sr-only" for="home-email">Email</label>
+              <div class="control has-icons-left has-icons-right is-expanded">
+                <input
+                  id="home-email"
+                  class="input is-medium"
+                  type="email"
+                  name="email"
+                  placeholder="janedoe@example.com"
+                >
+                <span class="icon is-large is-left has-text-primary">
+                  {{ $iconEmail.Content|safeHTML }}
+                </span>
+                <span class="icon is-large is-right validator-icon">
+                  {{ $iconCheck.Content|safeHTML }}
+                </span>
               </div>
-              <div class="field">
-                <div class="control is-expanded">
-                  <button
-                    type="submit"
-                    class="button is-medium is-primary is-fullwidth"
-                  >
-                    Get Updates
-                  </button>
-                </div>
+            </div>
+            <div class="field">
+              <div class="control is-expanded">
+                <button
+                  type="submit"
+                  class="button is-medium is-primary is-fullwidth"
+                >
+                  Get Updates
+                </button>
               </div>
-            </form>
+            </div>
+          </form>
 
-          </div>
         </div>
       </div>
     </div>
