@@ -5,13 +5,8 @@
 >
   <div class="navbar-brand">
     {{ $logo := resources.Get "/img/logos/logo-white.svg" }}
-    {{ $logoURL := $logo.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
     <a href="/" class="navbar-item">
-      <img
-        src="{{ $logoURL }}"
-        alt="Spotlight PA logo"
-        width="250"
-      >
+      {{ $logo.Content| safeHTML }}
     </a>
     <a
       role="button"
@@ -30,7 +25,7 @@
     id="navbar-menu-items"
     class="navbar-menu"
   >
-    <div class="navbar-start">
+    <div class="navbar-end">
       {{ $thisPage := .Page }}
       {{ range .Site.Menus.main }}
         {{ $cls := "" }}
