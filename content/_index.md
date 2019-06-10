@@ -1,7 +1,6 @@
 +++
-title = "Welcome to Spotlight PA"
-description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism"
-hero-content = "**Spotlight PA** holds powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
+title = "Investigative journalism for Pennsylvania."
+description = "Together we can hold the powerful accountable."
 
 [menu.main]
     name = "Home"
