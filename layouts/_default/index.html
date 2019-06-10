@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ $banner := resources.Get "/img/logos/banner.svg" }}
-  {{ $bannerURL := $banner.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
   {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
   {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
   {{ $bgImg := resources.Get "/img/bgs/capitol-moody.jpeg" }}
@@ -82,15 +80,11 @@
     </div>
   </section>
 
-  <div class="section">
-    <picture class="level">
-      <p class="level-item has-text-centered">
-        <img
-          src="{{ $bannerURL }}"
-          alt="Spotlight PA banner"
-          style="max-width: 75vw;"
-        >
-      </p>
-    </picture>
-  </div>
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
 {{ end }}
