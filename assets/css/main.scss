@@ -9,7 +9,7 @@ $black-ter: hsla(0, 0%, 14%, 0.8);
 
 $navbar-height: 5rem;
 
-$weight-light: 300;
+$weight-light: 400;
 $weight-normal: 500;
 $weight-medium: 500;
 $weight-semibold: 600;
@@ -74,6 +74,10 @@ body {
   padding: $radius;
 }
 
+.has-margin-bottom {
+  margin-bottom: 2rem !important;
+}
+
 .icon svg {
   fill: currentColor;
   height: 1em;
@@ -90,19 +94,20 @@ body {
 .custom-container {
   max-width: 600px;
   margin: 5rem auto 5rem 5rem;
+
+  @media (max-width: 800px) {
+    max-width: none;
+    margin: 2rem;
+  }
+  @media (max-width: 600px) {
+    max-width: none;
+    margin: 1rem;
+  }
 }
 
 .custom-box2 {
   max-width: 500px;
-}
-
-@media (max-width: 800px) {
-  .custom-container {
-    margin: 1rem;
-  }
-  .custom-box1,
-  .custom-box2 {
-    max-width: 500px;
-    margin: 0 auto;
+  @media (max-width: 800px) {
+    max-width: none;
   }
 }
