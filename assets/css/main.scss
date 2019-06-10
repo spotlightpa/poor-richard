@@ -5,6 +5,10 @@ $spotlight-darkblue: rgba(0, 158, 219, 1);
 $primary: $spotlight-darkblue;
 $link: $spotlight-darkblue;
 $info: $spotlight-lightblue;
+$black-ter: hsla(0, 0%, 14%, 0.8);
+
+$navbar-height: 5rem;
+
 $weight-light: 300;
 $weight-normal: 500;
 $weight-medium: 500;
@@ -46,6 +50,19 @@ body {
     top: -2%;
     width: 104%;
   }
+  &.is-on-gradient::before {
+    content: "";
+    background: linear-gradient(hsla(0, 0, 0, 0.5) 50%, hsla(0, 0, 0, 0));
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  &.is-on-gradient > * {
+    z-index: 2;
+  }
 }
 
 .has-spotlight-bold strong {
@@ -68,4 +85,24 @@ body {
 
 .input:invalid:not(:placeholder-shown) ~ .validator-icon {
   visibility: hidden;
+}
+
+.custom-container {
+  max-width: 600px;
+  margin: 5rem auto 5rem 5rem;
+}
+
+.custom-box2 {
+  max-width: 500px;
+}
+
+@media (max-width: 800px) {
+  .custom-container {
+    margin: 1rem;
+  }
+  .custom-box1,
+  .custom-box2 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
