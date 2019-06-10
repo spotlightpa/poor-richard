@@ -4,13 +4,13 @@
   aria-label="main navigation"
 >
   <div class="navbar-brand">
-    {{ $logo := resources.Get "/img/logos/logo-dark.svg" }}
+    {{ $logo := resources.Get "/img/logos/logo-white.svg" }}
     {{ $logoURL := $logo.Content | base64Encode | printf "data:image/svg+xml;base64,%s" | safeURL}}
     <a href="/" class="navbar-item">
       <img
         src="{{ $logoURL }}"
         alt="Spotlight PA logo"
-        width="50"
+        width="250"
       >
     </a>
     <a
