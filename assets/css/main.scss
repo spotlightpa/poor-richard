@@ -7,8 +7,12 @@ $link: $spotlight-darkblue;
 $info: $spotlight-lightblue;
 $black-ter: hsla(0, 0%, 14%, 0.8);
 
+$footer-background-color: hsl(0, 0%, 7%);
+$footer-color: hsl(0, 0%, 96%);
+
 $navbar-height: 5rem;
 
+$size-1: 3.5rem;
 $weight-light: 400;
 $weight-normal: 500;
 $weight-medium: 500;
@@ -78,6 +82,13 @@ body {
   margin-bottom: 2rem !important;
 }
 
+.has-emphatic-underline {
+  border-bottom: 2px solid $grey-light;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
 .icon svg {
   fill: currentColor;
   height: 1em;
@@ -92,7 +103,7 @@ body {
 }
 
 .custom-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 5rem auto 5rem 5rem;
 
   @media (max-width: 800px) {

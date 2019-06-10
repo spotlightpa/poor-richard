@@ -1,4 +1,4 @@
-<section class="footer has-background-grey-lighter is-size-5-mobile">
+<section class="footer is-size-5">
   <div class="container">
     <div class="columns">
       <div class="column is-3">
@@ -16,16 +16,13 @@
       <div class="column is-3">
         <h3 class="has-text-weight-bold">Follow Us</h3>
         <ul>
-          <li>
-            <a href="https://www.facebook.com/SpotlightPennsylvania" class="">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/SpotlightPA" class="">
-              Twitter
-            </a>
-          </li>
+          {{ range .Site.Menus.social }}
+            <li>
+              <a href="{{ .URL }}" class="">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
         </ul>
       </div>
     </div>
