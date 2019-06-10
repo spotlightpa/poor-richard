@@ -1,10 +1,10 @@
 +++
-title = "Send in a tip"
+title = "Send a tip"
 type = "contact-page"
 
 [menu.main]
     identifier = "contact"
-    name = "Contact"
+    name = "Send a tip"
     pre = ""
     weight = 3
 +++

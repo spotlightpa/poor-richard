@@ -57,7 +57,7 @@ body {
   }
   &.is-on-gradient::before {
     content: "";
-    background: linear-gradient(hsla(0, 0, 0, 0.5) 50%, hsla(0, 0, 0, 0));
+    background: linear-gradient(hsla(0, 0, 0, 0.2) 50%, hsla(0, 0, 0, 0));
     height: 100%;
     left: 0;
     position: absolute;
@@ -93,6 +93,15 @@ body {
 .icon svg {
   fill: currentColor;
   height: 1em;
+}
+
+.navbar-brand svg {
+  fill: currentColor;
+  height: 2.5rem;
+
+  &:hover {
+    color: $spotlight-darkblue;
+  }
 }
 
 .input:valid:not(:placeholder-shown) ~ .validator-icon {
