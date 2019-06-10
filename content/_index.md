@@ -1,6 +1,6 @@
 +++
 title = "Investigative journalism for Pennsylvania."
-description = "Together we can hold the powerful to account."
+description = "Together, we can hold the powerful to account."
 
 [menu.main]
     name = "Home"
@@ -23,8 +23,13 @@ Our reporters serve as independent watchdogs unafraid to dig deep, fight for the
 
 {{<content-header>}}A commitment to transparency{{</content-header>}}
 
-Spotlight PA is a non-partisan, grant-funded newsroom launched by The Lenfest Institute for Journalism and The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette, PennLive/The Patriot-News and LNP Media Group. Financial support comes from community foundations and readers like you.
+Spotlight PA is a non-partisan, grant-funded newsroom launched by [The Lenfest Institute for Journalism][lenfest] and [The Philadelphia Inquirer][inky] in partnership with the [Pittsburgh Post-Gazette][pg], [PennLive/The Patriot-News][pennlive] and [LNP Media Group][lnp]. Financial support comes from community foundations and readers like you.
 
-TK logos
 
-{{<right-link href="#">}}Read our transparency statement{{</right-link>}}
+[lenfest]: https://www.lenfestinstitute.org
+[inky]: https://www.inquirer.com
+[pg]: https://www.post-gazette.com
+[lnp]: https://lnpmediagroup.com
+[pennlive]: https://www.pennlive.com
+
+{{<right-link href="#">}}Read our transparency statement TKTK{{</right-link>}}
