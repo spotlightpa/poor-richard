@@ -1,0 +1,71 @@
+{{ define "main" }}
+  {{ $bgImg := resources.Get "/img/bgs/capitol-bw.jpeg" }}
+  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+  <section
+    class="hero has-bg-image is-large has-background-grey-light"
+    style="background-image: url('{{ $bgImg.RelPermalink }}');"
+  >
+    <div class="hero-body">
+      <div class="container">
+        <div class="title has-background-info has-radius-padding">
+          <span class="is-size-5-mobile has-text-white has-spotlight-bold">
+            {{ .Param "hero-content" | markdownify }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+  <!-- Hide profiles for now -->
+  {{ if false }}
+    <section class="section has-background-white-ter">
+      <h2 class="title">
+        The Spotlight PA Team
+      </h2>
+      <div class="columns">
+        {{ range .Site.Data.profiles.profiles }}
+          <div class="column is-one-third">
+            <div class="card">
+              {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
+              {{ $imgLoc := printf "assets/%s" $imgRes }}
+              {{ if fileExists $imgLoc }}
+                {{ $img := resources.Get $imgRes }}
+                {{ $img = $img.Fit "600x450" | fingerprint }}
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="{{ $img.RelPermalink }}"
+                      alt="Photo of {{ .name }}"
+                    >
+                  </figure>
+                </div>
+              {{ end }}
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">{{ .name }}</p>
+                    <p class="subtitle is-6">
+                      <a href="https://www.twitter.com/{{.twitter}}">
+                        @{{.twitter}}
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="content has-text-justified">
+                  {{ .content|markdownify }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
