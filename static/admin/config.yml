@@ -21,10 +21,17 @@ collections:
       - {label: "hero-content", name: "hero-content", widget: "string", required: false}
       - {label: "hero-background", name: "hero-background", widget: "string", required: false}
       - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
-      - {label: "slug", name: "slug", widget: "string", required: false}
-      - {label: "url", name: "url", widget: "string", required: false}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
+      - {label: "Override URL", name: "url", widget: "string", required: false}
       - label: "Aliases"
         name: "aliases"
         widget: "list"
         default: []
+        field: {label: "Path", name: path, widget: string}
       - {label: "type", name: "type", widget: "hidden", required: false}
+      - label: "Main menu placement"
+        required: false
+        name: "menu.main"
+        widget: "object"
+        fields:
+          - {label: "Identifier", name: "identifier", widget: "string"}
