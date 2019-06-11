@@ -1,6 +1,7 @@
 +++
 title = "Send a tip"
-
+slug = "tips"
+aliases = ["/contact/"]
 [menu.main]
     identifier = "contact"
     name = "Send a tip"
