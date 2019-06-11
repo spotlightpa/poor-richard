@@ -1,6 +1,5 @@
 +++
 title = "Send a tip"
-type = "contact-page"
 
 [menu.main]
     identifier = "contact"
@@ -44,3 +43,4 @@ Signal is a free app with end-to-end encryption, meaning the content of messages
 [Sign up for Protonmail](https://mail.protonmail.com/create/new) | [Security details](https://protonmail.com/security-details)
 
 ## General Inquiries
+{{<contact-form>}}
