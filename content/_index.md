@@ -14,7 +14,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But they can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
 
-{{<right-link href="/contact/">}}Report waste, abuse and corruption{{</right-link>}}
+{{<right-link href="/tips/">}}Report waste, abuse and corruption{{</right-link>}}
 
 {{<content-header>}}A commitment to transparency{{</content-header>}}
 
