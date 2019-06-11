@@ -5,7 +5,7 @@ type = "contact-page"
 [menu.main]
     identifier = "contact"
     name = "Send a tip"
-    pre = ""
+    pre = "has-text-warning"
     weight = 3
 +++
 
