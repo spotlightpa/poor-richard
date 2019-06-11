@@ -1,6 +1,8 @@
----
-title: Thank You
----
-Thank you for your interest in Spotlight PA. Your comment has been recorded. **[Return home?](/)**
++++
+title = "Thank You"
+type = "thanks-page"
+url = "/contact/thanks/"
+no-index = true
++++
 
-testing.
+Thank you for your interest in Spotlight PA. Your comment has been recorded. **[Return home?](/)**
