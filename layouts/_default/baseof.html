@@ -36,7 +36,7 @@
   {{ range slice "400" "500" "900" }}
     <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
   {{ end }}
-
+  {{ block "extra-head" . }}{{ end }}
 </head>
 <body>
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
