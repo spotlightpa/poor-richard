@@ -1,0 +1,21 @@
+[[funders]]
+name = "Lenfest Institute for Journalism"
+slug = "lenfest"
+url = "https://www.lenfestinstitute.org"
+
+[[funders]]
+name = "Philadelphia Inquirer"
+slug = "inquirer"
+url = "https://www.inquirer.com"
+
+[[funders]]
+name = "Pittsburgh Post-Gazette"
+slug = "post-gazette"
+url = "https://www.post-gazette.com"
+
+[[funders]]
+name = "PennLive"
+slug = "pennlive"
+url = "https://www.pennlive.com"
+
+# https://lnpmediagroup.com
