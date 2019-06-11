@@ -1,0 +1,17 @@
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+backend:
+  name: github
+  repo: spotlightpa/poor-richard # Path to your GitHub repository
+  branch: staging
+
+collections:
+  - name: "content" # Used in routes, e.g., /admin/collections/blog
+    label: "Content" # Used in the UI
+    folder: "content" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.md" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
