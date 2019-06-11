@@ -30,6 +30,7 @@ The Heinz Endowments <br />
 Lancaster Community Foundation <br />
 The Lenfest Institute for Journalism <br />
 H.F. ”Gerry” Lenfest <br />
+Henry L. Hillman Foundation <br />
 The Philadelphia Foundation <br />
 The Lois Tack Thompson Fund of The Pittsburgh Foundation <br />
 Poor Richard’s Charitable Trust <br />
