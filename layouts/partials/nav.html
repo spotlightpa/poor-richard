@@ -28,17 +28,18 @@
     <div class="navbar-end">
       {{ $thisPage := .Page }}
       {{ range .Site.Menus.main }}
-        {{ $cls := "" }}
+        {{ $isActive := "" }}
         {{ if $thisPage.IsMenuCurrent "main" . }}
-          {{ $cls = " is-active" }}
+          {{ $isActive = "is-active" }}
         {{ end }}
         <a
           href="{{ .URL }}"
-          class="navbar-item {{- $cls -}}"
+          class="navbar-item {{ .Pre }} {{ $isActive }}"
         >
           {{ .Name }}
         </a>
       {{ end }}
+      <div class="navbar-item is-hidden-touch">&nbsp;</div>
     </div>
   </div>
 </nav>
