@@ -10,6 +10,8 @@ collections:
   - name: "content"
     label: "Content"
     folder: "content"
+    format: "toml-frontmatter"
+    extension: "md"
     create: true
     slug: "{{slug}}.md"
     fields:
