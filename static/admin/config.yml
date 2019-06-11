@@ -18,6 +18,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "suppress-title", name: "Suppress title", widget: "boolean", hint: "Don't show title in content area", required: false}
+      - {label: "no-index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
       - {label: "hero-content", name: "hero-content", widget: "string", required: false}
       - {label: "hero-background", name: "hero-background", widget: "string", required: false}
       - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
@@ -29,12 +31,17 @@ collections:
         default: []
         field: {label: "Path", name: path, widget: string}
       - {label: "type", name: "type", widget: "hidden", required: false}
-      - label: "Main menu placement"
+      - label: "Menu placement"
         required: false
-        name: "menu.main"
+        name: "menu"
         widget: "object"
         fields:
-          - {label: "ID", name: "identifier", widget: "string"}
-          - {label: "Value", name: "name", widget: "string"}
-          - {label: "CSS class", name: "pre", widget: "string", required: false}
-          - {label: "Order", name: "weight", widget: "number", valueType: "int"}
+        - label: "Main menu"
+          required: true
+          name: "main"
+          widget: "object"
+          fields:
+            - {label: "ID", name: "identifier", widget: "string"}
+            - {label: "Value", name: "name", widget: "string"}
+            - {label: "CSS class", name: "pre", widget: "string", required: false}
+            - {label: "Order", name: "weight", widget: "number", valueType: "int"}
