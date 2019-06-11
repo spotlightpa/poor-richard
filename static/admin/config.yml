@@ -16,4 +16,15 @@ collections:
     slug: "{{slug}}.md"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "hero-content", name: "hero-content", widget: "string", required: false}
+      - {label: "hero-background", name: "hero-background", widget: "string", required: false}
+      - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
+      - {label: "slug", name: "slug", widget: "string", required: false}
+      - {label: "url", name: "url", widget: "string", required: false}
+      - label: "Aliases"
+        name: "aliases"
+        widget: "list"
+        default: []
+      - {label: "type", name: "type", widget: "hidden", required: false}
