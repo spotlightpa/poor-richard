@@ -4,9 +4,12 @@
       <div class="column is-3">
         <h3 class="has-text-weight-bold">Pages</h3>
         <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
           {{ range .Site.Menus.main }}
             <li>
-              <a href="{{ .URL }}" class="">
+              <a href="{{ .URL }}">
                 {{ .Name }}
               </a>
             </li>
@@ -18,7 +21,7 @@
         <ul>
           {{ range .Site.Menus.social }}
             <li>
-              <a href="{{ .URL }}" class="">
+              <a href="{{ .URL }}">
                 {{ .Name }}
               </a>
             </li>
