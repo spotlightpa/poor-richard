@@ -34,4 +34,7 @@ collections:
         name: "menu.main"
         widget: "object"
         fields:
-          - {label: "Identifier", name: "identifier", widget: "string"}
+          - {label: "ID", name: "identifier", widget: "string"}
+          - {label: "Value", name: "name", widget: "string"}
+          - {label: "CSS class", name: "pre", widget: "string", required: false}
+          - {label: "Order", name: "weight", widget: "number", valueType: "int"}
