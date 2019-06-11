@@ -1,0 +1,33 @@
+{{ if .Param "hero-content" }}
+  {{ $bgImgLoc := .Param "hero-background"}}
+  {{ $bgImg := resources.Get $bgImgLoc }}
+  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
+  <section
+    class='hero has-bg-image is-large {{ .Param "hero-classes" }}'
+    style="background-image: url('{{ $bgImg.RelPermalink }}');"
+  >
+    <div class="hero-body">
+      <div class="container">
+        <div class="title has-background-info has-radius-padding">
+          <span class="is-size-5-mobile has-text-white has-spotlight-bold">
+            {{ .Param "hero-content" | markdownify }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+<section class="section">
+  <div class="columns">
+    <div class="content column is-three-fifths is-offset-one-fifth">
+      {{ if .Param "suppress-title" | not }}
+        <h1 class="title">
+          {{ .Title }}
+        </h1>
+      {{ end }}
+
+      {{ .Content }}
+    </div>
+  </div>
+</section>

@@ -42,8 +42,9 @@
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
   <main>
     {{ block "main" . }}
-      {{ .Content }}
+      {{ partial "main.html" . }}
     {{ end }}
+    {{ block "extra-main" . }}{{ end }}
   </main>
   <footer>
     {{ block "signup" . }}{{ partial "signup.html" . }}{{ end }}
