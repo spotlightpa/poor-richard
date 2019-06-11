@@ -1,0 +1,48 @@
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+backend:
+  name: github
+  repo: spotlightpa/poor-richard
+  branch: staging
+
+collections:
+  - name: "content"
+    label: "Content"
+    folder: "content"
+    format: "toml-frontmatter"
+    extension: "md"
+    create: true
+    slug: "{{slug}}.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "suppress-title", name: "Suppress title", widget: "boolean", hint: "Don't show title in content area", required: false}
+      - {label: "no-index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
+      - {label: "hero-content", name: "hero-content", widget: "string", required: false}
+      - {label: "hero-background", name: "hero-background", widget: "string", required: false}
+      - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
+      - {label: "Override URL", name: "url", widget: "string", required: false}
+      - label: "Aliases"
+        name: "aliases"
+        widget: "list"
+        default: []
+        field: {label: "Path", name: path, widget: string}
+      - {label: "type", name: "type", widget: "hidden", required: false}
+      - label: "Menu placement"
+        required: false
+        name: "menu"
+        widget: "object"
+        fields:
+        - label: "Main menu"
+          hint: "Position of page in navbar main menu"
+          required: false
+          name: "main"
+          widget: "object"
+          fields:
+            - {label: "ID", name: "identifier", widget: "string", required: false}
+            - {label: "Value", name: "name", widget: "string", required: false}
+            - {label: "CSS class", name: "pre", widget: "string", required: false}
+            - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
