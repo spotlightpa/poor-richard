@@ -1,6 +1,7 @@
 +++
 title = "Thank You"
 type = "thanks-page"
+url = "/contact/thanks/"
 no-index = true
 +++
 
