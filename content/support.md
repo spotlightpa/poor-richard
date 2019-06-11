@@ -8,8 +8,6 @@ description = "Our independent newsroom is grant-funded by community foundations
     weight = 2
 +++
 
-## Commitment to transparency
-
 Spotlight PA is an unprecedented investigative news cooperative that combines the strengths of the state’s major news organizations, led by [The Philadelphia Inquirer][inky] in partnership with the [Pittsburgh Post-Gazette][pg], [PennLive/The Patriot-News][pennlive] and [LNP Media Group][lnp] (Lancaster, PA). Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting.
 
 
