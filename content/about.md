@@ -1,8 +1,11 @@
 +++
 title = "About Spotlight PA"
-type = "about-page"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism"
+
 hero-content = "The mission of **Spotlight PA** is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
+hero-background = "/img/bgs/capitol-bw.jpeg"
+hero-classes = "has-background-grey-light"
+suppress-title = true
 
 [menu.main]
     identifier = "about"
