@@ -4,7 +4,7 @@ public_folder: "/uploads" # The src attribute for uploaded media will begin with
 backend:
   name: github
   repo: spotlightpa/poor-richard # Path to your GitHub repository
-  branch: staging
+  branch: cj/netlifycms
 
 collections:
   - name: "content" # Used in routes, e.g., /admin/collections/blog
