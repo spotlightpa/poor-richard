@@ -18,6 +18,7 @@
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
+  <meta name="description" content="{{ .Description }}">
 
   {{ if .Param "no-index" }}
     <meta name="robots" content="noindex">
