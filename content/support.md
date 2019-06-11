@@ -1,6 +1,7 @@
 +++
 title = "Our Supporters"
 description = "Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting."
+suppress-title = true
 
 [menu.main]
     name = "Supporters"
