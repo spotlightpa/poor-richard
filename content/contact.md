@@ -1,23 +1,15 @@
-+++
-title = "Send a tip"
-slug = "tips"
-aliases = ["/contact/"]
-[menu.main]
-    identifier = "contact"
-    name = "Send a tip"
-    pre = "has-text-warning"
-    weight = 3
-+++
-
+---
+title: Send a tip
+---
 Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people).
 
-_PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the form below](#general-inquiries). Other submissions, including press releases or events, will not receive a response._
+_**PLEASE NOTE**: The communication channels below are intended only for news tips to our reporters. For technical problems, please email <mailto:webmaster@spotlightpa.org>. For general comments, please use [the form below](#general-inquiries). Other submissions, including press releases or events, will not receive a response._
 
 ## Email
 
 Submit a tip using your regular email service. For more secure email options, see below.
 
-**Email us**: [tips@spotlightpa.org](mailto:tips@spotlightpa.org)
+**Email us**: <mailto:tips@spotlightpa.org>
 
 ## Phone/text
 
@@ -39,9 +31,10 @@ Signal is a free app with end-to-end encryption, meaning the content of messages
 
 [ProtonMail](https://protonmail.com/about) is an email service that allows users to send encrypted messages back and forth with one another. This operates much like other email services but encrypts message contents. Sign up requires a username and password, so don't use any identifying information. Once you have an account, you can communicate with us.
 
-**Write us**: [spotlightpa@protonmail.com](mailto:spotlightpa@protonmail.com)
+**Write us**: <mailto:spotlightpa@protonmail.com>
 
 [Sign up for Protonmail](https://mail.protonmail.com/create/new) | [Security details](https://protonmail.com/security-details)
 
 ## General Inquiries
+
 {{<contact-form>}}
