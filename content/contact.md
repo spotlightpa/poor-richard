@@ -1,14 +1,12 @@
 +++
 title = "Send a tip"
-description = "Our  reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals."
 slug = "tips"
 aliases = ["/contact/"]
-
-["menu.main"]
-identifier = "contact"
-name = "Send a tip"
-pre = "has-text-warning"
-weight = 1
+[menu.main]
+    identifier = "contact"
+    name = "Send a tip"
+    pre = "has-text-warning"
+    weight = 3
 +++
 
 Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people).
