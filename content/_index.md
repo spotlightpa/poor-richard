@@ -1,5 +1,5 @@
 +++
-title = "Investigative journalism for Pennsylvania."
+title = "Investigative journalism for Pennsylvania"
 description = "Together, we can hold the powerful to account."
 
 [menu.main]
