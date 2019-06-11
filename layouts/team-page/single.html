@@ -1,0 +1,62 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="columns">
+      <div class="content column is-three-fifths is-offset-one-fifth">
+        <h1 class="title">
+          {{ .Title }}
+        </h1>
+
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-white-ter">
+    <div class="columns">
+      {{ range .Site.Data.profiles.profiles }}
+        <div class="column is-one-third">
+          <div class="card">
+            {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
+            {{ $imgLoc := printf "assets/%s" $imgRes }}
+            {{ if fileExists $imgLoc | and (not true) }}
+              {{ $img := resources.Get $imgRes }}
+              {{ $img = $img.Fit "600x450" | fingerprint }}
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="{{ $img.RelPermalink }}"
+                    alt="Photo of {{ .name }}"
+                  >
+                </figure>
+              </div>
+            {{ end }}
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">{{ .name }}</p>
+                  <p class="subtitle is-6">
+                    <a href="mailto:{{.email}}">
+                      {{.email}}
+                    </a>
+                  </p>
+                  {{ with .twitter }}
+                    <p class="subtitle is-6">
+                      <a href="https://www.twitter.com/{{ . }}">
+                        @{{ . }}
+                      </a>
+                    </p>
+                  {{ end }}
+                </div>
+              </div>
+
+              <div class="content has-text-justified">
+                {{ .content|markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+{{ end }}
