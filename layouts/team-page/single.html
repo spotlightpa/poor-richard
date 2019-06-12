@@ -1,58 +1,60 @@
 {{ define "extra-main" }}
   {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
   {{ $iconTwitter := resources.Get "/img/fontawesome/brands/twitter.svg" }}
+  <div class="is-hidden">
+    <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
+    <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
+  </div>
 
-  <section class="section has-background-white-ter">
-    <div class="columns is-multiline is-desktop">
+  <section class="section columns has-background-white-ter">
+    <div class="column is-three-fifths is-offset-one-fifth">
       {{ range .Site.Data.profiles.profiles }}
-        <div class="column is-one-third-desktop">
-          <div class="card">
-            <div class="card-content">
-              <div class="media">
-                {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
-                {{ $imgLoc := printf "assets/%s" $imgRes }}
-                {{ if fileExists $imgLoc | and false }}
-                  {{ $img := resources.Get $imgRes }}
-                  {{ $img = $img.Fill "192x192" | fingerprint }}
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img
-                        src="{{ $img.RelPermalink }}"
-                        alt="Photo of {{ .name }}"
-                        >
-                    </figure>
-                  </div>
-                {{ end }}
-                <div class="media-content">
-                  <p class="title is-4">{{ .name }}</p>
-                  <p class="subtitle is-5">{{ .title }}</p>
+        <div class="card has-margin-bottom">
+          <div class="card-content">
+            <div class="media">
+              {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
+              {{ $imgLoc := printf "assets/%s" $imgRes }}
+              {{ if fileExists $imgLoc  }}
+                {{ $img := resources.Get $imgRes }}
+                {{ $img = $img.Fill "256x256" | fingerprint }}
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img
+                      src="{{ $img.RelPermalink }}"
+                      alt="Photo of {{ .name }}"
+                      class="is-rounded"
+                      >
+                  </figure>
                 </div>
-              </div>
-              <div class="media">
-                <div class="media-content">
-                  <p class="subtitle is-6">
+              {{ end }}
+              <div class="media-content">
+                <p class="title is-4">{{ .name }}</p>
+                <p class="subtitle is-5">{{ .title }}</p>
+                <p class="subtitle is-6">
+                  <span class="icon has-text-link">
+                    <svg>
+                      <use xlink:href="#email-svg"></use>
+                    </svg>
+                  </span>
+                  <a href="mailto:{{.email}}">
+                    {{.email}}
+                  </a>
+                  {{ with .twitter }}
+                    <br>
                     <span class="icon has-text-link">
-                      {{ $iconEmail.Content|safeHTML }}
+                      <svg>
+                        <use xlink:href="#twitter-svg"></use>
+                      </svg>
                     </span>
-                    <a href="mailto:{{.email}}">
-                      {{.email}}
+                    <a href="https://www.twitter.com/{{ . }}">
+                      @{{ . }}
                     </a>
-                    {{ with .twitter }}
-                      <br>
-                      <span class="icon has-text-link">
-                        {{ $iconTwitter.Content|safeHTML }}
-                      </span>
-                      <a href="https://www.twitter.com/{{ . }}">
-                        @{{ . }}
-                      </a>
-                    {{ end }}
-                  </p>
-                </div>
+                  {{ end }}
+                </p>
               </div>
-
-              <div class="content">
-                {{ .content|markdownify }}
-              </div>
+            </div>
+            <div class="content">
+              {{ .content|markdownify }}
             </div>
           </div>
         </div>
