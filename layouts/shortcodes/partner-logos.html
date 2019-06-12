@@ -1,0 +1,27 @@
+<div class="columns is-multiline is-centered">
+  {{ range .Site.Data.partners.partners }}
+    {{ $logoLoc := printf "img/partners/%s.%s" .slug .logotype }}
+    {{ $logo := resources.Get $logoLoc }}
+    <div class="column is-narrow has-text-centered">
+      <a
+        href="{{ .url }}"
+        title="{{ .name }}"
+        target="_blank"
+      >
+        <span class="is-sr-only">{{ .name }}</span>
+        <span class="funder-logo">
+          {{ if eq .logotype "svg" }}
+            {{ $logo.Content| safeHTML }}
+          {{ else }}
+            {{ $logo = $logo.Resize "x128" | fingerprint }}
+            <img
+              src="{{ $logo.RelPermalink }}"
+              alt="Logo for {{ .name }}"
+              style="height: 64px;"
+            >
+          {{ end }}
+        </span>
+      </a>
+    </div>
+  {{ end }}
+</div>

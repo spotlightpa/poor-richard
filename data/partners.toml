@@ -1,0 +1,29 @@
+[[partners]]
+name = "Philadelphia Inquirer"
+slug = "inquirer"
+url = "https://www.inquirer.com"
+logotype = "svg"
+
+[[partners]]
+name = "Pittsburgh Post-Gazette"
+slug = "post-gazette"
+url = "https://www.post-gazette.com"
+logotype = "svg"
+
+[[partners]]
+name = "PennLive"
+slug = "pennlive"
+url = "https://www.pennlive.com"
+logotype = "svg"
+
+[[partners]]
+name = "LNP Media Group"
+slug = "lnp"
+url = "https://lnpmediagroup.com"
+logotype = "png"
+
+[[partners]]
+name = "PA Post"
+slug = "papost"
+url = "https://papost.org"
+logotype = "png"
