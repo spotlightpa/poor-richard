@@ -46,3 +46,19 @@ collections:
             - {label: "Value", name: "name", widget: "string", required: false}
             - {label: "CSS class", name: "pre", widget: "string", required: false}
             - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
+  - label: "Data"
+    name: "data"
+    files:
+      - label: "Profiles"
+        name: "profiles"
+        file: "data/profiles.toml"
+        fields:
+          - label: "Team member"
+            name: "profiles"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Twitter", name: "twitter", widget: "string", required: false}
+              - {label: "Content", name: "content", widget: "markdown"}
