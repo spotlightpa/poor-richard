@@ -2,30 +2,28 @@
 title = "Investigative journalism for Pennsylvania"
 description = "Together, we can hold the powerful to account."
 +++
-
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
-Spotlight PA is a collaborative newsroom dedicated to producing investigative journalism for all of Pennsylvania. Spotlight PA’s mission is to hold powerful private and public forces — especially government, business and special interests — to account through urgent and compelling investigative journalism.
+Spotlight PA is a collaborative newsroom dedicated to producing investigative journalism for all of Pennsylvania. Spotlight PA’s mission is to hold powerful private and public forces — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism.
 
 {{<right-link href="/about/">}}Read our mission statement{{</right-link>}}
 
+{{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-{{<content-header>}}Journalism powered by you{{</content-header>}}
-
-Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But they can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
-
-{{<right-link href="/tips/">}}Report waste, abuse and corruption{{</right-link>}}
-
-{{<content-header>}}A commitment to transparency{{</content-header>}}
-
-Spotlight PA is a non-partisan, grant-funded newsroom launched by [The Lenfest Institute for Journalism][lenfest] and [The Philadelphia Inquirer][inky] in partnership with the [Pittsburgh Post-Gazette][pg], [PennLive/The Patriot-News][pennlive] and [LNP Media Group][lnp]. Financial support comes from community foundations and readers like you.
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to accountability reporting on the state government and beyond. We continue to grow our distribution partners, which currently include [LNP Media Group](https://lnpmediagroup.com) (Lancaster, PA) and [PA Post](http://www.papost.org), a project of [WITF](http://www.witf.org).
 
 {{<funder-logos>}}
 
-[lenfest]: https://www.lenfestinstitute.org
-[inky]: https://www.inquirer.com
-[pg]: https://www.post-gazette.com
-[lnp]: https://lnpmediagroup.com
-[pennlive]: https://www.pennlive.com
+{{<right-link href="/about/">}}Become a partner with Spotlight PA{{</right-link>}}
+
+{{<content-header>}}Journalism powered by you{{</content-header>}}
+
+Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But we can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
+
+{{<right-link href="/tips/">}}Report waste, abuse or corruption{{</right-link>}}
+
+{{<content-header>}}A commitment to transparency{{</content-header>}}
+
+Spotlight PA is a non-partisan, grant-funded newsroom supported by [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org) and more than a dozen other community foundations and individuals. We continue to grow our support while ensuring our newsroom and journalists retain total independence and editorial control, free to pursue the stories that matter most to Pennsylvanians.
 
 {{<right-link href="/support/">}}Read our transparency statement{{</right-link>}}
