@@ -1,7 +1,7 @@
 +++
 title = "Meet our team"
 description = "When the citizens of Pennsylvania pay their taxes, need help in a tough time, or vote a politician into office, we'll be there to make sure they get what they deserve."
-type = "team-page"
+type = "staff-page"
 url = "/about/staff/"
 [menu]
 

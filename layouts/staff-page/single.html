@@ -10,14 +10,27 @@
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range .Site.Data.profiles.profiles }}
         <div class="card has-margin-bottom">
+          {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
+          {{ $imgLoc := printf "assets/%s" $imgRes }}
+          {{ if fileExists $imgLoc  }}
+            {{ $img := resources.Get $imgRes }}
+            {{ $img = $img.Resize "800x" | fingerprint }}
+            <div class="is-hidden-tablet">
+              <figure class="image">
+                <img
+                  src="{{ $img.RelPermalink }}"
+                  alt="Photo of {{ .name }}"
+                  class=""
+                  >
+              </figure>
+            </div>
+          {{ end }}
           <div class="card-content">
             <div class="media">
-              {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
-              {{ $imgLoc := printf "assets/%s" $imgRes }}
-              {{ if fileExists $imgLoc  }}
+              {{ if fileExists $imgLoc }}
                 {{ $img := resources.Get $imgRes }}
                 {{ $img = $img.Fill "256x256" | fingerprint }}
-                <div class="media-left">
+                <div class="media-left is-hidden-mobile">
                   <figure class="image is-128x128">
                     <img
                       src="{{ $img.RelPermalink }}"
@@ -30,7 +43,7 @@
               <div class="media-content">
                 <p class="title is-4">{{ .name }}</p>
                 <p class="subtitle is-5">{{ .title }}</p>
-                <p class="subtitle is-6">
+                <p class="subtitle is-6 has-text-break-all">
                   <span class="icon has-text-link">
                     <svg>
                       <use xlink:href="#email-svg"></use>
