@@ -1,24 +1,17 @@
 +++
-title = "Our Supporters"
+title = "Transparency statement"
 description = "Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting."
-suppress-title = true
+
+[menu]
 
 [menu.main]
-    name = "Supporters"
-    identifier = "supporters"
-    weight = 2
+identifier = "supporters"
+name = "Supporters"
+weight = 2
 +++
+Spotlight PA is a non-partisan, independent newsroom paid for by grants from community foundations and individuals committed to robust investigative reporting. Now more than ever, the health of our state and democracy depends on strong accountability journalism. Our newsroom provides the time and resources necessary to do impactful investigative work.
 
-Spotlight PA is an unprecedented investigative news cooperative that combines the strengths of the state’s major news organizations, led by [The Philadelphia Inquirer][inky] in partnership with the [Pittsburgh Post-Gazette][pg], [PennLive/The Patriot-News][pennlive] and [LNP Media Group][lnp] (Lancaster, PA). Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting.
-
-
-[lenfest]: https://www.lenfestinstitute.org
-[inky]: https://www.inquirer.com
-[pg]: https://www.post-gazette.com
-[lnp]: https://lnpmediagroup.com
-[pennlive]: https://www.pennlive.com
-
-Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all Spotlight PA content. All money for Spotlight PA is donated to the non-profit [Lenfest Institute for Journalism][lenfest], which serves as an additional buffer between our investigative newsroom and our funders.
+Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. All money for Spotlight PA is donated to the non-profit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), which serves as an additional buffer between our investigative newsroom and our funders.
 
 ## Our supporters
 
