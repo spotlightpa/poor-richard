@@ -36,7 +36,7 @@
     <link rel="apple-touch-icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
   {{ end }}
 
-  {{ range slice "400" "500" "900" }}
+  {{ range slice "regular" "500" "900" }}
     <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
   {{ end }}
   {{ block "extra-head" . }}{{ end }}
