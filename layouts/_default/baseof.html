@@ -14,7 +14,9 @@
   <script>{{ $js.Content|safeJS }}</script>
 
   <!-- Metadata -->
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ if not .Site.IsServer }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
