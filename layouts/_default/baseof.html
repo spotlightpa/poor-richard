@@ -29,7 +29,7 @@
     <link href="{{ .Permalink }}" rel="canonical">
   {{ end }}
 
-  {{ $icon := resources.Get "/img/logos/logo-dark-894.png" }}
+  {{ $icon := resources.Get "/img/logos/logo-square-inverse-920.png" }}
   {{ range $size := slice "32x32" "192x192" "720x720" }}
     {{ $iconShrunk := $icon.Resize $size | fingerprint }}
     <link rel="shortcut icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
