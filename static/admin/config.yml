@@ -1,5 +1,9 @@
 media_folder: "static/uploads"
 public_folder: "/uploads"
+site_url: https://staging--poor-richard-spotlightpa.netlify.com
+display_url: https://www.spotlightpa.org
+logo_url: https://www.spotlightpa.org/img/logos/banner-whitebg-3840.png
+show_preview_links: true
 
 backend:
   name: github
@@ -14,6 +18,7 @@ collections:
     extension: "md"
     create: true
     slug: "{{slug}}.md"
+    preview_path: "/{{slug}}/"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
