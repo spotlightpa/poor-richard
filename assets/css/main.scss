@@ -143,23 +143,25 @@ body {
   }
 }
 
-.funder-logo svg {
-  height: 4rem;
+.funder-logo {
+  display: inline-block;
   max-width: 350px;
-}
 
+  svg {
+    height: 4rem;
+    max-width: 100%;
+  }
+}
 .has-text-break-all {
   word-break: break-all;
 }
 
 .is-pullquote {
-  float: right;
   margin: 0 0 1rem 2rem;
   max-width: 100%;
   width: 20rem;
 
   @media (max-width: 1024px) {
-    float: none;
     width: 100%;
     margin: 1rem auto;
   }
