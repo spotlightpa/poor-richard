@@ -1,9 +1,6 @@
 +++
 title = "About Spotlight PA"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
-hero-content = "The mission of **Spotlight PA** is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
-hero-background = "/img/bgs/capitol-bw.jpeg"
-hero-classes = "has-background-grey-light"
 
 [menu]
 
@@ -13,6 +10,11 @@ name = "About"
 pre = ""
 weight = 1
 +++
+
+{{<pullquote>}}
+The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here.
+{{</pullquote>}}
+
 Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
 
 Our collaborative newsroom is powered by the [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post­-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](http://www.pennlive.com). We continue to seek new distribution partners to join our initial group, [LNP Media Group](https://lnpmediagroup.com) and [PA Post](http://www.papost.org), a project of [WITF](http://www.witf.org). For more information on how to become a partner, click here.
