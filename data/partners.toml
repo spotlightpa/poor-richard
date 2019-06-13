@@ -20,10 +20,10 @@ logotype = "svg"
 name = "LNP Media Group"
 slug = "lnp"
 url = "https://lnpmediagroup.com"
-logotype = "png"
+logotype = "svg"
 
 [[partners]]
 name = "PA Post"
 slug = "papost"
 url = "https://papost.org"
-logotype = "png"
+logotype = "svg"
