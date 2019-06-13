@@ -1,7 +1,6 @@
 +++
-title = "About Spotlight PA"
+title = "Our Mission"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
-suppress-title = true
 
 [menu]
 
@@ -11,8 +10,6 @@ name = "Our Mission"
 pre = ""
 weight = 1
 +++
-# Our Mission
-
 {{<pullquote>}}
 The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here.
 {{</pullquote>}}
