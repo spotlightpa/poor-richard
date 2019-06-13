@@ -23,7 +23,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "suppress-title", name: "Suppress title", widget: "boolean", hint: "Don't show title in content area", required: false}
+      - {label: "Suppress title", name: "suppress-title", widget: "boolean", hint: "Don't show title in content area", required: false}
       - {label: "no-index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
       - {label: "hero-content", name: "hero-content", widget: "string", required: false}
       - {label: "hero-background", name: "hero-background", widget: "string", required: false}
