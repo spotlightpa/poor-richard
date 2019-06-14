@@ -1,70 +1,59 @@
 [[main]]
-identifier = "about"
-url = "/about/"
 name = "Our Mission"
 pre = ""
+url = "/about/"
 weight = 1
 
 [[main]]
-identifier = "staff"
-url = "/about/staff/"
 name = "Our Team"
 pre = ""
+url = "/about/staff/"
 weight = 2
 
 [[main]]
-url = "/support/"
-identifier = "supporters"
 name = "Supporters"
+url = "/support/"
 weight = 3
 
 [[main]]
-url = "/tips/"
-identifier = "tips"
 name = "Send a tip"
 pre = "has-text-warning"
+url = "/tips/"
 weight = 4
 
-
 [[footer]]
-url = "/"
-identifier = "home"
 name = "Home"
 pre = ""
+url = "/"
 weight = 1
 
 [[footer]]
-url = "/about/"
-identifier = "about"
-name = "Our Mission"
+name = "About"
 pre = ""
+url = "/about/"
 weight = 2
 
 [[footer]]
-url = "/about/staff/"
-identifier = "staff"
-name = "Our Team"
+name = "Staff"
 pre = ""
+url = "/about/staff/"
 weight = 3
 
 [[footer]]
-url = "/support/"
-identifier = "supporters"
 name = "Supporters"
+url = "/support/"
 weight = 4
 
 [[footer]]
+name = "Tips"
+pre = ""
 url = "/tips/"
-identifier = "tips"
-name = "Send a tip"
-pre = "has-text-warning"
 weight = 5
 
 [[footer]]
-url = "/contact/"
-identifier = "contact"
 name = "Contact"
 pre = ""
+url = "/contact/"
 weight = 6
 
 [[social]]
