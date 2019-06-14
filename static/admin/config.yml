@@ -31,6 +31,7 @@ collections:
       - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Override URL", name: "url", widget: "string", required: false}
       - label: "Aliases"
+        label_singular: "alias"
         name: "aliases"
         widget: "list"
         default: []
@@ -58,7 +59,8 @@ collections:
         name: "profiles"
         file: "data/profiles.toml"
         fields:
-          - label: "Team member"
+          - label: "Team members"
+            label_singular: "Member"
             name: "profiles"
             widget: "list"
             fields:
