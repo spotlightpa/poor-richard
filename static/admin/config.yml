@@ -37,21 +37,6 @@ collections:
         default: []
         field: {label: "Path", name: path, widget: string}
       - {label: "type", name: "type", widget: "hidden", required: false}
-      - label: "Menu placement"
-        required: false
-        name: "menu"
-        widget: "object"
-        fields:
-        - label: "Main menu"
-          hint: "Position of page in navbar main menu"
-          required: false
-          name: "main"
-          widget: "object"
-          fields:
-            - {label: "ID", name: "identifier", widget: "string", required: false}
-            - {label: "Value", name: "name", widget: "string", required: false}
-            - {label: "CSS class", name: "pre", widget: "string", required: false}
-            - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
   - label: "Data"
     name: "data"
     files:
@@ -69,3 +54,37 @@ collections:
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Twitter", name: "twitter", widget: "string", required: false}
               - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Menus"
+        name: "menus"
+        file: "config/_default/menus.toml"
+        fields:
+        - label: "Main menu items"
+          label_singular: "menu item"
+          name: "main"
+          hint: "Navbar main menu"
+          widget: "list"
+          fields:
+          - {label: "Display Name", name: "name", widget: "string", required: true}
+          - {label: "URL", name: "url", widget: "string", required: true}
+          - {label: "CSS class", name: "pre", widget: "string", required: false}
+          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
+        - label: "Footer menu items"
+          label_singular: "menu item"
+          name: "footer"
+          hint: "Footer pages list"
+          widget: "list"
+          fields:
+          - {label: "Display Name", name: "name", widget: "string", required: true}
+          - {label: "URL", name: "url", widget: "string", required: true}
+          - {label: "CSS class", name: "pre", widget: "string", required: false}
+          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
+        - label: "Social menu items"
+          label_singular: "menu item"
+          name: "social"
+          hint: "Footer social links"
+          widget: "list"
+          fields:
+          - {label: "Display Name", name: "name", widget: "string", required: true}
+          - {label: "URL", name: "url", widget: "string", required: true}
+          - {label: "CSS class", name: "pre", widget: "string", required: false}
+          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
