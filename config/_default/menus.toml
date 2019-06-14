@@ -1,0 +1,83 @@
+[[main]]
+identifier = "about"
+url = "/about/"
+name = "Our Mission"
+pre = ""
+weight = 1
+
+[[main]]
+identifier = "staff"
+url = "/about/staff/"
+name = "Our Team"
+pre = ""
+weight = 2
+
+[[main]]
+url = "/support/"
+identifier = "supporters"
+name = "Supporters"
+weight = 3
+
+[[main]]
+url = "/tips/"
+identifier = "tips"
+name = "Send a tip"
+pre = "has-text-warning"
+weight = 4
+
+
+[[footer]]
+url = "/"
+identifier = "home"
+name = "Home"
+pre = ""
+weight = 1
+
+[[footer]]
+url = "/about/"
+identifier = "about"
+name = "Our Mission"
+pre = ""
+weight = 2
+
+[[footer]]
+url = "/about/staff/"
+identifier = "staff"
+name = "Our Team"
+pre = ""
+weight = 3
+
+[[footer]]
+url = "/support/"
+identifier = "supporters"
+name = "Supporters"
+weight = 4
+
+[[footer]]
+url = "/tips/"
+identifier = "tips"
+name = "Send a tip"
+pre = "has-text-warning"
+weight = 5
+
+[[footer]]
+url = "/contact/"
+identifier = "contact"
+name = "Contact"
+pre = ""
+weight = 6
+
+[[social]]
+name = "Facebook"
+url = "https://www.facebook.com/SpotlightPennsylvania"
+weight = 1
+
+[[social]]
+name = "Twitter"
+url = "https://www.twitter.com/SpotlightPA"
+weight = 2
+
+[[social]]
+name = "Github"
+url = "https://www.github.com/spotlightpa/"
+weight = 3

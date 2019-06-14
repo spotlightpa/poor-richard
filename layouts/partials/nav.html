@@ -29,7 +29,7 @@
       {{ $thisPage := .Page }}
       {{ range .Site.Menus.main }}
         {{ $isActive := "" }}
-        {{ if $thisPage.IsMenuCurrent "main" . }}
+        {{ if eq $thisPage.RelPermalink .URL }}
           {{ $isActive = "is-active" }}
         {{ end }}
         <a

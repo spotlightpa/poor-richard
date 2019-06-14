@@ -1,14 +1,6 @@
 +++
 title = "Our Mission"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
-
-[menu]
-
-[menu.main]
-identifier = "about"
-name = "Our Mission"
-pre = ""
-weight = 1
 +++
 {{<pullquote>}}
 The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here.

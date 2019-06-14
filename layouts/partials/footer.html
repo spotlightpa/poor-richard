@@ -4,10 +4,7 @@
       <div class="column is-3">
         <h3 class="has-text-weight-bold">Pages</h3>
         <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          {{ range .Site.Menus.main }}
+          {{ range .Site.Menus.footer }}
             <li>
               <a href="{{ .URL }}">
                 {{ .Name }}
