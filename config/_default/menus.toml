@@ -27,51 +27,51 @@ url = "/tips/"
 weight = 5
 
 [[footer]]
-name = "Home"
+name = "HOME"
 pre = ""
 url = "/"
 weight = 1
 
 [[footer]]
-name = "About"
+name = "ABOUT"
 pre = ""
 url = "/about/"
 weight = 2
 
 [[footer]]
-name = "Staff"
+name = "STAFF"
 pre = ""
 url = "/about/staff/"
 weight = 3
 
 [[footer]]
-name = "Supporters"
+name = "SUPPORTERS"
 url = "/support/"
 weight = 4
 
 [[footer]]
-name = "Tips"
+name = "TIPS"
 pre = ""
 url = "/tips/"
 weight = 5
 
 [[footer]]
-name = "Contact"
+name = "CONTACT US"
 pre = ""
 url = "/contact/"
 weight = 6
 
 [[social]]
-name = "Facebook"
+name = "FACEBOOK"
 url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
 
 [[social]]
-name = "Twitter"
+name = "TWITTER"
 url = "https://www.twitter.com/SpotlightPA"
 weight = 2
 
 [[social]]
-name = "Github"
+name = "GITHUB"
 url = "https://www.github.com/spotlightpa/"
 weight = 3
