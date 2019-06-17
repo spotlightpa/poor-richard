@@ -1,27 +1,27 @@
 [[main]]
-name = "OUR MISSION"
+name = "Our Mission"
 pre = ""
 url = "/about/"
 weight = 1
 
 [[main]]
-name = "OUR TEAM"
+name = "Our Team"
 pre = ""
 url = "/about/staff/"
 weight = 2
 
 [[main]]
-name = "SUPPORTERS"
+name = "Supporters"
 url = "/support/"
 weight = 3
 
 [[main]]
-name = "BECOME A PARTNER"
+name = "Become a partner"
 url = "/contact/"
 weight = 4
 
 [[main]]
-name = "SEND A TIP"
+name = "Send a tip"
 pre = "has-text-warning"
 url = "/tips/"
 weight = 5
