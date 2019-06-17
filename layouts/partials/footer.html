@@ -6,7 +6,7 @@
         <ul>
           {{ range .Site.Menus.footer }}
             <li>
-              <a href="{{ .URL }}">
+              <a href="{{ .URL }}" class="{{ .Pre }}">
                 {{ .Name }}
               </a>
             </li>
@@ -18,7 +18,7 @@
         <ul>
           {{ range .Site.Menus.social }}
             <li>
-              <a href="{{ .URL }}">
+              <a href="{{ .URL }}" class="{{ .Pre }}">
                 {{ .Name }}
               </a>
             </li>
