@@ -16,10 +16,15 @@ url = "/support/"
 weight = 3
 
 [[main]]
+name = "Become a partner"
+url = "/contact/"
+weight = 4
+
+[[main]]
 name = "Send a tip"
 pre = "has-text-warning"
 url = "/tips/"
-weight = 4
+weight = 5
 
 [[footer]]
 name = "Home"
