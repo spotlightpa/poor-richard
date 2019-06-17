@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container content">
+      {{ .Content }}
+    </div>
+  </section>
+  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+  <section class="section columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      {{ range .Pages }}
+        <div class="card has-margin-bottom">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img
+                    src="https://bulma.io/images/placeholders/96x96.png"
+                    alt="Placeholder image"
+                    class="is-rounded"
+                  >
+                </figure>
+              </div>
+              <div class="media-content">
+                <h2 class="title is-4">
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+                <time
+                  class="subtitle"
+                  datetime='{{ .PublishDate.Local.Format $isoFormat }}'
+                >
+                  {{ .PublishDate.Format "Monday, January 2, 2006" }}
+                </time>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
