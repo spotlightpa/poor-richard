@@ -4,7 +4,7 @@ description = "Together, we can hold the powerful to account."
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
-Spotlight PA is a collaborative newsroom dedicated to producing investigative journalism for all of Pennsylvania. Spotlight PA’s mission is to hold powerful private and public forces — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism.
+Spotlight PA is a collaborative newsroom dedicated to producing investigative journalism for all of Pennsylvania. Spotlight PA’s mission is to hold powerful private and public forces — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change.
 
 {{<right-link href="/about/">}}Read our mission statement{{</right-link>}}
 
@@ -18,7 +18,7 @@ Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.i
 
 {{<content-header>}}Journalism powered by you{{</content-header>}}
 
-Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But we can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
+Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. _**But we can’t do it without your help.**_ The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
 
 {{<right-link href="/tips/">}}Report waste, abuse or corruption{{</right-link>}}
 
