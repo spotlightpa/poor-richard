@@ -44,16 +44,20 @@
                 <p class="title is-4">{{ .name }}</p>
                 <p class="subtitle is-5">{{ .title }}</p>
                 <p class="subtitle is-6 has-text-break-all">
-                  <span class="icon has-text-link">
-                    <svg>
-                      <use xlink:href="#email-svg"></use>
-                    </svg>
-                  </span>
-                  <a href="mailto:{{.email}}">
-                    {{.email}}
-                  </a>
+                  {{ with .email }}
+                    <span class="icon has-text-link">
+                      <svg>
+                        <use xlink:href="#email-svg"></use>
+                      </svg>
+                    </span>
+                    <a href="mailto:{{ . }}">
+                      {{ . }}
+                    </a>
+                  {{ end }}
+                  {{ with (and .email .twitter) }}
+                  <br>
+                  {{ end }}
                   {{ with .twitter }}
-                    <br>
                     <span class="icon has-text-link">
                       <svg>
                         <use xlink:href="#twitter-svg"></use>
