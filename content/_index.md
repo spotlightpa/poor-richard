@@ -24,6 +24,6 @@ Our reporters serve as independent watchdogs unafraid to dig deep, fight for the
 
 {{<content-header>}}Commitment to transparency{{</content-header>}}
 
-Spotlight PA is a non-partisan, grant-funded newsroom supported by [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org) and more than a dozen other community foundations and individuals. We continue to grow our support while ensuring our newsroom and journalists retain total independence and editorial control, free to pursue the stories that matter most to Pennsylvanians.
+Spotlight PA is a nonpartisan, grant-funded newsroom supported by [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org) and more than a dozen other community foundations and individuals. We continue to grow our support while ensuring our newsroom and journalists retain total independence and editorial control, free to pursue the stories that matter most to Pennsylvanians.
 
 {{<right-link href="/support/">}}Read our transparency statement{{</right-link>}}
