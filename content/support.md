@@ -6,11 +6,7 @@ Spotlight PA is a nonpartisan, independent newsroom paid for by grants from comm
 
 Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication. In short, we answer to you, the public.
 
-The Seattle Times maintains editorial control over content produced with fund resources. Funders do not have any input into the reporting of stories or into any of the specific content that will be produced with fund resources. Funders are not aware of specific stories The Seattle Times newsroom is working on and do not review them before publication. Funders do not have special access to reporters, and readers know who our funders are.
-
-
-
-All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), which serves as an additional buffer between our investigative newsroom and our funders.
+All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), Section 501(c)(3) organization which serves as an additional buffer between our investigative newsroom and our funders.
 
 ## Our supporters
 
