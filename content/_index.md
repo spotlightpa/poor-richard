@@ -10,7 +10,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to accountability reporting on the state government and beyond. Our goal is to provide our content _free of charge_ to distribution partners across the state, which, in addition to our founding partners, currently include [LNP Media Group](https://lnpmediagroup.com)/[The Caucus](https://caucuspa.com/)  and [PA Post](http://www.papost.org), a project of [WITF](http://www.witf.org).
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to accountability reporting on the state government and beyond. Our goal is to provide our content _free of charge_ to distribution partners across the state, which currently include [LNP Media Group](https://lnpmediagroup.com)/[The Caucus](https://caucuspa.com/)  and [PA Post](http://www.papost.org), a project of [WITF](http://www.witf.org).
 
 {{<partner-logos>}}
 
