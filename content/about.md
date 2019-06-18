@@ -26,7 +26,7 @@ Fairly and accurately reporting the truth and the underlying facts in adherence 
 
 ## Diversity
 
-Building an inclusive team of journalists who bring unique skills, perspectives and experiences so that our journalism reflects the state’s many different communities and the issues important to them.
+Building an inclusive team of journalists who bring unique skills, perspectives and experiences so that our journalism reflects the state’s many different communities and the issues important to them. [Read more about this commitment](/about/diversity/).
 
 ## Innovation
 
