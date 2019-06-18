@@ -5,12 +5,13 @@
   "repository": "git@github.com:spotlightpa/poor-richard.git",
   "author": "Spotlight PA",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "checkformat": "prettier --check **/*.{scss,js}",
     "format": "prettier --write **/*.{scss,js}",
     "git-pre-push": "yarn run checkformat"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@zeit/git-hooks": "^0.1.4",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.7.5",
