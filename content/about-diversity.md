@@ -7,7 +7,7 @@ A central pillar of Spotlight PA’s mission is to produce investigative journal
 
 ## Statement of commitment
 
-Spotlight PA is committed to ensuring diversity in race, ethnicity, age, gender, sexual orientation, religious beliefs, physical disabilities and socioeconomic backgrounds is represented in the hiring, coverage and decision-making of the newsroom. Our ongoing goals include: strengthening diversity of staff and coverage by creating a pipeline of new investigative talent through fellowships; capitalizing on diversity training for managers and reporters; and fostering a newsroom culture that encourages open dialogue.
+Spotlight PA is committed to ensuring diversity in race, ethnicity, age, gender, sexual orientation, religious beliefs, physical disabilities and socioeconomic backgrounds is represented in the hiring, coverage and decision-making of the newsroom. Our ongoing goals include: strengthening diversity of staff and coverage by securing funding for additional full-time investigative reporters, creating a pipeline of new investigative talent through fellowships, and fostering a newsroom culture that encourages open dialogue.
 
 ## Newsroom staff
 
