@@ -25,10 +25,11 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Override title tag", name: "title-tag", widget: "string", hint: "Set title tag separately from page title", required: false}
       - {label: "Suppress title", name: "suppress-title", widget: "boolean", hint: "Don't show title in content area", required: false}
-      - {label: "no-index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
-      - {label: "hero-content", name: "hero-content", widget: "string", required: false}
-      - {label: "hero-background", name: "hero-background", widget: "string", required: false}
-      - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
+      - {label: "No index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
+      # No more heroes, for now
+      # - {label: "hero-content", name: "hero-content", widget: "string", required: false}
+      # - {label: "hero-background", name: "hero-background", widget: "string", required: false}
+      # - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
       - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Override URL", name: "url", widget: "string", required: false}
       - label: "Aliases"
