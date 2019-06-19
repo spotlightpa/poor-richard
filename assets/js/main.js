@@ -34,6 +34,5 @@ on("DOMContentLoaded", document, function() {
   each("a[href^=http]", function(el) {
     el.target = "_blank";
     el.rel = "noopener noreferrer";
-    console.log("el", el);
   });
 });
