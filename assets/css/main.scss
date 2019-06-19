@@ -6,6 +6,8 @@ $turquoise: $spotlight-darkblue;
 $blue: $spotlight-darkblue;
 $cyan: $spotlight-lightblue;
 $yellow: #ffcb05;
+$white: #fff;
+$black: #000;
 $black-ter: hsla(0, 0%, 14%, 0.8);
 
 $footer-background-color: hsl(0, 0%, 7%);
@@ -13,11 +15,11 @@ $footer-color: hsl(0, 0%, 96%);
 
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 3rem;
-$navbar-background-color: #000;
-$navbar-item-color: #fff;
-$navbar-item-hover-background-color: #000;
-$navbar-tab-active-background-color: #000;
-$navbar-item-active-color: #fff;
+$navbar-background-color: $black;
+$navbar-item-color: $white;
+$navbar-item-hover-background-color: $black;
+$navbar-tab-active-background-color: $black;
+$navbar-item-active-color: $white;
 
 $size-1: 3.5rem;
 $weight-light: 400;
@@ -26,6 +28,8 @@ $weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 900;
 $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
+
+$title-weight: $weight-bold;
 
 @import "fonts.scss";
 @import "bulma.sass";
