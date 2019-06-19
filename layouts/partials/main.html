@@ -20,14 +20,16 @@
 
 <section class="section">
   <div class="columns">
-    <div class="content column is-three-fifths is-offset-one-fifth">
+    <div class="column is-three-fifths is-offset-one-fifth">
       {{ if .Param "suppress-title" | not }}
-        <h1 class="title has-text-weight-bold">
+        <h1 class="title">
           {{ .Title }}
         </h1>
       {{ end }}
 
-      {{ .Content }}
+      <div class="content">
+        {{ .Content }}
+      </div>
     </div>
   </div>
 </section>
