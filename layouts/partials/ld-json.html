@@ -1,0 +1,43 @@
+{{ $icon := .Param "favicon" | resources.Get | fingerprint}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "publisher": {
+    "@type": "Organization",
+    "location": {
+      "@type": "Place",
+      "name": "Pennsylvania"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "contentUrl": "{{ $icon.Permalink }}",
+      "url": "{{ $icon.Permalink }}"
+    },
+    "name": "Spotlight PA",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
+ <script data-schema="Organization" type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "logo": "{{ $icon.Permalink }}",
+  "name": "Spotlight PA",
+  "location": {
+    "@type": "Place",
+    "name": "Pennsylvania"
+  },
+  "foundingDate": "2019",
+  "sameAs": [
+    {{ range $i, $menu := .Site.Menus.social }}
+      {{ if ne $i 0 }}, {{ end }}
+      "{{ $menu.URL }}"
+    {{ end }}
+  ],
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>
