@@ -2,7 +2,7 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 site_url: https://www.spotlightpa.org
 display_url: https://www.spotlightpa.org
-logo_url: https://www.spotlightpa.org/img/logos/banner-whitebg-3840.png
+logo_url: https://www.spotlightpa.org/img/logos/banner-share-5000.png
 show_preview_links: true
 
 backend:
@@ -21,7 +21,7 @@ collections:
     preview_path: "/{{slug}}/"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "Subtitle", widget: "string", required: false}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Override title tag", name: "title-tag", widget: "string", hint: "Set title tag separately from page title", required: false}
