@@ -11,7 +11,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to investigative reporting on the state government and beyond. Additional partners — including [PA Post](www.papost.org), a project of [WITF](www.witf.org), and [LNP Media Group](https://lnpmediagroup.com)/[The Caucus](https://caucuspa.com/) — allow us to share resources and maximize audience and reporting power for the public. We intend to provide our content _free of charge_ to newsrooms across the state.
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to investigative reporting on the state government and beyond. Additional partners — including [PA Post](www.papost.org), a project of [WITF](www.witf.org), and [LNP Media Group](https://lnpmediagroup.com)/[The Caucus](https://caucuspa.com/) — allow us to share resources and maximize audience and reporting power for the public. We intend to provide our content _free of charge_ to newsrooms across the state to help bolster local media and better serve the public.
 
 {{<partner-logos>}}
 
@@ -19,7 +19,7 @@ Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.i
 
 {{<content-header>}}Journalism powered by you{{</content-header>}}
 
-Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. _**But we can’t do it without your help.**_ The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
+Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But we can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
 
 {{<right-link href="/tips/">}}Report waste, abuse or corruption{{</right-link>}}
 
