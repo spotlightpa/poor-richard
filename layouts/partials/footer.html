@@ -36,8 +36,8 @@
   </div>
   <p>&nbsp;</p>
   <p class="has-text-centered is-size-6">
-    &copy; {{ now.Format "2006" }}.
-    {{ if eq .Page .Site.Home }}
+    &copy; {{ now.Format "2006" }}
+    {{- if eq .Page .Site.Home }}.
       Title image courtesy of Stephanie Strasburg / The Post-Gazette
     {{ end }}
   </p>
