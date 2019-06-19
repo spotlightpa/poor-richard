@@ -1,0 +1,14 @@
+<div class="columns is-multiline is-centered">
+    {{ $lenfest := newScratch }}
+    {{ $lenfest.Set "url" "https://www.lenfestinstitute.org/" }}
+    {{ $lenfest.Set "name" "Lenfest Institute for Journalism" }}
+    {{ $lenfest.Set "logotype" "png" }}
+    {{ $lenfest.Set "logo" "img/partners/lenfest-extended.png" }}
+    {{ partial "logo-column.html" $lenfest }}
+    {{ $spotlight := newScratch }}
+    {{ $spotlight.Set "url" "https://www.spotlightpa.org/" }}
+    {{ $spotlight.Set "name" "Spotlight PA" }}
+    {{ $spotlight.Set "logotype" "svg" }}
+    {{ $spotlight.Set "logo" "img/logos/logo-white.svg" }}
+    {{ partial "logo-column.html" $spotlight }}
+</div>

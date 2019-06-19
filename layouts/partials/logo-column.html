@@ -1,0 +1,26 @@
+{{ $logo := resources.Get (.Get "logo") }}
+{{ $logotype := .Get "logotype" }}
+{{ $name := .Get "name" }}
+{{ $url := .Get "url" }}
+<div class="column is-narrow has-text-centered">
+  <a
+    href="{{ $url }}"
+    title="{{ $name }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="logo-column">
+      {{ if eq $logotype "svg" }}
+        <span class="is-sr-only">Logo for {{ $name }}</span>
+        {{ $logo.Content| safeHTML }}
+      {{ else }}
+        {{ $logo = $logo.Resize "x128" | fingerprint }}
+        <img
+          src="{{ $logo.RelPermalink }}"
+          alt="Logo for {{ $name }}"
+          style="height: 64px;"
+        >
+      {{ end }}
+    </span>
+  </a>
+</div>

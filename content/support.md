@@ -8,6 +8,8 @@ Spotlight PA editors and reporters operate independently of our funders and main
 
 All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), which serves as an additional buffer between our investigative newsroom and our funders.
 
+{{<supporters-logos>}}
+
 ## Our supporters
 
 Laura and John Arnold <br />
