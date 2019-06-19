@@ -1,6 +1,7 @@
 +++
 title = "Investigative journalism for Pennsylvania"
 description = "Together, we can hold the powerful to account."
+title-tag = "Spotlight PA: Find Pennsylvania news and investigations about Pennsylvania state and local governments, businesses and special interests. Urgent and compelling investigative journalism. Together, we can hold the powerful to account."
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
