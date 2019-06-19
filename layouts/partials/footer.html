@@ -3,10 +3,6 @@
     <a
       href="{{ .URL }}"
       class="{{ .Pre }}"
-      {{ if (urls.Parse .URL).Scheme }}
-        target="_blank"
-        rel="noopener noreferrer"
-      {{ end }}
     >
       {{ .Name }}
     </a>

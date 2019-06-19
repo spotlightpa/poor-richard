@@ -29,4 +29,11 @@ on("DOMContentLoaded", document, function() {
       el.classList.toggle(toggleClass);
     });
   });
+
+  // Open external links in new window
+  each("a[href^=http]", function(el) {
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+    console.log("el", el);
+  });
 });
