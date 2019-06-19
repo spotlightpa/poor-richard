@@ -7,6 +7,7 @@ publish = "public"
 HUGO_VERSION = "0.55.6"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+NODE_ENV = "production"
 
 [context.deploy-preview]
 command = """
