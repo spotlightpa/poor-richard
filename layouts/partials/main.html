@@ -25,6 +25,11 @@
         <h1 class="title">
           {{ .Title }}
         </h1>
+        {{ with .Param "subtitle" }}
+          <h2 class="subtitle">
+            {{ . }}
+          </h2>
+        {{ end }}
       {{ end }}
 
       <div class="content">
