@@ -3,7 +3,7 @@
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
-  "name": "{{ .Title }}",
+  "name": {{ .Title|jsonify|safeJS }},
   "description": "{{ .Description }}",
   "publisher": {
     "@type": "Organization",
@@ -13,31 +13,32 @@
     },
     "logo": {
       "@type": "ImageObject",
-      "contentUrl": "{{ $icon.Permalink }}",
-      "url": "{{ $icon.Permalink }}"
+      "contentUrl": {{ $icon.Permalink|jsonify|safeJS }},
+      "url": {{ $icon.Permalink|jsonify|safeJS }}
     },
     "name": "Spotlight PA",
-    "url": "{{ .Site.BaseURL }}"
+    "url": {{ .Site.BaseURL|jsonify|safeJS }}
   }
 }
 </script>
+
+{{ $urls := slice }}
+{{ range .Site.Menus.social }}
+  {{ $urls = append .URL $urls }}
+{{ end }}
+
  <script data-schema="Organization" type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "logo": "{{ $icon.Permalink }}",
+  "logo": {{ $icon.Permalink|jsonify|safeJS }},
   "name": "Spotlight PA",
   "location": {
     "@type": "Place",
     "name": "Pennsylvania"
   },
   "foundingDate": "2019",
-  "sameAs": [
-    {{ range $i, $menu := .Site.Menus.social }}
-      {{ if ne $i 0 }}, {{ end }}
-      "{{ $menu.URL }}"
-    {{ end }}
-  ],
-  "url": "{{ .Site.BaseURL }}"
+  "sameAs": {{ $urls |jsonify|safeJS }},
+  "url": {{ .Site.BaseURL|jsonify|safeJS }}
 }
 </script>
