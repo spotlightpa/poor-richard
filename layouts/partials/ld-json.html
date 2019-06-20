@@ -4,7 +4,7 @@
   "@context": "http://schema.org",
   "@type": "WebPage",
   "name": {{ .Title|jsonify|safeJS }},
-  "description": "{{ .Description }}",
+  "description": {{ .Description|jsonify|safeJS }},
   "publisher": {
     "@type": "Organization",
     "location": {
