@@ -14,7 +14,7 @@
   </title>
   {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
   {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
   {{ $js := resources.Get "js/main.js" | minify }}
   <script>{{ $js.Content|safeJS }}</script>
