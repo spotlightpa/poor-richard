@@ -34,4 +34,5 @@ Cache-Control = "public, max-age=1209600" # 2 weeks
 
 [[headers]]
 for = "/*.(woff|woff2)"
+[headers.values]
 Access-Control-Allow-Origin = "*"
