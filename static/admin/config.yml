@@ -1,6 +1,6 @@
 media_folder: "static/uploads"
 public_folder: "/uploads"
-site_url: https://www.spotlightpa.org
+site_url: https://staging--poor-richard-spotlightpa.netlify.com
 display_url: https://www.spotlightpa.org
 logo_url: https://www.spotlightpa.org/img/logos/banner-share-5000.png
 show_preview_links: true
@@ -8,7 +8,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: master
+  branch: staging
 
 collections:
   - name: "content"
@@ -19,6 +19,8 @@ collections:
     create: true
     slug: "{{slug}}.md"
     preview_path: "/{{slug}}/"
+    editor:
+      preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
@@ -40,8 +42,47 @@ collections:
         default: []
         field: {label: "Path", name: path, widget: string}
       - {label: "type", name: "type", widget: "hidden", required: false}
+  - label: "Press Releases"
+    label_singular: "Press Release"
+    name: "press-releases"
+    folder: "content/press-releases"
+    format: "toml-frontmatter"
+    extension: "md"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "/press-releases/{{slug}}/"
+    editor:
+      preview: false
+    filter: {field: "type", value: "press-release"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "string"}
+      - label: "Authors"
+        label_singular: "author"
+        name: "authors"
+        widget: "list"
+        default: []
+        field: {
+          label: "Name",
+          hint: "Full name as listed in data profile",
+          widget: string
+        }
+      - {
+        label: "Draft",
+        name: "draft",
+        widget: "boolean",
+        hint: "Content will not show up on site, but will be publically available on Github. Do not save sensitive material.",
+        default: true,
+        required: false
+      }
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "type", name: "type", widget: "hidden", default: "press-release"}
+
   - label: "Data"
     name: "data"
+    editor:
+      preview: false
     files:
       - label: "Profiles"
         name: "profiles"
