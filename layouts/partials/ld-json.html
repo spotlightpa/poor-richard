@@ -42,3 +42,40 @@
   "url": {{ .Site.BaseURL|jsonify|safeJS }}
 }
 </script>
+{{ define "find-parents" }}
+  {{ $page := .Get "page" }}
+  {{ if $page.Parent }}
+    {{ .Set "page" $page.Parent }}
+    {{ template "find-parents" . }}
+  {{ end }}
+  {{ .Add "breadcrumbs" $page }}
+{{ end }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "page" .Page }}
+{{ $scratch.Set "breadcrumbs" (slice) }}
+{{ template "find-parents" $scratch }}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{ range $i, $page := $scratch.Get "breadcrumbs" }}
+      {{ $title := .Title }}
+      {{ if .IsHome }}
+        {{ $title = .Site.Title }}
+      {{ end }}
+      {{ if ne $i 0 }},{{ end }}
+      {
+        "@type": "ListItem",
+        "position": {{ add 1 $i }},
+        "item": {
+          "@id": {{ .Permalink |jsonify|safeJS }},
+          "name": {{ $title |jsonify|safeJS }}
+        }
+      }
+    {{ end }}
+  ]
+}
+</script>
