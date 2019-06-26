@@ -20,21 +20,76 @@
 
 <section class="section">
   <div class="columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
+    <article class="column is-three-fifths is-offset-one-fifth">
       {{ if .Param "suppress-title" | not }}
-        <h1 class="title">
-          {{ .Title }}
-        </h1>
-        {{ with .Param "subtitle" }}
-          <h2 class="subtitle">
-            {{ . }}
-          </h2>
-        {{ end }}
+        <header class="block">
+          {{ with .Page.Parent }}
+            {{ if not .IsHome }}
+              <h3 class="has-text-weight-bold">
+                <a
+                  href="{{ .RelPermalink }}"
+                  class="has-text-danger"
+                >{{ .Title }}</a>
+              </h3>
+            {{ end }}
+          {{ end }}
+          <h1 class="title">
+            {{ .Title }}
+          </h1>
+          {{ if .Param "subtitle" | or .PublishDate }}
+            <div class="subtitle is-size-4">
+              {{ with .Param "subtitle" }}
+                <h2>
+                  {{ . }}
+                </h2>
+              {{ end }}
+              {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+              {{ with .PublishDate }}
+                <time
+                  datetime='{{ .Local.Format $isoFormat }}'
+                  class="subtitle has-text-weight-light"
+                 >
+                  {{ .Format "Monday, January 2, 2006" }}
+                 </time>
+              {{ end }}
+            </div>
+          {{ end }}
+        </header>
       {{ end }}
 
       <div class="content">
         {{ .Content }}
       </div>
-    </div>
+      {{ with .Param "authors" }}
+        <footer>
+          {{ range . }}
+            {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .) }}
+            {{ $imgLoc := printf "assets/%s" $imgRes }}
+            <div class="level">
+              <div class="level-left">
+                {{ if fileExists $imgLoc  }}
+                  <div class="level-item">
+                    <p class="image is-64x64">
+                      {{ $img := resources.Get $imgRes }}
+                      {{ $img = $img.Fill "256x256" | fingerprint }}
+                        <img
+                          src="{{ $img.RelPermalink }}"
+                          alt="Photo of {{ . }}"
+                          class="is-rounded"
+                          style="filter: grayscale(1);"
+                          >
+                    </p>
+                  </div>
+                {{ end }}
+
+                <div class="level-item">
+                 <h3 class="subtitle has-text-weight-light">{{ . }}</h3>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </footer>
+      {{ end }}
+    </article>
   </div>
 </section>
