@@ -9,7 +9,7 @@
   <section class="section columns has-background-white-ter">
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range .Site.Data.profiles.profiles }}
-        <div class="card has-margin-bottom">
+        <div class="card block">
           {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
           {{ $imgLoc := printf "assets/%s" $imgRes }}
           {{ if fileExists $imgLoc  }}
