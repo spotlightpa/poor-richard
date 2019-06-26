@@ -8,33 +8,37 @@
   <section class="section columns">
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range .Pages }}
-        <div class="card has-margin-bottom">
-          <div class="card-content">
-            <div class="media">
-              {{ with .Param "images" }}
-                {{ if gt (len .) 1 }}
-                  {{ $image := index . 1 }}
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img
-                        src="{{ $image }}"
-                        alt="Thumbnail image"
-                      >
-                    </figure>
-                  </div>
-                {{ end }}
+        <div class="box">
+          <div class="media">
+            {{ with .Param "images" }}
+              {{ if gt (len .) 1 }}
+                {{ $image := index . 1 }}
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img
+                      src="{{ $image }}"
+                      alt="Thumbnail image"
+                    >
+                  </figure>
+                </div>
               {{ end }}
-              <div class="media-content">
-                <h2 class="title is-4">
-                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h2>
-                <time
-                  class="subtitle"
-                  datetime='{{ .PublishDate.Local.Format $isoFormat }}'
-                >
-                  {{ .PublishDate.Format "Monday, January 2, 2006" }}
-                </time>
-              </div>
+            {{ end }}
+            <div class="media-content">
+              <h2 class="title is-4">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              <h2 class="subtitle is-6">
+                <a
+                  class="has-text-dark"
+                  href="{{ .RelPermalink }}"
+                >{{ .Param "subtitle" }}</a>
+              </h2>
+              <time
+                class="subtitle is-6"
+                datetime='{{ .PublishDate.Local.Format $isoFormat }}'
+              >
+                {{ .PublishDate.Format "Monday, January 2, 2006" }}
+              </time>
             </div>
           </div>
         </div>
