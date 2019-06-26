@@ -64,6 +64,12 @@ pre = "is-uppercase"
 url = "/contact/"
 weight = 6
 
+[[footer]]
+name = "Press releases"
+pre = "is-uppercase"
+url = "/press-releases/"
+weight = 7
+
 [[social]]
 name = "Facebook"
 pre = "is-uppercase"
