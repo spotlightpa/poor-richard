@@ -25,13 +25,20 @@
         <header class="block">
           {{ with .Page.Parent }}
             {{ if not .IsHome }}
-              <h3 class="has-text-weight-bold">
+              <h3 class="has-text-weight-bold has-text-right">
+                <a href="/">Home</a>
+                &rsaquo;
                 <a
                   href="{{ .RelPermalink }}"
-                  class="has-text-danger"
+                  class="has-text-link"
                 >{{ .Title }}</a>
               </h3>
             {{ end }}
+          {{ end }}
+          {{ with .Param "kicker" }}
+            <p
+              class="tag is-warning is-uppercase has-text-weight-bold block"
+            >{{ . }}</p>
           {{ end }}
           <h1 class="title">
             {{ .Title }}
@@ -42,9 +49,9 @@
             {{ end }}
           </h1>
           {{ if .Param "subtitle" | or .PublishDate }}
-            <div class="subtitle is-size-4">
+            <div class="subtitle">
               {{ with .Param "subtitle" }}
-                <h2>
+                <h2 class="is-size-4">
                   {{ . }}
                 </h2>
               {{ end }}
@@ -52,7 +59,7 @@
               {{ with .PublishDate }}
                 <time
                   datetime='{{ .Local.Format $isoFormat }}'
-                  class="subtitle has-text-weight-light"
+                  class="subtitle is-size-6 has-text-weight-light"
                  >
                   {{ .Format "Monday, January 2, 2006" }}
                  </time>
