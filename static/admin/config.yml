@@ -82,11 +82,19 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "type", name: "type", widget: "hidden", default: "press-release"}
 
-  - label: "Data"
+  - label: "Other"
     name: "data"
     editor:
       preview: false
     files:
+      - label: "Press release landing page"
+        name: "press-release"
+        file: "content/press-releases/_index.md"
+        format: "toml-frontmatter"
+        fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Description", name: "description", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
       - label: "Profiles"
         name: "profiles"
         file: "data/profiles.toml"
