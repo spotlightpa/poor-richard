@@ -165,6 +165,10 @@ body {
   word-break: break-all;
 }
 
+.is-monochrome {
+  filter: grayscale(1);
+}
+
 .is-pullquote {
   margin: 0 0 1rem 2rem;
   max-width: 100%;

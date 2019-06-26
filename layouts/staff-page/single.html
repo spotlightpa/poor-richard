@@ -9,9 +9,13 @@
   <section class="section columns has-background-white-ter">
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range .Site.Data.profiles.profiles }}
-        <div class="card block">
-          {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .name) }}
-          {{ $imgLoc := printf "assets/%s" $imgRes }}
+        {{ $nameID := urlize .name }}
+        <div
+          id="{{ $nameID }}"
+          class="card block"
+        >
+          {{ $imgRes := printf "img/headshots/%s.jpeg" $nameID }}
+          {{ $imgLoc := path.Join "assets" $imgRes }}
           {{ if fileExists $imgLoc  }}
             {{ $img := resources.Get $imgRes }}
             {{ $img = $img.Resize "800x" | fingerprint }}
