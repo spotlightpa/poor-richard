@@ -35,6 +35,11 @@
           {{ end }}
           <h1 class="title">
             {{ .Title }}
+            {{ if .Draft }}
+              <span class="tag is-warning is-uppercase">
+                Draft
+              </span>
+            {{ end }}
           </h1>
           {{ if .Param "subtitle" | or .PublishDate }}
             <div class="subtitle is-size-4">
