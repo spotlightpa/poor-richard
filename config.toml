@@ -11,6 +11,13 @@ googleAnalytics = "UA-141126362-1"
     respectDoNotTrack = true
     useSessionStorage = true
 
+[frontmatter]
+    date  = [":default", ":filename"]
+    publishDate  = [":default", ":filename"]
+
+[permalinks]
+    press-releases = ":section/:year-:monthname-:slug/"
+
 [params]
     title = "Spotlight PA"
     favicon = "/img/logos/logo-square-inverse-solid-920.png"
