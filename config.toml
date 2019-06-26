@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Spotlight PA"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
+enableGitInfo = true
 
 googleAnalytics = "UA-141126362-1"
 [privacy.googleAnalytics]
