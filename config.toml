@@ -19,6 +19,14 @@ googleAnalytics = "UA-141126362-1"
 [permalinks]
     press-releases = ":section/:year/:slug/"
 
+[outputFormats.jsonfeed]
+    mediaType = "application/json"
+    baseName = "feed"
+    isPlainText = true
+
+[outputs]
+    section = ["html", "jsonfeed", "rss"]
+
 [params]
     title = "Spotlight PA"
     favicon = "/img/logos/logo-square-inverse-solid-920.png"
