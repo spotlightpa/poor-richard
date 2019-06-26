@@ -11,15 +11,19 @@
         <div class="card has-margin-bottom">
           <div class="card-content">
             <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img
-                    src="https://bulma.io/images/placeholders/96x96.png"
-                    alt="Placeholder image"
-                    class="is-rounded"
-                  >
-                </figure>
-              </div>
+              {{ with .Param "images" }}
+                {{ if gt (len .) 1 }}
+                  {{ $image := index . 1 }}
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="{{ $image }}"
+                        alt="Thumbnail image"
+                      >
+                    </figure>
+                  </div>
+                {{ end }}
+              {{ end }}
               <div class="media-content">
                 <h2 class="title is-4">
                   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
