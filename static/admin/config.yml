@@ -57,6 +57,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "string"}
+      - label: "Kicker"
+        name: "kicker"
+        hint: "Small text appearing above the page headline"
+        widget: "string"
+        required: false
       - label: "Date"
         name: "published"
         widget: "date"
