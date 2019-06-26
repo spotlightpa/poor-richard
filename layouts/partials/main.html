@@ -70,25 +70,32 @@
           {{ range . }}
             {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .) }}
             {{ $imgLoc := printf "assets/%s" $imgRes }}
+            {{ $authorURL := urlize . | printf "/about/staff/#%s" }}
             <div class="level">
               <div class="level-left">
                 {{ if fileExists $imgLoc  }}
                   <div class="level-item">
-                    <p class="image is-64x64">
+                    <a
+                      href="{{ $authorURL }}"
+                      class="image is-64x64"
+                    >
                       {{ $img := resources.Get $imgRes }}
                       {{ $img = $img.Fill "256x256" | fingerprint }}
                         <img
                           src="{{ $img.RelPermalink }}"
                           alt="Photo of {{ . }}"
-                          class="is-rounded"
-                          style="filter: grayscale(1);"
-                          >
-                    </p>
+                          class="is-rounded is-monochrome"
+                        >
+                    </a>
                   </div>
                 {{ end }}
 
                 <div class="level-item">
-                 <h3 class="subtitle has-text-weight-light">{{ . }}</h3>
+                  <h3 class="subtitle has-text-weight-light">
+                    <a href="{{ $authorURL }}">
+                      {{ . }}
+                    </a>
+                  </h3>
                 </div>
               </div>
             </div>
