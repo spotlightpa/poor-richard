@@ -17,7 +17,7 @@ googleAnalytics = "UA-141126362-1"
     publishDate  = [":default", ":filename"]
 
 [permalinks]
-    press-releases = ":section/:year-:monthname-:slug/"
+    press-releases = ":section/:year/:slug/"
 
 [params]
     title = "Spotlight PA"
