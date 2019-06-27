@@ -1,47 +1,47 @@
 {{ $icon := .Param "favicon" | resources.Get | fingerprint}}
+{{ $json := newScratch }}
+
+{{ $json.SetInMap "location" "@type" "Place" }}
+{{ $json.SetInMap "location" "name" "Pennsylvania" }}
+
+{{ $json.SetInMap "logo" "@type" "ImageObject" }}
+{{ $json.SetInMap "logo" "contentUrl" $icon.Permalink }}
+{{ $json.SetInMap "logo" "url" $icon.Permalink }}
+
+{{ $json.SetInMap "publisher" "@type" "Organization" }}
+{{ $json.SetInMap "publisher" "name" .Site.Title }}
+{{ $json.SetInMap "publisher" "url" .Site.BaseURL }}
+{{ $json.Get "location" | $json.SetInMap "publisher" "location" }}
+{{ $json.Get "logo" | $json.SetInMap "publisher" "logo" }}
+
+
+{{ $json.SetInMap "webpage" "@context" "http://schema.org" }}
+{{ $json.SetInMap "webpage" "@type" "WebPage" }}
+{{ $json.SetInMap "webpage" "name" .Title }}
+{{ $json.SetInMap "webpage" "description" .Description }}
+{{ $json.Get "publisher" | $json.SetInMap "webpage" "publisher" }}
+
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebPage",
-  "name": {{ .Title|jsonify|safeJS }},
-  "description": {{ .Description|jsonify|safeJS }},
-  "publisher": {
-    "@type": "Organization",
-    "location": {
-      "@type": "Place",
-      "name": "Pennsylvania"
-    },
-    "logo": {
-      "@type": "ImageObject",
-      "contentUrl": {{ $icon.Permalink|jsonify|safeJS }},
-      "url": {{ $icon.Permalink|jsonify|safeJS }}
-    },
-    "name": "Spotlight PA",
-    "url": {{ .Site.BaseURL|jsonify|safeJS }}
-  }
-}
+{{ $json.Get "webpage" | jsonify | safeJS }}
 </script>
 
-{{ $urls := slice }}
+{{ $socialURLs := slice }}
 {{ range .Site.Menus.social }}
-  {{ $urls = append .URL $urls }}
+  {{ $socialURLs = append .URL $socialURLs }}
 {{ end }}
 
- <script data-schema="Organization" type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "logo": {{ $icon.Permalink|jsonify|safeJS }},
-  "name": "Spotlight PA",
-  "location": {
-    "@type": "Place",
-    "name": "Pennsylvania"
-  },
-  "foundingDate": "2019",
-  "sameAs": {{ $urls |jsonify|safeJS }},
-  "url": {{ .Site.BaseURL|jsonify|safeJS }}
-}
+{{ $json.SetInMap "org" "@context" "http://schema.org" }}
+{{ $json.SetInMap "org" "@type" "Organization" }}
+{{ $json.SetInMap "org" "name" .Site.Title }}
+{{ $json.SetInMap "org" "logo" $icon.Permalink }}
+{{ $json.SetInMap "org" "foundingDate" 2019 }}
+{{ $json.SetInMap "org" "sameAs" $socialURLs }}
+{{ $json.SetInMap "org" "url" .Site.BaseURL }}
+{{ $json.Get "location" | $json.SetInMap "org" "location" }}
+<script type="application/ld+json">
+{{ $json.Get "org" | jsonify | safeJS }}
 </script>
+
 {{ define "find-parents" }}
   {{ $page := .Get "page" }}
   {{ if $page.Parent }}
@@ -56,26 +56,22 @@
 {{ $scratch.Set "breadcrumbs" (slice) }}
 {{ template "find-parents" $scratch }}
 
+{{ $itemlist := slice }}
+{{ range $i, $page := $scratch.Get "breadcrumbs" }}
+  {{ $name := .Title }}
+  {{ if .IsHome }}
+    {{ $name = .Site.Title }}
+  {{ end }}
+  {{ $pos := add 1 $i }}
+  {{ $item := dict "@id" .Permalink "name" $name }}
+  {{ $li := dict "@type" "ListItem" "position" $pos "item" $item }}
+  {{ $itemlist = append $li $itemlist }}
+{{ end }}
+
+{{ $json.SetInMap "nav" "@context" "http://schema.org" }}
+{{ $json.SetInMap "nav" "@type" "BreadcrumbList" }}
+{{ $json.SetInMap "nav" "itemListElement" $itemlist }}
+
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {{ range $i, $page := $scratch.Get "breadcrumbs" }}
-      {{ $title := .Title }}
-      {{ if .IsHome }}
-        {{ $title = .Site.Title }}
-      {{ end }}
-      {{ if ne $i 0 }},{{ end }}
-      {
-        "@type": "ListItem",
-        "position": {{ add 1 $i }},
-        "item": {
-          "@id": {{ .Permalink |jsonify|safeJS }},
-          "name": {{ $title |jsonify|safeJS }}
-        }
-      }
-    {{ end }}
-  ]
-}
+{{ $json.Get "nav" | jsonify | safeJS }}
 </script>
