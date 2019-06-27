@@ -1,0 +1,18 @@
+<section class="has-background-warning has-radius-padding">
+  {{ with .Param "banner-link" }}
+    <a
+      href="{{ . }}"
+      class="has-text-dark"
+    >
+  {{ end }}
+  <div class="level">
+    <div class="level-item">
+      <div class="is-size-5-mobile has-text-centered">
+        {{ .Param "banner" | markdownify }}
+      </div>
+    </div>
+  </div>
+  {{ if .Param "banner-link" }}
+    </a>
+  {{ end }}
+</section>

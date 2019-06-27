@@ -114,6 +114,26 @@ collections:
     editor:
       preview: false
     files:
+      - label: "Sitewide settings"
+        name: "sitewide"
+        file: "config/_default/params.toml"
+        format: "toml-frontmatter"
+        fields:
+        - label: "Banner"
+          name: "banner"
+          hint: "Sitewide alert banner"
+          widget: "markdown"
+          required: false
+        - label: "Banner link"
+          name: "banner-link"
+          hint: "Sitewide alert banner clickthrough link"
+          widget: "string"
+          required: false
+        - label: "Show banner"
+          name: "banner-active"
+          hint: "Show sitewide alert banner"
+          widget: "boolean"
+          default: false
       - label: "Press release landing page"
         name: "press-release"
         file: "content/press-releases/_index.md"
