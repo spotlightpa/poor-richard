@@ -1,6 +1,5 @@
-+++
-title = "Press Releases"
-description = "Press releases from the Spotlight PA team"
-+++
-
-Lorem ipsum.
+---
+title: Press Releases
+description: News and information about Spotlight PA
+---
+The latest announcements, initiatives and collaborations from the Spotlight PA team.
