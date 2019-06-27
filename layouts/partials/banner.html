@@ -5,12 +5,8 @@
       class="has-text-dark"
     >
   {{ end }}
-  <div class="level">
-    <div class="level-item">
-      <div class="is-size-4 is-size-5-mobile has-text-centered">
-        {{ .Param "banner" | markdownify }}
-      </div>
-    </div>
+  <div class="is-size-4 is-size-5-mobile has-text-centered">
+    {{ .Param "banner" | markdownify }}
   </div>
   {{ if .Param "banner-link" }}
     </a>
