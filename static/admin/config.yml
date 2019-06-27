@@ -86,7 +86,29 @@ collections:
       }
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "type", name: "type", widget: "hidden", default: "press-release"}
-
+  - label: "Authors"
+    label_singular: "Author"
+    name: "authors"
+    folder: "data/authors"
+    format: "toml"
+    extension: "toml"
+    create: true
+    preview_path: "/about/staff/"
+    identity_field: "name"
+    editor:
+      preview: false
+    fields:
+    - {label: "Name", name: "name", widget: "string"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Email", name: "email", widget: "string", required: false}
+    - {label: "Twitter", name: "twitter", widget: "string", required: false}
+    - {label: "Content", name: "content", widget: "markdown"}
+    - label: "Order"
+      name: "weight"
+      hint: "Order to put on staff page"
+      widget: "number"
+      valueType: "int"
+      required: true
   - label: "Other"
     name: "data"
     editor:

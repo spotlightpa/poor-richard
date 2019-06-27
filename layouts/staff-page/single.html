@@ -8,7 +8,7 @@
 
   <section class="section columns has-background-white-ter">
     <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range .Site.Data.profiles.profiles }}
+      {{ range sort .Site.Data.authors "weight" }}
         {{ $nameID := urlize .name }}
         <div
           id="{{ $nameID }}"

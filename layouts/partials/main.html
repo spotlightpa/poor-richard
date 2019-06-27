@@ -74,13 +74,13 @@
       </div>
       {{ with .Param "authors" }}
         <footer>
-          {{ range . }}
-            {{ $imgRes := printf "img/headshots/%s.jpeg" (urlize .) }}
+          {{ range $name := . }}
+            {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $imgLoc := printf "assets/%s" $imgRes }}
-            {{ $authorURL := urlize . | printf "/about/staff/#%s" }}
+            {{ $authorURL := urlize $name | printf "/about/staff/#%s" }}
             <div class="level">
               <div class="level-left">
-                {{ if fileExists $imgLoc  }}
+                {{ if fileExists $imgLoc }}
                   <div class="level-item">
                     <a
                       href="{{ $authorURL }}"
@@ -97,12 +97,18 @@
                   </div>
                 {{ end }}
 
+                {{ $author := index $.Site.Data.authors $name }}
                 <div class="level-item">
-                  <h3 class="subtitle has-text-weight-light">
-                    <a href="{{ $authorURL }}">
-                      {{ . }}
-                    </a>
-                  </h3>
+                  <div class="">
+                    <h3 class="subtitle is-4 has-text-weight-bold">
+                      <a href="{{ $authorURL }}">
+                        {{ . }}
+                      </a>
+                    </h3>
+                    <h3 class="subtitle ">
+                      {{ $author.title }}
+                    </h3>
+                  </div>
                 </div>
               </div>
             </div>
