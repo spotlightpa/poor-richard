@@ -1,6 +1,6 @@
 media_folder: "static/uploads"
 public_folder: "/uploads"
-site_url: https://www.spotlightpa.org
+site_url: https://staging--poor-richard-spotlightpa.netlify.com
 display_url: https://www.spotlightpa.org
 logo_url: https://www.spotlightpa.org/img/logos/banner-share-5000.png
 show_preview_links: true
@@ -8,7 +8,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: master
+  branch: staging
 
 collections:
   - name: "content"
