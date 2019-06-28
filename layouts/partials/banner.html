@@ -1,14 +1,17 @@
+
+{{ $bannerlink := .Param "banner-link" }}
 <section class="has-background-warning has-radius-padding">
-  {{ with .Param "banner-link" }}
-    <a
-      href="{{ . }}"
-      class="has-text-dark"
-    >
-  {{ end }}
-  <div class="is-size-4 is-size-5-mobile has-text-centered">
-    {{ .Param "banner" | markdownify }}
-  </div>
-  {{ if .Param "banner-link" }}
+  {{ if $bannerlink }}
+    <a href="{{ $bannerlink }}" >
+      {{ template "banner-content" . }}
     </a>
+  {{ else }}
+    {{ block "banner-content" . }}
+      <div
+        class="is-size-4-fullscreen is-size-5 has-text-black has-text-centered"
+      >
+        {{ .Param "banner" | markdownify }}
+      </div>
+    {{ end }}
   {{ end }}
 </section>
