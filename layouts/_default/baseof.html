@@ -56,6 +56,9 @@
 </head>
 <body>
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
+  {{ if .Param "banner-active" }}
+    {{ partial "banner.html" . }}
+  {{ end }}
   <main>
     {{ block "main" . }}
       {{ partial "main.html" . }}
