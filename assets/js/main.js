@@ -32,6 +32,9 @@ on("DOMContentLoaded", document, function() {
 
   // Open external links in new window
   each("a[href^=http]", function(el) {
+    if (el.host === window.location.host) {
+      return;
+    }
     el.target = "_blank";
     el.rel = "noopener noreferrer";
   });
