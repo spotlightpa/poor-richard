@@ -1,8 +1,10 @@
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: static/uploads
+public_folder: /uploads
+
 site_url: https://www.spotlightpa.org
 display_url: https://www.spotlightpa.org
 logo_url: https://www.spotlightpa.org/img/logos/banner-share-5000.png
+
 show_preview_links: true
 
 backend:
@@ -11,182 +13,291 @@ backend:
   branch: master
 
 collections:
-  - name: "content"
-    label: "Content"
-    folder: "content"
-    format: "toml-frontmatter"
-    extension: "md"
+  - label: Content
+    name: content
+    folder: content
+    format: toml-frontmatter
+    extension: md
     create: true
     slug: "{{slug}}.md"
     preview_path: "/{{slug}}/"
     editor:
       preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Override title tag", name: "title-tag", widget: "string", hint: "Set title tag separately from page title", required: false}
-      - {label: "Suppress title", name: "suppress-title", widget: "boolean", hint: "Don't show title in content area", required: false}
-      - {label: "No index", name: "no-index", hint: "Hide page on Google etc.", widget: "boolean", required: false}
-      # No more heroes, for now
-      # - {label: "hero-content", name: "hero-content", widget: "string", required: false}
-      # - {label: "hero-background", name: "hero-background", widget: "string", required: false}
-      # - {label: "hero-classes", name: "hero-classes", widget: "string", required: false}
-      - {label: "Slug", name: "slug", widget: "string", required: false}
-      - {label: "Override URL", name: "url", widget: "string", required: false}
-      - label: "Aliases"
-        label_singular: "alias"
-        name: "aliases"
-        widget: "list"
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        required: false
+      - label: Description
+        name: description
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+      - label: "Override title tag"
+        name: title-tag
+        widget: string
+        hint: "Set title tag separately from page title"
+        required: false
+      - label: "Suppress title"
+        name: suppress-title
+        widget: boolean
+        hint: "Don't show title in content area"
+        required: false
+      - label: "No index"
+        name: no-index
+        hint: "Hide page on Google etc."
+        widget: boolean
+        required: false
+      - label: Slug
+        name: slug
+        widget: string
+        required: false
+      - label: "Override URL"
+        name: url
+        widget: string
+        required: false
+      - label: Aliases
+        label_singular: alias
+        name: aliases
+        widget: list
         default: []
-        field: {label: "Path", name: path, widget: string}
-      - {label: "type", name: "type", widget: "hidden", required: false}
+        field:
+          label: Path
+          name: path
+          widget: string
+      - label: type
+        name: type
+        widget: hidden
+        required: false
   - label: "Press Releases"
     label_singular: "Press Release"
-    name: "press-releases"
-    folder: "content/press-releases"
-    format: "toml-frontmatter"
-    extension: "md"
+    name: press-releases
+    folder: content/press-releases
+    format: toml-frontmatter
+    extension: md
     create: true
     preview_path: "/press-releases/{{slug}}/"
     editor:
       preview: false
-    filter: {field: "type", value: "press-release"}
+    filter:
+      field: type
+      value: press-release
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "string"}
-      - label: "Kicker"
-        name: "kicker"
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        required: false
+      - label: Description
+        name: description
+        widget: string
+      - label: Kicker
+        name: kicker
         hint: "Small text appearing above the page headline"
-        widget: "string"
+        widget: string
         required: false
-      - label: "Date"
-        name: "published"
-        widget: "date"
+      - label: Date
+        name: published
+        widget: date
         hint: "Note that future dated releases will not be published on the live site"
-      - label: "Authors"
-        label_singular: "author"
-        name: "authors"
-        widget: "list"
+      - label: Authors
+        label_singular: author
+        name: authors
+        widget: list
         default: []
-        field: {
-          label: "Name",
-          hint: "Full name as listed in data profile",
+        field:
+          label: Name
+          hint: "Full name as listed in data profile"
           widget: string
-        }
-      - {
-        label: "Draft",
-        name: "draft",
-        widget: "boolean",
-        hint: "Content will not show up on site, but will be publically available on Github. Do not save sensitive material.",
-        default: true,
+      - label: Draft
+        name: draft
+        widget: boolean
+        hint: "Content will not show up on site, but will be publically available on Github. Do not save embargoed material."
+        default: true
         required: false
-      }
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "type", name: "type", widget: "hidden", default: "press-release"}
-  - label: "Authors"
-    label_singular: "Author"
-    name: "authors"
-    folder: "data/authors"
-    format: "toml"
-    extension: "toml"
+      - label: Body
+        name: body
+        widget: markdown
+      - label: type
+        name: type
+        widget: hidden
+        default: press-release
+  - label: Authors
+    label_singular: Author
+    name: authors
+    folder: data/authors
+    format: toml
+    extension: toml
     create: true
-    preview_path: "/about/staff/"
-    identity_field: "name"
+    preview_path: /about/staff/
+    identity_field: name
     editor:
       preview: false
     fields:
-    - {label: "Name", name: "name", widget: "string"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Email", name: "email", widget: "string", required: false}
-    - {label: "Twitter", name: "twitter", widget: "string", required: false}
-    - {label: "Content", name: "content", widget: "markdown"}
-    - label: "Order"
-      name: "weight"
-      hint: "Order to put on staff page"
-      widget: "number"
-      valueType: "int"
-      required: true
-  - label: "Other"
-    name: "data"
+      - label: Name
+        name: name
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: Email
+        name: email
+        widget: string
+        required: false
+      - label: Twitter
+        name: twitter
+        widget: string
+        required: false
+      - label: Content
+        name: content
+        widget: markdown
+      - label: Order
+        name: weight
+        hint: "Order to put on staff page"
+        widget: number
+        valueType: int
+        required: true
+  - label: Other
+    name: data
     editor:
       preview: false
     files:
       - label: "Sitewide settings"
-        name: "sitewide"
-        file: "config/_default/params.toml"
-        format: "toml-frontmatter"
+        name: sitewide
+        file: config/_default/params.toml
+        format: toml-frontmatter
         fields:
-        - label: "Banner"
-          name: "banner"
-          hint: "Sitewide alert banner"
-          widget: "markdown"
-          required: false
-        - label: "Banner link"
-          name: "banner-link"
-          hint: "Sitewide alert banner clickthrough link"
-          widget: "string"
-          required: false
-        - label: "Show banner"
-          name: "banner-active"
-          hint: "Show sitewide alert banner"
-          widget: "boolean"
-          default: false
+          - label: Banner
+            name: banner
+            hint: "Sitewide alert banner"
+            widget: markdown
+            required: false
+          - label: "Banner link"
+            name: banner-link
+            hint: "Sitewide alert banner clickthrough link"
+            widget: string
+            required: false
+          - label: "Show banner"
+            name: banner-active
+            hint: "Show sitewide alert banner"
+            widget: boolean
+            default: false
       - label: "Press release landing page"
-        name: "press-release"
-        file: "content/press-releases/_index.md"
-        format: "toml-frontmatter"
+        name: press-release
+        file: content/press-releases/_index.md
+        format: toml-frontmatter
         fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Description", name: "description", widget: "string"}
-        - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Profiles"
-        name: "profiles"
-        file: "data/profiles.toml"
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+      - label: Profiles
+        name: profiles
+        file: data/profiles.toml
         fields:
           - label: "Team members"
-            label_singular: "Member"
-            name: "profiles"
-            widget: "list"
+            label_singular: Member
+            name: profiles
+            widget: list
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Email", name: "email", widget: "string", required: false}
-              - {label: "Twitter", name: "twitter", widget: "string", required: false}
-              - {label: "Content", name: "content", widget: "markdown"}
-      - label: "Menus"
-        name: "menus"
-        file: "config/_default/menus.toml"
+              - label: Name
+                name: name
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Email
+                name: email
+                widget: string
+                required: false
+              - label: Twitter
+                name: twitter
+                widget: string
+                required: false
+              - label: Content
+                name: content
+                widget: markdown
+      - label: Menus
+        name: menus
+        file: config/_default/menus.toml
         fields:
-        - label: "Main menu items"
-          label_singular: "menu item"
-          name: "main"
-          hint: "Navbar main menu"
-          widget: "list"
-          fields:
-          - {label: "Display Name", name: "name", widget: "string", required: true}
-          - {label: "URL", name: "url", widget: "string", required: true}
-          - {label: "CSS class", name: "pre", widget: "string", required: false}
-          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
-        - label: "Footer menu items"
-          label_singular: "menu item"
-          name: "footer"
-          hint: "Footer pages list"
-          widget: "list"
-          fields:
-          - {label: "Display Name", name: "name", widget: "string", required: true}
-          - {label: "URL", name: "url", widget: "string", required: true}
-          - {label: "CSS class", name: "pre", widget: "string", required: false}
-          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
-        - label: "Social menu items"
-          label_singular: "menu item"
-          name: "social"
-          hint: "Footer social links"
-          widget: "list"
-          fields:
-          - {label: "Display Name", name: "name", widget: "string", required: true}
-          - {label: "URL", name: "url", widget: "string", required: true}
-          - {label: "CSS class", name: "pre", widget: "string", required: false}
-          - {label: "Order", name: "weight", widget: "number", valueType: "int", required: false}
+          - label: "Main menu items"
+            label_singular: "menu item"
+            name: main
+            hint: "Navbar main menu"
+            widget: list
+            fields:
+              - label: "Display Name"
+                name: name
+                widget: string
+                required: true
+              - label: URL
+                name: url
+                widget: string
+                required: true
+              - label: "CSS class"
+                name: pre
+                widget: string
+                required: false
+              - label: Order
+                name: weight
+                widget: number
+                valueType: int
+                required: false
+          - label: "Footer menu items"
+            label_singular: "menu item"
+            name: footer
+            hint: "Footer pages list"
+            widget: list
+            fields:
+              - label: "Display Name"
+                name: name
+                widget: string
+                required: true
+              - label: URL
+                name: url
+                widget: string
+                required: true
+              - label: "CSS class"
+                name: pre
+                widget: string
+                required: false
+              - label: Order
+                name: weight
+                widget: number
+                valueType: int
+                required: false
+          - label: "Social menu items"
+            label_singular: "menu item"
+            name: social
+            hint: "Footer social links"
+            widget: list
+            fields:
+              - label: "Display Name"
+                name: name
+                widget: string
+                required: true
+              - label: URL
+                name: url
+                widget: string
+                required: true
+              - label: "CSS class"
+                name: pre
+                widget: string
+                required: false
+              - label: Order
+                name: weight
+                widget: number
+                valueType: int
+                required: false

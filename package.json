@@ -6,8 +6,8 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "checkformat": "prettier --check **/*.{scss,js}",
-    "format": "prettier --write **/*.{scss,js}",
+    "checkformat": "prettier --check **/*.{scss,js,yml}",
+    "format": "prettier --write **/*.{scss,js,yml}",
     "git-pre-push": "yarn run checkformat"
   },
   "dependencies": {
