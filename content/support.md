@@ -29,4 +29,4 @@ The Lois Tack Thompson Fund of The Pittsburgh Foundation <br />
 Poor Richard’s Charitable Trust <br />
 The Steinman Foundation <br />
 Wyncote Foundation <br />
-Fund for York County Fund <br />
+York County Community Foundation <br />
