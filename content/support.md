@@ -17,7 +17,7 @@ Continuing fundraising is intended to cover Spotlight PA's entire budget, includ
 ## Our supporters
 
 Laura and John Arnold <br />
-Erie Community Foundation <br />
+The Erie Community Foundation <br />
 Donald McCormick Fund of The Foundation for Enhancing Communities <br />
 The Heinz Endowments <br /\
 Henry L. Hillman Foundation <br />
