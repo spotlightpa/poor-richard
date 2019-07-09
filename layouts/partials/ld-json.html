@@ -42,22 +42,8 @@
 {{ $json.Get "org" | jsonify | safeJS }}
 </script>
 
-{{ define "find-parents" }}
-  {{ $page := .Get "page" }}
-  {{ if $page.Parent }}
-    {{ .Set "page" $page.Parent }}
-    {{ template "find-parents" . }}
-  {{ end }}
-  {{ .Add "breadcrumbs" $page }}
-{{ end }}
-
-{{ $scratch := newScratch }}
-{{ $scratch.Set "page" .Page }}
-{{ $scratch.Set "breadcrumbs" (slice) }}
-{{ template "find-parents" $scratch }}
-
 {{ $itemlist := slice }}
-{{ range $i, $page := $scratch.Get "breadcrumbs" }}
+{{ range $i, $page := partial "find-parents.html" . }}
   {{ $name := .Title }}
   {{ if .IsHome }}
     {{ $name = .Site.Title }}

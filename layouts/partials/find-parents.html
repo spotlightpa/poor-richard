@@ -1,0 +1,16 @@
+{{ define "lookup-parents" }}
+  {{ $page := .Get "page" }}
+  {{ if $page.Parent }}
+    {{ .Set "page" $page.Parent }}
+    {{ template "lookup-parents" . }}
+  {{ end }}
+  {{ .Add "parents" $page }}
+{{ end }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "page" .Page }}
+{{ $scratch.Set "parents" (slice) }}
+
+{{ template "lookup-parents" $scratch }}
+
+{{ return $scratch.Get "parents" }}
