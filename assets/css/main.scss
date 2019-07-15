@@ -1,3 +1,4 @@
+$navbar-box-shadow-color: #f00;
 $spotlight-lightblue: #99d9f1;
 $spotlight-darkblue: rgba(0, 158, 219, 1);
 
@@ -184,4 +185,10 @@ body {
 
 a.navbar-burger:hover {
   color: $yellow;
+}
+
+@media screen and (max-width: $navbar-breakpoint - 1px) {
+  .navbar-end {
+    border-top: 1px solid $yellow;
+  }
 }
