@@ -3,8 +3,8 @@
 {{ $donateImg := resources.Get "/img/promo/donate.svg" }}
 
 <section class="section">
-  <div class="columns">
-    <div class="column is-half has-text-centered">
+  <div class="columns is-vcentered">
+    <div class="column has-text-centered">
       <a href="/donate/">
         {{ $donateImg.Content | safeHTML }}
       </a>
