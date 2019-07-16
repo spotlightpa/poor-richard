@@ -19,12 +19,22 @@ googleAnalytics = "UA-141126362-1"
 [permalinks]
     press-releases = ":section/:year/:slug/"
 
+[mediaTypes."text/netlify"]
+    delimiter = ""
+
 [outputFormats.jsonfeed]
     mediaType = "application/json"
     baseName = "feed"
     isPlainText = true
 
+[outputFormats.redirects]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
 [outputs]
+    home = ["html", "jsonfeed", "rss", "redirects"]
     section = ["html", "jsonfeed", "rss"]
 
 [params]
