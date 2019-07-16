@@ -1,24 +1,33 @@
-{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" | fingerprint }}
-{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" | fingerprint }}
+{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
+{{ $donateImg := resources.Get "/img/promo/donate.svg" }}
 
-<form
-  class="section has-background-info"
-  action="/thanks/"
-  method="post"
-  name="signup-partial"
-  netlify
->
-  <p class="is-hidden">
-    <label>
-      Don’t fill this out if you're human: <input name="bot-field">
-    </label>
-  </p>
+<section class="section">
   <div class="columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
+    <div class="column is-half has-text-centered">
+      <a href="/donate/">
+        {{ $donateImg.Content | safeHTML }}
+      </a>
+    </div>
+    <form
+      class="column is-half"
+      action="/thanks/"
+      method="post"
+      name="signup-partial"
+      netlify
+    >
+      <p class="is-hidden">
+        <label>
+          Don’t fill this out if you're human: <input name="bot-field">
+        </label>
+      </p>
       <h2 class="title">
         Spotlight PA will be launching soon.
       </h2>
-      <label class="label is-medium" for="signup-email">
+      <label
+        class="label is-medium has-text-weight-light subtitle"
+        for="signup-email"
+      >
         Be the first to know when we go live.
       </label>
       <div class="field-body">
@@ -47,6 +56,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
-</form>
+</section>
