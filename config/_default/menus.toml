@@ -64,6 +64,12 @@ pre = "is-uppercase"
 url = "/press-releases/"
 weight = 5
 
+[[footer]]
+name = "Donate"
+pre = "is-uppercase"
+url = "/donate/"
+weight = 6
+
 [[about]]
 name = "About"
 pre = "is-uppercase"
