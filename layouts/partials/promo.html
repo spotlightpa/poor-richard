@@ -5,8 +5,8 @@
 <section class="section">
   <div class="columns is-centered">
     <div class="column is-three-fifths">
-      <div class="columns is-desktop">
-        <div class="column is-half-desktop is-paddingless">
+      <div class="columns is-desktop is-vcentered">
+        <div class="column is-half-desktop">
           <a href="/donate/">
             <img
               src="{{ $donateImg.RelPermalink }}"
@@ -15,70 +15,65 @@
             >
           </a>
         </div>
-        <div class="column">
-          &nbsp;
-        </div>
-        <div class="column is-half-desktop has-background-info has-flex-vcentered">
-          <form
-            class=""
-            action="/thanks/"
-            method="post"
-            name="signup-partial"
-            netlify
+        <form
+          class="column is-half-desktop"
+          action="/thanks/"
+          method="post"
+          name="signup-partial"
+          netlify
+        >
+          <p class="is-hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field">
+            </label>
+          </p>
+          <h2 class="title is-size-4">
+            Spotlight PA will launch soon.
+          </h2>
+          <h3
+            class="label is-medium is-size-5 has-text-weight-medium subtitle"
+            for="signup-email"
           >
-            <p class="is-hidden">
-              <label>
-                Don’t fill this out if you're human: <input name="bot-field">
-              </label>
-            </p>
-            <h2 class="title is-size-4">
-              Spotlight PA will be launching soon.
-            </h2>
-            <h3
-              class="label is-medium is-size-5 has-text-weight-medium subtitle"
-              for="signup-email"
-            >
-              Be the first to know when we go live.
-            </h3>
-            <div class="field">
-              <label class="is-sr-only" for="home-name">Name</label>
-              <div class="control">
-                <input
-                  id="signup-name"
-                  class="input is-medium"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                >
-              </div>
+            Be the first to know when we go live.
+          </h3>
+          <div class="field">
+            <label class="is-sr-only" for="home-name">Name</label>
+            <div class="control">
+              <input
+                id="signup-name"
+                class="input is-medium"
+                type="text"
+                name="name"
+                placeholder="Name"
+              >
             </div>
-            <div class="field">
-              <label class="is-sr-only" for="home-email">Email</label>
-              <div class="control has-icons-left has-icons-right is-expanded">
-                <input
-                  id="signup-email"
-                  class="input is-medium"
-                  type="email"
-                  name="email"
-                  placeholder=" "
-                >
-                <span class="icon is-large is-left has-text-primary">
-                  {{ $iconEmail.Content|safeHTML }}
-                </span>
-                <span class="icon is-large is-right validator-icon">
-                  {{ $iconCheck.Content|safeHTML }}
-                </span>
-              </div>
+          </div>
+          <div class="field">
+            <label class="is-sr-only" for="home-email">Email</label>
+            <div class="control has-icons-left has-icons-right is-expanded">
+              <input
+                id="signup-email"
+                class="input is-medium"
+                type="email"
+                name="email"
+                placeholder=" "
+              >
+              <span class="icon is-large is-left has-text-primary">
+                {{ $iconEmail.Content|safeHTML }}
+              </span>
+              <span class="icon is-large is-right validator-icon">
+                {{ $iconCheck.Content|safeHTML }}
+              </span>
             </div>
-            <div class="field">
-              <div class="control">
-                <button type="submit" class="button is-large is-primary is-fullwidth">
-                  Get Updates
-                </button>
-              </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button type="submit" class="button is-large is-primary is-fullwidth">
+                Get Updates
+              </button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
