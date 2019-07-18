@@ -17,16 +17,22 @@ url = "/support/"
 weight = 3
 
 [[main]]
+name = "FAQs"
+pre = "is-uppercase"
+url = "/about/faqs/"
+weight = 4
+
+[[main]]
 name = "Become a partner"
 pre = "is-uppercase"
 url = "/contact/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Send a tip"
 pre = "is-uppercase has-text-warning"
 url = "/tips/"
-weight = 5
+weight = 6
 
 [[footer]]
 name = "Home"
@@ -53,9 +59,9 @@ url = "/support/"
 weight = 4
 
 [[footer]]
-name = "Tips"
+name = "FAQs"
 pre = "is-uppercase"
-url = "/tips/"
+url = "/about/faqs/"
 weight = 5
 
 [[footer]]
@@ -65,10 +71,16 @@ url = "/contact/"
 weight = 6
 
 [[footer]]
+name = "Tips"
+pre = "is-uppercase"
+url = "/tips/"
+weight = 7
+
+[[footer]]
 name = "Press releases"
 pre = "is-uppercase"
 url = "/press-releases/"
-weight = 7
+weight = 8
 
 [[social]]
 name = "Facebook"

@@ -1,6 +1,7 @@
 +++
 title = "Frequently Asked Questions"
 description = "Frequently asked questions about Spotlight PA"
+url = "/about/faqs/"
 +++
 **Q: What is Spotlight PA?**
 
@@ -36,7 +37,7 @@ description = "Frequently asked questions about Spotlight PA"
 
 **Q: How frequently will Spotlight PA publish content?**
 
-**A**: Our publishing decisions are based on what’s best for the stories we want to tell and the readers we serve, and are not dictated by the need to fill a newspaper or website. We expect to initially publish content on a weekly basis as our reporters get oriented and establish their beats. 
+**A**: Our publishing decisions are based on what’s best for the stories we want to tell and the readers we serve, and are not dictated by the need to fill a newspaper or website. We expect to initially publish content on a weekly basis as our reporters get oriented and establish their beats.
 
 **Q: Where does Spotlight PA’s work appear?**
 
