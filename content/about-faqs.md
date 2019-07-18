@@ -1,7 +1,7 @@
 +++
 title = "Frequently asked questions"
 description = "Frequently asked questions about Spotlight PA"
-url = "/about/faqs/"
+url = "/about/faq/"
 +++
 **Q: What is Spotlight PA?**
 
