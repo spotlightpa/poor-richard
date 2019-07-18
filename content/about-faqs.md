@@ -53,7 +53,7 @@ url = "/about/faq/"
 
 **Q: Does Spotlight PA charge for its content?**
 
-**A:** No, Spotlight PA content is available free of charge at [spotlightpa.org](https://www.spotlightpa.org).
+**A:** No, Spotlight PA content will be available free of charge at [spotlightpa.org](https://www.spotlightpa.org).
 
 **Q: Who are Spotlight PA’s reporters?**
 
