@@ -19,7 +19,7 @@ collections:
     format: toml-frontmatter
     extension: md
     create: true
-    slug: "{{slug}}.md"
+    slug: "{{url}}"
     preview_path: "/{{slug}}/"
     editor:
       preview: false
