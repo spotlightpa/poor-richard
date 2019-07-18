@@ -41,7 +41,7 @@ url = "/about/faq/"
 
 **Q: Where does Spotlight PA’s work appear?**
 
-**A:** All Spotlight PA content will appear on our website, [spotlightpa.org](https://www.spotlightpa.org). At launch, Spotlight PA content will also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com). Our content will also be shared with [PA Post](https://www.papost.org), a project of WITF, and the [LNP Media Group](https://www.lancasteronline.com) in Lancaster.
+**A:** All Spotlight PA content will appear on our website, [spotlightpa.org](https://www.spotlightpa.org). At launch, Spotlight PA content will also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com). Our content will also be shared with [PA Post](https://www.papost.org), a project of WITF, and [LNP Media Group](https://www.lancasteronline.com) in Lancaster.
 
 **Q: Will Spotlight PA share its content with other news organizations?**
 
