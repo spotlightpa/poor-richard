@@ -17,7 +17,7 @@ url = "/support/"
 weight = 3
 
 [[main]]
-name = "FAQs"
+name = "FAQ"
 pre = "is-uppercase"
 url = "/about/faqs/"
 weight = 4
@@ -59,8 +59,8 @@ url = "/support/"
 weight = 4
 
 [[footer]]
-name = "FAQs"
-pre = "is-uppercase"
+name = "FAQ"
+pre = ""
 url = "/about/faqs/"
 weight = 5
 
