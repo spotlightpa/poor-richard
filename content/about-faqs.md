@@ -17,7 +17,11 @@ url = "/about/faq/"
 
 **Q: What does Spotlight PA cover?**
 
-**A:** Spotlight PA’s reporters are assigned to cover the state government’s many departments, agencies and commissions, as well as significant local and regional issues that cut across political and geographic boundaries. Their goal is to produce journalism that drives change.
+**A:** Spotlight PA’s reporters are assigned to cover the state government’s many departments, agencies and commissions, as well as significant local and regional issues that cut across political and geographic boundaries. Their goal is to produce digital-first journalism that drives change.
+
+**Q: What is "digital-first journalism"?**
+
+**A:** Digital-first journalism means we make all of our editorial decisions based on the best way to reach modern-day readers online and in the forms and formats they like most for consuming news. While some of our stories will take the traditional, narrative form, we'll seek to innovate using data and visual tools to create new, interesting and engaging storytelling forms. And we won't be afraid to experiment.
 
 **Q: How does Spotlight PA measure its success?**
 
