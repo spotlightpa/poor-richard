@@ -19,7 +19,7 @@ weight = 3
 [[main]]
 name = "FAQ"
 pre = "is-uppercase"
-url = "/about/faqs/"
+url = "/about/faq/"
 weight = 4
 
 [[main]]
@@ -41,46 +41,52 @@ url = "/"
 weight = 1
 
 [[footer]]
-name = "About"
-pre = "is-uppercase"
-url = "/about/"
-weight = 2
-
-[[footer]]
-name = "Staff"
-pre = "is-uppercase"
-url = "/about/staff/"
-weight = 3
-
-[[footer]]
 name = "Supporters"
 pre = "is-uppercase"
 url = "/support/"
-weight = 4
-
-[[footer]]
-name = "FAQ"
-pre = ""
-url = "/about/faqs/"
-weight = 5
+weight = 2
 
 [[footer]]
 name = "Contact"
 pre = "is-uppercase"
 url = "/contact/"
-weight = 6
+weight = 3
 
 [[footer]]
 name = "Tips"
 pre = "is-uppercase"
 url = "/tips/"
-weight = 7
+weight = 4
 
 [[footer]]
 name = "Press releases"
 pre = "is-uppercase"
 url = "/press-releases/"
-weight = 8
+weight = 5
+
+[[about]]
+name = "About"
+pre = "is-uppercase"
+url = "/about/"
+weight = 1
+
+[[about]]
+name = "Staff"
+pre = "is-uppercase"
+url = "/about/staff/"
+weight = 2
+
+[[about]]
+name = "Diversity"
+pre = "is-uppercase"
+url = "/about/diversity/"
+weight = 3
+
+[[about]]
+name = "FAQ"
+pre = ""
+url = "/about/faq/"
+weight = 4
 
 [[social]]
 name = "Facebook"

@@ -258,7 +258,30 @@ collections:
           - label: "Footer menu items"
             label_singular: "menu item"
             name: footer
-            hint: "Footer pages list"
+            hint: "Footer pages list, first column"
+            widget: list
+            fields:
+              - label: "Display Name"
+                name: name
+                widget: string
+                required: true
+              - label: URL
+                name: url
+                widget: string
+                required: true
+              - label: "CSS class"
+                name: pre
+                widget: string
+                required: false
+              - label: Order
+                name: weight
+                widget: number
+                valueType: int
+                required: false
+          - label: "Footer about menu items"
+            label_singular: "menu item"
+            name: about
+            hint: "Footer pages list, about column"
             widget: list
             fields:
               - label: "Display Name"
