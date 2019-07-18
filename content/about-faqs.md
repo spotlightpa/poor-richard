@@ -71,9 +71,9 @@ url = "/about/faq/"
 
 **A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters here.
 
-**Q: Is Spotlight PA a 501(c)(3) nonprofit organization?**
+**Q: Is Spotlight PA a 501\(c\)(3) nonprofit organization?**
 
-**A:** Spotlight PA is a collaborative project and is not a legal entity. It operates under the 501(c)(3) status of the [Lenfest Institute for Journalism](https://www.lenfestinstitute.org/), which is the nonprofit owner of [The Inquirer](https://www.inquirer.com). All donations are given to the [Lenfest Institute](https://www.lenfestinstitute.org/) and directed to Spotlight PA's important investigative work.
+**A:** Spotlight PA is a collaborative project and is not a legal entity. It operates under the 501\(c\)(3) status of the [Lenfest Institute for Journalism](https://www.lenfestinstitute.org/), which is the nonprofit owner of [The Inquirer](https://www.inquirer.com). All donations are given to the [Lenfest Institute](https://www.lenfestinstitute.org/) and directed to Spotlight PA's important investigative work.
 
 **Q: Why should I support Spotlight PA?**
 
