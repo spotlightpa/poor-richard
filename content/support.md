@@ -4,7 +4,7 @@ description = "Our independent newsroom is grant-funded by community foundations
 +++
 Spotlight PA is a nonpartisan, independent newsroom paid for by grants from community foundations and individuals committed to robust investigative reporting. Now more than ever, the health of our state and democracy depends on strong accountability journalism. Our newsroom provides the time and resources necessary to do investigative work that drives change.
 
-Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication. In short, we answer to you, the public.
+Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership. In short, we answer to you, the public.
 
 All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), which serves as an extra buffer between our investigative newsroom and our funders. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.
 
