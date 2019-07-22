@@ -37,12 +37,13 @@
         </ul>
       </div>
     </div>
+    <p>&nbsp;</p>
+    <p class="has-text-centered is-size-6">
+      &copy; {{ now.Format "2006" }}.<br>
+      All donations are made to the <a href="https://www.lenfestinstitute.org/">Lenfest Institute for Journalism</a>, a nonprofit 501(c)(3) organization, and directed to Spotlight PA’s important investigative work.
+      {{ if eq .Page .Site.Home }}
+        <br>Title image courtesy of Stephanie Strasburg / The Post-Gazette.
+      {{ end }}
+    </p>
   </div>
-  <p>&nbsp;</p>
-  <p class="has-text-centered is-size-6">
-    &copy; {{ now.Format "2006" }}
-    {{- if eq .Page .Site.Home }}.
-      Title image courtesy of Stephanie Strasburg / The Post-Gazette
-    {{ end }}
-  </p>
 </section>
