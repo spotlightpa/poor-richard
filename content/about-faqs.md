@@ -61,7 +61,7 @@ url = "/about/faq/"
 
 **Q: How can I securely send a tip to Spotlight PA?**
 
-**A:** There are many ways to [send tips to the Spotlight PA team](https://www.spotlightpa.org/tips).
+**A:** There are many ways to [send tips to the Spotlight PA team](https://www.spotlightpa.org/tips/).
 
 **Q: What makes Spotlight PA’s model for journalism unique?**
 
