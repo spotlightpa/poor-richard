@@ -5,6 +5,7 @@ description = "Spotlight PA: Find Pennsylvania news and investigations about sta
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 type = "about-page"
+extra-footer = "Title image courtesy of Stephanie Strasburg / The Post-Gazette."
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
