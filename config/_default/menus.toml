@@ -1,7 +1,7 @@
 [[main]]
 name = "Our Mission"
 pre = "is-uppercase"
-url = "/about/"
+url = "/about/mission/"
 weight = 1
 
 [[main]]
@@ -71,9 +71,9 @@ url = "/donate/"
 weight = 6
 
 [[about]]
-name = "About"
+name = "Our Mission"
 pre = "is-uppercase"
-url = "/about/"
+url = "/about/mission/"
 weight = 1
 
 [[about]]
