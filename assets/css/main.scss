@@ -133,7 +133,7 @@ body {
   visibility: hidden;
 }
 
-.custom-container {
+.about-container {
   max-width: 700px;
   margin: 5rem auto 5rem 5rem;
 
@@ -147,7 +147,7 @@ body {
   }
 }
 
-.custom-box2 {
+.about-subblock {
   max-width: 500px;
   @media (max-width: 800px) {
     max-width: none;
