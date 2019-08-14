@@ -60,6 +60,7 @@
     {{ partial "banner.html" . }}
   {{ end }}
   <main>
+    {{ block "before-main" . }}{{ end }}
     {{ block "main" . }}
       {{ partial "main.html" . }}
     {{ end }}

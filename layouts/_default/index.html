@@ -9,7 +9,7 @@
   </style>
 {{ end }}
 
-{{ define "main" }}
+{{ define "before-main" }}
   {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
   {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
   <section
@@ -84,14 +84,6 @@
             </div>
           </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="columns">
-      <div class="content column is-three-fifths is-offset-one-fifth">
-        {{ .Content }}
       </div>
     </div>
   </section>
