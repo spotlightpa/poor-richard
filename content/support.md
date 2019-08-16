@@ -15,8 +15,9 @@ The Philadelphia Inquirer provides in-kind fiscal, legal and administrative supp
 ## Our supporters
 
 Laura and John Arnold <br />
+The Foundation for Enhancing Communities <br />\
 The Erie Community Foundation <br />
-The Foundation for Enhancing Communities <br />
+Good Words Foundation <br />
 The Heinz Endowments <br />
 Henry L. Hillman Foundation <br />
 Lancaster Community Foundation <br />
