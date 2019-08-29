@@ -3,6 +3,7 @@ title = "Spotlight PA: Unrivaled team of investigative reporters to hold the pow
 published = 2019-08-29T00:00:00Z
 authors = [ "Christopher Baxter"]
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
+type = "press-release"
 +++
 
 There’s nothing short of a crisis in our state capital.

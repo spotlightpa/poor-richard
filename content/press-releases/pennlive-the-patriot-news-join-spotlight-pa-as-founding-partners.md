@@ -9,9 +9,9 @@ type = "press-release"
 **FOR IMMEDIATE RELEASE**
 
 
-Joanna Zuckerman Bernstein
-Development Director
-joanna@spotlightpa.org
+Joanna Zuckerman Bernstein <br>
+Development Director <br>
+joanna@spotlightpa.org <br>
 717-418-5550
 
 ## PennLive & The Patriot-News join Spotlight PA as founding partners
@@ -30,7 +30,7 @@ In addition to joining [Spotlight PA](https://www.spotlightpa.org), the PennLive
 
 “PennLive/Patriot-News and Advance Local routinely produce award-winning investigative journalism,” said Christopher Baxter, editor in chief of [Spotlight PA](https://www.spotlightpa.org). “They recognize the value of high-quality reporting and the resources it takes to produce, and they are skilled at delivering that work to a digital audience. With their help, Spotlight PA will become an indispensable resource for our state.”
 
-“We think Spotlight is an exciting example of our industry bound by shared journalistic values and coming together in new ways to make a difference – in this case for our readers and all residents of the Commonwealth. We are thrilled to be a partner,” said Tim Kennedy, regional president for Advance Local. 
+“We think Spotlight is an exciting example of our industry bound by shared journalistic values and coming together in new ways to make a difference – in this case for our readers and all residents of the Commonwealth. We are thrilled to be a partner,” said Tim Kennedy, regional president for Advance Local.
 
 [Spotlight PA](https://www.spotlightpa.org) is a grant-funded newsroom supported by a [coalition of national and local funders, as well as individuals](http://www.spotlightpa.org/support), who value accountability reporting from the capital and the need to connect residents with the important decisions made there. Those interested in supporting the newsroom can [become a Founding Donor to Spotlight PA now](https://www.spotlightpa.org/donate).
 
@@ -44,7 +44,7 @@ Each of the founding partners is contributing a full-time reporter to [Spotlight
 
 The high-quality journalism produced by [Spotlight PA](https://www.spotlightpa.org) will appear on spotlightpa.org and across the many platforms offered by the three founding partners, which reach in excess of 15 million unique visitors a month. Additional partners include [PA Post](https://www.papost.org), a nonprofit newsroom launched last year by central Pennsylvania’s public radio station, [WITF](https://www.witf.org), as well as [The Caucus](https://caucuspa.com/), a publication of the [LNP Media Group](https://www.lancasteronline.com) in Lancaster. For more information about becoming a partner or benefitting from [Spotlight PA](https://www.spotlightpa.org) content, visit [spotlightpa.org](https://www.spotlightpa.org).
 
-_About Spotlight PA_ 
+_About Spotlight PA_
 
 [Spotlight PA](https://www.spotlightpa.org) is a Harrisburg-based newsroom serving all of the residents of the Commonwealth, dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. The mission of [Spotlight PA](https://www.spotlightpa.org) is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here. Our collaborative newsroom is powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post­-Gazette and PennLive/The Patriot-News. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is told creatively in the many modern, digital ways they consume their news. [Spotlight PA](https://www.spotlightpa.org) content is available free of charge to newsrooms across the state. To become a distribution partner, visit spotlightpa.org/contact.
 
