@@ -3,7 +3,7 @@ title = "PennLive & The Patriot-News join Spotlight PA as founding partners"
 subtitle = ""
 description = "Unprecedented collaboration with The Philadelphia Inquirer and Pittsburgh Post-Gazette will power Pennsylvania's largest newsroom dedicated to covering PA government."
 published = 2019-08-29T14:29:37.005Z
-draft = true
+draft = false
 type = "press-release"
 +++
 **FOR IMMEDIATE RELEASE**
