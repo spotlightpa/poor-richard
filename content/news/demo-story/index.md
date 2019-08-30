@@ -4,7 +4,7 @@ kicker = "Criminal Justice"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
 published = 2019-08-29T00:00:00.000Z
 authors = ["Christopher Baxter", "John Doe"]
-draft = true
+draft = false
 +++
 
 There’s nothing short of a crisis in our state capital.

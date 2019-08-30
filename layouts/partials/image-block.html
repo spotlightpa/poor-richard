@@ -1,10 +1,10 @@
 {{ with . }}
   {{ $img := . }}
-  {{ $imgSmall := $img.Fill "320x180" }}
+  {{ $imgSmall := $img.Fill "320x160" }}
   {{ $imgs := slice }}
   {{ range $size := slice 4 8 12 16 }}
     {{ $width := mul $size 160 }}
-    {{ $height := mul $size 90 }}
+    {{ $height := mul $size 80 }}
     {{ $imgShrunk := printf "%dx%d" $width $height | $img.Fill }}
     {{ $src := printf "%s %dw" $imgShrunk.RelPermalink $width }}
     {{ $imgs = $imgs | append $src }}

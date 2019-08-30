@@ -31,6 +31,8 @@ $navbar-item-active-color: $white;
 $navbar-breakpoint: 1110px;
 
 $size-1: 3.5rem;
+$size-7: .85rem;
+
 $weight-light: 400;
 $weight-normal: 500;
 $weight-medium: 500;
@@ -195,5 +197,15 @@ a.navbar-burger:hover {
 @media screen and (max-width: $navbar-breakpoint - 1px) {
   .navbar-end {
     border-top: 1px solid $yellow;
+  }
+}
+
+.section {
+  &.is-top {
+    padding: 3rem 1.5rem 0
+  }
+
+  &.is-bottom {
+    padding: 0 1.5rem 3rem
   }
 }
