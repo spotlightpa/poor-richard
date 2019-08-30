@@ -10,7 +10,7 @@ extra-footer = "Title image courtesy of Stephanie Strasburg / The Post-Gazette."
 
 Spotlight PA is a collaborative newsroom dedicated to producing investigative journalism for all of Pennsylvania. Spotlight PA’s mission is to hold powerful private and public forces — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change.
 
-{{<right-link href="/about/">}}Read our mission statement{{</right-link>}}
+{{<right-link href="/about/mission/">}}Read our mission statement{{</right-link>}}
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
