@@ -6,7 +6,6 @@
    {{ $byline = . }}
 {{ end }}
 
-{{ $img := index (.Resources.ByType "image") 0}}
 {{ $kicker := .Param "kicker" }}
 {{ $showTitle := .Param "suppress-title" | not }}
 
@@ -53,7 +52,7 @@
   </section>
 {{ end }}
 
-{{ partial "image-block.html" $img }}
+{{ dict "dot" . "key" "hero-image" | partial "image-block.html" }}
 
 <section class="section {{ if $showTitle }}is-bottom{{ end }}">
   <div class="columns is-centered">
