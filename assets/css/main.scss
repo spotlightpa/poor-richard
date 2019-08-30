@@ -209,3 +209,13 @@ a.navbar-burger:hover {
     padding: 0 1.5rem 3rem;
   }
 }
+
+.image figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.has-margin-top {
+  margin-top: 1.5rem;
+}

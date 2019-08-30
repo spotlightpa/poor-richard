@@ -11,11 +11,16 @@
   {{ end -}}
   {{ $srcset := delimit $imgs ", " }}
 
-  <figure class="image block is-2by1">
+  <figure class="image block is-2by1 has-margin-top">
     <img
       alt="{{ $img.Title }}"
       src="{{ $imgSmall.RelPermalink }}"
       srcset="{{ $srcset }}"
     >
+    <figcaption class="photo-credit has-radius-padding">
+      <span class="tag is-info is-uppercase has-text-weight-bold block">
+        Title image courtesy of Stephanie Strasburg / The Post-Gazette.
+      </span>
+    </figcaption>
   </figure>
 {{ end}}
