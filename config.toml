@@ -18,6 +18,7 @@ googleAnalytics = "UA-141126362-1"
 
 [permalinks]
     press-releases = ":section/:year/:slug/"
+    news = ":section/:year/:slug/"
 
 [mediaTypes."text/netlify"]
     delimiter = ""
