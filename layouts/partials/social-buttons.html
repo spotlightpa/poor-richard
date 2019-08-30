@@ -8,7 +8,7 @@
   <button
     class="button is-primary is-small"
     data-share="facebook"
-    title="Share this article on Facebook"
+    title="Share this page on Facebook"
   >
     <span class="icon has-text-white has-colored-svg">
     {{ $iconFB.Content|safeHTML }}
@@ -18,7 +18,7 @@
     class="button is-info is-small"
     data-share="tweet"
     data-share-text="{{ .Title }} from @spotlightpa"
-    title="Tweet about this article"
+    title="Tweet about this page"
   >
     <span class="icon has-text-white has-colored-svg">
     {{ $iconTwitter.Content|safeHTML }}
@@ -27,7 +27,7 @@
   <a
     href="mailto:?subject={{ .Title }}&amp;body={{ $emailBody }}"
     class="button is-success is-small"
-    title="Share this article by email"
+    title="Share this page by email"
   >
     <span class="icon has-text-white has-colored-svg">
     {{ $iconEmail.Content|safeHTML }}

@@ -2,6 +2,9 @@
 title = "Latest News"
 linktitle = "News"
 description = "Read the latest news from Spotlight PA"
+
+[cascade]
+kicker = "Latest News"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

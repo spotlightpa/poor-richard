@@ -7,10 +7,11 @@
 {{ end }}
 
 {{ $img := index (.Resources.ByType "image") 0}}
+{{ $kicker := .Param "kicker" }}
 
-<section class="section">
-  <div class="columns">
-    <article class="column is-three-fifths is-offset-one-fifth">
+<section class="section is-top">
+  <div class="columns is-centered">
+    <article class="column is-three-fifths">
       {{ if .Param "suppress-title" | not }}
         <header class="block">
               <div class="level">
@@ -21,7 +22,13 @@
                 </div>
                 <div class="level-right">
                   <div class="level-item">
-                    {{ partial "breadcrumbs.html" . }}
+                    {{ if $kicker }}
+                      <p
+                        class="tag is-warning is-uppercase has-text-weight-bold block"
+                      >{{ $kicker }}</p>
+                    {{ else }}
+                      {{ partial "breadcrumbs.html" . }}
+                    {{ end }}
                   </div>
                 </div>
               </div>
@@ -34,34 +41,38 @@
               </span>
             {{ end }}
           </h1>
-          {{ if .Param "subtitle" | or .PublishDate $byline }}
-            <div class="subtitle">
-              {{ with .Param "subtitle" }}
-                <h2 class="is-size-4">
-                  {{ . }}
-                </h2>
-              {{ end }}
-              {{ with $byline }}
-                <h3 class="is-size-6 has-text-weight-light">
-                  By {{ . }}
-                </h3>
-              {{ end }}
-              {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-              {{ with .PublishDate }}
-                <time
-                  datetime='{{ .Local.Format $isoFormat }}'
-                  class="is-size-7"
-                 >
-                  {{ .Format "Monday, January 2, 2006" }}
-                 </time>
-              {{ end }}
-            </div>
+          {{ with .Param "subtitle" }}
+            <h2 class="subtitle is-size-4">
+              {{ . }}
+            </h2>
+          {{ end }}
+
+          {{ with $byline }}
+            <h3 class="is-size-6">
+              By {{ $byline }}
+            </h3>
+          {{ end }}
+
+          {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+          {{ with .PublishDate }}
+            <time
+              datetime='{{ .Local.Format $isoFormat }}'
+              class="is-size-7"
+             >
+              {{ .Format "Monday, January 2, 2006" }}
+             </time>
           {{ end }}
         </header>
       {{ end }}
+    </article>
+  </div>
+</section>
 
-      {{ partial "image-block.html" $img }}
+{{ partial "image-block.html" $img }}
 
+<section class="section is-bottom">
+  <div class="columns is-centered">
+    <article class="column is-three-fifths">
       <div class="content">
         {{ .Content }}
       </div>
