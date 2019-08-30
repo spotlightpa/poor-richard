@@ -8,30 +8,31 @@
 
 {{ $img := index (.Resources.ByType "image") 0}}
 {{ $kicker := .Param "kicker" }}
+{{ $showTitle := .Param "suppress-title" | not }}
 
-<section class="section is-top">
-  <div class="columns is-centered">
-    <article class="column is-three-fifths">
-      {{ if .Param "suppress-title" | not }}
+{{ if $showTitle }}
+  <section class="section is-top">
+    <div class="columns is-centered">
+      <div class="column is-three-fifths">
         <header class="block">
-              <div class="level is-mobile">
-                <div class="level-left">
-                  <div class="level-item">
-                    {{ partial "social-buttons.html" . }}
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    {{ if $kicker }}
-                      <p
-                        class="tag is-warning is-uppercase has-text-weight-bold block"
-                      >{{ $kicker }}</p>
-                    {{ else }}
-                      {{ partial "breadcrumbs.html" . }}
-                    {{ end }}
-                  </div>
-                </div>
+          <div class="level is-mobile">
+            <div class="level-left">
+              <div class="level-item">
+                {{ partial "social-buttons.html" . }}
               </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                {{ if $kicker }}
+                  <p
+                    class="tag is-warning is-uppercase has-text-weight-bold block"
+                  >{{ $kicker }}</p>
+                {{ else }}
+                  {{ partial "breadcrumbs.html" . }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
 
           <h1 class="title">
             {{ .Title }}
@@ -46,9 +47,21 @@
               {{ . }}
             </h2>
           {{ end }}
+        </header>
+      </div>
+    </div>
+  </section>
+{{ end }}
 
+{{ partial "image-block.html" $img }}
+
+<section class="section {{ if $showTitle }}is-bottom{{ end }}">
+  <div class="columns is-centered">
+    <article class="column is-three-fifths">
+      {{ if or $byline .PublishDate | and $showTitle }}
+        <header class="block">
           {{ with $byline }}
-            <h3 class="is-size-6">
+            <h3 class="is-size-6 has-text-weight-bold">
               By {{ $byline }}
             </h3>
           {{ end }}
@@ -64,18 +77,11 @@
           {{ end }}
         </header>
       {{ end }}
-    </article>
-  </div>
-</section>
 
-{{ partial "image-block.html" $img }}
-
-<section class="section is-bottom">
-  <div class="columns is-centered">
-    <article class="column is-three-fifths">
       <div class="content">
         {{ .Content }}
       </div>
+
       {{ with .Param "authors" }}
         <footer>
           {{ range $name := . }}

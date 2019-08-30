@@ -11,11 +11,11 @@
   {{ end -}}
   {{ $srcset := delimit $imgs ", " }}
 
-  <figure class="image block">
+  <figure class="image block is-2by1">
     <img
       alt="{{ $img.Title }}"
       src="{{ $imgSmall.RelPermalink }}"
-      srcset='{{ $srcset }}'
+      srcset="{{ $srcset }}"
     >
   </figure>
 {{ end}}
