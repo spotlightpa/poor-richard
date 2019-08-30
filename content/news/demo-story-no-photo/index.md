@@ -1,8 +1,8 @@
 +++
-title = "Controversy brewing for Tracey Gordon, even before she takes over as Philly’s register of wills"
-kicker = "Criminal Justice"
+title = "This Story Does Not Have a Photo"
+kicker = "Politics"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
-published = 2019-08-30T00:00:00.000Z
+published = 2019-08-31T00:00:00.000Z
 authors = ["Christopher Baxter", "John Doe"]
 draft = false
 +++
