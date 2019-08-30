@@ -126,6 +126,10 @@ body {
   }
 }
 
+.has-colored-svg svg {
+  fill: currentColor;
+}
+
 .input:valid:not(:placeholder-shown) ~ .validator-icon {
   color: $success !important;
 }
