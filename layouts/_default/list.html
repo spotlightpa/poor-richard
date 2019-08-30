@@ -2,7 +2,7 @@
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
   <section class="section columns">
     <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range .Pages }}
+      {{ range .Paginator.Pages }}
         <div class="box">
           <div class="media">
             {{ $image := .Resources.GetMatch "hero-image" }}
@@ -35,6 +35,17 @@
               </time>
             </div>
           </div>
+        </div>
+      {{ end }}
+
+      {{ if gt .Paginator.TotalPages 0 }}
+        <div class="level">
+        {{ if .Paginator.HasPrev }}
+          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
+        {{ end }}
         </div>
       {{ end }}
     </div>
