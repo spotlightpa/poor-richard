@@ -5,18 +5,17 @@
       {{ range .Pages }}
         <div class="box">
           <div class="media">
-            {{ with .Param "images" }}
-              {{ if gt (len .) 1 }}
-                {{ $image := index . 1 }}
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img
-                      src="{{ $image }}"
-                      alt="Thumbnail image"
-                    >
-                  </figure>
-                </div>
-              {{ end }}
+            {{ $image := .Resources.GetMatch "hero-image" }}
+            {{ with $image }}
+              {{ $imgIcon := $image.Fit "96x96" }}
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img
+                    src='{{ $imgIcon.RelPermalink }}'
+                    alt="Thumbnail image"
+                  >
+                </figure>
+              </div>
             {{ end }}
             <div class="media-content">
               <h2 class="title is-4">
