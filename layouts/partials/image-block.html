@@ -1,0 +1,21 @@
+{{ with . }}
+  {{ $img := . }}
+  {{ $imgSmall := $img.Fill "320x180" }}
+  {{ $imgs := slice }}
+  {{ range $size := slice 4 8 12 16 }}
+    {{ $width := mul $size 160 }}
+    {{ $height := mul $size 90 }}
+    {{ $imgShrunk := printf "%dx%d" $width $height | $img.Fill }}
+    {{ $src := printf "%s %dw" $imgShrunk.RelPermalink $width }}
+    {{ $imgs = $imgs | append $src }}
+  {{ end -}}
+  {{ $srcset := delimit $imgs ", " }}
+
+  <figure class="image block">
+    <img
+      alt="{{ $img.Title }}"
+      src="{{ $imgSmall.RelPermalink }}"
+      srcset='{{ $srcset }}'
+    >
+  </figure>
+{{ end}}

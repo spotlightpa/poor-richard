@@ -1,45 +1,31 @@
-{{ if .Param "hero-content" }}
-  {{ $bgImgLoc := .Param "hero-background"}}
-  {{ $bgImg := resources.Get $bgImgLoc }}
-  {{ $bgImg = $bgImg.Resize "1024x" | fingerprint }}
-  <section
-    class='hero has-bg-image is-large {{ .Param "hero-classes" }}'
-    style="background-image: url('{{ $bgImg.RelPermalink }}');"
-  >
-    <div class="hero-body">
-      <div class="container">
-        <div class="title has-background-info has-radius-padding">
-          <span class="is-size-5-mobile has-text-white has-spotlight-bold">
-            {{ .Param "hero-content" | markdownify }}
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
+{{ $byline := "" }}
+{{ with .Param "authors" }}
+   {{ $byline = delimit . ", " " and " }}
 {{ end }}
+{{ with .Param "byline" }}
+   {{ $byline = . }}
+{{ end }}
+
+{{ $img := index (.Resources.ByType "image") 0}}
 
 <section class="section">
   <div class="columns">
     <article class="column is-three-fifths is-offset-one-fifth">
       {{ if .Param "suppress-title" | not }}
         <header class="block">
-          {{ with .Page.Parent }}
-            {{ if not .IsHome }}
-              <h3 class="has-text-weight-bold has-text-right">
-                <a href="/">Home</a>
-                &rsaquo;
-                <a
-                  href="{{ .RelPermalink }}"
-                  class="has-text-link"
-                >{{ .Title }}</a>
-              </h3>
-            {{ end }}
-          {{ end }}
-          {{ with .Param "kicker" }}
-            <p
-              class="tag is-warning is-uppercase has-text-weight-bold block"
-            >{{ . }}</p>
-          {{ end }}
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item">
+                    {{ partial "social-buttons.html" . }}
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    {{ partial "breadcrumbs.html" . }}
+                  </div>
+                </div>
+              </div>
+
           <h1 class="title">
             {{ .Title }}
             {{ if .Draft }}
@@ -48,18 +34,23 @@
               </span>
             {{ end }}
           </h1>
-          {{ if .Param "subtitle" | or .PublishDate }}
+          {{ if .Param "subtitle" | or .PublishDate $byline }}
             <div class="subtitle">
               {{ with .Param "subtitle" }}
                 <h2 class="is-size-4">
                   {{ . }}
                 </h2>
               {{ end }}
+              {{ with $byline }}
+                <h3 class="is-size-6 has-text-weight-light">
+                  By {{ . }}
+                </h3>
+              {{ end }}
               {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
               {{ with .PublishDate }}
                 <time
                   datetime='{{ .Local.Format $isoFormat }}'
-                  class="subtitle is-size-6 has-text-weight-light"
+                  class="is-size-7"
                  >
                   {{ .Format "Monday, January 2, 2006" }}
                  </time>
@@ -68,6 +59,8 @@
           {{ end }}
         </header>
       {{ end }}
+
+      {{ partial "image-block.html" $img }}
 
       <div class="content">
         {{ .Content }}
@@ -78,10 +71,11 @@
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $imgLoc := printf "assets/%s" $imgRes }}
             {{ $authorURL := urlize $name | printf "/about/staff/#%s" }}
+            {{ $author := index $.Site.Data.authors $name }}
             <div class="level">
               <div class="level-left">
-                {{ if fileExists $imgLoc }}
-                  <div class="level-item">
+                <div class="level-item">
+                  {{ if fileExists $imgLoc }}
                     <a
                       href="{{ $authorURL }}"
                       class="image is-64x64"
@@ -94,20 +88,29 @@
                           class="is-rounded is-monochrome"
                         >
                     </a>
-                  </div>
-                {{ end }}
+                  {{ else }}
+                    <span class="image is-64x64"></span>
+                  {{ end }}
+                </div>
 
-                {{ $author := index $.Site.Data.authors $name }}
                 <div class="level-item">
-                  <div class="">
+                  <div>
                     <h3 class="subtitle is-4 has-text-weight-bold">
+                      {{ if $author }}
                       <a href="{{ $authorURL }}">
-                        {{ . }}
+                        {{ $name }}
                       </a>
+                      {{ else }}
+                        <span class="has-text-grey">
+                          {{ $name }}
+                        </span>
+                      {{ end }}
                     </h3>
-                    <h3 class="subtitle ">
-                      {{ $author.title }}
-                    </h3>
+                    {{ if $author }}
+                      <h3 class="subtitle ">
+                        {{ $author.title }}
+                      </h3>
+                    {{ end }}
                   </div>
                 </div>
               </div>

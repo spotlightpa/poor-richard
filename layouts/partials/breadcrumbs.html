@@ -1,0 +1,16 @@
+{{ $parents := partial "find-parents.html" . }}
+{{ $breadcrumbs := where $parents "Kind" "!=" "page" }}
+{{ if len $breadcrumbs | lt 1 }}
+  <nav
+    class="breadcrumb has-succeeds-separator"
+    aria-label="breadcrumbs"
+  >
+    <ul>
+      {{ range $i, $page := $breadcrumbs }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}
