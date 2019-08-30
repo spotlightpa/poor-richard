@@ -5,7 +5,8 @@
       {{ range .Paginator.Pages }}
         <div class="box">
           <div class="media">
-            {{ $image := .Resources.GetMatch "hero-image" }}
+            {{ $heroPath := .Param "hero-image" }}
+            {{ $image := resources.GetMatch $heroPath }}
             {{ with $image }}
               {{ $imgIcon := $image.Fit "96x96" }}
               <div class="media-left">

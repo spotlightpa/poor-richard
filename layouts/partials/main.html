@@ -52,7 +52,10 @@
   </section>
 {{ end }}
 
-{{ dict "dot" . "key" "hero-image" | partial "image-block.html" }}
+{{ $heroName := .Param "hero-image" }}
+{{ $heroCredit := .Param "hero-image-credit" }}
+{{ $heroDescription := .Param "hero-image-description" }}
+{{ dict "imagePath" $heroName "credit" $heroCredit "description" $heroDescription | partial "image-block.html" }}
 
 <section class="section {{ if $showTitle }}is-bottom{{ end }}">
   <div class="columns is-centered">

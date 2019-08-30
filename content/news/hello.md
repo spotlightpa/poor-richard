@@ -1,19 +1,14 @@
 +++
+hero-image = "/img/uploads/dsc05999.jpg"
+hero-image-credit = "Carl Johnson / Spotlight PA © 2004"
+hero-image-description = "Snow covered Mount Taté"
 title = "Controversy brewing for Tracey Gordon, even before she takes over as Philly’s register of wills"
 kicker = "Criminal Justice"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
 published = 2019-08-30T00:00:00.000Z
 authors = ["Christopher Baxter", "John Doe"]
 draft = false
-
-[[resources]]
-title = "Toyama"
-src = "**.jp*g"
-name = "hero-image"
-
-[resources.params]
-credit = "Carl Johnson / Spotlight PA © 2004"
-alt = "Snow covered Mount Taté"
+type = "article"
 +++
 
 There’s nothing short of a crisis in our state capital.
