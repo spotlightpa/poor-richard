@@ -1,5 +1,5 @@
-media_folder: static/uploads
-public_folder: /uploads
+media_folder: assets/img/uploads
+public_folder: /
 
 site_url: https://www.spotlightpa.org
 display_url: https://www.spotlightpa.org
@@ -13,7 +13,93 @@ backend:
   branch: cj/article-demo
 
 collections:
-  - label: Content
+  - label: Articles
+    label_singular: Article
+    name: news
+    folder: content/news
+    format: toml-frontmatter
+    extension: md
+    create: true
+    slug: "{{url}}"
+    preview_path: "/news/{{slug}}/"
+    editor:
+      preview: false
+    filter:
+      field: type
+      value: article
+    fields:
+      - label: "Featured Image"
+        name: "hero-image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        required: false
+      - label: Description
+        name: description
+        widget: string
+      - label: Kicker
+        name: kicker
+        hint: "Small text appearing above the page headline, e.g. Health"
+        widget: string
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+      - label: "Override title tag"
+        name: title-tag
+        widget: string
+        hint: "Set title tag separately from page title"
+        required: false
+      - label: Link to as
+        name: linktitle
+        hint: "When linking to this page from another page, use this as the page name"
+        widget: string
+        required: false
+      - label: "Suppress title"
+        name: suppress-title
+        widget: boolean
+        hint: "Don't show title in content area"
+        required: false
+      - label: "No index"
+        name: no-index
+        hint: "Hide page on Google etc."
+        widget: boolean
+        required: false
+      - label: Slug
+        name: slug
+        widget: string
+        required: false
+      - label: Footer text
+        name: extra-footer
+        hint: "Extra text to place after copyright message of page"
+        widget: string
+        required: false
+      - label: "Override URL"
+        name: url
+        widget: string
+        required: false
+      - label: Aliases
+        label_singular: alias
+        name: aliases
+        widget: list
+        default: []
+        field:
+          label: Path
+          name: path
+          widget: string
+      - label: type
+        name: type
+        widget: hidden
+        default: article
+  - label: Root pages
     name: content
     folder: content
     format: toml-frontmatter
@@ -37,6 +123,11 @@ collections:
       - label: Body
         name: body
         widget: markdown
+      - label: Link to as
+        name: linktitle
+        hint: "When linking to this page from another page, use this as the page name"
+        widget: string
+        required: false
       - label: "Override title tag"
         name: title-tag
         widget: string
@@ -54,11 +145,6 @@ collections:
         required: false
       - label: Slug
         name: slug
-        widget: string
-        required: false
-      - label: Link to as
-        name: linktitle
-        hint: "When linking to this page from another page, use this as the page name"
         widget: string
         required: false
       - label: Footer text
@@ -90,7 +176,7 @@ collections:
     extension: md
     create: true
     slug: "{{url}}"
-    preview_path: "/{{slug}}/"
+    preview_path: "/about/{{slug}}/"
     editor:
       preview: false
     fields:
@@ -107,6 +193,11 @@ collections:
       - label: Body
         name: body
         widget: markdown
+      - label: Link to as
+        name: linktitle
+        hint: "When linking to this page from another page, use this as the page name"
+        widget: string
+        required: false
       - label: "Override title tag"
         name: title-tag
         widget: string
@@ -124,11 +215,6 @@ collections:
         required: false
       - label: Slug
         name: slug
-        widget: string
-        required: false
-      - label: Link to as
-        name: linktitle
-        hint: "When linking to this page from another page, use this as the page name"
         widget: string
         required: false
       - label: Footer text
@@ -268,6 +354,20 @@ collections:
             hint: "Show sitewide alert banner"
             widget: boolean
             default: false
+      - label: "News landing page"
+        name: news-landing
+        file: content/news/_index.md
+        format: toml-frontmatter
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
       - label: "Press release landing page"
         name: press-release
         file: content/press-releases/_index.md
