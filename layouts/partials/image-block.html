@@ -1,5 +1,5 @@
-{{ with . }}
-  {{ $img := . }}
+{{ $img := .dot.Page.Resources.GetMatch .key }}
+{{ if $img }}
   {{ $imgSmall := $img.Fill "320x160" }}
   {{ $imgs := slice }}
   {{ range $size := slice 4 8 12 16 }}
@@ -10,18 +10,23 @@
     {{ $imgs = $imgs | append $src }}
   {{ end -}}
   {{ $srcset := delimit $imgs ", " }}
+  {{ $credit := $img.Params.credit }}
+
   <div class="block">
     <figure class="image is-2by1 has-margin-top">
       <img
-        alt="{{ $img.Title }}"
+        alt="{{ default $img.Title $img.Params.alt }}"
+        title="{{ $img.Title }}"
         src="{{ $imgSmall.RelPermalink }}"
         srcset="{{ $srcset }}"
       >
     </figure>
-    <p class="is-hidden-tabledt is-clearfix has-text-right has-radius-padding">
-      <span class="is-uppercase has-text-grey-light is-size-7 is-pulled-right">
-        Stephanie Strasburg / The Post-Gazette.
-      </span>
-    </p>
+    {{ with $credit }}
+      <p class="is-hidden-tabledt is-clearfix has-text-right has-radius-padding">
+        <span class="is-uppercase has-text-grey-light is-size-7 is-pulled-right">
+          {{ $credit }}
+        </span>
+      </p>
+    {{ end }}
   </div>
 {{ end}}
