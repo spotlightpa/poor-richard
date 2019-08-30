@@ -19,6 +19,7 @@
         title="{{ .description }}"
         src="{{ $imgSmall.RelPermalink }}"
         srcset="{{ $srcset }}"
+        data-original="{{ $img.RelPermalink }}"
       >
     </figure>
     {{ with $credit }}
