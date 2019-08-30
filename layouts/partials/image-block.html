@@ -1,4 +1,4 @@
-{{ $img := .dot.Page.Resources.GetMatch .key }}
+{{ $img := resources.GetMatch .imagePath }}
 {{ if $img }}
   {{ $imgSmall := $img.Fill "320x160" }}
   {{ $imgs := slice }}
@@ -10,13 +10,13 @@
     {{ $imgs = $imgs | append $src }}
   {{ end -}}
   {{ $srcset := delimit $imgs ", " }}
-  {{ $credit := $img.Params.credit }}
+  {{ $credit := .credit }}
 
   <div class="block">
     <figure class="image is-2by1 has-margin-top">
       <img
-        alt="{{ default $img.Title $img.Params.alt }}"
-        title="{{ $img.Title }}"
+        alt="{{ .description }}"
+        title="{{ .description }}"
         src="{{ $imgSmall.RelPermalink }}"
         srcset="{{ $srcset }}"
       >

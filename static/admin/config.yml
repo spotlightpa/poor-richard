@@ -1,5 +1,5 @@
 media_folder: assets/img/uploads
-public_folder: /
+public_folder: /img/uploads
 
 site_url: https://www.spotlightpa.org
 display_url: https://www.spotlightpa.org
@@ -20,8 +20,7 @@ collections:
     format: toml-frontmatter
     extension: md
     create: true
-    slug: "{{url}}"
-    preview_path: "/news/{{slug}}/"
+    preview_path: "/news/{{year}}/{{slug}}/"
     editor:
       preview: false
     filter:
@@ -35,6 +34,18 @@ collections:
         media_library:
           config:
             multiple: false
+      - label: Image description
+        name: hero-image-description
+        widget: string
+        required: false
+      - label: Image credit
+        name: hero-image-credit
+        widget: string
+        required: false
+      - label: Date
+        name: published
+        widget: date
+        hint: "Note that future dated articles will not be published on the live site"
       - label: Title
         name: title
         widget: string
