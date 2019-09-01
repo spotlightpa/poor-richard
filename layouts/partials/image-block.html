@@ -12,22 +12,20 @@
   {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
 
-  <div class="block">
-    <figure class="image is-2by1 has-margin-top">
-      <img
-        alt="{{ .description }}"
-        title="{{ .description }}"
-        src="{{ $imgSmall.RelPermalink }}"
-        srcset="{{ $srcset }}"
-        data-original="{{ $img.RelPermalink }}"
-      >
-    </figure>
-    {{ with $credit }}
-      <p class="is-hidden-tabledt is-clearfix has-text-right has-radius-padding">
-        <span class="is-uppercase has-text-grey-light is-size-7 is-pulled-right">
-          {{ $credit }}
-        </span>
-      </p>
-    {{ end }}
-  </div>
+  <figure class="image is-2by1 has-margin-top">
+    <img
+      alt="{{ .description }}"
+      title="{{ .description }}"
+      src="{{ $imgSmall.RelPermalink }}"
+      srcset="{{ $srcset }}"
+      data-original="{{ $img.RelPermalink }}"
+    >
+  </figure>
+  {{ with $credit }}
+    <p class="has-text-right">
+      <span class="is-uppercase has-radius-padding has-text-grey-light is-size-7">
+        {{ $credit }}
+      </span>
+    </p>
+  {{ end }}
 {{ end}}
