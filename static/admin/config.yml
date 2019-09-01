@@ -10,7 +10,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: cj/article-demo
+  branch: master
 
 collections:
   - label: Articles
