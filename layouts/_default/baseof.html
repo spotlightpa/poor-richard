@@ -16,8 +16,12 @@
   {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
-  {{ $js := resources.Get "js/main.js" | minify }}
-  <script>{{ $js.Content|safeJS }}</script>
+  {{ if .Site.IsServer }}
+    <script src="http://localhost:1234/main.js"></script>
+  {{ else }}
+    {{ $js := resources.Get "js/main.js" }}
+    <script>{{ $js.Content|safeJS }}</script>
+  {{ end }}
 
   <!-- Metadata -->
   {{ template "_internal/google_analytics_async.html" . }}
