@@ -202,11 +202,11 @@ a.navbar-burger:hover {
 
 .section {
   &.is-top {
-    padding: 3rem 1.5rem 0;
+    padding-bottom: 0;
   }
 
   &.is-bottom {
-    padding: 0 1.5rem 3rem;
+    padding-top: 0;
   }
 }
 
