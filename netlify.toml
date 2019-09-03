@@ -1,6 +1,6 @@
 [build]
 base = ""
-command = "yarn build"
+command = "yarn build:prod"
 publish = "public"
 
 [build.environment]
@@ -8,6 +8,12 @@ HUGO_VERSION = "0.57.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
+
+[context.deploy-preview]
+command = "yarn build:stage"
+
+[context.branch-deploy]
+command = "yarn build:stage"
 
 [[headers]]
 for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
