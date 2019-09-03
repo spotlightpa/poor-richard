@@ -6,15 +6,18 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "checkformat": "prettier --check **/*.{scss,js,yml}",
-    "format": "prettier --write **/*.{scss,js,yml}",
-    "git-pre-push": "yarn run checkformat"
+    "checkformat": "prettier --ignore-path .gitignore --check **/*.{scss,js,yml}",
+    "format": "prettier --ignore-path .gitignore --write **/*.{scss,js,yml}",
+    "git-pre-push": "yarn run checkformat",
+    "build": "parcel build assets/js/main.js && hugo version && hugo --debug --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
+    "start": "parcel assets/js/main.js & hugo server & wait"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@zeit/git-hooks": "^0.1.4",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.7.5",
+    "parcel-bundler": "^1.12.3",
     "postcss-cli": "^6.1.2",
     "prettier": "^1.17.1"
   }

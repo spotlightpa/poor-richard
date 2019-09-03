@@ -63,3 +63,7 @@ typings/
 # Hugo
 resources/
 public/
+
+# Parcel build
+dist
+.cache

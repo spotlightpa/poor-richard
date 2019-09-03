@@ -14,24 +14,24 @@ function each(qs, cb) {
 }
 
 function on(ev, qs, cb) {
-  each(qs, function(el) {
+  each(qs, (el) => {
     el.addEventListener(ev, cb);
   });
 }
 
-on("DOMContentLoaded", document, function() {
-  on("click", "[data-target]", function(ev) {
+function createListeners() {
+  on("click", "[data-target]", (ev)=> {
     var targets = ev.currentTarget.dataset.target;
     var toggleClass = ev.currentTarget.dataset.toggleClass;
     toggleClass = toggleClass ? toggleClass : "is-active";
 
-    each(targets, function(el) {
+    each(targets, (el) => {
       el.classList.toggle(toggleClass);
     });
   });
 
   // Open external links in new window
-  each("a[href^=http]", function(el) {
+  each("a[href^=http]", (el) => {
     if (el.host === window.location.host) {
       return;
     }
@@ -39,7 +39,7 @@ on("DOMContentLoaded", document, function() {
     el.rel = "noopener noreferrer";
   });
 
-  on("click", '[data-share="tweet"]', function(ev) {
+  on("click", '[data-share="tweet"]', (ev)=> {
     var tweet = ev.currentTarget.dataset.shareText;
     var url = ev.currentTarget.dataset.shareUrl;
     url = url ? url : window.location.href;
@@ -53,7 +53,7 @@ on("DOMContentLoaded", document, function() {
     window.open(twitterURL, "_blank");
   });
 
-  on("click", '[data-share="facebook"]', function(ev) {
+  on("click", '[data-share="facebook"]', (ev)=> {
     var url = ev.currentTarget.dataset.shareUrl;
     url = url ? url : window.location.href;
     var facebookURL =
@@ -61,4 +61,6 @@ on("DOMContentLoaded", document, function() {
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
   });
-});
+}
+
+on("DOMContentLoaded", document, createListeners);

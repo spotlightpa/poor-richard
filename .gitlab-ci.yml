@@ -8,4 +8,4 @@ test:
   stage: test
   script:
     - yarn check
-    - hugo --minify
+    - yarn build

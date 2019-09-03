@@ -1,6 +1,6 @@
 [build]
 base = ""
-command = "hugo version && hugo --minify"
+command = "yarn build"
 publish = "public"
 
 [build.environment]
@@ -8,19 +8,6 @@ HUGO_VERSION = "0.57.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
-
-[context.deploy-preview]
-command = """
-    hugo version &&
-    hugo --debug --minify --environment staging --baseURL $DEPLOY_PRIME_URL ||
-    { sleep 120; false; }
-"""
-
-[context.branch-deploy]
-command = """
-    hugo version &&
-    hugo --minify --environment staging --baseURL $DEPLOY_PRIME_URL
-"""
 
 [[headers]]
 for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
