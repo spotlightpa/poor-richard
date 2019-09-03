@@ -1,4 +1,5 @@
 {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+{{ $iconUser := resources.Get "/img/fontawesome/regular/user.svg" }}
 {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
 
 <section class="">
@@ -20,21 +21,24 @@
     <div class="field">
       <label class="label" for="newsletter-name">Your Name</label>
     </div>
-    <div class="field is-horizontal">
-      <div class="field-body">
-        <div class="field">
-          <p class="control is-expanded">
-            <input
-              id="newsletter-name"
-              class="input"
-              type="text"
-              placeholder="Jane Doe"
-              name="name"
-              required
-            >
-          </p>
-        </div>
-      </div>
+    <div class="field">
+      <p class="control is-expanded has-icons-left has-icons-right">
+        <input
+          id="newsletter-name"
+          class="input"
+          type="text"
+          placeholder="Jane Doe"
+          name="name"
+          pattern="\w+\W*\w+"
+          required
+        >
+        <span class="icon is-left has-text-primary">
+          {{ $iconUser.Content|safeHTML }}
+        </span>
+        <span class="icon is-right validator-icon">
+          {{ $iconCheck.Content|safeHTML }}
+        </span>
+      </p>
     </div>
     <div class="field">
       <label class="label" for="newsletter-email">Your Email Address</label>
