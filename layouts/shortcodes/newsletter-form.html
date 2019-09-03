@@ -1,0 +1,68 @@
+{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
+
+<section class="">
+  <form
+    class=""
+    action="/thanks/"
+    method="post"
+    name="signup-partial"
+    netlify
+    netlify-honeypot="bot-field"
+  >
+    <p class="is-hidden">
+      <label>
+        Don’t fill this out if you're human: <input name="bot-field">
+      </label>
+    </p>
+    <h2 class="title is-size-4">
+      The Investigator
+    </h2>
+    <div class="field">
+      <label class="label" for="newsletter-name">Your Name</label>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <p class="control is-expanded">
+            <input
+              id="newsletter-name"
+              class="input"
+              type="text"
+              placeholder="Jane Doe"
+              name="name"
+              required
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="newsletter-email">Your Email Address</label>
+      <p class="control is-expanded has-icons-left has-icons-right">
+        <input
+          id="newsletter-email"
+          class="input"
+          type="email"
+          placeholder="janedoe@example.com"
+          name="email"
+          required
+        >
+        <span class="icon is-left has-text-primary">
+          {{ $iconEmail.Content|safeHTML }}
+        </span>
+        <span class="icon is-right validator-icon">
+          {{ $iconCheck.Content|safeHTML }}
+        </span>
+      </p>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <button type="submit" class="button is-large is-primary">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
