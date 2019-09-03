@@ -15,14 +15,13 @@
           class="card block"
         >
           {{ $imgRes := printf "img/headshots/%s.jpeg" $nameID }}
-          {{ $imgLoc := path.Join "assets" $imgRes }}
-          {{ if fileExists $imgLoc  }}
-            {{ $img := resources.Get $imgRes }}
-            {{ $img = $img.Resize "800x" | fingerprint }}
+          {{ $img := resources.GetMatch $imgRes }}
+          {{ if $img  }}
+            {{ $imgShrunk := $img.Resize "800x" }}
             <div class="is-hidden-tablet">
               <figure class="image">
                 <img
-                  src="{{ $img.RelPermalink }}"
+                  src="{{ $imgShrunk.RelPermalink }}"
                   alt="Photo of {{ .name }}"
                   class=""
                   >
@@ -31,13 +30,12 @@
           {{ end }}
           <div class="card-content">
             <div class="media">
-              {{ if fileExists $imgLoc }}
-                {{ $img := resources.Get $imgRes }}
-                {{ $img = $img.Fill "256x256" | fingerprint }}
+              {{ if $img }}
+                {{ $imgShrunk := $img.Fill "256x256" }}
                 <div class="media-left is-hidden-mobile">
                   <figure class="image is-128x128">
                     <img
-                      src="{{ $img.RelPermalink }}"
+                      src="{{ $imgShrunk.RelPermalink }}"
                       alt="Photo of {{ .name }}"
                       class="is-rounded"
                       >

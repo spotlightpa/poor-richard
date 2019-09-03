@@ -88,22 +88,21 @@
         <footer>
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
-            {{ $imgLoc := printf "assets/%s" $imgRes }}
+            {{ $img := resources.GetMatch $imgRes }}
             {{ $authorURL := urlize $name | printf "/about/staff/#%s" }}
             {{ $author := index $.Site.Data.authors $name }}
             <div class="level">
               <div class="level-left">
                 <div class="level-item">
-                  {{ if fileExists $imgLoc }}
+                  {{ if $img }}
                     <a
                       href="{{ $authorURL }}"
                       class="image is-64x64"
                     >
-                      {{ $img := resources.Get $imgRes }}
-                      {{ $img = $img.Fill "256x256" | fingerprint }}
+                      {{ $imgShrunk := $img.Fill "256x256" }}
                         <img
-                          src="{{ $img.RelPermalink }}"
-                          alt="Photo of {{ . }}"
+                          src="{{ $imgShrunk.RelPermalink }}"
+                          alt="Photo of {{ $name }}"
                           class="is-rounded is-monochrome"
                         >
                     </a>
