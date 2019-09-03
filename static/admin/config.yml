@@ -12,6 +12,107 @@ backend:
   repo: spotlightpa/poor-richard
   branch: master
 
+yaml-definitions: &page-fields
+  - label: Draft
+    name: draft
+    widget: boolean
+    hint: "Content will not show up on site, but will be publically available on Github. Do not save embargoed material."
+    default: true
+    required: false
+  - label: "Featured Image"
+    name: "hero-image"
+    widget: "image"
+    required: false
+    media_library:
+      config:
+        multiple: false
+  - label: Image description
+    name: hero-image-description
+    widget: string
+    required: false
+  - label: Image credit
+    name: hero-image-credit
+    widget: string
+    required: false
+  - label: Date
+    name: published
+    widget: date
+    hint: "Note that future dated articles will not be published on the live site"
+    required: false
+  - label: Authors
+    label_singular: author
+    name: authors
+    widget: list
+    default: []
+    field:
+      label: Name
+      hint: "Full name as listed in data profile"
+      widget: string
+  - label: Title
+    name: title
+    widget: string
+  - label: Subtitle
+    name: subtitle
+    widget: string
+    required: false
+  - label: Description
+    name: description
+    widget: string
+  - label: Kicker
+    name: kicker
+    hint: "Small text appearing above the page headline, e.g. Health"
+    widget: string
+    required: false
+  - label: Body
+    name: body
+    widget: markdown
+  - label: "Override title tag"
+    name: title-tag
+    widget: string
+    hint: "Set title tag separately from page title"
+    required: false
+  - label: Link to as
+    name: linktitle
+    hint: "When linking to this page from another page, use this as the page name"
+    widget: string
+    required: false
+  - label: "Suppress title"
+    name: suppress-title
+    widget: boolean
+    hint: "Don't show title in content area"
+    required: false
+  - label: "No index"
+    name: no-index
+    hint: "Hide page on Google etc."
+    widget: boolean
+    required: false
+  - label: Slug
+    name: slug
+    widget: string
+    required: false
+  - label: Footer text
+    name: extra-footer
+    hint: "Extra text to place after copyright message of page"
+    widget: string
+    required: false
+  - label: "Override URL"
+    name: url
+    widget: string
+    required: false
+  - label: Aliases
+    label_singular: alias
+    name: aliases
+    widget: list
+    default: []
+    field:
+      label: Path
+      name: path
+      widget: string
+  - label: type
+    name: type
+    widget: hidden
+    required: false
+
 collections:
   - label: Articles
     label_singular: Article
@@ -23,93 +124,7 @@ collections:
     preview_path: "/news/{{year}}/{{slug}}/"
     editor:
       preview: false
-    filter:
-      field: type
-      value: article
-    fields:
-      - label: "Featured Image"
-        name: "hero-image"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: false
-      - label: Image description
-        name: hero-image-description
-        widget: string
-        required: false
-      - label: Image credit
-        name: hero-image-credit
-        widget: string
-        required: false
-      - label: Date
-        name: published
-        widget: date
-        hint: "Note that future dated articles will not be published on the live site"
-      - label: Title
-        name: title
-        widget: string
-      - label: Subtitle
-        name: subtitle
-        widget: string
-        required: false
-      - label: Description
-        name: description
-        widget: string
-      - label: Kicker
-        name: kicker
-        hint: "Small text appearing above the page headline, e.g. Health"
-        widget: string
-        required: false
-      - label: Body
-        name: body
-        widget: markdown
-      - label: "Override title tag"
-        name: title-tag
-        widget: string
-        hint: "Set title tag separately from page title"
-        required: false
-      - label: Link to as
-        name: linktitle
-        hint: "When linking to this page from another page, use this as the page name"
-        widget: string
-        required: false
-      - label: "Suppress title"
-        name: suppress-title
-        widget: boolean
-        hint: "Don't show title in content area"
-        required: false
-      - label: "No index"
-        name: no-index
-        hint: "Hide page on Google etc."
-        widget: boolean
-        required: false
-      - label: Slug
-        name: slug
-        widget: string
-        required: false
-      - label: Footer text
-        name: extra-footer
-        hint: "Extra text to place after copyright message of page"
-        widget: string
-        required: false
-      - label: "Override URL"
-        name: url
-        widget: string
-        required: false
-      - label: Aliases
-        label_singular: alias
-        name: aliases
-        widget: list
-        default: []
-        field:
-          label: Path
-          name: path
-          widget: string
-      - label: type
-        name: type
-        widget: hidden
-        default: article
+    fields: *page-fields
   - label: Root pages
     name: content
     folder: content
@@ -120,66 +135,7 @@ collections:
     preview_path: "/{{slug}}/"
     editor:
       preview: false
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Subtitle
-        name: subtitle
-        widget: string
-        required: false
-      - label: Description
-        name: description
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
-      - label: Link to as
-        name: linktitle
-        hint: "When linking to this page from another page, use this as the page name"
-        widget: string
-        required: false
-      - label: "Override title tag"
-        name: title-tag
-        widget: string
-        hint: "Set title tag separately from page title"
-        required: false
-      - label: "Suppress title"
-        name: suppress-title
-        widget: boolean
-        hint: "Don't show title in content area"
-        required: false
-      - label: "No index"
-        name: no-index
-        hint: "Hide page on Google etc."
-        widget: boolean
-        required: false
-      - label: Slug
-        name: slug
-        widget: string
-        required: false
-      - label: Footer text
-        name: extra-footer
-        hint: "Extra text to place after copyright message of page"
-        widget: string
-        required: false
-      - label: "Override URL"
-        name: url
-        widget: string
-        required: false
-      - label: Aliases
-        label_singular: alias
-        name: aliases
-        widget: list
-        default: []
-        field:
-          label: Path
-          name: path
-          widget: string
-      - label: type
-        name: type
-        widget: hidden
-        required: false
+    fields: *page-fields
   - label: About pages
     name: about
     folder: content/about
@@ -190,66 +146,7 @@ collections:
     preview_path: "/about/{{slug}}/"
     editor:
       preview: false
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Subtitle
-        name: subtitle
-        widget: string
-        required: false
-      - label: Description
-        name: description
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
-      - label: Link to as
-        name: linktitle
-        hint: "When linking to this page from another page, use this as the page name"
-        widget: string
-        required: false
-      - label: "Override title tag"
-        name: title-tag
-        widget: string
-        hint: "Set title tag separately from page title"
-        required: false
-      - label: "Suppress title"
-        name: suppress-title
-        widget: boolean
-        hint: "Don't show title in content area"
-        required: false
-      - label: "No index"
-        name: no-index
-        hint: "Hide page on Google etc."
-        widget: boolean
-        required: false
-      - label: Slug
-        name: slug
-        widget: string
-        required: false
-      - label: Footer text
-        name: extra-footer
-        hint: "Extra text to place after copyright message of page"
-        widget: string
-        required: false
-      - label: "Override URL"
-        name: url
-        widget: string
-        required: false
-      - label: Aliases
-        label_singular: alias
-        name: aliases
-        widget: list
-        default: []
-        field:
-          label: Path
-          name: path
-          widget: string
-      - label: type
-        name: type
-        widget: hidden
-        required: false
+    fields: *page-fields
   - label: "Press Releases"
     label_singular: "Press Release"
     name: press-releases
@@ -260,51 +157,7 @@ collections:
     preview_path: "/press-releases/{{slug}}/"
     editor:
       preview: false
-    filter:
-      field: type
-      value: press-release
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Subtitle
-        name: subtitle
-        widget: string
-        required: false
-      - label: Description
-        name: description
-        widget: string
-      - label: Kicker
-        name: kicker
-        hint: "Small text appearing above the page headline"
-        widget: string
-        required: false
-      - label: Date
-        name: published
-        widget: date
-        hint: "Note that future dated releases will not be published on the live site"
-      - label: Authors
-        label_singular: author
-        name: authors
-        widget: list
-        default: []
-        field:
-          label: Name
-          hint: "Full name as listed in data profile"
-          widget: string
-      - label: Draft
-        name: draft
-        widget: boolean
-        hint: "Content will not show up on site, but will be publically available on Github. Do not save embargoed material."
-        default: true
-        required: false
-      - label: Body
-        name: body
-        widget: markdown
-      - label: type
-        name: type
-        widget: hidden
-        default: press-release
+    fields: *page-fields
   - label: Authors
     label_singular: Author
     name: authors
@@ -428,7 +281,7 @@ collections:
             name: main
             hint: "Navbar main menu"
             widget: list
-            fields:
+            fields: &menu
               - label: "Display Name"
                 name: name
                 widget: string
@@ -451,67 +304,16 @@ collections:
             name: footer
             hint: "Footer pages list, first column"
             widget: list
-            fields:
-              - label: "Display Name"
-                name: name
-                widget: string
-                required: true
-              - label: URL
-                name: url
-                widget: string
-                required: true
-              - label: "CSS class"
-                name: pre
-                widget: string
-                required: false
-              - label: Order
-                name: weight
-                widget: number
-                valueType: int
-                required: false
+            fields: *menu
           - label: "Footer about menu items"
             label_singular: "menu item"
             name: about
             hint: "Footer pages list, about column"
             widget: list
-            fields:
-              - label: "Display Name"
-                name: name
-                widget: string
-                required: true
-              - label: URL
-                name: url
-                widget: string
-                required: true
-              - label: "CSS class"
-                name: pre
-                widget: string
-                required: false
-              - label: Order
-                name: weight
-                widget: number
-                valueType: int
-                required: false
+            fields: *menu
           - label: "Social menu items"
             label_singular: "menu item"
             name: social
             hint: "Footer social links"
             widget: list
-            fields:
-              - label: "Display Name"
-                name: name
-                widget: string
-                required: true
-              - label: URL
-                name: url
-                widget: string
-                required: true
-              - label: "CSS class"
-                name: pre
-                widget: string
-                required: false
-              - label: Order
-                name: weight
-                widget: number
-                valueType: int
-                required: false
+            fields: *menu
