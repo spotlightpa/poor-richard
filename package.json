@@ -9,7 +9,8 @@
     "checkformat": "prettier --ignore-path .gitignore --check **/*.{scss,js,yml}",
     "format": "prettier --ignore-path .gitignore --write **/*.{scss,js,yml}",
     "git-pre-push": "yarn run checkformat",
-    "build": "parcel build assets/js/main.js && hugo version && hugo --debug --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
+    "build:stage": "parcel build assets/js/main.js && hugo version && hugo --debug --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
+    "build:prod": "parcel build assets/js/main.js && hugo version && hugo --debug --minify",
     "start": "parcel assets/js/main.js & hugo server & wait"
   },
   "dependencies": {
