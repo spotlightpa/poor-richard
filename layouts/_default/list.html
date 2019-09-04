@@ -8,7 +8,7 @@
             {{ $heroPath := .Param "hero-image" }}
             {{ $image := resources.GetMatch $heroPath }}
             {{ with $image }}
-              {{ $imgIcon := $image.Fit "96x96" }}
+              {{ $imgIcon := $image.Fill "96x96" }}
               <div class="media-left">
                 <figure class="image is-48x48">
                   <img
