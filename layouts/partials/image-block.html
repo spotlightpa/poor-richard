@@ -12,7 +12,7 @@
   {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
 
-  <figure class="has-margin-top">
+  <figure class="{{ .figClass }}">
     <picture class="image is-2by1">
       <img
         alt="{{ .description }}"
