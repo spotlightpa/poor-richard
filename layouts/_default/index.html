@@ -2,90 +2,92 @@
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
 
   <section class="section">
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-gapless">
-        <div class="tile is-parent is-top">
-          <div class="tile is-child">
-            <span class="tag is-warning is-uppercase has-text-weight-bold">Health</span>
+    <div class="container is-widescreen">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical">
+          <div class="tile is-parent is-top">
+            <div class="tile is-child">
+              <span class="tag is-primary is-uppercase has-text-weight-bold">Health</span>
+            </div>
           </div>
-        </div>
-        <div class="tile">
-          <div class="tile is-parent is-7">
-            <article class="tile is-child">
-              {{ dict "imagePath" "img/uploads/snow.jpeg" "credit" "Carl J." "description" "Snow" | partial "image-block.html" }}
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child">
-              <h1 class="title">
-                <a href="#" class="has-text-black hover-underline">
-                  Intrigue, infighting define GOP at-large race for Philadelphia City Council
-                </a>
-              </h1>
-              <div class="subtitle">
-                <h2>
+          <div class="tile is-bottom">
+            <div class="tile is-parent is-7">
+              <article class="tile is-child">
+                {{ dict "imagePath" "img/uploads/snow.jpeg" "credit" "Carl J." "description" "Snow" | partial "image-block.html" }}
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <h1 class="title">
                   <a href="#" class="has-text-black hover-underline">
-                    Five Republicans are aiming to win one of the two City Council seats traditionally reserved for the party.
+                    Intrigue, infighting define GOP at-large race for Philadelphia City Council
                   </a>
-                </h2>
-                <time
-                  class="is-size-6"
-                  datetime='{{ now.Local.Format $isoFormat }}'
-                >
-                  {{ now.Format "Monday, January 2, 2006" }}
-                </time>
+                </h1>
+                <div class="subtitle">
+                  <h2>
+                    <a href="#" class="has-text-black hover-underline">
+                      Five Republicans are aiming to win one of the two City Council seats traditionally reserved for the party.
+                    </a>
+                  </h2>
+                  <time
+                    class="is-size-6"
+                    datetime='{{ now.Local.Format $isoFormat }}'
+                  >
+                    {{ now.Format "Monday, January 2, 2006" }}
+                  </time>
+                </div>
+                <ul class="is-size-6 related">
+                  <li>
+                    <a href="#" class="has-text-black hover-underline">
+                      Controversy brewing for Tracey Gordon, even before she takes over as Philly’s register of wills
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="has-text-black hover-underline">
+                      Low-wage worker unions are trying to flex their muscle in Philly’s City Council race
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="has-text-black hover-underline">
+                      Helen Gym angers Philly Dems by endorsing third-party candidate
+                    </a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "Hong Kong withdraws extradition bill that sparked protests" "kicker" "Business" "image" "flowers" | partial "story-tile.html" }}
               </div>
-              <ul class="is-size-6 related">
-                <li>
-                  <a href="#" class="has-text-black hover-underline">
-                    Controversy brewing for Tracey Gordon, even before she takes over as Philly’s register of wills
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="has-text-black hover-underline">
-                    Low-wage worker unions are trying to flex their muscle in Philly’s City Council race
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="has-text-black hover-underline">
-                    Helen Gym angers Philly Dems by endorsing third-party candidate
-                  </a>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "Hong Kong withdraws extradition bill that sparked protests" "kicker" "Business" "image" "flowers" | partial "story-tile.html" }}
+            </div>
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "With Hahnemann closure, some Pa. senators learn they can’t please everybody" "kicker" "Education" "image" "mountains" | partial "story-tile.html" }}
+              </div>
+            </div>
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "Family, teenagers among 34 presumed dead in California boat fire" "kicker" "Politics" "image" "grass" | partial "story-tile.html" }}
+              </div>
             </div>
           </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "With Hahnemann closure, some Pa. senators learn they can’t please everybody" "kicker" "Education" "image" "mountains" | partial "story-tile.html" }}
+          <div class="tile">
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "" "svg" "covering" "url" "#" | partial "promo-tile.html" }}
+              </div>
             </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "Family, teenagers among 34 presumed dead in California boat fire" "kicker" "Politics" "image" "grass" | partial "story-tile.html" }}
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "" "svg" "stop" "url" "#" | partial "promo-tile.html" }}
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "" "svg" "covering" "url" "#" | partial "promo-tile.html" }}
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "" "svg" "stop" "url" "#" | partial "promo-tile.html" }}
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child">
-              {{ dict "title" "" "svg" "support" "url" "#" | partial "promo-tile.html" }}
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ dict "title" "" "svg" "support" "url" "#" | partial "promo-tile.html" }}
+              </div>
             </div>
           </div>
         </div>
