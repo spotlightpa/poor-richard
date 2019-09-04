@@ -1,0 +1,22 @@
+{{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+
+<article>
+  <h3 class="tag is-warning is-uppercase has-text-weight-bold">
+    {{ .kicker }}
+  </h3>
+  {{ $image := printf "img/uploads/%s.jpeg" .image }}
+  {{ dict "imagePath" $image "credit" "Carl J." "description" "A picture" "figClass" "has-margin-top-thin" | partial "image-block.html" }}
+  <h1 class="title is-size-5">
+    <a class="has-text-black hover-underline" href="#">{{ .title }}</a>
+  </h1>
+  <h2 class="subtitle">
+    <time
+      class="is-size-6"
+      datetime='{{ now.Local.Format $isoFormat }}'
+    >
+    <a class="has-text-grey hover-underline" href="#">
+      {{ now.Format "Monday, January 2, 2006" }}
+    </a>
+    </time>
+  </h2>
+</article>

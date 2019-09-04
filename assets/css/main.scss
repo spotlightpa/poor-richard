@@ -213,3 +213,19 @@ a.navbar-burger:hover {
 .has-margin-top {
   margin-top: 1.5rem;
 }
+
+.tile.is-top {
+  padding-bottom: 0;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.related li {
+  list-style-type: circle;
+}
+
+.has-margin-top-thin {
+  margin-top: .75rem;
+}
