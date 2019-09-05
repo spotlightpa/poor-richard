@@ -1,6 +1,6 @@
 {{ $byline := "" }}
 {{ with .Param "authors" }}
-   {{ $byline = delimit . ", " " and " }}
+   {{ $byline = delimit . ", " " and " | printf "By %s" }}
 {{ end }}
 {{ with .Param "byline" }}
    {{ $byline = . }}
@@ -64,7 +64,7 @@
         <header class="block">
           {{ with $byline }}
             <h3 class="is-size-6 has-text-weight-bold">
-              By {{ $byline }}
+              {{ $byline }}
             </h3>
           {{ end }}
 
