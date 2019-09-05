@@ -12,6 +12,8 @@ All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Jo
 
 The Philadelphia Inquirer provides in-kind fiscal, legal and administrative support for Spotlight PA employees. The Pittsburgh Post-Gazette and PennLive/Patriot-News each provide a reporter including salary and benefits. Continuing fundraising is intended to cover Spotlight PA's entire annual budget, including all in-kind contributions, making it a fully self-sustaining and independent organization.
 
+To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donate).
+
 {{<supporters-logos>}}
 
 ## Major Donors
