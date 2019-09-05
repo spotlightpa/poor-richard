@@ -1,0 +1,123 @@
+{{ $images := slice }}
+{{ with $.Param "hero-image" }}
+  {{ $images = $images | append . }}
+{{ end }}
+{{ with $.Param "images" }}
+  {{ $images = $images | append . }}
+{{ end }}
+
+
+{{ range first 6 $images }}
+  {{ $img := resources.GetMatch . }}
+  {{ with $img }}
+    {{ $imgSquare := $img.Fit "1200x1200" }}
+    <meta property="og:image" content="{{ $imgSquare.Permalink }}" />
+  {{ end }}
+{{ end }}
+
+{{ if .Param "no-index" }}
+  <meta name="robots" content="noindex">
+{{ else }}
+  <meta name="robots" content="index,follow">
+  <link href="{{ .Permalink }}" rel="canonical">
+{{ end }}
+
+{{ $icon := resources.Get (.Param "favicon") }}
+{{ range $size := slice "32x32" "192x192" "720x720" "920x920" }}
+  {{ $iconShrunk := $icon.Fit $size }}
+  <link rel="shortcut icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
+  <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
+{{ end }}
+
+<meta name="description" content="{{ .Description }}">
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- if .IsPage }}
+  {{- if not .PublishDate.IsZero }}
+    <meta property="article:published_time" {{ .PublishDate.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+  {{ else if not .Date.IsZero }}
+    <meta property="article:published_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+  {{ end }}
+  {{- if not .Lastmod.IsZero }}
+    <meta property="article:modified_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+  {{ end }}
+{{- else }}
+  {{- if not .Date.IsZero }}
+    <meta property="og:updated_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+  {{- end }}
+{{- end }}{{/* .IsPage */}}
+
+{{- with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
+{{- with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
+{{- with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+{{- with .Params.videos }}
+{{- range . }}
+<meta property="og:video" content="{{ . | absURL }}" />
+{{ end }}{{ end }}
+
+{{- /* If it is part of a series, link to related articles */}}
+{{- $permalink := .Permalink }}
+{{- $siteSeries := .Site.Taxonomies.series }}{{ with .Params.series }}
+{{- range $name := . }}
+  {{- $series := index $siteSeries $name }}
+  {{- range $page := first 6 $series.Pages }}
+    {{- if ne $page.Permalink $permalink }}<meta property="og:see_also" content="{{ $page.Permalink }}" />{{ end }}
+  {{- end }}
+{{ end }}{{ end }}
+
+{{- if .IsPage }}
+{{- range .Site.Authors }}{{ with .Social.facebook }}
+<meta property="article:author" content="https://www.facebook.com/{{ . }}" />{{ end }}{{ with .Site.Social.facebook }}
+<meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />{{ end }}
+<meta property="article:section" content="{{ .Section }}" />
+{{- with .Params.tags }}{{ range first 6 . }}
+<meta property="article:tag" content="{{ . }}" />{{ end }}{{ end }}
+{{- end }}{{ end }}
+
+{{- /* Facebook Page Admin ID for Domain Insights */}}
+{{- with .Site.Social.facebook_admin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+{{if .IsPage}}
+  {{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{ if not .PublishDate.IsZero }}
+    <meta itemprop="datePublished" content="{{ .PublishDate.Format $ISO8601 | safeHTML }}" />
+  {{ end }}
+  {{ if not .Lastmod.IsZero }}
+    <meta itemprop="dateModified" content="{{ .Lastmod.Format $ISO8601 | safeHTML }}" />
+  {{ end }}
+  <meta itemprop="wordCount" content="{{ .WordCount }}">
+  {{ range first 6 $images }}
+    {{ $img := resources.GetMatch . }}
+    {{ with $img }}
+      <meta itemprop="image" content="{{ $img.Permalink }}">
+    {{ end }}
+  {{ end }}
+
+  <!-- Output all taxonomies as schema.org keywords -->
+  <meta itemprop="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
+{{ end }}
+
+{{ with index $images 0 | resources.GetMatch }}
+  {{ $img := . }}
+  {{ $imgRect := $img.Fill "1200x628" }}
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="{{ $imgRect.Permalink }}"/>
+{{ else }}
+  <meta name="twitter:card" content="summary"/>
+{{ end }}
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+{{ with .Site.Social.twitter -}}
+<meta name="twitter:site" content="@{{ . }}"/>
+{{ end -}}
+{{ range .Site.Authors }}
+{{ with .twitter -}}
+<meta name="twitter:creator" content="@{{ . }}"/>
+{{ end -}}
+{{ end -}}

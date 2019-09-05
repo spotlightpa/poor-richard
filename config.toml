@@ -42,10 +42,7 @@ notAlternative = true
     title = "Spotlight PA"
     favicon = "/img/logos/square-white-on-black-920.png"
     images = [
-        "/img/logos/capitol-moody-logo-1000.jpeg",
-        "/img/logos/capitol-moody-logo-3900.jpeg",
-        "/img/logos/capitol-moody-logo-500.jpeg",
-        "/img/logos/banner-share-5000.png"
+        "/img/uploads/banner-white-on-capitol.jpeg"
     ]
     description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
 

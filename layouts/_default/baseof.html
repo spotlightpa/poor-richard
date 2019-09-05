@@ -26,24 +26,7 @@
   <!-- Metadata -->
   {{ template "_internal/google_analytics_async.html" . }}
 
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/schema.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-  <meta name="description" content="{{ .Description }}">
-
-  {{ if .Param "no-index" }}
-    <meta name="robots" content="noindex">
-  {{ else }}
-    <meta name="robots" content="index,follow">
-    <link href="{{ .Permalink }}" rel="canonical">
-  {{ end }}
-
-  {{ $icon := resources.Get (.Param "favicon") }}
-  {{ range $size := slice "32x32" "192x192" "720x720" "920x920" }}
-    {{ $iconShrunk := $icon.Fit $size | fingerprint }}
-    <link rel="shortcut icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
-    <link rel="apple-touch-icon" href="{{ $iconShrunk.RelPermalink }}" sizes="{{ $size }}">
-  {{ end }}
+  {{ partial "meta.html" . }}
 
   {{ range slice "500" "900" "regular" }}
     <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
