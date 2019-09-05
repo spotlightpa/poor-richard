@@ -14,7 +14,7 @@ The Philadelphia Inquirer provides in-kind fiscal, legal and administrative supp
 
 {{<supporters-logos>}}
 
-## Our supporters
+## Major Donors
 
 Laura and John Arnold <br />
 The Foundation for Enhancing Communities <br />
