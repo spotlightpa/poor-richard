@@ -5,6 +5,7 @@ published = 2019-09-05T11:07:00Z
 hero-image = "img/uploads/walking.jpg"
 hero-image-credit = "Courtesy Philadelphia Inquirer"
 hero-image-description = "Man walks in front of Pennsylvania state house"
+hero-image-size = "inline"
 authors = ["Christopher Baxter"]
 +++
 
