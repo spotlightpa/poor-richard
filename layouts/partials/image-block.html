@@ -1,24 +1,36 @@
 {{ $img := resources.GetMatch .imagePath }}
 {{ if $img }}
-  {{ $imgSmall := $img.Fill "320x160" }}
+  {{ $imgSmallSrc := "" }}
   {{ $imgs := slice }}
-  {{ range $size := slice 4 8 12 16 }}
+  {{ $widthR := .widthRatio | default 16 }}
+  {{ $heightR := .heightRatio | default 9 }}
+  {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
+
+  {{ range $size := slice 2 4 8 10 12 16 }}
     {{ $width := mul $size 160 }}
-    {{ $height := mul $size 80 }}
-    {{ $imgShrunk := printf "%dx%d" $width $height | $img.Fill }}
+    {{ $height := mul $size 160 }}
+    {{ $height = div (mul $heightR $height) $widthR }}
+    {{ $dim := printf "%dx%d" $width $height }}
+    {{ $imgShrunk :=  $img.Fill $dim }}
     {{ $src := printf "%s %dw" $imgShrunk.RelPermalink $width }}
     {{ $imgs = $imgs | append $src }}
-  {{ end -}}
+    {{ if eq $size 2 }}
+      {{ $imgSmallSrc = $imgShrunk.RelPermalink }}
+    {{ end }}
+  {{ end }}
   {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
 
   <figure class="{{ .figClass }}">
-    <picture class="image is-2by1">
+    <picture class="image {{ $imgClass }}">
       <img
         alt="{{ .description }}"
         title="{{ .description }}"
-        src="{{ $imgSmall.RelPermalink }}"
+        src="{{ $imgSmallSrc }}"
         srcset="{{ $srcset }}"
+        {{ if .sizeHint }}
+          sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+        {{ end }}
         data-original="{{ $img.RelPermalink }}"
       >
     </picture>

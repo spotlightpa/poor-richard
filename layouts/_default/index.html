@@ -1,6 +1,6 @@
 {{ define "before-main" }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-
+  {{ $pages := (.Site.GetPage "/news/_index.md").Pages }}
   <section class="section">
     <div class="container is-widescreen">
       <div class="tile is-ancestor">
@@ -57,39 +57,36 @@
             </div>
           </div>
           <div class="tile">
-            <div class="tile is-parent is-4">
-              <div class="tile is-child">
-                {{ dict "title" "Hong Kong withdraws extradition bill that sparked protests" "kicker" "Business" "image" "flowers" | partial "story-tile.html" }}
+            {{ range $page := first 3 $pages }}
+              <div class="tile is-parent is-4">
+                <div class="tile is-child">
+                  {{ partial "tile-stack.html" $page }}
+                </div>
               </div>
-            </div>
-            <div class="tile is-parent is-4">
-              <div class="tile is-child">
-                {{ dict "title" "With Hahnemann closure, some Pa. senators learn they can’t please everybody" "kicker" "Education" "image" "mountains" | partial "story-tile.html" }}
-              </div>
-            </div>
-            <div class="tile is-parent is-4">
-              <div class="tile is-child">
-                {{ dict "title" "Family, teenagers among 34 presumed dead in California boat fire" "kicker" "Politics" "image" "grass" | partial "story-tile.html" }}
-              </div>
-            </div>
+            {{ end }}
           </div>
           <div class="tile">
             <div class="tile is-parent is-4">
               <div class="tile is-child">
-                {{ dict "title" "" "svg" "covering" "url" "#" | partial "promo-tile.html" }}
+                {{ dict "title" "Meet the team" "svg" "covering" "url" "/about/staff/" | partial "tile-promo.html" }}
               </div>
             </div>
             <div class="tile is-parent is-4">
               <div class="tile is-child">
-                {{ dict "title" "" "svg" "stop" "url" "#" | partial "promo-tile.html" }}
+                {{ dict "title" "Send a tip" "svg" "stop" "url" "/tips/" | partial "tile-promo.html" }}
               </div>
             </div>
             <div class="tile is-parent is-4">
               <div class="tile is-child">
-                {{ dict "title" "" "svg" "support" "url" "#" | partial "promo-tile.html" }}
+                {{ dict "title" "Support fearless journalism" "svg" "support" "url" "/donate/" | partial "tile-promo.html" }}
               </div>
             </div>
           </div>
+          {{ range $page := after 3 $pages }}
+            <div class="tile">
+              {{ partial "tile-horiz.html" $page }}
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>

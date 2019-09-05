@@ -1,0 +1,63 @@
+{{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+{{ $kicker := .Page.Param "kicker" | default "News" }}
+{{ $byline := "" }}
+{{ with .Page.Param "authors" }}
+   {{ $byline = delimit . ", " " and " }}
+{{ end }}
+{{ with .Page.Param "byline" }}
+   {{ $byline = . }}
+{{ end }}
+
+<article class="tile is-vertical">
+  <div class="tile is-parent is-top">
+    <div class="tile is-child">
+      <h3 class="tag is-primary is-uppercase has-text-weight-bold has-margin-bottom-thin">
+        {{ $kicker }}
+      </h3>
+    </div>
+  </div>
+  <div class="tile is-bottom">
+    <div class="tile is-parent is-4">
+      <div class="tile is-child">
+        {{ $heroName := .Page.Param "hero-image" }}
+        {{ $heroCredit := .Page.Param "hero-image-credit" }}
+        {{ $heroDescription := .Page.Param "hero-image-description" }}
+        {{ $imgOpts := dict "imagePath" $heroName }}
+        {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
+        {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+        {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
+        {{ $imgOpts = dict "widthR" 5 | merge $imgOpts }}
+        {{ $imgOpts = dict "heightR" 4 | merge $imgOpts }}
+        {{ partial "image-block.html" $imgOpts }}
+      </div>
+    </div>
+
+    <div class="tile is-parent is-4">
+      <div class="tile is-child">
+        <h1 class="title is-size-5">
+          <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
+            {{ .LinkTitle }}
+          </a>
+        </h1>
+        <h2 class="subtitle">
+          <p>
+            <a
+              class="has-text-black is-size-5 hover-underline"
+              href="{{ .RelPermalink }}"
+            >
+              {{ $byline }}
+            </a>
+          </p>
+          <time
+            class="is-size-6"
+            datetime='{{ .PublishDate.Format $isoFormat }}'
+          >
+            <a class="has-text-grey hover-underline" href="{{ .RelPermalink }}">
+              {{ .PublishDate.Format "Monday, January 2, 2006" }}
+            </a>
+          </time>
+        </h2>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,36 @@
+{{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+{{ $kicker := .Page.Param "kicker" | default "News" }}
+
+<article>
+  <h3 class="tag is-primary is-uppercase has-text-weight-bold has-margin-bottom-thin">
+    {{ $kicker }}
+  </h3>
+
+  {{ $heroName := .Page.Param "hero-image" }}
+  {{ $heroCredit := .Page.Param "hero-image-credit" }}
+  {{ $heroDescription := .Page.Param "hero-image-description" }}
+  {{ $imgOpts := dict "imagePath" $heroName }}
+  {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
+  {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+  {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
+  {{ $imgOpts = dict "widthRatio" 5 | merge $imgOpts }}
+  {{ $imgOpts = dict "heightRatio" 4 | merge $imgOpts }}
+  {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
+  {{ partial "image-block.html" $imgOpts }}
+
+  <h1 class="title is-size-5">
+    <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
+      {{ .LinkTitle }}
+    </a>
+  </h1>
+  <h2 class="subtitle">
+    <time
+      class="is-size-6"
+      datetime='{{ .PublishDate.Format $isoFormat }}'
+    >
+      <a class="has-text-grey hover-underline" href="{{ .RelPermalink }}">
+        {{ .PublishDate.Format "Monday, January 2, 2006" }}
+      </a>
+    </time>
+  </h2>
+</article>
