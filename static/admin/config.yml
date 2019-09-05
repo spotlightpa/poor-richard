@@ -34,6 +34,11 @@ yaml-definitions: &page-fields
     name: hero-image-credit
     widget: string
     required: false
+  - label: "Image size"
+    name: "hero-image-size"
+    widget: "select"
+    options: ["full", "inline", "hidden"]
+    required: false
   - label: Date
     name: published
     widget: date
