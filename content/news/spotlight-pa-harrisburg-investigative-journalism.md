@@ -1,9 +1,12 @@
 +++
 title = "Spotlight PA: Unrivaled team of investigative reporters to hold the powerful to account in Pa. capital"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
+kicker = "Your Team"
 published = 2019-08-29T00:00:00.000Z
 authors = ["Christopher Baxter"]
-type = "press-release"
+aliases = [
+"/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/"
+]
 +++
 
 There’s nothing short of a crisis in our state capital.
