@@ -1,4 +1,5 @@
 +++
+published = 2019-09-05T13:14:35.433Z
 title = "Transparency statement"
 description = "Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting."
 url = "/support/"
@@ -30,3 +31,70 @@ Poor Richard’s Charitable Trust <br />
 The Steinman Foundation <br />
 Wyncote Foundation <br />
 York County Community Foundation <br />
+
+## Founding Donors
+
+Richard Abraham <br />
+Oscar Armas-Luy <br />
+Kathleen Baker <br />
+Whitney Baldwin <br />
+Mark Bazrod <br />
+Sigal Ben <br />
+Rita Bernstein & Alan Zuckerman <br />
+Robert Joseph Biller <br />
+Mireille Carigi <br />
+Carosella Sr. <br />
+Marguerite Chandler <br />
+John & Joy Burt Conti <br />
+Brett Cott <br />
+Karen Crosby <br />
+Barry DeSantis <br />
+Earl Drumheiser <br />
+Mary Erdman <br />
+Tamara Goldman <br />
+John F. Graybill <br />
+Frank Hadden <br />
+Robert Haines <br />
+B.A. Hamilton <br />
+Bob Hoover <br />
+Louise Horan <br />
+Avram Hornik <br />
+Stephen R. Hughes <br />
+Annette E. Inker <br />
+Evelyn Ishmael <br />
+Arlene Jarett <br />
+Karen M. Kaplan & Aaron M. Shatzman <br />
+J. Kauer & D. Fleece <br />
+Alan Kennedy <br />
+Cathy King <br />
+Steven Kuloszewski <br />
+Lora Lavin <br />
+Jamie Lemon & Steve Cline <br />
+Stephen J. Lipnichan <br />
+Daniel Lynch <br />
+William H. Maruca <br />
+Claudia C. McGill <br />
+K. Melton <br />
+Keith G. Melville <br />
+Jules J. Mermelstein <br />
+Ryan Morden <br />
+M. Noel <br />
+Marty O’Brien <br />
+Ronald Ozio <br />
+Leanora Paniccia <br />
+Amy L. Perez <br />
+Rick Piper <br />
+Ralph Riedel <br />
+David R. Ross <br />
+Benedict X. Saia <br />
+Kimberley Shore <br />
+Josh Singer <br />
+Anthony Spisto <br />
+Thomas Stone <br />
+R. Thomas <br />
+Irene Tierney <br />
+M. Tillger <br />
+Joseph C. Vignola <br />
+Karen Weaver <br />
+Koert Wehberg, Esq. <br />
+Sherley Young <br />
