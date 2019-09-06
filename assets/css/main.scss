@@ -239,9 +239,19 @@ a.navbar-burger:hover {
 }
 
 .has-margin-top-thin {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.has-margin-top-negative {
+  margin-top: $subtitle-negative-margin;
 }
 
 .has-margin-bottom-thin {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag {
+  &.is-square {
+    border-radius: 2px;
+  }
 }
