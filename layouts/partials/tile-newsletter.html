@@ -1,0 +1,53 @@
+{{ $iconEmail := resources.Get "/img/fontawesome/solid/envelope.svg" }}
+{{ $iconUser := resources.Get "/img/fontawesome/regular/user.svg" }}
+{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
+
+<form
+  class="has-text-centered"
+  action="/thanks/"
+  method="post"
+  name="signup-newsletters"
+  netlify
+  netlify-honeypot="bot-field"
+>
+  <p class="is-hidden">
+    <label>
+      Don’t fill this out if you're human: <input name="bot-field">
+    </label>
+  </p>
+  <h2 class="title is-4 is-uppercase">
+    <span class="icon v-middle">
+      {{ $iconEmail.Content|safeHTML }}
+    </span>
+    <span class="v-middle">
+      Sign Up For Our Newsletter
+    </span>
+  </h2>
+  <h3 class="subtitle is-6 is-italic">
+    Receive exclusive, behind-the-scenes looks at our work <br>
+    and a weekly roundup of the best journalism from across Pa.
+  </h3>
+  <div class="field has-addons">
+    <p class="control has-icons-left has-icons-right is-expanded">
+      <input
+        id="tile-email"
+        class="input"
+        type="email"
+        placeholder="janedoe@example.com"
+        name="email"
+        required
+      >
+        <span class="icon is-left has-text-grey-light">
+          {{ $iconUser.Content|safeHTML }}
+        </span>
+        <span class="icon is-right validator-icon">
+          {{ $iconCheck.Content|safeHTML }}
+        </span>
+    </p>
+    <p class="control">
+      <button type="submit" class="button is-primary">
+        Sign Up
+      </button>
+    </p>
+  </div>
+</form>

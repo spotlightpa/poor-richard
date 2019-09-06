@@ -255,3 +255,14 @@ a.navbar-burger:hover {
     border-radius: 2px;
   }
 }
+
+.promo svg {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    max-width: 20vw;
+  }
+}
+
+.v-middle {
+  vertical-align: middle;
+}

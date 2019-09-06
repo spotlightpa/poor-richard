@@ -2,6 +2,11 @@
 
 <article class="tile is-vertical">
   {{ if .Page.Param "hero-image" }}
+  <div class="tile">
+    <div class="tile is-parent is-top is-1">
+      <div class="tile is-child">
+      </div>
+    </div>
     <div class="tile is-parent is-top">
       <div class="tile is-child">
         <h3 class="tag is-square is-primary is-uppercase has-text-weight-bold has-margin-bottom-thin">
@@ -9,9 +14,14 @@
         </h3>
       </div>
     </div>
+  </div>
   {{ end }}
   <div class="tile is-bottom">
-    <div class="tile is-parent is-4">
+    <div class="tile is-parent is-1">
+      <div class="tile is-child">
+      </div>
+    </div>
+    <div class="tile is-parent is-3">
       <div class="tile is-child">
         {{ $heroName := .Page.Param "hero-image" }}
         {{ $heroCredit := .Page.Param "hero-image-credit" }}
@@ -22,7 +32,7 @@
         {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
         {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
         {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-        {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
+        {{ $imgOpts = dict "sizeHint" "15vw" | merge $imgOpts }}
         {{ partial "image-block.html" $imgOpts }}
       </div>
     </div>

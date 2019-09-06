@@ -19,35 +19,40 @@
             {{ end }}
           </div>
           <div class="tile">
-            <div class="tile is-parent">
+            <div class="tile"></div>
+            <div class="tile is-parent is-6">
               <div class="tile is-child">
+                {{ partial "tile-newsletter.html" . }}
               </div>
             </div>
-            <div class="tile is-parent is-3">
-              <div class="tile is-child">
-                {{ dict "title" "Meet the team" "svg" "covering" "url" "/about/staff/" | partial "tile-promo.html" }}
-              </div>
-            </div>
-            <div class="tile is-parent is-3">
-              <div class="tile is-child">
-                {{ dict "title" "Send a tip" "svg" "stop" "url" "/tips/" | partial "tile-promo.html" }}
-              </div>
-            </div>
-            <div class="tile is-parent is-3">
-              <div class="tile is-child">
-                {{ dict "title" "Support fearless journalism" "svg" "support" "url" "/donate/" | partial "tile-promo.html" }}
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <div class="tile is-child">
-              </div>
-            </div>
+            <div class="tile"></div>
           </div>
-          {{ range $page := after 3 $pages }}
+          {{ range $page := after 3 $pages | first 5 }}
             <div class="tile">
               {{ partial "tile-horiz.html" $page }}
             </div>
           {{ end }}
+          <div class="tile">
+            <div class="tile is-parent">
+              <div class="tile is-child">
+                <h2 class="title has-text-centered has-text-weight-bold">
+                  Who We Are
+                </h2>
+                <hr class="is-emphatic-underline has-margin-top-negative">
+                <div class="level">
+                  <div class="level-item promo">
+                    {{ dict "title" "Meet the team" "svg" "covering" "url" "/about/staff/" | partial "tile-promo.html" }}
+                  </div>
+                  <div class="level-item promo">
+                    {{ dict "title" "Send a tip" "svg" "stop" "url" "/tips/" | partial "tile-promo.html" }}
+                  </div>
+                  <div class="level-item promo">
+                    {{ dict "title" "Support fearless journalism" "svg" "support" "url" "/donate/" | partial "tile-promo.html" }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
