@@ -8,6 +8,7 @@ description = "The state’s top newspapers, websites, nonprofits, and universit
 published = 2019-08-30T00:00:00.000Z
 authors = ["Christopher Baxter"]
 draft = true
+featured = true
 +++
 
 There’s nothing short of a crisis in our state capital.
