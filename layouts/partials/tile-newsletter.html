@@ -16,11 +16,13 @@
     </label>
   </p>
   <h2 class="title is-4 is-uppercase">
+    <!-- Minifier pulls this too close without a hairspace -->
     <span class="icon v-middle">
-      {{ $iconEmail.Content|safeHTML }}
+      {{- $iconEmail.Content|safeHTML -}}
     </span>
+    {{- "&hairsp;" | safeHTML -}}
     <span class="v-middle">
-      Sign Up For Our Newsletter
+      {{- "Sign Up For Our Newsletter" -}}
     </span>
   </h2>
   <h3 class="subtitle is-6 is-italic">
