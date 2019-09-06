@@ -1,0 +1,70 @@
+{{ $featured := index . 0 }}
+{{ $featuredParams := partial "page-params.html" $featured.Page }}
+
+<div class="tile is-parent is-top">
+  <div class="tile is-child">
+    <span class="tag is-square has-margin-bottom-thin is-primary is-uppercase has-text-weight-bold">{{ $featuredParams.kicker | default "News" }}</span>
+  </div>
+</div>
+
+{{ $heroName := $featured.Page.Param "hero-image" }}
+{{ $heroCredit := $featured.Page.Param "hero-image-credit" }}
+{{ $heroDescription := $featured.Page.Param "hero-image-description" }}
+{{ $imgOpts := dict "imagePath" $heroName }}
+{{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
+{{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+{{ $imgOpts = dict "link" $featured.RelPermalink | merge $imgOpts }}
+{{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+{{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
+{{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
+
+<div class="tile is-bottom">
+  <div class="tile is-parent is-6">
+    <article class="tile is-child">
+        {{ partial "image-block.html" $imgOpts }}
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child">
+      <h1 class="title is-spaced">
+        <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
+          {{ $featured.LinkTitle }}
+        </a>
+      </h1>
+      {{ if $featured.Params.subtitle }}
+        <h2 class="subtitle is-5 has-margin-top-negative">
+          <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
+            {{ $featured.Params.subtitle }}
+          </a>
+        </h2>
+      {{ end }}
+      {{ if $featuredParams.byline }}
+        <h3 class="subtitle has-margin-top-negative is-6 has-text-weight-normal">
+          <a href="{{ $featured.RelPermalink }}" class="has-text-dark hover-underline">
+            {{ $featuredParams.byline }}
+          </a>
+        </h3>
+      {{ end }}
+      {{ if $featuredParams.published }}
+      <h3 class="subtitle has-margin-top-negative is-6">
+        <time
+          datetime='{{ $featuredParams.publishedISO }}'
+        >
+          {{ $featuredParams.published }}
+        </time>
+      </h3>
+      {{ end }}
+      {{ if gt (len .) 1 }}
+        <ul class="is-size-6 related">
+          {{ range after 1 . }}
+            <li>
+              <a href="{{ .RelPermalink }}" class="has-text-black hover-underline">
+                {{ .LinkTitle }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </article>
+  </div>
+</div>
