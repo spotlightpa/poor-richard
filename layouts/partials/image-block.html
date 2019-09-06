@@ -23,6 +23,9 @@
 
   <figure class="{{ .figClass }}">
     <picture class="image {{ $imgClass }}">
+      {{ if .link }}
+        <a href="{{ .link }}">
+      {{ end }}
       <img
         alt="{{ .description }}"
         title="{{ .description }}"
@@ -33,6 +36,9 @@
         {{ end }}
         data-original="{{ $img.RelPermalink }}"
       >
+      {{ if .link }}
+        </a>
+      {{ end }}
     </picture>
     {{ with $credit }}
       <figcaption class="is-clearfix is-size-7 ">
