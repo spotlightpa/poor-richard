@@ -1,15 +1,6 @@
-{{ $byline := "" }}
-{{ with .Param "authors" }}
-   {{ $byline = delimit . ", " " and " | printf "By %s" }}
-{{ end }}
-{{ with .Param "byline" }}
-   {{ $byline = . }}
-{{ end }}
+{{ $params := partial "page-params" .Page }}
 
-{{ $kicker := .Param "kicker" }}
-{{ $showTitle := .Param "suppress-title" | not }}
-
-{{ if $showTitle }}
+{{ if $params.showTitle }}
   <section class="section is-top">
     <div class="columns is-centered">
       <div class="column is-three-fifths">
@@ -22,10 +13,10 @@
             </div>
             <div class="level-right">
               <div class="level-item">
-                {{ if $kicker }}
+                {{ if $params.kicker }}
                   <p
-                    class="tag is-warning is-uppercase has-text-weight-bold block"
-                  >{{ $kicker }}</p>
+                    class="tag is-square is-warning is-uppercase has-text-weight-bold block"
+                  >{{ $params.kicker }}</p>
                 {{ else }}
                   {{ partial "breadcrumbs.html" . }}
                 {{ end }}
@@ -77,24 +68,23 @@
   {{ $imgOpts | partial "image-block.html" }}
 {{ end }}
 
-<section class="section {{ if $showTitle }}is-bottom{{ end }}">
+<section class="section {{ if $params.showTitle }}is-bottom{{ end }}">
   <div class="columns is-centered">
     <article class="column is-three-fifths">
-      {{ if or $byline .PublishDate | and $showTitle }}
+      {{ if $params.hasContentHeader }}
         <header class="block">
-          {{ with $byline }}
+          {{ with $params.byline }}
             <h3 class="is-size-6 has-text-weight-bold">
-              {{ $byline }}
+              {{ $params.byline }}
             </h3>
           {{ end }}
 
-          {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-          {{ with .PublishDate }}
+          {{ if $params.published }}
             <time
-              datetime='{{ .Local.Format $isoFormat }}'
+              datetime='{{ $params.publishedISO }}'
               class="is-size-7"
              >
-              {{ .Format "Monday, January 2, 2006" }}
+              {{ $params.published }}
              </time>
           {{ end }}
         </header>
