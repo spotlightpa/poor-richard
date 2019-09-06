@@ -2,12 +2,14 @@
 hero-image = "/img/uploads/mountains.jpeg"
 hero-image-credit = "Carl Johnson / Spotlight PA © 2004"
 hero-image-description = "Snow covered Mount Taté"
-title = "Did Villanova make the right call when sending an unfounded ‘active shooter’ alert? It’s a question many colleges face lately."
+title = "Did Villanova make the right call when sending an unfounded ‘active shooter’ alert?"
+subtitle = "It’s a question many colleges face lately."
 kicker = "Crime"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
 published = 2019-09-05T00:00:00.000Z
 authors = ["Liz Navratil"]
 draft = true
+featured = true
 +++
 
 There’s nothing short of a crisis in our state capital.
