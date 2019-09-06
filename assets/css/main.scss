@@ -266,3 +266,12 @@ a.navbar-burger:hover {
 .v-middle {
   vertical-align: middle;
 }
+
+.max-50 {
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 50vw;
+  }
+}
