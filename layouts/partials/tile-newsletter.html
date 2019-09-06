@@ -3,7 +3,7 @@
 {{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
 
 <form
-  class="has-text-centered"
+  class="has-text-centered max-50"
   action="/thanks/"
   method="post"
   name="signup-newsletters"
@@ -24,7 +24,8 @@
     </span>
   </h2>
   <h3 class="subtitle is-6 is-italic">
-    Receive exclusive, behind-the-scenes looks at our work <br>
+    Receive exclusive, behind-the-scenes looks at our work
+    <span class="is-hidden-touch"><br></span>
     and a weekly roundup of the best journalism from across Pa.
   </h3>
   <div class="field has-addons">
