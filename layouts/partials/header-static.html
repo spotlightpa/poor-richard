@@ -1,0 +1,19 @@
+<!-- header tags that are the same on all pages -->
+
+{{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
+{{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+{{ if .Site.IsServer }}
+  <script src="http://localhost:1234/main.js"></script>
+{{ else }}
+  {{ $js := resources.Get "js/main.js" }}
+  <script>{{ $js.Content|safeJS }}</script>
+{{ end }}
+
+{{ range slice "500" "900" "regular" }}
+  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
+{{ end }}
+
+{{ template "_internal/google_analytics_async.html" . }}
+
