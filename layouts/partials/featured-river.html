@@ -1,0 +1,66 @@
+{{ $features := where .Site.RegularPages ".Params.featured" true }}
+{{ $news := .Site.GetPage "/news/_index.md" }}
+{{ $pages := $news.RegularPages | complement (first 1 $features) }}
+<section class="section">
+  <div class="container is-widescreen">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        {{ if len $features | lt 0 }}
+          {{ partial "tile-featured.html" $features }}
+        {{ end }}
+        <div class="tile">
+          {{ range $page := first 3 $pages }}
+            <div class="tile is-parent is-4">
+              <div class="tile is-child">
+                {{ partial "tile-stack.html" $page }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+        <div class="tile">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              {{ partial "tile-newsletter.html" . }}
+            </div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile is-parent is-top">
+            <div class="tile is-child">
+              <h2 class="title is-3 has-text-centered has-text-weight-bold">
+                More top stories
+              </h2>
+              <hr class="is-emphatic-underline has-margin-top-negative">
+            </div>
+          </div>
+        </div>
+        {{ range $page := after 3 $pages | first 5 }}
+          <div class="tile">
+            {{ partial "tile-horiz.html" $page }}
+          </div>
+        {{ end }}
+        <div class="tile">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <h2 class="title has-text-centered has-text-weight-bold">
+                Who We Are
+              </h2>
+              <hr class="is-emphatic-underline has-margin-top-negative">
+              <div class="level">
+                <div class="level-item promo">
+                  {{ dict "title" "Meet the team" "svg" "covering" "url" "/about/staff/" | partial "tile-promo.html" }}
+                </div>
+                <div class="level-item promo">
+                  {{ dict "title" "Send a tip" "svg" "stop" "url" "/tips/" | partial "tile-promo.html" }}
+                </div>
+                <div class="level-item promo">
+                  {{ dict "title" "Support fearless journalism" "svg" "support" "url" "/donate/" | partial "tile-promo.html" }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
