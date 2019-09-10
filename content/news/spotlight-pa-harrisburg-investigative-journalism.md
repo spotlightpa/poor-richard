@@ -5,7 +5,8 @@ kicker = "Your Team"
 published = 2019-08-29T00:00:00.000Z
 authors = ["Christopher Baxter"]
 aliases = [
-"/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/"
+"/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/",
+"/news/2019/08/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/"
 ]
 +++
 

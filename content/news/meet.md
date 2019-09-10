@@ -7,6 +7,9 @@ hero-image-credit = "Courtesy Philadelphia Inquirer"
 hero-image-description = "Man walks in front of Pennsylvania state house"
 hero-image-size = "inline"
 authors = ["Christopher Baxter"]
+aliases = [
+    "/news/2019/meet-the-team-of-reporters-watching-out-for-you-in-the-state-capital/"
+]
 +++
 
 Spotlight PA’s team of investigative reporters will [cover the state government and urgent statewide issues like never before](https://www.spotlightpa.org/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/), digging in hard on everything from health to the State Police to environment and more.
