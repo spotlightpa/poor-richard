@@ -37,12 +37,12 @@ $size-7: 0.85rem;
 
 $weight-light: 400;
 $weight-normal: 500;
-$weight-medium: 500;
-$weight-semibold: 600;
+$weight-medium: 600;
+$weight-semibold: 800;
 $weight-bold: 900;
 $family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
 
-$title-weight: $weight-bold;
+$title-weight: $weight-semibold;
 
 @import "fonts.scss";
 @import "bulma.sass";
@@ -103,9 +103,17 @@ body {
 }
 
 .is-emphatic-underline {
-  border-bottom: 4px solid $primary;
-  margin: 0.75rem auto 1.5rem;
-  max-width: 200px;
+  border-bottom-size: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: $black;
+
+  &.is-primary {
+    border-bottom-color: $primary;
+  }
+}
+
+.is-emphatic-underline {
+  border-bottom: 4px solid black;
 }
 
 .icon svg {
@@ -230,20 +238,37 @@ a.navbar-burger:hover {
   list-style: inside square;
 }
 
-.has-margin-top {
-  margin-top: 1.5rem;
-}
-
-.has-margin-bottom {
-  margin-bottom: 1.5rem;
+.is-margin-centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .has-margin-top-thin {
   margin-top: 0.5rem;
 }
 
+.has-margin-top {
+  margin-top: 1.5rem;
+}
+
+.has-margin-top-medium {
+  margin-top: 0.75rem;
+}
+
+.has-margin-top-thick {
+  margin-top: 3rem;
+}
+
 .has-margin-top-negative {
   margin-top: $subtitle-negative-margin;
+}
+
+.has-margin-top-negative-medium {
+  margin-top: $subtitle-negative-margin + 0.55rem;
+}
+
+.has-margin-bottom {
+  margin-bottom: 1.5rem;
 }
 
 .has-margin-bottom-thin {
@@ -252,7 +277,15 @@ a.navbar-burger:hover {
 
 .tag {
   &.is-square {
-    border-radius: 2px;
+    border-radius: 0;
+  }
+
+  &.is-outline {
+    background-color: $white;
+    border-color: $black;
+    border-style: solid;
+    border-width: 2px;
+    color: $black;
   }
 }
 
@@ -267,6 +300,10 @@ a.navbar-burger:hover {
   vertical-align: middle;
 }
 
+.max-12r {
+  max-width: 12rem;
+}
+
 .max-50 {
   margin: 0 auto;
   width: 100%;
@@ -274,4 +311,12 @@ a.navbar-burger:hover {
   @media screen and (min-width: $tablet) {
     max-width: 50vw;
   }
+}
+
+.is-single-spaced {
+  line-height: 1.25;
+}
+
+.is-size-8 {
+  font-size: 0.625rem !important;
 }

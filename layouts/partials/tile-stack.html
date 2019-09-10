@@ -1,7 +1,7 @@
 {{ $params := partial "page-params.html" .Page }}
 
 <article>
-  <h3 class="tag is-square is-primary is-uppercase has-text-weight-bold has-margin-bottom-thin">
+  <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin">
     {{ $params.kicker | default "News" }}
   </h3>
 
@@ -12,12 +12,12 @@
   {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
   {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
   {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
-  {{ $imgOpts = dict "widthRatio" 5 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 4 | merge $imgOpts }}
+  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
   {{ partial "image-block.html" $imgOpts }}
 
-  <h1 class="title is-5 is-spaced">
+  <h1 class="title is-5 is-spaced has-margin-top-thin">
     <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
       {{ .LinkTitle }}
     </a>
@@ -25,7 +25,7 @@
   {{ if $params.byline }}
     <h3 class="subtitle has-margin-top-negative is-6 has-text-weight-normal">
       <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
-        {{ $params.byline }}
+        by {{ $params.byline }}
       </a>
     </h3>
   {{ end }}
