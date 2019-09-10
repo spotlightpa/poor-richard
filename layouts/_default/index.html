@@ -1,7 +1,5 @@
-{{ define "before-main" }}
-  {{ if .Param "featured" }}
-    {{ partial "featured-river.html" . }}
-  {{ else }}
-      {{ partial "about.html" . }}
-  {{ end }}
+{{ define "main" }}
+  {{ partial "featured-river.html" . }}
 {{ end }}
+
+{{ define "promo" }}<!-- noop -->{{ end }}
