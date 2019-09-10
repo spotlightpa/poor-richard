@@ -13,7 +13,7 @@
 {{ $params := dict "byline" $byline "kicker" $kicker "showTitle" $showTitle }}
 
 {{ with .PublishDate }}
-  {{ $pub := .Local.Format "Monday, January 2, 2006" }}
+  {{ $pub := .Local.Format "Jan 2, 2006" }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
   {{ $iso := .Format $isoFormat }}
   {{ $params = dict "published" $pub "publishedISO" $iso | merge $params }}

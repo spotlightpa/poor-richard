@@ -3,7 +3,16 @@
 
 <div class="tile is-parent is-top">
   <div class="tile is-child">
-    <span class="tag is-square has-margin-bottom-thin is-primary is-uppercase has-text-weight-bold">{{ $featuredParams.kicker | default "News" }}</span>
+    <div class="has-margin-bottom-thin">
+      <span class="tags has-addons">
+        <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
+          Top News <!-- TODO: Admin -->
+        </span>
+        <span class="tag is-square is-outline is-uppercase has-text-weight-semibold">
+          {{ $featuredParams.kicker | default "News" }}
+        </span>
+      </span>
+    </div>
   </div>
 </div>
 
@@ -26,33 +35,29 @@
   </div>
   <div class="tile is-parent">
     <article class="tile is-child">
-      <h1 class="title is-spaced">
+      <h1 class="title is-spaced has-margin-top-thin">
         <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
           {{ $featured.LinkTitle }}
         </a>
       </h1>
       {{ if $featured.Params.subtitle }}
         <h2 class="subtitle is-5 has-margin-top-negative">
-          <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
-            {{ $featured.Params.subtitle }}
-          </a>
+          {{ $featured.Params.subtitle }}
         </h2>
       {{ end }}
       {{ if $featuredParams.byline }}
         <h3 class="subtitle has-margin-top-negative is-6 has-text-weight-normal">
-          <a href="{{ $featured.RelPermalink }}" class="has-text-dark hover-underline">
-            {{ $featuredParams.byline }}
+          <a
+            href="{{ $featured.RelPermalink }}"
+            class="has-text-grey hover-underline"
+          >by {{ $featuredParams.byline }}
           </a>
         </h3>
       {{ end }}
-      {{ if $featuredParams.published }}
-      <h3 class="subtitle has-margin-top-negative is-6">
-        <time
-          datetime='{{ $featuredParams.publishedISO }}'
-        >
-          {{ $featuredParams.published }}
-        </time>
-      </h3>
+      {{ if $featured.Params.description }}
+        <h2 class="subtitle is-5 has-margin-top-negative">
+          {{ $featured.Params.description }}
+        </h2>
       {{ end }}
       {{ if gt (len .) 1 }}
         <ul class="is-size-6 related">

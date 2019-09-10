@@ -78,8 +78,14 @@ yaml-definitions: &page-fields
     required: false
   - label: Link to as
     name: linktitle
-    hint: "When linking to this page from another page, use this as the page name"
+    hint: "When linking to this page from another page, use this as the link title"
     widget: string
+    required: false
+  - label: Feature on homepage
+    name: featured
+    widget: boolean
+    hint: "Add to top area of homepage"
+    default: true
     required: false
   - label: "Suppress title"
     name: suppress-title

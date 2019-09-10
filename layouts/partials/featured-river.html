@@ -2,32 +2,32 @@
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $pages := $news.RegularPages | complement (first 1 $features) }}
 <section class="section">
-  <div class="container is-widescreen">
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical">
-        {{ if len $features | lt 0 }}
-          {{ partial "tile-featured.html" $features }}
-        {{ end }}
-        <div class="tile">
-          {{ range $page := first 3 $pages }}
-            <div class="tile is-parent is-4">
-              <div class="tile is-child">
-                {{ partial "tile-stack.html" $page }}
-              </div>
-            </div>
-          {{ end }}
-        </div>
-        <div class="tile">
-          <div class="tile is-parent">
+  <div class="container">
+    <div class="tile is-ancestor is-vertical">
+      {{ if gt (len $features) 0 }}
+        {{ partial "tile-featured.html" $features }}
+      {{ end }}
+      <div class="tile">
+        {{ range $page := first 3 $pages }}
+          <div class="tile is-parent is-4 has-margin-top-negative">
             <div class="tile is-child">
-              {{ partial "tile-newsletter.html" . }}
+              {{ partial "tile-stack.html" $page }}
             </div>
           </div>
+        {{ end }}
+      </div>
+      <div class="tile">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            {{ partial "tile-newsletter.html" . }}
+          </div>
         </div>
+      </div>
+      {{ if gt (len $pages) 3 }}
         <div class="tile">
-          <div class="tile is-parent is-top">
+          <div class="tile is-parent is-top is-8">
             <div class="tile is-child">
-              <h2 class="title is-3 has-text-centered has-text-weight-bold">
+              <h2 class="title is-5 is-uppercase has-text-weight-semibold">
                 More top stories
               </h2>
               <hr class="is-emphatic-underline has-margin-top-negative">
@@ -35,32 +35,26 @@
           </div>
         </div>
         {{ range $page := after 3 $pages | first 5 }}
-          <div class="tile">
+          <div class="tile is-bottom">
             {{ partial "tile-horiz.html" $page }}
           </div>
         {{ end }}
+      {{ end }}
+      <div class="tile">
+        {{ partial "tile-promos.html" . }}
+      </div>
+      {{ if gt (len $pages) 8 }}
         <div class="tile">
           <div class="tile is-parent">
-            <div class="tile is-child">
-              <h2 class="title has-text-centered has-text-weight-bold">
-                Who We Are
-              </h2>
-              <hr class="is-emphatic-underline has-margin-top-negative">
-              <div class="level">
-                <div class="level-item promo">
-                  {{ dict "title" "Meet the team" "svg" "covering" "url" "/about/staff/" | partial "tile-promo.html" }}
-                </div>
-                <div class="level-item promo">
-                  {{ dict "title" "Send a tip" "svg" "stop" "url" "/tips/" | partial "tile-promo.html" }}
-                </div>
-                <div class="level-item promo">
-                  {{ dict "title" "Support fearless journalism" "svg" "support" "url" "/donate/" | partial "tile-promo.html" }}
-                </div>
-              </div>
+            <div class="tile is-child has-text-centered">
+              <a
+                href="/news/"
+                class="button is-primary is-medium is-uppercase"
+              >Read More</a>
             </div>
           </div>
         </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
