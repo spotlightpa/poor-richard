@@ -12,8 +12,14 @@ NODE_ENV = "production"
 [context.deploy-preview]
 command = "yarn build:stage"
 
+[context.deploy-preview.processing]
+skip_processing = true
+
 [context.branch-deploy]
 command = "yarn build:stage"
+
+[context.branch-deploy.processing]
+skip_processing = true
 
 [[headers]]
 for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
