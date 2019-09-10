@@ -228,6 +228,16 @@ a.navbar-burger:hover {
     padding-top: 0;
     margin-top: -$tile-spacing;
   }
+  &.is-top-tablet {
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 0;
+    }
+  }
+  &.is-bottom-tablet {
+    @media screen and (max-width: $tablet) {
+      padding-top: 0;
+    }
+  }
 }
 
 .hover-underline:hover {
@@ -245,6 +255,12 @@ a.navbar-burger:hover {
 
 .has-margin-top-thin {
   margin-top: 0.5rem;
+}
+
+.has-margin-top-thin-tablet {
+  @media screen and (max-width: $tablet) {
+    margin-top: 0.5rem;
+  }
 }
 
 .has-margin-top {

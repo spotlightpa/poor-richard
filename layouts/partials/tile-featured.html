@@ -28,12 +28,12 @@
 {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
 
 <div class="tile is-bottom">
-  <div class="tile is-parent is-6">
+  <div class="tile is-parent is-6 is-top-tablet">
     <article class="tile is-child">
         {{ partial "image-block.html" $imgOpts }}
     </article>
   </div>
-  <div class="tile is-parent">
+  <div class="tile is-parent is-bottom-tablet">
     <article class="tile is-child">
       <h1 class="title is-spaced has-margin-top-thin">
         <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
