@@ -13,7 +13,7 @@
   </div>
   {{ end }}
   <div class="tile is-bottom">
-    <div class="tile is-parent is-3">
+    <div class="tile is-parent is-3 is-top-tablet">
       <div class="tile is-child">
         {{ $heroName := .Page.Param "hero-image" }}
         {{ $heroCredit := .Page.Param "hero-image-credit" }}
@@ -29,9 +29,9 @@
       </div>
     </div>
 
-    <div class="tile is-parent is-5">
+    <div class="tile is-parent is-5 is-bottom-tablet">
       <div class="tile is-child">
-        <h1 class="title is-spaced is-size-5">
+        <h1 class="title is-spaced is-size-5 has-margin-top-thin-tablet">
           <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
             {{ .LinkTitle }}
           </a>
