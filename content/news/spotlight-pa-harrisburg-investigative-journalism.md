@@ -1,4 +1,8 @@
 +++
+hero-image = "img/uploads/unrivaled.jpg"
+hero-image-credit = "Courtesy Philadelphia Inquirer"
+hero-image-description = "Pennsylvania state capitol"
+hero-image-size = "hidden"
 title = "Spotlight PA: Unrivaled team of investigative reporters to hold the powerful to account in Pa. capital"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
 kicker = "Your Team"
