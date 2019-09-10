@@ -28,6 +28,11 @@ googleAnalytics = "UA-141126362-1"
     baseName = "feed"
     isPlainText = true
 
+[outputFormats.jsonfeedsummary]
+    mediaType = "application/json"
+    baseName = "feed-summary"
+    isPlainText = true
+
 [outputFormats.redirects]
 mediatype = "text/netlify"
 baseName = "_redirects"
@@ -36,7 +41,7 @@ notAlternative = true
 
 [outputs]
     home = ["html", "jsonfeed", "rss", "redirects"]
-    section = ["html", "jsonfeed", "rss"]
+    section = ["html", "jsonfeed", "jsonfeedsummary", "rss"]
 
 [params]
     title = "Spotlight PA"
