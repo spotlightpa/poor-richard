@@ -26,7 +26,7 @@ But the rollout of that system, now estimated at $10 million, has taken longer t
 
 “We’re not doing what we can,” she said.
 
-_**» DONATE NOW:**_ _If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing, support our reporters and become a Founding Donor._
+_**» DONATE NOW:**_ _If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing,_ [_support our reporters and become a Founding Donor_](https://www.spotlightpa.org/donate)_._
 
 Last year, a review of all licensing boards ordered by Gov. Tom Wolf found that the nursing board’s initial processing time averaged 17 days. But when pressed this month, acting Secretary of State Kathy Boockvar, who oversees the boards, told Spotlight PA she has “no confidence” in that number.
 
