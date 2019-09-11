@@ -4,8 +4,9 @@ description = "A review of all licensing boards ordered by Gov. Tom Wolf found t
 kicker = "Health"
 published = 2019-09-11T09:17:34.226Z
 hero-image = "img/uploads/nurse.jpeg"
-hero-image-credit = "Courtesy Darrell Sapp, Philadelphia Inquirer"
+hero-image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
 hero-image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
+slug = "pa-nurses-are-fed-up-with-hold-times-rude-answers-and-delays-dealing-with-state-licensing-board"
 authors = ["Sara Simon"]
 +++
 
