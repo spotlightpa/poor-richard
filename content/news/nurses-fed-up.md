@@ -1,16 +1,15 @@
 +++
+hero-image = "img/uploads/nurse.jpeg"
+hero-image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
+hero-image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
+published = 2019-09-11T09:17:34.226Z
+authors = ["Sara Simon"]
 title = "Pa. nurses are fed up with hold times, rude answers, and delays dealing with state licensing board"
 description = "A review of all licensing boards ordered by Gov. Tom Wolf found that the nursing board’s initial processing time averaged 17 days. But when pressed, acting Secretary of State Kathy Boockvar said she has “no confidence” in that number."
 kicker = "Health"
-published = 2019-09-11T09:17:34.226Z
-hero-image = "img/uploads/nurse.jpeg"
-hero-image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
-hero-image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
-slug = "pa-nurses-are-fed-up-with-hold-times-rude-answers-and-delays-dealing-with-state-licensing-board"
-authors = ["Sara Simon"]
 featured = true
+slug = "pa-nurses-are-fed-up-with-hold-times-rude-answers-and-delays-dealing-with-state-licensing-board"
 +++
-
 HARRISBURG — Nicole Hatem thought she was in a good spot when she graduated from Philadelphia’s Jefferson College of Nursing in May. She had landed a job offer to be a staff nurse at Thomas Jefferson University Hospital and was slated to start in July. All she needed to do was pass her license exam.
 
 To register for it, Hatem, 27, needed to go through the Pennsylvania Board of Nursing. She said she submitted her application May 24. The calendar changed to June, then July. Local testing centers began reaching capacity. She began to call the board almost daily. Hold times were about an hour, she said, and responses were flippant. They told her to wait and stop wasting their time with her calls.
@@ -47,10 +46,6 @@ But she said there were clear signs of progress. Preliminary data on this year�
 
 “All the trends are positive,” Boockvar said.
 
-Darrell Sapp
-
-Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response.
-
 Members of the nursing board did not respond to requests for comment. Ian Harlow, who ran the Bureau of Professional and Occupational Affairs at the time the new system was first implemented, declined comment. Harlow is now deputy secretary for regulatory programs.
 
 The governor’s spokesman, J.J. Abbott, said in a statement: “Discrepancies and data concerns such as this are one of the many reasons the department undertook the major effort of replacing the prior system.”
@@ -76,4 +71,3 @@ Nicholas Caruso, a nurse practitioner, said he recently moved from Monroeville i
 Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, said she has to file for a license every time she wants to work alongside a new physician. She most recently filed in July. When Narbey called the Board of Nursing last week, she said, she waited on hold for a half hour.
 
 Narbey’s business with the board hasn’t yet been integrated into the new electronic system, meaning she had to mail in paper forms for approval. She has yet to receive a reply — or her new license.
-
