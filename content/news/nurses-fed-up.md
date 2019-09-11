@@ -26,7 +26,7 @@ But the rollout of that system, now estimated at $10 million, has taken longer t
 
 “We’re not doing what we can,” she said.
 
-{{<promo>}}
+_**» DONATE NOW:**_ _If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing, support our reporters and become a Founding Donor._
 
 Last year, a review of all licensing boards ordered by Gov. Tom Wolf found that the nursing board’s initial processing time averaged 17 days. But when pressed this month, acting Secretary of State Kathy Boockvar, who oversees the boards, told Spotlight PA she has “no confidence” in that number.
 
@@ -41,6 +41,8 @@ By comparison, that same first phase in New Jersey takes eight days, and in Ohio
 Boockvar, who has worked in nonprofit health-care administration and was previously responsible for staffing nurses, said she was not surprised by people’s experiences with the delays.
 
 “I have to admit, I did find the Board of Nursing very frustrating from the outside world,” she said.
+
+{{<promo>}}
 
 But she said there were clear signs of progress. Preliminary data on this year’s processing times show improvement, she said, and she is optimistic that will continue. She added that in April, she hired a new director of operations specifically tasked with identifying the causes of delays across all boards.
 
