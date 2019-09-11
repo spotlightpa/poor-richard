@@ -8,7 +8,7 @@ description = "The executive’s departure comes as the perennially struggling N
 published = 2019-09-05T00:00:00.000Z
 authors = ["Liz Navratil"]
 draft = true
-featured = true
+featured = false
 +++
 
 There’s nothing short of a crisis in our state capital.

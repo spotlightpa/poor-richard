@@ -8,6 +8,7 @@ hero-image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
 hero-image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
 slug = "pa-nurses-are-fed-up-with-hold-times-rude-answers-and-delays-dealing-with-state-licensing-board"
 authors = ["Sara Simon"]
+featured = true
 +++
 
 HARRISBURG — Nicole Hatem thought she was in a good spot when she graduated from Philadelphia’s Jefferson College of Nursing in May. She had landed a job offer to be a staff nurse at Thomas Jefferson University Hospital and was slated to start in July. All she needed to do was pass her license exam.
