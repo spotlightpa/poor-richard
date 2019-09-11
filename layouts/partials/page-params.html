@@ -19,8 +19,4 @@
   {{ $params = dict "published" $pub "publishedISO" $iso | merge $params }}
 {{ end }}
 
-{{ $hasContentHeader := or $byline .PublishDate | and $showTitle }}
-
-{{ $params = dict "hasContentHeader" $hasContentHeader | merge $params }}
-
 {{ return $params }}
