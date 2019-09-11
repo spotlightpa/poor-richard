@@ -4,7 +4,7 @@ title = "Transparency statement"
 description = "Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting."
 url = "/support/"
 +++
-Spotlight PA is a nonpartisan, independent newsroom paid for by grants from community foundations and individuals committed to robust investigative reporting. Now more than ever, the health of our state and democracy depends on strong accountability journalism. Our newsroom provides the time and resources necessary to do investigative work that drives change.
+Spotlight PA is a nonpartisan, independent newsroom paid for by grants from foundations and donations from individuals committed to robust investigative reporting. Now more than ever, the health of our state and democracy depends on strong accountability journalism. Our newsroom provides the time and resources necessary to do investigative work that drives change.
 
 Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership. In short, we answer to you, the public.
 
