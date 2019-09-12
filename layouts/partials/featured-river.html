@@ -2,7 +2,7 @@
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $pages := $news.RegularPages | complement (first 1 $features) }}
 <section class="section">
-  <div class="container">
+  <div class="container-hp">
     <div class="tile is-ancestor is-vertical">
       {{ if gt (len $features) 0 }}
         {{ partial "tile-featured.html" $features }}
