@@ -63,6 +63,11 @@ yaml-definitions: &page-fields
   - label: Description
     name: description
     widget: string
+  - label: Dek
+    name: Dek
+    hint: "Summary to appear in article rivers, defaults to description if blank"
+    widget: string
+    required: false
   - label: Kicker
     name: kicker
     hint: "Small text appearing above the page headline, e.g. Health"
