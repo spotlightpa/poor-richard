@@ -65,34 +65,46 @@ url = "/press-releases/"
 weight = 5
 
 [[footer]]
+name = "News Archive"
+pre = "is-uppercase"
+url = "/news/"
+weight = 6
+
+[[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 6
+weight = 7
+
+[[about]]
+name = "About Us"
+pre = "is-uppercase"
+url = "/about/"
+weight = 1
 
 [[about]]
 name = "Our Mission"
 pre = "is-uppercase"
 url = "/about/mission/"
-weight = 1
+weight = 2
 
 [[about]]
 name = "Staff"
 pre = "is-uppercase"
 url = "/about/staff/"
-weight = 2
+weight = 3
 
 [[about]]
 name = "Diversity"
 pre = "is-uppercase"
 url = "/about/diversity/"
-weight = 3
+weight = 4
 
 [[about]]
 name = "FAQ"
 pre = ""
 url = "/about/faq/"
-weight = 4
+weight = 5
 
 [[social]]
 name = "Facebook"
