@@ -19,17 +19,17 @@
               </div>
             {{ end }}
             <div class="media-content">
-              <h2 class="title is-4">
+              <h2 class="title is-3">
                 <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
               </h2>
-              <h2 class="subtitle is-6">
+              <h2 class="subtitle is-5">
                 <a
                   class="has-text-dark"
                   href="{{ .RelPermalink }}"
                 >{{ .Param "subtitle" }}</a>
               </h2>
               <time
-                class="subtitle is-6"
+                class="subtitle is-5"
                 datetime='{{ .PublishDate.Local.Format $isoFormat }}'
               >
                 {{ .PublishDate.Format "Monday, January 2, 2006" }}
