@@ -41,12 +41,12 @@
         </a>
       </h1>
       {{ if $featured.Params.subtitle }}
-        <h2 class="subtitle is-4 has-margin-top-negative">
+        <h2 class="subtitle is-4 has-margin-top-negative-medium">
           {{ $featured.Params.subtitle }}
         </h2>
       {{ end }}
       {{ if $featuredParams.byline }}
-        <h3 class="subtitle has-margin-top-negative is-5 has-text-weight-normal">
+        <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
           <a
             href="{{ $featured.RelPermalink }}"
             class="has-text-grey hover-underline"
@@ -55,7 +55,7 @@
         </h3>
       {{ end }}
       {{ if $featuredParams.dek }}
-        <h2 class="subtitle is-4 has-margin-top-negative">
+        <h2 class="subtitle is-4 has-margin-top-negative-medium">
           {{ $featuredParams.dek }}
         </h2>
       {{ end }}
