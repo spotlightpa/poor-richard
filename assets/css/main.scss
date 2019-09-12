@@ -344,3 +344,14 @@ a.navbar-burger:hover {
   transform: translateX(-50%);
   width: 100vw;
 }
+
+.container-hp {
+  max-width: $fullhd - $container-offset;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
