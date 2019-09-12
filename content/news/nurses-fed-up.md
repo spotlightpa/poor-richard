@@ -7,7 +7,6 @@ authors = ["Sara Simon"]
 title = "Pa. nurses are fed up with hold times, rude answers, and delays dealing with state licensing board"
 description = "A review of all licensing boards ordered by Gov. Tom Wolf found that the nursing board’s initial processing time averaged 17 days. But when pressed, acting Secretary of State Kathy Boockvar said she has “no confidence” in that number."
 kicker = "Health"
-featured = true
 slug = "pa-nurses-are-fed-up-with-hold-times-rude-answers-and-delays-dealing-with-state-licensing-board"
 +++
 HARRISBURG — Nicole Hatem thought she was in a good spot when she graduated from Philadelphia’s Jefferson College of Nursing in May. She had landed a job offer to be a staff nurse at Thomas Jefferson University Hospital and was slated to start in July. All she needed to do was pass her license exam.
