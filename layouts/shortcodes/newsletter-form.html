@@ -4,51 +4,58 @@
 
 <section class="">
   <form
-    action="/thanks/"
+    action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
     method="post"
-    name="signup-newsletters"
-    netlify
-    netlify-honeypot="bot-field"
+    target="_blank"
   >
-    <p class="is-hidden">
+    <p class="is-hidden" aria-hidden="true">
       <label>
-        Don’t fill this out if you're human: <input name="bot-field">
+        Don’t fill this out if you're human:
+        <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
       </label>
     </p>
     <h2 class="title is-size-4">
       The Investigator
     </h2>
     <div class="field">
-      <label class="label" for="newsletter-name">Your Name</label>
+      <label class="label" for="newsletter-fname">First Name</label>
     </div>
     <div class="field">
-      <p class="control is-expanded has-icons-left has-icons-right">
+      <p class="control is-expanded">
         <input
-          id="newsletter-name"
+          id="newsletter-fname"
           class="input"
           type="text"
-          placeholder="Jane Doe"
-          name="name"
-          pattern="\w+\W*\w+"
+          placeholder="Jane"
+          name="FNAME"
           required
         >
-        <span class="icon is-left has-text-primary">
-          {{ $iconUser.Content|safeHTML }}
-        </span>
-        <span class="icon is-right validator-icon">
-          {{ $iconCheck.Content|safeHTML }}
-        </span>
       </p>
     </div>
     <div class="field">
-      <label class="label" for="newsletter-email">Your Email Address</label>
+      <label class="label" for="newsletter-lname">Last Name</label>
+    </div>
+    <div class="field">
+      <p class="control is-expanded">
+        <input
+          id="newsletter-lname"
+          class="input"
+          type="text"
+          placeholder="Doe"
+          name="LNAME"
+          required
+        >
+      </p>
+    </div>
+    <div class="field">
+      <label class="label" for="newsletter-email">Email Address</label>
       <p class="control is-expanded has-icons-left has-icons-right">
         <input
           id="newsletter-email"
           class="input"
           type="email"
           placeholder="janedoe@example.com"
-          name="email"
+          name="EMAIL"
           required
         >
         <span class="icon is-left has-text-primary">
