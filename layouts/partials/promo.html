@@ -17,15 +17,14 @@
         </div>
         <form
           class="column is-half-desktop"
-          action="/thanks/"
+          action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
           method="post"
-          name="signup-partial"
-          netlify
-          netlify-honeypot="bot-field"
+          target="_blank"
         >
-          <p class="is-hidden">
+          <p class="is-hidden" aria-hidden="true">
             <label>
-              Don’t fill this out if you're human: <input name="bot-field">
+              Don’t fill this out if you're human:
+              <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
             </label>
           </p>
           <h2 class="title is-size-5">
@@ -38,14 +37,26 @@
             Spotlight PA's free weekly newsletter.
           </h3>
           <div class="field">
-            <label class="is-sr-only" for="home-name">Name</label>
+            <label class="is-sr-only" for="home-name">First Name</label>
             <div class="control">
               <input
                 id="signup-name"
                 class="input is-small"
                 type="text"
-                name="name"
-                placeholder="Name"
+                name="FNAME"
+                placeholder="First Name"
+              >
+            </div>
+          </div>
+          <div class="field">
+            <label class="is-sr-only" for="home-name">Last Name</label>
+            <div class="control">
+              <input
+                id="signup-name"
+                class="input is-small"
+                type="text"
+                name="LNAME"
+                placeholder="Last Name"
               >
             </div>
           </div>
@@ -56,8 +67,8 @@
                 id="signup-email"
                 class="input is-small"
                 type="email"
-                name="email"
-                placeholder=" "
+                name="EMAIL"
+                placeholder="Email"
               >
               <span class="icon is-large is-left has-text-primary">
                 {{ $iconEmail.Content|safeHTML }}
