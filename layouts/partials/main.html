@@ -4,7 +4,7 @@
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
       {{ if $params.showTitle }}
-        <header>
+        <header class="block">
           {{ if $params.kicker }}
             <p
               class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
@@ -26,13 +26,13 @@
             {{ end }}
           </h1>
           {{ with .Param "subtitle" }}
-            <h2 class="subtitle is-size-4">
+            <h2 class="subtitle is-3">
               {{ . }}
             </h2>
           {{ end }}
 
           {{ with $params.byline }}
-            <h3 class="is-size-6 has-margin-top-negative-medium">
+            <h3 class="is-size-5 has-margin-top-negative-medium">
               <span class="has-text-weight-semibold">
                 by {{ $params.byline }}
               </span>
@@ -107,7 +107,7 @@
 
                 <div class="level-item">
                   <div>
-                    <h3 class="subtitle is-4 has-text-weight-semibold">
+                    <h3 class="subtitle is-3 has-text-weight-semibold">
                       {{ if $author }}
                       <a href="{{ $authorURL }}">
                         {{ $name }}
