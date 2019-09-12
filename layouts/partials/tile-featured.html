@@ -35,18 +35,18 @@
   </div>
   <div class="tile is-parent is-bottom-tablet">
     <article class="tile is-child">
-      <h1 class="title is-spaced has-margin-top-thin">
+      <h1 class="title is-spaced is-size-3-touch has-margin-top-thin">
         <a href="{{ $featured.RelPermalink }}" class="has-text-black hover-underline">
           {{ $featured.LinkTitle }}
         </a>
       </h1>
       {{ if $featured.Params.subtitle }}
-        <h2 class="subtitle is-4 has-margin-top-negative-medium">
+        <h2 class="subtitle is-5 is-size-4-mobile is-size-4-widescreen has-margin-top-negative-medium">
           {{ $featured.Params.subtitle }}
         </h2>
       {{ end }}
       {{ if $featuredParams.byline }}
-        <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+        <h3 class="subtitle has-margin-top-negative-medium is-6 is-size-5-mobile is-size-5-widescreen has-text-weight-normal">
           <a
             href="{{ $featured.RelPermalink }}"
             class="has-text-grey hover-underline"
@@ -55,7 +55,7 @@
         </h3>
       {{ end }}
       {{ if $featuredParams.dek }}
-        <h2 class="subtitle is-4 has-margin-top-negative-medium">
+        <h2 class="subtitle is-5 is-size-4-mobile is-size-4-widescreen has-margin-top-negative-medium">
           {{ $featuredParams.dek }}
         </h2>
       {{ end }}
