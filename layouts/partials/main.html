@@ -1,9 +1,9 @@
 {{ $params := partial "page-params" .Page }}
 
-{{ if $params.showTitle }}
-  <section class="section is-top">
-    <div class="columns is-centered">
-      <div class="column is-three-fifths">
+<section class="section">
+  <article class="columns is-centered is-multiline">
+    <div class="column is-three-fifths">
+      {{ if $params.showTitle }}
         <header>
           {{ if $params.kicker }}
             <p
@@ -40,50 +40,39 @@
                 |
                 <time
                   datetime='{{ $params.publishedISO }}'
-                  class="is-size-7"
+                  class="is-size-6"
                 >{{ $params.published }}</time>
               {{ end }}
             </h3>
           {{ end }}
 
-          <div class="has-margin-top">
+          <div class="has-margin-top has-margin-bottom">
             {{ partial "social-buttons.html" . }}
           </div>
         </header>
-      </div>
-    </div>
-  </section>
-{{ end }}
+      {{ end }}
 
-{{ $heroName := .Page.Param "hero-image" }}
-{{ $heroCredit := .Page.Param "hero-image-credit" }}
-{{ $heroDescription := .Page.Param "hero-image-description" }}
-{{ $imgOpts := dict "imagePath" $heroName }}
-{{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
-{{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
-{{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
-{{ $size := .Param "hero-image-size" | default "inline" }}
-{{ if eq $size "inline" }}
-  {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
-  {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-  <section class="section is-top is-bottom">
-    <div class="columns is-centered">
-          <div class="column is-three-fifths has-margin-top-thin">
-            {{ $imgOpts | partial "image-block.html" }}
-          </div>
-    </div>
-  </section>
-{{ else if eq $size "full" }}
-  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "has-margin-top-thin" | merge $imgOpts }}
-  {{ $imgOpts | partial "image-block.html" }}
-{{ end }}
+      {{ $heroName := .Page.Param "hero-image" }}
+      {{ $heroCredit := .Page.Param "hero-image-credit" }}
+      {{ $heroDescription := .Page.Param "hero-image-description" }}
+      {{ $imgOpts := dict "imagePath" $heroName }}
+      {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
+      {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+      {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
+      {{ $size := .Param "hero-image-size" | default "inline" }}
+      {{ if eq $size "inline" }}
+        {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
+        {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
+        {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
+        {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+      {{ else if eq $size "full" }}
+        {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+        {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
+        {{ $imgOpts = dict "figClass" "is-full-bleed has-margin-bottom" | merge $imgOpts }}
+      {{ end }}
 
-<section class="section {{ if $params.showTitle }}is-bottom{{ end }}">
-  <div class="columns is-centered">
-    <article class="column is-three-fifths">
+      {{ $imgOpts | partial "image-block.html" }}
+
 
       <div class="content">
         {{ .Content }}
@@ -141,6 +130,6 @@
           {{ end }}
         </footer>
       {{ end }}
-    </article>
-  </div>
+    </div>
+  </article>
 </section>

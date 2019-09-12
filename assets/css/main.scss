@@ -33,7 +33,7 @@ $navbar-item-active-color: $white;
 $navbar-breakpoint: 1110px;
 
 $size-1: 3.5rem;
-$size-7: 0.85rem;
+$size-7: 0.625rem;
 
 $weight-light: 400;
 $weight-normal: 500;
@@ -329,6 +329,8 @@ a.navbar-burger:hover {
   line-height: 1.25;
 }
 
-.is-size-8 {
-  font-size: 0.625rem !important;
+.is-full-bleed {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
 }
