@@ -36,81 +36,83 @@ York County Community Foundation <br>
 
 ## Founding Donors
 
-Richard Abraham <br>
-Oscar Armas-Luy <br>
-Kathleen Baker <br>
-Whitney Baldwin <br>
-Chris Bastress <br>
-Mark Bazrod <br>
-Sigal Ben <br>
-L.J. Bernard <br>
-Rita Bernstein & Alan Zuckerman <br>
-Robert Joseph Biller <br>
-Jeffrey L. Braff <br>
-Joseph L. Carbo <br>
-Mireille Carigi <br>
-Carosella Sr. <br>
-Ashleigh Graf Casassa <br>
-Marguerite Chandler <br>
-John & Joy Burt Conti <br>
-Brett Cott <br>
-Karen Crosby <br>
-Barry DeSantis <br>
-Earl Drumheiser <br>
-Mary Erdman <br>
-B. Faulstick <br>
-Ryan Froman <br>
-Tamara Goldman <br>
-John F. Graybill <br>
-Frank Hadden <br>
-Robert Haines <br>
-B.A. Hamilton <br>
-Bob Hoover <br>
-Louise Horan <br>
-Avram Hornik <br>
-Stephen R. Hughes <br>
-Sharon Hyde <br>
-Annette E. Inker <br>
-Evelyn Ishmael <br>
-Arlene Jarett <br>
-Peter Johnstone <br>
-Karen M. Kaplan & Aaron M. Shatzman <br>
-J. Kauer & D. Fleece <br>
-Alan Kennedy <br>
-Cathy King <br>
-Steven Kuloszewski <br>
-Lora Lavin <br>
-Jamie Lemon & Steve Cline <br>
-Stephen J. Lipnichan <br>
-Daniel Lynch <br>
-Lelah Marie <br>
-William H. Maruca <br>
-Claudia C. McGill <br>
-K. Melton <br>
-Keith G. Melville <br>
-Jules J. Mermelstein <br>
-Lee Mooney <br>
-Ryan Morden <br>
-M. Noel <br>
-Marty O’Brien <br>
-Ronald Ozio <br>
-Leanora Paniccia <br>
-Amy L. Perez <br>
-Rick Piper <br>
-Ralph Riedel <br>
-David R. Ross <br>
-Benedict X. Saia <br>
-Kimberley Shore <br>
-Claudia H. Siegel <br>
-Josh Singer <br>
-Anthony Spisto <br>
-Thomas Stone <br>
-R. Thomas <br>
-Irene Tierney <br>
-M. Tillger <br>
-Joseph C. Vignola <br>
-Hannah Walsh <br>
-Karen Weaver <br>
-Koert Wehberg, Esq. <br>
-Margaret Wren <br>
-Sherley Young <br>
+{{<supporters-list>}}
+- Richard Abraham
+- Oscar Armas-Luy
+- Kathleen Baker
+- Whitney Baldwin
+- Chris Bastress
+- Mark Bazrod
+- Sigal Ben
+- L.J. Bernard
+- Rita Bernstein & Alan Zuckerman
+- Robert Joseph Biller
+- Jeffrey L. Braff
+- Joseph L. Carbo
+- Mireille Carigi
+- Carosella Sr.
+- Ashleigh Graf Casassa
+- Marguerite Chandler
+- John & Joy Burt Conti
+- Brett Cott
+- Karen Crosby
+- Barry DeSantis
+- Earl Drumheiser
+- Mary Erdman
+- B. Faulstick
+- Ryan Froman
+- Tamara Goldman
+- John F. Graybill
+- Frank Hadden
+- Robert Haines
+- B.A. Hamilton
+- Bob Hoover
+- Louise Horan
+- Avram Hornik
+- Stephen R. Hughes
+- Sharon Hyde
+- Annette E. Inker
+- Evelyn Ishmael
+- Arlene Jarett
+- Peter Johnstone
+- Karen M. Kaplan & Aaron M. Shatzman
+- J. Kauer & D. Fleece
+- Alan Kennedy
+- Cathy King
+- Steven Kuloszewski
+- Lora Lavin
+- Jamie Lemon & Steve Cline
+- Stephen J. Lipnichan
+- Daniel Lynch
+- Lelah Marie
+- William H. Maruca
+- Claudia C. McGill
+- K. Melton
+- Keith G. Melville
+- Jules J. Mermelstein
+- Lee Mooney
+- Ryan Morden
+- M. Noel
+- Marty O’Brien
+- Ronald Ozio
+- Leanora Paniccia
+- Amy L. Perez
+- Rick Piper
+- Ralph Riedel
+- David R. Ross
+- Benedict X. Saia
+- Kimberley Shore
+- Claudia H. Siegel
+- Josh Singer
+- Anthony Spisto
+- Thomas Stone
+- R. Thomas
+- Irene Tierney
+- M. Tillger
+- Joseph C. Vignola
+- Hannah Walsh
+- Karen Weaver
+- Koert Wehberg, Esq.
+- Margaret Wren
+- Sherley Young
+{{</supporters-list>}}
