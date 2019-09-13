@@ -3,8 +3,8 @@
 {{ range $p := .Site.Pages -}}
 {{ range .Aliases }}
 {{  . | printf "%-35s" }}   {{ $p.RelPermalink -}}
-{{ end -}}
-{{- end -}}
+{{ end }}
+{{- end }}
 ## Redirects
 {{ range .Site.Data.redirects.redirects -}}
 {{- $code := .code | default 301 -}}
