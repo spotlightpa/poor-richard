@@ -20,7 +20,7 @@ The trends track with academic research showing Republicans and Democrats in the
 
 “It’s not the way it used to be,” said former state Rep. Bob Godshall, a Republican from Montgomery County [who retired last year after 36 years in office](https://www.inquirer.com/philly/news/politics/state/pa-state-rep-bob-godshall-of-montco-to-retire-after-three-decades-20180118.html). When lawmakers went to Harrisburg for session in the beginning of his career “it was for a purpose,” Godshall said.
 
-_**» DONATE NOW:**_ _In-depth, data-driven journalism like this report on productivity in the state legislature takes enormous time and resources to produce._ [_Become a Founding Donor today and show your support_](https://www.spotlightpa.org/donate)_._
+_**» DONATE NOW:**_ _In-depth, data-driven journalism like this exclusive analysis of productivity in the legislature takes enormous time and resources to produce._ [_Become a Founding Donor today and show your support_](https://www.spotlightpa.org/donate)_._
 
 Legislative leaders and some outside experts caution there is only so much information to be gleaned by analyzing the number of bills, which speaks only to the amount of legislation and not its contents. For example, lawmakers sometimes forgo individual bills and instead tuck them into larger, omnibus measures. Or they could be focusing on more complex or higher-quality legislation, or spending more time helping constituents.
 
