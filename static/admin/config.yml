@@ -134,8 +134,6 @@ yaml-definitions: &page-fields
     widget: hidden
     required: false
 
-slug = "pa-state-legislators-among-the-highest-paid-in-us-but-theyre-doing-less-and-less-actual-lawmaking"
-
 collections:
   - label: Articles
     label_singular: Article
