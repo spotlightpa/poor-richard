@@ -349,7 +349,7 @@ a.navbar-burger:hover {
 .container-hp {
   max-width: $fullhd - $container-offset;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: auto;
