@@ -53,6 +53,11 @@ yaml-definitions: &page-fields
       label: Name
       hint: "Full name as listed in data profile"
       widget: string
+  - label: Byline
+    name: byline
+    hint: "If present, overrides the byline created from authors list"
+    widget: string
+    required: false
   - label: Title
     name: title
     widget: string
@@ -128,6 +133,8 @@ yaml-definitions: &page-fields
     name: type
     widget: hidden
     required: false
+
+slug = "pa-state-legislators-among-the-highest-paid-in-us-but-theyre-doing-less-and-less-actual-lawmaking"
 
 collections:
   - label: Articles

@@ -5,9 +5,11 @@ hero-image-credit = "Courtesy of PennLive"
 hero-image-size = "inline"
 published = 2019-09-13T13:00:00.000Z
 authors = ["Liz Navratil", "Jonathan Lai, Philadelphia Inquirer"]
+byline = "Liz Navratil, Spotlight PA & Jonathan Lai, Philadelphia Inquirer"
 title = "Pa. state legislators among the highest paid in U.S., but they’re doing less and less actual lawmaking"
 description = "The number of bills introduced or passed by the legislature has decreased dramatically in recent years, while the number of largely ceremonial resolutions has skyrocketed, according to an analysis by Spotlight PA and The Inquirer."
 kicker = "The Capitol"
+slug = "pa-state-legislators-among-the-highest-paid-in-us-but-theyre-doing-less-and-less-actual-lawmaking"
 featured = true
 +++
 HARRISBURG — Pennsylvania has the [largest full-time legislature in the nation](http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx) and its lawmakers are among the [highest-paid in the country](http://www.ncsl.org/research/about-state-legislatures/legislator-compensation-2018.aspx), yet, increasingly, they’re doing less and less actual lawmaking.
@@ -20,8 +22,11 @@ The trends track with academic research showing Republicans and Democrats in the
 
 “It’s not the way it used to be,” said former state Rep. Bob Godshall, a Republican from Montgomery County [who retired last year after 36 years in office](https://www.inquirer.com/philly/news/politics/state/pa-state-rep-bob-godshall-of-montco-to-retire-after-three-decades-20180118.html). When lawmakers went to Harrisburg for session in the beginning of his career “it was for a purpose,” Godshall said.
 
+<<<<<<< Updated upstream
 _**» DONATE NOW:**_ _In-depth, data-driven journalism like this exclusive analysis of productivity in the legislature takes enormous time and resources to produce._ [_Become a Founding Donor today and show your support_](https://www.spotlightpa.org/donate)_._
 
+=======
+>>>>>>> Stashed changes
 Legislative leaders and some outside experts caution there is only so much information to be gleaned by analyzing the number of bills, which speaks only to the amount of legislation and not its contents. For example, lawmakers sometimes forgo individual bills and instead tuck them into larger, omnibus measures. Or they could be focusing on more complex or higher-quality legislation, or spending more time helping constituents.
 
 “Just sheer volume of bills, whether introduced, voted, passed or signed does not tell the whole story,” said Mike Straub, a spokesman for House Republicans. “We believe the success of our chamber is not measured in bill volume, but in how our constituents respond to our members.”
@@ -81,7 +86,6 @@ In recent years, some lawmakers have floated the idea trimming their own ranks a
 Those efforts have failed.
 
 <!-- datawrapper resizer -->
-
 <script>
   window.addEventListener("message", function(a) {
     if (void 0 !== a.data["datawrapper-height"])
