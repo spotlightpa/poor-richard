@@ -1,17 +1,14 @@
 +++
 hero-image = "img/uploads/unrivaled.jpg"
-hero-image-credit = "Courtesy Philadelphia Inquirer"
 hero-image-description = "Pennsylvania state capitol"
+hero-image-credit = "Courtesy Philadelphia Inquirer"
 hero-image-size = "hidden"
+published = 2019-08-29T00:00:00.000Z
+authors = ["Christopher Baxter"]
 title = "Spotlight PA: Unrivaled team of investigative reporters to hold the powerful to account in Pa. capital"
 description = "The state’s top newspapers, websites, nonprofits, and universities come together to bring unparalleled watchdog journalism to Harrisburg."
 kicker = "Your Team"
-published = 2019-08-29T00:00:00.000Z
-authors = ["Christopher Baxter"]
-aliases = [
-"/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/",
-"/news/2019/08/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/"
-]
+aliases = ["/press-releases/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/", "/news/2019/spotlight-pa-unrivaled-team-of-investigative-reporters-to-hold-the-powerful-to-account-in-pa.-capital/"]
 +++
 
 There’s nothing short of a crisis in our state capital.
