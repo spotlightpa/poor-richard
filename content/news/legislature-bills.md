@@ -6,7 +6,7 @@ hero-image-size = "inline"
 published = 2019-09-13T13:00:00.000Z
 authors = ["Liz Navratil", "Jonathan Lai, Philadelphia Inquirer"]
 title = "Pa. state legislators among the highest paid in U.S., but they’re doing less and less actual lawmaking"
-description = "The number of bills introduced or passed by the legislature has decreased dramatically in recent years, while the number of largely ceremonial resolutions has skyrocketed."
+description = "The number of bills introduced or passed by the legislature has decreased dramatically in recent years, while the number of largely ceremonial resolutions has skyrocketed, according to an analysis by Spotlight PA and The Inquirer."
 kicker = "The Capitol"
 featured = true
 +++
