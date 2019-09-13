@@ -1,12 +1,13 @@
 # Netlify redirects. See https://www.netlify.com/docs/redirects/
 ## Aliases
 {{ range $p := .Site.Pages -}}
-{{ range .Aliases }}
-{{  . | printf "%-35s" }}   {{ $p.RelPermalink -}}
-{{ end }}
+    {{- range .Aliases -}}
+        {{-  printf "%-35s   %s\n" . $p.RelPermalink -}}
+    {{- end -}}
 {{- end }}
+
 ## Redirects
 {{ range .Site.Data.redirects.redirects -}}
-{{- $code := .code | default 301 -}}
-{{  printf "%-35s   %s  %d" .from .to $code }}
-{{- end -}}
+    {{- $code := .code | default 301 -}}
+    {{- printf "%-35s   %s  %d\n" .from .to $code -}}
+{{- end }}
