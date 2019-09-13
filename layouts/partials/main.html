@@ -17,7 +17,7 @@
             </div>
           {{ end }}
 
-          <h1 class="title is-2 is-spaced">
+          <h1 class="title is-2 is-size-3-touch is-spaced">
             {{ .Title }}
             {{ if .Draft }}
               <span class="tag is-warning is-uppercase">
@@ -26,7 +26,7 @@
             {{ end }}
           </h1>
           {{ with .Param "subtitle" }}
-            <h2 class="subtitle is-3">
+            <h2 class="subtitle is-3 has-margin-top-negative-medium">
               {{ . }}
             </h2>
           {{ end }}
