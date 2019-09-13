@@ -5,11 +5,11 @@ hero-image-credit = "Courtesy of PennLive"
 hero-image-size = "inline"
 published = 2019-09-13T13:00:00.000Z
 authors = ["Liz Navratil", "Jonathan Lai, Philadelphia Inquirer"]
-byline = "Liz Navratil, Spotlight PA & Jonathan Lai, Philadelphia Inquirer"
 title = "Pa. state legislators among the highest paid in U.S., but they’re doing less and less actual lawmaking"
 description = "The number of bills introduced in the legislature has fallen by more than 20% from its peak in the early 1990s, and the number of bills actually passed into law has fallen even more dramatically."
 kicker = "The Capitol"
 featured = true
+slug = "pa-state-legislators-among-the-highest-paid-in-us-but-theyre-doing-less-and-less-actual-lawmaking"
 +++
 
 HARRISBURG — Pennsylvania has the [largest full-time legislature in the nation](http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx) and its lawmakers are among the [highest-paid in the country](http://www.ncsl.org/research/about-state-legislatures/legislator-compensation-2018.aspx), yet, increasingly, they’re doing less and less actual lawmaking.
