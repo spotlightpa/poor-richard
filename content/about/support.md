@@ -37,82 +37,84 @@ York County Community Foundation <br>
 ## Founding Donors
 
 {{<supporters-list>}}
-- Richard Abraham
-- Oscar Armas-Luy
-- Kathleen Baker
-- Whitney Baldwin
-- Chris Bastress
-- Mark Bazrod
-- Sigal Ben
-- L.J. Bernard
-- Rita Bernstein & Alan Zuckerman
-- Robert Joseph Biller
-- Jeffrey L. Braff
-- Joseph L. Carbo
-- Mireille Carigi
-- Carosella Sr.
-- Ashleigh Graf Casassa
-- Marguerite Chandler
-- John & Joy Burt Conti
-- Brett Cott
-- Karen Crosby
-- Barry DeSantis
-- Earl Drumheiser
-- Mary Erdman
-- B. Faulstick
-- Ryan Froman
-- Tamara Goldman
-- John F. Graybill
-- Frank Hadden
-- Robert Haines
-- B.A. Hamilton
-- Bob Hoover
-- Louise Horan
-- Avram Hornik
-- Stephen R. Hughes
-- Sharon Hyde
-- Annette E. Inker
-- Evelyn Ishmael
-- Arlene Jarett
-- Peter Johnstone
-- Karen M. Kaplan & Aaron M. Shatzman
-- J. Kauer & D. Fleece
-- Alan Kennedy
-- Cathy King
-- Steven Kuloszewski
-- Lora Lavin
-- Jamie Lemon & Steve Cline
-- Stephen J. Lipnichan
-- Daniel Lynch
-- Lelah Marie
-- William H. Maruca
-- Claudia C. McGill
-- K. Melton
-- Keith G. Melville
-- Jules J. Mermelstein
-- Lee Mooney
-- Ryan Morden
-- M. Noel
-- Marty O’Brien
-- Ronald Ozio
-- Leanora Paniccia
-- Amy L. Perez
-- Rick Piper
-- Ralph Riedel
-- David R. Ross
-- Benedict X. Saia
-- Kimberley Shore
-- Claudia H. Siegel
-- Josh Singer
-- Anthony Spisto
-- Thomas Stone
-- R. Thomas
-- Irene Tierney
-- M. Tillger
-- Joseph C. Vignola
-- Hannah Walsh
-- Karen Weaver
-- Koert Wehberg, Esq.
-- Margaret Wren
-- Sherley Young
-{{</supporters-list>}}
+
+* Richard Abraham
+* Oscar Armas-Luy
+* Kathleen Baker
+* Whitney Baldwin
+* Chris Bastress
+* Mark Bazrod
+* Sigal Ben
+* L.J. Bernard
+* Rita Bernstein & Alan Zuckerman
+* Robert Joseph Biller
+* Jeffrey L. Braff
+* Joseph L. Carbo
+* Mireille Carigi
+* Carosella Sr.
+* Ashleigh Graf Casassa
+* Marguerite Chandler
+* John & Joy Burt Conti
+* Brett Cott
+* Karen Crosby
+* Barry DeSantis
+* Earl Drumheiser
+* Mary Erdman
+* B. Faulstick
+* Ryan Froman
+* Tamara Goldman
+* John F. Graybill
+* Frank Hadden
+* Robert Haines
+* B.A. Hamilton
+* Bob Hoover
+* Louise Horan
+* Avram Hornik
+* Stephen R. Hughes
+* Sharon Hyde
+* Annette E. Inker
+* Evelyn Ishmael
+* Arlene Jarett
+* Peter Johnstone
+* Karen M. Kaplan & Aaron M. Shatzman
+* P. Katze
+* J. Kauer & D. Fleece
+* Alan Kennedy
+* Cathy King
+* Steven Kuloszewski
+* Lora Lavin
+* Jamie Lemon & Steve Cline
+* Stephen J. Lipnichan
+* Daniel Lynch
+* Lelah Marie
+* William H. Maruca
+* Claudia C. McGill
+* K. Melton
+* Keith G. Melville
+* Jules J. Mermelstein
+* Lee Mooney
+* Ryan Morden
+* M. Noel
+* Marty O’Brien
+* Ronald Ozio
+* Leanora Paniccia
+* Amy L. Perez
+* Rick Piper
+* Ralph Riedel
+* David R. Ross
+* Benedict X. Saia
+* Kimberley Shore
+* Claudia H. Siegel
+* Josh Singer
+* Anthony Spisto
+* Thomas Stone
+* R. Thomas
+* Irene Tierney
+* M. Tillger
+* Joseph C. Vignola
+* Hannah Walsh
+* Karen Weaver
+* Koert Wehberg, Esq.
+* Margaret Wren
+* Sherley Young
+  {{</supporters-list>}}
