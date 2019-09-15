@@ -312,13 +312,6 @@ a.navbar-burger:hover {
   }
 }
 
-.promo svg {
-  width: 100%;
-  @media screen and (min-width: $tablet) {
-    max-width: 20vw;
-  }
-}
-
 .v-middle {
   vertical-align: middle;
 }
@@ -327,8 +320,15 @@ a.navbar-burger:hover {
   max-width: 12rem;
 }
 
+.max-20 {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 20vw;
+  }
+}
+
 .max-50 {
-  margin: 0 auto;
   width: 100%;
 
   @media screen and (min-width: $tablet) {
