@@ -5,10 +5,10 @@
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
 {{ if .Site.IsServer }}
-  <script src="http://localhost:1234/main.js"></script>
+  <script src="http://localhost:1234/main.js" defer></script>
 {{ else }}
   {{ $js := resources.Get "js/main.js" }}
-  <script>{{ $js.Content|safeJS }}</script>
+  <script defer>{{ $js.Content|safeJS }}</script>
 {{ end }}
 
 {{ range slice "500" "800" "regular" }}
