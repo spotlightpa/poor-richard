@@ -6,12 +6,13 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "checkformat": "prettier --ignore-path .gitignore --check **/*.{scss,js,yml}",
-    "format": "prettier --ignore-path .gitignore --write **/*.{scss,js,yml}",
+    "checkformat": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}",
+    "format": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
     "git-pre-push": "yarn run checkformat",
-    "build:stage": "parcel build assets/js/main.js && hugo version && hugo --debug --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
-    "build:prod": "parcel build assets/js/main.js && hugo version && hugo --debug --minify",
-    "start": "parcel assets/js/main.js & hugo server & wait"
+    "build:parcel": "parcel build assets/js/main*.js",
+    "build:stage": "yarn run build:parcel && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
+    "build:prod": "yarn run build:parcel && hugo version && hugo --minify",
+    "start": "parcel assets/js/main*.js & hugo server & wait"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
