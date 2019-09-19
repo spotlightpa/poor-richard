@@ -8,7 +8,7 @@
 
 {{ $kicker := .Param "kicker" }}
 
-{{ $dek := .Param "dek" | default (.Param "description") }}
+{{ $dek := .Param "dek" | default "" }}
 
 {{ $showTitle := .Param "suppress-title" | not }}
 
