@@ -7,8 +7,7 @@ Sign up for _The Investigator_, Spotlight PA's free weekly newsletter with exclu
 
 {{<newsletter-form>}}
 
-
-
 ## Archives
 
+* [Thursday, Sept. 19, 2019](http://eepurl.com/gDAg8P)
 * [Thursday, Sept. 12, 2019](http://eepurl.com/gBr0ez)
