@@ -1,6 +1,6 @@
-{{ $features := where .Site.RegularPages ".Params.featured" true }}
+{{ $features := where .Site.RegularPages ".Params.featured" true | first 1 }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $pages := $news.RegularPages | complement (first 1 $features) }}
+{{ $pages := $news.RegularPages | complement $features }}
 <section class="section">
   <div class="container-hp">
     <div class="tile is-ancestor is-vertical">
