@@ -1,16 +1,16 @@
 +++
-draft = true
+draft = false
 hero-image = "img/uploads/state-police2.jpeg"
 hero-image-description = "A Pa. State Police vehicle"
-hero-image-credit = "Courtesy of Philadelphia Inquirer"
+hero-image-credit = "Courtesy of The Inquirer"
 hero-image-size = "inline"
 published = 2019-09-20T09:25:00.000Z
 authors = ["Angela Couloumbis", "Daniel Simmons-Ritchie"]
 title = "Pa. State Police stopped tracking the race of drivers who get pulled over, making bias near much harder to detect"
 description = "A nationwide survey by Spotlight PA found the Pa. State Police is one of only 11 statewide law enforcement agencies not collecting such data — and by far the largest. In response, State Police officials said they would reverse course and resume collection."
 kicker = "Criminal Justice"
-slug = "pa-state-police-stopped-tracking-driver-race"
 featured = true
+slug = "pa-state-police-stopped-tracking-driver-race"
 +++
 
 The Pennsylvania State Police, the third-largest statewide law enforcement agency in the country, has stopped collecting data on the race of drivers its troopers pull over, making it far more difficult to detect bias, Spotlight PA has learned.
