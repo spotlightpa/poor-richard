@@ -32,7 +32,7 @@ On Sept. 17, after being presented with the findings of Spotlight PA’s nationw
 
 “We do feel that collecting this information would yield valuable statistical information for the department,” Lt. Col. Scott Price, the deputy commissioner of administration and professional responsibility, said in an email.
 
-The agency declined a request for an interview with its leader, Commissioner Robert Evanchick. The union representing state troopers declined comment. Gov. Tom Wolf’s spokesman, J.J. Abbott, said the administration supports the State Police’s decision to resume tracking the race of drivers involved in traffic stops.
+The agency declined a request for an interview with its leader_**,**_ Commissioner Robert Evanchick. The union representing state troopers declined comment. Gov. Tom Wolf’s spokesman, J.J. Abbott, said the administration supports the State Police’s decision to resume tracking the race of drivers involved in traffic stops.
 
 _**» DONATE NOW:** If you value accountability journalism that drives change like this report on the Pennsylvania State Police, [support our reporters and become a Founding Donor](https://www.spotlightpa.org/donate/)._
 
