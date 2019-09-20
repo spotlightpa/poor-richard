@@ -3,13 +3,12 @@
 
 <div class="has-text-centered">
   <a
-    class="image max-20"
+    class="promo"
     href="{{ .url }}"
     title="{{ .title }}"
   >
-    <img
-      src="{{ $logo.RelPermalink }}"
-      alt="{{ .title }}">
+    <span class="is-sr-only">{{ .title }}</span>
+    {{ $logo.Content| safeHTML }}
   </a>
 </div>
 
