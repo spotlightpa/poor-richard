@@ -56,7 +56,7 @@ Questions remain about why the department stopped collecting race data in 2012.
 
 According to archived news reports, the State Police tracked the data from traffic stops until the mid-1970s. It resumed collection in 2002 as part of a project with the University of Pennsylvania and the University of Cincinnati. Researchers involved in the project could not be reached for comment.
 
-A report released in 2003 found “no consistent evidence” that troopers were making stops based on a drivers’ race or ethnicity. But it found what it called “racial, ethnic, and gender disparities” in how troopers dealt with motorists once they had pulled them over.
+A report released in 2004 found “no consistent evidence” that troopers were making stops based on a drivers’ race or ethnicity. But it found what it called “racial, ethnic, and gender disparities” in how troopers dealt with motorists once they had pulled them over.
 
 The odds of black drivers being arrested and searched, for instance, were 1.5 to 3 times higher than white drivers. The odds of Latino drivers being arrested and searched were 1.8 to 2.7 times higher. The report also noted minority drivers were “significantly less likely to be in possession of contraband compared to white drivers who are searched.”
 
