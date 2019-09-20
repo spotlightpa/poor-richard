@@ -18,6 +18,15 @@
   <!-- Metadata -->
   {{ partial "meta.html" . }}
 
+  {{ $news := .Site.GetPage "/news/_index.md" }}
+  {{ range $news.AlternativeOutputFormats }}
+    <link
+      rel="{{ .Rel }}"
+      type="{{ .MediaType.Type }}"
+      href="{{ .Permalink | safeURL }}"
+      title="{{ $news.Title }}"
+    />
+  {{ end }}
   {{ range .AlternativeOutputFormats }}
     <link
       rel="{{ .Rel }}"
