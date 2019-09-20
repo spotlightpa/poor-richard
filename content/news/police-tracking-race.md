@@ -8,6 +8,7 @@ published = 2019-09-20T09:25:00.000Z
 authors = ["Angela Couloumbis", "Daniel Simmons-Ritchie"]
 title = "Racial profiling in traffic stops? We won’t know, because Pa. State Police no longer track racial data."
 description = "In response to questions from Spotlight PA, State Police officials said they would reverse course and resume collection."
+Dek = "In response to questions from Spotlight PA, State Police officials said they would reverse course and resume collection."
 kicker = "Criminal Justice"
 featured = true
 slug = "pa-state-police-stopped-tracking-driver-race"
