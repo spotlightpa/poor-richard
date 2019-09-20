@@ -34,7 +34,7 @@ On Sept. 17, after being presented with the findings of Spotlight PA’s nationw
 
 The agency declined a request for an interview with its leader**_,_** Commissioner Robert Evanchick. The union representing state troopers declined comment. Gov. Tom Wolf’s spokesman, J.J. Abbott, said the administration supports the State Police’s decision to resume tracking the race of drivers involved in traffic stops.
 
-**_» DONATE NOW:_** _If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing,_ [_support our reporters and become a Founding Donor_](https://www.spotlightpa.org/donate/)_._
+_**» DONATE NOW:** If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing, [support our reporters and become a Founding Donor](https://www.spotlightpa.org/donate/)._
 
 In June, the ACLU of Pennsylvania filed a federal lawsuit against the State Police alleging troopers were violating the law by [stopping and holding people based solely on their Latino appearance](https://www.inquirer.com/news/pennsylvania-troopers-aclu-lawsuit-latinos-immigration-ice-no-sanctuary-20190627.html). And in July, a black couple, Rodney and Angela Gillespie of Chadds Ford, [told The Inquirer they were profiled and harassed by a white trooper](https://www.inquirer.com/news/rodney-gillespie-angela-pennsylvania-state-police-chadds-ford-state-trooper-driving-while-black-racial-profiling-20190803.html) in the driveway of their home in suburban Philadelphia. They are considering a lawsuit.
 
