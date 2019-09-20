@@ -13,7 +13,6 @@ kicker = "Criminal Justice"
 featured = true
 slug = "pa-state-police-stopped-tracking-driver-race"
 +++
-
 The Pennsylvania State Police, the third-largest statewide law enforcement agency in the country, has stopped collecting data on the race of drivers its troopers pull over, making it far more difficult to detect bias, Spotlight PA has learned.
 
 The change, which was never publicly announced, was made by the State Police in 2012 and has remained in place despite national attention on race and policing in recent years and the widely accepted value of collecting such data for analysis.
@@ -33,9 +32,9 @@ On Sept. 17, after being presented with the findings of Spotlight PA’s nationw
 
 “We do feel that collecting this information would yield valuable statistical information for the department,” Lt. Col. Scott Price, the deputy commissioner of administration and professional responsibility, said in an email.
 
-The agency declined a request for an interview with its leader**_,_** Commissioner Robert Evanchick. The union representing state troopers declined comment. Gov. Tom Wolf’s spokesman, J.J. Abbott, said the administration supports the State Police’s decision to resume tracking the race of drivers involved in traffic stops.
+The agency declined a request for an interview with its leader_**,**_ Commissioner Robert Evanchick. The union representing state troopers declined comment. Gov. Tom Wolf’s spokesman, J.J. Abbott, said the administration supports the State Police’s decision to resume tracking the race of drivers involved in traffic stops.
 
-_**» DONATE NOW:** If you value accountability journalism like this report exposing problems nurses face when dealing with the state Board of Nursing, [support our reporters and become a Founding Donor](https://www.spotlightpa.org/donate/)._
+_**» DONATE NOW:** If you value accountability journalism that drives change like this report on the Pennsylvania State Police, [support our reporters and become a Founding Donor](https://www.spotlightpa.org/donate/)._
 
 In June, the ACLU of Pennsylvania filed a federal lawsuit against the State Police alleging troopers were violating the law by [stopping and holding people based solely on their Latino appearance](https://www.inquirer.com/news/pennsylvania-troopers-aclu-lawsuit-latinos-immigration-ice-no-sanctuary-20190627.html). And in July, a black couple, Rodney and Angela Gillespie of Chadds Ford, [told The Inquirer they were profiled and harassed by a white trooper](https://www.inquirer.com/news/rodney-gillespie-angela-pennsylvania-state-police-chadds-ford-state-trooper-driving-while-black-racial-profiling-20190803.html) in the driveway of their home in suburban Philadelphia. They are considering a lawsuit.
 
@@ -90,6 +89,7 @@ According to statistics provided by the State Police, the agency has received 56
 _Charlotte Keith contributed to this report._
 
 <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+
 <script>
     window.pymParent = new pym.Parent('race-map-container', 'https://interactives.data.spotlightpa.org/2019/vis-map-tile-usa-psp/', {});
 </script>
