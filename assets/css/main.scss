@@ -59,7 +59,7 @@ $title-weight: $weight-semibold;
 @import "fonts.scss";
 @import "bulma.sass";
 
-html {
+html.is-clipped {
   position: fixed;
 }
 
