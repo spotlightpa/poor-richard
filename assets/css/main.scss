@@ -60,7 +60,7 @@ $title-weight: $weight-semibold;
 @import "bulma.sass";
 
 html.is-clipped {
-  position: fixed;
+  touch-action: none;
 }
 
 body {
