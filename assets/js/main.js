@@ -42,6 +42,44 @@ function createListeners() {
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
   });
+
+  function openModal() {
+    let modal = document.querySelector("#modal-newsletter");
+    if (!modal) {
+      return;
+    }
+    let root = document.body.parentElement;
+    let closeBtn = modal.querySelectorAll("[aria-label=close]");
+    let bg = modal.querySelectorAll(".modal-background");
+
+    modal.classList.add("is-active");
+    root.classList.add("is-clipped");
+
+    function listenForEscape(e) {
+      if (e.keyCode === 27) {
+        // == ESC
+        closeModal();
+      }
+    }
+
+    function closeModal() {
+      document.addEventListener("keydown", listenForEscape);
+      modal.classList.remove("is-active");
+      root.classList.remove("is-clipped");
+      document.removeEventListener("keydown", listenForEscape);
+    }
+
+    on("click", closeBtn, closeModal);
+    on("click", bg, closeModal);
+    on("keydown", document, listenForEscape);
+  }
+
+  function maybeOpenModal() {
+    window.removeEventListener("scroll", maybeOpenModal);
+    window.setTimeout(openModal, 500);
+  }
+
+  window.addEventListener("scroll", maybeOpenModal);
 }
 
 on("DOMContentLoaded", document, createListeners);
