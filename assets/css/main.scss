@@ -59,6 +59,10 @@ $title-weight: $weight-semibold;
 @import "fonts.scss";
 @import "bulma.sass";
 
+html {
+  position: relative;
+}
+
 body {
   // Responsive wrap fallback
   max-width: 100vw;
