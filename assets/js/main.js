@@ -1,4 +1,4 @@
-import { each, on } from "./dom-utils.js";
+import { each, on, loadDate, storeDate } from "./dom-utils.js";
 
 function createListeners() {
   on("click", "[data-target]", ev => {
@@ -54,32 +54,51 @@ function createListeners() {
 
     modal.classList.add("is-active");
     root.classList.add("is-clipped");
+    const ESCkeyCode = 27;
 
-    function listenForEscape(e) {
-      if (e.keyCode === 27) {
-        // == ESC
-        closeModal();
-      }
-    }
+    let cancelFns = [
+      on("click", closeBtn, closeModal),
+      on("click", bg, closeModal),
+      on("keydown", document, e => {
+        if (e.keyCode === ESCkeyCode) {
+          closeModal();
+        }
+      })
+    ];
 
     function closeModal() {
-      document.addEventListener("keydown", listenForEscape);
       modal.classList.remove("is-active");
       root.classList.remove("is-clipped");
-      document.removeEventListener("keydown", listenForEscape);
+      cancelFns.forEach(fn => {
+        fn();
+      });
     }
-
-    on("click", closeBtn, closeModal);
-    on("click", bg, closeModal);
-    on("keydown", document, listenForEscape);
   }
 
-  function maybeOpenModal() {
-    window.removeEventListener("scroll", maybeOpenModal);
-    window.setTimeout(openModal, 500);
-  }
+  let cancelOpen = on("scroll", [window], () => {
+    cancelOpen();
+    const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
+    const FROM_MC_KEY = "originated-from-mailchimp";
+    let now = new Date();
+    let showModal = true;
 
-  window.addEventListener("scroll", maybeOpenModal);
+    if (loadDate(SAW_NEWSLETTER_MODAL_KEY)) {
+      showModal = false;
+    }
+    if (window.location.href.match(/utm_source=email/)) {
+      storeDate(FROM_MC_KEY, now);
+    }
+    if (loadDate(FROM_MC_KEY)) {
+      showModal = false;
+    }
+    if (window.location.href.match(/debug-modal/)) {
+      showModal = true;
+    }
+    if (showModal) {
+      storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
+      window.setTimeout(openModal, 500);
+    }
+  });
 }
 
 on("DOMContentLoaded", document, createListeners);
