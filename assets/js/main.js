@@ -59,6 +59,9 @@ function createListeners() {
     let cancelFns = [
       on("click", closeBtn, closeModal),
       on("click", bg, closeModal),
+      on("touchmove", bg, e => {
+        e.preventDefault();
+      }),
       on("keydown", document, e => {
         if (e.keyCode === ESCkeyCode) {
           closeModal();
