@@ -91,6 +91,9 @@ function createListeners() {
     if (window.location.href.match(/utm_source=email/)) {
       storeDate(FROM_MC_KEY, now);
     }
+    if (document.referrer.match(/campaign-archive/)) {
+      storeDate(FROM_MC_KEY, now);
+    }
     if (loadDate(FROM_MC_KEY)) {
       showModal = false;
     }
