@@ -85,6 +85,9 @@ function createListeners() {
     let now = new Date();
     let showModal = true;
 
+    if (window.location.pathname.match(/newsletters/)) {
+      storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
+    }
     if (loadDate(SAW_NEWSLETTER_MODAL_KEY)) {
       showModal = false;
     }
