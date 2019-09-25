@@ -1,0 +1,68 @@
+{{ define "extra-main" }}
+  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+  <section class="section columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      {{ range .Paginator.Pages.ByTitle }}
+        {{ $name := .Title }}
+        {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
+        {{ $img := resources.GetMatch $imgRes }}
+        {{ $authorURL := .RelPermalink }}
+        {{ with $author := index $.Site.Data.authors $name }}
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                {{ if $img }}
+                  <a
+                    href="{{ $authorURL }}"
+                    class="image is-64x64"
+                  >
+                    {{ $imgShrunk := $img.Fill "256x256" }}
+                      <img
+                        src="{{ $imgShrunk.RelPermalink }}"
+                        alt="Photo of {{ $name }}"
+                        class="is-rounded is-monochrome"
+                      >
+                  </a>
+                {{ else }}
+                  <span class="image is-64x64"></span>
+                {{ end }}
+              </div>
+
+              <div class="level-item">
+                <div>
+                  <h3 class="subtitle is-3 has-text-weight-semibold">
+                    {{ if $author }}
+                    <a href="{{ $authorURL }}">
+                      {{ $name }}
+                    </a>
+                    {{ else }}
+                      <span class="has-text-grey">
+                        {{ $name }}
+                      </span>
+                    {{ end }}
+                  </h3>
+                  {{ if $author }}
+                    <h3 class="subtitle ">
+                      {{ $author.title }}
+                    </h3>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end}}
+      {{ end }}
+
+      {{ if gt .Paginator.TotalPages 0 }}
+        <div class="level">
+        {{ if .Paginator.HasPrev }}
+          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

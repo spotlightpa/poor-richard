@@ -2,7 +2,6 @@ baseURL = "https://www.spotlightpa.org/"
 languageCode = "en-us"
 title = "Spotlight PA"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
 enableGitInfo = true
 
 googleAnalytics = "UA-141126362-1"
@@ -11,6 +10,9 @@ googleAnalytics = "UA-141126362-1"
     disable = false
     respectDoNotTrack = true
     useSessionStorage = true
+
+[taxonomies]
+  author = "authors"
 
 [frontmatter]
     date  = [":default", ":filename"]

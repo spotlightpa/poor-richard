@@ -10,6 +10,10 @@
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range sort .Site.Data.authors "weight" }}
         {{ $nameID := urlize .name }}
+        {{ $articlesListLink := "" }}
+        {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}
+          {{ $articlesListLink = $pages.Page.RelPermalink }}
+        {{ end }}
         <div
           id="{{ $nameID }}"
           class="card block"
@@ -43,7 +47,13 @@
                 </div>
               {{ end }}
               <div class="media-content">
-                <p class="title is-3">{{ .name }}</p>
+                {{ if $articlesListLink }}
+                  <p class="title is-3">
+                    <a href="{{ $articlesListLink }}">{{ .name }}</a>
+                  </p>
+                {{ else }}
+                  <p class="title is-3">{{ .name }}</p>
+                {{ end }}
                 <p class="subtitle is-4">{{ .title }}</p>
                 <p class="subtitle is-5 has-text-break-all">
                   {{ with .email }}
