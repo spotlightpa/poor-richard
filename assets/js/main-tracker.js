@@ -27,7 +27,7 @@
     let s = document.createElement("script");
     s.async = true;
     s.src = "https://www.google-analytics.com/analytics.js";
-    document.body.append(s);
+    document.body.appendChild(s);
   }
 
   if (document.readyState === "loading") {
