@@ -6,14 +6,14 @@ code = 302
 [[redirects]]
 from = "/tracker.js"
 to = "https://www.spotlightpa.org/js/main-tracker.js"
-code = 302
+code = 200
 
 [[redirects]]
 from = "/feeds/full.json"
 to = "https://www.spotlightpa.org/news/feed.json"
-code = 302
+code = 200
 
 [[redirects]]
 from = "/feeds/full.xml"
 to = "https://www.spotlightpa.org/news/index.xml"
-code = 302
+code = 200
