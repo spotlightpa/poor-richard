@@ -48,6 +48,7 @@ York County Community Foundation <br>
 * L.J. Bernard
 * Rita Bernstein & Alan Zuckerman
 * Robert Joseph Biller
+* David Bohanick
 * Jeffrey L. Braff
 * Joseph L. Carbo
 * Mireille Carigi
@@ -57,6 +58,7 @@ York County Community Foundation <br>
 * John & Joy Burt Conti
 * Brett Cott
 * Karen Crosby
+* Fran DeMillion
 * Barry DeSantis
 * Earl Drumheiser
 * Mary Erdman
@@ -67,6 +69,7 @@ York County Community Foundation <br>
 * Frank Hadden
 * Robert Haines
 * B.A. Hamilton
+* Grace E. Herstine
 * Bob Hoover
 * Louise Horan
 * Avram Hornik
@@ -101,20 +104,27 @@ York County Community Foundation <br>
 * Amy L. Perez
 * Rick Piper
 * Ralph Riedel
+* Edward T. Rodgers
 * David R. Ross
 * Benedict X. Saia
 * Kimberley Shore
+* Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
+* Michael Sperger
 * Anthony Spisto
 * Thomas Stone
 * R. Thomas
 * Irene Tierney
 * M. Tillger
+* Walter C. Uhler
 * Joseph C. Vignola
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
+* Rhonda White
 * Margaret Wren
+* Jerry Young
 * Sherley Young
+* Gerald Zubkoff
   {{</supporters-list>}}
