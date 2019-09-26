@@ -17,3 +17,16 @@
 
 {{ template "_internal/google_analytics_async.html" . }}
 
+<link
+  rel="alternate"
+  type="application/json"
+  href='{{ absURL "/feeds/full.json" }}'
+  title="Full News Feed"
+/>
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href='{{ absURL "/feeds/full.xml" }}'
+  title="Full News Feed"
+/>
