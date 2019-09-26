@@ -1,0 +1,85 @@
+{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
+{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
+
+<div
+  class="modal"
+  id="modal-newsletter"
+>
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <form
+      class="box"
+      action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
+      method="post"
+      target="_blank"
+    >
+      <p class="is-hidden" aria-hidden="true">
+        <label>
+          Don’t fill this out if you're human:
+          <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
+        </label>
+      </p>
+      <h2 class="title is-size-4">
+        Sign up for <em>The Investigator</em>
+      </h2>
+      <h3
+        class="label is-small is-size-5 has-text-weight-normal subtitle"
+      >
+        Get exclusive looks at our reporting plus a roundup of the best journalism in Pa. and our weekly Riddler puzzle.
+      </h3>
+      <div class="field">
+        <label class="is-sr-only" for="modal-fname">First Name</label>
+        <div class="control">
+          <input
+            id="modal-fname"
+            class="input is-small"
+            type="text"
+            name="FNAME"
+            placeholder="First Name"
+          >
+        </div>
+      </div>
+      <div class="field">
+        <label class="is-sr-only" for="modal-lname">Last Name</label>
+        <div class="control">
+          <input
+            id="modal-lname"
+            class="input is-small"
+            type="text"
+            name="LNAME"
+            placeholder="Last Name"
+          >
+        </div>
+      </div>
+      <div class="field">
+        <label class="is-sr-only" for="home-email">Email</label>
+        <div class="control has-icons-left has-icons-right is-expanded">
+          <input
+            id="modal-email"
+            class="input is-small"
+            type="email"
+            name="EMAIL"
+            placeholder="Email"
+          >
+          <span class="icon is-large is-left has-text-primary">
+            {{ $iconEmail.Content|safeHTML }}
+          </span>
+          <span class="icon is-large is-right validator-icon">
+            {{ $iconCheck.Content|safeHTML }}
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button type="submit" class="button is-medium is-primary is-fullwidth">
+            Get Updates
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button
+    class="modal-close is-large"
+    aria-label="close"
+  ></button>
+</div>

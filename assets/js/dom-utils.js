@@ -14,7 +14,43 @@ export function each(qs, cb) {
 }
 
 export function on(ev, qs, cb) {
+  let cancelFns = [];
+
   each(qs, el => {
     el.addEventListener(ev, cb);
+    cancelFns.push(() => {
+      el.removeEventListener(ev, cb);
+    });
   });
+  return () => {
+    cancelFns.forEach(fn => {
+      fn();
+    });
+  };
+}
+
+export function storeItem(name, obj) {
+  let data = JSON.stringify(obj);
+  window.localStorage.setItem(name, data);
+}
+
+export function loadItem(name) {
+  let data = window.localStorage.getItem(name);
+  if (!data) {
+    return null;
+  }
+  return JSON.parse(data);
+}
+
+export function storeDate(name, date) {
+  let data = +date;
+  storeItem(name, data);
+}
+
+export function loadDate(name) {
+  let date = loadItem(name);
+  if (!date) {
+    return null;
+  }
+  return new Date(date);
 }
