@@ -8,7 +8,7 @@
     <description>{{ .Description }}</description>
     <generator>Hugo -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
-    <managingEditor>tips@spotlightpa.org</managingEditor>
+    <managingEditor>newsroom@spotlightpa.org</managingEditor>
     <webMaster>webmaster@spotlightpa.org</webMaster>
     <copyright>{{ now.Format "2006"}}</copyright>
     {{ if not .Date.IsZero -}}
