@@ -65,16 +65,22 @@ url = "/press-releases/"
 weight = 5
 
 [[footer]]
+name = "Newsletters"
+pre = "is-uppercase"
+url = "/newsletters/"
+weight = 6
+
+[[footer]]
 name = "News Archive"
 pre = "is-uppercase"
 url = "/news/"
-weight = 6
+weight = 7
 
 [[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 7
+weight = 8
 
 [[about]]
 name = "About Us"
