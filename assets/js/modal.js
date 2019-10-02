@@ -41,21 +41,18 @@ export function addModal() {
     const LAST_VISIT_KEY = "last-visit";
     const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
     const FROM_MC_KEY = "originated-from-mailchimp";
-    const delay = 2000; // 2s
+    const delay = 5000; // 5s
 
     let now = new Date();
-    let showModal = false;
+    let showModal = true;
 
-    // If this is our second+ page seen...
-    if (loadDate(LAST_VISIT_KEY)) {
-      showModal = true;
-    }
     storeDate(LAST_VISIT_KEY, now);
 
-    // And we're not already on the newsletter page...
+    // If we're not already on the newsletter page...
     if (window.location.pathname.match(/newsletters/)) {
       storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
     }
+    // And haven't seen the modal recently...
     if (loadDate(SAW_NEWSLETTER_MODAL_KEY)) {
       showModal = false;
     }
