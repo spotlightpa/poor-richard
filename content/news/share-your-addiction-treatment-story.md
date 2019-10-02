@@ -1,8 +1,8 @@
 +++
-draft = true
+draft = false
 hero-image = "img/uploads/opioids.jpeg"
-hero-image-credit = "Anthony Pezzotti/Philadelphia Inquirer"
 hero-image-description = "A slice of life along Kensington Ave where the city is struggling with the opioid crisis. This picture shows people living with addiction along the 2700 block of the avenue as seen on Thursday, June 27, 2019. The Kensington section of Philadelphia is considered ground zero for the city’s opioid crisis."
+hero-image-credit = "Anthony Pezzotti/Philadelphia Inquirer"
 hero-image-size = "inline"
 published = 2019-10-02T09:00:00.000Z
 authors = ["Aneri Pattani"]
