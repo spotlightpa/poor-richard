@@ -3,6 +3,14 @@ import { addModal } from "./modal.js";
 import { addSocialButtonListeners } from "./social.js";
 
 function createListeners() {
+  // Ensure a Google Analytics func
+  if (!window.ga) {
+    window.ga = function() {
+      (ga.q = ga.q || []).push(arguments);
+    };
+    ga.l = +new Date();
+  }
+
   on("click", "[data-target]", ev => {
     var targets = ev.currentTarget.dataset.target;
     var toggleClass = ev.currentTarget.dataset.toggleClass;
@@ -20,6 +28,14 @@ function createListeners() {
     }
     el.target = "_blank";
     el.rel = "noopener noreferrer";
+    on("click", el, e => {
+      ga("send", "event", {
+        eventCategory: "Outbound Link",
+        eventAction: "click",
+        eventLabel: event.target.href,
+        transport: "beacon"
+      });
+    });
   });
 
   addSocialButtonListeners();

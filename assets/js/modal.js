@@ -8,6 +8,8 @@ export function openModal() {
   let root = document.body.parentElement;
   let closeBtn = modal.querySelectorAll("[aria-label=close]");
   let bg = modal.querySelectorAll(".modal-background");
+  let inputs = modal.querySelectorAll("input");
+  let form = modal.querySelectorAll("form");
 
   modal.classList.add("is-active");
   root.classList.add("is-clipped");
@@ -23,6 +25,21 @@ export function openModal() {
       if (e.keyCode === ESCkeyCode) {
         closeModal();
       }
+    }),
+    on("focus", inputs, e => {
+      ga("send", "event", {
+        eventCategory: "Modal interaction",
+        eventAction: "click",
+        eventLabel: "Focus input"
+      });
+    }),
+    on("submit", form, e => {
+      ga("send", "event", {
+        eventCategory: "Modal interaction",
+        eventAction: "click",
+        eventLabel: "Sign up for newsletter",
+        transport: "beacon"
+      });
     })
   ];
 
@@ -31,6 +48,12 @@ export function openModal() {
     root.classList.remove("is-clipped");
     cancelFns.forEach(fn => {
       fn();
+    });
+    ga("send", "event", {
+      eventCategory: "Modal interaction",
+      eventAction: "click",
+      eventLabel: "Dismiss modal",
+      nonInteraction: true
     });
   }
 }
