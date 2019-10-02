@@ -1,0 +1,205 @@
+{{ define "main" }}
+    <form id="Donation" method="post" action="https://faas.cloud.clickandpledge.com">
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr>
+            <td>
+              <strong>
+                Thank you for your support.
+              </strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                <tbody>
+                  <tr>
+                    <td>
+                      Donation
+                    </td>
+                    <td>
+                      $
+                      <input name="UnitPrice" type="text" id="UnitPrice" value="25" size="10">
+                      <input name="ItemID" type="hidden" id="ItemID" value="1">
+                      <input name="ItemName" type="hidden" id="ItemName" value="Donation">
+                      <input name="Quantity" type="hidden" id="Quantity" value="1">
+                      <input name="UnitDeductible" type="hidden" id="UnitDeductible" value="100%">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                Personal Information
+              </strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                <tbody>
+                  <tr>
+                    <td>
+                      First name:
+                    </td>
+                    <td>
+                      <input name="BillingFirstName" type="text" id="BillingFirstName" value="John" size="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Last name:
+                    </td>
+                    <td>
+                      <input name="BillingLastName" type="text" id="BillingLastName" value="Smith" size="30">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                Payment Information
+              </strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                <tbody>
+                  <tr>
+                    <td>
+                      Credit card number:
+                    </td>
+                    <td>
+                      <input name="CardNumber" type="text" id="CardNumber" value="4111111111111111" size="17" maxlength="17">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      CV2:
+                    </td>
+                    <td>
+                      <input name="Cvv2" type="text" id="Cvv2" value="123" size="6">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Expiration Date:
+                    </td>
+                    <td>
+                      <select name="ExpirationMonth" id="ExpirationMonth">
+                        <option value="01">
+                          January
+                        </option>
+                        <option value="02">
+                          February
+                        </option>
+                        <option value="03">
+                          March
+                        </option>
+                        <option value="04">
+                          April
+                        </option>
+                        <option value="05">
+                          May
+                        </option>
+                        <option value="06">
+                          June
+                        </option>
+                        <option value="07">
+                          July
+                        </option>
+                        <option value="08">
+                          August
+                        </option>
+                        <option value="09">
+                          September
+                        </option>
+                        <option value="10">
+                          October
+                        </option>
+                        <option value="11">
+                          November
+                        </option>
+                        <option value="12">
+                          December
+                        </option>
+                      </select>
+                      <select name="ExpirationYear" id="ExpirationYear">
+                        <option value="11">
+                          2011
+                        </option>
+                        <option value="12">
+                          2012
+                        </option>
+                        <option value="13">
+                          2013
+                        </option>
+                        <option value="14">
+                          2014
+                        </option>
+                        <option value="15">
+                          2015
+                        </option>
+                        <option value="16">
+                          2016
+                        </option>
+                        <option value="17">
+                          2017
+                        </option>
+                        <option value="18">
+                          2018
+                        </option>
+                        <option value="19">
+                          2019
+                        </option>
+                        <option value="20" selected="selected">
+                          2020
+                        </option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+        <input type="hidden" name="Campaignid" value="90855">
+        <input type="hidden" name="Organizationid" value="60246">
+        <input type="hidden" name="redirecturl" value="">
+        <input type="hidden" name="UrlReferrer" value="https://www.spotlightpa.org/">
+              <!-- 3 pages need to be set up for each of the 3 transaction outcomes, namely Authorized, Declined, and Error -->
+              <input type="hidden" name="OnSuccessUrl" value='{{ "/success/" | absURL }}'>
+              <input type="hidden" name="OnDeclineUrl" value='{{ "/decline/" | absURL }}'>
+              <input type="hidden" name="OnErrorUrl" value='{{ "/error/" | absURL }}'>
+
+              <input type="hidden" name="Thankyou_SuccessRedirectURL" value="">
+              <input type="hidden" name="Thankyou_DeclineRedirecturl" value="">
+
+              <!-- Click &amp; pledge account information -->
+              <input type="hidden" name="AccountGuid" value="4c7c323d-466b-4492-b3e8-e5689bd9d775">
+              <input type="hidden" name="AccountID" value="60246">
+              <input type="hidden" name="accountAlias" value="lenfestinstitute">
+              <input type="hidden" name="ConnectCampaignAlias" value="SpotlightPA">
+              <!-- If no additional receipt nodes are listed the campaign receipt settings will be used. -->
+              <!-- You may customize the receipt further by setting a different receipt template to be sent-->
+              <input type="hidden" name="SendReceipt" value="true">
+              <input type="hidden" name="ReceiptTemplateGUID" value="3afd9662-e365-4e84-a9a2-3a000ff3062a">
+              <input type="hidden" name="OrderMode" value="Production">
+              <input type="hidden" name="TransactionType" value="Payment">
+              <input name="PaymentType" type="hidden" value="CreditCard">
+              <input name="Subm Donation" type="submit" value="Submit Donation">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+{{ end }}
