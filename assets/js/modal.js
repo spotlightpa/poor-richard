@@ -29,15 +29,13 @@ export function openModal() {
     on("focus", inputs, e => {
       ga("send", "event", {
         eventCategory: "Modal interaction",
-        eventAction: "click",
-        eventLabel: "Focus input"
+        eventAction: "Focus input"
       });
     }),
     on("submit", form, e => {
       ga("send", "event", {
         eventCategory: "Modal interaction",
-        eventAction: "click",
-        eventLabel: "Sign up for newsletter",
+        eventAction: "Sign up for newsletter",
         transport: "beacon"
       });
     })
@@ -51,8 +49,7 @@ export function openModal() {
     });
     ga("send", "event", {
       eventCategory: "Modal interaction",
-      eventAction: "click",
-      eventLabel: "Dismiss modal",
+      eventAction: "Dismiss modal",
       nonInteraction: true
     });
   }
