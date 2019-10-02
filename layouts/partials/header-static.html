@@ -7,8 +7,8 @@
 {{ if .Site.IsServer }}
   <script src="http://localhost:1234/main.js" defer></script>
 {{ else }}
-  {{ $js := resources.Get "js/main.js" }}
-  <script defer>{{ $js.Content|safeJS }}</script>
+  {{ $js := resources.Get "js/main.js" | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
 
 {{ range slice "500" "800" "regular" }}
