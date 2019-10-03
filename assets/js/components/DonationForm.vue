@@ -1,4 +1,5 @@
 <script>
+import BulmaField from "./BulmaField.vue";
 import BulmaFieldInput from "./BulmaFieldInput.vue";
 import BulmaFieldRadio from "./BulmaFieldRadio.vue";
 import BulmaFieldSelect from "./BulmaFieldSelect.vue";
@@ -29,6 +30,7 @@ export default {
     };
   },
   components: {
+    BulmaField,
     BulmaFieldInput,
     BulmaFieldRadio,
     BulmaFieldSelect
@@ -89,7 +91,7 @@ export default {
 </script>
 
 <template>
-  <form method="post" :action="cnpURL" @submit="validate">
+  <form method="post" :action="cnpURL" @submit="validate" autocomplete="on">
     <h2 class="title">
       Donation Amount
     </h2>
@@ -144,7 +146,7 @@ export default {
           name="BillingFirstName"
           :max-length="50"
           :required="true"
-          :autocomplete="true"
+          autocomplete="billing given-name"
           placeholder="William"
           v-model="firstName"
         ></BulmaFieldInput>
@@ -156,7 +158,7 @@ export default {
           name="BillingMI"
           :max-length="1"
           :required="false"
-          :autocomplete="true"
+          autocomplete="billing additional-name"
           placeholder=""
           v-model="middleInitial"
         ></BulmaFieldInput>
@@ -165,25 +167,144 @@ export default {
         <BulmaFieldInput
           label="Last Name"
           labelClass=""
-          name="name"
+          name="BillingLastName"
           :max-length="50"
           :required="true"
-          :autocomplete="true"
+          autocomplete="billing family-name"
           placeholder="Penn"
           v-model="lastName"
         ></BulmaFieldInput>
       </div>
     </div>
+    <BulmaFieldInput
+      label="Email"
+      name="BillingEmail"
+      :max-length="50"
+      type="email"
+      :required="true"
+      autocomplete="billing email"
+      placeholder="mysylvania@example.com"
+    ></BulmaFieldInput>
+    <BulmaFieldSelect
+      label="Country"
+      :required="true"
+      autocomplete="billing"
+    ></BulmaFieldSelect>
+    <BulmaFieldInput
+      label="Address"
+      name=""
+      :max-length="50"
+      :required="true"
+      autocomplete="billing family-name"
+      placeholder="Penn"
+    ></BulmaFieldInput>
+
+    <div class="columns">
+      <div class="column">
+        <BulmaFieldInput
+          label="City"
+          name="NameOnCard"
+          :required="true"
+          autocomplete="cc-name"
+          placeholder="William Penn"
+          v-model="cardName"
+        ></BulmaFieldInput>
+      </div>
+      <div class="column">
+        <BulmaFieldSelect
+          label="State"
+          :required="true"
+          autocomplete="billing"
+        ></BulmaFieldSelect>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <BulmaFieldInput
+          label="Zipcode"
+          name="NameOnCard"
+          :required="true"
+          autocomplete="cc-name"
+          placeholder="William Penn"
+          v-model="cardName"
+        ></BulmaFieldInput>
+      </div>
+      <div class="column">
+        <BulmaFieldInput
+          label="Phone number"
+          type="tel"
+          :required="true"
+          autocomplete=""
+          placeholder="717-555-1234"
+          v-model="cardName"
+        ></BulmaFieldInput>
+      </div>
+    </div>
+
     <h2 class="title">Payment Details</h2>
     <BulmaFieldInput
       label="Name on Card"
-      name="name"
+      name="NameOnCard"
       :required="true"
+      autocomplete="cc-name"
       placeholder="William Penn"
       v-model="cardName"
     ></BulmaFieldInput>
+    <div class="columns">
+      <div class="column">
+        <BulmaFieldInput
+          label="Credit Card Number"
+          name="NameOnCard"
+          :required="true"
+          autocomplete="cc-name"
+          placeholder="William Penn"
+          v-model="cardName"
+        ></BulmaFieldInput>
+      </div>
+      <div class="column">
+        <BulmaFieldInput
+          label="CVV"
+          :required="true"
+          autocomplete=""
+          placeholder="717-555-1234"
+          v-model="cardName"
+        ></BulmaFieldInput>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <BulmaFieldSelect
+          label="Expiration Month"
+          :required="true"
+          autocomplete="billing"
+        ></BulmaFieldSelect>
+      </div>
+      <div class="column">
+        <BulmaFieldSelect
+          label="Expiration Year"
+          :required="true"
+          autocomplete="billing"
+        ></BulmaFieldSelect>
+      </div>
+    </div>
 
     <h2 class="title">Additional Information</h2>
+    <input name="FieldName1" type="hidden" value="Donor Name" />
+    <BulmaFieldInput
+      label='To ensure full transparency, we cannot accept anonymous donations. How would you like your name to appear in the "Founding Donors" section of our website?'
+      label-class=""
+      name="FieldValue1"
+      placeholder="William Penn"
+      autocomplete="name"
+      :required="true"
+      :max-length="500"
+      v-model="donationName"
+    ></BulmaFieldInput>
+
+    <input name="FieldName2" type="hidden" value="Additional comments" />
+    <BulmaField label="Additional Comments" v-slot="{ idForLabel }">
+      <textarea :id="idForLabel" class="textarea" rows="3"></textarea>
+    </BulmaField>
     <h2 class="title">Terms & Conditions</h2>
     <p>
       Your gift is tax-deductible to the extent allowed by law. Please note that
@@ -201,16 +322,6 @@ export default {
       <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a> if you
       have any questions.
     </p>
-
-    <BulmaFieldInput
-      label='To ensure full transparency, we cannot accept anonymous donations. How would you like your name to appear in the "Founding Donors" section of our website?'
-      label-class=""
-      name="name"
-      placeholder="William Penn"
-      :required="true"
-      v-model="donationName"
-    ></BulmaFieldInput>
-
     <h2 class="title">
       You will be charged:
       <span class="is-pulled-right">{{ donationAmount | formatUSD }}</span>

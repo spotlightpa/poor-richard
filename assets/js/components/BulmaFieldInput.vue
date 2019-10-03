@@ -27,7 +27,7 @@ export default {
       default: false
     },
     autocomplete: {
-      type: Boolean,
+      type: String,
       default: null
     },
     type: {
@@ -47,15 +47,11 @@ export default {
         return this.value;
       },
       set(newVal) {
+        if (this.maxLength && newVal.length > this.maxLength) {
+          newVal = newVal.slice(0, this.maxLength);
+        }
         this.$emit("input", newVal);
       }
-    },
-    autocompleteStr() {
-      return this.autocomplete === null
-        ? null
-        : this.autocomplete
-        ? "on"
-        : "off";
     }
   }
 };
@@ -75,7 +71,7 @@ export default {
         :name="name"
         :placeholder="placeholder"
         :autofocus="autofocus"
-        :autocomplete="autocompleteStr"
+        :autocomplete="autocomplete"
         :required="required"
         :maxlength="maxLength"
         v-model="selected"

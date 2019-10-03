@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: "BulmaFieldSelect",
   props: {
     label: String,
     options: Array,
