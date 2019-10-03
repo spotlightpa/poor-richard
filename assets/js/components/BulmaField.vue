@@ -9,7 +9,6 @@ export default {
       type: String,
       default: "label"
     },
-    placeholder: String,
     help: String,
     validator: String,
     required: {
@@ -32,7 +31,7 @@ export default {
       {{ label }}
       <span v-if="required" class="has-text-danger">*</span>
     </label>
-    <div class="control">
+    <div class="control is-expanded">
       <slot :required="required" :idForLabel="idForLabel"></slot>
     </div>
     <p v-if="help" class="help" v-text="help"></p>

@@ -1,23 +1,37 @@
 <script>
+import BulmaField from "./BulmaField.vue";
+
 export default {
   name: "BulmaFieldRadio",
+  components: {
+    BulmaField
+  },
+
   props: {
     label: String,
-    options: Array,
-    value: String,
+    labelClass: {
+      type: String,
+      default: "label"
+    },
     help: String,
     validator: String,
-    name: String,
     required: {
       type: Boolean,
       default: false
     },
-    type: {
-      type: String,
-      default: "text"
-    }
+    options: Array,
+    value: String
   },
   computed: {
+    fieldProps() {
+      return {
+        label: this.label,
+        help: this.help,
+        labelClass: this.labelClass,
+        required: this.required,
+        validator: this.validator
+      };
+    },
     selected: {
       get() {
         return this.value;
@@ -36,24 +50,16 @@ export default {
 </script>
 
 <template>
-  <div class="field">
-    <div class="label">
-      {{ label }}
-      <span v-if="required" class="has-text-danger">*</span>
-    </div>
-    <div class="control">
-      <label class="radio" v-for="option in options" :key="option.value">
-        <input
-          type="radio"
-          :name="name"
-          :value="option.value"
-          :required="required"
-          v-model="selected"
-        />
-        {{ option.text }}
-      </label>
-    </div>
-    <p v-if="help" class="help" v-text="help"></p>
-    <p v-if="validator" class="help is-danger" v-text="validator"></p>
-  </div>
+  <BulmaField v-bind="fieldProps">
+    <label class="radio" v-for="option in options" :key="option.value">
+      <input
+        type="radio"
+        :name="name"
+        :value="option.value"
+        :required="required"
+        v-model="selected"
+      />
+      {{ option.text }}
+    </label>
+  </BulmaField>
 </template>

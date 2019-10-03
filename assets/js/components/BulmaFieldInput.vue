@@ -1,8 +1,11 @@
 <script>
-let labelIDCounter = 0;
+import BulmaField from "./BulmaField.vue";
 
 export default {
   name: "BulmaFieldInput",
+  components: {
+    BulmaField
+  },
   props: {
     label: String,
     labelClass: {
@@ -35,13 +38,16 @@ export default {
       default: "text"
     }
   },
-  data() {
-    labelIDCounter++;
-    return {
-      idForLabel: `BulmaFieldInput-${labelIDCounter}`
-    };
-  },
   computed: {
+    fieldProps() {
+      return {
+        label: this.label,
+        help: this.help,
+        labelClass: this.labelClass,
+        required: this.required,
+        validator: this.validator
+      };
+    },
     selected: {
       get() {
         return this.value;
@@ -58,26 +64,18 @@ export default {
 </script>
 
 <template>
-  <div class="field">
-    <label :class="labelClass" :for="idForLabel">
-      {{ label }}
-      <span v-if="required" class="has-text-danger">*</span>
-    </label>
-    <div class="control">
-      <input
-        class="input"
-        :id="idForLabel"
-        :type="type"
-        :name="name"
-        :placeholder="placeholder"
-        :autofocus="autofocus"
-        :autocomplete="autocomplete"
-        :required="required"
-        :maxlength="maxLength"
-        v-model="selected"
-      />
-    </div>
-    <p v-if="help" class="help" v-text="help"></p>
-    <p v-if="validator" class="help is-danger" v-text="validator"></p>
-  </div>
+  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
+    <input
+      class="input"
+      :id="idForLabel"
+      :type="type"
+      :name="name"
+      :placeholder="placeholder"
+      :autofocus="autofocus"
+      :autocomplete="autocomplete"
+      :required="required"
+      :maxlength="maxLength"
+      v-model="selected"
+    />
+  </BulmaField>
 </template>

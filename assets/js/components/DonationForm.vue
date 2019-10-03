@@ -142,7 +142,6 @@ export default {
       <div class="column">
         <BulmaFieldInput
           label="First Name"
-          labelClass=""
           name="BillingFirstName"
           :max-length="50"
           :required="true"
@@ -154,7 +153,6 @@ export default {
       <div class="column">
         <BulmaFieldInput
           label="Middle Initial"
-          labelClass=""
           name="BillingMI"
           :max-length="1"
           :required="false"
@@ -166,7 +164,6 @@ export default {
       <div class="column">
         <BulmaFieldInput
           label="Last Name"
-          labelClass=""
           name="BillingLastName"
           :max-length="50"
           :required="true"
@@ -196,7 +193,7 @@ export default {
       :max-length="50"
       :required="true"
       autocomplete="billing family-name"
-      placeholder="Penn"
+      placeholder=""
     ></BulmaFieldInput>
 
     <div class="columns">
@@ -206,7 +203,7 @@ export default {
           name="NameOnCard"
           :required="true"
           autocomplete="cc-name"
-          placeholder="William Penn"
+          placeholder="Harrisburg"
           v-model="cardName"
         ></BulmaFieldInput>
       </div>
@@ -225,8 +222,6 @@ export default {
           name="NameOnCard"
           :required="true"
           autocomplete="cc-name"
-          placeholder="William Penn"
-          v-model="cardName"
         ></BulmaFieldInput>
       </div>
       <div class="column">
@@ -257,8 +252,6 @@ export default {
           name="NameOnCard"
           :required="true"
           autocomplete="cc-name"
-          placeholder="William Penn"
-          v-model="cardName"
         ></BulmaFieldInput>
       </div>
       <div class="column">
@@ -266,8 +259,7 @@ export default {
           label="CVV"
           :required="true"
           autocomplete=""
-          placeholder="717-555-1234"
-          v-model="cardName"
+          placeholder="123"
         ></BulmaFieldInput>
       </div>
     </div>
@@ -291,8 +283,9 @@ export default {
     <h2 class="title">Additional Information</h2>
     <input name="FieldName1" type="hidden" value="Donor Name" />
     <BulmaFieldInput
-      label='To ensure full transparency, we cannot accept anonymous donations. How would you like your name to appear in the "Founding Donors" section of our website?'
+      label='How would you like your name to appear in the "Founding Donors" section of our website?'
       label-class=""
+      help="To ensure full transparency, we cannot accept anonymous donations."
       name="FieldValue1"
       placeholder="William Penn"
       autocomplete="name"
@@ -303,8 +296,28 @@ export default {
 
     <input name="FieldName2" type="hidden" value="Additional comments" />
     <BulmaField label="Additional Comments" v-slot="{ idForLabel }">
-      <textarea :id="idForLabel" class="textarea" rows="3"></textarea>
+      <textarea
+        :id="idForLabel"
+        name="FieldValue2"
+        class="textarea"
+        rows="3"
+      ></textarea>
     </BulmaField>
+
+    <BulmaField label="I would like to receive:" labelClass="">
+      <input name="FieldName3" type="hidden" value="Newsletter" />
+      <label class="checkbox">
+        <input type="checkbox" name="FieldValue3" value="yes" checked />
+        Spotlight PA's updates and newsletter
+      </label>
+
+      <input name="FieldName4" type="hidden" value="Partner promotions" />
+      <label class="checkbox">
+        <input type="checkbox" name="FieldValue4" value="yes" checked />
+        News and offers from Spotlight PA’s partner newsrooms
+      </label>
+    </BulmaField>
+
     <h2 class="title">Terms & Conditions</h2>
     <p>
       Your gift is tax-deductible to the extent allowed by law. Please note that

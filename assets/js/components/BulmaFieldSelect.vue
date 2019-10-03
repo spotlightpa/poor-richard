@@ -1,15 +1,35 @@
 <script>
+import BulmaField from "./BulmaField.vue";
+
 export default {
   name: "BulmaFieldSelect",
+  components: {
+    BulmaField
+  },
   props: {
     label: String,
-    options: Array,
-    value: String,
-    placeholder: String,
+    labelClass: {
+      type: String,
+      default: "label"
+    },
     help: String,
-    validator: String
+    validator: String,
+    required: {
+      type: Boolean,
+      default: false
+    },
+    value: String
   },
   computed: {
+    fieldProps() {
+      return {
+        label: this.label,
+        help: this.help,
+        labelClass: this.labelClass,
+        required: this.required,
+        validator: this.validator
+      };
+    },
     selected: {
       get() {
         return this.value;
@@ -23,21 +43,16 @@ export default {
 </script>
 
 <template>
-  <div class="field">
-    <label class="label" v-text="label"></label>
-    <div class="control is-expanded">
-      <div class="select is-fullwidth">
-        <select v-model="selected">
-          <option
-            v-for="option in options"
-            :key="option.value"
-            :value="option.value"
-            v-text="option.text"
-          />
-        </select>
-      </div>
+  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
+    <div class="select is-fullwidth">
+      <select :id="idForLabel" v-model="selected">
+        <option
+          v-for="option in options"
+          :key="option.value"
+          :value="option.value"
+          v-text="option.text"
+        />
+      </select>
     </div>
-    <p v-if="help" class="help" v-text="help"></p>
-    <p v-if="validator" class="help is-danger" v-text="validator"></p>
-  </div>
+  </BulmaField>
 </template>
