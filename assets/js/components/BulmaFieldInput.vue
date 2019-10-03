@@ -1,30 +1,61 @@
 <script>
+let labelIDCounter = 0;
+
 export default {
   name: "BulmaFieldInput",
   props: {
     label: String,
-    value: [String,Number],
+    labelClass: {
+      type: String,
+      default: "label"
+    },
+    value: [String, Number],
     placeholder: String,
     help: String,
     validator: String,
     name: String,
+    maxLength: {
+      type: Number,
+      default: null
+    },
     required: {
       type: Boolean,
       default: false
+    },
+    autofocus: {
+      type: Boolean,
+      default: false
+    },
+    autocomplete: {
+      type: Boolean,
+      default: null
     },
     type: {
       type: String,
       default: "text"
     }
   },
-  methods: {
-    emit(ev) {
-      this.$emit("input", ev.target.value);
+  data() {
+    labelIDCounter++;
+    return {
+      idForLabel: `BulmaFieldInput-${labelIDCounter}`
+    };
+  },
+  computed: {
+    selected: {
+      get() {
+        return this.value;
+      },
+      set(newVal) {
+        this.$emit("input", newVal);
+      }
     },
-    focus() {
-      this.$nextTick(() => {
-        this.$refs.input.focus();
-      });
+    autocompleteStr() {
+      return this.autocomplete === null
+        ? null
+        : this.autocomplete
+        ? "on"
+        : "off";
     }
   }
 };
@@ -32,19 +63,22 @@ export default {
 
 <template>
   <div class="field">
-    <label class="label">
+    <label :class="labelClass" :for="idForLabel">
       {{ label }}
       <span v-if="required" class="has-text-danger">*</span>
     </label>
     <div class="control">
       <input
         class="input"
-        :name="name"
+        :id="idForLabel"
         :type="type"
+        :name="name"
         :placeholder="placeholder"
-        :value="value"
-        @input="emit"
-        ref="input"
+        :autofocus="autofocus"
+        :autocomplete="autocompleteStr"
+        :required="required"
+        :maxlength="maxLength"
+        v-model="selected"
       />
     </div>
     <p v-if="help" class="help" v-text="help"></p>
