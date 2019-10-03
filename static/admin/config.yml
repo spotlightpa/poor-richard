@@ -101,6 +101,10 @@ yaml-definitions: &page-fields
     name: suppress-title
     widget: boolean
     hint: "Don't show title in content area"
+  - label: "Hide newsletters pop-up"
+    name: modal-exclude
+    widget: boolean
+    hint: "Don't show newsletters modal screen on this page"
     required: false
   - label: "No index"
     name: no-index

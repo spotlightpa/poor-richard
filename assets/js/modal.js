@@ -92,6 +92,10 @@ export function addModal() {
     if (loadDate(FROM_MC_KEY)) {
       showModal = false;
     }
+    // And it's not excluded from the page
+    if (document.body.dataset.modalExclude) {
+      showModal = false;
+    }
     // Or we're just testing...
     if (window.location.href.match(/debug-modal/)) {
       showModal = true;

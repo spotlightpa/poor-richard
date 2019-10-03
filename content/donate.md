@@ -1,6 +1,7 @@
 +++
 title = "Support investigative journalism in Pennsylvania. Become a Founding Donor."
 link-title = "Donate"
+modal-exclude = true
 +++
 
 Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth, and take on the powerful to expose wrongdoing and drive change.
