@@ -6,7 +6,7 @@ module.exports = ctx => {
   if (process.env.NODE_ENV === "production") {
     plugins.push(
       purgecss({
-        content: ["./**/*.html"]
+        content: ["./**/*.html", "./**/*.vue"]
       })
     );
   }

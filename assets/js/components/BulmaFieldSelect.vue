@@ -18,6 +18,7 @@ export default {
       type: Boolean,
       default: false
     },
+    options: Array,
     value: String
   },
   computed: {
@@ -48,7 +49,7 @@ export default {
       <select :id="idForLabel" v-model="selected">
         <option
           v-for="option in options"
-          :key="option.value"
+          :key="option.text"
           :value="option.value"
           v-text="option.text"
         />

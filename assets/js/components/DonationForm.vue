@@ -4,6 +4,13 @@ import BulmaFieldInput from "./BulmaFieldInput.vue";
 import BulmaFieldRadio from "./BulmaFieldRadio.vue";
 import BulmaFieldSelect from "./BulmaFieldSelect.vue";
 
+import {
+  codeUSA,
+  countryOptions,
+  stateOptions,
+  monthOptions
+} from "../form-data.js";
+
 let currencyFormat = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD"
@@ -26,7 +33,14 @@ export default {
       middleInitial: "",
       lastName: "",
       _cardName: "",
-      _donationName: ""
+      _donationName: "",
+      address1: "",
+      address2: "",
+      address3: "",
+      country: codeUSA,
+      countryOptions,
+      stateOptions,
+      monthOptions
     };
   },
   components: {
@@ -72,6 +86,25 @@ export default {
       set(newVal) {
         this._donationName = newVal;
       }
+    },
+    isUSA() {
+      return this.country === codeUSA;
+    },
+    zipOrPostalCode() {
+      return this.isUSA ? "Zipcode" : "Postal Code";
+    },
+    expirationYears() {
+      let years = [];
+      let thisYear = new Date().getFullYear();
+      for (let year = thisYear; year < thisYear + 20; year++) {
+        let text = String(year);
+        let value = text.slice(2);
+        years.push({
+          value,
+          text
+        });
+      }
+      return years;
     }
   },
   methods: {
@@ -184,54 +217,89 @@ export default {
     ></BulmaFieldInput>
     <BulmaFieldSelect
       label="Country"
+      :options="countryOptions"
+      name="BillingCountryCode"
       :required="true"
-      autocomplete="billing"
+      autocomplete="billing country"
+      v-model="country"
     ></BulmaFieldSelect>
     <BulmaFieldInput
       label="Address"
-      name=""
-      :max-length="50"
+      name="BillingAddress1"
+      :max-length="100"
       :required="true"
-      autocomplete="billing family-name"
-      placeholder=""
+      autocomplete="billing address-line1"
+      placeholder="123 Main St."
+      v-model="address1"
+    ></BulmaFieldInput>
+    <BulmaFieldInput
+      v-if="address1"
+      name="BillingAddress2"
+      :max-length="100"
+      autocomplete="billing address-line2"
+      placeholder="Apt. 2B"
+      v-model="address2"
+    ></BulmaFieldInput>
+    <BulmaFieldInput
+      v-if="address2"
+      name="BillingAddress3"
+      :max-length="100"
+      autocomplete="billing address-line3"
+      v-model="address3"
     ></BulmaFieldInput>
 
     <div class="columns">
       <div class="column">
         <BulmaFieldInput
           label="City"
-          name="NameOnCard"
+          name="BillingCity"
+          :max-length="50"
           :required="true"
-          autocomplete="cc-name"
+          autocomplete="billing address-level1"
           placeholder="Harrisburg"
           v-model="cardName"
         ></BulmaFieldInput>
       </div>
       <div class="column">
         <BulmaFieldSelect
+          v-if="isUSA"
           label="State"
+          name="BillingStateProvince"
+          value="Pennsylvania"
+          :options="stateOptions"
           :required="true"
-          autocomplete="billing"
+          autocomplete="billing address-level2"
         ></BulmaFieldSelect>
+        <BulmaFieldInput
+          v-else
+          label="Province or State"
+          name="BillingStateProvince"
+          :max-length="50"
+          value=""
+          :required="true"
+          autocomplete="billing address-level2"
+        ></BulmaFieldInput>
       </div>
     </div>
     <div class="columns">
       <div class="column">
         <BulmaFieldInput
-          label="Zipcode"
-          name="NameOnCard"
+          :label="zipOrPostalCode"
+          name="BillingPostalCode"
+          placeholder="17120"
+          :max-length="20"
           :required="true"
-          autocomplete="cc-name"
+          autocomplete="billing postal-code"
         ></BulmaFieldInput>
       </div>
       <div class="column">
         <BulmaFieldInput
           label="Phone number"
           type="tel"
+          name="BillingPhone"
           :required="true"
-          autocomplete=""
+          autocomplete="billing tel-national"
           placeholder="717-555-1234"
-          v-model="cardName"
         ></BulmaFieldInput>
       </div>
     </div>
@@ -249,16 +317,20 @@ export default {
       <div class="column">
         <BulmaFieldInput
           label="Credit Card Number"
-          name="NameOnCard"
+          name="CardNumber"
+          :max-length="17"
           :required="true"
-          autocomplete="cc-name"
+          autocomplete="cc-number"
         ></BulmaFieldInput>
       </div>
       <div class="column">
         <BulmaFieldInput
           label="CVV"
+          name="Cvv2"
+          :max-length="4"
           :required="true"
-          autocomplete=""
+          help="CVV is the 3 or 4 digit card verification number on the back of many cards"
+          autocomplete="cc-csc"
           placeholder="123"
         ></BulmaFieldInput>
       </div>
@@ -267,15 +339,19 @@ export default {
       <div class="column">
         <BulmaFieldSelect
           label="Expiration Month"
+          name="ExpirationMonth"
+          :options="monthOptions"
           :required="true"
-          autocomplete="billing"
+          autocomplete="cc-exp-month"
         ></BulmaFieldSelect>
       </div>
       <div class="column">
         <BulmaFieldSelect
           label="Expiration Year"
+          name="ExpirationYear"
+          :options="expirationYears"
           :required="true"
-          autocomplete="billing"
+          autocomplete="cc-exp-year"
         ></BulmaFieldSelect>
       </div>
     </div>

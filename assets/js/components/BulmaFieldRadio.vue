@@ -20,7 +20,8 @@ export default {
       default: false
     },
     options: Array,
-    value: String
+    value: String,
+    name: String
   },
   computed: {
     fieldProps() {
