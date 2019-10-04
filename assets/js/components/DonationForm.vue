@@ -114,13 +114,10 @@ export default {
         : "Please enter a valid credit card number";
     },
     ccDigits() {
-      return this.ccNumber.replace(/\D/g, "")
+      return this.ccNumber.replace(/\D/g, "");
     }
   },
   methods: {
-    validate(e) {
-      // e.preventDefault();
-    },
     setDonationAmount(amount) {
       this.donationAmount = amount;
       this.showOtherAmount = false;
@@ -134,7 +131,7 @@ export default {
 </script>
 
 <template>
-  <form method="post" :action="cnpURL" @submit="validate" autocomplete="on">
+  <form method="post" :action="cnpURL" autocomplete="on">
     <h2 class="title">
       Donation Amount
     </h2>
@@ -325,12 +322,12 @@ export default {
     ></BulmaFieldInput>
     <div class="columns">
       <div class="column">
-        <input type="hidden" name="CardNumber" :value="ccDigits">
+        <input type="hidden" name="CardNumber" :value="ccDigits" />
         <BulmaFieldInput
           label="Credit Card Number"
           :max-length="17"
           :required="true"
-          :validator="ccValidator"
+          :validationError="ccValidator"
           autocomplete="cc-number"
           v-model="ccNumber"
         ></BulmaFieldInput>
@@ -341,7 +338,7 @@ export default {
           name="Cvv2"
           :max-length="4"
           :required="true"
-          help="CVV is the 3 or 4 digit card verification number on the back of many cards"
+          help="CVV is the 3 or 4 digit card verification number on the back of many credit cards"
           autocomplete="cc-csc"
           placeholder="123"
         ></BulmaFieldInput>

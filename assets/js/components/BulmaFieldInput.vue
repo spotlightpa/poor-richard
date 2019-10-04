@@ -12,11 +12,15 @@ export default {
       type: String,
       default: "label"
     },
-    value: [String, Number],
+    value: String,
     placeholder: String,
     help: String,
-    validator: String,
+    validationError: String,
     name: String,
+    minLength: {
+      type: Number,
+      default: null
+    },
     maxLength: {
       type: Number,
       default: null
@@ -38,6 +42,11 @@ export default {
       default: "text"
     }
   },
+  data() {
+    return {
+      validationMessage: ""
+    };
+  },
   computed: {
     fieldProps() {
       return {
@@ -45,7 +54,7 @@ export default {
         help: this.help,
         labelClass: this.labelClass,
         required: this.required,
-        validator: this.validator
+        validationMessage: this.validationMessage
       };
     },
     selected: {
@@ -59,12 +68,25 @@ export default {
         this.$emit("input", newVal);
       }
     }
+  },
+  methods: {
+    updateValidationMessage() {
+      this.validationMessage = this.$refs.input.validationMessage;
+    }
+  },
+  watch: {
+    validationError(newVal) {
+      this.$refs.input.setCustomValidity(newVal);
+      this.$nextTick(() => {
+        this.validationMessage = this.$refs.input.validationMessage;
+      });
+    }
   }
 };
 </script>
 
 <template>
-  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
+  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }" ref="field">
     <input
       class="input"
       :id="idForLabel"
@@ -74,8 +96,12 @@ export default {
       :autofocus="autofocus"
       :autocomplete="autocomplete"
       :required="required"
+      :minlength="minLength"
       :maxlength="maxLength"
       v-model="selected"
+      ref="input"
+      @invalid="updateValidationMessage"
+      @input="updateValidationMessage"
     />
   </BulmaField>
 </template>

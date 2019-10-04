@@ -13,7 +13,7 @@ export default {
       default: "label"
     },
     help: String,
-    validator: String,
+    validationError: String,
     required: {
       type: Boolean,
       default: false
@@ -22,6 +22,11 @@ export default {
     value: String,
     name: String
   },
+  data() {
+    return {
+      validationMessage: ""
+    };
+  },
   computed: {
     fieldProps() {
       return {
@@ -29,7 +34,7 @@ export default {
         help: this.help,
         labelClass: this.labelClass,
         required: this.required,
-        validator: this.validator
+        validationMessage: this.validationMessage
       };
     },
     selected: {
@@ -40,6 +45,11 @@ export default {
         this.$emit("input", newVal);
       }
     }
+  },
+  methods: {
+    updateValidationMessage() {
+      this.validationMessage = this.$refs.select.validationMessage;
+    }
   }
 };
 </script>
@@ -47,7 +57,15 @@ export default {
 <template>
   <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
     <div class="select is-fullwidth">
-      <select :id="idForLabel" :name="name" v-model="selected">
+      <select
+        v-model="selected"
+        :id="idForLabel"
+        :name="name"
+        :required="required"
+        ref="select"
+        @input="updateValidationMessage"
+        @invalid="updateValidationMessage"
+      >
         <option
           v-for="option in options"
           :key="option.text"

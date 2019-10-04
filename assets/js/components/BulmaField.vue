@@ -10,7 +10,7 @@ export default {
       default: "label"
     },
     help: String,
-    validator: String,
+    validationMessage: String,
     required: {
       type: Boolean,
       default: false
@@ -35,6 +35,10 @@ export default {
       <slot :required="required" :idForLabel="idForLabel"></slot>
     </div>
     <p v-if="help" class="help" v-text="help"></p>
-    <p v-if="validator" class="help is-danger" v-text="validator"></p>
+    <p
+      v-if="validationMessage"
+      class="help is-danger"
+      v-text="validationMessage"
+    ></p>
   </div>
 </template>
