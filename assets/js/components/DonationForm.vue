@@ -71,7 +71,7 @@ export default {
       return this.baseURL + "/donate/sorry/";
     },
     successURL() {
-      return this.baseURL + "/donate/success/";
+      return this.baseURL + "/donate/thanks/";
     },
     installments() {
       return this.recurring ? "999" : "";
