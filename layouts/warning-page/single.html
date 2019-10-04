@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ $dict := dict "class" "is-warning" "title" .Title "subtitle" .Subtitle "content" .Content }}
+  {{ partial "message-block.html" $dict }}
+{{ end }}
+
+{{ define "promo" }}
+  <!-- noop -->
+{{ end }}

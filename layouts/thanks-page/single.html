@@ -1,16 +1,7 @@
 {{ define "main" }}
-  <section class="section columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
-      <article class="message is-success">
-        <div class="message-header">
-          <p>{{ .Title }}</p>
-        </div>
-        <div class="message-body">
-          {{ .Content }}
-        </div>
-      </article>
-    </div>
-  </section>
+  {{ $subtitle := .Param "subtitle" }}
+  {{ $dict := dict "class" "is-success" "title" .Title "subtitle" $subtitle "content" .Content }}
+  {{ partial "message-block.html" $dict }}
 {{ end }}
 
 {{ define "promo" }}

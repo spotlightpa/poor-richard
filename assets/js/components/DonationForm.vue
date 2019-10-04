@@ -41,7 +41,8 @@ export default {
       countryOptions,
       stateOptions,
       monthOptions,
-      ccNumber: ""
+      ccNumber: "",
+      baseURL: "https://www.spotlightpa.org"
     };
   },
   components: {
@@ -55,12 +56,21 @@ export default {
       return currencyFormat.format(amount);
     }
   },
+  mounted(){
+    this.baseURL = window.location.host
+  },
   computed: {
     cnpURL() {
       let testing = true;
       return testing
         ? "https://verify.faas.cloud.clickandpledge.com"
         : "https://faas.cloud.clickandpledge.com";
+    },
+    sorryURL(){
+      return this.baseURL + "/donate/sorry/"
+    },
+    successURL(){
+      return this.baseURL + "/donate/success/"
     },
     installments() {
       return this.recurring ? "999" : "";
@@ -445,9 +455,9 @@ export default {
     </button>
 
     <!-- 3 pages need to be set up for each of the 3 transaction outcomes, namely Authorized, Declined, and Error -->
-    <input type="hidden" name="OnSuccessUrl" value="" />
-    <input type="hidden" name="OnDeclineUrl" value="" />
-    <input type="hidden" name="OnErrorUrl" value="" />
+    <input type="hidden" name="OnSuccessUrl" :value="successURL" />
+    <input type="hidden" name="OnDeclineUrl" :value="sorryURL" />
+    <input type="hidden" name="OnErrorUrl" :value="sorryURL" />
 
     <input
       type="hidden"
