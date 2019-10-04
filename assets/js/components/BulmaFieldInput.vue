@@ -44,7 +44,8 @@ export default {
   },
   data() {
     return {
-      validationMessage: ""
+      inputVal: this.value,
+      validationMessage: this.validationError
     };
   },
   computed: {
@@ -56,30 +57,23 @@ export default {
         required: this.required,
         validationMessage: this.validationMessage
       };
-    },
-    selected: {
-      get() {
-        return this.value;
-      },
-      set(newVal) {
-        if (this.maxLength && newVal.length > this.maxLength) {
-          newVal = newVal.slice(0, this.maxLength);
-        }
-        this.$emit("input", newVal);
-      }
     }
   },
   methods: {
-    updateValidationMessage() {
+    updateValidationMessage(ev) {
       this.validationMessage = this.$refs.input.validationMessage;
     }
   },
   watch: {
+    inputVal(newVal) {
+      if (this.maxLength && newVal.length > this.maxLength) {
+        newVal = newVal.slice(0, this.maxLength);
+      }
+      this.$emit("input", newVal);
+    },
     validationError(newVal) {
       this.$refs.input.setCustomValidity(newVal);
-      this.$nextTick(() => {
-        this.validationMessage = this.$refs.input.validationMessage;
-      });
+      this.validationMessage = newVal;
     }
   }
 };
@@ -98,8 +92,9 @@ export default {
       :required="required"
       :minlength="minLength"
       :maxlength="maxLength"
-      v-model="selected"
+      v-model="inputVal"
       ref="input"
+      @blur="updateValidationMessage"
       @invalid="updateValidationMessage"
       @input="updateValidationMessage"
     />

@@ -32,7 +32,9 @@ export default {
       firstName: "",
       middleInitial: "",
       lastName: "",
+      _setCardName: false,
       _cardName: "",
+      _setDonationName: false,
       _donationName: "",
       address1: "",
       address2: "",
@@ -78,7 +80,7 @@ export default {
     },
     cardName: {
       get() {
-        if (this._cardName) {
+        if (this._setCardName) {
           return this._cardName;
         }
         let name = `${this.firstName} ${this.middleInitial}`.trim();
@@ -86,17 +88,19 @@ export default {
         return name.trim();
       },
       set(newVal) {
+        this._setCardName = true;
         this._cardName = newVal;
       }
     },
     donationName: {
       get() {
-        if (this._donationName) {
+        if (this._setDonationName) {
           return this._donationName;
         }
         return `${this.firstName} ${this.lastName}`.trim();
       },
       set(newVal) {
+        this._setDonationName = true;
         this._donationName = newVal;
       }
     },

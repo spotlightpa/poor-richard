@@ -24,7 +24,8 @@ export default {
   },
   data() {
     return {
-      validationMessage: ""
+      selected: this.value,
+      validationMessage: this.validationError
     };
   },
   computed: {
@@ -36,14 +37,15 @@ export default {
         required: this.required,
         validationMessage: this.validationMessage
       };
+    }
+  },
+  watch: {
+    selected(newVal) {
+      this.$emit("input", newVal);
     },
-    selected: {
-      get() {
-        return this.value;
-      },
-      set(newVal) {
-        this.$emit("input", newVal);
-      }
+    validationError(newVal) {
+      this.$refs.select.setCustomValidity(newVal);
+      this.validationMessage = newVal;
     }
   },
   methods: {
@@ -63,7 +65,8 @@ export default {
         :name="name"
         :required="required"
         ref="select"
-        @input="updateValidationMessage"
+        @blur="updateValidationMessage"
+        @change="updateValidationMessage"
         @invalid="updateValidationMessage"
       >
         <option
