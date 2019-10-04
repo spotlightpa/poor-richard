@@ -1,5 +1,6 @@
 {{ define "main" }}
-  {{ $dict := dict "class" "is-warning" "title" .Title "subtitle" .Subtitle "content" .Content }}
+  {{ $subtitle := .Param "subtitle" }}
+  {{ $dict := dict "class" "is-warning" "title" .Title "subtitle" $subtitle "content" .Content }}
   {{ partial "message-block.html" $dict }}
 {{ end }}
 
