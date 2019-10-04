@@ -19,7 +19,8 @@ export default {
       default: false
     },
     options: Array,
-    value: String
+    value: String,
+    name: String
   },
   computed: {
     fieldProps() {
@@ -46,7 +47,7 @@ export default {
 <template>
   <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
     <div class="select is-fullwidth">
-      <select :id="idForLabel" v-model="selected">
+      <select :id="idForLabel" :name="name" v-model="selected">
         <option
           v-for="option in options"
           :key="option.text"

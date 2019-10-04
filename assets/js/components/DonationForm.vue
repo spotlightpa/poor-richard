@@ -4,6 +4,7 @@ import BulmaFieldInput from "./BulmaFieldInput.vue";
 import BulmaFieldRadio from "./BulmaFieldRadio.vue";
 import BulmaFieldSelect from "./BulmaFieldSelect.vue";
 
+import { hasValidLuhn } from "../luhn.js";
 import {
   codeUSA,
   countryOptions,
@@ -19,7 +20,6 @@ let currencyFormat = new Intl.NumberFormat("en-US", {
 export default {
   data() {
     return {
-      testing: true,
       amounts: [["25", "50", "75", "100"], ["200", "500", "1000"]],
       donationAmount: "50",
       showOtherAmount: false,
@@ -40,7 +40,8 @@ export default {
       country: codeUSA,
       countryOptions,
       stateOptions,
-      monthOptions
+      monthOptions,
+      ccNumber: ""
     };
   },
   components: {
@@ -56,7 +57,8 @@ export default {
   },
   computed: {
     cnpURL() {
-      return this.testing
+      let testing = true;
+      return testing
         ? "https://verify.faas.cloud.clickandpledge.com"
         : "https://faas.cloud.clickandpledge.com";
     },
@@ -105,6 +107,14 @@ export default {
         });
       }
       return years;
+    },
+    ccValidator() {
+      return hasValidLuhn(this.ccNumber)
+        ? ""
+        : "Please enter a valid credit card number";
+    },
+    ccDigits() {
+      return this.ccNumber.replace(/\D/g, "")
     }
   },
   methods: {
@@ -315,12 +325,14 @@ export default {
     ></BulmaFieldInput>
     <div class="columns">
       <div class="column">
+        <input type="hidden" name="CardNumber" :value="ccDigits">
         <BulmaFieldInput
           label="Credit Card Number"
-          name="CardNumber"
           :max-length="17"
           :required="true"
+          :validator="ccValidator"
           autocomplete="cc-number"
+          v-model="ccNumber"
         ></BulmaFieldInput>
       </div>
       <div class="column">
