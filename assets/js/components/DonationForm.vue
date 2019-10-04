@@ -447,10 +447,6 @@ export default {
     <input type="hidden" name="OnDeclineUrl" value="" />
     <input type="hidden" name="OnErrorUrl" value="" />
 
-    <input type="hidden" name="Thankyou_SuccessRedirectURL" value="" />
-    <input type="hidden" name="Thankyou_DeclineRedirecturl" value="" />
-
-    <!-- Click &amp; pledge account information -->
     <input
       type="hidden"
       name="AccountGuid"
@@ -459,8 +455,6 @@ export default {
     <input type="hidden" name="AccountID" value="60246" />
     <input type="hidden" name="accountAlias" value="lenfestinstitute" />
     <input type="hidden" name="ConnectCampaignAlias" value="SpotlightPA" />
-    <!-- If no additional receipt nodes are listed the campaign receipt settings will be used. -->
-    <!-- You may customize the receipt further by setting a different receipt template to be sent-->
     <input type="hidden" name="SendReceipt" value="true" />
     <input
       type="hidden"
@@ -469,6 +463,6 @@ export default {
     />
     <input type="hidden" name="OrderMode" value="Production" />
     <input type="hidden" name="TransactionType" value="Payment" />
-    <input name="PaymentType" type="hidden" value="CreditCard" />
+    <input type="hidden" name="PaymentType" value="CreditCard" />
   </form>
 </template>
