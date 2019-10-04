@@ -5,6 +5,12 @@ export function openModal() {
   if (!modal) {
     return;
   }
+  ga("send", "event", {
+    eventCategory: "Modal interaction",
+    eventAction: "Saw modal",
+    nonInteraction: true
+  });
+
   let root = document.body.parentElement;
   let closeBtn = modal.querySelectorAll("[aria-label=close]");
   let bg = modal.querySelectorAll(".modal-background");
