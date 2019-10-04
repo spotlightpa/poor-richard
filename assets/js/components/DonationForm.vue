@@ -139,25 +139,27 @@ export default {
       <button
         class="button is-primary"
         :class="{ 'is-outlined': donationAmount !== amount }"
+        type="button"
         v-for="amount in row"
-        @click.prevent="setDonationAmount(amount)"
+        @click="setDonationAmount(amount)"
       >
         ${{ amount }}
       </button>
       <button
         v-if="i == 1"
         class="button is-primary is-outlined"
-        @click.prevent="toggleOtherAmount"
+        type="button"
+        @click="toggleOtherAmount"
       >
         Other
       </button>
     </div>
     <BulmaFieldInput
       v-if="showOtherAmount"
-      label="Other Amount"
-      name="name"
       v-model="donationAmount"
+      label="Other Amount"
       :autofocus="true"
+      :required="true"
     ></BulmaFieldInput>
     <input type="hidden" name="UnitPrice" :value="donationAmount" />
     <input type="hidden" name="ItemID" value="1" />

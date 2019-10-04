@@ -15,7 +15,10 @@
     "start": "parcel assets/js/main*.js & hugo server & wait"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.6.2",
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@vue/component-compiler-utils": "^3.0.0",
     "@zeit/git-hooks": "^0.1.4",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.7.5",
@@ -23,12 +26,9 @@
     "postcss-cli": "^6.1.2",
     "prettier": "^1.17.1",
     "vue": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.6.2",
-    "@vue/component-compiler-utils": "^3.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-hot-reload-api": "^2.3.4"
   }
 }
