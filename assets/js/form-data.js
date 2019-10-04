@@ -282,16 +282,16 @@ export const stateOptions = [
 ];
 
 export const monthOptions = [
-  { value: "01", text: "January" },
-  { value: "02", text: "February" },
-  { value: "03", text: "March" },
-  { value: "04", text: "April" },
-  { value: "05", text: "May" },
-  { value: "06", text: "June" },
-  { value: "07", text: "July" },
-  { value: "08", text: "August" },
-  { value: "09", text: "September" },
-  { value: "10", text: "October" },
-  { value: "11", text: "November" },
-  { value: "12", text: "December" }
+  { value: "01", text: "01 - January" },
+  { value: "02", text: "02 - February" },
+  { value: "03", text: "03 - March" },
+  { value: "04", text: "04 - April" },
+  { value: "05", text: "05 - May" },
+  { value: "06", text: "06 - June" },
+  { value: "07", text: "07 - July" },
+  { value: "08", text: "08 - August" },
+  { value: "09", text: "09 - September" },
+  { value: "10", text: "10 - October" },
+  { value: "11", text: "11 - November" },
+  { value: "12", text: "12 - December" }
 ];

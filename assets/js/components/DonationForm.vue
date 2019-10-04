@@ -42,6 +42,7 @@ export default {
       stateOptions,
       monthOptions,
       ccNumber: "",
+      testing: false,
       baseURL: "https://www.spotlightpa.org"
     };
   },
@@ -56,21 +57,21 @@ export default {
       return currencyFormat.format(amount);
     }
   },
-  mounted(){
-    this.baseURL = window.location.host
+  mounted() {
+    this.baseURL = window.location.origin;
+    this.testing = window.location.search.match(/testing/);
   },
   computed: {
     cnpURL() {
-      let testing = true;
-      return testing
+      return this.testing
         ? "https://verify.faas.cloud.clickandpledge.com"
         : "https://faas.cloud.clickandpledge.com";
     },
-    sorryURL(){
-      return this.baseURL + "/donate/sorry/"
+    sorryURL() {
+      return this.baseURL + "/donate/sorry/";
     },
-    successURL(){
-      return this.baseURL + "/donate/success/"
+    successURL() {
+      return this.baseURL + "/donate/success/";
     },
     installments() {
       return this.recurring ? "999" : "";
