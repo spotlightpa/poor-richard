@@ -64,7 +64,6 @@ export default {
     },
     updateValue(ev) {
       let newVal = ev.target.value;
-      console.log(ev.type, newVal);
       if (this.maxLength && newVal.length > this.maxLength) {
         newVal = newVal.slice(0, this.maxLength);
       }
