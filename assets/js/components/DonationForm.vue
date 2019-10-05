@@ -32,10 +32,10 @@ export default {
       firstName: "",
       middleInitial: "",
       lastName: "",
-      _setCardName: false,
-      _cardName: "",
-      _setDonationName: false,
-      _donationName: "",
+      setCardName: false,
+      cardNameVal: "",
+      setDonationName: false,
+      donationNameVal: "",
       address1: "",
       address2: "",
       address3: "",
@@ -80,28 +80,28 @@ export default {
     },
     cardName: {
       get() {
-        if (this._setCardName) {
-          return this._cardName;
+        if (this.setCardName) {
+          return this.cardNameVal || "";
         }
         let name = `${this.firstName} ${this.middleInitial}`.trim();
         name += ` ${this.lastName}`;
         return name.trim();
       },
       set(newVal) {
-        this._setCardName = true;
-        this._cardName = newVal;
+        this.setCardName = true;
+        this.cardNameVal = newVal;
       }
     },
     donationName: {
       get() {
-        if (this._setDonationName) {
-          return this._donationName;
+        if (this.setDonationName) {
+          return this.donationNameVal;
         }
         return `${this.firstName} ${this.lastName}`.trim();
       },
       set(newVal) {
-        this._setDonationName = true;
-        this._donationName = newVal;
+        this.setDonationName = true;
+        this.donationNameVal = newVal;
       }
     },
     isUSA() {
@@ -281,7 +281,6 @@ export default {
           :required="true"
           autocomplete="billing address-level1"
           placeholder="Harrisburg"
-          v-model="cardName"
         ></BulmaFieldInput>
       </div>
       <div class="column">

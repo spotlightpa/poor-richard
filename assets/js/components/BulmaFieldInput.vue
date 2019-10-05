@@ -44,8 +44,7 @@ export default {
   },
   data() {
     return {
-      inputVal: this.value,
-      validationMessage: this.validationError
+      validationMessage: ""
     };
   },
   computed: {
@@ -61,16 +60,19 @@ export default {
   },
   methods: {
     updateValidationMessage(ev) {
-      this.validationMessage = this.$refs.input.validationMessage;
-    }
-  },
-  watch: {
-    inputVal(newVal) {
+      this.validationMessage = ev.target.validationMessage;
+    },
+    updateValue(ev) {
+      let newVal = ev.target.value;
+      console.log(ev.type, newVal);
       if (this.maxLength && newVal.length > this.maxLength) {
         newVal = newVal.slice(0, this.maxLength);
       }
+      this.updateValidationMessage(ev);
       this.$emit("input", newVal);
-    },
+    }
+  },
+  watch: {
     validationError(newVal) {
       this.$refs.input.setCustomValidity(newVal);
       this.validationMessage = newVal;
@@ -92,11 +94,11 @@ export default {
       :required="required"
       :minlength="minLength"
       :maxlength="maxLength"
-      v-model="inputVal"
+      :value="value"
       ref="input"
       @blur="updateValidationMessage"
       @invalid="updateValidationMessage"
-      @input="updateValidationMessage"
+      @input="updateValue"
     />
   </BulmaField>
 </template>
