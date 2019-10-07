@@ -44,13 +44,13 @@ export default {
 
 <template>
   <BulmaField v-bind="fieldProps">
-    <label class="radio" v-for="option in options" :key="option.value">
+    <label v-for="option in options" :key="option.value" class="radio">
       <input
+        v-model="selected"
         type="radio"
         :name="name"
         :value="option.value"
         :required="required"
-        v-model="selected"
       />
       {{ option.text }}
     </label>

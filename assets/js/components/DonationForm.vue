@@ -22,6 +22,17 @@ function ccValidator(val) {
 }
 
 export default {
+  components: {
+    BulmaField,
+    BulmaFieldInput,
+    BulmaFieldRadio,
+    BulmaFieldSelect
+  },
+  filters: {
+    formatUSD(amount) {
+      return currencyFormat.format(amount);
+    }
+  },
   data() {
     return {
       testing: false,
@@ -61,21 +72,6 @@ export default {
       setDonationName: false,
       donationNameVal: ""
     };
-  },
-  components: {
-    BulmaField,
-    BulmaFieldInput,
-    BulmaFieldRadio,
-    BulmaFieldSelect
-  },
-  filters: {
-    formatUSD(amount) {
-      return currencyFormat.format(amount);
-    }
-  },
-  mounted() {
-    this.baseURL = window.location.origin;
-    this.testing = window.location.search.match(/testing/);
   },
   computed: {
     cnpURL() {
@@ -148,6 +144,10 @@ export default {
         : "";
     }
   },
+  mounted() {
+    this.baseURL = window.location.origin;
+    this.testing = window.location.search.match(/testing/);
+  },
   methods: {
     setDonationAmount(amount) {
       this.donationAmount = amount;
@@ -166,12 +166,13 @@ export default {
     <h2 class="title">
       Donation Amount
     </h2>
-    <div v-for="(row, i) of amounts" class="buttons">
+    <div v-for="(row, i) of amounts" :key="i" class="buttons">
       <button
+        v-for="amount in row"
+        :key="amount"
         class="button is-primary"
         :class="{ 'is-outlined': donationAmount !== amount }"
         type="button"
-        v-for="amount in row"
         @click="setDonationAmount(amount)"
       >
         ${{ amount }}
@@ -202,9 +203,9 @@ export default {
       Want to make it recurring?
     </h2>
     <BulmaFieldRadio
+      v-model="recurring"
       :options="recurringOptions"
       name="recurring"
-      v-model="recurring"
     ></BulmaFieldRadio>
     <input type="hidden" name="RecurringMethod" value="Subscription" />
     <input type="hidden" name="Installment" :value="installments" />
@@ -214,35 +215,35 @@ export default {
     <div class="columns">
       <div class="column">
         <BulmaFieldInput
+          v-model="firstName"
           label="First Name"
           name="BillingFirstName"
           :max-length="50"
           :required="true"
           autocomplete="billing given-name"
           placeholder="William"
-          v-model="firstName"
         ></BulmaFieldInput>
       </div>
       <div class="column">
         <BulmaFieldInput
+          v-model="middleInitial"
           label="Middle Initial"
           name="BillingMI"
           :max-length="1"
           :required="false"
           autocomplete="billing additional-name"
           placeholder=""
-          v-model="middleInitial"
         ></BulmaFieldInput>
       </div>
       <div class="column">
         <BulmaFieldInput
+          v-model="lastName"
           label="Last Name"
           name="BillingLastName"
           :max-length="50"
           :required="true"
           autocomplete="billing family-name"
           placeholder="Penn"
-          v-model="lastName"
         ></BulmaFieldInput>
       </div>
     </div>
@@ -257,36 +258,36 @@ export default {
       placeholder="mysylvania@example.com"
     ></BulmaFieldInput>
     <BulmaFieldSelect
+      v-model="country"
       label="Country"
       :options="countryOptions"
       name="BillingCountryCode"
       :required="true"
       autocomplete="billing country"
-      v-model="country"
     ></BulmaFieldSelect>
     <BulmaFieldInput
+      v-model="address1"
       label="Address"
       name="BillingAddress1"
       :max-length="100"
       :required="true"
       autocomplete="billing address-line1"
       placeholder="123 Main St."
-      v-model="address1"
     ></BulmaFieldInput>
     <BulmaFieldInput
       v-if="address1"
+      v-model="address2"
       name="BillingAddress2"
       :max-length="100"
       autocomplete="billing address-line2"
       placeholder="Apt. 2B"
-      v-model="address2"
     ></BulmaFieldInput>
     <BulmaFieldInput
       v-if="address2"
+      v-model="address3"
       name="BillingAddress3"
       :max-length="100"
       autocomplete="billing address-line3"
-      v-model="address3"
     ></BulmaFieldInput>
 
     <div class="columns">
@@ -349,12 +350,12 @@ export default {
 
     <h2 class="title">Payment Details</h2>
     <BulmaFieldInput
+      v-model="cardName"
       label="Name on Card"
       name="NameOnCard"
       :required="true"
       autocomplete="cc-name"
       placeholder="William Penn"
-      v-model="cardName"
     ></BulmaFieldInput>
     <div class="columns">
       <div class="column">
@@ -410,6 +411,7 @@ export default {
     <h2 class="title">Additional Information</h2>
     <input name="FieldName1" type="hidden" value="Donor Name" />
     <BulmaFieldInput
+      v-model="donationName"
       label='How would you like your name to appear in the "Founding Donors" section of our website?'
       label-class=""
       help="To ensure full transparency, we cannot accept anonymous donations."
@@ -418,11 +420,10 @@ export default {
       autocomplete="name"
       :required="true"
       :max-length="500"
-      v-model="donationName"
     ></BulmaFieldInput>
 
     <input name="FieldName2" type="hidden" value="Additional comments" />
-    <BulmaField label="Additional Comments" v-slot="{ idForLabel }">
+    <BulmaField v-slot="{ idForLabel }" label="Additional Comments">
       <textarea
         :id="idForLabel"
         name="FieldValue2"
@@ -431,7 +432,7 @@ export default {
       ></textarea>
     </BulmaField>
 
-    <BulmaField label="I would like to receive:" labelClass="">
+    <BulmaField label="I would like to receive:" label-class="">
       <input name="FieldName3" type="hidden" value="Newsletter" />
       <label class="checkbox">
         <input type="checkbox" name="FieldValue3" value="yes" checked />

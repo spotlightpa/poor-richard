@@ -58,6 +58,15 @@ export default {
       };
     }
   },
+  watch: {
+    value(newVal) {
+      if (this.validator) {
+        let message = this.validator(newVal);
+        this.$refs.input.setCustomValidity(message);
+        this.validationMessage = message;
+      }
+    }
+  },
   methods: {
     updateValidationMessage(ev) {
       this.validationMessage = ev.target.validationMessage;
@@ -70,24 +79,16 @@ export default {
       this.updateValidationMessage(ev);
       this.$emit("input", newVal);
     }
-  },
-  watch: {
-    value(newVal) {
-      if (this.validator) {
-        let message = this.validator(newVal);
-        this.$refs.input.setCustomValidity(message);
-        this.validationMessage = message;
-      }
-    }
   }
 };
 </script>
 
 <template>
-  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }" ref="field">
+  <BulmaField ref="field" v-slot="{ idForLabel }" v-bind="fieldProps">
     <input
-      class="input"
       :id="idForLabel"
+      ref="input"
+      class="input"
       :type="type"
       :name="name"
       :placeholder="placeholder"
@@ -97,7 +98,6 @@ export default {
       :minlength="minLength"
       :maxlength="maxLength"
       :value="value"
-      ref="input"
       @blur="updateValidationMessage"
       @invalid="updateValidationMessage"
       @input="updateValue"

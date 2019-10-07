@@ -54,14 +54,14 @@ export default {
 </script>
 
 <template>
-  <BulmaField v-bind="fieldProps" v-slot="{ idForLabel }">
+  <BulmaField v-slot="{ idForLabel }" v-bind="fieldProps">
     <div class="select is-fullwidth">
       <select
-        v-model="selected"
         :id="idForLabel"
+        ref="select"
+        v-model="selected"
         :name="name"
         :required="required"
-        ref="select"
         @blur="updateValidationMessage"
         @change="updateValidationMessage"
         @invalid="updateValidationMessage"
