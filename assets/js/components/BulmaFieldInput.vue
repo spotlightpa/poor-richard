@@ -61,9 +61,6 @@ export default {
   methods: {
     updateValidationMessage(ev) {
       this.validationMessage = ev.target.validationMessage;
-      if (!this.validationMessage && this.validator) {
-        this.validationMessage = this.validator(ev.target.value);
-      }
     },
     updateValue(ev) {
       let newVal = ev.target.value;
@@ -75,9 +72,12 @@ export default {
     }
   },
   watch: {
-    validationError(newVal) {
-      this.$refs.input.setCustomValidity(newVal);
-      this.validationMessage = newVal;
+    value(newVal) {
+      if (this.validator) {
+        let message = this.validator(newVal);
+        this.$refs.input.setCustomValidity(message);
+        this.validationMessage = message;
+      }
     }
   }
 };
