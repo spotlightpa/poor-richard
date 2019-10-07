@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'>
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -28,7 +28,10 @@
   {{ end }}
   {{ block "extra-head" . }}{{ end }}
 </head>
-<body>
+<body
+  data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
+  {{with .Param "modal-exclude" }}data-modal-exclude="1"{{end}}
+>
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
   {{ if .Param "banner-active" }}
     {{ partial "banner.html" . }}

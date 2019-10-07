@@ -6,8 +6,8 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "checkformat": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}",
-    "format": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
+    "checkformat": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}",
+    "format": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
     "git-pre-push": "yarn run checkformat",
     "build:parcel": "parcel build assets/js/main*.js",
     "build:stage": "yarn run build:parcel && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
@@ -15,12 +15,20 @@
     "start": "parcel assets/js/main*.js & hugo server & wait"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.6.2",
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@vue/component-compiler-utils": "^3.0.0",
     "@zeit/git-hooks": "^0.1.4",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.7.5",
     "parcel-bundler": "^1.12.3",
     "postcss-cli": "^6.1.2",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "vue-hot-reload-api": "^2.3.4"
   }
 }

@@ -1,15 +1,10 @@
 {{ define "main" }}
-  <div class="section columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
-      <article class="message is-warning">
-        <div class="message-header">
-          <p>Not Found</p>
-          <p>Error 404</p>
-        </div>
-        <div class="message-body">
-          The requested page was not found. <a href="/" class="has-text-weight-bold">Go home?</a>
-        </div>
-      </article>
-    </div>
-  </div>
+  {{ $content :=  "The requested page was not found. <a href='/' class='has-text-weight-bold'>Go home?</a>" | safeHTML }}
+  {{ $dict := dict "class" "is-danger" "title" "Not Found" "subtitle" "Error 404" "content" $content }}
+  {{ partial "message-block.html" $dict }}
+
+{{ end }}
+
+{{ define "promo" }}
+  <!-- noop -->
 {{ end }}
