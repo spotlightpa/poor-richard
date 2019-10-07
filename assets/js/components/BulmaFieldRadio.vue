@@ -13,7 +13,6 @@ export default {
       default: "label"
     },
     help: String,
-    validator: String,
     required: {
       type: Boolean,
       default: false
