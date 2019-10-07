@@ -67,7 +67,7 @@ export default {
         @invalid="updateValidationMessage"
       >
         <option
-          v-for="option in options"
+          v-for="option of options"
           :key="option.text"
           :value="option.value"
           v-text="option.text"

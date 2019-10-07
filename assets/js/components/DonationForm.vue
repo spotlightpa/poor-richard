@@ -168,7 +168,7 @@ export default {
     </h2>
     <div v-for="(row, i) of amounts" :key="i" class="buttons">
       <button
-        v-for="amount in row"
+        v-for="amount of row"
         :key="amount"
         class="button is-primary"
         :class="{ 'is-outlined': donationAmount !== amount }"
