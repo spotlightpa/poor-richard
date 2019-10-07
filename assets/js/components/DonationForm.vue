@@ -24,6 +24,8 @@ function ccValidator(val) {
 export default {
   data() {
     return {
+      testing: false,
+      baseURL: "https://www.spotlightpa.org",
       amounts: [["25", "50", "75", "100"], ["200", "500", "1000"]],
       donationAmount: "50",
       showOtherAmount: false,
@@ -36,24 +38,28 @@ export default {
       firstName: "",
       middleInitial: "",
       lastName: "",
-      setCardName: false,
-      cardNameVal: "",
-      ccValidator,
-      setDonationName: false,
-      donationNameVal: "",
+      email: "",
+      country: codeUSA,
+      countryOptions,
       address1: "",
       address2: "",
       address3: "",
+      city: "",
+      province: "",
+      state: "Pennsylvania",
+      stateOptions,
+      zipcode: "",
+      phoneNumber: "",
+      setCardName: false,
+      cardNameVal: "",
+      ccNumber: "",
+      ccValidator,
       cvv: "",
       expMonth: "",
-      expYear: "",
-      country: codeUSA,
-      countryOptions,
-      stateOptions,
       monthOptions,
-      ccNumber: "",
-      testing: false,
-      baseURL: "https://www.spotlightpa.org"
+      expYear: "",
+      setDonationName: false,
+      donationNameVal: ""
     };
   },
   components: {
@@ -241,6 +247,7 @@ export default {
       </div>
     </div>
     <BulmaFieldInput
+      v-model="email"
       label="Email"
       name="BillingEmail"
       :max-length="50"
@@ -285,6 +292,7 @@ export default {
     <div class="columns">
       <div class="column">
         <BulmaFieldInput
+          v-model="city"
           label="City"
           name="BillingCity"
           :max-length="50"
@@ -296,19 +304,19 @@ export default {
       <div class="column">
         <BulmaFieldSelect
           v-if="isUSA"
+          v-model="state"
           label="State"
           name="BillingStateProvince"
-          value="Pennsylvania"
           :options="stateOptions"
           :required="true"
           autocomplete="billing address-level2"
         ></BulmaFieldSelect>
         <BulmaFieldInput
           v-else
-          label="Province or State"
+          v-model="province"
+          label="Province or Region"
           name="BillingStateProvince"
           :max-length="50"
-          value=""
           :required="true"
           autocomplete="billing address-level2"
         ></BulmaFieldInput>
@@ -317,6 +325,7 @@ export default {
     <div class="columns">
       <div class="column">
         <BulmaFieldInput
+          v-model="zipcode"
           :label="zipOrPostalCode"
           name="BillingPostalCode"
           placeholder="17120"
@@ -327,6 +336,7 @@ export default {
       </div>
       <div class="column">
         <BulmaFieldInput
+          v-model="phoneNumber"
           label="Phone number"
           type="tel"
           name="BillingPhone"
@@ -435,7 +445,7 @@ export default {
       </label>
     </BulmaField>
 
-    <h2 class="title">Terms & Conditions</h2>
+    <h2 class="title">Terms &amp; Conditions</h2>
     <p>
       Your gift is tax-deductible to the extent allowed by law. Please note that
       all gifts are donated to The Lenfest Institute for Journalism and directed
