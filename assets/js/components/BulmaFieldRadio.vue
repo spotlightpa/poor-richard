@@ -6,11 +6,6 @@ export default {
   components: {
     BulmaField
   },
-  data() {
-    return {
-      selected: this.value
-    };
-  },
   props: {
     label: String,
     labelClass: {
@@ -33,14 +28,16 @@ export default {
         label: this.label,
         help: this.help,
         labelClass: this.labelClass,
-        required: this.required,
-        validator: this.validator
+        required: this.required
       };
-    }
-  },
-  watch: {
-    selected(newVal) {
-      this.$emit("input", newVal);
+    },
+    selected: {
+      get() {
+        return this.value;
+      },
+      set(newVal) {
+        this.$emit("input", newVal);
+      }
     }
   }
 };

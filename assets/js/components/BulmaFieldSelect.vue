@@ -23,7 +23,6 @@ export default {
   },
   data() {
     return {
-      selected: this.value,
       validationMessage: ""
     };
   },
@@ -36,20 +35,19 @@ export default {
         required: this.required,
         validationMessage: this.validationMessage
       };
-    }
-  },
-  watch: {
-    selected(newVal) {
-      this.$emit("input", newVal);
     },
-    validationError(newVal) {
-      this.$refs.select.setCustomValidity(newVal);
-      this.validationMessage = newVal;
+    selected: {
+      get() {
+        return this.value;
+      },
+      set(newVal) {
+        this.$emit("input", newVal);
+      }
     }
   },
   methods: {
-    updateValidationMessage() {
-      this.validationMessage = this.$refs.select.validationMessage;
+    updateValidationMessage(ev) {
+      this.validationMessage = ev.target.validationMessage;
     }
   }
 };

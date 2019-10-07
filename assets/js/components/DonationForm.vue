@@ -45,6 +45,8 @@ export default {
       address2: "",
       address3: "",
       cvv: "",
+      expMonth: "",
+      expYear: "",
       country: codeUSA,
       countryOptions,
       stateOptions,
@@ -374,6 +376,7 @@ export default {
     <div class="columns">
       <div class="column">
         <BulmaFieldSelect
+          v-model="expMonth"
           label="Expiration Month"
           name="ExpirationMonth"
           :options="monthOptions"
@@ -383,6 +386,7 @@ export default {
       </div>
       <div class="column">
         <BulmaFieldSelect
+          v-model="expYear"
           label="Expiration Year"
           name="ExpirationYear"
           :options="expirationYears"
