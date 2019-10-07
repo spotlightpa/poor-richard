@@ -17,6 +17,10 @@ let currencyFormat = new Intl.NumberFormat("en-US", {
   currency: "USD"
 });
 
+function ccValidator(val) {
+  return hasValidLuhn(val) ? "" : "Please enter a valid credit card number";
+}
+
 export default {
   data() {
     return {
@@ -34,11 +38,13 @@ export default {
       lastName: "",
       setCardName: false,
       cardNameVal: "",
+      ccValidator,
       setDonationName: false,
       donationNameVal: "",
       address1: "",
       address2: "",
       address3: "",
+      cvv: "",
       country: codeUSA,
       countryOptions,
       stateOptions,
@@ -123,13 +129,15 @@ export default {
       }
       return years;
     },
-    ccValidator() {
-      return hasValidLuhn(this.ccNumber)
-        ? ""
-        : "Please enter a valid credit card number";
-    },
     ccDigits() {
       return this.ccNumber.replace(/\D/g, "");
+    },
+    timePeriod() {
+      return this.recurring === "Month"
+        ? "monthly"
+        : this.recurring === "Year"
+        ? "annually"
+        : "";
     }
   },
   methods: {
@@ -343,15 +351,18 @@ export default {
           label="Credit Card Number"
           :max-length="17"
           :required="true"
-          :validationError="ccValidator"
+          :validator="ccValidator"
           autocomplete="cc-number"
           v-model="ccNumber"
         ></BulmaFieldInput>
       </div>
       <div class="column">
+        <!-- Must use v-model with min-length or invalidation will erase partial input -->
         <BulmaFieldInput
+          v-model="cvv"
           label="CVV"
           name="Cvv2"
+          :min-length="3"
           :max-length="4"
           :required="true"
           help="CVV is the 3 or 4 digit card verification number on the back of many credit cards"
@@ -438,7 +449,12 @@ export default {
     </p>
     <h2 class="title">
       You will be charged:
-      <span class="is-pulled-right">{{ donationAmount | formatUSD }}</span>
+      <span class="is-hidden-mobile is-pulled-right">
+        {{ donationAmount | formatUSD }} {{ timePeriod }}
+      </span>
+      <span class="is-hidden-tablet">
+        {{ donationAmount | formatUSD }} {{ timePeriod }}
+      </span>
     </h2>
 
     <input type="hidden" name="Campaignid" value="90855" />

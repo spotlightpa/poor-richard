@@ -15,7 +15,7 @@ export default {
     value: String,
     placeholder: String,
     help: String,
-    validationError: String,
+    validator: Function,
     name: String,
     minLength: {
       type: Number,
@@ -61,6 +61,9 @@ export default {
   methods: {
     updateValidationMessage(ev) {
       this.validationMessage = ev.target.validationMessage;
+      if (!this.validationMessage && this.validator) {
+        this.validationMessage = this.validator(ev.target.value);
+      }
     },
     updateValue(ev) {
       let newVal = ev.target.value;

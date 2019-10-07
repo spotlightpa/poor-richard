@@ -31,7 +31,7 @@ export default {
       {{ label }}
       <span v-if="required" class="has-text-danger">*</span>
     </label>
-    <div class="control is-expanded">
+    <div class="control">
       <slot :required="required" :idForLabel="idForLabel"></slot>
     </div>
     <p v-if="help" class="help" v-text="help"></p>

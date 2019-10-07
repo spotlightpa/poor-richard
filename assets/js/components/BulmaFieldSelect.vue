@@ -13,7 +13,6 @@ export default {
       default: "label"
     },
     help: String,
-    validationError: String,
     required: {
       type: Boolean,
       default: false
@@ -25,7 +24,7 @@ export default {
   data() {
     return {
       selected: this.value,
-      validationMessage: this.validationError
+      validationMessage: ""
     };
   },
   computed: {
