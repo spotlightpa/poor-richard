@@ -89,7 +89,7 @@ export default {
     cardName: {
       get() {
         if (this.setCardName) {
-          return this.cardNameVal || "";
+          return this.cardNameVal;
         }
         let name = `${this.firstName} ${this.middleInitial}`.trim();
         name += ` ${this.lastName}`;
@@ -350,12 +350,13 @@ export default {
       <div class="column">
         <input type="hidden" name="CardNumber" :value="ccDigits" />
         <BulmaFieldInput
+          v-model="ccNumber"
           label="Credit Card Number"
+          :min-length="15"
           :max-length="17"
           :required="true"
           :validator="ccValidator"
           autocomplete="cc-number"
-          v-model="ccNumber"
         ></BulmaFieldInput>
       </div>
       <div class="column">
