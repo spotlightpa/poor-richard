@@ -1,0 +1,20 @@
+{{ $heroName := .Param "hero-image" }}
+{{ $heroCredit := .Param "hero-image-credit" }}
+{{ $heroDescription := .Param "hero-image-description" }}
+{{ $imgOpts := dict "imagePath" $heroName }}
+{{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
+{{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+{{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
+{{ $size := .Param "hero-image-size" | default "inline" }}
+{{ if eq $size "inline" }}
+  {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
+  {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
+  {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+{{ else if eq $size "full" }}
+  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "is-full-bleed has-margin-bottom" | merge $imgOpts }}
+{{ end }}
+
+{{ $imgOpts | partial "image-block.html" }}

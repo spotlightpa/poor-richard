@@ -34,6 +34,7 @@
         {{ with $byline }}<author>{{.}}</author>{{end}}
         <guid>{{ .Permalink }}</guid>
         <description>
+          {{ partial "hero-image-block.html" . | html }}
           {{ .Content | html }}
         </description>
         {{ $imgName := .Param "hero-image" }}
