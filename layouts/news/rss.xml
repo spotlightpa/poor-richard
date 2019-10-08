@@ -1,5 +1,9 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/"
+>
   <channel>
     <title>
       {{- .Site.Title }}{{ with .Title }}: {{.}}{{ end -}}
@@ -30,29 +34,26 @@
         {{ with $byline }}<author>{{.}}</author>{{end}}
         <guid>{{ .Permalink }}</guid>
         <description>
-          {{ $heroName := .Param "hero-image" }}
-          {{ $heroCredit := .Param "hero-image-credit" }}
-          {{ $heroDescription := .Param "hero-image-description" }}
-          {{ $imgOpts := dict "imagePath" $heroName }}
-          {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
-          {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
-          {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
-          {{ $size := .Param "hero-image-size" | default "inline" }}
-          {{ if eq $size "inline" }}
-            {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
-            {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
-            {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-            {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
-          {{ else if eq $size "full" }}
-            {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-            {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-            {{ $imgOpts = dict "figClass" "is-full-bleed has-margin-bottom" | merge $imgOpts }}
-          {{ end }}
-
-          {{ $imgOpts | partial "image-block.html" | html}}
-
           {{ .Content | html }}
         </description>
+        {{ $imgName := .Param "hero-image" }}
+        {{ $imgCredit := .Param "hero-image-credit" }}
+        {{ $imgDescription := .Param "hero-image-description" }}
+
+        {{ $img := resources.GetMatch $imgName }}
+        {{ if $img }}
+          {{ $imgShrunk :=  $img.Fill "1000x1000" }}
+          <media:content
+            url="{{ $imgShrunk.Permalink }}"
+            type="{{ $imgShrunk.MediaType }}"
+            expression="full"
+            width="{{ $imgShrunk.Width }}"
+            height="{{ $imgShrunk.Height }}"
+          >
+            <media:description type="plain">{{ $imgDescription }}</media:description>
+            <media:credit role="photographer" scheme="urn:ebu">{{ $imgCredit }}</media:credit>
+          </media:content>
+        {{ end }}
       </item>
     {{ end }}
   </channel>
