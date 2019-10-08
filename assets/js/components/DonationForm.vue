@@ -147,6 +147,11 @@ export default {
   mounted() {
     this.baseURL = window.location.origin;
     this.testing = window.location.search.match(/testing/);
+    this.$ga("send", "event", {
+      eventCategory: "Donation form",
+      eventAction: "Saw donation form",
+      nonInteraction: true
+    });
   },
   methods: {
     setDonationAmount(amount) {
@@ -156,13 +161,38 @@ export default {
     toggleOtherAmount() {
       this.donationAmount = null;
       this.showOtherAmount = true;
+    },
+    sendFocus(ev) {
+      let [label] = ev.target.labels;
+      let eventLabel = label ? label.innerText : ev.target.name;
+      this.$ga("send", "event", {
+        eventCategory: "Donation form",
+        eventAction: "Focused a field",
+        eventLabel
+      });
+    },
+    sendSubmit(ev) {
+      let eventLabel = ev.target.form.checkValidity()
+        ? "Valid submission"
+        : "Invalid submission";
+      ga("send", "event", {
+        eventCategory: "Donation form",
+        eventAction: "Submit form",
+        eventLabel,
+        transport: "beacon"
+      });
     }
   }
 };
 </script>
 
 <template>
-  <form method="post" :action="cnpURL" autocomplete="on">
+  <form
+    method="post"
+    :action="cnpURL"
+    autocomplete="on"
+    @focus.capture="sendFocus"
+  >
     <h2 class="title">
       Donation Amount
     </h2>
@@ -486,6 +516,7 @@ export default {
       class="button is-warning is-large is-fullwidth has-text-weight-bold"
       name="Subm Donation"
       type="submit"
+      @click="sendSubmit"
     >
       Submit Donation
     </button>
