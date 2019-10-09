@@ -63,6 +63,7 @@ York County Community Foundation <br>
 * Earl Drumheiser
 * Mary Erdman
 * B. Faulstick
+* Ezra Fishman & Nicola Brodie
 * Ryan Froman
 * Tamara Goldman
 * John F. Graybill
@@ -82,6 +83,7 @@ York County Community Foundation <br>
 * Karen M. Kaplan & Aaron M. Shatzman
 * P. Katze
 * J. Kauer & D. Fleece
+* Paul Keller
 * Alan Kennedy
 * Cathy King
 * Steven Kuloszewski
