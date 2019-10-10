@@ -1,6 +1,15 @@
 import Vue from "vue";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 import DonationForm from "./components/DonationForm.vue";
 import { each } from "./dom-utils.js";
+
+library.add(faLock);
+
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 if (!window.ga) {
   window.ga = function() {
