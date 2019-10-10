@@ -6,14 +6,18 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "checkformat": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}",
-    "format": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
-    "git-pre-push": "yarn run checkformat",
+    "format": "yarn run format:eslint && yarn run format:prettier",
+    "format:eslint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
+    "git-pre-push": "yarn run test",
     "build:parcel": "parcel build assets/js/main*.js",
     "build:stage": "yarn run build:parcel && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "yarn run build:parcel && hugo version && hugo --minify",
     "start:full": "parcel assets/js/main*.js & hugo server --disableFastRender & wait",
-    "start": "parcel assets/js/main*.js & hugo server & wait"
+    "start": "parcel assets/js/main*.js & hugo server & wait",
+    "test": "yarn run test:eslint && yarn run test:prettier",
+    "test:eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}"
   },
   "dependencies": {
     "@babel/core": "^7.0.0-0",
@@ -25,11 +29,20 @@
     "bulma": "^0.7.5",
     "parcel-bundler": "^1.12.3",
     "postcss-cli": "^6.1.2",
-    "prettier": "^1.17.1",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "<13.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.17.1",
     "vue-hot-reload-api": "^2.3.4"
   }
 }

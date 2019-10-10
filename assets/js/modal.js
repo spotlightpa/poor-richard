@@ -5,7 +5,7 @@ export function openModal() {
   if (!modal) {
     return;
   }
-  ga("send", "event", {
+  window.ga("send", "event", {
     eventCategory: "Modal interaction",
     eventAction: "Saw modal",
     nonInteraction: true
@@ -32,14 +32,16 @@ export function openModal() {
         closeModal();
       }
     }),
+    // eslint-disable-next-line no-unused-vars
     on("focus", inputs, e => {
-      ga("send", "event", {
+      window.ga("send", "event", {
         eventCategory: "Modal interaction",
         eventAction: "Focus input"
       });
     }),
+    // eslint-disable-next-line no-unused-vars
     on("submit", form, e => {
-      ga("send", "event", {
+      window.ga("send", "event", {
         eventCategory: "Modal interaction",
         eventAction: "Sign up for newsletter",
         transport: "beacon"
@@ -53,7 +55,7 @@ export function openModal() {
     cancelFns.forEach(fn => {
       fn();
     });
-    ga("send", "event", {
+    window.ga("send", "event", {
       eventCategory: "Modal interaction",
       eventAction: "Dismiss modal",
       nonInteraction: true

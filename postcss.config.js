@@ -1,5 +1,6 @@
 const purgecss = require("@fullhuman/postcss-purgecss");
 
+// eslint-disable-next-line no-unused-vars
 module.exports = ctx => {
   let plugins = [require("autoprefixer")];
 
