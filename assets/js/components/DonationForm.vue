@@ -175,7 +175,7 @@ export default {
       let eventLabel = ev.target.form.checkValidity()
         ? "Valid submission"
         : "Invalid submission";
-      ga("send", "event", {
+      this.$ga("send", "event", {
         eventCategory: "Donation form",
         eventAction: "Submit form",
         eventLabel,

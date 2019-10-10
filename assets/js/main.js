@@ -6,9 +6,9 @@ function createListeners() {
   // Ensure a Google Analytics func
   if (!window.ga) {
     window.ga = function() {
-      (ga.q = ga.q || []).push(arguments);
+      (window.ga.q = window.ga.q || []).push(arguments);
     };
-    ga.l = +new Date();
+    window.ga.l = +new Date();
   }
 
   on("click", "[data-target]", ev => {
@@ -28,8 +28,9 @@ function createListeners() {
     }
     el.target = "_blank";
     el.rel = "noopener noreferrer";
+    // eslint-disable-next-line no-unused-vars
     on("click", el, e => {
-      ga("send", "event", {
+      window.ga("send", "event", {
         eventCategory: "Outbound Link",
         eventAction: "click",
         eventLabel: event.target.href,

@@ -8,10 +8,11 @@
   window.ga =
     window.ga ||
     function() {
-      (ga.q = ga.q || []).push(arguments);
+      (window.ga.q = window.ga.q || []).push(arguments);
     };
 
-  ga.l = +new Date();
+  window.ga.l = +new Date();
+  let ga = window.ga;
 
   ga("create", "UA-141126362-3", "auto", "spotlightpa");
   ga("spotlightpa.set", "anonymizeIp", true);
