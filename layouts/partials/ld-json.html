@@ -14,9 +14,20 @@
 {{ $json.Get "location" | $json.SetInMap "publisher" "location" }}
 {{ $json.Get "logo" | $json.SetInMap "publisher" "logo" }}
 
+{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+{{ $pageType := "WebPage" }}
+{{ if $params.byline }}
+  {{ $pageType = "Article" }}
+  {{ $json.SetInMap "webpage" "author" $params.byline }}
+  {{ $json.SetInMap "webpage" "headline" .Title }}
+{{ end }}
+
+{{ if $params.kicker }}
+  {{ $json.SetInMap "webpage" "genre" $params.kicker }}
+{{ end }}
 
 {{ $json.SetInMap "webpage" "@context" "http://schema.org" }}
-{{ $json.SetInMap "webpage" "@type" "WebPage" }}
+{{ $json.SetInMap "webpage" "@type" $pageType }}
 {{ $json.SetInMap "webpage" "name" .Title }}
 {{ $json.SetInMap "webpage" "description" .Description }}
 {{ $json.Get "publisher" | $json.SetInMap "webpage" "publisher" }}
