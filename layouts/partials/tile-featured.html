@@ -1,5 +1,5 @@
 {{ $featured := index . 0 }}
-{{ $featuredParams := partial "page-params.html" $featured.Page }}
+{{ $featuredParams := partialCached "page-params.html" $featured.Page $featured.RelPermalink }}
 
 <div class="tile is-parent is-top">
   <div class="tile is-child">
