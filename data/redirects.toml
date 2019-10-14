@@ -1,14 +1,14 @@
 [[redirects]]
 from = "/tracker.js"
-to = "https://www.spotlightpa.org/js/main-tracker.js"
+to = "/js/main-tracker.js"
 code = 200
 
 [[redirects]]
 from = "/feeds/full.json"
-to = "https://www.spotlightpa.org/news/feed.json"
+to = "/news/feed.json"
 code = 200
 
 [[redirects]]
 from = "/feeds/full.xml"
-to = "https://www.spotlightpa.org/news/index.xml"
+to = "/news/index.xml"
 code = 200
