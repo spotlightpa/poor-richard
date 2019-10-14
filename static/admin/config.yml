@@ -58,19 +58,23 @@ yaml-definitions: &page-fields
     hint: "If present, overrides the byline created from authors list"
     widget: string
     required: false
-  - label: Title
+  - label: Hed
     name: title
+    hint: "Title as it appears at top of page"
     widget: string
-  - label: Subtitle
+  - label: Subhed
     name: subtitle
     widget: string
+    hint: "Appears below hed at top of page; AKA dek"
     required: false
-  - label: Description
+  - label: Summary
     name: description
+    hint: "Shown in social share previews and search results"
     widget: string
-  - label: Dek
-    name: Dek
-    hint: "Summary to appear in article rivers, defaults to description if blank"
+    required: false
+  - label: Blurb
+    name: dek
+    hint: "Summary to appear in article rivers"
     widget: string
     required: false
   - label: Kicker
@@ -84,11 +88,11 @@ yaml-definitions: &page-fields
   - label: "Override title tag"
     name: title-tag
     widget: string
-    hint: "Set title tag separately from page title"
+    hint: "Set title tag separately from page hed"
     required: false
   - label: Link to as
     name: linktitle
-    hint: "When linking to this page from another page, use this as the link title"
+    hint: "When linking to this page from another page, use this as the link title instead of hed"
     widget: string
     required: false
   - label: Feature on homepage
