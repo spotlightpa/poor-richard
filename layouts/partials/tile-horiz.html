@@ -1,4 +1,4 @@
-{{ $params := partial "page-params.html" .Page }}
+{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 <article class="tile is-vertical">
   {{ if .Page.Param "hero-image" }}

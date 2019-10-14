@@ -1,4 +1,4 @@
-{{ $params := partial "page-params.html" .Page }}
+{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 <article>
   <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin">
