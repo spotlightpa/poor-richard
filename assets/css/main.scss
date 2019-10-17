@@ -13,9 +13,11 @@ $pg-yellow: #ffcb05;
 $turquoise: $spotlight-darkblue;
 $blue: $spotlight-darkblue;
 $cyan: $spotlight-lightblue;
+$cyan-invert: #2a7ab0;
 $green: $papost-green;
 $red: $inky-red;
 $yellow: $pg-yellow;
+$yellow-invert: #fff;
 $white: #fff;
 $black: #000;
 $black-ter: hsla(0, 0%, 14%, 0.8);
@@ -376,4 +378,32 @@ a.navbar-burger:hover {
   @media screen and (min-width: $tablet) {
     max-width: 20vw;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.will-expand {
+  will-change: height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.expand-enter-active,
+.expand-leave-active {
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+}
+
+.expand-enter,
+.expand-leave-to {
+  height: 0;
 }

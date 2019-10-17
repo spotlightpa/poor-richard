@@ -6,7 +6,7 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "format": "yarn run format:eslint && yarn run format:prettier",
+    "format": "yarn run format:eslint || yarn run format:prettier",
     "format:eslint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
     "git-pre-push": "yarn run test",
@@ -24,6 +24,7 @@
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.6.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "@fullhuman/postcss-purgecss": "^1.2.0",
