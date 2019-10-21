@@ -295,3 +295,31 @@ export const monthOptions = [
   { value: "11", text: "11 - November" },
   { value: "12", text: "12 - December" }
 ];
+
+export function DonationFormData() {
+  return {
+    donationAmount: 10,
+    recurring: "Month",
+    firstName: "",
+    middleInitial: "",
+    lastName: "",
+    email: "",
+    country: codeUSA,
+    address1: "",
+    address2: "",
+    address3: "",
+    city: "",
+    stateOrProvince: "",
+    postalCode: "",
+    phoneNumber: "",
+    cardName: "",
+    ccNumber: "",
+    cvv: "",
+    expMonth: "",
+    expYear: "",
+    donationName: "",
+    comments: "",
+    wantsNewsletter: true,
+    wantsPartners: true
+  };
+}

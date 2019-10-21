@@ -1,22 +1,15 @@
 <script>
+import DonationFormMixin from "./DonationFormMixin.js";
+
 import { hasValidLuhn } from "../luhn.js";
 import { monthOptions } from "../form-data.js";
-
-import BulmaFieldInput from "./BulmaFieldInput.vue";
-import BulmaFieldSelect from "./BulmaFieldSelect.vue";
 
 function ccValidator(val) {
   return hasValidLuhn(val) ? "" : "Please enter a valid credit card number";
 }
 
 export default {
-  components: {
-    BulmaFieldInput,
-    BulmaFieldSelect
-  },
-  props: {
-    formData: Object
-  },
+  mixins: [DonationFormMixin],
   data() {
     return {
       hasSetCardName: false,
@@ -40,13 +33,6 @@ export default {
       }
       return years;
     },
-    timePeriod() {
-      return {
-        Month: "monthly",
-        Year: "annually",
-        "": ""
-      }[this.formData.recurring];
-    },
     cardName: {
       get() {
         if (!this.hasSetCardName) {
@@ -69,39 +55,6 @@ export default {
       this.formData.ccNumber = val.replace(/\D/g, "");
     }
   },
-  methods: {
-    sendFocus(ev) {
-      let [label] = ev.target.labels;
-      let eventLabel = label ? label.innerText : ev.target.name;
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Focused a field",
-        eventLabel
-      });
-    },
-    validate(ev) {
-      let valid = ev.currentTarget.form.reportValidity();
-      let eventLabel = valid ? "Valid screen 3" : "Invalid screen 3";
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Advance from screen 3",
-        eventLabel
-      });
-      if (valid) {
-        this.nextStep();
-      }
-    },
-    nextStep() {
-      this.$emit("change-step", +1);
-    },
-    lastStep() {
-      this.$emit("change-step", -1);
-    },
-    setDonationName(val) {
-      this.hasSetDonationName = true;
-      this.formData.donationName = val;
-    }
-  }
 };
 </script>
 
@@ -124,6 +77,7 @@ export default {
         <BulmaFieldInput
           v-model="ccNumber"
           label="Credit Card Number"
+          placeholder="•••• •••• •••• ••••"
           :min-length="15"
           :max-length="17"
           :required="true"
@@ -173,7 +127,7 @@ export default {
       <button
         type="button"
         class="button is-warning is-large"
-        @click="lastStep"
+        @click="stepDec"
       >
         <span class="icon">
           <font-awesome-icon :icon="['far', 'arrow-alt-circle-left']" />

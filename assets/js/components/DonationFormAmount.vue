@@ -1,8 +1,5 @@
 <script>
-import BulmaField from "./BulmaField.vue";
-import BulmaFieldInput from "./BulmaFieldInput.vue";
-import BulmaMessage from "./BulmaMessage.vue";
-import BulmaModal from "./BulmaModal.vue";
+import DonationFormMixin from "./DonationFormMixin.js";
 
 let amountsObj = {
   "": [25, 50, 100, 500, 1000],
@@ -25,15 +22,7 @@ function isPositiveNumber(val) {
 }
 
 export default {
-  components: {
-    BulmaField,
-    BulmaFieldInput,
-    BulmaMessage,
-    BulmaModal
-  },
-  props: {
-    formData: Object
-  },
+  mixins: [DonationFormMixin],
   data() {
     return {
       recurringOptions: [
@@ -76,7 +65,7 @@ export default {
       this.showOtherAmount = false;
     },
     toggleOtherAmount() {
-      this.otherAmount = String(this.formData.donationAmount);
+      this.otherAmount = "";
       this.formData.donationAmount = null;
       this.showOtherAmount = true;
     },
@@ -85,44 +74,23 @@ export default {
       this.formData.recurring = value;
       this.formData.donationAmount = amountsDefaults[value];
     },
-    sendFocus(ev) {
-      let [label] = ev.target.labels;
-      let eventLabel = label ? label.innerText : ev.target.name;
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Focused a field",
-        eventLabel
-      });
-    },
-    validate(ev) {
-      let valid = ev.currentTarget.form.reportValidity();
-      let eventLabel = valid ? "Valid screen 1" : "Invalid screen 1";
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Advance from screen 1",
-        eventLabel
-      });
-      if (valid) {
-        if (this.formData.recurring) {
-          this.nextStep();
-        } else {
-          this.showModal = true;
-        }
+    validStepInc() {
+      if (this.formData.recurring) {
+        this.stepInc();
+      } else {
+        this.showModal = true;
       }
-    },
-    nextStep() {
-      this.$emit("change-step", +1);
     },
     noThanks() {
       this.showModal = false;
-      this.nextStep();
+      this.stepInc();
     },
     switchMonthly() {
       this.showOtherAmount = true;
       this.otherAmount = String(this.annualizedAmount);
       this.formData.recurring = "Month";
       this.showModal = false;
-      this.nextStep();
+      this.stepInc();
     }
   }
 };

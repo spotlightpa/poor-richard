@@ -1,19 +1,10 @@
 <script>
 import { codeUSA, countryOptions, stateOptions } from "../form-data.js";
 
-import BulmaField from "./BulmaField.vue";
-import BulmaFieldInput from "./BulmaFieldInput.vue";
-import BulmaFieldSelect from "./BulmaFieldSelect.vue";
+import DonationFormMixin from "./DonationFormMixin.js";
 
 export default {
-  components: {
-    BulmaField,
-    BulmaFieldInput,
-    BulmaFieldSelect
-  },
-  props: {
-    formData: Object
-  },
+  mixins: [DonationFormMixin],
   data() {
     return {
       state: "Pennsylvania",
@@ -30,13 +21,6 @@ export default {
     },
     zipOrPostalCode() {
       return this.isUSA ? "Zipcode" : "Postal Code";
-    },
-    timePeriod() {
-      return {
-        Month: "monthly",
-        Year: "annually",
-        "": ""
-      }[this.formData.recurring];
     },
     donationName: {
       get() {
@@ -57,35 +41,6 @@ export default {
       this.formData.donationName = val;
     }
   },
-  methods: {
-    sendFocus(ev) {
-      let [label] = ev.target.labels;
-      let eventLabel = label ? label.innerText : ev.target.name;
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Focused a field",
-        eventLabel
-      });
-    },
-    validate(ev) {
-      let valid = ev.currentTarget.form.reportValidity();
-      let eventLabel = valid ? "Valid screen 2" : "Invalid screen 2";
-      this.$ga("send", "event", {
-        eventCategory: "Donation form",
-        eventAction: "Advance from screen 2",
-        eventLabel
-      });
-      if (valid) {
-        this.nextStep();
-      }
-    },
-    nextStep() {
-      this.$emit("change-step", +1);
-    },
-    lastStep() {
-      this.$emit("change-step", -1);
-    }
-  }
 };
 </script>
 
@@ -239,7 +194,7 @@ export default {
       <button
         type="button"
         class="button is-warning is-large"
-        @click="lastStep"
+        @click="stepDec"
       >
         <span class="icon">
           <font-awesome-icon :icon="['far', 'arrow-alt-circle-left']" />

@@ -6,7 +6,7 @@ import DonationFormInfo from "./DonationFormInfo.vue";
 import DonationFormPayment from "./DonationFormPayment.vue";
 import DonationFormSubmit from "./DonationFormSubmit.vue";
 
-import { codeUSA } from "../form-data.js";
+import { DonationFormData } from "../form-data.js";
 
 export default {
   components: {
@@ -18,37 +18,24 @@ export default {
   },
   data() {
     return {
-      steps: ["Amount", "Information", "Payment", "Confirm"],
-      formStep: 0,
-      cnpFormData: {
-        donationAmount: 15,
-        recurring: "Month",
-        firstName: "",
-        middleInitial: "",
-        lastName: "",
-        email: "",
-        country: codeUSA,
-        address1: "",
-        address2: "",
-        address3: "",
-        city: "",
-        stateOrProvince: "",
-        postalCode: "",
-        phoneNumber: "",
-        cardName: "",
-        ccNumber: "",
-        cvv: "",
-        expMonth: "",
-        expYear: "",
-        donationName: "",
-        comments: "",
-        wantsNewsletter: true,
-        wantsPartners: true
-      }
+      testing: false,
+      steps: [
+        { name: "Amount", component: DonationFormAmount },
+        { name: "Information", component: DonationFormInfo },
+        { name: "Payment", component: DonationFormPayment },
+        { name: "Confirm", component: DonationFormSubmit }
+      ],
+      stepN: 0,
+      cnpFormData: DonationFormData()
     };
   },
-  computed: {},
+  computed: {
+    stepComponent() {
+      return this.steps[this.stepN].component;
+    }
+  },
   mounted() {
+    this.testing = !!window.location.search.match(/testing/);
     this.$ga("send", "event", {
       eventCategory: "Donation form",
       eventAction: "Saw donation form",
@@ -57,7 +44,7 @@ export default {
   },
   methods: {
     changeStep(inc) {
-      this.formStep += inc;
+      this.stepN += inc;
       this.$refs.breadcrumbs.scrollIntoView({ behavior: "smooth" });
     }
   }
@@ -89,54 +76,25 @@ export default {
       <ul>
         <li
           v-for="(step, i) of steps"
-          :key="step"
-          :class="{ 'is-active': i >= formStep }"
+          :key="step.name"
+          :class="{ '-is-active': i >= stepN }"
         >
           <a
-            :class="{ 'has-text-success': i == formStep }"
-            @click="formStep = i"
-            v-text="step"
+            :class="{ 'has-text-success': i == stepN }"
+            @click="stepN = i"
+            v-text="step.name"
           ></a>
         </li>
       </ul>
     </nav>
-
     <TransitionExpand>
       <keep-alive>
-        <DonationFormAmount
-          v-if="formStep === 0"
+        <component
+          :is="stepComponent"
+          :testing="testing"
           :form-data="cnpFormData"
           @change-step="changeStep"
-        ></DonationFormAmount>
-      </keep-alive>
-    </TransitionExpand>
-    <TransitionExpand>
-      <keep-alive>
-        <DonationFormInfo
-          v-if="formStep === 1"
-          :form-data="cnpFormData"
-          @change-step="changeStep"
-        ></DonationFormInfo>
-      </keep-alive>
-    </TransitionExpand>
-
-    <TransitionExpand>
-      <keep-alive>
-        <DonationFormPayment
-          v-if="formStep === 2"
-          :form-data="cnpFormData"
-          @change-step="changeStep"
-        ></DonationFormPayment>
-      </keep-alive>
-    </TransitionExpand>
-
-    <TransitionExpand>
-      <keep-alive>
-        <DonationFormSubmit
-          v-if="formStep === 3"
-          v-bind="cnpFormData"
-          @change-step="changeStep"
-        ></DonationFormSubmit>
+        ></component>
       </keep-alive>
     </TransitionExpand>
   </div>
