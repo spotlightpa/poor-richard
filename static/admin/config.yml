@@ -101,6 +101,12 @@ yaml-definitions: &page-fields
     hint: "Add to top area of homepage"
     default: true
     required: false
+  - label: Special Report
+    name: special-report
+    widget: boolean
+    hint: "Add 'special report' label on homepage"
+    default: false
+    required: false
   - label: "Suppress title"
     name: suppress-title
     widget: boolean

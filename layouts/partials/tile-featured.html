@@ -6,7 +6,11 @@
     <div class="has-margin-bottom-thin">
       <span class="tags has-addons">
         <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
-          Top News <!-- TODO: Admin -->
+          {{ with $featured.Param "special-report" }}
+            Special Report
+          {{ else }}
+            Top News <!-- TODO: Admin -->
+          {{ end }}
         </span>
         <span class="tag is-square is-outline is-uppercase has-text-weight-semibold">
           {{ $featuredParams.kicker | default "News" }}
