@@ -4,7 +4,9 @@ import BulmaFieldSelect from "./BulmaFieldSelect.vue";
 import BulmaMessage from "./BulmaMessage.vue";
 import BulmaModal from "./BulmaModal.vue";
 
-import { DonationFormData } from "../form-data.js";
+import DonationFormButtons from "./DonationFormButtons.vue";
+
+// import { DonationFormData } from "../form-data.js";
 
 export default {
   components: {
@@ -12,7 +14,8 @@ export default {
     BulmaFieldInput,
     BulmaFieldSelect,
     BulmaMessage,
-    BulmaModal
+    BulmaModal,
+    DonationFormButtons
   },
   props: {
     formData: Object,

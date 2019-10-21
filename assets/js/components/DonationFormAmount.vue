@@ -33,21 +33,12 @@ export default {
       otherAmount: null,
       showOtherAmount: false,
       showModal: false,
-      showValidationMessage: false,
       isPositiveNumber
     };
   },
   computed: {
     amounts() {
       return amountsObj[this.formData.recurring];
-    },
-    validationMessage() {
-      if (!this.showValidationMessage) {
-        return null;
-      }
-      // Trigger reactive connection to email
-      +this.formData.email;
-      return this.$refs.email.validationMessage;
     },
     annualizedAmount() {
       return Math.ceil(this.formData.donationAmount / 12);
@@ -65,9 +56,14 @@ export default {
       this.showOtherAmount = false;
     },
     toggleOtherAmount() {
-      this.otherAmount = "";
-      this.formData.donationAmount = null;
-      this.showOtherAmount = true;
+      this.showOtherAmount = !this.showOtherAmount;
+      if (this.showOtherAmount) {
+        // this.formData.donationAmount = null;
+        this.otherAmount = String(this.formData.donationAmount);
+      } else {
+        let rec = this.formData.recurring;
+        this.formData.donationAmount = amountsDefaults[rec];
+      }
     },
     setRecurring(value) {
       this.showOtherAmount = false;
@@ -98,28 +94,43 @@ export default {
 
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
-    <BulmaField
-      v-slot="{ idForLabel }"
-      :validation-message="validationMessage"
-      control-class="has-icons-left"
-    >
-      <input
-        :id="idForLabel"
-        ref="email"
-        v-model="formData.email"
-        class="input is-large"
-        :max-length="50"
-        required
-        type="email"
-        autocomplete="billing email"
-        placeholder="mysylvania@example.com"
-        @invalid.prevent="showValidationMessage = true"
+    <hgroup class="has-text-centered has-margin-bottom-thick">
+      <h1 class="title is-spaced has-text-black is-uppercase is-size-1">
+        Join Us
+      </h1>
+
+      <p class="is-size-4">
+        Become a founding donor to the only investigative newsroom
+        <span class="is-hidden-touch"><br /></span>
+        dedicated to covering Pennsylvania state government.
+      </p>
+
+      <hr
+        class="is-emphatic-underline is-primary is-margin-centered has-margin-top-medium has-margin-bottom max-12r"
       />
-      <span class="icon is-large is-left has-text-primary">
-        <font-awesome-icon :icon="['far', 'envelope']" />
-      </span>
-    </BulmaField>
-    <div class="tabs is-toggle is-large is-fullwidth">
+
+      <p class="is-size-4">
+        Your tax-deductible donation to Spotlight PA will help us investigate
+        <span class="is-hidden-touch"><br /></span>
+        one of the largest and most opaque state capitals in the U.S.
+      </p>
+
+      <p class="is-size-4">Together, we can hold the powerful to account.</p>
+    </hgroup>
+
+    <div class="buttons is-centered is-hidden-tablet">
+      <button
+        v-for="opt of recurringOptions"
+        :key="opt.value"
+        :class="formData.recurring === opt.value ? 'is-primary' : 'is-light'"
+        class="button is-large"
+        type="button"
+        @click="setRecurring(opt.value)"
+        v-text="opt.text"
+      ></button>
+    </div>
+
+    <div class="tabs is-toggle is-medium is-fullwidth is-hidden-touch">
       <ul>
         <li
           v-for="opt of recurringOptions"
@@ -132,20 +143,25 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="buttons">
+
+    <div class="buttons is-centered">
       <button
         v-for="amount of amounts"
         :key="amount"
-        class="button is-large is-primary"
-        :class="{ 'is-inverted': formData.donationAmount !== amount }"
+        class="button is-large"
+        :class="
+          formData.donationAmount === amount && !showOtherAmount
+            ? 'is-primary'
+            : 'is-light'
+        "
         type="button"
         @click="setDonationAmount(amount)"
       >
         ${{ amount }}
       </button>
       <button
-        class="button is-primary is-large"
-        :class="{ 'is-inverted': !showOtherAmount }"
+        class="button is-large"
+        :class="showOtherAmount ? 'is-primary' : 'is-light'"
         type="button"
         @click="toggleOtherAmount"
       >
@@ -161,33 +177,30 @@ export default {
       :required="true"
     ></BulmaFieldInput>
 
-    <div class="buttons is-right">
-      <button
-        type="button"
-        class="button is-success is-large"
-        @click="validate"
-      >
-        <span>
-          Continue
-        </span>
-        <span class="icon">
-          <font-awesome-icon :icon="['far', 'arrow-alt-circle-right']" />
-        </span>
-      </button>
-    </div>
+    <DonationFormButtons
+      :has-previous="false"
+      @continue="validate"
+    ></DonationFormButtons>
+
+    <p>
+      Please contact
+      <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a> if you
+      would prefer to donate by check or have any questions about donating.
+    </p>
 
     <BulmaModal :value="showModal" @input="noThanks">
       <BulmaMessage
         header="Switch to Monthly?"
-        :close-button="noThanks"
+        :show-close-button="true"
         class="is-warning is-medium"
+        @close-button="noThanks"
       >
         <h1 class="title">
           Would you prefer to donate {{ annualizedAmount | formatUSD }} every
           month?
         </h1>
         <p>
-          Donating monthly is the best way to show your support for the on-going
+          Donating monthly is the best way to show your support for the ongoing
           work of Spotlight PA.
           <br />
           <br />
