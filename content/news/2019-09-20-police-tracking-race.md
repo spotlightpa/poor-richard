@@ -10,7 +10,6 @@ title = "Racial profiling in traffic stops? We won’t know, because Pa. State P
 description = "In response to questions from Spotlight PA, State Police officials said they would reverse course and resume collection."
 Dek = "In response to questions from Spotlight PA, State Police officials said they would reverse course and resume collection."
 kicker = "Criminal Justice"
-featured = true
 slug = "pa-state-police-stopped-tracking-driver-race"
 +++
 The Pennsylvania State Police, the third-largest statewide law enforcement agency in the country, has stopped collecting data on the race of drivers its troopers pull over, making it far more difficult to detect bias, Spotlight PA has learned.

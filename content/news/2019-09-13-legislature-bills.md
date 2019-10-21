@@ -10,7 +10,6 @@ title = "Pa. state legislators among the highest paid in U.S., but they’re doi
 description = "The number of bills introduced or passed by the legislature has decreased dramatically in recent years, while the number of largely ceremonial resolutions has skyrocketed, according to an analysis by Spotlight PA and The Inquirer."
 kicker = "The Capitol"
 slug = "pa-state-legislators-among-the-highest-paid-in-us-but-theyre-doing-less-and-less-actual-lawmaking"
-featured = true
 +++
 HARRISBURG — Pennsylvania has the [largest full-time legislature in the nation](http://www.ncsl.org/research/about-state-legislatures/number-of-legislators-and-length-of-terms.aspx) and its lawmakers are among the [highest-paid in the country](http://www.ncsl.org/research/about-state-legislatures/legislator-compensation-2018.aspx), yet, increasingly, they’re doing less and less actual lawmaking.
 
