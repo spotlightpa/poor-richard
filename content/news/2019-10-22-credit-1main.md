@@ -1,8 +1,8 @@
 +++
 draft = true
-hero-image = "img/uploads/credit.jpeg"
-hero-image-description = "Reporters for The Caucus and Spotlight PA spent a year requesting and analyzing thousands of credit card statements and receipts for Pa. legislative campaigns to uncover examples of lavish and outlandish spending."
-hero-image-credit = "Sara Simon / Spotlight PA"
+hero-image = "img/uploads/st-peter.jpeg"
+hero-image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati, dined at the St. Peter Stiftskulinarium restaurant in Austria in September 2016 and charged $246 to his campaign account. State law requires campaign money to be used for “influencing the outcome of an election,” but what qualifies is largely open to interpretation."
+hero-image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
 hero-image-size = "inline"
 published = 2019-10-21T09:00:00.000Z
 authors = [
@@ -16,9 +16,10 @@ authors = [
 title = "Pennsylvania state lawmakers are hiding millions in campaign spending. And it’s all legal."
 description = "A year-long investigation uncovered foreign trips, sports tickets, limos, lavish dinners, fine wines and liquor, country club memberships and even a DNA test kit."
 byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, Paula Knudsen, Sam Janesch and Alyssa Biederman of The Caucus"
-dek = ""
-kicker = ""
+dek = "A year-long investigation uncovered foreign trips, sports tickets, limos, lavish dinners, fine wines and liquor, country club memberships and even a DNA test kit."
+kicker = "Campaign Finance"
 featured = true
+special-report = true
 +++
 
 <script defer>
