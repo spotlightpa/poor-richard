@@ -10,7 +10,6 @@ title = "We’re investigating the business of addiction treatment in Pa. Share 
 description = "We're seeking stories of the struggle to access addiction treatment, predatory providers, inadequate or negligent care and a lack of oversight causing harm to vulnerable residents."
 Dek = "We're seeking stories of the struggle to access addiction treatment, predatory providers, inadequate or negligent care and a lack of oversight causing harm to vulnerable residents."
 kicker = "Health"
-featured = true
 slug = "share-your-addiction-treatment-story"
 +++
 
