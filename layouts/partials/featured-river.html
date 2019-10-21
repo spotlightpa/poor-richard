@@ -1,4 +1,4 @@
-{{ $features := where .Site.RegularPages ".Params.featured" true | first 1 }}
+{{ $features := where .Site.RegularPages.ByDate ".Params.featured" true }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $pages := $news.RegularPages | complement $features }}
 <section class="section">
