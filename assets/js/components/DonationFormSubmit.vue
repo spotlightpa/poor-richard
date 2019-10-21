@@ -23,8 +23,8 @@ export default {
     installments() {
       return this.formData.recurring ? "999" : "";
     },
-    type(){
-      return this.testing? "text" : "hidden"
+    type() {
+      return this.testing ? "text" : "hidden";
     }
   },
   mounted() {
@@ -47,11 +47,7 @@ export default {
 </script>
 
 <template>
-  <form
-    method="post"
-    :action="cnpURL"
-    @focus.capture="sendFocus"
-  >
+  <form method="post" :action="cnpURL" @focus.capture="sendFocus">
     <h2 class="title">
       You will be charged:
       <span class="is-hidden-mobile is-pulled-right">
@@ -83,20 +79,22 @@ export default {
     <p>
       &nbsp;
     </p>
+    <p>
+      Your name will appear as “{{ formData.donationName }}” on the list of
+      founding donors.
+    </p>
+    <p>
+      &nbsp;
+    </p>
     <h2 class="title">Terms &amp; Conditions</h2>
     <p>
       Your gift is tax-deductible to the extent allowed by law. Please note that
       all gifts are donated to The Lenfest Institute for Journalism and directed
-      to Spotlight PA's important investigative work.
-    </p>
-    <p>
-      Spotlight PA editors and reporters operate independently of our donors and
-      maintain editorial control over all of the content they produce. Because
-      we are committed to fully disclosing all of our sources of funding, we
-      cannot accept anonymous donations.
-    </p>
-    <p>
-      Please contact
+      to Spotlight PA’s important investigative work. Spotlight PA editors and
+      reporters operate independently of our donors and maintain editorial
+      control over all of the content they produce. Because we are committed to
+      fully disclosing all of our sources of funding, we cannot accept anonymous
+      donations. Please contact
       <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a> if you
       have any questions.
     </p>
@@ -118,7 +116,11 @@ export default {
     <input :type="type" name="BillingAddress2" :value="formData.address2" />
     <input :type="type" name="BillingAddress3" :value="formData.address3" />
     <input :type="type" name="BillingCity" :value="formData.city" />
-    <input :type="type" name="BillingStateProvince" :value="formData.stateOrProvince" />
+    <input
+      :type="type"
+      name="BillingStateProvince"
+      :value="formData.stateOrProvince"
+    />
     <input :type="type" name="BillingPostalCode" :value="formData.postalCode" />
     <input :type="type" name="BillingPhone" :value="formData.phoneNumber" />
     <input :type="type" name="NameOnCard" :value="formData.cardName" />

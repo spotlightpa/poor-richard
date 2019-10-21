@@ -1,6 +1,4 @@
 <script>
-import TransitionExpand from "./TransitionExpand.vue";
-
 import DonationFormAmount from "./DonationFormAmount.vue";
 import DonationFormInfo from "./DonationFormInfo.vue";
 import DonationFormPayment from "./DonationFormPayment.vue";
@@ -13,8 +11,7 @@ export default {
     DonationFormAmount,
     DonationFormInfo,
     DonationFormSubmit,
-    DonationFormPayment,
-    TransitionExpand
+    DonationFormPayment
   },
   data() {
     return {
@@ -45,7 +42,7 @@ export default {
   methods: {
     changeStep(inc) {
       this.stepN += inc;
-      this.$refs.breadcrumbs.scrollIntoView({ behavior: "smooth" });
+      this.$refs.anchor.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
 };
@@ -53,31 +50,17 @@ export default {
 
 <template>
   <div>
-    <hgroup class="has-text-centered">
-      <h1 class="title is-uppercase is-size-1">Join Us</h1>
-
-      <h2 class="subtitle has-text-grey">
-        Become a founding donor to the only investigative newsroom covering
-        Pennsylvania’s state government.
-      </h2>
-      <p>
-        Your tax-deductible donation to Spotlight PA will help us investigate
-        one of the largest and most opaque state capitals in the U.S.
-      </p>
-
-      <p><strong>Together, we can hold the powerful to account.</strong></p>
-    </hgroup>
-
+    <a ref="anchor"></a>
     <nav
-      ref="breadcrumbs"
-      class="breadcrumb is-centered block is-large has-arrow-separator"
+      v-if="stepN"
+      class="breadcrumb is-centered is-large has-arrow-separator has-margin-bottom"
       aria-label="breadcrumbs"
     >
       <ul>
         <li
           v-for="(step, i) of steps"
           :key="step.name"
-          :class="{ '-is-active': i >= stepN }"
+          :class="{ 'is-active': i >= stepN && !testing }"
         >
           <a
             :class="{ 'has-text-success': i == stepN }"
@@ -87,15 +70,14 @@ export default {
         </li>
       </ul>
     </nav>
-    <TransitionExpand>
-      <keep-alive>
-        <component
-          :is="stepComponent"
-          :testing="testing"
-          :form-data="cnpFormData"
-          @change-step="changeStep"
-        ></component>
-      </keep-alive>
-    </TransitionExpand>
+
+    <keep-alive>
+      <component
+        :is="stepComponent"
+        :testing="testing"
+        :form-data="cnpFormData"
+        @change-step="changeStep"
+      ></component>
+    </keep-alive>
   </div>
 </template>

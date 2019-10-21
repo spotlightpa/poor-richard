@@ -301,7 +301,6 @@ export function DonationFormData() {
     donationAmount: 10,
     recurring: "Month",
     firstName: "",
-    middleInitial: "",
     lastName: "",
     email: "",
     country: codeUSA,

@@ -3,7 +3,7 @@ export default {
   props: {
     header: String,
     headerRight: String,
-    closeButton: Function
+    showCloseButton: Boolean
   }
 };
 </script>
@@ -14,11 +14,11 @@ export default {
       <p v-text="header"></p>
       <p v-if="headerRight" v-text="headerRight"></p>
       <button
-        v-if="closeButton"
+        v-if="showCloseButton"
         class="delete"
         type="button"
         aria-label="delete"
-        @click="closeButton"
+        @click="$emit('close-button', $event)"
       ></button>
     </div>
     <div class="message-body">

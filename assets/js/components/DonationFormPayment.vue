@@ -54,7 +54,7 @@ export default {
     ccNumber(val) {
       this.formData.ccNumber = val.replace(/\D/g, "");
     }
-  },
+  }
 };
 </script>
 
@@ -67,7 +67,7 @@ export default {
     <h2 class="title">Payment Details</h2>
     <BulmaFieldInput
       v-model="cardName"
-      label="Name on Card"
+      label="Name on card"
       :required="true"
       autocomplete="cc-name"
       placeholder="William Penn"
@@ -76,8 +76,8 @@ export default {
       <div class="column">
         <BulmaFieldInput
           v-model="ccNumber"
-          label="Credit Card Number"
-          placeholder="•••• •••• •••• ••••"
+          label="Credit card number"
+          placeholder="••••••••••••••••"
           :min-length="15"
           :max-length="17"
           :required="true"
@@ -104,7 +104,7 @@ export default {
       <div class="column">
         <BulmaFieldSelect
           v-model="formData.expMonth"
-          label="Expiration Month"
+          label="Expiration month"
           name="ExpirationMonth"
           :options="monthOptions"
           required
@@ -114,7 +114,7 @@ export default {
       <div class="column">
         <BulmaFieldSelect
           v-model="formData.expYear"
-          label="Expiration Year"
+          label="Expiration year"
           name="ExpirationYear"
           :options="expirationYears"
           :required="true"
@@ -123,31 +123,9 @@ export default {
       </div>
     </div>
 
-    <div class="buttons is-right">
-      <button
-        type="button"
-        class="button is-warning is-large"
-        @click="stepDec"
-      >
-        <span class="icon">
-          <font-awesome-icon :icon="['far', 'arrow-alt-circle-left']" />
-        </span>
-        <span>
-          Back
-        </span>
-      </button>
-      <button
-        type="button"
-        class="button is-success is-large"
-        @click="validate"
-      >
-        <span>
-          Continue
-        </span>
-        <span class="icon">
-          <font-awesome-icon :icon="['far', 'arrow-alt-circle-right']" />
-        </span>
-      </button>
-    </div>
+    <DonationFormButtons
+      @back="stepDec"
+      @continue="validate"
+    ></DonationFormButtons>
   </form>
 </template>
