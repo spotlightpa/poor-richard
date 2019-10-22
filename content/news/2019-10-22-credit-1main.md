@@ -13,6 +13,7 @@ dek = "A year-long investigation uncovered other purchases, too: foreign trips, 
 kicker = "Campaign Finance"
 featured = true
 special-report = true
+slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
 +++
 
 <script defer>
