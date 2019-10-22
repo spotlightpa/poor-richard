@@ -20,8 +20,8 @@ if (!window.ga) {
 
 let GA = {
   install(Vue) {
-    Vue.prototype.$ga = function() {
-      window.ga(arguments);
+    Vue.prototype.$ga = (...args) => {
+      window.ga(...args);
     };
   }
 };
