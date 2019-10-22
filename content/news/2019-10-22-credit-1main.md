@@ -5,18 +5,11 @@ hero-image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scar
 hero-image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
 hero-image-size = "inline"
 published = 2019-10-21T09:00:00.000Z
-authors = [
-    "Angela Couloumbis",
-    "Mike Wereschagin, The Caucus",
-    "Brad Bumsted, The Caucus",
-    "Paula Knudsen, The Caucus",
-    "Sam Janesch, The Caucus",
-    "Alyssa Biederman, The Caucus",
-]
-title = "Pennsylvania state lawmakers are hiding millions in campaign spending. And it’s all legal."
-description = "A year-long investigation uncovered foreign trips, sports tickets, limos, lavish dinners, fine wines and liquor, country club memberships and even a DNA test kit."
+authors = ["Angela Couloumbis", "Mike Wereschagin, The Caucus", "Brad Bumsted, The Caucus", "Paula Knudsen, The Caucus", "Sam Janesch, The Caucus", "Alyssa Biederman, The Caucus"]
 byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, Paula Knudsen, Sam Janesch and Alyssa Biederman of The Caucus"
-dek = "A year-long investigation uncovered foreign trips, sports tickets, limos, lavish dinners, fine wines and liquor, country club memberships and even a DNA test kit."
+title = "Lavish dinners, sports tickets, and nearly $3.5 million other expenses by Pa. lawmakers you’ve never seen"
+description = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
+dek = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
 kicker = "Campaign Finance"
 featured = true
 special-report = true
