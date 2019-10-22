@@ -10,5 +10,7 @@ title = "{{ replace .Name "-" " " | title }}"
 description = ""
 dek = ""
 kicker = ""
+slug = ""
+byline = ""
 featured = true
 +++
