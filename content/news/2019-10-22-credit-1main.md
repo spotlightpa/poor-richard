@@ -63,7 +63,7 @@ Over the years, Pennsylvania state lawmakers have dismissed efforts to impose mo
 
 But the investigation by The Caucus and [Spotlight PA](https://www.spotlightpa.org/) found  lawmakers are falling well short of their end of the bargain.
 
-**» _DONATE NOW_** _and_ [_support future investigations by Spotlight PA_](https://www.spotlightpa.org/donate%22%20%5Ct%20%22_blankdonate) _that hold the powerful in Pennsylvania to account._ [_Become a Founding Donor now_](https://www.spotlightpa.org/donate%22%20%5Ct%20%22_blankdonate) _and support our team of investigative journalists._
+**» _DONATE NOW_** _and_ [_support future investigations by Spotlight PA_](https://www.spotlightpa.org/donate/) _that hold the powerful in Pennsylvania to account._ [_Become a Founding Donor now_](https://www.spotlightpa.org/donate/) _and support our team of investigative journalists._
 
 House Speaker Mike Turzai, R., Allegheny, used a credit card to buy more than $3,500 in gift cards, for which no other documentation was available.
 
