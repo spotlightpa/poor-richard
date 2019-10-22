@@ -39,7 +39,7 @@ slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-p
 })();
 </script>
 
-A stone’s throw from the Salzburg Cathedral in the Austrian city stands the St. Peter Stiftskulinarium restaurant, a 1,200-year-old icon partially carved into a rock face. Inside, the chefs serve up pumpkin dumplings with wild broccoli, venison with king oyster mushroom and beef tartar with fig and summer truffle.
+A stone’s throw from the Salzburg Cathedral in the Austrian city stands the St. Peter Stiftskulinarium restaurant, a 1,200-year-old icon partially carved into a rock face. Inside, the chefs serve up pumpkin dumplings with wild broccoli, venison with king oyster mushroom and beef tartare with fig and summer truffle.
 
 The restaurant touts itself as the oldest in Europe and is said to have been visited by Christopher Columbus and Wolfgang Amadeus Mozart. On a warm, late September day in 2016, the chefs served another dignitary of sorts: Joe Scarnati, the most powerful lawmaker in the Pennsylvania Senate.
 
