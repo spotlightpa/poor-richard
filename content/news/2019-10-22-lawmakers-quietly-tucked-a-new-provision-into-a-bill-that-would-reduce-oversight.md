@@ -1,7 +1,11 @@
 +++
+hero-image = "img/uploads/capitol-columns.jpeg"
+hero-image-description = "The PA State Capitol in Harrisburg, Pa., Tuesday, June 18, 2019."
+hero-image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 draft = false
 published = 2019-10-22T22:34:09.391Z
-authors = ["Angela Couloumbis of Spotlight PA", "Sam Janesch of The Caucus"]
+authors = ["Angela Couloumbis", "Sam Janesch, The Caucus"]
+byline = "Angela Couloumbis of Spotlight PA and Sam Janesch of The Caucus"
 title = "Hours after investigation reveals millions in hidden campaign spending, Pa. lawmakers push for less oversight"
 description = "Lawmakers quietly tucked a new provision into a bill that would reduce oversight and make it harder for the public to see how they spend their campaign cash."
 dek = "Lawmakers quietly tucked a new provision into a bill that would reduce oversight and make it harder for the public to see how they spend their campaign cash."
@@ -10,6 +14,21 @@ featured = true
 special-report = true
 slug = "lawmakers-quietly-tucked-a-new-provision-into-a-bill-that-would-reduce-oversight"
 +++
+<script defer>
+(function() {
+  var l = function() {
+    new pym.Parent('310290d7-98f6-45bd-85fa-fbc41c167e3e', 'https://lawmaker-finder.data.spotlightpa.org/', {});
+
+  };
+  var h = document.getElementsByTagName("head")[0];
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.src = "https://pym.nprapps.org/pym.v1.min.js";
+  s.onload = l;
+  h.appendChild(s);
+})();
+</script>
+
 The same day an investigation revealed how Pennsylvania state lawmakers [hide millions of dollars in campaign spending from public scrutiny](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/), the Legislature advanced a measure that would make it even harder to hold them accountable.
 
 The investigation, published Tuesday by The Caucus and Spotlight PA, found lawmakers [use credit cards, gift cards and self-reimbursements to shield sometimes lavish campaign spending](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/). Expenses included pricey dinners, foreign trips, sports tickets, a country club membership and even a DNA test kit.
@@ -49,3 +68,5 @@ Larry Otter, a Bucks County lawyer who specializes in election law, said Pennsyl
 “They’ve certainly made the records more secretive and that is not a good thing,” Otter said.
 
 He added, “I mean, how hard is this?”
+
+<div id="310290d7-98f6-45bd-85fa-fbc41c167e3e"></div>
