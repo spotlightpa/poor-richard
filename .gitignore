@@ -67,3 +67,6 @@ public/
 # Parcel build
 dist
 .cache
+
+# Pipeline problems
+.forestry
