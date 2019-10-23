@@ -1,6 +1,9 @@
-{{ $features := where .Site.RegularPages.ByDate ".Params.featured" true }}
+{{ $features := where .Site.RegularPages ".Params.special-report" true }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $pages := $news.RegularPages | complement $features }}
+{{ if lt (len $features) 1 }}
+  {{ $features = first 1 $news.RegularPages }}
+{{ end }}
+{{ $pages := $news.RegularPages | complement (first 1 $features) }}
 <section class="section">
   <div class="container-hp">
     <div class="tile is-ancestor is-vertical">
@@ -40,9 +43,6 @@
           </div>
         {{ end }}
       {{ end }}
-      <div class="tile">
-        {{ partial "tile-promos.html" . }}
-      </div>
       {{ if gt (len $pages) 8 }}
         <div class="tile">
           <div class="tile is-parent">
@@ -55,6 +55,9 @@
           </div>
         </div>
       {{ end }}
+      <div class="tile">
+        {{ partial "tile-promos.html" . }}
+      </div>
     </div>
   </div>
 </section>

@@ -95,12 +95,6 @@ yaml-definitions: &page-fields
     hint: "When linking to this page from another page, use this as the link title instead of hed"
     widget: string
     required: false
-  - label: Feature on homepage
-    name: featured
-    widget: boolean
-    hint: "Add to top area of homepage"
-    default: true
-    required: false
   - label: Special Report
     name: special-report
     widget: boolean
