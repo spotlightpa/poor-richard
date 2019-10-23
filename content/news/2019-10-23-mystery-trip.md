@@ -1,5 +1,4 @@
 +++
-draft = true
 hero-image = "img/uploads/state-sens.jpeg"
 hero-image-description = "The leader of the Pennsylvania Senate, Joe Scarnati, was among three senators who went on a European trip shortly after the Legislature passed a sweeping overhaul expanding wine sales."
 hero-image-credit = "Courtesy of The Philadelphia Inquirer"
@@ -16,7 +15,6 @@ kicker = "Campaign Finance"
 slug = "mystery-trip-to-europe-with-donors-by-pa-state-senators"
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted and Sam Janesch of The Caucus"
 special-report = true
-featured = true
 +++
 
 <script defer>
