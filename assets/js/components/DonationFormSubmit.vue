@@ -31,14 +31,16 @@ export default {
     this.baseURL = window.location.origin;
   },
   methods: {
-    sendSubmit(ev) {
-      let eventLabel = ev.target.form.checkValidity()
-        ? "Valid submission"
-        : "Invalid submission";
+    sendSubmit() {
+      let eventValue = this.formData.donationAmount;
+      if (this.formData.recurring === "Month") {
+        // Assume an 8% churn on monthly subscribers
+        eventValue *= 12;
+      }
       this.$ga("send", "event", {
         eventCategory: "Donation form",
         eventAction: "Submit form",
-        eventLabel,
+        eventValue,
         transport: "beacon"
       });
     }
