@@ -1,7 +1,7 @@
 +++
 draft = false
 published = 2019-10-22T22:34:09.391Z
-authors = ["Angela Couloumbis"]
+authors = ["Angela Couloumbis", "Sam Janesch of The Caucus"]
 title = "Hours after investigation reveals millions in hidden campaign spending, Pa. lawmakers push for less oversight"
 description = "Lawmakers quietly tucked a new provision into a bill that would reduce oversight and make it harder for the public to see how they spend their campaign cash."
 dek = "Lawmakers quietly tucked a new provision into a bill that would reduce oversight and make it harder for the public to see how they spend their campaign cash."
