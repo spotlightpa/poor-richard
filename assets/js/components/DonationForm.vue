@@ -172,13 +172,27 @@ export default {
       });
     },
     sendSubmit(ev) {
-      let eventLabel = ev.target.form.checkValidity()
-        ? "Valid submission"
-        : "Invalid submission";
+      let isValid = ev.target.form.checkValidity();
+      let eventLabel = isValid ? "Valid submission" : "Invalid submission";
+      if (!isValid) {
+        this.$ga("send", "event", {
+          eventCategory: "Donation form",
+          eventAction: "Attempt form submission",
+          eventLabel
+        });
+        return;
+      }
+
+      let eventValue = this.donationAmount;
+      if (this.recurring === "Month") {
+        // Assume an 8% churn on monthly subscribers
+        eventValue *= 12;
+      }
       this.$ga("send", "event", {
         eventCategory: "Donation form",
         eventAction: "Submit form",
         eventLabel,
+        eventValue,
         transport: "beacon"
       });
     }
