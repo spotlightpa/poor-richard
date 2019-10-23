@@ -41,7 +41,7 @@ yaml-definitions: &page-fields
     required: false
   - label: Date
     name: published
-    widget: date
+    widget: datetime
     hint: "Note that future dated articles will not be published on the live site"
     required: false
   - label: Authors
