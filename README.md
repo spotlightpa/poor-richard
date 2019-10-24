@@ -2,7 +2,7 @@
 
 A static site for [Spotlight PA](https://www.spotlightpa.org) hosted by [Netlify](https://www.netlify.com/).
 
-All content copyright Spotlight PA. Code available under the MIT license.
+All content copyright Spotlight PA. Code available under the MIT license. Photos used with permission as indicated.
 
 ## Usage
 - Install [Hugo](https://gohugo.io/) and Yarn
