@@ -1,9 +1,8 @@
-{{ $features := where .Site.RegularPages ".Params.special-report" true }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
-{{ if lt (len $features) 1 }}
-  {{ $features = first 1 $news.RegularPages }}
-{{ end }}
-{{ $pages := $news.RegularPages | complement (first 1 $features) }}
+{{ $featuredStory := where $news.RegularPages ".Params.suppress-featured" "!=" true | first 1 }}
+{{ $related := where $news.RegularPages ".Params.special-report" true | complement $featuredStory}}
+{{ $features := append $related $featuredStory }}
+{{ $pages := $news.RegularPages | complement $featuredStory }}
 <section class="section">
   <div class="container-hp">
     <div class="tile is-ancestor is-vertical">

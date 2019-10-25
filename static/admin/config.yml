@@ -101,6 +101,12 @@ yaml-definitions: &page-fields
     hint: "Add 'special report' label on homepage"
     default: false
     required: false
+  - label: Suppress in featured slot
+    name: suppress-featured
+    widget: boolean
+    hint: "Don't make this the top story on the homepage"
+    default: false
+    required: false
   - label: "Suppress title"
     name: suppress-title
     widget: boolean
