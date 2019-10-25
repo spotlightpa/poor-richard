@@ -1,0 +1,36 @@
+{{ define "extra-main" }}
+  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+  <section class="section columns">
+    <div class="column is-offset-one-fifth">
+      <div class="tile is-ancestor is-vertical">
+        {{ range $page := .Paginator.Pages }}
+          {{ partial "tile-horiz.html" $page }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="section columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      {{ if gt .Paginator.TotalPages 0 }}
+        <div class="level">
+        {{ if .Paginator.HasPrev }}
+          <span class="level-item">
+            <a
+              class="button is-primary is-outlined"
+              href="{{ .Paginator.Prev.URL }}"
+            >← Newer</a>
+          </span>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <span class="level-item">
+            <a
+              class="button is-primary is-outlined"
+              href="{{ .Paginator.Next.URL }}"
+            >Older →</a>
+          </span>
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
