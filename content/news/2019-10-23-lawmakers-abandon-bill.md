@@ -11,7 +11,6 @@ description = "The proposed change to reduce oversight of their spending came ju
 dek = "The proposed change to reduce oversight of their spending came just hours after an investigation revealed millions of dollars in hidden campaign expenses."
 kicker = "Campaign Finance"
 slug = "lawmakers-abruptly-abandon-attempt-to-limit-public-access-to-campaign-expenses"
-special-report = true
 +++
 
 <script defer>
