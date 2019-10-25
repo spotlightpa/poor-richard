@@ -1,17 +1,16 @@
 +++
 hero-image = "img/uploads/jay-costa.jpeg"
+hero-image-description = "State Sen. Jay Costa (D., Allegheny) is pushing a sweeping campaign finance reform bill that would, among other changes, ban using campaign cash for personal use and require candidates to better describe their expenses on public forms."
 hero-image-credit = "Pittsburgh Post-Gazette staff"
-hero-image-description = "State Sen. Jay Costa (D.,Allegheny) is pushing a sweeping campaign finance reform bill that would, among other changes, ban using campaign cash for personal use and require candidates to better describe their expenses on public forms."
-slug = "pennsylvania-campaign-expenses-reform-bill-costa"
-published = 2019-10-25T18:01:53Z
-Budget = "A Pennsylvania lawmaker is proposing sweeping campaign finance reforms that would set limits on political contributions, increase transparency and ban candidates from using campaign cash for their own personal benefit -- issues at the heart of a yearlong investigation published this week by The Caucus and Spotlight PA."
-title = "Citing Spotlight PA/Caucus probe, top lawmaker pushes limits on campaign donations, stricter disclosure rules "
-description = "Sen. Jay Costa is pushing sweeping campaign finance reforms that would set limits on political contributions, increase transparency and ban candidates from using campaign cash for personal benefit -- issues at the heart of a yearlong investigation published this week by The Caucus and Spotlight PA."
-dek = "Sen. Jay Costa pushes for campaign finance reforms."
+published = 2019-10-25T18:01:53.000Z
 authors = ["Sam Janesch, The Caucus", "Angela Couloumbis"]
 byline = "Sam Janesch, The Caucus and Angela Couloumbis, Spotlight PA"
+title = "Citing Spotlight PA/Caucus probe, top lawmaker pushes limits on campaign donations, stricter disclosure rules "
+description = "The leader of the Republican-controlled Senate, Joe Scarnati, said he supports the effort."
+dek = "The leader of the Republican-controlled Senate, Joe Scarnati, said he supports the effort."
 kicker = "Campaign Finance"
 special-report = true
+slug = "pennsylvania-campaign-expenses-reform-bill-costa"
 +++
 
 HARRISBURG — A Pennsylvania lawmaker is proposing sweeping campaign-finance reforms that would set limits on political contributions, increase transparency and ban candidates from using campaign cash for their personal benefit — issues at the heart of a yearlong investigation published this week by The Caucus and Spotlight PA.
