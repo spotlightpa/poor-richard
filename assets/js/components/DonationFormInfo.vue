@@ -123,7 +123,7 @@ export default {
             label="City"
             :max-length="50"
             :required="true"
-            autocomplete="billing address-level1"
+            autocomplete="billing address-level2"
             placeholder="Harrisburg"
           ></BulmaFieldInput>
         </div>
@@ -134,7 +134,7 @@ export default {
             label="State"
             :options="stateOptions"
             :required="true"
-            autocomplete="billing address-level2"
+            autocomplete="billing address-level1"
           ></BulmaFieldSelect>
           <BulmaFieldInput
             v-else
@@ -142,7 +142,7 @@ export default {
             label="Province or Region"
             :max-length="50"
             :required="true"
-            autocomplete="billing address-level2"
+            autocomplete="billing address-level1"
           ></BulmaFieldInput>
         </div>
         <div class="column">
