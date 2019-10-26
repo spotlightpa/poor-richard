@@ -70,7 +70,8 @@ export default {
       monthOptions,
       expYear: "",
       setDonationName: false,
-      donationNameVal: ""
+      donationNameVal: "",
+      isSubmitting: false
     };
   },
   computed: {
@@ -172,7 +173,13 @@ export default {
       });
     },
     sendSubmit(ev) {
+      if (this.isSubmitting) {
+        ev.preventDefault();
+        return;
+      }
       let isValid = ev.target.form.checkValidity();
+      this.isSubmitting = isValid;
+
       let eventLabel = isValid ? "Valid submission" : "Invalid submission";
       if (!isValid) {
         this.$ga("send", "event", {
@@ -530,6 +537,7 @@ export default {
       class="button is-warning is-large is-fullwidth has-text-weight-bold"
       name="Subm Donation"
       type="submit"
+      :class="{ 'is-loading': isSubmitting }"
       @click="sendSubmit"
     >
       Submit Donation
