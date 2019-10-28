@@ -5,6 +5,7 @@ export default {
   mixins: [DonationFormMixin],
   data() {
     return {
+      isSubmitting: false,
       baseURL: "https://www.spotlightpa.org"
     };
   },
@@ -25,13 +26,26 @@ export default {
     },
     type() {
       return this.testing ? "text" : "hidden";
+    },
+    submitClasses() {
+      let color = this.testing ? "is-info" : "is-warning";
+      let classes = [color];
+      if (this.isSubmitting) {
+        classes.push("is-loading");
+      }
+      return classes;
     }
   },
   mounted() {
     this.baseURL = window.location.origin;
   },
   methods: {
-    sendSubmit() {
+    sendSubmit(ev) {
+      if (this.isSubmitting) {
+        ev.preventDefault();
+        return;
+      }
+      this.isSubmitting = true;
       let eventValue = this.formData.donationAmount;
       if (this.formData.recurring === "Month") {
         // Assume an 8% churn on monthly subscribers
@@ -62,7 +76,7 @@ export default {
 
     <button
       class="button is-large is-fullwidth has-text-weight-bold"
-      :class="testing ? 'is-info' : 'is-warning'"
+      :class="submitClasses"
       name="Subm Donation"
       type="submit"
       @click="sendSubmit"
