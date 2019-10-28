@@ -38,39 +38,66 @@ York County Community Foundation <br>
 
 {{<supporters-list>}}
 
+* Nell McCormack Abom
 * Richard Abraham
+* Gail Alu
+* Helen Andrews
 * Oscar Armas-Luy
+* Susan Auchincloss
+* David Auel
 * Kathleen Baker
 * Whitney Baldwin
 * Chris Bastress
 * Mark Bazrod
+* Barry Bedrick
+* Ron Beitler
 * Sigal Ben
 * L.J. Bernard
 * Rita Bernstein & Alan Zuckerman
 * Robert Joseph Biller
 * David Bohanick
 * Jeffrey L. Braff
+* Lisa Budwig
 * Joseph L. Carbo
 * Mireille Carigi
 * Carosella Sr.
 * Ashleigh Graf Casassa
 * Marguerite Chandler
+* Frank Cicchiello
+* Dr. Dane S. Claussen
 * John & Joy Burt Conti
+* Laurel Costa
 * Brett Cott
+* Chris Coyle
 * Karen Crosby
+* Mike Del Vacchio
 * Fran DeMillion
 * Barry DeSantis
 * Earl Drumheiser
+* Stephen Duncan
+* Dianne Elderkin
+* Joseph Elias
 * Mary Erdman
+* J. Fauls
 * B. Faulstick
+* Adelaide Ferguson & Ronald Cahan
 * Ezra Fishman & Nicola Brodie
+* Thomas Flocco
+* Barbara Forbes-Rhouni
 * Ryan Froman
+* Greg Fullam
+* Anthony Gabriel
+* Denise Gmerek
 * Tamara Goldman
+* Ralf Rundgren Graves
 * John F. Graybill
+* Mark Gudalis
 * Frank Hadden
 * Robert Haines
 * B.A. Hamilton
+* Kevin M. Hepler, MD
 * Grace E. Herstine
+* Clint Heverly
 * Bob Hoover
 * Louise Horan
 * Avram Hornik
@@ -79,54 +106,83 @@ York County Community Foundation <br>
 * Annette E. Inker
 * Evelyn Ishmael
 * Arlene Jarett
+* Eric Jurgensen
 * Peter Johnstone
 * Karen M. Kaplan & Aaron M. Shatzman
 * P. Katze
-* J. Kauer & D. Fleece
+* Jane Kauer & David Fleece
 * Paul Keller
 * Alan Kennedy
 * Cathy King
+* Frank Kirkwood
 * Steven Kuloszewski
+* Kathryn Labrum, Esq.
+* John Lambert
 * Lora Lavin
 * Jamie Lemon & Steve Cline
 * Stephen J. Lipnichan
+* Sue Livio
+* David Loomis
 * Daniel Lynch
+* Matt Lyon
+* James J. Maguire
 * Lelah Marie
 * William H. Maruca
 * Claudia C. McGill
 * K. Melton
 * Keith G. Melville
 * Jules J. Mermelstein
+* Myles Miller
+* Larry Miller
 * Lee Mooney
 * Ryan Morden
+* P.F. Moyer
+* Toni Moyer
 * M. Noel
 * Marty O’Brien
+* Ellen Ormond
+* Dennis Owens
 * Ronald Ozio
 * Leanora Paniccia
 * Amy L. Perez
 * Rick Piper
+* Laura Powers
+* John Rhoades
 * Ralph Riedel
+* Eric Riese
 * Edward T. Rodgers
 * David R. Ross
+* Robert Ruff Jr.
+* Edwin Rund
 * Benedict X. Saia
+* Robert & Judith Schachner
+* Pat Sellers
 * Kimberley Shore
 * Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
 * Michael Sperger
 * Anthony Spisto
+* Christopher Spratt
+* John Stenger
+* Harriet Stone
 * Thomas Stone
+* Freda Tepfer
 * R. Thomas
 * Irene Tierney
 * M. Tillger
+* Karen Hale Toth
 * Walter C. Uhler
 * Joseph C. Vignola
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
 * Rhonda White
+* George Wolff
 * Margaret Wren
+* Tracy Yeomans
 * Jerry Young
 * Sherley Young
+* Matt Zencey
 * Gerald Zubkoff
   {{</supporters-list>}}
