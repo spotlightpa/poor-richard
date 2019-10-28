@@ -34,11 +34,20 @@ export default {
         this.hasSetDonationName = true;
         this.donationName_ = val;
       }
+    },
+    stateOrProvince() {
+      return this.isUSA ? this.state : this.province;
     }
   },
   watch: {
     donationName(val) {
       this.formData.donationName = val;
+    },
+    stateOrProvince: {
+      handler() {
+        this.formData.stateOrProvince = this.stateOrProvince;
+      },
+      immediate: true
     }
   }
 };
@@ -46,6 +55,10 @@ export default {
 
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
+    <DonationFormBreadcrumbs
+      :step-obj="stepObj"
+      :testing="testing"
+    ></DonationFormBreadcrumbs>
     <h2 class="title has-text-centered">
       Donate {{ formData.donationAmount | formatUSD }} {{ timePeriod }}
     </h2>
