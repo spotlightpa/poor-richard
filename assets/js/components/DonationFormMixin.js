@@ -5,8 +5,7 @@ import BulmaMessage from "./BulmaMessage.vue";
 import BulmaModal from "./BulmaModal.vue";
 
 import DonationFormButtons from "./DonationFormButtons.vue";
-
-// import { DonationFormData } from "../form-data.js";
+import DonationFormBreadcrumbs from "./DonationFormBreadcrumbs.vue";
 
 export default {
   components: {
@@ -15,10 +14,12 @@ export default {
     BulmaFieldSelect,
     BulmaMessage,
     BulmaModal,
-    DonationFormButtons
+    DonationFormButtons,
+    DonationFormBreadcrumbs
   },
   props: {
     formData: Object,
+    stepObj: Object,
     testing: Boolean
   },
   computed: {

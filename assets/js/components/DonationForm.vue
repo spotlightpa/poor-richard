@@ -16,19 +16,21 @@ export default {
   data() {
     return {
       testing: false,
-      steps: [
-        { name: "Amount", component: DonationFormAmount },
-        { name: "Information", component: DonationFormInfo },
-        { name: "Payment", component: DonationFormPayment },
-        { name: "Confirm", component: DonationFormSubmit }
-      ],
-      stepN: 0,
+      stepObj: {
+        items: [
+          { name: "Amount", component: DonationFormAmount },
+          { name: "Information", component: DonationFormInfo },
+          { name: "Payment", component: DonationFormPayment },
+          { name: "Confirm", component: DonationFormSubmit }
+        ],
+        n: 0
+      },
       cnpFormData: DonationFormData()
     };
   },
   computed: {
     stepComponent() {
-      return this.steps[this.stepN].component;
+      return this.stepObj.items[this.stepObj.n].component;
     }
   },
   mounted() {
@@ -41,7 +43,7 @@ export default {
   },
   methods: {
     changeStep(inc) {
-      this.stepN += inc;
+      this.stepObj.n += inc;
       this.$refs.anchor.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
@@ -51,31 +53,13 @@ export default {
 <template>
   <div>
     <a ref="anchor"></a>
-    <nav
-      v-if="stepN"
-      class="breadcrumb is-centered is-large has-arrow-separator has-margin-bottom"
-      aria-label="breadcrumbs"
-    >
-      <ul>
-        <li
-          v-for="(step, i) of steps"
-          :key="step.name"
-          :class="{ 'is-active': i >= stepN && !testing }"
-        >
-          <a
-            :class="{ 'has-text-success': i == stepN }"
-            @click="stepN = i"
-            v-text="step.name"
-          ></a>
-        </li>
-      </ul>
-    </nav>
 
     <keep-alive>
       <component
         :is="stepComponent"
         :testing="testing"
         :form-data="cnpFormData"
+        :step-obj="stepObj"
         @change-step="changeStep"
       ></component>
     </keep-alive>

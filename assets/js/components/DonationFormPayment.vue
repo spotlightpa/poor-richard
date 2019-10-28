@@ -48,8 +48,11 @@ export default {
     }
   },
   watch: {
-    cardName(val) {
-      this.formData.cardName = val;
+    cardName: {
+      handler(val) {
+        this.formData.cardName = val;
+      },
+      immediate: true
     },
     ccNumber(val) {
       this.formData.ccNumber = val.replace(/\D/g, "");
@@ -60,6 +63,11 @@ export default {
 
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
+    <DonationFormBreadcrumbs
+      :step-obj="stepObj"
+      :testing="testing"
+    ></DonationFormBreadcrumbs>
+
     <h2 class="title has-text-centered">
       Donate {{ formData.donationAmount | formatUSD }} {{ timePeriod }}
     </h2>

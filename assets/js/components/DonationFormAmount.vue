@@ -118,7 +118,7 @@ export default {
       <p class="is-size-4">Together, we can hold the powerful to account.</p>
     </hgroup>
 
-    <div class="buttons is-centered is-hidden-tablet">
+    <div class="buttons is-centered is-hidden-desktop">
       <button
         v-for="opt of recurringOptions"
         :key="opt.value"

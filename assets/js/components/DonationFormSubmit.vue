@@ -34,6 +34,10 @@ export default {
         classes.push("is-loading");
       }
       return classes;
+    },
+    ccDigitsEnd() {
+      let match = String(this.formData.ccNumber).match(/\d+(\d{4})/);
+      return match ? match[1] : "????";
     }
   },
   mounted() {
@@ -64,6 +68,11 @@ export default {
 
 <template>
   <form method="post" :action="cnpURL" @focus.capture="sendFocus">
+    <DonationFormBreadcrumbs
+      :step-obj="stepObj"
+      :testing="testing"
+    ></DonationFormBreadcrumbs>
+
     <h2 class="title">
       You will be charged:
       <span class="is-hidden-mobile is-pulled-right">
@@ -97,7 +106,9 @@ export default {
     </p>
     <p>
       Your name will appear as “{{ formData.donationName }}” on the list of
-      founding donors.
+      founding donors. Charges will appear on credit card ending
+      {{ ccDigitsEnd }}. <a @click="stepDec">Go back</a> to correct your
+      information.
     </p>
     <p>
       &nbsp;
