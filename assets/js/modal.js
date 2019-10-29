@@ -1,4 +1,4 @@
-import { on, loadDate, storeDate } from "./dom-utils.js";
+import { on, once, transition, loadDate, storeDate } from "./dom-utils.js";
 
 export function openModal() {
   let modal = document.querySelector("#modal-newsletter");
@@ -18,6 +18,7 @@ export function openModal() {
   let form = modal.querySelectorAll("form");
 
   modal.classList.add("is-active");
+  transition(modal, "fade-enter", "fade-enter-active");
   root.classList.add("is-clipped");
   const ESCkeyCode = 27;
 
@@ -64,12 +65,12 @@ export function openModal() {
 }
 
 export function addModal() {
-  let cancelOpen = on("scroll", [window], () => {
-    cancelOpen();
+  once("scroll", [window], () => {
+    const onTestPage = !!window.location.href.match(/debug-modal/);
     const LAST_VISIT_KEY = "last-visit";
     const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
     const FROM_MC_KEY = "originated-from-mailchimp";
-    const delay = 5000; // 5s
+    const delay = onTestPage ? 500 : 5000; // 5s
 
     let now = new Date();
     let showModal = true;
@@ -99,7 +100,7 @@ export function addModal() {
       showModal = false;
     }
     // Or we're just testing...
-    if (window.location.href.match(/debug-modal/)) {
+    if (onTestPage) {
       showModal = true;
     }
     // Then show it...
