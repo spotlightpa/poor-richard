@@ -29,6 +29,23 @@ export function on(ev, qs, cb) {
   };
 }
 
+export function once(ev, qs, cb) {
+  let cancelFn = on(ev, qs, (...args) => {
+    cancelFn();
+    cb(...args);
+  });
+}
+
+export function transition(el, clsName, clsNameActive) {
+  el.classList.add(clsName, clsNameActive);
+  window.setTimeout(() => {
+    el.classList.remove(clsName);
+    window.setTimeout(() => {
+      el.classList.remove(clsNameActive);
+    }, 0);
+  }, 0);
+}
+
 export function storeItem(name, obj) {
   let data = JSON.stringify(obj);
   window.localStorage.setItem(name, data);
