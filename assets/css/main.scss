@@ -16,11 +16,13 @@ $cyan: $spotlight-lightblue;
 $cyan-invert: #2a7ab0;
 $green: $papost-green;
 $red: $inky-red;
+$orange: #ff6c36;
 $yellow: $pg-yellow;
 $yellow-invert: #fff;
 $white: #fff;
 $black: #000;
 $black-ter: hsla(0, 0%, 14%, 0.8);
+$danger: $orange;
 
 $link-hover: $spotlight-lightblue;
 $footer-background-color: hsl(0, 0%, 7%);
@@ -410,4 +412,8 @@ a.navbar-burger:hover {
 .expand-enter,
 .expand-leave-to {
   height: 0;
+}
+
+.is-size-0 {
+  font-size: 5rem;
 }
