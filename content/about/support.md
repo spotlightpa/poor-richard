@@ -129,6 +129,7 @@ York County Community Foundation <br>
 * Lelah Marie
 * William H. Maruca
 * Claudia C. McGill
+* Michele McGovern
 * K. Melton
 * Keith G. Melville
 * Jules J. Mermelstein
