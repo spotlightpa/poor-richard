@@ -175,7 +175,7 @@ export default {
         v-model="formData.comments"
         class="textarea"
         rows="3"
-        placeholder="Optional: Please tell us your reasons for donating to Spotlight PA."
+        placeholder="Optional: Tell us why you’re supporting Spotlight PA."
       ></textarea>
     </BulmaField>
 
