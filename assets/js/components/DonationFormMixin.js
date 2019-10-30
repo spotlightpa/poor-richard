@@ -29,6 +29,13 @@ export default {
         Year: "annually",
         "": ""
       }[this.formData.recurring];
+    },
+    perPeriod() {
+      return {
+        Month: "/month",
+        Year: "/year",
+        "": ""
+      }[this.formData.recurring];
     }
   },
   methods: {

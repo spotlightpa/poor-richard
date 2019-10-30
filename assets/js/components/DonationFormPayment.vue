@@ -66,7 +66,7 @@ export default {
       return this.testing ? "text" : "hidden";
     },
     submitClasses() {
-      let color = this.testing ? "is-info" : "is-warning";
+      let color = this.testing ? "is-success" : "is-primary";
       let classes = [color];
       if (this.isSubmitting) {
         classes.push("is-loading");
@@ -136,7 +136,7 @@ export default {
     @focus.capture="sendFocus"
   >
     <h2 class="title has-text-centered ">
-      Donate {{ formData.donationAmount | formatUSD }}
+      Donate {{ formData.donationAmount | formatUSD }}{{ perPeriod }}
     </h2>
     <h3
       v-if="formData.recurring"

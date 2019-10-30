@@ -58,7 +58,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="form-container">
     <window-listener event="popstate" @popstate="popstate"></window-listener>
     <a ref="anchor"></a>
 

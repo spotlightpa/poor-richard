@@ -56,7 +56,7 @@ export default {
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
     <h2 class="title has-text-centered">
-      Donate {{ formData.donationAmount | formatUSD }}
+      Donate {{ formData.donationAmount | formatUSD }}{{ perPeriod }}
     </h2>
     <h3
       v-if="formData.recurring"
