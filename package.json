@@ -6,7 +6,7 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "format": "yarn run format:eslint || yarn run format:prettier",
+    "format": "yarn run format:eslint; yarn run format:prettier",
     "format:eslint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
     "git-pre-push": "yarn run test",
