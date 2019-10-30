@@ -9,6 +9,12 @@ export default {
   props: {
     value: Boolean
   },
+  watch: {
+    value(newVal) {
+      let root = window.document.body.parentElement;
+      root.classList.toggle("is-clipped", newVal);
+    }
+  },
   methods: {
     close() {
       this.$emit("input", false);
