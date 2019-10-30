@@ -55,14 +55,16 @@ export default {
 
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
-    <DonationFormBreadcrumbs
-      :step-obj="stepObj"
-      :testing="testing"
-    ></DonationFormBreadcrumbs>
     <h2 class="title has-text-centered">
-      Donate {{ formData.donationAmount | formatUSD }} {{ timePeriod }}
+      Donate {{ formData.donationAmount | formatUSD }}
     </h2>
-    <h2 class="title">Personal Information</h2>
+    <h3
+      v-if="formData.recurring"
+      class="subtitle has-text-centered has-margin-bottom is-spaced"
+    >
+      Payments recur {{ timePeriod }} until canceled
+    </h3>
+    <h2 class="title is-size-3">Personal Information</h2>
     <div class="block">
       <div class="columns">
         <div class="column">
@@ -72,7 +74,6 @@ export default {
             :max-length="50"
             :required="true"
             autocomplete="billing given-name"
-            placeholder="William"
           ></BulmaFieldInput>
         </div>
         <div class="column">
@@ -82,7 +83,6 @@ export default {
             :max-length="50"
             :required="true"
             autocomplete="billing family-name"
-            placeholder="Penn"
           ></BulmaFieldInput>
         </div>
         <div class="column">
@@ -93,12 +93,11 @@ export default {
             :required="true"
             type="email"
             autocomplete="billing email"
-            placeholder="willsylvania@example.com"
           ></BulmaFieldInput>
         </div>
       </div>
     </div>
-    <h2 class="title">Billing Address</h2>
+    <h2 class="title is-size-3">Billing Address</h2>
     <div class="block">
       <BulmaFieldSelect
         v-model="formData.country"
@@ -112,21 +111,7 @@ export default {
         label="Address"
         :max-length="100"
         :required="true"
-        autocomplete="billing address-line1"
-        placeholder="123 Main St."
-      ></BulmaFieldInput>
-      <BulmaFieldInput
-        v-if="formData.address1"
-        v-model="formData.address2"
-        :max-length="100"
-        autocomplete="billing address-line2"
-        placeholder="Apt. 2B"
-      ></BulmaFieldInput>
-      <BulmaFieldInput
-        v-if="formData.address2"
-        v-model="formData.address3"
-        :max-length="100"
-        autocomplete="billing address-line3"
+        autocomplete="billing street-address"
       ></BulmaFieldInput>
 
       <div class="columns">
@@ -137,7 +122,6 @@ export default {
             :max-length="50"
             :required="true"
             autocomplete="billing address-level2"
-            placeholder="Harrisburg"
           ></BulmaFieldInput>
         </div>
         <div class="column">
@@ -162,7 +146,6 @@ export default {
           <BulmaFieldInput
             v-model="formData.postalCode"
             :label="zipOrPostalCode"
-            placeholder="17120"
             :max-length="20"
             :required="true"
             autocomplete="billing postal-code"
@@ -170,14 +153,13 @@ export default {
         </div>
       </div>
     </div>
-    <h2 class="title">Additional Information</h2>
+    <h2 class="title is-size-3">Additional Information</h2>
 
     <BulmaFieldInput
       v-model="donationName"
       label="How would you like your name to appear in the “Founding Donors” section of our website?"
       label-class=""
       help="To ensure full transparency, we cannot accept anonymous donations."
-      placeholder="William Penn"
       autocomplete="name"
       :required="true"
       :max-length="500"
