@@ -48,7 +48,7 @@ notAlternative = true
 
 [params]
     title = "Spotlight PA"
-    favicon = "/img/logos/square-white-on-black-920.png"
+    favicon = "/img/logos/circle-black-on-trans-920.png"
     images = [
         "/img/uploads/banner-white-on-capitol.jpeg"
     ]
