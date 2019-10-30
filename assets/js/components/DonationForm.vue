@@ -1,4 +1,5 @@
 <script>
+import WindowListener from "./WindowListener.js";
 import DonationFormAmount from "./DonationFormAmount.vue";
 import DonationFormInfo from "./DonationFormInfo.vue";
 import DonationFormPayment from "./DonationFormPayment.vue";
@@ -7,6 +8,7 @@ import { DonationFormData } from "../form-data.js";
 
 export default {
   components: {
+    WindowListener,
     DonationFormAmount,
     DonationFormInfo,
     DonationFormPayment
@@ -38,17 +40,12 @@ export default {
       nonInteraction: true
     });
     window.history.replaceState({ step: this.stepObj.n }, "", "");
-    this.statePopper = ev => void this.popstate(ev);
-    window.addEventListener("popstate", this.statePopper);
-  },
-  destroyed() {
-    window.removeEventListener("popstate", this.statePopper);
   },
   methods: {
-    changeStep(inc) {
-      this.stepObj.n += inc;
-      window.history.pushState({ step: this.stepObj.n }, "", "");
+    changeStep(delta) {
+      this.stepObj.n += delta;
       this.$refs.anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+      window.history.pushState({ step: this.stepObj.n }, "", "");
     },
     popstate(ev) {
       let { step } = ev.state;
@@ -62,6 +59,7 @@ export default {
 
 <template>
   <div>
+    <window-listener event="popstate" @popstate="popstate"></window-listener>
     <a ref="anchor"></a>
 
     <keep-alive>

@@ -1,10 +1,10 @@
 <script>
-import KeyListener from "./KeyListener.js";
+import WindowListener from "./WindowListener.js";
 
 export default {
   name: "BulmaModal",
   components: {
-    KeyListener
+    WindowListener
   },
   props: {
     value: Boolean
@@ -26,7 +26,7 @@ export default {
 <template>
   <transition name="fade">
     <div v-if="value" class="modal is-active">
-      <key-listener @keyup.esc="close"></key-listener>
+      <window-listener event="keyup" @keyup.esc="close"></window-listener>
       <div class="modal-background" @click="close"></div>
       <div class="modal-content">
         <slot :modal-close="close"></slot>
