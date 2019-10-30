@@ -182,10 +182,10 @@ export default {
       :required="true"
     ></BulmaFieldInput>
 
-    <div class="buttons is-right has-margin-top-thick">
+    <div class="buttons has-margin-top-thick">
       <button
         type="button"
-        class="button is-medium is-danger has-text-weight-semibold"
+        class="button is-large is-fullwidth is-primary has-text-weight-semibold"
         @click="validate"
       >
         <span>

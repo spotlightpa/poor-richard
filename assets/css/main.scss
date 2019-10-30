@@ -404,3 +404,8 @@ $margin-sizes: (
 .is-size-0 {
   font-size: 5rem;
 }
+
+.form-container {
+  max-width: $tablet;
+  margin: 0 auto;
+}
