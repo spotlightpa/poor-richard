@@ -42,6 +42,13 @@ export default {
     },
     annualizedAmount() {
       return Math.ceil(this.formData.donationAmount / 12);
+    },
+    perPeriod() {
+      return {
+        "": "",
+        Month: "/mo.",
+        Year: "/yr."
+      }[this.formData.recurring];
     }
   },
   watch: {
@@ -95,27 +102,25 @@ export default {
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
     <hgroup class="has-text-centered has-margin-bottom-thick">
-      <h1 class="title is-spaced has-text-black is-uppercase is-size-1">
+      <h1 class="title is-spaced has-text-black is-uppercase is-size-0">
         Join Us
       </h1>
 
-      <p class="is-size-4">
-        Become a founding donor to the only investigative newsroom
+      <p class="is-size-3">
+        Support the only investigative newsroom
         <span class="is-hidden-touch"><br /></span>
         dedicated to covering Pennsylvania state government.
       </p>
 
       <hr
-        class="is-emphatic-underline is-primary is-margin-centered has-margin-top-medium has-margin-bottom max-12r"
+        class="is-emphatic-underline is-margin-centered has-margin-top has-margin-bottom max-12r"
       />
 
-      <p class="is-size-4">
+      <p class="is-size-3">
         Your tax-deductible donation to Spotlight PA will help us investigate
-        <span class="is-hidden-touch"><br /></span>
-        one of the largest and most opaque state capitals in the U.S.
+        one of the largest and most opaque state capitals in the U.S. Together,
+        we can hold the powerful to account.
       </p>
-
-      <p class="is-size-4">Together, we can hold the powerful to account.</p>
     </hgroup>
 
     <div class="buttons is-centered is-hidden-desktop">
@@ -157,7 +162,7 @@ export default {
         type="button"
         @click="setDonationAmount(amount)"
       >
-        ${{ amount }}
+        ${{ amount }}{{ perPeriod }}
       </button>
       <button
         class="button is-large"
@@ -177,25 +182,35 @@ export default {
       :required="true"
     ></BulmaFieldInput>
 
-    <DonationFormButtons
-      :has-previous="false"
-      @continue="validate"
-    ></DonationFormButtons>
+    <div class="buttons is-right has-margin-top-thick">
+      <button
+        type="button"
+        class="button is-medium is-danger"
+        @click="validate"
+      >
+        <span>
+          Yes, accountability matters
+        </span>
+        <span class="icon">
+          <font-awesome-icon :icon="['far', 'arrow-alt-circle-right']" />
+        </span>
+      </button>
+    </div>
 
     <p>
-      Please contact
-      <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a> if you
-      would prefer to donate by check or have any questions about donating.
+      If you prefer to donate by check or are interested in learning about other
+      ways to support Spotlight PA, please contact
+      <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a>.
     </p>
 
     <BulmaModal :value="showModal" @input="noThanks">
       <BulmaMessage
         header="Switch to Monthly?"
         :show-close-button="true"
-        class="is-warning is-medium"
+        class="is-primary is-medium"
         @close-button="noThanks"
       >
-        <h1 class="title">
+        <h1 class="title is-size-3">
           Would you prefer to donate {{ annualizedAmount | formatUSD }} every
           month?
         </h1>
@@ -206,12 +221,12 @@ export default {
           <br />
         </p>
         <div class="buttons">
-          <button type="button" class="button is-warning " @click="noThanks">
+          <button type="button" class="button is-light " @click="noThanks">
             No thanks
           </button>
           <button
             type="button"
-            class="button is-primary is-focused"
+            class="button is-primary has-text-weight-bold is-focused"
             @click="switchMonthly"
           >
             Yes, switch to monthly
