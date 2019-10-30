@@ -185,7 +185,7 @@ export default {
     <div class="buttons is-right has-margin-top-thick">
       <button
         type="button"
-        class="button is-medium is-danger"
+        class="button is-medium is-danger has-text-weight-semibold"
         @click="validate"
       >
         <span>
