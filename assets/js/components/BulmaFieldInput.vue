@@ -17,6 +17,7 @@ export default {
     help: String,
     validator: Function,
     name: String,
+    inputmode: String,
     minLength: {
       type: Number,
       default: null
@@ -89,14 +90,15 @@ export default {
       :id="idForLabel"
       ref="input"
       class="input"
-      :type="type"
+      :autocomplete="autocomplete"
+      :autofocus="autofocus"
+      :inputmode="inputmode"
+      :maxlength="maxLength"
+      :minlength="minLength"
       :name="name"
       :placeholder="placeholder"
-      :autofocus="autofocus"
-      :autocomplete="autocomplete"
       :required="required"
-      :minlength="minLength"
-      :maxlength="maxLength"
+      :type="type"
       :value="value"
       @blur="updateValidationMessage"
       @invalid="updateValidationMessage"
