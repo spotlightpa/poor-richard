@@ -268,26 +268,19 @@ a.navbar-burger:hover {
   margin-right: auto;
 }
 
-.has-margin-top-thin {
-  margin-top: 0.5rem;
-}
+$margin-sizes: (
+  "-thin": 0.5rem,
+  "-medium": 0.75rem,
+  "": 1.5rem,
+  "-thick": 3rem
+);
 
-.has-margin-top-thin-tablet {
-  @media screen and (max-width: $tablet) {
-    margin-top: 0.5rem;
+@each $dir in ("top", "bottom") {
+  @each $name, $size in $margin-sizes {
+    .has-margin-#{$dir}#{$name} {
+      margin-#{$dir}: $size;
+    }
   }
-}
-
-.has-margin-top {
-  margin-top: 1.5rem;
-}
-
-.has-margin-top-medium {
-  margin-top: 0.75rem;
-}
-
-.has-margin-top-thick {
-  margin-top: 3rem;
 }
 
 .has-margin-top-negative {
@@ -298,16 +291,10 @@ a.navbar-burger:hover {
   margin-top: $subtitle-negative-margin + 0.55rem;
 }
 
-.has-margin-bottom {
-  margin-bottom: 1.5rem;
-}
-
-.has-margin-bottom-thick {
-  margin-bottom: 3rem;
-}
-
-.has-margin-bottom-thin {
-  margin-bottom: 0.5rem;
+.has-margin-top-thin-tablet {
+  @media screen and (max-width: $tablet) {
+    margin-top: 0.5rem;
+  }
 }
 
 .tag {
