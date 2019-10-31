@@ -4,7 +4,6 @@
 {{ $imgOpts := dict "imagePath" $heroName }}
 {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
-{{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
 {{ $size := .Param "hero-image-size" | default "inline" }}
 {{ if eq $size "inline" }}
   {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
