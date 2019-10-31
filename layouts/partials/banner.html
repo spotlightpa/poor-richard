@@ -1,14 +1,14 @@
 {{ $link := .Param "banner-link" }}
 {{ $gaEvent := dict "eventCategory" "Banner Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
 
-<section class="has-background-warning has-radius-padding">
+<section class="has-background-danger has-radius-padding">
   {{ if $link }}
     <a href="{{ $link }}" data-ga-event="{{ $gaEvent | jsonify }}">
       {{ template "banner-content" . }}
     </a>
   {{ else }}
     {{ block "banner-content" . }}
-      <div class="is-size-3-fullscreen is-size-4 has-text-black has-text-centered">
+      <div class="is-size-3-fullscreen is-size-4 has-text-white has-text-centered">
         {{ .Param "banner" | markdownify }}
       </div>
     {{ end }}

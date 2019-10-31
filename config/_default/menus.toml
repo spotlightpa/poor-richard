@@ -30,7 +30,7 @@ weight = 5
 
 [[main]]
 name = "Send a tip"
-pre = "is-uppercase has-text-warning"
+pre = "is-uppercase"
 url = "/tips/"
 weight = 6
 
