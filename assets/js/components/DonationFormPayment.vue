@@ -173,7 +173,6 @@ export default {
           v-model="formData.cvv"
           inputmode="numeric"
           label="CVV"
-          name="Cvv2"
           :min-length="3"
           :max-length="4"
           :required="true"
@@ -188,7 +187,6 @@ export default {
         <BulmaFieldSelect
           v-model="formData.expMonth"
           label="Expiration month"
-          name="ExpirationMonth"
           :options="monthOptions"
           required
           autocomplete="cc-exp-month"
@@ -198,7 +196,6 @@ export default {
         <BulmaFieldSelect
           v-model="formData.expYear"
           label="Expiration year"
-          name="ExpirationYear"
           :options="expirationYears"
           :required="true"
           autocomplete="cc-exp-year"
@@ -219,7 +216,6 @@ export default {
     <button
       class="button is-large is-fullwidth has-text-weight-bold"
       :class="submitClasses"
-      name="Subm Donation"
       type="button"
       @click="sendSubmit"
     >
