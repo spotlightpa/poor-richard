@@ -30,3 +30,10 @@
   href='{{ absURL "/feeds/full.xml" }}'
   title="Full News Feed"
 />
+
+{{ $icon := resources.Get (.Site.Param "favicon") }}
+{{ range $size := slice "32x32" "128x128" "152x152" "167x167" "180x180" "192x192" "196x196" }}
+  {{ $iconShrunk := $icon.Fit $size }}
+  <link rel="shortcut icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
+  <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
+{{ end }}

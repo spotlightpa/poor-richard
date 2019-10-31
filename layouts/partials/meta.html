@@ -22,13 +22,6 @@
   <link href="{{ .Permalink }}" rel="canonical">
 {{ end }}
 
-{{ $icon := resources.Get (.Param "favicon") }}
-{{ range $size := slice "32x32" "128x128" "152x152" "167x167" "180x180" "192x192" "196x196" }}
-  {{ $iconShrunk := $icon.Fit $size }}
-  <link rel="shortcut icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
-  <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
-{{ end }}
-
 <meta name="description" content="{{ .Description }}">
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
