@@ -25,6 +25,8 @@ export default {
   mixins: [DonationFormMixin],
   data() {
     return {
+      sizeButton: "is-large",
+      sizeTitle: "is-size-0",
       recurringOptions: [
         { text: "Monthly", value: "Month" },
         { text: "Yearly", value: "Year" },
@@ -57,6 +59,15 @@ export default {
       this.formData.donationAmount = n;
     }
   },
+  mounted() {
+    // Sub-mobile responsive changes
+    if (window.innerWidth < 360) {
+      this.sizeTitle = "is-size-1";
+      this.sizeButton = "";
+    } else if (window.innerWidth < 413) {
+      this.sizeButton = "is-medium";
+    }
+  },
   methods: {
     setDonationAmount(amount) {
       this.formData.donationAmount = amount;
@@ -65,7 +76,6 @@ export default {
     toggleOtherAmount() {
       this.showOtherAmount = !this.showOtherAmount;
       if (this.showOtherAmount) {
-        // this.formData.donationAmount = null;
         this.otherAmount = String(this.formData.donationAmount);
       } else {
         let rec = this.formData.recurring;
@@ -102,11 +112,14 @@ export default {
 <template>
   <form autocomplete="on" @focus.capture="sendFocus">
     <hgroup class="has-text-centered has-margin-bottom-thick">
-      <h1 class="title is-spaced has-text-black is-uppercase is-size-0">
+      <h1
+        class="title is-spaced has-text-black is-uppercase"
+        :class="sizeTitle"
+      >
         Join Us
       </h1>
 
-      <p class="is-size-3">
+      <p class="is-size-3 is-size-4-mobile">
         Support the only investigative newsroom
         <span class="is-hidden-touch"><br /></span>
         dedicated to covering Pennsylvania state government.
@@ -116,7 +129,7 @@ export default {
         class="is-emphatic-underline is-margin-centered has-margin-top has-margin-bottom max-12r"
       />
 
-      <p class="is-size-3">
+      <p class="is-size-3 is-size-4-mobile">
         Your tax-deductible donation to Spotlight PA will help us investigate
         one of the largest and most opaque state capitals in the U.S. Together,
         we can hold the powerful to account.
@@ -185,7 +198,8 @@ export default {
     <div class="buttons has-margin-top-thick">
       <button
         type="button"
-        class="button is-large is-fullwidth is-primary has-text-weight-semibold"
+        class="button is-fullwidth is-primary has-text-weight-semibold"
+        :class="sizeButton"
         @click="validate"
       >
         <span>

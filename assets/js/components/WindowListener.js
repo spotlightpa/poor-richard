@@ -5,11 +5,9 @@ export default {
   },
   mounted() {
     let eventName = this.event;
-    let listener = ev => {
-      this.$emit(eventName, ev);
-    };
-
+    let listener = ev => void this.$emit(eventName, ev);
     window.addEventListener(eventName, listener);
+
     this.removeListener = () =>
       void window.removeEventListener(eventName, listener);
   },
