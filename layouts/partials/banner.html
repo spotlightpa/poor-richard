@@ -1,8 +1,9 @@
 {{ $link := .Param "banner-link" }}
+{{ $gaEvent := dict "eventCategory" "Banner Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
 
 <section class="has-background-warning has-radius-padding">
   {{ if $link }}
-    <a href="{{ $link }}" >
+    <a href="{{ $link }}" data-ga-event="{{ $gaEvent | jsonify }}">
       {{ template "banner-content" . }}
     </a>
   {{ else }}

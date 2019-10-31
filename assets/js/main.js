@@ -23,6 +23,7 @@ function createListeners() {
 
   // Open external links in new window
   each("a[href^=http]", el => {
+    return;
     if (el.host === window.location.host) {
       return;
     }
@@ -37,6 +38,15 @@ function createListeners() {
         transport: "beacon"
       });
     });
+  });
+
+  on("click", "[data-ga-event]", ev => {
+    let { gaEvent } = ev.currentTarget.dataset;
+    if (!gaEvent) {
+      return;
+    }
+    gaEvent = JSON.parse(gaEvent);
+    window.ga("send", "event", gaEvent);
   });
 
   addSocialButtonListeners();
