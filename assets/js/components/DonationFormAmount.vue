@@ -130,9 +130,12 @@ export default {
       />
 
       <p class="is-size-3 is-size-4-mobile">
-        Your tax-deductible donation to Spotlight PA will help us investigate
-        one of the largest and most opaque state capitals in the U.S. Together,
-        we can hold the powerful to account.
+        <strong
+          >For a limited time only, your tax-deductible donation to Spotlight PA
+          will be tripled,</strong
+        >
+        thanks to NewsMatch and the Wyncote Foundation. Let’s hold the powerful
+        to account.
       </p>
     </hgroup>
 
