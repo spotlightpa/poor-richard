@@ -147,6 +147,7 @@ export default {
             v-model="formData.postalCode"
             :label="zipOrPostalCode"
             :max-length="20"
+            :inputmode="isUSA ? 'numeric' : null"
             :required="true"
             autocomplete="billing postal-code"
           ></BulmaFieldInput>
