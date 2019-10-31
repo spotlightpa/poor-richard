@@ -37,6 +37,12 @@ for = "/*.js"
 Cache-Control = "public, max-age=300, immutable" # 5 minutes
 
 [[headers]]
+for = "/js/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable" # 1 year
+
+
+[[headers]]
 for = "/*.(woff|woff2)"
 [headers.values]
 Access-Control-Allow-Origin = "*"
