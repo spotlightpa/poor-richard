@@ -28,12 +28,12 @@ function createListeners() {
     }
     el.target = "_blank";
     el.rel = "noopener noreferrer";
-    // eslint-disable-next-line no-unused-vars
-    on("click", el, e => {
+
+    on("click", el, ev => {
       window.ga("send", "event", {
         eventCategory: "Outbound Link",
         eventAction: "click",
-        eventLabel: event.target.href,
+        eventLabel: ev.currentTarget.href,
         transport: "beacon"
       });
     });
