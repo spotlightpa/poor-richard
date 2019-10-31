@@ -23,7 +23,6 @@ function createListeners() {
 
   // Open external links in new window
   each("a[href^=http]", el => {
-    return;
     if (el.host === window.location.host) {
       return;
     }
