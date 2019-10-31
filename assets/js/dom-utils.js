@@ -37,7 +37,9 @@ export function once(ev, qs, cb) {
 }
 
 export function transition(el, clsName, clsNameActive) {
-  el.classList.add(clsName, clsNameActive);
+  el.classList.add(clsName);
+  // IE11 has broken classList.add
+  el.classList.add(clsNameActive);
   window.setTimeout(() => {
     el.classList.remove(clsName);
     window.setTimeout(() => {

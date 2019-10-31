@@ -12,7 +12,12 @@ export default {
   watch: {
     value(newVal) {
       let root = window.document.body.parentElement;
-      root.classList.toggle("is-clipped", newVal);
+      // IE11 has broken classList.toggle
+      if (newVal) {
+        root.classList.add("is-clipped");
+      } else {
+        root.classList.remove("is-clipped");
+      }
     }
   },
   methods: {
