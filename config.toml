@@ -69,3 +69,20 @@ target = "static/js"
 [[module.mounts]]
 source = "static"
 target = "static"
+
+[[related.indices]]
+  name = "title"
+  weight = 150
+
+[[related.indices]]
+  name  = "kicker"
+  weight = 100
+
+[[related.indices]]
+  name  = "authors"
+  weight = 100
+
+[[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2006"
