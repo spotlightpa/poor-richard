@@ -13,6 +13,7 @@
       aria-label="menu"
       aria-expanded="false"
       data-target="#navbar-menu-items,.navbar-burger"
+      data-ga-event='{ "eventCategory": "Menu Interaction", "eventAction": "open" }'
     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -31,9 +32,11 @@
         {{ if eq $thisPage.RelPermalink .URL }}
           {{ $isActive = "is-active" }}
         {{ end }}
+        {{ $gaEvent := dict "eventCategory" "Menu Interaction" "eventAction" "click" "eventLabel" .URL "transport" "beacon" }}
         <a
           href="{{ .URL }}"
           class="navbar-item {{ .Pre }} {{ $isActive }}"
+          data-ga-event="{{ $gaEvent | jsonify }}"
         >
           {{ .Name }}
         </a>
