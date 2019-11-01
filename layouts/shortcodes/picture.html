@@ -1,0 +1,17 @@
+<!-- God forgive me -->
+</div>
+
+{{ $src := .Get "src" }}
+{{ $credit := .Get "credit" }}
+{{ $description := .Get "description" }}
+
+{{ $imgOpts := dict "imagePath" $src }}
+{{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
+{{ $imgOpts = dict "description" $description | merge $imgOpts }}
+{{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
+{{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
+{{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
+{{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+{{ $imgOpts | partial "image-block.html" }}
+
+<div class="content">
