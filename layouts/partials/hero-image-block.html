@@ -15,5 +15,6 @@
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
   {{ $imgOpts = dict "figClass" "is-full-bleed has-margin-bottom" | merge $imgOpts }}
 {{ end }}
-
-{{ $imgOpts | partial "image-block.html" }}
+{{ if ne $size "hidden" }}
+  {{ $imgOpts | partial "image-block.html" }}
+{{ end }}
