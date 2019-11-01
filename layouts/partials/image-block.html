@@ -35,6 +35,7 @@
           sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
         {{ end }}
         data-original="{{ $img.RelPermalink }}"
+        loading="lazy"
       >
     </picture>
     {{- if .link -}}
