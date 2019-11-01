@@ -41,9 +41,5 @@ let GA = {
 Vue.use(GA);
 
 each("[data-vue=donation-form]", el => {
-  let div = document.createElement("div");
-  let parent = el.parentNode;
-  parent.insertAdjacentElement("afterend", div);
-  parent.removeChild(el);
-  new Vue(DonationForm).$mount(div);
+  new Vue(DonationForm).$mount(el);
 });

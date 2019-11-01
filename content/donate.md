@@ -8,6 +8,5 @@ description = "For a limited time only, your donation to Spotlight PA will be tr
 link-title = "Donate"
 suppress-title = true
 modal-exclude = true
+type= "donate-page"
 +++
-
-{{<donation-form>}}
