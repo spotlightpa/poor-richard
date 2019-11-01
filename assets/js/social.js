@@ -19,7 +19,7 @@ export function addSocialButtonListeners() {
     var url = ev.currentTarget.dataset.shareUrl;
     url = url ? url : window.location.href;
     var facebookURL =
-      "https://www.facebook.com/dialog/feed?app_id=2352768061509311&display=page&link=" +
+      "https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link=" +
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
   });
