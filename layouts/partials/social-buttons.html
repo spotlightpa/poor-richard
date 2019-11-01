@@ -2,7 +2,9 @@
 {{ $iconTwitter := resources.Get "/img/fontawesome/brands/twitter.svg" }}
 {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
 
-{{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .Title .Description .Permalink }}
+{{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
+{{ $emailSubject := .LinkTitle }}
+{{ $gaEvent := dict "eventCategory" "Share button interaction" "eventAction" "Email share" "eventLabel" .Permalink }}
 
 <div class="buttons">
   <button
@@ -25,9 +27,10 @@
     </span>
   </button>
   <a
-    href="mailto:?subject={{ .Title }}&amp;body={{ $emailBody }}"
+    href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="button is-success is-medium"
     title="Share this page by email"
+    data-ga-event="{{ $gaEvent | jsonify }}"
   >
     <span class="icon has-text-white has-colored-svg">
     {{ $iconEmail.Content|safeHTML }}

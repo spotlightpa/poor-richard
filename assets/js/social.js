@@ -13,6 +13,11 @@ export function addSocialButtonListeners() {
       encodeURIComponent(url) +
       "&tw_p=tweetbutton";
     window.open(twitterURL, "_blank");
+    window.ga("send", "event", {
+      eventCategory: "Share button interaction",
+      eventAction: "Twitter share",
+      eventLabel: url
+    });
   });
 
   on("click", '[data-share="facebook"]', ev => {
@@ -22,5 +27,10 @@ export function addSocialButtonListeners() {
       "https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link=" +
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
+    window.ga("send", "event", {
+      eventCategory: "Share button interaction",
+      eventAction: "Facebook share",
+      eventLabel: url
+    });
   });
 }
