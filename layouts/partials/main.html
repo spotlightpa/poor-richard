@@ -127,7 +127,9 @@
             </div>
           </div>
           {{ range $page := $related }}
-            {{ partial "tile-horiz.html" $page }}
+            <div class="tile is-bottom">
+              {{ partial "tile-horiz.html" $page }}
+            </div>
           {{ end }}
         </div>
       </div>
