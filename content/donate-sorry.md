@@ -3,6 +3,7 @@ title = "We're sorry, your donation could not be processed"
 type = "warning-page"
 url = "/donate/sorry/"
 no-index = true
+modal-exclude = true
 +++
 
 We're sorry, your donation to Spotlight PA could not be processed at this time. Please [try again][] or contact [joanna@spotlightpa.org][] if you have continue to have problems.

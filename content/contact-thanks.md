@@ -2,6 +2,7 @@
 title = "Thank You"
 type = "thanks-page"
 url = "/contact/thanks/"
+modal-exclude = true
 no-index = true
 +++
 
