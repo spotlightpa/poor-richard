@@ -6,6 +6,7 @@ title = "Thank You for Your Generous Donation to Spotlight PA"
 url = "/donate/thanks/"
 no-index = true
 suppress-title = true
+modal-exclude = true
 +++
 
 # Thank You for Your Generous Donation
