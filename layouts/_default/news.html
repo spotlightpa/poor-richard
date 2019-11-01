@@ -4,7 +4,9 @@
     <div class="column is-offset-one-fifth">
       <div class="tile is-ancestor is-vertical">
         {{ range $page := .Paginator.Pages }}
-          {{ partial "tile-horiz.html" $page }}
+          <div class="tile is-bottom">
+            {{ partial "tile-horiz.html" $page }}
+          </div>
         {{ end }}
       </div>
     </div>
