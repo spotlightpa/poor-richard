@@ -2,6 +2,7 @@
 hero-image = "img/uploads/newsroom-conf.jpeg"
 hero-image-description = "Spotlight PA reporters attend a newsroom conference"
 hero-image-credit = "Vicki Vellios Briner / Special to PennLive"
+hero-image-size = "hidden"
 published = 2019-11-01T19:12:09.384Z
 title = "Thank You for Your Generous Donation to Spotlight PA"
 description = "We encourage you to share your pledge on social media."
@@ -18,3 +19,5 @@ Thank you for your generous donation to Spotlight PA. You should recieve a recei
 We encourage you to share your pledge on social media.
 
 {{<donate-buttons>}}
+
+{{<picture src="img/uploads/newsroom-conf.jpeg" description="Spotlight PA reporters attend a newsroom conference" credit="Vicki Vellios Briner / Special to PennLive">}}
