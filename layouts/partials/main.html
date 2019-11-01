@@ -111,4 +111,26 @@
       {{ end }}
     </div>
   </article>
+
+  {{ $news := .Site.GetPage "/news/_index.md" }}
+  {{ $related := $news.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+    <nav class="columns has-margin-top">
+      <div class="column is-offset-one-fifth">
+        <div class="tile is-ancestor is-vertical">
+          <div class="tile is-parent is-top is-8">
+            <div class="tile is-child">
+              <h2 class="title is-4 is-uppercase has-text-weight-semibold">
+                More Stories from Spotlight PA
+              </h2>
+              <hr class="is-emphatic-underline has-margin-top-negative">
+            </div>
+          </div>
+          {{ range $page := $related }}
+            {{ partial "tile-horiz.html" $page }}
+          {{ end }}
+        </div>
+      </div>
+    </nav>
+  {{ end }}
 </section>
