@@ -37,9 +37,7 @@
           </div>
         </div>
         {{ range $page := after 3 $pages | first 5 }}
-          <div class="tile is-bottom">
-            {{ partial "tile-horiz.html" $page }}
-          </div>
+          {{ partial "tile-horiz.html" $page }}
         {{ end }}
       {{ end }}
       {{ if gt (len $pages) 8 }}
