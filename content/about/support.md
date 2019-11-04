@@ -43,6 +43,7 @@ York County Community Foundation <br>
 * Gail Alu
 * Helen Andrews
 * Oscar Armas-Luy
+* Stephen Artman
 * Susan Auchincloss
 * David Auel
 * Kathleen Baker
@@ -57,6 +58,7 @@ York County Community Foundation <br>
 * Robert Joseph Biller
 * David Bohanick
 * Jeffrey L. Braff
+* Gay Brown
 * Lisa Budwig
 * Joseph L. Carbo
 * Mireille Carigi
@@ -75,6 +77,7 @@ York County Community Foundation <br>
 * Barry DeSantis
 * Earl Drumheiser
 * Stephen Duncan
+* Liam Elder-Connors
 * Dianne Elderkin
 * Joseph Elias
 * Mary Erdman
@@ -108,6 +111,7 @@ York County Community Foundation <br>
 * Arlene Jarett
 * Eric Jurgensen
 * Peter Johnstone
+* Carol Jones
 * Karen M. Kaplan & Aaron M. Shatzman
 * P. Katze
 * Jane Kauer & David Fleece
