@@ -115,10 +115,10 @@
   {{ $news := .Site.GetPage "/news/_index.md" }}
   {{ $related := $news.RegularPages.Related . | first 3 }}
   {{ with $related }}
-    <nav class="columns has-margin-top">
-      <div class="column is-offset-one-fifth">
+    <nav class="columns is-centered has-margin-top">
+      <div class="column is-three-fifths">
         <div class="tile is-ancestor is-vertical">
-          <div class="tile is-parent is-top is-8">
+          <div class="tile is-parent is-top">
             <div class="tile is-child">
               <h2 class="title is-4 is-uppercase has-text-weight-semibold">
                 More Stories from Spotlight PA
@@ -127,9 +127,7 @@
             </div>
           </div>
           {{ range $page := $related }}
-            <div class="tile is-bottom">
-              {{ partial "tile-horiz.html" $page }}
-            </div>
+          {{ partial "tile-archive.html" $page }}
           {{ end }}
         </div>
       </div>

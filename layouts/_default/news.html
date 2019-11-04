@@ -1,18 +1,11 @@
 {{ define "extra-main" }}
-  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  <section class="section columns">
-    <div class="column is-offset-one-fifth">
+  <section class="section columns is-centered is-multiline">
+    <div class="column is-three-fifths">
       <div class="tile is-ancestor is-vertical">
         {{ range $page := .Paginator.Pages }}
-          <div class="tile is-bottom">
-            {{ partial "tile-horiz.html" $page }}
-          </div>
+          {{ partial "tile-archive.html" $page }}
         {{ end }}
       </div>
-    </div>
-  </section>
-  <section class="section columns">
-    <div class="column is-three-fifths is-offset-one-fifth">
       {{ if gt .Paginator.TotalPages 0 }}
         <div class="level">
         {{ if .Paginator.HasPrev }}
