@@ -35,7 +35,11 @@ $navbar-item-active-color: $white;
 $navbar-breakpoint: 1110px;
 $navbar-box-shadow-color: #f00;
 
-$modal-content-width: 480px;
+$modal-card-head-radius: 0;
+$modal-content-width: 640px;
+$modal-card-head-background-color: $black;
+$modal-card-head-padding: 1rem;
+$modal-background-background-color: rgba(hsl(0, 0%, 86%), 0.86);
 
 $tile-spacing: 2rem;
 
