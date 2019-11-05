@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted() {
-    this.testing = !!window.location.search.match(/testing/);
+    this.testing = !!window.location.search.match(/debug=donate/);
     this.$ga("send", "event", {
       eventCategory: "Donation form",
       eventAction: "Saw donation form",
@@ -46,6 +46,12 @@ export default {
       this.stepObj.n += delta;
       this.$refs.anchor.scrollIntoView({ behavior: "smooth", block: "center" });
       window.history.pushState({ step: this.stepObj.n }, "", "");
+      let stepName = this.stepObj.items[this.stepObj.n].name;
+      this.$ga("send", "event", {
+        eventCategory: "Donation form",
+        eventAction: `Viewed ${stepName} Step`,
+        eventLabel: `Changed step by ${delta}`
+      });
     },
     popstate(ev) {
       let { step } = ev.state;
