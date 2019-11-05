@@ -18,7 +18,7 @@ export function openModal() {
   let form = modal.querySelectorAll("form");
 
   modal.classList.add("is-active");
-  transition(modal, "fade-enter", "fade-enter-active");
+  transition(modal, "fade-enter", "fade-enter-active", 500);
   root.classList.add("is-clipped");
   const ESCkeyCode = 27;
 
