@@ -48,26 +48,28 @@ export function transition(el, clsName, clsNameActive) {
   }, 0);
 }
 
-export function storeItem(name, obj) {
+export function storeItem(name, obj, { useSession = false } = {}) {
+  let store = useSession ? window.sessionStorage : window.localStorage;
   let data = JSON.stringify(obj);
-  window.localStorage.setItem(name, data);
+  store.setItem(name, data);
 }
 
-export function loadItem(name) {
-  let data = window.localStorage.getItem(name);
+export function loadItem(name, { useSession = false } = {}) {
+  let store = useSession ? window.sessionStorage : window.localStorage;
+  let data = store.getItem(name);
   if (!data) {
     return null;
   }
   return JSON.parse(data);
 }
 
-export function storeDate(name, date) {
+export function storeDate(name, date, { useSession = false } = {}) {
   let data = +date;
-  storeItem(name, data);
+  storeItem(name, data, { useSession });
 }
 
-export function loadDate(name) {
-  let date = loadItem(name);
+export function loadDate(name, { useSession = false } = {}) {
+  let date = loadItem(name, { useSession });
   if (!date) {
     return null;
   }
