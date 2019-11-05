@@ -36,7 +36,7 @@ export function once(ev, qs, cb) {
   });
 }
 
-export function transition(el, clsName, clsNameActive) {
+export function transition(el, clsName, clsNameActive, duration) {
   el.classList.add(clsName);
   // IE11 has broken classList.add
   el.classList.add(clsNameActive);
@@ -44,7 +44,7 @@ export function transition(el, clsName, clsNameActive) {
     el.classList.remove(clsName);
     window.setTimeout(() => {
       el.classList.remove(clsNameActive);
-    }, 0);
+    }, duration);
   }, 0);
 }
 
