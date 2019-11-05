@@ -6,62 +6,52 @@
   id="modal-newsletter"
 >
   <div class="modal-background"></div>
-  <div class="modal-content">
-    <form
-      class="box"
-      action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
-      method="post"
-      target="_blank"
-    >
+  <form
+    class="modal-content"
+    action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
+    method="post"
+    target="_blank"
+  >
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-centered is-size-2">
+        <span class="svg-container has-text-white">
+          {{ $logo := resources.Get "/img/logos/banner-default-on-trans.svg" }}
+          {{ $logo.Content| safeHTML }}
+        </span>
+      </p>
+      <button class="delete" type="button" aria-label="close"></button>
+    </header>
+    <div class="modal-card-body">
       <p class="is-hidden" aria-hidden="true">
         <label>
           Don’t fill this out if you're human:
           <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
         </label>
       </p>
-      <h2 class="title is-size-4">
-        Sign up for <em>The Investigator</em>
+      <h2 class="title is-size-2 is-size-3-mobile has-text-centered">
+        Investigative Journalism
+        <span class="is-hidden-touch"><br /></span>
+        for Pennsylvania
       </h2>
-      <h3
-        class="label is-small is-size-5 has-text-weight-normal subtitle"
-      >
-        Get exclusive looks at our reporting plus a roundup of the best journalism in Pa. and our weekly Riddler puzzle.
-      </h3>
-      <div class="field">
-        <label class="is-sr-only" for="modal-fname">First Name</label>
-        <div class="control">
-          <input
-            id="modal-fname"
-            class="input is-small"
-            type="text"
-            name="FNAME"
-            placeholder="First Name"
-          >
-        </div>
-      </div>
-      <div class="field">
-        <label class="is-sr-only" for="modal-lname">Last Name</label>
-        <div class="control">
-          <input
-            id="modal-lname"
-            class="input is-small"
-            type="text"
-            name="LNAME"
-            placeholder="Last Name"
-          >
-        </div>
-      </div>
-      <div class="field">
+      <p class="is-size-4 is-hidden-mobile">
+        Sign up for exclusive looks at our reporting and a roundup of the best stories from Pa., all delivered to your inbox once a week.
+      </p>
+
+      <p class="is-size-4 is-hidden-tablet">
+        Sign up for exclusive looks at our reporting and a weekly roundup of the best stories from across Pa.
+      </p>
+
+      <div class="field has-margin-top">
         <label class="is-sr-only" for="modal-email">Email</label>
-        <div class="control has-icons-left has-icons-right is-expanded">
+        <div class="control has-icons-left has-icons-right">
           <input
             id="modal-email"
-            class="input is-small"
+            class="input is-medium"
             type="email"
             name="EMAIL"
             placeholder="Email"
           >
-          <span class="icon is-large is-left has-text-primary">
+          <span class="icon is-large is-left">
             {{ $iconEmail.Content|safeHTML }}
           </span>
           <span class="icon is-large is-right validator-icon">
@@ -69,15 +59,24 @@
           </span>
         </div>
       </div>
-      <div class="field">
-        <div class="control">
-          <button type="submit" class="button is-medium is-primary is-fullwidth">
-            Get Updates
-          </button>
-        </div>
+      <div class="buttons is-centered">
+        <button
+          type="submit"
+          class="button is-medium is-danger has-text-weight-bold"
+        >
+          Sign me up
+        </button>
       </div>
-    </form>
-  </div>
+      <div class="has-text-centered">
+        <a
+          class="has-text-grey hover-underline"
+          aria-label="close"
+        >
+          No thanks
+        </a>
+      </div>
+    </div>
+  </form>
   <button
     class="modal-close is-large"
     aria-label="close"

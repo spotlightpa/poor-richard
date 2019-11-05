@@ -65,18 +65,25 @@ export function openModal() {
 }
 
 export function addModal() {
+  const onTestPage = !!window.location.href.match(/debug=modal/);
+  const LAST_VISIT_KEY = "last-visit";
+  const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
+  const FROM_MC_KEY = "originated-from-mailchimp";
+  const delay = onTestPage ? 500 : 2000; // 2s
+
+  let now = new Date();
+  let showModal = true;
+
+  let lastVist = loadDate(LAST_VISIT_KEY);
+  let lastSession = loadDate(LAST_VISIT_KEY, { useSession: true });
+  // todo: Use newSession
+  // eslint-disable-next-line no-unused-vars
+  let newSession = lastVist && !lastSession;
+
+  storeDate(LAST_VISIT_KEY, now);
+  storeDate(LAST_VISIT_KEY, now, { useSession: true });
+
   once("scroll", [window], () => {
-    const onTestPage = !!window.location.href.match(/debug-modal/);
-    const LAST_VISIT_KEY = "last-visit";
-    const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
-    const FROM_MC_KEY = "originated-from-mailchimp";
-    const delay = onTestPage ? 500 : 5000; // 5s
-
-    let now = new Date();
-    let showModal = true;
-
-    storeDate(LAST_VISIT_KEY, now);
-
     // If we're not already on the newsletter page...
     if (window.location.pathname.match(/newsletters/)) {
       storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
@@ -105,8 +112,10 @@ export function addModal() {
     }
     // Then show it...
     if (showModal) {
-      storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
-      window.setTimeout(openModal, delay);
+      window.setTimeout(() => {
+        storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
+        openModal();
+      }, delay);
     }
   });
 }
