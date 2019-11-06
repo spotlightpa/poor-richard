@@ -35,6 +35,7 @@
     "bulma": "^0.7.5",
     "parcel-bundler": "^1.12.3",
     "postcss-cli": "^6.1.2",
+    "sass": "^1.23.3",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
