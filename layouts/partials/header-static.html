@@ -1,18 +1,12 @@
 <!-- header tags that are the same on all pages -->
-
-{{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
-{{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-
 {{ if .Site.IsServer }}
+  <link rel="stylesheet" href="http://localhost:1234/main.css">
   <script src="http://localhost:1234/main.js" defer></script>
 {{ else }}
-  {{ $js := resources.Get "js/main.js" | fingerprint }}
+  {{ $styles := resources.Get "dist/main.css" | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  {{ $js := resources.Get "dist/main.js" | fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
-{{ end }}
-
-{{ range slice "500" "800" "regular" }}
-  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
 {{ end }}
 
 {{ template "_internal/google_analytics_async.html" . }}

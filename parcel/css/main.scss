@@ -67,8 +67,8 @@ $title-color: $black;
 $title-size: 2rem;
 $title-weight: $weight-semibold;
 
-@import "fonts.scss";
-@import "bulma.sass";
+@import "./fonts.scss";
+@import "bulma/bulma.sass";
 
 body {
   // Responsive wrap fallback

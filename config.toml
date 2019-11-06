@@ -60,11 +60,11 @@ target = "assets"
 
 [[module.mounts]]
 source = "dist"
-target = "assets/js"
+target = "assets/dist"
 
 [[module.mounts]]
 source = "dist"
-target = "static/js"
+target = "static/assets"
 
 [[module.mounts]]
 source = "static"

@@ -1,3 +1,5 @@
+import "../css/main.scss";
+
 import { each, on } from "./dom-utils.js";
 import { addModal } from "./modal.js";
 import { addSocialButtonListeners } from "./social.js";
