@@ -1,5 +1,5 @@
 +++
-hero-image = "img/uploads/unrivaled.jpg"
+image = "https://ucarecdn.com/630bc81c-7aa4-4067-add3-d4b29270a594/"
 hero-image-description = "Pennsylvania state capitol"
 hero-image-credit = "Courtesy Philadelphia Inquirer"
 hero-image-size = "hidden"
