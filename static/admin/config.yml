@@ -1,5 +1,13 @@
-media_folder: assets/img/uploads
 public_folder: /img/uploads
+media_library:
+  name: uploadcare
+  config:
+    publicKey: a3502f41a6a0f0862b23
+    autoFilename: true
+    defaultOperations: "/resize/800x600/"
+    imagesOnly: true
+    tabs: "file url"
+    previewStep: false
 
 site_url: https://www.spotlightpa.org
 display_url: https://www.spotlightpa.org
@@ -10,7 +18,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: master
+  branch: cj/uploadcare
 
 yaml-definitions: &page-fields
   - label: Draft
@@ -20,7 +28,7 @@ yaml-definitions: &page-fields
     default: true
     required: false
   - label: "Featured Image"
-    name: "hero-image"
+    name: "image"
     widget: "image"
     required: false
     media_library:
@@ -158,6 +166,7 @@ collections:
     extension: md
     create: true
     preview_path: "/news/{{year}}/{{slug}}/"
+    preview_path_date_field: published
     editor:
       preview: false
     fields: *page-fields
