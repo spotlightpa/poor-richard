@@ -38,7 +38,7 @@ for = "/*.js"
 Cache-Control = "public, max-age=300, immutable" # 5 minutes
 
 [[headers]]
-for = "/js/*.js"
+for = "/assets/*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable" # 1 year
 

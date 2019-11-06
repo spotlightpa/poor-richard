@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/tracker.js"
-to = "/js/main-tracker.js"
+to = "/assets/main-tracker.js"
 code = 200
 
 [[redirects]]
