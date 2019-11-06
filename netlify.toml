@@ -8,6 +8,7 @@ HUGO_VERSION = "0.58.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
+NODE_VERSION="12"
 
 [context.deploy-preview]
 command = "yarn build:stage"
