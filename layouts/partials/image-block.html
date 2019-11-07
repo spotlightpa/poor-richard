@@ -26,6 +26,13 @@
       <a href="{{ .link }}">
     {{- end -}}
     <picture class="image {{ $imgClass }}">
+      <source
+        type="image/webp"
+        srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+        {{ if .sizeHint }}
+          sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+        {{ end }}
+      >
       <img
         alt="{{ .description }}"
         title="{{ .description }}"
