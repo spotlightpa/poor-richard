@@ -4,6 +4,11 @@ to = "/js/main-tracker.js"
 code = 200
 
 [[redirects]]
+from = "/imgproxy/*"
+to = "https://images.data.spotlightpa.org/:splat"
+code = 200
+
+[[redirects]]
 from = "/feeds/full.json"
 to = "/news/feed.json"
 code = 200

@@ -47,6 +47,7 @@ notAlternative = true
     section = ["html", "jsonfeed", "jsonfeedsummary", "rss"]
 
 [params]
+    imgproxy = "/imgproxy/"
     title = "Spotlight PA"
     favicon = "/img/logos/circle-black-on-trans-920.png"
     images = [

@@ -1,4 +1,4 @@
-{{ $baseURL := "https://images.data.spotlightpa.org" }}
+{{ $baseURL := getenv "IMGPROXY_URL" | default "https://images.data.spotlightpa.org" }}
 {{ $signature := "insecure" }}
 {{ $resizing_type := "auto" }}
 {{ $width := .width }}
@@ -11,4 +11,4 @@
 
 {{ $url := printf "%s/%s/rs:%s:%d:%d/g:%s/el:%s/q:%d/%s.%s" $baseURL $signature $resizing_type $width $height $gravity $enlarge $quality $encoded_source_url $extension }}
 
-{{ return $url }}
+{{ return ($url | absURL) }}
