@@ -1,8 +1,8 @@
 +++
-hero-image = "img/uploads/state-sens.jpeg"
-hero-image-description = "The leader of the Pennsylvania Senate, Joe Scarnati, was among three senators who went on a European trip shortly after the Legislature passed a sweeping overhaul expanding wine sales."
-hero-image-credit = "Courtesy of The Philadelphia Inquirer"
-hero-image-size = "inline"
+image = "2019/11/state-sens.jpeg"
+image-description = "The leader of the Pennsylvania Senate, Joe Scarnati, was among three senators who went on a European trip shortly after the Legislature passed a sweeping overhaul expanding wine sales."
+image-credit = "Courtesy of The Philadelphia Inquirer"
+image-size = "inline"
 published = 2019-10-23T09:00:00.000Z
 authors = [
 "Angela Couloumbis",

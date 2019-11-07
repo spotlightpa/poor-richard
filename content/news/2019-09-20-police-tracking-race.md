@@ -1,9 +1,9 @@
 +++
 draft = false
-hero-image = "img/uploads/state-police2.jpeg"
-hero-image-description = "A Pa. State Police vehicle"
-hero-image-credit = "Courtesy of The Inquirer"
-hero-image-size = "inline"
+image = "2019/11/state-police2.jpeg"
+image-description = "A Pa. State Police vehicle"
+image-credit = "Courtesy of The Inquirer"
+image-size = "inline"
 published = 2019-09-20T09:25:00.000Z
 authors = ["Angela Couloumbis", "Daniel Simmons-Ritchie"]
 title = "Racial profiling in traffic stops? We won’t know, because Pa. State Police no longer track racial data."

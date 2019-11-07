@@ -1,9 +1,9 @@
 +++
 draft = false
-hero-image = "img/uploads/captiol-3.jpeg"
-hero-image-description = "Hours after an investigation Tuesday revealed millions of dollars in hidden campaign expenses by Pa. lawmakers, a House committee, at the request of GOP Senate leaders, attempted to further limit oversight. But on Wednesday, House Republicans said they would reverse course."
-hero-image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
-hero-image-size = "inline"
+image = "2019/11/captiol-3.jpeg"
+image-description = "Hours after an investigation Tuesday revealed millions of dollars in hidden campaign expenses by Pa. lawmakers, a House committee, at the request of GOP Senate leaders, attempted to further limit oversight. But on Wednesday, House Republicans said they would reverse course."
+image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
+image-size = "inline"
 published = 2019-10-23T22:00:00.000Z
 authors = ["Angela Couloumbis"]
 title = "Pa. lawmakers abruptly abandon attempt to limit public access to campaign expenses"

@@ -1,7 +1,7 @@
 +++
-hero-image = "img/uploads/capitol-columns.jpeg"
-hero-image-description = "The PA State Capitol in Harrisburg, Pa., Tuesday, June 18, 2019."
-hero-image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
+image = "2019/11/capitol-columns.jpeg"
+image-description = "The PA State Capitol in Harrisburg, Pa., Tuesday, June 18, 2019."
+image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 draft = false
 published = 2019-10-22T22:34:09.391Z
 authors = ["Angela Couloumbis", "Sam Janesch, The Caucus"]

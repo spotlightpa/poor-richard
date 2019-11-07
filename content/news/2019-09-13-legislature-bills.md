@@ -1,8 +1,8 @@
 +++
-hero-image = "img/uploads/pa_legislature_lawmaker_closeup.jpeg"
-hero-image-description = "Pa. State Legislature"
-hero-image-credit = "Courtesy of PennLive"
-hero-image-size = "inline"
+image = "2019/11/pa_legislature_lawmaker_closeup.jpeg"
+image-description = "Pa. State Legislature"
+image-credit = "Courtesy of PennLive"
+image-size = "inline"
 published = 2019-09-13T09:25:00.000Z
 authors = ["Liz Navratil", "Jonathan Lai, Philadelphia Inquirer"]
 byline = "Liz Navratil, Spotlight PA & Jonathan Lai, Philadelphia Inquirer"

@@ -1,9 +1,9 @@
 +++
 draft = false
-hero-image = "img/uploads/st-peter.jpeg"
-hero-image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati, dined at the St. Peter Stiftskulinarium restaurant in Austria in September 2016 and charged $246 to his campaign account. State law requires campaign money to be used for “influencing the outcome of an election,” but what qualifies is largely open to interpretation."
-hero-image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
-hero-image-size = "full"
+image = "2019/11/st-peter.jpeg"
+image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati, dined at the St. Peter Stiftskulinarium restaurant in Austria in September 2016 and charged $246 to his campaign account. State law requires campaign money to be used for “influencing the outcome of an election,” but what qualifies is largely open to interpretation."
+image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
+image-size = "full"
 published = 2019-10-22T09:00:00.000Z
 authors = ["Angela Couloumbis", "Mike Wereschagin, The Caucus", "Brad Bumsted, The Caucus", "Paula Knudsen, The Caucus", "Sam Janesch, The Caucus", "Alyssa Biederman, The Caucus"]
 byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, Paula Knudsen, Sam Janesch and Alyssa Biederman of The Caucus"

@@ -1,7 +1,7 @@
 +++
-hero-image = "img/uploads/jay-costa.jpeg"
-hero-image-description = "State Sen. Jay Costa (D., Allegheny) is pushing a sweeping campaign finance reform bill that would, among other changes, ban using campaign cash for personal use and require candidates to better describe their expenses on public forms."
-hero-image-credit = "Pittsburgh Post-Gazette staff"
+image = "2019/11/jay-costa.jpeg"
+image-description = "State Sen. Jay Costa (D., Allegheny) is pushing a sweeping campaign finance reform bill that would, among other changes, ban using campaign cash for personal use and require candidates to better describe their expenses on public forms."
+image-credit = "Pittsburgh Post-Gazette staff"
 published = 2019-10-25T18:01:53.000Z
 authors = ["Sam Janesch, The Caucus", "Angela Couloumbis"]
 byline = "Sam Janesch, The Caucus and Angela Couloumbis, Spotlight PA"

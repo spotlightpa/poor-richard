@@ -1,8 +1,8 @@
 +++
-hero-image = "img/uploads/mangia-qui.jpeg"
-hero-image-description = "A top aide to Senate leader Joe Scarnati, Shelly Brown, charged thousands of dollars worth drinks and meals — including a visit to Mangia Qui in downtown Harrisburg — to Scarnati's campaign credit card, despite having no official role with the campaign."
-hero-image-credit = "Sara Simon / Spotlight PA"
-hero-image-size = "inline"
+image = "2019/11/mangia-qui.jpeg"
+image-description = "A top aide to Senate leader Joe Scarnati, Shelly Brown, charged thousands of dollars worth drinks and meals — including a visit to Mangia Qui in downtown Harrisburg — to Scarnati's campaign credit card, despite having no official role with the campaign."
+image-credit = "Sara Simon / Spotlight PA"
+image-size = "inline"
 published = 2019-10-24T09:00:00.000Z
 authors = ["Angela Couloumbis", "Alyssa Biederman, Philadelphia Inquirer"]
 byline = "Angela Couloumbis of Spotlight PA and Alyssa Biederman of The Inquirer"
