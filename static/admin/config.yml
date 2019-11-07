@@ -20,22 +20,22 @@ yaml-definitions: &page-fields
     default: true
     required: false
   - label: "Featured Image"
-    name: "hero-image"
-    widget: "image"
+    name: "image"
+    widget: string
     required: false
     media_library:
       config:
         multiple: false
   - label: Image description
-    name: hero-image-description
+    name: image-description
     widget: string
     required: false
   - label: Image credit
-    name: hero-image-credit
+    name: image-credit
     widget: string
     required: false
   - label: "Image size"
-    name: "hero-image-size"
+    name: "image-size"
     widget: "select"
     options: ["full", "inline", "hidden"]
     required: false

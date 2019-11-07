@@ -1,10 +1,11 @@
-{{ $heroName := .Param "hero-image" }}
-{{ $heroCredit := .Param "hero-image-credit" }}
-{{ $heroDescription := .Param "hero-image-description" }}
-{{ $imgOpts := dict "imagePath" $heroName }}
-{{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
-{{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
-{{ $size := .Param "hero-image-size" | default "inline" }}
+{{ $imagename := .Param "image" }}
+{{ $credit := .Param "image-credit" }}
+{{ $description := .Param "image-description" }}
+{{ $size := .Param "image-size" | default "inline" }}
+
+{{ $imgOpts := dict "filename" $imagename }}
+{{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
+{{ $imgOpts = dict "description" $description | merge $imgOpts }}
 {{ if eq $size "inline" }}
   {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}

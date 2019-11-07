@@ -1,5 +1,4 @@
-{{ $img := resources.GetMatch .imagePath }}
-{{ if $img }}
+{{ if $imagename := .filename }}
   {{ $imgSmallSrc := "" }}
   {{ $imgs := slice }}
   {{ $widthR := .widthRatio | default 16 }}
@@ -10,12 +9,13 @@
     {{ $width := mul $size 160 }}
     {{ $height := mul $size 160 }}
     {{ $height = div (mul $heightR $height) $widthR }}
-    {{ $dim := printf "%dx%d" $width $height }}
-    {{ $imgShrunk :=  $img.Fill $dim }}
-    {{ $src := printf "%s %dw" $imgShrunk.RelPermalink $width }}
+
+    {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+    {{ $url := partial "imgproxy.html" $imgOpt }}
+    {{ $src := printf "%s %dw" $url $width }}
     {{ $imgs = $imgs | append $src }}
     {{ if eq $size 2 }}
-      {{ $imgSmallSrc = $imgShrunk.RelPermalink }}
+      {{ $imgSmallSrc = $url }}
     {{ end }}
   {{ end }}
   {{ $srcset := delimit $imgs ", " }}
@@ -34,7 +34,6 @@
         {{ if .sizeHint }}
           sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
         {{ end }}
-        data-original="{{ $img.RelPermalink }}"
         loading="lazy"
       >
     </picture>
