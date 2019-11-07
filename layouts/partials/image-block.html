@@ -5,7 +5,7 @@
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
 
-  {{ range $size := slice 2 4 8 10 12 16 }}
+  {{ range $size := seq 2 16 }}
     {{ $width := mul $size 160 }}
     {{ $height := mul $size 160 }}
     {{ $height = div (mul $heightR $height) $widthR }}
