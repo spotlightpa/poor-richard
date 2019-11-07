@@ -1,8 +1,8 @@
 +++
-hero-image = "img/uploads/unrivaled.jpg"
-hero-image-description = "Pennsylvania state capitol"
-hero-image-credit = "Courtesy Philadelphia Inquirer"
-hero-image-size = "hidden"
+image = "2019/11/unrivaled.jpg"
+image-description = "Pennsylvania state capitol"
+image-credit = "Courtesy Philadelphia Inquirer"
+image-size = "hidden"
 published = 2019-08-29T00:00:00.000Z
 authors = ["Christopher Baxter"]
 title = "Spotlight PA: Unrivaled team of investigative reporters to hold the powerful to account in Pa. capital"

@@ -1,7 +1,7 @@
 +++
-hero-image = "img/uploads/nurse.jpeg"
-hero-image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
-hero-image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
+image = "2019/11/nurse.jpeg"
+image-description = "Lauren Narbey, a 31-year-old certified nurse-midwife in Pittsburgh, most recently filed for a new license from a state nursing board in July and is still waiting for a response."
+image-credit = "Darrell Sapp/Pittsburgh Post-Gazette"
 published = 2019-09-11T09:17:34.226Z
 authors = ["Sara Simon"]
 title = "Pa. nurses are fed up with hold times, rude answers, and delays dealing with state licensing board"

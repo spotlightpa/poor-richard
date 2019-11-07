@@ -50,7 +50,7 @@ notAlternative = true
     title = "Spotlight PA"
     favicon = "/img/logos/circle-black-on-trans-920.png"
     images = [
-        "/img/uploads/banner-white-on-capitol.jpeg"
+        "2019/11/banner-white-on-capitol.jpeg"
     ]
     description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
 
