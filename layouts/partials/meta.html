@@ -1,5 +1,5 @@
 {{ $images := slice }}
-{{ with $.Param "hero-image" }}
+{{ with $.Param "image" }}
   {{ $images = $images | append . }}
 {{ end }}
 {{ with $.Param "images" }}
@@ -8,11 +8,9 @@
 
 
 {{ range first 6 $images }}
-  {{ $img := resources.GetMatch . }}
-  {{ with $img }}
-    {{ $imgSquare := $img.Fit "1200x1200" }}
-    <meta property="og:image" content="{{ $imgSquare.Permalink }}" />
-  {{ end }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 1200 }}
+  {{ $imgSrc := partial "imgproxy.html" $imgOpt }}
+  <meta property="og:image" content="{{ $imgSrc }}" />
 {{ end }}
 
 {{ if .Param "no-index" }}
@@ -86,21 +84,20 @@
   {{ end }}
   <meta itemprop="wordCount" content="{{ .WordCount }}">
   {{ range first 6 $images }}
-    {{ $img := resources.GetMatch . }}
-    {{ with $img }}
-      <meta itemprop="image" content="{{ $img.Permalink }}">
-    {{ end }}
+    {{ $imgOpt := dict "filename" . "width" 1000 "height" 800 }}
+    {{ $imgSrc := partial "imgproxy.html" $imgOpt }}
+    <meta itemprop="image" content="{{ $imgSrc }}">
   {{ end }}
 
   <!-- Output all taxonomies as schema.org keywords -->
   <meta itemprop="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
 {{ end }}
 
-{{ with index $images 0 | resources.GetMatch }}
-  {{ $img := . }}
-  {{ $imgRect := $img.Fill "1200x628" }}
+{{ with index $images 0 }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 628 }}
+  {{ $imgSrc := partial "imgproxy.html" $imgOpt }}
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="{{ $imgRect.Permalink }}"/>
+  <meta name="twitter:image" content="{{ $imgSrc }}"/>
 {{ else }}
   <meta name="twitter:card" content="summary"/>
 {{ end }}

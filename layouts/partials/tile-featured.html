@@ -20,10 +20,10 @@
   </div>
 </div>
 
-{{ $heroName := $featured.Page.Param "hero-image" }}
-{{ $heroCredit := $featured.Page.Param "hero-image-credit" }}
-{{ $heroDescription := $featured.Page.Param "hero-image-description" }}
-{{ $imgOpts := dict "imagePath" $heroName }}
+{{ $heroName := $featured.Page.Param "image" }}
+{{ $heroCredit := $featured.Page.Param "image-credit" }}
+{{ $heroDescription := $featured.Page.Param "image-description" }}
+{{ $imgOpts := dict "filename" $heroName }}
 {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
 {{ $imgOpts = dict "link" $featured.RelPermalink | merge $imgOpts }}

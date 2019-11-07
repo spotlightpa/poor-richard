@@ -1,7 +1,7 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 <article class="tile is-vertical is-bottom">
-  {{ if .Page.Param "hero-image" }}
+  {{ if .Page.Param "image" }}
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child">
@@ -15,12 +15,12 @@
   <div class="tile is-bottom">
     <div class="tile is-parent is-3 is-top-tablet">
       <div class="tile is-child">
-        {{ $heroName := .Page.Param "hero-image" }}
-        {{ $heroCredit := .Page.Param "hero-image-credit" }}
-        {{ $heroDescription := .Page.Param "hero-image-description" }}
-        {{ $imgOpts := dict "imagePath" $heroName }}
-        {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
-        {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+        {{ $name := .Page.Param "image" }}
+        {{ $credit := .Page.Param "image-credit" }}
+        {{ $description := .Page.Param "image-description" }}
+        {{ $imgOpts := dict "filename" $name }}
+        {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
+        {{ $imgOpts = dict "description" $description | merge $imgOpts }}
         {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
         {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
         {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}

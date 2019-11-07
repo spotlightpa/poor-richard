@@ -5,7 +5,7 @@
 {{ $credit := .Get "credit" }}
 {{ $description := .Get "description" }}
 
-{{ $imgOpts := dict "imagePath" $src }}
+{{ $imgOpts := dict "filename" $src }}
 {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $description | merge $imgOpts }}
 {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}

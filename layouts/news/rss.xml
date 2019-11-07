@@ -36,19 +36,18 @@
         <description>
           {{ .Content | html }}
         </description>
-        {{ $imgName := .Param "hero-image" }}
-        {{ $imgCredit := .Param "hero-image-credit" }}
-        {{ $imgDescription := .Param "hero-image-description" }}
-
-        {{ $img := resources.GetMatch $imgName }}
-        {{ if $img }}
-          {{ $imgShrunk :=  $img.Fill "1000x1000" }}
+        {{ $imgName := .Param "image" }}
+        {{ $imgCredit := .Param "image-credit" }}
+        {{ $imgDescription := .Param "image-description" }}
+        {{ if $imgName }}
+          {{ $imgOpt := dict "filename" $imgName "width" 1000 "height" 1000 }}
+          {{ $url := partial "imgproxy.html" $imgOpt }}
           <media:content
-            url="{{ $imgShrunk.Permalink }}"
-            type="{{ $imgShrunk.MediaType }}"
+            url="{{ $url }}"
+            type="image/jpg"
             expression="full"
-            width="{{ $imgShrunk.Width }}"
-            height="{{ $imgShrunk.Height }}"
+            width="1000"
+            height="1000"
           >
             <media:description type="plain">{{ $imgDescription }}</media:description>
             <media:credit role="photographer" scheme="urn:ebu">{{ $imgCredit }}</media:credit>
