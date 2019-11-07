@@ -8,7 +8,7 @@
 
 
 {{ range first 6 $images }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 1200 }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 630 }}
   {{ $imgSrc := partial "imgproxy.html" $imgOpt }}
   <meta property="og:image" content="{{ $imgSrc }}" />
 {{ end }}
@@ -94,7 +94,7 @@
 {{ end }}
 
 {{ with index $images 0 }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 628 }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 600 }}
   {{ $imgSrc := partial "imgproxy.html" $imgOpt }}
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="{{ $imgSrc }}"/>
