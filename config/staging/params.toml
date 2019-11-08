@@ -1,4 +1,1 @@
 no-index = true
-
-[privacy.googleAnalytics]
-    disable = true
