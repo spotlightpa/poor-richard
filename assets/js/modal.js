@@ -8,6 +8,7 @@ export function openModal(qs) {
   window.ga("send", "event", {
     eventCategory: "Modal interaction",
     eventAction: "Saw modal",
+    eventLabel: qs,
     nonInteraction: true
   });
 
@@ -15,7 +16,6 @@ export function openModal(qs) {
   let closeBtn = modal.querySelectorAll("[aria-label=close]");
   let bg = modal.querySelectorAll(".modal-background");
   let inputs = modal.querySelectorAll("input");
-  let form = modal.querySelectorAll("form");
 
   modal.classList.add("is-active");
   transition(modal, "fade-enter", "fade-enter-active", 500);
@@ -39,14 +39,6 @@ export function openModal(qs) {
         eventCategory: "Modal interaction",
         eventAction: "Focus input"
       });
-    }),
-    // eslint-disable-next-line no-unused-vars
-    on("submit", form, e => {
-      window.ga("send", "event", {
-        eventCategory: "Modal interaction",
-        eventAction: "Sign up for newsletter",
-        transport: "beacon"
-      });
     })
   ];
 
@@ -59,7 +51,7 @@ export function openModal(qs) {
     window.ga("send", "event", {
       eventCategory: "Modal interaction",
       eventAction: "Dismiss modal",
-      nonInteraction: true
+      eventLabel: qs
     });
   }
 }
