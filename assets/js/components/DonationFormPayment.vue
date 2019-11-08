@@ -235,6 +235,9 @@ export default {
     </p>
     <p class="has-text-centered">
       <a @click="stepDec">Go back</a> to edit your information.
+      <span v-if="formData.recurring">
+        You can update your card information or cancel your recurring donation at any time by contacting <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a>.
+      </span>
     </p>
     <p>
       &nbsp;
