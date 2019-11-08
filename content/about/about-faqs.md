@@ -19,6 +19,22 @@ url = "/about/faq/"
 
 **A:** Spotlight PA’s reporters are assigned to cover the state government’s many departments, agencies and commissions, as well as significant local and regional issues that cut across political and geographic boundaries. Their goal is to produce digital-first journalism that drives change.
 
+**Q: Why should I support Spotlight PA?**
+
+**A:** High-quality investigative and accountability journalism takes a lot of time and resources, and it’s critical to holding our elected officials and those in power responsible for their actions. Too often, however, it’s pushed aside because of financial struggles and budgetary constraints. We aim to fill the void in a bold way, but we need your support to keep doing this important work.
+
+**Q: How do I support Spotlight PA?**
+
+**A:** You can [make a donation to Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact <mailto:joanna@spotlightpa.org>.
+
+**Q: How do I change a recurring donation or update my credit card?**
+
+**A:** Please contact <mailto:joanna@spotlightpa.org> and we'll be happy to help.
+
+**Q: Is my donation tax deductible?**
+
+**A:** Yes.
+
 **Q: What is "digital-first journalism"?**
 
 **A:** Digital-first journalism means we make all of our editorial decisions based on the best way to reach modern-day readers online and in the forms and formats they like most for consuming news. While some of our stories will take the traditional, narrative form, we'll seek to innovate using data and visual tools to create new, interesting and engaging storytelling forms. And we won't be afraid to experiment.
@@ -33,11 +49,7 @@ url = "/about/faq/"
 
 **Q: Where is Spotlight PA based?**
 
-**A:** The location of our new office in Harrisburg will be announced soon.
-
-**Q: When will Spotlight PA officially launch?**
-
-**A:** We will hold launch events and begin publishing content in September.
+**A:** Our office in Harrisburg is located at 225 Market St., Suite 502A, Harrisburg, PA 17101.
 
 **Q: How frequently will Spotlight PA publish content?**
 
@@ -45,7 +57,7 @@ url = "/about/faq/"
 
 **Q: Where does Spotlight PA’s work appear?**
 
-**A:** All Spotlight PA content will appear on our website, [spotlightpa.org](https://www.spotlightpa.org). At launch, Spotlight PA content will also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com). Our content will also be shared with [PA Post](https://www.papost.org), a project of WITF, and [LNP Media Group](https://www.lancasteronline.com) in Lancaster.
+**A:** All Spotlight PA stories will appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appears in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com), as well as across a growing network of other Pennsylvania news organizations.
 
 **Q: Will Spotlight PA share its content with other news organizations?**
 
@@ -69,23 +81,11 @@ url = "/about/faq/"
 
 **Q: Who funds Spotlight PA?**
 
-**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters here.
+**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; Good Words Foundation; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters here.
 
 **Q: Is Spotlight PA a 501(c)(3) nonprofit organization?**
 
 **A:** Spotlight PA is a collaborative project and is not a legal entity. It operates under the 501(c)(3) status of the [Lenfest Institute for Journalism](https://www.lenfestinstitute.org/), which is the nonprofit owner of [The Inquirer](https://www.inquirer.com). All donations are given to the [Lenfest Institute](https://www.lenfestinstitute.org/) and directed to Spotlight PA's important investigative work.
-
-**Q: Why should I support Spotlight PA?**
-
-**A:** High-quality investigative and accountability journalism takes a lot of time and resources, and it’s critical to holding our elected officials and those in power responsible for their actions. Too often, however, it’s pushed aside because of financial struggles and budgetary constraints. We aim to fill the void in a bold way, but we need your support to keep doing this important work.
-
-**Q: How do I support Spotlight PA?**
-
-**A:** We’d be honored to have you aboard. Our donation portal will be available soon. For more information, email Joanna Zuckerman Bernstein at <mailto:joanna@spotlightpa.org>.
-
-**Q: Is my donation tax deductible?**
-
-**A:** Yes.
 
 **Q: How does Spotlight PA prevent funder interference?**
 
@@ -97,7 +97,7 @@ url = "/about/faq/"
 
 **Q: How do I stay updated on Spotlight PA’s work?**
 
-**A:** You can [sign up for updates](https://www.spotlightpa.org) here, and you’ll be the first to receive our newsletter when it’s launched.
+**A:** You can [sign up for our weekly newsletter, The Investigator, here](https://www.spotlightpa.org/newsletters).
 
 **Q: How do I pitch an idea to Spotlight PA?**
 
@@ -106,10 +106,6 @@ url = "/about/faq/"
 **Q: How do I contact Spotlight PA reporters?**
 
 **A:** Check out the [contact information for all Spotlight PA reporters](https://www.spotlightpa.org/about/staff/).
-
-**Q: What is Spotlight PA’s journalism Code of Ethics?**
-
-**A:** We're working on this now and we will make sure it aligns with the policies of our founding partner newsrooms.
 
 **Q: What is Spotlight PA’s corrections policy?**
 
