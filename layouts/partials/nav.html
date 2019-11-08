@@ -5,6 +5,7 @@
   <div class="navbar-brand">
     {{ $logo := resources.Get "/img/logos/banner-default-on-trans.svg" }}
     <a href="/" class="navbar-item">
+      <span class="is-sr-only">Home</span>
       {{ $logo.Content| safeHTML }}
     </a>
     <a
