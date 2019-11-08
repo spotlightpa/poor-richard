@@ -70,3 +70,6 @@ dist
 
 # Pipeline problems
 .forestry
+
+# Local Netlify folder
+.netlify
