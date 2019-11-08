@@ -38,6 +38,7 @@ York County Community Foundation <br>
 
 {{<supporters-list>}}
 
+* Jodi Abel
 * Nell McCormack Abom
 * Richard Abraham
 * Gail Alu
@@ -49,6 +50,7 @@ York County Community Foundation <br>
 * Kathleen Baker
 * Whitney Baldwin
 * Chris Bastress
+* Christopher Baxter
 * Mark Bazrod
 * Barry Bedrick
 * Ron Beitler
@@ -60,9 +62,10 @@ York County Community Foundation <br>
 * Jeffrey L. Braff
 * Gay Brown
 * Lisa Budwig
+* J.L. Byrne & C.M. Hersh
 * Joseph L. Carbo
 * Mireille Carigi
-* Carosella Sr.
+* Nicholas Carosella
 * Ashleigh Graf Casassa
 * Marguerite Chandler
 * Frank Cicchiello
@@ -77,19 +80,23 @@ York County Community Foundation <br>
 * Barry DeSantis
 * Earl Drumheiser
 * Stephen Duncan
+* E. Eckerle
 * Liam Elder-Connors
 * Dianne Elderkin
 * Joseph Elias
 * Mary Erdman
+* Russ Eshleman
 * J. Fauls
 * B. Faulstick
 * Adelaide Ferguson & Ronald Cahan
 * Ezra Fishman & Nicola Brodie
 * Thomas Flocco
 * Barbara Forbes-Rhouni
+* Leroy Forney
 * Ryan Froman
 * Greg Fullam
 * Anthony Gabriel
+* Barbara Geistwhite
 * Denise Gmerek
 * Tamara Goldman
 * Ralf Rundgren Graves
@@ -98,12 +105,14 @@ York County Community Foundation <br>
 * Frank Hadden
 * Robert Haines
 * B.A. Hamilton
+* Don Hannum
 * Kevin M. Hepler, MD
 * Grace E. Herstine
 * Clint Heverly
 * Bob Hoover
 * Louise Horan
 * Avram Hornik
+* Kristen Houser
 * Stephen R. Hughes
 * Sharon Hyde
 * Annette E. Inker
@@ -119,6 +128,7 @@ York County Community Foundation <br>
 * Alan Kennedy
 * Cathy King
 * Frank Kirkwood
+* Harold G. Kohn
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
 * John Lambert
@@ -131,6 +141,7 @@ York County Community Foundation <br>
 * Matt Lyon
 * James J. Maguire
 * Lelah Marie
+* Arlene Martinez
 * William H. Maruca
 * Claudia C. McGill
 * Michele McGovern
@@ -143,12 +154,14 @@ York County Community Foundation <br>
 * Ryan Morden
 * P.F. Moyer
 * Toni Moyer
+* Kenneth R. Nealon
 * M. Noel
 * Marty O’Brien
 * Ellen Ormond
 * Dennis Owens
 * Ronald Ozio
 * Leanora Paniccia
+* Lydia Pecker
 * Amy L. Perez
 * Rick Piper
 * Laura Powers
@@ -159,13 +172,16 @@ York County Community Foundation <br>
 * David R. Ross
 * Robert Ruff Jr.
 * Edwin Rund
+* Gary Ryan
 * Benedict X. Saia
+* C. Sarnoski
 * Robert & Judith Schachner
 * Pat Sellers
 * Kimberley Shore
 * Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
+* Lucas Smolcic Larson
 * Michael Sperger
 * Anthony Spisto
 * Christopher Spratt
@@ -179,10 +195,13 @@ York County Community Foundation <br>
 * Karen Hale Toth
 * Walter C. Uhler
 * Joseph C. Vignola
+* Fred Vodde
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
 * Rhonda White
+* Talia Wiener
+* Richard Williams
 * George Wolff
 * Margaret Wren
 * Tracy Yeomans
