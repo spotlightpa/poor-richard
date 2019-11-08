@@ -8,7 +8,7 @@
     <title>
       {{- .Site.Title }}{{ with .Title }}: {{.}}{{ end -}}
     </title>
-    <link>{{ .Permalink }}</link>
+    <link>{{ (.Page.OutputFormats.Get "html").Permalink }}</link>
     <description>{{ .Description }}</description>
     <generator>Hugo -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
