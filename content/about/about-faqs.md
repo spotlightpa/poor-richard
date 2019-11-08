@@ -57,7 +57,7 @@ url = "/about/faq/"
 
 **Q: Where does Spotlight PA’s work appear?**
 
-**A:** All Spotlight PA stories will appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appears in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com), as well as across a growing network of other Pennsylvania news organizations.
+**A:** All Spotlight PA stories appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com), as well as across a growing network of other Pennsylvania news organizations.
 
 **Q: Will Spotlight PA share its content with other news organizations?**
 
