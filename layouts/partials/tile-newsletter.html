@@ -1,7 +1,3 @@
-{{ $iconEmail := resources.Get "/img/fontawesome/solid/envelope.svg" }}
-{{ $iconUser := resources.Get "/img/fontawesome/regular/user.svg" }}
-{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
-
 <form
   class="has-text-centered max-50 is-margin-centered"
   action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
@@ -17,7 +13,9 @@
   <h2 class="title is-3 is-uppercase">
     <!-- Minifier pulls this too close without a character entity -->
     <span class="icon v-middle">
-      {{- $iconEmail.Content|safeHTML -}}
+      <svg>
+        <use xlink:href="#email-solid-svg"></use>
+      </svg>
     </span>
     &#20;
     <span class="v-middle">
@@ -40,10 +38,14 @@
         required
       >
         <span class="icon is-left has-text-grey-light">
-          {{ $iconUser.Content|safeHTML }}
+          <svg>
+            <use xlink:href="#email-svg"></use>
+          </svg>
         </span>
         <span class="icon is-right validator-icon">
-          {{ $iconCheck.Content|safeHTML }}
+          <svg>
+            <use xlink:href="#check-svg"></use>
+          </svg>
         </span>
     </p>
     <p class="control">

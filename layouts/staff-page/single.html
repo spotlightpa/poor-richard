@@ -1,11 +1,4 @@
 {{ define "extra-main" }}
-  {{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
-  {{ $iconTwitter := resources.Get "/img/fontawesome/brands/twitter.svg" }}
-  <div class="is-hidden">
-    <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
-    <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
-  </div>
-
   <section class="section columns has-background-white-ter">
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range sort .Site.Data.authors "weight" }}
