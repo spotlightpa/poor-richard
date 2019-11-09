@@ -2,15 +2,15 @@ import { each, on } from "./dom-utils.js";
 import { addModal } from "./modal.js";
 import { addSocialButtonListeners } from "./social.js";
 
-function createListeners() {
-  // Ensure a Google Analytics func
-  if (!window.ga) {
-    window.ga = function() {
-      (window.ga.q = window.ga.q || []).push(arguments);
-    };
-    window.ga.l = +new Date();
-  }
+// Ensure a Google Analytics func
+if (!window.ga) {
+  window.ga = function() {
+    (window.ga.q = window.ga.q || []).push(arguments);
+  };
+  window.ga.l = +new Date();
+}
 
+function createListeners() {
   on("click", "[data-target]", ev => {
     var targets = ev.currentTarget.dataset.target;
     var toggleClass = ev.currentTarget.dataset.toggleClass;
