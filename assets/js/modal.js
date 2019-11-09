@@ -1,14 +1,13 @@
 import { on, once, transition, loadDate, storeDate } from "./dom-utils.js";
 
-export function openModal(qs) {
+export function openModal(qs, modalType) {
   let modal = document.querySelector(qs);
   if (!modal) {
     return;
   }
   window.ga("send", "event", {
     eventCategory: "Modal interaction",
-    eventAction: "Saw modal",
-    eventLabel: qs,
+    eventAction: `Saw modal ${modalType}`,
     nonInteraction: true
   });
 
@@ -50,8 +49,7 @@ export function openModal(qs) {
     });
     window.ga("send", "event", {
       eventCategory: "Modal interaction",
-      eventAction: "Dismiss modal",
-      eventLabel: qs
+      eventAction: `Dismiss modal ${modalType}`
     });
   }
 }
@@ -119,7 +117,7 @@ export function addModal() {
     if (showModalNewsletter) {
       window.setTimeout(() => {
         storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
-        openModal("#modal-newsletter");
+        openModal("#modal-newsletter", "newsletter");
       }, delay);
       return;
     }
@@ -145,7 +143,7 @@ export function addModal() {
     if (showModalDonate) {
       window.setTimeout(() => {
         storeDate(SAW_DONATE_MODAL_KEY, now);
-        openModal("#modal-donate");
+        openModal("#modal-donate", "donate");
       }, delay);
       return;
     }
