@@ -113,6 +113,9 @@ export function addModal() {
     if (onTestNewsletterPage) {
       showModalNewsletter = true;
     }
+    if (onTestDonatePage) {
+      showModalNewsletter = false;
+    }
     // Then show it...
     if (showModalNewsletter) {
       window.setTimeout(() => {
