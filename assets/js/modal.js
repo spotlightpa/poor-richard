@@ -15,6 +15,7 @@ export function openModal(qs, modalType) {
   let closeBtn = modal.querySelectorAll("[aria-label=close]");
   let bg = modal.querySelectorAll(".modal-background");
   let inputs = modal.querySelectorAll("input");
+  let form = modal.querySelectorAll("form");
 
   modal.classList.add("is-active");
   transition(modal, "fade-enter", "fade-enter-active", 500);
@@ -37,6 +38,14 @@ export function openModal(qs, modalType) {
       window.ga("send", "event", {
         eventCategory: "Modal interaction",
         eventAction: "Focus input"
+      });
+    }),
+    // eslint-disable-next-line no-unused-vars
+    on("submit", form, e => {
+      window.ga("send", "event", {
+        eventCategory: "Modal interaction",
+        eventAction: `Submit ${modalType}`,
+        transport: "beacon"
       });
     })
   ];
