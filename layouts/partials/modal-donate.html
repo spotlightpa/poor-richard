@@ -1,6 +1,3 @@
-{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
-{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
-
 <div
   class="modal"
   id="modal-donate"
@@ -10,8 +7,9 @@
     <header class="modal-card-head">
       <p class="modal-card-title has-text-centered is-size-2">
         <span class="svg-container has-text-white">
-          {{ $logo := resources.Get "/img/logos/banner-default-on-trans.svg" }}
-          {{ $logo.Content| safeHTML }}
+          <svg>
+            <use xlink:href="#logo-svg"></use>
+          </svg>
         </span>
       </p>
       <button class="delete" type="button" aria-label="close"></button>

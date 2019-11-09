@@ -32,6 +32,7 @@
   data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
   {{with .Param "modal-exclude" }}data-modal-exclude="1"{{end}}
 >
+  {{ block "svg-resources" . }}{{ partialCached "svg-resources.html" . }}{{ end }}
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
   {{ if .Param "banner-active" }}
     {{ partial "banner.html" . }}

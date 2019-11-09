@@ -1,5 +1,3 @@
-{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
-{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
 {{ $bgImg := resources.Get "/img/bgs/capitol-moody.jpeg" }}
 {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
 <style>
@@ -75,10 +73,14 @@
                 placeholder="Email"
               >
               <span class="icon is-large is-left has-text-primary">
-                {{ $iconEmail.Content|safeHTML }}
+                <svg>
+                  <use xlink:href="#email-svg"></use>
+                </svg>
               </span>
               <span class="icon is-large is-right validator-icon">
-                {{ $iconCheck.Content|safeHTML }}
+                <svg>
+                  <use xlink:href="#check-svg"></use>
+                </svg>
               </span>
             </div>
           </div>

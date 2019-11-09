@@ -1,8 +1,4 @@
-{{ $iconEmail := resources.Get "/img/fontawesome/regular/envelope.svg" }}
-{{ $iconUser := resources.Get "/img/fontawesome/regular/user.svg" }}
-{{ $iconCheck := resources.Get "/img/fontawesome/solid/check.svg" }}
-
-<section class="">
+<section>
   <form
     action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
     method="post"
@@ -56,10 +52,14 @@
           required
         >
         <span class="icon is-left">
-          {{ $iconEmail.Content|safeHTML }}
+          <svg>
+            <use xlink:href="#email-svg"></use>
+          </svg>
         </span>
         <span class="icon is-right validator-icon">
-          {{ $iconCheck.Content|safeHTML }}
+          <svg>
+            <use xlink:href="#check-svg"></use>
+          </svg>
         </span>
       </p>
     </div>
