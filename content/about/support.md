@@ -45,6 +45,7 @@ York County Community Foundation <br>
 * Helen Andrews
 * Oscar Armas-Luy
 * Stephen Artman
+* David Ashton
 * Susan Auchincloss
 * David Auel
 * Kathleen Baker
@@ -85,7 +86,9 @@ York County Community Foundation <br>
 * Dianne Elderkin
 * Joseph Elias
 * Mary Erdman
+* E. Margaret Eshleman 
 * Russ Eshleman
+* C. Fairchild
 * J. Fauls
 * B. Faulstick
 * Adelaide Ferguson & Ronald Cahan
@@ -94,6 +97,7 @@ York County Community Foundation <br>
 * Barbara Forbes-Rhouni
 * Leroy Forney
 * Ryan Froman
+* Isla Fruchter
 * Greg Fullam
 * Anthony Gabriel
 * Barbara Geistwhite
@@ -206,6 +210,7 @@ York County Community Foundation <br>
 * Richard Williams
 * George Wolff
 * Margaret Wren
+* Francis Wynne
 * Tracy Yeomans
 * Jerry Young
 * Sherley Young
