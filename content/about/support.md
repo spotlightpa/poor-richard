@@ -131,7 +131,9 @@ York County Community Foundation <br>
 * Harold G. Kohn
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
+* J. Lai
 * John Lambert
+* B. Lauridsen & G. Harke
 * Lora Lavin
 * Jamie Lemon & Steve Cline
 * Stephen J. Lipnichan
