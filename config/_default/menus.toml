@@ -23,16 +23,10 @@ url = "/about/faq/"
 weight = 4
 
 [[main]]
-name = "Become a partner"
-pre = "is-uppercase"
-url = "/contact/"
-weight = 5
-
-[[main]]
 name = "Send a tip"
 pre = "is-uppercase"
 url = "/tips/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "Home"
