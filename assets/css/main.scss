@@ -418,6 +418,6 @@ $margin-sizes: (
 }
 
 .is-vertical > .tile {
-    /* autoprefixer: off */
+  /* autoprefixer: off */
   -ms-flex-preferred-size: auto; /* IE 11 fix */
 }
