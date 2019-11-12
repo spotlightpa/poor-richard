@@ -9,7 +9,6 @@ title = "Citing Spotlight PA/Caucus probe, top lawmaker pushes limits on campaig
 description = "The leader of the Republican-controlled Senate, Joe Scarnati, said he supports the effort."
 dek = "The leader of the Republican-controlled Senate, Joe Scarnati, said he supports the effort."
 kicker = "Campaign Finance"
-special-report = true
 slug = "pennsylvania-campaign-expenses-reform-bill-costa"
 +++
 
