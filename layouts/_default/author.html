@@ -1,0 +1,60 @@
+{{ define "main" }}
+  <section class="section">
+    <article class="columns is-centered is-multiline">
+      <div class="column is-three-fifths">
+        <header class="block">
+          <div class="is-clearfix">
+            <div class="is-pulled-right">
+              {{ partial "breadcrumbs.html" . }}
+            </div>
+          </div>
+
+          <h1 class="title is-2 is-size-3-touch is-spaced">
+            {{ .Title }}
+          </h1>
+
+          <div class="has-margin-top has-margin-bottom">
+            {{ partial "social-buttons.html" . }}
+          </div>
+        </header>
+
+        {{ $author := index $.Site.Data.authors .Title }}
+        {{ if $author.active }}
+          <div class="content">
+            {{ $author.content|markdownify }}
+          </div>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+{{ end }}
+
+{{ define "extra-main" }}
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <div class="tile is-ancestor is-vertical">
+        <div class="tile is-parent is-top">
+          <div class="tile is-child">
+            <h2 class="title is-4 is-uppercase has-text-weight-semibold">
+              Stories by {{ .Title }}
+            </h2>
+            <hr class="is-emphatic-underline has-margin-top-negative">
+          </div>
+        </div>
+        {{ range $page := .Paginator.Pages }}
+          {{ partial "tile-archive.html" $page }}
+        {{ end }}
+      </div>
+
+      {{ if gt .Paginator.TotalPages 0 }}
+        <div class="level">
+        {{ if .Paginator.HasPrev }}
+          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

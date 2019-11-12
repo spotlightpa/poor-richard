@@ -62,23 +62,37 @@
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $img := resources.GetMatch $imgRes }}
-            {{ $authorURL := urlize $name | printf "/about/staff/#%s" }}
             {{ $author := index $.Site.Data.authors $name }}
+            {{ $nameID := urlize . }}
+            {{ $authorURL := "" }}
+            {{ if $author.active }}
+              {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}
+                {{ $authorURL = $pages.Page.RelPermalink }}
+              {{ end }}
+            {{ end }}
             <div class="level">
               <div class="level-left">
                 <div class="level-item">
                   {{ if $img }}
-                    <a
-                      href="{{ $authorURL }}"
-                      class="image is-64x64"
-                    >
-                      {{ $imgShrunk := $img.Fill "256x256" }}
-                        <img
-                          src="{{ $imgShrunk.RelPermalink }}"
-                          alt="Photo of {{ $name }}"
-                          class="is-rounded is-monochrome"
-                        >
-                    </a>
+                    {{ if $authorURL }}
+                      <a
+                        href="{{ $authorURL }}"
+                        class="image is-64x64"
+                      >
+                    {{ else }}
+                      <span class="image is-64x64">
+                    {{ end }}
+                    {{ $imgShrunk := $img.Fill "256x256" }}
+                      <img
+                        src="{{ $imgShrunk.RelPermalink }}"
+                        alt="Photo of {{ $name }}"
+                        class="is-rounded is-monochrome"
+                      >
+                    {{ if $authorURL }}
+                      </a>
+                    {{ else }}
+                      </span>
+                    {{ end }}
                   {{ else }}
                     <span class="image is-64x64"></span>
                   {{ end }}
@@ -87,7 +101,7 @@
                 <div class="level-item">
                   <div>
                     <h3 class="subtitle is-3 has-text-weight-semibold">
-                      {{ if $author }}
+                      {{ if $authorURL }}
                       <a href="{{ $authorURL }}">
                         {{ $name }}
                       </a>
@@ -97,7 +111,7 @@
                         </span>
                       {{ end }}
                     </h3>
-                    {{ if $author }}
+                    {{ if $author.active }}
                       <h3 class="subtitle ">
                         {{ $author.title }}
                       </h3>

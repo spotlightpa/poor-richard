@@ -229,6 +229,12 @@ collections:
         widget: number
         valueType: int
         required: true
+      - label: Active
+        name: active
+        hint: "Is this author still working for Spotlight PA?"
+        widget: boolean
+        required: true
+
   - label: Other
     name: data
     editor:
