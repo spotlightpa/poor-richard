@@ -12,6 +12,7 @@ description = "A year-long investigation uncovered other purchases, too: foreign
 dek = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
 kicker = "Campaign Finance"
 featured = true
+special-report = true
 slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
 +++
 
