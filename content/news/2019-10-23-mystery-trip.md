@@ -14,7 +14,6 @@ dek = "The senators gave differing explanations for the purpose of the trip and 
 kicker = "Campaign Finance"
 slug = "mystery-trip-to-europe-with-donors-by-pa-state-senators"
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted and Sam Janesch of The Caucus"
-special-report = true
 +++
 
 <script defer>

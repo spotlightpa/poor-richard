@@ -10,7 +10,6 @@ title = "She’s paid by taxpayers. So why is top Pa. Senate aide wining and din
 description = "Shelly Brown is one of two taxpayer-funded staffers under Senate leader Joe Scarnati who have access to a credit card issued by the top Republican’s political operation, even though neither of them has an official role with the campaign."
 dek = ""
 kicker = "Campaign Finance"
-special-report = true
 slug = "shelly-brown-credit-card-campaign-finance"
 aliases = ["/news/2019/10/shelly-brown-credit-card-campaign-finance-abuse/"]
 +++
