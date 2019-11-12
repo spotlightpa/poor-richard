@@ -7,7 +7,7 @@
         {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}
           {{ $articlesListLink = $pages.Page.RelPermalink }}
         {{ end }}
-        {{ if ge .weight 0 }}
+        {{ if .active }}
           <div
             id="{{ $nameID }}"
             class="card block"
