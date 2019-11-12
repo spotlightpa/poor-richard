@@ -416,3 +416,8 @@ $margin-sizes: (
   max-width: $tablet;
   margin: 0 auto;
 }
+
+.is-vertical > .tile {
+    /* autoprefixer: off */
+  -ms-flex-preferred-size: auto; /* IE 11 fix */
+}
