@@ -1,5 +1,5 @@
 {{ $svg := printf "img/promo/tile-%s.svg" .svg }}
-{{ $logo := resources.Get $svg }}
+{{ $logo := resources.Get $svg | fingerprint }}
 
 <div class="has-text-centered">
   <a
@@ -7,8 +7,11 @@
     href="{{ .url }}"
     title="{{ .title }}"
   >
-    <span class="is-sr-only">{{ .title }}</span>
-    {{ $logo.Content| safeHTML }}
+    <img
+      alt="{{ .title }}"
+      src="{{ $logo.RelPermalink }}"
+      loading="lazy"
+    >
   </a>
 </div>
 

@@ -373,10 +373,10 @@ $margin-sizes: (
   }
 }
 
-.promo svg {
-  width: 100%;
+.promo img {
+  width: 75vw;
   @media screen and (min-width: $tablet) {
-    max-width: 20vw;
+    width: 20vw;
   }
 }
 
