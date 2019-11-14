@@ -92,7 +92,7 @@ export default {
         this.stepInc();
       } else {
         this.showModal = true;
-        this.$ga("send", "event", {
+        this.$gae({
           eventCategory: "Donation form",
           eventAction: "Saw recurring donation nag screen"
         });
@@ -100,7 +100,7 @@ export default {
     },
     noThanks() {
       this.showModal = false;
-      this.$ga("send", "event", {
+      this.$gae({
         eventCategory: "Donation form",
         eventAction: "Declined recurring donation nag screen"
       });
@@ -111,7 +111,7 @@ export default {
       this.otherAmount = String(this.annualizedAmount);
       this.formData.recurring = "Month";
       this.showModal = false;
-      this.$ga("send", "event", {
+      this.$gae({
         eventCategory: "Donation form",
         eventAction: "Accepted recurring donation nag screen"
       });

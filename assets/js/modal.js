@@ -1,11 +1,12 @@
 import { on, once, transition, loadDate, storeDate } from "./dom-utils.js";
+import { sendGAEvent } from "./google-analytics.js";
 
 export function openModal(qs, modalType) {
   let modal = document.querySelector(qs);
   if (!modal) {
     return;
   }
-  window.ga("send", "event", {
+  sendGAEvent({
     eventCategory: "Modal interaction",
     eventAction: `Saw modal ${modalType}`,
     nonInteraction: true
@@ -35,14 +36,14 @@ export function openModal(qs, modalType) {
     }),
     // eslint-disable-next-line no-unused-vars
     on("focus", inputs, e => {
-      window.ga("send", "event", {
+      sendGAEvent({
         eventCategory: "Modal interaction",
         eventAction: "Focus input"
       });
     }),
     // eslint-disable-next-line no-unused-vars
     on("submit", form, e => {
-      window.ga("send", "event", {
+      sendGAEvent({
         eventCategory: "Modal interaction",
         eventAction: `Submit ${modalType}`,
         transport: "beacon"
@@ -56,7 +57,7 @@ export function openModal(qs, modalType) {
     cancelFns.forEach(fn => {
       fn();
     });
-    window.ga("send", "event", {
+    sendGAEvent({
       eventCategory: "Modal interaction",
       eventAction: `Dismiss modal ${modalType}`
     });

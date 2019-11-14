@@ -42,7 +42,7 @@ export default {
     sendFocus(ev) {
       let [label] = ev.target.labels;
       let eventLabel = label ? label.innerText : ev.target.name;
-      this.$ga("send", "event", {
+      this.$gae({
         eventCategory: "Donation form",
         eventAction: "Focused a field",
         eventLabel

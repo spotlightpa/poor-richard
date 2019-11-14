@@ -103,7 +103,7 @@ export default {
       this.isSubmitting = isValid;
 
       if (!isValid) {
-        this.$ga("send", "event", {
+        this.$gae({
           eventCategory: "Donation form",
           eventAction: "Attempt form submission",
           eventLabel: "Invalid submission"
@@ -116,7 +116,7 @@ export default {
         // Assume an 8% churn on monthly subscribers
         eventValue *= 12;
       }
-      this.$ga("send", "event", {
+      this.$gae({
         eventCategory: "Donation form",
         eventAction: "Submit form",
         eventValue,

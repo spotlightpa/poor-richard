@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import DonationForm from "./components/DonationForm.vue";
 import { each } from "./dom-utils.js";
+import { sendGAEvent } from "./google-analytics.js";
 
 library.add(faArrowAltCircleRight, faArrowAltCircleLeft, faEnvelope, faLock);
 
@@ -23,18 +24,9 @@ let currencyFormat = new Intl.NumberFormat("en-US", {
 
 Vue.filter("formatUSD", amount => currencyFormat.format(amount));
 
-if (!window.ga) {
-  window.ga = function() {
-    (window.ga.q = window.ga.q || []).push(arguments);
-  };
-  window.ga.l = +new Date();
-}
-
 let GA = {
   install(Vue) {
-    Vue.prototype.$ga = (...args) => {
-      window.ga(...args);
-    };
+    Vue.prototype.$gae = obj => void sendGAEvent(obj);
   }
 };
 

@@ -1,14 +1,7 @@
 import { each, on } from "./dom-utils.js";
 import { addModal } from "./modal.js";
 import { addSocialButtonListeners } from "./social.js";
-
-// Ensure a Google Analytics func
-if (!window.ga) {
-  window.ga = function() {
-    (window.ga.q = window.ga.q || []).push(arguments);
-  };
-  window.ga.l = +new Date();
-}
+import { sendGAEvent } from "./google-analytics.js";
 
 function createListeners() {
   on("click", "[data-target]", ev => {
@@ -30,7 +23,7 @@ function createListeners() {
     el.rel = "noopener noreferrer";
 
     on("click", el, ev => {
-      window.ga("send", "event", {
+      sendGAEvent({
         eventCategory: "Outbound Link",
         eventAction: "click",
         eventLabel: ev.currentTarget.href,
@@ -45,7 +38,7 @@ function createListeners() {
       return;
     }
     gaEvent = JSON.parse(gaEvent);
-    window.ga("send", "event", gaEvent);
+    sendGAEvent(gaEvent);
   });
 
   addSocialButtonListeners();

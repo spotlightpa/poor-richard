@@ -34,7 +34,7 @@ export default {
   },
   mounted() {
     this.testing = !!window.location.search.match(/debug=donate/);
-    this.$ga("send", "event", {
+    this.$gae({
       eventCategory: "Donation form",
       eventAction: "Saw donation form",
       nonInteraction: true
@@ -47,7 +47,7 @@ export default {
       this.$refs.anchor.scrollIntoView({ behavior: "smooth", block: "center" });
       window.history.pushState({ step: this.stepObj.n }, "", "");
       let stepName = this.stepObj.items[this.stepObj.n].name;
-      this.$ga("send", "event", {
+      this.$gae({
         eventCategory: "Donation form",
         eventAction: `Viewed ${stepName} Step`,
         eventLabel: `Changed step by ${delta}`
