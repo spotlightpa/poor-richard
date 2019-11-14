@@ -10,25 +10,12 @@
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
-{{ template "_internal/google_analytics_async.html" . }}
-<script type="module" defer>
-  window.ga("send", "event", {
-    eventCategory: "Module detection",
-    eventAction: "Supports modules",
-    nonInteraction: true
-  });
-</script>
-<script nomodule defer>
-  window.ga("send", "event", {
-    eventCategory: "Module detection",
-    eventAction: "Does not support modules",
-    nonInteraction: true
-  });
-</script>
 
 {{ range slice "500" "800" "regular" }}
   <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
 {{ end }}
+
+{{ template "_internal/google_analytics_async.html" . }}
 
 <link
   rel="alternate"
