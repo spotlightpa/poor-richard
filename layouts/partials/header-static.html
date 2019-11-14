@@ -31,9 +31,13 @@
   title="Full News Feed"
 />
 
-{{ $icon := resources.Get (.Site.Param "favicon") }}
+{{ $icon := .Site.Param "favicon" | resources.Get }}
 {{ range $size := slice "32x32" "128x128" "152x152" "167x167" "180x180" "192x192" "196x196" }}
   {{ $iconShrunk := $icon.Fit $size }}
   <link rel="shortcut icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
+{{ end }}
+{{ $icon = .Site.Param "touch-icon" | resources.Get }}
+{{ range $size := slice "32x32" "128x128" "152x152" "167x167" "180x180" "192x192" "196x196" }}
+  {{ $iconShrunk := $icon.Fit $size }}
   <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
 {{ end }}
