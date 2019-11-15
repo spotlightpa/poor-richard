@@ -1,6 +1,11 @@
 <!-- header tags that are the same on all pages -->
 
 {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
+{{ $fonts := resources.Get "css/fonts.scss" | toCSS $scssOptions | postCSS }}
+<style type="text/css">
+  {{ $fonts.Content | safeCSS }}
+</style>
+
 {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
