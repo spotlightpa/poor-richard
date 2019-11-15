@@ -1,7 +1,7 @@
 </div>
 
-{{ $banner := resources.Get "img/promo/donate-triple-banner.svg" }}
-{{ $mobile := resources.Get "img/promo/donate-triple-mobile.svg" }}
+{{ $banner := resources.Get "img/promo/donate-triple-banner.svg"|fingerprint }}
+{{ $mobile := resources.Get "img/promo/donate-triple-mobile.svg"|fingerprint }}
 
 {{ $bannerImgs := slice }}
 {{ $mobileImgs := slice }}
