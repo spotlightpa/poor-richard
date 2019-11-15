@@ -9,6 +9,6 @@ export function rotatePromoImages() {
   each("[data-promo-images]", el => {
     let images = JSON.parse(el.dataset.promoImages);
     let image = randomChoice(images);
-    el.setAttribute("xlink:href", image);
+    el.setAttribute("href", image);
   });
 }
