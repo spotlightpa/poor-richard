@@ -1,0 +1,48 @@
+</div>
+
+{{ $banner := resources.Get "img/promo/donate-triple-banner.svg" }}
+{{ $mobile := resources.Get "img/promo/donate-triple-mobile.svg" }}
+
+{{ $imgs := slice }}
+{{ range seq 4 }}
+  {{ $team := printf "img/promo/team-%d.jpeg" . | resources.Get }}
+  {{ $team = $team.Fill "400x300" }}
+  {{ $imgs = $imgs | append $team.RelPermalink }}
+{{ end }}
+
+<div class="box">
+  <a href="/donate/">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 720 240"
+      class="is-hidden-mobile"
+    >
+      <title>Donate to Spotlight PA</title>
+      <desc>Donate now and your gift will be tripled</desc>
+      <image
+        data-promo-images="{{ $imgs | jsonify }}"
+        xlink:href=""
+        x="15" y="15" width="320" height="240" />
+      <image
+        xlink:href="{{ $banner.RelPermalink }}"
+        x="0" y="0" width="720" height="240" />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 386 459"
+      class="is-hidden-tablet"
+    >
+      <title>Donate to Spotlight PA</title>
+      <desc>Donate now and your gift will be tripled</desc>
+      <image
+        data-promo-images="{{ $imgs | jsonify }}"
+        xlink:href=""
+        x="30" y="18" width="320" height="240" />
+      <image
+        xlink:href="{{ $mobile.RelPermalink }}"
+        x="0" y="0" width="386" height="459" />
+    </svg>
+  </a>
+</div>
+
+<div class="content">
