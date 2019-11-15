@@ -3,11 +3,14 @@
 {{ $banner := resources.Get "img/promo/donate-triple-banner.svg" }}
 {{ $mobile := resources.Get "img/promo/donate-triple-mobile.svg" }}
 
-{{ $imgs := slice }}
+{{ $bannerImgs := slice }}
+{{ $mobileImgs := slice }}
 {{ range seq 4 }}
   {{ $team := printf "img/promo/team-%d.jpeg" . | resources.Get }}
-  {{ $team = $team.Fill "400x300" }}
-  {{ $imgs = $imgs | append $team.RelPermalink }}
+  {{ $teamBanner := $team.Fill "400x300" }}
+  {{ $bannerImgs = $bannerImgs | append $teamBanner.RelPermalink }}
+  {{ $teamMobile := $team.Fill "450x300" }}
+  {{ $mobileImgs = $mobileImgs | append $teamMobile.RelPermalink }}
 {{ end }}
 
 <div class="box">
@@ -20,7 +23,7 @@
       <title>Donate to Spotlight PA</title>
       <desc>Donate now and your gift will be tripled</desc>
       <image
-        data-promo-images="{{ $imgs | jsonify }}"
+        data-promo-images="{{ $bannerImgs | jsonify }}"
         href=""
         x="0" y="0" width="272" height="204" />
       <image
@@ -35,9 +38,9 @@
       <title>Donate to Spotlight PA</title>
       <desc>Donate now and your gift will be tripled</desc>
       <image
-        data-promo-images="{{ $imgs | jsonify }}"
+        data-promo-images="{{ $mobileImgs | jsonify }}"
         href=""
-        x="25" y="0" width="305" height="230" />
+        x="0" y="-10" width="360" height="240" />
       <image
         xlink:href="{{ $mobile.RelPermalink }}"
         x="0" y="0" width="355.63" height="427" />
