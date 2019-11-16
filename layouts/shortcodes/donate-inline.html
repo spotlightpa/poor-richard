@@ -1,0 +1,54 @@
+</div>
+
+{{ $banner := resources.Get "img/promo/donate-triple-banner.svg"|fingerprint }}
+{{ $mobile := resources.Get "img/promo/donate-triple-mobile.svg"|fingerprint }}
+
+{{ $bannerImgs := slice }}
+{{ $mobileImgs := slice }}
+{{ range seq 4 }}
+  {{ $team := printf "img/promo/team-%d.jpeg" . | resources.Get }}
+  {{ $teamBanner := $team.Fill "400x300" }}
+  {{ $bannerImgs = $bannerImgs | append $teamBanner.RelPermalink }}
+  {{ $teamMobile := $team.Fill "450x300" }}
+  {{ $mobileImgs = $mobileImgs | append $teamMobile.RelPermalink }}
+{{ end }}
+
+<div class="box">
+  <a
+    href="/donate/"
+    data-ga-event='{ "eventCategory": "Promo interaction", "eventAction": "Click donate", "transport": "beacon" }'
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 686.635 204.611"
+      class="is-hidden-mobile"
+    >
+      <title>Donate to Spotlight PA</title>
+      <desc>Donate now and your gift will be tripled</desc>
+      <image
+        data-promo-images="{{ $bannerImgs | jsonify }}"
+        href=""
+        x="0" y="0" width="272" height="204" />
+      <image
+        xlink:href="{{ $banner.RelPermalink }}"
+        x="0" y="0" width="686.635" height="204.611" />
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 355.63 427"
+      class="is-hidden-tablet"
+    >
+      <title>Donate to Spotlight PA</title>
+      <desc>Donate now and your gift will be tripled</desc>
+      <image
+        data-promo-images="{{ $mobileImgs | jsonify }}"
+        href=""
+        x="0" y="-10" width="360" height="240" />
+      <image
+        xlink:href="{{ $mobile.RelPermalink }}"
+        x="0" y="0" width="355.63" height="427" />
+    </svg>
+  </a>
+</div>
+
+<div class="content">

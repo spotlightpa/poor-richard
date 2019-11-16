@@ -1,6 +1,7 @@
 <!-- God forgive me -->
 </div>
 
+<div class="box">
 {{ $src := .Get "src" }}
 {{ $credit := .Get "credit" }}
 {{ $description := .Get "description" }}
@@ -13,5 +14,8 @@
 {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
 {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
 {{ $imgOpts | partial "image-block.html" }}
+
+  <p class="is-size-6 is-italic">{{ $description }}</p>
+</div>
 
 <div class="content">
