@@ -11,7 +11,7 @@
             >{{ $params.kicker }}</p>
           {{ else }}
             <div class="is-clearfix">
-              <div class="is-pulled-right">
+              <div class="is-pulled-right" data-ga-action="Header breadcrumbs">
                 {{ partial "breadcrumbs.html" . }}
               </div>
             </div>
@@ -53,12 +53,14 @@
 
       {{ partial "hero-image-block.html" . }}
 
-      <div class="content">
-        {{ .Content }}
+      <div data-ga-action="Main content">
+        <div class="content">
+          {{ .Content }}
+        </div>
       </div>
 
       {{ with .Param "authors" }}
-        <footer>
+        <footer data-ga-action="Author info">
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $img := resources.GetMatch $imgRes }}
@@ -129,7 +131,7 @@
   {{ $news := .Site.GetPage "/news/_index.md" }}
   {{ $related := $news.RegularPages.Related . | first 3 }}
   {{ with $related }}
-    <nav class="columns is-centered has-margin-top">
+    <nav class="columns is-centered has-margin-top" data-ga-action="Related content">
       <div class="column is-three-fifths">
         <div class="tile is-ancestor is-vertical">
           <div class="tile is-parent is-top">
