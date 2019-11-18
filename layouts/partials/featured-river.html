@@ -3,9 +3,9 @@
 {{ $related := where $news.RegularPages ".Params.special-report" true | complement $featuredStory}}
 {{ $features := append $related $featuredStory }}
 {{ $pages := $news.RegularPages | complement $featuredStory }}
-<section class="section">
+<section class="section" data-ga-action="Homepage link">
   <div class="container-hp">
-    <div class="tile is-ancestor is-vertical">
+    <div class="tile is-ancestor is-vertical" data-ga-action="Homepage top feature">
       {{ if gt (len $features) 0 }}
         {{ partial "tile-featured.html" $features }}
       {{ end }}

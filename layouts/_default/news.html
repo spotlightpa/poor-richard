@@ -1,5 +1,8 @@
 {{ define "extra-main" }}
-  <section class="section columns is-centered is-multiline">
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-action="News archive"
+  >
     <div class="column is-three-fifths">
       <div class="tile is-ancestor is-vertical">
         {{ range $page := .Paginator.Pages }}
