@@ -1,6 +1,9 @@
 {{ define "extra-main" }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  <section class="section columns">
+  <section
+    class="section columns"
+    data-ga-action="Authors list"
+  >
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range (.Paginator 20).Pages.ByTitle }}
         {{ $name := .Title }}

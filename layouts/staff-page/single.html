@@ -1,5 +1,8 @@
 {{ define "extra-main" }}
-  <section class="section columns has-background-white-ter">
+  <section
+    class="section columns has-background-white-ter"
+    data-ga-action="Staff page"
+  >
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range sort .Site.Data.authors "weight" }}
         {{ $nameID := urlize .name }}
