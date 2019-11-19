@@ -72,6 +72,7 @@ York County Community Foundation <br>
 * Frank Cicchiello
 * Dr. Dane S. Claussen
 * John & Joy Burt Conti
+* J. Cordingley
 * Laurel Costa
 * Brett Cott
 * Chris Coyle
@@ -86,6 +87,7 @@ York County Community Foundation <br>
 * Dianne Elderkin
 * Joseph Elias
 * Mary Erdman
+* Lisa Ernst
 * E. Margaret Eshleman 
 * Russ Eshleman
 * C. Fairchild
@@ -105,10 +107,13 @@ York County Community Foundation <br>
 * Tamara Goldman
 * Ralf Rundgren Graves
 * John F. Graybill
+* Brent Groce
 * Mark Gudalis
 * Frank Hadden
 * Robert Haines
+* David Hakes
 * B.A. Hamilton
+* Mimi Hanks-Bell
 * Don Hannum
 * Kevin M. Hepler, MD
 * Grace E. Herstine
@@ -166,11 +171,13 @@ York County Community Foundation <br>
 * Ellen Ormond
 * Dennis Owens
 * Ronald Ozio
+* William Paci
 * Leanora Paniccia
 * Lydia Pecker
 * Amy L. Perez
 * Rick Piper
 * Laura Powers
+* Mark Raymond
 * John Rhoades
 * Ralph Riedel
 * Eric Riese
@@ -194,11 +201,13 @@ York County Community Foundation <br>
 * John Stenger
 * Harriet Stone
 * Thomas Stone
+* Nicole Stranko
 * Freda Tepfer
 * R. Thomas
 * Irene Tierney
 * M. Tillger
 * Karen Hale Toth
+* Margaret Turcich
 * Walter C. Uhler
 * Joseph C. Vignola
 * Fred Vodde
@@ -208,6 +217,7 @@ York County Community Foundation <br>
 * Rhonda White
 * Talia Wiener
 * Richard Williams
+* Deborah Wolfe
 * George Wolff
 * Margaret Wren
 * Francis Wynne
