@@ -10,6 +10,7 @@ Sign up for _The Investigator_, Spotlight PA's free weekly newsletter with exclu
 {{<newsletter-form>}}
 
 ## Archives
+* [Thursday, Nov. 21](http://eepurl.com/gKhUD1)
 * [Thursday, Nov. 14](http://eepurl.com/gJvlf9)
 * [Thursday, Nov. 7](http://eepurl.com/gIPXmH)
 * [Tuesday, Nov. 5](http://eepurl.com/gIEl_v)
