@@ -53,14 +53,20 @@
 
       {{ partial "hero-image-block.html" . }}
 
-      <div data-ga-action="Main content">
+      <div
+        class="block"
+        data-ga-action="Main content"
+      >
         <div class="content">
           {{ .Content }}
         </div>
       </div>
 
       {{ with .Param "authors" }}
-        <footer data-ga-action="Author info">
+        <footer
+          class="block"
+          data-ga-action="Author info"
+        >
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $img := resources.GetMatch $imgRes }}
