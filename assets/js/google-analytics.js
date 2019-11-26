@@ -1,4 +1,4 @@
-import { each, on, polyfillClosest } from "./dom-utils.js";
+import { each, on, storeItem, loadItem, polyfillClosest } from "./dom-utils.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -8,12 +8,21 @@ if (!window.ga) {
   window.ga.l = +new Date();
 }
 
+export const DO_NOT_TRACK_KEY = "do-not-track";
+
+let dnt = loadItem(DO_NOT_TRACK_KEY);
+
 export function callGA(...args) {
+  if (dnt) {
+    // eslint-disable-next-line no-console
+    console.info("GA", args);
+    return;
+  }
   window.ga(...args);
 }
 
 export function sendGAEvent(ev) {
-  window.ga("send", "event", ev);
+  callGA("send", "event", ev);
 }
 
 export function ensureGA() {
@@ -31,6 +40,10 @@ export function ensureGA() {
 
 export function addGAListeners() {
   polyfillClosest();
+  const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
+  if (onDNTPage) {
+    storeItem(DO_NOT_TRACK_KEY, true);
+  }
 
   each("a", el => {
     let isInternal =
