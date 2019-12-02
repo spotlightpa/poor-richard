@@ -61,9 +61,12 @@ York County Community Foundation <br>
 * Robert Joseph Biller
 * David Bohanick
 * Jeffrey L. Braff
+* D. Brooks
 * Gay Brown
 * Lisa Budwig
+* T. Buehner
 * J.L. Byrne & C.M. Hersh
+* Stacey C. Cahn
 * Joseph L. Carbo
 * Mireille Carigi
 * Nicholas Carosella
@@ -72,11 +75,14 @@ York County Community Foundation <br>
 * Frank Cicchiello
 * Dr. Dane S. Claussen
 * John & Joy Burt Conti
+* John M. Corcoran Esq.
 * J. Cordingley
 * Laurel Costa
 * Brett Cott
 * Chris Coyle
 * Karen Crosby
+* Julie Daye
+* Connie & Terry Dellmuth
 * Mike Del Vacchio
 * Fran DeMillion
 * Barry DeSantis
@@ -86,10 +92,12 @@ York County Community Foundation <br>
 * Liam Elder-Connors
 * Dianne Elderkin
 * Joseph Elias
+* Margaret Emery
 * Mary Erdman
 * Lisa Ernst
 * E. Margaret Eshleman 
 * Russ Eshleman
+* Rosa & Alberto Esquenazi
 * C. Fairchild
 * J. Fauls
 * B. Faulstick
@@ -102,7 +110,9 @@ York County Community Foundation <br>
 * Isla Fruchter
 * Greg Fullam
 * Anthony Gabriel
+* John Gaynard
 * Barbara Geistwhite
+* Stephen M. Glynn
 * Denise Gmerek
 * Tamara Goldman
 * Ralf Rundgren Graves
@@ -115,6 +125,7 @@ York County Community Foundation <br>
 * B.A. Hamilton
 * Mimi Hanks-Bell
 * Don Hannum
+* T. Hechler
 * Kevin M. Hepler, MD
 * Grace E. Herstine
 * Clint Heverly
@@ -124,20 +135,25 @@ York County Community Foundation <br>
 * Kristen Houser
 * Stephen R. Hughes
 * Sharon Hyde
+* Robert M. Hynosky 
 * Annette E. Inker
 * Evelyn Ishmael
 * Arlene Jarett
 * Eric Jurgensen
 * Peter Johnstone
 * Carol Jones
+* Rasesh Kapadia
 * Karen M. Kaplan & Aaron M. Shatzman
 * P. Katze
 * Jane Kauer & David Fleece
 * Paul Keller
 * Alan Kennedy
+* Diana Kerr
 * Cathy King
 * Frank Kirkwood
 * Harold G. Kohn
+* Diana Krantz
+* Kevin Kuhn
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
 * J. Lai
@@ -147,11 +163,16 @@ York County Community Foundation <br>
 * Jamie Lemon & Steve Cline
 * Stephen J. Lipnichan
 * Sue Livio
+* Anne C. Loeffler
 * David Loomis
+* Janet M. Lorenz
 * Daniel Lynch
 * Matt Lyon
+* T. Machado
 * James J. Maguire
 * Lelah Marie
+* David Martens/The York Dispatch
+* Meg Martin & Peter Cox
 * Arlene Martinez
 * William H. Maruca
 * Claudia C. McGill
@@ -168,12 +189,14 @@ York County Community Foundation <br>
 * Kenneth R. Nealon
 * M. Noel
 * Marty O’Brien
+* Robert O'Donnell
 * Ellen Ormond
 * Dennis Owens
 * Ronald Ozio
 * William Paci
 * Leanora Paniccia
 * Lydia Pecker
+* Ann Pehle
 * Amy L. Perez
 * Rick Piper
 * Laura Powers
@@ -189,6 +212,7 @@ York County Community Foundation <br>
 * Benedict X. Saia
 * C. Sarnoski
 * Robert & Judith Schachner
+* Leslie Schlessinger
 * Pat Sellers
 * Kimberley Shore
 * Barry Shutt
@@ -214,9 +238,11 @@ York County Community Foundation <br>
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
+* Raymond Weinmann Jr. 
 * Rhonda White
 * Talia Wiener
 * Richard Williams
+* A. Withrow
 * Deborah Wolfe
 * George Wolff
 * Margaret Wren
