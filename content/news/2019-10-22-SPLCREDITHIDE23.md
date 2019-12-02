@@ -11,6 +11,7 @@ description = "Lawmakers quietly tucked a new provision into a bill that would r
 dek = "Lawmakers quietly tucked a new provision into a bill that would reduce oversight and make it harder for the public to see how they spend their campaign cash."
 kicker = "Campaign Finance"
 slug = "lawmakers-quietly-tucked-a-new-provision-into-a-bill-that-would-reduce-oversight"
+aliases=["/news/pennsylvania/spl/pennsylvania-elections-campaign-finance-less-oversight-campaign-expenses-20191022.html"]
 +++
 <script defer>
 (function() {

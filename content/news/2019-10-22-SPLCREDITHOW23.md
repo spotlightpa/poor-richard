@@ -13,6 +13,9 @@ dek = "Reporters for The Caucus and Spotlight PA spent a year using a little-kno
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted of The Caucus"
 kicker = "Campaign Finance"
 slug = "how-an-investigation-uncovered-nearly-3.5m-in-dark-spending-by-pa.-lawmakers"
+aliases = [
+"/news/pennsylvania/spl/pa-election-hidden-campaign-spending-spotlight-pa-20191022.html"
+]
 +++
 
 Show me the receipts.

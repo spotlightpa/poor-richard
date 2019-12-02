@@ -10,6 +10,7 @@ description = "The leader of the Republican-controlled Senate, Joe Scarnati, sai
 dek = "The leader of the Republican-controlled Senate, Joe Scarnati, said he supports the effort."
 kicker = "Campaign Finance"
 slug = "pennsylvania-campaign-expenses-reform-bill-costa"
+aliases=["/news/pennsylvania/spl/pennsylvania-campaign-expenses-reform-bill-costa-20191025.html"]
 +++
 
 HARRISBURG — A Pennsylvania lawmaker is proposing sweeping campaign-finance reforms that would set limits on political contributions, increase transparency and ban candidates from using campaign cash for their personal benefit — issues at the heart of a yearlong investigation published this week by The Caucus and Spotlight PA.

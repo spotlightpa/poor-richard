@@ -13,6 +13,9 @@ dek = "A year-long investigation uncovered other purchases, too: foreign trips, 
 kicker = "Campaign Finance"
 featured = true
 slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
+aliases = [
+"/news/pennsylvania/spl/pa-election-campaign-spending-hidden-expenses-spotlight-pa-20191022.html"
+]
 +++
 
 <script defer>

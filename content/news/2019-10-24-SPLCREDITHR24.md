@@ -11,7 +11,7 @@ description = "Shelly Brown is one of two taxpayer-funded staffers under Senate 
 dek = ""
 kicker = "Campaign Finance"
 slug = "shelly-brown-credit-card-campaign-finance"
-aliases = ["/news/2019/10/shelly-brown-credit-card-campaign-finance-abuse/"]
+aliases = ["/news/2019/10/shelly-brown-credit-card-campaign-finance-abuse/","/news/pennsylvania/spl/pa-election-campaign-spending-scarnati-senate-aide-credit-card-spotlight-pa-20191024.html"]
 +++
 
 <script defer>

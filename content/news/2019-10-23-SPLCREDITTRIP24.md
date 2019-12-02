@@ -14,6 +14,8 @@ dek = "The senators gave differing explanations for the purpose of the trip and 
 kicker = "Campaign Finance"
 slug = "mystery-trip-to-europe-with-donors-by-pa-state-senators"
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted and Sam Janesch of The Caucus"
+aliases = ["/news/pennsylvania/spl/pa-liquor-wine-law-european-donor-trip-spotlight-pa-20191023.html"]
+
 +++
 
 <script defer>

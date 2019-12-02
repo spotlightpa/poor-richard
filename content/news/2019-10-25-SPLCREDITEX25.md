@@ -12,6 +12,7 @@ authors = [
   ]
 byline = "Brad Bumsted and Sam Janesch of The Caucus"
 kicker = "Campaign Finance"
+aliases=["/news/pennsylvania/spl/pa-election-campaign-spending-bizarre-expensive-purchases-spotlight-pa-20191025.html"]
 +++
 
 Pennsylvania’s legislators have tapped their campaign accounts for everything from the mundane to the extravagant to the outright bizarre.

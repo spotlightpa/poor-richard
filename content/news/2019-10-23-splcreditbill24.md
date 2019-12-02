@@ -11,6 +11,7 @@ description = "The proposed change to reduce oversight of their spending came ju
 dek = "The proposed change to reduce oversight of their spending came just hours after an investigation revealed millions of dollars in hidden campaign expenses."
 kicker = "Campaign Finance"
 slug = "lawmakers-abruptly-abandon-attempt-to-limit-public-access-to-campaign-expenses"
+aliases=["/news/pennsylvania/spl/pennsylvania-election-campaign-expenses-spotlight-pa-20191023.html"]
 +++
 
 <script defer>
