@@ -10,5 +10,5 @@ All content copyright Spotlight PA. Code available under the MIT license. Photos
 - Run `yarn` to setup frontend dependencies and code testing
 - Run `yarn start` and open http://localhost:1313/ to develop
 - Run `yarn format` to format code
-- Run `yarn check` to test code
-- Run `yarn build` to create a production build
+- Run `yarn test` to test code
+- Run `yarn build:prod` to create a production build
