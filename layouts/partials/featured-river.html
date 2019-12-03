@@ -5,7 +5,7 @@
 {{ $pages := $news.RegularPages | complement $featuredStory }}
 <section class="section" data-ga-action="Homepage link">
   <div class="container-hp">
-    <div class="tile is-ancestor is-vertical" data-ga-action="Homepage top feature">
+    <div class="tile is-ancestor is-vertical">
       {{ if gt (len $features) 0 }}
         {{ partial "tile-featured.html" $features }}
       {{ end }}

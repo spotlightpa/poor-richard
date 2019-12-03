@@ -1,7 +1,7 @@
 {{ $featured := index . 0 }}
 {{ $featuredParams := partialCached "page-params.html" $featured.Page $featured.RelPermalink }}
 
-<div class="tile is-parent is-top">
+<div class="tile is-parent is-top" data-ga-action="Homepage top feature">
   <div class="tile is-child">
     <div class="has-margin-bottom-thin">
       <span class="tags has-addons">
@@ -31,7 +31,7 @@
 {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
 {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
 
-<div class="tile is-bottom">
+<div class="tile is-bottom" data-ga-action="Homepage top feature">
   <div class="tile is-parent is-6 is-top-tablet">
     <article class="tile is-child">
         {{ partial "image-block.html" $imgOpts }}
@@ -64,7 +64,7 @@
         </h2>
       {{ end }}
       {{ if gt (len .) 1 }}
-        <ul class="is-size-5 related">
+        <ul class="is-size-5 related" data-ga-action="Homepage top feature related">
           {{ range after 1 . }}
             <li>
               <a href="{{ .RelPermalink }}" class="has-text-black hover-underline">
