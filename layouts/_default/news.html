@@ -14,7 +14,7 @@
         {{ if .Paginator.HasPrev }}
           <span class="level-item">
             <a
-              class="button is-primary is-outlined"
+              class="button is-primary is-outlined has-text-weight-semibold"
               href="{{ .Paginator.Prev.URL }}"
             >← Newer</a>
           </span>
@@ -22,7 +22,7 @@
         {{ if .Paginator.HasNext }}
           <span class="level-item">
             <a
-              class="button is-primary is-outlined"
+              class="button is-primary is-outlined has-text-weight-semibold"
               href="{{ .Paginator.Next.URL }}"
             >Older →</a>
           </span>
