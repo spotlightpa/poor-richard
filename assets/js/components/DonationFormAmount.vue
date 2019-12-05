@@ -143,8 +143,8 @@ export default {
 
       <p class="is-size-3 is-size-4-mobile">
         <strong
-          >For a limited time only, your tax-deductible donation to Spotlight PA
-          will be tripled,</strong
+          >For a limited time only, your tax-deductible donation to support
+          Spotlight PA can be tripled,</strong
         >
         thanks to NewsMatch and the Wyncote Foundation. Let’s hold the powerful
         to account.
