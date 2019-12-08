@@ -1,4 +1,5 @@
 +++
+published = 2019-12-08T01:11:44.471Z
 title = "Frequently asked questions"
 description = "Frequently asked questions about Spotlight PA"
 url = "/about/faq/"
@@ -81,7 +82,7 @@ url = "/about/faq/"
 
 **Q: Who funds Spotlight PA?**
 
-**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; Good Words Foundation; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters here.
+**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; Good Words Foundation; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters [here](/support/). 
 
 **Q: Is Spotlight PA a 501(c)(3) nonprofit organization?**
 
