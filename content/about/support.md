@@ -41,6 +41,7 @@ York County Community Foundation <br>
 * Jodi Abel
 * Nell McCormack Abom
 * Richard Abraham
+* Elizabeth Ann Allen
 * Gail Alu
 * Helen Andrews
 * Oscar Armas-Luy
@@ -50,10 +51,12 @@ York County Community Foundation <br>
 * David Auel
 * Kathleen Baker
 * Whitney Baldwin
+* John William Ball
 * Chris Bastress
 * Christopher Baxter
 * Mark Bazrod
 * Barry Bedrick
+* Dorothea Behr
 * Ron Beitler
 * Sigal Ben
 * L.J. Bernard
@@ -63,6 +66,7 @@ York County Community Foundation <br>
 * Jeffrey L. Braff
 * D. Brooks
 * Gay Brown
+* James Brown
 * Lisa Budwig
 * T. Buehner
 * J.L. Byrne & C.M. Hersh
@@ -80,6 +84,7 @@ York County Community Foundation <br>
 * Laurel Costa
 * Brett Cott
 * Chris Coyle
+* Lauren Cristella
 * Karen Crosby
 * Julie Daye
 * Connie & Terry Dellmuth
@@ -106,12 +111,16 @@ York County Community Foundation <br>
 * Thomas Flocco
 * Barbara Forbes-Rhouni
 * Leroy Forney
+* Susannah Frame
+* Kimberly Freeman
+* Gary French
 * Ryan Froman
 * Isla Fruchter
 * Greg Fullam
 * Anthony Gabriel
 * John Gaynard
 * Barbara Geistwhite
+* Nicholas Giordano
 * Stephen M. Glynn
 * Denise Gmerek
 * Tamara Goldman
@@ -138,10 +147,12 @@ York County Community Foundation <br>
 * Robert M. Hynosky 
 * Annette E. Inker
 * Evelyn Ishmael
+* Stephen Ivey
 * Arlene Jarett
 * Eric Jurgensen
 * Peter Johnstone
 * Carol Jones
+* Denise Kalp
 * Rasesh Kapadia
 * Karen M. Kaplan & Aaron M. Shatzman
 * P. Katze
@@ -153,6 +164,7 @@ York County Community Foundation <br>
 * Frank Kirkwood
 * Harold G. Kohn
 * Diana Krantz
+* Ian Krantz
 * Kevin Kuhn
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
@@ -160,6 +172,7 @@ York County Community Foundation <br>
 * John Lambert
 * B. Lauridsen & G. Harke
 * Lora Lavin
+* Patricia Leach 
 * Jamie Lemon & Steve Cline
 * Stephen J. Lipnichan
 * Sue Livio
@@ -170,6 +183,7 @@ York County Community Foundation <br>
 * Matt Lyon
 * T. Machado
 * James J. Maguire
+* Ed Mahon
 * Lelah Marie
 * David Martens/The York Dispatch
 * Meg Martin & Peter Cox
@@ -182,11 +196,13 @@ York County Community Foundation <br>
 * Jules J. Mermelstein
 * Myles Miller
 * Larry Miller
+* Jennifer & Dave Mittereder
 * Lee Mooney
 * Ryan Morden
 * P.F. Moyer
 * Toni Moyer
 * Kenneth R. Nealon
+* James Neff
 * M. Noel
 * Marty O’Brien
 * Robert O'Donnell
@@ -194,17 +210,22 @@ York County Community Foundation <br>
 * Dennis Owens
 * Ronald Ozio
 * William Paci
+* David & Roxanne Palmer 
 * Leanora Paniccia
 * Lydia Pecker
 * Ann Pehle
 * Amy L. Perez
+* J. Persinger
 * Rick Piper
 * Laura Powers
+* Noah Price
 * Mark Raymond
 * John Rhoades
 * Ralph Riedel
 * Eric Riese
 * Edward T. Rodgers
+* Mary Catherine Roper
+* Tina Rosenberg
 * David R. Ross
 * Robert Ruff Jr.
 * Edwin Rund
@@ -213,8 +234,10 @@ York County Community Foundation <br>
 * C. Sarnoski
 * Robert & Judith Schachner
 * Leslie Schlessinger
+* Jennifer Schnore
 * Pat Sellers
 * Kimberley Shore
+* Darrin Silbaugh
 * Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
@@ -226,15 +249,18 @@ York County Community Foundation <br>
 * Harriet Stone
 * Thomas Stone
 * Nicole Stranko
+* Sean P. Sullivan
 * Freda Tepfer
 * R. Thomas
 * Irene Tierney
 * M. Tillger
+* Charles Topper
 * Karen Hale Toth
 * Margaret Turcich
 * Walter C. Uhler
 * Joseph C. Vignola
 * Fred Vodde
+* Russ Walker
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
