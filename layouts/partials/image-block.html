@@ -23,29 +23,36 @@
 
   <figure class="{{ .figClass }}">
     {{- if .link -}}
-      <a href="{{ .link }}">
+      <a
+        class="image {{ $imgClass }} has-background-grey-lighter"
+        href="{{ .link }}"
+      >
+    {{- else -}}
+      <div class="image {{ $imgClass }} has-background-grey-lighter">
     {{- end -}}
-    <picture class="image {{ $imgClass }} has-background-grey-lighter">
-      <source
-        type="image/webp"
-        srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-        {{ if .sizeHint }}
-          sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
-        {{ end }}
-      >
-      <img
-        alt="{{ .description }}"
-        title="{{ .description }}"
-        src="{{ $imgSmallSrc }}"
-        srcset="{{ $srcset }}"
-        {{ if .sizeHint }}
-          sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
-        {{ end }}
-        loading="lazy"
-      >
-    </picture>
+      <picture class="has-ratio">
+        <source
+          type="image/webp"
+          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+          {{ if .sizeHint }}
+            sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+          {{ end }}
+        >
+        <img
+          alt="{{ .description }}"
+          title="{{ .description }}"
+          src="{{ $imgSmallSrc }}"
+          srcset="{{ $srcset }}"
+          {{ if .sizeHint }}
+            sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+          {{ end }}
+          loading="lazy"
+        >
+      </picture>
     {{- if .link -}}
       </a>
+    {{- else -}}
+      </div>
     {{- end -}}
     {{ with $credit }}
       <figcaption class="is-clearfix is-size-7 is-uppercase has-text-grey-light">
