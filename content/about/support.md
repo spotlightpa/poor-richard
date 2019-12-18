@@ -18,21 +18,7 @@ To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donat
 
 ## Major Donors
 
-Laura and John Arnold <br>
-The Foundation for Enhancing Communities <br>
-The Erie Community Foundation <br>
-Good Words Foundation <br>
-The Heinz Endowments <br>
-Henry L. Hillman Foundation <br>
-Lancaster Community Foundation <br>
-H.F. “Gerry” Lenfest <br>
-The Lenfest Institute for Journalism <br>
-The Philadelphia Foundation <br>
-The Lois Tack Thompson Fund of The Pittsburgh Foundation <br>
-Poor Richard’s Charitable Trust <br>
-The Steinman Foundation <br>
-Wyncote Foundation <br>
-York County Community Foundation <br>
+Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Erie Community Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Lancaster Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Poor Richard’s Charitable Trust <br> The Steinman Foundation <br> Wyncote Foundation <br> York County Community Foundation <br>
 
 ## Founding Donors
 
@@ -76,8 +62,10 @@ York County Community Foundation <br>
 * Nicholas Carosella
 * Ashleigh Graf Casassa
 * Marguerite Chandler
+* Patrick Christmas
 * Frank Cicchiello
 * Dr. Dane S. Claussen
+* Jeff Cogshall
 * John & Joy Burt Conti
 * John M. Corcoran Esq.
 * J. Cordingley
@@ -93,6 +81,7 @@ York County Community Foundation <br>
 * Barry DeSantis
 * Earl Drumheiser
 * Stephen Duncan
+* Edwin Dunckley
 * E. Eckerle
 * Liam Elder-Connors
 * Dianne Elderkin
@@ -129,6 +118,7 @@ York County Community Foundation <br>
 * Brent Groce
 * Mark Gudalis
 * Frank Hadden
+* Beverly Hahn 
 * Robert Haines
 * David Hakes
 * B.A. Hamilton
@@ -143,6 +133,7 @@ York County Community Foundation <br>
 * Avram Hornik
 * Kristen Houser
 * Stephen R. Hughes
+* Irv Hurwitz
 * Sharon Hyde
 * Robert M. Hynosky 
 * Annette E. Inker
@@ -163,6 +154,7 @@ York County Community Foundation <br>
 * Cathy King
 * Frank Kirkwood
 * Harold G. Kohn
+* Nina B. Korsh
 * Diana Krantz
 * Ian Krantz
 * Kevin Kuhn
@@ -199,6 +191,7 @@ York County Community Foundation <br>
 * Jennifer & Dave Mittereder
 * Lee Mooney
 * Ryan Morden
+* Bruce Morris & Colleen Gallagher
 * P.F. Moyer
 * Toni Moyer
 * Kenneth R. Nealon
@@ -219,6 +212,7 @@ York County Community Foundation <br>
 * Rick Piper
 * Laura Powers
 * Noah Price
+* Theresa M. Rang
 * Mark Raymond
 * John Rhoades
 * Ralph Riedel
@@ -231,11 +225,13 @@ York County Community Foundation <br>
 * Edwin Rund
 * Gary Ryan
 * Benedict X. Saia
+* Nicholas Sanders
 * C. Sarnoski
 * Robert & Judith Schachner
 * Leslie Schlessinger
 * Jennifer Schnore
 * Pat Sellers
+* Milton Shapiro
 * Kimberley Shore
 * Darrin Silbaugh
 * Barry Shutt
@@ -246,6 +242,7 @@ York County Community Foundation <br>
 * Anthony Spisto
 * Christopher Spratt
 * John Stenger
+* Bob Stewart
 * Harriet Stone
 * Thomas Stone
 * Nicole Stranko
@@ -256,6 +253,7 @@ York County Community Foundation <br>
 * M. Tillger
 * Charles Topper
 * Karen Hale Toth
+* Debbie Trudeau
 * Margaret Turcich
 * Walter C. Uhler
 * Joseph C. Vignola
@@ -277,5 +275,4 @@ York County Community Foundation <br>
 * Jerry Young
 * Sherley Young
 * Matt Zencey
-* Gerald Zubkoff
-  {{</supporters-list>}}
+* Gerald Zubkoff {{</supporters-list>}}
