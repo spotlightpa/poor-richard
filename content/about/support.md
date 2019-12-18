@@ -103,6 +103,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Susannah Frame
 * Kimberly Freeman
 * Gary French
+* Jim Friedlich & Melissa Stern
 * Ryan Froman
 * Isla Fruchter
 * Greg Fullam
