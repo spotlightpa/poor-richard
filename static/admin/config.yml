@@ -10,7 +10,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: master
+  branch: cj/cms-update
 
 yaml-definitions: &page-fields
   - label: Draft
@@ -148,12 +148,17 @@ yaml-definitions: &page-fields
     name: type
     widget: hidden
     required: false
+  - label: section
+    name: section
+    widget: hidden
+    required: false
 
 collections:
   - label: Articles
     label_singular: Article
     name: news
     folder: content/news
+    slug: "{{month}}-{{day}}-{{slug}}"
     format: toml-frontmatter
     extension: md
     create: true
@@ -164,6 +169,7 @@ collections:
   - label: Root pages
     name: content
     folder: content
+    filter: { field: "section", value: "root" }
     format: toml-frontmatter
     extension: md
     create: true

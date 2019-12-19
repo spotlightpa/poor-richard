@@ -4,6 +4,7 @@ title = "Sign up for Spotlight PA’s newsletter"
 description = "Sign up for The Investigator, a free weekly newsletter from Spotlight PA"
 title-tag = "Newsletters"
 linktitle = "Newsletters"
+section = "root"
 +++
 Sign up for *The Investigator*, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, plus a roundup of the best journalism from across Pennsylvania and some fun along the way.
 

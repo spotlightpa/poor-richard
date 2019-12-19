@@ -1,6 +1,7 @@
 +++
 title = "Send a tip"
 description = "Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals."
+section = "root"
 +++
 Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people).
 
