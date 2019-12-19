@@ -4,6 +4,7 @@ type = "warning-page"
 url = "/donate/sorry/"
 no-index = true
 modal-exclude = true
+section = "root"
 +++
 
 We're sorry, your donation to Spotlight PA could not be processed at this time. Please [try again][] or contact [joanna@spotlightpa.org][] if you have continue to have problems.

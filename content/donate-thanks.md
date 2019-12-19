@@ -10,6 +10,7 @@ suppress-title = true
 modal-exclude = true
 no-index = true
 url = "/donate/thanks/"
+section = "root"
 +++
 
 # Thank you for your generous donation
