@@ -78,7 +78,6 @@ export function addModal() {
 
   let now = new Date();
   let showModalNewsletter = true;
-  let showModalDonate = false;
 
   let lastVist = loadDate(LAST_VISIT_KEY);
   let lastSession = loadDate(LAST_VISIT_KEY, { useSession: true });
@@ -86,6 +85,7 @@ export function addModal() {
   // It's a "new" session if there is a last visit but the session is new
   // and it's been more than an hour since the last visit
   // (not just opening articles new tabs)
+  // eslint-disable-next-line no-unused-vars
   let newSession = lastVist && !lastSession && now - lastVist > 1000 * 60 * 60;
 
   storeDate(LAST_VISIT_KEY, now);
@@ -131,32 +131,6 @@ export function addModal() {
       window.setTimeout(() => {
         storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
         openModal("#modal-newsletter", "newsletter");
-      }, delay);
-      return;
-    }
-
-    // Otherwise, if it's a new session
-    if (newSession) {
-      showModalDonate = true;
-    }
-    // And we haven't seen the donate modal recently...
-    if (loadDate(SAW_DONATE_MODAL_KEY)) {
-      showModalDonate = false;
-    }
-
-    // And it's not excluded from the page
-    if (document.body.dataset.modalExclude) {
-      showModalDonate = false;
-    }
-    // Or we're just testing...
-    if (onTestDonatePage) {
-      showModalDonate = true;
-    }
-    // Then show it...
-    if (showModalDonate) {
-      window.setTimeout(() => {
-        storeDate(SAW_DONATE_MODAL_KEY, now);
-        openModal("#modal-donate", "donate");
       }, delay);
       return;
     }
