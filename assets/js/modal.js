@@ -48,6 +48,13 @@ export function openModal(qs, modalType) {
         eventAction: `Submit ${modalType}`,
         transport: "beacon"
       });
+      if (modalType === "newsletter") {
+        sendGAEvent({
+          eventCategory: "Newsletter signup",
+          eventAction: "From modal CTA",
+          transport: "beacon"
+        });
+      }
     })
   ];
 
