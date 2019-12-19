@@ -5,11 +5,13 @@ description = "Sign up for The Investigator, a free weekly newsletter from Spotl
 title-tag = "Newsletters"
 linktitle = "Newsletters"
 +++
-Sign up for _The Investigator_, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, plus a roundup of the best journalism from across Pennsylvania and some fun along the way.
+Sign up for *The Investigator*, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, plus a roundup of the best journalism from across Pennsylvania and some fun along the way.
 
 {{<newsletter-form>}}
 
 ## Archives
+
+* [Thursday, Dec. 19](http://eepurl.com/gM8RFb)
 * [Thursday, Dec. 12](http://eepurl.com/gMvUTH)
 * [Thursday, Dec. 5](http://eepurl.com/gK5dBH)
 * [Thursday, Nov. 28](http://eepurl.com/gKDpZr)
