@@ -37,16 +37,17 @@
             </div>
           </div>
         </div>
-        {{ range $page := after 3 $pages | first 5 }}
+        {{ range $page := after 3 $pages | first 6 }}
           {{ partial "tile-horiz.html" $page }}
         {{ end }}
       {{ end }}
-      {{ if gt (len $pages) 8 }}
+      {{ if gt (len $pages) 9 }}
         <div class="tile">
           <div class="tile is-parent">
             <div class="tile is-child has-text-centered">
+              <!-- Assume 10 stories per page -->
               <a
-                href="/news/"
+                href="/news/page/2/"
                 class="button is-primary is-medium is-uppercase has-text-weight-semibold"
               >Read More</a>
             </div>
