@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/almanack/"
-to = "https://spotlightpa-almanack.netlify.com"
+to = "https://almanack.data.spotlightpa.org"
 code = 302
 
 [[redirects]]
