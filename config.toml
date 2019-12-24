@@ -8,7 +8,10 @@ rssLimit = 50
 googleAnalytics = "UA-141126362-1"
 
 [markup]
-defaultMarkdownHandler = "blackfriday"
+  defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [privacy.googleAnalytics]
     anonymizeIP = true

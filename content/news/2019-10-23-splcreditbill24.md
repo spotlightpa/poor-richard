@@ -39,7 +39,7 @@ But on Wednesday, House Republicans bucked their Senate counterparts and said th
 
 Mike Straub, a spokesman for the House Republican caucus, said several members raised concerns about the language in the provision, including the fact that it was tacked onto a bill that dealt with voting reforms, rather than one dealing with the state’s campaign finance laws.
 
-**_» READ MORE:_** [**_Lavish dinners, sports tickets, and nearly $3.5 million other expenses by Pa. lawmakers you’ve never seen_**](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/)
+***» READ MORE:*** [***Lavish dinners, sports tickets, and nearly $3.5 million other expenses by Pa. lawmakers you’ve never seen***](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/)
 
 “The parties involved in negotiating the bill agreed,” said Straub, adding that the provision, at the moment, is not being added to any other legislation.
 
@@ -55,7 +55,7 @@ In lieu of the department’s oversight, the public would have been forced to su
 
 But House Republicans were unwilling to go along with the change.
 
-**» _DONATE NOW and_** [**_support future investigations by Spotlight PA_**](https://www.spotlightpa.org/donate) **_that hold the powerful in Pennsylvania to account._** [**_Become a Founding Donor_**](https://www.spotlightpa.org/donate) **_and support the truth._**
+<strong>» <em>DONATE NOW and</em></strong> <a href="https://www.spotlightpa.org/donate"><strong><em>support future investigations by Spotlight PA</em></strong></a> <strong><em>that hold the powerful in Pennsylvania to account.</em></strong> <a href="https://www.spotlightpa.org/donate"><strong><em>Become a Founding Donor</em></strong></a> <strong><em>and support the truth.</em></strong>
 
 Legislative leadership in both parties accounted for much of the hidden spending uncovered as part of the investigation by the news organizations. The leader of the Senate, Joe Scarnati (R., Jefferson), topped the list. When reporters sought access to more detailed spending records, his campaign took months to respond and attempted to charge more than $1,800.
 

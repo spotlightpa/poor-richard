@@ -13,7 +13,7 @@ kicker = "Health"
 slug = "share-your-addiction-treatment-story"
 +++
 
-_**[Spotlight PA](https://www.spotlightpa.org/)** is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters/)._
+_**[Spotlight PA](https://www.spotlightpa.org/)**_ _is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters/)._
 
 In the past two years, more than $150 million has poured into Pennsylvania to combat the opioid crisis, [nearly doubling the rate of per capita spending](https://bipartisanpolicy.org/wp-content/uploads/2019/03/Tracking-Federal-Funding-to-Combat-the-Opioid-Crisis.pdf). Most of that money has come from the federal government, which has given the Commonwealth [the second most of any state](https://www.hhs.gov/about/news/2019/09/04/state-opioid-response-grants-by-state.html), second to California. Other money has come [from philanthropic grants](https://whyy.org/articles/bloomberg-philanthropies-gives-pennsylvania-10-million-to-reduce-overdose-deaths/).
 

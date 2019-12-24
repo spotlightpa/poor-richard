@@ -36,7 +36,7 @@ None of those items were included in publicly available campaign finance reports
 
 But hours after the investigation debuted, lawmakers quietly tucked a new provision into a lengthy voting reform bill that could make it even harder for the public to access those expenses. The change would remove oversight from the Department of State and leave it up to politicians to respond to requests.
 
-_**» DONATE NOW and**_ [_**support future investigations that hold the powerful in Pennsylvania to account**_](https://www.spotlightpa.org/donate)_**.**_ [_**Become a Founding Donor now**_](https://www.spotlightpa.org/donate) _**and support our team of investigative journalists.**_
+***» DONATE NOW and*** [***support future investigations that hold the powerful in Pennsylvania to account***](https://www.spotlightpa.org/donate)***.*** [***Become a Founding Donor now***](https://www.spotlightpa.org/donate) ***and support our team of investigative journalists.***
 
 In lieu of the department’s oversight, the public would be forced to sue in court if campaigns refuse a request, a potentially expensive and lengthy process. Campaigns could also deny requestors access if they make multiple requests for the same records and “the repeated requests have placed an unreasonable burden,” according to language inserted into the bill.
 
@@ -50,7 +50,7 @@ The head of the Republican-controlled Senate, Joe Scarnati, led all lawmakers in
 
 “This language had several authors,” Crompton said. “The primary author wasn’t Sen. Scarnati.”
 
-_**» SIGN UP for**_ [_**Spotlight PA’s free weekly newsletter**_](https://www.spotlightpa.org/newsletters)_**, The Investigator, and receive exclusive, behind-the-scenes looks at our work, plus a roundup of only the best journalism across Pa.**_
+{{<newsletter-inline>}}
 
 Scarnati’s campaign took six months to provide records requested as part of the investigation, far more than the 30 days it’s supposed to take under current law. Also, the campaign attempted to charge the news organizations more than $1,800 to reimburse the campaign’s accountant for the time she spent assembling the records.
 

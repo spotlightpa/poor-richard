@@ -42,7 +42,7 @@ The cost of the trip, totaling at least $15,300, was uncovered as part of a year
 
 The investigation found nearly $3.5 million in expenses from 2016 through 2018 that could not be traced to the ultimate recipient based on publicly filed campaign finance reports. They included [overseas and cross-country travel, sports tickets, limos, dinners, cuff links and country club memberships.](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/)
 
-**_» READ MORE: _**[**_Lavish dinners, sports tickets, and nearly $3.5 million other expenses by Pa. lawmakers you’ve never seen_**](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/)
+<strong><em>» READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/"><strong><em>Lavish dinners, sports tickets, and nearly $3.5 million other expenses by Pa. lawmakers you’ve never seen</em></strong></a>
 
 Among the hidden spending, however, the European trip stood out.
 
@@ -62,7 +62,7 @@ McIlhinney — then the chairman of the Senate Law and Justice Committee, which 
 
 “After I made the changes, I went and pursued some of the larger national corporations that we were dealing with… The wine people, the liquor people, the beer guys,” he said. “We were in pursuit of high-end donors.”
 
-**» _SIGN UP for_** [**_Spotlight PA’s free weekly newsletter, The Investigator,_**](https://www.spotlightpa.org/)**_ and receive exclusive, behind-the-scenes looks at our work, plus a roundup of only the best journalism across Pa._**
+{{<newsletter-inline>}}
 
 Asked if he thought it was a conflict to change the law and then fundraise off of it, he said, “That’s the million-dollar question.”
 
