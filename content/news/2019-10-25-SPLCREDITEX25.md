@@ -40,7 +40,7 @@ Open bar and hors d’oeuvres for purchased for $3,797 by Alloway’s campaign f
 
 125 hats purchased for $3,125 by Senate Minority Leader Jay Costa (D., Allegheny) over back-to-back Stanley Cup years in 2016 and 2017. Costa’s campaign said the Penguins had just won the Stanley Cup and gifting the team hats to senators and staff was a “measure of appreciation and good will.”
 
-<i><b>»</b></i> <i><b>SIGN UP for</b></i> <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA’s free weekly newsletter, The Investigator,</b></i></a><i><b> and receive exclusive, behind-the-scenes looks at our work, plus a roundup of only the best journalism across Pa.</b></i>
+{{<newsletter-inline>}}
 
 ## Walking shoes
 
