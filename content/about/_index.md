@@ -6,7 +6,6 @@ description = "Spotlight PA: Find Pennsylvania news and investigations about sta
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 type = "about-page"
-extra-footer = "Title image courtesy of Stephanie Strasburg / The Post-Gazette."
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
@@ -33,3 +32,5 @@ Our reporters serve as independent watchdogs unafraid to dig deep, fight for the
 Spotlight PA is a nonpartisan, grant-funded newsroom supported by [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org) and more than a dozen other community foundations and individuals. We continue to grow our support while ensuring our newsroom and journalists retain total independence and editorial control, free to pursue the stories that matter most to Pennsylvanians.
 
 {{<right-link href="/support/">}}Read our transparency statement{{</right-link>}}
+
+<small><i>Capitol image courtesy of Stephanie Strasburg / The Post-Gazette.</i></small>
