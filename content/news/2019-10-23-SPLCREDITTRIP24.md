@@ -10,7 +10,7 @@ authors = [
 "Sam Janesch, The Caucus"]
 title = "Mystery trip to Europe with ‘donors’ by Pa. state senators followed expansion of wine law"
 description = "The senators gave differing explanations for the purpose of the trip and declined to disclose who joined them or exactly where they went."
-dek = "The senators gave differing explanations for the purpose of the trip and declined to disclose who joined them or exactly where they went."
+blurb = "The senators gave differing explanations for the purpose of the trip and declined to disclose who joined them or exactly where they went."
 kicker = "Campaign Finance"
 slug = "mystery-trip-to-europe-with-donors-by-pa-state-senators"
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted and Sam Janesch of The Caucus"

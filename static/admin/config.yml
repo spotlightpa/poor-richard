@@ -63,7 +63,7 @@ yaml-definitions: &page-fields
     hint: "Title as it appears at top of page"
     widget: string
   - label: Subhed
-    name: subtitle
+    name: subhed
     widget: string
     hint: "Appears below hed at top of page; AKA dek"
     required: false
@@ -73,8 +73,8 @@ yaml-definitions: &page-fields
     widget: string
     required: false
   - label: Blurb
-    name: dek
-    hint: "Summary to appear in article rivers"
+    name: blurb
+    hint: "Short summary to appear in article rivers"
     widget: string
     required: false
   - label: Kicker
