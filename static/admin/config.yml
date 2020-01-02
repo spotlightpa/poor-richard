@@ -126,11 +126,6 @@ yaml-definitions: &page-fields
     name: slug
     widget: string
     required: false
-  - label: Footer text
-    name: extra-footer
-    hint: "Extra text to place after copyright message of page"
-    widget: string
-    required: false
   - label: "Override URL"
     name: url
     widget: string
