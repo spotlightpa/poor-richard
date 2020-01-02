@@ -44,9 +44,9 @@
           {{ $featured.LinkTitle }}
         </a>
       </h1>
-      {{ if $featured.Params.subtitle }}
+      {{ if $featured.Params.subhed }}
         <h2 class="subtitle is-5 is-size-4-mobile is-size-4-widescreen has-margin-top-negative-medium">
-          {{ $featured.Params.subtitle }}
+          {{ $featured.Params.subhed }}
         </h2>
       {{ end }}
       {{ if $featuredParams.byline }}
@@ -58,9 +58,9 @@
           </a>
         </h3>
       {{ end }}
-      {{ if $featuredParams.dek }}
+      {{ if $featuredParams.blurb }}
         <h2 class="subtitle is-5 is-size-4-widescreen has-margin-top-negative-medium">
-          {{ $featuredParams.dek }}
+          {{ $featuredParams.blurb }}
         </h2>
       {{ end }}
       {{ if gt (len .) 1 }}

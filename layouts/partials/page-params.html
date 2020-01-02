@@ -8,11 +8,11 @@
 
 {{ $kicker := .Param "kicker" }}
 
-{{ $dek := .Param "dek" | default "" }}
+{{ $blurb := .Param "blurb" | default "" }}
 
 {{ $showTitle := .Param "suppress-title" | not }}
 
-{{ $params := dict "byline" $byline "kicker" $kicker "dek" $dek "showTitle" $showTitle }}
+{{ $params := dict "byline" $byline "kicker" $kicker "blurb" $blurb "showTitle" $showTitle }}
 
 {{ with .PublishDate }}
   {{ $pub := partial "date-apstyle.html" .Local }}
