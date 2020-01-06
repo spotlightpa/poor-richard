@@ -46,3 +46,5 @@
   {{ $iconShrunk := $icon.Fit $size }}
   <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" sizes="{{ $size }}">
 {{ end }}
+{{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg"|fingerprint }}
+<link rel="mask-icon" href="{{ $logo.Permalink }}" color="black">
