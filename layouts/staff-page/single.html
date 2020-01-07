@@ -4,7 +4,7 @@
     data-ga-action="Staff page"
   >
     <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range sort .Site.Data.authors "weight" }}
+      {{ range sort .Site.Data.authors "lastName" }}
         {{ $nameID := urlize .name }}
         {{ $articlesListLink := "" }}
         {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}

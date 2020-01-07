@@ -207,8 +207,14 @@ collections:
     editor:
       preview: false
     fields:
-      - label: Name
+      - label: Full name
         name: name
+        widget: string
+      - label: First name
+        name: firstName
+        widget: string
+      - label: Family name
+        name: familyName
         widget: string
       - label: Title
         name: title
@@ -224,12 +230,6 @@ collections:
       - label: Content
         name: content
         widget: markdown
-      - label: Order
-        name: weight
-        hint: "Order to put on staff page"
-        widget: number
-        valueType: int
-        required: true
       - label: Active
         name: active
         hint: "Is this author still working for Spotlight PA?"
