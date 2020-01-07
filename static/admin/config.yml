@@ -158,6 +158,7 @@ collections:
     extension: md
     create: true
     preview_path: "/news/{{year}}/{{slug}}/"
+    summary: "{{title}} ({{published}}) {{fields.slug}}"
     editor:
       preview: false
     fields: *page-fields
@@ -202,12 +203,13 @@ collections:
     format: toml
     extension: toml
     create: true
+    slug: "{{name}}"
     preview_path: /about/staff/
     identity_field: name
     editor:
       preview: false
     fields:
-      - label: Full name
+      - label: Full display name
         name: name
         widget: string
       - label: First name
