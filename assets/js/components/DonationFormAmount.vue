@@ -228,6 +228,9 @@ export default {
       ways to support Spotlight PA, please contact
       <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a>.
     </p>
+    <p>
+      All donations are made to the <a href="https://www.lenfestinstitute.org/">Lenfest Institute for Journalism</a>, a nonprofit tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code, and directed to Spotlight PA’s important investigative work.
+    </p>
 
     <BulmaModal :value="showModal" @input="noThanks">
       <BulmaMessage
