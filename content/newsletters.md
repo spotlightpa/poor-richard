@@ -10,8 +10,11 @@ Sign up for *The Investigator*, Spotlight PA's free weekly newsletter with exclu
 
 {{<newsletter-form>}}
 
+*The Investigator* comes out every Thursday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts and check your spam folder.
+
 ## Archives
 
+* [Thursday, Jan. 9, 2020](http://eepurl.com/gPd5PP)
 * [Thursday, Jan. 2, 2020](http://eepurl.com/gM-A_9)
 * [Thursday, Dec. 26, 2019](http://eepurl.com/gM-At5)
 * [Thursday, Dec. 19, 2019](http://eepurl.com/gM8RFb)
