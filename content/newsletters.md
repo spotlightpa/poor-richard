@@ -8,9 +8,9 @@ section = "root"
 +++
 Sign up for *The Investigator*, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, plus a roundup of the best journalism from across Pennsylvania and some fun along the way.
 
-{{<newsletter-form>}}
+*The Investigator* comes out every Thursday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts, check your junk mail folder and mark it as not junk.
 
-*The Investigator* comes out every Thursday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts and check your spam folder.
+{{<newsletter-form>}}
 
 ## Archives
 
