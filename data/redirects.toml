@@ -9,6 +9,11 @@ to = "/js/tracker.js"
 code = 200
 
 [[redirects]]
+from = "/embed.js"
+to = "/js/embed-host.js"
+code = 200
+
+[[redirects]]
 from = "/imgproxy/*"
 to = "https://images.data.spotlightpa.org/:splat"
 code = 200

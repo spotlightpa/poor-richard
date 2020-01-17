@@ -1,0 +1,24 @@
+{{ define "nav" }} <!-- --> {{ end }}
+{{ define "footer" }} <!-- --> {{ end }}
+{{ define "modal" }} <!-- --> {{ end }}
+
+{{ define "extra-head" }}
+  {{ if .Site.IsServer }}
+    <script src="http://localhost:1234/embed-frame.js" defer></script>
+  {{ else }}
+    {{ $js := resources.Get "js/embed-frame.js" | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <div
+    class="section is-top is-bottom"
+    data-ga-action="Embed content"
+  >
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+{{end }}
+

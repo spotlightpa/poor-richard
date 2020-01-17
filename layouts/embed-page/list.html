@@ -1,0 +1,21 @@
+{{ define "extra-main" }}
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-action="Embed list"
+  >
+    <div class="column is-three-fifths">
+      {{ range $page := .Pages }}
+      <div class="box has-background-light">
+        <h2 class="title is-spaced">{{ .Title }}</h2>
+        <h3 class="subtitle is-4">Code:</h3>
+        <pre><code class="code">
+            {{- partial "embed-code.html" . | htmlEscape | safeHTML -}}
+        </code></pre>
+
+        <h3 class="subtitle is-4">Example:</h3>
+        {{ partial "embed-code.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
