@@ -21,13 +21,14 @@
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.6.2",
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@newswire/frames": "^0.3.1",
     "@vue/component-compiler-utils": "^3.0.0",
     "@zeit/git-hooks": "^0.1.4",
     "autoprefixer": "^9.5.1",
