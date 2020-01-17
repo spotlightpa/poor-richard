@@ -4,7 +4,7 @@ import DonationFormAmount from "./DonationFormAmount.vue";
 import DonationFormInfo from "./DonationFormInfo.vue";
 import DonationFormPayment from "./DonationFormPayment.vue";
 
-import { DonationFormData } from "../form-data.js";
+import { DonationFormData } from "../utils/form-data.js";
 
 export default {
   components: {

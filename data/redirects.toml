@@ -5,7 +5,7 @@ code = 302
 
 [[redirects]]
 from = "/tracker.js"
-to = "/js/main-tracker.js"
+to = "/js/tracker.js"
 code = 200
 
 [[redirects]]

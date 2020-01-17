@@ -1,5 +1,5 @@
 <script>
-import { codeUSA, countryOptions, stateOptions } from "../form-data.js";
+import { codeUSA, countryOptions, stateOptions } from "../utils/form-data.js";
 
 import DonationFormMixin from "./DonationFormMixin.js";
 
