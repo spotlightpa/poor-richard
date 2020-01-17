@@ -1,0 +1,6 @@
+{{ $src := "embed.js"|absURL }}
+{{- if .Site.IsServer -}}
+  {{ $src = "http://localhost:1234/embed-host.js" }}
+{{- end -}}
+<script src="{{ $src }}" async></script>
+<div data-spl-embed-version="1" data-spl-src="{{ .Permalink }}"></div>
