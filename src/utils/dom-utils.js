@@ -96,3 +96,11 @@ export function polyfillClosest() {
     };
   }
 }
+
+export function onLoad(cb) {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", cb);
+  } else {
+    cb();
+  }
+}
