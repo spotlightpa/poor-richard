@@ -1,8 +1,8 @@
 <script>
 import DonationFormMixin from "./DonationFormMixin.js";
 
-import { hasValidLuhn } from "../luhn.js";
-import { monthOptions } from "../form-data.js";
+import { hasValidLuhn } from "../utils/luhn.js";
+import { monthOptions } from "../utils/form-data.js";
 
 function ccValidator(val) {
   return hasValidLuhn(val) ? "" : "Please enter a valid credit card number";

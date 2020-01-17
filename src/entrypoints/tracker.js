@@ -1,4 +1,4 @@
-import { callGA, ensureGA } from "./google-analytics.js";
+import { callGA, ensureGA } from "../utils/google-analytics.js";
 
 (() => {
   let dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
