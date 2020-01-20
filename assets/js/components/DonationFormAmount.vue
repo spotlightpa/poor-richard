@@ -141,8 +141,8 @@ export default {
         <p>
           Due to planned system maintenance, we will not be able to receive
           donations
-          <strong>February 16, 2020 from 4:00 AM to 6:00 AM ET</strong>.
-          Please wait until after this planned maintenance period to make your
+          <strong>February 16, 2020 from 4:00 AM to 6:00 AM ET</strong>. Please
+          wait until after this planned maintenance period to make your
           donation. Thank you for your patience and your support of Spotlight
           PA.
         </p>
