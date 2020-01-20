@@ -1,12 +1,18 @@
-</div>
-
-{{ $txt := .Inner }}
 
 <div class="box">
   <h2 class="title is-6 has-text-danger has-text-left is-uppercase">Tips</h2>
-  <div class="block">
-    {{ $txt }}
+  <div class="block" id="text-block">
   </div>
+  <script>
+    (function(){
+      var re = /text=([^&]+)/.exec(window.location.search)
+      if (!re) {
+        return;
+      }
+      var text = decodeURIComponent(re[1]);
+      document.getElementById("text-block").innerText = text;
+    })();
+  </script>
   <form
     name="contact-page"
     class="control"
@@ -14,7 +20,7 @@
     method="post"
     netlify
     netlify-honeypot="bot-field"
-    data-ga-form='{"eventCategory": "Contact form", "eventAction": "Send comment inline"}'
+    data-ga-form='{"eventCategory": "Contact form", "eventAction": "Send comment external embed"}'
     target="_parent"
   >
     <p class="is-hidden">
@@ -95,5 +101,3 @@
     </div>
   </form>
 </div>
-
-<div class="content">

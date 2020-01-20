@@ -1,3 +1,12 @@
+{{ define "extra-head" }}
+  {{ if .Site.IsServer }}
+    <script src="http://localhost:1234/embed-list.js" defer></script>
+  {{ else }}
+    {{ $js := resources.Get "js/embed-list.js" | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+  {{ end }}
+{{ end }}
+
 {{ define "extra-main" }}
   <section
     class="section columns is-centered is-multiline"
@@ -5,16 +14,23 @@
   >
     <div class="column is-three-fifths">
       {{ range $page := .Pages }}
-      <div class="box has-background-light">
-        <h2 class="title is-spaced">{{ .Title }}</h2>
-        <h3 class="subtitle is-4">Code:</h3>
-        <pre><code class="code">
-            {{- partial "embed-code.html" . | htmlEscape | safeHTML -}}
-        </code></pre>
+        <div class="box has-background-light">
+          <h2 class="title is-spaced">{{ .Title }}</h2>
 
-        <h3 class="subtitle is-4">Example:</h3>
-        {{ partial "embed-code.html" . }}
-      </div>
+          {{ $params := .Param "page-query-params" }}
+          {{ $scriptSrc := absURL "/embed.js" }}
+          {{ if .Site.IsServer }}
+            {{ $scriptSrc = "http://localhost:1234/embed-host.js" }}
+          {{ end }}
+
+          {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
+          <script type="application/ld+json" class="js-embed-list-item">
+            {{ $page | jsonify | safeJS }}
+          </script>
+
+          <h3 class="subtitle is-4">Sample:</h3>
+          {{ partial "embed-code.html" $page }}
+        </div>
       {{ end }}
     </div>
   </section>
