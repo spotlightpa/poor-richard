@@ -13,12 +13,11 @@
 
 {{ define "main" }}
   <div
-    class="section is-top is-bottom"
+    class="section"
     data-ga-action="Embed content"
   >
-    <div class="content">
-      {{ .Content }}
-    </div>
+    {{ $embed := .Param "embed-partial" }}
+    {{ partial $embed . }}
   </div>
 {{end }}
 
