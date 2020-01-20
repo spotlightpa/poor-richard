@@ -216,7 +216,7 @@ collections:
         name: firstName
         widget: string
       - label: Family name
-        name: familyName
+        name: lastName
         widget: string
       - label: Title
         name: title
