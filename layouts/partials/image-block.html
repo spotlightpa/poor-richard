@@ -31,13 +31,15 @@
       <div class="image {{ $imgClass }} has-background-grey-lighter">
     {{- end -}}
       <picture class="has-ratio">
-        <source
-          type="image/webp"
-          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-          {{ if .sizeHint }}
-            sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
-          {{ end }}
-        >
+        {{ if in $srcset ".jpeg" }}
+          <source
+            type="image/webp"
+            srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+            {{ if .sizeHint }}
+              sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+            {{ end }}
+          >
+        {{ end }}
         <img
           alt="{{ .description }}"
           title="{{ .description }}"
