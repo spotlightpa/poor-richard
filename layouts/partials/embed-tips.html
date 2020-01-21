@@ -4,14 +4,20 @@
   <div class="block" id="text-block">
   </div>
   <script>
-    (function(){
-      var re = /text=([^&]+)/.exec(window.location.search)
-      if (!re) {
-        return;
-      }
-      var text = decodeURIComponent(re[1]);
-      document.getElementById("text-block").innerText = text;
-    })();
+(function() {
+  var re = /\btip_text=([^&]+)/.exec(window.location.search);
+  var el = document.getElementById("text-block");
+  if (!re || !el) {
+    return;
+  }
+  var text = decodeURIComponent(re[1]);
+  el.innerText = text;
+  el.innerHTML = el.innerHTML
+    .replace(/&lt;b&gt;/g, "<b>")
+    .replace(/&lt;\/b&gt;/g, "</b>")
+    .replace(/&lt;i&gt;/g, "<i>")
+    .replace(/&lt;\/i&gt;/g, "</i>");
+})();
   </script>
   <form
     name="contact-page"
