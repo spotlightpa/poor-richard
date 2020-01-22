@@ -42,6 +42,16 @@ $modal-card-head-padding: 1rem;
 $modal-background-background-color: rgba(hsl(0, 0%, 86%), 0.86);
 
 $box-radius: 2px;
+$box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
+
+$control-border-width: 1px;
+$control-height: 2.25em;
+$control-padding-vertical: calc(0.375em - #{$control-border-width});
+$control-padding-horizontal: calc(0.625em - #{$control-border-width});
+
+$button-border-width: $control-border-width;
+$button-padding-vertical: calc(0.375em - #{$button-border-width});
+$button-padding-horizontal: 0.75em;
 
 $tile-spacing: 2rem;
 
