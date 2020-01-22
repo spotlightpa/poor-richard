@@ -3,6 +3,7 @@
 {{ $iconEmailSolid := resources.Get "/img/fontawesome/solid/envelope.svg" }}
 {{ $iconFB := resources.Get "/img/fontawesome/brands/facebook-f.svg" }}
 {{ $iconTwitter := resources.Get "/img/fontawesome/brands/twitter.svg" }}
+{{ $iconShare := resources.Get "/img/fontawesome/solid/share.svg" }}
 {{ $iconUser := resources.Get "/img/fontawesome/regular/user.svg" }}
 {{ $logo := resources.Get "/img/logos/banner-default-on-trans.svg" }}
 
@@ -12,6 +13,7 @@
   <svg id="email-solid-svg">{{ $iconEmailSolid.Content|safeHTML }}</svg>
   <svg id="fb-svg">{{ $iconFB.Content|safeHTML }}</svg>
   <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
+  <svg id="share-svg">{{ $iconShare.Content|safeHTML }}</svg>
   <svg id="user-svg">{{ $iconUser.Content|safeHTML }}</svg>
   <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
 </div>
