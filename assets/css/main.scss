@@ -244,6 +244,11 @@ a.navbar-burger:hover {
 }
 
 .section {
+  &.is-small {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   &.is-top {
     padding-bottom: 0;
   }
