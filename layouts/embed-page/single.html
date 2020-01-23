@@ -3,12 +3,7 @@
 {{ define "modal" }} <!-- --> {{ end }}
 
 {{ define "extra-head" }}
-  {{ if .Site.IsServer }}
-    <script src="http://localhost:1234/embed-frame.js" defer></script>
-  {{ else }}
-    {{ $js := resources.Get "js/embed-frame.js" | fingerprint }}
-    <script src="{{ $js.RelPermalink }}" defer></script>
-  {{ end }}
+  <script src='{{ partial "get-src" "embed-frame.js" }}' defer></script>
 {{ end }}
 
 {{ define "main" }}

@@ -1,10 +1,5 @@
 {{ define "extra-head" }}
-  {{ if .Site.IsServer }}
-    <script src="http://localhost:1234/donate.js" defer></script>
-  {{ else }}
-    {{ $js := resources.Get "js/donate.js" | fingerprint }}
-    <script src="{{ $js.RelPermalink }}" defer></script>
-  {{ end }}
+  <script src='{{ partial "get-src" "donate.js" }}' defer></script>
 {{ end }}
 
 {{ define "main" }}
