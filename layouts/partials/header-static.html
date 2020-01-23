@@ -9,12 +9,7 @@
 {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
-{{ if .Site.IsServer }}
-  <script src="http://localhost:1234/main.js" defer></script>
-{{ else }}
-  {{ $js := resources.Get "js/main.js" | fingerprint }}
-  <script src="{{ $js.RelPermalink }}" defer></script>
-{{ end }}
+<script src='{{ partial "get-src" "main.js" }}' defer></script>
 
 {{ range slice "500" "800" }}
   <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>

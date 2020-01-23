@@ -1,0 +1,10 @@
+{{ $src := "" }}
+{{ if site.IsServer }}
+  {{ $src = printf "http://localhost:1234/%s" . }}
+{{ else }}
+  {{ $path := printf "@src/%s" . }}
+  {{ $file := resources.Get $path | fingerprint }}
+  {{ $src = $file.RelPermalink }}
+{{ end }}
+
+{{ return $src }}
