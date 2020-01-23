@@ -3,32 +3,9 @@
 {{ $gaEvent := dict "eventCategory" "Share button interaction" "eventAction" "Email share" "eventLabel" .Permalink }}
 
 <div class="buttons">
-  <button
-    class="button is-primary is-medium"
-    data-share="facebook"
-    title="Share this page on Facebook"
-  >
-    <span class="icon has-text-white has-colored-svg">
-      <svg>
-        <use xlink:href="#fb-svg"></use>
-      </svg>
-    </span>
-  </button>
-  <button
-    class="button is-info is-medium"
-    data-share="tweet"
-    data-share-text="{{ .LinkTitle }} from @spotlightpa"
-    title="Tweet about this page"
-  >
-    <span class="icon has-text-white has-colored-svg">
-      <svg>
-        <use xlink:href="#twitter-svg"></use>
-      </svg>
-    </span>
-  </button>
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
-    class="button is-success is-medium"
+    class="button is-success"
     title="Share this page by email"
     data-ga-event="{{ $gaEvent | jsonify }}"
   >
@@ -39,7 +16,30 @@
     </span>
   </a>
   <button
-    class="button is-danger is-medium is-hidden"
+    class="button is-primary"
+    data-share="facebook"
+    title="Share this page on Facebook"
+  >
+    <span class="icon has-text-white has-colored-svg">
+      <svg>
+        <use xlink:href="#fb-svg"></use>
+      </svg>
+    </span>
+  </button>
+  <button
+    class="button is-info"
+    data-share="tweet"
+    data-share-text="{{ .LinkTitle }} from @spotlightpa"
+    title="Tweet about this page"
+  >
+    <span class="icon has-text-white has-colored-svg">
+      <svg>
+        <use xlink:href="#twitter-svg"></use>
+      </svg>
+    </span>
+  </button>
+  <button
+    class="button is-danger is-hidden"
     data-share="sharesheet"
     data-share-text="{{ .LinkTitle }} from @spotlightpa"
     title="More ways to share this page"
