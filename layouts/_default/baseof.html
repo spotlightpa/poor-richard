@@ -13,7 +13,7 @@
     {{- end -}}
   </title>
 
-  {{ partialCached "header-static.html" . }}
+  {{ partialCached "header-static.html" . .Site.GoogleAnalytics }}
 
   <!-- Metadata -->
   {{ partial "meta.html" . }}
