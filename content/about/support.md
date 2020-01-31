@@ -41,6 +41,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * John William Ball
 * Chris Bastress
 * Kenneth Baumert
+* Brian Baxter
 * Christopher Baxter
 * Mark Bazrod
 * Barry Bedrick
@@ -51,6 +52,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * R. Thomas Berner 
 * Rita Bernstein & Alan Zuckerman
 * Robert Joseph Biller
+* William Blando 
 * David Bohanick
 * Suzanne Bonamici 
 * Jeffrey L. Braff
@@ -60,6 +62,8 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * James Brown
 * Lisa Budwig
 * T. Buehner
+* Byron Butcher
+* Heidi Butler
 * J.L. Byrne & C.M. Hersh
 * Stacey C. Cahn
 * Andrew Candor
@@ -159,7 +163,9 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Avram Hornik
 * Kristen Houser
 * Stephen R. Hughes
+* Richard Hurst 
 * Irv Hurwitz
+* Lynda Hutton
 * Sharon Hyde
 * Robert M. Hynosky 
 * Annette E. Inker
