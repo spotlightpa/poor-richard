@@ -39,6 +39,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Whitney Baldwin
 * John William Ball
 * Chris Bastress
+* Kenneth Baumert
 * Christopher Baxter
 * Mark Bazrod
 * Barry Bedrick
@@ -46,10 +47,12 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Ron Beitler
 * Sigal Ben
 * L.J. Bernard
+* R. Thomas Berner 
 * Rita Bernstein & Alan Zuckerman
 * Robert Joseph Biller
 * David Bohanick
 * Jeffrey L. Braff
+* Merrill & Nancy Brenner
 * D. Brooks
 * Gay Brown
 * James Brown
@@ -70,10 +73,12 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * John M. Corcoran Esq.
 * J. Cordingley
 * Laurel Costa
+* R. Cotlar 
 * Brett Cott
 * Chris Coyle
 * Lauren Cristella
 * Karen Crosby
+* Jennifer Cunningham
 * Julie Daye
 * Connie & Terry Dellmuth
 * Mike Del Vacchio
@@ -92,15 +97,21 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * E. Margaret Eshleman 
 * Russ Eshleman
 * Rosa & Alberto Esquenazi
+* Frank Evelhoch II
 * C. Fairchild
 * J. Fauls
 * B. Faulstick
+* T. Fehr
 * Adelaide Ferguson & Ronald Cahan
+* Art Feinberg
+* David Fiedler
 * Ezra Fishman & Nicola Brodie
 * Thomas Flocco
 * Barbara Forbes-Rhouni
 * Leroy Forney
+* Daniel Fraccica
 * Susannah Frame
+* Bruce P. Frassinelli
 * Kimberly Freeman
 * Gary French
 * Jim Friedlich & Melissa Stern
@@ -114,15 +125,18 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Stephen M. Glynn
 * Denise Gmerek
 * Tamara Goldman
+* Ellen Goodman
 * Ralf Rundgren Graves
 * John F. Graybill
 * Brent Groce
 * Mark Gudalis
+* Francis Hackett
 * Frank Hadden
 * Beverly Hahn 
 * Robert Haines
 * David Hakes
 * B.A. Hamilton
+* Karen Hamm
 * Mimi Hanks-Bell
 * Don Hannum
 * T. Hechler
@@ -152,10 +166,12 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Paul Keller
 * Alan Kennedy
 * Diana Kerr
+* Dave Kestner
 * Cathy King
 * Frank Kirkwood
 * Harold G. Kohn
 * Nina B. Korsh
+* Stan & Maryann Kramer 
 * Diana Krantz
 * Ian Krantz
 * Kevin Kuhn
@@ -169,6 +185,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Jamie Lemon & Steve Cline
 * Stephen J. Lipnichan
 * Sue Livio
+* Nancy Lloyd
 * Anne C. Loeffler
 * David Loomis
 * Janet M. Lorenz
@@ -206,6 +223,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * William Paci
 * David & Roxanne Palmer 
 * Leanora Paniccia
+* J. Parsons 
 * Lydia Pecker
 * Ann Pehle
 * Amy L. Perez
@@ -222,6 +240,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Mary Catherine Roper
 * Tina Rosenberg
 * David R. Ross
+* Lynn Fryman Rothman & Michael Rothman, MD
 * Robert Ruff Jr.
 * Edwin Rund
 * Gary Ryan
@@ -233,8 +252,10 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Jennifer Schnore
 * Pat Sellers
 * Milton Shapiro
+* David S. Share
 * Kimberley Shore
 * Darrin Silbaugh
+* Ira Silberman & Marilyn Kutler
 * Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
@@ -272,6 +293,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * George Wolff
 * Margaret Wren
 * Francis Wynne
+* Dr. Bob Yapsuga
 * Tracy Yeomans
 * Jerry Young
 * Sherley Young
