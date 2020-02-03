@@ -10,6 +10,7 @@ description = "For the sixth-straight year, the governor wants to increase Penns
 kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = true
+slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 +++
 ### **THE BUDGET COMETH**
 

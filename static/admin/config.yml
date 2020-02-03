@@ -153,7 +153,7 @@ collections:
     label_singular: Article
     name: news
     folder: content/news
-    slug: "{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     format: toml-frontmatter
     extension: md
     create: true
