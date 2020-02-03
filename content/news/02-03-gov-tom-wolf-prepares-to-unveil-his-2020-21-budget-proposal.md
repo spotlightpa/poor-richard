@@ -1,6 +1,6 @@
 +++
 draft = true
-image = "2019/12/capitol-sale.jpeg"
+image = "2019/11/captiol-3.jpeg"
 image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 published = 2020-02-03T12:30:56.905Z
 authors = ["Cynthia Fernandez"]
