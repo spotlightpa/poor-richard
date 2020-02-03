@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 image = "2019/11/captiol-3.jpeg"
 image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 published = 2020-02-03T12:30:56.905Z
@@ -9,7 +9,7 @@ subhed = "For the sixth-straight year, the governor wants to increase Pennsylvan
 description = "For the sixth-straight year, the governor wants to increase Pennsylvania’s wage floor from $7.25 an hour to $12."
 kicker = "Capitol Notebook"
 special-report = false
-suppress-featured = false
+suppress-featured = true
 +++
 ### **THE BUDGET COMETH**
 
