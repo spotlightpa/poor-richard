@@ -18,10 +18,10 @@ slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 
 **Wolf’s budget would also:**
 
-* Fund an “[innovation plan](https://www.governor.pa.gov/newsroom/gov-wolf-announces-pa-innovation-plan-proposal/)”that earmarks millions for workforce development
+* Fund an “[innovation plan](https://www.governor.pa.gov/newsroom/gov-wolf-announces-pa-innovation-plan-proposal/)” that earmarks millions for workforce development
 * Create a new grant program to “[address employment barriers](https://www.governor.pa.gov/newsroom/gov-wolf-business-and-labor-leaders-unveil-strategy-to-strengthen-pennsylvanias-workforce/)”
 * Put $1 billion (yes, billion) toward [lead and asbestos clean-ups](https://www.inquirer.com/news/gov-tom-wolf-asbestos-lead-schools-1-billion-20200129.html) in schools
-* [Invest](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/)[](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/)[ heavily in human services programs](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/), including $1.2 million to train workers who look after people receiving long-term care outside of institutions
+* [Invest heavily in human services programs](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/), including $1.2 million to train workers who look after people receiving long-term care outside of institutions
 
 ### **CONTROVERSY OVER KOBE**
 
