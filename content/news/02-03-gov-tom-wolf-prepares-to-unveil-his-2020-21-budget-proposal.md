@@ -14,7 +14,7 @@ slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 +++
 ### **THE BUDGET COMETH**
 
-1,000,000. That’s about how many minimum wage workers would be eligible for a raise under **Gov. Tom Wolf’s** proposed 2020-21 budget, which he will officially unveil Tuesday. Wolf previewed parts of his proposal across the state this week, and on his wish list for the sixth-straight year is increasing Pennsylvania’s wage floor from $7.25 an hour to $12, and eventually up to $15. But Republicans in the legislature remain opposed.
+1,000,000. That’s about how many minimum wage workers would be eligible for a raise under **Gov. Tom Wolf’s** proposed 2020-21 budget, which he will officially unveil Tuesday. Wolf previewed parts of his proposal across the state last week, and on his wish list for the sixth-straight year is increasing Pennsylvania’s wage floor from $7.25 an hour to $12, and eventually up to $15. But Republicans in the legislature remain opposed.
 
 **Wolf’s budget would also:**
 
@@ -22,6 +22,8 @@ slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 * Create a new grant program to “[address employment barriers](https://www.governor.pa.gov/newsroom/gov-wolf-business-and-labor-leaders-unveil-strategy-to-strengthen-pennsylvanias-workforce/)”
 * Put $1 billion (yes, billion) toward [lead and asbestos clean-ups](https://www.inquirer.com/news/gov-tom-wolf-asbestos-lead-schools-1-billion-20200129.html) in schools
 * [Invest heavily in human services programs](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/), including $1.2 million to train workers who look after people receiving long-term care outside of institutions
+
+Wolf is scheduled to deliver his budget address at 11:30 a.m. in the Capitol. His speech will be streamed live at [governor.pa.gov/live](https://www.governor.pa.gov/live/). 
 
 ### **CONTROVERSY OVER KOBE**
 
