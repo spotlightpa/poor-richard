@@ -1,8 +1,8 @@
 +++
 draft = false
-image = "/2020/02/budget.jpeg"
-image-description = "Gov. Tom Wolf speaks at a news conference in his Capitol offices as he unveils a $1.1 billion package intended to help eliminate lead and asbestos contamination in Pennsylvania's schools, homes, day care facilities and public water systems, Wednesday, Jan. 29, 2020 in Harrisburg, Pa."
-image-credit = "(AP Photo/Marc Levy)"
+image = "/2020/02/wolf-speech.jpeg"
+image-description = "Pennsylvania Gov. Tom Wolf delivers his 2020-21 budget address in the state House of Representatives as Speaker Mike Turzai, left, and Lt. Gov. John Fetterman, right, look on, on Feb. 4, 2020, in Harrisburg, Pa"
+image-credit = "Joe Hermitt / PennLive / The Patriot-News"
 published = 2020-02-04T16:30:00.000Z
 authors = ["Cynthia Fernandez", "Angela Couloumbis"]
 title = "Pennsylvania Gov. Tom Wolf calls for more money for public school — and gun control"
