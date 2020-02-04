@@ -8,7 +8,8 @@ authors = ["Cynthia Fernandez", "Angela Couloumbis"]
 title = "Pennsylvania Gov. Tom Wolf calls for more money for public schools, no major new taxes"
 kicker = "Capitol Notebook"
 special-report = false
-suppress-featured = false
+suppress-featured = true
+slug = "pennsylvania-tom-wolf-money-public-schools-no-new-taxes"
 +++
 *[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
 
@@ -38,31 +39,31 @@ Here are some highlights from Wolf’s budget:
 
 ### Education
 
-\-Public schools would receive an additional $100 million, and the governor is proposing an extra $25 million for special education funding.
+- Public schools would receive an additional $100 million, and the governor is proposing an extra $25 million for special education funding.
 
-\-Wolf would boost funding for early childhood education by $30 million: $25 million for Pre-K Counts and $5 million for the Head Start Supplemental program.
+- Wolf would boost funding for early childhood education by $30 million: $25 million for Pre-K Counts and $5 million for the Head Start Supplemental program.
 
-\-The governor would expand free, full-time kindergarten to every Pennsylvania student, an expansion funded through [a separate reform plan](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") Wolf is unveiling for charter schools.
+- The governor would expand free, full-time kindergarten to every Pennsylvania student, an expansion funded through [a separate reform plan](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") Wolf is unveiling for charter schools.
 
-\-Wolf is again proposing to raise the minimum salary for public school teachers to $45,000 per year, from $18,500 per year.
+- Wolf is again proposing to raise the minimum salary for public school teachers to $45,000 per year, from $18,500 per year.
 
-\-Under an expanded Redevelopment Assistance Capital Program, $1 billion in state funding, typically set aside for capital projects, would be available to remediate lead- and asbestos-tainted schools, [an issue that has been particularly acute in Philadelphia.](https://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html "https\://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html")
+- Under an expanded Redevelopment Assistance Capital Program, $1 billion in state funding, typically set aside for capital projects, would be available to remediate lead- and asbestos-tainted schools, [an issue that has been particularly acute in Philadelphia.](https://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html "https\://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html")
 
 ### Higher education
 
-\-The governor wants to siphon $204 million from the state’s Race Horse Development Trust Fund to provide financial assistance to full-time students in Pennsylvania’s state colleges and universities. To be eligible for the money, students would have to agree to stay in the state for the same number of years for which they received aid.
+- The governor wants to siphon $204 million from the state’s Race Horse Development Trust Fund to provide financial assistance to full-time students in Pennsylvania’s state colleges and universities. To be eligible for the money, students would have to agree to stay in the state for the same number of years for which they received aid.
 
-\-State-run universities would also receive nearly $13 million to redesign technology infrastructure.
+- State-run universities would also receive nearly $13 million to redesign technology infrastructure.
 
-\-Wolf is proposing flat-funding to state-related universities including Penn State and Temple University.
+- Wolf is proposing flat-funding to state-related universities including Penn State and Temple University.
 
 Charter school reform
 
 The governor is proposing [changes to charter school laws](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") that he said will save school districts, which pay for charters but do not run them, about $280 million every year. Among the proposed reforms:
 
-\-The administration would apply a tiered special education funding formula to charter schools, which now receive money based on the assumption that all school districts have a special education population of 16%. In fact, that percentage varies widely across the state.
+- The administration would apply a tiered special education funding formula to charter schools, which now receive money based on the assumption that all school districts have a special education population of 16%. In fact, that percentage varies widely across the state.
 
-\-Wolf would establish a statewide tuition rate for cyber charter schools, which currently receive between $7,700 and $21,400 per student per year. The new rate would be $9,500 per student every year.
+- Wolf would establish a statewide tuition rate for cyber charter schools, which currently receive between $7,700 and $21,400 per student per year. The new rate would be $9,500 per student every year.
 
 ### Minimum wage
 
@@ -74,10 +75,10 @@ Wolf is resurrecting a new version of a proposal he has championed in recent yea
 
 ### Vulnerable populations
 
-\-The governor is proposing a $1 million expansion of the legal services program that assists those in poverty.
+- The governor is proposing a $1 million expansion of the legal services program that assists those in poverty.
 
-\-He is asking for an additional $8.1 million to provide services to 1,700 people on the state’s in-home services waiting list.
+- He is asking for an additional $8.1 million to provide services to 1,700 people on the state’s in-home services waiting list.
 
-\-Wolf is pushing to invest $4 million to support people living with autism or intellectual disabilities.
+- Wolf is pushing to invest $4 million to support people living with autism or intellectual disabilities.
 
 *[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") receives[ funding from nonprofit institutions and readers like you](https://www.spotlightpa.org/support "https\://www.spotlightpa.org/support") who are committed to investigative journalism that gets results. Become a Founding Donor today at [spotlightpa.org](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/").*
