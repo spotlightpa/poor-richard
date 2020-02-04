@@ -5,19 +5,21 @@ image-description = "Gov. Tom Wolf speaks at a news conference in his Capitol of
 image-credit = "(AP Photo/Marc Levy)"
 published = 2020-02-04T16:30:00.000Z
 authors = ["Cynthia Fernandez", "Angela Couloumbis"]
-title = "Pennsylvania Gov. Tom Wolf calls for more money for public schools, no major new taxes"
+title = "Pennsylvania Gov. Tom Wolf calls for more money for public school — and gun control"
 kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = false
 slug = "pennsylvania-tom-wolf-money-public-schools-no-new-taxes"
 +++
-***Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/")** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
+**\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/")** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
 
 HARRISBURG — Gov. Tom Wolf on Tuesday proposed a $36 billion dollar budget with no major tax increases that would boost funding for public education, expand full-day kindergarten to all students, borrow money to address environmental hazards in schools, and make sweeping changes to how charter schools are funded.
 
-In his annual address before a joint session of the General Assembly, the Democratic governor is also expected to depart from the boundaries of a traditional budget speech to make a strong plea for stricter gun laws in a state with a long history of taking a hands-off approach to the issue.
+In his annual address before a joint session of the General Assembly, the Democratic governor also departed from the boundaries of a traditional budget speech to make a strong plea for stricter gun laws in a state with a long history of taking a hands-off approach to the issue.
 
-Wolf will call for universal background checks, stronger reporting requirements for lost and stolen firearms and a “red flag” law that would give judges the ability to temporarily seize firearms from people considered a threat to themselves or others. And he will urge the Republican-controlled legislature to memorialize 2020 as the year it will usher in changes.
+Wolf called for universal background checks, stronger reporting requirements for lost and stolen firearms and a “red flag” law that would give judges the ability to temporarily seize firearms from people considered a threat to themselves or others. And he urged the Republican-controlled legislature to memorialize 2020 as the year it will usher in changes.
+
+“The steps I’m proposing are supported by the evidence and supported by the vast majority of Pennsylvanians,” Wolf said during his speech, adding: “To let another session go by without action would be a failure of imagination that will cost lives.”
 
 Though the governor’s sixth proposed budget reflected his long held priorities of championing public education, it also recognized the reality of negotiating with Republican lawmakers who control the state legislature, and who in years past have rejected several of the administration’s big-ticket revenue proposals.
 
