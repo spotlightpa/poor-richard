@@ -11,7 +11,7 @@ special-report = false
 suppress-featured = false
 slug = "pennsylvania-tom-wolf-money-public-schools-no-new-taxes"
 +++
-**\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/")** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
+***Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/")** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
 
 HARRISBURG — Gov. Tom Wolf on Tuesday proposed a $36 billion dollar budget with no major tax increases that would boost funding for public education, expand full-day kindergarten to all students, borrow money to address environmental hazards in schools, and make sweeping changes to how charter schools are funded.
 
