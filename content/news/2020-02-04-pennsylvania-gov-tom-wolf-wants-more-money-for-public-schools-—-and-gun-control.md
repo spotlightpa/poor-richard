@@ -8,7 +8,7 @@ authors = ["Cynthia Fernandez", "Angela Couloumbis"]
 title = "Pennsylvania Gov. Tom Wolf calls for more money for public schools, no major new taxes"
 kicker = "Capitol Notebook"
 special-report = false
-suppress-featured = true
+suppress-featured = false
 slug = "pennsylvania-tom-wolf-money-public-schools-no-new-taxes"
 +++
 *[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
