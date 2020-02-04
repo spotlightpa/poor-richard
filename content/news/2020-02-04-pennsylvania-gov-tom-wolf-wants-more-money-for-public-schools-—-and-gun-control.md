@@ -23,7 +23,7 @@ Though the governor’s sixth proposed budget reflected his long held priorities
 
 Wolf’s plan, for instance, would not hike either the state’s sales or income taxes — the two largest sources of revenue — but instead would seek to raise new dollars through targeted fees on municipalities to fund, among other items, the State Police budget.
 
-*[» SAVE TIME and sign up for Spotlight PA’s free weekly newsletter to receive the most important news from the Capitol and a roundup of can’t-miss stories from across Pa.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")*
+{{<newsletter-inline>}}
 
 Still, Wolf is again floating a proposal to impose a new tax on natural gas drillers, and use that money to fund an ambitious infrastructure improvement program that would underwrite projects ranging from broadband expansion to combating urban blight. The governor has proposed a drilling tax every year since taking office in 2015, but legislators have been unable to agree on a plan.
 
@@ -39,31 +39,24 @@ Here are some highlights from Wolf’s budget:
 
 ### Education
 
-- Public schools would receive an additional $100 million, and the governor is proposing an extra $25 million for special education funding.
-
-- Wolf would boost funding for early childhood education by $30 million: $25 million for Pre-K Counts and $5 million for the Head Start Supplemental program.
-
-- The governor would expand free, full-time kindergarten to every Pennsylvania student, an expansion funded through [a separate reform plan](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") Wolf is unveiling for charter schools.
-
-- Wolf is again proposing to raise the minimum salary for public school teachers to $45,000 per year, from $18,500 per year.
-
-- Under an expanded Redevelopment Assistance Capital Program, $1 billion in state funding, typically set aside for capital projects, would be available to remediate lead- and asbestos-tainted schools, [an issue that has been particularly acute in Philadelphia.](https://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html "https\://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html")
+* Public schools would receive an additional $100 million, and the governor is proposing an extra $25 million for special education funding.
+* Wolf would boost funding for early childhood education by $30 million: $25 million for Pre-K Counts and $5 million for the Head Start Supplemental program.
+* The governor would expand free, full-time kindergarten to every Pennsylvania student, an expansion funded through [a separate reform plan](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") Wolf is unveiling for charter schools.
+* Wolf is again proposing to raise the minimum salary for public school teachers to $45,000 per year, from $18,500 per year.
+* Under an expanded Redevelopment Assistance Capital Program, $1 billion in state funding, typically set aside for capital projects, would be available to remediate lead- and asbestos-tainted schools, [an issue that has been particularly acute in Philadelphia.](https://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html "https\://www.inquirer.com/news/inq/toxic-city-philadelphia-inquirer-investigation-lead-asbestos-schools-20170618.html")
 
 ### Higher education
 
-- The governor wants to siphon $204 million from the state’s Race Horse Development Trust Fund to provide financial assistance to full-time students in Pennsylvania’s state colleges and universities. To be eligible for the money, students would have to agree to stay in the state for the same number of years for which they received aid.
-
-- State-run universities would also receive nearly $13 million to redesign technology infrastructure.
-
-- Wolf is proposing flat-funding to state-related universities including Penn State and Temple University.
+* The governor wants to siphon $204 million from the state’s Race Horse Development Trust Fund to provide financial assistance to full-time students in Pennsylvania’s state colleges and universities. To be eligible for the money, students would have to agree to stay in the state for the same number of years for which they received aid.
+* State-run universities would also receive nearly $13 million to redesign technology infrastructure.
+* Wolf is proposing flat-funding to state-related universities including Penn State and Temple University.
 
 Charter school reform
 
 The governor is proposing [changes to charter school laws](https://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html "https\://www.inquirer.com/news/charter-school-reform-pennsylvania-tom-wolf-budget-20200203.html") that he said will save school districts, which pay for charters but do not run them, about $280 million every year. Among the proposed reforms:
 
-- The administration would apply a tiered special education funding formula to charter schools, which now receive money based on the assumption that all school districts have a special education population of 16%. In fact, that percentage varies widely across the state.
-
-- Wolf would establish a statewide tuition rate for cyber charter schools, which currently receive between $7,700 and $21,400 per student per year. The new rate would be $9,500 per student every year.
+* The administration would apply a tiered special education funding formula to charter schools, which now receive money based on the assumption that all school districts have a special education population of 16%. In fact, that percentage varies widely across the state.
+* Wolf would establish a statewide tuition rate for cyber charter schools, which currently receive between $7,700 and $21,400 per student per year. The new rate would be $9,500 per student every year.
 
 ### Minimum wage
 
@@ -75,10 +68,8 @@ Wolf is resurrecting a new version of a proposal he has championed in recent yea
 
 ### Vulnerable populations
 
-- The governor is proposing a $1 million expansion of the legal services program that assists those in poverty.
-
-- He is asking for an additional $8.1 million to provide services to 1,700 people on the state’s in-home services waiting list.
-
-- Wolf is pushing to invest $4 million to support people living with autism or intellectual disabilities.
+* The governor is proposing a $1 million expansion of the legal services program that assists those in poverty.
+* He is asking for an additional $8.1 million to provide services to 1,700 people on the state’s in-home services waiting list.
+* Wolf is pushing to invest $4 million to support people living with autism or intellectual disabilities.
 
 *[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") receives[ funding from nonprofit institutions and readers like you](https://www.spotlightpa.org/support "https\://www.spotlightpa.org/support") who are committed to investigative journalism that gets results. Become a Founding Donor today at [spotlightpa.org](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/").*
