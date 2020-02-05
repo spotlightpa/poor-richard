@@ -107,6 +107,11 @@ yaml-definitions: &page-fields
     hint: "Don't make this the top story on the homepage"
     default: false
     required: false
+  - label: "Override order number"
+    name: weight
+    widget: number
+    required: false
+    hint: "Use this to manually order stories on the homepage"
   - label: "Suppress title"
     name: suppress-title
     widget: boolean
