@@ -73,7 +73,7 @@ The governor is proposing [changes to charter school laws](https://www.inquirer.
 
 ### Minimum wage
 
-Wolf is asking the legislature to approve raising the state’s minimum wage from the current $7.25 per hour to $12 beginning this July. That rate would increase every year by 50 cents until it reaches $15 per hour inJuly2026. The Senate late last year approved a plan to gradually hike the minimum wage to $9.50 per hour, but the House has not yet taken up the proposal.
+Wolf is asking the legislature to approve raising the state’s minimum wage from the current $7.25 per hour to $12 beginning this July. That rate would increase every year by 50 cents until it reaches $15 per hour in July2026. The Senate late last year approved a plan to gradually hike the minimum wage to $9.50 per hour, but the House has not yet taken up the proposal.
 
 ### State police fee
 
