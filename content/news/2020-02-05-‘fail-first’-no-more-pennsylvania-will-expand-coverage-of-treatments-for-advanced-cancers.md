@@ -12,7 +12,7 @@ kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = false
 +++
-***Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
+**\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
 HARRISBURG — Patients in Pennsylvania facing the most serious stage of cancer will no longer be forced to try cheaper drugs before their insurance covers other, more expensive treatments.
 
@@ -29,6 +29,8 @@ He was confronted with the disease again in 2008 when doctors discovered his 4-y
 The bill would require health insurance policies to cover drugs prescribed to patients with stage IV cancer — meaning it has spread to other organs or parts of the body — as long as they have been approved by the federal Food and Drug Administration for cancer treatment and are consistent with best practices.
 
 “When you sit in a hospital for two and a half years, you get a lot of opportunities to talk to patients, families, and doctors,” Benninghoff said. “Physicians go to school to practice medicine and get people well — they don’t go to deal with legislative policies or insurance companies.”
+
+{{<newsletter-inline>}}
 
 Currently, oncologists shrink tumors and target cancerous blood cells with a cocktail of drugs, surgeries, or radiation treatments following protocols — schedules of when and how much of a medicine to administer — that are approved by a health insurance company’s reimbursement plan.
 
