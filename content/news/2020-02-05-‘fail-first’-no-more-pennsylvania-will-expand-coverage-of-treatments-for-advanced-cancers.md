@@ -5,14 +5,14 @@ image-description = "In this May 25, 2017 file photo, chemotherapy drugs are adm
 image-credit = "GERRY BROOME / AP"
 published = 2020-02-05T18:35:39.294Z
 authors = ["Cynthia Fernandez"]
-title = "‘Fail first’ no more: Pennsylvania will expand coverage of treatments for advanced cancers"
+title = "Pa. will expand insurance coverage of innovative treatments for advanced cancers"
 description = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
 blurb = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
 kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = false
-slug = "fail-first-no-more-pennsylvania-will-expand-coverage-of-treatments-for-advanced-cancers"
 weight = 1
+slug = "fail-first-no-more-pennsylvania-will-expand-coverage-of-treatments-for-advanced-cancers"
 +++
 **\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
