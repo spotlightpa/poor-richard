@@ -11,6 +11,8 @@ blurb = "The state House on Tuesday gave final approval to a bill that would abo
 kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = false
+slug = "fail-first-no-more-pennsylvania-will-expand-coverage-of-treatments-for-advanced-cancers"
+weight = 1
 +++
 **\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
