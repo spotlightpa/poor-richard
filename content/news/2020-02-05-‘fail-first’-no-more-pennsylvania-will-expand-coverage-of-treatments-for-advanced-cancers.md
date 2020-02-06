@@ -46,8 +46,9 @@ This bill, Benninghoff said, changes the dynamic between physicians and health i
 
 A major Pennsylvania-based insurance company supports the bill, known as the Fair Access to Cancer Treatment Act, and hopes it will help rein in drug prices.
 
-“\[W]e are concerned about the increasing cost of prescription drugs which has a direct impact on our members’ access to affordable care,” Ruth Stoolman, a spokesperson for Independence Blue Cross, said by email. “We believe this bill strikes an important balance between access, quality, and safety, including assurances that coverage follows clinical best practices.”
+“\[W]e are concerned about the increasing cost of prescription drugs which has a direct impact on our members’ access to affordable care,” Dr. Ginny Calega, vice president of medical affairs at Independence Blue Cross, said in a statement. “We believe this bill strikes an important balance between access, quality, and safety, including assurances that coverage follows clinical best practices.”
 
+\
 Rep. Pamela DeLissio (D., Philadelphia), a cancer survivor, voted “no” on the bill when it came before the House in 2019, because it does not cover the use of off-label drugs, medicines that have not been approved by the FDA for cancer treatment.
 
 “In confounding situations, an off-label drug would be used,” DeLissio said by phone. “When it is stage IV, there are no more stages after that. If there was a possibility of a drug working, I would want to use it.”
@@ -57,5 +58,7 @@ Benninghoff said he knows the scope of the bill is narrow, but sometimes comprom
 “I don’t want to waste another day, week, month trying to fight for perfection, when we can help a lot of people,” he said. “Sometimes you have to take half a loaf instead of a whole loaf.”
 
 Legislatures in [Georgia](http://custom.statenet.com/public/resources.cgi?id=ID:bill:GA2015000H965&ciq=ncsl62&client_md=403e6f0fc8de8df58c82b96ef0a5ba94&mode=current_text), [Illinois](http://custom.statenet.com/public/resources.cgi?id=ID:bill:IL2017000H4821&ciq=ncsl62&client_md=fad451564d0efd215f03893445fc7c79&mode=current_text), and [Maryland](http://custom.statenet.com/public/resources.cgi?id=ID:bill:MD2017000S919&ciq=ncsl62&client_md=362745f34980f11a41f260e2c1b8e6ef&mode=current_text) have passed similar legislation in recent years.
+
+***Correction**: A previous version of this story misattributed a statement from Independence Blue Cross. The statement was from Dr. Ginny Calega, vice president of medical affairs.*
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> receives </i><a href="https://www.spotlightpa.org/support"><i>funding from nonprofit institutions and readers like you</i></a><i> who are committed to investigative journalism that gets results. Become a Founding Donor today at </i><a href="https://www.spotlightpa.org/"><i>spotlightpa.org</i></a><i>.</i>
