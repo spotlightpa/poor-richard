@@ -1,7 +1,7 @@
 +++
-image = "2020/02/lobby.jpeg"
-image-description = "Common Cause Pennsylvania, which helped champion the state's 2006 lobbying law, was fined $19,900 for breaking it. The group's executive director, Micah Sims (center), attributed the failure to technical difficulties."
-image-credit = "JAN MURPHY / PennLive"
+image = "2020/02/reform.jpeg"
+image-description = "Micah Sims, executive director of Common Cause Pennsylvania, speaks at the Capitol during the signing of an election reform bill on Oct. 31, 2019. The group, which helped champion the state's 2006 lobbying law, was fined $19,900 for breaking it. Sims attributed the failure to technical difficulties."
+image-credit = "Commonwealth Media Services"
 published = 2020-02-06T10:00:00.000Z
 authors = ["Daniel Simmons-Ritchie"]
 title = "Champion of Pa. lobbying disclosure law was fined $19,900 for breaking it"
