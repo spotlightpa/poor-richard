@@ -1,20 +1,16 @@
 +++
-arc-id = "UKR4JHS6UJFFHEHGTMNHSY6SVI"
-internal-id = "SPLLOBBY06"
-image-credit = "JAN MURPHY / PennLive"
-image-description = "Common Cause Pennsylvania, which helped champion the state's 2006 lobbying law, was fined $19,900 for breaking it. The group's executive director, Micah Sims (center), attributed the failure to technical difficulties."
 image = "2020/02/lobby.jpeg"
-slug = "pennsylvania-lobbying-law-ethics-commission-fine-common-cause"
-published = 2020-02-06T10:00:00Z
-internal-budget = "The Pennsylvania chapter of a national advocacy group known for its long-running campaign to improve lobbying transparency and government accountability has been fined for failing to disclose its lobbying expenses."
-title = "A group that championed Pennsylvania’s lobbying law was fined $19,900 for breaking it "
-subtitle = ""
+image-description = "Common Cause Pennsylvania, which helped champion the state's 2006 lobbying law, was fined $19,900 for breaking it. The group's executive director, Micah Sims (center), attributed the failure to technical difficulties."
+image-credit = "JAN MURPHY / PennLive"
+published = 2020-02-06T10:00:00.000Z
+authors = ["Daniel Simmons-Ritchie"]
+title = "Champion of Pa. lobbying disclosure law was fined $19,900 for breaking it"
 description = "Common Cause Pennsylvania attributed the error to technical difficulties, but state officials disputed that claim."
 blurb = "Common Cause Pennsylvania attributed the error to technical difficulties, but state officials disputed that claim."
-authors = ["Daniel Simmons-Ritchie"]
-linktitle = ""
 kicker = "Ethics"
+linktitle = ""
 weight = 1
+slug = "pennsylvania-lobbying-law-ethics-commission-fine-common-cause"
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/The Patriot-News. </i><a href="https://www.spotlightpa.org/" target=_blank><i>Sign up for our free weekly newsletter</i></a><i>.</i>
