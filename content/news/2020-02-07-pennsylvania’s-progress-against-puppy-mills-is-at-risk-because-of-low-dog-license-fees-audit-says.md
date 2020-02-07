@@ -9,6 +9,7 @@ title = "Pennsylvania’s progress against puppy mills is at risk because of low
 kicker = "Capitol Notebook"
 special-report = false
 suppress-featured = true
+slug = "pennsylvanias-progress-against-puppy-mills-is-at-risk-because-of-low-dog-license-fees-audit-says"
 +++
 **\*Capitol Notebook by[ Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
