@@ -1,6 +1,6 @@
 +++
 draft = false
-image = "2020/02/cappy.jpeg"
+image = "2020/02/01f3v52pv8afgvfs.jpeg"
 image-description = "Cappy, a onetime stray, was rescued outside the Capitol in Harrisburg and is now the Capitol Police's community service dog."
 image-credit = "Alyssa Biederman / Philadelphia Inquirer"
 published = 2020-02-07T16:33:20.179Z
