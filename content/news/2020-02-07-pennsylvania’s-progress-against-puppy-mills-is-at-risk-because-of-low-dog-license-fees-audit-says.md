@@ -11,9 +11,9 @@ special-report = false
 suppress-featured = true
 slug = "pennsylvanias-progress-against-puppy-mills-is-at-risk-because-of-low-dog-license-fees-audit-says"
 +++
-*__Capitol Notebook by[ Spotlight PA](https://www.spotlightpa.org/)__ provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
+***Capitol Notebook by[ Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
-HARRISBURG — The Pennsylvania bureau tasked with discovering puppy mills and handling dangerous dogs expects to run out of money by this summer, in part because license fees for the commonwealth’s canines are stuck at pre-2000 levels.
+HARRISBURG — The Pennsylvania bureau tasked with discovering puppy mills and handling dangerous dogs expects to run out of money by this summer, in part because license fees for the state's canines are stuck at pre-2000 levels.
 
 In a [report](https://www.paauditor.gov/press-releases/auditor-general-depasquale-fights-for-adequate-funding-to-continue-dog-law-enforcement-efforts) released Thursday, state Auditor General Eugene DePasquale said the Bureau of Dog Law Enforcement’s financial situation means it may no longer be able to “make sure dogs and puppies offered for sale or held in boarding facilities are kept in safe, humane conditions.”
 
