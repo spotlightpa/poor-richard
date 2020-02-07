@@ -22,6 +22,8 @@ In a statement, Micah Sims, the executive director of Common Cause Pennsylvania,
 
 “We have put in place a proactive process to address the filing issues and ensure that reports are always filed on time,” Sims said. “As a good government group advocating for increased transparency in politics and government we have a responsibility to model the benefits of transparency.”
 
+***» DONATE NOW and [show your support for Spotlight PA](https://www.spotlightpa.org/donate)’s team of journalists fighting for accountability in the state capital.***
+
 Scott Swenson, a spokesperson for Common Cause’s national office based in Washington, D.C., said that Common Cause remained confident in Sims' leadership.
 
 “Micah acknowledged his mistake and agreed with the board how to improve systems, so it doesn’t happen again,” Swenson said. “People make mistakes. Acknowledging and correcting them is what matters.”
