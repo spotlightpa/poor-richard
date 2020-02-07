@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 image = "2020/02/cappy.jpeg"
 image-description = "Cappy, a onetime stray, was rescued outside the Capitol in Harrisburg and is now the Capitol Police's community service dog."
 image-credit = "Alyssa Biederman / Philadelphia Inquirer"
