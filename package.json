@@ -36,6 +36,7 @@
     "bulma": "^0.8.0",
     "parcel-bundler": "^1.12.4",
     "postcss-cli": "^7.1.0",
+    "sass": "^1.25.0",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
@@ -51,7 +52,6 @@
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^6.1.2",
     "prettier": "^1.17.1",
-    "sass": "^1.25.0",
     "vue-hot-reload-api": "^2.3.4"
   }
 }
