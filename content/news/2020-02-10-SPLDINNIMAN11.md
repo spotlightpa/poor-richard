@@ -1,18 +1,15 @@
 +++
-arc-id = "A6RRWTTNMZBG7HPE4ZPRNRXDHY"
-internal-id = "SPLDINNIMAN11"
-image-credit = "David Swanson / Staff Photographer"
-image-description = "Pennsylvania State Sen. Andy Dinniman."
 image = "2020/02/01f43aap5gxfhdyj.jpeg"
-slug = "andy-dinniman-retirement-pennsylvania"
-published = 2020-02-10T17:36:00Z
-internal-budget = "Longtime state Sen. Andy Dinniman announced he will not seek reelection this year."
+image-description = "Pennsylvania State Sen. Andy Dinniman."
+image-credit = "David Swanson / Staff Photographer"
+published = 2020-02-10T17:36:00.000Z
+authors = ["Cynthia Fernandez"]
 title = "The Pennsylvania Senate's most outspoken pipeline critic is retiring"
-subtitle = ""
 description = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
 blurb = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
-authors = ["Cynthia Fernandez"]
 kicker = "Capitol Notebook"
+suppress-featured = true
+slug = "andy-dinniman-retirement-pennsylvania"
 +++
 
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
