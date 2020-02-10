@@ -11,16 +11,15 @@ kicker = "Capitol Notebook"
 suppress-featured = true
 slug = "andy-dinniman-retirement-pennsylvania"
 +++
-
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
 
-Pennsylvania State Sen. Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of <a href="https://www.inquirer.com/business/energy/mariner-east-pipeline-fbi-investigation-pennsylvania-governor-tom-wolf-20191113.html" target=_blank>the Mariner East pipeline system</a>, will not seek reelection later this year, his office has announced.
+Pennsylvania state Sen. Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of <a href="https://www.inquirer.com/business/energy/mariner-east-pipeline-fbi-investigation-pennsylvania-governor-tom-wolf-20191113.html" target=_blank>the Mariner East pipeline system</a>, will not seek reelection later this year, his office has announced.
 
 Dinniman revealed his plans to retire shortly after his wife, Margo, underwent surgery.
 
 “For nearly 30 years, as your Chester County commissioner and state senator, I have had the privilege of building a close relationship with the people of Chester County," he said in <a href="https://www.senatordinniman.com/senator-dinniman-announces-retirement" target=_blank>a statement</a> late last week. “This was a very tough decision, especially knowing just how many of you have faithfully and tirelessly supported my work over the years. However, as I sit at Penn Presbyterian Medical Center with my wife, Margo, who is now recovering from surgery, we both came to the sudden realization this was not the time to run again.”
 
-Dinniman was elected to the State Senate in 2006 and serves as the ranking Democrat on the Education Committee. But he’s best known for his outspoken criticism of Sunoco’s Mariner East pipelines, which run through his county.
+Dinniman was elected to the state Senate in 2006 and serves as the ranking Democrat on the Education Committee. But he’s best known for his outspoken criticism of Sunoco’s Mariner East pipelines, which run through his county.
 
 In the legislature, Dinniman has introduced bills to reform pipeline safety regulations. He also brought a formal complaint and emergency petition before the state Public Utility Commission, which halted <a href="https://www.inquirer.com/philly/business/energy/puc-halts-sunoco-mariner-east-me2-pipeline-dinniman-20180524.html" target="_blank">operation</a> and <a href="https://www.inquirer.com/philly/business/energy/puc-allows-mariner-east-me1-pipeline-to-restart-west-whiteland-20180614.html" target="_blank">construction</a> of Mariner pipelines in 2018. A state Commonwealth Court panel later ruled Dinniman <a href="https://www.inquirer.com/business/energy/mariner-east-pipeline-dinniman-case-pennsylvania-court-ruling-20190909.html" target="_blank">didn’t have standing to bring the challenge</a> and allowed pipeline construction to resume.
 
@@ -34,6 +33,6 @@ Dinniman joins more than a dozen other state lawmakers who have announced their 
 
 Before he was a state senator, Dinniman served for 15 years as Chester County commissioner. He founded an emergency housing shelter and created a program that works with local farms to redistribute surplus produce. He also served on the Downingtown Area School Board and taught at West Chester University.
 
-“[P]lease know that I will continue to work hard for you until the very last day of my term,” he said in the statement.
+“\[P]lease know that I will continue to work hard for you until the very last day of my term,” he said in the statement.
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> receives </i><a href="https://www.spotlightpa.org/support"><i>funding from nonprofit institutions and readers like you</i></a><i> who are committed to investigative journalism that gets results. Become a Founding Donor today at </i><a href="https://www.spotlightpa.org/"><i>spotlightpa.org</i></a><i>.</i>
