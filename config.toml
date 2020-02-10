@@ -10,6 +10,15 @@ googleAnalytics = "UA-141126362-1"
 [markup]
   defaultMarkdownHandler = "goldmark"
 
+[markup.goldmark.extensions]
+  definitionList = false
+  footnote = false
+  linkify = false
+  strikethrough = false
+  table = false
+  taskList = false
+  typographer = true
+
 [markup.goldmark.renderer]
   unsafe = true
 
