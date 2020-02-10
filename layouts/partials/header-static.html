@@ -1,5 +1,12 @@
 <!-- header tags that are the same on all pages -->
 
+{{ $fonts := resources.Get "css/fonts.css" }}
+<style type="text/css">
+  {{ $fonts.Content | safeCSS }}
+</style>
+
+<link rel="stylesheet" href='{{ partial "get-src" "style.css" }}'>
+
 <script src='{{ partial "get-src" "main.js" }}' defer></script>
 
 {{ range slice "500" "800" }}
