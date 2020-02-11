@@ -10,7 +10,8 @@ kicker = "Ethics"
 special-report = false
 suppress-featured = true
 slug = "pennsylvania-lobbying-law-common-cause-apologizes-fine"
-url = "pennsylvania-lobbying-law-common-cause-apologizes-fine"
+aliases = ["/pennsylvania-lobbying-law-common-cause-apologizes-fine/"]
+series = ["Common Cause fine"]
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/The Patriot-News. </i><a href="https://www.spotlightpa.org/" target=_blank><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 

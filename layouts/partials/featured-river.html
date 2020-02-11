@@ -1,14 +1,10 @@
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $featuredStory := where $news.RegularPages ".Params.suppress-featured" "!=" true | first 1 }}
-{{ $related := where $news.RegularPages ".Params.special-report" true | complement $featuredStory}}
-{{ $features := append $related $featuredStory }}
 {{ $pages := $news.RegularPages | complement $featuredStory }}
 <section class="section" data-ga-action="Homepage link">
   <div class="container-hp">
     <div class="tile is-ancestor is-vertical">
-      {{ if gt (len $features) 0 }}
-        {{ partial "tile-featured.html" $features }}
-      {{ end }}
+      {{ partial "tile-featured.html" $featuredStory }}
       <div class="tile">
         {{ range $page := first 3 $pages }}
           <div class="tile is-parent is-4 has-margin-top-negative">

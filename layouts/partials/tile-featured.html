@@ -63,9 +63,16 @@
           {{ $featuredParams.blurb }}
         </h2>
       {{ end }}
-      {{ if gt (len .) 1 }}
+      {{ $seriesArticles := slice }}
+      {{ with  $series := $featuredParams.series }}
+        {{ $pages := $series | urlize | site.Taxonomies.series.Get }}
+        {{ $otherPages := where $pages ".Permalink" "ne" $featured.Permalink }}
+        {{ $seriesArticles = $seriesArticles | append $otherPages }}
+      {{ end }}
+
+      {{ if gt (len $seriesArticles) 0 }}
         <ul class="is-size-5 related" data-ga-action="Homepage top feature related">
-          {{ range after 1 . }}
+          {{ range $seriesArticles }}
             <li>
               <a href="{{ .RelPermalink }}" class="has-text-black hover-underline">
                 {{ .LinkTitle }}

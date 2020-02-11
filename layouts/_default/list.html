@@ -15,12 +15,14 @@
                   href="{{ .RelPermalink }}"
                 >{{ .Param "subhed" }}</a>
               </h2>
-              <time
-                class="subtitle is-5"
-                datetime='{{ .PublishDate.Local.Format $isoFormat }}'
-              >
-                {{ .PublishDate.Format "Monday, January 2, 2006" }}
-              </time>
+              {{ if not .PublishDate.IsZero }}
+                <time
+                  class="subtitle is-5"
+                  datetime='{{ .PublishDate.Local.Format $isoFormat }}'
+                >
+                  {{ .PublishDate.Format "Monday, January 2, 2006" }}
+                </time>
+              {{ end }}
             </div>
           </div>
         </div>

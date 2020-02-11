@@ -30,6 +30,7 @@ googleAnalytics = "UA-141126362-1"
 
 [taxonomies]
   author = "authors"
+  series = "series"
 
 [frontmatter]
     date  = [":default", ":filename"]
@@ -91,6 +92,10 @@ target = "static/js"
 [[module.mounts]]
 source = "static"
 target = "static"
+
+[[related.indices]]
+  name  = "series"
+  weight = 200
 
 [[related.indices]]
   name = "title"
