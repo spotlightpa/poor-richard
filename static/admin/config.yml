@@ -44,6 +44,11 @@ yaml-definitions: &page-fields
     widget: datetime
     hint: "Note that future dated articles will not be published on the live site"
     required: false
+  - label: Slug
+    name: slug
+    widget: string
+    required: false
+    hint: "If unset, URL will use hed/title. Do not change hed without setting slug."
   - label: Authors
     label_singular: author
     name: authors
@@ -95,12 +100,6 @@ yaml-definitions: &page-fields
     hint: "When linking to this page from another page, use this as the link title instead of hed"
     widget: string
     required: false
-  - label: Special Report
-    name: special-report
-    widget: boolean
-    hint: "Add 'special report' label on homepage"
-    default: false
-    required: false
   - label: Suppress in featured slot
     name: suppress-featured
     widget: boolean
@@ -112,6 +111,15 @@ yaml-definitions: &page-fields
     widget: number
     required: false
     hint: "Use this to manually order stories on the homepage"
+  - label: Series
+    label_singular: series
+    name: series
+    widget: list
+    hint: "For articles in a series, provide a series name"
+    default: []
+    field:
+      label: Name
+      widget: string
   - label: "Suppress title"
     name: suppress-title
     widget: boolean
@@ -126,10 +134,6 @@ yaml-definitions: &page-fields
     name: no-index
     hint: "Hide page on Google etc."
     widget: boolean
-    required: false
-  - label: Slug
-    name: slug
-    widget: string
     required: false
   - label: "Override URL"
     name: url
