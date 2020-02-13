@@ -1,16 +1,13 @@
 +++
-kicker = "Business"
-title="Millions of dollars in Pa. tax credits may not be paying off for taxpayers"
+image = "2020/02/01f4akrqrpy6thwx.jpeg"
+image-credit = "(Kalim A. Bhatti / Philadelphia Inquirer)"
 published = 2020-02-13T10:00:00.000Z
+slug = "millions-of-dollars-in-tax-credits-may-not-pay-off"
 authors = ["Charlotte Keith"]
-linkto = "Millions of dollars in tax credits may not be paying off for Pennsylvanians"
+title = "Millions of dollars in Pa. tax credits may not be paying off for taxpayers"
 description = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
 blurb = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
-image = "2020/02/01f48ccesjhsm0nk.jpeg"
-image-caption = "State Sen. Vincent Hughes (D., Philadelphia) pushed to require the Independent Fiscal Office to review tax credit performance every five years. "
-image-credit = "Tyger Williams / Philadelphia Inquirer"
-slug = "millions-of-dollars-in-tax-credits-may-not-pay-off"
-
+kicker = "Business"
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
