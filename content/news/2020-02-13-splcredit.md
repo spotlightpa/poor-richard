@@ -1,3 +1,17 @@
++++
+kicker = "Business"
+title="Millions of dollars in Pa. tax credits may not be paying off for taxpayers"
+published = 2020-02-13T10:00:00.000Z
+authors = ["Charlotte Keith"]
+linkto = "Millions of dollars in tax credits may not be paying off for Pennsylvanians"
+description = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
+blurb = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
+image = "2020/02/01f48ccesjhsm0nk.jpeg"
+image-caption = "State Sen. Vincent Hughes (D., Philadelphia) pushed to require the Independent Fiscal Office to review tax credit performance every five years. "
+image-credit = "Tyger Williams / Philadelphia Inquirer"
+slug = "millions-of-dollars-in-tax-credits-may-not-pay-off"
+
++++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
 HARRISBURG — A state tax credit to encourage Pennsylvanians to donate their bone marrow hasn’t been used once in the more than five years since it was signed into law.
@@ -42,7 +56,7 @@ In its current form, the tax credit is “just a subsidy,” said Rep. George Du
 
 Another program reviewed by the fiscal office, the Keystone Innovation Zone tax credit, was created to benefit start-up companies operating near universities throughout the state, encouraging entrepreneurship. A lack of reliable data, however, makes quantifying its economic impact “very difficult,” the fiscal office found.
 
-The state Department of Community &amp; Economic Development says the program has helped create more than 11,000 jobs since its creation, keeping more than 3,500 college graduates in the state. 
+The state Department of Community &amp; Economic Development says the program has helped create more than 11,000 jobs since its creation, keeping more than 3,500 college graduates in the state.
 
 But those numbers are reported by companies receiving the tax credits and aren’t checked by the department, the fiscal office noted. The state also doesn’t track how much the jobs pay, if the companies receive other tax credits or grants, or how graduates fare after leaving the program.
 
