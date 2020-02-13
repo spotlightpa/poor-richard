@@ -1,7 +1,7 @@
 +++
 draft = false
-image = "2019/11/state-sens.jpeg"
-image-credit = "The Philadelphia Inquirer"
+image = "2020/02/01f49cpwqh5cw3qn.jpeg"
+image-credit = "MATT ROURKE / AP"
 published = 2020-02-13T01:47:28.588Z
 slug = "joe-scarnati-pennsylvania-senate-retirement"
 authors = ["Angela Couloumbis"]
