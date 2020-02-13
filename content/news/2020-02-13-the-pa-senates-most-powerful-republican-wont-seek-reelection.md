@@ -21,7 +21,7 @@ Senate President Pro Tempore Joe Scarnati (R., Jefferson) said in a statement th
 
 Scarnati has for the better part of a decade helped set the policy agenda in the Capitol. He has also been a prolific fundraiser for Republican legislative candidates across the state, a role he was widely expected to step into again in this critical election year, when Democrats in both chambers are seeking to take the majority.
 
-Scarnati is the second top Republican to announce his retirement. In January, House Speaker Mike Turzai (R., Allegheny) said[he will not run](https://www.spotlightpa.org/news/2020/01/mike-turzai-pennsylvania-house-speaker-retiring/ "https\://www.spotlightpa.org/news/2020/01/mike-turzai-pennsylvania-house-speaker-retiring/")for another two-year-term.
+Scarnati is the second top Republican to announce his retirement. In January, House Speaker Mike Turzai (R., Allegheny) said [he will not run](https://www.spotlightpa.org/news/2020/01/mike-turzai-pennsylvania-house-speaker-retiring/ "https\://www.spotlightpa.org/news/2020/01/mike-turzai-pennsylvania-house-speaker-retiring/") for another two-year-term.
 
 *This story will be updated.*
 
