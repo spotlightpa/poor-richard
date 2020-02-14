@@ -62,9 +62,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style scoped>
-.fade {
-  transition: all 0.5s ease;
-}
-</style>

@@ -48,6 +48,7 @@ export default {
     rows="bulmaoverride"
     :class="size"
     contenteditable
+    style="white-space: pre-wrap;"
     @click="click"
     @blur="isFocused = false"
     @focus="select"
@@ -55,9 +56,3 @@ export default {
     <slot></slot>
   </div>
 </template>
-
-<style scoped>
-.pre-wrap {
-  white-space: pre-wrap;
-}
-</style>
