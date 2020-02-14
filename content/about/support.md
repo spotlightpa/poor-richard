@@ -18,7 +18,7 @@ To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donat
 
 ## Major Donors
 
-Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Erie Community Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Lancaster Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Poor Richard’s Charitable Trust <br> The Snider Foundation <br> The Steinman Foundation <br> Wyncote Foundation <br> York County Community Foundation <br>
+Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Erie Community Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Lancaster Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> The Snider Foundation <br> The Steinman Foundation <br> Wyncote Foundation <br> York County Community Foundation <br>
 
 ## Founding Donors
 
@@ -36,6 +36,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * David Ashton
 * Susan Auchincloss
 * David Auel
+* J. Bader
 * Kathleen Baker
 * Whitney Baldwin
 * John William Ball
@@ -94,6 +95,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Mike Del Vacchio
 * Fran DeMillion
 * Barry DeSantis
+* Michael DiNunzio 
 * Earl Drumheiser
 * Stephen Duncan
 * Edwin Dunckley
@@ -109,6 +111,7 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Rosa & Alberto Esquenazi
 * Frank Evelhoch II
 * C. Fairchild
+* James Falls
 * J. Fauls
 * B. Faulstick
 * T. Fehr
@@ -288,6 +291,8 @@ Laura and John Arnold <br> The Foundation for Enhancing Communities <br> The Eri
 * Barry Shutt
 * Claudia H. Siegel
 * Josh Singer
+* Robert Smith
+* Sallie K. Smith
 * Lucas Smolcic Larson
 * Susan Spaziani & John Williamson 
 * Michael Sperger
