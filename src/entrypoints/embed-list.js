@@ -35,11 +35,10 @@ window.splEmbedList = function() {
             .join("&");
       }
       // set URL on the obj
-      this.srcEl.dataset.splSrc = url;
       if (this.srcEl.shadowRoot) {
         this.srcEl.shadowRoot.querySelector("iframe").src = url;
       }
-      // set embedCode from the inner HTML
+      // set embedCode to copy
       this.embedCode = `<script src="${this.scriptSrc}" async></` +
          `script><div data-spl-embed-version="1" data-spl-src="${url}"></div>`
     },
