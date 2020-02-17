@@ -9,22 +9,21 @@
   >
     <div class="column is-three-fifths">
       {{ range $page := .Pages }}
+        {{ $params := .Param "page-query-params" }}
+        {{ $scriptSrc := absURL "/embed.js" }}
+        {{ if .Site.IsServer }}
+          {{ $scriptSrc = "http://localhost:1234/embed-host.js" }}
+        {{ end }}
+
+        {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
         <div
           class="box has-background-light"
           x-data="splEmbedList()"
-          x-init="init($el, $refs)"
+          x-init="init()"
           data-url="{{ .Permalink }}"
+          data-script-src="{{ $scriptSrc }}"
         >
           <h2 class="title is-spaced">{{ .Title }}</h2>
-
-          {{ $params := .Param "page-query-params" }}
-          {{ $scriptSrc := absURL "/embed.js" }}
-          {{ if .Site.IsServer }}
-            {{ $scriptSrc = "http://localhost:1234/embed-host.js" }}
-          {{ end }}
-
-          {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
-
           <div class="block">
             {{ if $params }}
               <h2 class="subtitle is-4">

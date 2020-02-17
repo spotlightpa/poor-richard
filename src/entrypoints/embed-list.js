@@ -1,63 +1,67 @@
 import "alpinejs";
 
-window.splEmbedList = () => ({
-  embedCode: "",
-  baseURL: "",
-  paramEls: null,
-  srcEl: null,
-  codeEl: null,
-  debounceID: null,
-  showCopied: false,
+window.splEmbedList = function() {
+  return {
+    embedCode: "",
+    baseURL: "",
+    scriptSrc: "",
+    paramEls: null,
+    srcEl: null,
+    debounceID: null,
+    showCopied: false,
 
-  init($el, $refs) {
-    this.baseURL = $el.dataset.url;
-    this.paramEls = Array.from($el.querySelectorAll("input[name]"));
-    this.srcEl = $el.querySelector("[data-spl-src]");
-    this.codeEl = $refs.code;
-    this.embedCodeEl = $refs.embedCodeEl;
-    this.setEmbedCode();
-  },
-  setEmbedCode() {
-    // go through the params and make the URL
-    let url = this.baseURL;
-    let params = [];
-    for (let paramEl of this.paramEls) {
-      let { name, value } = paramEl;
-      if (value) {
-        params.push({ name, value });
+    init() {
+      this.scriptSrc = this.$el.dataset.scriptSrc;
+      this.baseURL = this.$el.dataset.url;
+      this.paramEls = Array.from(this.$el.querySelectorAll("input[name]"));
+      this.srcEl = this.$el.querySelector("[data-spl-src]");
+      this.setEmbedCode();
+    },
+    setEmbedCode() {
+      // go through the params and make the URL
+      let url = this.baseURL;
+      let params = [];
+      for (let paramEl of this.paramEls) {
+        let { name, value } = paramEl;
+        if (value) {
+          params.push({ name, value });
+        }
       }
-    }
-    if (params.length) {
-      url +=
-        "?" +
-        params
-          .map(({ name, value }) => name + "=" + encodeURIComponent(value))
-          .join("&");
-    }
-    // set URL on the obj
-    this.srcEl.dataset.splSrc = url;
-    if (this.srcEl.shadowRoot) {
-      this.srcEl.shadowRoot.querySelector("iframe").src = url;
-    }
-    // get embedCode from the inner HTML
-    this.embedCode = this.codeEl.innerHTML.trim();
-  },
-  copy() {
-    let selection = window.getSelection();
-    selection.removeAllRanges();
-    let range = document.createRange();
-    range.selectNodeContents(this.embedCodeEl);
-    selection.addRange(range);
+      if (params.length) {
+        url +=
+          "?" +
+          params
+            .map(({ name, value }) => name + "=" + encodeURIComponent(value))
+            .join("&");
+      }
+      // set URL on the obj
+      this.srcEl.dataset.splSrc = url;
+      if (this.srcEl.shadowRoot) {
+        this.srcEl.shadowRoot.querySelector("iframe").src = url;
+      }
+      // set embedCode from the inner HTML
+      this.embedCode = `<script src="${this.scriptSrc}" async></` +
+         `script><div data-spl-embed-version="1" data-spl-src="${url}"></div>`
+    },
+    copy() {
+      let selection = window.getSelection();
+      selection.removeAllRanges();
+      let range = document.createRange();
+      range.selectNodeContents(this.$refs.embedCodeEl);
+      selection.addRange(range);
 
-    if (document.execCommand("copy")) {
-      setTimeout(() => {
-        this.showCopied = true;
-        setTimeout(() => (this.showCopied = false), 5000);
-      }, 500);
+      if (document.execCommand("copy")) {
+        setTimeout(() => {
+          this.showCopied = true;
+          setTimeout(() => {
+            this.showCopied = false;
+          }, 5000);
+        }, 500);
+      }
+    },
+    updateParam() {
+      clearTimeout(this.debounceID);
+      this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
     }
-  },
-  updateParam() {
-    clearTimeout(this.debounceID);
-    this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
-  }
-});
+  };
+};
