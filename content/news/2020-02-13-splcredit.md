@@ -8,6 +8,7 @@ title = "Millions of dollars in Pa. tax credits may not be paying off for taxpay
 description = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
 blurb = "In the most recent fiscal year, the state gave away more than $500 million in tax credits through dozens of programs. But an independent office tasked with reviewing them is questioning whether some are really paying dividends for taxpayers."
 kicker = "Business"
+weight = 2
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
