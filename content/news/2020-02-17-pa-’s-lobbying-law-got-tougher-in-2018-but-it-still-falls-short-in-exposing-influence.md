@@ -7,8 +7,8 @@ published = 2020-02-17T13:32:33.946Z
 slug = "pennsylvania-lobbying-law-influence-disclosure"
 authors = ["Daniel Simmons-Ritchie"]
 title = "Pa.’s lobbying law got tougher in 2018. But it still falls short in exposing influence. "
-kicker = "Disclosure"
-suppress-featured = true
+kicker = "Transparency"
+suppress-featured = false
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/The Patriot-News. </i><a href="https://www.spotlightpa.org/" target=_blank><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
