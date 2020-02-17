@@ -39,8 +39,9 @@ window.splEmbedList = function() {
         this.srcEl.shadowRoot.querySelector("iframe").src = url;
       }
       // set embedCode to copy
-      this.embedCode = `<script src="${this.scriptSrc}" async></` +
-         `script><div data-spl-embed-version="1" data-spl-src="${url}"></div>`
+      this.embedCode =
+        `<script src="${this.scriptSrc}" async></script>` +
+        `<div data-spl-embed-version="1" data-spl-src="${url}"></div>`;
     },
     copy() {
       let selection = window.getSelection();
