@@ -9,7 +9,12 @@
   >
     <div class="column is-three-fifths">
       {{ range $page := .Pages }}
-        <div class="box has-background-light">
+        <div
+          class="box has-background-light"
+          x-data="splEmbedList()"
+          x-init="init($el, $refs)"
+          data-url="{{ .Permalink }}"
+        >
           <h2 class="title is-spaced">{{ .Title }}</h2>
 
           {{ $params := .Param "page-query-params" }}
@@ -19,12 +24,78 @@
           {{ end }}
 
           {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
-          <script type="application/ld+json" class="js-embed-list-item">
-            {{ $page | jsonify | safeJS }}
-          </script>
+
+          <div class="block">
+            {{ if $params }}
+              <h2 class="subtitle is-4">
+                Parameters:
+              </h2>
+              {{ range $param := $params }}
+                <div class="field">
+                  <label for="{{ $param.name }}-field" class="label">
+                    {{ $param.hint }}
+                  </label>
+                  <div class="control">
+                    <input
+                      id="{{ $param.name }}-field"
+                      placeholder="{{ $param.default }}"
+                      type="text"
+                      class="input"
+                      name="{{ $param.name }}"
+                      @input="updateParam()"
+                    >
+                  </div>
+                </div>
+              {{ end }}
+            {{ end }}
+
+            <h3 class="subtitle is-4">
+              Code:
+            </h3>
+            <div class="has-margin-bottom" description="embed code">
+              <div class="field">
+                <div class="control">
+                  <div
+                    rows="bulmaoverride"
+                    contenteditable="true"
+                    class="textarea pre-wrap"
+                    x-text="embedCode"
+                    x-ref="embedCodeEl"
+                  >
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="buttons">
+                  <button
+                    type="button"
+                    title="Copy"
+                    class="button is-primary has-text-weight-semibold"
+                    @click="copy()"
+                  >
+                    <span class="icon">
+                      {{ $iconCopy := resources.Get "@fontawesome/regular/copy.svg" }}
+                      {{ $iconCopy.Content|safeHTML }}
+                    </span>
+                    <span>
+                      Copy text
+                    </span>
+                  </button>
+                  <div
+                    x-show="showCopied"
+                    class="tag is-rounded is-success is-light has-text-weight-semibold"
+                  >
+                    Copied
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <h3 class="subtitle is-4">Sample:</h3>
-          {{ partial "embed-code.html" $page }}
+          <div x-ref="code">
+            {{ partial "embed-code.html" $page }}
+          </div>
         </div>
       {{ end }}
     </div>
