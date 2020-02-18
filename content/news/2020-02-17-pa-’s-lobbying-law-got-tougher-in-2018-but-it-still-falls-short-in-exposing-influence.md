@@ -7,6 +7,8 @@ published = 2020-02-17T13:32:33.946Z
 slug = "pennsylvania-lobbying-law-influence-disclosure"
 authors = ["Daniel Simmons-Ritchie"]
 title = "Pa.’s lobbying law got tougher in 2018. But it still falls short in exposing influence. "
+description = "Unlike in New Jersey and New York, Pennsylvania lobbyists and lobbying groups do not have to report the bills or lawmakers they’re targeting or the positions they’re advocating for."
+blurb = "Unlike in New Jersey and New York, Pennsylvania lobbyists and lobbying groups do not have to report the bills or lawmakers they’re targeting or the positions they’re advocating for."
 kicker = "Transparency"
 suppress-featured = false
 +++
