@@ -1166,6 +1166,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+alpinejs@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-1.12.0.tgz#d252d94cab899bf2674619b41b81308c6ed5415c"
+  integrity sha512-0Kd2RjnIb2xynGn3VNy36pzz23NK2MUXba9bsP9LSZY0BkIX58P7YxMadPGye0pZIGywiiw6L4z47X/t3mPurA==
+
 ansi-escapes@^4.2.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.0.tgz#a4ce2b33d6b214b7950d8595c212f12ac9cc569d"

@@ -1,21 +1,66 @@
-import Vue from "vue";
+import "alpinejs";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCopy } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+window.splEmbedList = function() {
+  return {
+    embedCode: "",
+    baseURL: "",
+    scriptSrc: "",
+    paramEls: null,
+    srcEl: null,
+    debounceID: null,
+    showCopied: false,
 
-library.add(faCopy);
+    init() {
+      this.scriptSrc = this.$el.dataset.scriptSrc;
+      this.baseURL = this.$el.dataset.url;
+      this.paramEls = Array.from(this.$el.querySelectorAll("input[name]"));
+      this.srcEl = this.$el.querySelector("[data-spl-src]");
+      this.setEmbedCode();
+    },
+    setEmbedCode() {
+      // go through the params and make the URL
+      let url = this.baseURL;
+      let params = [];
+      for (let paramEl of this.paramEls) {
+        let { name, value } = paramEl;
+        if (value) {
+          params.push({ name, value });
+        }
+      }
+      if (params.length) {
+        url +=
+          "?" +
+          params
+            .map(({ name, value }) => name + "=" + encodeURIComponent(value))
+            .join("&");
+      }
+      // set URL on the obj
+      if (this.srcEl.shadowRoot) {
+        this.srcEl.shadowRoot.querySelector("iframe").src = url;
+      }
+      // set embedCode to copy
+      this.embedCode =
+        `<script src="${this.scriptSrc}" async></script>` +
+        `<div data-spl-embed-version="1" data-spl-src="${url}"></div>`;
+    },
+    copy() {
+      let selection = window.getSelection();
+      selection.removeAllRanges();
+      let range = document.createRange();
+      range.selectNodeContents(this.$refs.embedCodeEl);
+      selection.addRange(range);
 
-Vue.component("font-awesome-icon", FontAwesomeIcon);
-
-import EmbedListWrapper from "../components/EmbedListWrapper.vue";
-import { each } from "../utils/dom-utils.js";
-
-var EmbedListWrapperComp = Vue.extend(EmbedListWrapper);
-
-each(".js-embed-list-item", el => {
-  let data = JSON.parse(el.innerText);
-  new EmbedListWrapperComp({
-    propsData: { data }
-  }).$mount(el);
-});
+      if (document.execCommand("copy")) {
+        selection.removeAllRanges();
+        this.showCopied = true;
+        setTimeout(() => {
+          this.showCopied = false;
+        }, 5000);
+      }
+    },
+    updateParam() {
+      clearTimeout(this.debounceID);
+      this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
+    }
+  };
+};
