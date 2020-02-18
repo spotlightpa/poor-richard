@@ -1,6 +1,6 @@
 +++
 image = "2020/02/01f4akrqrpy6thwx.jpeg"
-image-credit = "(Kalim A. Bhatti / Philadelphia Inquirer)"
+image-credit = "Kalim A. Bhatti / Philadelphia Inquirer"
 published = 2020-02-13T10:00:00.000Z
 slug = "millions-of-dollars-in-tax-credits-may-not-pay-off"
 authors = ["Charlotte Keith"]
