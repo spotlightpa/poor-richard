@@ -437,3 +437,7 @@ $margin-sizes: (
   /* autoprefixer: off */
   -ms-flex-preferred-size: auto; /* IE 11 fix */
 }
+
+[x-cloak] {
+  display: none;
+}

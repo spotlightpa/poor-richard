@@ -37,7 +37,7 @@
                   <div class="control">
                     <input
                       id="{{ $param.name }}-field"
-                      placeholder="{{ $param.default }}"
+                      placeholder="{{ $param.placeholder }}"
                       type="text"
                       class="input"
                       name="{{ $param.name }}"
@@ -81,7 +81,12 @@
                     </span>
                   </button>
                   <div
+                    x-cloak
                     x-show="showCopied"
+                    x-transition:enter="fade-enter-active"
+                    x-transition:enter-start="fade-enter"
+                    x-transition:leave="fade-leave-active"
+                    x-transition:leave-end="fade-leave-to"
                     class="tag is-rounded is-success is-light has-text-weight-semibold"
                   >
                     Copied

@@ -4,5 +4,3 @@ type = "embed-page"
 
 embed-partial = "embed-newsletter.html"
 +++
-
-{{<newsletter-inline>}}

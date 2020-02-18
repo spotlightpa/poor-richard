@@ -51,12 +51,11 @@ window.splEmbedList = function() {
       selection.addRange(range);
 
       if (document.execCommand("copy")) {
+        selection.removeAllRanges();
+        this.showCopied = true;
         setTimeout(() => {
-          this.showCopied = true;
-          setTimeout(() => {
-            this.showCopied = false;
-          }, 5000);
-        }, 500);
+          this.showCopied = false;
+        }, 5000);
       }
     },
     updateParam() {
