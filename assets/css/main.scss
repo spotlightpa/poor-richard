@@ -114,7 +114,7 @@ body {
   }
   &.is-on-gradient::before {
     content: "";
-    background: linear-gradient(hsla(0, 0, 0, 0.2) 50%, hsla(0, 0, 0, 0));
+    background: linear-gradient(hsla(0, 0, 0, 0) 85%, hsla(0, 0, 0, 0.6));
     height: 100%;
     left: 0;
     position: absolute;
@@ -440,4 +440,16 @@ $margin-sizes: (
 
 [x-cloak] {
   display: none;
+}
+
+.content p::first-letter {
+  -webkit-initial-letter: 2;
+  initial-letter: 2;
+  color: $papost-green;
+  font-weight: $weight-semibold;
+  margin-right: 0.75rem;
+}
+
+.scene.active {
+  background-color: red !important;
 }

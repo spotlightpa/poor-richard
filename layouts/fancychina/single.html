@@ -1,0 +1,60 @@
+{{ define "nav" }}
+  {{ $bgImg := resources.Get "/img/pipeline/backhoe.jpeg" }}
+  {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
+  <style>
+  #about-hero {
+    background-image: url('{{ $bgImg.RelPermalink }}');
+    background-position: 80%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  </style>
+  <section class="hero is-black has-bg-image is-on-gradient is-fullheight" id="about-hero">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <svg viewBox="0 0 1024 190">
+                <desc>Spotlight PA logo</desc>
+                <use xlink:href="#logo-svg"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">
+          Digging Up Trouble
+        </h1>
+        <h2 class="subtitle is-1">
+          Rebecca Moss | <strong>Spotlight PA</strong>
+        </h2>
+      </div>
+    </div>
+  </section>
+{{ end }}
+{{ define "footer" }} <!-- --> {{ end }}
+{{ define "modal" }} <!-- --> {{ end }}
+
+{{ define "extra-head" }}
+  <script src='{{ partial "get-src" "embed-frame.js" }}' defer></script>
+{{ end }}
+
+{{ define "main" }}
+<section class="section" style="padding-right: 8rem; padding-left: 8rem;">
+  <article class="content is-medium">
+    {{ .Content }}
+  </article>
+</section>
+{{end }}
+
