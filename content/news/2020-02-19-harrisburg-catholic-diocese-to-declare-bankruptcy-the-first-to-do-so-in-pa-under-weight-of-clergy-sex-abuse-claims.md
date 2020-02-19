@@ -12,7 +12,7 @@ blurb = "The move comes six months after the diocese announced it had paid out $
 kicker = "Religion"
 suppress-featured = false
 +++
-***[Spotlight PA](https://www.spotlightpa.org/)** is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter.](https://www.spotlightpa.org/newsletters/)*
+_**[Spotlight PA](https://www.spotlightpa.org/)** is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter.](https://www.spotlightpa.org/newsletters/)_
 
 The Diocese of Harrisburg filed for bankruptcy Wednesday, becoming the first of Pennsylvania’s eight Roman Catholic dioceses to seek protection from financial claims in the aftermath of a scathing 2018 grand jury report that revealed decades of sexual abuse and cover-up by the church’s top leaders.
 
