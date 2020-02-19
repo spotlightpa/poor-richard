@@ -89,22 +89,28 @@ url = "/about/mission/"
 weight = 2
 
 [[about]]
+name = "Partners"
+pre = "is-uppercase"
+url = "/about/partners/"
+weight = 3
+
+[[about]]
 name = "Staff"
 pre = "is-uppercase"
 url = "/about/staff/"
-weight = 3
+weight = 4
 
 [[about]]
 name = "Diversity"
 pre = "is-uppercase"
 url = "/about/diversity/"
-weight = 4
+weight = 5
 
 [[about]]
 name = "FAQ"
 pre = ""
 url = "/about/faq/"
-weight = 5
+weight = 6
 
 [[social]]
 name = "Facebook"

@@ -27,3 +27,81 @@ name = "PA Post"
 slug = "papost"
 url = "https://papost.org"
 logotype = "svg"
+
+[[partners]]
+name = "York Dispatch"
+slug = "york-dispatch"
+url = "https://www.yorkdispatch.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "The Citizens’ Voice"
+slug = "citizens-voice"
+url = "https://www.citizensvoice.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Bucks County Courier Times"
+slug = "courier-times"
+url = "https://www.buckscountycouriertimes.com"
+logotype = "png"
+
+[[partners]]
+name = "The Daily Review"
+slug = "daily-review"
+url = "https://www.thedailyreview.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Gettysburg Times"
+slug = "gettysburg-times"
+url = "http://www.gettysburgtimes.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "The Intelligencer"
+slug = "intelligencer"
+url = "https://www.theintell.com"
+logotype = "png"
+
+[[partners]]
+name = "Levittown Now.com"
+slug = "levittown-now"
+url = "https://levittownnow.com"
+logotype = "png"
+
+[[partners]]
+name = "The Morning Call"
+slug = "morning-call"
+url = "https://www.mcall.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Newtown, PA Now.com"
+slug = "newtown-now"
+url = "http://newtownpanow.com"
+logotype = "png"
+
+[[partners]]
+name = "Republican Herald"
+slug = "republican-herald"
+url = "https://republicanherald.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Standard Speaker"
+slug = "standard-speaker"
+url = "https://www.standardspeaker.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "The Times-Tribune"
+slug = "times-tribune"
+url = "https://www.thetimes-tribune.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "WHYY"
+slug = "whyy"
+url = "http://whyy.org"
+logotype = "jpeg"
