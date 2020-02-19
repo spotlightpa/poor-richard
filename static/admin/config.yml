@@ -166,7 +166,8 @@ collections:
     format: toml-frontmatter
     extension: md
     create: true
-    preview_path: "/news/{{year}}/{{slug}}/"
+    preview_path: "/news/{{year}}/{{month}}/{{fields.slug}}/"
+    preview_path_date_field: published
     summary: "{{title}} ({{published}}) {{fields.slug}}"
     editor:
       preview: false
