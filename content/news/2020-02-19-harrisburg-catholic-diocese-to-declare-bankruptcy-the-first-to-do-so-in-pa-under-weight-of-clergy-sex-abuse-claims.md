@@ -6,9 +6,9 @@ published = 2020-02-19T17:13:12.657Z
 slug = "harrisburg-diocese-bankruptcy-catholic-clergy-sex-abuse-victim-compensation-lawsuits"
 authors = ["Angela Couloumbis"]
 byline = "Angela Couloumbis of Spotlight PA and Jeremy Roebuck of the Philadelphia Inquirer"
-title = "Harrisburg Catholic diocese to declare bankruptcy, the first to do so in Pa. under weight of clergy sex abuse claims"
-description = "The move comes six months after the diocese announced it had paid out $12 million to more than 100 victims of decades-old sexual abuse as part of an independently run compensation program similar to those launched by most of the state’s other Catholic dioceses."
-blurb = "The move comes six months after the diocese announced it had paid out $12 million to more than 100 victims of decades-old sexual abuse as part of an independently run compensation program similar to those launched by most of the state’s other Catholic dioceses."
+title = "Harrisburg Catholic diocese declares bankruptcy, the first to do so in Pa. under weight of clergy sex abuse claims"
+description = "Among its top 20 creditors, 19 were accusers with unresolved clergy sex abuse lawsuits work their way through the courts."
+blurb = "Among its top 20 creditors, 19 were accusers with unresolved clergy sex abuse lawsuits work their way through the courts."
 kicker = "Religion"
 suppress-featured = false
 +++
