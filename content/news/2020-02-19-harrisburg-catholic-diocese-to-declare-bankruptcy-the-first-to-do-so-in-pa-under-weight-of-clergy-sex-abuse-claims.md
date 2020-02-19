@@ -18,6 +18,8 @@ Diocesan officials are expected to announce their bankruptcy protection plans la
 
 The move comes six months after the diocese announced it had paid out $12 million to more than 100 victims of decades-old sexual abuse as part of an [independently run compensation program](https://www.inquirer.com/philly/business/catholic-archdiocese-philadelphia-priest-sexual-abuse-compensation-fund-20181108.html) similar to those launched by most of the state’s other Catholic dioceses.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+
 Church officials said they hoped the funds would provide compensation to victims whose claims were too old to pursue in court. But victims and their lawyers have viewed the programs with skepticism, saying that while the funds’ payouts are better than nothing, they have allowed the dioceses to limit the crushing financial penalties they might face should Pennsylvania voters approve a proposed “window law” that would allow accusers with expired claims to sue.
 
 Nationwide, more than 25 Catholic dioceses — including some like the Diocese of Rochester, N.Y., which also launched a victim compensation fund — have previously sought bankruptcy protection.
