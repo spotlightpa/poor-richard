@@ -12,7 +12,7 @@ blurb = "Among its top 20 creditors, 19 were accusers with unresolved clergy sex
 kicker = "Religion"
 suppress-featured = false
 +++
-_**[Spotlight PA](https://www.spotlightpa.org/)** is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter.](https://www.spotlightpa.org/newsletters/)_
+***[Spotlight PA](https://www.spotlightpa.org/)** is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter.](https://www.spotlightpa.org/newsletters/)*
 
 HARRISBURG — The Roman Catholic Diocese of Harrisburg filed for bankruptcy Wednesday, becoming the first diocese in the state to seek protection from financial claims in the aftermath of [a 2018 grand jury report that revealed decades of sexual abuse and cover-up](https://www.inquirer.com/philly/news/catholic-church-sex-abuse-clergy-pennsylvania-grand-jury-report-released-names-20180814.html "https\://www.inquirer.com/philly/news/catholic-church-sex-abuse-clergy-pennsylvania-grand-jury-report-released-names-20180814.html") by the church’s top leaders.
 
@@ -33,6 +33,8 @@ At an afternoon news conference, the bishop said he believed restructuring is th
 “On behalf of the Roman Catholic Diocese of Harrisburg, and in my own name, I continue to offer my heartfelt apologies for the abuse you suffered," he said, addressing victims. "I also offer my apology and deepest regret that the diocese did not do more to protect you.”
 
 “Our current financial situation is unsustainable,” the bishop said at an afternoon news conference. “We have no other path forward to ensure the future of our dioceses.”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 The Harrisburg diocese serves roughly 245,000 Central Pennsylvania Catholics, covers an area of 7,660 square miles and includes 89 parishes with 98 diocesan priests.
 
