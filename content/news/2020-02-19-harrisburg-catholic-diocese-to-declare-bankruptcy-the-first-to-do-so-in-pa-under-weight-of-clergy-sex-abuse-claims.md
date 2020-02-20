@@ -18,7 +18,7 @@ HARRISBURG — The Roman Catholic Diocese of Harrisburg filed for bankruptcy Wed
 
 And, said a lawyer for the diocese, it’s not likely to be the last.
 
-Citing the fallout from that probe and recent court decisions that opened new avenues for some victims with time-barred claims to sue, attorney Matt Haverstick said Harrisburg, like each of the state’s other eight Catholic dioceses, faces the prospect of potentially crushing court judgments that it will be unable to pay.
+Citing the fallout from that probe and recent court decisions that opened new avenues for some victims with time-barred claims to sue, attorney Matt Haverstick said Harrisburg, like each of the state’s eight other Catholic dioceses, faces the prospect of crushing court judgments that it will be unable to pay.
 
 “There is no capacity to take that kind of exposure,” Haverstick said in an interview with The Inquirer and Spotlight PA. “I think this is really the beginning — not just in Pennsylvania but across the country — of a wave of reorganizations spawned by … the economics of trying to maintain an organization in the face of catastrophic litigation.”
 
@@ -38,8 +38,6 @@ The Harrisburg diocese serves roughly 245,000 Central Pennsylvania Catholics, co
 
 It told the court in its filings Wednesday that it has more than 200 creditors and estimated liabilities between $50 and $100 million. Of its top 20 creditors, 19 were plaintiffs in sex abuse cases that remained unresolved in court.
 
-The Harrisburg diocese and its affiliated entities reported $63 million in net assets in June 2018, including $144 million in investments, according its audited financial statements.
-
 Its petition for bankruptcy protection freezes all pending litigation against the diocese while the court considers its reorganization plan. Compensation for victims with outstanding claims would become part of the bankruptcy judgment.
 
 But now that that process has begun, lawyers for accusers questioned just how much of the diocese’s assets would be available to victims.
@@ -48,19 +46,21 @@ Wednesday’s filings revealed a complex financial structure in which much of wh
 
 All of its property and non-real estate assets are owned by separate trusts, as are the parishes, who each have trusts of their own, according to the documents. A priest pension fund — from which the diocese borrowed money to fund its victim compensation fund last year — is also off limits, lawyers for the diocese said.
 
-That type of structuring has drawn scrutiny from judges who have handled other diocesan bankruptcies in the past.
+That type of structuring has drawn scrutiny from judges who have handled other diocesan bankruptcies.
 
 “It is common and typical in all church bankruptcies that assets will have been transferred, will have been put into different names, that there will have been trust devices or other devices to get the assets out of the pot that will be distributed to survivors,” said Thomas S. Neuberger, a Wilmington attorney who led efforts to win a $110 million settlement when that city’s diocese filed for bankruptcy protection in 2009.
 
 The job of the attorneys for unsecured creditors — the abuse victims in this case — is to “search through all the different permutations of how assets are held” and push to include them in the creditor compensation fund, Neuberger said.
 
-Diocesan lawyers say the affiliated charitable trusts were established to ensure the church could continue to serve its core functions of ministry, Catholic education and charitable service. It is just one tactic dioceses nationwide have employed to ensure their survival as the clergy sex abuse crisis endured.
+The Harrisburg diocese reported $183 million in total assets, including $144 million in investments, according its June 2018 audited financial statements. Those numbers included some, but not all, of the assets connected to the charitable trusts referenced in Wednesday’s bankruptcy filing.
+
+Diocesan lawyers say the affiliated charitable trusts were established to ensure the church could continue to serve its core functions of ministry, Catholic education and charitable service. It is just one tactic dioceses nationwide have employed to ensure their survival as the clergy sex abuse crisis endures.
 
 The 2018 Pennsylvania grand jury investigation, led by Attorney General Josh Shapiro, set off a wave of similar probes in other states and renewed calls in state houses across the country to grant victims of decades-old childhood abuse a second-chance to sue.
 
 Eight states, including New Jersey, New York and California, passed so-called “window laws” opening a short-term opportunity for victims, whose abuse had fallen outside civil statutes of limitations, to pursue lawsuits in court once more.
 
-Pennsylvania’s proposed version of a “window law” ignited a contentious battle in Harrisburg, drawing opposition from Senate Republicans who warned it would violate the state Constitution. Still, in November, lawmakers reached a compromise, [opting to leave the decision up to voters](https://www.inquirer.com/politics/pennsylvania/pennsylvania-child-sexual-abuse-bill-statute-of-limitations-legislature-20191121.html "https\://www.inquirer.com/politics/pennsylvania/pennsylvania-child-sexual-abuse-bill-statute-of-limitations-legislature-20191121.html") in a statewide referendum.
+Pennsylvania’s proposed version of a “window law” ignited a contentious battle in Harrisburg, drawing opposition from Senate Republicans who warned it would violate the state constitution. Still, in November, lawmakers reached a compromise, [opting to leave the decision up to voters](https://www.inquirer.com/politics/pennsylvania/pennsylvania-child-sexual-abuse-bill-statute-of-limitations-legislature-20191121.html "https\://www.inquirer.com/politics/pennsylvania/pennsylvania-child-sexual-abuse-bill-statute-of-limitations-legislature-20191121.html") in a statewide referendum.
 
 Fearing the financial fallout, seven of the state’s eight Catholic dioceses launched independently managed compensation funds last year, hoping to settle some old abuse claims before any new law had the chance to pass.
 
@@ -68,7 +68,7 @@ Separate from the $12.5 million paid out by the Harrisburg diocese, another five
 
 Accusers and their lawyers have viewed those programs with skepticism, saying that while the funds’ payouts are better than nothing, they have allowed dioceses to limit the penalties they might have faced in court.
 
-Some victims opted to take their chances, hoping that the “window law” referendum would pass or deciding to press their claims in other venues. The same day New Jersey opened its “window period” last year, [five sisters](https://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html "https\://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html") who say they were all [abused by the same Dauphin County priest](https://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html "https\://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html") in the 1980s sued the Harrisburg diocese in that state.
+Some victims opted to take their chances, hoping that the “window law” referendum would pass or deciding to press their claims in other venues. The same day New Jersey opened its “window period” last year, [five sisters](https://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html "https\://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html") who say they were all [abused by the same Dauphin County priest](https://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html "https\://www.inquirer.com/news/inq/catholic-church-sex-abuse-how-one-pennsylvania-priest-terrorized-five-sisters-20180920.html")i n the 1980s sued the Harrisburg diocese in that state.
 
 With the bankruptcy filing Wednesday, [that case](https://www.inquirer.com/news/new-jersey-sex-abuse-lawsuits-dioceses-camden-philadelphia-mccarrick-fortney-boy-scouts-20191203.html "https\://www.inquirer.com/news/new-jersey-sex-abuse-lawsuits-dioceses-camden-philadelphia-mccarrick-fortney-boy-scouts-20191203.html") is now in limbo.
 
