@@ -15,7 +15,7 @@ suppress-featured = true
 +++
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
 
-Hundreds of people rallied in Philadelphia and Pittsburgh on Tuesday, calling on Attorney General Josh Shapiro to “show mercy” by supporting more commutations.
+HARRISBURG — More than a hundred people rallied in Philadelphia and Pittsburgh on Tuesday, a protest organizer says, calling on Attorney General Josh Shapiro to “show mercy” by supporting more commutations.
 
 The issue came to a head in December, when the Board of Pardons, charged with recommending commutations to Gov. Tom Wolf, voted in favor of just two cases out of more than a dozen. Lt. Gov. John Fetterman, who serves on the board with Shapiro, called it “one of the most dismaying days of my life.”
 
