@@ -1,23 +1,18 @@
 +++
-arc-id = "JI4FWKZTZJETVMMQTK6YJJIFPI"
-internal-id = "SPLCOMMUTATION25"
-image-credit = "ANTHONY PEZZOTTI / Philadelphia Inquirer"
-image-description = "Attorney General Josh Shapiro."
 image = "2020/02/01f5bch25g2mfdnr.jpeg"
+image-description = "Attorney General Josh Shapiro."
+image-credit = "ANTHONY PEZZOTTI / Philadelphia Inquirer"
+published = 2020-02-25T23:50:00.000Z
 slug = "pennsylvania-life-prison-josh-shapiro-john-fetterman"
-published = 2020-02-25T23:50:00Z
-internal-budget = ""
+authors = ["Cynthia Fernandez"]
+byline = ""
 title = "Protesters call on Pennsylvania AG to ‘show mercy’ and commute more life sentences "
-subtitle = ""
 description = "The rally targeted Attorney General Josh Shapiro's record as a member of the Board of Pardons."
 blurb = "The rally targeted Attorney General Josh Shapiro's record as a member of the Board of Pardons."
-authors = ["Cynthia Fernandez"]
-linktitle = ""
-byline = ""
 kicker = "Capitol Notebook"
+linktitle = ""
 suppress-featured = true
 +++
-
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
 
 Hundreds of people rallied in Philadelphia and Pittsburgh on Tuesday, calling on Attorney General Josh Shapiro to “show mercy” by supporting more commutations.
@@ -30,7 +25,6 @@ The protests outside Shapiro’s offices were organized by several reform organi
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We know two things: 1. ⚖️ mercy is a critical partner to justice 2. 🌧 rain can’t stop us. Were at the Rally for Fair Commutation demanding that <a href="https://twitter.com/PAAttorneyGen?ref_src=twsrc%5Etfw">@PAAttorneyGen</a> <a href="https://twitter.com/JoshShapiroPA?ref_src=twsrc%5Etfw">@JoshShapiroPA</a> stop denying rehabilitated people a chance to come home from prison <a href="https://twitter.com/hashtag/shapiroshowmercy?src=hash&amp;ref_src=twsrc%5Etfw">#shapiroshowmercy</a> <a href="https://twitter.com/hashtag/faircommutationnow?src=hash&amp;ref_src=twsrc%5Etfw">#faircommutationnow</a> <a href="https://t.co/rhDxWKbWkM">pic.twitter.com/rhDxWKbWkM</a></p>&mdash; Amistad Law Project (@AmistadLaw) <a href="https://twitter.com/AmistadLaw/status/1232356426150006784?ref_src=twsrc%5Etfw">February 25, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 “These rallies are spotlighting Shapiro who has been a consistent person voting against commutations,” said Lily Rorick, an organizer with the Philadelphia-based Amistad Law Project. “While we are working on these legislative solutions, Shapiro needs to vote to commute.”
 
@@ -68,11 +62,11 @@ Mark Singel, who voted to recommend commutation for McFadden as lieutenant gover
 
 Fetterman and Shapiro are both Democrats who have adopted the progressive mantle. But their board records differ significantly.
 
-In 2019, Fetterman voted to recommend commutation 30 times, while Shapiro voted to do the same 17 times, a Pennsylvania Capital Star <a href="https://www.penncapital-star.com/criminal-justice/fetterman-shapiro-say-they-both-believe-in-second-chances-pardons-board-votes-tell-two-different-stories/">analysis</a> showed.
+In 2019, Fetterman voted to recommend commutation 30 times, while Shapiro voted to do the same 17 times, a Pennsylvania Capital-Star <a href="https://www.penncapital-star.com/criminal-justice/fetterman-shapiro-say-they-both-believe-in-second-chances-pardons-board-votes-tell-two-different-stories/">analysis</a> showed.
 
 During his campaign for lieutenant governor, Fetterman <a href="https://www.washingtonpost.com/news/powerpost/wp/2018/05/17/john-fetterman-pittsburghs-socialists-trump-district-democrats-some-winners-from-this-weeks-elections/">called</a> for “substantive changes on issues like pardons.”
 
-“Many of those condemned to die in prison committed their crimes as teens, but they’re now men and women in their 60s,” Fetterman <a href="https://www.inquirer.com/opinion/commentary/board-pardons-john-fetterman-josh-shapiro-clemency-20191226.html">wrote in a December Inquirer</a> op-ed. “In many of these cases, the wardens of their prisons begged for their release during public hearings and pleaded that they represent zero risk to public safety.”
+“Many of those condemned to die in prison committed their crimes as teens, but they’re now men and women in their 60s,” Fetterman <a href="https://www.inquirer.com/opinion/commentary/board-pardons-john-fetterman-josh-shapiro-clemency-20191226.html">wrote in December</a>. “In many of these cases, the wardens of their prisons begged for their release during public hearings and pleaded that they represent zero risk to public safety.”
 
 Shapiro has previously said he considers victim statements “<a href="https://www.inquirer.com/philly/news/crime/in-attorney-general-josh-shapiro-philly-lifers-clemency-plea-hits-a-roadblock-20180301.html">first and foremost</a>” when making a decision.
 
@@ -82,7 +76,7 @@ His spokesperson, Jacklin Rhoads, said Tuesday “several factors play a role,�
 
 That doesn’t satisfy Rorick of the Amistad Law Project. She supports legislative solutions but wants to see Shapiro vote for commutations when Fetterman is in favor.
 
-The decisions made by the Board of Pardons, especially for elected members, can have political consequences, but that comes with the job.
+The decisions made by the Board of Pardons can have political consequences for elected members, Singel said, but that comes with the job.
 
 “It’s dangerous and it always has been,” Singel said. “But that’s what leadership is about. When you assume the duties of being on the Board of Pardons, you take an oath. You’re supposed to dispense your duties according to the oath of office and the Constitution. If you resign to playing safe and voting no, in my opinion, you’re violating your oath of office.”
 
