@@ -29,10 +29,10 @@ url = "https://papost.org"
 logotype = "svg"
 
 [[partners]]
-name = "York Dispatch"
-slug = "york-dispatch"
-url = "https://www.yorkdispatch.com"
-logotype = "jpeg"
+name = "The Caucus"
+slug = "caucus"
+url = "https://caucuspa.com"
+logotype = "png"
 
 [[partners]]
 name = "The Citizens’ Voice"
@@ -56,7 +56,7 @@ logotype = "jpeg"
 name = "Gettysburg Times"
 slug = "gettysburg-times"
 url = "http://www.gettysburgtimes.com"
-logotype = "jpeg"
+logotype = "png"
 
 [[partners]]
 name = "The Intelligencer"
@@ -104,4 +104,10 @@ logotype = "jpeg"
 name = "WHYY"
 slug = "whyy"
 url = "http://whyy.org"
+logotype = "jpeg"
+
+[[partners]]
+name = "York Dispatch"
+slug = "york-dispatch"
+url = "https://www.yorkdispatch.com"
 logotype = "jpeg"
