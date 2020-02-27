@@ -17,18 +17,6 @@ url = "https://www.pennlive.com"
 logotype = "svg"
 
 [[partners]]
-name = "LNP Media Group"
-slug = "lnp"
-url = "https://lnpmediagroup.com"
-logotype = "svg"
-
-[[partners]]
-name = "PA Post"
-slug = "papost"
-url = "https://papost.org"
-logotype = "svg"
-
-[[partners]]
 name = "The Caucus"
 slug = "caucus"
 url = "https://caucuspa.com"
@@ -71,6 +59,12 @@ url = "https://levittownnow.com"
 logotype = "png"
 
 [[partners]]
+name = "LNP Media Group"
+slug = "lnp"
+url = "https://lnpmediagroup.com"
+logotype = "svg"
+
+[[partners]]
 name = "The Morning Call"
 slug = "morning-call"
 url = "https://www.mcall.com"
@@ -81,6 +75,12 @@ name = "Newtown, PA Now.com"
 slug = "newtown-now"
 url = "http://newtownpanow.com"
 logotype = "png"
+
+[[partners]]
+name = "PA Post"
+slug = "papost"
+url = "https://papost.org"
+logotype = "svg"
 
 [[partners]]
 name = "Republican Herald"
