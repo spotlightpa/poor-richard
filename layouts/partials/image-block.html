@@ -31,7 +31,7 @@
       <div class="image {{ $imgClass }} has-background-grey-lighter">
     {{- end -}}
       <picture class="has-ratio">
-        {{ if in $srcset ".jpeg" }}
+        {{ if in (string $srcset) ".jpeg" }}
           <source
             type="image/webp"
             srcset='{{ replace $srcset ".jpeg" ".webp" }}'
