@@ -1,3 +1,4 @@
+{{ $widths := slice 300 480 640 800 960 1120 1280 1440 1600 1760 1920 2080 2240 2400 2560 }}
 {{ if $imagename := .filename }}
   {{ $imgSmallSrc := "" }}
   {{ $imgs := slice }}
@@ -5,16 +6,14 @@
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
 
-  {{ range $size := seq 2 16 }}
-    {{ $width := mul $size 160 }}
-    {{ $height := mul $size 160 }}
-    {{ $height = div (mul $heightR $height) $widthR }}
+  {{ range $i, $width := $widths }}
+    {{ $height := div (mul $heightR $width) $widthR }}
 
     {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
     {{ $url := partial "imgproxy.html" $imgOpt }}
     {{ $src := printf "%s %dw" $url $width }}
     {{ $imgs = $imgs | append $src }}
-    {{ if eq $size 2 }}
+    {{ if eq $i 0 }}
       {{ $imgSmallSrc = $url }}
     {{ end }}
   {{ end }}
@@ -36,7 +35,7 @@
             type="image/webp"
             srcset='{{ replace $srcset ".jpeg" ".webp" }}'
             {{ if .sizeHint }}
-              sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+              sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
             {{ end }}
           >
         {{ end }}
@@ -46,7 +45,7 @@
           src="{{ $imgSmallSrc }}"
           srcset="{{ $srcset }}"
           {{ if .sizeHint }}
-            sizes="(min-width: 769px) {{ .sizeHint }}, 100vw"
+            sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
           {{ end }}
           loading="lazy"
         >
