@@ -442,14 +442,6 @@ $margin-sizes: (
   display: none;
 }
 
-.content p::first-letter {
-  -webkit-initial-letter: 2;
-  initial-letter: 2;
-  color: $papost-green;
-  font-weight: $weight-semibold;
-  margin-right: 0.75rem;
-}
-
 .dropcap {
   font-size: 6.5rem;
   float: left;
