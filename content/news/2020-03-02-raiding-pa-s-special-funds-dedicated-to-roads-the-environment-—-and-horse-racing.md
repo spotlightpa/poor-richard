@@ -1,6 +1,7 @@
 +++
 draft = false
 image = "2019/12/capitol-sale.jpeg"
+image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 image-size = "hidden"
 published = 2020-03-02T14:00:00.000Z
 slug = "special-funds-pennsylvania-budget-horse-racing-industry"
