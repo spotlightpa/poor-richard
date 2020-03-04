@@ -450,6 +450,26 @@ $margin-sizes: (
   margin-right: 0.75rem;
 }
 
+.dropcap {
+  font-size: 6.5rem;
+  float: left;
+  line-height: 1;
+  margin-right: 0.05em;
+  font-weight: $weight-semibold;
+}
+
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-bottom: -0.175em;
+}
+.dropcap:after {
+  margin-top: -0.05em;
+}
+
 .scene.active {
   background-color: red !important;
 }
