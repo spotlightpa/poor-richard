@@ -2,11 +2,11 @@
 </section>
 
 <div class="scene">
-{{ $bgImg := resources.Get "/img/pipeline/digger.jpeg" }}
-  {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
+  {{ $imgOpt := dict "filename" "2020/03/pipeline/RS1956004_SPLPIPEXX-b-scr.JPG" "width" 1200 "height" 900 }}
+  {{ $imgurl := partial "imgproxy.html" $imgOpt }}
   <style>
   #about-hero-2 {
-    background-image: url('{{ $bgImg.RelPermalink }}');
+    background-image: url('{{ $imgurl }}');
     /*background-position: 80%;*/
     background-size: cover;
     background-attachment: fixed;

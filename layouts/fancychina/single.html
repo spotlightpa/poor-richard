@@ -1,9 +1,9 @@
 {{ define "nav" }}
-  {{ $bgImg := resources.Get "/img/pipeline/backhoe.jpeg" }}
-  {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
+  {{ $imgOpt := dict "filename" "2020/03/pipeline/RS1956000_SPLPIPEXX-o-scr.JPG" "width" 1200 "height" 900 }}
+  {{ $imgurl := partial "imgproxy.html" $imgOpt }}
   <style>
   #about-hero {
-    background-image: url('{{ $bgImg.RelPermalink }}');
+    background-image: url('{{ $imgurl }}');
     background-position: 80%;
     background-size: cover;
     background-attachment: fixed;
@@ -39,6 +39,7 @@
         <h2 class="subtitle is-1">
           Rebecca Moss | <strong>Spotlight PA</strong>
         </h2>
+        <div>&nbsp;</div>
       </div>
     </div>
   </section>
