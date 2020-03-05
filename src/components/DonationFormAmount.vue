@@ -241,10 +241,10 @@ export default {
       <BulmaMessage
         header="Switch to Monthly?"
         :show-close-button="true"
-        class="is-primary is-medium"
+        class="is-danger is-medium"
         @close-button="noThanks"
       >
-        <h1 class="title is-size-3">
+        <h1 class="title is-size-3 has-text-danger">
           Would you prefer to donate {{ annualizedAmount | formatUSD }} every
           month?
         </h1>
@@ -255,12 +255,12 @@ export default {
           <br />
         </p>
         <div class="buttons">
-          <button type="button" class="button is-light " @click="noThanks">
+          <button type="button" class="button is-warning has-text-weight-semibold" @click="noThanks">
             No thanks
           </button>
           <button
             type="button"
-            class="button is-primary has-text-weight-bold is-focused"
+            class="button is-danger has-text-weight-semibold is-focused"
             @click="switchMonthly"
           >
             Yes, switch to monthly
