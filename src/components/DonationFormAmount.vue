@@ -255,7 +255,11 @@ export default {
           <br />
         </p>
         <div class="buttons">
-          <button type="button" class="button is-warning has-text-weight-semibold" @click="noThanks">
+          <button
+            type="button"
+            class="button is-warning has-text-weight-semibold"
+            @click="noThanks"
+          >
             No thanks
           </button>
           <button
