@@ -1,21 +1,25 @@
 {{ define "nav" }}
-  {{ $imgOpt := dict "filename" "2020/03/pipeline/RS1956000_SPLPIPEXX-o-scr.JPG" "width" 1200 "height" 900 }}
+
+  {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+  {{ $navImage := .Param "nav-image" }}
+
+  {{ $imgOpt := dict "filename" $navImage "width" 1200 "height" 900 }}
   {{ $imgurl := partial "imgproxy.html" $imgOpt }}
-  <style>
-  #about-hero {
-    background-image: url('{{ $imgurl }}');
-    background-position: 80%;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  </style>
-  <section class="hero is-black has-bg-image is-on-gradient is-fullheight" id="about-hero">
+  <section
+    class="hero has-bg-image is-on-gradient is-fullheight"
+    style="
+      background-image: url('{{ $imgurl }}');
+      background-position: 80%;
+      background-size: cover;
+      background-attachment: fixed;
+    "
+  >
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item">
+            <a class="navbar-item" href="/">
               <svg viewBox="0 0 1024 190">
                 <desc>Spotlight PA logo</desc>
                 <use xlink:href="#logo-svg"></use>
@@ -33,11 +37,11 @@
     <!-- Hero footer: will stick at the bottom -->
     <div class="hero-foot">
       <div class="container has-text-centered">
-        <h1 class="title is-1">
-          Digging Up Trouble
+        <h1 class="title is-1 has-text-white">
+          {{ .Title }}
         </h1>
-        <h2 class="subtitle is-1">
-          Rebecca Moss | <strong>Spotlight PA</strong>
+        <h2 class="subtitle is-1 has-text-white">
+          {{ $params.byline }} | <strong class="has-text-white">Spotlight PA</strong>
         </h2>
         <div>&nbsp;</div>
       </div>
