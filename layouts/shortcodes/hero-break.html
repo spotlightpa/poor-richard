@@ -1,27 +1,26 @@
 </article>
 </section>
+{{ $src := .Get "src" }}
+{{ $center := .Get "center" }}
+
+{{ $imgOpt := dict "filename" $src "width" 1200 "height" 900 }}
+{{ $imgurl := partial "imgproxy.html" $imgOpt }}
 
 <div class="scene">
-  {{ $imgOpt := dict "filename" "2020/03/pipeline/RS1956004_SPLPIPEXX-b-scr.JPG" "width" 1200 "height" 900 }}
-  {{ $imgurl := partial "imgproxy.html" $imgOpt }}
-  <style>
-  #about-hero-2 {
-    background-image: url('{{ $imgurl }}');
-    /*background-position: 80%;*/
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  </style>
-  <section class="hero is-black is-fullheight" id="about-hero-2">
+  <section
+    class="hero is-black is-fullheight"
+    style="
+      background-image: url('{{ $imgurl }}');
+      background-size: cover;
+      background-attachment: fixed;
+    "
+  >
     <div class="hero-body">
       <div class="has-text-centered">
         <div style="width: 100vw">
           <h1 class="title is-1">
-            But what was really happening?
+            {{ $center }}
           </h1>
-          <h2 class="subtitle is-1">
-            Dark rumblings
-          </h2>
         </div>
       </div>
     </div>
