@@ -5,12 +5,14 @@
 {{ $src := .Get "src" }}
 {{ $credit := .Get "credit" }}
 {{ $description := .Get "description" }}
+{{ $widthRatio := .Get "width-ratio" | default 3 | int }}
+{{ $heightRatio := .Get "height-ratio" | default 2 | int }}
 
 {{ $imgOpts := dict "filename" $src }}
 {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $description | merge $imgOpts }}
-{{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
-{{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
+{{ $imgOpts = dict "widthRatio" $widthRatio | merge $imgOpts }}
+{{ $imgOpts = dict "heightRatio" $widthRatio | merge $imgOpts }}
 {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
 {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
 {{ $imgOpts | partial "image-block.html" }}
