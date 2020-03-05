@@ -35,16 +35,34 @@ url = "https://www.buckscountycouriertimes.com"
 logotype = "png"
 
 [[partners]]
+name = "The Daily Item"
+slug = "daily-item"
+url = "https://www.dailyitem.com"
+logotype = "jpeg"
+
+[[partners]]
 name = "The Daily Review"
 slug = "daily-review"
 url = "https://www.thedailyreview.com"
 logotype = "jpeg"
 
 [[partners]]
+name = "Erie Times-News"
+slug = "erie-times-news"
+url = "https://www.goerie.com"
+logotype = "png"
+
+[[partners]]
 name = "Gettysburg Times"
 slug = "gettysburg-times"
 url = "http://www.gettysburgtimes.com"
 logotype = "png"
+
+[[partners]]
+name = "The Sharon Herald"
+slug = "sharon-herald"
+url = "https://www.sharonherald.com"
+logotype = "jpeg"
 
 [[partners]]
 name = "The Intelligencer"
@@ -65,10 +83,22 @@ url = "https://lnpmediagroup.com"
 logotype = "svg"
 
 [[partners]]
+name = "The Meadville Tribune"
+slug = "meadville-tribune"
+url = "https://www.meadvilletribune.com"
+logotype = "png"
+
+[[partners]]
 name = "The Morning Call"
 slug = "morning-call"
 url = "https://www.mcall.com"
 logotype = "jpeg"
+
+[[partners]]
+name = "New Castle News"
+slug = "new-castle-news"
+url = "https://www.ncnewsonline.com"
+logotype = "png"
 
 [[partners]]
 name = "Newtown, PA Now.com"
@@ -99,6 +129,12 @@ name = "The Times-Tribune"
 slug = "times-tribune"
 url = "https://www.thetimes-tribune.com"
 logotype = "jpeg"
+
+[[partners]]
+name = "The Tribune-Democrat"
+slug = "tribune-democrat"
+url = "http://tribune-democrat.com"
+logotype = "png"
 
 [[partners]]
 name = "WHYY"
