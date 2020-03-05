@@ -5,6 +5,7 @@
 {{ $src := .Get "src" }}
 {{ $credit := .Get "credit" }}
 {{ $description := .Get "description" }}
+{{ $caption := .Get "caption" }}
 {{ $widthRatio := .Get "width-ratio" | default 3 | int }}
 {{ $heightRatio := .Get "height-ratio" | default 2 | int }}
 
@@ -17,7 +18,9 @@
 {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
 {{ $imgOpts | partial "image-block.html" }}
 
-  <p class="is-size-6 is-italic">{{ $description }}</p>
+{{ with $caption }}
+  <p class="is-size-6 is-italic">{{ . }}</p>
+{{ end }}
 </div>
 
 <div class="content">
