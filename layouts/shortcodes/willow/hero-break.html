@@ -2,6 +2,7 @@
 </section>
 {{ $src := .Get "src" }}
 {{ $center := .Get "center" }}
+{{ $color := .Get "color" | default "has-text-white" }}
 
 {{ $imgOpt := dict "filename" $src "width" 1200 "height" 900 }}
 {{ $imgurl := partial "imgproxy.html" $imgOpt }}
@@ -15,12 +16,16 @@
     "
   >
     <div class="hero-body">
-      <div class="has-text-centered">
-        <div style="width: 100vw">
-          <h1 class="title is-1 has-text-white">
-            {{ $center }}
-          </h1>
-        </div>
+      <div
+        class="has-text-centered"
+        style="
+          min-width: 100%;
+          text-shadow: 2px 2px 8px #555;
+        "
+      >
+        <h1 class="title is-1 {{ $color }}">
+          {{ $center }}
+        </h1>
       </div>
     </div>
   </section>
