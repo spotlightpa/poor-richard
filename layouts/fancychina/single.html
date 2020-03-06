@@ -55,12 +55,3 @@
   {{ $styles := resources.Get "css/fancychina.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ end }}
-
-{{ define "main" }}
-<section class="section is-fancy">
-  <article class="content is-medium">
-    {{ .Content }}
-  </article>
-</section>
-{{end }}
-
