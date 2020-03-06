@@ -6,12 +6,11 @@
   {{ $imgOpt := dict "filename" $navImage "width" 1200 "height" 900 }}
   {{ $imgurl := partial "imgproxy.html" $imgOpt }}
   <section
-    class="hero has-bg-image is-on-gradient is-fullheight"
+    class="hero has-bg-image has-bg-fixed is-on-gradient is-fullheight"
     style="
       background-image: url('{{ $imgurl }}');
       background-position: 80%;
       background-size: cover;
-      background-attachment: fixed;
     "
   >
     <!-- Hero head: will stick at the top -->
@@ -52,11 +51,13 @@
 {{ define "modal" }} <!-- --> {{ end }}
 
 {{ define "extra-head" }}
-  <script src='{{ partial "get-src" "embed-frame.js" }}' defer></script>
+  {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
+  {{ $styles := resources.Get "css/fancychina.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ end }}
 
 {{ define "main" }}
-<section class="section" style="padding-right: 8rem; padding-left: 8rem;">
+<section class="section is-fancy">
   <article class="content is-medium">
     {{ .Content }}
   </article>

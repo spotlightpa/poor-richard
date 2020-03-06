@@ -1,0 +1,14 @@
+.section {
+  &.is-fancy {
+    @media screen and (min-width: 700px) {
+      padding-right: 8rem;
+      padding-left: 8rem;
+    }
+  }
+}
+
+.has-bg-fixed {
+    @media screen and (min-width: 700px) {
+      background-attachment: fixed;
+    }
+}
