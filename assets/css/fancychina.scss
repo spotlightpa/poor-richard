@@ -10,12 +10,12 @@ $tablet-width: 1000px;
 }
 
 .has-bg-fixed {
-    @media screen and (min-width: $tablet-width) {
-      background-attachment: fixed;
-    }
-    @media screen and (prefers-reduced-motion: reduce) {
-        background-attachment: scroll;
-    }
+  @media screen and (min-width: $tablet-width) {
+    background-attachment: fixed;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    background-attachment: scroll;
+  }
 }
 
 .is-pullquote {
