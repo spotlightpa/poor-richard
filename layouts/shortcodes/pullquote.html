@@ -1,5 +1,7 @@
-<aside class="is-pullquote is-pulled-right">
-  <div class="notification is-warning is-size-4 is-italic">
+{{ $side:= .Get "side" | default "right" }}
+{{ $style := .Get "color" | default "light" }}
+<aside class="is-pullquote is-pulled-{{ $side }}">
+  <div class="notification is-{{ $style }} is-size-4">
     {{ .Inner }}
   </div>
 </aside>

@@ -1,6 +1,8 @@
+$tablet-width: 1000px;
+
 .section {
   &.is-fancy {
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $tablet-width) {
       padding-right: 8rem;
       padding-left: 8rem;
     }
@@ -8,7 +10,23 @@
 }
 
 .has-bg-fixed {
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $tablet-width) {
       background-attachment: fixed;
     }
+    @media screen and (prefers-reduced-motion: reduce) {
+        background-attachment: scroll;
+    }
+}
+
+.is-pullquote {
+  &.is-pulled-right {
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 -4rem 1rem 2rem;
+    }
+  }
+  &.is-pulled-left {
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 2rem 1rem -4rem;
+    }
+  }
 }
