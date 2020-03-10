@@ -108,9 +108,15 @@ weight = 5
 
 [[about]]
 name = "FAQ"
-pre = ""
+pre = "is-uppercase"
 url = "/about/faq/"
 weight = 6
+
+[[about]]
+name = "Jobs"
+pre = "is-uppercase"
+url = "/about/jobs/"
+weight = 7
 
 [[social]]
 name = "Facebook"
