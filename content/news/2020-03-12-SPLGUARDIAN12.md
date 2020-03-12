@@ -1,21 +1,21 @@
 +++
-arc-id = "KRDBPHGHURFFXPPQLMFRKT34TE"
-internal-id = "SPLGUARDIAN12"
-internal-budget = ""
 image = "external/j9vfhvc42exk9ex703f7tq5tbc.jpeg"
 image-description = "After Pennsylvania identified widespread problems with its guardianship system, the Supreme Court established an office to oversee the implementation of 130 recommendations."
-image-credit = "PennLive file photo (custom credit) / THE PATRIOT-NEWS"
-published = 2020-03-12T09:00:00Z
-slug = "pennsylvania-supreme-court-guardianship-seniors"
 authors = ["Sara Simon"]
 byline = ""
 title = "Protections for vulnerable Pa. seniors lag, reforms to guardianship system ‘stuck’ "
-subtitle = ""
 description = "Experts say that critical changes needed to better protect vulnerable seniors lack funding, are incomplete, or are stuck in limbo in the state legislature."
 blurb = "Experts say that critical changes needed to better protect vulnerable seniors lack funding, are incomplete, or are stuck in limbo in the state legislature."
 kicker = "Courts"
 linktitle = ""
 suppress-featured = false
+internal-id = "SPLGUARDIAN12"
+image-credit = "PennLive file photo / THE PATRIOT-NEWS"
+published = 2020-03-12T09:00:00.000Z
+slug = "pennsylvania-supreme-court-guardianship-seniors"
+internal-budget = ""
+arc-id = "KRDBPHGHURFFXPPQLMFRKT34TE"
+subtitle = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
