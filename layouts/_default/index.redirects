@@ -2,12 +2,12 @@
 ## Aliases
 {{ range $p := .Site.Pages -}}
     {{- range .Aliases -}}
-        {{-  printf "%-35s   %s\n" . $p.RelPermalink -}}
+        {{-  printf "%-35s   %s  301!\n" . $p.RelPermalink -}}
     {{- end -}}
 {{- end }}
 
 ## Redirects
 {{ range .Site.Data.redirects.redirects -}}
     {{- $code := .code | default 301 -}}
-    {{- printf "%-35s   %s  %d\n" .from .to $code -}}
+    {{- printf "%-35s   %s  %d!\n" .from .to $code -}}
 {{- end }}
