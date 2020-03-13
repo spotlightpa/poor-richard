@@ -111,6 +111,12 @@ yaml-definitions: &page-fields
     widget: number
     required: false
     hint: "Use this to manually order stories on the homepage"
+  - label: Topics
+    label_singular: topic
+    name: topics
+    widget: list
+    hint: "Topics tags, e.g. Coronavirus"
+    default: []
   - label: Series
     label_singular: series
     name: series
