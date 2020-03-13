@@ -31,6 +31,7 @@ googleAnalytics = "UA-141126362-1"
 [taxonomies]
   author = "authors"
   series = "series"
+  topic = "topics"
 
 [frontmatter]
     date  = [":default", ":filename"]
