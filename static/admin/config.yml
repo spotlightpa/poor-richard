@@ -115,7 +115,7 @@ yaml-definitions: &page-fields
     label_singular: topic
     name: topics
     widget: list
-    hint: "Topics tags, e.g. COVID-19"
+    hint: "Topics tags, e.g. Coronavirus"
     default: []
   - label: Series
     label_singular: series
