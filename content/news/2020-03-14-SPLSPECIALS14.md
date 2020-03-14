@@ -1,7 +1,7 @@
 +++
 image = "external/58x6w7dgyrz7ks1xs5dnb86a3r.jpeg"
 image-description = "Elections officials said they are planning to report to their assigned polling locations on Tuesday, prepared with wipes and gloves."
-image-credit = "HEATHER KHALIFA / Staff Photographer"
+image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
 published = 2020-03-14T13:20:08.000Z
 slug = "pennsylvania-coronavirus-special-elections-bucks-county"
 authors = ["Gillian McGoldrick of LNP | LancasterOnline"]
