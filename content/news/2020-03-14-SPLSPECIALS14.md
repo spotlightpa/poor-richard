@@ -18,7 +18,6 @@ arc-id = "H4R3JUJ32RCXPFHWVNWZ6ZLLRI"
 subtitle = ""
 linktitle = ""
 +++
-
 <i>This story was produced as part of a joint effort between </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus.</i>
 
 HARRISBURG — The coronavirus has thrown into question whether a special state House election in Bucks County will take place as scheduled Tuesday. 
@@ -34,6 +33,8 @@ As of Friday evening, the Bucks County Board of Elections said the special was s
 If Pennsylvania officials want to keep people from the polls to prevent the spread of the virus, House Speaker Mike Turzai (R., Allegheny) would have to call a new election. Representatives for Turzai declined to comment Friday.
 
 Three special elections — in Bucks County, Westmoreland County, and a district that includes parts of Butler and Mercer Counties — were called to fill vacancies in the state House left by members who won judgeships and a county commissioner seat. At least two of the races are expected to be competitive, with Democrats hoping their voter registration advantage will translate into flips of Republican-held seats in Bucks and Westmoreland. 
+
+While all voters are able to [request a mail-in ballot](https://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx "https\://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx") for the April primary, that option was not available for these special elections.
 
 Unless something changes, elections officials said they are planning to report to their assigned polling locations on Tuesday, as they’re required to by law, prepared with wipes and gloves. 
 
