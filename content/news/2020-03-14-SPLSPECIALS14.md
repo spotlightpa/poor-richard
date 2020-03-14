@@ -18,21 +18,23 @@ arc-id = "H4R3JUJ32RCXPFHWVNWZ6ZLLRI"
 subtitle = ""
 linktitle = ""
 +++
-*This story was produced as part of a joint effort between [Spotlight PA](https://www.spotlightpa.org/),[LNP Media Group](https://lancasteronline.com/),[PennLive](https://www.pennlive.com/),[PA Post](https://papost.org/), and[WITF](https://www.witf.org/) to cover how Pennsylvania state government is responding to the coronavirus.*
+*This story was produced as part of a joint effort between [Spotlight PA](https://www.spotlightpa.org/), [LNP Media Group](https://lancasteronline.com/), [PennLive](https://www.pennlive.com/), [PA Post](https://papost.org/), and [WITF](https://www.witf.org/) to cover how Pennsylvania state government is responding to the coronavirus.*
 
-HARRISBURG — A special election in Bucks County will go on as planned Tuesday, state House officials said Saturday.
+HARRISBURG — Despite multiple coronavirus cases, a special election in Bucks County will go on as planned next week, state House officials have announced.
 
-Gov. Tom Wolf on Friday indicated there was agreement the election should be postponed due to the coronavirus, and on Saturday, he expanded a voluntary shutdown of non-essential businesses to Bucks and Chester Counties.
+Gov. Tom Wolf on Friday indicated there was agreement the election should be postponed due to the three cases in the county, and on Saturday, he expanded a voluntary shutdown of non-essential businesses to Bucks and Chester Counties.
 
-But in a statement, House Speaker Mike Turzai (R., Allegheny) said three special elections scheduled for Tuesday — in Bucks County, Westmoreland County, and a district that includes parts of Butler and Mercer Counties — would go on.
+But in a statement Saturday, House Speaker Mike Turzai (R., Allegheny) said three special elections scheduled for Tuesday — in Bucks County, Westmoreland County, and a district that includes parts of Butler and Mercer Counties — would go on.
 
 “The impact of the COVID-19 virus is being felt by all of us, and I applaud the statewide efforts to practice social distancing and increased disinfecting in public spaces. These same practices will be in place on election day, but they do not require the rescheduling of the special elections,” Turzai said. “When you consider that absentee ballots have already been applied for and returned, these elections are already underway.”
 
+Turzai said he consulted with the House parliamentarian, who expressed concerns about “increased confusion for voters and disenfranchising absentee voters, including members of the military, who would have to re-apply for absentee status.”
+
 The elections were called to fill vacancies in the state House left by members who won judgeships and a county commissioner seat. At least two of the races are expected to be competitive, with Democrats hoping their voter registration advantage will translate into flips of Republican-held seats in Bucks and Westmoreland.
 
-While all voters are able to[request a mail-in ballot](https://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx) for the April primary, that option was not available for these special elections.
+While all voters are able to [request a mail-in ballot](https://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx) for the April primary, that option was not available for these special elections.
 
-Elections officials said Friday they are planning to report to their assigned polling locations on Tuesday prepared with wipes and gloves.
+County officials said Friday they are planning to report to their assigned polling locations on Tuesday prepared with wipes and gloves.
 
 “I’d like to say we could put everybody in a bubble and protect everybody, but I’m not sure that’s possible,” said Jeffrey Greenburg, the director of elections for Mercer County.
 
@@ -54,4 +56,4 @@ As of Friday morning, Humphrey said she had only discussed with state officials 
 
 *Updated 4 p.m.*
 
-*Spotlight PA receives funding from nonprofit institutions and readers like you who are committed to investigative journalism that gets results. Give a gift today at[spotlightpa.org/donate](https://www.spotlightpa.org/donate).*
+*Spotlight PA receives funding from nonprofit institutions and readers like you who are committed to investigative journalism that gets results. Give a gift today at [spotlightpa.org/donate](https://www.spotlightpa.org/donate).*
