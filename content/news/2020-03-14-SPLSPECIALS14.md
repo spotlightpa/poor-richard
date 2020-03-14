@@ -1,22 +1,22 @@
 +++
-image = "external/58x6w7dgyrz7ks1xs5dnb86a3r.jpeg"
 image-description = "Elections officials said they are planning to report to their assigned polling locations on Tuesday, prepared with wipes and gloves."
 image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
 published = 2020-03-14T13:20:08.000Z
 slug = "pennsylvania-coronavirus-special-elections-bucks-county"
-authors = ["Gillian McGoldrick of LNP | LancasterOnline"]
-byline = ""
-title = "Three Pa. special elections are planned for Tuesday despite the coronavirus"
+authors = ["Gillian McGoldrick"]
+byline = "Gillian McGoldrick of LNP | LancasterOnline"
 description = "But on Friday, Gov. Tom Wolf cast doubt on whether the election in Bucks County will take place as scheduled."
-blurb = "But on Friday, Gov. Tom Wolf cast doubt on whether the election in Bucks County will take place as scheduled."
 kicker = "Coronavirus"
+linktitle = ""
 suppress-featured = true
 topics = ["Coronavirus"]
 internal-id = "SPLSPECIALS14"
 internal-budget = ""
 arc-id = "H4R3JUJ32RCXPFHWVNWZ6ZLLRI"
 subtitle = ""
-linktitle = ""
+image = "external/58x6w7dgyrz7ks1xs5dnb86a3r.jpeg"
+title = "Three Pa. special elections are planned for Tuesday despite the coronavirus"
+blurb = "But on Friday, Gov. Tom Wolf cast doubt on whether the election in Bucks County will take place as scheduled."
 +++
 <i>This story was produced as part of a joint effort between </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus.</i>
 
