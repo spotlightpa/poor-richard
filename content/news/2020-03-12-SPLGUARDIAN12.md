@@ -10,13 +10,13 @@ title = "Protections for vulnerable Pa. seniors lag, reforms to guardianship sys
 description = "Experts say that critical changes needed to better protect vulnerable seniors lack funding, are incomplete, or are stuck in limbo in the state legislature."
 blurb = "Experts say that critical changes needed to better protect vulnerable seniors lack funding, are incomplete, or are stuck in limbo in the state legislature."
 kicker = "Courts"
-suppress-featured = false
+suppress-featured = true
 internal-id = "SPLGUARDIAN12"
 internal-budget = ""
 arc-id = "KRDBPHGHURFFXPPQLMFRKT34TE"
 subtitle = ""
 linktitle = ""
-weight = 2
+weight = 1
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
