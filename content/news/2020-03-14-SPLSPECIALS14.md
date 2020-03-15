@@ -22,7 +22,7 @@ linktitle = ""
 
 HARRISBURG — Despite concerns over the coronavirus, a special election in Bucks County will go on as planned Tuesday, a top state House official has announced.
 
-Both Gov. Tom Wolf and local officials had called for the special election in the 18th House District to be postponed, as the number of COVID-19 cases in the county rose to three. On Saturday, Wolf expanded a voluntary shutdown of nonessential businesses to the area.
+Both Gov. Tom Wolf and local officials had called for the special election in the 18th House District to be postponed, as the number of COVID-19 cases in the county rose to four. On Saturday, Wolf expanded a voluntary shutdown of nonessential businesses to the area.
 
 “We are concerned with both being able to staff that election as well as people’s comfort with being able to come out and vote, given the situation and the social distancing recommendations," Diane M. Ellis-Marseglia, chair of the Board of Bucks County Commissioners, said Saturday.
 
