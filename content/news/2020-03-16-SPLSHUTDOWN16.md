@@ -19,15 +19,23 @@ linktitle = ""
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-HARRISBURG — Gov. Tom Wolf on Monday will order a statewide shutdown as the number of coronavirus cases in Pennsylvania continues to grow, according to three sources familiar with the decision.
+HARRISBURG — Gov. Tom Wolf on Monday ordered a statewide shutdown as the number of coronavirus cases in Pennsylvania continues to grow.
 
-Wolf and other state officials will release more details to the public at 2 p.m.
+The shutdown will be in place for two weeks, said Wolf, who urged residents to “stay calm, stay safe, stay home.”
 
-The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — under a shutdown order. That involved asking non-essential businesses like gyms, hair salons, and concert venues to close for 14 days. Wolf said pharmacies, grocery stores, and gas stations should stay open.
+“We’re going to get through this,” he said.
 
-Residents there were urged to curtail any non-essential travel.
+The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — under a shutdown order. That involved asking nonessential businesses like gyms, hair salons, and concert venues to close for 14 days. Wolf said pharmacies, grocery stores, and gas stations should stay open.
 
-On Sunday, Wolf also ordered restaurants in those four counties as well as Allegheny County to close their dine-in facilities for two weeks. He said carry-out and delivery service could continue.
+Residents there were urged to curtail any nonessential travel.
+
+On Sunday, Wolf also ordered restaurants in those four counties as well as Allegheny County to close
+
+Also on Monday, the Pennsylvania Supreme Court declared a statewide judicial emergency until April 14, 2020.
+
+Under the emergency declaration, county president judges can, among other changes, restrict or temporarily close court facilities and authorize using technology to conduct court proceedings.
+
+The order, court officials stressed, would not affect a criminal defendant’s constitutional right to a speedy trial.
 
 <i>This is a breaking news story and will be updated.</i>
 
