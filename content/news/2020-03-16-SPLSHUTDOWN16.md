@@ -19,7 +19,7 @@ linktitle = ""
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-HARRISBURG — Gov. Tom Wolf on Monday ordered a statewide shutdown as the number of coronavirus cases in Pennsylvania continues to grow.
+HARRISBURG — Gov. Tom Wolf on Monday ordered a statewide shutdown as the number of coronavirus cases in Pennsylvania continued to grow.
 
 The shutdown will be in place for two weeks, said Wolf, who urged residents to “stay calm, stay safe, stay home.”
 
