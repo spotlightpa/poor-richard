@@ -27,10 +27,8 @@ The governor had previously placed four counties — Bucks, Chester, Delaware, a
 
 Residents there were urged to curtail any non-essential travel.
 
-***» Our reporters are working nonstop to bring you the latest on the state government's response to the coronavirus. If you value this service, please [make a tax-deductible donation now](https://www.spotlightpa.org/donate).***
-
 On Sunday, Wolf also ordered restaurants in those four counties as well as Allegheny County to close their dine-in facilities for two weeks. He said carry-out and delivery service could continue.
 
 <i>This is a breaking news story and will be updated.</i>
 
-<i>Spotlight PA receives funding from nonprofit institutions and readers like you who are committed to investigative journalism that gets results. Give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i>**Our reporters are working nonstop to bring you the latest on the state government's response to the coronavirus*.*** If you value this service, please give a tax-deductible gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
