@@ -40,6 +40,8 @@ Asked about daycare centers, the governor indicated that they fall under the shu
 
 Late Sunday, Wolf ordered restaurants in the four counties then under lockdown, as well as Allegheny County, to close their dine-in facilities. As part of his statewide shutdown order, that will now apply to restaurants statewide. Takeout service may continue, Wolf said.
 
+State-run liquor stores will also shut down indefinitely at 9 p.m. Tuesday.
+
 The state Gaming Control Board also announced Monday that it had instructed any casinos still open to begin shutting down. And Pennsylvania’s Supreme Court declared a statewide judicial emergency until April 14, 2020, during which county president judges can, among other changes, restrict or temporarily close court facilities and authorize using technology to conduct court proceedings.
 
 Levine said as of Monday morning, 76 Pennsylvania residents had tested positive for the virus, including 30 people in Montgomery County and eight in Philadelphia, where Mayor Jim Kenney’s administration has now [ordered all nonessential businesses to shut down](https://www.inquirer.com/health/coronavirus/philadelphia-shutdown-coronavirus-20200316.html "https\://www.inquirer.com/health/coronavirus/philadelphia-shutdown-coronavirus-20200316.html"). The city is also closing city government buildings to the public and halting all nonessential city services this week.
