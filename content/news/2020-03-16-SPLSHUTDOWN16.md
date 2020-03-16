@@ -31,4 +31,4 @@ On Sunday, Wolf also ordered restaurants in those four counties as well as Alleg
 
 <i>This is a breaking news story and will be updated.</i>
 
-<i>**Our reporters are working nonstop to bring you the latest on the state government's response to the coronavirus*.*** If you value this service, please give a tax-deductible gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i>Our reporters are working nonstop to bring you the latest on the state government's response to the coronavirus*.* If you value this service, please give a tax-deductible gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
