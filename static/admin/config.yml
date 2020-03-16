@@ -283,7 +283,7 @@ collections:
             widget: boolean
             default: false
       - label: "Coronavirus landing page"
-        name: news-landing
+        name: topic-coronavirus
         file: content/topics/coronavirus/_index.md
         format: toml-frontmatter
         fields:
