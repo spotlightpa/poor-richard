@@ -1,12 +1,12 @@
 +++
 image = "external/wydx0jk3nbxvkdrmaxv5hpghyr.jpeg"
-image-description = "The governor had previously put four counties — Bucks, Chester, Delaware, and Montgomery — under a shutdown order."
+image-description = "The shutdown will be in place for two weeks, said Wolf, who urged residents to “stay calm, stay safe, stay home.”"
 image-credit = "Commonwealth Media Services"
 published = 2020-03-16T17:30:30.000Z
 slug = "pennsylvania-coronavirus-statewide-shutdown-tom-wolf-governor"
 authors = ["Angela Couloumbis of Spotlight PA"]
 byline = ""
-title = "Pennsylvania Gov. Tom Wolf to order statewide shutdown over coronavirus"
+title = "Pennsylvania Gov. Tom Wolf orders statewide shutdown over coronavirus"
 kicker = "Coronavirus"
 suppress-featured = false
 internal-id = "SPLSHUTDOWN16"
