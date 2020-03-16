@@ -5,9 +5,16 @@
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child">
-        <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin">
-          {{ $params.kicker| default "News" }}
-        </h3>
+        {{ if $params.topic }}
+          <a
+            class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+            href="{{ $params.topic.RelPermalink }}"
+          >{{ $params.kicker | default $params.topic.Title }}</a>
+        {{ else }}
+          <h3
+            class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+          >{{ $params.kicker | default "News" }}</h3>
+        {{ end }}
       </div>
     </div>
   </div>

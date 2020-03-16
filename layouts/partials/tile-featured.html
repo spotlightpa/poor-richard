@@ -12,9 +12,16 @@
             Top News <!-- TODO: Admin -->
           {{ end }}
         </span>
-        <span class="tag is-square is-outline is-uppercase has-text-weight-semibold">
-          {{ $featuredParams.kicker | default "News" }}
-        </span>
+        {{ if $featuredParams.topic }}
+          <a
+            class="tag is-square is-outline is-uppercase has-text-weight-semibold"
+            href="{{ $featuredParams.topic.RelPermalink }}"
+          >{{ $featuredParams.kicker | default $featuredParams.topic.Title }}</a>
+        {{ else if $featuredParams.kicker }}
+          <span
+            class="tag is-square is-outline is-uppercase has-text-weight-semibold"
+          >{{ $featuredParams.kicker | default "News" }}</span>
+        {{ end }}
       </span>
     </div>
   </div>

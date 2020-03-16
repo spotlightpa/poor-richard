@@ -1,18 +1,23 @@
 {{ $byline := "" }}
 {{ with .Param "authors" }}
-   {{ $byline = delimit . ", " " and " }}
+  {{ $byline = delimit . ", " " and " }}
 {{ end }}
 {{ with .Param "byline" }}
-   {{ $byline = . }}
+  {{ $byline = . }}
 {{ end }}
 
 {{ $kicker := .Param "kicker" }}
+
+{{ $topic := "" }}
+{{ if .Param "topics" }}
+  {{  $topic = index (.GetTerms "topics") 0 }}
+{{ end }}
 
 {{ $blurb := .Param "blurb" | default "" }}
 
 {{ $showTitle := .Param "suppress-title" | not }}
 
-{{ $params := dict "byline" $byline "kicker" $kicker "blurb" $blurb "showTitle" $showTitle }}
+{{ $params := dict "byline" $byline "kicker" $kicker "blurb" $blurb "showTitle" $showTitle "topic" $topic }}
 
 {{ with .PublishDate }}
   {{ $pub := partial "date-apstyle.html" .Local }}
