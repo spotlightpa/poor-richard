@@ -1,22 +1,22 @@
 +++
+image = "external/wydx0jk3nbxvkdrmaxv5hpghyr.jpeg"
 image-description = "The shutdown will be in place for two weeks, said Wolf, who urged residents to “stay calm, stay safe, stay home.”"
 image-credit = "Commonwealth Media Services"
 published = 2020-03-16T17:30:30.000Z
 slug = "pennsylvania-coronavirus-statewide-shutdown-tom-wolf-governor"
 authors = ["Angela Couloumbis"]
 byline = "Angela Couloumbis of Spotlight PA"
+title = "Pennsylvania Gov. Tom Wolf orders statewide shutdown over coronavirus"
 description = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
+blurb = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
 kicker = "Coronavirus"
-linktitle = ""
 suppress-featured = false
 topics = ["Coronavirus"]
 internal-id = "SPLSHUTDOWN16"
 internal-budget = ""
 arc-id = "NESQRY4J7JD4JGSZ6IQSBND5II"
 subtitle = ""
-image = "2020/01/capitol-parking.jpeg"
-title = "Pennsylvania Gov. Tom Wolf orders statewide shutdown over coronavirus"
-blurb = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
+linktitle = ""
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
