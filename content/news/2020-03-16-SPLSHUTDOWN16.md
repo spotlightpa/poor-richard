@@ -30,9 +30,7 @@ He also urged residents to “stay calm, stay safe, stay home."
 
 The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — in a similar lockdown. Late last week, he also closed all public schools statewide for two weeks.
 
-Monday’s order applies to private schools and higher-education institutions statewide, according to Eric Levis, a spokesperson for the state Department of Education.
-
-Though Wolf has [broad powers in dealing with the COVID-19 crisis](https://www.spotlightpa.org/news/2020/03/coronavirus-tom-wolf-emergency-powers-pennsylvania/), his shutdown orders have generally involved asking nonessential businesses like gyms, salons, theaters, and concert venues to close for 14 days. On Monday, he ordered restaurants statewide to close their dine-in facilities, while allowing takeout service to continue.
+Though Wolf has[broad powers in dealing with the COVID-19 crisis](https://www.spotlightpa.org/news/2020/03/coronavirus-tom-wolf-emergency-powers-pennsylvania/), his shutdown orders have generally involved asking nonessential businesses like gyms, salons, theaters, and concert venues to close for 14 days. On Monday, he ordered restaurants statewide to close their dine-in facilities, while allowing takeout service to continue.
 
 A spokesperson for his office noted Wolf “could force closures, but as the governor previously stated, this is something that is incumbent on all of us to help mitigate the spread.”
 
@@ -40,7 +38,7 @@ A spokesperson for his office noted Wolf “could force closures, but as the gov
 
 Wolf reiterated on Monday that essential government and medical services will continue, and that pharmacies, grocery stores, health care facilities, and gas stations should stay open.
 
-Republicans who control the state House criticized the Wolf administration for failing to release “an updated press release or an executive order” after the announcement was made.
+Republicans who control the state House criticized the Wolf administration for not making the announcement in “an updated press release or an executive order."
 
 “First, the governor has not mandated the immediate closure of any businesses in Pennsylvania," the leaders said in a statement. “He has ‘strongly urged’ that ‘non-essential’ businesses shut down as part of social distancing measures aimed at slowing the spread of the virus.”
 
@@ -58,7 +56,7 @@ Other emergency moves announced Monday:
 * The Department of Conservation and Natural Resources will close all facilities at state parks and forests for 14 days starting Tuesday. Trails, lakes, forests, roads, and parking areas will still be open to the public.
 * Pennsylvania’s Supreme Court declared a statewide judicial emergency until April 14, 2020, during which county president judges can, among other changes, restrict or temporarily close court facilities and authorize using technology to conduct court proceedings.
 
-Health Secretary Rachel Levine said as of Monday morning, 76 Pennsylvania residents had tested positive for the virus, including 30 people in Montgomery County and eight in Philadelphia, where Mayor Jim Kenney’s administration has now [ordered all nonessential businesses to shut down](https://www.inquirer.com/health/coronavirus/philadelphia-shutdown-coronavirus-20200316.html). The city is also closing city government buildings to the public and halting all nonessential city services this week.
+Health Secretary Rachel Levine said as of Monday morning, 76 Pennsylvania residents had tested positive for the virus, including 30 people in Montgomery County and eight in Philadelphia, where Mayor Jim Kenney’s administration has now[ordered all nonessential businesses to shut down](https://www.inquirer.com/health/coronavirus/philadelphia-shutdown-coronavirus-20200316.html). The city is also closing city government buildings to the public and halting all nonessential city services this week.
 
 For the first time Monday, state health officials said that “one or two” cases involving people who tested positive for COVID-19 could not be traced to a known source of infection — for instance, travel to an impacted area or contact to an infected person — suggesting the virus is spreading in the community.
 
