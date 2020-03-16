@@ -29,7 +29,7 @@ The governor had previously placed four counties — Bucks, Chester, Delaware, a
 
 Residents there were urged to curtail any nonessential travel.
 
-On Sunday, Wolf also ordered restaurants in those four counties as well as Allegheny County to close
+On Sunday, Wolf ordered restaurants in those four counties as well as Allegheny County to close their dine-in facilities. Wolf extended that request to restaurants statewide on Monday.
 
 Also on Monday, the Pennsylvania Supreme Court declared a statewide judicial emergency until April 14, 2020.
 
