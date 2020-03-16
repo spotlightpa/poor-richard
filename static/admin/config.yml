@@ -282,6 +282,23 @@ collections:
             hint: "Show sitewide alert banner"
             widget: boolean
             default: false
+      - label: "Coronavirus landing page"
+        name: news-landing
+        file: content/topics/coronavirus/_index.md
+        format: toml-frontmatter
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Override title tag
+            name: title-tag
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
       - label: "News landing page"
         name: news-landing
         file: content/news/_index.md
