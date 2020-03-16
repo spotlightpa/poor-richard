@@ -40,7 +40,7 @@ Asked about daycare centers, the governor indicated that they fall under the shu
 
 Late Sunday, Wolf ordered restaurants in the four counties then under lockdown, as well as Allegheny County, to close their dine-in facilities. As part of his statewide shutdown order, that will now apply to restaurants statewide. Takeout service may continue, Wolf said.
 
-State-run liquor stores will also shut down indefinitely at 9 p.m. Tuesday.
+State-run liquor stores will also shut down indefinitely at 9 p.m. Tuesday — although consumers can still purchase wine and beer at grocery stores that carry them.
 
 The state Gaming Control Board also announced Monday that it had instructed any casinos still open to begin shutting down. And Pennsylvania’s Supreme Court declared a statewide judicial emergency until April 14, 2020, during which county president judges can, among other changes, restrict or temporarily close court facilities and authorize using technology to conduct court proceedings.
 
