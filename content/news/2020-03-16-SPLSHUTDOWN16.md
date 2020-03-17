@@ -1,34 +1,34 @@
 +++
+image = "external/wydx0jk3nbxvkdrmaxv5hpghyr.jpeg"
 image-description = "The shutdown will be in place for two weeks, said Wolf, who urged residents to “stay calm, stay safe, stay home.”"
 image-credit = "Commonwealth Media Services"
 published = 2020-03-16T17:30:30.000Z
 slug = "pennsylvania-coronavirus-statewide-shutdown-tom-wolf-governor"
 authors = ["Angela Couloumbis"]
 byline = "Angela Couloumbis of Spotlight PA"
+title = "Pennsylvania Gov. Tom Wolf orders statewide shutdown over coronavirus"
 description = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
+blurb = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
 kicker = "Coronavirus"
-linktitle = ""
 suppress-featured = false
 topics = ["Coronavirus"]
 internal-id = "SPLSHUTDOWN16"
 internal-budget = ""
 arc-id = "NESQRY4J7JD4JGSZ6IQSBND5II"
 subtitle = ""
-image = "external/wydx0jk3nbxvkdrmaxv5hpghyr.jpeg"
-title = "Pennsylvania Gov. Tom Wolf orders statewide shutdown over coronavirus"
-blurb = "The shutdown directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks."
+linktitle = ""
 +++
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
 HARRISBURG — Gov. Tom Wolf extended his shutdown order to the entire state on Monday as the number of coronavirus cases in Pennsylvania continued to grow.
 
-The directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks. Wolf said he expects “self-enforcement" of the order, rather than forced closures.
+The directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks. The Wolf administration said it’s “strongly urging” businesses to act, while warning officials could eventually find it “necessary to compel closures.”
 
-He also urged residents to “stay calm, stay safe, stay home."
+The governor also urged residents to “stay calm, stay safe, stay home."
 
-“This isn’t a decision that I take lightly at all,” the governor said at the state’s emergency management headquarters on Monday. “It’s one that I’m making because medical experts believe it is the only way we can prevent our hospitals from being overwhelmed by patients.”
+“This isn’t a decision that I take lightly at all,” Wolf said at the state’s emergency management headquarters on Monday. “It’s one that I’m making because medical experts believe it is the only way we can prevent our hospitals from being overwhelmed by patients.”
 
-The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — in a similar lockdown. Late last week, he also closed all public schools statewide for two weeks.
+The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — in a similar lockdown. On Friday, he also closed all public schools statewide for two weeks.
 
 Though Wolf has [broad powers in dealing with the COVID-19 crisis](https://www.spotlightpa.org/news/2020/03/coronavirus-tom-wolf-emergency-powers-pennsylvania/), his shutdown orders have generally involved asking nonessential businesses like gyms, salons, theaters, and concert venues to close for 14 days. On Monday, he ordered restaurants statewide to close their dine-in facilities, while allowing takeout service to continue.
 
@@ -36,22 +36,18 @@ A spokesperson for his office noted Wolf “could force closures, but as the gov
 
 “In unprecedented circumstances like these we expect compliance to protect customers, employees, and the community,” the spokesperson said. “The administration will work with local law enforcement, permitting entities, and local officials to enforce if needed. The governor does not want to expend valuable resources from the State Police and National Guard because irresponsible people will not do the right thing.”
 
+Later Monday evening, the Wolf administration toughened its stance, saying it is relying on businesses to “act now before the governor or the Secretary of Health find it necessary to compel closures.”
+
 Wolf reiterated on Monday that essential government and medical services will continue, and that pharmacies, grocery stores, health care facilities, and gas stations should stay open.
 
-Republicans who control the state House criticized the Wolf administration for not making the announcement in “an updated press release or an executive order."
+He also clarified his definition of which commercial services and sectors fall into the essential category: food processing, agriculture, industrial manufacturing, feed mills, construction, trash collection, auto and home repair, post office and shipping outlets, insurance, banks, laundromats, veterinary clinics and pet stores, and hotels and commercial lodging.
 
-“First, the governor has not mandated the immediate closure of any businesses in Pennsylvania," the leaders said in a statement. “He has ‘strongly urged’ that ‘non-essential’ businesses shut down as part of social distancing measures aimed at slowing the spread of the virus.”
-
-“We agree this is a time to limit exposure to large groups of people, but if you, or a business owner you know, wishes to remain in business, it is their right to do so," the statement continued.
-
-Gene Barr, president of Pennsylvania Chamber of Business and Industry, said his understanding of the order was similar.
-
-“Since the governor is not sending the State Police or National Guard, it’s up to individual businesses,” he said. “If you decide to, you could completely disregard his order.”
+Republicans who control the state House earlier in the day had criticized the Wolf administration for creating confusion in the business community about whether to close.
 
 Other emergency moves announced Monday:
 
 * The state Gaming Control Board instructed any casinos still open to begin shutting down.
-* The Department of Transportation closed all driver’s license and driver’s license photo centers, and extended the validity of expiring driver’s licenses, vehicle registrations and inspections until the end of April.
+* The Department of Transportation closed all driver’s license and driver’s license photo centers, and extended the validity of expiring driver’s licenses, vehicle registrations, and inspections until the end of April.
 * State-run liquor stores will shut down indefinitely at 9 p.m. Tuesday, although consumers can still purchase wine and beer at grocery stores that carry them, according to officials at the state’s Liquor Control Board.
 * The Department of Conservation and Natural Resources will close all facilities at state parks and forests for 14 days starting Tuesday. Trails, lakes, forests, roads, and parking areas will still be open to the public.
 * Pennsylvania’s Supreme Court declared a statewide judicial emergency until April 14, 2020, during which county president judges can, among other changes, restrict or temporarily close court facilities and authorize using technology to conduct court proceedings.
