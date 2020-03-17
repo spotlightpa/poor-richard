@@ -26,6 +26,8 @@ The directive, which applies to nonessential businesses in all 67 counties, begi
 
 The governor also urged residents to “stay calm, stay safe, stay home."
 
+***READ MORE: [Everything you need to know about the Pennsylvania coronavirus shutdown | Latest updates](https://www.spotlightpa.org/news/2020/03/everything-you-need-to-know-about-the-pennsylvania-coronavirus-shutdown-latest-updates/)***
+
 “This isn’t a decision that I take lightly at all,” Wolf said at the state’s emergency management headquarters on Monday. “It’s one that I’m making because medical experts believe it is the only way we can prevent our hospitals from being overwhelmed by patients.”
 
 The governor had previously placed four counties — Bucks, Chester, Delaware, and Montgomery — in a similar lockdown. On Friday, he also closed all public schools statewide for two weeks.
