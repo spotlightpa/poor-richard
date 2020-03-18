@@ -26,7 +26,7 @@ The directive, which applies to nonessential businesses in all 67 counties, begi
 
 The governor also urged residents to “stay calm, stay safe, stay home."
 
-***» READ MORE:*** [Everything you need to know about the Pennsylvania coronavirus shutdown | Latest updates](https://www.spotlightpa.org/news/2020/03/everything-you-need-to-know-about-the-pennsylvania-coronavirus-shutdown-latest-updates/)
+***» READ MORE:*** *[Everything you need to know about the Pennsylvania coronavirus shutdown | Latest updates](https://www.spotlightpa.org/news/2020/03/everything-you-need-to-know-about-the-pennsylvania-coronavirus-shutdown-latest-updates/)*
 
 “This isn’t a decision that I take lightly at all,” Wolf said at the state’s emergency management headquarters on Monday. “It’s one that I’m making because medical experts believe it is the only way we can prevent our hospitals from being overwhelmed by patients.”
 
@@ -36,7 +36,7 @@ Though Wolf has [broad powers in dealing with the COVID-19 crisis](https://www.s
 
 A spokesperson for his office noted Wolf “could force closures, but as the governor previously stated, this is something that is incumbent on all of us to help mitigate the spread.”
 
-***» DONATE NOW:*** Spotlight PA reporters are working nonstop under difficult circumstances to provide journalism for the public good. Our work is reader-funded, and we need your help. [Make a donation now](https://www.spotlightpa.org/donate "https://www.spotlightpa.org/donate").
+***» DONATE NOW:*** *Spotlight PA reporters are working nonstop under difficult circumstances to provide journalism for the public good. Our work is reader-funded, and we need your help. [Make a donation now](https://www.spotlightpa.org/donate "https\://www.spotlightpa.org/donate").*
 
 “In unprecedented circumstances like these we expect compliance to protect customers, employees, and the community,” the spokesperson said. “The administration will work with local law enforcement, permitting entities, and local officials to enforce if needed. The governor does not want to expend valuable resources from the State Police and National Guard because irresponsible people will not do the right thing.”
 
