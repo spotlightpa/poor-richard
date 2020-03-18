@@ -66,7 +66,7 @@ export default {
       return this.testing ? "text" : "hidden";
     },
     submitClasses() {
-      let color = this.testing ? "is-success" : "is-primary";
+      let color = this.testing ? "is-success" : "is-danger";
       let classes = [color];
       if (this.isSubmitting) {
         classes.push("is-loading");

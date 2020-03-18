@@ -24,7 +24,7 @@ export default {
 
     <button
       type="button"
-      class="button is-primary"
+      class="button is-danger"
       @click="$emit('continue', $event)"
     >
       <span>

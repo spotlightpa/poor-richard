@@ -157,9 +157,9 @@ export default {
       </h1>
 
       <p class="is-size-3 is-size-4-mobile">
-        Support the only investigative newsroom
+        We provide essential, public-service journalism
         <span class="is-hidden-touch"><br /></span>
-        dedicated to covering Pennsylvania state government.
+        at no cost thanks to readers like you.
       </p>
 
       <hr
@@ -167,36 +167,21 @@ export default {
       />
 
       <p class="is-size-3 is-size-4-mobile">
-        Your tax-deductible donation to Spotlight PA will help us investigate
-        one of the largest and most opaque state capitals in the U.S. Together,
-        we can hold the powerful to account.
+        Help us continue to aggressively cover Pennsylvania’s response to the
+        coronavirus and how it’s affecting communities across the state.
       </p>
     </hgroup>
 
-    <div class="buttons is-centered is-hidden-desktop">
+    <div class="buttons is-centered">
       <button
         v-for="opt of recurringOptions"
         :key="opt.value"
-        :class="formData.recurring === opt.value ? 'is-primary' : 'is-light'"
+        :class="formData.recurring === opt.value ? 'is-danger' : 'is-light'"
         class="button is-large"
         type="button"
         @click="setRecurring(opt.value)"
         v-text="opt.text"
       ></button>
-    </div>
-
-    <div class="tabs is-toggle is-medium is-fullwidth is-hidden-touch">
-      <ul>
-        <li
-          v-for="opt of recurringOptions"
-          :key="opt.value"
-          :class="{
-            'is-active': formData.recurring === opt.value
-          }"
-        >
-          <a @click="setRecurring(opt.value)" v-text="opt.text"></a>
-        </li>
-      </ul>
     </div>
 
     <div class="buttons is-centered">
@@ -206,7 +191,7 @@ export default {
         class="button is-large"
         :class="
           formData.donationAmount === amount && !showOtherAmount
-            ? 'is-primary'
+            ? 'is-danger'
             : 'is-light'
         "
         type="button"
@@ -216,7 +201,7 @@ export default {
       </button>
       <button
         class="button is-large"
-        :class="showOtherAmount ? 'is-primary' : 'is-light'"
+        :class="showOtherAmount ? 'is-danger' : 'is-light'"
         type="button"
         @click="toggleOtherAmount"
       >
@@ -235,7 +220,7 @@ export default {
     <div class="buttons has-margin-top-thick">
       <button
         type="button"
-        class="button is-fullwidth is-primary has-text-weight-semibold"
+        class="button is-fullwidth is-danger has-text-weight-semibold"
         :class="sizeButton"
         @click="validate"
       >
