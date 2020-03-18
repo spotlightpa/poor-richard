@@ -16,7 +16,7 @@ internal-budget = ""
 arc-id = "KRDBPHGHURFFXPPQLMFRKT34TE"
 subtitle = ""
 linktitle = ""
-weight = 1
+weight = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
