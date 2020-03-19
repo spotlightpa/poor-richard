@@ -1,24 +1,8 @@
 
 <div class="box">
-  <h2 class="title is-6 has-text-danger has-text-left is-uppercase">Tips</h2>
+  <h2 class="title is-6 has-text-danger has-text-left is-uppercase" id="tip-flag">Tips</h2>
   <div class="block" id="text-block">
   </div>
-  <script>
-(function() {
-  var re = /\btip_text=([^&]+)/.exec(window.location.search);
-  var el = document.getElementById("text-block");
-  if (!re || !el) {
-    return;
-  }
-  var text = decodeURIComponent(re[1]);
-  el.innerText = text;
-  el.innerHTML = el.innerHTML
-    .replace(/&lt;b&gt;/g, "<b>")
-    .replace(/&lt;\/b&gt;/g, "</b>")
-    .replace(/&lt;i&gt;/g, "<i>")
-    .replace(/&lt;\/i&gt;/g, "</i>");
-})();
-  </script>
   <form
     name="contact-page"
     class="control"
@@ -107,3 +91,23 @@
     </div>
   </form>
 </div>
+<script>
+  (function() {
+    function replacer(paramRe, qs) {
+      var re = paramRe.exec(window.location.search);
+      var el = document.querySelector(qs);
+      if (!re || !el) {
+        return;
+      }
+      var text = decodeURIComponent(re[1]);
+      el.innerText = text;
+      el.innerHTML = el.innerHTML
+        .replace(/&lt;b&gt;/g, "<b>")
+        .replace(/&lt;\/b&gt;/g, "</b>")
+        .replace(/&lt;i&gt;/g, "<i>")
+        .replace(/&lt;\/i&gt;/g, "</i>");
+    }
+    replacer(/\btip_text=([^&]+)/, "#text-block");
+    replacer(/\bflag_text=([^&]+)/, "#tip-flag");
+  })();
+</script>
