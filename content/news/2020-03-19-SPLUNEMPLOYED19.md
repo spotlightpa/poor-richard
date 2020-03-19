@@ -1,23 +1,24 @@
 +++
-arc-id = "VCOTWJYL5JAVJLGWQP2IXS2V3U"
-internal-id = "SPLUNEMPLOYED19"
-internal-budget = ""
 image = "external/5jnyzjfr17mqy11gw1j8f286b0.jpeg"
 image-description = "Pennsylvania Gov. Tom Wolf has asked all nonessential businesses in Pennsylvania to close."
 image-credit = "JESSICA GRIFFIN / Staff Photographer"
-published = 2020-03-19T10:00:00Z
+published = 2020-03-19T10:00:00.000Z
 slug = "pennsylvania-new-jersey-unemployment-surge-coronavirus"
 authors = ["Angela Couloumbis", "Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"]
 byline = "Angela Couloumbis of Spotlight PA and Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"
 title = "Unemployment claims in Pa. and N.J. surge in wake of the coronavirus"
-subtitle = ""
 description = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
 blurb = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
 linktitle = ""
 suppress-featured = false
+topics = ["Coronavirus"]
+internal-id = "SPLUNEMPLOYED19"
+internal-budget = ""
+arc-id = "VCOTWJYL5JAVJLGWQP2IXS2V3U"
+weight = 1
+series = []
+subtitle = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
