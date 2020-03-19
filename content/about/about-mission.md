@@ -3,9 +3,9 @@ title = "Our Mission"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
 url = "/about/mission/"
 +++
-{{<pullquote>}}
-The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here.
-{{</pullquote>}}
+{{%pullquote%}}
+The mission of **_Spotlight PA_** is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here.
+{{%/pullquote%}}
 
 Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
 

@@ -41,7 +41,7 @@
   <main data-ga-action="Main section">
     {{ block "before-main" . }}{{ end }}
     {{ block "main" . }}
-      {{ partial "main.html" . }}
+      {{ .Render "main" }}
     {{ end }}
     {{ block "extra-main" . }}{{ end }}
   </main>

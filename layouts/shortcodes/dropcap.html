@@ -1,0 +1,15 @@
+{{ $words := split (trim .Inner " \n") " " }}
+{{ $initialWord := index $words 0 }}
+{{ $initialLetter := substr $initialWord 0 1 }}
+{{ $restOfFirst := substr $initialWord 1 }}
+{{ $rest := delimit (after 1 $words) " " | markdownify }}
+
+<p>
+  <span role="text">
+    <span aria-hidden="true">
+      <span class="dropcap">{{ $initialLetter }}</span>{{ $restOfFirst }}
+    </span>
+    <span class="is-sr-only">{{ $initialWord }}</span>
+  </span>
+  {{ $rest }}
+</p>

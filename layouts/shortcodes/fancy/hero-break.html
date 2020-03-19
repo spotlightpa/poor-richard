@@ -1,0 +1,36 @@
+</article>
+</section>
+{{ $src := .Get "src" }}
+{{ $center := .Get "center" }}
+{{ $color := .Get "color" | default "has-text-white" }}
+
+{{ $imgOpt := dict "filename" $src "width" 1200 "height" 900 }}
+{{ $imgurl := partial "imgproxy.html" $imgOpt }}
+
+<div class="scene">
+  <section
+    class="hero has-bg-fixed is-fullheight"
+    style="
+      background-image: url('{{ $imgurl }}');
+      background-size: cover;
+    "
+  >
+    <div class="hero-body">
+      <div
+        class="has-text-centered"
+        style="
+          min-width: 100%;
+          text-shadow: 2px 2px 8px #555;
+        "
+      >
+        <h1 class="title is-1 {{ $color }}">
+          {{ $center }}
+        </h1>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+<section class="section is-fancy">
+  <article class="content is-medium">
