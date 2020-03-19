@@ -168,7 +168,7 @@ export default {
 
       <p class="is-size-3 is-size-4-mobile">
         Help us continue to aggressively cover Pennsylvania’s response to the
-        coronavirus and how it’s affecting communities across the state.
+        coronavirus and how it’s affecting communities in the state.
       </p>
     </hgroup>
 
@@ -251,10 +251,10 @@ export default {
       <BulmaMessage
         header="Switch to Monthly?"
         :show-close-button="true"
-        class="is-danger is-medium"
+        class="is-black is-medium"
         @close-button="noThanks"
       >
-        <h1 class="title is-size-3 has-text-danger">
+        <h1 class="title is-size-3 has-text-black">
           Would you prefer to donate {{ annualizedAmount | formatUSD }} every
           month?
         </h1>
@@ -267,7 +267,7 @@ export default {
         <div class="buttons">
           <button
             type="button"
-            class="button is-warning has-text-weight-semibold"
+            class="button is-black has-text-weight-semibold"
             @click="noThanks"
           >
             No thanks
