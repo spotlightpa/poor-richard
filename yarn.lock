@@ -848,11 +848,6 @@
   resolved "https://registry.yarnpkg.com/@newswire/frames/-/frames-0.3.1.tgz#f2b3ad10e31a28e3126795f130f9d48144373a58"
   integrity sha512-o+RiGzc/ibNPE1a51KYxqBPR/xwF6HrO/NlO3fLWZHEqMRPdjaA63fUwlO6EBnYSvE8W/DZQI/HbdqL+i7xN9A==
 
-"@newswire/scroller@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@newswire/scroller/-/scroller-0.1.0.tgz#6863fe8bcb4c5c514011a9e578bbde511c0c302e"
-  integrity sha512-6dxbJxeFwIsem8I77k3ox8h7XocK5BzmhD3P2Qeggyq5Xcbxqg7XQtadqSBeU855mi/nvrTzdVdYnbjD0oNg5w==
-
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"

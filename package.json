@@ -30,7 +30,6 @@
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "@newswire/frames": "^0.3.1",
-    "@newswire/scroller": "^0.1.0",
     "@vue/component-compiler-utils": "^3.0.0",
     "@zeit/git-hooks": "^0.1.4",
     "alpinejs": "^2.2.1",

@@ -3,7 +3,6 @@ import { addModal } from "../utils/modal.js";
 import { addSocialButtonListeners } from "../utils/social.js";
 import { addGAListeners } from "../utils/google-analytics.js";
 import { rotatePromoImages } from "../utils/promo.js";
-import { addScrollListener } from "../utils/scrolly.js";
 
 function createListeners() {
   on("click", "[data-target]", ev => {
@@ -19,7 +18,6 @@ function createListeners() {
   addGAListeners();
   addSocialButtonListeners();
   addModal();
-  addScrollListener();
   rotatePromoImages();
 }
 
