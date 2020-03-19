@@ -20,10 +20,9 @@ weight = ""
 series = []
 subtitle = ""
 +++
-
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-The wave of business closings and cancellations amid the coronavirus crisis are causing massive job losses and a sharp spike in claims for unemployment compensation in Pennsylvania and New Jersey.
+The wave of business closings and cancellations amid the coronavirus crisis is causing massive job losses and a sharp spike in claims for unemployment compensation in Pennsylvania and New Jersey.
 
 In the last two days, as the coronavirus’ spread led Pennsylvania Gov. Tom Wolf to order a <a href="https://www.spotlightpa.org/news/2020/03/pennsylvania-coronavirus-statewide-shutdown-tom-wolf-governor/" target=_blank>statewide shutdown</a>, state officials have received 120,000 claims for unemployment benefits — more than half of what the state reported for the entire first quarter of 2019, according to state and federal data.
 
@@ -60,7 +59,6 @@ People should not “worry if they have trouble getting through," she added.
 The jobs crash caused by the impact of the coronavirus has been hard and swift: Before the public health emergency, both states enjoyed relatively low unemployment rates. Pennsylvania’s was 4.7 percent in January; New Jersey averaged a rate of 3.6 percent in 2019.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
-
 
 Wolf’s statewide shutdown order went into effect at 12:01 a.m. Tuesday and will last for two weeks. It applies to all nonessential businesses such as hair and nail salons, gyms, retail malls and stores, movie theaters, concert halls, and other entertainment venues. The governor also shut down schools statewide.
 
