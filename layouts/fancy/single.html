@@ -52,6 +52,6 @@
 
 {{ define "extra-head" }}
   {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
-  {{ $styles := resources.Get "css/fancychina.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
+  {{ $styles := resources.Get "css/fancy.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ end }}
