@@ -10,13 +10,13 @@ title = "Unemployment claims in Pa. and N.J. surge in wake of the coronavirus"
 description = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
 blurb = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
 kicker = "Coronavirus"
-linktitle = ""
 suppress-featured = false
 topics = ["Coronavirus"]
 internal-id = "SPLUNEMPLOYED19"
 internal-budget = ""
 arc-id = "VCOTWJYL5JAVJLGWQP2IXS2V3U"
-weight = 1
+linktitle = ""
+weight = ""
 series = []
 subtitle = ""
 +++
