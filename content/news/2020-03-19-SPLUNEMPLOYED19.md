@@ -1,7 +1,7 @@
 +++
 image = "external/5jnyzjfr17mqy11gw1j8f286b0.jpeg"
 image-description = "Pennsylvania Gov. Tom Wolf has asked all nonessential businesses in Pennsylvania to close."
-image-credit = "JESSICA GRIFFIN / Staff Photographer"
+image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
 published = 2020-03-19T10:00:00.000Z
 slug = "pennsylvania-new-jersey-unemployment-surge-coronavirus"
 authors = ["Angela Couloumbis", "Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"]
