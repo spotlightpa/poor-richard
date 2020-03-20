@@ -10,7 +10,7 @@
 
 {{ $topic := "" }}
 {{ if .Param "topics" }}
-  {{  $topic = index (.GetTerms "topics") 0 }}
+  {{ $topic = index (.GetTerms "topics") 0 }}
 {{ end }}
 
 {{ $blurb := .Param "blurb" | default "" }}
@@ -26,8 +26,8 @@
   {{ $params = dict "published" $pub "publishedISO" $iso | merge $params }}
 {{ end }}
 
-{{ with .Param "series"}}
-  {{ $series := index . 0 }}
+{{ if .Param "series"}}
+  {{ $series := index (.GetTerms "series") 0 }}
   {{ $params = dict "series" $series | merge $params }}
 {{ end }}
 

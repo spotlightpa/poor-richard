@@ -71,10 +71,10 @@
         </h2>
       {{ end }}
       {{ $seriesArticles := slice }}
-      {{ with  $series := $featuredParams.series }}
-        {{ $pages := $series | urlize | site.Taxonomies.series.Get }}
-        {{ $otherPages := where $pages ".Permalink" "ne" $featured.Permalink }}
-        {{ $seriesArticles = $seriesArticles | append $otherPages }}
+      {{ with $series := $featuredParams.series }}
+        {{ $pages := $series.Pages }}
+        {{ $seriesArticles = where $pages ".Permalink" "ne" $featured.Permalink }}
+        {{ $seriesArticles = first 2 $seriesArticles }}
       {{ end }}
 
       {{ if gt (len $seriesArticles) 0 }}
