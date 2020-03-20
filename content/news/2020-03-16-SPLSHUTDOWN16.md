@@ -22,7 +22,7 @@ linktitle = ""
 
 ***[UPDATE: Gov. Tom Wolf on Thursday expanded his order to all businesses that aren't "life-sustaining." ](https://www.spotlightpa.org/news/2020/03/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down/)***
 
-[](https://www.spotlightpa.org/news/2020/03/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down/)HARRISBURG — Gov. Tom Wolf extended his shutdown order to the entire state on Monday as the number of coronavirus cases in Pennsylvania continued to grow.
+HARRISBURG — Gov. Tom Wolf extended his shutdown order to the entire state on Monday as the number of coronavirus cases in Pennsylvania continued to grow.
 
 The directive, which applies to nonessential businesses in all 67 counties, begins at midnight and will be in place for two weeks. The Wolf administration said it’s “strongly urging” businesses to act, while warning officials could eventually find it “necessary to compel closures.”
 
