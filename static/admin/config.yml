@@ -267,6 +267,21 @@ collections:
         file: config/_default/params.toml
         format: toml-frontmatter
         fields:
+          - label: Promo text
+            name: promo-text
+            hint: "Promo text above homepage"
+            widget: markdown
+            required: false
+          - label: "Promo link"
+            name: promo-link
+            hint: "Promo link above homepage"
+            widget: string
+            required: false
+          - label: "Show promo"
+            name: promo-active
+            hint: "Show promo on homepage"
+            widget: boolean
+            default: false
           - label: Banner
             name: banner
             hint: "Sitewide alert banner"

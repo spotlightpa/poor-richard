@@ -1,7 +1,24 @@
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $featuredStory := where $news.RegularPages ".Params.suppress-featured" "!=" true | first 1 }}
 {{ $pages := $news.RegularPages | complement $featuredStory }}
-<section class="section" data-ga-action="Homepage link">
+
+{{ $hasPromo := .Param "promo-active" }}
+{{ $marginClass := "" }}
+{{ if $hasPromo }}
+  {{ $promo := .Param "promo-text" | markdownify }}
+  {{ $link := .Param "promo-link" }}
+  {{ $gaEvent := dict "eventCategory" "Promo Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
+  <section class="has-background-light has-radius-padding">
+    <a href="{{ $link }}" data-ga-event="{{ $gaEvent | jsonify }}">
+      <div class="is-size-3-fullscreen is-size-4 has-text-black has-text-centered">
+        {{ $promo }}
+      </div>
+    </a>
+  </section>
+  {{ $marginClass = "has-margin-top-negative" }}
+{{ end }}
+
+<section class="section {{ $marginClass }}" data-ga-action="Homepage link">
   <div class="container-hp">
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile-featured.html" $featuredStory }}
