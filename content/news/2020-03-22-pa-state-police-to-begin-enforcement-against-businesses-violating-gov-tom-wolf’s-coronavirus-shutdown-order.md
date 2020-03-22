@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 image = "2020/03/01f7f995358t5kzw.jpeg"
 image-credit = "Commonwealth Media Services"
 published = 2020-03-22T17:47:15.857Z
