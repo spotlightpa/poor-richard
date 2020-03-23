@@ -1,1 +1,4 @@
 buildFuture = true
+
+[minify]
+  minifyOutput = true

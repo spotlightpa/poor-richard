@@ -12,7 +12,7 @@
     "git-pre-push": "yarn run test",
     "build:parcel": "parcel build src/entrypoints/* --experimental-scope-hoisting",
     "build:stage": "yarn run build:parcel && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
-    "build:prod": "yarn run build:parcel && hugo version && hugo --minify",
+    "build:prod": "yarn run build:parcel && hugo version && hugo",
     "start:noreload": "parcel src/entrypoints/* & hugo server --disableLiveReload & wait",
     "start:full": "parcel src/entrypoints/* & hugo server --disableFastRender & wait",
     "start": "parcel src/entrypoints/* & hugo server & wait",
