@@ -49,30 +49,36 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Dorothea Behr
 * Ron Beitler
 * Sigal Ben
+* Stanley Berard
 * L.J. Bernard
 * R. Thomas Berner
 * Rita Bernstein & Alan Zuckerman
 * Robert Joseph Biller
+* Gorden Blain
 * William Blando
+* Shelly Bloom
 * David Bohanick
 * Suzanne Bonamici
 * Jeffrey L. Braff
 * Merrill & Nancy Brenner
 * D. Brooks
 * Gay Brown
-* James Brown
+* James D. Brown
 * Lisa Budwig
-* T. Buehner
+* Theresa Buehner
 * Byron Butcher
 * Heidi Butler
 * J.L. Byrne & C.M. Hersh
 * Stacey C. Cahn
+* Charles Cairns
 * Andrew Candor
 * Joseph L. Carbo
 * Mireille Carigi
-* Nicholas Carosella
+* Nicholas W. Carosella
+* Richard Carroll
 * Ashleigh Graf Casassa
 * Marguerite Chandler
+* Bonnie Chang
 * Patrick Christmas
 * Frank Cicchiello
 * Dr. Dane S. Claussen
@@ -81,7 +87,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * John & Joy Burt Conti
 * John M. Corcoran Esq.
 * J. Cordingley
-* Laurel Costa
+* Douglas and Laurel Costa
 * R. Cotlar
 * Brett Cott
 * Chris Coyle
@@ -89,12 +95,14 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Karen Crosby
 * Gregory Csikos
 * Jennifer Cunningham
+* Joan Daniels
 * Julie Daye
 * Fred Dedrick
 * Connie & Terry Dellmuth
 * Mike Del Vacchio
 * Fran DeMillion
 * Barry DeSantis
+* Jay S. Detwiler
 * Michael DiNunzio
 * Earl Drumheiser
 * Stephen Duncan
@@ -123,8 +131,10 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Barbara Forbes-Rhouni
 * Rebecca & Ari Forman
 * Leroy Forney
+* Sara Forster
 * Daniel Fraccica
 * Susannah Frame
+* Barbara Francis
 * Bruce P. Frassinelli
 * Kimberly Freeman
 * Gary French
@@ -135,11 +145,13 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Anthony Gabriel
 * Kate & Alan Gardner
 * John Gaynard
+* Anne & Walt Geiger
 * Barbara Geistwhite
 * Michael George
 * Nicholas Giordano
 * Stephen M. Glynn
 * Denise Gmerek
+* Jennifer Goettner
 * Tamara Goldman
 * Ellen Goodman
 * Ralf Rundgren Graves
@@ -161,6 +173,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Grace E. Herstine
 * Connie Hester
 * Clint Heverly
+* J. Hirt
 * Bob Hoover
 * Louise Horan
 * Avram Hornik
@@ -172,6 +185,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Sharon Hyde
 * Robert M. Hynosky
 * Annette E. Inker
+* Casey & Kristen Irvine
 * Evelyn Ishmael
 * Irina Ivanova
 * Stephen Ivey
@@ -192,15 +206,19 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Frank Kirkwood
 * Harold G. Kohn
 * Nina B. Korsh
+* Joseph Kraher
 * Stan & Maryann Kramer
 * Diana Krantz
 * Ian Krantz
+* Tina Kuhlman
 * Kevin Kuhn
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
 * J. Lai
 * John Lambert
 * Dennis & Lana Landon
+* Marianne Larkin
+* Tim & Mary Larson 
 * Martin Laufe
 * B. Lauridsen & G. Harke
 * Lora Lavin
@@ -222,9 +240,11 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Meg Martin & Peter Cox
 * Arlene Martinez
 * William H. Maruca
+* Donna & Jack McCallum
 * Mary McComsey
 * Claudia C. McGill
 * Michele McGovern
+* Evie McNiff
 * K. Melton
 * Keith G. Melville
 * Jules J. Mermelstein
@@ -260,11 +280,14 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Donald Powell
 * Laura Powers
 * Noah Price
+* Lois Prytherch
 * Theresa M. Rang
 * Mark Raymond
+* Peter Reilly
 * John Rhoades
 * Ralph Riedel
 * Eric Riese
+* David Robertson
 * Edward T. Rodgers
 * Lou Romito
 * Mary Catherine Roper
@@ -276,13 +299,18 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Edwin Rund
 * Gary Ryan
 * Benedict X. Saia
+* David and Ben Salkin
 * Nicholas Sanders
+* John Sandy
 * C. Sarnoski
 * Robert & Judith Schachner
 * Leslie Schlessinger
+* Paul Schmitt 
 * Jennifer Schnore
 * Carl Schoenberg & Susan York
+* Anthony J. Seigafuse
 * Pat Sellers
+* Bradley Seltzer
 * Milton Shapiro
 * David S. Share
 * Kimberley Shore
@@ -309,6 +337,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * R. Thomas
 * Irene Tierney
 * M. Tillger
+* JJ Tiziou
 * Charles Topper
 * Karen Hale Toth
 * Thomas L. Toth
@@ -318,6 +347,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Joseph C. Vignola
 * Fred Vodde
 * Russ Walker
+* John Wall
 * Hannah Walsh
 * Karen Weaver
 * Koert Wehberg, Esq.
@@ -334,7 +364,8 @@ Laura and John Arnold <br> The Erie Community Foundation <br> The Foundation for
 * Dr. Bob Yapsuga
 * Tracy Yeomans
 * Jerry Young
+* Karen Young
+* Rick Young
 * Sherley Young
 * Matt Zencey
-* Gerald Zubkoff
-{{%/supporters-list%}}
+* Gerald Zubkoff {{%/supporters-list%}}
