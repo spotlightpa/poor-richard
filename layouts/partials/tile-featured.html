@@ -6,10 +6,10 @@
     <div class="has-margin-bottom-thin">
       <span class="tags has-addons">
         <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
-          {{ with $featured.Param "special-report" }}
-            Special Report
+          {{ with $series := $featuredParams.series }}
+              {{- $series.Title -}}
           {{ else }}
-            Top News <!-- TODO: Admin -->
+            Top News
           {{ end }}
         </span>
         {{ if $featuredParams.topic }}
