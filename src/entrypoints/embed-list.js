@@ -1,6 +1,6 @@
 import "alpinejs";
 
-window.splEmbedList = function() {
+window.splEmbedList = function () {
   return {
     embedCode: "",
     baseURL: "",
@@ -61,6 +61,6 @@ window.splEmbedList = function() {
     updateParam() {
       clearTimeout(this.debounceID);
       this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
-    }
+    },
   };
 };

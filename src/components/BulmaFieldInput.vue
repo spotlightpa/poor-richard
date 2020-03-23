@@ -4,13 +4,13 @@ import BulmaField from "./BulmaField.vue";
 export default {
   name: "BulmaFieldInput",
   components: {
-    BulmaField
+    BulmaField,
   },
   props: {
     label: String,
     labelClass: {
       type: String,
-      default: "label"
+      default: "label",
     },
     value: String,
     placeholder: String,
@@ -20,32 +20,32 @@ export default {
     inputmode: String,
     minLength: {
       type: Number,
-      default: null
+      default: null,
     },
     maxLength: {
       type: Number,
-      default: null
+      default: null,
     },
     required: {
       type: Boolean,
-      default: false
+      default: false,
     },
     autofocus: {
       type: Boolean,
-      default: false
+      default: false,
     },
     autocomplete: {
       type: String,
-      default: null
+      default: null,
     },
     type: {
       type: String,
-      default: "text"
-    }
+      default: "text",
+    },
   },
   data() {
     return {
-      validationMessage: ""
+      validationMessage: "",
     };
   },
   computed: {
@@ -55,9 +55,9 @@ export default {
         help: this.help,
         labelClass: this.labelClass,
         required: this.required,
-        validationMessage: this.validationMessage
+        validationMessage: this.validationMessage,
       };
-    }
+    },
   },
   watch: {
     value(newVal) {
@@ -66,7 +66,7 @@ export default {
         this.$refs.input.setCustomValidity(message);
         this.validationMessage = message;
       }
-    }
+    },
   },
   methods: {
     updateValidationMessage(ev) {
@@ -79,8 +79,8 @@ export default {
       }
       this.updateValidationMessage(ev);
       this.$emit("input", newVal);
-    }
-  }
+    },
+  },
 };
 </script>
 

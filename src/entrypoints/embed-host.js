@@ -3,7 +3,7 @@ import { Framer } from "@newswire/frames";
 import { each, onLoad } from "../utils/dom-utils.js";
 
 onLoad(() => {
-  each("[data-spl-src]", el => {
+  each("[data-spl-src]", (el) => {
     // Bail if we were already attached or wrong embed version
     if (el.shadowRoot || el.dataset.splEmbedVersion !== "1") {
       return;

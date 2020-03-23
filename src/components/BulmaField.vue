@@ -7,22 +7,22 @@ export default {
     label: String,
     labelClass: {
       type: String,
-      default: "label"
+      default: "label",
     },
     controlClass: String,
     help: String,
     validationMessage: String,
     required: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data() {
     labelIDCounter++;
     return {
-      idForLabel: `BulmaField-${labelIDCounter}`
+      idForLabel: `BulmaField-${labelIDCounter}`,
     };
-  }
+  },
 };
 </script>
 

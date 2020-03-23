@@ -4,12 +4,12 @@ export default {
   props: {
     size: {
       type: String,
-      default: "is-medium"
-    }
+      default: "is-medium",
+    },
   },
   data() {
     return {
-      isFocused: false
+      isFocused: false,
     };
   },
   methods: {
@@ -36,8 +36,8 @@ export default {
           }, 5000); // 5s
         }
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

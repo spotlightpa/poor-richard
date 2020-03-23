@@ -1,11 +1,11 @@
 export default {
   name: "WindowListener",
   props: {
-    event: String
+    event: String,
   },
   mounted() {
     let eventName = this.event;
-    let listener = ev => void this.$emit(eventName, ev);
+    let listener = (ev) => void this.$emit(eventName, ev);
     window.addEventListener(eventName, listener);
 
     this.removeListener = () =>
@@ -16,5 +16,5 @@ export default {
   },
   render() {
     return;
-  }
+  },
 };

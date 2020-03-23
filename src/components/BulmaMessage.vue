@@ -3,8 +3,8 @@ export default {
   props: {
     header: String,
     headerRight: String,
-    showCloseButton: Boolean
-  }
+    showCloseButton: Boolean,
+  },
 };
 </script>
 

@@ -15,28 +15,28 @@ export default {
     BulmaMessage,
     BulmaModal,
     DonationFormButtons,
-    DonationFormBreadcrumbs
+    DonationFormBreadcrumbs,
   },
   props: {
     formData: Object,
     stepObj: Object,
-    testing: Boolean
+    testing: Boolean,
   },
   computed: {
     timePeriod() {
       return {
         Month: "monthly",
         Year: "annually",
-        "": ""
+        "": "",
       }[this.formData.recurring];
     },
     perPeriod() {
       return {
         Month: "/month",
         Year: "/year",
-        "": ""
+        "": "",
       }[this.formData.recurring];
-    }
+    },
   },
   methods: {
     sendFocus(ev) {
@@ -45,7 +45,7 @@ export default {
       this.$gae({
         eventCategory: "Donation form",
         eventAction: "Focused a field",
-        eventLabel
+        eventLabel,
       });
     },
     validate(ev) {
@@ -63,6 +63,6 @@ export default {
     },
     stepDec() {
       this.$emit("change-step", -1);
-    }
-  }
+    },
+  },
 };

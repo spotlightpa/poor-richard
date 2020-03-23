@@ -4,26 +4,26 @@ import BulmaField from "./BulmaField.vue";
 export default {
   name: "BulmaFieldSelect",
   components: {
-    BulmaField
+    BulmaField,
   },
   props: {
     label: String,
     labelClass: {
       type: String,
-      default: "label"
+      default: "label",
     },
     help: String,
     required: {
       type: Boolean,
-      default: false
+      default: false,
     },
     options: Array,
     value: String,
-    name: String
+    name: String,
   },
   data() {
     return {
-      validationMessage: ""
+      validationMessage: "",
     };
   },
   computed: {
@@ -33,7 +33,7 @@ export default {
         help: this.help,
         labelClass: this.labelClass,
         required: this.required,
-        validationMessage: this.validationMessage
+        validationMessage: this.validationMessage,
       };
     },
     selected: {
@@ -42,14 +42,14 @@ export default {
       },
       set(newVal) {
         this.$emit("input", newVal);
-      }
-    }
+      },
+    },
   },
   methods: {
     updateValidationMessage(ev) {
       this.validationMessage = ev.target.validationMessage;
-    }
-  }
+    },
+  },
 };
 </script>
 

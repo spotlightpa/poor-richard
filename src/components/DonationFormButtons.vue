@@ -1,8 +1,8 @@
 <script>
 export default {
   props: {
-    hasPrevious: { type: Boolean, default: true }
-  }
+    hasPrevious: { type: Boolean, default: true },
+  },
 };
 </script>
 

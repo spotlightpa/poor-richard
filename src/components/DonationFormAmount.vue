@@ -15,13 +15,13 @@ let showDowntime = false;
 let amountsObj = {
   "": [25, 50, 100, 500, 1000],
   Month: [10, 15, 25],
-  Year: [50, 100, 500]
+  Year: [50, 100, 500],
 };
 
 let amountsDefaults = {
   "": 100,
   Month: 10,
-  Year: 100
+  Year: 100,
 };
 
 function isPositiveNumber(val) {
@@ -41,13 +41,13 @@ export default {
       recurringOptions: [
         { text: "Monthly", value: "Month" },
         { text: "Yearly", value: "Year" },
-        { text: "One time only", value: "" }
+        { text: "One time only", value: "" },
       ],
       otherAmount: null,
       showOtherAmount: false,
       showModal: false,
       isPositiveNumber,
-      showDowntime
+      showDowntime,
     };
   },
   computed: {
@@ -61,15 +61,15 @@ export default {
       return {
         "": "",
         Month: "/mo.",
-        Year: "/yr."
+        Year: "/yr.",
       }[this.formData.recurring];
-    }
+    },
   },
   watch: {
     otherAmount(newVal) {
       let n = parseFloat(newVal) || 0;
       this.formData.donationAmount = n;
-    }
+    },
   },
   mounted() {
     // Sub-mobile responsive changes
@@ -106,7 +106,7 @@ export default {
         this.showModal = true;
         this.$gae({
           eventCategory: "Donation form",
-          eventAction: "Saw recurring donation nag screen"
+          eventAction: "Saw recurring donation nag screen",
         });
       }
     },
@@ -114,7 +114,7 @@ export default {
       this.showModal = false;
       this.$gae({
         eventCategory: "Donation form",
-        eventAction: "Declined recurring donation nag screen"
+        eventAction: "Declined recurring donation nag screen",
       });
       this.stepInc();
     },
@@ -125,11 +125,11 @@ export default {
       this.showModal = false;
       this.$gae({
         eventCategory: "Donation form",
-        eventAction: "Accepted recurring donation nag screen"
+        eventAction: "Accepted recurring donation nag screen",
       });
       this.stepInc();
-    }
-  }
+    },
+  },
 };
 </script>
 

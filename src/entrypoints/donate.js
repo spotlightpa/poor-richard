@@ -4,7 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowAltCircleRight,
   faArrowAltCircleLeft,
-  faEnvelope
+  faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -19,19 +19,19 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 let currencyFormat = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "USD"
+  currency: "USD",
 });
 
-Vue.filter("formatUSD", amount => currencyFormat.format(amount));
+Vue.filter("formatUSD", (amount) => currencyFormat.format(amount));
 
 let GA = {
   install(Vue) {
-    Vue.prototype.$gae = obj => void sendGAEvent(obj);
-  }
+    Vue.prototype.$gae = (obj) => void sendGAEvent(obj);
+  },
 };
 
 Vue.use(GA);
 
-each("[data-vue=donation-form]", el => {
+each("[data-vue=donation-form]", (el) => {
   new Vue(DonationForm).$mount(el);
 });

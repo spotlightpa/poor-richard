@@ -12,7 +12,7 @@ export default {
       countryOptions,
       stateOptions,
       hasSetDonationName: false,
-      donationName_: ""
+      donationName_: "",
     };
   },
   computed: {
@@ -33,11 +33,11 @@ export default {
       set(val) {
         this.hasSetDonationName = true;
         this.donationName_ = val;
-      }
+      },
     },
     stateOrProvince() {
       return this.isUSA ? this.state : this.province;
-    }
+    },
   },
   watch: {
     donationName(val) {
@@ -47,9 +47,9 @@ export default {
       handler() {
         this.formData.stateOrProvince = this.stateOrProvince;
       },
-      immediate: true
-    }
-  }
+      immediate: true,
+    },
+  },
 };
 </script>
 

@@ -18,7 +18,7 @@ export default {
       ccValidator,
       monthOptions,
       isSubmitting: false,
-      baseURL: "https://www.spotlightpa.org"
+      baseURL: "https://www.spotlightpa.org",
     };
   },
   computed: {
@@ -30,7 +30,7 @@ export default {
         let value = text.slice(2);
         years.push({
           value,
-          text
+          text,
         });
       }
       return years;
@@ -46,7 +46,7 @@ export default {
       set(val) {
         this.hasSetCardName = true;
         this.cardName_ = val;
-      }
+      },
     },
     cnpURL() {
       return this.testing
@@ -76,18 +76,18 @@ export default {
     ccDigitsEnd() {
       let match = String(this.formData.ccNumber).match(/\d+(\d{4})/);
       return match ? match[1] : "????";
-    }
+    },
   },
   watch: {
     cardName: {
       handler(val) {
         this.formData.cardName = val;
       },
-      immediate: true
+      immediate: true,
     },
     ccNumber(val) {
       this.formData.ccNumber = val.replace(/\D/g, "");
-    }
+    },
   },
   mounted() {
     this.baseURL = window.location.origin;
@@ -106,7 +106,7 @@ export default {
         this.$gae({
           eventCategory: "Donation form",
           eventAction: "Attempt form submission",
-          eventLabel: "Invalid submission"
+          eventLabel: "Invalid submission",
         });
         return;
       }
@@ -120,11 +120,11 @@ export default {
         eventCategory: "Donation form",
         eventAction: "Submit form",
         eventValue,
-        transport: "beacon"
+        transport: "beacon",
       });
       form.submit();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -135,7 +135,7 @@ export default {
     autocomplete="on"
     @focus.capture="sendFocus"
   >
-    <h2 class="title has-text-centered ">
+    <h2 class="title has-text-centered">
       Donate {{ formData.donationAmount | formatUSD }}{{ perPeriod }}
     </h2>
     <h3

@@ -2,7 +2,7 @@ import { each, on, storeItem, loadItem, polyfillClosest } from "./dom-utils.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
-  window.ga = function() {
+  window.ga = function () {
     (window.ga.q = window.ga.q || []).push(arguments);
   };
   window.ga.l = +new Date();
@@ -26,7 +26,7 @@ export function sendGAEvent(ev) {
 }
 
 export function ensureGA() {
-  let hasGA = Array.from(document.scripts).find(el =>
+  let hasGA = Array.from(document.scripts).find((el) =>
     el.src.match(/google-analytics/)
   );
   if (hasGA) {
@@ -45,7 +45,7 @@ export function addGAListeners() {
     storeItem(DO_NOT_TRACK_KEY, true);
   }
 
-  each("a", el => {
+  each("a", (el) => {
     let isInternal =
       el.host === window.location.host || el.host.match(/spotlightpa\.org$/);
 
@@ -55,7 +55,7 @@ export function addGAListeners() {
       el.rel = "noopener noreferrer";
     }
 
-    on("click", el, ev => {
+    on("click", el, (ev) => {
       let { gaEvent } = ev.currentTarget.dataset;
       if (gaEvent) {
         gaEvent = JSON.parse(gaEvent);
@@ -74,12 +74,12 @@ export function addGAListeners() {
         eventCategory,
         eventAction,
         eventLabel: ev.currentTarget.href,
-        transport: "beacon"
+        transport: "beacon",
       });
     });
   });
 
-  on("submit", "[data-ga-form]", ev => {
+  on("submit", "[data-ga-form]", (ev) => {
     let form = ev.target;
     let isValid = form.reportValidity();
 

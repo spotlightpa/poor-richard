@@ -7,7 +7,7 @@ export default {
   render(createElement, context) {
     const data = {
       props: {
-        name: `expand`
+        name: `expand`,
       },
       on: {
         afterEnter(element) {
@@ -58,11 +58,11 @@ export default {
             // eslint-disable-next-line no-param-reassign
             element.style.height = 0;
           });
-        }
-      }
+        },
+      },
     };
 
     return createElement(`transition`, data, context.children);
-  }
+  },
 };
 </script>

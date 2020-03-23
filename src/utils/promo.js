@@ -6,7 +6,7 @@ function randomChoice(a) {
 }
 
 export function rotatePromoImages() {
-  each("[data-promo-images]", el => {
+  each("[data-promo-images]", (el) => {
     let images = JSON.parse(el.dataset.promoImages);
     let image = randomChoice(images);
     el.setAttribute("href", image);

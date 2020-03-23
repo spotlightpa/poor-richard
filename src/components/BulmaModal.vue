@@ -4,10 +4,10 @@ import WindowListener from "./WindowListener.js";
 export default {
   name: "BulmaModal",
   components: {
-    WindowListener
+    WindowListener,
   },
   props: {
-    value: Boolean
+    value: Boolean,
   },
   watch: {
     value(newVal) {
@@ -18,13 +18,13 @@ export default {
       } else {
         root.classList.remove("is-clipped");
       }
-    }
+    },
   },
   methods: {
     close() {
       this.$emit("input", false);
-    }
-  }
+    },
+  },
 };
 </script>
 

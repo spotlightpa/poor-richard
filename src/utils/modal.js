@@ -9,7 +9,7 @@ export function openModal(qs, modalType) {
   sendGAEvent({
     eventCategory: "Modal interaction",
     eventAction: `Saw modal ${modalType}`,
-    nonInteraction: true
+    nonInteraction: true,
   });
 
   let root = document.body.parentElement;
@@ -26,47 +26,47 @@ export function openModal(qs, modalType) {
   let cancelFns = [
     on("click", closeBtn, closeModal),
     on("click", bg, closeModal),
-    on("touchmove", bg, e => {
+    on("touchmove", bg, (e) => {
       e.preventDefault();
     }),
-    on("keydown", document, e => {
+    on("keydown", document, (e) => {
       if (e.keyCode === ESCkeyCode) {
         closeModal();
       }
     }),
     // eslint-disable-next-line no-unused-vars
-    on("focus", inputs, e => {
+    on("focus", inputs, (e) => {
       sendGAEvent({
         eventCategory: "Modal interaction",
-        eventAction: "Focus input"
+        eventAction: "Focus input",
       });
     }),
     // eslint-disable-next-line no-unused-vars
-    on("submit", form, e => {
+    on("submit", form, (e) => {
       sendGAEvent({
         eventCategory: "Modal interaction",
         eventAction: `Submit ${modalType}`,
-        transport: "beacon"
+        transport: "beacon",
       });
       if (modalType === "newsletter") {
         sendGAEvent({
           eventCategory: "Newsletter signup",
           eventAction: "From modal CTA",
-          transport: "beacon"
+          transport: "beacon",
         });
       }
-    })
+    }),
   ];
 
   function closeModal() {
     modal.classList.remove("is-active");
     root.classList.remove("is-clipped");
-    cancelFns.forEach(fn => {
+    cancelFns.forEach((fn) => {
       fn();
     });
     sendGAEvent({
       eventCategory: "Modal interaction",
-      eventAction: `Dismiss modal ${modalType}`
+      eventAction: `Dismiss modal ${modalType}`,
     });
   }
 }

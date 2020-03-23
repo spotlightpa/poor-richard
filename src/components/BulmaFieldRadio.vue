@@ -4,22 +4,22 @@ import BulmaField from "./BulmaField.vue";
 export default {
   name: "BulmaFieldRadio",
   components: {
-    BulmaField
+    BulmaField,
   },
   props: {
     label: String,
     labelClass: {
       type: String,
-      default: "label"
+      default: "label",
     },
     help: String,
     required: {
       type: Boolean,
-      default: false
+      default: false,
     },
     options: Array,
     value: String,
-    name: String
+    name: String,
   },
   computed: {
     fieldProps() {
@@ -27,7 +27,7 @@ export default {
         label: this.label,
         help: this.help,
         labelClass: this.labelClass,
-        required: this.required
+        required: this.required,
       };
     },
     selected: {
@@ -36,9 +36,9 @@ export default {
       },
       set(newVal) {
         this.$emit("input", newVal);
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 

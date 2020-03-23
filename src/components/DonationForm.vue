@@ -11,7 +11,7 @@ export default {
     WindowListener,
     DonationFormAmount,
     DonationFormInfo,
-    DonationFormPayment
+    DonationFormPayment,
   },
   data() {
     return {
@@ -20,24 +20,24 @@ export default {
         items: [
           { name: "Amount", component: DonationFormAmount },
           { name: "Information", component: DonationFormInfo },
-          { name: "Payment", component: DonationFormPayment }
+          { name: "Payment", component: DonationFormPayment },
         ],
-        n: 0
+        n: 0,
       },
-      cnpFormData: DonationFormData()
+      cnpFormData: DonationFormData(),
     };
   },
   computed: {
     stepComponent() {
       return this.stepObj.items[this.stepObj.n].component;
-    }
+    },
   },
   mounted() {
     this.testing = !!window.location.search.match(/debug=donate/);
     this.$gae({
       eventCategory: "Donation form",
       eventAction: "Saw donation form",
-      nonInteraction: true
+      nonInteraction: true,
     });
     window.history.replaceState({ step: this.stepObj.n }, "", "");
   },
@@ -50,7 +50,7 @@ export default {
       this.$gae({
         eventCategory: "Donation form",
         eventAction: `Viewed ${stepName} Step`,
-        eventLabel: `Changed step by ${delta}`
+        eventLabel: `Changed step by ${delta}`,
       });
     },
     popstate(ev) {
@@ -58,8 +58,8 @@ export default {
       if (isFinite(step) && step < this.stepObj.n) {
         this.stepObj.n = step;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

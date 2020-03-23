@@ -2,8 +2,8 @@
 export default {
   props: {
     stepObj: Object,
-    testing: Boolean
-  }
+    testing: Boolean,
+  },
 };
 </script>
 

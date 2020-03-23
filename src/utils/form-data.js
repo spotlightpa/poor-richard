@@ -207,7 +207,7 @@ export const countryOptions = [
   { value: "887", text: "Yemen, People's Demo. Rep. Of" },
   { value: "807", text: "Yugoslavia" },
   { value: "894", text: "Zambia" },
-  { value: "716", text: "Zimbabwe" }
+  { value: "716", text: "Zimbabwe" },
 ];
 
 export const codeUSA = "840";
@@ -230,7 +230,7 @@ export const stateOptions = [
   { value: "District of Columbia", text: "District of Columbia" },
   {
     value: "Federated States of Micronesia",
-    text: "Federated States of Micronesia"
+    text: "Federated States of Micronesia",
   },
   { value: "Florida", text: "Florida" },
   { value: "Georgia", text: "Georgia" },
@@ -278,7 +278,7 @@ export const stateOptions = [
   { value: "Washington", text: "Washington" },
   { value: "West Virginia", text: "West Virginia" },
   { value: "Wisconsin", text: "Wisconsin" },
-  { value: "Wyoming", text: "Wyoming" }
+  { value: "Wyoming", text: "Wyoming" },
 ];
 
 export const monthOptions = [
@@ -293,7 +293,7 @@ export const monthOptions = [
   { value: "09", text: "09 - September" },
   { value: "10", text: "10 - October" },
   { value: "11", text: "11 - November" },
-  { value: "12", text: "12 - December" }
+  { value: "12", text: "12 - December" },
 ];
 
 export function DonationFormData() {
@@ -319,6 +319,6 @@ export function DonationFormData() {
     donationName: "",
     comments: "",
     wantsNewsletter: true,
-    wantsPartners: true
+    wantsPartners: true,
   };
 }

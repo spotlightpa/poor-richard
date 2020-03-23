@@ -295,7 +295,7 @@ $margin-sizes: (
   "-thin": 0.5rem,
   "-medium": 0.75rem,
   "": 1.5rem,
-  "-thick": 3rem
+  "-thick": 3rem,
 );
 
 @each $dir in ("top", "bottom") {

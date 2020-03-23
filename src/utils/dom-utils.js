@@ -16,14 +16,14 @@ export function each(qs, cb) {
 export function on(ev, qs, cb) {
   let cancelFns = [];
 
-  each(qs, el => {
+  each(qs, (el) => {
     el.addEventListener(ev, cb);
     cancelFns.push(() => {
       el.removeEventListener(ev, cb);
     });
   });
   return () => {
-    cancelFns.forEach(fn => {
+    cancelFns.forEach((fn) => {
       fn();
     });
   };
@@ -85,7 +85,7 @@ export function polyfillClosest() {
   }
 
   if (!Element.prototype.closest) {
-    Element.prototype.closest = function(s) {
+    Element.prototype.closest = function (s) {
       var el = this;
 
       do {
