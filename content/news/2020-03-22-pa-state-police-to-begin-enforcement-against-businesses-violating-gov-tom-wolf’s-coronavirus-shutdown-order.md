@@ -1,7 +1,7 @@
 +++
 draft = false
 image = "2020/03/01f7g06atam9tyrv.jpeg"
-image-credit = "Commonwealth Media Services"
+image-credit = "AP Photo / Matt Rourke"
 published = 2020-03-22T17:47:15.857Z
 slug = "pennsylvania-state-police-coronavirus-order-enforcement"
 authors = ["Sarah Anne Hughes", "Angela Couloumbis"]
