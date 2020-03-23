@@ -9,6 +9,11 @@ onLoad(() => {
       return;
     }
     let src = el.dataset.splSrc;
+    if (!/^(\/|http)/.test(src)) {
+      // eslint-disable-next-line no-console
+      console.warn("bad embed URL", src);
+      return;
+    }
     // Use shadowDOM to override CSS for iframes
     let container =
       "attachShadow" in el ? el.attachShadow({ mode: "open" }) : el;
