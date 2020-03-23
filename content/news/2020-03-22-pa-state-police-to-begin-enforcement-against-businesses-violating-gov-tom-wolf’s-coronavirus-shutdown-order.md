@@ -42,16 +42,16 @@ But he also warned it could take more time to reach the point where life will re
 
 The Democratic governor also said he is in talks with the state legislature to postpone the April 28th primary, although no agreement has been reached.
 
-Since Saturday, there have been 108 new cases of COVID-19 reported. The statewide total is 479 people in 33 counties. 
+Since Saturday, there have been 108 new cases of COVID-19 reported. The statewide total is 479 people in 33 counties.
 
 Approximately 47 — or about 10% — of those infected have required hospitalization since March 6, state Health Secretary Rachel Levine said.
 
-"Our data so far indicates that approximately 4% of cases have required intensive care and approximately 2% have required ventilators," Levine said. 
+"Our data so far indicates that approximately 4% of cases have required intensive care and approximately 2% have required ventilators," Levine said.
 
-Levine said tests are available not only through the state but through commercial labs including Quest. She reiterated that people with no or mild symptoms should not seek a test, although they can contact their health provider. 
+Levine said tests are available not only through the state but through commercial labs including Quest. She reiterated that people with no or mild symptoms should not seek a test, although they can contact their health provider.
 
 "I don’t see a time when we’ll be testing asymptomatic people in the future,” she said.
 
 <b><i>100% ESSENTIAL:</b> Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at [spotlightpa.org/donate](https://www.spotlightpa.org/donate).</i>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="<https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us>."></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us."></div>
