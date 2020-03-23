@@ -12,7 +12,7 @@ kicker = "Coronavirus"
 suppress-featured = false
 weight = 1
 topics = ["Coronavirus"]
-series = ["Top News"]
+series = []
 +++
 <i>This story was produced as part of a joint effort among [Spotlight PA](https://www.spotlightpa.org/), [LNP Media Group](https://lancasteronline.com/), [PennLive](https://www.pennlive.com/), [PA Post](https://papost.org/), and [WITF](https://www.witf.org/) to cover how Pennsylvania state government is responding to the coronavirus. [Sign up for Spotlight PA’s newsletter.](https://www.spotlightpa.org/newsletters)</i>
 
