@@ -2,17 +2,17 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
-    parser: "babel-eslint"
+    parser: "babel-eslint",
   },
   extends: [
     "plugin:vue/essential",
     "plugin:prettier/recommended",
     "eslint:recommended",
     "prettier",
-    "prettier/vue"
+    "prettier/vue",
   ],
   plugins: ["prettier", "vue"],
   // add your custom rules here
@@ -33,9 +33,9 @@ module.exports = {
           "OTHER_DIRECTIVES",
           "OTHER_ATTR",
           "EVENTS",
-          "CONTENT"
-        ]
-      }
+          "CONTENT",
+        ],
+      },
     ],
     "vue/mustache-interpolation-spacing": ["warn", "always"],
     "vue/name-property-casing": ["warn", "PascalCase"],
@@ -60,11 +60,11 @@ module.exports = {
           "LIFECYCLE_HOOKS",
           "methods",
           ["template", "render"],
-          "renderError"
-        ]
-      }
+          "renderError",
+        ],
+      },
     ],
     "vue/this-in-template": ["error", "never"],
-    "vue/v-bind-style": ["warn", "shorthand"]
-  }
+    "vue/v-bind-style": ["warn", "shorthand"],
+  },
 };
