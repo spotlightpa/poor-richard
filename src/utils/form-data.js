@@ -298,7 +298,7 @@ export const monthOptions = [
 
 export function DonationFormData() {
   return {
-    donationAmount: 10,
+    donationAmount: 15,
     recurring: "Month",
     firstName: "",
     lastName: "",

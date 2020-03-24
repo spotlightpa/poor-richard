@@ -20,7 +20,7 @@ let amountsObj = {
 
 let amountsDefaults = {
   "": 100,
-  Month: 10,
+  Month: 15,
   Year: 100,
 };
 
