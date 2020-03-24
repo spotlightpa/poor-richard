@@ -1,23 +1,23 @@
 +++
-arc-id = "ZCLA7GSYLFE4XFRNLEUJPD3OOU"
-internal-id = "SPLFINANCES24"
-internal-budget = ""
-image = "external/cjx0zrbe6cjpd944yz5j7xf1j4.jpeg"
+image = "2020/03/01f7mk1zwbrcz460.jpeg"
 image-description = "Sales tax revenues will slump because businesses are closed and families are cutting back on spending."
-image-credit = "MONICA HERNDON / Philadelphia Inquirer"
-published = 2020-03-24T18:00:00Z
+image-credit = "Contributed photo"
+published = 2020-03-24T18:00:00.000Z
 slug = "pennsylvania-pa-coronavirus-state-budget-revenues-shortfall"
 authors = ["Charlotte Keith"]
 byline = "Charlotte Keith of Spotlight PA"
 title = "Pennsylvania ‘particularly ill-prepared’ for financial blow caused by the coronavirus "
-subtitle = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
 description = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
 blurb = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
 kicker = "Coronavirus"
-topics = ["coronavirus"]
-series = ["Top News"]
-linktitle = ""
 suppress-featured = false
+topics = ["coronavirus"]
+internal-id = "SPLFINANCES24"
+internal-budget = ""
+arc-id = "ZCLA7GSYLFE4XFRNLEUJPD3OOU"
+linktitle = ""
+series = ["Top News"]
+subtitle = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
 +++
 
 <i>This story was produced as part of a joint effort among </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s newsletter.</i></a>
