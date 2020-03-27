@@ -77,7 +77,7 @@ The department has suspended all visits through at least April 10. In their plac
 
 Shubik-Richards said those steps help reduce stress and anxiety.
 
-Blackwell said the union has reached out to the department to request extra incentives for officers who continue to work through pandemic, but has not heard back.
+Blackwell said the union has reached out to the department to request extra incentives for officers who continue to work through the pandemic, but has not heard back.
 
 “In a way, it’s good to be an ‘essential’ employee because you definitely aren't going to lose any pay or anything,” Blackwell said. “But as a corrections officer — a police officer, anybody — you worry about the risk of getting something and taking it back to your family.”
 
