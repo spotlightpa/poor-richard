@@ -6,6 +6,7 @@ image-credit = "Department of Corrections"
 published = 2020-03-27T22:22:02.678Z
 slug = "pennsylvania-coronavirus-prisons-corrections-officers-concerns"
 authors = ["Matt McKinney"]
+byline = "Matt McKinney of Spotlight PA"
 title = "Pennsylvania corrections officers, advocates worry a prison coronavirus outbreak is inevitable "
 description = "As of early Friday evening, there were no reported cases of the coronavirus inside the state prison system, either among those incarcerated or corrections officers."
 blurb = "As of early Friday evening, there were no reported cases of the coronavirus inside the state prison system, either among those incarcerated or corrections officers."
