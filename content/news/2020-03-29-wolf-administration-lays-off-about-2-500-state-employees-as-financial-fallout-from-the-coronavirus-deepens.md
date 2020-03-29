@@ -32,6 +32,14 @@ The layoffs Friday could be the first in a wave of job losses within state gover
 
 Already, Wolf has ordered a hiring freeze and general purchasing ban for state agencies in an effort to cut spending.
 
+David Fillman is executive director of the American Federation of State, County, and Municipal Employees Council 13, which represents the majority of the state workers who were laid off. On Sunday, he said the union still had not received official notification from the commonwealth or information about which workers were affected.
+
+Until he does, it is unclear what those workers’ rights are, though they have fewer protections than full-time workers.
+
+Temporary, part-time, and seasonal workers are there to fill in the gaps, Fillman said. When full-time employees become ill, “that exacerbates the problem of getting rid of the part-time \[workers].”
+
+“It is going to be a difficult road as we deal with this pandemic,” Fillman said.
+
 For the past two weeks, state officials have been focused on preventing the health system from being overwhelmed with a crush of sick patients.
 
 The legislature has approved [$50 million in emergency funding](https://www.spotlightpa.org/news/2020/03/pennsylvania-coronavirus-emergency-funding-fifty-million-masks-vents/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-coronavirus-emergency-funding-fifty-million-masks-vents/") that Wolf can provide to hospitals, nursing homes, and emergency medical providers to buy equipment and supplies. The administration has also relaxed licensing and other requirements for retired doctors, nurses, medical students, pharmacists, and other health care workers.
