@@ -25,9 +25,9 @@ Employees who work for the state health and labor departments, which are central
 
 “While we work to fund the increased need for essential state services, there has been, and will continue to be, a decline in revenue coming into the state,” the Office of Administration, to which the governor’s office referred questions, said in a statement. “The state is taking a measured approach to the COVID-19 outbreak and that includes managing our finances.”
 
-The layoffs Friday could be the first in a wave of job losses within state government, which is bracing for hundreds of millions of dollars in [lost revenues as businesses shut down](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-state-budget-revenues-shortfall/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-state-budget-revenues-shortfall/"), unemployment claims [spike to unparalleled levels](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-shutdown-unemployment-jobless-claims/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-shutdown-unemployment-jobless-claims/"), and more people seek other public assistance benefits.
-
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
+The layoffs Friday could be the first in a wave of job losses within state government, which is bracing for hundreds of millions of dollars in [lost revenues as businesses shut down](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-state-budget-revenues-shortfall/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-state-budget-revenues-shortfall/"), unemployment claims [spike to unparalleled levels](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-shutdown-unemployment-jobless-claims/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-shutdown-unemployment-jobless-claims/"), and more people seek other public assistance benefits.
 
 Already, Wolf has ordered a hiring freeze and general purchasing ban for state agencies in an effort to cut spending.
 
@@ -36,6 +36,8 @@ For the past two weeks, state officials have been focused on preventing the heal
 The legislature has approved [$50 million in emergency funding](https://www.spotlightpa.org/news/2020/03/pennsylvania-coronavirus-emergency-funding-fifty-million-masks-vents/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-coronavirus-emergency-funding-fifty-million-masks-vents/") that Wolf can provide to hospitals, nursing homes, and emergency medical providers to buy equipment and supplies. The administration has also relaxed licensing and other requirements for retired doctors, nurses, medical students, pharmacists, and other health care workers.
 
 Wolf has also shut down schools statewide and issued stay-at-home orders for residents in 22 counties. On Saturday, the governor added Centre, Beaver, and Washington Counties to that list, directing residents there to remain at home unless they need medicine, food, or other services essential to living.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="<https://www.spotlightpa.org/embeds/newsletter/>"></div>
 
 But packing one of the biggest punches to the state’s finances is Wolf’s order late last week to close businesses that do not provide “life-sustaining” services or products. His administration has set up a waiver process, but it has been criticized as [chaotic and opaque](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-business-shutdown-waiver-tom-wolf-joe-scarnati/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-business-shutdown-waiver-tom-wolf-joe-scarnati/").
 
