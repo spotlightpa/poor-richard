@@ -47,7 +47,7 @@ During a briefing with reporters Saturday, Wolf said Pennsylvania and its local 
 
 “But that’s going to be allocated in ways that have yet to be made known to at least us in Harrisburg,” Wolf said.
 
-Health officials on Sunday reported 643 new cases of COVID-19, bringing the statewide total to 3,394. About 11.5% of positive cases have required hospitalization since the state confirmed its first cases on March 6.
+Health officials on Sunday reported 643 new cases of COVID-19, bringing the statewide total to 3,394. 
 
 <i><b>100% ESSENTIAL:</b> Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at [spotlightpa.org/donate](https://www.spotlightpa.org/donate "https\://www.spotlightpa.org/donate").</i>
 
