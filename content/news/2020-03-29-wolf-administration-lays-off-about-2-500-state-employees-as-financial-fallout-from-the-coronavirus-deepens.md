@@ -5,13 +5,14 @@ image-credit = "Commonwealth Media Services"
 published = 2020-03-29T15:24:07.973Z
 slug = "pennsylvania-coronavirus-state-government-layoffs-wolf-administration"
 authors = ["Angela Couloumbis", "Rebecca Moss"]
+byline = "Angela Couloumbis and Rebecca Moss of Spotlight PA"
 title = "Wolf administration lays off about 2,500 state employees as financial fallout from the coronavirus deepens"
 description = "The move affects part-time and seasonal employees and interns, state officials said."
 blurb = "The move affects part-time and seasonal employees and interns, state officials said."
 kicker = "Coronavirus"
 suppress-featured = false
 topics = ["Coronavirus"]
-series = ["Coronavirus"]
+series = ["Top News"]
 +++
 <i>[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters").</i>
 
