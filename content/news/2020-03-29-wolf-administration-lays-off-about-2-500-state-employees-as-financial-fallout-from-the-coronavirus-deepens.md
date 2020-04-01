@@ -12,7 +12,7 @@ blurb = "The move affects part-time and seasonal employees and interns, state of
 kicker = "Coronavirus"
 suppress-featured = false
 topics = ["Coronavirus"]
-series = ["Top News"]
+series = []
 +++
 <i>[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters").</i>
 
