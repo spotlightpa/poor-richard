@@ -1,29 +1,29 @@
 +++
-arc-id = "2LRNKMM2YFFCDHHO4MJUHB5PME"
-internal-id = "SPLCHILDLINE01"
-internal-budget = ""
 image = "external/e552pvzwz6mqebab17vz1hms7g.jpeg"
 image-description = "Experts say the people who are most likely to spot and report suspected abuse are now confined to their homes and unable to keep their eyes on vulnerable children."
-image-credit = "Bongkarn Thanyakij / Pexels.com (custom credit)"
+image-credit = "Bongkarn Thanyakij / Pexels.com"
 image-size = ""
-published = 2020-04-01T09:00:51Z
+published = 2020-04-01T09:00:51.000Z
 slug = "pennsylvania-coronavirus-childline-child-abuse-hotline-family-stress"
 authors = ["Angela Couloumbis"]
 byline = "Angela Couloumbis of Spotlight PA"
 title = "Calls to Pa.'s child-abuse hotline fell sharply during first weeks of the coronavirus. Here’s why that’s bad news."
-subtitle = ""
 description = "In the first three weeks of March, the state's child abuse hotline received just over 9,000 calls, compared to nearly 18,000 the previous month."
 blurb = "In the first three weeks of March, the state's child abuse hotline received just over 9,000 calls, compared to nearly 18,000 the previous month."
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = ["Top News"]
-linktitle = ""
 suppress-featured = false
-weight = 0
-url = ""
-aliases = []
-modal-exclude = false
+topics = ["Coronavirus"]
 no-index = false
+internal-id = "SPLCHILDLINE01"
+url = ""
+internal-budget = ""
+arc-id = "2LRNKMM2YFFCDHHO4MJUHB5PME"
+linktitle = ""
+weight = 0
+series = ["Top News"]
+subtitle = ""
+modal-exclude = false
+aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
