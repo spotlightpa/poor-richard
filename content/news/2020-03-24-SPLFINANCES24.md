@@ -16,7 +16,7 @@ internal-id = "SPLFINANCES24"
 internal-budget = ""
 arc-id = "ZCLA7GSYLFE4XFRNLEUJPD3OOU"
 linktitle = ""
-series = ["Top News"]
+series = []
 subtitle = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
 +++
 
