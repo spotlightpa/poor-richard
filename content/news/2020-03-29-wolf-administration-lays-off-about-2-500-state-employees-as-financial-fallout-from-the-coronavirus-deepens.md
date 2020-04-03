@@ -46,7 +46,7 @@ The legislature has approved [$50 million in emergency funding](https://www.spot
 
 Wolf has also shut down schools statewide and issued stay-at-home orders for residents in 22 counties. On Saturday, the governor added Centre, Beaver, and Washington Counties to that list, directing residents there to remain at home unless they need medicine, food, or other services essential to living.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="<https://www.spotlightpa.org/embeds/newsletter/>"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 But packing one of the biggest punches to the state’s finances is Wolf’s order late last week to close businesses that do not provide “life-sustaining” services or products. His administration has set up a waiver process, but it has been criticized as [chaotic and opaque](https://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-business-shutdown-waiver-tom-wolf-joe-scarnati/ "https\://www.spotlightpa.org/news/2020/03/pennsylvania-pa-coronavirus-business-shutdown-waiver-tom-wolf-joe-scarnati/").
 
@@ -58,8 +58,8 @@ During a briefing with reporters Saturday, Wolf said Pennsylvania and its local 
 
 “But that’s going to be allocated in ways that have yet to be made known to at least us in Harrisburg,” Wolf said.
 
-Health officials on Sunday reported 643 new cases of COVID-19, bringing the statewide total to 3,394. 
+Health officials on Sunday reported 643 new cases of COVID-19, bringing the statewide total to 3,394.
 
 <i><b>100% ESSENTIAL:</b> Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at [spotlightpa.org/donate](https://www.spotlightpa.org/donate "https\://www.spotlightpa.org/donate").</i>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="<https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us>."></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us."></div>

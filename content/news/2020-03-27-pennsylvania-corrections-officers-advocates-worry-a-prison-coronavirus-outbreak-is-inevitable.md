@@ -62,7 +62,7 @@ He’s also worried about the lack of access to antibacterial soap, which costs 
 
 “Some guys can’t afford the soap from the commissary,” he said
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="<https://www.spotlightpa.org/embeds/newsletter/>"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Finn said inmates are producing roughly 4,000 bars each week through Pennsylvania Correctional Industries and that soap is provided free of charge.
 
