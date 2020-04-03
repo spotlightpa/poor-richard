@@ -39,7 +39,13 @@
           {{ with $params.byline }}
             <h3 class="is-size-5 has-margin-top-negative-medium">
               <span class="has-text-weight-semibold">
-                by {{ $params.byline }}
+                by
+                <span
+                  itemtype="http://schema.org/Person"
+                  itemprop="author"
+                >
+                  {{- $params.byline -}}
+                </span>
               </span>
               {{ if $params.published }}
                 |
