@@ -45,18 +45,28 @@
       </div>
       {{ if gt (len $pages) 3 }}
         <div class="tile">
-          <div class="tile is-parent is-top is-8">
-            <div class="tile is-child">
-              <h2 class="title is-4 is-uppercase has-text-weight-semibold">
-                More top stories
-              </h2>
-              <hr class="is-emphatic-underline has-margin-top-negative">
+          {{ if false }}
+            <div class="tile is-parent is-top is-4" style="order: 2">
+              <div class="tile is-child">
+                <div class="box">
+                </div>
+              </div>
             </div>
+          {{ end }}
+          <div class="tile is-vertical is-8" style="order: 1">
+            <div class="tile is-parent is-top">
+              <div class="tile is-child">
+                <h2 class="title is-4 is-uppercase has-text-weight-semibold">
+                  More top stories
+                </h2>
+                <hr class="is-emphatic-underline has-margin-top-negative">
+              </div>
+            </div>
+            {{ range $page := after 3 $pages | first 6 }}
+              {{ partial "tile-horiz.html" $page }}
+            {{ end }}
           </div>
         </div>
-        {{ range $page := after 3 $pages | first 6 }}
-          {{ partial "tile-horiz.html" $page }}
-        {{ end }}
       {{ end }}
       {{ if gt (len $pages) 9 }}
         <div class="tile">
