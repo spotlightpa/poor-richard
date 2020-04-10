@@ -1,7 +1,7 @@
 <!-- header tags that are the same on all pages -->
 
 {{ $fonts := resources.Get "css/fonts.css" }}
-<style type="text/css">
+<style>
   {{ $fonts.Content | safeCSS }}
 </style>
 

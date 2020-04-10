@@ -1,7 +1,7 @@
-{{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
+{{- $pc := site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable -}}
-{{ with .Param "GoogleAnalytics" | default .Site.GoogleAnalytics }}
-<script type="application/javascript">
+{{ with .Param "GoogleAnalytics" | default site.GoogleAnalytics }}
+<script>
 {{ template "__ga_js_set_doNotTrack" $ }}
 if (!doNotTrack) {
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
