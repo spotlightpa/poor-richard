@@ -5,12 +5,12 @@ code = 302
 
 [[redirects]]
 from = "/tracker.js"
-to = "/js/tracker.js"
+to = "/@src/tracker.js"
 code = 200
 
 [[redirects]]
 from = "/embed.js"
-to = "/js/embed-host.js"
+to = "/@src/embed-host.js"
 code = 200
 
 [[redirects]]
