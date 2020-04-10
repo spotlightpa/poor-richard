@@ -61,8 +61,7 @@ isPlainText = true
 notAlternative = true
 
 [outputs]
-    home = ["html", "jsonfeed", "rss", "redirects"]
-    section = ["html", "jsonfeed", "jsonfeedsummary", "rss"]
+    home = ["html", "redirects"]
 
 [params]
     imgproxy = "/imgproxy/"
