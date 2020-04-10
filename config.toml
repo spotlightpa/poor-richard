@@ -88,7 +88,7 @@ target = "assets/@fontawesome"
 
 [[module.mounts]]
 source = "dist"
-target = "static/js"
+target = "static/@src"
 
 [[module.mounts]]
 source = "static"
