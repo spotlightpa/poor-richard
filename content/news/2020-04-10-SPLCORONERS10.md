@@ -2,7 +2,7 @@
 arc-id = "GFVW7ASD3ZHKHDT72VM3YSYZ4M"
 internal-id = "SPLCORONERS10"
 internal-budget = ""
-image = "external/dveqr2p60d929tnzsxvc605pdc.jpeg"
+image = "external/petnkregtjaajzzyrz813db49w.jpeg"
 image-description = "Chester County Coroner Dr. Christina VandePol — seen here with office manager Patty Emmons — said her office has had two positive COVID-19 test results come back from deaths that occurred “at home or in the community.”"
 image-caption = ""
 image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
