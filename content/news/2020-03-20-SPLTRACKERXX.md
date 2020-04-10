@@ -19,7 +19,10 @@ arc-id = "3GDODRFJRJFCZBRYTDMWVDQDQI"
 linktitle = ""
 series = []
 subtitle = ""
+suppress-title = true
 +++
+# Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts
+
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
 <!-- START responsive iframe -->
