@@ -1,0 +1,61 @@
+<template x-for="story in stories" :key="story.url">
+  <article class="tile is-vertical is-bottom">
+    <div class="tile">
+      <div class="tile is-parent is-top">
+        <div class="tile is-child">
+          <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin" x-text="story.kicker">
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-bottom">
+      <div class="tile is-parent is-4 is-top-tablet">
+        <div class="tile is-child">
+          <figure>
+            <a
+              class="image is-16by9 has-background-grey-lighter"
+              :href="story.url"
+            >
+              <picture class="has-ratio">
+                <img
+                  :alt="story.imageDescription"
+                  :title="story.imageDescription"
+                  :src="story.imageURL"
+                  loading="lazy">
+              </picture>
+            </a>
+            <figcaption class="is-clearfix is-size-7 is-uppercase has-text-grey-light">
+              <span
+                class="has-margin-top-thin is-single-spaced is-pulled-right"
+                x-text="story.imageCredit"
+              />
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="tile is-parent is-8 is-bottom-tablet">
+        <div class="tile is-child">
+          <h2 class="title is-spaced is-4 has-margin-top-thin-tablet">
+            <a
+              class="has-text-black hover-underline"
+              :href="story.url"
+              x-text="story.title"
+            >
+            </a>
+          </h2>
+          <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+            <a :href="story.url" class="has-text-grey hover-underline" x-text="story.byline">
+            </a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>
+
+<template x-if="error && hasClicked">
+  <div class="message is-danger">
+    Could not load more.
+    <a href="/news/" class="has-text-weight-semibold">Try again?</a>
+  </div>
+</template>
