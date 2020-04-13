@@ -1,0 +1,25 @@
+{{- $json := newScratch -}}
+
+{{- $items := slice -}}
+{{- range first 500 .RegularPages -}}
+
+  {{- $json.SetInMap "item" "url" .Permalink -}}
+  {{- $json.SetInMap "item" "title" .Title -}}
+  {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+
+  {{- $json.SetInMap "item" "byline" $params.byline -}}
+  {{- $json.SetInMap "item" "kicker" $params.kicker -}}
+  {{- $json.SetInMap "item" "blurb" $params.blurb -}}
+
+  {{- $json.SetInMap "item" "published" $params.published -}}
+  {{- $json.SetInMap "item" "publishedISO" $params.publishedISO -}}
+
+  {{ $json.SetInMap "item" "image" (.Param "image") }}
+  {{ $json.SetInMap "item" "imageCredit" (.Param "image-credit") }}
+  {{ $json.SetInMap "item" "imageDescription" (.Param "image-description") }}
+
+  {{- $items = append ($json.Get "item") $items -}}
+  {{- $json.Delete "item" -}}
+{{- end -}}
+
+{{- dict "items" $items | jsonify -}}
