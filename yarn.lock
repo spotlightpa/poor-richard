@@ -1018,9 +1018,9 @@ alphanum-sort@^1.0.0:
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
 alpinejs@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.2.1.tgz#fe8db95ad4d9346d70783d5badb91f7bbb58e980"
-  integrity sha512-iM78WJdESvXhf61o11vgeFfBnhCDjSuqLCQw3yUPLgJHnYjPz/TuTFd2K64lX+3/uYIxlstt3UgI8pYvFdGWlg==
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.2.5.tgz#bb61ddeaef62fd844e2c0cb0c8c6c56c3d6a1c0f"
+  integrity sha512-/mhw+yQRNM5opwGcYbEIFxTi8ZDBSMpYksA0pPia1V9UpKwjwfTfO6xndNinJirHDe7QS3pke4tpnNPSAsjbWQ==
 
 ansi-escapes@^4.2.1:
   version "4.3.1"
