@@ -2,7 +2,7 @@
 arc-id = "W6NPDYPEGRFOVH6U4PJI7YJXYU"
 internal-id = "SPLEVENTXX"
 internal-budget = ""
-image = "external/8k7kjx6tmzm13meja7g93f9nkm.jpeg"
+image = "2020/04/01f99a6jghww8c28.png"
 image-description = "A free virtual Q&A for Pittsburgh small business owners on navigating the coronavirus shutdown"
 image-caption = ""
 image-credit = "STAFF / Spotlight PA"
