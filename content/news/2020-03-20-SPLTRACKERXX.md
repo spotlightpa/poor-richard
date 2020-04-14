@@ -1,59 +1,28 @@
-+++
-type = "dashboard"
-image = "external/smnxqf8220549kwdr433bv42cc.jpeg"
-image-description = "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map."
-image-credit = "TIM TAI / Philadelphia Inquirer"
-image-size = "hidden"
-published = 2020-03-20T04:00:00.000Z
-slug = "pa-coronavirus-updates-cases-map-live-tracker"
-authors = ["Daniel Simmons-Ritchie"]
-byline = "Daniel Simmons-Ritchie of Spotlight PA"
-title = "Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts"
-description = "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map."
-blurb = "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map."
-kicker = "Coronavirus"
-suppress-featured = true
-topics = ["coronavirus"]
-internal-id = "SPLTRACKERXX"
-internal-budget = ""
-arc-id = "3GDODRFJRJFCZBRYTDMWVDQDQI"
-linktitle = ""
-series = []
-subtitle = ""
-suppress-title = true
-+++
-
-<link rel="stylesheet" href="//interactives.data.spotlightpa.org/2020/coronavirus/coronavirus-dashboard/assets/styles.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
-<link rel="stylesheet" href="//interactives.data.spotlightpa.org/2020/coronavirus/coronavirus-dashboard/assets/spotlight.css">
-<div id="dashboard-root">
-<div class="top-display__container">
-<div class="regions-container__container"></div>
-<header class="block">
-<h1 class="title is-2 is-size-3-touch is-spaced">
-Coronavirus: Tracking The Spread
-</h1>
-<h3 class="is-size-5 has-margin-top-negative-medium">
-<time datetime="2020-03-20T04:00:00Z">Updated Xxxx XX, 2020</time>
-</h3>
-<div class="has-margin-top has-margin-bottom">
-<div class="buttons">
-<a href="mailto:?subject=Live%20Pa.%20coronavirus%20tracker%3a%20County-by-county%20map%20of%20coronavirus%20cases%2c%20updates%20on%20case%20counts&amp;body=Read%20this%20from%20Spotlight%20PA%0a%0aLive%20Pa.%20coronavirus%20tracker%3a%20County-by-county%20map%20of%20coronavirus%20cases%2c%20updates%20on%20case%20counts%0aLive%20updates%20on%20the%20latest%20numbers%20of%20Pa.%20coronavirus%20cases%2c%20as%20well%20as%20a%20county-by-county%20coronavirus%20map.%0a%0ahttps%3a%2f%2fwww.spotlightpa.org%2fnews%2f2020%2f03%2fpa-coronavirus-updates-cases-map-live-tracker%2f" class="button is-success" title="Share this page by email" data-ga-event='{"eventAction":"Email share","eventCategory":"Share button interaction","eventLabel":"https://www.spotlightpa.org/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"}' target="_blank" rel="noopener noreferrer"><span class="icon has-text-white has-colored-svg"><svg><use xlink:href="#email-svg"></use></svg></span></a><button type="button" class="button is-primary" data-share="facebook" title="Share this page on Facebook">
-<span class="icon has-text-white has-colored-svg"><svg><use xlink:href="#fb-svg"></use></svg></span></button><button type="button" class="button is-info" data-share="tweet" data-share-text="Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts from @spotlightpa" title="Tweet about this page">
-<span class="icon has-text-white has-colored-svg"><svg><use xlink:href="#twitter-svg"></use></svg></span></button><button type="button" class="button is-danger is-hidden" data-share="sharesheet" data-share-text="Read “Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts” from Spotlight PA" title="More ways to share this page">
-<span class="icon has-text-white has-colored-svg"><svg><use xlink:href="#share-svg"></use></svg></span>
-</button>
-</div>
-</div>
-</header>
-<div class="blurb__p">
-Since the first case of coronavirus was identified here March 6, we’ve been tracking its spread. These numbers tell only part of the story. Tests are still not widely available, and you can have the virus — and transmit it — without feeling sick. The actual spread of the virus may be slower than it appears because, experts say, it was spreading before official reporting started.
-</div>
-</div>
-<div class="spinner">
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" class="svg-inline--fa fa-spinner fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
-</svg>
-</div>
-</div>
-<script src="//interactives.data.spotlightpa.org/2020/coronavirus/coronavirus-dashboard/assets/main.js"></script>
+{
+  "type": "dashboard",
+  "image": "external/smnxqf8220549kwdr433bv42cc.jpeg",
+  "image-description": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
+  "image-credit": "TIM TAI / Philadelphia Inquirer",
+  "image-size": "hidden",
+  "published": "2020-03-20T04:00:00.000Z",
+  "slug": "pa-coronavirus-updates-cases-map-live-tracker",
+  "authors": [
+    "Daniel Simmons-Ritchie"
+  ],
+  "byline": "Daniel Simmons-Ritchie of Spotlight PA",
+  "title": "Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts",
+  "description": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
+  "blurb": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
+  "kicker": "Coronavirus",
+  "suppress-featured": true,
+  "topics": [
+    "coronavirus"
+  ],
+  "internal-id": "SPLTRACKERXX",
+  "internal-budget": "",
+  "arc-id": "3GDODRFJRJFCZBRYTDMWVDQDQI",
+  "linktitle": "",
+  "series": [],
+  "subtitle": "",
+  "suppress-title": true
+}
