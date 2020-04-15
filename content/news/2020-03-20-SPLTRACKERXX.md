@@ -24,5 +24,6 @@
   "linktitle": "",
   "series": [],
   "subtitle": "",
-  "suppress-title": true
+  "suppress-title": true,
+  "modal-exclude": true
 }
