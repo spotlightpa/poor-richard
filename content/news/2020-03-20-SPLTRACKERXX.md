@@ -9,7 +9,7 @@
   "authors": [
     "Daniel Simmons-Ritchie"
   ],
-  "byline": "Daniel Simmons-Ritchie of Spotlight PA",
+  "byline": "Daniel Simmons-Ritchie of Spotlight PA","Garland Potts, Philadelphia Inquirer"
   "title": "Live Pa. coronavirus tracker: County-by-county map of coronavirus cases, updates on case counts",
   "description": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
   "blurb": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
