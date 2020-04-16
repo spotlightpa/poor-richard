@@ -2,6 +2,7 @@ import { each, on, onLoad } from "../utils/dom-utils.js";
 import { addModal } from "../utils/modal.js";
 import { addSocialButtonListeners } from "../utils/social.js";
 import { addGAListeners } from "../utils/google-analytics.js";
+import { loadImages } from "../utils/images.js";
 
 function createListeners() {
   on("click", "[data-target]", (ev) => {
@@ -14,6 +15,7 @@ function createListeners() {
     });
   });
 
+  loadImages();
   addGAListeners();
   addSocialButtonListeners();
   addModal();

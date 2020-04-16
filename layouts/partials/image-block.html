@@ -1,23 +1,11 @@
-{{ $widths := slice 300 480 640 800 960 1120 1280 1440 1600 1760 1920 2080 2240 2400 2560 }}
+{{ $magicpixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" }}
+<!-- thanks to http://probablyprogramming.com/2009/03/15/the-tiniest-gif-ever -->
+
 {{ if $imagename := .filename }}
-  {{ $imgSmallSrc := "" }}
-  {{ $imgs := slice }}
   {{ $widthR := .widthRatio | default 16 }}
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
 
-  {{ range $i, $width := $widths }}
-    {{ $height := div (mul $heightR $width) $widthR }}
-
-    {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
-    {{ $url := partial "imgproxy.html" $imgOpt }}
-    {{ $src := printf "%s %dw" $url $width }}
-    {{ $imgs = $imgs | append $src }}
-    {{ if eq $i 0 }}
-      {{ $imgSmallSrc = $url }}
-    {{ end }}
-  {{ end }}
-  {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
 
   <figure class="{{ .figClass }}">
@@ -30,23 +18,11 @@
       <div class="image {{ $imgClass }} has-background-grey-lighter">
     {{- end -}}
       <picture class="has-ratio">
-        {{ if in (string $srcset) ".jpeg" }}
-          <source
-            type="image/webp"
-            srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-            {{ if .sizeHint }}
-              sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
-            {{ end }}
-          >
-        {{ end }}
         <img
           alt="{{ .description }}"
           title="{{ .description }}"
-          src="{{ $imgSmallSrc }}"
-          srcset="{{ $srcset }}"
-          {{ if .sizeHint }}
-            sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
-          {{ end }}
+          data-path="{{ $imagename }}"
+          src="{{ $magicpixel | safeURL }}"
           loading="lazy"
         >
       </picture>
