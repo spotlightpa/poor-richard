@@ -6,8 +6,8 @@ image-size = "inline"
 published = 2019-10-23T09:00:00.000Z
 authors = [
 "Angela Couloumbis",
-"Brad Bumsted, The Caucus",
-"Sam Janesch, The Caucus"]
+"Brad Bumsted",
+"Sam Janesch"]
 title = "Mystery trip to Europe with ‘donors’ by Pa. state senators followed expansion of wine law"
 description = "The senators gave differing explanations for the purpose of the trip and declined to disclose who joined them or exactly where they went."
 blurb = "The senators gave differing explanations for the purpose of the trip and declined to disclose who joined them or exactly where they went."

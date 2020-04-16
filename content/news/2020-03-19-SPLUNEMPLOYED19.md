@@ -4,7 +4,7 @@ image-description = "Pennsylvania Gov. Tom Wolf has asked all nonessential busin
 image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
 published = 2020-03-19T10:00:00.000Z
 slug = "pennsylvania-new-jersey-unemployment-surge-coronavirus"
-authors = ["Angela Couloumbis", "Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"]
+authors = ["Angela Couloumbis", "Wendy Ruderman", "Dylan Purcell"]
 byline = "Angela Couloumbis of Spotlight PA and Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"
 title = "Unemployment claims in Pa. and N.J. surge in wake of the coronavirus"
 description = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
@@ -52,7 +52,7 @@ Buccino said he set his alarm for 3 a.m. Tuesday to “try to beat other people 
 
 Delli Santi said New Jersey’s processing times will depend on volume and whether the applicant filed a complete form, with no missing information, and applied for the right program. She asked people to be patient.
 
-People should not “worry if they have trouble getting through," she added. 
+People should not “worry if they have trouble getting through," she added.
 
 "Their claim will be backdated so they will not lose a week’s benefit,” Delli Santi said. “The labor department wants everyone to receive every penny they are entitled to.”
 

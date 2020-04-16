@@ -7,8 +7,8 @@ published = "2019-10-25T09:00:00.00Z"
 title = "The 10 most extravagant or bizarre campaign expenses by Pa. state lawmakers"
 description = "Campaign accounts must be used for “influencing the outcome of an election.” But what qualifies is largely open to interpretation."
 authors = [
-    "Brad Bumsted, The Caucus",
-    "Sam Janesch, The Caucus"
+    "Brad Bumsted",
+    "Sam Janesch"
   ]
 byline = "Brad Bumsted and Sam Janesch of The Caucus"
 kicker = "Campaign Finance"

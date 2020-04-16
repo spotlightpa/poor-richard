@@ -5,7 +5,7 @@
     data-ga-action="Authors list"
   >
     <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range (.Paginator 20).Pages.ByTitle }}
+      {{ range (.Paginator 40).Pages.ByTitle }}
         {{ $name := .Title }}
         {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
         {{ $img := resources.GetMatch $imgRes }}
