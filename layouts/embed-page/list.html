@@ -42,6 +42,10 @@
                       class="input"
                       name="{{ $param.name }}"
                       @input="updateParam()"
+                      {{ with $param.pattern }}
+                        pattern="{{ . }}"
+                        @blur="$event.currentTarget.reportValidity()"
+                      {{ end }}
                     >
                   </div>
                 </div>
