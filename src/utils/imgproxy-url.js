@@ -7,7 +7,7 @@ export default function imageURL(
   }
   let baseURL = "https://images.data.spotlightpa.org";
   let signature = "insecure";
-  let resizing_type = "fill";
+  let resizing_type = "auto";
   let gravity = "sm";
   let enlarge = "1";
   let quality = "75";
