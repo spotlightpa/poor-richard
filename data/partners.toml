@@ -53,6 +53,30 @@ url = "https://www.goerie.com"
 logotype = "png"
 
 [[partners]]
+name = "Explore Clarion"
+slug = "explore-clarion"
+url = "http://www.exploreclarion.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Explore 814"
+slug = "explore-814"
+url = "http://explore814.com"
+logotype = "png"
+
+[[partners]]
+name = "Explore Jefferson"
+slug = "explore-jefferson"
+url = "https://www.explorejeffersonpa.com"
+logotype = "png"
+
+[[partners]]
+name = "Explore Venango"
+slug = "explore-venango"
+url = "http://explorevenango.com"
+logotype = "png"
+
+[[partners]]
 name = "Gettysburg Times"
 slug = "gettysburg-times"
 url = "http://www.gettysburgtimes.com"
@@ -68,6 +92,12 @@ logotype = "jpeg"
 name = "The Intelligencer"
 slug = "intelligencer"
 url = "https://www.theintell.com"
+logotype = "png"
+
+[[partners]]
+name = "LebTown"
+slug = "lebtown"
+url = "https://www.lebtown.com"
 logotype = "png"
 
 [[partners]]
