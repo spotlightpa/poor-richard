@@ -13,8 +13,8 @@
     {{- end -}}
   </title>
 
-  {{ $ga := .Param "GoogleAnalytics" | default .Site.GoogleAnalytics }}
-  {{ partialCached "header-static.html" . $ga }}
+  {{ partialCached "header-static.html" . }}
+  {{ partial "google-analytics-async.html" . }}
 
   <!-- Metadata -->
   {{ partial "meta.html" . }}
