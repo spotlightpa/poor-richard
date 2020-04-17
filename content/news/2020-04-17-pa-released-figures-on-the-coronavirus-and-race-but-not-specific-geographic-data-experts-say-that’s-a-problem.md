@@ -82,6 +82,6 @@ For example, the law center started work on housing and evictions about five yea
 
 “We know there are these inequalities,” she said, “and we can’t even begin to address them if we can't see who is sick and where they’re sick.”
 
-<i><b>100% ESSENTIAL:</b>Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at[spotlightpa.org/donate](https://www.spotlightpa.org/donate).</i>
+<i><b>100% ESSENTIAL:</b> Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at[spotlightpa.org/donate](https://www.spotlightpa.org/donate).</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us."></div>
