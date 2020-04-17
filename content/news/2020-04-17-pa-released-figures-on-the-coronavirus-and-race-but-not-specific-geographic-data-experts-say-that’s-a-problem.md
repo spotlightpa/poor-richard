@@ -80,7 +80,7 @@ Advocacy organizations that work in minority communities need the information, t
 
 For example, the law center started work on housing and evictions about five years ago, responding to data showing people evicted in Philadelphia were disproportionately women of color with children. That information allowed the group to lobby for targeted policy solutions.
 
-“We know there are these inequalities,” she said, “and we can’t even begin to address them if we cant see who is sick and where they’re sick.”
+“We know there are these inequalities,” she said, “and we can’t even begin to address them if we can't see who is sick and where they’re sick.”
 
 <i><b>100% ESSENTIAL:</b>Spotlight PA provides its journalism at no cost to newsrooms across the state as a public good to keep our communities informed and thriving. If you value this service, please give a gift today at[spotlightpa.org/donate](https://www.spotlightpa.org/donate).</i>
 
