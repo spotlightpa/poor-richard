@@ -1,5 +1,9 @@
 {{- $pc := site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable -}}
+{{ $title := .Title }}
+{{ $relink := .RelPermalink }}
+{{ $link := .Permalink }}
+
 {{ with .Param "GoogleAnalytics" | default site.GoogleAnalytics }}
 <script>
 {{ template "__ga_js_set_doNotTrack" $ }}
@@ -20,7 +24,9 @@ if (!doNotTrack) {
     ga('create', '{{ . }}', 'auto');
     {{ end -}}
     {{ if $pc.AnonymizeIP }}ga('set', 'anonymizeIp', true);{{ end }}
-    ga('send', 'pageview');
+    ga('send', 'pageview', '{{ $relink }}',
+      { title: '{{ $title }}', location: '{{ $link }}'}
+    );
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
