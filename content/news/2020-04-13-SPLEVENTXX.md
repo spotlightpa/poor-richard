@@ -1,6 +1,6 @@
 +++
 image = "2020/04/01f9ec5aw24z7xbt.png"
-image-description = "A free virtual Q&A for Pittsburgh small business owners on navigating the coronavirus shutdown"
+image-description = "WATCH: A free virtual Q&A for Pittsburgh small business owners on navigating the coronavirus shutdown"
 image-credit = "STAFF / Spotlight PA"
 image-size = "hidden"
 published = 2020-04-13T17:42:20.000Z
