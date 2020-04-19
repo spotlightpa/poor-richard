@@ -88,9 +88,11 @@ Scannapieco, who works in a Montgomery County hospital that she declined to iden
 
 “We get a yearly flu that kills thousands and thousands of people," she said. “I’m not really so sure what the difference is with this virus.”
 
-Scannapieco said the number of COVID-19 patients at her hospital is down by as much as 50%.
+During the 2019-20 flu season, Pennsylvania <a href="https://www.health.pa.gov/topics/disease/Flu/Pages/2019-20-Flu.aspx" target=_blank>reported</a> 102 deaths, while the Centers for Disease Control and Prevention <a href="https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm" target=_blank>estimated</a> between 24,000 and 62,000 nationwide. According to Johns Hopkins Medicine, unlike the flu, COVID-19 “might be spread through the airborne route" and there’s no vaccine. Researchers are <a href="https://www.washingtonpost.com/health/as-officials-plan-to-reopen-the-economy-a-key-unknown-remains-how-deadly-is-the-coronavirus/2020/04/17/0bd2f938-7e49-11ea-a3ee-13e1ae0a3571_story.html" target=_blank>still trying to determine </a>how deadly the virus is. 
 
-“We do have coronavirus patients, but not to the levels that are being reported in the media," she said.
+
+
+
 
 Dorr, 37, said he started the Facebook page from a “constitutional approach" to push back against the shutdown, believing the government “overplayed their hand here" based on exaggerated data and overblown models.
 
@@ -113,6 +115,8 @@ Donna Lea Merritt, 53, of Berks County, was helping organize the back-to-work ra
 Merritt, a stay-at-home mother, believes the country is getting restless.
 
 “The whole reason we’re doing this is that we’re all being the adults in the room,” she said of Monday’s rally. “We want to be respectful.”
+
+<i>This story has been updated. </i>
 
 <i>Inquirer staff writer Justine McDaniel contributed to this article.</i>
 
