@@ -2,10 +2,10 @@
 </div>
 
 <div class="box">
-{{ $src := .Get "src" }}
-{{ $credit := .Get "credit" }}
-{{ $description := .Get "description" }}
-{{ $caption := .Get "caption" }}
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
 {{ $widthRatio := .Get "width-ratio" | default 3 | int }}
 {{ $heightRatio := .Get "height-ratio" | default 2 | int }}
 
