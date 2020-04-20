@@ -1,9 +1,6 @@
-import "alpinejs";
 import imgproxy from "./imgproxy-url.js";
 
-window.spl = window.spl || {};
-
-window.spl.readmore = () => {
+export default function readmore() {
   return {
     hasLoaded: false,
     isLoading: false,
@@ -64,4 +61,3 @@ function toStory(data, { width, height }) {
   };
 }
 
-export function load() {}

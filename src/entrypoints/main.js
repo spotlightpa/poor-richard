@@ -17,12 +17,6 @@ function createListeners() {
   addGAListeners();
   addSocialButtonListeners();
   addModal();
-
-  if ("fetch" in window) {
-    import("../utils/read-more.js").then((module) => {
-      module.load();
-    });
-  }
 }
 
 onLoad(createListeners);

@@ -1,6 +1,5 @@
-import "alpinejs";
-
-window.splEmbedList = function () {
+window.spl = window.spl || {};
+window.spl.embedList = function () {
   return {
     embedCode: "",
     baseURL: "",
