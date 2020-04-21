@@ -5,6 +5,7 @@ window.deferLoadingAlpine = (cb) => {
 
 import "alpinejs";
 import imgproxy from "./imgproxy-url.js";
+import { sendGAEvent } from "../utils/google-analytics.js";
 
 window.spl = window.spl || {};
 
@@ -63,6 +64,15 @@ window.spl.readmore = ({ showDate = false }) => {
       this.load();
       this.hasClicked = true;
       this.counter += 10;
+    },
+
+    analytics($event) {
+      let { href = "" } = $event.target;
+      sendGAEvent({
+        eventCategory: "Read more",
+        eventAction: "select",
+        eventLabel: href,
+      });
     },
   };
 };
