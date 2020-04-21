@@ -47,6 +47,15 @@
             <a :href="story.url" class="has-text-grey hover-underline" x-text="story.byline">
             </a>
           </h3>
+          <h3
+            x-show="showDate"
+            class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+          >
+            <a :href="story.url" class="has-text-grey hover-underline">
+              <time :datetime="story.publishedISO" x-text="story.published">
+              </time>
+            </a>
+          </h3>
         </div>
       </div>
     </div>

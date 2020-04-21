@@ -1,10 +1,16 @@
+let loadAlpine = null;
+window.deferLoadingAlpine = (cb) => {
+  loadAlpine = cb;
+};
+
 import "alpinejs";
 import imgproxy from "./imgproxy-url.js";
 
 window.spl = window.spl || {};
 
-window.spl.readmore = () => {
+window.spl.readmore = ({ showDate = false }) => {
   return {
+    showDate,
     hasLoaded: false,
     isLoading: false,
     hasClicked: false,
@@ -49,6 +55,10 @@ window.spl.readmore = () => {
       return this.hasClicked && this.isLoading ? "is-loading" : "";
     },
 
+    get canReadMore() {
+      return !this.hasLoaded || this.counter < this.fetchedStories.length;
+    },
+
     click() {
       this.load();
       this.hasClicked = true;
@@ -64,4 +74,9 @@ function toStory(data, { width, height }) {
   };
 }
 
-export function load() {}
+export function load() {
+  if (loadAlpine) {
+    loadAlpine();
+  }
+  window.deferLoadingAlpine = (cb) => void cb();
+}

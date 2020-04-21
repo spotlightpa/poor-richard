@@ -25,7 +25,7 @@
 <section class="section {{ $marginClass }}" data-ga-action="Homepage link">
   <div
     class="container-hp"
-    x-data="spl.readmore()"
+    x-data="spl.readmore({ showDate: false })"
   >
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile-featured.html" $featuredStory }}
@@ -85,7 +85,6 @@
         <div class="tile">
           <div class="tile is-parent">
             <div class="tile is-child has-text-centered">
-              <!-- Assume 10 stories per page -->
               <a
                 @click.prevent="click()"
                 @mouseover.once="load()"
@@ -94,6 +93,7 @@
                 href="/news/"
                 class="button is-primary is-medium is-uppercase has-text-weight-semibold"
                 :class="loadingClass"
+                :disabled="!canReadMore"
               >Read More</a>
             </div>
           </div>
