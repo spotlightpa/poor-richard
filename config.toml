@@ -94,8 +94,15 @@ target = "static/@src"
 source = "static"
 target = "static"
 
+[related]
+includeNewer = true
+
 [[related.indices]]
   name  = "series"
+  weight = 200
+
+[[related.indices]]
+  name = "topic"
   weight = 200
 
 [[related.indices]]
@@ -109,8 +116,3 @@ target = "static"
 [[related.indices]]
   name  = "authors"
   weight = 100
-
-[[related.indices]]
-  name  = "date"
-  weight = 10
-  pattern = "2006"
