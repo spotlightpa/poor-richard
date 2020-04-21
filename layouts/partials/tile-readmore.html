@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="tile is-parent is-8 is-bottom-tablet">
-        <div class="tile is-child">
+        <div class="tile is-child" @click.capture="analytics($event)">
           <h2 class="title is-spaced is-4 has-margin-top-thin-tablet">
             <a
               class="has-text-black hover-underline"
@@ -45,6 +45,15 @@
           </h2>
           <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
             <a :href="story.url" class="has-text-grey hover-underline" x-text="story.byline">
+            </a>
+          </h3>
+          <h3
+            x-show="showDate"
+            class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+          >
+            <a :href="story.url" class="has-text-grey hover-underline">
+              <time :datetime="story.publishedISO" x-text="story.published">
+              </time>
             </a>
           </h3>
         </div>

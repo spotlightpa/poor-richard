@@ -18,10 +18,13 @@ function createListeners() {
   addSocialButtonListeners();
   addModal();
 
-  if ("fetch" in window) {
+  try {
     import("../utils/read-more.js").then((module) => {
       module.load();
     });
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn("could not load enhancements", e);
   }
 }
 
