@@ -1,6 +1,7 @@
 [build]
 base = ""
 command = "yarn build:prod"
+functions = "functions"
 publish = "public"
 
 [build.environment]
@@ -10,6 +11,8 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
 NODE_VERSION = "12"
+GO_IMPORT_PATH = "github.com/carlmjohnson/netlify-go-function-demo"
+GO111MODULE = "on"
 
 [context.deploy-preview]
 command = "yarn build:stage"
@@ -43,8 +46,12 @@ for = "/@src/*"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable" # 1 year
 
-
 [[headers]]
 for = "/*.(woff|woff2)"
 [headers.values]
 Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/spotlightpa-api/:splat"
+status = 200
