@@ -1,6 +1,6 @@
 <!-- header tags that are the same on all pages -->
 
-<script src='{{ partial "inline-src" "main.js" }}' async></script>
+<script src='{{ partial "get-src" "main.js" }}' async></script>
 
 {{ range slice "500" "800" }}
   <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
