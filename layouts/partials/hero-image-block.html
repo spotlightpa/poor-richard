@@ -6,6 +6,7 @@
 {{ $imgOpts := dict "filename" $imagename }}
 {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $description | merge $imgOpts }}
+{{ $imgOpts = dict "eager" true | merge $imgOpts }}
 {{ if eq $size "inline" }}
   {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}

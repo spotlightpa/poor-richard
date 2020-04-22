@@ -33,6 +33,7 @@
 {{ $imgOpts := dict "filename" $heroName }}
 {{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
 {{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
+{{ $imgOpts = dict "eager" true | merge $imgOpts }}
 {{ $imgOpts = dict "link" $featured.RelPermalink | merge $imgOpts }}
 {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
 {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
