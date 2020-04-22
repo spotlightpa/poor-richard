@@ -12,7 +12,7 @@ blurb = "New figures released Thursday show black Pennsylvanians make up a dispr
 kicker = "Coronavirus"
 suppress-featured = false
 topics = ["Coronavirus"]
-series = ["Top News"]
+series = []
 +++
 <i>[Spotlight PA](https://www.spotlightpa.org/) is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters).</i>
 
