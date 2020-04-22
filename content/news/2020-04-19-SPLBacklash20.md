@@ -1,30 +1,30 @@
 +++
-arc-id = "OQXAAI6P7BBRZGJZO24XILFSPI"
-internal-id = "SPLBacklash20"
-internal-budget = ""
 image = "external/587axdrx3xydbrmfdpgkhzq5bw.jpeg"
 image-description = "Pennsylvania officials are aware of the gathering and have advised against it."
-image-caption = ""
 image-credit = "Kalim A. Bhatti / Philadelphia Inquirer"
 image-size = ""
-published = 2020-04-19T14:17:46Z
+published = 2020-04-19T14:17:46.000Z
 slug = "pennsylvania-coronavirus-rally-harrisburg-quarantine"
 authors = ["Jason Nark", "Cynthia Fernandez"]
 byline = "Jason Nark of the Philadelphia Inquirer and Cynthia Fernandez of Spotlight PA"
 title = "The backlash against the quarantine has begun in Pennsylvania, with anti-shutdown rally Monday in Harrisburg"
-subtitle = ""
 description = "“I’m definitely not going to be out there shouting at people for not wearing masks,” said Chris Dorr, organizer of the Monday rally in Harrisburg. “This is a free country, right?”"
 blurb = "“I’m definitely not going to be out there shouting at people for not wearing masks,” said Chris Dorr, organizer of the Monday rally in Harrisburg. “This is a free country, right?”"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = ["Top News"]
 linktitle = ""
 suppress-featured = false
 weight = 0
-url = ""
-aliases = []
+topics = ["Coronavirus"]
+series = []
 modal-exclude = false
 no-index = false
+internal-id = "SPLBacklash20"
+url = ""
+image-caption = ""
+internal-budget = ""
+arc-id = "OQXAAI6P7BBRZGJZO24XILFSPI"
+subtitle = ""
+aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
