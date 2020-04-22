@@ -1,0 +1,12 @@
+{{ $src := "" }}
+{{ if site.IsServer }}
+  {{ $src = printf "http://localhost:1234/%s" . }}
+{{ else }}
+  {{ $path := printf "@src/%s" . }}
+  {{ $file := resources.Get $path }}
+  {{ $data := base64Encode $file.Content }}
+  {{ $url := printf "data:application/javascript;base64,%s" $data }}
+  {{ $src = safeURL $url }}
+{{ end }}
+
+{{ return $src }}
