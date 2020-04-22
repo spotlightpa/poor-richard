@@ -29,12 +29,12 @@ for = "/*.(css|ttf|ttc|otf|eot|woff|woff2)"
 Cache-Control = "public, max-age=31536000, immutable" # 1 year
 
 [[headers]]
-for = "/*.(jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)"
+for = "/*.(cur|gif|gz|ico|jpeg|jpg|mp4|ogg|ogv|pdf|png|svg|svgz|webm)"
 [headers.values]
 Cache-Control = "public, max-age=1209600" # 2 weeks
 
 [[headers]]
-for = "/*.js"
+for = "/*.(js|json|map|txt|xml)"
 [headers.values]
 Cache-Control = "public, max-age=300" # 5 minutes
 
