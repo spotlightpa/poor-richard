@@ -13,6 +13,8 @@ import (
 )
 
 func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
+	app.Printf("starting getMostPopular %q %q", app.googleCreds, app.viewID)
+
 	type response struct {
 		Pages []string `json:"pages"`
 	}
@@ -21,33 +23,37 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 		err  error
 	)
 	resp.Pages, err = getMostPopular(r.Context(), app.googleCreds, app.viewID)
+	app.Printf("got %d most popular pages", len(resp.Pages))
 	if err != nil {
 		app.errorResponse(r.Context(), w, err)
 		return
 	}
+
 	w.Header().Set("Cache-Control", "public, max-age=300")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	app.jsonResponse(http.StatusOK, w, &resp)
+	app.jsonResponse(r.Context(), http.StatusOK, w, &resp)
 }
 
-func getMostPopular(ctx context.Context, jsonGoogleCredentials, viewID string) ([]string, error) {
+func getMostPopular(ctx context.Context, jsonGoogleCredentials []byte, viewID string) ([]string, error) {
 	var (
 		client *http.Client
 		err    error
 	)
 	if len(jsonGoogleCredentials) == 0 {
 		client, err = google.DefaultClient(ctx, "https://www.googleapis.com/auth/analytics.readonly")
+		if err != nil {
+			return nil, err
+		}
 	} else {
 		creds, errShdw := google.CredentialsFromJSON(
 			ctx,
-			[]byte(jsonGoogleCredentials),
+			jsonGoogleCredentials,
 			"https://www.googleapis.com/auth/analytics.readonly",
 		)
+		if errShdw != nil {
+			return nil, errShdw
+		}
 		client = oauth2.NewClient(oauth2.NoContext, creds.TokenSource)
-		err = errShdw
-	}
-	if err != nil {
-		return nil, err
 	}
 
 	var buf bytes.Buffer
