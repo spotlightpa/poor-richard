@@ -1,8 +1,12 @@
 package api
 
 import (
+	"bytes"
+	"compress/gzip"
+	"encoding/base64"
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -40,7 +44,25 @@ func (app *appEnv) parseArgs(args []string) error {
 	fl.BoolVar(&app.isLambda, "lambda", false, "use AWS Lambda rather than HTTP")
 	fl.StringVar(&app.port, "port", ":12345", "listen on port (HTTP only)")
 	sentryDSN := fl.String("sentry-dsn", "", "DSN `pseudo-URL` for Sentry")
-	fl.StringVar(&app.googleCreds, "google-creds", "", "JSON credentials for Google")
+	// Using a crazy callback because Netlify is getting
+	// tripped up by the real credentials
+	flagext.Callback(fl, "google-json", "", "GZIP Base64 JSON credentials for Google",
+		func(s string) error {
+			b, err := base64.StdEncoding.DecodeString(s)
+			if err != nil {
+				return err
+			}
+			g, err := gzip.NewReader(bytes.NewReader(b))
+			if err != nil {
+				return err
+			}
+			defer g.Close()
+			app.googleCreds, err = ioutil.ReadAll(g)
+			if err != nil {
+				return err
+			}
+			return nil
+		})
 	fl.StringVar(&app.viewID, "view-id", "", "view ID for Google Analytics")
 
 	fl.Usage = func() {
@@ -62,7 +84,7 @@ type appEnv struct {
 	port     string
 	isLambda bool
 	*log.Logger
-	googleCreds string
+	googleCreds []byte
 	viewID      string
 }
 
@@ -76,12 +98,12 @@ func (app *appEnv) exec() error {
 		Handle(app.routes())
 
 	if app.isLambda {
-		app.Printf("starting on AWS Lambda")
+		app.Printf("initialized on AWS Lambda")
 		apigo.ListenAndServe("", routes)
 		panic("unreachable")
 	}
 
-	app.Printf("starting on port %s", app.port)
+	app.Printf("listening on port %s", app.port)
 
 	return http.ListenAndServe(app.port, routes)
 }

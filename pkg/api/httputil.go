@@ -15,19 +15,19 @@ func (app *appEnv) versionMiddleware(h http.Handler) http.Handler {
 	})
 }
 
-func (app *appEnv) jsonResponse(statusCode int, w http.ResponseWriter, data interface{}) {
+func (app *appEnv) jsonResponse(ctx context.Context, statusCode int, w http.ResponseWriter, data interface{}) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(statusCode)
 	enc := json.NewEncoder(w)
 	if err := enc.Encode(data); err != nil {
-		app.Printf("jsonResponse problem: %v", err)
+		app.logErr(ctx, err)
 	}
 }
 
 func (app *appEnv) errorResponse(ctx context.Context, w http.ResponseWriter, err error) {
 	app.logErr(ctx, err)
 	code, errResp := errorResponseFrom(err)
-	app.jsonResponse(code, w, errResp)
+	app.jsonResponse(ctx, code, w, errResp)
 }
 
 func (app *appEnv) logErr(ctx context.Context, err error) {
