@@ -19,7 +19,7 @@ function createListeners() {
   addModal();
 
   try {
-    import("../utils/read-more.js").then((module) => {
+    import("../utils/enhancements.js").then((module) => {
       module.load();
     });
   } catch (e) {
