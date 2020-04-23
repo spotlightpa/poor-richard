@@ -14,6 +14,7 @@ Sign up for **The Investigator**, Spotlight PA's free weekly newsletter with exc
 
 ## Archives
 
+* [Thursday, April 23, 2020](http://eepurl.com/g0PdLH)
 * [Thursday, April 16, 2020](http://eepurl.com/gZQagD)
 * [Thursday, April 9, 2020](http://eepurl.com/gYZmWj)
 * [Thursday, April 2, 2020](http://eepurl.com/gXSJdf)
