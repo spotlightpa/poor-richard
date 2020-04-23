@@ -1,15 +1,16 @@
-let loadAlpine = null;
-window.deferLoadingAlpine = (cb) => {
-  loadAlpine = cb;
-};
-
-import "alpinejs";
 import imgproxy from "./imgproxy-url.js";
 import { sendGAEvent } from "../utils/google-analytics.js";
 
-window.spl = window.spl || {};
+function toStory(data, { width, height }) {
+  return {
+    ...data,
+    get imageURL() {
+      return imgproxy(data.image, { width, height });
+    },
+  };
+}
 
-window.spl.readmore = ({ showDate = false }) => {
+export default ({ showDate = false }) => {
   return {
     showDate,
     hasLoaded: false,
@@ -76,17 +77,3 @@ window.spl.readmore = ({ showDate = false }) => {
     },
   };
 };
-
-function toStory(data, { width, height }) {
-  return {
-    ...data,
-    imageURL: imgproxy(data.image, { width, height }),
-  };
-}
-
-export function load() {
-  if (loadAlpine) {
-    loadAlpine();
-  }
-  window.deferLoadingAlpine = (cb) => void cb();
-}
