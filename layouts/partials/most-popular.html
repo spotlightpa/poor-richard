@@ -1,0 +1,25 @@
+{{ $mostPopURL := "/api/most-popular" }}
+{{ if site.IsServer }}
+  {{ $mostPopURL = "http://localhost:12345/api/most-popular" }}
+{{ end }}
+
+<div class="tile is-parent is-top is-4" style="order: 2">
+  <div class="tile is-child">
+    <div
+      class="box content"
+      x-data="spl.mostPopular({ mostPopularURL: '{{ $mostPopURL }}' })"
+      x-init="load()"
+      x-show="hasLoaded"
+      x-cloak
+    >
+      <h1 class="title is-5">Most Popular Stories</h1>
+      <ol @click.capture="analytics($event)">
+        <template x-for="story of stories">
+          <li>
+            <a :href="story.url" x-text="story.title" />
+          </li>
+        </template>
+      </ol>
+    </div>
+  </div>
+</div>

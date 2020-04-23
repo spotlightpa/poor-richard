@@ -52,14 +52,8 @@
           @mouseover.once="load()"
           @touchstart.once="load()"
         >
-          {{ if false }}
-            <div class="tile is-parent is-top is-4" style="order: 2">
-              <div class="tile is-child">
-                <div class="box">
-                </div>
-              </div>
-            </div>
-          {{ end }}
+          {{ partial "most-popular.html" dict }}
+
           <div
             class="tile is-vertical is-8"
             style="order: 1"
