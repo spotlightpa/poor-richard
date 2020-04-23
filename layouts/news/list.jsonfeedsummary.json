@@ -3,7 +3,7 @@
 {{- $items := slice -}}
 {{- range first 500 .RegularPages -}}
 
-  {{- $json.SetInMap "item" "url" .Permalink -}}
+  {{- $json.SetInMap "item" "url" .RelPermalink -}}
   {{- $json.SetInMap "item" "title" .Title -}}
   {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
