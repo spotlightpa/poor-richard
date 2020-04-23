@@ -1,9 +1,34 @@
+const magicWebpFile =
+  "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=";
+
+function testWebpSupport() {
+  return new Promise((resolve, reject) => {
+    let img = new Image();
+    img.onload = resolve;
+    img.onerror = reject;
+    img.src = magicWebpFile;
+  });
+}
+
+let supportsWebp = null;
+
+testWebpSupport()
+  .then(() => {
+    supportsWebp = true;
+  })
+  .catch(() => {
+    supportsWebp = false;
+  });
+
 export default function imageURL(
   filepath,
   { width = 400, height = 300, extension = "jpeg" } = {}
 ) {
   if (!filepath) {
     return "";
+  }
+  if (supportsWebp && extension === "jpeg") {
+    extension = "webp";
   }
   let baseURL = "https://images.data.spotlightpa.org";
   let signature = "insecure";
