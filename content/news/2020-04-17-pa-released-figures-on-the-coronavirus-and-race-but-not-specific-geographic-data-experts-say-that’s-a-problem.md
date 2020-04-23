@@ -4,6 +4,7 @@ image = "external/dveqr2p60d929tnzsxvc605pdc.jpeg"
 image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
 published = 2020-04-17T11:20:00.735Z
 slug = "pennsylvania-coronavirus-demographics-race-data"
+authors = ["Anna Orso", "Cynthia Fernandez"]
 byline = "Anna Orso of the Philadelphia Inquirer and Cynthia Fernandez of Spotlight PA"
 title = "Pa. released figures on the coronavirus and race, but not specific geographic data. Experts say that’s a problem."
 subhed = ""
@@ -66,7 +67,7 @@ This week, Levine put new pressure on doctors and laboratories to report such in
 
 Some counties with their own health departments have been more forthcoming. [Philadelphia city officials earlier this month](https://www.inquirer.com/news/philadelphia-coronavirus-race-african-american-cases-rising-20200403.html)publicized some data on race, though it represented less than a third of confirmed cases in the city. Those figures showed while most early cases were among white patients, new cases overwhelmingly affected black residents. As of this week, the city health department now has data on race for two-thirds of its more than 7,000 cases.
 
-[It has also published graphics](https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/testing-and-data/#demographic-data) showing cases and deaths by age, gender and zip code.
+[It has also published graphics](https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/testing-and-data/) showing cases and deaths by age, gender and zip code.
 
 <iframe title="Coronavirus Cases in Philadelphia" aria-label="choropleth map" id="datawrapper-chart-kHSsx" src="//datawrapper.dwcdn.net/kHSsx/35/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="550"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}(); </script>
 
