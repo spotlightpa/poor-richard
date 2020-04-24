@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"net/url"
 
 	"golang.org/x/net/context/ctxhttp"
 	"golang.org/x/oauth2"
@@ -103,13 +104,25 @@ func getMostPopular(ctx context.Context, jsonGoogleCredentials []byte, viewID st
 		return nil, fmt.Errorf("got bad report length: %d", len(data.Reports))
 	}
 	pages := make([]string, 0, len(data.Reports[0].Data.Rows))
+	pagesSet := make(map[string]bool, len(data.Reports[0].Data.Rows))
 	for _, row := range data.Reports[0].Data.Rows {
 		if len(row.Dimensions) != 1 {
 			return nil, fmt.Errorf("got bad row length: %d", len(row.Dimensions))
 		}
-		pages = append(pages, row.Dimensions[0])
+		page := row.Dimensions[0]
+		u, err := url.Parse(page)
+		if err != nil {
+			continue
+		}
+		// TODO: We could go through and add up all the query string variants
+		// then re-sort, but seems like overkill
+		page = u.Path
+		if !pagesSet[page] {
+			pagesSet[page] = true
+			pages = append(pages, page)
+		}
 	}
-	// todo normalize their crap data
+
 	return pages, nil
 }
 
