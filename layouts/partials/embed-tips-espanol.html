@@ -21,6 +21,9 @@
       <label>
         Don’t fill this out if you're human: <input name="bot-field">
       </label>
+      <label>
+        Source URL: <input id="source-url" name="source-url">
+      </label>
     </p>
     <div class="field is-horizontal">
       <div class="field-body">
@@ -103,3 +106,7 @@
     </div>
   </form>
 </div>
+
+<script>
+  document.getElementById("source-url").value = window.top.location.href;
+</script>
