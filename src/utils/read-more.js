@@ -25,7 +25,7 @@ export default ({ showDate = false }) => {
       this.isLoading = true;
 
       let hrefs = new Set(
-        Array.from(this.$el.querySelectorAll("a")).map((el) => el.href)
+        Array.from(this.$el.querySelectorAll("a")).map((el) => el.pathname)
       );
       // Figure out the right image size to request
       let { width, height } = this.$refs.archives.querySelector("figure img");
