@@ -22,6 +22,10 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 		resp response
 		err  error
 	)
+	// Let's cache no matter what…
+	w.Header().Set("Cache-Control", "public, max-age=300")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	resp.Pages, err = getMostPopular(r.Context(), app.googleCreds, app.viewID)
 	app.Printf("got %d most popular pages", len(resp.Pages))
 	if err != nil {
@@ -29,8 +33,6 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Set("Cache-Control", "public, max-age=300")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
 	app.jsonResponse(r.Context(), http.StatusOK, w, &resp)
 }
 
