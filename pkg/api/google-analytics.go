@@ -9,12 +9,10 @@ import (
 	"net/url"
 
 	"golang.org/x/net/context/ctxhttp"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 )
 
 func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
-	app.Printf("starting getMostPopular %q %q", app.googleCreds, app.viewID)
+	app.Printf("starting getMostPopular")
 
 	type response struct {
 		Pages []string `json:"pages"`
@@ -27,7 +25,12 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "public, max-age=300")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 
-	resp.Pages, err = getMostPopular(r.Context(), app.googleCreds, app.viewID)
+	client := app.googleClient(r.Context())
+	if client == nil {
+		app.errorResponse(r.Context(), w, fmt.Errorf("client not available"))
+		return
+	}
+	resp.Pages, err = getMostPopular(r.Context(), client, app.viewID)
 	app.Printf("got %d most popular pages", len(resp.Pages))
 	if err != nil {
 		app.errorResponse(r.Context(), w, err)
@@ -37,28 +40,7 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 	app.jsonResponse(r.Context(), http.StatusOK, w, &resp)
 }
 
-func getMostPopular(ctx context.Context, jsonGoogleCredentials []byte, viewID string) ([]string, error) {
-	var (
-		client *http.Client
-		err    error
-	)
-	if len(jsonGoogleCredentials) == 0 {
-		client, err = google.DefaultClient(ctx, "https://www.googleapis.com/auth/analytics.readonly")
-		if err != nil {
-			return nil, err
-		}
-	} else {
-		creds, errShdw := google.CredentialsFromJSON(
-			ctx,
-			jsonGoogleCredentials,
-			"https://www.googleapis.com/auth/analytics.readonly",
-		)
-		if errShdw != nil {
-			return nil, errShdw
-		}
-		client = oauth2.NewClient(oauth2.NoContext, creds.TokenSource)
-	}
-
+func getMostPopular(ctx context.Context, client *http.Client, viewID string) ([]string, error) {
 	var buf bytes.Buffer
 	enc := json.NewEncoder(&buf)
 	enc.Encode(&AnalyticsRequest{
