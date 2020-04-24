@@ -12,11 +12,14 @@
       x-show="hasLoaded"
       x-cloak
     >
-      <h1 class="title is-5">Most Popular Stories</h1>
-      <ol @click.capture="analytics($event)">
+      <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">Most Popular Stories</h1>
+      <ol @click.capture="analytics($event)" class="has-text-dark">
         <template x-for="story of stories">
           <li>
-            <a :href="story.url" x-text="story.title" />
+            <a
+              :href="story.url"
+              class="has-text-black hover-underline"
+              x-text="story.title" />
           </li>
         </template>
       </ol>
