@@ -53,8 +53,8 @@ func getMostPopular(ctx context.Context, client *http.Client, viewID string) ([]
 				Name: "ga:pagePath",
 			}},
 			DateRanges: []DateRange{{
-				StartDate: "2daysAgo",
-				EndDate:   "yesterday",
+				StartDate: "today",
+				EndDate:   "today",
 			}},
 			OrderBys: []OrderBy{{
 				FieldName: "ga:uniquePageviews",
