@@ -4,7 +4,7 @@
 {{- range first 500 .RegularPages -}}
 
   {{- $json.SetInMap "item" "url" .RelPermalink -}}
-  {{- $json.SetInMap "item" "title" .Title -}}
+  {{- $json.SetInMap "item" "title" .LinkTitle -}}
   {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
   {{- $json.SetInMap "item" "byline" $params.byline -}}
