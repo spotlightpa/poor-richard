@@ -3,6 +3,7 @@ package api
 import (
 	"bytes"
 	"compress/gzip"
+	"context"
 	"encoding/base64"
 	"flag"
 	"fmt"
@@ -17,6 +18,8 @@ import (
 	sentryhttp "github.com/getsentry/sentry-go/http"
 	"github.com/peterbourgon/ff/v2"
 	"github.com/piotrkubisa/apigo"
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
 )
 
 const AppName = "spotlightpa-api"
@@ -57,10 +60,18 @@ func (app *appEnv) parseArgs(args []string) error {
 				return err
 			}
 			defer g.Close()
-			app.googleCreds, err = ioutil.ReadAll(g)
+			b, err = ioutil.ReadAll(g)
 			if err != nil {
 				return err
 			}
+			creds, err := google.CredentialsFromJSON(
+				oauth2.NoContext, b, "https://www.googleapis.com/auth/analytics.readonly",
+			)
+			if err != nil {
+				return err
+			}
+			app.googleHTTPClient = oauth2.NewClient(oauth2.NoContext, creds.TokenSource)
+
 			return nil
 		})
 	fl.StringVar(&app.viewID, "view-id", "", "view ID for Google Analytics")
@@ -84,8 +95,8 @@ type appEnv struct {
 	port     string
 	isLambda bool
 	*log.Logger
-	googleCreds []byte
-	viewID      string
+	googleHTTPClient *http.Client
+	viewID           string
 }
 
 func (app *appEnv) exec() error {
@@ -125,4 +136,16 @@ func (app *appEnv) routes() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/most-popular", app.getMostPopular)
 	return app.versionMiddleware(mux)
+}
+
+func (app *appEnv) googleClient(ctx context.Context) *http.Client {
+	if app.googleHTTPClient == nil {
+		app.Printf("falling back to default credentials")
+		var err error
+		app.googleHTTPClient, err = google.DefaultClient(ctx, "https://www.googleapis.com/auth/analytics.readonly")
+		if err != nil {
+			app.logErr(ctx, err)
+		}
+	}
+	return app.googleHTTPClient
 }
