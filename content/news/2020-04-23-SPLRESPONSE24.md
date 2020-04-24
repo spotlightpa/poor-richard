@@ -1,30 +1,30 @@
 +++
+arc-id = "3RMSPIV7ERCX5NDMYFHTW5JGKM"
+internal-id = "SPLRESPONSE24"
+internal-budget = ""
 image = "external/096j0rbtxeb6graaj35501rge4.jpeg"
 image-description = "In March, Gov. Tom Wolf shuttered most of the state’s economy in an effort to slow the spread of the coronavirus."
+image-caption = ""
 image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
 image-size = ""
-published = 2020-04-23T20:51:40.000Z
+published = 2020-04-23T20:51:40Z
 slug = "business-waiver-list-pennsylvania-coronavirus-tom-wolf"
 authors = ["Cynthia Fernandez"]
 byline = "Cynthia Fernandez of Spotlight PA"
 title = "There’s no timeline to release list of Pa. businesses that received coveted coronavirus waivers, top official says"
+subtitle = ""
 description = "During a hearing Thursday, members of the Republican-controlled state Senate lambasted the now-closed waiver process and scrutinized key decisions made by the Wolf administration in response to the COVID-19 threat."
 blurb = "During a hearing Thursday, members of the Republican-controlled state Senate lambasted the now-closed waiver process and scrutinized key decisions made by the Wolf administration in response to the COVID-19 threat."
 kicker = "Coronavirus"
+topics = ["Coronavirus"]
+series = ["Top News"]
 linktitle = ""
 suppress-featured = false
 weight = 0
-topics = ["Coronavirus"]
-series = []
+url = ""
+aliases = []
 modal-exclude = false
 no-index = false
-internal-id = "SPLRESPONSE24"
-url = ""
-image-caption = ""
-internal-budget = ""
-arc-id = "3RMSPIV7ERCX5NDMYFHTW5JGKM"
-subtitle = ""
-aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -41,8 +41,7 @@ Those decisions were handled by employees of the state Department of Community a
 
 Under the governor’s emergency order, state agencies have largely stopped processing public records requests.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?url=https%3A%2F%2Finquirer.zoom.us%2Fwebinar%2Fregister%2F4915877447830%2FWN_eDhAGSRhQJSwzQBA_L6jsQ&eyebrow=UPCOMING%20EVENT&body=Join%20us%20Wednesday%2C%20April%2029%20for%20a%20FREE%20virtual%20Q%26A%20for%20Pennsylvania%20small%20business%20owners%20on%20how%20to%20navigate%20the%20coronavirus%20shutdown.%20Get%20your%20questions%20answered%20by%20our%20expert%20panel%2C%20hosted%20by%20Spotlight%20PA.&cta=RSVP%20NOW"></div>
 
 The stakes of the waiver process cannot be overstated, as the state’s decisions affect the livelihoods and potential safety of business owners, employees, and their families, and could mean the difference between solvency and bankruptcy.
 
