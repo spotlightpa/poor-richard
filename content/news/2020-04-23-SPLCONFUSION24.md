@@ -1,30 +1,30 @@
 +++
-arc-id = "CWUQTDIKSJE3NH3334JAH25OPQ"
-internal-id = "SPLCONFUSION24"
-internal-budget = ""
 image = "external/x9pzsgvnj0eyha8cmvgw52qtg0.jpeg"
 image-description = "Secretary of Health Rachel Levine appeared Sunday to explain why the state's count had risen sharply. Then the confusion began."
-image-caption = ""
 image-credit = "Commonwealth Media Services"
 image-size = ""
-published = 2020-04-23T21:51:02Z
+published = 2020-04-23T21:51:02.000Z
 slug = "pennsylvania-coronavirus-death-count-changes"
 authors = ["Sara Simon"]
 byline = "Sara Simon of Spotlight PA"
 title = "Pa. removes more than 200 deaths from official coronavirus count as questions mount about reporting process, data accuracy "
-subtitle = ""
 description = "The past five days have been a roller coaster of confusion involving the state health department, marred by retracted statements, reporting lags, and angry coroners."
 blurb = "The past five days have been a roller coaster of confusion involving the state health department, marred by retracted statements, reporting lags, and angry coroners."
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = ["Top News"]
 linktitle = ""
 suppress-featured = false
 weight = 0
-url = ""
-aliases = []
+topics = ["Coronavirus"]
+series = []
 modal-exclude = false
 no-index = false
+internal-id = "SPLCONFUSION24"
+url = ""
+image-caption = ""
+internal-budget = ""
+arc-id = "CWUQTDIKSJE3NH3334JAH25OPQ"
+subtitle = ""
+aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
