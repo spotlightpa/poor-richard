@@ -1,5 +1,18 @@
 import { sendGAEvent } from "../utils/google-analytics.js";
 
+function fetchJSON(url) {
+  return fetch(url).then((rsp) => {
+    if (!rsp.ok) {
+      let err = new Error(
+        `Unexpected response: ${rsp.status} ${rsp.statusText}`
+      );
+      err.name = "Request error";
+      throw err;
+    }
+    return rsp.json();
+  });
+}
+
 export default ({ mostPopularURL }) => {
   return {
     hasLoaded: false,
@@ -13,8 +26,8 @@ export default ({ mostPopularURL }) => {
       this.isLoading = true;
 
       Promise.all([
-        fetch("/news/feed-summary.json").then((rsp) => rsp.json()),
-        fetch(mostPopularURL).then((rsp) => rsp.json()),
+        fetchJSON("/news/feed-summary.json"),
+        fetchJSON(mostPopularURL),
       ])
         .then(([stories, rankings]) => {
           this.isLoading = false;
