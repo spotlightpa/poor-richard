@@ -6,7 +6,7 @@ publish = "public"
 
 [build.environment]
 IMGPROXY_URL = "/imgproxy"
-HUGO_VERSION = "0.68.1"
+HUGO_VERSION = "0.69.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
