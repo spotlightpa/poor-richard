@@ -1,4 +1,7 @@
 buildFuture = true
 
+[build]
+  writeStats = true
+
 [minify]
   minifyOutput = true

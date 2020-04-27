@@ -74,3 +74,4 @@ dist
 # Local Netlify folder
 .netlify
 functions/
+hugo_stats.json

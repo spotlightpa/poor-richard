@@ -12,7 +12,10 @@
 </style>
 
 {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
-{{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
+{{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS }}
+{{ if not site.IsServer }}
+  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{ end }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
 <link
