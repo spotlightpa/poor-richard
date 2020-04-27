@@ -1,7 +1,3 @@
-{{ define "extra-head" }}
-  <script src='{{ partial "get-src" "embed-list.js" }}' defer></script>
-{{ end }}
-
 {{ define "extra-main" }}
   <section
     class="section columns is-centered is-multiline"
@@ -19,7 +15,7 @@
           {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
           <div
             class="box has-background-light"
-            x-data="splEmbedList()"
+            x-data="spl.embedList()"
             x-init="init()"
             data-url="{{ .Permalink }}"
             data-script-src="{{ $scriptSrc }}"

@@ -7,11 +7,13 @@ import "alpinejs";
 
 import readmore from "./read-more.js";
 import mostPopular from "./most-popular.js";
+import embedList from "./embed-list.js";
 
-window.spl = window.spl || {};
-
-window.spl.readmore = readmore;
-window.spl.mostPopular = mostPopular;
+window.spl = Object.assign({}, window.spl, {
+  readmore,
+  mostPopular,
+  embedList,
+});
 
 export function load() {
   if (loadAlpine) {

@@ -1,6 +1,4 @@
-import "alpinejs";
-
-window.splEmbedList = function () {
+export default function embedList() {
   return {
     embedCode: "",
     baseURL: "",
@@ -63,4 +61,4 @@ window.splEmbedList = function () {
       this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
     },
   };
-};
+}
