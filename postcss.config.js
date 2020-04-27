@@ -1,9 +1,14 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: [ './hugo_stats.json' ],
-    defaultExtractor: (content) => {
+const purgecss = require("@fullhuman/postcss-purgecss")({
+  content: ["./hugo_stats.json", "./src/**/*.vue"],
+  extractors: [
+    {
+      extractor: (content) => {
         let els = JSON.parse(content).htmlElements;
         return els.tags.concat(els.classes, els.ids);
-    }
+      },
+      extensions: ["json"],
+    },
+  ],
 });
 
 let plugins = [require("autoprefixer")];
