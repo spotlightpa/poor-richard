@@ -1,5 +1,7 @@
 import Vue from "vue";
 
+import defineCustomElement from "../utils/define-custom-element.js";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowAltCircleRight,
@@ -10,7 +12,6 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import DonationForm from "../components/DonationForm.vue";
-import { each } from "../utils/dom-utils.js";
 import { sendGAEvent } from "../utils/google-analytics.js";
 
 library.add(faArrowAltCircleRight, faArrowAltCircleLeft, faEnvelope, faLock);
@@ -32,6 +33,4 @@ let GA = {
 
 Vue.use(GA);
 
-each("[data-vue=donation-form]", (el) => {
-  new Vue(DonationForm).$mount(el);
-});
+defineCustomElement({ tagName: "donation-form", component: DonationForm });

@@ -461,3 +461,16 @@ $margin-sizes: (
 .dropcap:after {
   margin-top: -0.05em;
 }
+
+.loading-spinner {
+  animation: loading-spinner 2s infinite linear;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
