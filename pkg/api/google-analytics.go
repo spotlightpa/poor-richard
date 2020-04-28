@@ -22,7 +22,7 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 		err  error
 	)
 	// Let's cache no matter what…
-	w.Header().Set("Cache-Control", "public, max-age=300")
+	w.Header().Set("Cache-Control", "public, max-age=900") // 15 minutes
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 
 	client := app.googleClient(r.Context())
