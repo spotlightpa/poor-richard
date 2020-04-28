@@ -1,4 +1,4 @@
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { sendGAEvent } from "./google-analytics.js";
 
 function fetchJSON(url) {
   return fetch(url).then((rsp) => {
