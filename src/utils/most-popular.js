@@ -59,9 +59,10 @@ export default ({ mostPopularURL }) => {
     analytics($event) {
       let { href = "" } = $event.target;
       sendGAEvent({
-        eventCategory: "Internal link",
-        eventAction: "most-popular",
+        eventCategory: "Internal Link",
+        eventAction: "Most Popular",
         eventLabel: href,
+        transport: "beacon",
       });
     },
   };

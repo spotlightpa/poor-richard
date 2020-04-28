@@ -70,9 +70,10 @@ export default ({ showDate = false }) => {
     analytics($event) {
       let { href = "" } = $event.target;
       sendGAEvent({
-        eventCategory: "Internal link",
-        eventAction: "read-more",
+        eventCategory: "Internal Link",
+        eventAction: "Read More",
         eventLabel: href,
+        transport: "beacon",
       });
     },
   };
