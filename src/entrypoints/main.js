@@ -25,7 +25,7 @@ function createListeners() {
   } catch (e) {
     // eslint-disable-next-line no-console
     console.warn("could not load enhancements", e);
-    document.body.classList.add("has-old-js")
+    document.body.classList.add("has-old-js");
   }
 }
 
