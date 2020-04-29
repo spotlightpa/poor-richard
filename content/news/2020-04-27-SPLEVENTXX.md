@@ -39,8 +39,8 @@ Our panel, hosted by Spotlight PA Editor in Chief Christopher Baxter, took place
 
 - Kevin Shivers, President and CEO of the Pennsylvania Association of Community Bankers
 
-<iframe src="https://player.vimeo.com/video/413188384?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/413188384">How Small Businesses in Pennsylvania can Survive the Coronavirus Shutdown</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe align="center" src="https://player.vimeo.com/video/413188384?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p align="center"><a href="https://vimeo.com/413188384">How Small Businesses in Pennsylvania can Survive the Coronavirus Shutdown</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 Spotlight PA is an independent, non-partisan news organization funded by nonprofit institutions and readers across Pennsylvania who are committed to accountability journalism focused on the state government and urgent statewide issues. Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content produces. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership.
 
