@@ -1,30 +1,30 @@
 +++
+arc-id = "AZH7TTWN6FDJZADUKM4P5GDOLI"
+internal-id = "SPLSTATELINE28"
+internal-budget = ""
 image = "external/hgvcdxwcmtjfw7bctzvh6ssvyg.jpeg"
 image-description = "Public officials including Gov. Larry Hogan in Maryland (pictured) have to decide how much information to make public."
+image-caption = ""
 image-credit = "Patrick Siebert for Gov. Larry Hogan / Flickr"
 image-size = ""
-published = 2020-04-27T10:30:00.000Z
+published = 2020-04-27T10:30:00Z
 slug = "coronavirus-data-public-information-pennsylvania-dashboard"
 authors = ["Cynthia Fernandez", "Anna Orso", "Christine Vestal"]
 byline = "Cynthia Fernandez of Spotlight PA, Anna Orso of the Philadelphia Inquirer, and Christine Vestal of Stateline"
 title = "States need coronavirus data to make timely decisions. What they share with the public varies widely."
+subtitle = ""
 description = "As part of a collaborative effort, Stateline and Spotlight PA surveyed six states across the U.S. to determine what information they have made accessible to the public via their websites."
 blurb = "As part of a collaborative effort, Stateline and Spotlight PA surveyed six states across the U.S. to determine what information they have made accessible to the public via their websites."
 kicker = "Coronavirus"
+topics = ["Coronavirus"]
+series = []
 linktitle = ""
 suppress-featured = false
 weight = 0
-topics = ["Coronavirus"]
-series = []
+url = ""
+aliases = []
 modal-exclude = false
 no-index = false
-internal-id = "SPLSTATELINE28"
-url = ""
-image-caption = ""
-internal-budget = ""
-arc-id = "AZH7TTWN6FDJZADUKM4P5GDOLI"
-subtitle = ""
-aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
