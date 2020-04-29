@@ -1,8 +1,19 @@
 <div
   class="modal"
-  id="modal-newsletter"
+  :class="modalClass"
+  x-data="spl.modal()"
+  x-show="isOpen"
+  x-transition:enter="fade-enter-active"
+  x-transition:enter-start="fade-enter"
+  x-transition:leave="fade-enter-active is-active"
+  x-transition:leave-end="fade-enter"
+  @scroll.window.once="init()"
 >
-  <div class="modal-background"></div>
+  <div
+    class="modal-background"
+    @touchmove.prevent
+    @click="close()"
+  ></div>
   <form
     class="modal-content"
     action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
@@ -18,7 +29,12 @@
           </svg>
         </span>
       </p>
-      <button class="delete" type="button" aria-label="close"></button>
+      <button
+        class="delete"
+        type="button"
+        aria-label="close"
+        @click="close"
+      ></button>
     </header>
     <div class="modal-card-body">
       <p class="is-hidden" aria-hidden="true">
@@ -49,6 +65,7 @@
             type="email"
             name="EMAIL"
             placeholder="Email"
+            @focus="focus()"
           >
           <span class="icon is-large is-left">
             <svg>
@@ -66,6 +83,7 @@
         <button
           type="submit"
           class="button is-medium is-danger has-text-weight-semibold"
+          @click="submit()"
         >
           Sign me up
         </button>
@@ -74,6 +92,7 @@
         <a
           class="has-text-grey hover-underline"
           aria-label="close"
+          @click="close"
         >
           No thanks
         </a>
@@ -83,5 +102,6 @@
   <button
     class="modal-close is-large"
     aria-label="close"
+    @click="close"
   ></button>
 </div>
