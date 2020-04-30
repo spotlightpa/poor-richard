@@ -31,7 +31,7 @@ no-index = false
 
 HARRISBURG — The Wolf administration has failed to meet a deadline to turn over documents related to businesses exempted from the coronavirus shutdown, moving two Republican senators a step closer to a subpoena.
 
-In response to a request from GOP lawmakers, state Auditor General Eugene DePasquale said Thursday an audit of the controversial waiver process began this morning. However, he said he would not release any waiver records.
+In response to a request from GOP lawmakers, state Auditor General Eugene DePasquale said Thursday he will audit the controversial waiver process. However, he said he will not release any waiver records.
 
 “This crisis is not going to be solved by arguments or bickering,” he told reporters Thursday. “The question we need to find out is could more businesses have remained open … and was this done in a fair process?” 
 
