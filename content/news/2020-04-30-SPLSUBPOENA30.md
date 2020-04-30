@@ -33,7 +33,7 @@ HARRISBURG — The Wolf administration has failed to meet a deadline to turn ove
 
 In response to a request from GOP lawmakers, state Auditor General Eugene DePasquale said Thursday he will audit the controversial waiver process. However, he said he will not release any waiver records.
 
-“This crisis is not going to be solved by arguments or bickering,” he told reporters Thursday. “The question we need to find out is could more businesses have remained open … and was this done in a fair process?” 
+“This crisis is not going to be solved by arguments or bickering,” he told reporters Thursday. “The question we need to find out is could more businesses have remained open … and was this done in a fair process?”
 
 The waivers have been one of the most contentious aspects of Gov. Tom Wolf’s response to the coronavirus pandemic because of perceived inconsistencies and a lack of transparency about which businesses received them.
 
@@ -43,11 +43,14 @@ The move could set off a legal battle between the Republican-controlled legislat
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
+
 The administration has also ignored a slew of formal requests for the documents from media organizations across the state, including Spotlight PA and The Philadelphia Inquirer, saying it is too busy addressing the pandemic.
 
 Regan and Sen. Tom Killion (R., Delaware) sent a letter to Wolf last week <a href="https://www.spotlightpa.org/news/2020/04/business-waiver-list-wolf-administration-pennsylvania-coronavirus/">requesting a trove of records </a>related to the waivers, which were administered in secret by the state Department of Community and Economic Development.
 
-DePasquale said he had intended to review the waiver process, but sped up his timing in response to a letter last week from the Senate’s 28 Republican and independent members requesting an investigation. 
+DePasquale said he had intended to review the waiver process, but sped up his timing in response to a letter last week from the Senate’s 28 Republican and independent members requesting an investigation.
+
+
 
 The audit began Thursday morning, DePasquale said. His office will request documents from the Department of Community and Economic Development and look at how employers reached out to the agency, who responded to the request, and if the decisions were consistent. DePasquale also said his office will determine if the waiver process needs to reopen out of fairness
 
@@ -57,21 +60,26 @@ DePasquale said his office will not release the names of business that were gran
 
 “One of the issues here is that there is a national standard for this, and the Wolf administration made some adjustments or changes to the national standard,” he said. “We will be asking for some of the reasons why those changes were made and how that impacted some of the waivers that were approved and not approved.”
 
-A spokesperson for Wolf, Lyndsay Kensinger, said the administration supports an audit of the program by DePasquale’s office but not a subpoena. 
+Wolf on Thursday told reporters he thinks the audit is “a great thing.”
+
+“I think the auditor general’s office is in a great position to look at this and make sure that the process is fair and open, as it should be,” he said. 
+
+But according to Wolf spokesperson Lyndsay Kensinger, the administration does not support a subpoena.
 
 “If the Senate takes the unfortunate and counterproductive step of issuing a subpoena, the Wolf administration will review it and determine next steps,” she said Thursday. “The administration has committed to disclosing information about the business closure and exemption process, and recently provided testimony to the Senate regarding that forthcoming disclosure.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Wolf told reporters last week that his administration was working to “wrap up” the waiver process, which closed to new applications on April 3. 
 
-“I think before it's finished … anything that brings that out into the open would give a distorted view of what actually happened in the waiver process,” he said. 
+Wolf told reporters last week that his administration was working to “wrap up” the waiver process, which closed to new applications on April 3.
 
-As of April 29, the Department of Community and Economic Development had approved 6,171 exemptions and denied 13,197, according to a spokesperson. Another 11,624 were “submitted for activities as to which no exemption was required,” the spokesperson said. 
+“I think before it's finished … anything that brings that out into the open would give a distorted view of what actually happened in the waiver process,” he said.
+
+As of April 29, the Department of Community and Economic Development had approved 6,171 exemptions and denied 13,197, according to a spokesperson. Another 11,624 were “submitted for activities as to which no exemption was required,” the spokesperson said.
 
 Senate Minority Leader Jay Costa, of Allegheny County, said in a statement he supports a review by DePasquale, but called on GOP senators to cancel Thursday’s hearing.
 
-“A duplicative review of the same program and information is a waste of taxpayer resources and takes our administration’s officials away from fighting COVID-19,” he said in a Thursday statement. 
+“A duplicative review of the same program and information is a waste of taxpayer resources and takes our administration’s officials away from fighting COVID-19,” he said in a Thursday statement.
 
 <i>This story will be updated. </i>
 
