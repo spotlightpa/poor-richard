@@ -1,30 +1,30 @@
 +++
+arc-id = "6UFSQOD6SFFGFFO7LNWIS64CJE"
+internal-id = "SPLSUBPOENA30"
+internal-budget = ""
 image = "external/1wkawvw9t0g4hjzch3ga2w5k54.jpeg"
 image-description = "The waivers have been one of the most contentious aspects of Gov. Tom Wolf’s response to the coronavirus because of perceived inconsistencies and a lack of transparency about which businesses received them."
+image-caption = ""
 image-credit = "Commonwealth Media Services"
 image-size = ""
-published = 2020-04-30T15:53:01.000Z
+published = 2020-04-30T15:53:01Z
 slug = "business-waivers-list-audit-subpoena-tom-wolf"
 authors = ["Cynthia Fernandez"]
 byline = "Cynthia Fernandez of Spotlight PA"
-title = "As Wolf administration fails to produce waiver documents, Republican senators move closer to subpoena"
+title = "As Wolf administration fails to produce waiver documents, Republicans move closer to subpoena"
+subtitle = ""
 description = "The state’s auditor general said he has begun an audit into the controversial process, but won’t release the names of businesses that received a coveted waiver."
 blurb = "The state’s auditor general said he has begun an audit into the controversial process, but won’t release the names of businesses that received a coveted waiver."
 kicker = "Coronavirus"
-linktitle = ""
-suppress-featured = false
-weight = 1
 topics = ["Coronavirus"]
 series = ["Top News"]
+linktitle = ""
+suppress-featured = false
+weight = 0
+url = ""
+aliases = []
 modal-exclude = false
 no-index = false
-internal-id = "SPLSUBPOENA30"
-url = ""
-image-caption = ""
-internal-budget = ""
-arc-id = "6UFSQOD6SFFGFFO7LNWIS64CJE"
-subtitle = ""
-aliases = []
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
