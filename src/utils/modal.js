@@ -29,6 +29,7 @@ export default function modal() {
   storeDate(LAST_VISIT_KEY, now, { useSession: true });
 
   return {
+    oldFocus: null,
     isOpen: false,
 
     get modalClass() {
@@ -84,20 +85,16 @@ export default function modal() {
 
       document.body.parentElement.classList.add("is-clipped");
 
-      const ESCkeyCode = 27;
-      this.escapeCB = (e) => {
-        if (e.keyCode === ESCkeyCode) {
-          this.close();
-        }
-      };
-
-      document.addEventListener("keydown", this.escapeCB);
-
       sendGAEvent({
         eventCategory: "Modal interaction",
         eventAction: `Saw modal newsletter`,
         nonInteraction: true,
       });
+
+      this.oldFocus = document.activeElement;
+      window.setTimeout(() => {
+        this.$refs.content.focus();
+      }, 500);
     },
 
     focus() {
@@ -116,7 +113,7 @@ export default function modal() {
     },
 
     close() {
-      document.removeEventListener("keydown", this.escapeCB);
+      this.oldFocus.focus();
       document.body.parentElement.classList.remove("is-clipped");
 
       this.isOpen = false;

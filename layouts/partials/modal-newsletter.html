@@ -9,16 +9,17 @@
   x-transition:leave-end="fade-enter"
   @scroll.window.once="init()"
 >
-  <div
-    class="modal-background"
-    @touchmove.prevent
-    @click="close()"
-  ></div>
+  <div class="modal-background"></div>
   <form
     class="modal-content"
     action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
     method="post"
     target="_blank"
+    x-ref="content"
+    @click.away="close()"
+    @keydown.escape="close()"
+    @touchmove.away.prevent
+    tabindex="-1"
   >
     <input type="hidden" name="group[26457]" value="1">
     <header class="modal-card-head">
@@ -92,6 +93,7 @@
         <a
           class="has-text-grey hover-underline"
           aria-label="close"
+          tabindex="0"
           @click="close"
         >
           No thanks
