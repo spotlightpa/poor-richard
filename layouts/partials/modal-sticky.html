@@ -10,7 +10,7 @@
   data-images='{{ $imgs|jsonify }}'
   x-data="spl.sticky()"
   x-init="init()"
-  @x.window="console.log($event)"
+  @open-sticky.window="show()"
 >
   <div class="window-sticker-grid">
     <button

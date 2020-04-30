@@ -3,7 +3,7 @@ import randomChoice from "../utils/random-choice.js";
 
 export default function sticky() {
   return {
-    isOpen: true,
+    isOpen: false,
     images: [],
 
     init() {
@@ -21,11 +21,19 @@ export default function sticky() {
       return this.isOpen ? "is-active" : "";
     },
 
+    show() {
+      this.isOpen = true;
+      sendGAEvent({
+        eventCategory: "Sticky Banner",
+        eventAction: "Show sticky banner",
+      });
+    },
+
     close() {
       this.isOpen = false;
       sendGAEvent({
         eventCategory: "Sticky Banner",
-        eventAction: "Dismiss Sticky Banner",
+        eventAction: "Dismiss sticky banner",
       });
     },
 

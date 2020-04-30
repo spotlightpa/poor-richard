@@ -68,6 +68,10 @@
         class="block"
         data-ga-action="Main content"
       >
+        <div
+          x-data="spl.intersector('open-sticky')"
+          x-init="init()"
+        ></div>
         <div class="content">
           {{ .Content }}
         </div>
