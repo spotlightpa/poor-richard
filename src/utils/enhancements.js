@@ -9,12 +9,14 @@ import readmore from "./read-more.js";
 import mostPopular from "./most-popular.js";
 import embedList from "./embed-list.js";
 import modal from "./modal.js";
+import sticky from "./sticky.js";
 
 window.spl = Object.assign({}, window.spl, {
   readmore,
   mostPopular,
   embedList,
   modal,
+  sticky,
 });
 
 export function load() {

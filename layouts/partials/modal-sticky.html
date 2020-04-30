@@ -1,0 +1,30 @@
+{{ $imgs := slice }}
+{{ range seq 1 5 }}
+  {{ $imgName := printf "/img/promo/gt-s-%d.png" . }}
+  {{ $img := resources.Get $imgName | fingerprint }}
+  {{ $imgs = $imgs | append $img.RelPermalink }}
+{{ end }}
+<section
+  class="window-sticker"
+  :class="stickyClass"
+  data-images='{{ $imgs|jsonify }}'
+  x-data="spl.sticky()"
+  x-init="init()"
+  @x.window="console.log($event)"
+>
+  <div class="window-sticker-grid">
+    <button
+      class="delete"
+      aria-label="close"
+      @click="close"
+    ></button>
+    <a
+      class="window-sticker-content"
+      @click.capture="analytics($event)"
+      href="/donate/"
+    ><img
+      :src="imageURL"
+      style="max-height: 30vh"
+    ></a>
+  </div>
+</section>

@@ -476,3 +476,36 @@ $margin-sizes: (
     transform: rotate(360deg);
   }
 }
+
+.window-sticker {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+.window-sticker.is-active {
+  display: flex;
+}
+
+.window-sticker-grid {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  grid-template-rows: 1rem auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "x -"
+    "- box";
+}
+
+.window-sticker-content {
+  grid-area: box;
+  padding: 0.5rem;
+  line-height: 0;
+}
