@@ -43,14 +43,11 @@ The move could set off a legal battle between the Republican-controlled legislat
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-
 The administration has also ignored a slew of formal requests for the documents from media organizations across the state, including Spotlight PA and The Philadelphia Inquirer, saying it is too busy addressing the pandemic.
 
 Regan and Sen. Tom Killion (R., Delaware) sent a letter to Wolf last week <a href="https://www.spotlightpa.org/news/2020/04/business-waiver-list-wolf-administration-pennsylvania-coronavirus/">requesting a trove of records </a>related to the waivers, which were administered in secret by the state Department of Community and Economic Development.
 
 DePasquale said he had intended to review the waiver process, but sped up his timing in response to a letter last week from the Senate’s 28 Republican and independent members requesting an investigation. 
-
-
 
 The audit began Thursday morning, DePasquale said. His office will request documents from the Department of Community and Economic Development and look at how employers reached out to the agency, who responded to the request, and if the decisions were consistent. DePasquale also said his office will determine if the waiver process needs to reopen out of fairness
 
@@ -65,7 +62,6 @@ A spokesperson for Wolf, Lyndsay Kensinger, said the administration supports an 
 “If the Senate takes the unfortunate and counterproductive step of issuing a subpoena, the Wolf administration will review it and determine next steps,” she said Thursday. “The administration has committed to disclosing information about the business closure and exemption process, and recently provided testimony to the Senate regarding that forthcoming disclosure.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
-
 
 Wolf told reporters last week that his administration was working to “wrap up” the waiver process, which closed to new applications on April 3. 
 
