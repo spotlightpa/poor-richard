@@ -64,7 +64,7 @@ export default ({ showDate = false }) => {
     click() {
       this.load();
       this.hasClicked = true;
-      this.counter += 10;
+      this.counter += 25;
     },
 
     analytics($event) {
