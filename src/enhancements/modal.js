@@ -1,5 +1,5 @@
-import { loadDate, storeDate } from "./dom-utils.js";
-import { sendGAEvent } from "./google-analytics.js";
+import { loadDate, storeDate } from "../utils/dom-utils.js";
+import { sendGAEvent } from "../utils/google-analytics.js";
 
 export default function modal() {
   const onTestPage = !!window.location.href.match(/debug/);

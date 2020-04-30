@@ -5,11 +5,11 @@ window.deferLoadingAlpine = (cb) => {
 
 import "alpinejs";
 
-import readmore from "./read-more.js";
-import mostPopular from "./most-popular.js";
-import embedList from "./embed-list.js";
-import modal from "./modal.js";
-import sticky from "./sticky.js";
+import readmore from "../enhancements/read-more.js";
+import mostPopular from "../enhancements/most-popular.js";
+import embedList from "../enhancements/embed-list.js";
+import modal from "../enhancements/modal.js";
+import sticky from "../enhancements/sticky.js";
 
 window.spl = Object.assign({}, window.spl, {
   readmore,

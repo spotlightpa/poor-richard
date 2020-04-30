@@ -1,5 +1,5 @@
-import { sendGAEvent } from "./google-analytics.js";
-import imgproxy from "./imgproxy-url.js";
+import { sendGAEvent } from "../utils/google-analytics.js";
+import imgproxy from "../utils/imgproxy-url.js";
 
 function toStory(data, { width, height }) {
   return {

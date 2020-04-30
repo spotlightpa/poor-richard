@@ -1,5 +1,5 @@
-import { sendGAEvent } from "./google-analytics.js";
-import randomChoice from "./random-choice.js";
+import { sendGAEvent } from "../utils/google-analytics.js";
+import randomChoice from "../utils/random-choice.js";
 
 export default function sticky() {
   return {
