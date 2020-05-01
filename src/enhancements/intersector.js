@@ -3,9 +3,11 @@ export default function intersector(eventName, { once = true } = {}) {
     eventName,
     once,
     observer: null,
-    hasFired: false,
 
     init() {
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
       this.observer = new IntersectionObserver((entries, observer) => {
         this.callback(entries, observer);
       });
