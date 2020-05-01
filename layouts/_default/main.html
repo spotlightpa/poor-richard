@@ -1,5 +1,7 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
+{{ partial "promo-banner.html" . }}
+
 <section class="section">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">

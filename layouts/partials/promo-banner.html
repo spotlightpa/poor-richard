@@ -1,0 +1,20 @@
+{{ $imgs := slice }}
+{{ range seq 1 4 }}
+  {{ $imgName := printf "/img/promo/gt-b-%d.png" . }}
+  {{ $img := resources.Get $imgName | fingerprint }}
+  {{ $imgs = $imgs | append $img.RelPermalink }}
+{{ end }}
+
+<section class="has-margin-top-thick has-radius-padding has-text-centered">
+  <p class="">
+    <a
+      @click.capture="analytics($event)"
+      href="/donate/"
+    ><img
+      data-promo-images="{{ $imgs | jsonify }}"
+      src="{{ index $imgs 0 }}"
+      width="468"
+      height="120"
+    ></a>
+  </p>
+</section>

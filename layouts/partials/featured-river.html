@@ -4,7 +4,7 @@
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := "" }}
-{{ if $hasPromo }}
+{{ if false }}
   {{ $promo := .Param "promo-text" | markdownify }}
   {{ $link := .Param "promo-link" }}
   {{ $gaEvent := dict "eventCategory" "Promo Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
@@ -21,6 +21,7 @@
   </section>
   {{ $marginClass = "has-margin-top-negative" }}
 {{ end }}
+{{ partial "promo-banner.html" . }}
 
 <section class="section {{ $marginClass }}" data-ga-action="Homepage link">
   <div
