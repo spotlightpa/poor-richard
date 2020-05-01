@@ -31,6 +31,8 @@ export default function sticky() {
         eventCategory: "Sticky Banner",
         eventAction: "Show sticky banner",
       });
+      const transitionLength = 500;
+      window.setTimeout(() => this.$refs.close.focus(), transitionLength);
     },
 
     close() {
