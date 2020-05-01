@@ -6,6 +6,7 @@ export default function sticky() {
     isOpen: false,
     images: [],
     _imageURL: "",
+    oldFocus: null,
 
     init() {
       this.images = JSON.parse(this.$el.dataset.images);
@@ -31,12 +32,14 @@ export default function sticky() {
         eventCategory: "Sticky Banner",
         eventAction: "Show sticky banner",
       });
+      this.oldFocus = document.activeElement;
       const transitionLength = 500;
       window.setTimeout(() => this.$refs.close.focus(), transitionLength);
     },
 
     close() {
       this.isOpen = false;
+      this.oldFocus.focus();
       sendGAEvent({
         eventCategory: "Sticky Banner",
         eventAction: "Dismiss sticky banner",
