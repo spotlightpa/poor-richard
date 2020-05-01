@@ -438,9 +438,11 @@ $margin-sizes: (
   -ms-flex-preferred-size: auto; /* IE 11 fix */
 }
 
+/*! purgecss start ignore */
 [x-cloak] {
   display: none;
 }
+/*! purgecss end ignore */
 
 .dropcap {
   font-size: 6.5rem;
