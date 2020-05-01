@@ -1,5 +1,5 @@
 {{ $link := .Param "banner-link" }}
-{{ $gaEvent := dict "eventCategory" "Banner Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
+{{ $gaEvent := dict "eventCategory" "Internal Link" "eventAction" "Site-wide Banner" "eventLabel" $link "transport" "beacon" }}
 
 <section class="has-background-warning has-radius-padding">
   {{ if $link }}
