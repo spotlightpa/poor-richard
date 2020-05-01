@@ -5,6 +5,7 @@ export default function sticky() {
   return {
     isOpen: false,
     images: [],
+    _imageURL: "",
 
     init() {
       this.images = JSON.parse(this.$el.dataset.images);
@@ -14,7 +15,10 @@ export default function sticky() {
       if (!this.images.length) {
         return "";
       }
-      return randomChoice(this.images);
+      if (!this._imageURL) {
+        this._imageURL = randomChoice(this.images);
+      }
+      return this._imageURL;
     },
 
     get stickyClass() {
