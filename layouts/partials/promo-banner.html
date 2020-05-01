@@ -6,10 +6,10 @@
 {{ end }}
 
 <section class="has-margin-top-thick has-radius-padding has-text-centered">
-  <p class="">
+  <p>
     <a
-      @click.capture="analytics($event)"
       href="/donate/"
+      data-ga-event='{ "eventCategory": "Internal Link", "eventAction": "Promo banner", "eventLabel": "/donate/", "transport": "beacon" }'
     ><img
       data-promo-images="{{ $imgs | jsonify }}"
       src="{{ index $imgs 0 }}"
