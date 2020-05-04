@@ -5,8 +5,15 @@
   {{ $imgs = $imgs | append $img.RelPermalink }}
 {{ end }}
 
-<section class="has-margin-top-thick has-radius-padding has-text-centered">
-  <p>
+{{ $link := .Param "banner-link" }}
+
+<section class="has-margin-top has-radius-padding has-text-centered">
+  <p class="is-size-3-fullscreen is-size-4 has-text-centered">
+    <a href="{{ $link }}" class="has-text-black hover-underline">
+      {{ .Param "banner" | markdownify }}
+    </a>
+  </p>
+  <p class="has-margin-top">
     <a
       href="/donate/"
       data-ga-event='{ "eventCategory": "Internal Link", "eventAction": "Promo banner", "eventLabel": "/donate/", "transport": "beacon" }'
