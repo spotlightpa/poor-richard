@@ -153,7 +153,7 @@ export default {
         class="title is-spaced has-text-black is-uppercase"
         :class="sizeTitle"
       >
-        Join Us
+        Double Your&nbsp;Gift
       </h1>
 
       <p class="is-size-3 is-size-4-mobile">
@@ -167,8 +167,9 @@ export default {
       />
 
       <p class="is-size-3 is-size-4-mobile">
-        Help us continue to aggressively cover Pennsylvania’s response to the
-        coronavirus and how it’s affecting communities in the state.
+        Donate today and your gift will be matched dollar-for-dollar in honor of
+        #GivingTuesdayNow. Monthly donations will be matched at their full-year
+        value. Donate $15/month today and unlock an extra $180 for Spotlight PA.
       </p>
     </hgroup>
 
