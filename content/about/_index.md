@@ -6,6 +6,9 @@ description = "Spotlight PA: Find Pennsylvania news and investigations about sta
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 type = "about-page"
+
+[cascade]
+  modal-exclude = true
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
