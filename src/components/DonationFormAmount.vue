@@ -74,10 +74,13 @@ export default {
   mounted() {
     // Sub-mobile responsive changes
     if (window.innerWidth < 360) {
-      this.sizeTitle = "is-size-1";
+      this.sizeTitle = "is-size-2";
       this.sizeButton = "";
     } else if (window.innerWidth < 413) {
+      this.sizeTitle = "is-size-1";
       this.sizeButton = "is-medium";
+    } else if (window.innerWidth < 480) {
+      this.sizeTitle = "is-size-1";
     }
   },
   methods: {
