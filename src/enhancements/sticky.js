@@ -10,6 +10,8 @@ export default function sticky() {
 
     init() {
       this.images = JSON.parse(this.$el.dataset.images);
+      let img = new Image();
+      img.src = this.imageURL;
     },
 
     get imageURL() {
