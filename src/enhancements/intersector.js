@@ -1,3 +1,5 @@
+import sendEvent from "../utils/send-event.js";
+
 export default function intersector(eventName, { once = true } = {}) {
   return {
     eventName,
@@ -15,15 +17,12 @@ export default function intersector(eventName, { once = true } = {}) {
     },
 
     callback(entries) {
-      if (Array.from(entries).some((entry) => entry.isIntersecting)) {
-        let event = new CustomEvent(this.eventName, {
-          detail: entries,
-          bubbles: true,
-        });
-        window.dispatchEvent(event);
-        if (this.once) {
-          this.observer.disconnect();
-        }
+      if (!Array.from(entries).some((entry) => entry.isIntersecting)) {
+        return;
+      }
+      sendEvent({ el: this.$el, name: this.eventName, detail: entries });
+      if (this.once) {
+        this.observer.disconnect();
       }
     },
   };
