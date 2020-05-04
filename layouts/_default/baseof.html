@@ -31,7 +31,6 @@
 </head>
 <body
   data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
-  {{with .Param "modal-exclude" }}data-modal-exclude="1"{{end}}
 >
   {{ block "svg-resources" . }}{{ partialCached "svg-resources.html" . }}{{ end }}
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
@@ -51,7 +50,9 @@
     {{ block "extra-footer" . }}{{ end }}
   </footer>
   {{ block "modal" . }}
-    {{ partial "modal-sticky.html" . }}
+    {{ if .Param "modal-exclude" | not }}
+      {{ partial "modal-sticky.html" . }}
+    {{ end }}
   {{ end }}
   {{ partial "ld-json.html" . }}
 </body>

@@ -60,10 +60,6 @@ export default function modal() {
       if (loadDate(FROM_MC_KEY)) {
         showModalNewsletter = false;
       }
-      // And it's not excluded from the page
-      if (document.body.dataset.modalExclude) {
-        showModalNewsletter = false;
-      }
       // Or we're just testing...
       if (onTestNewsletterPage) {
         showModalNewsletter = true;
