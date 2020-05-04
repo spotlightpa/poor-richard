@@ -7,7 +7,10 @@
 
 {{ $link := .Param "banner-link" }}
 
-<section class="has-margin-top has-radius-padding has-text-centered">
+<section
+  class="has-margin-top has-radius-padding has-text-centered"
+  style="max-width: 1024px; margin-left: auto; margin-right: auto;"
+>
   <p class="is-size-3-fullscreen is-size-4 has-text-centered">
     <a href="{{ $link }}" class="has-text-black hover-underline">
       {{ .Param "banner" | markdownify }}
