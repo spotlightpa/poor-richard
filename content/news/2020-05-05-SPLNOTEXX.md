@@ -37,7 +37,7 @@ From unemployment backlogs to nursing homes left without oversight, fears about 
 
 Today, we’re launching a 3-day campaign to <a href="https://www.spotlightpa.org/donate" target=_blank>raise $10,000 toward making Spotlight PA a permanent fixture</a> in our state. <b>All donations made from May 5 to May 7 will be DOUBLED</b>, thanks to a generous matching gift from The Lenfest Institute for Journalism.
 
-<a href="https://www.spotlightpa.org/donate" target=_blank>Make a sustaining gift of $15/month now</a>, or just 50 cents a day, you will:
+<a href="https://www.spotlightpa.org/donate" target=_blank>Make a sustaining gift of $15/month now</a>, or just 50 cents a day, and you will:
 
 1. <b>EMPOWER OUR COMMUNITIES:</b> Spotlight PA is unlike any news organization in the state. We’re funded by readers, and because of that support, we share our high-quality journalism at no charge to ensure every community gets the information it needs.
 
@@ -45,7 +45,7 @@ Today, we’re launching a 3-day campaign to <a href="https://www.spotlightpa.or
 
 3. <b>FIGHT FOR EQUITY:</b> Every day, our journalists are ensuring the state government is working for all Pennsylvanians, and not just special interests and the well-connected. Spotlight PA focuses especially on vulnerable or underserved communities.
 
-<b>4.</b> <b>SUPPORT SOLUTIONS: </b>Spotlight PA’s investigative journalism doesn’t just point out problems, it also offers potential fixes. Rather than turn a quick story and move on, we dig in and scour the state and country for examples of solutions that could work here.
+4. <b>SUPPORT SOLUTIONS: </b>Spotlight PA’s investigative journalism doesn’t just point out problems, it also offers potential fixes. Rather than turn a quick story and move on, we dig in and scour the state and country for examples of solutions that could work here.
 
 5. <b>GET RESULTS: </b>Spotlight PA’s coronavirus coverage has influenced the state's approach to business waivers, virus statistics, workers' compensation rules, Spanish-language access and more. Before the crisis, our work spurred legislative proposals for reform and prompted policy changes in the House, the State Police and at the state’s largest community college.
 
