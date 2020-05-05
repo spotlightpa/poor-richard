@@ -2,7 +2,7 @@
 arc-id = "PWAOSI6DXZDRFOZ5VZVOIFSXSQ"
 internal-id = "SPLNOTEXX"
 internal-budget = ""
-image = "2020/05/01fb0tf0vv69dx75.png"
+image = "2020/05/01fb2qjw7tx3pt80.png"
 image-description = "From May 5-7, your gift to support Spotlight PA's essential public-service journalism will be DOUBLED."
 image-caption = ""
 image-credit = "STAFF / Spotlight PA"
