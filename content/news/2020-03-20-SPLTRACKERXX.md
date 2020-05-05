@@ -26,5 +26,6 @@
 	"series": [],
 	"subtitle": "",
 	"suppress-title": true,
-	"modal-exclude": true
+	"modal-exclude": true,
+	"weight": 1
 }
