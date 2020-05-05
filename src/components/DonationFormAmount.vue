@@ -172,7 +172,8 @@ export default {
       <p class="is-size-3 is-size-4-mobile">
         Donate today and your gift will be matched dollar-for-dollar in honor of
         #GivingTuesdayNow. Monthly donations will be matched at their full-year
-        value. Donate $15/month today and unlock an extra $180 for Spotlight PA.
+        value. Donate $15/month today and unlock an extra $180 for
+        Spotlight&nbsp;PA.
       </p>
     </hgroup>
 
