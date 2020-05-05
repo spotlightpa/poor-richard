@@ -4,7 +4,7 @@
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := "" }}
-{{ if $hasPromo }}
+{{ if false }}
   {{ $promo := .Param "promo-text" | markdownify }}
   {{ $link := .Param "promo-link" }}
   {{ $gaEvent := dict "eventCategory" "Promo Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
@@ -21,6 +21,7 @@
   </section>
   {{ $marginClass = "has-margin-top-negative" }}
 {{ end }}
+{{ partial "promo-banner.html" . }}
 
 <section class="section {{ $marginClass }}" data-ga-action="Homepage link">
   <div
@@ -29,6 +30,12 @@
   >
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile-featured.html" $featuredStory }}
+
+      <div
+        x-data="spl.intersector('open-sticky')"
+        x-init="init()"
+      ></div>
+
       <div class="tile">
         {{ range $page := first 3 $pages }}
           <div class="tile is-parent is-4 has-margin-top-negative">
@@ -38,6 +45,7 @@
           </div>
         {{ end }}
       </div>
+
       <div class="tile">
         <div class="tile is-2"></div>
         <div class="tile is-parent is-8">

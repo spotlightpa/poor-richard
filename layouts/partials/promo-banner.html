@@ -1,0 +1,30 @@
+{{ $imgs := slice }}
+{{ range seq 1 4 }}
+  {{ $imgName := printf "/img/promo/gt-b-%d.png" . }}
+  {{ $img := resources.Get $imgName | fingerprint }}
+  {{ $imgs = $imgs | append $img.RelPermalink }}
+{{ end }}
+
+{{ $link := .Param "banner-link" }}
+
+<section
+  class="has-margin-top has-radius-padding has-text-centered"
+  style="max-width: 1024px; margin-left: auto; margin-right: auto;"
+>
+  <p class="is-size-3-fullscreen is-size-4 has-text-centered">
+    <a href="{{ $link }}" class="has-text-black hover-underline">
+      {{ .Param "banner" | markdownify }}
+    </a>
+  </p>
+  <p class="has-margin-top">
+    <a
+      href="/donate/"
+      data-ga-event='{ "eventCategory": "Internal Link", "eventAction": "Promo banner", "eventLabel": "/donate/", "transport": "beacon" }'
+    ><img
+      data-promo-images="{{ $imgs | jsonify }}"
+      src="{{ index $imgs 0 }}"
+      width="728"
+      height="90"
+    ></a>
+  </p>
+</section>

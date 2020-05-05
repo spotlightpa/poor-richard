@@ -1,6 +1,6 @@
 import { each, on, onLoad } from "../utils/dom-utils.js";
-import { addModal } from "../utils/modal.js";
 import { addSocialButtonListeners } from "../utils/social.js";
+import { rotatePromoImages } from "../utils/promo.js";
 import { addGAListeners } from "../utils/google-analytics.js";
 
 function createListeners() {
@@ -16,7 +16,7 @@ function createListeners() {
 
   addGAListeners();
   addSocialButtonListeners();
-  addModal();
+  rotatePromoImages();
 
   try {
     import("../utils/enhancements.js").then((module) => {
