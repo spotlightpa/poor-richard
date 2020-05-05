@@ -10,6 +10,7 @@
 <section
   class="has-margin-top has-radius-padding has-text-centered"
   style="max-width: 1024px; margin-left: auto; margin-right: auto;"
+  data-ga-action="Promo banner"
 >
   <p class="is-size-3-fullscreen is-size-4 has-text-centered">
     <a href="{{ $link }}" class="has-text-black underline">
@@ -19,7 +20,6 @@
   <p class="has-margin-top">
     <a
       href="/donate/"
-      data-ga-event='{ "eventCategory": "Internal Link", "eventAction": "Promo banner", "eventLabel": "/donate/", "transport": "beacon" }'
     ><img
       data-promo-images="{{ $imgs | jsonify }}"
       src="{{ index $imgs 0 }}"
