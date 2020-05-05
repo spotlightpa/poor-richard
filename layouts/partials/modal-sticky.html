@@ -8,6 +8,7 @@
   class="window-sticker"
   :class="stickyClass"
   data-images='{{ $imgs|jsonify }}'
+  data-ga-action="Sticky Banner"
   x-data="spl.sticky()"
   x-init="init()"
   x-show="isOpen"
@@ -26,7 +27,7 @@
     ></button>
     <a
       class="window-sticker-content"
-      @click.capture="analytics($event)"
+      @click="analytics($event)"
       href="/donate/"
     ><img
       :src="imageURL"

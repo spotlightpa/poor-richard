@@ -49,16 +49,10 @@ export default function sticky() {
     },
 
     analytics($event) {
-      let { href = "" } = $event.target;
+      let { href = "" } = $event.currentTarget;
       sendGAEvent({
         eventCategory: "Sticky Banner",
         eventAction: "click",
-        eventLabel: href,
-        transport: "beacon",
-      });
-      sendGAEvent({
-        eventCategory: "Internal Link",
-        eventAction: "Sticky Banner",
         eventLabel: href,
         transport: "beacon",
       });
