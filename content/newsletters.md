@@ -12,23 +12,3 @@ Sign up for **The Investigator**, Spotlight PA's free weekly newsletter with exc
 **The Investigator** is delivered straight to your inbox every Thursday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts, or check your spam folder and mark it as "not spam."
 
 {{<newsletter-form>}}
-
-## Archives
-
-* [Thursday, April 23, 2020](http://eepurl.com/g0PdLH)
-* [Thursday, April 16, 2020](http://eepurl.com/gZQagD)
-* [Thursday, April 9, 2020](http://eepurl.com/gYZmWj)
-* [Thursday, April 2, 2020](http://eepurl.com/gXSJdf)
-* [Thursday, March 26, 2020](http://eepurl.com/gXhKSL)
-* [Thursday, March 19, 2020](http://eepurl.com/gWyWUX)
-* [Thursday, March 12, 2020](http://eepurl.com/gVR1YH)
-* [Thursday, March 5, 2020](http://eepurl.com/gUP88v)
-* [Thursday, Feb. 27, 2020](http://eepurl.com/gUdV7f)
-* [Thursday, Feb. 20, 2020](http://eepurl.com/gTstvz)
-* [Thursday, Feb. 13, 2020](http://eepurl.com/gSgGwv)
-* [Thursday, Feb. 6, 2020](http://eepurl.com/gR9IP1)
-* [Thursday, Jan. 30, 2020](http://eepurl.com/gRdofT)
-* [Thursday, Jan. 23, 2020](http://eepurl.com/gP8fc9)
-* [Thursday, Jan. 16, 2020](http://eepurl.com/gPlbPb)
-* [Thursday, Jan. 9, 2020](http://eepurl.com/gPd5PP)
-* [Thursday, Jan. 2, 2020](http://eepurl.com/gM-A_9)
