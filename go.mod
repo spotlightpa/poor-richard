@@ -5,6 +5,7 @@ go 1.14
 require (
 	github.com/aws/aws-lambda-go v1.16.0 // indirect
 	github.com/carlmjohnson/exitcode v0.0.4
+	github.com/carlmjohnson/feed2json v0.0.7
 	github.com/carlmjohnson/flagext v0.0.11
 	github.com/getsentry/sentry-go v0.6.0
 	github.com/peterbourgon/ff/v2 v2.0.0

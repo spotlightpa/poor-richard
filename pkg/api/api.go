@@ -13,6 +13,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/carlmjohnson/feed2json"
 	"github.com/carlmjohnson/flagext"
 	"github.com/getsentry/sentry-go"
 	sentryhttp "github.com/getsentry/sentry-go/http"
@@ -132,9 +133,17 @@ func (app *appEnv) initSentry(dsn string, l *log.Logger) error {
 	})
 }
 
+const mailchimpFeed = "https://us3.campaign-archive.com/feed?u=4f6d92afd9b3de3ddb48714b9&id=0466df5ab5"
+
 func (app *appEnv) routes() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/most-popular", app.getMostPopular)
+	mux.Handle(
+		"/api/newsletter.json",
+		feed2json.Handler(
+			feed2json.StaticURLInjector(mailchimpFeed),
+			nil, nil, app.Logger.Printf, app.cacheControlMiddleware))
+
 	return app.versionMiddleware(mux)
 }
 
@@ -148,4 +157,13 @@ func (app *appEnv) googleClient(ctx context.Context) *http.Client {
 		}
 	}
 	return app.googleHTTPClient
+}
+
+func (app *appEnv) cacheControlMiddleware(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", "public, max-age=900") // 15 minutes
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+
+		h.ServeHTTP(w, r)
+	})
 }
