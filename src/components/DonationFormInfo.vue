@@ -50,6 +50,18 @@ export default {
       immediate: true,
     },
   },
+  methods: {
+    nameValidator(name) {
+      if (!this.hasSetDonationName) {
+        return "";
+      }
+      name = name.trim();
+      if (/\S+\s[^\s.]{2,}/.test(name)) {
+        return "";
+      }
+      return "Name must include at least first initial plus last name.";
+    },
+  },
 };
 </script>
 
@@ -164,6 +176,7 @@ export default {
       autocomplete="name"
       :required="true"
       :max-length="500"
+      :validator="nameValidator"
     ></BulmaFieldInput>
 
     <BulmaField
