@@ -80,6 +80,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Colleen Brenneman 
 * Merrill & Nancy Brenner
 * John Bricker
+* Joseph Brogan
 * Skip Brommer
 * D. Brooks
 * Gay Brown
@@ -166,6 +167,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Richard Donofry
 * Paul Downs 
 * Earl Drumheiser
+* Franklin Duddy
 * Stephen Duncan
 * Edwin Dunckley
 * Rebecca J. Durante
@@ -209,6 +211,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Leroy Forney
 * Sara Forster
 * Nancy Fortmann
+* Robert Frable
 * Daniel Fraccica
 * Susannah Frame
 * Barbara Francis
@@ -500,6 +503,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Noah Price
 * Lois Prytherch
 * Harry Rambo
+* J. Randolph
 * Theresa M. Rang
 * Mark Raymond
 * Luke Reed
@@ -508,6 +512,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Philip Reilly
 * Gloria Reisman
 * John Rhoades
+* Stacy Richards
 * Ralph Riedel
 * Eric Riese
 * David Robertson
@@ -563,15 +568,18 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kimberley Shore
 * Barry Shutt
 * Darrin Silbaugh
+* Alan Silberman
 * Ira Silberman & Marilyn Kutler
 * Claudia H. Siegel
 * Heather Simmons
 * Josh Singer
+* Emily Skopov
 * Ellen L. Sleeter
 * Carol L. Smith
 * Michael Smith
 * Robert Smith
 * Sallie K. Smith
+* Tieshka Smith
 * Lucas Smolcic Larson
 * Judith E. Smullen
 * Mariana Sorensen
@@ -622,6 +630,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Walter & Esther Underhill
 * Elizabeth Useem
 * Jane Valdes-Dapena
+* Heather Valudes
 * Harold Vandegrift
 * Dennis Verona
 * Robert F. Vickery
