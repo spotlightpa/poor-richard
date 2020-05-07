@@ -1,7 +1,5 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
-{{ partial "promo-banner.html" . }}
-
 <section class="section">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
@@ -70,10 +68,6 @@
         class="block"
         data-ga-action="Main content"
       >
-        <div
-          x-data="spl.intersector('open-sticky')"
-          x-init="init()"
-        ></div>
         <div class="content">
           {{ .Content }}
         </div>
