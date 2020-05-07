@@ -92,9 +92,10 @@
       <div class="has-text-centered">
         <a
           class="has-text-grey hover-underline"
+          data-ga-event='{"eventCategory": "Modal interaction", "eventAction": "Dismiss modal newsletter"}'
           aria-label="close"
           tabindex="0"
-          @click="close"
+          @click="close(false)"
         >
           No thanks
         </a>
