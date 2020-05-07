@@ -51,7 +51,7 @@
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ partial "modal-sticky.html" . }}
+      {{ partial "modal-newsletter.html" . }}
     {{ end }}
   {{ end }}
   {{ partial "ld-json.html" . }}
