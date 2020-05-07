@@ -113,6 +113,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Jordan Clark
 * Rebecca Clark 
 * Dr. Dane S. Claussen
+* Francisco Cleaves
 * Jeff Cogshall
 * Milton Cohen
 * Sean Collins
@@ -192,6 +193,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * B. Faulstick
 * John Feather Jr.
 * T. Fehr
+* Lawrence Felzer
 * Adelaide Ferguson & Ronald Cahan
 * Art Feinberg
 * Winifred J. Fessenbecker
@@ -247,23 +249,28 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Brent Groce
 * Maureen Grosheider
 * Danielle Gross
+* Donald Gruber
 * Mark Gudalis
 * Gregory Guise
 * Scott Guiser
 * George E. Gunning
 * Maya Gutierrez
+* Jerrell Habegger
 * Francis Hackett
 * Frank Hadden
 * Beverly Hahn
 * Robert Haines
 * David Hakes
 * Paul Hale
+* C. Halstead
 * B.A. Hamilton
 * Karen Hamm
 * Mimi Hanks-Bell
 * Don Hannum
+* Margaret Harris
 * Gerry Hartzel
 * Dan Hartzell
+* Catherine Hastings
 * Valerie Hayes
 * Cam & Bob Hays 
 * David He
@@ -291,6 +298,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Avram Hornik
 * Claudia & Harvey Horowitz
 * Kristen Houser
+* Feather Houstoun
 * Kate Howard
 * Stephen R. Hughes
 * Richard W. Hurst
@@ -371,6 +379,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Martin Laufe
 * B. Lauridsen & G. Harke
 * Lora Lavin
+* Cindy Lawn
 * Patricia Leach
 * Irwin Lederstein
 * Jamie Lemon & Steve Cline
@@ -391,6 +400,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * James J. Maguire
 * Ed Mahon
 * Lelah Marie
+* David E. Marschka
 * David Martens/The York Dispatch
 * Martina Martin
 * Meg Martin & Peter Cox
@@ -405,6 +415,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Blaine McCleary
 * Fletcher McClellan
 * Mary McComsey
+* Nina McCullough
 * Tim McDaniel
 * Ann McEnery
 * Elizabeth A. McGee
@@ -433,6 +444,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Jacqueline Monturano
 * Lee Mooney
 * Ryan Morden
+* Michael Morgan
 * Judy Morneweck
 * Jackie Morrill
 * Jackie Morrill & Mike Donahue
@@ -443,19 +455,22 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Toni Moyer
 * William Mulherin
 * Charlotte & John Mulvihill
-* Holly Myers 
+* Holly Myers
+* Jonathan Naser 
 * Kenneth R. Nealon
 * Steve Neas
 * James Neff
 * B. Nelson
 * M. Noel
+* Maria Centenera Nonemaker
 * Steve Noone
 * Marty O’Brien
 * Robert O'Donnell
 * Gerald O'Hara
 * Maddi O'Neill
+* Kari Orchard
 * Lynda Orfanelli
-* Ellen Ormond
+* Ellen M. Ormond
 * Jesse N. Otto
 * Dennis Owens
 * Ronald Ozio
@@ -480,6 +495,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Rick Piper
 * Donald Powell
 * Laura Powers
+* Shirley Prasko
 * G. Preuninger
 * Noah Price
 * Lois Prytherch
@@ -527,6 +543,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Peter Schnabel
 * Jennifer Schnore
 * Carl Schoenberg & Susan York
+* Douglas Schofield
 * Paul Schraeder
 * Susan Schrand
 * Barbara Scott
@@ -537,6 +554,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Bradley Seltzer
 * Kristin Senecal
 * John Senko
+* V. Sethi
 * Milton Shapiro
 * David S. Share
 * Michael Sheketoff
@@ -551,6 +569,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Josh Singer
 * Ellen L. Sleeter
 * Carol L. Smith
+* Michael Smith
 * Robert Smith
 * Sallie K. Smith
 * Lucas Smolcic Larson
@@ -598,12 +617,14 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Thomas L. Toth
 * Debbie Trudeau
 * Margaret Turcich
+* Cynthia Tyler
 * Walter C. Uhler
 * Walter & Esther Underhill
 * Elizabeth Useem
 * Jane Valdes-Dapena
 * Harold Vandegrift
 * Dennis Verona
+* Robert F. Vickery
 * Joseph C. Vignola
 * Fred Vodde
 * Fritz Walker
@@ -623,6 +644,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Gerald F. Werkheiser
 * Judy Wertheimer
 * Thomas Whalen
+* L. Whelan
 * Rhonda White
 * Kathleen F. Weidner
 * Talia Wiener
