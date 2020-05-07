@@ -400,6 +400,7 @@ $margin-sizes: (
   }
 }
 
+/*! purgecss start ignore */
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.5s ease;
@@ -409,6 +410,7 @@ $margin-sizes: (
 .fade-leave-to {
   opacity: 0;
 }
+/*! purgecss end ignore */
 
 .will-expand {
   will-change: height;
