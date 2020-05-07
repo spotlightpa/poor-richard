@@ -57,15 +57,17 @@ export default function modal() {
       });
     },
 
-    close() {
+    close(sendEvent=true) {
       this.oldFocus.focus();
       document.body.parentElement.classList.remove("is-clipped");
 
       this.isOpen = false;
-      sendGAEvent({
-        eventCategory: "Modal interaction",
-        eventAction: `Dismiss modal newsletter`,
-      });
+      if (sendEvent) {
+        sendGAEvent({
+          eventCategory: "Modal interaction",
+          eventAction: "Dismiss modal newsletter",
+        });
+      }
     },
   };
 }
