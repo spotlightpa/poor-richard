@@ -1,0 +1,8 @@
+{{ $stories := slice }}
+{{ range index site.Data.editorsPicks . }}
+  {{ with site.GetPage . }}
+    {{ $stories = $stories | append . }}
+  {{ end }}
+{{ end }}
+
+{{ return $stories }}
