@@ -7,7 +7,7 @@
       {{ range sort .Site.Data.authors "lastName" }}
         {{ $nameID := urlize .name }}
         {{ $articlesListLink := "" }}
-        {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}
+        {{ with $pages := site.Taxonomies.authors.Get $nameID }}
           {{ $articlesListLink = $pages.Page.RelPermalink }}
         {{ end }}
         {{ if .active }}
