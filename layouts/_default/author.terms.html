@@ -10,7 +10,7 @@
         {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
         {{ $img := resources.GetMatch $imgRes }}
         {{ $authorURL := .RelPermalink }}
-        {{ $author := index $.Site.Data.authors $name }}
+        {{ $author := index site.Data.authors $name }}
         <div class="level">
           <div class="level-left">
             <div class="level-item">

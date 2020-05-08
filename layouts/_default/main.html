@@ -88,11 +88,11 @@
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
             {{ $img := resources.GetMatch $imgRes }}
-            {{ $author := index $.Site.Data.authors $name }}
+            {{ $author := index site.Data.authors $name }}
             {{ $nameID := urlize . }}
             {{ $authorURL := "" }}
             {{ if $author.active }}
-              {{ with $pages := $.Site.Taxonomies.authors.Get $nameID }}
+              {{ with $pages := site.Taxonomies.authors.Get $nameID }}
                 {{ $authorURL = $pages.Page.RelPermalink }}
               {{ end }}
             {{ end }}

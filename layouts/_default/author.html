@@ -18,7 +18,7 @@
           </div>
         </header>
 
-        {{ $author := index $.Site.Data.authors .Title }}
+        {{ $author := index site.Data.authors .Title }}
         {{ if $author.active }}
           <div class="content">
             {{ $author.content|markdownify }}
