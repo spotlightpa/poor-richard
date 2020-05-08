@@ -71,16 +71,17 @@
           {{ $featuredParams.blurb }}
         </h2>
       {{ end }}
-      {{ $seriesArticles := slice }}
-      {{ with $series := $featuredParams.series }}
-        {{ $pages := $series.Pages }}
-        {{ $seriesArticles = where $pages ".Permalink" "ne" $featured.Permalink }}
-        {{ $seriesArticles = first 2 $seriesArticles }}
+
+      {{ $subfeatures := partial "get-picks" "subfeatures" }}
+      {{ $subfeatures = $subfeatures | complement (slice $featured) }}
+      {{ if site.Data.editorsPicks.limitSubfeatures }}
+        {{ $limit := site.Data.editorsPicks.subfeaturesLimit }}
+        {{ $subfeatures = last $limit $subfeatures }}
       {{ end }}
 
-      {{ if gt (len $seriesArticles) 0 }}
+      {{ if gt (len $subfeatures) 0 }}
         <ul class="is-size-5 related" data-ga-action="Homepage top feature related">
-          {{ range $seriesArticles }}
+          {{ range $subfeatures }}
             <li>
               <a href="{{ .RelPermalink }}" class="has-text-black hover-underline">
                 {{ .LinkTitle }}

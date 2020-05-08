@@ -1,6 +1,14 @@
-{{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $featuredStory := where $news.RegularPages ".Params.suppress-featured" "!=" true | first 1 }}
-{{ $pages := $news.RegularPages | complement $featuredStory }}
+{{ $news := site.GetPage "/news/_index.md" }}
+{{ $featuredStories := partial "get-picks" "featuredStories" }}
+{{ if lt (len $featuredStories) 1 }}
+  {{ $featuredStories = first 1 $news.RegularPages }}
+{{ end }}
+{{ $featuredStories = last 1 $featuredStories }}
+{{ $topSlots := partial "get-picks" "topSlots" }}
+
+{{ $pages := $featuredStories | append $topSlots }}
+{{ $pages = union $pages $news.RegularPages }}
+{{ $pages = after 1 $pages }}
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := "" }}
@@ -15,7 +23,7 @@
     x-data="spl.readmore({ showDate: false })"
   >
     <div class="tile is-ancestor is-vertical">
-      {{ partial "tile-featured.html" $featuredStory }}
+      {{ partial "tile-featured.html" $featuredStories }}
 
       <div class="tile">
         {{ range $page := first 3 $pages }}
