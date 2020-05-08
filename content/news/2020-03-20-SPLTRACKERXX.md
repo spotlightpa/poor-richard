@@ -1,8 +1,8 @@
 {
 	"type": "dashboard",
-	"image": "external/smnxqf8220549kwdr433bv42cc.jpeg",
+	"image": "external/9h1eadb80ay1w6d4dk98fhpn38.jpeg",
 	"image-description": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",
-	"image-credit": "TIM TAI / Philadelphia Inquirer",
+	"image-credit": "DAN NOTT / For Spotlight PA",
 	"image-size": "hidden",
 	"published": "2020-03-20T04:00:00.000Z",
 	"slug": "pa-coronavirus-updates-cases-map-live-tracker",
@@ -26,6 +26,5 @@
 	"series": [],
 	"subtitle": "",
 	"suppress-title": true,
-	"modal-exclude": true,
-	"weight": 1
+	"modal-exclude": true
 }
