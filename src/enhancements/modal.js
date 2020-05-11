@@ -57,7 +57,7 @@ export default function modal() {
       });
     },
 
-    close(sendEvent=true) {
+    close(sendEvent = true) {
       this.oldFocus.focus();
       document.body.parentElement.classList.remove("is-clipped");
 
