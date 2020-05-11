@@ -59,7 +59,7 @@ export default {
       if (/\S+\s[^\s.]{2,}/.test(name)) {
         return "";
       }
-      return "Name must include at least first initial plus last name.";
+      return "Please list either your full name or your first initial and last name. If no acceptable name is provided, we will default to using the name on your credit card.";
     },
   },
 };
