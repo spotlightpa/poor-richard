@@ -1,6 +1,13 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
-<section class="section">
+{{ $hasPromo := .Param "promo-active" }}
+{{ $marginClass := "" }}
+{{ if $hasPromo }}
+  {{ partialCached "promo.html" . }}
+  {{ $marginClass = "has-margin-top-negative" }}
+{{ end }}
+
+<section class="section {{ $marginClass }}">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
       {{ if $params.showTitle }}
