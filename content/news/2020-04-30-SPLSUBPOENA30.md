@@ -17,7 +17,7 @@ description = "The state’s auditor general said he has begun an audit into the
 blurb = "The state’s auditor general said he has begun an audit into the controversial process, but won’t release the names of businesses that received a coveted waiver."
 kicker = "Coronavirus"
 topics = ["Coronavirus"]
-series = ["Top News"]
+series = []
 linktitle = ""
 suppress-featured = false
 weight = 0
@@ -33,7 +33,7 @@ HARRISBURG — Republicans in the state legislature have subpoenaed the Wolf adm
 
 The subpoena — authorized Thursday by a Senate committee and signed by Sen. Mike Regan (R., York) — directs Gov. Tom Wolf and Department of Community and Economic Development Secretary Dennis Davin to produce the documents by May 8.
 
-The Wolf administration has said it will release information on the process, but Davin last week declined to provide a timeframe. 
+The Wolf administration has said it will release information on the process, but Davin last week declined to provide a timeframe.
 
 "This allowed the public perception to conclude that decisions made as part of the waiver review process were inconsistent, with competing businesses receiving differing waiver decisions, creating inequities within a single industry,” Regan said during a hearing Thursday.
 
@@ -41,7 +41,7 @@ The waivers, which allowed select businesses to reopen despite the statewide shu
 
 Democrats on the committee opposed the subpoena, pointing to an announcement earlier in the day by state Auditor General Eugene DePasquale that he would audit the waiver process without releasing any records. The Democrats argued that investigation would be sufficient.
 
-“This audit is warranted,” said Sen. Pam Iovino (D., Allegheny), minority chair of the Veterans Affairs and Emergency Preparedness Committee, which voted 7-4 to approve the subpoena. 
+“This audit is warranted,” said Sen. Pam Iovino (D., Allegheny), minority chair of the Veterans Affairs and Emergency Preparedness Committee, which voted 7-4 to approve the subpoena.
 
 “Finding deficiencies merely to find fault does not serve the people of Pennsylvania," she said during the hearing. "Having the auditor general do his job and find deficiencies in the waiver program to improve it must be the goal here.”
 
