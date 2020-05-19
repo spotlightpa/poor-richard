@@ -137,6 +137,12 @@ url = "http://newtownpanow.com"
 logotype = "png"
 
 [[partners]]
+name = "North Penn Now"
+slug = "npn"
+url = "http://northpennnow.com/"
+logotype = "png"
+
+[[partners]]
 name = "PA Post"
 slug = "papost"
 url = "https://papost.org"
