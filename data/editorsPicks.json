@@ -1,9 +1,6 @@
 {
   "featuredStories": [
-    "content/news/2020-05-19-SPLLIST20.md",
-    "content/news/2020-05-19-SPLRENT19.md",
-    "content/news/2020-05-19-SPLTESTS19.md",
-    "content/news/2020-05-15-SPLNURSES15.md"
+    "content/news/2020-05-19-SPLLIST20.md"
   ],
   "subfeatures": [
     "content/news/2020-05-13-SPLYANKED13.md",
@@ -11,5 +8,9 @@
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
-  "topSlots": []
+  "topSlots": [
+    "content/news/2020-05-19-SPLRENT19.md",
+    "content/news/2020-05-19-SPLTESTS19.md",
+    "content/news/2020-05-15-SPLNURSES15.md"
+  ]
 }
