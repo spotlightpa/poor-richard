@@ -77,6 +77,12 @@ url = "http://explorevenango.com"
 logotype = "png"
 
 [[partners]]
+name = "Gazette 2.0"
+slug = "gazette"
+url = "https://www.gazette20.com"
+logotype = "png"
+
+[[partners]]
 name = "Gettysburg Times"
 slug = "gettysburg-times"
 url = "http://www.gettysburgtimes.com"
