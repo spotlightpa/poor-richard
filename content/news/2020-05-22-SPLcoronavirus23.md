@@ -9,8 +9,8 @@ image-credit = "Commonwealth Media Services"
 image-size = ""
 published = 2020-05-22T17:25:01Z
 slug = "pennsylvania-yellow-phase-counties-june-5"
-authors = ["Anna Orso", "Angela Couloumbis", "Chris Brennan"]
-byline = "Anna Orso of The Philadelphia Inquirer, Angela Couloumbis of Spotlight PA, and Chris Brennan of The Philadelphia Inquirer,"
+authors = ["Angela Couloumbis", "Cynthia Fernandez"]
+byline = "Angela Couloumbis of Spotlight PA and Cynthia Fernandez of Spotlight PA"
 title = "All Pa. counties will be in ‘yellow’ coronavirus reopening phase by June 5 under Wolf administration plan: sources  "
 subtitle = ""
 description = "Under Gov. Tom Wolf’s reopening plan, 49 of 67 counties are already in the “yellow” phase, or the first phase of reopening."
@@ -29,30 +29,50 @@ no-index = false
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-Pennsylvania counties still under strict coronavirus restrictions — including hard-hit Philadelphia and its suburbs — will move to the “yellow” reopening phase by June 5 at the latest, according to three sources with knowledge of the Wolf administration’s plans.
+HARRISBURG — Pennsylvania counties still under strict coronavirus restrictions — including hard-hit Philadelphia and its suburbs, as well as the Lehigh Valley — will move to the “yellow” reopening phase on June 5, Gov. Tom Wolf said Friday.
 
-Under <a href="https://www.inquirer.com/health/coronavirus/yellow-phase-green-phase-pennsylvania-philadelphia-decide-wolf-coronavirus-covid19-20200511.html">Gov. Tom Wolf’s reopening plan,</a> 49 of 67 counties are already in the yellow phase, or the first phase of reopening, in which most but not all businesses can reopen.<a href="https://www.inquirer.com/health/coronavirus/inq/coronavirus-covid-19-what-is-open-pennsylvania-life-sustaining-business-20200403.html"> In the yellow phase,</a> limitations on public gatherings remain, and restaurants and bars remain closed to in-person business. Gyms, salons, malls, and movie theaters also remain closed.
+The announcement comes as several counties are still far from reaching at least one of the metrics established by the Wolf administration to determine when areas can safely begin loosening lockdown orders.
 
-A spokesperson for Wolf declined to comment. The governor is expected to speak at a news conference today at 4 p.m.
+So far, state officials have moved 49 of Pennsylvania’s 67 counties to the yellow phase, allowing some businesses to resume in-person operations and the public to move more freely. In this phase, limitations on public gatherings remain, and restaurants and bars remain closed to in-person business. Gyms, salons, malls, and movie theaters also remain closed.
+
+By June 5, Wolf said all counties will at least be in the yellow phase. That includes ten counties that are still seeing high case counts — Berks, Bucks, Chester, Delaware, Lackawanna, Lancaster, Lehigh, Northampton, Montgomery, and Philadelphia.
+
+“My stay-at-home order did exactly what it was intended to do: It saved lives,” Wolf said Friday. “Over the past two weeks, we have seen sustained reductions in hospitalizations. ... Our new case rate has been shrinking.”
+
+<iframe title="For Southeastern Pa., a Two-Week Wait for Relief" aria-label="Map" id="datawrapper-chart-bC4fK" src="https://datawrapper.dwcdn.net/bC4fK/60/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+
+Public health experts were split on the wisdom of the governor’s move to reopen every county, if only partially, including the hardest hit ones in the southeastern part of the state. Officials have said counties need to have sufficient levels of testing and contact tracing to identify and track new cases and prevent them from becoming outbreaks.
+
+Mike LeVasseur, an epidemiology professor at Drexel University, said the state still does not have enough contact tracers in place to pinpoint where clusters of the coronavirus are occurring.
+
+"There hasn’t been enough staff to be able to handle the epidemic that we’ve had,” he said. “Why don’t we just hold off for a bit, and wait a couple of weeks until we have a better idea of what the situation is?”
+
+Chrysan Cronin, director and professor of public health at Muhlenberg College, said she’s always viewed one of the administration’s key metrics for partially reopening a county — fewer than 50 positive cases per 100,000 people over a two-week period — as arbitrary.
+
+“That is not a scientifically proven number," said Cronin. “We don’t learn about that in epidemiology school. They set a bar so they could watch the trends over time.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-In a call with reporters Thursday, Wolf said his administration planned to announce “a whole range” of counties would move to the yellow phase. He also hinted that he may announce some counties will move to the “green” phase, or the final phase of reopening under which there are no restrictions on which establishments can and can’t be open, but social-distancing guidelines and other safety precautions remain in place.
+Also Friday, Wolf announced that some counties will be allowed to enter the green phase, which lifts most restrictions on businesses but still requires them to follow social-distancing guidelines and other safety precautions. Officials said they will release more details next week.
 
-The administration had established metrics to determine when counties would move from the red to the yellow phase, and the administration did so largely by region. Among those metrics were testing capacity and hospitalization rates, as well as a requirement that counties report fewer than 50 new cases per 100,000 residents over the course of 14 days, a mark no county in the southeastern part of the commonwealth has reached yet.
+The counties moving to green on May 29 are in north-central and northwest Pennsylvania: Bradford, Cameron, Clarion, Clearfield, Crawford, Elk, Forest, Jefferson, Lawrence, McKean, Montour, Potter, Snyder, Sullivan, Tioga, Venango, and Warren.
 
-The county farthest from reaching that metric is Delaware, <a href="https://www.inquirer.com/health/coronavirus/delaware-county-coronavirus-high-rate-reopen-20200519.html">which has the highest per capita case rate</a> of all counties in the Philadelphia region, according to state data.
+Additionally, eight counties will be able to move to yellow on May 29: Dauphin, Franklin, Huntingdon, Lebanon, Luzerne, Monroe, Pike, and Schuylkill.
 
-But leaders in some counties, Bucks in particular, have been bullish on moving to the yellow phase and have pushed the administration to provide a timeline to do so. Asked Friday about the governor’s plan to move all counties to yellow by June 5, Bucks County Commissioner Diane Ellis-Marseglia said commissioners were “hopeful” that would be the case.
+Partially reopening the entire state becomes dangerous, Cronin said, if people view it as a license to return to their normal patterns of daily life. The challenge for state officials, she said, will be to send a strong message to residents that they must continue taking precautions, such as wearing masks, practicing social distancing, and limiting their movements.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+And that message should be consistent, Cronin said, noting that she has been alarmed that some state lawmakers have been pushing for a swift reopening.
 
+Indeed, while Republicans in the General Assembly have for months pressured the administration to reopen parts of the economy more quickly, Democrats in the southeast over the past week <a href="https://www.inquirer.com/politics/pennsylvania/coronavirus-pa-tom-wolf-democrats-20200521.html">increased pressure on Wolf</a> to communicate ways their counties could move to the yellow phase.
 
-While Republicans in the General Assembly have for months pressured the administration to reopen parts of the economy more quickly, Democrats in southeastern Pennsylvania have also over the past week <a href="https://www.inquirer.com/politics/pennsylvania/coronavirus-pa-tom-wolf-democrats-20200521.html" target=_blank>increased pressure on Wolf</a> to communicate ways their counties could move to the yellow phase.
+To see "how the politics is driving the public health response is fascinating to me — and sometimes terrifying to me as a public health person,” Cronin said.
 
-Other officials have pressured the administration to change its reopening metrics and count coronavirus cases in long-term care facilities as separate from other confirmed cases.
+Wolf said Friday that even residents who live in counties moving to the green phase should continue to wear masks in public, wash their hands, and implement social distancing.
 
-“We have been pleading with Harrisburg" to consider a different metric for southeastern Pennsylvania, Delaware County Council Chairman Brian Zidek told residents late Wednesday<a href="https://www.delcopa.gov/publicrelations/releases/2020/covid_chairmanupdate0521.html"> in a video</a>, and “Harrisburg, I think, is listening.”
+“The more people who take precautions, the more likely we are to succeed at suppressing COVID-19,” Wolf said. 
+
+<i>Inquirer staff writers Anna Orso and Chris Brennan contributed to this article. </i>
 
 <i>100% ESSENTIAL: </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
