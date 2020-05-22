@@ -26,11 +26,11 @@ url = "/about/faq/"
 
 **Q: How do I support Spotlight PA?**
 
-**A:** You can [make a donation to Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact <mailto:joanna@spotlightpa.org>.
+**A:** You can [make a donation to Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
 
 **Q: How do I change a recurring donation or update my credit card?**
 
-**A:** Please contact <mailto:joanna@spotlightpa.org> and we'll be happy to help.
+**A:** Please contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org) and we'll be happy to help.
 
 **Q: Is my donation tax deductible?**
 
@@ -58,11 +58,11 @@ url = "/about/faq/"
 
 **Q: Where does Spotlight PA’s work appear?**
 
-**A:** All Spotlight PA stories appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com), as well as across a growing network of other Pennsylvania news organizations.
+**A:** All Spotlight PA stories appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [Pittsburgh Post-Gazette / post-gazette.com](https://www.post-gazette.com/) and [The Patriot-News / PennLive.com](https://www.pennlive.com), as well as across [a growing network of other Pennsylvania news organizations](/about/partners/).
 
 **Q: Will Spotlight PA share its content with other news organizations?**
 
-**A:** Yes, we want our content to reach as many people in Pennsylvania as possible. We will provide stories free of charge to news organizations across the state. To become a distribution partner, please contact <mailto:joanna@spotlightpa.org>.
+**A:** Yes, we want our content to reach as many people in Pennsylvania as possible. We will provide stories free of charge to news organizations across the state. To become a distribution partner, please contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
 
 **Q: Does Spotlight PA charge for its content?**
 
@@ -82,7 +82,7 @@ url = "/about/faq/"
 
 **Q: Who funds Spotlight PA?**
 
-**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; Good Words Foundation; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters [here](/support/). 
+**A:** Spotlight PA is a grant-funded newsroom with the support of readers like you and: Laura and John Arnold; The Erie Community Foundation; Donald McCormick Fund of The Foundation for Enhancing Communities; Good Words Foundation; The Heinz Endowments; Henry L. Hillman Foundation; Lancaster Community Foundation; H.F. “Gerry” Lenfest; The Lenfest Institute for Journalism; The Philadelphia Foundation; The Lois Tack Thompson Fund of The Pittsburgh Foundation; Poor Richard’s Charitable Trust; The Steinman Foundation; Wyncote Foundation; and York County Community Foundation. You can read more about our supporters [here](/support/).
 
 **Q: Is Spotlight PA a 501(c)(3) nonprofit organization?**
 
@@ -102,7 +102,7 @@ url = "/about/faq/"
 
 **Q: How do I pitch an idea to Spotlight PA?**
 
-**A:** Pitches can be sent to our editor in chief at <mailto:cbaxter@spotlightpa.org>.
+**A:** Pitches can be sent to our editor in chief at [cbaxter@spotlightpa.org](mailto:cbaxter@spotlightpa.org).
 
 **Q: How do I contact Spotlight PA reporters?**
 
@@ -110,4 +110,4 @@ url = "/about/faq/"
 
 **Q: What is Spotlight PA’s corrections policy?**
 
-**A:** We strive to be thorough and accurate in our reporting, and we freely and transparently correct all errors of fact. If you believe we’ve made an error, contact <mailto:cbaxter@spotlightpa.org>.
+**A:** We strive to be thorough and accurate in our reporting, and we freely and transparently correct all errors of fact. If you believe we’ve made an error, contact [cbaxter@spotlightpa.org](mailto:cbaxter@spotlightpa.org).
