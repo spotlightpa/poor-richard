@@ -33,7 +33,7 @@ Pennsylvania counties still under strict coronavirus restrictions — including 
 
 Under <a href="https://www.inquirer.com/health/coronavirus/yellow-phase-green-phase-pennsylvania-philadelphia-decide-wolf-coronavirus-covid19-20200511.html">Gov. Tom Wolf’s reopening plan,</a> 49 of 67 counties are already in the yellow phase, or the first phase of reopening, in which most but not all businesses can reopen.<a href="https://www.inquirer.com/health/coronavirus/inq/coronavirus-covid-19-what-is-open-pennsylvania-life-sustaining-business-20200403.html"> In the yellow phase,</a> limitations on public gatherings remain, and restaurants and bars remain closed to in-person business. Gyms, salons, malls, and movie theaters also remain closed.
 
-A spokesperson for Wolf was not immediately available for comment. The governor is expected to speak at a news conference today at 4 p.m.
+A spokesperson for Wolf declined to comment. The governor is expected to speak at a news conference today at 4 p.m.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
