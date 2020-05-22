@@ -5,7 +5,6 @@ image-credit = "STAFF / Spotlight PA"
 image-size = "hidden"
 published = 2020-04-13T17:42:20.000Z
 slug = "pennsylvania-coronavirus-shutdown-pittsburgh-small-business"
-authors = ["Staff Report"]
 byline = "Staff Report"
 title = "WATCH: A free virtual Q&A for Pittsburgh small business owners on navigating the coronavirus shutdown"
 description = "A panel of experts addresses the most pressing questions facing small business owners. "

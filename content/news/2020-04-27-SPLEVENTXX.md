@@ -9,7 +9,6 @@ image-credit = "STAFF / Spotlight PA"
 image-size = "inline"
 published = 2020-04-27T18:02:06Z
 slug = "pennsylvania-coronavirus-shutdown-small-business-webinar-lehigh-valley"
-authors = ["Staff Report"]
 byline = "Staff Report"
 title = "WATCH: A free virtual Q&A for Pa. small business owners on navigating the coronavirus shutdown"
 subtitle = ""
@@ -31,7 +30,7 @@ no-index = false
 
 As part of its commitment to better connect experts in topics of urgent statewide importance to Pennsylvanians in all corners of the state, Spotlight PA held its second virtual Q&amp;A webinar focused on helping small businesses in Pennsylvania navigate the coronavirus shutdown.
 
-Our panel, hosted by Spotlight PA Editor in Chief Christopher Baxter, took place April 29 and featured experts from the Lehigh Valley: 
+Our panel, hosted by Spotlight PA Editor in Chief Christopher Baxter, took place April 29 and featured experts from the Lehigh Valley:
 
 - Juliana Bolivar, Business Development Coordinator at the Community Action Development Corporation of Bethlehem
 
