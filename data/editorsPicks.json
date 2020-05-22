@@ -1,6 +1,6 @@
 {
   "featuredStories": [
-    "content/news/2020-05-22-SPLANTI22.md"
+    "content/news/2020-05-22-SPLcoronavirus23.md"
   ],
   "subfeatures": [
     "content/news/2020-05-09-SPLHOMES10.md",
@@ -9,8 +9,8 @@
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-05-22-SPLANTI22.md",
     "content/news/2020-05-21-SPLdata21.md",
-    "content/news/2020-05-19-SPLREALTOR19.md",
     "content/news/2020-05-19-SPLTESTS19.md"
   ]
 }
