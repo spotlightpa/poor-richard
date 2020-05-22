@@ -29,15 +29,17 @@ no-index = false
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-HARRISBURG — Pennsylvania counties still under strict coronavirus restrictions — including hard-hit Philadelphia and its suburbs, as well as the Lehigh Valley — will move to the “yellow” reopening phase on June 5, Gov. Tom Wolf said Friday.
+HARRISBURG — Pennsylvania counties still under strict coronavirus restrictions — including hard-hit Philadelphia, its suburbs, and the Lehigh Valley — will move to the “yellow” reopening phase on June 5, Gov. Tom Wolf announced Friday.
 
-The announcement comes as several counties are still far from reaching at least one of the metrics established by the Wolf administration to determine when areas can safely begin loosening lockdown orders.
+“My stay-at-home order did exactly what it was intended to do: It saved lives,” Wolf said during a news conference, as he touted the state’s progress containing COVID-19. “Over the past two weeks, we have seen sustained reductions in hospitalizations. ... Our new case rate has been shrinking.”
+
+The announcement comes as the governor faces increasing political pressure to ease shutdown measures that have decimated local economies and resulted in more than two million residents seeking jobless benefits. 
+
+By June 5, Wolf said all counties will at least be in the yellow phase of his tiered reopening plan. The last to go will be Berks, Bucks, Chester, Delaware, Lackawanna, Lancaster, Lehigh, Northampton, Montgomery, and Philadelphia — counties that have yet to meet a case-decline standard Wolf’s administration established to determine when areas can safely begin loosening lockdown orders.
+
+“As we know more and have more ability to test and know more about this disease, we have broadened the number of things that we look at,” Wolf said when asked about the metrics. 
 
 So far, state officials have moved 49 of Pennsylvania’s 67 counties to the yellow phase, allowing some businesses to resume in-person operations and the public to move more freely. In this phase, limitations on public gatherings remain, and restaurants and bars remain closed to in-person business. Gyms, salons, malls, and movie theaters also remain closed.
-
-By June 5, Wolf said all counties will at least be in the yellow phase. That includes ten counties that are still seeing high case counts — Berks, Bucks, Chester, Delaware, Lackawanna, Lancaster, Lehigh, Northampton, Montgomery, and Philadelphia.
-
-“My stay-at-home order did exactly what it was intended to do: It saved lives,” Wolf said Friday. “Over the past two weeks, we have seen sustained reductions in hospitalizations. ... Our new case rate has been shrinking.”
 
 <iframe title="For Southeastern Pa., a Two-Week Wait for Relief" aria-label="Map" id="datawrapper-chart-bC4fK" src="https://datawrapper.dwcdn.net/bC4fK/60/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
@@ -54,8 +56,7 @@ Chrysan Cronin, director and professor of public health at Muhlenberg College, s
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-
-Also Friday, Wolf announced that some counties will be allowed to enter the green phase, which lifts most restrictions on businesses but still requires them to follow social-distancing guidelines and other safety precautions. Officials said they will release more details next week.
+Also Friday, Wolf announced that some counties will soon be allowed to enter the green phase, which lifts most restrictions on businesses but still requires them to follow social-distancing guidelines and other safety precautions. Restaurants, bars, gyms, hair salons, and barbershops <a href="https://www.governor.pa.gov/plan-for-pennsylvania/" target=_blank>will only be allowed to operate</a> at 50% capacity, and large gatherings will be restricted. Officials said they will release more details next week.
 
 The counties moving to green on May 29 are in north-central and northwest Pennsylvania: Bradford, Cameron, Clarion, Clearfield, Crawford, Elk, Forest, Jefferson, Lawrence, McKean, Montour, Potter, Snyder, Sullivan, Tioga, Venango, and Warren.
 
@@ -65,13 +66,19 @@ Partially reopening the entire state becomes dangerous, Cronin said, if people v
 
 And that message should be consistent, Cronin said, noting that she has been alarmed that some state lawmakers have been pushing for a swift reopening.
 
-Indeed, while Republicans in the General Assembly have for months pressured the administration to reopen parts of the economy more quickly, Democrats in the southeast over the past week <a href="https://www.inquirer.com/politics/pennsylvania/coronavirus-pa-tom-wolf-democrats-20200521.html">increased pressure on Wolf</a> to communicate ways their counties could move to the yellow phase.
+Republicans in the General Assembly have for months pressured the administration to reopen parts of the economy more quickly, while Democrats in the southeast over the past week <a href="https://www.inquirer.com/politics/pennsylvania/coronavirus-pa-tom-wolf-democrats-20200521.html">increased pressure on Wolf</a> to communicate ways their counties could move to the yellow phase.
 
 To see "how the politics is driving the public health response is fascinating to me — and sometimes terrifying to me as a public health person,” Cronin said.
 
-Wolf said Friday that even residents who live in counties moving to the green phase should continue to wear masks in public, wash their hands, and implement social distancing.
+David C. Damsker, who heads the Bucks County Health Department, said in an interview Friday that even hard-hit counties like his will be able to reopen safely. Like Cronin, Damsker called the governor’s metric for a downward trajectory of cases “arbitrary,” and noted that unlike state health officials, Bucks County has been tracking positive cases by their onset date, as opposed to when they were reported by labs, hospitals, and other health-care facilities.
 
-“The more people who take precautions, the more likely we are to succeed at suppressing COVID-19,” Wolf said. 
+That, combined with contact tracing, has given Bucks health officials a clearer picture of how and where the virus was spreading, he said.
+
+“We could tell our ... pure community spread is down,” said Damsker, adding that even a partial reopening will still require that businesses and residents take precautions when in public.
+
+Wolf said Friday that residents who live in counties moving to the green phase should continue to wear masks in public, wash their hands, and implement social distancing.
+
+“The more people who take precautions, the more likely we are to succeed at suppressing COVID-19,” Wolf said.
 
 <i>Inquirer staff writers Anna Orso and Chris Brennan contributed to this article. </i>
 
