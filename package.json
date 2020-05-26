@@ -10,7 +10,7 @@
     "format:eslint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml,vue}",
     "build:go": "./build-go.sh",
-    "build:parcel": "parcel build src/entrypoints/* --experimental-scope-hoisting",
+    "build:parcel": "parcel build src/entrypoints/* --no-autoinstall --experimental-scope-hoisting",
     "build:stage": "yarn run build:go && yarn run build:parcel && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "yarn run build:go && yarn run build:parcel && hugo version && hugo",
     "start:api": "go run ./cmd/spotlightpa-api",
@@ -23,7 +23,7 @@
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}"
   },
   "dependencies": {
-    "@babel/core": "^7.8.7",
+    "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.8.7",
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
