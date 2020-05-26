@@ -5,7 +5,6 @@ import BulmaMessage from "./BulmaMessage.vue";
 import BulmaModal from "./BulmaModal.vue";
 
 import DonationFormButtons from "./DonationFormButtons.vue";
-import DonationFormBreadcrumbs from "./DonationFormBreadcrumbs.vue";
 
 export default {
   components: {
@@ -15,7 +14,6 @@ export default {
     BulmaMessage,
     BulmaModal,
     DonationFormButtons,
-    DonationFormBreadcrumbs,
   },
   props: {
     formData: Object,
