@@ -10,7 +10,7 @@ HUGO_VERSION = "0.69.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
-NODE_VERSION = "12"
+NODE_VERSION = "12.16.3"
 GO_IMPORT_PATH = "github.com/spotlightpa/poor-richard"
 GO111MODULE = "on"
 
