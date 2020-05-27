@@ -1,0 +1,9 @@
+# Netlify custom headers. See https://docs.netlify.com/routing/headers/
+{{ range $p := site.Pages -}}
+  {{- with $headers := .Param "headers" }}
+    {{- printf "%s\n" $p.RelPermalink -}}
+    {{- range $headers -}}
+      {{-  printf "  %s\n" . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end }}

@@ -61,8 +61,14 @@ baseName = "_redirects"
 isPlainText = true
 notAlternative = true
 
+[outputFormats.headers]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-    home = ["html", "redirects"]
+    home = ["html", "redirects", "headers"]
 
 [params]
     imgproxy = "/imgproxy/"
@@ -73,6 +79,7 @@ notAlternative = true
         "2019/11/banner-white-on-capitol.jpeg"
     ]
     description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
+    headers = ["X-Frame-Options: DENY"]
 
 [[module.mounts]]
 source = "assets"
