@@ -1,0 +1,41 @@
+{{ define "main" }}
+  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+  <section class="section columns" data-ga-action="{{ .Title }}">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <table class="table is-fullwidth is-bordered is-striped is-hoverable">
+        <thead>
+          <tr>
+            <th>
+              <h1 class="title is-2">
+                {{ .Title }}
+              </h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Paginator.Pages }}
+            <tr>
+              <td class="title is-3">
+                <a
+                  class="is-block has-text-link hover-underline"
+                  href="{{ .RelPermalink }}"
+                >{{ .LinkTitle }}</a>
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+      {{ if gt .Paginator.TotalPages 0 }}
+        <div class="level">
+        {{ if .Paginator.HasPrev }}
+          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

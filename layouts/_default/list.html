@@ -1,40 +1,31 @@
 {{ define "extra-main" }}
-  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  <section class="section columns" data-ga-action="List page">
-    <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range .Paginator.Pages }}
-        <div class="box">
-          <div class="media">
-            <div class="media-content">
-              <h2 class="title is-3">
-                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-              </h2>
-              <h2 class="subtitle is-5">
-                <a
-                  class="has-text-dark"
-                  href="{{ .RelPermalink }}"
-                >{{ .Param "subhed" }}</a>
-              </h2>
-              {{ if not .PublishDate.IsZero }}
-                <time
-                  class="subtitle is-5"
-                  datetime='{{ .PublishDate.Local.Format $isoFormat }}'
-                >
-                  {{ .PublishDate.Format "Monday, January 2, 2006" }}
-                </time>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      {{ end }}
-
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-action="{{ .Title }}"
+  >
+    <div class="column is-three-fifths">
+      <div class="tile is-ancestor is-vertical">
+        {{ range $page := .Paginator.Pages }}
+          {{ partial "tile-archive.html" $page }}
+        {{ end }}
+      </div>
       {{ if gt .Paginator.TotalPages 0 }}
         <div class="level">
         {{ if .Paginator.HasPrev }}
-          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
+          <span class="level-item">
+            <a
+              class="button is-primary is-outlined has-text-weight-semibold"
+              href="{{ .Paginator.Prev.URL }}"
+            >← Newer</a>
+          </span>
         {{ end }}
         {{ if .Paginator.HasNext }}
-          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
+          <span class="level-item">
+            <a
+              class="button is-primary is-outlined has-text-weight-semibold"
+              href="{{ .Paginator.Next.URL }}"
+            >Older →</a>
+          </span>
         {{ end }}
         </div>
       {{ end }}
