@@ -48,26 +48,7 @@
         {{ end }}
       </div>
 
-      {{ if gt .Paginator.TotalPages 0 }}
-        <div class="level">
-        {{ if .Paginator.HasPrev }}
-          <span class="level-item">
-            <a
-              class="button is-primary is-outlined has-text-weight-semibold"
-              href="{{ .Paginator.Prev.URL }}"
-            >← Newer</a>
-          </span>
-        {{ end }}
-        {{ if .Paginator.HasNext }}
-          <span class="level-item">
-            <a
-              class="button is-primary is-outlined has-text-weight-semibold"
-              href="{{ .Paginator.Next.URL }}"
-            >Older →</a>
-          </span>
-        {{ end }}
-        </div>
-      {{ end }}
+      {{ partial "paginator-level.html" .Paginator }}
     </div>
   </section>
 {{ end }}
