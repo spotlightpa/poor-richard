@@ -2,14 +2,17 @@
 
 <script src='{{ partial "get-src" "main.js" }}' async></script>
 
-{{ range slice "500" "800" }}
-  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
-{{ end }}
+{{ $fonts := resources.Get "css/fonts.css" | minify | fingerprint }}
+<link
+  rel="preload"
+  as="style"
+  href="{{ $fonts.RelPermalink }}" />
 
-{{ $fonts := resources.Get "css/fonts.css" }}
-<style>
-  {{ $fonts.Content | safeCSS }}
-</style>
+<link
+  rel="stylesheet"
+  href="{{ $fonts.RelPermalink }}"
+  media="print"
+  onload="this.media='all'" />
 
 {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
 {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS }}
