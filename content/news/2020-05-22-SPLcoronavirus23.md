@@ -17,7 +17,7 @@ description = "Under Gov. Tom Wolf’s reopening plan, 49 of 67 counties are alr
 blurb = "Under Gov. Tom Wolf’s reopening plan, 49 of 67 counties are already in the “yellow” phase, or the first phase of reopening."
 kicker = "Coronavirus"
 topics = ["Coronavirus"]
-series = ["Top News"]
+series = []
 linktitle = ""
 suppress-featured = false
 weight = 0
@@ -33,11 +33,11 @@ HARRISBURG — Pennsylvania counties still under strict coronavirus restrictions
 
 “My stay-at-home order did exactly what it was intended to do: It saved lives,” Wolf said during a news conference, as he touted the state’s progress containing COVID-19. “Over the past two weeks, we have seen sustained reductions in hospitalizations. ... Our new case rate has been shrinking.”
 
-The announcement comes as the governor faces increasing political pressure to ease shutdown measures that have decimated local economies and resulted in more than two million residents seeking jobless benefits. 
+The announcement comes as the governor faces increasing political pressure to ease shutdown measures that have decimated local economies and resulted in more than two million residents seeking jobless benefits.
 
 By June 5, Wolf said all counties will at least be in the yellow phase of his tiered reopening plan. The last to go will be Berks, Bucks, Chester, Delaware, Lackawanna, Lancaster, Lehigh, Northampton, Montgomery, and Philadelphia — counties that have yet to meet a case-decline standard Wolf’s administration established to determine when areas can safely begin loosening lockdown orders.
 
-“As we know more and have more ability to test and know more about this disease, we have broadened the number of things that we look at,” Wolf said when asked about the metrics. 
+“As we know more and have more ability to test and know more about this disease, we have broadened the number of things that we look at,” Wolf said when asked about the metrics.
 
 So far, state officials have moved 49 of Pennsylvania’s 67 counties to the yellow phase, allowing some businesses to resume in-person operations and the public to move more freely. In this phase, limitations on public gatherings remain, and restaurants and bars remain closed to in-person business. Gyms, salons, malls, and movie theaters also remain closed.
 
