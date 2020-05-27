@@ -26,16 +26,7 @@
         </tbody>
       </table>
 
-      {{ if gt .Paginator.TotalPages 0 }}
-        <div class="level">
-        {{ if .Paginator.HasPrev }}
-          <a class="level-item" href="{{ .Paginator.Prev.URL }}">←</a>
-        {{ end }}
-        {{ if .Paginator.HasNext }}
-          <a class="level-item" href="{{ .Paginator.Next.URL }}">→</a>
-        {{ end }}
-        </div>
-      {{ end }}
+      {{ partial "paginator-level.html" .Paginator }}
     </div>
   </section>
 {{ end }}
