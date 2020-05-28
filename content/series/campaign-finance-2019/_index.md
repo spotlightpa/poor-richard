@@ -6,4 +6,4 @@ image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
 description = "A year-long investigation by The Caucus and Spotlight PA that found Pennsylvania lawmakers, operating under some of the weakest campaign finance laws in the country, obscured nearly $3.5 million in campaign spending from 2016 through 2018."
 +++
 
-A year-long investigation by The Caucus and Spotlight PA that found Pennsylvania lawmakers, operating under some of the weakest campaign finance laws in the country, obscured nearly $3.5 million in campaign spending from 2016 through 2018.
+This series was a winner of the [John V. R. Bull Freedom of Information Award](https://panewsmedia.org/awards/john-v-r-bull-freedom-of-information-award/) and a finalist for [2019 IRE Awards](https://www.ire.org/2019IREAwards).
