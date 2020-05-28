@@ -16,6 +16,7 @@ slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-p
 aliases = [
 "/news/pennsylvania/spl/pa-election-campaign-spending-hidden-expenses-spotlight-pa-20191022.html"
 ]
+series = ["Campaign Finance 2019"]
 +++
 
 <script defer>
