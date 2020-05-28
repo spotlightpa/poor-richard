@@ -12,6 +12,11 @@
   {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
   {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+{{ else if eq $size "letterbox" }}
+  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
+  {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
 {{ else if eq $size "full" }}
   {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
