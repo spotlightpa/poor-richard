@@ -1,16 +1,44 @@
-{{ define "extra-main" }}
+{{ define "main" }}
   <section
     class="section columns is-centered is-multiline"
     data-ga-action="{{ .Title }}"
   >
     <div class="column is-three-fifths">
-      <div class="tile is-ancestor is-vertical">
-        {{ range $page := .Paginator.Pages }}
-          {{ partial "tile-archive.html" $page }}
-        {{ end }}
-      </div>
+      <header class="has-text-centered">
+        <h1 class="title is-size-0 is-size-2-touch is-spaced">
+          {{ .Title }}
+          {{ if .Draft }}
+            <span class="tag is-warning is-uppercase">
+              Draft
+            </span>
+          {{ end }}
+        </h1>
+        <h2 class="subtitle is-3 is-size-4-touch has-margin-top-negative-medium">
+          {{ .Content }}
+        </h2>
 
-      {{ partial "paginator-level.html" .Paginator }}
+        {{ partial "hero-image-block.html" . }}
+      </header>
+      <div class="has-margin-top-thick">
+        <nav class="tile is-ancestor is-vertical">
+          {{ $p := .Paginator }}
+          {{ $pages := .Paginator.Pages }}
+          <div class="tile">
+            {{ range $page := first 3 $pages }}
+              <div class="tile is-parent is-4 has-margin-top-negative">
+                <div class="tile is-child">
+                  {{ partial "tile-stack.html" $page }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+
+          {{ range $page := after 3 $pages }}
+            {{ partial "tile-archive.html" $page }}
+          {{ end }}
+        </nav>
+      </div>
+      {{ partial "paginator-level.html" $p }}
     </div>
   </section>
 {{ end }}
