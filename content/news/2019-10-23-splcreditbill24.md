@@ -12,6 +12,7 @@ blurb = "The proposed change to reduce oversight of their spending came just hou
 kicker = "Campaign Finance"
 slug = "lawmakers-abruptly-abandon-attempt-to-limit-public-access-to-campaign-expenses"
 aliases=["/news/pennsylvania/spl/pennsylvania-election-campaign-expenses-spotlight-pa-20191023.html"]
+series = ["Campaign Finance 2019"]
 +++
 
 <script defer>

@@ -16,6 +16,7 @@ slug = "how-an-investigation-uncovered-nearly-3.5m-in-dark-spending-by-pa.-lawma
 aliases = [
 "/news/pennsylvania/spl/pa-election-hidden-campaign-spending-spotlight-pa-20191022.html"
 ]
+series = ["Campaign Finance 2019"]
 +++
 
 Show me the receipts.

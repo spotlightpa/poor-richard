@@ -12,6 +12,7 @@ authors = [
   ]
 byline = "Brad Bumsted and Sam Janesch of The Caucus"
 kicker = "Campaign Finance"
+series = ["Campaign Finance 2019"]
 aliases=["/news/pennsylvania/spl/pa-election-campaign-spending-bizarre-expensive-purchases-spotlight-pa-20191025.html"]
 +++
 
