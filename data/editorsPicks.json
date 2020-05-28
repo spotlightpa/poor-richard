@@ -1,6 +1,9 @@
 {
   "featuredStories": [],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-05-01-SPLTIERS02.md",
+    "content/news/2020-05-19-SPLTESTS19.md"
+  ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": []
