@@ -22,10 +22,8 @@ yaml-definitions: &page-fields
   - label: "Featured Image"
     name: "image"
     widget: string
+    hint: "Path from Almanack"
     required: false
-    media_library:
-      config:
-        multiple: false
   - label: Image description
     name: image-description
     widget: string
@@ -37,7 +35,7 @@ yaml-definitions: &page-fields
   - label: "Image size"
     name: "image-size"
     widget: "select"
-    options: ["full", "inline", "hidden"]
+    options: ["full", "inline", "letterbox", "hidden"]
     required: false
   - label: Date
     name: published
@@ -166,6 +164,57 @@ yaml-definitions: &page-fields
     widget: hidden
     required: false
 
+yaml-definitions2: &taxonomy-fields
+  - label: "Featured Image"
+    name: "image"
+    widget: string
+    hint: "Path from Almanack"
+    required: false
+  - label: Image description
+    name: image-description
+    widget: string
+    required: false
+  - label: Image credit
+    name: image-credit
+    widget: string
+    required: false
+  - label: "Image size"
+    name: "image-size"
+    widget: "select"
+    options: ["full", "inline", "letterbox", "hidden"]
+    required: false
+  - label: Date
+    name: published
+    widget: datetime
+    required: false
+  - label: Hed
+    name: title
+    hint: "Title as it appears at top of page"
+    widget: string
+  - label: Subhed
+    name: subhed
+    widget: string
+    hint: "Appears below hed at top of page; AKA dek"
+    required: false
+  - label: Summary
+    name: description
+    hint: "Shown in social share previews and search results"
+    widget: string
+    required: false
+  - label: Body
+    name: body
+    widget: markdown
+  - label: "Override title tag"
+    name: title-tag
+    widget: string
+    hint: "Set title tag separately from page hed"
+    required: false
+  - label: Link to as
+    name: linktitle
+    hint: "When linking to this page from another page, use this as the link title instead of hed"
+    widget: string
+    required: false
+
 collections:
   - label: Articles
     label_singular: Article
@@ -256,6 +305,30 @@ collections:
         hint: "Is this author still working for Spotlight PA?"
         widget: boolean
         required: true
+  - label: Topics
+    label_singular: Topic
+    name: topics
+    folder: content/topics
+    path: "{{slug}}/_index.md"
+    format: toml-frontmatter
+    extension: md
+    create: true
+    summary: "{{title}}"
+    editor:
+      preview: false
+    fields: *taxonomy-fields
+  - label: Series
+    label_singular: series
+    name: series
+    folder: content/series
+    path: "{{slug}}/_index.md"
+    format: toml-frontmatter
+    extension: md
+    create: true
+    summary: "{{title}}"
+    editor:
+      preview: false
+    fields: *taxonomy-fields
 
   - label: Other
     name: data
