@@ -1,6 +1,6 @@
 +++
 image = "external/cnfktgy8v3y3bysrm7jm99tmm0.jpeg"
-image-credit = "DAN NOTT / For Spotlight PA"
+image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
 image-description = "Tracing the impact of coronavirus on Pennsylvania"
 image-size = "letterbox"
 title = "Coronavirus"
