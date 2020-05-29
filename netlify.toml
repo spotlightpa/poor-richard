@@ -131,3 +131,5 @@ status = 200
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
 
+[[plugins]]
+package = "netlify-plugin-debug-cache"
