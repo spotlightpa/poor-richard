@@ -3,14 +3,14 @@
     "content/news/2020-05-29-SPLCARES29.md"
   ],
   "subfeatures": [
-    "content/news/2020-05-22-SPLcoronavirus23.md",
-    "content/news/2020-05-01-SPLTIERS02.md"
+    "content/news/2020-05-28-SPLCOVID29.md",
+    "content/news/2020-05-22-SPLcoronavirus23.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-05-29-SPLGREEN30.md",
     "content/news/2020-05-28-SPLSCAM29.md",
-    "content/news/2020-05-28-SPLBUDGET29.md",
-    "content/news/2020-05-28-SPLCOVID29.md"
+    "content/news/2020-05-28-SPLBUDGET29.md"
   ]
 }
