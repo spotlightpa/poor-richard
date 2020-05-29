@@ -183,10 +183,6 @@ yaml-definitions2: &taxonomy-fields
     widget: "select"
     options: ["full", "inline", "letterbox", "hidden"]
     required: false
-  - label: Date
-    name: published
-    widget: datetime
-    required: false
   - label: Hed
     name: title
     hint: "Title as it appears at top of page"
