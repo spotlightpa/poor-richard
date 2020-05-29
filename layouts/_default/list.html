@@ -1,19 +1,17 @@
 {{ define "main" }}
-  {{$date := .Date }}
+  {{ $date := now }}
   {{ $showDate := false }}
-  {{ if $date }}
-    {{ $showDate = true }}
+  {{ $sixMonthsAgo := now.AddDate 0 -6 0 }}
+  {{ range first 1 .Pages }}
+    {{ $date = .Date }}
+    {{ $showDate = $date.Before $sixMonthsAgo }}
   {{ end }}
-  {{ if not $date }}
-    {{ $oneMonthAgo := now.AddDate 0 0 -30 }}
-    {{ range first 1 .Pages }}
-      {{ $date = .Date }}
-      {{ $showDate = $date.Before $oneMonthAgo }}
-    {{ end }}
-  {{ end }}
+
   {{ $subtitle := .Param "subhed" | default .Description }}
+
   {{ $p := .Paginator }}
   {{ $pages := .Paginator.Pages }}
+
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <section
@@ -30,7 +28,7 @@
         <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
           {{ .Title }}
         </h1>
-        <h2 class="subtitle {{ $subheadClass }} is-size-4-touch has-margin-bottom-thick">
+        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch has-margin-bottom-thick">
           {{ $subtitle }}
         </h2>
 
