@@ -7,10 +7,12 @@
 {{ end }}
 
 {{ $kicker := .Param "kicker" }}
+{{ $rubric := dict }}
 
 {{ $topic := "" }}
 {{ if .Param "topics" }}
   {{ $topic = index (.GetTerms "topics") 0 }}
+  {{ $rubric = $topic }}
 {{ end }}
 
 {{ $blurb := .Param "blurb" | default "" }}
@@ -29,6 +31,9 @@
 {{ if .Param "series"}}
   {{ $series := index (.GetTerms "series") 0 }}
   {{ $params = dict "series" $series | merge $params }}
+  {{ $rubric = $series }}
 {{ end }}
+
+{{ $params = dict "rubric" $rubric | merge $params }}
 
 {{ return $params }}

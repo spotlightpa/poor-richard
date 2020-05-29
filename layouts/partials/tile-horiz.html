@@ -5,11 +5,11 @@
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child">
-        {{ if $params.topic }}
+        {{ if $params.rubric }}
           <a
             class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-            href="{{ $params.topic.RelPermalink }}"
-          >{{ $params.kicker | default $params.topic.Title }}</a>
+            href="{{ $params.rubric.RelPermalink }}"
+          >{{ $params.kicker | default $params.rubric.Title }}</a>
         {{ else }}
           <h3
             class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
