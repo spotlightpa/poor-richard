@@ -537,3 +537,8 @@ $margin-sizes: (
   opacity: 0;
   transform: translate(-2em, 0);
 }
+
+// PurgeCSS hates tables!
+/*! purgecss start ignore */
+@import "sass/elements/table.sass"
+/*! purgecss end ignore */
