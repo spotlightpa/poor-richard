@@ -1,6 +1,5 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
   content: ["./hugo_stats.json", "./src/**/*.vue"],
-  whitelistPatterns: [/^\.table/],
   extractors: [
     {
       extractor: (content) => {
