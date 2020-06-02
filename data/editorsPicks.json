@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-06-01-SPLREVENUE02.md"
+    "content/news/2020-06-02-SPLCHECKS02.md"
   ],
   "subfeatures": [
     "content/news/2020-05-28-SPLCOVID29.md",
-    "content/news/2020-05-22-SPLcoronavirus23.md"
+    "content/news/2020-05-28-SPLBUDGET29.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-01-SPLREVENUE02.md",
     "content/news/2020-05-29-SPLCARES29.md",
-    "content/news/2020-05-28-SPLSCAM29.md",
-    "content/news/2020-05-28-SPLBUDGET29.md"
+    "content/news/2020-05-28-SPLSCAM29.md"
   ]
 }
