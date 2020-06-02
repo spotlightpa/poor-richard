@@ -125,6 +125,12 @@ url = "https://www.meadvilletribune.com"
 logotype = "png"
 
 [[partners]]
+name = "The Mon Valley Independent"
+slug = "mon-valley-independent"
+url = "https://monvalleyindependent.com"
+logotype = "png"
+
+[[partners]]
 name = "The Morning Call"
 slug = "morning-call"
 url = "https://www.mcall.com"
@@ -158,6 +164,12 @@ logotype = "svg"
 name = "Republican Herald"
 slug = "republican-herald"
 url = "https://republicanherald.com"
+logotype = "jpeg"
+
+[[partners]]
+name = "Saucon Source"
+slug = "saucon-source"
+url = "https://sauconsource.com/"
 logotype = "jpeg"
 
 [[partners]]
