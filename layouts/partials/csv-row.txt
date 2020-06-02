@@ -1,0 +1,5 @@
+{{- range $i, $col := . -}}
+  {{ if ne $i 0 }},{{- end -}}
+  {{- replace $col `"` `""` | printf `"%s"` -}}
+{{- end -}}
+{{- printf "\r\n" -}}
