@@ -1,0 +1,48 @@
+<!-- God forgive me -->
+</div>
+
+<div class="box">
+  {{ $src := .Get "src" | htmlUnescape }}
+  {{ $credit := .Get "credit" | htmlUnescape }}
+  {{ $description := .Get "description" | htmlUnescape }}
+  {{ $caption := .Get "caption" | htmlUnescape }}
+  {{ $imgClass := .Get "class" | htmlUnescape }}
+  {{ $figClass := .Get "figure-class" | htmlUnescape }}
+  {{ $link := .Get "link" | htmlUnescape }}
+
+  <figure class="{{ $figClass }}">
+    {{- if $link -}}
+      <a
+        class="image {{ $imgClass }} has-background-grey-lighter"
+        href="{{ $link }}"
+      >
+    {{- else -}}
+      <div class="image {{ $imgClass }} has-background-grey-lighter">
+    {{- end -}}
+      <picture class="has-ratio">
+        <img
+          alt="{{ $description }}"
+          title="{{ $description }}"
+          src="{{ $src }}"
+          loading="lazy"
+        >
+      </picture>
+    {{- if $link -}}
+      </a>
+    {{- else -}}
+      </div>
+    {{- end -}}
+    {{ with $credit }}
+      <figcaption class="is-clearfix is-size-7 is-uppercase has-text-grey-light">
+        <span class="has-margin-top-thin is-single-spaced is-pulled-right">
+          {{ $credit }}
+        </span>
+      </figcaption>
+    {{ end }}
+  </figure>
+  {{ with $caption }}
+    <p class="is-size-6 is-italic">{{ . }}</p>
+  {{ end }}
+</div>
+
+<div class="content">
