@@ -55,6 +55,10 @@ googleAnalytics = "UA-141126362-1"
     baseName = "feed-summary"
     isPlainText = true
 
+[outputFormats.csv]
+    mediaType = "text/csv"
+    isPlainText = true
+
 [outputFormats.redirects]
 mediatype = "text/netlify"
 baseName = "_redirects"
