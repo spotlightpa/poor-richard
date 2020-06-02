@@ -183,6 +183,11 @@ yaml-definitions2: &taxonomy-fields
     widget: "select"
     options: ["full", "inline", "letterbox", "hidden"]
     required: false
+  - label: Kicker
+    name: kicker
+    hint: "Eyebrow for this collection in the list of collections"
+    widget: string
+    required: false
   - label: Hed
     name: title
     hint: "Title as it appears at top of page"
@@ -200,6 +205,7 @@ yaml-definitions2: &taxonomy-fields
   - label: Body
     name: body
     widget: markdown
+    required: false
   - label: "Override title tag"
     name: title-tag
     widget: string
