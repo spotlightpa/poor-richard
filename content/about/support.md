@@ -76,6 +76,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Albert Bono
 * Alex Bonwit
 * Diane Bosak
+* Anna R. Bou
 * John Bouder
 * Jeffrey L. Braff
 * Colleen Brenneman 
@@ -143,6 +144,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Jennifer Cunningham
 * Peggy & Mark Curchack
 * Joan Daniels
+* Ethel W. Darrohn
 * Susan K. David
 * David & Lillian Davis
 * Michael E. Davis
@@ -155,6 +157,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Mike Del Vacchio
 * Fran DeMillion
 * David DeNault
+* Dara Deroiste
 * Al K. DeRoy, Ph.D., M.P.A.
 * Jean & Barry DeSantis
 * Ryan Deto
@@ -164,6 +167,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Michael DiNunzio
 * Judy Dixon
 * Steven Doerfler
+* James Donahue
 * Diana Donaldson
 * Diane Donato  
 * Michael Donofrio
@@ -175,10 +179,13 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Edwin Dunckley
 * Rebecca J. Durante
 * Charles Dyer
+* J.M. Dzubinski
 * E. Eckerle
 * James Edmiston
+* Chad Efaw
 * James Ehrman
 * Carol Eisenbise
+* Skip Elder
 * Liam Elder-Connors
 * Dianne Elderkin
 * Joseph Elias
@@ -234,12 +241,14 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
+* Edmond Guadelli
 * John Gaynard
 * James Geary
 * Anne & Walt Geiger
 * Barbara Geistwhite
 * Lee Gemmill
 * Michael George
+* Nancy & Michael George
 * Lynda Ginsburg
 * Nicholas Giordano
 * Stephen M. Glynn
@@ -256,6 +265,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * John F. Graybill
 * T. & B. Griffith
 * Brent Groce
+* Gerald Groff
 * Maureen Grosheider
 * Danielle Gross
 * Donald Gruber
@@ -276,8 +286,10 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Karen Hamm
 * Alana M. Handman
 * Mimi Hanks-Bell
+* Katherine Hannaford
 * Don Hannum
 * Elizabeth H. Harbits
+* Lizzy Hardison
 * Margaret Harris
 * Gerry Hartzel
 * Dan Hartzell
@@ -311,6 +323,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kristen Houser
 * Feather Houstoun
 * Kate Howard
+* Huennekens Family Fund
 * Stephen R. Hughes
 * Richard W. Hurst
 * Mary & Howard Hurtig
@@ -324,6 +337,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Evelyn Ishmael
 * Irina Ivanova
 * Stephen Ivey
+* Martha Jablow
 * Christine A. Jacobs
 * Jean Jacobsen
 * Dwight & Vangie Jaggard
@@ -406,6 +420,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * David Loomis
 * Janet M. Lorenz
 * Daniel Lynch
+* Deric Lyon & Lauren Hayes
 * Matt Lyon
 * Nancy Lyons
 * Tim Lyons
@@ -424,6 +439,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Joseph Mazur
 * Donald P. McCain Jr.
 * Donna & Jack McCallum
+* Erin McCann
 * Carol McCarthy
 * Blaine McCleary
 * Fletcher McClellan
@@ -440,10 +456,13 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Chantal McKay
 * John & Sharon McNamara
 * Elaine McNamee
+* William McNeal
 * Evie McNiff
+* Linda & Robert Meckley
 * K. Melton
 * Keith G. Melville
 * Jules J. Mermelstein
+* Bunny Van Meter
 * Rosalyn Metzger
 * Larry Miller
 * Michael Miller Jr. 
@@ -468,6 +487,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Toni Moyer
 * William Mulherin
 * Charlotte & John Mulvihill
+* John & Joyce Munro
 * Susan Murawski
 * Holly Myers
 * Jonathan Naser 
@@ -493,6 +513,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Leanora Paniccia
 * J. Parsons
 * Meaghan, Alok & Sachin Pattani
+* Jeanne Patterson 
 * Jan Paul
 * Lydia Pecker
 * Mark Pecker
@@ -507,16 +528,20 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * D. & G. Phelps
 * Amy Phillips
 * Rick Piper
+* Frank Potere
 * Donald Powell
 * Laura Powers
 * Shirley Prasko
+* Dave Prensky
 * G. Preuninger
 * Noah Price
 * Lois Prytherch
 * Harry Rambo
+* Susan Ranck
 * J. Randolph
 * Theresa M. Rang
 * Mark Raymond
+* Sean Raymond
 * Luke Reed
 * Brenda Reigle
 * Peter Reilly
@@ -543,6 +568,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * William Ruffley
 * Edwin Rund
 * Gary Ryan
+* James Ryan
 * Jyotin Sachdev
 * Benedict X. Saia
 * David and Ben Salkin
@@ -552,6 +578,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * John Sandy
 * C. Sarnoski
 * Robert & Judith Schachner
+* David & Pat Schaeffer
 * Laurie Scheid
 * Gary & Dode Scheimer
 * Leslie Schlessinger
@@ -571,8 +598,9 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kristin Senecal
 * John Senko
 * V. Sethi
-* Milton Shapiro
+* Mickey Shapiro
 * David S. Share
+* Loretta Sharkey
 * Michael Sheketoff
 * Peter Shelly
 * Tom & Amy Sherry
@@ -622,6 +650,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Ardith Talbott
 * John Tampanello
 * Barbara J. Taylor
+* Randy & Marcie Taylor 
 * Paul Teese
 * Jocelyn Tenney
 * Freda Tepfer
@@ -652,9 +681,11 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Fritz Walker
 * Russ Walker
 * John Wall
+* M. Wallace
 * T. Walmer 
 * Frank D. Walsh
 * Hannah Walsh
+* Robin Walter
 * Diane M. Ward
 * Karen Weaver
 * Nathaniel Webb
@@ -674,6 +705,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Richard Williams
 * Harold Wilson
 * Len & Joyce Wilson
+* Stan Wischnowski
 * A. Withrow
 * Deborah Wolfe
 * George Wolff
@@ -681,6 +713,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Margaret Wren
 * Francis Wynne
 * Tom Wyse
+* Peter Yaffe
 * Dr. Bob Yapsuga
 * Tracy Yeomans
 * Berwood Yost
