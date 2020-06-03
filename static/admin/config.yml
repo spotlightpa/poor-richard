@@ -192,6 +192,11 @@ yaml-definitions2: &taxonomy-fields
     name: title
     hint: "Title as it appears at top of page"
     widget: string
+  - label: Link to as
+    name: linktitle
+    hint: "When linking to this page from the collections list, use this as the link title instead of hed"
+    widget: string
+    required: false
   - label: Subhed
     name: subhed
     widget: string
