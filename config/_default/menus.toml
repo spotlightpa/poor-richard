@@ -131,19 +131,25 @@ url = "https://www.twitter.com/SpotlightPA"
 weight = 2
 
 [[social]]
+name = "Instagram"
+pre = "is-uppercase"
+url = "https://www.instagram.com/Spotlightpennsylvania/"
+weight = 3
+
+[[social]]
 name = "Google News"
 pre = "is-uppercase"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 3
+weight = 4
 
 [[social]]
 name = "Apple News"
 pre = "is-uppercase"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
-weight = 4
+weight = 5
 
 [[social]]
 name = "Github"
 pre = "is-uppercase"
 url = "https://www.github.com/spotlightpa/"
-weight = 5
+weight = 6
