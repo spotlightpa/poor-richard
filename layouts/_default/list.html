@@ -50,7 +50,7 @@
           {{ range $page := first 3 $pages }}
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
-                {{ partial "tile-stack.html" $page }}
+                {{ partial "tile-list.html" $page }}
               </div>
             </div>
           {{ end }}
