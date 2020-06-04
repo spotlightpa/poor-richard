@@ -4,5 +4,6 @@ image-description = ""
 image-credit = "Spotlight PA"
 image-size = "hidden"
 title = "Events"
-kicker = "Your Team"
+kicker = "Events"
+linktitle = "Virtual seminars conducted by the Spotlight PA team"
 +++
