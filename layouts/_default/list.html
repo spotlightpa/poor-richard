@@ -9,7 +9,7 @@
 
   {{ $subtitle := .Param "subhed" | default .Description }}
 
-  {{ $p := .Paginator }}
+  {{ $p := .Paginator 30 }}
   {{ $pages := $p.Pages }}
   {{ if .Param "reverse-cron" }}
     {{ $p = dict }}
@@ -46,8 +46,8 @@
     </div>
     <div class="column is-four-fifths has-margin-bottom-thick">
       <nav class="tile is-ancestor is-vertical">
-        <div class="tile">
-          {{ range $page := first 3 $pages }}
+        <div class="tile is-wrapped">
+          {{ range $page := $pages }}
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
                 {{ partial "tile-list.html" $page }}
@@ -58,12 +58,6 @@
       </nav>
     </div>
     <div class="column is-three-fifths">
-      <nav class="tile is-ancestor is-vertical">
-        {{ range $page := after 3 $pages }}
-          {{ partial "tile-archive.html" $page }}
-        {{ end }}
-      </nav>
-
       {{ partial "paginator-level.html" $p }}
     </div>
   </section>
