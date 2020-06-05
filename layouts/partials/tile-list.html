@@ -9,7 +9,7 @@
   {{ else }}
     <h3
       class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-    >{{ $params.kicker | default "News" }}</h3>
+    >{{ $params.published | default $params.kicker | default "News" }}</h3>
   {{ end }}
 
   {{ $name := .Page.Param "image" }}
