@@ -5,8 +5,19 @@
   >
     <div class="column is-three-fifths">
       <div class="tile is-ancestor is-vertical">
-        {{ range $page := .Paginator.Pages }}
-          {{ partial "tile-archive.html" $page }}
+        {{ range .Paginator.Pages.GroupByDate "January 2006" }}
+          <div class="tile is-parent">
+            <h2 class="title">{{ .Key }}</h2>
+          </div>
+          <div class="tile is-wrapped">
+            {{ range $page := .Pages }}
+              <div class="tile is-parent is-4 has-margin-top-negative">
+                <div class="tile is-child">
+                  {{ partial "tile-list.html" $page }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
         {{ end }}
       </div>
 
