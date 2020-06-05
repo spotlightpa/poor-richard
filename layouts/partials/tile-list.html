@@ -5,7 +5,7 @@
     <a
       class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
       href="{{ $params.rubric.RelPermalink }}"
-    >{{ $params.kicker | default $params.rubric.Title }}</a>
+    >{{ $params.published | default $params.rubric.Title }}</a>
   {{ else }}
     <h3
       class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
