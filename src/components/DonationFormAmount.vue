@@ -255,7 +255,7 @@ export default {
         @close-button="noThanks"
       >
         <h1 class="title is-size-3 has-text-black">
-          Would you prefer to donate {{ annualizedAmount | formatUSD }} every
+          Would you prefer to donate {{ formatUSD(annualizedAmount) }} every
           month?
         </h1>
         <p>

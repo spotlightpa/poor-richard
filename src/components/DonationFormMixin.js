@@ -6,6 +6,11 @@ import BulmaModal from "./BulmaModal.vue";
 
 import DonationFormButtons from "./DonationFormButtons.vue";
 
+let currencyFormat = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
 export default {
   components: {
     BulmaField,
@@ -61,6 +66,9 @@ export default {
     },
     stepDec() {
       this.$emit("change-step", -1);
+    },
+    formatUSD(amount) {
+      return currencyFormat.format(amount);
     },
   },
 };

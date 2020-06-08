@@ -18,13 +18,6 @@ library.add(faArrowAltCircleRight, faArrowAltCircleLeft, faEnvelope, faLock);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-let currencyFormat = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
-
-Vue.filter("formatUSD", (amount) => currencyFormat.format(amount));
-
 let GA = {
   install(Vue) {
     Vue.prototype.$gae = (obj) => void sendGAEvent(obj);

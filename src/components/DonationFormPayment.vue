@@ -136,7 +136,7 @@ export default {
     @focus.capture="sendFocus"
   >
     <h2 class="title has-text-centered">
-      Donate {{ formData.donationAmount | formatUSD }}{{ perPeriod }}
+      Donate {{ formatUSD(formData.donationAmount) }}{{ perPeriod }}
     </h2>
     <h3
       v-if="formData.recurring"
@@ -206,10 +206,10 @@ export default {
     <h2 class="title has-margin-top-thick">
       You will be charged:
       <span class="is-hidden-mobile is-pulled-right">
-        {{ formData.donationAmount | formatUSD }} {{ timePeriod }}
+        {{ formatUSD(formData.donationAmount) }} {{ timePeriod }}
       </span>
       <span class="is-hidden-tablet">
-        {{ formData.donationAmount | formatUSD }} {{ timePeriod }}
+        {{ formatUSD(formData.donationAmount) }} {{ timePeriod }}
       </span>
     </h2>
 
