@@ -15,7 +15,7 @@ let dnt = loadItem(DO_NOT_TRACK_KEY);
 export function callGA(...args) {
   if (dnt) {
     // eslint-disable-next-line no-console
-    console.info("GA", args);
+    console.info("GA", JSON.stringify(args));
     return;
   }
   window.ga(...args);
