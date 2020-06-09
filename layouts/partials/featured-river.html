@@ -5,7 +5,6 @@
 {{ end }}
 {{ $featuredStories = last 1 $featuredStories }}
 {{ $topSlots := partial "get-picks" "topSlots" }}
-{{ $edPicks := partial "get-picks" "topSlots" }}
 
 {{ $pages := $featuredStories | append $topSlots }}
 {{ $pages = union $pages $news.RegularPages }}
@@ -53,15 +52,7 @@
           <div class="tile is-parent is-top is-4" style="order: 2">
             <div class="tile is-child">
               {{ partial "most-popular.html" dict }}
-
-              <div class="plain-notification">
-                <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
-                  Editor’s Picks
-                </h1>
-                {{ range $page := $edPicks }}
-                  {{ partial "tile-ed-pix.html" $page }}
-                {{ end }}
-              </div>
+              {{ partial "editors-picks.html" dict }}
             </div>
           </div>
           <div
