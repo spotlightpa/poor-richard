@@ -213,7 +213,7 @@ yaml-definitions2: &taxonomy-fields
     required: false
   - label: Link to as
     name: linktitle
-    hint: "When linking to this page from another page, use this as the link title instead of hed"
+    hint: "When linking to this page from the collections list, use this as the link title instead of hed"
     widget: string
     required: false
 
@@ -311,7 +311,7 @@ collections:
     label_singular: Topic
     name: topics
     folder: content/topics
-    path: "{{slug}}/_index.md"
+    path: "{{slug}}/_index"
     format: toml-frontmatter
     extension: md
     create: true
@@ -323,7 +323,7 @@ collections:
     label_singular: series
     name: series
     folder: content/series
-    path: "{{slug}}/_index.md"
+    path: "{{slug}}/_index"
     format: toml-frontmatter
     extension: md
     create: true
@@ -372,23 +372,6 @@ collections:
             hint: "Show sitewide alert banner"
             widget: boolean
             default: false
-      - label: "Coronavirus landing page"
-        name: topic-coronavirus
-        file: content/topics/coronavirus/_index.md
-        format: toml-frontmatter
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Override title tag
-            name: title-tag
-            widget: string
-          - label: Description
-            name: description
-            widget: string
-          - label: Body
-            name: body
-            widget: markdown
       - label: "News landing page"
         name: news-landing
         file: content/news/_index.md
