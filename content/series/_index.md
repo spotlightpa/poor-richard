@@ -1,5 +1,5 @@
 +++
-title = "Spotlight PA Projects & Investigations"
+title = "Projects & Investigations"
 
 [cascade]
 reverse-cron = true
