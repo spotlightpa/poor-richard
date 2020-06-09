@@ -359,8 +359,7 @@ $margin-sizes: (
 }
 
 .is-full-bleed {
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-left: calc(50% - 50vw);
   width: 100vw;
 }
 
