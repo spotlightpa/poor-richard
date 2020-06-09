@@ -5,6 +5,7 @@
 {{ end }}
 {{ $featuredStories = last 1 $featuredStories }}
 {{ $topSlots := partial "get-picks" "topSlots" }}
+{{ $edPicks := partial "get-picks" "topSlots" }}
 
 {{ $pages := $featuredStories | append $topSlots }}
 {{ $pages = union $pages $news.RegularPages }}
@@ -49,30 +50,47 @@
           @mouseover.once="load()"
           @touchstart.once="load()"
         >
-          {{ partial "most-popular.html" dict }}
+          <div class="tile is-parent is-top is-4" style="order: 2">
+            <div class="tile is-child">
+              {{ partial "most-popular.html" dict }}
 
+              <div class="plain-notification">
+                <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
+                  Editor’s Picks
+                </h1>
+                {{ range $page := $edPicks }}
+                  {{ partial "tile-ed-pix.html" $page }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
           <div
             class="tile is-vertical is-8"
             style="order: 1"
-            x-ref="archives"
           >
-            <div class="tile is-parent is-top">
-              <div class="tile is-child">
-                <h2 class="title is-4 is-uppercase has-text-weight-semibold">
-                  More top stories
-                </h2>
-                <hr class="is-emphatic-underline has-margin-top-negative">
+            <div
+              class="tile is-vertical"
+              x-ref="archives"
+            >
+              <div class="tile is-parent is-top">
+                <div class="tile is-child">
+                  <h2 class="title is-4 is-uppercase has-text-weight-semibold">
+                    More top stories
+                  </h2>
+                  <hr class="is-emphatic-underline has-margin-top-negative">
+                </div>
               </div>
-            </div>
-            {{ range $page := after 3 $pages | first 6 }}
-              {{ partial "tile-horiz.html" $page }}
-            {{ end }}
+              {{ range $page := after 3 $pages | first 20 }}
+                {{ partial "tile-horiz.html" $page }}
+              {{ end }}
 
-            {{ partial "tile-readmore.html" dict }}
+              {{ partial "tile-readmore.html" dict }}
+            </div>
+            <div class="tile"></div>
           </div>
         </div>
       {{ end }}
-      {{ if gt (len $pages) 9 }}
+      {{ if gt (len $pages) 23 }}
         <div class="tile">
           <div class="tile is-parent">
             <div class="tile is-child has-text-centered">
