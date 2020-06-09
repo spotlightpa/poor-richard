@@ -1,0 +1,11 @@
+{{ $edPicks := partial "get-picks" "topSlots" }}
+{{ if $edPicks }}
+  <div class="plain-notification">
+    <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
+      Editor’s Picks
+    </h1>
+    {{ range $page := $edPicks }}
+      {{ partial "tile-ed-pix.html" $page }}
+    {{ end }}
+  </div>
+{{ end }}
