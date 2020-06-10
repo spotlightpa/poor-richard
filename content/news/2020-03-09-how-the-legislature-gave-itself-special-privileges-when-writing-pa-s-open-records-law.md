@@ -10,6 +10,7 @@ title = "How the legislature gave itself special privileges when writing Pa.'s o
 description = "Lawmakers largely exempted themselves from having to reveal many records that other government agencies routinely have to make public."
 blurb = "Lawmakers largely exempted themselves from having to reveal many records that other government agencies routinely have to make public."
 kicker = "The Capitol"
+topics = ["The Capitol"]
 suppress-featured = true
 +++
 When the legislature wrote Pennsylvania’s open records law in 2008, it was hailed as a win for the public, greatly expanding access to a wider array of government records.
