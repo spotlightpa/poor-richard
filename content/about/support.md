@@ -18,7 +18,7 @@ To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donat
 
 ## Major Donors
 
-Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalism Project <br> The Foundation for Enhancing Communities <br> Fund for Nonprofit News at The Miami Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Independence Public Media Foundation <br> Lancaster County Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> Pennsylvania NewsMedia Association Foundation <br> PennLive/The Patriot-News <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Pittsburgh Post-Gazette <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> Scranton Area Foundation <br> The Snider Foundation <br> The Steinman Foundation <br> Robert and Dianne Vickery <br> Wyncote Foundation <br> York County Community Foundation <br>
+Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalism Project <br> The Foundation for Enhancing Communities <br> Fund for Nonprofit News at The Miami Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Independence Public Media Foundation <br> Lancaster County Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> Pennsylvania NewsMedia Association Foundation <br> PennLive/The Patriot-News <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Pittsburgh Post-Gazette <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> Scranton Area Foundation <br> The Snider Foundation <br> Diane and Brinkley Sprunt <br> The Steinman Foundation <br> Robert and Dianne Vickery <br> Wyncote Foundation <br> York County Community Foundation <br>
 
 ## Founding Donors
 
@@ -765,6 +765,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kathleen F. Weidner
 * Talia Wiener
 * Justin Wier
+* William Penn Foundation Matching Gifts Program
 * Richard Williams
 * Joan Williamson
 * Harold Wilson
