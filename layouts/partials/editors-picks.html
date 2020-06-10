@@ -2,9 +2,9 @@
 {{ if $edPicks }}
   <div class="plain-notification">
     <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
-      Editor’s Picks
+      Editor’s Pick
     </h1>
-    {{ range $page := $edPicks }}
+    {{ range $page := last 1 $edPicks }}
       {{ partial "tile-ed-pix.html" $page }}
     {{ end }}
   </div>
