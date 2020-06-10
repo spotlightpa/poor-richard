@@ -95,6 +95,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Skip Brommer
 * D. Brooks
 * Gay Brown
+* Gay Brown & Glenn Carr
 * James D. Brown
 * Lisa Brown
 * Henry & Martha Bryans
@@ -150,6 +151,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Douglas and Laurel Costa
 * R. Cotlar
 * Brett Cott
+* Richard F. Couche
 * Chris Coyle
 * C. Craige
 * Lauren Cristella
@@ -277,6 +279,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Stephen M. Glynn
 * Denise Gmerek
 * Jennifer Goettner
+* Nancy B. Gold
 * Mary L. Goldman
 * Tamara Goldman
 * William Gontram
@@ -402,6 +405,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Frank Kirkwood
 * Anne & Jack Kline
 * Donald Kmieczak
+* Rose Marie Grahn Knight
 * Harold G. Kohn
 * Susan T. Koch
 * Gerald Kolpan
@@ -436,6 +440,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * B. Lauridsen & G. Harke
 * Lora Lavin
 * Cindy Lawn
+* Harriet Lawrence
 * Patricia Leach
 * Irwin Lederstein
 * Jamie Lemon & Steve Cline
@@ -571,6 +576,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * D. & G. Phelps
 * Amy Phillips
 * Rick Piper
+* Joseph J. Podrasky
 * Daniel Poresky
 * Frank Potere
 * Donald Powell
@@ -760,6 +766,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Talia Wiener
 * Justin Wier
 * Richard Williams
+* Joan Williamson
 * Harold Wilson
 * Len & Joyce Wilson
 * Mary Wilson
