@@ -1,16 +1,9 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 <article>
-  {{ if $params.rubric }}
-    <a
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-      href="{{ $params.rubric.RelPermalink }}"
-    >{{ $params.published | default $params.rubric.Title }}</a>
-  {{ else }}
-    <h3
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-    >{{ $params.published | default $params.kicker | default "News" }}</h3>
-  {{ end }}
+  <h3
+    class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+  >{{ $params.published | default $params.kicker | default "News" }}</h3>
 
   {{ $name := .Page.Param "image" }}
   {{ $credit := .Page.Param "image-credit" }}
@@ -25,13 +18,13 @@
   {{ partial "image-block.html" $imgOpts }}
 
   <h2 class="subtitle is-5 is-size-4-widescreen is-spaced has-margin-top-thin">
-    <a class="has-text-grey-dark hover-underline" href="{{ .RelPermalink }}">
+    <a class="has-text-grey-dark hover-underline" href="{{ $params.link }}">
       {{ .LinkTitle }}
     </a>
   </h2>
   {{ if $params.byline }}
     <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-      <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
+      <a href="{{ $params.link }}" class="has-text-grey hover-underline">
         by {{ $params.byline }}
       </a>
     </h3>

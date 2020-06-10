@@ -197,15 +197,6 @@ yaml-definitions2: &taxonomy-fields
     widget: string
     hint: "Appears below hed at top of page; AKA dek"
     required: false
-  - label: Summary
-    name: description
-    hint: "Shown in social share previews and search results"
-    widget: string
-    required: false
-  - label: Body
-    name: body
-    widget: markdown
-    required: false
   - label: "Override title tag"
     name: title-tag
     widget: string
@@ -215,6 +206,20 @@ yaml-definitions2: &taxonomy-fields
     name: linktitle
     hint: "When linking to this page from the collections list, use this as the link title instead of hed"
     widget: string
+    required: false
+  - label: Summary
+    name: description
+    hint: "Shown in social share previews and search results"
+    widget: string
+    required: false
+  - label: Link to story
+    name: link
+    hint: "Link to an individual page URL instead of a collection landing"
+    widget: string
+    required: false
+  - label: Body
+    name: body
+    widget: markdown
     required: false
 
 collections:
