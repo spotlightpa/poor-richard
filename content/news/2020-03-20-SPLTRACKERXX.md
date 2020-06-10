@@ -23,7 +23,7 @@
 	"internal-budget": "",
 	"arc-id": "3GDODRFJRJFCZBRYTDMWVDQDQI",
 	"linktitle": "",
-	"series": [],
+	"series": ["Coronavirus Map"],
 	"subtitle": "",
 	"suppress-title": true,
 	"modal-exclude": true
