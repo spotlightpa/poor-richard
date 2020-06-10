@@ -1,17 +1,6 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 <article class="has-margin-bottom">
-  {{ if $params.rubric }}
-    <a
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-      href="{{ $params.rubric.RelPermalink }}"
-    >{{ $params.kicker | default $params.rubric.Title }}</a>
-  {{ else }}
-    <h3
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
-    >{{ $params.kicker | default "News" }}</h3>
-  {{ end }}
-
   {{ $name := .Page.Param "image" }}
   {{ $credit := .Page.Param "image-credit" }}
   {{ $description := .Page.Param "image-description" }}
