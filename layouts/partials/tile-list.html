@@ -11,7 +11,7 @@
   {{ $imgOpts := dict "filename" $name }}
   {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
   {{ $imgOpts = dict "description" $description | merge $imgOpts }}
-  {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
+  {{ $imgOpts = dict "link" $params.link | merge $imgOpts }}
   {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
