@@ -405,32 +405,6 @@ collections:
           - label: Body
             name: body
             widget: markdown
-      - label: Profiles
-        name: profiles
-        file: data/profiles.toml
-        fields:
-          - label: "Team members"
-            label_singular: Member
-            name: profiles
-            widget: list
-            fields:
-              - label: Name
-                name: name
-                widget: string
-              - label: Title
-                name: title
-                widget: string
-              - label: Email
-                name: email
-                widget: string
-                required: false
-              - label: Twitter
-                name: twitter
-                widget: string
-                required: false
-              - label: Content
-                name: content
-                widget: markdown
       - label: Menus
         name: menus
         file: config/_default/menus.toml
