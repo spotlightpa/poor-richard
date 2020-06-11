@@ -72,6 +72,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Sean Brennan
 * Robert Joseph Biller
 * Eugene Blagmond
+* Nancy J. Blaha
 * Gorden Blain
 * William Blando
 * Mary L. Bloom
@@ -735,7 +736,6 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Jane Valdes-Dapena
 * Heather Valudes
 * Harold Vandegrift
-* Jula Verga
 * Dennis Verona
 * Robert F. Vickery
 * Joseph C. Vignola
