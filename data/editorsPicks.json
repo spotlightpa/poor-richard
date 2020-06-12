@@ -9,9 +9,9 @@
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-12-SPLGREEN12.md",
     "content/news/2020-06-10-SPLSPEAKER11.md",
-    "content/news/2020-06-10-SPLRESO11.md",
-    "content/news/2020-06-09-SPLTESTS10.md"
+    "content/news/2020-06-10-SPLRESO11.md"
   ],
   "sidebarPicks": [
     "content/news/2020-05-09-SPLHOMES10.md"
