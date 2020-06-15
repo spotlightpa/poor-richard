@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-06-13-SPLINFECTION14.md"
+    "content/news/2020-06-15-SPLTRENDS16.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-09-SPLTESTS10.md",
-    "content/news/2020-05-09-SPLHOMES10.md"
+    "content/news/2020-05-02-SPLSPIKE03.md",
+    "content/news/2020-04-27-SPLSTATELINE28.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-13-SPLINFECTION14.md",
     "content/news/2020-06-11-SPLREP12.md",
-    "content/news/2020-06-10-SPLSPEAKER11.md",
     "content/news/2020-06-10-SPLRESO11.md"
   ],
   "sidebarPicks": [
