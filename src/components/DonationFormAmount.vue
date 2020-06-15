@@ -167,8 +167,9 @@ export default {
       />
 
       <p class="is-size-3 is-size-4-mobile">
-        Help us continue to aggressively cover Pennsylvania’s response to the
-        coronavirus and how it’s affecting communities in the state.
+        Your tax-deductible donation to Spotlight PA will help us investigate
+        one of the largest and most opaque state capitals in the U.S. Together,
+        we can hold the powerful to account.
       </p>
     </hgroup>
 
