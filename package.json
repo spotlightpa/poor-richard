@@ -23,14 +23,14 @@
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}"
   },
   "dependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@fortawesome/vue-fontawesome": "^0.1.7",
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@newswire/frames": "^0.3.1",
     "@vue/component-compiler-utils": "^3.0.0",
     "alpinejs": "^2.2.1",
@@ -43,15 +43,15 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.1.0",
+    "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "14.1.1",
-    "eslint-plugin-import": ">=2.20.1",
+    "eslint-plugin-import": ">=2.21.2",
     "eslint-plugin-node": ">=7.0.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": ">=4.0.1",
     "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "next",
+    "eslint-plugin-vue": "6.2.2",
     "prettier": "^2.0.1",
     "vue-hot-reload-api": "^2.3.4"
   }
