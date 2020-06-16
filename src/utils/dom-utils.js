@@ -36,18 +36,6 @@ export function once(ev, qs, cb) {
   });
 }
 
-export function transition(el, clsName, clsNameActive, duration) {
-  el.classList.add(clsName);
-  // IE11 has broken classList.add
-  el.classList.add(clsNameActive);
-  window.setTimeout(() => {
-    el.classList.remove(clsName);
-    window.setTimeout(() => {
-      el.classList.remove(clsNameActive);
-    }, duration);
-  }, 0);
-}
-
 export function storeItem(name, obj, { useSession = false } = {}) {
   let store = useSession ? window.sessionStorage : window.localStorage;
   let data = JSON.stringify(obj);
