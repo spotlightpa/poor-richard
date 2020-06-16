@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-06-15-SPLCAMS16.md"
+    "content/news/2020-06-16-SPLtracing17.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-08-SPLHOUSE09.md",
-    "content/news/2020-06-03-SPLROSE03.md"
+    "content/news/2020-06-12-SPLGREEN12.md",
+    "content/news/2020-04-24-SPLNURSE27.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2020-06-13-SPLINFECTION14.md",
-    "content/news/2020-06-15-SPLREFORM16.md",
-    "content/news/2020-06-15-SPLTRENDS16.md"
+    "content/news/2020-06-15-SPLCAMS16.md",
+    "content/news/2020-06-15-SPLREFORM16.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-08-SPLCARES09.md"
