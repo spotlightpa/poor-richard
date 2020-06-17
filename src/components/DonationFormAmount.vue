@@ -1,11 +1,11 @@
 <script>
 import DonationFormMixin from "./DonationFormMixin.js";
 
-// CnP down from Sunday, March 15th, 2020 from 3:00 - 6:00 AM ET
+// CnP down June 21st, 2020 from 3:00 AM ET to 6:00 AM ET
 let showDowntime = false;
 {
-  const downtimeStart = new Date("2020-03-15T02:00:00-05:00");
-  const downtimeStop = new Date("2020-03-15T07:00:00-05:00");
+  const downtimeStart = new Date("2020-06-21T02:00:00-04:00");
+  const downtimeStop = new Date("2020-06-21T07:00:00-04:00");
   const now = new Date();
   if (downtimeStart < now && now < downtimeStop) {
     showDowntime = true;
@@ -141,7 +141,7 @@ export default {
         <p>
           Due to planned system maintenance, we will not be able to receive
           donations
-          <strong>Sunday, March 15th, 2020 from 3:00 - 6:00 AM ET</strong>.
+          <strong>Sunday, June 21st, 2020 from 3:00 AM – 6:00 AM ET</strong>.
           Please wait until after this planned maintenance period to make your
           donation. Thank you for your patience and your support of Spotlight
           PA.
