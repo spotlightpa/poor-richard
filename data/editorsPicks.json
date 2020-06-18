@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-06-17-SPLDATA18.md"
+    "content/news/2020-06-18-SPLHOMES18.md"
   ],
   "subfeatures": [
-    "content/news/2020-05-02-SPLSPIKE03.md",
-    "content/news/2020-04-27-SPLSTATELINE28.md"
+    "content/news/2020-06-13-SPLINFECTION14.md",
+    "content/news/2020-06-09-SPLTESTS10.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-06-16-SPLtracing17.md",
+    "content/news/2020-06-17-SPLDATA18.md",
     "content/news/2020-06-15-SPLCAMS16.md",
-    "content/news/2020-06-13-SPLINFECTION14.md"
+    "content/news/2020-06-16-SPLtracing17.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-08-SPLCARES09.md"
