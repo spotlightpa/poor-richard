@@ -179,6 +179,12 @@ url = "https://www.standardspeaker.com"
 logotype = "jpeg"
 
 [[partners]]
+name = "Times News"
+slug = "times-news-online"
+url = "https://www.tnonline.com"
+logotype = "png"
+
+[[partners]]
 name = "The Times-Tribune"
 slug = "times-tribune"
 url = "https://www.thetimes-tribune.com"
