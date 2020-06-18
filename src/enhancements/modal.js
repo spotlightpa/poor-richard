@@ -37,9 +37,9 @@ export default function modal() {
       });
 
       this.oldFocus = document.activeElement;
-      window.setTimeout(() => {
+      this.$nextTick(() => {
         this.$refs.content.focus();
-      }, 500);
+      });
     },
 
     focus() {
