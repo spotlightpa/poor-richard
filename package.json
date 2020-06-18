@@ -33,7 +33,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@newswire/frames": "^0.3.1",
     "@vue/component-compiler-utils": "^3.0.0",
-    "alpinejs": "^2.2.1",
+    "alpinejs": "^2.4.0",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.8.0",
     "parcel-bundler": "^1.12.4",
