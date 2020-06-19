@@ -54,6 +54,7 @@ yaml-definitions: &page-fields
     default: []
     field:
       label: Name
+      name: ""
       hint: "Full name as listed in data profile"
       widget: string
   - label: Byline
@@ -117,6 +118,7 @@ yaml-definitions: &page-fields
     default: []
     field:
       label: Name
+      name: ""
       widget: string
   - label: Series
     label_singular: series
@@ -126,6 +128,7 @@ yaml-definitions: &page-fields
     default: []
     field:
       label: Name
+      name: ""
       widget: string
   - label: "Suppress title"
     name: suppress-title
