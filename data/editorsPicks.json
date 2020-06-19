@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/news/2020-06-19-SPLVGT20.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2019-10-23-SPLCREDITTRIP24.md"
+  ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
