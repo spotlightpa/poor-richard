@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-06-20-SPLROSE20.md"
+    "content/news/2020-06-22-SPLGLEAN19.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-15-SPLCAMS16.md",
-    "content/news/2020-06-18-SPLLGBT19.md"
+    "content/news/2020-06-17-SPLDATA18.md",
+    "content/news/2020-06-15-SPLTRENDS16.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-20-SPLROSE20.md",
     "content/news/2020-06-18-SPLHOMES18.md",
-    "content/news/2020-06-19-SPLVGT20.md",
-    "content/news/2020-06-17-SPLDATA18.md"
+    "content/news/2020-06-19-SPLVGT20.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-11-SPLREP12.md"
