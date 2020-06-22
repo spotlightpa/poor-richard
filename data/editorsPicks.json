@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-06-22-SPLGLEAN19.md"
+    "content/news/2020-06-22-SPLSPEAKER23.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-17-SPLDATA18.md",
-    "content/news/2020-06-15-SPLTRENDS16.md"
+    "content/news/2020-06-15-SPLREFORM16.md",
+    "content/news/2020-06-10-SPLSPEAKER11.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
