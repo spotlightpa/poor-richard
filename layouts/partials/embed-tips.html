@@ -106,13 +106,13 @@
 </div>
 <script>
   (function() {
-    let hostPage = /\bhost_page=([^&]+)/.exec(window.location.hash)?.[1];
+    var hostPage = /\bhost_page=([^&]+)/.exec(window.location.hash);
     if (hostPage) {
-      let value = decodeURIComponent(hostPage);
-      console.log(value)
-      document.querySelector("[name=host_page]").value = value;
-    } else {
-      console.log(window.location.hash)
+      hostPage = hostPage[1];
+      var el = document.querySelector("[name=host_page]");
+      if (hostPage && el) {
+        el.value = decodeURIComponent(hostPage);
+      }
     }
 
     function replacer(paramRe, qs) {
