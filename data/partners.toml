@@ -155,6 +155,12 @@ url = "http://northpennnow.com/"
 logotype = "png"
 
 [[partners]]
+name = "Observer-Reporter"
+slug = "observer-reporter"
+url = "https://observer-reporter.com"
+logotype = "png"
+
+[[partners]]
 name = "PA Post"
 slug = "papost"
 url = "https://papost.org"
