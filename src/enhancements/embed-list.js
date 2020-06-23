@@ -32,11 +32,11 @@ export default function embedList() {
             .map(({ name, value }) => name + "=" + encodeURIComponent(value))
             .join("&");
       }
-      url += "#host_page=" + encodeURIComponent(window.location.href);
+      let fullURL = url + "#host_page=" + encodeURIComponent(window.location.href);
 
       // set URL on the obj
       if (this.srcEl.shadowRoot) {
-        this.srcEl.shadowRoot.querySelector("iframe").src = url;
+        this.srcEl.shadowRoot.querySelector("iframe").src = fullURL;
       }
       // set embedCode to copy
       this.embedCode =
