@@ -14,6 +14,7 @@ onLoad(() => {
       console.warn("bad embed URL", src);
       return;
     }
+    src += "#host_page=" + encodeURIComponent(window.location.href);
     // Use shadowDOM to override CSS for iframes
     let container =
       "attachShadow" in el ? el.attachShadow({ mode: "open" }) : el;

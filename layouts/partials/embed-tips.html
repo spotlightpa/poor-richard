@@ -18,7 +18,9 @@
   >
     <p class="is-hidden">
       <label>
-        Don’t fill this out if you're human: <input name="bot-field">
+        Don’t fill this out if you're human:
+        <input name="bot-field">
+        <input name="host_page" type="hidden">
       </label>
     </p>
     <div class="field is-horizontal">
@@ -104,6 +106,15 @@
 </div>
 <script>
   (function() {
+    let hostPage = /\bhost_page=([^&]+)/.exec(window.location.hash)?.[1];
+    if (hostPage) {
+      let value = decodeURIComponent(hostPage);
+      console.log(value)
+      document.querySelector("[name=host_page]").value = value;
+    } else {
+      console.log(window.location.hash)
+    }
+
     function replacer(paramRe, qs) {
       var re = paramRe.exec(window.location.search);
       var el = document.querySelector(qs);
