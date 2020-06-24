@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-06-24-SPLWAIVER24.md"
+    "content/news/2020-06-24-SPLREFORM25.md"
   ],
   "subfeatures": [
-    "content/news/2020-05-14-SPLAUDIT15.md",
-    "content/news/2020-05-13-SPLYANKED13.md"
+    "content/news/2020-06-20-SPLROSE20.md",
+    "content/news/2020-06-03-SPLROSE03.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-24-SPLWAIVER24.md",
     "content/news/2020-06-23-SPLGAMBLING24.md",
-    "content/news/2020-06-22-SPLSPEAKER23.md",
-    "content/news/2020-06-20-SPLROSE20.md"
+    "content/news/2020-06-22-SPLSPEAKER23.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-11-SPLREP12.md"
