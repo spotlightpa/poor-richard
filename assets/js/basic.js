@@ -112,14 +112,6 @@
     }
   }
 
-  function onLoad(cb) {
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", cb);
-    } else {
-      cb();
-    }
-  }
-
   var DO_NOT_TRACK_KEY = "do-not-track";
   var dnt = loadItem(DO_NOT_TRACK_KEY);
 
@@ -281,5 +273,5 @@
     window.ga.l = +new Date();
   }
 
-  onLoad(addGAListeners);
+  addGAListeners();
 })();
