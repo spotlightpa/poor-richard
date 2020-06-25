@@ -162,9 +162,7 @@ export default {
         at no cost thanks to readers like you.
       </p>
 
-      <hr
-        class="is-emphatic-underline is-margin-centered my-5 max-12r"
-      />
+      <hr class="is-emphatic-underline is-margin-centered my-5 max-12r" />
 
       <p class="is-size-3 is-size-4-mobile">
         Your tax-deductible donation to Spotlight PA will help us investigate
