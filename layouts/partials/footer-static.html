@@ -1,0 +1,4 @@
+{{ $js := resources.Get "js/basic.js" | minify }}
+<script>
+{{ $js.Content }}
+</script>

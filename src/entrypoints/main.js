@@ -1,9 +1,8 @@
 import { each, on, onLoad } from "../utils/dom-utils.js";
 import { addSocialButtonListeners } from "../utils/social.js";
-import { addGAListeners } from "../utils/google-analytics.js";
-import "../utils/metrics.js";
+import { loadEnhancements } from "../utils/enhancements.js";
 
-function createListeners() {
+onLoad(() => {
   on("click", "[data-target]", (ev) => {
     let targets = ev.currentTarget.dataset.target;
     let toggleClass = ev.currentTarget.dataset.toggleClass;
@@ -25,18 +24,6 @@ function createListeners() {
     }
   });
 
-  addGAListeners();
   addSocialButtonListeners();
-
-  try {
-    import("../utils/enhancements.js").then((module) => {
-      module.load();
-    });
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.warn("could not load enhancements", e);
-    document.body.classList.add("has-old-js");
-  }
-}
-
-onLoad(createListeners);
+  loadEnhancements();
+});

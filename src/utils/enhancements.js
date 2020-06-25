@@ -23,7 +23,7 @@ window.spl = Object.assign({}, window.spl, {
   sticky,
 });
 
-export function load() {
+export function loadEnhancements() {
   if (loadAlpine) {
     loadAlpine();
   }
