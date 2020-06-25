@@ -11,16 +11,16 @@
   {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
 {{ else if eq $size "letterbox" }}
   {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
 {{ else if eq $size "full" }}
   {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "is-full-bleed has-margin-bottom" | merge $imgOpts }}
+  {{ $imgOpts = dict "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
 {{ end }}
 {{ if ne $size "hidden" }}
   {{ $imgOpts | partial "image-block.html" }}

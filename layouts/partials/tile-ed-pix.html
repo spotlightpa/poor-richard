@@ -1,6 +1,6 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
-<article class="has-margin-bottom">
+<article class="mb-5">
   {{ $name := .Page.Param "image" }}
   {{ $credit := .Page.Param "image-credit" }}
   {{ $description := .Page.Param "image-description" }}
@@ -13,7 +13,7 @@
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
   {{ partial "image-block.html" $imgOpts }}
 
-  <h2 class="title is-4 is-spaced has-margin-top-thin">
+  <h2 class="title is-4 is-spaced mt-2">
     <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
       {{ .LinkTitle }}
     </a>

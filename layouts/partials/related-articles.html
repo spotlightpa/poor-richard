@@ -2,7 +2,7 @@
 {{ $related := $news.RegularPages.Related . | first 3 }}
 {{ with $related }}
   <nav
-    class="columns is-centered has-margin-top"
+    class="columns is-centered mt-5"
     data-ga-action="Related content"
     x-data="spl.readmore({ showDate: true })"
   >

@@ -1,7 +1,7 @@
 {{ $promo := .Param "promo-text" | markdownify }}
 {{ $link := .Param "promo-link" }}
 {{ $gaEvent := dict "eventCategory" "Promo Interaction" "eventAction" "click" "eventLabel" $link "transport" "beacon" }}
-<section class="has-background-white has-margin-top has-radius-padding">
+<section class="has-background-white mt-5 has-radius-padding">
   <a
     href="{{ $link }}"
     data-ga-event="{{ $gaEvent | jsonify }}"
