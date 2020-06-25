@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <div class="has-margin-bottom">
+  <div class="mb-5">
     <div class="field">
       <div class="control">
         <CopyTextarea

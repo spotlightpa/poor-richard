@@ -23,28 +23,28 @@
     data-ga-action="{{ .Title }} list"
   >
     <div class="column is-three-fifths">
-      <header class="has-margin-bottom">
+      <header class="mb-5">
         {{ if $showDate }}
           <p
-            class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
           >{{ $date.Format "January 2006" }}</p>
         {{ end }}
         <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
           {{ .Title }}
         </h1>
-        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch has-margin-bottom-thick">
+        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
           {{ $subtitle }}
         </h2>
 
         {{ partial "hero-image-block.html" . }}
       </header>
       {{ with .Content }}
-        <div class="content has-margin-bottom-thick">
+        <div class="content mb-6">
           {{ . }}
         </div>
       {{ end }}
     </div>
-    <div class="column is-four-fifths has-margin-bottom-thick">
+    <div class="column is-four-fifths mb-6">
       <nav class="tile is-ancestor is-vertical">
         <div class="tile is-wrapped">
           {{ range $page := $pages }}

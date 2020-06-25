@@ -3,12 +3,12 @@
 <article>
   {{ if $params.rubric }}
     <a
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
       href="{{ $params.rubric.RelPermalink }}"
     >{{ $params.kicker | default $params.rubric.Title }}</a>
   {{ else }}
     <h3
-      class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
     >{{ $params.kicker | default "News" }}</h3>
   {{ end }}
 
@@ -24,7 +24,7 @@
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
   {{ partial "image-block.html" $imgOpts }}
 
-  <h2 class="title is-4 is-spaced has-margin-top-thin">
+  <h2 class="title is-4 is-spaced mt-2">
     <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
       {{ .LinkTitle }}
     </a>

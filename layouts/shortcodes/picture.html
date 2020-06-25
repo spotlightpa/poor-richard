@@ -15,7 +15,7 @@
 {{ $imgOpts = dict "widthRatio" $widthRatio | merge $imgOpts }}
 {{ $imgOpts = dict "heightRatio" $heightRatio | merge $imgOpts }}
 {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-{{ $imgOpts = dict "figClass" "has-margin-bottom" | merge $imgOpts }}
+{{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
 {{ $imgOpts | partial "image-block.html" }}
 
 {{ with $caption }}

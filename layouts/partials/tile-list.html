@@ -2,7 +2,7 @@
 
 <article>
   <h3
-    class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+    class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
   >{{ $params.published | default $params.kicker | default "News" }}</h3>
 
   {{ $name := .Page.Param "image" }}
@@ -17,7 +17,7 @@
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
   {{ partial "image-block.html" $imgOpts }}
 
-  <h2 class="subtitle is-5 is-size-4-widescreen is-spaced has-margin-top-thin">
+  <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
     <a class="has-text-grey-dark hover-underline" href="{{ $params.link }}">
       {{ .LinkTitle }}
     </a>

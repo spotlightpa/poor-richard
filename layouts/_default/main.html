@@ -14,12 +14,12 @@
         <header class="block">
           {{ if $params.rubric }}
             <a
-              class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
               href="{{ $params.rubric.RelPermalink }}"
             >{{ $params.kicker | default $params.rubric.Title }}</a>
           {{ else if $params.kicker }}
             <p
-              class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
             >{{ $params.kicker }}</p>
           {{ else }}
             <div class="is-clearfix">
@@ -63,7 +63,7 @@
             </h3>
           {{ end }}
 
-          <div class="has-margin-top has-margin-bottom">
+          <div class="my-5">
             {{ partial "social-buttons.html" . }}
           </div>
         </header>

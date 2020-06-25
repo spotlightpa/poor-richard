@@ -72,7 +72,7 @@ export default {
     </h2>
     <h3
       v-if="formData.recurring"
-      class="subtitle has-text-centered has-margin-bottom is-spaced"
+      class="subtitle has-text-centered mb-5 is-spaced"
     >
       Payments recur {{ timePeriod }} until canceled
     </h3>

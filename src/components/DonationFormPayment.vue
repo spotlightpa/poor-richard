@@ -140,7 +140,7 @@ export default {
     </h2>
     <h3
       v-if="formData.recurring"
-      class="subtitle has-text-centered has-margin-bottom is-spaced"
+      class="subtitle has-text-centered mb-5 is-spaced"
     >
       Payments recur {{ timePeriod }} until canceled
     </h3>
@@ -203,7 +203,7 @@ export default {
       </div>
     </div>
 
-    <h2 class="title has-margin-top-thick">
+    <h2 class="title mt-6">
       You will be charged:
       <span class="is-hidden-mobile is-pulled-right">
         {{ formatUSD(formData.donationAmount) }} {{ timePeriod }}

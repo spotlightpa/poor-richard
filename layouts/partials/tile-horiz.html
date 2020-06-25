@@ -7,12 +7,12 @@
       <div class="tile is-child">
         {{ if $params.rubric }}
           <a
-            class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
             href="{{ $params.rubric.RelPermalink }}"
           >{{ $params.kicker | default $params.rubric.Title }}</a>
         {{ else }}
           <h3
-            class="tag is-square is-black is-uppercase has-text-weight-semibold has-margin-bottom-thin"
+            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
           >{{ $params.kicker | default "News" }}</h3>
         {{ end }}
       </div>
@@ -38,7 +38,7 @@
 
     <div class="tile is-parent is-8 is-bottom-tablet">
       <div class="tile is-child">
-        <h2 class="title is-spaced is-4 has-margin-top-thin-tablet">
+        <h2 class="title is-spaced is-4 mt-2-tablet">
           <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
             {{ .LinkTitle }}
           </a>

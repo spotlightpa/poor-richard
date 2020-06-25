@@ -148,7 +148,7 @@ export default {
         </p>
       </div>
     </div>
-    <hgroup class="has-text-centered has-margin-bottom-thick">
+    <hgroup class="has-text-centered mb-6">
       <h1
         class="title is-spaced has-text-black is-uppercase"
         :class="sizeTitle"
@@ -163,7 +163,7 @@ export default {
       </p>
 
       <hr
-        class="is-emphatic-underline is-margin-centered has-margin-top has-margin-bottom max-12r"
+        class="is-emphatic-underline is-margin-centered my-5 max-12r"
       />
 
       <p class="is-size-3 is-size-4-mobile">
@@ -218,7 +218,7 @@ export default {
       :required="true"
     ></BulmaFieldInput>
 
-    <div class="buttons has-margin-top-thick">
+    <div class="buttons mt-6">
       <button
         type="button"
         class="button is-fullwidth is-danger has-text-weight-semibold"
