@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-06-30-SPLEVICT01.md"
+    "content/news/2020-07-01-SPLMASK02.md"
   ],
   "subfeatures": [
-    "content/news/2020-05-07-SPLEVICT07.md"
+    "content/news/2020-06-15-SPLTRENDS16.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-06-30-SPLEVICT01.md",
     "content/news/2020-06-24-SPLREFORM25.md",
-    "content/news/2020-06-24-SPLWAIVER24.md",
-    "content/news/2020-06-23-SPLGAMBLING24.md"
+    "content/news/2020-06-24-SPLWAIVER24.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-13-SPLINFECTION14.md"
