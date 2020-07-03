@@ -35,7 +35,7 @@ Just months earlier, he had signed a law that effectively banned ordinary Pennsy
 
 “Everyone discovered that because of this new law they can have an even better time free from customary worries,” James said shortly after Independence Day that year, according to a newspaper report.
 
-This July 4th weekend, three years after the state lifted its ban on fireworks, many across the state are harkening back to days of peace and quiet. Sales of fireworks amid the coronavirus pandemic are booming, and so are complaints about nightly amateur pyrotechnic displays.
+This July 4th weekend, three years after Pennsylvania lifted its ban on fireworks, many across the state are harkening back to days of peace and quiet. Sales of fireworks amid the coronavirus pandemic are booming, and so are complaints about nightly amateur pyrotechnic displays.
 
 But the likelihood of the legislature reinstating a ban — or at least allowing cities and towns the right to do it — comes down to one thing: cash.
 
