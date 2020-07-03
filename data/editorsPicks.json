@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-07-02-SPLREVENUE03.md"
+    "content/news/2020-07-03-SPLFIREWORKS03.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-08-SPLCARES09.md",
-    "content/news/2020-05-26-SPLBUDGET27.md"
+    "content/news/2020-05-26-SPLBUDGET27.md",
+    "content/news/2020-07-02-SPLREVENUE03.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
