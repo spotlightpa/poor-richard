@@ -2,7 +2,7 @@
 arc-id = "GFVW7ASD3ZHKHDT72VM3YSYZ4M"
 internal-id = "SPLCORONERS10"
 internal-budget = ""
-image = "external/petnkregtjaajzzyrz813db49w.jpeg"
+image = "external/dveqr2p60d929tnzsxvc605pdc.jpeg"
 image-description = "Chester County Coroner Dr. Christina VandePol — seen here with office manager Patty Emmons — said her office has had two positive COVID-19 test results come back from deaths that occurred “at home or in the community.”"
 image-caption = ""
 image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
@@ -46,7 +46,7 @@ The head of the group that represents the state’s coroners says he can’t see
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-Some coroners, like VandePol, have started to acquire diagnostic kits — which they say they need to test people who died in their homes or outside of a hospital — but the Department of Health is recommending that they use them sparingly. In <a href="https://www.health.pa.gov/topics/Documents/Diseases%20and%20Conditions/Interim%20Guidance%20on%20Postmortem%20Care%20of%20a%20Decedent%20Whose%20Death%20is%20Confirmed%20or%20Suspected%20to%20be%20Attributed%20to%20COVID-19.pdf">interim guidance</a> released Tuesday, the department said coroners should “use their judgment” to determine whether to test a body based on a combination of factors, including if a person had symptoms or lived in an area with “known community transmission.”
+Some coroners, like VandePol, have started to acquire diagnostic kits — which they say they need to test people who died in their homes or outside of a hospital — but the Department of Health is recommending that they use them sparingly. In <a href="#" data-gone="https://www.health.pa.gov/topics/Documents/Diseases%20and%20Conditions/Interim%20Guidance%20on%20Postmortem%20Care%20of%20a%20Decedent%20Whose%20Death%20is%20Confirmed%20or%20Suspected%20to%20be%20Attributed%20to%20COVID-19.pdf">interim guidance</a> released Tuesday, the department said coroners should “use their judgment” to determine whether to test a body based on a combination of factors, including if a person had symptoms or lived in an area with “known community transmission.”
 
 To determine which bodies to test, VandePol has been using information she learns from a family, like whether they knew of a fever, shortness of breath, or a cough. She has access to medical records, too, she said, so she can understand a person’s underlying health condition.
 
