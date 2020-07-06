@@ -1,6 +1,10 @@
 import { sendGAEvent } from "../utils/google-analytics.js";
 import imgproxy from "../utils/imgproxy-url.js";
 
+function roundUp(n, by) {
+  return by * Math.ceil(n / by);
+}
+
 function toStory(data, { width, height }) {
   return {
     ...data,
@@ -28,9 +32,12 @@ export default ({ showDate = false }) => {
         Array.from(this.$el.querySelectorAll("a")).map((el) => el.pathname)
       );
       // Figure out the right image size to request
-      let { width, height } = this.$refs.archives.querySelector("figure img");
-      width = window.devicePixelRatio * width;
-      height = window.devicePixelRatio * height;
+      let { width = 0, height = 0 } = this.$refs.archives.querySelector(
+        "figure img"
+      );
+      let aspectRatio = height / width;
+      width = roundUp(window.devicePixelRatio * width, 100);
+      height = Math.round(aspectRatio * width);
 
       fetch("/news/feed-summary.json")
         .then((rsp) => rsp.json())
