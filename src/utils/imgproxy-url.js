@@ -30,7 +30,7 @@ export default function imageURL(
   if (supportsWebp && extension === "jpeg") {
     extension = "webp";
   }
-  let baseURL = "https://images.data.spotlightpa.org";
+  let baseURL = "https://www.spotlightpa.org/imgproxy";
   let signature = "insecure";
   let resizing_type = "fill";
   let gravity = "sm";
