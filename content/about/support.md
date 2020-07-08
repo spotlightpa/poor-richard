@@ -84,6 +84,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Suzanne Bonamici
 * Albert Bono
 * Alex Bonwit
+* Constance Borichevsky
 * Diane Bosak
 * Anna R. Bou
 * John Bouder
@@ -120,6 +121,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Will Carpenter
 * Bruce Carr
 * Richard Carroll
+* J. Carson
 * Linda L. Casale 
 * Ashleigh Graf Casassa
 * Ben & Laura Cattell Noll
@@ -167,6 +169,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Peggy & Mark Curchack
 * Dennis Curtin
 * Amy D'Ancona
+* Sharon Dale
 * Joan Daniels
 * Ethel W. Darrohn
 * Susan K. David
@@ -188,6 +191,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Jay S. Detwiler
 * David R. DeVoe & Laura A. Lane
 * Thomas & Carole DeWall
+* Paul Dicicco
 * PJ Dickey
 * Michael DiNunzio
 * Judy Dixon
@@ -278,8 +282,11 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Anne & Walt Geiger
 * Barbara Geistwhite
 * Lee Gemmill
+* Tom Gemmill
 * Michael George
 * Nancy & Michael George
+* S. George
+* Thomas Gery
 * Diane K. Gilroy
 * Lynda Ginsburg
 * Nicholas Giordano
@@ -414,6 +421,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Donald Kmieczak
 * Rose Marie Grahn Knight
 * Harold G. Kohn
+* Harry E. Koch & Carole C. Koch
 * Susan T. Koch
 * Gerald Kolpan
 * Howard Kolus
@@ -550,6 +558,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * M. Noel
 * Maria Centenera Nonemaker
 * Steve Noone
+* Carol O'Brien
 * Marty O’Brien
 * Robert O'Donnell
 * Gerald O'Hara
@@ -633,6 +642,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Edwin Rund
 * Gary Ryan
 * James Ryan
+* Paul F. Sable & Eleanor M. Sable
 * Jyotin Sachdev
 * Benedict X. Saia
 * David and Ben Salkin
@@ -699,6 +709,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Michael Sperger
 * Anthony Spisto
 * Christopher Spratt
+* Jane Sprecher
 * Rick Stafford
 * Joseph Stefens
 * Mike Stabinski
