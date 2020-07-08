@@ -9,6 +9,7 @@ description = "Wolf on Friday announced the broad outline of his plan for reopen
 blurb = "Wolf on Friday announced the broad outline of his plan for reopening Pennsylvania as the state continues to grapple with the coronavirus."
 kicker = "Coronavirus"
 suppress-featured = true
+slug = "see-the-6-keys-to-reopening-pennsylvania-under-gov.-tom-wolfs-plan"
 +++
 <i>[Spotlight PA](https://www.spotlightpa.org/) is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters).</i>
 
