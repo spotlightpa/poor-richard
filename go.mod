@@ -7,6 +7,7 @@ require (
 	github.com/carlmjohnson/exitcode v0.0.4
 	github.com/carlmjohnson/feed2json v0.20.1
 	github.com/carlmjohnson/flagext v0.0.11
+	github.com/carlmjohnson/resperr v0.20.2
 	github.com/getsentry/sentry-go v0.6.0
 	github.com/peterbourgon/ff/v2 v2.0.0
 	github.com/piotrkubisa/apigo v2.0.0+incompatible
