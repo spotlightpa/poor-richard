@@ -137,13 +137,13 @@ const mailchimpFeed = "https://us3.campaign-archive.com/feed?u=4f6d92afd9b3de3dd
 
 func (app *appEnv) routes() http.Handler {
 	mux := http.NewServeMux()
+	mux.HandleFunc("/api/healthcheck/", app.pingErr)
 	mux.HandleFunc("/api/most-popular", app.getMostPopular)
 	mux.Handle(
 		"/api/newsletter.json",
 		feed2json.Handler(
 			feed2json.StaticURLInjector(mailchimpFeed),
 			nil, nil, app.Logger.Printf, app.cacheControlMiddleware))
-
 	return app.versionMiddleware(mux)
 }
 
