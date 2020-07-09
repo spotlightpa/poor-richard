@@ -13,7 +13,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/carlmjohnson/feed2json"
 	"github.com/carlmjohnson/flagext"
 	"github.com/getsentry/sentry-go"
 	sentryhttp "github.com/getsentry/sentry-go/http"
@@ -139,11 +138,7 @@ func (app *appEnv) routes() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/healthcheck/", app.pingErr)
 	mux.HandleFunc("/api/most-popular", app.getMostPopular)
-	mux.Handle(
-		"/api/newsletter.json",
-		feed2json.Handler(
-			feed2json.StaticURLInjector(mailchimpFeed),
-			nil, nil, app.Logger.Printf, app.cacheControlMiddleware))
+	mux.Handle("/api/newsletter.json", app.feed(mailchimpFeed))
 	return app.versionMiddleware(mux)
 }
 
