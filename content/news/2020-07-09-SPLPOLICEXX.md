@@ -65,7 +65,7 @@ In an internal <a href="https://mpoetc.psp.pa.gov/MPOETC%20Newsletters/MPOETC_Ne
 
 Two other reform measures unanimously passed the Senate on June 24 and were referred to the House Judiciary Committee on June 29.
 
-Mike Straub, a spokesperson for House Republicans, said the chair and members of the Judiciary Committee “will determine the next steps on those bills, and any future legislation on the topic.”
+Mike Straub, a spokesperson for House Republicans, said the chair and members of the Judiciary Committee “will determine the next steps on those bills, and any future legislation on the topic.” Both the House and Senate are scheduled be in session next week. 
 
 <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2019&sind=0&body=S&type=B&bn=459"><b>Senate Bill 459</b></a><b>, sponsored by Senate Minority Leader Jay Costa (D., Allegheny):</b> This legislation would require police departments to report all use-of-force incidents to the State Police. The State Police, in turn, would deliver an annual report to lawmakers and the attorney general about how often officers used force and when it resulted in serious injury or death.
 
