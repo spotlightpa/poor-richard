@@ -29,7 +29,7 @@ no-index = false
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
 
-HARRISBURG — The Pennsylvania legislature has adjourned for its summer recess after sending two police reform bills to Gov. Tom Wolf.
+HARRISBURG — The Pennsylvania legislature is nearing its summer recess after sending two police reform bills to Gov. Tom Wolf.
 
 Their passage was spurred by protests, both <a href="https://www.spotlightpa.org/news/2020/06/pennsylvania-george-floyd-protests-democrats-block-house-demand-action/" target=_blank>inside</a> and outside the Capitol, in the wake of the police killing of George Floyd. Democrats have called the measures first steps, as they press GOP leadership to go further and take up more complex issues like curtailing when Pennsylvania officers can use deadly force.
 
@@ -74,5 +74,7 @@ A spokesperson for Costa said the report would be made available to the public, 
 The bill also does not require departments to track the race or gender of people that officers use force against.
 
 <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2019&sind=0&body=S&type=B&bn=1205"><b>Senate Bill 1205</b></a><b>, sponsored by Sen. Sharif Street (D., Philadelphia):</b> This bill would require every local police department to develop and post online a use-of-force policy. It also limits the use of chokeholds to situations where deadly force is warranted.
+
+<i>This story was updated to reflect that the House and Senate will be in session during the week of July 13. </i>
 
 <i><b>100% ESSENTIAL:</b></i> <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
