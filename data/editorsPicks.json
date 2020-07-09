@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2020-07-09-SPLPOLICEXX.md"
+    "content/news/2020-07-09-SPLEXTEND10.md"
   ],
-  "subfeatures": [
-    "content/news/2020-06-24-SPLREFORM25.md",
-    "content/news/2020-06-20-SPLROSE20.md"
-  ],
+  "subfeatures": [],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-07-08-SPLRENT09.md",
+    "content/news/2020-07-09-SPLPOLICEXX.md",
     "content/news/2020-07-08-SPLDISTRICTS08.md",
     "content/news/2020-07-03-SPLFIREWORKS03.md"
   ],
