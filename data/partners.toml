@@ -35,6 +35,12 @@ url = "https://www.buckscountycouriertimes.com"
 logotype = "png"
 
 [[partners]]
+name = "Daily American"
+slug = "daily-american"
+url = "https://www.dailyamerican.com"
+logotype = "png"
+
+[[partners]]
 name = "The Daily Item"
 slug = "daily-item"
 url = "https://www.dailyitem.com"
