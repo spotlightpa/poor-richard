@@ -25,10 +25,11 @@ url = ""
 aliases = []
 modal-exclude = false
 no-index = false
-language-code = "es"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> es una sala de redacción independiente y no partidista impulsada por The Philadelphia Inquirer en asociación con Pittsburgh Post-Gazette y PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Regístrate para recibir nuestro boletín semanal sin costo</i></a><i>.</i>
+
+<i>A version of this story in English is available <a href="https://www.spotlightpa.org/news/2020/07/evictions-rental-assistance-pennsylvania-coronavirus-august-31/">here.</a></i>
 
 HARRISBURG — Pensilvania ofrecerá otro aplazamiento para los miles de inquilinos que luchan por pagar el alquiler debido al brote de coronavirus, anunció el jueves el gobernador Tom Wolf, después de que los legisladores y defensores demócratas lo instaron a actuar.
 
