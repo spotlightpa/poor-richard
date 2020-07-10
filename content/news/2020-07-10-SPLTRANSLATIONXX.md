@@ -11,7 +11,7 @@ published = 2020-07-10T16:54:00Z
 slug = "desalojos-asistencia-de-alquiler-pensilvania-moratoria-31-de-agosto"
 authors = ["Charlotte Keith"]
 byline = "Charlotte Keith of Spotlight PA"
-title = "Pa. emite nueva moratoria de desalojo después de temores de que el alivio de alquiler sería demasiado lento "
+title = "Pa. emite nueva moratoria de desalojo tras temores de que el alivio de pagos de alquiler sería demasiado lento"
 subtitle = ""
 description = "La moratoria de desalojo y perdida de derechos sobre la propiedad (foreclosure) en todo el estado, que debería expirar el sábado, ahora se extenderá hasta el 31 de agosto."
 blurb = "La moratoria de desalojo y perdida de derechos sobre la propiedad (foreclosure) en todo el estado, que debería expirar el sábado, ahora se extenderá hasta el 31 de agosto."
@@ -25,7 +25,6 @@ url = ""
 aliases = []
 modal-exclude = false
 no-index = false
-language-code = "es"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> es una sala de redacción independiente y no partidista impulsada por The Philadelphia Inquirer en asociación con Pittsburgh Post-Gazette y PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Regístrate para recibir nuestro boletín semanal sin costo</i></a><i>.</i>
@@ -68,6 +67,8 @@ La orden del jueves es un paso en la dirección correcta pero no es suficiente, 
 
 <i>La reportera del Inquirer Michaelle Bond contribuyó a este reportaje.</i>
 
-<i>Translation by </i><a href="https://presentepgh.com/en/home/" target=_blank><i>PRESENTE</i></a><i>, a bilingual publication focused on Western Pa.‘s growing Latinx community.</i>
+<i>Traducción por <a href="https://presentepgh.com/en/home/" target=_blank>PRESENTE Pittsburgh Latino Magazine,</a> una publicación bilingüe enfocada en la comunidad Latina del oeste de Pensilvania.
+
+Translation by <a href="https://presentepgh.com/en/home/" target=_blank>PRESENTE Pittsburgh Latino Magazine</a>, a bilingual publication focused on Western Pa.‘s growing Latinx community.</i>
 
 <i><b>100% ESENCIAL:</b></i> <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> depende de </i><a href="https://www.spotlightpa.org/support"><i>donaciones de fundaciones y lectores como ustedes</i></a><i> quienes están comprometidos con el periodismo de rendición de cuentas con resultados. Si valoras este informe, por favor realiza una donación hoy mismo en </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
