@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/news/2020-07-09-SPLEXTEND10.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-07-10-SPLTRANSLATIONXX.md"
+  ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
