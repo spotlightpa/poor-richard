@@ -1,6 +1,11 @@
 {{ $iconSearch := resources.Get "@fontawesome/solid/search.svg" }}
 
-<div x-cloak x-data="spl.searchArticles()" x-init="init">
+<form
+  x-cloak
+  x-data="spl.searchArticles()"
+  x-init="init"
+  @submit.prevent="document.activeElement.blur()"
+>
   <div class="field has-addons">
     <div class="control is-expanded has-icons-left">
       <input
@@ -13,12 +18,12 @@
       </span>
     </div>
     <div class="control">
-      <a
+      <button
         class="button is-danger has-text-weight-semibold"
         :class="isLoading ? 'is-loading' : ''"
       >
         Search
-      </a>
+      </button>
     </div>
   </div>
   <div class="field">
@@ -57,7 +62,7 @@
                       :title="story.imageDescription"
                       :data-src="story.imageSource"
                       :src="magicPixel"
-                      @load.once="loadImage($event)"
+                      @load="loadImage($event)"
                       loading="lazy">
                   </picture>
                 </a>
@@ -98,4 +103,31 @@
       </article>
     </template>
   </div>
-</div>
+</form>
+
+<form
+  action="https://www.google.com/search?hl=en&q=site%3Aspotlightpa.org"
+  target="_blank"
+  class="no-js"
+>
+  <input type="hidden" name="q" value="site:spotlightpa.org">
+  <div class="field has-addons">
+    <div class="control is-expanded has-icons-left">
+      <input
+        class="input"
+        name="q"
+        placeholder="Search Spotlight PA news…"
+      >
+      <span class="icon is-large is-left">
+        {{ $iconSearch.Content|safeHTML }}
+      </span>
+    </div>
+    <div class="control">
+      <button
+        class="button is-danger has-text-weight-semibold"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</form>
