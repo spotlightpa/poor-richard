@@ -1,0 +1,101 @@
+{{ $iconSearch := resources.Get "@fontawesome/solid/search.svg" }}
+
+<div x-cloak x-data="spl.searchArticles()" x-init="init">
+  <div class="field has-addons">
+    <div class="control is-expanded has-icons-left">
+      <input
+        class="input"
+        x-model="query"
+        placeholder="Search Spotlight PA news…"
+      >
+      <span class="icon is-large is-left">
+        {{ $iconSearch.Content|safeHTML }}
+      </span>
+    </div>
+    <div class="control">
+      <a
+        class="button is-danger has-text-weight-semibold"
+        :class="isLoading ? 'is-loading' : ''"
+      >
+        Search
+      </a>
+    </div>
+  </div>
+  <div class="field">
+    <p x-show="query && !isLoading" class="help">
+      <span x-text="resultsText"></span>
+    </p>
+    <template x-if="error">
+      <div class="help is-danger">
+        Could not load results. <span x-text="error.message"></span>
+      </div>
+    </template>
+  </div>
+
+  <div class="tile is-ancestor is-vertical mt-5">
+    <template x-for="story in stories" :key="story.url">
+      <article class="tile is-vertical is-bottom">
+        <div class="tile">
+          <div class="tile is-parent is-top">
+            <div class="tile is-child">
+              <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2" x-text="story.kicker">
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-bottom">
+          <div class="tile is-parent is-4 is-top-tablet">
+            <div class="tile is-child">
+              <figure>
+                <a
+                  class="image is-16by9 has-background-grey-lighter"
+                  :href="story.url"
+                >
+                  <picture class="has-ratio">
+                    <img
+                      :alt="story.imageDescription"
+                      :title="story.imageDescription"
+                      :data-src="story.imageSource"
+                      :src="magicPixel"
+                      @load.once="loadImage($event)"
+                      loading="lazy">
+                  </picture>
+                </a>
+                <figcaption class="is-clearfix is-size-7 is-uppercase has-text-grey-light">
+                  <span
+                    class="mt-2 is-single-spaced is-pulled-right"
+                    x-text="story.imageCredit"
+                  ></span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-8 is-bottom-tablet">
+            <div class="tile is-child" @click.capture="analytics($event)">
+              <h2 class="title is-spaced is-4 mt-2-tablet">
+                <a
+                  class="has-text-black hover-underline"
+                  :href="story.url"
+                  x-text="story.title"
+                >
+                </a>
+              </h2>
+              <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+                <a :href="story.url" class="has-text-grey hover-underline" x-text="story.byline">
+                </a>
+              </h3>
+              <h3
+                class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+              >
+                <a :href="story.url" class="has-text-grey hover-underline">
+                  <time :datetime="story.publishedISO" x-text="story.published">
+                  </time>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </article>
+    </template>
+  </div>
+</div>
