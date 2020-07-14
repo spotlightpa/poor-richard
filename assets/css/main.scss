@@ -434,6 +434,12 @@ a.navbar-burger:hover {
 [x-cloak] {
   display: none;
 }
+.no-js {
+  display: none;
+}
+.has-old-js .no-js {
+  display: block;
+}
 /*! purgecss end ignore */
 
 .dropcap {
