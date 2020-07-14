@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/news/2020-07-14-SPLSENATE15.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-05-27-SPLLEGIS28.md"
+  ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
