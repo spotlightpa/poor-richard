@@ -36,6 +36,7 @@
     "alpinejs": "^2.4.0",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.9.0",
+    "journalize": "^2.4.0",
     "parcel-bundler": "^1.12.4",
     "postcss-cli": "^7.1.0",
     "vue": "^2.6.10",

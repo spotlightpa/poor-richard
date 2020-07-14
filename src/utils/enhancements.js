@@ -12,6 +12,7 @@ import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
 import readmore from "../enhancements/read-more.js";
 import sticky from "../enhancements/sticky.js";
+import searchArticles from "../enhancements/search-articles.js";
 
 window.spl = Object.assign({}, window.spl, {
   embedList,
@@ -20,6 +21,7 @@ window.spl = Object.assign({}, window.spl, {
   modal,
   mostPopular,
   readmore,
+  searchArticles,
   sticky,
 });
 

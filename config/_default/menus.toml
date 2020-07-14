@@ -71,22 +71,28 @@ url = "/news/"
 weight = 7
 
 [[footer]]
+name = "Search"
+pre = "is-uppercase"
+url = "/search/"
+weight = 8
+
+[[footer]]
 name = "Special Projects & Investigations"
 pre = "is-uppercase"
 url = "/series/"
-weight = 8
+weight = 9
 
 [[footer]]
 name = "Topic Archive"
 pre = "is-uppercase"
 url = "/topics/"
-weight = 9
+weight = 10
 
 [[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 10
+weight = 11
 
 [[about]]
 name = "About Us"
