@@ -48,8 +48,7 @@ The reality of what that relationship is, and this is especially the case for fo
 
 I am very much a proponent of defunding the police. By defunding the police, I mean taking funds from the police department and reallocating those funds towards community services. What that looks like is reallocating funds that could otherwise go to education, healthcare, homelessness, mental health assistance, and things like that.
 
-{{<picture src="external/xs87hxz7x383wxaextsr8n53gw.jpeg" description="Gabriel Green, a Ph.D. candidate studying English and African American and African Diaspora at Penn State University, is a member of the 3/20 Coalition and has spent years advocating for police reform in the community." caption="Gabriel Green, a Ph.D. candidate studying English and African American and African Diaspora at Penn State University, is a member of the 3/20 Coalition and has spent years advocating for police reform in the community." credit="Courtesy Gabriel Green">}}
-
+{{<picture src="external/xs87hxz7x383wxaextsr8n53gw.jpeg" width-ratio="1" height-ratio="1" description="Gabriel Green, a Ph.D. candidate studying English and African American and African Diaspora at Penn State University, is a member of the 3/20 Coalition and has spent years advocating for police reform in the community." caption="Gabriel Green, a Ph.D. candidate studying English and African American and African Diaspora at Penn State University, is a member of the 3/20 Coalition and has spent years advocating for police reform in the community." credit="Courtesy Gabriel Green">}}
 
 <b>If you had a magic wand that could make the legislature produce a police reform bill tomorrow, what would it be? </b>
 
