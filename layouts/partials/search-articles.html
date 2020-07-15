@@ -1,5 +1,3 @@
-{{ $iconSearch := resources.Get "@fontawesome/solid/search.svg" }}
-
 <form
   x-cloak
   x-data="spl.searchArticles()"
@@ -14,7 +12,9 @@
         placeholder="Search Spotlight PA news…"
       >
       <span class="icon is-large is-left">
-        {{ $iconSearch.Content|safeHTML }}
+        <svg>
+          <use xlink:href="#search-svg"></use>
+        </svg>
       </span>
     </div>
     <div class="control">
@@ -119,7 +119,9 @@
         placeholder="Search Spotlight PA news…"
       >
       <span class="icon is-large is-left">
-        {{ $iconSearch.Content|safeHTML }}
+        <svg>
+          <use xlink:href="#search-svg"></use>
+        </svg>
       </span>
     </div>
     <div class="control">

@@ -1,9 +1,9 @@
 {{ $iconCheck := resources.Get "@fontawesome/solid/check.svg" }}
 {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
 {{ $iconFB := resources.Get "@fontawesome/brands/facebook-f.svg" }}
-{{ $iconTwitter := resources.Get "@fontawesome/brands/twitter.svg" }}
+{{ $iconSearch := resources.Get "@fontawesome/solid/search.svg" }}
 {{ $iconShare := resources.Get "@fontawesome/solid/share.svg" }}
-{{ $iconUser := resources.Get "@fontawesome/regular/user.svg" }}
+{{ $iconTwitter := resources.Get "@fontawesome/brands/twitter.svg" }}
 {{ $logo := resources.Get "/img/logos/banner-default-on-trans.svg" }}
 
 <div class="is-hidden">
@@ -12,6 +12,6 @@
   <svg id="fb-svg">{{ $iconFB.Content|safeHTML }}</svg>
   <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
   <svg id="share-svg">{{ $iconShare.Content|safeHTML }}</svg>
-  <svg id="user-svg">{{ $iconUser.Content|safeHTML }}</svg>
+  <svg id="search-svg">{{ $iconSearch.Content|safeHTML }}</svg>
   <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
 </div>
