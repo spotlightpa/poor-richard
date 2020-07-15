@@ -27,16 +27,6 @@ function createListeners() {
 
   addGAListeners();
   addSocialButtonListeners();
-
-  try {
-    import("../utils/enhancements.js").then((module) => {
-      module.load();
-    });
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.warn("could not load enhancements", e);
-    document.body.classList.add("has-old-js");
-  }
 }
 
 onLoad(createListeners);

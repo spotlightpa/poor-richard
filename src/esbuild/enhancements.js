@@ -1,8 +1,3 @@
-let loadAlpine = null;
-window.deferLoadingAlpine = (cb) => {
-  loadAlpine = cb;
-};
-
 import "alpinejs";
 
 import embedList from "../enhancements/embed-list.js";
@@ -24,10 +19,3 @@ window.spl = Object.assign({}, window.spl, {
   searchArticles,
   sticky,
 });
-
-export function load() {
-  if (loadAlpine) {
-    loadAlpine();
-  }
-  window.deferLoadingAlpine = (cb) => void cb();
-}
