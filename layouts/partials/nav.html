@@ -48,6 +48,19 @@
           {{ .Name }}
         </a>
       {{ end }}
+      <a
+        href="/search/"
+        class="navbar-item"
+        x-data="{ sendEvent: spl.sendEvent }"
+        @click.prevent="sendEvent({ el: window, name: 'modal:search:open' })"
+      >
+        <span class="is-uppercase is-hidden-desktop">Search</span>
+        <span class="icon is-hidden-touch">
+          <svg>
+            <use xlink:href="#search-svg"></use>
+          </svg>
+        </span>
+      </a>
       <span class="navbar-item">
         <a
           class="button is-danger is-uppercase has-text-weight-semibold"
