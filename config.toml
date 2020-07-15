@@ -90,6 +90,10 @@ source = "assets"
 target = "assets"
 
 [[module.mounts]]
+source = "src"
+target = "assets/js"
+
+[[module.mounts]]
 source = "dist"
 target = "assets/@src"
 

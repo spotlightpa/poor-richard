@@ -3,7 +3,10 @@
 {{ define "modal" }} <!-- --> {{ end }}
 
 {{ define "extra-head" }}
-  <script src='{{ partial "get-src" "embed-frame.js" }}' defer></script>
+  {{ $jsOpts := dict "minify" true }}
+  {{ $js := resources.Get "js/esbuild/embed-frame.js" | js.Build $jsOpts }}
+  {{ $js = $js | minify | fingerprint }}
+  <script src='{{ $js.RelPermalink }}' defer></script>
 {{ end }}
 
 {{ define "main" }}
