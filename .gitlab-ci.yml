@@ -1,7 +1,7 @@
-image: node:12
+image: node:14
 
 before_script:
-  - curl -L https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_extended_0.69.2_Linux-64bit.tar.gz | tar xz -C /bin/
+  - curl -L https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_extended_0.74.1_Linux-64bit.tar.gz | tar xz -C /bin/
   - yarn
 
 test:
