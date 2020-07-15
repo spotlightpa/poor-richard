@@ -8,6 +8,8 @@ import mostPopular from "../enhancements/most-popular.js";
 import readmore from "../enhancements/read-more.js";
 import sticky from "../enhancements/sticky.js";
 import searchArticles from "../enhancements/search-articles.js";
+// utilities
+import sendEvent from "../utils/send-event.js";
 
 window.spl = Object.assign({}, window.spl, {
   embedList,
@@ -18,4 +20,6 @@ window.spl = Object.assign({}, window.spl, {
   readmore,
   searchArticles,
   sticky,
+  // utilities
+  sendEvent,
 });
