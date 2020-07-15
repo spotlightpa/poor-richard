@@ -17,7 +17,6 @@
     class="modal-content"
     @click.away="close()"
     @keydown.escape="close()"
-    @touchmove.away.prevent
     tabindex="-1"
   >
     <header class="modal-card-head">
@@ -33,7 +32,7 @@
         @click="close()"
       ></button>
     </header>
-    <div class="modal-card-body">
+    <div class="modal-card-body" style="overflow-x: hidden">
       {{ partial "search-articles.html" . }}
     </div>
   </div>
