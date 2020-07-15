@@ -1,0 +1,45 @@
+<section
+  x-data="{ isOpen: false, close() { this.isOpen = false; } }"
+  @modal:search:open.window="
+    isOpen = true;
+    $nextTick(()=> $el.querySelector('input').focus());
+  "
+  class="modal"
+  :class="isOpen? 'is-active': ''"
+  x-show="isOpen"
+  x-transition:enter="fade-enter-active"
+  x-transition:enter-start="fade-enter"
+  x-transition:leave="fade-enter-active is-active"
+  x-transition:leave-end="fade-enter"
+>
+  <div class="modal-background"></div>
+  <div
+    class="modal-content"
+    @click.away="close()"
+    @keydown.escape="close()"
+    @touchmove.away.prevent
+    tabindex="-1"
+  >
+    <header class="modal-card-head">
+      <div class="modal-card-title has-text-weight-bold has-text-centered has-text-white">
+        <span>
+          Search
+        </span>
+      </div>
+      <button
+        class="delete"
+        type="button"
+        aria-label="close"
+        @click="close()"
+      ></button>
+    </header>
+    <div class="modal-card-body">
+      {{ partial "search-articles.html" . }}
+    </div>
+  </div>
+  <button
+    class="modal-close is-large"
+    aria-label="close"
+    @click="close()"
+  ></button>
+</section>
