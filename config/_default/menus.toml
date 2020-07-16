@@ -73,6 +73,7 @@ weight = 7
 [[footer]]
 name = "Search"
 pre = "is-uppercase"
+post = '''x-data="{sendEvent:spl.sendEvent}" @click.prevent="sendEvent({ name: 'modal:search:open' })"'''
 url = "/search/"
 weight = 8
 

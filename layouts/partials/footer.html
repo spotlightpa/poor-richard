@@ -3,6 +3,7 @@
     <a
       href="{{ .URL }}"
       class="{{ .Pre }}"
+      {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
     >
       {{ .Name }}
     </a>

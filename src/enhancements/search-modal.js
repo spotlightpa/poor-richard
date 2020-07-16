@@ -21,7 +21,7 @@ export default function searchModal() {
 
       this.oldFocus = document.activeElement;
       this.$nextTick(() => {
-        this.$el.querySelector('input').focus();
+        this.$el.querySelector("input").focus();
       });
     },
 
