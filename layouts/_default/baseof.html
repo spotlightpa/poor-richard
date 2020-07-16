@@ -55,6 +55,10 @@
     {{ end }}
   {{ end }}
   {{ partial "modal-search.html" . }}
+  <script nomodule>
+    console.warn("could not load enhancements");
+    document.body.classList.add("has-old-js");
+  </script>
   {{ partial "ld-json.html" . }}
 </body>
 </html>
