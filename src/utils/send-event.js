@@ -1,5 +1,5 @@
 export default function sendEvent({
-  el,
+  el = window,
   name,
   detail = null,
   bubbles = true,
