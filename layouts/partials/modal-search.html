@@ -1,11 +1,8 @@
 <section
-  x-data="{ isOpen: false, close() { this.isOpen = false; } }"
-  @modal:search:open.window="
-    isOpen = true;
-    $nextTick(()=> $el.querySelector('input').focus());
-  "
+  x-data="spl.searchModal()"
+  @modal:search:open.window="open()"
   class="modal"
-  :class="isOpen? 'is-active': ''"
+  :class="modalClass"
   x-show="isOpen"
   x-transition:enter="fade-enter-active"
   x-transition:enter-start="fade-enter"
@@ -32,7 +29,7 @@
         @click="close()"
       ></button>
     </header>
-    <div class="modal-card-body" style="overflow-x: hidden">
+    <div class="modal-card-body" style="overflow-x: hidden; height: 70vh;">
       {{ partial "search-articles.html" . }}
     </div>
   </div>
