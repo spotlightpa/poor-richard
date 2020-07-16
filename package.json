@@ -23,6 +23,7 @@
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml,vue}"
   },
   "dependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@fortawesome/fontawesome-free": "^5.12.1",
