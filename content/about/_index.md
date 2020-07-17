@@ -1,14 +1,15 @@
 +++
-linktitle = "About"
+published = 2020-07-17T14:22:15.114Z
 title = "Investigative journalism for Pennsylvania"
 subhed = "Together, we can hold the powerful to account."
 description = "Spotlight PA: Find Pennsylvania news and investigations about state and local governments, businesses and special interests."
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
+linktitle = "About"
 type = "about-page"
 
 [cascade]
-  modal-exclude = true
+modal-exclude = true
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
@@ -18,7 +19,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](https://www.pennlive.com) in a historic commitment to investigative reporting on state government and beyond. Additional distribution partners allow us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com) and dozens of other newsrooms across Pennsylvania in a historic commitment to investigative and accountability reporting on state government and beyond. Our collaborative network allows us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
 
 {{<partner-logos>}}
 
@@ -26,7 +27,7 @@ Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.i
 
 {{<content-header>}}Journalism powered by you{{</content-header>}}
 
-Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. **_But we can’t do it without your help._** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
+Our reporters serve as independent watchdogs unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur reform. ***But we can’t do it without your help.*** The most important investigations start with a tip from readers like you. Together, we can hold the powerful to account.
 
 {{<right-link href="/tips/">}}Report waste, abuse or corruption{{</right-link>}}
 
