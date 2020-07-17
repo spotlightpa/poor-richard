@@ -226,20 +226,6 @@ yaml-definitions2: &taxonomy-fields
     required: false
 
 collections:
-  - label: Articles
-    label_singular: Article
-    name: news
-    folder: content/news
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    format: toml-frontmatter
-    extension: md
-    create: true
-    preview_path: "/news/{{year}}/{{month}}/{{fields.slug}}/"
-    preview_path_date_field: published
-    summary: "{{title}} ({{published}}) {{fields.slug}}"
-    editor:
-      preview: false
-    fields: *page-fields
   - label: Root pages
     name: content
     folder: content
@@ -453,3 +439,17 @@ collections:
             hint: "Footer social links"
             widget: list
             fields: *menu
+  - label: Articles
+    label_singular: Article
+    name: news
+    folder: content/news
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: toml-frontmatter
+    extension: md
+    create: true
+    preview_path: "/news/{{year}}/{{month}}/{{fields.slug}}/"
+    preview_path_date_field: published
+    summary: "{{title}} ({{published}}) {{fields.slug}}"
+    editor:
+      preview: false
+    fields: *page-fields
