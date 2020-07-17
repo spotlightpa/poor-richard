@@ -26,7 +26,6 @@ arc-id = ""
 subtitle = ""
 aliases = []
 +++
-
 <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
 
 Below, you’ll find information about our sourcing and methodology. If you have a question that you don’t feel has been answered or you have other feedback on how we could improve the dashboard, don’t hesitate to email either Dan Simmons-Ritchie at <a href="mailto:dsimmons-ritchie@spotlightpa.org">dsimmons-ritchie@spotlightpa.org</a> or Garland Potts at
@@ -138,6 +137,10 @@ New types of COVID-19 data are constantly being published by state officials and
 ### CHANGE LOG
 
 As of July 13, in order to be as transparent as possible about changes we are making to our data dashboard, all of them will be documented here:
+
+**July 17, 2020:** The map at the top of the dashboard is now limited to only displaying case and death numbers over the past two weeks. Prior to this, the map displayed a running total of cases and deaths for the selected state/region since the beginning of the outbreak. We made this decision because we believed it would make it easier for readers to understand current 'hot spots' of cases and deaths.
+
+These changes do not apply to the 'Philadelphia metro' map, which is displayed on The Inquirer version of the dashboard when a user has Pennsylvania selected.
 
 <strong>July 15, 2020:</strong> In the Testing section for all states, positive test numbers now represent only lab-confirmed positive test results. Prior to this, “positive” test numbers were derived from each state’s total tally of cases, which could include both lab-confirmed positive test results and “probable” cases. This change, coupled with changes made on July 13, ensure that the dashboard is presenting the most accurate information on each state’s number of lab-confirmed cases and its percentage of positive tests.
 
