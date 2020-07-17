@@ -1,15 +1,16 @@
 +++
+published = 2020-07-17T14:17:59.899Z
 title = "Our Mission"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
 url = "/about/mission/"
 +++
 {{%pullquote%}}
-The mission of **_Spotlight PA_** is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here.
+The mission of ***Spotlight PA*** is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here.
 {{%/pullquote%}}
 
 Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
 
-Our collaborative newsroom is powered by the [The Philadelphia Inquirer](https://www.inquirer.com), [Pittsburgh Post­-Gazette](https://www.post-gazette.com) and [PennLive/The Patriot-News](http://www.pennlive.com). Additional partners — including [PA Post](https://papost.org), a project of [WITF](http://www.witf.org), and [LNP Media Group](https://lnpmediagroup.com)/[The Caucus](https://caucuspa.com/) — allow us to share resources and maximize audience and reporting power for the public. We continue to seek new distribution partners to join our initial group. For more information on how to become a partner, [please contact us](/contact/).
+Our collaborative newsroom is powered by the [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](http://www.pennlive.com) and dozens of other news organizations across Pennsylvania. We continue to seek new distribution partners to join our initial group. For more information on how to become a partner, [please contact us](/contact/).
 
 Spotlight PA strives to serve as a collaborator and resource to all newsrooms in the state to help uncover and enhance stories of statewide importance that otherwise would go unnoticed or untold. We pursue investigations with the potential for meaningful, real­-world change, and that’s the sole measure of our success.
 
