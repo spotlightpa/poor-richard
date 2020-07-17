@@ -67,8 +67,7 @@ aliases = []
 <p>
   While a number of national media outlets, including
   <a href="https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html">
-    the New York Times
-  </a>, provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
+    the New York Times</a>, provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
 </p>
 <p>
 </p>
