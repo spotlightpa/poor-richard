@@ -1,32 +1,31 @@
 +++
-arc-id = ""
-internal-id = ""
-internal-budget = ""
 image = "external/xfas1a5m01m4ehgwzvv9hz1yag.jpeg"
 image-description = "Tracking the spread of COVID-19 in Pennsylvania"
-image-caption = ""
 image-credit = "DAN NOTT / For Spotlight PA"
 image-size = "hidden"
-published = 2020-07-17T14:00:00Z
+published = 2020-07-17T14:00:00.000Z
 slug = "coronavirus-dashboard-faq"
 authors = ["Daniel Simmons-Ritchie"]
 byline = "Daniel Simmons-Ritchie of Spotlight PA"
 title = "Tracking The Spread Dashboard FAQ"
-subtitle = ""
 description = "The Tracking the Spread dashboard is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it."
 blurb = "The Tracking the Spread dashboard is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it."
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
 linktitle = ""
 suppress-featured = false
 weight = 0
-url = ""
-aliases = []
+topics = ["Coronavirus"]
+series = []
 modal-exclude = false
 no-index = false
+internal-id = ""
+url = ""
+image-caption = ""
+internal-budget = ""
+arc-id = ""
+subtitle = ""
+aliases = []
 +++
-
 <p>
   <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
 </p>
@@ -69,8 +68,7 @@ no-index = false
   While a number of national media outlets, including
   <a href="https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html">
     the New York Times
-  </a>
-  , provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
+  </a>, provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
 </p>
 <p>
 </p>
