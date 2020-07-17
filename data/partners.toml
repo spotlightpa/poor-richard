@@ -5,12 +5,6 @@ url = "https://www.inquirer.com"
 logotype = "svg"
 
 [[partners]]
-name = "Pittsburgh Post-Gazette"
-slug = "post-gazette"
-url = "https://www.post-gazette.com"
-logotype = "svg"
-
-[[partners]]
 name = "PennLive"
 slug = "pennlive"
 url = "https://www.pennlive.com"
