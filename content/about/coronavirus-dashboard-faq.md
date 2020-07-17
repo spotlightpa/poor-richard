@@ -33,13 +33,9 @@ aliases = []
 </p>
 <p>
   Below, you’ll find information about our sourcing and methodology. If you have a question that you don’t feel has been answered or you have other feedback on how we could improve the dashboard, don’t hesitate to email either Dan Simmons-Ritchie at
-  <a href="mailto:dsimmons-ritchie@spotlightpa.org">
-    dsimmons-ritchie@spotlightpa.org
-  </a>
+  <a href="mailto:dsimmons-ritchie@spotlightpa.org">dsimmons-ritchie@spotlightpa.org</a>
   or Garland Potts at
-  <a href="mailto:gpotts@inquirer.com">
-    gpotts@inquirer.com
-  </a>
+  <a href="mailto:gpotts@inquirer.com">gpotts@inquirer.com</a>
 </p>
 <p>
 </p>
@@ -57,9 +53,7 @@ aliases = []
 </p>
 <p>
   The state Department of Health offers its own interactive
-  <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">
-    dashboard on its website
-  </a>
+  <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">dashboard on its website</a>
   that displays Pennsylvania data. However, the department’s dashboard remains cumbersome and difficult to use, particularly on mobile devices. It doesn’t provide data on states outside Pennsylvania and doesn’t prioritize certain data points that we believe are most useful for readers. So, we wanted to create a way to make it easier to understand the spread of COVID-19.
 </p>
 <p>
@@ -95,10 +89,7 @@ aliases = []
 </p>
 <p>
   For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the
-  <a href="https://covidtracking.com/">
-    COVID Tracking Project
-  </a>
-  . The COVID Tracking Project is a volunteer organization launched by The Atlantic that collects COVID-19 data nationally. While we could compile this data ourselves, we decided that it was easier to rely on COVID Tracking Project because they have been collecting this data since April.
+  <a href="https://covidtracking.com/">COVID Tracking Project</a>. The COVID Tracking Project is a volunteer organization launched by The Atlantic that collects COVID-19 data nationally. While we could compile this data ourselves, we decided that it was easier to rely on COVID Tracking Project because they have been collecting this data since April.
 </p>
 <p>
 </p>
