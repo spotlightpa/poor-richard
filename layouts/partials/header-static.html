@@ -1,10 +1,14 @@
 <!-- header tags that are the same on all pages -->
-{{ $jsOpts := dict "minify" true "targetPath" "/@src/main.js"  }}
-{{ $mainJS := resources.Get "js/esbuild/main.js" | js.Build $jsOpts }}
-{{ $mainJS = $mainJS | babel | minify | fingerprint }}
-<script src='{{ $mainJS.RelPermalink }}' async></script>
-
-<link rel="modulepreload" href='{{ partialCached "get-enhancements.html" . }}'>
+<link
+  rel="preload"
+  as="script"
+  href='{{ partialCached "get-main-js.html" . }}'
+/>
+<link
+  rel="preload"
+  as="script"
+  href='{{ partialCached "get-enhancements.html" . }}'
+/>
 
 {{ range slice "500" "800" }}
   <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
