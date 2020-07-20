@@ -55,10 +55,20 @@
     {{ end }}
   {{ end }}
   {{ partial "modal-search.html" . }}
+  <script
+    src='{{ partialCached "get-main-js.html" . }}'
+    async
+  ></script>
   <script nomodule>
     console.warn("could not load enhancements");
     document.body.classList.add("has-old-js");
   </script>
+  <script
+    src='{{ partialCached "get-enhancements.html" . }}'
+    type="module"
+    async
+    onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
+  ></script>
   {{ partial "ld-json.html" . }}
 </body>
 </html>
