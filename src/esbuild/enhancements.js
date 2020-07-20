@@ -9,8 +9,6 @@ import readmore from "../enhancements/read-more.js";
 import sticky from "../enhancements/sticky.js";
 import searchArticles from "../enhancements/search-articles.js";
 import searchModal from "../enhancements/search-modal.js";
-// utilities
-import sendEvent from "../utils/send-event.js";
 
 window.spl = Object.assign({}, window.spl, {
   embedList,
@@ -22,6 +20,4 @@ window.spl = Object.assign({}, window.spl, {
   searchArticles,
   searchModal,
   sticky,
-  // utilities
-  sendEvent,
 });

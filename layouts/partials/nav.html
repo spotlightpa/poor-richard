@@ -52,8 +52,8 @@
         href="/search/"
         class="navbar-item"
         data-ga-action="Open search"
-        x-data="{ sendEvent: spl.sendEvent }"
-        @click.prevent="sendEvent({ name: 'modal:search:open' })"
+        x-data="{}"
+        @click.prevent="$dispatch('modal:search:open')"
       >
         <span class="is-uppercase is-hidden-desktop">Search</span>
         <span class="icon is-hidden-touch">
