@@ -114,6 +114,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Charles Cairns
 * James Calpas
 * Andrew Candor
+* John Capwell
 * Joseph L. Carbo
 * Calvin S. Card
 * Mireille Carigi
@@ -133,6 +134,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kathleen Charlton 
 * Patrick Christmas
 * Frank Cicchiello
+* Edward Claghorn
 * Jordan Clark
 * Rebecca Clark 
 * Dr. Dane S. Claussen
@@ -233,6 +235,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Becky Everett
 * Kathleen Eves
 * Thomas & Sonja Eveslage 
+* Aaron Fafarman
 * C. Fairchild
 * James Falls
 * J. Fauls
@@ -265,6 +268,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kimberly Freeman
 * Gary French
 * Jim Friedlich & Melissa Stern
+* Jake Friel
 * Karen Friel
 * Ryan Froman
 * Scott Frost
@@ -352,6 +356,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Clint Heverly
 * Pamela H. Hicks
 * Christine High
+* Douglas Hill
 * Glen Hill
 * Karen Hill
 * J. Hirt
@@ -391,6 +396,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Arlene Jarett
 * Gregory A. Jarrett
 * Al Jinks
+* Paul Johnson
 * Marissa Johnson-Valenzuela
 * Louise R. Johnston
 * Peter Johnstone
@@ -412,6 +418,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Patrick Kerkstra
 * Diana Kerr
 * Dave Kestner
+* Kirk Ketchum
 * Cathy King
 * Douglas Kingsbury
 * Christine Kinsey
@@ -445,6 +452,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Steven Kuloszewski
 * Kathryn Labrum, Esq.
 * J. Lai
+* Dorothy Laincz
 * John Lambert
 * Dennis & Lana Landon
 * David La Point
@@ -543,6 +551,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Douglas Motter
 * P.F. Moyer
 * Toni Moyer
+* Joe Mikuliak
 * William Mulherin
 * Charlotte & John Mulvihill
 * John & Joyce Munro
