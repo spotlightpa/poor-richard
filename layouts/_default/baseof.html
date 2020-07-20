@@ -59,6 +59,12 @@
     console.warn("could not load enhancements");
     document.body.classList.add("has-old-js");
   </script>
+  <script
+    src='{{ partialCached "get-enhancements.html" . }}'
+    type="module"
+    async
+    onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
+  ></script>
   {{ partial "ld-json.html" . }}
 </body>
 </html>

@@ -4,15 +4,7 @@
 {{ $mainJS = $mainJS | babel | minify | fingerprint }}
 <script src='{{ $mainJS.RelPermalink }}' async></script>
 
-{{ $jsOpts = dict "minify" true "targetPath" "/@src/enhancements.js" "target" "es2019" }}
-{{ $js := resources.Get "js/esbuild/enhancements.js" | js.Build $jsOpts }}
-{{ $js = $js | minify | fingerprint }}
-<script
-  src='{{ $js.RelPermalink }}'
-  type="module"
-  async
-  onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
-></script>
+<link rel="modulepreload" href='{{ partialCached "get-enhancements.html" . }}'>
 
 {{ range slice "500" "800" }}
   <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
