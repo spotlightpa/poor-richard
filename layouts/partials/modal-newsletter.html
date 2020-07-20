@@ -7,7 +7,7 @@
   x-transition:enter-start="fade-enter"
   x-transition:leave="fade-enter-active is-active"
   x-transition:leave-end="fade-enter"
-  @scroll.window.once="init()"
+  @scroll.window.once.passive="init()"
 >
   <div class="modal-background"></div>
   <form
