@@ -70,10 +70,7 @@ export default function searchArticles() {
     },
 
     get resultsCount() {
-      if (!this.results || !this.results.nbHits) {
-        return 0;
-      }
-      return this.results.nbHits;
+      return this.results?.nbHits ?? 0;
     },
 
     get resultsText() {
@@ -84,10 +81,7 @@ export default function searchArticles() {
       if (nHits === 1) {
         return "Got one search result.";
       }
-      let nStories = 0;
-      if (this.results && this.results.hits && this.results.length) {
-        nStories = this.results.length;
-      }
+      let nStories = this.results?.hits?.length ?? 0;
       let more = nHits > nStories ? `Showing first ${nStories}.` : "";
       return `Got ${nHits} search results. ${more}`;
     },
