@@ -138,6 +138,8 @@ New types of COVID-19 data are constantly being published by state officials and
 
 As of July 13, in order to be as transparent as possible about changes we are making to our data dashboard, all of them will be documented here:
 
+**July 20, 2020:** Two new charts were added to the 'testing' section of the Spotlight version of the dashboard. The dashboard now provides a chart of the daily 'positivity rate' for a selected state in addition to a chart that shows the average number of tests its conducted over the past seven days, adjusted for population, compared to neighboring states.
+
 **July 17, 2020:** The map at the top of the dashboard is now limited to only displaying case and death numbers over the past two weeks. Prior to this, the map displayed a running total of cases and deaths for the selected state/region since the beginning of the outbreak. We made this decision because we believed it would make it easier for readers to understand current 'hot spots' of cases and deaths.
 
 These changes do not apply to the 'Philadelphia metro' map, which is displayed on The Inquirer version of the dashboard when a user has Pennsylvania selected.
