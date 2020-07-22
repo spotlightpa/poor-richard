@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-07-21-SPLPUC21.md"
+    "content/news/2020-07-22-SPLLEBANON23.md"
   ],
   "subfeatures": [
-    "content/news/2020-07-09-SPLEXTEND10.md",
-    "content/news/2020-06-08-SPLCARES09.md"
+    "content/news/2020-07-01-SPLORDER02.md",
+    "content/news/2020-05-11-SPLCOURT11.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-07-21-SPLPUC21.md",
     "content/news/2020-07-16-SPLGOVERNOR16.md",
-    "content/news/2020-07-15-SPLGREENXX.md",
     "content/news/2020-07-14-SPLUPMC15.md"
   ],
   "sidebarPicks": [
