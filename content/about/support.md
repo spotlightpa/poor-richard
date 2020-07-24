@@ -139,6 +139,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Rebecca Clark 
 * Dr. Dane S. Claussen
 * Francisco Cleaves
+* Constance B. Clery
 * Stephen Cline
 * Jennifer Coffey
 * Jeff Cogshall
@@ -263,6 +264,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Daniel Fraccica
 * Susannah Frame
 * Barbara Francis
+* David Frankenfield
 * William Franks
 * Bruce P. Frassinelli
 * Kimberly Freeman
@@ -450,6 +452,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Kevin Kuhn
 * Jennifer Kuhns
 * Steven Kuloszewski
+* Patrick Kwasny
 * Kathryn Labrum, Esq.
 * J. Lai
 * Dorothy Laincz
@@ -487,6 +490,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * T. Machado
 * James J. Maguire
 * Ed Mahon
+* Robert L. Maney
 * Fred R. Manthai
 * Lelah Marie
 * Lynn Marks & Clifford Pearlman
@@ -521,6 +525,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * John & Sharon McNamara
 * Elaine McNamee
 * William McNeal
+* Kevin McNeill
 * Evie McNiff
 * Linda & Robert Meckley
 * K. Melton
@@ -630,6 +635,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Philip Reilly
 * Gloria Reisman
 * John Rhoades
+* Becky Richards
 * Stacy Richards
 * Sarah Ricks
 * Ralph Riedel
@@ -649,6 +655,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Lynn Fryman Rothman & Michael Rothman, MD
 * Robert Ruff Jr.
 * William Ruffley
+* Amy Ruffo
 * Edwin Rund
 * Gary Ryan
 * James Ryan
@@ -740,6 +747,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Rebecca & Collin Stuart
 * John Suierveld
 * Sean P. Sullivan
+* Cary Scott Summers
 * Burnetta Swartz
 * Jeffrey Sweet
 * Marian Szmyd
