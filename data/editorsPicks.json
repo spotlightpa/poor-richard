@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-07-26-SPLVETOXX.md"
+    "content/news/2020-07-27-SPLDATAXX.md"
   ],
   "subfeatures": [
-    "content/news/2020-07-22-SPLLEBANON23.md",
-    "content/news/2020-07-16-SPLGOVERNOR16.md"
+    "content/news/2020-06-17-SPLDATA18.md",
+    "content/news/2020-06-22-SPLGLEAN19.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-07-26-SPLVETOXX.md",
     "content/news/2020-07-24-SPLtracing24.md",
-    "content/news/2020-07-21-SPLPUC21.md",
-    "content/news/2020-07-14-SPLUPMC15.md"
+    "content/news/2020-07-21-SPLPUC21.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-13-SPLINFECTION14.md"
