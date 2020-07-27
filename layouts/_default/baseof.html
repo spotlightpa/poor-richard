@@ -55,10 +55,7 @@
     {{ end }}
   {{ end }}
   {{ partial "modal-search.html" . }}
-  <script
-    src='{{ partialCached "get-main-js.html" . }}'
-    async
-  ></script>
+  {{ partialCached "get-main-js.html" . }}
   <script nomodule>
     console.warn("could not load enhancements");
     document.body.classList.add("has-old-js");
