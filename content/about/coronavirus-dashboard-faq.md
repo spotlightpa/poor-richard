@@ -26,7 +26,7 @@ arc-id = ""
 subtitle = ""
 aliases = []
 +++
-<a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
+<a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or just a curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
 
 Below, you’ll find information about our sourcing and methodology. If you have a question that you don’t feel has been answered or you have other feedback on how we could improve the dashboard, don’t hesitate to email either Dan Simmons-Ritchie at <a href="mailto:dsimmons-ritchie@spotlightpa.org">dsimmons-ritchie@spotlightpa.org</a> or Garland Potts at
 <a href="mailto:gpotts@inquirer.com">gpotts@inquirer.com</a>
