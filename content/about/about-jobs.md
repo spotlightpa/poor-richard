@@ -5,8 +5,7 @@ description = "Spotlight PA is building an inclusive team of journalists who bri
 linktitle = "Jobs"
 url = "/about/jobs/"
 +++
-### Project Lead – Diverse Source Database for Pennsylvania
 
-- - -
+There are currently no openings. Sign up below to be alerted of future career opportunies from Spotlight PA.
 
-Applications for this position are now closed.
+{{<newsletter-jobs-form>}}
