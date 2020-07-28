@@ -203,6 +203,12 @@ url = "http://tribune-democrat.com"
 logotype = "png"
 
 [[partners]]
+name = "WESA"
+slug = "wesa"
+url = "https://www.wesa.fm/"
+logotype = "png"
+
+[[partners]]
 name = "WHYY"
 slug = "whyy"
 url = "http://whyy.org"
