@@ -1,5 +1,5 @@
 import { each, on } from "./dom-utils.js";
-import { sendGAEvent } from "./google-analytics.js";
+import { buildEvent, sendGAEvent } from "./google-analytics.js";
 
 export function addSocialButtonListeners() {
   on("click", '[data-share="tweet"]', (ev) => {
@@ -14,11 +14,8 @@ export function addSocialButtonListeners() {
       encodeURIComponent(url) +
       "&tw_p=tweetbutton";
     window.open(twitterURL, "_blank");
-    sendGAEvent({
-      eventCategory: "Share button interaction",
-      eventAction: "Twitter share",
-      eventLabel: url,
-    });
+
+    sendGAEvent(buildEvent(ev.currentTarget));
   });
 
   on("click", '[data-share="facebook"]', (ev) => {
@@ -28,11 +25,7 @@ export function addSocialButtonListeners() {
       "https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link=" +
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
-    sendGAEvent({
-      eventCategory: "Share button interaction",
-      eventAction: "Facebook share",
-      eventLabel: url,
-    });
+    sendGAEvent(buildEvent(ev.currentTarget));
   });
 
   on("click", '[data-share="sharesheet"]', (ev) => {
@@ -45,19 +38,15 @@ export function addSocialButtonListeners() {
       document.querySelector("[itemprop='description']")?.content ??
       "";
     let url = ev.currentTarget.dataset.shareUrl ?? window.location.href;
+    let gaEvent = buildEvent(ev.currentTarget);
+
     navigator
       .share({
         title,
         text,
         url,
       })
-      .then(() =>
-        sendGAEvent({
-          eventCategory: "Share button interaction",
-          eventAction: "Open share sheet",
-          eventLabel: url,
-        })
-      )
+      .then(() => sendGAEvent(gaEvent))
       // Ignore errors caused by closing sheet
       .catch(() => null);
   });
