@@ -92,3 +92,22 @@ export function onLoad(cb) {
     cb();
   }
 }
+
+export function allClosest(el, qs) {
+  // in case of programmatic error or weirdo DOM tree
+  const maxDepth = 1000;
+  let els = [];
+  let i;
+  for (i = 0; i < maxDepth; i++) {
+    el = el.closest(qs);
+    if (!el) break;
+    els.push(el);
+    el = el.parentElement;
+    if (!el) break;
+  }
+  if (i === maxDepth) {
+    throw Error(`allClosest exceeded maxDepth of ${maxDepth}`);
+  }
+  els.reverse();
+  return els;
+}

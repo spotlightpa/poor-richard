@@ -11,6 +11,7 @@ modal-exclude = true
 no-index = true
 url = "/donate/thanks/"
 section = "root"
+type = "root"
 +++
 
 # Thank you for your generous donation

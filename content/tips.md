@@ -1,6 +1,7 @@
 +++
 title = "Send a tip"
 description = "Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals."
+type = "root"
 section = "root"
 modal-exclude = true
 +++
