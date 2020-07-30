@@ -1,12 +1,13 @@
 <nav
   class="navbar"
+  data-ga-action="navbar"
   aria-label="main navigation"
 >
   <div class="navbar-brand">
     <a
       href="/"
       class="navbar-item"
-      data-ga-event='{ "eventCategory": "Menu Interaction", "eventAction": "click", "eventLabel": "/" }'
+      data-ga-action="brand"
     >
       <span class="is-sr-only">Home</span>
       <svg viewBox="0 0 1024 190">
@@ -20,7 +21,8 @@
       aria-label="menu"
       aria-expanded="false"
       data-target="#navbar-menu-items,.navbar-burger"
-      data-ga-event='{ "eventCategory": "Menu Interaction", "eventAction": "open" }'
+      data-ga-action="burger"
+      data-ga-label="navbar:open"
     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -39,11 +41,10 @@
         {{ if eq $thisPage.RelPermalink .URL }}
           {{ $isActive = "is-active" }}
         {{ end }}
-        {{ $gaEvent := dict "eventCategory" "Menu Interaction" "eventAction" "click" "eventLabel" .URL "transport" "beacon" }}
         <a
           href="{{ .URL }}"
           class="navbar-item {{ .Pre }} {{ $isActive }}"
-          data-ga-event="{{ $gaEvent | jsonify }}"
+          data-ga-action="item"
         >
           {{ .Name }}
         </a>
@@ -51,7 +52,8 @@
       <a
         href="/search/"
         class="navbar-item"
-        data-ga-action="Open search"
+        data-ga-action="search"
+        :data-ga-label="'modal:search:open'"
         x-data="{}"
         @click.prevent="$dispatch('modal:search:open')"
       >
@@ -66,7 +68,7 @@
         <a
           class="button is-danger is-uppercase has-text-weight-semibold"
           href="/donate/"
-          data-ga-event='{ "eventCategory": "Menu Interaction", "eventAction": "donate", "eventLabel": "/donate/", "transport": "beacon" }'
+          data-ga-action="donate"
         >❤&#65038; Support Us</a>
       </span>
       <span class="navbar-item is-hidden-touch">&nbsp;</span>

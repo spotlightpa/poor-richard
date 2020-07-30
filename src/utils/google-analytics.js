@@ -1,4 +1,11 @@
-import { each, on, storeItem, loadItem, polyfillClosest } from "./dom-utils.js";
+import {
+  each,
+  on,
+  storeItem,
+  loadItem,
+  polyfillClosest,
+  allClosest,
+} from "./dom-utils.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -14,8 +21,11 @@ let dnt = loadItem(DO_NOT_TRACK_KEY);
 
 export function callGA(...args) {
   if (dnt) {
-    // eslint-disable-next-line no-console
-    console.info("GA", JSON.stringify(args));
+    /* eslint-disable no-console */
+    console.group("Google Analytics Debug");
+    for (let arg of args) console.log("%o", arg);
+    console.groupEnd();
+    /* eslint-enable no-console */
     return;
   }
   window.ga(...args);
@@ -55,25 +65,25 @@ export function addGAListeners() {
       el.rel = "noopener noreferrer";
     }
 
-    on("click", el, (ev) => {
-      let { gaEvent } = ev.currentTarget.dataset;
-      if (gaEvent) {
-        gaEvent = JSON.parse(gaEvent);
-        sendGAEvent(gaEvent);
-        return;
-      }
+    on("click", el, () => {
+      let eventCategory = allClosest(el, "[data-ga-category]")
+        .map((el) => el.dataset.gaCategory)
+        .join(":");
+      let eventAction = allClosest(el, "[data-ga-action]")
+        .map((el) => el.dataset.gaAction)
+        .join(":");
+      let eventLabel = allClosest(el, "[data-ga-label]")
+        .map((el) => el.dataset.gaLabel)
+        .join(":");
 
-      let eventCategory = isInternal ? "Internal Link" : "Outbound Link";
-      let eventAction = "click";
-      let parentAction = el.closest("[data-ga-action]");
-      if (parentAction) {
-        eventAction = parentAction.dataset.gaAction;
+      if (!eventLabel) {
+        eventLabel = el.href;
       }
 
       sendGAEvent({
         eventCategory,
         eventAction,
-        eventLabel: ev.currentTarget.href,
+        eventLabel,
         transport: "beacon",
       });
     });

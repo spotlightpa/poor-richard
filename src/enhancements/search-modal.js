@@ -1,5 +1,3 @@
-import { sendGAEvent } from "../utils/google-analytics.js";
-
 export default function searchModal() {
   return {
     oldFocus: null,
@@ -13,11 +11,6 @@ export default function searchModal() {
       this.isOpen = true;
 
       document.body.parentElement.classList.add("is-clipped");
-
-      sendGAEvent({
-        eventCategory: "Modal interaction",
-        eventAction: `Open search`,
-      });
 
       this.oldFocus = document.activeElement;
       this.$nextTick(() => {

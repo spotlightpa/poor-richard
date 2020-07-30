@@ -4,6 +4,7 @@ title = "Sign up for Spotlight PA’s newsletter"
 description = "Sign up for The Investigator, a free weekly newsletter from Spotlight PA"
 title-tag = "Newsletters"
 linktitle = "Newsletters"
+type = "root"
 section = "root"
 modal-exclude = true
 +++

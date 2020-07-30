@@ -7,6 +7,7 @@ suppress-title = true
 modal-exclude = true
 no-index = true
 type = "thanks-page"
+section = "root"
 +++
 
 Thank you for subscribing to our newsletter. To ensure you receive it, please add **newsletters@spotlightpa.org** to your contacts, or check your spam folder and mark it as "not spam."

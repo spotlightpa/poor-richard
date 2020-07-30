@@ -2,6 +2,7 @@
 title = "Search Spotlight PA News"
 description = "Search Spotlight PA News articles"
 section = "root"
+type = "root"
 suppress-title = true
 +++
 
