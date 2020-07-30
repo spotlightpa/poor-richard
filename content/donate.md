@@ -8,5 +8,6 @@ description = "Support investigative journalism in Pennsylvania. Become a Foundi
 linktitle = "Donate"
 suppress-title = true
 modal-exclude = true
-type= "donate-page"
+layout = "donate-page"
+type = "donate"
 +++
