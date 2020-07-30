@@ -229,7 +229,7 @@ collections:
   - label: Root pages
     name: content
     folder: content
-    filter: { field: "section", value: "root" }
+    filter: { field: "type", value: "root" }
     format: toml-frontmatter
     extension: md
     create: true

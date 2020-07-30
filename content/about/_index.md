@@ -6,7 +6,7 @@ description = "Spotlight PA: Find Pennsylvania news and investigations about sta
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 linktitle = "About"
-type = "about-page"
+layout = "about-page"
 
 [cascade]
 modal-exclude = true
