@@ -48,6 +48,37 @@ export function ensureGA() {
   document.body.appendChild(s);
 }
 
+export function buildEvent(el) {
+  let eventCategory = allClosest(el, "[data-ga-category]")
+    .map((el) => el.dataset.gaCategory)
+    .join(":");
+  let eventAction = allClosest(el, "[data-ga-action]")
+    .map((el) => el.dataset.gaAction)
+    .join(":");
+  let eventLabel = allClosest(el, "[data-ga-label]")
+    .map((el) => el.dataset.gaLabel)
+    .join(":");
+
+  return {
+    eventCategory,
+    eventAction,
+    eventLabel,
+  };
+}
+
+export function reportClick(el) {
+  let ev = buildEvent(el);
+
+  if (!ev.eventLabel) {
+    ev.eventLabel = el.href;
+  }
+
+  sendGAEvent({
+    ...ev,
+    transport: "beacon",
+  });
+}
+
 export function addGAListeners() {
   polyfillClosest();
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
@@ -66,36 +97,38 @@ export function addGAListeners() {
     }
 
     on("click", el, () => {
-      let eventCategory = allClosest(el, "[data-ga-category]")
-        .map((el) => el.dataset.gaCategory)
-        .join(":");
-      let eventAction = allClosest(el, "[data-ga-action]")
-        .map((el) => el.dataset.gaAction)
-        .join(":");
-      let eventLabel = allClosest(el, "[data-ga-label]")
-        .map((el) => el.dataset.gaLabel)
-        .join(":");
-
-      if (!eventLabel) {
-        eventLabel = el.href;
-      }
-
-      sendGAEvent({
-        eventCategory,
-        eventAction,
-        eventLabel,
-        transport: "beacon",
-      });
+      reportClick(el);
     });
   });
 
-  on("submit", "[data-ga-form]", (ev) => {
-    let form = ev.target;
-    let isValid = form.reportValidity();
-
-    let gaEvent = JSON.parse(ev.currentTarget.dataset.gaForm);
-    gaEvent.transport = "beacon";
-    gaEvent.eventLabel = isValid ? "submit" : "invalid submission";
-    sendGAEvent(gaEvent);
+  each("[data-ga-form]", (el) => {
+    el.addEventListener(
+      "submit",
+      () => {
+        let gaEvent = buildEvent(el);
+        let isValid = el.reportValidity();
+        gaEvent.eventLabel = el.dataset.gaForm;
+        gaEvent.eventLabel += isValid ? ":submit" : ":invalid";
+        gaEvent.transport = "beacon";
+        sendGAEvent(gaEvent);
+      },
+      {
+        passive: true,
+      }
+    );
+    el.addEventListener(
+      "focus",
+      () => {
+        let gaEvent = buildEvent(el);
+        gaEvent.eventLabel = el.dataset.gaForm;
+        gaEvent.eventLabel += ":focus";
+        sendGAEvent(gaEvent);
+      },
+      {
+        once: true,
+        capture: true,
+        passive: true,
+      }
+    );
   });
 }
