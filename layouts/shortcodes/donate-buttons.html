@@ -1,11 +1,15 @@
 {{ $subject := "Donate to Spotlight PA" }}
 {{ $emailBody := "I just donated to Spotlight PA because Pennsylvania needs more accountability journalism. Join me:\n\n https://wwww.spotlightpa.org/donate/" }}
 
-<div class="buttons is-centered">
+<div
+  class="buttons is-centered"
+  data-ga-action="inline:share-donation"
+>
   <button
     class="button is-primary is-medium"
     data-share="facebook"
     data-share-url="https://www.spotlightpa.com/donate/"
+    data-ga-label="share:facebook"
     title="Share your donation on Facebook"
   >
     <span class="icon has-text-white has-colored-svg">
@@ -22,6 +26,7 @@
     data-share="tweet"
     data-share-text="I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:"
     data-share-url="https://www.spotlightpa.com/donate/"
+    data-ga-label="share:twitter"
     title="Tweet about your donation"
   >
     <span class="icon has-text-white has-colored-svg">
@@ -37,6 +42,7 @@
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
     class="button is-success is-medium"
     title="Share your donation by email"
+    data-ga-label="share:email"
   >
     <span class="icon has-text-white has-colored-svg">
       <svg>
