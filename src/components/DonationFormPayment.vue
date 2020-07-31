@@ -104,9 +104,7 @@ export default {
 
       if (!isValid) {
         this.$gae({
-          eventCategory: "Donation form",
-          eventAction: "Attempt form submission",
-          eventLabel: "Invalid submission",
+          eventLabel: "donate:invalid",
         });
         return;
       }
@@ -117,8 +115,7 @@ export default {
         eventValue *= 12;
       }
       this.$gae({
-        eventCategory: "Donation form",
-        eventAction: "Submit form",
+        eventLabel: "donate:submit",
         eventValue,
         transport: "beacon",
       });

@@ -20,7 +20,12 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 let GA = {
   install(Vue) {
-    Vue.prototype.$gae = (obj) => void sendGAEvent(obj);
+    Vue.prototype.$gae = (obj) =>
+      void sendGAEvent({
+        eventCategory: "donate:page",
+        eventAction: "donate-form",
+        ...obj,
+      });
   },
 };
 

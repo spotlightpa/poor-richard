@@ -105,16 +105,14 @@ export default {
       } else {
         this.showModal = true;
         this.$gae({
-          eventCategory: "Donation form",
-          eventAction: "Saw recurring donation nag screen",
+          eventLabel: "donate:nag:view",
         });
       }
     },
     noThanks() {
       this.showModal = false;
       this.$gae({
-        eventCategory: "Donation form",
-        eventAction: "Declined recurring donation nag screen",
+        eventLabel: "donate:nag:decline",
       });
       this.stepInc();
     },
@@ -124,8 +122,7 @@ export default {
       this.formData.recurring = "Month";
       this.showModal = false;
       this.$gae({
-        eventCategory: "Donation form",
-        eventAction: "Accepted recurring donation nag screen",
+        eventLabel: "donate:nag:accept",
       });
       this.stepInc();
     },
