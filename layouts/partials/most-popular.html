@@ -9,6 +9,7 @@
   x-init="load()"
   x-show="hasLoaded"
   x-cloak
+  data-ga-action="most-popular"
 >
   <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">Most Popular Stories</h1>
   <nav @click.capture="analytics($event)" class="has-text-dark">
@@ -16,14 +17,17 @@
       <a
         class="is-flex mt-5"
         :href="story.url"
+        :data-ga-label="story.url"
       >
         <span
           class="is-size-2 has-text-grey-light has-text-weight-semibold"
           style="line-height: .75; padding-right: 1rem;"
           x-text="i + 1"
+          data-ga-action="ranking"
         ></span>
         <span
           class="has-text-black hover-underline"
+          data-ga-action="hed"
           x-text="story.title"
         ></span>
       </a>
