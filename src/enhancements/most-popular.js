@@ -1,5 +1,5 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { reportClick } from "../utils/google-analytics.js";
 
 export default ({ mostPopularURL }) => {
   return {
@@ -38,20 +38,21 @@ export default ({ mostPopularURL }) => {
         this.fetchedStories.map((story) => [story.url, story])
       );
 
-      return this.fetchedRankings
-        .map((path) => stories.get(path))
-        .filter((story) => !!story)
-        .slice(0, 5);
+      return (
+        this.fetchedRankings
+          .map((path) => stories.get(path))
+          .filter((story) => !!story)
+          // Make URLs absolute for Google Analytics
+          .map((story) => ({
+            ...story,
+            url: new URL(story.url, window.location).href,
+          }))
+          .slice(0, 5)
+      );
     },
 
     analytics($event) {
-      let { href = "" } = $event.target;
-      sendGAEvent({
-        eventCategory: "Internal Link",
-        eventAction: "Most Popular",
-        eventLabel: href,
-        transport: "beacon",
-      });
+      reportClick($event.target);
     },
   };
 };
