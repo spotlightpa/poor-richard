@@ -1,12 +1,10 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { reportClick } from "../utils/google-analytics.js";
 
 export default () => {
   return {
     feedURL: "",
-    eventCategory: "",
-    eventAction: "",
-    datestringer: null,
+    formatDate: null,
 
     hasLoaded: false,
     isLoading: false,
@@ -17,8 +15,6 @@ export default () => {
       if (this.isLoading || this.hasLoaded) return;
 
       this.feedURL = this.$el.dataset.feedUrl;
-      this.eventCategory = this.$el.dataset.eventCategory;
-      this.eventAction = this.$el.dataset.eventAction;
 
       let datestringer = new Intl.DateTimeFormat("en-US", {
         weekday: "short",
@@ -51,13 +47,7 @@ export default () => {
     },
 
     analytics($event) {
-      let { href = "" } = $event.currentTarget;
-      sendGAEvent({
-        eventCategory: this.eventCategory,
-        eventAction: this.eventAction,
-        eventLabel: href,
-        transport: "beacon",
-      });
+      reportClick($event.target);
     },
   };
 };
