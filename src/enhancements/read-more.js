@@ -1,4 +1,4 @@
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { reportClick } from "../utils/google-analytics.js";
 import imgproxy from "../utils/imgproxy-url.js";
 
 function roundUp(n, by) {
@@ -75,13 +75,7 @@ export default ({ showDate = false }) => {
     },
 
     analytics($event) {
-      let { href = "" } = $event.target;
-      sendGAEvent({
-        eventCategory: "Internal Link",
-        eventAction: "Read More",
-        eventLabel: href,
-        transport: "beacon",
-      });
+      reportClick($event.currentTarget);
     },
   };
 };
