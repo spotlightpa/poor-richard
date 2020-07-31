@@ -46,9 +46,7 @@ export default {
       let [label] = ev.target.labels;
       let eventLabel = label ? label.innerText : ev.target.name;
       this.$gae({
-        eventCategory: "Donation form",
-        eventAction: "Focused a field",
-        eventLabel,
+        eventLabel: "donate:focus:" + eventLabel,
       });
     },
     validate(ev) {
