@@ -32,7 +32,7 @@
               @click.prevent="click()"
               @mouseover.once="load()"
               @touchstart.once="load()"
-              data-ga-event='{ "eventCategory": "Read more", "eventAction": "click", "eventLabel": "/news/" }'
+              :data-ga-label='"readmore:load"'
               href="/news/"
               class="button is-primary is-medium is-uppercase has-text-weight-semibold"
               :class="loadingClass"
