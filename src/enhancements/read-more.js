@@ -1,4 +1,4 @@
-import { reportClick } from "../utils/google-analytics.js";
+import { reportClick as analytics } from "../utils/google-analytics.js";
 import imgproxy from "../utils/imgproxy-url.js";
 
 function roundUp(n, by) {
@@ -16,6 +16,7 @@ function toStory(data, { width, height }) {
 
 export default ({ showDate = false }) => {
   return {
+    analytics,
     showDate,
     hasLoaded: false,
     isLoading: false,
@@ -72,10 +73,6 @@ export default ({ showDate = false }) => {
       this.load();
       this.hasClicked = true;
       this.counter += 25;
-    },
-
-    analytics($event) {
-      reportClick($event.currentTarget);
     },
   };
 };

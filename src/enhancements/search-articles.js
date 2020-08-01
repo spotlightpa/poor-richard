@@ -1,7 +1,7 @@
 import { apdate } from "journalize";
 
 import imgproxy from "../utils/imgproxy-url.js";
-import { reportClick } from "../utils/google-analytics.js";
+import { reportClick as analytics } from "../utils/google-analytics.js";
 import searchAPI from "../utils/search-api.js";
 import { debouncer } from "../utils/timers.js";
 
@@ -32,6 +32,7 @@ const magicPixel =
 
 export default function searchArticles() {
   return {
+    analytics,
     query: "",
     results: null,
     error: null,
@@ -97,10 +98,6 @@ export default function searchArticles() {
       width = roundUp(window.devicePixelRatio * width, 100);
       height = Math.round(aspectRatio * width);
       el.src = imgproxy(src, { width, height });
-    },
-
-    analytics($event) {
-      reportClick($event.currentTarget);
     },
   };
 }

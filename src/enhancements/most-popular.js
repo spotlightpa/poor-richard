@@ -1,8 +1,9 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { reportClick } from "../utils/google-analytics.js";
+import { reportClick as analytics } from "../utils/google-analytics.js";
 
 export default ({ mostPopularURL }) => {
   return {
+    analytics,
     hasLoaded: false,
     isLoading: false,
     fetchedStories: [],
@@ -38,21 +39,10 @@ export default ({ mostPopularURL }) => {
         this.fetchedStories.map((story) => [story.url, story])
       );
 
-      return (
-        this.fetchedRankings
-          .map((path) => stories.get(path))
-          .filter((story) => !!story)
-          // Make URLs absolute for Google Analytics
-          .map((story) => ({
-            ...story,
-            url: new URL(story.url, window.location).href,
-          }))
-          .slice(0, 5)
-      );
-    },
-
-    analytics($event) {
-      reportClick($event.target);
+      return this.fetchedRankings
+        .map((path) => stories.get(path))
+        .filter((story) => !!story)
+        .slice(0, 5);
     },
   };
 };
