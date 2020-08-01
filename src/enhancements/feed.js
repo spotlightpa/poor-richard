@@ -1,8 +1,9 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { reportClick } from "../utils/google-analytics.js";
+import { reportClick as analytics } from "../utils/google-analytics.js";
 
 export default () => {
   return {
+    analytics,
     feedURL: "",
     formatDate: null,
 
@@ -44,10 +45,6 @@ export default () => {
         return [];
       }
       return this.fetchedObj.items;
-    },
-
-    analytics($event) {
-      reportClick($event.target);
     },
   };
 };

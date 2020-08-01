@@ -66,17 +66,19 @@ export function buildEvent(el) {
   };
 }
 
-export function reportClick(el) {
-  let ev = buildEvent(el);
+export function reportClick(ev) {
+  let gaEvent = buildEvent(ev.target);
 
-  if (!ev.eventLabel) {
-    ev.eventLabel = el.href;
+  if (!gaEvent.eventLabel) {
+    gaEvent.eventLabel = ev.target.href;
   }
 
-  sendGAEvent({
-    ...ev,
-    transport: "beacon",
-  });
+  if (!gaEvent.eventLabel) {
+    gaEvent.eventLabel = ev.currentTarget.href;
+  }
+  gaEvent.transport = "beacon";
+
+  sendGAEvent(gaEvent);
 }
 
 export function addGAListeners() {
@@ -96,8 +98,8 @@ export function addGAListeners() {
       el.rel = "noopener noreferrer";
     }
 
-    on("click", el, () => {
-      reportClick(el);
+    on("click", el, (ev) => {
+      reportClick(ev);
     });
   });
 

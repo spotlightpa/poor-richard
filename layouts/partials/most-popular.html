@@ -12,12 +12,12 @@
   data-ga-action="most-popular"
 >
   <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">Most Popular Stories</h1>
-  <nav @click.capture="analytics($event)" class="has-text-dark">
+  <nav class="has-text-dark">
     <template x-for="(story, i) of stories">
       <a
         class="is-flex mt-5"
         :href="story.url"
-        :data-ga-label="story.url"
+        @click.capture="analytics($event)"
       >
         <span
           class="is-size-2 has-text-grey-light has-text-weight-semibold"

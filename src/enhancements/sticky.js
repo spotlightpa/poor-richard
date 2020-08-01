@@ -1,4 +1,7 @@
-import { sendGAEvent, reportClick as analytics } from "../utils/google-analytics.js";
+import {
+  sendGAEvent,
+  reportClick as analytics,
+} from "../utils/google-analytics.js";
 import randomChoice from "../utils/random-choice.js";
 
 export default function sticky() {
