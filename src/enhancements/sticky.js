@@ -1,8 +1,9 @@
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { sendGAEvent, reportClick as analytics } from "../utils/google-analytics.js";
 import randomChoice from "../utils/random-choice.js";
 
 export default function sticky() {
   return {
+    analytics,
     isOpen: false,
     images: [],
     _imageURL: "",
@@ -45,16 +46,6 @@ export default function sticky() {
       sendGAEvent({
         eventCategory: "Sticky Banner",
         eventAction: "Dismiss sticky banner",
-      });
-    },
-
-    analytics($event) {
-      let { href = "" } = $event.currentTarget;
-      sendGAEvent({
-        eventCategory: "Sticky Banner",
-        eventAction: "click",
-        eventLabel: href,
-        transport: "beacon",
       });
     },
   };
