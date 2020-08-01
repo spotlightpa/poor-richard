@@ -1,7 +1,7 @@
 import { apdate } from "journalize";
 
 import imgproxy from "../utils/imgproxy-url.js";
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { reportClick } from "../utils/google-analytics.js";
 import searchAPI from "../utils/search-api.js";
 import { debouncer } from "../utils/timers.js";
 
@@ -100,13 +100,7 @@ export default function searchArticles() {
     },
 
     analytics($event) {
-      let { href = "" } = $event.target;
-      sendGAEvent({
-        eventCategory: "Internal Link",
-        eventAction: "Search",
-        eventLabel: href,
-        transport: "beacon",
-      });
+      reportClick($event.currentTarget);
     },
   };
 }
