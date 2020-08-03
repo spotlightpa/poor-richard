@@ -38,16 +38,19 @@
   {{ block "svg-resources" . }}{{ partialCached "svg-resources.html" . }}{{ end }}
   {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
   {{ if .Param "banner-active" }}
-    {{ partial "banner.html" . }}
+    {{ partialCached "banner.html" . }}
   {{ end }}
-  <main data-ga-action="Main section">
+  {{ if .Param "promo-active" | and (.IsPage | or .IsHome) }}
+    {{ partialCached "promo.html" . }}
+  {{ end }}
+  <main data-ga-action="main">
     {{ block "before-main" . }}{{ end }}
     {{ block "main" . }}
       {{ .Render "main" }}
     {{ end }}
     {{ block "extra-main" . }}{{ end }}
   </main>
-  <footer data-ga-action="Page footer">
+  <footer data-ga-action="footer">
     {{ block "promo" . }}{{ end }}
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
     {{ block "extra-footer" . }}{{ end }}

@@ -11,11 +11,7 @@
 {{ $pages = after 1 $pages }}
 
 {{ $hasPromo := .Param "promo-active" }}
-{{ $marginClass := "" }}
-{{ if $hasPromo }}
-  {{ partialCached "promo.html" . }}
-  {{ $marginClass = "has-margin-top-negative" }}
-{{ end }}
+{{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
 <section class="section {{ $marginClass }}" data-ga-action="Homepage link">
   <div
