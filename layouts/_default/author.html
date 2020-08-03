@@ -5,7 +5,7 @@
         <header class="block">
           <div class="is-clearfix">
             <div class="is-pulled-right">
-              {{ partial "breadcrumbs.html" . }}
+              {{ partial "component/breadcrumbs.html" . }}
             </div>
           </div>
 
@@ -14,7 +14,7 @@
           </h1>
 
           <div class="my-5">
-            {{ partial "social-buttons.html" . }}
+            {{ partial "component/social-buttons.html" . }}
           </div>
         </header>
 
@@ -44,11 +44,11 @@
           </div>
         </div>
         {{ range $page := .Paginator.Pages }}
-          {{ partial "tile-archive.html" $page }}
+          {{ partial "tile/archive.html" $page }}
         {{ end }}
       </div>
 
-      {{ partial "paginator-level.html" .Paginator }}
+      {{ partial "component/paginator-level.html" .Paginator }}
     </div>
   </section>
 {{ end }}

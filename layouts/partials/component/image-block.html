@@ -10,7 +10,7 @@
     {{ $height := div (mul $heightR $width) $widthR }}
 
     {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
-    {{ $url := partial "imgproxy.html" $imgOpt }}
+    {{ $url := partial "helper/imgproxy" $imgOpt }}
     {{ $src := printf "%s %dw" $url $width }}
     {{ $imgs = $imgs | append $src }}
     {{ if eq $i 0 }}

@@ -5,7 +5,7 @@
 
   {{- $json.SetInMap "item" "url" .RelPermalink -}}
   {{- $json.SetInMap "item" "title" .LinkTitle -}}
-  {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
   {{- $json.SetInMap "item" "byline" $params.byline -}}
   {{- $json.SetInMap "item" "kicker" $params.kicker -}}

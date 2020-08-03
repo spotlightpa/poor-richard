@@ -2,9 +2,9 @@
 {{- range $i, $p := $p.Pages -}}
   {{- if eq $i 0 -}}
     {{- $row := slice "date" "kicker" "title"  "byline" "url" -}}
-    {{- partial "csv-row.txt" $row -}}
+    {{- partial "helper/csv-row.txt" $row -}}
   {{- end -}}
-  {{- $params := partialCached "page-params.html" .Page .RelPermalink -}}
+  {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
   {{- $row := slice .PublishDate $params.kicker .Title  $params.byline .Permalink -}}
-  {{- partial "csv-row.txt" $row -}}
+  {{- partial "helper/csv-row.txt" $row -}}
 {{- end -}}

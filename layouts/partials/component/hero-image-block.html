@@ -23,5 +23,5 @@
   {{ $imgOpts = dict "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
 {{ end }}
 {{ if ne $size "hidden" }}
-  {{ $imgOpts | partial "image-block.html" }}
+  {{ $imgOpts | partial "component/image-block.html" }}
 {{ end }}

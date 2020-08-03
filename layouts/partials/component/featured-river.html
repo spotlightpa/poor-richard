@@ -1,10 +1,10 @@
 {{ $news := site.GetPage "/news/_index.md" }}
-{{ $featuredStories := partial "get-picks" "featuredStories" }}
+{{ $featuredStories := partial "helper/get-picks" "featuredStories" }}
 {{ if lt (len $featuredStories) 1 }}
   {{ $featuredStories = first 1 $news.RegularPages }}
 {{ end }}
 {{ $featuredStories = last 1 $featuredStories }}
-{{ $topSlots := partial "get-picks" "topSlots" }}
+{{ $topSlots := partial "helper/get-picks" "topSlots" }}
 
 {{ $pages := $featuredStories | append $topSlots }}
 {{ $pages = union $pages $news.RegularPages }}
@@ -19,13 +19,13 @@
     x-data="spl.readmore({ showDate: false })"
   >
     <div class="tile is-ancestor is-vertical">
-      {{ partial "tile-featured.html" $featuredStories }}
+      {{ partial "tile/featured.html" $featuredStories }}
 
       <div class="tile">
         {{ range $page := first 3 $pages }}
           <div class="tile is-parent is-4 has-margin-top-negative">
             <div class="tile is-child">
-              {{ partial "tile-stack.html" $page }}
+              {{ partial "tile/stack.html" $page }}
             </div>
           </div>
         {{ end }}
@@ -38,7 +38,7 @@
             class="tile is-child"
             data-ga-action="midpage:newsletter"
           >
-            {{ partial "newsletter-box.html" . }}
+            {{ partial "component/newsletter-box.html" . }}
           </div>
         </div>
       </div>
@@ -50,8 +50,8 @@
         >
           <div class="tile is-parent is-top is-4" style="order: 2">
             <div class="tile is-child">
-              {{ partial "most-popular.html" dict }}
-              {{ partial "editors-picks.html" dict }}
+              {{ partial "component/most-popular.html" dict }}
+              {{ partial "component/editors-picks.html" dict }}
             </div>
           </div>
           <div
@@ -71,10 +71,10 @@
                 </div>
               </div>
               {{ range $page := after 3 $pages | first 20 }}
-                {{ partial "tile-horiz.html" $page }}
+                {{ partial "tile/horiz.html" $page }}
               {{ end }}
 
-              {{ partial "tile-readmore.html" dict }}
+              {{ partial "tile/readmore.html" dict }}
             </div>
             <div class="tile"></div>
           </div>
@@ -99,7 +99,7 @@
         </div>
       {{ end }}
       <div class="tile">
-        {{ partial "tile-promos.html" . }}
+        {{ partial "tile/promos.html" . }}
       </div>
     </div>
   </div>

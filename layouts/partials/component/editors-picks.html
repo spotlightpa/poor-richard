@@ -1,4 +1,4 @@
-{{ $edPicks := partial "get-picks" "sidebarPicks" }}
+{{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
 {{ if $edPicks }}
   <div
     class="plain-notification"
@@ -8,7 +8,7 @@
       Editor’s Pick
     </h1>
     {{ range $page := last 1 $edPicks }}
-      {{ partial "tile-ed-pix.html" $page }}
+      {{ partial "tile/ed-pix.html" $page }}
     {{ end }}
   </div>
 {{ end }}

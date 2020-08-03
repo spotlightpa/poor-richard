@@ -2,7 +2,7 @@
 title = "Tips Embed"
 type = "embed-page"
 
-embed-partial = "embed-tips.html"
+embed-partial = "tips.html"
 
 [[page-query-params]]
 name = "tip_text"

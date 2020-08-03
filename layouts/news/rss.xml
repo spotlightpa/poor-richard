@@ -39,7 +39,7 @@
         {{ $imgDescription := .Param "image-description" }}
         {{ if $imgName }}
           {{ $imgOpt := dict "filename" $imgName "width" 1000 "height" 1000 }}
-          {{ $url := partial "imgproxy.html" $imgOpt }}
+          {{ $url := partial "helper/imgproxy" $imgOpt }}
           <media:content
             url="{{ $url }}"
             type="image/jpg"

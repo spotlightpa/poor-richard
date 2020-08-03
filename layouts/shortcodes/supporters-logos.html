@@ -4,11 +4,11 @@
     {{ $lenfest.Set "name" "Lenfest Institute for Journalism" }}
     {{ $lenfest.Set "logotype" "svg" }}
     {{ $lenfest.Set "logo" "img/partners/lenfest-extended.svg" }}
-    {{ partial "logo-column.html" $lenfest }}
+    {{ partial "component/logo-column.html" $lenfest }}
     {{ $spotlight := newScratch }}
     {{ $spotlight.Set "url" "/" }}
     {{ $spotlight.Set "name" "Spotlight PA" }}
     {{ $spotlight.Set "logotype" "svg" }}
     {{ $spotlight.Set "logo" "img/logos/banner-default-on-trans.svg" }}
-    {{ partial "logo-column.html" $spotlight }}
+    {{ partial "component/logo-column.html" $spotlight }}
 </div>

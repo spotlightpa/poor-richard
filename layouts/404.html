@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ $content :=  "The requested page was not found. <a href='/' class='has-text-weight-bold'>Go home?</a>" | safeHTML }}
   {{ $dict := dict "class" "is-danger" "title" "Not Found" "subtitle" "Error 404" "content" $content }}
-  {{ partial "message-block.html" $dict }}
+  {{ partial "component/message-block.html" $dict }}
   <script>
     window.ga('send', 'event', {
       eventCategory: "Error",

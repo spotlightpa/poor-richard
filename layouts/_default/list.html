@@ -36,7 +36,7 @@
           {{ $subtitle }}
         </h2>
 
-        {{ partial "hero-image-block.html" . }}
+        {{ partial "component/hero-image-block.html" . }}
       </header>
       {{ with .Content }}
         <div class="content mb-6">
@@ -50,7 +50,7 @@
           {{ range $page := $pages }}
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
-                {{ partial "tile-list.html" $page }}
+                {{ partial "tile/list.html" $page }}
               </div>
             </div>
           {{ end }}
@@ -58,7 +58,7 @@
       </nav>
     </div>
     <div class="column is-three-fifths">
-      {{ partial "paginator-level.html" $p }}
+      {{ partial "component/paginator-level.html" $p }}
     </div>
   </section>
 {{ end }}
