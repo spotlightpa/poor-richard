@@ -14,8 +14,7 @@
     class="section is-small"
     data-ga-action="embed"
   >
-    {{ $embed := .Param "embed-partial" }}
+    {{ $embed := .Param "embed-partial" | printf "embed/%s" }}
     {{ partial $embed . }}
   </div>
 {{end }}
-

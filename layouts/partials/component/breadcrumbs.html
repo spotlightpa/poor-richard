@@ -1,4 +1,4 @@
-{{ $parents := partial "find-parents.html" . }}
+{{ $parents := partialCached "helper/find-parents" . .RelPermalink }}
 {{ $breadcrumbs := where $parents "Kind" "!=" "page" }}
 {{ if len $breadcrumbs | lt 1 }}
   <nav

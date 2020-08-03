@@ -1,26 +1,19 @@
-{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 <article class="tile is-vertical is-bottom">
   {{ if .Page.Param "image" }}
   <div class="tile">
     <div class="tile is-parent is-top">
-      <div class="tile is-child">
-        {{ if $params.rubric }}
-          <a
-            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-            href="{{ $params.rubric.RelPermalink }}"
-          >{{ $params.kicker | default $params.rubric.Title }}</a>
-        {{ else }}
-          <h3
-            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-          >{{ $params.kicker | default "News" }}</h3>
-        {{ end }}
+      <div class="tile is-child is-hidden-tablet-only">
+        <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2">
+          {{ $params.kicker| default "News" }}
+        </h3>
       </div>
     </div>
   </div>
   {{ end }}
   <div class="tile is-bottom">
-    <div class="tile is-parent is-4 is-top-tablet">
+    <div class="tile is-parent is-4 is-top-tablet is-hidden-tablet-only">
       <div class="tile is-child">
         {{ $name := .Page.Param "image" }}
         {{ $credit := .Page.Param "image-credit" }}
@@ -32,7 +25,7 @@
         {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
         {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
         {{ $imgOpts = dict "sizeHint" "15vw" | merge $imgOpts }}
-        {{ partial "image-block.html" $imgOpts }}
+        {{ partial "component/image-block.html" $imgOpts }}
       </div>
     </div>
 
@@ -43,13 +36,24 @@
             {{ .LinkTitle }}
           </a>
         </h2>
-      {{ if $params.byline }}
-        <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-          <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
-            by {{ $params.byline }}
-          </a>
-        </h3>
-      {{ end }}
+        {{ if $params.byline }}
+          <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+            <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
+              by {{ $params.byline }}
+            </a>
+          </h3>
+        {{ end }}
+        {{- if $params.published }}
+          <h3
+            class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+          >
+            <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
+              <time
+                datetime='{{ $params.publishedISO }}'
+              >{{ $params.published }}</time>
+            </a>
+          </h3>
+        {{- end -}}
       </div>
     </div>
   </div>

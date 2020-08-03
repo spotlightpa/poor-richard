@@ -1,10 +1,10 @@
 {{ define "nav" }}
 
-  {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
   {{ $navImage := .Param "nav-image" }}
 
   {{ $imgOpt := dict "filename" $navImage "width" 1200 "height" 900 }}
-  {{ $imgurl := partial "imgproxy.html" $imgOpt }}
+  {{ $imgurl := partial "helper/imgproxy" $imgOpt }}
   <section
     class="hero has-bg-image has-bg-fixed is-on-gradient is-fullheight"
     style="

@@ -1,4 +1,4 @@
-{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 <article>
   <h3
@@ -15,7 +15,7 @@
   {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
   {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
-  {{ partial "image-block.html" $imgOpts }}
+  {{ partial "component/image-block.html" $imgOpts }}
 
   <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
     <a class="has-text-grey-dark hover-underline" href="{{ $params.link }}">

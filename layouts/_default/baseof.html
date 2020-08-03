@@ -13,11 +13,11 @@
     {{- end -}}
   </title>
 
-  {{ partialCached "header-static.html" . }}
-  {{ partial "google-analytics-async.html" . }}
+  {{ partialCached "header/static.html" . }}
+  {{ partial "header/google-analytics-async.html" . }}
 
   <!-- Metadata -->
-  {{ partial "meta.html" . }}
+  {{ partial "header/meta.html" . }}
 
   {{ range .AlternativeOutputFormats }}
     <link
@@ -35,13 +35,13 @@
   data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
   data-ga-category='{{ $pageCat }}'
 >
-  {{ block "svg-resources" . }}{{ partialCached "svg-resources.html" . }}{{ end }}
-  {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
+  {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
+  {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
   {{ if .Param "banner-active" }}
-    {{ partialCached "banner.html" . }}
+    {{ partialCached "component/banner.html" . }}
   {{ end }}
   {{ if .Param "promo-active" | and (.IsPage | or .IsHome) }}
-    {{ partialCached "promo.html" . }}
+    {{ partialCached "component/promo.html" . }}
   {{ end }}
   <main data-ga-action="main">
     {{ block "before-main" . }}{{ end }}
@@ -52,17 +52,17 @@
   </main>
   <footer data-ga-action="footer">
     {{ block "promo" . }}{{ end }}
-    {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
     {{ block "extra-footer" . }}{{ end }}
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ partial "modal-newsletter.html" . }}
+      {{ partial "modal/newsletter.html" . }}
     {{ end }}
   {{ end }}
-  {{ partial "modal-search.html" . }}
+  {{ partial "modal/search.html" . }}
   <script
-    src='{{ partialCached "get-main-js.html" . }}'
+    src='{{ partialCached "helper/get-main-js" . }}'
     async
   ></script>
   <script nomodule>
@@ -70,11 +70,11 @@
     document.body.classList.add("has-old-js");
   </script>
   <script
-    src='{{ partialCached "get-enhancements.html" . }}'
+    src='{{ partialCached "helper/get-enhancements" . }}'
     type="module"
     async
     onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
   ></script>
-  {{ partial "ld-json.html" . }}
+  {{ partial "header/ld-json.html" . }}
 </body>
 </html>

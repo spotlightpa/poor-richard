@@ -14,7 +14,7 @@
 {{ $json.Get "location" | $json.SetInMap "publisher" "location" }}
 {{ $json.Get "logo" | $json.SetInMap "publisher" "logo" }}
 
-{{ $params := partialCached "page-params.html" .Page .RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $pageType := "WebPage" }}
 {{ if $params.byline }}
   {{ $pageType = "Article" }}
@@ -54,7 +54,7 @@
 </script>
 
 {{ $itemlist := slice }}
-{{ range $i, $page := partial "find-parents.html" . }}
+{{ range $i, $page := partialCached "helper/find-parents" . .RelPermalink }}
   {{ $name := .Title }}
   {{ if .IsHome }}
     {{ $name = .Site.Title }}

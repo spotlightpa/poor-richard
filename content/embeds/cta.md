@@ -2,7 +2,7 @@
 title = "CTA Embed"
 type = "embed-page"
 
-embed-partial = "embed-cta.html"
+embed-partial = "cta.html"
 
 [[page-query-params]]
 name = "url"

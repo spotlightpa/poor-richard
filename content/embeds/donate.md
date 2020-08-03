@@ -2,7 +2,7 @@
 title = "Donation Embed"
 type = "embed-page"
 
-embed-partial = "embed-donate.html"
+embed-partial = "donate.html"
 
 [[page-query-params]]
 name = "teaser_text"

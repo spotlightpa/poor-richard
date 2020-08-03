@@ -24,7 +24,7 @@
 {{ $params := dict "byline" $byline "kicker" $kicker "blurb" $blurb "showTitle" $showTitle "topic" $topic "link" $link }}
 
 {{ with .PublishDate }}
-  {{ $pub := partial "date-apstyle.html" .Local }}
+  {{ $pub := partial "helper/date-apstyle" .Local }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
   {{ $iso := .Format $isoFormat }}
   {{ $params = dict "published" $pub "publishedISO" $iso | merge $params }}

@@ -5,6 +5,6 @@
     {{ $partner.Set "name" .name }}
     {{ $partner.Set "logotype" .logotype }}
     {{ printf "img/partners/%s.%s" .slug .logotype | $partner.Set "logo" }}
-    {{ partial "logo-column.html" $partner }}
+    {{ partial "component/logo-column.html" $partner }}
   {{ end }}
 </div>

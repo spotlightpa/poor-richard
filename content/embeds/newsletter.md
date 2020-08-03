@@ -2,5 +2,5 @@
 title = "Newsletter Embed"
 type = "embed-page"
 
-embed-partial = "embed-newsletter.html"
+embed-partial = "newsletter.html"
 +++
