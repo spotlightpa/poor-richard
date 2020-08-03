@@ -32,13 +32,21 @@
     <div class="tile is-parent is-8 is-bottom-tablet">
       <div class="tile is-child">
         <h2 class="title is-spaced is-4 mt-2-tablet">
-          <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
+          <a
+            class="has-text-black hover-underline"
+            href="{{ .RelPermalink }}"
+            data-ga-action="hed"
+          >
             {{ .LinkTitle }}
           </a>
         </h2>
         {{ if $params.byline }}
           <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-            <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
+            <a
+              href="{{ .RelPermalink }}"
+              class="has-text-grey hover-underline"
+              data-ga-action="byline"
+            >
               by {{ $params.byline }}
             </a>
           </h3>
@@ -46,6 +54,7 @@
         {{- if $params.published }}
           <h3
             class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+            data-ga-action="time"
           >
             <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
               <time
