@@ -13,7 +13,7 @@
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
-<section class="section {{ $marginClass }}" data-ga-action="Homepage link">
+<section class="section {{ $marginClass }}" data-ga-action="homepage">
   <div
     class="container-hp"
     x-data="spl.readmore({ showDate: false })"
@@ -21,11 +21,11 @@
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile/featured.html" $featuredStories }}
 
-      <div class="tile">
+      <div class="tile" data-ga-action="pinned">
         {{ range $page := first 3 $pages }}
           <div class="tile is-parent is-4 has-margin-top-negative">
             <div class="tile is-child">
-              {{ partial "tile/stack.html" $page }}
+              {{ partial "tile/pinned.html" $page }}
             </div>
           </div>
         {{ end }}
@@ -61,6 +61,7 @@
             <div
               class="tile is-vertical"
               x-ref="archives"
+              data-ga-action="river"
             >
               <div class="tile is-parent is-top">
                 <div class="tile is-child">
@@ -71,7 +72,7 @@
                 </div>
               </div>
               {{ range $page := after 3 $pages | first 20 }}
-                {{ partial "tile/horiz.html" $page }}
+                {{ partial "tile/river.html" $page }}
               {{ end }}
 
               {{ partial "tile/readmore.html" dict }}
@@ -88,6 +89,7 @@
                 @click.prevent="click()"
                 @mouseover.once="load()"
                 @touchstart.once="load()"
+                data-ga-action="readmore"
                 :data-ga-label='"readmore:load"'
                 href="/news/"
                 class="button is-primary is-medium is-uppercase has-text-weight-semibold"
@@ -98,7 +100,7 @@
           </div>
         </div>
       {{ end }}
-      <div class="tile">
+      <div class="tile" data-ga-action="promo">
         {{ partial "tile/promos.html" . }}
       </div>
     </div>
