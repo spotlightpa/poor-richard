@@ -1,5 +1,6 @@
 <div
   class="modal"
+  data-ga-action="modal:newsletter:investigator"
   :class="modalClass"
   x-data="spl.modal()"
   x-show="isOpen"
@@ -10,102 +11,104 @@
   @scroll.window.once.passive="init()"
 >
   <div class="modal-background"></div>
-  <form
+  <div
     class="modal-content"
-    action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
-    method="post"
-    target="_blank"
     x-ref="content"
+    tabindex="-1"
     @click.away="close()"
     @keydown.escape="close()"
     @touchmove.away.prevent
-    tabindex="-1"
   >
-    <input type="hidden" name="group[26457]" value="1">
-    <header class="modal-card-head">
-      <p class="modal-card-title has-text-centered is-size-2">
-        <span class="svg-container has-text-white">
-          <svg viewBox="0 0 1024 190">
-            <use xlink:href="#logo-svg"></use>
-          </svg>
-        </span>
-      </p>
-      <button
-        class="delete"
-        type="button"
-        aria-label="close"
-        @click="close"
-      ></button>
-    </header>
-    <div class="modal-card-body">
-      <p class="is-hidden" aria-hidden="true">
-        <label>
-          Don’t fill this out if you're human:
-          <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
-        </label>
-      </p>
-      <h2 class="title is-size-2 is-size-3-mobile has-text-centered">
-        Investigative Journalism
-        <span class="is-hidden-touch"><br /></span>
-        for Pennsylvania
-      </h2>
-      <p class="is-size-4 is-hidden-mobile">
-        Sign up for exclusive looks at our reporting and a roundup of the best stories from Pa., all delivered to your inbox once a week.
-      </p>
+    <form
+      data-ga-form="newsletters:investigator"
+      action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=0466df5ab5"
+      method="post"
+      target="_blank"
+    >
+      <input type="hidden" name="group[26457]" value="1">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-text-centered is-size-2">
+          <span class="svg-container has-text-white">
+            <svg viewBox="0 0 1024 190">
+              <use xlink:href="#logo-svg"></use>
+            </svg>
+          </span>
+        </p>
+        <button
+          class="delete"
+          type="button"
+          aria-label="close"
+          @click="close(true)"
+        ></button>
+      </header>
+      <div class="modal-card-body">
+        <p class="is-hidden" aria-hidden="true">
+          <label>
+            Don’t fill this out if you're human:
+            <input type="text" name="b_4f6d92afd9b3de3ddb48714b9_0466df5ab5" tabindex="-1" value="">
+          </label>
+        </p>
+        <h2 class="title is-size-2 is-size-3-mobile has-text-centered">
+          Investigative Journalism
+          <span class="is-hidden-touch"><br /></span>
+          for Pennsylvania
+        </h2>
+        <p class="is-size-4 is-hidden-mobile">
+          Sign up for exclusive looks at our reporting and a roundup of the best stories from Pa., all delivered to your inbox once a week.
+        </p>
 
-      <p class="is-size-4 is-hidden-tablet">
-        Sign up for exclusive looks at our reporting and a weekly roundup of the best stories from across Pa.
-      </p>
+        <p class="is-size-4 is-hidden-tablet">
+          Sign up for exclusive looks at our reporting and a weekly roundup of the best stories from across Pa.
+        </p>
 
-      <div class="field mt-5">
-        <label class="is-sr-only" for="modal-email">Email</label>
-        <div class="control has-icons-left has-icons-right">
-          <input
-            id="modal-email"
-            class="input is-medium"
-            type="email"
-            name="EMAIL"
-            placeholder="Email"
-            @focus="focus()"
+        <div class="field mt-5">
+          <label class="is-sr-only" for="modal-email">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              id="modal-email"
+              class="input is-medium"
+              type="email"
+              name="EMAIL"
+              placeholder="Email"
+            >
+            <span class="icon is-large is-left">
+              <svg>
+                <use xlink:href="#email-svg"></use>
+              </svg>
+            </span>
+            <span class="icon is-large is-right validator-icon">
+              <svg>
+                <use xlink:href="#check-svg"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="buttons is-centered">
+          <button
+            type="submit"
+            class="button is-medium is-danger has-text-weight-semibold"
           >
-          <span class="icon is-large is-left">
-            <svg>
-              <use xlink:href="#email-svg"></use>
-            </svg>
-          </span>
-          <span class="icon is-large is-right validator-icon">
-            <svg>
-              <use xlink:href="#check-svg"></use>
-            </svg>
-          </span>
+            Sign me up
+          </button>
+        </div>
+        <div class="has-text-centered">
+          <a
+            class="has-text-grey hover-underline"
+            aria-label="close"
+            tabindex="0"
+            data-ga-label="modal:newsletter:dismiss"
+            @click="close(false)"
+            @keydown.space="close(true)"
+          >
+            No thanks
+          </a>
         </div>
       </div>
-      <div class="buttons is-centered">
-        <button
-          type="submit"
-          class="button is-medium is-danger has-text-weight-semibold"
-          @click="submit()"
-        >
-          Sign me up
-        </button>
-      </div>
-      <div class="has-text-centered">
-        <a
-          class="has-text-grey hover-underline"
-          data-ga-event='{"eventCategory": "Modal interaction", "eventAction": "Dismiss modal newsletter"}'
-          aria-label="close"
-          tabindex="0"
-          @click="close(false)"
-          @keydown.space="close(false)"
-        >
-          No thanks
-        </a>
-      </div>
-    </div>
-  </form>
+    </form>
+  </div>
   <button
     class="modal-close is-large"
     aria-label="close"
-    @click="close"
+    @click="close()"
   ></button>
 </div>
