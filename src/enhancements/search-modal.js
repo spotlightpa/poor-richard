@@ -1,3 +1,5 @@
+import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
+
 export default function searchModal() {
   return {
     oldFocus: null,
@@ -18,11 +20,16 @@ export default function searchModal() {
       });
     },
 
-    close() {
+    close(sendEvent = true) {
       this.oldFocus.focus();
       document.body.parentElement.classList.remove("is-clipped");
 
       this.isOpen = false;
+      if (sendEvent) {
+        let gaEvent = buildEvent(this.$el);
+        gaEvent.eventLabel = "modal:search:dismiss";
+        sendGAEvent(gaEvent);
+      }
     },
   };
 }
