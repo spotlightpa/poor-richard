@@ -1,13 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2020-07-31-SPLGRANT03.md"
+    "content/news/2020-08-03-SPLCAP04.md"
   ],
   "subfeatures": [],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-07-31-SPLGRANT03.md",
     "content/news/2020-07-30-SPLDIAMOND31.md",
-    "content/news/2020-07-26-SPLVETOXX.md",
     "content/news/2020-07-24-SPLtracing24.md"
   ],
   "sidebarPicks": [
