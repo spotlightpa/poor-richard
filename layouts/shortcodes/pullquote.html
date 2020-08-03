@@ -1,6 +1,9 @@
 {{ $side:= .Get "side" | default "right" }}
 {{ $style := .Get "color" | default "light" }}
-<aside class="is-pullquote is-pulled-{{ $side }}">
+<aside
+  class="is-pullquote is-pulled-{{ $side }}"
+  data-ga-action="inline:pullquote"
+>
   <div class="notification is-{{ $style }} is-size-4">
     {{ .Inner }}
   </div>
