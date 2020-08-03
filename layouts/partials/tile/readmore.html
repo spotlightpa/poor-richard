@@ -80,7 +80,7 @@
 </template>
 
 <template x-if="error && hasClicked">
-  <div class="message is-danger">
+  <div class="message is-danger" data-ga-action="error">
     Could not load more.
     <a href="/news/" class="has-text-weight-semibold">Try again?</a>
   </div>

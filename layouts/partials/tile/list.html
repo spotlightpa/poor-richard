@@ -18,13 +18,21 @@
   {{ partial "component/image-block.html" $imgOpts }}
 
   <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
-    <a class="has-text-grey-dark hover-underline" href="{{ $params.link }}">
+    <a
+      class="has-text-grey-dark hover-underline"
+      href="{{ $params.link }}"
+      data-ga-action="hed"
+    >
       {{ .LinkTitle }}
     </a>
   </h2>
   {{ if $params.byline }}
     <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-      <a href="{{ $params.link }}" class="has-text-grey hover-underline">
+      <a
+        href="{{ $params.link }}"
+        class="has-text-grey hover-underline"
+        data-ga-action="byline"
+      >
         by {{ $params.byline }}
       </a>
     </h3>
