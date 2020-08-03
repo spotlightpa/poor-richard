@@ -13,8 +13,8 @@
   <div class="modal-background"></div>
   <div
     class="modal-content"
-    @click.away="close()"
-    @keydown.escape="close()"
+    @click.away="close(true)"
+    @keydown.escape="close(true)"
     tabindex="-1"
   >
     <header class="modal-card-head">
@@ -27,7 +27,7 @@
         class="delete"
         type="button"
         aria-label="close"
-        @click="close()"
+        @click="close(true)"
       ></button>
     </header>
     <div class="modal-card-body" style="overflow-x: hidden; height: 70vh;">
@@ -37,6 +37,6 @@
   <button
     class="modal-close is-large"
     aria-label="close"
-    @click="close()"
+    @click="close(true)"
   ></button>
 </section>
