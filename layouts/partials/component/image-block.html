@@ -20,7 +20,7 @@
   {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
 
-  <figure class="{{ .figClass }}">
+  <figure class="{{ .figClass }}" data-ga-action="thumb">
     {{- if .link -}}
       <a
         class="image {{ $imgClass }} has-background-grey-lighter"
