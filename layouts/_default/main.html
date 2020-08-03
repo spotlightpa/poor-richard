@@ -1,17 +1,16 @@
 {{ $params := partialCached "page-params.html" .Page .RelPermalink }}
 
 {{ $hasPromo := .Param "promo-active" }}
-{{ $marginClass := "" }}
-{{ if $hasPromo }}
-  {{ partialCached "promo.html" . }}
-  {{ $marginClass = "has-margin-top-negative" }}
-{{ end }}
+{{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
 <section class="section {{ $marginClass }}">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
       {{ if $params.showTitle }}
-        <header class="block">
+        <header
+          class="block"
+          data-ga-action="header"
+        >
           {{ if $params.rubric }}
             <a
               class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
@@ -73,7 +72,7 @@
 
       <div
         class="block"
-        data-ga-action="Main content"
+        data-ga-action="content"
       >
         <div class="content">
           {{ .Content }}
@@ -83,7 +82,7 @@
       {{ with .Param "authors" }}
         <footer
           class="block"
-          data-ga-action="Author info"
+          data-ga-action="footer:author"
         >
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}

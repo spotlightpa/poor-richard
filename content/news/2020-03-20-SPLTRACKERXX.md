@@ -26,5 +26,6 @@
 	"series": ["Coronavirus Map"],
 	"subtitle": "",
 	"suppress-title": true,
-	"modal-exclude": true
+	"modal-exclude": true,
+	"promo-active": false
 }
