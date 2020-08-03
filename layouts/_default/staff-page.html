@@ -1,7 +1,7 @@
 {{ define "extra-main" }}
   <section
     class="section columns has-background-white-ter"
-    data-ga-action="Staff page"
+    data-ga-action="staff"
   >
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range sort .Site.Data.authors "lastName" }}
@@ -45,7 +45,7 @@
                 {{ end }}
                 <div class="media-content">
                   {{ if $articlesListLink }}
-                    <p class="title is-3">
+                    <p class="title is-3" data-ga-action="author-articles">
                       <a href="{{ $articlesListLink }}">{{ .name }}</a>
                     </p>
                   {{ else }}
@@ -59,7 +59,10 @@
                           <use xlink:href="#email-svg"></use>
                         </svg>
                       </span>
-                      <a href="mailto:{{ . }}">
+                      <a
+                        data-ga-action="author-email"
+                        href="mailto:{{ . }}"
+                      >
                         {{ . }}
                       </a>
                     {{ end }}
@@ -72,14 +75,17 @@
                           <use xlink:href="#twitter-svg"></use>
                         </svg>
                       </span>
-                      <a href="https://www.twitter.com/{{ . }}">
+                      <a
+                        data-ga-action="author-twitter"
+                        href="https://www.twitter.com/{{ . }}"
+                      >
                         @{{ . }}
                       </a>
                     {{ end }}
                   </p>
                 </div>
               </div>
-              <div class="content">
+              <div class="content" data-ga-action="author-bio">
                 {{ .content|markdownify }}
               </div>
             </div>
