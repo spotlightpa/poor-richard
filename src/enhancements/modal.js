@@ -1,4 +1,4 @@
-import { sendGAEvent } from "../utils/google-analytics.js";
+import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
 import {
   onTestPage,
   showModalNewsletter,
@@ -26,34 +26,18 @@ export default function modal() {
 
     show() {
       sawModalNewsletter();
+      let gaEvent = buildEvent(this.$el);
+      gaEvent.eventLabel = "modal:newsletter:open";
+      gaEvent.nonInteraction = true;
+      sendGAEvent(gaEvent);
+
       this.isOpen = true;
 
       document.body.parentElement.classList.add("is-clipped");
 
-      sendGAEvent({
-        eventCategory: "Modal interaction",
-        eventAction: `Saw modal newsletter`,
-        nonInteraction: true,
-      });
-
       this.oldFocus = document.activeElement;
       this.$nextTick(() => {
         this.$refs.content.focus();
-      });
-    },
-
-    focus() {
-      sendGAEvent({
-        eventCategory: "Modal interaction",
-        eventAction: "Focus input",
-      });
-    },
-
-    submit() {
-      sendGAEvent({
-        eventCategory: "Modal interaction",
-        eventAction: `Submit newsletter`,
-        transport: "beacon",
       });
     },
 
@@ -63,10 +47,9 @@ export default function modal() {
 
       this.isOpen = false;
       if (sendEvent) {
-        sendGAEvent({
-          eventCategory: "Modal interaction",
-          eventAction: "Dismiss modal newsletter",
-        });
+        let gaEvent = buildEvent(this.$el);
+        gaEvent.eventLabel = "modal:newsletter:dismiss";
+        sendGAEvent(gaEvent);
       }
     },
   };
