@@ -2,7 +2,7 @@
 {{ $logotype := .Get "logotype" }}
 {{ $name := .Get "name" }}
 {{ $url := .Get "url" }}
-<div class="column is-narrow has-text-centered">
+<div class="column is-narrow has-text-centered" data-ga-action="logos">
   <a
     href="{{ $url }}"
     title="{{ $name }}"
