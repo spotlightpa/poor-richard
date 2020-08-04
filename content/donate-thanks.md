@@ -12,10 +12,9 @@ no-index = true
 url = "/donate/thanks/"
 type = "root"
 +++
-
 # Thank you for your generous donation
 
-Thank you for your generous donation to Spotlight PA. You should recieve a receipt by email from DoNotReply@ClickandPledge.com.
+Thank you for your generous donation to Spotlight PA. You should receive a receipt by email from DoNotReply@ClickandPledge.com.
 
 We encourage you to share your pledge on social media.
 
