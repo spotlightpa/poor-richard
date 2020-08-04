@@ -1,17 +1,19 @@
 {
   "featuredStories": [
-    "content/news/2020-08-04-SPLTRACE04.md",
-    "content/news/2020-08-03-SPLCAP04.md"
+    "content/news/2020-08-04-SPLTRACE04.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-06-16-SPLtracing17.md",
+    "content/news/2020-06-26-SPLTRACEXX.md"
+  ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-08-03-SPLCAP04.md",
     "content/news/2020-08-03-SPLREVENUE04.md",
-    "content/news/2020-07-31-SPLGRANT03.md",
-    "content/news/2020-07-30-SPLDIAMOND31.md"
+    "content/news/2020-07-31-SPLGRANT03.md"
   ],
   "sidebarPicks": [
-    "content/news/2020-06-16-SPLtracing17.md"
+    "content/news/2020-06-13-SPLINFECTION14.md"
   ]
 }
