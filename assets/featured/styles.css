@@ -208,7 +208,7 @@ div.section__divider hr {
     "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
 }
 .aside__keypoints {
-  background-image: url("./img/icon__key__graphic.png");
+  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/icon__key__graphic.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 150px;
@@ -217,7 +217,7 @@ div.section__divider hr {
   border-left: none;
 }
 .aside__info {
-  background-image: url("./img/icon__info__graphic.png");
+  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/icon__info__graphic.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 150px;
@@ -449,7 +449,7 @@ div.section__divider,
   margin-bottom: 3rem;
   margin-top: 3rem;
   padding-left: 2rem;
-  background-image: url("./img/quote__graphic.png");
+  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/quote__graphic.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -587,7 +587,7 @@ div.section__divider,
     margin-bottom: 3rem;
     margin-top: 3rem;
     padding-left: 4rem;
-    background-image: url("./img/quote__graphic.png");
+    background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/quote__graphic.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
