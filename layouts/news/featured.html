@@ -42,12 +42,11 @@
     <link rel="stylesheet" href="{{ $gfont }}" />
   </noscript>
 
-  {{ $jsOpts := dict "minify" true "targetPath" "/@src/featured.js" }}
-  {{ $js := resources.Get "featured/slide-in.js" }}
-  {{ $js = $js | js.Build $jsOpts | minify | fingerprint }}
   <script
-    src="{{ $js.RelPermalink }}"
+    src='{{ partialCached "helper/get-enhancements" . }}'
     type="module"
+    async
+    onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
   ></script>
   <script
     src='{{ partialCached "helper/get-main-js" . }}'
