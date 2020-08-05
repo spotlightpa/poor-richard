@@ -11,6 +11,9 @@ a {
 ul li {
   line-height: 1.3;
 }
+.text__italic {
+  font-style: italic;
+}
 .text_center {
   text-align: center;
 }
@@ -307,7 +310,7 @@ a.window-sticker-content {
   order: 2;
 }
 .feature__hero__img {
-  background-image: url("https://images.data.spotlightpa.org/insecure/rs:fill:2000:1333/g:sm/el:1/q:75/MjAyMC8wNy8wMWZoeHo5eHA5dzdzZmM0LmpwZWc=.jpeg");
+  background-image: url("https://images.data.spotlightpa.org/insecure/rs:fill:2000:1304/g:sm/el:1/q:75/MjAyMC8wOC8wMWZqbmcwaGU5ZjNxY3puLmpwZWc=.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -493,6 +496,7 @@ div.section__divider,
 }
 .feature__credits .credits__role__section {
   margin-bottom: 3rem;
+  padding-right: 3rem;
 }
 .feature__credits .credits__person__container {
   margin-bottom: 2rem;
@@ -690,11 +694,11 @@ div.section__divider,
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .spotlight__sticker__tout {
+    width: 280px;
+  }
 }
 @media (min-width: 1800px) {
-  .spotlight__sticker__tout {
-    width: 400px;
-  }
   .feature__hero__text {
     width: 70%;
     margin-top: 3rem;
@@ -704,6 +708,9 @@ div.section__divider,
   }
   .feature__hero h6 {
     font-size: 1.3rem;
+  }
+  .spotlight__sticker__tout {
+    width: 400px;
   }
 }
 
