@@ -59,21 +59,32 @@ p.drop__cap:first-letter {
   filter: grayscale(1);
 }
 .hide__mobile {
-  display: none;
+  display: none !important;
 }
 .global__nav {
-  padding-top: 1rem;
-  position: absolute;
+  padding: 1rem 0;
+  background-color: black;
   top: 0;
   width: 100%;
   z-index: 1001;
   display: flex;
 }
 .global__nav__content {
-  padding-left: 2rem;
+  margin: auto;
 }
 .global__nav .spotlight__logo {
   height: 40px;
+}
+
+@media (min-width: 500px) {
+  .global__nav {
+    position: absolute;
+    background-color: transparent;
+  }
+  .global__nav__content {
+    margin: 0;
+    padding-left: 2rem;
+  }
 }
 
 .global__footer {
@@ -310,10 +321,10 @@ a.window-sticker-content {
   order: 2;
 }
 .feature__hero__img {
-  background-image: url("https://images.data.spotlightpa.org/insecure/rs:fill:2000:1304/g:sm/el:1/q:75/MjAyMC8wOC8wMWZqbmcwaGU5ZjNxY3puLmpwZWc=.jpeg");
+  background-image: url("https://www.spotlightpa.org/imgproxy/insecure/rs:fill:2000:1304/g:sm/el:1/q:75/MjAyMC8wOC8wMWZqbmcwaGU5ZjNxY3puLmpwZWc=.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right 30% top 10%;
   width: 100%;
   height: 300px;
   order: 1;
