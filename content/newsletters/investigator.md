@@ -1,9 +1,6 @@
 +++
-published = 2019-09-15T14:50:30.686Z
-title = "Sign up for Spotlight PA’s newsletter"
+title = "Sign up for The Investigator"
 description = "Sign up for The Investigator, a free weekly newsletter from Spotlight PA"
-title-tag = "Newsletters"
-linktitle = "Newsletters"
 type = "root"
 modal-exclude = true
 +++

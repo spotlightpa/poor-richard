@@ -1,0 +1,337 @@
+<div
+  x-data="{ hasFocused: false }"
+>
+  <form
+    class="box"
+    action="https://email-alerts.data.spotlightpa.org/api/add-contact"
+    method="post"
+    autocomplete="on"
+    data-ga-form="newsletters:covid-alerts"
+  >
+    <h2 class="title is-6 has-text-danger has-text-left is-uppercase">
+      Newsletter
+    </h2>
+    <h2 class="title is-4 has-text-centered">
+      Get weekly COVID-19 Updates for your county of Pennsylvania
+    </h2>
+    <input
+      type="hidden"
+      name="redirect"
+      value="https://www.spotlightpa.org/newsletters/thanks/"
+    >
+    <input
+      type="hidden"
+      name="redirect_sorry"
+      value="https://www.spotlightpa.org/newsletters/sorry/"
+    >
+    <div class="field">
+      <div class="control">
+        <label class="is-sr-only" for="alert-email">
+          Email address
+        </label>
+        <p class="control has-icons-left has-icons-right is-expanded">
+          <input
+            id="alert-email"
+            type="email"
+            name="email"
+            autocomplete="email"
+            class="input"
+            required
+            placeholder="Email address"
+            @focus.once="hasFocused = true"
+          >
+          <span class="icon is-left">
+            <svg>
+              <use href="#email-svg">
+              </use>
+            </svg>
+          </span>
+          <span class="icon is-right validator-icon">
+            <svg>
+              <use href="#check-svg">
+              </use>
+            </svg>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="mb-2"
+      :class="!hasFocused ? 'is-hidden' : ''"
+    >
+      <div class="field-body">
+        <div class="field">
+          <label class="is-sr-only" for="alert-fname">
+            First Name
+          </label>
+          <p class="control has-icons-right">
+            <input
+              id="alert-fname"
+              type="text"
+              name="first_name"
+              autocomplete="given-name"
+              class="input"
+              required
+              placeholder="First name"
+            >
+            <span class="icon is-right validator-icon">
+              <svg>
+                <use href="#check-svg">
+                </use>
+              </svg>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <label class="is-sr-only" for="alert-lname">
+            Last Name
+          </label>
+          <p class="control has-icons-right">
+            <input
+              id="alert-lname"
+              type="text"
+              name="last_name"
+              autocomplete="family-name"
+              class="input"
+              required
+              placeholder="Last name"
+            >
+            <span class="icon is-right validator-icon">
+              <svg>
+                <use href="#check-svg">
+                </use>
+              </svg>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-2"
+      :class="!hasFocused ? 'is-hidden' : ''"
+    >
+      <div class="control">
+        <label>
+          <span class="label">
+            Select your county
+          </span>
+          <div class="select is-multiple is-fullwidth">
+            <select multiple="" size="4" required="" name="fips">
+              <option value="42001">
+                Adams County
+              </option>
+              <option value="42003">
+                Allegheny County
+              </option>
+              <option value="42005">
+                Armstrong County
+              </option>
+              <option value="42007">
+                Beaver County
+              </option>
+              <option value="42009">
+                Bedford County
+              </option>
+              <option value="42011">
+                Berks County
+              </option>
+              <option value="42013">
+                Blair County
+              </option>
+              <option value="42015">
+                Bradford County
+              </option>
+              <option value="42017">
+                Bucks County
+              </option>
+              <option value="42019">
+                Butler County
+              </option>
+              <option value="42021">
+                Cambria County
+              </option>
+              <option value="42023">
+                Cameron County
+              </option>
+              <option value="42025">
+                Carbon County
+              </option>
+              <option value="42027">
+                Centre County
+              </option>
+              <option value="42029">
+                Chester County
+              </option>
+              <option value="42031">
+                Clarion County
+              </option>
+              <option value="42033">
+                Clearfield County
+              </option>
+              <option value="42035">
+                Clinton County
+              </option>
+              <option value="42037">
+                Columbia County
+              </option>
+              <option value="42039">
+                Crawford County
+              </option>
+              <option value="42041">
+                Cumberland County
+              </option>
+              <option value="42043">
+                Dauphin County
+              </option>
+              <option value="42045">
+                Delaware County
+              </option>
+              <option value="42047">
+                Elk County
+              </option>
+              <option value="42049">
+                Erie County
+              </option>
+              <option value="42051">
+                Fayette County
+              </option>
+              <option value="42053">
+                Forest County
+              </option>
+              <option value="42055">
+                Franklin County
+              </option>
+              <option value="42057">
+                Fulton County
+              </option>
+              <option value="42059">
+                Greene County
+              </option>
+              <option value="42061">
+                Huntingdon County
+              </option>
+              <option value="42063">
+                Indiana County
+              </option>
+              <option value="42065">
+                Jefferson County
+              </option>
+              <option value="42067">
+                Juniata County
+              </option>
+              <option value="42069">
+                Lackawanna County
+              </option>
+              <option value="42071">
+                Lancaster County
+              </option>
+              <option value="42073">
+                Lawrence County
+              </option>
+              <option value="42075">
+                Lebanon County
+              </option>
+              <option value="42077">
+                Lehigh County
+              </option>
+              <option value="42079">
+                Luzerne County
+              </option>
+              <option value="42081">
+                Lycoming County
+              </option>
+              <option value="42083">
+                McKean County
+              </option>
+              <option value="42085">
+                Mercer County
+              </option>
+              <option value="42087">
+                Mifflin County
+              </option>
+              <option value="42089">
+                Monroe County
+              </option>
+              <option value="42091">
+                Montgomery County
+              </option>
+              <option value="42093">
+                Montour County
+              </option>
+              <option value="42095">
+                Northampton County
+              </option>
+              <option value="42097">
+                Northumberland County
+              </option>
+              <option value="42099">
+                Perry County
+              </option>
+              <option value="42101">
+                Philadelphia County
+              </option>
+              <option value="42103">
+                Pike County
+              </option>
+              <option value="42105">
+                Potter County
+              </option>
+              <option value="42107">
+                Schuylkill County
+              </option>
+              <option value="42109">
+                Snyder County
+              </option>
+              <option value="42111">
+                Somerset County
+              </option>
+              <option value="42113">
+                Sullivan County
+              </option>
+              <option value="42115">
+                Susquehanna County
+              </option>
+              <option value="42117">
+                Tioga County
+              </option>
+              <option value="42119">
+                Union County
+              </option>
+              <option value="42121">
+                Venango County
+              </option>
+              <option value="42123">
+                Warren County
+              </option>
+              <option value="42125">
+                Washington County
+              </option>
+              <option value="42127">
+                Wayne County
+              </option>
+              <option value="42129">
+                Westmoreland County
+              </option>
+              <option value="42131">
+                Wyoming County
+              </option>
+              <option value="42133">
+                York County
+              </option>
+            </select>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="field">
+      <p class="control">
+        <button
+          class="button is-medium is-danger has-text-weight-semibold is-fullwidth"
+          type="submit"
+        >
+          Sign up
+        </button>
+      </p>
+    </div>
+  </form>
+</div>
