@@ -22,8 +22,8 @@ let GA = {
   install(Vue) {
     Vue.prototype.$gae = (obj) =>
       void sendGAEvent({
-        eventCategory: "donate:page",
-        eventAction: "donate-form",
+        eventLabel: "donate:page",
+        eventCategory: "donate-form",
         ...obj,
       });
   },

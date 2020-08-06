@@ -33,7 +33,7 @@
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
 <body
   data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
-  data-ga-category='{{ $pageCat }}'
+  data-ga-label='{{ $pageCat }}'
 >
   {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
   {{ block "header" . }}
@@ -49,14 +49,14 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <main data-ga-action="main">
+  <main data-ga-category="main">
     {{ block "before-main" . }}{{ end }}
     {{ block "main" . }}
       {{ .Render "main" }}
     {{ end }}
     {{ block "extra-main" . }}{{ end }}
   </main>
-  <footer data-ga-action="footer">
+  <footer data-ga-category="footer">
     {{ block "before-footer" . }}{{ end }}
     {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
     {{ block "extra-footer" . }}{{ end }}

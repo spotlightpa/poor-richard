@@ -35,7 +35,7 @@ export default {
   mounted() {
     this.testing = !!window.location.search.match(/debug=donate/);
     this.$gae({
-      eventLabel: "donate:view",
+      eventAction: "donate:view",
       nonInteraction: true,
     });
     window.history.replaceState({ step: this.stepObj.n }, "", "");
@@ -47,7 +47,7 @@ export default {
       window.history.pushState({ step: this.stepObj.n }, "", "");
       let stepName = this.stepObj.items[this.stepObj.n].name;
       this.$gae({
-        eventLabel: `donate:view-step:${stepName}`,
+        eventAction: `donate:view-step:${stepName}`,
       });
     },
     popstate(ev) {

@@ -105,14 +105,14 @@ export default {
       } else {
         this.showModal = true;
         this.$gae({
-          eventLabel: "donate:nag:view",
+          eventAction: "donate:nag:view",
         });
       }
     },
     noThanks() {
       this.showModal = false;
       this.$gae({
-        eventLabel: "donate:nag:decline",
+        eventAction: "donate:nag:decline",
       });
       this.stepInc();
     },
@@ -122,7 +122,7 @@ export default {
       this.formData.recurring = "Month";
       this.showModal = false;
       this.$gae({
-        eventLabel: "donate:nag:accept",
+        eventAction: "donate:nag:accept",
       });
       this.stepInc();
     },

@@ -27,7 +27,7 @@ export default function modal() {
     show() {
       sawModalNewsletter();
       let gaEvent = buildEvent(this.$el);
-      gaEvent.eventLabel = "modal:newsletter:open";
+      gaEvent.eventAction = "modal:newsletter:open";
       gaEvent.nonInteraction = true;
       sendGAEvent(gaEvent);
 
@@ -48,7 +48,7 @@ export default function modal() {
       this.isOpen = false;
       if (sendEvent) {
         let gaEvent = buildEvent(this.$el);
-        gaEvent.eventLabel = "modal:newsletter:dismiss";
+        gaEvent.eventAction = "modal:newsletter:dismiss";
         sendGAEvent(gaEvent);
       }
     },

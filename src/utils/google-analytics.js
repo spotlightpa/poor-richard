@@ -69,12 +69,12 @@ export function buildEvent(el) {
 export function reportClick(ev) {
   let gaEvent = buildEvent(ev.target);
 
-  if (!gaEvent.eventLabel) {
-    gaEvent.eventLabel = ev.target.href;
+  if (!gaEvent.eventAction) {
+    gaEvent.eventAction = ev.target.href;
   }
 
-  if (!gaEvent.eventLabel) {
-    gaEvent.eventLabel = ev.currentTarget.href;
+  if (!gaEvent.eventAction) {
+    gaEvent.eventAction = ev.currentTarget.href;
   }
   gaEvent.transport = "beacon";
 
@@ -109,8 +109,8 @@ export function addGAListeners() {
       () => {
         let gaEvent = buildEvent(el);
         let isValid = el.reportValidity();
-        gaEvent.eventLabel = el.dataset.gaForm;
-        gaEvent.eventLabel += isValid ? ":submit" : ":invalid";
+        gaEvent.eventAction = el.dataset.gaForm;
+        gaEvent.eventAction += isValid ? ":submit" : ":invalid";
         gaEvent.transport = "beacon";
         sendGAEvent(gaEvent);
       },
@@ -122,8 +122,8 @@ export function addGAListeners() {
       "focus",
       () => {
         let gaEvent = buildEvent(el);
-        gaEvent.eventLabel = el.dataset.gaForm;
-        gaEvent.eventLabel += ":focus";
+        gaEvent.eventAction = el.dataset.gaForm;
+        gaEvent.eventAction += ":focus";
         sendGAEvent(gaEvent);
       },
       {

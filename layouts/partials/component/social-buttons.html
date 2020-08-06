@@ -1,16 +1,15 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
-{{ $gaEvent := dict "eventCategory" "Share button interaction" "eventAction" "Email share" "eventLabel" .Permalink }}
 
 <div
   class="buttons"
-  data-ga-action="social-buttons"
+  data-ga-category="social-buttons"
 >
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="button is-success"
     title="Share this page by email"
-    data-ga-label="share:email"
+    data-ga-action="share:email"
   >
     <span class="icon has-text-white has-colored-svg">
       <svg>
@@ -21,7 +20,7 @@
   <button
     class="button is-primary"
     data-share="facebook"
-    data-ga-label="share:facebook"
+    data-ga-action="share:facebook"
     title="Share this page on Facebook"
   >
     <span class="icon has-text-white has-colored-svg">
@@ -34,7 +33,7 @@
     class="button is-info"
     data-share="tweet"
     data-share-text="{{ .LinkTitle }} from @spotlightpa"
-    data-ga-label="share:twitter"
+    data-ga-action="share:twitter"
     title="Tweet about this page"
   >
     <span class="icon has-text-white has-colored-svg">
@@ -47,7 +46,7 @@
     class="button is-danger is-hidden"
     data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
-    data-ga-label="share:sharesheet"
+    data-ga-action="share:sharesheet"
     title="More ways to share this page"
   >
     <span class="icon has-text-white has-colored-svg">

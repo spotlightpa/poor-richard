@@ -9,7 +9,7 @@
       {{ if $params.showTitle }}
         <header
           class="block"
-          data-ga-action="header"
+          data-ga-category="header"
         >
           {{ if $params.rubric }}
             <a
@@ -22,7 +22,7 @@
             >{{ $params.kicker }}</p>
           {{ else }}
             <div class="is-clearfix">
-              <div class="is-pulled-right" data-ga-action="Header breadcrumbs">
+              <div class="is-pulled-right" data-ga-category="Header breadcrumbs">
                 {{ partial "component/breadcrumbs.html" . }}
               </div>
             </div>
@@ -72,7 +72,7 @@
 
       <div
         class="block"
-        data-ga-action="content"
+        data-ga-category="content"
       >
         <div class="content">
           {{ .Content }}
@@ -82,7 +82,7 @@
       {{ with .Param "authors" }}
         <footer
           class="block"
-          data-ga-action="footer:author"
+          data-ga-category="footer:author"
         >
           {{ range $name := . }}
             {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}

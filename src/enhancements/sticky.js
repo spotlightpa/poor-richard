@@ -18,9 +18,9 @@ export default function sticky() {
     show() {
       this.isOpen = true;
       sendGAEvent({
-        eventCategory: "news:page:featured",
-        eventAction: "modal:sticky",
-        eventLabel: "sticky:open",
+        eventLabel: "news:page:featured",
+        eventCategory: "modal:sticky",
+        eventAction: "sticky:open",
       });
       this.oldFocus = document.activeElement;
       const transitionLength = 500;
@@ -31,9 +31,9 @@ export default function sticky() {
       this.isOpen = false;
       this.oldFocus.focus();
       sendGAEvent({
-        eventCategory: "news:page:featured",
-        eventAction: "modal:sticky",
-        eventLabel: "sticky:dimiss",
+        eventLabel: "news:page:featured",
+        eventCategory: "modal:sticky",
+        eventAction: "sticky:dimiss",
       });
     },
   };

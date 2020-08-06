@@ -104,7 +104,7 @@ export default {
 
       if (!isValid) {
         this.$gae({
-          eventLabel: "donate:invalid",
+          eventAction: "donate:invalid",
         });
         return;
       }
@@ -115,7 +115,7 @@ export default {
         eventValue *= 12;
       }
       this.$gae({
-        eventLabel: "donate:submit",
+        eventAction: "donate:submit",
         eventValue,
         transport: "beacon",
       });

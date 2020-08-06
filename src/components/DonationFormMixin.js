@@ -44,9 +44,9 @@ export default {
   methods: {
     sendFocus(ev) {
       let [label] = ev.target.labels;
-      let eventLabel = label ? label.innerText : ev.target.name;
+      let eventAction = label ? label.innerText : ev.target.name;
       this.$gae({
-        eventLabel: "donate:focus:" + eventLabel,
+        eventAction: "donate:focus:" + eventAction,
       });
     },
     validate(ev) {

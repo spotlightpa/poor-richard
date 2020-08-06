@@ -3,7 +3,7 @@
 {{ with $related }}
   <nav
     class="columns is-centered mt-5"
-    data-ga-action="related-content"
+    data-ga-category="related-content"
     x-data="spl.readmore({ showDate: true })"
   >
     <div
@@ -32,7 +32,7 @@
               @click.prevent="click()"
               @mouseover.once="load()"
               @touchstart.once="load()"
-              :data-ga-label='"readmore:load"'
+              :data-ga-action='"readmore:load"'
               href="/news/"
               class="button is-primary is-medium is-uppercase has-text-weight-semibold"
               :class="loadingClass"

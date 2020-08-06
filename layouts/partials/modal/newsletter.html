@@ -1,6 +1,6 @@
 <div
   class="modal"
-  data-ga-action="modal:newsletter:investigator"
+  data-ga-category="modal:newsletter:investigator"
   :class="modalClass"
   x-data="spl.modal()"
   x-show="isOpen"
@@ -96,7 +96,7 @@
             class="has-text-grey hover-underline"
             aria-label="close"
             tabindex="0"
-            data-ga-label="modal:newsletter:dismiss"
+            data-ga-action="modal:newsletter:dismiss"
             @click="close(false)"
             @keydown.space="close(true)"
           >

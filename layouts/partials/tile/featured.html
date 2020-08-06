@@ -1,7 +1,7 @@
 {{ $featured := index . 0 }}
 {{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
 
-<div class="tile is-parent is-top" data-ga-action="featured">
+<div class="tile is-parent is-top" data-ga-category="featured">
   <div class="tile is-child">
     <div class="mb-2">
       <span class="tags has-addons">
@@ -16,7 +16,7 @@
           <a
             class="tag is-square is-outline is-uppercase has-text-weight-semibold"
             href="{{ $featuredParams.topic.RelPermalink }}"
-            data-ga-action="eyebrow"
+            data-ga-category="eyebrow"
           >{{ $featuredParams.kicker | default $featuredParams.topic.Title }}</a>
         {{ else if $featuredParams.kicker }}
           <span
@@ -40,7 +40,7 @@
 {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
 {{ $imgOpts = dict "sizeHint" "40vw" | merge $imgOpts }}
 
-<div class="tile is-bottom" data-ga-action="featured">
+<div class="tile is-bottom" data-ga-category="featured">
   <div class="tile is-parent is-6 is-top-tablet">
     <article class="tile is-child">
       {{ partial "component/image-block.html" $imgOpts }}
@@ -52,7 +52,7 @@
         <a
           href="{{ $featured.RelPermalink }}"
           class="has-text-black hover-underline"
-          data-ga-action="hed"
+          data-ga-category="hed"
         >
           {{ $featured.LinkTitle }}
         </a>
@@ -67,7 +67,7 @@
           <a
             href="{{ $featured.RelPermalink }}"
             class="has-text-grey hover-underline"
-            data-ga-action="byline"
+            data-ga-category="byline"
           >by {{ $featuredParams.byline }}
           </a>
         </h3>
@@ -86,13 +86,13 @@
       {{ end }}
 
       {{ if gt (len $subfeatures) 0 }}
-        <ul class="is-size-5 related" data-ga-action="Homepage top feature related">
+        <ul class="is-size-5 related" data-ga-category="Homepage top feature related">
           {{ range $subfeatures }}
             <li>
               <a
                 href="{{ .RelPermalink }}"
                 class="has-text-black hover-underline"
-                data-ga-action="subfeature"
+                data-ga-category="subfeature"
               >
                 {{ .LinkTitle }}
               </a>
