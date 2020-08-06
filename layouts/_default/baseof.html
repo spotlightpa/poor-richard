@@ -36,12 +36,18 @@
   data-ga-category='{{ $pageCat }}'
 >
   {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
-  {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
-  {{ if .Param "banner-active" }}
-    {{ partialCached "component/banner.html" . }}
-  {{ end }}
-  {{ if .Param "promo-active" | and (.IsPage | or .IsHome) }}
-    {{ partialCached "component/promo.html" . }}
+  {{ block "header" . }}
+    {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "component/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ if .Param "promo-active" }}
+        {{ partialCached "component/promo.html" . }}
+      {{ end }}
+    {{ end }}
   {{ end }}
   <main data-ga-action="main">
     {{ block "before-main" . }}{{ end }}
@@ -51,7 +57,7 @@
     {{ block "extra-main" . }}{{ end }}
   </main>
   <footer data-ga-action="footer">
-    {{ block "promo" . }}{{ end }}
+    {{ block "before-footer" . }}{{ end }}
     {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
     {{ block "extra-footer" . }}{{ end }}
   </footer>

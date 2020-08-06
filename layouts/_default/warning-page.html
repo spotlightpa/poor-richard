@@ -1,9 +1,9 @@
+{{ define "promo" }}
+<!-- noop -->
+{{ end }}
+
 {{ define "main" }}
   {{ $subtitle := .Param "subtitle" }}
   {{ $dict := dict "class" "is-warning" "title" .Title "subtitle" $subtitle "content" .Content }}
   {{ partial "component/message-block.html" $dict }}
-{{ end }}
-
-{{ define "promo" }}
-  <!-- noop -->
 {{ end }}
