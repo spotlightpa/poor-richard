@@ -59,7 +59,7 @@ p.drop__cap:first-letter {
   filter: grayscale(1);
 }
 .hide__mobile {
-  display: none !important;
+  display: none;
 }
 .global__nav {
   padding: 1rem 0;
