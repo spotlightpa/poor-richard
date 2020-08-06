@@ -1,18 +1,18 @@
 <nav
   class="navbar"
-  data-ga-action="header:navbar"
+  data-ga-category="header:navbar"
   aria-label="main navigation"
 >
   <div class="navbar-brand">
     <a
       href="/"
       class="navbar-item"
-      data-ga-action="logo"
+      data-ga-category="logo"
     >
       <span class="is-sr-only">Home</span>
       <svg
         viewBox="0 0 1024 190"
-        data-ga-label='{{ absURL "/" }}'
+        data-ga-action='{{ absURL "/" }}'
       >
         <desc>Spotlight PA logo</desc>
         <use xlink:href="#logo-svg"></use>
@@ -24,8 +24,8 @@
       aria-label="menu"
       aria-expanded="false"
       data-target="#navbar-menu-items,.navbar-burger"
-      data-ga-action="burger"
-      data-ga-label="navbar:toggle"
+      data-ga-category="burger"
+      data-ga-action="navbar:toggle"
     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -47,7 +47,7 @@
         <a
           href="{{ .URL }}"
           class="navbar-item {{ .Pre }} {{ $isActive }}"
-          data-ga-action="item"
+          data-ga-category="item"
         >
           {{ .Name }}
         </a>
@@ -55,8 +55,8 @@
       <a
         href="/search/"
         class="navbar-item"
-        data-ga-action="search"
-        :data-ga-label="'modal:search:open'"
+        data-ga-category="search"
+        :data-ga-action="'modal:search:open'"
         x-data="{}"
         @click.prevent="$dispatch('modal:search:open')"
       >
@@ -71,7 +71,7 @@
         <a
           class="button is-danger is-uppercase has-text-weight-semibold"
           href="/donate/"
-          data-ga-action="donate"
+          data-ga-category="donate"
         >❤&#65038; Support Us</a>
       </span>
       <span class="navbar-item is-hidden-touch">&nbsp;</span>

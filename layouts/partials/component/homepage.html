@@ -13,7 +13,7 @@
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
-<section class="section {{ $marginClass }}" data-ga-action="homepage">
+<section class="section {{ $marginClass }}" data-ga-category="homepage">
   <div
     class="container-hp"
     x-data="spl.readmore({ showDate: false })"
@@ -21,7 +21,7 @@
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile/featured.html" $featuredStories }}
 
-      <div class="tile" data-ga-action="pinned">
+      <div class="tile" data-ga-category="pinned">
         {{ range $page := first 3 $pages }}
           <div class="tile is-parent is-4 has-margin-top-negative">
             <div class="tile is-child">
@@ -36,7 +36,7 @@
         <div class="tile is-parent is-8">
           <div
             class="tile is-child"
-            data-ga-action="midpage:newsletter"
+            data-ga-category="midpage:newsletter"
           >
             {{ partial "component/newsletter-box.html" . }}
           </div>
@@ -61,7 +61,7 @@
             <div
               class="tile is-vertical"
               x-ref="archives"
-              data-ga-action="river"
+              data-ga-category="river"
             >
               <div class="tile is-parent is-top">
                 <div class="tile is-child">
@@ -89,8 +89,8 @@
                 @click.prevent="click()"
                 @mouseover.once="load()"
                 @touchstart.once="load()"
-                data-ga-action="readmore"
-                :data-ga-label='"readmore:load"'
+                data-ga-category="readmore"
+                :data-ga-action='"readmore:load"'
                 href="/news/"
                 class="button is-primary is-medium is-uppercase has-text-weight-semibold"
                 :class="loadingClass"
@@ -100,7 +100,7 @@
           </div>
         </div>
       {{ end }}
-      <div class="tile" data-ga-action="promo">
+      <div class="tile" data-ga-category="promo">
         {{ partial "tile/promos.html" . }}
       </div>
     </div>

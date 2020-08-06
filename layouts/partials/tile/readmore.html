@@ -1,7 +1,7 @@
 <template x-for="story in stories" :key="story.url">
   <article
     class="tile is-vertical is-bottom"
-    data-ga-action="readmore"
+    data-ga-category="readmore"
   >
     <div class="tile">
       <div class="tile is-parent is-top">
@@ -17,7 +17,7 @@
           <figure>
             <a
               class="image is-16by9 has-background-grey-lighter"
-              data-ga-action="thumb"
+              data-ga-category="thumb"
               :href="story.url"
               @click.passive="analytics($event)"
             >
@@ -43,7 +43,7 @@
           <h2 class="title is-spaced is-4 mt-2-tablet">
             <a
               class="has-text-black hover-underline"
-              data-ga-action="hed"
+              data-ga-category="hed"
               :href="story.url"
               @click.passive="analytics($event)"
               x-text="story.title"
@@ -53,7 +53,7 @@
           <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
             <a
               class="has-text-grey hover-underline"
-              data-ga-action="byline"
+              data-ga-category="byline"
               @click.passive="analytics($event)"
               :href="story.url"
               x-text="story.byline"
@@ -65,7 +65,7 @@
           >
             <a
               class="has-text-grey hover-underline"
-              data-ga-action="time"
+              data-ga-category="time"
               :href="story.url"
               @click.passive="analytics($event)"
             >
@@ -80,7 +80,7 @@
 </template>
 
 <template x-if="error && hasClicked">
-  <div class="message is-danger" data-ga-action="error">
+  <div class="message is-danger" data-ga-category="error">
     Could not load more.
     <a href="/news/" class="has-text-weight-semibold">Try again?</a>
   </div>

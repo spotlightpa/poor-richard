@@ -27,7 +27,7 @@ export default function searchModal() {
       this.isOpen = false;
       if (sendEvent) {
         let gaEvent = buildEvent(this.$el);
-        gaEvent.eventLabel = "modal:search:dismiss";
+        gaEvent.eventAction = "modal:search:dismiss";
         sendGAEvent(gaEvent);
       }
     },

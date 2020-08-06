@@ -4,9 +4,9 @@
   {{ partial "component/message-block.html" $dict }}
   <script>
     window.ga('send', 'event', {
-      eventCategory: "page:404",
-      eventAction: "not-found",
-      eventLabel: window.location.href
+      eventLabel: "page:404",
+      eventCategory: "not-found",
+      eventAction: window.location.href
     });
   </script>
 {{ end }}

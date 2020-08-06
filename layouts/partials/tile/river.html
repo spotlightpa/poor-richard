@@ -9,7 +9,7 @@
           <a
             class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
             href="{{ $params.rubric.RelPermalink }}"
-            data-ga-action="eyebrow"
+            data-ga-category="eyebrow"
           >{{ $params.kicker | default $params.rubric.Title }}</a>
         {{ else }}
           <h3
@@ -43,7 +43,7 @@
           <a
             class="has-text-black hover-underline"
             href="{{ .RelPermalink }}"
-            data-ga-action="hed"
+            data-ga-category="hed"
           >
             {{ .LinkTitle }}
           </a>
@@ -53,7 +53,7 @@
           <a
             href="{{ .RelPermalink }}"
             class="has-text-grey hover-underline"
-            data-ga-action="byline"
+            data-ga-category="byline"
           >
             by {{ $params.byline }}
           </a>

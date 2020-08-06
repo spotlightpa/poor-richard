@@ -12,7 +12,7 @@
 {{ define "main" }}
   <div
     class="section is-small"
-    data-ga-action="embed"
+    data-ga-category="embed"
   >
     {{ $embed := .Param "embed-partial" | printf "embed/%s" }}
     {{ partial $embed . }}

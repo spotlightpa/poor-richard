@@ -58,8 +58,8 @@
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
 <body
-  data-ga-category='{{ $pageCat }}:featured'
-  data-ga-action="featured"
+  data-ga-label='{{ $pageCat }}:featured'
+  data-ga-category="featured"
   class="feature"
 >
   {{ .RawContent | safeHTML }}

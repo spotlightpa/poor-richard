@@ -3,7 +3,7 @@
   x-data="spl.searchArticles()"
   x-init="init"
   @submit.prevent="document.activeElement.blur()"
-  data-ga-action="search"
+  data-ga-category="search"
 >
   <div class="field has-addons">
     <div class="control is-expanded has-icons-left">
@@ -57,7 +57,7 @@
                   :href="story.url"
                   @click="analytics($event)"
                   class="image is-16by9 has-background-grey-lighter"
-                  data-ga-action="thumb"
+                  data-ga-category="thumb"
                 >
                   <picture class="has-ratio">
                     <img
@@ -85,7 +85,7 @@
                   :href="story.url"
                   @click="analytics($event)"
                   class="has-text-black hover-underline"
-                  data-ga-action="hed"
+                  data-ga-category="hed"
                   x-text="story.title"
                 ></a>
               </h2>
@@ -94,7 +94,7 @@
                   :href="story.url"
                   @click="analytics($event)"
                   class="has-text-grey hover-underline"
-                  data-ga-action="byline"
+                  data-ga-category="byline"
                   x-text="story.byline"
                 ></a>
               </h3>
@@ -105,7 +105,7 @@
                   :href="story.url"
                   @click="analytics($event)"
                   class="has-text-grey hover-underline"
-                  data-ga-action="time"
+                  data-ga-category="time"
                 >
                   <time :datetime="story.publishedISO" x-text="story.published">
                   </time>

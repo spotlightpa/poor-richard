@@ -35,7 +35,7 @@
           <a
             class="has-text-black hover-underline"
             href="{{ .RelPermalink }}"
-            data-ga-action="hed"
+            data-ga-category="hed"
           >
             {{ .LinkTitle }}
           </a>
@@ -45,7 +45,7 @@
             <a
               href="{{ .RelPermalink }}"
               class="has-text-grey hover-underline"
-              data-ga-action="byline"
+              data-ga-category="byline"
             >
               by {{ $params.byline }}
             </a>
@@ -54,7 +54,7 @@
         {{- if $params.published }}
           <h3
             class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
-            data-ga-action="time"
+            data-ga-category="time"
           >
             <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
               <time
