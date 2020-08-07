@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-08-04-SPLRIVERA05.md",
-    "content/news/2020-08-06-SPLCAMPUS06.md"
+    "content/news/2020-08-07-SPLAID08.md"
   ],
   "subfeatures": [
-    "content/news/2020-08-05-SPLSOLUTIONSXX.md"
+    "content/news/2020-08-03-SPLREVENUE04.md",
+    "content/news/2020-06-08-SPLCARES09.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 1,
   "topSlots": [
+    "content/news/2020-08-06-SPLCAMPUS06.md",
     "content/news/2020-08-04-SPLRIVERA05.md",
-    "content/news/2020-08-04-SPLTRACE04.md",
-    "content/news/2020-08-03-SPLCAP04.md",
-    "content/news/2020-08-03-SPLREVENUE04.md"
+    "content/news/2020-08-04-SPLTRACE04.md"
   ],
   "sidebarPicks": [
     "content/news/2020-06-17-SPLDATA18.md"
