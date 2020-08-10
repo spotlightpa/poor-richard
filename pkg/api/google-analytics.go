@@ -1,14 +1,12 @@
 package api
 
 import (
-	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/url"
 
-	"golang.org/x/net/context/ctxhttp"
+	"github.com/spotlightpa/poor-richard/pkg/httpjson"
 )
 
 func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
@@ -41,9 +39,7 @@ func (app *appEnv) getMostPopular(w http.ResponseWriter, r *http.Request) {
 }
 
 func getMostPopular(ctx context.Context, client *http.Client, viewID string) ([]string, error) {
-	var buf bytes.Buffer
-	enc := json.NewEncoder(&buf)
-	enc.Encode(&AnalyticsRequest{
+	req := &AnalyticsRequest{
 		ReportRequests: []ReportRequest{{
 			ViewID: viewID,
 			Metrics: []Metric{{
@@ -63,31 +59,25 @@ func getMostPopular(ctx context.Context, client *http.Client, viewID string) ([]
 			FiltersExpression: `ga:pagePath=~^/news/\d\d\d\d`,
 			PageSize:          20,
 		}},
-	})
-
-	resp, err := ctxhttp.Post(
+	}
+	var data AnalyticsResponse
+	if err := httpjson.Post(
 		ctx,
 		client,
 		"https://analyticsreporting.googleapis.com/v4/reports:batchGet",
-		"application/json",
-		&buf,
-	)
-	if err != nil {
+		req,
+		&data,
+	); err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
 
-	var data AnalyticsResponse
-	dec := json.NewDecoder(resp.Body)
-	if err = dec.Decode(&data); err != nil {
-		return nil, err
-	}
 	if len(data.Reports) != 1 {
 		return nil, fmt.Errorf("got bad report length: %d", len(data.Reports))
 	}
-	pages := make([]string, 0, len(data.Reports[0].Data.Rows))
-	pagesSet := make(map[string]bool, len(data.Reports[0].Data.Rows))
-	for _, row := range data.Reports[0].Data.Rows {
+	report := &data.Reports[0]
+	pages := make([]string, 0, len(report.Data.Rows))
+	pagesSet := make(map[string]bool, len(report.Data.Rows))
+	for _, row := range report.Data.Rows {
 		if len(row.Dimensions) != 1 {
 			return nil, fmt.Errorf("got bad row length: %d", len(row.Dimensions))
 		}
