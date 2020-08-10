@@ -18,7 +18,7 @@ To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donat
 
 ## Major Donors
 
-Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalism Project <br> The Foundation for Enhancing Communities <br> Fund for Nonprofit News at The Miami Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Independence Public Media Foundation <br> Lancaster County Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> Pennsylvania NewsMedia Association Foundation <br> Pennsylvania NewsMedia Association Foundation Fellows Fund for the Future <br> PennLive/The Patriot-News <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Pittsburgh Post-Gazette <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> Scranton Area Foundation <br> The Snider Foundation <br> Diane and Brinkley Sprunt <br> The Steinman Foundation <br> Robert and Dianne Vickery <br> Wyncote Foundation <br> York County Community Foundation <br>
+Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation <br> Facebook Journalism Project <br> The Foundation for Enhancing Communities <br> Fund for Nonprofit News at The Miami Foundation <br> Good Words Foundation <br> The Heinz Endowments <br> Henry L. Hillman Foundation <br> Independence Public Media Foundation <br> Lancaster County Community Foundation <br> H.F. “Gerry” Lenfest <br> The Lenfest Institute for Journalism <br> Pennsylvania NewsMedia Association Foundation <br> Pennsylvania NewsMedia Association Foundation Fellows Fund for the Future <br> PennLive/The Patriot-News <br> The Philadelphia Foundation <br> The Lois Tack Thompson Fund of The Pittsburgh Foundation <br> Pittsburgh Post-Gazette <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> Scranton Area Foundation <br> The Snider Foundation <br> Diane and Brinkley Sprunt <br> The Steinman Foundation <br> Robert and Dianne Vickery <br> Wyncote Foundation <br> York County Community Foundation <br>
 
 ## Founding Donors
 
@@ -58,6 +58,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Brian Baxter
 * Christopher Baxter
 * Mark Bazrod
+* Mike Beattie
 * Diana & Thomas Beausang
 * Barry Bedrick
 * Dorothea Behr
@@ -131,7 +132,8 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Dianne Chambless
 * Marguerite Chandler
 * Bonnie Chang
-* Kathleen Charlton 
+* Kathleen Charlton
+* Linda & Roy Christman 
 * Patrick Christmas
 * Frank Cicchiello
 * Edward Claghorn
@@ -235,6 +237,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Frank Evelhoch II
 * Becky Everett
 * Kathleen Eves
+* Thomas Eveslage
 * Thomas & Sonja Eveslage 
 * Aaron Fafarman
 * C. Fairchild
@@ -243,9 +246,10 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * B. Faulstick
 * John Feather Jr.
 * T. Fehr
+* Art Feinberg
 * Lawrence Felzer
 * Adelaide Ferguson & Ronald Cahan
-* Art Feinberg
+* John Fernbacher
 * Winifred J. Fessenbecker
 * David Fiedler
 * Nicholas Fink
@@ -256,6 +260,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Thomas Flocco
 * Michael Flynn
 * Barbara Forbes-Rhouni
+* Stephen Forest
 * Rebecca & Ari Forman
 * Leroy Forney
 * Sara Forster
@@ -350,6 +355,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Joseph Heeney
 * Kathleen & Steven Heidecker
 * Kevin M. Hepler, MD
+* Ellen Herman
 * Grace E. Herstine
 * David Hess
 * Connie Hester
@@ -427,6 +433,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Dorothy Kint
 * Marcia Kirby 
 * Frank Kirkwood
+* ML Klem
 * Anne & Jack Kline
 * Donald Kmieczak
 * Rose Marie Grahn Knight
@@ -510,6 +517,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Blaine McCleary
 * Fletcher McClellan
 * Mary McComsey
+* Joe McConlogue
 * Nina McCullough
 * Tim McDaniel
 * Ann McEnery
@@ -545,6 +553,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Joseph & Elaine Molnar
 * Jacqueline Monturano
 * Lee Mooney
+* Gregory F. Moore
 * Ryan Morden
 * Michael Morgan
 * Judy Morneweck
@@ -625,6 +634,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Susan Ranck
 * J. Randolph
 * Theresa M. Rang
+* Ronald Ranieri
 * Mark Raymond
 * Sean Raymond
 * Emilio Recio
@@ -643,6 +653,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * David Robertson
 * Edward T. Rodgers
 * Peter & Joanne Rohana
+* Mary Rollman
 * Lou Romito
 * Mary Catherine Roper
 * Larry Rose
@@ -716,6 +727,7 @@ Laura and John Arnold <br> The Erie Community Foundation <br> Facebook Journalis
 * Michael Smith
 * Robert Smith
 * Sallie K. Smith
+* Thomas Smith
 * Tieshka Smith
 * Lucas Smolcic Larson
 * Judith E. Smullen
