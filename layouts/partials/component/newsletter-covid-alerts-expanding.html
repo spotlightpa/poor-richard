@@ -2,11 +2,13 @@
   x-data="{ hasFocused: false }"
 >
   <form
-    class="box"
+    class="box no-js-hide"
     action="https://email-alerts.data.spotlightpa.org/api/add-contact"
     method="post"
     autocomplete="on"
     data-ga-form="newsletters:covid-alerts"
+    data-ga-category="newsletters:covid-alerts"
+    target="_parent"
   >
     <h2 class="title is-6 has-text-danger has-text-left is-uppercase">
       Newsletter
@@ -58,6 +60,7 @@
     <div
       class="mb-2"
       :class="!hasFocused ? 'is-hidden' : ''"
+      x-cloak
     >
       <div class="field-body">
         <div class="field">
@@ -109,14 +112,15 @@
     <div
       class="mb-2"
       :class="!hasFocused ? 'is-hidden' : ''"
+      x-cloak
     >
       <div class="control">
         <label>
           <span class="label">
             Select your county
           </span>
-          <div class="select is-multiple is-fullwidth">
-            <select multiple="" size="4" required="" name="fips">
+          <div class="select is-fullwidth">
+            <select required="" name="fips">
               <option value="42001">
                 Adams County
               </option>
