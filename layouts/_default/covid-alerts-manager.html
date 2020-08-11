@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ $baseURL := "" }}
-  {{ if ne hugo.Environment "prod" }}
+  {{ if ne hugo.Environment "production" }}
     {{ $baseURL = getenv "EMAIL_ALERTS_BASE_URL" | default "http://localhost:8080" }}
   {{ end }}
 
