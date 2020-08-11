@@ -1,6 +1,6 @@
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 promo-link = "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
 promo-active = true
-banner = "**100% ESSENTIAL:** Donate now and support our urgent public-service journalism about the coronavirus"
-banner-link = "/donate/"
+banner = "**COVID-19 ALERTS:** Sign up for a free weekly email with the latest data customized to your county."
+banner-link = "/newsletters/covid/"
 banner-active = true
