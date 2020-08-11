@@ -1,5 +1,13 @@
 {{ define "main" }}
-  <section class="section no-js-hide">
+  {{ $baseURL := "" }}
+  {{ if ne hugo.Environment "prod" }}
+    {{ $baseURL = getenv "EMAIL_ALERTS_BASE_URL" | default "http://localhost:8080" }}
+  {{ end }}
+
+  <section
+    class="section no-js-hide"
+    data-ga-category="newsletter-manager:covid-alerts"
+  >
     <article class="columns is-centered is-multiline">
       <div class="column is-three-fifths">
         <h1 class="title">{{ .Title }}</h1>
@@ -10,10 +18,9 @@
           class="no-js-hide"
           x-data="spl.emailPreferences()"
           x-init="init()"
-          {{ if eq hugo.Environment "development" }}
-            data-base-url="http://localhost:8080"
-          {{ end }}
+          data-base-url="{{ $baseURL }}"
           :disabled="!canLoad"
+          data-ga-form="newsletter-manage"
         >
           <template x-if="error">
             <div class="message is-danger">
@@ -38,7 +45,8 @@
                 placeholder="Email address"
                 x-model="email"
                 x-ref="email"
-                @keydown.enter="load()"
+                data-ga-action="newsletter-manage:load"
+                @keydown.enter="analytics($event); load()"
               >
               <span class="icon is-left">
                 <svg>
@@ -53,7 +61,8 @@
                 type="button"
                 :class="isLoading ? 'is-loading' : ''"
                 :disabled="!email"
-                @click="load()"
+                data-ga-action="newsletter-manage:load"
+                @click="analytics($event); load()"
               >
                 Load
               </button>
@@ -124,6 +133,15 @@
                       {{.name}}
                   </label><br>
                 {{ end }}
+                <label class="checkbox">
+                  <a
+                    class="button is-small is-primary has-text-weight-semibold mt-3"
+                    data-ga-action="newsletter-manage:unselect-all"
+                    @click="unselect()"
+                  >
+                    Unselect all
+                  </a>
+              </label>
               </div>
             </div>
           </fieldset>
@@ -149,9 +167,11 @@
               class="button is-danger has-text-weight-semibold"
               :class="isLoading ? 'is-loading' : ''"
               type="button"
-              @click="save()"
+              :disabled="!didLoad"
+              data-ga-action="newsletter-manage:save"
+              @click="analytics($event); save()"
               x-text="hasSaved ? 'Preferences saved' : 'Save preferences'"
-            />
+            >Save preferences</button>
           </div>
         </form>
 

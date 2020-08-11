@@ -1,7 +1,9 @@
 import { each } from "../utils/dom-utils.js";
+import { reportClick as analytics } from "../utils/google-analytics.js";
 
 export default function emailPreferences() {
   return {
+    analytics,
     isLoading: false,
     didLoad: false,
     baseURL: "https://email-alerts.data.spotlightpa.org",
@@ -10,6 +12,7 @@ export default function emailPreferences() {
     lastName: "",
     unsubscribed: "",
     userID: "",
+    fipsEls: [],
     error: null,
     hasSaved: false,
 
@@ -17,6 +20,7 @@ export default function emailPreferences() {
       if (this.$el.dataset.baseUrl) {
         this.baseURL = this.$el.dataset.baseUrl;
       }
+      this.fipsEls = this.$refs.counties.querySelectorAll("[name=fips]");
       let email = new URLSearchParams(window.location.search).get("email");
       if (email) {
         this.email = email;
@@ -62,19 +66,13 @@ export default function emailPreferences() {
     },
 
     loadData(data) {
-      let props = {
-        userID: "id",
-        email: "email",
-        firstName: "first_name",
-        lastName: "last_name",
-        unsubscribed: "unsubscribed",
-      };
-      for (let [key, val] of Object.entries(props)) {
-        this[key] = data[val] ?? "";
-      }
-
+      this.userID = data["id"] ?? "";
+      this.email = data["email"] ?? "";
+      this.firstName = data["first_name"] ?? "";
+      this.lastName = data["last_name"] ?? "";
+      this.unsubscribed = data["unsubscribed"] ?? false;
       let fipsCodes = new Set(data.fips_codes);
-      each(this.$refs.counties.querySelectorAll("[type=checkbox]"), (el) => {
+      each(this.fipsEls, (el) => {
         el.checked = fipsCodes.has(el.value);
       });
     },
@@ -89,7 +87,7 @@ export default function emailPreferences() {
         unsubscribed: this.unsubscribed,
         fips_codes: [],
       };
-      each(this.$refs.counties.querySelectorAll("[type=checkbox]"), (el) => {
+      each(this.fipsEls, (el) => {
         if (el.checked) {
           data.fips_codes.push(el.value);
         }
@@ -125,6 +123,12 @@ export default function emailPreferences() {
         .finally(() => {
           this.isLoading = false;
         });
+    },
+
+    unselect() {
+      each(this.fipsEls, el=>{
+        el.checked = false;
+      });
     },
   };
 }
