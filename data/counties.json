@@ -1,0 +1,270 @@
+[
+	{
+		"FIPS": "42001",
+		"name": "Adams County"
+	},
+	{
+		"FIPS": "42003",
+		"name": "Allegheny County"
+	},
+	{
+		"FIPS": "42005",
+		"name": "Armstrong County"
+	},
+	{
+		"FIPS": "42007",
+		"name": "Beaver County"
+	},
+	{
+		"FIPS": "42009",
+		"name": "Bedford County"
+	},
+	{
+		"FIPS": "42011",
+		"name": "Berks County"
+	},
+	{
+		"FIPS": "42013",
+		"name": "Blair County"
+	},
+	{
+		"FIPS": "42015",
+		"name": "Bradford County"
+	},
+	{
+		"FIPS": "42017",
+		"name": "Bucks County"
+	},
+	{
+		"FIPS": "42019",
+		"name": "Butler County"
+	},
+	{
+		"FIPS": "42021",
+		"name": "Cambria County"
+	},
+	{
+		"FIPS": "42023",
+		"name": "Cameron County"
+	},
+	{
+		"FIPS": "42025",
+		"name": "Carbon County"
+	},
+	{
+		"FIPS": "42027",
+		"name": "Centre County"
+	},
+	{
+		"FIPS": "42029",
+		"name": "Chester County"
+	},
+	{
+		"FIPS": "42031",
+		"name": "Clarion County"
+	},
+	{
+		"FIPS": "42033",
+		"name": "Clearfield County"
+	},
+	{
+		"FIPS": "42035",
+		"name": "Clinton County"
+	},
+	{
+		"FIPS": "42037",
+		"name": "Columbia County"
+	},
+	{
+		"FIPS": "42039",
+		"name": "Crawford County"
+	},
+	{
+		"FIPS": "42041",
+		"name": "Cumberland County"
+	},
+	{
+		"FIPS": "42043",
+		"name": "Dauphin County"
+	},
+	{
+		"FIPS": "42045",
+		"name": "Delaware County"
+	},
+	{
+		"FIPS": "42047",
+		"name": "Elk County"
+	},
+	{
+		"FIPS": "42049",
+		"name": "Erie County"
+	},
+	{
+		"FIPS": "42051",
+		"name": "Fayette County"
+	},
+	{
+		"FIPS": "42053",
+		"name": "Forest County"
+	},
+	{
+		"FIPS": "42055",
+		"name": "Franklin County"
+	},
+	{
+		"FIPS": "42057",
+		"name": "Fulton County"
+	},
+	{
+		"FIPS": "42059",
+		"name": "Greene County"
+	},
+	{
+		"FIPS": "42061",
+		"name": "Huntingdon County"
+	},
+	{
+		"FIPS": "42063",
+		"name": "Indiana County"
+	},
+	{
+		"FIPS": "42065",
+		"name": "Jefferson County"
+	},
+	{
+		"FIPS": "42067",
+		"name": "Juniata County"
+	},
+	{
+		"FIPS": "42069",
+		"name": "Lackawanna County"
+	},
+	{
+		"FIPS": "42071",
+		"name": "Lancaster County"
+	},
+	{
+		"FIPS": "42073",
+		"name": "Lawrence County"
+	},
+	{
+		"FIPS": "42075",
+		"name": "Lebanon County"
+	},
+	{
+		"FIPS": "42077",
+		"name": "Lehigh County"
+	},
+	{
+		"FIPS": "42079",
+		"name": "Luzerne County"
+	},
+	{
+		"FIPS": "42081",
+		"name": "Lycoming County"
+	},
+	{
+		"FIPS": "42083",
+		"name": "McKean County"
+	},
+	{
+		"FIPS": "42085",
+		"name": "Mercer County"
+	},
+	{
+		"FIPS": "42087",
+		"name": "Mifflin County"
+	},
+	{
+		"FIPS": "42089",
+		"name": "Monroe County"
+	},
+	{
+		"FIPS": "42091",
+		"name": "Montgomery County"
+	},
+	{
+		"FIPS": "42093",
+		"name": "Montour County"
+	},
+	{
+		"FIPS": "42095",
+		"name": "Northampton County"
+	},
+	{
+		"FIPS": "42097",
+		"name": "Northumberland County"
+	},
+	{
+		"FIPS": "42099",
+		"name": "Perry County"
+	},
+	{
+		"FIPS": "42101",
+		"name": "Philadelphia County"
+	},
+	{
+		"FIPS": "42103",
+		"name": "Pike County"
+	},
+	{
+		"FIPS": "42105",
+		"name": "Potter County"
+	},
+	{
+		"FIPS": "42107",
+		"name": "Schuylkill County"
+	},
+	{
+		"FIPS": "42109",
+		"name": "Snyder County"
+	},
+	{
+		"FIPS": "42111",
+		"name": "Somerset County"
+	},
+	{
+		"FIPS": "42113",
+		"name": "Sullivan County"
+	},
+	{
+		"FIPS": "42115",
+		"name": "Susquehanna County"
+	},
+	{
+		"FIPS": "42117",
+		"name": "Tioga County"
+	},
+	{
+		"FIPS": "42119",
+		"name": "Union County"
+	},
+	{
+		"FIPS": "42121",
+		"name": "Venango County"
+	},
+	{
+		"FIPS": "42123",
+		"name": "Warren County"
+	},
+	{
+		"FIPS": "42125",
+		"name": "Washington County"
+	},
+	{
+		"FIPS": "42127",
+		"name": "Wayne County"
+	},
+	{
+		"FIPS": "42129",
+		"name": "Westmoreland County"
+	},
+	{
+		"FIPS": "42131",
+		"name": "Wyoming County"
+	},
+	{
+		"FIPS": "42133",
+		"name": "York County"
+	}
+]
