@@ -167,6 +167,12 @@ url = "https://papost.org"
 logotype = "svg"
 
 [[partners]]
+name = "Postindustrial"
+slug = "postindustrial"
+url = "https://postindustrial.com"
+logotype = "png"
+
+[[partners]]
 name = "Republican Herald"
 slug = "republican-herald"
 url = "https://republicanherald.com"
