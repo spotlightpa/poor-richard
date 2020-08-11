@@ -138,7 +138,7 @@ New types of COVID-19 data are constantly being published by state officials and
 
 As of July 13, in order to be as transparent as possible about changes we make to the dashboard, all changes will be documented here.
 
-The date of each changes marks the date that the change was made to the Spotlight PA-version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
+The date of each changes marks the date that the change was made to the Spotlight PA version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
 
 **Aug 11, 2020:** A bug was fixed that meant that areas of the map and county-by-county table that displayed past 14 days totals incorrectly provided totals of the past 13 days.
 
