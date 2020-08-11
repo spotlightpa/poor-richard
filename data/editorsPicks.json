@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-08-07-SPLAID08.md"
+    "content/news/2020-08-11-SPLPLCB11.md"
   ],
   "subfeatures": [
-    "content/news/2020-08-03-SPLREVENUE04.md",
-    "content/news/2020-06-08-SPLCARES09.md"
+    "content/news/2020-06-08-SPLCARES09.md",
+    "content/news/2020-08-07-SPLAID08.md"
   ],
   "limitSubfeatures": true,
   "subfeaturesLimit": 2,
