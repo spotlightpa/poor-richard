@@ -126,7 +126,7 @@ export default function emailPreferences() {
     },
 
     unselect() {
-      each(this.fipsEls, el=>{
+      each(this.fipsEls, (el) => {
         el.checked = false;
       });
     },
