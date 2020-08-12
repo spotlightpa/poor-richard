@@ -107,6 +107,11 @@
         </span>
         <div class="select is-fullwidth">
           <select required name="fips">
+            <option
+              value=""
+              selected
+              disabled
+            >Pennsylvania counties</option>
             {{ range site.Data.counties }}
               <option value="{{ .FIPS }}">
                 {{ .name }}
