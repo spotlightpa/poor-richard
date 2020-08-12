@@ -39,7 +39,7 @@ Historically, journalists have tended to amplify white voices over others in the
 
 <i><b>» SUPPORT THIS EFFORT:</b></i><i> We rely on reader support to provide urgent public-service journalism to communities across Pennsylvania. Become a donor at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
-The project is being overseen by <a href="https://twitter.com/itistamara">Tamara Dunn</a>, a freelance writer and former assistant city editor at the Standard-Speaker, and was made possible by a grant from the Pennsylvania NewsMedia Association Foundation Fellows Fund for the Future.
+The project is being overseen by <a href="https://twitter.com/itistamara">Tamara Dunn</a>, a freelance writer and former night news editor of the Times Leader in Wilkes-Barre. It was made possible by a grant from the Pennsylvania NewsMedia Association Foundation Fellows Fund for the Future.
 
 The database – which will be free and available to all – will include a minimum of 100 Pennsylvania-based experts of color organized by area of expertise. We won't publish any of the nominated source's information without their consent.
 
