@@ -94,16 +94,8 @@ source = "src"
 target = "assets/js"
 
 [[module.mounts]]
-source = "dist"
-target = "assets/@src"
-
-[[module.mounts]]
 source = "node_modules/@fortawesome/fontawesome-free/svgs"
 target = "assets/@fontawesome"
-
-[[module.mounts]]
-source = "dist"
-target = "static/@src"
 
 [[module.mounts]]
 source = "static"

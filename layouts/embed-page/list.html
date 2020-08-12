@@ -1,4 +1,8 @@
 {{ define "extra-main" }}
+  {{ $jsOpts := dict "minify" true "targetPath" "/embed.js"  }}
+  {{ $hostJS := resources.Get "js/esbuild/embed-host.js" | js.Build $jsOpts }}
+  {{ $hostJS = $hostJS | babel }}
+  {{ $scriptSrc := $hostJS.Permalink }}
   <section
     class="section columns is-centered is-multiline"
     data-ga-category="embed-list"
@@ -7,11 +11,6 @@
       {{ range $page := .Pages }}
         {{ if .Param "hide-embed-list" | not }}
           {{ $params := .Param "page-query-params" }}
-          {{ $scriptSrc := absURL "/embed.js" }}
-          {{ if .Site.IsServer }}
-            {{ $scriptSrc = "http://localhost:1234/embed-host.js" }}
-          {{ end }}
-
           {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
           <div
             class="box has-background-light"
@@ -106,4 +105,14 @@
       {{ end }}
     </div>
   </section>
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ $jsOpts := dict "minify" true "targetPath" "/tracker.js"  }}
+  {{ $trackerJS := resources.Get "js/esbuild/tracker.js" | js.Build $jsOpts }}
+  {{ $trackerJS = $trackerJS | babel }}
+  <!-- Hack to tell Hugo to build the partner tracker JS -->
+  <noscript>
+    <script src="{{ $trackerJS.RelPermalink }}"></script>
+  </noscript>
 {{ end }}
