@@ -320,15 +320,23 @@ a.window-sticker-content {
   padding-bottom: 3rem;
   order: 2;
 }
-.feature__hero__img {
-  background-image: url("https://www.spotlightpa.org/imgproxy/insecure/rs:fill:2000:1304/g:sm/el:1/q:75/MjAyMC8wOC8wMWZqbmcwaGU5ZjNxY3puLmpwZWc=.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right 30% top 10%;
-  width: 100%;
+.feature__hero__container {
+  position: relative;
   height: 300px;
   order: 1;
 }
+.feature__hero__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.feature__hero__img {
+  object-fit: cover;
+}
+
 .feature__hero__title__black {
   background-color: #000;
   color: #fff;
@@ -573,7 +581,7 @@ div.section__divider,
   .feature__hero h1 {
     font-size: 2em;
   }
-  .feature__hero__img {
+  .feature__hero__container {
     height: inherit;
     order: initial;
   }
