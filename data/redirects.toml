@@ -9,16 +9,6 @@ to = "https://almanack.data.spotlightpa.org"
 code = 302
 
 [[redirects]]
-from = "/tracker.js"
-to = "/@src/tracker.js"
-code = 200
-
-[[redirects]]
-from = "/embed.js"
-to = "/@src/embed-host.js"
-code = 200
-
-[[redirects]]
 from = "/imgproxy/*"
 to = "https://images.data.spotlightpa.org/:splat"
 code = 200
