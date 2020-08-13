@@ -2,6 +2,7 @@ import galite from "ga-lite";
 import {
   each,
   on,
+  onLoad,
   storeItem,
   loadItem,
   polyfillClosest,
@@ -26,24 +27,27 @@ export function callGA(...args) {
     /* eslint-enable no-console */
     return;
   }
-  window.ga(...args);
+  galite(...args);
 }
+
+onLoad(() => {
+  let el = document.querySelector("[data-ga-settings]");
+  if (!el) {
+    // eslint-disable-next-line no-console
+    console.warn("could not load GA!");
+    return;
+  }
+  let { gaId, gaPageTitle, gaPagePath, gaPageUrl } = el.dataset;
+
+  galite("create", gaId, "auto");
+  galite("send", "pageview", gaPagePath, {
+    title: gaPageTitle,
+    location: gaPageUrl,
+  });
+});
 
 export function sendGAEvent(ev) {
   callGA("send", "event", ev);
-}
-
-export function ensureGA() {
-  let hasGA = Array.from(document.scripts).find((el) =>
-    el.src.match(/google-analytics/)
-  );
-  if (hasGA) {
-    return;
-  }
-  let s = document.createElement("script");
-  s.async = true;
-  s.src = "https://www.google-analytics.com/analytics.js";
-  document.body.appendChild(s);
 }
 
 export function buildEvent(el) {
