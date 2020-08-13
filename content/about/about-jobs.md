@@ -7,7 +7,7 @@ url = "/about/jobs/"
 +++
 Spotlight PA currently has two job openings:
 
-`<hr>`
+***
 
 ## Investigative Health Reporter
 
