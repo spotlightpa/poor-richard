@@ -1,4 +1,4 @@
-import { callGA, ensureGA } from "../utils/google-analytics.js";
+import { callGA } from "../utils/google-analytics.js";
 
 (() => {
   let dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -10,10 +10,4 @@ import { callGA, ensureGA } from "../utils/google-analytics.js";
   callGA("create", "UA-141126362-3", "auto", "spotlightpa");
   callGA("spotlightpa.set", "anonymizeIp", true);
   callGA("spotlightpa.send", "pageview");
-
-  if (document.readyState === "loading") {
-    window.addEventListener("load", ensureGA);
-  } else {
-    ensureGA();
-  }
 })();
