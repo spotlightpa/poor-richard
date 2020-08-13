@@ -1,6 +1,6 @@
-import { each, on, onLoad } from "../utils/dom-utils.js";
-import { addSocialButtonListeners } from "../utils/social.js";
-import { addGAListeners } from "../utils/google-analytics.js";
+import { each, on, onLoad } from "./dom-utils.js";
+import { addSocialButtonListeners } from "./social.js";
+import { addGAListeners } from "./google-analytics.js";
 
 function createListeners() {
   on("click", "[data-target]", (ev) => {
