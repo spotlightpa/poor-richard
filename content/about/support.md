@@ -10,7 +10,7 @@ Spotlight PA editors and reporters operate independently of our funders and main
 
 All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Journalism](https://www.lenfestinstitute.org), which serves as an extra buffer between our investigative newsroom and our funders. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.
 
-The Philadelphia Inquirer provides in-kind fiscal, legal and administrative support for Spotlight PA employees. Additionally, PennLive/Patriot-News provides a reporter including salary and benefits.
+The Philadelphia Inquirer provides in-kind fiscal, legal and administrative support for Spotlight PA employees. Additionally, PennLive/The Patriot-News and Triblive/Pittsburgh Tribune-Review each provides a reporter including salary and benefits.
 
 To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donate).
 
