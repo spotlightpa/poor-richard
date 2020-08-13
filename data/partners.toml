@@ -11,6 +11,12 @@ url = "https://www.pennlive.com"
 logotype = "svg"
 
 [[partners]]
+name = "TribLIVE"
+slug = "triblive"
+url = "https://triblive.com"
+logotype = "svg"
+
+[[partners]]
 name = "The Caucus"
 slug = "caucus"
 url = "https://caucuspa.com"
