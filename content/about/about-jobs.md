@@ -11,6 +11,8 @@ Spotlight PA currently has two job openings:
 
 ## Investigative Health Reporter
 
+## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/79)
+
 We are seeking a passionate accountability reporter to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 46 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
 
 **What you’ll do**
@@ -42,11 +44,11 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 
 We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.
 
-## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/79)
-
 ***
 
 ## Deputy Editor
+
+## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/77)
 
 We’re seeking an accountability-minded editor to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 46 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
 
@@ -66,8 +68,6 @@ This job is full-time and includes benefits. While we’re based in Harrisburg, 
 We know not everyone reading this will fit exactly what we’ve described. We encourage anyone who shares our passion for accountability journalism and health reporting to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with special needs.
 
 We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.
-
-## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/77)
 
 ***
 
