@@ -35,6 +35,7 @@
     "alpinejs": "^2.5.0",
     "autoprefixer": "^9.5.1",
     "bulma": "^0.9.0",
+    "ga-lite": "^2.1.0",
     "journalize": "^2.4.0",
     "postcss-cli": "^7.1.0"
   },
