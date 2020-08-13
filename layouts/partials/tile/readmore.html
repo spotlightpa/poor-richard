@@ -1,4 +1,4 @@
-<template x-for="story in stories" :key="story.url">
+<template x-for="story in stories" :key="story.url" x-cloak>
   <article
     class="tile is-vertical is-bottom"
     data-ga-category="readmore"
@@ -79,7 +79,7 @@
   </article>
 </template>
 
-<template x-if="error && hasClicked">
+<template x-if="error && hasClicked" x-cloak>
   <div class="message is-danger" data-ga-category="error">
     Could not load more.
     <a href="/news/" class="has-text-weight-semibold">Try again?</a>
