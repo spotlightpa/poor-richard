@@ -1,4 +1,5 @@
 import "alpinejs";
+import "../utils/add-listeners.js";
 
 import emailPreferences from "../enhancements/email-preferences.js";
 import embedList from "../enhancements/embed-list.js";

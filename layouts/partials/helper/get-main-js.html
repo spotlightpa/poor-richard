@@ -1,4 +1,0 @@
-{{ $jsOpts := dict "minify" true "targetPath" "/@src/main.js"  }}
-{{ $mainJS := resources.Get "js/esbuild/main.js" | js.Build $jsOpts }}
-{{ $mainJS = $mainJS | babel | minify | fingerprint }}
-{{ return $mainJS.RelPermalink }}
