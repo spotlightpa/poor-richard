@@ -31,6 +31,13 @@ export function callGA(...args) {
 }
 
 onLoad(() => {
+  const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
+  const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
+  if (onDNTPage || (dnt === null && !onProdSite)) {
+    dnt = true;
+    storeItem(DO_NOT_TRACK_KEY, true);
+  }
+
   let el = document.querySelector("[data-ga-settings]");
   if (!el) {
     // eslint-disable-next-line no-console
@@ -39,8 +46,8 @@ onLoad(() => {
   }
   let { gaId, gaPageTitle, gaPagePath, gaPageUrl } = el.dataset;
 
-  galite("create", gaId, "auto");
-  galite("send", "pageview", gaPagePath, {
+  callGA("create", gaId, "auto");
+  callGA("send", "pageview", gaPagePath, {
     title: gaPageTitle,
     location: gaPageUrl,
   });
@@ -85,11 +92,6 @@ export function reportClick(ev) {
 
 export function addGAListeners() {
   polyfillClosest();
-  const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
-  if (onDNTPage) {
-    storeItem(DO_NOT_TRACK_KEY, true);
-  }
-
   each("a", (el) => {
     let isInternal =
       el.host === window.location.host || el.host.match(/spotlightpa\.org$/);
