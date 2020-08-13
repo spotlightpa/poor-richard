@@ -51,6 +51,13 @@ onLoad(() => {
     title: gaPageTitle,
     location: gaPageUrl,
   });
+  window.addEventListener("unload", () => {
+    // Send leave event
+    sendGAEvent({
+      transport: "beacon",
+      nonInteraction: true,
+    });
+  });
 });
 
 export function sendGAEvent(ev) {
