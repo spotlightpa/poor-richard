@@ -68,18 +68,15 @@
   {{ end }}
   {{ partial "modal/search.html" . }}
   <script
-    src='{{ partialCached "helper/get-main-js" . }}'
+    nomodule
+    src='{{ partialCached "helper/get-nomodules-js" . }}'
     async
   ></script>
-  <script nomodule>
-    console.warn("could not load enhancements");
-    document.body.classList.add("has-old-js");
-  </script>
   <script
     src='{{ partialCached "helper/get-enhancements" . }}'
     type="module"
     async
-    onerror='console.warn("could not load enhancements"); document.body.classList.add("has-old-js");'
+    onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
   {{ partial "header/ld-json.html" . }}
 </body>
