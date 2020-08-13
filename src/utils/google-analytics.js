@@ -1,3 +1,4 @@
+import galite from "ga-lite";
 import {
   each,
   on,
@@ -9,10 +10,7 @@ import {
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
-  window.ga = function () {
-    (window.ga.q = window.ga.q || []).push(arguments);
-  };
-  window.ga.l = +new Date();
+  window.ga = galite;
 }
 
 export const DO_NOT_TRACK_KEY = "do-not-track";
