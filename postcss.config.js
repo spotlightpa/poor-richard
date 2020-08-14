@@ -1,5 +1,5 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./hugo_stats.json", "./src/**/*.vue"],
+  content: ["./hugo_stats.json"],
   extractors: [
     {
       extractor: (content) => {
@@ -8,6 +8,9 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
       },
       extensions: ["json"],
     },
+  ],
+  whitelistPatternsChildren: [
+    /align|disabled|multiple|readonly|rows|type=checkbox|type=radio|type|x-cloak/,
   ],
 });
 
