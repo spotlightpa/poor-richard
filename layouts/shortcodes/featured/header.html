@@ -1,3 +1,13 @@
+{{ $filename := "external/x9j8acf23cdcxyzx01b7x0bnr4.jpeg" }}
+{{ $widths := slice 500 800 1100 1400 1700 2100 }}
+{{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
+{{ $srcset := dict "sizes" $sizes "filename" $filename | partial "helper/build-srcset" }}
+
+{{ $width := (index $sizes 0).width }}
+{{ $height := (index $sizes 0).height }}
+{{ $imgOpt := dict "filename" $filename "width" $width "height" $height }}
+{{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+
   <div class="global__nav" data-ga-category="header">
     <div class="global__nav__content">
         <a href="/"><img src="https://interactives.data.spotlightpa.org/2020/featured-template-exp/banner-white-on-trans.svg" class="spotlight__logo" /></a>
@@ -23,24 +33,22 @@
           </div>
         </div>
       </div>
+
       <div class="feature__hero__container">
         <picture class="feature__hero__picture">
-          <source
-            type="image/webp"
-            sizes="(max-width: 769px) 100vw, 66vw"
-          >
+          {{ if in (string $srcset) ".jpeg" }}
+            <source
+              type="image/webp"
+              srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+              sizes="(min-width: 769px) 100vw, 66vw"
+            >
+          {{ end }}
           <img
-            srcset="
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:500:325/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 500w,
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:800:520/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 800w,
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:1100:715/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 1100w,
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:1400:910/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 1400w,
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:1700:1105/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 1700w,
-              https://www.spotlightpa.org/imgproxy/insecure/rs:fill:2000:1300/g:sm/el:1/q:75/ZXh0ZXJuYWwveDlqOGFjZjIzY2RjeHl6eDAxYjd4MGJucjQuanBlZw==.jpeg 2000w
-            "
+            src="{{ $imgSmallSrc }}"
+            srcset="{{ $srcset }}"
             sizes="(max-width: 769px) 100vw, 75vw"
             class="feature__hero__img"
-            style="object-position: top 10% right 0%;"
+            style="object-position: top 10% right 30%;"
           >
         </picture>
       </div>

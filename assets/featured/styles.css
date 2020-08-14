@@ -335,6 +335,7 @@ a.window-sticker-content {
 }
 .feature__hero__img {
   object-fit: cover;
+  width: 100%;
 }
 
 .feature__hero__title__black {
