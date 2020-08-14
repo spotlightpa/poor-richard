@@ -2,11 +2,11 @@
 arc-id = "MNVSQPJGPRETNNZ4DX5J7WDHJ4"
 internal-id = "SPLTRIBXXX"
 internal-budget = ""
-image = "2020/08/01fk9dm701w54hbr.jpeg"
+image = "2020/08/01fkdm7wk58s11md.jpeg"
 image-description = ""
 image-caption = ""
-image-credit = "Spotlight PA File Photo"
-image-size = "hidden"
+image-credit = "Courtesy Triblive"
+image-size = "inline"
 published = 2020-08-13T11:45:00Z
 slug = "spotlight-pa-triblive-tribune-review-pittsburgh-partnership"
 authors = ["Christopher Baxter"]
