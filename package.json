@@ -11,7 +11,7 @@
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
     "build:go": "./build-go.sh",
     "build:stage": "yarn run build:go && hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
-    "build:prod": "yarn run build:go && hugo version && hugo",
+    "build:prod": "yarn run build:go && hugo version && hugo --cleanDestinationDir",
     "start:api": "go run ./cmd/spotlightpa-api",
     "start:noreload": "yarn start:api & hugo server --disableLiveReload & wait",
     "start:full": "yarn start:api & hugo server --disableFastRender & wait",
