@@ -1,0 +1,10 @@
+{{ $widths := .widths }}
+{{ $widthR := .widthRatio }}
+{{ $heightR := .heightRatio }}
+{{ $sizes := slice }}
+{{ range $width := $widths }}
+  {{ $height := div (mul $heightR $width) $widthR }}
+  {{ $size := dict "width" $width "height" $height }}
+  {{ $sizes = $sizes | append $size }}
+{{ end }}
+{{ return $sizes }}

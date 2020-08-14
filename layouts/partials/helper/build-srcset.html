@@ -1,0 +1,17 @@
+{{ $sizes := .sizes }}
+{{ $imagename := .filename }}
+{{ $imgs := slice }}
+
+{{ range $sizes }}
+  {{ $width := .width }}
+  {{ $height := .height }}
+
+  {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+  {{ $url := partial "helper/imgproxy" $imgOpt }}
+  {{ $src := printf "%s %dw" $url $width }}
+  {{ $imgs = $imgs | append $src }}
+{{ end }}
+
+{{ $srcset := delimit $imgs ", " }}
+
+{{ return $srcset }}

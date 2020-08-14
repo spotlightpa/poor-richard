@@ -1,24 +1,17 @@
 {{ $widths := slice 300 480 640 800 960 1120 1280 1440 1600 1760 1920 2080 2240 2400 2560 }}
 {{ if $imagename := .filename }}
-  {{ $imgSmallSrc := "" }}
-  {{ $imgs := slice }}
   {{ $widthR := .widthRatio | default 16 }}
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
-
-  {{ range $i, $width := $widths }}
-    {{ $height := div (mul $heightR $width) $widthR }}
-
-    {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
-    {{ $url := partial "helper/imgproxy" $imgOpt }}
-    {{ $src := printf "%s %dw" $url $width }}
-    {{ $imgs = $imgs | append $src }}
-    {{ if eq $i 0 }}
-      {{ $imgSmallSrc = $url }}
-    {{ end }}
-  {{ end }}
-  {{ $srcset := delimit $imgs ", " }}
   {{ $credit := .credit }}
+
+  {{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
+  {{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
+
+  {{ $width := (index $sizes 0).width }}
+  {{ $height := (index $sizes 0).height }}
+  {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+  {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
   <figure class="{{ .figClass }}" data-ga-category="thumb">
     {{- if .link -}}
