@@ -64,5 +64,107 @@
   class="feature"
 >
   {{ .Content }}
+
+
+  <footer class="global__footer" data-ga-category="footer">
+      <div class="global__footer__content">
+        <div
+          class="global__footer__link__column"
+          data-ga-category="spotlightpa"
+        >
+          <h5>Spotlight Pa</h5>
+          <ul class="list_unstyled">
+            {{ range .Site.Menus.footer }}
+              <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div
+          class="global__footer__link__column"
+          data-ga-category="about"
+        >
+          <h5>About</h5>
+          <ul class="list_unstyled">
+            {{ range .Site.Menus.about }}
+              <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div
+          class="global__footer__link__column"
+          data-ga-category="follow"
+        >
+          <h5>Follow Us</h5>
+          <ul class="list_unstyled">
+            {{ range .Site.Menus.social }}
+              <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="global__footer__brand__column">
+          <img src="https://interactives.data.spotlightpa.org/2020/featured-template-exp/banner-white-on-trans.svg" class="img__logo" />
+          <div class="">
+            <p>
+              <i class="far fa-copyright"></i> <span x-data="{ now: new Date()}" x-text="now.getFullYear()">2020</span>
+            </p>
+            <p>
+            Spotlight PA
+            </p>
+            <p>
+            225 Market St Suite 502A
+            </p>
+            <p>
+            Harrisburg PA 17101
+            </p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <section
+    class="window-sticker"
+    :class="stickyClass"
+    x-data="spl.sticky()"
+    x-init="init()"
+    x-show="isOpen"
+    x-transition:enter="slide-left-enter-active"
+    x-transition:enter-start="slide-left-enter"
+    x-transition:leave="slide-left-enter-active is-active"
+    x-transition:leave-end="slide-left-enter"
+    @open-sticky.window="show()"
+    data-ga-category="modal:sticky"
+  >
+    <div class="window-sticker-grid">
+      <a
+        class="window-sticker-content"
+        @click.capture="close()"
+        href="/donate/"
+      >
+        <div class="spotlight__sticker__tout">
+          <h6 class="text__yellow">Donate</h6>
+          <p>
+            Spotlight PA provides essential journalism with support from readers like you. Help shine a light on injustice and hold the powerful to account by becoming a monthly donor now.
+          </p>
+          <button class="btn btn__yellow">Donate Now</button>
+        </div>
+      </a>
+      <button
+        type="button"
+        class="close-btn"
+        aria-label="close"
+        @click="close"
+        x-ref="close"
+        tabindex="-1"
+      >
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+  </section>
 </body>
 </html>
