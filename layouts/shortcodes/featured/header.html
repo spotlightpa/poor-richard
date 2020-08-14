@@ -1,4 +1,11 @@
-{{ $filename := "external/x9j8acf23cdcxyzx01b7x0bnr4.jpeg" }}
+{{ $filename := .Get "image" }}
+{{ $eyebrow := .Get "eyebrow" }}
+{{ $hed := .Get "hed" }}
+{{ $dek := .Get "dek" }}
+{{ $date := .Get "date" }}
+{{ $byline := .Get "byline" }}
+{{ $imageCredit := .Get "image-credit" }}
+{{ $imageSource := .Get "image-source" }}
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
 {{ $srcset := dict "sizes" $sizes "filename" $filename | partial "helper/build-srcset" }}
@@ -18,18 +25,18 @@
       <div class="feature__hero__title feature__hero__title__black">
         <div class="feature__hero__text">
           <div class="feature__headline">
-            <div class="eyebrow text__yellow">In-Depth Report</div>
-            <h1>Condemn, Discuss, Repeat</h1>
-            <h6>Students of color say Pennsylvania's higher education system follows a tired formula to respond to racism instead of enacting the support they need.</h6>
+            <div class="eyebrow text__yellow">{{ $eyebrow }}</div>
+            <h1>{{ $hed }}</h1>
+            <h6>{{ $dek }}</h6>
           </div>
           <div class="dateline">
-            <time>August 6, 2020</time>
+            <time>{{ $date }}</time>
           </div>
           <div class="primary__byline">
-            by <span class="byline__name">Aneri Pattani</span> <span class="byline__outlet">Spotlight PA</span>
+            by <span class="byline__name">{{ $byline }}</span> <span class="byline__outlet">Spotlight PA</span>
           </div>
           <div class="secondary__byline">
-            Photo by <span class="byline__name">Sean Simmers</span> of <span class="byline__outlet">PennLive</span>
+            Photo by <span class="byline__name">{{ $imageCredit }}</span> of <span class="byline__outlet">{{ $imageSource }}</span>
           </div>
         </div>
       </div>
