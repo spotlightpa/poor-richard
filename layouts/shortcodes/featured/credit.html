@@ -1,0 +1,29 @@
+{{ $eyebrow := .Get "eyebrow" }}
+{{ $headshotFile := .Get "headshot" | printf "img/headshots/%s.jpeg" }}
+{{ $headshot := resources.GetMatch $headshotFile }}
+{{ $name := .Get "name" }}
+{{ $role := .Get "role" }}
+{{ $email := .Get "email" }}
+
+<div class="credits__role__section">
+  <h6>{{ $eyebrow }}</h6>
+  <div class="credits__person__container">
+    {{ if $headshot }}
+      {{ $imgShrunk := $headshot.Fill "256x256" }}
+      <img
+        class="credits__avatar rounded_circle is-monochrome"
+        src="{{ $imgShrunk.RelPermalink }}"
+        alt="{{ $name }}"
+      >
+    {{ end }}
+    <h5 class="credits__name">{{ $name }}</h5>
+    {{ if $role }}
+      <div class="credits__role">{{ $role }}</div>
+    {{ end }}
+    {{ if $email }}
+      <div class="credits__email">
+        <a href="mailto:{{ $email }}">{{ $email }}</a>
+      </div>
+    {{ end }}
+  </div>
+</div>
