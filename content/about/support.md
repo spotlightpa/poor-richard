@@ -171,6 +171,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Thomas Crown
 * Gregory Csikos
 * Jason Cumello
+* Jason Cunningham
 * Jennifer Cunningham
 * Peggy & Mark Curchack
 * Dennis Curtin
@@ -410,6 +411,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Peter Johnstone
 * Carol Jones
 * Nick Jones
+* Robert Jones
 * Eric Jurgensen
 * Denise Kalp
 * Brett Kane
@@ -577,6 +579,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Kenneth R. Nealon
 * Steve Neas
 * James Neff
+* Heidi & Kenneth Neiswender
 * B. Nelson
 * John A. Nikoloff
 * M. Noel
@@ -607,6 +610,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Mark Pecker
 * Ann Pehle
 * Anne Peniazek
+* John Perdoch
 * Amy L. Perez
 * Richel Perretti
 * J. Persinger
@@ -705,6 +709,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Samantha Shaffer
 * Mickey Shapiro
 * David S. Share
+* Carl & Janet Sharer
 * Loretta Sharkey
 * Michael Sheketoff
 * Peter Shelly
@@ -771,6 +776,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Paul Teese
 * Jocelyn Tenney
 * Freda Tepfer
+* Matthew Terruso
 * Elise Thomas
 * R. Thomas
 * Donald Thompson
@@ -834,6 +840,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Deborah Wolfe
 * George Wolff
 * Kathryn Wolfson
+* Barbara Woodin
 * Margaret Wren
 * Francis Wynne
 * Tom Wyse
