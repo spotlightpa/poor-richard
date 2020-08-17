@@ -1,3 +1,9 @@
+:root {
+  background-color: #ddd;
+}
+.main {
+  background-color: #fff;
+}
 html,
 body {
   font-family: "Merriweather", serif;
@@ -73,7 +79,8 @@ p.drop__cap:first-letter {
   margin: auto;
 }
 .global__nav .spotlight__logo {
-  height: 40px;
+  font-size: 40px;
+  color: white;
 }
 
 @media (min-width: 500px) {
@@ -129,6 +136,7 @@ p.drop__cap:first-letter {
   line-height: 1.6;
 }
 .global__footer__content .img__logo {
+  font-size: 40px;
   margin-bottom: 2rem;
 }
 .global__footer__brand__column {
@@ -219,7 +227,7 @@ div.section__divider hr {
     "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
 }
 .aside__keypoints {
-  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/icon__key__graphic.png");
+  background-image: url("/featured/img/icon__key__graphic.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 150px;
@@ -228,7 +236,7 @@ div.section__divider hr {
   border-left: none;
 }
 .aside__info {
-  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/icon__info__graphic.png");
+  background-image: url("/featured/img/icon__info__graphic.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 150px;
@@ -469,7 +477,7 @@ div.section__divider,
   margin-bottom: 3rem;
   margin-top: 3rem;
   padding-left: 2rem;
-  background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/quote__graphic.png");
+  background-image: url("/featured/img/quote__graphic.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -487,8 +495,6 @@ div.section__divider,
   border-top: solid 1px #333;
   padding-bottom: 3rem;
   padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .feature__credits h5,
 .feature__credits h6,
@@ -530,8 +536,8 @@ div.section__divider,
   width: 70px;
 }
 .feature__credits .img__logo {
-  width: 200px;
   margin-bottom: 1rem;
+  font-size: 150px;
 }
 .photo__container__wide {
   margin-bottom: 3rem;
@@ -607,7 +613,7 @@ div.section__divider,
     margin-bottom: 3rem;
     margin-top: 3rem;
     padding-left: 4rem;
-    background-image: url("https://interactives.data.spotlightpa.org/2020/featured-template-exp/quote__graphic.png");
+    background-image: url("/featured/img/quote__graphic.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -808,4 +814,11 @@ div.section__divider,
   height: 2em;
   width: 2em;
   justify-self: end;
+}
+
+.inline-svg svg {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  line-height: 0;
 }
