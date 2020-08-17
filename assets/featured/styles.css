@@ -482,7 +482,7 @@ div.section__divider,
   background-repeat: no-repeat;
   background-size: 100px;
 }
-.pull__quote__block span {
+.pull__quote__block blockquote {
   font-size: 1.5rem;
   line-height: 1.3em;
 }
@@ -618,7 +618,7 @@ div.section__divider,
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .pull__quote__block span {
+  .pull__quote__block blockquote {
     font-size: 2rem;
     line-height: 1.3em;
   }
@@ -821,4 +821,14 @@ div.section__divider,
   fill: currentColor;
   height: 1em;
   line-height: 0;
+}
+
+.article__body strong,
+.article__body b {
+  font-weight: bold;
+}
+
+.article__body em,
+.article__body i {
+  font-style: italic;
 }

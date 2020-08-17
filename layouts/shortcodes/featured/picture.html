@@ -1,0 +1,42 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
+{{ $imgClass := .Get "class" | htmlUnescape }}
+{{ $figClass := .Get "figure-class" | htmlUnescape }}
+{{ $link := .Get "link" | htmlUnescape }}
+
+{{ $widths := slice 500 800 1100 1400 1700 2100 }}
+{{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
+{{ $srcset := dict "sizes" $sizes "filename" $src | partial "helper/build-srcset" }}
+
+{{ $width := (index $sizes 0).width }}
+{{ $height := (index $sizes 0).height }}
+{{ $imgOpt := dict "filename" $src "width" $width "height" $height }}
+{{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+
+
+<figure
+  class="photo__container photo__container__wide"
+  data-ga-category="inline:image"
+>
+  <picture>
+    {{ if in (string $srcset) ".jpeg" }}
+      <source
+        type="image/webp"
+        srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+      >
+    {{ end }}
+    <img
+      alt="{{ $description }}"
+      title="{{ $description }}"
+      src="{{ $imgSmallSrc }}"
+      srcset="{{ $srcset }}"
+      loading="lazy"
+    >
+  </picture>
+  <figcaption class="photo__caption">
+    {{ $caption }} Photo: {{ $credit }}
+  </figcaption>
+</figure>
+

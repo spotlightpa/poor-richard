@@ -1,0 +1,9 @@
+{{ $side := .Get "side" | default "left" }}
+{{ $sideClass := cond (eq $side "right") "aside__right" "aside__left"}}
+<aside
+  class="aside__supplement aside__info {{ $sideClass }} hide__mobile"
+  data-ga-category="inline:info"
+>
+  {{ .Inner }}
+  <hr />
+</aside>
