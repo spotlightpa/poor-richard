@@ -108,7 +108,15 @@
           </ul>
         </div>
         <div class="global__footer__brand__column">
-          <img src="https://interactives.data.spotlightpa.org/2020/featured-template-exp/banner-white-on-trans.svg" class="img__logo" />
+          <span class="img__logo inline-svg">
+            <svg
+              role="img"
+              aria-label="Spotlight PA banner"
+              viewBox="0 0 1024 190"
+            >
+              <use xlink:href="#banner-svg"></use>
+            </svg>
+          </span>
           <div class="">
             <p>
               <i class="far fa-copyright"></i> <span x-data="{ now: new Date()}" x-text="now.getFullYear()">2020</span>
@@ -166,5 +174,11 @@
       </button>
     </div>
   </section>
+  <div class="is-hidden">
+    {{ $banner := resources.Get "/img/logos/banner-default-on-trans.svg" }}
+    {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
+    <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
+    <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
+  </div>
 </body>
 </html>
