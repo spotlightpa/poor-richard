@@ -5,8 +5,8 @@ subhed = "Together, we can hold the powerful to account."
 description = "Spotlight PA: Find Pennsylvania news and investigations about state and local governments, businesses and special interests."
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
-linktitle = "About"
 layout = "about-page"
+linktitle = "About"
 
 [cascade]
 modal-exclude = true
@@ -19,7 +19,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com) and dozens of other newsrooms across Pennsylvania in a historic commitment to investigative and accountability reporting on state government and beyond. Our collaborative network allows us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [Triblive/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org) in a historic commitment to investigative and accountability reporting on state government and beyond. Our collaborative network allows us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
 
 {{<partner-logos>}}
 
