@@ -334,6 +334,7 @@ a.window-sticker-content {
   order: 1;
 }
 .feature__hero__picture {
+  background-color: #dbdbdb;
   position: absolute;
   top: 0;
   left: 0;
