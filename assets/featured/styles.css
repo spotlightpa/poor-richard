@@ -832,3 +832,7 @@ div.section__divider,
 .article__body i {
   font-style: italic;
 }
+
+.article__body .icon i {
+  font-style: normal;
+}
