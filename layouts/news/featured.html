@@ -25,24 +25,13 @@
   {{ end }}
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  {{ $cssFonts := resources.Get "featured/fonts.css" }}
   {{ $cssReset := resources.Get "featured/reset.css" }}
   {{ $cssMain := resources.Get "featured/styles.css" }}
-  {{ $css := slice $cssReset $cssMain | resources.Concat "css/featured.css" }}
+  {{ $css := slice $cssFonts $cssReset $cssMain | resources.Concat "css/featured.css" }}
   {{ $css = $css | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-
-  {{ $gfont := `https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap` }}
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="{{ $gfont }}" />
-  <link
-    rel="stylesheet"
-    href="{{ $gfont }}"
-    media="print"
-    onload="this.media='all'"
-  />
-  <noscript>
-    <link rel="stylesheet" href="{{ $gfont }}" />
-  </noscript>
+  <link rel="preload" as="font" href="/css/fonts/merriweather-v21/merriweather-v21-latin-regular.woff2" crossorigin>
 
   <script
     nomodule
