@@ -4,6 +4,6 @@
   class="aside__supplement aside__info {{ $sideClass }} hide__mobile"
   data-ga-category="inline:info"
 >
-  {{ .Inner }}
+  {{ .Inner | markdownify }}
   <hr />
 </aside>
