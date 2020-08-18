@@ -4,6 +4,7 @@
 {{ $dek := .Get "dek" }}
 {{ $date := .Get "date" }}
 {{ $byline := .Get "byline" }}
+{{ $outlet := .Get "outlet" | default "Spotlight PA" }}
 {{ $imageCredit := .Get "image-credit" }}
 {{ $imageSource := .Get "image-source" }}
 {{ $focus := .Get "image-focus" }}
@@ -33,7 +34,7 @@
             <time>{{ $date }}</time>
           </div>
           <div class="primary__byline">
-            by <span class="byline__name">{{ $byline }}</span> <span class="byline__outlet">Spotlight PA</span>
+            by <span class="byline__name">{{ $byline }}</span> <span class="byline__outlet">{{ $outlet }}</span>
           </div>
           <div class="secondary__byline">
             Photo by <span class="byline__name">{{ $imageCredit }}</span> of <span class="byline__outlet">{{ $imageSource }}</span>
