@@ -6,6 +6,8 @@
 {{ $byline := .Get "byline" }}
 {{ $imageCredit := .Get "image-credit" }}
 {{ $imageSource := .Get "image-source" }}
+{{ $focus := .Get "image-focus" }}
+
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
 {{ $srcset := dict "sizes" $sizes "filename" $filename | partial "helper/build-srcset" }}
@@ -53,7 +55,9 @@
             srcset="{{ $srcset }}"
             sizes="(max-width: 769px) 100vw, 75vw"
             class="feature__hero__img"
-            style="object-position: top 10% right 30%;"
+            {{ if $focus }}
+              style="object-position: {{ $focus }};"
+            {{ end }}
           >
         </picture>
       </div>
