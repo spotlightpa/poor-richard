@@ -428,14 +428,19 @@ div.section__divider,
 .spotlight__tout__block,
 .feature__dataviz__container,
 .aside__supplement,
-.pull__quote__block {
+.pull__quote__block,
+.content-container {
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
 }
 .article__body p {
   line-height: 1.6;
-  margin-bottom: 2rem;
+}
+.article__body p + p,
+.article__body aside + p,
+.article__body figure + p {
+  margin-top: 2rem;
 }
 .aside__supplement {
   font-size: 0.9rem;
@@ -496,6 +501,7 @@ div.section__divider,
   border-top: solid 1px #333;
   padding-bottom: 3rem;
   padding-top: 2rem;
+  margin-top: 2rem;
 }
 .feature__credits h5,
 .feature__credits h6,
@@ -541,7 +547,7 @@ div.section__divider,
   font-size: 150px;
 }
 .photo__container__wide {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 .photo__container__wide img {
   width: 100%;
@@ -836,4 +842,8 @@ div.section__divider,
 
 .article__body .icon i {
   font-style: normal;
+}
+
+.article__body img {
+  max-width: 100%;
 }
