@@ -15,22 +15,6 @@
 {{ $imgOpt := dict "filename" $filename "width" $width "height" $height }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
-  <div class="global__nav" data-ga-category="header">
-    <div class="global__nav__content">
-        <a
-          href="/"
-          class="spotlight__logo inline-svg"
-        >
-            <svg
-              role="img"
-              aria-label="Spotlight PA banner"
-              viewBox="0 0 1024 190"
-            >
-              <use xlink:href="#banner-svg"></use>
-            </svg>
-        </a>
-    </div>
-  </div>
   <article
     data-ga-category="main"
     class="main"

@@ -63,11 +63,31 @@
   data-ga-category="featured"
   class="feature"
 >
+  <nav
+    class="global__nav"
+    data-ga-category="header"
+  >
+    <div class="global__nav__content">
+        <a
+          href="/"
+          class="spotlight__logo inline-svg"
+        >
+            <svg
+              role="img"
+              aria-label="Spotlight PA banner"
+              viewBox="0 0 1024 190"
+            >
+              <use xlink:href="#banner-svg"></use>
+            </svg>
+        </a>
+    </div>
+  </nav>
+
   {{ .Content }}
 
 
   <footer class="global__footer" data-ga-category="footer">
-      <div class="global__footer__content">
+      <nav class="global__footer__content">
         <div
           class="global__footer__link__column"
           data-ga-category="spotlightpa"
@@ -117,22 +137,15 @@
               <use xlink:href="#banner-svg"></use>
             </svg>
           </span>
-          <div class="">
-            <p>
-              <i class="far fa-copyright"></i> <span x-data="{ now: new Date()}" x-text="now.getFullYear()">2020</span>
-            </p>
-            <p>
-            Spotlight PA
-            </p>
-            <p>
-            225 Market St Suite 502A
-            </p>
-            <p>
+          <p>
+            &copy; {{ now.Format "2006" }} <br>
+            Spotlight PA <br>
+            225 Market St <br>
+            Suite 502A <br>
             Harrisburg PA 17101
-            </p>
-          </div>
+          </p>
         </div>
-      </div>
+      </nav>
   </footer>
 
   <section
