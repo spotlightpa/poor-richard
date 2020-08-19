@@ -1,3 +1,4 @@
+{{ $params := partial "helper/page-params" .Page }}
 {{ $filename := .Get "image" }}
 {{ $eyebrow := .Get "eyebrow" }}
 {{ $hed := .Get "hed" }}
@@ -30,9 +31,10 @@
             <h1>{{ $hed }}</h1>
             <h6>{{ $dek }}</h6>
           </div>
-          <div class="dateline">
-            <time>{{ $date }}</time>
-          </div>
+          <time
+            class="pub-date block"
+            datetime="{{ $params.publishedISO }}"
+          >{{ $date }}</time>
           <div class="primary__byline">
             by <span class="byline__name">{{ $byline }}</span> <span class="byline__outlet">{{ $outlet }}</span>
           </div>
