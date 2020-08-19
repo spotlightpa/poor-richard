@@ -853,8 +853,21 @@ div.section__divider,
   height: 50px;
 }
 
+.block {
+  display: block;
+}
+
 .mb-2 {
   margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 .mb-3 {
