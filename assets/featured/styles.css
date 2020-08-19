@@ -395,7 +395,7 @@ a.window-sticker-content {
 .secondary__byline {
   font-size: 0.8rem;
 }
-.dateline {
+.pub-date {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
