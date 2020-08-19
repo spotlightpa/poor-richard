@@ -6,7 +6,9 @@
 {{ $email := .Get "email" }}
 
 <div class="credits__role__section">
-  <h6>{{ $eyebrow }}</h6>
+  {{ if $eyebrow }}
+    <h6>{{ $eyebrow }}</h6>
+  {{ end }}
   <div class="credits__person__container">
     {{ if $headshot }}
       {{ $imgShrunk := $headshot.Fill "256x256" }}
