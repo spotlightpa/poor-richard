@@ -20,6 +20,12 @@
   {{ $pageType = "Article" }}
   {{ $json.SetInMap "webpage" "author" $params.byline }}
   {{ $json.SetInMap "webpage" "headline" .Title }}
+  {{ $json.SetInMap "webpage" "datePublished" $params.publishedISO }}
+  {{ if $imgName := .Param "image" }}
+    {{ $imgOpt := dict "filename" $imgName "width" 1000 "height" 1000 }}
+    {{ $url := partial "helper/imgproxy" $imgOpt }}
+    {{ $json.SetInMap "webpage" "image" $url }}
+  {{ end }}
 {{ end }}
 
 {{ if $params.kicker }}
