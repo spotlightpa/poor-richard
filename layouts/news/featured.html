@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang='{{ .Param "language-code" | default site.LanguageCode }}'>
-<head>
+<head
+  itemscope itemtype="http://schema.org/WebSite"
+>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,5 +145,6 @@
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
   </div>
+  {{ partial "header/ld-json.html" . }}
 </body>
 </html>
