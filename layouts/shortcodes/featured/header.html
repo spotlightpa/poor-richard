@@ -8,6 +8,7 @@
 {{ $outlet := .Get "outlet" | default "Spotlight PA" }}
 {{ $imageCredit := .Get "image-credit" }}
 {{ $imageSource := .Get "image-source" }}
+{{ $imageDesc := .Get "image-description" }}
 {{ $focus := .Get "image-focus" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
@@ -54,6 +55,8 @@
             >
           {{ end }}
           <img
+            alt="{{ $imageDesc }}"
+            title="{{ $imageDesc }}"
             src="{{ $imgSmallSrc }}"
             srcset="{{ $srcset }}"
             sizes="(max-width: 769px) 100vw, 75vw"
