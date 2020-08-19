@@ -2,13 +2,14 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $imgClass := .Get "class" | htmlUnescape }}
-{{ $figClass := .Get "figure-class" | htmlUnescape }}
+{{ $imgClass := .Get "class" | htmlUnescape | default "mx-auto block" }}
+{{ $figClass := .Get "figure-class" | htmlUnescape | default "content-container mt-3 mb-3 mx-auto" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "photo__caption" }}
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $style := .Get "style" | htmlUnescape }}
 
 <figure
-  class="content-container mt-3 mb-3 mx-auto"
+  class="{{ $figClass }}"
   data-ga-category="inline:image"
 >
   <img
@@ -16,10 +17,10 @@
     title="{{ $description }}"
     src="{{ $src }}"
     loading="lazy"
-    class="mx-auto block"
+    class="{{ $imgClass }}"
     style="{{ $style | safeCSS }}"
   >
-  <figcaption class="photo__caption">
+  <figcaption class="{{ $capClass }}">
     {{ $caption }} {{ $credit }}
   </figcaption>
 </figure>
