@@ -1,0 +1,26 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
+{{ $imgClass := .Get "class" | htmlUnescape }}
+{{ $figClass := .Get "figure-class" | htmlUnescape }}
+{{ $link := .Get "link" | htmlUnescape }}
+{{ $style := .Get "style" | htmlUnescape }}
+
+<figure
+  class="content-container mt-3 mb-3 mx-auto"
+  data-ga-category="inline:image"
+>
+  <img
+    alt="{{ $description }}"
+    title="{{ $description }}"
+    src="{{ $src }}"
+    loading="lazy"
+    class="mx-auto block"
+    style="{{ $style | safeCSS }}"
+  >
+  <figcaption class="photo__caption">
+    {{ $caption }} {{ $credit }}
+  </figcaption>
+</figure>
+
