@@ -167,12 +167,6 @@ url = "https://observer-reporter.com"
 logotype = "png"
 
 [[partners]]
-name = "PA Post"
-slug = "papost"
-url = "https://papost.org"
-logotype = "svg"
-
-[[partners]]
 name = "Postindustrial"
 slug = "postindustrial"
 url = "https://postindustrial.com"
