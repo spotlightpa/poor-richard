@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-08-19-SPLED18.md",
     "content/news/2020-08-20-SPLDARK21.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2019-10-22-SPLCREDITMAIN23.md",
+    "content/news/2019-10-23-SPLCREDITTRIP24.md"
+  ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-08-13-SPLPSU14.md",
-    "content/news/2020-08-13-SPLREHAB13.md",
+    "content/news/2020-08-19-SPLED18.md",
+    "content/news/2020-08-19-SPLRTK20.md",
     "content/news/2020-08-17-SPLPAP17.md"
   ],
   "sidebarPicks": [
