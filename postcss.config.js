@@ -15,7 +15,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 });
 
 let plugins = [require("autoprefixer")];
-if (process.env.NODE_ENV === "production") {
+if (process.env.HUGO_ENVIRONMENT === "production") {
   plugins.push(purgecss);
 }
 
