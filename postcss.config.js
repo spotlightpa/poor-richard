@@ -5,7 +5,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     return els.tags.concat(els.classes, els.ids);
   },
   whitelistPatternsChildren: [
-    /align|disabled|multiple|readonly|rows|type=checkbox|type=radio|type|x-cloak/,
+    // Don't purge attributes
+    /disabled|multiple|readonly|rows|type|x-cloak/,
   ],
 });
 
