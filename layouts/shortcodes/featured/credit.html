@@ -5,27 +5,28 @@
 {{ $role := .Get "role" }}
 {{ $email := .Get "email" }}
 
-<div class="credits__role__section">
+<div class="font-sans">
   {{ if $eyebrow }}
-    <h6>{{ $eyebrow }}</h6>
+    <h4 class="uppercase font-bold text-xs mb-4">{{ $eyebrow }}</h4>
   {{ end }}
-  <div class="credits__person__container">
-    {{ if $headshot }}
-      {{ $imgShrunk := $headshot.Fill "256x256" }}
-      <img
-        class="credits__avatar rounded_circle is-monochrome"
-        src="{{ $imgShrunk.RelPermalink }}"
-        alt="{{ $name }}"
-      >
-    {{ end }}
-    <h5 class="credits__name">{{ $name }}</h5>
-    {{ if $role }}
-      <div class="credits__role">{{ $role }}</div>
-    {{ end }}
-    {{ if $email }}
-      <div class="credits__email">
-        <a href="mailto:{{ $email }}">{{ $email }}</a>
-      </div>
-    {{ end }}
-  </div>
+  {{ if $headshot }}
+    {{ $imgShrunk := $headshot.Fill "256x256" }}
+    <img
+      class="float-left w-16 h-16 mr-4 monochrome rounded-full"
+      src="{{ $imgShrunk.RelPermalink }}"
+      alt="{{ $name }}"
+    >
+  {{ end }}
+  <h3 class="uppercase font-bold">{{ $name }}</h3>
+  {{ if $role }}
+    <div class="text-sm italic">{{ $role }}</div>
+  {{ end }}
+  {{ if $email }}
+    <div class="text-sm">
+      <a
+        class="underline text-darkblue hover:text-yellow transition-color duration-500"
+        href="mailto:{{ $email }}"
+      >{{ $email }}</a>
+    </div>
+  {{ end }}
 </div>

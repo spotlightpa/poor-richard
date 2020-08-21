@@ -37,7 +37,8 @@
     "bulma": "^0.9.0",
     "ga-lite": "^2.1.0",
     "journalize": "^2.4.0",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.7.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

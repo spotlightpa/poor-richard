@@ -1,6 +1,6 @@
 {{ $flavor := .Get "text" | default `Spotlight PA provides essential journalism with support from readers like you. Help shine a light on injustice and hold the powerful to account by becoming a monthly donor now.` }}
 <section
-  class="window-sticker"
+  class="hidden"
   :class="stickyClass"
   x-data="spl.sticky()"
   x-init="init()"

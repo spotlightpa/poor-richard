@@ -22,36 +22,45 @@
 
   <article
     data-ga-category="main"
-    class="main"
+    class=""
   >
-    <header class="feature__hero">
-      <div class="feature__hero__title feature__hero__title__black">
-        <div class="feature__hero__text">
-          <div class="feature__headline">
-            <div class="eyebrow text__yellow">{{ $eyebrow }}</div>
-            <h1>{{ $hed }}</h1>
-            <h6>{{ $dek }}</h6>
+    <header class="grid grid-cols-1 md:grid-cols-5">
+      <div class="md:col-span-2 bg-black text-white">
+        <div class="px-12 pb-10">
+          <div class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white">
+            <div
+              class="font-sans uppercase font-bold text-yellow"
+            >{{ $eyebrow }}</div>
+            <h1 class="mt-4 text-4xl lg:text-6xl uppercase leading-hed">
+              {{ $hed }}
+            </h1>
+            <h2 class="mt-4 lg:text-lg">{{ $dek }}</h2>
           </div>
           <time
-            class="pub-date block"
+            class="font-sans uppercase font-bold"
             datetime="{{ $params.publishedISO }}"
           >{{ $date }}</time>
-          <div class="primary__byline">
-            by <span class="byline__name">{{ $byline }}</span> <span class="byline__outlet">{{ $outlet }}</span>
+          <div class="lg:text-lg mt-8 leading-none">
+            by <span class="font-sans uppercase font-bold">{{ $byline }}</span>
           </div>
-          <div class="secondary__byline">
-            Photo by <span class="byline__name">{{ $imageCredit }}</span> of <span class="byline__outlet">{{ $imageSource }}</span>
+          <div class="mt-3 text-sm font-sans uppercase font-bold">
+            {{ $outlet }}
+          </div>
+          <div class="mt-8 text-sm">
+            Photo by
+            <span class="font-sans uppercase font-bold">{{ $imageCredit }}</span>
+            of
+            <span class="font-sans uppercase">{{ $imageSource }}</span>
           </div>
         </div>
       </div>
 
-      <div class="feature__hero__container">
-        <picture class="feature__hero__picture">
+      <div class="relative order-first pb-16x9 md:order-none md:col-span-3 md:h-full">
+        <picture class="bg-gray-400 absolute inset-0">
           {{ if in (string $srcset) ".jpeg" }}
             <source
               type="image/webp"
               srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-              sizes="(min-width: 769px) 100vw, 66vw"
             >
           {{ end }}
           <img
@@ -59,8 +68,7 @@
             title="{{ $imageDesc }}"
             src="{{ $imgSmallSrc }}"
             srcset="{{ $srcset }}"
-            sizes="(max-width: 769px) 100vw, 75vw"
-            class="feature__hero__img"
+            class="w-full h-full object-cover"
             {{ if $focus }}
               style="object-position: {{ $focus }};"
             {{ end }}
@@ -68,4 +76,5 @@
         </picture>
       </div>
     </header>
-    <section class="article__body">
+    <section class="bg-white py-12 px-8">
+      <div class="mx-auto max-w-content leading-7 space-y-8">
