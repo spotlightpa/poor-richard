@@ -1,9 +1,5 @@
 @tailwind base;
 
-@tailwind components;
-
-@tailwind utilities;
-
 html {
   background-color: #dbdbdb;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23121212' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -22,3 +18,103 @@ html {
 .monochrome {
   filter: grayscale(1);
 }
+
+/*! purgecss start ignore */
+[x-cloak] {
+  display: none;
+}
+.no-js {
+  display: none;
+}
+.has-old-js .no-js {
+  display: block;
+}
+.has-old-js .no-js-hide {
+  display: none;
+}
+/*! purgecss end ignore */
+
+.content-area > * {
+  @apply mx-auto max-w-content;
+}
+
+.content-area a {
+  @apply text-darkblue transition-colors duration-500;
+}
+
+.content-area a:hover {
+  @apply text-yellow;
+}
+
+.content-area p {
+  @apply leading-7;
+}
+
+.content-area p + p,
+.content-area aside + p,
+.content-area figure + p {
+  @apply mt-8;
+}
+
+.content-area h3 {
+  @apply font-sans italic text-3xl mt-4 mb-8 leading-8;
+}
+
+.content-area ul {
+  @apply list-disc;
+}
+.content-area ol {
+  @apply list-decimal;
+}
+
+.content-aside {
+  @apply hidden max-w-none w-1/4 ml-10 pl-6 mr-8 pr-8 py-4 font-sans text-sm;
+}
+
+@screen md {
+  .content-aside {
+    @apply block;
+  }
+}
+
+.content-aside p {
+  @apply leading-relaxed;
+}
+
+.content-aside h1,
+.content-aside h2,
+.content-aside h3,
+.content-aside h4 {
+  @apply uppercase font-bold text-lg leading-none;
+}
+
+.content-aside > * + h1,
+.content-aside > * + h2,
+.content-aside > * + h3,
+.content-aside > * + h4 {
+  @apply mt-8;
+}
+
+.content-aside > * + * ,
+.content-aside ul > li + li,
+.content-aside ol > li + li {
+  @apply mt-3;
+}
+
+.bg-key {
+  background-image: url("/featured/img/icon__key__graphic.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 150px;
+}
+
+.bg-info {
+  background-image: url("/featured/img/icon__info__graphic.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 150px;
+}
+
+@tailwind components;
+
+@tailwind utilities;
