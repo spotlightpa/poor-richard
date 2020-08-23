@@ -22,11 +22,13 @@ module.exports = {
     },
     extend: {
       lineHeight: {
+        normal: "1.6",
         hed: "1.15",
       },
       colors: {
         yellow: "#ffcb05",
         darkblue: "#22416e",
+        caption: "#5d5d5d",
       },
       spacing: {
         "16x9": `${(100 * 9) / 16}%`,

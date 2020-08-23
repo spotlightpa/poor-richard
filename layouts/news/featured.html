@@ -53,7 +53,7 @@
 <body
   data-ga-label='{{ $pageCat }}:featured'
   data-ga-category="featured"
-  class="font-serif w-screen overflow-x-hidden"
+  class="font-serif w-screen overflow-x-hidden leading-normal"
 >
   <nav
     class="bg-black flex sm:absolute sm:bg-transparent z-10"
@@ -74,8 +74,12 @@
     </a>
   </nav>
 
-  {{ .Content }}
-
+  <article
+    data-ga-category="main"
+    class="bg-white"
+  >
+    {{ .Content }}
+  </article>
 
   <footer
     class="font-sans bg-black text-white uppercase"
@@ -87,7 +91,7 @@
         >
           <a
             href="/"
-            class=""
+            class="hover:text-yellow"
             data-ga-category="logo"
           >
             <svg

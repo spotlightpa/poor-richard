@@ -2,9 +2,9 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $imgClass := .Get "class" | htmlUnescape | default "mx-auto block" }}
-{{ $figClass := .Get "figure-class" | htmlUnescape | default "content-container mt-3 mb-3 mx-auto" }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "photo__caption" }}
+{{ $imgClass := .Get "class" | htmlUnescape | default "bg-gray-400 mx-auto block" }}
+{{ $figClass := .Get "figure-class" | htmlUnescape | default "content-container my-12 mx-auto" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "text-caption text-sm mt-4" }}
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $style := .Get "style" | htmlUnescape }}
 

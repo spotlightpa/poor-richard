@@ -20,10 +20,6 @@
 {{ $imgOpt := dict "filename" $filename "width" $width "height" $height }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
-  <article
-    data-ga-category="main"
-    class=""
-  >
     <header class="grid grid-cols-1 md:grid-cols-5">
       <div class="md:col-span-2 bg-black text-white">
         <div class="px-12 pb-10">
@@ -76,5 +72,4 @@
         </picture>
       </div>
     </header>
-    <section class="bg-white py-12 px-8 ">
-      <div class="max-w-screen-xl content-area">
+    {{ partial "featured/content-area-start" . }}
