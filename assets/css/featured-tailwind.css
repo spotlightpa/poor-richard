@@ -35,7 +35,8 @@ html {
 /*! purgecss end ignore */
 
 .content-area a {
-  @apply text-darkblue transition-colors duration-500;
+  @apply text-darkblue underline;
+  @apply transition-colors duration-500;
 }
 
 .content-area a:hover {
