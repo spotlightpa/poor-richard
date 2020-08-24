@@ -6,7 +6,7 @@ url = "/about/faq/"
 +++
 **Q: What is Spotlight PA?**
 
-**A:** Spotlight PA is an independent, nonpartisan and statewide newsroom dedicated to producing investigative journalism about Pennsylvania government — with a particular focus on how it's spending your tax dollars — and significant statewide issues that matter to communities in all corners of the state. The project is led by [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [Triblive/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org).
+**A:** Spotlight PA is an independent, nonpartisan and statewide newsroom dedicated to producing investigative journalism about Pennsylvania government — with a particular focus on how it's spending your tax dollars — and significant statewide issues that matter to communities in all corners of the state. The project is led by [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org).
 
 **Q: What is Spotlight PA’s mission?**
 
@@ -58,7 +58,7 @@ url = "/about/faq/"
 
 **Q: Where does Spotlight PA’s work appear?**
 
-**A:** All Spotlight PA stories appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [The Patriot-News / PennLive.com](https://www.pennlive.com), [Triblive/Pittsburgh Tribune Review](https://www.triblive.com), [WITF Public Media](https://www.witf.org), as well as across [a growing network of other Pennsylvania news organizations](/about/partners/).
+**A:** All Spotlight PA stories appear on our website, [spotlightpa.org](https://www.spotlightpa.org). Spotlight PA stories also appear in [The Philadelphia Inquirer / Inquirer.com](https://www.inquirer.com), [The Patriot-News / PennLive.com](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com), [WITF Public Media](https://www.witf.org), as well as across [a growing network of other Pennsylvania news organizations](/about/partners/).
 
 **Q: Will Spotlight PA share its content with other news organizations?**
 
