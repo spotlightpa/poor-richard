@@ -10,7 +10,7 @@ The mission of ***Spotlight PA*** is to hold powerful private and public forces 
 
 Spotlight PA is dedicated to producing non­partisan investigative journalism about Pennsylvania government and urgent statewide issues. We are an independent watchdog unafraid to dig deep, fight for the truth and take on the powerful to expose wrongdoing and spur meaningful reform. We connect Pennsylvanians to their state, and to each other, through public service journalism that matters to their lives and is creatively told in the many modern, digital ways they consume their news.
 
-Our collaborative newsroom is powered by the [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](http://www.pennlive.com), [Triblive/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org). We continue to seek new distribution partners to join our initial group. For more information on how to become a partner, [please contact us](/contact/).
+Our collaborative newsroom is powered by the [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](http://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org). We continue to seek new distribution partners to join our initial group. For more information on how to become a partner, [please contact us](/contact/).
 
 Spotlight PA strives to serve as a collaborator and resource to all newsrooms in the state to help uncover and enhance stories of statewide importance that otherwise would go unnoticed or untold. We pursue investigations with the potential for meaningful, real­-world change, and that’s the sole measure of our success.
 
