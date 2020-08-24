@@ -25,7 +25,6 @@
     />
   {{ end }}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   {{ $cssFonts := resources.Get "featured/fonts.css" }}
   {{ $cssTW := resources.Get "css/featured-tailwind.css" }}
   {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
@@ -165,8 +164,10 @@
   <div class="hidden">
     {{ $banner := resources.Get "/img/logos/banner-default-on-trans.svg" }}
     {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
+    {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
+    <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
   </div>
   {{ partial "header/ld-json.html" . }}
 </body>
