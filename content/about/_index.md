@@ -19,7 +19,7 @@ Spotlight PA is a collaborative newsroom dedicated to producing investigative jo
 
 {{<content-header>}}Unprecedented collaboration{{</content-header>}}
 
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [Triblive/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org) in a historic commitment to investigative and accountability reporting on state government and beyond. Our collaborative network allows us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
+Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org) in a historic commitment to investigative and accountability reporting on state government and beyond. Our collaborative network allows us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
 
 {{<partner-logos>}}
 
