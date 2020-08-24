@@ -34,10 +34,6 @@ html {
 }
 /*! purgecss end ignore */
 
-.content-area > * {
-  @apply mx-auto max-w-content;
-}
-
 .content-area a {
   @apply text-darkblue transition-colors duration-500;
 }
@@ -46,29 +42,29 @@ html {
   @apply text-yellow;
 }
 
-.content-area p {
-  @apply leading-7;
+.content-area > * {
+  @apply mx-auto max-w-content;
 }
 
-.content-area p + p,
-.content-area aside + p,
-.content-area figure + p {
+.content-area > p + p,
+.content-area > aside + p,
+.content-area > figure + p {
   @apply mt-8;
 }
 
-.content-area h3 {
+.content-area > h3 {
   @apply font-sans italic text-3xl mt-4 mb-8 leading-8;
 }
 
-.content-area ul {
+.content-area > ul {
   @apply list-disc;
 }
-.content-area ol {
+.content-area > ol {
   @apply list-decimal;
 }
 
 .content-aside {
-  @apply hidden max-w-none w-1/4 ml-10 pl-6 mr-8 pr-8 py-4 font-sans text-sm;
+  @apply hidden max-w-none w-1/4 ml-10 mr-8 pr-8 py-4 font-sans text-sm;
 }
 
 @screen md {
@@ -77,14 +73,21 @@ html {
   }
 }
 
-.content-aside p {
+.content-aside > p {
   @apply leading-relaxed;
 }
 
-.content-aside h1,
-.content-aside h2,
-.content-aside h3,
-.content-aside h4 {
+.content-aside > ul {
+  @apply list-disc;
+}
+.content-aside > ol {
+  @apply list-decimal;
+}
+
+.content-aside > h1,
+.content-aside > h2,
+.content-aside > h3,
+.content-aside > h4 {
   @apply uppercase font-bold text-lg leading-none;
 }
 
