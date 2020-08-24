@@ -8,9 +8,9 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-08-21-SPLREPORT22.md",
     "content/news/2020-08-20-SPLDARK21.md",
-    "content/news/2020-08-19-SPLRTK20.md",
-    "content/news/2020-08-17-SPLPAP17.md"
+    "content/news/2020-08-19-SPLRTK20.md"
   ],
   "sidebarPicks": [
     "content/news/2020-08-06-SPLCAMPUS06.md"
