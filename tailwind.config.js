@@ -36,6 +36,7 @@ module.exports = {
       },
       screens: {
         md: "850px",
+        lg: "1080px",
       },
       maxWidth: {
         content: "730px",
