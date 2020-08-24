@@ -107,16 +107,23 @@ html {
 
 .bg-key {
   background-image: url("/featured/img/icon__key__graphic.png");
-  background-repeat: no-repeat;
   background-position: top left;
+  background-repeat: no-repeat;
   background-size: 150px;
 }
 
 .bg-info {
   background-image: url("/featured/img/icon__info__graphic.png");
-  background-repeat: no-repeat;
   background-position: top left;
+  background-repeat: no-repeat;
   background-size: 150px;
+}
+
+.bg-pullquote {
+  background-image: url("/featured/img/quote__graphic.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100px;
 }
 
 @tailwind components;
