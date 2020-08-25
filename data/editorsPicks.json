@@ -1,9 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-08-24-SPLCAMPUSXX.md"
+    "content/news/2020-08-25-SPLSHOT26.md"
   ],
   "subfeatures": [
-    "content/news/2020-08-19-SPLED18.md"
+    "content/news/2020-08-06-SPLCAMPUS06.md",
+    "content/news/2020-08-24-SPLCAMPUSXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
@@ -13,6 +14,6 @@
     "content/news/2020-08-19-SPLRTK20.md"
   ],
   "sidebarPicks": [
-    "content/news/2020-08-06-SPLCAMPUS06.md"
+    "content/news/2020-07-31-SPLGRANT03.md"
   ]
 }
