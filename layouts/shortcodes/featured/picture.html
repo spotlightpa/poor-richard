@@ -2,9 +2,11 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $imgClass := .Get "class" | htmlUnescape }}
-{{ $figClass := .Get "figure-class" | htmlUnescape }}
 {{ $link := .Get "link" | htmlUnescape }}
+{{ $figClass := .Get "figure-class" | htmlUnescape | default "max-w-full my-12 mx-auto" }}
+{{ $imgClass := .Get "class" | htmlUnescape | default "bg-gray-400 mx-auto block" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-caption text-sm mt-4" }}
+
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
@@ -17,7 +19,7 @@
 
 
 <figure
-  class="photo__container photo__container__wide"
+  class="{{ $figClass }}"
   data-ga-category="inline:image"
 >
   <picture>
@@ -28,6 +30,7 @@
       >
     {{ end }}
     <img
+      class="{{ $imgClass }}"
       alt="{{ $description }}"
       title="{{ $description }}"
       src="{{ $imgSmallSrc }}"
@@ -35,7 +38,7 @@
       loading="lazy"
     >
   </picture>
-  <figcaption class="photo__caption">
+  <figcaption class="{{ $capClass }}">
     {{ $caption }} Photo: {{ $credit }}
   </figcaption>
 </figure>

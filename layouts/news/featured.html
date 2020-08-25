@@ -25,12 +25,13 @@
     />
   {{ end }}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   {{ $cssFonts := resources.Get "featured/fonts.css" }}
-  {{ $cssReset := resources.Get "featured/reset.css" }}
-  {{ $cssMain := resources.Get "featured/styles.css" }}
-  {{ $css := slice $cssFonts $cssReset $cssMain | resources.Concat "css/featured.css" }}
-  {{ $css = $css | minify | fingerprint }}
+  {{ $cssTW := resources.Get "css/featured-tailwind.css" }}
+  {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
+  {{ $css = $css | postCSS }}
+  {{ if ne hugo.Environment "development" }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="preload" as="font" href="/css/fonts/merriweather-v21/merriweather-v21-latin-regular.woff2" crossorigin>
 
@@ -51,83 +52,57 @@
 <body
   data-ga-label='{{ $pageCat }}:featured'
   data-ga-category="featured"
-  class="feature"
+  class="font-serif w-screen overflow-x-hidden leading-normal"
 >
   <nav
-    class="global__nav"
+    class="bg-black flex sm:absolute sm:bg-transparent z-10"
     data-ga-category="header"
   >
-    <div class="global__nav__content">
-        <a
-          href="/"
-          class="spotlight__logo inline-svg"
-        >
-            <svg
-              role="img"
-              aria-label="Spotlight PA banner"
-              viewBox="0 0 1024 190"
-            >
-              <use xlink:href="#banner-svg"></use>
-            </svg>
-        </a>
-    </div>
+    <a
+      class="block sm:w-full mx-auto px-12 py-5"
+      href="/"
+    >
+      <svg
+        class="fill-current text-white hover:text-yellow h-8 lg:h-10"
+        role="img"
+        aria-label="Spotlight PA banner"
+        viewBox="0 0 1024 190"
+      >
+        <use xlink:href="#banner-svg"></use>
+      </svg>
+    </a>
   </nav>
 
-  {{ .Content }}
+  <article
+    data-ga-category="main"
+    class="bg-white"
+  >
+    {{ .Content }}
+  </article>
 
-
-  <footer class="global__footer" data-ga-category="footer">
-      <nav class="global__footer__content">
+  <footer
+    class="font-sans bg-black text-white uppercase"
+    data-ga-category="footer"
+  >
+      <nav class="flex flex-col space-y-6 md:flex-row md:space-y-0 p-12 max-w-screen-xl">
         <div
-          class="global__footer__link__column"
-          data-ga-category="spotlightpa"
+          class="-mt-4 flex-grow md:order-last"
         >
-          <h5>Spotlight Pa</h5>
-          <ul class="list_unstyled">
-            {{ range .Site.Menus.footer }}
-              <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div
-          class="global__footer__link__column"
-          data-ga-category="about"
-        >
-          <h5>About</h5>
-          <ul class="list_unstyled">
-            {{ range .Site.Menus.about }}
-              <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div
-          class="global__footer__link__column"
-          data-ga-category="follow"
-        >
-          <h5>Follow Us</h5>
-          <ul class="list_unstyled">
-            {{ range .Site.Menus.social }}
-              <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="global__footer__brand__column">
-          <span class="img__logo inline-svg">
+          <a
+            href="/"
+            class="hover:text-yellow"
+            data-ga-category="logo"
+          >
             <svg
+              class="fill-current max-w-xs"
               role="img"
               aria-label="Spotlight PA banner"
               viewBox="0 0 1024 190"
             >
               <use xlink:href="#banner-svg"></use>
             </svg>
-          </span>
-          <p>
+          </a>
+          <p class="mt-2">
             &copy; {{ now.Format "2006" }} <br>
             Spotlight PA <br>
             225 Market St <br>
@@ -135,14 +110,41 @@
             Harrisburg PA 17101
           </p>
         </div>
+        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
+        {{ block "featured-footer" $context }}
+          <div
+            class="flex-1"
+            data-ga-category="{{ .category }}"
+          >
+            <h3 class="font-bold">{{ .name }}</h3>
+            <ul class="mt-2">
+              {{ range .menu }}
+                <li>
+                  <a
+                    class="hover:text-yellow transition-colors duration-500"
+                    href="{{ .URL }}"
+                  >{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
+        {{ template "featured-footer" $context }}
+        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
+        {{ template "featured-footer" $context }}
       </nav>
   </footer>
 
-  <div class="is-hidden">
+  <div class="hidden">
     {{ $banner := resources.Get "/img/logos/banner-default-on-trans.svg" }}
     {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
+    {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
+    {{ $iconClose := resources.Get "@fontawesome/solid/times.svg" }}
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
+    <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
+    <svg id="close-svg">{{ $iconClose.Content|safeHTML }}</svg>
   </div>
   {{ partial "header/ld-json.html" . }}
 </body>

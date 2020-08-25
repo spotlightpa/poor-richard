@@ -1,7 +1,9 @@
+{{ $side := .Get "side" | default "right" }}
+{{ $sideClass := cond (eq $side "right") "float-right" "float-left"}}
 <aside
-  class="aside__keypoints aside__right aside__supplement hide__mobile"
+  class="bg-key content-aside {{ $sideClass }}"
   data-ga-category="inline:keypoints"
 >
   {{ .Inner | markdownify }}
-  <hr>
+  <hr hidden>
 </aside>

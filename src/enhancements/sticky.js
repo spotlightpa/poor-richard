@@ -9,12 +9,6 @@ export default function sticky() {
     isOpen: false,
     oldFocus: null,
 
-    init() {},
-
-    get stickyClass() {
-      return this.isOpen ? "is-active" : "";
-    },
-
     show() {
       this.isOpen = true;
       sendGAEvent({
@@ -29,7 +23,8 @@ export default function sticky() {
 
     close() {
       this.isOpen = false;
-      this.oldFocus.focus();
+      const transitionLength = 500;
+      window.setTimeout(() => this.oldFocus.focus(), transitionLength);
       sendGAEvent({
         eventLabel: "news:page:featured",
         eventCategory: "modal:sticky",
