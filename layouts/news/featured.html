@@ -165,9 +165,11 @@
     {{ $banner := resources.Get "/img/logos/banner-default-on-trans.svg" }}
     {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
     {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
+    {{ $iconClose := resources.Get "@fontawesome/solid/times.svg" }}
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
     <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
+    <svg id="close-svg">{{ $iconClose.Content|safeHTML }}</svg>
   </div>
   {{ partial "header/ld-json.html" . }}
 </body>
