@@ -27,6 +27,7 @@ module.exports = {
       },
       colors: {
         yellow: "#ffcb05",
+        darkyellow: "#cda52d",
         darkblue: "#22416e",
         caption: "#5d5d5d",
       },
