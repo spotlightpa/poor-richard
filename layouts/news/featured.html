@@ -84,9 +84,9 @@
     class="font-sans bg-black text-white uppercase"
     data-ga-category="footer"
   >
-      <nav class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 p-12 max-w-screen-xl">
+      <nav class="flex flex-col space-y-6 md:flex-row md:space-y-0 p-12 max-w-screen-xl">
         <div
-          class="flex-grow lg:order-last"
+          class="-mt-4 flex-grow md:order-last"
         >
           <a
             href="/"
@@ -102,7 +102,7 @@
               <use xlink:href="#banner-svg"></use>
             </svg>
           </a>
-          <p class="mt-3">
+          <p class="mt-2">
             &copy; {{ now.Format "2006" }} <br>
             Spotlight PA <br>
             225 Market St <br>
@@ -110,54 +110,29 @@
             Harrisburg PA 17101
           </p>
         </div>
-        <div
-          class="flex-1"
-          data-ga-category="spotlightpa"
-        >
-          <h3 class="font-bold">Spotlight PA</h3>
-          <ul class="mt-3">
-            {{ range .Site.Menus.footer }}
-              <li>
-                <a
-                  class="hover:text-yellow transition-colors duration-500"
-                  href="{{ .URL }}"
-                >{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div
-          class="flex-1"
-          data-ga-category="about"
-        >
-          <h3 class="font-bold">About</h3>
-          <ul class="mt-3">
-            {{ range .Site.Menus.about }}
-              <li>
-                <a
-                  class="hover:text-yellow transition-colors duration-500"
-                  href="{{ .URL }}"
-                >{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div
-          class="flex-1"
-          data-ga-category="follow"
-        >
-          <h3 class="font-bold">Follow Us</h3>
-          <ul class="mt-3">
-            {{ range .Site.Menus.social }}
-              <li>
-                <a
-                  class="hover:text-yellow transition-colors duration-500"
-                  href="{{ .URL }}"
-                >{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
+        {{ block "featured-footer" $context }}
+          <div
+            class="flex-1"
+            data-ga-category="{{ .category }}"
+          >
+            <h3 class="font-bold">{{ .name }}</h3>
+            <ul class="mt-2">
+              {{ range .menu }}
+                <li>
+                  <a
+                    class="hover:text-yellow transition-colors duration-500"
+                    href="{{ .URL }}"
+                  >{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
+        {{ template "featured-footer" $context }}
+        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
+        {{ template "featured-footer" $context }}
       </nav>
   </footer>
 
