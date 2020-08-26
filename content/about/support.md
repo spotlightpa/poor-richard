@@ -12,7 +12,7 @@ All money for Spotlight PA is donated to the nonprofit [Lenfest Institute for Jo
 
 The Philadelphia Inquirer provides in-kind fiscal, legal and administrative support for Spotlight PA employees. Additionally, PennLive/The Patriot-News and TribLIVE/Pittsburgh Tribune-Review each provides a reporter including salary and benefits.
 
-To support Spotlight PA, [make a donation now](https://www.spotlightpa.org/donate).
+To support Spotlight PA, [make a donation now](/donate/).
 
 {{<supporters-logos>}}
 
@@ -32,7 +32,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Myesha Alston
 * Gail Alu
 * E. Anderson
-* Stephen J. Anderson 
+* Stephen J. Anderson
 * Helen Andrews
 * Tom Anfuso
 * Oscar Armas-Luy
@@ -65,7 +65,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Ron Beitler
 * Jan Beitzer
 * Debra Bell
-* Melia Belonus 
+* Melia Belonus
 * Sigal Ben
 * Anthony Benes
 * Stanley Berard
@@ -93,7 +93,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Robert Boyce
 * Nancy Boyd
 * Jeffrey L. Braff
-* Colleen Brenneman 
+* Colleen Brenneman
 * Merrill & Nancy Brenner
 * John Bricker
 * Joseph Brogan
@@ -125,7 +125,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Bruce Carr
 * Richard Carroll
 * J. Carson
-* Linda L. Casale 
+* Linda L. Casale
 * Ashleigh Graf Casassa
 * Ben & Laura Cattell Noll
 * Edward Cawley
@@ -133,12 +133,12 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Marguerite Chandler
 * Bonnie Chang
 * Kathleen Charlton
-* Linda & Roy Christman 
+* Linda & Roy Christman
 * Patrick Christmas
 * Frank Cicchiello
 * Edward Claghorn
 * Jordan Clark
-* Rebecca Clark 
+* Rebecca Clark
 * Dr. Dane S. Claussen
 * Francisco Cleaves
 * Constance B. Clery
@@ -152,7 +152,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Danny Condra
 * P. Condron
 * Robin Connelly
-* John Conrad Jr. 
+* John Conrad Jr.
 * John & Joy Burt Conti
 * Donna Thiel Cook
 * Ira Cooperman
@@ -206,10 +206,10 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * James Donahue
 * Diana Donaldson
 * Diane Donato
-* R. Donegan  
+* R. Donegan
 * Michael Donofrio
 * Richard Donofry
-* Paul Downs 
+* Paul Downs
 * Earl Drumheiser
 * Franklin Duddy
 * Stephen Duncan
@@ -239,7 +239,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Becky Everett
 * Kathleen Eves
 * Thomas Eveslage
-* Thomas & Sonja Eveslage 
+* Thomas & Sonja Eveslage
 * Aaron Fafarman
 * C. Fairchild
 * James Falls
@@ -288,7 +288,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
-* Robert L. Gatski, Jr. 
+* Robert L. Gatski, Jr.
 * Edmond Guadelli
 * John Gaynard
 * James Geary
@@ -350,7 +350,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Dan Hartzell
 * Catherine Hastings
 * Valerie Hayes
-* Cam & Bob Hays 
+* Cam & Bob Hays
 * David He
 * T. Hechler
 * Joseph Heeney
@@ -433,7 +433,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Douglas Kingsbury
 * Christine Kinsey
 * Dorothy Kint
-* Marcia Kirby 
+* Marcia Kirby
 * Frank Kirkwood
 * ML Klem
 * Anne & Jack Kline
@@ -471,7 +471,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Marianne Larkin
 * Dale Larrimore
 * Janet L. Larson
-* Tim & Mary Larson 
+* Tim & Mary Larson
 * Martin Laufe
 * B. Lauridsen & G. Harke
 * Lora Lavin
@@ -545,7 +545,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Rosalyn Metzger
 * Albert R. Miller
 * Larry Miller
-* Michael Miller Jr. 
+* Michael Miller Jr.
 * Myles Miller
 * Neil Millheim
 * Ed Mitchell
@@ -575,7 +575,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Gary Muzzelo
 * Holly Myers
 * Jonathan Naser
-* Chris Nawrocki 
+* Chris Nawrocki
 * Kenneth R. Nealon
 * Steve Neas
 * James Neff
@@ -604,7 +604,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * J. Parsons
 * Harvey Partica
 * Meaghan, Alok & Sachin Pattani
-* Jeanne Patterson 
+* Jeanne Patterson
 * Jan Paul
 * Lydia Pecker
 * Mark Pecker
@@ -688,7 +688,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Laurie Scheid
 * Gary & Dode Scheimer
 * Leslie Schlessinger
-* Paul Schmitt 
+* Paul Schmitt
 * Peter Schnabel
 * Jennifer Schnore
 * Carl Schoenberg & Susan York
@@ -697,7 +697,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Susan Schrand
 * Jennifer Schwartz
 * Barbara Scott
-* Robert & Mary Ellen Scott 
+* Robert & Mary Ellen Scott
 * Anthony J. Seigafuse
 * Paul & Kathleen Selbst
 * Pat Sellers
@@ -772,7 +772,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Ardith Talbott
 * John Tampanello
 * Barbara J. Taylor
-* Randy & Marcie Taylor 
+* Randy & Marcie Taylor
 * Paul Teese
 * Jocelyn Tenney
 * Freda Tepfer
@@ -806,7 +806,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Russ Walker
 * John Wall
 * M. Wallace
-* T. Walmer 
+* T. Walmer
 * Frank D. Walsh
 * Hannah Walsh
 * Robin Walter
@@ -848,13 +848,13 @@ Laura and John Arnold <br> Jennifer Bertetto <br> The Erie Community Foundation 
 * Dr. Bob Yapsuga
 * Tracy Yeomans
 * Berwood Yost
-* Donald B. Young Jr. 
+* Donald B. Young Jr.
 * Jerry Young
 * Karen Young
 * Rick Young
 * Sherley Young
 * Deborah Zateeny
-* Leonard Zawistowski Jr. 
+* Leonard Zawistowski Jr.
 * Susan Zeelander
 * Matt Zencey
 * Paul Zieger
