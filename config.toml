@@ -84,7 +84,7 @@ notAlternative = true
     ]
     description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
     headers = ["X-Frame-Options: DENY"]
-    investigator-action = "https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&id=0466df5ab5"
+    investigator-action = "https://lenfestinstitute.us15.list-manage.com/subscribe/post?u=77370ff1d001f9bb991fed9e7&id=6c1fbeb603"
     papost-action = "https://lenfestinstitute.us15.list-manage.com/subscribe/post?u=77370ff1d001f9bb991fed9e7&id=6c1fbeb603"
 
 [[module.mounts]]
