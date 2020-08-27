@@ -249,6 +249,17 @@ collections:
     editor:
       preview: false
     fields: *page-fields
+  - label: Newsletters
+    name: newsletters
+    folder: content/newsletters
+    format: toml-frontmatter
+    extension: md
+    create: false
+    slug: "{{url}}"
+    preview_path: "/newsletters/{{slug}}/"
+    editor:
+      preview: false
+    fields: *page-fields
   - label: "Press Releases"
     label_singular: "Press Release"
     name: press-releases
