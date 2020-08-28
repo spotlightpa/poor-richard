@@ -70,36 +70,3 @@
     </div>
   </form>
 </section>
-
-{{ $newsletterArchiveURL := "/api/newsletter.json" }}
-{{ if site.IsServer }}
-  {{ $newsletterArchiveURL = "http://localhost:12345/api/newsletter.json" }}
-{{ end }}
-
-<section
-  class="mt-5"
-  x-cloak
-  x-data="spl.feed()"
-  x-init="load()"
-  data-feed-url="{{ $newsletterArchiveURL }}"
-  data-ga-category="inline:newsletters:archive"
->
-  <h2
-    class="title is-3"
-    x-show="hasLoaded"
-  >Archives</h2>
-
-  <ul>
-    <template x-for="item of items">
-      <li>
-        <span x-text="formatDate(item.date_published)"></span>
-        &nbsp;
-        <a
-          @click="analytics($event)"
-          :href="item.url"
-          x-text="item.title"
-        ></a>
-      </li>
-    </template>
-  </ul>
-</section>

@@ -9,3 +9,5 @@ Sign up for **The Investigator**, Spotlight PA's free weekly newsletter with exc
 **The Investigator** is delivered straight to your inbox every Thursday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts, or check your spam folder and mark it as "not spam."
 
 {{<newsletter-form>}}
+
+{{<newsletter-investigator-archive>}}
