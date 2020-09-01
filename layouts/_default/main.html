@@ -151,5 +151,7 @@
     </div>
   </article>
 
-  {{ partial "component/related-articles.html" . }}
+  {{ $news := .Site.GetPage "/news/_index.md" }}
+  {{ $related := $news.RegularPages.Related . | first 3 }}
+  {{ partial "component/related-articles.html" $related }}
 </section>

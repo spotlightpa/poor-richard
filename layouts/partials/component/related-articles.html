@@ -1,6 +1,4 @@
-{{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $related := $news.RegularPages.Related . | first 3 }}
-{{ with $related }}
+{{ with $related := . }}
   <nav
     class="columns is-centered mt-5"
     data-ga-category="related-content"
