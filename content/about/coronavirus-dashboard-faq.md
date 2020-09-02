@@ -112,8 +112,8 @@ The positivity rate is important for two reasons. The first is that it can tell 
 
 But secondly, the positivity rate can help us understand if an increase in positivity COVID-19 cases is due to expanded testing or rising infections. Specifically, the university notes:
 
-If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
-If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period
+- If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
+- If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period
 
 ### How do you calculate the positivity rate?
 
