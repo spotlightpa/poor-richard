@@ -63,7 +63,7 @@ McIlhinney — then the chairman of the Senate Law and Justice Committee, which 
 
 “After I made the changes, I went and pursued some of the larger national corporations that we were dealing with… The wine people, the liquor people, the beer guys,” he said. “We were in pursuit of high-end donors.”
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Asked if he thought it was a conflict to change the law and then fundraise off of it, he said, “That’s the million-dollar question.”
 

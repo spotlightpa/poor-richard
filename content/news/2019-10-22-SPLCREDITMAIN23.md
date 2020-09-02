@@ -106,7 +106,7 @@ Reporters for The Caucus and [Spotlight PA](https://www.spotlightpa.org/) put th
 
 <div data-analytics-viewport="autotune" data-analytics-label="dark-spending-top-20" id="dark-spending-top-20__graphic" data-iframe-fallback="https://media.inquirer.com/storage/inquirer/ai2html/dark-spending-top-20/fallback-mobile.jpg" data-iframe-fallback-width="350" data-iframe-fallback-height="814.001071236929" data-iframe="https://media.inquirer.com/storage/inquirer/ai2html/dark-spending-top-20/index.html" data-iframe-height="814.001071236929" data-iframe-resizable></div>
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Allowing lawmakers to shield their spending “is a huge impediment to transparency,” said Craig Holman, a lobbyist for the Washington D.C.-based reform group Public Citizen, adding: “And the greatest damage is that it discourages the public and the press from seeing how campaign funds are spent. It is a very serious obstacle to public information.”
 

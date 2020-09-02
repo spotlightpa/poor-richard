@@ -25,7 +25,7 @@ Though the governor’s sixth proposed budget reflected his long held priorities
 
 Wolf’s plan, for instance, would not hike either the state’s sales or income taxes — the two largest sources of revenue — but instead would seek to raise new dollars through targeted fees on municipalities to fund, among other items, the State Police budget.
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 The governor also renewed his call to gradually raise Pennsylvania’s minimum wage to $15 an hour, another proposal that has been met with resistance by some Republican lawmakers.
 
