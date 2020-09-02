@@ -3,13 +3,13 @@
   x-cloak
   x-data="spl.feed()"
   x-init="load()"
-  data-feed-url="https://files.data.spotlightpa.org/feeds/newsletters/investigator.json"
-  data-ga-category="inline:newsletters:investigator:archive"
+  data-feed-url="https://files.data.spotlightpa.org/feeds/newsletters/papost.json"
+  data-ga-category="inline:newsletters:papost:archive"
 >
   <h2
     class="title is-3"
     x-show="hasLoaded"
-  >The Investigator Archives</h2>
+  >PA Post Archives</h2>
 
   <ul>
     <template x-for="item of items">
