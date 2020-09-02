@@ -1,7 +1,7 @@
 import fetchJSON from "../utils/fetch-json.js";
 import { reportClick as analytics } from "../utils/google-analytics.js";
 
-export default () => {
+export default function feed() {
   return {
     analytics,
     feedURL: "",
@@ -47,4 +47,4 @@ export default () => {
       return this.fetchedObj.items;
     },
   };
-};
+}
