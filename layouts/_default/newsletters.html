@@ -6,17 +6,12 @@
 <!-- noop -->
 {{ end }}
 
+{{define "modal" }}
+<!-- noop -->
+{{ end }}
+
 {{ define "main" }}
-  {{ $date := now }}
-  {{ $showDate := false }}
-  {{ $sixMonthsAgo := now.AddDate 0 -6 0 }}
-  {{ range first 1 .Pages }}
-    {{ $date = .Date }}
-    {{ $showDate = $date.Before $sixMonthsAgo | and (not .Date.IsZero) }}
-  {{ end }}
-
   {{ $subtitle := .Param "subhed" | default .Description }}
-
   {{ $pages := where .Pages "Type" "newsletter" }}
   <section
     class="section columns is-centered is-multiline"
