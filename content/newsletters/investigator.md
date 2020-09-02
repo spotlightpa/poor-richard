@@ -4,6 +4,7 @@ image-size = "hidden"
 title = "Sign up for The Investigator"
 linktitle = "The Investigator"
 description = "Sign up for The Investigator, a free weekly newsletter from Spotlight PA"
+blurb = "Get a free weekly newsletter every Thursday with exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol and a roundup of the best journalism from elsewhere across Pennsylvania."
 type = "newsletter"
 modal-exclude = true
 +++
