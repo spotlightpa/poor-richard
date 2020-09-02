@@ -7,6 +7,7 @@ description = "Sign up for The Investigator, a free weekly newsletter from Spotl
 blurb = "Get a free weekly newsletter every Thursday with exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol and a roundup of the best journalism from elsewhere across Pennsylvania."
 type = "newsletter"
 modal-exclude = true
+weight = 1
 +++
 Sign up for **The Investigator**, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol and a roundup of the best journalism from elsewhere across Pennsylvania.
 

@@ -7,6 +7,7 @@ description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
 blurb = "Get a free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good."
 type = "newsletter"
 modal-exclude = true
+weight = 2
 +++
 
 Sign up for **PA Post**, Spotlight PA's free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good.

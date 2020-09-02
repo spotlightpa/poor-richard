@@ -18,10 +18,9 @@
   {{ $subtitle := .Param "subhed" | default .Description }}
 
   {{ $pages := where .Pages "Type" "newsletter" }}
-  {{ $pages = $pages.ByTitle }}
   <section
     class="section columns is-centered is-multiline"
-    data-ga-category="list"
+    data-ga-category="all-newsletters"
   >
     <div class="column is-three-fifths">
       <header class="mb-5">
@@ -47,11 +46,15 @@
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
                 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-                <article class="">
+                {{ $slug := .File.ContentBaseName }}
+                <article
+                  x-data="{ showForm: false }"
+                >
                   <a
                     class="has-text-grey-dark hover-underline"
                     href="{{ $params.link }}"
-                    data-ga-category="hed"
+                    @click.prevent="showForm = !showForm"
+                    :data-ga-action="'newsletters:{{ $slug }}:show'"
                   >
                     {{ $name := .Page.Param "image" }}
                     {{ $credit := .Page.Param "image-credit" }}
@@ -67,9 +70,11 @@
                       {{ .LinkTitle }}
                     </h2>
                     <p>
-                      {{ .Param "blurb" | default "" }}
+                      {{ $params.blurb }}
                     </p>
                   </a>
+                  {{ $form := printf "newsletter/%s-landing-form.html" $slug }}
+                  {{ partial $form . }}
                 </article>
               </div>
             </div>

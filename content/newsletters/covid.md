@@ -7,6 +7,7 @@ description = "Sign up for COVID-19 Alerts, Spotlight PA's free weekly update wi
 blurb = "Get a free weekly update every Monday with the latest coronavirus data localized to your county from Spotlight PA"
 type = "newsletter"
 modal-exclude = true
+weight = 3
 +++
 
 Sign up for **COVID-19 Alerts**, Spotlight PA's free weekly update with the latest coronavirus data localized to your county.
