@@ -1,6 +1,7 @@
 <form
   x-show="showForm"
   x-cloak
+  class="mt-4"
   action='{{ .Param "papost-action" }}'
   method="post"
   target="_top"
@@ -14,7 +15,7 @@
   {{ partial "newsletter/papost-hidden.html" . }}
   <div class="field">
     <label
-      class="label mt-4"
+      class="label"
       for="papost-dropdown-email"
     >Email</label>
     <p class="control has-icons-right is-expanded">
@@ -36,7 +37,7 @@
   </div>
   <div class="field">
     <label
-      class="label mt-4"
+      class="label"
       for="papost-dropdown-fname"
     >First name</label>
     <p class="control has-icons-right is-expanded">
@@ -58,12 +59,12 @@
   </div>
   <div class="field">
     <label
-      class="label mt-4"
-      for="investigator-dropdown-lname"
+      class="label"
+      for="papost-dropdown-lname"
     >Last name</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id="investigator-dropdown-lname"
+        id="papost-dropdown-lname"
         class="input"
         type="text"
         name="LNAME"
