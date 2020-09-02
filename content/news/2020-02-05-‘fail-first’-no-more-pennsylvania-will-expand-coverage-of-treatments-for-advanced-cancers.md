@@ -31,7 +31,7 @@ The bill would require health insurance policies to cover drugs prescribed to pa
 
 “When you sit in a hospital for two and a half years, you get a lot of opportunities to talk to patients, families, and doctors,” Benninghoff said. “Physicians go to school to practice medicine and get people well — they don’t go to deal with legislative policies or insurance companies.”
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Currently, oncologists shrink tumors and target cancerous blood cells with a cocktail of drugs, surgeries, or radiation treatments following protocols — schedules of when and how much of a medicine to administer — that are approved by a health insurance company’s reimbursement plan.
 

@@ -25,7 +25,7 @@ Although state law requires dogs more than 12 weeks old to be licensed, only sli
 
 What’s more, the license fees for dogs and kennels have not been raised in more than 20 years. Currently, it costs $6.50 to register a canine that is spayed or neutered, and $8.50 for one that is not.
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 To cut costs, the bureau has reduced the number of wardens on staff, its director, Kristen Donmoyer, said Thursday. Still, the office finds itself in a dire financial situation ,exacerbated by the diversion of funds to the judicial branch.
 

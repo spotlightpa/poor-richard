@@ -53,7 +53,7 @@ Brown declined a request for an interview, but said in response to emailed quest
 
 “The election prospects of a senator often depend upon the senator’s success as a legislator, which is in part a function of the effective work of the senator’s staff,” she wrote.
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Barry Kauffman, who led Common Cause Pennsylvania for decades before retiring in 2016, said the political goodwill argument “generally doesn’t cut the mustard.”
 

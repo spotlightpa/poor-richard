@@ -51,7 +51,7 @@ The head of the Republican-controlled Senate, Joe Scarnati, led all lawmakers in
 
 “This language had several authors,” Crompton said. “The primary author wasn’t Sen. Scarnati.”
 
-{{<newsletter-inline>}}
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 Scarnati’s campaign took six months to provide records requested as part of the investigation, far more than the 30 days it’s supposed to take under current law. Also, the campaign attempted to charge the news organizations more than $1,800 to reimburse the campaign’s accountant for the time she spent assembling the records.
 
