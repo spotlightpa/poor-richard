@@ -1,0 +1,91 @@
+<form
+  x-show="showForm"
+  x-cloak
+  action='{{ .Param "papost-action" }}'
+  method="post"
+  target="_top"
+  data-ga-form="newsletters:papost"
+  autocomplete="on"
+  x-transition:enter="fade-enter-active"
+  x-transition:enter-start="fade-enter"
+  x-transition:leave="fade-enter-active"
+  x-transition:leave-end="fade-enter"
+>
+  {{ partial "newsletter/papost-hidden.html" . }}
+  <div class="field">
+    <label
+      class="label mt-4"
+      for="papost-dropdown-email"
+    >Email</label>
+    <p class="control has-icons-right is-expanded">
+      <input
+        id="papost-dropdown-email"
+        class="input"
+        name="EMAIL"
+        type="email"
+        placeholder=""
+        autocomplete="email"
+        required
+      >
+      <span class="icon is-right validator-icon">
+        <svg>
+          <use xlink:href="#check-svg"></use>
+        </svg>
+      </span>
+    </p>
+  </div>
+  <div class="field">
+    <label
+      class="label mt-4"
+      for="papost-dropdown-fname"
+    >First name</label>
+    <p class="control has-icons-right is-expanded">
+      <input
+        id="papost-dropdown-fname"
+        class="input"
+        type="text"
+        name="FNAME"
+        placeholder=""
+        autocomplete="given-name"
+        required
+      >
+      <span class="icon is-right validator-icon">
+        <svg>
+          <use xlink:href="#check-svg"></use>
+        </svg>
+      </span>
+    </p>
+  </div>
+  <div class="field">
+    <label
+      class="label mt-4"
+      for="investigator-dropdown-lname"
+    >Last name</label>
+    <p class="control has-icons-right is-expanded">
+      <input
+        id="investigator-dropdown-lname"
+        class="input"
+        type="text"
+        name="LNAME"
+        placeholder=""
+        autocomplete="family-name"
+        required
+      >
+      <span class="icon is-right validator-icon">
+        <svg>
+          <use xlink:href="#check-svg"></use>
+        </svg>
+      </span>
+    </p>
+  </div>
+  <div class="field">
+    <p class="control">
+      <button
+        type="submit"
+        class="button is-medium is-danger has-text-weight-semibold is-fullwidth"
+      >
+        Sign Up
+      </button>
+    </p>
+  </div>
+</form>
