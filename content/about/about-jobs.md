@@ -75,4 +75,4 @@ We are an equal opportunity employer and all qualified applicants will receive c
 
 [](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/77)[](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/79)Sign up to receive alerts so you don't miss new job postings.
 
-{{<newsletter-jobs-form>}}
+{{<newsletter/jobs-form>}}
