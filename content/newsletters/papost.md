@@ -1,7 +1,11 @@
 +++
+image = "2020/09/01fmxb8ft361xfaz.png"
+image-size = "hidden"
 title = "Sign up for PA Post"
+linktitle = "PA Post"
 description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
-type = "root"
+blurb = "Get a free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good."
+type = "newsletter"
 modal-exclude = true
 +++
 

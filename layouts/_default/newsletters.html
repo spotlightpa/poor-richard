@@ -1,0 +1,81 @@
+{{ define "promo" }}
+<!-- noop -->
+{{ end }}
+
+{{ define "banner" }}
+<!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+  {{ $date := now }}
+  {{ $showDate := false }}
+  {{ $sixMonthsAgo := now.AddDate 0 -6 0 }}
+  {{ range first 1 .Pages }}
+    {{ $date = .Date }}
+    {{ $showDate = $date.Before $sixMonthsAgo | and (not .Date.IsZero) }}
+  {{ end }}
+
+  {{ $subtitle := .Param "subhed" | default .Description }}
+
+  {{ $pages := where .Pages "Type" "newsletter" }}
+  {{ $pages = $pages.ByTitle }}
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-category="list"
+  >
+    <div class="column is-three-fifths">
+      <header class="mb-5">
+        <h1 class="title has-text-centered is-size-2 is-spaced">
+          {{ .Title }}
+        </h1>
+        <h2 class="subtitle has-text-centered is-size-3 mb-6">
+          {{ $subtitle }}
+        </h2>
+
+        {{ partial "component/hero-image-block.html" . }}
+      </header>
+      {{ with .Content }}
+        <div class="content mb-6">
+          {{ . }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="column is-four-fifths mb-6">
+      <nav class="tile is-ancestor is-vertical">
+        <div class="tile is-wrapped">
+          {{ range $page := $pages }}
+            <div class="tile is-parent is-4 has-margin-top-negative">
+              <div class="tile is-child">
+                {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+                <article class="">
+                  <a
+                    class="has-text-grey-dark hover-underline"
+                    href="{{ $params.link }}"
+                    data-ga-category="hed"
+                  >
+                    {{ $name := .Page.Param "image" }}
+                    {{ $credit := .Page.Param "image-credit" }}
+                    {{ $description := .Page.Param "image-description" }}
+                    {{ $imgOpts := dict "filename" $name }}
+                    {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
+                    {{ $imgOpts = dict "description" $description | merge $imgOpts }}
+                    {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
+                    {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
+                    {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
+                    {{ partial "component/image-block.html" $imgOpts }}
+                    <h2 class="is-size-5 is-size-4-widescreen mt-2 has-text-weight-semibold">
+                      {{ .LinkTitle }}
+                    </h2>
+                    <p>
+                      {{ .Param "blurb" | default "" }}
+                    </p>
+                  </a>
+                </article>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </nav>
+    </div>
+  </section>
+{{ end }}
