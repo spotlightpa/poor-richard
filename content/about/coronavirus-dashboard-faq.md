@@ -104,6 +104,45 @@ As described above, there are a number of factors that can influence how many ne
 
 The reason for the seasonality in COVID-19 data is widely attributed to irregular data reporting: Officials often don’t report data over the weekend and then catch up during the working week. To provide a clearer understanding of the overall trend, we overlay some charts with a line representing the 7-day moving average of the data. A number of other news outlets, including the New York Times, have taken a similar approach to visualizing the data.
 
+### What is the ‘positivity rate’ and why is it important?
+
+A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview), the positivity rate tells us: “how much of the disease are we finding through tests?”
+
+The positivity rate is important for two reasons. The first is that it can tell us if a state is doing enough testing. The World Health Organization recommended in May that countries have a positivity rate less than five percent. If a state has a positivity rate above five percent that may indicate it’s only testing the sickest people and not doing enough to test people with milder cases.
+
+But secondly, the positivity rate can help us understand if an increase in positivity COVID-19 cases is due to expanded testing or rising infections. Specifically, the university notes:
+
+If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
+If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period
+
+### How do you calculate the positivity rate?
+
+According to its [website](https://coronavirus.jhu.edu/testing/tracker/overview), John Hopkins says that it believes the best way to calculate the positivity rate would be as follows:
+
+Positivity rate = 7 day moving average of people who have tested positive / 7 day moving average of all people who have been tested
+
+However, because many states don’t directly publish data on the number of people who have tested positive, that isn’t possible in many cases. The university uses a slightly different formula in its own visualizations \[LINK: https://coronavirus.jhu.edu/testing/tracker/overview]. At time of writing, Sept. 2, its formula was:
+
+> Positivity rate = 7 day moving average of positive cases  / (7 day moving average of positive cases + 7 day moving average of negative tests)
+
+The key difference is that John Hopkins uses ‘positive cases’ in both its numerator and denominator rather than ‘people who have tested positive’. Although those data points might sound similar, they’re not: most states tally the number of ‘positive cases’ by adding together the people who have had a positive PCR test with the number of people who are considered ‘probable’ cases because of other factors. Scroll up for more information about ‘probable cases’.
+
+In our dashboard, The Inquirer and Spotlight PA have used a very similar formula to John Hopkins. The only difference is that we have tried to exclude ‘probable cases’ in certain cases. For Pennsylvania, the positivity rate is calculated as follows:
+
+> Positivity rate = 7 day moving average of people who have tested positive by a PCR test / (7 day moving average of people who have a positive PCR test + 7 day moving average of people who have a negative PCR test)
+
+Due to varying data available, our calculation is slightly different for the other states in our dashboard. For these states, our denominator is essentially the same as John Hopkins, meaning it may include probable cases:
+
+> Positivity rate = 7 day moving average of people who have a positive PCR test / (7 day moving average of positive cases + 7 day moving average of people who have a negative PCR test)
+
+The result is that if you compare our positivity rates to the rates calculated by John Hopkins, you may see slight differences. We are constantly reviewing our calculation and may update our formula based on expert advice and as new data becomes available.
+
+### Why is your positivity rate different from the Pa. Department of Health?
+
+The Pa. Department of Health provides its own weekly calculation of Pennsylvania’s positivity rate on its [website](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx). While there are slight differences between our positivity rate and John Hopkins’ positivity rate, savvy readers might notice a much larger difference between our rate for Pennsylvania and the rate calculated by the department. 
+
+According to the department’s documentation, its calculation includes people who have been retested. As of Sept 2, it noted: “Since many people who are routinely retested as part of universal testing programs repeatedly test negative, the percent positivity is lower than what would be calculated if one used the number of new cases and the number of people tested for the the first time in the most recent 7-day period”.
+
 ### How do you determine the “14-day trend” for counties?
 
 For each state/region, the dashboard provides a table of county-level data including a column labelled “14-day trend.” This provides a description of the trend of new daily cases over the past 14 days as either “rising,” “falling,” or “unclear.”
