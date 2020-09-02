@@ -39,7 +39,7 @@ But, in a dramatic turnaround, tenants like Kiefer will now be safe from evictio
 
 That afternoon, the Centers for Disease Control and Prevention announced an <a href="https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf">order</a> to ban most evictions nationwide through the end of the year, arguing it was necessary to slow the spread of the virus. The order caught housing advocates and landlord groups alike by surprise.
 
-The new eviction ban will prevent homelessness, help state and local governments implement stay-at-home orders, and avoid people who have been displaced having to move into crowded shelters where they would be more likely to get sick, the agency said.
+The new eviction ban will prevent homelessness, help state and local governments implement stay-at-home orders, and avoid sending people who have been displaced to crowded shelters where they would be more likely to get sick, the agency said.
 
 Much remains uncertain about how the new eviction ban will work in practice — and whether it will survive legal challenges.
 
@@ -77,9 +77,9 @@ Under the federal order, late fees and interest can still accrue, which could le
 
 “This is a really positive development but the problem still remains that if people can’t pay their rent, and they’re not paying it, that bill is going to come at some point,” said Phyllis Chamberlain, executive director of the Housing Alliance of Pennsylvania.
 
-Lawmakers are weighing changes to Pennsylvania’s troubled rental assistance program, in part because many landlords have refused to participate, citing a $750 cap on the amount of assistance they can receive and a requirement that they waive their right to collect any remaining rent, a Spotlight PA <a href="https://www.spotlightpa.org/news/2020/08/pa-evictions-ban-rental-assistance-program-coronavirus-flaws/">review</a> found. Onerous paperwork requirements have also slowed the pace of approving applications in some counties.
+Lawmakers are weighing changes to Pennsylvania’s troubled rental assistance program, in part because many landlords have refused to participate, citing a $750 cap on the amount of assistance they can receive and a requirement that they waive their right to collect any remaining rent, <a href="https://www.spotlightpa.org/news/2020/08/pa-evictions-ban-rental-assistance-program-coronavirus-flaws/" target=_blank>a Spotlight PA review found</a>. Onerous paperwork requirements have also slowed the pace of approving applications in some counties.
 
-A spokesperson for Wolf said the governor believes the state legislature should both fix the rental assistance program and reinstate the state’s eviction ban, which went further than the new federal order by preventing foreclosures.
+A spokesperson for Wolf said the governor believes the state legislature should <a href="https://www.spotlightpa.org/news/2020/09/pa-eviction-moratorium-tom-wolf-republican-lawmakers/" target=_blank>both fix the rental assistance program and reinstate the state’s eviction ban</a>, which went further than the new federal order by preventing foreclosures.
 
 “The eviction moratorium is important, but it’s temporary,” Chamberlain said. “Rental assistance is a longer-term solution that actually addresses the root problem.”
 
