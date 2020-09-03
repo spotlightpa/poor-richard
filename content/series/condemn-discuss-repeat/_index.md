@@ -6,4 +6,5 @@ kicker = "Condemn, Discuss, Repeat"
 title = "Condemn, Discuss, Repeat"
 linktitle = "At best, many students of color said they feel unwelcome and ill-supported. At worst, they feel unsafe and targeted."
 description = "At best, many students of color said they feel unwelcome and ill-supported. At worst, they feel unsafe and targeted."
+link = "/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/"
 +++
