@@ -6,4 +6,5 @@ title = "'Highway Stop-and-Frisk'"
 linktitle = "How Pennsylvania state troopers conduct illegal traffic searches."
 description = "How Pennsylvania state troopers conduct illegal traffic searches."
 link = "/news/2020/08/pa-state-police-troopers-highway-stop-and-frisk/"
+weight = 6
 +++

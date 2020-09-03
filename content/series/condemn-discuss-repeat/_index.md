@@ -7,4 +7,5 @@ title = "Condemn, Discuss, Repeat"
 linktitle = "Students of color say Pennsylvania's higher education system follows a tired formula to respond to racism instead of enacting the support they need."
 description = "Students of color say Pennsylvania's higher education system follows a tired formula to respond to racism instead of enacting the support they need."
 link = "/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/"
+weight = 4
 +++
