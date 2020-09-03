@@ -4,4 +4,6 @@ image-description = "Ada Bailor, a student at Indiana University of Pennsylvania
 image-credit = "Sean Simmers / PennLive for Spotlight PA"
 kicker = "Condemn, Discuss, Repeat"
 title = "Condemn, Discuss, Repeat"
+linktitle = "At best, many students of color said they feel unwelcome and ill-supported. At worst, they feel unsafe and targeted."
+description = "At best, many students of color said they feel unwelcome and ill-supported. At worst, they feel unsafe and targeted."
 +++
