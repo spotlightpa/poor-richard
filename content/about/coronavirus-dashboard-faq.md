@@ -121,11 +121,11 @@ According to its [website](https://coronavirus.jhu.edu/testing/tracker/overview)
 
 Positivity rate = 7 day moving average of people who have tested positive / 7 day moving average of all people who have been tested
 
-However, because many states don’t directly publish data on the number of people who have tested positive, that isn’t possible in many cases. The university uses a slightly different formula in its own visualizations \[LINK: https://coronavirus.jhu.edu/testing/tracker/overview]. At time of writing, Sept. 2, its formula was:
+However, because many states don’t directly publish data on the number of people who have tested positive, that isn’t possible in many cases. The university uses a slightly different formula in its own visualizations \[LINK: https://coronavirus.jhu.edu/testing/tracker/overview] in order to make consistent comparisons between states. At time of writing, Sept. 2, its formula was:
 
 > Positivity rate = 7 day moving average of positive cases  / (7 day moving average of positive cases + 7 day moving average of negative tests)
 
-The key difference is that John Hopkins uses ‘positive cases’ in both its numerator and denominator rather than ‘people who have tested positive’. Although those data points might sound similar, they’re not: most states tally the number of ‘positive cases’ by adding together the people who have had a positive PCR test with the number of people who are considered ‘probable’ cases because of other factors. Scroll up for more information about ‘probable cases’.
+The key difference is that John Hopkins uses ‘positive cases’ in both its numerator and denominator rather than ‘people who have tested positive’. Although those data points sound similar, they’re slightly different: most states tally the number of ‘positive cases’ by adding together the people who have had a positive PCR test with the number of people who are considered ‘probable’ cases because of other factors. Scroll up for more information about ‘probable cases’.
 
 In our dashboard, The Inquirer and Spotlight PA have used a very similar formula to John Hopkins. The only difference is that we have tried to exclude ‘probable cases’ in certain cases. For Pennsylvania, the positivity rate is calculated as follows:
 
@@ -137,7 +137,7 @@ Due to varying data available, our calculation is slightly different for the oth
 
 The result is that if you compare our positivity rates to the rates calculated by John Hopkins, you may see slight differences. We are constantly reviewing our calculation and may update our formula based on expert advice and as new data becomes available.
 
-### Why is your positivity rate different from the Pa. Department of Health?
+### Why is your positivity rate for Pennsylvania different from the Pa. Department of Health?
 
 The Pa. Department of Health provides its own weekly calculation of Pennsylvania’s positivity rate on its [website](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx). While there are slight differences between our positivity rate and John Hopkins’ positivity rate, savvy readers might notice a much larger difference between our rate for Pennsylvania and the rate calculated by the department. 
 
