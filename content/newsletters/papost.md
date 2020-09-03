@@ -1,13 +1,14 @@
 +++
 image = "2020/09/01fmxb8ft361xfaz.png"
 image-size = "hidden"
+published = 2020-09-03T01:15:52.230Z
 title = "Sign up for PA Post"
-linktitle = "PA Post"
 description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
-blurb = "Get a free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good."
-type = "newsletter"
-modal-exclude = true
+blurb = "Every weekday, you'll get a round up of the top news from across Pennsylvania, plus other good reads, helpful tips, and some fun, too, to keep you informed and feeling good."
+linktitle = "PA Post"
 weight = 2
+modal-exclude = true
+type = "newsletter"
 +++
 
 Sign up for **PA Post**, Spotlight PA's free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good.
