@@ -119,7 +119,7 @@ But secondly, the positivity rate can help us understand if an increase in posit
 
 According to its [website](https://coronavirus.jhu.edu/testing/tracker/overview), John Hopkins says that it believes the best way to calculate the positivity rate would be as follows:
 
-Positivity rate = 7 day moving average of people who have tested positive / 7 day moving average of all people who have been tested
+> Positivity rate = 7 day moving average of people who have tested positive / 7 day moving average of all people who have been tested
 
 However, because many states don’t directly publish data on the number of people who have tested positive, that isn’t possible in many cases. The university uses a slightly different formula in its own visualizations \[LINK: https://coronavirus.jhu.edu/testing/tracker/overview] in order to make consistent comparisons between states. At time of writing, Sept. 2, its formula was:
 
