@@ -1,13 +1,14 @@
 +++
 image = "2020/09/01fmxb5emmx7wa78.png"
 image-size = "hidden"
+published = 2020-09-03T01:16:29.354Z
 title = "Sign up for COVID-19 Alerts"
-linktitle = "COVID-19 Alerts"
 description = "Sign up for COVID-19 Alerts, Spotlight PA's free weekly update with the latest coronavirus data localized to your county"
-blurb = "Get a free weekly update every Monday with the latest coronavirus data localized to your county from Spotlight PA"
-type = "newsletter"
-modal-exclude = true
+blurb = "Every Monday, get an exclusive breakdown of the latest coronavirus data localized to your county from the data experts at Spotlight PA."
+linktitle = "COVID-19 Alerts"
 weight = 3
+modal-exclude = true
+type = "newsletter"
 +++
 
 Sign up for **COVID-19 Alerts**, Spotlight PA's free weekly update with the latest coronavirus data localized to your county.
