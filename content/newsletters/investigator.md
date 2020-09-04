@@ -1,5 +1,5 @@
 +++
-image = "2020/09/01fmxb9nhbqp8bbx.png"
+image = "2020/09/01fn4x7dcs3v64t2.png"
 image-size = "hidden"
 published = 2020-09-03T01:14:40.334Z
 title = "Sign up for The Investigator"

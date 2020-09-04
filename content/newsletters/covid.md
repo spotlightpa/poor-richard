@@ -1,5 +1,5 @@
 +++
-image = "2020/09/01fmxb5emmx7wa78.png"
+image = "2020/09/01fn4x9amrwf9127.png"
 image-size = "hidden"
 published = 2020-09-03T01:16:29.354Z
 title = "Sign up for COVID-19 Alerts"

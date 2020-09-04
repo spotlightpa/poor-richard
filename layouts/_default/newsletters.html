@@ -13,16 +13,19 @@
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
   {{ $pages := where .Pages "Type" "newsletter" }}
+
+  {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
+  {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <section
     class="section columns is-centered is-multiline"
     data-ga-category="all-newsletters"
   >
     <div class="column is-three-fifths">
       <header class="mb-5">
-        <h1 class="title has-text-centered is-size-2 is-spaced">
+        <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
           {{ .Title }}
         </h1>
-        <h2 class="subtitle has-text-centered is-size-3 mb-6">
+        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
           {{ $subtitle }}
         </h2>
 
@@ -61,7 +64,7 @@
                     {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
                     {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
                     {{ partial "component/image-block.html" $imgOpts }}
-                    <h2 class="is-size-5 is-size-4-widescreen mt-2 has-text-weight-semibold">
+                    <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
                       {{ .LinkTitle }}
                     </h2>
                     <p>
