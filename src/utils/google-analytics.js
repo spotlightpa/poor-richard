@@ -74,6 +74,12 @@ onLoad(() => {
       }
     }
   });
+  window.addEventListener("error", (ev) => {
+    callGA("send", "exception", {
+      exDescription: ev.message,
+      exFatal: true,
+    });
+  });
 });
 
 export function sendGAEvent(ev) {
