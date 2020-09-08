@@ -4,6 +4,7 @@
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
   {{ $credit := .credit }}
+  {{ $eager := .eager | default false }}
 
   {{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
   {{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
@@ -40,8 +41,10 @@
           {{ if .sizeHint }}
             sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
           {{ end }}
-          loading="lazy"
-          decoding="async"
+          {{ if not $eager }}
+            loading="lazy"
+            decoding="async"
+          {{ end }}
         >
       </picture>
     {{- if .link -}}
