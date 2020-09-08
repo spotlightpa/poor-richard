@@ -53,10 +53,26 @@ onLoad(() => {
   });
   window.addEventListener("unload", () => {
     // Send leave event
-    sendGAEvent({
-      transport: "beacon",
-      nonInteraction: true,
-    });
+    // Sample 1% for perf
+    if (Math.random() < 0.01 || !onProdSite) {
+      let navStart = window.performance?.timing?.navigationStart;
+      let loadEnd = window.performance?.timing?.domContentLoadedEventEnd;
+      if (navStart && loadEnd) {
+        let loadTime = Math.round(loadEnd - navStart);
+        callGA("send", {
+          transport: "beacon",
+          hitType: "timing",
+          timingCategory: "pageload",
+          timingVar: "load",
+          timingValue: loadTime,
+        });
+      } else {
+        sendGAEvent({
+          transport: "beacon",
+          nonInteraction: true,
+        });
+      }
+    }
   });
 });
 
