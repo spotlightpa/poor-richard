@@ -39,13 +39,13 @@ A $750 cap on monthly assistance payments, as well as a requirement that landlor
 
 Democrats in the state legislature have proposed a raft of changes to fix the problem. But no one is talking about what some experts say might be a better solution: giving the money directly to tenants instead of landlords.
 
-If the assistance payments went to tenants directly, the program would likely have a 90% participation rate in Philadelphia, said Gregory Heller, senior vice president of community investment at the Philadelphia Housing Development Corporation, which is administering the rental assistance program in the city.
+If the assistance payments went to tenants directly, the program would likely have a “significantly higher” participation rate in Philadelphia, said Gregory Heller, senior vice president of community investment at the Philadelphia Housing Development Corporation, which is administering the rental assistance program in the city.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=As%20the%20eviction%20moratorium%20expires%2C%20we%20won't%20stop%20telling%20the%20stories%20that%20matter%20and%20holding%20the%20powerful%20to%20account.%20Join%20us%20and%20become%20a%20monthly%20donor%20today."></div>
 
 “If the challenge is getting landlords to participate, there is a different approach,” he said.
 
-Section 8, the federal government’s main rental assistance program for low-income families, has a similar problem. In Philadelphia, the landlord participation rate is about 50%, Heller said. Like Section 8, most rental assistance programs are set up to pay landlords directly.
+Section 8, the federal government’s main rental assistance program for low-income families, has a similar problem. In Philadelphia, just 50% of voucher holders are able to use them, <a href="https://www.philadelphiafed.org/community-development/publications/cascade/95/02_research-on-affordable-rental-housing" target=_blank>research shows</a>. Like Section 8, most rental assistance programs are set up to pay landlords directly.
 
 The downside is that landlords typically have to agree to participate upfront, often filling out paperwork and accepting certain conditions. This creates an “administrative cost” that can become a deterrent, said Vincent Reina, an assistant professor of city and regional planning at the University of Pennsylvania.
 
@@ -62,6 +62,8 @@ Still, paying rental assistance to tenants and not their landlords would require
 Concerns about how cash benefit payments are spent have led lawmakers nationwide to institute strict rules and regulations intended to ensure accountability for public money. But these measures often create inefficiencies that tend to fall on the low-income families trying to get help, Reina said. What if, instead, policymakers trusted those families to spend their assistance payments on the things they need the most?
 
 “People often don’t realize how difficult it is to use housing assistance in its current form,” he said.
+
+<i>This story was updated to clarify two statistics provided by Gregory Heller of the Philadelphia Housing Development Corporation. </i>
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
