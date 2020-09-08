@@ -112,6 +112,8 @@
                         src="{{ $imgShrunk.RelPermalink }}"
                         alt="Photo of {{ $name }}"
                         class="is-rounded is-monochrome"
+                        loading="lazy"
+                        decoding="async"
                       >
                     {{ if $authorURL }}
                       </a>
