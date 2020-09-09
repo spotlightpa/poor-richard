@@ -2,7 +2,6 @@ import galite from "ga-lite";
 import {
   each,
   on,
-  onLoad,
   storeItem,
   loadItem,
   polyfillClosest,
@@ -29,58 +28,6 @@ export function callGA(...args) {
   }
   galite(...args);
 }
-
-onLoad(() => {
-  const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
-  const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
-  if (onDNTPage || (dnt === null && !onProdSite)) {
-    dnt = true;
-    storeItem(DO_NOT_TRACK_KEY, true);
-  }
-
-  let el = document.querySelector("[data-ga-settings]");
-  if (!el) {
-    // eslint-disable-next-line no-console
-    console.warn("could not load GA!");
-    return;
-  }
-  let { gaId, gaPageTitle, gaPagePath, gaPageUrl } = el.dataset;
-
-  callGA("create", gaId, "auto");
-  callGA("send", "pageview", gaPagePath, {
-    title: gaPageTitle,
-    location: gaPageUrl,
-  });
-  window.addEventListener("unload", () => {
-    // Send leave event
-    // Sample 1% for perf
-    if (Math.random() < 0.01 || !onProdSite) {
-      let navStart = window.performance?.timing?.navigationStart;
-      let loadEnd = window.performance?.timing?.domContentLoadedEventEnd;
-      if (navStart && loadEnd) {
-        let loadTime = Math.round(loadEnd - navStart);
-        callGA("send", {
-          transport: "beacon",
-          hitType: "timing",
-          timingCategory: "pageload",
-          timingVar: "load",
-          timingValue: loadTime,
-        });
-      } else {
-        sendGAEvent({
-          transport: "beacon",
-          nonInteraction: true,
-        });
-      }
-    }
-  });
-  window.addEventListener("error", (ev) => {
-    callGA("send", "exception", {
-      exDescription: ev.message,
-      exFatal: true,
-    });
-  });
-});
 
 export function sendGAEvent(ev) {
   callGA("send", "event", ev);
@@ -121,6 +68,59 @@ export function reportClick(ev) {
 
 export function addGAListeners() {
   polyfillClosest();
+
+  const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
+  const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
+  if (onDNTPage || (dnt === null && !onProdSite)) {
+    dnt = true;
+    storeItem(DO_NOT_TRACK_KEY, true);
+  }
+
+  let el = document.querySelector("[data-ga-settings]");
+  if (!el) {
+    // eslint-disable-next-line no-console
+    console.warn("could not load GA!");
+    return;
+  }
+  let { gaId, gaPageTitle, gaPagePath, gaPageUrl } = el.dataset;
+
+  callGA("create", gaId, "auto");
+  callGA("send", "pageview", gaPagePath, {
+    title: gaPageTitle,
+    location: gaPageUrl,
+  });
+
+  window.addEventListener("unload", () => {
+    // Send leave event
+    // Sample 1% for perf
+    if (Math.random() < 0.01 || !onProdSite) {
+      let navStart = window.performance?.timing?.navigationStart;
+      let loadEnd = window.performance?.timing?.domContentLoadedEventEnd;
+      if (navStart && loadEnd) {
+        let loadTime = Math.round(loadEnd - navStart);
+        callGA("send", {
+          transport: "beacon",
+          hitType: "timing",
+          timingCategory: "pageload",
+          timingVar: "load",
+          timingValue: loadTime,
+        });
+      } else {
+        sendGAEvent({
+          transport: "beacon",
+          nonInteraction: true,
+        });
+      }
+    }
+  });
+
+  window.addEventListener("error", (ev) => {
+    callGA("send", "exception", {
+      exDescription: ev.message,
+      exFatal: true,
+    });
+  });
+
   each("a", (el) => {
     let isInternal =
       el.host === window.location.host || el.host.match(/spotlightpa\.org$/);

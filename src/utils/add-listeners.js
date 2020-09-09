@@ -2,7 +2,7 @@ import { each, on, onLoad } from "./dom-utils.js";
 import { addSocialButtonListeners } from "./social.js";
 import { addGAListeners } from "./google-analytics.js";
 
-function createListeners() {
+onLoad(() => {
   on("click", "[data-target]", (ev) => {
     let targets = ev.currentTarget.dataset.target;
     let toggleClass = ev.currentTarget.dataset.toggleClass;
@@ -26,6 +26,4 @@ function createListeners() {
 
   addGAListeners();
   addSocialButtonListeners();
-}
-
-onLoad(createListeners);
+});
