@@ -71,9 +71,17 @@ export function addGAListeners() {
 
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
   const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
+  const onDevSite = !!window.location.host.match(
+    /(^localhost)|(spotlightpa\.netlify\.app$)/
+  );
+
   if (onDNTPage || (dnt === null && !onProdSite)) {
     dnt = true;
     storeItem(DO_NOT_TRACK_KEY, true);
+  }
+
+  if (!onProdSite && !onDevSite) {
+    window.location = "https://www.spotlightpa.org" + window.location.pathname;
   }
 
   let el = document.querySelector("[data-ga-settings]");
