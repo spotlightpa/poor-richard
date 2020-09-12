@@ -14,9 +14,9 @@
   </h2>
   <div class="field is-hidden-tablet">
     <p class="control has-icons-left has-icons-right is-expanded">
-      <label class="is-sr-only" for="inline-email-mobile">Email</label>
+      <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
       <input
-        id="inline-email-mobile"
+        id='{{ partial "helper/get-id" . }}'
         class="input is-medium"
         type="email"
         placeholder="Email address"
@@ -46,9 +46,9 @@
   </div>
   <div class="field has-addons is-hidden-mobile">
     <p class="control has-icons-left has-icons-right is-expanded">
-      <label class="is-sr-only" for="inline-email">Email</label>
+      <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
       <input
-        id="inline-email"
+        id='{{ partial "helper/get-id" . }}'
         class="input is-medium"
         type="email"
         placeholder="Enter your email address"

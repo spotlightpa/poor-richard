@@ -56,10 +56,10 @@
         </p>
 
         <div class="field mt-5">
-          <label class="is-sr-only" for="modal-email">Email</label>
+          <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
           <div class="control has-icons-left has-icons-right">
             <input
-              id="modal-email"
+              id='{{ partial "helper/get-id" . }}'
               class="input is-medium"
               type="email"
               name="EMAIL"

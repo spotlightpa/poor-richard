@@ -15,10 +15,10 @@
     </label>
     <label
       class="label is-sr-only"
-      for="contact-host-page"
+      for='{{ partial "helper/inc-id" . }}'
     >Host URL</label>
     <input
-      id="contact-host-page"
+      id='{{ partial "helper/get-id" . }}'
       class="input"
       type="text"
       name="host_page"
@@ -26,15 +26,14 @@
     >
   </p>
   <div class="field">
-    <label class="label" for="contact-name">From</label>
+    <label class="label" for='{{ partial "helper/inc-id" . }}'>From</label>
   </div>
   <div class="field is-horizontal">
     <div class="field-body">
       <div class="field">
         <p class="control is-expanded">
           <input
-            id="contact-name"
-            class="input"
+            id='{{ partial "helper/get-id" . }}'
             type="text"
             placeholder="William Penn"
             name="name"
@@ -43,10 +42,10 @@
         </p>
       </div>
       <div class="field">
-        <label class="is-sr-only" for="contact-email">Email</label>
+        <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
         <p class="control is-expanded has-icons-left has-icons-right">
           <input
-            id="contact-email"
+            id='{{ partial "helper/get-id" . }}'
             class="input"
             type="email"
             placeholder="williampenn@example.com"
@@ -69,10 +68,10 @@
   </div>
 
   <div class="field">
-    <label class="label" for="contact-subject">Subject</label>
+    <label class="label" for='{{ partial "helper/inc-id" . }}'>Subject</label>
     <div class="control">
       <input
-        id="contact-subject"
+        id='{{ partial "helper/get-id" . }}'
         class="input"
         type="text"
         placeholder="My question about Spotlight PA"
@@ -81,10 +80,10 @@
     </div>
   </div>
   <div class="field">
-    <label class="label" for="contact-comment">Comment</label>
+    <label class="label" for='{{ partial "helper/inc-id" . }}'>Comment</label>
     <div class="control">
       <textarea
-        id="contact-comment"
+        id='{{ partial "helper/get-id" . }}'
         class="textarea"
         placeholder="Explain how we can help you"
         name="comment"

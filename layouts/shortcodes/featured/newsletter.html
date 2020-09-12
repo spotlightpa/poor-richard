@@ -13,9 +13,9 @@
   </p>
   <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
     <p class="relative flex-grow">
-      <label class="sr-only" for="email-embed">Email address</label>
+      <label class="sr-only" for='{{ partial "helper/inc-id" . }}'>Email address</label>
       <input
-        id="email-embed"
+        id='{{ partial "helper/get-id" . }}'
         class="pl-10 py-2 w-full rounded border-2 border-gray-400 text-gray-800 placeholder-gray-400 placeholder-opacity-100 tracking-wider appearance-none block bg-white"
         type="email"
         name="EMAIL"

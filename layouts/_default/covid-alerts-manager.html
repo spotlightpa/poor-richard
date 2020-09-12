@@ -31,7 +31,7 @@
           <div class="field has-addons">
             <label
               class="label"
-              for="manage-email"
+              for='{{ partial "helper/inc-id" . }}'
             >
               Email address
             </label>
@@ -39,7 +39,7 @@
           <div class="field has-addons">
             <div class="control has-icons-left has-icons-right is-expanded">
               <input
-                id="manage-email"
+                id='{{ partial "helper/get-id" . }}'
                 class="input"
                 type="email"
                 placeholder="Email address"
@@ -71,13 +71,13 @@
           <div class="field">
             <label
               class="label"
-              for="manage-fname"
+              for='{{ partial "helper/inc-id" . }}'
             >
               First Name
             </label>
             <p class="control">
               <input
-                id="manage-fname"
+                id='{{ partial "helper/get-id" . }}'
                 type="text"
                 name="first_name"
                 autocomplete="given-name"
@@ -92,13 +92,13 @@
           <div class="field">
             <label
               class="label"
-              for="manage-lname"
+              for='{{ partial "helper/inc-id" . }}'
             >
               Last Name
             </label>
             <p class="control">
               <input
-                id="manage-lname"
+                id='{{ partial "helper/get-id" . }}'
                 type="text"
                 name="last_name"
                 autocomplete="family-name"

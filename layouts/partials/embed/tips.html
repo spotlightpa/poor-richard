@@ -28,11 +28,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for="contact-name-embed"
+            for='{{ partial "helper/inc-id" . }}'
           >Name</label>
           <p class="control is-expanded">
             <input
-              id="contact-name-embed"
+              id='{{ partial "helper/get-id" . }}'
               class="input is-small"
               type="text"
               placeholder="Name"
@@ -44,11 +44,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for="contact-email-embed"
+            for='{{ partial "helper/inc-id" . }}'
           >Email or phone number</label>
           <p class="control">
             <input
-              id="contact-email-embed"
+              id='{{ partial "helper/get-id" . }}'
               class="input is-small"
               type="text"
               placeholder="Email or phone number"
@@ -63,10 +63,10 @@
       <div class="control">
         <label
           class="label is-sr-only"
-          for="contact-comment-embed"
+          for='{{ partial "helper/inc-id" . }}'
         >Your tip or comment</label>
         <textarea
-          id="contact-comment-embed"
+          id='{{ partial "helper/get-id" . }}'
           class="textarea is-small"
           placeholder="What should we know?"
           name="comment"

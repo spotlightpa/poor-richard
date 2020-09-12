@@ -23,10 +23,10 @@
       </label>
       <label
         class="label is-sr-only"
-        for="contact-host-page"
+        for='{{ partial "helper/inc-id" . }}'
       >Host URL</label>
       <input
-        id="contact-host-page"
+        id='{{ partial "helper/get-id" . }}'
         class="input"
         type="text"
         name="host_page"
@@ -38,11 +38,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for="contact-name-inline"
+            for='{{ partial "helper/inc-id" . }}'
           >Name</label>
           <p class="control is-expanded">
             <input
-              id="contact-name-inline"
+              id='{{ partial "helper/get-id" . }}'
               class="input"
               type="text"
               placeholder="Name"
@@ -54,11 +54,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for="contact-email-inline"
+            for='{{ partial "helper/inc-id" . }}'
           >Email or phone number</label>
           <p class="control">
             <input
-              id="contact-email-inline"
+              id='{{ partial "helper/get-id" . }}'
               class="input"
               type="text"
               placeholder="Email or phone number"
@@ -73,10 +73,10 @@
       <div class="control">
         <label
           class="label is-sr-only"
-          for="contact-comment-inline"
+          for='{{ partial "helper/inc-id" . }}'
         >Your tip or comment</label>
         <textarea
-          id="contact-comment-inline"
+          id='{{ partial "helper/get-id" . }}'
           class="textarea"
           placeholder="What should we know?"
           name="comment"
