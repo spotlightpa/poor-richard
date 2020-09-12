@@ -36,10 +36,10 @@
             </span>
           </h2>
           <div class="field">
-            <label class="is-sr-only" for="home-fname">First Name</label>
+            <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>First Name</label>
             <div class="control">
               <input
-                id="home-fname"
+                id='{{ partial "helper/get-id" . }}'
                 class="input is-medium"
                 type="text"
                 name="FNAME"
@@ -48,10 +48,10 @@
             </div>
           </div>
           <div class="field">
-            <label class="is-sr-only" for="home-lname">Last Name</label>
+            <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Last Name</label>
             <div class="control">
               <input
-                id="home-lname"
+                id='{{ partial "helper/get-id" . }}'
                 class="input is-medium"
                 type="text"
                 name="LNAME"
@@ -60,10 +60,10 @@
             </div>
           </div>
           <div class="field">
-            <label class="is-sr-only" for="home-email">Email</label>
+            <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
             <div class="control has-icons-left has-icons-right is-expanded">
               <input
-                id="home-email"
+                id='{{ partial "helper/get-id" . }}'
                 class="input is-medium"
                 type="email"
                 name="EMAIL"

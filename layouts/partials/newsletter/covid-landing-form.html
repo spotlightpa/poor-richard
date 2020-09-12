@@ -29,13 +29,13 @@
     <div class="control">
       <label
         class="label"
-        for="covid-dropdown-email"
+        for='{{ partial "helper/inc-id" . }}'
       >
         Email
       </label>
       <p class="control has-icons-right is-expanded">
         <input
-          id="covid-dropdown-email"
+          id='{{ partial "helper/get-id" . }}'
           type="email"
           name="email"
           autocomplete="email"
@@ -55,13 +55,13 @@
   <div class="field">
     <label
       class="label"
-      for="covid-dropdown-fname"
+      for='{{ partial "helper/inc-id" . }}'
     >
       First name
     </label>
     <p class="control has-icons-right">
       <input
-        id="covid-dropdown-fname"
+        id='{{ partial "helper/get-id" . }}'
         type="text"
         name="first_name"
         autocomplete="given-name"
@@ -80,13 +80,13 @@
   <div class="field">
     <label
       class="label"
-      for="covid-dropdown-lname"
+      for='{{ partial "helper/inc-id" . }}'
     >
       Last name
     </label>
     <p class="control has-icons-right">
       <input
-        id="covid-dropdown-lname"
+        id='{{ partial "helper/get-id" . }}'
         type="text"
         name="last_name"
         autocomplete="family-name"
@@ -107,13 +107,13 @@
       <label>
         <span
           class="label"
-          for="covid-dropdown-county"
+          for='{{ partial "helper/inc-id" . }}'
         >
           Select your county
         </span>
         <div class="select is-fullwidth">
           <select
-            id="covid-dropdown-county"
+            id='{{ partial "helper/get-id" . }}'
             name="fips"
             required
           >

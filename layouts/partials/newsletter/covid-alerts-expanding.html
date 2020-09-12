@@ -28,12 +28,12 @@
     >
     <div class="field">
       <div class="control">
-        <label class="is-sr-only" for="alert-email">
+        <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>
           Email address
         </label>
         <p class="control has-icons-left has-icons-right is-expanded">
           <input
-            id="alert-email"
+            id='{{ partial "helper/get-id" . }}'
             type="email"
             name="email"
             autocomplete="email"
@@ -64,12 +64,12 @@
     >
       <div class="field-body">
         <div class="field">
-          <label class="is-sr-only" for="alert-fname">
+          <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>
             First Name
           </label>
           <p class="control has-icons-right">
             <input
-              id="alert-fname"
+              id='{{ partial "helper/get-id" . }}'
               type="text"
               name="first_name"
               autocomplete="given-name"
@@ -86,12 +86,12 @@
           </p>
         </div>
         <div class="field">
-          <label class="is-sr-only" for="alert-lname">
+          <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>
             Last Name
           </label>
           <p class="control has-icons-right">
             <input
-              id="alert-lname"
+              id='{{ partial "helper/get-id" . }}'
               type="text"
               name="last_name"
               autocomplete="family-name"

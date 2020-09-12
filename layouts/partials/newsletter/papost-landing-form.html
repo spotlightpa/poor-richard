@@ -16,11 +16,11 @@
   <div class="field">
     <label
       class="label"
-      for="papost-dropdown-email"
+      for='{{ partial "helper/inc-id" . }}'
     >Email</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id="papost-dropdown-email"
+        id='{{ partial "helper/get-id" . }}'
         class="input"
         name="EMAIL"
         type="email"
@@ -38,11 +38,11 @@
   <div class="field">
     <label
       class="label"
-      for="papost-dropdown-fname"
+      for='{{ partial "helper/inc-id" . }}'
     >First name</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id="papost-dropdown-fname"
+        id='{{ partial "helper/get-id" . }}'
         class="input"
         type="text"
         name="FNAME"
@@ -60,11 +60,11 @@
   <div class="field">
     <label
       class="label"
-      for="papost-dropdown-lname"
+      for='{{ partial "helper/inc-id" . }}'
     >Last name</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id="papost-dropdown-lname"
+        id='{{ partial "helper/get-id" . }}'
         class="input"
         type="text"
         name="LNAME"

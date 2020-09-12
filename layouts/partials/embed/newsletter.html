@@ -17,9 +17,9 @@
     </h2>
     <div class="field has-addons">
       <p class="control has-icons-left has-icons-right is-expanded">
-        <label class="is-sr-only" for="email-embed">Email</label>
+        <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
         <input
-          id="email-embed"
+          id='{{ partial "helper/get-id" . }}'
           class="input is-small"
           type="email"
           name="EMAIL"
