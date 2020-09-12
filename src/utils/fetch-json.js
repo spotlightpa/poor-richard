@@ -2,7 +2,7 @@ export default function fetchJSON(url) {
   return fetch(url).then((rsp) => {
     if (!rsp.ok) {
       let err = new Error(
-        `Unexpected response: ${rsp.status} ${rsp.statusText}`
+        `Unexpected response: ${url} ${rsp.status} ${rsp.statusText}`
       );
       err.name = "Request error";
       throw err;
