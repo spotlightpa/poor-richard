@@ -56,6 +56,7 @@ export default function emailPreferences() {
         .then((data) => {
           this.loadData(data);
           this.didLoad = true;
+          this.error = null;
         })
         .catch((err) => {
           this.error = err;
