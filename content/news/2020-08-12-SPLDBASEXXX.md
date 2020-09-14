@@ -9,7 +9,7 @@ image-credit = "Kalim A. Bhatti"
 image-size = ""
 published = 2020-08-12T15:46:16Z
 slug = "spotlight-pa-diverse-source-database-pennsylvania-experts-journalism-equity-inclusion"
-authors = ["Spotlight PA Staff"]
+authors = []
 byline = "Spotlight PA Staff"
 title = "Help Spotlight PA build a diverse source database to improve representation in Pa. journalism"
 subtitle = ""
@@ -43,7 +43,7 @@ The project is being overseen by <a href="https://twitter.com/itistamara">Tamara
 
 The database – which will be free and available to all – will include a minimum of 100 Pennsylvania-based experts of color organized by area of expertise. We won't publish any of the nominated source's information without their consent.
 
-The <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVh7CFSaKc5H7VTWcizw1sxmC8XQfWZ_yerww6SvWad5vmQQ/viewform">nomination form is here</a>. 
+The <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVh7CFSaKc5H7VTWcizw1sxmC8XQfWZ_yerww6SvWad5vmQQ/viewform">nomination form is here</a>.
 
 If you have any questions or ideas, contact us at <a href="mailto:sources@spotlightpa.org">sources@spotlightpa.org</a>.
 
