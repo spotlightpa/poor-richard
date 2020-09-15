@@ -20,8 +20,8 @@
 {{ $imgOpt := dict "filename" $filename "width" $width "height" $height }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
-    <header class="grid grid-cols-1 md:grid-cols-5">
-      <div class="md:col-span-2 bg-black text-white">
+    <header class="flex flex-col md:flex-row md:min-h-screen">
+      <div class="bg-black text-white md:w-2/5">
         <div class="px-12 pb-10">
           <div class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white">
             <div
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="relative order-first pb-16x9 md:order-none md:col-span-3 md:h-full">
+      <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
         <picture class="bg-gray-400 absolute inset-0">
           {{ if in (string $srcset) ".jpeg" }}
             <source
