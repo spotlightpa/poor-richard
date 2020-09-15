@@ -9,6 +9,9 @@
   x-transition:leave="fade-enter-active is-active"
   x-transition:leave-end="fade-enter"
   @scroll.window.once.passive="init()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Newsletter sign up"
 >
   <div class="modal-background"></div>
   <div

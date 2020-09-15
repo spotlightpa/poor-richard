@@ -9,6 +9,9 @@
   x-transition:leave="fade-enter-active is-active"
   x-transition:leave-end="fade-enter"
   data-ga-category="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby='{{ partial "helper/inc-id" . }}'
 >
   <div class="modal-background"></div>
   <div
@@ -19,7 +22,7 @@
   >
     <header class="modal-card-head">
       <div class="modal-card-title has-text-weight-bold has-text-centered has-text-white">
-        <span>
+        <span id='{{ partial "helper/get-id" . }}'>
           Search
         </span>
       </div>
