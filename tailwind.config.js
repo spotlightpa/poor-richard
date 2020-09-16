@@ -42,6 +42,9 @@ module.exports = {
       darkblue: "#22416e",
     },
     extend: {
+      boxShadow: {
+        beige: "0 0 0 3px #f4f1ee80",
+      },
       lineHeight: {
         normal: "1.6",
         hed: "1.15",
