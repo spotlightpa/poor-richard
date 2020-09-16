@@ -34,12 +34,12 @@ html {
 }
 /*! purgecss end ignore */
 
-.content-area a {
+.content-area > p a {
   @apply text-darkblue underline;
   @apply transition-colors duration-500;
 }
 
-.content-area a:hover {
+.content-area > p a:hover {
   @apply text-yellow;
 }
 
@@ -76,6 +76,15 @@ html {
 
 .content-aside > p {
   @apply leading-relaxed;
+}
+
+.content-aside > p a {
+  @apply text-darkblue underline;
+  @apply transition-colors duration-500;
+}
+
+.content-aside > p a:hover {
+  @apply text-yellow;
 }
 
 .content-aside > ul {
