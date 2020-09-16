@@ -29,9 +29,10 @@ module.exports = {
       "g-4": "#efefef",
       "g-5": "#dbdbdb",
       "g-6": "#8a8a8a",
-      "g-7": "#575757",
+      "g-7": "#5d5d5d",
       "g-8": "#2d3748",
       "g-9": "#1a202c",
+      beige: "#f4f1ee",
       "tw-blue": "#99d9f1",
       "fb-blue": "#009edb",
       orange: "#ff6c36",
@@ -39,7 +40,6 @@ module.exports = {
       yellow: "#ffcb05",
       "yellow-darker": "#cda52d",
       darkblue: "#22416e",
-      caption: "#5d5d5d",
     },
     extend: {
       lineHeight: {
