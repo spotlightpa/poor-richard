@@ -62,7 +62,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    boxShadow: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+  },
   plugins: [],
   future: {
     removeDeprecatedGapUtilities: true,

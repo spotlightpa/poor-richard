@@ -7,7 +7,7 @@
 >
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
-    class="self-center h-12 w-12 flex text-g-5 hover:bg-green hover:text-white rounded transition-colors duration-500"
+    class="self-center h-12 w-12 flex text-g-5 hover:bg-green hover:text-white rounded transition-colors duration-500 active:shadow-outline"
     title="Share this page by email"
     data-ga-action="share:email"
   >
@@ -18,7 +18,7 @@
     </span>
   </a>
   <button
-    class="self-center h-12 w-12 flex hover:bg-fb-blue hover:text-white rounded transition-colors duration-500"
+    class="self-center h-12 w-12 flex hover:bg-fb-blue hover:text-white rounded transition-colors duration-500 active:shadow-outline"
     data-share="facebook"
     data-ga-action="share:facebook"
     title="Share this page on Facebook"
@@ -30,7 +30,7 @@
     </span>
   </button>
   <button
-    class="self-center h-12 w-12 flex hover:bg-tw-blue hover:text-white rounded transition-colors duration-500"
+    class="self-center h-12 w-12 flex hover:bg-tw-blue hover:text-white rounded transition-colors duration-500 active:shadow-outline"
     data-share="tweet"
     data-share-text="{{ .LinkTitle }} from @spotlightpa"
     data-ga-action="share:twitter"
@@ -43,7 +43,7 @@
     </span>
   </button>
   <button
-    class="self-center h-12 w-12 flex hover:bg-orange hover:text-white rounded transition-colors duration-500"
+    class="self-center h-12 w-12 flex hover:bg-orange hover:text-white rounded transition-colors duration-500 active:shadow-outline"
     data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
