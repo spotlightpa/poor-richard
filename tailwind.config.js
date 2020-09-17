@@ -21,6 +21,8 @@ module.exports = {
       "6xl": "3.4em",
     },
     colors: {
+      transparent: "transparent",
+      current: "currentColor",
       white: "#fff",
       black: "#000",
       "g-1": "#fcfcfc",
