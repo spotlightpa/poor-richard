@@ -144,11 +144,13 @@
     {{ $iconFB := resources.Get "@fontawesome/brands/facebook-f.svg" }}
     {{ $iconShare := resources.Get "@fontawesome/solid/share.svg" }}
     {{ $iconTwitter := resources.Get "@fontawesome/brands/twitter.svg" }}
+    {{ $iconRight := resources.Get "@fontawesome/solid/caret-right.svg" }}
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="close-svg">{{ $iconClose.Content|safeHTML }}</svg>
     <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
     <svg id="fb-svg">{{ $iconFB.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
+    <svg id="right-svg">{{ $iconRight.Content|safeHTML }}</svg>
     <svg id="share-svg">{{ $iconShare.Content|safeHTML }}</svg>
     <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
   </div>
