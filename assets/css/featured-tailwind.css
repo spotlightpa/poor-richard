@@ -63,16 +63,6 @@ html {
   @apply list-decimal;
 }
 
-.content-aside {
-  @apply hidden max-w-none w-1/4 ml-10 mr-8 pr-8 py-4 font-sans text-sm;
-}
-
-@screen md {
-  .content-aside {
-    @apply block;
-  }
-}
-
 .content-aside > p {
   @apply leading-relaxed;
 }
@@ -137,3 +127,9 @@ html {
 @tailwind components;
 
 @tailwind utilities;
+
+@responsive {
+  .block-important {
+    display: block !important;
+  }
+}

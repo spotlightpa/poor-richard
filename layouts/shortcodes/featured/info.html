@@ -1,9 +1,44 @@
 {{ $side := .Get "side" | default "left" }}
 {{ $sideClass := cond (eq $side "right") "float-right" "float-left"}}
 <aside
-  class="bg-info content-aside {{ $sideClass }}"
+  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm"
   data-ga-category="inline:info"
+  x-data="{ isOpen: false }"
 >
-  {{ .Inner | markdownify }}
-  <hr hidden>
+  <button
+    class="md:hidden underline text-darkblue hover:text-yellow text-center w-full text-base transition-color duration-500"
+    :aria-expanded="isOpen"
+    x-cloak
+    @click="isOpen = !isOpen"
+  >
+    <span aria-hidden="true">
+      <svg
+        class="fill-current h-4 w-4 inline-block transform transition-transform duration-500"
+        :class="isOpen ? 'rotate-90' : 'rotate-0'"
+        {{/* purge CSS hack */}}
+        x-transition="rotate-90 rotate-0"
+      >
+        <use xlink:href="#right-svg"></use>
+      </svg>
+    </span>
+    <span x-show="!isOpen">
+      Show more info…
+    </span>
+    <span x-cloak x-show="isOpen">
+      Hide more info…
+    </span>
+  </button>
+  <div
+    class="bg-info content-aside md:block-important"
+    x-show="isOpen"
+    x-transition:enter="transition ease-out duration-500"
+    x-transition:enter-start="opacity-0 transform -translate-y-8"
+    x-transition:enter-end="opacity-100 transform translate-y-0"
+    x-transition:leave="transition ease-out duration-500"
+    x-transition:leave-start="opacity-100 transform translate-y-0"
+    x-transition:leave-end="opacity-0 transform -translate-y-20"
+  >
+    {{ .Inner | markdownify }}
+    <hr hidden>
+  </div>
 </aside>
