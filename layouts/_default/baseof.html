@@ -43,6 +43,7 @@
     {{ end }}
     {{ block "promo" . }}
       {{ if .Param "promo-active" }}
+        {{ partialCached "component/promo-banner.html" . }}
         {{ partialCached "component/promo.html" . }}
       {{ end }}
     {{ end }}
@@ -61,7 +62,7 @@
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ partial "modal/newsletter.html" . }}
+      {{ partial "modal/promo.html" . }}
     {{ end }}
   {{ end }}
   {{ partial "modal/search.html" . }}
