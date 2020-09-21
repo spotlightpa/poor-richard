@@ -1,30 +1,32 @@
 +++
+arc-id = "OQXAAI6P7BBRZGJZO24XILFSPI"
+internal-id = "SPLBacklash20"
+internal-budget = ""
 image = "external/587axdrx3xydbrmfdpgkhzq5bw.jpeg"
 image-description = "Pennsylvania officials are aware of the gathering and have advised against it."
+image-caption = ""
 image-credit = "Kalim A. Bhatti / Philadelphia Inquirer"
 image-size = ""
-published = 2020-04-19T14:17:46.000Z
+published = 2020-04-19T14:17:46Z
 slug = "pennsylvania-coronavirus-rally-harrisburg-quarantine"
 authors = ["Jason Nark", "Cynthia Fernandez"]
 byline = "Jason Nark of the Philadelphia Inquirer and Cynthia Fernandez of Spotlight PA"
 title = "The backlash against the quarantine has begun in Pennsylvania, with anti-shutdown rally Monday in Harrisburg"
+subtitle = ""
 description = "“I’m definitely not going to be out there shouting at people for not wearing masks,” said Chris Dorr, organizer of the Monday rally in Harrisburg. “This is a free country, right?”"
 blurb = "“I’m definitely not going to be out there shouting at people for not wearing masks,” said Chris Dorr, organizer of the Monday rally in Harrisburg. “This is a free country, right?”"
 kicker = "Coronavirus"
+topics = ["Coronavirus"]
+series = []
 linktitle = ""
 suppress-featured = false
 weight = 0
-topics = ["Coronavirus"]
-series = []
+url = ""
+aliases = []
 modal-exclude = false
 no-index = false
-internal-id = "SPLBacklash20"
-url = ""
-image-caption = ""
-internal-budget = ""
-arc-id = "OQXAAI6P7BBRZGJZO24XILFSPI"
-subtitle = ""
-aliases = []
+language-code = ""
+layout = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -88,7 +90,7 @@ Scannapieco, who works in a Montgomery County hospital that she declined to iden
 
 “We get a yearly flu that kills thousands and thousands of people," she said. “I’m not really so sure what the difference is with this virus.”
 
-During the 2019-20 flu season, Pennsylvania <a href="https://www.health.pa.gov/topics/disease/Flu/Pages/2019-20-Flu.aspx" target=_blank>reported</a> 102 deaths, while the Centers for Disease Control and Prevention <a href="https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm" target=_blank>estimated</a> between 24,000 and 62,000 nationwide. According to Johns Hopkins Medicine, unlike the flu, COVID-19 “might be spread through the airborne route" and there’s no vaccine. Researchers are <a href="https://www.washingtonpost.com/health/as-officials-plan-to-reopen-the-economy-a-key-unknown-remains-how-deadly-is-the-coronavirus/2020/04/17/0bd2f938-7e49-11ea-a3ee-13e1ae0a3571_story.html" target=_blank>still trying to determine </a>how deadly the virus is. 
+During the 2019-20 flu season, Pennsylvania <a href="https://web.archive.org/web/20200426114506/https://www.health.pa.gov/topics/disease/Flu/Pages/2019-20-Flu.aspx">reported</a> 102 deaths, while the Centers for Disease Control and Prevention <a href="https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm" target=_blank>estimated</a> between 24,000 and 62,000 nationwide. According to Johns Hopkins Medicine, unlike the flu, COVID-19 “might be spread through the airborne route" and there’s no vaccine. Researchers are <a href="https://www.washingtonpost.com/health/as-officials-plan-to-reopen-the-economy-a-key-unknown-remains-how-deadly-is-the-coronavirus/2020/04/17/0bd2f938-7e49-11ea-a3ee-13e1ae0a3571_story.html" target=_blank>still trying to determine </a>how deadly the virus is. 
 
 
 
