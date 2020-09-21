@@ -1,16 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-09-18-SPLCANVASS18.md"
+    "content/news/2020-09-21-SPLFAQ21.md"
   ],
   "subfeatures": [
-    "content/news/2020-09-02-SPLREFORM02.md"
+    "content/news/2020-09-12-SPLBAN12.md",
+    "content/news/2020-09-08-SPLCASHXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-09-18-SPLCANVASS18.md",
     "content/news/2020-09-17-SPLJUDGE18.md",
-    "content/news/2020-09-16-SPLRECORDS16.md",
-    "content/news/2020-09-14-SPLLOBBY15.md"
+    "content/news/2020-09-16-SPLRECORDS16.md"
   ],
   "sidebarPicks": [
     "content/news/2020-08-06-SPLCAMPUS06.md"
