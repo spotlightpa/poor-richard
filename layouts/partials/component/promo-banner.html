@@ -9,31 +9,30 @@
 >
   <p>
     <a
-      class="is-hidden-mobile"
       data-ga-action="https://www.spotlightpa.org/donate/"
-      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=desktop&utm_medium=banner&utm_campaign=sept_tote_promo"
+      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_medium=banner&utm_campaign=sept_tote_promo&utm_source=desktop"
+      x-data="{
+        desktopURL: 'https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_medium=banner&utm_campaign=sept_tote_promo&utm_source=desktop',
+        mobileURL: 'https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_medium=banner&utm_campaign=sept_tote_promo&utm_source=mobile',
+        mobileMax: 'max-width: 320px',
+        desktopMax: 'max-width: 720px',
+        isMobile: window.matchMedia('(max-width: 769px)').matches
+      }"
+      :href="isMobile ? mobileURL : desktopURL"
     >
-      <img
-        srcset="
-          {{- $imgDesktopPlain.RelPermalink }} 1x,
-          {{- $imgDesktopRetina.RelPermalink }} 2x"
-        src="{{ $imgDesktopPlain.RelPermalink }}"
-        alt="Donate to Spotlight PA now"
-        width="728"
-        height="90"
+      <picture
+        class="is-block"
+        :style="isMobile ? mobileMax : desktopMax"
       >
-    </a>
-    <a
-      class="is-hidden-tablet"
-      data-ga-action="https://www.spotlightpa.org/donate/"
-      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=mobile&utm_medium=banner&utm_campaign=sept_tote_promo"
-    >
-      <img
-        src="{{ $imgMobile.RelPermalink }}"
-        alt="Donate to Spotlight PA now"
-        width="320"
-        height="100"
-      >
+        <source media="(max-width: 769px)" srcset="{{ $imgMobile.RelPermalink }} 640w">
+        <img
+          srcset="
+            {{- $imgDesktopPlain.RelPermalink }} 1x,
+            {{- $imgDesktopRetina.RelPermalink }} 2x"
+          src="{{ $imgDesktopPlain.RelPermalink }}"
+          alt="Donate to Spotlight PA now"
+        >
+      </picture>
     </a>
   </p>
 </section>
