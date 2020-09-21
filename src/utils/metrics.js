@@ -7,10 +7,11 @@ const onTestDonatePage = !!window.location.href.match(/debug=donate/);
 const LAST_VISIT_KEY = "last-visit";
 const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
 const FROM_MC_KEY = "originated-from-mailchimp";
-const SAW_DONATE_MODAL_KEY = "saw-donate-modal";
+const SAW_DONATE_MODAL_KEY = "saw-donate-modal-totebag";
 
 let now = new Date();
 export let showModalNewsletter = true;
+export let showModalDonate = true;
 
 let lastVist = loadDate(LAST_VISIT_KEY);
 let lastSession = loadDate(LAST_VISIT_KEY, { useSession: true });
@@ -36,6 +37,9 @@ if (window.location.pathname.match(/newsletters/)) {
 if (loadDate(SAW_NEWSLETTER_MODAL_KEY)) {
   showModalNewsletter = false;
 }
+if (loadDate(SAW_DONATE_MODAL_KEY)) {
+  showModalDonate = false;
+}
 // And didn't come from the newsletter...
 if (window.location.href.match(/utm_source=email/)) {
   storeDate(FROM_MC_KEY, now);
@@ -52,8 +56,13 @@ if (onTestNewsletterPage) {
 }
 if (onTestDonatePage) {
   showModalNewsletter = false;
+  showModalDonate = true;
 }
 
 export function sawModalNewsletter() {
   storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
+}
+
+export function sawModalDonate() {
+  storeDate(SAW_DONATE_MODAL_KEY, now);
 }

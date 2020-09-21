@@ -1,31 +1,39 @@
-{{ $imgs := slice }}
-{{ range seq 1 4 }}
-  {{ $imgName := printf "/img/promo/gt-b-%d.png" . }}
-  {{ $img := resources.Get $imgName | fingerprint }}
-  {{ $imgs = $imgs | append $img.RelPermalink }}
-{{ end }}
-
-{{ $link := .Param "banner-link" }}
-
+{{ $imgMobile := resources.Get "/img/promo/tote-leaderboard-mobile.png" | fingerprint }}
+{{ $imgDesktop := resources.Get "/img/promo/tote-leaderboard-desktop.png" }}
+{{ $imgDesktopRetina := $imgDesktop | fingerprint }}
+{{ $imgDesktopPlain := $imgDesktop.Fit "728x90" }}
 <section
-  class="mt-5 has-radius-padding has-text-centered"
-  style="max-width: 1024px; margin-left: auto; margin-right: auto;"
+  class="mt-5 pl-5 pr-5 has-radius-padding has-text-centered"
+  style="margin-left: auto; margin-right: auto;"
   data-ga-category="promo-banner"
 >
-  <p class="is-size-3-fullscreen is-size-4 has-text-centered">
-    <a href="{{ $link }}" class="has-text-black underline">
-      {{ .Param "banner" | markdownify }}
-    </a>
-  </p>
-  <p class="mt-5">
+  <p>
     <a
-      href="/donate/"
-    ><img
-      data-promo-images="{{ $imgs | jsonify }}"
-      src="{{ index $imgs 0 }}"
-      width="728"
-      height="90"
-      alt="Donate to Spotlight PA now"
-    ></a>
+      class="is-hidden-mobile"
+      data-ga-action="https://www.spotlightpa.org/donate/"
+      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=desktop&utm_medium=banner&utm_campaign=sept_tote_promo"
+    >
+      <img
+        srcset="
+          {{- $imgDesktopPlain.RelPermalink }} 1x,
+          {{- $imgDesktopRetina.RelPermalink }} 2x"
+        src="{{ $imgDesktopPlain.RelPermalink }}"
+        alt="Donate to Spotlight PA now"
+        width="728"
+        height="90"
+      >
+    </a>
+    <a
+      class="is-hidden-tablet"
+      data-ga-action="https://www.spotlightpa.org/donate/"
+      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=mobile&utm_medium=banner&utm_campaign=sept_tote_promo"
+    >
+      <img
+        src="{{ $imgMobile.RelPermalink }}"
+        alt="Donate to Spotlight PA now"
+        width="320"
+        height="100"
+      >
+    </a>
   </p>
 </section>
