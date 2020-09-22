@@ -10,6 +10,7 @@
 {{ $imageSource := .Get "image-source" }}
 {{ $imageDesc := .Get "image-description" }}
 {{ $focus := .Get "image-focus" }}
+{{ $artType := .Get "art-type" | default "Photo" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
@@ -43,7 +44,7 @@
             {{ $outlet }}
           </div>
           <div class="mt-4 lg:mt-8 text-sm">
-            Photo by
+            {{ $artType }} by
             <span class="font-sans uppercase font-bold">{{ $imageCredit }}</span>
             of
             <span class="font-sans uppercase">{{ $imageSource }}</span>
