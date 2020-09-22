@@ -1,0 +1,27 @@
+{{ $side := .Get "side" | default "left" }}
+{{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 md:pl-8" "float-left sm:pr-4 md:pr-8"}}
+<aside
+  class="{{ $sideClass }} max-width-none w-full sm:max-w-sm md:mx-8 font-sans text-sm sm:stagger"
+  data-ga-category="inline:related"
+>
+  <nav class="py-4">
+    <h2 class="text-lg font-bold uppercase">
+      <span class="border-b-2 border-black">
+        More From Spotlight PA
+      </span>
+    </h2>
+    <ul class="space-y-4 my-4">
+      {{ $news := .Site.GetPage "/news/_index.md" }}
+      {{ $related := $news.RegularPages.Related .Page | first 3 }}
+      {{ range $related }}
+        <li class="font-bold">
+          <a
+            class="text-darkblue hover:text-yellow transition-colors duration-500"
+            href="{{ .RelPermalink }}"
+          >{{ .LinkTitle }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    <hr hidden>
+  </nav>
+</aside>
