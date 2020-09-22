@@ -63,6 +63,15 @@ html {
   @apply list-decimal;
 }
 
+@supports (shape-outside: border-box){
+  @responsive {
+    .stagger {
+      margin-top: 5.25rem;
+      shape-outside: border-box;
+    }
+  }
+}
+
 .content-aside > p {
   @apply leading-relaxed;
 }
