@@ -1,7 +1,7 @@
 {{ $side := .Get "side" | default "right" }}
 {{ $sideClass := cond (eq $side "right") "float-right" "float-left"}}
 <aside
-  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm"
+  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm hidden md:block"
   data-ga-category="inline:keypoints"
   x-data="{ isOpen: false }"
 >
