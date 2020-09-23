@@ -1,7 +1,7 @@
 {{ $side := .Get "side" | default "left" }}
 {{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 md:pl-8" "float-left sm:pr-4 md:pr-8"}}
 <aside
-  class="{{ $sideClass }} max-width-none w-full sm:max-w-sm md:mx-8 font-sans text-sm sm:stagger"
+  class="{{ $sideClass }} max-width-none w-full sm:max-w-sm md:mx-8 font-sans text-sm sm:shape-outside sm:mt-21"
   data-ga-category="inline:related"
 >
   <nav class="py-4">

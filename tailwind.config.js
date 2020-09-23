@@ -51,6 +51,9 @@ module.exports = {
         normal: "1.6",
         hed: "1.15",
       },
+      margin: {
+        "21": "5.25rem", // for staggered sidebars
+      },
       spacing: {
         "16x9": `${(100 * 9) / 16}%`,
         "6x4": `${(100 * 4) / 6}%`,
