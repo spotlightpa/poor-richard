@@ -74,12 +74,12 @@ html {
   @apply leading-relaxed;
 }
 
-.content-aside > p a {
+.content-aside > * a {
   @apply text-darkblue underline;
   @apply transition-colors duration-500;
 }
 
-.content-aside > p a:hover {
+.content-aside > * a:hover {
   @apply text-yellow;
 }
 
