@@ -7,6 +7,25 @@
   :class="{'h-40': !isOpen}"
 >
   <div
+    class="absolute inset-x-0 bottom-0 md:hidden"
+    x-show="!isOpen"
+  >
+    <button
+      :aria-expanded="''+isOpen"
+      class="text-darkblue hover:text-yellow hover:underline leading-4 mb-4"
+      @click="isOpen = true"
+    >
+      <span aria-hidden="true">
+        <svg class="fill-current h-4 w-4 inline-block">
+          <use xlink:href="#plus-svg"></use>
+        </svg>
+      </span>
+      <span class="ml-2 uppercase align-bottom">
+        Show more…
+      </span>
+    </button>
+  </div>
+  <div
     class="bg-key content-aside h-24 md:h-auto overflow-hidden relative"
     :class="{'h-24': !isOpen}"
   >
@@ -15,21 +34,6 @@
       class="absolute inset-0 bg-gradient-to-t from-white md:hidden"
       x-show="!isOpen"
     >
-    </div>
-  </div>
-  <div
-    class="absolute inset-x-0 bottom-0 md:hidden"
-    x-show="!isOpen"
-  >
-    <div class="">
-      <button
-        class="bg-blue px-4 py-2 text-white font-bold uppercase tracking-widest rounded hover:bg-blue-darker"
-        @click="isOpen = true"
-      >
-        <span>
-          Show more…
-        </span>
-      </button>
     </div>
   </div>
   <hr hidden>
