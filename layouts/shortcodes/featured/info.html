@@ -1,44 +1,40 @@
 {{ $side := .Get "side" | default "left" }}
 {{ $sideClass := cond (eq $side "right") "float-right" "float-left"}}
 <aside
-  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm hidden md:block"
+  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm relative mb-4 md:mb-0 h-40 md:h-auto"
   data-ga-category="inline:info"
   x-data="{ isOpen: false }"
+  :class="{'h-40': !isOpen}"
 >
-  <button
-    class="md:hidden underline text-darkblue hover:text-yellow text-center w-full text-base transition-color duration-500"
-    :aria-expanded="isOpen"
-    x-cloak
-    @click="isOpen = !isOpen"
-  >
-    <span aria-hidden="true">
-      <svg
-        class="fill-current h-4 w-4 inline-block transform transition-transform duration-500"
-        :class="isOpen ? 'rotate-90' : 'rotate-0'"
-        {{/* purge CSS hack */}}
-        x-transition="rotate-90 rotate-0"
-      >
-        <use xlink:href="#right-svg"></use>
-      </svg>
-    </span>
-    <span x-show="!isOpen">
-      Show more info…
-    </span>
-    <span x-cloak x-show="isOpen">
-      Hide more info…
-    </span>
-  </button>
   <div
-    class="bg-info content-aside md:block-important"
-    x-show="isOpen"
-    x-transition:enter="transition ease-out duration-500"
-    x-transition:enter-start="opacity-0 transform -translate-y-8"
-    x-transition:enter-end="opacity-100 transform translate-y-0"
-    x-transition:leave="transition ease-out duration-500"
-    x-transition:leave-start="opacity-100 transform translate-y-0"
-    x-transition:leave-end="opacity-0 transform -translate-y-20"
+    class="absolute inset-x-0 bottom-0 md:hidden"
+    x-show="!isOpen"
+  >
+    <button
+      :aria-expanded="''+isOpen"
+      class="text-darkblue hover:text-yellow hover:underline leading-4 mb-4"
+      @click="isOpen = true"
+    >
+      <span aria-hidden="true">
+        <svg class="fill-current h-4 w-4 inline-block">
+          <use xlink:href="#plus-svg"></use>
+        </svg>
+      </span>
+      <span class="ml-2 uppercase align-bottom">
+        Show more…
+      </span>
+    </button>
+  </div>
+  <div
+    class="bg-info content-aside h-24 md:h-auto overflow-hidden relative"
+    :class="{'h-24': !isOpen}"
   >
     {{ .Inner | markdownify }}
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-white md:hidden"
+      x-show="!isOpen"
+    >
+    </div>
     <hr hidden>
   </div>
 </aside>

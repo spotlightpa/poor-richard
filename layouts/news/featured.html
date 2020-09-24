@@ -142,15 +142,15 @@
     {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
     {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
     {{ $iconFB := resources.Get "@fontawesome/brands/facebook-f.svg" }}
+    {{ $iconPlus := resources.Get "@fontawesome/solid/plus-circle.svg" }}
     {{ $iconShare := resources.Get "@fontawesome/solid/share.svg" }}
     {{ $iconTwitter := resources.Get "@fontawesome/brands/twitter.svg" }}
-    {{ $iconRight := resources.Get "@fontawesome/solid/caret-right.svg" }}
     <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
     <svg id="close-svg">{{ $iconClose.Content|safeHTML }}</svg>
     <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
     <svg id="fb-svg">{{ $iconFB.Content|safeHTML }}</svg>
     <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
-    <svg id="right-svg">{{ $iconRight.Content|safeHTML }}</svg>
+    <svg id="plus-svg">{{ $iconPlus.Content|safeHTML }}</svg>
     <svg id="share-svg">{{ $iconShare.Content|safeHTML }}</svg>
     <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
   </div>
