@@ -9,42 +9,29 @@ Spotlight PA currently has two job openings:
 
 - - -
 
-## Investigative Health Reporter
+## Newsletter Editor / Reporter
 
-## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/79)
+## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/86)
 
-We are seeking a passionate accountability reporter to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 46 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
+We are seeking a passionate, dynamic voice to be the writer of our flagship newsletters, and to contribute to our accountability reporting on Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the U.S., with stories shared across more than 50 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
 
-**What you’ll do**
+**What you’ll do:** As a small, innovative newsroom, our newsletters are crucial to our success, and we continue to strive to differentiate them from other products on the market and include original accountability reporting and content. This editor/reporter will be the lead writer, provide a consistent and compelling voice, and ensure they continue to provide an experience unlike any other offered in the state. The editor/reporter will be responsible for overseeing all aspects of our daily and weekly newsletters, as well as contributing big ideas about how we could better serve our readers. At the end of the day, we view our newsletters as another reporting platform, so this position will also involve original reporting and writing of enterprise and investigative journalism to advance our mission of holding the powerful to account.
 
-* Public health reporting from an accountability perspective is more urgent than ever amid the ongoing coronavirus pandemic.
-* This reporter will lead Spotlight PA’s health reporting coverage, going beyond daily COVID-19 stories to examine the state’s current and past response, and its effect on Pennsylvanians.
-* The reporter will be expected to build sources and scrutinize the state Department of Health and the power players and special interests around it, as well as dig into the industries and professions it’s responsible for regulating.
-* The beat will also include coverage and focus on issues of drug addiction/rehabilitation and mental health.
+**Who we’re looking for:** Ideal candidates will have a reporting background and an interest in editing, as well as in developing their voice and engagement with readers of local journalism. An obsession with accuracy and the craft of clean, concise writing and editing is a must. Ideal candidates will be self-motivated and looking for an opportunity that gives them room to experiment and innovate. The best candidates will bring big ideas and a sense of urgency to work each day.
 
-**Who we’re looking for**
+Some other traits we’re interested in seeing include:
 
-* Ideal candidates will long have dreamed of focusing solely on health reporting from an accountability perspective.
-* They’ll have a track record of building sources from scratch and requesting public records to identify stories that uncover waste, fraud, or abuse inimical to the public interest.
-* We’ll want someone who persistently pitches stories, who is interested in writing short-term and long-term accountability stories — and the occasional daily — and who can keep several projects cooking at one time.
-* The best candidates will bring big ideas and a sense of urgency to work each day.
-
-**Some other traits we’re seeking include, but are not limited to:**
-
+* Strong attention to detail and organizational skills;
 * Fluency in foreign languages, particularly Spanish;
-* A comfort with requesting, scrutinizing, and using data in the reporting process;
-* Skepticism and a sharp eye to spot “red flags” that might reveal systemic problems;
+* Comfort with requesting, scrutinizing, and using data in the reporting process;
+* Skepticism and a sharp eye for spotting “red flags” that might reveal systemic problems;
 * Knack for building trust with sources and persuading them to talk on the record;
-* Obsession with accuracy and the craft of clean, concise writing;
-* And respect for colleagues and flexibility to help the team succeed in any way necessary
+* Passion for journalism that is diverse, equitable, and inclusive;
+* And respect for colleagues and flexibility to help the team succeed in any way necessary.
 
-**Other Things to Know**
+This job is full-time and includes benefits. While we’re based in Harrisburg, we will consider candidates who can work remotely from elsewhere in Pennsylvania. Applicants should include a resume, cover letter, and links to journalism or past newsletter experience they feel best exemplifies what we’re seeking.
 
-This job is full-time and includes benefits. Our newsroom is based in Harrisburg, but we will consider candidates who can work remotely from elsewhere in Pennsylvania. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.
-
-We know not everyone reading this will fit exactly what we’ve described. We encourage anyone who shares our passion for accountability journalism and health reporting to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with special needs.
-
-We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.
+We know not everyone reading this will fit exactly what we’ve described. We encourage anyone who shares our passion for accountability journalism and statewide reporting to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with special needs.
 
 - - -
 
