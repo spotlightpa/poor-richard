@@ -144,6 +144,10 @@ export function addGAListeners() {
     });
   });
 
+  on("click", "[data-ga-button]", (ev) => {
+    reportClick(ev);
+  });
+
   each("[data-ga-form]", (el) => {
     el.addEventListener(
       "submit",
