@@ -1,12 +1,11 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-32" "float-left lg:-ml-32" }}
+{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-40 sm:pl-8" "float-left lg:-ml-32 sm:pr-8" }}
 <aside
   class="
     {{ $sideClass }}
-    py-4 font-sans text-sm
-    relative w-full h-40 mb-4
-    sm:w-56 sm:h-auto sm:mb-0 sm:px-4
-    md:w-64
+    py-4 w-full font-sans text-sm
+    relative h-40 mb-4
+    sm:max-w-xs sm:h-auto sm:mb-0
     lg:shape-outside
   "
   data-ga-category="inline:info"
