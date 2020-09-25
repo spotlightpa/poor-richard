@@ -1,13 +1,20 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $sideClass := cond (eq $side "right") "float-right" "float-left"}}
+{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-32" "float-left lg:-ml-32" }}
 <aside
-  class="{{ $sideClass }} max-w-none w-full md:w-1/4 md:ml-10 md:mr-8 md:pr-8 py-4 font-sans text-sm relative mb-4 md:mb-0 h-40 md:h-auto"
+  class="
+    {{ $sideClass }}
+    py-4 font-sans text-sm
+    relative w-full h-40 mb-4
+    sm:w-56 sm:h-auto sm:mb-0 sm:px-4
+    md:w-64
+    lg:shape-outside
+  "
   data-ga-category="inline:info"
   x-data="{ isOpen: false }"
   :class="{'h-40': !isOpen}"
 >
   <div
-    class="absolute inset-x-0 bottom-0 md:hidden"
+    class="absolute inset-x-0 bottom-0 sm:hidden"
     x-show="!isOpen"
   >
     <button
@@ -28,12 +35,12 @@
     </button>
   </div>
   <div
-    class="bg-info content-aside h-24 md:h-auto overflow-hidden relative"
+    class="bg-info content-aside h-24 sm:h-auto overflow-hidden relative"
     :class="{'h-24': !isOpen}"
   >
     {{ .Inner | markdownify }}
     <div
-      class="absolute inset-0 bg-gradient-to-t from-white md:hidden"
+      class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
       x-show="!isOpen"
     >
     </div>
