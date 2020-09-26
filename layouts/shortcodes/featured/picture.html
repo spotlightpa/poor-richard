@@ -3,7 +3,7 @@
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
 {{ $link := .Get "link" | htmlUnescape }}
-{{ $figClass := .Get "figure-class" | htmlUnescape | default "max-w-full my-12 mx-auto" }}
+{{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
 {{ $imgClass := .Get "class" | htmlUnescape | default "bg-g-4 mx-auto block" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
 

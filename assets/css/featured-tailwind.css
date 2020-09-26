@@ -42,10 +42,6 @@ html {
   @apply text-yellow;
 }
 
-.content-area > * {
-  @apply mx-auto max-w-content;
-}
-
 .content-area > p + p,
 .content-area > aside + p,
 .content-area > figure + p {
@@ -74,20 +70,20 @@ html {
   @apply leading-relaxed;
 }
 
-.content-aside > * a {
+.content-aside a {
   @apply text-darkblue underline;
   @apply transition-colors duration-500;
 }
 
-.content-aside > * a:hover {
+.content-aside a:hover {
   @apply text-yellow;
 }
 
 .content-aside > ul {
-  @apply list-disc;
+  @apply list-disc list-inside;
 }
 .content-aside > ol {
-  @apply list-decimal;
+  @apply list-decimal list-inside;
 }
 
 .content-aside > h1,

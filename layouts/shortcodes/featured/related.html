@@ -1,10 +1,15 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 md:pl-8" "float-left sm:pr-4 md:pr-8"}}
+{{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 lg:-mr-40" "float-left sm:pr-4 lg:-ml-24" }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
 {{ $related := $news.RegularPages.Related .Page | first 3 }}
 {{ if $related }}
   <aside
-    class="{{ $sideClass }} max-width-none w-full sm:max-w-sm md:mx-8 font-sans text-sm sm:shape-outside sm:mt-21"
+    class="
+      {{ $sideClass }}
+      font-sans text-sm
+      w-full mb-4
+      sm:max-w-xs sm:mb-0 sm:shape-outside sm:mt-21
+    "
     data-ga-category="inline:related"
   >
     <nav class="py-4">
@@ -13,7 +18,7 @@
           More From Spotlight PA
         </span>
       </h2>
-      <ul class="space-y-4 my-4">
+      <ul class="space-y-4 mt-4">
         {{ range $related }}
           <li class="font-bold">
             <a
