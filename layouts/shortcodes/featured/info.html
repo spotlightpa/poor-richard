@@ -1,5 +1,5 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-40 sm:pl-8" "float-left lg:-ml-32 sm:pr-8" }}
+{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-40 sm:pl-10" "float-left lg:-ml-32 sm:pr-8" }}
 <aside
   class="
     {{ $sideClass }}
@@ -34,7 +34,7 @@
     </button>
   </div>
   <div
-    class="bg-info content-aside h-24 sm:h-auto overflow-hidden relative"
+    class="bg-info content-aside h-24 sm:h-auto overflow-hidden sm:overflow-visible relative"
     :class="{'h-24': !isOpen}"
   >
     {{ .Inner | markdownify }}

@@ -80,10 +80,10 @@ html {
 }
 
 .content-aside > ul {
-  @apply list-disc list-inside;
+  @apply list-disc;
 }
 .content-aside > ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal;
 }
 
 .content-aside > h1,
