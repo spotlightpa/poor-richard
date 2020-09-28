@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-09-25-SPLVOTE25.md"
+    "content/news/2020-09-28-SPLSTORM26.md"
   ],
   "subfeatures": [
-    "content/news/2020-09-18-SPLCANVASS18.md",
-    "content/news/2020-09-02-SPLREFORM02.md"
+    "content/news/2020-09-25-SPLVOTE25.md",
+    "content/news/2020-09-18-SPLCANVASS18.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
