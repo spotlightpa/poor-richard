@@ -1,8 +1,8 @@
 import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
 import {
   onTestPage,
-  showModalDonate,
-  sawModalDonate,
+  showModalNewsletter,
+  sawModalNewsletter,
 } from "../utils/metrics.js";
 
 const delay = onTestPage ? 500 : 2000; // 2s
@@ -17,7 +17,7 @@ export default function modal() {
     },
 
     init() {
-      if (showModalDonate) {
+      if (showModalNewsletter) {
         window.setTimeout(() => {
           this.show();
         }, delay);
@@ -25,9 +25,9 @@ export default function modal() {
     },
 
     show() {
-      sawModalDonate();
+      sawModalNewsletter();
       let gaEvent = buildEvent(this.$el);
-      gaEvent.eventAction = "modal:donate:open";
+      gaEvent.eventAction = "modal:newsletter:open";
       gaEvent.nonInteraction = true;
       sendGAEvent(gaEvent);
 
@@ -48,7 +48,7 @@ export default function modal() {
       this.isOpen = false;
       if (sendEvent) {
         let gaEvent = buildEvent(this.$el);
-        gaEvent.eventAction = "modal:donate:dismiss";
+        gaEvent.eventAction = "modal:newsletter:dismiss";
         sendGAEvent(gaEvent);
       }
     },
