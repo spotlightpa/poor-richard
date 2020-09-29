@@ -412,29 +412,38 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Jacqueline Hamilton
 * Karen Hamm
 * Alana M. Handman
+* William Hanekamp
 * Mimi Hanks-Bell
 * Katherine Hannaford
 * Don Hannum
 * Elizabeth H. Harbits
 * Lizzy Hardison
+* Anne Harris 
 * Margaret Harris
 * Joan Harrold
 * Gerry Hartzel
 * Dan Hartzell
+* Ellen Harvey
 * Catherine Hastings
+* Bernice Hausman
+* Alan Hayakawa
 * Valerie Hayes
 * Cam & Bob Hays
+* Helen Hazi
 * David He
 * T. Hechler
 * Joseph Heeney
 * Kathleen & Steven Heidecker
+* Danya Henninger
 * Kevin M. Hepler, MD
 * Ellen Herman
+* Janice Herrold
 * Grace E. Herstine
 * David Hess
 * Connie Hester
 * Stacey Hetrick
 * Hagan Hetz
+* Stephen Heverin
 * Clint Heverly
 * Pamela H. Hicks
 * Christine High
@@ -455,7 +464,9 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Kristen Houser
 * Feather Houstoun
 * Kate Howard
+* Nancy Hoyt
 * Huennekens Family Fund
+* Roger Huggard
 * Stephen R. Hughes
 * Richard W. Hurst
 * Mary & Howard Hurtig
@@ -463,6 +474,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * James Hutton
 * Lynda Hutton
 * Sharon Hyde
+* Kathryn Hynes
 * Robert M. Hynosky
 * Annette E. Inker
 * Casey & Kristen Irvine
@@ -472,11 +484,13 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Stephen Ivey
 * Martha Jablow
 * Christine A. Jacobs
+* Lynne Jacobs
 * Jean Jacobsen
 * Dwight & Vangie Jaggard
 * John Jakaboski
 * Arlene Jarett
 * Gregory A. Jarrett
+* Adrienne Jarvis
 * Al Jinks
 * Paul Johnson
 * Marissa Johnson-Valenzuela
@@ -492,6 +506,8 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Rasesh Kapadia
 * Karen M. Kaplan & Aaron M. Shatzman
 * Kurt E. Karl
+* Helen Katz
+* Stephen Katz
 * P. Katze
 * Jane Kauer & David Fleece
 * Paul Keller
@@ -502,19 +518,28 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Diana Kerr
 * Dave Kestner
 * Kirk Ketchum
+* Madeleine Keyes
+* Kim Kiendl
 * Cathy King
 * Douglas Kingsbury
 * Christine Kinsey
 * Dorothy Kint
 * Marcia Kirby
+* Regis Kirchner
 * Frank Kirkwood
+* Marvin Klein
+* Richard Kleiser
 * ML Klem
 * Anne & Jack Kline
 * Donald Kmieczak
 * Rose Marie Grahn Knight
+* James Kobelak
 * Harold G. Kohn
 * Harry E. Koch & Carole C. Koch
+* Richard Koch
 * Susan T. Koch
+* Thomas Koehler
+* Bevan Kohan
 * Gerald Kolpan
 * Howard Kolus
 * Judy Kornfeld
@@ -531,6 +556,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * The Krull Family
 * John Krzeminski
 * Tina Kuhlman
+* Claudio Kuhn
 * Kevin Kuhn
 * Jennifer Kuhns
 * Steven Kuloszewski
@@ -550,6 +576,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Lora Lavin
 * Cindy Lawn
 * Harriet Lawrence
+* Charles Leach
 * Patricia Leach
 * Irwin Lederstein
 * Jamie Lemon & Steve Cline
@@ -567,16 +594,22 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Daniel Lynch
 * Deric Lyon & Lauren Hayes
 * Matt Lyon
+* John F. Lyons
 * Nancy Lyons
 * Tim Lyons
 * T. Machado
+* Philip Magistro
 * James J. Maguire
+* James Mahan
 * Ed Mahon
+* Kris Mamula
 * Robert L. Maney
+* Ro Manmiller
 * Fred R. Manthai
 * Lelah Marie
 * Lynn Marks & Clifford Pearlman
 * David E. Marschka
+* Dan Marseglia
 * David Martens/The York Dispatch
 * Martina Martin
 * Meg Martin & Peter Cox
