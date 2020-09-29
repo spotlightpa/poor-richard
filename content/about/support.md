@@ -138,9 +138,12 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Heidi Butler
 * J.L. Byrne & C.M. Hersh
 * Stacey C. Cahn
+* Eldon Cain
 * Charles Cairns
+* Julieta Calmon
 * James Calpas
 * Andrew Candor
+* Roberta Capcara
 * John Capwell
 * Joseph L. Carbo
 * Calvin S. Card
@@ -148,13 +151,18 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Hannah Carney
 * Nicholas W. Carosella
 * Will Carpenter
+* Augustin Carr
 * Bruce Carr
 * Richard Carroll
+* Judith Carroll
 * J. Carson
+* Jeannette Carter
+* Kathy Carter
 * Linda L. Casale
 * Ashleigh Graf Casassa
 * Ben & Laura Cattell Noll
 * Edward Cawley
+* Larry Ceisler
 * Dianne Chambless
 * Marguerite Chandler
 * Bonnie Chang
@@ -165,12 +173,15 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Edward Claghorn
 * Jordan Clark
 * Rebecca Clark
+* Theodora Clark
 * Dr. Dane S. Claussen
 * Francisco Cleaves
 * Constance B. Clery
+* Ron Clever
 * Stephen Cline
 * Jennifer Coffey
 * Jeff Cogshall
+* Mark Cohen
 * Milton Cohen
 * Sean Collins
 * Carolyn Comitta
@@ -179,18 +190,22 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * P. Condron
 * Robin Connelly
 * John Conrad Jr.
+* Karen Conrad
 * John & Joy Burt Conti
 * Donna Thiel Cook
 * Ira Cooperman
 * John M. Corcoran Esq.
 * J. Cordingley
+* George C. Corson, Jr.
 * Eugene Cosgrove
 * Douglas and Laurel Costa
 * R. Cotlar
 * Brett Cott
 * Richard F. Couche
+* Emily Cox
 * Chris Coyle
 * C. Craige
+* Brittany Crampsie
 * Lauren Cristella
 * Barbara Criswell
 * Karen Crosby
@@ -206,13 +221,16 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Joan Daniels
 * Ethel W. Darrohn
 * Susan K. David
+* Dan Davis
 * David & Lillian Davis
+* Joyce Davis
 * Michael E. Davis
 * Julie Daye
 * Donald DeCary Sr.
 * Fred Dedrick
 * Charles DeFanti
 * Timothy DeFoor
+* Holly Deiaco-Smith
 * Connie & Terry Dellmuth
 * Mike Del Vacchio
 * Fran DeMillion
@@ -235,7 +253,11 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * R. Donegan
 * Michael Donofrio
 * Richard Donofry
+* Lawrence Doperak
+* Monica Dougherty
 * Paul Downs
+* Gorana Draguljic
+* Francis Drotar
 * Earl Drumheiser
 * Franklin Duddy
 * Stephen Duncan
