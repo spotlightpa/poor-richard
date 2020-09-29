@@ -265,6 +265,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Rebecca J. Durante
 * Charles Dyer
 * J.M. Dzubinski
+* William K. Ebel, Jr.
 * E. Eckerle
 * C. Eddy
 * James Edmiston
@@ -272,25 +273,31 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Chad Efaw
 * James Ehrman
 * Carol Eisenbise
+* Lynne Eitel
 * Skip Elder
 * Liam Elder-Connors
 * Dianne Elderkin
 * Joseph Elias
+* Scott Elliott
 * Maggie Emery
 * L. Encelewski
+* Tom Engleman
 * Mary Erdman
 * Lisa Ernst
 * E. Margaret Eshleman
 * Russ Eshleman
 * Rosa & Alberto Esquenazi
 * Frank Evelhoch II
+* Linda Everhart
 * Becky Everett
 * Kathleen Eves
 * Thomas Eveslage
 * Thomas & Sonja Eveslage
 * Aaron Fafarman
 * C. Fairchild
+* Esther Falcetta
 * James Falls
+* Jack Farwig
 * J. Fauls
 * B. Faulstick
 * John Feather Jr.
@@ -301,6 +308,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * John Fernbacher
 * Winifred J. Fessenbecker
 * David Fiedler
+* Ronald Filippelli
 * Nicholas Fink
 * Ambrose Finnegan
 * M. Firth
@@ -308,7 +316,9 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Michael Flannery
 * Thomas Flocco
 * Michael Flynn
+* Yvonne C. Foery
 * Barbara Forbes-Rhouni
+* Jennifer Forehand
 * Stephen Forest
 * Rebecca & Ari Forman
 * Leroy Forney
@@ -317,16 +327,21 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Robert Frable
 * Daniel Fraccica
 * Susannah Frame
+* Mary France
 * Barbara Francis
 * David Frankenfield
 * William Franks
 * Bruce P. Frassinelli
+* Brian Frederick
 * Kimberly Freeman
 * Gary French
+* Christine Frick
 * Jim Friedlich & Melissa Stern
+* Phil Friedman
 * Jake Friel
 * Karen Friel
 * Ryan Froman
+* Catherine Frost
 * Scott Frost
 * Isla Fruchter
 * Joseph M. Fulfs
@@ -336,6 +351,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
+* James Gates
 * Robert L. Gatski, Jr.
 * Edmond Guadelli
 * John Gaynard
@@ -344,26 +360,35 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Barbara Geistwhite
 * Lee Gemmill
 * Tom Gemmill
+* Daniel George
 * Michael George
 * Nancy & Michael George
 * S. George
 * Thomas Gery
+* Thomas Getzen
 * Diane K. Gilroy
+* Lorraine Gimblett
 * Lynda Ginsburg
 * Nicholas Giordano
 * Stephen M. Glynn
 * Denise Gmerek
 * Jennifer Goettner
 * Nancy B. Gold
+* Wendy Goldberg
 * Mary L. Goldman
 * Tamara Goldman
 * William Gontram
 * Ellen Goodman
+* Joanne Gordon 
+* Gerry Gorelick
 * J. Goss
+* Andrew Gowa
 * George Gowen
 * Barbara Graham
 * Ralf Rundgren Graves
 * John F. Graybill
+* Marie Green-McKeon
+* Marjorie Greenfield
 * T. & B. Griffith
 * Brent Groce
 * Gerald Groff
