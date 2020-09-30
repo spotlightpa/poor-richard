@@ -645,17 +645,25 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * William McNeal
 * Kevin McNeill
 * Evie McNiff
+* Priscilla McNulty
 * Linda & Robert Meckley
+* Annamaria Melegh
 * K. Melton
 * Keith G. Melville
+* Diane Menio
 * Jules J. Mermelstein
 * Bunny Van Meter
 * Rosalyn Metzger
 * Albert R. Miller
+* Barbara Miller
+* Karen Miller
 * Larry Miller
 * Michael Miller Jr.
+* Mitchell Miller
 * Myles Miller
+* Victoria Miller
 * Neil Millheim
+* Scott Mintzer
 * Ed Mitchell
 * Jennifer & Dave Mittereder
 * Mike Molesevich
@@ -671,8 +679,10 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Jackie Morrill & Mike Donahue
 * Bruce Morris & Colleen Gallagher
 * Ted & Barbara Morse
+* Jon Moss
 * Gordon Mott
 * Douglas Motter
+* Amy Moyer
 * P.F. Moyer
 * Toni Moyer
 * Joe Mikuliak
@@ -682,6 +692,9 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Susan Murawski
 * Gary Muzzelo
 * Holly Myers
+* Cory Nade
+* Diane Nagle
+* John Nagy
 * Jonathan Naser
 * Chris Nawrocki
 * Kenneth R. Nealon
@@ -689,35 +702,44 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * James Neff
 * Heidi & Kenneth Neiswender
 * B. Nelson
+* Edward Nielsen
 * John A. Nikoloff
 * M. Noel
 * Maria Centenera Nonemaker
 * Steve Noone
+* Raymond O'Boyle 
 * Carol O'Brien
 * Marty O’Brien
 * Robert O'Donnell
 * Gerald O'Hara
 * Toluwalope Onafowokan
 * Maddi O'Neill
+* Nancy Oppedal
 * Kari Orchard
 * Lynda Orfanelli
 * Ellen M. Ormond
 * Kathleen O'Rourke
+* Kathleen O'Toole
 * Jesse N. Otto
 * Dennis Owens
+* Rosanne Oyer
 * Ronald Ozio
 * William Paci
 * David & Roxanne Palmer
 * Leanora Paniccia
+* Carol Parowski
 * J. Parsons
 * Harvey Partica
+* Elizabeth Parziale
 * Meaghan, Alok & Sachin Pattani
 * Jeanne Patterson
 * Jan Paul
 * Lydia Pecker
 * Mark Pecker
 * Ann Pehle
+* Dianne Pelullo
 * Anne Peniazek
+* Sue Pera
 * John Perdoch
 * Amy L. Perez
 * Richel Perretti
@@ -729,7 +751,11 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Priscilla Fox Pfizenmayer
 * D. & G. Phelps
 * Amy Phillips
+* Diane Phillips
+* Christine Caldara Piatos
 * Renee Piccirilli
+* Joanna Pierce
+* Alicia Pigott
 * Rick Piper
 * Joseph J. Podrasky
 * Daniel Poresky
@@ -742,7 +768,9 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * G. Preuninger
 * Noah Price
 * Lois Prytherch
+* Ellie Pyles
 * Harry Rambo
+* Linda Ramsey
 * Susan Ranck
 * J. Randolph
 * Theresa M. Rang
@@ -751,6 +779,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Sean Raymond
 * Emilio Recio
 * Luke Reed
+* Lauri Reeder
 * Sandra Reese
 * Brenda Reigle
 * Peter Reilly
@@ -762,12 +791,21 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Sarah Ricks
 * Ralph Riedel
 * Eric Riese
+* Gloria Reisman
+* Rebecca Richards
+* Michele Richman
+* Adam Richter
+* Alex Roarty
 * David Robertson
+* Fatima Robinson
+* Christine Rockwell
 * Edward T. Rodgers
 * Peter & Joanne Rohana
 * Mary Rollman
+* Kathryn Rolston
 * Lou Romito
 * Mary Catherine Roper
+* Craig Rose
 * Larry Rose
 * Jeremy C. Rosenbaum, Esq.
 * Susan Rosenberg
@@ -780,6 +818,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * William Ruffley
 * Amy Ruffo
 * Edwin Rund
+* Mark Rutherford
 * Gary Ryan
 * James Ryan
 * Paul F. Sable & Eleanor M. Sable
@@ -787,6 +826,7 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Benedict X. Saia
 * David and Ben Salkin
 * Merle Salkin
+* James Salvaggio
 * Patrick Sanaghan
 * Nicholas Sanders
 * John Sandy
