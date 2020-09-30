@@ -1009,26 +1009,38 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Thomas Whalen
 * L. Whelan
 * Rhonda White
+* Suzanne P. White
 * Kathleen F. Weidner
 * Talia Wiener
 * Justin Wier
 * William Penn Foundation Matching Gifts Program
+* Antoine Williams
+* Evan Williams
+* Donna Williams 
 * Richard Williams
+* Sabrina Williams
 * Joan Williamson
 * Harold Wilson
 * Len & Joyce Wilson
 * Mary Wilson
+* Sharon Winter
 * Stan Wischnowski
+* Cheryl Wist
+* Cynthia Withers
 * A. Withrow
 * John Wittenbraker
 * Deborah Wolfe
 * George Wolff
 * Kathryn Wolfson
+* Susan Wood
 * Barbara Woodin
+* Susan Wooley
+* Robert Wooten
 * Margaret Wren
 * Francis Wynne
 * Tom Wyse
 * Peter Yaffe
+* Joseph Yake
 * Dr. Bob Yapsuga
 * Tracy Yeomans
 * Berwood Yost
@@ -1037,12 +1049,15 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Karen Young
 * Rick Young
 * Sherley Young
+* Anne Zacharias
 * Deborah Zateeny
 * Leonard Zawistowski Jr.
 * Susan Zeelander
+* Stephen Zeller
 * Matt Zencey
 * Paul Zieger
 * Liz Zimmerman
 * Michelle Zimmerman
 * Rebekah Zimmerman
-* Gerald Zubkoff {{%/supporters-list%}}
+* Gerald Zubkoff 
+* Anne M. Zug {{%/supporters-list%}}
