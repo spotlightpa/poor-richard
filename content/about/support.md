@@ -827,12 +827,16 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * David and Ben Salkin
 * Merle Salkin
 * James Salvaggio
+* Judith Samans-Dunn
 * Patrick Sanaghan
 * Nicholas Sanders
 * John Sandy
 * C. Sarnoski
 * Robert & Judith Schachner
+* Alletta Schadler 
 * David & Pat Schaeffer
+* John Schaeffer
+* Philip Scharl
 * Laurie Scheid
 * Gary & Dode Scheimer
 * Leslie Schlessinger
@@ -859,9 +863,11 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * David S. Share
 * Carl & Janet Sharer
 * Loretta Sharkey
+* Susan Sheehan
 * Michael Sheketoff
 * Peter Shelly
 * Tom & Amy Sherry
+* Alexandra Shirreffs
 * Elizabeth Shollenberger
 * Kimberley Shore
 * Barry Shutt
@@ -871,15 +877,20 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * M. Silver
 * Claudia H. Siegel
 * Heather Simmons
+* Adam Simon
 * Mark Simon
+* Caroline Simpson
 * Robert Sims
 * Josh Singer
 * Emily Skopov
 * Ellen L. Sleeter
+* Richard Small
+* Scott Smedley
 * Carol L. Smith
 * Michael Smith
 * Robert Smith
 * Sallie K. Smith
+* Suzanne Smith
 * Thomas Smith
 * Tieshka Smith
 * Lucas Smolcic Larson
@@ -889,17 +900,24 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Susan Spaziani & John Williamson
 * Doreen Speidel
 * Michael Sperger
+* Lorraine Spikol
 * Anthony Spisto
+* Christine Spolar
 * Christopher Spratt
 * Jane Sprecher
+* Mary Sproat
 * Rick Stafford
 * Joseph Stefens
 * Mike Stabinski
 * Norman St. Amour
+* Robert Starr
 * Lenore M. Steinmetz
 * John Stenger
+* Joan Stern
 * Pamela Stetor
+* Reid Stever
 * Bob Stewart
+* Robert Stewart
 * John Stickel
 * Harriet Stone
 * Thomas Stone
@@ -915,17 +933,22 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Cary Scott Summers
 * Burnetta Swartz
 * Jeffrey Sweet
+* Mary Sweet
+* Benjamin Swofford
 * Marian Szmyd
 * Dr. J. Szumiloski
+* Mark Szybist
 * Ardith Talbott
 * John Tampanello
 * Barbara J. Taylor
+* John Taylor
 * Randy & Marcie Taylor
 * Paul Teese
 * Jocelyn Tenney
 * Freda Tepfer
 * Matthew Terruso
 * Elise Thomas
+* Lynn Thomas
 * R. Thomas
 * Donald Thompson
 * Roger Thompson
@@ -935,9 +958,14 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Brian Toal
 * Coxey Toogood
 * Charles Topper
+* Ray Torres
 * Karen Hale Toth
 * Thomas L. Toth
+* Bill Travers
+* Adam Trott
 * Debbie Trudeau
+* Walter Tsou
+* Pam Tulchinsky
 * Margaret Turcich
 * Cynthia Tyler
 * Walter C. Uhler
@@ -945,11 +973,14 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Elizabeth Useem
 * Jane Valdes-Dapena
 * Heather Valudes
+* Richard Van Aken
 * Harold Vandegrift
 * Dennis Verona
 * Robert F. Vickery
+* Sara Vigneri
 * Joseph C. Vignola
 * Fred Vodde
+* Richard Waggy
 * Fritz Walker
 * Russ Walker
 * John Wall
@@ -958,18 +989,23 @@ Laura and John Arnold <br> Jennifer Bertetto <br> [The Erie Community Foundation
 * Frank D. Walsh
 * Hannah Walsh
 * Robin Walter
+* Kay Walters
 * Diane M. Ward
 * Mary Warner
 * Karen Weaver
+* Mary Weaver
 * Nathaniel Webb
 * Koert Wehberg, Esq.
+* Karen Weibel
 * Patricia Weidenhamer
 * Debra Weiner
 * Raymond Weinmann Jr.
+* Sy Weiss
 * C. Wentzel
 * Gerald F. Werkheiser
 * Judy Wertheimer
 * E. Wessel
+* Richard Wexelblat
 * Thomas Whalen
 * L. Whelan
 * Rhonda White
