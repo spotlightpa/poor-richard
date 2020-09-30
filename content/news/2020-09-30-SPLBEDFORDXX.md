@@ -112,8 +112,9 @@ In its first news release, issued early the next morning, state police said that
 
 But in the videos, the only time Terry Myers can be heard yelling at people to get away is after the first shot was fired.
 
-<div id="fb-root"></div>
-<script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v8.0" nonce="Co5mQC3F"></script><div class="fb-video" data-href="https://www.facebook.com/tory.lowe1/videos/10220699429448580"><blockquote cite="https://www.facebook.com/tory.lowe1/videos/10220699429448580/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tory.lowe1/videos/10220699429448580/"></a><p>White man with a riffle shot at us... We headed to the hospital now. Cino was hit.</p>Posted by <a href="#" role="button">Tory Lowe</a> on Monday, August 24, 2020</blockquote></div>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftory.lowe1%2Fvideos%2F10220699429448580%2F&show_text=0&width=267" width="267" height="476" style="border:none; overflow:hidden; margin: 1rem auto; display: block;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+<blockquote cite="https://www.facebook.com/tory.lowe1/videos/10220699429448580/"><a href="https://www.facebook.com/tory.lowe1/videos/10220699429448580/"></a><p>White man with a riffle shot at us... We headed to the hospital now. Cino was hit.</p>Posted by <a href="#" role="button">Tory Lowe</a> on Monday, August 24, 2020</blockquote>
 
 “I can tell you that we had not interacted with either man before the gunshots rang out,” said Renee Muza, a video producer who was filming the documentary about the marchers and caught the shooting on camera. “We did not speak to, on any occasion, either man. We didn’t even see them.”
 
