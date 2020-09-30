@@ -147,7 +147,7 @@ One of them, Jeremy Decker, 43, drove to the hotel and fired a gun into the air 
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-On Wednesday at around 10:40 p.m. — two days after the original shooting — as the marchers made their way to the outskirts of McConnellsburg, in Franklin County, they walked over roads chalked with messages including “n—s suck,” <a href="https://www.facebook.com/100024409792996/videos/751936865629966/">video</a> taken by the group shows.
+On Wednesday at around 10:40 p.m. — two days after the original shooting — as the marchers made their way to the outskirts of McConnellsburg, in Fulton County, they walked over roads chalked with messages including “n—s suck,” <a href="https://www.facebook.com/100024409792996/videos/751936865629966/">video</a> taken by the group shows.
 
 Also shown on the video drawn on the street: “pick cotton," “slaves,” and “go home.”
 
