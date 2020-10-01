@@ -17,6 +17,12 @@ url = "https://triblive.com"
 logotype = "svg"
 
 [[partners]]
+name = "WITF"
+slug = "witf"
+url = "https://www.witf.org"
+logotype = "svg"
+
+[[partners]]
 name = "The Caucus"
 slug = "caucus"
 url = "https://caucuspa.com"
