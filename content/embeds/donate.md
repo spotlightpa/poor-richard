@@ -13,4 +13,9 @@ hint = "Text for teaser"
 name = "cta_text"
 placeholder = "Donate Now"
 hint = "Text for the call to action"
+
+[[page-query-params]]
+name = "eyebrow_text"
+placeholder = "Donate"
+hint = "Text for eyebrow"
 +++
