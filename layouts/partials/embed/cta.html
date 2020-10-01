@@ -1,74 +1,43 @@
-<div data-ga-category="cta">
-  <div
-    id="cta-container"
-    class="has-text-centered box is-invisible"
-  >
+<div
+  data-ga-category="cta"
+  x-data="{
+    params: new URLSearchParams(window.location.search),
+    get url() {
+      return this.params.get('url') || 'https://www.spotlightpa.org/';
+    },
+    _(name, fallback) {
+      return spl.sanitizeText(this.params.get(name) || fallback);
+    }
+  }"
+  x-cloak
+>
+  <div class="has-text-centered box">
     <h2 class="title is-6 is-spaced has-text-left">
       <a
-        href="https://www.spotlightpa.org/"
-        id="eyebrow-text"
+        :href="url"
         class="has-text-danger is-uppercase"
         data-ga-category="eyebrow"
         target="_blank"
-      >
-        Eyebrow
-      </a>
+        x-html="_('eyebrow', 'Eyebrow')"
+      ></a>
     </h2>
     <h2 class="subtitle is-5">
       <a
-        id="body-text"
-        href="https://www.spotlightpa.org/"
+        :href="url"
         class="has-text-black content"
         data-ga-category="body"
         target="_blank"
-      >
-        Body
-      </a>
+        x-html="_('body', 'Body')"
+      ></a>
     </h2>
     <div class="buttons is-centered">
       <a
-        id="cta-text"
-        href="https://www.spotlightpa.org/"
+        :href="url"
         class="button is-danger is-uppercase has-text-weight-semibold"
         data-ga-category="button"
         target="_blank"
-      >
-      Just Do It!
-      </a>
+        x-html="_('cta', 'Just Do It!')"
+      ></a>
     </div>
   </div>
 </div>
-<script>
-  (function() {
-    var url = /\burl=([^&]+)/.exec(window.location.search);
-    if (url) {
-      url = decodeURIComponent(url[1]);
-    }
-    function replacer(paramRe, qs) {
-      var el = document.querySelector(qs);
-      if (!el) {
-        return;
-      }
-      if (url) {
-        el.href = url;
-      }
-
-      var re = paramRe.exec(window.location.search);
-      if (!re) {
-        return;
-      }
-      var text = decodeURIComponent(re[1]);
-      el.innerText = text;
-      el.innerHTML = el.innerHTML
-        .replace(/&lt;b&gt;/g, "<b>")
-        .replace(/&lt;\/b&gt;/g, "</b>")
-        .replace(/&lt;i&gt;/g, "<i>")
-        .replace(/&lt;\/i&gt;/g, "</i>");
-    }
-
-    replacer(/\beyebrow=([^&]+)/, "#eyebrow-text");
-    replacer(/\bbody=([^&]+)/, "#body-text");
-    replacer(/\bcta=([^&]+)/, "#cta-text");
-    document.querySelector("#cta-container").classList.remove("is-invisible");
-  })();
-</script>

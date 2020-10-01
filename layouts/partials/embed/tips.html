@@ -1,10 +1,50 @@
-<div class="box" data-ga-category="contact">
+<div
+  class="box"
+  data-ga-category="contact"
+  x-data="{
+    showSpanish: false,
+    params: new URLSearchParams(window.location.search),
+    _(name, fallback) {
+      return spl.sanitizeText(this.params.get(name) || fallback);
+    }
+  }"
+  x-cloak
+>
   <a
+    x-show="!showSpanish"
     class="title is-7 has-text-danger is-pulled-right is-uppercase"
-    href="/embeds/tips-espanol/"
+    type="button"
+    data-ga-action="toggle-language:spanish"
+    @click="showSpanish = true"
   >En Español</a>
-  <h2 class="title is-6 has-text-danger has-text-left is-uppercase" id="tip-flag">Tips</h2>
-  <div class="block" id="text-block">
+  <a
+    x-cloak
+    x-show="showSpanish"
+    class="title is-7 has-text-danger is-pulled-right is-uppercase"
+    data-ga-action="toggle-language:english"
+    @click="showSpanish = false"
+  >In English</a>
+  <h2
+    class="title is-6 has-text-danger has-text-left is-uppercase"
+    x-show="!showSpanish"
+    x-text="_('flag_text', 'Tips')"
+  >Tips</h2>
+  <h2
+    x-cloak
+    x-show="showSpanish"
+    class="title is-6 has-text-danger has-text-left is-uppercase"
+  >Escríbenos</h2>
+  <div
+    class="block"
+    x-show="!showSpanish"
+    x-html="_('tip_text', '')"
+  ></div>
+  <div
+    x-cloak
+    class="block"
+    x-show="showSpanish"
+  >
+    ¿Tienes información sobre cómo el gobierno estatal de Pensilvania está respondiendo al virus? <strong>Escríbenos.</strong>
   </div>
   <form
     name="contact-page"
@@ -35,7 +75,7 @@
               id='{{ partial "helper/get-id" . }}'
               class="input is-small"
               type="text"
-              placeholder="Name"
+              :placeholder="showSpanish? 'Nombre': 'Name'"
               name="name"
               required
             >
@@ -51,7 +91,7 @@
               id='{{ partial "helper/get-id" . }}'
               class="input is-small"
               type="text"
-              placeholder="Email or phone number"
+              :placeholder="showSpanish? 'Correo o número de teléfono': 'Email or phone number'"
               name="email"
               required
             >
@@ -68,7 +108,7 @@
         <textarea
           id='{{ partial "helper/get-id" . }}'
           class="textarea is-small"
-          placeholder="What should we know?"
+          :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
           name="comment"
           rows="2"
         ></textarea>
@@ -80,56 +120,49 @@
           class="button is-small is-danger has-text-weight-semibold"
           type="submit"
           target="_blank"
+          x-text="showSpanish ? 'Enviar mensaje': 'Send message'"
         >
           Send message
         </button>
         <a
+          x-show="!showSpanish"
           href="/tips/"
           class="is-hidden-touch button is-light"
+          target="_blank"
         >
           Or see more secure ways to contact us
+        </a>
+        <a
+          x-cloak
+          x-show="showSpanish"
+          href="/tips/"
+          class="is-hidden-touch button is-light"
+          target="_blank"
+        >
+          Ver otras maneras más privadas de contactarnos
         </a>
       </div>
     </div>
     <div class="field is-hidden-desktop">
       <div class="control">
         <a
+          x-show="!showSpanish"
           href="/tips/"
           class="is-size-6 has-text-weight-semibold has-text-grey"
           target="_blank"
         >
           Or see more secure ways to contact us
         </a>
+        <a
+          x-cloak
+          x-show="showSpanish"
+          href="/tips/"
+          class="is-size-6 has-text-weight-semibold has-text-grey"
+          target="_blank"
+        >
+          Ver otras maneras más privadas de contactarnos
+        </a>
       </div>
     </div>
   </form>
 </div>
-<script>
-  (function() {
-    var hostPage = /\bhost_page=([^&]+)/.exec(window.location.hash);
-    if (hostPage) {
-      hostPage = hostPage[1];
-      var el = document.querySelector("[name=host_page]");
-      if (hostPage && el) {
-        el.value = decodeURIComponent(hostPage);
-      }
-    }
-
-    function replacer(paramRe, qs) {
-      var re = paramRe.exec(window.location.search);
-      var el = document.querySelector(qs);
-      if (!re || !el) {
-        return;
-      }
-      var text = decodeURIComponent(re[1]);
-      el.innerText = text;
-      el.innerHTML = el.innerHTML
-        .replace(/&lt;b&gt;/g, "<b>")
-        .replace(/&lt;\/b&gt;/g, "</b>")
-        .replace(/&lt;i&gt;/g, "<i>")
-        .replace(/&lt;\/i&gt;/g, "</i>");
-    }
-    replacer(/\btip_text=([^&]+)/, "#text-block");
-    replacer(/\bflag_text=([^&]+)/, "#tip-flag");
-  })();
-</script>

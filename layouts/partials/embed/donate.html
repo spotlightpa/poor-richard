@@ -1,49 +1,37 @@
-<div data-ga-category="donate">
+<div
+  data-ga-category="donate"
+  x-data="{
+    params: new URLSearchParams(window.location.search),
+    _(name, fallback) {
+      return spl.sanitizeText(this.params.get(name) || fallback);
+    }
+  }"
+  x-cloak
+>
   <div
     class="has-text-centered box"
   >
-    <h2 class="title is-6 is-spaced has-text-danger has-text-left is-uppercase">Donate</h2>
+    <h2
+      class="title is-6 is-spaced has-text-danger has-text-left is-uppercase"
+      x-text="_('eyebrow_text', 'Donate')"
+    >Donate</h2>
     <h2 class="subtitle is-5">
       <a
-        id="text-block"
         href="/donate/"
         class="has-text-black content"
         data-ga-category="body"
         target="_blank"
-      >
-        Spotlight PA provides essential, public-service journalism thanks to readers like you. Help us continue to cover the state's response to the coronavirus pandemic.
-      </a>
+        x-html="_('teaser_text', 'Spotlight PA provides essential, public-service journalism thanks to readers like you. Help us continue to cover the state’s response to the coronavirus pandemic.')"
+      ></a>
     </h2>
     <div class="buttons is-centered">
       <a
-        id="cta-text"
         href="/donate/"
         class="button is-danger is-uppercase has-text-weight-semibold"
         data-ga-category="button"
         target="_blank"
-      >
-        Yes, I want to help
-      </a>
+        x-html="_('cta_text', 'Yes, I want to help')"
+      ></a>
     </div>
   </div>
 </div>
-<script>
-  (function() {
-    function replacer(paramRe, qs) {
-      var re = paramRe.exec(window.location.search);
-      var el = document.querySelector(qs);
-      if (!re || !el) {
-        return;
-      }
-      var text = decodeURIComponent(re[1]);
-      el.innerText = text;
-      el.innerHTML = el.innerHTML
-        .replace(/&lt;b&gt;/g, "<b>")
-        .replace(/&lt;\/b&gt;/g, "</b>")
-        .replace(/&lt;i&gt;/g, "<i>")
-        .replace(/&lt;\/i&gt;/g, "</i>");
-    }
-    replacer(/\bteaser_text=([^&]+)/, "#text-block");
-    replacer(/\bcta_text=([^&]+)/, "#cta-text");
-  })();
-</script>
