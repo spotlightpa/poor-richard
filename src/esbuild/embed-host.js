@@ -8,6 +8,10 @@ onLoad(() => {
     if (el.shadowRoot || el.dataset.splEmbedVersion !== "1") {
       return;
     }
+    // Bail if user can't support URLSearchParams
+    if (!window.URLSearchParams) {
+      return;
+    }
     let src = el.dataset.splSrc;
     if (!/^(\/|http)/.test(src)) {
       // eslint-disable-next-line no-console
