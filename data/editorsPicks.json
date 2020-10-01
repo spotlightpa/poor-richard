@@ -1,17 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-09-30-SPLELEC01.md",
     "content/news/2020-10-01-SPLFORE04.md"
   ],
   "subfeatures": [
-    "content/news/2020-09-25-SPLVOTE25.md",
-    "content/news/2020-09-18-SPLCANVASS18.md"
+    "content/news/2020-09-30-SPLBEDFORDXX.md",
+    "content/news/2020-09-03-SPLPSP04.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2020-09-30-SPLHERSHEYXX.md",
-    "content/news/2020-09-30-SPLBEDFORDXX.md",
+    "content/news/2020-09-30-SPLELEC01.md",
     "content/news/2020-09-28-SPLSTORM26.md"
   ],
   "sidebarPicks": [
