@@ -14,7 +14,7 @@ function toStory(data, { width, height }) {
   };
 }
 
-export default ({ showDate = false }) => {
+export default function readMore({ showDate = false }) {
   return {
     analytics,
     showDate,
@@ -75,4 +75,4 @@ export default ({ showDate = false }) => {
       this.counter += 25;
     },
   };
-};
+}

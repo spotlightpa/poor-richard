@@ -1,7 +1,7 @@
 import fetchJSON from "../utils/fetch-json.js";
 import { reportClick as analytics } from "../utils/google-analytics.js";
 
-export default ({ mostPopularURL }) => {
+export default function mostPopular({ mostPopularURL }) {
   return {
     analytics,
     hasLoaded: false,
@@ -45,4 +45,4 @@ export default ({ mostPopularURL }) => {
         .slice(0, 5);
     },
   };
-};
+}
