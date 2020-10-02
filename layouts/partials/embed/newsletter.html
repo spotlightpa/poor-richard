@@ -7,24 +7,34 @@
     action='{{ .Param "investigator-action" }}'
     method="post"
     target="_blank"
+    x-data="{ hasFocused: false }"
   >
-    {{ partial "newsletter/investigator-hidden.html" . }}
+    <input type="hidden" name="redirect" value="https://www.spotlightpa.org/newsletters/thanks/">
+    <input type="hidden" name="redirect_sorry" value="https://www.spotlightpa.org/newsletters/sorry/">
+    <input type="hidden" name="breaking_news" value="1">
+    <p class="is-hidden" hidden>
+      <label>
+          <input type="checkbox" name="contact" value="1">
+          I am a robot
+      </label>
+    </p>
     <h2 class="title is-6 has-text-danger has-text-left is-uppercase">Newsletter</h2>
     <h2 class="subtitle is-5 has-text-black">
       Get every Spotlight PA story and the best
       <span class="is-hidden-mobile"><br /></span>
       investigative journalism from across Pa.
     </h2>
-    <div class="field has-addons">
+    <div class="field">
       <p class="control has-icons-left has-icons-right is-expanded">
         <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
         <input
           id='{{ partial "helper/get-id" . }}'
-          class="input is-small"
+          class="input"
           type="email"
           name="EMAIL"
           placeholder="Enter your email address"
           required
+          @focus.once="hasFocused = true"
         >
         <span class="icon is-left">
           <svg>
@@ -37,10 +47,35 @@
           </svg>
         </span>
       </p>
+    </div>
+    <div
+      class="field"
+      x-cloak
+      x-show="hasFocused"
+      x-transition:enter="fade-enter-active"
+      x-transition:enter-start="fade-enter"
+      x-transition:leave="fade-enter-active"
+      x-transition:leave-end="fade-enter"
+    >
+      <p class="control has-text-left has-text-weight-bold">
+        Receive updates
+      </p>
+      <p class="control has-text-left">
+        <label class="checkbox ml-4">
+            <input type="checkbox" name="investigator" value="1" checked>
+            Weekly
+        </label>
+        <label class="checkbox ml-4">
+            <input type="checkbox" name="papost" value="1" checked>
+            Daily
+        </label>
+      </p>
+    </div>
+    <div class="field">
       <p class="control">
         <button
           type="submit"
-          class="button is-small is-danger has-text-weight-semibold"
+          class="button is-danger has-text-weight-semibold is-fullwidth"
         >
           Sign Up
         </button>
