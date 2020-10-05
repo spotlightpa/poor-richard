@@ -93,7 +93,18 @@
 
       <button
         type="button"
+        x-show="freq === 'o'"
         class="button is-small is-light"
+        :class="btnClass(showOther)"
+        @click="showOther = !showOther"
+      >
+        Other
+      </button>
+
+      <button
+        type="button"
+        x-show="freq !== 'o'"
+        class="button is-small is-light is-hidden-mobile"
         :class="btnClass(showOther)"
         @click="showOther = !showOther"
       >
