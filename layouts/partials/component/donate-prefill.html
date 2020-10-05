@@ -4,13 +4,21 @@
     amount: '15',
     freq: 'm',
     showOther: false,
+    btnClass(cond) {
+      return {'is-danger': cond, 'is-light': !cond };
+    },
+    setAmt(freq, amount) {
+      this.freq = freq;
+      this.amount = amount;
+      this.showOther = false;
+    },
     get donateURL() {
       let period = {
         o: 'once',
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&amount=${this.amount}&installmentPeriod=${period}`
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&amount=${this.amount}&installmentPeriod=${period}`;
     }
   }"
 >
@@ -20,25 +28,25 @@
     <div class="buttons is-centered">
       <button
         type="button"
-        class="button is-medium"
-        :class="freq === 'm'? 'is-danger': 'is-light'"
-        @click="freq = 'm'; amount = '15'"
+        class="button is-medium is-danger"
+        :class="btnClass(freq === 'm')"
+        @click="setAmt('m', '15')"
       >
         Monthly
       </button>
       <button
         type="button"
-        class="button is-medium"
-        :class="freq === 'y'? 'is-danger': 'is-light'"
-        @click="freq = 'y'; amount = '180'"
+        class="button is-medium is-light"
+        :class="btnClass(freq === 'y')"
+        @click="setAmt('y', '180')"
       >
         Yearly
       </button>
       <button
         type="button"
-        class="button is-medium"
-        :class="freq === 'o'? 'is-danger': 'is-light'"
-        @click="freq = 'o'; amount = '180'"
+        class="button is-medium is-light"
+        :class="btnClass(freq === 'o')"
+        @click="setAmt('o', '180')"
       >
         One time only
       </button>
@@ -50,8 +58,8 @@
         {{ $freq := index . 2 }}
         <button
           type="button"
-          class="button is-medium"
-          :class="amount === '{{ $amount }}'? 'is-danger' : 'is-light'"
+          class="button is-medium is-light"
+          :class="btnClass(amount === '{{ $amount }}')"
           @click="amount = '{{ $amount }}'"
           x-show="freq === '{{ $freq }}'"
         >
@@ -82,8 +90,8 @@
 
       <button
         type="button"
-        class="button is-medium"
-        :class="showOther? 'is-danger': 'is-light'"
+        class="button is-medium is-light"
+        :class="btnClass(showOther)"
         @click="showOther = !showOther"
       >
         Other
