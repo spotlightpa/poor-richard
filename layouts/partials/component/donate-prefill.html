@@ -14,13 +14,13 @@
     }
   }"
 >
-  <div class="">
+  <div>
     <h2 class="title is-6 has-text-danger has-text-left is-uppercase is-spaced">Like what you read?</h2>
     <h2 class="title has-text-centered">Donate to Spotlight PA</h2>
     <div class="buttons is-centered">
       <button
         type="button"
-        class="button is-large"
+        class="button is-medium"
         :class="freq === 'm'? 'is-danger': 'is-light'"
         @click="freq = 'm'; amount = '15'"
       >
@@ -28,7 +28,7 @@
       </button>
       <button
         type="button"
-        class="button is-large"
+        class="button is-medium"
         :class="freq === 'y'? 'is-danger': 'is-light'"
         @click="freq = 'y'; amount = '180'"
       >
@@ -36,7 +36,7 @@
       </button>
       <button
         type="button"
-        class="button is-large"
+        class="button is-medium"
         :class="freq === 'o'? 'is-danger': 'is-light'"
         @click="freq = 'o'; amount = '180'"
       >
@@ -50,7 +50,7 @@
         {{ $freq := index . 2 }}
         <button
           type="button"
-          class="button is-large"
+          class="button is-medium"
           :class="amount === '{{ $amount }}'? 'is-danger' : 'is-light'"
           @click="amount = '{{ $amount }}'"
           x-show="freq === '{{ $freq }}'"
@@ -82,7 +82,7 @@
 
       <button
         type="button"
-        class="button is-large"
+        class="button is-medium"
         :class="showOther? 'is-danger': 'is-light'"
         @click="showOther = !showOther"
       >
@@ -113,7 +113,7 @@
     </div>
     <div class="buttons mt-4">
       <a
-        class="button is-fullwidth is-danger has-text-weight-semibold is-large"
+        class="button is-fullwidth is-danger has-text-weight-semibold is-medium"
         :href="donateURL"
         data-ga-action="https://www.spotlightpa.org/donate/"
       >
