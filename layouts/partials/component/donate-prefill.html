@@ -1,0 +1,132 @@
+<div
+  class="box no-js-hide"
+  x-data="{
+    amount: '15',
+    freq: 'm',
+    showOther: false,
+    get donateURL() {
+      let period = {
+        o: 'once',
+        m: 'monthly',
+        y: 'yearly',
+      }[this.freq];
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&amount=${this.amount}&installmentPeriod=${period}`
+    }
+  }"
+>
+  <div class="">
+    <h2 class="title is-6 has-text-danger has-text-left is-uppercase is-spaced">Like what you read?</h2>
+    <h2 class="title has-text-centered">Donate to Spotlight PA</h2>
+    <div class="buttons is-centered">
+      <button
+        type="button"
+        class="button is-large"
+        :class="freq === 'm'? 'is-danger': 'is-light'"
+        @click="freq = 'm'; amount = '15'"
+      >
+        Monthly
+      </button>
+      <button
+        type="button"
+        class="button is-large"
+        :class="freq === 'y'? 'is-danger': 'is-light'"
+        @click="freq = 'y'; amount = '180'"
+      >
+        Yearly
+      </button>
+      <button
+        type="button"
+        class="button is-large"
+        :class="freq === 'o'? 'is-danger': 'is-light'"
+        @click="freq = 'o'; amount = '180'"
+      >
+        One time only
+      </button>
+    </div>
+    <div class="buttons is-centered">
+      {{ define "donate-prefill-button" }}
+        {{ $amount := index . 0 }}
+        {{ $period := index . 1 }}
+        {{ $freq := index . 2 }}
+        <button
+          type="button"
+          class="button is-large"
+          :class="amount === '{{ $amount }}'? 'is-danger' : 'is-light'"
+          @click="amount = '{{ $amount }}'"
+          x-show="freq === '{{ $freq }}'"
+        >
+          ${{ $amount }}{{ $period }}
+        </button>
+      {{ end }}
+
+      {{ $btn := slice 10 "/mo." "m" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 15 "/mo." "m" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 25 "/mo." "m" }}
+      {{ template "donate-prefill-button" $btn }}
+
+      {{ $btn = slice 120 "/yr." "y" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 180 "/yr." "y" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 300 "/yr." "y" }}
+      {{ template "donate-prefill-button" $btn }}
+
+      {{ $btn = slice 120 "" "o" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 180 "" "o" }}
+      {{ template "donate-prefill-button" $btn }}
+      {{ $btn = slice 300 "" "o" }}
+      {{ template "donate-prefill-button" $btn }}
+
+      <button
+        type="button"
+        class="button is-large"
+        :class="showOther? 'is-danger': 'is-light'"
+        @click="showOther = !showOther"
+      >
+        Other
+      </button>
+    </div>
+    <div
+      class="field"
+      x-show="showOther"
+      x-transition:enter="fade-enter-active"
+      x-transition:enter-start="fade-enter"
+    >
+      <label
+        for='{{ partial "helper/inc-id" . }}'
+        class="label"
+      >
+        Other Amount:
+      </label>
+      <div class="control">
+        <input
+          id='{{ partial "helper/get-id" . }}'
+          type="text"
+          class="input"
+          inputmode="decimal"
+          x-model="amount"
+        >
+      </div>
+    </div>
+    <div class="buttons mt-4">
+      <a
+        class="button is-fullwidth is-danger has-text-weight-semibold is-large"
+        :href="donateURL"
+        data-ga-action="https://www.spotlightpa.org/donate/"
+      >
+        <span>
+          Yes, accountability matters
+        </span>
+        <span class="icon">
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-arrow-alt-circle-right fa-w-16">
+            <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z" class="">
+            </path>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
