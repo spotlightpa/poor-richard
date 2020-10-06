@@ -36,9 +36,9 @@ export default function modal() {
       document.body.parentElement.classList.add("is-clipped");
 
       this.oldFocus = document.activeElement;
-      this.$nextTick(() => {
+      window.setTimeout(() => {
         this.$refs.content.focus();
-      });
+      }, 500);
     },
 
     close(sendEvent = true) {
