@@ -55,7 +55,7 @@ module.exports = {
         hed: "1.15",
       },
       margin: {
-        "21": "5.25rem", // for staggered sidebars
+        21: "5.25rem", // for staggered sidebars
       },
       spacing: {
         "16x9": `${(100 * 9) / 16}%`,
@@ -75,6 +75,7 @@ module.exports = {
   },
   plugins: [],
   future: {
+    purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
 };
