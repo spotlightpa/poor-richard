@@ -7,6 +7,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   whitelistPatternsChildren: [
     // Don't purge attributes
     /disabled|multiple|readonly|rows|type|x-cloak/,
+    // modal bg
+    "is-clipped",
   ],
 });
 
