@@ -1,6 +1,6 @@
 <div
   class="modal"
-  data-ga-category="modal:newsletter:investigator"
+  data-ga-category="modal:newsletter:multi"
   :class="modalClass"
   x-data="spl.modal()"
   x-show="isOpen"
@@ -23,7 +23,7 @@
     @touchmove.away.prevent
   >
     <form
-      data-ga-form="newsletters:investigator"
+      data-ga-form="newsletters:multi"
       action='{{ .Param "investigator-action" }}'
       method="post"
       target="_blank"
