@@ -6,7 +6,11 @@
     params: new URLSearchParams(window.location.search),
     _(name, fallback) {
       return spl.sanitizeText(this.params.get(name) || fallback);
-    }
+    },
+    get hostPage(){
+      let h = window.location.hash.replace(/^#/, '');
+      return new URLSearchParams(h).get('host_page')
+    },
   }"
   x-cloak
 >
@@ -60,9 +64,13 @@
       <label>
         Don’t fill this out if you're human:
         <input name="bot-field">
-        <input name="host_page" type="hidden">
       </label>
     </p>
+    <input
+      name="host_page"
+      type="hidden"
+      :value="hostPage"
+    >
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field">
