@@ -1,0 +1,39 @@
+{{ $side := .Get "side" | default "left" }}
+{{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 lg:-mr-40" "float-left sm:pr-4 lg:-ml-24" }}
+{{ $self := .Page.RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page $self }}
+{{ $series := $params.series }}
+{{ if $series }}
+  <aside
+    class="
+      {{ $sideClass }}
+      font-sans text-sm
+      w-full mb-4
+      sm:max-w-xs sm:mb-0 sm:shape-outside sm:mt-21
+    "
+    data-ga-category="inline:related"
+  >
+    <nav class="py-4">
+      <h2 class="text-lg font-bold uppercase">
+        <span class="border-b-2 border-black">
+          More In This Series
+        </span>
+      </h2>
+      <ul class="space-y-4 mt-4">
+        {{ range where $series.Pages ".RelPermalink" "!=" $self }}
+          <li class="font-bold">
+            <a
+              class="text-darkblue hover:text-yellow transition-colors duration-500"
+              href="{{ .RelPermalink }}"
+            >{{ .LinkTitle }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <hr hidden>
+    </nav>
+  </aside>
+{{ else }}
+  {{ if site.IsServer }}
+    <div>No related stories</div>
+  {{ end }}
+{{ end }}
