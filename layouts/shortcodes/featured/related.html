@@ -1,7 +1,13 @@
 {{ $side := .Get "side" | default "left" }}
 {{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 lg:-mr-40" "float-left sm:pr-4 lg:-ml-24" }}
 {{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $related := $news.RegularPages.Related .Page | first 3 }}
+{{ $related := $news.RegularPages.Related .Page }}
+{{ if .Get "hide-series" }}
+  {{ $params := partialCached "helper/page-params" .Page .Page.RelPermalink }}
+  {{ $series := $params.series }}
+  {{ $related = $related | complement $series.Pages }}
+{{ end }}
+{{ $related = $related | first 3}}
 {{ if $related }}
   <aside
     class="
