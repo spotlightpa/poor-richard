@@ -143,6 +143,8 @@ The Pa. Department of Health provides its own weekly calculation of Pennsylvania
 
 According to the department’s documentation, its calculation includes people who have been retested. As of Sept 2, it noted: “Since many people who are routinely retested as part of universal testing programs repeatedly test negative, the percent positivity is lower than what would be calculated if one used the number of new cases and the number of people tested for the the first time in the most recent 7-day period”.
 
+Please read this [detailed explainer](https://fusion.inquirer.com/health/coronavirus/coronavirus-positivity-rates-can-be-valuable-but-confusing-metric-20200925.html) from the Inquirer to learn more about the department's methodology.
+
 ### How do you determine the “14-day trend” for counties?
 
 For each state/region, the dashboard provides a table of county-level data including a column labelled “14-day trend.” This provides a description of the trend of new daily cases over the past 14 days as either “rising,” “falling,” or “unclear.”
