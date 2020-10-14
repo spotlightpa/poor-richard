@@ -34,8 +34,8 @@
     </button>
   </div>
   <div
-    class="bg-info content-aside h-24 sm:h-auto overflow-hidden sm:overflow-visible relative"
-    :class="{'h-24': !isOpen}"
+    class="bg-info content-aside h-24 sm:h-auto overflow-y-hidden sm:overflow-y-visible relative"
+    :class="{'h-24': !isOpen, 'overflow-y-hidden': !isOpen}"
   >
     {{ .Inner | markdownify }}
     <div
