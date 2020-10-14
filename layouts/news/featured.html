@@ -136,23 +136,26 @@
     </nav>
   </footer>
 
-  <div class="hidden">
-    {{ $banner := resources.Get "/img/logos/banner-default-on-trans.svg" }}
-    {{ $iconClose := resources.Get "@fontawesome/solid/times.svg" }}
-    {{ $logo := resources.Get "/img/logos/circle-default-on-trans.svg" }}
-    {{ $iconEmail := resources.Get "@fontawesome/regular/envelope.svg" }}
-    {{ $iconFB := resources.Get "@fontawesome/brands/facebook-f.svg" }}
-    {{ $iconPlus := resources.Get "@fontawesome/solid/plus-circle.svg" }}
-    {{ $iconShare := resources.Get "@fontawesome/solid/share.svg" }}
-    {{ $iconTwitter := resources.Get "@fontawesome/brands/twitter.svg" }}
-    <svg id="banner-svg">{{ $banner.Content|safeHTML }}</svg>
-    <svg id="close-svg">{{ $iconClose.Content|safeHTML }}</svg>
-    <svg id="email-svg">{{ $iconEmail.Content|safeHTML }}</svg>
-    <svg id="fb-svg">{{ $iconFB.Content|safeHTML }}</svg>
-    <svg id="logo-svg">{{ $logo.Content|safeHTML }}</svg>
-    <svg id="plus-svg">{{ $iconPlus.Content|safeHTML }}</svg>
-    <svg id="share-svg">{{ $iconShare.Content|safeHTML }}</svg>
-    <svg id="twitter-svg">{{ $iconTwitter.Content|safeHTML }}</svg>
+  {{/*
+  SVGS formatted readably:
+
+  "banner-svg" "/img/logos/banner-default-on-trans.svg"
+  "close-svg" "@fontawesome/solid/times.svg"
+  "email-svg" "@fontawesome/regular/envelope.svg"
+  "fb-svg" "@fontawesome/brands/facebook-f.svg"
+  "logo-svg" "/img/logos/circle-default-on-trans.svg"
+  "plus-svg" "@fontawesome/solid/plus-circle.svg"
+  "share-svg" "@fontawesome/solid/share.svg"
+  "twitter-svg" "@fontawesome/brands/twitter.svg"
+
+   */}}
+
+  {{ $svgs := dict "banner-svg" "/img/logos/banner-default-on-trans.svg" "close-svg" "@fontawesome/solid/times.svg" "email-svg" "@fontawesome/regular/envelope.svg" "fb-svg" "@fontawesome/brands/facebook-f.svg" "logo-svg" "/img/logos/circle-default-on-trans.svg" "plus-svg" "@fontawesome/solid/plus-circle.svg" "share-svg" "@fontawesome/solid/share.svg" "twitter-svg" "@fontawesome/brands/twitter.svg" }}
+  <div hidden>
+    {{ range $id, $rsc := $svgs }}
+      {{ $svg := resources.Get $rsc }}
+      <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+    {{ end }}
   </div>
   {{ partial "header/ld-json.html" . }}
 </body>
