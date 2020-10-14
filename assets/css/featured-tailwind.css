@@ -80,10 +80,19 @@ html {
 }
 
 .content-aside > ul {
-  @apply list-disc;
+  @apply list-disc list-inside;
 }
 .content-aside > ol {
-  @apply list-decimal;
+  @apply list-decimal list-inside;
+}
+
+@screen sm {
+  .content-aside > ul {
+    @apply list-outside;
+  }
+  .content-aside > ol {
+    @apply list-outside;
+  }
 }
 
 .content-aside > h1,
