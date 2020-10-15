@@ -6,11 +6,7 @@
     <div class="mb-2">
       <span class="tags has-addons">
         <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
-          {{ with $series := $featuredParams.series }}
-              {{- $series.Title -}}
-          {{ else }}
-            Top News
-          {{ end }}
+          {{ $featured.Param "extended-kicker" | default "Top News" }}
         </span>
         {{ if $featuredParams.topic }}
           <a

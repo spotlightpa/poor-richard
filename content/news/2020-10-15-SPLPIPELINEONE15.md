@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = "featured"
+extended-kicker = "Investigation"
 +++
 
 {{<featured/header
