@@ -4,8 +4,9 @@
 {{ $related := $news.RegularPages.Related .Page }}
 {{ if .Get "hide-series" }}
   {{ $params := partialCached "helper/page-params" .Page .Page.RelPermalink }}
-  {{ $series := $params.series }}
-  {{ $related = $related | complement $series.Pages }}
+  {{ with $series := $params.series }}
+    {{ $related = $related | complement $series.Pages }}
+  {{ end }}
 {{ end }}
 {{ $related = $related | first 3}}
 {{ if $related }}
