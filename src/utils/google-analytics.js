@@ -123,7 +123,23 @@ export function addGAListeners() {
     }
 
     on("click", el, (ev) => {
-      reportClick(ev);
+      let gaEvent = buildEvent(ev.target);
+
+      if (!gaEvent.eventAction) {
+        gaEvent.eventAction = ev.target.href;
+      }
+
+      if (!gaEvent.eventAction) {
+        gaEvent.eventAction = ev.currentTarget.href;
+      }
+      gaEvent.transport = "beacon";
+
+      sendGAEvent(gaEvent);
+
+      if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
+        let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=spotlightpa&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
+        el.href = donateURL;
+      }
     });
   });
 
