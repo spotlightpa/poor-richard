@@ -1,25 +1,36 @@
 {{ $featured := index . 0 }}
 {{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
 
+{{ $kickerLink := $featuredParams.series | default $featuredParams.topic }}
+
 <div class="tile is-parent is-top" data-ga-category="featured">
   <div class="tile is-child">
     <div class="mb-2">
-      <span class="tags has-addons">
-        <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
-          {{ $featured.Param "extended-kicker" | default "Top News" }}
-        </span>
-        {{ if $featuredParams.topic }}
-          <a
-            class="tag is-square is-outline is-uppercase has-text-weight-semibold"
-            href="{{ $featuredParams.topic.RelPermalink }}"
-            data-ga-category="eyebrow"
-          >{{ $featuredParams.kicker | default $featuredParams.topic.Title }}</a>
-        {{ else if $featuredParams.kicker }}
+      {{ if $kickerLink }}
+        <a
+          class="tags has-addons"
+          href="{{ $kickerLink.RelPermalink }}"
+          data-ga-category="eyebrow"
+        >
           <span
-            class="tag is-square is-outline is-uppercase has-text-weight-semibold"
-          >{{ $featuredParams.kicker | default "News" }}</span>
-        {{ end }}
-      </span>
+            class="tag is-square is-black is-uppercase has-text-weight-semibold hover-underline"
+          >{{ $featured.Param "extended-kicker" | default "Top News" }}</span>
+          <span
+            class="tag is-square is-outline is-uppercase has-text-weight-semibold hover-underline"
+          >{{ $featuredParams.kicker }}</span>
+        </a>
+      {{ else }}
+        <span class="tags has-addons">
+          <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
+            {{ $featured.Param "extended-kicker" | default "Top News" }}
+          </span>
+          {{ with $featuredParams.kicker }}
+            <span
+              class="tag is-square is-outline is-uppercase has-text-weight-semibold"
+            >{{ . }}</span>
+          {{ end }}
+        </span>
+      {{ end }}
     </div>
   </div>
 </div>
