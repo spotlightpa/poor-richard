@@ -137,7 +137,15 @@ export function addGAListeners() {
       sendGAEvent(gaEvent);
 
       if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
-        let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=spotlightpa&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
+        let source = "spotlightpa.org";
+        if (window.frameElement && "URLSearchParams" in window) {
+          let hash = window.location.hash.replace(/^#/, "");
+          let hostPage = new URLSearchParams(hash).get("host_page");
+          if (hostPage) {
+            source = new URL(hostPage).host;
+          }
+        }
+        let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=${source}&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
         el.href = donateURL;
       }
     });
