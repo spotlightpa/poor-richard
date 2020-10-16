@@ -146,7 +146,7 @@ export function addGAListeners() {
           }
         }
         let salesforceCampaign =
-          el.closest("[data-ga-sf-campaign]")?.dataset.sfCampaign ||
+          el.closest("[data-sf-campaign]")?.dataset.sfCampaign ||
           "701f4000000TVuXAAW";
         let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
         el.href = donateURL;
