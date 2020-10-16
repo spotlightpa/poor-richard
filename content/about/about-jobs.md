@@ -5,7 +5,7 @@ description = "Spotlight PA is building an inclusive team of journalists who bri
 linktitle = "Jobs"
 url = "/about/jobs/"
 +++
-Spotlight PA currently has two job openings:
+Spotlight PA currently has one job openings:
 
 - - -
 
@@ -32,31 +32,6 @@ Some other traits we’re interested in seeing include:
 This job is full-time and includes benefits. While we’re based in Harrisburg, we will consider candidates who can work remotely from elsewhere in Pennsylvania. Applicants should include a resume, cover letter, and links to journalism or past newsletter experience they feel best exemplifies what we’re seeking.
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage anyone who shares our passion for accountability journalism and statewide reporting to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with special needs.
-
-- - -
-
-## Deputy Editor
-
-## [APPLY HERE](https://usr58.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/77)
-
-We’re seeking an accountability-minded editor to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 46 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
-
-**What you’ll do**\
-The deputy editor will work hand-in-hand with Spotlight PA’s editing team to execute the newsroom’s goal of creating compelling digital accountability journalism that gets results. The editor will mentor and coach reporters across various beats to help them deliver accountability-focused projects and investigations of a short-, medium, and long-term nature.
-
-The editor will also lead efforts to expand our collaborative work with our large partner network, as well as with partners outside of Pennsylvania.
-
-**Who we’re looking for**\
-The editor should have experience — either as a reporter, editor, or in another role — executing accountability journalism from idea through publication, and, ideally, with impact. Applicants should have strong organization and communication skills, and be enthusiastic about working one-on-one with a team of reporters in various stages of their careers, as well as with journalists across the state. We want someone who’s not afraid to bring big ideas to the table with the skills and persistence to pull them off. We welcome applications from individuals with experience in any aspect of journalism, as well as those who have non-traditional career paths, so long as they have a track record of accountability work.
-
-An ability to work in a collaborative environment with external partners is a must. We’re an agile startup that values camaraderie and shares a passion for our work. Everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of telling stories and connecting with audiences.
-
-**Other Things to Know**\
-This job is full-time and includes benefits. While we’re based in Harrisburg, we will consider candidates who can work remotely from elsewhere in Pennsylvania. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
-
-We know not everyone reading this will fit exactly what we’ve described. We encourage anyone who shares our passion for accountability reporting, collaborative journalism, editing, and story coaching to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with disabilities.
-
-We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.
 
 - - -
 
