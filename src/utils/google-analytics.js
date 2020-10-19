@@ -137,7 +137,7 @@ export function addGAListeners() {
       sendGAEvent(gaEvent);
 
       if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
-        let source = "spotlightpa.org";
+        let source = "www.spotlightpa.org";
         if (window.frameElement && "URLSearchParams" in window) {
           let hash = window.location.hash.replace(/^#/, "");
           let hostPage = new URLSearchParams(hash).get("host_page");
