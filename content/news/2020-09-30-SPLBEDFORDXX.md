@@ -15,8 +15,8 @@ title = "A changing story by police on a rural Pa. shooting helped fuel white vi
 subtitle = ""
 description = "Video footage from the night of a shooting in Bedford County does not support state police accounts that a confrontation preceded shots being fired at a group of civil rights marchers."
 blurb = "Video footage from the night of a shooting in Bedford County does not support state police accounts that a confrontation preceded shots being fired at a group of civil rights marchers."
-kicker = "Crime"
-topics = ["Crime"]
+kicker = "Criminal Justice"
+topics = ["Criminal Justice"]
 series = []
 linktitle = ""
 suppress-featured = false
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
