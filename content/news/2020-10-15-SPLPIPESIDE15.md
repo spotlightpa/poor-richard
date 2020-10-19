@@ -11,7 +11,7 @@ published = 2020-10-15T09:30:00Z
 slug = "mariner-east-pipeline-interactive-map-explore"
 authors = ["Dan Simmons-Ritchie"]
 byline = "Dan Simmons-Ritchie of Spotlight PA"
-title = "Explore the Mariner East pipeline system and its history with this interactive map"
+title = "INTERACTIVE: Explore the Mariner East pipeline system and its history"
 subtitle = ""
 description = "Learn more about one of the most controversial projects in recent Pennsylvania history."
 blurb = "Learn more about one of the most controversial projects in recent Pennsylvania history."
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = "blank"
+extended-kicker = ""
 +++
 
 <link rel="preload" href="https://interactives.data.spotlightpa.org/2020/mariner-east-scrollytelling/assemble_close.62735c99.jpg" as="image">
