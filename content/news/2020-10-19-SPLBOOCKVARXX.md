@@ -40,7 +40,10 @@ That relief would come in the form of “<a href="https://www.spotlightpa.org/ne
 
 “It’s so rare that you have a circumstance like this where you have an obvious solution that’s legislative, it costs nothing, it completely solves the problem and it has zero negative side effects,” Boockvar told Spotlight PA’s Angela Couloumbis.
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/469848279" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469848279?color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<a class="is-sr-only" href="https://vimeo.com/469848279">Capitol Live: A Spotlight PA interview with Secretary of the Commonwealth Kathy Boockvar</a>
 
 With Pennsylvania widely expected to be a deciding state in the contentious presidential contest, county election officials have for months asked lawmakers to pass a bill that allows for pre-canvassing to avoid a doomsday scenario where it takes weeks to declare a winner. The added time also would allow election officials to identify ballots that were not submitted properly and potentially notify a voter about the problem, Boockvar said.
 
