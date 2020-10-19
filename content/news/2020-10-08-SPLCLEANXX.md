@@ -16,7 +16,7 @@ subtitle = ""
 description = "County election officials say it’s the number one issue standing between them and a timely counting of votes: allowing them to begin processing mail-in ballots before Nov. 3."
 blurb = "County election officials say it’s the number one issue standing between them and a timely counting of votes: allowing them to begin processing mail-in ballots before Nov. 3."
 kicker = "The Capitol"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Elections"]
 series = []
 linktitle = ""
 suppress-featured = false
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
