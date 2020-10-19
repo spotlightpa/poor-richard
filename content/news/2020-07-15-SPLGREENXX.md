@@ -15,8 +15,8 @@ title = "In State College, a police shooting and calls for action, not more comm
 subtitle = ""
 description = "Spotlight PA spoke to a member of the 3/20 Coalition in State College as part of a new series contrasting the demands for police reform in communities to the actions taken by the legislature."
 blurb = "Spotlight PA spoke to a member of the 3/20 Coalition in State College as part of a new series contrasting the demands for police reform in communities to the actions taken by the legislature."
-kicker = "Voices of Reform"
-topics = ["Voices of Reform"]
+kicker = "Criminal Justice"
+topics = ["Criminal Justice"]
 series = []
 linktitle = ""
 suppress-featured = false
@@ -25,6 +25,9 @@ url = ""
 aliases = []
 modal-exclude = false
 no-index = false
+language-code = ""
+layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News.</i>
