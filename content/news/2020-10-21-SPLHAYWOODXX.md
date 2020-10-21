@@ -44,7 +44,9 @@ The Spotlight PA report found that although the system has made strides in attra
 
 Haywood’s comments came during a hearing by the Senate Appropriations and Education committees on efforts to restructure the higher education system, including <a href="https://triblive.com/news/pennsylvania/officials-at-pennsylvania-state-universities-move-forward-with-merger-study-as-iup-aims-at-its-own-restructuring-plan/">potentially integrating or merging six of the 14 state universities</a>. The system has faced about a decade of declining enrollment.
 
-PASSHE representatives who were at the meeting, including Chancellor Daniel Greenstein, did not respond to Haywood’s remarks. Contacted after the hearing, a spokesperson for the state system said a statement was forthcoming.
+PASSHE representatives who were at the meeting, including Chancellor Daniel Greenstein, did not respond to Haywood’s remarks. Contacted after the hearing, Greenstein said through a spokesperson that officials, faculty, and staff “do not and will not accept this status quo.”
+
+“Do we have to work to do? Yes we do. And we are on it,” he said. "I am proud of the accomplishments that we have made and of the commitment that we collectively bring to addressing egregious injustices, which have persisted too long in our country. On this issue we shall not rest.
 
 In a tweet, PASSHE noted that the system’s board of governors this month established a commission to handle diversity, equity, and inclusion. As part of Spotlight PA’s report, “Condemn, Discuss, Repeat,” many students said the state system followed a tired formula to respond to racism rather than enacting meaningful change.
 
