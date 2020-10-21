@@ -11,7 +11,7 @@ published = 2020-10-21T18:32:25Z
 slug = "pa-state-universities-racism-art-haywood"
 authors = ["Jamie Martines"]
 byline = "Jamie Martines of Spotlight PA"
-title = "Solutions for racism, inequality should be central to redesign of Pa. state universities, senator says"
+title = "Solutions for racism, inequity should be central to redesign of Pa. state universities, senator says"
 subtitle = ""
 description = "The system’s board created a commission this month to review diversity, equity, and inclusion. But a Spotlight PA report found students are tired of such symbolic efforts."
 blurb = "The system’s board created a commission this month to review diversity, equity, and inclusion. But a Spotlight PA report found students are tired of such symbolic efforts."
@@ -32,7 +32,7 @@ extended-kicker = ""
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — A state senator Wednesday called on officials of Pennsylvania’s system of public universities to prioritize solutions to address racism and inequality experienced by students of color as part of a larger planned restructuring.
+HARRISBURG — A state senator Wednesday called on officials of Pennsylvania’s system of public universities to prioritize solutions to address racism and inequity experienced by students of color as part of a larger planned restructuring.
 
 Citing an August report by Spotlight PA that <a href="https://www.spotlightpa.org/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/">documented the mental and academic impact of ongoing racism at schools in the system</a>, known as PASSHE, state Sen. Art Haywood criticized administrators and state leadership for failing to take meaningful action.
 
