@@ -17,7 +17,7 @@ description = "Pennsylvania's public university system has already hired a new v
 blurb = "Pennsylvania's public university system has already hired a new vice-chancellor focused on coordinating diversity and inclusion efforts across all 14 schools."
 kicker = "Education"
 topics = ["Education"]
-series = []
+series = ["Condemn Discuss Repeat"]
 linktitle = ""
 suppress-featured = false
 weight = 0
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, Triblive/Pittsburgh Tribune-Review, and WITF Public Media. </i>
