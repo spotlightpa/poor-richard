@@ -17,7 +17,7 @@ description = "Creating an inclusive campus goes far beyond punishing individual
 blurb = "Creating an inclusive campus goes far beyond punishing individuals for racist acts, students said."
 kicker = "Education"
 topics = ["Education"]
-series = []
+series = ["Condemn Discuss Repeat"]
 linktitle = ""
 suppress-featured = false
 weight = 0
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News and other news organizations across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
