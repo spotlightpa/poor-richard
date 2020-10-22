@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-10-22-SPLRENTBILLXX.md"
+    "content/news/2020-10-22-SPLSUITXX.md"
   ],
   "subfeatures": [
-    "content/news/2020-10-13-SPLRENT14.md",
-    "content/news/2020-08-26-SPLEVICT27.md"
+    "content/news/2020-10-22-SPLvotepa22.md",
+    "content/news/2020-10-20-SPLGOPMAIL21.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-10-22-SPLvotepa22.md",
-    "content/news/2020-10-21-SPLNORTH22.md",
-    "content/news/2020-10-21-SPLHAYWOODXX.md"
+    "content/news/2020-10-22-SPLRENTBILLXX.md",
+    "content/news/2020-10-21-SPLHAYWOODXX.md",
+    "content/news/2020-10-21-SPLNORTH22.md"
   ],
   "sidebarPicks": [
     "content/news/2020-10-15-SPLPIPELINEONE15.md"
