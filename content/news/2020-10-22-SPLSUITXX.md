@@ -30,9 +30,9 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is made possible through&nbsp;</i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of&nbsp;</i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
-HARRISBURG —&nbsp;A new federal lawsuit seeks to block Pennsylvania officials from counting mail-in and absentee ballots received within three days after Election Day, an extension approved by the state’s highest court and recently allowed to stand by the U.S. Supreme Court.
+HARRISBURG — A new federal lawsuit seeks to block Pennsylvania officials from counting mail-in and absentee ballots received within three days after Election Day, an extension approved by the state’s highest court and recently allowed to stand by the U.S. Supreme Court.
 
 The latest challenge came as the state’s top elections official, Kathy Boockvar, urged voters not to count on the extension, and instead mail in their ballots right away to get their votes counted.
 
@@ -58,7 +58,9 @@ Four conservative justices — Clarence Thomas, Samuel Alito, Neil Gorsuch, and 
 
 But the justices did not explain their reasoning, and the latest lawsuit could potentially end with a different result if appealed to the high court. With the U.S. Senate set to quickly confirm Judge Amy Coney Barrett to replace Justice Ruth Bader Ginsburg, it’s possible the conservative bloc would have enough votes to intervene and put a stop to the ballot deadline extension.
 
-In addition to arguments over constitutionality, the voters behind the latest challenge, who in the lawsuit noted they are all planning to vote in person on Election Day, argue their votes could be diluted if they aren’t afforded the same opportunity to cast a ballot after the deadline.
+Questioned by Democratic senators during her confirmation hearing, Barrett <a href="https://www.nytimes.com/2020/10/13/us/politics/barrett-says-she-would-not-be-used-as-a-pawn-to-decide-potential-election-case-but-refuses-to-say-if-shed-recuse-herself.html">would not commit</a> to recusing herself from cases involving the election.
+
+In addition to arguments over constitutionality, the voters behind the latest challenge, who in the lawsuit noted they are all planning to vote in person on Election Day, argue their votes will be diluted by the deadline extension. They contend that by accepting ballots with an illegible or missing postmark, Pennsylvania will “inevitably” count ballots that were dropped in the mail after Election Day.
 
 Tom Spencer, vice president of the Lawyers Democracy Fund who served as a recount lawyer for Republican George W. Bush in the 2000 election against Democrat Al Gore, said the voters' argument that they would be disenfranchised is a strong one, and makes this lawsuit different from the state Republican Party’s earlier lawsuit, which focused primarily on who held the power to change when and how an election is held.
 
@@ -70,7 +72,7 @@ Should the lawsuit reach the U.S. Supreme Court, Spencer — a Republican lawyer
 
 “I think a lot of people presume that the new justice would go their way, so to speak, but there’s a lot of precedent that the justice would have to look at very carefully,” he said. “It’s a very, very important decision, so I would expect a tremendous amount of study and then a decision on the merits, not a political decision.”
 
-Alan Clark, one of those voters, said he opposed ballots being accepted after the 8 p.m. deadline, regardless of whether they were postmarked on time.
+Alan Clark, one of the voters who brought the suit, said he opposed ballots being accepted after the 8 p.m. deadline, regardless of whether they were postmarked on time.
 
 “Every four years, there’s a vote that kind of decides what direction the country goes (in) and if you can’t take time out of your day to get it done on time, then I’m sorry, your vote shouldn’t count,” Clark said.
 
