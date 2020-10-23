@@ -9,9 +9,9 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-10-23-SPLHERSHEYXX.md",
     "content/news/2020-10-23-SPLCIS24.md",
-    "content/news/2020-10-22-SPLRENTBILLXX.md",
-    "content/news/2020-10-21-SPLHAYWOODXX.md"
+    "content/news/2020-10-22-SPLRENTBILLXX.md"
   ],
   "sidebarPicks": [
     "content/news/2020-10-15-SPLPIPELINEONE15.md"
