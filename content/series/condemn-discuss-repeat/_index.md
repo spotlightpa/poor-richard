@@ -4,8 +4,8 @@ image-description = "Ada Bailor, a student at Indiana University of Pennsylvania
 image-credit = "Sean Simmers / PennLive for Spotlight PA"
 kicker = "Condemn, Discuss, Repeat"
 title = "Condemn, Discuss, Repeat"
+weight = 4
 linktitle = "Students of color say Pennsylvania's higher education system follows a tired formula to respond to racism instead of enacting the support they need."
 description = "Students of color say Pennsylvania's higher education system follows a tired formula to respond to racism instead of enacting the support they need."
-link = "/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/"
-weight = 4
+link = ""
 +++
