@@ -1,22 +1,19 @@
-{{ $imgs := slice }}
-{{ range seq 1 5 }}
-  {{ $imgName := printf "/img/promo/gt-s-%d.png" . }}
-  {{ $img := resources.Get $imgName | fingerprint }}
-  {{ $imgs = $imgs | append $img.RelPermalink }}
-{{ end }}
+{{ $alt := .Param "sticky-image-caption" }}
+{{ $imgDesktop := .Param "sticky-image" }}
+{{ $link := .Param "sticky-link" }}
+
 <section
   class="window-sticker"
-  :class="stickyClass"
-  data-images='{{ $imgs|jsonify }}'
-  data-ga-category="Sticky Banner"
+  data-ga-category="modal:sticky"
   x-data="spl.sticky()"
-  x-init="init()"
   x-show="isOpen"
   x-transition:enter="slide-left-enter-active"
   x-transition:enter-start="slide-left-enter"
   x-transition:leave="slide-left-enter-active is-active"
   x-transition:leave-end="slide-left-enter"
   @open-sticky.window="show()"
+  data-sf-campaign="701f4000000TVuSAAW"
+  x-cloak
 >
   <div class="window-sticker-grid">
     <button
@@ -27,12 +24,14 @@
     ></button>
     <a
       class="window-sticker-content"
-      @click="analytics($event)"
-      href="/donate/"
+      href="{{ $link }}"
     ><img
-      alt="Donate to Spotlight PA now"
-      :src="imageURL"
-      style="max-height: 40vh;"
+        x-data="spl.imageRotator($el.dataset.images)"
+        data-images="{{ $imgDesktop }}"
+        :src="choice"
+        alt="{{ $alt }}"
+        title="{{ $alt }}"
+        style="max-height: 40vh;"
     ></a>
   </div>
 </section>

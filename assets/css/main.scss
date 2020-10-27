@@ -480,7 +480,7 @@ a.navbar-burger:hover {
 
 .window-sticker {
   align-items: center;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
@@ -488,10 +488,6 @@ a.navbar-burger:hover {
   z-index: 40;
   bottom: 0;
   right: 0;
-}
-
-.window-sticker.is-active {
-  display: flex;
 }
 
 .window-sticker-grid {

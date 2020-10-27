@@ -64,7 +64,10 @@
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ partial "modal/newsletter.html" . }}
+      {{ $modalComponents := dict "newsletter" "modal/newsletter.html" "sticky" "modal/sticky.html" }}
+      {{ with $modalComponent := index $modalComponents (.Param "modal-type") }}
+        {{ partialCached $modalComponent $ }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ partial "modal/search.html" . }}
