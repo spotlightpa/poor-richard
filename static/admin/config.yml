@@ -347,21 +347,36 @@ collections:
         file: config/_default/params.toml
         format: toml-frontmatter
         fields:
-          - label: Promo text
-            name: promo-text
-            hint: "Promo text above homepage"
-            widget: markdown
-            required: false
-          - label: "Promo link"
-            name: promo-link
-            hint: "Promo link above homepage"
-            widget: string
-            required: false
           - label: "Show promo"
             name: promo-active
             hint: "Show promo on homepage"
             widget: boolean
             default: false
+          - label: Promo type
+            name: promo-type
+            hint: "Upload images at https://almanack.data.spotlightpa.org/admin/file-uploader"
+            widget: "select"
+            options: ["image", "text"]
+          - label: "Promo image for desktop"
+            name: promo-image-desktop
+            hint: "To randomly select one from many, separate URLs by commas"
+            widget: string
+            required: false
+          - label: "Promo image for mobile"
+            name: promo-image-mobile
+            hint: "To randomly select one from many, separate URLs by commas"
+            widget: string
+            required: false
+          - label: Promo text
+            name: promo-text
+            hint: "Promo text above homepage or article"
+            widget: markdown
+            required: false
+          - label: "Promo link"
+            name: promo-link
+            hint: "Promo link above homepage or article; only affects text promos"
+            widget: string
+            required: false
           - label: Banner
             name: banner
             hint: "Sitewide alert banner"
