@@ -357,6 +357,11 @@ collections:
             hint: "Upload images at https://almanack.data.spotlightpa.org/admin/file-uploader"
             widget: "select"
             options: ["image", "text"]
+          - label: "Promo image description"
+            name: promo-image-caption
+            hint: "For blind readers and search engines"
+            widget: string
+            required: false
           - label: "Promo image for desktop"
             name: promo-image-desktop
             hint: "To randomly select one from many, separate URLs by commas"

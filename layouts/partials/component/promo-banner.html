@@ -1,4 +1,5 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $alt := .Param "promo-image-caption" }}
 {{ $imgDesktop := .Param "promo-image-desktop" }}
 {{ $widthDesktop := .Param "promo-desktop-width" }}
 {{ $heightDesktop := .Param "promo-desktop-height" }}
@@ -25,7 +26,8 @@
         data-images="{{ $imgDesktop }}"
         :src="choice"
         src="{{ $magicPixel }}"
-        alt="Donate to Spotlight PA now"
+        alt="{{ $alt }}"
+        title="{{ $alt }}"
         style="width: {{ $widthDesktop }}px; height: {{ $heightDesktop }}px;"
         loading="lazy"
       >
@@ -48,7 +50,8 @@
         data-images="{{ $imgMobile }}"
         :src="choice"
         src="{{ $magicPixel }}"
-        alt="Donate to Spotlight PA now"
+        alt="{{ $alt }}"
+        title="{{ $alt }}"
         loading="lazy"
       >
     {{ with $link }}
