@@ -42,7 +42,7 @@ A Spotlight PA review of campaign finance reports filed between January and Oct.
 
 Four of the many committees that are heavily involved in state legislative races — Wolf’s, the pro-Democrat Pennsylvania Fund for Change, the pro-Republican Build PA PAC, and the conservative Commonwealth Leaders Fund — have alone spent more than $16.9 million this year, according to the latest available reports. While some of that money went to other races, such as for attorney general, the figure gives a window <a href="https://www.spotlightpa.org/news/2020/10/pa-election-state-house-flip-democrats-republicans/">into the high-stakes legislative contest.</a>
 
-Nine wins in the House and four in the Senate would allow Democrats in Harrisburg to set the agenda on issues including gun restrictions, the natural gas industry, and the minimum wage. The party would also control the drawing of new <a href="https://www.wesa.fm/post/eye-redistricting-2021-national-group-targets-pa-legislative-races#stream/0">congressional maps in 2021</a>. While control of the Senate is viewed as leaning toward Republicans, the House is considered a toss-up.
+Nine wins in the House and four in the Senate would allow Democrats in Harrisburg to set the agenda on issues including gun restrictions, the natural gas industry, and the minimum wage. The party would also control the drawing of new <a href="https://www.wesa.fm/post/eye-redistricting-2021-national-group-targets-pa-legislative-races">congressional maps in 2021</a>. While control of the Senate is viewed as leaning toward Republicans, the House is considered a toss-up.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
