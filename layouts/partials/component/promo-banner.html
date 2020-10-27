@@ -3,6 +3,7 @@
 {{ $widthDesktop := .Param "promo-desktop-width" }}
 {{ $heightDesktop := .Param "promo-desktop-height" }}
 {{ $imgMobile := .Param "promo-image-mobile" }}
+{{ $link := .Param "promo-link" }}
 
 <section
   class="mt-5 pl-5 pr-5 has-radius-padding has-text-centered"
@@ -10,11 +11,15 @@
   data-ga-category="promo-banner"
 >
   <p>
-    <a
-      class="is-hidden-mobile"
-      data-ga-action="https://www.spotlightpa.org/donate/"
-      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=www.spotlightpa.org&utm_medium=desktop&utm_campaign=promo-banner"
-    >
+    {{ with $link }}
+      <a
+        class="is-hidden-mobile"
+        data-ga-category="desktop"
+        href="{{ . }}"
+      >
+    {{ else }}
+      <span class="is-hidden-mobile">
+    {{ end }}
       <img
         x-data="spl.imageRotator($el.dataset.images)"
         data-images="{{ $imgDesktop }}"
@@ -24,12 +29,20 @@
         style="width: {{ $widthDesktop }}px; height: {{ $heightDesktop }}px;"
         loading="lazy"
       >
-    </a>
-    <a
-      class="is-hidden-tablet"
-      data-ga-action="https://www.spotlightpa.org/donate/"
-      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&utm_source=www.spotlightpa.org&utm_medium=mobile&banner&utm_campaign=promo-banner"
-    >
+    {{ with $link }}
+      </a>
+    {{ else }}
+      </span>
+    {{ end }}
+    {{ with $link }}
+      <a
+        class="is-hidden-tablet"
+        data-ga-category="mobile"
+        href="{{ . }}"
+      >
+    {{ else }}
+      <span class="is-hidden-tablet">
+    {{ end }}
       <img
         x-data="spl.imageRotator($el.dataset.images)"
         data-images="{{ $imgMobile }}"
@@ -38,6 +51,10 @@
         alt="Donate to Spotlight PA now"
         loading="lazy"
       >
-    </a>
+    {{ with $link }}
+      </a>
+    {{ else }}
+      </span>
+    {{ end }}
   </p>
 </section>

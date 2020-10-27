@@ -374,7 +374,7 @@ collections:
             required: false
           - label: "Promo link"
             name: promo-link
-            hint: "Promo link above homepage or article; only affects text promos"
+            hint: "Promo link above homepage or article"
             widget: string
             required: false
           - label: Banner
