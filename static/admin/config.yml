@@ -362,6 +362,18 @@ collections:
             hint: "To randomly select one from many, separate URLs by commas"
             widget: string
             required: false
+          - label: "Desktop promo image width"
+            name: "promo-desktop-width"
+            widget: "number"
+            default: 728
+            value_type: "int"
+            min: 1
+          - label: "Desktop promo image height"
+            name: "promo-desktop-height"
+            widget: "number"
+            default: 90
+            value_type: "int"
+            min: 1
           - label: "Promo image for mobile"
             name: promo-image-mobile
             hint: "To randomly select one from many, separate URLs by commas"
