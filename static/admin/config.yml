@@ -389,7 +389,7 @@ collections:
             hint: "Promo text above homepage or article"
             widget: markdown
             required: false
-          - label: "Promo link"
+          - label: "Promo link URL"
             name: promo-link
             hint: "Promo link above homepage or article"
             widget: string
@@ -399,7 +399,7 @@ collections:
             hint: "Sitewide alert banner"
             widget: markdown
             required: false
-          - label: "Banner link"
+          - label: "Banner link URL"
             name: banner-link
             hint: "Sitewide alert banner clickthrough link"
             widget: string
@@ -409,6 +409,26 @@ collections:
             hint: "Show sitewide alert banner"
             widget: boolean
             default: false
+          - label: Pop-up type
+            name: modal-type
+            hint: "Upload images at https://almanack.data.spotlightpa.org/admin/file-uploader"
+            widget: "select"
+            options: ["newsletter", "sticky"]
+          - label: "Sticky image description"
+            name: sticky-image-caption
+            hint: "For blind readers and search engines"
+            widget: string
+            required: false
+          - label: "Sticky image"
+            name: sticky-image
+            hint: "To randomly select one from many, separate URLs by commas"
+            widget: string
+            required: false
+          - label: "Sticky link URL"
+            name: sticky-link
+            hint: "URL for the slider sends you"
+            widget: string
+            required: false
       - label: "News landing page"
         name: news-landing
         file: content/news/_index.md

@@ -10,3 +10,7 @@ promo-active = true
 banner = "**THE TRUTH MATTERS:** Now more than ever, our investigative journalism needs your support. Donate now."
 banner-link = "/donate/"
 banner-active = true
+modal-type = "sticky"
+sticky-image-caption = "Donate to Spotlight PA"
+sticky-image = "https://files.data.spotlightpa.org/uploads/01fs/ds6r/strengthen-democracy-square.svg,https://files.data.spotlightpa.org/uploads/01fs/ds6k/strengthen-black-square.svg"
+sticky-link = "/donate/"
