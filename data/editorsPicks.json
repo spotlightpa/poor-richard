@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-10-27-SPLFUNDINGXX.md"
+    "content/news/2020-10-27-SPLHARVESTXX.md"
   ],
   "subfeatures": [
-    "content/news/2020-10-27-SPLCHARTXX.md"
+    "content/news/2020-10-26-SPLQAXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-10-26-SPLQAXX.md",
+    "content/news/2020-10-27-SPLFUNDINGXX.md",
     "content/news/2020-10-27-SPLCAMPCASHXX.md",
-    "content/news/2020-10-27-SPLHARVESTXX.md"
+    "content/news/2020-10-26-SPLHOUSE27.md"
   ],
   "sidebarPicks": [
     "content/news/2020-10-15-SPLPIPELINEONE15.md"
