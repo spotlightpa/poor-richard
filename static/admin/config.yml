@@ -347,14 +347,29 @@ collections:
         file: config/_default/params.toml
         format: toml-frontmatter
         fields:
+          - label: "Show banner"
+            name: banner-active
+            hint: "Show sitewide alert banner"
+            widget: boolean
+            default: false
+          - label: Banner
+            name: banner
+            hint: "Sitewide alert banner"
+            widget: markdown
+            required: false
+          - label: "Banner link URL"
+            name: banner-link
+            hint: "Prefer URLs like /donate/ without the https://www.spotlightpa.org because they work in testing too"
+            widget: string
+            required: false
           - label: "Show promo"
             name: promo-active
-            hint: "Show promo on homepage"
+            hint: "Promo is the native ad-like slot at top of the page"
             widget: boolean
             default: false
           - label: Promo type
             name: promo-type
-            hint: "Upload images at https://almanack.data.spotlightpa.org/admin/file-uploader"
+            hint: "Promo can be an ad image or just text"
             widget: "select"
             options: ["image", "text"]
           - label: "Promo image description"
@@ -381,37 +396,22 @@ collections:
             min: 1
           - label: "Promo image for mobile"
             name: promo-image-mobile
-            hint: "To randomly select one from many, separate URLs by commas"
+            hint: "Should be squarish"
+            widget: string
+            required: false
+          - label: "Promo link URL"
+            name: promo-link
+            hint: "Link for the promo image or text"
             widget: string
             required: false
           - label: Promo text
             name: promo-text
-            hint: "Promo text above homepage or article"
+            hint: "Use for text link instead of an image, e.g., promoting the Dashboard"
             widget: markdown
             required: false
-          - label: "Promo link URL"
-            name: promo-link
-            hint: "Promo link above homepage or article"
-            widget: string
-            required: false
-          - label: Banner
-            name: banner
-            hint: "Sitewide alert banner"
-            widget: markdown
-            required: false
-          - label: "Banner link URL"
-            name: banner-link
-            hint: "Sitewide alert banner clickthrough link"
-            widget: string
-            required: false
-          - label: "Show banner"
-            name: banner-active
-            hint: "Show sitewide alert banner"
-            widget: boolean
-            default: false
           - label: Pop-up type
             name: modal-type
-            hint: "Upload images at https://almanack.data.spotlightpa.org/admin/file-uploader"
+            hint: "Pop up can be newsletter takeover or a bottom-right sticky slider"
             widget: "select"
             options: ["newsletter", "sticky"]
           - label: "Sticky image description"
@@ -426,7 +426,7 @@ collections:
             required: false
           - label: "Sticky link URL"
             name: sticky-link
-            hint: "URL for the slider sends you"
+            hint: "Link when clicking on the sticky slider"
             widget: string
             required: false
       - label: "News landing page"
