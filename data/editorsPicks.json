@@ -1,9 +1,9 @@
 {
   "featuredStories": [
-    "content/news/2020-10-28-SPLCOURT29.md",
     "content/news/2020-10-29-SPLBUSH30.md"
   ],
   "subfeatures": [
+    "content/news/2020-10-28-SPLCOURT29.md",
     "content/news/2020-10-28-SPLBUTLER29.md"
   ],
   "limitSubfeatures": false,
