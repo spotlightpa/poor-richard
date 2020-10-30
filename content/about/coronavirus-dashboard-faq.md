@@ -36,7 +36,7 @@ Below, you’ll find information about our sourcing and methodology. If you have
 Spotlight PA and The Inquirer are committed to providing Pennsylvania readers the most accurate and up-to-date information on the COVID-19 outbreak. We believe our dashboard provides a simple interface for tracking the spread in Pennsylvania and surrounding states.
 
 The state Department of Health offers its own interactive
-<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">dashboard on its website</a>
+<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Pennsylvania%20Data.aspx">dashboard on its website</a>
 that displays Pennsylvania data. However, the department’s dashboard remains cumbersome and difficult to use, particularly on mobile devices. It doesn’t provide data on states outside Pennsylvania and doesn’t prioritize certain data points that we believe are most useful for readers. So, we wanted to create a way to make it easier to understand the spread of COVID-19.
 
 While a number of national media outlets, including
