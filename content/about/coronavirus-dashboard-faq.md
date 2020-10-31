@@ -4,7 +4,6 @@ image-description = "Tracking the spread of COVID-19 in Pennsylvania"
 image-credit = "DAN NOTT / For Spotlight PA"
 image-size = "hidden"
 published = 2020-07-17T14:00:00.000Z
-slug = "coronavirus-dashboard-faq"
 authors = ["Daniel Simmons-Ritchie"]
 byline = "Daniel Simmons-Ritchie of Spotlight PA"
 title = "Tracking The Spread Dashboard FAQ"
@@ -16,14 +15,15 @@ suppress-featured = false
 weight = 0
 topics = ["Coronavirus"]
 series = []
-modal-exclude = false
 no-index = false
 internal-id = ""
+slug = "coronavirus-dashboard-faq"
 url = ""
 image-caption = ""
 internal-budget = ""
 arc-id = ""
 subtitle = ""
+modal-exclude = false
 aliases = []
 +++
 <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or just a curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
@@ -36,7 +36,7 @@ Below, you’ll find information about our sourcing and methodology. If you have
 Spotlight PA and The Inquirer are committed to providing Pennsylvania readers the most accurate and up-to-date information on the COVID-19 outbreak. We believe our dashboard provides a simple interface for tracking the spread in Pennsylvania and surrounding states.
 
 The state Department of Health offers its own interactive
-<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Pennsylvania%20Data.aspx">dashboard on its website</a>
+<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">dashboard on its website</a>
 that displays Pennsylvania data. However, the department’s dashboard remains cumbersome and difficult to use, particularly on mobile devices. It doesn’t provide data on states outside Pennsylvania and doesn’t prioritize certain data points that we believe are most useful for readers. So, we wanted to create a way to make it easier to understand the spread of COVID-19.
 
 While a number of national media outlets, including
