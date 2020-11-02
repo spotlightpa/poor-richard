@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-10-30-SPLCOUNTY31.md"
+    "content/news/2020-11-02-SPLEVICTxx.md"
   ],
   "subfeatures": [
-    "content/news/2020-10-28-SPLBUTLER29.md",
-    "content/news/2020-10-28-SPLERIE29.md"
+    "content/news/2020-09-12-SPLBAN12.md",
+    "content/news/2020-08-26-SPLEVICT27.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2020-10-30-SPLMILITIA31.md",
-    "content/news/2020-10-30-SPLTRUMPXX.md",
+    "content/news/2020-10-30-SPLCOUNTY31.md",
     "content/news/2020-10-29-SPLBUSH30.md"
   ],
   "sidebarPicks": [
