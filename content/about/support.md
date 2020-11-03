@@ -41,6 +41,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Oscar Armas-Luy
 * Jeffery K. Ayers
 * Paul Armor
+* Bob Arrowsmith
 * Stephen Artman
 * David Ashton
 * David A. Atkinson
@@ -72,6 +73,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Brian Baxter
 * Christopher Baxter
 * Mark Bazrod
+* Rebecca Beal
 * Mike Beattie
 * Diana & Thomas Beausang
 * Ira Beckerman
@@ -92,6 +94,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Kevin Bevan
 * Sean Brennan
 * Robert Joseph Biller
+* Brian Birmingham
 * Eugene Blagmond
 * Nancy J. Blaha
 * Gorden Blain
@@ -113,6 +116,8 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * John Bouder
 * Robert Boyce
 * Nancy Boyd
+* Maggi Boyer
+* W. Wilson Bradburn
 * Jeffrey L. Braff
 * Colleen Brenneman
 * Laura Brenner 
@@ -124,6 +129,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * D. Brooks
 * Gay Brown
 * Gay Brown & Glenn Carr
+* Charles Brown
 * James D. Brown
 * Jeffrey Brown
 * Lisa Brown
@@ -166,6 +172,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Dianne Chambless
 * Marguerite Chandler
 * Bonnie Chang
+* Kim Chappell
 * Kathleen Charlton
 * Linda & Roy Christman
 * Patrick Christmas
@@ -184,6 +191,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Mark Cohen
 * Milton Cohen
 * Sean Collins
+* Verna Colliver
 * Carolyn Comitta
 * Melinda Condon
 * Danny Condra
@@ -194,8 +202,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * John & Joy Burt Conti
 * Donna Thiel Cook
 * Ira Cooperman
+* David Copeland 
 * John M. Corcoran Esq.
 * J. Cordingley
+* John Corey
 * George C. Corson, Jr.
 * Eugene Cosgrove
 * Douglas and Laurel Costa
@@ -214,6 +224,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Jason Cumello
 * Jason Cunningham
 * Jennifer Cunningham
+* John Cunningham
 * Peggy & Mark Curchack
 * Dennis Curtin
 * Amy D'Ancona
@@ -226,6 +237,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Joyce Davis
 * Michael E. Davis
 * Julie Daye
+* Will Dean
 * Donald DeCary Sr.
 * Fred Dedrick
 * Charles DeFanti
@@ -235,6 +247,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Mike Del Vacchio
 * Fran DeMillion
 * David DeNault
+* Tracey DePasquale 
 * Dara Deroiste
 * Al K. DeRoy, Ph.D., M.P.A.
 * Jean & Barry DeSantis
@@ -244,12 +257,15 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Thomas & Carole DeWall
 * Paul Dicicco
 * PJ Dickey
+* Dallas DiLeo
+* Carol DiMartile
 * Michael DiNunzio
 * Judy Dixon
 * Steven Doerfler
 * James Donahue
 * Diana Donaldson
 * Diane Donato
+* Kimberly Donovan
 * R. Donegan
 * Michael Donofrio
 * Richard Donofry
@@ -257,11 +273,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Monica Dougherty
 * Paul Downs
 * Gorana Draguljic
+* Stephen Drizos
 * Francis Drotar
 * Earl Drumheiser
+* Christina Drzal
 * Franklin Duddy
 * Stephen Duncan
 * Edwin Dunckley
+* Robert DuPlessis
 * Rebecca J. Durante
 * Charles Dyer
 * J.M. Dzubinski
@@ -303,6 +322,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * John Feather Jr.
 * T. Fehr
 * Art Feinberg
+* Elit Felix
 * Lawrence Felzer
 * Adelaide Ferguson & Ronald Cahan
 * John Fernbacher
@@ -351,6 +371,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
+* Deborah Garvey
 * James Gates
 * Robert L. Gatski, Jr.
 * Edmond Guadelli
