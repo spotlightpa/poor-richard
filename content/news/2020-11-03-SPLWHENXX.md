@@ -46,7 +46,7 @@ That processing includes opening the envelopes, taking out the ballot, flattenin
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Spotlight%20PA%20provides%20essential%2C%20public-service%20journalism%20about%20Pennsylvania%20thank%20to%20readers%20like%20you.%20For%20a%20limited%20time%2C%20become%20a%20member%20and%20your%20contribution%20will%20be%20TRIPLED.&cta_text=YES%2C%20TRIPLE%20MY%20GIFT&eyebrow_text=BECOME%20A%20MEMBER"></div>
 
-Several Pennsylvania counties <a href="https://www.spotlightpa.org/news/2020/11/pa-election-2020-mail-ballots-precanvassing/">won’t even begin processing mail ballots today</a>, much less counting them. And that could skew early returns you see this evening. Other swing states, such as Wisconsin, also do not permit pre-canvassing mail ballots, which will also delay results.
+Several Pennsylvania counties <a href="https://www.spotlightpa.org/news/2020/11/pa-election-2020-mail-ballots-precanvassing/">won’t even begin processing mail ballots today</a>, much less counting them. And that could skew early returns you see this evening. Other swing states, such as Wisconsin, also do not permit pre-canvassing mail ballots.
 
 But do these delays mean something nefarious is going on?
 
