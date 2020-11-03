@@ -54,7 +54,7 @@ No, it will simply take longer than normal to tally all the different kinds of v
 
 The state has also <a href="https://www.votespa.com/About-Elections/Pages/Counting-Dashboard.aspx">launched a new dashboard</a> for you to track the counting over the next few days, and see how many of the different types of ballots are still outstanding. If you don’t want all of that detail, you can use their <a href="https://www.electionreturns.pa.gov/">more simplified results page</a>.
 
-So could we still have a projected winner tonight?
+<a name="test"></a>So could we still have a projected winner tonight?
 
 Sure, it’s possible. A lot of states will be able to report results tonight much like they do normally, and if President Donald Trump or Vice President Joe Biden jump out to a commanding lead or are projected to win certain swing states, we could have a pretty good idea of the winner.
 
