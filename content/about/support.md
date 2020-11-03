@@ -848,6 +848,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Mark Raymond
 * Sean Raymond
 * Emilio Recio
+* Genevieve Reed
 * Luke Reed
 * Lauri Reeder
 * Sandra Reese
@@ -865,15 +866,21 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Rebecca Richards
 * Michele Richman
 * Adam Richter
+* Denise Rinear
+* Robert W. Rishel
 * Alex Roarty
 * David Robertson
 * Fatima Robinson
+* Gregg Robertson
 * Christine Rockwell
 * Edward T. Rodgers
 * Peter & Joanne Rohana
 * Mary Rollman
 * Kathryn Rolston
+* Frank Romano
 * Lou Romito
+* Doug Root
+* Robert Root
 * Mary Catherine Roper
 * Craig Rose
 * Larry Rose
@@ -884,6 +891,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Marc Ross
 * Mark Roth
 * Lynn Fryman Rothman & Michael Rothman, MD
+* Carol Ruberto
 * Robert Ruff Jr.
 * William Ruffley
 * Amy Ruffo
@@ -920,6 +928,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Jennifer Schwartz
 * Barbara Scott
 * Robert & Mary Ellen Scott
+* John & Barbara Seefeldt
 * Anthony J. Seigafuse
 * Paul & Kathleen Selbst
 * Pat Sellers
@@ -928,6 +937,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Kristin Senecal
 * John Senko
 * V. Sethi
+* Antoinette Seymour
 * Samantha Shaffer
 * Mickey Shapiro
 * David S. Share
@@ -938,6 +948,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Peter Shelly
 * Tom & Amy Sherry
 * Alexandra Shirreffs
+* James Shoemaker
 * Elizabeth Shollenberger
 * Kimberley Shore
 * Barry Shutt
@@ -957,6 +968,8 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Richard Small
 * Scott Smedley
 * Carol L. Smith
+* Karen Smith
+* Michael Smith
 * Michael Smith
 * Robert Smith
 * Sallie K. Smith
@@ -965,6 +978,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Tieshka Smith
 * Lucas Smolcic Larson
 * Judith E. Smullen
+* Anita & Mike Soar
 * Marie Sonnet
 * Mariana Sorensen
 * Susan Spaziani & John Williamson
@@ -972,6 +986,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Michael Sperger
 * Lorraine Spikol
 * Anthony Spisto
+* Edward Spitzer
 * Christine Spolar
 * Christopher Spratt
 * Jane Sprecher
@@ -984,9 +999,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Lenore M. Steinmetz
 * John Stenger
 * Joan Stern
+* Vincent Stern
 * Pamela Stetor
 * Reid Stever
 * Bob Stewart
+* David Stewart
 * Robert Stewart
 * John Stickel
 * Harriet Stone
@@ -994,6 +1011,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Peter Stork
 * Carol Stowell
 * Nicole Stranko
+* Sandra Strauss
 * Vincent D. Stravino
 * Betram Strieb
 * John Stuart
@@ -1001,6 +1019,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * John Suierveld
 * Sean P. Sullivan
 * Cary Scott Summers
+* Marjorie Swart
 * Burnetta Swartz
 * Jeffrey Sweet
 * Mary Sweet
@@ -1031,12 +1050,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Ray Torres
 * Karen Hale Toth
 * Thomas L. Toth
+* Steve Townsend
 * Bill Travers
 * Adam Trott
 * Debbie Trudeau
 * Walter Tsou
 * Pam Tulchinsky
 * Margaret Turcich
+* Catherine Twigg
 * Cynthia Tyler
 * Walter C. Uhler
 * Walter & Esther Underhill
@@ -1044,6 +1065,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Jane Valdes-Dapena
 * Heather Valudes
 * Richard Van Aken
+* Norma Van Dyke
 * Harold Vandegrift
 * Dennis Verona
 * Robert F. Vickery
@@ -1065,15 +1087,19 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Karen Weaver
 * Mary Weaver
 * Nathaniel Webb
+* Douglas Webster
 * Koert Wehberg, Esq.
 * Karen Weibel
 * Patricia Weidenhamer
 * Debra Weiner
+* Elizabeth Paczolt Weiner
 * Raymond Weinmann Jr.
+* Wendy Weirman
 * Sy Weiss
 * C. Wentzel
 * Gerald F. Werkheiser
 * Judy Wertheimer
+* Janelle Wertzberger
 * E. Wessel
 * Richard Wexelblat
 * Thomas Whalen
@@ -1102,10 +1128,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Deborah Wolfe
 * George Wolff
 * Kathryn Wolfson
+* Chris Wonders
 * Susan Wood
 * Barbara Woodin
 * Susan Wooley
 * Robert Wooten
+* Barbara Worden
 * Margaret Wren
 * Francis Wynne
 * Tom Wyse
@@ -1120,6 +1148,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Rick Young
 * Sherley Young
 * Anne Zacharias
+* Christina Zarek
 * Deborah Zateeny
 * Leonard Zawistowski Jr.
 * Susan Zeelander
