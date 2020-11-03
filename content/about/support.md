@@ -18,7 +18,7 @@ To support Spotlight PA, [make a donation now](/donate/).
 
 ## Major Donors and Funders
 
-Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie Community Foundation](https://www.eriecommunityfoundation.org/) <br> [Facebook Journalism Project](https://www.facebook.com/journalismproject) <br> [The Foundation for Enhancing Communities](https://www.tfec.org/) <br> Fund for Nonprofit News at [The Miami Foundation](https://miamifoundation.org/) <br> Good Words Foundation <br> [Google News Initiative Journalism Emergency Relief Fund](https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/) <br> [The Heinz Endowments](https://www.heinz.org/) <br> [Henry L. Hillman Foundation](https://hillmanfamilyfoundations.org/foundations/henry-l-hillman-foundation/) <br> [Independence Public Media Foundation](https://independencemedia.org/) <br> [Lancaster County Community Foundation](https://www.lancfound.org/) <br> H.F. “Gerry” Lenfest <br> [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org/) <br> David Martens/The York Dispatch <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) Fellows Fund for the Future <br> [PennLive/The Patriot-News](https://www.pennlive.com/) <br> [The Philadelphia Foundation](https://www.philafound.org/) <br> The Lois Tack Thompson Fund of [The Pittsburgh Foundation](https://pittsburghfoundation.org/) <br> [Pittsburgh Post-Gazette](https://www.post-gazette.com/) <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> [Scranton Area Foundation](https://safdn.org/) <br> [The Snider Foundation](https://www.sniderfoundation.org/) <br> Diane and Brinkley Sprunt <br> [The Steinman Foundation](https://steinmanfoundation.org/) <br> [Triblive/Pittsburgh Tribune-Review](https://triblive.com/) <br> Robert and Dianne Vickery <br> [Wyncote Foundation](https://www.wyncotefoundation.org/) <br> [Votebeat](https://votebeat.org/who-we-are/) <br> [York County Community Foundation](https://yccf.org/) <br>
+Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Carroll <br> [The Erie Community Foundation](https://www.eriecommunityfoundation.org/) <br> [Facebook Journalism Project](https://www.facebook.com/journalismproject) <br> [The Foundation for Enhancing Communities](https://www.tfec.org/) <br> Fund for Nonprofit News at [The Miami Foundation](https://miamifoundation.org/) <br> Good Words Foundation <br> [Google News Initiative Journalism Emergency Relief Fund](https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/) <br> [The Heinz Endowments](https://www.heinz.org/) <br> [Henry L. Hillman Foundation](https://hillmanfamilyfoundations.org/foundations/henry-l-hillman-foundation/) <br> [Independence Public Media Foundation](https://independencemedia.org/) <br> [Lancaster County Community Foundation](https://www.lancfound.org/) <br> H.F. “Gerry” Lenfest <br> [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org/) <br> David Martens/The York Dispatch <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) Fellows Fund for the Future <br> [PennLive/The Patriot-News](https://www.pennlive.com/) <br> [The Philadelphia Foundation](https://www.philafound.org/) <br> The Lois Tack Thompson Fund of [The Pittsburgh Foundation](https://pittsburghfoundation.org/) <br> [Pittsburgh Post-Gazette](https://www.post-gazette.com/) <br> Poor Richard’s Charitable Trust <br> Richard Williams <br> [Scranton Area Foundation](https://safdn.org/) <br> [The Snider Foundation](https://www.sniderfoundation.org/) <br> Diane and Brinkley Sprunt <br> [The Steinman Foundation](https://steinmanfoundation.org/) <br> [TribLIVE/Pittsburgh Tribune-Review](https://triblive.com/) <br> Robert and Dianne Vickery <br> [Wyncote Foundation](https://www.wyncotefoundation.org/) <br> [Votebeat](https://votebeat.org/who-we-are/) <br> [York County Community Foundation](https://yccf.org/) <br>
 
 ## Founding Donors
 
@@ -171,6 +171,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Larry Ceisler
 * Dianne Chambless
 * Marguerite Chandler
+* Chandler - Shreve Family Fund
 * Bonnie Chang
 * Kim Chappell
 * Kathleen Charlton
@@ -366,6 +367,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Isla Fruchter
 * Joseph M. Fulfs
 * Greg Fullam
+* Francee E. Fuller
 * Anthony Gabriel
 * Joe Garchinsky
 * Kate & Alan Gardner
@@ -390,6 +392,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Diane K. Gilroy
 * Lorraine Gimblett
 * Lynda Ginsburg
+* Lilly Gioia
 * Nicholas Giordano
 * Stephen M. Glynn
 * Denise Gmerek
@@ -478,6 +481,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Douglas Hill
 * Glen Hill
 * Karen Hill
+* W.F. & B.J. Hines
 * J. Hirt
 * Robert Hoe
 * Francis Hoeber
@@ -546,6 +550,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Stephen Katz
 * P. Katze
 * Jane Kauer & David Fleece
+* Joan M. Kelchner
 * Paul Keller
 * Peter A. Kaller
 * Karen Kenna
@@ -639,10 +644,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Robert Lowe
 * R. Lux Family
 * Daniel Lynch
+* William J. & Sharon E. Lynch
 * Deric Lyon & Lauren Hayes
 * Matt Lyon
 * John F. Lyons
 * Nancy Lyons
+* Nancy C. & Wilbert A. Lyons
 * Tim Lyons
 * Joseph MacDowell
 * T. Machado
@@ -654,6 +661,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Kris Mamula
 * Robert L. Maney
 * Ro Manmiller
+* Joseph Manning
 * Fred R. Manthai
 * Francine Marie
 * Lelah Marie
@@ -712,6 +720,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Rosalyn Metzger
 * Albert R. Miller
 * Barbara Miller
+* George B. Miller, Jr.
 * Karen Miller
 * Larry Miller
 * Michael Miller Jr.
@@ -1067,6 +1076,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> [The Erie 
 * Richard Van Aken
 * Norma Van Dyke
 * Harold Vandegrift
+* Carole B. Vaughn
 * Dennis Verona
 * Robert F. Vickery
 * Sara Vigneri
