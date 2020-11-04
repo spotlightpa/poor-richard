@@ -1,14 +1,20 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $alt := .Param "promo-image-caption" }}
+{{ $link := .Param "promo-link" }}
+
 {{ $imgDesktop := .Param "promo-image-desktop" }}
 {{ $widthDesktop := .Param "promo-desktop-width" }}
 {{ $heightDesktop := .Param "promo-desktop-height" }}
+{{ $pbDesktop := div (mul 100 $heightDesktop) $widthDesktop }}
+
 {{ $imgMobile := .Param "promo-image-mobile" }}
-{{ $link := .Param "promo-link" }}
+
+{{ $widthMobile := .Param "promo-mobile-width" }}
+{{ $heightMobile := .Param "promo-mobile-height" }}
+{{ $pbMobile := div (mul 100 $heightMobile) $widthMobile }}
 
 <section
   class="mt-5 pl-5 pr-5 has-radius-padding has-text-centered"
-  style="margin-left: auto; margin-right: auto;"
   data-ga-category="promo-banner"
 >
   <p>
@@ -21,16 +27,25 @@
     {{ else }}
       <span class="is-hidden-mobile">
     {{ end }}
-      <img
-        x-data="spl.imageRotator($el.dataset.images)"
-        data-images="{{ $imgDesktop }}"
-        :src="choice"
-        src="{{ $magicPixel }}"
-        alt="{{ $alt }}"
-        title="{{ $alt }}"
-        style="width: {{ $widthDesktop }}px; height: {{ $heightDesktop }}px;"
-        loading="lazy"
+      <span
+        class="aspect-ratio-outer"
+        style="width: {{ $widthDesktop }}px;"
       >
+        <span
+          class="aspect-ratio-middle"
+          style="padding-bottom: {{ $pbDesktop }}%;"
+        >
+          <img
+            x-data="spl.imageRotator($el.dataset.images)"
+            data-images="{{ $imgDesktop }}"
+            :src="choice"
+            src="{{ $magicPixel }}"
+            alt="{{ $alt }}"
+            title="{{ $alt }}"
+            loading="lazy"
+          >
+        </span>
+      </span>
     {{ with $link }}
       </a>
     {{ else }}
@@ -45,15 +60,26 @@
     {{ else }}
       <span class="is-hidden-tablet">
     {{ end }}
-      <img
-        x-data="spl.imageRotator($el.dataset.images)"
-        data-images="{{ $imgMobile }}"
-        :src="choice"
-        src="{{ $magicPixel }}"
-        alt="{{ $alt }}"
-        title="{{ $alt }}"
-        loading="lazy"
+      <span
+        class="aspect-ratio-outer"
+        style="width: {{ $widthMobile }}px;"
       >
+        <span
+          class="aspect-ratio-middle"
+          style="padding-bottom: {{ $pbMobile }}%;"
+        >
+          <img
+            class="aspect-ratio-inner"
+            x-data="spl.imageRotator($el.dataset.images)"
+            data-images="{{ $imgMobile }}"
+            :src="choice"
+            src="{{ $magicPixel }}"
+            alt="{{ $alt }}"
+            title="{{ $alt }}"
+            loading="lazy"
+          >
+        </span>
+      </span>
     {{ with $link }}
       </a>
     {{ else }}
