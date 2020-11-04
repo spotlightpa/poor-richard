@@ -430,21 +430,6 @@ a.navbar-burger:hover {
   -ms-flex-preferred-size: auto; /* IE 11 fix */
 }
 
-/*! purgecss start ignore */
-[x-cloak] {
-  display: none;
-}
-.no-js {
-  display: none;
-}
-.has-old-js .no-js {
-  display: block;
-}
-.has-old-js .no-js-hide {
-  display: none;
-}
-/*! purgecss end ignore */
-
 .dropcap {
   font-size: 6.5rem;
   float: left;
@@ -572,3 +557,18 @@ a.navbar-burger:hover {
   right: 0;
   top: 0;
 }
+
+/*! purgecss start ignore */
+[x-cloak] {
+  display: none;
+}
+.no-js {
+  display: none;
+}
+.has-old-js .no-js {
+  display: block;
+}
+.has-old-js .no-js-hide {
+  display: none;
+}
+/*! purgecss end ignore */
