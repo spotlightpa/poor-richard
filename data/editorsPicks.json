@@ -1,17 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2020-11-03-SPLNAKED04.md"
+    "content/news/2020-11-03-SPLLIVE03.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-03-SPLLIVE03.md",
-    "content/news/2020-11-03-SPLELXX.md",
-    "content/news/2020-10-19-SPLPPVBXX.md"
+    "content/news/2020-11-03-SPLWHENXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2020-11-03-SPLNAKED04.md",
-    "content/news/2020-11-03-SPLWHENXX.md",
+    "content/news/2020-11-03-SPLELXX.md",
     "content/news/2020-11-02-SPLCANVASS03.md"
   ],
   "sidebarPicks": [
