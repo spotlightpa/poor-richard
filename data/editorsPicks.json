@@ -3,16 +3,16 @@
     "content/news/2020-11-03-SPLLIVE03.md"
   ],
   "subfeatures": [
+    "content/news/2020-11-03-SPLNAKED04.md",
     "content/news/2020-11-03-SPLELXX.md",
-    "content/news/2020-10-26-SPLQAXX.md",
     "content/news/2020-10-19-SPLPPVBXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-11-03-SPLNAKED04.md",
     "content/news/2020-11-03-SPLWHENXX.md",
-    "content/news/2020-11-02-SPLCANVASS03.md",
-    "content/news/2020-10-15-SPLWATCH15.md"
+    "content/news/2020-11-02-SPLCANVASS03.md"
   ],
   "sidebarPicks": [
     "content/news/2020-11-02-SPLEVICTxx.md"
