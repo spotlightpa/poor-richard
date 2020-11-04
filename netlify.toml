@@ -13,6 +13,7 @@ NODE_ENV = "production"
 NODE_VERSION = "14"
 GO_IMPORT_PATH = "github.com/spotlightpa/poor-richard"
 GO111MODULE = "on"
+TZ = "America/New_York"
 
 [context.deploy-preview]
 command = "yarn build:stage"
