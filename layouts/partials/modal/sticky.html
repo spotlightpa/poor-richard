@@ -25,6 +25,7 @@
     <a
       class="window-sticker-content"
       href="{{ $link }}"
+      @click.away="close"
     ><img
         x-data="spl.imageRotator($el.dataset.images)"
         data-images="{{ $imgDesktop }}"
