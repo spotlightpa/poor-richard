@@ -399,6 +399,18 @@ collections:
             hint: "Should be squarish"
             widget: string
             required: false
+          - label: "Mobile promo image width"
+            name: "promo-mobile-width"
+            widget: "number"
+            default: 500
+            value_type: "int"
+            min: 1
+          - label: "Mobile promo image height"
+            name: "promo-mobile-height"
+            widget: "number"
+            default: 250
+            value_type: "int"
+            min: 1
           - label: "Promo link URL"
             name: promo-link
             hint: "Link for the promo image or text"
