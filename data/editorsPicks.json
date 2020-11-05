@@ -1,6 +1,6 @@
 {
   "featuredStories": [
-    "content/news/2020-11-05-SPLBALLOTS05.md"
+    "content/news/2020-11-05-SPLALLEXX.md"
   ],
   "subfeatures": [
     "content/news/2020-11-05-SPLSENATE05.md",
@@ -9,7 +9,7 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-11-05-SPLSENATE05.md",
+    "content/news/2020-11-05-SPLBALLOTS05.md",
     "content/news/2020-11-04-SPLCANVASS05.md",
     "content/news/2020-11-03-SPLNAKED04.md"
   ],
