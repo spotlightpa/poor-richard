@@ -1,23 +1,42 @@
 +++
-draft = false
+arc-id = "MRUIPH3TLFCVTEBJL542SKBRRQ"
+internal-id = "SPLKEYS18"
+internal-budget = ""
 image = "external/jfe255ky0vv39stt8nxty8tr8c.jpeg"
+image-description = ""
+image-caption = ""
 image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
-published = 2020-04-17T18:27:15.307Z
-byline = "Staff"
+image-size = ""
+published = 2020-04-17T18:27:15Z
+slug = "see-the-6-keys-to-reopening-pennsylvania-under-gov.-tom-wolfs-plan"
+authors = []
+byline = "Spotlight PA Staff"
 title = "See the 6 keys to reopening Pennsylvania under Gov. Tom Wolf’s plan"
+subtitle = ""
 description = "Wolf on Friday announced the broad outline of his plan for reopening Pennsylvania as the state continues to grapple with the coronavirus."
 blurb = "Wolf on Friday announced the broad outline of his plan for reopening Pennsylvania as the state continues to grapple with the coronavirus."
 kicker = "Coronavirus"
+topics = []
+series = []
+linktitle = ""
 suppress-featured = true
-slug = "see-the-6-keys-to-reopening-pennsylvania-under-gov.-tom-wolfs-plan"
+weight = 0
+url = ""
+aliases = []
+modal-exclude = false
+no-index = false
+language-code = ""
+layout = ""
+extended-kicker = ""
 +++
+
 <i>[Spotlight PA](https://www.spotlightpa.org/) is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/newsletters).</i>
 
 HARRISBURG — Gov. Tom Wolf on Friday announced the broad outline of his plan for reopening Pennsylvania as the state continues to grapple with the coronavirus.
 
 Wolf has shuttered all but “life-sustaining” businesses and ordered residents in all 67 counties to stay at home. That order expires April 30.
 
-Information released Friday includes six “[standards](https://www.governor.pa.gov/plan-for-pennsylvania/#Phase2Reopening)” for reopening. See them below.
+Information released Friday includes six “[standards](https://web.archive.org/web/20200418013147/https://www.governor.pa.gov/plan-for-pennsylvania/#Phase2Reopening)” for reopening. See them below.
 
 1. Our approach will be data driven and reliant upon quantifiable criteria to drive a targeted, evidence-based, regional approach to reopenings in Pennsylvania.
 2. We will put forth guidance and recommendations for employers, individuals, and health care facilities and providers for assured accountability as we reopen.
