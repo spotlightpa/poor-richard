@@ -36,7 +36,7 @@ HARRISBURG — Senate Majority Leader Jake Corman has taken center stage in Penn
 
 Corman (R., Centre) said in an interview on Fox News that while he doesn’t “have any evidence of misdoing,” half of the state will not have faith in the results because of actions taken by Kathy Boockvar, the secretary of the commonwealth, in administering the election.
 
-He previously claimed on Twitter the Wolf administration and Boockvar were attempting to count every vote regardless if it was “a legal vote or not.”
+He previously claimed on Twitter the Wolf administration and Boockvar were attempting to count every vote regardless of if it was “a legal vote or not.”
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">In counting EVERY legally cast vote, we must not sacrifice the security and integrity of the process for speed. When <a href="https://twitter.com/PAStateDept?ref_src=twsrc%5Etfw">@PAStateDept</a> <a href="https://twitter.com/KathyBoockvar?ref_src=twsrc%5Etfw">@KathyBoockvar</a> and <a href="https://twitter.com/GovernorTomWolf?ref_src=twsrc%5Etfw">@GovernorTomWolf</a> say they are going to count every vote - they mean it. It doesn&#39;t matter if is it a legal vote or not. <a href="https://t.co/VD2ymKPHHo">pic.twitter.com/VD2ymKPHHo</a></p>&mdash; Senator Jake Corman (@JakeCorman) <a href="https://twitter.com/JakeCorman/status/1324406697079853066?ref_src=twsrc%5Etfw">November 5, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -46,9 +46,38 @@ That sentiment was echoed by President Donald Trump, who said at a Thursday news
 
 Complaints from Trump, Corman, and other state Republicans have centered on poll observers in Philadelphia and two types of ballots. The impact of these issues on the final result would only matter if the margin is extraordinarily close.
 
+<div
+  id="election-recirc__graphic"
+  data-iframe="https://media.inquirer.com/storage/inquirer/projects/innovation/2020_election_recirc/index.html"
+  data-iframe-height="200"
+  data-iframe-resizable
+  style="width: 100%"
+></div>
+<script type="text/javascript">
+  (function() {
+    var l = function() {
+      new pym.Parent(
+        "election-recirc__graphic",
+        "https://media.inquirer.com/storage/inquirer/projects/innovation/2020_election_recirc/index.html"
+      );
+    };
+    if (typeof pym === "undefined") {
+      var h = document.getElementsByTagName("head")[0],
+        s = document.createElement("script");
+      s.type = "text/javascript";
+      s.src = "https://pym.nprapps.org/pym.v1.min.js";
+      s.onload = l;
+      h.appendChild(s);
+    } else {
+      l();
+    }
+  })();
+</script>
+
+
 As of 5 p.m. Friday, former Vice President Joe Biden led the state by 14,000 votes, with that lead expected to increase, according to <a href="https://www.electionreturns.pa.gov/">unofficial results</a> and outstanding vote counts from the Department of State.
 
-## Poll watchers
+### Poll watchers
 
 The Trump campaign this week brought a lawsuit that alleged Philadelphia was “hiding the ballot counting and processing from our Republican poll observers.” Corman similarly claimed on Fox News that election officials did not allow “poll watchers to do their job.”
 
@@ -56,7 +85,7 @@ In fact, Trump campaign observers were and are allowed to witness the canvassing
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-## Late-arriving ballots
+### Late-arriving ballots
 
 Corman is also calling ballots that arrive after Election Day <a href="https://twitter.com/JakeCorman/status/1324406697079853066">illegal</a>, even though a state Supreme Court ruling has, for the time being, said they are legal.
 
@@ -74,7 +103,7 @@ The state Republican Party has asked the U.S. Supreme Court to issue a separate 
 
 Aside from arguments over whether late ballots should be accepted, there has been no credible evidence the ballots themselves or the ongoing process to handle them are fraudulent.
 
-## ‘Cured’ ballots
+### ‘Cured’ ballots
 
 The third specific complaint from Corman and other state Republicans is that the Department of State under Boockvar “changed the rules” Monday, “when they provided last-second guidance directing counties to provide information to help voters whose mail-in or absentee ballots were incorrectly completed so those voters could vote on a provisional ballot.”
 
@@ -94,7 +123,7 @@ A state appellate court judge on Friday ordered the segregation of all provision
 
 Much like late-arriving ballots, the total number of votes in question is still unknown but expected to be very small compared to the final margin in the race.
 
-## What about the rest?
+### What about the rest?
 
 The rest of the votes in Pennsylvania — those cast in person, by mail, by emergency ballot, or by military members — have not been challenged, and there has been no evidence presented to suggest any fraud. As Corman said, he doesn’t “have any evidence of misdoing.” And the Trump campaign has not offered any evidence calling those votes into question, either.
 
