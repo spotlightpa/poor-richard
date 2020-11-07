@@ -78,7 +78,7 @@ The Associated Press had also called 17 out of 18 congressional races in Pennsyl
 
 {{<picture src="external/sn5asjvj169hr34hcv3c6n142c.jpeg" description="Republican state Sen. Tom Killion campaigns in Aston, Pa., in August." caption="Republican state Sen. Tom Killion campaigns in Aston, Pa., in August." credit="JOSE F. MORENO / Philadelphia Inquirer">}} 
 
-In the legislature, Republicans in both the House and Senate were poised to keep their majorities, based on races called by the AP. Democrats flipped one seat, as Sen. Tom Killion, <a href="https://www.inquirer.com/politics/pennsylvania/philadelphia-suburbs-republicans-trump-20200823.html" target=_blank>a moderate Republican from Delaware and Chester Counties</a>, lost to Democrat John Kane. But Republicans were up in two other closely watched Senate races.
+In the legislature, Republicans in both the House and Senate were poised to keep their majorities, based on races called by the AP. Democrats flipped one seat, as Sen. Tom Killion, <a href="https://www.inquirer.com/politics/pennsylvania/philadelphia-suburbs-republicans-trump-20200823.html" target=_blank>a moderate Republican from Delaware and Chester Counties</a>, lost to Democrat John Kane. But Republicans were up in one other closely watched Senate race and scored a victory in another Friday evening.
 
 Of the House races not called by 5 p.m. Friday, six were Republican-held seats in the Philadelphia suburbs. Democrats failed to flip any of the seats they had targeted in Allegheny County, according to Associated Press projections.
 
