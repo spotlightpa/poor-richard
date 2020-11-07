@@ -46,35 +46,6 @@ That sentiment was echoed by President Donald Trump, who said at a Thursday news
 
 Complaints from Trump, Corman, and other state Republicans have centered on poll observers in Philadelphia and two types of ballots. The impact of these issues on the final result would only matter if the margin is extraordinarily close.
 
-<div
-  id="election-recirc__graphic"
-  data-iframe="https://media.inquirer.com/storage/inquirer/projects/innovation/2020_election_recirc/index.html"
-  data-iframe-height="200"
-  data-iframe-resizable
-  style="width: 100%"
-></div>
-<script type="text/javascript">
-  (function() {
-    var l = function() {
-      new pym.Parent(
-        "election-recirc__graphic",
-        "https://media.inquirer.com/storage/inquirer/projects/innovation/2020_election_recirc/index.html"
-      );
-    };
-    if (typeof pym === "undefined") {
-      var h = document.getElementsByTagName("head")[0],
-        s = document.createElement("script");
-      s.type = "text/javascript";
-      s.src = "https://pym.nprapps.org/pym.v1.min.js";
-      s.onload = l;
-      h.appendChild(s);
-    } else {
-      l();
-    }
-  })();
-</script>
-
-
 As of 5 p.m. Friday, former Vice President Joe Biden led the state by 14,000 votes, with that lead expected to increase, according to <a href="https://www.electionreturns.pa.gov/">unofficial results</a> and outstanding vote counts from the Department of State.
 
 ### Poll watchers
