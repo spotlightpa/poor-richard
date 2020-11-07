@@ -30,7 +30,7 @@ layout = ""
 extended-kicker = ""
 +++
 
-<a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+<a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
 HARRISBURG — It was supposed to be a historic year for Pennsylvania Democrats.
 
@@ -62,7 +62,7 @@ Abbott thinks Democrats got the latter, but not the former. Biden got more votes
 
 This was also the first presidential election in Pennsylvania without a straight-ticket voting option, which <a href="https://www.inquirer.com/news/pennsylvania-straight-party-voting-20191112.html">lawmakers eliminated</a> as part of the 2019 election law that also greatly expanded mail voting.
 
-Ticket-splitting — when voters pick a candidate from one party at the top of the ballot but candidates from the other party in down-ballot races— was also a factor, both Mikus and Brouillette said. Statewide, Biden had received about 3.3 million votes as of Friday, about 300,000 more than Nina Ahmad, the losing Democratic auditor general candidate.
+Ticket-splitting — when voters pick a candidate from one party at the top of the ballot but candidates from the other party in down-ballot races — was also a factor, both Mikus and Brouillette said. Statewide, Biden had received about 3.3 million votes as of Friday, about 300,000 more than Nina Ahmad, the losing Democratic auditor general candidate.
 
 Republicans in the Philadelphia suburbs appeared to benefit from this, Brouillette said, but so did Democratic incumbents in Trump-friendly districts, like Rep. Frank Burns of Cambria County.
 
@@ -74,23 +74,23 @@ G. Terry Madonna, a pollster at Franklin &amp; Marshall College, was not surpris
 
 Shapiro defeated<b> </b>Republican challenger Heather Heidelbaugh to win reelection, according to the Associated Press. The AP late Friday had yet to declare a winner in the race for state treasurer, in which incumbent Democrat Joe Torsella trailed Republican challenger Stacy Garrity.
 
-The Associated Press had also called 17 out of 18 congressional races in Pennsylvania for the incumbent. In the remaining race, Democratic Rep. Conor Lamb, in the Pittsburgh suburbs, was leading.
+The AP had also called 17 of 18 congressional races in Pennsylvania for the incumbent. In the remaining race, Democratic Rep. Conor Lamb, in the Pittsburgh suburbs, was leading.
 
 {{<picture src="external/sn5asjvj169hr34hcv3c6n142c.jpeg" description="Republican state Sen. Tom Killion campaigns in Aston, Pa., in August." caption="Republican state Sen. Tom Killion campaigns in Aston, Pa., in August." credit="JOSE F. MORENO / Philadelphia Inquirer">}} 
 
 In the legislature, Republicans in both the House and Senate were poised to keep their majorities, based on races called by the AP. Democrats flipped one seat, as Sen. Tom Killion, <a href="https://www.inquirer.com/politics/pennsylvania/philadelphia-suburbs-republicans-trump-20200823.html" target=_blank>a moderate Republican from Delaware and Chester Counties</a>, lost to Democrat John Kane. But Republicans were up in one other closely watched Senate race and scored a victory in another Friday evening.
 
-Of the House races not called by 5 p.m. Friday, six were Republican-held seats in the Philadelphia suburbs. Democrats failed to flip any of the seats they had targeted in Allegheny County, according to Associated Press projections.
+Of the House races not called by 5 p.m. Friday, six were Republican-held seats in the Philadelphia suburbs. Democrats failed to flip any of the seats they had targeted in Allegheny County, according to AP projections.
 
-Tension over down-ballot Democratic failures went public Thursday. Emily Skopov, who lost her campaign for <a href="https://www.inquirer.com/politics/election/pittsburgh-pennsylania-suburbs-joe-biden-donald-trump-20200928.html" target=_blank>an open Republican-held state House in the Pittsburgh suburbs</a>, while responding to a tweet that accused progressive lawmakers of tone-deaf messaging, described herself as “<a href="https://twitter.com/EmilySkopovPA/status/1324461733650567171">a casualty/collateral damage of this offensively poor messaging.”</a> Skopov later apologized for her “offensively poor choice of words.”
+Tension over down-ballot Democratic failures went public Thursday. Emily Skopov, who lost her campaign for <a href="https://www.inquirer.com/politics/election/pittsburgh-pennsylania-suburbs-joe-biden-donald-trump-20200928.html" target=_blank>an open Republican-held state House seat in the Pittsburgh suburbs</a>, while responding to a tweet that accused progressive lawmakers of tone-deaf messaging, described herself as “<a href="https://twitter.com/EmilySkopovPA/status/1324461733650567171">a casualty/collateral damage of this offensively poor messaging.”</a> Skopov later apologized for her “offensively poor choice of words.”
 
 State Rep. Summer Lee (D., Allegheny) said white Democrats shouldn’t blame Black organizers and activists for their losses.
 
-“You did NOT lose in your suburbs where you’ve allowed racism to fester because ‘defund police’ or ‘progressive messaging,’” she wrote on Twitter. “You lost because the Democratic Party has no down ballot strategy, no message that resonates w/the masses, no field strategy, no vision.”
+“You did NOT lose in your suburbs where you’ve allowed racism to fester because ‘defund police’ or ‘progressive messaging,’ ” she wrote on Twitter. “You lost because the Democratic Party has no down-ballot strategy, no message that resonates w/the masses, no field strategy, no vision.”
 
 {{<picture src="external/2n6ktw2h0mdd610j0qenyhjqjr.jpeg" description="Democratic state House candidate Emily Skopov in Allegheny County in September." caption="Democratic state House candidate Emily Skopov in Allegheny County in September." credit="TOM GRALISH / Philadelphia Inquirer">}} 
 
-Mikus, the Democratic strategist in Pittsburgh, said the law enforcement issue and accusations of wanting to “defund the police” was a common attack from Republicans this year. He said Biden, as a presidential candidate, was in a better position to push back on those kinds of attacks more loudly than low-profile legislative candidates.
+Mikus, the Democratic strategist in Pittsburgh, said the law enforcement issue and accusations of wanting to “defund the police” was a common attack from Republicans this year. He said Biden, as a presidential candidate, was in a better position to push back on those kinds of attacks than low-profile legislative candidates.
 
 “Joe Biden was able to wade through some of the trickier national issues,” Mikus said.
 
