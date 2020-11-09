@@ -35,6 +35,17 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="preload" as="font" href="/css/fonts/merriweather-v21/merriweather-v21-latin-regular.woff2" crossorigin>
 
+  <noscript>
+    <style>
+      .no-js-only {
+        display: block;
+      }
+      .no-js-hide {
+         display: none;
+      }
+    </style>
+  </noscript>
+
   <script
     nomodule
     src='{{ partialCached "helper/get-nomodules-js" . }}'
