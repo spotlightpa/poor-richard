@@ -562,10 +562,10 @@ a.navbar-burger:hover {
 [x-cloak] {
   display: none;
 }
-.no-js {
+.no-js-only {
   display: none;
 }
-.has-old-js .no-js {
+.has-old-js .no-js-only {
   display: block;
 }
 .has-old-js .no-js-hide {
