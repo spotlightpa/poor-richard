@@ -1,7 +1,8 @@
 <form
   x-show="showForm"
   x-cloak
-  class="mt-4"
+  class="mt-4 no-js-only"
+  :class="{'no-js-only': false}"
   action="https://email-alerts.data.spotlightpa.org/api/add-contact"
   method="post"
   autocomplete="on"
