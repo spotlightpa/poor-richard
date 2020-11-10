@@ -1,34 +1,33 @@
-import {
-  sendGAEvent,
-  reportClick as analytics,
-} from "../utils/google-analytics.js";
+import { buildEvent, sendGAEvent } from "../utils/google-analytics.js";
 
 export default function sticky() {
+  const transitionLength = 500;
+
   return {
-    analytics,
     isOpen: false,
     oldFocus: null,
 
     show() {
       this.isOpen = true;
-      sendGAEvent({
-        eventLabel: "news:page:featured",
-        eventCategory: "modal:sticky",
-        eventAction: "sticky:open",
-      });
+      this.sendEvent("sticky:open");
       this.oldFocus = document.activeElement;
-      const transitionLength = 500;
       window.setTimeout(() => this.$refs.close.focus(), transitionLength);
     },
 
     close() {
       this.isOpen = false;
-      const transitionLength = 500;
-      window.setTimeout(() => this.oldFocus.focus(), transitionLength);
+      this.sendEvent("sticky:close");
+      window.setTimeout(() => {
+        this.$refs.close.blur();
+        this.oldFocus.focus();
+      }, transitionLength);
+    },
+
+    sendEvent(action) {
+      let event = buildEvent(this.$el);
       sendGAEvent({
-        eventLabel: "news:page:featured",
-        eventCategory: "modal:sticky",
-        eventAction: "sticky:dimiss",
+        ...event,
+        eventAction: action,
       });
     },
   };
