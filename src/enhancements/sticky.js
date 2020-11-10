@@ -1,5 +1,5 @@
 import { focus, blur } from "../utils/active-element.js";
-import { buildEvent, sendGAEvent } from "../utils/google-analytics.js";
+import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function sticky() {
   const transitionLength = 500;
@@ -9,22 +9,14 @@ export default function sticky() {
 
     show() {
       this.isOpen = true;
-      this.sendEvent("sticky:open");
+      buildAndSend(this.$el, { eventAction: "sticky:open" });
       window.setTimeout(() => focus(this.$refs.close), transitionLength);
     },
 
     close() {
       this.isOpen = false;
-      this.sendEvent("sticky:close");
+      buildAndSend(this.$el, { eventAction: "sticky:close" });
       window.setTimeout(() => blur(this.$refs.close), transitionLength);
-    },
-
-    sendEvent(action) {
-      let event = buildEvent(this.$el);
-      sendGAEvent({
-        ...event,
-        eventAction: action,
-      });
     },
   };
 }

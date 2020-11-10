@@ -1,5 +1,5 @@
 import { each, on } from "./dom-utils.js";
-import { buildEvent, sendGAEvent } from "./google-analytics.js";
+import { buildAndSend } from "./google-analytics.js";
 
 export function addSocialButtonListeners() {
   on("click", '[data-share="tweet"]', (ev) => {
@@ -15,7 +15,7 @@ export function addSocialButtonListeners() {
       "&tw_p=tweetbutton";
     window.open(twitterURL, "_blank");
 
-    sendGAEvent(buildEvent(ev.currentTarget));
+    buildAndSend(ev.currentTarget);
   });
 
   on("click", '[data-share="facebook"]', (ev) => {
@@ -25,7 +25,7 @@ export function addSocialButtonListeners() {
       "https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link=" +
       encodeURIComponent(url);
     window.open(facebookURL, "_blank");
-    sendGAEvent(buildEvent(ev.currentTarget));
+    buildAndSend(ev.currentTarget);
   });
 
   on("click", '[data-share="sharesheet"]', (ev) => {
@@ -38,7 +38,6 @@ export function addSocialButtonListeners() {
       document.querySelector("[itemprop='description']")?.content ??
       "";
     let url = ev.currentTarget.dataset.shareUrl ?? window.location.href;
-    let gaEvent = buildEvent(ev.currentTarget);
 
     navigator
       .share({
@@ -46,7 +45,7 @@ export function addSocialButtonListeners() {
         text,
         url,
       })
-      .then(() => sendGAEvent(gaEvent))
+      .then(() => buildAndSend(ev.currentTarget))
       // Ignore errors caused by closing sheet
       .catch(() => null);
   });
