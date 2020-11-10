@@ -1,5 +1,5 @@
 import { focus, blur } from "../utils/active-element.js";
-import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
+import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function searchModal() {
   const transitionLength = 500;
@@ -30,9 +30,9 @@ export default function searchModal() {
       );
 
       if (sendEvent) {
-        let gaEvent = buildEvent(this.$el);
-        gaEvent.eventAction = "modal:search:dismiss";
-        sendGAEvent(gaEvent);
+        buildAndSend(this.$el, {
+          eventAction: "modal:search:dismiss",
+        });
       }
     },
   };

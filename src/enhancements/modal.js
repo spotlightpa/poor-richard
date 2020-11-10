@@ -1,5 +1,5 @@
 import { focus, blur } from "../utils/active-element.js";
-import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
+import { buildAndSend } from "../utils/google-analytics.js";
 import {
   onTestPage,
   showModalNewsletter,
@@ -29,10 +29,10 @@ export default function modal() {
     show() {
       this.isOpen = true;
       sawModalNewsletter();
-      let gaEvent = buildEvent(this.$el);
-      gaEvent.eventAction = "modal:newsletter:open";
-      gaEvent.nonInteraction = true;
-      sendGAEvent(gaEvent);
+      buildAndSend(this.$el, {
+        eventAction: "modal:newsletter:open",
+        nonInteraction: true,
+      });
 
       document.body.parentElement.classList.add("is-clipped");
 
@@ -46,9 +46,9 @@ export default function modal() {
       document.body.parentElement.classList.remove("is-clipped");
 
       if (sendEvent) {
-        let gaEvent = buildEvent(this.$el);
-        gaEvent.eventAction = "modal:newsletter:dismiss";
-        sendGAEvent(gaEvent);
+        buildAndSend(this.$el, {
+          eventAction: "modal:newsletter:dismiss",
+        });
       }
       window.setTimeout(() => {
         blur(this.$refs.content);
