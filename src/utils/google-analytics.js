@@ -51,9 +51,13 @@ export function buildEvent(el) {
   };
 }
 
-export function reportClick(ev) {
-  let gaEvent = buildEvent(ev.target);
+export function buildAndSend(el, overrides) {
+  let event = buildEvent(el);
+  sendGAEvent({ ...event, ...overrides });
+}
 
+export function buildClick(ev) {
+  let gaEvent = buildEvent(ev.target);
   if (!gaEvent.eventAction) {
     gaEvent.eventAction = ev.target.href;
   }
@@ -62,6 +66,11 @@ export function reportClick(ev) {
     gaEvent.eventAction = ev.currentTarget.href;
   }
   gaEvent.transport = "beacon";
+  return gaEvent;
+}
+
+export function reportClick(ev) {
+  let gaEvent = buildClick(ev);
 
   sendGAEvent(gaEvent);
 }
@@ -123,17 +132,7 @@ export function addGAListeners() {
     }
 
     on("click", el, (ev) => {
-      let gaEvent = buildEvent(ev.target);
-
-      if (!gaEvent.eventAction) {
-        gaEvent.eventAction = ev.target.href;
-      }
-
-      if (!gaEvent.eventAction) {
-        gaEvent.eventAction = ev.currentTarget.href;
-      }
-      gaEvent.transport = "beacon";
-
+      let gaEvent = buildClick(ev);
       sendGAEvent(gaEvent);
 
       if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
@@ -162,12 +161,11 @@ export function addGAListeners() {
     el.addEventListener(
       "submit",
       () => {
-        let gaEvent = buildEvent(el);
-        let isValid = el.reportValidity();
-        gaEvent.eventAction = el.dataset.gaForm;
-        gaEvent.eventAction += isValid ? ":submit" : ":invalid";
-        gaEvent.transport = "beacon";
-        sendGAEvent(gaEvent);
+        let validity = el.reportValidity() ? "submit" : "invalid";
+        buildAndSend(el, {
+          eventAction: `${el.dataset.gaForm}:${validity}`,
+          transport: "beacon",
+        });
       },
       {
         passive: true,
@@ -176,10 +174,10 @@ export function addGAListeners() {
     el.addEventListener(
       "focus",
       () => {
-        let gaEvent = buildEvent(el);
-        gaEvent.eventAction = el.dataset.gaForm;
-        gaEvent.eventAction += ":focus";
-        sendGAEvent(gaEvent);
+        let eventAction = `${el.dataset.gaForm}:focus`;
+        buildAndSend(el, {
+          eventAction,
+        });
       },
       {
         once: true,
