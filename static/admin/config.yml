@@ -421,11 +421,14 @@ collections:
             hint: "Use for text link instead of an image, e.g., promoting the Dashboard"
             widget: markdown
             required: false
-          - label: Pop-up type
-            name: modal-type
-            hint: "Pop up can be newsletter takeover or a bottom-right sticky slider"
-            widget: "select"
-            options: ["newsletter", "sticky"]
+          - label: Show newsletter pop-up to new visitors
+            name: show-newsletter
+            hint: "Pop up is full screen newsletter takeover"
+            widget: boolean
+          - label: Show corner sticky to all visitors
+            name: show-sticky
+            hint: "Pop up is a bottom-right sticky slider"
+            widget: boolean
           - label: "Sticky image description"
             name: sticky-image-caption
             hint: "For blind readers and search engines"

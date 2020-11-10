@@ -64,9 +64,11 @@
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ $modalComponents := dict "newsletter" "modal/newsletter.html" "sticky" "modal/sticky.html" }}
-      {{ with $modalComponent := index $modalComponents (.Param "modal-type") }}
-        {{ partialCached $modalComponent $ }}
+      {{ if .Param "show-sticky" }}
+        {{ partialCached "modal/sticky.html" . }}
+      {{ end }}
+      {{ if .Param "show-newsletter" }}
+        {{ partialCached "modal/newsletter.html" . }}
       {{ end }}
     {{ end }}
   {{ end }}
