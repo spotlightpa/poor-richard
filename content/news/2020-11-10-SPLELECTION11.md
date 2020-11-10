@@ -30,9 +30,9 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is made possible through&nbsp;</i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of&nbsp;</i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
-HARRISBURG —&nbsp; As President Donald Trump continues to question the integrity of Pennsylvania’s election while repeating unverified claims of voter fraud, state Republicans are once again seeking greater powers to investigate the voting process.
+HARRISBURG — As President Donald Trump continues to question the integrity of Pennsylvania’s election while repeating unverified claims of voter fraud, state Republicans are once again seeking greater powers to investigate the voting process.
 
 Roughly two dozen House and Senate lawmakers on Tuesday called for the creation of an investigatory committee with subpoena power to conduct an immediate audit, saying they had fielded widespread doubts about the fairness of the Nov. 3 presidential election.
 
@@ -43,6 +43,8 @@ At the state Capitol, Rep. Dawn Keefer (R., York) said the assembled lawmakers' 
 When asked if she had evidence that fraud had been committed, Keefer said the lawmakers had “just gotten a lot of allegations, so I don’t know.”
 
 The lawmakers who gathered Tuesday aren’t alone. House Speaker Bryan Cutler (R., Lancaster) last week <a href="http://www.pahousegop.com/Display/SiteFiles/1/OtherDocuments/2020/Governor%20Wolf%20-%20Election%20Audit%20-%20NOV%202020.pdf">called</a> on Gov. Tom Wolf to audit the election before the state’s results are certified Nov. 23, claiming state guidance and court rulings have created “chaos and uncertainty.”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 But Pennsylvania already has safeguards in place to ensure the accuracy of election results, experts told Spotlight PA and Votebeat. In addition to routine reviews in each county required by law, the state has started to pilot “risk-limiting” audits, a process that verifies whether a sample of paper ballots matches results captured electronically by voting machines.
 
@@ -75,6 +77,8 @@ The risk-limiting audits check the state’s new voting machines with paper trai
 The first such audits <a href="https://www.inquirer.com/politics/election/philadelphia-audits-election-results-20191122.html">were done in Mercer County and Philadelphia</a> <a href="https://www.media.pa.gov/Pages/State-Details.aspx?newsid=366">in November 2019</a>. And in August, Boockvar <a href="https://www.media.pa.gov/pages/State-details.aspx?newsid=395">announced</a> her department had completed a statewide risk-limiting audit of the June primary election.
 
 During that audit, counties used a statistical sample of 400 randomly selected ballots and compared the votes on paper to the totals reported by vote-counting machines. The chance that the audit gave a false-positive result was less than 0.1%.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Spotlight%20PA%20provides%20essential%2C%20public-service%20journalism%20thanks%20to%20its%20dedicated%20and%20passionate%20members.%20%3Cb%3EJoin%20today%20and%20we'll%20DOUBLE%20your%20gift.%3C%2Fb%3E&cta_text=YES%2C%20DOUBLE%20MY%20GIFT&eyebrow_text=BECOME%20A%20MEMBER"></div>
 
 The settlement also required the Department of State to convene a post-election audit work group. Members included county election directors, Department of State representatives, Common Cause PA, nonpartisan election integrity organization Verified Voting, and the Brennan Center Democracy Program.
 
