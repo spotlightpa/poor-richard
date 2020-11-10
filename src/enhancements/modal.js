@@ -1,3 +1,4 @@
+import { focus, blur } from "../utils/active-element.js";
 import { sendGAEvent, buildEvent } from "../utils/google-analytics.js";
 import {
   onTestPage,
@@ -8,12 +9,13 @@ import {
 const delay = onTestPage ? 500 : 2000; // 2s
 
 export default function modal() {
+  const transitionLength = 500;
+
   return {
-    oldFocus: null,
     isOpen: false,
 
     get modalClass() {
-      return this.isOpen ? "is-active" : "";
+      return { "is-active": this.isOpen };
     },
 
     init() {
@@ -25,32 +27,32 @@ export default function modal() {
     },
 
     show() {
+      this.isOpen = true;
       sawModalNewsletter();
       let gaEvent = buildEvent(this.$el);
       gaEvent.eventAction = "modal:newsletter:open";
       gaEvent.nonInteraction = true;
       sendGAEvent(gaEvent);
 
-      this.isOpen = true;
-
       document.body.parentElement.classList.add("is-clipped");
 
-      this.oldFocus = document.activeElement;
       window.setTimeout(() => {
-        this.$refs.content.focus();
-      }, 500);
+        focus(this.$refs.content);
+      }, transitionLength);
     },
 
     close(sendEvent = true) {
-      this.oldFocus.focus();
+      this.isOpen = false;
       document.body.parentElement.classList.remove("is-clipped");
 
-      this.isOpen = false;
       if (sendEvent) {
         let gaEvent = buildEvent(this.$el);
         gaEvent.eventAction = "modal:newsletter:dismiss";
         sendGAEvent(gaEvent);
       }
+      window.setTimeout(() => {
+        blur(this.$refs.content);
+      }, transitionLength);
     },
   };
 }
