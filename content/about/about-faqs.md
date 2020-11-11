@@ -26,7 +26,7 @@ url = "/about/faq/"
 
 **Q: How do I support Spotlight PA?**
 
-**A:** You can [make a donation to Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
+**A:** You can [become a member of Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
 
 **Q: How do I change a recurring donation or update my credit card?**
 
@@ -50,11 +50,7 @@ url = "/about/faq/"
 
 **Q: Where is Spotlight PA based?**
 
-**A:** Our office in Harrisburg is located at 225 Market St., Suite 502A, Harrisburg, PA 17101.
-
-**Q: How frequently will Spotlight PA publish content?**
-
-**A**: Our publishing decisions are based on what’s best for the stories we want to tell and the readers we serve, and are not dictated by the need to fill a newspaper or website. We expect to initially publish content on a weekly basis as our reporters get oriented and establish their beats.
+**A:** Our office in Harrisburg is located at 225 Market St., Suite 502A, Harrisburg, PA 17101. We are currently remote because of the ongoing coronavirus pandemic.
 
 **Q: Where does Spotlight PA’s work appear?**
 
@@ -78,7 +74,7 @@ url = "/about/faq/"
 
 **Q: Who funds Spotlight PA?**
 
-**A:** Spotlight PA is paid for by readers like you and grants for a wide variety of institutions. You can see all of our funders [here](/support/).
+**A:** Spotlight PA is paid for by members like you and grants for a wide variety of institutions. You can see all of our funders [here](/support/).
 
 **Q: Is Spotlight PA a 501(c)(3) nonprofit organization?**
 
