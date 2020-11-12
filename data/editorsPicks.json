@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-11-12-SPLSUIT13.md"
+    "content/news/2020-11-12-SPLPRO13.md"
   ],
   "subfeatures": [
-    "content/news/2020-10-07-SPLDISMISS08.md",
-    "content/news/2019-10-22-SPLCREDITMAIN23.md"
+    "content/news/2020-11-10-SPLELECTION11.md",
+    "content/news/2020-11-07-SPLCOURTXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-11-12-SPLSUIT13.md",
     "content/news/2020-11-11-SPLPRISON12.md",
-    "content/news/2020-11-10-SPLELECTION11.md",
     "content/news/2020-11-02-SPLEVICTxx.md"
   ],
   "sidebarPicks": [
