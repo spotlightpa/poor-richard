@@ -1109,6 +1109,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * C. Wentzel
 * Gerald F. Werkheiser
 * Judy Wertheimer
+* Judy Wertheimer & Michael Boninger
 * Janelle Wertzberger
 * E. Wessel
 * Richard Wexelblat
