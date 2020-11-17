@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-11-16-SPLSCHOOL17.md"
+    "content/news/2020-11-17-SPLSTORM17.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-06-SPLCORMANXX.md",
-    "content/news/2020-09-10-SPLBUDGET11.md"
+    "content/news/2020-09-28-SPLSTORM26.md",
+    "content/news/2020-02-13-the-pa-senates-most-powerful-republican-wont-seek-reelection.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-11-16-SPLSCHOOL17.md",
     "content/news/2020-11-13-SPLELECT14.md",
-    "content/news/2020-11-13-SPLCOVID14.md",
-    "content/news/2020-11-12-SPLPRO13.md"
+    "content/news/2020-11-13-SPLCOVID14.md"
   ],
   "sidebarPicks": [
     "content/news/2020-11-02-SPLEVICTxx.md"
