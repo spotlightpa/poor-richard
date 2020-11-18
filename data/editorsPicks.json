@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-11-18-SPLSTORM19.md"
+    "content/news/2020-11-18-SPLAUDIT19.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-17-SPLSTORM17.md"
+    "content/news/2020-11-17-SPLLANG18.md",
+    "content/news/2020-11-13-SPLELECT14.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-11-18-SPLSTORM19.md",
     "content/news/2020-11-18-SPLHIST18.md",
-    "content/news/2020-11-17-SPLLANG18.md",
     "content/news/2020-11-16-SPLSCHOOL17.md"
   ],
   "sidebarPicks": [
