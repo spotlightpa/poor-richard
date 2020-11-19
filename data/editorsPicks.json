@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-11-19-SPLBUDGET19.md"
+    "content/news/2020-11-19-SPLBUDGET20.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-16-SPLSCHOOL17.md",
-    "content/news/2020-09-10-SPLBUDGET11.md"
+    "content/news/2020-11-19-SPLBUDGET19.md",
+    "content/news/2020-11-16-SPLSCHOOL17.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
