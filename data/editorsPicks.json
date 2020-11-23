@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-11-23-SPLMUNIS22.md"
+    "content/news/2020-11-23-SPLAUDIT23.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-20-SPLBUDGET21.md",
-    "content/news/2020-03-21-SPLMUNI21.md"
+    "content/news/2020-11-18-SPLAUDIT19.md",
+    "content/news/2020-10-09-SPLPANEL10.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2020-11-23-SPLHERSHEY23.md",
-    "content/news/2020-11-20-SPLCERT21.md",
-    "content/news/2020-11-20-SPLCOVID21.md"
+    "content/news/2020-11-23-SPLMUNIS22.md",
+    "content/news/2020-11-20-SPLCERT21.md"
   ],
   "sidebarPicks": [
     "content/news/2020-11-02-SPLEVICTxx.md"
