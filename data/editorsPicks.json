@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-11-24-SPLTRACE25.md"
+    "content/news/2020-11-25-SPLWORKERS26.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-13-SPLCOVID14.md",
-    "content/news/2020-04-24-SPLNURSE27.md"
+    "content/news/2020-11-23-SPLAUDIT23.md",
+    "content/news/2020-11-17-SPLLANG18.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-11-24-SPLTRACE25.md",
     "content/news/2020-11-24-SPLCERT25.md",
-    "content/news/2020-11-23-SPLAUDIT23.md",
     "content/news/2020-11-23-SPLMUNIS22.md"
   ],
   "sidebarPicks": [
