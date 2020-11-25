@@ -1,5 +1,6 @@
 /* merriweather-regular - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
@@ -9,6 +10,7 @@
 }
 /* merriweather-italic - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 400;
@@ -18,6 +20,7 @@
 }
 /* merriweather-700 - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
@@ -27,6 +30,7 @@
 }
 /* merriweather-700italic - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 700;
