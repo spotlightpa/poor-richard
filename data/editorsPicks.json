@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-11-30-SPLDOM30.md"
+    "content/news/2020-12-01-SPLSENATE02.md"
   ],
   "subfeatures": [
-    "content/news/2020-11-25-SPLRUDY26.md",
-    "content/news/2020-11-24-SPLCERT25.md"
+    "content/news/2020-11-30-SPLDOM30.md",
+    "content/news/2020-11-25-SPLRUDY26.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
