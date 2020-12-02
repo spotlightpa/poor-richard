@@ -40,30 +40,6 @@ We’re interested in tips on all aspects of the voting process in Pennsylvania 
 
 To cover the integrity of the 2020 election, Spotlight PA has partnered with <a href="https://votebeat.org/" target=_blank>Votebeat</a>, a new project to combat a shortage of local reporters devoted to covering voting and election administration, as the legitimacy of the election faces unprecedented scrutiny. As part of the partnership, Spotlight PA will be adding two reporters dedicated to covering the election and aftermath in Pennsylvania between now and the end of the year.
 
-To submit report voting problems in Pennsylvania, use the form below. (<a href="https://propublica.forms.fm/electionland-2020-tips/forms/8254" target=_blank>Can’t see the form? Click here.</a>)
-
-<!--
-  If possible, insert the following lines into your <head>.
--->
-
-<script>window.jQuery || document.write('<script src="//code.jquery.com/jquery-2.2.3.min.js"><\/script>')</script>
-
-<link href="//d3q1ytufopwvkq.cloudfront.net/1/formrenderer.css" rel="stylesheet" />
-<script src="//d3q1ytufopwvkq.cloudfront.net/1/formrenderer.js"></script>
-
-<!-- Insert everything below in the <body>. -->
-
-<form data-formrenderer>This form requires JavaScript to complete.</form>
-<small style='display:inline-block;margin-top:10px;background:rgba(0,0,0,0.1);padding:5px 10px;border-radius:10px;'>Powered by <a href='https://thecitybase.com/'>CityBase</a>.</small>
-
-<script>
-  // Uncomment this line and set it to the CSS class that your website uses for buttons:
-  // FormRenderer.BUTTON_CLASS = '';
-
-  
-
-  new FormRenderer({"project_id":"n5zRcSSxqAzQu5sl"});
-</script>
-
+<del>To submit report voting problems in Pennsylvania, use the form below. (<a href="https://web.archive.org/web/20201130132132/https://propublica.forms.fm/electionland-2020-tips/forms/8254">Can’t see the form? Click here.</a>)</del> <b>Update Dec. 2, 2020: We are no longer collecting tips.</b>
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
