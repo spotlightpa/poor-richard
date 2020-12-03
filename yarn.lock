@@ -2546,10 +2546,10 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-journalize@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/journalize/-/journalize-2.4.0.tgz#15956fe59d51fcc781d76114a1c5adea1db7aa48"
-  integrity sha512-1zLYajLLAgI9RUbE7g23QjLFG1G1IIOqZ3/DQLSMr5q3V7lbTyHfeyu3eQb+lx3PwsDxAMJGZz54TrRIdtLX/A==
+journalize@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/journalize/-/journalize-2.5.0.tgz#759f96c00087bc20452591728be9814257ec4cb5"
+  integrity sha512-4GZowFdK/7hFVB7dEB5/5kjceeuONNx04aBNJhhQdz3I+NBiW1kuHBh+fjSRcsLxnq337l4lFEmH43K69opjjA==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"

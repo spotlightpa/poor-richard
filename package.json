@@ -35,7 +35,7 @@
     "bulma": "^0.9.1",
     "eslint-plugin-vue": "^7.0.1",
     "ga-lite": "^2.1.0",
-    "journalize": "^2.4.0",
+    "journalize": "^2.5.0",
     "postcss": "^8.1.1",
     "postcss-cli": "^8.0.0",
     "tailwindcss": "^1.8.10"
