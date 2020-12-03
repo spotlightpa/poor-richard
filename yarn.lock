@@ -1032,10 +1032,10 @@ ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alpinejs@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.7.0.tgz#adcdb8da9b7d99bbcc020fd4fa058b78ec283bba"
-  integrity sha512-vz4Qu4p1830yfPTvhB8da84zIePoe6PGeR50z68gB/EAH5Ba4GeqixV6kuVDEBAv5yzHhUpTrESTDNBtBVpjmg==
+alpinejs@^2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.7.3.tgz#9009fd1daa53366e0937585eada3b6f9cc986fb4"
+  integrity sha512-IRXnszk68s+FOGFMA1+K3rjLK44NqLShNpSy8aI6J3Ch9gss56FqlU6NVRP+mJes7LeQFCreH410luScVSkdfg==
 
 ansi-colors@^4.1.1:
   version "4.1.1"

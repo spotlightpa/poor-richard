@@ -30,7 +30,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@newswire/frames": "^0.3.1",
-    "alpinejs": "^2.7.0",
+    "alpinejs": "^2.7.3",
     "autoprefixer": "^10.0.1",
     "bulma": "^0.9.1",
     "eslint-plugin-vue": "^7.0.1",
