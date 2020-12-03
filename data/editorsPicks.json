@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2020-12-02-SPLCORMAN03.md"
+    "content/news/2020-12-03-SPLMAIL04.md"
   ],
   "subfeatures": [
-    "content/news/2020-12-01-SPLSENATE02.md",
-    "content/news/2020-11-30-SPLDOM30.md"
+    "content/news/2020-11-30-SPLDOM30.md",
+    "content/news/2020-11-25-SPLWORKERS26.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-12-02-SPLCORMAN03.md",
     "content/news/2020-12-03-SPLDB03.md",
-    "content/news/2020-11-25-SPLWORKERS26.md",
     "content/news/2020-11-24-SPLTRACE25.md"
   ],
   "sidebarPicks": [
