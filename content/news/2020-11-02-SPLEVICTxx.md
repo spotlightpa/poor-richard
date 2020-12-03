@@ -356,4 +356,4 @@ Pennington worries that her daughters — ages 9, 7, and four months old — hea
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky text="Spotlight PA provides essential journalism thanks to support from readers like you. Become a member today and your donation with be TRIPLED.">}}
+{{<featured/sticky>}}
