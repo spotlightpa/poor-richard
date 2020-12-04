@@ -1,12 +1,13 @@
 {{ $sizes := .sizes }}
 {{ $imagename := .filename }}
+{{ $gravity := .gravity }}
 {{ $imgs := slice }}
 
 {{ range $sizes }}
   {{ $width := .width }}
   {{ $height := .height }}
 
-  {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+  {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height "gravity" $gravity }}
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   {{ $src := printf "%s %dw" $url $width }}
   {{ $imgs = $imgs | append $src }}

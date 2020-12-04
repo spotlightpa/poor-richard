@@ -3,7 +3,7 @@
 {{ $resizing_type := "auto" }}
 {{ $width := .width }}
 {{ $height := .height }}
-{{ $gravity := "sm" }}
+{{ $gravity := .gravity | default "sm" }}
 {{ $enlarge := "1" }}
 {{ $encoded_source_url := .filename | base64Encode }}
 {{ $extension := "jpeg" }}

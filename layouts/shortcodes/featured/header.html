@@ -10,16 +10,17 @@
 {{ $imageSource := .Get "image-source" }}
 {{ $imageDesc := .Get "image-description" }}
 {{ $focus := .Get "image-focus" }}
+{{ $gravity := .Get "image-gravity" }}
 {{ $artType := .Get "art-type" | default "Photo" }}
 {{ $preposition := .Get "credit-relation" | default "of" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
-{{ $srcset := dict "sizes" $sizes "filename" $filename | partial "helper/build-srcset" }}
+{{ $srcset := dict "sizes" $sizes "filename" $filename "gravity" $gravity | partial "helper/build-srcset" }}
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
-{{ $imgOpt := dict "filename" $filename "width" $width "height" $height }}
+{{ $imgOpt := dict "filename" $filename "width" $width "height" $height "gravity" $gravity }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
     <header class="flex flex-col md:flex-row md:min-h-screen">
