@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2020-12-01-SPLXXEVENT.md"
+    "content/news/2020-12-04-SPLSTAFF05.md"
   ],
   "subfeatures": [
-    "content/news/2020-12-04-SPLSTAFF05.md",
-    "content/news/2020-11-11-SPLPRISON12.md"
+    "content/news/2020-11-11-SPLPRISON12.md",
+    "content/news/2020-11-20-SPLCOVID21.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
