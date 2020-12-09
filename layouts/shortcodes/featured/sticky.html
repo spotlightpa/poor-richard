@@ -12,22 +12,22 @@
   @open-sticky.window="show()"
   data-ga-category="modal:sticky"
   data-sf-campaign="701f4000000TVuSAAW"
+  @keydown.escape="close"
   x-cloak
 >
   <button
     type="button"
-    class="absolute top-0 right-0 -mt-2 bg-yellow hover:bg-black border-beige border-2 text-white hover:text-yellow rounded-full flex justify-center h-10 w-10"
+    class="absolute top-0 right-0 h-10 w-10 -mt-2 border-beige border-2 rounded-full bg-yellow hover:bg-black text-white hover:text-yellow flex justify-center focus:outline-none focus:ring-2 ring-yellow"
     aria-label="close"
     @click="close"
     x-ref="close"
-    tabindex="-1"
   >
     <svg class="my-auto fill-current h-6 w-6">
       <use xlink:href="#close-svg"></use>
     </svg>
   </button>
   <a
-    class="block bg-black shadow-beige m-2 mr-4 p-4 rounded leading-tight font-sans text-white text-center "
+    class="block m-2 mr-4 rounded p-4 bg-black text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
     @click.capture="close()"
     @click.away="close()"
     href="/donate/"
