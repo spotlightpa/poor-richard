@@ -1,4 +1,4 @@
-import galite from "ga-lite";
+import galite from "ga-lite/src/ga-lite.js";
 import {
   each,
   on,
