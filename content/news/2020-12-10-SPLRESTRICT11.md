@@ -34,7 +34,7 @@ extended-kicker = ""
 
 HARRISBURG — Gov. Tom Wolf is suspending indoor dining for three weeks beginning Saturday as part of a renewed effort to slow the coronavirus surge in Pennsylvania.
 
-On Thursday, Wolf and Health Secretary Rachel Levine also announced a three-week suspension of in-person extracurricular activities and sports at public and private schools — with collegiate and professional activities such as the NFL not included.
+On Thursday, Wolf and Health Secretary Rachel Levine also announced a three-week suspension of in-person extracurricular activities and sports at public and private schools. Collegiate and professional activities such as the NFL may continue, though spectators will be banned.
 
 Indoor events will be limited to no more than 10 people, and outdoor events to no more than 50 people, until at least Jan. 4. Churches, synagogues, temples, mosques, and other places of worship are excluded.
 
