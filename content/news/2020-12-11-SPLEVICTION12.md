@@ -2,7 +2,7 @@
 arc-id = "UXYFCR54ANAA3EIRLSBQC7YBME"
 internal-id = "SPLEVICTION12"
 internal-budget = ""
-image = "external/1d91sxpdtaar3c40r9v8yg92xm.jpeg"
+image = "2020/12/01fx70a56hn1e0jd.jpeg"
 image-description = "A federal eviction ban ends expires at the end of the month, leaving hundreds of thousands of renters vulnerable to losing their homes."
 image-caption = ""
 image-credit = "Dan Nott / For Spotlight PA"
