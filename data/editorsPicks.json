@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2020-12-10-SPLDJGRAPHXX.md",
-    "content/news/2020-12-14-SPLDOC14.md"
+    "content/news/2020-12-14-SPLDOC14.md",
+    "content/news/2020-12-10-SPLDJGRAPHXX.md"
   ],
   "subfeatures": [
-    "content/news/2020-12-10-SPLJUDGESXX.md",
-    "content/news/2020-12-10-SPLDJHOW10.md"
+    "content/news/2020-11-11-SPLPRISON12.md",
+    "content/news/2020-05-15-SPLPRISON15.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-12-10-SPLDJGRAPHXX.md",
     "content/news/2020-12-11-SPLEVICTION12.md",
-    "content/news/2020-12-10-SPLCOSTS11.md",
-    "content/news/2020-12-08-SPLZAB09.md"
+    "content/news/2020-12-10-SPLCOSTS11.md"
   ],
   "sidebarPicks": [
     "content/news/2020-04-24-SPLNURSE27.md"
