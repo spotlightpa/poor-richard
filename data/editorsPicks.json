@@ -10,8 +10,8 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-12-14-SPLDOC14.md",
     "content/news/2020-12-10-SPLDJGRAPHXX.md",
+    "content/news/2020-12-14-SPLDOC14.md",
     "content/news/2020-12-11-SPLEVICTION12.md",
     "content/news/2020-12-15-SPLPOLI15.md"
   ],
