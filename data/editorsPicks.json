@@ -1,6 +1,7 @@
 {
   "featuredStories": [
-    "content/news/2020-12-14-SPLELECT15.md"
+    "content/news/2020-12-14-SPLELECT15.md",
+    "content/news/2020-12-15-SPLBALLOTS15.md"
   ],
   "subfeatures": [
     "content/news/2020-12-10-SPLCOSTS11.md",
@@ -11,7 +12,8 @@
   "topSlots": [
     "content/news/2020-12-14-SPLDOC14.md",
     "content/news/2020-12-10-SPLDJGRAPHXX.md",
-    "content/news/2020-12-11-SPLEVICTION12.md"
+    "content/news/2020-12-11-SPLEVICTION12.md",
+    "content/news/2020-12-15-SPLPOLI15.md"
   ],
   "sidebarPicks": [
     "content/news/2020-04-24-SPLNURSE27.md"
