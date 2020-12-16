@@ -1,10 +1,11 @@
 {
   "featuredStories": [
+    "content/news/2020-12-16-SPLSHORT16.md",
     "content/news/2020-12-15-SPLPOLI15.md"
   ],
   "subfeatures": [
     "content/news/2020-12-14-SPLDOC14.md",
-    "content/news/2020-12-11-SPLEVICTION12.md"
+    "content/news/2020-12-10-SPLRESTRICT11.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
