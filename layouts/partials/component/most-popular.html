@@ -1,7 +1,4 @@
-{{ $mostPopURL := "/api/most-popular" }}
-{{ if site.IsServer }}
-  {{ $mostPopURL = "http://localhost:12345/api/most-popular" }}
-{{ end }}
+{{ $mostPopURL := "https://files.data.spotlightpa.org/feeds/most-popular.json" }}
 
 <div
   class="box"
