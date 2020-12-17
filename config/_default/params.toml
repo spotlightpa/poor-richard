@@ -15,5 +15,5 @@ promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
 sticky-image-caption = "Support Spotlight PA's fearless accountability journalism."
-sticky-image = "file:///Users/baxterc/Downloads/works_for_you_square.svg"
+sticky-image = "https://files.data.spotlightpa.org/uploads/01fv/8bdn/works-for-you-square.svg"
 sticky-link = "/donate/"
