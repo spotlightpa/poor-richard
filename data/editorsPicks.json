@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2020-12-18-SPLINMATES18.md",
-    "content/news/2020-12-16-SPLSHORT16.md"
+    "content/news/2020-12-18-SPLINMATES18.md"
   ],
   "subfeatures": [
     "content/news/2020-12-14-SPLDOC14.md",
-    "content/news/2020-12-10-SPLRESTRICT11.md"
+    "content/news/2020-11-11-SPLPRISON12.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-12-16-SPLSHORT16.md",
     "content/news/2020-12-15-SPLBALLOTS15.md",
-    "content/news/2020-12-14-SPLELECT15.md",
-    "content/news/2020-12-10-SPLCOSTS11.md"
+    "content/news/2020-12-14-SPLELECT15.md"
   ],
   "sidebarPicks": [
     "content/news/2020-12-10-SPLJUDGESXX.md"
