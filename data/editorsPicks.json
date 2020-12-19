@@ -3,8 +3,9 @@
     "content/news/2020-12-19-SPLRRP18.md"
   ],
   "subfeatures": [
-    "content/news/2020-12-14-SPLDOC14.md",
-    "content/news/2020-12-18-SPLINMATES18.md"
+    "content/news/2020-12-11-SPLEVICTION12.md",
+    "content/news/2020-09-12-SPLBAN12.md",
+    "content/news/2020-09-21-SPLFAQ21.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
