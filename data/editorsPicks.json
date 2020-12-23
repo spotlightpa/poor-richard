@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2020-12-22-SPLCSI23.md"
+    "content/news/2020-12-23-SPLAUDIT24.md"
   ],
   "subfeatures": [
-    "content/news/2020-10-15-SPLPIPELINEONE15.md",
-    "content/news/2020-10-15-SPLPIPESIDE15.md"
+    "content/news/2020-12-21-SPLBURN22.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-12-21-SPLBURN22.md",
+    "content/news/2020-12-22-SPLCSI23.md",
     "content/news/2020-12-19-SPLRRP18.md",
     "content/news/2020-12-18-SPLINMATES18.md"
   ],
