@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2020-12-23-SPLAUDIT24.md"
+    "content/news/2020-12-29-SPLOFFICE30.md"
   ],
   "subfeatures": [
-    "content/news/2020-12-21-SPLBURN22.md",
-    "content/news/2020-12-15-SPLBALLOTS15.md"
+    "content/news/2020-12-23-SPLAUDIT24.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2020-12-23-SPLLUNCH24.md",
     "content/news/2020-12-22-SPLCSI23.md",
+    "content/news/2020-12-21-SPLBURN22.md",
     "content/news/2020-12-19-SPLRRP18.md"
   ],
   "sidebarPicks": [
