@@ -16,7 +16,7 @@ subtitle = ""
 description = "Much remains uncertain about how the new eviction ban will work in practice — and whether it will survive legal challenges."
 blurb = "Much remains uncertain about how the new eviction ban will work in practice — and whether it will survive legal challenges."
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
+topics = ["Coronavirus", "Eviction"]
 series = []
 linktitle = ""
 suppress-featured = false
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
