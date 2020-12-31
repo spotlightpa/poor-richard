@@ -1,11 +1,8 @@
 {
   "featuredStories": [
-    "content/news/2020-12-30-SPLLIFT31.md"
+    "content/news/2020-12-31-SPLTHORN01.md"
   ],
-  "subfeatures": [
-    "content/news/2020-12-04-SPLSTAFF05.md",
-    "content/news/2020-12-18-SPLINMATES18.md"
-  ],
+  "subfeatures": [],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
