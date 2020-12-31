@@ -6,9 +6,9 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2020-12-30-SPLLIFT31.md",
     "content/news/2020-12-29-SPLOFFICE30.md",
-    "content/news/2020-12-22-SPLCSI23.md",
-    "content/news/2020-12-19-SPLRRP18.md"
+    "content/news/2020-12-23-SPLAUDIT24.md"
   ],
   "sidebarPicks": [
     "content/news/2020-12-10-SPLDJGRAPHXX.md"
