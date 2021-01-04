@@ -1,7 +1,7 @@
 banner-active = true
 banner = "**LIVE CORONAVIRUS TRACKER:** The latest county-by-county cases, hospitalizations, and more"
 banner-link = "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
-promo-active = true
+promo-active = false
 promo-type = "image"
 promo-image-caption = "Support Spotlight PA's fearless accountability journalism."
 promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01fs/ds6e/strengthen-banner.svg"
@@ -13,7 +13,7 @@ promo-mobile-height = 250
 promo-link = "/donate/"
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
-show-sticky = true
+show-sticky = false
 sticky-image-caption = "Support Spotlight PA's fearless accountability journalism."
 sticky-image = "https://files.data.spotlightpa.org/uploads/01fv/8bdn/works-for-you-square.svg"
 sticky-link = "/donate/"
