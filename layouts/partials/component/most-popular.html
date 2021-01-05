@@ -1,14 +1,24 @@
-{{ $mostPopURL := "https://files.data.spotlightpa.org/feeds/most-popular.json" }}
-
-<link rel="preload" as="fetch" crossorigin="" href="{{ $mostPopURL }}">
 <div
   class="box"
-  x-data="spl.mostPopular({ mostPopularURL: '{{ $mostPopURL }}' })"
+  x-data="spl.mostPopular()"
   x-init="load()"
   x-show="hasLoaded"
   x-cloak
   data-ga-category="most-popular"
 >
+  <link
+    rel="preload"
+    as="fetch"
+    crossorigin
+    href="https://files.data.spotlightpa.org/feeds/most-popular.json"
+    x-ref="mostPopSrc"
+  />
+  <link
+    rel="preload"
+    as="fetch"
+    href="/news/feed-summary.json"
+    x-ref="feedSrc"
+  />
   <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">Most Popular Stories</h1>
   <nav class="has-text-dark">
     <template x-for="(story, i) of stories">

@@ -1,7 +1,7 @@
 import fetchJSON from "../utils/fetch-json.js";
 import { reportClick as analytics } from "../utils/google-analytics.js";
 
-export default function mostPopular({ mostPopularURL }) {
+export default function mostPopular() {
   return {
     analytics,
     hasLoaded: false,
@@ -15,8 +15,8 @@ export default function mostPopular({ mostPopularURL }) {
       this.isLoading = true;
 
       Promise.all([
-        fetchJSON("/news/feed-summary.json"),
-        fetchJSON(mostPopularURL),
+        fetchJSON(this.$refs.feedSrc.href),
+        fetchJSON(this.$refs.mostPopSrc.href),
       ])
         .then(([stories, rankings]) => {
           this.isLoading = false;
