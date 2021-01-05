@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2021-01-05-SPLRULES06.md"
+    "content/news/2021-01-05-SPLSWEARIN06.md"
   ],
   "subfeatures": [
-    "content/news/2019-09-13-SPLBILLS15.md"
+    "content/news/2021-01-04-SPLBREW05.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-01-05-SPLRULES06.md",
     "content/news/2021-01-05-SPLCHANGES05.md",
-    "content/news/2021-01-04-SPLBREW05.md",
     "content/news/2020-12-29-SPLOFFICE30.md"
   ],
   "sidebarPicks": [
