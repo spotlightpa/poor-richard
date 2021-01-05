@@ -34,6 +34,7 @@
   data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
   data-ga-label='{{ $pageCat }}'
 >
+  {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
   {{ block "header" . }}
     {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
     {{ block "banner" . }}
@@ -83,7 +84,6 @@
     type="module"
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
-  {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
   {{ partial "header/ld-json.html" . }}
 </body>
 </html>
