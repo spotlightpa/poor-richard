@@ -1,5 +1,6 @@
 {{ $mostPopURL := "https://files.data.spotlightpa.org/feeds/most-popular.json" }}
 
+<link rel="preload" as="fetch" crossorigin="" href="{{ $mostPopURL }}">
 <div
   class="box"
   x-data="spl.mostPopular({ mostPopularURL: '{{ $mostPopURL }}' })"
