@@ -77,7 +77,8 @@ notAlternative = true
 [params]
     imgproxy = "/imgproxy/"
     title = "Spotlight PA"
-    favicon = "/img/logos/circle-black-on-trans-920.png"
+    logo = "/img/logos/circle-black-on-trans-920.png"
+    favicon = "/img/logos/favicon.svg"
     touch-icon = "/img/logos/square-white-on-black-920.png"
     images = [
         "2019/11/banner-white-on-capitol.jpeg"
