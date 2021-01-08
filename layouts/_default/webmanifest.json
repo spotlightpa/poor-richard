@@ -1,0 +1,20 @@
+{
+  "name": "{{ site.Home.Param "title-tag" }}",
+  "short_name": "{{ site.Title }}",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "{{ site.Home.Description }}",
+  "icons": [
+    {{ $icon := site.Param "touch-icon" | resources.Get }}
+    {{ range $i, $size := slice "180x180" "512x512" }}
+      {{ $iconShrunk := $icon.Fit $size }}
+      {{ if ne $i 0}},{{ end }}
+      {
+          "src": "{{ $iconShrunk.Permalink }}",
+          "sizes": "{{ $size }}",
+          "type": "{{ $iconShrunk.MediaType }}"
+      }
+    {{ end }}
+  ]
+}
