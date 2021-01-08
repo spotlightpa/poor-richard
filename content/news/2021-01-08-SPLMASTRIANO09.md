@@ -34,7 +34,7 @@ extended-kicker = ""
 
 HARRISBURG — Democrats in the Pennsylvania legislature are calling for the state Senate to investigate a Republican member who attended Wednesday’s Trump rally in Washington and marched to the U.S. Capitol steps before insurrectionists attacked the building.
 
-State Sen. Doug Mastriano (R., Franklin), a retired military colonel who is considered a possible candidate for governor in 2022, was <a href="https://www.pghcitypaper.com/pittsburgh/sen-mastriano-and-former-state-rep-saccone-among-trump-supporters-who-occupied-us-capitol/Content?oid=18690728">seen in social media photos outside the Capitol</a> with Rick Saccone, a former Republican state lawmaker and failed 2018 congressional candidate. In a since-deleted video, Saccone urged Trump supporters to storm the Capitol.
+State Sen. Doug Mastriano (R., Franklin), a retired military colonel who is considered a possible candidate for governor in 2022, was <a href="https://www.pghcitypaper.com/pittsburgh/sen-mastriano-and-former-state-rep-saccone-among-trump-supporters-who-occupied-us-capitol/Content?oid=18690728">seen in social media photos outside the Capitol</a> with Rick Saccone, a former Republican state lawmaker and failed 2018 congressional candidate. In a since-deleted video, Saccone praised Trump supporters for “swarming the Capitol,” said they had broken down the gates, and planned to “run out all the evil people in there.”
 
 State Sen. Tony Williams (D., Phila.) asked Republicans who control the chamber in a letter Thursday to convene a committee to “ascertain the extent” of any member’s involvement “in the planning and execution of the despicable and unlawful events that left four Americans dead, including one from Pennsylvania, and left a permanent stain on our nation’s conscience, history and international reputation as a bulwark of democracy.”
 
@@ -67,6 +67,7 @@ Democrats in Harrisburg and good-government groups this week blamed Mastriano an
 Senate Democrats called on Corman to investigate if Mastriano planned to go to Washington to “disrupt Congress in the execution of its lawful duty to record the results of the Electoral College.”
 
 “We seek an investigation into conduct by any Senator that violated state and federal law with regard to the attack on our democracy and the rule of law that occurred at the United States Capitol on January 6, 2021,” Sen. Anthony Williams said in the letter to GOP leaders, signed by 15 other senators.
+
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Spotlight%20PA%20provides%20essential%2C%20public-service%20journalism%20thanks%20to%20readers%20like%20you.%20We%20rely%20on%20your%20support.&cta_text=Become%20a%20member"></div>
 
 Senate Minority Leader Jay Costa (D., Allegheny) also called for an investigation and said Mastriano “has questioned the integrity of our elections without evidence, wasted taxpayer resources with sham hearings that claimed fraud without proof, and yesterday he was intimately engaged in the protest at the nation’s capital that ultimately turned into a violent breach of the U.S. Capitol building.”
