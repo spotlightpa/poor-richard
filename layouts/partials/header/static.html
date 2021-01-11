@@ -44,25 +44,4 @@
   title="Full News Feed"
 />
 
-<link
-  rel="icon"
-  href='/favicon.ico'
-/>
-{{ $icon := site.Param "favicon" | resources.Get | fingerprint }}
-<link
-  rel="icon"
-  type="{{ $icon.MediaType }}"
-  href='{{ $icon.Permalink }}'
-/>
-{{ $icon = site.Param "touch-icon" | resources.Get }}
-{{ range $size := slice "180x180" }}
-  {{ $iconShrunk := $icon.Fit $size }}
-  <link
-    rel="apple-touch-icon"
-    href="{{ $iconShrunk.Permalink }}"
-  />
-{{ end }}
-<link
-  rel="manifest"
-  href="/webmanifest.json"
-/>
+{{ partial "header/favicons.html" . }}
