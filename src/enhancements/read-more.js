@@ -1,3 +1,4 @@
+import fetchJSON from "../utils/fetch-json.js";
 import { reportClick as analytics } from "../utils/google-analytics.js";
 import imgproxy from "../utils/imgproxy-url.js";
 
@@ -42,8 +43,7 @@ export default function readMore({ showDate = false }) {
       width = roundUp(window.devicePixelRatio * width, 100);
       height = Math.round(aspectRatio * width);
 
-      fetch("/news/feed-summary.json")
-        .then((rsp) => rsp.json())
+      fetchJSON(this.$refs.feedSrc.href)
         .then((json) => {
           this.isLoading = false;
           this.hasLoaded = true;
