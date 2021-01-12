@@ -32,6 +32,8 @@ export default function readMore({ showDate = false }) {
       let hrefs = new Set(
         Array.from(this.$el.querySelectorAll("a")).map((el) => el.pathname)
       );
+      hrefs.add(window.location.pathname);
+
       // Figure out the right image size to request
       let { width = 0, height = 0 } = this.$refs.archives.querySelector(
         "figure img"
