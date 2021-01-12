@@ -1,19 +1,19 @@
 {
   "featuredStories": [
-    "content/news/2021-01-12-SPLCORMAN12.md"
+    "content/news/2021-01-12-SPLBREW13.md"
   ],
   "subfeatures": [
-    "content/news/2020-08-20-SPLDARK21.md",
-    "content/news/2020-04-09-SPLSENATE10.md"
+    "content/news/2021-01-05-SPLSWEARIN06.md",
+    "content/news/2021-01-05-SPLRULES06.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-01-06-SPLEVENT06.md",
+    "content/news/2021-01-12-SPLCORMAN12.md",
     "content/news/2021-01-08-SPLMASTRIANO09.md",
     "content/news/2021-01-05-SPLCHANGES05.md"
   ],
   "sidebarPicks": [
-    "content/news/2020-11-02-SPLEVICTxx.md"
+    "content/news/2020-12-10-SPLJUDGESXX.md"
   ]
 }
