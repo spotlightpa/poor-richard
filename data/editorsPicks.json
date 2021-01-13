@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2021-01-12-SPLBREW13.md"
+    "content/news/2021-01-12-SPLPSP13.md"
   ],
   "subfeatures": [
-    "content/news/2021-01-05-SPLSWEARIN06.md",
-    "content/news/2021-01-05-SPLRULES06.md"
+    "content/news/2020-09-03-SPLPSP04.md",
+    "content/news/2019-09-20-SPLRACE20.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-01-12-SPLPSP13.md",
+    "content/news/2021-01-12-SPLBREW13.md",
     "content/news/2021-01-12-SPLCORMAN12.md",
     "content/news/2021-01-08-SPLMASTRIANO09.md"
   ],
