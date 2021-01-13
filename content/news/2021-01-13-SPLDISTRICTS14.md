@@ -66,6 +66,10 @@ Diamond first introduced the amendment in 2019, but the concept of letting lawma
 
 Unlike a bill, <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=11">constitutional amendments</a> don’t go to the governor for approval or veto. Instead, they have to pass the legislature twice in consecutive sessions before going to voters for consideration.
 
+In a statement, Gov. Tom Wolf called the proposed amendment “another effort by Harrisburg Republicans to prevent the will of the people from being heard by stopping all Pennsylvanians from having a voice in selecting judges for the highest courts in the state.”
+
+“This hyper-partisanship from Harrisburg Republicans has to stop,” he said. 
+
 <i>This story will be updated.</i>
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuIAAW"><i>spotlightpa.org/donate</i></a><i>.</i>
