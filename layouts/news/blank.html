@@ -16,15 +16,6 @@
   {{ partial "header/meta.html" . }}
   {{ partial "header/google-analytics-async.html" . }}
 
-  {{ range .AlternativeOutputFormats }}
-    <link
-      rel="{{ .Rel }}"
-      type="{{ .MediaType.Type }}"
-      href="{{ .Permalink | safeURL }}"
-      title="{{ $.Title }}"
-    />
-  {{ end }}
-
   <!-- Just Google Analytics -->
   <script
     src='{{ partialCached "helper/get-nomodules-js" . }}'

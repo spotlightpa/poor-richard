@@ -1,7 +1,8 @@
 {{- $json := newScratch -}}
 
 {{- $items := slice -}}
-{{- range first 500 .RegularPages -}}
+{{- $news := site.GetPage "/news/_index.md" -}}
+{{- range first 500 $news.RegularPages -}}
 
   {{- $json.SetInMap "item" "url" .RelPermalink -}}
   {{- $json.SetInMap "item" "title" .LinkTitle -}}

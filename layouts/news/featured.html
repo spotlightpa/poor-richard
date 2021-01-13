@@ -16,15 +16,6 @@
   {{ partial "header/meta.html" . }}
   {{ partial "header/google-analytics-async.html" . }}
 
-  {{ range .AlternativeOutputFormats }}
-    <link
-      rel="{{ .Rel }}"
-      type="{{ .MediaType.Type }}"
-      href="{{ .Permalink | safeURL }}"
-      title="{{ $.Title }}"
-    />
-  {{ end }}
-
   {{ $cssFonts := resources.Get "featured/fonts.css" }}
   {{ $cssTW := resources.Get "css/featured-tailwind.css" }}
   {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
@@ -57,6 +48,19 @@
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
   {{ partial "header/favicons.html" . }}
+  <link
+    rel="alternate"
+    type="application/json"
+    href='{{ absURL "/feeds/full.json" }}'
+    title="Full News Feed"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href='{{ absURL "/feeds/full.xml" }}'
+    title="Full News Feed"
+  />
 </head>
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}

@@ -12,13 +12,3 @@ code = 302
 from = "/imgproxy/*"
 to = "https://images.data.spotlightpa.org/:splat"
 code = 200
-
-[[redirects]]
-from = "/feeds/full.json"
-to = "/news/feed.json"
-code = 200
-
-[[redirects]]
-from = "/feeds/full.xml"
-to = "/news/index.xml"
-code = 200

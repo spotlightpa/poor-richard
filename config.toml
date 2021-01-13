@@ -45,14 +45,8 @@ googleAnalytics = "UA-141126362-1"
 [mediaTypes."text/netlify"]
     delimiter = ""
 
-[outputFormats.jsonfeed]
+[outputFormats.json]
     mediaType = "application/json"
-    baseName = "feed"
-    isPlainText = true
-
-[outputFormats.jsonfeedsummary]
-    mediaType = "application/json"
-    baseName = "feed-summary"
     isPlainText = true
 
 [outputFormats.csv]
@@ -73,6 +67,7 @@ notAlternative = true
 
 [outputs]
     home = ["html", "redirects", "headers"]
+    section = ["html"]
 
 [params]
     imgproxy = "/imgproxy/"

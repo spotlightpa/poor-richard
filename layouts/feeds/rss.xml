@@ -1,4 +1,5 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+{{- $news := site.GetPage "/news/_index.md" -}}
 <rss
   version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
@@ -9,7 +10,7 @@
     <title>
       {{- .Site.Title }}{{ with .Title }}: {{.}}{{ end -}}
     </title>
-    <link>{{ (.Page.OutputFormats.Get "html").Permalink }}</link>
+    <link>{{ ($news.Page.OutputFormats.Get "html").Permalink }}</link>
     <description>{{ .Description }}</description>
     <generator>Hugo -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
@@ -19,7 +20,7 @@
     {{ if not .Date.IsZero -}}
       <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     {{- end }}
-    {{ range first 50 .Pages }}
+    {{ range first 50 $news.Pages }}
       <item>
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>

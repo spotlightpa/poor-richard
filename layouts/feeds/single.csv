@@ -1,5 +1,6 @@
-{{- $p := .Paginator 500 -}}
-{{- range $i, $p := $p.Pages -}}
+{{- $news := site.GetPage "/news/_index.md" -}}
+{{- $p := $news.Pages | first 500 -}}
+{{- range $i, $p := $p -}}
   {{- if eq $i 0 -}}
     {{- $row := slice "date" "kicker" "title"  "byline" "url" -}}
     {{- partial "helper/csv-row.txt" $row -}}

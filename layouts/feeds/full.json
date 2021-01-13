@@ -1,7 +1,8 @@
 {{- $json := newScratch -}}
 
 {{- $items := slice -}}
-{{- range first 15 .RegularPages -}}
+{{- $news := site.GetPage "/news/_index.md" -}}
+{{- range first 15 $news.RegularPages -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
 
   {{- $json.SetInMap "item" "id" .Permalink -}}
@@ -15,9 +16,9 @@
 {{- end -}}
 
 {{- $json.SetInMap "data" "version" "https://jsonfeed.org/version/1" -}}
-{{- $json.SetInMap "data" "title" .Title -}}
-{{- $json.SetInMap "data" "description" .Description -}}
-{{- $json.SetInMap "data" "home_page_url" .Permalink -}}
+{{- $json.SetInMap "data" "title" site.Title -}}
+{{- $json.SetInMap "data" "description" site.Home.Description -}}
+{{- $json.SetInMap "data" "home_page_url" site.Home.Permalink -}}
 {{- with .OutputFormats.Get "jsonfeed" -}}
   {{- $json.SetInMap "data" "feed_url" .Permalink -}}
 {{- end -}}

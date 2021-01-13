@@ -18,14 +18,6 @@
   <!-- Metadata -->
   {{ partial "header/meta.html" . }}
 
-  {{ range .AlternativeOutputFormats }}
-    <link
-      rel="{{ .Rel }}"
-      type="{{ .MediaType.Type }}"
-      href="{{ .Permalink | safeURL }}"
-      title="{{ $.Title }}"
-    />
-  {{ end }}
   {{ block "extra-head" . }}{{ end }}
 </head>
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
