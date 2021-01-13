@@ -1,6 +1,6 @@
 +++
 no-index = true
-outputs = ["jsonfeed"]
+outputs = ["json"]
 layout = "webmanifest"
 url = "webmanifest.json"
 +++
