@@ -34,7 +34,9 @@ if (window.location.pathname.match(/newsletters/)) {
   storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
 }
 // And haven't seen the newsletter modal recently...
-if (loadDate(SAW_NEWSLETTER_MODAL_KEY)) {
+let sawNLModalOn = loadDate(SAW_NEWSLETTER_MODAL_KEY);
+let SHOW_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 1 week
+if (sawNLModalOn && (now - sawNLModalOn) < SHOW_INTERVAL) {
   showModalNewsletter = false;
 }
 if (loadDate(SAW_DONATE_MODAL_KEY)) {
