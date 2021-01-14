@@ -1,3 +1,4 @@
+import sendEvent from "./send-event.js";
 import galite from "ga-lite/src/ga-lite.js";
 import {
   each,
@@ -162,10 +163,12 @@ export function addGAListeners() {
       "submit",
       () => {
         let validity = el.reportValidity() ? "submit" : "invalid";
+        let eventAction = `${el.dataset.gaForm}:${validity}`;
         buildAndSend(el, {
-          eventAction: `${el.dataset.gaForm}:${validity}`,
+          eventAction,
           transport: "beacon",
         });
+        sendEvent({ el, name: "x-form-submit", detail: eventAction });
       },
       {
         passive: true,

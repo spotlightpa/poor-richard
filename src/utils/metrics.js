@@ -8,6 +8,7 @@ const LAST_VISIT_KEY = "last-visit";
 const SAW_NEWSLETTER_MODAL_KEY = "saw-newsletter-modal";
 const FROM_MC_KEY = "originated-from-mailchimp";
 const SAW_DONATE_MODAL_KEY = "saw-donate-modal-totebag";
+const SIGNED_UP_FOR_NEWSLETTER_KEY = "signed-up-for-newsletter";
 
 let now = new Date();
 export let showModalNewsletter = true;
@@ -36,7 +37,7 @@ if (window.location.pathname.match(/newsletters/)) {
 // And haven't seen the newsletter modal recently...
 let sawNLModalOn = loadDate(SAW_NEWSLETTER_MODAL_KEY);
 let SHOW_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 1 week
-if (sawNLModalOn && (now - sawNLModalOn) < SHOW_INTERVAL) {
+if (sawNLModalOn && now - sawNLModalOn < SHOW_INTERVAL) {
   showModalNewsletter = false;
 }
 if (loadDate(SAW_DONATE_MODAL_KEY)) {
@@ -50,6 +51,10 @@ if (document.referrer.match(/campaign-archive/)) {
   storeDate(FROM_MC_KEY, now);
 }
 if (loadDate(FROM_MC_KEY)) {
+  showModalNewsletter = false;
+}
+// And didn't previously sign up
+if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
   showModalNewsletter = false;
 }
 // Or we're just testing...
@@ -68,3 +73,9 @@ export function sawModalNewsletter() {
 export function sawModalDonate() {
   storeDate(SAW_DONATE_MODAL_KEY, now);
 }
+
+document.documentElement.addEventListener("x-form-submit", ({ detail }) => {
+  if (detail.match(/newsletters.*submit/)) {
+    storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
+  }
+});
