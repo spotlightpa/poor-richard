@@ -1,7 +1,7 @@
 banner-active = true
 banner = "**LIVE CORONAVIRUS TRACKER:** The latest county-by-county cases, hospitalizations, and more"
 banner-link = "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
-promo-active = true
+promo-active = false
 promo-type = "image"
 promo-image-caption = "RSVP for free for our live interview with PASSHE Chancellor Daniel Greenstein"
 promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01fz/750n/banner-event-promo-2-.png"
@@ -13,7 +13,7 @@ promo-mobile-height = 250
 promo-link = "https://inquirer.zoom.us/webinar/register/8016097983148/WN_lrnvTbUYS3O8kXzGztXaVw"
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
-show-sticky = true
+show-sticky = false
 sticky-image-caption = "RSVP for free for our live interview with PASSHE Chancellor Daniel Greenstein"
 sticky-image = "https://files.data.spotlightpa.org/uploads/01fz/74p4/square-event-promo-1-.png"
 sticky-link = "https://inquirer.zoom.us/webinar/register/8016097983148/WN_lrnvTbUYS3O8kXzGztXaVw"
