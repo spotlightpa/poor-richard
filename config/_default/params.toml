@@ -1,19 +1,19 @@
 banner-active = true
 banner = "**LIVE CORONAVIRUS TRACKER:** The latest county-by-county cases, hospitalizations, and more"
 banner-link = "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
-promo-active = false
+promo-active = true
 promo-type = "image"
-promo-image-caption = "RSVP for free for our live interview with PASSHE Chancellor Daniel Greenstein"
-promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01fz/750n/banner-event-promo-2-.png"
+promo-image-caption = "Support fearless accountability journalism in Pennsylvania. Become a member of Spotlight PA."
+promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g0/12tf/1.svg, https://files.data.spotlightpa.org/uploads/01g0/12tg/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12tg/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12th/2.svg"
 promo-desktop-width = 728
 promo-desktop-height = 90
-promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01fz/74p5/rectangle-event-promo-1-.png"
+promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g0/12pk/1.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12pn/2.svg"
 promo-mobile-width = 500
 promo-mobile-height = 250
-promo-link = "https://inquirer.zoom.us/webinar/register/8016097983148/WN_lrnvTbUYS3O8kXzGztXaVw"
+promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
-show-sticky = false
-sticky-image-caption = "RSVP for free for our live interview with PASSHE Chancellor Daniel Greenstein"
-sticky-image = "https://files.data.spotlightpa.org/uploads/01fz/74p4/square-event-promo-1-.png"
-sticky-link = "https://inquirer.zoom.us/webinar/register/8016097983148/WN_lrnvTbUYS3O8kXzGztXaVw"
+show-sticky = true
+sticky-image-caption = "Support fearless accountability journalism in Pennsylvania. Become a member of Spotlight PA."
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g0/12g5/1.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/2.svg"
+sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
