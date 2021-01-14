@@ -40,9 +40,22 @@
         <div class="tile is-parent is-8">
           <div
             class="tile is-child"
-            data-ga-category="midpage:donate"
+            data-ga-category="midpage"
+            x-data="{ status: spl.funnelStatus() }"
           >
-            {{ partial "component/donate-prefill.html" . }}
+            <div
+              data-ga-category="newsletter"
+              x-show="status < 1"
+            >
+              {{ partial "newsletter/investigator-box.html" . }}
+            </div>
+            <div
+              data-ga-category="donate"
+              x-cloak
+              x-show="status >= 1"
+            >
+              {{ partial "component/donate-prefill.html" . }}
+            </div>
           </div>
         </div>
       </div>

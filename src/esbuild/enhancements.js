@@ -4,6 +4,7 @@ import "../utils/add-listeners.js";
 import emailPreferences from "../enhancements/email-preferences.js";
 import embedList from "../enhancements/embed-list.js";
 import feed from "../enhancements/feed.js";
+import funnelStatus from "../enhancements/funnel-status.js";
 import intersector from "../enhancements/intersector.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import modal from "../enhancements/modal.js";
@@ -18,6 +19,7 @@ window.spl = Object.assign({}, window.spl, {
   emailPreferences,
   embedList,
   feed,
+  funnelStatus,
   intersector,
   imageRotator,
   modal,

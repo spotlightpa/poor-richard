@@ -13,6 +13,8 @@ const SIGNED_UP_FOR_NEWSLETTER_KEY = "signed-up-for-newsletter";
 let now = new Date();
 export let showModalNewsletter = true;
 export let showModalDonate = true;
+// funnelStatus: 0 = new user, 1 = subscriber, 2 = member
+export let funnelStatus = 0;
 
 let lastVist = loadDate(LAST_VISIT_KEY);
 let lastSession = loadDate(LAST_VISIT_KEY, { useSession: true });
@@ -25,14 +27,17 @@ let newSession = lastVist && !lastSession && now - lastVist > 1000 * 60 * 60;
 
 storeDate(LAST_VISIT_KEY, now);
 storeDate(LAST_VISIT_KEY, now, { useSession: true });
+// TODO: Figure out who is a donor now that donation is offsite
 // If we're on the donate page now, don't show donate screen later
 if (window.location.pathname.match(/donate/)) {
   storeDate(SAW_DONATE_MODAL_KEY, now);
+  funnelStatus = 2;
 }
 
 // If we're not already on the newsletter page...
 if (window.location.pathname.match(/newsletters/)) {
   storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
+  funnelStatus ||= 1;
 }
 // And haven't seen the newsletter modal recently...
 let sawNLModalOn = loadDate(SAW_NEWSLETTER_MODAL_KEY);
@@ -46,16 +51,20 @@ if (loadDate(SAW_DONATE_MODAL_KEY)) {
 // And didn't come from the newsletter...
 if (window.location.href.match(/utm_source=email/)) {
   storeDate(FROM_MC_KEY, now);
+  funnelStatus ||= 1;
 }
 if (document.referrer.match(/campaign-archive/)) {
   storeDate(FROM_MC_KEY, now);
+  funnelStatus ||= 1;
 }
 if (loadDate(FROM_MC_KEY)) {
   showModalNewsletter = false;
+  funnelStatus ||= 1;
 }
 // And didn't previously sign up
 if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
   showModalNewsletter = false;
+  funnelStatus ||= 1;
 }
 // Or we're just testing...
 if (onTestNewsletterPage) {
