@@ -24,13 +24,19 @@
   {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
   {{ partial "component/image-block.html" $imgOpts }}
 
-  <h2 class="title is-4 is-spaced mt-2">
+  <h2
+    class="title is-4 is-spaced mt-2"
+    data-ga-category="hed"
+  >
     <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
       {{ .LinkTitle }}
     </a>
   </h2>
   {{ if $params.byline }}
-    <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+    <h3
+      class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+      data-ga-category="byline"
+    >
       <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
         by {{ $params.byline }}
       </a>
