@@ -1,6 +1,6 @@
 banner-active = true
-banner = "**LIVE CORONAVIRUS TRACKER:** The latest county-by-county cases, hospitalizations, and more"
-banner-link = "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
+banner = "**DON'T MISS A BEAT:** Get all of the top Pa. news in one daily newsletter, plus some fun, too"
+banner-link = "https://www.spotlightpa.org/newsletters/papost/"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "Support fearless accountability journalism in Pennsylvania. Become a member of Spotlight PA."
