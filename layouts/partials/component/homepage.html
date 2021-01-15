@@ -43,11 +43,8 @@
             data-ga-category="midpage"
             x-data="{ status: spl.funnelStatus() }"
           >
-            <div
-              data-ga-category="newsletter"
-              x-show="status < 1"
-            >
-              {{ partial "newsletter/investigator-box.html" . }}
+            <div x-show="status < 1">
+              {{ partial "newsletter/multi-box.html" . }}
             </div>
             <div
               data-ga-category="donate"
