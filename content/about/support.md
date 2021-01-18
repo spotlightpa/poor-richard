@@ -916,9 +916,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * J. Parsons
 * Harvey Partica
 * Elizabeth Parziale
+* Susan Patrone 
 * Meaghan, Alok & Sachin Pattani
 * Jeanne Patterson
 * Jan Paul
+* Henry J. Pecher III
 * Lydia Pecker
 * Mark Pecker
 * Ann Pehle
@@ -939,6 +941,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * D. & G. Phelps
 * Amy Phillips
 * Diane Phillips
+* Kate Philips
 * Christine Caldara Piatos
 * Renee Piccirilli
 * Joanna Pierce
@@ -961,19 +964,24 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lois Prytherch
 * Ellie Pyles
 * Harry Rambo
+* Georgina Rampack
 * Linda Ramsey
+* Rosemary Ranck
 * Susan Ranck
 * J. Randolph
 * Theresa M. Rang
 * Ronald Ranieri
 * Brian Rank
+* Ella Rayburn
 * Mark Raymond
 * Sean Raymond
 * Emilio Recio
 * Genevieve Reed
 * Luke Reed
 * Lauri Reeder
+* Ellen Reese
 * Sandra Reese
+* Scott Rehr
 * Brenda Reigle
 * Peter Reilly
 * Philip Reilly
@@ -986,11 +994,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Eric Riese
 * Gloria Reisman
 * Rebecca Richards
+* Eric Richardson 
 * Michele Richman
 * Adam Richter
 * Denise Rinear
 * Robert W. Rishel
 * Alex Roarty
+* Diane Roberts
 * David Robertson
 * Fatima Robinson
 * Gregg Robertson
@@ -1011,10 +1021,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Tina Rosenberg
 * David R. Ross
 * Marc Ross
+* Danielle Roth
 * Mark Roth
 * Lynn Fryman Rothman & Michael Rothman, MD
 * Jo A. Roussey
 * Carol Ruberto
+* Steve Ruelke 
 * Robert Ruff Jr.
 * William Ruffley
 * Amy Ruffo
@@ -1027,6 +1039,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Benedict X. Saia
 * David and Ben Salkin
 * Merle Salkin
+* Ann Salmon
 * James Salvaggio
 * Judith Samans-Dunn
 * Patrick Sanaghan
@@ -1037,6 +1050,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Alletta Schadler 
 * David & Pat Schaeffer
 * John Schaeffer
+* Sherri Schaeffer
 * Philip Scharl
 * Laurie Scheid
 * Gary & Dode Scheimer
@@ -1052,9 +1066,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jennifer Schwartz
 * Barbara Scott
 * Robert & Mary Ellen Scott
+* Robert Scott
+* John Seamans
 * John & Barbara Seefeldt
 * Anthony J. Seigafuse
 * Paul & Kathleen Selbst
+* Nicholas Selch
 * Pat Sellers
 * Bradley Seltzer
 * Timothy Selway
@@ -1070,6 +1087,8 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Susan Sheehan
 * Michael Sheketoff
 * Peter Shelly
+* Sally Shepherd
+* Mark Sheppard
 * Tom & Amy Sherry
 * Alexandra Shirreffs
 * James Shoemaker
@@ -1087,11 +1106,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Caroline Simpson
 * Robert Sims
 * Josh Singer
+* Vaswati Sinha
 * Emily Skopov
 * Ellen L. Sleeter
 * Richard Small
 * Scott Smedley
 * Carol L. Smith
+* Elizabeth Smith
 * Karen Smith
 * Michael Smith
 * Michael Smith
@@ -1125,6 +1146,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Christine & James Sterganos
 * Joan Stern
 * Vincent Stern
+* Jacqueline Sternberg
 * Pamela Stetor
 * Reid Stever
 * Bob Stewart
@@ -1141,11 +1163,15 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Betram Strieb
 * John Stuart
 * Rebecca & Collin Stuart
+* Lewis Sudul
 * John Suierveld
 * Sean P. Sullivan
 * Cary Scott Summers
+* Barbara Sunderlin
+* Andrew Sutherland
 * Marjorie Swart
 * Burnetta Swartz
+* William Sweeney
 * Jeffrey Sweet
 * Mary Sweet
 * Benjamin Swofford
@@ -1154,6 +1180,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Mark Szybist
 * Ardith Talbott
 * John Tampanello
+* MaryEllen Tarman 
 * Barbara J. Taylor
 * John Taylor
 * Randy & Marcie Taylor
@@ -1162,9 +1189,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Freda Tepfer
 * Matthew Terruso
 * Elise Thomas
+* Louise Thomas 
 * Lynn Thomas
 * R. Thomas
 * Donald Thompson
+* George Thompson
 * Roger Thompson
 * Irene Tierney
 * M. Tillger
@@ -1173,6 +1202,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Coxey Toogood
 * Charles Topper
 * Ray Torres
+* Esther Toth
 * Karen Hale Toth
 * Thomas L. Toth
 * Steve Townsend
@@ -1182,7 +1212,9 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Walter Tsou
 * Pam Tulchinsky
 * Margaret Turcich
+* Jeannine Turgeon
 * Catherine Twigg
+* Cynthia Tyger
 * Cynthia Tyler
 * Walter C. Uhler
 * Walter & Esther Underhill
@@ -1198,6 +1230,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Robert F. Vickery
 * Sara Vigneri
 * Joseph C. Vignola
+* Cecilia Viti
 * Fred Vodde
 * Richard Waggy
 * Fritz Walker
@@ -1210,7 +1243,9 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Robin Walter
 * Kay Walters
 * Diane M. Ward
+* Elizabeth Ward
 * Mary Warner
+* Caity Weaver
 * Karen Weaver
 * Mary Weaver
 * Nathaniel Webb
@@ -1225,6 +1260,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Sy Weiss
 * C. Wentzel
 * Gerald F. Werkheiser
+* David Wersan
 * Judy Wertheimer
 * Judy Wertheimer & Michael Boninger
 * Janelle Wertzberger
@@ -1258,10 +1294,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kathryn Wolfson
 * Chris Wonders
 * Susan Wood
+* Susan Wood
 * Barbara Woodin
+* David Woods
 * Susan Wooley
 * Robert Wooten
 * Barbara Worden
+* Laura Worker
 * Margaret Wren
 * Francis Wynne
 * Tom Wyse
