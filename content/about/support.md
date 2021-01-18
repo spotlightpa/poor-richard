@@ -29,10 +29,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Nell McCormack Abom
 * Richard Abraham
 * Steven C. Adams
+* John Affleck
 * Elizabeth Ann Allen
 * Jeanne Allen
+* Sherri Alms
 * Myesha Alston
 * Gail Alu
+* George Aman
 * E. Anderson
 * Robert Anderson
 * Stephen J. Anderson
@@ -43,6 +46,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Paul Armor
 * Bob Arrowsmith
 * Stephen Artman
+* Marilyn Ashbrook
 * David Ashton
 * David A. Atkinson
 * Kathleen Atkinson
@@ -51,20 +55,25 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * David Auel
 * Charles H. Ault
 * Marie Azadian
+* Charlie Bacas
 * J. Bader
 * P. Baer
 * Mark Bailey
+* Chris Baker
 * Dennie Baker
+* Janet Baker
 * Kathleen Baker
 * Whitney Baldwin
 * Heather Balester
 * John William Ball
 * Anthony Barbush
 * Joe Bard
+* Mary Barnes
 * Donald Barnett
 * Brenda Barrett
 * Carol Barrett
 * Cate Barron
+* Keelin Barry
 * Michelle Bartus
 * Chris Bastress
 * Kenneth Baumert
@@ -74,8 +83,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Christopher Baxter
 * Mark Bazrod
 * Rebecca Beal
+* Graeme Beaton
 * Mike Beattie
 * Diana & Thomas Beausang
+* Sylvia Beck
 * Ira Beckerman
 * Barry Bedrick
 * Dorothea Behr
@@ -87,11 +98,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Nathan Benefield
 * Anthony Benes
 * Stanley Berard
+* Kathleen Bergman
 * L.J. Bernard
 * R. Thomas Berner
 * Rita Bernstein & Alan Zuckerman
 * Michael Bertram
 * Kevin Bevan
+* J. Breen
 * Sean Brennan
 * Robert Joseph Biller
 * Brian Birmingham
@@ -101,6 +114,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Heather Blakeslee
 * William Blando
 * Mary L. Bloom
+* Michele Bloom
 * Shelly Bloom
 * Barbara Bloomfield
 * Stephen Blum
@@ -135,12 +149,15 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jeffrey Brown
 * Lisa Brown
 * Harriet Brumberg
+* Linda Brunski
 * Henry & Martha Bryans
 * Alan Buch
+* Karen Buck
 * Lisa Budwig
 * Theresa Buehner
 * Thomas Burnett
 * Jordan Burnham
+* Beth Burrell
 * Byron Butcher
 * Heidi Butler
 * J.L. Byrne & C.M. Hersh
@@ -171,6 +188,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Ben & Laura Cattell Noll
 * Edward Cawley
 * Larry Ceisler
+* John Chalikian
 * Dianne Chambless
 * Marguerite Chandler
 * Chandler - Shreve Family Fund
@@ -179,6 +197,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kathleen Charlton
 * Linda & Roy Christman
 * Patrick Christmas
+* Garet Church
 * Frank Cicchiello
 * Edward Claghorn
 * Jordan Clark
@@ -195,6 +214,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Milton Cohen
 * Sean Collins
 * Verna Colliver
+* Adam Combs
 * Carolyn Comitta
 * Melinda Condon
 * Danny Condra
@@ -217,6 +237,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Richard F. Couche
 * Emily Cox
 * Chris Coyle
+* Tracy Craig
 * C. Craige
 * Brittany Crampsie
 * Lauren Cristella
@@ -230,6 +251,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * John Cunningham
 * Peggy & Mark Curchack
 * Dennis Curtin
+* Carol Dague 
 * Amy D'Ancona
 * Sharon Dale
 * Joan Daniels
@@ -242,6 +264,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Julie Daye
 * Will Dean
 * Donald DeCary Sr.
+* Thomas Decker
 * Fred Dedrick
 * Charles DeFanti
 * Timothy DeFoor
@@ -251,17 +274,23 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Fran DeMillion
 * David DeNault
 * Tracey DePasquale 
+* Mary DePaul
 * Dara Deroiste
 * Al K. DeRoy, Ph.D., M.P.A.
 * Jean & Barry DeSantis
+* Michael Desmond
 * Ryan Deto
 * Jay S. Detwiler
+* Mark Devey
 * David R. DeVoe & Laura A. Lane
 * Thomas & Carole DeWall
 * Paul Dicicco
+* Josephine Dick 
 * PJ Dickey
 * Dallas DiLeo
 * Carol DiMartile
+* Christine Dimov
+* Travis DiNicola
 * Michael DiNunzio
 * Judy Dixon
 * Steven Doerfler
@@ -275,12 +304,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lawrence Doperak
 * Monica Dougherty
 * Paul Downs
+* Jack Doyle
 * Gorana Draguljic
 * Stephen Drizos
 * Francis Drotar
 * Earl Drumheiser
 * Christina Drzal
 * Franklin Duddy
+* Margaret Dunay
 * Stephen Duncan
 * Edwin Dunckley
 * Robert DuPlessis
@@ -315,6 +346,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kathleen Eves
 * Thomas Eveslage
 * Thomas & Sonja Eveslage
+* Lesley Ewing
 * Aaron Fafarman
 * C. Fairchild
 * Esther Falcetta
@@ -337,16 +369,19 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * M. Firth
 * Ezra Fishman & Nicola Brodie
 * Michael Flannery
+* Scott Fleischee 
 * Thomas Flocco
 * Michael Flynn
 * Yvonne C. Foery
 * Barbara Forbes-Rhouni
 * The Ford Foundation Matching Gifts Program
+* David Forde
 * Jennifer Forehand
 * Stephen Forest
 * Rebecca & Ari Forman
 * Leroy Forney
 * Sara Forster
+* Keith Forsyth
 * Nancy Fortmann
 * Robert Frable
 * Daniel Fraccica
@@ -373,12 +408,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Greg Fullam
 * Francee E. Fuller
 * Anthony Gabriel
+* Maureen Gallagher
 * Joe Garchinsky
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
 * Deborah Garvey
 * James Gates
+* Kathy Gates
 * Robert L. Gatski, Jr.
 * Edmond Guadelli
 * John Gaynard
@@ -387,18 +424,23 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Barbara Geistwhite
 * Lee Gemmill
 * Tom Gemmill
+* Richard Genberg
+* Tammy Gentzel
 * Daniel George
 * Michael George
 * Nancy & Michael George
 * S. George
 * Thomas Gery
 * Thomas Getzen
+* Carol Gillespie 
+* April Gilmore
 * Diane K. Gilroy
 * Lorraine Gimblett
 * Lynda Ginsburg
 * Lilly Gioia
 * Nicholas Giordano
 * Stephen M. Glynn
+* Jessica Gmeinder 
 * Denise Gmerek
 * Jennifer Goettner
 * Nancy B. Gold
@@ -407,6 +449,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Tamara Goldman
 * William Gontram
 * Ellen Goodman
+* Nathan Gorenstein
 * Joanne Gordon 
 * Gerry Gorelick
 * J. Goss
@@ -416,8 +459,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * M. Eileen & John D. Graham
 * Victoria Grant  
 * Ralf Rundgren Graves
+* Theo Gravity
+* Anne Gray
 * John F. Graybill
 * Howard Green
+* Doug Greenfield
 * Marie Green-McKeon
 * Marjorie Greenfield
 * T. & B. Griffith
@@ -425,6 +471,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Gerald Groff
 * Maureen Grosheider
 * Danielle Gross
+* Sandra Grotberg
 * Donald Gruber
 * Mark Gudalis
 * Gregory Guise
@@ -440,6 +487,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Paul Hale
 * Jennifer Hallam
 * C. Halstead
+* Dale Hamby
 * B.A. Hamilton
 * Jacqueline Hamilton
 * Karen Hamm
@@ -451,28 +499,37 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Don Hannum
 * Elizabeth H. Harbits
 * Lizzy Hardison
+* Valerie Hardy
+* Kathy Harrigan
 * Anne Harris 
 * Margaret Harris
 * Joan Harrold
+* Jane Hart
 * Gerry Hartzel
 * Dan Hartzell
 * Ellen Harvey
 * Catherine Hastings
+* Andrea Hattar
 * Bernice Hausman
 * Alan Hayakawa
 * Valerie Hayes
 * Cam & Bob Hays
+* Rob Hays
 * Helen Hazi
 * David He
 * T. Hechler
 * Dwayne Heckert
 * Joseph Heeney
+* Aaron Hegarty
 * Kathleen & Steven Heidecker
+* Les Helmeczi
 * Danya Henninger
 * Kevin M. Hepler, MD
 * Ellen Herman
 * Janet Hermann
 * Janice Herrold
+* Dr. Jane Hershberger
+* Richard Hershey
 * Grace E. Herstine
 * David Hess
 * Connie Hester
@@ -481,6 +538,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Stephen Heverin
 * Clint Heverly
 * Pamela H. Hicks
+* Jodi Higgins
 * Christine High
 * Douglas Hill
 * Glen Hill
@@ -494,17 +552,20 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jean Holland
 * Susan Hook
 * Josh Hooper 
+* Susan Hooper
 * Amanda N. Hoover
 * Bob Hoover
 * John Hope
 * Louise Horan
 * Avram Hornik
 * Claudia & Harvey Horowitz
+* Don Hossler
 * Kristen Houser
 * Feather Houstoun
 * Kate Howard
 * Chris Hoyler
 * Nancy Hoyt
+* Lydia Huang
 * Huennekens Family Fund
 * Roger Huggard
 * Stephen R. Hughes
@@ -516,6 +577,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Sharon Hyde
 * Kathryn Hynes
 * Robert M. Hynosky
+* David Imgrund
 * Annette E. Inker
 * Casey & Kristen Irvine
 * Kristen Irvine
@@ -535,9 +597,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Clare Jerome
 * Al Jinks
 * Paul Johnson
+* Susan Johnson
 * Marissa Johnson-Valenzuela
 * Louise R. Johnston
 * Peter Johnstone
+* Linda Jonebring
 * Carol Jones
 * Nick Jones
 * Robert Jones
@@ -545,6 +609,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Edward R. Joshua III
 * Eric Jurgensen
 * Denise Kalp
+* Duane Kanagy
 * Brett Kane
 * Margot Kane
 * Rasesh Kapadia
@@ -563,7 +628,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * J. Kennedy
 * Patrick Kerkstra
 * Diana Kerr
-* Dave Kestner
+* David & Jane Kestner
 * Kirk Ketchum
 * Madeleine Keyes
 * Kim Kiendl
@@ -906,6 +971,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Marc Ross
 * Mark Roth
 * Lynn Fryman Rothman & Michael Rothman, MD
+* Jo A. Roussey
 * Carol Ruberto
 * Robert Ruff Jr.
 * William Ruffley
