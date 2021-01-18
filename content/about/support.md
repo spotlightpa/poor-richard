@@ -127,6 +127,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Joseph Brogan
 * Skip Brommer
 * D. Brooks
+* Heidi & Martin Brooks 
 * Gay Brown
 * Gay Brown & Glenn Carr
 * Charles Brown
@@ -151,6 +152,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Andrew Candor
 * Roberta Capcara
 * John Capwell
+* Vito & Rebecca Caracappa
 * Joseph L. Carbo
 * Calvin S. Card
 * Mireille Carigi
@@ -356,6 +358,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Bruce P. Frassinelli
 * Brian Frederick
 * Kimberly Freeman
+* Karen Freitag
 * Gary French
 * Christine Frick
 * Jim Friedlich & Melissa Stern
@@ -545,6 +548,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Brett Kane
 * Margot Kane
 * Rasesh Kapadia
+* Dean Kaplan & Barbara Mattleman 
 * Karen M. Kaplan & Aaron M. Shatzman
 * Kurt E. Karl
 * Helen Katz
@@ -756,6 +760,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Joe Mikuliak
 * William Mulherin
 * Charlotte & John Mulvihill
+* Hiram M. Munger
 * John & Joyce Munro
 * Susan Murawski
 * William Murphey
@@ -935,6 +940,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Douglas Schofield
 * Paul Schraeder
 * Susan Schrand
+* Kaylene J. Schultz
 * Jennifer Schwartz
 * Barbara Scott
 * Robert & Mary Ellen Scott
@@ -1008,6 +1014,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Robert Starr
 * Lenore M. Steinmetz
 * John Stenger
+* Christine & James Sterganos
 * Joan Stern
 * Vincent Stern
 * Pamela Stetor
@@ -1075,6 +1082,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jane Valdes-Dapena
 * Heather Valudes
 * Richard Van Aken
+* Patricia Vance
 * Norma Van Dyke
 * Harold Vandegrift
 * Carole B. Vaughn
