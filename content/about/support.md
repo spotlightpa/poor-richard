@@ -48,6 +48,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Stephen Artman
 * Marilyn Ashbrook
 * David Ashton
+* Association of Independent Colleges & Universities of Pennsylvania 
 * David A. Atkinson
 * Kathleen Atkinson
 * Karen & Chris Atwood
@@ -74,6 +75,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Carol Barrett
 * Cate Barron
 * Keelin Barry
+* Kellyn Bartlett
 * Michelle Bartus
 * Chris Bastress
 * Kenneth Baumert
@@ -183,6 +185,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Richard Carroll
 * Judith Carroll
 * J. Carson
+* Carol Carter
 * Jeannette Carter
 * Kathy Carter
 * Linda L. Casale
@@ -262,6 +265,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Dan Davis
 * David & Lillian Davis
 * Joyce Davis
+* Karen Davis
 * Michael E. Davis
 * Julie Daye
 * Will Dean
@@ -322,12 +326,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * J.M. Dzubinski
 * William K. Ebel, Jr.
 * E. Eckerle
+* Linda M. Eckert
 * C. Eddy
 * James Edmiston
 * Jon Edmonds
 * Chad Efaw
 * James Ehrman
 * Carol Eisenbise
+* Steven Eisenstein
 * Lynne Eitel
 * Skip Elder
 * Liam Elder-Connors
@@ -415,6 +421,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
 * John T. Garrity, Jr.
+* Alex Garton
 * Deborah Garvey
 * James Gates
 * Kathy Gates
@@ -480,6 +487,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Scott Guiser
 * George E. Gunning
 * Maya Gutierrez
+* Susan Haase
 * Jerrell Habegger
 * Francis Hackett
 * Frank Hadden
@@ -494,11 +502,13 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jacqueline Hamilton
 * Karen Hamm
 * Alana M. Handman
+* Anne & Thomas Hanna 
 * Michael Hanegraaf
 * William Hanekamp
 * Mimi Hanks-Bell
 * Katherine Hannaford
 * Don Hannum
+* Karen Hansen
 * Elizabeth H. Harbits
 * Lizzy Hardison
 * Valerie Hardy
@@ -563,6 +573,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Claudia & Harvey Horowitz
 * Don Hossler
 * Kristen Houser
+* Carolyn Sue & Patrick M. Houston
 * Feather Houstoun
 * Kate Howard
 * Chris Hoyler
@@ -592,6 +603,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lynne Jacobs
 * Jean Jacobsen
 * Dwight & Vangie Jaggard
+* janet jai
 * John Jakaboski
 * Arlene Jarett
 * Gregory A. Jarrett
@@ -627,6 +639,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Paul Keller
 * Peter A. Kaller
 * Roberta Kearney
+* Robert & Quan Keck
 * Carl Kelemen
 * Lynn Keltz
 * Karen Kenna
@@ -650,6 +663,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Marvin Klein
 * Richard Kleiser
 * ML Klem
+* Susan I. Klein & Stuart Pittel
 * Anne & Jack Kline
 * Donald Kmieczak
 * Stuart Knade
@@ -674,9 +688,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Stan & Maryann Kramer
 * Diana Krantz
 * Ian Krantz
+* Patricia A. Krebs
 * Leo Krieg
 * Kevin J. Kriesel
 * Kalyan S. Krishnan
+* B. Kron
 * Susan Krug-Gourley
 * The Krull Family
 * John Krzeminski
@@ -807,6 +823,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Evie McNiff
 * Priscilla McNulty
 * Linda & Robert Meckley
+* Melissa Meier
 * Annamaria Melegh
 * Melissa Melewsky
 * K. Melton
@@ -827,6 +844,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Victoria Miller
 * Neil Millheim
 * Christina Milsom
+* L. Minora
 * Scott Mintzer
 * Kathleen Mirsky
 * Ed Mitchell
@@ -886,6 +904,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * M. Noel
 * Maria Centenera Nonemaker
 * Steve Noone
+* Charles Nordine
 * Raymond O'Boyle 
 * Carol O'Brien
 * Marty O’Brien
@@ -916,6 +935,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * J. Parsons
 * Harvey Partica
 * Elizabeth Parziale
+* A. Patel
 * Susan Patrone 
 * Meaghan, Alok & Sachin Pattani
 * Jeanne Patterson
@@ -1005,6 +1025,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Fatima Robinson
 * Gregg Robertson
 * Christine Rockwell
+* Susan M. Rodaitis
 * Edward T. Rodgers
 * Peter & Joanne Rohana
 * Mary Rollman
@@ -1189,6 +1210,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Freda Tepfer
 * Matthew Terruso
 * Elise Thomas
+* Elise & Greg Thomas
 * Louise Thomas 
 * Lynn Thomas
 * R. Thomas
@@ -1249,6 +1271,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Karen Weaver
 * Mary Weaver
 * Nathaniel Webb
+* F. Marcia & Robert Webber
 * Douglas Webster
 * Koert Wehberg, Esq.
 * Karen Weibel
@@ -1256,6 +1279,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Debra Weiner
 * Elizabeth Paczolt Weiner
 * Raymond Weinmann Jr.
+* Wendy Wehr
 * Wendy Weirman
 * Sy Weiss
 * C. Wentzel
@@ -1307,6 +1331,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Peter Yaffe
 * Joseph Yake
 * Dr. Bob Yapsuga
+* Ruth & Charles Yeiser
 * Tracy Yeomans
 * Berwood Yost
 * Donald B. Young Jr.
