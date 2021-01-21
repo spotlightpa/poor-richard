@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-01-15-SPLDISTRICTS16.md"
+    "content/news/2021-01-21-SPLRECORDS22.md"
   ],
   "subfeatures": [
-    "content/news/2021-01-13-SPLDISTRICTS14.md",
-    "content/news/2020-07-08-SPLDISTRICTS08.md"
+    "content/news/2020-11-12-SPLSUIT13.md",
+    "content/news/2020-03-09-how-the-legislature-gave-itself-special-privileges-when-writing-pa-s-open-records-law.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2021-01-19-SPLPRISONS19.md",
-    "content/news/2021-01-13-SPLWEAK14.md",
-    "content/news/2021-01-14-SPLPASSHE14.md"
+    "content/news/2021-01-15-SPLDISTRICTS16.md",
+    "content/news/2021-01-12-SPLPSP13.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
