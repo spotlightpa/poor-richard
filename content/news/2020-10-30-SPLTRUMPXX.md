@@ -92,7 +92,7 @@ A 2019 study from University of Michigan researchers found “the federal govern
 
 For the coronavirus, Schlegelmilch said the Trump administration hasn’t done enough to help states. But he thought FEMA and other agencies have taken an objective approach to distributing the aid that is available.
 
-The Trump administration approved a disaster declaration for Pennsylvania in March <a href="https://www.whitehouse.gov/briefings-statements/president-donald-j-trump-approves-pennsylvania-disaster-declaration-2/">in response to the coronavirus pandemic</a>. The state expects to receive about $29.7 million in disaster relief through FEMA’s Public Assistance program.
+The Trump administration approved a disaster declaration for Pennsylvania in March <a href="http://web.archive.org/web/20210119111652/https://www.whitehouse.gov/briefings-statements/president-donald-j-trump-approves-pennsylvania-disaster-declaration-2/">in response to the coronavirus pandemic</a>. The state expects to receive about $29.7 million in disaster relief through FEMA’s Public Assistance program.
 
 That’s a small fraction of the billions Congress and the Trump administration have sent to Pennsylvania through the <a href="https://www.spotlightpa.org/news/2020/06/pennsylvania-coronavirus-cares-money-hospitals-child-care-fraud/">CARES Act</a> and <a href="https://www.washingtonpost.com/us-policy/2020/09/11/lost-wages-unemployment-assistance-expiring/">enhanced unemployment payments</a>. Wolf and the bipartisan National Governors Association have urged Congress and the president to pass another <a href="https://www.nga.org/news/press-releases/congress-failure-to-reach-agreement-on-aid-to-state-and-local-governments-leaves-them-in-an-untenable-position/">massive relief package.</a>
 
