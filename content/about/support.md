@@ -255,6 +255,8 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Mark Cohen
 * Milton Cohen
 * Carla Colangelo
+* Jeffrey Cole
+* Joan Cole 
 * Sean Collins
 * Verna Colliver
 * Adam Combs
@@ -262,7 +264,9 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Melinda Condon
 * Danny Condra
 * P. Condron
+* James Conmy
 * Robin Connelly
+* Deborah Connor
 * John Conrad Jr.
 * Karen Conrad
 * John & Joy Burt Conti
@@ -278,34 +282,44 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * R. Cotlar
 * Brett Cott
 * Richard F. Couche
+* Nancy Cowan
+* Ronald Cowell
 * Emily Cox
 * Chris Coyle
 * Tracy Craig
 * C. Craige
+* Keith Craley
 * Brittany Crampsie
+* Virginia Crawford
 * Lauren Cristella
 * Barbara Criswell
+* Audrey Croley
 * Karen Crosby
 * Thomas Crown
 * Gregory Csikos
 * Jason Cumello
+* James Cunilio
 * Jason Cunningham
 * Jennifer Cunningham
 * John Cunningham
 * Peggy & Mark Curchack
 * Dennis Curtin
+* James Czyz
 * Carol Dague 
 * Amy D'Ancona
 * Sharon Dale
 * Joan Daniels
 * Ethel W. Darrohn
+* Carole Dascani
 * Susan K. David
 * Dan Davis
 * David & Lillian Davis
 * Joyce Davis
 * Karen Davis
 * Michael E. Davis
+* Charles Day
 * Julie Daye
+* Marlene Kumer Dean 
 * Will Dean
 * Donald DeCary Sr.
 * Thomas Decker
@@ -313,6 +327,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Charles DeFanti
 * Timothy DeFoor
 * Holly Deiaco-Smith
+* William DeKay
 * Connie & Terry Dellmuth
 * Mike Del Vacchio
 * Fran DeMillion
@@ -331,26 +346,33 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Paul Dicicco
 * Josephine Dick 
 * PJ Dickey
+* Allen Dieterich-Ward
 * Dallas DiLeo
+* John Dillon
 * Carol DiMartile
 * Christine Dimov
 * Travis DiNicola
 * Michael DiNunzio
+* Deborah DiPlacido
 * Judy Dixon
+* Margaret Dobrinska
 * Steven Doerfler
 * James Donahue
 * Diana Donaldson
+* Stuart Donaldson 
 * Diane Donato
 * Kimberly Donovan
 * R. Donegan
 * Michael Donofrio
 * Richard Donofry
 * Lawrence Doperak
+* William Double
 * Monica Dougherty
 * Paul Downs
 * Jack Doyle
 * Gorana Draguljic
 * Stephen Drizos
+* Eugenia Drobit
 * Francis Drotar
 * Earl Drumheiser
 * Christina Drzal
@@ -359,6 +381,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Stephen Duncan
 * Edwin Dunckley
 * Robert DuPlessis
+* Michael Dupuy
 * Rebecca J. Durante
 * Charles Dyer
 * J.M. Dzubinski
