@@ -18,7 +18,7 @@ To support Spotlight PA, [become a member now](/donate/).
 
 ## Major Donors and Funders
 
-Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Carroll <br> [The Erie Community Foundation](https://www.eriecommunityfoundation.org/) <br> [Facebook Journalism Project](https://www.facebook.com/journalismproject) <br> [The Foundation for Enhancing Communities](https://www.tfec.org/) <br> Fund for Nonprofit News at [The Miami Foundation](https://miamifoundation.org/) <br> Good Words Foundation <br> [Google News Initiative Journalism Emergency Relief Fund](https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/) <br> Eliza Griswold & Steve Coll <br> [The Heinz Endowments](https://www.heinz.org/) <br> [Henry L. Hillman Foundation](https://hillmanfamilyfoundations.org/foundations/henry-l-hillman-foundation/) <br> [Independence Public Media Foundation](https://independencemedia.org/) <br> [Lancaster County Community Foundation](https://www.lancfound.org/) <br> H.F. “Gerry” Lenfest <br> [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org/) <br> David Martens/The York Dispatch <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) Fellows Fund for the Future <br> [PennLive/The Patriot-News](https://www.pennlive.com/) <br> [The Philadelphia Foundation](https://www.philafound.org/) <br> The Lois Tack Thompson Fund of [The Pittsburgh Foundation](https://pittsburghfoundation.org/) <br> [Pittsburgh Post-Gazette](https://www.post-gazette.com/) <br> Poor Richard’s Charitable Trust <br> [RevLab at The Texas Tribune](https://revenuelab.org/) <br> Richard Williams <br> [Scranton Area Foundation](https://safdn.org/) <br> [The Snider Foundation](https://www.sniderfoundation.org/) <br> Diane and Brinkley Sprunt <br> [The Steinman Foundation](https://steinmanfoundation.org/) <br> [TribLIVE/Pittsburgh Tribune-Review](https://triblive.com/) <br> Robert and Dianne Vickery <br> [Wyncote Foundation](https://www.wyncotefoundation.org/) <br> [Votebeat](https://votebeat.org/who-we-are/) <br> [York County Community Foundation](https://yccf.org/) <br>
+Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Carroll <br> [The Erie Community Foundation](https://www.eriecommunityfoundation.org/) <br> [Facebook Journalism Project](https://www.facebook.com/journalismproject) <br> [The Foundation for Enhancing Communities](https://www.tfec.org/) <br>  Jim Friedlich & Melissa Stern <br> Fund for Nonprofit News at [The Miami Foundation](https://miamifoundation.org/) <br> Good Words Foundation <br> [Google News Initiative Journalism Emergency Relief Fund](https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/) <br> Eliza Griswold & Steve Coll <br> [The Heinz Endowments](https://www.heinz.org/) <br> [Henry L. Hillman Foundation](https://hillmanfamilyfoundations.org/foundations/henry-l-hillman-foundation/) <br> [Independence Public Media Foundation](https://independencemedia.org/) <br> [Lancaster County Community Foundation](https://www.lancfound.org/) <br> H.F. “Gerry” Lenfest <br> [The Lenfest Institute for Journalism](https://www.lenfestinstitute.org/) <br> David Martens/The York Dispatch <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) <br> [Pennsylvania NewsMedia Association Foundation](https://panewsmedia.org/) Fellows Fund for the Future <br> [PennLive/The Patriot-News](https://www.pennlive.com/) <br> [The Philadelphia Foundation](https://www.philafound.org/) <br> The Lois Tack Thompson Fund of [The Pittsburgh Foundation](https://pittsburghfoundation.org/) <br> [Pittsburgh Post-Gazette](https://www.post-gazette.com/) <br> Poor Richard’s Charitable Trust <br> [RevLab at The Texas Tribune](https://revenuelab.org/) <br> Richard Williams <br> [Scranton Area Foundation](https://safdn.org/) <br> [The Snider Foundation](https://www.sniderfoundation.org/) <br> Diane and Brinkley Sprunt <br> [The Steinman Foundation](https://steinmanfoundation.org/) <br> [TribLIVE/Pittsburgh Tribune-Review](https://triblive.com/) <br> Robert and Dianne Vickery <br> [Wyncote Foundation](https://www.wyncotefoundation.org/) <br> [Votebeat](https://votebeat.org/who-we-are/) <br> [York County Community Foundation](https://yccf.org/) <br>
 
 ## Spotlight PA Members
 
@@ -437,12 +437,16 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lawrence Felzer
 * Adelaide Ferguson & Ronald Cahan
 * John Fernbacher
+* Joanne & Bruce Ferraro
 * Winifred J. Fessenbecker
 * David Fiedler
 * Ronald Filippelli
 * Nicholas Fink
+* Robert Finkbeiner
 * Ambrose Finnegan
 * M. Firth
+* Baruch Fischhoff
+* Dorothy Fisher
 * Ezra Fishman & Nicola Brodie
 * Michael Flannery
 * Scott Fleischee 
@@ -459,6 +463,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Sara Forster
 * Keith Forsyth
 * Nancy Fortmann
+* Suzy A. Fox
 * Robert Frable
 * Daniel Fraccica
 * Susannah Frame
@@ -468,23 +473,29 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * William Franks
 * Bruce P. Frassinelli
 * Brian Frederick
+* Michael Freedman
 * Kimberly Freeman
 * Karen Freitag
 * Gary French
 * Christine Frick
 * Jim Friedlich & Melissa Stern
+* Laurie Friedman
 * Phil Friedman
 * Jake Friel
 * Karen Friel
+* Susan Fritz
 * Ryan Froman
 * Catherine Frost
 * Scott Frost
 * Isla Fruchter
+* Susan Fudurich
 * Joseph M. Fulfs
 * Greg Fullam
 * Francee E. Fuller
 * Anthony Gabriel
+* Fred Gaines
 * Maureen Gallagher
+* JoAnn Gallis
 * Joe Garchinsky
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
@@ -507,6 +518,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Michael George
 * Nancy & Michael George
 * S. George
+* Mitch Gerstein
 * Thomas Gery
 * Thomas Getzen
 * Carol Gillespie 
@@ -516,20 +528,25 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lynda Ginsburg
 * Lilly Gioia
 * Nicholas Giordano
+* Nicholas Giorgio
+* Adrian Glass
 * Stephen M. Glynn
 * Jessica Gmeinder 
 * Denise Gmerek
 * Jennifer Goettner
 * Nancy B. Gold
 * Wendy Goldberg
+* Doris A. Goldman
 * Mary L. Goldman
 * Tamara Goldman
 * William Gontram
 * Ellen Goodman
 * Nathan Gorenstein
 * Joanne Gordon 
+* Richard Gordon
 * Gerry Gorelick
 * J. Goss
+* Court & Sherri Gould
 * Andrew Gowa
 * George Gowen
 * Barbara Graham
@@ -543,8 +560,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Doug Greenfield
 * Marie Green-McKeon
 * Marjorie Greenfield
+* Jeff Greenwald
 * T. & B. Griffith
 * Brent Groce
+* George Grode
 * Gerald Groff
 * Maureen Grosheider
 * Danielle Gross
@@ -554,6 +573,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Gregory Guise
 * Scott Guiser
 * George E. Gunning
+* Walter Gura
 * Maya Gutierrez
 * Susan Haase
 * Jerrell Habegger
