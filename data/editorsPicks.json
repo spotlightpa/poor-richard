@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-01-22-SPLXXVAX.md",
     "content/news/2021-01-25-SPLRECOVERY25.md"
   ],
   "subfeatures": [
-    "content/news/2020-03-20-SPLTRACKERXX.md"
+    "content/news/2020-08-26-SPLDDAP26.md",
+    "content/news/2020-08-13-SPLREHAB13.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-01-22-SPLXXVAX.md",
     "content/news/2021-01-22-SPLSTORM23.md",
-    "content/news/2021-01-22-SPLGUIDE22.md",
-    "content/news/2021-01-21-SPLRECORDS22.md"
+    "content/news/2021-01-22-SPLGUIDE22.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
