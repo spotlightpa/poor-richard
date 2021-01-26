@@ -32,7 +32,7 @@ extended-kicker = ""
 
 <i>This article is part of a year-long reporting project focused on redistricting and gerrymandering in Pennsylvania. It’s made possible by the support of </i><a href="https://www.spotlightpa.org/" target=_blank><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-Leer esta nota en español <a href="https://www.spotlightpa.org/news/2021/01/pensilvania-redistribuci%C3%B3n-de-distritos-manipulaci%C3%B3n-partidista-2021/">aquí.</a>
+Puedes leer esta nota en español <a href="https://www.spotlightpa.org/news/2021/01/pensilvania-redistribuci%C3%B3n-de-distritos-manipulaci%C3%B3n-partidista-2021/">aquí.</a>
 
 HARRISBURG — With partisanship in the Pennsylvania legislature at peak levels, lawmakers this year are gearing up for the once-a-decade brawl to redraw political districts — and the stakes couldn’t be much higher.
 
