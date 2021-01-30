@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media.</i>
@@ -45,7 +46,7 @@ If the assistance payments went to tenants directly, the program would likely ha
 
 “If the challenge is getting landlords to participate, there is a different approach,” he said.
 
-Section 8, the federal government’s main rental assistance program for low-income families, has a similar problem. In Philadelphia, just 50% of voucher holders are able to use them, <a href="https://www.philadelphiafed.org/community-development/publications/cascade/95/02_research-on-affordable-rental-housing" target=_blank>research shows</a>. Like Section 8, most rental assistance programs are set up to pay landlords directly.
+Section 8, the federal government’s main rental assistance program for low-income families, has a similar problem. In Philadelphia, just 50% of voucher holders are able to use them, <a data-gone="https://www.philadelphiafed.org/community-development/housing-and-neighborhoods/rental-housing-affordability-impacts-educational-and-employment-opportunities" data-gone>research shows</a>. Like Section 8, most rental assistance programs are set up to pay landlords directly.
 
 The downside is that landlords typically have to agree to participate upfront, often filling out paperwork and accepting certain conditions. This creates an “administrative cost” that can become a deterrent, said Vincent Reina, an assistant professor of city and regional planning at the University of Pennsylvania.
 
