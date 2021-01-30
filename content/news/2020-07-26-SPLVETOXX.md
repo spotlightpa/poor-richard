@@ -26,6 +26,8 @@ aliases = []
 modal-exclude = false
 no-index = false
 language-code = ""
+layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News and other news organizations across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -55,7 +57,7 @@ According to Grove and the bill’s supporters including the ACLU of Pennsylvani
 
 “The goal is to weigh employee safety with transparency,” Grove said in a statement. “OOR can do that as they work with requesters and agencies on a daily basis.”
 
-Erik Arneson, executive director of the Office of Open Records, said in a <a href="https://openrecordspennsylvania.com/2020/07/25/statement-on-house-bill-2463/" target=_blank>statement</a> “any guidelines published by the OOR would protect the health and safety of agency employees.” In an email to Spotlight PA, Arneson said he discussed Wolf’s concerns about employee safety with a member of the governor’s staff.
+Erik Arneson, executive director of the Office of Open Records, said in a <a href="http://web.archive.org/web/20210126071317/https://openrecordspennsylvania.com/2020/07/25/statement-on-house-bill-2463/">statement</a> “any guidelines published by the OOR would protect the health and safety of agency employees.” In an email to Spotlight PA, Arneson said he discussed Wolf’s concerns about employee safety with a member of the governor’s staff.
 
 “I am still worried that the provisions of [the legislation] will needlessly put commonwealth employees in possible danger retrieving records to meet an arbitrary timeline,” Wolf said in a statement. “This concern is heightened because legislators, by example, have wantonly endangered their own employees by having them come in to work when telecommuting would be adequate, have tried to force workers throughout the state back to work without adequate protection, and have refused to follow basic public health advice such as wearing masks.”
 
