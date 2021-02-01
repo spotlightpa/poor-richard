@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-02-01-SPLBOOC02.md"
+    "content/news/2021-02-01-SPLCHANGE02.md"
   ],
   "subfeatures": [
-    "content/news/2021-01-22-SPLGUIDE22.md",
-    "content/news/2020-02-19-harrisburg-catholic-diocese-to-declare-bankruptcy-the-first-to-do-so-in-pa-under-weight-of-clergy-sex-abuse-claims.md"
+    "content/news/2021-02-01-SPLBOOC02.md",
+    "content/news/2021-01-22-SPLGUIDE22.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
