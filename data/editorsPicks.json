@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-02-03-SPLLEG02.md"
+    "content/news/2021-02-03-SPLBUDGET04.md"
   ],
   "subfeatures": [
-    "content/news/2021-01-13-SPLWEAK14.md",
-    "content/news/2019-09-13-SPLBILLS15.md"
+    "content/news/2021-02-03-SPLLEG02.md",
+    "content/news/2020-11-19-SPLBUDGET20.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-02-01-SPLUNEMPLOY01.md",
     "content/news/2021-02-01-SPLCHANGE02.md",
+    "content/news/2021-02-01-SPLUNEMPLOY01.md",
     "content/news/2021-01-29-SPLDATA30.md"
   ],
   "sidebarPicks": [
