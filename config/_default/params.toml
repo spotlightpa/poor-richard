@@ -3,17 +3,17 @@ banner = "**TRACK THE VACCINE:** Get the latest map and county-by-county lists o
 banner-link = "https://www.spotlightpa.org/news/2021/01/pa-covid-vaccine-locations-availability-where-to-get-who-can-get-latest-updates/"
 promo-active = true
 promo-type = "image"
-promo-image-caption = "Support fearless accountability journalism in Pennsylvania. Become a member of Spotlight PA."
-promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g0/1489/2.png, https://files.data.spotlightpa.org/uploads/01g0/1489/3.png, https://files.data.spotlightpa.org/uploads/01g0/1488/4.png, https://files.data.spotlightpa.org/uploads/01g0/1488/1.png"
+promo-image-caption = "RSVP for a free reader Q&A on Pennsylvania's vaccine distribution efforts on Feb. 11 at 5 p.m."
+promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g1/nttb/banner-event-promo-3-.png"
 promo-desktop-width = 728
 promo-desktop-height = 90
-promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g0/12pk/1.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12pn/2.svg"
+promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g1/nttb/rectangle-event-promo-2-.png"
 promo-mobile-width = 500
 promo-mobile-height = 250
-promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
+promo-link = "https://inquirer.zoom.us/webinar/register/8116122962706/WN_Ho-NMiBYTuiPPZXKwVRS8w"
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
-sticky-image-caption = "Support fearless accountability journalism in Pennsylvania. Become a member of Spotlight PA."
-sticky-image = "https://files.data.spotlightpa.org/uploads/01g0/12g5/1.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/2.svg"
-sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
+sticky-image-caption = "RSVP for a free reader Q&A on Pennsylvania's vaccine distribution efforts on Feb. 11 at 5 p.m."
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g1/ntta/square-event-promo-7-.png"
+sticky-link = "https://inquirer.zoom.us/webinar/register/8116122962706/WN_Ho-NMiBYTuiPPZXKwVRS8w"
