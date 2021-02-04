@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-02-03-SPLBUDGET04.md",
     "content/news/2021-02-04-SPLELEC04.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-03-SPLLEG02.md",
-    "content/news/2020-11-19-SPLBUDGET20.md"
+    "content/news/2021-02-01-SPLBOOC02.md",
+    "content/news/2021-02-01-SPLCHANGE02.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2021-02-03-SPLEVENTXX.md",
-    "content/news/2021-02-01-SPLCHANGE02.md",
-    "content/news/2021-02-01-SPLUNEMPLOY01.md"
+    "content/news/2021-02-03-SPLBUDGET04.md",
+    "content/news/2021-02-03-SPLLEG02.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
