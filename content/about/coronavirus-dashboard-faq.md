@@ -4,6 +4,7 @@ image-description = "Tracking the spread of COVID-19 in Pennsylvania"
 image-credit = "DAN NOTT / For Spotlight PA"
 image-size = "hidden"
 published = 2020-07-17T14:00:00.000Z
+slug = "coronavirus-dashboard-faq"
 authors = ["Daniel Simmons-Ritchie"]
 byline = "Daniel Simmons-Ritchie of Spotlight PA"
 title = "Tracking The Spread Dashboard FAQ"
@@ -15,15 +16,14 @@ suppress-featured = false
 weight = 0
 topics = ["Coronavirus"]
 series = []
+modal-exclude = false
 no-index = false
 internal-id = ""
-slug = "coronavirus-dashboard-faq"
 url = ""
 image-caption = ""
 internal-budget = ""
 arc-id = ""
 subtitle = ""
-modal-exclude = false
 aliases = []
 +++
 <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or just a curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
@@ -180,6 +180,8 @@ New types of COVID-19 data are constantly being published by state officials and
 As of July 13, in order to be as transparent as possible about changes we make to the dashboard, all changes will be documented here.
 
 The date of each changes marks the date that the change was made to the Spotlight PA version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
+
+**Feb. 3, 2021:** Vaccine-related charts, created with Datawrapper and maintained by the Philadelphia Inquirer, were embedded in the Pennsylvania section of Spotlight PA's version of the dashboard. Similar charts were embedded in the Inquirer's version of the dashboard for the Pennsylvania and Philadelphia sections.
 
 **Sept 24, 2020:** A new feature was added to the box of total cases, deaths, and tests at the top of the dashboard. If one of these types of data is more recent than another data type, a footnote will appear at the bottom of the box noting when each data type was last updated. For instance, if deaths data has been updated before cases and tests data, a footnote will appear with the following text: "NOTE: Deaths as of Sept 24; cases, tests as of Sept 23". In most cases, all three types of data are updated at the same time, but this change is designed to make it clearer to readers if one data type has been more recently updated than another.
 
