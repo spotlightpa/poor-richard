@@ -181,7 +181,9 @@ As of July 13, in order to be as transparent as possible about changes we make t
 
 The date of each changes marks the date that the change was made to the Spotlight PA version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
 
-**Feb. 3, 2021:** Vaccine-related charts, created with Datawrapper and maintained by the Philadelphia Inquirer, were embedded in the Pennsylvania section of Spotlight PA's version of the dashboard. Similar charts were embedded in the Inquirer's version of the dashboard for the Pennsylvania and Philadelphia sections.
+**Feb. 4, 2021:** Two footnotes were added to the New Jersey section of the dashboard explaining that New Jersey began adding positive antigen test results to its cases tallies on Jan. 4, 2021. The change in methodology caused a significant spike in cases on that day.
+
+**Feb. 2, 2021:** Vaccine-related charts, created with Datawrapper and maintained by the Philadelphia Inquirer, were embedded in the Pennsylvania section of Spotlight PA's version of the dashboard. Similar charts were embedded in the Inquirer's version of the dashboard for the Pennsylvania and Philadelphia sections.
 
 **Sept 24, 2020:** A new feature was added to the box of total cases, deaths, and tests at the top of the dashboard. If one of these types of data is more recent than another data type, a footnote will appear at the bottom of the box noting when each data type was last updated. For instance, if deaths data has been updated before cases and tests data, a footnote will appear with the following text: "NOTE: Deaths as of Sept 24; cases, tests as of Sept 23". In most cases, all three types of data are updated at the same time, but this change is designed to make it clearer to readers if one data type has been more recently updated than another.
 
