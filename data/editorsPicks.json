@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-02-04-SPLELEC04.md"
+    "content/news/2021-02-04-SPLEMERG05.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-01-SPLBOOC02.md",
-    "content/news/2021-02-01-SPLCHANGE02.md"
+    "content/news/2021-02-04-SPLELEC04.md",
+    "content/news/2021-02-01-SPLBOOC02.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
