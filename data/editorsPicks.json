@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-02-05-SPLGAMING06.md",
     "content/news/2021-02-09-SPLSPANISH09.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-03-SPLBUDGET04.md",
-    "content/news/2021-02-03-SPLLEG02.md"
+    "content/news/2021-02-05-SPLRURALVAX08.md",
+    "content/news/2021-02-03-SPLEVENTXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-02-05-SPLGAMING06.md",
     "content/news/2021-02-05-SPLAMEND06.md",
-    "content/news/2021-02-05-SPLRURALVAX08.md",
-    "content/news/2021-02-03-SPLEVENTXX.md"
+    "content/news/2021-02-04-SPLEMERG05.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
