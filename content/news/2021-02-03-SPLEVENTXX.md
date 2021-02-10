@@ -38,9 +38,11 @@ Join Spotlight PA for a live reader Q&amp;A on these topics and more on Thursday
 
 You can <a href="mailto:ypiper@spotlightpa.org?subject=COVID%20Event%20Question">submit a question</a> for our team to answer during the event. Our panelists include:
 
-- <b>Dr. Frederic Bushman</b>,&nbsp;Professor of Microbiology&nbsp;at UPenn Perelman School of Medicine
+- <b>Dr. Frederic Bushman</b>, Professor of Microbiology at UPenn Perelman School of Medicine
 
 - <b>Eric Kiehl</b>, Director of Policy &amp; Partnership at Pennsylvania Association of Community Health Centers
+
+- <b>George Fernandez</b>, CEO of Latino Connection
 
 - <b>Ese Olumhense</b>, Investigative Health Reporter, Spotlight PA
 
