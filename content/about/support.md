@@ -1271,6 +1271,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Philip Scharl
 * Laurie Scheid
 * Gary & Dode Scheimer
+* Christine Schiavo
 * Leslie Schlessinger
 * Paul Schmitt
 * Peter Schnabel
@@ -1282,11 +1283,16 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kaylene J. Schultz
 * Jennifer Schwartz
 * Barbara Scott
+* Gail Scott
 * Robert & Mary Ellen Scott
 * Robert Scott
 * John Seamans
+* Mark Seamans
 * John & Barbara Seefeldt
+* Mark Segal
 * Anthony J. Seigafuse
+* Helen Seitz
+* Elaine Selan
 * Paul & Kathleen Selbst
 * Nicholas Selch
 * Pat Sellers
@@ -1296,31 +1302,41 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * John Senko
 * V. Sethi
 * Antoinette Seymour
+* Margaret Shaffer
 * Samantha Shaffer
+* William Shakely
 * Mickey Shapiro
 * David S. Share
 * Carl & Janet Sharer
 * Loretta Sharkey
+* Catherine Sharkness
+* Karen Shea
+* Eileen Sheehan
 * Susan Sheehan
 * Michael Sheketoff
 * Peter Shelly
 * Sally Shepherd
 * Mark Sheppard
 * Tom & Amy Sherry
+* Christine Shiffer
 * Alexandra Shirreffs
 * James Shoemaker
+* Bard Shollenberger
 * Elizabeth Shollenberger
 * Kimberley Shore
 * Barry Shutt
+* Claudia H. Siegel
 * Darrin Silbaugh
 * Alan Silberman
 * Ira Silberman & Marilyn Kutler
+* Linda Silowka
 * M. Silver
-* Claudia H. Siegel
+* Brian Sim
 * Heather Simmons
 * Adam Simon
 * Mark Simon
 * Caroline Simpson
+* Georgia Simpson 
 * Robert Sims
 * Josh Singer
 * Vaswati Sinha
@@ -1328,7 +1344,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Ellen L. Sleeter
 * Richard Small
 * Scott Smedley
+* Diana Smeltzer
 * Carol L. Smith
+* Cheryl Smith
+* Deborah Smith
+* Terry Smith
 * Elizabeth Smith
 * Karen Smith
 * Michael Smith
@@ -1343,6 +1363,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Anita & Mike Soar
 * Marie Sonnet
 * Mariana Sorensen
+* Feryl Souder
 * Susan Spaziani & John Williamson
 * Doreen Speidel
 * Michael Sperger
@@ -1353,7 +1374,11 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Christopher Spratt
 * Jane Sprecher
 * Mary Sproat
+* Bonnie Squires
+* Joe Stafford
 * Rick Stafford
+* Lorraine Starsky
+* Evelyn Stauffer
 * Joseph Stefens
 * Mike Stabinski
 * Norman St. Amour
@@ -1361,6 +1386,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Lenore M. Steinmetz
 * John Stenger
 * Christine & James Sterganos
+* Daniel Stern
 * Joan Stern
 * Vincent Stern
 * Jacqueline Sternberg
