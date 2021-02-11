@@ -1069,12 +1069,17 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Raymond O'Boyle 
 * Carol O'Brien
 * Marty O’Brien
+* Rhonda Ochs
 * Robert O'Donnell
+* Robert O'Gara
 * Alice Ognibene
 * Gerald O'Hara
+* Ashley Olesnevich
+* Barb O'Malley
 * Toluwalope Onafowokan
 * Clayt Oneill
 * Maddi O'Neill
+* Patricia O'Neill
 * Nancy Oppedal
 * Kari Orchard
 * Lynda Orfanelli
@@ -1083,15 +1088,18 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kathy Ortman
 * Kathleen O'Toole
 * Jesse N. Otto
+* Carol Overvold
 * Dennis Owens
 * Kim Oxholm
 * Rosanne Oyer
 * Ronald Ozio
 * William Paci
+* Susan Packer
 * David & Roxanne Palmer
 * Leanora Paniccia
 * Janet Parker
-* John T. Parker 
+* John T. Parker
+* Ronnie Parker 
 * Carol Parowski
 * J. Parsons
 * Harvey Partica
@@ -1101,6 +1109,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Meaghan, Alok & Sachin Pattani
 * Jeanne Patterson
 * Jan Paul
+* Lynda Payne
 * Henry J. Pecher III
 * Lydia Pecker
 * Mark Pecker
@@ -1111,7 +1120,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * John Perdoch
 * Amy L. Perez
 * Richel Perretti
+* C. Beth Perry
 * J. Persinger
+* Margaret Peters
+* Nicholas Peters
 * Mary Kay Peterson
 * Michael Petrocik and Alicia Gasparovic
 * Alexis Petro
@@ -1125,23 +1137,31 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kate Philips
 * Christine Caldara Piatos
 * Renee Piccirilli
+* Janet Pickel
 * Joanna Pierce
+* James Pierson
 * Joseph C. Pietrusza
 * Alicia Pigott
 * Rick Piper
 * Morgan Plant
 * Joseph J. Podrasky
+* Ben Pontz
 * Daniel Poresky
 * Frank Potere
 * Tim Potts
 * Donald Powell
+* Rhea Powell
+* James Powers
 * Laura Powers
 * Shirley Prasko
 * Dave Prensky
+* Bobbi Prentis
 * G. Preuninger
 * Jeffrey Price
 * Noah Price
 * Mark Prince
+* Meg Pritchard
+* Anita Pritchett
 * Lois Prytherch
 * Ellie Pyles
 * Harry Rambo
@@ -1153,10 +1173,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Theresa M. Rang
 * Ronald Ranieri
 * Brian Rank
+* Jennifer Rapach
 * Ella Rayburn
 * Mark Raymond
 * Sean Raymond
 * Emilio Recio
+* Joseph Redington
 * Genevieve Reed
 * Luke Reed
 * Lauri Reeder
@@ -1167,6 +1189,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Peter Reilly
 * Philip Reilly
 * Gloria Reisman
+* Rosalind Remer
 * John Rhoades
 * Becky Richards
 * Stacy Richards
@@ -1178,8 +1201,12 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Eric Richardson 
 * Michele Richman
 * Adam Richter
+* Jennifer Riley
+* John Rinaldo
 * Denise Rinear
+* Patricia Rinkevich
 * Robert W. Rishel
+* Irene Ritson
 * Alex Roarty
 * Diane Roberts
 * David Robertson
@@ -1193,26 +1220,34 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Kathryn Rolston
 * Frank Romano
 * Lou Romito
+* Patricia Rooney
 * Doug Root
 * Robert Root
 * Mary Catherine Roper
 * Craig Rose
 * Larry Rose
+* Michael Rose
 * Jeremy C. Rosenbaum, Esq.
 * Susan Rosenberg
 * Tina Rosenberg
 * David R. Ross
 * Marc Ross
+* Anthony Rossi
 * Danielle Roth
 * Mark Roth
+* Nancy Roth
 * Lynn Fryman Rothman & Michael Rothman, MD
+* Gary Rothrock
 * Jo A. Roussey
 * Carol Ruberto
-* Steve Ruelke 
+* Steve Ruelke
+* Edmund Ruffin 
 * Robert Ruff Jr.
 * William Ruffley
 * Amy Ruffo
 * Edwin Rund
+* Erica Runkles
+* Ronald Rusk
 * Mark Rutherford
 * Gary Ryan
 * James Ryan
