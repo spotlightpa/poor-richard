@@ -1406,8 +1406,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Betram Strieb
 * John Stuart
 * Rebecca & Collin Stuart
+* Thomas Suddes
 * Lewis Sudul
 * John Suierveld
+* Pat Sulla
 * Sean P. Sullivan
 * Cary Scott Summers
 * Barbara Sunderlin
@@ -1418,19 +1420,24 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Jeffrey Sweet
 * Mary Sweet
 * Benjamin Swofford
+* Diane Sykes
 * Marian Szmyd
 * Dr. J. Szumiloski
 * Mark Szybist
 * Ardith Talbott
 * John Tampanello
+* Donald Tannenbaum
 * MaryEllen Tarman 
 * Barbara J. Taylor
+* Barbara Sieck Taylor
 * John Taylor
 * Randy & Marcie Taylor
 * Paul Teese
+* Jeremy Tennenbaum
 * Jocelyn Tenney
 * Freda Tepfer
 * Matthew Terruso
+* Cameron Texter
 * Elise Thomas
 * Elise & Greg Thomas
 * Louise Thomas 
@@ -1439,7 +1446,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Donald Thompson
 * George Thompson
 * Roger Thompson
+* Sandra M. Thompson
+* David Thornburgh
 * Irene Tierney
+* Rebecca Tillet
 * M. Tillger
 * JJ Tiziou
 * Brian Toal
@@ -1449,11 +1459,14 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Esther Toth
 * Karen Hale Toth
 * Thomas L. Toth
+* Shawn Towey
 * Steve Townsend
 * Bill Travers
+* Carol Tremato
 * Adam Trott
 * Debbie Trudeau
 * Walter Tsou
+* Kimberly Tucker
 * Pam Tulchinsky
 * Margaret Turcich
 * Jeannine Turgeon
@@ -1467,15 +1480,20 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Heather Valudes
 * Richard Van Aken
 * Patricia Vance
+* Alan Vandersloot
 * Norma Van Dyke
 * Harold Vandegrift
+* Pamela Varkony
 * Carole B. Vaughn
 * Dennis Verona
 * Robert F. Vickery
 * Sara Vigneri
 * Joseph C. Vignola
+* Justin Villere
+* Caitlin Virtue
 * Cecilia Viti
 * Fred Vodde
+* Charles Vogt
 * Richard Waggy
 * Fritz Walker
 * Russ Walker
@@ -1484,25 +1502,32 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * T. Walmer
 * Frank D. Walsh
 * Hannah Walsh
+* Joan Walsh
+* Mike Walsh
 * Robin Walter
 * Kay Walters
+* Theodore Wampole
 * Diane M. Ward
 * Elizabeth Ward
 * Mary Warner
 * Caity Weaver
 * Karen Weaver
 * Mary Weaver
+* Carol Webb
 * Nathaniel Webb
 * F. Marcia & Robert Webber
+* Christina Weber
 * Douglas Webster
 * Koert Wehberg, Esq.
+* Wendy Wehr
 * Karen Weibel
 * Patricia Weidenhamer
+* Penny Weinberg-Uebelhoer
 * Debra Weiner
 * Elizabeth Paczolt Weiner
 * Raymond Weinmann Jr.
-* Wendy Wehr
 * Wendy Weirman
+* Larry Weiss
 * Sy Weiss
 * C. Wentzel
 * Gerald F. Werkheiser
@@ -1513,16 +1538,23 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * E. Wessel
 * Richard Wexelblat
 * Thomas Whalen
+* Lou Wheeland
 * L. Whelan
+* Sheryl White
 * Rhonda White
 * Suzanne P. White
 * Kathleen F. Weidner
 * Talia Wiener
 * Justin Wier
+* Clint Wilhelm
+* Kaye Will
 * William Penn Foundation Matching Gifts Program
 * Antoine Williams
+* Carol Williams
+* Chris A. Williams
 * Evan Williams
 * Donna Williams 
+* Jack Williams
 * Richard Williams
 * Sabrina Williams
 * Joan Williamson
@@ -1539,13 +1571,16 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * George Wolff
 * Kathryn Wolfson
 * Chris Wonders
+* Jennifer Wood
 * Susan Wood
 * Susan Wood
 * Barbara Woodin
+* Lindsay Woodruff
 * David Woods
 * Susan Wooley
 * Robert Wooten
 * Barbara Worden
+* Jeff Worden
 * Laura Worker
 * Margaret Wren
 * Francis Wynne
@@ -1554,8 +1589,10 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Joseph Yake
 * Dr. Bob Yapsuga
 * Ruth & Charles Yeiser
+* Karen Yellin
 * Tracy Yeomans
 * Berwood Yost
+* David Young
 * Donald B. Young Jr.
 * Jerry Young
 * Karen Young
@@ -1572,5 +1609,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Liz Zimmerman
 * Michelle Zimmerman
 * Rebekah Zimmerman
+* Richard Zook
 * Gerald Zubkoff 
-* Anne M. Zug {{%/supporters-list%}}
+* Anne M. Zug
+* Stephen Zwierzyna {{%/supporters-list%}}
