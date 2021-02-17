@@ -1,11 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-02-15-SPLMAPS16.md",
     "content/news/2021-02-17-SPLPSP17.md"
   ],
   "subfeatures": [
-    "content/news/2021-01-15-SPLDISTRICTS16.md",
-    "content/news/2020-09-22-SPLRED23.md"
+    "content/news/2020-09-03-SPLPSP04.md",
+    "content/news/2020-08-31-SPLFRISK31.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
