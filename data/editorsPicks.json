@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-02-18-SPLHOLD19.md"
+    "content/news/2021-02-19-SPLDEFOOR20.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-03-SPLBUDGET04.md",
-    "content/news/2020-10-27-SPLFUNDINGXX.md"
+    "content/news/2021-02-04-SPLELEC04.md",
+    "content/news/2021-01-22-SPLGUIDE22.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-02-18-SPLHOLD19.md",
     "content/news/2021-02-17-SPLPSP17.md",
-    "content/news/2021-02-15-SPLMAPS16.md",
     "content/news/2021-02-15-SPLRENT14.md"
   ],
   "sidebarPicks": [
