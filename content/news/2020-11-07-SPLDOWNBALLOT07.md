@@ -38,7 +38,7 @@ Riding the “blue wave” of 2018 and further <a href="https://www.inquirer.com
 
 By Friday, those dreams had evaporated.
 
-While it looked increasingly likely <a href="https://www.inquirer.com/politics/election/live/elections-2020-results-candidates-updates-news-pennsylvania-20201106.html#card-890981147" target=_blank>the state would break for Biden</a> — though the race hadn’t yet been called — there wasn’t a lot of other good news for Democrats. Republicans had not only held the majority in the state House and Senate, but were poised to possibly gain seats.
+While it looked increasingly likely <a href="https://www.inquirer.com/politics/election/live/elections-2020-results-candidates-updates-news-pennsylvania-20201106.html" target=_blank>the state would break for Biden</a> — though the race hadn’t yet been called — there wasn’t a lot of other good news for Democrats. Republicans had not only held the majority in the state House and Senate, but were poised to possibly gain seats.
 
 For the first time since 2008, Republicans claimed a row office through an election, with Republican Tim DeFoor winning the auditor general race. And the GOP also <a href="https://www.inquirer.com/politics/election/brian-fitzpatrick-christine-finello-1st-district-us-house-2020-pa-results-20201104.html" target=_blank>held onto congressional seats</a> in the Philadelphia and Harrisburg suburbs Democrats had considered to be within reach.
 
