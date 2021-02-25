@@ -496,6 +496,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Fred Gaines
 * Maureen Gallagher
 * JoAnn Gallis
+* GANT Media
 * Joe Garchinsky
 * Kate & Alan Gardner
 * Leo M. Garonski, Esq.
@@ -697,6 +698,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Robert M. Hynosky
 * David Imgrund
 * Annette E. Inker
+* Institute for Nonprofit News
 * Casey & Kristen Irvine
 * Kristen Irvine
 * Evelyn Ishmael
@@ -818,6 +820,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Claudio Kuhn
 * Kevin Kuhn
 * Jennifer Kuhns
+* Beryl Kuhr & Patrick H. Bair 
 * Leonard Kulago
 * Steven Kuloszewski
 * Molly Kunkel
@@ -863,6 +866,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Sandra Lewis
 * Edward Lewkowicz
 * Janet Lind
+* Kathleen Lindman
 * Rick Linsk
 * Stephen J. Lipnichan
 * Sue Livio
@@ -898,6 +902,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Annie and William Madonia
 * Philip Magistro
 * James J. Maguire
+* Kimberly A. Mahaffy & Robin L. Gorini
 * James Mahan
 * Ed Mahon
 * Edward Mahoney
@@ -1162,6 +1167,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Mark Prince
 * Meg Pritchard
 * Anita Pritchett
+* Becky Miller & Thomas E. Pryor 
 * Lois Prytherch
 * Ellie Pyles
 * Harry Rambo
@@ -1275,6 +1281,7 @@ Laura and John Arnold <br> Amanda Bennett <br> Jennifer Bertetto <br> Richard Ca
 * Leslie Schlessinger
 * Paul Schmitt
 * Peter Schnabel
+* Arthur L. & Geraldine C. Schneeberg Foundation
 * Jennifer Schnore
 * Carl Schoenberg & Susan York
 * Douglas Schofield
