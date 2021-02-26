@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2021-02-25-SPLRED.md"
+    "content/news/2021-02-25-SPLLEVINE26.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-15-SPLMAPS16.md",
-    "content/news/2021-01-15-SPLDISTRICTS16.md"
+    "content/news/2020-09-02-SPLHOMES02.md",
+    "content/news/2020-06-13-SPLINFECTION14.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-02-25-SPLLEVINE26.md",
+    "content/news/2021-02-25-SPLRED.md",
     "content/news/2021-02-25-SPLGRANTS26.md",
     "content/news/2021-02-24-SPLCANVASS25.md"
   ],
