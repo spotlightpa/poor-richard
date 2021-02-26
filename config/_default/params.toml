@@ -4,10 +4,10 @@ banner-link = "https://www.spotlightpa.org/news/2021/01/pa-covid-vaccine-locatio
 promo-active = true
 promo-type = "image"
 promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
-promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g0/1489/2.png, https://files.data.spotlightpa.org/uploads/01g0/1489/3.png, https://files.data.spotlightpa.org/uploads/01g0/1488/4.png, https://files.data.spotlightpa.org/uploads/01g0/1488/1.png"
+promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g3/jetm/desktop-banner-1-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jetm/desktop-banner-3-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jetm/desktop-banner-2-ma21.png"
 promo-desktop-width = 728
 promo-desktop-height = 90
-promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g0/12pn/2.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12pm/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12pk/1.svg"
+promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g3/jevw/mobile-rectangle-2-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jevw/mobile-rectangle-3-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jevw/mobile-rectangle-1-ma21.png"
 promo-mobile-width = 500
 promo-mobile-height = 250
 promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
@@ -15,5 +15,5 @@ promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
 sticky-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
-sticky-image = "https://files.data.spotlightpa.org/uploads/01g0/12g6/2.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/3.svg, https://files.data.spotlightpa.org/uploads/01g0/12g6/4.svg, https://files.data.spotlightpa.org/uploads/01g0/12g5/1.svg"
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g3/jev4/square-2-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jev4/square-1-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jev4/square-3-ma21.png"
 sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
