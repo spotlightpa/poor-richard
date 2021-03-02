@@ -43,9 +43,9 @@ While a number of national media outlets, including [the New York Times](https:/
 
 The dashboard provides a way to view both Pennsylvania-specific COVID-19 data and data for neighboring states.
 
-For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the state Department of Health’s interactive COVID-19 dashboard. This collection involves a combination of automated and manual processes. The data we collect from the department is not always perfect: The department does not always update its data at regular intervals and, on some occasions, it will provide inaccurate data that it later corrects.
+For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the state Department of Health’s interactive COVID-19 dashboard. This collection involves a combination of automated and manual processes. The data we collect from the department is not always perfect: The department does not always update its data at regular intervals and, on some occasions, it will provide inaccurate data that it later corrects. It's also worth remembering that these numbers also generally indicate when an event is reported to state officials rather than when it necessarily occurred. For instance, a person may die of COVID-19 days or weeks before that death is reported to state officials and therefore included in its overall tally.
 
-Since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website.
+In addition, since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website.
 
 For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the U.S. Department of Human Services. Specifically, the data is sourced from [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained and updated regularly by Carnegie Mellon University's Delphi Research Group. 
 
@@ -57,7 +57,11 @@ The data for Philadelphia is compiled in a similar way to the Pennsylvania data,
 
 ### Where do you get data for the other states from?
 
-We rely on data compiled by the New York Times and the U.S. Department of Health and Human Services for the other states/regions that are selectable on its dashboard. Like the data that Spotlight PA and The Inquirer is compiling for Pennsylvania, this data is also not always perfect, but data quality has improved considerably since the beginning of the pandemic.
+For case and death data for all states in the dashboard except Pennsylvania, we rely on county-by-county data compiled by the New York Times.
+
+For testing data, we rely on numbers compiled by the U.S. Department of Health and Human Services. Specifically, the data is sourced from the department's [COVID-19 Diagnostic Laboratory Testing (PCR Testing) Time Series](https://healthdata.gov/dataset/covid-19-diagnostic-laboratory-testing-pcr-testing-time-series) dataset
+
+For hospitalization data, the dashboard also relies on data compiled by the U.S. Department of Human Services. Specifically, the dashboard uses [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained by Carnegie Mellon University's Delphi Research Group. 
 
 ### How have your data sources changed?
 
