@@ -67,11 +67,11 @@ As of March 2, 2021, however, the Spotlight version of the dashboard transitione
 
 ### Some websites are reporting different numbers than your numbers, why is that?
 
-Because there is no central repository for national COVID-19 data for the U.S., there may be differences in the numbers presented on our dashboard compared to data and visualizations produced by other state or national news websites.
+Historically, since there has been no central repository for reliable COVID-19 data for the U.S., news outlets and analysts have taken divergent approaches to how they compile their COVID-19 statistics, where they source them from, how they handle anomalies, and how they calculate certain metrics (like the testing 'positivity rate'). This means that the numbers in our dashboard may be different than what you see on other websites. In order to be as transparent as possible, we have tried to document our sourcing and methodology as thoroughly as we can and to note when we change our data sources or make other major changes. Please refer to the bottom of this article for more information about how the dashboard has changed over time.
 
-There are a number of reasons why this might occur. This may be because different outlets are collecting their data from different sources or on different schedules. It may be because of errors that public health officials have made in the data that were later corrected but were nevertheless recorded. It may be because certain outlets are focusing on slightly different metrics, for instance, in what is considered a “positive” coronavirus case.
+There may be some other reasons you may see different numbers on our dashboard compared to other websites. Different outlets may be updating data on different schedules from our dashboard – say, updating certain metrics several times per day rather than once a day – which may temporarily result in different numbers than our own.
 
-And, as described above for Pennsylvania, there are occasions where the numbers in the Department of Health’s own interactive dashboard may not be the same as those reported in the department’s press materials or on other pages of its website.
+In addition, public health officials may make mistakes in their data that are later corrected but are nevertheless recorded in our data or in the data of other outlets. And, as described above regarding Pennsylvania's COVID-19 data, there are occasions where the numbers in the Department of Health’s own interactive dashboard may not be the same as those reported in the department’s press materials or on other pages of its website.
 
 We do our best to ensure we are providing readers with the best and most accurate COVID-19 available.
 
