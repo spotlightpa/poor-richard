@@ -89,11 +89,11 @@ Of the department’s “probable” cases, the department says it does count so
 
 ### How reliable are the official tallies of COVID-19 cases?
 
-Spotlight PA and The Inquirer are gathering the best publicly available data that exists on COVID-19. At the same time, it’s well understood by public health researchers that the number of positive cases being reported by state, city, and county health departments is likely to be a significant undercount of the total number of COVID-19 infections.
+Spotlight PA and The Inquirer are gathering the best publicly available data that exists on COVID-19. At the same time, for much of the pandemic, it's been understood by public health researchers that the number of positive cases being reported by state, city, and county health departments is likely to be a significant undercount of the total number of COVID-19 infections.
 
 There are a number of reasons for this undercount. COVID-19 is unusual in both its level of contagiousness and the fact that many people who are infected will not show symptoms. This means that the virus is able to spread rapidly through a community without detection. People may not seek a coronavirus test because they don’t know they are infected. In other cases, a person may be infected and have symptoms but choose not to get tested or, due to a lack of testing availability in their area, may not be able to get tested.
 
-More generally, as the state Department of Health notes on its own website, there are a number of factors that can affect the number of cases reported each day. Beyond the prevalence of the virus itself, the department notes those factors include: “testing patterns (who gets tested and why), testing availability, lab analysis backlogs, lab reporting delays, new labs joining our electronic laboratory reporting system, mass screenings, etc.”
+More generally, as the state Department of Health has noted on its own website, there are a number of factors that can affect the number of cases reported each day. Beyond the prevalence of the virus itself, the department noted in 2020 that those factors include: “testing patterns (who gets tested and why), testing availability, lab analysis backlogs, lab reporting delays, new labs joining our electronic laboratory reporting system, mass screenings, etc.”
 
 ### Why do you use “7-day” moving averages in some of your charts?
 
