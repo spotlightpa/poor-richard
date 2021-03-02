@@ -134,7 +134,7 @@ In our dashboard, The Inquirer and Spotlight PA take a relatively similar approa
 
 > Positivity rate = 7 day moving average of people who have tested positive by a PCR test / (7 day moving average of people who have a positive PCR test + 7 day moving average of people who have a negative PCR test)
 
-Note that due to slight differences in methodology, our positivity rate for Pennsylvania may differ significantly from the rate calculated by John Hopkins. In addition, due to larger methodological differences, our rate for Pennsylvania may also differ significantly from the rate calculated by the Pa. Department of Health.
+Note that due to slight differences in methodology, our positivity rate for Pennsylvania may differ significantly from the rate calculated by John Hopkins. In addition, due to larger methodological differences, our rate for Pennsylvania may also differ significantly from the rate calculated by the Pa. Department of Health (we provide more detail below).
 
 The Inquirer and Spotlight PA take a different approach when calculating the positivity rate for other regions in the dashboard. Again, this is why comparisons between Pennsylvania's positivity rate and the other states should be avoided entirely or made with caution. As of March 2, 2021, when Spotlight PA switched to using PCR specimen testing data from the U.S. Department of Health and Human Services for every state in the dashboard except Pennsylvania, it began using the third approach described by John Hopkins to calculate positivity:
 
