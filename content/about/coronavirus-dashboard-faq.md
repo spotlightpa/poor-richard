@@ -112,7 +112,7 @@ Specifically, the university notes:
 * If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
 * If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period.
 
-For this reason, we provide a calculation of the positivity rate for each region on our dashboard. Keep in mind, however, there are important caveats about these rates and direct comparisons of positivity rates between the different regions on Spotlight PA and the Inquirer's dashboard should be made with caution or, in some cases, avoided entirely.
+For this reason, we provide a calculation of the positivity rate for each region on our dashboard. Keep in mind, however, there are important caveats about these rates and direct comparisons of the positivity rates we calculate between different regions should be made with caution or, in some cases, avoided entirely.
 
 We have provided these calculations to readers because we believe this metric still provides a useful way of understanding how COVID-19 is trending over time in conjunction with other data. At the same time, however, we urge readers and policy makers to interpret our positivity rates with care.
 
@@ -122,7 +122,7 @@ As of March 2, 2021, John Hopkins [notes](https://coronavirus.jhu.edu/testing/di
 
 As a general caveat, John Hopkins notes: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region." 
 
-Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate positivity rates for states based on publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care.
+Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate accurate positivity rates due to issues with publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care.
 
 ### How do you calculate the positivity rate?
 
