@@ -61,13 +61,15 @@ We rely on data compiled by the New York Times and the U.S. Department of Health
 
 ### How have your data sources changed?
 
-For much of the first year of the pandemic, federal data sources for COVID-19 data were considered incomplete and inconsistent. To provide testing and hospitalization data for all pages of the dashboard except Philadelphia and Pennsylvania, Spotlight PA and the Inquirer relied on state COVID-19 data compiled by [Covid Tracking Project](https://covidtracking.com/), a volunteer organization founded by The Atlantic.
+For much of 2020, federal data sources for COVID-19 data were considered incomplete and inconsistent. To provide testing and hospitalization data for all pages of the dashboard except Philadelphia and Pennsylvania, Spotlight PA and the Inquirer relied on state COVID-19 data compiled by [Covid Tracking Project](https://covidtracking.com/), a volunteer organization founded by The Atlantic.
 
 As of March 2, 2021, however, the Spotlight version of the dashboard transitioned to using data from the U.S. Department of Health and Human Services. This was driven by the [announced retirement](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) of the Covid Tracking Project and that federal data on testing and hospitalization had improved considerably by this time. In future, more of the dashboard's data may be sourced directly from the federal government. Refer to the change log, at the bottom of this article, for more information about these changes.
 
 ### Some websites are reporting different numbers than your numbers, why is that?
 
-Historically, since there has been no central repository for reliable COVID-19 data for the U.S., news outlets and analysts have taken divergent approaches to how they compile their COVID-19 statistics, where they source them from, how they handle anomalies, and how they calculate certain metrics (like the testing 'positivity rate'). This means that the numbers in our dashboard may be different than what you see on other websites. In order to be as transparent as possible, we have tried to document our sourcing and methodology as thoroughly as we can and to note when we change our data sources or make other major changes. Please refer to the bottom of this article for more information about how the dashboard has changed over time.
+Historically, since there has been no central repository for reliable COVID-19 data for the U.S., news outlets and analysts have taken divergent approaches to how they compile COVID-19 statistics, including where they source their numbers from, how they handle errors and data anomalies, and how they calculate certain metrics (like the testing 'positivity rate').
+
+This means that the numbers in our dashboard may be different than what you see on other websites. In order to be as transparent as possible, we have tried to document our sourcing and methodology as thoroughly as we can and to note when we change our data sources and make other changes to our charts and maps. Please refer to the bottom of this article for more information about how the dashboard has changed over time.
 
 There may be some other reasons you may see different numbers on our dashboard compared to other websites. Different outlets may be updating data on different schedules from our dashboard – say, updating certain metrics several times per day rather than once a day – which may temporarily result in different numbers than our own.
 
