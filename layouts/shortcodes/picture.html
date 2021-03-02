@@ -9,13 +9,15 @@
 {{ $widthRatio := .Get "width-ratio" | default 3 | int }}
 {{ $heightRatio := .Get "height-ratio" | default 2 | int }}
 
-{{ $imgOpts := dict "filename" $src }}
-{{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
-{{ $imgOpts = dict "description" $description | merge $imgOpts }}
-{{ $imgOpts = dict "widthRatio" $widthRatio | merge $imgOpts }}
-{{ $imgOpts = dict "heightRatio" $heightRatio | merge $imgOpts }}
-{{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-{{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
+{{ $imgOpts := dict
+  "filename" $src
+  "credit" $credit
+  "description" $description
+  "widthRatio" $widthRatio
+  "heightRatio" $heightRatio
+  "sizeHint" "50vw"
+  "figClass" "mb-5"
+}}
 {{ partial "component/image-block.html" $imgOpts }}
 
 {{ with $caption }}

@@ -38,15 +38,16 @@
 {{ $heroName := $featured.Page.Param "image" }}
 {{ $heroCredit := $featured.Page.Param "image-credit" }}
 {{ $heroDescription := $featured.Page.Param "image-description" }}
-{{ $imgOpts := dict "filename" $heroName }}
-{{ $imgOpts = dict "credit" $heroCredit | merge $imgOpts }}
-{{ $imgOpts = dict "description" $heroDescription | merge $imgOpts }}
-{{ $imgOpts = dict "eager" true | merge $imgOpts }}
-{{ $imgOpts = dict "link" $featured.RelPermalink | merge $imgOpts }}
-{{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-{{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-{{ $imgOpts = dict "sizeHint" "40vw" | merge $imgOpts }}
-
+{{ $imgOpts := dict
+  "filename" $heroName
+  "credit" $heroCredit
+  "description" $heroDescription
+  "eager" true
+  "link" $featured.RelPermalink
+  "widthRatio" 16
+  "heightRatio" 9
+  "sizeHint" "40vw"
+}}
 <div class="tile is-bottom" data-ga-category="featured">
   <div class="tile is-parent is-6 is-top-tablet">
     <article class="tile is-child">
