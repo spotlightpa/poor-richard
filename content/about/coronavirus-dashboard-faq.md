@@ -122,7 +122,7 @@ As of March 2, 2021, John Hopkins [notes](https://coronavirus.jhu.edu/testing/di
 
 As a general caveat, John Hopkins notes: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region." 
 
-Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate accurate positivity rates due to issues with publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care. We will continue to review and update our own use of positivity rates.
+Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate accurate positivity rates due to issues with publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care. We will continue to review our use of positivity rates going forward.
 
 ### How do you calculate the positivity rate?
 
@@ -195,7 +195,6 @@ At time of writing, here are where you can find the department's core datasets:
 * [COVID-19 Aggregate Cases Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Cases-Current-Daily-County-Heal/j72v-r42c)
 * [COVID-19 Aggregate Death Data Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Death-Data-Current-Daily-County/fbgu-sqgp)
 * [COVID-19 PCR Test Counts](https://data.pa.gov/Health/COVID-19-PCR-Test-Counts-March-2020-Current-Statew/r6ti-va88)
-
 
 ### CHANGE LOG
 
