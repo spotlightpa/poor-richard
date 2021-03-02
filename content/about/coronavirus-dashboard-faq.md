@@ -103,7 +103,7 @@ As described above, there are a number of factors that can influence how many ne
 
 The reason for the seasonality in COVID-19 data is widely attributed to irregular data reporting: Officials often don’t report data over the weekend and then catch up during the working week. To provide a clearer understanding of the overall trend, we overlay some charts with a line representing the 7-day moving average of the data. A number of other news outlets, including the New York Times, have taken a similar approach to visualizing the data.
 
-### What is the ‘positivity rate’ and why is it important?
+### What is the "positivity rate" and why is it important?
 
 A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview): “Positivity rates are a measure of testing capacity, and can help gauge whether governments are casting a wide enough net with their testing programs to identify infections that may be occurring.”
 
