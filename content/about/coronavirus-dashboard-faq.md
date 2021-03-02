@@ -71,7 +71,7 @@ Historically, since there has been no central repository for reliable COVID-19 d
 
 This means that the numbers in our dashboard may be different than what you see on other websites. In order to be as transparent as possible, we have tried to document our sourcing and methodology as thoroughly as we can and to note when we change our data sources and make other changes to our charts and maps. Please refer to the bottom of this article for more information about how the dashboard has changed over time.
 
-There may be some other reasons you may see different numbers on our dashboard compared to other websites. Different outlets may be updating data on different schedules from our dashboard – say, updating certain metrics several times per day rather than once a day – which may temporarily result in different numbers than our own.
+There may be other reasons you see different numbers on our dashboard compared to other websites. For instance, different outlets may be updating data on different schedules from our dashboard and that may temporarily result in different numbers than our own.
 
 In addition, public health officials may make mistakes in their data that are later corrected but are nevertheless recorded in our data or in the data of other outlets. And, as described above regarding Pennsylvania's COVID-19 data, there are occasions where the numbers in the Department of Health’s own interactive dashboard may not be the same as those reported in the department’s press materials or on other pages of its website.
 
