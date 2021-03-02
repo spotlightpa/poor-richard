@@ -43,9 +43,9 @@ While a number of national media outlets, including [the New York Times](https:/
 
 The dashboard provides a way to view both Pennsylvania-specific COVID-19 data and data for neighboring states.
 
-For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the state Department of Health’s interactive COVID-19 dashboard. This collection involves a combination of automated and manual processes. The data we collect from the department is not always perfect: The department does not always update its data at regular intervals and, on some occasions, it will provide inaccurate data that it later corrects. It's also worth remembering that these numbers also generally indicate when an event is reported to state officials rather than when it necessarily occurred. For instance, a person may die of COVID-19 days or weeks before that death is reported to state officials and therefore included in its overall tally.
+For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the state Department of Health’s interactive COVID-19 dashboard. This collection involves a combination of automated and manual processes. The data we collect from the department is not always perfect: The department does not always update its data at regular intervals and, on some occasions, it will provide inaccurate data that it later corrects. It's also worth remembering that these numbers generally only indicate when an event is reported to state officials rather than when it necessarily occurred. For instance, a person may die of COVID-19 days or weeks before that death is reported to state officials and therefore included in its overall tally.
 
-In addition, since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website.
+In addition, since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website. The Covid Tracking Project has maintained \[detailed notes](https://covidtracking.com/data/state/pennsylvania/notes) on data issues it has encountered with Pennsylvania's daily reported data.
 
 For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the U.S. Department of Human Services. Specifically, the data is sourced from [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained and updated regularly by Carnegie Mellon University's Delphi Research Group. 
 
@@ -200,7 +200,6 @@ At time of writing, here are where you can find the department's four core datas
 * [COVID-19 Aggregate Death Data Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Death-Data-Current-Daily-County/fbgu-sqgp)
 * [COVID-19 PCR Test Counts](https://data.pa.gov/Health/COVID-19-PCR-Test-Counts-March-2020-Current-Statew/r6ti-va88)
 * [COVID-19 Aggregate Hospitalizations Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Hospitalizations-Current-Daily-/kayn-sjhx)
-
 
 ### CHANGE LOG
 
