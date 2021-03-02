@@ -181,6 +181,12 @@ As of July 13, in order to be as transparent as possible about changes we make t
 
 The date of each changes marks the date that the change was made to the Spotlight PA version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
 
+**March 2, 2021:** In preparation for [the retirement of the Covid Tracking Project](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) on March 7, data on COVID-19 testing and hospitalization sourced from the Covid Tracking Project was replaced with data sourced from the U.S. Department of Health and Human Services. In addition, a number of updates were made to footnotes and other text to make it easier for readers to understand how recently data in individual sections have been updated and to better explain the metrics and methodology used by the Philadelphia Inquirer and Spotlight PA. More generally, as the dashboard approaches one year of tracking the spread, references to '2020' and '2021' were added to date references to avoid reader confusion over date ranges.
+
+**Feb. 28, 2021:** Due to issues with an internal data pipeline, Pennsylvania's county vaccine map was removed from the Spotlight version of the dashboard. It may be restored at a later date.
+
+**Feb. 18, 2021:** A map with Pa. Department of Health data on the number of partially and fully vaccinated residents for each Pennsylvania county was added to the Pennsylvania page of the Spotlight version of the dashboard.
+
 **Feb. 4, 2021:** Two footnotes were added to the New Jersey section of the dashboard explaining that New Jersey began adding positive antigen test results to its cases tallies on Jan. 4, 2021. The change in methodology caused a significant spike in cases on that day.
 
 **Feb. 2, 2021:** Vaccine-related charts, created with Datawrapper and maintained by the Philadelphia Inquirer, were embedded in the Pennsylvania section of Spotlight PA's version of the dashboard. Similar charts were embedded in the Inquirer's version of the dashboard for the Pennsylvania and Philadelphia sections.
