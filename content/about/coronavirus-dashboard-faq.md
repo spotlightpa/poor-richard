@@ -35,13 +35,10 @@ Below, you’ll find information about our sourcing and methodology. If you have
 
 Spotlight PA and The Inquirer are committed to providing Pennsylvania readers the most accurate and up-to-date information on the COVID-19 outbreak. We believe our dashboard provides a simple interface for tracking the spread in Pennsylvania and surrounding states.
 
-The state Department of Health offers its own interactive
-<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">dashboard on its website</a>
-that displays Pennsylvania data. However, the department’s dashboard remains cumbersome and difficult to use, particularly on mobile devices. It doesn’t provide data on states outside Pennsylvania and doesn’t prioritize certain data points that we believe are most useful for readers. So, we wanted to create a way to make it easier to understand the spread of COVID-19.
+The state Department of Health offers its own[ interactive dashboard](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx) on its website
+that displays Pennsylvania data. However, for much of the pandemic, the department’s dashboard has been cumbersome and difficult to use, particularly on mobile devices. As of March 2, 2021, it also didn't provide data on Pennsylvania's neighboring states.
 
-While a number of national media outlets, including
-<a href="https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html">
-  the New York Times</a>, provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
+While a number of national media outlets, including [the New York Times](https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html), provide impressive visualizations of the spread in Pennsylvania and nationally, we believe our dashboard better prioritizes data that is most relevant to Pennsylvanians and the decisions they face on a day-to-day basis. Our dashboard also includes certain data points that are not available on these other websites. In addition, because we primarily compile Pennsylvania data from the state Department of Health ourselves, our data is generally updated sooner than other media sources.
 
 ### How do you compile your Pennsylvania data?
 
