@@ -65,7 +65,7 @@ For much of 2020, federal data sources for COVID-19 data were considered incompl
 
 As of March 2, 2021, however, the Spotlight version of the dashboard transitioned to using data from the U.S. Department of Health and Human Services. This was driven by the [announced retirement](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) of the Covid Tracking Project and that federal data on testing and hospitalization had improved considerably by this time. In future, more of the dashboard's data may be sourced directly from the federal government. Refer to the change log, at the bottom of this article, for more information about these changes.
 
-### Some websites are reporting different numbers than your numbers, why is that?
+### Some websites display different numbers than your numbers, why is that?
 
 Historically, since there has been no central repository for reliable COVID-19 data for the U.S., news outlets and analysts have taken divergent approaches to how they compile COVID-19 statistics, including where they source their numbers from, how they handle errors and data anomalies, and how they calculate certain metrics (like the testing 'positivity rate').
 
@@ -77,7 +77,7 @@ In addition, public health officials may make mistakes in their data that are la
 
 We do our best to ensure we are providing readers with the best and most accurate COVID-19 available.
 
-### What do you consider a COVID-19 ‘case’?
+### What do you consider a COVID-19 "case"?
 
 For all states in the dashboard, “cases” represents the sum of lab-confirmed positive COVID-19 cases and “probable” COVID-19 cases. A probable case is one in which health officials or medical professionals have deemed that a person likely had COVID-19 despite not having a laboratory test and positive result. This determination is made based on criteria defined by the Centers for Disease Control and Prevention. For instance, a person may be considered a “probable” case if they had recent exposure to someone with the coronavirus, like a family member, and then shortly later they developed COVID-19 symptoms. As of July 1, 2020, in Pennsylvania, the number of probable cases was much lower than the number of confirmed cases. At that time, the state had about 85,000 confirmed cases and about 2,500 probable cases.
 
