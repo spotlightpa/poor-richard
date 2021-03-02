@@ -63,7 +63,7 @@ We rely on data compiled by the New York Times and the U.S. Department of Health
 
 For much of 2020, federal data sources for COVID-19 data were considered incomplete and inconsistent. To provide testing and hospitalization data for all pages of the dashboard except Philadelphia and Pennsylvania, Spotlight PA and the Inquirer relied on state COVID-19 data compiled by [Covid Tracking Project](https://covidtracking.com/), a volunteer organization founded by The Atlantic.
 
-As of March 2, 2021, however, the Spotlight version of the dashboard transitioned to using data from the U.S. Department of Health and Human Services. This was driven by the [announced retirement](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) of the Covid Tracking Project and that federal data on testing and hospitalization had improved considerably by this time. In future, more of the dashboard's data may be sourced directly from the federal government. Refer to the change log, at the bottom of this article, for more information about these changes.
+As of March 2, 2021, however, the Spotlight version of the dashboard transitioned to using data from the U.S. Department of Health and Human Services. This was driven by the [announced retirement](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) of the Covid Tracking Project and that federal data on testing and hospitalization had improved considerably by this time. In future, more of the dashboard's data may be sourced directly from the federal government. Please to the change log, at the bottom of this article, for more information about these changes.
 
 ### Some websites display different numbers than your numbers, why is that?
 
