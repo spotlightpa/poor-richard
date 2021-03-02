@@ -103,14 +103,14 @@ The reason for the seasonality in COVID-19 data is widely attributed to irregula
 
 ### What is the ‘positivity rate’ and why is it important?
 
-A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview), the positivity rate tells us: “how much of the disease are we finding through tests?”
+A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview), puts it: “Positivity rates are a measure of testing capacity, and can help gauge whether governments are casting a wide enough net with their testing programs to identify infections that may be occurring. ”
 
-The positivity rate is important for two reasons. The first is that it can tell us if a state is doing enough testing. The World Health Organization recommended in May that countries have a positivity rate less than five percent. If a state has a positivity rate above five percent that may indicate it’s only testing the sickest people and not doing enough to test people with milder cases.
-
-But secondly, the positivity rate can help us understand if an increase in positivity COVID-19 cases is due to expanded testing or rising infections. Specifically, the university notes:
+Specifically, the university notes:
 
 * If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
 * If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period.
+
+For this reason, we provide a calculation of the positivity rate for each region on our dashboard. Keep in mind, however, that there are different approaches to calculating the positivity rate so our rates may differ from those calculated by state officials. In addition, as John Hopkins notes, it is important to remember there are important caveats about the positivity rate more generally: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region."
 
 ### How do you calculate the positivity rate?
 
