@@ -83,9 +83,9 @@ For all states in the dashboard, “cases” represents the sum of lab-confirmed
 
 There are two dominant types of coronavirus tests: polymerise chain reaction (PCR) tests and serological tests. PCR tests are to detect whether a person is currently infected with the coronavirus. The latter test, sometimes called an “antibody” test, is intended to detect whether a person was previously infected with the coronavirus and has since developed antibodies.
 
-For this reason, results from PCR tests are typically used to determine the current number of people in a community who are infected with COVID-19. In Pennsylvania, as of July 1, the Department of Health said that its tally of 85,000 people who have tested positive for the coronavirus is based solely on PCR tests. The number does not include serological tests.
+For this reason, results from PCR tests are typically used to determine the current number of people in a community who are infected with COVID-19. In Pennsylvania, as of July 1, 2020, the Pa. Department of Health said that its tally of 85,000 people who have tested positive for the coronavirus is based solely on PCR tests. The number does not include serological tests.
 
-Of the department’s “probable” cases, the department says it does count some people who have had positive serological results. But these are people, the department says, who also have either COVID-19 symptoms or have recently been exposed to someone infected with COVID-19. For that reason, the department considers these people as “probable” COVID-19 cases. As of July 1, among the department’s tally of 2,500 probable cases, 633 people fell into this category.
+Of the department’s “probable” cases, the department says it does count some people who have had positive serological results. But these are people, the department says, who also have either COVID-19 symptoms or have recently been exposed to someone infected with COVID-19. For that reason, the department considers these people as “probable” COVID-19 cases. As of July 1, 2020, among the department’s tally of 2,500 probable cases, 633 people fell into this category.
 
 ### How reliable are the official tallies of COVID-19 cases?
 
