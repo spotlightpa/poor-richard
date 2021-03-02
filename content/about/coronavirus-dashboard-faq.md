@@ -192,13 +192,15 @@ New types of COVID-19 data are constantly being published by state officials and
 
 As described above, there are many different sources of COVID-19 data. Availability and reliability of this data has evolved considerably since most U.S. news outlets began tracking COVID-19 in March, 2020.
 
-As of March 2, 2021, the Inquirer and Spotlight PA continue to rely heavily on Pennsylvania data reported daily on the [interactive dashboard](https://experience.arcgis.com/experience/ed2def13f9b045eda9f7d22dbc9b500e) of the Pa. Department of Health because it provides the freshest data possible on newly reported cases, deaths and tests. However, the department now provides access to raw, archived data on cases, deaths and testing on its [Open Data portal](https://data.pa.gov/browse?q=covid-19&sortBy=relevance). The daily numbers in these datasets differ from the numbers we've recorded because the data is better reconciled with the date an event actually occurred, like a person's death from COVID-19, rather than when it was first reported to state officials, and data is constantly being updated and backfilled. According to a department spokeswoman, the data is also regularly cleaned to remove duplicate case reports and correct other errors. The data can also be accessed using [Socrata Open Data API (SODA)](https://dev.socrata.com/foundry/data.pa.gov/j72v-r42c), which may also be helpful to researchers and developers that seek programmatic access to the data.
+As of March 2, 2021, the Inquirer and Spotlight PA continue to rely heavily on Pennsylvania data reported daily on the [interactive dashboard](https://experience.arcgis.com/experience/ed2def13f9b045eda9f7d22dbc9b500e) of the Pa. Department of Health because it provides the freshest data possible on newly reported cases, deaths and tests. However, the department now provides access to raw, archived data on cases, deaths and testing on its [Open Data portal](https://data.pa.gov/browse?q=covid-19&sortBy=relevance). The daily numbers in these datasets differ from the numbers we've recorded because the data is better reconciled with the date an event actually occurred, like a person's death from COVID-19, rather than when it was first reported to state officials, and data is constantly being updated and backfilled. According to a department spokeswoman, the data is also regularly cleaned to remove duplicate case reports and correct other errors. The data can also be accessed using [Socrata Open Data API (SODA)](https://dev.socrata.com/foundry/data.pa.gov/j72v-r42c), which may also be helpful to researchers and developers that seek programmatic access to the data. In the future, the dashboard may rely more heavily on these data sources.
 
-At time of writing, here are where you can find the department's core datasets:
+At time of writing, here are where you can find the department's four core datasets:
 
 * [COVID-19 Aggregate Cases Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Cases-Current-Daily-County-Heal/j72v-r42c)
 * [COVID-19 Aggregate Death Data Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Death-Data-Current-Daily-County/fbgu-sqgp)
 * [COVID-19 PCR Test Counts](https://data.pa.gov/Health/COVID-19-PCR-Test-Counts-March-2020-Current-Statew/r6ti-va88)
+* [COVID-19 Aggregate Hospitalizations Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Hospitalizations-Current-Daily-/kayn-sjhx)
+
 
 ### CHANGE LOG
 
