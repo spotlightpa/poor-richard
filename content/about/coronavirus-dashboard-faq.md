@@ -103,20 +103,28 @@ The reason for the seasonality in COVID-19 data is widely attributed to irregula
 
 ### What is the ‘positivity rate’ and why is it important?
 
-A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview), puts it: “Positivity rates are a measure of testing capacity, and can help gauge whether governments are casting a wide enough net with their testing programs to identify infections that may be occurring. ”
+A state’s ‘positivity rate’ represents the percentage of recent COVID-19 tests that have returned positive results. In essence, as John Hopkins University of Medicine [puts it](https://coronavirus.jhu.edu/testing/tracker/overview): “Positivity rates are a measure of testing capacity, and can help gauge whether governments are casting a wide enough net with their testing programs to identify infections that may be occurring.”
 
 Specifically, the university notes:
 
 * If a rise in cases is due to increased testing, the positivity rate could look flat or like it is falling over the same time period.
 * If a rise in cases is due to increased viral spread, the positivity rate could appear to be increasing over that same time period.
 
-For this reason, we provide a calculation of the positivity rate for each region on our dashboard. Keep in mind, however, that there are different approaches to calculating the positivity rate so our rates may differ from those calculated by state officials.
+For this reason, we provide a calculation of the positivity rate for each region on our dashboard. Keep in mind, however, there are important caveats about these rates and direct comparisons of positivity rates between the different regions on Spotlight PA and the Inquirer's dashboard should be made with caution or, in some cases, avoided entirely.
 
-In addition, as John Hopkins notes, it is important to remember there are important caveats about the positivity rate more generally: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region."
+We have provided these calculations to readers because we believe this metric still provides a useful way of understanding how COVID-19 is trending over time in conjunction with other data. At the same time, however, we urge readers and policy makers to interpret our positivity rates with care.
+
+### What are the caveats about the positivity rate?
+
+As of March 2, 2021, John Hopkins [notes](https://coronavirus.jhu.edu/testing/differences-in-positivity-rates) there are four main ways to calculate the positivity rate. Each approach has advantages and disadvantages. These differing approaches are why the rates calculated by Spotlight PA and the Inquirer may differ from those of John Hopkins, the rates calculated by state officials, and those calculated by other news outlets.
+
+As a general caveat, John Hopkins notes: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region." 
+
+Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate positivity rates for states based on publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care.
 
 ### How do you calculate the positivity rate?
 
-As of March 2, 2021, John Hopkins notes there are [four main approaches](https://coronavirus.jhu.edu/testing/differences-in-positivity-rates) to calculate an area's positivity rate. The university notes that it takes the fourth approach in its own visualizations, which it describes as:
+As mentioned above, John Hopkins notes there are [four main approaches](https://coronavirus.jhu.edu/testing/differences-in-positivity-rates) to calculate an area's positivity rate. The university notes that it takes the fourth approach in its own visualizations, which it describes as:
 
 > The number of **people who test positive is divided** by either **unique people, encounters, or tests** (depending on availability – each variable can help indicate the number of people tested).
 
@@ -124,7 +132,11 @@ In our dashboard, The Inquirer and Spotlight PA take a relatively similar approa
 
 > Positivity rate = 7 day moving average of people who have tested positive by a PCR test / (7 day moving average of people who have a positive PCR test + 7 day moving average of people who have a negative PCR test)
 
-The Inquirer and Spotlight PA take a different approach for other regions in the dashboard, which is why comparisons between Pennsylvania's positivity rate and the other states should be avoided or made with caution. As of March 2, 2021, when Spotlight PA switched to using PCR specimen testing data from the U.S. Department of Health and Human Services for every state in the dashboard except Pennsylvania, it began using the third approach described by John Hopkins to calculate positivity:
+Note that due to slight differences in methodology, our positivity rate for Pennsylvania may differ significantly. In addition, due to larger methodological differences, our rate for Pennsylvania may also differ significantly from the rate calculated by the Pa. Department of Health.
+
+The Inquirer and Spotlight PA take a different approach when calculating the positivity rate for other regions in the dashboard. Again, this is why comparisons between Pennsylvania's positivity rate and the other states should be avoided entirely or made with caution.
+
+As of March 2, 2021, when Spotlight PA switched to using PCR specimen testing data from the U.S. Department of Health and Human Services for every state in the dashboard except Pennsylvania, it began using the third approach described by John Hopkins to calculate positivity:
 
 > **Tests over Tests.** The number of **positive molecular test results divided by total molecular tests given**.
 
@@ -132,7 +144,7 @@ As a formula, it can be understood as:
 
 > Positivity rate = 7 day moving average of PCR laboratory specimens that returned a positive PCR test / 7 day moving average of all PCR laboratory specimens tested
 
-The result is that if you compare our positivity rates to the rates calculated by John Hopkins, you will likely see differences. We are constantly reviewing our calculation and may update our formula based on expert advice and as new data becomes available.
+We are constantly reviewing our calculation and may update our formula based on expert advice and as new data becomes available.
 
 ### Why is your positivity rate for Pennsylvania different from the Pa. Department of Health?
 
