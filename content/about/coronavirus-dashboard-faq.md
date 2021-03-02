@@ -164,7 +164,7 @@ We then analyze this data using a statistical model called “linear regression.
 
 We then convert the slope of those regression lines into a special number for each county that, in essence, represents the average percentage change in new daily cases for that county, per day, over the past 14 days.
 
-Here, we made editorial judgements about what constituted a “rising” or “falling” description. If a county&#39;s percent change was greater than 2.5%, our dashboard evaluates that county as having a “rising” trend. If the county’s percentage change is lower than -2.5%, the dashboard evaluates that county as having a “falling” trend. We chose these ranges so that our evaluations of “rising” and “falling” were more likely to err on the conservative side.
+Here, we made editorial judgements about what constituted a “rising” or “falling” description. If a county's percent change was greater than 2.5%, our dashboard evaluates that county as having a “rising” trend. If the county’s percentage change is lower than -2.5%, the dashboard evaluates that county as having a “falling” trend. We chose these ranges so that our evaluations of “rising” and “falling” were more likely to err on the conservative side.
 
 We evaluate counties that have an average percentage change between 2.5 to -2.5 percent as having an “unclear” trend.
 
@@ -183,6 +183,19 @@ For these reasons, in order to understand the overall trend of their county, we 
 ### Why don’t you include other types of data?
 
 New types of COVID-19 data are constantly being published by state officials and public health researchers. Readers sometimes contact us about other types of COVID-19 data they’d like to see on the dashboard. We appreciate and welcome all suggestions from readers. Because of the work involved in adding and maintaining new data sources, however, we think carefully before adding new data to the dashboard. Our preference is to include data that we know comes from a reliable source, will be reliably updated each day, and is provided in a machine-readable format with a structure that is unlikely to change over weeks or months. For these reasons, we may be unable to immediately incorporate new types of data that are made available. However, we are constantly evaluating whether new sources should be included in the dashboard and we continue to appreciate reader suggestions.
+
+### Where can I access raw COVID-19 data for Pennsylvania so I can conduct my own analysis?
+
+As described above, there are many different sources of COVID-19 data. Availability and reliability of this data has evolved considerably since most U.S. news outlets began tracking COVID-19 in March, 2020.
+
+As of March 2, 2021, the Inquirer and Spotlight PA continue to rely heavily on Pennsylvania data reported daily on the [interactive dashboard](https://experience.arcgis.com/experience/ed2def13f9b045eda9f7d22dbc9b500e) of the Pa. Department of Health because it provides the freshest data possible on newly reported cases, deaths and tests. However, the department now provides access to raw, archived data on cases, deaths and testing on its [Open Data portal](https://data.pa.gov/browse?q=covid-19&sortBy=relevance). The daily numbers in these datasets differ from the numbers we've recorded because the data is better reconciled with the date an event actually occurred, like a person's death from COVID-19, rather than when it was first reported to state officials, and data is constantly being updated and backfilled. According to a department spokeswoman, the data is also regularly cleaned to remove duplicate case reports and correct other errors. The data can also be accessed using [Socrata Open Data API (SODA)](https://dev.socrata.com/foundry/data.pa.gov/j72v-r42c), which may also be helpful to researchers and developers that seek programmatic access to the data.
+
+At time of writing, here are where you can find the department's core datasets:
+
+* [COVID-19 Aggregate Cases Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Cases-Current-Daily-County-Heal/j72v-r42c)
+* [COVID-19 Aggregate Death Data Current Daily County Health](https://data.pa.gov/Health/COVID-19-Aggregate-Death-Data-Current-Daily-County/fbgu-sqgp)
+* [COVID-19 PCR Test Counts](https://data.pa.gov/Health/COVID-19-PCR-Test-Counts-March-2020-Current-Statew/r6ti-va88)
+
 
 ### CHANGE LOG
 
