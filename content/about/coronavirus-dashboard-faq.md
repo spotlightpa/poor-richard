@@ -150,7 +150,7 @@ We are constantly reviewing our calculation and may update our formula based on 
 
 The Pa. Department of Health provides its own weekly calculation of Pennsylvania’s positivity rate on its [website](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx). While there are slight differences between our positivity rate and John Hopkins’ positivity rate, some readers might notice a much larger difference between our rate for Pennsylvania and the rate calculated by the department. 
 
-According to the department’s documentation, its calculation includes people who have been retested. As of Sept 2, it noted: “Since many people who are routinely retested as part of universal testing programs repeatedly test negative, the percent positivity is lower than what would be calculated if one used the number of new cases and the number of people tested for the the first time in the most recent 7-day period”.
+According to the department’s documentation, its calculation includes people who have been retested. As of Sept 2, 2020, it noted: “Since many people who are routinely retested as part of universal testing programs repeatedly test negative, the percent positivity is lower than what would be calculated if one used the number of new cases and the number of people tested for the the first time in the most recent 7-day period”.
 
 Please read this [detailed explainer](https://fusion.inquirer.com/health/coronavirus/coronavirus-positivity-rates-can-be-valuable-but-confusing-metric-20200925.html) from the Inquirer to learn more about the department's methodology.
 
