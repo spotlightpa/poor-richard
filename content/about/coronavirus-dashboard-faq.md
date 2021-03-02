@@ -28,8 +28,7 @@ aliases = []
 +++
 <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or just a curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
 
-Below, you’ll find information about our sourcing and methodology. If you have a question that you don’t feel has been answered or you have other feedback on how we could improve the dashboard, don’t hesitate to email either Dan Simmons-Ritchie at <a href="mailto:dsimmons-ritchie@spotlightpa.org">dsimmons-ritchie@spotlightpa.org</a> or Garland Potts at
-<a href="mailto:gpotts@inquirer.com">gpotts@inquirer.com</a>
+Below, you’ll find information about our sourcing and methodology. Please refer to the bottom of this article for information about how the dashboard has changed over time. If you have a question that you don’t feel has been answered or you have other feedback on how we could improve the dashboard, don’t hesitate to email Carl Johnson at <a href="mailto:[cjohnson@spotlightpa.org](mailto:cjohnson@spotlightpa.org)">[cjohnson@spotlightpa.org](mailto:cjohnson@spotlightpa.org)</a>.
 
 ### Why provide a dashboard?
 
@@ -46,10 +45,9 @@ The dashboard provides a way to view both Pennsylvania-specific COVID-19 data an
 
 For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the state Department of Health’s interactive COVID-19 dashboard. This collection involves a combination of automated and manual processes. The data we collect from the department is not always perfect: The department does not always update its data at regular intervals and, on some occasions, it will provide inaccurate data that it later corrects.
 
-Sometimes the data on the department’s dashboard doesn’t match the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website.
+Since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website.
 
-For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the
-<a href="https://covidtracking.com/">COVID Tracking Project</a>. The COVID Tracking Project is a volunteer organization launched by The Atlantic that collects COVID-19 data nationally. While we could compile this data ourselves, we decided that it was easier to rely on COVID Tracking Project because they have been collecting this data since April.
+For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the U.S. Department of Human Services. Specifically, the data is sourced from [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained and updated regularly by Carnegie Mellon University's Delphi Research Group. 
 
 ### Where do you get your Philadelphia data from?
 
@@ -59,11 +57,13 @@ The data for Philadelphia is compiled in a similar way to the Pennsylvania data,
 
 ### Where do you get data for the other states from?
 
-We rely on data compiled by the New York Times and COVID Tracking Project for the other states/regions that are selectable on its dashboard. The New York Times and COVID Tracking Project are some of the few organizations that are compiling state-by-state data on COVID-19 in the U.S. Like the data that Spotlight PA and The Inquirer is compiling for Pennsylvania, this data is also not always perfect. Both organizations occasionally have to make retroactive corrections or adjustments to their data to ensure its accuracy and integrity.
+We rely on data compiled by the New York Times and the U.S. Department of Health and Human Services for the other states/regions that are selectable on its dashboard. Like the data that Spotlight PA and The Inquirer is compiling for Pennsylvania, this data is also not always perfect, but data quality has improved considerably since the beginning of the pandemic.
 
-### Why don’t you just use federal data?
+### How have your data sources changed?
 
-As of July 17, 2020, the federal government has not provided reliable or accurate daily data on COVID-19 cases and deaths in the U.S. Since the beginning of the outbreak in the U.S., news outlets and public health researchers have largely filled the gap: recording and compiling data themselves on a state-by-state basis. As described above, even data provided by state and county officials, as in Pennsylvania, is not always perfect.
+For much of the first year of the pandemic, federal data sources for COVID-19 data were considered incomplete and inconsistent. To provide testing and hospitalization data for all pages of the dashboard except Philadelphia and Pennsylvania, Spotlight PA and the Inquirer relied on state COVID-19 data compiled by [Covid Tracking Project](https://covidtracking.com/), a volunteer organization founded by The Atlantic.
+
+As of March 2, 2021, however, the Spotlight version of the dashboard transitioned to using data from the U.S. Department of Health and Human Services. This was driven by the [announced retirement](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) of the Covid Tracking Project and that federal data on testing and hospitalization had improved considerably by this time. In future, more of the dashboard's data may be sourced directly from the federal government. Refer to the change log, at the bottom of this article, for more information about these changes.
 
 ### Some websites are reporting different numbers than your numbers, why is that?
 
