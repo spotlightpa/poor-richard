@@ -151,22 +151,16 @@
       {{ template "featured-footer" $context }}
     </nav>
   </footer>
-
-  {{/*
-  SVGS formatted readably:
-
-  "banner-svg" "/img/logos/banner-default-on-trans.svg"
-  "close-svg" "@fontawesome/solid/times.svg"
-  "email-svg" "@fontawesome/regular/envelope.svg"
-  "fb-svg" "@fontawesome/brands/facebook-f.svg"
-  "logo-svg" "/img/logos/circle-default-on-trans.svg"
-  "plus-svg" "@fontawesome/solid/plus-circle.svg"
-  "share-svg" "@fontawesome/solid/share.svg"
-  "twitter-svg" "@fontawesome/brands/twitter.svg"
-
-   */}}
-
-  {{ $svgs := dict "banner-svg" "/img/logos/banner-default-on-trans.svg" "close-svg" "@fontawesome/solid/times.svg" "email-svg" "@fontawesome/regular/envelope.svg" "fb-svg" "@fontawesome/brands/facebook-f.svg" "logo-svg" "/img/logos/circle-default-on-trans.svg" "plus-svg" "@fontawesome/solid/plus-circle.svg" "share-svg" "@fontawesome/solid/share.svg" "twitter-svg" "@fontawesome/brands/twitter.svg" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "close-svg" "@fontawesome/solid/times.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "plus-svg" "@fontawesome/solid/plus-circle.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
   <div hidden>
     {{ range $id, $rsc := $svgs }}
       {{ $svg := resources.Get $rsc }}

@@ -4,13 +4,15 @@
   {{ $name := .Page.Param "image" }}
   {{ $credit := .Page.Param "image-credit" }}
   {{ $description := .Page.Param "image-description" }}
-  {{ $imgOpts := dict "filename" $name }}
-  {{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
-  {{ $imgOpts = dict "description" $description | merge $imgOpts }}
-  {{ $imgOpts = dict "link" .RelPermalink | merge $imgOpts }}
-  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-  {{ $imgOpts = dict "sizeHint" "25vw" | merge $imgOpts }}
+  {{ $imgOpts := dict
+    "filename" $name
+    "credit" $credit
+    "description" $description
+    "link" .RelPermalink
+    "widthRatio" 16
+    "heightRatio" 9
+    "sizeHint" "25vw"
+  }}
   {{ partial "component/image-block.html" $imgOpts }}
 
   <h2 class="title is-4 is-spaced mt-2">

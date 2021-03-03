@@ -3,24 +3,29 @@
 {{ $description := .Param "image-description" }}
 {{ $size := .Param "image-size" | default "inline" }}
 
-{{ $imgOpts := dict "filename" $imagename }}
-{{ $imgOpts = dict "credit" $credit | merge $imgOpts }}
-{{ $imgOpts = dict "description" $description | merge $imgOpts }}
-{{ $imgOpts = dict "eager" true | merge $imgOpts }}
+{{ $imgOpts := dict
+  "filename" $imagename
+  "credit" $credit
+  "description" $description
+  "eager" true
+}}
 {{ if eq $size "inline" }}
-  {{ $imgOpts = dict "widthRatio" 3 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 2 | merge $imgOpts }}
-  {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
+  {{ $imgOpts = dict
+    "widthRatio" 3
+    "heightRatio" 2
+    "sizeHint" "50vw"
+    "figClass" "mb-5" | merge $imgOpts }}
 {{ else if eq $size "letterbox" }}
-  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-  {{ $imgOpts = dict "sizeHint" "50vw" | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "mb-5" | merge $imgOpts }}
+  {{ $imgOpts = dict
+    "widthRatio" 16
+    "heightRatio" 9
+    "sizeHint" "50vw"
+    "figClass" "mb-5" | merge $imgOpts }}
 {{ else if eq $size "full" }}
-  {{ $imgOpts = dict "widthRatio" 16 | merge $imgOpts }}
-  {{ $imgOpts = dict "heightRatio" 9 | merge $imgOpts }}
-  {{ $imgOpts = dict "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
+  {{ $imgOpts = dict
+    "widthRatio" 16
+    "heightRatio" 9
+    "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
 {{ end }}
 {{ if ne $size "hidden" }}
   {{ $imgOpts | partial "component/image-block.html" }}
