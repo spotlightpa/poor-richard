@@ -90,10 +90,16 @@ url = "/topics/"
 weight = 10
 
 [[footer]]
+name = "Events"
+pre = "is-uppercase"
+url = "/events/"
+weight = 11
+
+[[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 11
+weight = 12
 
 [[about]]
 name = "About Us"
@@ -162,15 +168,15 @@ url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
 weight = 4
 
 [[social]]
-name = "Flipboard"
+name = "Crowdcast"
 pre = "is-uppercase"
-url = "https://flipboard.com/@SpotlightPA"
+url = "/events/"
 weight = 5
 
 [[social]]
-name = "Google News"
+name = "Flipboard"
 pre = "is-uppercase"
-url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
+url = "https://flipboard.com/@SpotlightPA"
 weight = 6
 
 [[social]]
@@ -178,3 +184,9 @@ name = "Github"
 pre = "is-uppercase"
 url = "https://www.github.com/spotlightpa/"
 weight = 7
+
+[[social]]
+name = "Google News"
+pre = "is-uppercase"
+url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
+weight = 8

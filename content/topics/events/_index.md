@@ -7,3 +7,5 @@ title = "Events"
 kicker = "Events"
 linktitle = "Virtual seminars conducted by the Spotlight PA team"
 +++
+
+See our [upcoming events on Crowdcast](/events/).
