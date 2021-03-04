@@ -29,6 +29,12 @@ url = "https://caucuspa.com"
 logotype = "png"
 
 [[partners]]
+name = "Centre Daily Times"
+slug = "centre-daily-times"
+url = "https://www.centredaily.com"
+logotype = "svg"
+
+[[partners]]
 name = "The Citizens’ Voice"
 slug = "citizens-voice"
 url = "https://www.citizensvoice.com"
