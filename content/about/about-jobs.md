@@ -7,4 +7,3 @@ url = "/about/jobs/"
 +++
 We'll have a new opening coming soon. Sign up to receive alerts so you don't miss new job postings.
 
-{{<newsletter-jobs-form>}}
