@@ -14,6 +14,6 @@ promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&c
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
-sticky-image-caption = "Join Spotlight PA at 5 p.m. March 16 for a free reader discussion and Q&A about redistricting and gerrymandering in Pennsylvania."
-sticky-image = "https://files.data.spotlightpa.org/uploads/01g4/fdxw/square-event-promo-8-.png"
-sticky-link = "https://www.crowdcast.io/e/redistricting?utm_campaign=redistricting&utm_medium=slider&utm_source=website"
+sticky-image-caption = "Become a member of Spotlight PA now to help ensure all Pennsylvanians have access to quality local journalism."
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g3/jev4/square-2-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jev4/square-1-ma21.png, https://files.data.spotlightpa.org/uploads/01g3/jev4/square-3-ma21.png"
+sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
