@@ -1,17 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-03-12-SPLRETREAT13.md",
     "content/news/2021-03-15-SPLDIEMS15.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-02-SPLREGAN03.md",
-    "content/news/2021-02-05-SPLGAMING06.md"
+    "content/news/2020-03-16-SPLREMOTE16.md",
+    "content/news/2020-03-23-SPLREMOTE24.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-03-15-SPLNEWS16.md",
     "content/news/2021-03-11-SPLWAGE12.md",
-    "content/news/2021-03-10-SPLAUDIT10.md",
     "content/news/2021-03-09-SPAEVENT10.md"
   ],
   "sidebarPicks": [
