@@ -47,7 +47,7 @@ For Pennsylvania, Spotlight PA and The Inquirer compile data each day from the s
 
 In addition, since the department first began publishing COVID-19 data on its interactive dashboard, its data has not always matched the data it has released in other places, like in its press releases or on other pages of its website. We do our best to check the department’s data before publishing it to the dashboard. On some occasions, we will retroactively correct or fill in missing data based on archived information from the Department of Health website. The Covid Tracking Project has maintained [detailed notes](https://covidtracking.com/data/state/pennsylvania/notes) on data issues it has encountered with Pennsylvania's daily reported data in addition to other states.
 
-For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the U.S. Department of Human Services. Specifically, the data is sourced from [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained and updated regularly by Carnegie Mellon University's Delphi Research Group. 
+For hospitalization numbers for Pennsylvania, the dashboard relies on data compiled by the U.S. Department of Human Services. Specifically, the data is sourced from [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh) dataset that is maintained and updated regularly by Carnegie Mellon University's Delphi Research Group.
 
 ### Where do you get your Philadelphia data from?
 
@@ -59,9 +59,9 @@ The data for Philadelphia is compiled in a similar way to the Pennsylvania data,
 
 For case and death data for all states in the dashboard except Pennsylvania, we rely on county-by-county data compiled by the New York Times.
 
-For testing data, we rely on numbers compiled by the U.S. Department of Health and Human Services. Specifically, the data is sourced from the department's [COVID-19 Diagnostic Laboratory Testing (PCR Testing) Time Series](https://healthdata.gov/dataset/covid-19-diagnostic-laboratory-testing-pcr-testing-time-series) dataset
+For testing data, we rely on numbers compiled by the U.S. Department of Health and Human Services. Specifically, the data is sourced from the department's [COVID-19 Diagnostic Laboratory Testing (PCR Testing) Time Series](https://healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb) dataset
 
-For hospitalization data, the dashboard also relies on data compiled by the U.S. Department of Human Services. Specifically, the dashboard uses [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) dataset that is maintained by Carnegie Mellon University's Delphi Research Group. 
+For hospitalization data, the dashboard also relies on data compiled by the U.S. Department of Human Services. Specifically, the dashboard uses [a mirror](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) of the department's [COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh) dataset that is maintained by Carnegie Mellon University's Delphi Research Group.
 
 ### How have your data sources changed?
 
@@ -124,7 +124,7 @@ We have provided these calculations to readers because we believe this metric st
 
 As of March 2, 2021, John Hopkins [notes](https://coronavirus.jhu.edu/testing/differences-in-positivity-rates) there are four main ways to calculate the positivity rate. Each approach has advantages and disadvantages. These differing approaches are why the rates calculated by Spotlight PA and the Inquirer may differ from those of John Hopkins, the rates calculated by state officials, and those calculated by other news outlets.
 
-As a general caveat, John Hopkins notes: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region." 
+As a general caveat, John Hopkins notes: "While this metric can provide important context about case totals and trends, it is NOT a measure of how prevalent the virus is in communities. Policy decisions, like openings and closings or interstate travel, should not be determined based on test positivity alone. Considering confirmed new cases, testing rates, and percent positivity together gives us a fuller picture of COVID-19 in a particular state or region."
 
 Compounding matters, as the Covid Tracking Project [reported in February, 2021](https://covidtracking.com/analysis-updates/assessing-state-level-covid-19-data-reporting), there are reasons to believe that it is difficult and – in some cases, perhaps impossible – for outside analysts and news outlets to calculate accurate positivity rates due to issues with publicly available COVID-19 data. For this reason, we again urge readers, policy makers and analysts to interpret the positivity rates calculated on our dashboard with care. We will continue to review our use of positivity rates going forward.
 
@@ -152,7 +152,7 @@ We are constantly reviewing our calculation and may update our formula based on 
 
 ### Why is your positivity rate for Pennsylvania different from the Pa. Department of Health?
 
-The Pa. Department of Health provides its own weekly calculation of Pennsylvania’s positivity rate on its [website](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx). While there are slight differences between our positivity rate and John Hopkins’ positivity rate, some readers might notice a much larger difference between our rate for Pennsylvania and the rate calculated by the department. 
+The Pa. Department of Health provides its own weekly calculation of Pennsylvania’s positivity rate on its [website](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Monitoring-Dashboard.aspx). While there are slight differences between our positivity rate and John Hopkins’ positivity rate, some readers might notice a much larger difference between our rate for Pennsylvania and the rate calculated by the department.
 
 According to the department’s documentation, its calculation includes people who have been retested. As of Sept 2, 2020, it noted: “Since many people who are routinely retested as part of universal testing programs repeatedly test negative, the percent positivity is lower than what would be calculated if one used the number of new cases and the number of people tested for the the first time in the most recent 7-day period”.
 
