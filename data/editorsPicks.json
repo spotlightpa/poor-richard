@@ -1,10 +1,11 @@
 {
   "featuredStories": [
+    "content/news/2021-03-16-SPLLIST17.md",
     "content/news/2021-03-15-SPLDIEMS15.md"
   ],
   "subfeatures": [
-    "content/news/2020-03-16-SPLREMOTE16.md",
-    "content/news/2020-03-23-SPLREMOTE24.md"
+    "content/news/2020-03-23-SPLREMOTE24.md",
+    "content/news/2020-03-16-SPLREMOTE16.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
