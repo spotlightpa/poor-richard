@@ -4,10 +4,10 @@ banner-link = "https://www.spotlightpa.org/news/2021/01/pa-covid-vaccine-locatio
 promo-active = true
 promo-type = "image"
 promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
-promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g4/xajk/spotlight-general-donate-banner-ad-set-flash-challenge.png"
+promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g5/3zwq/5-banner.png, https://files.data.spotlightpa.org/uploads/01g5/3zwq/7-banner.png, https://files.data.spotlightpa.org/uploads/01g5/3zwq/6-banner.png"
 promo-desktop-width = 728
 promo-desktop-height = 90
-promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g4/xajk/rectangle-ad-flash-challenge.png"
+promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g5/3zx4/1-rect.png, https://files.data.spotlightpa.org/uploads/01g5/3zx4/3-rect.png, https://files.data.spotlightpa.org/uploads/01g5/3zx4/2-rect.png"
 promo-mobile-width = 500
 promo-mobile-height = 250
 promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
@@ -15,5 +15,5 @@ promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
 sticky-image-caption = "Become a member of Spotlight PA now to help ensure all Pennsylvanians have access to quality local journalism."
-sticky-image = "https://files.data.spotlightpa.org/uploads/01g4/xajk/spotlight-general-donate-square-flash-challenge.png"
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g5/3zxc/7-square.png, https://files.data.spotlightpa.org/uploads/01g5/3zxc/6-square.png, https://files.data.spotlightpa.org/uploads/01g5/3zxd/5-square.png"
 sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
