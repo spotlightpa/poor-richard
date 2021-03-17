@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-03-16-SPLLIST17.md"
+    "content/news/2021-03-17-SPLVAXINCENTIVE17.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-15-SPLDIEMS15.md",
-    "content/news/2020-03-16-SPLREMOTE16.md"
+    "content/news/2021-01-29-SPLDATA30.md",
+    "content/news/2021-01-19-SPLPRISONS19.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-03-15-SPLNEWS16.md",
-    "content/news/2021-03-11-SPLWAGE12.md",
-    "content/news/2021-03-09-SPAEVENT10.md"
+    "content/news/2021-03-15-SPLDIEMS15.md",
+    "content/news/2021-03-16-SPLLIST17.md",
+    "content/news/2021-03-15-SPLNEWS16.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
