@@ -1,16 +1,35 @@
 +++
+arc-id = "A6RRWTTNMZBG7HPE4ZPRNRXDHY"
+internal-id = "SPLDINNIMAN11"
+internal-budget = ""
 image = "2020/02/01f43aap5gxfhdyj.jpeg"
 image-description = "Pennsylvania State Sen. Andy Dinniman."
+image-caption = ""
 image-credit = "David Swanson / Staff Photographer"
-published = 2020-02-10T17:36:00.000Z
+image-size = ""
+published = 2020-02-10T17:36:00Z
+slug = "andy-dinniman-retirement-pennsylvania"
 authors = ["Cynthia Fernandez"]
+byline = ""
 title = "The Pennsylvania Senate's most outspoken pipeline critic is retiring"
+subtitle = ""
 description = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
 blurb = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
 kicker = "Capitol Notebook"
+topics = []
+series = []
+linktitle = ""
 suppress-featured = true
-slug = "andy-dinniman-retirement-pennsylvania"
+weight = 0
+url = ""
+aliases = []
+modal-exclude = false
+no-index = false
+language-code = ""
+layout = ""
+extended-kicker = ""
 +++
+
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
 
 Pennsylvania state Sen. Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of <a href="https://www.inquirer.com/business/energy/mariner-east-pipeline-fbi-investigation-pennsylvania-governor-tom-wolf-20191113.html" target=_blank>the Mariner East pipeline system</a>, will not seek reelection later this year, his office has announced.
@@ -29,7 +48,7 @@ In the legislature, Dinniman has introduced bills to reform pipeline safety regu
 
 The Federal Bureau of Investigation is probing how Gov. Tom Wolf’s administration issued permits for the Mariner East project. Wolf has <a href="https://stateimpact.npr.org/pennsylvania/2019/11/14/wolf-says-hes-unaware-of-any-wrongdoing-in-pipeline-permitting-process/" target="_blank">denied</a> any knowledge of wrongdoing. The Chester County district attorney is also leading a probe and in December <a href="https://www.inquirer.com/news/mariner-east-pipeline-workers-state-constables-chester-county-tom-hogan-20191203.html" target="_blank">filed criminal charges</a> against pipeline security personnel.
 
-Dinniman joins more than a dozen other state lawmakers who have announced their retirements from the General Assembly in recent months, most notably <a href="https://www.inquirer.com/news/pennsylvania/spl/mike-turzai-pennsylvania-house-speaker-retiring-20200123.html" target="_blank">House Speaker Mike Turzai</a> (R., Allegheny). <a href="https://andydinniman.com/insights/2020/02/07/a-difficult-decision-a-clear-choice-the-right-path-forward/" target="_blank">Dinniman endorsed Don Vymazal</a>, his director of government relations and policy, to succeed him in the heavily Democratic district.
+Dinniman joins more than a dozen other state lawmakers who have announced their retirements from the General Assembly in recent months, most notably <a href="https://www.inquirer.com/news/pennsylvania/spl/mike-turzai-pennsylvania-house-speaker-retiring-20200123.html" target="_blank">House Speaker Mike Turzai</a> (R., Allegheny). <a data-gone="https://andydinniman.com/insights/2020/02/07/a-difficult-decision-a-clear-choice-the-right-path-forward/">Dinniman endorsed Don Vymazal</a>, his director of government relations and policy, to succeed him in the heavily Democratic district.
 
 Before he was a state senator, Dinniman served for 15 years as Chester County commissioner. He founded an emergency housing shelter and created a program that works with local farms to redistribute surplus produce. He also served on the Downingtown Area School Board and taught at West Chester University.
 
