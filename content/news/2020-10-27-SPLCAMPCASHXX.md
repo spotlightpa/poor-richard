@@ -60,8 +60,6 @@ Another big spender for Democrats is a familiar name: Wolf, who has faced a Repu
 
 In August and early September, Wolf’s contributions revealed the more than dozen House seats Democrats believe are key to taking the majority. He gave $30,000 each to 14 Democrats seeking to flip GOP seats, including eight in the Philly suburbs where Democrats made big gains two years ago. That list also includes former House Speaker Mike Turzai’s vacant seat in the Pittsburgh suburbs.
 
-<i><b>» YOUR VOTING QUESTIONS, ANSWERED:</b></i><i> Join us at 10 a.m. Monday, Nov. 2 to get all of your questions answered about the week of the election, what to expect, what to watch, and more. </i><a href="https://inquirer.zoom.us/webinar/register/5816037238914/WN_zovGJrYlQO2s1h_KThtM1w"><i>Register for free now</i></a><i>!</i>
-
 Republicans, however, are fighting back, and groups such as Brouillette’s have spent big to defend against Democratic advances. Commonwealth Leaders Fund reported spending about $848,000 from late June to mid-September on advertising for 13 Republican candidates.
 
 The group is also targeting vulnerable Democrats in districts that supported Trump by funding ads that highlight their April vote against a bill that would have required the Wolf administration to loosen coronavirus restrictions on businesses.

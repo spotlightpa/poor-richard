@@ -58,8 +58,6 @@ While it can seem like a harmless service — a neighbor offering to take your b
 
 In a 2018 North Carolina congressional district race, for example, a Republican political operative was indicted for allegedly paying workers to collect completed ballots, and the election results were thrown out.
 
-<i><b>» YOUR VOTING QUESTIONS, ANSWERED:</b></i><i> Join us at 10 a.m. Monday, Nov. 2 to get all of your questions answered about the week of the election, what to expect, what to watch, and more. </i><a href="https://inquirer.zoom.us/webinar/register/5816037238914/WN_zovGJrYlQO2s1h_KThtM1w"><i>Register for free now</i></a><i>!</i>
-
 The Heritage Foundation, a conservative think tank, <a href="https://www.heritage.org/voterfraud/search?combine=&state=PA&year=&case_type=All&fraud_type=24489">found</a> four cases of voter fraud related to absentee ballots in Pennsylvania over the past 21 years.
 
 With Pennsylvania instituting no-excuse mail-in voting for the first time this year, there’s been more scrutiny — from Trump and GOP officials who have filed lawsuits, to voters calling election officials with questions — around how ballots are passed from hand to hand before they’re counted. So far, more than 3 million people have requested ballots to vote by mail.
