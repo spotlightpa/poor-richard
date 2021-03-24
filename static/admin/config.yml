@@ -362,6 +362,16 @@ collections:
             hint: "Prefer URLs like /donate/ without the https://www.spotlightpa.org because they work in testing too"
             widget: string
             required: false
+          - label: "Banner background color"
+            name: banner-bg-color
+            hint: "Use hex or CSS color name. Our orange is #ff6c36. Our yellow is #ffcb05. Our dark blue is #009edb. Our light blue is #99d9f1."
+            widget: string
+            required: false
+          - label: "Banner text color"
+            name: banner-text-color
+            hint: "Usually white or black"
+            widget: string
+            required: false
           - label: "Show promo"
             name: promo-active
             hint: "Promo is the native ad-like slot at top of the page"
