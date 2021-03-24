@@ -1,11 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-03-23-SPLCALLOUT23.md",
     "content/news/2021-03-24-SPLREFILE24.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-02-SPLFRAUD2.md",
-    "content/news/2021-02-01-SPLUNEMPLOY01.md"
+    "content/news/2021-03-23-SPLCALLOUT23.md",
+    "content/news/2021-03-02-SPLFRAUD2.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
