@@ -1,6 +1,8 @@
 banner-active = true
 banner = "**GOT 3 MINUTES?** Help Spotlight PA better serve you, our reader, by filling out this short survey"
 banner-link = "https://us15.list-manage.com/survey?u=77370ff1d001f9bb991fed9e7&id=c1a5ef0f53&attribution=false"
+banner-bg-color = "#009edb"
+banner-text-color = "#ffffff"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
