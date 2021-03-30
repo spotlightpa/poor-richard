@@ -32,7 +32,7 @@ extended-kicker = ""
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-The surge and the coming vaccines are top of mind for Pennsylvanians this winter. At 4 p.m. Dec. 7, join Spotlight PA’s panel of health experts to talk about testing, schools, holiday stress, tracing effectiveness, what to expect from those vaccines, and more. You can <a href="https://inquirer.zoom.us/webinar/register/7116067556656/WN_SyBUm0bFTmmriU_7RhmmKA">RSVP for FREE right now to claim your spot</a>.
+The surge and the coming vaccines are top of mind for Pennsylvanians this winter. At 4 p.m. Dec. 7, join Spotlight PA’s panel of health experts to talk about testing, schools, holiday stress, tracing effectiveness, what to expect from those vaccines, and more. You can <a data-gone="https://inquirer.zoom.us/webinar/register/7116067556656/WN_SyBUm0bFTmmriU_7RhmmKA">RSVP for FREE right now to claim your spot</a>.
 
 Our panel will include:
 
