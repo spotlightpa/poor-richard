@@ -44,6 +44,4 @@ Our panel will include:
 
 Participants are encouraged to <a href="mailto:cbaxter@spotlightpa.org" target=_blank>submit questions in advance</a>, and a full recording will be made available after the event.
 
-<a href="https://inquirer.zoom.us/webinar/register/7116067556656/WN_SyBUm0bFTmmriU_7RhmmKA" target=_blank>RSVP NOW</a>
-
 <b>» </b>Spotlight PA is offering this free event as part of our commitment to better connect Pennsylvanians in all corners of the state with experts and state officials who serve them.<b> If you value this community service, please support this important work and become a member today: </b><a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000003ZrjQAE"><b>spotlightpa.org/donate</b></a><b>.</b>
