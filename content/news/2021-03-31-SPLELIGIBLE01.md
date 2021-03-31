@@ -34,7 +34,9 @@ extended-kicker = ""
 
 HARRISBURG — Pennsylvania will open COVID-19 vaccine eligibility to all adults starting April 19, ahead of a May 1 deadline set by the White House.
 
-Effective immediately, four targeted groups are now eligible under the current Phase 1A: food and agriculture workers, grocery store workers, law enforcement, and firefighters.
+Effective immediately, four targeted groups are now eligible: food and agriculture workers, grocery store workers, law enforcement, and firefighters.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 People in Phase 1B — which includes people who work in manufacturing, veterinarians, postal service workers, clergy, public transit workers — will be eligible April 5, and those in Phase 1C will be eligible April 12.
 
