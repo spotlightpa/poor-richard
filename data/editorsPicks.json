@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-03-29-SPLGOAL29.md"
+    "content/news/2021-03-31-SPLELIGIBLE01.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-25-SPLWASTE26.md",
-    "content/news/2021-03-22-SPLMEDI22.md"
+    "content/news/2021-03-29-SPLGOAL29.md",
+    "content/news/2021-03-25-SPLWASTE26.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
