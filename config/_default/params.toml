@@ -1,8 +1,8 @@
 banner-active = true
-banner = "**OH SO CLOSE:** We're nearing 2,000 Spotlight PA members. Join now to put us over the top »»"
-banner-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
-banner-bg-color = "#ea5b3c"
-banner-text-color = "#ffffff"
+banner = "**BREAKING:** Pennsylvania sets date to expand COVID-19 vaccine eligibility to all adults. READ MORE »"
+banner-link = "https://www.spotlightpa.org/news/2021/03/pa-coronavirus-covid-vaccine-all-adults-eligible-april-19/"
+banner-bg-color = "#facb03"
+banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
