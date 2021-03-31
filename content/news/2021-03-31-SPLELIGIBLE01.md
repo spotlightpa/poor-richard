@@ -56,7 +56,7 @@ Dunn said Fayette started encouraging those in Phase 1B on Wednesday to sign up 
 
 “Once we get the vaccine, we can make that happen,” Dunn said.
 
-» READ MORE: <a href="https://www.spotlightpa.org/news/2021/01/pa-covid-vaccine-locations-availability-where-to-get-who-can-get-latest-updates/">See a map and county-by-county listing of vaccine providers, as well as the full description of each phase.</a>
+<b>» READ MORE: </b><a href="https://www.spotlightpa.org/news/2021/01/pa-covid-vaccine-locations-availability-where-to-get-who-can-get-latest-updates/"><b>See a map and county-by-county listing of vaccine providers, as well as the full description of each phase.</b></a>
 
 Chester County officials are developing similar plans for reaching the more than 600 homebound residents who live in the county, Commissioner Marian Moskowitz said.
 
@@ -86,7 +86,7 @@ A “game changing” increase in vaccine supply will also make it easier and mo
 
 Officials in Lancaster County said Wednesday that they are confident that they’ll be able to comply with the state’s new timetable. Last week, Commissioner Josh Parsons said the site’s waitlist had grown to about 100,000 people.
 
-Since then, the county mass vaccination site in Lancaster received 21,000 doses from the state — up from 14,000 the week before — and will ramp up to scheduling 3,500 appointments per day over the next six days, Dr. Michael Ripchinski, site director for the Lancaster County Community Vaccination Center and chief clinical officer with Penn Medicine Lancaster General Health, said in a statement.
+Since then, the county mass vaccination site in Lancaster received 21,000 doses from the state&nbsp; — up from 14,000 the week before —&nbsp;and will ramp up to scheduling 3,500 appointments per day over the next six days, Dr. Michael Ripchinski, site director for the Lancaster County Community Vaccination Center and chief clinical officer with Penn Medicine Lancaster General Health, said in a statement.
 
 By April 7, the site will be able to administer more than 6,000 appointments per day.
 
@@ -100,7 +100,7 @@ About 74% of Pennsylvanians 65 and older — or about 1.78 million people — ha
 
 Johnston-Walsh pointed out that that age group, along with people older than 50, made up the majority of severe cases and deaths in Pennsylvania.
 
-{{<picture src="external/2e5f9n3nz8ekgqe7tmhbe8f45m.jpeg" description="After receiving her first vaccination at a clinic in Sullivan County earlier this year, Laurell Cobb, 83, rode home on a Dial-A-Driver bus, run voluntarily by a local agency." caption="After receiving her first vaccination at a clinic in Sullivan County earlier this year, Laurell Cobb, 83, rode home on a Dial-A-Driver bus, run voluntarily by a local agency." credit="Fred Adams / Spotlight PA">}} 
+{{<picture src="external/8e8br8j7dgtg25yyhpaedd0fn8.jpeg" description="After receiving her first vaccination at a clinic in Sullivan County earlier this year, Laurell Cobb, 83, rode home on a Dial-A-Driver bus, run voluntarily by a local agency." caption="After receiving her first vaccination at a clinic in Sullivan County earlier this year, Laurell Cobb, 83, rode home on a Dial-A-Driver bus, run voluntarily by a local agency." credit="Fred Adams / Spotlight PA">}} 
 
 As eligibility expands, he said that he worries older, more vulnerable residents will have to compete with even more people for appointments.
 
