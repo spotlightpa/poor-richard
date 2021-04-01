@@ -41,6 +41,12 @@ url = "https://www.citizensvoice.com"
 logotype = "png"
 
 [[partners]]
+name = "Delaware Valley News"
+slug = "delaware-valley-news"
+url = "https://delawarevalleynews.com"
+logotype = "png"
+
+[[partners]]
 name = "Bucks County Courier Times"
 slug = "courier-times"
 url = "https://www.buckscountycouriertimes.com"
