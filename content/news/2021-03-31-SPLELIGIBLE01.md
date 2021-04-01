@@ -86,7 +86,7 @@ A “game changing” increase in vaccine supply will also make it easier and mo
 
 Officials in Lancaster County said Wednesday that they are confident that they’ll be able to comply with the state’s new timetable. Last week, Commissioner Josh Parsons said the site’s waitlist had grown to about 100,000 people.
 
-Since then, the county mass vaccination site in Lancaster received 21,000 doses from the state&nbsp; — up from 14,000 the week before —&nbsp;and will ramp up to scheduling 3,500 appointments per day over the next six days, Dr. Michael Ripchinski, site director for the Lancaster County Community Vaccination Center and chief clinical officer with Penn Medicine Lancaster General Health, said in a statement.
+Since then, the county mass vaccination site in Lancaster received 21,000 doses from the state  — up from 14,000 the week before — and will ramp up to scheduling 3,500 appointments per day over the next six days, Dr. Michael Ripchinski, site director for the Lancaster County Community Vaccination Center and chief clinical officer with Penn Medicine Lancaster General Health, said in a statement.
 
 By April 7, the site will be able to administer more than 6,000 appointments per day.
 
@@ -106,7 +106,7 @@ As eligibility expands, he said that he worries older, more vulnerable residents
 
 He said he has heard from people in southeast and central parts of the state who have been able to secure appointments, but have to travel 35 minutes to an hour — and make the trip twice, once for each dose.
 
-That’s also the case in the western part of the state, where Sen. Lindsay Williams (D., Allegheny) said she’s heard from constituents who are still struggling to secure appointments.
+That’s also the case in the western part of the state, where Sen. Lindsey Williams (D., Allegheny) said she’s heard from constituents who are still struggling to secure appointments.
 
 Some are homebound, while others don’t have transportation to get to a vaccination site, Williams said. Others do not want to go to a mass vaccination site and would prefer to go to their local pharmacy, but allocations to many of those locations have been paused as the state directs doses to sites capable of mass vaccination clinics.
 
@@ -119,5 +119,7 @@ Some small, rural counties, like Potter and Fulton, have only vaccinated about 1
 <div id="vis-map-pa-vax-providers--container"></div>
 <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
 <script>new pym.Parent("vis-map-pa-vax-providers--container", "https://interactives.data.spotlightpa.org/2020/vis-map-pa-vax-providers/", {});</script>
+
+<i>Correction: A previous version of this story misspelled the first name of Sen. Lindsey Williams (D., Allegheny).</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
