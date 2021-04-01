@@ -16,7 +16,9 @@
         <img
           src="{{ $logo.RelPermalink }}"
           alt="Logo for {{ $name }}"
-          style="height: 64px;"
+          width="{{ $logo.Width }}"
+          height="{{ $logo.Height }}"
+          style="width: auto; height: 64px;"
         >
       {{ end }}
     </span>
