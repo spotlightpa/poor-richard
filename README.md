@@ -8,7 +8,7 @@ All content copyright Spotlight PA. Code available under the MIT license. Photos
 - Install [Hugo](https://gohugo.io/) and Yarn
 - Clone, cd, etc.
 - Run `yarn` to setup frontend dependencies and code testing
-- Run `yarn start` and open http://localhost:1313/ to develop
+- Run `yarn start` and open http://localhost:39019/ to develop
 - Run `yarn format` to format code
 - Run `yarn test` to test code
 - Run `yarn build:prod` to create a production build

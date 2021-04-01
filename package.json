@@ -11,9 +11,9 @@
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
     "build:stage": "hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "hugo version && hugo --cleanDestinationDir",
-    "start:noreload": "hugo server --disableLiveReload",
-    "start:full": "hugo server --disableFastRender",
-    "start": "hugo server",
+    "start:noreload": "hugo server -p 39019 --disableLiveReload",
+    "start:full": "hugo server -p 39019 --disableFastRender",
+    "start": "hugo server -p 39019",
     "test": "yarn run test:eslint && yarn run test:prettier",
     "test:eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}"
