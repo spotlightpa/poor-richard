@@ -1,5 +1,5 @@
 {{- $news := site.GetPage "/news/_index.md" -}}
-{{- $p := $news.Pages | first 500 -}}
+{{- $p := $news.Pages | first 1000 -}}
 {{- range $i, $p := $p -}}
   {{- if eq $i 0 -}}
     {{- $row := slice "date" "kicker" "title"  "byline" "url" -}}
