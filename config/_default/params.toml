@@ -1,8 +1,8 @@
 banner-active = true
-banner = "**BREAKING:** Pennsylvania sets date to expand COVID-19 vaccine eligibility to all adults. READ MORE »"
-banner-link = "https://www.spotlightpa.org/news/2021/03/pa-coronavirus-covid-vaccine-all-adults-eligible-april-19/"
-banner-bg-color = "#facb03"
-banner-text-color = "#000000"
+banner = "**FREE DAILY NEWSLETTER:** Get every Spotlight PA story and top headlines from across Pa., in one email »"
+banner-link = "/newsletters/"
+banner-bg-color = "#75bc43"
+banner-text-color = "#ffffff"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
