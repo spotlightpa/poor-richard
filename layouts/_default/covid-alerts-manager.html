@@ -181,7 +181,7 @@
   {{ $content :=  `JavaScript is required to manage your subscription preferences. Please use another web browser or contact <b>webmaster@spotlightpa.org</b> by email for subscription manual management.` | safeHTML }}
   {{ $dict := dict "class" "is-danger" "title" "JavaScript Required" "content" $content }}
 
-  <div class="no-js">
+  <div class="no-js-only">
     {{ partial "component/message-block.html" $dict }}
   </div>
 {{ end }}
