@@ -1,3 +1,4 @@
+{{ $idEmail := partial "helper/inc-id" . }}
 <form
   class="
     bg-black text-white rounded font-sans text-center
@@ -18,9 +19,9 @@
   </p>
   <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
     <p class="relative flex-grow">
-      <label class="sr-only" for='{{ partial "helper/inc-id" . }}'>Email address</label>
+      <label class="sr-only" for='{{ $idEmail }}'>Email address</label>
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idEmail }}'
         class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-yellow-darker"
         type="email"
         name="EMAIL"

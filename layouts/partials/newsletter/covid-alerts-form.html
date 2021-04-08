@@ -1,3 +1,7 @@
+{{ $idEmail := partial "helper/inc-id" . }}
+{{ $idFname := partial "helper/inc-id" . }}
+{{ $idLname := partial "helper/inc-id" . }}
+
 <form
   action="https://email-alerts.data.spotlightpa.org/api/add-contact"
   method="post"
@@ -19,13 +23,13 @@
     <div class="control">
       <label
         class="label"
-        for='{{ partial "helper/inc-id" . }}'
+        for='{{ $idEmail }}'
       >
         Email address
       </label>
       <p class="control has-icons-left has-icons-right is-expanded">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idEmail }}'
           type="email"
           name="email"
           autocomplete="email"
@@ -52,13 +56,13 @@
   <div class="field">
     <label
       class="label"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idFname }}'
     >
       First Name
     </label>
     <p class="control has-icons-right">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idFname }}'
         type="text"
         name="first_name"
         autocomplete="given-name"
@@ -77,13 +81,13 @@
   <div class="field">
     <label
       class="label"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idLname }}'
     >
       Last Name
     </label>
     <p class="control has-icons-right">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idLname }}'
         type="text"
         name="last_name"
         autocomplete="family-name"

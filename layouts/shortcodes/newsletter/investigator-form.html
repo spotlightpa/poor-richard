@@ -1,3 +1,6 @@
+{{ $idFname := partial "helper/inc-id" . }}
+{{ $idLname := partial "helper/inc-id" . }}
+{{ $idEmail := partial "helper/inc-id" . }}
 <section data-ga-category="inline">
   <form
     action='{{ .Page.Param "investigator-action" }}'
@@ -11,12 +14,12 @@
       Sign Up for The Investigator
     </h2>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>First Name</label>
+      <label class="label" for='{{ $idFname }}'>First Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idFname }}'
           class="input"
           type="text"
           name="FNAME"
@@ -25,12 +28,12 @@
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>Last Name</label>
+      <label class="label" for='{{ $idLname }}'>Last Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idLname }}'
           class="input"
           type="text"
           name="LNAME"
@@ -39,10 +42,10 @@
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>Email Address</label>
+      <label class="label" for='{{ $idEmail }}'>Email Address</label>
       <p class="control is-expanded has-icons-left has-icons-right">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idEmail }}'
           class="input"
           type="email"
           name="EMAIL"

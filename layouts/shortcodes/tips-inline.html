@@ -2,6 +2,10 @@
 
 {{ $txt := .Inner }}
 
+{{ $idURL := partial "helper/inc-id" . }}
+{{ $idEmail := partial "helper/inc-id" . }}
+{{ $idName := partial "helper/inc-id" . }}
+{{ $idBody := partial "helper/inc-id" . }}
 <div class="box" data-ga-category="inline:tips">
   <h2 class="title is-6 has-text-danger has-text-left is-uppercase">Tips</h2>
   <div class="block">
@@ -23,10 +27,10 @@
       </label>
       <label
         class="label is-sr-only"
-        for='{{ partial "helper/inc-id" . }}'
+        for='{{ $idURL }}'
       >Host URL</label>
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idURL }}'
         class="input"
         type="text"
         name="host_page"
@@ -38,11 +42,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for='{{ partial "helper/inc-id" . }}'
+            for='{{ $idName }}'
           >Name</label>
           <p class="control is-expanded">
             <input
-              id='{{ partial "helper/get-id" . }}'
+              id='{{ $idName }}'
               class="input"
               type="text"
               placeholder="Name"
@@ -54,11 +58,11 @@
         <div class="field">
           <label
             class="label is-sr-only"
-            for='{{ partial "helper/inc-id" . }}'
+            for='{{ $idEmail }}'
           >Email or phone number</label>
           <p class="control">
             <input
-              id='{{ partial "helper/get-id" . }}'
+              id='{{ $idEmail }}'
               class="input"
               type="text"
               placeholder="Email or phone number"
@@ -73,10 +77,10 @@
       <div class="control">
         <label
           class="label is-sr-only"
-          for='{{ partial "helper/inc-id" . }}'
+          for='{{ $idBody }}'
         >Your tip or comment</label>
         <textarea
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idBody }}'
           class="textarea"
           placeholder="What should we know?"
           name="comment"
