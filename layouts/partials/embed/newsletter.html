@@ -1,3 +1,4 @@
+{{ $idEmail := partial "helper/inc-id" . }}
 <form
   class="has-text-centered box"
   action='{{ .Param "investigator-action" }}'
@@ -20,9 +21,9 @@
   </h2>
   <div class="field">
     <p class="control has-icons-left has-icons-right is-expanded">
-      <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
+      <label class="is-sr-only" for='{{ $idEmail }}'>Email</label>
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idEmail }}'
         class="input"
         type="email"
         name="EMAIL"

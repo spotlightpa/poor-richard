@@ -1,3 +1,4 @@
+{{ $idSearch := partial "helper/inc-id" . }}
 <section
   x-data="spl.searchModal()"
   @modal:search:open.window="open()"
@@ -11,7 +12,7 @@
   data-ga-category="modal"
   role="dialog"
   aria-modal="true"
-  aria-labelledby='{{ partial "helper/inc-id" . }}'
+  aria-labelledby='{{ $idSearch }}'
 >
   <div class="modal-background"></div>
   <div
@@ -22,7 +23,7 @@
   >
     <header class="modal-card-head">
       <div class="modal-card-title has-text-weight-bold has-text-centered has-text-white">
-        <span id='{{ partial "helper/get-id" . }}'>
+        <span id='{{ $idSearch }}'>
           Search
         </span>
       </div>

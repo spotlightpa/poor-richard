@@ -1,3 +1,8 @@
+{{ $idURL := partial "helper/inc-id" . }}
+{{ $idFrom := partial "helper/inc-id" . }}
+{{ $idEmail := partial "helper/inc-id" . }}
+{{ $idSubject := partial "helper/inc-id" . }}
+{{ $idBody := partial "helper/inc-id" . }}
 <form
   id="contact-page-form"
   name="contact-page"
@@ -15,10 +20,10 @@
     </label>
     <label
       class="label is-sr-only"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idURL }}'
     >Host URL</label>
     <input
-      id='{{ partial "helper/get-id" . }}'
+      id='{{ $idURL }}'
       class="input"
       type="text"
       name="host_page"
@@ -26,14 +31,14 @@
     >
   </p>
   <div class="field">
-    <label class="label" for='{{ partial "helper/inc-id" . }}'>From</label>
+    <label class="label" for='{{ $idFrom }}'>From</label>
   </div>
   <div class="field is-horizontal">
     <div class="field-body">
       <div class="field">
         <p class="control is-expanded">
           <input
-            id='{{ partial "helper/get-id" . }}'
+            id='{{ $idFrom }}'
             class="input"
             type="text"
             placeholder="William Penn"
@@ -43,10 +48,10 @@
         </p>
       </div>
       <div class="field">
-        <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
+        <label class="is-sr-only" for='{{ $idEmail }}'>Email</label>
         <p class="control is-expanded has-icons-left has-icons-right">
           <input
-            id='{{ partial "helper/get-id" . }}'
+            id='{{ $idEmail }}'
             class="input"
             type="email"
             placeholder="williampenn@example.com"
@@ -69,10 +74,10 @@
   </div>
 
   <div class="field">
-    <label class="label" for='{{ partial "helper/inc-id" . }}'>Subject</label>
+    <label class="label" for='{{ $idSubject }}'>Subject</label>
     <div class="control">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idSubject }}'
         class="input"
         type="text"
         placeholder="My question about Spotlight PA"
@@ -81,10 +86,10 @@
     </div>
   </div>
   <div class="field">
-    <label class="label" for='{{ partial "helper/inc-id" . }}'>Comment</label>
+    <label class="label" for='{{ $idBody }}'>Comment</label>
     <div class="control">
       <textarea
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idBody }}'
         class="textarea"
         placeholder="Explain how we can help you"
         name="comment"

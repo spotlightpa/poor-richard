@@ -1,3 +1,6 @@
+{{ $idFname := partial "helper/inc-id" . }}
+{{ $idLname := partial "helper/inc-id" . }}
+{{ $idEmail := partial "helper/inc-id" . }}
 <section class="box">
   <form
     action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=8c2a45d138"
@@ -16,12 +19,12 @@
       </label>
     </p>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>First Name</label>
+      <label class="label" for='{{ $idFname }}'>First Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idFname }}'
           class="input"
           type="text"
           name="FNAME"
@@ -30,12 +33,12 @@
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>Last Name</label>
+      <label class="label" for='{{ $idLname }}'>Last Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idLname }}'
           class="input"
           type="text"
           name="LNAME"
@@ -44,10 +47,10 @@
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ partial "helper/inc-id" . }}'>Email Address</label>
+      <label class="label" for='{{ $idEmail }}'>Email Address</label>
       <p class="control is-expanded has-icons-left has-icons-right">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idEmail }}'
           class="input"
           type="email"
           name="EMAIL"

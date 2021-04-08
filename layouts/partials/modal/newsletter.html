@@ -1,3 +1,4 @@
+{{ $idEmail := partial "helper/inc-id" . }}
 <div
   class="modal"
   data-ga-category="modal:newsletter:multi"
@@ -58,10 +59,10 @@
           @focusin="hasFocused = true"
         >
           <div class="field mt-5">
-            <label class="is-sr-only" for='{{ partial "helper/inc-id" . }}'>Email</label>
+            <label class="is-sr-only" for='{{ $idEmail }}'>Email</label>
             <div class="control has-icons-left has-icons-right">
               <input
-                id='{{ partial "helper/get-id" . }}'
+                id='{{ $idEmail }}'
                 class="input is-medium"
                 type="email"
                 name="EMAIL"

@@ -3,7 +3,9 @@
   {{ if ne hugo.Environment "production" }}
     {{ $baseURL = getenv "EMAIL_ALERTS_BASE_URL" | default "http://localhost:8080" }}
   {{ end }}
-
+  {{ $idEmail := partial "helper/inc-id" . }}
+  {{ $idFname := partial "helper/inc-id" . }}
+  {{ $idLname := partial "helper/inc-id" . }}
   <section
     class="section no-js-hide"
     data-ga-category="newsletter-manager:covid-alerts"
@@ -31,7 +33,7 @@
           <div class="field has-addons">
             <label
               class="label"
-              for='{{ partial "helper/inc-id" . }}'
+              for='{{ $idEmail }}'
             >
               Email address
             </label>
@@ -39,7 +41,7 @@
           <div class="field has-addons">
             <div class="control has-icons-left has-icons-right is-expanded">
               <input
-                id='{{ partial "helper/get-id" . }}'
+                id='{{ $idEmail }}'
                 class="input"
                 type="email"
                 placeholder="Email address"
@@ -71,13 +73,13 @@
           <div class="field">
             <label
               class="label"
-              for='{{ partial "helper/inc-id" . }}'
+              for='{{ $idFname }}'
             >
               First Name
             </label>
             <p class="control">
               <input
-                id='{{ partial "helper/get-id" . }}'
+                id='{{ $idFname }}'
                 type="text"
                 name="first_name"
                 autocomplete="given-name"
@@ -92,13 +94,13 @@
           <div class="field">
             <label
               class="label"
-              for='{{ partial "helper/inc-id" . }}'
+              for='{{ $idLname }}'
             >
               Last Name
             </label>
             <p class="control">
               <input
-                id='{{ partial "helper/get-id" . }}'
+                id='{{ $idLname }}'
                 type="text"
                 name="last_name"
                 autocomplete="family-name"

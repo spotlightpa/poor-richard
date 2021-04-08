@@ -117,15 +117,16 @@
       x-transition:enter="fade-enter-active"
       x-transition:enter-start="fade-enter"
     >
+      {{ $idOther := partial "helper/inc-id" . }}
       <label
-        for='{{ partial "helper/inc-id" . }}'
+        for='{{ $idOther }}'
         class="label"
       >
         Other Amount:
       </label>
       <div class="control">
         <input
-          id='{{ partial "helper/get-id" . }}'
+          id='{{ $idOther }}'
           type="text"
           class="input is-small"
           inputmode="numeric"

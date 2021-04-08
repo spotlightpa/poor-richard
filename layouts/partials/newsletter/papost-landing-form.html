@@ -1,3 +1,6 @@
+{{ $idEmail := partial "helper/inc-id" . }}
+{{ $idFname := partial "helper/inc-id" . }}
+{{ $idLname := partial "helper/inc-id" . }}
 <form
   x-show="showForm"
   x-cloak
@@ -17,11 +20,11 @@
   <div class="field">
     <label
       class="label"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idEmail }}'
     >Email</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idEmail }}'
         class="input"
         name="EMAIL"
         type="email"
@@ -39,11 +42,11 @@
   <div class="field">
     <label
       class="label"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idFname }}'
     >First name</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idFname }}'
         class="input"
         type="text"
         name="FNAME"
@@ -61,11 +64,11 @@
   <div class="field">
     <label
       class="label"
-      for='{{ partial "helper/inc-id" . }}'
+      for='{{ $idLname }}'
     >Last name</label>
     <p class="control has-icons-right is-expanded">
       <input
-        id='{{ partial "helper/get-id" . }}'
+        id='{{ $idLname }}'
         class="input"
         type="text"
         name="LNAME"
