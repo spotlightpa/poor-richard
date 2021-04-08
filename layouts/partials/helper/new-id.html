@@ -1,1 +1,2 @@
+{{ .Page.Scratch.Add "uid" 1 }}
 {{ return (.Page.Scratch.Get "uid" | printf "label-uid-%d") }}
