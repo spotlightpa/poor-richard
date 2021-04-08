@@ -1,8 +1,8 @@
 {{ $bgImg := resources.Get "/img/bgs/capitol-moody.jpeg" }}
 {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
-{{ $idEmail := partial "helper/inc-id" . }}
-{{ $idFname := partial "helper/inc-id" . }}
-{{ $idLname := partial "helper/inc-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
 <style>
 #about-hero {
   background-image: url('{{ $bgImg.RelPermalink }}');

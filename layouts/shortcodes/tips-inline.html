@@ -2,10 +2,10 @@
 
 {{ $txt := .Inner }}
 
-{{ $idURL := partial "helper/inc-id" . }}
-{{ $idEmail := partial "helper/inc-id" . }}
-{{ $idName := partial "helper/inc-id" . }}
-{{ $idBody := partial "helper/inc-id" . }}
+{{ $idURL := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+{{ $idName := partial "helper/new-id" . }}
+{{ $idBody := partial "helper/new-id" . }}
 <div class="box" data-ga-category="inline:tips">
   <h2 class="title is-6 has-text-danger has-text-left is-uppercase">Tips</h2>
   <div class="block">

@@ -3,9 +3,9 @@
   {{ if ne hugo.Environment "production" }}
     {{ $baseURL = getenv "EMAIL_ALERTS_BASE_URL" | default "http://localhost:8080" }}
   {{ end }}
-  {{ $idEmail := partial "helper/inc-id" . }}
-  {{ $idFname := partial "helper/inc-id" . }}
-  {{ $idLname := partial "helper/inc-id" . }}
+  {{ $idEmail := partial "helper/new-id" . }}
+  {{ $idFname := partial "helper/new-id" . }}
+  {{ $idLname := partial "helper/new-id" . }}
   <section
     class="section no-js-hide"
     data-ga-category="newsletter-manager:covid-alerts"

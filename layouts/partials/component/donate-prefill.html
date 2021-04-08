@@ -117,7 +117,7 @@
       x-transition:enter="fade-enter-active"
       x-transition:enter-start="fade-enter"
     >
-      {{ $idOther := partial "helper/inc-id" . }}
+      {{ $idOther := partial "helper/new-id" . }}
       <label
         for='{{ $idOther }}'
         class="label"
