@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/news/2021-04-08-SPLCHARGE09.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-02-13-splcredit.md"
+  ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
