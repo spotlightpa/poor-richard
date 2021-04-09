@@ -1,0 +1,60 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
+{{ $imgClass := .Get "class" | htmlUnescape | default "bg-g-4 mx-auto w-full h-auto block" }}
+{{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-g-8 text-xs xl:text-sm" }}
+{{ $link := .Get "link" | htmlUnescape }}
+{{ $style := .Get "style" | htmlUnescape }}
+
+{{ $widths := slice 500 800 1100 1400 1700 2100 }}
+{{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
+{{ $srcset := dict "sizes" $sizes "filename" $src | partial "helper/build-srcset" }}
+
+{{ $width := (index $sizes 0).width }}
+{{ $height := (index $sizes 0).height }}
+{{ $imgOpt := dict "filename" $src "width" $width "height" $height }}
+{{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+
+{{ $id := partial "helper/new-id" . }}
+
+<div
+  class="snap-center w-5/6 flex-none px-2 sm:px-8"
+  @click="
+    $event.currentTarget.scrollIntoView({
+      block: 'center',
+      inline: 'center',
+    });
+  "
+>
+  <figure
+    class="mb-4 rounded-lg shadow-md overflow-hidden cursor-pointer"
+    data-ga-category="inline:slide"
+    data-ga-button
+    data-ga-action="slider:center"
+  >
+    <picture>
+      {{ if in (string $srcset) ".jpeg" }}
+        <source
+          type="image/webp"
+          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+        >
+      {{ end }}
+      <img
+        class="{{ $imgClass }}"
+        alt="{{ $description }}"
+        title="{{ $description }}"
+        src="{{ $imgSmallSrc }}"
+        srcset="{{ $srcset }}"
+        width="16"
+        height="9"
+        loading="lazy"
+        :loading="this.mode"
+      >
+    </picture>
+    <figcaption class="{{ $capClass }}">
+      {{ $caption }} {{ $credit }}
+    </figcaption>
+  </figure>
+</div>
