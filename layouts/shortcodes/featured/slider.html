@@ -1,0 +1,14 @@
+{{ $id := partial "helper/new-id" . }}
+<aside class="
+  my-12 mx-auto lg:-mx-32 xl:-mx-48
+  flex flex-row flex-nowrap
+  overflow-x-scroll force-scrollbar snap-x
+  "
+  x-data="{ imgmode: 'lazy', ...spl.intersector('slider:remove-lazy') }"
+  x-init="init()"
+  @slider:remove-lazy.window="this.mode = 'eager'"
+>
+  <a class="sr-only" href="#{{ $id }}">Skip slideshow</a>
+  {{ .Inner }}
+  <span id="{{ $id }}"></span>
+</aside>
