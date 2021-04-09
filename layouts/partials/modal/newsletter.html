@@ -1,4 +1,4 @@
-{{ $idEmail := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
 <div
   class="modal"
   data-ga-category="modal:newsletter:multi"
