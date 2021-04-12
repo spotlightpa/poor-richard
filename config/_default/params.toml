@@ -1,7 +1,7 @@
 banner-active = true
-banner = "**FREE DAILY NEWSLETTER:** Get every Spotlight PA story and top headlines from across Pa., in one email »"
-banner-link = "/newsletters/"
-banner-bg-color = "#75bc43"
+banner = "**RSVP FOR FREE:** Join us for a reader Q&A on how to fight back against misinformation in Pa. »"
+banner-link = "https://www.crowdcast.io/e/misinformation"
+banner-bg-color = "#c200ff"
 banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
