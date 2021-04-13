@@ -1,10 +1,11 @@
 {
   "featuredStories": [
+    "content/news/2021-04-14-SPLPAUSE14.md",
     "content/news/2021-04-09-SPLDOSES10.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-25-SPLWASTE26.md",
-    "content/news/2021-03-31-SPLELIGIBLE01.md"
+    "content/news/2021-04-09-SPLDOSES10.md",
+    "content/news/2021-03-25-SPLWASTE26.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
