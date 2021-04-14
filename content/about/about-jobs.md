@@ -5,8 +5,6 @@ description = "Spotlight PA is building an inclusive team of journalists who bri
 linktitle = "Jobs"
 url = "/about/jobs/"
 +++
-At Spotlight PA, we're committed to producing the highest-quality accountability and investigative journalism in Pennsylvania in collaboration with newsroom partners acros
-
 Spotlight PA currently has two job openings:
 
 ## News App Developer
