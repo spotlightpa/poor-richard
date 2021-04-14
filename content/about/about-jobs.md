@@ -23,6 +23,6 @@ We are seeking a passionate reporter to cover Pennsylvania’s Capitol from Harr
 
 - - -
 
-Sign up to receive alerts so you don't miss new job postings.
+## Sign up to receive alerts so you don't miss new job postings.
 
 {{<newsletter/jobs-form>}}
