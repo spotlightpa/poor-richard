@@ -5,6 +5,8 @@ description = "Spotlight PA is building an inclusive team of journalists who bri
 linktitle = "Jobs"
 url = "/about/jobs/"
 +++
+At Spotlight PA, we're committed to producing the highest-quality accountability and investigative journalism in Pennsylvania in collaboration with newsroom partners acros
+
 Spotlight PA currently has two job openings:
 
 ## News App Developer
@@ -20,6 +22,8 @@ Spotlight PA, in partnership with PennLive/The Patriot-News, is looking for a cr
 ## [Apply Here](https://us59.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/169)
 
 We are seeking a passionate reporter to cover Pennsylvania’s Capitol from Harrisburg for Spotlight PA, an award-winning independent newsroom focused on urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This reporter is crucial to bolstering our team’s work, as well as leading coverage for local newsrooms across Pennsylvania in one of the most consequential Capitols in the U.S. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 67 community newsroom partners, allowing our journalism to reach Pennsylvanians in all corners.
+
+- - -
 
 Sign up to receive alerts so you don't miss new job postings.
 
