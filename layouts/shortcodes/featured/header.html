@@ -13,7 +13,7 @@
 {{ $gravity := .Get "image-gravity" }}
 {{ $artType := .Get "art-type" | default "Photo" }}
 {{ $preposition := .Get "credit-relation" | default "of" }}
-
+{{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
 {{ $srcset := dict "sizes" $sizes "filename" $filename "gravity" $gravity | partial "helper/build-srcset" }}
@@ -24,13 +24,13 @@
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
     <header class="flex flex-col md:flex-row md:min-h-screen">
-      <div class="bg-black text-white md:w-2/5">
+      <div class="md:w-2/5 md:min-w-min bg-black text-white">
         <div class="px-8 sm:px-12 pb-10">
           <div class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white">
             <div
               class="font-sans uppercase font-bold text-yellow"
             >{{ $eyebrow }}</div>
-            <h1 class="mt-4 text-4xl lg:text-6xl uppercase leading-hed">
+            <h1 class="mt-4 uppercase leading-hed {{ $hedSizes }}">
               {{ $hed }}
             </h1>
             <h2 class="mt-4 lg:text-lg">{{ $dek }}</h2>
