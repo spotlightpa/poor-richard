@@ -243,3 +243,9 @@ name = "York Dispatch"
 slug = "york-dispatch"
 url = "https://www.yorkdispatch.com"
 logotype = "jpeg"
+
+[[partners]]
+name = "Your Daily Local"
+slug = "yourdailylocal"
+url = "https://yourdailylocal.com"
+logotype = "jpeg"
