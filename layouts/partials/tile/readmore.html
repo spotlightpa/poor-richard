@@ -1,4 +1,9 @@
-<link href="/feeds/summary.json" x-ref="feedSrc" />
+<link
+  rel="prefetch"
+  as="fetch"
+  href="/feeds/summary.json"
+  x-ref="feedSrc"
+/>
 <template x-for="story in stories" :key="story.url" x-cloak>
   <article
     class="tile is-vertical is-bottom"
