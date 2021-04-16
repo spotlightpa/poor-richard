@@ -136,19 +136,6 @@ html {
   background-size: 100px;
 }
 
-.force-scrollbar {
-  scrollbar-color: #efefef #8a8a8a;
-  scroll-behavior: smooth;
-}
-
-.force-scrollbar::-webkit-scrollbar {
-  @apply rounded-full h-4 bg-g-4 shadow-inner;
-}
-
-.force-scrollbar::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-g-6;
-}
-
 .snap-x {
   scroll-snap-type: x mandatory
 }

@@ -13,6 +13,7 @@ import readmore from "../enhancements/read-more.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
 import searchArticles from "../enhancements/search-articles.js";
 import searchModal from "../enhancements/search-modal.js";
+import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
 window.spl = Object.assign({}, window.spl, {
@@ -28,5 +29,6 @@ window.spl = Object.assign({}, window.spl, {
   sanitizeText,
   searchArticles,
   searchModal,
+  slider,
   sticky,
 });

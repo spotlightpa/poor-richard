@@ -1,14 +1,42 @@
 {{ $id := partial "helper/new-id" . }}
-<aside class="
-  my-12 mx-auto lg:-mx-32 xl:-mx-48
-  flex flex-row flex-nowrap
-  overflow-x-scroll force-scrollbar snap-x
-  "
-  x-data="{ imgmode: 'lazy', ...spl.intersector('slider:remove-lazy') }"
+<aside
+  x-data="spl.slider()"
   x-init="init()"
-  @slider:remove-lazy.window="this.mode = 'eager'"
+  class="
+    mx-auto lg:-mx-32 xl:-mx-48 py-4
+    relative
+  "
 >
   <a class="sr-only" href="#{{ $id }}">Skip slideshow</a>
-  {{ .Inner }}
-  <span id="{{ $id }}"></span>
+  <div
+    class="
+      w-full h-full
+      flex flex-row flex-nowrap
+      overflow-x-scroll snap-x
+    "
+  >{{ .Inner }}</div>
+  <div
+    class="
+      hidden sm:flex absolute inset-y-0 left-0 text-g-4 pointer-events-none
+      opacity-0
+      transition-opacity duration-300 ease-in-out
+    "
+    :class="{'opacity-0': isFirst }"
+  >
+    <svg class="self-center w-16 h-16 fill-current opacity-75">
+      <use xlink:href="#left-svg"></use>
+    </svg>
+  </div>
+  <div
+    class="
+      hidden sm:flex absolute inset-y-0 right-0 text-g-4 pointer-events-none
+      transition-opacity duration-300 ease-in-out
+    "
+    :class="{'opacity-0': isLast }"
+  >
+    <svg class="self-center w-16 h-16 fill-current opacity-75">
+      <use xlink:href="#right-svg"></use>
+    </svg>
+  </div>
+  <span id="{{ $id }}" class="sr-only">Story continues below…</span>
 </aside>
