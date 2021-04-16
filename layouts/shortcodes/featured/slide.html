@@ -2,7 +2,7 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $imgClass := .Get "class" | htmlUnescape | default "bg-g-4 mx-auto w-full h-auto block" }}
+{{ $imgClass := .Get "class" | htmlUnescape | default "block mx-auto group-focus:shadow-md transition-shadow w-full h-auto rounded overflow-hidden bg-g-4" }}
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-g-8 text-xs xl:text-sm" }}
 {{ $link := .Get "link" | htmlUnescape }}
@@ -20,16 +20,14 @@
 {{ $id := partial "helper/new-id" . }}
 
 <div
-  class="snap-center w-5/6 flex-none px-2 sm:px-8"
-  @click="
-    $event.currentTarget.scrollIntoView({
-      block: 'center',
-      inline: 'center',
-    });
-  "
+  class="snap-center w-5/6 flex-none px-2 sm:px-8 group focus:outline-none"
+  :class="{'cursor-pointer': currentSlide !== {{ .Ordinal}} }"
+  data-slide-id="{{ .Ordinal }}"
+  @focus="center($event.currentTarget)"
+  tabindex="0"
 >
   <figure
-    class="mb-4 rounded-lg shadow-md overflow-hidden cursor-pointer"
+    class="mb-4"
     data-ga-category="inline:slide"
     data-ga-button
     data-ga-action="slider:center"
@@ -49,8 +47,9 @@
         srcset="{{ $srcset }}"
         width="16"
         height="9"
+        decode="async"
         loading="lazy"
-        :loading="this.mode"
+        :loading="loadingMode"
       >
     </picture>
     <figcaption class="{{ $capClass }}">
