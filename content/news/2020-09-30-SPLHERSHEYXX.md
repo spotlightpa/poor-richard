@@ -17,7 +17,7 @@ description = "The Hershey School, the nation's richest private school, agrees u
 blurb = "The Hershey School, the nation's richest private school, agrees under pressure from state Attorney General Josh Shapiro to expand across Pennsylvania."
 kicker = "Education"
 topics = ["Education"]
-series = []
+series = ["Milton Hershey School"]
 linktitle = ""
 suppress-featured = false
 weight = 0
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
