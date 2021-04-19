@@ -1,4 +1,7 @@
 {{ $flavor := .Get "text" | default `Spotlight PA provides essential journalism with support from readers like you. Help shine a light on injustice and hold the powerful to account by becoming a member now.` }}
+{{ $url := .Get "url" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
 <section
   class="fixed bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
   x-data="spl.sticky()"
@@ -32,14 +35,23 @@
     @click.away="close()"
     href="/donate/"
   >
-    <h2
-      class="text-yellow uppercase font-bold text-sm tracking-widest"
-    >Donate</h2>
-    <p class="mt-4 mx-auto max-w-2xl">
-      {{ $flavor }}
-    </p>
-    <div
-      class="mt-4 px-8 py-2 bg-yellow border-2 border-yellow-darker text-black rounded uppercase font-bold tracking-widest"
-    >Join Now</div>
+    {{ if $url }}
+      <img
+        class="block w-full h-auto"
+        src="{{ $url }}"
+        {{ with $width }}width="{{.}}"{{end}}
+        {{ with $height }}height="{{.}}"{{end}}
+      >
+    {{ else }}
+      <h2
+        class="text-yellow uppercase font-bold text-sm tracking-widest"
+      >Donate</h2>
+      <p class="mt-4 mx-auto max-w-2xl">
+        {{ $flavor }}
+      </p>
+      <div
+        class="mt-4 px-8 py-2 bg-yellow border-2 border-yellow-darker text-black rounded uppercase font-bold tracking-widest"
+      >Join Now</div>
+    {{ end }}
   </a>
 </section>
