@@ -13,7 +13,8 @@
             {{ range $page := .Pages }}
               <div class="tile is-parent is-4 has-margin-top-negative">
                 <div class="tile is-child">
-                  {{ partial "tile/list.html" $page }}
+                  {{ $props :=  dict "Page" . "showDate" true }}
+                  {{ partial "tile/list.html" $props }}
                 </div>
               </div>
             {{ end }}

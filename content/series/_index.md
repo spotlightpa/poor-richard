@@ -2,7 +2,10 @@
 title = "Projects & Investigations"
 description = "Special projects and investigations showcasing the best of Spotlight PA"
 subhed = " "
-reverse-cron = false
+show-date = false
+show-item-dates = false
+reverse-cron = true
 [cascade]
 reverse-cron = true
+show-item-dates = true
 +++

@@ -1,4 +1,5 @@
 +++
+published = 2020-12-10T10:00:00Z
 image = "external/hnn6p4e42kam4y0n4bsy3kp5qw.jpeg"
 image-credit = "DAN GLEITER / PennLive"
 image-size = "hidden"
