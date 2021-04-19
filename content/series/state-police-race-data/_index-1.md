@@ -1,4 +1,5 @@
 +++
+published = 2021-04-19T18:54:00.463Z
 image = "2021/04/01g7vkywcj8kbp2g.jpeg"
 image-credit = "DAN GLEITER / PennLive"
 kicker = "State Police Race Data"
