@@ -1,9 +1,9 @@
 +++
+published = 2020-10-15T09:30:00Z
 image-description = "Tim Boyce — the emergency manager in Delaware County, where the Mariner East pipelines cut through a population of roughly 3,000 people per square mile — said planners like himself need more information from Sunoco. “You can’t just keep telling people, ‘It’s OK, don’t worry about it.’ We owe it to them to have thought this through beforehand,” he said."
 image-credit = "Michael Bryant / Philadelphia Inquirer"
 kicker = "At Risk, In The Dark"
 title = "At Risk, In The Dark"
-weight = 7
 image = "external/qbw0hag53qbfsjprbsk0s9vt9g.jpeg"
 linktitle = "As the Mariner East pipelines become a permanent underpinning of Pennsylvania, secrecy and a patchwork of emergency plans have left many communities in the dark about what to do in case of an accident."
 description = "As the Mariner East pipelines become a permanent underpinning of Pennsylvania, secrecy and a patchwork of emergency plans have left many communities in the dark about what to do in case of an accident."

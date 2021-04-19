@@ -40,7 +40,6 @@ yaml-definitions: &page-fields
   - label: Date
     name: published
     widget: datetime
-    hint: "Note that future dated articles will not be published on the live site"
     required: false
   - label: Slug
     name: slug
@@ -168,6 +167,11 @@ yaml-definitions: &page-fields
     required: false
 
 yaml-definitions2: &taxonomy-fields
+  - label: Date
+    name: published
+    widget: datetime
+    hint: "Publish date for series as a whole"
+    required: false
   - label: "Featured Image"
     name: "image"
     widget: string

@@ -6,10 +6,14 @@
   {{ $date := now }}
   {{ $showDate := false }}
   {{ $sixMonthsAgo := now.AddDate 0 -6 0 }}
-  {{ range first 1 .Pages }}
+  {{ range last 1 .Pages }}
     {{ $date = .Date }}
     {{ $showDate = $date.Before $sixMonthsAgo | and (not .Date.IsZero) }}
   {{ end }}
+  {{ if isset .Params "show-date" }}
+    {{ $showDate = .Param "show-date" }}
+  {{ end }}
+  {{ $showItemDates := .Param "show-item-dates" }}
 
   {{ $subtitle := .Param "subhed" | default .Description }}
 
@@ -17,7 +21,7 @@
   {{ $pages := $p.Pages }}
   {{ if .Param "reverse-cron" }}
     {{ $p = dict }}
-    {{ $pages = .Pages.ByDate }}
+    {{ $pages = .Pages.ByPublishDate.Reverse }}
   {{ end }}
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
@@ -54,7 +58,8 @@
           {{ range $page := $pages }}
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
-                {{ partial "tile/list.html" $page }}
+                {{ $props :=  dict "Page" $page.Page "showDate" $showItemDates }}
+                {{ partial "tile/list.html" $props }}
               </div>
             </div>
           {{ end }}

@@ -1,13 +1,20 @@
-{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+{{ $page := .Page }}
+{{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
 
 <article>
-  <h3
-    class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-  >{{ $params.published | default $params.kicker | default "News" }}</h3>
+  {{ if .showDate }}
+    <h3
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+    >{{ $params.published | default $params.kicker | default "News" }}</h3>
+  {{ else }}
+    <h3
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+    >{{ $params.kicker | default "News" }}</h3>
+  {{ end }}
 
-  {{ $name := .Page.Param "image" }}
-  {{ $credit := .Page.Param "image-credit" }}
-  {{ $description := .Page.Param "image-description" }}
+  {{ $name := $page.Param "image" }}
+  {{ $credit := $page.Param "image-credit" }}
+  {{ $description := $page.Param "image-description" }}
   {{ $imgOpts := dict
     "filename" $name
     "credit" $credit
@@ -25,7 +32,7 @@
       href="{{ $params.link }}"
       data-ga-category="hed"
     >
-      {{ .LinkTitle }}
+      {{ $page.LinkTitle }}
     </a>
   </h2>
   {{ if $params.byline }}
