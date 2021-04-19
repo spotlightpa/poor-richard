@@ -8,19 +8,19 @@ weight = 1
 name = "Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
+weight = 2
+
+[[main]]
+name = "Staff"
+pre = "is-uppercase"
+url = "/about/staff/"
 weight = 3
 
 [[main]]
 name = "Mission"
 pre = "is-uppercase"
 url = "/about/mission/"
-weight = 1
-
-[[main]]
-name = "Staff"
-pre = "is-uppercase"
-url = "/about/staff/"
-weight = 2
+weight = 4
 
 [[main]]
 name = "Send a tip"
