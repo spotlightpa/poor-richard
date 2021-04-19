@@ -1,14 +1,8 @@
 [[main]]
-name = "Our Mission"
 pre = "is-uppercase"
-url = "/about/mission/"
+name = "Investigations"
+url = "/series/"
 weight = 1
-
-[[main]]
-name = "Our Team"
-pre = "is-uppercase"
-url = "/about/staff/"
-weight = 2
 
 [[main]]
 name = "Newsletters"
@@ -17,10 +11,16 @@ url = "/newsletters/"
 weight = 3
 
 [[main]]
-name = "FAQ"
+name = "Mission"
 pre = "is-uppercase"
-url = "/about/faq/"
-weight = 4
+url = "/about/mission/"
+weight = 1
+
+[[main]]
+name = "Staff"
+pre = "is-uppercase"
+url = "/about/staff/"
+weight = 2
 
 [[main]]
 name = "Send a tip"
