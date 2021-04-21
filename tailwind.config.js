@@ -71,14 +71,9 @@ module.exports = {
     },
   },
   variants: {
-    boxShadow: [
-      "responsive",
-      "hover",
-      "focus",
-      "active",
-      "group-hover",
-      "group-focus",
-    ],
+    extend: {
+      boxShadow: ["active"],
+    },
   },
   plugins: [],
   future: {
