@@ -9,12 +9,11 @@
   x-init="init()"
   class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
   data-ga-category="inline:lightbox"
-  @key.escape="active = false"
 >
   <div
     x-cloak
     x-show="active"
-    class="fixed inset-0 opacity-75 bg-g-6 z-0 pointer-events-none"
+    class="fixed inset-0 opacity-75 bg-g-6 pointer-events-none"
     x-transition:enter="transition ease-out duration-500"
     x-transition:enter-start="opacity-0 transform translate-y-full"
     x-transition:enter-end="opacity-75"
@@ -24,7 +23,7 @@
   ></div>
   <div class="relative z-10">
     <a
-      class="flex flex-col rounded shadow bg-black"
+      class="flex flex-col rounded shadow bg-black overflow-hidden"
       @click.capture="active = false"
       @click.away="active = false"
       href="{{ $link }}"
