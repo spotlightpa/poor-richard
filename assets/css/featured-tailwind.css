@@ -14,10 +14,6 @@ html {
   padding-left: .25rem;
 }
 
-.monochrome {
-  filter: grayscale(1);
-}
-
 /*! purgecss start ignore */
 [x-cloak] {
   display: none;
