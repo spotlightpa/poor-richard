@@ -1,0 +1,44 @@
+{{ $text := .Get "text" | default `Spotlight PA provides essential journalism with support from readers like you. Help shine a light on injustice and hold the powerful to account by becoming a member now.` }}
+{{ $imageURL := .Get "image-url" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $link := .Get "link" | default "/donate/" }}
+
+<aside
+  x-data="spl.lightbox()"
+  x-init="init()"
+  class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
+  data-ga-category="inline:lightbox"
+  @key.escape="active = false"
+>
+  <div
+    x-cloak
+    x-show="active"
+    class="fixed inset-0 opacity-75 bg-g-6 z-0 pointer-events-none"
+    x-transition:enter="transition ease-out duration-500"
+    x-transition:enter-start="opacity-0 transform translate-y-full"
+    x-transition:enter-end="opacity-75"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-75"
+    x-transition:leave-end="opacity-0 transform -translate-y-full"
+  ></div>
+  <div class="relative z-10">
+    <a
+      class="flex flex-col rounded shadow bg-black"
+      @click.capture="active = false"
+      @click.away="active = false"
+      href="{{ $link }}"
+    >
+      <img
+        class="block self-center max-w-full h-auto"
+        src="{{ $imageURL }}"
+        alt="{{ $text }}"
+        {{ with $width }}
+          width="{{.}}"
+          style="width: {{.}}"
+        {{end}}
+        {{ with $height }}height="{{.}}"{{end}}
+      >
+    </a>
+  </div>
+</aside>

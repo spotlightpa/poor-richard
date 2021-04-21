@@ -5,8 +5,9 @@ import emailPreferences from "../enhancements/email-preferences.js";
 import embedList from "../enhancements/embed-list.js";
 import feed from "../enhancements/feed.js";
 import funnelStatus from "../enhancements/funnel-status.js";
-import intersector from "../enhancements/intersector.js";
 import imageRotator from "../enhancements/image-rotator.js";
+import intersector from "../enhancements/intersector.js";
+import lightbox from "../enhancements/lightbox.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
 import readmore from "../enhancements/read-more.js";
@@ -21,8 +22,9 @@ window.spl = Object.assign({}, window.spl, {
   embedList,
   feed,
   funnelStatus,
-  intersector,
   imageRotator,
+  intersector,
+  lightbox,
   modal,
   mostPopular,
   readmore,
