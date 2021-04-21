@@ -12,7 +12,7 @@
   {{ if $headshot }}
     {{ $imgShrunk := $headshot.Fill "256x256" }}
     <img
-      class="float-left w-16 h-16 mr-4 monochrome rounded-full"
+      class="float-left mr-4 w-16 h-16 rounded-full filter grayscale"
       src="{{ $imgShrunk.RelPermalink }}"
       alt="{{ $name }}"
     >
