@@ -59,5 +59,18 @@ export default function slider() {
       let last = this.slideEls.length - 1;
       return this.currentSlide === last;
     },
+
+    handleSpace(ev) {
+      let direction = ev.shiftKey ? -1 : 1;
+      let el = this.slideEls[this.currentSlide + direction];
+      if (!el) {
+        document.activeElement.blur();
+        return;
+      }
+      this.center(el);
+      buildAndSend(this.$el, {
+        eventAction: `slider:space`,
+      });
+    },
   };
 }
