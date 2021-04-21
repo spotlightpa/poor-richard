@@ -1,19 +1,21 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
   class="
-    bg-black text-white rounded font-sans text-center
-    my-12 p-8
-    md:px-12
-    lg:-mx-24
+    my-12
+    lg:-mx-24 p-8 md:px-12
+    rounded shadow bg-black text-white text-center font-sans
   "
-  data-ga-form='newsletters:investigator'
+  x-data="{ active: false }"
+  @focusin="active = true"
+  data-ga-form='newsletters:multi'
   data-ga-category="tout"
   action='{{ .Page.Param "investigator-action" }}'
   method="post"
   target="_blank"
 >
-  {{ partial "newsletter/investigator-hidden.html" . }}
-  <h6 class="text-sm text-yellow uppercase font-bold tracking-widest">Newsletter</h6>
+  {{ partial "newsletter/hidden-input.html" . }}
+  <h6 class="text-sm bg-clip-text text-transparent bg-gradient-to-r from-orange via-yellow to-white uppercase font-bold tracking-widest">Sign Up For Our Newsletters</h6>
+
   <p class="mt-4 leading-tight">
     Get every Spotlight PA story and the best investigative journalism from across Pa.
   </p>
@@ -41,6 +43,39 @@
         class="w-full bg-yellow px-8 py-2 uppercase text-black font-bold rounded border-2 border-yellow-darker tracking-widest focus:outline-none focus:ring-2 ring-yellow-darker"
         type="submit"
       >Sign Up</button>
+    </p>
+  </div>
+  <div
+    x-show="active"
+    x-transition:enter="transition-opacity ease-out duration-300"
+    x-transition:enter-start="opacity-25"
+    x-cloak
+  >
+    <p class="mt-4 text-left">
+      <label>
+        <input
+          type="checkbox"
+          name="papost"
+          value="1"
+          checked
+          data-ga-button
+          data-ga-action="toggle-newsletter:papost"
+        >
+        <strong>Daily</strong>: Top news every weekday morning, plus a daily puzzle.
+      </label>
+    </p>
+    <p class="mt-2 text-left">
+      <label>
+        <input
+          type="checkbox"
+          name="investigator"
+          value="1"
+          checked
+          data-ga-button
+          data-ga-action="toggle-newsletter:investigator"
+        >
+        <strong>Weekly</strong>: Best accountability journalism every Thursday, plus a weekly riddle.
+      </label>
     </p>
   </div>
 </form>
