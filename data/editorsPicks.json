@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-04-21-SPLCLERGY22.md"
+    "content/news/2021-04-22-SPLCOVAX22.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-22-SPLRELIEF23.md",
-    "content/news/2021-02-10-SPLSTATE11.md"
+    "content/news/2021-04-08-SPLPRISONVAX08.md",
+    "content/news/2021-04-14-SPLPAUSE14.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-04-21-SPLCLERGY22.md",
     "content/news/2021-04-20-SPLELEC20.md",
-    "content/news/2021-04-19-SPLBALLOT19.md",
     "content/news/2021-04-16-SPLSUIT16.md"
   ],
   "sidebarPicks": [
