@@ -1,0 +1,21 @@
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" | int }}
+{{ $height := .Get "height" | int }}
+{{ $pb := div (mul 100.0 $height) $width }}
+
+<aside
+  class="mt-12 mx-auto"
+>
+  <div
+    class="relative w-full h-0"
+    style='padding-bottom: {{ $pb | printf "%0.3f" }}%;'
+  >
+    <iframe
+      class="absolute inset-0 w-full h-full"
+      src='{{ $src }}'
+      frameborder='0'
+      scrolling='no'
+      sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
+    ></iframe>
+  </div>
+</aside>
