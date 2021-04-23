@@ -720,6 +720,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * David Imgrund
 * Annette E. Inker
 * Institute for Nonprofit News
+* Vida Irani
 * Casey & Kristen Irvine
 * Kristen Irvine
 * Evelyn Ishmael
@@ -817,6 +818,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Bevan Kohan
 * Gerald Kolpan
 * Howard Kolus
+* Hsiao-Ling Koo
 * Andrea Koppenhofer
 * Judy Kornfeld
 * Nina B. Korsh
@@ -870,6 +872,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * B. Lauridsen & G. Harke
 * Lora Lavin
 * Cindy Lawn
+* Elena Lawrence
 * Harriet Lawrence
 * Charles Leach
 * Patricia Leach
@@ -887,6 +890,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Sandra Lewis
 * Edward Lewkowicz
 * Janet Lind
+* Alice Linder
 * Kathleen Lindman
 * Rick Linsk
 * Stephen J. Lipnichan
@@ -929,9 +933,11 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Edward Mahoney
 * Barbara Makar
 * Rose Mary Maley
+* Jack Malinowski
 * Kris Mamula
 * Robert L. Maney
 * Ro Manmiller
+* Robin L. Mann
 * Joseph Manning
 * Fred R. Manthai
 * Francine Marie
@@ -939,6 +945,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Lynn Marks & Clifford Pearlman
 * David E. Marschka
 * Dan Marseglia
+* Daniel Martin
 * Leslie Martin
 * Martina Martin
 * Meg Martin & Peter Cox
@@ -950,6 +957,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Michael Matesic
 * S. Maupin
 * Joseph Mazur
+* Kathryn McAuley
 * Donald P. McCain Jr.
 * Donna & Jack McCallum
 * Erin McCann
@@ -964,8 +972,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Tom McCool
 * Joan McCormack
 * Nina McCullough
+* Teresa Irvin McCurdy
 * Tim McDaniel
 * Lisa McDaniels
+* Daniel McDevitt
 * Mary Ann McDonald
 * Paul McDonough
 * Kevin McElroy
@@ -973,6 +983,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Elizabeth A. McGee
 * Seth McGeorge
 * Claudia C. McGill
+* Erin McGinley
 * Tom McGlinchy
 * Adam McGlynn
 * Michele McGovern
