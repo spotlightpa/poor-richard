@@ -2,7 +2,6 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $imgClass := .Get "class" | htmlUnescape | default "block mx-auto group-focus:shadow-md transition-shadow w-full h-auto rounded overflow-hidden bg-g-4" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-g-8 text-xs xl:text-sm" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
@@ -26,27 +25,33 @@
   data-ga-button
   data-ga-action="slider:focus"
 >
-  <picture>
-    {{ if in (string $srcset) ".jpeg" }}
-      <source
-        type="image/webp"
-        srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-      >
-    {{ end }}
-    <img
-      class="{{ $imgClass }}"
-      alt="{{ $description }}"
-      title="{{ $description }}"
-      src="{{ $imgSmallSrc }}"
-      srcset="{{ $srcset }}"
-      width="16"
-      height="9"
-      draggable="false"
-      decode="async"
-      loading="lazy"
-      :loading="loadingMode"
+  <div class="relative w-full h-0 pb-16x9">
+    <picture class="
+        absolute block inset-0
+        rounded overflow-hidden
+        group-focus:shadow-md transition-shadow duration-300
+        bg-g-4
+      "
     >
-  </picture>
+      {{ if in (string $srcset) ".jpeg" }}
+        <source
+          type="image/webp"
+          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+        >
+      {{ end }}
+      <img
+        class="w-full h-auto"
+        alt="{{ $description }}"
+        title="{{ $description }}"
+        src="{{ $imgSmallSrc }}"
+        srcset="{{ $srcset }}"
+        draggable="false"
+        decode="async"
+        loading="lazy"
+        :loading="loadingMode"
+      >
+    </picture>
+  </div>
   <figcaption class="{{ $capClass }}">
     {{ $caption }} {{ $credit }}
   </figcaption>

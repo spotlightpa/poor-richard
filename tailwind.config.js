@@ -72,7 +72,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      boxShadow: ["active"],
+      boxShadow: ["active", "group-focus"],
     },
   },
   plugins: [],
