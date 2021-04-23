@@ -140,6 +140,28 @@ html {
   scroll-snap-align: center;
 }
 
+.custom-scrollbar {
+  scrollbar-color: transparent transparent;
+  scroll-behavior: smooth;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: #f5f5f5 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  @apply h-2 bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-transparent;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  @apply bg-g-3;
+}
+
+
 @tailwind components;
 
 @tailwind utilities;
