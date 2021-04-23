@@ -2,8 +2,7 @@ import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function lightbox() {
   return {
-    active: false,
-    hasShown: false,
+    state: "initial",
     intersectThreshold: 0.75,
 
     init() {
@@ -17,22 +16,39 @@ export default function lightbox() {
         this.callback(entry);
       }, ioOpts);
       o.observe(this.$el);
-      this.$watch("active", (val) => {
-        if (this.hasShown && !val) {
-          o.disconnect();
-        }
+      this.$watch("state", (val) => {
+        buildAndSend(this.$el, {
+          eventAction: `lightbox:${val}`,
+        });
       });
     },
 
     callback(entry) {
-      this.active = entry.intersectionRatio > this.intersectThreshold;
-      if (this.active) {
-        this.hasShown = true;
+      let showing = entry.intersectionRatio > this.intersectThreshold;
+      switch (this.state) {
+        case "initial":
+        case "passed":
+          if (showing) {
+            this.state = "active";
+          }
+          break;
+        case "active":
+        case "dismissed":
+          if (!showing) {
+            this.state = "passed";
+          }
+          break;
       }
-      let status = this.active ? "show" : "hide";
-      buildAndSend(this.$el, {
-        eventAction: `lightbox:toggle:${status}`,
-      });
+    },
+
+    get active() {
+      return this.state === "active";
+    },
+
+    dismiss() {
+      if (this.active) {
+        this.state = "dismissed";
+      }
     },
   };
 }
