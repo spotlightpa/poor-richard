@@ -19,7 +19,7 @@
 >
   <button
     type="button"
-    class="absolute top-0 right-0 h-10 w-10 -mt-2 border-beige border-2 rounded-full bg-yellow hover:bg-black text-white hover:text-yellow flex justify-center focus:outline-none focus:ring-2 ring-yellow"
+    class="absolute top-0 right-0 h-10 w-10 -mt-2 mr-1 border-beige border-2 rounded-full bg-yellow hover:bg-black text-white hover:text-yellow flex justify-center focus:outline-none focus:ring-2 ring-yellow"
     aria-label="close"
     @click="close"
     x-ref="close"
@@ -29,17 +29,20 @@
     </svg>
   </button>
   <a
-    class="block m-2 mr-4 rounded p-4 bg-black text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
+    class="block my-2 mx-4 rounded p-4 bg-black text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
     @click.capture="close()"
     @click.away="close()"
     href="/donate/"
   >
     {{ if $url }}
       <img
-        class="block w-full h-auto"
+        class="block mx-auto max-w-full h-auto"
         src="{{ $url }}"
         alt="{{ $flavor }}"
-        {{ with $width }}width="{{.}}"{{end}}
+        {{ with $width }}
+          width="{{.}}"
+          style="width: {{.}}px;"
+        {{end}}
         {{ with $height }}height="{{.}}"{{end}}
       >
     {{ else }}
