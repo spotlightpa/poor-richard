@@ -1603,6 +1603,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Steve Townsend
 * Bill Travers
 * Carol Tremato
+* Elizabeth Trezona
+* Thomas Trio
 * Adam Trott
 * Debbie Trudeau
 * Walter Tsou
@@ -1632,6 +1634,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Joseph C. Vignola
 * Justin Villere
 * Caitlin Virtue
+* Steven Vitale
 * Cecilia Viti
 * Fred Vodde
 * Charles Vogt
@@ -1645,6 +1648,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Hannah Walsh
 * Joan Walsh
 * Mike Walsh
+* Curt Walter
 * Robin Walter
 * Kay Walters
 * Theodore Wampole
@@ -1675,12 +1679,16 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * David Wersan
 * Judy Wertheimer
 * Judy Wertheimer & Michael Boninger
+* Diane Wertman
 * Janelle Wertzberger
 * E. Wessel
+* Jan Wessell
+* Jean Weston
 * Richard Wexelblat
 * Thomas Whalen
 * Lou Wheeland
 * L. Whelan
+* Margaret Whelan
 * Sheryl White
 * Rhonda White
 * Suzanne P. White
@@ -1691,11 +1699,14 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Kaye Will
 * William Penn Foundation Matching Gifts Program
 * Antoine Williams
+* Art Williams
 * Carol Williams
 * Chris A. Williams
 * Evan Williams
 * Donna Williams 
 * Jack Williams
+* James C. Wright
+* Janet Williams
 * Richard Williams
 * Sabrina Williams
 * Joan Williamson
@@ -1742,6 +1753,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Sherley Young
 * Anne Zacharias
 * Christina Zarek
+* Bonnie Zarlenga
 * Deborah Zateeny
 * Leonard Zawistowski Jr.
 * Susan Zeelander
@@ -1751,6 +1763,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Liz Zimmerman
 * Michelle Zimmerman
 * Rebekah Zimmerman
+* Joe Zlomek
 * Richard Zook
 * Gerald Zubkoff 
 * Anne M. Zug
