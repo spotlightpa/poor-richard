@@ -1363,9 +1363,12 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Mark Rutherford
 * Gary Ryan
 * James Ryan
+* Dr. Michael Ryan & Dr. Linda Ryan
 * Paul F. Sable & Eleanor M. Sable
 * Jyotin Sachdev
 * Benedict X. Saia
+* Luanne Salaga
+* Robert Saline
 * David and Ben Salkin
 * Merle Salkin
 * Ann Salmon
@@ -1374,6 +1377,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Patrick Sanaghan
 * Nicholas Sanders
 * John Sandy
+* Steve Santarsiero
 * C. Sarnoski
 * Robert & Judith Schachner
 * Alletta Schadler 
@@ -1384,7 +1388,9 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Laurie Scheid
 * Gary & Dode Scheimer
 * Christine Schiavo
+* Joyce Schlag
 * Leslie Schlessinger
+* Tom Schmalz
 * Eileen Schmidt
 * Paul Schmitt
 * Peter Schnabel
@@ -1394,8 +1400,11 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Douglas Schofield
 * Paul Schraeder
 * Susan Schrand
+* Dolores Schroder
+* Richard Schuetz
 * Kaylene J. Schultz
 * Jennifer Schwartz
+* Judy Sciaky
 * Barbara Scott
 * Gail Scott
 * Robert & Mary Ellen Scott
@@ -1405,6 +1414,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * John & Barbara Seefeldt
 * Mark Segal
 * Anthony J. Seigafuse
+* Dotti Seitz
 * Helen Seitz
 * Elaine Selan
 * Paul & Kathleen Selbst
@@ -1456,7 +1466,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Josh Singer
 * Vaswati Sinha
 * Emily Skopov
+* Ed Skros
+* Soon Slayman
 * Ellen L. Sleeter
+* Roy Sletson
 * Richard Small
 * Scott Smedley
 * Diana Smeltzer
@@ -1476,13 +1489,16 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Tieshka Smith
 * Lucas Smolcic Larson
 * Judith E. Smullen
+* David Snyder
 * Anita & Mike Soar
 * Marie Sonnet
 * Mariana Sorensen
 * Feryl Souder
 * Susan Spaziani & John Williamson
+* Shannon Spear
 * Doreen Speidel
 * Michael Sperger
+* Christine Sperling
 * Lorraine Spikol
 * Anthony Spisto
 * Edward Spitzer
@@ -1520,6 +1536,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Sandra Strauss
 * Vincent D. Stravino
 * Betram Strieb
+* Forrest Stuart
 * John Stuart
 * Rebecca & Collin Stuart
 * Thomas Suddes
@@ -1530,11 +1547,13 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Cary Scott Summers
 * Barbara Sunderlin
 * Andrew Sutherland
+* Doug Swanson
 * Marjorie Swart
 * Burnetta Swartz
 * William Sweeney
 * Jeffrey Sweet
 * Mary Sweet
+* Laurie Sweigard
 * Benjamin Swofford
 * Diane Sykes
 * Marian Szmyd
@@ -1550,7 +1569,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Barbara Sieck Taylor
 * John Taylor
 * Randy & Marcie Taylor
+* Russ Taylor
+* Bruce Taylor
 * Paul Teese
+* Amanda Tekely
 * Jeremy Tennenbaum
 * Jocelyn Tenney
 * Freda Tepfer
