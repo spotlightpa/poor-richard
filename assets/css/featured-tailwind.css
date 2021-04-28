@@ -1,7 +1,6 @@
 @tailwind base;
 
 html {
-  @apply bg-beige;
   font-size: 17px;
 }
 
