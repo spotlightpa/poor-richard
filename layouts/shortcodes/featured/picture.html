@@ -4,7 +4,6 @@
 {{ $caption := .Get "caption" | htmlUnescape }}
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
-{{ $imgClass := .Get "class" | htmlUnescape | default "bg-g-4 mx-auto block" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
 
 
@@ -22,22 +21,26 @@
   class="{{ $figClass }}"
   data-ga-category="inline:image"
 >
-  <picture>
-    {{ if in (string $srcset) ".jpeg" }}
-      <source
-        type="image/webp"
-        srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+  <div class="relative w-full h-0 pb-16x9">
+    <picture class="absolute block inset-0 rounded shadow overflow-hidden bg-g-4">
+      {{ if in (string $srcset) ".jpeg" }}
+        <source
+          type="image/webp"
+          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+        >
+      {{ end }}
+      <img
+        class="w-full h-full"
+        alt="{{ $description }}"
+        title="{{ $description }}"
+        src="{{ $imgSmallSrc }}"
+        srcset="{{ $srcset }}"
+        loading="lazy"
+        width="16"
+        height="9"
       >
-    {{ end }}
-    <img
-      class="{{ $imgClass }}"
-      alt="{{ $description }}"
-      title="{{ $description }}"
-      src="{{ $imgSmallSrc }}"
-      srcset="{{ $srcset }}"
-      loading="lazy"
-    >
-  </picture>
+    </picture>
+  </div>
   <figcaption class="{{ $capClass }}">
     {{ $caption }} {{ $credit }}
   </figcaption>
