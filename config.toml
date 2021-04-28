@@ -115,6 +115,10 @@ includeNewer = true
   weight = 150
 
 [[related.indices]]
+  name = "date"
+  weight = 150
+
+[[related.indices]]
   name  = "kicker"
   weight = 100
 
