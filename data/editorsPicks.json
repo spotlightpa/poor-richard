@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-04-27-SPLSUIT28.md"
+    "content/news/2021-04-28-SPLTRAFFIC18.md",
+    "content/news/2021-01-12-SPLPSP13.md"
   ],
   "subfeatures": [
-    "content/news/2021-04-26-SPLLOSE27.md",
-    "content/news/2021-04-06-SPLFIFTH06.md"
+    "content/news/2021-02-17-SPLPSP17.md",
+    "content/news/2021-01-12-SPLPSP13.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-04-27-SPLSUIT28.md",
     "content/news/2021-04-26-SPLPRIMARYEVENT27.md",
     "content/news/2021-04-26-SPLMARINER26.md",
     "content/news/2021-04-22-SPLCOVAX22.md"
