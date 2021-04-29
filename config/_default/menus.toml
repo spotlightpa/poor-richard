@@ -35,71 +35,65 @@ url = "/"
 weight = 1
 
 [[footer]]
-name = "Supporters"
-pre = "is-uppercase"
-url = "/support/"
-weight = 2
-
-[[footer]]
 name = "Contact"
 pre = "is-uppercase"
 url = "/contact/"
-weight = 3
+weight = 2
 
 [[footer]]
 name = "Tips"
 pre = "is-uppercase"
 url = "/tips/"
-weight = 4
+weight = 3
 
 [[footer]]
 name = "Press releases"
 pre = "is-uppercase"
 url = "/press-releases/"
-weight = 5
+weight = 4
 
 [[footer]]
 name = "Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "News Archive"
 pre = "is-uppercase"
 url = "/news/"
-weight = 7
+weight = 6
 
 [[footer]]
 name = "Search"
 pre = "is-uppercase"
 post = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:search:open')\""
 url = "/search/"
-weight = 8
+weight = 7
 
 [[footer]]
 name = "Special Projects & Investigations"
 pre = "is-uppercase"
 url = "/series/"
-weight = 9
+weight = 8
 
 [[footer]]
 name = "Topic Archive"
 pre = "is-uppercase"
 url = "/topics/"
-weight = 10
+weight = 9
 
 [[footer]]
 name = "Events"
 pre = "is-uppercase"
 url = "/events/"
-weight = 11
+weight = 10
 
 [[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 12
+weight = 11
 
 [[about]]
 name = "About Us"
@@ -114,34 +108,40 @@ url = "/about/mission/"
 weight = 2
 
 [[about]]
+name = "Supporters"
+pre = "is-uppercase"
+url = "/support/"
+weight = 3
+
+[[about]]
 name = "Partners"
 pre = "is-uppercase"
 url = "/about/partners/"
-weight = 3
+weight = 4
 
 [[about]]
 name = "Staff"
 pre = "is-uppercase"
 url = "/about/staff/"
-weight = 4
+weight = 5
 
 [[about]]
 name = "Diversity"
 pre = "is-uppercase"
 url = "/about/diversity/"
-weight = 5
+weight = 6
 
 [[about]]
 name = "FAQ"
 pre = "is-uppercase"
 url = "/about/faq/"
-weight = 6
+weight = 7
 
 [[about]]
 name = "Jobs"
 pre = "is-uppercase"
 url = "/about/jobs/"
-weight = 7
+weight = 8
 
 [[social]]
 name = "Facebook"
