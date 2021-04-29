@@ -1,251 +1,209 @@
 [[partners]]
 name = "Philadelphia Inquirer"
-slug = "inquirer"
 url = "https://www.inquirer.com"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7d/inquirer.svg"
 
 [[partners]]
 name = "PennLive"
-slug = "pennlive"
 url = "https://www.pennlive.com"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7f/pennlive.svg"
 
 [[partners]]
 name = "TribLIVE"
-slug = "triblive"
 url = "https://triblive.com"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7g/triblive.svg"
 
 [[partners]]
 name = "WITF"
-slug = "witf"
 url = "https://www.witf.org"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7g/witf.svg"
 
 [[partners]]
 name = "The Caucus"
-slug = "caucus"
 url = "https://caucuspa.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx72/caucus.png"
 
 [[partners]]
 name = "Centre Daily Times"
-slug = "centre-daily-times"
 url = "https://www.centredaily.com"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7d/centre-daily-times.svg"
 
 [[partners]]
 name = "The Citizens’ Voice"
-slug = "citizens-voice"
 url = "https://www.citizensvoice.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx73/citizens-voice.png"
 
 [[partners]]
 name = "Delaware Valley News"
-slug = "delaware-valley-news"
 url = "https://delawarevalleynews.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx74/delaware-valley-news.png"
 
 [[partners]]
 name = "Bucks County Courier Times"
-slug = "courier-times"
 url = "https://www.buckscountycouriertimes.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx73/courier-times.png"
 
 [[partners]]
 name = "Daily American"
-slug = "daily-american"
 url = "https://www.dailyamerican.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx74/daily-american.png"
 
 [[partners]]
 name = "The Daily Item"
-slug = "daily-item"
 url = "https://www.dailyitem.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6w/daily-item.jpeg"
 
 [[partners]]
 name = "The Daily Review"
-slug = "daily-review"
 url = "https://www.thedailyreview.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6y/daily-review.jpeg"
 
 [[partners]]
 name = "Erie Times-News"
-slug = "erie-times-news"
 url = "https://www.goerie.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx75/erie-times-news.png"
 
 [[partners]]
 name = "Explore Clarion"
-slug = "explore-clarion"
 url = "http://www.exploreclarion.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6y/explore-clarion.jpeg"
 
 [[partners]]
 name = "Explore 814"
-slug = "explore-814"
 url = "http://explore814.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx75/explore-814.png"
 
 [[partners]]
 name = "Explore Jefferson"
-slug = "explore-jefferson"
 url = "https://www.explorejeffersonpa.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx75/explore-jefferson.png"
 
 [[partners]]
 name = "Explore Venango"
-slug = "explore-venango"
 url = "http://explorevenango.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx76/explore-venango.png"
 
 [[partners]]
 name = "Gazette 2.0"
-slug = "gazette"
 url = "https://www.gazette20.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx76/gazette.png"
 
 [[partners]]
 name = "Gettysburg Times"
-slug = "gettysburg-times"
 url = "http://www.gettysburgtimes.com"
-logotype = "png"
-
-[[partners]]
-name = "The Sharon Herald"
-slug = "sharon-herald"
-url = "https://www.sharonherald.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/gettysburg-times.png"
 
 [[partners]]
 name = "The Intelligencer"
-slug = "intelligencer"
 url = "https://www.theintell.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/intelligencer.png"
 
 [[partners]]
 name = "LebTown"
-slug = "lebtown"
 url = "https://www.lebtown.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/lebtown.png"
 
 [[partners]]
 name = "Levittown Now.com"
-slug = "levittown-now"
 url = "https://levittownnow.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx78/levittown-now.png"
 
 [[partners]]
 name = "LNP Media Group"
-slug = "lnp"
 url = "https://lnpmediagroup.com"
-logotype = "svg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7e/lnp.svg"
 
 [[partners]]
 name = "The Meadville Tribune"
-slug = "meadville-tribune"
 url = "https://www.meadvilletribune.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx79/meadville-tribune.png"
 
 [[partners]]
 name = "The Mon Valley Independent"
-slug = "mon-valley-independent"
 url = "https://monvalleyindependent.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx79/mon-valley-independent.png"
 
 [[partners]]
 name = "The Morning Call"
-slug = "morning-call"
 url = "https://www.mcall.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6y/morning-call.jpeg"
 
 [[partners]]
 name = "New Castle News"
-slug = "new-castle-news"
 url = "https://www.ncnewsonline.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7a/new-castle-news.png"
 
 [[partners]]
 name = "Newtown, PA Now.com"
-slug = "newtown-now"
 url = "http://newtownpanow.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7a/newtown-now.png"
 
 [[partners]]
 name = "North Penn Now"
-slug = "npn"
 url = "http://northpennnow.com/"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7a/npn.png"
 
 [[partners]]
 name = "Observer-Reporter"
-slug = "observer-reporter"
 url = "https://observer-reporter.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/observer-reporter.png"
 
 [[partners]]
 name = "Postindustrial"
-slug = "postindustrial"
 url = "https://postindustrial.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/postindustrial.png"
 
 [[partners]]
 name = "Republican Herald"
-slug = "republican-herald"
 url = "https://republicanherald.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6z/republican-herald.jpeg"
 
 [[partners]]
 name = "Saucon Source"
-slug = "saucon-source"
 url = "https://sauconsource.com/"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6z/saucon-source.jpeg"
+
+[[partners]]
+name = "The Sharon Herald"
+url = "https://www.sharonherald.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx70/sharon-herald.jpeg"
 
 [[partners]]
 name = "Standard Speaker"
-slug = "standard-speaker"
 url = "https://www.standardspeaker.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx70/standard-speaker.jpeg"
 
 [[partners]]
 name = "Times News"
-slug = "times-news-online"
 url = "https://www.tnonline.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/times-news-online.png"
 
 [[partners]]
 name = "The Times-Tribune"
-slug = "times-tribune"
 url = "https://www.thetimes-tribune.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx71/times-tribune.jpeg"
 
 [[partners]]
 name = "The Tribune-Democrat"
-slug = "tribune-democrat"
 url = "http://tribune-democrat.com"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7c/tribune-democrat.png"
 
 [[partners]]
 name = "WESA"
-slug = "wesa"
 url = "https://www.wesa.fm/"
-logotype = "png"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7c/wesa.png"
 
 [[partners]]
 name = "WHYY"
-slug = "whyy"
 url = "http://whyy.org"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx71/whyy.jpeg"
 
 [[partners]]
 name = "York Dispatch"
-slug = "york-dispatch"
 url = "https://www.yorkdispatch.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx72/york-dispatch.jpeg"
 
 [[partners]]
 name = "Your Daily Local"
-slug = "yourdailylocal"
 url = "https://yourdailylocal.com"
-logotype = "jpeg"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx72/yourdailylocal.jpeg"

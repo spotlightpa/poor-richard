@@ -1,10 +1,18 @@
 <div class="columns is-multiline is-centered" data-ga-category="inline">
   {{ range .Site.Data.partners.partners }}
-    {{ $partner := newScratch }}
-    {{ $partner.Set "url" .url }}
-    {{ $partner.Set "name" .name }}
-    {{ $partner.Set "logotype" .logotype }}
-    {{ printf "img/partners/%s.%s" .slug .logotype | $partner.Set "logo" }}
-    {{ partial "component/logo-column.html" $partner }}
+    <div class="column is-narrow has-text-centered" data-ga-category="logos">
+      <a
+        href="{{ .url }}"
+        title="{{ .name }}"
+      >
+        <span class="logo-column">
+          <img
+            src='{{ index . "logo-url" }}'
+            alt="Logo for {{ .name }}"
+            style="width: auto; height: 64px;"
+          >
+        </span>
+      </a>
+    </div>
   {{ end }}
 </div>
