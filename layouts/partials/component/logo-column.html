@@ -1,7 +1,7 @@
-{{ $logo := resources.Get (.Get "logo") }}
-{{ $logotype := .Get "logotype" }}
-{{ $name := .Get "name" }}
-{{ $url := .Get "url" }}
+{{ $logo := resources.Get .logo }}
+{{ $logotype := .logotype }}
+{{ $name := .name }}
+{{ $url := .url }}
 <div class="column is-narrow has-text-centered" data-ga-category="logos">
   <a
     href="{{ $url }}"
