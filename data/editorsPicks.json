@@ -1,6 +1,5 @@
 {
   "featuredStories": [
-    "content/news/2021-04-29-SPLDDAP02.md",
     "content/news/2021-04-30-SPLRECOVER01.md"
   ],
   "subfeatures": [
@@ -10,8 +9,8 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-04-29-SPLDDAP02.md",
     "content/news/2021-04-28-SPLTRAFFIC18.md",
-    "content/news/2021-04-27-SPLSUIT28.md",
     "content/news/2021-04-26-SPLMARINER26.md"
   ],
   "sidebarPicks": [
