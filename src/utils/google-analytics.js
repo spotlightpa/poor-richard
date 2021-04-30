@@ -67,6 +67,24 @@ export function buildClick(ev) {
     gaEvent.eventAction = ev.currentTarget.href;
   }
   gaEvent.transport = "beacon";
+  return normalizeEvent(gaEvent);
+}
+
+function normalizeEvent(gaEvent) {
+  let { eventAction: action } = gaEvent;
+  if (action) {
+    action = action.replace(
+      /^(https?:\/\/(www\.)?spotlightpa\.org)/,
+      "https://www.spotlightpa.org"
+    );
+    if (action.match(/checkout\.fundjournalism\.org\/memberform/)) {
+      action = "https://www.spotlightpa.org/donate/";
+    }
+    if (action.match(/^https:\/\/www\.spotlightpa\.org.*[^/]$/)) {
+      action = action + "/";
+    }
+    gaEvent.eventAction = action;
+  }
   return gaEvent;
 }
 
