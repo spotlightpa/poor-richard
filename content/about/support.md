@@ -238,6 +238,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Charles Cairns
 * Julieta Calmon
 * James Calpas
+* Ellen & James Campbell
 * Andrew Candor
 * Elinor Cantor
 * Roberta Capcara
@@ -263,7 +264,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Kathy Carter
 * Linda L. Casale
 * Ashleigh Graf Casassa
+* Joanna Castellon
+* Elizabeth Cates
 * Ben & Laura Cattell Noll
+* Patricia Cavallaro
 * Jack Cavanaugh
 * Edward Cawley
 * Larry Ceisler
@@ -276,6 +280,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Kim Chappell
 * Kathleen Charlton
 * Jill Cherpack
+* Nancy Chiswick
 * Dianne Chomko
 * Linda & Roy Christman
 * Patrick Christmas
@@ -284,6 +289,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Beverly Cigler
 * Justine Cimarolli
 * Edward Claghorn
+* Patricia Clancy
 * Jordan Clark
 * Kathleen Clark
 * Rebecca Clark
@@ -293,13 +299,16 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Francisco Cleaves
 * Constance B. Clery
 * Ron Clever
+* Chuck Clifton
 * Stephen Cline
 * William Cluck
 * Jennifer Coffey
 * Jeff Cogshall
+* Catherine Cohan
 * Aaron Cohen
 * Mark Cohen
 * Milton Cohen
+* Taya Cohen
 * Carla Colangelo
 * Jeffrey Cole
 * Joan Cole
@@ -320,9 +329,12 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Beth Conry
 * John & Joy Burt Conti
 * Donna Thiel Cook
+* Dale Cooke
+* Jeffrey Cooper
 * Rick Cooper
 * Ira Cooperman
 * David Copeland 
+* Becky Corbin
 * John M. Corcoran Esq.
 * J. Cordingley
 * John Corey
@@ -337,14 +349,18 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Ronald Cowell
 * Emily Cox
 * Chris Coyle
+* Karen Crabtree
 * Tracy Craig
 * C. Craige
 * Keith Craley
 * Brittany Crampsie
 * Virginia Crawford
+* Vincent Crespi
+* Ann Criss
 * Lauren Cristella
 * Barbara Criswell
 * Audrey Croley
+* Zeta Cross
 * Mary Jo Crowley
 * Karen Crosby
 * Thomas Crown
@@ -355,11 +371,17 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Jennifer Cunningham
 * John Cunningham
 * Peggy & Mark Curchack
+* Mary Curran
+* Tom Current
 * Dennis Curtin
 * James Czyz
 * Carol Dague 
 * Amy D'Ancona
 * Sharon Dale
+* Francis X. Daley
+* Mary Jo Daley
+* Jacqueline Damian
+* Candace Dannaker
 * Joan Daniels
 * Ethel W. Darrohn
 * Carole Dascani
@@ -376,6 +398,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Will Dean
 * Charles Leo Deaner
 * Donald DeCary Sr.
+* Nancy Decker
 * Thomas Decker
 * Fred Dedrick
 * Charles DeFanti
@@ -383,6 +406,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Timothy DeFoor
 * Holly Deiaco-Smith
 * William DeKay
+* Raymond deLevie
 * Connie & Terry Dellmuth
 * Mike Del Vacchio
 * Fran DeMillion
@@ -390,12 +414,14 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * David DeNault
 * Tracey DePasquale 
 * Mary DePaul
+* Larry & Marilyn Deppen
 * Dara Deroiste
 * Al K. DeRoy, Ph.D., M.P.A.
 * Jean & Barry DeSantis
 * Michael Desmond
 * Ryan Deto
 * Jay S. Detwiler
+* Carole DeWall
 * Mark Devey
 * David R. DeVoe & Laura A. Lane
 * Thomas & Carole DeWall
@@ -408,9 +434,11 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * John Dillon
 * Carol DiMartile
 * Christine Dimov
+* Sherry Dinnen
 * Travis DiNicola
 * Michael DiNunzio
 * Deborah DiPlacido
+* Jill Diskin
 * Judy Dixon
 * Margaret Dobrinska
 * Steven Doerfler
@@ -423,11 +451,13 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Michael Donofrio
 * Richard Donofry
 * Lawrence Doperak
+* Catherine & John Dorko
 * William Double
 * Monica Dougherty
 * Paul Downs
 * Jack Doyle
 * Gorana Draguljic
+* Erica Dreabit
 * Stephen Drizos
 * Eugenia Drobit
 * Francis Drotar
