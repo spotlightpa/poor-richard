@@ -35,6 +35,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Douglas Aiken
 * John Aiken
 * Steven Albert
+* Etta & Patrick Albright
+* Brian Alderman
 * Paul Alessio
 * Casey Alvarez
 * Elizabeth Ann Allen
@@ -46,6 +48,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Lisa Altman
 * Gail Alu
 * George Aman
+* Sridhar Anandakrishnan
 * E. Anderson
 * Robert Anderson
 * Stephen J. Anderson
@@ -53,12 +56,12 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Taylor Andrews
 * Tom Anfuso
 * Ettore Angelo
-* Oscar Armas-Luy
-* Robert Arnold
-* Jeffery K. Ayers
 * Linda Arble
+* Oscar Armas-Luy
 * Paul Armor
 * Stephan Armstrong
+* Judith Arnoff
+* Robert Arnold
 * Bob Arrowsmith
 * Stephen Artman
 * Marilyn Ashbrook
@@ -71,21 +74,27 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * David Auel
 * Charles H. Ault
 * Sue Auman
+* Jeffery K. Ayers
 * Marie Azadian
 * Charlie Bacas
+* Ann Bacharach
 * J. Bader
 * P. Baer
 * Mark Bailey
+* Wade Bailey
 * Chris Baker
 * Dennie Baker
 * Janet Baker
 * Kathleen Baker
+* Tom Baker
 * Whitney Baldwin
 * Heather Balester
 * John William Ball
+* Lydia Balogh
 * Regina Bannan
 * Anthony Barbush
 * Joe Bard
+* Brenda Barnes
 * Mary Barnes
 * Donald Barnett
 * Brenda Barrett
@@ -94,16 +103,21 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Cate Barron
 * Keelin Barry
 * Kellyn Bartlett
+* James Barton
 * Michelle Bartus
+* Stanley Basickes
 * Chris Bastress
 * Joan Batory
 * Charles Bauer
+* Gwen Baughman
+* Guy Bauman
 * Kenneth Baumert
 * Judy Baumgardner
 * Blanche Baurer
 * Brian Baxter
 * Christopher Baxter
 * Cynthia Baxter
+* Jim Baxter
 * Mark Bazrod
 * Rebecca Beal
 * Lawrence Beaser
@@ -116,6 +130,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Barry Bedrick
 * Clark Beebe
 * Dorothea Behr
+* James Beidler
 * Ron Beitler
 * Jan Beitzer
 * Debra Bell
@@ -125,11 +140,15 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Nathan Benefield
 * Anthony Benes
 * Mary Lou Benton
+* Maureen Bentz
 * Stanley Berard
 * Kathleen Bergman
+* Jack Berk 
 * Margaret Berlin
+* Elisa Bermudez
 * L.J. Bernard
 * Rita Bernstein & Alan Zuckerman
+* Michael Berquist
 * Michael Bertram
 * Kevin Bevan
 * John Bevilacqua
@@ -141,6 +160,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Eugene Blagmond
 * Nancy J. Blaha
 * Gorden Blain
+* Lawrence Blankemeyer
+* Janet Blankenhorn
 * Heather Blakeslee
 * William Blando
 * Mary L. Bloom
@@ -152,19 +173,24 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * David Bohanick
 * Barbara and William Bohlander
 * Suzanne Bonamici
+* Howard Bond
 * Albert Bono
 * Alex Bonwit
+* Sherrie Borden
 * Constance Borichevsky
 * Diane Bosak
 * Anna R. Bou
 * John Bouder
 * Michael Bower
+* Tim Bowser
 * Robert Boyce
+* Kathleen Boyd
 * Nancy Boyd
 * Maggi Boyer
 * W. Wilson Bradburn
 * Jeffrey L. Braff
 * Robert Braun
+* Sharon Breitenbeck
 * Colleen Brenneman
 * Laura Brenner 
 * Merrill & Nancy Brenner
@@ -174,6 +200,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Yolanda S. Broad
 * Joseph Brogan
 * Skip Brommer
+* Chris Bronder
+* Booker Brooks
 * D. Brooks
 * Heidi & Martin Brooks 
 * William Browder
@@ -199,6 +227,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Thomas Burnett
 * Jordan Burnham
 * Beth Burrell
+* A. Parker Burroughs
+* Philip Burtner
 * Byron Butcher
 * Heidi Butler
 * Robert Byer
