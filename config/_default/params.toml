@@ -1,12 +1,12 @@
 banner-active = true
-banner = "**LEARN SOMETHING TODAY?** Pay it forward and support Spotlight PA now so someone else can tomorrow »"
+banner = "**PAY IT FORWARD:** Spotlight PA right now and your gift will be DOUBLED »"
 banner-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuEAAW"
-banner-bg-color = "#f66c37"
+banner-bg-color = "#ea5b3c"
 banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
-promo-image-caption = "If you love Pennsylvania, make it stronger by supporting Spotlight PA's essential accountability journalism."
-promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g5/3zwq/5-banner.png, https://files.data.spotlightpa.org/uploads/01g5/3zwq/7-banner.png, https://files.data.spotlightpa.org/uploads/01g5/3zwq/6-banner.png"
+promo-image-caption = "Support Spotlight PA's essential investigative journalism today and for a limited time your gift will be DOUBLED."
+promo-image-desktop = "https://files.data.spotlightpa.org/uploads/01g8/w2sj/hub-2021springcampaign-nonprofit-728x90-green-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2sj/hub-2021springcampaign-nonprofit-728x90-blue-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2sj/hub-2021springcampaign-nonprofit-728x90-black-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2sk/hub-2021springcampaign-nonprofit-728x90-purple-2x-3.7.21.png"
 promo-desktop-width = 728
 promo-desktop-height = 90
 promo-image-mobile = "https://files.data.spotlightpa.org/uploads/01g5/3zx4/1-rect.png, https://files.data.spotlightpa.org/uploads/01g5/3zx4/3-rect.png, https://files.data.spotlightpa.org/uploads/01g5/3zx4/2-rect.png"
@@ -16,6 +16,6 @@ promo-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&c
 promo-text = "Map of latest Pa. coronavirus cases, county-by-county numbers"
 show-newsletter = true
 show-sticky = true
-sticky-image-caption = "Become a member of Spotlight PA now to help ensure all Pennsylvanians have access to quality local journalism."
-sticky-image = "https://files.data.spotlightpa.org/uploads/01g5/3zxc/7-square.png, https://files.data.spotlightpa.org/uploads/01g5/3zxc/6-square.png, https://files.data.spotlightpa.org/uploads/01g5/3zxd/5-square.png"
+sticky-image-caption = "Support Spotlight PA's essential investigative journalism today and for a limited time your gift will be DOUBLED."
+sticky-image = "https://files.data.spotlightpa.org/uploads/01g8/w2s2/hub-2021springcampaign-nonprofit-300x250-purple-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2s2/hub-2021springcampaign-nonprofit-300x250-blue-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2s2/hub-2021springcampaign-nonprofit-300x250-black-2x-3.7.21.png, https://files.data.spotlightpa.org/uploads/01g8/w2s2/hub-2021springcampaign-nonprofit-300x250-green-2x-3.7.21.png"
 sticky-link = "http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuSAAW"
