@@ -1,17 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2021-04-30-SPLCHAIR01.md"
+    "content/news/2021-04-29-SPLDDAP02.md",
+    "content/news/2021-05-03-SPLGERRY03.md"
   ],
   "subfeatures": [
-    "content/news/2021-04-06-SPLFIFTH06.md",
-    "content/news/2021-01-15-SPLDISTRICTS16.md"
+    "content/news/2021-04-29-SPLDDAPMETHODXX.md",
+    "content/news/2021-04-30-SPLRECOVER01.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-04-30-SPLRECOVER01.md",
-    "content/news/2021-04-29-SPLDDAP02.md",
-    "content/news/2021-04-28-SPLTRAFFIC18.md"
+    "content/news/2021-04-30-SPLCHAIR01.md",
+    "content/news/2021-04-28-SPLTRAFFIC18.md",
+    "content/news/2021-04-27-SPLSUIT28.md"
   ],
   "sidebarPicks": [
     "content/news/2020-03-20-SPLTRACKERXX.md"
