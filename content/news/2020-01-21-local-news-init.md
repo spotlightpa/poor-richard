@@ -11,7 +11,7 @@ description = "We're excited to announce that Pennsylvannia has been selected by
 blurb = ""
 kicker = "Editor's Notes"
 slug = "local-legal-initiative"
-suppress-featured = true
+topics = ["Editor's Notes"]
 +++
 
 **Today is a big day**, because the fight for government transparency and freedom of the press in Pennsylvania is about to get a big boost.
