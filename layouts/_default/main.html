@@ -86,7 +86,9 @@
         </div>
       </div>
 
-      {{ partial "component/support.html" . }}
+      {{ if .Param "show-support-box" }}
+        {{ partial "component/support.html" . }}
+      {{ end }}
 
       {{ with .Param "authors" }}
         <footer
