@@ -15,8 +15,8 @@ title = "Spotlight PA partners with Triblive/Pittsburgh Tribune-Review, expands 
 subtitle = ""
 description = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
 blurb = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
-kicker = "EDITOR’S NOTES"
-topics = []
+kicker = "Editor's Notes"
+topics = ["Editor's Notes"]
 series = []
 linktitle = ""
 suppress-featured = false
@@ -27,6 +27,7 @@ modal-exclude = false
 no-index = false
 language-code = ""
 layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News and Triblive/Pittsburgh Tribune-Review. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
