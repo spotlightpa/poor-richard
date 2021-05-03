@@ -4,12 +4,17 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     let els = JSON.parse(content).htmlElements;
     return els.tags.concat(els.classes, els.ids);
   },
-  whitelistPatternsChildren: [
-    // Don't purge attributes
-    /disabled|multiple|readonly|rows|type|x-cloak/,
-    // modal bg
-    "is-clipped",
-  ],
+  safelist: {
+    standard: [
+      // modal bg
+      "is-clipped",
+    ],
+    deep: [
+      // Don't purge attributes
+      /disabled|multiple|readonly|rows|type|x-cloak/,
+    ],
+    greedy: [],
+  },
 });
 
 module.exports = {
