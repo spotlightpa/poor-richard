@@ -32,7 +32,7 @@ extended-kicker = ""
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Pennsylvania will lift most coronavirus-related restrictions on Memorial Day, state officials announced Monday, while keeping in place a universal masking order until more people are vaccinated.
+HARRISBURG — Pennsylvania will lift most coronavirus-related restrictions on Memorial Day, state officials announced Tuesday, while keeping in place a universal masking order until more people are vaccinated.
 
 The mask order will be lifted when 70% of Pennsylvanians older than 17 are fully vaccinated, according to the statement. Currently, a mask or other face-covering must be worn outside of the home, except during certain activities.
 
