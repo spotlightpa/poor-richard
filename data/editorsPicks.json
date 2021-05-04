@@ -1,8 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-04-SPLMAVERICK05.md"
+    "content/news/2021-05-04-SPLMAVERICK05.md",
+    "content/news/2021-05-05-SPLMITIGATION04.md"
   ],
   "subfeatures": [
+    "content/news/2021-05-04-SPLMAVERICK05.md",
     "content/news/2021-01-12-SPLCORMAN12.md",
     "content/news/2020-09-14-SPLLOBBY15.md"
   ],
