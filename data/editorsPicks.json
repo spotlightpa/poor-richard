@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-05-SPLMITIGATION04.md"
+    "content/news/2021-05-05-SPLDEI07.md"
   ],
   "subfeatures": [
-    "content/news/2021-04-22-SPLCOVAX22.md",
-    "content/news/2021-04-09-SPLDOSES10.md"
+    "content/news/2020-08-06-SPLCAMPUS06.md",
+    "content/news/2020-08-24-SPLCAMPUSXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
