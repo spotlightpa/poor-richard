@@ -9,11 +9,11 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-04-26-SPLPRIMARYEVENT27.md",
     "content/news/2021-05-04-SPLMAVERICK05.md",
-    "content/news/2021-05-03-SPLGERRY03.md"
+    "content/news/2021-05-03-SPLGERRY03.md",
+    "content/news/2021-04-29-SPLDDAP02.md"
   ],
   "sidebarPicks": [
-    "content/news/2021-04-29-SPLDDAP02.md"
+    "content/news/2020-03-20-SPLTRACKERXX.md"
   ]
 }
