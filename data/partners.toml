@@ -139,6 +139,11 @@ url = "http://newtownpanow.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7a/newtown-now.png"
 
 [[partners]]
+name = "Next Pittsburgh"
+url = "https://www.nextpittsburgh.com/"
+logo-url = "https://files.data.spotlightpa.org/uploads/01g9/882m/next-pittsburgh.png"
+
+[[partners]]
 name = "North Penn Now"
 url = "http://northpennnow.com/"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7a/npn.png"
