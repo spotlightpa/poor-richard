@@ -7,7 +7,9 @@
 {{ $topSlots := partial "helper/get-picks" "topSlots" }}
 
 {{ $pages := $featuredStories | append $topSlots }}
-{{ $pages = union $pages $news.RegularPages }}
+{{ $paPost := site.GetPage "/newsletters/papost" }}
+{{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+{{ $pages = union $pages $river }}
 {{ $pages = after 1 $pages }}
 
 {{ $hasPromo := .Param "promo-active" }}
