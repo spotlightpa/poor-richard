@@ -44,7 +44,7 @@
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
                 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-                {{ $slug := .File.ContentBaseName }}
+                {{ $slug := cond .IsPage .File.BaseFileName (.File.Dir | path.Base) }}
                 <article
                   x-data="{ showForm: false }"
                 >
