@@ -1,0 +1,25 @@
+{{ define "extra-head" }}
+  {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true }}
+  {{ $styles := resources.Get "css/mailchimp.scss" | toCSS $scssOptions | postCSS }}
+  {{ if not site.IsServer }}
+    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+  <div
+    class="raw-content"
+    data-ga-category="content"
+  >
+    {{ .Param "raw-content" | safeHTML }}
+  </div>
+{{ end }}
+
+{{ define "promo" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "modal" }}
+  <!-- noop -->
+{{ end }}
