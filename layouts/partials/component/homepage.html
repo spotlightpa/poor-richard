@@ -41,15 +41,15 @@
           <div
             class="tile is-child"
             data-ga-category="midpage"
-            x-data="{ status: spl.funnelStatus() }"
+            x-data="spl.funnelStatus()"
           >
-            <div x-show="status < 1">
+            <div x-show="!isSubscriber">
               {{ partial "newsletter/multi-box.html" . }}
             </div>
             <div
               data-ga-category="donate"
               x-cloak
-              x-show="status >= 1"
+              x-show="isSubscriber"
             >
               {{ partial "component/donate-prefill.html" . }}
             </div>
