@@ -19,7 +19,7 @@ export default function modal() {
     },
 
     init() {
-      if (showModalNewsletter) {
+      if (showModalNewsletter()) {
         window.setTimeout(() => {
           this.show();
         }, delay);
