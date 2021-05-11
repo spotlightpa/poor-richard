@@ -3,7 +3,7 @@
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
 <section
-  class="fixed bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
+  class="fixed z-10 bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
   x-data="spl.sticky()"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -13,6 +13,7 @@
   x-transition:leave-start="opacity-100 transform translate-x-0"
   x-transition:leave-end="opacity-0 transform translate-x-8"
   @open-sticky.window="show()"
+  @close-sticky.window="close()"
   data-ga-category="modal:sticky"
   @keydown.escape="close"
   x-cloak

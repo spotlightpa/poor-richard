@@ -1,3 +1,4 @@
+import sendEvent from "../utils/send-event.js";
 import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function lightbox() {
@@ -20,6 +21,9 @@ export default function lightbox() {
         buildAndSend(this.$el, {
           eventAction: `lightbox:${val}`,
         });
+        if (val === "active") {
+          sendEvent({ name: "close-sticky" });
+        }
       });
     },
 
