@@ -27,6 +27,6 @@
     "heightRatio" 9
     "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
 {{ end }}
-{{ if ne $size "hidden" }}
+{{ if ne $size "hidden" | and $imagename }}
   {{ $imgOpts | partial "component/image-block.html" }}
 {{ end }}

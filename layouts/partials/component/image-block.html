@@ -1,5 +1,5 @@
 {{ $widths := slice 300 480 640 800 960 1120 1280 1440 1600 1760 1920 2080 2240 2400 2560 }}
-{{ if $imagename := .filename }}
+{{ if $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
   {{ $widthR := .widthRatio | default 16 }}
   {{ $heightR := .heightRatio | default 9 }}
   {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
