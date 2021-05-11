@@ -1619,6 +1619,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Timothy Selway
 * Kristin Senecal
 * John Senko
+* James Serene
 * V. Sethi
 * Antoinette Seymour
 * Melissa Shafer
@@ -1631,12 +1632,17 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Loretta Sharkey
 * Catherine Sharkness
 * Karen Shea
+* Ann Sheehan
 * Eileen Sheehan
 * Susan Sheehan
 * Michael Sheketoff
 * Peter Shelly
+* Stan Shelosky
+* James Shelton
+* Audra Shenk
 * Sally Shepherd
 * Mark Sheppard
+* Hellyn Sher
 * Tom & Amy Sherry
 * Christine Shiffer
 * Alexandra Shirreffs
@@ -1660,6 +1666,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Robert Sims
 * Josh Singer
 * Vaswati Sinha
+* Douglas Sivers
 * Emily Skopov
 * Ed Skros
 * Soon Slayman
@@ -1669,9 +1676,15 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Scott Smedley
 * Diana Smeltzer
 * Carol L. Smith
+* Catherine Smith
 * Cheryl Smith
 * Deborah Smith
+* Fritz Smith
+* Janet Smith
+* JennySue Smith
+* Lauren Smith
 * Leigh Anne Smith
+* Lois Smith
 * Terry Smith
 * Elizabeth Smith
 * Karen Smith
@@ -1682,15 +1695,18 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Suzanne Smith
 * Thomas Smith
 * Tieshka Smith
+* Jim Smoker
 * Lucas Smolcic Larson
 * Judith E. Smullen
 * David Snyder
 * Anita & Mike Soar
+* Thomas Songer
 * Marie Sonnet
 * Mariana Sorensen
 * Feryl Souder
 * Susan Spaziani & John Williamson
 * Shannon Spear
+* Loree Speedy
 * Doreen Speidel
 * Michael Sperger
 * Christine Sperling
@@ -1711,6 +1727,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Norman St. Amour
 * Robert Starr
 * Lenore M. Steinmetz
+* David Stellfox
 * John Stenger
 * Christine & James Sterganos
 * Daniel Stern
@@ -1726,6 +1743,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Harriet Stone
 * Thomas Stone
 * Peter Stork
+* Catherine Stouch
 * Carol Stowell
 * Nicole Stranko
 * Sandra Strauss
@@ -1734,6 +1752,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Forrest Stuart
 * John Stuart
 * Rebecca & Collin Stuart
+* Joe Stuligross
 * Thomas Suddes
 * Lewis Sudul
 * John Suierveld
@@ -1741,6 +1760,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Sean P. Sullivan
 * Cary Scott Summers
 * Barbara Sunderlin
+* Irene Surmik
 * Andrew Sutherland
 * Doug Swanson
 * Marjorie Swart
