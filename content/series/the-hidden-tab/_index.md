@@ -6,6 +6,6 @@ image-credit = "Leise Hook / For Spotlight PA"
 image-size = "hidden"
 kicker = "The Hidden Tab"
 title = "The Hidden Tab"
-linktitle = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details"
-description = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details"
+linktitle = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details."
+description = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details."
 +++
