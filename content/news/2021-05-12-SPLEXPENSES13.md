@@ -162,7 +162,7 @@ It also recommended that the legislature’s budget itemize spending, rather tha
 
 None of those changes was implemented.
 
-“When I read it, I believed those were very good ideas. Wearing my practical hat, I realized the chance of that becoming a reality was unlikely,” former Gov, Tom Corbett, who as attorney general in the early 2000s oversaw the grand jury, said in a recent interview.
+“When I read it, I believed those were very good ideas. Wearing my practical hat, I realized the chance of that becoming a reality was unlikely,” former Gov. Tom Corbett, who as attorney general in the early 2000s oversaw the grand jury, said in a recent interview.
 
 Indeed, the legislature’s budget documents, as well as its annual audits, only provide totals for expenses.
 
@@ -208,7 +208,7 @@ In Pennsylvania, legislators have at least one — and sometimes up to three —
 
 Over four years, the legislature spent more than $37 million on lawmakers’ satellite offices alone. Utility bills topped $2 million. Maintenance costs on these rental properties exceeded $2 million. And supplies such as water cooler rentals, snacks, and copier leases cost more than $6.3 million.
 
-Only one in four states makes any allowance for district offices. In places like Minnesota, for instance, lawmakers who want to meet with constituents do so on buildings the public has already paid for, such as libraries and schools.
+Only one in four states makes any allowance for district offices. In places like Minnesota, for instance, lawmakers who want to meet with constituents do so in buildings the public has already paid for, such as libraries and schools.
 
 {{<featured/newsletter>}}
 
