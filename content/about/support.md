@@ -1769,6 +1769,8 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Jeffrey Sweet
 * Mary Sweet
 * Laurie Sweigard
+* Cordelia & John Swinton
+* Marianne Switaj
 * Benjamin Swofford
 * Diane Sykes
 * Marian Szmyd
@@ -1779,9 +1781,12 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Ardith Talbott
 * John Tampanello
 * Donald Tannenbaum
-* MaryEllen Tarman 
+* MaryEllen Tarman
+* Maureen Tapp
+* Jennie Tasheff 
 * Barbara J. Taylor
 * Barbara Sieck Taylor
+* Sarah Taylor
 * John Taylor
 * Randy & Marcie Taylor
 * Russ Taylor
@@ -1790,6 +1795,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Amanda Tekely
 * Jeremy Tennenbaum
 * Jocelyn Tenney
+* Randall Tenor
 * Freda Tepfer
 * Matthew Terruso
 * Cameron Texter
@@ -1808,9 +1814,11 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * M. Tillger
 * JJ Tiziou
 * Brian Toal
+* Joan Todd
 * Coxey Toogood
 * Charles Topper
 * Ray Torres
+* Lydia Torres-Krzeminski
 * Esther Toth
 * Karen Hale Toth
 * Thomas L. Toth
@@ -1830,6 +1838,9 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Catherine Twigg
 * Cynthia Tyger
 * Cynthia Tyler
+* Kathleen Tyson
+* Eileen Ufberg
+* Antoinette Uffner
 * Walter C. Uhler
 * Walter & Esther Underhill
 * Elizabeth Useem
@@ -1853,6 +1864,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Cecilia Viti
 * Fred Vodde
 * Charles Vogt
+* Susan Waggoner
 * Richard Waggy
 * Fritz Walker
 * Russ Walker
@@ -1870,6 +1882,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Diane M. Ward
 * Elizabeth Ward
 * Mary Warner
+* Josh Watt
 * Caity Weaver
 * Karen Weaver
 * Mary Weaver
@@ -1877,11 +1890,13 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Nathaniel Webb
 * F. Marcia & Robert Webber
 * Christina Weber
+* John Weber
 * Douglas Webster
 * Koert Wehberg, Esq.
 * Wendy Wehr
 * Karen Weibel
 * Patricia Weidenhamer
+* Anne Weidman
 * Penny Weinberg-Uebelhoer
 * Debra Weiner
 * Elizabeth Paczolt Weiner
@@ -1889,8 +1904,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Wendy Weirman
 * Larry Weiss
 * Sy Weiss
+* Heather Wenhold
 * C. Wentzel
 * Gerald F. Werkheiser
+* Susan Werner
 * David Wersan
 * Judy Wertheimer
 * Judy Wertheimer & Michael Boninger
@@ -1898,6 +1915,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Janelle Wertzberger
 * E. Wessel
 * Jan Wessell
+* Valerie Westcott
 * Jean Weston
 * Richard Wexelblat
 * Thomas Whalen
@@ -1907,6 +1925,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Sheryl White
 * Rhonda White
 * Suzanne P. White
+* Betsy Whitman
 * Kathleen F. Weidner
 * Talia Wiener
 * Justin Wier
@@ -1920,7 +1939,6 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Evan Williams
 * Donna Williams 
 * Jack Williams
-* James C. Wright
 * Janet Williams
 * Richard Williams
 * Sabrina Williams
@@ -1928,6 +1946,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Harold Wilson
 * Len & Joyce Wilson
 * Mary Wilson
+* Veronica Wilson
 * Sharon Winter
 * Stan Wischnowski
 * Cheryl Wist
@@ -1950,15 +1969,18 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Jeff Worden
 * Laura Worker
 * Margaret Wren
+* James C. Wright
 * Francis Wynne
 * Tom Wyse
 * Peter Yaffe
 * Joseph Yake
 * Dr. Bob Yapsuga
+* George Yauneridge
 * Ruth & Charles Yeiser
 * Karen Yellin
 * Tracy Yeomans
 * Berwood Yost
+* Craig Young
 * David Young
 * Donald B. Young Jr.
 * EM Young
@@ -1966,7 +1988,10 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Karen Young
 * Rick Young
 * Sherley Young
+* Cathy Yungmann
 * Anne Zacharias
+* Paulette Zahorchak
+* Lisa Zander
 * Christina Zarek
 * Bonnie Zarlenga
 * Deborah Zateeny
@@ -1974,6 +1999,7 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * Susan Zeelander
 * Stephen Zeller
 * Matt Zencey
+* Jane Zendarski
 * Paul Zieger
 * Liz Zimmerman
 * Michelle Zimmerman
