@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-12-SPLEXPENSES13.md"
+    "content/news/2021-05-13-SPLSITES13.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-12-SPLEXMETHODXX.md",
-    "content/news/2021-03-15-SPLDIEMS15.md"
+    "content/news/2021-05-12-SPLEXPENSES13.md",
+    "content/news/2021-05-12-SPLEXMETHODXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
