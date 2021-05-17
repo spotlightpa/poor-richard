@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-05-14-SPLPSERSXX.md",
     "content/news/2021-05-17-SPLTRAIN17.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-12-SPLEXPENSES13.md",
-    "content/news/2021-05-13-SPLSITES13.md"
+    "content/news/2021-05-11-SPLPRIMFAQXX.md",
+    "content/news/2021-02-24-SPLCANVASS25.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-05-11-SPLPRIMFAQXX.md",
-    "content/news/2021-05-07-SPLBEDFORD10.md",
-    "content/news/2021-05-07-SPLFINES08.md"
+    "content/news/2021-05-14-SPLPSERSXX.md",
+    "content/news/2021-05-12-SPLEXPENSES13.md",
+    "content/news/2021-05-14-SPL100KXX.md"
   ],
   "sidebarPicks": [
     "content/news/2021-04-29-SPLDDAP02.md"
