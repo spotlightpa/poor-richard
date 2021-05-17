@@ -1,8 +1,8 @@
 banner-active = true
 banner = "**YOUR COMPLETE PRIMARY GUIDE:** Everything you need to know to vote Tuesday »"
 banner-link = "/news/2021/05/pa-may-2021-primary-questions-answered/"
-banner-bg-color = "#75bc43"
-banner-text-color = "#ffffff"
+banner-bg-color = "#ffcb03"
+banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now."
