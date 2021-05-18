@@ -164,7 +164,9 @@
     </div>
   </article>
 
-  {{ $news := .Site.GetPage "/news/_index.md" }}
-  {{ $related := $news.RegularPages.Related . | first 3 }}
-  {{ partial "component/related-articles.html" $related }}
+  {{ if .Param "suppress-related" | not }}
+    {{ $news := site.GetPage "/news/_index.md" }}
+    {{ $related := $news.RegularPages.Related . | first 3 }}
+    {{ partial "component/related-articles.html" $related }}
+  {{ end }}
 </section>

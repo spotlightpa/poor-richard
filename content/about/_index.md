@@ -10,6 +10,7 @@ linktitle = "About"
 
 [cascade]
 modal-exclude = true
+suppress-related = true
 +++
 {{<content-header>}}Our promise to Pennsylvania{{</content-header>}}
 
