@@ -50,7 +50,7 @@ Perhaps no decisions by the Wolf administration were as reviled in the GOP-contr
 
 The Wolf administration forcefully pushed back on the argument that it can only mandate business closures when a disaster declaration is in place, saying that power resides with the state’s health secretary.
 
-Wolf administration argued that inserting lawmakers into the process would take away flexibility when it’s most needed. These emergency orders are <a href="https://www.pema.pa.gov/Governor-Proclamations/Pages/default.aspx#.VXC4XM9VhBc">traditionally issued</a> during weather-related events like floods or snowstorms so state officials may temporarily waive regulations, allow agencies to purchase supplies without going through the regular procurement process, and transfer money to cover relief expenses.
+Wolf administration officials argued that inserting lawmakers into the process would take away flexibility when it’s most needed. These emergency orders are <a href="https://www.pema.pa.gov/Governor-Proclamations/Pages/default.aspx#.VXC4XM9VhBc">traditionally issued</a> during weather-related events like floods or snowstorms so state officials may temporarily waive regulations, allow agencies to purchase supplies without going through the regular procurement process, and transfer money to cover relief expenses.
 
 “The impact of these amendments should not be viewed solely through the context of the COVID-19 pandemic, as they have far-reaching impacts for all future disasters regardless of cause,” Randy Padfield, director of the Pennsylvania Emergency Management Agency, said earlier this month.
 
