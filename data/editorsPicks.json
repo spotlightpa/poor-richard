@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-19-SPLBALLOTXX.md"
+    "content/news/2021-05-19-SPLPRIME20.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-17-SPLTRAIN17.md",
-    "content/news/2021-02-05-SPLAMEND06.md"
+    "content/news/2021-05-19-SPLBALLOTXX.md",
+    "content/news/2021-05-17-SPLTRAIN17.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
