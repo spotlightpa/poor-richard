@@ -34,7 +34,7 @@ extended-kicker = ""
 
 HARRISBURG — Pennsylvania voters have approved two ballot questions that would curtail the governor’s emergency powers, a victory for Republican lawmakers in what was widely seen as a referendum on the Wolf administration’s response to the coronavirus pandemic.
 
-Unofficial results show 54% of voters backed amending the state constitution to allow lawmakers to terminate a disaster declaration at any time. Currently, such a declaration can only be ended with the governor’s consent or with support from two-thirds of the General Assembly.
+Unofficial results show 54% of voters backed amending the state constitution to allow a simple majority of lawmakers to terminate a disaster declaration at any time. Currently, such a declaration can only be ended with the governor’s consent or with support from two-thirds of the General Assembly.
 
 Roughly the same percentage of voters also approved a proposal that limits a disaster declaration to 21 days, instead of 90, and transfers power to extend an emergency order from the governor to the legislature. The Associated Press projected Wednesday morning that voters had approved both measures, with 73% of the projected total votes counted.
 
@@ -42,7 +42,7 @@ Roughly the same percentage of voters also approved a proposal that limits a dis
 
 Previously little noticed, Pennsylvania’s disaster declaration process became a political flashpoint for Republicans, who — with support from a few Democrats — championed the proposals as a check on an executive they repeatedly clashed with over the state’s pandemic response.
 
-“A ‘yes’ vote does not take power away from the governor,” Senate Majority Leader Kim Ward (R., Westmoreland) said in/ during an April. “Rather, it brings back the balance of power by giving the people a say in how to manage their communities during emergency situations.”
+“A ‘yes’ vote does not take power away from the governor,” Senate Majority Leader Kim Ward (R., Westmoreland) said in/ April. “Rather, it brings back the balance of power by giving the people a say in how to manage their communities during emergency situations.”
 
 Perhaps no decisions by the Wolf administration were as reviled in the GOP-controlled legislature as the ones to temporarily close businesses deemed nonessential and stagger the economy’s reopening to slow the spread of COVID-19. Preventing a similar situation in the future became a selling point as they urged voters to approve the amendments.
 
