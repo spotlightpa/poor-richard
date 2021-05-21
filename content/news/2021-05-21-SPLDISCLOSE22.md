@@ -60,24 +60,24 @@ Both chambers at the time clamored to change their rules to prohibit cash gifts,
 
 Gov. Tom Wolf, a Democrat, signed an order when he took office in 2015 to <a href="https://www.pennlive.com/politics/2015/01/gov_tom_wolf_signs_gift_ban_le.html">ban members of the executive branch from accepting gifts</a> and once again urged lawmakers to do the same as part of his 2021 budget plan.
 
-<b>Activists with </b><a href="https://www.mohpa.org/" target="_blank"><b>MarchOnHarrisburg</b></a><b> plan to put public pressure on Corman next month to bring a gift ban up for a vote. The grassroots group has pushed for a ban for years through some unusual means, including </b><a href="https://www.facebook.com/MarchOnHarrisburg2/posts/1174371349670078"><b>raining down dollars labeled “bribe”</b></a><b> on lawmakers in the House chamber.</b>
+Activists with <a href="https://www.mohpa.org/" target="_blank">MarchOnHarrisburg</a> plan to put public pressure on Corman next month to bring a gift ban up for a vote. The grassroots group has pushed for a ban for years through some unusual means, including <a href="https://www.facebook.com/MarchOnHarrisburg2/posts/1174371349670078">raining down dollars labeled “bribe”</a> on lawmakers in the House chamber.
 
-Rabbi Michael Pollack, executive director of MarchOnHarrisburg, said GOP leadership in the state House has committed to supporting a gift ban. 
+Rabbi Michael Pollack, executive director of MarchOnHarrisburg, said GOP leadership in the state House has committed to supporting a gift ban.
 
 A spokesperson for House Majority Leader Kerry Benninghoff (R., Centre) did not directly address the question, but said by email the lawmaker “has always been supportive of bringing more accountability and transparency to elected and other government officials. We are currently examining and reviewing various options to advance those goals legislatively this session.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
-In the state Senate, Majority Leader Kim Ward (R., Westmoreland) is a co-sponsor of a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0401" target="_blank">bill</a> that would ban cash gifts and prevent lawmakers from taking anything of value from those seeking to influence official action. 
+In the state Senate, Majority Leader Kim Ward (R., Westmoreland) is a co-sponsor of a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0401" target="_blank">bill</a> that would ban cash gifts and prevent lawmakers from taking anything of value from those seeking to influence official action.
 
 That leaves Corman, Pollack said, who has faced <a href="https://www.spotlightpa.org/news/2020/08/pa-campaign-dark-money-growth-opportunity-fund-jake-corman-gop/" target="_blank">scrutiny</a> for his <a href="https://www.spotlightpa.org/news/2021/05/pa-lobbying-reform-political-consultants-jake-corman-mavericks/" target="_blank">ties to lobbyists</a>.
 
 Jason Thompson, a spokesperson for Corman, did not respond to Spotlight PA’s questions about whether the senator supports gift ban legislation. Thompson recently told the Capital-Star he “<a href="https://www.penncapital-star.com/government-politics/pa-s-top-two-republicans-announce-plans-for-lobbying-reform-but-is-it-enough/" target="_blank">could not comment on a gift ban</a>” but added Corman “supported efforts to ban lawmakers from receiving gifts of cash and gift cards in years past.”
 
-For Pollack, the issue is simple: As long as legislators can accept cash and other gifts, they will be beholden to those with money and power. Those without means will remain unheard. 
+For Pollack, the issue is simple: As long as legislators can accept cash and other gifts, they will be beholden to those with money and power. Those without means will remain unheard.
 
 “I’ve never met anyone outside the state Capitol who thinks this is controversial,” Pollack said.
 
-<i>Sarah Anne Hughes of Spotlight PA contributed to this report. </i>
+<i>Sarah Anne Hughes of Spotlight PA contributed to this report.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
