@@ -4,9 +4,8 @@ image-description = "Tracking the spread of COVID-19 in Pennsylvania"
 image-credit = "DAN NOTT / For Spotlight PA"
 image-size = "hidden"
 published = 2020-07-17T14:00:00.000Z
-slug = "coronavirus-dashboard-faq"
 authors = ["Daniel Simmons-Ritchie"]
-byline = "Daniel Simmons-Ritchie of Spotlight PA"
+byline = "Daniel Simmons-Ritchie of Spotlight PA with Carl Johnson"
 title = "Tracking The Spread Dashboard FAQ"
 description = "The Tracking the Spread dashboard is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it."
 blurb = "The Tracking the Spread dashboard is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or a just curious reader, you might have questions about the data we’re using or how we’re presenting it."
@@ -16,14 +15,15 @@ suppress-featured = false
 weight = 0
 topics = ["Coronavirus"]
 series = []
-modal-exclude = false
 no-index = false
 internal-id = ""
+slug = "coronavirus-dashboard-faq"
 url = ""
 image-caption = ""
 internal-budget = ""
 arc-id = ""
 subtitle = ""
+modal-exclude = false
 aliases = []
 +++
 <a href="/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">The Tracking the Spread dashboard</a> is a joint project of Spotlight PA and The Philadelphia Inquirer to monitor and visualize the outbreak of COVID-19 in Pennsylvania and the surrounding region. If you’re a researcher, journalist, or just a curious reader, you might have questions about the data we’re using or how we’re presenting it. This article is for you.
@@ -206,6 +206,8 @@ At time of writing, here are where you can find the department's four core datas
 As of July 13, 2020 in order to be as transparent as possible about changes we make to the dashboard, all changes will be documented here.
 
 The date of each changes marks the date that the change was made to the Spotlight PA version of the dashboard. The Philadelphia Inquirer version of the dashboard may not necessarily be updated on the same day.
+
+**May 21, 2021**: The dashboard has been changed to use [the New York Times COVID-19 data](https://github.com/nytimes/covid-19-data) instead of data directly from the Pennsylvania Department of Health. Data from the City of Philadelphia is still used for some individual zip codes.
 
 **March 2, 2021:** In preparation for [the retirement of the Covid Tracking Project](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7) on March 7, data on COVID-19 testing and hospitalization sourced from the Covid Tracking Project was replaced with data sourced from the U.S. Department of Health and Human Services on the Spotlight version of the dashboard. In addition, a number of updates were made to footnotes and other text to make it easier for readers to understand how recently data in individual sections have been updated and to better explain the metrics and methodology used by the Philadelphia Inquirer and Spotlight PA. More generally, as the dashboard approaches one year of tracking the spread of COVID-19, the years '2020' and '2021' were added to many date references to avoid reader confusion over date ranges.
 
