@@ -5,7 +5,7 @@ description = "Spotlight PA is building an inclusive team of journalists who bri
 linktitle = "Jobs"
 url = "/about/jobs/"
 +++
-Spotlight PA currently has two job openings:
+Spotlight PA currently has job openings:
 
 ## Criminal Justice Reporter
 
