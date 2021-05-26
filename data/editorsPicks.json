@@ -1,11 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-26-SPLVACCINES26.md",
-    "content/news/2021-05-25-SPLWASTE26.md"
+    "content/news/2021-05-26-SPLVACCINES26.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-05-SPLMITIGATION04.md",
-    "content/news/2021-03-25-SPLWASTE26.md"
+    "content/news/2021-05-25-SPLWASTE26.md",
+    "content/news/2021-05-05-SPLMITIGATION04.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
