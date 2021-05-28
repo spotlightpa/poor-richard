@@ -1,11 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-05-26-SPLINSPECT27.md",
     "content/news/2021-05-28-SPLHERFINXX.md"
   ],
   "subfeatures": [
-    "content/news/2021-02-10-SPLSTATE11.md",
-    "content/news/2021-02-01-SPLBOOC02.md"
+    "content/news/2021-04-16-SPLSUIT16.md",
+    "content/news/2020-10-23-SPLHERSHEYXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
