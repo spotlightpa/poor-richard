@@ -72,11 +72,11 @@ GSI was awarded a separate, $4 million contract in 2020 to process federal benef
 
 Hundreds of thousands of claimants are also stuck in a backlog, waiting for their state and federal claims to be reviewed and for payments to arrive. State officials contend that more than 80% of the roughly 200,000 pending federal claims are fraudulent; there are also more than 100,000 state claims pending review.
 
-But advocates counter that a combination of GSI’s technology and the department’s failings, such as inadequate staffing, leaves deserving and desperate people in limbo. They said some people have been mistakenly flagged as fraud, and others present at a recent legislative hearing said they had been hamstrung by identity verification investigations.
+But advocates counter that a combination of GSI’s technology and the department’s failings, such as  inadequate staffing, leaves deserving and desperate people in limbo. They said some people have been mistakenly flagged as fraud, and others present at a recent legislative hearing said they had been hamstrung by identity verification investigations.
 
 “I am not fraudulent,” said Adrienne Berry, 54, an independent contractor whose cleaning business temporarily dried up as a result of the pandemic and who needed to prioritize caring for her grandson.
 
-Berry said she received three weeks of payments in 2019 before her claim stalled without explanation. While she recently started working again, she has not received any of the benefits she is owed for the weeks she went without assistance since December.
+Berry said she received three weeks of payments in 2020 before her claim stalled without explanation. While she recently started working again, she has not received any of the benefits she is owed for the weeks she went without assistance since December.
 
 Because the new computer system will handle state unemployment claims, it will not address the issues faced by workers relying on federal pandemic benefits.
 
@@ -120,7 +120,7 @@ These are known as waterfall projects, Jaquith said, because they present an ext
 
 By 2013, few of the requests had materialized. The project was $60 million over budget, nearly four years behind schedule, and still unusable, according to legal documents. Each time IBM failed to meet a deadline or deliver a project goal, Pennsylvania incrementally paid the company more.
 
-Pennsylvania was not an outlier. As of 2016, roughly 77% of unemployment modernization projects nationwide had failed, were over budget and lacked critical requirements, or were still in progress, according to a recent report by <a href="https://tcf.org/content/report/centering-workers-how-to-modernize-unemployment-insurance-technology/?agreed=1&amp;session=1">the Century Foundation</a>.
+Pennsylvania was not an outlier. As of 2016, roughly 77% of unemployment modernization projects nationwide had failed, were over budget and lacked critical requirements, or were still in progress, according to a recent report by <a href="https://tcf.org/content/report/centering-workers-how-to-modernize-unemployment-insurance-technology/?agreed=1&session=1">the Century Foundation</a>.
 
 The state sued IBM in 2017, seeking to recoup the money and cost of maintaining the existing legacy system, accusing it of using the state as its “personal cash register,” according to the complaint.
 
@@ -138,7 +138,7 @@ Since the onset of the pandemic, the Department of Labor and Industry has added 
 
 Still, there have been numerous issues. The mainframe system required batch uploads that could delay certain processing to occur the next day, and did not allow people to see updates in real time. State officials also contend that it’s not intuitive, it’s difficult to code new federal or state regulatory changes, and it does not readily allow claims examiners to see problems as they arise.
 
-Berrier downplays the power and sophistication of the mainframe, saying it is “held together with rubber bands and duct tape.”
+Berrier said the old system is held together with “rubber bands and duct tape.”
 
 “Frankly, during this entire pandemic, we were basically crossing our fingers with our legacy mainframe system as we were making changes to it,” she said.
 
