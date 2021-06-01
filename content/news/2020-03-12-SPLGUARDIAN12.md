@@ -16,7 +16,6 @@ internal-budget = ""
 arc-id = "KRDBPHGHURFFXPPQLMFRKT34TE"
 subtitle = ""
 linktitle = ""
-weight = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -67,13 +66,13 @@ Unlike many states, Pennsylvania does not require that courts provide lawyers to
 
 In 2014, the task force <a href="http://media-downloads.pacourts.us/eltf-report.pdf?cb=1579202701205">recommended</a> changing court rules to make legal representation a requirement.
 
-But the Orphans’ Court rules committee dismissed the recommendation, instead deciding that appointment of attorneys, in cases where someone doesn’t provide their own, should be left to a court’s discretion. In a notice, the committee <a href="http://www.pacourts.us/assets/uploads/Resources/Documents/Republication%20Notice%20Report%20Rule%20Appendix%20and%20Form%20regarding%20Guardianship%20Expert%20Report%20-%20006317.pdf?cb=16449">cited</a> concerns about the financial burden and added that “a large majority” of guardianship cases go uncontested.
+But the Orphans’ Court rules committee dismissed the recommendation, instead deciding that appointment of attorneys, in cases where someone doesn’t provide their own, should be left to a court’s discretion. In a notice, the committee <a href="https://web.archive.org/web/20210524003636/http://www.pacourts.us/assets/uploads/Resources/Documents/Republication%20Notice%20Report%20Rule%20Appendix%20and%20Form%20regarding%20Guardianship%20Expert%20Report%20-%20006317.pdf?cb=16449">cited</a> concerns about the financial burden and added that “a large majority” of guardianship cases go uncontested.
 
 Haywood, who was previously an attorney for people who could not afford legal representation, said the committee’s analysis doesn’t cut it.
 
 “Failure to contest is not an indication of the lack of the need for legal representation,” he said. “In fact, it can be conceived as the exact opposite.”
 
-Still, the recommendation to mandate counsel was <a href="http://www.pacourts.us/assets/files/page-1240/file-7546.pdf?cb=1582926263889">marked</a> as “accomplished.”
+Still, the recommendation to mandate counsel was <a href="https://web.archive.org/web/20210524093627/http://www.pacourts.us/assets/files/page-1240/file-7546.pdf?cb=1582926263889">marked</a> as “accomplished.”
 
 Cherstin Hamel is the director of the state’s Office of Elder Justice in the Courts, which is overseeing the implementation of the 130 recommendations. She said that if a recommendation was considered, but not adopted, it was marked as “accomplished.”
 
