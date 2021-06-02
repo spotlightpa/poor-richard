@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-05-31-SPLUNEMPLOY31.md"
+    "content/news/2021-06-02-SPLTAKEXX.md"
   ],
   "subfeatures": [
-    "content/news/2021-03-02-SPLFRAUD2.md",
-    "content/news/2020-05-28-SPLSCAM29.md"
+    "content/news/2021-05-12-SPLEXPENSES13.md",
+    "content/news/2021-05-12-SPLEXMETHODXX.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-05-31-SPLUNEMPLOY31.md",
     "content/news/2021-05-30-SPLPSERXX.md",
-    "content/news/2021-05-28-SPLGRANTS30.md",
-    "content/news/2021-05-28-SPLHERFINXX.md"
+    "content/news/2021-05-28-SPLGRANTS30.md"
   ],
   "sidebarPicks": [
     "content/news/2021-05-12-SPLEXPENSES13.md"
