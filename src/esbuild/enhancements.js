@@ -1,7 +1,6 @@
 import "alpinejs";
 import "../utils/add-listeners.js";
 
-import emailPreferences from "../enhancements/email-preferences.js";
 import embedList from "../enhancements/embed-list.js";
 import feed from "../enhancements/feed.js";
 import funnelStatus from "../enhancements/funnel-status.js";
@@ -18,7 +17,6 @@ import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
 window.spl = Object.assign({}, window.spl, {
-  emailPreferences,
   embedList,
   feed,
   funnelStatus,
