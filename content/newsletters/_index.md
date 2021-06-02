@@ -5,5 +5,6 @@ description = "We cover Pennsylvania like no one else."
 linktitle = "Newsletters"
 modal-exclude = true
 layout = "newsletters"
+aliases = ["/newsletters/covid/","/newsletters/covid-alerts-manage/"]
 +++
 
