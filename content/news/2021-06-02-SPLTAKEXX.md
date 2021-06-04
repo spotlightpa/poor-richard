@@ -30,6 +30,8 @@ layout = ""
 extended-kicker = ""
 +++
 
+<a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+
 HARRISBURG — In 2019, The Caucus and Spotlight PA began filing requests for every legislative expense lawmakers covered with taxpayer money, salaries and benefits not included.
 
 The purpose? To find out how one of the largest and most expensive full-time legislatures in the country spends tax money on itself.
@@ -64,7 +66,7 @@ Meanwhile, Corman’s own voluntary online expense reports are more than six yea
 
 Corman, in an interview, did not explain why his website had become so outdated but said he is working with Senate officials to make expenses more easily available online.
 
-“We are trying to update that so that it’s much more readily available to be seen,” he said.
+“We are trying to update that so that it’s much more readily available to be seen,” he said. (Update: Since the original story was published, a Corman spokesperson reached out to say the website has been updated to ensure all expenses are current.)
 
 <i>Read more: </i><a href="https://www.spotlightpa.org/news/2021/05/pa-lawmaker-expenses-transparency-websites/"><i>Some Pa. lawmakers tout expense transparency. Their websites tell a different story</i></a><i>.</i>
 
