@@ -1,7 +1,7 @@
 banner-active = true
-banner = "**FREE DAILY NEWSLETTER:** Get all the top news across Pa., plus some fun, too »"
-banner-link = "/newsletters/papost"
-banner-bg-color = "#ffcb03"
+banner = "**RSVP for FREE:** A live interview with Sen. David Argall on redistricting »"
+banner-link = "https://inquirer.zoom.us/webinar/register/WN_KzuV-l1cTWmj-p3XvOK8wA"
+banner-bg-color = "#c200ff"
 banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
