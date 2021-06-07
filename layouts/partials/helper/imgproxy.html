@@ -1,6 +1,6 @@
 {{ $baseURL := getenv "IMGPROXY_URL" | default "https://images.data.spotlightpa.org" }}
 {{ $signature := "insecure" }}
-{{ $resizing_type := "auto" }}
+{{ $resizing_type := .resize | default "fit" }}
 {{ $width := .width }}
 {{ $height := .height }}
 {{ $gravity := .gravity | default "sm" }}

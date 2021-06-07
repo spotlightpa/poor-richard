@@ -13,7 +13,12 @@
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
-{{ $imgOpt := dict "filename" $src "width" $width "height" $height }}
+{{ $imgOpt := dict
+  "filename" $src
+  "width" $width
+  "height" $height
+  "resize" "fill"
+}}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 
