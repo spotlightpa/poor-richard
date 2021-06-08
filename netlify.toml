@@ -1,7 +1,6 @@
 [build]
 base = ""
 command = "yarn build:prod"
-functions = "functions"
 publish = "public"
 
 [build.environment]
