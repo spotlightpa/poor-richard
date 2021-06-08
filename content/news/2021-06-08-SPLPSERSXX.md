@@ -54,19 +54,21 @@ The image of the fund, which has faced growing criticism for its unremarkable in
 
 State Sen. Katie Muth (D., Montgomery), who became a PSERS board member this year, said Monday that she had asked the fund’s management weeks ago for information about the nonprofits and the Harrisburg real estate investments, but had never received answers. The response, she said, was: “We are still looking into it.”
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=%3Cb%3EDo%20you%20have%20information%20about%20the%20ongoing%20federal%20investigation%20into%20PSERS%20or%20its%20past%20actions%3F%3C%2Fb%3E%20We%20want%20to%20hear%20from%20you."></div>
+
 In its statement Monday, the retirement system said it created nonprofits to own real estate as a buffer against lawsuits “to limit legal risk.”
 
 PSERS did not say when it filed the revised forms. As The Inquirer and Spotlight have previously reported, federal prosecutors sought information about the Harrisburg real estate in subpoenas dated March 24. At a May 5 board meeting closed to the public and the media, lawyers from the Morgan Lewis firm, one of three firms hired by PSERS to address the FBI probe, briefed the board about the disclosure forms and said it was looking into whether the staff was paid by the real estate firm and whether the board even knew that the nonprofits had been formed, sources said.
 
 The fund has created about a half-dozen nonprofits to hold titles to its 15 or so real estate investments around the nation, IRS records show. While the statement Monday cites only one, 812 Market Inc. public records show that the same flawed language is in the filings for two other PSERs nonprofits, one for its headquarters buildings and another for a mall property in San Antonio, Texas.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Help%20Spotlight%20PA%20continue%20to%20dig%20into%20the%20federal%20investigation%20of%20Pa.'s%20massive%20public%20school%20pension%20fund%20by%20becoming%20a%20member.&eyebrow_text=PAY%20IT%20FORWARD"></div>
-
 Before the board issued its statement, reporters asked Charles Elson, a finance professor at the University of Delaware and an expert on corporate governance, to examine the filings, known as 990s, named for their official IRS form number. He said they were either “poorly worded” or revealed an obvious conflict of interest for PSERS.
 
 “It puts those individuals on both sides of the transaction,” Elson said. “You’re an employee of the pension system, but why are you working with and being paid by an entity that does business with the pension fund?”
 
 While PSERs puts its billions mainly into stocks, bonds, and private-equity businesses not on the stock market, it has also directly acquired some real estate, buying properties worth $1.1 billion. Its <a href="https://www.inquirer.com/business/psers-pensions-real-estate-florida-california-farms-atlanta-washington-20190412.html">holdings are eclectic</a> — too much so, critics say — ranging from a mall in Ft. Lauderdale to mobile-home parks in Michigan to a pistachio orchard in California.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Help%20Spotlight%20PA%20continue%20to%20dig%20into%20the%20federal%20investigation%20of%20Pa.'s%20massive%20public%20school%20pension%20fund%20by%20becoming%20a%20member.&eyebrow_text=PAY%20IT%20FORWARD"></div>
 
 In 2017, PSERS began buying properties closer to home. The agency has been secretive about the purchases, keeping plans confidential. Beyond demolishing the Patriot-News building, nothing visible has been done to the real estate. At one point, fund executives told the board that the plan might partner with Harrisburg University of Science and Technology on an office tower, but the university said recently that nothing had come of that.
 
