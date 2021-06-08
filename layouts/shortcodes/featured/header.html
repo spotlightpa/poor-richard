@@ -6,6 +6,8 @@
 {{ $date := .Get "date" }}
 {{ $byline := .Get "byline" }}
 {{ $outlet := .Get "outlet" | default "Spotlight PA" }}
+{{ $videoSrc := .Get "video-src" }}
+{{ $videoType := .Get "video-type" }}
 {{ $imageCredit := .Get "image-credit" }}
 {{ $imageSource := .Get "image-source" }}
 {{ $imageDesc := .Get "image-description" }}
@@ -56,22 +58,35 @@
 
       <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
         <picture class="bg-g-4 absolute inset-0">
-          {{ if in (string $srcset) ".jpeg" }}
-            <source
-              type="image/webp"
-              srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+          {{ if $videoSrc }}
+            <source type="{{ $videoType }}" srcset='{{ $videoSrc }}'>
+            <img
+              alt="{{ $imageDesc }}"
+              title="{{ $imageDesc }}"
+              src="{{ $imgSmallSrc }}"
+              class="w-full h-full object-cover"
+              {{ if $focus }}
+                style="object-position: {{ $focus }};"
+              {{ end }}
+            >
+          {{ else }}
+            {{ if in (string $srcset) ".jpeg" }}
+              <source
+                type="image/webp"
+                srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+              >
+            {{ end }}
+            <img
+              alt="{{ $imageDesc }}"
+              title="{{ $imageDesc }}"
+              src="{{ $imgSmallSrc }}"
+              srcset="{{ $srcset }}"
+              class="w-full h-full object-cover"
+              {{ if $focus }}
+                style="object-position: {{ $focus }};"
+              {{ end }}
             >
           {{ end }}
-          <img
-            alt="{{ $imageDesc }}"
-            title="{{ $imageDesc }}"
-            src="{{ $imgSmallSrc }}"
-            srcset="{{ $srcset }}"
-            class="w-full h-full object-cover"
-            {{ if $focus }}
-              style="object-position: {{ $focus }};"
-            {{ end }}
-          >
         </picture>
       </div>
     </header>
