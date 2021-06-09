@@ -56,7 +56,13 @@ State Sen. Katie Muth (D., Montgomery), who became a PSERS board member this yea
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=%3Cb%3EDo%20you%20have%20information%20about%20the%20ongoing%20federal%20investigation%20into%20PSERS%20or%20its%20past%20actions%3F%3C%2Fb%3E%20We%20want%20to%20hear%20from%20you."></div>
 
-In its statement Monday, the retirement system said it created nonprofits to own real estate as a buffer against lawsuits “to limit legal risk.”
+Late Tuesday, Muth took the unusual step of suing PSERS in Commonwealth Court in a bid to force the fund to turn over the records.
+
+In the lawsuit, her lawyer, Terry Mutchler, with Obermayer, Rebmann, Maxwell and Hippel, LLP in Philadelphia, said the fund was harming the ability of the board members to exercise oversight.
+
+“To act in blind obedience, particularly given the errors that precipitated this investigation, would be nothing short of reckless,” Mutchler wrote.
+
+In its statement Monday, the retirement system said it created nonprofits to own real estate as a buffer against lawsuits, “to limit legal risk.”
 
 PSERS did not say when it filed the revised forms. As The Inquirer and Spotlight have previously reported, federal prosecutors sought information about the Harrisburg real estate in subpoenas dated March 24. At a May 5 board meeting closed to the public and the media, lawyers from the Morgan Lewis firm, one of three firms hired by PSERS to address the FBI probe, briefed the board about the disclosure forms and said it was looking into whether the staff was paid by the real estate firm and whether the board even knew that the nonprofits had been formed, sources said.
 
