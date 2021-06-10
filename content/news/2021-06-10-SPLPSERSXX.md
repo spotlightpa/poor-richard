@@ -32,7 +32,7 @@ extended-kicker = ""
 
 Six trustees for Pennsylvania’s largest pension fund have called for the full 15-member board to vote Friday to fire the $64 billion chief executive and top investment officer, as the fund grapples with an FBI investigation and management mistakes.
 
-On Thursday morning, the dissidents delivered a detailed letter sharply criticizing the leadership of PSERS executive director Glen Grell and investment chief James H. Grossman Jr. Grell has led the fund for the last five years after serving 11 years as a Republican lawmaker in the state House of Representatives. Grossman, the highest-paid state employee, heads a 50-member unit overseeing the fund’s investment strategy, which is at the core of the complaints against him and Grell.
+On Thursday morning, the dissidents delivered a detailed letter sharply criticizing the leadership of PSERS Executive Director Glen Grell and Chief Investment Officer James H. Grossman Jr. Grell has led the fund for the last five years after serving 11 years as a Republican lawmaker in the state House of Representatives. Grossman, the highest-paid state employee, heads a 50-member unit overseeing the fund’s investment strategy, which is at the core of the complaints against him and Grell.
 
 The letter, a copy of which was obtained by Spotlight PA and The Inquirer, was unchanged from<a href="https://www.spotlightpa.org/news/2021/06/pa-psers-fund-treasuer-fire-leadership/"> the draft obtained Wednesday</a> by the newsrooms. It mounts a detailed case against the leaders’ investments choices, blasting them as high-fee, poor-performing creations that serve the interests of venture capital and private equity.
 
