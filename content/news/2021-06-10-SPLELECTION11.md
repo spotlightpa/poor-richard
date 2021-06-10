@@ -30,11 +30,11 @@ layout = ""
 extended-kicker = ""
 +++
 
-<a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 Pennsylvania Republicans unveiled their first proposal for overhauling the state’s election system Thursday, with lawmakers in the state House hoping to make voter identification requirements stricter, establish in-person early voting, and require signature verification of mail ballots, among other major changes.
 
-State Rep. Seth Grove (R., York), chair of the House State Government Committee and House Republicans’ point person for election legislation, plans to introduce the bill Thursday, after months of hearings with elections administrators, experts, and voting rights activists.
+State Rep. Seth Grove (R., York), chair of the House State Government Committee and House Republicans’ point person for election legislation, plans to introduce the bill Thursday, <a href="https://www.spotlightpa.org/news/2021/04/pa-election-2020-law-changes-trump-falsehoods-fraud/" target="_blank">after months of hearings with elections administrators, experts, and voting rights activists</a>.
 
 The legislation is sure to draw intense scrutiny and will likely face steep obstacles as Republican leaders, who control both chambers of the state legislature, try to keep their party unified while also winning the approval of Democratic Gov. Tom Wolf.
 
@@ -66,17 +66,17 @@ Among the proposed election changes in the initial bill:
 
 - Establish a Bureau of Election Audits under the state attorney general’s office
 
-- Allow counties to open satellite elections offices
+- Allow counties to open satellite election offices
 
 - Require signature verification for mail ballots
 
 - Require counties to purchase electronic poll books
 
-- Bans counties from accepting private donations for election administration
+- <a href="https://www.spotlightpa.org/news/2021/05/pa-2020-election-zuckerberg-grants-gop-outcry/" target="_blank">Bans counties from accepting private donations for election administration</a>
 
 - Increase poll worker compensation from $75-$200 to $175-$300, with the Pennsylvania Department of State covering half the cost of the increases.
 
-Republicans dubbed the bill, HB1300, the Voting Rights Protection Act.
+Republicans dubbed the bill, HB 1300, the Voting Rights Protection Act.
 
 “Pennsylvanians must have faith in their elections and this bill is another piece of restoring the public’s trust,” House Speaker Bryan Cutler (R., Lancaster) said in a statement.
 
@@ -86,7 +86,7 @@ The proposed changes would have a variety of effects on elections, and past expe
 
 “This responsible bill includes all aspects of issues brought before the committee and will propel Pennsylvania’s election into the 21st century, all while fixing fatal flaws and election security issues,” Grove said in a statement. “Pennsylvania must be a leader in secure elections, which are also accessible to all legal voters. The Voting Rights Protection Act thoughtfully achieves both initiatives while also supporting citizens’ right to vote.”
 
-Pennsylvania’s election code was largely untouched for a long time after its creation in 1937, until Republican legislative leaders negotiated with Wolf in 2019. Together, they passed the law known as Act 77, which for the first time allowed any voter to cast ballots by mail.
+Pennsylvania’s Election Code was largely untouched for a long time after its creation in 1937, until Republican legislative leaders negotiated with Wolf in 2019. Together, they passed the law known as Act 77, <a href="https://www.spotlightpa.org/news/2020/12/pennsylvania-election-2020-act-77-mail-voting-republican-audit/" target="_blank">which for the first time allowed any voter to cast ballots by mail</a>.
 
 But that major change, taking effect during the 2020 presidential election and the coronavirus pandemic, revealed some of the weaknesses in the current system, parts of which were either outdated or entirely new and untested. And it showed some of the dangers of moving too quickly without simultaneously funding Pennsylvania’s election infrastructure, which, like in other states, has long been underfunded and understaffed.
 
