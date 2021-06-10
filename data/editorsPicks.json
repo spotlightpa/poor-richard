@@ -9,9 +9,9 @@
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-06-10-SPLPSERSXX.md",
     "content/news/2021-06-10-SPLDEC11.md",
-    "content/news/2021-06-09-SPLDATA10.md",
-    "content/news/2021-06-10-SPLGIFTBANXX.md"
+    "content/news/2021-06-09-SPLDATA10.md"
   ],
   "sidebarPicks": [
     "content/news/2021-05-12-SPLEXPENSES13.md"
