@@ -53,7 +53,7 @@ module.exports = {
         beige: "0 0 0 3px #f4f1ee80",
       },
       dropShadow: {
-        "outline": "0 1px 1px rgba(0, 0, 0, 0.5)",
+        outline: "0 1px 1px rgba(0, 0, 0, 0.5)",
       },
       lineHeight: {
         normal: "1.6",
