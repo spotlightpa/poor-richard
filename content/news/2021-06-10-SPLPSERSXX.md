@@ -32,7 +32,7 @@ extended-kicker = ""
 
 Six trustees for Pennsylvania’s largest pension fund have called for the full 15-member board to vote Friday to fire the $64 billion chief executive and top investment officer, as the fund grapples with an FBI investigation and management mistakes.
 
-On Thursday morning, the dissidents delivered a detailed letter sharply criticizing the leadership of PSERS executive director Glen Grell and investment chief James H. Grossman Jr. Grell has led the fund for the last five years after serving 11 years as a Republican lawmaker in the state House of Representatives. Grossman, the highest-paid state employee, heads a 50-member unit overseeing the fund’s investment strategy - which is at the core of the complaints against him and Grell.
+On Thursday morning, the dissidents delivered a detailed letter sharply criticizing the leadership of PSERS executive director Glen Grell and investment chief James H. Grossman Jr. Grell has led the fund for the last five years after serving 11 years as a Republican lawmaker in the state House of Representatives. Grossman, the highest-paid state employee, heads a 50-member unit overseeing the fund’s investment strategy, which is at the core of the complaints against him and Grell.
 
 The letter, a copy of which was obtained by Spotlight PA and The Inquirer, was unchanged from<a href="https://www.spotlightpa.org/news/2021/06/pa-psers-fund-treasuer-fire-leadership/"> the draft obtained Wednesday</a> by the newsrooms. It mounts a detailed case against the leaders’ investments choices, blasting them as high-fee, poor-performing creations that serve the interests of venture capital and private equity.
 
@@ -60,7 +60,7 @@ The dissident bloc says the board should vote to show it has “no confidence”
 
 Among the nine board members who refrained from signing are board chairman Christopher Santa Maria, a teacher and former union leader in the Lower Merion schools, and several other board members tied to the PSEA, the state’s biggest teachers union who have staunchly defended PSERS managers.
 
-PSERS — the Pennsylvania School Employee’s Retirement System — is one of the 25 largest pension systems in the nation. It sends $6 billion in retirement checks annually to 265,000 former teachers and other school staff.
+PSERS — the Public School Employees’ Retirement System — is one of the 25 largest pension systems in the nation. It sends $6 billion in retirement checks annually to 265,000 former teachers and other school staff.
 
 Its annual finances hinge on about $5 billion from taxpayers, about $1 billion from working teachers, and about $4 billion on returns in investments. Despite its giant investment pool, it is still $40 billion short of what it needs to meet promises to future retirees. Current recipients have not had a cost-of-living increase in nearly 20 years while performance has lagged far behind comparable funds.
 
