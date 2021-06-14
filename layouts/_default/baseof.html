@@ -23,7 +23,6 @@
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
 <body
-  data-built-at='{{ now.Format "3:04pm MST, Mon. Jan 02, 2006" }}'
   data-ga-label='{{ $pageCat }}'
 >
   {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
