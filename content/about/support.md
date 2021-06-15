@@ -166,7 +166,6 @@ Laura and John Arnold <br> Amanda Bennett <br> R. Thomas Berner <br> Jennifer Be
 * William Blando
 * Mary L. Bloom
 * Michele Bloom
-* Shelly Bloom
 * Barbara Bloomfield
 * Stephen Blum
 * Sherman Bodner
