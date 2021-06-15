@@ -16,12 +16,11 @@
   "widthRatio" $widthRatio
   "heightRatio" $heightRatio
   "sizeHint" "50vw"
-  "figClass" "mb-5"
 }}
 {{ partial "component/image-block.html" $imgOpts }}
 
 {{ with $caption }}
-  <p class="is-size-6 is-italic">{{ . }}</p>
+  <p class="is-size-6 is-italic mt-5">{{ . }}</p>
 {{ end }}
 </div>
 
