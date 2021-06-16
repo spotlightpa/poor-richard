@@ -36,9 +36,8 @@ export default function readMore({ showDate = false }) {
       hrefs.add(window.location.pathname);
 
       // Figure out the right image size to request
-      let { width = 0, height = 0 } = this.$refs.archives.querySelector(
-        "figure img"
-      );
+      let { width = 0, height = 0 } =
+        this.$refs.archives.querySelector("figure img");
       let aspectRatio = height / width;
       width = roundUp(window.devicePixelRatio * width, 100);
       height = Math.round(aspectRatio * width);
