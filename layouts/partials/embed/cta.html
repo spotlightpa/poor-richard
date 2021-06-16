@@ -6,7 +6,7 @@
       return this.params.get('url') || 'https://www.spotlightpa.org/';
     },
     _(name, fallback) {
-      return spl.sanitizeText(this.params.get(name) || fallback);
+      return this.params.get(name) || fallback;
     }
   }"
   x-cloak
@@ -18,7 +18,7 @@
         class="has-text-danger is-uppercase"
         data-ga-category="eyebrow"
         target="_blank"
-        x-html="_('eyebrow', 'Eyebrow')"
+        x-rich-text="_('eyebrow', 'Eyebrow')"
       ></a>
     </h2>
     <h2 class="subtitle is-5">
@@ -27,7 +27,7 @@
         class="has-text-black content"
         data-ga-category="body"
         target="_blank"
-        x-html="_('body', 'Body')"
+        x-rich-text="_('body', 'Body')"
       ></a>
     </h2>
     <div class="buttons is-centered">
@@ -36,7 +36,7 @@
         class="button is-danger is-uppercase has-text-weight-semibold"
         data-ga-category="button"
         target="_blank"
-        x-html="_('cta', 'Just Do It!')"
+        x-rich-text="_('cta', 'Just Do It!')"
       ></a>
     </div>
   </div>

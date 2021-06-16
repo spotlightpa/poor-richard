@@ -5,8 +5,7 @@
 {{ $link := .Get "link" | default "/donate/" }}
 
 <aside
-  x-data="spl.lightbox()"
-  x-init="init()"
+  x-data="lightbox"
   class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
   data-ga-category="inline:lightbox"
 >
@@ -24,7 +23,7 @@
   <div class="relative z-10">
     <a
       class="flex flex-col rounded shadow bg-black overflow-hidden"
-      @click.away="dismiss()"
+      @click.outside="dismiss()"
       href="{{ $link }}"
     >
       <img

@@ -37,7 +37,7 @@
           style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
         >
           <img
-            x-data="spl.imageRotator($el.dataset.images)"
+            x-data="image-rotator"
             data-images="{{ $imgDesktop }}"
             :src="choice"
             src="{{ $magicPixel }}"
@@ -71,7 +71,7 @@
         >
           <img
             class="aspect-ratio-inner"
-            x-data="spl.imageRotator($el.dataset.images)"
+            x-data="image-rotator"
             data-images="{{ $imgMobile }}"
             :src="choice"
             src="{{ $magicPixel }}"

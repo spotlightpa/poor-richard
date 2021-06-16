@@ -3,7 +3,7 @@
   x-data="{
     params: new URLSearchParams(window.location.search),
     _(name, fallback) {
-      return spl.sanitizeText(this.params.get(name) || fallback);
+      return this.params.get(name) || fallback;
     }
   }"
   x-cloak
@@ -21,7 +21,7 @@
         class="has-text-black content"
         data-ga-category="body"
         target="_blank"
-        x-html="_('teaser_text', 'If you learned something from this report, pay it forward and become a member of Spotlight PA so someone else can in the future.')"
+        x-rich-text="_('teaser_text', 'If you learned something from this report, pay it forward and become a member of Spotlight PA so someone else can in the future.')"
       ></a>
     </h2>
     <div class="buttons is-centered">
@@ -30,7 +30,7 @@
         class="button is-danger is-uppercase has-text-weight-semibold"
         data-ga-category="button"
         target="_blank"
-        x-html="_('cta_text', 'Click to Contribute')"
+        x-rich-text="_('cta_text', 'Click to Contribute')"
       ></a>
     </div>
   </div>

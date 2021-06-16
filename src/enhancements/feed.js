@@ -12,7 +12,7 @@ export default function feed() {
     fetchedObj: {},
     error: null,
 
-    load() {
+    init() {
       if (this.isLoading || this.hasLoaded) return;
 
       this.feedURL = this.$el.dataset.feedUrl;

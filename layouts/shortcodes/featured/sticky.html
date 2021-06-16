@@ -4,7 +4,7 @@
 {{ $height := .Get "height" }}
 <section
   class="fixed z-10 bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
-  x-data="spl.sticky()"
+  x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
   x-transition:enter-start="opacity-0 transform translate-x-8"
@@ -32,7 +32,7 @@
   <a
     class="block my-2 mx-4 rounded p-4 bg-black text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
     @click.capture="close()"
-    @click.away="close()"
+    @click.outside="close()"
     href="/donate/"
   >
     {{ if $url }}

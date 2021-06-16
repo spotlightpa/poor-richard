@@ -15,10 +15,10 @@ function toStory(data, { width, height }) {
   };
 }
 
-export default function readMore({ showDate = false }) {
+export default function readMore() {
   return {
     analytics,
-    showDate,
+    showDate: false,
     hasLoaded: false,
     isLoading: false,
     hasClicked: false,
@@ -26,12 +26,18 @@ export default function readMore({ showDate = false }) {
     fetchedStories: [],
     error: null,
 
+    init() {
+      this.showDate = !!this.$el.dataset.showDate;
+    },
+
     load() {
       if (this.isLoading || this.hasLoaded) return;
       this.isLoading = true;
 
       let hrefs = new Set(
-        Array.from(this.$el.querySelectorAll("a")).map((el) => el.pathname)
+        Array.from(this.$refs.root.querySelectorAll("a")).map(
+          (el) => el.pathname
+        )
       );
       hrefs.add(window.location.pathname);
 
