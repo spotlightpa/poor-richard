@@ -362,16 +362,16 @@ a.navbar-burger:hover {
 }
 
 .supporters-list {
+  @media screen and (min-width: $desktop) {
+    columns: 2;
+  }
+  @media screen and (min-width: $fullhd) {
+    columns: 3;
+  }
+
   ul {
     margin: 0;
     padding: 0;
-
-    @media screen and (min-width: $desktop) {
-      columns: 2;
-    }
-    @media screen and (min-width: $fullhd) {
-      columns: 3;
-    }
   }
 
   li {
