@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/events/"
-to = "https://www.crowdcast.io/spotlightpa"
+to = "/topics/events/"
 code = 302
 
 [[redirects]]
