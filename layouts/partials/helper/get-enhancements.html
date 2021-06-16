@@ -2,6 +2,6 @@
 {{ $jsOpts := dict "minify" $minify "targetPath" "/@src/enhancements.js" "target" "es2019" }}
 {{ $js := resources.Get "js/esbuild/enhancements.js" | js.Build $jsOpts }}
 {{ if $minify }}
-  {{ $js = $js | minify | fingerprint }}
+  {{ $js = $js | fingerprint }}
 {{ end }}
 {{ return $js.RelPermalink }}
