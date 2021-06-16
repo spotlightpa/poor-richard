@@ -1,8 +1,7 @@
 {{ $id := partial "helper/new-id" . }}
 <aside
   data-ga-category="inline:slider"
-  x-data="spl.slider()"
-  x-init="init()"
+  x-data="slider"
   class="mt-8 mx-auto lg:-mx-32 xl:-mx-48 relative"
   @keydown.space.prevent="handleSpace($event)"
 >

@@ -1,12 +1,14 @@
 import sendEvent from "../utils/send-event.js";
 
-export default function intersector(eventName, { once = true } = {}) {
+export default function intersector() {
   return {
-    eventName,
-    once,
+    eventName: null,
+    once: true,
     observer: null,
 
     init() {
+      this.eventName = this.$el.dataset.name;
+      this.once = !!this.$el.dataset.repeat;
       if (!("IntersectionObserver" in window)) {
         return;
       }

@@ -7,13 +7,13 @@
   class="modal"
   data-ga-category="modal:donate:totebag"
   :class="modalClass"
-  x-data="spl.modal()"
+  x-data="modal"
   x-show="isOpen"
   x-transition:enter="fade-enter-active"
   x-transition:enter-start="fade-enter"
   x-transition:leave="fade-enter-active is-active"
   x-transition:leave-end="fade-enter"
-  @scroll.window.once.passive="init()"
+  @scroll.window.once.passive="trigger()"
   role="dialog"
   aria-modal="true"
   aria-label="Donation promotion"
@@ -23,9 +23,9 @@
     class="modal-content"
     x-ref="content"
     tabindex="-1"
-    @click.away="close()"
+    @click.outside="close()"
     @keydown.escape="close()"
-    @touchmove.away.prevent
+    @touchmove.outside.prevent
   >
     <header class="modal-card-head">
       <p class="modal-card-title has-text-centered is-size-2">

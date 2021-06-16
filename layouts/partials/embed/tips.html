@@ -8,7 +8,7 @@
     showSpanish: false,
     params: new URLSearchParams(window.location.search),
     _(name, fallback) {
-      return spl.sanitizeText(this.params.get(name) || fallback);
+      return this.params.get(name) || fallback;
     },
     get hostPage(){
       let h = window.location.hash.replace(/^#/, '');
@@ -44,7 +44,7 @@
   <div
     class="block"
     x-show="!showSpanish"
-    x-html="_('tip_text', '')"
+    x-rich-text="_('tip_text', '')"
   ></div>
   <div
     x-cloak

@@ -1,6 +1,6 @@
 {{ $idSearch := partial "helper/new-id" . }}
 <section
-  x-data="spl.searchModal()"
+  x-data="search-modal"
   @modal:search:open.window="open()"
   class="modal"
   :class="modalClass"
@@ -17,7 +17,7 @@
   <div class="modal-background"></div>
   <div
     class="modal-content"
-    @click.away="close(true)"
+    @click.outside="close(true)"
     @keydown.escape="close(true)"
     tabindex="-1"
   >

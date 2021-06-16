@@ -18,7 +18,7 @@ export default function modal() {
       return { "is-active": this.isOpen };
     },
 
-    init() {
+    trigger() {
       if (showModalNewsletter()) {
         window.setTimeout(() => {
           this.show();

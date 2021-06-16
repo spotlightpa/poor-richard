@@ -16,7 +16,8 @@
 <section class="section {{ $marginClass }}" data-ga-category="homepage">
   <div
     class="container-hp"
-    x-data="spl.readmore({ showDate: false })"
+    x-data="readmore"
+    x-ref="root"
   >
     <div class="tile is-ancestor is-vertical">
       {{ partial "tile/featured.html" $featuredStories }}
@@ -31,8 +32,8 @@
       </div>
 
       <div
-        x-data="spl.intersector('open-sticky')"
-        x-init="init()"
+        x-data="intersector"
+        data-name='open-sticky'
       ></div>
 
       <div class="tile">
@@ -41,7 +42,7 @@
           <div
             class="tile is-child"
             data-ga-category="midpage"
-            x-data="spl.funnelStatus()"
+            x-data="funnel-status"
           >
             <div x-show="!isSubscriber">
               {{ partial "newsletter/multi-box.html" . }}

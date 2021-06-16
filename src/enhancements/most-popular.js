@@ -10,7 +10,7 @@ export default function mostPopular() {
     fetchRankings: [],
     error: null,
 
-    load() {
+    init() {
       if (this.isLoading || this.hasLoaded) return;
       this.isLoading = true;
 
