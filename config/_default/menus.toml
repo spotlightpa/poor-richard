@@ -168,25 +168,19 @@ url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
 weight = 4
 
 [[social]]
-name = "Crowdcast"
-pre = "is-uppercase"
-url = "/events/"
-weight = 5
-
-[[social]]
 name = "Flipboard"
 pre = "is-uppercase"
 url = "https://flipboard.com/@SpotlightPA"
-weight = 6
+weight = 5
 
 [[social]]
 name = "Github"
 pre = "is-uppercase"
 url = "https://www.github.com/spotlightpa/"
-weight = 7
+weight = 6
 
 [[social]]
 name = "Google News"
 pre = "is-uppercase"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 8
+weight = 7
