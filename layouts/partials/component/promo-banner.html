@@ -38,7 +38,7 @@
         >
           <img
             x-data="image-rotator"
-            data-images="{{ $imgDesktop }}"
+            data-@images="{{ $imgDesktop }}"
             :src="choice"
             src="{{ $magicPixel }}"
             alt="{{ $alt }}"
@@ -72,7 +72,7 @@
           <img
             class="aspect-ratio-inner"
             x-data="image-rotator"
-            data-images="{{ $imgMobile }}"
+            data-@images="{{ $imgMobile }}"
             :src="choice"
             src="{{ $magicPixel }}"
             alt="{{ $alt }}"

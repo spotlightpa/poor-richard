@@ -18,19 +18,24 @@ import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
 document.addEventListener("alpine:initializing", () => {
-  Alpine.data("embed-list", embedList);
-  Alpine.data("feed", feed);
-  Alpine.data("funnel-status", funnelStatus);
-  Alpine.data("image-rotator", imageRotator);
-  Alpine.data("intersector", intersector);
-  Alpine.data("lightbox", lightbox);
-  Alpine.data("modal", modal);
-  Alpine.data("most-popular", mostPopular);
-  Alpine.data("readmore", readmore);
-  Alpine.data("search-articles", searchArticles);
-  Alpine.data("search-modal", searchModal);
-  Alpine.data("slider", slider);
-  Alpine.data("sticky", sticky);
+  for (let [name, comp] of [
+    ["embed-list", embedList],
+    ["feed", feed],
+    ["funnel-status", funnelStatus],
+    ["image-rotator", imageRotator],
+    ["intersector", intersector],
+    ["lightbox", lightbox],
+    ["modal", modal],
+    ["most-popular", mostPopular],
+    ["readmore", readmore],
+    ["search-articles", searchArticles],
+    ["search-modal", searchModal],
+    ["slider", slider],
+    ["sticky", sticky],
+  ]) {
+    Alpine.data(name, comp);
+  }
+
   Alpine.directive(
     "rich-text",
     (el, { expression }, { evaluateLater, effect }) => {
@@ -43,6 +48,20 @@ document.addEventListener("alpine:initializing", () => {
       });
     }
   );
+  Alpine.magic("attrs", (el) => {
+    let o = {};
+    for (let [name, val] of Object.entries(el.dataset)) {
+      if (name.startsWith("!")) {
+        name = name.substring(1);
+        val = val === "true" || val === "1" || val === name;
+      } else if (name.startsWith("@")) {
+        name = name.substring(1);
+        val = val.split(",").map((s) => s.trim());
+      }
+      o[name] = val;
+    }
+    return o;
+  });
 });
 
 Alpine.start();

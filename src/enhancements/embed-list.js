@@ -9,8 +9,7 @@ export default function embedList() {
     showCopied: false,
 
     init() {
-      this.scriptSrc = this.$el.dataset.scriptSrc;
-      this.baseURL = this.$el.dataset.url;
+      ({ scriptSrc: this.scriptSrc, url: this.baseURL } = this.$attrs);
       this.paramEls = Array.from(this.$el.querySelectorAll("input[name]"));
       this.srcEl = this.$el.querySelector("[data-spl-src]");
       this.setEmbedCode();

@@ -27,7 +27,7 @@ export default function readMore() {
     error: null,
 
     init() {
-      this.showDate = !!this.$el.dataset.showDate;
+      ({ showDate: this.showDate = false } = this.$attrs);
     },
 
     load() {

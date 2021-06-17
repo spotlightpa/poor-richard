@@ -15,7 +15,7 @@ export default function feed() {
     init() {
       if (this.isLoading || this.hasLoaded) return;
 
-      this.feedURL = this.$el.dataset.feedUrl;
+      ({ feedUrl: this.feedURL } = this.$attrs);
 
       let datestringer = new Intl.DateTimeFormat("en-US", {
         weekday: "short",

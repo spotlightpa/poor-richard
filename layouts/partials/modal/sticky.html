@@ -28,7 +28,7 @@
       @click.outside="close"
     ><img
         x-data="image-rotator"
-        data-images="{{ $imgDesktop }}"
+        data-@images="{{ $imgDesktop }}"
         :src="choice"
         alt="{{ $alt }}"
         title="{{ $alt }}"
