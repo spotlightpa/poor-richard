@@ -1,5 +1,14 @@
 {{ $minify := not site.IsServer }}
-{{ $jsOpts := dict "minify" $minify "targetPath" "/@src/enhancements.js" "target" "es2019" }}
+{{ $defines := dict
+  "process.env.NODE_ENV" `"production"`
+  "ALPINE_VERSION" `"spl-dev"`
+}}
+{{ $jsOpts := dict
+  "minify" $minify
+  "targetPath" "/@src/enhancements.js"
+  "target" "es2019"
+  "defines" $defines
+}}
 {{ $js := resources.Get "js/esbuild/enhancements.js" | js.Build $jsOpts }}
 {{ if $minify }}
   {{ $js = $js | fingerprint }}
