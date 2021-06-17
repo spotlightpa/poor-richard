@@ -1,4 +1,4 @@
-import Alpine from "alpinejs";
+import Alpine from "alpinejs/src/index.js";
 
 import "../utils/add-listeners.js";
 
