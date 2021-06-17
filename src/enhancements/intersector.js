@@ -7,8 +7,8 @@ export default function intersector() {
     observer: null,
 
     init() {
-      this.eventName = this.$el.dataset.name;
-      this.once = !!this.$el.dataset.repeat;
+      ({ name: this.eventName } = this.$attrs);
+
       if (!("IntersectionObserver" in window)) {
         return;
       }
