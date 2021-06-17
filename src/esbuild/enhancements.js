@@ -48,19 +48,17 @@ document.addEventListener("alpine:initializing", () => {
       });
     }
   );
-  Alpine.magic("attrs", (el) => {
-    let o = {};
-    for (let [name, val] of Object.entries(el.dataset)) {
-      if (name.startsWith("!")) {
-        name = name.substring(1);
-        val = val === "true" || val === "1" || val === name;
-      } else if (name.startsWith("@")) {
-        name = name.substring(1);
+  Alpine.magic("setAttrs", (el) => (target, obj) => {
+    for (let [targetName, source] of Object.entries(obj)) {
+      let val = el.dataset[source];
+      if (source.startsWith("!")) {
+        val = val === "true" || val === "1";
+      } else if (source.startsWith("@")) {
         val = val.split(",").map((s) => s.trim());
       }
-      o[name] = val;
+      target[targetName] = val;
     }
-    return o;
+    return target;
   });
 });
 

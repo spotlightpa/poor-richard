@@ -15,7 +15,7 @@ export default function feed() {
     init() {
       if (this.isLoading || this.hasLoaded) return;
 
-      ({ feedUrl: this.feedURL } = this.$attrs);
+      this.$setAttrs(this, { feedURL: "feedUrl" });
 
       let datestringer = new Intl.DateTimeFormat("en-US", {
         weekday: "short",

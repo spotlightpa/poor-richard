@@ -7,7 +7,7 @@ export default function intersector() {
     observer: null,
 
     init() {
-      ({ name: this.eventName } = this.$attrs);
+      this.$setAttrs(this, { eventName: "name" });
 
       if (!("IntersectionObserver" in window)) {
         return;

@@ -27,7 +27,7 @@ export default function readMore() {
     error: null,
 
     init() {
-      ({ showDate: this.showDate = false } = this.$attrs);
+      this.$setAttrs(this, { showDate: "!showDate" });
     },
 
     load() {
