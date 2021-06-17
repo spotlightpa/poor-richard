@@ -1,26 +1,24 @@
-{{- $json := newScratch -}}
-
-{{- $items := slice -}}
 {{- $news := site.GetPage "/news/_index.md" -}}
-{{- range first 800 $news.RegularPages -}}
+{
+  "items": [
+    {{ range $i, $p := first 800 $news.RegularPages }}
+      {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
+      {{ if ne $i 0 }},{{ end }}
+      {
+        "url": {{ .RelPermalink | jsonify }},
+        "title": {{ .LinkTitle | jsonify }},
 
-  {{- $json.SetInMap "item" "url" .RelPermalink -}}
-  {{- $json.SetInMap "item" "title" .LinkTitle -}}
-  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+        "byline": {{ $params.byline | jsonify }},
+        "kicker": {{ $params.kicker | jsonify }},
+        "blurb": {{ $params.blurb | jsonify }},
 
-  {{- $json.SetInMap "item" "byline" $params.byline -}}
-  {{- $json.SetInMap "item" "kicker" $params.kicker -}}
-  {{- $json.SetInMap "item" "blurb" $params.blurb -}}
+        "published": {{ $params.published | jsonify }},
+        "publishedISO": {{ $params.publishedISO | jsonify }},
 
-  {{- $json.SetInMap "item" "published" $params.published -}}
-  {{- $json.SetInMap "item" "publishedISO" $params.publishedISO -}}
-
-  {{ $json.SetInMap "item" "image" (.Param "image") }}
-  {{ $json.SetInMap "item" "imageCredit" (.Param "image-credit") }}
-  {{ $json.SetInMap "item" "imageDescription" (.Param "image-description") }}
-
-  {{- $items = append ($json.Get "item") $items -}}
-  {{- $json.Delete "item" -}}
-{{- end -}}
-
-{{- dict "items" $items | jsonify -}}
+        "image": {{ .Param "image" | jsonify }},
+        "imageCredit": {{ .Param "image-credit" | jsonify }},
+        "imageDescription": {{ .Param "image-description" | jsonify }}
+      }
+    {{- end -}}
+  ]
+}
