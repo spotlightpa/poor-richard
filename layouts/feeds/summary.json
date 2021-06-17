@@ -2,7 +2,7 @@
 
 {{- $items := slice -}}
 {{- $news := site.GetPage "/news/_index.md" -}}
-{{- range first 500 $news.RegularPages -}}
+{{- range first 800 $news.RegularPages -}}
 
   {{- $json.SetInMap "item" "url" .RelPermalink -}}
   {{- $json.SetInMap "item" "title" .LinkTitle -}}
