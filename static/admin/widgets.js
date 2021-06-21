@@ -1,5 +1,15 @@
 /*global CMS,h,createClass*/
 
+class JSONMap extends Map {
+  toJSON() {
+    let o = {};
+    for (let [k, v] of this.entries()) {
+      o[k] = v;
+    }
+    return o;
+  }
+}
+
 let SupportersControl = createClass({
   handleChange(e) {
     let encoded = window.btoa(e.target.value);
@@ -20,7 +30,7 @@ let SupportersControl = createClass({
       if (tsv.length === 1) {
         tsv = line.split(" ");
       }
-      if (tsv.length === 1 && !tsv[0]) {
+      if (tsv.filter((s) => !!s).length < 1) {
         continue;
       }
       let display = tsv.filter((s) => !!s).join(" ");
@@ -31,7 +41,7 @@ let SupportersControl = createClass({
         sort = [tail + ",", ...head].filter((s) => !!s).join(" ");
       }
       values.push(
-        new Map([
+        new JSONMap([
           ["display", display],
           ["sort", sort],
         ])
