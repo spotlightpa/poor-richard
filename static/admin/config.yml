@@ -10,7 +10,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: master
+  branch: cj/supporters
 
 yaml-definitions: &page-fields
   - label: Draft
@@ -458,6 +458,14 @@ collections:
             hint: "Link when clicking on the sticky slider"
             widget: string
             required: false
+      - label: "Supporters"
+        name: supporters
+        file: data/supporters.json
+        format: json
+        fields:
+          - label: "List of supporters"
+            name: list
+            widget: supporters
       - label: "News landing page"
         name: news-landing
         file: content/news/_index.md
