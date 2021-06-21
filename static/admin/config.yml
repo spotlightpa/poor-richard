@@ -10,7 +10,7 @@ show_preview_links: true
 backend:
   name: github
   repo: spotlightpa/poor-richard
-  branch: cj/supporters
+  branch: master
 
 yaml-definitions: &page-fields
   - label: Draft
