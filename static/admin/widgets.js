@@ -11,11 +11,6 @@ class JSONMap extends Map {
 }
 
 let SupportersControl = createClass({
-  handleChange(e) {
-    let encoded = window.btoa(e.target.value);
-    this.props.onChange(encoded);
-  },
-
   handleTextArea(e) {
     this.setState({ textarea: e.target.value });
   },
@@ -97,6 +92,7 @@ let SupportersControl = createClass({
               children: "Sort as name",
             }),
             h("input", {
+              readOnly: true,
               className: this.props.classNameWidget,
               value: supporterObj.get("sort"),
             }),
@@ -109,6 +105,7 @@ let SupportersControl = createClass({
               children: "Display name",
             }),
             h("input", {
+              readOnly: true,
               className: this.props.classNameWidget,
               value: supporterObj.get("display"),
             }),
