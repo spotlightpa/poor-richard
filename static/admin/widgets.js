@@ -57,6 +57,14 @@ let SupportersControl = createClass({
     values.splice(n, 1);
     this.props.onChange(values);
   },
+  handleChange(prop, n, ev) {
+    let text = ev.target.value;
+    let values = Array.from(this.props.value);
+    let v = new JSONMap(values[n].entries());
+    v.set(prop, text);
+    values[n] = v;
+    this.props.onChange(values);
+  },
   newEntriesWidget() {
     return h("div", {
       children: [
@@ -92,9 +100,9 @@ let SupportersControl = createClass({
               children: "Sort as name",
             }),
             h("input", {
-              readOnly: true,
               className: this.props.classNameWidget,
               value: supporterObj.get("sort"),
+              onInput: (ev) => this.handleChange("sort", n, ev),
             }),
           ],
         }),
@@ -105,9 +113,9 @@ let SupportersControl = createClass({
               children: "Display name",
             }),
             h("input", {
-              readOnly: true,
               className: this.props.classNameWidget,
               value: supporterObj.get("display"),
+              onInput: (ev) => this.handleChange("display", n, ev),
             }),
           ],
         }),
