@@ -5,9 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
+  <style>
+  .spl-col {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .spl-col > * {
+    flex-grow: 1;
+  }
+  .spl-row {
+    display: flex;
+    flex-direction: column;
+    gap:  2rem;
+  }
+  .spl-center {
+    flex-grow: 0;
+    align-self: flex-end;
+  }
+  .spl-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(122, 130, 145);
+    background-color: rgb(223, 223, 227);
+    display: inline-block;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 3px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    position: relative;
+  }
+  </style>
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script type="module" src="/admin/widgets.js"></script>
 </body>
 </html>
