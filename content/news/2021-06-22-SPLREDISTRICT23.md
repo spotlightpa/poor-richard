@@ -48,13 +48,19 @@ Argall said the bill had a better chance of passing if it only focused on congre
 
 “We thought that, better we try to fix this one problem now and then move on rather than try to do it all at once,” Argall said. “Our fear is that if we try to do it all at once, the bill will fail again.”
 
-Boscola’s original bill — and its identical House version — was supported by 25 senators and 89 representatives.
+The original bill — and its identical House version — was supported by 25 senators and 89 representatives from both parties.
 
-Her chief of staff, Joe Kelly, told Spotlight PA and Votebeat last week that the senator was disappointed the amendment guts the guardrails for legislative redistricting, which is done by a five-person commission of legislative leaders and an appointed outside chairman.
+Boscola told Spotlight PA and Votebeat she was disappointed the amendment gutted the guardrails for legislative redistricting, which is done by a five-person commission of legislative leaders and an appointed outside chairman.
 
-Commissioners of that panel previously said they’re <a href="https://www.spotlightpa.org/news/2021/05/pa-redistricting-commission-supreme-court-picks-chair-mark-nordenberg/">committed to making their map-drawing process transparent</a> and have pledged to hold public hearings while they await population data set to be released in mid-August.
+She said she was less concerned about congressional redistricting, as there are built-in checks and balances. Wolf can veto the final product, while the Democratic-controlled Pennsylvania Supreme Court could throw out a congressional map if the justices deem it unconstitutional.
 
-Argall’s proposal keeps some remnants of Boscola’s bill.
+But such reform was desperately needed when it came to the legislative districts, Boscola said.
+
+“The power of the pen is still going to be with the five individuals [on the Legislative Reapportionment Commission],” she said. “The four [party] leaders, they didn’t want to give up the power of the pen.”
+
+Commissioners of that panel previously said they’re <a href="https://www.spotlightpa.org/news/2021/05/pa-redistricting-commission-supreme-court-picks-chair-mark-nordenberg/">committed to making their map-drawing process transparent</a> and have pledged to hold public hearings while they await population data set to be released in mid-August, but no such meetings have been scheduled.
+
+Argall’s proposal keeps some remnants of Boscola’s bill as it relates to congressional redistricting.
 
 It requires the House and Senate State Government committees to explain how the proposed congressional map follows state and federal redistricting criteria and how the map differs from the previous decade. In December 2011, Republican lawmakers revealed and passed a new congressional map in less than two weeks without any public input.
 
@@ -62,7 +68,7 @@ The committees would also be mandated to hold at least four public hearings arou
 
 But Argall’s amendment removed language that prohibits lawmakers from unduly favoring one political party over another — the hallmark of gerrymandering.
 
-“There are people that think that’s a very difficult goal to attain,” Argall told Spotlight PA and Votebeat in <a href="https://www.spotlightpa.org/news/2021/06/pa-election-audit-arizona-david-argall/" target="_blank">an interview last week</a>. “Our goal is to pass a piece of legislation that meets court muster. Our goal is not to pass something that gets thrown into the trash can the first time a judge says, ‘Well you helped candidate X, when you promised to be completely nonpartisan or bipartisan.’”
+“There are people that think that’s a very difficult goal to attain,” Argall told Spotlight PA and Votebeat in an interview last week. “Our goal is to pass a piece of legislation that meets court muster. Our goal is not to pass something that gets thrown into the trash can the first time a judge says, ‘Well you helped candidate X, when you promised to be completely nonpartisan or bipartisan.’”
 
 But Yurij Rudensky, redistricting counsel at the Brennan Center for Justice, said that argument doesn’t pass muster. Multiple courts — including the Pennsylvania Supreme Court — have acknowledged that computer-based methods can determine whether a map is drawn with one party at a disadvantage.
 
@@ -70,7 +76,7 @@ The state’s congressional map was redrawn by an outside expert in 2018 after t
 
 And experts have said the state’s current legislative maps skew toward Republicans — who controlled the process the last time the maps were drawn — and that it <a href="https://www.spotlightpa.org/news/2021/05/pa-house-senate-political-maps-gerrymandered-math-tests-republican-majorities/">is unlikely this happened organically</a>.
 
-Under Argall’s amendment, lawmakers would need to draw districts equal in population and would be prevented from splitting up cities, towns, boroughs, townships, or voting precincts.
+Under Argall’s amendment, lawmakers would need to draw congressional districts equal in population and would be prevented from splitting up cities, towns, boroughs, townships, or voting precincts.
 
 One objection raised by Fair Districts PA, a nonprofit group advocating for redistricting reform, is that Argall’s amendment prioritizes avoiding municipality splits and population equality above all other standards — including compactness and communities of interest — rather than considering all of the standards with equal weight.
 
@@ -79,7 +85,6 @@ One objection raised by Fair Districts PA, a nonprofit group advocating for redi
 Fair Districts also takes issue with what the group said is a lack of transparency in a “broken legislative process.” A few hours before the meeting Tuesday, the amendment still wasn’t publicly available online, and the public wasn’t allowed to testify on the proposed amendment.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
-
 
 “The process once again ignores voters’ concerns, voters’ voices, and our constitutional right to alter and reform our government,” Kuniholm wrote.
 
