@@ -8,7 +8,7 @@
     <div class="control is-expanded has-icons-left">
       <input
         class="input"
-        x-model="query"
+        x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
       >
       <span class="icon is-large is-left">
