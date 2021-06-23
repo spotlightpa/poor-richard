@@ -6,7 +6,13 @@
   target="_blank"
   data-ga-form='newsletters:multi'
   data-ga-category="newsletter"
-  x-data="{ hasFocused: false }"
+  x-data="{
+    hasFocused: false,
+    params: new URLSearchParams(window.location.search),
+    _(name, fallback) {
+      return this.params.get(name) || fallback;
+    },
+  }"
 >
   {{ partial "newsletter/hidden-input.html" . }}
   <p class="is-hidden" hidden>
@@ -16,7 +22,10 @@
     </label>
   </p>
   <h2 class="title is-6 has-text-danger has-text-left is-uppercase is-spaced">Newsletter</h2>
-  <h2 class="subtitle is-5 has-text-black">
+  <h2
+    class="subtitle is-5 has-text-black"
+    x-rich-text="_('cta', 'Get all of the news and accountability journalism you need from Spotlight PA.')"
+  >
     Get all of the news and accountability journalism you need from Spotlight PA.
   </h2>
   <div class="field">
