@@ -36,7 +36,7 @@
                         type="text"
                         class="input"
                         name="{{ $param.name }}"
-                        @input="updateParam()"
+                        @input.debounce.500ms="updateParams"
                         {{ with $param.pattern }}
                           pattern="{{ . }}"
                           @blur="$event.currentTarget.reportValidity()"
@@ -58,7 +58,6 @@
                       contenteditable="true"
                       class="textarea pre-wrap"
                       x-text="embedCode"
-                      x-ref="embedCodeEl"
                     >
                     </div>
                   </div>
