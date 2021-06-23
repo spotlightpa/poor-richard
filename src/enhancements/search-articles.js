@@ -3,7 +3,6 @@ import { apdate } from "journalize";
 import imgproxy from "../utils/imgproxy-url.js";
 import { reportClick as analytics } from "../utils/google-analytics.js";
 import searchAPI from "../utils/search-api.js";
-import { debouncer } from "../utils/timers.js";
 
 function roundUp(n, by) {
   return by * Math.ceil(n / by);
@@ -40,29 +39,31 @@ export default function searchArticles() {
     magicPixel,
 
     init() {
-      const bouncedSearch = debouncer({ milliseconds: 500 }, () =>
-        searchAPI(this.query)
-          .then((results) => {
-            this.error = null;
-            if (results) {
-              this.results = results;
-            }
-          })
-          .catch((error) => {
-            this.isLoading = false;
-            this.error = error;
-          })
-          .finally(() => {
-            this.isLoading = false;
-          })
-      );
-
-      this.$watch("query", () => {
-        this.isLoading = true;
-        bouncedSearch();
-      });
+      this.$watch("query", () => this.search());
     },
 
+    search() {
+      if (!this.query) {
+        this.isLoading = false;
+        this.error = null;
+        return;
+      }
+      this.isLoading = true;
+      searchAPI(this.query)
+        .then((results) => {
+          this.error = null;
+          if (results) {
+            this.results = results;
+          }
+        })
+        .catch((error) => {
+          this.isLoading = false;
+          this.error = error;
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
+    },
     get stories() {
       if (!this.results || !this.results.hits) {
         return [];
