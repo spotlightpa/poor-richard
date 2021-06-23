@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2021-06-22-SPLREDISTRICT23.md"
+    "content/news/2021-06-22-SPLVOTE23.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-03-SPLFIFTH04.md",
-    "content/news/2021-04-26-SPLLOSE27.md"
+    "content/news/2021-06-18-SPLARGALL19.md",
+    "content/news/2021-06-15-SPLVOTER16.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-06-22-SPLVOTE23.md",
+    "content/news/2021-06-22-SPLREDISTRICT23.md",
     "content/news/2021-06-22-SPLDIEMS22.md",
     "content/news/2021-06-17-SPLINSIGHT17.md"
   ],
