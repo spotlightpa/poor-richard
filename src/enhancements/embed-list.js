@@ -1,34 +1,28 @@
+import { after } from "../utils/timers.js";
+
 export default function embedList() {
   return {
     embedCode: "",
     baseURL: "",
     scriptSrc: "",
-    paramEls: null,
+    params: new Map(),
     srcEl: null,
-    debounceID: null,
     showCopied: false,
 
     init() {
       this.$setAttrs(this, { scriptSrc: "scriptSrc", baseURL: "url" });
-      this.paramEls = Array.from(this.$el.querySelectorAll("input[name]"));
       this.srcEl = this.$el.querySelector("[data-spl-src]");
       this.setEmbedCode();
     },
     setEmbedCode() {
       // go through the params and make the URL
       let url = this.baseURL;
-      let params = [];
-      for (let paramEl of this.paramEls) {
-        let { name, value } = paramEl;
-        if (value) {
-          params.push({ name, value });
-        }
-      }
+      let params = Array.from(this.params.entries()).filter(([, v]) => v);
       if (params.length) {
         url +=
           "?" +
           params
-            .map(({ name, value }) => name + "=" + encodeURIComponent(value))
+            .map(([name, value]) => name + "=" + encodeURIComponent(value))
             .join("&");
       }
       let fullURL =
@@ -43,24 +37,19 @@ export default function embedList() {
         `<script src="${this.scriptSrc}" async></script>` +
         `<div data-spl-embed-version="1" data-spl-src="${url}"></div>`;
     },
-    copy() {
-      let selection = window.getSelection();
-      selection.removeAllRanges();
-      let range = document.createRange();
-      range.selectNodeContents(this.$refs.embedCodeEl);
-      selection.addRange(range);
-
-      if (document.execCommand("copy")) {
-        selection.removeAllRanges();
+    async copy() {
+      try {
+        await navigator.clipboard.writeText(this.embedCode);
         this.showCopied = true;
-        setTimeout(() => {
-          this.showCopied = false;
-        }, 5000);
+        await after({ seconds: 5 });
+        this.showCopied = false;
+      } catch (e) {
+        alert(`Could not copy embed code: ${e.message}.`);
       }
     },
-    updateParam() {
-      clearTimeout(this.debounceID);
-      this.debounceID = setTimeout(() => this.setEmbedCode(), 500);
+    updateParams() {
+      this.params.set(this.$el.name, this.$el.value);
+      this.setEmbedCode();
     },
   };
 }
