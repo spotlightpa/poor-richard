@@ -10,7 +10,6 @@ description = "The State Police will begin enforcement Monday against businesses
 blurb = "The State Police will begin enforcement Monday against businesses in violation of Wolf's shutdown order."
 kicker = "Coronavirus"
 suppress-featured = false
-weight = ""
 topics = ["Coronavirus"]
 series = []
 +++
