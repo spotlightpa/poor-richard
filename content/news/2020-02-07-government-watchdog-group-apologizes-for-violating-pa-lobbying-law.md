@@ -7,7 +7,6 @@ published = 2020-02-07T21:28:15.441Z
 authors = ["Daniel Simmons-Ritchie"]
 title = "Government watchdog group apologizes for violating Pa. lobbying law  "
 kicker = "Ethics"
-special-report = false
 suppress-featured = true
 slug = "pennsylvania-lobbying-law-common-cause-apologizes-fine"
 aliases = ["/pennsylvania-lobbying-law-common-cause-apologizes-fine/"]

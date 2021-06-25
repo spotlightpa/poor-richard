@@ -10,7 +10,6 @@ title = "Poll shows wide support in Pa. for public access to government records.
 description = "Of 628 registered voters, 79% agreed that “citizens should have the right to obtain any government record with few restrictions.”"
 blurb = "Of 628 registered voters, 79% agreed that “citizens should have the right to obtain any government record with few restrictions.”"
 kicker = "Transparency"
-special-report = false
 suppress-featured = true
 slug = "pennsylvania-public-records-support"
 +++

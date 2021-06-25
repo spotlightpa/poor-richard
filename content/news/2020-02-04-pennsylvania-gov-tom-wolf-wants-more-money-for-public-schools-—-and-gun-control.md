@@ -7,7 +7,6 @@ published = 2020-02-04T16:30:00.000Z
 authors = ["Cynthia Fernandez", "Angela Couloumbis"]
 title = "Pennsylvania Gov. Tom Wolf calls for more money for public school — and gun control"
 kicker = "Capitol Notebook"
-special-report = false
 suppress-featured = false
 slug = "pennsylvania-tom-wolf-money-public-schools-no-new-taxes"
 +++
