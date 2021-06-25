@@ -49,7 +49,8 @@
     data-ga-action="share:sharesheet"
     title="More ways to share this page"
     x-data
-    x-show="navigator.share"
+    x-show="!! navigator.share"
+    x-cloak
   >
     <span class="m-auto">
       <svg class="fill-current h-6 w-6">

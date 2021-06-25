@@ -43,11 +43,14 @@
     </span>
   </button>
   <button
-    class="button is-danger is-hidden"
+    class="button is-danger"
     data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
     title="More ways to share this page"
+    x-data
+    x-show="!! navigator.share"
+    x-cloak
   >
     <span class="icon has-text-white has-colored-svg">
       <svg>
