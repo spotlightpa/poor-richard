@@ -1,5 +1,3 @@
-import sendEvent from "../utils/send-event.js";
-
 export default function intersector() {
   return {
     eventName: null,
@@ -22,7 +20,7 @@ export default function intersector() {
       if (!Array.from(entries).some((entry) => entry.isIntersecting)) {
         return;
       }
-      sendEvent({ el: this.$el, name: this.eventName, detail: entries });
+      this.$dispatch(this.eventName, { detail: entries });
       if (this.once) {
         this.observer.disconnect();
       }

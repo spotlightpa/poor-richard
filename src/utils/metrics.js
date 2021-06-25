@@ -80,7 +80,7 @@ export function showModalNewsletter() {
   return now - lastPrompt > SHOW_INTERVAL;
 }
 
-document.documentElement.addEventListener("x-form-submit", ({ detail }) => {
+document.addEventListener("x-form-submit", ({ detail }) => {
   if (detail.match(/newsletters.*submit/)) {
     storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
   }

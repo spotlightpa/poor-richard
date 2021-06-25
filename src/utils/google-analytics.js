@@ -1,4 +1,3 @@
-import sendEvent from "./send-event.js";
 import galite from "ga-lite/src/ga-lite.js";
 import {
   each,
@@ -186,7 +185,12 @@ export function addGAListeners() {
           eventAction,
           transport: "beacon",
         });
-        sendEvent({ el, name: "x-form-submit", detail: eventAction });
+        el.dispatchEvent(
+          new CustomEvent("x-form-submit", {
+            detail: eventAction,
+            bubbles: true,
+          })
+        );
       },
       {
         passive: true,
