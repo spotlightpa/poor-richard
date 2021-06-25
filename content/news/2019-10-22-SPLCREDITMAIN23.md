@@ -11,7 +11,6 @@ title = "Lavish dinners, sports tickets, and nearly $3.5 million in other expens
 description = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
 blurb = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
 kicker = "Campaign Finance"
-featured = true
 slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
 aliases = [
 "/news/pennsylvania/spl/pa-election-campaign-spending-hidden-expenses-spotlight-pa-20191022.html"

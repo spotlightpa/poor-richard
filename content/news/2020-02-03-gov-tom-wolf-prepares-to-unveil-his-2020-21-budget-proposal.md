@@ -8,7 +8,6 @@ title = "Gov. Tom Wolf preps his 2020 budget, Kobe controversy and more"
 subhed = "For the sixth-straight year, the governor wants to increase Pennsylvania’s wage floor from $7.25 an hour to $12."
 description = "For the sixth-straight year, the governor wants to increase Pennsylvania’s wage floor from $7.25 an hour to $12."
 kicker = "Capitol Notebook"
-special-report = false
 suppress-featured = false
 slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 +++

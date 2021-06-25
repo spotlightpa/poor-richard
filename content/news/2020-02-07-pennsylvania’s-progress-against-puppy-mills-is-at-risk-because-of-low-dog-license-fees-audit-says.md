@@ -7,7 +7,6 @@ published = 2020-02-07T16:33:20.179Z
 authors = ["Cynthia Fernandez"]
 title = "The agency that exposes Pennsylvania's puppy mills is about to run out of money"
 kicker = "Capitol Notebook"
-special-report = false
 suppress-featured = true
 slug = "pennsylvanias-progress-against-puppy-mills-is-at-risk-because-of-low-dog-license-fees-audit-says"
 +++

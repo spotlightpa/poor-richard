@@ -9,7 +9,6 @@ title = "Pa. will expand insurance coverage of innovative treatments for advance
 description = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
 blurb = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
 kicker = "Capitol Notebook"
-special-report = false
 suppress-featured = false
 slug = "fail-first-no-more-pennsylvania-will-expand-coverage-of-treatments-for-advanced-cancers"
 +++
