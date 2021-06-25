@@ -17,49 +17,48 @@ import searchModal from "../enhancements/search-modal.js";
 import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
-document.addEventListener("alpine:initializing", () => {
-  for (let [name, comp] of [
-    ["embed-list", embedList],
-    ["feed", feed],
-    ["funnel-status", funnelStatus],
-    ["image-rotator", imageRotator],
-    ["intersector", intersector],
-    ["lightbox", lightbox],
-    ["modal", modal],
-    ["most-popular", mostPopular],
-    ["readmore", readmore],
-    ["search-articles", searchArticles],
-    ["search-modal", searchModal],
-    ["slider", slider],
-    ["sticky", sticky],
-  ]) {
-    Alpine.data(name, comp);
-  }
+for (let [name, comp] of [
+  ["embed-list", embedList],
+  ["feed", feed],
+  ["funnel-status", funnelStatus],
+  ["image-rotator", imageRotator],
+  ["intersector", intersector],
+  ["lightbox", lightbox],
+  ["modal", modal],
+  ["most-popular", mostPopular],
+  ["readmore", readmore],
+  ["search-articles", searchArticles],
+  ["search-modal", searchModal],
+  ["slider", slider],
+  ["sticky", sticky],
+]) {
+  Alpine.data(name, comp);
+}
 
-  Alpine.directive(
-    "rich-text",
-    (el, { expression }, { evaluateLater, effect }) => {
-      let getHtml = evaluateLater(expression);
+Alpine.directive(
+  "rich-text",
+  (el, { expression }, { evaluateLater, effect }) => {
+    let getHtml = evaluateLater(expression);
 
-      effect(() => {
-        getHtml((html) => {
-          el.innerHTML = sanitizeText(html);
-        });
+    effect(() => {
+      getHtml((html) => {
+        el.innerHTML = sanitizeText(html);
       });
+    });
+  }
+);
+
+Alpine.magic("setAttrs", (el) => (target, obj) => {
+  for (let [targetName, source] of Object.entries(obj)) {
+    let val = el.dataset[source];
+    if (source.startsWith("!")) {
+      val = val === "true" || val === "1";
+    } else if (source.startsWith("@")) {
+      val = val.split(",").map((s) => s.trim());
     }
-  );
-  Alpine.magic("setAttrs", (el) => (target, obj) => {
-    for (let [targetName, source] of Object.entries(obj)) {
-      let val = el.dataset[source];
-      if (source.startsWith("!")) {
-        val = val === "true" || val === "1";
-      } else if (source.startsWith("@")) {
-        val = val.split(",").map((s) => s.trim());
-      }
-      target[targetName] = val;
-    }
-    return target;
-  });
+    target[targetName] = val;
+  }
+  return target;
 });
 
 Alpine.start();
