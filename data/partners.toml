@@ -64,6 +64,11 @@ url = "https://www.goerie.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx75/erie-times-news.png"
 
 [[partners]]
+name = "The Evening Sun"
+url = "https://www.eveningsun.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb20/tes.png"
+
+[[partners]]
 name = "Explore Clarion"
 url = "http://www.exploreclarion.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6y/explore-clarion.jpeg"
@@ -97,6 +102,11 @@ logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/gettysburg-time
 name = "The Intelligencer"
 url = "https://www.theintell.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/intelligencer.png"
+
+[[partners]]
+name = "Lebanon Daily News"
+url = "https://www.ldnews.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb1z/ldn.png"
 
 [[partners]]
 name = "LebTown"
@@ -159,6 +169,17 @@ url = "https://postindustrial.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/postindustrial.png"
 
 [[partners]]
+name = "Public Opinion"
+url = "https://www.publicopiniononline.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb20/po.png"
+
+[[partners]]
+name = "The Record Herald"
+url = "https://www.therecordherald.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb20/trh.png"
+
+
+[[partners]]
 name = "Republican Herald"
 url = "https://republicanherald.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx6z/republican-herald.jpeg"
@@ -202,6 +223,11 @@ logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7c/wesa.png"
 name = "WHYY"
 url = "http://whyy.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx71/whyy.jpeg"
+
+[[partners]]
+name = "York Daily Record"
+url = "https://www.ydr.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb21/ydr.png"
 
 [[partners]]
 name = "York Dispatch"
