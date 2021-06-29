@@ -21,7 +21,14 @@
 
 {{ $link := .Param "link" | default .RelPermalink }}
 
-{{ $params := dict "byline" $byline "kicker" $kicker "blurb" $blurb "showTitle" $showTitle "topic" $topic "link" $link }}
+{{ $params := dict
+  "byline" $byline
+  "kicker" $kicker
+  "blurb" $blurb
+  "showTitle" $showTitle
+  "topic" $topic
+  "link" $link
+}}
 
 {{ with .PublishDate }}
   {{ $pub := partial "helper/date-apstyle" .Local }}
