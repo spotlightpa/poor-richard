@@ -1,0 +1,19 @@
+{{ $data := index site.Data.authors . }}
+{{ $nameID := urlize . }}
+{{ $imgRes := $nameID | printf "img/headshots/%s.jpeg" }}
+{{ $img := resources.GetMatch $imgRes }}
+
+{{ $link := "" }}
+{{ with $pages := site.Taxonomies.authors.Get $nameID }}
+  {{ $link = $pages.Page.RelPermalink }}
+{{ end }}
+
+{{ $data = dict 
+  "name" .
+  "slug" $nameID
+  "link" $link
+  "headshot" $img
+  | merge $data 
+}}
+
+{{ return $data }}

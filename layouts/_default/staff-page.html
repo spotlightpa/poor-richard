@@ -5,20 +5,14 @@
   >
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range sort .Site.Data.authors "lastName" }}
-        {{ $nameID := urlize .name }}
-        {{ $articlesListLink := "" }}
-        {{ with $pages := site.Taxonomies.authors.Get $nameID }}
-          {{ $articlesListLink = $pages.Page.RelPermalink }}
-        {{ end }}
-        {{ if .active }}
+        {{ $author := partial "helper/get-author" .name }}
+        {{ if $author.active }}
           <div
-            id="{{ $nameID }}"
+            id="{{ $author.slug }}"
             class="card block"
           >
-            {{ $imgRes := printf "img/headshots/%s.jpeg" $nameID }}
-            {{ $img := resources.GetMatch $imgRes }}
-            {{ if $img  }}
-              {{ $imgShrunk := $img.Resize "800x" }}
+            {{ if $author.headshot }}
+              {{ $imgShrunk := $author.headshot.Resize "800x" }}
               <div class="is-hidden-tablet">
                 <figure class="image">
                   <img
@@ -31,29 +25,29 @@
             {{ end }}
             <div class="card-content">
               <div class="media">
-                {{ if $img }}
-                  {{ $imgShrunk := $img.Fill "256x256" }}
+                {{ if $author.headshot }}
+                  {{ $imgShrunk := $author.headshot.Fill "256x256" }}
                   <div class="media-left is-hidden-mobile">
                     <figure class="image is-128x128">
                       <img
                         src="{{ $imgShrunk.RelPermalink }}"
-                        alt="Photo of {{ .name }}"
+                        alt="Photo of {{ $author.name }}"
                         class="is-rounded"
                         >
                     </figure>
                   </div>
                 {{ end }}
                 <div class="media-content">
-                  {{ if $articlesListLink }}
+                  {{ if $author.link }}
                     <p class="title is-3" data-ga-category="author-articles">
-                      <a href="{{ $articlesListLink }}">{{ .name }}</a>
+                      <a href="{{ $author.link }}">{{ $author.name }}</a>
                     </p>
                   {{ else }}
-                    <p class="title is-3">{{ .name }}</p>
+                    <p class="title is-3">{{ $author.name }}</p>
                   {{ end }}
-                  <p class="subtitle is-4">{{ .title }}</p>
+                  <p class="subtitle is-4">{{ $author.title }}</p>
                   <p class="subtitle is-5 has-text-break-all">
-                    {{ with .email }}
+                    {{ with $author.email }}
                       <span class="icon has-text-link">
                         <svg>
                           <use xlink:href="#email-svg"></use>
@@ -66,10 +60,10 @@
                         {{ . }}
                       </a>
                     {{ end }}
-                    {{ with (and .email .twitter) }}
+                    {{ with (and $author.email $author.twitter) }}
                     <br>
                     {{ end }}
-                    {{ with .twitter }}
+                    {{ with $author.twitter }}
                       <span class="icon has-text-link">
                         <svg>
                           <use xlink:href="#twitter-svg"></use>
@@ -86,7 +80,7 @@
                 </div>
               </div>
               <div class="content" data-ga-category="author-bio">
-                {{ .content|markdownify }}
+                {{ $author.content|markdownify }}
               </div>
             </div>
           </div>
