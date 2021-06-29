@@ -11,17 +11,16 @@
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-              {{ if $author.headshot }}
+              {{ if $author.thumb }}
                 <a
                   href="{{ $author.link }}"
                   class="image is-64x64"
                 >
-                  {{ $imgShrunk := $author.headshot.Fill "256x256" }}
-                    <img
-                      src="{{ $imgShrunk.RelPermalink }}"
-                      alt="Photo of {{ $author.name }}"
-                      class="is-rounded is-monochrome"
-                    >
+                  <img
+                    src="{{ $author.thumb }}"
+                    alt="Photo of {{ $author.name }}"
+                    class="is-rounded is-monochrome"
+                  >
                 </a>
               {{ else }}
                 <span class="image is-64x64"></span>

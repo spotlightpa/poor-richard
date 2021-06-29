@@ -100,7 +100,7 @@
             <div class="level">
               <div class="level-left">
                 <div class="level-item">
-                  {{ if $author.headshot }}
+                  {{ if $author.thumb }}
                     {{ if $author.link }}
                       <a
                         href="{{ $author.link }}"
@@ -109,9 +109,8 @@
                     {{ else }}
                       <span class="image is-64x64">
                     {{ end }}
-                    {{ $imgShrunk := $author.headshot.Fill "256x256" }}
                       <img
-                        src="{{ $imgShrunk.RelPermalink }}"
+                        src="{{ $author.thumb }}"
                         alt="Photo of {{ $author.name }}"
                         class="is-rounded is-monochrome"
                         loading="lazy"
