@@ -12,7 +12,6 @@
     "width" $width
     "height" $height
     "gravity" $gravity
-    "resize" "fill"
   }}
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   {{ $src := printf "%s %dw" $url $width }}

@@ -1,6 +1,6 @@
 {{ $baseURL := getenv "IMGPROXY_URL" | default "https://images.data.spotlightpa.org" }}
 {{ $signature := "insecure" }}
-{{ $resizing_type := .resize | default "fit" }}
+{{ $resizing_type := .resize | default "fill" }}
 {{ $width := .width }}
 {{ $height := .height }}
 {{ $gravity := .gravity | default "sm" }}
@@ -12,6 +12,17 @@
 {{ end }}
 {{ $quality := 75 }}
 
-{{ $url := printf "%s/%s/rs:%s:%d:%d/g:%s/el:%s/q:%d/%s.%s" $baseURL $signature $resizing_type $width $height $gravity $enlarge $quality $encoded_source_url $extension }}
+{{ $url := printf
+  "%s/%s/rt:%s/w:%d/h:%d/g:%s/el:%s/q:%d/%s.%s"
+  $baseURL
+  $signature
+  $resizing_type
+  $width
+  $height
+  $gravity
+  $enlarge
+  $quality
+  $encoded_source_url
+  $extension }}
 
 {{ return ($url | absURL) }}
