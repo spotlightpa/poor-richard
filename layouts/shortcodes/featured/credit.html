@@ -4,20 +4,32 @@
 {{ $name := .Get "name" }}
 {{ $role := .Get "role" }}
 {{ $email := .Get "email" }}
+{{ $author := partial "helper/get-author" $name }}
 
 <div class="font-sans">
   {{ if $eyebrow }}
     <h4 class="uppercase font-bold text-xs mb-4">{{ $eyebrow }}</h4>
   {{ end }}
   {{ if $headshot }}
+    {{ with $author.link }}<a href="{{ . }}">{{ end}}
     {{ $imgShrunk := $headshot.Fill "256x256" }}
     <img
       class="float-left mr-4 w-16 h-16 rounded-full filter grayscale"
       src="{{ $imgShrunk.RelPermalink }}"
       alt="{{ $name }}"
     >
+    {{ with $author.link }}</a>{{ end}}
   {{ end }}
-  <h3 class="uppercase font-bold">{{ $name }}</h3>
+  <h3 class="uppercase font-bold">
+    {{ with $author.link }}
+      <a
+        href="{{ . }}"
+        class="hover:text-yellow transition-colors duration-500"
+      >
+    {{ end}}
+    {{ $name }}
+    {{ with $author.link }}</a>{{ end}}
+  </h3>
   {{ if $role }}
     <div class="text-sm italic">{{ $role }}</div>
   {{ end }}
