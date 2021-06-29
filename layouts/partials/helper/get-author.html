@@ -1,18 +1,28 @@
 {{ $data := index site.Data.authors . }}
 {{ $nameID := urlize . }}
-{{ $imgRes := $nameID | printf "img/headshots/%s.jpeg" }}
-{{ $img := resources.GetMatch $imgRes }}
 
 {{ $link := "" }}
 {{ with $pages := site.Taxonomies.authors.Get $nameID }}
   {{ $link = $pages.Page.RelPermalink }}
 {{ end }}
 
+{{ $thumb := "" }}
+{{ with $data.headshot }}
+  {{ $gravity := index $data "image-gravity" | default "sm"}}
+  {{ $imgOpt := dict
+    "filename" .
+    "width" 256
+    "height" 256
+    "gravity" $gravity
+  }}
+  {{ $thumb = partial "helper/imgproxy" $imgOpt }}
+{{ end }}
+
 {{ $data = dict 
   "name" .
   "slug" $nameID
   "link" $link
-  "headshot" $img
+  "thumb" $thumb
   | merge $data 
 }}
 

@@ -12,12 +12,19 @@
             class="card block"
           >
             {{ if $author.headshot }}
-              {{ $imgShrunk := $author.headshot.Resize "800x" }}
+              {{ $imgOpt := dict
+                "filename" $author.headshot
+                "width" 800
+                "height" 600
+              }}
+              {{ $cardSrc := partial "helper/imgproxy" $imgOpt }}
               <div class="is-hidden-tablet">
                 <figure class="image">
                   <img
-                    src="{{ $imgShrunk.RelPermalink }}"
+                    src="{{ $cardSrc }}"
                     alt="Photo of {{ .name }}"
+                    width="800"
+                    height="600"
                     class=""
                     >
                 </figure>
@@ -25,12 +32,11 @@
             {{ end }}
             <div class="card-content">
               <div class="media">
-                {{ if $author.headshot }}
-                  {{ $imgShrunk := $author.headshot.Fill "256x256" }}
+                {{ if $author.thumb }}
                   <div class="media-left is-hidden-mobile">
                     <figure class="image is-128x128">
                       <img
-                        src="{{ $imgShrunk.RelPermalink }}"
+                        src="{{ $author.thumb }}"
                         alt="Photo of {{ $author.name }}"
                         class="is-rounded"
                         >

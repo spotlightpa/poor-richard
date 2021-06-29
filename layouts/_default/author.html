@@ -12,12 +12,11 @@
 
           {{ if $author.active }}
             <div class="media">
-              {{ if $author.headshot }}
-                {{ $imgShrunk := $author.headshot.Fill "256x256" }}
+              {{ if $author.thumb }}
                 <div class="media-left is-hidden-mobile">
                   <figure class="image is-128x128">
                     <img
-                      src="{{ $imgShrunk.RelPermalink }}"
+                      src="{{ $author.thumb }}"
                       alt="Photo of {{ $author.name }}"
                       class="is-rounded"
                       >

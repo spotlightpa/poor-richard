@@ -1,6 +1,4 @@
 {{ $eyebrow := .Get "eyebrow" }}
-{{ $headshotFile := .Get "headshot" | printf "img/headshots/%s.jpeg" }}
-{{ $headshot := resources.GetMatch $headshotFile }}
 {{ $name := .Get "name" }}
 {{ $role := .Get "role" }}
 {{ $email := .Get "email" }}
@@ -10,13 +8,12 @@
   {{ if $eyebrow }}
     <h4 class="uppercase font-bold text-xs mb-4">{{ $eyebrow }}</h4>
   {{ end }}
-  {{ if $headshot }}
+  {{ if $author.thumb }}
     {{ with $author.link }}<a href="{{ . }}">{{ end}}
-    {{ $imgShrunk := $headshot.Fill "256x256" }}
     <img
       class="float-left mr-4 w-16 h-16 rounded-full filter grayscale"
-      src="{{ $imgShrunk.RelPermalink }}"
-      alt="{{ $name }}"
+      src="{{ $author.thumb }}"
+      alt="Picture of {{ $name }}"
     >
     {{ with $author.link }}</a>{{ end}}
   {{ end }}
