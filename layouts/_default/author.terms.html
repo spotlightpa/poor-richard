@@ -7,23 +7,19 @@
   >
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range $pg.Pages.ByTitle }}
-        {{ $name := .Title }}
-        {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
-        {{ $img := resources.GetMatch $imgRes }}
-        {{ $authorURL := .RelPermalink }}
-        {{ $author := index site.Data.authors $name }}
+        {{ $author := partial "helper/get-author" .Title }}
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-              {{ if $img }}
+              {{ if $author.headshot }}
                 <a
-                  href="{{ $authorURL }}"
+                  href="{{ $author.link }}"
                   class="image is-64x64"
                 >
-                  {{ $imgShrunk := $img.Fill "256x256" }}
+                  {{ $imgShrunk := $author.headshot.Fill "256x256" }}
                     <img
                       src="{{ $imgShrunk.RelPermalink }}"
-                      alt="Photo of {{ $name }}"
+                      alt="Photo of {{ $author.name }}"
                       class="is-rounded is-monochrome"
                     >
                 </a>
@@ -35,13 +31,13 @@
             <div class="level-item">
               <div>
                 <h3 class="subtitle is-3 has-text-weight-semibold">
-                  {{ if $authorURL }}
-                  <a href="{{ $authorURL }}">
-                    {{ $name }}
+                  {{ if $author.link }}
+                  <a href="{{ $author.link }}">
+                    {{ $author.name }}
                   </a>
                   {{ else }}
                     <span class="has-text-grey">
-                      {{ $name }}
+                      {{ $author.name }}
                     </span>
                   {{ end }}
                 </h3>

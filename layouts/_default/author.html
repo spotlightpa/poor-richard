@@ -1,4 +1,5 @@
 {{ define "main" }}
+  {{ $author  := partial "helper/get-author" .Title }}
   <section class="section" data-ga-category="author">
     <article class="columns is-centered is-multiline">
       <div class="column is-three-fifths">
@@ -9,74 +10,65 @@
             </div>
           </div>
 
-          {{ $hasCard := false }}
-          {{ with index site.Data.authors .Title }}
-            {{ if .active }}
-              {{ $hasCard = true }}
-              {{ $nameID := .name | urlize }}
-              {{ $imgRes := printf "img/headshots/%s.jpeg" $nameID }}
-              {{ $img := resources.GetMatch $imgRes }}
-              <div class="media">
-                {{ if $img }}
-                  {{ $imgShrunk := $img.Fill "256x256" }}
-                  <div class="media-left is-hidden-mobile">
-                    <figure class="image is-128x128">
-                      <img
-                        src="{{ $imgShrunk.RelPermalink }}"
-                        alt="Photo of {{ .name }}"
-                        class="is-rounded"
-                        >
-                    </figure>
-                  </div>
-                {{ end }}
-                <div class="media-content">
-                  <h1 class="title is-3 has-text-weight-semibold">
-                    {{ .name }}
-                  </h1>
-                  <p class="subtitle is-4">{{ .title }}</p>
-                  <p class="subtitle is-5 has-text-break-all">
-                    {{ with .email }}
-                      <span class="icon has-text-link">
-                        <svg>
-                          <use xlink:href="#email-svg"></use>
-                        </svg>
-                      </span>
-                      <a
-                        data-ga-category="author-email"
-                        href="mailto:{{ . }}"
+          {{ if $author.active }}
+            <div class="media">
+              {{ if $author.headshot }}
+                {{ $imgShrunk := $author.headshot.Fill "256x256" }}
+                <div class="media-left is-hidden-mobile">
+                  <figure class="image is-128x128">
+                    <img
+                      src="{{ $imgShrunk.RelPermalink }}"
+                      alt="Photo of {{ $author.name }}"
+                      class="is-rounded"
                       >
-                        {{ . }}
-                      </a>
-                    {{ end }}
-                    {{ with (and .email .twitter) }}
-                    <br>
-                    {{ end }}
-                    {{ with .twitter }}
-                      <span class="icon has-text-link">
-                        <svg>
-                          <use xlink:href="#twitter-svg"></use>
-                        </svg>
-                      </span>
-                      <a
-                        data-ga-category="author-twitter"
-                        href="https://www.twitter.com/{{ . }}"
-                      >
-                        @{{ . }}
-                      </a>
-                    {{ end }}
-                  </p>
+                  </figure>
                 </div>
+              {{ end }}
+              <div class="media-content">
+                <h1 class="title is-3 has-text-weight-semibold">
+                  {{ $author.name }}
+                </h1>
+                <p class="subtitle is-4">{{ $author.title }}</p>
+                <p class="subtitle is-5 has-text-break-all">
+                  {{ with $author.email }}
+                    <span class="icon has-text-link">
+                      <svg>
+                        <use xlink:href="#email-svg"></use>
+                      </svg>
+                    </span>
+                    <a
+                      data-ga-category="author-email"
+                      href="mailto:{{ . }}"
+                    >
+                      {{ . }}
+                    </a>
+                  {{ end }}
+                  {{ with (and $author.email $author.twitter) }}
+                    <br>
+                  {{ end }}
+                  {{ with $author.twitter }}
+                    <span class="icon has-text-link">
+                      <svg>
+                        <use xlink:href="#twitter-svg"></use>
+                      </svg>
+                    </span>
+                    <a
+                      data-ga-category="author-twitter"
+                      href="https://www.twitter.com/{{ . }}"
+                    >
+                      @{{ . }}
+                    </a>
+                  {{ end }}
+                </p>
               </div>
-            {{ end }}
-          {{ end }}
-          {{ if not $hasCard }}
+            </div>
+          {{ else }}
             <h1 class="title is-2 is-size-3-touch is-spaced">
               {{ .Title }}
             </h1>
           {{ end }}
         </header>
 
-        {{ $author := index site.Data.authors .Title }}
         {{ if $author.active }}
           <div class="content">
             {{ $author.content|markdownify }}

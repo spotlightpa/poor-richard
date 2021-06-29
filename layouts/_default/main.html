@@ -96,37 +96,28 @@
           data-ga-category="footer:author"
         >
           {{ range $name := . }}
-            {{ $imgRes := urlize $name | printf "img/headshots/%s.jpeg" }}
-            {{ $img := resources.GetMatch $imgRes }}
-            {{ $author := index site.Data.authors $name }}
-            {{ $nameID := urlize . }}
-            {{ $authorURL := "" }}
-            {{ if $author.active }}
-              {{ with $pages := site.Taxonomies.authors.Get $nameID }}
-                {{ $authorURL = $pages.Page.RelPermalink }}
-              {{ end }}
-            {{ end }}
+            {{ $author := partial "helper/get-author" $name }}
             <div class="level">
               <div class="level-left">
                 <div class="level-item">
-                  {{ if $img }}
-                    {{ if $authorURL }}
+                  {{ if $author.headshot }}
+                    {{ if $author.link }}
                       <a
-                        href="{{ $authorURL }}"
+                        href="{{ $author.link }}"
                         class="image is-64x64"
                       >
                     {{ else }}
                       <span class="image is-64x64">
                     {{ end }}
-                    {{ $imgShrunk := $img.Fill "256x256" }}
+                    {{ $imgShrunk := $author.headshot.Fill "256x256" }}
                       <img
                         src="{{ $imgShrunk.RelPermalink }}"
-                        alt="Photo of {{ $name }}"
+                        alt="Photo of {{ $author.name }}"
                         class="is-rounded is-monochrome"
                         loading="lazy"
                         decoding="async"
                       >
-                    {{ if $authorURL }}
+                    {{ if $author.link }}
                       </a>
                     {{ else }}
                       </span>
@@ -139,17 +130,17 @@
                 <div class="level-item">
                   <div>
                     <h3 class="subtitle is-3 has-text-weight-semibold">
-                      {{ if $authorURL }}
-                      <a href="{{ $authorURL }}">
-                        {{ $name }}
-                      </a>
+                      {{ if and $author.active $author.link }}
+                        <a href="{{ $author.link }}">
+                          {{ $author.name }}
+                        </a>
                       {{ else }}
                         <span class="has-text-grey">
-                          {{ $name }}
+                          {{ $author.name }}
                         </span>
                       {{ end }}
                     </h3>
-                    {{ if $author.active }}
+                    {{ if and $author.active $author.title }}
                       <h3 class="subtitle ">
                         {{ $author.title }}
                       </h3>
