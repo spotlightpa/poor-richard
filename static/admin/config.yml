@@ -308,6 +308,11 @@ collections:
         name: twitter
         widget: string
         required: false
+      - label: Headshot
+        name: headshot
+        widget: string
+        hint: "Path from Almanack photos"
+        required: false
       - label: Content
         name: content
         widget: markdown
