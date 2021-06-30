@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-06-29-SPLPLASTIC30.md"
+    "content/news/2021-06-30-SPLVETO01.md"
   ],
   "subfeatures": [
-    "content/news/2021-06-25-SPLBUDGET26.md"
+    "content/news/2021-06-22-SPLVOTE23.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-06-29-SPLPLASTIC30.md",
     "content/news/2021-06-28-SPLMEDMAR28.md",
-    "content/news/2021-06-22-SPLDIEMS22.md",
-    "content/news/2021-06-25-SPLHERSHEYXX.md"
+    "content/news/2021-06-25-SPLBUDGET26.md"
   ],
   "sidebarPicks": [
     "content/news/2021-05-12-SPLEXPENSES13.md"
