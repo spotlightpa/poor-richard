@@ -33,7 +33,8 @@
         bg-g-4
       "
     >
-      {{ if in (string $srcset) ".jpeg" }}
+      {{ $isJPEG := in (string $srcset) ".jpeg" }}
+      {{ if $isJPEG }}
         <source
           type="image/webp"
           srcset='{{ replace $srcset ".jpeg" ".webp" }}'
@@ -44,7 +45,7 @@
         alt="{{ $description }}"
         title="{{ $description }}"
         src="{{ $imgSmallSrc }}"
-        srcset="{{ $srcset }}"
+        {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
         draggable="false"
         decode="async"
         loading="lazy"

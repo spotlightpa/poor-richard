@@ -24,7 +24,8 @@
       <div class="image {{ $imgClass }} has-background-grey-lighter">
     {{- end -}}
       <picture class="has-ratio">
-        {{ if in (string $srcset) ".jpeg" }}
+        {{ $isJPEG := in (string $srcset) ".jpeg" }}
+        {{ if $isJPEG }}
           <source
             type="image/webp"
             srcset='{{ replace $srcset ".jpeg" ".webp" }}'
@@ -37,7 +38,9 @@
           alt="{{ .description }}"
           title="{{ .description }}"
           src="{{ $imgSmallSrc }}"
+          {{ if not $isJPEG }}
           srcset="{{ $srcset }}"
+          {{ end }}
           {{ if .sizeHint }}
             sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
           {{ end }}
