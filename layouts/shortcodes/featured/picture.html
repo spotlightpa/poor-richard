@@ -28,7 +28,8 @@
 >
   <div class="relative w-full h-0 pb-16x9">
     <picture class="absolute block inset-0 rounded shadow overflow-hidden bg-g-4">
-      {{ if in (string $srcset) ".jpeg" }}
+      {{ $isJPEG := in (string $srcset) ".jpeg" }}
+      {{ if $isJPEG }}
         <source
           type="image/webp"
           srcset='{{ replace $srcset ".jpeg" ".webp" }}'
@@ -39,7 +40,7 @@
         alt="{{ $description }}"
         title="{{ $description }}"
         src="{{ $imgSmallSrc }}"
-        srcset="{{ $srcset }}"
+        {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
         loading="lazy"
         width="16"
         height="9"

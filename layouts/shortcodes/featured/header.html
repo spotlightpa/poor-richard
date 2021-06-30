@@ -17,12 +17,27 @@
 {{ $preposition := .Get "credit-relation" | default "of" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
-{{ $sizes := dict "widths" $widths "widthRatio" 6 "heightRatio" 4 | partial "helper/build-sizes" }}
-{{ $srcset := dict "sizes" $sizes "filename" $filename "gravity" $gravity | partial "helper/build-srcset" }}
+{{ $sizes := dict
+  "widths" $widths
+  "widthRatio" 6
+  "heightRatio" 4
+  | partial "helper/build-sizes"
+}}
+{{ $srcset := dict
+  "sizes" $sizes
+  "filename" $filename
+  "gravity" $gravity
+  | partial "helper/build-srcset"
+}}
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
-{{ $imgOpt := dict "filename" $filename "width" $width "height" $height "gravity" $gravity }}
+{{ $imgOpt := dict
+  "filename" $filename
+  "width" $width
+  "height" $height
+  "gravity" $gravity
+}}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
     <header class="flex flex-col md:flex-row md:min-h-screen">
@@ -70,7 +85,8 @@
               {{ end }}
             >
           {{ else }}
-            {{ if in (string $srcset) ".jpeg" }}
+            {{ $isJPEG := in (string $srcset) ".jpeg" }}
+            {{ if $isJPEG }}
               <source
                 type="image/webp"
                 srcset='{{ replace $srcset ".jpeg" ".webp" }}'
@@ -80,7 +96,7 @@
               alt="{{ $imageDesc }}"
               title="{{ $imageDesc }}"
               src="{{ $imgSmallSrc }}"
-              srcset="{{ $srcset }}"
+              {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
               class="w-full h-full object-cover"
               {{ if $focus }}
                 style="object-position: {{ $focus }};"
