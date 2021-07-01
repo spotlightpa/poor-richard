@@ -1,13 +1,12 @@
 {{ with $related := . }}
   <nav
-    class="columns is-centered mt-5"
+    class="content-container mt-5"
     data-ga-category="related-content"
     x-data="readmore"
     data-!show-date="true"
     x-ref="root"
   >
     <div
-      class="column is-three-fifths"
       x-ref="archives"
       @mouseover.once="load()"
       @touchstart.once="load()"
