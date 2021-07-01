@@ -27,6 +27,11 @@ export default function modal() {
     },
 
     show() {
+      if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+        // eslint-disable-next-line no-console
+        console.warn("aborting modal display");
+        return;
+      }
       this.isOpen = true;
       sawModalNewsletter();
       buildAndSend(this.$el, {
@@ -36,9 +41,9 @@ export default function modal() {
 
       document.body.parentElement.classList.add("is-clipped");
 
-      window.setTimeout(() => {
+      this.$nextTick(() => {
         focus(this.$refs.content);
-      }, transitionLength);
+      });
     },
 
     close(sendEvent = true) {
@@ -50,9 +55,9 @@ export default function modal() {
           eventAction: "modal:newsletter:dismiss",
         });
       }
-      window.setTimeout(() => {
+      this.$nextTick(() => {
         blur(this.$refs.content);
-      }, transitionLength);
+      });
     },
   };
 }

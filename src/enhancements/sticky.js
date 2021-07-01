@@ -8,15 +8,20 @@ export default function sticky() {
     isOpen: false,
 
     show() {
+      if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+        // eslint-disable-next-line no-console
+        console.warn("aborting sticky display");
+        return;
+      }
       this.isOpen = true;
       buildAndSend(this.$el, { eventAction: "sticky:open" });
-      window.setTimeout(() => focus(this.$refs.close), transitionLength);
+      this.$nextTick(() => focus(this.$refs.close), transitionLength);
     },
 
     close() {
       this.isOpen = false;
       buildAndSend(this.$el, { eventAction: "sticky:close" });
-      window.setTimeout(() => blur(this.$refs.close), transitionLength);
+      this.$nextTick(() => blur(this.$refs.close), transitionLength);
     },
   };
 }
