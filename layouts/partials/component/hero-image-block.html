@@ -28,5 +28,5 @@
     "figClass" "is-full-bleed mb-5" | merge $imgOpts }}
 {{ end }}
 {{ if ne $size "hidden" | and $imagename }}
-  {{ $imgOpts | partial "component/image-block.html" }}
+  {{ partialCached "component/image-block.html" $imgOpts $imgOpts }}
 {{ end }}

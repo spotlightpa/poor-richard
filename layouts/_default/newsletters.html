@@ -65,7 +65,7 @@
                       "heightRatio" 9
                       "sizeHint" "25vw"
                     }}
-                    {{ partial "component/image-block.html" $imgOpts }}
+                    {{ partialCached "component/image-block.html" $imgOpts $imgOpts }}
                     <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
                       {{ .LinkTitle }}
                     </h2>

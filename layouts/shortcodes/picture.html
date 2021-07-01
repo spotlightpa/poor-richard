@@ -17,7 +17,7 @@
   "heightRatio" $heightRatio
   "sizeHint" "50vw"
 }}
-{{ partial "component/image-block.html" $imgOpts }}
+{{ partialCached "component/image-block.html" $imgOpts $imgOpts }}
 
 {{ with $caption }}
   <p class="is-size-6 is-italic mt-5">{{ . }}</p>

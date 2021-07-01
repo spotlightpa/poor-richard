@@ -51,7 +51,7 @@
 <div class="tile is-bottom" data-ga-category="featured">
   <div class="tile is-parent is-6 is-top-tablet">
     <article class="tile is-child">
-      {{ partial "component/image-block.html" $imgOpts }}
+      {{ partialCached "component/image-block.html" $imgOpts $imgOpts }}
     </article>
   </div>
   <div class="tile is-parent is-bottom-tablet">

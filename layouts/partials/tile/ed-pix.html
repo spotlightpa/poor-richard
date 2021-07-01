@@ -13,7 +13,7 @@
     "heightRatio" 9
     "sizeHint" "25vw"
   }}
-  {{ partial "component/image-block.html" $imgOpts }}
+  {{ partialCached "component/image-block.html" $imgOpts $imgOpts }}
 
   <h2 class="title is-4 is-spaced mt-2">
     <a

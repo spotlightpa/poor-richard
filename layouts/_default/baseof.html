@@ -68,10 +68,10 @@
   <script
     nomodule
     defer
-    src='{{ partialCached "helper/get-nomodules-js" . }}'
+    src='{{ partialCached "helper/get-nomodules-js" . "nomodules" }}'
   ></script>
   <script
-    src='{{ partialCached "helper/get-enhancements" . }}'
+    src='{{ partialCached "helper/get-enhancements" . "enhancements" }}'
     type="module"
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>

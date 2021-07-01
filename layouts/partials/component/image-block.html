@@ -7,7 +7,8 @@
   {{ $eager := .eager | default false }}
 
   {{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
-  {{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
+  {{ $srcsetOpts := dict "sizes" $sizes "filename" $imagename }}
+  {{ $srcset := partialCached "helper/build-srcset" $srcsetOpts $srcsetOpts }}
 
   {{ $width := (index $sizes 0).width }}
   {{ $height := (index $sizes 0).height }}
