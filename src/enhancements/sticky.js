@@ -2,8 +2,6 @@ import { focus, blur } from "../utils/active-element.js";
 import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function sticky() {
-  const transitionLength = 500;
-
   return {
     isOpen: false,
 
@@ -15,13 +13,13 @@ export default function sticky() {
       }
       this.isOpen = true;
       buildAndSend(this.$el, { eventAction: "sticky:open" });
-      this.$nextTick(() => focus(this.$refs.close), transitionLength);
+      this.$nextTick(() => focus(this.$refs.close));
     },
 
     close() {
       this.isOpen = false;
       buildAndSend(this.$el, { eventAction: "sticky:close" });
-      this.$nextTick(() => blur(this.$refs.close), transitionLength);
+      this.$nextTick(() => blur(this.$refs.close));
     },
   };
 }

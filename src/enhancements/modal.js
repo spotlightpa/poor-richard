@@ -9,8 +9,6 @@ import {
 const delay = onTestPage ? 500 : 2000; // 2s
 
 export default function modal() {
-  const transitionLength = 500;
-
   return {
     isOpen: false,
 
