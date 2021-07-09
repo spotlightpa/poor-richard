@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-07-07-SPLDOG08.md"
+    "content/news/2021-07-01-SPLSUMMER02.md"
   ],
   "subfeatures": [
-    "content/news/2020-02-07-pennsylvania’s-progress-against-puppy-mills-is-at-risk-because-of-low-dog-license-fees-audit-says.md",
-    "content/news/2021-07-05-SPLFALL05.md"
+    "content/news/2021-06-22-SPLREDISTRICT23.md",
+    "content/news/2021-05-03-SPLFIFTH04.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-07-06-SPLSTORM07.md",
     "content/news/2021-07-02-SPLCHARGED03.md",
-    "content/news/2021-07-02-SPLCONTACT03.md"
+    "content/news/2021-07-06-SPLSTORM07.md",
+    "content/news/2021-07-07-SPLDOG08.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
