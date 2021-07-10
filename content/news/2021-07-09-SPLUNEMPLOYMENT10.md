@@ -118,7 +118,7 @@ Wiley did not respond to a request to be interviewed and directed Spotlight PA t
 
 As staffers tried to calculate, over email, how much the agency owed Pennsylvanians, one claim showed that if the interest rate was applied correctly, at 3% between 2011 and 2016, the claimant owed $3,000 less than the state had charged.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Are%20you%20facing%20difficulties%20using%20the%20new%20unemployment%20system%3F%20We%20want%20to%20hear%20from%20you."></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=%3Cb%3EWere%20you%20charged%20interest%20for%20overpayment%20of%20unemployment%20between%202006%20and%202016%3F%3C%2Fb%3E%20We%20want%20to%20hear%20from%20you."></div>
 
 ## The fallout
 
@@ -136,7 +136,7 @@ The office did not respond to a request for comment by Spotlight PA’s deadline
 
 Over that 15-year period, the state paid roughly $41 billion in unemployment insurance to claimants. But it had also established roughly 940,500 at-fault and non-fault unemployment claims, totaling $1.14 billion&nbsp;— with more than $512 million repaid.
 
-These claims, however, represent only those investigated by the department and reported to the federal government during that time frame. Far more claims discovered prior to 2006 continued to collect interest at the improper rate as claimants worked to pay them off. Spotlight PA reviewed a handful of claims impacted by the interest issue that were still collecting interest from people who applied for benefits in the 1970s.
+These claims, however, represent only those investigated by the department and reported to the federal government during that time frame. Far more claims discovered prior to 2006 continued to collect interest at the improper rate as claimants worked to pay them off. Spotlight PA reviewed claims impacted by the interest issue that were still collecting interest from people who applied for benefits in the 1970s.
 
 Based on state records, it was not until Feb. 26, 2018, that Dickinson set up a meeting with Pitulski, Rebecca Keen, assistant director of the Office of Unemployment Compensation Benefits Policy, and Rebecca Uffner, a specialist with that office, to again review the scope of the problem. The subject heading: “overpayment interest update.”
 
