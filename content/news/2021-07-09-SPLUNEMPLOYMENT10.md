@@ -134,7 +134,7 @@ In the weeks that followed, Morrison sought overpayment statistics dating back e
 
 The office did not respond to a request for comment by Spotlight PA’s deadline.
 
-Over that 15-year period, the state paid roughly $41 billion in unemployment insurance to claimants. But it had also established roughly 940,500 at-fault and non-fault unemployment claims, totaling $1.14 billion&nbsp;— with more than $512 million repaid.
+Over that 15-year period, the state paid roughly $41 billion in unemployment insurance to claimants. But it had also established roughly 941,000 at-fault and non-fault unemployment claims, totaling $1.14 billion&nbsp;— with more than $512 million repaid.
 
 These claims, however, represent only those investigated by the department and reported to the federal government during that time frame. Far more claims discovered prior to 2006 continued to collect interest at the improper rate as claimants worked to pay them off. Spotlight PA reviewed claims impacted by the interest issue that were still collecting interest from people who applied for benefits in the 1970s.
 
