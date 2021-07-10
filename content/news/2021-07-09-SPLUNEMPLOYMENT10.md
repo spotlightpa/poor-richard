@@ -40,7 +40,7 @@ The agency instead charged a fixed, 9% interest rate, because it failed to adjus
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
-During that time, the state charged inflated interest from what it estimated on Friday as roughly 250,000 unknowing Pennsylvanians, and collected millions of dollars. In its response to questions from Spotlight PA, the state also estimated that it owes at least $14 million, which it said amounts to less than $50 for most people.
+In its response to questions from Spotlight PA, the department on Friday said 250,000 people “were affected by the interest overcharge” and estimated that it owes at least $14 million in refunds, which it said amounts to less than $50 for most people. 
 
 But former employees at the Department of Labor and Industry tasked with assessing the mistake have for months told Spotlight PA that the agency owes much more money.
 
