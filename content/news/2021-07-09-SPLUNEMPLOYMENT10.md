@@ -32,7 +32,7 @@ extended-kicker = ""
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Just one day after Spotlight PA contacted the Department of Labor and Industry with a list of questions about a serious error that overcharged unemployed Pennsylvanians millions of dollars in interest for a decade, the agency announced Friday it will issue refunds to roughly 250,000 people.
+HARRISBURG — Just one day after Spotlight PA contacted the Department of Labor and Industry with a list of questions about a serious error that overcharged unemployed Pennsylvanians millions of dollars in interest for a decade, the agency announced Friday it will issue refunds.
 
 Each year, interest accrues on money people owe to the department because, for various reasons, the state overpaid their unemployment benefits. A Spotlight PA investigation found the Department of Labor and Industry, from 2006 to 2016, did not use interest rates set annually by the state Revenue Department, which ranged between 3% and 8%.
 
@@ -40,7 +40,7 @@ The agency instead charged a fixed, 9% interest rate, because it failed to adjus
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
-During that time, the state collected millions of dollars in inflated interest charges from hundreds of thousands of unknowing Pennsylvanians. The state made a rough estimate Friday, in response to questions from Spotlight PA, that it owes at least $14 million, saying this amounts to less than $50 for most people.
+During that time, the state charged inflated interest from what it estimated on Friday as roughly 250,000 unknowing Pennsylvanians, and collected millions of dollars. In its response to questions from Spotlight PA, the state also estimated that it owes at least $14 million, which it said amounts to less than $50 for most people.
 
 But former employees at the Department of Labor and Industry tasked with assessing the mistake have for months told Spotlight PA that the agency owes much more money.
 
@@ -64,7 +64,7 @@ After the incorrect rate was discovered, she wrote, the department “first need
 
 Ickes denied that any staff members were told to keep the issue quiet, saying that the “Office of Inspector General … completed an investigation on the issue and approved of L&amp;I’s plan to remediate the issue and prevent recurrence.”
 
-A spokesperson for the Pennsylvania Office of Inspector General said Saturday the agency completed a report on the issue. “Unfortunately, we can’t comment further regarding the report or the follow-up,” he continued. 
+A spokesperson for the Pennsylvania Office of Inspector General said Saturday the agency completed a report on the issue. “Unfortunately, we can’t comment further regarding the report or the follow-up,” he continued.
 
 Spotlight PA contacted 15 people with direct knowledge of the interest-rate issue and three agreed to speak about it on the record.
 
@@ -175,5 +175,7 @@ Former employees feared that the new system could erase records of decades of ov
 “There should be checks and balances in place,” Eshleman said, to prevent something like this from happening. But the pace and ongoing mismanagement issues, particularly within the technology department, prevented proper oversight and accountability, she said.
 
 “Unemployment compensation is broken. It needs to be fixed.”
+
+<i>This story was updated to clarify that 250,000 were impacted by the interest mistake, but not all will receive refunds, according to the department.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
