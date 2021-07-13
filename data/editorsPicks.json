@@ -4,13 +4,13 @@
   ],
   "subfeatures": [
     "content/news/2021-07-09-SPLUNEMPLOYMENT10.md",
-    "content/news/2021-07-12-SPLSEARCH12.md"
+    "content/news/2021-03-23-SPLCALLOUT23.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2021-07-12-SPLREFORM13.md",
-    "content/news/2021-06-22-SPLREDISTRICT23.md",
+    "content/news/2021-07-12-SPLSEARCH12.md",
     "content/news/2021-07-09-SPLPLCA09.md"
   ],
   "sidebarPicks": [
