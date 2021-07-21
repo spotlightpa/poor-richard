@@ -8,7 +8,8 @@
 
 {{ $pages := $featuredStories | append $topSlots }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
-{{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+{{ $invest := site.GetPage "/newsletters/investigator" }}
+{{ $river := sort (union (union $paPost.RegularPages $invest.RegularPages) $news.RegularPages) ".PublishDate" "desc" }}
 {{ $pages = union $pages $river }}
 {{ $pages = after 1 $pages }}
 
