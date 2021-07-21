@@ -1,7 +1,6 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 <article class="tile is-vertical is-bottom">
-  {{ if .Page.Param "image" }}
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child">
@@ -19,7 +18,6 @@
       </div>
     </div>
   </div>
-  {{ end }}
   <div class="tile is-bottom">
     <div class="tile is-parent is-4 is-top-tablet">
       <div class="tile is-child">
@@ -50,17 +48,27 @@
             {{ .LinkTitle }}
           </a>
         </h2>
-      {{ if $params.byline }}
-        <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-          <a
-            href="{{ .RelPermalink }}"
-            class="has-text-grey hover-underline"
-            data-ga-category="byline"
-          >
-            by {{ $params.byline }}
-          </a>
-        </h3>
-      {{ end }}
+        {{ if or $params.byline $params.blurb }}
+          <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+            {{ if $params.byline }}
+              <a
+                href="{{ .RelPermalink }}"
+                class="has-text-grey hover-underline"
+                data-ga-category="byline"
+              >
+                by {{ $params.byline }}
+              </a>
+            {{ else }}
+              <a
+                href="{{ .RelPermalink }}"
+                class="has-text-grey hover-underline"
+                data-ga-category="blurb"
+              >
+                {{ $params.blurb }}
+              </a>
+            {{ end }}
+          </h3>
+        {{ end }}
       </div>
     </div>
   </div>
