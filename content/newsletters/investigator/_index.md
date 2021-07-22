@@ -8,7 +8,10 @@ blurb = "Every Thursday, you'll get exclusive, behind-the-scenes looks at our re
 linktitle = "The Investigator"
 weight = 1
 modal-exclude = true
-type = "newsletter"
+layout = "newsletters-archive"
+
+[cascade]
+image = "2021/06/01gc-4k5c-twja-965v.jpeg"
 +++
 Sign up for **The Investigator**, Spotlight PA's free weekly newsletter with exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol and a roundup of the best journalism from elsewhere across Pennsylvania.
 

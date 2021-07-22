@@ -1,0 +1,64 @@
+{{ define "promo" }}
+<!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+
+  {{ $subtitle := .Param "subhed" | default .Description }}
+
+  {{ $p := .Paginator 50 }}
+  {{ $pages := $p.Pages }}
+
+  {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
+  {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-category="list"
+  >
+    {{ if not $p.HasPrev }}
+      <div class="column is-three-fifths">
+        <header class="mb-5">
+          <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+            {{ .Title }}
+          </h1>
+          <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+            {{ $subtitle }}
+          </h2>
+
+          {{ partial "component/hero-image-block.html" . }}
+        </header>
+        {{ with .Content }}
+          <div class="content mb-6">
+            {{ . }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    <div
+      class="column is-four-fifths mb-6"
+      id="archives"
+    >
+      <nav class="tile is-ancestor is-vertical">
+        {{ range $pages.GroupByDate "January 2006" }}
+          <div class="tile is-parent">
+            <h2 class="title">{{ .Key }}</h2>
+          </div>
+          <div class="tile is-wrapped">
+            {{ range $page := .Pages }}
+              <div class="tile is-parent is-4 has-margin-top-negative">
+                <div class="tile is-child">
+                  {{ $props :=  dict "Page" . "showDate" true }}
+                  {{ partial "tile/list.html" $props }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </nav>
+    </div>
+    <div class="column is-three-fifths">
+      {{ partial "component/paginator-level.html" $p }}
+    </div>
+  </section>
+{{ end }}
+
