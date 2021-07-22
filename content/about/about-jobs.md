@@ -62,8 +62,6 @@ Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on
 
 This job is full-time, based anywhere in Pennsylvania, and includes benefits.
 
-*We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. As an equal opportunity employer, The Inquirer is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, LGBTQ people, and people with disabilities.*
-
 - - -
 
 ## News App Developer
