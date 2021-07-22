@@ -12,7 +12,7 @@
 
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
-  {{ $pages := where .Pages "Type" "newsletter" }}
+  {{ $pages := where .Pages "Kind" "section" }}
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
@@ -44,7 +44,7 @@
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
                 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-                {{ $slug := cond .IsPage .File.BaseFileName (.File.Dir | path.Base) }}
+                {{ $slug := .File.Dir | path.Base }}
                 <article
                   x-data="{ showForm: false }"
                 >

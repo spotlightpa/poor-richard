@@ -8,7 +8,11 @@ blurb = "Every weekday, you'll get the top news from across Pennsylvania, plus o
 linktitle = "PA Post"
 weight = 2
 modal-exclude = true
-type = "newsletter"
+layout = "newsletters-archive"
+
+[cascade]
+image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+
 +++
 
 Sign up for **PA Post**, Spotlight PA's free daily newsletter with a round up of the top news from across Pennsylvania, plus other good reads, helpful tips and some fun, too, to keep you informed and feeling good.
