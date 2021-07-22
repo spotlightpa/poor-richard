@@ -25,6 +25,9 @@ url = ""
 aliases = []
 modal-exclude = false
 no-index = false
+language-code = ""
+layout = ""
+extended-kicker = ""
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -58,7 +61,7 @@ As of early June, more than 4,200 residents of Pennsylvania’s long-term-care f
 
 The majority, roughly 3,600 people as of Wednesday, died in nursing homes, which are overseen by the Department of Health. (Personal care homes and assisted living facilities are under the Department of Human Services’ jurisdiction.)
 
-Adjusted for population, Pennsylvania has the seventh-highest death rate for residents of nursing homes and the 10th-highest rate of cases, according to <a href="https://data.cms.gov/stories/s/COVID-19-Nursing-Home-Data/bkwz-xpvg">data</a> from the Centers for Medicare and Medicaid Services.
+Adjusted for population, Pennsylvania has the seventh-highest death rate for residents of nursing homes and the 10th-highest rate of cases, according to <a href="https://data.cms.gov/covid-19/covid-19-nursing-home-data">data</a> from the Centers for Medicare and Medicaid Services.
 
 The state’s response to nursing homes in crisis has been marred by false starts and misinformation. An early plan to develop quick-strike teams to assist struggling homes was <a href="https://www.spotlightpa.org/news/2020/05/pennsylvania-coronavirus-nursing-homes-plan-quick-strike-teams/" target="_blank">abandoned</a>, and only many weeks into the crisis was the National Guard, and later teams from the Centers for Disease Control and Prevention, deployed in a limited fashion to help.
 
