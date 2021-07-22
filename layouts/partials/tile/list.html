@@ -35,15 +35,25 @@
       {{ $page.LinkTitle }}
     </a>
   </h2>
-  {{ if $params.byline }}
+  {{ if or $params.byline $params.blurb }}
     <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
-      <a
-        href="{{ $params.link }}"
-        class="has-text-grey hover-underline"
-        data-ga-category="byline"
-      >
-        by {{ $params.byline }}
-      </a>
+      {{ if $params.byline }}
+        <a
+          href="{{ $params.link }}"
+          class="has-text-grey hover-underline"
+          data-ga-category="byline"
+        >
+          by {{ $params.byline }}
+        </a>
+      {{ else }}
+        <a
+          href="{{ $params.link }}"
+          class="has-text-grey hover-underline"
+          data-ga-category="blurb"
+        >
+          {{ $params.blurb }}
+        </a>
+      {{ end }}
     </h3>
   {{ end }}
 </article>
