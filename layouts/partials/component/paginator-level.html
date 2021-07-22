@@ -1,20 +1,20 @@
 {{ if gt .TotalPages 0 }}
-  <div class="level" data-ga-category="paginator">
-  {{ if .HasPrev }}
-    <span class="level-item">
-      <a
-        class="button is-primary is-outlined has-text-weight-semibold"
-        href="{{ .Prev.URL }}"
-      >← Newer</a>
-    </span>
-  {{ end }}
-  {{ if .HasNext }}
-    <span class="level-item">
-      <a
-        class="button is-primary is-outlined has-text-weight-semibold"
-        href="{{ .Next.URL }}"
-      >Older →</a>
-    </span>
-  {{ end }}
-  </div>
+  <nav class="level" data-ga-category="paginator">
+    {{ if .HasPrev }}
+      <span class="level-item">
+        <a
+          class="button is-primary is-outlined has-text-weight-semibold"
+          href="{{ .Prev.URL }}"
+        >← Newer</a>
+      </span>
+    {{ end }}
+    {{ if .HasNext }}
+      <span class="level-item">
+        <a
+          class="button is-primary is-outlined has-text-weight-semibold"
+          href="{{ .Next.URL }}"
+        >Older →</a>
+      </span>
+    {{ end }}
+  </nav>
 {{ end }}
