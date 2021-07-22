@@ -34,21 +34,21 @@ extended-kicker = ""
 
 HARRISBURG — A Delaware County state lawmaker has been charged with theft and other crimes following a years-long investigation into allegations that she misused campaign and taxpayer funds when seeking reimbursement for expenses.
 
-The charges by the Pennsylvania Office of Attorney General against State Rep. Margo L. Davidson, a Democrat serving Upper Darby and the surrounding communities, revolve around expense reimbursements she received between 2015 and 2019.
+The charges by the Pennsylvania Attorney General’s Office against Rep. Margo L. Davidson, a Democrat serving Upper Darby and the surrounding communities, revolve around expense reimbursements she received between 2015 and 2019.
 
 Prosecutors said Davidson allegedly requested overnight reimbursements for time she did not actually spend in Harrisburg. Those reimbursements, <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-lawmakers-legislature-expenses-highest-paid-united-states/">known as per diems</a>, are given to most Pennsylvania legislators when they travel to the Capitol from their home districts.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The attorney general’s office also said Davidson was personally reimbursed by taxpayers for expenses that had actually been paid for by her campaign.
+The attorney general’s office also said Davidson was personally reimbursed by taxpayers for expenses that had actually been paid for by her campaign. She also failed to disclose what investigators called “suspicious” campaign expenditures on mandated campaign finance reports, and at one point during the probe, tried to direct a witness to lie on her behalf.
 
-Davidson could not immediately be reached for comment.
+Davidson, 58, could not immediately be reached for comment.
 
-But appearing before a judge in Harrisburg on Thursday, Davidson said she intends to resign her position, <a href="https://www.pennlive.com/news/2021/07/pa-rep-margo-davidson-charged-with-misuse-of-campaign-funds-says-shell-resign.html">according to PennLive</a>.
+But in a statement, Attorney General Josh Shapiro said she had accepted responsibility and agreed to resign.
 
-Davidson, 58, became the first Black woman elected to the state House from Delaware County more than a decade ago and the first Democrat to win the 164th District seat in 40 years.
+Davidson was the first Black woman elected to the state House from Delaware County more than a decade ago and the first Democrat to win the 164th District seat in 40 years. She took over the seat held by Republican Mario Civera, the incumbent since 1980.
 
-She took over the seat held by Republican Mario Civera, the incumbent since 1980. Her ascendance became the first indication of what would become a major political shift in the historically deep-red Delaware County. Ten years later, the former Republican stronghold is now governed by an all-Democrat county council.
+Her ascendance became the first indication of what would become a major political shift in the historically deep-red Delaware County. Ten years later, the former Republican stronghold is now governed by an all-Democrat county council.
 
 A West Philadelphia native, Davidson’s tenure in the state House has been marked with some controversy. In 2018, she drew headlines for being arrested twice in 12 days for driving and crashing a taxpayer-funded car while her license was suspended. She asserted that she didn’t know her license was suspended until State Police troopers notified her at the site of the second crash. Davidson later pleaded guilty to the charges, which were all summary offenses.
 
