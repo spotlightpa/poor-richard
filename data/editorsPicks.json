@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-07-21-SPLNURSING22.md"
+    "content/news/2021-07-21-SPLGROVE22.md"
   ],
   "subfeatures": [
-    "content/news/2020-06-13-SPLINFECTION14.md",
-    "content/news/2021-03-18-SPLLEVINE18.md"
+    "content/news/2021-06-30-SPLVETO01.md",
+    "content/news/2021-06-22-SPLVOTE23.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-07-21-SPLNURSING22.md",
     "content/news/2021-07-20-SPLSPENDEVENTXX.md",
-    "content/news/2021-07-21-SPLGROVE22.md",
     "content/news/2021-07-19-SPLPROCURE19.md"
   ],
   "sidebarPicks": [
