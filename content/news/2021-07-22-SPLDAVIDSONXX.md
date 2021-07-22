@@ -34,9 +34,9 @@ extended-kicker = ""
 
 HARRISBURG — A Delaware County state lawmaker has been charged with theft and other crimes following a years-long investigation into allegations that she misused campaign and taxpayer funds when seeking reimbursement for expenses.
 
-The charges by the state Office of Attorney General against State Rep. Margo L. Davidson, a Democrat serving Upper Darby and the surrounding communities, revolve around expense reimbursements she received between 2015 and 2019.
+The charges by the Pennsylvania Office of Attorney General against State Rep. Margo L. Davidson, a Democrat serving Upper Darby and the surrounding communities, revolve around expense reimbursements she received between 2015 and 2019.
 
-Prosecutors said Davidson allegedly requested overnight reimbursements for time she did not actually spend in Harrisburg. Those reimbursements, known as per diems, are given to most Pennsylvania legislators when they travel to the Capitol from their home districts.
+Prosecutors said Davidson allegedly requested overnight reimbursements for time she did not actually spend in Harrisburg. Those reimbursements, <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-lawmakers-legislature-expenses-highest-paid-united-states/">known as per diems</a>, are given to most Pennsylvania legislators when they travel to the Capitol from their home districts.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -48,7 +48,7 @@ But appearing before a judge in Harrisburg on Thursday, Davidson said she intend
 
 Davidson, 58, became the first Black woman elected to the state House from Delaware County more than a decade ago and the first Democrat to win the 164th District seat in 40 years.
 
-Her victory over Republican Mario Civera — the incumbent since 1980 — became the first indication of what would become a major political shift in the historically deep-red Delaware County. Ten years later, the former Republican stronghold is now governed by an all-Democrat county council.
+She took over the seat held by Republican Mario Civera, the incumbent since 1980. Her ascendance became the first indication of what would become a major political shift in the historically deep-red Delaware County. Ten years later, the former Republican stronghold is now governed by an all-Democrat county council.
 
 A West Philadelphia native, Davidson’s tenure in the state House has been marked with some controversy. In 2018, she drew headlines for being arrested twice in 12 days for driving and crashing a taxpayer-funded car while her license was suspended. She asserted that she didn’t know her license was suspended until State Police troopers notified her at the site of the second crash. Davidson later pleaded guilty to the charges, which were all summary offenses.
 
