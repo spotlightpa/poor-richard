@@ -46,32 +46,6 @@ The needs are urgent, Beam said, because they want to have these programs in pla
 
 But Republican lawmakers pushed back, saying that at this stage of the pandemic, there needs to be more oversight and transparency around how emergency contracts are used.
 
-<div data-type="header" class="card paragraph-spacing collection-item card-embedded-content" style="width:100%"> <div class=""> <h5 class="bold h5 pad pad-top pad-md" style="padding: 15px 0px;font-size: 16px;line-height: 1.13;letter-spacing: -.1px;font-weight: 700;"><div class="" style="
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    border-color: #FF0017;
-    margin-bottom: 10px;
-"> <div class="" style="
-    margin-bottom: 5px;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: normal;
-    font-weight: 900;
-    text-transform: uppercase;
-">Coronavirus Coverage</div> </div>
-<div class="pg-threebutton-wrapper text-center" style="text-align: center;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;">
-    <a data-link-type="article-embed-coronavirus-links" href="https://www.inquirer.com/health/coronavirus/inq/coronavirus-covid-19-pandemic-numbers-pennsylvania-new-jersey-20200319.html" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none">
-        VIRUS TRACKER
-    </a>
-    <a data-link-type="article-embed-coronavirus-links" href="https://inquirer.com/coronavirus" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border-left: 2px solid #eee;">
-        FULL COVERAGE
-    </a>
-    <a data-link-type="article-embed-coronavirus-links" href="https://www.inquirer.com/covid-tips/" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border-left: 2px solid #eee;">
-        PANDEMIC TIPS
-    </a>
-</div></h5> </div> </div>
-
-
 “Now that the spread isn’t occurring as rapidly as it was, did we not as a state have the ability to transition a little bit slower, take time, and perhaps vet some Pennsylvania-based vendors?” Sen. Michele Brooks, (R., Mercer), chair of the Health and Human Services Committee, asked Wednesday.
 
 The Department of Health wants to hire Ginkgo Bioworks, a Boston-based biotech company, to provide optional COVID-19 testing programs in K-12 schools in the coming weeks. Public Consulting Group is also headquartered in Boston and is the agency’s choice to pick up where the last contact tracing company left off.
