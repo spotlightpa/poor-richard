@@ -46,13 +46,39 @@ The needs are urgent, Beam said, because they want to have these programs in pla
 
 But Republican lawmakers pushed back, saying that at this stage of the pandemic, there needs to be more oversight and transparency around how emergency contracts are used.
 
+<div data-type="header" class="card paragraph-spacing collection-item card-embedded-content" style="width:100%"> <div class=""> <h5 class="bold h5 pad pad-top pad-md" style="padding: 15px 0px;font-size: 16px;line-height: 1.13;letter-spacing: -.1px;font-weight: 700;"><div class="" style="
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #FF0017;
+    margin-bottom: 10px;
+"> <div class="" style="
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+">Coronavirus Coverage</div> </div>
+<div class="pg-threebutton-wrapper text-center" style="text-align: center;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;">
+    <a data-link-type="article-embed-coronavirus-links" href="https://www.inquirer.com/health/coronavirus/inq/coronavirus-covid-19-pandemic-numbers-pennsylvania-new-jersey-20200319.html" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none">
+        VIRUS TRACKER
+    </a>
+    <a data-link-type="article-embed-coronavirus-links" href="https://inquirer.com/coronavirus" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border-left: 2px solid #eee;">
+        FULL COVERAGE
+    </a>
+    <a data-link-type="article-embed-coronavirus-links" href="https://www.inquirer.com/covid-tips/" class="pg-threebutton-toggle" style="-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;text-align: center;padding: 5px 15px;font-family: &quot;Gotham Narrow SSm A&quot;, &quot;Gotham Narrow SSm B&quot;, &quot;Gotham Narrow Ssm&quot;, &quot;Arial&quot;, sans-serif;color: #000;font-weight: bold;letter-spacing: 0.08em;text-transform: uppercase;font-size: 14px;cursor: pointer;text-decoration: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border-left: 2px solid #eee;">
+        PANDEMIC TIPS
+    </a>
+</div></h5> </div> </div>
+
+
 “Now that the spread isn’t occurring as rapidly as it was, did we not as a state have the ability to transition a little bit slower, take time, and perhaps vet some Pennsylvania-based vendors?” Sen. Michele Brooks, (R., Mercer), chair of the Health and Human Services Committee, asked Wednesday.
 
 The Department of Health wants to hire Ginkgo Bioworks, a Boston-based biotech company, to provide optional COVID-19 testing programs in K-12 schools in the coming weeks. Public Consulting Group is also headquartered in Boston and is the agency’s choice to pick up where the last contact tracing company left off.
 
 The previous vendor, Insight Global, headquartered in Atlanta, was hired through an emergency procurement request in July 2020. The state fired the company in June after a security breach exposed the personal information of about 72,000 people who participated in contact tracing efforts — outreach to people who were possibly exposed to the coronavirus in an attempt to prevent future outbreaks.
 
-While the original contract was worth $22.9 million, it grew to $57.8 million by March, purchase orders on file with the state treasurer show. Health department officials on Wednesday told Senate lawmakers the state has paid the company $20 million so far. A hold has been placed on future payments as litigation related to the data breach is handled.
+While the original contract was worth $22.9 million, it grew to $57.8 million by March, purchase orders on file with the state treasurer show. Health department officials on Wednesday told Senate lawmakers the state has paid the company $28 million so far. A hold has been placed on future payments as litigation related to the data breach is handled.
 
 It was not until late June that the health department used the emergency procurement process to initiate a contract with Public Consulting Group to take over.
 
@@ -88,7 +114,7 @@ Rep. Jason Ortitay (R., Allegheny), who chairs the subcommittee that held Tuesda
 
 Ortitay also said he wants to improve transparency by requiring state agencies to publicly post emergency procurement requests. State law currently does not require agencies to make the requests public, but the Department of General Services does publish them to the state eMarketplace website, Topper said.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20information%20about%20emergency%20procurement%20contract%20that%20we%20should%20know%3F%20Tell%20us.%20"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20information%20about%20emergency%20procurement%20contract%20that%20we%20should%20know%3F%20"></div>
 
 “That’s one thing we’re going to fix, is to make sure they are statutorily obligated, and it’s not just an option,” Ortitay said.
 
@@ -97,5 +123,7 @@ The health department will continue to communicate with legislators on the issue
 Sen. Kristin Phillips-Hill, (R., York), chair of the Senate Communications and Technology Committee, said she would follow up with agency officials and colleagues in the House to collaborate on ways to improve the procurement process as a whole.
 
 “I think that we need to have more legislative oversight,” Phillips-Hill said.
+
+<i>This story has been updated to clarify the amount of money paid to Insight Global.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
