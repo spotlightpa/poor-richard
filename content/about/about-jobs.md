@@ -6,8 +6,6 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
-Spotlight PA currently has three job openings:
-
 ## Assistant Editor
 
 ### [Read More & Apply Here](https://us60.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/228)
@@ -31,7 +29,7 @@ Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Ca
 * A candidate who values camaraderie and shares a passion for our work, bringing a sense of urgency and drive to their work every day. 
 * Someone who values innovation, creativity, and originality, and seeking to explore new and experimental ways of telling stories and connecting with audiences.
 
-This job is full-time, based anywhere in the U.S., and includes benefits.
+This job is full-time, based anywhere in the U.S., and includes benefits. Please submit a resume and cover letter. 
 
 - - -
 
@@ -60,15 +58,7 @@ Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on
 * Fluency in foreign languages, particularly Spanish;
 * A comfort with requesting, scrutinizing, and using data in the reporting process.
 
-This job is full-time, based anywhere in Pennsylvania, and includes benefits.
-
-- - -
-
-## News App Developer
-
-### [Read More & Apply Here](https://recruiting.adp.com/srccar/public/RTI.home?c=2171807&d=AdvanceLocalExternalCareerSite&r=5000697558706&_fromPublish=true)
-
-Spotlight PA, in partnership with PennLive/The Patriot-News, is looking for a creative News App Developer to develop and design interactive data visualizations and news apps to elevate the impact of our award-winning journalistic work, produced for the benefit of communities and readers across Pennsylvania. Our newsrooms are committed to building a culture and staff that reflect and support the diversity of the communities we serve.
+This job is full-time, based anywhere in Pennsylvania, and includes benefits. Please submit a resume and cover letter. 
 
 - - -
 
