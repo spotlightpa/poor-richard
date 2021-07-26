@@ -23,7 +23,7 @@
   {{ if ne hugo.Environment "development" }}
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
   {{ end }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <style>{{ $css.Content }}</style>
   <link rel="preload" as="font" href="/css/fonts/merriweather-v22/merriweather-v22-latin-regular.woff2" crossorigin>
 
   <noscript>
