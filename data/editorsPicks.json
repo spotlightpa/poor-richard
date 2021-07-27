@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-07-23-SPLGEROW24.md",
     "content/news/2021-07-27-SPLFORCE27.md"
   ],
   "subfeatures": [
-    "content/news/2021-06-08-SPLGUVXX.md",
-    "content/news/2021-07-22-SPLDAVIDSONXX.md"
+    "content/news/2021-01-12-SPLPSP13.md",
+    "content/news/2020-06-20-SPLROSE20.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
     "content/news/2021-07-23-SPLPROCUREMENTS24.md",
-    "content/news/2021-07-21-SPLGROVE22.md",
-    "content/news/2021-07-21-SPLNURSING22.md"
+    "content/news/2021-07-22-SPLDAVIDSONXX.md",
+    "content/news/2021-07-21-SPLGROVE22.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
