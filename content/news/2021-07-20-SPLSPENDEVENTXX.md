@@ -11,10 +11,10 @@ published = 2021-07-20T15:07:54Z
 slug = "pa-lawmaker-expenses-live-event"
 authors = []
 byline = "Spotlight PA Staff"
-title = "You’re invited! A free reader Q&A on how lawmakers spend millions of taxpayer dollars on perks."
+title = "WATCH: A live reader Q&A on how lawmakers spend millions of taxpayer dollars on perks"
 subtitle = ""
-description = "Reporters from Spotlight PA and The Caucus will discuss their investigation into how the legislature spends taxpayer dollars then obscures those expenses from the public."
-blurb = "Reporters from Spotlight PA and The Caucus will discuss their investigation into how the legislature spends taxpayer dollars then obscures those expenses from the public."
+description = "Reporters from Spotlight PA and The Caucus discussed their investigation into how the legislature spends taxpayer dollars then obscures those expenses from the public."
+blurb = "Reporters from Spotlight PA and The Caucus discussed their investigation into how the legislature spends taxpayer dollars then obscures those expenses from the public."
 kicker = "The Capitol"
 topics = ["The Capitol"]
 series = ["The Hidden Tab"]
@@ -36,12 +36,12 @@ Between 2017 and 2020, the Pennsylvania legislature spent $203 million in taxpay
 
 Finding out exactly what that money was spent on is difficult as the public faces an array of barriers and even pushback from the lawyers hired by the General Assembly. Spotlight PA and The Caucus spent over a year investigating <a href="https://www.spotlightpa.org/news/2021/05/pa-legislature-expense-accounts-hidden-legislative-privilege/">how the legislature spends taxpayer dollars then obscures those expenses from the public. </a>
 
-On Wednesday, July 28 at 5 p.m., join Spotlight PA’s Angela Couloumbis; Sam Janesch, Brad Bumsted, and Mike Wereschagin of The Caucus; and Khalif Ali, executive director of Common Cause Pennsylvania, for a free Q&amp;A on state lawmaker expenses.
+On Wednesday, July 28 at 5 p.m., Spotlight PA’s Angela Couloumbis; Sam Janesch, Brad Bumsted, and Mike Wereschagin of The Caucus; and Khalif Ali, executive director of Common Cause Pennsylvania, <a href="https://inquirer.zoom.us/webinar/register/WN_P81sj3B0RRKpRf1td5OUMw" target="_blank">participated in a free Q&amp;A on state lawmaker expenses</a>.
 
-<a href="https://inquirer.zoom.us/webinar/register/WN_P81sj3B0RRKpRf1td5OUMw">RSVP for FREE here</a>, and submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
+A full recording of the event is available below.
 
 <b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000003ZrjQAE">spotlightpa.org/donate.</a>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o0FSR_NvGqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i>Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
