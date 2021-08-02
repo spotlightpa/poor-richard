@@ -20,5 +20,3 @@ Sign up for **PA Post**, Spotlight PA's free daily newsletter with a round up of
 **PA Post** is delivered straight to your inbox every Monday-Saturday. If you don't receive it, please add `newsletters@spotlightpa.org` to your contacts, or check your spam folder and mark it as "not spam."
 
 {{<newsletter/papost-form>}}
-
-{{<newsletter/papost-archive>}}
