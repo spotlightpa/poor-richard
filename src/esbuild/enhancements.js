@@ -3,7 +3,6 @@ import Alpine from "alpinejs/src/index.js";
 import "../utils/add-listeners.js";
 
 import embedList from "../enhancements/embed-list.js";
-import feed from "../enhancements/feed.js";
 import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import intersector from "../enhancements/intersector.js";
@@ -19,7 +18,6 @@ import sticky from "../enhancements/sticky.js";
 
 for (let [name, comp] of [
   ["embed-list", embedList],
-  ["feed", feed],
   ["funnel-status", funnelStatus],
   ["image-rotator", imageRotator],
   ["intersector", intersector],
