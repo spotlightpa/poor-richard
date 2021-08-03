@@ -1,6 +1,22 @@
 {
   "list": [
     {
+      "display": "Neighborhood Art House",
+      "sort": "House, Neighborhood Art"
+    },
+    {
+      "display": "HirschMusic",
+      "sort": "HirschMusic"
+    },
+    {
+      "display": "Liberty Book Shop",
+      "sort": "Shop, Liberty Book"
+    },
+    {
+      "display": "Joy of Sunshine",
+      "sort": "Sunshine, Joy of"
+    },
+    {
       "display": "Sharon Abendschoen",
       "sort": "Abendschoen, Sharon"
     },
