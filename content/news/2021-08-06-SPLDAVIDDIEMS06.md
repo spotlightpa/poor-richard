@@ -32,17 +32,17 @@ extended-kicker = ""
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Theft charges against a Philadelphia Democrat highlight Pennsylvania’s lax rules for reimbursing lawmakers with taxpayer and donor money, two state-run systems with little transparency and even less oversight.
+HARRISBURG — Theft charges against a Philadelphia-area Democrat highlight Pennsylvania’s lax rules for reimbursing lawmakers with taxpayer and donor money, two state-run systems with little transparency and even less oversight.
 
-Former state Rep. Margo Davidson was charged in July with <a href="https://www.spotlightpa.org/news/2021/07/margo-davidson-theft-charges-pa-attorney-general/">stealing from taxpayers and misusing campaign funds</a>, helping her pad a legislative salary that’s already among the most generous in the country. She has since accepted responsibility and resigned her office.
+Former State Rep. Margo Davidson was charged in July with <a href="https://www.spotlightpa.org/news/2021/07/margo-davidson-theft-charges-pa-attorney-general/">stealing from taxpayers and misusing campaign funds</a>, helping her pad a legislative salary that’s already among the most generous in the country. She has since accepted responsibility and resigned her office.
 
-Despite warnings from good-government advocates and even some inside the Capitol building that the state’s reimbursement systems are ripe for abuse, Republican leadership has failed to move reforms.
+Despite warnings from good-government advocates and even some inside the Capitol that the state’s reimbursement systems are ripe for abuse, Republican leadership has failed to move reforms.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Unlike most private and public sector employers, state lawmakers <a href="https://www.spotlightpa.org/news/2021/05/pa-legislature-expense-accounts-hidden-legislative-privilege/" target="_blank">often aren’t required to provide any proof when seeking reimbursement</a> from taxpayer-funded accounts. On the campaign side, the public can’t see <a href="https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/" target="_blank">thousands of dollars of election expenses lumped together</a> under vague categories and charged to credit cards.
+Unlike most private- and public-sector employers, state lawmakers <a href="https://www.spotlightpa.org/news/2021/05/pa-legislature-expense-accounts-hidden-legislative-privilege/" target="_blank">often aren’t required to provide any proof when seeking reimbursement</a> from taxpayer-funded accounts. On the campaign side, the public can’t see <a href="https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/" target="_blank">thousands of dollars of election expenses lumped together</a> under vague categories and charged to credit cards.
 
-Those expense rules, highlighted in a series of stories by The Caucus and Spotlight PA over the past two years, have created “a culture of zero accountability,” Khalif Ali, executive director of Common Cause Pennsylvania, <a href="https://www.spotlightpa.org/news/2021/07/pa-lawmaker-expenses-live-event/">said during a recent Spotlight PA live event</a>.
+Those expense rules, highlighted in a series of stories by The Caucus and Spotlight PA over the last two years, have created “a culture of zero accountability,” Khalif Ali, executive director of Common Cause Pennsylvania, <a href="https://www.spotlightpa.org/news/2021/07/pa-lawmaker-expenses-live-event/">said during a recent Spotlight PA live event</a>.
 
 They were written by the very lawmakers they are meant to govern, but too often, Ali said, there is a practice of “professed change,” where lawmakers talk about reform when confronted with problems but don’t follow through.
 
@@ -74,7 +74,7 @@ Davidson and her lawyer did not respond to requests for comment.
 
 The complaint against her stated that nearly a third of her per diem reimbursements for hotel stays in Harrisburg from 2017 through 2019 were fraudulent. The Office of Attorney General alleged that Davidson either had not stayed overnight in Harrisburg, as she had claimed, or she had already been reimbursed for the stay through her campaign account, effectively engaging in double-dipping.
 
-Both Democrats and Republicans over the years have criticized the per diem system and introduced bills to eliminate the flat-rate payments. At least two such bills this session — from state Sen. Jim Brewster (D., Allegheny) and Rep. Brett Miller (R., Lancaster) — would force their colleagues to provide expense documentation when seeking reimbursement.
+Both Democrats and Republicans over the years have criticized the per diem system and introduced bills to eliminate the flat-rate payments. At least two such bills this session — from State Sen. Jim Brewster (D., Allegheny) and Rep. Brett Miller (R., Lancaster) — would force their colleagues to provide expense documentation when seeking reimbursement.
 
 “Modern technology makes the requirement of submitting receipts a minuscule burden — a burden worth the cost of restoring the public’s trust in the General Assembly’s handling of its financial affairs,” Miller wrote in a memo to his colleagues seeking support for the bill.
 
@@ -98,17 +98,17 @@ Lawmakers and their staff are also eligible to be reimbursed for mileage, other 
 
 Davidson was charged with failing to report campaign expenses as required to the Department of State and for not spending money through an official campaign treasurer.
 
-It’s unclear if the unreported campaign expenses were for her election efforts — like typical fundraising event costs or yard signs — or for her personally. The complaint, for instance, mentions unreported expenses for out-of-state hotels and $400 toward her Nordstrom credit card bill, but it does not specify what the purpose of those expenses was.
+It’s unclear if the unreported campaign expenses were for her election efforts — like typical fund-raising event costs or yard signs — or for her personally. The complaint, for instance, mentions unreported expenses for out-of-state hotels and $400 toward her Nordstrom credit card bill, but it does not specify what the purpose of those expenses was.
 
 But even if they were for personal use, it wouldn’t necessarily be a crime in Pennsylvania.
 
-Pennsylvania is among a minority of states that <a href="https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/" target="_blank">does not have an explicit ban on candidates spending campaign money for their personal use</a>, The Caucus and Spotlight PA found in a 2019 investigation.
+Pennsylvania is among a minority of states that <a href="https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/" target="_blank">do not have an explicit ban on candidates spending campaign money for their personal use</a>, The Caucus and Spotlight PA found in a 2019 investigation.
 
 That’s allowed legislators to spend donors’ money on alcohol, lavish dinners, clothes, limos, and travel across the United States and abroad — all while keeping the expenses hidden through various legal methods.
 
-Senate Minority Leader Jay Costa (D., Allegheny) has repeatedly introduced a campaign finance reform plan, and he updated it last session to include issues highlighted by The Caucus and Spotlight PA. The reforms, which have never received a committee hearing, include defining and banning the “personal use” of campaign funds, and requiring candidates to submit credit card statements.
+Senate Minority Leader Jay Costa (D., Allegheny) has repeatedly introduced a campaign-finance reform plan, and he updated it last session to include issues highlighted by The Caucus and Spotlight PA. The reforms, which have never received a committee hearing, include defining and banning the “personal use” of campaign funds, and requiring candidates to submit credit card statements.
 
-Other reforms proposed by lawmakers and advocates include requiring campaign finance reports to be submitted electronically rather than by mail and real-time campaign expense reporting.
+Other reforms proposed by lawmakers and advocates include requiring campaign-finance reports to be submitted electronically rather than by mail and real-time campaign expense reporting.
 
 {{<picture src="external/e7egv7x4g5vhwf2hpb5xpn9cbm.jpeg" description="Rep Seth Grove, seen here with Margo Davidson, plans to call a series of hearings to review rules and procedures for how legislators file expenses." caption="Rep Seth Grove, seen here with Margo Davidson, plans to call a series of hearings to review rules and procedures for how legislators file expenses." credit="ALEJANDRO A. ALVAREZ / Philadelphia Inquirer">}} 
 
