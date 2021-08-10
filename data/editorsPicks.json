@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-07-15-SPLSEN15.md",
     "content/news/2021-08-10-SPLVACCINE10.md"
   ],
   "subfeatures": [
-    "content/news/2021-06-08-SPLGUVXX.md"
+    "content/news/2021-07-23-SPLPROCUREMENTS24.md",
+    "content/news/2021-07-19-SPLPROCURE19.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-08-06-SPLDAVIDDIEMS06.md",
     "content/news/2021-08-05-SPLOPUSE06.md",
-    "content/news/2021-08-04-SPLRULES05.md",
-    "content/news/2021-08-03-SPLBUCKS04.md"
+    "content/news/2021-08-04-SPLRULES05.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
