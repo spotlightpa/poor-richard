@@ -1,10 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2021-08-12-SPLCENSUS13.md"
+    "content/news/2021-08-12-SPLCOUNTY13.md"
   ],
   "subfeatures": [
-    "content/news/2021-07-12-SPLREFORM13.md",
-    "content/news/2021-07-01-SPLSUMMER02.md"
+    "content/news/2021-08-12-SPLCENSUS13.md",
+    "content/news/2021-07-12-SPLREFORM13.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
