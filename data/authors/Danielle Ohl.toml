@@ -1,0 +1,9 @@
+name = "Danielle Ohl"
+firstName = "Danielle"
+lastName = "Ohl"
+title = "Investigative Reporter"
+email = "dohl@spotlightpa.org"
+twitter = "DTOhl"
+content = "Danielle is an investigative reporter covering the Capitol for Spotlight PA. She previously worked at The Capital Gazette in Annapolis, where she won a Pulitzer Prize special citation with her newsroom for covering the mass shooting of her own colleagues. She worked with ProPublica's Local Reporting Network investigating thousands of lawsuits filed by the Annapolis housing authority against tenants. With The Capital, she covered city hall, the U.S. Naval Academy and the COVID-19 pandemic. She is an avid home cook, plant mom and will gladly take pie recipes alongside news tips."
+active = true
+headshot = ""
