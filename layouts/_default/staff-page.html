@@ -11,25 +11,6 @@
             id="{{ $author.slug }}"
             class="card block"
           >
-            {{ if $author.headshot }}
-              {{ $imgOpt := dict
-                "filename" $author.headshot
-                "width" 800
-                "height" 600
-              }}
-              {{ $cardSrc := partial "helper/imgproxy" $imgOpt }}
-              <div class="is-hidden-tablet">
-                <figure class="image">
-                  <img
-                    src="{{ $cardSrc }}"
-                    alt="Photo of {{ .name }}"
-                    width="800"
-                    height="600"
-                    class=""
-                    >
-                </figure>
-              </div>
-            {{ end }}
             <div class="card-content">
               <div class="media">
                 {{ if $author.thumb }}
@@ -44,6 +25,20 @@
                   </div>
                 {{ end }}
                 <div class="media-content">
+                  {{ if $author.thumb }}
+                    <div class="is-hidden-tablet has-text-centered">
+                      <div class="is-inline-block">
+                        <figure class="image is-128x128">
+                          <img
+                            src="{{ $author.thumb }}"
+                            alt="Photo of {{ $author.name }}"
+                            class="is-rounded"
+                            >
+                        </figure>
+                      </div>
+                    </div>
+                  {{ end }}
+
                   {{ if $author.link }}
                     <p class="title is-3" data-ga-category="author-articles">
                       <a href="{{ $author.link }}">{{ $author.name }}</a>
