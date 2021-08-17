@@ -5,6 +5,12 @@ url = "/series/"
 weight = 1
 
 [[main]]
+name = "Events"
+url = "/topics/events/"
+pre = "is-uppercase"
+weight = 2
+
+[[main]]
 name = "Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
