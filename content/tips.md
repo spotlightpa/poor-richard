@@ -8,6 +8,10 @@ Our reporters rely on readers like you to alert us to waste, fraud, abuse or oth
 
 _PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response._
 
+## Send comment to newsroom
+
+{{<contact-form>}}
+
 ## Email
 
 Submit a tip using your regular email service. For more secure email options, see below.
