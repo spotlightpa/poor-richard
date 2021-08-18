@@ -1,0 +1,25 @@
+<div
+  class="mt-4"
+  x-data="{
+      params: new URLSearchParams(window.location.search),
+      get validations() {
+          let errors = this.params.get('errors') || '{}';
+          return Object.values(JSON.parse(errors)).flat()
+      }
+  }"
+  x-cloak
+  x-show="params.get('msg')"
+>
+  <p>
+    <b x-template>Error details (${params.get('code')}):</b>
+    <span x-text="params.get('msg')"></span>
+  </p>
+  <p x-show="validations.length">
+    <b x-template>Problem${ validations.length !== 1 ? 's' : ''}:</b>
+  </p>
+  <p>
+    <template x-for="msg of validations" :key="msg">
+      <li x-text="msg"></li>
+    </template>
+  </p>
+</div>

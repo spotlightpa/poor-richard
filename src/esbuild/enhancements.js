@@ -46,6 +46,22 @@ Alpine.directive(
   }
 );
 
+Alpine.directive(
+  "template",
+  (el, { expression }, { effect, evaluateLater }) => {
+    let evalStr = expression
+      ? "`" + expression + "`"
+      : "`" + el.innerText.trim() + "`";
+    let evaluate = evaluateLater(evalStr);
+
+    effect(() => {
+      evaluate((value) => {
+        el.innerText = value;
+      });
+    });
+  }
+);
+
 Alpine.magic("setAttrs", (el) => (target, obj) => {
   for (let [targetName, source] of Object.entries(obj)) {
     let val = el.dataset[source];
