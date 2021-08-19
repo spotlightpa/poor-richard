@@ -44,9 +44,9 @@ Our panelists include:
 
 - Sen. Art Haywood, state senator for parts of Montgomery and Philadelphia Counties
 
-- Dr. Jerome Gloster, chief executive officer of Primary Care Health Services, Inc., a federally qualified health center, and a member of the Black Equity Coalition
+- Dr. Jerome Gloster, chief executive officer of Primary Care Health Services, Inc. and a member of the Black Equity Coalition
 
-- Others to be announced
+- Frederick Jackson, executive director of Wayne Memorial Community Health Centers
 
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_s2yh3_s8TOqQ3J8UkgqGew"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
 
