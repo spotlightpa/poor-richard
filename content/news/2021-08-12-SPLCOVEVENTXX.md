@@ -48,6 +48,8 @@ Our panelists include:
 
 - Frederick Jackson, executive director of Wayne Memorial Community Health Centers
 
+- Dr. Krys Johnson, assistant professor of instruction in Temple University’s Department of Epidemiology and Biostatistics
+
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_s2yh3_s8TOqQ3J8UkgqGew"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
 
 <b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
