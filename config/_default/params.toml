@@ -1,8 +1,8 @@
 banner-active = true
-banner = "**FLASH CHALLENGE: Help us raise $5K now and your gift will be DOUBLED »**"
-banner-link = "/donate/"
-banner-bg-color = "#ea5b3c"
-banner-text-color = "#ffffff"
+banner = "**RSVP NOW: Our panel of experts answer your questions on the COVID-19 resurgence »**"
+banner-link = "https://inquirer.zoom.us/webinar/register/WN_s2yh3_s8TOqQ3J8UkgqGew"
+banner-bg-color = "#c200ff"
+banner-text-color = "#000000"
 promo-active = true
 promo-type = "image"
 promo-image-caption = "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now."
