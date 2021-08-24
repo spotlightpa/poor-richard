@@ -1,4 +1,5 @@
 +++
+internal-id = "SPLCREDITTRIP24"
 image = "2019/11/state-sens.jpeg"
 image-description = "The leader of the Pennsylvania Senate, Joe Scarnati, was among three senators who went on a European trip shortly after the Legislature passed a sweeping overhaul expanding wine sales."
 image-credit = "Courtesy of The Philadelphia Inquirer"

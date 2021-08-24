@@ -1,4 +1,5 @@
 +++
+internal-id = "splcreditbill24"
 draft = false
 image = "2019/11/captiol-3.jpeg"
 image-description = "Hours after an investigation Tuesday revealed millions of dollars in hidden campaign expenses by Pa. lawmakers, a House committee, at the request of GOP Senate leaders, attempted to further limit oversight. But on Wednesday, House Republicans said they would reverse course."

@@ -1,4 +1,5 @@
 +++
+internal-id = "splednote21"
 draft = false
 image = "2020/01/Local-Legal-Initiative.png"
 image-description = "The Local Legal Initiative provides local news organizations with the direct legal services they need to pursue enterprise and investigative stories in their communities."

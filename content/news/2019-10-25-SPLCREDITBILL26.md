@@ -1,4 +1,5 @@
 +++
+internal-id = "SPLCREDITBILL26"
 image = "2019/11/jay-costa.jpeg"
 image-description = "State Sen. Jay Costa (D., Allegheny) is pushing a sweeping campaign finance reform bill that would, among other changes, ban using campaign cash for personal use and require candidates to better describe their expenses on public forms."
 image-credit = "Pittsburgh Post-Gazette staff"

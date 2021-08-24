@@ -1,4 +1,5 @@
 +++
+internal-id = "splcredit"
 image = "2020/02/01f4akrqrpy6thwx.jpeg"
 image-credit = "Kalim A. Bhatti / Philadelphia Inquirer"
 published = 2020-02-13T10:00:00.000Z

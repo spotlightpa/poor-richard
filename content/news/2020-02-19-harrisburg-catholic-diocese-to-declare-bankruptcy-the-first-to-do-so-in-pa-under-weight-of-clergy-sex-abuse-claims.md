@@ -1,4 +1,5 @@
 +++
+internal-id = "splclergy19"
 draft = false
 image = "2020/02/01f4tve1t1ssstbg.jpeg"
 image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"

@@ -1,4 +1,5 @@
 +++
+internal-id = "SPLCREDITHIDE23"
 image = "2019/11/capitol-columns.jpeg"
 image-description = "The PA State Capitol in Harrisburg, Pa., Tuesday, June 18, 2019."
 image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"

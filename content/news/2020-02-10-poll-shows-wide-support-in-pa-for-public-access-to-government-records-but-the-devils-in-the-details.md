@@ -1,4 +1,5 @@
 +++
+internal-id = "splpoll10"
 draft = false
 image = "2019/11/credit.jpeg"
 image-description = "Reporters for The Caucus and Spotlight PA spent a year requesting and analyzing thousands of credit card statements and receipts for Pa. legislative campaigns to uncover examples of lavish and outlandish spending."
