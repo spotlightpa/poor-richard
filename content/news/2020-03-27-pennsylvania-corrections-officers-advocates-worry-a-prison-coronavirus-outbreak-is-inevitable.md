@@ -1,4 +1,5 @@
 +++
+internal-id = "spljailscovid27"
 draft = false
 image = "2020/03/01f7wz4pzxjt2psd.jpeg"
 image-description = "Beginning Saturday, officials plan to send new male inmates and parole violators to SCI Retreat in Luzerne County, while transferring most of the people currently held there to other prisons in the state."

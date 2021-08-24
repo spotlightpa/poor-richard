@@ -1,4 +1,5 @@
 +++
+internal-id = "splapology07"
 draft = false
 image = "2020/02/01f3vnccjdv8t2ax.jpeg"
 image-description = "Micah Sims, executive director of Common Cause Pennsylvania, apologized Friday for failing to comply with the state lobbying law, sparking a $19,900 fine."

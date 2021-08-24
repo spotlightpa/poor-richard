@@ -1,4 +1,5 @@
 +++
+internal-id = "splscarnati13"
 draft = false
 image = "2020/02/01f49cpwqh5cw3qn.jpeg"
 image-credit = "MATT ROURKE / AP"
