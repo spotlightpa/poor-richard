@@ -30,7 +30,7 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://votebeat.org/republishing/"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — Senate Majority Leader Jake Corman has taken center stage in Pennsylvania this week to cast doubt on the results of the election, claiming the Wolf administration attempted to “<a href="https://twitter.com/AmericaNewsroom/status/1324741407345680384">tip the scales in favor of Joe Biden</a>.”
 
