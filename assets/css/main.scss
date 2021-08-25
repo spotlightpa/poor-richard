@@ -31,6 +31,7 @@ $navbar-height: 5rem;
 $navbar-item-img-max-height: 3rem;
 $navbar-background-color: $black;
 $navbar-item-color: $white;
+$navbar-item-hover-color: $yellow;
 $navbar-item-hover-background-color: $black;
 $navbar-tab-active-background-color: $black;
 $navbar-item-active-color: $white;
@@ -160,11 +161,11 @@ body {
   width: 300px;
 
   &:hover {
-    color: $spotlight-darkblue;
+    color: $yellow;
   }
 
   &:active {
-    color: $spotlight-lightblue;
+    color: $spotlight-darkblue;
   }
 
   @media (max-width: 350px) {
