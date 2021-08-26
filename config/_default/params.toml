@@ -1,7 +1,7 @@
 banner-active = true
-banner = "**RSVP NOW: Our panel of experts answer your questions on the COVID-19 resurgence »**"
-banner-link = "https://inquirer.zoom.us/webinar/register/WN_s2yh3_s8TOqQ3J8UkgqGew"
-banner-bg-color = "#c200ff"
+banner = "**THE URGENCY OF NOW: Support fact-based journalism that holds the powerful to account »**"
+banner-link = "/donate/"
+banner-bg-color = "#ea5b3a"
 banner-text-color = "#ffffff"
 promo-active = true
 promo-type = "image"
