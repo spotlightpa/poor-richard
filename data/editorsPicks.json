@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-08-25-SPLMANDATE26.md",
     "content/news/2021-08-26-SPLAUDIT26.md"
   ],
   "subfeatures": [
-    "content/news/2021-08-19-SPLCONTACT20.md",
-    "content/news/2021-08-10-SPLVACCINE10.md"
+    "content/news/2021-07-21-SPLGROVE22.md",
+    "content/news/2021-06-30-SPLVETO01.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
+    "content/news/2021-08-25-SPLMANDATE26.md",
     "content/news/2021-08-24-SPLWIC25.md",
-    "content/news/2021-08-24-SPLPRISON25.md",
-    "content/news/2021-08-20-SPLMAPS20.md"
+    "content/news/2021-08-24-SPLPRISON25.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
