@@ -1,33 +1,21 @@
 +++
 arc-id = "INSOIMG5ERHULGKGCHOWU2Y5LQ"
-internal-id = "SPLVACCSPANXX"
-internal-budget = ""
-image = "external/sskd8x7bczsgaed6krqd986g0r.jpeg"
-image-description = ""
-image-caption = ""
-image-credit = "Fred Adams / For Spotlight PA"
-image-size = ""
-published = 2021-02-23T15:19:55Z
-slug = "preguntas-frecuentes-sobre-frustrante-despliegue-de-vacunas-en-Pensilvania"
 authors = ["Ese Olumhense"]
-byline = "Ese Olumhense of Spotlight PA"
-title = "Preguntas frecuentes sobre el frustrante despliegue de vacunas en Pensilvania"
-subtitle = ""
-description = "Muchas personas han expresado su frustración por el proceso de encontrar y reservar una cita para vacunarse."
 blurb = "Muchas personas han expresado su frustración por el proceso de encontrar y reservar una cita para vacunarse."
+byline = "Ese Olumhense of Spotlight PA"
+description = "Muchas personas han expresado su frustración por el proceso de encontrar y reservar una cita para vacunarse."
+image = "external/sskd8x7bczsgaed6krqd986g0r.jpeg"
+image-credit = "Fred Adams / For Spotlight PA"
+internal-id = "SPLVACCSPANXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
+language-code = "es"
 modal-exclude = false
 no-index = false
-language-code = "es"
-layout = ""
-extended-kicker = ""
+published = 2021-02-23T10:19:55-05:00
+slug = "preguntas-frecuentes-sobre-frustrante-despliegue-de-vacunas-en-Pensilvania"
+suppress-featured = false
+title = "Preguntas frecuentes sobre el frustrante despliegue de vacunas en Pensilvania"
+topics = ["Coronavirus"]
 +++
 
 <!-- TODO: Add shortcode -->
@@ -115,7 +103,7 @@ También es importante tener en cuenta que las variantes no son fenómenos nuevo
 
 Los Centros para el Control y la Prevención de Enfermedades de EE.UU. aún instan a quienes han sido vacunados (parcial o totalmente) a que sigan usando mascarillas y el distanciamiento social.
 
-“Actualmente no hay suficiente información disponible para decir si los CDC dejarán de recomendar que las personas usen mascarillas y eviten el contacto cercano con otras personas para ayudar a prevenir la propagación del virus que causa COVID-19”, <a href="https://faq.coronavirus.gov/stop-mask-after-vaccine/">dice la agencia en su sitio web</a>.
+“Actualmente no hay suficiente información disponible para decir si los CDC dejarán de recomendar que las personas usen mascarillas y eviten el contacto cercano con otras personas para ayudar a prevenir la propagación del virus que causa COVID-19”, <a href="https://web.archive.org/web/20210821042118/https://faq.coronavirus.gov/stop-mask-after-vaccine/">dice la agencia en su sitio web</a>.
 
 “Los expertos deben comprender más sobre la protección que proveen las vacunas COVID-19 en condiciones reales antes de tomar esa decisión. Otros factores, incluida la cantidad de personas que se vacunan y cómo se está propagando el virus en las comunidades, también afectarán esta decisión. Tampoco sabemos aún si recibir una vacuna COVID-19 evitará que transmitas el virus que causa COVID-19 a otras personas, incluso si no te enfermas”.
 
