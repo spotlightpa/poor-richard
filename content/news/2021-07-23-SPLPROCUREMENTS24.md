@@ -58,7 +58,7 @@ It was not until late June that the health department used the emergency procure
 
 The contract has not yet been finalized, but a department spokesperson said in a statement that movement is expected soon. Officials would not say how many contact tracers would be hired, only that the number would be included in the contract.
 
-According to the <a href="https://www.gwhwi.org/estimator-613404.html">Contact Tracing Workforce Estimator</a> built by the George Washington University Institute for Health Workforce Equity, Pennsylvania still needs 2,225 contact tracers.
+According to the <a href="https://web.archive.org/web/20210822235001/https://www.gwhwi.org/estimator-613404.html">Contact Tracing Workforce Estimator</a> built by the George Washington University Institute for Health Workforce Equity, Pennsylvania still needs 2,225 contact tracers.
 
 Community health nurses employed by the health department, along with Pennsylvania National Guard members, have been assisting with contact tracing efforts since early June as the department works to replace Insight Global.
 
