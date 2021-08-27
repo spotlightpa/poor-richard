@@ -1,33 +1,21 @@
 +++
 arc-id = "QBLX56WTEBCYHH4FQMCCTIZGAQ"
-internal-id = "SPLDDAPEVENTXX"
-internal-budget = ""
-image = "external/5wd8vd5s9h8ecm6en54fyrs5yc.jpeg"
-image-description = "New Journeys in Recovery faces criminal charges for allegedly bribing recovery homes for referrals and forcing patients into substandard care, which prompted renewed calls from state lawmakers to strengthen oversight."
-image-caption = ""
-image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
-image-size = ""
-published = 2021-08-27T15:05:25.014Z
-slug = "pa-addiction-recovery-oversight-event"
-authors = []
-byline = "Spotlight PA Staff"
-title = "You’re invited! A free panel on how Pennsylvania can keep people in addiction recovery safe"
-subtitle = ""
-description = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
 blurb = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
+byline = "Spotlight PA Staff"
+description = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
+image = "external/5wd8vd5s9h8ecm6en54fyrs5yc.jpeg"
+image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
+image-description = "New Journeys in Recovery faces criminal charges for allegedly bribing recovery homes for referrals and forcing patients into substandard care, which prompted renewed calls from state lawmakers to strengthen oversight."
+internal-id = "SPLDDAPEVENTXX"
 kicker = "Health"
-topics = ["Health"]
-series = ["Fundamental Flaws"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-08-27T11:05:25.014-04:00
+series = ["Fundamental Flaws"]
+slug = "pa-addiction-recovery-oversight-event"
+suppress-featured = false
+title = "You’re invited! A free panel on how Pennsylvania can keep people in addiction recovery safe"
+topics = ["Health", "Events"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
