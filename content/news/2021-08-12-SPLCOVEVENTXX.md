@@ -1,8 +1,8 @@
 +++
 arc-id = "FMJDMM2FWZAJFATKOWXPSUH4IM"
-blurb = "On Wednesday, Aug. 25 at noon, join Spotlight PA for a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
+blurb = "On Wednesday, Aug. 25 at noon, Spotlight PA held a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
 byline = "Spotlight PA Staff"
-description = "On Wednesday, Aug. 25 at noon, join Spotlight PA for a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
+description = "On Wednesday, Aug. 25 at noon, Spotlight PA held a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
 image = "external/br6bvtdwm3z3tbyj1fxb56ygxg.jpeg"
 image-credit = "Fred Adams / For Spotlight PA"
 image-description = "The state is launching initiatives to urge Pennsylvanians to get vaccinated, including setting up vaccine booths at county fairs."
@@ -13,7 +13,7 @@ no-index = false
 published = 2021-08-12T05:00:21-04:00
 slug = "pennsylvania-coronavirus-surge-live-qa-event"
 suppress-featured = false
-title = "You’re invited! A free reader Q&A on rising COVID-19 cases in Pennsylvania"
+title = "WATCH: A free reader Q&A on rising COVID-19 cases in Pennsylvania"
 topics = ["Events", "Coronavirus"]
 +++
 
