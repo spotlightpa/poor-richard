@@ -104,6 +104,11 @@ url = "https://www.theintell.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/intelligencer.png"
 
 [[partners]]
+name = "Latrobe Bulletin"
+url = "https://www.latrobebulletinnews.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gj/v37c/latrobe.png"
+
+[[partners]]
 name = "Lebanon Daily News"
 url = "https://www.ldnews.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb1z/ldn.png"
