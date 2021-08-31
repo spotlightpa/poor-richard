@@ -9,4 +9,14 @@ aliases = ["/embeds/newsletter-covid/"]
 name = "cta"
 placeholder = "Sign up for <i>PA Post</i> today!"
 hint = "Override text for call to action"
+
+[[page-query-params]]
+name = "eyebrow"
+placeholder = "Newsletters"
+hint = "Override text for eyebrow"
+
+[[page-query-params]]
+name = "button"
+placeholder = "Sign Up"
+hint = "Override text for button"
 +++
