@@ -16,7 +16,7 @@ published = 2021-09-01T14:50:30.239-04:00
 series = ["The Hidden Tab"]
 slug = "pa-senate-spending-records-online-historic"
 suppress-featured = false
-title = "For the first time, Pa. Senate gives public access to spending records"
+title = "For the first time, Pa. Senate gives public online access to spending records"
 topics = ["The Capitol"]
 +++
 
