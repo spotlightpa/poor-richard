@@ -25,7 +25,8 @@
     </div>
     {{ if or $caption $credit }}
       <figcaption class="{{ $capClass }}">
-        {{ $caption }} ({{ $credit }})
+        {{ $caption }}
+        {{if $credit }}({{ $credit }}){{ end }}
       </figcaption>
     {{ end }}
   </figure>
