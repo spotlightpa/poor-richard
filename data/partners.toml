@@ -179,6 +179,11 @@ url = "https://www.publicopiniononline.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb20/po.png"
 
 [[partners]]
+name = "PublicSource"
+url = "https://www.publicsource.org"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gk/1nrj/publicsource.png"
+
+[[partners]]
 name = "The Record Herald"
 url = "https://www.therecordherald.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb20/trh.png"
