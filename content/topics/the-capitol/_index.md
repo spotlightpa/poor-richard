@@ -1,7 +1,8 @@
 +++
-image = "2020/06/01fdjfj1nf20rwxt.jpeg"
-image-description = "The Spotlight PA logo over the Pennsylvania state capitol"
-image-credit = "Stephanie Strasburg / The Post-Gazette"
+published = 2021-09-03T16:58:21.914Z
+image = "external/x1yhw1n6tjk04gsnzwae8ay03m.jpeg"
+image-description = "The Pennsylvania state Capitol"
+image-credit = "TIM TAI / Philadelphia Inquirer"
 image-size = "hidden"
 kicker = "The Capitol"
 title = "The Capitol"
