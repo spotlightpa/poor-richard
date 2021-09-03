@@ -20,7 +20,7 @@ topics = ["Economy", "Coronavirus"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<b><i>Update, Sept. 3: Pa. to refund $19 million to 109,000 people it overcharged in unemployment error<b><i>
+<b><i>Update, Sept. 3: Pa. to refund $19 million to 109,000 people it overcharged in unemployment error</b>/<i>
 
 HARRISBURG — Just one day after Spotlight PA contacted the Department of Labor and Industry with a list of questions about a serious error that overcharged unemployed Pennsylvanians millions of dollars in interest for a decade, the agency announced Friday it will issue refunds.
 
