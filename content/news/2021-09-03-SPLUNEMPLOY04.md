@@ -9,14 +9,15 @@ image-credit = "Jelani Splawn / For Spotlight PA"
 image-description = "Refund amounts go as high as $13,500, with the majority of people owed less than $500, according to the agency’s calculations."
 internal-budget = "Wolf admin begins process to refund $19 million after unemployment error"
 internal-id = "SPLUNEMPLOY04"
-kicker = "Unemployment"
+kicker = "Economy"
 modal-exclude = false
 no-index = false
 published = 2021-09-03T10:26:00-04:00
+series = ["Unemployment Error"]
 slug = "pa-unemployment-interest-overcharged-refund-website"
 suppress-featured = false
 title = "Pa. to refund $19 million to 109,000 people it overcharged in unemployment error "
-topics = ["Unemployment"]
+topics = ["Economy"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
