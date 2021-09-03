@@ -4,6 +4,6 @@ image = "external/f6ep1f7bhr8rpp8593ajs8qan8.jpeg"
 image-credit = "Jelani Splawn / For Spotlight PA"
 kicker = "Unemployment Error"
 title = "Unemployment Error"
-linktitle = "A Spotlight PA investigation compelled the Department of Labor and Industry to admit it overcharged thousands of people millions of dollars in unemployment interest payments."
+linktitle = "The state overcharged thousands of people millions of dollars in unemployment interest payments."
 description = "A Spotlight PA investigation compelled the Department of Labor and Industry to admit it overcharged thousands of people millions of dollars in unemployment interest payments."
 +++
