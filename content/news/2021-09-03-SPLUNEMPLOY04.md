@@ -15,7 +15,7 @@ no-index = false
 published = 2021-09-03T10:26:00-04:00
 slug = "pa-unemployment-interest-overcharged-refund-website"
 suppress-featured = false
-title = "Pa. to refund $19 million to 109,000 people it overcharged in unemployment benefit error "
+title = "Pa. to refund $19 million to 109,000 people it overcharged in unemployment error "
 topics = ["Unemployment"]
 +++
 
