@@ -21,7 +21,7 @@ topics = ["Economy", "Coronavirus"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<b><i>Update, Sept. 3: Pa. to refund $19 million to 109,000 people it overcharged in unemployment error</b></i>
+<i><b>Update, Sept. 3: </b></i><a href="https://www.spotlightpa.org/news/2021/09/pa-unemployment-interest-overcharged-refund-website/"><i><b>Pa. to refund $19 million to 109,000 people it overcharged in unemployment error</b></i></a>
 
 HARRISBURG — Just one day after Spotlight PA contacted the Department of Labor and Industry with a list of questions about a serious error that overcharged unemployed Pennsylvanians millions of dollars in interest for a decade, the agency announced Friday it will issue refunds.
 
@@ -31,7 +31,7 @@ The agency instead charged a fixed, 9% interest rate, because it failed to adjus
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
-In its response to questions from Spotlight PA, the department on Friday said 250,000 people “were affected by the interest overcharge” and estimated that it owes at least $14 million in refunds, which it said amounts to less than $50 for most people. 
+In its response to questions from Spotlight PA, the department on Friday said 250,000 people “were affected by the interest overcharge” and estimated that it owes at least $14 million in refunds, which it said amounts to less than $50 for most people.
 
 But former employees at the Department of Labor and Industry tasked with assessing the mistake have for months told Spotlight PA that the agency owes much more money.
 
