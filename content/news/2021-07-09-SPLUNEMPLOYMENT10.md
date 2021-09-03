@@ -1,36 +1,26 @@
 +++
 arc-id = "3LD26QAZ3BCJLDGGQBDHQQTGKM"
-internal-id = "SPLUNEMPLOYMENT10"
-internal-budget = ""
-image = "2021/07/01ge-h990-631k-b6zz.jpeg"
-image-description = "The Department of Labor and Industry addressed the problem publicly after being contacted by Spotlight PA."
-image-caption = ""
-image-credit = "Jelani Splawn / For Spotlight PA"
-image-size = ""
-published = 2021-07-09T19:17:02Z
-slug = "pa-department-of-labor-unemployment-claims-overpayment-interest"
 authors = ["Rebecca Moss"]
-byline = "Rebecca Moss of Spotlight PA"
-title = "Department of Labor admits it overcharged unemployed Pennsylvanians millions of dollars"
-subtitle = ""
-description = "The agency publicly estimated Friday that the mistake affected roughly 250,000 people, after months of inquiries from Spotlight PA about the issue."
 blurb = "The agency publicly estimated Friday that the mistake affected roughly 250,000 people, after months of inquiries from Spotlight PA about the issue."
+byline = "Rebecca Moss of Spotlight PA"
+description = "The agency publicly estimated Friday that the mistake affected roughly 250,000 people, after months of inquiries from Spotlight PA about the issue."
+image = "2021/07/01ge-h990-631k-b6zz.jpeg"
+image-credit = "Jelani Splawn / For Spotlight PA"
+image-description = "The Department of Labor and Industry addressed the problem publicly after being contacted by Spotlight PA."
+internal-id = "SPLUNEMPLOYMENT10"
 kicker = "Unemployment"
-topics = ["Economy", "Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-07-09T15:17:02-04:00
+slug = "pa-department-of-labor-unemployment-claims-overpayment-interest"
+suppress-featured = false
+title = "Department of Labor admits it overcharged unemployed Pennsylvanians millions of dollars"
+topics = ["Economy", "Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+
+<b><i>Update, Sept. 3: Pa. to refund $19 million to 109,000 people it overcharged in unemployment error<b><i>
 
 HARRISBURG — Just one day after Spotlight PA contacted the Department of Labor and Industry with a list of questions about a serious error that overcharged unemployed Pennsylvanians millions of dollars in interest for a decade, the agency announced Friday it will issue refunds.
 
