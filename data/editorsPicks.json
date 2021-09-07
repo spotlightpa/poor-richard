@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-09-02-SPLALZ04.md"
+    "content/news/2021-09-03-SPLUNEMPLOY04.md"
   ],
   "subfeatures": [
-    "content/news/2021-09-02-SPLACTION02.md",
-    "content/news/2020-03-12-SPLGUARDIAN12.md"
+    "content/news/2021-07-16-SPLCOVER17.md",
+    "content/news/2021-07-09-SPLUNEMPLOYMENT10.md"
   ],
   "limitSubfeatures": false,
   "subfeaturesLimit": 2,
   "topSlots": [
-    "content/news/2021-09-03-SPLUNEMPLOY04.md",
-    "content/news/2021-09-02-SPLTEXAS02.md",
-    "content/news/2021-09-01-SPLSPENDING.md"
+    "content/news/2021-08-27-SPLDDAPEVENTXX.md",
+    "content/news/2021-09-02-SPLALZ04.md",
+    "content/news/2021-09-02-SPLTEXAS02.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
