@@ -26,7 +26,15 @@ But a recent Spotlight PA/KHN investigation found the Pennsylvania department ta
 
 At the same time, the department is <a href="https://www.spotlightpa.org/news/2021/04/pa-addiction-recovery-homes-ddap-regulations-pushback/">struggling to implement regulations</a> to oversee unlicensed recovery houses where people with addiction stay. In some cases, operators have exploited residents, providing few rules and little support, and putting people at greater risk of using drugs.
 
-On <b>Thursday, Sept. 9 at noon</b> join Spotlight PA’s <b>Ed Mahon</b>, KHN correspondent <b>Aneri Pattani</b>, and Opioid Crisis Action Network board member <b>Sharon White</b> for a free panel on how Pennsylvania can keep people with addiction safe as they pursue recovery. Other panelists will be announced.
+On <b>Thursday, Sept. 9 at noon</b> join Spotlight PA for a free panel on how Pennsylvania can keep people with addiction safe as they pursue recovery. Panelists include:
+
+- Spotlight PA investigative reporter <b>Ed Mahon</b>
+
+- KHN correspondent <b>Aneri Pattani</b>
+
+- Opioid Crisis Action Network board member <b>Sharon White</b>
+
+- <b>Frank Greenagel</b>, adjunct professor at the Rutgers School of Social Work, instructor at the Center of Alcohol Studies, and recovery supervisor at Prevention Links
 
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_HczofzylRvG6QuTMNFqztw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
 
