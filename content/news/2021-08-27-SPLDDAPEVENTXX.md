@@ -36,6 +36,8 @@ On <b>Thursday, Sept. 9 at noon</b> join Spotlight PA for a free panel on how Pe
 
 - <b>Frank Greenagel</b>, adjunct professor at the Rutgers School of Social Work, instructor at the Center of Alcohol Studies, and recovery supervisor at Prevention Links
 
+- <b>Jason Snyder</b>, director of the drug and alcohol division of the Rehabilitation &amp; Community Providers Association
+
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_HczofzylRvG6QuTMNFqztw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
 
 » <b>Spotlight PA’s events operate on a “pay-what-you-can” honor system</b>. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
