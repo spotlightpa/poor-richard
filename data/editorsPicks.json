@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-09-03-SPLUNEMPLOY04.md"
+    "content/news/2021-09-09-SPLAMISTAD09.md"
   ],
   "sidebarPicks": [
     "content/news/2021-06-28-SPLMEDMAR28.md"
   ],
   "subfeatures": [
-    "content/news/2021-07-16-SPLCOVER17.md",
-    "content/news/2021-07-09-SPLUNEMPLOYMENT10.md"
+    "content/newsletters/papost/2021-09-07-0700.md",
+    "content/news/2021-05-28-SPLGRANTS30.md"
   ],
   "topSlots": [
     "content/news/2021-09-09-SPLXXONA.md",
-    "content/news/2021-09-02-SPLALZ04.md",
-    "content/news/2021-09-02-SPLTEXAS02.md"
+    "content/news/2021-09-03-SPLUNEMPLOY04.md",
+    "content/news/2021-09-02-SPLALZ04.md"
   ]
 }
