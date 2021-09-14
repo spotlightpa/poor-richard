@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2021-09-14-SPLWAIVER15.md"
+    "content/news/2021-09-15-SPLAUDIT15.md"
   ],
   "sidebarPicks": [
     "content/news/2021-09-02-SPLALZ04.md"
   ],
-  "subfeatures": [
-    "content/news/2020-06-24-SPLWAIVER24.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2021-09-14-SPLWAIVER15.md",
     "content/news/2021-09-14-SPLOPEN14.md",
-    "content/news/2021-09-13-SPLSHORT13.md",
-    "content/news/2021-09-09-SPLAMISTAD09.md"
+    "content/news/2021-09-13-SPLSHORT13.md"
   ]
 }
