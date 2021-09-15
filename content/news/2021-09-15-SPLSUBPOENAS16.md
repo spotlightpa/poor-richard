@@ -20,9 +20,9 @@ topics = ["Elections", "The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — The state Senate committee undertaking a controversial review of last year’s presidential election results on Wednesday authorized subpoenas for personal information on every registered voter in Pennsylvania.
+HARRISBURG — Pennsylvania Senate Republicans undertaking a controversial review of last year’s presidential election on Wednesday authorized collecting personal information on every registered voter in the state, despite objections by Democrats who decried it as invasive and unwarranted.
 
-The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to demand that the Department of State, which oversees elections statewide, turn over the name, address, driver’s license and partial social security numbers of every voter registered as of last November.
+The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to subpoena the Department of State, which oversees elections statewide, for the name, address, driver’s license and partial social security numbers of every voter registered as of last November.
 
 The sweeping subpoena also requests all email and other written communications between the Department of State and elections officials in every Pennsylvania county; all state election directives and guidance to counties; and training materials for poll workers, election judges, and others.
 
@@ -48,13 +48,13 @@ But in an <a href="https://www.senatorcorman.com/2021/08/23/op-ed-careful-though
 
 Even so, Republicans at Wednesday’s hearing avoided calling their investigation an “audit,” and voiced several times their intention to look for voter fraud, not to overturn the 2020 election. Republicans, who control the House of Representatives, are not participating in the investigation and have said they’re not interested in auditing any past elections.
 
-House Majority Leader Kerry Benninghoff (R., Centre) on Wednesday said his caucus is focused on passing election reform based on bipartisan recommendations from county elections officials.
+House Majority Leader Kerry Benninghoff (R., Centre) on Wednesday said his caucus is focused on passing election reform, including bipartisan recommendations from county elections officials.
 
 Democrats, including those in Gov. Tom Wolf’s administration, have blasted the GOP’s election inquiry as a partisan and baseless attack on the legitimate outcome of the 2020 election. In a statement minutes after the vote, Wolf called the investigation a capitulation to former President Donald Trump’s “conspiracy theories about the 2020 election,” and a thinly-veiled effort to undermine the state’s election system.
 
 “Senate Republicans would rather cater to the fringe elements of their party who still are perpetuating the Big Lie rather than focus on issues that affect Pennsylvanians’ lives,” Wolf said. “Election security is not a game and should not be treated with such carelessness.”
 
-The committee’s Democratic senators were also harshly critical of the vote. Under the bright lights of the hearing room, Democrats peppered Dush with questions, many of them centering around the panel’s authority to issue subpoenas and the GOP’s efforts to find and vet a private company. Dush largely sidestepped or refused to answer, at times suspending the hearing to argue in whispers off-mic.
+The committee’s Democratic senators were also harshly critical of the vote. Under the bright lights of the hearing room, Democrats peppered Dush with questions, many of them centering around the panel’s authority to issue the subpoena and the GOP’s efforts to find and vet a private company. Dush largely sidestepped or refused to answer, at times suspending the hearing to argue in whispers off-mic.
 
 “You are incapable right now today to tell the members of this committee and the public who will have access to that information … and whether that information will be made public,” said Sen. Steve Santarsiero (D., Bucks).
 
@@ -62,7 +62,7 @@ Sen. Anthony Williams (D., Philadelphia) said turning over private voter informa
 
 “This should be seen as a betrayal of those who are here to represent you,” said Williams.
 
-The Republican subpoena not only seeks the personal information of voters registered as of November of last year, but also requests lists of voters who participated in the 2020 elections and the May 2021 primary.
+The Republican bi not only seeks the personal information of voters registered as of November of last year, but also requests lists of voters who participated in the 2020 elections and the May 2021 primary.
 
 Republicans said Wednesday morning they would use the information to verify the identity of voters, but to what specific end was unclear.
 
