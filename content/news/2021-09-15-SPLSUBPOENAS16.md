@@ -22,7 +22,7 @@ topics = ["Elections", "The Capitol"]
 
 HARRISBURG — Pennsylvania Senate Republicans undertaking a controversial review of last year’s presidential election on Wednesday authorized collecting personal information on every registered voter in the state, despite objections by Democrats who decried it as invasive and unwarranted.
 
-The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to subpoena the Department of State, which oversees elections statewide, for the name, address, driver’s license and partial social security numbers of every voter registered as of last November.
+The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to subpoena the Department of State, which oversees elections statewide, for the name, address, driver’s license, and partial social security numbers of every voter registered as of last November.
 
 The sweeping subpoena also requests all email and other written communications between the Department of State and elections officials in every Pennsylvania county; all state election directives and guidance to counties; and training materials for poll workers, election judges, and others.
 
@@ -38,7 +38,7 @@ On Wednesday, the Senate’s top Republican, Jake Corman of Centre County, said 
 
 Democrats on Wednesday said they would swiftly sue to both block the subpoena and the GOP’s overall review of last year’s election, which included victories of both Republicans and Democrats in down-ballot races. GOP leaders have vowed to fight such efforts all the way to the state’s highest court — a move that will add to what is already expected to be a high price tag for the review.
 
-Dush did reveal Wednesday that the private company that the Senate will hire will be paid with taxpayer dollars. Top Senate officials have said they do not have a specific budget for their inquiry, nor have they set a ceiling on how much they are willing to spend on it.
+Dush did reveal Wednesday that the private company the Senate hires will be paid with taxpayer dollars. Top Senate officials have said they do not have a specific budget for their inquiry, nor have they set a ceiling on how much they are willing to spend on it.
 
 They have also struggled to describe its scope, and have vacillated on why they believe it is necessary. As recently as June, Corman said<a href="https://www.spotlightpa.org/news/2021/08/jake-corman-pennsylvania-senate-election-audit/"> he did not see a need to “relitigate” the 2020 election</a>.
 
@@ -46,7 +46,8 @@ But in an <a href="https://www.senatorcorman.com/2021/08/23/op-ed-careful-though
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
-Even so, Republicans at Wednesday’s hearing avoided calling their investigation an “audit,” and voiced several times their intention to look for voter fraud, not to overturn the 2020 election. Republicans, who control the House of Representatives, are not participating in the investigation and have said they’re not interested in auditing any past elections.
+
+Even so, Republicans at Wednesday’s hearing avoided calling their investigation an “audit,” and voiced several times their intention is to look for voter fraud, not to overturn the 2020 election. Republicans, who control the House of Representatives, are not participating in the investigation and have said they’re not interested in auditing any past elections.
 
 House Majority Leader Kerry Benninghoff (R., Centre) on Wednesday said his caucus is focused on passing election reform, including bipartisan recommendations from county elections officials.
 
@@ -62,7 +63,7 @@ Sen. Anthony Williams (D., Philadelphia) said turning over private voter informa
 
 “This should be seen as a betrayal of those who are here to represent you,” said Williams.
 
-The Republican bi not only seeks the personal information of voters registered as of November of last year, but also requests lists of voters who participated in the 2020 elections and the May 2021 primary.
+The Republican subpoena not only seeks the personal information of voters registered as of November of last year, but also requests lists of voters who participated in the 2020 elections and the May 2021 primary.
 
 Republicans said Wednesday morning they would use the information to verify the identity of voters, but to what specific end was unclear.
 
