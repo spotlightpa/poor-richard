@@ -1,23 +1,24 @@
 +++
-internal-id = "splraiding02"
+authors = ["Cynthia Fernandez"]
+blurb = "What the heck are special funds, and why do they exist?"
+description = "What the heck are special funds, and why do they exist?"
 draft = false
 image = "2019/12/capitol-sale.jpeg"
 image-credit = "Kalim A. Bhatti/Philadelphia Inquirer"
 image-size = "hidden"
-published = 2020-03-02T14:00:00.000Z
-slug = "special-funds-pennsylvania-budget-horse-racing-industry"
-authors = ["Cynthia Fernandez"]
-title = "Raiding Pa.'s 'special funds' dedicated to roads, the environment — and horse racing?"
-description = "What the heck are special funds, and why do they exist?"
-blurb = "What the heck are special funds, and why do they exist?"
+internal-id = "splraiding02"
 kicker = "Capitol Notebook"
+published = 2020-03-02T09:00:00-05:00
+slug = "special-funds-pennsylvania-budget-horse-racing-industry"
 suppress-featured = true
+title = "Raiding Pa.'s 'special funds' dedicated to roads, the environment — and horse racing?"
 +++
+
 In January, Gov. Tom Wolf [proposed](https://www.inquirer.com/education/tom-wolf-student-debt-plan-horse-industry-20200213.html) diverting money from a special fund to support horse racing in order to create a scholarship program for state-owned schools. So what the heck is the horse-racing fund, and why does it exist?
 
 Lawmakers created the Race Horse Development Fund in 2004 as part of a package that legalized casinos. Subsidized by slot machines, the fund's stated purpose is to promote horse breeding, as well as to fund purses — total prize money distributed to winners — and horsemen’s pensions.
 
-It’s actually one of [more than 150 such funds](https://www.budget.pa.gov/PublicationsAndReports/StatusofAppropriations/SpecialFunds/Pages/default.aspx) created by the legislature to provide dedicated money to causes like the environment, caring for the elderly, and public transit. But over the years, these funds regularly have been raided to fill budget holes or balance the books.
+It’s actually one of [more than 150 such funds](https://web.archive.org/web/20210913192005/https://www.budget.pa.gov/PublicationsAndReports/StatusofAppropriations/SpecialFunds/Pages/default.aspx) created by the legislature to provide dedicated money to causes like the environment, caring for the elderly, and public transit. But over the years, these funds regularly have been raided to fill budget holes or balance the books.
 
 The state House wanted to end a protracted budget battle in 2017 by rerouting $630 million in special fund money to help fill a $2.2 billion hole, [PennLive reported](https://www.pennlive.com/politics/2017/09/house_passes_22_transfer_and_b.html). Gov. Tom Wolf eventually signed a budget that borrowed against one special fund in particular, funded by a [landmark tobacco settlement](https://www.inquirer.com/philly/news/politics/state/pa-budget-deficit-borrowing-gambling-gas-drilling-tax-20171025.html).
 
