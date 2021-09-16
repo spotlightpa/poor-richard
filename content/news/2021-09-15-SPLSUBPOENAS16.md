@@ -22,7 +22,7 @@ topics = ["Elections", "The Capitol"]
 
 HARRISBURG — Pennsylvania Senate Republicans undertaking a controversial review of last year’s presidential election on Wednesday authorized collecting personal information on every registered voter in the state, despite objections by Democrats who decried it as invasive and unwarranted.
 
-The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to subpoena the Department of State, which oversees elections statewide, for the name, address, driver’s license, and partial social security numbers of every voter registered as of last November.
+The 7-to-4 vote by the Senate Intergovernmental Operations Committee allows the panel to subpoena the Department of State, which oversees elections statewide, for the name, address, driver’s license and partial social security numbers of every voter registered as of last November.
 
 The sweeping subpoena also requests all email and other written communications between the Department of State and elections officials in every Pennsylvania county; all state election directives and guidance to counties; and training materials for poll workers, election judges, and others.
 
