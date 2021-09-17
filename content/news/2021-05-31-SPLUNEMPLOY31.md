@@ -1,33 +1,20 @@
 +++
 arc-id = "6IXD4R5ITZBILPDDSVK4ZJI6KY"
-internal-id = "SPLUNEMPLOY31"
-internal-budget = ""
-image = "external/bsxjdx7g1vtyp481xakde5tmb8.jpeg"
-image-description = "Unemployed workers and advocates from Pittsburgh and Philadelphia protest over more than 300,000 unemployment claims still waiting for review by the state Department of Labor and Industry. The department this week is launching a massive overhaul of its computer system."
-image-caption = ""
-image-credit = "Rebecca Moss / Spotlight PA"
-image-size = ""
-published = 2021-05-31T09:00:00Z
-slug = "pa-unemployment-claims-overhaul-ibm-gsi-benefits-labor-industry"
 authors = ["Rebecca Moss"]
-byline = "Rebecca Moss of Spotlight PA"
-title = "Anxiety runs high as Pa. begins massive overhaul of 60-year-old unemployment computer system"
-subtitle = ""
-description = "Claims will be put on hold until June 8 as the state makes an ambitious leap to a new, cloud-based benefits system. But experts warn this “all-at-once” approach often fails."
 blurb = "Claims will be put on hold until June 8 as the state makes an ambitious leap to a new, cloud-based benefits system. But experts warn this “all-at-once” approach often fails."
+byline = "Rebecca Moss of Spotlight PA"
+description = "Claims will be put on hold until June 8 as the state makes an ambitious leap to a new, cloud-based benefits system. But experts warn this “all-at-once” approach often fails."
+image = "external/bsxjdx7g1vtyp481xakde5tmb8.jpeg"
+image-credit = "Rebecca Moss / Spotlight PA"
+image-description = "Unemployed workers and advocates from Pittsburgh and Philadelphia protest over more than 300,000 unemployment claims still waiting for review by the state Department of Labor and Industry. The department this week is launching a massive overhaul of its computer system."
+internal-id = "SPLUNEMPLOY31"
 kicker = "Economy"
-topics = []
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-05-31T05:00:00-04:00
+slug = "pa-unemployment-claims-overhaul-ibm-gsi-benefits-labor-industry"
+suppress-featured = false
+title = "Anxiety runs high as Pa. begins massive overhaul of 60-year-old unemployment computer system"
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -60,7 +47,7 @@ William Trusky, the state’s deputy secretary for unemployment compensation pro
 
 ## ‘I’m not fraudulent’
 
-Fourteen months into the pandemic, as many as one million people in Pennsylvania may still be struggling to find work, according to the <a href="https://www.dol.gov/ui/data.pdf">most recent job numbers</a>, from April. Of that number, at least 212,600 are relying on <a href="https://www.workstats.dli.pa.gov/Documents/PA%20UC%20Activity/claims%20by%20county%20and%20week.pdf">state unemployment benefits</a>, and an average of more than 22,000 <a href="https://www.uc.pa.gov/COVID-19/Statistics/Pages/UC-Claim-Statistics.aspx">new claims</a> have been filed each week for months.
+Fourteen months into the pandemic, as many as one million people in Pennsylvania may still be struggling to find work, according to the <a href="https://www.dol.gov/ui/data.pdf">most recent job numbers</a>, from April. Of that number, at least 212,600 are relying on <a href="https://www.workstats.dli.pa.gov/Documents/PA%20UC%20Activity/claims%20by%20county%20and%20week.pdf">state unemployment benefits</a>, and an average of more than 22,000 <a href="https://web.archive.org/web/20210910201420/https://www.uc.pa.gov/COVID-19/Statistics/Pages/UC-Claim-Statistics.aspx">new claims</a> have been filed each week for months.
 
 Dietrich and other lawyers and advocates said their inboxes are full of “absolutely heartbreaking” stories of people who need help, beyond what they have the resources to handle.
 
