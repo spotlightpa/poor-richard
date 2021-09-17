@@ -5,7 +5,10 @@
   "sidebarPicks": [
     "content/news/2021-09-13-SPLSHORT13.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2021-09-02-SPLALZ04.md",
+    "content/news/2021-09-02-SPLACTION02.md"
+  ],
   "topSlots": [
     "content/news/2021-09-15-SPLSUBPOENAS16.md",
     "content/news/2021-09-14-SPLWAIVER15.md",
