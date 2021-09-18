@@ -11,7 +11,7 @@ Spotlight PA is committed to ensuring diversity in race, ethnicity, age, gender,
 
 ## Newsroom staff
 
-In order to hold powerful institutions and government accountable, we must also be hold ourselves accountable. Our newsroom must reflect Pennsylvania. According to the [latest U.S. Census figures](https://www.census.gov/quickfacts/PA), the state population is approximately 82% White, 12% Black, 7% Hispanic or Latino, 4% Asian and 2% two or more races. In addition, the population is 51% female. We continue to build our staff and have not yet fully achieved this diversity, but our final staff plan will ensure that the newsroom ultimately reflects the population. Once the staff is complete, we will publicly report our diversity statistics on this page.
+In order to hold powerful institutions and government accountable, we must also be hold ourselves accountable. Our newsroom must reflect Pennsylvania. According to the [latest U.S. Census figures](https://web.archive.org/web/20210915172419/https://www.census.gov/quickfacts/PA), the state population is approximately 82% White, 12% Black, 7% Hispanic or Latino, 4% Asian and 2% two or more races. In addition, the population is 51% female. We continue to build our staff and have not yet fully achieved this diversity, but our final staff plan will ensure that the newsroom ultimately reflects the population. Once the staff is complete, we will publicly report our diversity statistics on this page.
 
 ## Community advisory panel
 
