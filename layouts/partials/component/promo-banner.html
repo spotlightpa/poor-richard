@@ -1,13 +1,13 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
-{{ $alt := .Param "promo-image-caption" }}
+{{ $alt := .Param "promo-image-description" }}
 {{ $link := .Param "promo-link" }}
 
-{{ $imgDesktop := .Param "promo-image-desktop" }}
+{{ $imgDesktop := .Param "promo-desktop-images" }}
 {{ $widthDesktop := .Param "promo-desktop-width" }}
 {{ $heightDesktop := .Param "promo-desktop-height" }}
 {{ $pbDesktop := div (mul 100.0 $heightDesktop) $widthDesktop }}
 
-{{ $imgMobile := .Param "promo-image-mobile" }}
+{{ $imgMobile := .Param "promo-mobile-images" }}
 
 {{ $widthMobile := .Param "promo-mobile-width" }}
 {{ $heightMobile := .Param "promo-mobile-height" }}
@@ -37,8 +37,8 @@
           style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
         >
           <img
-            x-data="image-rotator"
-            data-@images="{{ $imgDesktop }}"
+            x-data="imageRotator(JSON.parse($el.dataset.images))"
+            data-images="{{ $imgDesktop | jsonify }}"
             :src="choice"
             src="{{ $magicPixel }}"
             alt="{{ $alt }}"
@@ -71,8 +71,8 @@
         >
           <img
             class="aspect-ratio-inner"
-            x-data="image-rotator"
-            data-@images="{{ $imgMobile }}"
+            x-data="imageRotator(JSON.parse($el.dataset.images))"
+            data-images="{{ $imgMobile | jsonify }}"
             :src="choice"
             src="{{ $magicPixel }}"
             alt="{{ $alt }}"
