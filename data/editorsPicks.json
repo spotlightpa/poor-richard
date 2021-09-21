@@ -1,17 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2021-09-21-SPLALZEVENT.md"
+    "content/news/2021-09-21-SPLBOYLE22.md"
   ],
   "sidebarPicks": [
     "content/news/2021-09-13-SPLSHORT13.md"
   ],
-  "subfeatures": [
-    "content/news/2021-09-02-SPLALZ04.md",
-    "content/news/2021-09-17-SPLDEMENTIA17.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2021-09-15-SPLSUBPOENAS16.md",
-    "content/news/2021-09-14-SPLWAIVER15.md",
-    "content/news/2021-09-14-SPLOPEN14.md"
+    "content/news/2021-09-21-SPLALZEVENT.md",
+    "content/news/2021-09-17-SPLDEMENTIA17.md",
+    "content/news/2021-09-15-SPLSUBPOENAS16.md"
   ]
 }
