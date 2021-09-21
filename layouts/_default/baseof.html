@@ -56,10 +56,10 @@
   </footer>
   {{ block "modal" . }}
     {{ if .Param "modal-exclude" | not }}
-      {{ if .Param "show-sticky" }}
+      {{ if .Param "sticky-active" }}
         {{ partialCached "modal/sticky.html" . }}
       {{ end }}
-      {{ if .Param "show-newsletter" }}
+      {{ if .Param "newsletter-active" }}
         {{ partialCached "modal/newsletter.html" . }}
       {{ end }}
     {{ end }}

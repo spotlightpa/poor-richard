@@ -1,5 +1,5 @@
-{{ $alt := .Param "sticky-image-caption" }}
-{{ $imgDesktop := .Param "sticky-image" }}
+{{ $alt := .Param "sticky-image-description" }}
+{{ $images := .Param "sticky-images" }}
 {{ $link := .Param "sticky-link" }}
 
 <section
@@ -27,8 +27,8 @@
       href="{{ $link }}"
       @click.outside="close"
     ><img
-        x-data="image-rotator"
-        data-@images="{{ $imgDesktop }}"
+        x-data="imageRotator(JSON.parse($el.dataset.images))"
+        data-images="{{ $images | jsonify }}"
         :src="choice"
         alt="{{ $alt }}"
         title="{{ $alt }}"
