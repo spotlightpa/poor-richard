@@ -6,33 +6,6 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
-## Assistant Editor
-
-### [Read More & Apply Here](https://us60.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/228)
-
-Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues, is seeking an assistant editor to join our editing team. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across more than 70 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
-
-### What You’ll Do
-
-* Work hand-in-hand with Spotlight PA’s editing team to execute the newsroom’s goal of creating compelling digital accountability journalism that gets results. 
-* Serve as quality control, copy editor, and storytelling coach for projects and investigations of a short-, medium-, and long-term nature. 
-* Lead efforts to expand our collaborative reporting with our large partner network, as well as with partners outside of Pennsylvania. 
-* Edit our newsletters and work with the editing team to conceptualize new products.
-
-### Who We’re Looking For
-
-* Strong organization and communication skills.
-* Enthusiastic about working one-on-one with a team of reporters in various stages of their careers, as well as with journalists across the state. 
-* Someone who’s not afraid to bring big ideas to the table with the skills and persistence to pull them off. 
-* Individuals with experience in any aspect of journalism, as well as those who have non-traditional career paths.
-* Ability to work in a collaborative environment with external partners. 
-* A candidate who values camaraderie and shares a passion for our work, bringing a sense of urgency and drive to their work every day. 
-* Someone who values innovation, creativity, and originality, and seeking to explore new and experimental ways of telling stories and connecting with audiences.
-
-This job is full-time, based anywhere in the U.S., and includes benefits. Please submit a resume and cover letter. 
-
-- - -
-
 ## Investigative Reporter
 
 ### [Read More & Apply Here](https://us60.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/226)
