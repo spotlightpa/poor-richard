@@ -1,33 +1,22 @@
 +++
 arc-id = "O7Q3XKPNGJFOZMEASGAZOOVWIU"
-internal-id = "SPLDAVIDDIEMS06"
-internal-budget = ""
-image = "external/pkcyhqr6ghq70f6xtd69yv6nh4.jpeg"
-image-description = "Former state Rep. Margo Davidson was charged in July with stealing from taxpayers and misusing campaign funds, helping her pad a legislative salary that’s already among the most generous in the country."
-image-caption = ""
-image-credit = "ALEJANDRO A. ALVAREZ / Philadelphia Inquirer"
-image-size = ""
-published = 2021-08-06T09:00:00Z
-slug = "margo-davidson-theft-charges-per-diems-reimbursements"
-authors = ["Angela Couloumbis", "Sam Janesch, Mike Wereschagin, and Brad Bumsted"]
-byline = "Angela Couloumbis of Spotlight PA and Sam Janesch, Mike Wereschagin, and Brad Bumsted of The Caucus"
-title = "Theft charges brought down a state lawmaker. But Pa.’s taxpayer-funded system for perks was already ripe for abuse."
-subtitle = ""
-description = "Per diems allow legislators to collect flat-rate payments intended for food and lodging without turning over any receipts. "
+authors = ["Angela Couloumbis", "Sam Janesch", "Mike Wereschagin", "Brad Bumsted"]
 blurb = "Per diems allow legislators to collect flat-rate payments intended for food and lodging without turning over any receipts. "
+byline = "Angela Couloumbis of Spotlight PA and Sam Janesch, Mike Wereschagin, and Brad Bumsted of The Caucus"
+description = "Per diems allow legislators to collect flat-rate payments intended for food and lodging without turning over any receipts. "
+image = "external/pkcyhqr6ghq70f6xtd69yv6nh4.jpeg"
+image-credit = "ALEJANDRO A. ALVAREZ / Philadelphia Inquirer"
+image-description = "Former state Rep. Margo Davidson was charged in July with stealing from taxpayers and misusing campaign funds, helping her pad a legislative salary that’s already among the most generous in the country."
+internal-id = "SPLDAVIDDIEMS06"
 kicker = "The Capitol"
-topics = ["The Capitol"]
-series = ["The Hidden Tab"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-08-06T05:00:00-04:00
+series = ["The Hidden Tab"]
+slug = "margo-davidson-theft-charges-per-diems-reimbursements"
+suppress-featured = false
+title = "Theft charges brought down a state lawmaker. But Pa.’s taxpayer-funded system for perks was already ripe for abuse."
+topics = ["The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
