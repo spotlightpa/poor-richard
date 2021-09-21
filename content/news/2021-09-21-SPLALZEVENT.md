@@ -15,7 +15,7 @@ published = 2021-09-21T10:46:52.805-04:00
 series = ["Crisis Of Care"]
 slug = "pa-alzheimers-dementia-crisis-event"
 title = "You’re invited! A free panel on Alzheimer’s disease preparedness in Pennsylvania"
-topics = ["Health"]
+topics = ["Health", "Events"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
