@@ -14,7 +14,7 @@
           {{ $page := dict "url" .Permalink "title" .Title "params" $params "scriptSrc" $scriptSrc }}
           <div
             class="box has-background-light"
-            x-data="embed-list"
+            x-data="embedList"
             data-url="{{ .Permalink }}"
             data-script-src="{{ $scriptSrc }}"
           >

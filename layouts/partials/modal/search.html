@@ -1,6 +1,6 @@
 {{ $idSearch := partial "helper/new-id" . }}
 <section
-  x-data="search-modal"
+  x-data="searchModal"
   @modal:search:open.window="open()"
   class="modal"
   :class="modalClass"

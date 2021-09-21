@@ -17,16 +17,16 @@ import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
 for (let [name, comp] of [
-  ["embed-list", embedList],
-  ["funnel-status", funnelStatus],
-  ["image-rotator", imageRotator],
+  ["embedList", embedList],
+  ["funnelStatus", funnelStatus],
+  ["imageRotator", imageRotator],
   ["intersector", intersector],
   ["lightbox", lightbox],
   ["modal", modal],
-  ["most-popular", mostPopular],
+  ["mostPopular", mostPopular],
   ["readmore", readmore],
-  ["search-articles", searchArticles],
-  ["search-modal", searchModal],
+  ["searchArticles", searchArticles],
+  ["searchModal", searchModal],
   ["slider", slider],
   ["sticky", sticky],
 ]) {
