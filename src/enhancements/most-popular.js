@@ -7,7 +7,7 @@ export default function mostPopular() {
     hasLoaded: false,
     isLoading: false,
     fetchedStories: [],
-    fetchRankings: [],
+    fetchedRankings: [],
     error: null,
 
     init() {
