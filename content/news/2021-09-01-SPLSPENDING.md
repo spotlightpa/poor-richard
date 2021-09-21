@@ -1,6 +1,6 @@
 +++
 arc-id = "TLOUUXRRVRFKVPIWH6AU5W37IY"
-authors = ["Angela Couloumbis", "Mike Wereschagin, Brad Bumsted, and Sam Janesch"]
+authors = ["Angela Couloumbis", "Mike Wereschagin", "Brad Bumsted", "Sam Janesch"]
 blurb = "Though a win for taxpayers, the information provided online is not searchable or easy to analyze."
 byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, and Sam Janesch of The Caucus"
 description = "Though a win for taxpayers, the information provided online is not searchable or easy to analyze."
