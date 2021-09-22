@@ -35,7 +35,7 @@
     {{ end }}
     {{ block "promo" . }}
       {{ if .Param "promo-active" }}
-        {{ $promoComponents := dict "image" "component/promo-banner.html" "text" "component/promo.html" }}
+        {{ $promoComponents := dict "image" "component/promo-image.html" "text" "component/promo-text.html" }}
         {{ with $promoComponent := index $promoComponents (.Param "promo-type") }}
           {{ partialCached $promoComponent $ }}
         {{ end }}
