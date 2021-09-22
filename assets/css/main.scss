@@ -546,6 +546,7 @@ a.navbar-burger:hover {
 .aspect-ratio-middle {
   display: block;
   height: 0;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
