@@ -2,6 +2,10 @@
 <!-- noop -->
 {{ end }}
 
+{{ define "topper" }}
+<!-- noop -->
+{{ end }}
+
 {{ define "main" }}
   {{ $subtitle := .Param "subtitle" }}
   {{ $dict := dict "class" "is-warning" "title" .Title "subtitle" $subtitle "content" .Content }}

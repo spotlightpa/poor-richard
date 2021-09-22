@@ -33,6 +33,11 @@
         {{ partialCached "component/banner.html" . }}
       {{ end }}
     {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "component/topper.html" . }}
+      {{ end }}
+    {{ end }}
     {{ block "promo" . }}
       {{ if .Param "promo-active" }}
         {{ $promoComponents := dict "image" "component/promo-image.html" "text" "component/promo-text.html" }}
