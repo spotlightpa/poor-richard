@@ -37,5 +37,16 @@
     "https://files.data.spotlightpa.org/uploads/01gj/dbrn/10.png",
     "https://files.data.spotlightpa.org/uploads/01gj/dbrm/9.png"
   ],
-  "sticky-link": "/donate/"
+  "sticky-link": "/donate/",
+  "topper-active": false,
+  "topper-bg-color": "#000000",
+  "topper-desktop-height": 0,
+  "topper-desktop-images": [],
+  "topper-desktop-width": 0,
+  "topper-divider-color": "#ffcb05",
+  "topper-image-description": "",
+  "topper-link": "/donate/",
+  "topper-mobile-height": 0,
+  "topper-mobile-images": [],
+  "topper-mobile-width": 0
 }
