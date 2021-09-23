@@ -1,0 +1,7 @@
+{{ $width := index . 0 }}
+{{ $height := index . 1 }}
+{{ $aspectRatio := 1 }}
+{{ if $height }}
+  {{ $aspectRatio = div (mul 100.0 $height) $width }}
+{{ end }}
+{{ return $aspectRatio }}

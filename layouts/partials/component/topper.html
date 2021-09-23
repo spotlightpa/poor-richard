@@ -6,13 +6,13 @@
 {{ $imgDesktop := .Param "topper-desktop-images" }}
 {{ $widthDesktop := .Param "topper-desktop-width" }}
 {{ $heightDesktop := .Param "topper-desktop-height" }}
-{{ $pbDesktop := div (mul 100.0 $heightDesktop) $widthDesktop }}
+{{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
 
 {{ $imgMobile := .Param "topper-mobile-images" }}
 
 {{ $widthMobile := .Param "topper-mobile-width" }}
 {{ $heightMobile := .Param "topper-mobile-height" }}
-{{ $pbMobile := div (mul 100.0 $heightMobile) $widthMobile }}
+{{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
 
 {{ $bannerActive := .Param "banner-active" }}
 {{ $toppperBgColor := .Param "topper-bg-color" }}

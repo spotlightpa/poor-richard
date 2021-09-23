@@ -1,7 +1,7 @@
 {{ $src := .Get "src" }}
 {{ $width := .Get "width" | int }}
 {{ $height := .Get "height" | int }}
-{{ $pb := div (mul 100.0 $height) $width }}
+{{ $pb := slice $width $height | partial "helper/aspect-ratio" }}
 
 {{ $caption := .Get "caption" | htmlUnescape }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
