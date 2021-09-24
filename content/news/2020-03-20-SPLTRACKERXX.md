@@ -17,7 +17,7 @@
 	"kicker": "Coronavirus",
 	"suppress-featured": true,
 	"topics": [
-		"coronavirus"
+		"Coronavirus"
 	],
 	"internal-id": "SPLTRACKERXX",
 	"internal-budget": "",
