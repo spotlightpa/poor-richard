@@ -6,43 +6,25 @@ export default function mostPopular() {
     analytics,
     hasLoaded: false,
     isLoading: false,
-    fetchedStories: [],
-    fetchedRankings: [],
+    stories: [],
     error: null,
 
     init() {
       if (this.isLoading || this.hasLoaded) return;
       this.isLoading = true;
 
-      Promise.all([
-        fetchJSON(this.$refs.feedSrc.href),
-        fetchJSON(this.$refs.mostPopSrc.href),
-      ])
-        .then(([stories, rankings]) => {
+      fetchJSON(this.$refs.mostPopSrc.href)
+        .then((data) => {
           this.isLoading = false;
           this.hasLoaded = true;
           this.error = null;
-          this.fetchedStories = stories.items;
-          this.fetchedRankings = rankings.pages;
+          let stories = data.pages ?? [];
+          this.stories = stories.slice(0, 5);
         })
         .catch((err) => {
           this.isLoading = false;
           this.error = err;
         });
-    },
-
-    get stories() {
-      if (!this.hasLoaded) {
-        return [];
-      }
-      let stories = new Map(
-        this.fetchedStories.map((story) => [story.url, story])
-      );
-
-      return this.fetchedRankings
-        .map((path) => stories.get(path))
-        .filter((story) => !!story)
-        .slice(0, 5);
     },
   };
 }

@@ -9,21 +9,15 @@
     rel="preload"
     as="fetch"
     crossorigin
-    href="https://files.data.spotlightpa.org/feeds/most-popular.json"
+    href="https://files.data.spotlightpa.org/feeds/most-popular-items.json"
     x-ref="mostPopSrc"
-  />
-  <link
-    rel="preload"
-    as="fetch"
-    href="/feeds/summary.json"
-    x-ref="feedSrc"
   />
   <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">Most Popular Stories</h1>
   <nav class="has-text-dark">
     <template x-for="(story, i) of stories">
       <a
         class="is-flex mt-5"
-        :href="story.url"
+        :href="story.url_path"
         @click.capture="analytics($event)"
       >
         <span
@@ -35,7 +29,7 @@
         <span
           class="has-text-black hover-underline"
           data-ga-category="hed"
-          x-text="story.title"
+          x-text="story.link_title || story.title"
         ></span>
       </a>
     </template>
