@@ -1,11 +1,11 @@
 {
   "banner": "\u003cstrong\u003eTHE URGENCY OF NOW: Support fact-based journalism that holds the powerful to account »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ea5b3a",
   "banner-link": "/donate/",
   "banner-text-color": "#ffffff",
   "newsletter-active": true,
-  "promo-active": true,
+  "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01gj/dbnw/13.png",
@@ -29,24 +29,28 @@
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
   "sticky-active": true,
-  "sticky-image-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "sticky-image-description": "For a limited time, all gifts in support of Spotlight PA's vital investigative journalism will be DOUBLED. Give now.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01gj/dbrp/13.png",
-    "https://files.data.spotlightpa.org/uploads/01gj/dbrn/12.png",
-    "https://files.data.spotlightpa.org/uploads/01gj/dbrn/11.png",
-    "https://files.data.spotlightpa.org/uploads/01gj/dbrn/10.png",
-    "https://files.data.spotlightpa.org/uploads/01gj/dbrm/9.png"
+    "https://files.data.spotlightpa.org/uploads/01gn/24vs/10.png",
+    "https://files.data.spotlightpa.org/uploads/01gn/24vr/12.png",
+    "https://files.data.spotlightpa.org/uploads/01gn/24vr/14.png",
+    "https://files.data.spotlightpa.org/uploads/01gn/24vr/16.png",
+    "https://files.data.spotlightpa.org/uploads/01gn/24vq/18.png"
   ],
   "sticky-link": "/donate/",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#000000",
-  "topper-desktop-height": 0,
-  "topper-desktop-images": [],
-  "topper-desktop-width": 0,
+  "topper-desktop-height": 225,
+  "topper-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01gn/255f/special-report-2-.svg"
+  ],
+  "topper-desktop-width": 1350,
   "topper-divider-color": "#ffcb05",
-  "topper-image-description": "",
+  "topper-image-description": "For a limited time, support Spotlight PA's vital investigative journalism and we'll DOUBLE it. Click to give now.",
   "topper-link": "/donate/",
-  "topper-mobile-height": 0,
-  "topper-mobile-images": [],
-  "topper-mobile-width": 0
+  "topper-mobile-height": 512,
+  "topper-mobile-images": [
+    "https://files.data.spotlightpa.org/uploads/01gn/255g/progress-bar.svg"
+  ],
+  "topper-mobile-width": 1024
 }
