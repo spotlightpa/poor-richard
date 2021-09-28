@@ -37,6 +37,13 @@ html {
   @apply text-yellow;
 }
 
+.content-area > p del {
+  @apply text-orange line-through;
+}
+
+.content-area > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
+.content-area > :where(ol, ul) > li + li,
+.content-area > :where(ol, ul) > li > p + p,
 .content-area > p + p,
 .content-area > aside + p,
 .content-area > figure + p {
@@ -48,10 +55,11 @@ html {
 }
 
 .content-area > ul {
-  @apply list-disc;
+  @apply list-disc pl-6;
 }
+
 .content-area > ol {
-  @apply list-decimal;
+  @apply list-decimal pl-6;
 }
 
 
