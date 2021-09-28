@@ -2,6 +2,7 @@
 {{ $imageURL := .Get "image-url" }}
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
+{{ $bgColor := .Get "bgcolor" | default "#000" }}
 {{ $link := .Get "link" | default "/donate/" }}
 
 <aside
@@ -22,7 +23,8 @@
   ></div>
   <div class="relative z-10">
     <a
-      class="flex flex-col rounded shadow bg-black overflow-hidden"
+      class="flex flex-col rounded shadow overflow-hidden"
+      style="background-color: {{ $bgColor }};"
       @click.outside="dismiss()"
       href="{{ $link }}"
     >
