@@ -1,33 +1,21 @@
 +++
 arc-id = "XMWBNKFITZCWDAUOM5LCLQLXRY"
-internal-id = "SPLTRUMPXX"
-internal-budget = ""
-image = "external/d6t9jbnzzj4fdbb9nyerfmtt54.jpeg"
-image-description = "At a campaign rally, President Donald Trump criticized Gov. Tom Wolf for his coronavirus restrictions and implied he might withhold aid in the future."
-image-caption = ""
-image-credit = "TIM TAI / Philadelphia Inquirer"
-image-size = ""
-published = 2020-10-30T09:00:31Z
-slug = "pa-tom-wolf-donald-trump-threat-coronavirus-funding"
 authors = ["Ed Mahon"]
-byline = "Ed Mahon of Spotlight PA"
-title = "Trump threatened to withhold aid from Pa. as coronavirus cases, hospitalizations surge. Here’s what you need to know."
-subtitle = ""
-description = "The comment \"erodes trust\" in the federal government’s obligation to help protect people regardless of politics, a national disaster expert said."
 blurb = "The comment \"erodes trust\" in the federal government’s obligation to help protect people regardless of politics, a national disaster expert said."
+byline = "Ed Mahon of Spotlight PA"
+description = "The comment \"erodes trust\" in the federal government’s obligation to help protect people regardless of politics, a national disaster expert said."
+image = "external/d6t9jbnzzj4fdbb9nyerfmtt54.jpeg"
+image-credit = "TIM TAI / Philadelphia Inquirer"
+image-description = "At a campaign rally, President Donald Trump criticized Gov. Tom Wolf for his coronavirus restrictions and implied he might withhold aid in the future."
+internal-id = "SPLTRUMPXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-10-30T05:00:31-04:00
+slug = "pa-tom-wolf-donald-trump-threat-coronavirus-funding"
+suppress-featured = false
+title = "Trump threatened to withhold aid from Pa. as coronavirus cases, hospitalizations surge. Here’s what you need to know."
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -80,7 +68,7 @@ Casey, the state’s Democratic senator, said it was “outrageous for President
 
 Republican U.S. Sen. Pat Toomey’s office did not respond to requests for comment. Neither did a spokesperson for the House Republican caucus in Harrisburg. A spokesperson for Senate Republicans said they “aren’t interested in getting into hypotheticals.”
 
-Nathan Benefield, vice president and chief operating officer of the conservative Commonwealth Foundation, <a href="https://www.pottsmerc.com/opinion/nathan-benefield-transparency-victory-a-call-to-action-for-pa-lawmakers/article_436bb11c-d8ff-11ea-a743-f360bd9cc1c6.html">criticized Wolf when the governor withheld federal money from a county earlier this year</a>. But he dismissed concerns over Trump’s comments, saying the president appeared to be “riffing” at a rally.
+Nathan Benefield, vice president and chief operating officer of the conservative Commonwealth Foundation, <a href="https://triblive.com/opinion/nathan-benefield-transparency-victory-a-call-to-action-for-lawmakers/">criticized Wolf when the governor withheld federal money from a county earlier this year</a>. But he dismissed concerns over Trump’s comments, saying the president appeared to be “riffing” at a rally.
 
 Schlegelmilch, of the National Center for Disaster Preparedness, said some people have had suspicions during past administrations about the role of politics and whether swing states and swing counties were more likely to receive federal disaster aid.
 
