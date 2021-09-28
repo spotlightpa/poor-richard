@@ -2,6 +2,7 @@
 {{ $url := .Get "url" }}
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
+{{ $bgColor := .Get "bgcolor" | default "#000" }}
 <section
   class="fixed z-10 bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
   x-data="sticky"
@@ -30,7 +31,8 @@
     </svg>
   </button>
   <a
-    class="block my-2 mx-4 rounded p-4 bg-black text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
+    class="block my-2 mx-4 rounded p-4 text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
+    style="background-color: {{ $bgColor }};"
     @click.capture="close()"
     @click.outside="close()"
     href="/donate/"
