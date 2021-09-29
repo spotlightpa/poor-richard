@@ -9,6 +9,9 @@
   x-data="lightbox"
   class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
   data-ga-category="inline:lightbox"
+  x-intersect:enter="$dispatch('close-sticky')"
+  x-intersect:enter.full="enter"
+  x-intersect:leave.full="leave"
 >
   <div
     x-cloak
