@@ -62,17 +62,4 @@ Alpine.directive(
   }
 );
 
-Alpine.magic("setAttrs", (el) => (target, obj) => {
-  for (let [targetName, source] of Object.entries(obj)) {
-    let val = el.dataset[source];
-    if (source.startsWith("!")) {
-      val = val === "true" || val === "1";
-    } else if (source.startsWith("@")) {
-      val = val.split(",").map((s) => s.trim());
-    }
-    target[targetName] = val;
-  }
-  return target;
-});
-
 Alpine.start();

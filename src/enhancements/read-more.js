@@ -15,20 +15,16 @@ function toStory(data, { width, height }) {
   };
 }
 
-export default function readMore() {
+export default function readMore(showDate = false) {
   return {
     analytics,
-    showDate: false,
+    showDate,
     hasLoaded: false,
     isLoading: false,
     hasClicked: false,
     counter: 0,
     fetchedStories: [],
     error: null,
-
-    init() {
-      this.$setAttrs(this, { showDate: "!showDate" });
-    },
 
     load() {
       if (this.isLoading || this.hasLoaded) return;

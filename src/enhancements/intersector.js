@@ -1,12 +1,10 @@
-export default function intersector() {
+export default function intersector(eventName) {
   return {
-    eventName: null,
+    eventName,
     once: true,
     observer: null,
 
     init() {
-      this.$setAttrs(this, { eventName: "name" });
-
       if (!("IntersectionObserver" in window)) {
         return;
       }

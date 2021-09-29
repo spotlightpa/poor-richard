@@ -19,7 +19,7 @@
 <section class="section {{ $marginClass }}" data-ga-category="homepage">
   <div
     class="container-hp"
-    x-data="readmore"
+    x-data="readmore(false)"
     x-ref="root"
   >
     <div class="tile is-ancestor is-vertical">
@@ -35,8 +35,7 @@
       </div>
 
       <div
-        x-data="intersector"
-        data-name='open-sticky'
+        x-data="intersector('open-sticky')"
       ></div>
 
       <div class="tile">

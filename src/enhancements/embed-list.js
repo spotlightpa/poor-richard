@@ -1,16 +1,15 @@
 import { after } from "../utils/timers.js";
 
-export default function embedList() {
+export default function embedList({ url, scriptSrc }) {
   return {
     embedCode: "",
-    baseURL: "",
-    scriptSrc: "",
+    baseURL: url,
+    scriptSrc: scriptSrc,
     params: new Map(),
     srcEl: null,
     showCopied: false,
 
     init() {
-      this.$setAttrs(this, { scriptSrc: "scriptSrc", baseURL: "url" });
       this.srcEl = this.$el.querySelector("[data-spl-src]");
       this.setEmbedCode();
     },
