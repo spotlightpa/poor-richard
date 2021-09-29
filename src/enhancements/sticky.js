@@ -17,8 +17,10 @@ export default function sticky() {
     },
 
     close() {
+      if (this.isOpen) {
+        buildAndSend(this.$el, { eventAction: "sticky:close" });
+      }
       this.isOpen = false;
-      buildAndSend(this.$el, { eventAction: "sticky:close" });
       this.$nextTick(() => blur(this.$refs.close));
     },
   };
