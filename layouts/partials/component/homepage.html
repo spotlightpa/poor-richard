@@ -35,7 +35,8 @@
       </div>
 
       <div
-        x-data="intersector('open-sticky')"
+        x-data
+        x-intersect.once="$dispatch('open-sticky')"
       ></div>
 
       <div class="tile">

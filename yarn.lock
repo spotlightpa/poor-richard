@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alpinejs/intersect@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@alpinejs/intersect/-/intersect-3.4.2.tgz#2b34f0db6c7c3f6b529babf9d27e5528aebf94ae"
+  integrity sha512-n9B9JcqRiQ8b+ozWdU+x8e0AWXfaIljmrRlnkvPnUXsM3dGdeB5PCelaLEr98YyXGUW2YeugKEtPMsezwAMRUA==
+
 "@babel/cli@^7.15.7":
   version "7.15.7"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.15.7.tgz#62658abedb786d09c1f70229224b11a65440d7a1"

@@ -5,7 +5,6 @@ import "../utils/add-listeners.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
-import intersector from "../enhancements/intersector.js";
 import lightbox from "../enhancements/lightbox.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
@@ -20,7 +19,6 @@ for (let [name, comp] of [
   ["embedList", embedList],
   ["funnelStatus", funnelStatus],
   ["imageRotator", imageRotator],
-  ["intersector", intersector],
   ["lightbox", lightbox],
   ["modal", modal],
   ["mostPopular", mostPopular],
@@ -61,5 +59,9 @@ Alpine.directive(
     });
   }
 );
+
+import intersect from "@alpinejs/intersect";
+
+Alpine.plugin(intersect);
 
 Alpine.start();
