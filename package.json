@@ -19,6 +19,7 @@
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}"
   },
   "dependencies": {
+    "@alpinejs/intersect": "^3.4.2",
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
