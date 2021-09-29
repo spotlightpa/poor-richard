@@ -62,7 +62,7 @@ export function buildClick(ev) {
     gaEvent.eventAction = ev.target.href;
   }
 
-  if (!gaEvent.eventAction) {
+  if (!gaEvent.eventAction || !gaEvent.eventAction.replace) {
     gaEvent.eventAction = ev.currentTarget.href;
   }
   gaEvent.transport = "beacon";
