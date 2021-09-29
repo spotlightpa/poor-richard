@@ -45,5 +45,7 @@
     </nav>
   </aside>
 {{ else }}
-  <div hidden>No related stories</div>
+  {{ if site.IsServer }}
+    <h3 class="text-lg font-bold uppercase">No related stories</h3>
+  {{ end }}
 {{ end }}

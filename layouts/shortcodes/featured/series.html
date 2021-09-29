@@ -1,26 +1,33 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $sideClass := cond (eq $side "right") "float-right sm:pl-4 lg:-mr-40" "float-left sm:pr-4 lg:-ml-24" }}
+{{ $sideClass :=
+  cond (eq $side "right")
+    "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
+    "float-left sm:px-6 lg:-ml-24"
+}}
 {{ $self := .Page.RelPermalink }}
 {{ $params := partialCached "helper/page-params" .Page $self }}
 {{ $series := $params.series }}
-{{ if $series }}
+{{ $pages := $series.Pages.ByPublishDate }}
+{{ if gt $pages.Len 1 }}
   <aside
     class="
       {{ $sideClass }}
-      font-sans text-sm
-      w-full mb-4
-      sm:max-w-xs sm:mb-0 sm:shape-outside sm:mt-21
+      sm:mt-21
+      mb-4 sm:mb-0
+      w-full sm:w-auto
+      sm:shape-outside
+      font-sans
     "
     data-ga-category="inline:related"
   >
     <nav class="py-4">
-      <h2 class="text-lg font-bold uppercase">
-        <span class="border-b-2 border-black">
-          More In This Series
+      <h2 class="text-base sm:text-lg font-bold uppercase">
+        <span class="border-b-2 border-black tracking-wide whitespace-nowrap">
+          More From This Series
         </span>
       </h2>
-      <ul class="space-y-4 mt-4">
-        {{ range where $series.Pages ".RelPermalink" "!=" $self }}
+      <ul class="mt-4 sm:w-0 min-w-full space-y-4 text-sm sm:text-base leading-tight">
+        {{ range where $pages ".RelPermalink" "!=" $self }}
           <li class="font-bold">
             <a
               class="text-darkblue hover:text-yellow transition-colors duration-500"
@@ -34,6 +41,6 @@
   </aside>
 {{ else }}
   {{ if site.IsServer }}
-    <div>No related stories</div>
+    <h3 class="text-lg font-bold uppercase">No series stories</h3>
   {{ end }}
 {{ end }}
