@@ -17,7 +17,8 @@
 
 <figure
   class="snap-center w-5/6 flex-none pb-2 px-2 sm:px-8 group focus:outline-none"
-  :class="{'cursor-pointer': currentSlide !== {{ .Ordinal }} }"
+  :class="{'cursor-pointer': currentSlide !== +$el.dataset.slideId }"
+  x-intersect:enter.full="currentSlide = +$el.dataset.slideId"
   data-slide-id="{{ .Ordinal }}"
   @focus="center($event.currentTarget)"
   tabindex="0"

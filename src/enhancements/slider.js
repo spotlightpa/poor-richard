@@ -8,40 +8,17 @@ export default function slider() {
     loadingMode: "lazy",
 
     init() {
-      if (!("IntersectionObserver" in window)) {
-        return;
-      }
-      let ioOpts = {
-        root: this.el,
-        threshold: [0, 0.5],
-      };
-
       let slides = this.$el.querySelectorAll("[data-slide-id]");
       this.slideEls = Array.from(slides);
-      for (let [i, slide] of this.slideEls.entries()) {
-        let o = new IntersectionObserver(([entry]) => {
-          this.recordObservation(entry, i);
-        }, ioOpts);
-        o.observe(slide);
-      }
+
       this.$watch("currentSlide", (i) => {
+        if (i > 0) {
+          this.loadingMode = "auto";
+        }
         buildAndSend(this.$el, {
           eventAction: `slider:view:${i}`,
         });
       });
-    },
-
-    recordObservation(entry, i) {
-      this.observations[i] = entry;
-      for (let [i, o] of this.observations.entries()) {
-        let max = this.observations[this.currentSlide];
-        if (o.intersectionRatio > max?.intersectionRatio) {
-          this.currentSlide = i;
-        }
-      }
-      if (entry.isIntersecting) {
-        this.loadingMode = "auto";
-      }
     },
 
     center(el) {
