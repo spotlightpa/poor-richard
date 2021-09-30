@@ -25,13 +25,13 @@ HARRISBURG — The U.S. Securities and Exchange Commission has widened the feder
 
 The SEC’s new 30-page subpoena comes six months after the U.S. Attorney’s office in Philadelphia and the FBI <a href="https://www.spotlightpa.org/news/2021/06/pa-psers-fbi-investigation-irs-disclosures-real-estate-amended/" target="_blank">opened a criminal investigation into possible bribery</a> linked to exaggerated investment returns and Harrisburg land deals at the agency.
 
-The commission gave PSERS, the state agency that invests $70 billion to fund pensions for half a million working and retired school staff, until Friday, Oct. 8 to produce “all documents and communications concerning any compensation, remuneration, reimbursement, money, gifts, gratuities, trips, or anything of any value” exchanged between PSERS officials and the agency’s money managers and consultants.
+The commission gave PSERS, the state agency that invests $70 billion to fund pensions for half a million working and retired school staff, until Oct. 8 to produce “all documents and communications concerning any compensation, remuneration, reimbursement, money, gifts, gratuities, trips, or anything of any value” exchanged between PSERS officials and the agency’s money managers and consultants.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 In its ethics policy for its 500 staffers, PSERS says flatly that “employees shall not, directly or indirectly, solicit, accept, or receive for personal use any gift.” Gov. Tom Wolf has imposed a similar ban on all state workers.
 
-Edward Siedle, a former SEC attorney who specializes in forensic examination of pension plans, said Thursday that he was surprised by the agency’s inquiry into a public retirement plan. 
+Edward Siedle, a former SEC attorney who specializes in forensic examination of pension plans, said Thursday that he was surprised by the agency’s inquiry into a public retirement plan.
 
 “It’s unprecedented,” he said. The SEC usually focuses on trading firms and securities markets.
 
@@ -39,15 +39,15 @@ The subpoena was sent to PSERS Chief Counsel Jackie Lutz last Friday. It did not
 
 PSERS pays such firms more than $500 million in fees annually.
 
-Most are investment managers, ranging from industry giants such as BlackRock to small Pennsylvania venture-capital outfits, that invest PSERS’ billions in private and public companies around the globe. A smaller number, led by Montgomery County-based adviser Hamilton Lane, serve as intermediaries between PSERS and the money managers, helping the agency evaluate their performance.
+Most are investment managers, ranging from industry giants such as BlackRock to small Pennsylvania venture-capital outfits, that invest PSERS’ billions in private and public companies around the globe. A smaller number serve as intermediaries between PSERS and the money managers, helping the agency evaluate their performance.
 
 The commission’s investigation doesn’t mean “that we have concluded that PSERS or anyone else has violated the law” or that the agency has “a negative opinion” of anyone, senior SEC enforcement counsel Heidi M. Mitza wrote in the subpoena. “We are trying to determine whether there have been any violations of the federal securities laws.”
 
 PSERS has declined to comment on the SEC investigation, as it has on the criminal probe. Several firms from the list in the subpoena also declined to comment.
 
-“Unfortunately we can’t discuss this matter,” Kate McGann, a spokesperson for Hamilton Lane, said of the SEC subpoena.
+Besides the retirement plan, the SEC is also known to have served a subpoena on at least one leading fund consultant, Hamilton Lane, a Conshohocken firm that specializes in private-equity investments not available on the stock market. “Unfortunately we can’t discuss this matter,” said Kate McGann, a spokesperson.
 
-In part, the SEC demands repeat those made previously by federal prosecutors in their initial flurry of subpoenas served on PSERS, the taxpayer-funded Public School Employees’ Retirement System.
+In large part, the SEC demands repeat those made previously by federal prosecutors in their initial flurry of subpoenas served on PSERS, the taxpayer-funded Public School Employees’ Retirement System.
 
 The SEC, like the prosecutors, demanded all documents, reports, and emails about the botched decision of the board in December to adopt too rosy a number for fund profits.
 
@@ -76,7 +76,7 @@ In April, The Inquirer <a href="https://www.inquirer.com/business/psers-pension-
 
 The article detailed hotel charges that included a $1,178 overnight stay in New York, a $1,144 overnight stay in Boston, and a $955 overnight stay in Beverly Hills. Plane costs were even more expensive, with 15 fares exceeding $11,000 between 2017 and 2019.
 
-Under a complex arrangement, outside money managers booked all travel arrangements for PSERS’ staff and paid the costs initially. More than 100 PSERS’ contractors — a majority — did so between 2017 and 2019, according to fund data. 
+Under a complex arrangement, outside money managers booked all travel arrangements for PSERS’ staff and paid the costs initially. More than 100 PSERS’ contractors — a majority — did so in 2019, according to fund data.
 
 Because the managers later billed the pension plan for the expense, the fund argues the trips were not gifts.
 
