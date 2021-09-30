@@ -5,6 +5,9 @@ export default function lightbox() {
     state: "initial",
 
     init() {
+      if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+        this.state = "disabled";
+      }
       this.$watch("state", (val) => {
         buildAndSend(this.$el, {
           eventAction: `lightbox:${val}`,
