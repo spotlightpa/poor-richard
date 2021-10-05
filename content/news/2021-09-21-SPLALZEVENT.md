@@ -20,7 +20,7 @@ topics = ["Health", "Events"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-There are 280,000 people in Pennsylvania over the age of 64 living with Alzheimer’s disease, the most common cause of dementia, and that number is expected to swell to 320,000 over the next four years. 
+There are 280,000 people in Pennsylvania over the age of 64 living with Alzheimer’s disease, the most common cause of dementia, and that number is expected to swell to 320,000 over the next four years.
 
 Yet, few state-licensed eldercare facilities have dementia-specific accommodations, nursing homes are short staffed, care costs are exceedingly high, and support is often incredibly thin, a <a href="https://www.spotlightpa.org/news/2021/09/pa-alzheimers-dementia-crisis-unprepared/">recent Spotlight PA/ PublicSource investigation revealed.</a>
 
@@ -30,13 +30,15 @@ On <b>Friday, Oct. 8 at noon</b>, join Spotlight PA for a free panel on Alzheime
 
 Our panelists include:
 
-- <b>Colin Deppen</b>, reporter and newsletter editor for Spotlight PA<br/>
+- <b>Colin Deppen</b>, reporter and newsletter editor for Spotlight PA
 
-- <b>Juliette Rihl</b>, freelance reporter for PublicSource<br/>
+- <b>Juliette Rihl</b>, freelance reporter for PublicSource
 
-- <b>Clayton Jacobs</b>, executive director of the <a href="https://www.alz.org/pa">Alzheimer’s Association Greater Pennsylvania<br/></a>
+- <b>Clayton Jacobs</b>, executive director of the <a href="https://www.alz.org/pa">Alzheimer’s Association Greater Pennsylvania</a>
 
-- Other panelists to be announced.<br/>
+- <b>Kathy Cubit</b>, advocacy manager for the <a href="https://www.carie.org/" target="_blank">Center for Advocacy for the Rights and Interests of the Elderly</a>
+
+- <b>Jennifer Holcomb,</b> chair of the state’s Alzheimer’s Disease and Related Disorders Task Force
 
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_ldqX9CoUT2acyNRIpJP2BA"><b>here.</b></a><b> Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
 
