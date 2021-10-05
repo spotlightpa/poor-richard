@@ -1,33 +1,21 @@
 +++
 arc-id = "XKLHZMGNSJGHZJSTVQMTMLYTXM"
-internal-id = "SPLUNEMPLOY01"
-internal-budget = ""
-image = "external/2xg86ph0hppr4sxwr0r6s5wtzw.jpeg"
-image-description = "Hundreds of thousands of Pennsylvanians, including Sandra Huffman of East Greenville, Pa., have been struggling to make ends meet in January because of a month-long gap in coronavirus unemployment benefits."
-image-caption = ""
-image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
-image-size = ""
-published = 2021-02-01T10:00:00Z
-slug = "pa-coronavirus-unemployment-delay-missing-payments-struggle"
 authors = ["Rebecca Moss"]
-byline = "Rebecca Moss of Spotlight PA"
-title = "Stress, delays, and confusion still plague jobless in Pennsylvania, and January brought little relief "
-subtitle = ""
-description = "Pandemic unemployment benefits are a lifeline for more than 400,000 Pennsylvanians who don’t qualify for traditional unemployment. But payments stalled this year and people are struggling."
 blurb = "Pandemic unemployment benefits are a lifeline for more than 400,000 Pennsylvanians who don’t qualify for traditional unemployment. But payments stalled this year and people are struggling."
+byline = "Rebecca Moss of Spotlight PA"
+description = "Pandemic unemployment benefits are a lifeline for more than 400,000 Pennsylvanians who don’t qualify for traditional unemployment. But payments stalled this year and people are struggling."
+image = "external/2xg86ph0hppr4sxwr0r6s5wtzw.jpeg"
+image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
+image-description = "Hundreds of thousands of Pennsylvanians, including Sandra Huffman of East Greenville, Pa., have been struggling to make ends meet in January because of a month-long gap in coronavirus unemployment benefits."
+internal-id = "SPLUNEMPLOY01"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-02-01T05:00:00-05:00
+slug = "pa-coronavirus-unemployment-delay-missing-payments-struggle"
+suppress-featured = false
+title = "Stress, delays, and confusion still plague jobless in Pennsylvania, and January brought little relief "
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -50,7 +38,7 @@ For a month, Pennsylvanians have been living without that support — a minimum 
 
 Lawmakers, experts, and union leaders agree that Pennsylvania’s unemployment compensation system needs massive overhauls, but that is unlikely to be enough to address the current unemployment crisis, if it happens at all. True relief will only begin when the virus is under control, economists say.
 
-Over the last several months, the state Labor Department has increased staff by 165% as stressed employees worked overtime, but it’s still struggling. More than 83,000 new claims were filed last week alone, with over 67,000 people contacting the department for <a href="https://www.uc.pa.gov/COVID-19/Statistics/Pages/default.aspx">help</a>, according to state statistics.
+Over the last several months, the state Labor Department has increased staff by 165% as stressed employees worked overtime, but it’s still struggling. More than 83,000 new claims were filed last week alone, with over 67,000 people contacting the department for <a href="https://web.archive.org/web/20211005161910/https://www.uc.pa.gov/COVID-19/Statistics/Pages/default.aspx">help</a>, according to state statistics.
 
 “I am very empathetic,” acting Labor Secretary Jennifer Berrier said during a news conference Tuesday, admitting problems have persisted in the claims system and staffing levels. “We realize people are suffering and we want to help.”
 
