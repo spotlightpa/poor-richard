@@ -1,8 +1,12 @@
 <!-- header tags that are the same on all pages -->
-{{ $fonts := resources.Get "css/fonts.css" }}
-<style>
-  {{ $fonts.Content | safeCSS }}
-</style>
+{{ range slice "500" "800" }}
+  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
+{{ end }}
+
+<link
+  rel="modulepreload"
+  href='{{ partialCached "helper/get-enhancements" . }}'
+/>
 
 {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
 {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS }}
@@ -20,15 +24,6 @@
     }
   </style>
 </noscript>
-
-{{ range slice "500" "800" }}
-  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
-{{ end }}
-
-<link
-  rel="modulepreload"
-  href='{{ partialCached "helper/get-enhancements" . }}'
-/>
 
 <link
   rel="alternate"
