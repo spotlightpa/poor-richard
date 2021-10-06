@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/news/2021-09-21-SPLALZEVENT.md"
   ],
-  "sidebarPicks": [],
+  "sidebarPicks": [
+    "content/news/2021-08-05-SPLOPUSE06.md"
+  ],
   "subfeatures": [
     "content/news/2021-09-02-SPLACTION02.md",
     "content/news/2021-09-02-SPLALZ04.md"
