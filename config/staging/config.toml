@@ -1,4 +1,4 @@
-buildDrafts = true
+buildDrafts = false
 buildFuture = true
 
 [privacy.googleAnalytics]
