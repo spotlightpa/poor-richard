@@ -23,9 +23,12 @@
   >
     <nav class="py-4">
       <h2 class="text-base sm:text-lg font-bold uppercase">
-        <span class="border-b-2 border-black tracking-wide whitespace-nowrap">
+        <a
+          class="border-b-2 border-black tracking-wide whitespace-nowrap"
+          href="{{ $series.RelPermalink }}"
+        >
           More From This Series
-        </span>
+        </a>
       </h2>
       <ul class="mt-4 sm:w-0 min-w-full space-y-4 text-sm sm:text-base leading-tight">
         {{ range where $pages ".RelPermalink" "!=" $self | first $limit }}
