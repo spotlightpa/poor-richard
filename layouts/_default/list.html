@@ -10,7 +10,7 @@
   {{ $date := now }}
   {{ $showDate := false }}
   {{ $sixMonthsAgo := now.AddDate 0 -6 0 }}
-  {{ range last 1 .Pages }}
+  {{ range first 1 .Pages }}
     {{ $date = .Date }}
     {{ $showDate = $date.Before $sixMonthsAgo | and (not .Date.IsZero) }}
   {{ end }}
