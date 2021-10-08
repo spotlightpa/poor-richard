@@ -8,6 +8,7 @@
 
 {{ $kicker := .Param "kicker" }}
 {{ $rubric := dict }}
+{{ $exKicker := .Param "extended-kicker" | default "Top News" }}
 
 {{ $topic := "" }}
 {{ if .Param "topics" }}
@@ -20,10 +21,10 @@
 {{ $showTitle := .Param "suppress-title" | not }}
 
 {{ $link := .Param "link" | default .RelPermalink }}
-
 {{ $params := dict
   "byline" $byline
   "kicker" $kicker
+  "extendedKicker" $exKicker
   "blurb" $blurb
   "showTitle" $showTitle
   "topic" $topic

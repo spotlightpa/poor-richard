@@ -14,7 +14,7 @@
         >
           <span
             class="tag is-square is-black is-uppercase has-text-weight-semibold hover-underline"
-          >{{ $featured.Param "extended-kicker" | default "Top News" }}</span>
+          >{{ $featuredParams.extendedKicker }}</span>
           <span
             class="tag is-square is-outline is-uppercase has-text-weight-semibold hover-underline"
           >{{ $featuredParams.kicker }}</span>
@@ -86,16 +86,9 @@
         </h2>
       {{ end }}
 
-      {{ $subfeatures := partial "helper/get-picks" "subfeatures" }}
-      {{ $subfeatures = $subfeatures | complement (slice $featured) }}
-      {{ if site.Data.editorsPicks.limitSubfeatures }}
-        {{ $limit := site.Data.editorsPicks.subfeaturesLimit }}
-        {{ $subfeatures = last $limit $subfeatures }}
-      {{ end }}
-
-      {{ if gt (len $subfeatures) 0 }}
+      {{ if gt (len .) 1 }}
         <ul class="is-size-5 related">
-          {{ range $subfeatures }}
+          {{ range after 1 . }}
             <li>
               <a
                 href="{{ .RelPermalink }}"

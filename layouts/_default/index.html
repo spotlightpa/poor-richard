@@ -1,3 +1,11 @@
+{{ define "topper" }}
+  {{ if .Param "topper-active" }}
+    {{ partialCached "component/topper.html" . }}
+  {{ else if $topperStories := partial "helper/get-picks" "topper" }}
+    {{ partial "component/topper-articlepromo.html" $topperStories }}
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
   {{ partial "component/homepage.html" . }}
 {{ end }}

@@ -1,21 +1,27 @@
 {{ $news := site.GetPage "/news/_index.md" }}
-{{ $featuredStories := partial "helper/get-picks" "featuredStories" }}
-{{ if lt (len $featuredStories) 1 }}
-  {{ $featuredStories = first 1 $news.RegularPages }}
-{{ end }}
-{{ $featuredStories = last 1 $featuredStories }}
-{{ $topSlots := partial "helper/get-picks" "topSlots" }}
 
-{{ $pages := $featuredStories | append $topSlots }}
+{{ $topperStories := partial "helper/get-picks" "topper" }}
+{{ $topperStory := first 1 $topperStories }}
+
+{{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
+{{ $featuredStory = last 1 $featuredStory }}
+
+{{ $subfeatures := partial "helper/get-picks" "subfeatures" }}
+{{ $subfeatures = $subfeatures | complement $featuredStory }}
+
+{{ $featuredStories := $featuredStory | append $subfeatures }}
+
+{{ $pinnedStories := partial "helper/get-picks" "topSlots" }}
+
 {{ $paPost := site.GetPage "/newsletters/papost" }}
-{{ $invest := site.GetPage "/newsletters/investigator" }}
 {{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
-{{ $pages = union $pages $river }}
-{{ $pages = after 1 $pages }}
+{{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
-
+{{ if eq (len $featuredStory) 0 }}
+  {{ $marginClass = "mt-4" }}
+{{ end }}
 <section class="section {{ $marginClass }}" data-ga-category="homepage">
   <div
     class="container-hp"
@@ -23,17 +29,20 @@
     x-ref="root"
   >
     <div class="tile is-ancestor is-vertical">
-      {{ partial "tile/featured.html" $featuredStories }}
-      <div class="tile" data-ga-category="pinned">
-        {{ range $page := first 3 $pages }}
-          <div class="tile is-parent is-4 has-margin-top-negative">
-            <div class="tile is-child">
-              {{ partial "tile/pinned.html" $page }}
+      {{ if $featuredStory }}
+        {{ partial "tile/featured.html" $featuredStories }}
+      {{ end }}
+      {{ if $pinnedStories }}
+        <div class="tile" data-ga-category="pinned">
+          {{ range $page := $pinnedStories }}
+            <div class="tile is-parent is-4 has-margin-top-negative">
+              <div class="tile is-child">
+                {{ partial "tile/pinned.html" $page }}
+              </div>
             </div>
-          </div>
-        {{ end }}
-      </div>
-
+          {{ end }}
+        </div>
+      {{ end }}
       <div
         x-data
         x-intersect.once="$dispatch('open-sticky')"
@@ -60,7 +69,7 @@
           </div>
         </div>
       </div>
-      {{ if gt (len $pages) 3 }}
+      {{ if $river }}
         <div
           class="tile"
           @mouseover.once="load()"
@@ -89,7 +98,7 @@
                   <hr class="is-emphatic-underline has-margin-top-negative">
                 </div>
               </div>
-              {{ range $page := after 3 $pages | first 30 }}
+              {{ range $page := $river | first 30 }}
                 {{ partial "tile/river.html" $page }}
               {{ end }}
 
@@ -99,7 +108,7 @@
           </div>
         </div>
       {{ end }}
-      {{ if gt (len $pages) 33 }}
+      {{ if gt (len $river) 30 }}
         <div class="tile">
           <div class="tile is-parent">
             <div class="tile is-child has-text-centered">
