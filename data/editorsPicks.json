@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-10-07-SPLTEST07.md"
+    "content/news/2021-10-11-SPLERIC11.md"
   ],
   "sidebarPicks": [
     "content/news/2021-08-05-SPLOPUSE06.md"
   ],
   "subfeatures": [
-    "content/news/2021-10-04-SPLBOOSTER.md",
-    "content/news/2021-09-29-SPLWAIVER30.md"
+    "content/news/2021-09-27-SPLELEC28.md",
+    "content/news/2021-09-23-SPLSHAPIRO24.md"
   ],
   "topSlots": [
+    "content/news/2021-10-07-SPLTEST07.md",
     "content/news/2021-10-04-SPLGAG.md",
-    "content/news/2021-09-29-SPLINSIDE29.md",
-    "content/news/2021-09-30-SPLPHILLYXX.md"
+    "content/news/2021-09-29-SPLINSIDE29.md"
   ]
 }
