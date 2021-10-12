@@ -1,4 +1,5 @@
 +++
+event-date = 2020-04-17T10:00:00-04:00
 image = "2020/04/01f9ec5aw24z7xbt.png"
 image-description = "WATCH: A free virtual Q&A for Pittsburgh small business owners on navigating the coronavirus shutdown"
 image-credit = "STAFF / Spotlight PA"

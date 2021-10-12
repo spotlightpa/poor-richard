@@ -1,4 +1,5 @@
 +++
+event-date = 2021-10-08T12:00:00-04:00
 arc-id = "S25A56K3CRCG5FZFNC6JBJ3RII"
 blurb = "On Oct. 8, Spotlight PA held a free Q&A on Alzheimer’s disease in Pennsylvania and possible solutions to the coming crisis."
 byline = "Spotlight PA Staff"

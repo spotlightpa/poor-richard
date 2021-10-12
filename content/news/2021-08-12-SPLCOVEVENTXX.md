@@ -1,4 +1,5 @@
 +++
+event-date = 2021-08-25T17:00:00-04:00
 arc-id = "FMJDMM2FWZAJFATKOWXPSUH4IM"
 blurb = "On Wednesday, Aug. 25 at noon, Spotlight PA held a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
 byline = "Spotlight PA Staff"

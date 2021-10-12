@@ -1,0 +1,120 @@
+{{ define "promo" }}
+<!-- noop -->
+{{ end }}
+
+{{ define "topper" }}
+<!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+  {{ $subtitle := .Param "subhed" | default .Description }}
+
+  {{ $p := .Paginator 30 }}
+  {{ $pages := $p.Pages }}
+  {{ if .Param "reverse-cron" }}
+    {{ $p = dict }}
+    {{ $pages = .Pages.ByPublishDate.Reverse }}
+  {{ end }}
+  {{ if .Param "by-title" }}
+    {{ $p = dict }}
+    {{ $pages = .Pages.ByTitle }}
+  {{ end }}
+
+  {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
+  {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
+  <section
+    class="section columns is-centered is-multiline"
+    data-ga-category="list:events"
+  >
+    <div class="column is-three-fifths">
+      <header class="mb-5">
+        <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+          {{ .Title }}
+        </h1>
+        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+          {{ $subtitle }}
+        </h2>
+
+        {{ partial "component/hero-image-block.html" . }}
+      </header>
+      {{ with .Content }}
+        <div class="content mb-6">
+          {{ . }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="column is-four-fifths mb-6">
+      <nav class="tile is-ancestor is-vertical">
+        <div class="tile is-wrapped">
+          {{ range $page := $pages }}
+            <div class="tile is-parent is-4 has-margin-top-negative">
+              <div class="tile is-child">
+                {{ $page := .Page }}
+                {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
+
+                <article>
+                  {{ with $page.Param "event-date" }}
+                    {{ $apFormat := partial "helper/date-apstyle" .Local }}
+                    {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+                    {{ $iso := .Format $isoFormat }}
+                    <h3
+                      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+                    >
+                      <time
+                        datetime='{{ $iso }}'
+                      >
+                        {{ $apFormat }}
+                      </time>
+                    </h3>
+                  {{ else }}
+                    <h3
+                      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+                    >Events</h3>
+                  {{ end }}
+
+                  {{ $name := $page.Param "image" }}
+                  {{ $credit := $page.Param "image-credit" }}
+                  {{ $description := $page.Param "image-description" }}
+                  {{ $imgOpts := dict
+                    "filename" $name
+                    "credit" $credit
+                    "description" $description
+                    "link" $params.link
+                    "widthRatio" 16
+                    "heightRatio" 9
+                    "sizeHint" "25vw"
+                  }}
+                  {{ partial "component/image-block.html" $imgOpts }}
+
+                  <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
+                    <a
+                      class="has-text-grey-dark hover-underline"
+                      href="{{ $params.link }}"
+                      data-ga-category="hed"
+                    >
+                      {{ $page.LinkTitle }}
+                    </a>
+                  </h2>
+                  {{ if $params.blurb }}
+                    <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+                      <a
+                        href="{{ $params.link }}"
+                        class="has-text-grey hover-underline"
+                        data-ga-category="blurb"
+                      >
+                        {{ $params.blurb }}
+                      </a>
+                    </h3>
+                  {{ end }}
+                </article>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </nav>
+    </div>
+    <div class="column is-three-fifths">
+      {{ partial "component/paginator-level.html" $p }}
+    </div>
+  </section>
+{{ end }}
