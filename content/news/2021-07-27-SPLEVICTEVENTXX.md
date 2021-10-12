@@ -1,4 +1,5 @@
 +++
+event-date = 2021-08-05T17:00:00-04:00
 arc-id = "RSE4XXFUKNDQPEKO2Y6QUG7WBY"
 internal-id = "SPLEVICTEVENTXX"
 internal-budget = ""

@@ -1,4 +1,5 @@
 +++
+event-date = 2021-10-21T12:00:00-04:00
 arc-id = "66HQ23Z7UFB2JLVHJIZY6N4HWY"
 blurb = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
 byline = "Spotlight PA Staff of Spotlight PA"

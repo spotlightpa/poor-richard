@@ -1,4 +1,5 @@
 +++
+event-date = 2020-04-29T10:00:00-04:00
 arc-id = "IANRY46TB5ADBMTDL6PIKLCWVM"
 internal-id = "SPLEVENTXX"
 internal-budget = ""

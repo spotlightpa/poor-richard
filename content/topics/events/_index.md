@@ -7,4 +7,5 @@ image-size = "hidden"
 kicker = "Events"
 title = "Events"
 linktitle = "Virtual seminars conducted by the Spotlight PA team"
+layout = "events"
 +++

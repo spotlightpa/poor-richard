@@ -1,4 +1,5 @@
 +++
+event-date = 2021-09-09T12:00:00-04:00
 arc-id = "QBLX56WTEBCYHH4FQMCCTIZGAQ"
 blurb = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
 byline = "Spotlight PA Staff"
