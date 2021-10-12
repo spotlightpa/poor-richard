@@ -1,0 +1,13 @@
+{{- $paPost := site.GetPage "/newsletters/papost/_index.md" -}}
+{{- $invest := site.GetPage "/newsletters/investigator/_index.md" -}}
+{{ $newsletters := sort (union $paPost.RegularPages $invest.RegularPages) "PublishDate" "desc" }}
+{{- $p := $newsletters -}}
+{{- range $i, $p := $p -}}
+  {{- if eq $i 0 -}}
+    {{- $row := slice "date" "kind" "title" "url" -}}
+    {{- partial "helper/csv-row.txt" $row -}}
+  {{- end -}}
+  {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
+  {{- $row := slice .PublishDate $params.kicker .Title .Permalink -}}
+  {{- partial "helper/csv-row.txt" $row -}}
+{{- end -}}
