@@ -30,6 +30,8 @@ On Friday, Oct. 8 at noon, Spotlight PA held a free panel on Alzheimer’s disea
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/626965396?h=676eb22b72&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+
+
 Spotlight PA has also compiled a list of resources for people caring for others with dementia.
 
 ## Family and caregiver resources
