@@ -22,7 +22,7 @@ topics = ["Health", "Events"]
 
 There are 280,000 people in Pennsylvania over the age of 64 living with Alzheimer’s disease, the most common cause of dementia, and that number is expected to swell to 320,000 over the next four years.
 
-Yet, few state-licensed eldercare facilities have dementia-specific accommodations, nursing homes are short staffed, care costs are exceedingly high, and support is often incredibly thin, a <a href="https://www.spotlightpa.org/news/2021/09/pa-alzheimers-dementia-crisis-unprepared/">recent Spotlight PA/ PublicSource investigation revealed.</a>
+Yet, few state-licensed eldercare facilities have dementia-specific accommodations, nursing homes are short-staffed, care costs are exceedingly high, and support is often incredibly thin, a <a href="https://www.spotlightpa.org/news/2021/09/pa-alzheimers-dementia-crisis-unprepared/">recent Spotlight PA/ PublicSource investigation revealed.</a>
 
 The result, advocates warn, is a perfect storm of limited resources against soaring needs, with many giving Pennsylvania a failing grade on its efforts to prepare.
 
