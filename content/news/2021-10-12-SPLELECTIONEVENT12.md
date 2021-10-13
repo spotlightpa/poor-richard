@@ -1,5 +1,4 @@
 +++
-event-date = 2021-10-21T12:00:00-04:00
 arc-id = "66HQ23Z7UFB2JLVHJIZY6N4HWY"
 blurb = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
 byline = "Spotlight PA Staff of Spotlight PA"
@@ -27,7 +26,7 @@ Judges who serve on the state’s Commonwealth, Superior, and Supreme Courts reg
 
 Some GOP lawmakers are pushing to change the way these judges are elected as the courts take on an increasingly important role in Pennsylvania politics.
 
-On Thursday, Oct. 21 at noon EST, join Spotlight PA’s Sarah Anne Hughes and Danielle Ohl as they break down who is on the ballot this November, what’s at stake, and why it matters. Other panelists to be announced.
+On Thursday, Oct. 21 at noon EST, join Spotlight PA’s Sarah Anne Hughes and Danielle Ohl, and Kadida Kenner, executive director of New Pennsylvania Project and co-chair of Why Courts Matter - PA, as they break down who is on the ballot this November, what’s at stake, and why it matters. Other panelists to be announced.
 
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_aoT_7UrnTI-3_OMGzxWa4Q" target="_blank">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
 
