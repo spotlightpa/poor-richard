@@ -31,7 +31,7 @@ In all, they gave at least $24 million to local and state-level campaigns across
 
 That money — which includes donations from individual lawyers as well as their firms — has gone to candidates for various political offices in all three branches of government. But legislative leaders, who hand-select the firms they pay with tax dollars, are among the top recipients.
 
-Legal work for the legislature is big business. In the last two years, lawmakers have <a href="https://www.spotlightpa.org/news/2021/10/pennsylvania-legislature-legal-bills-private-lawyers/">paid nearly $10 million to many of the same law firms and lawyers</a> making contributions to wage all types of legal battles, a new investigation by The Caucus and Spotlight PA found.
+Legal work for the legislature is big business. In the last two years, lawmakers have <a href="https://www.inquirer.com/politics/pennsylvania/spl/pennsylvania-legislature-legal-bills-private-lawyers-20211012.html">paid nearly $10 million to many of the same law firms and lawyers</a> making contributions to wage all types of legal battles, a new investigation by The Caucus and Spotlight PA found.
 
 Good-government advocates warn such a mutually beneficial system, while legal, can foster a pay-to-play culture in which contracts are awarded to political allies. For that reason, some states and cities have enacted bans on campaign contributions from taxpayer-paid contractors, or required those contractors to disclose all their political giving as a condition of doing government work.
 
@@ -45,7 +45,7 @@ Now, when businesses, law firms among them, apply for a noncompetitive bid contr
 
 “The political donation landscape in Philly today is completely different than it was 20 years ago,” Christmas said.
 
-<div class="flourish-embed flourish-table" data-src="visualisation/7476171"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="flourish-embed flourish-table" data-src="visualisation/7466530"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 The three firms paid the most by the legislature in 2019 and 2020 each gave at least $1.2 million in the last decade, for a total of nearly $4.2 million, according to campaign-finance records. Legislative leaders gave those firms nearly that exact amount for taxpayer-paid legal work during the last two years.
 
