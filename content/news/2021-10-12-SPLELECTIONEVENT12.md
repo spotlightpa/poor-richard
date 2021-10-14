@@ -1,7 +1,7 @@
 +++
 arc-id = "66HQ23Z7UFB2JLVHJIZY6N4HWY"
 blurb = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
-byline = "Spotlight PA Staff of Spotlight PA"
+byline = "Spotlight PA Staff"
 description = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
 image = "external/zyfzz59nbhjxte101eqp1nd9r4.jpeg"
 image-credit = "Fred Adams / Spotlight PA"
