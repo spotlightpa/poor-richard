@@ -62,7 +62,7 @@ The Pennsylvania Bar Association rated McLaughlin highly recommended, its top de
 
 {{<picture src="external/83nv9h6ec95k9qtgazkz1key9r.jpeg" description="Commonwealth Court Judge Kevin Brobson" caption="Commonwealth Court Judge Kevin Brobson" credit="Campaign handout">}} 
 
-<b>Kevin Brobson, Republican:</b> Brobson is from Williamsport and has been a Commonwealth Court judge since 2010. Previously, he worked for the Harrisburg law firm Buchanan Ingersoll &amp; Rooney. There he handled commercial and insurance litigation in both state and federal courts.
+<b>Kevin Brobson, Republican:</b> Brobson was born in Williamsport and has been a Commonwealth Court judge since 2010. Previously, he worked for the Harrisburg law firm Buchanan Ingersoll &amp; Rooney. There he handled commercial and insurance litigation in both state and federal courts.
 
 Brobson sat on the Supreme Court for one case, involving a <a href="https://law.justia.com/cases/pennsylvania/supreme-court/2016/6-eap-2015.html">defamation suit</a> against a Philadelphia Inquirer columnist, because other justices had recused themselves.
 
