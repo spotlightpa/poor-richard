@@ -1,33 +1,21 @@
 +++
 arc-id = "QDACEMSH35E47D2Z7H7HKQJZ6Y"
-internal-id = "SPLVACCINES26"
-internal-budget = ""
-image = "external/71vcxk6ejr2haemmb1sj4118sm.jpeg"
-image-description = "Giorgi Mushroom Company worker Juan Frutos gets a vaccine shot from Penn State Health nurse Christy Daniels during a clinic facilitated by Latino Connection's mobile unit. The Wolf administration hired the group this spring to address persistent disparities."
-image-caption = ""
-image-credit = "Matt Smith / For Spotlight PA"
-image-size = ""
-published = 2021-05-26T09:00:00Z
-slug = "pa-coronavirus-covid-vaccine-latino-clinics"
 authors = ["Jamie Martines"]
-byline = "Jamie Martines of Spotlight PA"
-title = "A stark racial divide on vaccinations leaves many at risk as Pa. reopens "
-subtitle = ""
-description = "As the state eases distancing and mask mandates, health officials are still failing to successfully vaccinate communities that have been disadvantaged from the start."
 blurb = "As the state eases distancing and mask mandates, health officials are still failing to successfully vaccinate communities that have been disadvantaged from the start."
+byline = "Jamie Martines of Spotlight PA"
+description = "As the state eases distancing and mask mandates, health officials are still failing to successfully vaccinate communities that have been disadvantaged from the start."
+image = "external/71vcxk6ejr2haemmb1sj4118sm.jpeg"
+image-credit = "Matt Smith / For Spotlight PA"
+image-description = "Giorgi Mushroom Company worker Juan Frutos gets a vaccine shot from Penn State Health nurse Christy Daniels during a clinic facilitated by Latino Connection's mobile unit. The Wolf administration hired the group this spring to address persistent disparities."
+internal-id = "SPLVACCINES26"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-05-26T05:00:00-04:00
+slug = "pa-coronavirus-covid-vaccine-latino-clinics"
+suppress-featured = false
+title = "A stark racial divide on vaccinations leaves many at risk as Pa. reopens "
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -86,7 +74,7 @@ The department has held several targeted outreach clinics. Back when vaccines we
 
 In March and early April, the state used a portion of its allocation of the Johnson &amp; Johnson vaccine to vaccinate more than 112,000 teachers and school staff throughout the state.
 
-But both of those efforts focused on predominantly white populations. According to a <a href="https://8rri53pm0cs22jk3vvqna1ub-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/RFA-TeacherDiversityinPennsylvania-Dec20.pdf">2020 study</a> by the Philadelphia-based education advocacy group Research for Action, 94% of Pennsylvania’s district and charter school teachers are white.
+But both of those efforts focused on predominantly white populations. According to a <a href="https://web.archive.org/web/20210918151822/https://8rri53pm0cs22jk3vvqna1ub-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/RFA-TeacherDiversityinPennsylvania-Dec20.pdf">2020 study</a> by the Philadelphia-based education advocacy group Research for Action, 94% of Pennsylvania’s district and charter school teachers are white.
 
 About 91% of rural Pennsylvanians are white, census data compiled by the Center for Rural Pennsylvania showed, and about 95% of Sullivan County’s 6,135 residents are white.
 
