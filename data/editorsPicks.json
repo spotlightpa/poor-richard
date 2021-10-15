@@ -1,13 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2021-10-14-SPLLIST.md"
+    "content/news/2021-10-14-SPLLIST.md",
+    "content/news/2021-10-18-SPLVOTEGUIDE18.md"
   ],
   "sidebarPicks": [
     "content/news/2021-08-05-SPLOPUSE06.md"
   ],
   "subfeatures": [
     "content/news/2021-10-12-SPLBILLS12.md",
-    "content/news/2021-10-13-SPLCAMPAIGN13.md"
+    "content/news/2021-10-13-SPLCAMPAIGN13.md",
+    "content/news/2021-10-14-SPLLIST.md"
   ],
   "topSlots": [
     "content/news/2021-10-14-SPL_schoolboards14.md",
