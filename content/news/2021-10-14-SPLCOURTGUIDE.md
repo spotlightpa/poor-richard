@@ -102,7 +102,7 @@ Judges serve initial 10-year terms, then face a retention vote, which usually su
 
 ### Candidates
 
-<b>Lori Dumas, Democrat: </b>Dumas has served as a Philadelphia County Court of Common Pleas judge since 2002. Prior to her time as a judge, she served as general counsel to Wordsworth Academy, a residential school for young people with behavioral needs. (A student <a href="https://www.inquirer.com/news/wordsworth-philadelphia-david-hess-death-dhs-report-charges-20181220.html">died there in 2016</a>, several years after Dumas left.)
+<b>Lori Dumas, Democrat: </b>Dumas has served as a Philadelphia County Court of Common Pleas judge since 2002. Prior to her time as a judge, she served as general counsel to Wordsworth Academy, a residential school for young people with behavioral needs.
 
 As a Common Pleas judge, she has heard family, criminal, and civil cases.
 
