@@ -62,7 +62,7 @@
               data-ga-category="byline"
               @click.passive="analytics($event)"
               :href="story.url"
-              x-text="story.byline"
+              x-template="by ${story.byline}"
             ></a>
           </h3>
           <h3
