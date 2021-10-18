@@ -20,6 +20,22 @@
 
 {{ $showTitle := .Param "suppress-title" | not }}
 
+{{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+
+{{ $pubDate := "" }}
+{{ $pubDateISO := "" }}
+{{ with .PublishDate }}
+  {{ $pubDate = partial "helper/date-apstyle" .Local }}
+  {{ $pubDateISO = .Format $isoFormat }}
+{{ end }}
+
+{{ $eventDate := "" }}
+{{ $eventDateISO := "" }}
+{{ with .Param "event-date" }}
+  {{ $eventDate = partial "helper/date-apstyle" .Local }}
+  {{ $eventDateISO = .Format $isoFormat }}
+{{ end }}
+
 {{ $link := .Param "link" | default .RelPermalink }}
 {{ $params := dict
   "byline" $byline
@@ -29,14 +45,11 @@
   "showTitle" $showTitle
   "topic" $topic
   "link" $link
+  "published" $pubDate
+  "publishedISO" $pubDateISO
+  "eventDate" $eventDate
+  "eventDateISO" $eventDateISO
 }}
-
-{{ with .PublishDate }}
-  {{ $pub := partial "helper/date-apstyle" .Local }}
-  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  {{ $iso := .Format $isoFormat }}
-  {{ $params = dict "published" $pub "publishedISO" $iso | merge $params }}
-{{ end }}
 
 {{ if .Param "series"}}
   {{ $series := index (.GetTerms "series") 0 }}
