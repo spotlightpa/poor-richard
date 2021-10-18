@@ -27,8 +27,7 @@
     </div>
   </div>
   <div class="field">
-    <p x-show="query && !isLoading" class="help">
-      <span x-text="resultsText"></span>
+    <p x-show="resultsText" x-text="resultsText" class="help">
     </p>
     <template x-if="error">
       <div class="help is-danger">
