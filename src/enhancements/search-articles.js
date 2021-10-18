@@ -76,6 +76,9 @@ export default function searchArticles() {
     },
 
     get resultsText() {
+      if (this.isLoading || !this.results) {
+        return "";
+      }
       let nHits = this.resultsCount;
       if (!nHits) {
         return "No search results";
