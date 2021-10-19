@@ -87,7 +87,10 @@
                   x-text="story.title"
                 ></a>
               </h2>
-              <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+              <h3
+                class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+                x-show="story.byline"
+              >
                 <a
                   :href="story.url"
                   @click="analytics($event)"
