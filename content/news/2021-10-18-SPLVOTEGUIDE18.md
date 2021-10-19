@@ -13,7 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-10-18T05:00:00-04:00
 slug = "pa-election-2021-november-ballot-candidates"
-title = "Pa. election 2021: Registration deadline, mail ballot details, and more things to know about Nov. 2"
+title = "Pa. election 2021: Polling places, mail ballot details, and more things to know about Nov. 2"
 topics = ["Elections"]
 +++
 
