@@ -623,9 +623,15 @@ a.navbar-burger:hover {
 }
 
 /* Tailwind copies */
-@media (min-width: 800px) {
+@media (min-width: $tablet) {
   .sm\:mt-2 {
     margin-top: 0.5rem !important;
+  }
+}
+
+@media (min-width: $tablet) {
+  .md\:order-last {
+    order: 999;
   }
 }
 
