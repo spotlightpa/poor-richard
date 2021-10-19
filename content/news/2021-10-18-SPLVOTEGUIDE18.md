@@ -29,7 +29,7 @@ Below, Spotlight PA answers some of the most frequently asked questions about th
 
 ## Can I still register to vote?
 
-Monday, Oct. 18 is the last day you can register to vote in the Nov. 2 election. If you’re 18 or older, a U.S. citizen, and have lived in Pennsylvania for at least 30 days, you are eligible. <a href="https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx">Register online here</a>.
+Monday, Oct. 18 was the last day you could register to vote in the Nov. 2 election.
 
 ## How can I request a mail ballot?
 
