@@ -525,7 +525,7 @@ a.navbar-burger:hover {
 .plain-notification {
   background-color: $notification-background-color;
   border-radius: $notification-radius;
-  padding: $notification-padding;
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem;
   position: relative;
 }
 
