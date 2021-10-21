@@ -22,7 +22,10 @@
 {{ if eq (len $featuredStory) 0 }}
   {{ $marginClass = "mt-4" }}
 {{ end }}
-<section class="section {{ $marginClass }}" data-ga-category="homepage">
+<section
+  class="section {{ $marginClass }}"
+  data-ga-category="homepage"
+>
   <div
     class="container-hp"
     x-data="readmore(false)"
@@ -98,13 +101,26 @@
                   <hr class="is-emphatic-underline has-margin-top-negative">
                 </div>
               </div>
-              {{ range $page := $river | first 30 }}
+              {{ range $i, $page := $river | first 30 }}
                 {{ partial "tile/river.html" $page }}
+                {{ if eq (mod $i 4) 3 }}
+                  <div class="pt-0 px-0 tile is-parent">
+                    {{ partial "component/promo-image.html" (dict
+                      "imageDescription" (site.Param "promo-image-description")
+                      "link" (site.Param "promo-link")
+                      "desktopImages" (site.Param "promo-desktop-images")
+                      "desktopWidth" (site.Param "promo-desktop-width")
+                      "desktopHeight" (site.Param "promo-desktop-height")
+                      "mobileImages" (site.Param "promo-mobile-images")
+                      "mobileWidth" (site.Param "promo-mobile-width")
+                      "mobileHeight" (site.Param "promo-mobile-height")
+                    ) }}
+                  </div>
+                {{ end }}
               {{ end }}
 
               {{ partial "tile/readmore.html" dict }}
             </div>
-            <div class="tile"></div>
           </div>
         </div>
       {{ end }}
@@ -127,9 +143,21 @@
           </div>
         </div>
       {{ end }}
-      <div class="tile" data-ga-category="promo">
-        {{ partial "tile/promos.html" . }}
-      </div>
     </div>
+  </div>
+  <div
+    class="mt-5 px-5"
+    data-ga-category="inline-footer"
+  >
+    {{ partial "component/promo-image.html" (dict
+      "imageDescription" (site.Param "promo-image-description")
+      "link" (site.Param "promo-link")
+      "desktopImages" (site.Param "promo-desktop-images")
+      "desktopWidth" (site.Param "promo-desktop-width")
+      "desktopHeight" (site.Param "promo-desktop-height")
+      "mobileImages" (site.Param "promo-mobile-images")
+      "mobileWidth" (site.Param "promo-mobile-width")
+      "mobileHeight" (site.Param "promo-mobile-height")
+    ) }}
   </div>
 </section>

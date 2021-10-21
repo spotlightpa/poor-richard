@@ -1,8 +1,8 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
-<article class="tile is-vertical is-bottom">
+<article class="tile is-vertical">
   <div class="tile">
-    <div class="tile is-parent is-top">
+    <div class="py-0 tile is-parent">
       <div class="tile is-child">
         {{ if $params.rubric }}
           <a
