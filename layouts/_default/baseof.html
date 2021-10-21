@@ -38,12 +38,7 @@
       {{ end }}
     {{ end }}
     {{ block "promo" . }}
-      {{ if .Param "promo-active" }}
-        {{ $promoComponents := dict "image" "component/promo-image.html" "text" "component/promo-text.html" }}
-        {{ with $promoComponent := index $promoComponents (.Param "promo-type") }}
-          {{ partialCached $promoComponent $ }}
-        {{ end }}
-      {{ end }}
+      {{ partialCached "component/promo.html" $ }}
     {{ end }}
   {{ end }}
   <main data-ga-category="main">

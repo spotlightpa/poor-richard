@@ -1,22 +1,21 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
-{{ $alt := .Param "promo-image-description" }}
-{{ $link := .Param "promo-link" }}
+{{ $alt := index . "imageDescription" }}
+{{ $link := index . "link" }}
 
-{{ $imgDesktop := .Param "promo-desktop-images" }}
-{{ $widthDesktop := .Param "promo-desktop-width" }}
-{{ $heightDesktop := .Param "promo-desktop-height" }}
+{{ $imgDesktop := index . "desktopImages" }}
+{{ $widthDesktop := index . "desktopWidth" }}
+{{ $heightDesktop := index . "desktopHeight" }}
 {{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
 
-{{ $imgMobile := .Param "promo-mobile-images" }}
+{{ $imgMobile := index . "mobileImages" }}
 
-{{ $widthMobile := .Param "promo-mobile-width" }}
-{{ $heightMobile := .Param "promo-mobile-height" }}
+{{ $widthMobile := index . "mobileWidth" }}
+{{ $heightMobile := index . "mobileHeight" }}
 {{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
 
 <section
-  class="mt-5 pl-5 pr-5 has-radius-padding has-text-centered no-js-hide"
-  data-ga-category="header:promo-image"
-  data-sf-campaign="701f4000000TVuEAAW"
+  class="has-radius-padding has-text-centered no-js-hide"
+  data-ga-category="promo-image"
 >
   <p>
     {{ with $link }}
