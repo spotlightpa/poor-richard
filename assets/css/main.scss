@@ -656,3 +656,11 @@ a.navbar-burger:hover {
     opacity: 0;
   }
 }
+
+.shadow-beige {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 0 3px #f4f1ee80;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}

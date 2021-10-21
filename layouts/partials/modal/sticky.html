@@ -17,7 +17,7 @@
 >
   <div class="window-sticker-grid">
     <button
-      class="delete is-medium"
+      class="mt-1 ml-1 delete is-medium"
       aria-label="close"
       @click="close"
       x-ref="close"
@@ -27,6 +27,7 @@
       href="{{ $link }}"
       @click.outside="close"
     ><img
+        class="shadow-beige rounded"
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ $images | jsonify }}"
         :src="choice"
