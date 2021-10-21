@@ -93,7 +93,7 @@
       {{ with .Param "authors" }}
         <footer
           class="block"
-          data-ga-category="footer:author"
+          data-ga-category="inline-footer:author"
         >
           {{ range $name := . }}
             {{ $author := partial "helper/get-author" $name }}
