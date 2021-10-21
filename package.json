@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "format": "yarn run format:eslint; yarn run format:prettier",
-    "format:eslint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
     "build:stage": "hugo version && hugo --minify --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "hugo version && hugo --cleanDestinationDir",
@@ -15,14 +15,14 @@
     "start:full": "hugo server -p 39019 --disableFastRender",
     "start": "hugo server -p 39019",
     "test": "yarn run test:eslint && yarn run test:prettier",
-    "test:eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
     "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}"
   },
   "dependencies": {
     "@alpinejs/intersect": "^3.4.2",
     "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -30,25 +30,24 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@newswire/frames": "^0.3.1",
     "alpinejs": "^3.4.2",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "bulma": "^0.9.3",
     "ga-lite": "^2.1.0",
     "journalize": "^2.5.1",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.10",
     "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.17"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": ">=2.24.2",
+    "eslint-plugin-import": ">=2.25.2",
     "eslint-plugin-node": ">=7.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": ">=5.1.0",
     "eslint-plugin-standard": ">=5.0.0",
-    "eslint-plugin-vue": "^7.18.0",
     "prettier": "^2.4.1"
   }
 }
