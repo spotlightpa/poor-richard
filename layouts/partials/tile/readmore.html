@@ -25,7 +25,7 @@
               class="image is-16by9 has-background-grey-lighter"
               data-ga-category="thumb"
               :href="story.url"
-              @click.passive="analytics($event)"
+              @click.passive="$report($event)"
             >
               <picture class="has-ratio">
                 <img
@@ -51,7 +51,7 @@
               class="has-text-black hover-underline"
               data-ga-category="hed"
               :href="story.url"
-              @click.passive="analytics($event)"
+              @click.passive="$report($event)"
               x-text="story.title"
             >
             </a>
@@ -63,7 +63,7 @@
             <a
               class="has-text-grey hover-underline"
               data-ga-category="byline"
-              @click.passive="analytics($event)"
+              @click.passive="$report($event)"
               :href="story.url"
               x-template="by ${story.byline}"
             ></a>
@@ -76,7 +76,7 @@
               class="has-text-grey hover-underline"
               data-ga-category="time"
               :href="story.url"
-              @click.passive="analytics($event)"
+              @click.passive="$report($event)"
             >
               <time :datetime="story.publishedISO" x-text="story.published">
               </time>

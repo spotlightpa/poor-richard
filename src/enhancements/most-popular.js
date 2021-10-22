@@ -1,9 +1,7 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { reportClick as analytics } from "../utils/google-analytics.js";
 
 export default function mostPopular() {
   return {
-    analytics,
     hasLoaded: false,
     isLoading: false,
     stories: [],

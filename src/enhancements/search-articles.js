@@ -1,7 +1,6 @@
 import { apdate } from "journalize";
 
 import imgproxy from "../utils/imgproxy-url.js";
-import { reportClick as analytics } from "../utils/google-analytics.js";
 import searchAPI from "../utils/search-api.js";
 
 function roundUp(n, by) {
@@ -31,7 +30,6 @@ const magicPixel =
 
 export default function searchArticles() {
   return {
-    analytics,
     query: "",
     results: null,
     error: null,
