@@ -1,8 +1,8 @@
 +++
 arc-id = "66HQ23Z7UFB2JLVHJIZY6N4HWY"
-blurb = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
+blurb = "On Oct. 21, Spotlight PA and election experts took a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
 byline = "Spotlight PA Staff"
-description = "Spotlight PA and election experts take a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
+description = "On Oct. 21, Spotlight PA and election experts took a close look at the appellate judicial system and how its decisions shape life in Pennsylvania."
 event-date = 2021-10-21T12:00:00-04:00
 image = "external/zyfzz59nbhjxte101eqp1nd9r4.jpeg"
 image-credit = "Fred Adams / Spotlight PA"
