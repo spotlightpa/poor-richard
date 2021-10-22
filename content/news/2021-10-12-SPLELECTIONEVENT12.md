@@ -15,7 +15,7 @@ modal-exclude = false
 no-index = false
 published = 2021-10-12T05:00:46-04:00
 slug = "pa-elections-2021-judicial-appellate"
-title = "You’re invited! A free virtual panel on the Nov. 2 election and why it matters"
+title = "WATCH: A free virtual panel on the Nov. 2 election and why it matters"
 topics = ["Events"]
 +++
 
