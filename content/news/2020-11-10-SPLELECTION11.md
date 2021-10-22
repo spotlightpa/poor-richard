@@ -1,33 +1,21 @@
 +++
 arc-id = "WKZ2NVIWANAW5E3DIIDKSJED2U"
-internal-id = "SPLELECTION11"
-internal-budget = ""
-image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
-image-description = "Roughly two dozen lawmakers called for the creation of an investigatory committee with subpoena power to conduct an immediate audit, saying they had fielded widespread doubts about the fairness of the Nov. 3 presidential election."
-image-caption = ""
-image-credit = "Amanda Berg / For Spotlight PA"
-image-size = ""
-published = 2020-11-10T21:41:34Z
-slug = "pennsylvania-election-2020-investigation-republicans-audits"
 authors = ["Cynthia Fernandez", "Marie Albiges"]
-byline = "Cynthia Fernandez of Spotlight PA and Marie Albiges for Spotlight PA"
-title = "Pa. GOP lawmakers to probe unverified fraud claims in election they largely won"
-subtitle = ""
-description = "While Pennsylvania already conducts post-election audits, Republicans say they will launch hearings to investigate what took place on Nov. 3."
 blurb = "While Pennsylvania already conducts post-election audits, Republicans say they will launch hearings to investigate what took place on Nov. 3."
+byline = "Cynthia Fernandez of Spotlight PA and Marie Albiges for Spotlight PA"
+description = "While Pennsylvania already conducts post-election audits, Republicans say they will launch hearings to investigate what took place on Nov. 3."
+image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+image-credit = "Amanda Berg / For Spotlight PA"
+image-description = "Roughly two dozen lawmakers called for the creation of an investigatory committee with subpoena power to conduct an immediate audit, saying they had fielded widespread doubts about the fairness of the Nov. 3 presidential election."
+internal-id = "SPLELECTION11"
 kicker = "Elections"
-topics = ["Elections"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-11-10T16:41:34-05:00
+slug = "pennsylvania-election-2020-investigation-republicans-audits"
+suppress-featured = false
+title = "Pa. GOP lawmakers to probe unverified fraud claims in election they largely won"
+topics = ["Elections"]
 +++
 
 <i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
@@ -70,7 +58,7 @@ Cutler said he was “not concerned with, necessarily, who won or who lost. What
 
 State law already requires county boards of election to perform a statistical recount of 2% of ballots cast or 2,000 votes — whichever is less — before results are certified in each election to ensure voting machines were working properly and results are accurate.
 
-Last year, the Department of State began piloting risk-limiting audits as part of a <a href="https://www.pacounties.org/GR/Documents/SteinSettlement20181128.pdf">settlement</a> with 2016 Green Party presidential candidate Jill Stein, who sued after seeking a recount. All counties will be required to do these audits by November 2022.
+Last year, the Department of State began piloting risk-limiting audits as part of a <a href="https://web.archive.org/web/20211018142047/https://www.pacounties.org/GR/Documents/SteinSettlement20181128.pdf">settlement</a> with 2016 Green Party presidential candidate Jill Stein, who sued after seeking a recount. All counties will be required to do these audits by November 2022.
 
 The risk-limiting audits check the state’s new voting machines with paper trails, which each county was required to obtain by the end of last year as part of the settlement with Stein. The machines allow election returns captured electronically to be confirmed against the text on paper records.
 
