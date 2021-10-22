@@ -1,5 +1,4 @@
 import fetchJSON from "../utils/fetch-json.js";
-import { reportClick as analytics } from "../utils/google-analytics.js";
 import imgproxy from "../utils/imgproxy-url.js";
 
 function roundUp(n, by) {
@@ -17,7 +16,6 @@ function toStory(data, { width, height }) {
 
 export default function readMore(showDate = false) {
   return {
-    analytics,
     showDate,
     hasLoaded: false,
     isLoading: false,

@@ -53,7 +53,7 @@
               <figure>
                 <a
                   :href="story.url"
-                  @click="analytics($event)"
+                  @click="$report($event)"
                   class="image is-16by9 has-background-grey-lighter"
                   data-ga-category="thumb"
                 >
@@ -81,7 +81,7 @@
               <h2 class="title is-spaced is-4 mt-2-tablet">
                 <a
                   :href="story.url"
-                  @click="analytics($event)"
+                  @click="$report($event)"
                   class="has-text-black hover-underline"
                   data-ga-category="hed"
                   x-text="story.title"
@@ -93,7 +93,7 @@
               >
                 <a
                   :href="story.url"
-                  @click="analytics($event)"
+                  @click="$report($event)"
                   class="has-text-grey hover-underline"
                   data-ga-category="byline"
                   x-template="by ${story.byline}"
@@ -104,7 +104,7 @@
               >
                 <a
                   :href="story.url"
-                  @click="analytics($event)"
+                  @click="$report($event)"
                   class="has-text-grey hover-underline"
                   data-ga-category="time"
                 >
