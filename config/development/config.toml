@@ -7,3 +7,5 @@ buildFuture = true
 [privacy.googleAnalytics]
     disable = true
 
+[minify]
+  minifyOutput = false
