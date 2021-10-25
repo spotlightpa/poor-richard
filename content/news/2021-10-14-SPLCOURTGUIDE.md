@@ -38,7 +38,7 @@ Even so, turnout in judicial elections is <a href="https://www.pennlive.com/news
 
 Here’s a full guide on what you need to know about Pennsylvania’s 2021 Supreme Court election and other appellate races before you go to the polls.
 
-And <a href="https://www.spotlightpa.org/news/2021/10/pa-elections-2021-judicial-appellate/">don’t miss Spotlight PA’s live event on Oct. 21</a> for even more information on why these races matter.
+And <a href="https://www.spotlightpa.org/news/2021/10/pa-elections-2021-judicial-appellate/">don’t miss this recording of Spotlight PA’s live event on Oct. 21</a> for even more information on why these races matter.
 
 ## Supreme Court
 
