@@ -7,7 +7,7 @@
   "share-svg" "@fontawesome/solid/share.svg"
   "twitter-svg" "@fontawesome/brands/twitter.svg"
 }}
-<div class="is-hidden">
+<div hidden class="is-hidden">
   {{ range $id, $rsc := $svgs }}
     {{ $svg := resources.Get $rsc }}
     <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
