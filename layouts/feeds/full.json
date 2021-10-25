@@ -1,27 +1,26 @@
-{{- $json := newScratch -}}
-
 {{- $items := slice -}}
 {{- $news := site.GetPage "/news/_index.md" -}}
 {{- range first 15 $news.RegularPages -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
-
-  {{- $json.SetInMap "item" "id" .Permalink -}}
-  {{- $json.SetInMap "item" "url" .Permalink -}}
-  {{- $json.SetInMap "item" "title" .Title -}}
-  {{- $json.SetInMap "item" "date_published" $date -}}
-  {{- $json.SetInMap "item" "content_html" .Content -}}
-
-  {{- $items = append ($json.Get "item") $items -}}
-  {{- $json.Delete "item" -}}
+  {{- $item := dict
+    "id" .Permalink
+    "url" .Permalink
+    "title" .Title
+    "date_published" $date
+    "author" (.Param "byline")
+    "authors" (.Param "authors")
+    "content_html" .Content
+  -}}
+  {{- $items = append $item $items -}}
 {{- end -}}
 
-{{- $json.SetInMap "data" "version" "https://jsonfeed.org/version/1" -}}
-{{- $json.SetInMap "data" "title" site.Title -}}
-{{- $json.SetInMap "data" "description" site.Home.Description -}}
-{{- $json.SetInMap "data" "home_page_url" site.Home.Permalink -}}
-{{- with .OutputFormats.Get "jsonfeed" -}}
-  {{- $json.SetInMap "data" "feed_url" .Permalink -}}
-{{- end -}}
-{{- $json.SetInMap "data" "items" $items -}}
+{{- $json := dict
+  "version" "https://jsonfeed.org/version/1.1"
+  "title" site.Title
+  "description" site.Home.Description
+  "home_page_url" site.Home.Permalink
+  "feed_url" .Permalink
+  "items" $items
+-}}
 
-{{- $json.Get "data" | jsonify -}}
+{{- $json | jsonify -}}
