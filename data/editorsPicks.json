@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2021-10-22-SPLSECRETXX.md"
+    "content/news/2021-10-25-SPLOVERSIGHT25.md"
   ],
   "sidebarPicks": [
     "content/news/2021-08-05-SPLOPUSE06.md"
   ],
   "subfeatures": [
-    "content/news/2021-10-04-SPLGAG.md",
-    "content/news/2021-09-30-SPLSECPROBEXX.md"
+    "content/news/2021-04-30-SPLRECOVER01.md",
+    "content/news/2021-09-29-SPLINSIDE29.md"
   ],
   "topSlots": [
+    "content/news/2021-10-22-SPLSECRETXX.md",
     "content/news/2021-10-12-SPLELECTIONEVENT12.md",
-    "content/news/2021-10-19-SPLDAUPHIN19.md",
-    "content/news/2021-10-18-SPLVOTEGUIDE18.md"
+    "content/news/2021-10-19-SPLDAUPHIN19.md"
   ],
   "topper": []
 }
