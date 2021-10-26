@@ -1,14 +1,10 @@
-{{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
-{{ if $edPicks }}
-  <div
-    class="plain-notification"
-    data-ga-category="editors-pick"
-  >
-    <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
-      Editor’s Pick
-    </h1>
-    {{ range $page := last 1 $edPicks }}
-      {{ partial "tile/ed-pix.html" $page }}
-    {{ end }}
-  </div>
-{{ end }}
+<div
+  class="plain-notification"
+  data-ga-category="editors-pick"
+>
+  <h1 class="title is-size-5 is-size-4-mobile has-text-centered has-text-danger is-uppercase">
+    Editor’s Pick
+  </h1>
+
+  {{ partial "tile/ed-pix.html" . }}
+</div>
