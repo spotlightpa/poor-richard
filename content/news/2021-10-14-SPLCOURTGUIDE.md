@@ -68,6 +68,8 @@ Brobson sat on the Supreme Court for one case, involving a <a href="https://law.
 
 The Pennsylvania Bar Association rated Brobson highly recommended. Read his answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/KevinBrobsonSupreme.pdf">here</a>.
 
+<b><i>READ MORE: <a href="https://www.spotlightpa.org/news/2021/10/pa-supreme-court-election-2021-biggest-donors/"Powerful special interests are pouring millions into the 2021 Pa. Supreme Court race</a></b></i>
+
 ## Superior Court
 
 Pennsylvania’s Superior Court is less of a political lightning rod than the Supreme Court, but that doesn’t mean it deserves less attention.
