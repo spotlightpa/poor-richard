@@ -81,7 +81,10 @@
           <div class="tile is-parent is-top is-4" style="order: 2">
             <div class="tile is-child">
               {{ partial "component/most-popular.html" dict }}
-              {{ partial "component/editors-picks.html" dict }}
+              {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+              {{ range $edPicks }}
+                {{ partial "component/editors-picks.html" . }}
+              {{ end }}
             </div>
           </div>
           <div
