@@ -155,7 +155,7 @@
                     class="pt-0 px-0 tile is-parent"
                     data-ga-category="{{ div $i 4 | add 1 }}"
                   >
-                    {{ partial "component/promo-image.html" (dict
+                    {{ partial "component/promo-double.html" (dict
                       "class" "w-0 min-w-full no-js-hide"
                       "imageDescription" $imageDescription
                       "link" $link
@@ -200,7 +200,7 @@
     data-ga-category="inline-footer"
     data-sf-campaign="7015G0000013oHVQAY"
   >
-    {{ partial "component/promo-image.html" (dict
+    {{ partial "component/promo-double.html" (dict
       "class" "mt-5 px-5"
       "imageDescription" (site.Param "footer-promo-description")
       "link" (site.Param "footer-promo-link")
