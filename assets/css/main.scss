@@ -89,7 +89,9 @@ $title-weight: $weight-semibold;
 body {
   // Responsive wrap fallback
   max-width: 100vw;
-  overflow-x: hidden;
+  @media (max-width: $tablet) {
+    overflow-x: hidden;
+  }
   // Footer at viewport bottom
   display: flex;
   flex-direction: column;
@@ -526,7 +528,6 @@ a.navbar-burger:hover {
   background-color: $notification-background-color;
   border-radius: $notification-radius;
   padding: 1.25rem 1.5rem 1.25rem 1.5rem;
-  position: relative;
 }
 
 .county-list-fieldset {
@@ -556,6 +557,7 @@ a.navbar-burger:hover {
 .aspect-ratio-inner {
   bottom: 0;
   left: 0;
+  object-fit: cover;
   position: absolute;
   right: 0;
   top: 0;
@@ -663,4 +665,17 @@ a.navbar-burger:hover {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.min-w-full {
+  min-width: 100%;
 }

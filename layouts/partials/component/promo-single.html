@@ -1,0 +1,48 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $alt := index . "description" }}
+{{ $link := index . "link" }}
+{{ $wrapperClass := index . "class" | default "has-radius-padding has-text-centered no-js-hide" }}
+
+{{ $images := index . "images" }}
+{{ $width := index . "width" }}
+{{ $height := index . "height" }}
+{{ $padding := slice $width $height | partial "helper/aspect-ratio" }}
+
+{{ if $images }}
+  <section
+    class="{{ $wrapperClass }}"
+    data-ga-category="promo-image"
+  >
+    <p>
+      {{ with $link }}
+        <a href="{{ . }}">
+      {{ end }}
+        <span
+          class="aspect-ratio-outer has-background-grey-lighter"
+          style="width: {{ $width }}px;"
+        >
+          <span
+            class="aspect-ratio-middle"
+            style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+          >
+            <img
+              class="aspect-ratio-inner"
+              style="object-fit: cover;"
+              x-data="imageRotator(JSON.parse($el.dataset.images))"
+              data-images="{{ $images | jsonify }}"
+              :src="choice"
+              src="{{ $magicPixel }}"
+              alt="{{ $alt }}"
+              title="{{ $alt }}"
+              loading="lazy"
+              width="{{ $width }}"
+              height="{{ $height }}"
+            >
+          </span>
+        </span>
+      {{ with $link }}
+        </a>
+      {{ end }}
+    </p>
+  </section>
+{{ end }}
