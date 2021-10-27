@@ -1,6 +1,7 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $alt := index . "imageDescription" }}
 {{ $link := index . "link" }}
+{{ $wrapperClass := index . "class" | default "has-radius-padding has-text-centered no-js-hide" }}
 
 {{ $imgDesktop := index . "desktopImages" }}
 {{ $widthDesktop := index . "desktopWidth" }}
@@ -13,77 +14,84 @@
 {{ $heightMobile := index . "mobileHeight" }}
 {{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
 
-<section
-  class="has-radius-padding has-text-centered no-js-hide"
-  data-ga-category="promo-image"
->
-  <p>
-    {{ with $link }}
-      <a
-        class="is-hidden-mobile"
-        data-ga-category="desktop"
-        href="{{ . }}"
-      >
-    {{ else }}
-      <span class="is-hidden-mobile">
-    {{ end }}
-      <span
-        class="aspect-ratio-outer has-background-grey-lighter"
-        style="width: {{ $widthDesktop }}px;"
-      >
-        <span
-          class="aspect-ratio-middle"
-          style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
-        >
-          <img
-            x-data="imageRotator(JSON.parse($el.dataset.images))"
-            data-images="{{ $imgDesktop | jsonify }}"
-            :src="choice"
-            src="{{ $magicPixel }}"
-            alt="{{ $alt }}"
-            title="{{ $alt }}"
-            loading="lazy"
+{{ if or $imgDesktop $imgMobile }}
+  <section
+    class="{{ $wrapperClass }}"
+    data-ga-category="promo-image"
+  >
+    <p>
+      {{ if $imgDesktop }}
+        {{ with $link }}
+          <a
+            class="is-hidden-mobile"
+            data-ga-category="desktop"
+            href="{{ . }}"
           >
-        </span>
-      </span>
-    {{ with $link }}
-      </a>
-    {{ else }}
-      </span>
-    {{ end }}
-    {{ with $link }}
-      <a
-        class="is-hidden-tablet"
-        data-ga-category="mobile"
-        href="{{ . }}"
-      >
-    {{ else }}
-      <span class="is-hidden-tablet">
-    {{ end }}
-      <span
-        class="aspect-ratio-outer has-background-grey-lighter"
-        style="width: {{ $widthMobile }}px;"
-      >
-        <span
-          class="aspect-ratio-middle"
-          style='padding-bottom: {{ $pbMobile | printf "%0.3f" }}%;'
-        >
-          <img
-            class="aspect-ratio-inner"
-            x-data="imageRotator(JSON.parse($el.dataset.images))"
-            data-images="{{ $imgMobile | jsonify }}"
-            :src="choice"
-            src="{{ $magicPixel }}"
-            alt="{{ $alt }}"
-            title="{{ $alt }}"
-            loading="lazy"
+        {{ else }}
+          <span class="is-hidden-mobile">
+        {{ end }}
+          <span
+            class="aspect-ratio-outer has-background-grey-lighter"
+            style="width: {{ $widthDesktop }}px;"
           >
-        </span>
-      </span>
-    {{ with $link }}
-      </a>
-    {{ else }}
-      </span>
-    {{ end }}
-  </p>
-</section>
+            <span
+              class="aspect-ratio-middle"
+              style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
+            >
+              <img
+                class="aspect-ratio-inner"
+                x-data="imageRotator(JSON.parse($el.dataset.images))"
+                data-images="{{ $imgDesktop | jsonify }}"
+                :src="choice"
+                src="{{ $magicPixel }}"
+                alt="{{ $alt }}"
+                loading="lazy"
+                width="{{ $widthDesktop }}"
+                height="{{ $heightDesktop }}"
+              >
+            </span>
+          </span>
+        {{ with $link }}
+          </a>
+        {{ else }}
+          </span>
+        {{ end }}
+      {{ end }}
+      {{ if $imgMobile }}
+        {{ with $link }}
+          <a
+            class="is-hidden-tablet"
+            data-ga-category="mobile"
+            href="{{ . }}"
+          >
+        {{ else }}
+          <span class="is-hidden-tablet">
+        {{ end }}
+          <span
+            class="aspect-ratio-outer has-background-grey-lighter"
+            style="width: {{ $widthMobile }}px;"
+          >
+            <span
+              class="aspect-ratio-middle"
+              style='padding-bottom: {{ $pbMobile | printf "%0.3f" }}%;'
+            >
+              <img
+                class="aspect-ratio-inner"
+                x-data="imageRotator(JSON.parse($el.dataset.images))"
+                data-images="{{ $imgMobile | jsonify }}"
+                :src="choice"
+                src="{{ $magicPixel }}"
+                alt="{{ $alt }}"
+                loading="lazy"
+              >
+            </span>
+          </span>
+        {{ with $link }}
+          </a>
+        {{ else }}
+          </span>
+        {{ end }}
+      {{ end }}
+    </p>
+  </section>
+{{ end }}
