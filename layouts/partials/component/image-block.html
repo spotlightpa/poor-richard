@@ -41,7 +41,7 @@
           {{ if not $isJPEG }}
           srcset="{{ $srcset }}"
           {{ end }}
-          {{ if .sizeHint }}
+          {{ if not $isJPEG | and .sizeHint }}
             sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
           {{ end }}
           {{ if not $eager }}
