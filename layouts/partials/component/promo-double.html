@@ -1,4 +1,3 @@
-{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $alt := index . "imageDescription" }}
 {{ $link := index . "link" }}
 {{ $wrapperClass := index . "class" | default "has-radius-padding has-text-centered no-js-hide" }}
@@ -6,13 +5,11 @@
 {{ $imgDesktop := index . "desktopImages" }}
 {{ $widthDesktop := index . "desktopWidth" }}
 {{ $heightDesktop := index . "desktopHeight" }}
-{{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
 
 {{ $imgMobile := index . "mobileImages" }}
 
 {{ $widthMobile := index . "mobileWidth" }}
 {{ $heightMobile := index . "mobileHeight" }}
-{{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
 
 {{ if or $imgDesktop $imgMobile }}
   <section
@@ -30,27 +27,12 @@
         {{ else }}
           <span class="is-hidden-mobile">
         {{ end }}
-          <span
-            class="aspect-ratio-outer has-background-grey-lighter"
-            style="width: {{ $widthDesktop }}px;"
-          >
-            <span
-              class="aspect-ratio-middle"
-              style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
-            >
-              <img
-                class="aspect-ratio-inner"
-                x-data="imageRotator(JSON.parse($el.dataset.images))"
-                data-images="{{ $imgDesktop | jsonify }}"
-                :src="choice"
-                src="{{ $magicPixel }}"
-                alt="{{ $alt }}"
-                loading="lazy"
-                width="{{ $widthDesktop }}"
-                height="{{ $heightDesktop }}"
-              >
-            </span>
-          </span>
+        {{ partial "component/image-aspect-ratio.html" (dict
+          "images" $imgDesktop
+          "width" $widthDesktop
+          "height" $heightDesktop
+          "description" $alt
+        )}}
         {{ with $link }}
           </a>
         {{ else }}
@@ -67,25 +49,12 @@
         {{ else }}
           <span class="is-hidden-tablet">
         {{ end }}
-          <span
-            class="aspect-ratio-outer has-background-grey-lighter"
-            style="width: {{ $widthMobile }}px;"
-          >
-            <span
-              class="aspect-ratio-middle"
-              style='padding-bottom: {{ $pbMobile | printf "%0.3f" }}%;'
-            >
-              <img
-                class="aspect-ratio-inner"
-                x-data="imageRotator(JSON.parse($el.dataset.images))"
-                data-images="{{ $imgMobile | jsonify }}"
-                :src="choice"
-                src="{{ $magicPixel }}"
-                alt="{{ $alt }}"
-                loading="lazy"
-              >
-            </span>
-          </span>
+        {{ partial "component/image-aspect-ratio.html" (dict
+          "images" $imgMobile
+          "width" $widthMobile
+          "height" $heightMobile
+          "description" $alt
+        )}}
         {{ with $link }}
           </a>
         {{ else }}
