@@ -89,11 +89,43 @@
           @touchstart.once="load()"
         >
           <div class="tile is-parent is-top is-4" style="order: 2">
-            <div class="tile is-child">
+            <div
+              class="tile is-child"
+              data-ga-category="sidebar"
+            >
+              <div
+                data-ga-category="top"
+                data-sf-campaign="7015G0000013oHLQAY"
+              >
+                {{ partial "component/promo-single.html" (dict
+                  "class" "mb-5 w-0 min-w-full no-js-hide"
+                  "images" (.Param "sidebar-top-images")
+                  "width" (.Param "sidebar-top-width")
+                  "height" (.Param "sidebar-top-height")
+                  "description"  (.Param "sidebar-top-description")
+                )}}
+              </div>
+
               {{ partial "component/most-popular.html" dict }}
               {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
               {{ range $edPicks }}
                 {{ partial "component/editors-picks.html" . }}
+              {{ end }}
+              {{ if .Param "sidebar-sticky-images" }}
+                <div
+                  class="sticky"
+                  data-ga-category="sticky"
+                  data-sf-campaign="7015G0000013oHQQAY"
+                  x-intersect="$dispatch('close-sticky')"
+                >
+                  {{ partial "component/promo-single.html" (dict
+                    "class" "pt-5 w-0 min-w-full no-js-hide"
+                    "images" (.Param "sidebar-sticky-images")
+                    "width" (.Param "sidebar-sticky-width")
+                    "height" (.Param "sidebar-sticky-height")
+                    "description"  (.Param "sidebar-sticky-description")
+                  )}}
+                </div>
               {{ end }}
             </div>
           </div>
@@ -105,6 +137,7 @@
               class="tile is-vertical"
               x-ref="archives"
               data-ga-category="river"
+              data-sf-campaign="7015G0000013oHGQAY"
             >
               <div class="tile is-parent is-top">
                 <div class="tile is-child">
@@ -123,6 +156,7 @@
                     data-ga-category="{{ div $i 4 | add 1 }}"
                   >
                     {{ partial "component/promo-image.html" (dict
+                      "class" "w-0 min-w-full no-js-hide"
                       "imageDescription" $imageDescription
                       "link" $link
                       "desktopImages" $desktopImages
@@ -163,10 +197,11 @@
     </div>
   </div>
   <div
-    class="mt-5 px-5"
     data-ga-category="inline-footer"
+    data-sf-campaign="7015G0000013oHVQAY"
   >
     {{ partial "component/promo-image.html" (dict
+      "class" "mt-5 px-5"
       "imageDescription" (site.Param "promo-image-description")
       "link" (site.Param "promo-link")
       "desktopImages" (site.Param "promo-desktop-images")
