@@ -1,5 +1,4 @@
 {{ if .Param "promo-active" }}
-  {{ $promoComponents := dict "image" "component/promo-image.html" "text" "component/promo-text.html" }}
   {{ if eq (.Param "promo-type") "text" }}
     {{ partialCached "component/promo-text.html" . }}
   {{ else }}
@@ -8,7 +7,7 @@
       data-ga-category="header"
       data-sf-campaign="701f4000000TVuEAAW"
     >
-      {{ partialCached "component/promo-image.html" (dict
+      {{ partialCached "component/promo-double.html" (dict
         "imageDescription" (site.Param "promo-image-description")
         "link" (site.Param "promo-link")
         "desktopImages" (site.Param "promo-desktop-images")
