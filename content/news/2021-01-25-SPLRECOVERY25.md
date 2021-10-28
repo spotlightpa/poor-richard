@@ -1,40 +1,28 @@
 +++
 arc-id = "3YTQUF3OMFBW3MPFEKY27YZULY"
-internal-id = "SPLRECOVERY25"
-internal-budget = ""
-image = "external/wcbzxsfa047612db98mm99rngm.jpeg"
-image-description = "Fred Way is executive director of the Pennsylvania Alliance of Recovery Residences, which voluntarily certifies recovery houses. Here, he shows photographs of residences in the process of being inspected."
-image-caption = ""
-image-credit = "ALEJANDRO A. ALVAREZ / Philadelphia Inquirer"
-image-size = ""
-published = 2021-01-25T10:00:00Z
-slug = "pennsylvania-recovery-homes-oversight-ddap-opioid-addiction"
 authors = ["Ed Mahon"]
-byline = "Ed Mahon of Spotlight PA"
-title = "Thousands of drug, alcohol recovery homes in Pa. still operate without state oversight"
-subtitle = ""
-description = "The Wolf administration has yet to implement regulations stemming from a 2017 reform law intended to better protect recovery home residents and address community complaints."
 blurb = "The Wolf administration has yet to implement regulations stemming from a 2017 reform law intended to better protect recovery home residents and address community complaints."
+byline = "Ed Mahon of Spotlight PA"
+description = "The Wolf administration has yet to implement regulations stemming from a 2017 reform law intended to better protect recovery home residents and address community complaints."
+image = "external/wcbzxsfa047612db98mm99rngm.jpeg"
+image-credit = "ALEJANDRO A. ALVAREZ / Philadelphia Inquirer"
+image-description = "Fred Way is executive director of the Pennsylvania Alliance of Recovery Residences, which voluntarily certifies recovery houses. Here, he shows photographs of residences in the process of being inspected."
+internal-id = "SPLRECOVERY25"
 kicker = "Health"
-topics = ["Health"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-01-25T05:00:00-05:00
+slug = "pennsylvania-recovery-homes-oversight-ddap-opioid-addiction"
+suppress-featured = false
+title = "Thousands of drug, alcohol recovery homes in Pa. still operate without state oversight"
+topics = ["Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
 HARRISBURG — In December 2017, Gov. Tom Wolf signed legislation to increase oversight for drug and alcohol recovery houses — a measure that lawmakers said was needed to fight the opioid epidemic and protect vulnerable people from being exploited.
 
-The action by lawmakers came after years of complaints from local government leaders and some recovery advocates, who said profit-driven owners packed people into homes, provided few rules and little support, and <a href="https://www.theintell.com/article/20170410/NEWS/304109887">put residents at greater risk of relapsing.</a>
+The action by lawmakers came after years of complaints from local government leaders and some recovery advocates, who said profit-driven owners packed people into homes, provided few rules and little support, and <a href="https://web.archive.org/web/20211026012109/https://www.theintell.com/article/20170410/NEWS/304109887">put residents at greater risk of relapsing.</a>
 
 But more than three years later, recovery homes — believed to number in the thousands — continue to operate without state oversight, Spotlight PA has found. The state’s Department of Drug and Alcohol Programs missed a June 2020 deadline to, for the first time, create a certification or licensing process for them.
 
