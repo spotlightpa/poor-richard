@@ -23,7 +23,7 @@
   {{ $marginClass = "mt-4" }}
 {{ end }}
 
-{{ $imageDescription := site.Param "river-promo-image-description" }}
+{{ $imageDescription := site.Param "river-promo-description" }}
 {{ $link := site.Param "river-promo-link" }}
 {{ $desktopImages := site.Param "river-promo-desktop-images" }}
 {{ $desktopWidth := site.Param "river-promo-desktop-width" }}
@@ -102,6 +102,7 @@
                   "images" (.Param "sidebar-top-images")
                   "width" (.Param "sidebar-top-width")
                   "height" (.Param "sidebar-top-height")
+                  "link"  (.Param "sidebar-top-link")
                   "description"  (.Param "sidebar-top-description")
                 )}}
               </div>
@@ -123,6 +124,7 @@
                     "images" (.Param "sidebar-sticky-images")
                     "width" (.Param "sidebar-sticky-width")
                     "height" (.Param "sidebar-sticky-height")
+                    "link"  (.Param "sidebar-sticky-link")
                     "description"  (.Param "sidebar-sticky-description")
                   )}}
                 </div>
