@@ -1,26 +1,26 @@
 +++
 arc-id = "BKAWUO42ORFZBBFCOSXHH4TTUA"
 authors = ["Colin Deppen"]
-blurb = "Spotlight PA offers a final primer on everything you need to know to cast your ballot and vet and select candidates."
+blurb = "On the eve of the 2021 election, here’s a final primer on everything you need to know to vet and select candidates, and to vote."
 byline = "Colin Deppen of Spotlight PA"
-description = "Spotlight PA offers a final primer on everything you need to know to cast your ballot and vet and select candidates."
+description = "On the eve of the 2021 election, here’s a final primer on everything you need to know to vet and select candidates, and to vote."
 image = "external/fv5my70ea0z8ez4mp0efy5tfpm.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
-image-description = "The Nov. 2 general election will feature judicial, municipal, and school board races."
+image-description = "The 2021 Pa. election on Nov. 2 will feature judicial, municipal, and school board races."
 internal-budget = "Spotlight PA offers a final primer on everything you need to know to cast your ballot and vet and select candidates"
 internal-id = "SPLLASTMINUTEVOTERGUIDE29"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
-published = 2021-10-29T05:00:48-04:00
+published = 2021-10-29T05:00:00-04:00
 slug = "voter-guide-pennsylvania-2021-election-essential"
-title = "A last-minute guide to essential Pa. voter prep for the 2021 general election"
+title = "2021 Pa. election: A last-minute guide to everything you need to know to vote Nov. 2"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-Tuesday, Nov. 2 is Election Day in Pennsylvania — and there’s a lot on the ballot.
+The 2021 election in Pennsylvania is Tuesday, Nov. 2 — and there’s a lot on the ballot.
 
 Races for mayor in <a href="https://www.witf.org/2021/10/26/harrisburg-voters-to-pick-their-next-mayor-in-nov-2nd-election/">Harrisburg</a> and <a href="https://www.wesa.fm/politics-government/2021-10-05/pittsburgh-mayoral-candidates-address-housing-policing-in-testy-debate">Pittsburgh</a>, district attorney in <a href="https://whyy.org/episodes/philadelphias-district-attorney-race-da-larry-krasner-and-charles-peruto/">Philadelphia</a>, county council in <a href="https://whyy.org/articles/delco-council-race-puts-the-power-of-the-blue-wave-to-the-test-in-trump-less-times/">Delco</a>, and borough council in <a href="https://www.centredaily.com/news/politics-government/election/article254657607.html#:~:text=State%20College%20Borough,Candidates%20(choose%203)%3A">State College</a> are just a few of the local contests that voters will decide.
 
