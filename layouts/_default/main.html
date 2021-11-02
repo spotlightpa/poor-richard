@@ -79,11 +79,21 @@
           x-intersect.once="$dispatch('open-sticky')"
         ></div>
         <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view-content:start"
+        ></div>
+        <div
           class="content"
           data-sf-campaign="701f4000000TVuXAAW"
         >
           {{ .Content }}
         </div>
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view-content:finish"
+        ></div>
       </div>
 
       {{ if .Param "show-support-box" }}
