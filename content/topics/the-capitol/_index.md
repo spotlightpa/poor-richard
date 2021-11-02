@@ -6,5 +6,5 @@ image-credit = "TIM TAI / Philadelphia Inquirer"
 image-size = "hidden"
 kicker = "The Capitol"
 title = "The Capitol"
-linktitle = "Latest News from Harrisburg"
+linktitle = "Latest news from Harrisburg"
 +++
