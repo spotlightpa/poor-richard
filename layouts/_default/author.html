@@ -93,7 +93,7 @@
           </div>
         </div>
         {{ range $page := .Paginator.Pages }}
-          {{ partial "tile/archive.html" $page }}
+          {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
         {{ end }}
       </div>
 

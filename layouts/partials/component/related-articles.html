@@ -21,7 +21,7 @@
           </div>
         </div>
         {{ range $page := $related }}
-          {{ partial "tile/archive.html" $page }}
+          {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
         {{ end }}
         {{ partial "tile/readmore.html" dict }}
 

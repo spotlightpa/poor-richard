@@ -14,7 +14,7 @@
               <div class="tile is-parent is-4 has-margin-top-negative">
                 <div class="tile is-child">
                   {{ $props :=  dict "Page" . "showDate" true }}
-                  {{ partial "tile/list.html" $props }}
+                  {{ partialCached "tile/list.html" $props $page.RelPermalink true }}
                 </div>
               </div>
             {{ end }}
