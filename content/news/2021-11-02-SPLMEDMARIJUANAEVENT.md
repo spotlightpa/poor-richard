@@ -28,16 +28,18 @@ But the kind of rigorous research needed to study the treatment can often stretc
 
 With <a href="https://www.spotlightpa.org/news/2021/08/pa-opioid-addiction-medical-marijuana-research/">the state research program in its early stages </a>and evidence lacking, some experts remain divided on recommending marijuana to treat opioid use disorder.
 
-Our panelists include:
+On <b>Thursday, Nov. 11 at 7 p.m. EST</b>, join Spotlight PA and a panel of experts for a free discussion on cannabis as a treatment for opioid use disorder, the debate in the medical community, and a look at the research.
 
-- <b>Ed Mahon</b>, investigative reporter for Spotlight PA<br/>
+Our panelists will include:
 
-- <b>Shalawn James</b>, member of the Pennsylvania Medical Marijuana Advisory Board<br/>
+- <b>Ed Mahon</b>, investigative reporter for Spotlight PA
 
-- Other panelists to be announced<br/>
+- <b>Shalawn James</b>, member of the Pennsylvania Medical Marijuana Advisory Board
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_HczofzylRvG6QuTMNFqztw">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
+- Other panelists to be announced
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_XbKvO99QSSOXQllKuS5ytg">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
+
+<i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20DOUBLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20DOUBLED."></div>
