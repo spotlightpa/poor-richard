@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2021-10-29-SPLLASTMINUTEVOTERGUIDE29.md"
+    "content/news/2021-11-02-SPLLOCAL02.md"
   ],
   "sidebarPicks": [
     "content/news/2021-08-05-SPLOPUSE06.md"
   ],
   "subfeatures": [
-    "content/news/2021-10-18-SPLVOTEGUIDE18.md",
-    "content/news/2021-10-14-SPL_schoolboards14.md"
+    "content/news/2021-11-01-SPLPOLLS.md",
+    "content/news/2021-10-29-SPLLASTMINUTEVOTERGUIDE29.md"
   ],
   "topSlots": [
-    "content/news/2021-10-28-SPLCLOSED28.md",
+    "content/news/2021-10-14-SPL_schoolboards14.md",
     "content/news/2021-10-26-SPLSUPREME.md",
-    "content/news/2021-10-25-SPLOVERSIGHT25.md"
+    "content/news/2021-10-14-SPLCOURTGUIDE.md"
   ],
   "topper": []
 }
