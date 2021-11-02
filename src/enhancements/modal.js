@@ -30,6 +30,7 @@ export default function modal() {
         console.warn("aborting modal display");
         return;
       }
+      this.$dispatch("close-sticky");
       this.isOpen = true;
       sawModalNewsletter();
       buildAndSend(this.$el, {
