@@ -20,6 +20,11 @@
         class="column is-3 content md:order-last"
         data-ga-category="who"
       >
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view:footer"
+        ></div>
         <p>
           <a
             class="button is-danger is-uppercase has-text-weight-semibold"
