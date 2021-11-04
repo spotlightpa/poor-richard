@@ -48,8 +48,10 @@ Wolf in June vetoed HB 1300, a wide-ranging election reform package introduced b
 
 The bill would have also implemented stricter voter identification requirements, allowed in-person early voting, and required signature verification of mail ballots. Wolf vetoed the bill, in part, <a href="https://www.spotlightpa.org/news/2021/06/pa-election-overhaul-voter-id-wolf-veto/">because of the ID rules</a>.
 
-Grove has since reintroduced similar legislation.
+In an interview with The Inquirer, Grove was understanding of the mistake. “This happens,” he said. “No one is an election law expert, right? Average citizens aren’t.”
 
-<i>Angela Couloumbis of Spotlight PA contributed reporting. </i>
+“We wanted to make the change to allow that interaction because we get it: It is convenient for a spouse to drop off your ballot,” said Grove, who has reintroduced similar election legislation.
+
+<i>Angela Couloumbis of Spotlight PA and Jonathan Lai of The Inquirer contributed reporting.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
