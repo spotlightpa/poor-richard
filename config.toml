@@ -4,7 +4,7 @@ title = "Spotlight PA"
 enableRobotsTXT = true
 enableGitInfo = true
 rssLimit = 50
-Paginate = 25
+Paginate = 50
 
 googleAnalytics = "UA-141126362-1"
 
