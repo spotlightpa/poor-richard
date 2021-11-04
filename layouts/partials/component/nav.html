@@ -76,4 +76,9 @@
       <span class="navbar-item is-hidden-touch">&nbsp;</span>
     </div>
   </div>
+  <div
+    x-data
+    x-intersect.once="$report({ target: $el })"
+    data-ga-action="view:nav"
+  ></div>
 </nav>
