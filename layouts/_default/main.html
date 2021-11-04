@@ -169,4 +169,6 @@
     {{ $related := $news.RegularPages.Related . | first 3 }}
     {{ partial "component/related-articles.html" $related }}
   {{ end }}
+
+  {{ partialCached "component/promo-footer.html" . }}
 </section>
