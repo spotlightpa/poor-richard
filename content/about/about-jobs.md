@@ -6,32 +6,31 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
-## Investigative Reporter
+# Senior Editor, Investigations
 
-### [Read More & Apply Here](https://us60.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/226)
+### [Read More & Apply Here](https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/361)
 
-Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on urgent statewide issues, is seeking a passionate accountability reporter to join our team. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across more than 70 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
+We are seeking a veteran investigative journalist to join the editing team at Spotlight PA, a nationally award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 77 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
 
-### What You’ll Do
+## What You’ll Do
 
-* Build a beat around labor issues, the environment, or other under-covered aspects of Pennsylvania state government. 
-* Take the time to go beneath the surface to examine the inner workings of powerful institutions, and the policies and practices around them.
-* Expected to build sources and scrutinize policies through the power players and special interests around them, as well as monitor related legislation and legislative committees.
-* Regularly uncover and write stories on investigative issues that are otherwise getting little to no attention, supported by an excited team that is intensely familiar with the state’s bureaucracies.
-* Occasional daily reporting.
+The Senior Editor will lead Spotlight PA’s highest-level investigative reporting. This editor will mentor and coach reporters across various beats to help them identify potential stories, sharpen their focus, hold them to deadlines, and deliver accountability-focused projects and investigations of a short-, medium-, and long-term nature. The editor should have experience — either as a reporter, editor, or in another role — executing this kind of investigative journalism from idea through publication, and with impact. A background in using data to power investigations and creative ways of presenting investigative work is a bonus.
 
-### Who We’re Looking For
+## Who We’re Looking For
 
-* Experience reporting on local, regional, or state agencies, with clips that show an ability to report beyond daily motions, build sources from scratch to break new ground, and aggressively fight for and use public records.
-* Someone who can penetrate guarded and closed-off institutions, persistently pitch stories, and keep several projects of varying lengths cooking at one time. 
-* Candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters.
+Applicants should have strong organization and communication skills, and be enthusiastic about working one-on-one with a team of reporters in various stages of their careers as well as with journalists in other newsrooms across the state. We want someone who’s not afraid to bring big ideas to the table, and who has the skills and persistence to pull them off. 
 
-## Additional Recommendations
+An ability to work in a collaborative environment with external partners is a must. We’re an agile startup that values camaraderie and shares a passion for our work. Everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of telling stories and connecting with audiences.
 
-* Fluency in foreign languages, particularly Spanish;
-* A comfort with requesting, scrutinizing, and using data in the reporting process.
+## Additional Information
 
-This job is full-time, based anywhere in Pennsylvania, and includes benefits. Please submit a resume and cover letter. 
+This job is full-time and includes benefits. Our newsroom is based in Harrisburg, but we will consider candidates who can work remotely from anywhere in the U.S. Applicants should include a resume and cover letter explaining the following:
+
+* How they can support and bolster Spotlight PA’s investigative reporting on Day 1;
+* How their past experience serves as evidence of their ability;
+* Specific examples of their commitment to diverse sourcing and story selection
+
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. As an equal opportunity employer, Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
 
 - - -
 
