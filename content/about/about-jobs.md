@@ -8,7 +8,7 @@ aliases = ["/jobs/"]
 +++
 # Senior Editor, Investigations
 
-### [Read More & Apply Here](https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/361)
+### [Apply Here](https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/361)
 
 We are seeking a veteran investigative journalist to join the editing team at Spotlight PA, a nationally award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative network of its kind in the United States, with stories shared across 77 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners.
 
