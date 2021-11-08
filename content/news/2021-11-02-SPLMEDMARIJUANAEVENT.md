@@ -36,7 +36,7 @@ Our panelists will include:
 
 - <b>Shalawn James</b>, member of the Pennsylvania Medical Marijuana Advisory Board
 
-- Other panelists to be announced
+- <b>Dr. Peter Grinspoon</b>, board member of Doctors for Cannabis Regulation
 
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_XbKvO99QSSOXQllKuS5ytg">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
 
