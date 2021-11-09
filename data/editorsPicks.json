@@ -1,16 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-11-09-SPLCHECK10.md"
+    "content/news/2021-11-09-SPLPROBE.md"
   ],
   "sidebarPicks": [
     "content/news/2021-08-05-SPLOPUSE06.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-19-SPLBALLOTXX.md"
+    "content/news/2021-10-22-SPLSECRETXX.md",
+    "content/news/2021-10-04-SPLGAG.md"
   ],
   "topSlots": [
+    "content/news/2021-11-09-SPLCHECK10.md",
     "content/news/2021-11-08-SPLMASK09.md",
-    "content/news/2021-11-04-SPLBALLOT.md",
     "content/news/2021-11-02-SPLMEDMARIJUANAEVENT.md"
   ],
   "topper": []
