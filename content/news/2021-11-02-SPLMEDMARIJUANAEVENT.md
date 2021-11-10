@@ -38,6 +38,8 @@ Our panelists will include:
 
 - <b>Dr. Peter Grinspoon</b>, board member of Doctors for Cannabis Regulation
 
+- <b>Dr. Kavita Fischer</b>, vice president of the Pennsylvania Psychiatric Society
+
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_XbKvO99QSSOXQllKuS5ytg">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
 
 <i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>
