@@ -13,7 +13,14 @@
 {{ if not site.IsServer }}
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+<link
+  rel="preload"
+  as="style"
+  href="{{ $styles.RelPermalink }}"
+  importance="low"
+  onload="this.rel='stylesheet'"
+/>
+
 <noscript>
   <style>
     .no-js-only {
