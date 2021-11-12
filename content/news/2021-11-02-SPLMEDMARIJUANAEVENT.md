@@ -14,7 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-11-02T16:50:56.906-04:00
 slug = "opioids-medical-marijuana-pennsylvania-addiction"
-title = "You’re invited! A free panel on using cannabis to treat opioid addiction"
+title = "WATCH: A free panel on using cannabis to treat opioid addiction"
 topics = ["Events", "Health"]
 +++
 
