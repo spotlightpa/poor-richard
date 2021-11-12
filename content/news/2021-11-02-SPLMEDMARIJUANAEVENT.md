@@ -28,9 +28,9 @@ But the kind of rigorous research needed to study the treatment can often stretc
 
 With <a href="https://www.spotlightpa.org/news/2021/08/pa-opioid-addiction-medical-marijuana-research/">the state research program in its early stages </a>and evidence lacking, some experts remain divided on recommending marijuana to treat opioid use disorder.
 
-On <b>Thursday, Nov. 11 at 7 p.m. EST</b>, join Spotlight PA and a panel of experts for a free discussion on cannabis as a treatment for opioid use disorder, the debate in the medical community, and a look at the research.
+On <b>Thursday, Nov. 11 at 7 p.m. EST</b>, Spotlight PA and a panel of experts held a free discussion on cannabis as a treatment for opioid use disorder, the debate in the medical community, and a look at the research.
 
-Our panelists will include:
+Our panelists included:
 
 - <b>Ed Mahon</b>, investigative reporter for Spotlight PA
 
@@ -40,7 +40,8 @@ Our panelists will include:
 
 - <b>Dr. Kavita Fischer</b>, vice president of the Pennsylvania Psychiatric Society
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_XbKvO99QSSOXQllKuS5ytg">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/645266486?h=76d8311834&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/645266486">Spotlight Live: Cannabis Conundrum</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>
 
