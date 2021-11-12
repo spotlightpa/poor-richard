@@ -44,5 +44,3 @@ Our panelists included:
 <p><a href="https://vimeo.com/645266486">Spotlight Live: Cannabis Conundrum</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>
-
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20DOUBLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20DOUBLED."></div>
