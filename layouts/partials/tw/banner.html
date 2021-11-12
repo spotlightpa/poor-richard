@@ -1,0 +1,30 @@
+{{ $link := .Param "banner-link" | absURL }}
+{{ $bgColor := .Param "banner-bg-color" }}
+
+{{ if .Param "banner-active" }}
+  <section
+    class="py-1 px-2 font-sans font-medium leading-tight"
+    data-ga-category="header:banner"
+    {{ with $bgColor }}
+      style="background-color: {{ . }} !important"
+    {{ end }}
+  >
+    {{ if $link }}
+      <a href="{{ $link }}">
+        {{ template "tw-banner-content" . }}
+      </a>
+    {{ else }}
+      {{ block "tw-banner-content" . }}
+        {{ $textColor := .Param "banner-text-color" }}
+        <div
+          class="text-center text-lg"
+          {{ with $textColor }}
+            style="color: {{ . }} !important"
+          {{ end }}
+        >
+          {{ .Param "banner" | markdownify }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

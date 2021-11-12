@@ -68,8 +68,10 @@ module.exports = {
         "6x4": `${(100 * 4) / 6}%`,
       },
       screens: {
+        sm: "640px",
         md: "850px",
         lg: "1080px",
+        xl: "1280px",
       },
       maxWidth: {
         content: "730px",
@@ -79,6 +81,7 @@ module.exports = {
   variants: {
     extend: {
       boxShadow: ["active", "group-focus"],
+      ringWidth: ["hover", "active"],
     },
   },
   plugins: [],

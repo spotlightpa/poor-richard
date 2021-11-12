@@ -1,0 +1,30 @@
+{{ $imagename := .Param "image" }}
+{{ $credit := .Param "image-credit" }}
+{{ $description := .Param "image-description" }}
+{{ $caption := .Param "image-caption" | default $description }}
+{{ $size := .Param "image-size" | default "inline" }}
+
+{{ $imgOpts := dict
+  "filename" $imagename
+  "credit" $credit
+  "description" $description
+  "caption" $caption
+  "eager" true
+}}
+{{ if eq $size "inline" }}
+  {{ $imgOpts = dict
+    "widthRatio" 3
+    "heightRatio" 2
+    "sizeHint" "50vw"
+    "widths" (slice 300 480 686 1029 1372)
+    "rounded" true
+    "figClass" "mt-6" | merge $imgOpts }}
+{{ else if eq $size "full" }}
+  {{ $imgOpts = dict
+    "widthRatio" 16
+    "heightRatio" 9
+    "figClass" "full-bleed" | merge $imgOpts }}
+{{ end }}
+{{ if ne $size "hidden" | and $imagename }}
+  {{ $imgOpts | partial "tw/image-block.html" }}
+{{ end }}

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+<html 
+  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+  class="base-17"
+>
   <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,15 +57,15 @@
     {{ partial "header/favicons.html" . }}
     <link
       rel="alternate"
-      type="application/json"
-      href="{{ absURL "/feeds/full.json" }}"
+      type="application/feed+json"
+      href="{{ absURL `/feeds/full.json` }}"
       title="Full News Feed"
     />
 
     <link
       rel="alternate"
       type="application/rss+xml"
-      href="{{ absURL "/feeds/full.xml" }}"
+      href="{{ absURL `/feeds/full.xml` }}"
       title="Full News Feed"
     />
   </head>

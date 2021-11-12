@@ -1,6 +1,10 @@
 @tailwind base;
 
-html {
+.base-16 {
+  font-size: 16px;
+}
+
+.base-17 {
   font-size: 17px;
 }
 
@@ -28,54 +32,107 @@ html {
 }
 /*! purgecss end ignore */
 
-.content-area > p a {
+.featured-content > p a {
   @apply text-darkblue underline;
   @apply transition-colors duration-500;
 }
 
-.content-area > p a:hover {
+.featured-content > p a:hover {
   @apply text-yellow;
 }
 
-.content-area > p del {
+.featured-content > p del {
   @apply text-orange line-through;
 }
 
-.content-area > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
-.content-area > :where(ol, ul) > li + li,
-.content-area > :where(ol, ul) > li > p + p,
-.content-area > p + p,
-.content-area > aside + p,
-.content-area > figure + p {
+.featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
+.featured-content > :where(ol, ul) > li + li,
+.featured-content > :where(ol, ul) > li > p + p,
+.featured-content > p + p,
+.featured-content > aside + p,
+.featured-content > figure + p {
   @apply mt-8;
 }
 
-.content-area > h2 {
+.featured-content > h2 {
   @apply mt-8 mb-2 font-sans text-4xl font-semibold leading-tight;
 }
 
-.content-area > h3 {
-  @apply mt-4 mb-8 font-sans text-3xl italic leading-8;
+.featured-content > h3 {
+  @apply mt-4 mb-8 font-sans text-3xl italic leading-none;
 }
 
-.content-area > h4 {
+.featured-content > h4 {
   @apply mt-8 mb-4 font-sans text-lg font-semibold leading-tight;
 }
 
-.content-area > h5 {
+.featured-content > h5 {
   @apply mt-6 mb-2 text-base font-semibold leading-tight;
 }
 
-.content-area > h6 {
+.featured-content > h6 {
   @apply mt-4 mb-1 text-base italic leading-tight;
 }
 
-.content-area > ul {
+.featured-content > ul {
   @apply list-disc pl-6;
 }
 
-.content-area > ol {
+.featured-content > ol {
   @apply list-decimal pl-6;
+}
+
+.article-content > :where(p, aside, figure, ol, ul) {
+  @apply mt-4 mb-4;
+}
+
+.article-content > :first-child {
+  @apply mt-0;
+}
+
+.article-content > :last-child {
+  @apply mb-0;
+}
+
+.article-content > h2 {
+  @apply mt-8 mb-4 text-2xl font-semibold leading-tight;
+}
+
+.article-content > h3 {
+  @apply mt-8 mb-4 text-xl font-semibold leading-tight;
+}
+
+.article-content > h4 {
+  @apply mt-8 mb-4 text-lg font-semibold leading-tight;
+}
+
+.article-content > h5 {
+  @apply mt-8 mb-4 text-base font-semibold leading-tight;
+}
+
+.article-content > h6 {
+  @apply mt-8 mb-4 text-base italic leading-tight;
+}
+
+.article-content > ul {
+  @apply list-disc pl-6;
+}
+
+.article-content > ol {
+  @apply list-decimal pl-6;
+}
+
+.article-content > p a {
+  @apply text-darkblue underline;
+  @apply transition-colors duration-500;
+}
+
+.article-content > p a:hover {
+  @apply text-yellow;
+}
+
+.article-content > p del {
+  @apply text-orange line-through;
 }
 
 

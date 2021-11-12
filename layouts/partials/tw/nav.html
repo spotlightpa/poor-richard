@@ -1,0 +1,110 @@
+<header class="bg-black font-sans">
+  <nav x-data="{ isOpen: false }">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="flex-1 flex items-center justify-start">
+          <a
+            class="flex-shrink-0 inline-flex text-white hover:text-yellow"
+            href="/"
+          >
+            <svg class="h-12 w-auto fill-current">
+              <title>Home</title>
+              <desc>Spotlight PA logo</desc>
+              <use xlink:href="#banner-svg"></use>
+            </svg>
+          </a>
+        </div>
+      <div
+        class="relative flex items-center justify-between h-16"
+        @click.away="isOpen = false"
+      >
+        <span class="hidden md:flex flex-row content-center space-x-6">
+          {{ range site.Menus.main }}
+            <a
+              class="self-center uppercase text-white hover:text-yellow duration-500"
+              href="{{ .URL }}"
+            >{{ .Name }}</a>
+          {{ end }}
+          <a
+            class="group self-center px-2 py-1 bg-orange text-white rounded uppercase font-semibold"
+            href='/donate/'
+          >
+            <svg
+              class="inline mr-1 h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              style="margin-top: -4px;"
+            >
+              <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+            </svg>
+            Support Us
+          </a>
+        </span>
+        <div class="flex md:hidden items-center">
+          <!-- Mobile menu button-->
+          <button
+            type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md text-g-1 hover:text-yellow focus:outline-none focus:text-yellow"
+            aria-label="Main menu"
+            :aria-expanded="String(isOpen)"
+            @click="isOpen = !isOpen"
+          >
+            <!-- Heroicon name: menu -->
+            <svg
+              x-show="!isOpen"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <desc>Open menu button</desc>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Heroicon name: x -->
+            <svg
+              x-cloak=1
+              x-show="isOpen"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <desc>Close menu button</desc>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <div
+            x-show="isOpen"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            x-cloak
+            class="absolute inset-y-0 right-0 flex items-center inset-auto w-0"
+          >
+            <div class="relative">
+              <div class="origin-top-right absolute right-0 mt-4 w-48 rounded-md shadow-lg">
+                <ul
+                  class="py-1 rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                >
+                  {{ range site.Menus.mobile }}
+                    <a
+                      href="{{ .URL }}"
+                      class="block px-4 py-2 text-sm leading-5 text-g-7 hover:bg-g-3 focus:outline-none focus:bg-g-3 transition duration-150 ease-in-out"
+                      role="menuitem"
+                    >{{ .Name }}</a>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

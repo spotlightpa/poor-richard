@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html
+  lang='{{ .Param "language-code" | default site.LanguageCode }}'
+>
+<head
+  itemscope itemtype="http://schema.org/WebSite"
+>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{- with .Param "title-tag" -}}
+      {{- . -}}
+    {{- else -}}
+      {{ .Title }} &middot; {{ .Site.Title }}
+    {{- end -}}
+  </title>
+
+  {{ partial "header/meta.html" . }}
+  {{ partial "header/google-analytics-async.html" . }}
+
+  {{ $cssFonts := resources.Get "css/featured-fonts.css" }}
+  {{ $cssTW := resources.Get "css/featured.css" }}
+  {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
+  {{ $css = $css | postCSS }}
+  {{ if ne hugo.Environment "development" }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <link rel="preload" as="font" href="/css/fonts/merriweather-v22/merriweather-v22-latin-regular.woff2" crossorigin>
+
+  <noscript>
+    <style>
+      .no-js-only {
+        display: block;
+      }
+      .no-js-hide {
+         display: none;
+      }
+    </style>
+  </noscript>
+
+  <script
+    nomodule
+    src='{{ partialCached "helper/get-nomodules-js" . }}'
+    defer
+  ></script>
+  <script
+    src='{{ partialCached "helper/get-enhancements" . }}'
+    type="module"
+    onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
+  ></script>
+  {{ partial "header/favicons.html" . }}
+  <link
+    rel="alternate"
+    type="application/feed+json"
+    href='{{ absURL "/feeds/full.json" }}'
+    title="Full News Feed"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href='{{ absURL "/feeds/full.xml" }}'
+    title="Full News Feed"
+  />
+</head>
+{{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+{{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
+<body
+  data-ga-label='{{ $pageCat }}'
+  data-ga-category="featured"
+  class="bg-beige base-16 font-serif leading-normal"
+>
+  <!-- mobile overflow guard -->
+  <div class="flex flex-col w-screen overflow-x-hidden sm:overflow-x-auto">
+    {{ partialCached "tw/nav.html" . }}
+    {{ partialCached "tw/banner.html" . }}
+    <!-- TODO: Topper -->
+    {{ partialCached "tw/promo-header.html" . }}
+    <main data-ga-category="main">
+      {{ partial "tw/main.html" . }}
+    </main>
+
+    <footer
+      class="font-sans bg-black text-white uppercase"
+      data-ga-category="footer"
+    >
+      <nav class="flex flex-col space-y-6 md:flex-row md:space-y-0 p-12 max-w-screen-xl">
+        <div
+          class="-mt-4 flex-grow md:order-last"
+        >
+          <a
+            href="/"
+            class="hover:text-yellow"
+            data-ga-category="logo"
+          >
+            <svg
+              class="fill-current max-w-xs"
+              role="img"
+              aria-label="Spotlight PA banner"
+              viewBox="0 0 1024 190"
+            >
+              <use xlink:href="#banner-svg"></use>
+            </svg>
+          </a>
+          <p class="mt-2">
+            &copy; {{ now.Format "2006" }} <br>
+            Spotlight PA <br>
+            225 Market St <br>
+            Suite 502A <br>
+            Harrisburg PA 17101
+          </p>
+        </div>
+        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
+        {{ block "featured-footer" $context }}
+          <div
+            class="flex-1"
+            data-ga-category="{{ .category }}"
+          >
+            <h3 class="font-bold">{{ .name }}</h3>
+            <ul class="mt-2">
+              {{ range .menu }}
+                <li>
+                  <a
+                    class="text-blue hover:text-yellow transition-colors duration-500"
+                    href="{{ .URL }}"
+                  >{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
+        {{ template "featured-footer" $context }}
+        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
+        {{ template "featured-footer" $context }}
+      </nav>
+    </footer>
+    {{ $svgs := dict
+      "banner-svg" "/img/logos/banner-default-on-trans.svg"
+      "close-svg" "@fontawesome/solid/times.svg"
+      "email-svg" "@fontawesome/regular/envelope.svg"
+      "fb-svg" "@fontawesome/brands/facebook-f.svg"
+      "left-svg" "@fontawesome/solid/arrow-circle-left.svg"
+      "logo-svg" "/img/logos/circle-default-on-trans.svg"
+      "plus-svg" "@fontawesome/solid/plus-circle.svg"
+      "right-svg" "@fontawesome/solid/arrow-circle-right.svg"
+      "share-svg" "@fontawesome/solid/share.svg"
+      "twitter-svg" "@fontawesome/brands/twitter.svg"
+    }}
+    {{ partialCached "tw/modal-sticky.html" . }}
+    {{ partialCached "tw/modal-search.html" . }}
+    {{ partialCached "tw/modal-newsletter.html" . }}
+    <div hidden>
+      {{ range $id, $rsc := $svgs }}
+        {{ $svg := resources.Get $rsc }}
+        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+      {{ end }}
+    </div>
+    {{ partial "header/ld-json.html" . }}
+  </div>
+</body>
+</html>

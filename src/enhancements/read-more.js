@@ -9,7 +9,8 @@ function toStory(data, { width, height }) {
   return {
     ...data,
     get imageURL() {
-      return imgproxy(data.image, { width, height });
+      let image = data.image || "2019/11/banner-white-on-capitol.jpeg";
+      return imgproxy(image, { width, height });
     },
   };
 }
@@ -36,10 +37,10 @@ export default function readMore(showDate = false) {
       hrefs.add(window.location.pathname);
 
       // Figure out the right image size to request
-      let { width = 0, height = 0 } =
+      let { width = 1, height = 0 } =
         this.$refs.archives.querySelector("figure img");
       let aspectRatio = height / width;
-      width = roundUp(window.devicePixelRatio * width, 100);
+      width = roundUp(window.devicePixelRatio * width, 1);
       height = Math.round(aspectRatio * width);
 
       fetchJSON(this.$refs.feedSrc.href)

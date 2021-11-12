@@ -1,0 +1,53 @@
+{{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
+{{ $emailSubject := .LinkTitle }}
+
+{{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow focus:outline-none active:ring-2 focus:ring-2 ring-black` }}
+<div
+  class="flex space-x-2 text-white"
+  data-ga-category="social-buttons"
+>
+  <a
+    href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
+    class="{{ $btnClass }} bg-green"
+    title="Share this page by email"
+    data-ga-action="share:email"
+  >
+    <svg class="h-4 fill-current">
+      <use xlink:href="#email-svg"></use>
+    </svg>
+  </a>
+  <a
+    class="{{ $btnClass }} bg-fb-blue"
+    href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ .Permalink }}"
+    data-ga-action="share:facebook"
+    title="Share this page on Facebook"
+  >
+    <svg class="h-4 fill-current">
+      <use xlink:href="#fb-svg"></use>
+    </svg>
+  </a>
+  <a
+    class="{{ $btnClass }} bg-tw-blue"
+    href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
+    data-ga-action="share:twitter"
+    title="Tweet about this page"
+  >
+    <svg class="h-4 fill-current">
+      <use xlink:href="#twitter-svg"></use>
+    </svg>
+  </a>
+  <button
+    class="{{ $btnClass }} bg-orange"
+    data-share="sharesheet"
+    data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
+    data-ga-action="share:sharesheet"
+    title="More ways to share this page"
+    x-data
+    x-show="!! navigator.share"
+    x-cloak
+  >
+    <svg class="h-4 fill-current">
+      <use xlink:href="#share-svg"></use>
+    </svg>
+  </button>
+</div>
