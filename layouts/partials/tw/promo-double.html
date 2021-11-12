@@ -1,0 +1,66 @@
+{{ $alt := index . "imageDescription" }}
+{{ $link := index . "link" }}
+{{ $wrapperClass := index . "class" | default "text-center no-js-hide" }}
+
+{{ $imgDesktop := index . "desktopImages" }}
+{{ $widthDesktop := index . "desktopWidth" }}
+{{ $heightDesktop := index . "desktopHeight" }}
+
+{{ $imgMobile := index . "mobileImages" }}
+
+{{ $widthMobile := index . "mobileWidth" }}
+{{ $heightMobile := index . "mobileHeight" }}
+
+{{ if or $imgDesktop $imgMobile }}
+  <section
+    class="{{ $wrapperClass }}"
+    data-ga-category="promo-image"
+  >
+    <p>
+      {{ if $imgDesktop }}
+        {{ with $link }}
+          <a
+            class="hidden sm:block"
+            data-ga-category="desktop"
+            href="{{ . }}"
+          >
+        {{ else }}
+          <span class="hidden sm:block">
+        {{ end }}
+        {{ partial "tw/image-aspect-ratio.html" (dict
+          "images" $imgDesktop
+          "width" $widthDesktop
+          "height" $heightDesktop
+          "description" $alt
+        )}}
+        {{ with $link }}
+          </a>
+        {{ else }}
+          </span>
+        {{ end }}
+      {{ end }}
+      {{ if $imgMobile }}
+        {{ with $link }}
+          <a
+            class="sm:hidden"
+            data-ga-category="mobile"
+            href="{{ . }}"
+          >
+        {{ else }}
+          <span class="sm:hidden">
+        {{ end }}
+        {{ partial "tw/image-aspect-ratio.html" (dict
+          "images" $imgMobile
+          "width" $widthMobile
+          "height" $heightMobile
+          "description" $alt
+        )}}
+        {{ with $link }}
+          </a>
+        {{ else }}
+          </span>
+        {{ end }}
+      {{ end }}
+    </p>
+  </section>
+{{ end }}

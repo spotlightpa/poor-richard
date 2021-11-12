@@ -1,0 +1,104 @@
+<link
+  rel="prefetch"
+  as="fetch"
+  :href="'/feeds/summary.json'"
+  x-ref="feedSrc"
+/>
+<template x-for="story in stories" :key="story.url" x-cloak>
+  <article
+    class="flex flex-col space-y-1"
+    data-ga-category="readmore"
+    @click.passive.capture="$report($event)"
+  >
+    <div>
+      <a
+        class="inline-block px-2 bg-black text-white text-sm font-sans font-semibold uppercase"
+        :href="story.url"
+        data-ga-category="eyebrow"
+        x-text="story.kicker"
+      ></a>
+    </div>
+    <div
+      class="
+        flex flex-col w-full space-y-2
+        sm:flex-row sm:space-y-0 sm:space-x-6
+      "
+    >
+      <div class="w-full sm:w-64 flex-shrink-0">
+        <figure
+          class="mt-1"
+          data-ga-category="thumb"
+        >
+          <a
+            class="block relative pb-16x9 w-full h-0 shadow overflow-hidden bg-g-4"
+            :href="story.url"
+          >
+            <picture class="absolute block inset-0">
+              <img
+                class="min-w-full min-h-full object-cover"
+                :alt="story.imageDescription"
+                :title="story.imageDescription"
+                :src="story.imageURL"
+                loading="lazy">
+            </picture>
+          </a>
+          <figcaption
+            class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase"
+            x-text="story.imageCredit"
+          ></figcaption>
+        </figure>
+      </div>
+      <div class="group w-full flex-grow space-y-1">
+        <h2 class="text-black text-lg font-semibold leading-tight tracking-tight">
+          <a
+            class="group-hover:underline"
+            :href="story.url"
+            data-ga-category="hed"
+            x-text="story.title"
+          ></a>
+        </h2>
+        <h3 class="text-g-7 font-sans text-base font-semibold leading-tight tracking-normal">
+          <a
+            class="group-hover:underline"
+            :href="story.url"
+            data-ga-category="byline"
+            x-template="by ${story.byline}"
+          ></a>
+        </h3>
+        <h3
+          class="text-g-7 font-sans text-base font-light leading-tight tracking-normal"
+          data-ga-category="time"
+          x-show="showDate"
+        >
+          <a
+            class="group-hover:underline"
+            :href="story.url"
+          >
+            <time
+              :datetime="story.publishedISO"
+              x-text="story.published"></time>
+          </a>
+        </h3>
+      </div>
+    </div>
+  </article>
+</template>
+
+<template x-if="error && hasClicked" x-cloak>
+  <div
+    class="
+      my-8 px-6 py-2
+      rounded border-l-8 border-yellow
+      bg-g-2 text-g-8
+      text-lg font-sans leading-normal
+    "
+    data-ga-category="error"
+  >
+    Could not load more.
+    <a
+      href="/news/"
+      class="text-blue semibold underline"
+    >Try again?</a>
+  </div>
+</template>
+

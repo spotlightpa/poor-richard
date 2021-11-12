@@ -1,0 +1,22 @@
+{{ if .Param "promo-active" }}
+  {{ if eq (.Param "promo-type") "text" }}
+    {{ partialCached "component/promo-text.html" . }}
+  {{ else }}
+    <div
+      class="pt-6 px-6 bg-white"
+      data-ga-category="header"
+      data-sf-campaign="701f4000000TVuEAAW"
+    >
+      {{ partialCached "tw/promo-double.html" (dict
+        "imageDescription" (site.Param "promo-image-description")
+        "link" (site.Param "promo-link")
+        "desktopImages" (site.Param "promo-desktop-images")
+        "desktopWidth" (site.Param "promo-desktop-width")
+        "desktopHeight" (site.Param "promo-desktop-height")
+        "mobileImages" (site.Param "promo-mobile-images")
+        "mobileWidth" (site.Param "promo-mobile-width")
+        "mobileHeight" (site.Param "promo-mobile-height")
+      ) }}
+    </div>
+  {{ end }}
+{{ end }}

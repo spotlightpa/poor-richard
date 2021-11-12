@@ -1,0 +1,98 @@
+{{ $widths := .widths }}
+{{ $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
+{{ $widthR := .widthRatio | default 16 }}
+{{ $heightR := .heightRatio | default 9 }}
+{{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
+{{ $credit := .credit }}
+{{ $eager := .eager | default false }}
+{{ $rounded := cond (.rounded|not|not) "rounded" "" }}
+
+{{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
+{{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
+
+{{ $width := (index $sizes 0).width }}
+{{ $height := (index $sizes 0).height }}
+{{ $padding := slice $widthR $heightR | partial "helper/aspect-ratio" }}
+{{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+{{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+
+<figure
+  class="{{ .figClass }}"
+  data-ga-category="thumb"
+  x-data="{ showCaption: false }"
+  x-effect="showCaption && $report({ target: $el })"
+  data-ga-action="image:toggle-caption"
+>
+  {{- if .link -}}
+    <a
+      class="
+        block relative w-full h-0 shadow overflow-hidden bg-g-4
+        {{ $rounded }}
+      "
+      style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+      href="{{ .link }}"
+    >
+  {{- else -}}
+    <div
+      class="
+        block relative w-full h-0 shadow overflow-hidden bg-g-4
+        {{ $rounded }}
+      "
+      style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+    >
+  {{- end -}}
+    <picture
+      class="absolute block inset-0"
+      {{ if .caption }}
+        @click="showCaption = !showCaption"
+      {{ end }}
+    >
+      {{ $isJPEG := in (string $srcset) ".jpeg" }}
+      {{ if $isJPEG }}
+        <source
+          type="image/webp"
+          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
+          {{ if .sizeHint }}
+            sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+          {{ end }}
+        >
+      {{ end }}
+      <img
+        class="min-w-full min-h-full object-cover"
+        alt="{{ .description }}"
+        title="{{ .description }}"
+        src="{{ $imgSmallSrc }}"
+        {{ if not $isJPEG }}
+        srcset="{{ $srcset }}"
+        {{ end }}
+        {{ if not $isJPEG | and .sizeHint }}
+          sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+        {{ end }}
+        {{ if not $eager }}
+          loading="lazy"
+          decoding="async"
+        {{ end }}
+      >
+    </picture>
+    {{ if .caption }}
+      <figcaption
+        class="
+          absolute p-4 bottom-0 inset-x-0 rounded overflow-hidden
+          backdrop-filter backdrop-blur-sm backdrop-brightness-50
+          font-sans text-base text-g-1
+        "
+        x-cloak
+        x-show="showCaption"
+      >{{ .caption }}</figcaption>
+    {{ end }}
+  {{- if .link -}}
+    </a>
+  {{- else -}}
+    </div>
+  {{- end -}}
+  {{ with $credit }}
+    <figcaption class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase">
+      {{ $credit }}
+    </figcaption>
+  {{ end }}
+</figure>

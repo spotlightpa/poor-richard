@@ -1,0 +1,55 @@
+{{ $alt := .Param "sticky-image-description" }}
+{{ $images := .Param "sticky-images" }}
+{{ $link := .Param "sticky-link" }}
+
+{{ $width := 0 }}
+{{ $height := 0 }}
+{{ $bgColor := "#000" }}
+<section
+  class="fixed z-10 bottom-0 right-0 max-w-xs"
+  x-data="sticky"
+  x-show="isOpen"
+  x-transition:enter="transition ease-out duration-500"
+  x-transition:enter-start="opacity-0 transform translate-x-8"
+  x-transition:enter-end="opacity-100 transform translate-x-0"
+  x-transition:leave="transition ease-in duration-500"
+  x-transition:leave-start="opacity-100 transform translate-x-0"
+  x-transition:leave-end="opacity-0 transform translate-x-8"
+  @open-sticky.window="show()"
+  @close-sticky.window="close()"
+  data-ga-category="modal:sticky"
+  @keydown.escape="close"
+  x-cloak
+>
+  <button
+    type="button"
+    class="
+      absolute top-1 left-2 h-10 w-10
+      border-beige border-2 rounded-full
+      bg-yellow hover:bg-black
+      text-white hover:text-yellow
+      flex justify-center
+      focus:outline-none focus:ring-2 ring-yellow"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
+  >
+    <svg class="my-auto fill-current h-6 w-6">
+      <use xlink:href="#close-svg"></use>
+    </svg>
+  </button>
+  <a
+    class="block my-2 mx-4 p-4 focus:outline-none focus:ring-2 ring-yellow"
+    @click.capture="close()"
+    @click.outside="close()"
+    href="/donate/"
+  ><img
+    class="shadow-beige rounded"
+    x-data="imageRotator(JSON.parse($el.dataset.images))"
+    data-images="{{ $images | jsonify }}"
+    :src="choice"
+    alt="{{ $alt }}"
+    title="{{ $alt }}"
+    style="max-height: 40vh;"
+  ></a>
+</section>
