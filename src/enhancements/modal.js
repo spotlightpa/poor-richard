@@ -1,4 +1,3 @@
-import { focus, blur } from "../utils/active-element.js";
 import { buildAndSend } from "../utils/google-analytics.js";
 import {
   onTestPage,
@@ -12,51 +11,36 @@ export default function modal() {
   return {
     isOpen: false,
 
+    init() {
+      this.$watch("isOpen", (val) => {
+        if (val) {
+          this.$dispatch("close-sticky");
+          sawModalNewsletter();
+          buildAndSend(this.$el, {
+            eventAction: "modal:newsletter:open",
+            nonInteraction: true,
+          });
+        } else {
+          this.$report({ target: this.$refs.closer });
+        }
+      });
+    },
+
     get modalClass() {
       return { "is-active": this.isOpen };
     },
 
     trigger() {
-      if (showModalNewsletter()) {
-        window.setTimeout(() => {
-          this.show();
-        }, delay);
-      }
-    },
-
-    show() {
       if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
         // eslint-disable-next-line no-console
         console.warn("aborting modal display");
         return;
       }
-      this.$dispatch("close-sticky");
-      this.isOpen = true;
-      sawModalNewsletter();
-      buildAndSend(this.$el, {
-        eventAction: "modal:newsletter:open",
-        nonInteraction: true,
-      });
-
-      document.body.parentElement.classList.add("is-clipped");
-
-      this.$nextTick(() => {
-        focus(this.$refs.content);
-      });
-    },
-
-    close(sendEvent = true) {
-      this.isOpen = false;
-      document.body.parentElement.classList.remove("is-clipped");
-
-      if (sendEvent) {
-        buildAndSend(this.$el, {
-          eventAction: "modal:newsletter:dismiss",
-        });
+      if (showModalNewsletter()) {
+        window.setTimeout(() => {
+          this.isOpen = true;
+        }, delay);
       }
-      this.$nextTick(() => {
-        blur(this.$refs.content);
-      });
     },
   };
 }
