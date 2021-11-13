@@ -67,4 +67,8 @@ import intersect from "@alpinejs/intersect";
 
 Alpine.plugin(intersect);
 
+import trap from "@alpinejs/trap";
+
+Alpine.plugin(trap);
+
 Alpine.start();

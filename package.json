@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@alpinejs/intersect": "^3.5.1",
+    "@alpinejs/trap": "^3.5.1",
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
