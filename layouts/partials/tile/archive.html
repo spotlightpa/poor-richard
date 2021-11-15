@@ -1,7 +1,6 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 <article class="tile is-vertical is-bottom">
-  {{ if .Page.Param "image" }}
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child is-hidden-tablet-only">
@@ -11,7 +10,6 @@
       </div>
     </div>
   </div>
-  {{ end }}
   <div class="tile is-bottom">
     <div class="tile is-parent is-4 is-top-tablet is-hidden-tablet-only">
       <div class="tile is-child">
