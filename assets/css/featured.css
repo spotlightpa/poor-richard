@@ -50,8 +50,24 @@ html {
   @apply mt-8;
 }
 
+.content-area > h2 {
+  @apply mt-8 mb-2 font-sans text-4xl font-semibold leading-tight;
+}
+
 .content-area > h3 {
-  @apply font-sans italic text-3xl mt-4 mb-8 leading-8;
+  @apply mt-4 mb-8 font-sans text-3xl italic leading-8;
+}
+
+.content-area > h4 {
+  @apply mt-8 mb-4 font-sans text-lg font-semibold leading-tight;
+}
+
+.content-area > h5 {
+  @apply mt-6 mb-2 text-base font-semibold leading-tight;
+}
+
+.content-area > h6 {
+  @apply mt-4 mb-1 text-base italic leading-tight;
 }
 
 .content-area > ul {
