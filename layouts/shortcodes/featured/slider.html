@@ -12,7 +12,7 @@
   <div
     class="
       flex flex-row flex-nowrap
-      custom-scrollbar overflow-x-scroll snap-x
+      custom-scrollbar overflow-x-scroll snap-x select-none
     "
   >{{ .Inner }}</div>
   <div
@@ -23,7 +23,7 @@
     "
     :class="{'opacity-0': isFirst }"
   >
-    <svg class="self-center filter drop-shadow w-16 h-16 fill-current opacity-75">
+    <svg class="self-center filter drop-shadow w-12 h-12 lg:w-16 lg:h-16 fill-current opacity-75">
       <use xlink:href="#left-svg"></use>
     </svg>
   </div>
@@ -34,7 +34,7 @@
     "
     :class="{'opacity-0': isLast }"
   >
-    <svg class="self-center filter drop-shadow w-16 h-16 fill-current opacity-75">
+    <svg class="self-center filter drop-shadow w-12 h-12 lg:w-16 lg:h-16 fill-current opacity-75">
       <use xlink:href="#right-svg"></use>
     </svg>
   </div>

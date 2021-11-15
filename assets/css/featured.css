@@ -149,7 +149,6 @@ html {
 
 .custom-scrollbar {
   scrollbar-color: transparent transparent;
-  scroll-behavior: smooth;
 }
 
 .custom-scrollbar:hover {
