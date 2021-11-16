@@ -38,18 +38,20 @@
       <use xlink:href="#close-svg"></use>
     </svg>
   </button>
-  <a
-    class="block my-2 mx-4 p-4 focus:outline-none focus:ring-2 ring-yellow"
-    @click.capture="close()"
-    @click.outside="close()"
-    href="/donate/"
-  ><img
-    class="shadow-beige rounded"
-    x-data="imageRotator(JSON.parse($el.dataset.images))"
-    data-images="{{ $images | jsonify }}"
-    :src="choice"
-    alt="{{ $alt }}"
-    title="{{ $alt }}"
-    style="max-height: 40vh;"
-  ></a>
+  <div class="my-2 mx-4 p-4 flex">
+    <a
+      class="flex focus:outline-none focus:ring-2 ring-yellow"
+      @click.capture="close()"
+      @click.outside="close()"
+      href="/donate/"
+    ><img
+      class="shadow-beige rounded"
+      x-data="imageRotator(JSON.parse($el.dataset.images))"
+      data-images="{{ $images | jsonify }}"
+      :src="choice"
+      alt="{{ $alt }}"
+      title="{{ $alt }}"
+      style="max-height: 40vh;"
+    ></a>
+  </div>
 </section>
