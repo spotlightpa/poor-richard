@@ -38,6 +38,7 @@
       class="
         block relative w-full h-0 shadow overflow-hidden bg-g-4
         {{ $rounded }}
+        {{ if .caption }}cursor-pointer{{ end }}
       "
       style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
     >
@@ -75,16 +76,17 @@
         {{ end }}
       >
     </picture>
-    {{ if .caption }}
+    {{ with .caption }}
       <figcaption
         class="
-          absolute p-4 bottom-0 inset-x-0 rounded-b overflow-hidden
+          absolute p-4 bottom-0 inset-x-0 {{ if $rounded }}rounded-b overflow-hidden{{ end }}
           backdrop-filter backdrop-blur-sm backdrop-brightness-50
           font-sans text-base text-g-1
         "
-        x-cloak
+        {{if not $showCaption }}x-cloak{{ end }}
         x-show="showCaption"
-      >{{ .caption }}</figcaption>
+        @click="showCaption = false"
+      >{{ . }}</figcaption>
     {{ end }}
   {{- if .link -}}
     </a>
