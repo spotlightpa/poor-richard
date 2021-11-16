@@ -1,0 +1,27 @@
+<!-- God forgive me -->
+</div>
+
+<div class="box" data-ga-category="inline:picture">
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
+{{ $widthRatio := .Get "width-ratio" | default 3 | int }}
+{{ $heightRatio := .Get "height-ratio" | default 2 | int }}
+
+{{ $imgOpts := dict
+  "filename" $src
+  "credit" $credit
+  "description" $description
+  "widthRatio" $widthRatio
+  "heightRatio" $heightRatio
+  "sizeHint" "50vw"
+}}
+{{ partial "component/image-block.html" $imgOpts }}
+
+{{ with $caption }}
+  <p class="is-size-6 is-italic mt-5">{{ . }}</p>
+{{ end }}
+</div>
+
+<div class="content">
