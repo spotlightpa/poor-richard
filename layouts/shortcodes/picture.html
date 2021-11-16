@@ -1,8 +1,7 @@
-<!-- God forgive me -->
-{{ "</div>" | safeHTML }}
-
-
-<div class="box" data-ga-category="inline:picture">
+<div
+  class="my-8"
+  data-ga-category="inline:picture"
+>
   {{ $src := .Get "src" | htmlUnescape }}
   {{ $credit := .Get "credit" | htmlUnescape }}
   {{ $description := .Get "description" | htmlUnescape }}
@@ -14,15 +13,13 @@
     "filename" $src
     "credit" $credit
     "description" $description
+    "caption" $caption
+    "showCaption" true
     "widthRatio" $widthRatio
     "heightRatio" $heightRatio
-    "sizeHint" "50vw"
+    "widths" (slice 320 670 1340)
+    "sizeHint" "670px"
+    "rounded" true
   }}
-  {{ partial "component/image-block.html" $imgOpts }}
-
-  {{ with $caption }}
-    <p class="is-size-6 is-italic mt-5">{{ . }}</p>
-  {{ end }}
+  {{ partial "tw/image-block.html" $imgOpts }}
 </div>
-
-{{ `<div class="content">` | safeHTML }}

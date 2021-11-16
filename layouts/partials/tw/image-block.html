@@ -15,11 +15,12 @@
 {{ $padding := slice $widthR $heightR | partial "helper/aspect-ratio" }}
 {{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+{{ $showCaption := .showCaption | default false }}
 
 <figure
   class="{{ .figClass }}"
   data-ga-category="thumb"
-  x-data="{ showCaption: false }"
+  x-data="{ showCaption: {{ $showCaption }} }"
   x-effect="showCaption && $report({ target: $el })"
   data-ga-action="image:toggle-caption"
 >
@@ -77,7 +78,7 @@
     {{ if .caption }}
       <figcaption
         class="
-          absolute p-4 bottom-0 inset-x-0 rounded overflow-hidden
+          absolute p-4 bottom-0 inset-x-0 rounded-b overflow-hidden
           backdrop-filter backdrop-blur-sm backdrop-brightness-50
           font-sans text-base text-g-1
         "

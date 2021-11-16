@@ -20,4 +20,4 @@ We encourage you to share your pledge on social media.
 
 {{<donate-buttons>}}
 
-{{<picture src="2019/11/newsroom-conf.jpeg" description="Spotlight PA reporters attend a newsroom conference" credit="Vicki Vellios Briner / Special to PennLive">}}
+{{<donate-thanks src="2019/11/newsroom-conf.jpeg" description="Spotlight PA reporters attend a newsroom conference" credit="Vicki Vellios Briner / Special to PennLive">}}
