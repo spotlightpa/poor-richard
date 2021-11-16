@@ -19,11 +19,6 @@
     "widths" (slice 300 480 686 1029 1372)
     "rounded" true
     "figClass" "mt-6" | merge $imgOpts }}
-{{ else if eq $size "full" }}
-  {{ $imgOpts = dict
-    "widthRatio" 16
-    "heightRatio" 9
-    "figClass" "full-bleed" | merge $imgOpts }}
 {{ end }}
 {{ if ne $size "hidden" | and $imagename }}
   {{ $imgOpts | partial "tw/image-block.html" }}
