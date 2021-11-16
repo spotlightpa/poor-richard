@@ -43,7 +43,7 @@
           </p>
           <p class="absolute inset-y-0 right-0 p-4 flex items-center">
             <button
-              class="p-1 rounded-full flex items-center bg-g-5 text-black focus:outline-none focus:shadow-beige"
+              class="flex rounded-full text-g-5 group hover:text-yellow"
               type="button"
               aria-label="close"
               x-ref="closer"
@@ -52,7 +52,10 @@
               @click="isOpen = false;"
               autofocus
             >
-              <svg class="my-auto fill-current h-3 w-3">
+              <svg
+                class="my-auto p-1 fill-current w-6 h-6"
+                style="margin-right: -2px;"
+              >
                 <use xlink:href="#close-svg"></use>
               </svg>
             </button>
