@@ -82,59 +82,10 @@
     </main>
 
     <footer
-      class="font-sans bg-black text-white uppercase"
       data-ga-category="footer"
+      data-sf-campaign="701f4000000TVuIAAW"
     >
-      <nav class="flex flex-col space-y-6 md:flex-row md:space-y-0 p-12 max-w-screen-xl">
-        <div
-          class="-mt-4 flex-grow md:order-last"
-        >
-          <a
-            href="/"
-            class="hover:text-yellow"
-            data-ga-category="logo"
-          >
-            <svg
-              class="fill-current max-w-xs"
-              role="img"
-              aria-label="Spotlight PA banner"
-              viewBox="0 0 1024 190"
-            >
-              <use xlink:href="#banner-svg"></use>
-            </svg>
-          </a>
-          <p class="mt-2">
-            &copy; {{ now.Format "2006" }} <br>
-            Spotlight PA <br>
-            225 Market St <br>
-            Suite 502A <br>
-            Harrisburg PA 17101
-          </p>
-        </div>
-        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
-        {{ block "featured-footer" $context }}
-          <div
-            class="flex-1"
-            data-ga-category="{{ .category }}"
-          >
-            <h3 class="font-bold">{{ .name }}</h3>
-            <ul class="mt-2">
-              {{ range .menu }}
-                <li>
-                  <a
-                    class="text-blue hover:text-yellow transition-colors duration-500"
-                    href="{{ .URL }}"
-                  >{{ .Name }}</a>
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
-        {{ template "featured-footer" $context }}
-        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
-        {{ template "featured-footer" $context }}
-      </nav>
+      {{ partial "tw/footer.html" . }}
     </footer>
     {{ $svgs := dict
       "banner-svg" "/img/logos/banner-default-on-trans.svg"
