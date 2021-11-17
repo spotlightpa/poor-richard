@@ -1,10 +1,11 @@
 {{ $idSearch := partial "helper/new-id" . }}
 <section
   x-data="searchModal"
-  @modal:search:open.window="open()"
+  @modal:search:open.window="isOpen = true"
   class="modal"
   :class="modalClass"
   x-show="isOpen"
+  x-trap.noscroll.inert="isOpen"
   x-transition:enter="fade-enter-active"
   x-transition:enter-start="fade-enter"
   x-transition:leave="fade-enter-active is-active"
@@ -17,8 +18,8 @@
   <div class="modal-background"></div>
   <div
     class="modal-content"
-    @click.outside="close(true)"
-    @keydown.escape="close(true)"
+    @click.outside="isOpen = false"
+    @keydown.escape="isOpen = false"
     tabindex="-1"
   >
     <header class="modal-card-head">
@@ -30,8 +31,10 @@
       <button
         class="delete"
         type="button"
+        x-ref="closer"
         aria-label="close"
-        @click="close(true)"
+        @click="isOpen = false"
+        data-ga-action="modal:search:dismiss"
       ></button>
     </header>
     <div class="modal-card-body" style="overflow-x: hidden; height: 70vh;">
@@ -41,6 +44,6 @@
   <button
     class="modal-close is-large"
     aria-label="close"
-    @click="close(true)"
+    @click="isOpen = false"
   ></button>
 </section>
