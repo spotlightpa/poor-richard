@@ -1,4 +1,5 @@
 {{ $side := .Get "side" | default "left" }}
+{{ $mobileReveal := .Get "mobile-reveal" | default "false" | eq "true" }}
 {{ $sideClass := cond (eq $side "right") "float-right lg:-mr-40 sm:pl-10" "float-left lg:-ml-32 sm:pr-8" }}
 <aside
   class="
@@ -9,7 +10,7 @@
     lg:shape-outside
   "
   data-ga-category="inline:info"
-  x-data="{ isOpen: false }"
+  x-data="{ isOpen: {{ $mobileReveal }} }"
   :class="{'h-40': !isOpen}"
 >
   <div
@@ -17,7 +18,7 @@
     x-show="!isOpen"
   >
     <button
-      :aria-expanded="''+isOpen"
+      :aria-expanded="isOpen"
       class="text-darkblue hover:text-yellow hover:underline leading-4 mb-4"
       @click="isOpen = true"
       data-ga-button
