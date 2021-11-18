@@ -41,7 +41,7 @@ David Rudovsky, a longtime use-of-force expert and senior fellow at the Universi
 
 The Monroe County DA declined to refer the case to Democrat Josh Shapiro’s office, stating no such conflict existed.
 
-“Our resources are not only more than adequate, but if you would compare the relative experience of Mr. Christine or myself to the attorney general himself, you’ll find a guy who has never tried a case before, never been in prosecution before,” Mancuso said of Shapiro. “He has maybe a fraction of the experience we have.”
+“Our resources are not only more than adequate, but if you would compare the relative experience of Mr. Christine or myself to the attorney general himself, you’ll find a guy who has never tried a case before, never been in prosecution before,” Michael Mancuso, an assistant district attorney, said of Shapiro. “He has maybe a fraction of the experience we have.”
 
 Jacklin Rhoads, communications director for Shapiro, said the office is well-equipped to handle such investigations and has had 39% more criminal cases referred to it under Shapiro than under the previous administration. That includes 10 from the Monroe County district attorney, according to Shapiro’s office.
 
