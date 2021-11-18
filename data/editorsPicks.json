@@ -3,15 +3,14 @@
   "sidebarPicks": [
     "content/news/2021-10-12-SPLBILLS12.md"
   ],
-  "subfeatures": [
-    "content/news/2021-11-18-SPLCHECKS.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
     "content/news/2021-11-11-SPLGIFT06.md",
     "content/news/2021-11-10-SPLDUMAS.md",
     "content/news/2021-11-02-SPLMEDMARIJUANAEVENT.md"
   ],
   "topper": [
-    "content/news/2021-11-18-SPLHALL19.md"
+    "content/news/2021-11-18-SPLHALL19.md",
+    "content/news/2021-11-18-SPLCHECKS.md"
   ]
 }
