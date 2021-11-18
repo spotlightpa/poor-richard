@@ -1,47 +1,71 @@
 {{ $idSearch := partial "helper/new-id" . }}
 <section
   x-data="searchModal"
+  @modal:search:open.window="isOpen = true"
+  class="fixed z-20 inset-0"
   x-cloak
-  @modal:search:open.window="open()"
-  class="modal"
-  :class="modalClass"
   x-show="isOpen"
-  x-transition:enter="fade-enter-active"
-  x-transition:enter-start="fade-enter"
-  x-transition:leave="fade-enter-active is-active"
-  x-transition:leave-end="fade-enter"
+  x-trap.noscroll.inert="isOpen"
+  x-transition:enter="transition-opacity duration-500 ease-out"
+  x-transition:enter-start="opacity-0"
+  x-transition:leave="transition-opacity duration-300 ease-in"
+  x-transition:leave-end="opacity-0"
   data-ga-category="modal"
   role="dialog"
   aria-modal="true"
   aria-labelledby='{{ $idSearch }}'
 >
-  <div class="modal-background"></div>
-  <div
-    class="modal-content"
-    @click.outside="close(true)"
-    @keydown.escape="close(true)"
-    tabindex="-1"
-  >
-    <header class="modal-card-head">
-      <div class="modal-card-title has-text-weight-bold has-text-centered has-text-white">
-        <span id='{{ $idSearch }}'>
-          Search
-        </span>
+  <div class="absolute inset-0 bg-g-5 opacity-75"></div>
+  <div class="absolute inset-0 backdrop-filter backdrop-blur-sm"></div>
+  <div class="absolute inset-1 flex overflow-y-auto">
+    <div
+      class="
+        m-auto
+        w-full max-w-prose h-3/4
+        overflow-hidden rounded-lg shadow-lg
+        flex flex-col
+        text-g-9 font-sans text-center
+      "
+      @click.outside="isOpen = false"
+      @keydown.escape="isOpen = false"
+      tabindex="-1"
+    >
+      <header class="flex-none relative flex bg-black text-white">
+        <p class="mx-auto py-2 px-4 text-lg leading-none font-semibold tracking-wider uppercase">
+          <span id='{{ $idSearch }}'>
+            Search
+          </span>
+        </p>
+        <p class="absolute inset-y-0 right-0 p-4 flex items-center">
+          <button
+            class="flex rounded-full text-g-5 group hover:text-yellow"
+            type="button"
+            aria-label="close"
+            x-ref="closer"
+            data-ga-action="modal:search:dismiss"
+            @keydown.escape="isOpen = false"
+            @click="isOpen = false;"
+            autofocus
+          >
+            <svg
+              class="my-auto p-1 fill-current w-6 h-6"
+              style="margin-right: -2px;"
+            >
+              <use xlink:href="#close-svg"></use>
+            </svg>
+          </button>
+        </p>
+      </header>
+      <div class="flex-1 relative bg-white">
+        <div class="absolute inset-4 overflow-y-scroll">
+         {{ partial "tw/search-articles.html" . }}
+        </div>
       </div>
-      <button
-        class="delete"
-        type="button"
-        aria-label="close"
-        @click="close(true)"
-      ></button>
-    </header>
-    <div class="modal-card-body" style="overflow-x: hidden; height: 70vh;">
-      {{ partial "component/search-articles.html" . }}
     </div>
   </div>
   <button
     class="modal-close is-large"
     aria-label="close"
-    @click="close(true)"
+    @click="isOpen = false"
   ></button>
 </section>

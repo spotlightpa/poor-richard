@@ -7,6 +7,11 @@ function roundUp(n, by) {
   return by * Math.ceil(n / by);
 }
 
+const baseWidth = 256;
+const aspectRatio = 16 / 9;
+let width = roundUp(window.devicePixelRatio * baseWidth, 1);
+let height = Math.round(width / aspectRatio);
+
 function normalize(obj) {
   return {
     title: obj["link-title"] || obj.hed,
@@ -21,6 +26,10 @@ function normalize(obj) {
     },
     get published() {
       return apdate(new Date(this.publishedISO));
+    },
+    get imageURL() {
+      let image = obj["image-url"] || "2019/11/banner-white-on-capitol.jpeg";
+      return imgproxy(image, { width, height });
     },
   };
 }
@@ -97,7 +106,7 @@ export default function searchArticles() {
       }
       let { width = 0, height = 0 } = el;
       let aspectRatio = height / width;
-      width = roundUp(window.devicePixelRatio * width, 100);
+      width = roundUp(window.devicePixelRatio * width, 1);
       height = Math.round(aspectRatio * width);
       el.src = imgproxy(src, { width, height });
     },
