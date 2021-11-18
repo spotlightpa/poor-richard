@@ -26,7 +26,8 @@
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
   {{ end }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-  <link rel="preload" as="font" href="/css/fonts/merriweather-v22/merriweather-v22-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" href="/css/fonts/merriweather-v25/merriweather-v25-latin-700.woff2" crossorigin>
+  <link rel="preload" as="font" href="/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2" crossorigin>
 
   <noscript>
     <style>

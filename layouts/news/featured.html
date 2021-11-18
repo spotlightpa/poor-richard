@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html 
-  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+<html
+  lang='{{ .Param `language-code` | default site.LanguageCode }}'
   class="base-17"
 >
-  <head itemscope itemtype="http://schema.org/WebSite">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head
+  itemscope itemtype="http://schema.org/WebSite"
+>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- with .Param "title-tag" -}}
+    <title>{{ . }}</title>
+  {{- else -}}
+    <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{- end -}}
 
-    {{- with .Param "title-tag" -}}
-      <title>{{ . }}</title>
-    {{- else -}}
-      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-    {{- end -}}
+  {{ partial "header/meta.html" . }}
+  {{ partial "header/google-analytics-async.html" . }}
 
-    {{ partial "header/meta.html" . }}
-    {{ partial "header/google-analytics-async.html" . }}
+  {{ $cssFonts := resources.Get "css/featured-fonts.css" }}
+  {{ $cssTW := resources.Get "css/featured.css" }}
+  {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
+  {{ $css = $css | postCSS }}
+  {{ if ne hugo.Environment "development" }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <link rel="preload" as="font" href="/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2" crossorigin>
 
-    {{ $cssFonts := resources.Get "css/featured-fonts.css" }}
-    {{ $cssTW := resources.Get "css/featured.css" }}
-    {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
-    {{ $css = $css | postCSS }}
-    {{ if ne hugo.Environment "development" }}
-      {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-    {{ end }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
-    <link
-      rel="preload"
-      as="font"
-      href="/css/fonts/merriweather-v22/merriweather-v22-latin-regular.woff2"
-      crossorigin
-    />
+  {{ `<noscript>` | safeHTML }}
 
-    {{ `<noscript>` | safeHTML }}
-
-    <style>
-      .no-js-only {
-        display: block;
-      }
-      .no-js-hide {
-         display: none;
-      }
-    </style>
+  <style>
+    .no-js-only {
+      display: block;
+    }
+    .no-js-hide {
+       display: none;
+    }
+  </style>
 
   {{ `</noscript>` | safeHTML }}
 
@@ -54,129 +50,139 @@
     type="module"
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
-    {{ partial "header/favicons.html" . }}
-    <link
-      rel="alternate"
-      type="application/feed+json"
-      href="{{ absURL `/feeds/full.json` }}"
-      title="Full News Feed"
-    />
+  {{ partial "header/favicons.html" . }}
+  <link
+    rel="alternate"
+    type="application/feed+json"
+    href="{{ absURL `/feeds/full.json` }}"
+    title="Full News Feed"
+  />
 
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="{{ absURL `/feeds/full.xml` }}"
-      title="Full News Feed"
-    />
-  </head>
-  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body
-    data-ga-label="{{ $pageCat }}:featured"
-    data-ga-category="featured"
-    data-sf-campaign="7015G000001IRG8QAO"
-    class="w-screen overflow-x-hidden bg-beige font-serif leading-normal"
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ absURL `/feeds/full.xml` }}"
+    title="Full News Feed"
+  />
+</head>
+{{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+{{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
+<body
+  data-ga-label='{{ $pageCat }}:featured'
+  data-ga-category="featured"
+  data-sf-campaign="7015G000001IRG8QAO"
+  class="w-screen overflow-x-hidden bg-beige font-serif leading-normal"
+>
+  <nav
+    class="bg-black flex sm:absolute sm:bg-transparent z-10"
+    data-ga-category="header"
   >
-    <nav
-      class="bg-black flex sm:absolute sm:bg-transparent z-10"
-      data-ga-category="header"
+    <a
+      class="block sm:w-full mx-auto px-12 py-5"
+      href="/"
     >
-      <a class="block sm:w-full mx-auto px-12 py-5" href="/">
-        <svg
-          class="
+      <svg
+        class="
           filter drop-shadow-outline
           h-8 lg:h-10
           fill-current text-white hover:text-yellow
         "
-          role="img"
-          aria-label="Spotlight PA banner"
-          viewBox="0 0 1024 190"
-        >
-          <use xlink:href="#banner-svg"></use>
-        </svg>
-      </a>
-    </nav>
+        role="img"
+        aria-label="Spotlight PA banner"
+        viewBox="0 0 1024 190"
+      >
+        <use xlink:href="#banner-svg"></use>
+      </svg>
+    </a>
+  </nav>
 
-    <article data-ga-category="main" class="bg-white">
-      {{ .Content }}
-    </article>
+  <article
+    data-ga-category="main"
+    class="bg-white"
+  >
+    {{ .Content }}
+  </article>
 
-    <footer
-      class="p-12 font-sans bg-black text-white uppercase"
-      data-ga-category="footer"
-    >
-      <nav class="max-w-screen-lg flex flex-col gap-6 lg:flex-row">
-        <div class="flex-grow md:order-last">
-          <p>
-            <a
-              href="/"
-              class="
+  <footer
+    class="p-12 font-sans bg-black text-white uppercase"
+    data-ga-category="footer"
+  >
+    <nav class="max-w-screen-lg flex flex-col gap-6 lg:flex-row">
+      <div
+        class="flex-grow md:order-last"
+      >
+        <p>
+          <a
+            href="/"
+            class="
               py-3 px-4 rounded-lg
               bg-orange text-white
               text-base font-sans font-bold tracking-widest leading-none
               hover:shadow-beige transition-shadow duration-500
             "
-              data-ga-category="logo"
+            data-ga-category="logo"
+          >
+            <svg
+              class="inline-block fill-current w-8 h-8"
+              role="img"
+              aria-label="Spotlight PA logo"
             >
-              <svg
-                class="inline-block fill-current w-8 h-8"
-                role="img"
-                aria-label="Spotlight PA logo"
-              >
-                <use xlink:href="#logo-svg"></use>
-              </svg>
-              Support Us
-            </a>
-          </p>
-          <p class="mt-6">
-            &copy; {{ now.Format "2006" }} <br />
-            Spotlight PA <br />
-            225 Market St <br />
-            Suite 502A <br />
-            Harrisburg PA 17101
-          </p>
+              <use xlink:href="#logo-svg"></use>
+            </svg>
+            Support Us
+          </a>
+        </p>
+        <p class="mt-6">
+          &copy; {{ now.Format "2006" }} <br>
+          Spotlight PA <br>
+          225 Market St <br>
+          Suite 502A <br>
+          Harrisburg PA 17101
+        </p>
+      </div>
+      {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
+      {{ block "featured-footer" $context }}
+        <div
+          class="flex-1"
+          data-ga-category="{{ .category }}"
+        >
+          <h3 class="font-bold">{{ .name }}</h3>
+          <ul class="mt-3 space-y-2 leading-tight">
+            {{ range .menu }}
+              <li>
+                <a
+                  class="text-blue hover:text-yellow transition-colors duration-500"
+                  href="{{ .URL }}"
+                >{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
         </div>
-        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
-        {{ block "featured-footer" $context }}
-          <div class="flex-1" data-ga-category="{{ .category }}">
-            <h3 class="font-bold">{{ .name }}</h3>
-            <ul class="mt-3 space-y-2 leading-tight">
-              {{ range .menu }}
-                <li>
-                  <a
-                    class="text-blue hover:text-yellow transition-colors duration-500"
-                    href="{{ .URL }}"
-                    >{{ .Name }}</a
-                  >
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
-        {{ template "featured-footer" $context }}
-        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
-        {{ template "featured-footer" $context }}
-      </nav>
-    </footer>
-    {{ $svgs := dict
-      "banner-svg" "/img/logos/banner-default-on-trans.svg"
-      "close-svg" "@fontawesome/solid/times.svg"
-      "email-svg" "@fontawesome/regular/envelope.svg"
-      "fb-svg" "@fontawesome/brands/facebook-f.svg"
-      "left-svg" "@fontawesome/solid/arrow-circle-left.svg"
-      "logo-svg" "/img/logos/circle-default-on-trans.svg"
-      "plus-svg" "@fontawesome/solid/plus-circle.svg"
-      "right-svg" "@fontawesome/solid/arrow-circle-right.svg"
-      "share-svg" "@fontawesome/solid/share.svg"
-      "twitter-svg" "@fontawesome/brands/twitter.svg"
-    }}
-    <div hidden>
-      {{ range $id, $rsc := $svgs }}
-        {{ $svg := resources.Get $rsc }}
-        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
       {{ end }}
-    </div>
-    {{ partial "header/ld-json.html" . }}
-  </body>
+      {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
+      {{ template "featured-footer" $context }}
+      {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
+      {{ template "featured-footer" $context }}
+    </nav>
+  </footer>
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "close-svg" "@fontawesome/solid/times.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "left-svg" "@fontawesome/solid/arrow-circle-left.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "plus-svg" "@fontawesome/solid/plus-circle.svg"
+    "right-svg" "@fontawesome/solid/arrow-circle-right.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  <div hidden>
+    {{ range $id, $rsc := $svgs }}
+      {{ $svg := resources.Get $rsc }}
+      <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+    {{ end }}
+  </div>
+  {{ partial "header/ld-json.html" . }}
+</body>
 </html>
