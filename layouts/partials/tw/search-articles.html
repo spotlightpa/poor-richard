@@ -1,0 +1,64 @@
+{{ $idInput := partial "helper/new-id" . }}
+<form
+  x-data="searchArticles"
+  @submit.prevent="document.activeElement.blur()"
+  data-ga-category="search"
+  class="p-1 text-left"
+>
+  <div class="flex">
+    <div class="flex-grow">
+      <label class="sr-only" for='{{ $idInput }}'>Search</label>
+      <input
+        class="
+          block
+          pl-4 py-2 appearance-none
+          w-full rounded-lg rounded-r-none border-2 border-g-5
+          bg-white text-g-8 placeholder-g-5 placeholder-opacity-100
+          tracking-wider
+          focus:outline-none focus:border-blue
+        "
+        @input="isLoading = true"
+        x-model.debounce.500ms="query"
+        placeholder="Search Spotlight PA news…"
+        autofocus
+      >
+    </div>
+    <div class="mt-0 z-10">
+      <button class="
+        px-4 py-2
+        h-full rounded-r-lg border-2 border-goldenrod
+        bg-yellow text-g-1
+        font-bold tracking-widest uppercase
+        focus:outline-none focus:border-yellow-darker
+      ">
+        <svg
+          class="fill-current w-4 h-4"
+          :class="{ 'animate-bounce': isLoading }"
+        >
+          <use xlink:href="#search-svg"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mt-1">
+    <p
+      class="text-g-6 font-light"
+      x-show="resultsText"
+      x-text="resultsText"
+    ></p>
+    <template x-if="error">
+      <div class="text-orange font-light" x-template>
+        Could not load results. ${error.message}
+      </div>
+    </template>
+  </div>
+
+  <div
+    class="flex flex-col space-y-8 sm:space-y-6"
+    x-data="{ showDate: true }"
+  >
+    <template x-for="story in stories" :key="story.url">
+      {{ partial "tw/story-js.html" . }}
+    </template>
+  </div>
+</form>
