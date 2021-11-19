@@ -2,7 +2,7 @@
 arc-id = "BQSAUG3FA5HMTH5A2FPC32T5KY"
 authors = ["Danielle Ohl", "Andrew Seidman"]
 blurb = "Taxpayers will pony up $270,000 to Envoy Sage, which says it has exposed “fraud among non-governmental organizations.” Little else is known about the group."
-byline = "Danielle Ohl of Spotlight PA and Andrew Seidman"
+byline = "Danielle Ohl of Spotlight PA and Andrew Seidman of The Philadelphia Inquirer"
 description = "Taxpayers will pony up $270,000 to Envoy Sage, which says it has exposed “fraud among non-governmental organizations.” Little else is known about the group."
 image = "external/b268j7j7zmzgtecq25pqapgvfc.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
