@@ -48,13 +48,6 @@
           href="/donate/"
         >spotlightpa.org/donate</a>.
       </p>
-      <p class="mt-3">
-        &copy; {{ now.Format "2006" }} <br>
-        Spotlight PA <br>
-        225 Market St <br>
-        Suite 502A <br>
-        Harrisburg PA 17101
-      </p>
     </div>
     {{ $context := dict
       "category" "spotlightpa"
@@ -93,4 +86,16 @@
     }}
     {{ template "tw-footer" $context }}
   </div>
+  <p class="mt-12 text-center normal-case">
+    <a
+      class="text-blue hover:text-yellow transition-colors duration-500"
+      href="https://www.netlify.com/"
+    >This site is powered by Netlify</a>
+  </p>
+  <p class="mt-6 text-center">
+    &copy; {{ now.Format "2006" }} <br>
+    Spotlight PA <br>
+    225 Market St Suite 502A <br>
+    Harrisburg PA 17101 <br>
+  </p>
 </nav>
