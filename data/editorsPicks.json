@@ -1,16 +1,17 @@
 {
-  "featuredStories": [],
+  "featuredStories": [
+    "content/news/2021-11-18-SPLCHECKS.md"
+  ],
   "sidebarPicks": [
     "content/news/2021-10-12-SPLBILLS12.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
-    "content/news/2021-11-18-SPLQUIT.md",
-    "content/news/2021-11-11-SPLGIFT06.md",
-    "content/news/2021-11-02-SPLMEDMARIJUANAEVENT.md"
+  "subfeatures": [
+    "content/news/2021-11-18-SPLHALL19.md"
   ],
-  "topper": [
-    "content/news/2021-11-18-SPLHALL19.md",
-    "content/news/2021-11-18-SPLCHECKS.md"
-  ]
+  "topSlots": [
+    "content/news/2021-11-19-SPLREVIEW.md",
+    "content/news/2021-11-18-SPLQUIT.md",
+    "content/news/2021-11-11-SPLGIFT06.md"
+  ],
+  "topper": []
 }
