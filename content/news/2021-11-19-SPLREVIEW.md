@@ -22,7 +22,7 @@ topics = ["Elections"]
 
 HARRISBURG — More than a year after Joe Biden won the presidency, Pennsylvania Republican lawmakers in the state Senate on Friday announced they had signed a contract with Iowa-based Envoy Sage to lead their investigation of the 2020 election.
 
-The review will cost taxpayers $270,000 for a period of six months, but the contract can be extended, spokesperson Jason Thompson said. Work can begin as soon as Senate Chief Clerk Donetta D’Innocenzo signs, a formality that will happen shortly, Thompson said.
+The review will cost taxpayers $270,000 for a period of six months, but the contract can be extended, spokesperson Jason Thompson said.
 
 Republicans are moving forward with the review despite an active court fight over its legality. State Attorney General Josh Shapiro, a Democrat, and Senate Democrats have filed lawsuits seeking to block a GOP subpoena that demanded Gov. Tom Wolf’s administration turn over millions of voters’ data, including nonpublic information such as the last four digits of their Social Security number and driver’s license number.
 
