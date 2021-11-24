@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-11-22-SPLFAQ.md"
+    "content/news/2021-11-24-SPLCHILD26.md"
   ],
   "sidebarPicks": [
     "content/news/2021-10-12-SPLBILLS12.md"
   ],
   "subfeatures": [
-    "content/news/2021-11-18-SPLHALL19.md",
-    "content/news/2021-11-18-SPLCHECKS.md"
+    "content/news/2020-10-06-SPLCHILDCAREXX.md"
   ],
   "topSlots": [
     "content/news/2021-11-19-SPLREVIEW.md",
     "content/news/2021-11-18-SPLQUIT.md",
-    "content/news/2021-11-11-SPLGIFT06.md"
+    "content/news/2021-11-18-SPLHALL19.md"
   ],
   "topper": []
 }
