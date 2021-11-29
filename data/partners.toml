@@ -183,6 +183,12 @@ name = "PublicSource"
 url = "https://www.publicsource.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gk/1nrj/publicsource.png"
 
+
+[[partners]]
+name = "Q'Hubo News"
+url = "http://www.qhubonews.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gt/9zmr/qhubo-news.png"
+
 [[partners]]
 name = "The Record Herald"
 url = "https://www.therecordherald.com"
