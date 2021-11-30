@@ -92,7 +92,7 @@ Undocumented immigrant workers are subject to a third tier of harm, Herzenberg s
 
 Since November 2019, the state’s leisure and hospitality industry experienced the sharpest cuts, losing 172,200 jobs, more than 30 percent of the jobs lost, followed by education and health services. Finance and construction jobs experienced the smallest percent loss, at 2.5 percent of job loss or less.
 
-Black workers in Pennsylvania were more than twice as likely to face joblessness than white workers as a result of the pandemic, and rates were nearly as high for Hispanic workers, according to an <a href="https://aese.psu.edu/research/centers/cecd/publications/coronavirus-analysis/psu-cecd-unemployment-claims-race-sex-age-pa-202010.pdf">analysis by Pennsylvania State University researchers</a>.
+Black workers in Pennsylvania were more than twice as likely to face joblessness than white workers as a result of the pandemic, and rates were nearly as high for Hispanic workers, according to an <a href="https://web.archive.org/web/20211126031321/https://aese.psu.edu/research/centers/cecd/publications/coronavirus-analysis/psu-cecd-unemployment-claims-race-sex-age-pa-202010.pdf">analysis by Pennsylvania State University researchers</a>.
 
 Those without a college or high school degree, and people with disabilities, also experienced much higher rates of unemployment, according to state data released in December.
 
