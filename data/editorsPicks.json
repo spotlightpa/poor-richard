@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-11-26-SPLNUMBERS.md"
+    "content/news/2021-11-30-SPLLATINO01.md"
   ],
   "sidebarPicks": [
     "content/news/2021-10-12-SPLBILLS12.md"
   ],
   "subfeatures": [
-    "content/news/2021-11-24-SPLCHILD26.md",
-    "content/news/2020-10-06-SPLCHILDCAREXX.md"
+    "content/news/2021-10-28-SPLCLOSED28.md",
+    "content/news/2021-09-21-SPLPRISON22.md"
   ],
   "topSlots": [
+    "content/news/2021-11-24-SPLCHILD26.md",
     "content/news/2021-11-19-SPLREVIEW.md",
-    "content/news/2021-11-18-SPLQUIT.md",
     "content/news/2021-11-18-SPLHALL19.md"
   ],
   "topper": []
