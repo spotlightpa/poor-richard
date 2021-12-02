@@ -48,6 +48,7 @@
           style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
         >
           <img
+            class="aspect-ratio-inner"
             x-data="imageRotator(JSON.parse($el.dataset.images))"
             data-images="{{ $imgDesktop | jsonify }}"
             :src="choice"
@@ -55,6 +56,8 @@
             alt="{{ $alt }}"
             title="{{ $alt }}"
             loading="lazy"
+            width="{{ $widthDesktop }}"
+            height="{{ $heightDesktop }}"
           >
         </span>
       </span>
@@ -89,6 +92,8 @@
             alt="{{ $alt }}"
             title="{{ $alt }}"
             loading="lazy"
+            width="{{ $widthMobile }}"
+            height="{{ $heightMobile }}"
           >
         </span>
       </span>
