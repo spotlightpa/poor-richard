@@ -29,7 +29,7 @@
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": true,
+  "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01gq/qzdc/18.svg",
