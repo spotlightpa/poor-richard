@@ -1,6 +1,6 @@
 {
   "banner": "\u003cstrong\u003eSupport Spotlight PA's vital journalism now and your gift will be DOUBLED  »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ea5b3a",
   "banner-link": "/donate",
   "banner-text-color": "#ffffff",
@@ -121,19 +121,19 @@
   "support-cta": "Match my gift today »",
   "support-hed": "…we have a small favor to ask",
   "support-text": "We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. \u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nWe are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you \u003cstrong\u003epay it forward and make a contribution to Spotlight PA now? For a limited time only, all gifts will be DOUBLED!\u003c/strong\u003e",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01gn/eqk3/special-report-11-.svg"
+    "https://files.data.spotlightpa.org/uploads/01gt/gmsb/special-report-12-.svg"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#ffcb05",
+  "topper-divider-color": "#ea5b3a",
   "topper-image-description": "For a limited time, support Spotlight PA's vital investigative journalism and we'll DOUBLE it. Click to give now.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01gn/eqk4/progress-bar-5-.svg"
+    "https://files.data.spotlightpa.org/uploads/01gt/gn1x/progress-bar-6-.svg"
   ],
   "topper-mobile-width": 1024
 }
