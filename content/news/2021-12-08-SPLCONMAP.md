@@ -23,7 +23,7 @@ HARRISBURG — The long-awaited redistricting process in Pennsylvania kicked int
 
 The map was chosen from 19 citizen submissions and was drawn by former Lehigh County Republican Commissioner Amanda Holt. Holt became a <a href="https://www.spotlightpa.org/news/2021/05/pa-house-senate-political-maps-gerrymandered-math-tests-republican-majorities/">well-known redistricting activist a decade ago</a> and was a plaintiff in a successful case against previous state House and Senate maps.
 
-Because of sluggish population growth, Pennsylvania’s <a href="https://www.spotlightpa.org/news/2021/04/pa-us-house-seat-congressional-census-announcement-redistricting/">next congressional map will have 17 districts</a>, as opposed to the 18 that are evenly represented by Democrats and Republicans. 
+Because of sluggish population growth, Pennsylvania’s <a href="https://www.spotlightpa.org/news/2021/04/pa-us-house-seat-congressional-census-announcement-redistricting/">next congressional map will have 17 districts</a>, as opposed to the 18 that are evenly represented by Democrats and Republicans.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -43,7 +43,7 @@ Grove hailed the selection of Holt’s map as a response to public pressure to r
 
 Grove said his panel will hold <a href="https://www.pahousegop.com/News/22950/Latest-News/Grove-Announces-Citizen-Map-Selected-as-Preliminary-Congressional-Plan,-Invites-Public-Comment-">an informational hearing Thursday</a> and is expected to vote Monday. A map must be approved by both the GOP-controlled House and Senate before it goes to Democratic Gov. Tom Wolf for consideration, and the Senate is planning to release its own proposal. That means this first map is unlikely to reflect what will be the final outcome.
 
-Redistricting reform advocates said they are grateful that the map has finally been released but are frustrated at how long it took and at the lack of communication throughout the process. Fair Districts PA and the good-government organization Committee of Seventy — which runs the Draw the Lines competition — released their own maps more than two months ago.
+Redistricting reform advocates said they are grateful that the map has finally been released but are frustrated at how long it took and at the lack of communication throughout the process. Fair Districts PA and the good-government organization Committee of Seventy — which runs the Draw the Lines competition — released their own maps more than a month ago.
 
 “[They could] use the hearings that they already held, but put maps in front of people and give them the ability to kick the tires on the maps,” said David Thornburgh, president of the Committee of Seventy. “It’s a wasted opportunity because now time is short.”
 
