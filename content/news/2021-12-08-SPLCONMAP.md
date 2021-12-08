@@ -37,7 +37,7 @@ While the map does not split voting precincts, the way it divides some areas of 
 
 Adam Podowitz-Thomas, senior legal strategist from the Princeton Gerrymandering Project, said the map appeared to be fairly competitive upon first look, with seven districts leaning Republican, 5 leaning Democrat, and 5 that will be competitive.
 
-Grove hailed the selection of Holt’s map as a response to public pressure to remove lawmakers from the redrawing process.
+Rep. Seth Grove (R., York), chair of the House State Government Committee, hailed the selection of Holt’s map as a response to public pressure to remove lawmakers from the redrawing process.
 
 “Over the last several months, advocates and everyday Pennsylvanians told us they didn’t want the process of years’ past,” Grove said in a statement. “The people of Pennsylvania asked for increased public involvement, a map that was drawn by people, not by politicians, and the opportunity to offer comment on a preliminary plan before a final vote was taken.”
 
