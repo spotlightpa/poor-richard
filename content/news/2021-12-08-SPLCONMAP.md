@@ -19,11 +19,11 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-HARRISBURG — A key state House committee has released its preliminary congressional map, a major step forward in the redistricting process.
+HARRISBURG — A key state House committee has released its preliminary congressional map, but it wasn’t drafted by lawmakers, marking a major step forward in the redistricting process.
 
-The map was drawn by Lehigh County resident Amanda Holt, who <a href="https://www.pubintlaw.org/cases-and-projects/pennsylvania-legislative-reapportionment-commissions/">became a plaintiff in a case</a> against the state House and Senate maps a decade ago and won.
+Rep. Seth Grove (R., York) said the House State Government Committee selected a map drawn by Lehigh County resident Amanda Holt. Holt became a well-known redistricting activist a decade ago and was a <a href="https://www.pubintlaw.org/cases-and-projects/pennsylvania-legislative-reapportionment-commissions/">plaintiff in a successful case</a> against previous state House and Senate maps.
 
-Rep. Seth Grove (R., York), chair of the House State Government Committee, said the panel will hold an informational hearing Thursday and a voting meeting on Monday. 
+Grove said his panel will hold an informational hearing Thursday and a voting meeting on Monday.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
