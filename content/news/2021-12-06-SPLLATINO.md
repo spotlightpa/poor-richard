@@ -1,6 +1,6 @@
 +++
 arc-id = "A62AU4TNRRDZNGANVSJFMV4MA4"
-authors = ["Kate Huangpu of Spotlight PA"]
+authors = ["Kate Huangpu"]
 blurb = "Hay más de 3 millones de personas de color viviendo en Pensilvania y estas comunidades han impulsado el crecimiento de la población del estado."
 byline = "Kate Huangpu de Spotlight PA"
 description = "Hay más de 3 millones de personas de color viviendo en Pensilvania y estas comunidades han impulsado el crecimiento de la población del estado."
