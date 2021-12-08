@@ -5,7 +5,10 @@
   "sidebarPicks": [
     "content/news/2021-11-30-SPLLATINO01.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2021-10-28-SPLCLOSED28.md",
+    "content/news/2021-11-30-SPLLATINO01.md"
+  ],
   "topSlots": [
     "content/news/2021-12-08-SPLBERKS11.md",
     "content/news/2021-12-07-SPLOMI.md",
