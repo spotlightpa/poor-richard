@@ -13,7 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-08T14:33:20.929-05:00
 slug = "pennsylvania-redistricting-congressional-map-gop-proposal"
-title = "Proposed Pennsylvania congressional map released by House GOP"
+title = "House GOP chooses citizen map for proposed new Pennsylvania congressional districts"
 topics = ["Redistricting"]
 +++
 
