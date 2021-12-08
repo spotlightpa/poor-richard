@@ -19,9 +19,9 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-HARRISBURG — A key state House committee has released its preliminary congressional map, but it wasn’t drafted by lawmakers, marking a major step forward in the redistricting process.
+HARRISBURG — A key state House committee has released its preliminary congressional map, marking a major step forward in the redistricting process.
 
-Rep. Seth Grove (R., York) said the House State Government Committee selected a map drawn by Lehigh County resident Amanda Holt. Holt became a well-known redistricting activist a decade ago and was a <a href="https://www.pubintlaw.org/cases-and-projects/pennsylvania-legislative-reapportionment-commissions/">plaintiff in a successful case</a> against previous state House and Senate maps.
+Rep. Seth Grove (R., York) said the House State Government Committee selected a map drawn by former Lehigh County Republican Commissioner Amanda Holt from among 19 citizen submissions. Holt became a well-known redistricting activist a decade ago and was a plaintiff in a successful case against previous state House and Senate maps.
 
 Grove said his panel will hold an informational hearing Thursday and a voting meeting on Monday.
 
@@ -29,10 +29,18 @@ Grove said his panel will hold an informational hearing Thursday and a voting me
 
 “Over the last several months, advocates and everyday Pennsylvanians told us they didn’t want the process of years’ past,” Grove said in a statement. “The people of Pennsylvania asked for increased public involvement, a map that was drawn by people, not by politicians, and the opportunity to offer comment on a preliminary plan before a final vote was taken.”
 
+Rep. Scott Conklin, the ranking Democrat on the panel, told Spotlight PA he did not have any input on the map selection.
+
+“I have just seen the map,” he said. “We actually asked if we could have a testifier on a Zoom meeting tomorrow and were denied.”
+
+“I had high hopes and I can’t express my disappointment that it wasn’t done in a bipartisan way,” Conklin added.
+
 See the map below or <a href="http://www.paredistricting.com/pcplan" target="_blank">here</a>.
 
 {{<picture src="external/59y431r338cchwb1bxytrvrm34.jpeg" description="The Pennsylvania House State Government Committee&#39;s preliminary congressional map, released Dec. 8." caption="The Pennsylvania House State Government Committee&#39;s preliminary congressional map, released Dec. 8." credit="Pennsylvania House State Government Committee">}} 
 
 <i>This story will be updated.</i>
+
+<i>Spotlight PA’s Danielle Ohl contributed reporting.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
