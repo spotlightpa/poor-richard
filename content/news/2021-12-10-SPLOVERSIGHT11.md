@@ -22,7 +22,7 @@ topics = ["Criminal Justice"]
 
 HARRISBURG — Pennsylvania State Police troopers who kill or injure someone should not be investigated by their own agency, and an independent prosecutor should review the case, according to a recommendation approved Friday by a state oversight panel.
 
-The proposed reform comes amid increased scrutiny of the nearly unchecked power of local district attorneys in Pennsylvania to decide whether or not to bring charges against police officers, despite the fact that those prosecutors work closely with the police they oversee.
+The proposed reform comes after a joint investigation by Spotlight PA and NBC News highlighting the nearly unchecked power of local district attorneys in Pennsylvania to decide whether or not to bring charges against police, despite the fact that those prosecutors work closely with the officers they oversee.
 
 The State Law Enforcement Citizen Advisory Commission, which was created by Gov. Tom Wolf after the murder of George Floyd, made the recommendation based upon its review of a 2016 incident in Beaver County in which <a href="https://www.spotlightpa.org/news/2021/12/pennsylvania-state-police-shootings-review-investigation/">troopers consulted with the county district attorney before shooting a suspect involved in an hours-long standoff.</a>
 
