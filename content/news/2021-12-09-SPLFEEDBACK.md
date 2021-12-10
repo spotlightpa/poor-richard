@@ -37,9 +37,9 @@ Here’s how to get involved:
 
 ## Attend or watch a meeting
 
-<b>Thursday, Dec. 9, at 5:30 p.m.: </b>The House State Government Committee will hold an informational meeting with Amanda Holt, the former Lehigh County Republican commissioner whose map Republicans on the panel selected.
+<b>Thursday, Dec. 9, at 5:30 p.m.: </b>The House State Government Committee held an informational meeting with Amanda Holt, the former Lehigh County Republican commissioner whose map Republicans on the panel selected.
 
-<a href="http://www.pacapitol.com/plan-a-visit/capitol-complex.cfm">Room G50, Irvis Office Building in Harrisburg</a> | <a href="http://www.paredistricting.com/LiveStreams">Livestream</a>
+<a href="http://www.paredistricting.com/Video/Redistricting" target="_blank">Archived video</a>
 
 <b>Monday, Dec. 13, at 8 a.m.: </b>The committee is expected to vote on the map. If a majority of members on the panel vote yes, the map then goes to the full House for consideration.
 
