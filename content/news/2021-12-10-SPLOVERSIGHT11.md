@@ -32,7 +32,7 @@ That same prosecutor then later reviewed the case and ruled the shooting was jus
 
 The commission, which has oversight of the State Police and other law enforcement agencies under the governor’s jurisdiction, said the measures are designed to restore the community’s trust in police.
 
-Kelly Hodge, a commissioner and former Philadelphia district attorney, pointed out that the commission found the State Police acted quickly and fairly in its investigation of the case but that “there was an inherent suspicion … or conflict of interest that could arise” based on the circumstances of the case.
+Kelley Hodge, a commissioner and former Philadelphia district attorney, pointed out that the commission found the State Police acted quickly and fairly in its investigation of the case but that “there was an inherent suspicion … or conflict of interest that could arise” based on the circumstances of the case.
 
 Elizabeth Pittinger, a commission member and long-time police oversight advocate, said the incident was disturbing and the actions of the prosecutor “almost approaching arrogant.”
 
@@ -78,6 +78,6 @@ The State Police could agree to change its policies and not investigate incident
 
 Currently, the attorney general can only intervene at the request of a local district attorney.
 
-<i>This story will be updated.</i>
+<i>Correction: This story has been updated to correct the spelling of Kelley Hodge’s first name.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
