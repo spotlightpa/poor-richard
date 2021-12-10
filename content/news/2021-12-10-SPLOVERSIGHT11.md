@@ -13,7 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-10T14:28:29.514-05:00
 slug = "pennsylvania-state-police-use-of-force-investigations-independent"
-title = "Investigations of Pennsylvania State Police troopers who injure, kill should be independent, panel recommends"
+title = "Investigations of Pennsylvania State Police troopers who injure, kill should be independent, panel says"
 topics = ["Criminal Justice"]
 +++
 
