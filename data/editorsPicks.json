@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2021-12-11-SPLSCORE12.md"
+    "content/news/2021-12-13-SPLTELE13.md"
   ],
   "sidebarPicks": [
     "content/news/2021-11-30-SPLLATINO01.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-09-SPLFEEDBACK.md",
-    "content/news/2021-12-08-SPLCONMAP.md"
+    "content/news/2021-09-29-SPLWAIVER30.md"
   ],
   "topSlots": [
+    "content/news/2021-12-11-SPLSCORE12.md",
     "content/news/2021-12-10-SPLOVERSIGHT11.md",
-    "content/news/2021-12-09-SPLDA10.md",
-    "content/news/2021-12-08-SPLBERKS11.md"
+    "content/news/2021-12-09-SPLDA10.md"
   ],
   "topper": []
 }
