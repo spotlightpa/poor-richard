@@ -40,7 +40,7 @@ Democrats on the committee agreed, stating that they were excluded from the proc
 
 “I hear the word transparent over and over and over again, at this meeting and the meetings previously, but you know what word I don’t hear. I don’t hear the word bipartisan,” said Rep. Maureen Madden (D., Monroe). “I don’t see where the Democratic members of State Government [Committee] were brought into this process in any way.”
 
-{{<picture src="external/gy6q1y7x3yjmarb4tgmgnmty6r.jpeg" description="" caption="" credit="House State Government Committee">}} 
+{{<image src="https://files.data.spotlightpa.org/uploads/01gv/mph3/map.jpeg" description="" caption="" credit="House State Government Committee">}}
 
 Grove said the amended map, approved by a vote of 14-11, was changed to reflect criticism from fair district advocates regarding its compactness. Holt, who first gained acclaim as a redistricting reform activist in 2012, drew her map with two primary principles: districts with identical population sizes, and keeping all voting precincts together.
 
