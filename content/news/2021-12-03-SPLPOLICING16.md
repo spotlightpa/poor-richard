@@ -1,8 +1,8 @@
 +++
 arc-id = "6SKQNGWJABCF3AXRDEIP5AX5NI"
-blurb = "Join Spotlight PA for a panel on why killings by police officers often are ruled justified."
+blurb = "Watch Spotlight PA's panel on why killings by police officers often are ruled justified."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA for a panel on why killings by police officers often are ruled justified."
+description = "Watch Spotlight PA's panel on why killings by police officers often are ruled justified."
 event-date = 2021-12-16T19:00:00-05:00
 image = "external/xem3rp83w9q7qdbm7xvwmr5xvw.jpeg"
 image-credit = "ELIZABETH ROBERTSON / Philadelphia Inquirer"
@@ -14,7 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-03T14:45:00-05:00
 slug = "pa-police-shootings-justified-panel"
-title = "Join us for a free discussion on why killings by police officers often are ruled justified"
+title = "WATCH: A free discussion on why killings by police officers often are ruled justified"
 topics = ["Events", "Criminal Justice"]
 +++
 
@@ -24,11 +24,9 @@ Officers in Pennsylvania have killed or used force on 108 civilians since 2017, 
 
 Expanded access to videos of police using lethal force has increased public awareness of the problem, but few people know how and why courts rule these cases justified.
 
-“The question is, what do you do as a state, as a society, when you have a shooting that may be lawful, but looks awful?”said David Harris, Sally Ann Semenko Endowed Chair and Professor of Law at University of Pittsburgh.
+On Thursday, Dec. 16. at 7 p.m. EST, Spotlight PA held a free discussion on why killings by police officers often are ruled justified and the investigation process that leads to such rulings.
 
-On Thursday, Dec. 16., at 7 p.m. EST, join Spotlight PA for a free discussion on why killings by police officers often are ruled justified and a look into the investigation process.
-
-Our panelists include:
+Our panelists were:
 
 - <b>Gary Harki</b>, criminal justice reporter for Spotlight PA
 
@@ -38,7 +36,9 @@ Our panelists include:
 
 - <b>David Harris</b>, Sally Ann Semenko Endowed Chair and Professor of Law at University of Pittsburgh
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_6Yw3_TXLRSK10y8ttb-Gkw">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
+Watch the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gBbPaAkzsZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 » Spotlight PA’s events operate on a “pay-what-you-can” honor system. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
