@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2021-12-16-SPLMAPS.md"
+    "content/news/2021-12-21-SPLRATE22.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-13-SPLTELE13.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-15-SPLHOUSEMAP15.md",
-    "content/news/2021-12-11-SPLSCORE12.md"
+    "content/newsletters/papost/2021-11-24-0700.md",
+    "content/news/2021-09-02-SPLALZ04.md"
   ],
   "topSlots": [
     "content/news/2021-12-17-SPLCOVID17.md",
-    "content/news/2021-12-16-SPLELEX.md",
-    "content/news/2021-12-14-SPLMARKER14.md"
+    "content/news/2021-12-16-SPLMAPS.md",
+    "content/news/2021-12-16-SPLELEX.md"
   ],
   "topper": []
 }
