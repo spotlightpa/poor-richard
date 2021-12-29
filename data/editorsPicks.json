@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2021-12-27-SPLSENATESCORE.md"
+    "content/newsletters/papost/2021-12-22-0700.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-13-SPLTELE13.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-23-SPLHOUSESCORE.md",
-    "content/news/2021-12-16-SPLMAPS.md"
+    "content/news/2021-12-27-SPLSENATESCORE.md",
+    "content/news/2021-12-23-SPLHOUSESCORE.md"
   ],
   "topSlots": [
-    "content/news/2021-12-22-SPLMAPTOOL.md",
+    "content/news/2021-12-22-SPLREDIST6.md",
     "content/news/2021-12-21-SPLRATE22.md",
     "content/news/2021-12-17-SPLCOVID17.md"
   ],
