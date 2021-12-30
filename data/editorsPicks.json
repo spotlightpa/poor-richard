@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2021-12-22-SPLMAPTOOL.md"
+    "content/news/2021-12-30-SPLONEYEAR.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-13-SPLTELE13.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-27-SPLSENATESCORE.md",
-    "content/news/2021-12-23-SPLHOUSESCORE.md"
+    "content/news/2021-12-10-SPLOVERSIGHT11.md",
+    "content/news/2021-11-18-SPLHALL19.md"
   ],
   "topSlots": [
-    "content/news/2021-12-22-SPLREDIST6.md",
-    "content/news/2021-12-21-SPLRATE22.md",
-    "content/news/2021-12-17-SPLCOVID17.md"
+    "content/news/2021-12-22-SPLMAPTOOL.md",
+    "content/news/2021-12-27-SPLSENATESCORE.md",
+    "content/news/2021-12-22-SPLREDIST6.md"
   ],
   "topper": []
 }
