@@ -34,7 +34,7 @@ The vigils showed the state that people remember the case, said Nicole Henriquez
 
 “We’re pushing for justice,” Henriquez said. “Although Fe and Gareth will never have Christian back … they at least want this to never happen again to someone and they want the people who did this to have some kind of consequence — not, ‘Well it’s just justified.’”
 
-{{<picture src="" description="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." caption="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." credit="STEVEN M. FALK / Philadelphia Inquirer">}} 
+{{<picture src="external/azbac6zcx7cmp0d5fg5p77mmwm.jpeg" description="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." caption="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." credit="STEVEN M. FALK / Philadelphia Inquirer">}} 
 
 Unredacted video obtained by Spotlight PA and NBC News shows that <a href="https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/">Christian’s hands stayed above his head as two troopers shot at him</a>. Troopers tried to persuade him to get off the ledge and put down what they believed was a gun — actually a realistic pellet gun — for about 90 minutes before his death.
 
@@ -48,7 +48,7 @@ In early December, the newly created Pennsylvania State Law Enforcement Citizen 
 
 An unintroduced bill by State Sen. Art Haywood (D., Montgomery), meanwhile, would require that the state attorney general <a href="https://www.spotlightpa.org/news/2021/11/pa-police-killings-investigation-district-attorney-general/">be given new powers</a> to investigate all police killings.
 
-{{<picture src="" description="Fe Hall and Gareth Hall" caption="Fe Hall and Gareth Hall" credit="Fred Adams for Spotlight PA / NBC News">}} 
+{{<picture src="external/5gyr2qfj3ky5t2sd1yx8pne9c4.jpeg" description="Fe Hall and Gareth Hall" caption="Fe Hall and Gareth Hall" credit="Fred Adams for Spotlight PA / NBC News">}} 
 
 It’s not clear where Gov. Tom Wolf stands on the commission recommendations or the bill.
 
