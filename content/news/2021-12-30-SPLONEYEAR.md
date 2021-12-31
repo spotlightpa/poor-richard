@@ -40,7 +40,7 @@ Unredacted video obtained by Spotlight PA and NBC News shows that <a href="https
 
 The shooting was investigated by State Police troopers from outside the local barracks. They turned their findings over to Monroe County District Attorney E. David Christine Jr., who ruled that troopers’ lives were in danger and therefore the shooting was justified.
 
-{{<picture src="" description="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." caption="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." credit="Matt Smith / For Spotlight PA">}} 
+{{<picture src="external/6z1mpg7t7yfxy1hcy2amj89tbw.jpeg" description="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." caption="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." credit="Matt Smith / For Spotlight PA">}} 
 
 Christian’s parents, as well as family attorneys Ben Crump and Devon M. Jacob, have criticized that process and called for a new investigation — one that doesn’t involve the State Police or the local DA.
 
@@ -56,7 +56,7 @@ In a separate exchange, Wolf extended his condolences to Christian’s family wh
 
 “The governor believes this was a tragic occurrence that affects everyone involved,” Rementer wrote in an email. “To be clear, the governor believes that all police-involved shootings must be reviewed, and that is what has been undertaken in this case.”
 
-{{<picture src="" description="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." caption="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." credit="Matt Smith / For Spotlight PA">}} 
+{{<picture src="external/6c4cysmxqcb8a09v199f6njh3g.jpeg" description="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." caption="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." credit="Matt Smith / For Spotlight PA">}} 
 
 When asked to respond to the governor’s statement, Gareth Hall said Wolf didn’t answer the question.
 
@@ -84,6 +84,6 @@ She believes he would be ecstatic to see people coming together to remember him 
 
 “He was a person, he mattered,” she said. “And he has a family, a grieving family. And as a family, we want to remember him.”
 
-{{<picture src="" description="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " caption="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " credit="Matt Smith / For Spotlight PA">}} 
+{{<picture src="external/s7nr0zpc9xstd1p2sbqtcff01g.jpeg" description="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " caption="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " credit="Matt Smith / For Spotlight PA">}} 
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
