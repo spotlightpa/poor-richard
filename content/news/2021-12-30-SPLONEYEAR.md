@@ -34,21 +34,19 @@ The vigils showed the state that people remember the case, said Nicole Henriquez
 
 “We’re pushing for justice,” Henriquez said. “Although Fe and Gareth will never have Christian back … they at least want this to never happen again to someone and they want the people who did this to have some kind of consequence — not, ‘Well it’s just justified.’”
 
-{{<picture src="external/azbac6zcx7cmp0d5fg5p77mmwm.jpeg" description="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." caption="About 30 people — some holding candles — in Philadelphia listened to a recording from Christian Hall&#39;s parents during a vigil on the one-year anniversary of his death." credit="STEVEN M. FALK / Philadelphia Inquirer">}} 
-
 Unredacted video obtained by Spotlight PA and NBC News shows that <a href="https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/">Christian’s hands stayed above his head as two troopers shot at him</a>. Troopers tried to persuade him to get off the ledge and put down what they believed was a gun — actually a realistic pellet gun — for about 90 minutes before his death.
 
 “If he doesn’t drop it, just take him,” a voice can be heard saying on the video shortly before troopers fired the final shots.
 
 The shooting was investigated by State Police troopers from outside the local barracks. They turned their findings over to Monroe County District Attorney E. David Christine Jr., who ruled that troopers’ lives were in danger and therefore the shooting was justified.
 
+{{<picture src="" description="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." caption="Fe Hall during a vigil for her late son, Christian, on the one-year anniversary of his death. The vigil was held at Pleasant Valley Assembly of God in Brodheadsville." credit="Matt Smith / For Spotlight PA">}} 
+
 Christian’s parents, as well as family attorneys Ben Crump and Devon M. Jacob, have criticized that process and called for a new investigation — one that doesn’t involve the State Police or the local DA.
 
 In early December, the newly created Pennsylvania State Law Enforcement Citizen Advisory Commission <a href="https://www.spotlightpa.org/news/2021/12/pennsylvania-state-police-use-of-force-investigations-independent/">recommended that such cases be independently reviewed</a>. Whether those recommendations will be put in place remains to be seen. The State Police are drafting a response to the recommendations.
 
 An unintroduced bill by State Sen. Art Haywood (D., Montgomery), meanwhile, would require that the state attorney general <a href="https://www.spotlightpa.org/news/2021/11/pa-police-killings-investigation-district-attorney-general/">be given new powers</a> to investigate all police killings.
-
-{{<picture src="external/5gyr2qfj3ky5t2sd1yx8pne9c4.jpeg" description="Fe Hall and Gareth Hall" caption="Fe Hall and Gareth Hall" credit="Fred Adams for Spotlight PA / NBC News">}} 
 
 It’s not clear where Gov. Tom Wolf stands on the commission recommendations or the bill.
 
@@ -57,6 +55,8 @@ When asked about the measures, Wolf spokesperson Elizabeth Rementer said in an e
 In a separate exchange, Wolf extended his condolences to Christian’s family when asked whether the shooting warranted further investigation.
 
 “The governor believes this was a tragic occurrence that affects everyone involved,” Rementer wrote in an email. “To be clear, the governor believes that all police-involved shootings must be reviewed, and that is what has been undertaken in this case.”
+
+{{<picture src="" description="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." caption="Attendees participate in a vigil for Christian Hall at Pleasant Valley Assembly of God in Brodheadsville. Hall was killed one year ago by Pennsylvania State Police." credit="Matt Smith / For Spotlight PA">}} 
 
 When asked to respond to the governor’s statement, Gareth Hall said Wolf didn’t answer the question.
 
@@ -83,5 +83,7 @@ While the Hall family plans to keep fighting for change, Thursday commemorated C
 She believes he would be ecstatic to see people coming together to remember him and about the way people are using his name to push for justice for Asian Americans and people in mental health crises.
 
 “He was a person, he mattered,” she said. “And he has a family, a grieving family. And as a family, we want to remember him.”
+
+{{<picture src="" description="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " caption="Gareth Hall looks at an image of his late son, Christian, as he speaks during a vigil at Pleasant Valley Assembly of God in Brodheadsville. Christian Hall was killed one year ago by Pennsylvania State Police. " credit="Matt Smith / For Spotlight PA">}} 
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
