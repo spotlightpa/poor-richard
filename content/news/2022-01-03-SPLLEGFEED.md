@@ -21,7 +21,7 @@ topics = ["Redistricting"]
 
 HARRISBURG — A Pennsylvania redistricting panel wants to hear from the public about its proposed state House and Senate maps.
 
-The maps were created by the Legislative Reapportionment Commission, a five-person panel composed of the top legislative leaders from both the House and Senate and an independent chair.
+The maps were created by the Legislative Reapportionment Commission, a five-person panel composed of the top leaders from the General Assembly and an independent chair.
 
 The public can <a href="https://www.redistricting.state.pa.us/">provide feedback online</a> or at meetings this month. The panel then has 30 days to consider the comments before voting on a final map, which could be challenged in court. The state’s congressional map is <a href="https://www.spotlightpa.org/news/2021/12/pa-congressional-maps-proposed-redistricting/">created and approved in a separate process</a>.
 
@@ -31,7 +31,7 @@ Here’s how you can get involved:
 
 # Attend or watch a meeting
 
-The Legislative Reapportionment Commission will hold four meetings the week of Jan. 3 to accept feedback on the maps, both in-person and virtually. Additional meetings will be held on Jan. 14 and 15.
+The Legislative Reapportionment Commission will hold four meetings the week of Jan. 3 to accept feedback on the maps, both in person and virtually. Additional meetings will be held on Jan. 14 and 15.
 
 <b>Thursday, Jan. 6 from 3–5 p.m.:</b> Speaker signups are closed for this meeting.
 
