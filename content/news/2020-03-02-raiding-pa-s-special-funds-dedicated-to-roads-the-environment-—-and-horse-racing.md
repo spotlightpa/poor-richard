@@ -36,6 +36,6 @@ Between 2010 and 2014, the legislature [diverted](https://www.paauditor.gov/pres
 
 The Motor License Fund, for example, is bankrolled by license fees and gas taxes and was meant to be used to repair state highways. Instead, it now primarily pays for the Pennsylvania State Police.
 
-It's these kind of budget moves that just earned Pennsylvania a [failing grade](https://www.volckeralliance.org/publications/truth-and-integrity-state-budgeting-balancing-act) from a nonprofit that reviewed the budget practices of all 50 states.
+It's these kind of budget moves that just earned Pennsylvania a [failing grade](https://web.archive.org/web/20211224221724/https://www.volckeralliance.org/publications/truth-and-integrity-state-budgeting-balancing-act) from a nonprofit that reviewed the budget practices of all 50 states.
 
 "Only one state — Pennsylvania, which posted a bottom-dwelling average of D-minus — received no credit in any of the five indicators in budget maneuvers," the report, produced by the Volcker Alliance, stated.
