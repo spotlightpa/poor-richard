@@ -55,4 +55,10 @@ The Legislative Reapportionment Commission will hold four meetings the week of J
 
 The Legislative Reapportionment Commission is <a href="https://www.redistricting.state.pa.us/comment/" target="_blank">accepting testimony through its website</a>. Comments are posted publicly.
 
+## Learn more
+
+Spotlight PA is <a href="https://www.spotlightpa.org/news/2021/12/pa-redistricting-legislative-house-senate/" target="_blank">hosting a free, virtual event on Thursday, Jan. 6 at noon</a> to break down the maps, how they could shift political power, and their potential impact on Pennsylvanians.
+
+The news organization has also <a href="https://www.spotlightpa.org/news/2021/12/pennsylvania-redistricting-house-senate-districts-lookup-tool/" target="_blank">launched an online tool</a> that allows Pennsylvanians to compare their current and proposed districts.
+
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
