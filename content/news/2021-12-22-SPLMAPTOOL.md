@@ -18,6 +18,7 @@ published = 2021-12-22T05:00:42-05:00
 slug = "pennsylvania-redistricting-house-senate-districts-lookup-tool"
 title = "Pa. redistricting maps: Search now to see your old and new legislative districts"
 topics = ["Redistricting"]
+headers = ["Feature-Policy: geolocation *;"]
 +++
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
