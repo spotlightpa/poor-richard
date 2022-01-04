@@ -53,53 +53,47 @@ url = "/tips/"
 weight = 3
 
 [[footer]]
-name = "Press releases"
-pre = "is-uppercase"
-url = "/press-releases/"
-weight = 4
-
-[[footer]]
 name = "Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
-weight = 5
+weight = 4
 
 [[footer]]
 name = "News Archive"
 pre = "is-uppercase"
 url = "/news/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "Search"
 pre = "is-uppercase"
 post = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:search:open')\""
 url = "/search/"
-weight = 7
+weight = 5
 
 [[footer]]
 name = "Special Projects & Investigations"
 pre = "is-uppercase"
 url = "/series/"
-weight = 8
+weight = 7
 
 [[footer]]
 name = "Topic Archive"
 pre = "is-uppercase"
 url = "/topics/"
-weight = 9
+weight = 8
 
 [[footer]]
 name = "Events"
 pre = "is-uppercase"
 url = "/events/"
-weight = 10
+weight = 9
 
 [[footer]]
 name = "Donate"
 pre = "is-uppercase"
 url = "/donate/"
-weight = 11
+weight = 10
 
 [[about]]
 name = "About Us"
