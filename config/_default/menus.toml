@@ -69,7 +69,7 @@ name = "Search"
 pre = "is-uppercase"
 post = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:search:open')\""
 url = "/search/"
-weight = 5
+weight = 6
 
 [[footer]]
 name = "Special Projects & Investigations"
