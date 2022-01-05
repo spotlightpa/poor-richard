@@ -20,71 +20,154 @@
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
-  <section
-    class="section columns is-centered is-multiline"
+  <form
+    action='{{ .Param "investigator-action" }}'
+    method="post"
+    target="_blank"
     data-ga-category="all-newsletters"
   >
-    <div class="column is-three-fifths">
-      <header class="mb-5">
-        <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
-          {{ .Title }}
-        </h1>
-        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
-          {{ $subtitle }}
-        </h2>
+    {{ partial "newsletter/hidden-input.html" . }}
+    <p class="is-hidden" hidden>
+      <label>
+          <input type="checkbox" name="contact" value="1">
+          I am a robot
+      </label>
+    </p>
+    <section class="section columns is-centered is-multiline">
+      <div class="column is-three-fifths">
+        <header class="mb-5">
+          <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+            {{ .Title }}
+          </h1>
+          <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+            {{ $subtitle }}
+          </h2>
 
-        {{ partial "component/hero-image-block.html" . }}
-      </header>
-      {{ with .Content }}
-        <div class="content mb-6">
-          {{ . }}
-        </div>
-      {{ end }}
-    </div>
-    <div class="column is-four-fifths mb-6">
-      <nav class="tile is-ancestor is-vertical">
-        <div class="tile is-wrapped">
-          {{ range $page := $pages }}
-            <div class="tile is-parent is-4 has-margin-top-negative">
-              <div class="tile is-child">
-                {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-                {{ $slug := .File.Dir | path.Base }}
-                <article
-                  x-data="{ showForm: false }"
-                >
-                  <a
+          {{ partial "component/hero-image-block.html" . }}
+        </header>
+        {{ with .Content }}
+          <div class="content mb-6">
+            {{ . }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="column is-four-fifths mb-2">
+        <nav class="tile is-ancestor is-vertical">
+          <div class="tile is-wrapped">
+            {{ range $page := $pages }}
+              <div class="tile is-parent is-4 has-margin-top-negative">
+                <div class="tile is-child">
+                  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+                  {{ $slug := .File.Dir | path.Base }}
+                  {{ $id := partial "helper/new-id" $ }}
+                  <label
                     class="has-text-grey-dark hover-underline"
-                    href="{{ $params.link }}"
-                    @click.prevent="showForm = !showForm"
-                    :data-ga-action="'newsletters:{{ $slug }}:show'"
+                    :data-ga-action="'toggle-newsletter:{{ $slug }}'"
+                    for="{{ $id }}"
                   >
-                    {{ $name := .Page.Param "image" }}
-                    {{ $credit := .Page.Param "image-credit" }}
-                    {{ $description := .Page.Param "image-description" }}
-                    {{ $imgOpts := dict
-                      "filename" $name
-                      "credit" $credit
-                      "description" $description
-                      "widthRatio" 16
-                      "heightRatio" 9
-                      "sizeHint" "25vw"
-                    }}
-                    {{ partial "component/image-block.html" $imgOpts }}
-                    <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
-                      {{ .LinkTitle }}
-                    </h2>
-                    <p>
-                      {{ $params.blurb }}
-                    </p>
-                  </a>
-                  {{ $form := printf "newsletter/%s-landing-form.html" $slug }}
-                  {{ partial $form $ }}
-                </article>
+                    <article>
+                      {{ $name := .Page.Param "image" }}
+                      {{ $credit := .Page.Param "image-credit" }}
+                      {{ $description := .Page.Param "image-description" }}
+                      {{ $imgOpts := dict
+                        "filename" $name
+                        "credit" $credit
+                        "description" $description
+                        "widthRatio" 16
+                        "heightRatio" 9
+                        "sizeHint" "25vw"
+                      }}
+                      {{ partial "component/image-block.html" $imgOpts }}
+                      <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
+                        {{ .LinkTitle }}
+                      </h2>
+                      <p>
+                        {{ $params.blurb }}
+                      </p>
+                    </article>
+                  </label>
+                  <p class="mt-2">
+                    <a href="{{ $page.RelPermalink }}#archives"
+                    >View Archives</a>
+                  </p>
+                  <label class="mt-2 is-block">
+                    <input
+                      type="checkbox"
+                      id="{{ $id }}"
+                      name="{{ $slug }}"
+                      value="1"
+                      data-ga-button
+                      data-ga-action="toggle-newsletter:{{ $slug }}"
+                    >
+                  </label>
+                </div>
               </div>
-            </div>
-          {{ end }}
+            {{ end }}
+          </div>
+        </nav>
+      </div>
+      <div class="column is-two-fifths mb-6">
+        {{ $idFname := partial "helper/new-id" . }}
+        {{ $idLname := partial "helper/new-id" . }}
+        {{ $idEmail := partial "helper/new-id" . }}
+        <div class="field">
+          <label class="label" for='{{ $idFname }}'>First Name</label>
         </div>
-      </nav>
-    </div>
-  </section>
+        <div class="field">
+          <p class="control is-expanded">
+            <input
+              id='{{ $idFname }}'
+              class="input"
+              type="text"
+              name="FNAME"
+              required
+            >
+          </p>
+        </div>
+        <div class="field">
+          <label class="label" for='{{ $idLname }}'>Last Name</label>
+        </div>
+        <div class="field">
+          <p class="control is-expanded">
+            <input
+              id='{{ $idLname }}'
+              class="input"
+              type="text"
+              name="LNAME"
+              required
+            >
+          </p>
+        </div>
+        <div class="field">
+          <label class="label" for='{{ $idEmail }}'>Email Address</label>
+          <p class="control is-expanded has-icons-left has-icons-right">
+            <input
+              id='{{ $idEmail }}'
+              class="input"
+              type="email"
+              name="EMAIL"
+              required
+            >
+            <span class="icon is-left">
+              <svg>
+                <use xlink:href="#email-svg"></use>
+              </svg>
+            </span>
+            <span class="icon is-right validator-icon">
+              <svg>
+                <use xlink:href="#check-svg"></use>
+              </svg>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button type="submit" class="button is-large is-danger has-text-weight-semibold">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>
 {{ end }}
