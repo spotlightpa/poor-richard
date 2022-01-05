@@ -1,14 +1,17 @@
 +++
-image = "2020/06/01fdjfj1nf20rwxt.jpeg"
-image-description = "The Spotlight PA logo over the Pennsylvania state capitol"
-image-credit = "Stephanie Strasburg / The Post-Gazette"
-image-size = "hidden"
-title = "PennLive & The Patriot-News join Spotlight PA as founding partners"
-subhed = ""
+byline = "Spotlight PA Staff"
 description = "Unprecedented collaboration with The Philadelphia Inquirer and Pittsburgh Post-Gazette will power Pennsylvania's largest newsroom dedicated to covering PA government."
-published = 2019-08-29T14:29:37.005Z
+image = "2020/06/01fdjfj1nf20rwxt.jpeg"
+image-credit = "Stephanie Strasburg / The Post-Gazette"
+image-description = "The Spotlight PA logo over the Pennsylvania state capitol"
+image-size = "hidden"
+internal-id = "SPLPR29"
 kicker = "Press Release"
+published = 2019-08-29T10:29:37.005-04:00
+title = "PennLive & The Patriot-News join Spotlight PA as founding partners"
+url = "/press-releases/2019/pennlive-the-patriot-news-join-spotlight-pa-as-founding-partners/"
 +++
+
 **FOR IMMEDIATE RELEASE**
 
 

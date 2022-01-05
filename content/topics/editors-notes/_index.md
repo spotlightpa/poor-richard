@@ -6,4 +6,5 @@ image-size = "hidden"
 kicker = "Editor’s Notes"
 title = "Editor’s Notes"
 linktitle = "Notes from the Editor in Chief about Spotlight PA"
+aliases = ["/press-releases/"]
 +++
