@@ -1,8 +1,8 @@
 {
-  "banner": "\u003cstrong\u003eSupport Spotlight PA's vital journalism now and your gift will be DOUBLED  »\u003c/strong\u003e",
-  "banner-active": false,
-  "banner-bg-color": "#ea5b3a",
-  "banner-link": "/donate",
+  "banner": "\u003cstrong\u003eSign up for a free daily email briefing of the top news from across PA »\u003c/strong\u003e",
+  "banner-active": true,
+  "banner-bg-color": "#75bc43",
+  "banner-link": "/newsletters/papost",
   "banner-text-color": "#ffffff",
   "footer-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "footer-promo-desktop-height": 90,
@@ -71,7 +71,7 @@
   "support-cta": "Contribute today »",
   "support-hed": "…we have a small favor to ask",
   "support-text": "We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. \u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nWe are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you \u003cstrong\u003epay it forward and make a contribution to Spotlight PA now?\u003c/strong\u003e",
-  "topper-active": true,
+  "topper-active": false,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
