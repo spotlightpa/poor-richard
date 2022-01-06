@@ -20,27 +20,29 @@ topics = ["Coronavirus"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i>This story was updated Nov. 19, 2021.</i>
+<i>This story was updated Jan. 6, 2022.</i>
 
-Booster shots are now available to all adults, regardless of which coronavirus vaccine they initially received, as long as the appropriate amount of time has passed since their most recent dose.
+Federal guidance around COVID-19 vaccine boosters has changed significantly since the shots were rolled out to the general public this fall.
 
-The federal Food and Drug Administration and Centers for Disease Control and Prevention on Friday authorized boosters for people 18 and older who received their second shot of the two-dose Pfizer and Moderna vaccines at least six months ago. Restrictions on age, occupation, or whether a person has underlying medical conditions no longer apply.
+All adults 18 and older are now eligible for a booster. Centers for Disease Control and Prevention guidance still allows for a “mix and match” approach to boosters for adults. In other words, no matter which of the three vaccines you initially received, you may choose any of the three for your booster shot.
 
-Booster shots are also recommended for anyone 18 and older who received a Johnson &amp; Johnson vaccine two or more months ago.
+That said, the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html">CDC now recommends</a> the Pfizer or Moderna vaccines over the Johnson &amp; Johnson vaccine due to the risk of rare but serious side effects of that vaccine. The Johnson &amp; Johnson vaccine will still be available to anyone who wants it or who cannot receive Pfizer or Moderna because of other medical conditions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The CDC’s guidance allows for a “mix and match” approach to boosters. In other words, no matter which of the three vaccines you initially received, you may choose any of the three for your booster shot.
+Children ages 5 and older are now eligible for the Pfizer vaccine. This is the only vaccine that has been approved for people younger than 18.
 
-All three vaccines are now widely available, and it’s not likely providers will experience the same <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-covid-vaccine-all-adults-eligible-april-19/">backups and shortages seen across Pennsylvania</a> when eligibility first opened up to all adults in April, Pennsylvania officials have said.
+Anyone 12 and older who received a Pfizer vaccine should get a booster shot five months — rather than the previously recommended six months — after completing their initial two-dose series, according to CDC guidance released Jan. 5. A three-dose series is now also recommended for some immunocompromised children 5 to 11 years old.
 
-Many retail pharmacies, like Rite-Aid or CVS, along with grocery stores and independent pharmacies, now have same-day and walk-in appointments for first, second, and booster shots available. Health systems like <a href="https://www.upmc.com/coronavirus/covid-vaccine">UPMC</a>, <a href="https://www.ahn.org/coronavirus/vaccine">Allegheny Health Network</a>, <a href="https://vaccine-scheduler.pennstatehealth.org/s/">Penn State Health</a>, and <a href="https://www.geisinger.org/coronavirus/patients-and-visitors/covid-19-vaccine-faqs#thirddose">Geisinger</a> are also administering boosters, along with other local health clinics and doctors’ offices.
+Vaccines are now widely available, and it’s not likely providers will experience the same <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-covid-vaccine-all-adults-eligible-april-19/">backups and shortages seen across Pennsylvania</a> when vaccine eligibility first opened up to all adults in April, Pennsylvania officials have said.
+
+Many retail pharmacies, such as Rite-Aid and CVS, along with grocery stores and independent pharmacies, now have same-day and walk-in appointments for first, second, and booster shots. Health systems such as <a href="https://www.upmc.com/coronavirus/covid-vaccine">UPMC</a>, <a href="https://www.ahn.org/coronavirus/vaccine">Allegheny Health Network</a>, <a href="https://vaccine-scheduler.pennstatehealth.org/s/">Penn State Health</a>, and <a href="https://www.geisinger.org/coronavirus/patients-and-visitors/covid-19-vaccine-faqs#thirddose">Geisinger</a> are also administering boosters, along with other local health clinics and doctors’ offices.
 
 You do not have to return to the same location where you received your first or second shots for your booster. Search for locations offering COVID-19 vaccines near you, or anywhere in the country, on the CDC’s website at <a href="http://www.vaccines.gov/">vaccines.gov</a>.
 
 Most nursing homes will handle boosters through existing relationships with local vaccine providers, a state health department spokesperson said. The health department will assist any nursing home that is not yet connected with a local vaccine provider or pharmacy secure booster shots.
 
-Acting Health Secretary Alison Beam <a href="https://www.media.pa.gov/pages/health-details.aspx?newsid=1605">ordered</a> vaccine providers on Sept. 21 to not only provide online scheduling for booster appointments but also to provide a telephone number that connects callers to a live agent to assist with scheduling. Vaccine providers were also ordered to offer walk-in appointments.
+Former Acting Health Secretary Alison Beam <a href="https://www.media.pa.gov/pages/health-details.aspx?newsid=1605">ordered</a> vaccine providers on Sept. 21 to offer online scheduling for booster appointments and to set up a telephone number that connects callers to a live agent to assist with scheduling. Vaccine providers were also ordered to offer walk-in appointments.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20DOUBLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20DOUBLED."></div>
 
