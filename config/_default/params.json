@@ -48,20 +48,24 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "sidebar-sticky-description": "Sign up for a free daily digest of news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
   "sidebar-sticky-height": 250,
-  "sidebar-sticky-images": [],
-  "sidebar-sticky-link": "/donate/",
+  "sidebar-sticky-images": [
+    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
+  ],
+  "sidebar-sticky-link": "/newsletters/papost",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "sidebar-top-description": "Sign up for a free daily digest of news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
   "sidebar-top-height": 250,
-  "sidebar-top-images": [],
-  "sidebar-top-link": "/donate/",
+  "sidebar-top-images": [
+    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
+  ],
+  "sidebar-top-link": "/newsletters/papost",
   "sidebar-top-width": 300,
   "sticky-active": false,
-  "sticky-image-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "sticky-image-description": "Sign up for a free daily digest of the top news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01gt/zpt4/spotlight-donate-square-ad-set-3-.png"
+    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
   ],
   "sticky-link": "/donate/",
   "support-cta": "Contribute today »",
