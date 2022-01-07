@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-01-06-SPLRIOT.md"
+    "content/news/2022-01-07-SPLENOUGH.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-16-SPLELEX.md"
+    "content/news/2022-01-03-SPLLEGFEED.md"
   ],
   "topSlots": [
-    "content/news/2021-12-22-SPLREDIST6.md",
-    "content/news/2022-01-03-SPLLEGFEED.md",
-    "content/news/2021-12-30-SPLONEYEAR.md"
+    "content/news/2022-01-06-SPLRIOT.md",
+    "content/news/2021-12-30-SPLONEYEAR.md",
+    "content/news/2021-12-21-SPLRATE22.md"
   ],
   "topper": []
 }
