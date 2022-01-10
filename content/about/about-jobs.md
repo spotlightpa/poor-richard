@@ -6,6 +6,20 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
+## Pennsylvania Election Reporter, Chalkbeat
+
+## <a href="https://www.chalkbeat.org/pages/careers?gh_jid=4899058003">Learn More and Apply Here</a>
+
+**Chalkbeat is looking for a reporter to cover voting in Pennsylvania in partnership with Spotlight PA.** 
+
+Votebeat, the nonprofit news organization created by Chalkbeat to cover local election administration and voting access, is seeking a passionate journalist to serve as our Pennsylvania reporter in partnership with [Spotlight PA](https://www.spotlightpa.org/about/).
+
+This is a pivotal time to cover voting in Pennsylvania, a state that saw one of the closest presidential elections of 2020 followed by a flood of lawsuits and unfounded claims of voter fraud, ongoing efforts to investigate the election, and legislation attempting to change the ways Pennsylvanians will vote. Votebeat will cover Republican lawmakers’ investigation of the 2020 vote and constitutional amendments to restrict voting; extremists’ efforts to take over local positions overseeing the next elections; and local administrators’ conducting of 2022’s contentious primary and general elections, many based on redrawn districts.
+
+You will dive deep into the details of election administration and synthesize those facts into accurate, nuanced takeaways. Your journalism will inform the debate around voting and make an impact by spotlighting problems in elections and the politicization of voting, and by pointing toward solutions. Because the decision-making and preparations for elections are constantly ongoing, we treat this coverage as a year-round beat. 
+
+<hr>
+
 ## Rural Affairs Reporter, Report for America
 
 ## <a href="https://www.reportforamerica.org/reporters/">Apply Here</a>
