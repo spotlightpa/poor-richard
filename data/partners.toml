@@ -19,6 +19,11 @@ url = "https://www.witf.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7g/witf.svg"
 
 [[partners]]
+name = "BCTV"
+url = "https://www.bctv.org"
+logo-url = "https://files.data.spotlightpa.org/uploads/01gy/dn82/bctv.png"
+
+[[partners]]
 name = "The Caucus"
 url = "https://caucuspa.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx72/caucus.png"
