@@ -6,6 +6,20 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
+## Supervising Editor, Spotlight PA State College
+
+## <a href="https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/408">Apply Here</a>
+
+**Summary:** Spotlight PA is seeking an accountability-minded **Supervising Editor** to lead its new bureau in State College, Pa. An award-winning independent newsroom, Spotlight PA aims to hold powerful private and public forces to account by producing statehouse and statewide journalism that serves the public good. This will be Spotlight PA’s first local bureau, and will seek to expand in-depth reporting on Penn State University and under-covered regions of Central Pennsylvania and the Northern Tier. The bureau’s journalism will be distributed via Spotlight PA’s 79 partner newsrooms, filling information gaps and elevating stories from the region for a statewide audience.  
+
+**What you’ll do:** The Supervising Editor will be our local, on-the-ground expert, and will take the lead in shaping our coverage plans in advance of the bureau’s anticipated launch in July 2022. The editor will help oversee three reporters (one visual) based in State College to execute the newsroom’s goal of creating compelling digital accountability journalism that gets results. Working hand in hand with Spotlight PA’s editorial team, the supervising editor will mentor and coach reporters across several beats — Penn State University, rural communities, and more — to help them deliver news and accountability-focused projects and investigations. The supervising editor will collaborate with partner outlets, plan and lead community engagement efforts, produce a locally focused newsletter, and, as able, produce original reporting. 
+
+**Who we’re looking for:** The Supervising Editor should have experience — either as a reporter, editor, or in another role — executing local journalism from idea through publication, and, ideally, with impact. Applicants should have strong organization and communication skills, and be enthusiastic about working one on one with reporters in various stages of their careers. We want someone who’s not afraid to bring big ideas to the table with the skills and persistence to pull them off. We welcome applications from individuals with experience in any aspect of journalism, as well as those who have non-traditional career paths.
+
+An ability to work in a collaborative environment with external partners is a must. We’re an agile startup that values camaraderie, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of telling stories and connecting with audiences.
+
+This job is full-time and includes benefits. The editor must be based in or near State College. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.
+
 ## Pennsylvania Election Reporter, Chalkbeat
 
 ## <a href="https://www.chalkbeat.org/pages/careers?gh_jid=4899058003">Learn More and Apply Here</a>
