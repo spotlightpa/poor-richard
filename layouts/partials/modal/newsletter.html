@@ -6,21 +6,24 @@
   x-data="modal"
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
-  x-transition:enter="fade-enter-active"
-  x-transition:enter-start="fade-enter"
-  x-transition:leave="fade-enter-active is-active"
-  x-transition:leave-end="fade-enter"
   @scroll.window.once.passive="trigger()"
+  @click="isOpen = false"
   role="dialog"
   aria-modal="true"
   aria-label="Newsletter sign up"
 >
-  <div class="modal-background"></div>
+  <div
+    class="modal-background"
+    x-show="isOpen"
+    x-transition.opacity
+  ></div>
   <div
     class="modal-content"
     x-ref="content"
+    x-show="isOpen"
+    x-transition.delay.50ms
     tabindex="-1"
-    @click.outside="isOpen = false"
+    @click.stop
     @keydown.escape="isOpen = false"
   >
     <form
