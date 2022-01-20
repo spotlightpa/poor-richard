@@ -67,8 +67,8 @@ import intersect from "@alpinejs/intersect";
 
 Alpine.plugin(intersect);
 
-import trap from "@alpinejs/trap";
+import focus from "@alpinejs/focus";
 
-Alpine.plugin(trap);
+Alpine.plugin(focus);
 
 Alpine.start();
