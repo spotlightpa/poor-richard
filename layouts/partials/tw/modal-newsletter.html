@@ -6,20 +6,25 @@
     x-data="modal"
     x-cloak
     x-show="isOpen"
+    x-transition.opacity
     x-trap.noscroll.inert="isOpen"
-    x-transition:enter="transition-opacity duration-500 ease-out"
-    x-transition:enter-start="opacity-0"
-    x-transition:leave="transition-opacity duration-300 ease-in"
-    x-transition:leave-end="opacity-0"
     @scroll.window.once.passive="trigger()"
+    @click="isOpen = false"
     role="dialog"
     aria-modal="true"
     aria-label="Newsletter sign up"
   >
-    <div class="absolute inset-0 bg-g-5 opacity-75"></div>
-    <div class="absolute inset-0 backdrop-filter backdrop-blur-sm"></div>
+    <div
+      class="absolute inset-0 bg-g-5 opacity-75"
+    ></div>
+    <div
+      class="absolute inset-0 backdrop-filter backdrop-blur-sm"
+      x-transition.delay.150ms
+    ></div>
     <div
       class="absolute inset-1 flex overflow-y-auto"
+      x-show="isOpen"
+      x-transition.delay.50ms
     >
       <form
         class="m-auto max-w-prose overflow-hidden rounded-lg shadow-lg text-g-9 font-sans text-center"
@@ -28,7 +33,7 @@
         method="post"
         target="_blank"
         tabindex="-1"
-        @click.outside="isOpen = false"
+        @click.stop
         @keydown.escape="isOpen = false"
       >
         <header class="relative flex flex-none justify-between bg-black text-white">
