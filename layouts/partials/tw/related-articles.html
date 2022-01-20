@@ -18,8 +18,8 @@
       {{ range $page := $related }}
         {{ partialCached "tw/story-list.html" $page $page.RelPermalink }}
       {{ end }}
-      {{ partial "tw/story-list-js.html" dict }}
     </div>
+    {{ partial "tw/story-list-js.html" dict }}
     <div class="py-8 flex">
       <div class="mx-auto">
         <a
