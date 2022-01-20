@@ -24,7 +24,8 @@ onLoad(() => {
       "attachShadow" in el ? el.attachShadow({ mode: "open" }) : el;
     let sandbox =
       "allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation";
+    let attributes = { sandbox };
 
-    new Framer({ container, src, sandbox });
+    new Framer(container, { src, attributes });
   });
 });

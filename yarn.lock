@@ -1258,10 +1258,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@newswire/frames@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@newswire/frames/-/frames-0.3.1.tgz#f2b3ad10e31a28e3126795f130f9d48144373a58"
-  integrity sha512-o+RiGzc/ibNPE1a51KYxqBPR/xwF6HrO/NlO3fLWZHEqMRPdjaA63fUwlO6EBnYSvE8W/DZQI/HbdqL+i7xN9A==
+"@newswire/frames@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@newswire/frames/-/frames-1.0.0.tgz#94752745fe668842e29541c03bbfb8718849376c"
+  integrity sha512-uEU3Gq5xlxbW03kViKvn9umj6ZBfB/CaMyS1I78xPI22ne1mCVSJi5Y9Ehi0/U+YRAqhSuxBB3PsQXsffK2AaA==
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.3":
   version "2.1.8-no-fsevents.3"
