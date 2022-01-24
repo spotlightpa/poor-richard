@@ -96,4 +96,6 @@ In January 2012, the Pennsylvania Supreme Court rejected the new state House and
 
 Using the current, outdated maps is possible for legislative elections but not for ones for the U.S. House of Representatives. Due to sluggish population growth, Pennsylvania will lose one of its 18 congressional seats, making it impossible to use the current map.
 
+One leading Republican lawmaker involved with the redistricting process suggested that, in the absence of a new congressional map, an arcane federal law <a href="https://whyy.org/articles/the-arcane-unlikely-doomsday-redistricting-law-looming-over-pennsylvanias-map-impasse/">would direct the state to hold at-large elections for the 17 seats</a>. However, researchers and legal experts are skeptical that this would occur.
+
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
