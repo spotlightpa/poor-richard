@@ -20,7 +20,7 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-HARRISBURG —&nbsp;Pennsylvania Republicans have sent Gov. Tom Wolf a congressional map he has vowed to veto, a move nearly guaranteed to put the courts in charge of determining the state’s new district lines.
+HARRISBURG — Pennsylvania Republicans have sent Gov. Tom Wolf a congressional map he has vowed to veto, a move nearly guaranteed to put the courts in charge of determining the state’s new district lines.
 
 The state Senate voted 29-20 on Monday to approve a Republican-backed plan that nonpartisan analysts say has a clear GOP advantage. The state House <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-redistricting-congressional-map-house-approval/">approved the map</a> along party lines earlier this month.
 
@@ -36,7 +36,7 @@ Senate Majority Leader Kim Ward (R., Westmoreland) told reporters before the vot
 
 Every 10 years, Pennsylvania redraws its congressional boundaries to account for population changes. Because of the state’s sluggish growth, Pennsylvania will lose one of its 18 seats.
 
-The process is an intensely political one, with the outcome helping determine the balance of power in Washington. Advocates fought to create an independent citizens’ commission to lead the process, but Republican leaders failed to advance such a proposal, and redistricting still remains in the hands of elected lawmakers.
+The process is an intensely political one, with the outcome helping determine the balance of power in Washington. Advocates fought to create an independent citizens’ commission to draw the map, but Republican leaders failed to advance such a proposal, and redistricting still remains in the hands of elected lawmakers.
 
 The previous redistricting cycle’s congressional map was thrown out in 2018 by the state Supreme Court, which deemed it an illegal partisan gerrymander.
 
@@ -44,9 +44,17 @@ The map that passed Monday was initially drawn by Amanda Holt — a noted redist
 
 It improves upon four fairness criteria outlined in a previous state Supreme Court ruling, but nonpartisan analyses show it has a partisan bias in favor of Republicans.
 
+State Sen. David Argall (R., Schuylkill) held hearings on the process as chair of the State Government Committee. He and state Sen. Sharif Street (D., Philadelphia) had planned to release their own, bipartisan proposal, but in the end, ran out of time to reach an agreement. An earlier, leaked version of their map was met with <a href="https://www.inquirer.com/politics/election/pennsylvania-redistricting-congressional-map-sharif-street-democrats-20211209.html">immediate scorn by Democratic lawmakers and operatives</a>.
+
+“It’s not a perfect map,” Argall said of the version that passed Monday. “Guess what? There is no such thing as a perfect map. But I do believe … that it is a much-improved map over previous maps approved over the years.”
+
+Street said the map was not the result of a bipartisan process, or of the “sincere negotiations” he and Argall had been engaged in for the last seven months.
+
+“It is a map that will most assuredly get vetoed,” he said.
+
 A spokesperson for Wolf previously said he would veto the congressional map in its current form. He told reporters in December that <a href="https://www.abc27.com/news/this-week-in-pennsylvania/pennsylvania-politics/gov-wolf-says-negotiating-a-new-congressional-map-is-not-his-role/">negotiating the map was not his role</a>, then surprised many by <a href="https://davesredistricting.org/maps#ratings::fe2ff034-a707-4d2f-a781-60eb79ea8b7d">releasing his own proposal</a> on Jan. 15.
 
-Anticipating the impasse, two groups of Pennsylvanians — one made up of academics, the other of residents who live in population-dense areas —&nbsp;asked Commonwealth Court to intervene in December.
+Anticipating the impasse, two groups of Pennsylvanians — one made up of academics, the other of residents who live in population-dense areas — asked Commonwealth Court to intervene in December.
 
 The court set a Jan. 30 deadline for Wolf and lawmakers to finish the map, while also asking the citizen petitioners, Wolf, Republican and Democratic lawmakers, and other approved parties to submit their own proposals by Jan. 24.
 
