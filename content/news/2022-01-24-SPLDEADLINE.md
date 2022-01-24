@@ -46,15 +46,11 @@ County election directors, meanwhile, have to begin preparing poll workers and b
 
 ## What is the status of the congressional map?
 
-The state Senate is poised to take a final vote on the congressional map today.
+The state Senate took a <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-redistricting-congressional-map-final-passage-tom-wolf/">final vote on the congressional map Monday</a>, passing it 29-20.
 
-If the map is passed without any adjustments, it will be sent to Gov. Tom Wolf’s desk for consideration. Wolf has said he would veto the map in its current form unless there are significant improvements to its partisan fairness.
+It will now be sent to Gov. Tom Wolf for consideration. The Democrat has said he would veto the map in its current form.
 
-If there are amendments to the map, it will be sent back to the House for approval before going to Wolf.
-
-If Wolf vetoes the map, legislators will be directed to start the process over again. However, the courts are likely to step in before this occurs.
-
-Commonwealth Court has set a Jan. 30 deadline for Wolf and the GOP-controlled legislature to finish the map, or it will take over.
+It’s likely the state courts will pick the final map. Commonwealth Court previously said it would take over the process if Wolf and the GOP-controlled legislature failed to reach an agreement by Jan. 30.
 
 Parties approved by the court — including Wolf, the top Republicans and Democrats in the legislature, and groups of concerned citizens — have until the end of Jan. 24 to submit up to two proposed maps. Commonwealth Court will hold hearings on Thursday and Friday to consider them and could pick a map as soon as this weekend.
 
