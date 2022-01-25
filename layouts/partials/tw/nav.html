@@ -18,7 +18,7 @@
         class="relative flex items-center justify-between h-16"
         @click.away="isOpen = false"
       >
-        <span class="hidden md:flex flex-row content-center space-x-6">
+        <span class="hidden lg:flex flex-row content-center space-x-6">
           {{ range site.Menus.main }}
             <a
               class="self-center uppercase text-white hover:text-yellow duration-500"
@@ -35,71 +35,77 @@
               aria-hidden="true"
               style="margin-top: -4px;"
             >
-              <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+              <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
             </svg>
             Support Us
           </a>
         </span>
-        <div class="flex md:hidden items-center">
-          <!-- Mobile menu button-->
-          <button
-            type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-g-1 hover:text-yellow focus:outline-none focus:text-yellow"
-            aria-label="Main menu"
-            :aria-expanded="String(isOpen)"
-            @click="isOpen = !isOpen"
-          >
-            <!-- Heroicon name: menu -->
-            <svg
-              x-show="!isOpen"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <desc>Open menu button</desc>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <!-- Heroicon name: x -->
-            <svg
-              x-cloak=1
-              x-show="isOpen"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <desc>Close menu button</desc>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
+        <div class="flex lg:hidden items-center">
           <div
-            x-show="isOpen"
-            x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="transform opacity-0 scale-95"
-            x-transition:enter-end="transform opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="transform opacity-100 scale-100"
-            x-transition:leave-end="transform opacity-0 scale-95"
-            x-cloak
-            class="absolute inset-y-0 right-0 flex items-center inset-auto w-0"
+            x-data="{ isOpen: false }"
+            x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
+            x-id="['dropdown-button']"
+            class="relative"
           >
-            <div class="relative">
-              <div class="origin-top-right absolute right-0 mt-4 w-48 rounded-md shadow-lg">
-                <ul
-                  class="py-1 rounded-md bg-white shadow-xs"
-                  role="menu"
-                  aria-orientation="vertical"
+              <!-- no JS fallback link to footer -->
+              <a
+                class="flex"
+                href="#footer"
+                :href="null"
+                @click.prevent
+              >
+                <button
+                  type="button"
+                  class="rounded border border-white px-4 py-2 text-white"
+                  x-ref="button"
+                  aria-label="Site Menu"
+                  :aria-expanded="isOpen"
+                  :aria-controls="$id('dropdown-button')"
+                  @click="isOpen = !isOpen"
+                  data-ga-action="menu:toggle"
                 >
-                  {{ range site.Menus.mobile }}
-                    <a
-                      href="{{ .URL }}"
-                      class="block px-4 py-2 text-sm leading-5 text-g-7 hover:bg-g-3 focus:outline-none focus:bg-g-3 transition duration-150 ease-in-out"
-                      role="menuitem"
-                    >{{ .Name }}</a>
-                  {{ end }}
-                </ul>
+                  <svg class="w-4 h-4 fill-current">
+                    <title>Site Menu</title>
+                    <use xlink:href="#bars-svg"></use>
+                  </svg>
+                </button>
+              </a>
+
+            <div
+                x-ref="panel"
+                :id="$id('dropdown-button')"
+                x-show="isOpen"
+                x-cloak
+                x-transition.origin.top.right
+                class="
+                  absolute mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow
+                  py-2 px-4 space-y-2 bg-black text-white uppercase
+                "
+                @click.outside="isOpen = false; $refs.button.focus()"
+                @focusin.outside="isOpen = false"
+            >
+              {{ range site.Menus.main }}
+                <a
+                  class="block w-full hover:text-yellow transition-colors duration-500"
+                  href="{{ .URL }}"
+                >{{ .Name }}</a>
+              {{ end }}
+              <!-- search -->
+              <div class="py-2">
+                <a
+                  class="self-center px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
+                  href='/donate/'
+                >
+                  <svg
+                    class="inline mr-1 h-4 w-4 fill-current"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                    style="margin-top: -4px;"
+                  >
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                  Support Us
+                </a>
               </div>
             </div>
           </div>
