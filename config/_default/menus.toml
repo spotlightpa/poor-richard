@@ -1,7 +1,7 @@
 [[main]]
 pre = "is-uppercase"
 name = "Investigations"
-url = "/series/"
+url = "/investigations/"
 weight = 1
 
 [[main]]
@@ -74,7 +74,7 @@ weight = 6
 [[footer]]
 name = "Special Projects & Investigations"
 pre = "is-uppercase"
-url = "/series/"
+url = "/investigations/"
 weight = 7
 
 [[footer]]
