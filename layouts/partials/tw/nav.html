@@ -16,7 +16,6 @@
         </div>
       <div
         class="relative flex items-center justify-between h-16"
-        @click.away="isOpen = false"
       >
         <span class="hidden lg:flex flex-row content-center space-x-6">
           {{ range site.Menus.main }}
@@ -26,7 +25,22 @@
             >{{ .Name }}</a>
           {{ end }}
           <a
-            class="group self-center px-2 py-1 bg-orange text-white rounded uppercase font-semibold"
+            href="/search/"
+            class="self-center text-white hover:text-yellow"
+            data-ga-category="search"
+            :data-ga-action="'modal:search:open'"
+            x-data
+            @click.prevent="$dispatch('modal:search:open')"
+          >
+            <svg
+              class="fill-current w-4 h-4"
+              :class="{ 'animate-bounce': isLoading }"
+            >
+              <use xlink:href="#search-svg"></use>
+            </svg>
+          </a>
+            <a
+            class="px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold"
             href='/donate/'
           >
             <svg
@@ -90,7 +104,18 @@
                   href="{{ .URL }}"
                 >{{ .Name }}</a>
               {{ end }}
-              <!-- search -->
+              <div>
+                <a
+                  href="/search/"
+                  class="block w-full hover:text-yellow transition-colors duration-500"
+                  data-ga-category="search"
+                  :data-ga-action="'modal:search:open'"
+                  x-data
+                  @click.prevent="$dispatch('modal:search:open')"
+                >
+                  Search
+                </a>
+              </div>
               <div class="py-2">
                 <a
                   class="self-center px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
