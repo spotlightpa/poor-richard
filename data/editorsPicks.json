@@ -1,17 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2022-01-26-SPLTRACK.md"
+    "content/news/2022-01-26-SPLVETO.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2022-01-17-SPLVETO17.md",
-    "content/news/2022-01-14-SPLCONCHANGE15.md"
+    "content/news/2022-01-24-SPLSENMAP.md"
   ],
   "topSlots": [
+    "content/news/2022-01-26-SPLTRACK.md",
     "content/news/2022-01-25-SPLCREDIT26.md",
-    "content/news/2022-01-24-SPLSENMAP.md",
     "content/news/2022-01-18-SPLLEG2022.md"
   ],
   "topper": []
