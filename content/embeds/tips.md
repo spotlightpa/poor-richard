@@ -13,4 +13,9 @@ hint = "Text for tip teaser"
 name = "flag_text"
 placeholder = "Tips"
 hint = "Text for the flag over the box"
+
+[[page-query-params]]
+name = "form_name"
+placeholder = "Valid values: blank, 'contact-page', and 'elections-embed'"
+hint = "Form target type"
 +++

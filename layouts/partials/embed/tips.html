@@ -54,7 +54,6 @@
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
-    name="contact-page"
     class="control"
     action="/contact/thanks/"
     method="post"
@@ -63,6 +62,11 @@
     data-ga-form="contact"
     target="_parent"
   >
+    <input
+      type="hidden"
+      name="form-name"
+      :value="_('form_name', 'contact-page')"
+    />
     <p class="is-hidden">
       <label>
         Don’t fill this out if you're human:
