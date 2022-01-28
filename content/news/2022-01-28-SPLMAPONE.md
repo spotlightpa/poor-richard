@@ -30,9 +30,9 @@ The state court system is set to pick the next map just days after Democratic Go
 
 Anticipating that Wolf and the General Assembly would be unable to agree on a map in time to <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-primary-2022-redistricting-delays/">keep the May primary on track</a>, two suits filed in December asked Commonwealth Court to take over the redistricting process.
 
-In response, the court issued a Jan. 30 deadline to complete the map while also soliciting proposals from the petitioners, Wolf, top lawmakers, and other approved parties in preparation to take over the process. In total, 14 maps were submitted.
+In response, the court issued a Jan. 30 deadline to complete the map while also soliciting proposals from the petitioners, Wolf, top lawmakers, and other approved parties in preparation to take over the process. In total, more than a dozen maps were submitted.
 
-The court could rule as soon as this weekend. But first, each of the 14 proposals will get a thorough airing in front of Judge Patricia McCullough, elected in 2009 as a Republican. Her ruling will likely be appealed to the state Supreme Court, which has a 5-2 Democratic majority.
+The court could rule as soon as this weekend. But first, each of the proposals will get a thorough airing in front of Judge Patricia McCullough, elected in 2009 as a Republican. Her ruling will likely be appealed to the state Supreme Court, which has a 5-2 Democratic majority.
 
 Here’s a recap of what happened on Day 1, with rolling updates from Day 2.
 
