@@ -84,6 +84,50 @@ Republican lawyers and experts emphasized that partisan fairness can only be ach
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8543104"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+## <b>Maps without Testimony</b>:
+
+## The Draw the Lines Map
+
+Draw the Lines PA, a project by good-government group Committee of Seventy, encourages people to get involved in the redistricting project by creating maps. The project assessed over 1,500 submitted maps and included over 7,000 different participants. After this process, it proposed a final version of the congressional map that has more splits than the House Republican map, but is more compact, has more competitive districts, and has a better partisan fairness score.
+
+Wolf highlighted the map as an example of a congressional map that fulfilled redistricting requirements he had previously outlined — such as partisan fairness — while improving upon neutral redistricting criteria.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/202033-jan.24,2022-proposedplandrawthelinesparticipants.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8549943"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## The Khalif Ali, et al. Map
+
+This map was drawn by a group of citizens connected with good-government groups such as the League of Women Voters PA, Common Cause PA, and Fair Districts PA. They based their map on the Governor’s plan, but made modifications to communities of interest in Pittsburgh, Philadelphia, and Harrisburg.
+
+Notably, this map is the only one drawn using data that reallocates incarcerated people to their last known home address rather than the facility where they are incarcerated, mirroring a decision made in the legislative redistricting process.
+
+The map has a slightly higher number of county splits than the other proposed maps, an average level of compactness, and a significant partisan bias in favor of Republicans.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201450-jan.24,2022-khalifalietal.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8550046"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+# Voters supported by Pa. GOP (Leslie Osche, et al., represented by Thomas King III, call themselves “Citizen Voters”)
+
+The primary goal of this group was to reunite counties that were previously split by the 2018 congressional map implemented by the state Supreme Court, such as Washington, Butler, and Centre Counties. The participants also aim to keep communities of interest in one congressional district.
+
+The map scores about average on compactness and has a close to median amount of county splits, with a slight Republican bias.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/195607-jan.24,2022-amicuscitizenvoters.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8550338"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## Republican voters (Haroon Bashir, Valerie Biancaniello, Tegwyn Hughes, and Jeffrey Wenk)
+
+This map was submitted by a group of Republican voters who deemed themselves the “mirror image” of the Carter petitioners. In particular, they argue that neutral redistricting criteria must be subordinate to any other criteria, including partisan fairness.
+
+The map has an average level of compactness in regards to the proposed maps, and has a similarly average number of county splits.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/200409-jan.24,2022-amicusvotersofthecommonwealth.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8550307"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 <i>This story will be updated throughout Friday.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
