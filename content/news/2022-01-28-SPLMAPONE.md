@@ -84,7 +84,39 @@ Republican lawyers and experts emphasized that partisan fairness can only be ach
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8543104"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## <b>Maps without Testimony</b>:
+## The House Democrats Map
+
+Submitted by state Rep. Joanna McClinton (D., Philadelphia), the House Democrats map has a slightly higher level of splits than average and a slightly lower level of compactness than the median of proposals in total. It has the strongest partisan lean toward Democrats among all the proposed maps.
+
+The brief filed alongside the map states that the map fulfills the base neutral criterias outlined by the state Supreme Court, but it does not explain any further.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/200904-jan.24,2022-intervenorjoannamcclinton.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8549812"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## Senate Dems 1
+
+The Senate Democrats map complies with the neutral redistricting criterion, with special attention to maintaining a majority-minority district. It still had a partisan lean favoring Republicans, but did better in fairness than the map proposed by Republican legislators.
+
+The map performed comparably in the other base neutral criteria, though it had a slightly higher level of splits than average and a level of compactness that was below the median of the proposed maps.
+
+Legal counsel for the Senate Democrats spent much of their allotted time dissuading the court from using the Republican lawmakers’ map that was vetoed by Wolf.
+
+“They’re asking you to do more than simply pick a map and in that instance, they’re asking you to promote the legislature over the executive branch in the normal legislative process,” said Marco Attisano, the lawyer representing the Senate Democrats. “The map put forward by the Republican legislators failed the democratic process.”
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201237-jan.24,2022-intervenorsbriefsenatedcaucus.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8550163"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## Senate Dems 2
+
+The legal brief for the Senate Democrats’ proposals notes their second map is a variation on the first that prioritizes greater minority representation in its 2nd District. The map has a slight Democratic lean, and creates one more competitive district than the median of the proposed maps.
+
+It performs similar to the first map by the Senate Democrats in terms of number of splits and compactness.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201237-jan.24,2022-intervenorsbriefsenatedcaucus.pdf">Read the submitted analysis here</a>.
+
+## <u><b>Maps without Testimony</b></u>:
 
 ## The Draw the Lines Map
 
