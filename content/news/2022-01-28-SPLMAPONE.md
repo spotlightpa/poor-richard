@@ -94,6 +94,32 @@ The brief filed alongside the map states that the map fulfills the base neutral 
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8549812"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+## U.S. Rep. Reschenthaler et al. (1)
+
+U.S. Rep. Guy Reschenthaler (R., Pa), who represents the 14th District, submitted two maps, both of which fulfilled base neutral criteria. His maps had the smallest number of county splits amongst all the proposed maps and a slightly above average level of compactness.
+
+Legal counsel for Reschenthaler argued that the court should have a strict interpretation of the requirements in a congressional map, emphasizing that political boundaries such as counties, townships, and municipalities should not be split if it can be avoided.
+
+“Our Constitution has some very specific adjectives in it: Absolutely necessary,” said Matthew Haverstick, the lawyer representing the Reschenthaler intervenors. “There’s only [two maps] that split counties in the least amount.”
+
+The counsel also argued that maps should reflect Pennsylvania’s natural political geography, which favors Republicans despite the creation of district lines that put the political parties on even footing while still fulfilling base neutral criteria, likening it to gerrymandering.
+
+“These formulas are attempts to overcorrect for a very specific partisan purpose,” said Haverstick. “The natural inclination of Pennsylvanians is to elect Republicans based on political geography, again, not based on malice or intent, just based on where they live.”
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8549839"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## U.S. Rep. Reschenthaler et al. (2)
+
+The second Reschenthaler map performs nearly identically to the first in all base neutral criteria, with only a slight decrease in compactness. The map mostly changes in the 12th and 13th Districts, which encompass the Delaware and Chester County regions.
+
+The expert witness brought by the Reschenthaler group cited his experience as a Republican campaign director across the state, critiquing the real-world impact of mathematical models that measure partisan fairness.
+
+“I think all the experts are brilliant individuals and these mathematical models have some extraordinary features … but the problem with what they testified about is, what’s the power of their models,” said Keith Naughton, a well-known Republican political consultant.
+
+<a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201020-jan.24,2022-intervenorreschenthaleretalbrief.pdf">Read the submitted analysis here</a>.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8549889"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 ## Senate Dems 1
 
 The Senate Democrats map complies with the neutral redistricting criterion, with special attention to maintaining a majority-minority district. It still had a partisan lean favoring Republicans, but did better in fairness than the map proposed by Republican legislators.
@@ -160,6 +186,12 @@ The map has an average level of compactness in regards to the proposed maps, and
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550307"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-<i>This story will be updated throughout Friday.</i>
+## Concerned Citizens for Democracy
+
+Concerned Citizens for Democracy, a good-government group, submitted a map to the court without a brief. The map had four competitive districts, the highest number among all the proposed maps, and scores fairly well in partisan fairness.
+
+<div class="flourish-embed flourish-map" data-src="visualisation/8550264"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<i>This story was updated throughout Friday.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
