@@ -20,9 +20,9 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-HARRISBURG — Teams representing Gov. Tom Wolf, state Republican lawmakers, and other groups of Pennsylvanians spent much of Thursday explaining to a judge why their proposed congressional map is the best, widely agreeing on the basics but differing on how to weigh factors like partisan fairness.
+HARRISBURG — Teams representing Gov. Tom Wolf, state Republican lawmakers, and other groups of Pennsylvanians spent much of Thursday and Friday explaining to a judge why their proposed congressional map is the best, widely agreeing on the basics but differing on how to weigh factors like partisan fairness.
 
-Their testimony kicked off at least two days of hearings in Commonwealth Court on district lines that could affect the balance of power in Washington for the next decade.
+Commonwealth Court heard two days of testimony on district lines that could affect the balance of power in Washington for the next decade.
 
 The state court system is set to pick the next map just days after Democratic Gov. Tom Wolf <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-redistricting-congressional-map-veto/">vetoed a proposal sent to him by the Republican-controlled legislature</a>. Because of Pennsylvania’s sluggish population growth over the past decade, the state will lose one of its 18 seats.
 
@@ -32,11 +32,11 @@ Anticipating that Wolf and the General Assembly would be unable to agree on a ma
 
 In response, the court issued a Jan. 30 deadline to complete the map while also soliciting proposals from the petitioners, Wolf, top lawmakers, and other approved parties in preparation to take over the process. In total, more than a dozen maps were submitted.
 
-The court could rule as soon as this weekend. But first, each of the proposals will get a thorough airing in front of Judge Patricia McCullough, elected in 2009 as a Republican. Her ruling will likely be appealed to the state Supreme Court, which has a 5-2 Democratic majority.
+The court could rule as soon as this weekend. But first, each of the proposals got a thorough airing in front of Judge Patricia McCullough, elected in 2009 as a Republican. Her ruling will likely be appealed to the state Supreme Court, which has a 5-2 Democratic majority.
 
-Here’s a recap of what happened on Day 1, with rolling updates from Day 2.
+Here’s a recap of what happened on during the hearings:
 
-## The Carter petitioners’ map
+## The Carter petitioners map
 
 The first map examined Thursday was offered up by a group of citizens who live in densely populated areas.
 
@@ -50,7 +50,7 @@ Despite significant population change, 87% of residents would stay in the same d
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8541779"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## The Gressman petitioners’ map
+## The Gressman petitioners map
 
 The second map was offered by the Gressman petitioners, a group of mathematicians and scientists from across the state.
 
@@ -72,7 +72,7 @@ Expert witness Moon Duchin, an associate professor of mathematics at Tufts Unive
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8543086"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## The state Republican lawmakers’ map
+## The state Republican lawmakers map
 
 This map was passed through the legislative process, initially drawn by Amanda Holt — a noted redistricting advocate and former Lehigh County Commissioner — and championed by state Rep. Seth Grove (R., York).
 
@@ -84,45 +84,45 @@ Republican lawyers and experts emphasized that partisan fairness can only be ach
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8543104"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## The House Democrats Map
+## The state House Democrats map
 
-Submitted by state Rep. Joanna McClinton (D., Philadelphia), the House Democrats map has a slightly higher level of splits than average and a slightly lower level of compactness than the median of proposals in total. It has the strongest partisan lean toward Democrats among all the proposed maps.
+Submitted by House Minority Leader Joanna McClinton (D., Philadelphia), the House Democrats’ map has a slightly higher level of splits than average and a slightly lower level of compactness than the median of proposals in total. It has the strongest partisan lean toward Democrats among all the proposed maps.
 
-The brief filed alongside the map states that the map fulfills the base neutral criterias outlined by the state Supreme Court, but it does not explain any further.
+The brief filed alongside the map states that it fulfills the base neutral criteria outlined by the state Supreme Court, but it does not explain any further.
 
 <a href="https://www.pacourts.us/Storage/media/pdfs/20220125/200904-jan.24,2022-intervenorjoannamcclinton.pdf">Read the submitted analysis here</a>.
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8549812"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## U.S. Rep. Reschenthaler et al. (1)
+## Reschenthaler map 1
 
-U.S. Rep. Guy Reschenthaler (R., Pa), who represents the 14th District, submitted two maps, both of which fulfilled base neutral criteria. His maps had the smallest number of county splits amongst all the proposed maps and a slightly above average level of compactness.
+U.S. Rep. Guy Reschenthaler (R., Pa), who represents the 14th District, and a group of former Republican members of Congress submitted two maps, both of which fulfilled base neutral criteria. His maps had the smallest number of county splits amongst all the proposed maps and a slightly above average level of compactness.
 
 Legal counsel for Reschenthaler argued that the court should have a strict interpretation of the requirements in a congressional map, emphasizing that political boundaries such as counties, townships, and municipalities should not be split if it can be avoided.
 
-“Our Constitution has some very specific adjectives in it: Absolutely necessary,” said Matthew Haverstick, the lawyer representing the Reschenthaler intervenors. “There’s only [two maps] that split counties in the least amount.”
+“Our constitution has some very specific adjectives in it: absolutely necessary,” said Matthew Haverstick, the lawyer representing the Reschenthaler intervenors. “There’s only [two maps] that split counties in the least amount.”
 
-The counsel also argued that maps should reflect Pennsylvania’s natural political geography, which favors Republicans despite the creation of district lines that put the political parties on even footing while still fulfilling base neutral criteria, likening it to gerrymandering.
+Haverstick also argued that maps should reflect Pennsylvania’s natural political geography, which favors Republicans despite the creation of district lines that put the political parties on even footing while still fulfilling base neutral criteria, likening it to gerrymandering.
 
 “These formulas are attempts to overcorrect for a very specific partisan purpose,” said Haverstick. “The natural inclination of Pennsylvanians is to elect Republicans based on political geography, again, not based on malice or intent, just based on where they live.”
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8549839"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## U.S. Rep. Reschenthaler et al. (2)
+## Reschenthaler map 2
 
 The second Reschenthaler map performs nearly identically to the first in all base neutral criteria, with only a slight decrease in compactness. The map mostly changes in the 12th and 13th Districts, which encompass the Delaware and Chester County regions.
 
 The expert witness brought by the Reschenthaler group cited his experience as a Republican campaign director across the state, critiquing the real-world impact of mathematical models that measure partisan fairness.
 
-“I think all the experts are brilliant individuals and these mathematical models have some extraordinary features … but the problem with what they testified about is, what’s the power of their models,” said Keith Naughton, a well-known Republican political consultant.
+“I think all the experts are brilliant individuals and these mathematical models have some extraordinary features … but the problem with what they testified about is, what’s the power of their models?” said Keith Naughton, a well-known Republican political consultant.
 
 <a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201020-jan.24,2022-intervenorreschenthaleretalbrief.pdf">Read the submitted analysis here</a>.
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8549889"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## Senate Dems 1
+## State Senate Democrats map 1
 
-The Senate Democrats map complies with the neutral redistricting criterion, with special attention to maintaining a majority-minority district. It still had a partisan lean favoring Republicans, but did better in fairness than the map proposed by Republican legislators.
+The Senate Democrats’ first map complies with the neutral redistricting criterion, with special attention to maintaining a majority-minority district. It still had a partisan lean favoring Republicans but did better in fairness than the map proposed by Republican legislators.
 
 The map performed comparably in the other base neutral criteria, though it had a slightly higher level of splits than average and a level of compactness that was below the median of the proposed maps.
 
@@ -134,19 +134,21 @@ Legal counsel for the Senate Democrats spent much of their allotted time dissuad
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550163"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## Senate Dems 2
+## State Senate Democrats map 2
 
-The legal brief for the Senate Democrats’ proposals notes their second map is a variation on the first that prioritizes greater minority representation in its 2nd District. The map has a slight Democratic lean, and creates one more competitive district than the median of the proposed maps.
+The legal brief for the Senate Democrats’ proposals notes their second map is a variation on the first that prioritizes greater minority representation in its 2nd District. The map has a slight Democratic lean and creates one more competitive district than the median of the proposed maps.
 
-It performs similar to the first map by the Senate Democrats in terms of number of splits and compactness.
+It performs similar to the first map by the Senate Democrats in terms of the number of splits and compactness.
 
 <a href="https://www.pacourts.us/Storage/media/pdfs/20220125/201237-jan.24,2022-intervenorsbriefsenatedcaucus.pdf">Read the submitted analysis here</a>.
 
-## <u><b>Maps without Testimony</b></u>:
+<div class="flourish-embed flourish-map" data-src="visualisation/8550183"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## The Draw the Lines Map
+## <u><b>Maps without testimony</b></u>:
 
-Draw the Lines PA, a project by good-government group Committee of Seventy, encourages people to get involved in the redistricting project by creating maps. The project assessed over 1,500 submitted maps and included over 7,000 different participants. After this process, it proposed a final version of the congressional map that has more splits than the House Republican map, but is more compact, has more competitive districts, and has a better partisan fairness score.
+## The Draw the Lines map
+
+Draw the Lines PA, a project by the good-government group Committee of Seventy, encouraged people to get involved in the redistricting project by creating maps. The project assessed over 1,500 submitted maps and included over 7,000 different participants. After this process, it proposed a final version of the congressional map that has more splits than the House Republican map, but is more compact, has more competitive districts, and has a better partisan fairness score.
 
 Wolf highlighted the map as an example of a congressional map that fulfilled redistricting requirements he had previously outlined — such as partisan fairness — while improving upon neutral redistricting criteria.
 
@@ -154,9 +156,9 @@ Wolf highlighted the map as an example of a congressional map that fulfilled red
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8549943"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## The Khalif Ali, et al. Map
+## The Khalif Ali map
 
-This map was drawn by a group of citizens connected with good-government groups such as the League of Women Voters PA, Common Cause PA, and Fair Districts PA. They based their map on the Governor’s plan, but made modifications to communities of interest in Pittsburgh, Philadelphia, and Harrisburg.
+This map was drawn by a group of citizens connected with good-government groups such as the League of Women Voters PA, Common Cause PA, and Fair Districts PA. They based their map on the governor’s plan, but made modifications to communities of interest in Pittsburgh, Philadelphia, and Harrisburg.
 
 Notably, this map is the only one drawn using data that reallocates incarcerated people to their last known home address rather than the facility where they are incarcerated, mirroring a decision made in the legislative redistricting process.
 
@@ -166,9 +168,9 @@ The map has a slightly higher number of county splits than the other proposed ma
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550046"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-# Voters supported by Pa. GOP (Leslie Osche, et al., represented by Thomas King III, call themselves “Citizen Voters”)
+# Citizen Voters map
 
-The primary goal of this group was to reunite counties that were previously split by the 2018 congressional map implemented by the state Supreme Court, such as Washington, Butler, and Centre Counties. The participants also aim to keep communities of interest in one congressional district.
+The primary goal of this group of voters — whose counsel was compensated by the Pennsylvania Republican Party — was to reunite counties that were previously split by the 2018 congressional map implemented by the state Supreme Court, such as Washington, Butler, and Centre Counties. The participants also aimed to keep communities of interest in one congressional district.
 
 The map scores about average on compactness and has a close to median amount of county splits, with a slight Republican bias.
 
@@ -176,22 +178,20 @@ The map scores about average on compactness and has a close to median amount of 
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550338"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## Republican voters (Haroon Bashir, Valerie Biancaniello, Tegwyn Hughes, and Jeffrey Wenk)
+## Republican voters map
 
-This map was submitted by a group of Republican voters who deemed themselves the “mirror image” of the Carter petitioners. In particular, they argue that neutral redistricting criteria must be subordinate to any other criteria, including partisan fairness.
+This map was submitted by a group of Republican voters who deemed themselves the “mirror image” of the Carter petitioners. In particular, they argued that neutral redistricting criteria must be subordinate to any other criteria, including partisan fairness.
 
-The map has an average level of compactness in regards to the proposed maps, and has a similarly average number of county splits.
+The map has an average level of compactness in regards to the proposed maps and has a similarly average number of county splits.
 
 <a href="https://www.pacourts.us/Storage/media/pdfs/20220125/200409-jan.24,2022-amicusvotersofthecommonwealth.pdf">Read the submitted analysis here</a>.
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550307"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-## Concerned Citizens for Democracy
+## Concerned Citizens for Democracy map
 
 Concerned Citizens for Democracy, a good-government group, submitted a map to the court without a brief. The map had four competitive districts, the highest number among all the proposed maps, and scores fairly well in partisan fairness.
 
 <div class="flourish-embed flourish-map" data-src="visualisation/8550264"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-<i>This story was updated throughout Friday.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
