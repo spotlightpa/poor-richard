@@ -1,9 +1,9 @@
 +++
 arc-id = "BAOJFL3C2VHDTNDGGCVJMA4O4Y"
 authors = ["Angela Couloumbis", "Joseph N. DiStefano", "Craig R. McCoy"]
-blurb = "An internal review into PSERS' exaggerated profit figure was presented to board members Monday, but it's unclear if and when the public will learn the results."
+blurb = "An internal review of PSERS' exaggerated profit figure was presented to board members Monday, but it's unclear if and when the public will learn the results."
 byline = "Angela Couloumbis of Spotlight PA and Joseph N. DiStefano and Craig R. McCoy of The Inquirer"
-description = "An internal review into PSERS' exaggerated profit figure was presented to board members Monday, but it's unclear if and when the public will learn the results."
+description = "An internal review of PSERS' exaggerated profit figure was presented to board members Monday, but it's unclear if and when the public will learn the results."
 image = "external/g8h5znt0ecczsq4m25dy3ybce8.jpeg"
 image-credit = "TIM TAI / Philadelphia Inquirer"
 image-description = "PSERS brought in legal assistance as it learned that federal investigators had subpoenaed information about the board’s adoption of a false, unduly high figure for investment returns."
