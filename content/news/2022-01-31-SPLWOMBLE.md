@@ -45,7 +45,7 @@ The fund brought in Womble, along with two other outside law firms, as it learne
 
 Federal authorities have said nothing about their investigations. Their completion, whenever that occurs, is sure to be another watershed event for the massive pension fund, which sends $6 billion yearly in retirement checks to ex-teachers and other former school workers.
 
-PEERS has also been silent about the issues under investigation. In a leaked document obtained by The Inquirer and Spotlight PA, <a href="https://www.inquirer.com/business/psers-pension-error-mistake-teachers-fbi-20210530.html">one of the fund’s key consultants, Chicago-based Aon, seemed to take the blame </a>for part of the problem, saying investment-performance data had been corrupted by “inadvertent clerical mistakes at a data-entry level.”
+PSERS has also been silent about the issues under investigation. In a leaked document obtained by The Inquirer and Spotlight PA, <a href="https://www.inquirer.com/business/psers-pension-error-mistake-teachers-fbi-20210530.html">one of the fund’s key consultants, Chicago-based Aon, seemed to take the blame </a>for part of the problem, saying investment-performance data had been corrupted by “inadvertent clerical mistakes at a data-entry level.”
 
 Other leaked documents suggested that the fund had erred by using unaudited figures in its initial calculation of performance profits.
 
