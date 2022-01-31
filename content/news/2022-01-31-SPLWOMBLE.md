@@ -37,7 +37,7 @@ At least three of the volunteer board’s 15 members — Nathan Mains, chief exe
 
 {{<picture src="external/etscbwakqmhk7vf1rqbgqv5mq8.jpeg" description="Republican State Treasurer Stacy Garrity was one of at least three of the board’s 15 members who said publicly they would not sign the NDA." caption="Republican State Treasurer Stacy Garrity was one of at least three of the board’s 15 members who said publicly they would not sign the NDA." credit="TYGER WILLIAMS / Philadelphia Inquirer">}} 
 
-“It is unfortunate,” Main wrote to the board over the weekend, “that actions by a few have overly-complicated a process that should have been simple — conduct a thorough investigation, present the findings to the full Board and permit the public to understand what has occurred through a transparent release of the report.
+“It is unfortunate,” Mains wrote to the board over the weekend, “that actions by a few have overly-complicated a process that should have been simple — conduct a thorough investigation, present the findings to the full Board and permit the public to understand what has occurred through a transparent release of the report.
 
 “I urge my fellow trustees to act unanimously to direct that the findings of the internal investigation be made available to the public as comprehensively and quickly as is possible,” Mains added. “The annuitants and the public are entitled to nothing less than immediate and transparent disclosure following the Womble briefing.”
 
