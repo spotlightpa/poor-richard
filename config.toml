@@ -83,6 +83,14 @@ notAlternative = true
     investigator-action = "https://email-alerts.data.spotlightpa.org/api/subscribe"
     papost-action = "https://email-alerts.data.spotlightpa.org/api/subscribe"
 
+[security.exec]
+allow = [
+  '^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^babel$'
+]
+
+[security.funcs]
+getenv = ["^HUGO_", "^IMGPROXY_URL$"]
+
 [[module.mounts]]
 source = "assets"
 target = "assets"
