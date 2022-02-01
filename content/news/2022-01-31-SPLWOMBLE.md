@@ -21,58 +21,46 @@ topics = ["Pensions"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — In a secret session and after the circulation of a <a href="https://www.inquirer.com/news/psers-nda-sec-investigation-fbi-20211004.html">controversial non-disclosure agreement</a>, the board of Pennsylvania’s embattled teachers’ pension fund is finally learning <a href="https://www.inquirer.com/business/psers-pension-plan-investigation-probe-wolf-20211118.html">the results of a months-long internal review</a> into its exaggerated profit figure and questions about its purchase of Harrisburg real estate.
+HARRISBURG — A $484,000 probe of Pennsylvania’s biggest pension fund by a law firm hired by the retirement plan was undermined by the refusal of a key consultant to cooperate, people familiar with the inquiry said Monday.
 
-For three months, the 15 board members of the $73 billion Pennsylvania Public School Employees’ Retirement System have <a href="https://www.inquirer.com/business/psers-womble-nda-secrecy-report-fbi-sec-pension-fund-20220127.html">nervously and gingerly debated when to hear the potentially explosive report</a> by a fund-hired law firm, repeatedly pushing back the date to do so. On Monday morning, the board went into a closed meeting in Harrisburg to be briefed on the report.
+Aon Consulting, a Chicago firm that played a crucial role in what turned out to be a botched calculation by Public School Employees’ Retirement System officials, would not assist the law firm in its attempt to conduct a parallel investigation into issues that have also been under federal criminal investigation for months, the sources said.
 
-It remains unclear when and how much the public will learn about the firm’s review. The lawyers from the <a href="https://www.inquirer.com/business/psers-pension-fund-pa-teachers-mistake-error-lawyers-20210319.html">Womble Bond Dickinson law firm</a>, who so far have been paid nearly $500,000 for their investigation, put the board on edge in November by citing the strong legal rights of those criticized in the review and suggesting that the fund might release only a summary or a censored document.
+Lawyers with Womble Bond Dickinson, the firm hired by the PSERS board in March to conduct an internal investigation and compile a report, spent more than eight hours Monday briefing the board on its findings, cautioning that Aon’s refusal had denied investigators a big piece of the puzzle. All but one of the 15 fund board members attended the session, either in person or remotely.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-To keep the report secret for now, PSERS asked board members to sign a highly detailed, four-page nondisclosure agreement that forbids the release of anything from the review to unauthorized people or “any member of the media.’” The signers must agree that their release of information would cause “irreparable harm” to the board.
+By 9 p.m., the board was still meeting behind closed doors and had not released the report.
 
-Several board members have lambasted the NDA and said they would refuse to sign it. Gov. Tom Wolf and other political leaders have called for the so-called Womble report to be made public. After several days of debate over the NDA, the pension fund clarified that members would not be required to sign it.
+The $73 billion pension fund hired Womble in March as it learned that federal prosecutors, the FBI, and the U.S. Securities &amp; Exchange Commission had subpoenaed information about the board’s adoption of a false, unduly high calculation for the fund’s investment profits. Womble, like the federal investigators, had also examined the fund’s $5 million appropriation to buy real estate near its offices and into <a href="https://www.inquirer.com/business/psers-compensation-gifts-sec-fbi-pension-fund-pennsylvania-teachers-subpoena-20210925.html">suggestions that PSERS staff improperly accepted gifts from vendors.</a>
 
-At least three of the volunteer board’s 15 members — Nathan Mains, chief executive of the state’s School Boards Association, state Treasurer Stacy Garrity and state Sen. Katie Muth (D., Montgomery) — said publicly they would not sign the NDA.
+In her presentation to the board, made with hundreds of graphics, Womble lawyer Claire Rauscher told the panel that, unlike federal prosecutors, her firm had no subpoena power and thus could not force Aon to cooperate.
 
-{{<picture src="external/etscbwakqmhk7vf1rqbgqv5mq8.jpeg" description="Republican State Treasurer Stacy Garrity was one of at least three of the board’s 15 members who said publicly they would not sign the NDA." caption="Republican State Treasurer Stacy Garrity was one of at least three of the board’s 15 members who said publicly they would not sign the NDA." credit="TYGER WILLIAMS / Philadelphia Inquirer">}} 
+The botched calculation was no academic error. Under state law, how much working teachers and taxpayers pay into the retirement system hinges on investment returns. While PSERS later fixed the error, its adoption of new, lower figures forced 100,000 working teachers and other school staff to put more of their pay into the system.
 
-“It is unfortunate,” Mains wrote to the board over the weekend, “that actions by a few have overly-complicated a process that should have been simple — conduct a thorough investigation, present the findings to the full Board and permit the public to understand what has occurred through a transparent release of the report.
+While PSERS has kept silent for months about all the matters under investigation, The Inquirer and Spotlight PA obtained internal documents last year in which Aon seemed to take much of the blame for the calculation error, a math exercise it carried out with PSERS staff as part of its $750,000 contract with the pension fund.
 
-“I urge my fellow trustees to act unanimously to direct that the findings of the internal investigation be made available to the public as comprehensively and quickly as is possible,” Mains added. “The annuitants and the public are entitled to nothing less than immediate and transparent disclosure following the Womble briefing.”
-
-The fund brought in Womble, along with two other outside law firms, as it learned that federal prosecutors, the FBI, and the U.S. Securities &amp; Exchange Commission had subpoenaed information about the board’s adoption of a false, unduly high figure for investment returns. The federal investigators have also been looking at the fund’s $5 million appropriation to buy real estate near its offices and into <a href="https://www.inquirer.com/business/psers-compensation-gifts-sec-fbi-pension-fund-pennsylvania-teachers-subpoena-20210925.html">suggestions that PSERS staff improperly accepted gifts from vendors.</a>
-
-Federal authorities have said nothing about their investigations. Their completion, whenever that occurs, is sure to be another watershed event for the massive pension fund, which sends $6 billion yearly in retirement checks to ex-teachers and other former school workers.
-
-PSERS has also been silent about the issues under investigation. In a leaked document obtained by The Inquirer and Spotlight PA, <a href="https://www.inquirer.com/business/psers-pension-error-mistake-teachers-fbi-20210530.html">one of the fund’s key consultants, Chicago-based Aon, seemed to take the blame </a>for part of the problem, saying investment-performance data had been corrupted by “inadvertent clerical mistakes at a data-entry level.”
+In an apologetic letter to PSERS, Steve Voss, head of Aon Investments for North America, said investment-performance data had been corrupted by “inadvertent clerical mistakes at a data-entry level.”
 
 Other leaked documents suggested that the fund had erred by using unaudited figures in its initial calculation of performance profits.
 
-PSERS hired Womble in March to review “the circumstances that preceded and followed” <a href="https://www.inquirer.com/news/psers-grell-pension-teachers-recalculation-20210418.html">PSERS’ “misstatement of investment performance” in a key vote in December 2020.</a> The board said wrongly that return was just above a target that would have forced 100,000 working staff hired in the last decade to pay 8% of their paychecks to finance the system, up from 7.5%.
+On Monday, a spokesperson for Aon said the firm would have no comment on the Womble report, regardless of what it said.
 
-## Internal PSERS email revealed
+For three months, the 15 board members of PSERS have <a href="https://www.inquirer.com/business/psers-womble-nda-secrecy-report-fbi-sec-pension-fund-20220127.html">nervously and gingerly debated when to hear the potentially explosive report</a>, repeatedly pushing back the date to do so.
 
-In April, that’s exactly what happened when the board admitted the figure was wrong. It adopted a new, lower number that forced an increase in payments by working teachers and their colleagues.
+To keep the report secret for now, PSERS asked board members to sign a highly detailed, four-page non-disclosure agreement that forbids the release of anything from the review to unauthorized people or “any member of the media.” The signers must agree that their release of information would cause “irreparable harm” to the board.
 
-But before the error was apparent, the higher figure was celebrated in an exchange between then-PSERS Executive Director Glen Grell and James Vaughan, executive director of the influential Pennsylvania State Education Association union, whose members hold five PSERS board seats. Their email exchange was recently obtained by The Inquirer by filing a request under the state Right-to-Know Law.
+Several board members have lambasted the NDA and said they would refuse to sign it. Gov. Tom Wolf and other political leaders have called for the Womble report to be made public. After several days of debate over the NDA, the pension fund clarified that members would not be required to sign it. It was not known Monday how many board members did so.
 
-“Heads up,” Grell wrote to Vaughan on Dec. 3, 2020, the evening before the board meeting at which the initial profit report was made public.
+At least three of the volunteer board’s 15 members — Nathan Mains, chief executive of the state’s School Boards Association, state Treasurer Stacy Garrity, and state Sen. Katie Muth (D., Montgomery) — said publicly they would not sign the NDA.
+
+“It is unfortunate,” Mains wrote his board colleagues over the weekend, “that actions by a few have overly-complicated a process that should have been simple — conduct a thorough investigation, present the findings to the full board and permit the public to understand what has occurred through a transparent release of the report.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-Teachers would face no hike, Grell wrote. He said PSERS had narrowly crested the figure that would have triggered the rise in payments.
+“I urge my fellow trustees to act unanimously to direct that the findings of the internal investigation be made available to the public as comprehensively and quickly as is possible,” Mains added. “The annuitants and the public are entitled to nothing less than immediate and transparent disclosure following the Womble briefing.”
 
-“Now that is some fantastic news right there!” the union leader wrote back.
+PSERS hired Womble in March to review “the circumstances that preceded and followed” the <a href="https://www.inquirer.com/news/psers-grell-pension-teachers-recalculation-20210418.html">“misstatement of investment performance” in a key vote in December 2020.</a> The board wrongly said that the agency’s return was just above a target that would have forced 100,000 working staff hired in the last decade to pay 8% of their paychecks to finance the system, up from 7.5%.
 
-He added: “I bet more than a few are celebrating that. Wow! That’s close.”
-
-“AND it’s somebody’s final Board Meeting!!” Grell added.
-
-This was a swipe at then-state Treasurer Joseph Torsella, who was leaving the board, having lost his ex officio seat after his reelection defeat the previous month. <a href="https://www.inquirer.com/business/joe-torsella-treasurer-pa-pennsylvania-psers-pensions-teachers-lost-harrisburg-20210220.html">Torsella had been a persistent critic of fund management.</a> The union has been a persistent ally.
-
-Torsella’s departure would also prove short-lived: He soon returned to the board as Wolf’s representative, where he renewed a push for investment reforms. As for Grell, he <a href="https://www.inquirer.com/business/psers-pension-board-retire-fbi-sec-departures-20211118.html">announced his retirement in November.</a>
-
-<i>This developing story will be updated.</i>
+In April, that’s what happened when the board admitted the figure was wrong. It adopted a new, lower number that forced an increase in payments by working teachers and their colleagues.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
