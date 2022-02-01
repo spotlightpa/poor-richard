@@ -68,7 +68,7 @@ nuAt the end of Monday’s marathon session, the board met briefly in public, in
 
 “This is the kind of transparency that will give the public confidence in our actions,” said board member Stacy Garrity, the state treasurer and a critic of the agency.
 
-“I feel like I just went through 15 hours of mental water boarding,” said state Sen. Katie Muth, D-Montgomery County. “And I’m sick that bus drivers and school support staff and teachers and all school employees have to fight for good pay and benefits and get an average of $26k in a pension yet there’s no problem with spending $13.5 million on crap (Harrisburg real estate, millions in legal fees for lawyers that the system shouldn’t need if nothing bad happened, and hundreds of millions in Wall Street fees.”endnu
+“I feel like I just went through 15 hours of mental water boarding,” said state Sen. Katie Muth, D-Montgomery County. “And I’m sick that bus drivers and school support staff and teachers and all school employees have to fight for good pay and benefits and get an average of $26k in a pension yet there’s no problem with spending $13.5 million on crap Harrisburg real estate, millions in legal fees for lawyers that the system shouldn’t need if nothing bad happened, and hundreds of millions in Wall Street fees.”
 
 # Not a minor math mistake
 
