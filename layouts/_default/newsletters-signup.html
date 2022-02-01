@@ -21,7 +21,7 @@
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
-    action='{{ .Param "investigator-action" }}'
+    action='{{ .Param "newsletters-action" }}'
     method="post"
     target="_blank"
     data-ga-category="all-newsletters"
@@ -87,8 +87,10 @@
                     </article>
                   </label>
                   <p class="mt-2">
-                    <a href="{{ $page.RelPermalink }}#archives"
-                    >View Archives</a>
+                    {{ if len $page.Pages }}
+                      <a href="{{ $page.RelPermalink }}#archives"
+                      >View Archives</a>
+                    {{ end }}
                   </p>
                   <label class="mt-2 is-block">
                     <input

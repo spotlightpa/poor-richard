@@ -3,15 +3,15 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <section data-ga-category="inline">
   <form
-    action='{{ site.Param "newsletters-action" }}'
+    action='{{ .Page.Param "newsletters-action" }}'
     method="post"
     target="_blank"
-    data-ga-form="newsletters:papost"
-    data-ga-category="newsletters:papost-full"
+    data-ga-form="newsletters:palocal"
+    data-ga-category="newsletters:palocal-full"
   >
-    {{ partial "newsletter/papost-hidden.html" . }}
+    {{ partial "newsletter/palocal-hidden.html" . }}
     <h2 class="title is-3">
-      Sign Up for PA Post
+      Sign Up for PA Local
     </h2>
     <div class="field">
       <label class="label" for='{{ $idFname }}'>First Name</label>
