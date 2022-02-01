@@ -15,7 +15,7 @@ no-index = false
 published = 2022-01-31T14:04:21.853-05:00
 series = ["The PSERS Scandal"]
 slug = "pennsylvania-school-pension-fund-womble-report"
-title = "Pa.’s $73 billion school pension fund will finally learn what went wrong with key calculation"
+title = "Key consultant refused to cooperate with probe into Pa.’s $73 billion school pension: sources"
 topics = ["Pensions"]
 +++
 
