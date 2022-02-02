@@ -17,16 +17,16 @@
       <div
         class="relative flex items-center justify-between h-16"
       >
-        <span class="hidden lg:flex flex-row content-center space-x-6">
+        <span class="hidden lg:flex flex-row items-center content-between space-x-6">
           {{ range site.Menus.main }}
             <a
-              class="self-center uppercase text-white hover:text-yellow duration-500"
+              class="uppercase text-white hover:text-yellow duration-500"
               href="{{ .URL }}"
             >{{ .Name }}</a>
           {{ end }}
           <a
             href="/search/"
-            class="self-center text-white hover:text-yellow"
+            class="text-white hover:text-yellow"
             data-ga-category="search"
             :data-ga-action="'modal:search:open'"
             x-data
@@ -118,7 +118,7 @@
               </div>
               <div class="py-2">
                 <a
-                  class="self-center px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
+                  class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
                   href='/donate/'
                 >
                   <svg
