@@ -1,31 +1,25 @@
 {{ $src := .Param "image" }}
 
-{{ $widths := slice 2271 }}
-{{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
-{{ $srcset := dict "sizes" $sizes "filename" $src | partial "helper/build-srcset" }}
+{{ $imgOpt := dict
+  "filename" (.Param "image")
+  "width" 2271
+  "height" 1431
+  "gravity" "ce"
+}}
+{{ $url := partial "helper/imgproxy" $imgOpt }}
 
 <div class="relative flex flex-col bg-transparent text-white">
-  <figure
-    class="absolute inset-0 flex bg-robin"
-    style="z-index: -1;"
+  <div
+    class="absolute inset-0 flex bg-robin bg-cover"
+    style="
+      background-image: url({{ $url }});
+      object-position: 38% 0;
+      z-index: -1;
+    "
     aria-hidden="true"
   >
-    <img
-      class="w-full object-cover overflow-hidden"
-      {{/* Safari object-fit cover bug fix */}}
-      style="
-        height: calc(100% + 1px);
-        object-position: 38% 0;
-      "
-      srcset="{{ $srcset }}"
-      sizes="100vw"
-      alt='{{ .Param "image-description" }}'
-    />
     <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"></div>
-    <figcaption
-      class="absolute right-0 bottom-0 p-1 text-g-1 leading-none backdrop-filter backdrop-fallback backdrop-brightness-75 backdrop-blur"
-    >{{ .Param "image-credit" }}</figcaption>
-  </figure>
+  </div>
   <nav
     class="flex"
     data-ga-category="header"
@@ -68,14 +62,14 @@
     <a
       data-sf-campaign="7015G0000013pUYQAY"
       class="
-        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-75 shadow
+        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
       "
       href="/donate/"
     >
       <h2 class="text-3xl font-semibold leading-tight text-center uppercase">Become a founding donor</h2>
       <p class="mt-2 text-2xl leading-snug">
-        Support vital journalism and all gifts up to $200,000 will be
-        <b>doubled</b>.
+        Support our State College bureau and all gifts up to $200,000 will be
+        <b class="uppercase">doubled</b>.
       </p>
       <p class="mt-8 text-center">
         <span
@@ -92,7 +86,7 @@
     <label
       for='{{ $idEmail }}'
       class="
-        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-75 shadow
+        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
       "
     >
       <form
@@ -105,7 +99,7 @@
 
         <h2 class="text-3xl font-semibold leading-tight text-center uppercase">Sign Up For Updates</h2>
         <p class="mt-2 text-2xl leading-snug">
-          Stay up-to-date on this historic initiative, launching July 2022.
+          Don’t miss a beat as we prepared to launch this historic initiative in July 2022.
         </p>
         <p class="mt-8 flex flex-col sm:flex-row items-stretch gap-2">
           <span class="block relative">
@@ -142,3 +136,13 @@
     </label>
   </div>
 </div>
+<figcaption
+  aria-hidden="true"
+  class="p-1 text-right bg-white text-g-6 text-sm md:text-base font-sans uppercase leading-none"
+>{{ .Param "image-credit" }}</figcaption>
+
+<section class="py-12 px-4 bg-white text-g-9">
+  <article class="mx-auto max-w-prose content-area leading-relaxed">
+    {{ .Content }}
+  </article>
+</section>
