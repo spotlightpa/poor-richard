@@ -183,6 +183,16 @@ html {
   @apply bg-g-3;
 }
 
+.backdrop-fallback {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .backdrop-fallback {
+    background: revert;
+  }
+}
 
 @tailwind components;
 
