@@ -1,0 +1,144 @@
+{{ $src := .Param "image" }}
+
+{{ $widths := slice 2271 }}
+{{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
+{{ $srcset := dict "sizes" $sizes "filename" $src | partial "helper/build-srcset" }}
+
+<div class="relative flex flex-col bg-transparent text-white">
+  <figure
+    class="absolute inset-0 flex bg-robin"
+    style="z-index: -1;"
+    aria-hidden="true"
+  >
+    <img
+      class="w-full object-cover overflow-hidden"
+      {{/* Safari object-fit cover bug fix */}}
+      style="
+        height: calc(100% + 1px);
+        object-position: 38% 0;
+      "
+      srcset="{{ $srcset }}"
+      sizes="100vw"
+      alt='{{ .Param "image-description" }}'
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"></div>
+    <figcaption
+      class="absolute right-0 bottom-0 p-1 text-g-1 leading-none backdrop-filter backdrop-fallback backdrop-brightness-75 backdrop-blur"
+    >{{ .Param "image-credit" }}</figcaption>
+  </figure>
+  <nav
+    class="flex"
+    data-ga-category="header"
+  >
+    <a
+      class="block px-12 pt-5"
+      href="/"
+    >
+      <svg
+        class="
+          filter drop-shadow-outline
+          h-8 lg:h-10
+          fill-current text-white hover:text-yellow
+        "
+        role="img"
+        aria-label="Spotlight PA banner"
+        viewBox="0 0 1024 190"
+      >
+        <use xlink:href="#banner-svg"></use>
+      </svg>
+    </a>
+  </nav>
+  <div class="p-12 leading-tight">
+    <div class="flex flex-col justify-center">
+      <div class="mx-auto md:max-w-min md:whitespace-nowrap">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-shadow">
+          The future of journalism
+          <br class="hidden md:inline">
+          in State College is here.
+        </h1>
+        <h2 class="mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-shadow">
+          Join our historic effort
+          <br class="hidden md:inline">
+          to invigorate local news.
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto w-full max-w-screen-lg pb-4 px-8 flex flex-wrap items-stretch justify-around gap-8">
+    <a
+      data-sf-campaign="7015G0000013pUYQAY"
+      class="
+        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-75 shadow
+      "
+      href="/donate/"
+    >
+      <h2 class="text-3xl font-semibold leading-tight text-center uppercase">Become a founding donor</h2>
+      <p class="mt-2 text-2xl leading-snug">
+        Support vital journalism and all gifts up to $200,000 will be
+        <b>doubled</b>.
+      </p>
+      <p class="mt-8 text-center">
+        <span
+          class="
+            py-3 px-4 rounded-lg
+            bg-orange text-white
+            font-bold tracking-widest leading-none
+            uppercase
+          "
+        >Donate Now</span>
+      </p>
+    </a>
+    {{ $idEmail :=  partial "helper/new-id" .}}
+    <label
+      for='{{ $idEmail }}'
+      class="
+        my-8 p-8 w-96 max-w-full block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-75 shadow
+      "
+    >
+      <form
+        action='{{ .Param "newsletters-action" }}'
+        method="post"
+        data-ga-form='newsletters:statecollege'
+      >
+        {{ partial "newsletter/hidden-input.html" . }}
+        <input type="hidden" name="state_college" value="1" />
+
+        <h2 class="text-3xl font-semibold leading-tight text-center uppercase">Sign Up For Updates</h2>
+        <p class="mt-2 text-2xl leading-snug">
+          Stay up-to-date on this historic initiative, launching July 2022.
+        </p>
+        <p class="mt-8 flex flex-col sm:flex-row items-stretch gap-2">
+          <span class="block relative">
+            <input
+              id="{{ $idEmail }}"
+              class="pl-10 py-2 w-full h-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-orange ring-opacity-50"
+              type="email"
+              name="EMAIL"
+              placeholder="Email address"
+              required
+            />
+            <span
+              class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
+              aria-hidden="true"
+            >
+              <svg class="fill-current h-4 w-auto">
+                <use xlink:href="#email-svg"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="block">
+            <button
+              class="
+                px-4 py-2 w-full h-full rounded
+                bg-orange text-white
+                whitespace-nowrap font-bold uppercase tracking-widest
+                focus:outline-none focus:ring-2 ring-orange ring-opacity-50
+              "
+              type="submit"
+            >Sign Up</button>
+          </span>
+        </p>
+      </form>
+    </label>
+  </div>
+</div>
