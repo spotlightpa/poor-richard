@@ -1,19 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-02-02-SPLSCOPAXX.md"
+    "content/news/2022-02-04-SPLLRC.md"
   ],
   "sidebarPicks": [
-    "content/news/2022-01-26-SPLTRACK.md",
-    "content/news/2021-12-22-SPLMAPTOOL.md"
+    "content/news/2022-01-26-SPLTRACK.md"
   ],
   "subfeatures": [
-    "content/news/2022-01-28-SPLMAPONE.md",
-    "content/news/2022-01-26-SPLVETO.md"
+    "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "topSlots": [
+    "content/news/2022-02-02-SPLSCOPAXX.md",
     "content/news/2022-02-01-SPLPSERSTUES.md",
-    "content/news/2022-01-31-SPLWOMBLE.md",
-    "content/news/2022-01-28-SPLRULINGFAQ.md"
+    "content/news/2022-02-01-SPLSIXBUD.md"
   ],
   "topper": []
 }
