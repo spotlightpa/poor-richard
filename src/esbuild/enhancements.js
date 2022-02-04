@@ -61,7 +61,7 @@ Alpine.directive(
   }
 );
 
-Alpine.magic("report", () => (ev) => void reportClick(ev));
+Alpine.magic("report", () => (ev) => reportClick(ev));
 
 import intersect from "@alpinejs/intersect";
 
