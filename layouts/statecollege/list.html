@@ -68,6 +68,7 @@
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
 <body
+  data-sf-campaign="7015G0000013pUYQAY"
   data-ga-label='{{ $pageCat }}'
   data-ga-category="featured"
   class="bg-beige base-16 font-raleway leading-normal"
@@ -82,7 +83,6 @@
       id="footer"
       class="mt-auto"
       data-ga-category="footer"
-      data-sf-campaign="701f4000000TVuIAAW"
     >
       {{ partial "sc/footer.html" . }}
     </footer>
