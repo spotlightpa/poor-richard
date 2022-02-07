@@ -19,4 +19,9 @@ hint = "Override text for eyebrow"
 name = "button"
 placeholder = "Sign Up"
 hint = "Override text for button"
+
+[[page-query-params]]
+name = "preselect"
+placeholder = "breaking_news, papost, investigator, palocal, state_college"
+hint = "Preselected option"
 +++

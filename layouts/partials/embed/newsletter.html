@@ -20,6 +20,9 @@
         <input type="checkbox" name="contact" value="1">
         I am a robot
     </label>
+    <template x-if="params.get('preselect')">
+      <input type="hidden" :name="params.get('preselect')" value="1" />
+    </template>
   </p>
   <h2
     class="title is-6 has-text-danger has-text-left is-uppercase is-spaced"
@@ -60,7 +63,7 @@
   <div
     class="field"
     x-cloak
-    x-show="hasFocused"
+    x-show="hasFocused && !params.get('preselect')"
     x-transition:enter="fade-enter-active"
     x-transition:enter-start="fade-enter"
     x-transition:leave="fade-enter-active"
