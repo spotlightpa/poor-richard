@@ -12,6 +12,9 @@
     _(name, fallback) {
       return this.params.get(name) || fallback;
     },
+    get preselected() {
+      return this.params.get('preselect');
+    },
   }"
 >
   {{ partial "newsletter/hidden-input.html" . }}
@@ -20,6 +23,9 @@
         <input type="checkbox" name="contact" value="1">
         I am a robot
     </label>
+    <template x-if="!! preselected">
+      <input type="hidden" :name="preselected" value="1" />
+    </template>
   </p>
   <h2
     class="title is-6 has-text-danger has-text-left is-uppercase is-spaced"
@@ -60,7 +66,7 @@
   <div
     class="field"
     x-cloak
-    x-show="hasFocused"
+    x-show="hasFocused && ! preselected"
     x-transition:enter="fade-enter-active"
     x-transition:enter-start="fade-enter"
     x-transition:leave="fade-enter-active"
@@ -72,7 +78,7 @@
             type="checkbox"
             name="papost"
             value="1"
-            checked
+            :checked="! preselected"
             data-ga-button
             data-ga-action="toggle-newsletter:papost"
           >
@@ -86,7 +92,7 @@
             type="checkbox"
             name="investigator"
             value="1"
-            checked
+            :checked="! preselected"
             data-ga-button
             data-ga-action="toggle-newsletter:investigator"
           >
