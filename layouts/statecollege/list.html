@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+<html
+  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+  class="base-17"
+>
   <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     {{- with .Param "title-tag" -}}
       <title>{{ . }}</title>
     {{- else -}}
@@ -66,7 +68,7 @@
     data-sf-campaign="7015G0000013pUYQAY"
     data-ga-label="{{ $pageCat }}"
     data-ga-category="featured"
-    class="bg-beige base-16 font-raleway leading-normal"
+    class="bg-beige font-raleway leading-normal"
   >
     <!-- mobile overflow guard -->
     <div
