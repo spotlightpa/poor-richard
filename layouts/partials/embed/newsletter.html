@@ -12,6 +12,9 @@
     _(name, fallback) {
       return this.params.get(name) || fallback;
     },
+    get preselected() {
+      return this.params.get('preselect');
+    },
   }"
 >
   {{ partial "newsletter/hidden-input.html" . }}
@@ -20,8 +23,8 @@
         <input type="checkbox" name="contact" value="1">
         I am a robot
     </label>
-    <template x-if="params.get('preselect')">
-      <input type="hidden" :name="params.get('preselect')" value="1" />
+    <template x-if="!! preselected">
+      <input type="hidden" :name="preselected" value="1" />
     </template>
   </p>
   <h2
@@ -75,7 +78,7 @@
             type="checkbox"
             name="papost"
             value="1"
-            checked
+            :checked="! preselected"
             data-ga-button
             data-ga-action="toggle-newsletter:papost"
           >
@@ -89,7 +92,7 @@
             type="checkbox"
             name="investigator"
             value="1"
-            checked
+            :checked="! preselected"
             data-ga-button
             data-ga-action="toggle-newsletter:investigator"
           >
