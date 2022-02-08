@@ -92,6 +92,7 @@
         action='{{ .Param "newsletters-action" }}'
         method="post"
         data-ga-form='newsletters:statecollege'
+        target="_blank"
       >
         {{ partial "newsletter/hidden-input.html" . }}
         <input type="hidden" name="state_college" value="1" />
