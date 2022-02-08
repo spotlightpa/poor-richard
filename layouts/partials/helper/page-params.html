@@ -36,7 +36,16 @@
   {{ $eventDateISO = .Format $isoFormat }}
 {{ end }}
 
-{{ $link := .Param "link" | default .RelPermalink }}
+{{ $link := .RelPermalink }}
+{{ if eq .Page.Kind "term" }}
+  {{ if eq (len .Pages) 1 }}
+    {{ $page := index .Pages 0 }}
+    {{ $link = $page.RelPermalink }}
+  {{ end }}
+{{ end }}
+{{ with .Param "link" }}
+  {{ $link = . }}
+{{ end }}
 {{ $params := dict
   "byline" $byline
   "kicker" $kicker
