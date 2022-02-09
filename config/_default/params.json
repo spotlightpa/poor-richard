@@ -1,9 +1,9 @@
 {
-  "banner": "\u003cstrong\u003eSign up for a free daily email briefing of the top news from across PA »\u003c/strong\u003e",
+  "banner": "\u003cstrong\u003eSpotlight PA's planning to launch its first regional bureau. Learn more »\u003c/strong\u003e",
   "banner-active": true,
-  "banner-bg-color": "#75bc43",
-  "banner-link": "/newsletters/papost",
-  "banner-text-color": "#ffffff",
+  "banner-bg-color": "#F6C406",
+  "banner-link": "/statecollege",
+  "banner-text-color": "#000000",
   "footer-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [],
