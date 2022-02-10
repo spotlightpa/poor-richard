@@ -47,6 +47,7 @@
       type="module"
       onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
     ></script>
+
     {{ partial "header/favicons.html" . }}
     <link
       rel="alternate"
@@ -75,11 +76,11 @@
       class="flex flex-col w-screen min-h-screen overflow-x-hidden sm:overflow-x-auto"
     >
       <main data-ga-category="main">
-        {{ partial "sc/main.html" . }}
+        {{ partial "tw/state-college.html" . }}
       </main>
 
       <footer id="footer" class="mt-auto" data-ga-category="footer">
-        {{ partial "sc/footer.html" . }}
+        {{ partial "tw/footer.html" . }}
       </footer>
       {{ $svgs := dict
         "banner-svg" "/img/logos/banner-default-on-trans.svg"
