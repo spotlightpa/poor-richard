@@ -9,11 +9,14 @@ image-credit = "TYGER WILLIAMS / Philadelphia Inquirer"
 image-description = "Information omitted by former PSERS executive director Glen Grell set the stage for the board to vote to certify an incorrect and exaggerated sum for its investment performance."
 internal-budget = "The omitted information set the stage for the board to vote to certify an incorrect and exaggerated sum for its investment performance."
 internal-id = "SPLPSERSTUES"
+kicker = "Pensions"
 modal-exclude = false
 no-index = false
 published = 2022-02-01T17:24:00-05:00
+series = ["The PSERS Scandal"]
 slug = "PSERS-womble-report-pensions-omission"
 title = "Big report on PSERS says former chief executive withheld information from board"
+topics = ["Pensions"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
