@@ -21,15 +21,17 @@ topics = ["Pensions"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-The former top executive of <a href="https://www.inquirer.com/business/psers-sers-pension-fbi-scandal-investigaton-teachers-20210411.html">Pennsylvania’s largest pension fund</a> was warned by his chief financial officer that its <a href="https://www.inquirer.com/business/psers-pension-error-mistake-teachers-fbi-20210530.html">figure for profits might be too high</a>, but instructed his senior staff not to share the cautionary information with the plan’s board, a new investigation found.
+<i>Correction: An article published Feb. 2 incorrectly summarized part of an investigative report about the PSERS pension fund. The story should have made clear that, during a December 2020 board vote to certify investment returns, chief financial officer Brian Carl told chief executive officer Glen Grell that a different accounting method produced a lower figure for returns, but said that this figure lacked “value” and was not based on the most up-to-date financial information.</i>
 
-That decision by then-PSERS chief executive Glen Grell set the stage for the board to vote to certify an incorrect and exaggerated sum for its investment performance — a costly mistake for teachers and one that triggered an ongoing investigation by<a href="https://www.inquirer.com/business/psers-pa-pension-teachers-probe-investigation-20210407.html"> the FBI, federal prosecutors</a>, and financial regulators.
+HARRISBURG — The former top executive of Pennsylvania’s largest pension fund was told by his chief financial officer that a different accounting method produced a lower figure for profits, but that the figure had no “value” because it did not take into account the most up-to-date financial information, a new investigation found.
 
-The inquiry by a law firm that PSERS hired said Grell told the chief financial officer and the plan’s investments chief not to tell the board about the competing figures for profits. “Leave it alone,” Grell wrote in an email less than 30 minutes before the board voted in December 2020.
+After receiving that message, then-Executive Director Glen Grell instructed his staff not to provide the lower figure to the board, although members had asked about it. “Leave it alone,” Grell wrote in an email less than 30 minutes before the board voted in December 2020.
+
+The board then certified the higher figure for its investment performance — only to retract the number later after learning it was corrupted by bad data. The reversal led to an increase in pension payments for teachers and triggered an ongoing investigation by the FBI, federal prosecutors, and financial regulators.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-In rebuttal, Grell’s legal team said he did nothing wrong, and made the right decision because the chief financial officer’s warning was not the “consensus” view and was based on an “illegitimate and inappropriate methodology.”
+In rebuttal, Grell’s legal team said he did nothing wrong, and made the right decision because the lower figure was not the “consensus” view and was based on an “illegitimate and inappropriate methodology.”
 
 The board of PSERS, the $73 billion Public School Employment Retirement System, made public the long-awaited <a href="https://www.inquirer.com/business/psers-pension-fund-pa-teachers-mistake-error-lawyers-20210319.html">report by Womble Bond Dickinson</a> lawyers about midnight Tuesday. Its weary members did so after the panel had met in secret for 15 hours Monday to review the 37-page report and its accompanying 95 pages of rebuttal statements and significant documents.
 
@@ -117,11 +119,13 @@ The three executives exchanged the emails after a board member — the report do
 
 However, the board was never given both numbers, the report said, only the higher one.
 
-In an email, Carl cited the more conservative estimate and asked Grell whether management should consider “holding off” disclosing the lower figure to the board “until we can discuss it further.”
+In an email, Carl cited the lower estimate and asked Grell whether management should consider “holding off” disclosing the lower figure to the board “until we can discuss it further.” He explained to Grell that in his “professional opinion” the lower figure “did not add value,” but notes that “it was requested.”
 
 If the board approved the higher figure, Grell replied to Carl, “leave it alone.” In an interview with Womble, Grossman said that Grell indicated to him that he was not to share it with the board unless someone asked again.
 
-Eighteen minutes later, the board approved the higher figure in a vote without a “no” vote. Torsella and two other skeptical board members abstained.
+The investigative report found that Carl, Grossman, and Aon all agreed at the time that the higher number reflected the correct calculation.
+
+Eighteen minutes later, the board approved the higher figure with nobody voting “no.” Torsella and two other skeptical board members abstained.
 
 According to the Womble probe, PSERS investment experts began to detect flaws in the figure the very next day. By early March, Aon had written the fund to say it had made serious mistakes.
 
