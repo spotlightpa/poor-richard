@@ -84,6 +84,19 @@
                       {{ partial "component/image-block.html" $imgOpts }}
                       <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
                         {{ .LinkTitle }}
+                        <span
+                          class="no-js-hide icon has-text-success has-text-light"
+                          :class="{
+                              'has-text-success': isChecked,
+                              'has-text-light': !isChecked,
+                          }"
+                          role="checkbox"
+                          :aria-checked="isChecked"
+                        >
+                          <svg>
+                            <use xlink:href="#check-svg"></use>
+                          </svg>
+                        </span>
                       </h2>
                       <p>
                         {{ $params.blurb }}
@@ -96,31 +109,17 @@
                       >View Archives</a>
                     {{ end }}
                   </p>
-                  <label class="mt-2 is-block">
-                    <input
-                      hidden
-                      type="checkbox"
-                      x-model="isChecked"
-                      id="{{ $id }}"
-                      name="{{ $slug }}"
-                      value="1"
-                      data-ga-button
-                      data-ga-action="toggle-newsletter:{{ $slug }}"
-                    >
-                    <span
-                      class="icon is-right validator-icon has-text-success has-text-light"
-                      :class="{
-                          'has-text-success': isChecked,
-                          'has-text-light': !isChecked,
-                      }"
-                      role="checkbox"
-                      :aria-checked="isChecked"
-                    >
-                      <svg>
-                        <use xlink:href="#check-svg"></use>
-                      </svg>
-                    </span>
-                  </label>
+                  <input
+                    hidden
+                    class="no-js-only"
+                    type="checkbox"
+                    x-model="isChecked"
+                    id="{{ $id }}"
+                    name="{{ $slug }}"
+                    value="1"
+                    data-ga-button
+                    data-ga-action="toggle-newsletter:{{ $slug }}"
+                  >
                 </div>
               </div>
             {{ end }}
