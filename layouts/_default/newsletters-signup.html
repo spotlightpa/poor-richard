@@ -55,14 +55,18 @@
         <nav class="tile is-ancestor is-vertical">
           <div class="tile is-wrapped">
             {{ range $page := $pages }}
-              <div class="tile is-parent is-4 has-margin-top-negative">
-                <div class="tile is-child">
+              <div class="p-4 tile is-parent is-4">
+                <div
+                  class="tile is-child box"
+                  x-data="{ isChecked: true }"
+                  :class="{ 'has-background-light': isChecked }"
+                >
                   {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
                   {{ $slug := .File.Dir | path.Base }}
                   {{ $id := partial "helper/new-id" $ }}
                   <label
-                    class="has-text-grey-dark hover-underline"
-                    :data-ga-action="'toggle-newsletter:{{ $slug }}'"
+                    class="has-text-grey-dark hover-underline "
+                    data-ga-action="toggle-newsletter:{{ $slug }}"
                     for="{{ $id }}"
                   >
                     <article>
@@ -94,13 +98,28 @@
                   </p>
                   <label class="mt-2 is-block">
                     <input
+                      hidden
                       type="checkbox"
+                      x-model="isChecked"
                       id="{{ $id }}"
                       name="{{ $slug }}"
                       value="1"
                       data-ga-button
                       data-ga-action="toggle-newsletter:{{ $slug }}"
                     >
+                    <span
+                      class="icon is-right validator-icon has-text-success has-text-light"
+                      :class="{
+                          'has-text-success': isChecked,
+                          'has-text-light': !isChecked,
+                      }"
+                      role="checkbox"
+                      :aria-checked="isChecked"
+                    >
+                      <svg>
+                        <use xlink:href="#check-svg"></use>
+                      </svg>
+                    </span>
                   </label>
                 </div>
               </div>
