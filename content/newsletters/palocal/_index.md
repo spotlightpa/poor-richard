@@ -1,5 +1,5 @@
 +++
-image = "2022/02/01gz-k3bg-4tet-0as8.png"
+image = "2022/02/01h0-cwrk-fbjj-n32w.jpeg"
 image-size = "hidden"
 title = "Sign up for PA Local"
 description = "Sign up for PA Local, a free weekly newsletter from Spotlight PA"
