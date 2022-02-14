@@ -28,11 +28,13 @@ On Thursday, Feb. 17 at 5 p.m., join Spotlight PA via Zoom as we break down Act 
 
 Our panelists include:
 
-- <b>Angela Couloumbis</b>, investigative reporter for Spotlight PA<br/>
+- <b>Angela Couloumbis</b>, investigative reporter for Spotlight PA
 
-- <b>Omar Sabir</b>, City Commissioner of the County of Philadelphia<br/>
+- <b>Omar Sabir</b>, city commissioner of the County of Philadelphia
 
-- <b>Other panelists to be announced</b>.<br/>
+- <b>Ray Murphy</b>, deputy director of Pennsylvania Voice
+
+- <b>Dan Moul</b>, Republican state representative, 91st District
 
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_LrLMb1rZSc-hoaSiVqU89g">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
 
