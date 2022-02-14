@@ -1,5 +1,5 @@
 <!-- God forgive me -->
-</div>
+{{ `</div>` | safeHTML }}
 
 <div class="box" data-ga-category="inline:image">
   {{ $src := .Get "src" | htmlUnescape }}
@@ -45,4 +45,4 @@
   {{ end }}
 </div>
 
-<div class="content">
+{{ `<div class="content">` | safeHTML }}

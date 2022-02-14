@@ -1,9 +1,9 @@
 {{ define "promo" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "topper" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "main" }}
@@ -15,16 +15,17 @@
   {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
-  <section
-    class="section"
-    data-ga-category="list:events"
-  >
+  <section class="section" data-ga-category="list:events">
     <header>
-      <h1 class="mt-0 mb-4 title has-text-centered {{ $titleClass }} is-size-2-touch">
+      <h1
+        class="mt-0 mb-4 title has-text-centered {{ $titleClass }} is-size-2-touch"
+      >
         {{ .Title }}
       </h1>
       {{ if $subtitle }}
-        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+        <h2
+          class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
+        >
           {{ $subtitle }}
         </h2>
       {{ end }}
@@ -41,10 +42,7 @@
       {{ $event := index (last 1  $upcomingEvents) 0 }}
       {{ $date := $event.Param "event-date" }}
       {{ $items := where $upcomingEvents `Params.event-date` "eq" $date }}
-      <div
-        class="section plain-notification"
-        data-ga-category="upcoming"
-      >
+      <div class="section plain-notification" data-ga-category="upcoming">
         <div class="container-hp">
           <div class="tile is-vertical">
             {{ template "upcoming-event" $items }}
@@ -53,10 +51,8 @@
       </div>
     {{ end }}
 
-    <nav
-      class="tile is-vertical"
-      data-ga-category="river"
-    >
+
+    <nav class="tile is-vertical" data-ga-category="river">
       <div class="tile is-wrapped">
         {{ range $page := $pages }}
           {{ template "event" $page }}
@@ -70,21 +66,24 @@
   </section>
 {{ end }}
 
-
 {{ define "upcoming-event" }}
   {{ $page := index . 0 }}
   {{ $params := partialCached "helper/page-params" $page.Page $page.RelPermalink }}
+
 
   <div class="py-0 tile is-parent">
     <div class="tile is-child">
       <div class="mb-2">
         <span class="tags has-addons">
-          <span class="tag is-square is-black is-uppercase has-text-weight-semibold">
+          <span
+            class="tag is-square is-black is-uppercase has-text-weight-semibold"
+          >
             {{ $params.kicker }}
           </span>
           <span
             class="tag is-square is-outline is-uppercase has-text-weight-semibold"
-          >{{ $params.eventDate }}</span>
+            >{{ $params.eventDate }}</span
+          >
         </span>
       </div>
     </div>
@@ -140,12 +139,14 @@
             {{ end }}
           </ul>
         {{ end }}
-        <h3 class="mt-2 subtitle is-6 is-size-5-mobile is-size-5-widescreen has-text-weight-normal">
+        <h3
+          class="mt-2 subtitle is-6 is-size-5-mobile is-size-5-widescreen has-text-weight-normal"
+        >
           <a
             href="{{ $page.RelPermalink }}"
             class="has-text-grey hover-underline"
             data-ga-category="date"
-          >{{ $params.eventDate }}
+            >{{ $params.eventDate }}
           </a>
         </h3>
       </article>
@@ -159,21 +160,22 @@
       {{ $page := .Page }}
       {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
 
+
       <article>
         {{ if $params.eventDate }}
           <h3
             class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
           >
-            <time
-              datetime='{{ $params.eventDateISO }}'
-            >
+            <time datetime="{{ $params.eventDateISO }}">
               {{ $params.eventDate }}
             </time>
           </h3>
         {{ else }}
           <h3
             class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-          >Events</h3>
+          >
+            Events
+          </h3>
         {{ end }}
 
         {{ $name := $page.Param "image" }}
@@ -189,6 +191,7 @@
           "sizeHint" "25vw"
         }}
         {{ partial "component/image-block.html" $imgOpts }}
+
 
         <h2 class="mt-2 mb-0 subtitle is-5 is-size-4-widescreen">
           <a

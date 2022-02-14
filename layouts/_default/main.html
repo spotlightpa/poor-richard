@@ -3,23 +3,24 @@
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
+
 <section class="section {{ $marginClass }}">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
       {{ if $params.showTitle }}
-        <header
-          class="block"
-          data-ga-category="header"
-        >
+        <header class="block" data-ga-category="header">
           {{ if $params.rubric }}
             <a
               class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
               href="{{ $params.rubric.RelPermalink }}"
-            >{{ $params.kicker | default $params.rubric.Title }}</a>
+              >{{ $params.kicker | default $params.rubric.Title }}</a
+            >
           {{ else if $params.kicker }}
             <p
               class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-            >{{ $params.kicker }}</p>
+            >
+              {{ $params.kicker }}
+            </p>
           {{ else }}
             <div class="is-clearfix">
               <div class="is-pulled-right">
@@ -28,12 +29,11 @@
             </div>
           {{ end }}
 
+
           <h1 class="title is-2 is-size-3-touch is-spaced">
             {{ .Title }}
             {{ if .Draft }}
-              <span class="tag is-warning is-uppercase">
-                Draft
-              </span>
+              <span class="tag is-warning is-uppercase"> Draft </span>
             {{ end }}
           </h1>
           {{ with .Param "subhed" }}
@@ -46,21 +46,19 @@
             <h3 class="is-size-5 has-margin-top-negative-medium">
               <span class="has-text-weight-semibold">
                 by
-                <span
-                  itemtype="http://schema.org/Person"
-                  itemprop="author"
-                >
+                <span itemtype="http://schema.org/Person" itemprop="author">
                   {{- $params.byline -}}
                 </span>
               </span>
               {{ if $params.published }}
                 |
-                <time
-                  datetime='{{ $params.publishedISO }}'
-                >{{ $params.published }}</time>
+                <time datetime="{{ $params.publishedISO }}"
+                  >{{ $params.published }}</time
+                >
               {{ end }}
             </h3>
           {{ end }}
+
 
           <div class="my-5">
             {{ partial "component/social-buttons.html" . }}
@@ -70,23 +68,15 @@
 
       {{ partial "component/hero-image-block.html" . }}
 
-      <div
-        class="block"
-        data-ga-category="content"
-      >
-        <div
-          x-data
-          x-intersect.once="$dispatch('open-sticky')"
-        ></div>
+
+      <div class="block" data-ga-category="content">
+        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
         <div
           x-data
           x-intersect.once="$report({ target: $el })"
           data-ga-action="view:content-start"
         ></div>
-        <div
-          class="content"
-          data-sf-campaign="701f4000000TVuXAAW"
-        >
+        <div class="content" data-sf-campaign="701f4000000TVuXAAW">
           {{ .Content }}
         </div>
         <div
@@ -101,10 +91,7 @@
       {{ end }}
 
       {{ with .Param "authors" }}
-        <footer
-          class="block"
-          data-ga-category="inline-footer:author"
-        >
+        <footer class="block" data-ga-category="inline-footer:author">
           {{ range $name := . }}
             {{ $author := partial "helper/get-author" $name }}
             <div class="level">
@@ -112,23 +99,24 @@
                 <div class="level-item">
                   {{ if $author.thumb }}
                     {{ if $author.link }}
-                      <a
-                        href="{{ $author.link }}"
-                        class="image is-64x64"
-                      >
-                    {{ else }}
-                      <span class="image is-64x64">
-                    {{ end }}
-                      <img
-                        src="{{ $author.thumb }}"
-                        alt="Photo of {{ $author.name }}"
-                        class="is-rounded is-monochrome"
-                        loading="lazy"
-                        decoding="async"
-                      >
-                    {{ if $author.link }}
+                      <a href="{{ $author.link }}" class="image is-64x64">
+                        <img
+                          src="{{ $author.thumb }}"
+                          alt="Photo of {{ $author.name }}"
+                          class="is-rounded is-monochrome"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </a>
                     {{ else }}
+                      <span class="image is-64x64">
+                        <img
+                          src="{{ $author.thumb }}"
+                          alt="Photo of {{ $author.name }}"
+                          class="is-rounded is-monochrome"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </span>
                     {{ end }}
                   {{ else }}

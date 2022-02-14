@@ -1,10 +1,8 @@
 {{ $subject := "Donate to Spotlight PA" }}
 {{ $emailBody := "I just donated to Spotlight PA because Pennsylvania needs more accountability journalism. Join me:\n\n https://wwww.spotlightpa.org/donate/" }}
 
-<div
-  class="buttons is-centered"
-  data-ga-category="inline:share-donation"
->
+
+<div class="buttons is-centered" data-ga-category="inline:share-donation">
   <button
     class="button is-primary is-medium"
     data-share="facebook"
@@ -17,9 +15,7 @@
         <use xlink:href="#fb-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold">
-      Share on Facebook
-    </span>
+    <span class="has-text-weight-bold"> Share on Facebook </span>
   </button>
   <button
     class="button is-info is-medium"
@@ -34,9 +30,7 @@
         <use xlink:href="#twitter-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold has-text-white">
-      Share on Twitter
-    </span>
+    <span class="has-text-weight-bold has-text-white"> Share on Twitter </span>
   </button>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
@@ -49,8 +43,6 @@
         <use xlink:href="#email-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold">
-      Share by email
-    </span>
+    <span class="has-text-weight-bold"> Share by email </span>
   </a>
 </div>
