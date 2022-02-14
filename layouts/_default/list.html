@@ -1,9 +1,9 @@
 {{ define "promo" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "topper" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "main" }}
@@ -43,12 +43,18 @@
         {{ if $showDate }}
           <p
             class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-          >{{ $date.Format "January 2006" }}</p>
+          >
+            {{ $date.Format "January 2006" }}
+          </p>
         {{ end }}
-        <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+        <h1
+          class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced"
+        >
           {{ .Title }}
         </h1>
-        <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+        <h2
+          class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
+        >
           {{ $subtitle }}
         </h2>
 
@@ -67,7 +73,7 @@
             <div class="tile is-parent is-4 has-margin-top-negative">
               <div class="tile is-child">
                 {{ $props :=  dict "Page" $page.Page "showDate" $showItemDates }}
-                {{ partialCached "tile/list.html" $props $page.RelPermalink $showItemDates}}
+                {{ partialCached "tile/list.html" $props $page.RelPermalink $showItemDates }}
               </div>
             </div>
           {{ end }}

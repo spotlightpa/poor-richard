@@ -1,9 +1,9 @@
 {{ define "promo" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "topper" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "main" }}
@@ -22,10 +22,14 @@
     {{ if not $p.HasPrev }}
       <div class="column is-three-fifths">
         <header class="mb-5">
-          <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+          <h1
+            class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced"
+          >
             {{ .Title }}
           </h1>
-          <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+          <h2
+            class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
+          >
             {{ $subtitle }}
           </h2>
 
@@ -38,10 +42,7 @@
         {{ end }}
       </div>
     {{ end }}
-    <div
-      class="column is-four-fifths mb-6"
-      id="archives"
-    >
+    <div class="column is-four-fifths mb-6" id="archives">
       <nav class="tile is-ancestor is-vertical">
         {{ range $pages.GroupByDate "January 2006" }}
           <div class="tile is-parent">
@@ -65,4 +66,3 @@
     </div>
   </section>
 {{ end }}
-

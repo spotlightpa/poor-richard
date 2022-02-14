@@ -1,5 +1,5 @@
 {{ define "extra-main" }}
-  {{ $jsOpts := dict "minify" true "targetPath" "/embed.js"  }}
+  {{ $jsOpts := dict "minify" true "targetPath" "/embed.js" }}
   {{ $hostJS := resources.Get "js/esbuild/embed-host.js" | js.Build $jsOpts }}
   {{ $hostJS = $hostJS | babel }}
   {{ $scriptSrc := $hostJS.Permalink }}
@@ -29,9 +29,7 @@
             <h2 class="title is-spaced">{{ .Title }}</h2>
             <div class="block">
               {{ if $params }}
-                <h2 class="subtitle is-4">
-                  Parameters:
-                </h2>
+                <h2 class="subtitle is-4">Parameters:</h2>
                 {{ range $param := $params }}
                   <div class="field">
                     <label for="{{ $param.name }}-field" class="label">
@@ -49,15 +47,14 @@
                           pattern="{{ . }}"
                           @blur="$event.currentTarget.reportValidity()"
                         {{ end }}
-                      >
+                      />
                     </div>
                   </div>
                 {{ end }}
               {{ end }}
 
-              <h3 class="subtitle is-4">
-                Code:
-              </h3>
+
+              <h3 class="subtitle is-4">Code:</h3>
               <div class="mb-5" description="embed code">
                 <div class="field">
                   <div class="control">
@@ -66,8 +63,7 @@
                       contenteditable="true"
                       class="textarea pre-wrap"
                       x-text="embedCode"
-                    >
-                    </div>
+                    ></div>
                   </div>
                 </div>
                 <div class="field">
@@ -82,9 +78,7 @@
                         {{ $iconCopy := resources.Get "@fontawesome/regular/copy.svg" }}
                         {{ $iconCopy.Content|safeHTML }}
                       </span>
-                      <span>
-                        Copy text
-                      </span>
+                      <span> Copy text </span>
                     </button>
                     <div
                       x-cloak
@@ -114,11 +108,14 @@
 {{ end }}
 
 {{ define "extra-footer" }}
-  {{ $jsOpts := dict "minify" true "targetPath" "/tracker.js"  }}
+  {{ $jsOpts := dict "minify" true "targetPath" "/tracker.js" }}
   {{ $trackerJS := resources.Get "js/esbuild/tracker.js" | js.Build $jsOpts }}
   {{ $trackerJS = $trackerJS | babel }}
   <!-- Hack to tell Hugo to build the partner tracker JS -->
-  <noscript>
-    <script src="{{ $trackerJS.RelPermalink }}"></script>
-  </noscript>
+  {{ `<noscript>` | safeHTML }}
+
+  <script src="{{ $trackerJS.RelPermalink }}"></script>
+
+  {{ `</noscript>`
+  | safeHTML }}
 {{ end }}

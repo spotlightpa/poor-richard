@@ -9,6 +9,7 @@
     "format": "yarn run format:eslint; yarn run format:prettier",
     "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
+    "format:html": "prettier --ignore-path .gitignore --write layouts/**/*.html",
     "build:stage": "hugo --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "hugo --cleanDestinationDir",
     "start:noreload": "hugo server -p 39019 --disableLiveReload",
@@ -16,7 +17,8 @@
     "start": "hugo server -p 39019",
     "test": "yarn run test:eslint && yarn run test:prettier",
     "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
-    "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}"
+    "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}",
+    "test:html": "prettier --ignore-path .gitignore --check layouts/**/*.html"
   },
   "dependencies": {
     "@alpinejs/focus": "^3.8.1",
@@ -37,6 +39,7 @@
     "journalize": "^2.5.1",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
+    "prettier-plugin-go-template": "^0.0.11",
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {

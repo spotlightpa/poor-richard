@@ -14,7 +14,9 @@
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-<noscript>
+
+{{ `<noscript>` | safeHTML }}
+
   <style>
     .no-js-only {
       display: block;
@@ -23,7 +25,8 @@
        display: none;
     }
   </style>
-</noscript>
+
+{{ `</noscript>` | safeHTML }}
 
 <link
   rel="alternate"

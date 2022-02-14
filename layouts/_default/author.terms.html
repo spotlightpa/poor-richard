@@ -1,10 +1,7 @@
 {{ define "extra-main" }}
   {{ $pg := .Paginator 100 }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  <section
-    class="section columns"
-    data-ga-category="authors"
-  >
+  <section class="section columns" data-ga-category="authors">
     <div class="column is-three-fifths is-offset-one-fifth">
       {{ range $pg.Pages.ByTitle }}
         {{ $author := partial "helper/get-author" .Title }}
@@ -12,15 +9,12 @@
           <div class="level-left">
             <div class="level-item">
               {{ if $author.thumb }}
-                <a
-                  href="{{ $author.link }}"
-                  class="image is-64x64"
-                >
+                <a href="{{ $author.link }}" class="image is-64x64">
                   <img
                     src="{{ $author.thumb }}"
                     alt="Photo of {{ $author.name }}"
                     class="is-rounded is-monochrome"
-                  >
+                  />
                 </a>
               {{ else }}
                 <span class="image is-64x64"></span>
@@ -31,9 +25,9 @@
               <div>
                 <h3 class="subtitle is-3 has-text-weight-semibold">
                   {{ if $author.link }}
-                  <a href="{{ $author.link }}">
-                    {{ $author.name }}
-                  </a>
+                    <a href="{{ $author.link }}">
+                      {{ $author.name }}
+                    </a>
                   {{ else }}
                     <span class="has-text-grey">
                       {{ $author.name }}
@@ -53,12 +47,12 @@
 
       {{ if gt $pg.TotalPages 0 }}
         <div class="level">
-        {{ if $pg.HasPrev }}
-          <a class="level-item" href="{{ $pg.Prev.URL }}">←</a>
-        {{ end }}
-        {{ if $pg.HasNext }}
-          <a class="level-item" href="{{ $pg.Next.URL }}">→</a>
-        {{ end }}
+          {{ if $pg.HasPrev }}
+            <a class="level-item" href="{{ $pg.Prev.URL }}">←</a>
+          {{ end }}
+          {{ if $pg.HasNext }}
+            <a class="level-item" href="{{ $pg.Next.URL }}">→</a>
+          {{ end }}
         </div>
       {{ end }}
     </div>

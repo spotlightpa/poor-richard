@@ -1,5 +1,8 @@
 {{- $url := "" -}}
 {{- with .Get "href" }}{{ $url = . }}{{ end -}}
-<p class="has-text-right has-text-weight-bold" data-ga-category="inline:right-link">
+<p
+  class="has-text-right has-text-weight-bold"
+  data-ga-category="inline:right-link"
+>
   <a href="{{ $url }}">{{ .Inner }}</a>
 </p>

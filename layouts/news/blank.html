@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang='{{ .Param "language-code" | default site.LanguageCode }}'>
-<head
-  itemscope itemtype="http://schema.org/WebSite"
->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
+<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     {{- with .Param "title-tag" -}}
-      {{- . -}}
+      <title>{{ . }}</title>
     {{- else -}}
-      {{ .Title }} &middot; {{ .Site.Title }}
+      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
     {{- end -}}
-  </title>
 
-  {{ partial "header/meta.html" . }}
-  {{ partial "header/google-analytics-async.html" . }}
+    {{ partial "header/meta.html" . }}
+    {{ partial "header/google-analytics-async.html" . }}
 
-  <!-- Just Google Analytics -->
+
+    <!-- Just Google Analytics -->
   <script
     src='{{ partialCached "helper/get-nomodules-js" . }}'
     async
   ></script>
-</head>
-{{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-{{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
-<body
-  data-ga-label='{{ $pageCat }}:blank'
-  data-ga-category="featured"
->
-  {{ .Content }}
-  {{ partial "header/ld-json.html" . }}
-</body>
+  </head>
+  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  <body data-ga-label="{{ $pageCat }}:blank" data-ga-category="featured">
+    {{ .Content }}
+    {{ partial "header/ld-json.html" . }}
+  </body>
 </html>

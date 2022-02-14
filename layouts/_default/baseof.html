@@ -1,70 +1,68 @@
 <!DOCTYPE html>
-<html lang='{{ .Param "language-code" | default site.LanguageCode }}'>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>
     {{- with .Param "title-tag" -}}
-      {{- . -}}
+      <title>{{ . }}</title>
     {{- else -}}
-      {{ .Title }} &middot; {{ .Site.Title }}
+      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
     {{- end -}}
-  </title>
 
-  {{ partialCached "header/static.html" . }}
-  {{ partial "header/google-analytics-async.html" . }}
+    {{ partialCached "header/static.html" . }}
+    {{ partial "header/google-analytics-async.html" . }}
 
-  <!-- Metadata -->
-  {{ partial "header/meta.html" . }}
 
-  {{ block "extra-head" . }}{{ end }}
-</head>
-{{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-{{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
-<body
-  data-ga-label='{{ $pageCat }}'
->
-  {{ block "header" . }}
-    {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "component/banner.html" . }}
+    <!-- Metadata -->
+    {{ partial "header/meta.html" . }}
+
+    {{ block "extra-head" . }}{{ end }}
+  </head>
+  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  <body data-ga-label="{{ $pageCat }}">
+    {{ block "header" . }}
+      {{ block "nav" . }}{{ partial "component/nav.html" . }}{{ end }}
+      {{ block "banner" . }}
+        {{ if .Param "banner-active" }}
+          {{ partialCached "component/banner.html" . }}
+        {{ end }}
+      {{ end }}
+      {{ block "topper" . }}
+        {{ if .Param "topper-active" }}
+          {{ partialCached "component/topper.html" . }}
+        {{ end }}
+      {{ end }}
+      {{ block "promo" . }}
+        {{ partialCached "component/promo-header.html" $ }}
       {{ end }}
     {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "component/topper.html" . }}
+    <main data-ga-category="main">
+      {{ block "before-main" . }}{{ end }}
+      {{ block "main" . }}
+        {{ .Render "main" }}
+      {{ end }}
+      {{ block "extra-main" . }}{{ end }}
+    </main>
+    <footer data-ga-category="footer">
+      {{ block "before-footer" . }}{{ end }}
+      {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
+      {{ block "extra-footer" . }}{{ end }}
+    </footer>
+    {{ block "modal" . }}
+      {{ if .Param "modal-exclude" | not }}
+        {{ if .Param "sticky-active" }}
+          {{ partialCached "modal/sticky.html" . }}
+        {{ end }}
+        {{ if .Param "newsletter-active" }}
+          {{ partialCached "modal/newsletter.html" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "component/promo-header.html" $ }}
-    {{ end }}
-  {{ end }}
-  <main data-ga-category="main">
-    {{ block "before-main" . }}{{ end }}
-    {{ block "main" . }}
-      {{ .Render "main" }}
-    {{ end }}
-    {{ block "extra-main" . }}{{ end }}
-  </main>
-  <footer data-ga-category="footer">
-    {{ block "before-footer" . }}{{ end }}
-    {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
-    {{ block "extra-footer" . }}{{ end }}
-  </footer>
-  {{ block "modal" . }}
-    {{ if .Param "modal-exclude" | not }}
-      {{ if .Param "sticky-active" }}
-        {{ partialCached "modal/sticky.html" . }}
-      {{ end }}
-      {{ if .Param "newsletter-active" }}
-        {{ partialCached "modal/newsletter.html" . }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  {{ partial "modal/search.html" . }}
-  <script
+    {{ partial "modal/search.html" . }}
+
+    <script
     nomodule
     defer
     src='{{ partialCached "helper/get-nomodules-js" . }}'
@@ -74,7 +72,9 @@
     type="module"
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
-  {{ partial "header/ld-json.html" . }}
-  {{ block "svg-resources" . }}{{ partialCached "header/svg-resources.html" . }}{{ end }}
-</body>
+    {{ partial "header/ld-json.html" . }}
+    {{ block "svg-resources" . }}
+      {{ partialCached "header/svg-resources.html" . }}
+    {{ end }}
+  </body>
 </html>

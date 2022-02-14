@@ -1,11 +1,12 @@
-{{ define "header" }} <!-- --> {{ end }}
-{{ define "footer" }} <!-- --> {{ end }}
-{{ define "modal" }} <!-- --> {{ end }}
+{{ define "header" }}<!-- -->{{ end }}
+{{ define "footer" }}<!-- -->{{ end }}
+{{ define "modal" }}<!-- -->{{ end }}
 
 {{ define "extra-head" }}
   {{ $jsOpts := dict "minify" true "targetPath" "/@src/embed-frame.js" }}
   {{ $js := resources.Get "js/esbuild/embed-frame.js" | js.Build $jsOpts }}
   {{ $js = $js | minify | fingerprint }}
+
   <script src='{{ $js.RelPermalink }}' defer></script>
   <style>
     body {
@@ -23,4 +24,4 @@
     {{ $embed := .Param "embed-partial" | printf "embed/%s" }}
     {{ partial $embed . }}
   </div>
-{{end }}
+{{ end }}

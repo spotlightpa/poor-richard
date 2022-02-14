@@ -19,7 +19,7 @@
                       src="{{ $author.thumb }}"
                       alt="Photo of {{ $author.name }}"
                       class="is-rounded"
-                      >
+                    />
                   </figure>
                 </div>
               {{ end }}
@@ -35,15 +35,12 @@
                         <use xlink:href="#email-svg"></use>
                       </svg>
                     </span>
-                    <a
-                      data-ga-category="author-email"
-                      href="mailto:{{ . }}"
-                    >
+                    <a data-ga-category="author-email" href="mailto:{{ . }}">
                       {{ . }}
                     </a>
                   {{ end }}
                   {{ with (and $author.email $author.twitter) }}
-                    <br>
+                    <br />
                   {{ end }}
                   {{ with $author.twitter }}
                     <span class="icon has-text-link">
@@ -79,25 +76,25 @@
 {{ end }}
 
 {{ define "extra-main" }}
-    <div
-      class="column is-three-fifths is-offset-one-fifth"
-      data-ga-category="author"
-    >
-      <div class="tile is-ancestor is-vertical">
-        <div class="tile is-parent is-top">
-          <div class="tile is-child">
-            <h2 class="title is-4 is-uppercase has-text-weight-semibold">
-              Stories by {{ .Title }}
-            </h2>
-            <hr class="is-emphatic-underline has-margin-top-negative">
-          </div>
+  <div
+    class="column is-three-fifths is-offset-one-fifth"
+    data-ga-category="author"
+  >
+    <div class="tile is-ancestor is-vertical">
+      <div class="tile is-parent is-top">
+        <div class="tile is-child">
+          <h2 class="title is-4 is-uppercase has-text-weight-semibold">
+            Stories by
+            {{ .Title }}
+          </h2>
+          <hr class="is-emphatic-underline has-margin-top-negative" />
         </div>
-        {{ range $page := .Paginator.Pages }}
-          {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
-        {{ end }}
       </div>
-
-      {{ partial "component/paginator-level.html" .Paginator }}
+      {{ range $page := .Paginator.Pages }}
+        {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
+      {{ end }}
     </div>
-  </section>
+
+    {{ partial "component/paginator-level.html" .Paginator }}
+  </div>
 {{ end }}

@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html
-  lang='{{ .Param "language-code" | default site.LanguageCode }}'
->
-<head
-  itemscope itemtype="http://schema.org/WebSite"
->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
+<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     {{- with .Param "title-tag" -}}
-      {{- . -}}
+      <title>{{ . }}</title>
     {{- else -}}
-      {{ .Title }} &middot; {{ .Site.Title }}
+      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
     {{- end -}}
-  </title>
 
-  {{ partial "header/meta.html" . }}
-  {{ partial "header/google-analytics-async.html" . }}
+    {{ partial "header/meta.html" . }}
+    {{ partial "header/google-analytics-async.html" . }}
 
-  {{ $cssFonts := resources.Get "css/fonts.css" }}
-  {{ $cssTW := resources.Get "css/featured.css" }}
-  {{ $css := slice $cssFonts $cssTW | resources.Concat "css/statecollege.css" }}
-  {{ $css = $css | postCSS }}
-  {{ if ne hugo.Environment "development" }}
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-  {{ end }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{ $cssFonts := resources.Get "css/fonts.css" }}
+    {{ $cssTW := resources.Get "css/featured.css" }}
+    {{ $css := slice $cssFonts $cssTW | resources.Concat "css/statecollege.css" }}
+    {{ $css = $css | postCSS }}
+    {{ if ne hugo.Environment "development" }}
+      {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
-  <noscript>
+    {{ `<noscript>` | safeHTML }}
+
     <style>
       .no-js-only {
         display: block;
@@ -36,73 +32,72 @@
          display: none;
       }
     </style>
-  </noscript>
 
-  <script
-    nomodule
-    src='{{ partialCached "helper/get-nomodules-js" . }}'
-    defer
-  ></script>
-  <script
-    src='{{ partialCached "helper/get-enhancements" . }}'
-    type="module"
-    onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
-  ></script>
-  {{ partial "header/favicons.html" . }}
-  <link
-    rel="alternate"
-    type="application/feed+json"
-    href='{{ absURL "/feeds/full.json" }}'
-    title="Full News Feed"
-  />
+    {{ `</noscript>` | safeHTML }}
 
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    href='{{ absURL "/feeds/full.xml" }}'
-    title="Full News Feed"
-  />
-</head>
-{{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-{{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
-<body
-  data-sf-campaign="7015G0000013pUYQAY"
-  data-ga-label='{{ $pageCat }}'
-  data-ga-category="featured"
-  class="bg-beige base-16 font-raleway leading-normal"
->
-  <!-- mobile overflow guard -->
-  <div class="flex flex-col w-screen min-h-screen overflow-x-hidden sm:overflow-x-auto">
-    <main data-ga-category="main">
-      {{ partial "sc/main.html" . }}
-    </main>
+    <script
+      nomodule
+      src='{{ partialCached "helper/get-nomodules-js" . }}'
+      defer
+    ></script>
+    <script
+      src='{{ partialCached "helper/get-enhancements" . }}'
+      type="module"
+      onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
+    ></script>
+    {{ partial "header/favicons.html" . }}
+    <link
+      rel="alternate"
+      type="application/feed+json"
+      href="{{ absURL "/feeds/full.json" }}"
+      title="Full News Feed"
+    />
 
-    <footer
-      id="footer"
-      class="mt-auto"
-      data-ga-category="footer"
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="{{ absURL "/feeds/full.xml" }}"
+      title="Full News Feed"
+    />
+  </head>
+  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  <body
+    data-sf-campaign="7015G0000013pUYQAY"
+    data-ga-label="{{ $pageCat }}"
+    data-ga-category="featured"
+    class="bg-beige base-16 font-raleway leading-normal"
+  >
+    <!-- mobile overflow guard -->
+    <div
+      class="flex flex-col w-screen min-h-screen overflow-x-hidden sm:overflow-x-auto"
     >
-      {{ partial "sc/footer.html" . }}
-    </footer>
-    {{ $svgs := dict
-      "banner-svg" "/img/logos/banner-default-on-trans.svg"
-      "bars-svg"  "@fontawesome/solid/bars.svg"
-      "close-svg" "@fontawesome/solid/times-circle.svg"
-      "email-svg" "@fontawesome/regular/envelope.svg"
-      "fb-svg" "@fontawesome/brands/facebook-f.svg"
-      "logo-svg" "/img/logos/circle-default-on-trans.svg"
-      "plus-svg" "@fontawesome/solid/plus-circle.svg"
-      "search-svg" "@fontawesome/solid/search.svg"
-      "share-svg" "@fontawesome/solid/share.svg"
-      "twitter-svg" "@fontawesome/brands/twitter.svg"
-    }}
-    <div hidden>
-      {{ range $id, $rsc := $svgs }}
-        {{ $svg := resources.Get $rsc }}
-        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
-      {{ end }}
+      <main data-ga-category="main">
+        {{ partial "sc/main.html" . }}
+      </main>
+
+      <footer id="footer" class="mt-auto" data-ga-category="footer">
+        {{ partial "sc/footer.html" . }}
+      </footer>
+      {{ $svgs := dict
+        "banner-svg" "/img/logos/banner-default-on-trans.svg"
+        "bars-svg"  "@fontawesome/solid/bars.svg"
+        "close-svg" "@fontawesome/solid/times-circle.svg"
+        "email-svg" "@fontawesome/regular/envelope.svg"
+        "fb-svg" "@fontawesome/brands/facebook-f.svg"
+        "logo-svg" "/img/logos/circle-default-on-trans.svg"
+        "plus-svg" "@fontawesome/solid/plus-circle.svg"
+        "search-svg" "@fontawesome/solid/search.svg"
+        "share-svg" "@fontawesome/solid/share.svg"
+        "twitter-svg" "@fontawesome/brands/twitter.svg"
+      }}
+      <div hidden>
+        {{ range $id, $rsc := $svgs }}
+          {{ $svg := resources.Get $rsc }}
+          <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+        {{ end }}
+      </div>
+      {{ partial "header/ld-json.html" . }}
     </div>
-    {{ partial "header/ld-json.html" . }}
-  </div>
-</body>
+  </body>
 </html>

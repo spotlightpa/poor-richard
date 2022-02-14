@@ -1,17 +1,17 @@
 {{ define "promo" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "topper" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
 {{ define "banner" }}
-<!-- noop -->
+  <!-- noop -->
 {{ end }}
 
-{{define "modal" }}
-<!-- noop -->
+{{ define "modal" }}
+  <!-- noop -->
 {{ end }}
 
 {{ define "main" }}
@@ -21,7 +21,7 @@
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
-    action='{{ .Param "newsletters-action" }}'
+    action="{{ .Param "newsletters-action" }}"
     method="post"
     target="_blank"
     data-ga-category="all-newsletters"
@@ -29,17 +29,21 @@
     {{ partial "newsletter/hidden-input.html" . }}
     <p class="is-hidden" hidden>
       <label>
-          <input type="checkbox" name="contact" value="1">
-          I am a robot
+        <input type="checkbox" name="contact" value="1" />
+        I am a robot
       </label>
     </p>
     <section class="section columns is-centered is-multiline">
       <div class="column is-three-fifths">
         <header class="mb-5">
-          <h1 class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced">
+          <h1
+            class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced"
+          >
             {{ .Title }}
           </h1>
-          <h2 class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6">
+          <h2
+            class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
+          >
             {{ $subtitle }}
           </h2>
 
@@ -82,7 +86,9 @@
                         "sizeHint" "25vw"
                       }}
                       {{ partial "component/image-block.html" $imgOpts }}
-                      <h2 class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold">
+                      <h2
+                        class="mt-4 is-size-5 is-size-4-widescreen has-text-weight-semibold"
+                      >
                         {{ .LinkTitle }}
                         <span
                           class="no-js-hide icon has-text-success has-text-light"
@@ -106,7 +112,8 @@
                   <p class="mt-2">
                     {{ if len $page.Pages }}
                       <a href="{{ $page.RelPermalink }}#archives"
-                      >View Archives</a>
+                        >View Archives</a
+                      >
                     {{ end }}
                   </p>
                   <input
@@ -119,7 +126,7 @@
                     value="1"
                     data-ga-button
                     data-ga-action="toggle-newsletter:{{ $slug }}"
-                  >
+                  />
                 </div>
               </div>
             {{ end }}
@@ -131,43 +138,43 @@
         {{ $idLname := partial "helper/new-id" . }}
         {{ $idEmail := partial "helper/new-id" . }}
         <div class="field">
-          <label class="label" for='{{ $idFname }}'>First Name</label>
+          <label class="label" for="{{ $idFname }}">First Name</label>
         </div>
         <div class="field">
           <p class="control is-expanded">
             <input
-              id='{{ $idFname }}'
+              id="{{ $idFname }}"
               class="input"
               type="text"
               name="FNAME"
               required
-            >
+            />
           </p>
         </div>
         <div class="field">
-          <label class="label" for='{{ $idLname }}'>Last Name</label>
+          <label class="label" for="{{ $idLname }}">Last Name</label>
         </div>
         <div class="field">
           <p class="control is-expanded">
             <input
-              id='{{ $idLname }}'
+              id="{{ $idLname }}"
               class="input"
               type="text"
               name="LNAME"
               required
-            >
+            />
           </p>
         </div>
         <div class="field">
-          <label class="label" for='{{ $idEmail }}'>Email Address</label>
+          <label class="label" for="{{ $idEmail }}">Email Address</label>
           <p class="control is-expanded has-icons-left has-icons-right">
             <input
-              id='{{ $idEmail }}'
+              id="{{ $idEmail }}"
               class="input"
               type="email"
               name="EMAIL"
               required
-            >
+            />
             <span class="icon is-left">
               <svg>
                 <use xlink:href="#email-svg"></use>
@@ -182,7 +189,10 @@
         </div>
         <div class="field">
           <div class="control">
-            <button type="submit" class="button is-large is-danger has-text-weight-semibold">
+            <button
+              type="submit"
+              class="button is-large is-danger has-text-weight-semibold"
+            >
               Sign Up
             </button>
           </div>

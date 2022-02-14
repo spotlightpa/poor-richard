@@ -1,16 +1,13 @@
 <div class="columns is-multiline is-centered" data-ga-category="inline">
   {{ range .Site.Data.partners.partners }}
     <div class="column is-narrow has-text-centered" data-ga-category="logos">
-      <a
-        href="{{ .url }}"
-        title="{{ .name }}"
-      >
+      <a href="{{ .url }}" title="{{ .name }}">
         <span class="logo-column">
           <img
-            src='{{ index . "logo-url" }}'
+            src="{{ index . "logo-url" }}"
             alt="Logo for {{ .name }}"
             style="width: auto; height: 64px;"
-          >
+          />
         </span>
       </a>
     </div>

@@ -7,10 +7,7 @@
       {{ range sort .Site.Data.authors "lastName" }}
         {{ $author := partial "helper/get-author" .name }}
         {{ if $author.active }}
-          <div
-            id="{{ $author.slug }}"
-            class="card block"
-          >
+          <div id="{{ $author.slug }}" class="card block">
             <div class="card-content">
               <div class="media">
                 {{ if $author.thumb }}
@@ -20,7 +17,7 @@
                         src="{{ $author.thumb }}"
                         alt="Photo of {{ $author.name }}"
                         class="is-rounded"
-                        >
+                      />
                     </figure>
                   </div>
                 {{ end }}
@@ -33,7 +30,7 @@
                             src="{{ $author.thumb }}"
                             alt="Photo of {{ $author.name }}"
                             class="is-rounded"
-                            >
+                          />
                         </figure>
                       </div>
                     </div>
@@ -54,15 +51,12 @@
                           <use xlink:href="#email-svg"></use>
                         </svg>
                       </span>
-                      <a
-                        data-ga-category="author-email"
-                        href="mailto:{{ . }}"
-                      >
+                      <a data-ga-category="author-email" href="mailto:{{ . }}">
                         {{ . }}
                       </a>
                     {{ end }}
                     {{ with (and $author.email $author.twitter) }}
-                    <br>
+                      <br />
                     {{ end }}
                     {{ with $author.twitter }}
                       <span class="icon has-text-link">

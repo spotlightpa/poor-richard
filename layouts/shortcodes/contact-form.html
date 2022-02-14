@@ -16,48 +16,45 @@
 >
   <p class="is-hidden">
     <label>
-      Don’t fill this out if you're human: <input name="bot-field">
+      Don’t fill this out if you're human: <input name="bot-field" />
     </label>
-    <label
-      class="label is-sr-only"
-      for='{{ $idURL }}'
-    >Host URL</label>
+    <label class="label is-sr-only" for="{{ $idURL }}">Host URL</label>
     <input
-      id='{{ $idURL }}'
+      id="{{ $idURL }}"
       class="input"
       type="text"
       name="host_page"
       value="Spotlight PA"
-    >
+    />
   </p>
   <div class="field">
-    <label class="label" for='{{ $idFrom }}'>From</label>
+    <label class="label" for="{{ $idFrom }}">From</label>
   </div>
   <div class="field is-horizontal">
     <div class="field-body">
       <div class="field">
         <p class="control is-expanded">
           <input
-            id='{{ $idFrom }}'
+            id="{{ $idFrom }}"
             class="input"
             type="text"
             placeholder="William Penn"
             name="name"
             required
-          >
+          />
         </p>
       </div>
       <div class="field">
-        <label class="is-sr-only" for='{{ $idEmail }}'>Email</label>
+        <label class="is-sr-only" for="{{ $idEmail }}">Email</label>
         <p class="control is-expanded has-icons-left has-icons-right">
           <input
-            id='{{ $idEmail }}'
+            id="{{ $idEmail }}"
             class="input"
             type="email"
             placeholder="williampenn@example.com"
             name="email"
             required
-          >
+          />
           <span class="icon is-left has-text-primary">
             <svg>
               <use xlink:href="#email-svg"></use>
@@ -74,22 +71,22 @@
   </div>
 
   <div class="field">
-    <label class="label" for='{{ $idSubject }}'>Subject</label>
+    <label class="label" for="{{ $idSubject }}">Subject</label>
     <div class="control">
       <input
-        id='{{ $idSubject }}'
+        id="{{ $idSubject }}"
         class="input"
         type="text"
         placeholder="My question about Spotlight PA"
         name="subject"
-      >
+      />
     </div>
   </div>
   <div class="field">
-    <label class="label" for='{{ $idBody }}'>Comment</label>
+    <label class="label" for="{{ $idBody }}">Comment</label>
     <div class="control">
       <textarea
-        id='{{ $idBody }}'
+        id="{{ $idBody }}"
         class="textarea"
         placeholder="Explain how we can help you"
         name="comment"
@@ -98,10 +95,7 @@
   </div>
   <div class="field">
     <div class="control">
-      <button
-        class="button is-danger has-text-weight-semibold"
-        type="submit"
-      >
+      <button class="button is-danger has-text-weight-semibold" type="submit">
         Send comment
       </button>
     </div>
