@@ -1,3 +1,29 @@
+{{ define "shortcode-image-picture" }}
+  <picture>
+    <img
+      alt="{{ .description }}"
+      title="{{ .description }}"
+      src="{{ .src }}"
+      loading="lazy"
+      @click="showCaption = !showCaption"
+    />
+  </picture>
+  {{ with .caption }}
+    <figcaption
+      class="
+        absolute p-4 bottom-0 inset-x-0
+        backdrop-filter backdrop-blur-sm backdrop-brightness-50
+        font-sans text-base text-g-1
+      "
+      x-show="showCaption"
+      @click="showCaption = false"
+    >
+      {{ . }}
+    </figcaption>
+  {{ end }}
+{{ end }}
+
+
 <div data-ga-category="inline:image">
   {{ $src := .Get "src" | htmlUnescape }}
   {{ $credit := .Get "credit" | htmlUnescape }}
@@ -7,45 +33,32 @@
   {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-8" }}
   {{ $link := .Get "link" | htmlUnescape }}
 
-  <figure
-    class="{{ $figClass }}"
-    x-data="{ showCaption: true }"
-  >
+
+  <figure class="{{ $figClass }}" x-data="{ showCaption: true }">
     {{- if $link -}}
-      <a
-        class="block relative"
-        href="{{ $link }}"
-      >
-    {{- else -}}
-      <div class="relative {{ if $caption }}cursor-pointer{{ end }}">
-    {{- end -}}
-      <picture>
-        <img
-          alt="{{ $description }}"
-          title="{{ $description }}"
-          src="{{ $src }}"
-          loading="lazy"
-          @click="showCaption = !showCaption"
-        >
-      </picture>
-      {{ with $caption }}
-        <figcaption
-          class="
-            absolute p-4 bottom-0 inset-x-0
-            backdrop-filter backdrop-blur-sm backdrop-brightness-50
-            font-sans text-base text-g-1
-          "
-          x-show="showCaption"
-          @click="showCaption = false"
-        >{{ . }}</figcaption>
-      {{ end }}
-    {{- if $link -}}
+      <a class="block relative" href="{{ $link }}">
+        {{- template "shortcode-image-picture" (dict
+          "src" $src
+          "description" $description
+          "caption" $caption
+          )
+        -}}
       </a>
     {{- else -}}
+      <div class="relative {{ if $caption }}cursor-pointer{{ end }}">
+        {{- template "shortcode-image-picture" (dict
+          "src" $src
+          "description" $description
+          "caption" $caption
+          )
+        -}}
       </div>
     {{- end -}}
+
     {{ with $credit }}
-      <figcaption class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase">
+      <figcaption
+        class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase"
+      >
         {{ $credit }}
       </figcaption>
     {{ end }}
