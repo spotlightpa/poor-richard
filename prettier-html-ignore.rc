@@ -1,0 +1,11 @@
+layouts/partials/component/promo-double.html
+layouts/partials/component/promo-single.html
+layouts/partials/component/topper.html
+layouts/partials/featured/content-area-end.html
+layouts/partials/featured/content-area-start.html
+layouts/partials/header/meta.html
+layouts/shortcodes/featured/credit.html
+layouts/shortcodes/featured/embed.html
+layouts/shortcodes/image.html
+layouts/shortcodes/newsletter/covid-alerts-form.html
+layouts/shortcodes/newsletter/investigator-inline.html
