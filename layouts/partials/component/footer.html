@@ -10,16 +10,11 @@
   </li>
 {{ end }}
 
-<section
-  class="footer is-size-4"
-  data-sf-campaign="701f4000000TVuIAAW"
->
+
+<section class="footer is-size-4" data-sf-campaign="701f4000000TVuIAAW">
   <div class="container">
     <div class="columns">
-      <div
-        class="column is-3 content md:order-last"
-        data-ga-category="who"
-      >
+      <div class="column is-3 content md:order-last" data-ga-category="who">
         <div
           x-data
           x-intersect.once="$report({ target: $el })"
@@ -30,25 +25,23 @@
             class="button is-danger is-uppercase has-text-weight-semibold"
             href="/donate/"
             data-ga-category="donate"
-          >❤&#65038; Support Us</a>
+            >❤&#65038; Support Us</a
+          >
         </p>
         <p class="is-size-5 has-text-weight-semibold is-uppercase">
           100% Essential Reporting
         </p>
         <p>
           Spotlight PA relies on funding from
-          <a
-            class="has-text-warning"
-            href="/support/"
-          >foundations and readers like you</a>
+          <a class="has-text-warning" href="/support/"
+            >foundations and readers like you</a
+          >
           who are committed to accountability journalism that gets results.
         </p>
         <p>
           If you value this reporting, please give a gift today at
-          <a
-            class="has-text-warning"
-            href="/donate/"
-          >spotlightpa.org/donate</a>.
+          <a class="has-text-warning" href="/donate/">spotlightpa.org/donate</a
+          >.
         </p>
       </div>
       <div class="column is-3" data-ga-category="spotlightpa">
@@ -78,10 +71,11 @@
     </div>
     <p>&nbsp;</p>
     <p class="has-text-centered is-size-5" data-ga-category="cdn">
-      <a href="https://www.netlify.com/">This site is powered by Netlify</a><br>
-      &copy; {{ now.Format "2006" }}<br>
-      Spotlight PA<br>
-      225 Market St Suite 502A<br>
+      <a href="https://www.netlify.com/">This site is powered by Netlify</a
+      ><br />
+      &copy; {{ now.Format "2006" }}<br />
+      Spotlight PA<br />
+      225 Market St Suite 502A<br />
       Harrisburg PA 17101
       <img
         height="1"

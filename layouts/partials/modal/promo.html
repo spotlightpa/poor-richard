@@ -3,6 +3,7 @@
 {{ $imgDesktopRetina := $imgDesktop | fingerprint }}
 {{ $imgDesktopPlain := $imgDesktop.Fit "700x465" }}
 
+
 <div
   class="modal"
   data-ga-category="modal:donate:totebag"
@@ -52,12 +53,13 @@
           <img
             srcset="
               {{- $imgDesktopPlain.RelPermalink }} 1x,
-              {{- $imgDesktopRetina.RelPermalink }} 2x"
+              {{- $imgDesktopRetina.RelPermalink }} 2x
+            "
             src="{{ $imgDesktopPlain.RelPermalink }}"
             alt="Donate to Spotlight PA now"
             width="700"
             height="465"
-          >
+          />
         </a>
         <a
           class="is-hidden-tablet"
@@ -69,7 +71,7 @@
             alt="Donate to Spotlight PA now"
             width="500"
             height="500"
-          >
+          />
         </a>
       </p>
     </div>

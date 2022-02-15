@@ -23,34 +23,36 @@
     type="button"
     data-ga-action="toggle-language:spanish"
     @click="showSpanish = true"
-  >En Español</a>
+    >En Español</a
+  >
   <a
     x-cloak
     x-show="showSpanish"
     class="title is-7 has-text-danger is-pulled-right is-uppercase"
     data-ga-action="toggle-language:english"
     @click="showSpanish = false"
-  >In English</a>
+    >In English</a
+  >
   <h2
     class="title is-6 has-text-danger has-text-left is-uppercase"
     x-show="!showSpanish"
     x-text="_('flag_text', $el.innerText)"
-  >Tips</h2>
+  >
+    Tips
+  </h2>
   <h2
     x-cloak
     x-show="showSpanish"
     class="title is-6 has-text-danger has-text-left is-uppercase"
-  >Escríbenos</h2>
+  >
+    Escríbenos
+  </h2>
   <div
     class="block"
     x-show="!showSpanish"
     x-rich-text="_('tip_text', '')"
   ></div>
-  <div
-    x-cloak
-    class="block"
-    x-show="showSpanish"
-  >
+  <div x-cloak class="block" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
@@ -70,58 +72,49 @@
     <p class="is-hidden">
       <label>
         Don’t fill this out if you're human:
-        <input name="bot-field">
+        <input name="bot-field" />
       </label>
     </p>
-    <input
-      name="host_page"
-      type="hidden"
-      :value="hostPage"
-    >
+    <input name="host_page" type="hidden" :value="hostPage" />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field">
-          <label
-            class="label is-sr-only"
-            for='{{ $idName }}'
-          >Name</label>
+          <label class="label is-sr-only" for="{{ $idName }}">Name</label>
           <p class="control is-expanded">
             <input
-              id='{{ $idName }}'
+              id="{{ $idName }}"
               class="input is-small"
               type="text"
               :placeholder="showSpanish? 'Nombre': 'Name'"
               name="name"
               required
-            >
+            />
           </p>
         </div>
         <div class="field">
-          <label
-            class="label is-sr-only"
-            for='{{ $idEmail }}'
-          >Email or phone number</label>
+          <label class="label is-sr-only" for="{{ $idEmail }}"
+            >Email or phone number</label
+          >
           <p class="control">
             <input
-              id='{{ $idEmail }}'
+              id="{{ $idEmail }}"
               class="input is-small"
               type="text"
               :placeholder="showSpanish? 'Correo o número de teléfono': 'Email or phone number'"
               name="email"
               required
-            >
+            />
           </p>
         </div>
       </div>
     </div>
     <div class="field">
       <div class="control">
-        <label
-          class="label is-sr-only"
-          for='{{ $idTip }}'
-        >Your tip or comment</label>
+        <label class="label is-sr-only" for="{{ $idTip }}"
+          >Your tip or comment</label
+        >
         <textarea
-          id='{{ $idTip }}'
+          id="{{ $idTip }}"
           class="textarea is-small"
           :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
           name="comment"

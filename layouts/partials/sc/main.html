@@ -8,6 +8,7 @@
 }}
 {{ $url := partial "helper/imgproxy" $imgOpt }}
 
+
 <div class="relative flex flex-col bg-transparent text-white">
   <div
     class="absolute inset-0 flex bg-robin bg-cover"
@@ -18,16 +19,12 @@
     "
     aria-hidden="true"
   >
-    <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"
+    ></div>
   </div>
-  <nav
-    class="flex"
-    data-ga-category="header"
-  >
-    <a
-      class="block px-4 pt-5"
-      href="/"
-    >
+  <nav class="flex" data-ga-category="header">
+    <a class="block px-4 pt-5" href="/">
       <svg
         class="
           filter drop-shadow-outline
@@ -45,27 +42,37 @@
   <div class="px-4 py-8 sm:p-12 leading-tight">
     <div class="flex flex-col justify-center">
       <div class="mx-auto md:max-w-min md:whitespace-nowrap">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-shadow">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-shadow"
+        >
           The future of journalism
-          <br class="hidden md:inline">
+          <br class="hidden md:inline" />
           in State College is here.
         </h1>
-        <h2 class="mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-shadow">
+        <h2
+          class="mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-shadow"
+        >
           Join our historic effort
-          <br class="hidden md:inline">
+          <br class="hidden md:inline" />
           to invigorate local news.
         </h2>
       </div>
     </div>
   </div>
-  <div class="mx-auto w-full max-w-screen-lg pb-4 px-4 flex flex-wrap items-stretch justify-around gap-8">
+  <div
+    class="mx-auto w-full max-w-screen-lg pb-4 px-4 flex flex-wrap items-stretch justify-around gap-8"
+  >
     <a
       class="
         my-8 p-8 w-full sm:w-96 block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
       "
       href="/donate/"
     >
-      <h2 class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase">Become a founding donor</h2>
+      <h2
+        class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase"
+      >
+        Become a founding donor
+      </h2>
       <p class="mt-2 text-lg sm:text-2xl leading-snug">
         Support our State College bureau and all gifts up to $200,000 will be
         <b class="uppercase">doubled</b>.
@@ -78,28 +85,34 @@
             font-bold tracking-widest leading-none
             uppercase
           "
-        >Donate Now</span>
+          >Donate Now</span
+        >
       </p>
     </a>
-    {{ $idEmail :=  partial "helper/new-id" .}}
+    {{ $idEmail :=  partial "helper/new-id" . }}
     <label
-      for='{{ $idEmail }}'
+      for="{{ $idEmail }}"
       class="
         my-8 p-8 w-full sm:w-96 block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
       "
     >
       <form
-        action='{{ .Param "newsletters-action" }}'
+        action="{{ .Param "newsletters-action" }}"
         method="post"
-        data-ga-form='newsletters:statecollege'
+        data-ga-form="newsletters:statecollege"
         target="_blank"
       >
         {{ partial "newsletter/hidden-input.html" . }}
         <input type="hidden" name="state_college" value="1" />
 
-        <h2 class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase">Sign Up For Updates</h2>
+        <h2
+          class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase"
+        >
+          Sign Up For Updates
+        </h2>
         <p class="mt-2 text-lg sm:text-2xl leading-snug">
-          Don’t miss a beat as we prepared to launch this historic initiative in July 2022.
+          Don’t miss a beat as we prepared to launch this historic initiative in
+          July 2022.
         </p>
         <p class="mt-8 flex flex-col sm:flex-row items-stretch gap-2">
           <span class="block relative">
@@ -129,7 +142,9 @@
                 focus:outline-none focus:ring-2 ring-orange ring-opacity-50
               "
               type="submit"
-            >Sign Up</button>
+            >
+              Sign Up
+            </button>
           </span>
         </p>
       </form>
@@ -139,7 +154,9 @@
 <figcaption
   aria-hidden="true"
   class="p-1 text-right bg-white text-g-6 text-sm md:text-base font-sans uppercase leading-none"
->{{ .Param "image-credit" }}</figcaption>
+>
+  {{ .Param "image-credit" }}
+</figcaption>
 
 <section class="pt-8 pb-12 px-4 bg-white text-g-9">
   <article class="mx-auto max-w-prose content-area leading-relaxed">

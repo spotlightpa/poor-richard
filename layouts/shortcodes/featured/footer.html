@@ -1,42 +1,40 @@
-    {{ partial "featured/content-area-end" . }}
-    <footer
-      class="px-8 bg-white"
-      data-ga-category="inline-footer"
-    >
-      <div class="flex flex-col md:flex-row max-w-content mx-auto border-t border-black py-12 md:space-x-12">
-        <div class="flex-1 space-y-12 mb-8">
-          {{ .Inner }}
-        </div>
-        <div class="flex-1 text-sm space-y-4 font-sans">
-          <a
-            class="hover:text-darkblue"
-            href="/"
-          >
-            <svg
-              class="fill-current h-40"
-              role="img"
-              aria-label="Spotlight PA logo"
-              viewBox="0 0 230 230"
-            >
-              <use xlink:href="#logo-svg"></use>
-            </svg>
-          </a>
-          <p class="font-bold uppercase">100% Essential Reporting</p>
-          <p>
-            Spotlight PA relies on funding from
-            <a
-              class="text-darkblue underline hover:text-yellow transition-colors duration-500"
-              href="/support/"
-            >foundations and readers like you</a>
-            who are committed to accountability journalism that gets results.
-          </p>
-          <p>
-            If you value this reporting, please give a gift today at
-            <a
-              class="text-darkblue underline hover:text-yellow transition-colors duration-500"
-              href="/donate/"
-            >spotlightpa.org/donate</a>.
-          </p>
-        </div>
-      </div>
-    </footer>
+{{ partial "featured/content-area-end" . }}
+<footer class="px-8 bg-white" data-ga-category="inline-footer">
+  <div
+    class="flex flex-col md:flex-row max-w-content mx-auto border-t border-black py-12 md:space-x-12"
+  >
+    <div class="flex-1 space-y-12 mb-8">
+      {{ .Inner }}
+    </div>
+    <div class="flex-1 text-sm space-y-4 font-sans">
+      <a class="hover:text-darkblue" href="/">
+        <svg
+          class="fill-current h-40"
+          role="img"
+          aria-label="Spotlight PA logo"
+          viewBox="0 0 230 230"
+        >
+          <use xlink:href="#logo-svg"></use>
+        </svg>
+      </a>
+      <p class="font-bold uppercase">100% Essential Reporting</p>
+      <p>
+        Spotlight PA relies on funding from
+        <a
+          class="text-darkblue underline hover:text-yellow transition-colors duration-500"
+          href="/support/"
+          >foundations and readers like you</a
+        >
+        who are committed to accountability journalism that gets results.
+      </p>
+      <p>
+        If you value this reporting, please give a gift today at
+        <a
+          class="text-darkblue underline hover:text-yellow transition-colors duration-500"
+          href="/donate/"
+          >spotlightpa.org/donate</a
+        >.
+      </p>
+    </div>
+  </div>
+</footer>

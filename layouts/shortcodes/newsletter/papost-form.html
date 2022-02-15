@@ -3,54 +3,52 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <section data-ga-category="inline">
   <form
-    action='{{ site.Param "newsletters-action" }}'
+    action="{{ site.Param "newsletters-action" }}"
     method="post"
     target="_blank"
     data-ga-form="newsletters:papost"
     data-ga-category="newsletters:papost-full"
   >
     {{ partial "newsletter/papost-hidden.html" . }}
-    <h2 class="title is-3">
-      Sign Up for PA Post
-    </h2>
+    <h2 class="title is-3">Sign Up for PA Post</h2>
     <div class="field">
-      <label class="label" for='{{ $idFname }}'>First Name</label>
+      <label class="label" for="{{ $idFname }}">First Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ $idFname }}'
+          id="{{ $idFname }}"
           class="input"
           type="text"
           name="FNAME"
           required
-        >
+        />
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ $idLname }}'>Last Name</label>
+      <label class="label" for="{{ $idLname }}">Last Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id='{{ $idLname }}'
+          id="{{ $idLname }}"
           class="input"
           type="text"
           name="LNAME"
           required
-        >
+        />
       </p>
     </div>
     <div class="field">
-      <label class="label" for='{{ $idEmail }}'>Email Address</label>
+      <label class="label" for="{{ $idEmail }}">Email Address</label>
       <p class="control is-expanded has-icons-left has-icons-right">
         <input
-          id='{{ $idEmail }}'
+          id="{{ $idEmail }}"
           class="input"
           type="email"
           name="EMAIL"
           required
-        >
+        />
         <span class="icon is-left">
           <svg>
             <use xlink:href="#email-svg"></use>
@@ -66,7 +64,10 @@
 
     <div class="field">
       <div class="control">
-        <button type="submit" class="button is-large is-danger has-text-weight-semibold">
+        <button
+          type="submit"
+          class="button is-large is-danger has-text-weight-semibold"
+        >
           Subscribe
         </button>
       </div>

@@ -1,15 +1,11 @@
 {{ $defaultBody := `We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. <b>Instead, we use the honor system.</b>
 
-We are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you <b>pay it forward and make a contribution to Spotlight PA now?</b>` }}
+  We are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you <b>pay it forward and make a contribution to Spotlight PA now?</b>`
+}}
 
-<aside
-  class="font-sans md:text-lg mt-6"
-  data-ga-category="inline:support"
->
-  <a
-    href="/donate/"
-    class="flex"
-  >
+
+<aside class="font-sans md:text-lg mt-6" data-ga-category="inline:support">
+  <a href="/donate/" class="flex">
     <div
       class="mx-auto py-8 sm:py-12 px-4 sm:px-8 rounded shadow bg-goldenrod"
       x-data="{ bgSwap: Math.random() > 0.5 }"
@@ -22,7 +18,9 @@ We are doubling down on the idea that if we ask our readers to contribute what y
         {{ .Page.Param "support-text" | default $defaultBody | markdownify }}
       </div>
       <div class="mt-8 text-center">
-        <span class="py-2 px-2 sm:px-6 bg-orange border-2 border-g-9 rounded-lg hover:shadow uppercase text-sm md:text-lg text-black font-bold tracking-widest">
+        <span
+          class="py-2 px-2 sm:px-6 bg-orange border-2 border-g-9 rounded-lg hover:shadow uppercase text-sm md:text-lg text-black font-bold tracking-widest"
+        >
           {{ .Page.Param "support-cta" | default "Support Spotlight PA »" }}
         </span>
       </div>

@@ -9,13 +9,9 @@
   data-ga-category="modal"
   role="dialog"
   aria-modal="true"
-  aria-labelledby='{{ $idSearch }}'
+  aria-labelledby="{{ $idSearch }}"
 >
-  <div
-    class="modal-background"
-    x-show="isOpen"
-    x-transition.opacity
-  ></div>
+  <div class="modal-background" x-show="isOpen" x-transition.opacity></div>
   <div
     class="modal-content"
     x-show="isOpen"
@@ -25,10 +21,10 @@
     tabindex="-1"
   >
     <header class="modal-card-head">
-      <div class="modal-card-title has-text-weight-bold has-text-centered has-text-white">
-        <span id='{{ $idSearch }}'>
-          Search
-        </span>
+      <div
+        class="modal-card-title has-text-weight-bold has-text-centered has-text-white"
+      >
+        <span id="{{ $idSearch }}"> Search </span>
       </div>
       <button
         class="delete"

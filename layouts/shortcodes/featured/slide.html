@@ -15,6 +15,7 @@
 
 {{ $id := partial "helper/new-id" . }}
 
+
 <figure
   class="snap-center w-5/6 flex-none pb-2 px-2 sm:px-8 group focus:outline-none"
   :class="{'cursor-pointer': currentSlide !== +$el.dataset.slideId }"
@@ -27,7 +28,8 @@
   data-ga-action="slider:focus"
 >
   <div class="relative w-full h-0 pb-16x9">
-    <picture class="
+    <picture
+      class="
         absolute block inset-0
         rounded overflow-hidden
         group-focus:shadow-md transition-shadow duration-300
@@ -38,8 +40,8 @@
       {{ if $isJPEG }}
         <source
           type="image/webp"
-          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-        >
+          srcset="{{ replace $srcset ".jpeg" ".webp" }}"
+        />
       {{ end }}
       <img
         class="w-full h-auto"
@@ -51,10 +53,11 @@
         decode="async"
         loading="lazy"
         :loading="loadingMode"
-      >
+      />
     </picture>
   </div>
   <figcaption class="{{ $capClass }} select-text">
-    {{ $caption }} {{ $credit }}
+    {{ $caption }}
+    {{ $credit }}
   </figcaption>
 </figure>

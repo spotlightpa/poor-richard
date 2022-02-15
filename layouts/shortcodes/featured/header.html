@@ -40,73 +40,77 @@
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
-    <header
-      class="flex flex-col md:flex-row md:min-h-screen"
-      data-ga-category="inline-header"
-    >
-      <div class="md:w-2/5 md:min-w-min bg-black text-white">
-        <div class="px-8 sm:px-12 pb-10">
-          <div class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white">
-            <div
-              class="font-sans uppercase font-bold text-yellow"
-            >{{ $eyebrow }}</div>
-            <h1 class="mt-4 uppercase leading-hed {{ $hedSizes }}">
-              {{ $hed }}
-            </h1>
-            <h2 class="mt-4 lg:text-lg">{{ $dek }}</h2>
-          </div>
-          <time
-            class="font-sans uppercase font-bold"
-            datetime="{{ $params.publishedISO }}"
-          >{{ $date }}</time>
-          <div class="lg:text-lg mt-8 leading-none">
-            by <span class="font-sans uppercase font-bold">{{ $byline }}</span>
-          </div>
-          <div class="mt-3 text-sm font-sans uppercase font-bold">
-            {{ $outlet }}
-          </div>
-          <div class="mt-4 lg:mt-8 text-sm">
-            {{ $artType }} by
-            <span class="font-sans uppercase font-bold">{{ $imageCredit }}</span>
-            {{ $preposition }}
-            <span class="font-sans uppercase">{{ $imageSource }}</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
-        <picture class="bg-g-4 absolute inset-0">
-          {{ if $videoSrc }}
-            <source type="{{ $videoType }}" srcset='{{ $videoSrc }}'>
-            <img
-              alt="{{ $imageDesc }}"
-              title="{{ $imageDesc }}"
-              src="{{ $imgSmallSrc }}"
-              class="w-full h-full object-cover"
-              {{ if $focus }}
-                style="object-position: {{ $focus }};"
-              {{ end }}
-            >
-          {{ else }}
-            {{ $isJPEG := in (string $srcset) ".jpeg" }}
-            {{ if $isJPEG }}
-              <source
-                type="image/webp"
-                srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-              >
-            {{ end }}
-            <img
-              alt="{{ $imageDesc }}"
-              title="{{ $imageDesc }}"
-              src="{{ $imgSmallSrc }}"
-              {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
-              class="w-full h-full object-cover"
-              {{ if $focus }}
-                style="object-position: {{ $focus }};"
-              {{ end }}
-            >
-          {{ end }}
-        </picture>
+<header
+  class="flex flex-col md:flex-row md:min-h-screen"
+  data-ga-category="inline-header"
+>
+  <div class="md:w-2/5 md:min-w-min bg-black text-white">
+    <div class="px-8 sm:px-12 pb-10">
+      <div
+        class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white"
+      >
+        <div class="font-sans uppercase font-bold text-yellow">
+          {{ $eyebrow }}
+        </div>
+        <h1 class="mt-4 uppercase leading-hed {{ $hedSizes }}">
+          {{ $hed }}
+        </h1>
+        <h2 class="mt-4 lg:text-lg">{{ $dek }}</h2>
       </div>
-    </header>
-    {{ partial "featured/content-area-start" . }}
+      <time
+        class="font-sans uppercase font-bold"
+        datetime="{{ $params.publishedISO }}"
+        >{{ $date }}</time
+      >
+      <div class="lg:text-lg mt-8 leading-none">
+        by <span class="font-sans uppercase font-bold">{{ $byline }}</span>
+      </div>
+      <div class="mt-3 text-sm font-sans uppercase font-bold">
+        {{ $outlet }}
+      </div>
+      <div class="mt-4 lg:mt-8 text-sm">
+        {{ $artType }} by
+        <span class="font-sans uppercase font-bold">{{ $imageCredit }}</span>
+        {{ $preposition }}
+        <span class="font-sans uppercase">{{ $imageSource }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
+    <picture class="bg-g-4 absolute inset-0">
+      {{ if $videoSrc }}
+        <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />
+        <img
+          alt="{{ $imageDesc }}"
+          title="{{ $imageDesc }}"
+          src="{{ $imgSmallSrc }}"
+          class="w-full h-full object-cover"
+          {{ if $focus }}
+            style="object-position: {{ $focus }};"
+          {{ end }}
+        />
+      {{ else }}
+        {{ $isJPEG := in (string $srcset) ".jpeg" }}
+        {{ if $isJPEG }}
+          <source
+            type="image/webp"
+            srcset="{{ replace $srcset ".jpeg" ".webp" }}"
+          />
+        {{ end }}
+        <img
+          alt="{{ $imageDesc }}"
+          title="{{ $imageDesc }}"
+          src="{{ $imgSmallSrc }}"
+          {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
+          class="w-full h-full object-cover"
+          {{ if $focus }}
+            style="object-position: {{ $focus }};"
+          {{ end }}
+        />
+      {{ end }}
+    </picture>
+  </div>
+</header>
+{{ partial "featured/content-area-start" . }}

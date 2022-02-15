@@ -13,10 +13,7 @@
   x-data="{ isOpen: {{ $mobileReveal }} }"
   :class="{'h-40': !isOpen}"
 >
-  <div
-    class="absolute inset-x-0 bottom-0 sm:hidden"
-    x-show="!isOpen"
-  >
+  <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
     <button
       :aria-expanded="isOpen"
       class="text-darkblue hover:text-yellow hover:underline leading-4 mb-4"
@@ -29,9 +26,7 @@
           <use xlink:href="#plus-svg"></use>
         </svg>
       </span>
-      <span class="ml-2 uppercase align-bottom">
-        Show more…
-      </span>
+      <span class="ml-2 uppercase align-bottom"> Show more… </span>
     </button>
   </div>
   <div
@@ -42,8 +37,7 @@
     <div
       class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
       x-show="!isOpen"
-    >
-    </div>
-    <hr hidden>
+    ></div>
+    <hr hidden />
   </div>
 </aside>

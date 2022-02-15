@@ -8,10 +8,8 @@
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $style := .Get "style" | htmlUnescape }}
 
-<figure
-  class="{{ $figClass }}"
-  data-ga-category="inline:image"
->
+
+<figure class="{{ $figClass }}" data-ga-category="inline:image">
   <img
     alt="{{ $description }}"
     title="{{ $description }}"
@@ -19,9 +17,9 @@
     loading="lazy"
     class="{{ $imgClass }}"
     style="{{ $style | safeCSS }}"
-  >
+  />
   <figcaption class="{{ $capClass }}">
-    {{ $caption }} {{ $credit }}
+    {{ $caption }}
+    {{ $credit }}
   </figcaption>
 </figure>
-

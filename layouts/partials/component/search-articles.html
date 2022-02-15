@@ -11,7 +11,7 @@
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
         autofocus
-      >
+      />
       <span class="icon is-large is-left">
         <svg>
           <use xlink:href="#search-svg"></use>
@@ -28,8 +28,7 @@
     </div>
   </div>
   <div class="field">
-    <p x-show="resultsText" x-text="resultsText" class="help">
-    </p>
+    <p x-show="resultsText" x-text="resultsText" class="help"></p>
     <template x-if="error">
       <div class="help is-danger">
         Could not load results. <span x-text="error.message"></span>
@@ -43,8 +42,10 @@
         <div class="tile">
           <div class="tile is-parent is-top">
             <div class="tile is-child">
-              <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2" x-text="story.kicker">
-              </h3>
+              <h3
+                class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+                x-text="story.kicker"
+              ></h3>
             </div>
           </div>
         </div>
@@ -65,10 +66,13 @@
                       :data-src="story.imageSource"
                       :src="magicPixel"
                       @load="loadImage($event)"
-                      loading="lazy">
+                      loading="lazy"
+                    />
                   </picture>
                 </a>
-                <figcaption class="is-clearfix is-size-7 is-uppercase has-text-grey-light">
+                <figcaption
+                  class="is-clearfix is-size-7 is-uppercase has-text-grey-light"
+                >
                   <span
                     class="mt-2 is-single-spaced is-pulled-right"
                     x-text="story.imageCredit"
@@ -126,14 +130,10 @@
   target="_blank"
   class="no-js-only"
 >
-  <input type="hidden" name="q" value="site:spotlightpa.org">
+  <input type="hidden" name="q" value="site:spotlightpa.org" />
   <div class="field has-addons">
     <div class="control is-expanded has-icons-left">
-      <input
-        class="input"
-        name="q"
-        placeholder="Search Spotlight PA news…"
-      >
+      <input class="input" name="q" placeholder="Search Spotlight PA news…" />
       <span class="icon is-large is-left">
         <svg>
           <use xlink:href="#search-svg"></use>
@@ -141,11 +141,7 @@
       </span>
     </div>
     <div class="control">
-      <button
-        class="button is-danger has-text-weight-semibold"
-      >
-        Search
-      </button>
+      <button class="button is-danger has-text-weight-semibold">Search</button>
     </div>
   </div>
 </form>

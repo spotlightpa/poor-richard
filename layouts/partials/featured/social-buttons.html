@@ -1,10 +1,8 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
 
-<nav
-  class="flex flex-col text-g-5 space-y-1"
-  data-ga-category="social-buttons"
->
+
+<nav class="flex flex-col text-g-5 space-y-1" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="self-center h-12 w-12 flex text-g-5 hover:bg-green hover:text-white rounded transition-colors duration-500 active:shadow-outline"

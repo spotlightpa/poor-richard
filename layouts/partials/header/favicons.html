@@ -1,24 +1,9 @@
-<link
-  rel="icon"
-  href='/favicon.ico'
-  type="image/png"
-  sizes="any"
-/>
+<link rel="icon" href="/favicon.ico" type="image/png" sizes="any" />
 {{ $icon := site.Param "favicon" | resources.Get | fingerprint }}
-<link
-  rel="icon"
-  type="{{ $icon.MediaType }}"
-  href='{{ $icon.Permalink }}'
-/>
+<link rel="icon" type="{{ $icon.MediaType }}" href="{{ $icon.Permalink }}" />
 {{ $icon = site.Param "touch-icon" | resources.Get }}
 {{ range $size := slice "180x180" }}
   {{ $iconShrunk := $icon.Fit $size }}
-  <link
-    rel="apple-touch-icon"
-    href="{{ $iconShrunk.Permalink }}"
-  />
+  <link rel="apple-touch-icon" href="{{ $iconShrunk.Permalink }}" />
 {{ end }}
-<link
-  rel="manifest"
-  href="/webmanifest.json"
-/>
+<link rel="manifest" href="/webmanifest.json" />

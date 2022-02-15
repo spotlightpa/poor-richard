@@ -1,10 +1,8 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
 
-<div
-  class="buttons"
-  data-ga-category="social-buttons"
->
+
+<div class="buttons" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="button is-success"
