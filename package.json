@@ -6,19 +6,19 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
+    "test": "yarn run test:eslint && yarn run test:prettier",
     "format": "yarn run format:eslint; yarn run format:prettier",
+    "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
     "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
-    "format:prettier": "prettier --ignore-path .gitignore --write **/**/*.{scss,js,yml}",
-    "format:html": "prettier --ignore-path .gitignore --write layouts/**/*.html",
+    "test:prettier": "prettier --ignore-path .gitignore --check '**/*.{scss,js,yml}'",
+    "format:prettier": "prettier --ignore-path .gitignore --write '**/*.{scss,js,yml}'",
+    "test:html": "prettier --ignore-path .gitignore --check 'layouts/**/*.html'",
+    "format:html": "prettier --ignore-path .gitignore --write 'layouts/**/*.html'",
     "build:stage": "hugo --environment staging --baseURL ${DEPLOY_PRIME_URL:-https://www.spotlightpa.org}",
     "build:prod": "hugo --cleanDestinationDir",
     "start:noreload": "hugo server -p 39019 --disableLiveReload",
     "start:full": "hugo server -p 39019 --disableFastRender",
-    "start": "hugo server -p 39019",
-    "test": "yarn run test:eslint && yarn run test:prettier",
-    "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
-    "test:prettier": "prettier --ignore-path .gitignore --check **/**/*.{scss,js,yml}",
-    "test:html": "prettier --ignore-path .gitignore --check layouts/**/*.html"
+    "start": "hugo server -p 39019"
   },
   "dependencies": {
     "@alpinejs/focus": "^3.8.1",
