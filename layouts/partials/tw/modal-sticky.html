@@ -42,14 +42,14 @@
       @click.capture="close()"
       @click.outside="close()"
       href="/donate/"
-    ><img
-      class="shadow-beige rounded"
-      x-data="imageRotator(JSON.parse($el.dataset.images))"
-      data-images="{{ $images | jsonify }}"
-      :src="choice"
-      alt="{{ $alt }}"
-      title="{{ $alt }}"
-      style="max-height: 40vh;"
-    ></a>
+      ><img
+        class="shadow-beige rounded"
+        x-data="imageRotator(JSON.parse($el.dataset.images))"
+        data-images="{{ $images | jsonify }}"
+        :src="choice"
+        alt="{{ $alt }}"
+        title="{{ $alt }}"
+        style="max-height: 40vh;"
+    /></a>
   </div>
 </section>

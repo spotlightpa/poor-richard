@@ -2,10 +2,7 @@
 {{ $emailSubject := .LinkTitle }}
 
 {{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow focus:outline-none active:ring-2 focus:ring-2 ring-black` }}
-<div
-  class="flex space-x-2 text-white"
-  data-ga-category="social-buttons"
->
+<div class="flex space-x-2 text-white" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="{{ $btnClass }} bg-green"

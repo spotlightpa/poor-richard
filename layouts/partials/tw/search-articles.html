@@ -7,7 +7,7 @@
 >
   <div class="flex">
     <div class="flex-grow">
-      <label class="sr-only" for='{{ $idInput }}'>Search</label>
+      <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         class="
           block
@@ -21,16 +21,18 @@
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
         autofocus
-      >
+      />
     </div>
     <div class="mt-0 z-10">
-      <button class="
+      <button
+        class="
         px-4 py-2
         h-full rounded-r-lg border-2 border-goldenrod
         bg-yellow text-g-1
         font-bold tracking-widest uppercase
         focus:outline-none focus:border-yellow-darker
-      ">
+      "
+      >
         <svg
           class="fill-current w-4 h-4"
           :class="{ 'animate-bounce': isLoading }"
@@ -53,10 +55,7 @@
     </template>
   </div>
 
-  <div
-    class="flex flex-col space-y-8 sm:space-y-6"
-    x-data="{ showDate: true }"
-  >
+  <div class="flex flex-col space-y-8 sm:space-y-6" x-data="{ showDate: true }">
     <template x-for="story in stories" :key="story.url">
       {{ partial "tw/story-js.html" . }}
     </template>

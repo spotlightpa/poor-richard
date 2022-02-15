@@ -1,47 +1,52 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
+
 <section class="pt-12 pb-6 px-4 bg-white text-g-9">
   <div class="mx-auto flex flex-none">
     <div class="mx-auto lg:mr-0 w-full max-w-prose">
       <article class="">
         {{ if $params.showTitle }}
-          <header
-            data-ga-category="header"
-          >
+          <header data-ga-category="header">
             {{ if $params.rubric }}
               <a
                 class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
                 href="{{ $params.rubric.RelPermalink }}"
-              >{{ $params.kicker | default $params.rubric.Title }}</a>
+                >{{ $params.kicker | default $params.rubric.Title }}</a
+              >
             {{ else if $params.kicker }}
               <p
                 class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
-              >{{ $params.kicker }}</p>
+              >
+                {{ $params.kicker }}
+              </p>
             {{ end }}
 
-            <h1 class="mt-1 text-black text-2xl sm:text-4xl font-semibold leading-tight tracking-tight">
+
+            <h1
+              class="mt-1 text-black text-2xl sm:text-4xl font-semibold leading-tight tracking-tight"
+            >
               {{ .Title }}
             </h1>
 
             {{ with $params.byline }}
-              <h3 class="mt-1 text-g-7 font-sans text-base font-light leading-tight sm:leading-normal tracking-normal">
+              <h3
+                class="mt-1 text-g-7 font-sans text-base font-light leading-tight sm:leading-normal tracking-normal"
+              >
                 <span class="font-semibold">
                   by
-                  <span
-                    itemtype="http://schema.org/Person"
-                    itemprop="author"
-                  >
+                  <span itemtype="http://schema.org/Person" itemprop="author">
                     {{- $params.byline -}}
                   </span>
                 </span>
                 {{ if $params.published }}
                   |
-                  <time
-                    datetime='{{ $params.publishedISO }}'
-                  >{{ $params.published }}</time>
+                  <time datetime="{{ $params.publishedISO }}"
+                    >{{ $params.published }}</time
+                  >
                 {{ end }}
               </h3>
             {{ end }}
+
 
             <div class="mt-4">
               {{ partial "tw/social-buttons.html" . }}
@@ -51,14 +56,9 @@
 
         {{ partial "tw/hero-image-block.html" . }}
 
-        <div
-          class="mt-6"
-          data-ga-category="content"
-        >
-          <div
-            x-data
-            x-intersect.once="$dispatch('open-sticky')"
-          ></div>
+
+        <div class="mt-6" data-ga-category="content">
+          <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
           <div
             x-data
             x-intersect.once="$report({ target: $el })"
@@ -87,8 +87,9 @@
               {{ if $author.link }}
                 <a
                   class="flex items-center space-x-6"
-                  href="{{ $author.link }}">
-                    {{ template "main-author-loop" $author }}
+                  href="{{ $author.link }}"
+                >
+                  {{ template "main-author-loop" $author }}
                 </a>
               {{ else }}
                 <div class="flex items-center space-x-6">
@@ -101,7 +102,7 @@
                           class="m-auto ring-2 ring-g-6 rounded-full filter grayscale"
                           loading="lazy"
                           decoding="async"
-                        >
+                        />
                       </span>
                     {{ else }}
                       <span class="inline-flex w-16"></span>
@@ -109,8 +110,8 @@
                     <div class="font-sans font-semibold leading-tight">
                       {{ $showLink := and .active .link | not | not }}
                       {{ $color := cond $showLink "text-blue" "text-g-7" }}
-                      <h3 class="text-2xl {{ $color}}">
-                            {{ .name }}
+                      <h3 class="text-2xl {{ $color }}">
+                        {{ .name }}
                       </h3>
                       {{ if and .active .title }}
                         <h3 class="text-lg text-g-6">
