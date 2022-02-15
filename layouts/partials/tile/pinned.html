@@ -1,15 +1,19 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
+
 <article>
   {{ if $params.rubric }}
     <a
       class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
       href="{{ $params.rubric.RelPermalink }}"
-    >{{ $params.kicker | default $params.rubric.Title }}</a>
+      >{{ $params.kicker | default $params.rubric.Title }}</a
+    >
   {{ else }}
     <h3
       class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-    >{{ $params.kicker | default "News" }}</h3>
+    >
+      {{ $params.kicker | default "News" }}
+    </h3>
   {{ end }}
 
   {{ $name := .Page.Param "image" }}
@@ -26,10 +30,8 @@
   }}
   {{ partial "component/image-block.html" $imgOpts }}
 
-  <h2
-    class="title is-4 is-spaced mt-2"
-    data-ga-category="hed"
-  >
+
+  <h2 class="title is-4 is-spaced mt-2" data-ga-category="hed">
     <a class="has-text-black hover-underline" href="{{ .RelPermalink }}">
       {{ .LinkTitle }}
     </a>
@@ -40,7 +42,8 @@
       data-ga-category="byline"
     >
       <a href="{{ .RelPermalink }}" class="has-text-grey hover-underline">
-        by {{ $params.byline }}
+        by
+        {{ $params.byline }}
       </a>
     </h3>
   {{ end }}

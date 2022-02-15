@@ -1,4 +1,4 @@
-{{ $icon := .Param "logo" | resources.Get | fingerprint}}
+{{ $icon := .Param "logo" | resources.Get | fingerprint }}
 {{ $json := newScratch }}
 
 {{ $json.SetInMap "location" "@type" "Place" }}

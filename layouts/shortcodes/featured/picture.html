@@ -6,7 +6,6 @@
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
 
-
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
 {{ $srcset := dict "sizes" $sizes "filename" $src | partial "helper/build-srcset" }}
@@ -22,18 +21,17 @@
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 
-<figure
-  class="{{ $figClass }}"
-  data-ga-category="inline:image"
->
+<figure class="{{ $figClass }}" data-ga-category="inline:image">
   <div class="relative w-full h-0 pb-16x9">
-    <picture class="absolute block inset-0 rounded shadow overflow-hidden bg-g-4">
+    <picture
+      class="absolute block inset-0 rounded shadow overflow-hidden bg-g-4"
+    >
       {{ $isJPEG := in (string $srcset) ".jpeg" }}
       {{ if $isJPEG }}
         <source
           type="image/webp"
-          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-        >
+          srcset="{{ replace $srcset ".jpeg" ".webp" }}"
+        />
       {{ end }}
       <img
         class="w-full h-full"
@@ -44,7 +42,7 @@
         loading="lazy"
         width="16"
         height="9"
-      >
+      />
     </picture>
   </div>
   <figcaption class="{{ $capClass }}">
@@ -52,4 +50,3 @@
     {{ if $credit }}({{ $credit }}){{ end }}
   </figcaption>
 </figure>
-

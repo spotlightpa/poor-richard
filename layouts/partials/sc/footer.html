@@ -5,10 +5,7 @@
     data-ga-action="view:footer"
   ></div>
   <div class="max-w-screen-lg flex flex-col gap-6 lg:flex-row">
-    <div
-      class="flex-grow lg:order-last max-w-xs"
-      data-ga-category="who"
-    >
+    <div class="flex-grow lg:order-last max-w-xs" data-ga-category="who">
       <p>
         <a
           href="/donate/"
@@ -30,23 +27,19 @@
           Support Us
         </a>
       </p>
-      <p class="mt-6 text-lg font-semibold">
-        100% Essential Reporting
-      </p>
+      <p class="mt-6 text-lg font-semibold">100% Essential Reporting</p>
       <p class="mt-3 font-regular normal-case">
         Spotlight PA relies on funding from
-        <a
-          class="text-yellow hover:underline"
-          href="/support/"
-        >foundations and readers like you</a>
+        <a class="text-yellow hover:underline" href="/support/"
+          >foundations and readers like you</a
+        >
         who are committed to accountability journalism that gets results.
       </p>
       <p class="mt-2 font-regular normal-case">
         If you value this reporting, please give a gift today at
-        <a
-          class="text-yellow hover:underline"
-          href="/donate/"
-        >spotlightpa.org/donate</a>.
+        <a class="text-yellow hover:underline" href="/donate/"
+          >spotlightpa.org/donate</a
+        >.
       </p>
     </div>
     {{ $context := dict
@@ -55,10 +48,7 @@
       "name" "Spotlight PA"
     }}
     {{ block "tw-footer" $context }}
-      <div
-        class="flex-1"
-        data-ga-category="{{ .category }}"
-      >
+      <div class="flex-1" data-ga-category="{{ .category }}">
         <h3 class="font-bold">{{ .name }}</h3>
         <ul class="mt-3 space-y-2 leading-tight">
           {{ range .menu }}
@@ -67,7 +57,8 @@
                 class="text-blue hover:text-yellow transition-colors duration-500"
                 href="{{ .URL }}"
                 {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
-              >{{ .Name }}</a>
+                >{{ .Name }}</a
+              >
             </li>
           {{ end }}
         </ul>
@@ -90,12 +81,13 @@
     <a
       class="text-blue hover:text-yellow transition-colors duration-500"
       href="https://www.netlify.com/"
-    >This site is powered by Netlify</a>
+      >This site is powered by Netlify</a
+    >
   </p>
   <p class="mt-6 text-center">
-    &copy; {{ now.Format "2006" }} <br>
-    Spotlight PA <br>
-    225 Market St Suite 502A <br>
-    Harrisburg PA 17101 <br>
+    &copy; {{ now.Format "2006" }} <br />
+    Spotlight PA <br />
+    225 Market St Suite 502A <br />
+    Harrisburg PA 17101 <br />
   </p>
 </nav>

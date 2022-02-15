@@ -1,10 +1,13 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
+
 <article class="tile is-vertical is-bottom">
   <div class="tile">
     <div class="tile is-parent is-top">
       <div class="tile is-child is-hidden-tablet-only">
-        <h3 class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2">
+        <h3
+          class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+        >
           {{ $params.kicker| default "News" }}
         </h3>
       </div>
@@ -17,13 +20,13 @@
         {{ $credit := .Page.Param "image-credit" }}
         {{ $description := .Page.Param "image-description" }}
         {{ $imgOpts := dict
-            "filename" $name
-            "credit" $credit
-            "description" $description
-            "link" .RelPermalink
-            "widthRatio" 16
-            "heightRatio" 9
-            "sizeHint" "15vw"
+          "filename" $name
+          "credit" $credit
+          "description" $description
+          "link" .RelPermalink
+          "widthRatio" 16
+          "heightRatio" 9
+          "sizeHint" "15vw"
         }}
         {{ partial "component/image-block.html" $imgOpts }}
       </div>
@@ -41,13 +44,16 @@
           </a>
         </h2>
         {{ if $params.byline }}
-          <h3 class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal">
+          <h3
+            class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+          >
             <a
               href="{{ .RelPermalink }}"
               class="has-text-grey hover-underline"
               data-ga-category="byline"
             >
-              by {{ $params.byline }}
+              by
+              {{ $params.byline }}
             </a>
           </h3>
         {{ end }}
@@ -61,9 +67,9 @@
               class="has-text-grey hover-underline"
               data-ga-category="time"
             >
-              <time
-                datetime='{{ $params.publishedISO }}'
-              >{{ $params.published }}</time>
+              <time datetime="{{ $params.publishedISO }}"
+                >{{ $params.published }}</time
+              >
             </a>
           </h3>
         {{- end -}}

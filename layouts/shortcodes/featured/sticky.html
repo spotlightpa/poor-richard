@@ -43,21 +43,22 @@
         src="{{ $url }}"
         alt="{{ $flavor }}"
         {{ with $width }}
-          width="{{.}}"
-          style="width: {{.}}px;"
-        {{end}}
-        {{ with $height }}height="{{.}}"{{end}}
-      >
+          width="{{ . }}" style="width: {{ . }}px;"
+        {{ end }}
+        {{ with $height }}height="{{ . }}"{{ end }}
+      />
     {{ else }}
-      <h2
-        class="text-yellow uppercase font-bold text-sm tracking-widest"
-      >Donate</h2>
+      <h2 class="text-yellow uppercase font-bold text-sm tracking-widest">
+        Donate
+      </h2>
       <p class="mt-4 mx-auto max-w-2xl">
         {{ $flavor }}
       </p>
       <div
         class="mt-4 px-8 py-2 bg-yellow border-2 border-yellow-darker text-black rounded uppercase font-bold tracking-widest"
-      >Join Now</div>
+      >
+        Join Now
+      </div>
     {{ end }}
   </a>
 </section>

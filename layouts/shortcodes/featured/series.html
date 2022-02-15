@@ -2,8 +2,8 @@
 {{ $limit := .Get "limit" | default 5 | int }}
 {{ $sideClass :=
   cond (eq $side "right")
-    "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
-    "float-left sm:px-6 lg:-ml-24"
+  "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
+  "float-left sm:px-6 lg:-ml-24"
 }}
 {{ $self := .Page.RelPermalink }}
 {{ $params := partialCached "helper/page-params" .Page $self }}
@@ -30,17 +30,20 @@
           More From This Series
         </a>
       </h2>
-      <ul class="mt-4 sm:w-0 min-w-full space-y-4 text-sm sm:text-base leading-tight">
+      <ul
+        class="mt-4 sm:w-0 min-w-full space-y-4 text-sm sm:text-base leading-tight"
+      >
         {{ range where $pages ".RelPermalink" "!=" $self | last $limit }}
           <li class="font-bold">
             <a
               class="text-darkblue hover:text-yellow transition-colors duration-500"
               href="{{ .RelPermalink }}"
-            >{{ .LinkTitle }}</a>
+              >{{ .LinkTitle }}</a
+            >
           </li>
         {{ end }}
       </ul>
-      <hr hidden>
+      <hr hidden />
     </nav>
   </aside>
 {{ else }}

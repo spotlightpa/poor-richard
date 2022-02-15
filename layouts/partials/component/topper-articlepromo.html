@@ -1,8 +1,9 @@
 {{ $featured := index . 0 }}
 {{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
 
+
 <section
-class="section has-background-black has-text-white has-text-weight-semibold"
+  class="section has-background-black has-text-white has-text-weight-semibold"
   data-ga-category="homepage:topper"
 >
   <div class="container-hp">
@@ -19,17 +20,11 @@ class="section has-background-black has-text-white has-text-weight-semibold"
                 class="icon has-text-warning is-inline-flex is-align-self-center animate-ping"
                 style="position: absolute; top: 0; bottom: 0; left: 0; right: 0"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 100 100"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="35" fill="currentColor" />
                 </svg>
               </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="35" fill="currentColor" />
               </svg>
             </span>
@@ -79,7 +74,8 @@ class="section has-background-black has-text-white has-text-weight-semibold"
                   class="has-text-white"
                   data-ga-category="byline"
                 >
-                  by {{ $featuredParams.byline }}
+                  by
+                  {{ $featuredParams.byline }}
                 </a>
               </h3>
             {{ end }}

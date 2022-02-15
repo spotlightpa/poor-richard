@@ -8,7 +8,7 @@
 
 {{ $thumb := "" }}
 {{ with $data.headshot }}
-  {{ $gravity := index $data "image-gravity" | default "sm"}}
+  {{ $gravity := index $data "image-gravity" | default "sm" }}
   {{ $imgOpt := dict
     "filename" .
     "width" 256
@@ -18,12 +18,12 @@
   {{ $thumb = partial "helper/imgproxy" $imgOpt }}
 {{ end }}
 
-{{ $data = dict 
+{{ $data = dict
   "name" .
   "slug" $nameID
   "link" $link
   "thumb" $thumb
-  | merge $data 
+  | merge $data
 }}
 
 {{ return $data }}

@@ -32,15 +32,9 @@
 {{ $mobileWidth := site.Param "river-promo-mobile-width" }}
 {{ $mobileHeight := site.Param "river-promo-mobile-height" }}
 
-<section
-  class="section {{ $marginClass }}"
-  data-ga-category="homepage"
->
-  <div
-    class="container-hp"
-    x-data="readmore(false)"
-    x-ref="root"
-  >
+
+<section class="section {{ $marginClass }}" data-ga-category="homepage">
+  <div class="container-hp" x-data="readmore(false)" x-ref="root">
     <div class="tile is-ancestor is-vertical">
       {{ if $featuredStory }}
         {{ partial "tile/featured.html" $featuredStories }}
@@ -56,10 +50,7 @@
           {{ end }}
         </div>
       {{ end }}
-      <div
-        x-data
-        x-intersect.once="$dispatch('open-sticky')"
-      ></div>
+      <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
       <div class="tile">
         <div class="tile is-2"></div>
@@ -72,31 +63,17 @@
             <div x-show="!isSubscriber">
               {{ partial "newsletter/multi-box.html" . }}
             </div>
-            <div
-              data-ga-category="donate"
-              x-cloak
-              x-show="isSubscriber"
-            >
+            <div data-ga-category="donate" x-cloak x-show="isSubscriber">
               {{ partial "component/donate-prefill.html" . }}
             </div>
           </div>
         </div>
       </div>
       {{ if $river }}
-        <div
-          class="tile"
-          @mouseover.once="load()"
-          @touchstart.once="load()"
-        >
+        <div class="tile" @mouseover.once="load()" @touchstart.once="load()">
           <div class="tile is-parent is-top is-4" style="order: 2">
-            <div
-              class="tile is-child"
-              data-ga-category="sidebar"
-            >
-              <div
-                data-ga-category="top"
-                data-sf-campaign="7015G0000013oHLQAY"
-              >
+            <div class="tile is-child" data-ga-category="sidebar">
+              <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
                 {{ partial "component/promo-single.html" (dict
                   "class" "mb-5 w-0 min-w-full no-js-hide"
                   "images" (.Param "sidebar-top-images")
@@ -104,7 +81,8 @@
                   "height" (.Param "sidebar-top-height")
                   "link"  (.Param "sidebar-top-link")
                   "description"  (.Param "sidebar-top-description")
-                )}}
+                  )
+                }}
               </div>
 
               {{ partial "component/most-popular.html" dict }}
@@ -126,15 +104,13 @@
                     "height" (.Param "sidebar-sticky-height")
                     "link"  (.Param "sidebar-sticky-link")
                     "description"  (.Param "sidebar-sticky-description")
-                  )}}
+                    )
+                  }}
                 </div>
               {{ end }}
             </div>
           </div>
-          <div
-            class="tile is-vertical is-8"
-            style="order: 1"
-          >
+          <div class="tile is-vertical is-8" style="order: 1">
             <div
               class="tile is-vertical"
               x-ref="archives"
@@ -146,7 +122,7 @@
                   <h2 class="title is-4 is-uppercase has-text-weight-semibold">
                     More top stories
                   </h2>
-                  <hr class="is-emphatic-underline has-margin-top-negative">
+                  <hr class="is-emphatic-underline has-margin-top-negative" />
                 </div>
               </div>
               {{ range $i, $page := $river | first 30 }}
@@ -167,7 +143,8 @@
                       "mobileImages" $mobileImages
                       "mobileWidth" $mobileWidth
                       "mobileHeight" $mobileHeight
-                    ) }}
+                      )
+                    }}
                   </div>
                 {{ end }}
               {{ end }}
@@ -191,7 +168,8 @@
                 class="button is-primary is-medium is-uppercase has-text-weight-semibold"
                 :class="loadingClass"
                 :disabled="!canReadMore"
-              >Read More</a>
+                >Read More</a
+              >
             </div>
           </div>
         </div>

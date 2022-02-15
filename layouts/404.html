@@ -3,10 +3,10 @@
   {{ $dict := dict "class" "is-danger" "title" "Not Found" "subtitle" "Error 404" "content" $content }}
   {{ partial "component/message-block.html" $dict }}
   <script>
-    window.ga('send', 'event', {
+    window.ga("send", "event", {
       eventLabel: "page:404",
       eventCategory: "not-found",
-      eventAction: window.location.href
+      eventAction: window.location.href,
     });
   </script>
 {{ end }}

@@ -1,11 +1,17 @@
 <!-- header tags that are the same on all pages -->
 {{ range slice "500" "800" }}
-  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2" crossorigin>
+  <link
+    rel="preload"
+    as="font"
+    href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-{{ . }}.woff2"
+    crossorigin
+  />
 {{ end }}
+
 
 <link
   rel="modulepreload"
-  href='{{ partialCached "helper/get-enhancements" . }}'
+  href="{{ partialCached "helper/get-enhancements" . }}"
 />
 
 {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/bulma") }}
@@ -13,7 +19,7 @@
 {{ if not site.IsServer }}
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 
 {{ `<noscript>` | safeHTML }}
 
@@ -26,19 +32,20 @@
     }
   </style>
 
-{{ `</noscript>` | safeHTML }}
+{{ `</noscript>`
+| safeHTML }}
 
 <link
   rel="alternate"
   type="application/feed+json"
-  href='{{ absURL "/feeds/full.json" }}'
+  href="{{ absURL "/feeds/full.json" }}"
   title="Full News Feed"
 />
 
 <link
   rel="alternate"
   type="application/rss+xml"
-  href='{{ absURL "/feeds/full.xml" }}'
+  href="{{ absURL "/feeds/full.xml" }}"
   title="Full News Feed"
 />
 

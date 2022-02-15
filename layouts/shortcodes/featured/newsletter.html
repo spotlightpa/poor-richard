@@ -7,28 +7,34 @@
   "
   x-data="{ active: false }"
   @focusin="active = true"
-  data-ga-form='newsletters:multi'
+  data-ga-form="newsletters:multi"
   data-ga-category="tout"
-  action='{{ .Page.Param "newsletters-action" }}'
+  action="{{ .Page.Param "newsletters-action" }}"
   method="post"
   target="_blank"
 >
   {{ partial "newsletter/hidden-input.html" . }}
-  <h6 class="text-base bg-clip-text text-transparent bg-gradient-to-r from-orange via-yellow to-white uppercase font-bold tracking-widest">Sign Up For Our Free Newsletters</h6>
+  <h6
+    class="text-base bg-clip-text text-transparent bg-gradient-to-r from-orange via-yellow to-white uppercase font-bold tracking-widest"
+  >
+    Sign Up For Our Free Newsletters
+  </h6>
 
   <p class="mt-4 leading-tight">
-    Get every Spotlight PA story and the best investigative journalism from across Pa.
+    Get every Spotlight PA story and the best investigative journalism from
+    across Pa.
   </p>
   <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
     <p class="relative flex-grow">
-      <label class="sr-only" for='{{ $idEmail }}'>Email address</label>
+      <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
-        id='{{ $idEmail }}'
+        id="{{ $idEmail }}"
         class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-yellow-darker"
         type="email"
         name="EMAIL"
         placeholder="Email address"
-        required />
+        required
+      />
       <span
         class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
         aria-hidden="true"
@@ -42,7 +48,9 @@
       <button
         class="w-full bg-yellow px-8 py-2 uppercase text-black font-bold rounded border-2 border-yellow-darker tracking-widest focus:outline-none focus:ring-2 ring-yellow-darker"
         type="submit"
-      >Sign Up</button>
+      >
+        Sign Up
+      </button>
     </p>
   </div>
   <div
@@ -60,8 +68,9 @@
           checked
           data-ga-button
           data-ga-action="toggle-newsletter:papost"
-        >
-        <strong>Daily</strong>: Top news every weekday morning, plus a daily puzzle.
+        />
+        <strong>Daily</strong>: Top news every weekday morning, plus a daily
+        puzzle.
       </label>
     </p>
     <p class="mt-2 text-left">
@@ -73,8 +82,9 @@
           checked
           data-ga-button
           data-ga-action="toggle-newsletter:investigator"
-        >
-        <strong>Weekly</strong>: Best accountability journalism every Thursday, plus a weekly riddle.
+        />
+        <strong>Weekly</strong>: Best accountability journalism every Thursday,
+        plus a weekly riddle.
       </label>
     </p>
     <p class="mt-2 text-left">
@@ -86,8 +96,9 @@
           checked
           data-ga-button
           data-ga-action="toggle-newsletter:palocal"
-        >
-        <strong>Weekly</strong>: A fresh look at the incredible people, places, and food of Pa. every Friday, plus events, guides, best-of, and more.
+        />
+        <strong>Weekly</strong>: A fresh look at the incredible people, places,
+        and food of Pa. every Friday, plus events, guides, best-of, and more.
       </label>
     </p>
   </div>

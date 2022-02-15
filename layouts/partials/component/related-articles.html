@@ -17,13 +17,14 @@
             <h2 class="title is-4 is-uppercase has-text-weight-semibold">
               More Stories from Spotlight&nbsp;PA
             </h2>
-            <hr class="is-emphatic-underline has-margin-top-negative">
+            <hr class="is-emphatic-underline has-margin-top-negative" />
           </div>
         </div>
         {{ range $page := $related }}
           {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
         {{ end }}
         {{ partial "tile/readmore.html" dict }}
+
 
         <div class="tile is-parent">
           <div class="tile is-child has-text-centered">
@@ -36,7 +37,8 @@
               class="button is-primary is-medium is-uppercase has-text-weight-semibold"
               :class="loadingClass"
               :disabled="!canReadMore"
-            >Read More</a>
+              >Read More</a
+            >
           </div>
         </div>
       </div>

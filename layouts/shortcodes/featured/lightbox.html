@@ -5,6 +5,7 @@
 {{ $bgColor := .Get "bgcolor" | default "#000" }}
 {{ $link := .Get "link" | default "/donate/" }}
 
+
 <aside
   x-data="lightbox"
   class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
@@ -36,11 +37,10 @@
         src="{{ $imageURL }}"
         alt="{{ $text }}"
         {{ with $width }}
-          width="{{.}}"
-          style="width: {{.}}"
-        {{end}}
-        {{ with $height }}height="{{.}}"{{end}}
-      >
+          width="{{ . }}" style="width: {{ . }}"
+        {{ end }}
+        {{ with $height }}height="{{ . }}"{{ end }}
+      />
     </a>
   </div>
 </aside>

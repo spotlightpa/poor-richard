@@ -5,11 +5,7 @@
   aria-label="main navigation"
 >
   <div class="navbar-brand">
-    <a
-      href="/"
-      class="navbar-item"
-      data-ga-category="logo"
-    >
+    <a href="/" class="navbar-item" data-ga-category="logo">
       <span class="is-sr-only">Home</span>
       <svg viewBox="0 0 1024 190">
         <title>Home</title>
@@ -32,10 +28,7 @@
     </a>
   </div>
 
-  <div
-    id="navbar-menu-items"
-    class="navbar-menu"
-  >
+  <div id="navbar-menu-items" class="navbar-menu">
     <div class="navbar-end">
       {{ $thisPage := .Page }}
       {{ range .Site.Menus.main }}
@@ -71,7 +64,8 @@
           class="button is-danger is-uppercase has-text-weight-semibold"
           href="/donate/"
           data-ga-category="donate"
-        >❤&#65038; Support Us</a>
+          >❤&#65038; Support Us</a
+        >
       </span>
       <span class="navbar-item is-hidden-touch">&nbsp;</span>
     </div>

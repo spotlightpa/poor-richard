@@ -2,6 +2,7 @@
 {{ $images := .Param "sticky-images" }}
 {{ $link := .Param "sticky-link" }}
 
+
 <section
   class="window-sticker no-js-hide"
   data-ga-category="modal:sticky"
@@ -24,11 +25,8 @@
       @click="close"
       x-ref="close"
     ></button>
-    <a
-      class="window-sticker-content"
-      href="{{ $link }}"
-      @click.outside="close"
-    ><img
+    <a class="window-sticker-content" href="{{ $link }}" @click.outside="close"
+      ><img
         class="shadow-beige rounded"
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ $images | jsonify }}"
@@ -36,6 +34,6 @@
         alt="{{ $alt }}"
         title="{{ $alt }}"
         style="max-height: 40vh;"
-    ></a>
+    /></a>
   </div>
 </section>

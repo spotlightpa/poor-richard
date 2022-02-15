@@ -60,7 +60,7 @@
   "eventDateISO" $eventDateISO
 }}
 
-{{ if .Param "series"}}
+{{ if .Param "series" }}
   {{ $series := index (.GetTerms "series") 0 }}
   {{ $params = dict "series" $series | merge $params }}
   {{ $rubric = $series }}
