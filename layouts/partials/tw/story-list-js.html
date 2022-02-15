@@ -1,17 +1,6 @@
-<link
-  rel="prefetch"
-  as="fetch"
-  :href="'/feeds/summary.json'"
-  x-ref="feedSrc"
-/>
-<div
-  class="space-y-8 sm:space-y-6"
-  data-ga-category="readmore"
->
-  <template
-    x-for="story in stories"
-    :key="story.url"
-  >
+<link rel="prefetch" as="fetch" :href="'/feeds/summary.json'" x-ref="feedSrc" />
+<div class="space-y-8 sm:space-y-6" data-ga-category="readmore">
+  <template x-for="story in stories" :key="story.url">
     {{ partial "tw/story-js.html" . }}
   </template>
 </div>
@@ -27,10 +16,6 @@
     data-ga-category="error"
   >
     Could not load more.
-    <a
-      href="/news/"
-      class="text-blue semibold underline"
-    >Try again?</a>
+    <a href="/news/" class="text-blue semibold underline">Try again?</a>
   </div>
 </template>
-

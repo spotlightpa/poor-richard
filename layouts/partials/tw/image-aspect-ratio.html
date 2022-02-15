@@ -1,13 +1,11 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $padding := slice .width .height | partial "helper/aspect-ratio" }}
 
-<span
-  class="block mx-auto max-w-full"
-  style="width: {{ .width }}px;"
->
+
+<span class="block mx-auto max-w-full" style="width: {{ .width }}px;">
   <span
     class="relative block w-full h-0 overflow-hidden bg-g-5"
-    style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+    style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
   >
     <img
       class="absolute inset-0 object-cover"
@@ -19,6 +17,6 @@
       loading="lazy"
       width="{{ .width }}"
       height="{{ .height }}"
-    >
+    />
   </span>
 </span>

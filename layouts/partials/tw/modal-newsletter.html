@@ -14,9 +14,7 @@
     aria-modal="true"
     aria-label="Newsletter sign up"
   >
-    <div
-      class="absolute inset-0 bg-g-5 opacity-75"
-    ></div>
+    <div class="absolute inset-0 bg-g-5 opacity-75"></div>
     <div
       class="absolute inset-0 backdrop-filter backdrop-blur-sm"
       x-transition.delay.150ms
@@ -29,14 +27,16 @@
       <form
         class="m-auto max-w-prose overflow-hidden rounded-lg shadow-lg text-g-9 font-sans text-center"
         data-ga-form="newsletters:multi"
-        action='{{ .Param "investigator-action" }}'
+        action="{{ .Param "investigator-action" }}"
         method="post"
         target="_blank"
         tabindex="-1"
         @click.stop
         @keydown.escape="isOpen = false"
       >
-        <header class="relative flex flex-none justify-between bg-black text-white">
+        <header
+          class="relative flex flex-none justify-between bg-black text-white"
+        >
           <p class="mx-auto p-4 h-14 inline-flex items-center">
             <svg
               viewBox="0 0 1024 190"
@@ -68,22 +68,27 @@
         </header>
         <div class="p-8 bg-white">
           {{ partial "newsletter/hidden-input.html" . }}
-          <h6 class="text-lg bg-clip-text text-transparent bg-gradient-to-r from-black via-blue to-robin uppercase font-bold tracking-widest">Sign Up For Our Free Newsletters</h6>
+          <h6
+            class="text-lg bg-clip-text text-transparent bg-gradient-to-r from-black via-blue to-robin uppercase font-bold tracking-widest"
+          >
+            Sign Up For Our Free Newsletters
+          </h6>
 
           <p class="mt-4 text-lg font-semibold leading-tight">
-            Get every Spotlight PA story and <br class="hidden sm:inline">
+            Get every Spotlight PA story and <br class="hidden sm:inline" />
             the best investigative journalism from across Pa.
           </p>
           <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
             <p class="relative flex-grow">
-              <label class="sr-only" for='{{ $idEmail }}'>Email address</label>
+              <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
-                id='{{ $idEmail }}'
+                id="{{ $idEmail }}"
                 class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-robin"
                 type="email"
                 name="EMAIL"
                 placeholder="Email address"
-                required />
+                required
+              />
               <span
                 class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
                 aria-hidden="true"
@@ -103,8 +108,9 @@
                 checked
                 data-ga-button
                 data-ga-action="toggle-newsletter:papost"
-              >
-              <strong>Daily</strong>: Top news every weekday morning, plus a daily puzzle.
+              />
+              <strong>Daily</strong>: Top news every weekday morning, plus a
+              daily puzzle.
             </label>
           </p>
           <p class="mt-1 text-left">
@@ -116,14 +122,17 @@
                 checked
                 data-ga-button
                 data-ga-action="toggle-newsletter:investigator"
-              >
-              <strong>Weekly</strong>: Best accountability journalism every Thursday, plus a weekly riddle.
+              />
+              <strong>Weekly</strong>: Best accountability journalism every
+              Thursday, plus a weekly riddle.
             </label>
           </p>
           <button
             class="mt-6 px-8 py-2 bg-orange text-white uppercase  font-semibold rounded tracking-wider hover:shadow"
             type="submit"
-          >Sign me up</button>
+          >
+            Sign me up
+          </button>
           <p class="text-center">
             <button
               class="mt-5 text-g-6 hover:underline"

@@ -17,10 +17,7 @@
     "
   >
     <div class="w-full sm:w-64 flex-shrink-0">
-      <figure
-        class="mt-1"
-        data-ga-category="thumb"
-      >
+      <figure class="mt-1" data-ga-category="thumb">
         <a
           class="block relative pb-16x9 w-full h-0 shadow overflow-hidden bg-g-4"
           :href="story.url"
@@ -31,7 +28,8 @@
               :alt="story.imageDescription"
               :title="story.imageDescription"
               :src="story.imageURL"
-              loading="lazy">
+              loading="lazy"
+            />
           </picture>
         </a>
         <figcaption
@@ -49,7 +47,9 @@
           x-text="story.title"
         ></a>
       </h2>
-      <h3 class="text-g-7 font-sans text-base font-semibold leading-tight tracking-normal">
+      <h3
+        class="text-g-7 font-sans text-base font-semibold leading-tight tracking-normal"
+      >
         <a
           class="group-hover:underline"
           :href="story.url"
@@ -63,13 +63,8 @@
         data-ga-category="time"
         x-show="showDate"
       >
-        <a
-          class="group-hover:underline"
-          :href="story.url"
-        >
-          <time
-            :datetime="story.publishedISO"
-            x-text="story.published"></time>
+        <a class="group-hover:underline" :href="story.url">
+          <time :datetime="story.publishedISO" x-text="story.published"></time>
         </a>
       </h3>
     </div>

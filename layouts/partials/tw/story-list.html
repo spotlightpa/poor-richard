@@ -1,16 +1,20 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
+
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if $params.rubric }}
       <a
         class="inline-block px-2 bg-black text-white text-sm font-sans font-semibold uppercase"
         href="{{ $params.rubric.RelPermalink }}"
-      >{{ $params.kicker | default $params.rubric.Title }}</a>
+        >{{ $params.kicker | default $params.rubric.Title }}</a
+      >
     {{ else if $params.kicker }}
       <p
         class="inline-block px-2 bg-black text-white text-sm font-sans font-semibold uppercase"
-      >{{ $params.kicker }}</p>
+      >
+        {{ $params.kicker }}
+      </p>
     {{ end }}
   </div>
   <div
@@ -24,15 +28,15 @@
       {{ $credit := .Page.Param "image-credit" }}
       {{ $description := .Page.Param "image-description" }}
       {{ $imgOpts := dict
-          "filename" $name
-          "credit" $credit
-          "description" $description
-          "link" .RelPermalink
-          "widthRatio" 16
-          "heightRatio" 9
-          "widths" (slice 128 256 384 512 1280)
-          "figClass" "mt-1"
-          "sizeHint" "256px"
+        "filename" $name
+        "credit" $credit
+        "description" $description
+        "link" .RelPermalink
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "256px"
       }}
       {{ partial "tw/image-block.html" $imgOpts }}
     </div>
@@ -47,13 +51,16 @@
         </a>
       </h2>
       {{ if $params.byline }}
-        <h3 class="text-g-7 font-sans text-base font-semibold leading-tight tracking-normal">
+        <h3
+          class="text-g-7 font-sans text-base font-semibold leading-tight tracking-normal"
+        >
           <a
             href="{{ .RelPermalink }}"
             class="group-hover:underline"
             data-ga-category="byline"
           >
-            by {{ $params.byline }}
+            by
+            {{ $params.byline }}
           </a>
         </h3>
       {{ end }}
@@ -62,13 +69,10 @@
           class="text-g-7 font-sans text-base font-light leading-tight tracking-normal"
           data-ga-category="time"
         >
-          <a
-            href="{{ .RelPermalink }}"
-            class="group-hover:underline"
-          >
-            <time
-              datetime='{{ $params.publishedISO }}'
-            >{{ $params.published }}</time>
+          <a href="{{ .RelPermalink }}" class="group-hover:underline">
+            <time datetime="{{ $params.publishedISO }}"
+              >{{ $params.published }}</time
+            >
           </a>
         </h3>
       {{- end -}}
