@@ -32,10 +32,7 @@
             x-data
             @click.prevent="$dispatch('modal:search:open')"
           >
-            <svg
-              class="fill-current w-4 h-4"
-              :class="{ 'animate-bounce': isLoading }"
-            >
+            <svg class="fill-current w-4 h-4">
               <use xlink:href="#search-svg"></use>
             </svg>
           </a>
