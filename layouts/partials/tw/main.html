@@ -2,180 +2,175 @@
 
 
 <section class="pt-12 pb-6 px-4 bg-white text-g-9">
-  <div class="mx-auto flex flex-none">
-    <div class="mx-auto lg:mr-0 w-full max-w-prose">
-      <article class="">
-        {{ if $params.showTitle }}
-          <header data-ga-category="header">
-            {{ if $params.rubric }}
-              <a
-                class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
-                href="{{ $params.rubric.RelPermalink }}"
-                >{{ $params.kicker | default $params.rubric.Title }}</a
-              >
-            {{ else if $params.kicker }}
-              <p
-                class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
-              >
-                {{ $params.kicker }}
-              </p>
-            {{ end }}
-
-
-            <h1
-              class="mt-1 text-black text-2xl sm:text-4xl font-semibold leading-tight tracking-tight"
+  <div class="mx-auto max-w-screen-lg grid grid-cols-2 lg:grid-cols-3">
+    <div class="col-span-2 mx-auto max-w-prose">
+      {{ if $params.showTitle }}
+        <header data-ga-category="header">
+          {{ if $params.rubric }}
+            <a
+              class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
+              href="{{ $params.rubric.RelPermalink }}"
+              >{{ $params.kicker | default $params.rubric.Title }}</a
             >
-              {{ .Title }}
-            </h1>
+          {{ else if $params.kicker }}
+            <p
+              class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
+            >
+              {{ $params.kicker }}
+            </p>
+          {{ end }}
 
-            {{ with $params.byline }}
-              <h3
-                class="mt-1 text-g-7 font-sans text-base font-light leading-tight sm:leading-normal tracking-normal"
-              >
-                <span class="font-semibold">
-                  by
-                  <span itemtype="http://schema.org/Person" itemprop="author">
-                    {{- $params.byline -}}
-                  </span>
+
+          <h1
+            class="mt-1 text-black text-2xl sm:text-4xl font-semibold leading-tight tracking-tight"
+          >
+            {{ .Title }}
+          </h1>
+
+          {{ with $params.byline }}
+            <h3
+              class="mt-1 text-g-7 font-sans text-base font-light leading-tight sm:leading-normal tracking-normal"
+            >
+              <span class="font-semibold">
+                by
+                <span itemtype="http://schema.org/Person" itemprop="author">
+                  {{- $params.byline -}}
                 </span>
-                {{ if $params.published }}
-                  |
-                  <time datetime="{{ $params.publishedISO }}"
-                    >{{ $params.published }}</time
-                  >
-                {{ end }}
-              </h3>
-            {{ end }}
-
-
-            <div class="mt-4">
-              {{ partial "tw/social-buttons.html" . }}
-            </div>
-          </header>
-        {{ end }}
-
-        {{ partial "tw/hero-image-block.html" . }}
-
-
-        <div class="mt-6" data-ga-category="content">
-          <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-start"
-          ></div>
-          <div
-            class="article-content leading-relaxed"
-            data-sf-campaign="701f4000000TVuXAAW"
-          >
-            {{ .Content }}
-          </div>
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-finish"
-          ></div>
-        </div>
-
-        {{ with .Param "authors" }}
-          <footer
-            class="mt-6 space-y-6"
-            data-ga-category="inline-footer:author"
-          >
-            {{ range $name := . }}
-              {{ $author := partial "helper/get-author" $name }}
-              {{ if $author.link }}
-                <a
-                  class="flex items-center space-x-6"
-                  href="{{ $author.link }}"
+              </span>
+              {{ if $params.published }}
+                |
+                <time datetime="{{ $params.publishedISO }}"
+                  >{{ $params.published }}</time
                 >
-                  {{ template "main-author-loop" $author }}
-                </a>
-              {{ else }}
-                <div class="flex items-center space-x-6">
-                  {{ block "main-author-loop" $author }}
-                    {{ if .thumb }}
-                      <span class="inline-flex w-16 h-16">
-                        <img
-                          src="{{ .thumb }}"
-                          alt="Photo of {{ .name }}"
-                          class="m-auto ring-2 ring-g-6 rounded-full filter grayscale"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </span>
-                    {{ else }}
-                      <span class="inline-flex w-16"></span>
-                    {{ end }}
-                    <div class="font-sans font-semibold leading-tight">
-                      {{ $showLink := and .active .link | not | not }}
-                      {{ $color := cond $showLink "text-blue" "text-g-7" }}
-                      <h3 class="text-2xl {{ $color }}">
-                        {{ .name }}
-                      </h3>
-                      {{ if and .active .title }}
-                        <h3 class="text-lg text-g-6">
-                          {{ .title }}
-                        </h3>
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                </div>
               {{ end }}
-            {{ end }}
-          </footer>
-        {{ end }}
-        {{ partial "tw/support.html" . }}
-      </article>
+            </h3>
+          {{ end }}
 
-      {{ if .Param "suppress-related" | not }}
-        {{ $news := site.GetPage "/news/_index.md" }}
-        {{ $related := $news.RegularPages.Related . | first 3 }}
-        {{ partial "tw/related-articles.html" $related }}
+
+          <div class="mt-4">
+            {{ partial "tw/social-buttons.html" . }}
+          </div>
+        </header>
       {{ end }}
+
+      {{ partial "tw/hero-image-block.html" . }}
     </div>
-    <div
-      class="hidden lg:block ml-8 mr-auto w-80 self-stretch"
-      data-ga-category="sidebar"
-    >
-      <div class="w-full" style="height: 75vh"></div>
-      <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
-        {{ partial "tw/promo-single.html" (dict
-          "class" "mb-5 w-0 min-w-full no-js-hide"
-          "images" (.Param "sidebar-top-images")
-          "width" (.Param "sidebar-top-width")
-          "height" (.Param "sidebar-top-height")
-          "link"  (.Param "sidebar-top-link")
-          "description"  (.Param "sidebar-top-description")
-          )
-        }}
-      </div>
-
-      {{ partial "tw/most-popular.html" dict }}
-      {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
-      {{ range $edPicks }}
-        {{ partial "tw/editors-picks.html" . }}
-      {{ end }}
-      {{ if .Param "sidebar-sticky-images" }}
-        <div
-          class="sticky top-0"
-          data-ga-category="sticky"
-          data-sf-campaign="7015G0000013oHQQAY"
-          x-data
-          x-intersect="$dispatch('close-sticky')"
-        >
+    {{ if .Param "image-size" | ne "hidden" }}
+      <div
+        class="col-span-2 row-start-3 mt-6 mx-auto lg:col-span-1 lg:col-start-3 lg:row-start-2 row-span-2 max-w-full w-80"
+        data-ga-category="sidebar"
+      >
+        <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
           {{ partial "tw/promo-single.html" (dict
-            "class" "pt-5 w-0 min-w-full no-js-hide"
-            "images" (.Param "sidebar-sticky-images")
-            "width" (.Param "sidebar-sticky-width")
-            "height" (.Param "sidebar-sticky-height")
-            "link"  (.Param "sidebar-sticky-link")
-            "description"  (.Param "sidebar-sticky-description")
+            "class" "mb-5 w-0 min-w-full no-js-hide"
+            "images" (.Param "sidebar-top-images")
+            "width" (.Param "sidebar-top-width")
+            "height" (.Param "sidebar-top-height")
+            "link"  (.Param "sidebar-top-link")
+            "description"  (.Param "sidebar-top-description")
             )
           }}
         </div>
+
+        {{ partial "tw/most-popular.html" dict }}
+        {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+        {{ range $edPicks }}
+          {{ partial "tw/editors-picks.html" . }}
+        {{ end }}
+        {{ if .Param "sidebar-sticky-images" }}
+          <div
+            class="sticky top-0"
+            data-ga-category="sticky"
+            data-sf-campaign="7015G0000013oHQQAY"
+            x-data
+            x-intersect="$dispatch('close-sticky')"
+          >
+            {{ partial "tw/promo-single.html" (dict
+              "class" "pt-5 w-0 min-w-full no-js-hide"
+              "images" (.Param "sidebar-sticky-images")
+              "width" (.Param "sidebar-sticky-width")
+              "height" (.Param "sidebar-sticky-height")
+              "link"  (.Param "sidebar-sticky-link")
+              "description"  (.Param "sidebar-sticky-description")
+              )
+            }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    <article class="col-span-2 mx-auto max-w-prose">
+      <div class="mt-6" data-ga-category="content">
+        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view:content-start"
+        ></div>
+        <div
+          class="article-content leading-relaxed"
+          data-sf-campaign="701f4000000TVuXAAW"
+        >
+          {{ .Content }}
+        </div>
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view:content-finish"
+        ></div>
+      </div>
+
+      {{ with .Param "authors" }}
+        <footer class="mt-6 space-y-6" data-ga-category="inline-footer:author">
+          {{ range $name := . }}
+            {{ $author := partial "helper/get-author" $name }}
+            {{ if $author.link }}
+              <a class="flex items-center space-x-6" href="{{ $author.link }}">
+                {{ template "main-author-loop" $author }}
+              </a>
+            {{ else }}
+              <div class="flex items-center space-x-6">
+                {{ block "main-author-loop" $author }}
+                  {{ if .thumb }}
+                    <span class="inline-flex w-16 h-16">
+                      <img
+                        src="{{ .thumb }}"
+                        alt="Photo of {{ .name }}"
+                        class="m-auto ring-2 ring-g-6 rounded-full filter grayscale"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </span>
+                  {{ else }}
+                    <span class="inline-flex w-16"></span>
+                  {{ end }}
+                  <div class="font-sans font-semibold leading-tight">
+                    {{ $showLink := and .active .link | not | not }}
+                    {{ $color := cond $showLink "text-blue" "text-g-7" }}
+                    <h3 class="text-2xl {{ $color }}">
+                      {{ .name }}
+                    </h3>
+                    {{ if and .active .title }}
+                      <h3 class="text-lg text-g-6">
+                        {{ .title }}
+                      </h3>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        </footer>
       {{ end }}
-    </div>
+      {{ partial "tw/support.html" . }}
+    </article>
+
+    {{ if .Param "suppress-related" | not }}
+      <nav class="col-span-2 mx-auto max-w-prose">
+        {{ $news := site.GetPage "/news/_index.md" }}
+        {{ $related := $news.RegularPages.Related . | first 3 }}
+        {{ partial "tw/related-articles.html" $related }}
+      </nav>
+    {{ end }}
   </div>
 
   {{ partialCached "tw/promo-footer.html" (dict "wrapperClass" "py-8 no-js-hide") }}
