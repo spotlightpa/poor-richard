@@ -1,0 +1,33 @@
+{{ $alt := index . "description" }}
+{{ $link := index . "link" }}
+{{ $wrapperClass := index . "class" | default "text-center no-js-hide" }}
+
+{{ $images := index . "images" }}
+{{ $width := index . "width" }}
+{{ $height := index . "height" }}
+
+{{ if $images }}
+  <section class="{{ $wrapperClass }}" data-ga-category="promo-image">
+    <p>
+      {{ with $link }}
+        <a href="{{ . }}">
+          {{- partial "tw/image-aspect-ratio.html" (dict
+            "images" $images
+            "width" $width
+            "height" $height
+            "description" $alt
+            )
+          -}}
+        </a>
+      {{ else }}
+        {{- partial "tw/image-aspect-ratio.html" (dict
+          "images" $images
+          "width" $width
+          "height" $height
+          "description" $alt
+          )
+        -}}
+      {{ end }}
+    </p>
+  </section>
+{{ end }}
