@@ -1,0 +1,55 @@
+{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+
+
+<div class="mt-6 rounded shadow bg-g-4 p-6" data-ga-category="editors-pick">
+  <h2
+    class="text-orange text-center text-base font-sans font-bold tracking-wider leading-none uppercase"
+  >
+    Editor’s Pick
+  </h2>
+
+  <article class="mt-6">
+    <div class="w-full sm:w-64 flex-shrink-0">
+      {{ $name := .Page.Param "image" }}
+      {{ $credit := .Page.Param "image-credit" }}
+      {{ $description := .Page.Param "image-description" }}
+      {{ $imgOpts := dict
+        "filename" $name
+        "credit" $credit
+        "description" $description
+        "link" .RelPermalink
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "256px"
+      }}
+      {{ partial "tw/image-block.html" $imgOpts }}
+    </div>
+    <div class="mt-6 group w-full flex-grow space-y-1">
+      <h3 class="text-black text-lg font-semibold leading-tight tracking-tight">
+        <a
+          class="group-hover:underline"
+          href="{{ .RelPermalink }}"
+          data-ga-category="hed"
+        >
+          {{ .LinkTitle }}
+        </a>
+      </h3>
+      {{ if $params.byline }}
+        <h4
+          class="text-g-9 font-sans text-base font-normal leading-tight tracking-normal"
+        >
+          <a
+            href="{{ .RelPermalink }}"
+            class="group-hover:underline"
+            data-ga-category="byline"
+          >
+            by
+            {{ $params.byline }}
+          </a>
+        </h4>
+      {{ end }}
+    </div>
+  </article>
+</div>

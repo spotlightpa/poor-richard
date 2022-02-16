@@ -134,8 +134,47 @@
         {{ partial "tw/related-articles.html" $related }}
       {{ end }}
     </div>
-    <div class="hidden lg:block ml-8 mr-auto w-80">
-      <div class="h-8 bg-green rounded shadow w-full"></div>
+    <div
+      class="hidden lg:block ml-8 mr-auto w-80 self-stretch"
+      data-ga-category="sidebar"
+    >
+      <div class="w-full" style="height: 75vh"></div>
+      <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
+        {{ partial "tw/promo-single.html" (dict
+          "class" "mb-5 w-0 min-w-full no-js-hide"
+          "images" (.Param "sidebar-top-images")
+          "width" (.Param "sidebar-top-width")
+          "height" (.Param "sidebar-top-height")
+          "link"  (.Param "sidebar-top-link")
+          "description"  (.Param "sidebar-top-description")
+          )
+        }}
+      </div>
+
+      {{ partial "tw/most-popular.html" dict }}
+      {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+      {{ range $edPicks }}
+        {{ partial "tw/editors-picks.html" . }}
+      {{ end }}
+      {{ if .Param "sidebar-sticky-images" }}
+        <div
+          class="sticky top-0"
+          data-ga-category="sticky"
+          data-sf-campaign="7015G0000013oHQQAY"
+          x-data
+          x-intersect="$dispatch('close-sticky')"
+        >
+          {{ partial "tw/promo-single.html" (dict
+            "class" "pt-5 w-0 min-w-full no-js-hide"
+            "images" (.Param "sidebar-sticky-images")
+            "width" (.Param "sidebar-sticky-width")
+            "height" (.Param "sidebar-sticky-height")
+            "link"  (.Param "sidebar-sticky-link")
+            "description"  (.Param "sidebar-sticky-description")
+            )
+          }}
+        </div>
+      {{ end }}
     </div>
   </div>
 
