@@ -1,138 +1,153 @@
-<header class="bg-black font-sans">
-  <nav x-data="{ isOpen: false }">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="flex-1 flex items-center justify-start">
-          <a
-            class="flex-shrink-0 inline-flex text-white hover:text-yellow"
-            href="/"
-          >
-            <svg class="h-12 w-auto fill-current">
-              <title>Home</title>
-              <desc>Spotlight PA logo</desc>
-              <use xlink:href="#banner-svg"></use>
-            </svg>
-          </a>
-        </div>
-        <span
-          class="hidden lg:flex flex-row items-center content-between space-x-6"
+<nav
+  x-data="{ isOpen: false }"
+  class="bg-black font-sans"
+  data-ga-category="navbar"
+  data-sf-campaign="701f4000000TVu3AAG"
+  aria-label="main navigation"
+>
+  <div class="mx-auto max-w-screen-lg">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="flex w-full lg:w-min items-center justify-start">
+        <a
+          class="mx-auto flex-shrink-0 lg:px-6 inline-flex text-white hover:text-yellow"
+          href="/"
+          data-ga-category="logo"
         >
-          {{ range site.Menus.main }}
-            <a
-              class="uppercase text-white hover:text-yellow duration-500"
-              href="{{ .URL }}"
-              >{{ .Name }}</a
-            >
-          {{ end }}
+          <svg class="h-8 sm:h-12 w-40 sm:w-60 fill-current">
+            <title>Home</title>
+            <desc>Spotlight PA logo</desc>
+            <use xlink:href="#banner-svg"></use>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="hidden lg:flex w-full items-center justify-between"
+        data-ga-category="desktop"
+      >
+        {{ range site.Menus.main }}
           <a
-            href="/search/"
-            class="text-white hover:text-yellow"
-            data-ga-category="search"
-            :data-ga-action="'modal:search:open'"
-            x-data
-            @click.prevent="$dispatch('modal:search:open')"
+            class="uppercase text-white hover:text-yellow duration-500"
+            href="{{ .URL }}"
+            data-ga-category="item"
+            >{{ .Name }}</a
           >
-            <svg class="fill-current w-4 h-4">
-              <use xlink:href="#search-svg"></use>
-            </svg>
-          </a>
-          <a
-            class="px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold"
-            href="/donate/"
+        {{ end }}
+        <a
+          href="/search/"
+          class="text-white hover:text-yellow"
+          data-ga-category="search"
+          :data-ga-action="'modal:search:open'"
+          x-data
+          @click.prevent="$dispatch('modal:search:open')"
+        >
+          <svg class="fill-current w-4 h-4">
+            <use xlink:href="#search-svg"></use>
+          </svg>
+        </a>
+        <a
+          class="px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold"
+          href="/donate/"
+          data-ga-category="donate"
+        >
+          <svg
+            class="inline mr-1 h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            style="margin-top: -4px;"
           >
-            <svg
-              class="inline mr-1 h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              aria-hidden="true"
-              style="margin-top: -4px;"
+            <path
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            />
+          </svg>
+          Support Us
+        </a>
+      </div>
+      <div class="absolute right-4 lg:hidden flex items-center">
+        <div
+          x-data="{ isOpen: false }"
+          x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
+          x-id="['dropdown-button']"
+          class="relative"
+        >
+          <!-- no JS fallback link to footer -->
+          <a class="flex" href="#footer" :href="null" @click.prevent>
+            <button
+              type="button"
+              class="rounded border border-white px-4 py-2 text-white"
+              x-ref="button"
+              aria-label="Site Menu"
+              :aria-expanded="isOpen"
+              :aria-controls="$id('dropdown-button')"
+              @click="isOpen = !isOpen"
+              data-ga-category="burger"
+              data-ga-action="menu:toggle"
             >
-              <path
-                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              />
-            </svg>
-            Support Us
+              <svg class="w-4 h-4 fill-current">
+                <title>Site Menu</title>
+                <use xlink:href="#bars-svg"></use>
+              </svg>
+            </button>
           </a>
-        </span>
-        <div class="flex lg:hidden items-center">
-          <div
-            x-data="{ isOpen: false }"
-            x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
-            x-id="['dropdown-button']"
-            class="relative"
-          >
-            <!-- no JS fallback link to footer -->
-            <a class="flex" href="#footer" :href="null" @click.prevent>
-              <button
-                type="button"
-                class="rounded border border-white px-4 py-2 text-white"
-                x-ref="button"
-                aria-label="Site Menu"
-                :aria-expanded="isOpen"
-                :aria-controls="$id('dropdown-button')"
-                @click="isOpen = !isOpen"
-                data-ga-action="menu:toggle"
-              >
-                <svg class="w-4 h-4 fill-current">
-                  <title>Site Menu</title>
-                  <use xlink:href="#bars-svg"></use>
-                </svg>
-              </button>
-            </a>
 
-            <div
-              x-ref="panel"
-              :id="$id('dropdown-button')"
-              x-show="isOpen"
-              x-cloak
-              x-transition.origin.top.right
-              class="
+          <div
+            data-ga-category="mobile"
+            x-ref="panel"
+            :id="$id('dropdown-button')"
+            x-show="isOpen"
+            x-cloak
+            x-transition.origin.top.right
+            class="
                   absolute mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow
                   py-2 px-4 space-y-2 bg-black text-white uppercase
                 "
-              @click.outside="isOpen = false; $refs.button.focus()"
-              @focusin.outside="isOpen = false"
-            >
-              {{ range site.Menus.main }}
-                <a
-                  class="block w-full hover:text-yellow transition-colors duration-500"
-                  href="{{ .URL }}"
-                  >{{ .Name }}</a
+            @click.outside="isOpen = false; $refs.button.focus()"
+            @focusin.outside="isOpen = false"
+          >
+            <div class="py-2">
+              <a
+                class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
+                href="/donate/"
+                data-ga-category="donate"
+              >
+                <svg
+                  class="inline mr-1 h-4 w-4 fill-current"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  style="margin-top: -4px;"
                 >
-              {{ end }}
-              <div>
-                <a
-                  href="/search/"
-                  class="block w-full hover:text-yellow transition-colors duration-500"
-                  data-ga-category="search"
-                  :data-ga-action="'modal:search:open'"
-                  x-data
-                  @click.prevent="$dispatch('modal:search:open')"
-                >
-                  Search
-                </a>
-              </div>
-              <div class="py-2">
-                <a
-                  class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
-                  href="/donate/"
-                >
-                  <svg
-                    class="inline mr-1 h-4 w-4 fill-current"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                    style="margin-top: -4px;"
-                  >
-                    <path
-                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                    />
-                  </svg>
-                  Support Us
-                </a>
-              </div>
+                  <use xlink:href="#logo-svg"></use>
+                </svg>
+                Support Us
+              </a>
+            </div>
+            {{ range site.Menus.main }}
+              <a
+                class="block w-full hover:text-yellow transition-colors duration-500"
+                href="{{ .URL }}"
+                data-ga-category="item"
+                >{{ .Name }}</a
+              >
+            {{ end }}
+            <div>
+              <a
+                href="/search/"
+                class="block w-full hover:text-yellow transition-colors duration-500"
+                data-ga-category="search"
+                :data-ga-action="'modal:search:open'"
+                x-data
+                @click.prevent="$dispatch('modal:search:open')"
+              >
+                Search
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
+<div
+  x-data
+  x-intersect.once="$report({ target: $el })"
+  data-ga-action="view:nav"
+></div>
