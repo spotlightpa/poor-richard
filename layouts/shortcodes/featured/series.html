@@ -8,6 +8,11 @@
 {{ $self := .Page.RelPermalink }}
 {{ $params := partialCached "helper/page-params" .Page $self }}
 {{ $series := $params.series }}
+{{ $name := "This Series" }}
+{{ with .Get "series" }}
+  {{ $series = (site.Taxonomies.series.Get (urlize . )).Page }}
+  {{ $name = "Spotlight PA" }}
+{{ end }}
 {{ $pages := $series.Pages.ByPublishDate }}
 {{ if gt $pages.Len 1 }}
   <aside
@@ -27,7 +32,8 @@
           class="border-b-2 border-black tracking-wide whitespace-nowrap"
           href="{{ $series.RelPermalink }}"
         >
-          More From This Series
+          More From
+          {{ $name }}
         </a>
       </h2>
       <ul
