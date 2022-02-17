@@ -1,12 +1,8 @@
 {{ if .Param "promo-active" }}
   {{ if eq (.Param "promo-type") "text" }}
-    {{ partialCached "component/promo-text.html" . }}
+    {{ partialCached "tw/promo-text.html" . }}
   {{ else }}
-    <div
-      class="pt-6 px-6 bg-white"
-      data-ga-category="header"
-      data-sf-campaign="701f4000000TVuEAAW"
-    >
+    <div class="pt-6 px-6 bg-white" data-sf-campaign="701f4000000TVuEAAW">
       {{ partialCached "tw/promo-double.html" (dict
         "imageDescription" (site.Param "promo-image-description")
         "link" (site.Param "promo-link")

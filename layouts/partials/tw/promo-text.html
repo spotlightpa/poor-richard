@@ -1,0 +1,9 @@
+{{ $promo := .Param "promo-text" | markdownify }}
+{{ $link := .Param "promo-link" }}
+<section class="pt-6 p-1 bg-white" data-ga-category="promo-text">
+  <a href="{{ $link }}" class="hover:underline">
+    <div class="text-lg text-black text-center font-sans leading-snug">
+      {{ $promo }}
+    </div>
+  </a>
+</section>

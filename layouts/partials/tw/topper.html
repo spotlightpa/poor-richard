@@ -1,0 +1,84 @@
+{{ $alt := .Param "topper-image-description" }}
+{{ $link := .Param "topper-link" }}
+
+{{ $imgDesktop := .Param "topper-desktop-images" }}
+{{ $widthDesktop := .Param "topper-desktop-width" }}
+{{ $heightDesktop := .Param "topper-desktop-height" }}
+{{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
+
+{{ $imgMobile := .Param "topper-mobile-images" }}
+
+{{ $widthMobile := .Param "topper-mobile-width" }}
+{{ $heightMobile := .Param "topper-mobile-height" }}
+{{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
+
+{{ $bannerActive := .Param "banner-active" }}
+{{ $toppperBgColor := .Param "topper-bg-color" }}
+{{ $toppperDividerColor := .Param "topper-divider-color" }}
+
+
+<section
+  class="no-js-hide"
+  data-ga-category="topper"
+  data-sf-campaign="7015G0000013nlKQAQ"
+  style="
+    background-color: {{ $toppperBgColor }};
+    {{ if not $bannerActive }}
+    border-top: .25rem solid {{ $toppperDividerColor }};
+  {{ end }}
+  "
+>
+  <p>
+    {{ if $imgDesktop }}
+      {{ with $link }}
+        <a class="hidden sm:block" data-ga-category="desktop" href="{{ . }}">
+          {{- partial "tw/image-aspect-ratio.html" (dict
+            "images" $imgDesktop
+            "width" $widthDesktop
+            "height" $heightDesktop
+            "description" $alt
+            "transparent" true
+            )
+          -}}
+
+        </a>
+      {{ else }}
+        <span class="hidden sm:block">
+          {{- partial "tw/image-aspect-ratio.html" (dict
+            "images" $imgDesktop
+            "width" $widthDesktop
+            "height" $heightDesktop
+            "description" $alt
+            "transparent" true
+            )
+          -}}
+        </span>
+      {{ end }}
+    {{ end }}
+    {{ if $imgMobile }}
+      {{ with $link }}
+        <a class="sm:hidden" data-ga-category="mobile" href="{{ . }}">
+          {{- partial "tw/image-aspect-ratio.html" (dict
+            "images" $imgMobile
+            "width" $widthMobile
+            "height" $heightMobile
+            "description" $alt
+            "transparent" true
+            )
+          -}}
+        </a>
+      {{ else }}
+        <span class="sm:hidden">
+          {{- partial "tw/image-aspect-ratio.html" (dict
+            "images" $imgMobile
+            "width" $widthMobile
+            "height" $heightMobile
+            "description" $alt
+            "transparent" true
+            )
+          -}}
+        </span>
+      {{ end }}
+    {{ end }}
+  </p>
+</section>
