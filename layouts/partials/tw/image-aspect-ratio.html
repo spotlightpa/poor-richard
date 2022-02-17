@@ -1,11 +1,12 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $padding := slice .width .height | partial "helper/aspect-ratio" }}
+{{ $bgClass := cond (not .transparent) "bg-g-5" "" }}
 
 
 <span class="block mx-auto max-w-full" style="width: {{ .width }}px;">
   <span
-    class="relative block w-full h-0 overflow-hidden bg-g-5"
-    style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
+    class="relative block w-full h-0 overflow-hidden {{ $bgClass }}"
+    style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
   >
     <img
       class="absolute inset-0 object-cover"
