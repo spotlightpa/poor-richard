@@ -56,49 +56,7 @@
 
       {{ partial "tw/hero-image-block.html" . }}
     </div>
-    {{ if .Param "image-size" | ne "hidden" }}
-      <div
-        class="col-span-2 row-start-3 mt-6 mx-auto lg:col-span-1 lg:col-start-3 lg:row-start-2 row-span-2 max-w-full w-80"
-        data-ga-category="sidebar"
-      >
-        <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
-          {{ partial "tw/promo-single.html" (dict
-            "class" "mb-5 w-0 min-w-full no-js-hide"
-            "images" (.Param "sidebar-top-images")
-            "width" (.Param "sidebar-top-width")
-            "height" (.Param "sidebar-top-height")
-            "link"  (.Param "sidebar-top-link")
-            "description"  (.Param "sidebar-top-description")
-            )
-          }}
-        </div>
 
-        {{ partial "tw/most-popular.html" dict }}
-        {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
-        {{ range $edPicks }}
-          {{ partial "tw/editors-picks.html" . }}
-        {{ end }}
-        {{ if .Param "sidebar-sticky-images" }}
-          <div
-            class="sticky top-0"
-            data-ga-category="sticky"
-            data-sf-campaign="7015G0000013oHQQAY"
-            x-data
-            x-intersect="$dispatch('close-sticky')"
-          >
-            {{ partial "tw/promo-single.html" (dict
-              "class" "pt-5 w-0 min-w-full no-js-hide"
-              "images" (.Param "sidebar-sticky-images")
-              "width" (.Param "sidebar-sticky-width")
-              "height" (.Param "sidebar-sticky-height")
-              "link"  (.Param "sidebar-sticky-link")
-              "description"  (.Param "sidebar-sticky-description")
-              )
-            }}
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
     <article class="col-span-2 mx-auto max-w-prose">
       <div class="mt-6" data-ga-category="content">
         <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
@@ -167,6 +125,50 @@
       {{ end }}
       {{ partial "tw/support.html" . }}
     </article>
+
+    {{ if .Param "image-size" | ne "hidden" }}
+      <div
+        class="col-span-2 mt-6 mx-auto lg:col-span-1 lg:col-start-3 lg:row-start-2 row-span-2 max-w-full w-80"
+        data-ga-category="sidebar"
+      >
+        <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
+          {{ partial "tw/promo-single.html" (dict
+            "class" "mb-5 w-0 min-w-full no-js-hide"
+            "images" (.Param "sidebar-top-images")
+            "width" (.Param "sidebar-top-width")
+            "height" (.Param "sidebar-top-height")
+            "link"  (.Param "sidebar-top-link")
+            "description"  (.Param "sidebar-top-description")
+            )
+          }}
+        </div>
+
+        {{ partial "tw/most-popular.html" dict }}
+        {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+        {{ range $edPicks }}
+          {{ partial "tw/editors-picks.html" . }}
+        {{ end }}
+        {{ if .Param "sidebar-sticky-images" }}
+          <div
+            class="sticky top-0"
+            data-ga-category="sticky"
+            data-sf-campaign="7015G0000013oHQQAY"
+            x-data
+            x-intersect="$dispatch('close-sticky')"
+          >
+            {{ partial "tw/promo-single.html" (dict
+              "class" "pt-5 w-0 min-w-full no-js-hide"
+              "images" (.Param "sidebar-sticky-images")
+              "width" (.Param "sidebar-sticky-width")
+              "height" (.Param "sidebar-sticky-height")
+              "link"  (.Param "sidebar-sticky-link")
+              "description"  (.Param "sidebar-sticky-description")
+              )
+            }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
 
     {{ if .Param "suppress-related" | not }}
       <nav class="col-span-2 mx-auto max-w-prose">
