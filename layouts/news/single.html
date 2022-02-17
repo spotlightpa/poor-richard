@@ -77,13 +77,15 @@
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
   <body
     data-ga-label="{{ $pageCat }}"
-    data-ga-category="featured"
     class="bg-beige base-16 font-serif leading-normal"
   >
     <!-- mobile overflow guard -->
     <div class="flex flex-col w-screen overflow-x-hidden sm:overflow-x-visible">
-      {{ partialCached "tw/nav.html" . }}
-      {{ partialCached "tw/banner.html" . }}
+      <header data-ga-category="header">
+        {{ partialCached "tw/nav.html" . }}
+        {{ partialCached "tw/banner.html" . }}
+      </header>
+
       <!-- TODO: Topper -->
       {{ partialCached "tw/promo-header.html" . }}
       <main data-ga-category="main">
