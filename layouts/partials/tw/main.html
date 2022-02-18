@@ -2,7 +2,7 @@
 
 
 <section class="pt-12 pb-6 px-4 bg-white text-g-9">
-  <div class="mx-auto max-w-screen-lg grid grid-cols-2 lg:grid-cols-3">
+  <article class="mx-auto max-w-screen-lg grid grid-cols-2 lg:grid-cols-3">
     <div class="col-span-2 mx-auto max-w-prose">
       {{ if $params.showTitle }}
         <header data-ga-category="header">
@@ -57,7 +57,7 @@
       {{ partial "tw/hero-image-block.html" . }}
     </div>
 
-    <article class="col-span-2 mx-auto max-w-prose">
+    <div class="col-span-2 mx-auto max-w-prose">
       <div class="mt-6" data-ga-category="content">
         <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
         <div
@@ -124,7 +124,7 @@
         </footer>
       {{ end }}
       {{ partial "tw/support.html" . }}
-    </article>
+    </div>
 
     {{ if .Param "image-size" | ne "hidden" }}
       <div
@@ -177,7 +177,7 @@
         {{ partial "tw/related-articles.html" $related }}
       </nav>
     {{ end }}
-  </div>
+  </article>
 
   {{ partialCached "tw/promo-footer.html" (dict "wrapperClass" "py-8 no-js-hide") }}
 </section>
