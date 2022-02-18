@@ -95,23 +95,22 @@
             x-cloak
             x-transition.origin.top.right
             class="
-                  absolute mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow
-                  py-2 px-4 space-y-2 bg-black text-white uppercase
+                  absolute z-10 mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow
+                  py-2 px-4 space-y-2 bg-black text-white text-lg uppercase
                 "
             @click.outside="isOpen = false; $refs.button.focus()"
             @focusin.outside="isOpen = false"
           >
             <div class="py-2">
               <a
-                class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold hover:shadow-beige"
+                class="px-3 py-2 inline-flex items-center whitespace-nowrap bg-orange text-white rounded uppercase font-semibold hover:shadow-beige"
                 href="/donate/"
                 data-ga-category="donate"
               >
                 <svg
-                  class="inline mr-1 h-4 w-4 fill-current"
+                  class="inline mr-1 h-6 w-6 fill-current"
                   viewBox="0 0 20 20"
                   aria-hidden="true"
-                  style="margin-top: -4px;"
                 >
                   <use xlink:href="#logo-svg"></use>
                 </svg>
