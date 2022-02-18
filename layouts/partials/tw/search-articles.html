@@ -34,10 +34,14 @@
       "
       >
         <svg
-          class="fill-current w-4 h-4"
+          x-show="!isLoading"
+          class="fill-current w-4 h-4 animate-bounce"
           :class="{ 'animate-bounce': isLoading }"
         >
           <use xlink:href="#search-svg"></use>
+        </svg>
+        <svg x-show="isLoading" class="fill-current w-4 h-4 animate-spin">
+          <use xlink:href="#spinner-svg"></use>
         </svg>
       </button>
     </div>
