@@ -1,27 +1,25 @@
 <nav
   x-data="{ isOpen: false }"
-  class="bg-black font-sans"
+  class="px-4 bg-black"
   data-ga-category="navbar"
   data-sf-campaign="701f4000000TVu3AAG"
   aria-label="main navigation"
 >
-  <div class="mx-auto max-w-screen-lg">
-    <div class="relative flex items-center justify-between h-16">
-      <div class="flex w-full lg:w-min items-center justify-start">
-        <a
-          class="mx-auto flex-shrink-0 lg:px-6 inline-flex text-white hover:text-yellow"
-          href="/"
-          data-ga-category="logo"
-        >
-          <svg class="h-8 sm:h-12 w-40 sm:w-60 fill-current">
-            <title>Home</title>
-            <desc>Spotlight PA logo</desc>
-            <use xlink:href="#banner-svg"></use>
-          </svg>
-        </a>
-      </div>
+  <div class="mx-auto max-w-prose lg:max-w-screen-lg">
+    <div class="flex items-center justify-between h-16">
+      <a
+        class="flex-shrink-0 lg:px-6 inline-flex text-white hover:text-yellow"
+        href="/"
+        data-ga-category="logo"
+      >
+        <svg class="pr-4 sm:pr-0 h-12 w-60 max-w-full fill-current">
+          <title>Home</title>
+          <desc>Spotlight PA logo</desc>
+          <use xlink:href="#banner-svg"></use>
+        </svg>
+      </a>
       <div
-        class="hidden lg:flex w-full items-center justify-between"
+        class="hidden lg:flex w-full items-center space-x-4 justify-end font-sans"
         data-ga-category="desktop"
       >
         {{ range site.Menus.main }}
@@ -62,7 +60,7 @@
           Support Us
         </a>
       </div>
-      <div class="absolute right-4 lg:hidden flex items-center">
+      <div class="lg:hidden flex items-center font-sans">
         <div
           x-data="{ isOpen: false }"
           x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
@@ -105,7 +103,7 @@
           >
             <div class="py-2">
               <a
-                class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold"
+                class="px-3 py-2 bg-orange text-white rounded uppercase font-semibold hover:shadow-beige"
                 href="/donate/"
                 data-ga-category="donate"
               >
