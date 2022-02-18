@@ -135,7 +135,7 @@
     </article>
 
     {{ if .Param "image-size" | ne "hidden" }}
-      <div
+      <aside
         class="col-span-2 mt-6 mx-auto lg:col-span-1 lg:col-start-3 lg:row-start-2 row-span-2 w-80 max-w-prose sm:w-full sm:grid grid-cols-2 place-items-center gap-4 lg:block lg:w-80"
         data-ga-category="sidebar"
       >
@@ -181,7 +181,7 @@
             }}
           </div>
         {{ end }}
-      </div>
+      </aside>
     {{ end }}
 
     {{ if .Param "suppress-related" | not }}
