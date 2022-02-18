@@ -14,7 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2022-02-07T12:41:00-05:00
 slug = "pa-mail-voting-supreme-court-act-77-unconstitutional"
-title = "You’re invited! A free virtual panel on the future of Pennsylvania’s mail voting law"
+title = "WATCH: A free virtual panel on the future of Pennsylvania’s mail voting law"
 topics = ["Events", "Elections"]
 +++
 
@@ -24,9 +24,9 @@ Act 77, Pennsylvania’s mail voting law, was <a href="https://www.spotlightpa.o
 
 The law remains in place as the Wolf administration pursues an appeal to the Pennsylvania Supreme Court, which has agreed to hear arguments next month. Though Democrats dominate the state’s highest court, some experts say the case will be a “close legal question.”
 
-On Thursday, Feb. 17 at 5 p.m., join Spotlight PA via Zoom as we break down Act 77, why it’s being challenged, and what to expect from the high court.
+On Feb. 17, a panel organized by Spotlight PA discussed Act 77, why it’s being challenged, and what to expect from the high court. Watch it below.
 
-Our panelists include:
+Our panelists included:
 
 - <b>Angela Couloumbis</b>, investigative reporter for Spotlight PA
 
@@ -36,10 +36,8 @@ Our panelists include:
 
 - <b>Dan Moul</b>, Republican state representative, 91st District
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_LrLMb1rZSc-hoaSiVqU89g">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/679250619?h=7e57ee8a1d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ballot Battle Q&amp;amp;A"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
-
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
