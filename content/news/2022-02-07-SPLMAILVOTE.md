@@ -1,8 +1,8 @@
 +++
 arc-id = "Q2A5ENCS5FG6LG3UT2FPKG7UFY"
-blurb = "Join Spotlight PA Feb. 17 for a panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
+blurb = "Watch Spotlight PA's panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA Feb. 17 for a panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
+description = "Watch Spotlight PA's panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
 event-date = 2022-02-17T17:00:00-05:00
 image = "external/cxbc41pes2k2hdhwzah6a5bafr.jpeg"
 image-credit = "Sue Dorfman / For Votebeat"
