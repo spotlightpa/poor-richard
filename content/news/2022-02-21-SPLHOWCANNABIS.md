@@ -34,7 +34,7 @@ Shover and her fellow researchers warned that misinformation could have fatal co
 
 Those treatments have widespread support in the scientific and medical communities. For instance, a 2019 report from the National Academies of Sciences, Engineering, and Medicine found people with opioid use disorder are about 50% less likely to die when they are being treated long-term with methadone or buprenorphine, two of the three federally approved medications for opioid use disorder.
 
-Spotlight PA decided to conduct its own review of websites that promoted cannabis dispensaries, as well as those for physicians and certification companies.
+<a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites/" target="_blank">Spotlight PA decided to conduct its own review of websites that promoted cannabis dispensaries, as well as those for physicians and certification companies.</a>
 
 These websites are important resources for patients. Dispensary websites frequently provide instructions detailing how people can obtain medical marijuana cards, feature testimonials from patients, and analyze research. The Pennsylvania Department of Health public list of cannabis dispensaries includes both their physical addresses and websites. Some of those dispensary websites in turn link to the websites of specific physicians or companies that help certify patients.
 
