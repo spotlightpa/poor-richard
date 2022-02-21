@@ -20,6 +20,8 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>&gt;&gt; </b></i><a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites/" target="_blank"><i><b>Read the complete investigation here</b></i></a>
+
 HARRISBURG — Prompted by Pennsylvania’s opioid epidemic, the Wolf administration in 2018 officially endorsed cannabis as a treatment for opioid use disorder — an unusual move.
 
 A few other states followed, but the endorsement also met strong resistance from the Pennsylvania Psychiatric Society, the American Society of Addiction Medicine, and others who warned of the potential harm of cannabis use or its potential to lead patients away from treatments with ample evidence behind them.
