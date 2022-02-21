@@ -2,9 +2,9 @@
 aliases = ["/cannabisclaims"]
 arc-id = "2ZX45YXUCBHVVHE6D5PK2XQUIA"
 authors = ["Ed Mahon"]
-blurb = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading tactics."
+blurb = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading or even dangerous tactics."
 byline = "Ed Mahon of Spotlight PA"
-description = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading tactics."
+description = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading or even dangerous tactics."
 image = "2022/02/01h0-n397-9vb4-m2qq.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "An illustration shows a peeling billboard with a cannabis leaf. Despite Pennsylvania’s outlier status and the high stakes for people seeking treatment, state regulators do little to ensure cannabis dispensaries are making accurate medical claims online. are making accurate medical claims online."
@@ -17,7 +17,7 @@ no-index = false
 published = 2022-02-21T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites"
-title = "Some Pa. companies promote cannabis as an addiction treatment using misleading or dangerous tactics"
+title = "UNPROVEN, UNSAFE"
 topics = ["Health"]
 +++
 
