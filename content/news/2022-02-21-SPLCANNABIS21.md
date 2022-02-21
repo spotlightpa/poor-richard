@@ -12,12 +12,13 @@ internal-budget = "Cannabis companies use misleading, incomplete, or even danger
 internal-id = "SPLCANNABIS21"
 kicker = "Health"
 layout = "featured"
+linktitle = "UNPROVEN, UNSAFE"
 modal-exclude = false
 no-index = false
 published = 2022-02-21T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites"
-title = "UNPROVEN, UNSAFE"
+title = "Some Pa. companies promote cannabis as an addiction treatment using misleading or dangerous tactics"
 topics = ["Health"]
 +++
 
