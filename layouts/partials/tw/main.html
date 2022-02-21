@@ -160,7 +160,9 @@
         </div>
         {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
         {{ range $edPicks }}
-          {{ partial "tw/editors-picks.html" . }}
+          {{ if ne .RelPermalink $.RelPermalink }}
+            {{ partial "tw/editors-picks.html" . }}
+          {{ end}}
         {{ end }}
         {{ if .Param "sidebar-sticky-images" }}
           <div
