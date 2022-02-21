@@ -2,9 +2,9 @@
 aliases = ["/cannabisclaims"]
 arc-id = "2ZX45YXUCBHVVHE6D5PK2XQUIA"
 authors = ["Ed Mahon"]
-blurb = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading or even dangerous tactics."
+blurb = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites about opioid addiction and found a wide range of misleading or even dangerous tactics."
 byline = "Ed Mahon of Spotlight PA"
-description = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites and found a wide range of misleading or even dangerous tactics."
+description = "As part of a first-of-its-kind review, Spotlight PA investigated claims made on Pennsylvania cannabis companies’ websites about opioid addiction and found a wide range of misleading or even dangerous tactics."
 image = "2022/02/01h0-n397-9vb4-m2qq.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "An illustration shows a peeling billboard with a cannabis leaf. Despite Pennsylvania’s outlier status and the high stakes for people seeking treatment, state regulators do little to ensure cannabis dispensaries are making accurate medical claims online. are making accurate medical claims online."
