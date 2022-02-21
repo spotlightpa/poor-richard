@@ -21,7 +21,6 @@ title = "Some Pa. companies promote cannabis as an addiction treatment using mis
 topics = ["Health"]
 +++
 
-
 {{<block name="keypoints">}}
 ### Key findings
 
@@ -78,6 +77,25 @@ Spotlight PA decided to conduct its own review of websites that promoted cannabi
 
 <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-cannabis-websites-investigation-how-why/">READ MORE</a>
 {{</block>}}
+
+<script defer>
+(function() {
+  var l = function() {
+    new pym.Parent(
+      "graphic-a",
+      "https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-a/index.html"
+    );
+    new pym.Parent(
+      "graphic-b",
+      "https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-b/index.html"
+    );
+  };
+  var s = document.createElement("script");
+  s.src = "https://pym.nprapps.org/pym.v1.min.js";
+  s.onload = l;
+  document.head.appendChild(s);
+})();
+</script>
 
 {{<featured/header
   image="2022/02/01h0-n397-9vb4-m2qq.jpeg"
@@ -164,7 +182,7 @@ But the department rarely uses its power to ensure those companies make accurate
 
 When the agency did take enforcement action, the issue often was whether medical marijuana dispensaries failed to follow the required approval process for submitting advertising and marketing materials to the Department of Health, or whether they made references to recreational use.
 
-<div data-analytics-viewport="autotune" data-analytics-label="splcannabis21-b" id="splcannabis21-b__graphic" data-iframe-fallback="https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-b/fallback-mobile.jpg" data-iframe-fallback-width="350" data-iframe-fallback-height="1641" data-iframe="https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-b/index.html" data-iframe-height="1180" data-iframe-resizable></div> <script type="text/javascript">(function() { var l = function() { new pym.Parent( 'splcannabis21-b__graphic', 'https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-b/index.html'); }; if(typeof(pym) === 'undefined') { var h = document.getElementsByTagName('head')[0], s = document.createElement('script'); s.type = 'text/javascript'; s.src = 'https://pym.nprapps.org/pym.v1.min.js'; s.onload = l; h.appendChild(s); } else { l(); } })(); </script>
+<div id="graphic-b" class="my-4"></div>
 
 Brendan Saloner, an associate professor at Johns Hopkins Bloomberg School of Public Health, is an author of a 2014 study that found medical marijuana laws were associated with lower rates of fatal opioid overdoses. That research has been cited by dispensaries and certification companies in misleading ways.
 
@@ -189,7 +207,7 @@ Releaf Specialists owner Bob Scherer, who’s not a physician, suggested the web
 
 “I’m just saying that, based off of the state guidelines, and if patients have not had positive outcomes with traditional therapies, then cannabis could be a viable means for them, and they have the option in the state of Pennsylvania to try it,” he said.
 
-<div data-analytics-viewport="autotune" data-analytics-label="splcannabis21-a" id="splcannabis21-a__graphic" data-iframe-fallback="https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-a/fallback-mobile.jpg" data-iframe-fallback-width="350" data-iframe-fallback-height="1097" data-iframe="https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-a/index.html" data-iframe-height="852" data-iframe-resizable></div> <script type="text/javascript">(function() { var l = function() { new pym.Parent( 'splcannabis21-a__graphic', 'https://media.inquirer.com/storage/inquirer/ai2html/splcannabis21-a/index.html'); }; if(typeof(pym) === 'undefined') { var h = document.getElementsByTagName('head')[0], s = document.createElement('script'); s.type = 'text/javascript'; s.src = 'https://pym.nprapps.org/pym.v1.min.js'; s.onload = l; h.appendChild(s); } else { l(); } })(); </script>
+<div id="graphic-a" class="my-4"></div>
 
 Scherer later shared two medical science journal articles with Spotlight PA to support the claim.
 
