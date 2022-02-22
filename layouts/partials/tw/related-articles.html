@@ -5,7 +5,7 @@
     x-data="readmore(true)"
     x-ref="root"
     @mouseover.once="load()"
-    @touchstart.once="load()"
+    @touchstart.passive.once="load()"
   >
     <h2
       class="font-sans text-xl leading-none tracking-wider font-extrabold uppercase"
@@ -24,7 +24,7 @@
         <a
           @click.prevent="click()"
           @mouseover.once="load()"
-          @touchstart.once="load()"
+          @touchstart.passive.once="load()"
           :data-ga-action='"readmore:load"'
           href="/news/"
           class="
