@@ -293,7 +293,7 @@ Neighboring New York has created a higher bar. In order to approve cannabis for 
 
 The requirement helps ensure these practitioners have some experience treating patients with a substance use disorder, Freeman Klopott, a spokesperson for the state’s Office of Cannabis Management, told Spotlight PA.
 
-Deepika Slawek, a New York physician, co-authored new clinical guidelines for practitioners in that state’s medical cannabis program. The authors said if there is a role for medical cannabis to manage opioid use disorder, “it will be to augment rather than replace” buprenorphine or methadone.
+Deepika Slawek, a New York physician at Montefiore Health System and assistant professor of medicine at Albert Einstein College of Medicine, coauthored new clinical guidelines for practitioners in that state’s medical cannabis program. The authors said if there is a role for medical cannabis to manage opioid use disorder, “it will be to augment rather than replace” buprenorphine or methadone.
 
 “[E]vidence to support taking medical cannabis to treat opioid use disorder (OUD) is scant,” the authors wrote. “Randomized controlled clinical trials are needed to understand the relationship between medical cannabis use and opioid-related outcomes.”
 
