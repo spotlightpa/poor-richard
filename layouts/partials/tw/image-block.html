@@ -9,7 +9,7 @@
     {{ if $isJPEG }}
       <source
         type="image/webp"
-        srcset="{{ replace .srcset ".jpeg" ".webp" }}"
+        srcset="{{ replace .srcset `.jpeg` `.webp` }}"
         {{ if .sizeHint }}
           sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
         {{ end }}
@@ -29,9 +29,11 @@
       {{ if not .eager }}
         loading="lazy" decoding="async"
       {{ end }}
+      width="{{ .width }}"
+      height="{{ .height }}"
     />
   </picture>
-  {{ if not .showCaption }}
+  {{ if not .showCaption | and .caption }}
     <figcaption
       class="
           absolute p-4 bottom-0 inset-x-0 {{ if .rounded }}
@@ -41,7 +43,7 @@
           backdrop-fallback
           font-sans text-base text-g-1
         "
-      {{ if not .showCaption }}x-cloak{{ end }}
+      x-cloak
       x-show="showCaption"
       @click="showCaption = false"
     >
@@ -69,6 +71,19 @@
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 {{ $showCaption := .showCaption | default false }}
 
+{{ $pictOpts := dict
+  "srcset" $srcset
+  "imgSmallSrc" $imgSmallSrc
+  "sizeHint" .sizeHint
+  "description" .description
+  "eager" $eager
+  "rounded" $rounded
+  "showCaption" $showCaption
+  "caption" .caption
+  "width" $width
+  "height" $height
+}}
+
 
 <figure
   class="{{ .figClass }}"
@@ -85,20 +100,10 @@
         block relative w-full h-0 shadow overflow-hidden bg-g-4
         {{ $rounded }}
       "
-      style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
+      style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
       href="{{ .link }}"
     >
-      {{- template "tw-image-block-picture" (dict
-        "srcset" $srcset
-        "imgSmallSrc" $imgSmallSrc
-        "sizeHint" .sizeHint
-        "description" .description
-        "eager" $eager
-        "rounded" $rounded
-        "showCaption" $showCaption
-        "caption" .caption
-        )
-      -}}
+      {{- template "tw-image-block-picture" $pictOpts -}}
     </a>
   {{- else -}}
     <div
@@ -107,19 +112,9 @@
         {{ $rounded }}
         {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
       "
-      style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
+      style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
     >
-      {{- template "tw-image-block-picture" (dict
-        "srcset" $srcset
-        "imgSmallSrc" $imgSmallSrc
-        "sizeHint" .sizeHint
-        "description" .description
-        "eager" $eager
-        "rounded" $rounded
-        "showCaption" $showCaption
-        "caption" .caption
-        )
-      -}}
+      {{- template "tw-image-block-picture" $pictOpts -}}
     </div>
   {{- end -}}
 
