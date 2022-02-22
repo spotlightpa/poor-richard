@@ -2,6 +2,7 @@
 {{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
 {{ $titleClass := cond (gt (countwords $featured.Title) 2) "is-size-1" "is-size-0" }}
 
+
 <section
   class="section has-background-black has-text-white has-text-weight-semibold"
   data-ga-category="homepage:topper"
@@ -32,7 +33,9 @@
               {{ $featuredParams.extendedKicker }}
             </span>
           </h2>
-          <h1 class="title is-spaced {{ $titleClass }} is-size-2-touch mt-4 sm:mt-2 has-text-centered">
+          <h1
+            class="title is-spaced {{ $titleClass }} is-size-2-touch mt-4 sm:mt-2 has-text-centered"
+          >
             <a
               href="{{ $featured.RelPermalink }}"
               class="has-text-white hover-underline"
