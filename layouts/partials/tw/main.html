@@ -15,13 +15,14 @@
             class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
             href="{{ $params.rubric.RelPermalink }}"
             data-ga-category="eyebrow"
-            >{{ $params.kicker | default $params.rubric.Title }}</a
           >
+            {{- $params.kicker | default $params.rubric.Title -}}
+          </a>
         {{ else if $params.kicker }}
           <p
             class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
           >
-            {{ $params.kicker }}
+            {{- $params.kicker -}}
           </p>
         {{ end }}
 
@@ -34,7 +35,7 @@
 
         {{ with $params.byline }}
           <h2
-            class="mt-1 text-g-7 font-sans text-base font-light leading-tight sm:leading-normal tracking-normal"
+            class="mt-1 text-g-7 font-sans text-base leading-tight sm:leading-normal tracking-normal"
           >
             <span class="font-semibold">
               by
@@ -43,10 +44,12 @@
               </span>
             </span>
             {{ if $params.published }}
-              |
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
-              >
+              <span class="font-light">
+                |
+                <time datetime="{{ $params.publishedISO }}">
+                  {{- $params.published -}}
+                </time>
+              </span>
             {{ end }}
           </h2>
         {{ end }}
