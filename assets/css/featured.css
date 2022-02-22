@@ -86,6 +86,10 @@
   @apply mt-4 mb-4;
 }
 
+.article-content > :where(iframe) {
+  @apply my-12;
+}
+
 .article-content > :first-child {
   @apply mt-0;
 }
