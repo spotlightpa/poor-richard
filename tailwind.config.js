@@ -81,7 +81,7 @@ module.exports = {
   variants: {
     extend: {
       boxShadow: ["active", "group-focus"],
-      ringWidth: ["hover", "active"],
+      ringColor: ["active"],
     },
   },
   plugins: [],
