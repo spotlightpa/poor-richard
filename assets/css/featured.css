@@ -126,12 +126,12 @@
   @apply list-decimal pl-6;
 }
 
-.article-content > p a {
+.article-content :where(a) {
   @apply text-darkblue underline;
   @apply transition-colors duration-500;
 }
 
-.article-content > p a:hover {
+.article-content :where(a:hover) {
   @apply text-yellow;
 }
 
