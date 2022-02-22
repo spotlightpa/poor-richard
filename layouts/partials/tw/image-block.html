@@ -1,3 +1,55 @@
+{{ define "tw-image-block-picture" }}
+  <picture
+    class="absolute block inset-0"
+    {{ if .caption }}
+      @click="showCaption = !showCaption"
+    {{ end }}
+  >
+    {{ $isJPEG := in (string .srcset) ".jpeg" }}
+    {{ if $isJPEG }}
+      <source
+        type="image/webp"
+        srcset="{{ replace .srcset ".jpeg" ".webp" }}"
+        {{ if .sizeHint }}
+          sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+        {{ end }}
+      />
+    {{ end }}
+    <img
+      class="min-w-full min-h-full object-cover"
+      alt="{{ .description }}"
+      title="{{ .description }}"
+      src="{{ .imgSmallSrc }}"
+      {{ if not $isJPEG }}
+        srcset="{{ .srcset }}"
+      {{ end }}
+      {{ if not $isJPEG | and .sizeHint }}
+        sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+      {{ end }}
+      {{ if not .eager }}
+        loading="lazy" decoding="async"
+      {{ end }}
+    />
+  </picture>
+  {{ if not .showCaption }}
+    <figcaption
+      class="
+          absolute p-4 bottom-0 inset-x-0 {{ if .rounded }}
+        rounded-b overflow-hidden
+      {{ end }}
+          backdrop-filter backdrop-blur-sm backdrop-brightness-50
+          backdrop-fallback
+          font-sans text-base text-g-1
+        "
+      {{ if not .showCaption }}x-cloak{{ end }}
+      x-show="showCaption"
+      @click="showCaption = false"
+    >
+      {{ .caption }}
+    </figcaption>
+  {{ end }}
+{{ end }}
+
 {{ $widths := .widths }}
 {{ $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
 {{ $widthR := .widthRatio | default 16 }}
@@ -17,11 +69,14 @@
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 {{ $showCaption := .showCaption | default false }}
 
+
 <figure
   class="{{ .figClass }}"
   data-ga-category="thumb"
-  x-data="{ showCaption: {{ $showCaption }} }"
-  x-effect="showCaption && $report({ target: $el })"
+  x-data="{ showCaption: false }"
+  {{ if not $showCaption }}
+    x-effect="showCaption && $report({ target: $el })"
+  {{ end }}
   data-ga-action="image:toggle-caption"
 >
   {{- if .link -}}
@@ -30,73 +85,54 @@
         block relative w-full h-0 shadow overflow-hidden bg-g-4
         {{ $rounded }}
       "
-      style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+      style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
       href="{{ .link }}"
     >
+      {{- template "tw-image-block-picture" (dict
+        "srcset" $srcset
+        "imgSmallSrc" $imgSmallSrc
+        "sizeHint" .sizeHint
+        "description" .description
+        "eager" $eager
+        "rounded" $rounded
+        "showCaption" $showCaption
+        "caption" .caption
+        )
+      -}}
+    </a>
   {{- else -}}
     <div
       class="
         block relative w-full h-0 shadow overflow-hidden bg-g-4
         {{ $rounded }}
-        {{ if .caption }}cursor-pointer{{ end }}
+        {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
       "
-      style='padding-bottom: {{ $padding | printf "%0.3f" }}%;'
+      style="padding-bottom: {{ $padding | printf "%0.3f" }}%;"
     >
-  {{- end -}}
-    <picture
-      class="absolute block inset-0"
-      {{ if .caption }}
-        @click="showCaption = !showCaption"
-      {{ end }}
-    >
-      {{ $isJPEG := in (string $srcset) ".jpeg" }}
-      {{ if $isJPEG }}
-        <source
-          type="image/webp"
-          srcset='{{ replace $srcset ".jpeg" ".webp" }}'
-          {{ if .sizeHint }}
-            sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
-          {{ end }}
-        >
-      {{ end }}
-      <img
-        class="min-w-full min-h-full object-cover"
-        alt="{{ .description }}"
-        title="{{ .description }}"
-        src="{{ $imgSmallSrc }}"
-        {{ if not $isJPEG }}
-        srcset="{{ $srcset }}"
-        {{ end }}
-        {{ if not $isJPEG | and .sizeHint }}
-          sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
-        {{ end }}
-        {{ if not $eager }}
-          loading="lazy"
-          decoding="async"
-        {{ end }}
-      >
-    </picture>
-    {{ with .caption }}
-      <figcaption
-        class="
-          absolute p-4 bottom-0 inset-x-0 {{ if $rounded }}rounded-b overflow-hidden{{ end }}
-          backdrop-filter backdrop-blur-sm backdrop-brightness-50
-          backdrop-fallback
-          font-sans text-base text-g-1
-        "
-        {{if not $showCaption }}x-cloak{{ end }}
-        x-show="showCaption"
-        @click="showCaption = false"
-      >{{ . }}</figcaption>
-    {{ end }}
-  {{- if .link -}}
-    </a>
-  {{- else -}}
+      {{- template "tw-image-block-picture" (dict
+        "srcset" $srcset
+        "imgSmallSrc" $imgSmallSrc
+        "sizeHint" .sizeHint
+        "description" .description
+        "eager" $eager
+        "rounded" $rounded
+        "showCaption" $showCaption
+        "caption" .caption
+        )
+      -}}
     </div>
   {{- end -}}
+
   {{ with $credit }}
-    <figcaption class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase leading-tight">
+    <figcaption
+      class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase leading-tight"
+    >
       {{ $credit }}
+    </figcaption>
+  {{ end }}
+  {{ if $showCaption }}
+    <figcaption class="mt-2 mx-auto text-g-8 text-sm font-sans leading-tight">
+      {{ .caption }}
     </figcaption>
   {{ end }}
 </figure>
