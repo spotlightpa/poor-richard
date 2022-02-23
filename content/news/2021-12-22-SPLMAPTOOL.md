@@ -37,7 +37,7 @@ In a separate process, a redistricting panel earlier in the month <a href="https
 
 <i>About the data: The Legislative Reapportionment Commission provided </i><a href="https://www.redistricting.state.pa.us/maps/"><i>map files</i></a><i> for the state House and Senate. Unlike a decade ago, the panel drew new districts using data that reallocated incarcerated people with a sentence under 10 years to the district of their last known home address.</i>
 
-The previous congressional map file came from the LRC. The files for the new congressional map were submitted during a court case and made publicly available.
+<i>The previous congressional map file came from the LRC. The files for the new congressional map were submitted during a court case and <a href="https://www.pacourts.us/2022-redistricting-opinions">made publicly available</a>.</i>
 
 <i>The </i><a href="https://redistrictingdatahub.org/"><i>Redistricting Data Hub</i></a><i> provided voter registration data as of August 2021, and Peter Horton cleaned and reformatted census data used to conduct this analysis. This analysis also used data from </i><a href="https://davesredistricting.org/maps#home"><i>Dave’s Redistricting</i></a><i>.</i>
 
