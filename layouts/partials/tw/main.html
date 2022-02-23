@@ -1,6 +1,16 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $hedClass := cond $hasImage "lg:col-span-3 lg:max-w-full" "" }}
+{{ $bylineLink := "" }}
+{{ with .Param "authors" }}
+  {{ if len . | eq 1 }}
+    {{ $name := index . 0 }}
+    {{ $author := partial "helper/get-author" $name }}
+    {{ if $author.link }}
+      {{ $bylineLink = $author.link }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 
 <section class="pt-12 pb-6 px-4 bg-white text-g-9">
@@ -37,19 +47,27 @@
           <h2
             class="mt-1 text-g-7 font-sans text-base leading-tight sm:leading-normal tracking-normal"
           >
-            <span class="font-semibold">
-              by
-              <span itemtype="http://schema.org/Person" itemprop="author">
-                {{- $params.byline -}}
-              </span>
-            </span>
-            {{ if $params.published }}
-              <span class="font-light">
-                |
-                <time datetime="{{ $params.publishedISO }}">
-                  {{- $params.published -}}
-                </time>
-              </span>
+            {{ if $bylineLink }}
+              <a href="{{ $bylineLink }}">
+                {{- block "main-byline" $params }}
+                  <span class="font-semibold">
+                    by
+                    <span itemtype="http://schema.org/Person" itemprop="author">
+                      {{- .byline -}}
+                    </span>
+                  </span>
+                  {{ if .published }}
+                    <span class="font-light">
+                      |
+                      <time datetime="{{ .publishedISO }}">
+                        {{- .published -}}
+                      </time>
+                    </span>
+                  {{ end }}
+                {{ end -}}
+              </a>
+            {{ else }}
+              {{ template "main-byline" $params }}
             {{ end }}
           </h2>
         {{ end }}
