@@ -2,9 +2,9 @@
 aliases = ["/mydistrict"]
 arc-id = "K5Y7MV2YKFGWZEGLDKEHZCJ2E4"
 authors = ["Kate Huangpu", "Carl Johnson"]
-blurb = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your state House and Senate districts could change."
+blurb = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts could change."
 byline = "Kate Huangpu of Spotlight PA and Carl Johnson of Spotlight PA"
-description = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your state House and Senate districts could change."
+description = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts could change."
 headers = ["Feature-Policy: geolocation *;"]
 image = "external/7x62vr0y13fc2fk8wf7tj1678r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
@@ -17,17 +17,17 @@ modal-exclude = false
 no-index = false
 published = 2021-12-22T05:00:42-05:00
 slug = "pennsylvania-redistricting-house-senate-districts-lookup-tool"
-title = "Pa. redistricting maps: Search now to see your old and new legislative districts"
+title = "Pa. redistricting maps: Search now to see your old and new political districts"
 topics = ["Redistricting"]
 +++
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-A Pennsylvania redistricting panel has approved final state House and Senate maps, and the new districts could fundamentally reshape the legislature.
+After several delays, Pennsylvania is one step closer to finalizing its political districts.
 
-The maps were <a href="https://www.spotlightpa.org/news/2021/12/pennsylvania-redistricting-state-house-senate-maps/">drafted and given initial approval</a> in December by the Legislative Reapportionment Commission, a five-person panel made up of the four top legislative leaders from both major parties and a nonpartisan chair selected by the Pennsylvania Supreme Court.
+The Pennsylvania Supreme Court on Feb. 23 selected a new congressional map that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. These districts are final.  
 
-The panel voted 4-1 in February to approve final versions of the maps, though they are likely to face further scrutiny. Anyone can bring a challenge to either map directly to the state Supreme Court over the next 30 days, which, based on Republican opposition to the state House map, is expected to happen.
+In a separate process, a redistricting panel earlier in the month approved final state House and Senate maps that could fundamentally reshape the legislature. The boundaries are still subject to legal challenges.
 
 <script src="https://viz-redistricting-2020.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-redistricting-2020"></div><small><a href="https://viz-redistricting-2020.data.spotlightpa.org">Click here if you have trouble loading this map</a></small>
 
