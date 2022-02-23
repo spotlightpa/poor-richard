@@ -25,9 +25,9 @@ topics = ["Redistricting"]
 
 After several delays, Pennsylvania is one step closer to finalizing its political districts.
 
-The Pennsylvania Supreme Court on Feb. 23 selected a new congressional map that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. There is a pending federal legal challenge to the court's authority to pick the map.
+The Pennsylvania Supreme Court on Feb. 23 <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-congressional-map-supreme-court-pick/">selected a new congressional map</a> that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. There is a <a href="https://apnews.com/article/elections-pennsylvania-lawsuits-state-elections-legislature-1c21a5eaf69e09fa7a6b2dd6af1acbdc">pending federal legal challenge</a> to the court's authority to pick the map.
 
-In a separate process, a redistricting panel earlier in the month approved final state House and Senate maps that could fundamentally reshape the legislature. The boundaries are still subject to legal challenges.
+In a separate process, a redistricting panel earlier in the month <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-legislative-maps-final-vote/">approved final state House and Senate maps</a> that could fundamentally reshape the legislature. The boundaries are <a href="https://www.politicspa.com/benninghoff-discard-the-new-maps-reinstate-the-old/99954/">still subject to legal challenges</a>.
 
 <script src="https://viz-redistricting-2020.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-redistricting-2020"></div><small><a href="https://viz-redistricting-2020.data.spotlightpa.org">Click here if you have trouble loading this map</a></small>
 
