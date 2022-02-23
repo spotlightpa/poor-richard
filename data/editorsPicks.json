@@ -1,18 +1,19 @@
 {
-  "featuredStories": [],
+  "featuredStories": [
+    "content/news/2022-02-23-SPLMAPPICK.md"
+  ],
   "sidebarPicks": [
     "content/news/2022-01-26-SPLTRACK.md",
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
+  "subfeatures": [
     "content/news/2022-02-22-SPLMAPPA3.md",
-    "content/news/2022-02-18-SPLHEAR.md",
-    "content/news/2022-02-17-SPLTESTING17.md"
+    "content/news/2022-02-18-SPLHEAR.md"
   ],
-  "topper": [
+  "topSlots": [
     "content/news/2022-02-21-SPLCANNABIS21.md",
-    "content/news/2022-02-21-SPLHOWCANNABIS.md",
-    "content/news/2021-09-29-SPLINSIDE29.md"
-  ]
+    "content/news/2022-02-17-SPLTESTING17.md",
+    "content/news/2022-02-15-SPLMEDICATIONS15.md"
+  ],
+  "topper": []
 }
