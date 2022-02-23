@@ -1,9 +1,9 @@
 +++
 arc-id = "RA5WHOXLHNEFFBDHHOUNNCHIDI"
 authors = ["Kate Huangpu"]
-blurb = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly half of the state’s 17 districts. "
+blurb = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly eight seats with one district a toss-up."
 byline = "Kate Huangpu of Spotlight PA"
-description = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly half of the state’s 17 districts. "
+description = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly eight seats with one district a toss-up."
 image = "external/7x62vr0y13fc2fk8wf7tj1678r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 internal-budget = "Pa. Supreme Court picks congressional map put forth by state voters"
