@@ -12,7 +12,6 @@ internal-budget = "Cannabis companies use misleading, incomplete, or even danger
 internal-id = "SPLCANNABIS21"
 kicker = "Health"
 layout = "featured"
-linktitle = "UNPROVEN, UNSAFE"
 modal-exclude = false
 no-index = false
 published = 2022-02-21T05:00:00-05:00
