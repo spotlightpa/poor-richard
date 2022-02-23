@@ -1,9 +1,9 @@
 +++
 arc-id = "RA5WHOXLHNEFFBDHHOUNNCHIDI"
 authors = ["Kate Huangpu"]
-blurb = "The court selected the map submitted by the Carter petitioners, a group of Pennsylvania voters who brought a lawsuit asking the state courts to take over the congressional redistricting process."
+blurb = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly half of the state’s 17 districts. "
 byline = "Kate Huangpu of Spotlight PA"
-description = "The court selected the map submitted by the Carter petitioners, a group of Pennsylvania voters who brought a lawsuit asking the state courts to take over the congressional redistricting process."
+description = "The map closely resembles the current one, with Democrats and Republicans each expected to win roughly half of the state’s 17 districts. "
 image = "external/7x62vr0y13fc2fk8wf7tj1678r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 internal-budget = "Pa. Supreme Court picks congressional map put forth by state voters"
@@ -13,7 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2022-02-23T11:33:42.425-05:00
 slug = "pennsylvania-redistricting-congressional-map-supreme-court-pick"
-title = "Pennsylvania Supreme Court picks congressional map put forth by state voters"
+title = "Congressional map picked by Pennsylvania Supreme Court unlikely to dramatically alter partisan balance"
 topics = ["Redistricting"]
 +++
 
