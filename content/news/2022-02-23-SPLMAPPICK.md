@@ -27,7 +27,7 @@ The state Supreme Court agreed to take over the highly consequential process in 
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The five-page order does not explain the court’s reasoning. It notes that Justice Debra Todd, a Democrat, and the court’s two Republicans — Justice Sally Mundy and Kevin Brobson — dissented to the selection of the Carter plan.
+The five-page order does not explain the court’s reasoning. It notes that Justice Debra Todd, a Democrat, and the court’s two Republicans — Justices Sallie Updyke Mundy and Kevin Brobson — dissented to the selection of the Carter plan.
 
 The state Supreme Court also announced Wednesday it will not move the date of the May 17 primary, opting instead to adjust some of the deadlines for candidates.
 
