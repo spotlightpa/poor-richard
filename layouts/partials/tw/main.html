@@ -1,6 +1,10 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
-{{ $hedClass := cond $hasImage "lg:col-span-3 lg:max-w-full" "" }}
+{{ $mainWellClass := cond $hasImage
+  `mx-auto lg:ml-0 max-w-prose`
+  `mx-auto max-w-prose lg:max-w-screen-md`
+}}
+{{ $hedClass := cond $hasImage "lg:col-span-2 lg:max-w-full" "" }}
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
   {{ if len . | eq 1 }}
@@ -14,11 +18,11 @@
 
 
 <section class="pt-12 pb-6 px-4 bg-white text-g-9">
-  <div class="mx-auto max-w-screen-lg grid grid-cols-2 lg:grid-cols-3">
+  <div class="mx-auto max-w-screen-lg grid grid-cols-none">
     <article class="contents">
       <header
         data-ga-category="header"
-        class="mx-auto lg:ml-0 col-span-2 max-w-prose {{ $hedClass }}"
+        class="{{ $mainWellClass }} {{ $hedClass }}"
       >
         {{ if $params.rubric }}
           <a
@@ -78,11 +82,11 @@
         </div>
       </header>
 
-      <div class="mx-auto lg:ml-0 col-span-2 max-w-prose w-full">
+      <div class="{{ $mainWellClass }} w-full">
         {{ partial "tw/hero-image-block.html" . }}
       </div>
 
-      <div class="mx-auto lg:ml-0 col-span-2 max-w-prose">
+      <div class="{{ $mainWellClass }}">
         <div class="mt-6" data-ga-category="content">
           <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
           <div
@@ -162,7 +166,7 @@
 
     {{ if $hasImage }}
       <aside
-        class="mt-6 mx-auto lg:mr-0 col-span-2 lg:col-span-1 lg:col-start-3 lg:row-start-2 row-span-3 w-80 max-w-prose sm:w-full sm:grid grid-cols-2 place-items-center items-stretch gap-4 lg:block lg:w-80"
+        class="mt-6 mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 w-80 max-w-prose sm:w-full sm:grid grid-cols-2 place-items-center items-stretch gap-4 lg:block lg:w-80"
         data-ga-category="sidebar"
       >
         {{ partial "tw/rail-newsletter.html" . }}
@@ -214,7 +218,7 @@
     {{ end }}
 
     {{ if .Param "suppress-related" | not }}
-      <nav class="mx-auto lg:ml-0 col-span-2 max-w-prose">
+      <nav class="mt-12 {{ $mainWellClass }}">
         {{ $news := site.GetPage "/news/_index.md" }}
         {{ $related := $news.RegularPages.Related . | first 10 }}
         {{ partial "tw/related-articles.html" $related }}
