@@ -25,7 +25,7 @@ topics = ["Redistricting"]
 
 After several delays, Pennsylvania is one step closer to finalizing its political districts.
 
-The Pennsylvania Supreme Court on Feb. 23 selected a new congressional map that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. These districts are final.  
+The Pennsylvania Supreme Court on Feb. 23 selected a new congressional map that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. There is a pending federal legal challenge to the court's authority to pick the map.
 
 In a separate process, a redistricting panel earlier in the month approved final state House and Senate maps that could fundamentally reshape the legislature. The boundaries are still subject to legal challenges.
 
@@ -35,7 +35,9 @@ In a separate process, a redistricting panel earlier in the month approved final
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20TRIPLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20TRIPLED."></div>
 
-<i>About the data: The Legislative Reapportionment Commission provided </i><a href="https://www.redistricting.state.pa.us/maps/"><i>preliminary map files</i></a><i>. Unlike a decade ago, the panel drew new districts using data that reallocated incarcerated people with a sentence under 10 years to the district of their last known home address.</i>
+<i>About the data: The Legislative Reapportionment Commission provided </i><a href="https://www.redistricting.state.pa.us/maps/"><i>map files</i></a><i> for the state House and Senate. Unlike a decade ago, the panel drew new districts using data that reallocated incarcerated people with a sentence under 10 years to the district of their last known home address.</i>
+
+The previous congressional map file came from the LRC. The files for the new congressional map were submitted during a court case and made publicly available.
 
 <i>The </i><a href="https://redistrictingdatahub.org/"><i>Redistricting Data Hub</i></a><i> provided voter registration data as of August 2021, and Peter Horton cleaned and reformatted census data used to conduct this analysis. This analysis also used data from </i><a href="https://davesredistricting.org/maps#home"><i>Dave’s Redistricting</i></a><i>.</i>
 
