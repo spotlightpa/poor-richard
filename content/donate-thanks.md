@@ -18,6 +18,6 @@ Thank you for your generous donation to Spotlight PA. You should receive a recei
 
 We encourage you to share your pledge on social media.
 
-{{<donate-buttons>}}
+{{<about/donate-buttons>}}
 
-{{<donate-thanks src="2019/11/newsroom-conf.jpeg" description="Spotlight PA reporters attend a newsroom conference" credit="Vicki Vellios Briner / Special to PennLive">}}
+{{<about/donate-thanks src="2019/11/newsroom-conf.jpeg" description="Spotlight PA reporters attend a newsroom conference" credit="Vicki Vellios Briner / Special to PennLive">}}

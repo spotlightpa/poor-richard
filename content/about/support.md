@@ -14,7 +14,7 @@ The Philadelphia Inquirer provides in-kind fiscal, legal and administrative supp
 
 To support Spotlight PA, [become a member now](/donate/).
 
-{{<supporters-logos>}}
+{{<about/supporters-logos>}}
 
 ## Major Donors and Funders
 
@@ -22,4 +22,4 @@ Allegheny Foundation <br> American Journalism Project <br> Laura and John Arnold
 
 ## Spotlight PA Members
 
-{{<supporters-list>}}
+{{<about/supporters-list>}}
