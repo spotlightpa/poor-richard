@@ -1,6 +1,6 @@
 {{ $alt := index . "imageDescription" }}
 {{ $link := index . "link" }}
-{{ $wrapperClass := index . "class" | default "text-center no-js-hide" }}
+{{ $wrapperClass := index . "class" | default "text-center no-js:hidden" }}
 
 {{ $imgDesktop := index . "desktopImages" }}
 {{ $widthDesktop := index . "desktopWidth" }}

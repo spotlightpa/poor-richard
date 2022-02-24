@@ -567,13 +567,13 @@ a.navbar-burger:hover {
 [x-cloak] {
   display: none;
 }
-.no-js-only {
+.no-js\:block {
   display: none;
 }
-.has-old-js .no-js-only {
+.has-old-js .no-js\:block {
   display: block;
 }
-.has-old-js .no-js-hide {
+.has-old-js .no-js\:hidden {
   display: none;
 }
 /*! purgecss end ignore */

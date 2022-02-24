@@ -7,20 +7,6 @@
   href="{{ partialCached "helper/get-enhancements" . }}"
 />
 
-{{ `<noscript>` | safeHTML }}
-
-  <style>
-    .no-js-only {
-      display: block;
-    }
-    .no-js-hide {
-       display: none;
-    }
-  </style>
-
-{{ `</noscript>`
-| safeHTML }}
-
 <link
   rel="alternate"
   type="application/feed+json"

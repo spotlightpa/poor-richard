@@ -14,18 +14,7 @@
 
     {{ partialCached "header/css-tw-merri.html" . }}
 
-    {{ `<noscript>` | safeHTML }}
-
-    <style>
-      .no-js-only {
-        display: block;
-      }
-      .no-js-hide {
-         display: none;
-      }
-    </style>
-
-  {{ `</noscript>` | safeHTML }}
+    {{ partial "header/noscript.html" . }}
 
   <script
     nomodule

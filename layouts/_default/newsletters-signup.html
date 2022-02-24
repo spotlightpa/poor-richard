@@ -91,7 +91,7 @@
                       >
                         {{ .LinkTitle }}
                         <span
-                          class="no-js-hide icon has-text-success has-text-light"
+                          class="no-js:hidden icon has-text-success has-text-light"
                           :class="{
                               'has-text-success': isChecked,
                               'has-text-light': !isChecked,
@@ -118,7 +118,7 @@
                   </p>
                   <input
                     hidden
-                    class="no-js-only"
+                    class="no-js:block"
                     type="checkbox"
                     x-model="isChecked"
                     id="{{ $id }}"

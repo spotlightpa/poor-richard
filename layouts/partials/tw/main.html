@@ -180,7 +180,7 @@
         class="mt-6 w-full"
       >
         {{ partial "tw/promo-single.html" (dict
-          "class" "mb-5 w-0 min-w-full no-js-hide"
+          "class" "mb-5 w-0 min-w-full no-js:hidden"
           "images" (.Param "sidebar-top-images")
           "width" (.Param "sidebar-top-width")
           "height" (.Param "sidebar-top-height")
@@ -208,7 +208,7 @@
           x-intersect="$dispatch('close-sticky')"
         >
           {{ partial "tw/promo-single.html" (dict
-            "class" "pt-5 w-0 min-w-full no-js-hide"
+            "class" "pt-5 w-0 min-w-full no-js:hidden"
             "images" (.Param "sidebar-sticky-images")
             "width" (.Param "sidebar-sticky-width")
             "height" (.Param "sidebar-sticky-height")
@@ -229,5 +229,5 @@
     {{ end }}
   </div>
 
-  {{ partialCached "tw/promo-footer.html" (dict "wrapperClass" "py-8 no-js-hide") }}
+  {{ partialCached "tw/promo-footer.html" (dict "wrapperClass" "py-8 no-js:hidden") }}
 </section>
