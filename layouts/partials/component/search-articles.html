@@ -10,7 +10,7 @@
         class="input"
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
-        autofocus
+        :autofocus="isOpen"
       />
       <span class="icon is-large is-left">
         <svg>

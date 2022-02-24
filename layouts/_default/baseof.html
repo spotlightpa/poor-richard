@@ -60,7 +60,10 @@
         {{ end }}
       {{ end }}
     {{ end }}
-    {{ partial "modal/search.html" . }}
+
+    {{ block "search-modal" . }}
+      {{ partial "modal/search.html" . }}
+    {{ end }}
 
     <script
     nomodule
