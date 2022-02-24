@@ -10,7 +10,7 @@ _PLEASE NOTE: The communication channels below are intended only for news tips t
 
 ## Send comment to newsroom
 
-{{<contact-form>}}
+{{<about/contact-form>}}
 
 ## Email
 

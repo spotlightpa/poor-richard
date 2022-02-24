@@ -15,4 +15,4 @@ For news tips, please see [our tips page](/tips/). For technical problems, pleas
 
 ## General inquiries
 
-{{<contact-form>}}
+{{<about/contact-form>}}
