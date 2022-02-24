@@ -20,7 +20,7 @@
         @input="isLoading = true"
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
-        autofocus
+        :autofocus="isOpen"
       />
     </div>
     <div class="mt-0 z-10">

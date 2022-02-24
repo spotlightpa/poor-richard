@@ -45,7 +45,7 @@
             data-ga-action="modal:search:dismiss"
             @keydown.escape="isOpen = false"
             @click="isOpen = false;"
-            autofocus
+            :autofocus="isOpen"
           >
             <svg
               class="my-auto p-1 fill-current w-6 h-6"
