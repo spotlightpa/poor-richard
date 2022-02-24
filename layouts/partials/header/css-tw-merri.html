@@ -1,0 +1,20 @@
+{{ $cssFonts := resources.Get "css/font-merri.css" }}
+{{ $cssTW := resources.Get "css/tw.css" }}
+{{ $css := slice $cssFonts $cssTW | resources.Concat "css/tw-merri.css" }}
+{{ $css = $css | postCSS }}
+{{ if ne hugo.Environment "development" }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+<link
+  rel="preload"
+  as="font"
+  href="/css/fonts/merriweather-v25/merriweather-v25-latin-700.woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  as="font"
+  href="/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2"
+  crossorigin
+/>

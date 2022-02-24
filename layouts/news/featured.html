@@ -15,20 +15,7 @@
     {{ partial "header/meta.html" . }}
     {{ partial "header/google-analytics-async.html" . }}
 
-    {{ $cssFonts := resources.Get "css/featured-fonts.css" }}
-    {{ $cssTW := resources.Get "css/featured.css" }}
-    {{ $css := slice $cssFonts $cssTW | resources.Concat "css/featured-tw.css" }}
-    {{ $css = $css | postCSS }}
-    {{ if ne hugo.Environment "development" }}
-      {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-    {{ end }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
-    <link
-      rel="preload"
-      as="font"
-      href="/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2"
-      crossorigin
-    />
+    {{ partialCached "header/css-tw-merri.html" . }}
 
     {{ `<noscript>` | safeHTML }}
 

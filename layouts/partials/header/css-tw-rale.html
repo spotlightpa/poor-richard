@@ -1,0 +1,8 @@
+{{ $cssFonts := resources.Get "css/font-rale.css" }}
+{{ $cssTW := resources.Get "css/tw.css" }}
+{{ $css := slice $cssFonts $cssTW | resources.Concat "css/tw-rale.css" }}
+{{ $css = $css | postCSS }}
+{{ if ne hugo.Environment "development" }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />

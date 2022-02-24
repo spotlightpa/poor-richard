@@ -15,14 +15,7 @@
     {{ partial "header/meta.html" . }}
     {{ partial "header/google-analytics-async.html" . }}
 
-    {{ $cssFonts := resources.Get "css/fonts.css" }}
-    {{ $cssTW := resources.Get "css/featured.css" }}
-    {{ $css := slice $cssFonts $cssTW | resources.Concat "css/statecollege.css" }}
-    {{ $css = $css | postCSS }}
-    {{ if ne hugo.Environment "development" }}
-      {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-    {{ end }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    {{ partialCached "header/css-tw-rale.html" . }}
 
     {{ `<noscript>` | safeHTML }}
 
