@@ -1,7 +1,7 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $mainWellClass := cond $hasImage
-  `mx-auto lg:ml-0 max-w-prose`
+  `col-start-1 mx-auto lg:ml-0 max-w-prose`
   `mx-auto max-w-prose lg:max-w-screen-md`
 }}
 {{ $hedClass := cond $hasImage "lg:col-span-2 lg:max-w-full" "" }}
