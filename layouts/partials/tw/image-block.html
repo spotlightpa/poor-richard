@@ -11,8 +11,8 @@
       <source
         type="image/webp"
         srcset="{{ replace .srcset `.jpeg` `.webp` }}"
-        {{ if .sizeHint }}
-          sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+        {{ with .sizeHint }}
+          sizes="{{ . }}"
         {{ end }}
       />
     {{ end }}
@@ -25,7 +25,7 @@
         srcset="{{ .srcset }}"
       {{ end }}
       {{ if not $isJPEG | and .sizeHint }}
-        sizes="(min-width: 640px) {{ .sizeHint }}, 90vw"
+        sizes="{{ .sizeHint }}"
       {{ end }}
       {{ if not .eager }}
         loading="lazy" decoding="async"
