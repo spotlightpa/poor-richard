@@ -39,12 +39,23 @@ export function once(ev, qs, cb) {
 export function storeItem(name, obj, { useSession = false } = {}) {
   let store = useSession ? window.sessionStorage : window.localStorage;
   let data = JSON.stringify(obj);
-  store.setItem(name, data);
+  try {
+    store.setItem(name, data);
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn("could not use storage", e);
+  }
 }
 
 export function loadItem(name, { useSession = false } = {}) {
   let store = useSession ? window.sessionStorage : window.localStorage;
-  let data = store.getItem(name);
+  let data;
+  try {
+    data = store.getItem(name);
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn("could not access storage", e);
+  }
   if (!data) {
     return null;
   }
