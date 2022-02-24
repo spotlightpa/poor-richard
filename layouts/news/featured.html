@@ -14,21 +14,9 @@
 
     {{ partial "header/meta.html" . }}
     {{ partial "header/google-analytics-meta.html" . }}
-
     {{ partialCached "header/css-tw-merri.html" . }}
-
     {{ partial "header/noscript.html" . }}
-
-  <script
-    nomodule
-    src='{{ partialCached "helper/get-nomodules-js" . }}'
-    defer
-  ></script>
-  <script
-    src='{{ partialCached "helper/get-enhancements" . }}'
-    type="module"
-    onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
-  ></script>
+    {{ partial "header/script.html" . }}
     {{ partial "header/favicons.html" . }}
     {{ partial "header/feeds.html" . }}
   </head>
