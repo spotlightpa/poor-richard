@@ -79,63 +79,60 @@
     data-ga-label="{{ $pageCat }}"
     class="bg-beige base-16 font-serif leading-normal"
   >
-    <!-- mobile overflow guard -->
-    <div class="flex flex-col w-screen overflow-x-hidden sm:overflow-x-visible">
-      {{ block "header" . }}
-        <header data-ga-category="header">
-          {{ block "nav" . }}
-            {{ partialCached "tw/nav.html" . }}
-          {{ end }}
-          {{ block "banner" . }}
-            {{ if .Param "banner-active" }}
-              {{ partialCached "tw/banner.html" . }}
-            {{ end }}
-          {{ end }}
-          {{ block "topper" . }}
-            {{ if .Param "topper-active" }}
-              {{ partialCached "tw/topper.html" . }}
-            {{ end }}
-          {{ end }}
-          {{ block "promo" . }}
-            {{ partialCached "tw/promo-header.html" . }}
-          {{ end }}
-        </header>
-      {{ end }}
-
-
-      <main data-ga-category="main">
-        {{ partial "tw/main.html" . }}
-      </main>
-
-      <footer
-        id="footer"
-        data-ga-category="footer"
-        data-sf-campaign="701f4000000TVuIAAW"
-      >
-        {{ partial "tw/footer.html" . }}
-      </footer>
-      {{ $svgs := dict
-        "banner-svg" "/img/logos/banner-default-on-trans.svg"
-        "bars-svg" "@fontawesome/solid/bars.svg"
-        "close-svg" "@fontawesome/solid/times-circle.svg"
-        "email-svg" "@fontawesome/regular/envelope.svg"
-        "fb-svg" "@fontawesome/brands/facebook-f.svg"
-        "logo-svg" "/img/logos/circle-default-on-trans.svg"
-        "search-svg" "@fontawesome/solid/search.svg"
-        "share-svg" "@fontawesome/solid/share.svg"
-        "spinner-svg" "@fontawesome/solid/spinner.svg"
-        "twitter-svg" "@fontawesome/brands/twitter.svg"
-      }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-      {{ partialCached "tw/modal-search.html" . }}
-      {{ partialCached "tw/modal-newsletter.html" . }}
-      <div hidden>
-        {{ range $id, $rsc := $svgs }}
-          {{ $svg := resources.Get $rsc }}
-          <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+    {{ block "header" . }}
+      <header data-ga-category="header">
+        {{ block "nav" . }}
+          {{ partialCached "tw/nav.html" . }}
         {{ end }}
-      </div>
-      {{ partial "header/ld-json.html" . }}
+        {{ block "banner" . }}
+          {{ if .Param "banner-active" }}
+            {{ partialCached "tw/banner.html" . }}
+          {{ end }}
+        {{ end }}
+        {{ block "topper" . }}
+          {{ if .Param "topper-active" }}
+            {{ partialCached "tw/topper.html" . }}
+          {{ end }}
+        {{ end }}
+        {{ block "promo" . }}
+          {{ partialCached "tw/promo-header.html" . }}
+        {{ end }}
+      </header>
+    {{ end }}
+
+
+    <main data-ga-category="main">
+      {{ partial "tw/main.html" . }}
+    </main>
+
+    <footer
+      id="footer"
+      data-ga-category="footer"
+      data-sf-campaign="701f4000000TVuIAAW"
+    >
+      {{ partial "tw/footer.html" . }}
+    </footer>
+    {{ $svgs := dict
+      "banner-svg" "/img/logos/banner-default-on-trans.svg"
+      "bars-svg" "@fontawesome/solid/bars.svg"
+      "close-svg" "@fontawesome/solid/times-circle.svg"
+      "email-svg" "@fontawesome/regular/envelope.svg"
+      "fb-svg" "@fontawesome/brands/facebook-f.svg"
+      "logo-svg" "/img/logos/circle-default-on-trans.svg"
+      "search-svg" "@fontawesome/solid/search.svg"
+      "share-svg" "@fontawesome/solid/share.svg"
+      "spinner-svg" "@fontawesome/solid/spinner.svg"
+      "twitter-svg" "@fontawesome/brands/twitter.svg"
+    }}
+    {{ partialCached "tw/modal-sticky.html" . }}
+    {{ partialCached "tw/modal-search.html" . }}
+    {{ partialCached "tw/modal-newsletter.html" . }}
+    <div hidden>
+      {{ range $id, $rsc := $svgs }}
+        {{ $svg := resources.Get $rsc }}
+        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+      {{ end }}
     </div>
+    {{ partial "header/ld-json.html" . }}
   </body>
 </html>
