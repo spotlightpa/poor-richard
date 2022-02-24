@@ -10,8 +10,9 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
       "is-clipped",
     ],
     deep: [
+      /textarea/,
       // Don't purge attributes
-      /disabled|multiple|readonly|\[rows\]|type|x-cloak/,
+      /disabled|multiple|readonly|type|x-cloak/,
     ],
     greedy: [],
   },
