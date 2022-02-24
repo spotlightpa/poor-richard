@@ -11,7 +11,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     ],
     deep: [
       // Don't purge attributes
-      /disabled|multiple|readonly|rows|type|x-cloak/,
+      /disabled|multiple|readonly|\[rows\]|type|x-cloak/,
     ],
     greedy: [],
   },
