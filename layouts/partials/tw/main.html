@@ -4,6 +4,11 @@
   `col-start-1 mx-auto lg:ml-0 max-w-prose`
   `mx-auto max-w-prose lg:max-w-screen-md`
 }}
+{{ $rightRailClass := cond $hasImage
+  `mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 max-w-prose w-80 sm:w-full sm:grid lg:block lg:w-80`
+  `mx-auto max-w-prose lg:max-w-screen-md w-80 sm:w-full sm:grid`
+}}
+
 {{ $hedClass := cond $hasImage "lg:col-span-2 lg:max-w-full" "" }}
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
@@ -164,58 +169,56 @@
       </div>
     </article>
 
-    {{ if $hasImage }}
-      <aside
-        class="mt-6 mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 w-80 max-w-prose sm:w-full sm:grid grid-cols-2 place-items-center items-stretch gap-4 lg:block lg:w-80"
-        data-ga-category="sidebar"
+    <aside
+      class="mt-6 {{ $rightRailClass }} grid-cols-2 place-items-center items-stretch gap-4"
+      data-ga-category="sidebar"
+    >
+      {{ partial "tw/rail-newsletter.html" . }}
+      <div
+        data-ga-category="top"
+        data-sf-campaign="7015G0000013oHLQAY"
+        class="mt-6 w-full"
       >
-        {{ partial "tw/rail-newsletter.html" . }}
+        {{ partial "tw/promo-single.html" (dict
+          "class" "mb-5 w-0 min-w-full no-js-hide"
+          "images" (.Param "sidebar-top-images")
+          "width" (.Param "sidebar-top-width")
+          "height" (.Param "sidebar-top-height")
+          "link"  (.Param "sidebar-top-link")
+          "description"  (.Param "sidebar-top-description")
+          )
+        }}
+      </div>
+
+      <div class="col-start-1 row-start-1 row-end-3">
+        {{ partial "tw/most-popular.html" dict }}
+      </div>
+      {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+      {{ range $edPicks }}
+        {{ if ne .RelPermalink $.RelPermalink }}
+          {{ partial "tw/editors-picks.html" . }}
+        {{ end }}
+      {{ end }}
+      {{ if .Param "sidebar-sticky-images" }}
         <div
-          data-ga-category="top"
-          data-sf-campaign="7015G0000013oHLQAY"
-          class="mt-6 w-full"
+          class="sticky top-0 w-full"
+          data-ga-category="sticky"
+          data-sf-campaign="7015G0000013oHQQAY"
+          x-data
+          x-intersect="$dispatch('close-sticky')"
         >
           {{ partial "tw/promo-single.html" (dict
-            "class" "mb-5 w-0 min-w-full no-js-hide"
-            "images" (.Param "sidebar-top-images")
-            "width" (.Param "sidebar-top-width")
-            "height" (.Param "sidebar-top-height")
-            "link"  (.Param "sidebar-top-link")
-            "description"  (.Param "sidebar-top-description")
+            "class" "pt-5 w-0 min-w-full no-js-hide"
+            "images" (.Param "sidebar-sticky-images")
+            "width" (.Param "sidebar-sticky-width")
+            "height" (.Param "sidebar-sticky-height")
+            "link"  (.Param "sidebar-sticky-link")
+            "description"  (.Param "sidebar-sticky-description")
             )
           }}
         </div>
-
-        <div class="col-start-1 row-start-1 row-end-3">
-          {{ partial "tw/most-popular.html" dict }}
-        </div>
-        {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
-        {{ range $edPicks }}
-          {{ if ne .RelPermalink $.RelPermalink }}
-            {{ partial "tw/editors-picks.html" . }}
-          {{ end }}
-        {{ end }}
-        {{ if .Param "sidebar-sticky-images" }}
-          <div
-            class="sticky top-0 w-full"
-            data-ga-category="sticky"
-            data-sf-campaign="7015G0000013oHQQAY"
-            x-data
-            x-intersect="$dispatch('close-sticky')"
-          >
-            {{ partial "tw/promo-single.html" (dict
-              "class" "pt-5 w-0 min-w-full no-js-hide"
-              "images" (.Param "sidebar-sticky-images")
-              "width" (.Param "sidebar-sticky-width")
-              "height" (.Param "sidebar-sticky-height")
-              "link"  (.Param "sidebar-sticky-link")
-              "description"  (.Param "sidebar-sticky-description")
-              )
-            }}
-          </div>
-        {{ end }}
-      </aside>
-    {{ end }}
+      {{ end }}
+    </aside>
 
     {{ if .Param "suppress-related" | not }}
       <nav class="mt-12 {{ $mainWellClass }}">
