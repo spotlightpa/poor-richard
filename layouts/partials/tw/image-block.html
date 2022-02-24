@@ -29,8 +29,6 @@
       {{ if not .eager }}
         loading="lazy" decoding="async"
       {{ end }}
-      width="{{ .width }}"
-      height="{{ .height }}"
     />
   </picture>
   {{ if not .showCaption | and .caption }}
