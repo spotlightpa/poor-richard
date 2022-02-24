@@ -13,6 +13,7 @@ kicker = "Health"
 modal-exclude = false
 no-index = false
 published = 2022-02-21T05:00:00-05:00
+series = ["Unproven, Unsafe"]
 slug = "pennsylvania-cannabis-websites-investigation-how-why"
 title = "How we investigated misleading addiction claims on Pennsylvania cannabis websites"
 topics = ["Health"]
