@@ -1,9 +1,10 @@
 {{ define "tw-image-block-picture" }}
   <picture
-    class="absolute block inset-0"
+    class="block"
     {{ if .caption }}
       @click="showCaption = !showCaption"
     {{ end }}
+    style="aspect-ratio: {{ .widthRatio }} / {{ .heightRatio }}"
   >
     {{ $isJPEG := in (string .srcset) ".jpeg" }}
     {{ if $isJPEG }}
@@ -16,7 +17,7 @@
       />
     {{ end }}
     <img
-      class="min-w-full min-h-full object-cover"
+      class="block w-full h-full object-cover"
       alt="{{ .description }}"
       title="{{ .description }}"
       src="{{ .imgSmallSrc }}"
@@ -29,6 +30,8 @@
       {{ if not .eager }}
         loading="lazy" decoding="async"
       {{ end }}
+      width="{{ .width }}"
+      height="{{ .height }}"
     />
   </picture>
   {{ if not .showCaption | and .caption }}
@@ -80,6 +83,8 @@
   "caption" .caption
   "width" $width
   "height" $height
+  "widthRatio" $widthR
+  "heightRatio" $heightR
 }}
 
 
@@ -95,10 +100,9 @@
   {{- if .link -}}
     <a
       class="
-        block relative w-full h-0 shadow overflow-hidden bg-g-4
+        relative block w-full shadow overflow-hidden bg-g-4
         {{ $rounded }}
       "
-      style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
       href="{{ .link }}"
     >
       {{- template "tw-image-block-picture" $pictOpts -}}
@@ -106,11 +110,10 @@
   {{- else -}}
     <div
       class="
-        block relative w-full h-0 shadow overflow-hidden bg-g-4
+        relative block w-full shadow overflow-hidden bg-g-4
         {{ $rounded }}
         {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
       "
-      style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
     >
       {{- template "tw-image-block-picture" $pictOpts -}}
     </div>
