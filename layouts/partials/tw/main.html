@@ -1,15 +1,17 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
-{{ $mainWellClass := cond $hasImage
-  `col-start-1 mx-auto lg:ml-0 max-w-prose`
+{{ $isWide := .Param "image-size" | eq "wide" }}
+{{ $isOneCol := (not $hasImage | or $isWide) }}
+{{ $mainWellClass := cond $isOneCol
   `mx-auto max-w-prose lg:max-w-screen-md`
+  `col-start-1 mx-auto lg:ml-0 max-w-prose`
 }}
-{{ $rightRailClass := cond $hasImage
-  `mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 max-w-prose w-80 sm:w-full sm:grid lg:block lg:w-80`
+{{ $rightRailClass := cond $isOneCol
   `mx-auto max-w-prose lg:max-w-screen-md w-80 sm:w-full sm:grid`
+  `mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 max-w-prose w-80 sm:w-full sm:grid lg:block lg:w-80`
 }}
+{{ $hedClass := cond $isOneCol "" "lg:col-span-2 lg:max-w-full" }}
 
-{{ $hedClass := cond $hasImage "lg:col-span-2 lg:max-w-full" "" }}
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
   {{ if len . | eq 1 }}
