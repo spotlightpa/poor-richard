@@ -30,19 +30,7 @@
     onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
   ></script>
     {{ partial "header/favicons.html" . }}
-    <link
-      rel="alternate"
-      type="application/feed+json"
-      href="{{ absURL `/feeds/full.json` }}"
-      title="Full News Feed"
-    />
-
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="{{ absURL `/feeds/full.xml` }}"
-      title="Full News Feed"
-    />
+    {{ partial "header/feeds.html" . }}
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}

@@ -7,18 +7,5 @@
   href="{{ partialCached "helper/get-enhancements" . }}"
 />
 
-<link
-  rel="alternate"
-  type="application/feed+json"
-  href="{{ absURL `/feeds/full.json` }}"
-  title="Full News Feed"
-/>
-
-<link
-  rel="alternate"
-  type="application/rss+xml"
-  href="{{ absURL `/feeds/full.xml` }}"
-  title="Full News Feed"
-/>
-
+{{ partial "header/feeds.html" . }}
 {{ partial "header/favicons.html" . }}
