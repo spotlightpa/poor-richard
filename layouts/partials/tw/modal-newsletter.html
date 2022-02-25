@@ -148,9 +148,20 @@
           >
             Sign me up
           </button>
-          <p class="text-center">
+          <p class="mt-5 flex space-x-2">
             <button
-              class="mt-5 text-g-6 hover:underline"
+              class="flex-grow text-g-6 hover:underline"
+              aria-label="close"
+              type="button"
+              @click="
+                $dispatch('x-form-submit', 'newsletters:seenit:submit');
+                isOpen = false
+              "
+            >
+              I’m already a subscriber
+            </button>
+            <button
+              class="flex-grow text-g-6 hover:underline"
               aria-label="close"
               type="button"
               @click="isOpen = false"
