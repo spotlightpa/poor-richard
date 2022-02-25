@@ -37,9 +37,9 @@ export function once(ev, qs, cb) {
 }
 
 export function storeItem(name, obj, { useSession = false } = {}) {
-  let store = useSession ? window.sessionStorage : window.localStorage;
   let data = JSON.stringify(obj);
   try {
+    let store = useSession ? window.sessionStorage : window.localStorage;
     store.setItem(name, data);
   } catch (e) {
     // eslint-disable-next-line no-console
@@ -48,9 +48,9 @@ export function storeItem(name, obj, { useSession = false } = {}) {
 }
 
 export function loadItem(name, { useSession = false } = {}) {
-  let store = useSession ? window.sessionStorage : window.localStorage;
   let data;
   try {
+    let store = useSession ? window.sessionStorage : window.localStorage;
     data = store.getItem(name);
   } catch (e) {
     // eslint-disable-next-line no-console
