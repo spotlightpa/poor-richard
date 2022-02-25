@@ -6,7 +6,7 @@
 {{ $height := 0 }}
 {{ $bgColor := "#000" }}
 <section
-  class="fixed z-10 bottom-0 right-0 max-w-xs"
+  class="fixed z-10 bottom-0 right-0 max-w-screen"
   x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -24,16 +24,16 @@
   <button
     type="button"
     class="
-      absolute top-1 left-2 h-9 w-9
+      absolute top-2 left-4 h-6 w-6
       rounded-full
-      text-yellow bg-white hover:text-black
+      bg-black bg-opacity-40 text-white hover:text-yellow
       flex"
     aria-label="close"
     @click="close"
     x-ref="close"
   >
-    <svg class="m-auto fill-current h-8 w-8">
-      <use xlink:href="#close-svg"></use>
+    <svg class="m-auto fill-current h-4 w-4">
+      <use xlink:href="#times-svg"></use>
     </svg>
   </button>
   <div class="my-2 mx-4 p-4 flex">
