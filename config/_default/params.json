@@ -62,7 +62,7 @@
   ],
   "sidebar-top-link": "/newsletters/papost",
   "sidebar-top-width": 300,
-  "sticky-active": true,
+  "sticky-active": false,
   "sticky-image-description": "Sign up for a free daily digest of the top news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
   "sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
