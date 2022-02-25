@@ -6,16 +6,28 @@
   "banner-text-color": "#000000",
   "footer-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "footer-promo-desktop-height": 90,
-  "footer-promo-desktop-images": [],
+  "footer-promo-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png"
+  ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate/",
   "footer-promo-mobile-height": 250,
-  "footer-promo-mobile-images": [],
+  "footer-promo-mobile-images": [
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgq/28.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/29.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/30.png"
+  ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
   "promo-active": true,
   "promo-desktop-height": 90,
-  "promo-desktop-images": [],
+  "promo-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png"
+  ],
   "promo-desktop-width": 728,
   "promo-image-description": "The future of Spotlight PA's vital investigative journalism depends on your support. Contribute now.",
   "promo-link": "/donate/",
@@ -30,11 +42,19 @@
   "promo-type": "image",
   "river-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "river-promo-desktop-height": 90,
-  "river-promo-desktop-images": [],
+  "river-promo-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png"
+  ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate/",
   "river-promo-mobile-height": 250,
-  "river-promo-mobile-images": [],
+  "river-promo-mobile-images": [
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgq/28.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/29.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/30.png"
+  ],
   "river-promo-mobile-width": 500,
   "sidebar-sticky-description": "Spotlight PA's vital journalism depends on your support. Donate now.",
   "sidebar-sticky-height": 250,
