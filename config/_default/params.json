@@ -48,26 +48,32 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Sign up for a free daily digest of news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
+  "sidebar-sticky-description": "Spotlight PA's vital journalism depends on your support. Donate now.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/29.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/30.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/31.png"
   ],
-  "sidebar-sticky-link": "/newsletters/papost",
+  "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Sign up for a free daily digest of news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
+  "sidebar-top-description": "The future of hard-hitting local news in Pennsylvania depends on your support. Donate now.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/29.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/30.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/31.png"
   ],
-  "sidebar-top-link": "/newsletters/papost",
+  "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
-  "sticky-active": false,
-  "sticky-image-description": "Sign up for a free daily digest of the top news from across Pennsylvania, plus updates from the state Capitol and some fun, too.",
+  "sticky-active": true,
+  "sticky-image-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01gx/eehk/spotlight-donate-square-ad-set-4-.png"
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t4/21.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/20.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/19.png"
   ],
-  "sticky-link": "/newsletters/papost",
+  "sticky-link": "/newsletters",
   "support-cta": "Contribute today »",
   "support-hed": "…we have a small favor to ask",
   "support-text": "We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. \u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nWe are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you \u003cstrong\u003epay it forward and make a contribution to Spotlight PA now?\u003c/strong\u003e",
