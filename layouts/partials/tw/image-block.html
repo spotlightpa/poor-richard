@@ -92,10 +92,10 @@
   class="{{ .figClass }}"
   data-ga-category="thumb"
   x-data="{ showCaption: false }"
-  {{ if not $showCaption }}
+  {{ if not $showCaption | and .caption }}
     x-effect="showCaption && $report({ target: $el })"
+    data-ga-action="image:toggle-caption"
   {{ end }}
-  data-ga-action="image:toggle-caption"
 >
   {{- if .link -}}
     <a
