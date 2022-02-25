@@ -7,8 +7,8 @@
   `col-start-1 mx-auto lg:ml-0 max-w-prose`
 }}
 {{ $rightRailClass := cond $isOneCol
-  `mx-auto max-w-prose lg:max-w-screen-md w-80 sm:w-full sm:grid`
-  `mx-auto lg:mr-0 lg:col-start-2 lg:row-start-2 row-span-3 max-w-prose w-80 sm:w-full sm:grid lg:block lg:w-80`
+  `mx-auto w-full max-w-prose lg:max-w-screen-md sm:grid`
+  `mx-auto w-full max-w-prose lg:pl-16 sm:grid lg:block lg:col-start-2 lg:row-start-2 row-span-3`
 }}
 {{ $hedClass := cond $isOneCol "" "lg:col-span-2 lg:max-w-full" }}
 
@@ -179,7 +179,7 @@
       <div
         data-ga-category="top"
         data-sf-campaign="7015G0000013oHLQAY"
-        class="mt-6 w-full"
+        class="mt-6 w-full row-start-1"
       >
         {{ partial "tw/promo-single.html" (dict
           "class" "mb-5 w-0 min-w-full no-js:hidden"

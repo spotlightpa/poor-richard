@@ -9,7 +9,7 @@
   </h2>
 
   <article class="mt-6">
-    <div class="w-full sm:w-64 flex-shrink-0">
+    <div class="mx-auto w-full sm:w-64 flex-shrink-0">
       {{ $name := .Page.Param "image" }}
       {{ $credit := .Page.Param "image-credit" }}
       {{ $description := .Page.Param "image-description" }}
@@ -26,7 +26,7 @@
       }}
       {{ partial "tw/image-block.html" $imgOpts }}
     </div>
-    <div class="mt-6 group w-full flex-grow space-y-1">
+    <div class="mt-6 mx-auto group w-full sm:w-64 flex-grow space-y-1">
       <h3 class="text-black text-lg font-semibold leading-tight tracking-tight">
         <a
           class="group-hover:underline"
