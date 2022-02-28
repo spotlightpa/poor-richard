@@ -293,6 +293,10 @@ a.navbar-burger:hover {
   text-decoration: underline;
 }
 
+.group:hover .group-hover\:underline {
+  text-decoration: underline;
+}
+
 .related li {
   list-style: inside square;
 }
