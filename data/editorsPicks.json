@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-02-24-SPLPOLICE24.md"
+    "content/news/2022-02-28-SPLCOUNTIES28.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-10-SPLOVERSIGHT11.md",
-    "content/news/2021-11-18-SPLHALL19.md"
+    "content/news/2020-04-24-SPLNURSE27.md",
+    "content/news/2020-08-19-SPLRTK20.md"
   ],
   "topSlots": [
+    "content/news/2022-02-24-SPLPOLICE24.md",
     "content/news/2022-02-23-SPLMAPPICK.md",
-    "content/news/2022-02-21-SPLCANNABIS21.md",
-    "content/news/2022-02-17-SPLTESTING17.md"
+    "content/news/2022-02-21-SPLCANNABIS21.md"
   ],
   "topper": []
 }
