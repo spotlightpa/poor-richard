@@ -198,7 +198,7 @@
       {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
       {{ range $edPicks }}
         {{ if ne .RelPermalink $.RelPermalink }}
-          {{ partial "tw/editors-picks.html" . }}
+          {{ partialCached "tw/editors-picks.html" . .RelPermalink }}
         {{ end }}
       {{ end }}
       {{ if .Param "sidebar-sticky-images" }}

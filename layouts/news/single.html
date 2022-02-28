@@ -12,10 +12,10 @@
     {{ partial "header/meta.html" . }}
     {{ partial "header/google-analytics-meta.html" . }}
     {{ partialCached "header/css-tw-merri.html" . }}
-    {{ partial "header/noscript.html" . }}
-    {{ partial "header/script.html" . }}
-    {{ partial "header/favicons.html" . }}
-    {{ partial "header/feeds.html" . }}
+    {{ partialCached "header/noscript.html" . }}
+    {{ partialCached "header/script.html" . }}
+    {{ partialCached "header/favicons.html" . }}
+    {{ partialCached "header/feeds.html" . }}
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
@@ -56,28 +56,10 @@
     >
       {{ partial "tw/footer.html" . }}
     </footer>
-    {{ $svgs := dict
-      "banner-svg" "/img/logos/banner-default-on-trans.svg"
-      "bars-svg" "@fontawesome/solid/bars.svg"
-      "close-svg" "@fontawesome/solid/times-circle.svg"
-      "email-svg" "@fontawesome/regular/envelope.svg"
-      "fb-svg" "@fontawesome/brands/facebook-f.svg"
-      "logo-svg" "/img/logos/circle-default-on-trans.svg"
-      "search-svg" "@fontawesome/solid/search.svg"
-      "share-svg" "@fontawesome/solid/share.svg"
-      "spinner-svg" "@fontawesome/solid/spinner.svg"
-      "times-svg" "@fontawesome/solid/times.svg"
-      "twitter-svg" "@fontawesome/brands/twitter.svg"
-    }}
     {{ partialCached "tw/modal-sticky.html" . }}
     {{ partialCached "tw/modal-search.html" . }}
     {{ partialCached "tw/modal-newsletter.html" . }}
-    <div hidden>
-      {{ range $id, $rsc := $svgs }}
-        {{ $svg := resources.Get $rsc }}
-        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
-      {{ end }}
-    </div>
+    {{ partialCached "tw/svgs.html" . }}
     {{ partial "header/ld-json.html" . }}
   </body>
 </html>
