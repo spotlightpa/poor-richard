@@ -23,6 +23,8 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
+<b>UPDATED: Feb. 23, 2022</b>
+
 After several delays, Pennsylvania is one step closer to finalizing its political districts.
 
 The Pennsylvania Supreme Court on Feb. 23 <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-congressional-map-supreme-court-pick/">selected a new congressional map</a> that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. There is a <a href="https://apnews.com/article/elections-pennsylvania-lawsuits-state-elections-legislature-1c21a5eaf69e09fa7a6b2dd6af1acbdc">pending federal legal challenge</a> to the court's authority to pick the map.
