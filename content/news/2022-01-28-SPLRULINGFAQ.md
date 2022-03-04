@@ -20,6 +20,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Updated, March 1: </b></i><i>The state Supreme Court has ruled </i><a href="https://apnews.com/article/pennsylvania-945da9d7cc39f52e0515577ae1d974c6" target="_blank"><i>the law will remain in place for now</i></a><i>, pending additional action by the justices.</i>
+
 HARRISBURG — Pennsylvania’s mail voting law, known as Act 77, was <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-mail-voting-unconstitutional-supreme-court-appeal/" target="_blank">ruled unconstitutional</a> Friday by a state court after a challenge brought by Republicans, but it will remain in place for the time being as the Wolf administration pursues an appeal to the state Supreme Court.
 
 Here’s what you need to know about the decision and how it might affect you:
