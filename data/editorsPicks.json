@@ -1,17 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-03-07-SPLCHILDCARE07.md"
+    "content/news/2022-03-08-SPLMAILHEAR09.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2021-11-26-SPLNUMBERS.md",
-    "content/news/2021-11-24-SPLCHILD26.md"
+    "content/news/2022-02-07-SPLMAILVOTE.md",
+    "content/news/2022-01-28-SPLRULINGFAQ.md"
   ],
   "topSlots": [
+    "content/news/2022-03-07-SPLCHILDCARE07.md",
     "content/news/2022-03-03-SPLREGUIDE.md",
-    "content/news/2022-02-22-SPLMAPPA3.md",
     "content/news/2022-02-28-SPLCOUNTIES28.md"
   ],
   "topper": []
