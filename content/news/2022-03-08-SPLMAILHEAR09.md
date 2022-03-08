@@ -30,11 +30,13 @@ It was challenged last year by a group of Republican lawmakers and elected offic
 
 On Tuesday, justices on the seven-member Supreme Court pressed lawyers representing the Wolf administration and Republican challengers for nearly three hours about the law, focusing on the two sections of the state constitution at the heart of the dispute over its legality: one that dictates eligibility requirements for voting, and another that spells out the circumstances for voters to cast an absentee ballot.
 
-Several justices on the Democrat-majority court also hinted at what voting rights advocates have argued for months: that the GOP-led lawsuit is little more than an effort to undermine&nbsp; voter confidence and suppress votes, spurred by baseless claims by former President Donald Trump and his supporters that the 2020 election was replete with fraud and stolen from him.
+Several justices on the Democrat-majority court also hinted at what voting rights advocates have argued for months: that the GOP-led lawsuit is little more than an effort to undermine voter confidence and suppress votes, spurred by baseless claims by former President Donald Trump and his supporters that the 2020 election was replete with fraud and stolen from him.
 
 “Let’s be candid,” Justice Kevin M. Dougherty, a Democrat, said while questioning the attorney for the GOP lawmakers who brought the suit. “What it really looks like is that maybe some legislators are concerned because the no-excuse balloting — at least recently — shows that maybe one party votes overwhelmingly by mail-in ballot as opposed to another. So maybe this is an attack for supremacy at the ballot. I don’t know.”
 
 Several justices, Dougherty among them, also took aim at specific language in the constitution that harks back to a time in history when the focus was on protecting the vote for white men only. That language, the justices said, is now being cited by Republican lawyers to defend their position that the phrasing requires people to vote in person, except in very narrow circumstances.
+
+“The best way to be certain that no one but a free white man votes is [to] make the voter show up at the polling place,” said Justice Christine Donohue, a Democrat. “If there is any policy reason for showing up to vote it’s to effectuate the intent to make certain that only ‘the right people’ got to vote.”
 
 Lawyers for Republicans — several of whom voted for Act 77 — have argued that Pennsylvania’s Constitution requires voters to appear at polling places on Election Day, unless they qualify for an absentee ballot. No-excuse mail voting is not specified in the constitution, they said.
 
