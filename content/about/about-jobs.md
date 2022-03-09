@@ -6,6 +6,32 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
+## Penn State Investigative Reporter, Spotlight PA State College
+
+## <a href="https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/454">Apply Here</a>
+
+**Summary:** We are seeking a passionate reporter to provide vital accountability reporting on Penn State University for Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This investigative reporter will be an integral part of Spotlight’s [first local bureau](https://www.spotlightpa.org/statecollege) launching this summer in State College, Pennsylvania.
+
+State College is home to the main campus of Penn State, a $7.7 billion operation that receives more than $300 million in funding from the state government and has an enrollment of 90,000 students. The child sex abuse scandal at Penn State a decade ago — uncovered by a Pa. reporter — only underscored the need for more investigative journalism to hold such a mammoth state institution to account.
+
+**What you’ll do:** This reporter will lead Spotlight PA’s coverage of Penn State. While there may be occasional daily reporting, this position will primarily allow for the reporter to take the time to go beneath the surface to examine the inner workings of the institution.
+
+Since Spotlight PA focuses on accountability reporting, this reporter will be expected to build sources and scrutinize policies through the power players and special interests around them. 
+
+This is an enterprise beat, and the reporter will be expected to regularly uncover and write stories and investigate issues that are otherwise getting little to no attention, supported by an excitable team that is intensely familiar with the state’s bureaucracies.
+
+Spotlight PA partners with more than 80 newsrooms across the state to share stories, and this reporter would frequently collaborate with other journalists in the pursuit of impact-driven reporting.
+
+**Who we’re looking for:** Ideal candidates will have investigative clips that show an ability to report beyond daily news, build a diverse network of sources, and aggressively fight for and use public records. We want someone who can penetrate guarded and closed-off institutions, persistently pitch stories, and keep several projects of varying lengths cooking at one time. The best candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters.
+
+Some other ideal traits, though not essential:
+
+* Knowledge of Pennsylvania and/or sprawling university systems;
+* Fluency in foreign languages, particularly Spanish;
+* A comfort with requesting, scrutinizing, and using data in the reporting process;
+
+This job is full-time and includes benefits. While you will be part of our State College initiative, this reporter can be based anywhere in Pennsylvania. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
+
 ## Supervising Editor, Spotlight PA State College
 
 ## <a href="https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/408">Apply Here</a>
@@ -33,14 +59,6 @@ This is a pivotal time to cover voting in Pennsylvania, a state that saw one of 
 You will dive deep into the details of election administration and synthesize those facts into accurate, nuanced takeaways. Your journalism will inform the debate around voting and make an impact by spotlighting problems in elections and the politicization of voting, and by pointing toward solutions. Because the decision-making and preparations for elections are constantly ongoing, we treat this coverage as a year-round beat. 
 
 <hr>
-
-## Rural Affairs Reporter, Report for America
-
-## <a href="https://www.reportforamerica.org/reporters/">Apply Here</a>
-
-Spotlight PA is seeking a rural affairs reporter to join its new State College bureau through Report for America. Spotlight PA is an award-winning independent newsroom in Pennsylvania that aims to hold powerful private and public forces to account by producing journalism that serves the public good. This reporter will identify and elevate stories from under-covered regions of Central Pennsylvania and the Northern Tier. 
-
-As an equal opportunity employer, Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
 
 ## Sign up to receive alerts so you don't miss new job postings.
 
