@@ -30,7 +30,9 @@ Some other ideal traits, though not essential:
 * Fluency in foreign languages, particularly Spanish;
 * A comfort with requesting, scrutinizing, and using data in the reporting process;
 
-This job is full-time and includes benefits. While you will be part of our State College initiative, this reporter can be based anywhere in Pennsylvania. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
+This job is full-time and includes benefits. While we have the flexibility to find a compensation package that will work for the right candidate, this position is budgeted for a salary from $65,000-$75,000, depending on experience.
+
+While you will be part of our State College initiative, this reporter can be based anywhere in Pennsylvania. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
 
 ## Supervising Editor, Spotlight PA State College
 
