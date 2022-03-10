@@ -8,11 +8,13 @@ image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center"
 internal-budget = "A complete guide to Pennsylvania’s redistricting court challenges"
 internal-id = "SPLREGUIDE"
+kicker = "Redistricting"
 modal-exclude = false
 no-index = false
 published = 2022-03-03T05:00:40-05:00
 slug = "pennsylvania-redistricting-legal-challenges-complete-guide"
 title = "A complete guide to Pennsylvania’s redistricting court challenges"
+topics = ["Redistricting"]
 +++
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
