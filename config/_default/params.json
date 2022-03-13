@@ -1,76 +1,76 @@
 {
   "banner": "\u003cstrong\u003eSpotlight PA to launch State College bureau. Learn more »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#fefb41",
   "banner-link": "/statecollege",
   "banner-text-color": "#000000",
-  "footer-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "footer-promo-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/25.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/27.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/29.png"
   ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate/",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgq/28.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/30.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8w/30.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/33.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/31.png"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": true,
+  "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/29.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/27.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/25.png"
   ],
   "promo-desktop-width": 728,
-  "promo-image-description": "The future of Spotlight PA's vital investigative journalism depends on your support. Contribute now.",
+  "promo-image-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "promo-link": "/donate/",
   "promo-mobile-height": 250,
   "promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/30.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgq/28.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8w/30.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/31.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/33.png"
   ],
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
-  "river-promo-description": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
+  "river-promo-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "river-promo-desktop-height": 90,
   "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/25.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkm/26.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbkn/27.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/25.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/27.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/29.png"
   ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate/",
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgq/28.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/jbgr/30.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8w/30.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/33.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/31.png"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Spotlight PA's vital journalism depends on your support. Donate now.",
+  "sidebar-sticky-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/30.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/31.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/33.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/31.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/29.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "The future of hard-hitting local news in Pennsylvania depends on your support. Donate now.",
+  "sidebar-top-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/30.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/31.png"
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/33.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/31.png",
+    "https://files.data.spotlightpa.org/uploads/01h2/jwps/29.png"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
@@ -82,22 +82,26 @@
     "https://files.data.spotlightpa.org/uploads/01h1/j8t3/19.png"
   ],
   "sticky-link": "/newsletters",
-  "support-cta": "Contribute today »",
+  "support-cta": "Yes, double my gift »",
   "support-hed": "…we have a small favor to ask",
-  "support-text": "We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. \u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nWe are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you \u003cstrong\u003epay it forward and make a contribution to Spotlight PA now?\u003c/strong\u003e",
-  "topper-active": false,
+  "support-text": "We believe everyone in Pennsylvania should have access to this kind of unique, in-depth, and essential public-service journalism regardless of what they can afford. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state. \u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nWe are doubling down on the idea that if we ask our readers to contribute what you think we’re worth, we can build a sustainable business model for independent news. If you learned something from this report, if you were surprised, outraged, or simply feel more informed, will you \u003cstrong\u003epay it forward and make a contribution to Spotlight PA now? For a limited time, all gifts will be DOUBLED as part of our $25,000 Sunshine Week Challenge Campaign.\u003c/strong\u003e",
+  "topper-active": true,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01gw/za3k/special-report-38-.svg"
+    "https://files.data.spotlightpa.org/uploads/01h2/jye7/27.svg",
+    "https://files.data.spotlightpa.org/uploads/01h2/jye6/29.svg",
+    "https://files.data.spotlightpa.org/uploads/01h2/q6pk/spotlight-general-donate-banner-ad-set-728-90-1350-225-px-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ea5b3a",
-  "topper-image-description": "This new year, support Spotlight PA's vital investigative journalism for Pennsylvania. Click to give now.",
+  "topper-image-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01gw/za3k/progress-bar-31-.svg"
+    "https://files.data.spotlightpa.org/uploads/01h2/jyf6/31.svg",
+    "https://files.data.spotlightpa.org/uploads/01h2/jyf5/33.svg",
+    "https://files.data.spotlightpa.org/uploads/01h2/q6vn/spotlight-donate-square-ad-set-500-x-250-px-1024-512-px-.svg"
   ],
   "topper-mobile-width": 1024
 }
