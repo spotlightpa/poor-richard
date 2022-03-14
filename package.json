@@ -39,7 +39,6 @@
     "journalize": "^2.5.1",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
-    "prettier-plugin-go-template": "^0.0.11",
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
@@ -52,6 +51,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": ">=6.0.0",
     "eslint-plugin-standard": ">=5.0.0",
+    "prettier-plugin-go-template": "^0.0.11",
     "prettier": "^2.5.1"
   }
 }
