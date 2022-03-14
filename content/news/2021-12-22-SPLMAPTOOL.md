@@ -17,6 +17,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-22T05:00:42-05:00
 slug = "pennsylvania-redistricting-house-senate-districts-lookup-tool"
+suppress-date = true
 title = "Pa. redistricting maps: Search now to see your old and new political districts"
 topics = ["Redistricting"]
 +++
