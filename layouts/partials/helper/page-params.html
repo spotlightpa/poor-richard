@@ -19,6 +19,7 @@
 {{ $blurb := .Param "blurb" | default "" }}
 
 {{ $showTitle := .Param "suppress-title" | not }}
+{{ $evergreen := .Param "suppress-date" }}
 
 {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
 
@@ -58,6 +59,7 @@
   "publishedISO" $pubDateISO
   "eventDate" $eventDate
   "eventDateISO" $eventDateISO
+  "evergreen" $evergreen
 }}
 
 {{ if .Param "series" }}

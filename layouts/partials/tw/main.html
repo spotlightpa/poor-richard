@@ -67,7 +67,7 @@
                       {{- .byline -}}
                     </span>
                   </span>
-                  {{ if .published }}
+                  {{ if not .evergreen | and .published }}
                     <span class="font-light">
                       |
                       <time datetime="{{ .publishedISO }}">
