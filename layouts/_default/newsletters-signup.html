@@ -105,8 +105,17 @@
                             <use xlink:href="#check-svg"></use>
                           </svg>
                         </span>
-                        <span class="is-size-6 has-text-weight-light" x-show="isChecked">Selected</span>
-                        <span class="is-size-6 has-text-weight-light" x-cloak x-show="!isChecked">Click to select</span>
+                        <span
+                          class="is-size-6 has-text-weight-light"
+                          x-show="isChecked"
+                          >Selected</span
+                        >
+                        <span
+                          class="is-size-6 has-text-weight-light"
+                          x-cloak
+                          x-show="!isChecked"
+                          >Click to select</span
+                        >
                       </h2>
                       <p class="group-hover:underline">
                         {{ $params.blurb }}
