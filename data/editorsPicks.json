@@ -1,15 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-03-14-SPLKANE.md"
+    "content/news/2022-03-16-SPLLAWSUIT16.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
-    "content/news/2022-03-14-SPLDRUG314.md",
-    "content/news/2022-03-10-SPLREASONS.md",
+  "subfeatures": [
     "content/news/2022-03-08-SPLOPEN316.md"
+  ],
+  "topSlots": [
+    "content/news/2022-03-14-SPLKANE.md",
+    "content/news/2022-03-14-SPLDRUG314.md",
+    "content/news/2022-03-10-SPLREASONS.md"
   ],
   "topper": []
 }
