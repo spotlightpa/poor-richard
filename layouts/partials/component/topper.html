@@ -49,10 +49,14 @@
         >
           <img
             class="aspect-ratio-inner"
-            x-data="imageRotator(JSON.parse($el.dataset.images))"
-            data-images="{{ $imgDesktop | jsonify }}"
-            :src="choice"
-            src="{{ $magicPixel }}"
+            {{ if len $imgDesktop | eq 1 }}
+              src="{{ index $imgDesktop 0 }}"
+            {{ else }}
+              x-data="imageRotator(JSON.parse($el.dataset.images))"
+              data-images="{{ $imgDesktop | jsonify }}"
+              :src="choice"
+              src="{{ $magicPixel }}"
+            {{ end }}
             alt="{{ $alt }}"
             title="{{ $alt }}"
             loading="lazy"
@@ -85,10 +89,14 @@
         >
           <img
             class="aspect-ratio-inner"
-            x-data="imageRotator(JSON.parse($el.dataset.images))"
-            data-images="{{ $imgMobile | jsonify }}"
-            :src="choice"
-            src="{{ $magicPixel }}"
+            {{ if len $imgMobile | eq 1 }}
+              src="{{ index $imgMobile 0 }}"
+            {{ else }}
+              x-data="imageRotator(JSON.parse($el.dataset.images))"
+              data-images="{{ $imgMobile | jsonify }}"
+              :src="choice"
+              src="{{ $magicPixel }}"
+            {{ end}}
             alt="{{ $alt }}"
             title="{{ $alt }}"
             loading="lazy"
