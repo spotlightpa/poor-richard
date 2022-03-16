@@ -2,9 +2,9 @@
 aliases = ["/mydistrict"]
 arc-id = "K5Y7MV2YKFGWZEGLDKEHZCJ2E4"
 authors = ["Kate Huangpu", "Carl Johnson"]
-blurb = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts could change."
+blurb = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts will change."
 byline = "Kate Huangpu of Spotlight PA and Carl Johnson of Spotlight PA"
-description = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts could change."
+description = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts will change."
 headers = ["Feature-Policy: geolocation *;"]
 image = "external/7x62vr0y13fc2fk8wf7tj1678r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
@@ -24,13 +24,13 @@ topics = ["Redistricting"]
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
-<b>UPDATED: Feb. 23, 2022</b>
+<b>UPDATED: March 16, 2022</b>
 
-After several delays, Pennsylvania is one step closer to finalizing its political districts.
+After several delays, Pennsylvania has finalized its political districts for the May 2022 primary.
 
-The Pennsylvania Supreme Court on Feb. 23 <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-congressional-map-supreme-court-pick/">selected a new congressional map</a> that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. There is a <a href="https://apnews.com/article/elections-pennsylvania-lawsuits-state-elections-legislature-1c21a5eaf69e09fa7a6b2dd6af1acbdc">pending federal legal challenge</a> to the court's authority to pick the map.
+The Pennsylvania Supreme Court in February <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-congressional-map-supreme-court-pick/">selected a new congressional map</a> that closely resembles the current one, with the partisan makeup of the state’s delegation unlikely to change dramatically. The U.S. Supreme Court in March declined a request to <a href="https://www.cnn.com/2022/03/07/politics/supreme-court-2022-election-pennsylvania-north-carolina/index.html">block the map's usage</a> for this year's primary election.
 
-In a separate process, a redistricting panel earlier in the month <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-legislative-maps-final-vote/">approved final state House and Senate maps</a> that could fundamentally reshape the legislature. The boundaries are <a href="https://www.politicspa.com/benninghoff-discard-the-new-maps-reinstate-the-old/99954/">still subject to legal challenges</a>.
+In a separate process, a redistricting panel in February <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-legislative-maps-final-vote/">approved final state House and Senate maps</a> that could fundamentally reshape the legislature. The boundaries survived <a href="https://www.spotlightpa.org/news/2022/03/pennsylvania-legislative-maps-constitutional-supreme-court-challenges/">nine legal challenges</a> and will be used for the primary election.
 
 <script src="https://viz-redistricting-2020.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-redistricting-2020"></div><small><a href="https://viz-redistricting-2020.data.spotlightpa.org">Click here if you have trouble loading this map</a></small>
 
