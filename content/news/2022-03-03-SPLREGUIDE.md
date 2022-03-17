@@ -13,11 +13,14 @@ modal-exclude = false
 no-index = false
 published = 2022-03-03T05:00:40-05:00
 slug = "pennsylvania-redistricting-legal-challenges-complete-guide"
+suppress-date = false
 title = "A complete guide to Pennsylvania’s redistricting court challenges"
 topics = ["Redistricting"]
 +++
 
 <i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+
+<i>Updated March 17, 2022: The Pennsylvania Supreme Court has </i><a href="https://www.spotlightpa.org/news/2022/03/pennsylvania-legislative-maps-constitutional-supreme-court-challenges/" target="_blank"><i>rejected the legal challenges to the state’s new legislative maps</i></a><i>. The redistricting process is over. </i>
 
 HARRISBURG — Pennsylvania’s new political maps may have been picked, but that doesn’t mean the redistricting process is over.
 
