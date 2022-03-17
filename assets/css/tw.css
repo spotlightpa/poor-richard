@@ -259,6 +259,67 @@
   }
 }
 
+.site-nav {
+  @apply px-4 bg-black;
+}
+
+.site-nav\:container {
+  @apply mx-auto max-w-prose lg:max-w-screen-lg;
+}
+
+.site-nav\:content {
+  @apply flex items-center justify-between h-16;
+}
+
+.site-nav\:logo {
+  @apply flex-shrink-0 inline-flex text-white hover:text-yellow;
+}
+
+.site-nav\:logo-svg {
+  @apply pr-4 sm:pr-0 h-12 w-60 max-w-full fill-current;
+}
+
+.site-nav\:desktop {
+  @apply hidden lg:flex w-full items-center space-x-4 justify-end font-sans;
+}
+
+.site-nav\:item {
+  @apply uppercase text-white hover:text-yellow duration-500;
+}
+
+.site-nav\:svg-icon {
+  @apply inline-block relative w-4 h-4 fill-current align-middle;
+}
+
+.site-nav\:donate-button {
+  @apply flex items-baseline px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold;
+}
+
+.site-nav\:mobile {
+  @apply lg:hidden flex items-center font-sans;
+}
+
+.site-nav\:hamburger {
+  @apply rounded border border-white px-4 py-2 text-white;
+}
+
+.site-nav\:flyout {
+  @apply absolute z-10 mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow;
+  @apply py-2 px-4 space-y-2 bg-black text-white text-lg uppercase;
+}
+
+.site-nav\:flyout-donate {
+  @apply px-3 py-2 inline-flex items-center whitespace-nowrap bg-orange text-white rounded uppercase font-semibold hover:shadow-beige;
+}
+
+.site-nav\:flyout-donate-svg {
+  @apply inline mr-1 h-6 w-6 fill-current;
+}
+
+.site-nav\:flyout-item {
+  @apply block w-full hover:text-yellow transition-colors duration-500;
+}
+
 @tailwind components;
 
 @tailwind utilities;

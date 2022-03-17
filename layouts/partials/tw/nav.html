@@ -1,58 +1,48 @@
 <nav
   id="#top"
   x-data="{ isOpen: false }"
-  class="px-4 bg-black"
+  class="site-nav"
   data-ga-category="navbar"
   data-sf-campaign="701f4000000TVu3AAG"
   aria-label="main navigation"
 >
-  <div class="mx-auto max-w-prose lg:max-w-screen-lg">
-    <div class="flex items-center justify-between h-16">
-      <a
-        class="flex-shrink-0 inline-flex text-white hover:text-yellow"
-        href="/"
-        data-ga-category="logo"
-      >
-        <svg class="pr-4 sm:pr-0 h-12 w-60 max-w-full fill-current">
+  <div class="site-nav:container">
+    <div class="site-nav:content">
+      <a class="site-nav:logo" href="/" data-ga-category="logo">
+        <svg class="site-nav:logo-svg">
           <title>Home</title>
           <desc>Spotlight PA logo</desc>
-          <use xlink:href="#banner-svg"></use>
+          <use href="#banner-svg"></use>
         </svg>
       </a>
-      <div
-        class="hidden lg:flex w-full items-center space-x-4 justify-end font-sans"
-        data-ga-category="desktop"
-      >
+      <div class="site-nav:desktop" data-ga-category="desktop">
         {{ range site.Menus.main }}
-          <a
-            class="uppercase text-white hover:text-yellow duration-500"
-            href="{{ .URL }}"
-            data-ga-category="item"
+          <a class="site-nav:item" href="{{ .URL }}" data-ga-category="item"
             >{{ .Name }}</a
           >
         {{ end }}
         <a
           href="/search/"
-          class="text-white hover:text-yellow"
+          class="site-nav:item"
           data-ga-category="search"
           :data-ga-action="'modal:search:open'"
           x-data
           @click.prevent="$dispatch('modal:search:open')"
         >
-          <svg class="fill-current w-4 h-4">
-            <use xlink:href="#search-svg"></use>
+          <svg class="site-nav:svg-icon">
+            <use href="#search-svg"></use>
           </svg>
         </a>
         <a
-          class="px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold"
+          class="site-nav:donate-button"
           href="/donate/"
           data-ga-category="donate"
         >
           <svg
-            class="inline mr-1 h-4 w-4 fill-current"
+            class="site-nav:svg-icon"
             viewBox="0 0 20 20"
             aria-hidden="true"
-            style="margin-top: -4px;"
+            style="top: 1px; margin-right: 2px"
           >
             <path
               d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
@@ -61,18 +51,18 @@
           Support Us
         </a>
       </div>
-      <div class="lg:hidden flex items-center font-sans">
+      <div class="site-nav:mobile">
         <div
           x-data="{ isOpen: false }"
           x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
           x-id="['dropdown-button']"
-          class="relative"
+          style="position: relative;"
         >
           <!-- no JS fallback link to footer -->
-          <a class="flex" href="#footer" :href="null" @click.prevent>
+          <a style="display: flex;" href="#footer" :href="null" @click.prevent>
             <button
               type="button"
-              class="rounded border border-white px-4 py-2 text-white"
+              class="site-nav:hamburger"
               x-ref="button"
               aria-label="Site Menu"
               :aria-expanded="isOpen"
@@ -81,9 +71,9 @@
               data-ga-category="burger"
               data-ga-action="menu:toggle"
             >
-              <svg class="w-4 h-4 fill-current">
+              <svg class="site-nav:svg-icon">
                 <title>Site Menu</title>
-                <use xlink:href="#bars-svg"></use>
+                <use href="#bars-svg"></use>
               </svg>
             </button>
           </a>
@@ -95,32 +85,29 @@
             x-show="isOpen"
             x-cloak
             x-transition.origin.top.right
-            class="
-                  absolute z-10 mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow
-                  py-2 px-4 space-y-2 bg-black text-white text-lg uppercase
-                "
+            class="site-nav:flyout"
             @click.outside="isOpen = false; $refs.button.focus()"
             @focusin.outside="isOpen = false"
           >
             <div class="py-2">
               <a
-                class="px-3 py-2 inline-flex items-center whitespace-nowrap bg-orange text-white rounded uppercase font-semibold hover:shadow-beige"
+                class="site-nav:flyout-donate"
                 href="/donate/"
                 data-ga-category="donate"
               >
                 <svg
-                  class="inline mr-1 h-6 w-6 fill-current"
+                  class="site-nav:flyout-donate-svg"
                   viewBox="0 0 20 20"
                   aria-hidden="true"
                 >
-                  <use xlink:href="#logo-svg"></use>
+                  <use href="#logo-svg"></use>
                 </svg>
                 Support Us
               </a>
             </div>
             {{ range site.Menus.main }}
               <a
-                class="block w-full hover:text-yellow transition-colors duration-500"
+                class="site-nav:flyout-item"
                 href="{{ .URL }}"
                 data-ga-category="item"
                 >{{ .Name }}</a
@@ -129,7 +116,7 @@
             <div>
               <a
                 href="/search/"
-                class="block w-full hover:text-yellow transition-colors duration-500"
+                class="site-nav:flyout-item"
                 data-ga-category="search"
                 :data-ga-action="'modal:search:open'"
                 x-data
