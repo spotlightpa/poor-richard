@@ -1,9 +1,9 @@
 +++
 arc-id = "JLQCJC2NSBBW5ADYWHDVTKXRE4"
 authors = ["Christopher Baxter"]
-blurb = "The Republican and Democratic candidates for U.S Senate will face off in back-to-back nights April 25 and 26 at Dickinson College in Carlisle."
+blurb = "The Republican and Democratic candidates for U.S. Senate will face off in back-to-back nights April 25 and 26 at Dickinson College in Carlisle."
 byline = "Christopher Baxter"
-description = "The Republican and Democratic candidates for U.S Senate will face off in back-to-back nights April 25 and 26 at Dickinson College in Carlisle."
+description = "The Republican and Democratic candidates for U.S. Senate will face off in back-to-back nights April 25 and 26 at Dickinson College in Carlisle."
 image = "external/rzq0jhrbzktwbrw6cm41j27ez0.jpeg"
 image-credit = "VICKI VELLIOS BRINER / For Spotlight PA"
 image-description = "Spotlight PA — with an unprecedented coalition of major media companies and leading colleges in Pennsylvania — today announced dates for two “Pennsylvania in the Spotlight“ U.S. Senate debates leading up to the spring primary."
