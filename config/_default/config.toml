@@ -1,9 +1,8 @@
 buildFuture = true
-ignoreFiles = ['2019']
 
 [build]
   writeStats = true
   noJSConfigInAssets = true
 
 [minify]
-  minifyOutput = false
+  minifyOutput = true
