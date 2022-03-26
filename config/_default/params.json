@@ -1,5 +1,5 @@
 {
-  "banner": "\u003cstrong\u003eGet the top news from across PA in one free daily email. Sign up \u0026gt;\u0026gt; \u003c/strong\u003e",
+  "banner": "\u003cstrong\u003eGet the top news from across PA in one free daily email. Sign up \u0026amp;gt;\u0026amp;gt; \u003c/strong\u003e",
   "banner-active": true,
   "banner-bg-color": "#64c466",
   "banner-link": "/newsletters",
@@ -56,23 +56,23 @@
     "https://files.data.spotlightpa.org/uploads/01h2/jw8x/31.png"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
+  "sidebar-sticky-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/33.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/31.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/29.png"
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/19.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/20.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t4/21.png"
   ],
-  "sidebar-sticky-link": "/donate",
+  "sidebar-sticky-link": "/newsletters",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
+  "sidebar-top-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/33.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/31.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jwps/29.png"
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/19.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/20.png",
+    "https://files.data.spotlightpa.org/uploads/01h1/j8t4/21.png"
   ],
-  "sidebar-top-link": "/donate",
+  "sidebar-top-link": "/newsletters",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
