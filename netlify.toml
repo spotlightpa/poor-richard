@@ -122,8 +122,3 @@ Cache-Control = "public, max-age=31536000, immutable" # 1 year
 for = "/admin/*"
 [headers.values]
 X-Frame-Options = "DENY"
-
-[[redirects]]
-from = "/api/*"
-to = "/.netlify/functions/spotlightpa-api/:splat"
-status = 200
