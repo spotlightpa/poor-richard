@@ -13,16 +13,12 @@
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": false,
+  "promo-active": true,
   "promo-desktop-height": 90,
-  "promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/29.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/27.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jw6s/25.png"
-  ],
+  "promo-desktop-images": [],
   "promo-desktop-width": 728,
-  "promo-image-description": "For a limited time, all gifts in support of Spotlight PA's vital journalism will be DOUBLED. Give now.",
-  "promo-link": "/donate/",
+  "promo-image-description": "Stay informed with the top news and fun from across Pennsylvania with Spotlight PA's free daily and weekly newsletters.",
+  "promo-link": "/newsletters",
   "promo-mobile-height": 250,
   "promo-mobile-images": [
     "https://files.data.spotlightpa.org/uploads/01h2/jw8w/30.png",
