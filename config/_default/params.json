@@ -15,16 +15,19 @@
   "newsletter-active": true,
   "promo-active": true,
   "promo-desktop-height": 90,
-  "promo-desktop-images": [],
+  "promo-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01h4/40r7/7.png",
+    "https://files.data.spotlightpa.org/uploads/01h4/40r6/8.png",
+    "https://files.data.spotlightpa.org/uploads/01h4/40r5/9.png",
+    "https://files.data.spotlightpa.org/uploads/01h4/40r3/11.png",
+    "https://files.data.spotlightpa.org/uploads/01h4/40r5/10.png",
+    "https://files.data.spotlightpa.org/uploads/01h4/40r1/6.png"
+  ],
   "promo-desktop-width": 728,
-  "promo-image-description": "Stay informed with the top news and fun from across Pennsylvania with Spotlight PA's free daily and weekly newsletters.",
+  "promo-image-description": "Your complete guide to Pennsylvania's top local news, amazing people, great places, and delicious food, all from Spotlight PA. Sign up for one of our free daily or weekly newsletters.",
   "promo-link": "/newsletters",
   "promo-mobile-height": 250,
-  "promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h2/jw8w/30.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/31.png",
-    "https://files.data.spotlightpa.org/uploads/01h2/jw8x/33.png"
-  ],
+  "promo-mobile-images": [],
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
