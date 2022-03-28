@@ -127,6 +127,3 @@ X-Frame-Options = "DENY"
 from = "/api/*"
 to = "/.netlify/functions/spotlightpa-api/:splat"
 status = 200
-
-[[plugins]]
-package = "netlify-plugin-hugo-cache-resources"
