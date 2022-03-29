@@ -6,7 +6,7 @@
 {{ $height := 0 }}
 {{ $bgColor := "#000" }}
 <section
-  class="fixed z-10 bottom-0 right-0 max-w-screen"
+  class="max-w-screen fixed bottom-0 right-0 z-10"
   x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -24,26 +24,26 @@
   <button
     type="button"
     class="
-      absolute top-2 left-4 h-6 w-6
-      rounded-full
-      bg-black bg-opacity-40 text-white hover:text-yellow
-      flex"
+      absolute top-2 left-4 flex
+      h-6 w-6 rounded-full
+      bg-black bg-opacity-40 text-white
+      hover:text-yellow"
     aria-label="close"
     @click="close"
     x-ref="close"
   >
-    <svg class="m-auto fill-current h-4 w-4">
+    <svg class="m-auto h-4 w-4 fill-current">
       <use xlink:href="#times-svg"></use>
     </svg>
   </button>
-  <div class="my-2 mx-4 p-4 flex">
+  <div class="my-2 mx-4 flex p-4">
     <a
-      class="flex focus:outline-none focus:ring-2 ring-yellow"
+      class="focus:outline-none flex ring-yellow focus:ring-2"
       @click.capture="close()"
       @click.outside="close()"
       href="/donate/"
       ><img
-        class="shadow-beige rounded"
+        class="rounded shadow-beige"
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ $images | jsonify }}"
         :src="choice"

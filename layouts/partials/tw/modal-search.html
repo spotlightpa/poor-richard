@@ -2,7 +2,7 @@
 <section
   x-data="searchModal"
   @modal:search:open.window="isOpen = true"
-  class="fixed z-20 inset-0"
+  class="fixed inset-0 z-20"
   x-cloak
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
@@ -16,29 +16,29 @@
   aria-labelledby="{{ $idSearch }}"
 >
   <div class="absolute inset-0 bg-g-5 opacity-75"></div>
-  <div class="absolute inset-0 backdrop-filter backdrop-blur-sm"></div>
+  <div class="absolute inset-0 backdrop-blur-sm backdrop-filter"></div>
   <div class="absolute inset-1 flex overflow-y-auto">
     <div
       class="
         m-auto
-        w-full max-w-prose h-3/4
-        overflow-hidden rounded-lg shadow-lg
-        flex flex-col
-        text-g-9 font-sans text-center
+        flex h-3/4 w-full
+        max-w-prose flex-col overflow-hidden
+        rounded-lg text-center
+        font-sans text-g-9 shadow-lg
       "
       @click.outside="isOpen = false"
       @keydown.escape="isOpen = false"
       tabindex="-1"
     >
-      <header class="flex-none relative flex bg-black text-white">
+      <header class="relative flex flex-none bg-black text-white">
         <p
-          class="mx-auto py-2 px-4 text-lg leading-none font-semibold tracking-wider uppercase"
+          class="mx-auto py-2 px-4 text-lg font-semibold uppercase leading-none tracking-wider"
         >
           <span id="{{ $idSearch }}"> Search </span>
         </p>
-        <p class="absolute inset-y-0 right-0 p-4 flex items-center">
+        <p class="absolute inset-y-0 right-0 flex items-center p-4">
           <button
-            class="flex rounded-full text-g-5 group hover:text-yellow"
+            class="group flex rounded-full text-g-5 hover:text-yellow"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -48,7 +48,7 @@
             :autofocus="isOpen"
           >
             <svg
-              class="my-auto p-1 fill-current w-6 h-6"
+              class="my-auto h-6 w-6 fill-current p-1"
               style="margin-right: -2px;"
             >
               <use xlink:href="#close-svg"></use>
@@ -56,7 +56,7 @@
           </button>
         </p>
       </header>
-      <div class="flex-1 relative bg-white">
+      <div class="relative flex-1 bg-white">
         <div class="absolute inset-4 overflow-y-scroll">
           {{ partial "tw/search-articles.html" . }}
         </div>

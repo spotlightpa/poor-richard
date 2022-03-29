@@ -24,8 +24,8 @@
 {{ end }}
 
 
-<section class="pt-12 pb-6 px-4 bg-white text-g-9" id="article">
-  <div class="mx-auto max-w-screen-lg grid grid-cols-none">
+<section class="bg-white px-4 pt-12 pb-6 text-g-9" id="article">
+  <div class="mx-auto grid max-w-screen-lg grid-cols-none">
     <article class="contents">
       <header
         data-ga-category="header"
@@ -33,7 +33,7 @@
       >
         {{ if $params.rubric }}
           <a
-            class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
             href="{{ $params.rubric.RelPermalink }}"
             data-ga-category="eyebrow"
           >
@@ -41,7 +41,7 @@
           </a>
         {{ else if $params.kicker }}
           <p
-            class="inline-block px-3 bg-black text-white text-base font-sans font-semibold uppercase"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
           >
             {{- $params.kicker -}}
           </p>
@@ -49,14 +49,14 @@
 
 
         <h1
-          class="mt-1 text-black text-2xl sm:text-4xl font-bold leading-tight tracking-tight lg:leading-tighter"
+          class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
         >
           {{ .Title }}
         </h1>
 
         {{ with $params.byline }}
           <h2
-            class="mt-1 text-g-7 font-sans text-base leading-tight sm:leading-normal tracking-normal"
+            class="mt-1 font-sans text-base leading-tight tracking-normal text-g-7 sm:leading-normal"
           >
             {{ if $bylineLink }}
               <a href="{{ $bylineLink }}">
@@ -102,7 +102,7 @@
             data-ga-action="view:content-start"
           ></div>
           <div
-            class="max-w-full article-content leading-relaxed"
+            class="article-content max-w-full leading-relaxed"
             data-sf-campaign="701f4000000TVuXAAW"
           >
             {{ .Content }}
@@ -133,13 +133,13 @@
                   {{ block "main-author-loop" $author }}
                     {{ if .thumb }}
                       <span
-                        class="inline-flex w-16 h-16"
+                        class="inline-flex h-16 w-16"
                         data-ga-category="thumb"
                       >
                         <img
                           src="{{ .thumb }}"
                           alt="Photo of {{ .name }}"
-                          class="m-auto ring-2 ring-g-6 rounded-full filter grayscale"
+                          class="m-auto rounded-full ring-2 ring-g-6 grayscale filter"
                           loading="lazy"
                           decoding="async"
                           width="256"
@@ -152,7 +152,7 @@
                     <div class="font-sans font-semibold leading-tight">
                       {{ $showLink := and .active .link | not | not }}
                       {{ $color := cond $showLink "text-blue" "text-g-7" }}
-                      <h3 class="text-2xl {{ $color }}" data-ga-category="name">
+                      <h3 class="{{ $color }} text-2xl" data-ga-category="name">
                         {{ .name }}
                       </h3>
                       {{ if and .active .title }}
@@ -172,14 +172,14 @@
     </article>
 
     <aside
-      class="mt-6 {{ $rightRailClass }} grid-cols-2 place-items-center items-stretch gap-4"
+      class="{{ $rightRailClass }} mt-6 grid-cols-2 place-items-center items-stretch gap-4"
       data-ga-category="sidebar"
     >
       {{ partial "tw/rail-newsletter.html" . }}
       <div
         data-ga-category="top"
         data-sf-campaign="7015G0000013oHLQAY"
-        class="mt-6 w-full row-start-1"
+        class="row-start-1 mt-6 w-full"
       >
         {{ partial "tw/promo-single.html" (dict
           "class" "mb-5 w-0 min-w-full no-js:hidden"
@@ -223,7 +223,7 @@
     </aside>
 
     {{ if .Param "suppress-related" | not }}
-      <nav class="mt-12 {{ $mainWellClass }}">
+      <nav class="{{ $mainWellClass }} mt-12">
         {{ $news := site.GetPage "/news/_index.md" }}
         {{ $related := $news.RegularPages.Related . | first 10 }}
         {{ partial "tw/related-articles.html" $related }}

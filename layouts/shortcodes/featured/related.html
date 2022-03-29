@@ -17,27 +17,25 @@
   <aside
     class="
       {{ $sideClass }}
-      sm:mt-21
-      mb-4 sm:mb-0
-      w-full sm:w-auto
       sm:shape-outside
-      font-sans
+      mb-4 w-full font-sans
+      sm:mt-21 sm:mb-0 sm:w-auto
     "
     data-ga-category="inline:related"
   >
     <nav class="py-4">
-      <h2 class="text-base sm:text-lg font-bold uppercase">
-        <span class="border-b-2 border-black tracking-wide whitespace-nowrap">
+      <h2 class="text-base font-bold uppercase sm:text-lg">
+        <span class="whitespace-nowrap border-b-2 border-black tracking-wide">
           More From Spotlight PA
         </span>
       </h2>
       <ul
-        class="mt-4 sm:w-0 min-w-full space-y-4 text-sm sm:text-base leading-tight"
+        class="mt-4 min-w-full space-y-4 text-sm leading-tight sm:w-0 sm:text-base"
       >
         {{ range $related }}
           <li class="font-bold">
             <a
-              class="text-darkblue hover:text-yellow transition-colors duration-500"
+              class="text-darkblue transition-colors duration-500 hover:text-yellow"
               href="{{ .RelPermalink }}"
               >{{ .LinkTitle }}</a
             >

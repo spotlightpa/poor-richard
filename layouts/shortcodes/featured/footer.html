@@ -1,15 +1,15 @@
 {{ partial "featured/content-area-end" . }}
-<footer class="px-8 bg-white" data-ga-category="inline-footer">
+<footer class="bg-white px-8" data-ga-category="inline-footer">
   <div
-    class="flex flex-col md:flex-row max-w-content mx-auto border-t border-black py-12 md:space-x-12"
+    class="mx-auto flex max-w-content flex-col border-t border-black py-12 md:flex-row md:space-x-12"
   >
-    <div class="flex-1 space-y-12 mb-8">
+    <div class="mb-8 flex-1 space-y-12">
       {{ .Inner }}
     </div>
-    <div class="flex-1 text-sm space-y-4 font-sans">
+    <div class="flex-1 space-y-4 font-sans text-sm">
       <a class="hover:text-darkblue" href="/">
         <svg
-          class="fill-current h-40"
+          class="h-40 fill-current"
           role="img"
           aria-label="Spotlight PA logo"
           viewBox="0 0 230 230"
@@ -21,7 +21,7 @@
       <p>
         Spotlight PA relies on funding from
         <a
-          class="text-darkblue underline hover:text-yellow transition-colors duration-500"
+          class="text-darkblue underline transition-colors duration-500 hover:text-yellow"
           href="/support/"
           >foundations and readers like you</a
         >
@@ -30,7 +30,7 @@
       <p>
         If you value this reporting, please give a gift today at
         <a
-          class="text-darkblue underline hover:text-yellow transition-colors duration-500"
+          class="text-darkblue underline transition-colors duration-500 hover:text-yellow"
           href="/donate/"
           >spotlightpa.org/donate</a
         >.

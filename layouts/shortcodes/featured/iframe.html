@@ -8,14 +8,14 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 
 
-<aside class="mt-12 mx-auto">
+<aside class="mx-auto mt-12">
   <figure>
     <div
-      class="relative w-full h-0"
+      class="relative h-0 w-full"
       style="padding-bottom: {{ $pb | printf "%0.3f" }}%;"
     >
       <iframe
-        class="absolute inset-0 w-full h-full"
+        class="absolute inset-0 h-full w-full"
         src="{{ $src }}"
         frameborder="0"
         scrolling="no"

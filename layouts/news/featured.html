@@ -29,16 +29,16 @@
     class="w-screen overflow-x-hidden bg-beige font-serif leading-normal"
   >
     <nav
-      class="bg-black flex sm:absolute sm:bg-transparent z-10"
+      class="z-10 flex bg-black sm:absolute sm:bg-transparent"
       data-ga-category="header"
     >
-      <a class="block sm:w-full mx-auto px-12 py-5" href="/">
+      <a class="mx-auto block px-12 py-5 sm:w-full" href="/">
         <svg
           class="
-          filter drop-shadow-outline
-          h-8 lg:h-10
-          fill-current text-white hover:text-yellow
-        "
+            h-8 fill-current text-white
+            drop-shadow-outline filter
+            hover:text-yellow lg:h-10
+          "
           role="img"
           aria-label="Spotlight PA banner"
           viewBox="0 0 1024 190"
@@ -53,24 +53,23 @@
     </article>
 
     <footer
-      class="p-12 font-sans bg-black text-white uppercase"
+      class="bg-black p-12 font-sans uppercase text-white"
       data-ga-category="footer"
     >
-      <nav class="max-w-screen-lg flex flex-col gap-6 lg:flex-row">
+      <nav class="flex max-w-screen-lg flex-col gap-6 lg:flex-row">
         <div class="flex-grow md:order-last">
           <p>
             <a
               href="/"
               class="
-              py-3 px-4 rounded-lg
-              bg-orange text-white
-              text-base font-sans font-bold tracking-widest leading-none
-              hover:shadow-beige transition-shadow duration-500
-            "
+                rounded-lg bg-orange py-3 px-4
+                font-sans text-base font-bold leading-none tracking-widest text-white
+                transition-shadow duration-500 hover:shadow-beige
+              "
               data-ga-category="logo"
             >
               <svg
-                class="inline-block fill-current w-8 h-8"
+                class="inline-block h-8 w-8 fill-current"
                 role="img"
                 aria-label="Spotlight PA logo"
                 viewBox="0 0 1 1"
@@ -96,7 +95,7 @@
               {{ range .menu }}
                 <li>
                   <a
-                    class="text-blue hover:text-yellow transition-colors duration-500"
+                    class="text-blue transition-colors duration-500 hover:text-yellow"
                     href="{{ .URL }}"
                     >{{ .Name }}</a
                   >

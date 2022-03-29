@@ -2,7 +2,7 @@
 
 
 <form
-  class="mx-auto w-full rounded shadow bg-g-3 p-4 font-sans"
+  class="mx-auto w-full rounded bg-g-3 p-4 font-sans shadow"
   data-ga-category="rail-newsletter"
   data-ga-form="newsletters:papost"
   action="{{ site.Param `newsletters-action` }}"
@@ -11,35 +11,35 @@
 >
   {{ partial "newsletter/papost-hidden.html" . }}
   <h2
-    class="text-xl text-orange font-semibold uppercase tracking-wide text-center"
+    class="text-center text-xl font-semibold uppercase tracking-wide text-orange"
   >
     Never Miss a Story
   </h2>
-  <p class="mt-6 leading-tight text-center">
+  <p class="mt-6 text-center leading-tight">
     <b class="uppercase">Sign up for PA Post</b> and get a free daily email with
     top news from across PA, plus some fun, too.
   </p>
-  <p class="mt-4 relative">
+  <p class="relative mt-4">
     <label class="sr-only" for="{{ $idEmail }}">Email address</label>
     <input
       id="{{ $idEmail }}"
-      class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none ring-2 ring-transparent focus:ring-yellow"
+      class="focus:outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-2 ring-transparent focus:ring-yellow"
       type="email"
       name="EMAIL"
       placeholder="Email address"
       required
     />
     <span
-      class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
+      class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
       aria-hidden="true"
     >
-      <svg class="fill-current h-4 w-4">
+      <svg class="h-4 w-4 fill-current">
         <use xlink:href="#email-svg"></use>
       </svg>
     </span>
   </p>
   <button
-    class="mt-2 px-8 py-2 w-full bg-orange text-white uppercase font-semibold rounded tracking-wider hover:shadow"
+    class="mt-2 w-full rounded bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow"
     type="submit"
   >
     Subscribe

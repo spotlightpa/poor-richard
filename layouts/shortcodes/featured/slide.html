@@ -17,7 +17,7 @@
 
 
 <figure
-  class="snap-center w-5/6 flex-none pb-2 px-2 sm:px-8 group focus:outline-none"
+  class="snap-center focus:outline-none group w-5/6 flex-none px-2 pb-2 sm:px-8"
   :class="{'cursor-pointer': currentSlide !== +$el.dataset.slideId }"
   x-intersect:enter.full="currentSlide = +$el.dataset.slideId"
   data-slide-id="{{ .Ordinal }}"
@@ -27,13 +27,13 @@
   data-ga-button
   data-ga-action="slider:focus"
 >
-  <div class="relative w-full h-0 pb-16x9">
+  <div class="relative h-0 w-full pb-16x9">
     <picture
       class="
-        absolute block inset-0
-        rounded overflow-hidden
-        group-focus:shadow-md transition-shadow duration-300
-        bg-g-4
+        absolute inset-0 block
+        overflow-hidden rounded
+        bg-g-4 transition-shadow duration-300
+        group-focus:shadow-md
       "
     >
       {{ $isJPEG := in (string $srcset) ".jpeg" }}
@@ -44,7 +44,7 @@
         />
       {{ end }}
       <img
-        class="w-full h-auto"
+        class="h-auto w-full"
         alt="{{ $description }}"
         title="{{ $description }}"
         src="{{ $imgSmallSrc }}"

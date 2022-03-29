@@ -7,7 +7,7 @@
     @touchstart.passive.once="load()"
   >
     <h2
-      class="font-sans text-xl leading-none tracking-wider font-extrabold uppercase"
+      class="font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
       More Stories from Spotlight&nbsp;PA
     </h2>
@@ -18,7 +18,7 @@
       {{ end }}
     </div>
     {{ partial "tw/story-list-js.html" dict }}
-    <div class="py-8 flex">
+    <div class="flex py-8">
       <div class="mx-auto">
         <a
           @click.prevent="click()"
@@ -27,12 +27,12 @@
           :data-ga-action='"readmore:load"'
           href="/news/"
           class="
-            inline-block
-            py-3 px-4
-            rounded-lg shadow hover:shadow-md
-            bg-blue text-white
-            text-base font-sans font-bold tracking-widest leading-none uppercase
-            focus:outline-none ring-2 ring-transparent focus:ring-robin active:ring-blue-darker
+            focus:outline-none
+            inline-block rounded-lg
+            bg-blue py-3 px-4
+            font-sans text-base
+            font-bold uppercase leading-none tracking-widest text-white shadow
+            ring-2 ring-transparent hover:shadow-md focus:ring-robin active:ring-blue-darker
           "
           :class="{ 'animate-pulse': hasClicked && isLoading }"
           :disabled="!canReadMore"

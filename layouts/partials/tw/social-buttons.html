@@ -1,7 +1,7 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
 
-{{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow focus:outline-none ring-2 ring-transparent focus:ring-g-5 active:ring-g-8` }}
+{{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow outline-none ring-2 ring-transparent focus:ring-g-5 active:ring-g-8` }}
 <nav class="flex space-x-2 text-white" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
@@ -9,7 +9,7 @@
     title="Share this page by email"
     data-ga-action="share:email"
   >
-    <svg class="w-4 h-4 fill-current">
+    <svg class="h-4 w-4 fill-current">
       <use xlink:href="#email-svg"></use>
     </svg>
   </a>
@@ -19,7 +19,7 @@
     data-ga-action="share:facebook"
     title="Share this page on Facebook"
   >
-    <svg class="w-4 h-4 fill-current">
+    <svg class="h-4 w-4 fill-current">
       <use xlink:href="#fb-svg"></use>
     </svg>
   </a>
@@ -29,7 +29,7 @@
     data-ga-action="share:twitter"
     title="Tweet about this page"
   >
-    <svg class="w-4 h-4 fill-current">
+    <svg class="h-4 w-4 fill-current">
       <use xlink:href="#twitter-svg"></use>
     </svg>
   </a>
@@ -43,7 +43,7 @@
     x-show="!! navigator.share"
     x-cloak
   >
-    <svg class="w-4 h-4 fill-current">
+    <svg class="h-4 w-4 fill-current">
       <use xlink:href="#share-svg"></use>
     </svg>
   </button>

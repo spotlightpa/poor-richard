@@ -1,15 +1,15 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 
-<div class="mt-6 rounded shadow bg-g-4 p-6" data-ga-category="editors-pick">
+<div class="mt-6 rounded bg-g-4 p-6 shadow" data-ga-category="editors-pick">
   <h2
-    class="text-orange text-center text-base font-sans font-bold tracking-wider leading-none uppercase"
+    class="text-center font-sans text-base font-bold uppercase leading-none tracking-wider text-orange"
   >
     Editor’s Pick
   </h2>
 
   <article class="mt-6">
-    <div class="mx-auto w-full sm:w-64 flex-shrink-0">
+    <div class="mx-auto w-full flex-shrink-0 sm:w-64">
       {{ $name := .Page.Param "image" }}
       {{ $credit := .Page.Param "image-credit" }}
       {{ $description := .Page.Param "image-description" }}
@@ -26,8 +26,8 @@
       }}
       {{ partial "tw/image-block.html" $imgOpts }}
     </div>
-    <div class="mt-6 mx-auto group w-full sm:w-64 flex-grow space-y-1">
-      <h3 class="text-black text-lg font-semibold leading-tight tracking-tight">
+    <div class="group mx-auto mt-6 w-full flex-grow space-y-1 sm:w-64">
+      <h3 class="text-lg font-semibold leading-tight tracking-tight text-black">
         <a
           class="group-hover:underline"
           href="{{ .RelPermalink }}"
@@ -38,7 +38,7 @@
       </h3>
       {{ if $params.byline }}
         <h4
-          class="text-g-9 font-sans text-base font-normal leading-tight tracking-normal"
+          class="font-sans text-base font-normal leading-tight tracking-normal text-g-9"
         >
           <a
             href="{{ .RelPermalink }}"

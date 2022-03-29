@@ -27,9 +27,9 @@
     <a class="block px-4 pt-5" href="/">
       <svg
         class="
-          filter drop-shadow-outline
-          h-8 lg:h-10
-          fill-current text-white hover:text-yellow
+          h-8 fill-current
+          text-white drop-shadow-outline
+          filter hover:text-yellow lg:h-10
         "
         role="img"
         aria-label="Spotlight PA banner"
@@ -39,18 +39,18 @@
       </svg>
     </a>
   </nav>
-  <div class="px-4 py-8 sm:p-12 leading-tight">
+  <div class="px-4 py-8 leading-tight sm:p-12">
     <div class="flex flex-col justify-center">
       <div class="mx-auto md:max-w-min md:whitespace-nowrap">
         <h1
-          class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-shadow"
+          class="text-shadow text-3xl font-extrabold md:text-4xl lg:text-5xl xl:text-6xl"
         >
           The future of journalism
           <br class="hidden md:inline" />
           in State College is here.
         </h1>
         <h2
-          class="mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-shadow"
+          class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
         >
           Join our historic effort
           <br class="hidden md:inline" />
@@ -60,30 +60,29 @@
     </div>
   </div>
   <div
-    class="mx-auto w-full max-w-screen-lg pb-4 px-4 flex flex-wrap items-stretch justify-around gap-8"
+    class="mx-auto flex w-full max-w-screen-lg flex-wrap items-stretch justify-around gap-8 px-4 pb-4"
   >
     <a
       class="
-        my-8 p-8 w-full sm:w-96 block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
+        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
       "
       href="/donate/"
     >
       <h2
-        class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase"
+        class="text-center text-2xl font-semibold uppercase leading-tight sm:text-3xl"
       >
         Become a founding donor
       </h2>
-      <p class="mt-2 text-lg sm:text-2xl leading-snug">
+      <p class="mt-2 text-lg leading-snug sm:text-2xl">
         Support our State College bureau and all gifts up to $200,000 will be
         <b class="uppercase">doubled</b>.
       </p>
       <p class="mt-8 text-center">
         <span
           class="
-            py-3 px-4 rounded-lg
-            bg-orange text-white
-            font-bold tracking-widest leading-none
-            uppercase
+            rounded-lg bg-orange py-3 px-4
+            font-bold uppercase leading-none tracking-widest
+            text-white
           "
           >Donate Now</span
         >
@@ -93,7 +92,7 @@
     <label
       for="{{ $idEmail }}"
       class="
-        my-8 p-8 w-full sm:w-96 block rounded ring-1 ring-g-7 backdrop-filter backdrop-fallback backdrop-blur-sm backdrop-brightness-50 shadow
+        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
       "
     >
       <form
@@ -106,29 +105,29 @@
         <input type="hidden" name="state_college" value="1" />
 
         <h2
-          class="text-2xl sm:text-3xl font-semibold leading-tight text-center uppercase"
+          class="text-center text-2xl font-semibold uppercase leading-tight sm:text-3xl"
         >
           Sign Up For Updates
         </h2>
-        <p class="mt-2 text-lg sm:text-2xl leading-snug">
+        <p class="mt-2 text-lg leading-snug sm:text-2xl">
           Don’t miss a beat as we prepared to launch this historic initiative in
           July 2022.
         </p>
-        <p class="mt-8 flex flex-col sm:flex-row items-stretch gap-2">
-          <span class="block relative">
+        <p class="mt-8 flex flex-col items-stretch gap-2 sm:flex-row">
+          <span class="relative block">
             <input
               id="{{ $idEmail }}"
-              class="pl-10 py-2 w-full h-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-orange ring-opacity-50"
+              class="outline-none block h-full w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-orange ring-opacity-50 focus:ring-2"
               type="email"
               name="EMAIL"
               placeholder="Email address"
               required
             />
             <span
-              class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
+              class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
               aria-hidden="true"
             >
-              <svg class="fill-current h-4 w-4">
+              <svg class="h-4 w-4 fill-current">
                 <use xlink:href="#email-svg"></use>
               </svg>
             </span>
@@ -136,10 +135,10 @@
           <span class="block">
             <button
               class="
-                px-4 py-2 w-full h-full rounded
-                bg-orange text-white
-                whitespace-nowrap font-bold uppercase tracking-widest
-                focus:outline-none focus:ring-2 ring-orange ring-opacity-50
+                outline-none
+                h-full w-full whitespace-nowrap rounded bg-orange px-4 py-2
+                font-bold uppercase tracking-widest text-white
+                ring-orange ring-opacity-50 focus:ring-2
               "
               type="submit"
             >
@@ -153,13 +152,13 @@
 </div>
 <figcaption
   aria-hidden="true"
-  class="p-1 text-right bg-white text-g-6 text-sm md:text-base font-sans uppercase leading-none"
+  class="bg-white p-1 text-right font-sans text-sm uppercase leading-none text-g-6 md:text-base"
 >
   {{ .Param "image-credit" }}
 </figcaption>
 
-<section class="pt-8 pb-12 px-4 bg-white text-g-9">
-  <article class="mx-auto max-w-prose featured-content leading-relaxed">
+<section class="bg-white px-4 pt-8 pb-12 text-g-9">
+  <article class="featured-content mx-auto max-w-prose leading-relaxed">
     {{ .Content }}
   </article>
 </section>
