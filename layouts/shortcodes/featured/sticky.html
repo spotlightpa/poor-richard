@@ -4,7 +4,7 @@
 {{ $height := .Get "height" }}
 {{ $bgColor := .Get "bgcolor" | default "#000" }}
 <section
-  class="fixed z-10 bottom-0 right-0 left-0 lg:left-auto lg:max-w-xs"
+  class="fixed bottom-0 right-0 left-0 z-10 lg:left-auto lg:max-w-xs"
   x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -21,17 +21,17 @@
 >
   <button
     type="button"
-    class="absolute top-0 right-0 h-10 w-10 -mt-2 mr-1 border-beige border-2 rounded-full bg-yellow hover:bg-black text-white hover:text-yellow flex justify-center focus:outline-none focus:ring-2 ring-yellow"
+    class="focus:outline-none absolute top-0 right-0 -mt-2 mr-1 flex h-10 w-10 justify-center rounded-full border-2 border-beige bg-yellow text-white ring-yellow hover:bg-black hover:text-yellow focus:ring-2"
     aria-label="close"
     @click="close"
     x-ref="close"
   >
-    <svg class="my-auto fill-current h-6 w-6">
+    <svg class="my-auto h-6 w-6 fill-current">
       <use xlink:href="#close-svg"></use>
     </svg>
   </button>
   <a
-    class="block my-2 mx-4 rounded p-4 text-center text-white font-sans leading-tight shadow-beige focus:outline-none focus:ring-2 ring-yellow"
+    class="focus:outline-none my-2 mx-4 block rounded p-4 text-center font-sans leading-tight text-white shadow-beige ring-yellow focus:ring-2"
     style="background-color: {{ $bgColor }};"
     @click.capture="close()"
     @click.outside="close()"
@@ -39,7 +39,7 @@
   >
     {{ if $url }}
       <img
-        class="block mx-auto max-w-full h-auto"
+        class="mx-auto block h-auto max-w-full"
         src="{{ $url }}"
         alt="{{ $flavor }}"
         {{ with $width }}
@@ -48,14 +48,14 @@
         {{ with $height }}height="{{ . }}"{{ end }}
       />
     {{ else }}
-      <h2 class="text-yellow uppercase font-bold text-sm tracking-widest">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-yellow">
         Donate
       </h2>
-      <p class="mt-4 mx-auto max-w-2xl">
+      <p class="mx-auto mt-4 max-w-2xl">
         {{ $flavor }}
       </p>
       <div
-        class="mt-4 px-8 py-2 bg-yellow border-2 border-yellow-darker text-black rounded uppercase font-bold tracking-widest"
+        class="mt-4 rounded border-2 border-yellow-darker bg-yellow px-8 py-2 font-bold uppercase tracking-widest text-black"
       >
         Join Now
       </div>

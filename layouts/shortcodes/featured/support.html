@@ -4,14 +4,14 @@
 }}
 
 
-<aside class="font-sans md:text-lg mt-6" data-ga-category="inline:support">
+<aside class="mt-6 font-sans md:text-lg" data-ga-category="inline:support">
   <a href="/donate/" class="flex">
     <div
-      class="mx-auto py-8 sm:py-12 px-4 sm:px-8 rounded shadow bg-goldenrod"
+      class="mx-auto rounded bg-goldenrod py-8 px-4 shadow sm:py-12 sm:px-8"
       x-data="{ bgSwap: Math.random() > 0.5 }"
       :class="{ 'bg-goldenrod': !bgSwap, 'bg-cyan': bgSwap }"
     >
-      <h3 class="text-lg sm:text-xl font-bold">
+      <h3 class="text-lg font-bold sm:text-xl">
         {{ .Page.Param "support-hed" | default "…we have a small favor to ask" }}
       </h3>
       <div class="mt-6 space-y-4 leading-snug">
@@ -19,7 +19,7 @@
       </div>
       <div class="mt-8 text-center">
         <span
-          class="py-2 px-2 sm:px-6 bg-orange border-2 border-g-9 rounded-lg hover:shadow uppercase text-sm md:text-lg text-black font-bold tracking-widest"
+          class="rounded-lg border-2 border-g-9 bg-orange py-2 px-2 text-sm font-bold uppercase tracking-widest text-black hover:shadow sm:px-6 md:text-lg"
         >
           {{ .Page.Param "support-cta" | default "Support Spotlight PA »" }}
         </span>

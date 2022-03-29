@@ -1,47 +1,48 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
+{{ $btnClass := `flex h-12 w-12 self-center rounded transition-colors duration-500` }}
 
 
-<nav class="flex flex-col text-g-5 space-y-1" data-ga-category="social-buttons">
+<nav class="flex flex-col space-y-1 text-g-5" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
-    class="self-center h-12 w-12 flex text-g-5 hover:bg-green hover:text-white rounded transition-colors duration-500 active:shadow-outline"
+    class="{{ $btnClass }} hover:bg-green hover:text-white"
     title="Share this page by email"
     data-ga-action="share:email"
   >
     <span class="m-auto">
-      <svg class="fill-current h-6 w-6">
+      <svg class="h-6 w-6 fill-current">
         <use xlink:href="#email-svg"></use>
       </svg>
     </span>
   </a>
   <button
-    class="self-center h-12 w-12 flex hover:bg-fb-blue hover:text-white rounded transition-colors duration-500 active:shadow-outline"
+    class="{{ $btnClass }} hover:bg-fb-blue hover:text-white"
     data-share="facebook"
     data-ga-action="share:facebook"
     title="Share this page on Facebook"
   >
     <span class="m-auto">
-      <svg class="fill-current h-6 w-6">
+      <svg class="h-6 w-6 fill-current">
         <use xlink:href="#fb-svg"></use>
       </svg>
     </span>
   </button>
   <button
-    class="self-center h-12 w-12 flex hover:bg-tw-blue hover:text-white rounded transition-colors duration-500 active:shadow-outline"
+    class="{{ $btnClass }} hover:bg-tw-blue hover:text-white"
     data-share="tweet"
     data-share-text="{{ .LinkTitle }} from @spotlightpa"
     data-ga-action="share:twitter"
     title="Tweet about this page"
   >
     <span class="m-auto">
-      <svg class="fill-current h-6 w-6">
+      <svg class="h-6 w-6 fill-current">
         <use xlink:href="#twitter-svg"></use>
       </svg>
     </span>
   </button>
   <button
-    class="self-center h-12 w-12 flex hover:bg-orange hover:text-white rounded transition-colors duration-500 active:shadow-outline"
+    class="{{ $btnClass }} hover:bg-orange hover:text-white"
     data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
@@ -51,7 +52,7 @@
     x-cloak
   >
     <span class="m-auto">
-      <svg class="fill-current h-6 w-6">
+      <svg class="h-6 w-6 fill-current">
         <use xlink:href="#share-svg"></use>
       </svg>
     </span>

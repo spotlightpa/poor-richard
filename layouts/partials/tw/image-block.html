@@ -17,7 +17,7 @@
       />
     {{ end }}
     <img
-      class="block w-full h-full object-cover"
+      class="block h-full w-full object-cover"
       alt="{{ .description }}"
       title="{{ .description }}"
       src="{{ .imgSmallSrc }}"
@@ -37,13 +37,11 @@
   {{ if not .showCaption | and .caption }}
     <figcaption
       class="
-          absolute p-4 bottom-0 inset-x-0 {{ if .rounded }}
-        rounded-b overflow-hidden
-      {{ end }}
-          backdrop-filter backdrop-blur-sm backdrop-brightness-50
-          backdrop-fallback
-          font-sans text-base text-g-1
-        "
+        {{ if .rounded }}rounded-b overflow-hidden{{ end }}
+        backdrop-fallback absolute inset-x-0 bottom-0 p-4
+        font-sans text-base text-g-1
+        backdrop-blur-sm backdrop-brightness-50 backdrop-filter
+      "
       x-cloak
       x-show="showCaption"
       @click="showCaption = false"
@@ -100,8 +98,8 @@
   {{- if .link -}}
     <a
       class="
-        relative block w-full shadow overflow-hidden bg-g-4
         {{ $rounded }}
+        relative block w-full overflow-hidden bg-g-4 shadow
       "
       href="{{ .link }}"
     >
@@ -110,9 +108,9 @@
   {{- else -}}
     <div
       class="
-        relative block w-full shadow overflow-hidden bg-g-4
         {{ $rounded }}
         {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
+        relative block w-full overflow-hidden bg-g-4 shadow
       "
     >
       {{- template "tw-image-block-picture" $pictOpts -}}
@@ -121,13 +119,13 @@
 
   {{ with $credit }}
     <figcaption
-      class="mt-1 px-1 w-full text-right font-sans text-g-6 text-sm uppercase leading-tight"
+      class="mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-g-6"
     >
       {{ $credit }}
     </figcaption>
   {{ end }}
   {{ if $showCaption }}
-    <figcaption class="mt-2 mx-auto text-g-8 text-sm font-sans leading-tight">
+    <figcaption class="mx-auto mt-2 font-sans text-sm leading-tight text-g-8">
       {{ .caption }}
     </figcaption>
   {{ end }}

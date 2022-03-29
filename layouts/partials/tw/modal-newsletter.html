@@ -1,7 +1,7 @@
 {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
 {{ if .Param "modal-exclude" | not }}
   <div
-    class="fixed z-20 inset-0"
+    class="fixed inset-0 z-20"
     data-ga-category="modal:newsletter:multi"
     x-data="modal"
     x-cloak
@@ -16,7 +16,7 @@
   >
     <div class="absolute inset-0 bg-g-5 opacity-75"></div>
     <div
-      class="absolute inset-0 backdrop-filter backdrop-blur-sm"
+      class="absolute inset-0 backdrop-blur-sm backdrop-filter"
       x-transition.delay.150ms
     ></div>
     <div
@@ -25,7 +25,7 @@
       x-transition.delay.50ms
     >
       <form
-        class="m-auto max-w-prose overflow-hidden rounded-lg shadow-lg text-g-9 font-sans text-center"
+        class="m-auto max-w-prose overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
         data-ga-form="newsletters:multi"
         action="{{ .Param `newsletters-action` }}"
         method="post"
@@ -37,7 +37,7 @@
         <header
           class="relative flex flex-none justify-between bg-black text-white"
         >
-          <p class="mx-auto p-4 h-14 inline-flex items-center">
+          <p class="mx-auto inline-flex h-14 items-center p-4">
             <svg
               viewBox="0 0 1024 190"
               aria-hidden="true"
@@ -46,9 +46,9 @@
               <use xlink:href="#banner-svg"></use>
             </svg>
           </p>
-          <p class="absolute inset-y-0 right-0 p-4 flex items-center">
+          <p class="absolute inset-y-0 right-0 flex items-center p-4">
             <button
-              class="flex rounded-full text-g-5 group hover:text-yellow"
+              class="group flex rounded-full text-g-5 hover:text-yellow"
               type="button"
               aria-label="close"
               x-ref="closer"
@@ -58,7 +58,7 @@
               :autofocus="isOpen"
             >
               <svg
-                class="my-auto p-1 fill-current w-6 h-6"
+                class="my-auto h-6 w-6 fill-current p-1"
                 style="margin-right: -2px;"
               >
                 <use xlink:href="#close-svg"></use>
@@ -66,10 +66,10 @@
             </button>
           </p>
         </header>
-        <div class="p-8 bg-white">
+        <div class="bg-white p-8">
           {{ partial "newsletter/hidden-input.html" . }}
           <h6
-            class="text-lg bg-clip-text text-transparent bg-gradient-to-r from-black via-blue to-robin uppercase font-bold tracking-widest"
+            class="bg-gradient-to-r from-black via-blue to-robin bg-clip-text text-lg font-bold uppercase tracking-widest text-transparent"
           >
             Sign Up For Our Free Newsletters
           </h6>
@@ -78,22 +78,22 @@
             Get every Spotlight PA story and <br class="hidden sm:inline" />
             the best investigative journalism from across Pa.
           </p>
-          <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
+          <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
             <p class="relative flex-grow">
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-robin"
+                class="focus:outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-robin focus:ring-2"
                 type="email"
                 name="EMAIL"
                 placeholder="Email address"
                 required
               />
               <span
-                class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
+                class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
                 aria-hidden="true"
               >
-                <svg class="fill-current h-4 w-4">
+                <svg class="h-4 w-4 fill-current">
                   <use xlink:href="#email-svg"></use>
                 </svg>
               </span>
@@ -143,7 +143,7 @@
             </label>
           </p>
           <button
-            class="mt-6 px-8 py-2 bg-orange text-white uppercase font-semibold rounded tracking-wider hover:shadow"
+            class="mt-6 rounded bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow"
             type="submit"
           >
             Sign me up

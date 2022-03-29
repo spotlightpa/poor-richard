@@ -1,5 +1,5 @@
 <div
-  class="border border-g-5 rounded shadow p-6"
+  class="rounded border border-g-5 p-6 shadow"
   x-data="mostPopular"
   x-show="hasLoaded"
   x-cloak
@@ -13,24 +13,24 @@
     x-ref="mostPopSrc"
   />
   <h2
-    class="text-orange text-center text-base font-sans font-bold tracking-wider leading-none uppercase"
+    class="text-center font-sans text-base font-bold uppercase leading-none tracking-wider text-orange"
   >
     Most Popular Stories
   </h2>
   <nav class="has-text-dark">
     <template x-for="(story, i) of stories">
       <a
-        class="mt-6 flex group"
+        class="group mt-6 flex"
         :href="story.url_path"
         @click.capture="$report($event)"
       >
         <span
-          class="flex-shrink-0 w-6 mr-4 text-g-6 font-sans font-bold text-3xl leading-none"
+          class="mr-4 w-6 flex-shrink-0 font-sans text-3xl font-bold leading-none text-g-6"
           x-text="i + 1"
           data-ga-category="ranking"
         ></span>
         <span
-          class="text-black leading-tighter tracking-tight group-hover:underline"
+          class="tracking-tight text-black group-hover:underline"
           data-ga-category="hed"
           x-text="story.title"
         ></span>

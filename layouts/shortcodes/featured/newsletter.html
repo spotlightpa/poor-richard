@@ -1,9 +1,9 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
   class="
-    my-12
-    lg:-mx-24 p-8 md:px-12
-    rounded shadow bg-black text-white text-center font-sans
+    my-12 rounded bg-black p-8
+    text-center font-sans text-white shadow
+    md:px-12 lg:-mx-24
   "
   x-data="{ active: false }"
   @focusin="active = true"
@@ -15,7 +15,7 @@
 >
   {{ partial "newsletter/hidden-input.html" . }}
   <h6
-    class="text-base bg-clip-text text-transparent bg-gradient-to-r from-orange via-yellow to-white uppercase font-bold tracking-widest"
+    class="bg-gradient-to-r from-orange via-yellow to-white bg-clip-text text-base font-bold uppercase tracking-widest text-transparent"
   >
     Sign Up For Our Free Newsletters
   </h6>
@@ -24,29 +24,29 @@
     Get every Spotlight PA story and the best investigative journalism from
     across Pa.
   </p>
-  <div class="mt-8 mx-auto sm:flex sm:max-w-2xl items-stretch">
+  <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
     <p class="relative flex-grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="pl-10 py-2 w-full rounded border-2 border-g-5 text-g-8 placeholder-g-5 placeholder-opacity-100 tracking-wider appearance-none block bg-white focus:outline-none focus:ring-2 ring-yellow-darker"
+        class="focus:outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-darker focus:ring-2"
         type="email"
         name="EMAIL"
         placeholder="Email address"
         required
       />
       <span
-        class="absolute inline-flex items-center justify-center inset-y-0 left-0 text-g-5 pointer-events-none z-10 w-10 leading-none"
+        class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
         aria-hidden="true"
       >
-        <svg class="fill-current h-4 w-4">
+        <svg class="h-4 w-4 fill-current">
           <use xlink:href="#email-svg"></use>
         </svg>
       </span>
     </p>
     <p class="mt-4 sm:mt-0 sm:ml-1">
       <button
-        class="w-full bg-yellow px-8 py-2 uppercase text-black font-bold rounded border-2 border-yellow-darker tracking-widest focus:outline-none focus:ring-2 ring-yellow-darker"
+        class="focus:outline-none w-full rounded border-2 border-yellow-darker bg-yellow px-8 py-2 font-bold uppercase tracking-widest text-black ring-yellow-darker focus:ring-2"
         type="submit"
       >
         Sign Up

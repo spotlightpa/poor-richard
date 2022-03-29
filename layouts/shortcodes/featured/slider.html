@@ -2,43 +2,43 @@
 <aside
   data-ga-category="inline:slider"
   x-data="slider"
-  class="mt-8 mx-auto lg:-mx-32 xl:-mx-48 relative"
+  class="relative mx-auto mt-8 lg:-mx-32 xl:-mx-48"
   @keydown.space.prevent="handleSpace($event)"
 >
-  <a class="sr-only focus:not-sr-only font-sans text-sm" href="#{{ $id }}"
+  <a class="sr-only font-sans text-sm focus:not-sr-only" href="#{{ $id }}"
     >Skip slideshow…</a
   >
   <div
     class="
-      flex flex-row flex-nowrap
-      custom-scrollbar overflow-x-scroll snap-x select-none
+      custom-scrollbar snap-x flex
+      select-none flex-row flex-nowrap overflow-x-scroll
     "
   >
     {{ .Inner }}
   </div>
   <div
     class="
-      hidden sm:flex absolute inset-y-0 left-0 pl-1 text-g-4 pointer-events-none
+      pointer-events-none absolute inset-y-0 left-0 hidden pl-1 text-g-4
       opacity-0
-      transition-opacity duration-300 ease-in-out
+      transition-opacity duration-300 ease-in-out sm:flex
     "
     :class="{'opacity-0': isFirst }"
   >
     <svg
-      class="self-center filter drop-shadow w-12 h-12 lg:w-16 lg:h-16 fill-current opacity-75"
+      class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
     >
       <use xlink:href="#left-svg"></use>
     </svg>
   </div>
   <div
     class="
-      hidden sm:flex absolute inset-y-0 right-0 pr-1 text-g-4 pointer-events-none
-      transition-opacity duration-300 ease-in-out
+      pointer-events-none absolute inset-y-0 right-0 hidden pr-1 text-g-4 transition-opacity
+      duration-300 ease-in-out sm:flex
     "
     :class="{'opacity-0': isLast }"
   >
     <svg
-      class="self-center filter drop-shadow w-12 h-12 lg:w-16 lg:h-16 fill-current opacity-75"
+      class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
     >
       <use xlink:href="#right-svg"></use>
     </svg>

@@ -10,12 +10,11 @@
       <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         class="
-          block
-          pl-4 py-2 appearance-none
-          w-full rounded-lg rounded-r-none border-2 border-g-5
-          bg-white text-g-8 placeholder-g-5 placeholder-opacity-100
-          tracking-wider
-          focus:outline-none focus:border-blue
+          outline-none block w-full
+          appearance-none rounded-lg
+          rounded-r-none border-2 border-g-5 bg-white
+          py-2 pl-4 tracking-wider text-g-8
+          placeholder-g-5 placeholder-opacity-100 focus:border-blue
         "
         @input="isLoading = true"
         x-model.debounce.500ms="query"
@@ -23,24 +22,24 @@
         :autofocus="isOpen"
       />
     </div>
-    <div class="mt-0 z-10">
+    <div class="z-10 mt-0">
       <button
         class="
-        px-4 py-2
-        h-full rounded-r-lg border-2 border-goldenrod
-        bg-yellow text-g-1
-        font-bold tracking-widest uppercase
-        focus:outline-none focus:border-yellow-darker
-      "
+          outline-none h-full
+          rounded-r-lg border-2 border-goldenrod
+          bg-yellow px-4 py-2
+          font-bold uppercase tracking-widest text-g-1
+          focus:border-yellow-darker
+        "
       >
         <svg
           x-show="!isLoading"
-          class="fill-current w-4 h-4 animate-bounce"
+          class="h-4 w-4 animate-bounce fill-current"
           :class="{ 'animate-bounce': isLoading }"
         >
           <use xlink:href="#search-svg"></use>
         </svg>
-        <svg x-show="isLoading" class="fill-current w-4 h-4 animate-spin">
+        <svg x-show="isLoading" class="h-4 w-4 animate-spin fill-current">
           <use xlink:href="#spinner-svg"></use>
         </svg>
       </button>
@@ -48,12 +47,12 @@
   </div>
   <div class="mt-1">
     <p
-      class="text-g-6 font-light"
+      class="font-light text-g-6"
       x-show="resultsText"
       x-text="resultsText"
     ></p>
     <template x-if="error">
-      <div class="text-orange font-light" x-template>
+      <div class="font-light text-orange" x-template>
         Could not load results. ${error.message}
       </div>
     </template>

@@ -1,6 +1,6 @@
-<div class="fixed z-10 inset-0 overflow-y-auto font-sans">
+<div class="fixed inset-0 z-10 overflow-y-auto font-sans">
   <div
-    class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+    class="flex min-h-screen items-center justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0"
   >
     <!--
       Background overlay, show/hide based on modal state.
@@ -17,7 +17,7 @@
     </div>
 
     <!-- This element is to trick the browser into centering the modal contents. -->
-    <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span
+    <span class="hidden sm:inline-block sm:h-screen sm:align-middle"></span
     >&#8203;
     <!--
       Modal panel, show/hide based on modal state.
@@ -30,7 +30,7 @@
         To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     -->
     <div
-      class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+      class="inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:align-middle"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline"
@@ -38,7 +38,7 @@
       <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
         <div class="sm:flex sm:items-start">
           <div
-            class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-orange sm:mx-0 sm:h-10 sm:w-10"
+            class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange sm:mx-0 sm:h-10 sm:w-10"
           >
             <!-- Heroicon name: exclamation -->
             <svg
@@ -57,7 +57,7 @@
           </div>
           <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
             <h3
-              class="text-lg leading-6 font-medium text-g-9"
+              class="text-lg font-medium leading-6 text-g-9"
               id="modal-headline"
             >
               Deactivate account
@@ -71,11 +71,11 @@
           </div>
         </div>
       </div>
-      <div class="bg-g-2 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+      <div class="bg-g-2 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
         <span class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto">
           <button
             type="button"
-            class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-orange text-base leading-6 font-medium text-white shadow-sm hover:bg-orange focus:outline-none focus:border-orange focus:shadow-outline-orange transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+            class="focus:outline-none focus:shadow-outline-orange inline-flex w-full justify-center rounded-md border border-transparent bg-orange px-4 py-2 text-base font-medium leading-6 text-white shadow-sm transition duration-150 ease-in-out hover:bg-orange focus:border-orange sm:text-sm sm:leading-5"
           >
             Deactivate
           </button>
@@ -83,7 +83,7 @@
         <span class="mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto">
           <button
             type="button"
-            class="inline-flex justify-center w-full rounded-md border border-g-3 px-4 py-2 bg-white text-base leading-6 font-medium text-g-7 shadow-sm hover:text-g-5 focus:outline-none focus:border-orange focus:shadow-outline-orange transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+            class="focus:outline-none focus:shadow-outline-orange inline-flex w-full justify-center rounded-md border border-g-3 bg-white px-4 py-2 text-base font-medium leading-6 text-g-7 shadow-sm transition duration-150 ease-in-out hover:text-g-5 focus:border-orange sm:text-sm sm:leading-5"
           >
             Cancel
           </button>

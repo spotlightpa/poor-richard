@@ -42,36 +42,36 @@
 
 
 <header
-  class="flex flex-col md:flex-row md:min-h-screen"
+  class="flex flex-col md:min-h-screen md:flex-row"
   data-ga-category="inline-header"
 >
-  <div class="md:w-2/5 md:min-w-min bg-black text-white">
-    <div class="px-8 sm:px-12 pb-10">
+  <div class="bg-black text-white md:w-2/5 md:min-w-min">
+    <div class="px-8 pb-10 sm:px-12">
       <div
-        class="mt-16 lg:mt-20 pt-8 pb-4 mb-4 lg:pb-10 lg:mb-12 border-t border-b border-white"
+        class="mt-16 mb-4 border-t border-b border-white pt-8 pb-4 lg:mt-20 lg:mb-12 lg:pb-10"
       >
-        <div class="font-sans uppercase font-bold text-yellow">
+        <div class="font-sans font-bold uppercase text-yellow">
           {{ $eyebrow }}
         </div>
-        <h1 class="mt-4 uppercase leading-hed {{ $hedSizes }}">
+        <h1 class="{{ $hedSizes }} mt-4 uppercase leading-hed">
           {{ $hed }}
         </h1>
         <h2 class="mt-4 lg:text-lg">{{ $dek }}</h2>
       </div>
       <time
-        class="font-sans uppercase font-bold"
+        class="font-sans font-bold uppercase"
         datetime="{{ $params.publishedISO }}"
         >{{ $date }}</time
       >
-      <div class="lg:text-lg mt-8 leading-none">
-        by <span class="font-sans uppercase font-bold">{{ $byline }}</span>
+      <div class="mt-8 leading-none lg:text-lg">
+        by <span class="font-sans font-bold uppercase">{{ $byline }}</span>
       </div>
-      <div class="mt-3 text-sm font-sans uppercase font-bold">
+      <div class="mt-3 font-sans text-sm font-bold uppercase">
         {{ $outlet }}
       </div>
-      <div class="mt-4 lg:mt-8 text-sm">
+      <div class="mt-4 text-sm lg:mt-8">
         {{ $artType }} by
-        <span class="font-sans uppercase font-bold">{{ $imageCredit }}</span>
+        <span class="font-sans font-bold uppercase">{{ $imageCredit }}</span>
         {{ $preposition }}
         <span class="font-sans uppercase">{{ $imageSource }}</span>
       </div>
@@ -79,14 +79,14 @@
   </div>
 
   <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
-    <picture class="bg-g-4 absolute inset-0">
+    <picture class="absolute inset-0 bg-g-4">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />
         <img
           alt="{{ $imageDesc }}"
           title="{{ $imageDesc }}"
           src="{{ $imgSmallSrc }}"
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           {{ if $focus }}
             style="object-position: {{ $focus }};"
           {{ end }}
@@ -104,7 +104,7 @@
           title="{{ $imageDesc }}"
           src="{{ $imgSmallSrc }}"
           {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           {{ if $focus }}
             style="object-position: {{ $focus }};"
           {{ end }}

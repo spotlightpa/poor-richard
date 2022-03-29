@@ -3,9 +3,9 @@
 {{ $bgClass := cond (not .transparent) "bg-g-5" "" }}
 
 
-<span class="block mx-auto max-w-full" style="width: {{ .width }}px;">
+<span class="mx-auto block max-w-full" style="width: {{ .width }}px;">
   <span
-    class="relative block w-full h-0 overflow-hidden {{ $bgClass }}"
+    class="{{ $bgClass }} relative block h-0 w-full overflow-hidden"
     style="padding-bottom: {{ $padding | printf `%0.3f` }}%;"
   >
     <img
