@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-01-26-SPLTRACK.md"
+    "content/news/2022-03-29-SPLNEXT.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2022-01-14-SPLCONCHANGE15.md",
-    "content/news/2022-01-17-SPLVETO17.md"
+    "content/news/2022-03-23-SPLFAIRANA.md"
   ],
   "topSlots": [
     "content/newsletters/palocal/2022-03-25-1000.md",
     "content/news/2022-03-24-SPLDEBXXX.md",
-    "content/news/2022-03-23-SPLFAIRANA.md"
+    "content/news/2022-03-18-SPLINDIE.md"
   ],
   "topper": []
 }
