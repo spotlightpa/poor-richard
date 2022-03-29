@@ -26,7 +26,7 @@ HARRISBURG — A long-awaited transparency bill that would make legislative expe
 
 “How can anyone be against it?” said state Rep. Scott Conklin (D., Centre) as the House State Government Committee brought the measure up for a vote.
 
-The <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2449" target="_blank">bill</a>, introduced by state Rep. Keith Gillespie (R., York), would require legislators and staff in both the state House and Senate to post their expensive online on a quarterly basis, including reimbursements for meals, travel, office furniture, and overnight stays in Harrisburg.
+The <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2449" target="_blank">bill</a>, introduced by state Rep. Keith Gillespie (R., York), would require legislators and staff in both the state House and Senate to post their expenses online on a quarterly basis, including reimbursements for meals, travel, office furniture, and overnight stays in Harrisburg.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
