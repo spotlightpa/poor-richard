@@ -246,6 +246,11 @@ url = "http://whyy.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx71/whyy.jpeg"
 
 [[partners]]
+name = "WPSU"
+url = "https://wpsu.psu.edu"
+logo-url = "https://files.data.spotlightpa.org/uploads/01h4/97s4/wpsu-rgb-color.svg"
+
+[[partners]]
 name = "York Daily Record"
 url = "https://www.ydr.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gd/mb21/ydr.png"
