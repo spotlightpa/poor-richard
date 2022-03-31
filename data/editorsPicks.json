@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2022-03-30-SPLRELEASE30.md"
+    "content/news/2022-03-30-SPLHALLSUIT.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2020-02-25-SPLCOMMUTATION25.md",
-    "content/news/2020-11-11-SPLPRISON12.md"
+    "content/news/2021-11-18-SPLHALL19.md",
+    "content/news/2021-11-22-SPLFAQ.md"
   ],
   "topSlots": [
-    "content/news/2022-03-30-SPLHALLSUIT.md",
+    "content/news/2022-03-30-SPLRELEASE30.md",
     "content/news/2022-03-29-SPLEXPENSES30.md",
     "content/news/2022-03-29-SPLNEXT.md"
   ],
