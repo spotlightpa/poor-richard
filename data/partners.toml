@@ -18,6 +18,12 @@ name = "WITF"
 url = "https://www.witf.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7g/witf.svg"
 
+
+[[partners]]
+name = "Altoona Mirror"
+url = "https://www.altoonamirror.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01h4/byew/altoona-mirror-logo.png"
+
 [[partners]]
 name = "BCTV"
 url = "https://www.bctv.org"
