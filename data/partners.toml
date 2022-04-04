@@ -227,6 +227,11 @@ url = "https://www.standardspeaker.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx70/standard-speaker.jpeg"
 
 [[partners]]
+name = "State College"
+url = "https://www.statecollege.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01h4/pb2p/state-college.png"
+
+[[partners]]
 name = "Times News"
 url = "https://www.tnonline.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/times-news-online.png"
