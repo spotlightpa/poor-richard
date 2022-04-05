@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-04-04-SPLLTGOV.md"
+    "content/news/2022-04-05-SPLNUMBERS05.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2022-03-18-SPLINDIE.md",
-    "content/news/2022-02-10-SPLEXECCALL.md"
+    "content/news/2022-03-30-SPLRELEASE30.md",
+    "content/news/2020-02-25-SPLCOMMUTATION25.md"
   ],
   "topSlots": [
+    "content/news/2022-04-04-SPLLTGOV.md",
     "content/newsletters/palocal/2022-04-01-1000.md",
-    "content/news/2022-03-30-SPLHALLSUIT.md",
-    "content/news/2022-03-30-SPLRELEASE30.md"
+    "content/news/2022-03-30-SPLHALLSUIT.md"
   ],
   "topper": []
 }
