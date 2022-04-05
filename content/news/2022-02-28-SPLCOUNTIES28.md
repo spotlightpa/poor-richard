@@ -14,7 +14,8 @@ modal-exclude = false
 no-index = false
 published = 2022-02-28T05:00:00-05:00
 slug = "pa-local-health-department-discussions"
-title = "Who makes public health decisions for your community? In Pennsylvania, it depends on when you live."
+suppress-date = false
+title = "Who makes public health decisions for your community? In Pennsylvania, it depends on where you live."
 topics = ["Health"]
 +++
 
