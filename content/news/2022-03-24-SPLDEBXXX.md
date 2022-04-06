@@ -25,7 +25,7 @@ Central to Spotlight PA’s mission is informing, equipping, and empowering vote
 
 That’s why we’re joining with an unprecedented coalition of major media companies and leading colleges in Pennsylvania today to announce dates for two “Pennsylvania in the Spotlight” U.S. Senate debates leading up to the spring primary, and an additional GOP gubernatorial debate.
 
-A Democratic U.S. Senate debate will be held at 7 p.m. April 25 at Dickinson College in Carlisle, PA, and will feature candidates Kevin Baumlin, John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb.
+A Democratic U.S. Senate debate will be held at 7 p.m. April 25 at Dickinson College in Carlisle, PA, and will feature candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb.
 
 A Republican U.S. Senate debate will be held the following night, April 26, at the same time and location and will feature Kathy Barnette, Jeff Bartos, George Bochetto, Sean Gale, and Carla Sands, and other candidates may be added.
 
