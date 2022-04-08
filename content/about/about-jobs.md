@@ -34,6 +34,8 @@ This job is full-time and includes benefits. While we have the flexibility to f
 
 While you will be part of our State College initiative, this reporter can be based anywhere in Pennsylvania. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
 
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
+
 <hr>
 
 ## Major Gifts Director, Spotlight PA
