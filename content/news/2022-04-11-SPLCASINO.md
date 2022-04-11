@@ -1,4 +1,5 @@
 +++
+aliases = ["/casinolobby"]
 arc-id = "N5MYFBBJAFFYPKARNA7NKQYZFM"
 authors = ["Angela Couloumbis"]
 blurb = "Representatives of Parx Casino and state Sen. Tommy Tomlinson have worked in lockstep to ban unregulated, slot-like skill games that pose a threat to traditional gaming."
