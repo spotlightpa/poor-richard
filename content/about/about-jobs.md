@@ -6,6 +6,15 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
+## Current listings
+
+- <a href="#penn-state-investigative-reporter-spotlight-pa-state-college">Penn State Investigative Reporter, Spotlight PA State College</a>
+
+- <a href="#major-gifts-director-spotlight-pa">Major Gifts Director, Spotlight PA</a>
+
+- <a href="#membership-manager-spotlight-pa">Membership Manager, Spotlight PA</a>
+
+
 ## Penn State Investigative Reporter, Spotlight PA State College
 
 ## <a href="https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/454">Apply Here</a>
