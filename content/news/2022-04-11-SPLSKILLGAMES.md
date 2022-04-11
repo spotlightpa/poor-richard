@@ -16,7 +16,7 @@ published = 2022-04-11T05:00:00-04:00
 series = ["Ghost Writers"]
 slug = "pennsylvania-skill-games-what-are-they"
 suppress-date = false
-title = "What are skill games, and why are they are the center of a multimillion-dollar fight"
+title = "What are skill games, and why are they at the center of a multimillion-dollar fight"
 topics = ["The Capitol"]
 +++
 
