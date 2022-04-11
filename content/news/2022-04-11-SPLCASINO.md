@@ -104,7 +104,7 @@ In a statement, Tomlinson said that consulting with outside experts is “an int
 
 As for his 2019 bill, he said, “Although we may have received insight on language, I had the final say on the legislation that was introduced.”
 
-A Parx spokesperson, Pete Shelly, echoed that sentiment, and added that as one of the largest employer in Tomlinson’s district, “we absolutely reached out to Sen. Tomlinson … We are in his district and we know the gaming world as well as anybody.”
+A Parx spokesperson, Pete Shelly, echoed that sentiment, and added that as one of the largest employers in Tomlinson’s district, “we absolutely reached out to Sen. Tomlinson … We are in his district and we know the gaming world as well as anybody.”
 
 Stewart did not respond to multiple requests for comment.
 
