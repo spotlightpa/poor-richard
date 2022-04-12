@@ -1,3 +1,38 @@
+{{ $subjects := slice
+  (slice "Addiction" "Ed Mahon")
+  (slice "Agriculture" "Stephen Kearse")
+  (slice "Child care" "Ed Mahon")
+  (slice "Courts (state or local)" "Danielle Ohl")
+  (slice "COVID-19" "Jamie Martines")
+  (slice "Crime" "Danielle Ohl")
+  (slice "Criminal Justice" "Danielle Ohl")
+  (slice "Economic Development" "Charlotte Keith")
+  (slice "Education" "Jamie Martines")
+  (slice "Elder care" "Ed Mahon")
+  (slice "Elected Officials" "Angela Couloumbis, Ethan Edward Coston, Kate Huangpu")
+  (slice "Elections" "Angela Couloumbis, Ethan Edward Coston, Kate Huangpu")
+  (slice "Environment" "Stephen Kearse")
+  (slice "Event suggestions" "Yaasmeen Piper, Stephen Kearse")
+  (slice "Health" "Jamie Martines")
+  (slice "Housing" "Charlotte Keith")
+  (slice "Human Services" "Ed Mahon")
+  (slice "Labor" "Stephen Kearse")
+  (slice "Law Enforcement" "Danielle Ohl")
+  (slice "Legislature" "Angela Couloumbis, Ethan Edward Coston, Kate Huangpu")
+  (slice "Local Government" "Sarah Rafacz")
+  (slice "Newsletter suggestions" "Colin, Stephen Kearse")
+  (slice "Penn State University" "Sarah Rafacz")
+  (slice "Politics" "Angela Couloumbis, Ethan Edward Coston, Kate Huangpu")
+  (slice "Rural Issues" "Sarah Rafacz")
+  (slice "Sports" "Stephen Kearse")
+  (slice "State College" "Sarah Rafacz")
+  (slice "State Government")
+  (slice "State Prisons" "Danielle Ohl")
+  (slice "Transportation" "")
+  (slice "Unemployment" "")
+  (slice "Voting" "Angela Couloumbis, Ethan Edward Coston, Kate Huangpu")
+  (slice "Other" "")
+}}
 {{ $idURL := partial "helper/new-id" . }}
 {{ $idFrom := partial "helper/new-id" . }}
 {{ $idEmail := partial "helper/new-id" . }}
@@ -72,14 +107,23 @@
 
   <div class="field">
     <label class="label" for="{{ $idSubject }}">Subject</label>
-    <div class="control">
-      <input
-        id="{{ $idSubject }}"
-        class="input"
-        type="text"
-        placeholder="My question about Spotlight PA"
-        name="subject"
-      />
+    <div class="control is-expanded" x-data="{ cc: '' }">
+      <div class="select is-fullwidth">
+        <select
+          id="{{ $idSubject }}"
+          name="subject"
+          @input="cc = $el.options[$el.selectedIndex].dataset.cc"
+          required
+        >
+          <option selected disabled value="">Select a topic</option>
+          {{ range $subjects }}
+            {{ $subject := index . 0 }}
+            {{ $cc := index . 1 }}
+            <option data-cc="{{ $cc }}">{{ $subject }}</option>
+          {{ end }}
+        </select>
+        <input type="hidden" name="CC" :value="cc" />
+      </div>
     </div>
   </div>
   <div class="field">
