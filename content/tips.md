@@ -1,14 +1,13 @@
 +++
+published = 2022-04-12T14:41:54.791Z
 title = "Send a tip"
 description = "Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals."
-type = "root"
 modal-exclude = true
+type = "root"
 +++
 Our reporters rely on readers like you to alert us to waste, fraud, abuse or other problems involving state or local government, businesses or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people).
 
-_PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response._
-
-## Send comment to newsroom
+*PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
 
 {{<about/contact-form>}}
 
