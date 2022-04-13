@@ -8,12 +8,9 @@ aliases = ["/jobs/"]
 +++
 ## Current listings
 
-- <a href="#penn-state-investigative-reporter-spotlight-pa-state-college">Penn State Investigative Reporter, Spotlight PA State College</a>
-
-- <a href="#major-gifts-director-spotlight-pa">Major Gifts Director, Spotlight PA</a>
-
-- <a href="#membership-manager-spotlight-pa">Membership Manager, Spotlight PA</a>
-
+* <a href="#penn-state-investigative-reporter-spotlight-pa-state-college">Penn State Investigative Reporter, Spotlight PA State College</a>
+* <a href="#major-gifts-director-spotlight-pa">Major Gifts Director, Spotlight PA</a>
+* <a href="#membership-manager-spotlight-pa">Membership Manager, Spotlight PA</a>
 
 ## Penn State Investigative Reporter, Spotlight PA State College
 
@@ -92,14 +89,14 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 * Manage all operations related to membership efforts, including gift processing and direct mail. 
 * Respond to member questions in a timely and respectful fashion, and keep the “supporters” page on our website up-to-date.  
 * Advance diversity, equity, and inclusion initiatives on our team and through your external membership work.
-* Collaborate with the Major Gifts Director and Senior Director of Strategic Development, and to identify individuals with the potential to give mid-level or major gifts. 
+* Collaborate with the Major Gifts Director and Senior Director of Strategic Development to identify individuals with the potential to give mid-level or major gifts. 
 * Help the team with other fundraising tasks as necessary. 
 
 **Who we’re looking for:** The membership director should have at least 2-3 years of experience executing print and/or online membership campaigns and conducting grassroots fundraising. You should be data-driven and detail-oriented, with strong organizational and communication skills, and passionate about revitalizing non-partisan, independent journalism in Pennsylvania. Previous experience with Mailchimp and Salesforce is a major plus. We welcome applications from individuals with experience in grassroots fundraising, membership programs, and email marketing across a wide spectrum of industries, or from within journalism itself. We also encourage those with these skills who have taken other career paths to apply.
 
 An ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of connecting with readers and members.
 
-**This job is full-time and includes benefits, and is fully remote, though a home base in Pennsylvania is preferred. This position is budgeted for a salary from $65,000-$75,000, depending on experience. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.**
+**This job is full-time and includes benefits, and is fully remote, though a home base in Pennsylvania is preferred. This position is budgeted for a salary from $65,000-$75,000, depending on experience. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.** Note that the application portal is managed by The Philadelphia Inquirer — Spotlight PA is a fully grant- and donation-supported project of The Philadelphia Inquirer and The Lenfest Institute for Journalism.
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
 
