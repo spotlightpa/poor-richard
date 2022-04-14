@@ -1,6 +1,6 @@
 {
   "banner": "\u003cstrong\u003eInvestigative journalism in PA urgently needs your help. \u003cstrong\u003eContribute now » \u003c/strong\u003e\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ea5b3a",
   "banner-link": "/donate",
   "banner-text-color": "#000000",
