@@ -117,7 +117,7 @@ Gerow, a Republican strategist and former lobbyist, has raised less than half a 
 
 He also loaned $85,000 of his own money to his campaign last year.
 
-{{<picture width-ratio="854" height-ratio="853" src="external/65825jjsafkkce2ajbtvjysr1r.jpeg" description="Joe Gale has raised nearly $100,000 throughout his campaign." caption="Joe Gale has raised nearly $100,000 throughout his campaign." credit="Michael Bryant / Philadelphia Inquirer ">}} 
+{{<picture src="external/65825jjsafkkce2ajbtvjysr1r.jpeg" description="Joe Gale has raised nearly $100,000 throughout his campaign." caption="Joe Gale has raised nearly $100,000 throughout his campaign." credit="Michael Bryant / Philadelphia Inquirer ">}} 
 
 ## Joe Gale
 
@@ -219,7 +219,7 @@ White on his campaign website says he worked for “decades as a union pipefitte
 
 The candidate himself, with his wife Debra Ann, has loaned his campaign $4 million, according to his most recent report.
 
-{{<picture src="external/8n62h90dv3gyfhwemj7eq9zcjr.jpeg" description="Nche Zama has primarily received smaller donations and no major PAC support." caption="Nche Zama has primarily received smaller donations and no major PAC support." credit="Courtesy Nche Zama campaign">}} 
+{{<picture width-ratio="854" height-ratio="853" src="external/8n62h90dv3gyfhwemj7eq9zcjr.jpeg" description="Nche Zama has primarily received smaller donations and no major PAC support." caption="Nche Zama has primarily received smaller donations and no major PAC support." credit="Courtesy Nche Zama campaign">}} 
 
 ## Nche Zama
 
