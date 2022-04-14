@@ -29,7 +29,7 @@ A Democratic U.S. Senate debate will be held at 7 p.m. April 25 at Dickinson Col
 
 A Republican U.S. Senate debate will be held the following night, April 26, at the same time and location and will feature Kathy Barnette, Jeff Bartos, George Bochetto, Sean Gale, and Carla Sands, and other candidates may be added.
 
-Additionally, a GOP gubernatorial debate will be held at 7 p.m. April 19 at Gettysburg College featuring four candidates: Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama. Four campaigns required a Republican moderator and other criteria rejected by the nonpartisan sponsors to preserve the credibility of the event. A fifth did not respond.
+Additionally, a GOP gubernatorial debate will be held at 7 p.m. April 19 at Gettysburg College featuring five candidates: Jake Corman, Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama. Four campaigns initially required a Republican moderator and other criteria rejected by the nonpartisan sponsors to preserve the credibility of the event. The Corman campaign later requested to join with no preconditions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
