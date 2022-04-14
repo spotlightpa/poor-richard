@@ -117,7 +117,7 @@ Gerow, a Republican strategist and former lobbyist, has raised less than half a 
 
 He also loaned $85,000 of his own money to his campaign last year.
 
-{{<picture src="external/65825jjsafkkce2ajbtvjysr1r.jpeg" description="Joe Gale has raised nearly $100,000 throughout his campaign." caption="Joe Gale has raised nearly $100,000 throughout his campaign." credit="Michael Bryant / Philadelphia Inquirer ">}} 
+{{<picture width-ratio="854" height-ratio="853" src="external/65825jjsafkkce2ajbtvjysr1r.jpeg" description="Joe Gale has raised nearly $100,000 throughout his campaign." caption="Joe Gale has raised nearly $100,000 throughout his campaign." credit="Michael Bryant / Philadelphia Inquirer ">}} 
 
 ## Joe Gale
 
