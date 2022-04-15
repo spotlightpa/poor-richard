@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2022-01-03T12:19:25.892-05:00
 slug = "pennsylvania-redistricting-house-senate-maps-feedback-get-involved"
+suppress-date = false
 title = "How to weigh in on Pennsylvania’s next legislative maps"
 topics = ["Redistricting"]
 +++
@@ -43,7 +44,7 @@ The Legislative Reapportionment Commission <a href="https://www.spotlightpa.org/
 
 Additional meetings will be held on Jan. 14 and 15.
 
-<b>Friday, Jan. 14 from 11 a.m.–1 p.m.: </b><a href="https://us02web.zoom.us/webinar/register/WN_oqbAA5xMT1KnrIfNvY5GdQ" target="_blank">Sign up to speak in person or virtually</a>
+<b>Friday, Jan. 14 from 11 a.m.–1 p.m.: </b><a href="" data-gone="https://us02web.zoom.us/webinar/register/WN_oqbAA5xMT1KnrIfNvY5GdQ" >Sign up to speak in person or virtually</a>
 
 <a href="http://www.pacapitol.com/plan-a-visit/maps/">North Office Building, Hearing Room 1</a> in Harrisburg | <a href="https://www.redistricting.state.pa.us/commission/livestream">Livestream</a>
 
