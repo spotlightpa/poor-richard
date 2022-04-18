@@ -1,17 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-04-14-SPLGUVMONEY14.md"
+    "content/news/2022-04-18-SPLGUVGUIDE.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
+    "content/news/2022-04-14-SPLGUVMONEY14.md",
     "content/news/2022-04-04-SPLLTGOV.md"
   ],
   "topSlots": [
+    "content/newsletters/palocal/2022-04-15-1010.md",
     "content/news/2022-04-12-SPLRECAPPS12.md",
-    "content/news/2022-04-11-SPLCASINO.md",
-    "content/news/2022-04-11-SPLSKILLGAMES.md"
+    "content/news/2022-04-11-SPLCASINO.md"
   ],
   "topper": []
 }
