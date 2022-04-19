@@ -26,11 +26,9 @@ Nine people are running for the GOP nomination. Four campaigns initially require
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following links:
+The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following link:
 
 - <a href="https://youtu.be/0ZpcM2ETk_Y" target="_blank">YouTube</a>
-
-- <a href="https://www.facebook.com/pcntv" target="_blank">Facebook</a>
 
 <b>READ MORE:</b>
 
