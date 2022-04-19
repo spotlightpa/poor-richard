@@ -21,7 +21,7 @@
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body data-ga-label="{{ $pageCat }}">
+  <body data-ga-label="{{ $pageCat }}" x-data="{ catNav: false }">
     {{ block "header" . }}
       {{ block "banner" . }}
         {{ if .Param "banner-active" }}
