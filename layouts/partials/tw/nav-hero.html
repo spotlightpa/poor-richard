@@ -1,0 +1,42 @@
+<nav
+  class="bg-black py-8 md:py-16"
+  id="#top"
+  x-data="{ catNav: false }"
+  data-ga-category="navbar"
+  data-sf-campaign="701f4000000TVu3AAG"
+  aria-label="main navigation"
+>
+  <div class="max-w-6xl mx-auto px-5 flex flex-wrap items-center w-full">
+    <div class="w-full md:w-3/5 flex items-center">
+      <a href="/" class="text-white hover:text-gray-500 duration-300 flex-1 pr-3" data-ga-category="logo">
+        <svg class="fill-current w-full">
+          <title>Home</title>
+          <desc>Spotlight PA logo</desc>
+          <use href="#banner-svg"></use>
+        </svg>
+      </a>
+      <div class="text-white">
+        investigative<br>
+        reporting on...
+      </div>
+    </div>
+    <div class="w-full md:w-2/5">
+      <div class="flex-1 pl-5 text-white text-2xl leading-loose relative">
+        Criminal Justice, Coronavirus, The Capitol, Elections, Redistricting, Politics, Education, Eviction, Pensions, Health, Environment
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="w-full bg-black py-5" x-show="catNav">
+  <div class="max-w-6xl mx-auto px-5 w-full grid grid-cols-3 gap-5">
+    <div>Col 1</div>
+    <div>Col 2</div>
+    <div>Col 3</div>
+  </div>
+</div>
+<div class="max-w-6xl mx-auto px-5 flex w-full">
+  <div class="w-full md:w-3/5 hidden md:block"></div>
+  <div class="w-full md:w-2/5 pl-5">
+    <button class="px-5 pb-1 rounded-b-lg bg-black text-white text-lg" x-on:click="catNav = ! catNav">More Topics</button>
+  </div>
+</div>
