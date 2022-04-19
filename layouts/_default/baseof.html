@@ -23,12 +23,12 @@
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
   <body data-ga-label="{{ $pageCat }}">
     {{ block "header" . }}
-      {{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}
       {{ block "banner" . }}
         {{ if .Param "banner-active" }}
           {{ partialCached "component/banner.html" . }}
         {{ end }}
       {{ end }}
+      {{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}
       {{ block "topper" . }}
         {{ if .Param "topper-active" }}
           {{ partialCached "component/topper.html" . }}

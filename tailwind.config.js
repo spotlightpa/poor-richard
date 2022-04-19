@@ -35,6 +35,8 @@ module.exports = {
       "g-7": "#5d5d5d",
       "g-8": "#2d3748",
       "g-9": "#1a202c",
+      "gray-500": "#C4C4C4",
+      red: "#D3002E",
       beige: "#f4f1ee",
       robin: "#99d9f1",
       blue: "#009edb",
