@@ -14,7 +14,7 @@ no-index = false
 published = 2022-04-19T05:00:00-04:00
 slug = "pa-primary-election-2022-gop-governor-debate-watch"
 suppress-date = false
-title = "Pa. primary election 2022: Watch Spotlight PA’s GOP gubernatorial debate"
+title = "Pa. primary election 2022: Spotlight PA hosts GOP gubernatorial debate"
 topics = ["Elections", "Events"]
 +++
 
@@ -25,12 +25,6 @@ Candidates Jake Corman, Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama app
 Nine people are running for the GOP nomination. Four campaigns initially required a Republican moderator and other criteria rejected by the nonpartisan sponsors to preserve the credibility of the event. The Corman campaign later requested to join with no preconditions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
-
-The 90-minute debate is not open to the public, but you can watch it below:
-
-- <a href="https://youtu.be/0ZpcM2ETk_Y" target="_blank">YouTube</a>
-
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpcntv%2Fvideos%2F673415203919445%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 <b>READ MORE:</b>
 
