@@ -18,11 +18,15 @@ title = "Pa. primary election 2022: Spotlight PA hosts GOP gubernatorial debate"
 topics = ["Elections", "Events"]
 +++
 
+<i>Update: </i><a href="https://www.spotlightpa.org/news/2022/04/pennsylvania-primary-election-2022-republican-governor-debate-takeaways/" target="_blank"><i>5 takeaways from Spotlight PA’s Republican gubernatorial debate</i></a>
+
 Five candidates running in Pennsylvania’s primary election for the Republican gubernatorial nomination gathered Tuesday at Gettysburg College for a debate hosted by Spotlight PA and its founding members.
 
 Candidates Jake Corman, Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama appeared. The debate was moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus and WITF’s Scott Blanchard.
 
 Nine people are running for the GOP nomination. Four campaigns initially required a Republican moderator and other criteria rejected by the nonpartisan sponsors to preserve the credibility of the event. The Corman campaign later requested to join with no preconditions.
+
+<a href="http://players.brightcove.net/2549849263001/default_default/index.html?videoId=6304513458001" target="_blank"><b>Watch the debate here</b></a><b>.</b>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
