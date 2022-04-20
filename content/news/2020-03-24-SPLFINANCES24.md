@@ -1,23 +1,22 @@
 +++
-image = "2020/03/01f7mk1zwbrcz460.jpeg"
-image-description = "Sales tax revenues will slump because businesses are closed and families are cutting back on spending."
-image-credit = "Contributed photo"
-published = 2020-03-24T18:00:00.000Z
-slug = "pennsylvania-pa-coronavirus-state-budget-revenues-shortfall"
-authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Pennsylvania ‘particularly ill-prepared’ for financial blow caused by the coronavirus "
-description = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
-blurb = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
-kicker = "Coronavirus"
-suppress-featured = false
-topics = ["Coronavirus"]
-internal-id = "SPLFINANCES24"
-internal-budget = ""
 arc-id = "ZCLA7GSYLFE4XFRNLEUJPD3OOU"
-linktitle = ""
-series = []
+authors = ["Charlotte Keith"]
+blurb = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
+byline = "Charlotte Keith of Spotlight PA"
+description = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
+image = "2020/03/01f7mk1zwbrcz460.jpeg"
+image-credit = "Contributed photo"
+image-description = "Sales tax revenues will slump because businesses are closed and families are cutting back on spending."
+internal-id = "SPLFINANCES24"
+kicker = "Coronavirus"
+modal-exclude = false
+published = 2020-03-24T14:00:00-04:00
+slug = "pennsylvania-pa-coronavirus-state-budget-revenues-shortfall"
 subtitle = "The scale of the shortfall will become clearer in about a week, an official said, when final revenue numbers for March are released, coming in “many millions under estimate.”"
+suppress-date = false
+suppress-featured = false
+title = "Pennsylvania ‘particularly ill-prepared’ for financial blow caused by the coronavirus "
+topics = ["Coronavirus"]
 +++
 
 <i>This story was produced as part of a joint effort among </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s newsletter.</i></a>
@@ -74,7 +73,7 @@ Those proposals included a $1 billion expansion of a debt-funded grant program f
 
 Pennsylvania also faces the challenge of going into an economic downturn with meager reserves, after lawmakers drained the rainy day fund during the Great Recession.
 
-Even after the largest transfer in decades into the rainy day fund last July, the state still has only $340 million in reserves – enough to fund government operations for around three and a half days, the state treasurer’s office <a href="https://www.patreasury.gov/pdf/Treasury-Notes-RDF.pdf">estimated</a> at the time.
+Even after the largest transfer in decades into the rainy day fund last July, the state still has only $340 million in reserves – enough to fund government operations for around three and a half days, the state treasurer’s office <a href="https://web.archive.org/web/20220130071226/https://www.patreasury.gov/pdf/Treasury-Notes-RDF.pdf">estimated</a> at the time.
 
 A 2019 <a href="https://www.moodysanalytics.com/-/media/article/2019/stress-testing-states-2019.pdf">study</a> by Moody’s Analytics found that, in order to get through a moderate recession without tax increases or spending cuts, a typical state would need to have just over 11% of its general fund revenues in a reserve fund.
 
