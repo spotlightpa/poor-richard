@@ -5,7 +5,7 @@ byline = "Spotlight PA Staff"
 description = "Five candidates running in Pennsylvania’s primary election for the Republican gubernatorial nomination will gather Tuesday at Gettysburg College for a debate."
 image = "external/rzq0jhrbzktwbrw6cm41j27ez0.jpeg"
 image-credit = "VICKI VELLIOS BRINER / For Spotlight PA"
-image-description = "The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m."
+image-description = "Nine people are running for the GOP nomination."
 internal-budget = "WATCH LIVE: Spotlight PA debate 2022 GOP guv"
 internal-id = "SPLGUVVIDEO"
 kicker = "Elections"
@@ -18,15 +18,15 @@ title = "Pa. primary election 2022: Watch Spotlight PA’s GOP gubernatorial deb
 topics = ["Elections", "Events"]
 +++
 
-Five candidates running in Pennsylvania’s primary election for the Republican gubernatorial nomination will gather tonight at Gettysburg College for a debate hosted by Spotlight PA and its founding members.
+Five candidates running in Pennsylvania’s primary election for the Republican gubernatorial nomination gathered Tuesday at Gettysburg College for a debate hosted by Spotlight PA and its founding members.
 
-Candidates Jake Corman, Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus and WITF’s Scott Blanchard.
+Candidates Jake Corman, Joe Gale, Charlie Gerow, Melissa Hart, and Nche Zama appeared. The debate was moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus and WITF’s Scott Blanchard.
 
 Nine people are running for the GOP nomination. Four campaigns initially required a Republican moderator and other criteria rejected by the nonpartisan sponsors to preserve the credibility of the event. The Corman campaign later requested to join with no preconditions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following links:
+The 90-minute debate is not open to the public, but you can watch it below:
 
 - <a href="https://youtu.be/0ZpcM2ETk_Y" target="_blank">YouTube</a>
 
