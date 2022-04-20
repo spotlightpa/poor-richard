@@ -14,7 +14,7 @@ no-index = false
 published = 2022-04-19T05:00:00-04:00
 slug = "pa-primary-election-2022-gop-governor-debate-watch"
 suppress-date = false
-title = "Pa. primary election 2022: Watch Spotlight PA’s GOP gubernatorial debate live"
+title = "Pa. primary election 2022: Watch Spotlight PA’s GOP gubernatorial debate"
 topics = ["Elections", "Events"]
 +++
 
