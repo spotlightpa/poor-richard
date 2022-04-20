@@ -52,7 +52,7 @@ Additional meetings will be held on Jan. 14 and 15.
 
 <a href="http://www.pacapitol.com/plan-a-visit/maps/">North Office Building, Hearing Room 1</a> in Harrisburg | <a href="https://www.redistricting.state.pa.us/commission/livestream">Livestream</a>
 
-<b>Saturday, Jan. 15 from 9 a.m.–noon</b>: <a href="https://us02web.zoom.us/webinar/register/WN_-IQWRL6wTSGLpAtdrXvaGw" target="_blank">Sign up to speak in person or virtually</a>
+<b>Saturday, Jan. 15 from 9 a.m.–noon</b>: <a href="" data-gone="https://us02web.zoom.us/webinar/register/WN_-IQWRL6wTSGLpAtdrXvaGw" target="_blank">Sign up to speak in person or virtually</a>
 
 <a href="http://www.pacapitol.com/plan-a-visit/maps/">North Office Building, Hearing Room 1</a> in Harrisburg | <a href="https://www.redistricting.state.pa.us/commission/livestream">Livestream</a>
 
