@@ -86,10 +86,6 @@
         ></div>
       </div>
 
-      {{ if .Param "show-support-box" }}
-        {{ partial "component/support.html" . }}
-      {{ end }}
-
       {{ with .Param "authors" }}
         <footer class="block" data-ga-category="inline-footer:author">
           {{ range $name := . }}
