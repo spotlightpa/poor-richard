@@ -86,9 +86,11 @@
               </div>
 
               {{ partial "component/most-popular.html" dict }}
-              {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+              {{ $edPicks := partial "helper/get-items" "sidebar" }}
               {{ range $edPicks }}
-                {{ partial "component/editors-picks.html" . }}
+                {{ if .page }}
+                  {{ partial "component/editors-picks.html" . }}
+                {{ end }}
               {{ end }}
               {{ if .Param "sidebar-sticky-images" }}
                 <div
