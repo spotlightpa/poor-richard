@@ -26,16 +26,43 @@
     </div>
   </div>
 </nav>
-<div class="w-full bg-black py-5" x-show="catNav">
-  <div class="max-w-6xl mx-auto px-5 w-full grid grid-cols-3 gap-5">
-    <div>Col 1</div>
-    <div>Col 2</div>
-    <div>Col 3</div>
+<div class="w-full bg-gray-500 py-5" x-show="catNav">
+  <div class="max-w-6xl mx-auto px-5 w-full grid grid-cols-2 md:grid-cols-4 gap-10 font-bold">
+    <div class="col-span-2">
+      <img src="https://via.placeholder.com/750x425.png">
+      <p class="mt-1">Pa. primary election 2022: See how much money the GOP candidates for governor have raised</p>
+    </div>
+    <div>
+      <ul>
+        <li class="mb-1">Coronavirus</li>
+        <li class="mb-1">Criminal Justice</li>
+        <li class="mb-1">Economy</li>
+        <li class="mb-1">Editor's Notes</li>
+        <li class="mb-1">Education</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="mb-1">Elections</li>
+        <li class="mb-1">Environment</li>
+        <li class="mb-1">Events</li>
+        <li class="mb-1">Eviction</li>
+        <li class="mb-1">Health</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="mb-1">Pensions</li>
+        <li class="mb-1">Politics</li>
+        <li class="mb-1">Redistricting</li>
+        <li class="mb-1">The Capitol</li>
+      </ul>
+    </div>
   </div>
 </div>
 <div class="max-w-6xl mx-auto px-5 flex w-full">
   <div class="w-full md:w-3/5 hidden md:block"></div>
-  <div class="w-full md:w-2/5 pl-5">
-    <button class="px-5 pb-1 rounded-b-lg bg-black text-white text-lg" x-on:click="catNav = ! catNav">More Topics</button>
+  <div class="w-full md:w-2/5 md:pl-5">
+    <button class="px-5 pb-1 rounded-b-lg bg-black text-white text-lg" x-on:click="catNav = ! catNav"><span x-show="!catNav">More</span><span x-show="catNav">Less</span> Topics</button>
   </div>
 </div>

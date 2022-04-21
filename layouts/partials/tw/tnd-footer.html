@@ -1,0 +1,79 @@
+{{ define "footer-link" }}
+  <li>
+    <a
+      href="{{ .URL }}"
+      class="{{ .Pre }}"
+      {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
+    >
+      {{ .Name }}
+    </a>
+  </li>
+{{ end }}
+
+
+<section
+  data-sf-campaign="701f4000000TVuIAAW"
+  id="footer"
+>
+  <div class="bg-black py-20 text-white">
+    <div class="max-w-4xl mx-auto mb-10 px-5">
+      <div class="grid grid-cols-2 gap-5 md:gap-0">
+        <div class="flex justify-end md:pr-20">
+          <a class="px-3 inline-block leading-tight md:px-5 py-2 bg-gray-500 hover:bg-black hover:text-white border border-black hover:border-white duration-300 text-xl md:text-3xl text-black font-bold text-center" href="#">Send a News Tip</a>
+        </div>
+        <div class="flex justify-start md:pl-20">
+          <a class="px-3 inline-block leading-tight md:px-5 py-2 bg-red hover:bg-black hover:text-red  border border-black hover:border-red duration-300 text-xl md:text-3xl text-black font-bold text-center" href="#">Make a Donation</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto mb-10 px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+        <div class="md:pr-10">
+          <svg class="fill-current w-full">
+            <title>Home</title>
+            <desc>Spotlight PA logo</desc>
+            <use href="#banner-svg"></use>
+          </svg>
+        </div>
+        <div class="md:pl-10 text-2xl md:text-4xl font-bold">
+          Award &amp; Impact Supporters
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto mb-10 text-center font-bold text-lg md:text-2xl px-5">
+      Spotlight PA relies on funding from foundations and readers like you who are committed to accountability journalism that gets results.
+    </div>
+
+    <div class="max-w-4xl mx-auto font-bold text-2xl px-5">
+      <h3 class="text-white font-bold text-2xl md:text-3xl mb-2">Sign up for Spotlight PA's newsletters</h3>
+      <form class="flex flex-wrap items-center">
+        <div class="mr-5 flex-1">
+          <input type="text" class="p-3 w-full" placeholder="Enter Your Email">
+        </div>
+        <div class="text-sm flex flex-col md:mr-20">
+          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="PA Local">PA Local</label>
+          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="PA Post">PA Post</label>
+          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="The Investigator">The Investigator</label>
+        </div>
+        <div class="w-full md:w-auto mt-5 md:mt-0">
+          <input type="submit" class="px-5 py-2 bg-gray-500 hover:bg-black hover:text-white border border-black hover:border-white duration-300 text-3xl text-black font-bold cursor-pointer">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="bg-gray-500">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="column is-3" data-ga-category="follow">
+        <h3 class="has-text-weight-semibold is-uppercase">Follow Us</h3>
+        <ul>
+          {{ range .Site.Menus.social }}
+            {{ template "footer-link" . }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
