@@ -1,6 +1,6 @@
 [build]
 base = ""
-command = "yarn build:prod"
+# command = "yarn build:stage"
 publish = "public"
 
 [build.environment]
