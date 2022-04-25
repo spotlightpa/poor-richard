@@ -22,11 +22,13 @@ topics = ["Elections"]
 
 The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination will gather tonight at Dickinson College for a debate hosted by Spotlight PA and its founding members.
 
-Candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, Julia Terruso of The Inquirer. 
+Candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, Julia Terruso of The Inquirer.
 
-The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following link:
+The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following link and in the embed below:
 
 - <a href="https://www.youtube.com/watch?v=lxzk5rK5lbk&ab_channel=PCNTV" target="_blank">YouTube</a>
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpcntv%2Fvideos%2F712294826786492%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
