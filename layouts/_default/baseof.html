@@ -28,8 +28,7 @@
           {{ partialCached "component/banner.html" . }}
         {{ end }}
       {{ end }}
-      {{ partial "tw/small-nav.html" . }}
-      {{ block "nav" . }}{{ partial "tw/nav-hero.html" . }}{{ end }}
+      <!--{{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}-->
       {{ block "topper" . }}
         {{ if .Param "topper-active" }}
           {{ partialCached "component/topper.html" . }}

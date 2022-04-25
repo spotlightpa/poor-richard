@@ -2,105 +2,54 @@
 {{ $bgImg = $bgImg.Resize "1200x" | fingerprint }}
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idFname := partial "helper/new-id" . }}
-{{ $idLname := partial "helper/new-id" . }}<style>
-#about-hero {
-  background-image: url('{{ $bgImg.RelPermalink }}');
-  background-position: 80%;
-}
-</style>
-<section
-  id="about-hero"
-  class="hero has-bg-image is-on-gradient is-black has-background-link"
-  data-ga-category="about-hero"
->
-  <div class="about-container">
-    <div class="block">
-      <h1
-        class="title has-text-white has-text-weight-bold is-size-1 is-size-2-mobile"
-      >
-        {{ .Title }}
-      </h1>
-    </div>
-    <div class="about-subblock">
-      <h2
-        class="subtitle has-text-weight-light is-size-2 is-size-3-mobile block"
-      >
-        {{ .Param "subhed" }}
-      </h2>
-      <div class="notification has-background-black-ter">
-        <form
-          action="{{ .Param "newsletters-action" }}"
-          method="post"
-          target="_blank"
-          data-ga-form="newsletters:investigator"
-        >
-          {{ partial "newsletter/investigator-hidden.html" . }}
-          <h2
-            class="title has-text-weight-medium is-uppercase has-text-centered is-size-3"
-          >
-            Sign up now for our weekly newsletter<span class="is-hidden-mobile"
-              >,
-              <em>The Investigator</em>
-            </span>
-          </h2>
-          <div class="field">
-            <label class="is-sr-only" for="{{ $idFname }}">First Name</label>
-            <div class="control">
-              <input
-                id="{{ $idFname }}"
-                class="input is-medium"
-                type="text"
-                name="FNAME"
-                placeholder="First Name"
-              />
-            </div>
-          </div>
-          <div class="field">
-            <label class="is-sr-only" for="{{ $idLname }}">Last Name</label>
-            <div class="control">
-              <input
-                id="{{ $idLname }}"
-                class="input is-medium"
-                type="text"
-                name="LNAME"
-                placeholder="Last Name"
-              />
-            </div>
-          </div>
-          <div class="field">
-            <label class="is-sr-only" for="{{ $idEmail }}">Email</label>
-            <div class="control has-icons-left has-icons-right is-expanded">
-              <input
-                id="{{ $idEmail }}"
-                class="input is-medium"
-                type="email"
-                name="EMAIL"
-                placeholder="Email"
-              />
-              <span class="icon is-large is-left has-text-primary">
-                <svg viewBox="0 0 1 1">
-                  <use xlink:href="#email-svg"></use>
-                </svg>
-              </span>
-              <span class="icon is-large is-right validator-icon">
-                <svg viewBox="0 0 1 1">
-                  <use xlink:href="#check-svg"></use>
-                </svg>
-              </span>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control is-expanded">
-              <button
-                type="submit"
-                class="button is-medium is-primary is-fullwidth"
-              >
-                Get Updates
-              </button>
-            </div>
-          </div>
-        </form>
+{{ $idLname := partial "helper/new-id" . }}
+
+{{ partial "tw/small-nav.html" . }}
+{{ partial "tw/nav-hero.html" . }}
+{{ partial "tw/tnd-page-header.html" . }}
+
+<section class="bg-g-3 py-10" id="impact-awards">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="uppercase text-g-6 text-6xl font-black mb-10">Impact &amp; Awards</h2>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-3/5 md:pr-10">
+        <img src="https://via.placeholder.com/800x452.png">
       </div>
+      <div class="w-full md:w-2/5">
+        <h3 class="text-black font-black text-3xl">At Risk, In The Dark</h3>
+        <p class="mb-2">As the Mariner East pipelines become a permanent underpinning of Pennsylvania, secrecy and a patchwork of emergency plans have left many communities in the dark about what to do in case of an accident.</p>
+        <div class="text-2xl">2 Articles</div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap mt-10 md:flex-row-reverse">
+      <div class="w-full md:w-4/6 md:pl-10">
+        <img src="https://via.placeholder.com/961x550.png">
+      </div>
+      <div class="w-full md:w-2/6 md:text-right">
+        <h3 class="text-black font-black text-3xl">The PSERS Scandal</h3>
+        <p class="mb-2">Chronicling an FBI investigation into Pennsylvania's $64 billion public school pension fund and the resulting fallout.</p>
+        <div class="text-2xl">13 Articles</div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-12">
+      <a class="border border-black py-2 px-4 duration-300 hover:text-red hover:border-red font-bold text-2xl" href="#">See More Examples of Our Impact</a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-black bg-opacity-70 py-20">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex">
+      <div class="uppercase font-black text-white text-4xl" style="writing-mode: vertical-rl; text-orientation: mixed;">
+        Partners
+      </div>
+      <div class="text-white md:pl-20 max-w-3xl text-2xl">
+        Spotlight PA combines the strengths of The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune Review and WITF Public Media in a historic commitment to investigative and accountability reporting on state government and beyond.
+      </div>
+    </div>
+    <div class="flex justify-center mt-12">
+      <a class="border border-white text-white py-2 px-4 duration-300 hover:text-red hover:border-red font-bold text-2xl" href="#">See More of Our Partners</a>
     </div>
   </div>
 </section>
