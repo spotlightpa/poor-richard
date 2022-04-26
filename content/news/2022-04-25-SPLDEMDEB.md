@@ -1,8 +1,8 @@
 +++
 arc-id = "42ENONWJXVG7ZJ7O7HKIYB7IZQ"
-blurb = "The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination will gather tonight at Dickinson College."
+blurb = "The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination gathered at Dickinson College."
 byline = "Spotlight PA Staff"
-description = "The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination will gather tonight at Dickinson College."
+description = "The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination gathered at Dickinson College."
 image = "external/rzq0jhrbzktwbrw6cm41j27ez0.jpeg"
 image-credit = "VICKI VELLIOS BRINER / For Spotlight PA"
 image-description = "Four people are running for the nomination."
@@ -14,21 +14,15 @@ no-index = false
 published = 2022-04-25T05:00:00-04:00
 slug = "pa-primary-election-2022-democrat-senate-debate-watch/"
 suppress-date = false
-title = "Pa. primary election 2022: Watch Spotlight PA’s Democratic U.S. Senate debate live"
+title = "Pa. primary election 2022: Spotlight PA hosts Democratic U.S. Senate debate"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination will gather tonight at Dickinson College for a debate hosted by Spotlight PA and its founding members.
+The four candidates running in Pennsylvania’s primary election for the Democratic U.S. Senate nomination gathered at Dickinson College for a debate hosted by Spotlight PA and its founding members.
 
-Candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, Julia Terruso of The Inquirer.
-
-The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following link and in the embed below:
-
-- <a href="https://www.youtube.com/watch?v=lxzk5rK5lbk&ab_channel=PCNTV" target="_blank">YouTube</a>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lxzk5rK5lbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb all appeared. The debate was moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Julia Terruso of The Inquirer.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
