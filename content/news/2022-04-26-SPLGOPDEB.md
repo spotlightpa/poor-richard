@@ -22,7 +22,7 @@ topics = ["Elections"]
 
 Five candidates running in Pennsylvania’s U.S. Senate primary election for the Republican nomination will gather tonight at Dickinson College for a debate hosted by Spotlight PA and its founding members.
 
-Candidates Kathy Barnette, Jeff Bartos, Carla Sands, George Bochoetto, and Sean Gale are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Jonathan Tamari of The Inquirer.
+Candidates Kathy Barnette, Jeff Bartos, Carla Sands, George Bochetto, and Sean Gale are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Jonathan Tamari of The Inquirer.
 
 Seven candidates are running for the GOP nomination. Mehmet Oz was unable to “attend the debate on Tuesday due to a scheduling conflict,” his spokesperson said. Dave McCormick’s campaign responded to initial communications about the debate but not to requests to confirm he was not attending or to provide the reason why.
 
