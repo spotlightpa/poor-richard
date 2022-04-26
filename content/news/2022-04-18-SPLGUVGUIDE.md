@@ -59,7 +59,7 @@ Shapiro has listed defending voting access, maintaining abortion rights, and reb
 
 - New York Times: <a href="https://www.nytimes.com/2021/10/14/us/politics/josh-shapiro-pennsylvania-governor.html">In Pennsylvania Governor’s Race, Josh Shapiro Focuses on Voting Rights</a>
 
-<i><b>&gt;&gt; WATCH LIVE: </b></i><a href="https://www.spotlightpa.org/news/2022/03/pa-primary-2022-senate-race-republicans-democrats-debates/"><i><b>Spotlight PA hosts GOP gubernatorial debate April 19</b></i></a>
+<i><b>&gt;&gt; WATCH LIVE: </b></i><a href="https://www.spotlightpa.org/news/2022/03/pa-primary-2022-senate-race-republicans-democrats-debates/"><i><b>Spotlight PA hosts GOP gubernatorial debate</b></i></a>
 
 ## Republicans
 
@@ -171,7 +171,7 @@ Mastriano has highlighted anti-abortion policy, fiscal conservatism, and Second 
 
 <b>Read more:</b>
 
-- City &amp; State PA: <a href="https://www.cityandstatepa.com/politics/2022/01/5-takeaways-doug-mastriano-gubernatorial-campaign-launch/364293/">5 takeaways from Doug Mastriano’s gubernatorial campaign launch</a>
+- City &amp; State PA: <a href="https://www.cityandstatepa.com/content/5-takeaways-doug-mastriano-gubernatorial-campaign-launch">5 takeaways from Doug Mastriano’s gubernatorial campaign launch</a>
 
 - Inquirer: <a href="https://www.inquirer.com/politics/pennsylvania/doug-mastriano-subpoena-pennsylvania-governor-race-20220216.html">What to know about Doug Mastriano and why he got subpoenaed in the Jan. 6 Capitol probe</a>
 
@@ -225,7 +225,7 @@ Zama’s campaign has centered on education and health care, two things he says 
 
 - Capital-Star: <a href="https://www.penncapital-star.com/government-politics/capital-star-qa-pennsylvania-is-sick-and-needs-a-doctor-says-gop-gov-candidate-nche-zama/">Capital-Star Q+A: Pa. is sick and needs a doctor, says GOP Gov. candidate Nche Zama</a>
 
-- City &amp; State PA: <a href="https://www.cityandstatepa.com/personality/2022/02/gop-gubernatorial-hopeful-dr-nche-zama-promises-unite-pennsylvania/364233/">GOP gubernatorial hopeful Dr. Nche Zama promises to unite Pennsylvania</a>
+- City &amp; State PA: <a href="https://www.cityandstatepa.com/content/gop-gubernatorial-hopeful-dr-nche-zama-promises-unite-pennsylvania">GOP gubernatorial hopeful Dr. Nche Zama promises to unite Pennsylvania</a>
 
 - Pocono Record: <a href="https://www.poconorecord.com/story/news/politics/elections/state/2021/05/21/dr-nche-zama-announced-his-candidacy-governor-pennsylvania-republican-democrat-tom-wolf/5208601001/">Renowned surgeon from the Poconos throws hat into ring for governor</a>
 
