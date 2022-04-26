@@ -24,9 +24,9 @@ Five candidates running in Pennsylvania’s U.S. Senate primary election for the
 
 Candidates Kathy Barnette, Jeff Bartos, Carla Sands, George Bochoetto, and Sean Gale are scheduled to appear. The debate will be moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Jonathan Tamari of The Inquirer.
 
-Seven candidates are running for the GOP nomination. Mehmet Oz was unable to “attend the debate on Tuesday due to a scheduling conflict,” his spokesperson said. Dave McCormick’s campaign responded to initial communications about the debate but not to requests to confirm he was not attending or to provide the reason why. 
+Seven candidates are running for the GOP nomination. Mehmet Oz was unable to “attend the debate on Tuesday due to a scheduling conflict,” his spokesperson said. Dave McCormick’s campaign responded to initial communications about the debate but not to requests to confirm he was not attending or to provide the reason why.
 
-The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following links:
+The 90-minute debate is not open to the public, but you can watch it for free starting at 7 p.m. at the following link:
 
 - <a href="https://www.youtube.com/watch?v=sKeqrQ9MV8c&feature=youtu.be&ab_channel=PCNTV" target="_blank">YouTube</a>
 
