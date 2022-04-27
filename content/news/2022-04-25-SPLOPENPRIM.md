@@ -35,7 +35,7 @@ Primary races can be especially important in areas where voters heavily favor on
 
 Nearly <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Documents/currentvotestats.xls">1.3 million of the state’s 8.7 million registered voters are unaffiliated with the two major parties,</a> a number that rose <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Documents/Annual%20Reports%20on%20Voter%20Registration/2020-Annual-Voter-Registration-Report.pdf">by nearly 10% between 2016 and 2020</a> — outpacing gains made by Democrats and Republicans.
 
-That’s one of the reasons why Ballot PA — a coalition of civic and community organizations including Common Cause PA, the League of Women Voters, and the Committee of Seventy — has launched a campaign to open Pennsylvania’s closed primary system.
+That’s one of the reasons why Ballot PA — a project of the Committee of 70, organized in partnership with civic and community organizations including Common Cause PA and the League of Women Voters — has launched a campaign to open Pennsylvania’s closed primary system.
 
 “The primary election really is often the only election … so if you don’t get to vote in the primary, you basically don’t have a vote,” said David Thornburgh, executive director of Ballot PA and the former head of the Committee of Seventy. “It’s hard to find a better example of taxation without representation.”
 
