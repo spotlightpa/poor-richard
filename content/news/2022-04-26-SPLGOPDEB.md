@@ -3,8 +3,8 @@ arc-id = "XC7QYEIZ3NB3XCJGA7HJ4FTRZI"
 blurb = "Five candidates running in Pennsylvania’s U.S. Senate primary election for the Republican nomination gathered at Dickinson College on Tuesday."
 byline = "Spotlight PA Staff"
 description = "Five candidates running in Pennsylvania’s U.S. Senate primary election for the Republican nomination gathered at Dickinson College on Tuesday."
-image = "external/9b02rsyscxwdnw0xpe9w7p3jar.jpeg"
-image-credit = "Amanda Berg / For Spotlight PA "
+image = "2022/04/01h6-jjgh-rcjv-19dk.png"
+image-credit = "Screenshot via PCN"
 image-description = "Seven candidates are running for the GOP nomination."
 internal-budget = "Pa. primary election 2022: Watch Spotlight PA’s Republican U.S. Senate debate live"
 internal-id = "SPLGOPDEB"
@@ -25,6 +25,8 @@ Five candidates running in Pennsylvania’s U.S. Senate primary election for the
 Candidates Kathy Barnette, Jeff Bartos, Carla Sands, George Bochetto, and Sean Gale all appeared. The debate was moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Jonathan Tamari of The Inquirer.
 
 Seven candidates are running for the GOP nomination. Mehmet Oz was unable to “attend the debate on Tuesday due to a scheduling conflict,” his spokesperson said. Dave McCormick’s campaign responded to initial communications about the debate but not to requests to confirm he was not attending or to provide the reason why.
+
+<a href="http://players.brightcove.net/2549849263001/default_default/index.html?videoId=6305224549001" target="_blank">Watch video of the debate here</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
