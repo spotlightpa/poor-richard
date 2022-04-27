@@ -23,6 +23,8 @@ The four candidates running in Pennsylvania’s primary election for the Democra
 
 Candidates John Fetterman, Malcolm Kenyatta, Alexandria Khalil, and Conor Lamb all appeared. The debate was moderated by Scott LaMar, host of WITF’s “Smart Talk,” with questions posed by PennLive’s Ivey DeJesus, Paula Reed Ward of TribLIVE, and Julia Terruso of The Inquirer.
 
+<a href="http://players.brightcove.net/2549849263001/default_default/index.html?videoId=6305118992001" target="_blank">Watch video of the debate</a>. 
+
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 <b>READ MORE:</b>
