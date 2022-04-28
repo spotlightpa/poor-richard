@@ -13,6 +13,11 @@
   <meta property="og:image" content="{{ $imgSrc }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  {{ $imgOpt = dict "filename" . "width" 1200 "height" 900 }}
+  {{ $imgSrc = partial "helper/imgproxy" $imgOpt }}
+  <meta property="og:image" content="{{ $imgSrc }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="900" />
 {{ end }}
 
 {{ if .Param "no-index" }}
