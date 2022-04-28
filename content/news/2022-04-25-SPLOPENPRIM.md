@@ -31,7 +31,7 @@ However, with that choice, Dakey knew that she would forgo the ability to vote f
 
 Pennsylvania is one of only nine states with a closed primary system. People who register without a party affiliation or with smaller third parties, such as the Green or the Libertarian Party, are unable to vote for Democratic or Republican candidates in the spring races that determine who runs in the general election.
 
-Primary races can be especially important in areas where voters heavily favor one party as they essentially decides which candidate will win the position.
+Primary races can be especially important in areas where voters heavily favor one party as they essentially decide which candidate will win the position.
 
 Nearly <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Documents/currentvotestats.xls">1.3 million of the state’s 8.7 million registered voters are unaffiliated with the two major parties,</a> a number that rose <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Documents/Annual%20Reports%20on%20Voter%20Registration/2020-Annual-Voter-Registration-Report.pdf">by nearly 10% between 2016 and 2020</a> — outpacing gains made by Democrats and Republicans.
 
@@ -57,7 +57,7 @@ But what was once a solution to a procedural electoral problem has become a syst
 
 In addition to being in line with democratic principles, Thornburgh said opening the primary system would mitigate the increasing polarization in Pennsylvania politics.
 
-Studies have shown that polarization is rising in state legislatures across the country a, in part due to primaries. <a href="https://stanforddpl.org/papers/handan-nader_myers_hall_polarization_2022/handan-nader_myers_hall_polarization_2022.pdf">A recent Stanford University study</a> found that “more-extreme candidates” do better in contested primaries– races that have multiple candidates.
+Studies have shown that polarization is rising in state legislatures across the country, in part due to primaries. <a href="https://stanforddpl.org/papers/handan-nader_myers_hall_polarization_2022/handan-nader_myers_hall_polarization_2022.pdf">A recent Stanford University study</a> found that “more-extreme candidates” do better in contested primaries– races that have multiple candidates.
 
 That same study found that nearly 80% of statehouse elections across the country are determined by the primary. In part due to self-sorting, most legislative districts are small enough that they have a politically cohesive partisan presence.
 
