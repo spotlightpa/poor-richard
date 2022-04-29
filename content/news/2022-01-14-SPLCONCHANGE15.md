@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2022-01-14T13:55:01.194-05:00
 slug = "pennsylvania-constitutional-amendments-voters-id-regulations"
+suppress-date = false
 title = "Voters could be flooded with proposed changes to the Pa. Constitution in 2023"
 topics = ["The Capitol"]
 +++
@@ -46,7 +47,7 @@ Two of the proposed amendments would send voters ideas Wolf has already rejected
 
 “[The bill as amended] has very little if nothing to do with any factual issue that we’re facing as a state,” Ali of Common Cause said.
 
-Another proposed amendment would give a simple majority in the legislature power to override executive orders and administrative regulations, a reaction to Wolf’s actions during the pandemic as well as his announcement that <a href="https://stateimpact.npr.org/pennsylvania/2022/01/10/wolf-vetoes-measure-to-block-rggi-entrance/">Pennsylvania would join a coalition of states in regulating carbon emissions</a>.
+Another proposed amendment would give a simple majority in the legislature power to override executive orders and administrative regulations, a reaction to Wolf’s actions during the pandemic as well as his announcement that <a href="https://web.archive.org/web/20220425011408/https://stateimpact.npr.org/pennsylvania/2022/01/10/wolf-vetoes-measure-to-block-rggi-entrance/">Pennsylvania would join a coalition of states in regulating carbon emissions</a>.
 
 The Pennsylvania Constitution requires both the state House and Senate to pass proposed amendments in two concurrent sessions before they appear on the ballot.
 
