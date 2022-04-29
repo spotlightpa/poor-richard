@@ -131,7 +131,7 @@ His election platform has focused on promoting economic growth through tradition
 
 <b>Supports repealing Pa.’s no-excuse mail voting law?</b> Yes. When Commonwealth Court struck down Act 77 as unconstitutional (<a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-mail-voting-unconstitutional-supreme-court-appeal/">a ruling being appealed in the state Supreme Court</a>), Gerow called it “<a href="https://twitter.com/Charlie_Gerow/status/1487153378329255943">great news</a> for election integrity and the prevention of voter fraud and ballot harvesting.” Gerow’s name was also listed on a certificate to assign Pennsylvania’s Electoral College votes to Trump, <a href="https://lancasteronline.com/news/politics/pa-republicans-hedged-language-may-have-saved-them-from-prosecution-over-electoral-vote-scheme/article_849d4f7e-7589-11ec-8881-6383a823557d.html">should a court challenge have succeeded</a>.
 
-<b>Endorsements:</b> U.S. Rep. Glenn Thompson; Michael Regan, son of President Ronald Regan; former Speaker of the U.S. House Newt Gingrich; Matt Schlapp, executive director of CPAC; former U.S. Rep. Bob Walker; state Rep. Jerry Knowles; former Maryland Gov. Bob Ehrlich
+<b>Endorsements:</b> U.S. Rep. Glenn Thompson; Michael Reagan, son of President Ronald Reagan; former Speaker of the U.S. House Newt Gingrich; Matt Schlapp, executive director of CPAC; former U.S. Rep. Bob Walker; state Rep. Jerry Knowles; former Maryland Gov. Bob Ehrlich
 
 Read more:<a href="https://www.inquirer.com/politics/election/charlie-gerow-republican-pennsylvania-2022-governor-race-20210616.html"> </a>
 
