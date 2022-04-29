@@ -1,33 +1,20 @@
 +++
 arc-id = "A6RRWTTNMZBG7HPE4ZPRNRXDHY"
-internal-id = "SPLDINNIMAN11"
-internal-budget = ""
-image = "2020/02/01f43aap5gxfhdyj.jpeg"
-image-description = "Pennsylvania State Sen. Andy Dinniman."
-image-caption = ""
-image-credit = "David Swanson / Staff Photographer"
-image-size = ""
-published = 2020-02-10T17:36:00Z
-slug = "andy-dinniman-retirement-pennsylvania"
 authors = ["Cynthia Fernandez"]
-byline = ""
-title = "The Pennsylvania Senate's most outspoken pipeline critic is retiring"
-subtitle = ""
-description = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
 blurb = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
+description = "Andy Dinniman, a longtime Chester County Democrat and one of the most prominent critics of the Mariner East pipeline system, will not seek reelection."
+image = "2020/02/01f43aap5gxfhdyj.jpeg"
+image-credit = "David Swanson / Staff Photographer"
+image-description = "Pennsylvania State Sen. Andy Dinniman."
+internal-id = "SPLDINNIMAN11"
 kicker = "Capitol Notebook"
-topics = []
-series = []
-linktitle = ""
-suppress-featured = true
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-02-10T12:36:00-05:00
+slug = "andy-dinniman-retirement-pennsylvania"
+suppress-date = false
+suppress-featured = true
+title = "The Pennsylvania Senate's most outspoken pipeline critic is retiring"
 +++
 
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
@@ -46,7 +33,7 @@ In the legislature, Dinniman has introduced bills to reform pipeline safety regu
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The Federal Bureau of Investigation is probing how Gov. Tom Wolf’s administration issued permits for the Mariner East project. Wolf has <a href="https://stateimpact.npr.org/pennsylvania/2019/11/14/wolf-says-hes-unaware-of-any-wrongdoing-in-pipeline-permitting-process/" target="_blank">denied</a> any knowledge of wrongdoing. The Chester County district attorney is also leading a probe and in December <a href="https://www.inquirer.com/news/mariner-east-pipeline-workers-state-constables-chester-county-tom-hogan-20191203.html" target="_blank">filed criminal charges</a> against pipeline security personnel.
+The Federal Bureau of Investigation is probing how Gov. Tom Wolf’s administration issued permits for the Mariner East project. Wolf has <a href="https://web.archive.org/web/20220419071244/https://stateimpact.npr.org/pennsylvania/2019/11/14/wolf-says-hes-unaware-of-any-wrongdoing-in-pipeline-permitting-process/">denied</a> any knowledge of wrongdoing. The Chester County district attorney is also leading a probe and in December <a href="https://www.inquirer.com/news/mariner-east-pipeline-workers-state-constables-chester-county-tom-hogan-20191203.html" target="_blank">filed criminal charges</a> against pipeline security personnel.
 
 Dinniman joins more than a dozen other state lawmakers who have announced their retirements from the General Assembly in recent months, most notably <a href="https://www.inquirer.com/news/pennsylvania/spl/mike-turzai-pennsylvania-house-speaker-retiring-20200123.html" target="_blank">House Speaker Mike Turzai</a> (R., Allegheny). <a data-gone="https://andydinniman.com/insights/2020/02/07/a-difficult-decision-a-clear-choice-the-right-path-forward/">Dinniman endorsed Don Vymazal</a>, his director of government relations and policy, to succeed him in the heavily Democratic district.
 
