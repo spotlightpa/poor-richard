@@ -1,5 +1,5 @@
 {{ define "footer-link" }}
-  <li>
+  <li class="inline-block">
     <a
       href="{{ .URL }}"
       class="{{ .Pre }}"
@@ -15,57 +15,70 @@
   data-sf-campaign="701f4000000TVuIAAW"
   id="footer"
 >
-  <div class="bg-black py-20 text-white">
-    <div class="max-w-4xl mx-auto mb-10 px-5">
+  <div class="py-20 text-white bg-black">
+    {{/*  
+      //These were making the page too busy, but will leave for a moment to allow for thinking through
+      <div class="hidden max-w-4xl px-5 mx-auto mb-10">
       <div class="grid grid-cols-2 gap-5 md:gap-0">
         <div class="flex justify-end md:pr-20">
-          <a class="px-3 inline-block leading-tight md:px-5 py-2 bg-gray-500 hover:bg-black hover:text-white border border-black hover:border-white duration-300 text-xl md:text-3xl text-black font-bold text-center" href="#">Send a News Tip</a>
+          <a class="inline-block px-3 py-2 text-xl font-bold leading-tight text-center text-black duration-300 bg-gray-500 border border-black rounded md:px-5 hover:bg-black hover:text-white hover:border-white md:text-3xl" href="#">Send a News Tip</a>
         </div>
         <div class="flex justify-start md:pl-20">
-          <a class="px-3 inline-block leading-tight md:px-5 py-2 bg-red hover:bg-black hover:text-red  border border-black hover:border-red duration-300 text-xl md:text-3xl text-black font-bold text-center" href="#">Make a Donation</a>
+          <a class="inline-block px-3 py-2 text-xl font-bold leading-tight text-center text-black duration-300 border border-black rounded md:px-5 bg-red hover:bg-black hover:text-red hover:border-red md:text-3xl" href="#">Make a Donation</a>
         </div>
       </div>
-    </div>
+    </div>  */}}
 
-    <div class="max-w-5xl mx-auto mb-10 px-5">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+    <div class="max-w-5xl px-5 mx-auto">
+      <div class="grid items-center grid-cols-1 md:grid-cols-2">
         <div class="md:pr-10">
-          <svg class="fill-current w-full">
+          <svg class="w-full fill-current">
             <title>Home</title>
             <desc>Spotlight PA logo</desc>
             <use href="#banner-svg"></use>
           </svg>
         </div>
-        <div class="md:pl-10 text-2xl md:text-4xl font-bold">
-          Award &amp; Impact Supporters
+        <div class="text-2xl font-bold text-white md:pl-10 md:text-4xl">
+          <a href="block">Donate Now <svg class="inline-block fill-current" fill="#FFF" width="40pt" height="40pt" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M87.453 43.855a6.595 6.595 0 0 0-6.55-5.144H43.546l5.047-4.419.004-.003a8.064 8.064 0 0 0 .984-11.062l-.902-1.13h-.004a4.703 4.703 0 0 0-6.207-1.128l-18.598 11.5a26.37 26.37 0 0 0-13.71 22.37 25.812 25.812 0 0 0 25.163 25.805h18.387a6.452 6.452 0 0 0 6.45-6.45 6.306 6.306 0 0 0-1.114-3.613 6.454 6.454 0 0 0 4.34-6.066 6.344 6.344 0 0 0-1.113-3.613 6.46 6.46 0 0 0 3.902-3.836 6.468 6.468 0 0 0-.45-5.453H81.13a6.462 6.462 0 0 0 5.007-2.375 6.474 6.474 0 0 0 1.317-5.383zm-4.031 3.582-.004-.004a3.212 3.212 0 0 1-2.29.953H48.388a1.614 1.614 0 0 0 0 3.227H60.16a3.228 3.228 0 0 1 0 6.453H48.387a1.61 1.61 0 1 0 0 3.223h8.547c1.785 0 3.226 1.445 3.226 3.226s-1.441 3.227-3.226 3.227h-8.547a1.614 1.614 0 0 0 0 3.227h5.324a3.222 3.222 0 0 1 3.223 3.226 3.22 3.22 0 0 1-3.223 3.223H35.969A22.577 22.577 0 0 1 13.387 54.84a23.182 23.182 0 0 1 12.145-19.598l18.629-11.47a1.505 1.505 0 0 1 1.937.34l.903 1.13a4.837 4.837 0 0 1-.598 6.628l-8.274 7.242a1.605 1.605 0 0 0-.44 1.778 1.606 1.606 0 0 0 1.507 1.043h41.707a3.401 3.401 0 0 1 3.387 2.55 3.207 3.207 0 0 1-.872 2.95z"/></svg>
+          </a>
+          {{/*  <br />
+          <a href="">Awards &amp; Impact</a>  */}}
+
+
+          
+         
+ 
+           
         </div>
       </div>
     </div>
 
-    <div class="max-w-4xl mx-auto mb-10 text-center font-bold text-lg md:text-2xl px-5">
+    <div class="max-w-4xl px-5 mx-auto mb-24 text-lg font-bold text-center opacity-40 md:text-2xl">
       Spotlight PA relies on funding from foundations and readers like you who are committed to accountability journalism that gets results.
     </div>
 
-    <div class="max-w-4xl mx-auto font-bold text-2xl px-5">
-      <h3 class="text-white font-bold text-2xl md:text-3xl mb-2">Sign up for Spotlight PA's newsletters</h3>
+    <div class="max-w-4xl px-5 mx-auto text-2xl font-bold">
+      <h3 class="mb-2 text-2xl font-bold text-white md:text-3xl">Sign up for Spotlight PA's newsletters</h3>
       <form class="flex flex-wrap items-center">
-        <div class="mr-5 flex-1">
-          <input type="text" class="p-3 w-full" placeholder="Enter Your Email">
+        <div class="flex-1 mr-5">
+          <input type="text" class="w-full p-3" placeholder="Enter Your Email">
         </div>
-        <div class="text-sm flex flex-col md:mr-20">
-          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="PA Local">PA Local</label>
-          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="PA Post">PA Post</label>
-          <label class="pb-1" for="pa-local"><input class="mr-1" type="checkbox" value="The Investigator">The Investigator</label>
+        <div class="flex flex-col text-sm md:mr-20">
+          <label class="pb-1" for="pa-local"><input checked class="mr-1" type="checkbox" value="PA Local">PA Local</label>
+          <label class="pb-1" for="pa-local"><input checked class="mr-1" type="checkbox" value="PA Post">PA Post</label>
+          <label class="pb-1" for="pa-local"><input checked class="mr-1" type="checkbox" value="The Investigator">The Investigator</label>
         </div>
         <div class="w-full md:w-auto">
-          <button class="px-5 py-2 bg-gray-500 hover:bg-black hover:text-white border border-black hover:border-white duration-300 text-3xl text-black font-bold cursor-pointer">Subscribe</button>
+          <button class="px-5 py-2 text-3xl font-bold text-black duration-300 border border-black rounded cursor-pointer bg-yellow hover:bg-black hover:text-white hover:border-white" style="background-color:#FEDE7F !important;">Subscribe</button>
         </div>
       </form>
     </div>
   </div>
 
-  <div class="bg-gray-500">
-    <div class="max-w-5xl mx-auto px-5">
+  <div class="bg-beige">
+    <div class="max-w-5xl px-5 mx-auto">
+
+      
       <div class="column is-3" data-ga-category="follow">
         <h3 class="has-text-weight-semibold is-uppercase">Follow Us</h3>
         <ul>
@@ -73,6 +86,14 @@
             {{ template "footer-link" . }}
           {{ end }}
         </ul>
+      </div>
+
+      <div class="flex items-center space-x-12">
+        <div class="inline-block py-2 text-xs ">Spotlight PA &bull; 225 Market St Suite 502A &bull; Harrisburg PA 17101 </div>
+      <div class="inline-block text-xs ">
+        <a href="">privacy policy</a>
+        <a href="" class="mx-2">cookie policy</a>
+      </div>
       </div>
     </div>
   </div>
