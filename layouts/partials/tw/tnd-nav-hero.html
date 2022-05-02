@@ -14,7 +14,7 @@
           <use href="#banner-svg"></use>
         </svg>
       </a>
-      <div class="text-sm text-white">
+      <div class="text-sm text-white opacity-60">
         investigative<br>
         reporting on...
       </div>
@@ -47,24 +47,24 @@
         <h4 class="w-full mb-3 border-b border-gray-500">More Topics</h4>
         <div class="grid grid-cols-3 gap-4">
           <ul>
-            <li class="mb-1">Coronavirus</li>
-            <li class="mb-1">Criminal Justice</li>
-            <li class="mb-1">Economy</li>
-            <li class="mb-1">Editor's Notes</li>
-            <li class="mb-1">Education</li>
+            <li class="mb-1"><a href="#">Coronavirus</a></li>
+            <li class="mb-1"><a href="#">Criminal Justice</a></li>
+            <li class="mb-1"><a href="#">Economy</a></li>
+            <li class="mb-1"><a href="#">Editor's Notes</a></li>
+            <li class="mb-1"><a href="#">Education</a></li>
           </ul>      
           <ul>
-            <li class="mb-1">Elections</li>
-            <li class="mb-1">Environment</li>
-            <li class="mb-1">Events</li>
-            <li class="mb-1">Eviction</li>
-            <li class="mb-1">Health</li>
+            <li class="mb-1"><a href="#">Elections</a></li>
+            <li class="mb-1"><a href="#">Environment</a></li>
+            <li class="mb-1"><a href="#">Events</a></li>
+            <li class="mb-1"><a href="#">Eviction</a></li>
+            <li class="mb-1"><a href="#">Health</a></li>
           </ul>        
           <ul>
-            <li class="mb-1">Pensions</li>
-            <li class="mb-1">Politics</li>
-            <li class="mb-1">Redistricting</li>
-            <li class="mb-1">The Capitol</li>
+            <li class="mb-1"><a href="#">Pensions</a></li>
+            <li class="mb-1"><a href="#">Politics</a></li>
+            <li class="mb-1"><a href="#">Redistricting</a></li>
+            <li class="mb-1"><a href="#">The Capitol</a></li>
           </ul>
         </div>
       </div>
@@ -74,6 +74,6 @@
 <div class="flex w-full max-w-6xl px-5 mx-auto">
   <div class="hidden w-full md:w-1/2 md:block"></div>
   <div class="w-full md:w-1/2 md:pl-1">
-    <button class="px-4 pt-1 pb-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:shadow-lg" x-on:click="catNav = ! catNav" x-transition :class="catNav ? 'bg-beige border-b border-gray-500 text-black' : ''"><span x-show="!catNav">More</span><span x-show="catNav">Fewer</span> Topics</button>
+    <button class="px-4 pt-1 pb-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:text-gray-500 hover:shadow-lg" x-on:click="catNav = ! catNav" x-transition :class="catNav ? 'bg-beige border-b border-gray-500 hover:text-black text-black' : ''"><span x-show="!catNav">More</span><span x-show="catNav">Fewer</span> Topics</button>
   </div>
 </div>
