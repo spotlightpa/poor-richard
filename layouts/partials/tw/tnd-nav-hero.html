@@ -1,68 +1,79 @@
 <nav
-  class="bg-black py-8 md:py-16"
+  class="py-8 bg-black md:py-12"
   id="#top"
   data-ga-category="navbar"
   data-sf-campaign="701f4000000TVu3AAG"
   aria-label="main navigation"
 >
-  <div class="max-w-6xl mx-auto px-5 flex flex-wrap items-center w-full">
-    <div class="w-full md:w-3/5 flex items-center">
-      <a href="/" class="text-white hover:text-gray-500 duration-300 flex-1 pr-3" data-ga-category="logo">
-        <svg class="fill-current w-full">
+  <div class="flex flex-wrap items-center w-full max-w-6xl px-3 mx-auto">
+    <div class="flex items-center w-full md:w-1/2">
+      <a href="/" class="flex-1 pr-3 text-white duration-300 hover:text-gray-500" data-ga-category="logo">
+        <svg class="w-full fill-current">
           <title>Home</title>
           <desc>Spotlight PA logo</desc>
           <use href="#banner-svg"></use>
         </svg>
       </a>
-      <div class="text-white">
+      <div class="text-sm text-white">
         investigative<br>
         reporting on...
       </div>
     </div>
-    <div class="w-full md:w-2/5">
-      <div class="flex-1 pl-5 text-white text-2xl leading-loose relative">
-        Criminal Justice, Coronavirus, The Capitol, Elections, Redistricting, Politics, Education, Eviction, Pensions, Health, Environment
+    <div class="w-full md:w-1/2">
+      <div class="relative flex-1 pl-2 text-2xl leading-loose text-white lg:pl-5">
+        <a href="#" class="pl-1">Criminal Justice</a>,
+        <a href="#" class="pl-1">Coronavirus</a>,
+        <a href="#" class="pl-1">The Capitol</a>,
+        <a href="#" class="pl-1">Elections</a>,
+        <a href="#" class="pl-1">Redistricting</a>,
+        <a href="#" class="pl-1">Politics</a>,
+        <a href="#" class="pl-1">Education</a>,
+        <a href="#" class="pl-1">Eviction</a>,
+        <a href="#" class="pl-1">Pensions</a>,
+        <a href="#" class="pl-1">Health</a>,
+        <a href="#" class="pl-1">Environment</a>
       </div>
     </div>
   </div>
 </nav>
-<div class="w-full bg-gray-500 py-5" x-show="catNav">
-  <div class="max-w-6xl mx-auto px-5 w-full grid grid-cols-2 md:grid-cols-4 gap-10 font-bold">
-    <div>
+<div class="w-full py-12 bg-beige" x-transition  x-show="catNav">
+  <div class="grid w-full max-w-6xl grid-cols-2 gap-10 px-5 mx-auto font-bold md:grid-cols-4">
+    <div class="col-span-1">
       <img src="https://via.placeholder.com/750x425.png">
-      <p class="mt-1">Pa. primary election 2022: See how much money the GOP candidates for governor have raised</p>
+      <p class="mt-1 text-sm">Pa. primary election 2022: See how much money the GOP candidates for governor have raised</p>
     </div>
-    <div>
-      <ul>
-        <li class="mb-1">Coronavirus</li>
-        <li class="mb-1">Criminal Justice</li>
-        <li class="mb-1">Economy</li>
-        <li class="mb-1">Editor's Notes</li>
-        <li class="mb-1">Education</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li class="mb-1">Elections</li>
-        <li class="mb-1">Environment</li>
-        <li class="mb-1">Events</li>
-        <li class="mb-1">Eviction</li>
-        <li class="mb-1">Health</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li class="mb-1">Pensions</li>
-        <li class="mb-1">Politics</li>
-        <li class="mb-1">Redistricting</li>
-        <li class="mb-1">The Capitol</li>
-      </ul>
-    </div>
+    
+      <div class="col-span-3">
+        <h4 class="w-full mb-3 border-b border-gray-500">More Topics</h4>
+        <div class="grid grid-cols-3 gap-4">
+          <ul>
+            <li class="mb-1">Coronavirus</li>
+            <li class="mb-1">Criminal Justice</li>
+            <li class="mb-1">Economy</li>
+            <li class="mb-1">Editor's Notes</li>
+            <li class="mb-1">Education</li>
+          </ul>      
+          <ul>
+            <li class="mb-1">Elections</li>
+            <li class="mb-1">Environment</li>
+            <li class="mb-1">Events</li>
+            <li class="mb-1">Eviction</li>
+            <li class="mb-1">Health</li>
+          </ul>        
+          <ul>
+            <li class="mb-1">Pensions</li>
+            <li class="mb-1">Politics</li>
+            <li class="mb-1">Redistricting</li>
+            <li class="mb-1">The Capitol</li>
+          </ul>
+        </div>
+      </div>
+    
   </div>
 </div>
-<div class="max-w-6xl mx-auto px-5 flex w-full">
-  <div class="w-full md:w-3/5 hidden md:block"></div>
-  <div class="w-full md:w-2/5 md:pl-5">
-    <button class="px-5 pb-1 rounded-b-lg bg-black text-white text-lg" x-on:click="catNav = ! catNav"><span x-show="!catNav">More</span><span x-show="catNav">Less</span> Topics</button>
+<div class="flex w-full max-w-6xl px-5 mx-auto">
+  <div class="hidden w-full md:w-1/2 md:block"></div>
+  <div class="w-full md:w-1/2 md:pl-1">
+    <button class="px-4 pt-1 pb-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:shadow-lg" x-on:click="catNav = ! catNav" x-transition :class="catNav ? 'bg-beige border-b border-gray-500 text-black' : ''"><span x-show="!catNav">More</span><span x-show="catNav">Fewer</span> Topics</button>
   </div>
 </div>
