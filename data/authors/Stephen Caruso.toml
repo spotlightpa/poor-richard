@@ -1,0 +1,10 @@
+name = "Stephen Caruso"
+firstName = "Stephen"
+lastName = "Caruso"
+title = "Capitol Reporter"
+email = "scaruso@spotlightpa.org"
+twitter = "StephenJ_Caruso"
+headshot = "2022/05/01h7-11aw-z4p0-yh4e.jpeg"
+content = "Stephen Caruso covers the Pennsylvania General Assembly and the governor’s office for Spotlight PA. Since 2018, he's written about campaign finance, legislative shenanigans, the state's teacher pension system, and the 2020 election and its aftermath. For this coverage, he's received multiple awards from the Pennsylvania NewsMedia Association. A New York native, Stephen graduated from the University of Pittsburgh in 2017 with a degree in economics. He learned how to be a journalist at his student newspaper, The Pitt News. He previously covered Harrisburg for the Pennsylvania Capital-Star and The PLS Reporter."
+active = true
+image-gravity = "fp:.5:.4"
