@@ -25,7 +25,7 @@ HARRISBURG — Five of the nine Republican candidates running to be Pennsylvania
 
 Senate President Pro Tempore Jake Corman (R., Centre), Montgomery County Commissioner Joe Gale, political strategist Charlie Gerow, former U.S. Rep. Melissa Hart (R., Pa.), and surgeon Nche Zama answered questions on issues including no-excuse mail voting, infrastructure, education, energy, and abortion.
 
-The other four candidates — including <a href="https://www.realclearpolitics.com/epolls/2022/governor/pa/pennsylvania-governor-republican-primary-7345.html" target="_blank">poll frontrunners</a> state Sen. Doug Mastriano (R., Franklin) and ex-U.S. Rep. Lou Barletta (R., Pa.) — did not participate. Three of them signed a letter demanding a partisan moderator. 
+The other four candidates — including <a href="https://www.realclearpolitics.com/epolls/2022/governor/pa/pennsylvania-governor-republican-primary-7345.html" target="_blank">poll frontrunners</a> state Sen. Doug Mastriano (R., Franklin) and ex-U.S. Rep. Lou Barletta (R., Pa.) — did not participate. Three of them signed a letter demanding a partisan moderator.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -67,7 +67,7 @@ Gerow said he would use COVID-19 relief money to lower the gas tax, while Zama c
 
 All five candidates said they support “school choice,” which allows parents to choose alternatives such as homeschooling or private schools through access to state-provided tax credits or vouchers.
 
-Critics say school choice depletes funding for the public school system over time. The state is <a href="https://www.inquirer.com/news/pa-school-funding-trial-closing-arguments-20220310.html">currently in the midst of a lawsuit</a> — filed on behalf of seven school districts, parents, and several educational organizations — that alleges Pennsylvania fails to fulfill its constitutional requirement of providing high-quality public education.
+Critics say school choice depletes funding for the public school system over time. The state is <a href="https://www.inquirer.com/news/pa-school-funding-trial-closing-arguments-20220310.html">currently in the midst of a lawsuit</a> — filed on behalf of six school districts, parents, and several educational organizations — that alleges Pennsylvania fails to fulfill its constitutional requirement of providing high-quality public education.
 
 If successful, the suit could force the state to significantly increase funding for public schools. However, most candidates said that Pennsylvania already spends enough.
 
@@ -99,6 +99,6 @@ Hart emphasized her legislative experience with bills that protect mothers, but 
 
 Gerow said he would sign a <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=34100">pending</a> “heartbeat bill” — which would ban abortion at around six weeks of pregnancy when an embryo’s cardiac activity can first be detected — as well as legislation that would ban abortion if a fetus has Down syndrome. Wolf has either vetoed or vowed to veto such bills.
 
-<i>Correction: Due to an editing error, this story incorrectly stated why state Sen. Doug Mastriano did not participate in the debate.</i>
+<i>Correction: Due to an editing error, this story incorrectly stated why state Sen. Doug Mastriano did not participate in the debate. It also incorrectly stated how many school districts are involved in a funding lawsuit. </i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
