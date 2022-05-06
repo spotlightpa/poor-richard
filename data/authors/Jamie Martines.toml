@@ -4,6 +4,13 @@ lastName = "Martines"
 title = "Investigative Reporter"
 email = "jamie@spotlightpa.org"
 twitter = "Jamie_Martines"
-content = "Jamie Martines joined Spotlight PA in 2020 after four years with Triblive/Pittsburgh Tribune-Review. While in Pittsburgh, she spent two years on the education beat before transitioning to covering Allegheny County government and special projects. She has covered major breaking news in the Pittsburgh region, including the novel coronavirus outbreak, the Tree of Life mass shooting, concerns about air quality following a series of fires at the Clairton Coke Works, and the Pennsylvania grand jury investigation of clergy abuse in the Catholic church. Before pursuing journalism, Martines worked for a nonprofit in China’s Yunnan Province and lived there for three years."
+content = "Martines previously reported for the Tribune-Review, covering everything from breaking news to education and county government. She has been based in Pittsburgh since 2016."
 active = true
 headshot = "2021/06/01gd-pm1c-2b2f-apr0.jpeg"
+reporter = true
+beat = "Public Health"
+focusHed = "Pennsylvania Department of Health, local health departments, COVID-19, environmental health"
+focus = "Policy decisions at all levels of government can affect the well-being of Pennsylvanians — a fact that was heightened by the COVID-19 pandemic. Martines highlights how and whether governments at all levels are keeping their promises to ensure the health of Pennsylvanians."
+
+tel = "(724) 553-2804"
+signal = "(724) 553-2804"
