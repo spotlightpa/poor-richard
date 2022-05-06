@@ -1,86 +1,185 @@
 {{ define "extra-main" }}
+  {{ $reporters := slice }}
+  {{ $others := slice }}
+  {{ range sort .Site.Data.authors "lastName" }}
+    {{ $author := partial "helper/get-author" .name }}
+    {{ if $author.active }}
+      {{ if $author.reporter }}
+        {{ $reporters = $reporters | append $author }}
+      {{ else }}
+        {{ $others = $others | append $author }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   <section
     class="section columns has-background-white-ter"
-    data-ga-category="staff"
+    data-ga-category="staff:reporters"
   >
     <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range sort .Site.Data.authors "lastName" }}
-        {{ $author := partial "helper/get-author" .name }}
-        {{ if $author.active }}
-          <div id="{{ $author.slug }}" class="card block">
-            <div class="card-content">
-              <div class="media">
-                {{ if $author.thumb }}
-                  <div class="media-left is-hidden-mobile">
-                    <figure class="image is-128x128">
-                      <img
-                        src="{{ $author.thumb }}"
-                        alt="Photo of {{ $author.name }}"
-                        class="is-rounded"
-                      />
-                    </figure>
-                  </div>
-                {{ end }}
-                <div class="media-content">
-                  {{ if $author.thumb }}
-                    <div class="is-hidden-tablet has-text-centered">
-                      <div class="is-inline-block">
-                        <figure class="image is-128x128">
-                          <img
-                            src="{{ $author.thumb }}"
-                            alt="Photo of {{ $author.name }}"
-                            class="is-rounded"
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                  {{ end }}
+      <h2 class="title">Reporters</h2>
 
-                  {{ if $author.link }}
-                    <p class="title is-3" data-ga-category="author-articles">
-                      <a href="{{ $author.link }}">{{ $author.name }}</a>
-                    </p>
-                  {{ else }}
-                    <p class="title is-3">{{ $author.name }}</p>
-                  {{ end }}
-                  <p class="subtitle is-4">{{ $author.title }}</p>
-                  <p class="subtitle is-5 has-text-break-all">
-                    {{ with $author.email }}
-                      <span class="icon has-text-link">
-                        <svg viewBox="0 0 1 1">
-                          <use xlink:href="#email-svg"></use>
-                        </svg>
-                      </span>
-                      <a data-ga-category="author-email" href="mailto:{{ . }}">
-                        {{ . }}
-                      </a>
-                    {{ end }}
-                    {{ with (and $author.email $author.twitter) }}
-                      <br />
-                    {{ end }}
-                    {{ with $author.twitter }}
-                      <span class="icon has-text-link">
-                        <svg viewBox="0 0 1 1">
-                          <use xlink:href="#twitter-svg"></use>
-                        </svg>
-                      </span>
-                      <a
-                        data-ga-category="author-twitter"
-                        href="https://www.twitter.com/{{ . }}"
-                      >
-                        @{{ . }}
-                      </a>
-                    {{ end }}
-                  </p>
-                </div>
-              </div>
-              <div class="content" data-ga-category="author-bio">
-                {{ $author.content|markdownify }}
-              </div>
-            </div>
-          </div>
-        {{ end }}
+      {{ range $reporters }}
+        {{ template "staff-page-card" . }}
       {{ end }}
     </div>
   </section>
+  <section
+    class="section columns has-background-white"
+    data-ga-category="staff:leadership"
+  >
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <h2 class="title">Leadership</h2>
+
+      {{ range $others }}
+        {{ template "staff-page-card" . }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{ define "staff-page-card" }}
+  {{ $author := . }}
+  <div id="{{ $author.slug }}" class="card block">
+    <div class="card-content">
+      <div class="media">
+        {{ if $author.thumb }}
+          <div class="media-left is-hidden-mobile">
+            <figure class="image is-128x128">
+              <img
+                src="{{ $author.thumb }}"
+                alt="Photo of {{ $author.name }}"
+                class="is-rounded"
+              />
+            </figure>
+          </div>
+        {{ end }}
+        <div class="media-content">
+          {{ if $author.thumb }}
+            <div class="is-hidden-tablet has-text-centered">
+              <div class="is-inline-block">
+                <figure class="image is-128x128">
+                  <img
+                    src="{{ $author.thumb }}"
+                    alt="Photo of {{ $author.name }}"
+                    class="is-rounded"
+                  />
+                </figure>
+              </div>
+            </div>
+          {{ end }}
+
+          {{ with $author.beat }}
+            <h3
+              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+            >
+              {{ . }}
+            </h3>
+          {{ end }}
+          {{ if $author.link }}
+            <p class="title is-3" data-ga-category="author-articles">
+              <a href="{{ $author.link }}">{{ $author.name }}</a>
+            </p>
+          {{ else }}
+            <p class="title is-3">{{ $author.name }}</p>
+          {{ end }}
+          <p class="mb-3 subtitle is-4">{{ $author.title }}</p>
+          <div class="subtitle is-5 has-text-break-all">
+            {{ with $author.email }}
+              <div class="is-flex">
+                <span class="icon" style="position: relative; bottom: 2px;">
+                  <svg viewBox="0 0 1 1">
+                    <use xlink:href="#email-svg"></use>
+                  </svg>
+                </span>
+                Email:
+                <a
+                  class="ml-1"
+                  data-ga-category="author-email"
+                  href="mailto:{{ . }}"
+                  title="Email"
+                >
+                  {{ . }}
+                </a>
+              </div>
+            {{ end }}
+            {{ with $author.twitter }}
+              <div class="is-flex">
+                <span class="icon" style="position: relative; bottom: 2px;">
+                  <svg viewBox="0 0 1 1">
+                    <use xlink:href="#twitter-svg"></use>
+                  </svg>
+                </span>
+                Twitter:
+                <a
+                  class="ml-1"
+                  data-ga-category="author-twitter"
+                  href="https://www.twitter.com/{{ . }}"
+                  title="Twitter"
+                >
+                  @{{ . }}
+                </a>
+              </div>
+            {{ end }}
+            {{ with $author.tel }}
+              <div class="is-flex">
+                <span class="icon" style="position: relative; bottom: 3px;">
+                  <svg viewBox="0 0 1 1" aria-hidden="true">
+                    <use xlink:href="#phone-svg"></use>
+                  </svg>
+                </span>
+                Telephone:
+                <a
+                  class="ml-1"
+                  title="Telephone"
+                  href="tel:+1{{ replaceRE `\D` `` . }}"
+                  >{{ . }}</a
+                >
+              </div>
+            {{ end }}
+            {{ with $author.signal }}
+              <div class="is-flex">
+                <span class="icon" style="position: relative; bottom: 3px;">
+                  <svg viewBox="0 0 1 1" aria-hidden="true">
+                    <use xlink:href="#chat-svg"></use>
+                  </svg>
+                </span>
+                Signal:
+                <a
+                  class="ml-1"
+                  title="Contact via the Signal app"
+                  href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
+                  >{{ . }}</a
+                >
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ if $author.focus }}
+        <h3 class="mb-3 subtitle is-4">
+          <b class="has-text-weight-semibold">Focus:</b>
+          {{ $author.focusHed }}
+        </h3>
+        <div class="content" data-ga-category="author-bio">
+          {{ $author.focus|markdownify }}
+        </div>
+      {{ end }}
+      <div class="content" data-ga-category="author-bio">
+        {{ $author.content|markdownify }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ $svgs := dict
+    "phone-svg" "@fontawesome/solid/phone.svg"
+    "chat-svg" "@fontawesome/solid/comment.svg"
+  }}
+  <div hidden>
+    {{ range $id, $rsc := $svgs }}
+      {{ $svg := resources.Get $rsc }}
+      <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+    {{ end }}
+  </div>
 {{ end }}
