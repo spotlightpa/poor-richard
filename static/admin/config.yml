@@ -308,14 +308,39 @@ collections:
         name: twitter
         widget: string
         required: false
+      - label: Phone
+        name: tel
+        widget: string
+        required: false
+      - label: Signal
+        name: signal
+        widget: string
+        required: false
       - label: Headshot
         name: headshot
         widget: string
         hint: "Path from Almanack photos"
         required: false
-      - label: Content
+      - label: Beat
+        name: beat
+        widget: string
+        hint: "Label before a reporter's name on staff page"
+      - label: Focus
+        name: focusHed
+        widget: string
+        hint: "Short label for the reporter's focus area"
+      - label: Focus description
+        name: focus
+        widget: markdown
+        hint: "Longer explanation of focus area"
+      - label: Bio
         name: content
         widget: markdown
+      - label: Reporter
+        name: reporter
+        hint: "Should this author be listed with the reporters (as opposed to editors or other staff)?"
+        widget: boolean
+        required: true
       - label: Active
         name: active
         hint: "Is this author still working for Spotlight PA?"
