@@ -11,24 +11,16 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section
-    class="section columns has-background-white-ter"
-    data-ga-category="staff:reporters"
-  >
+  <section class="pt-0 section columns" data-ga-category="staff:reporters">
     <div class="column is-three-fifths is-offset-one-fifth">
       <h2 class="title">Reporters</h2>
 
       {{ range $reporters }}
         {{ template "staff-page-card" . }}
       {{ end }}
-    </div>
-  </section>
-  <section
-    class="section columns has-background-white"
-    data-ga-category="staff:leadership"
-  >
-    <div class="column is-three-fifths is-offset-one-fifth">
-      <h2 class="title">Leadership</h2>
+
+
+      <h2 class="mt-6 title">Leadership</h2>
 
       {{ range $others }}
         {{ template "staff-page-card" . }}
