@@ -32,15 +32,7 @@
 
           <h1 class="title is-2 is-size-3-touch is-spaced">
             {{ .Title }}
-            {{ if .Draft }}
-              <span class="tag is-warning is-uppercase"> Draft </span>
-            {{ end }}
           </h1>
-          {{ with .Param "subhed" }}
-            <h2 class="subtitle is-3 has-margin-top-negative-medium">
-              {{ . }}
-            </h2>
-          {{ end }}
 
           {{ with $params.byline }}
             <h3 class="is-size-5 has-margin-top-negative-medium">
