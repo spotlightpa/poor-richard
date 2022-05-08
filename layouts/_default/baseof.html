@@ -46,7 +46,9 @@
       {{ block "extra-main" . }}{{ end }}
     </main>
     <footer data-ga-category="footer">
-      {{ block "before-footer" . }}{{ end }}
+      {{ block "before-footer" . }}
+        {{ partialCached "component/promo-footer.html" . }}
+      {{ end }}
       {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}
     </footer>

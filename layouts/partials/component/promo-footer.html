@@ -3,11 +3,10 @@
 {{ if or $desktop $mobile }}
   <div
     class="no-js:hidden"
-    data-ga-category="inline-footer"
     data-sf-campaign="7015G0000013oHVQAY"
   >
     {{ partial "component/promo-double.html" (dict
-      "class" "mt-5 px-5"
+      "class" "mb-0 mb-6 px-5"
       "imageDescription" (site.Param "footer-promo-description")
       "link" (site.Param "footer-promo-link")
       "desktopImages" $desktop
