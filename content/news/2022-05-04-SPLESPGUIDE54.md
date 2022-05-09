@@ -17,7 +17,7 @@ published = 2022-05-04T16:10:00-04:00
 slug = "pa-election-day-2022-pennsylvania-primary-governor-senate-voting-guide-espanol"
 suppress-date = false
 title = "Pensilvania (PA) Día de las Elecciones 2022: Una guía completa para las primarias del 17 de mayo, incluyendo cómo votar, encontrar su lugar de votación, entender la papeleta de voto por correo y más."
-topics = ["Elections"]
+topics = ["Elections", "Español"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
