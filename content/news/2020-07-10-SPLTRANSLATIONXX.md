@@ -1,31 +1,23 @@
 +++
 arc-id = "VOMMHCA3BVHMFGGA7JIFY56QHI"
-internal-id = "SPLTRANSLATIONXX"
-internal-budget = ""
-image = "external/6nax70xf1q6gzh8t7eqbrv29k0.jpeg"
-image-description = "“Estoy tomando esta medida para ayudar a las familias a que sepan que tendrán un techo y un lugar para vivir mientras todos luchamos contra la pandemia de COVID-19”, dijo Wolf en un comunicado."
-image-caption = ""
-image-credit = "Commonwealth Media Services"
-image-size = ""
-published = 2020-07-10T16:54:00Z
-slug = "desalojos-asistencia-de-alquiler-pensilvania-moratoria-31-de-agosto"
 authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Pa. emite nueva moratoria de desalojo tras temores de que el alivio de pagos de alquiler sería demasiado lento"
-subtitle = ""
-description = "La moratoria de desalojo y perdida de derechos sobre la propiedad (foreclosure) en todo el estado, que debería expirar el sábado, ahora se extenderá hasta el 31 de agosto."
 blurb = "La moratoria de desalojo y perdida de derechos sobre la propiedad (foreclosure) en todo el estado, que debería expirar el sábado, ahora se extenderá hasta el 31 de agosto."
+byline = "Charlotte Keith of Spotlight PA"
+description = "La moratoria de desalojo y perdida de derechos sobre la propiedad (foreclosure) en todo el estado, que debería expirar el sábado, ahora se extenderá hasta el 31 de agosto."
+image = "external/6nax70xf1q6gzh8t7eqbrv29k0.jpeg"
+image-credit = "Commonwealth Media Services"
+image-description = "“Estoy tomando esta medida para ayudar a las familias a que sepan que tendrán un techo y un lugar para vivir mientras todos luchamos contra la pandemia de COVID-19”, dijo Wolf en un comunicado."
+internal-id = "SPLTRANSLATIONXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
+language-code = "es"
 modal-exclude = false
 no-index = false
-language-code = "es"
+published = 2020-07-10T12:54:00-04:00
+slug = "desalojos-asistencia-de-alquiler-pensilvania-moratoria-31-de-agosto"
+suppress-date = false
+suppress-featured = false
+title = "Pa. emite nueva moratoria de desalojo tras temores de que el alivio de pagos de alquiler sería demasiado lento"
+topics = ["Coronavirus", "Español"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> es una sala de redacción independiente y no partidista impulsada por The Philadelphia Inquirer en asociación con Pittsburgh Post-Gazette y PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Regístrate para recibir nuestro boletín semanal sin costo</i></a><i>.</i>
