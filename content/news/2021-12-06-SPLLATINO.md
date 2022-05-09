@@ -15,8 +15,9 @@ modal-exclude = false
 no-index = false
 published = 2021-12-06T13:10:10.178-05:00
 slug = "pensilvania-los-latinos-redistribucion"
+suppress-date = false
 title = "Los Latinos de Pensilvania trabajan para convertir los enormes avances de la población en un músculo político, pero aún se enfrentan con barreras"
-topics = ["Redistricting"]
+topics = ["Redistricting", "Español"]
 +++
 
 <i>Traducción por </i><a href="https://www.qhubonews.com/"><i>Q’Hubo News</i></a><i>, una empresa de periódicos y multimedia en crecimiento en el centro de Pensilvania. Translation by Q’Hubo News, a growing Hispanic newspaper and multimedia company in central Pennsylvania.</i>
