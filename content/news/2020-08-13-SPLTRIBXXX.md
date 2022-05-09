@@ -1,33 +1,22 @@
 +++
 arc-id = "MNVSQPJGPRETNNZ4DX5J7WDHJ4"
-internal-id = "SPLTRIBXXX"
-internal-budget = ""
+authors = ["Christopher Baxter"]
+blurb = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
+byline = "Christopher Baxter"
+description = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
 image = "2020/08/01fkdm7wk58s11md.jpeg"
-image-description = ""
-image-caption = ""
 image-credit = "Courtesy Triblive"
 image-size = "inline"
-published = 2020-08-13T11:45:00Z
-slug = "spotlight-pa-triblive-tribune-review-pittsburgh-partnership"
-authors = ["Christopher Baxter"]
-byline = "Christopher Baxter"
-title = "Spotlight PA partners with Triblive/Pittsburgh Tribune-Review, expands coverage of Western Pa."
-subtitle = ""
-description = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
-blurb = "Spotlight PA now provides high-quality, public-service journalism free of charge to 47 newsroom partners statewide, the largest collaborative network of its kind in the U.S."
+internal-id = "SPLTRIBXXX"
 kicker = "Editor's Notes"
-topics = ["Editor's Notes"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-08-13T07:45:00-04:00
+slug = "spotlight-pa-triblive-tribune-review-pittsburgh-partnership"
+suppress-date = false
+suppress-featured = false
+title = "Spotlight PA partners with Triblive/Pittsburgh Tribune-Review, expands coverage of Western Pa."
+topics = ["Editor's Notes"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News and Triblive/Pittsburgh Tribune-Review. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -48,7 +37,7 @@ As part of the new partnership, Triblive/Pittsburgh Tribune-Review will contribu
 
 The reporter, Jamie Martines, joined Triblive/Pittsburgh Tribune-Review in 2016 and worked for two years on the education beat before covering Allegheny County government and special projects. She has also covered major breaking news events in the Pittsburgh region, including the novel coronavirus outbreak, the Tree of Life mass shooting, concerns about air quality following a series of fires at the Clairton Coke Works, and the Pennsylvania grand jury investigation of clergy abuse in the Catholic church.
 
-Additionally, Spotlight PA recently <a href="https://thebigstorypgh.com/">joined the Pittsburgh Media Partnership</a> to take a direct role in shaping the future of journalism in the city and beyond, recognizing that robust accountability reporting on the state government and our elected officials is a critical component of a strong and thriving Democracy in the region.
+Additionally, Spotlight PA recently <a href="https://web.archive.org/web/20220504041409/https://thebigstorypgh.com/">joined the Pittsburgh Media Partnership</a> to take a direct role in shaping the future of journalism in the city and beyond, recognizing that robust accountability reporting on the state government and our elected officials is a critical component of a strong and thriving Democracy in the region.
 
 Filling that need was the founding principle of Spotlight PA, a centralized team of highly talented journalists covering all aspects of the state government and urgent statewide issues, in collaboration — and not competition — with other newsrooms across Pennsylvania.
 
