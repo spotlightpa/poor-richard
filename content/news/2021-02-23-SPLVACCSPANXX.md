@@ -13,9 +13,10 @@ modal-exclude = false
 no-index = false
 published = 2021-02-23T10:19:55-05:00
 slug = "preguntas-frecuentes-sobre-frustrante-despliegue-de-vacunas-en-Pensilvania"
+suppress-date = false
 suppress-featured = false
 title = "Preguntas frecuentes sobre el frustrante despliegue de vacunas en Pensilvania"
-topics = ["Coronavirus"]
+topics = ["Coronavirus", "Español"]
 +++
 
 <!-- TODO: Add shortcode -->
