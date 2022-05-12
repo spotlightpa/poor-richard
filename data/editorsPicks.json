@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-05-11-SPLLASTGU.md"
+    "content/news/2022-05-12-SPLLAB12.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2022-04-29-SPLPRIMARY29.md",
-    "content/news/2022-05-04-SPLBAGUIDE.md"
+    "content/news/2022-03-14-SPLDRUG314.md"
   ],
   "topSlots": [
+    "content/news/2022-05-11-SPLLASTGU.md",
     "content/news/2022-05-10-SPLCOURT10.md",
-    "content/newsletters/palocal/2022-05-06-1000.md",
-    "content/news/2022-05-04-SPLESPGUIDE54.md"
+    "content/newsletters/palocal/2022-05-06-1000.md"
   ],
   "topper": []
 }
