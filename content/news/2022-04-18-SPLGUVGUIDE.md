@@ -85,6 +85,8 @@ Barletta started his political career in Hazleton on the city council in 1998 an
 
 <b>Jake Corman </b>| <a href="https://www.cormanforpa.com/">Website</a>
 
+<i><b>UPDATE</b></i>: <i>On May 12, Jake Corman announced he was backing Lou Barletta. His name will still appear on the ballot. </i>
+
 Corman replaced his father as a state senator in 1999. He served as the state Senate majority leader from 2015 to 2020, and he’s been the Senate president pro tempore since 2020. His vague platform includes “improving education,” election security, jobs, policing, and “defending freedoms.”
 
 <b>Supports repealing Pa.’s no-excuse mail voting law?</b> Yes. Corman voted for Act 77, but following the 2020 election, he’s supported its repeal and called for stricter voter ID requirements and third-party audits. Corman <a href="https://www.spotlightpa.org/news/2021/08/jake-corman-pennsylvania-senate-election-audit/">directed his chamber to conduct</a> a “full forensic investigation” of the 2020 election, an idea fueled by baseless claims of widespread voter fraud.
@@ -131,7 +133,7 @@ His election platform has focused on promoting economic growth through tradition
 
 <b>Supports repealing Pa.’s no-excuse mail voting law?</b> Yes. When Commonwealth Court struck down Act 77 as unconstitutional (<a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-mail-voting-unconstitutional-supreme-court-appeal/">a ruling being appealed in the state Supreme Court</a>), Gerow called it “<a href="https://twitter.com/Charlie_Gerow/status/1487153378329255943">great news</a> for election integrity and the prevention of voter fraud and ballot harvesting.” Gerow’s name was also listed on a certificate to assign Pennsylvania’s Electoral College votes to Trump, <a href="https://lancasteronline.com/news/politics/pa-republicans-hedged-language-may-have-saved-them-from-prosecution-over-electoral-vote-scheme/article_849d4f7e-7589-11ec-8881-6383a823557d.html">should a court challenge have succeeded</a>.
 
-<b>Endorsements:</b> U.S. Rep. Glenn Thompson; Michael Reagan, son of President Ronald Reagan; former Speaker of the U.S. House Newt Gingrich; Matt Schlapp, executive director of CPAC; former U.S. Rep. Bob Walker; state Rep. Jerry Knowles; former Maryland Gov. Bob Ehrlich
+<b>Endorsements:</b> U.S. Rep. Glenn Thompson; Michael Regan, son of President Ronald Regan; former Speaker of the U.S. House Newt Gingrich; Matt Schlapp, executive director of CPAC; former U.S. Rep. Bob Walker; state Rep. Jerry Knowles; former Maryland Gov. Bob Ehrlich
 
 Read more:<a href="https://www.inquirer.com/politics/election/charlie-gerow-republican-pennsylvania-2022-governor-race-20210616.html"> </a>
 
