@@ -85,7 +85,7 @@ Barletta started his political career in Hazleton on the city council in 1998 an
 
 <b>Jake Corman </b>| <a href="https://www.cormanforpa.com/">Website</a>
 
-<i><b>UPDATE</b></i>: <i>On May 12, Jake Corman announced he was backing Lou Barletta. His name will still appear on the ballot. </i>
+<i><b>UPDATE</b></i>: <i>On May 12, Jake Corman announced he was backing Lou Barletta. His name will still appear on the ballot.</i>
 
 Corman replaced his father as a state senator in 1999. He served as the state Senate majority leader from 2015 to 2020, and he’s been the Senate president pro tempore since 2020. His vague platform includes “improving education,” election security, jobs, policing, and “defending freedoms.”
 
@@ -144,6 +144,8 @@ Read more:<a href="https://www.inquirer.com/politics/election/charlie-gerow-repu
 {{<picture src="external/93k9j9ez1gx5qv5gwerg0j4n7g.jpeg" description="Melissa Hart has served as both a member of Congress and as a state senator." caption="Melissa Hart has served as both a member of Congress and as a state senator." credit="TYGER WILLIAMS / Philadelphia Inquirer">}} 
 
 <b>Melissa Hart</b> | <a href="https://www.hartforpa.org/services-7">Website</a>
+
+<i><b>UPDATE</b></i>: <i>On May 13, Melissa Hart announced she was backing Lou Barletta. Her name will still appear on the ballot.</i>
 
 Hart has served as both a member of Congress and as a state senator representing Allegheny County. She has said that her success in areas that had majority Democratic registration speaks to her electability. Hart has been working as a lawyer for the past 14 years and is currently an attorney at Hergenroeder Rega Ewing &amp; Kennedy, a law firm based in Pittsburgh.
 
