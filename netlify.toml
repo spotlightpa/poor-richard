@@ -1,3 +1,7 @@
+[dev]
+command = "yarn start"
+targetPort = 39019
+
 [build]
 base = ""
 command = "yarn build:prod"
