@@ -1,11 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-05-16-SPLPOLLS.md"
+    "content/news/2022-05-16-SPLYASS.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
+    "content/news/2022-05-16-SPLPOLLS.md",
     "content/news/2022-05-13-SPLAPMON.md",
     "content/news/2022-04-18-SPLGUVGUIDE.md"
   ],
