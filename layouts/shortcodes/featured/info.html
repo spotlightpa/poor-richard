@@ -33,7 +33,7 @@
     class="bg-info content-aside relative h-24 overflow-y-hidden sm:h-auto sm:overflow-y-visible"
     :class="{'h-24': !isOpen, 'overflow-y-hidden': !isOpen}"
   >
-    {{ .Inner | markdownify }}
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
     <div
       class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
       x-show="!isOpen"

@@ -19,7 +19,8 @@
     style="{{ $style | safeCSS }}"
   />
   <figcaption class="{{ $capClass }}">
-    {{ $caption }}
-    {{ $credit }}
+    {{- $caption -}}
+    {{- print " " -}}
+    {{- $credit -}}
   </figcaption>
 </figure>
