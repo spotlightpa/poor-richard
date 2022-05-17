@@ -1,19 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-05-16-SPLYASS.md"
+    "content/news/2022-04-29-SPLPRIMARY29.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
     "content/news/2022-05-16-SPLPOLLS.md",
-    "content/news/2022-05-13-SPLAPMON.md",
-    "content/news/2022-04-18-SPLGUVGUIDE.md"
+    "content/news/2022-05-14-SPLPOSTCARD.md"
   ],
   "topSlots": [
-    "content/news/2022-05-12-SPLPRECAN.md",
-    "content/news/2022-05-14-SPLPOSTCARD.md",
-    "content/news/2022-05-12-SPLLAB12.md"
+    "content/news/2022-05-16-SPLYASS.md",
+    "content/news/2022-04-18-SPLGUVGUIDE.md",
+    "content/news/2022-04-04-SPLLTGOV.md"
   ],
   "topper": []
 }
