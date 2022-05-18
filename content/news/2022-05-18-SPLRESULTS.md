@@ -45,6 +45,8 @@ First elected to the state Senate in a 2019 special election, Mastriano started 
 
 His profile began its meteoric rise in 2020, as the COVID-19 pandemic shut down the world.
 
+{{<picture src="external/8cvdrry9effngag0qkz0ej6njc.jpeg" description="Mastriano, a retired Army colonel and Gulf War veteran, is a favorite among grassroots conservatives and evangelicals." caption="Mastriano, a retired Army colonel and Gulf War veteran, is a favorite among grassroots conservatives and evangelicals." credit="Carolyn Kaster / AP">}} 
+
 At first, he appeared somewhat supportive of mitigation efforts — even proposing legislation that would let public health officials <a href="https://www.penncapital-star.com/election-2022/now-a-defender-of-personal-freedom-mastriano-wanted-to-lift-privacy-rules-in-pandemics-early-days/">release the names</a> of people who tested positive for the coronavirus. But after a few weeks of lockdowns — ordered by the Wolf administration to prevent hospitals from becoming overwhelmed — Mastriano began railing against Wolf in daily Facebook videos and later at Capitol rallies opposing the pandemic response.
 
 Those videos and events earned him a dedicated fandom that, by the summer of 2020, was calling for him to run for governor.
@@ -76,6 +78,8 @@ Along with his Trumpian election rhetoric, Mastriano has <a href="https://www.le
 He also supports banning on abortion with no exceptions, as well as expanding natural gas drilling and access to private schools and charter schools using taxpayer funds.
 
 He has promised that as governor he would issue executive orders on his first day in office to ban “critical race theory” — a concept often taught in law schools that has become a catchall term for curriculum on racism — and to bar trans women from playing women’s sports. He has also suggested he would deploy the Pennsylvania National Guard to Philadelphia to fight crime “as a last recourse.”
+
+{{<picture src="external/7kenmbvshdfy12bphbvzs665dm.jpeg" description="Josh Shapiro, who has held elected office at the local or state level for the past two decades, ran unopposed in this year’s primary." caption="Josh Shapiro, who has held elected office at the local or state level for the past two decades, ran unopposed in this year’s primary." credit="TOM GRALISH / Philadelphia Inquirer">}} 
 
 Shapiro, who has held elected office at the local or state level for the past two decades, ran unopposed in this year’s primary.
 
@@ -109,6 +113,10 @@ John Fetterman, the state’s current lieutenant governor, defeated three other 
 
 Fetterman had a <a href="https://www.inquirer.com/politics/election/john-fetterman-pacemaker-stroke-pa-senate-democrat-2022-election-20220517.html" target="_blank">pacemaker implanted on Election Day</a> after he suffered a stroke last week. 
 
-As of 10 p.m. Tuesday, the Associated Press had yet to declare a Republican winner. The crowded field is being led by former hedge fund CEO Dave McCormick and celebrity surgeon Mehmet Oz.
+As of 10:30 p.m. Tuesday, the Associated Press had yet to declare a Republican winner. The crowded field is being led by former hedge fund CEO Dave McCormick and celebrity surgeon Mehmet Oz.
+
+Democrats and Republicans also voted to pick their candidates for lieutenant governor. Pennsylvania is among <a href="https://nlga.us/research/methods-of-election/">a minority</a> of states that elects its governors and lieutenant governors separately in the primary, but then as a single ticket in the general election.
+
+Austin Davis, a state representative from Allegheny County, won the Democratic nod, according to the Associated Press. The outlet had yet to declare a Republican winner as of 10:30 p.m. Tuesday.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
