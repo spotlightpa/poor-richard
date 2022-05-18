@@ -101,4 +101,14 @@ Running unopposed gave him an instant advantage over the crowded, nine-way prima
 
 He is entering the post-primary landscape with <a href="https://www.spotlightpa.org/news/2022/05/pennsylvania-primary-2022-governor-election-april-fundraising/">nearly $16 million on hand</a>, largely because he was not forced to spend his war chest edging out competitors.
 
+## Other results
+
+Contentious races for an open U.S. Senate seat were also on the ballot Tuesday. 
+
+John Fetterman, the state’s current lieutenant governor, defeated three other Democrats for his party’s nod. The Associated Press called the race less than two hours after polls closed Tuesday.
+
+Fetterman had a <a href="https://www.inquirer.com/politics/election/john-fetterman-pacemaker-stroke-pa-senate-democrat-2022-election-20220517.html" target="_blank">pacemaker implanted on Election Day</a> after he suffered a stroke last week. 
+
+As of 10 p.m. Tuesday, the Associated Press had yet to declare a Republican winner. The crowded field is being led by former hedge fund CEO Dave McCormick and celebrity surgeon Mehmet Oz.
+
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
