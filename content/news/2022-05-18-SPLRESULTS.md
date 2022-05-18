@@ -119,6 +119,6 @@ As of 10:30 p.m. Tuesday, the Associated Press had yet to declare a Republican w
 
 Democrats and Republicans also voted to pick their candidates for lieutenant governor. Pennsylvania is among <a href="https://nlga.us/research/methods-of-election/">a minority</a> of states that elects its governors and lieutenant governors separately in the primary, but then as a single ticket in the general election.
 
-Austin Davis, a state representative from Allegheny County, won the Democratic nod, according to the Associated Press. The outlet had yet to declare a Republican winner as of 10:30 p.m. Tuesday.
+Austin Davis and Carrie Lewis DelRosso, both state representatives from Allegheny County, won the Democratic and Republican nods, respectively, according to the Associated Press. 
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
