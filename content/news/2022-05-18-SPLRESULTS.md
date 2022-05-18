@@ -91,7 +91,7 @@ Along with other attorneys general around the country, Shapiro negotiated <a hre
 
 Shapiro began his career in government in the 1990s, working for a member of Congress and two senators in Washington, D.C. He was elected to Pennsylvania’s House of Representatives in 2004, where he served four terms representing parts of Montgomery County in the Philadelphia suburbs.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SPRING%20MEMBER%20DRIVE%20&cta_text=GIVE%20NOW%2C%20WE'LL%20DOUBLE%20IT&teaser_text=This%20story%20by%20Spotlight%20PA%20is%20available%20to%20everyone%20at%20no%20cost%20thanks%20to%20our%20members.%20%3Cb%3EMake%20a%20gift%20during%20our%20spring%20member%20drive%20and%20your%20support%20will%20be%20DOUBLED.%3C%2Fb%3E"></div>
 
 In 2011, he won a seat on Montgomery County’s Board of Commissioners in a year when Democrats took control over the three-member panel for the <a href="https://www.inquirer.com/philly/neighbors/main_line/20111108_Shapiro__Richards_give_Dems_win_in_MontCo.html">first time in the county’s history.</a> He was elected attorney general in 2016 and again in 2020 for a second, four-year term.
 
