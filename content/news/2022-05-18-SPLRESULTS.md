@@ -67,6 +67,8 @@ At the time, Mastriano claimed he didn’t cross police lines or enter the U.S. 
 
 He has been <a href="https://www.penncapital-star.com/blog/u-s-house-committee-subpoenas-sen-doug-mastriano-as-part-of-jan-6-investigation/">subpoenaed</a> by the congressional committee investigating Jan. 6, which said in February that Mastriano “was <a href="https://january6th.house.gov/news/press-releases/select-committee-demands-information-efforts-send-false-alternate-electors">part of a plan to arrange for an ‘alternate’ slate of electors</a> from Pennsylvania for former President Trump and reportedly spoke with President Trump about post-election activities.”
 
+Trump endorsed Mastriano a few days before the primary, saying in a statement, “There is no one in Pennsylvania who has done more, or fought harder, for Election Integrity than State Senator Doug Mastriano.”
+
 Overall, Mastriano has pushed back on any questions about his past actions or who he associates with, part of his broader antipathy to the mainstream press.
 
 “I resent the fact that you want to castigate anyone who went down to Washington, D.C. on Jan. 6 as some kind of enemy of the public,” Mastriano said in an <a href="https://delawarevalleyjournal.com/mastriano-meltdown-gop-gov-candidate-abruptly-ends-podcast-interview-over-questions-about-qanon-linked-rally/">interview</a> with the conservative-leaning Delaware Valley Journal this month. “That is dangerous. You’re talking like an East German there.”
@@ -107,11 +109,11 @@ He is entering the post-primary landscape with <a href="https://www.spotlightpa.
 
 ## Other results
 
-Contentious races for an open U.S. Senate seat were also on the ballot Tuesday. 
+Contentious races for an open U.S. Senate seat were also on the ballot Tuesday.
 
 John Fetterman, the state’s current lieutenant governor, defeated three other Democrats for his party’s nod. The Associated Press called the race less than two hours after polls closed Tuesday.
 
-Fetterman had a <a href="https://www.inquirer.com/politics/election/john-fetterman-pacemaker-stroke-pa-senate-democrat-2022-election-20220517.html" target="_blank">pacemaker implanted on Election Day</a> after he suffered a stroke last week. 
+Fetterman had a <a href="https://www.inquirer.com/politics/election/john-fetterman-pacemaker-stroke-pa-senate-democrat-2022-election-20220517.html" target="_blank">pacemaker implanted on Election Day</a> after he suffered a stroke last week.
 
 As of 10:30 p.m. Tuesday, the Associated Press had yet to declare a Republican winner. The crowded field is being led by former hedge fund CEO Dave McCormick and celebrity surgeon Mehmet Oz.
 
