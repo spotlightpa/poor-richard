@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Final update, May 18, 2022: </b></i><a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-governor-election-results/"><i><b>Doug Mastriano has won the Republican nomination for governor. He will face Democrat Josh Shapiro in the fall.</b></i></a>
+
 HARRISBURG — When Democrats head to the polls on May 17 for Pennsylvania’s 2022 primary election for governor, there will be just one choice on the ballot.
 
 Republicans will face a much different situation, with nine candidates and still no clear frontrunner.
