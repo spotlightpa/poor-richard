@@ -23,7 +23,7 @@ topics = ["Elections"]
 
 HARRISBURG — Doug Mastriano is the projected winner of Pennsylvania’s Republican primary for governor, defeating a crowded field in a high-stakes race that will shape the state’s future.
 
-Unofficial election results show Mastriano, a state senator from Franklin County, with 43% of the vote as of Tuesday at 10 p.m. The Associated Press called the race with an estimated 50% of the votes counted.
+Unofficial election results show Mastriano, a far-right state senator from Franklin County, with 43% of the vote as of Tuesday at 10 p.m. The Associated Press called the race with an estimated 50% of the votes counted.
 
 In November, Mastriano will face Democrat Josh Shapiro, Pennsylvania’s current attorney general who faced no opposition from members of his party.
 
