@@ -1,30 +1,22 @@
 +++
 arc-id = "AZH7TTWN6FDJZADUKM4P5GDOLI"
-internal-id = "SPLSTATELINE28"
-internal-budget = ""
-image = "external/hgvcdxwcmtjfw7bctzvh6ssvyg.jpeg"
-image-description = "Public officials including Gov. Larry Hogan in Maryland (pictured) have to decide how much information to make public."
-image-caption = ""
-image-credit = "Patrick Siebert for Gov. Larry Hogan / Flickr"
-image-size = ""
-published = 2020-04-27T10:30:00Z
-slug = "coronavirus-data-public-information-pennsylvania-dashboard"
 authors = ["Cynthia Fernandez", "Anna Orso", "Christine Vestal"]
-byline = "Cynthia Fernandez of Spotlight PA, Anna Orso of the Philadelphia Inquirer, and Christine Vestal of Stateline"
-title = "States need coronavirus data to make timely decisions. What they share with the public varies widely."
-subtitle = ""
-description = "As part of a collaborative effort, Stateline and Spotlight PA surveyed six states across the U.S. to determine what information they have made accessible to the public via their websites."
 blurb = "As part of a collaborative effort, Stateline and Spotlight PA surveyed six states across the U.S. to determine what information they have made accessible to the public via their websites."
+byline = "Cynthia Fernandez of Spotlight PA, Anna Orso of the Philadelphia Inquirer, and Christine Vestal of Stateline"
+description = "As part of a collaborative effort, Stateline and Spotlight PA surveyed six states across the U.S. to determine what information they have made accessible to the public via their websites."
+image = "external/hgvcdxwcmtjfw7bctzvh6ssvyg.jpeg"
+image-credit = "Patrick Siebert for Gov. Larry Hogan / Flickr"
+image-description = "Public officials including Gov. Larry Hogan in Maryland (pictured) have to decide how much information to make public."
+internal-id = "SPLSTATELINE28"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
+published = 2020-04-27T06:30:00-04:00
+slug = "coronavirus-data-public-information-pennsylvania-dashboard"
+suppress-date = false
+suppress-featured = false
+title = "States need coronavirus data to make timely decisions. What they share with the public varies widely."
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -33,7 +25,7 @@ With the coronavirus pandemic, timing is everything. When should states shut dow
 
 And yet, how much information is shared with the public varies widely among the states.
 
-As part of a collaborative effort, <a href="https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline">Stateline</a> and <a href="https://www.spotlightpa.org/">Spotlight PA</a> surveyed six states — <a href="https://covid19.colorado.gov/data/case-data">Colorado</a>, <a href="https://dph.georgia.gov/covid-19-daily-status-report">Georgia</a>, <a href="https://coronavirus.maryland.gov/">Maryland</a>, <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania</a>, <a href="https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/sc-testing-data-projections-covid-19">South Carolina</a>, and <a href="https://www.doh.wa.gov/emergencies/coronavirus">Washington</a> — to determine what information they have made accessible to the public via their websites.
+As part of a collaborative effort, <a href="https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline">Stateline</a> and <a href="https://www.spotlightpa.org/">Spotlight PA</a> surveyed six states — <a href="https://covid19.colorado.gov/data/case-data">Colorado</a>, <a href="https://dph.georgia.gov/covid-19-daily-status-report">Georgia</a>, <a href="https://coronavirus.maryland.gov/">Maryland</a>, <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania</a>, <a href="https://web.archive.org/web/20220514071328/https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/sc-testing-data-projections-covid-19">South Carolina</a>, and <a href="https://www.doh.wa.gov/emergencies/coronavirus">Washington</a> — to determine what information they have made accessible to the public via their websites.
 
 All six are regularly releasing data on cases by age, sex, and county. But beyond those basic numbers, the patchwork of available information shows the differing abilities of health officials to accurately collect and report data, as well as how much they believe the public needs to know.
 
