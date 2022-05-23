@@ -1,17 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2022-05-19-SPLMORATORIUM18.md"
+    "content/news/2022-05-23-SPLMASWIN23.md"
   ],
   "sidebarPicks": [
     "content/news/2021-12-22-SPLMAPTOOL.md"
   ],
   "subfeatures": [
-    "content/news/2021-04-08-SPLPRISONVAX08.md",
-    "content/news/2021-01-19-SPLPRISONS19.md",
-    "content/news/2020-06-11-SPLREP12.md"
+    "content/news/2022-05-18-SPLRESULTS.md",
+    "content/news/2021-01-08-SPLMASTRIANO09.md"
   ],
   "topSlots": [
-    "content/news/2022-05-18-SPLRESULTS.md",
+    "content/news/2022-05-19-SPLMORATORIUM18.md",
     "content/news/2022-05-16-SPLYASS.md",
     "content/news/2022-05-12-SPLLAB12.md"
   ],
