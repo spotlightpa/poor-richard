@@ -33,7 +33,7 @@
 /*! purgecss end ignore */
 
 .featured-content > p a {
-  @apply text-darkblue underline;
+  @apply underline text-darkblue;
   @apply transition-colors duration-500;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .featured-content > p del {
-  @apply text-orange line-through;
+  @apply line-through text-orange;
 }
 
 .featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
@@ -75,11 +75,11 @@
 }
 
 .featured-content > ul {
-  @apply list-disc pl-6;
+  @apply pl-6 list-disc;
 }
 
 .featured-content > ol {
-  @apply list-decimal pl-6;
+  @apply pl-6 list-decimal;
 }
 
 .article-content > :where(*) {
@@ -123,15 +123,15 @@
 }
 
 .article-content > ul {
-  @apply list-disc pl-6;
+  @apply pl-6 list-disc;
 }
 
 .article-content > ol {
-  @apply list-decimal pl-6;
+  @apply pl-6 list-decimal;
 }
 
 .article-content :where(a) {
-  @apply text-darkblue underline;
+  @apply underline text-darkblue;
   @apply transition-colors duration-500;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .article-content > p del {
-  @apply text-orange line-through;
+  @apply line-through text-orange;
 }
 
 
@@ -155,7 +155,7 @@
 }
 
 .content-aside a {
-  @apply text-darkblue underline;
+  @apply underline text-darkblue;
   @apply transition-colors duration-500;
 }
 
@@ -183,7 +183,7 @@
 .content-aside > h2,
 .content-aside > h3,
 .content-aside > h4 {
-  @apply uppercase font-bold text-lg leading-none;
+  @apply text-lg font-bold leading-none uppercase;
 }
 
 .content-aside > * + h1,
@@ -241,7 +241,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-transparent;
+  @apply bg-transparent rounded-full;
 }
 
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
@@ -272,52 +272,52 @@
 }
 
 .site-nav\:logo {
-  @apply flex-shrink-0 inline-flex text-white hover:text-yellow;
+  @apply inline-flex flex-shrink-0 text-white hover:text-yellow;
 }
 
 .site-nav\:logo-svg {
-  @apply pr-4 sm:pr-0 h-12 w-60 max-w-full fill-current;
+  @apply h-12 max-w-full pr-4 fill-current sm:pr-0 w-60;
 }
 
 .site-nav\:desktop {
-  @apply hidden lg:flex w-full items-center space-x-4 justify-end font-sans;
+  @apply items-center justify-end hidden w-full space-x-4 font-sans lg:flex;
 }
 
 .site-nav\:item {
-  @apply uppercase text-white hover:text-yellow duration-500;
+  @apply text-white uppercase duration-500 hover:text-yellow;
 }
 
 .site-nav\:svg-icon {
-  @apply inline-block relative w-4 h-4 fill-current align-middle;
+  @apply relative inline-block w-4 h-4 align-middle fill-current;
 }
 
 .site-nav\:donate-button {
-  @apply flex items-baseline px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold;
+  @apply flex items-baseline px-2 py-1 font-semibold text-white uppercase rounded min-w-max bg-orange;
 }
 
 .site-nav\:mobile {
-  @apply lg:hidden flex items-center font-sans;
+  @apply flex items-center font-sans lg:hidden;
 }
 
 .site-nav\:hamburger {
-  @apply rounded border border-white px-4 py-2 text-white;
+  @apply px-4 py-2 text-white border border-white rounded;
 }
 
 .site-nav\:flyout {
-  @apply absolute z-10 mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow;
-  @apply py-2 px-4 space-y-2 bg-black text-white text-lg uppercase;
+  @apply absolute right-0 z-10 w-48 mt-2 border rounded shadow min-w-min border-g-7;
+  @apply px-4 py-2 space-y-2 text-lg text-white uppercase bg-black;
 }
 
 .site-nav\:flyout-donate {
-  @apply px-3 py-2 inline-flex items-center whitespace-nowrap bg-orange text-white rounded uppercase font-semibold hover:shadow-beige;
+  @apply inline-flex items-center px-3 py-2 font-semibold text-white uppercase rounded whitespace-nowrap bg-orange hover:shadow-beige;
 }
 
 .site-nav\:flyout-donate-svg {
-  @apply inline mr-1 h-6 w-6 fill-current;
+  @apply inline w-6 h-6 mr-1 fill-current;
 }
 
 .site-nav\:flyout-item {
-  @apply block w-full hover:text-yellow transition-colors duration-500;
+  @apply block w-full transition-colors duration-500 hover:text-yellow;
 }
 
 @tailwind components;
@@ -332,4 +332,12 @@
 
 .text-shadow {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
