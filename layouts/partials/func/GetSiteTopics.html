@@ -1,0 +1,6 @@
+{{ $topics := slice }}
+{{ range site.Taxonomies.topics }}
+  {{ $topics = $topics | append .Page }}
+{{ end }}
+
+{{ return $topics }}

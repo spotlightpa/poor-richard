@@ -1,0 +1,8 @@
+{{ $topics := slice }}
+{{ range . }}
+  {{ with index site.Taxonomies.topics (urlize .) }}
+    {{ $topics = $topics | append .Page }}
+  {{ end }}
+{{ end }}
+
+{{ return $topics }}

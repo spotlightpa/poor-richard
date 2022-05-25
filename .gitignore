@@ -75,3 +75,4 @@ dist
 .netlify
 functions/
 hugo_stats.json
+.hugo_build.lock

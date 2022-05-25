@@ -1,3 +1,26 @@
+{{ $all_topics := partialCached "func/GetSiteTopics" "GetSiteTopics" }}
+{{ $first_limit := 8 }}
+{{/* Defaults for first topics are first 8 */}}
+{{ $first_topics := first $first_limit $all_topics }}
+{{ with .Params.featured_topics }}
+  {{/* If page has .featured_topics set, we used those as "first" instead. */}}
+  {{ $first_topics = partialCached "func/GetTopicsByName" . . }}
+{{ end }}
+{{ $other_topics := symdiff $first_topics $all_topics }}
+
+{{/* Next we need to split the remaining topics into 3 for the following "Trending Topics" module's three columns */}}
+{{ $other_col_limit := div (len $other_topics) 3 }}
+{{ $other_col_1 := $other_topics | first $other_col_limit | group "1" }}
+{{ $other_col_2 := $other_topics | first (mul $other_col_limit 2) | last $other_col_limit | group "2" }}
+{{ $other_col_3 := $other_topics | first (mul $other_col_limit 3) | last $other_col_limit | group "3" }}
+{{ $other_cols := slice $other_col_1 }}
+{{ with $other_col_2 }}
+  {{ $other_cols = $other_cols | append . }}
+{{ end }}
+{{ with $other_col_3 }}
+  {{ $other_cols = $other_cols | append . }}
+{{ end }}
+
 <nav
   class="bg-black md:py-6"
   id="#top"
@@ -23,55 +46,46 @@
   </div>
   <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
     <div class="pl-4 text-base leading-normal text-white md:text-2xl">
-      <a href="#" class="pl-1">Criminal Justice</a>,
-      <a href="#" class="pl-1">Coronavirus</a>,
-      <a href="#" class="pl-1">The Capitol</a>,
-      <a href="#" class="pl-1">Elections</a>,
-      <a href="#" class="pl-1">Redistricting</a>,
-      <a href="#" class="pl-1">Politics</a>,
-      <a href="#" class="pl-1">Education</a>,
-      <a href="#" class="pl-1">Eviction</a>,
-      <a href="#" class="pl-1">Pensions</a>,
-      <a href="#" class="pl-1">Health</a>,
-      <a href="#" class="pl-1">Environment</a>
+      {{ range $index, $v := $first_topics }}
+      {{ if $index }}, {{ end }}<a href="{{ .Page.RelPermalink }}" class="pl-1">{{ .Page.Title }}</a>
+      {{ end }}
     </div>
   </div>
 </nav>
 <div class="w-full py-12 bg-beige" x-transition  x-show="catNav">
   <div class="grid w-full max-w-6xl grid-cols-2 gap-10 px-8 mx-auto font-bold lg:px-5 md:grid-cols-4">
-    <div class="col-span-1">
-      <img src="https://via.placeholder.com/750x425.png">
-      <p class="mt-1 text-sm">Pa. primary election 2022: See how much money the GOP candidates for governor have raised</p>
-    </div>
-
-    <div class="col-span-1">
-      <img src="https://via.placeholder.com/750x425.png">
-      <p class="mt-1 text-sm">This is another example of an article title</p>
-    </div>
+    {{ with .Params.featured_topics_entries }}
+      {{ range first 2 . }}
+        {{ with site.GetPage . }}
+        <div class="col-span-1">
+          {{ $name := .Param "image" }}
+          {{ $credit := .Param "image-credit" }}
+          {{ $description := .Param "image-description" }}
+          {{ $imgOpts := dict
+            "filename" $name
+            "credit" $credit
+            "description" $description
+            "widthRatio" 16
+            "heightRatio" 9
+            "sizeHint" "20vw"
+          }}
+          {{ partial "component/image-block.html" $imgOpts }}
+          <p class="mt-1 text-sm">{{ .Title }}</p>
+        </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
       <div class="col-span-2">
         <h4 class="w-full mb-3 border-b border-gray-500">More Topics</h4>
         <div class="grid grid-cols-3 gap-4">
-          <ul>
-            <li class="mb-1"><a href="#">Coronavirus</a></li>
-            <li class="mb-1"><a href="#">Criminal Justice</a></li>
-            <li class="mb-1"><a href="#">Economy</a></li>
-            <li class="mb-1"><a href="#">Editor's Notes</a></li>
-            <li class="mb-1"><a href="#">Education</a></li>
-          </ul>
-          <ul>
-            <li class="mb-1"><a href="#">Elections</a></li>
-            <li class="mb-1"><a href="#">Environment</a></li>
-            <li class="mb-1"><a href="#">Events</a></li>
-            <li class="mb-1"><a href="#">Eviction</a></li>
-            <li class="mb-1"><a href="#">Health</a></li>
-          </ul>
-          <ul>
-            <li class="mb-1"><a href="#">Pensions</a></li>
-            <li class="mb-1"><a href="#">Politics</a></li>
-            <li class="mb-1"><a href="#">Redistricting</a></li>
-            <li class="mb-1"><a href="#">The Capitol</a></li>
-          </ul>
+          {{ range $other_cols }}
+            <ul>
+              {{ range .Pages }}
+              <li class="mb-1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
         </div>
       </div>
 

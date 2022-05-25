@@ -4,27 +4,46 @@
 <section class="py-10 bg-g-3" id="impact-awards">
   <div class="max-w-6xl px-5 mx-auto">
     <h2 class="mb-10 text-6xl font-black uppercase text-g-6">Impact &amp; Awards</h2>
-    <div class="flex flex-wrap">
-      <div class="w-full md:w-3/5 md:pr-10">
-        <img src="https://via.placeholder.com/800x452.png">
-      </div>
-      <div class="w-full md:w-2/5">
-        <h3 class="text-3xl font-black text-black">At Risk, In The Dark</h3>
-        <p class="mb-2">As the Mariner East pipelines become a permanent underpinning of Pennsylvania, secrecy and a patchwork of emergency plans have left many communities in the dark about what to do in case of an accident.</p>
-        <div class="text-2xl">2 Articles</div>
-      </div>
-    </div>
-
-    <div class="flex flex-wrap mt-10 md:flex-row-reverse">
-      <div class="w-full md:w-4/6 md:pl-10">
-        <img src="https://via.placeholder.com/961x550.png">
-      </div>
-      <div class="w-full md:w-2/6 md:text-right">
-        <h3 class="text-3xl font-black text-black">The PSERS Scandal</h3>
-        <p class="mb-2">Chronicling an FBI investigation into Pennsylvania's $64 billion public school pension fund and the resulting fallout.</p>
-        <div class="text-2xl">13 Articles</div>
-      </div>
-    </div>
+    {{ with .Params.featured_series }}
+      {{ range $index, $series := . }}
+        {{ $even := modBool $index 2 }}
+        {{ $classes := dict
+          "block" "flex flex-wrap my-10"
+          "image" "w-full md:w-3/5 md:pr-10"
+          "text" "w-full md:w-2/5"
+        }}
+        {{ if not $even }}
+          {{ $classes = dict
+            "block" "flex flex-wrap my-10 md:flex-row-reverse"
+            "image" "w-full md:w-4/6 md:pl-10"
+            "text" "w-full md:w-2/6 md:text-right"
+          }}
+        {{ end }}
+        {{ with index site.Taxonomies.series (urlize .) }}
+        <div class="{{ $classes.block }}">
+          <div class="{{ $classes.image }}">
+            {{ $name := .Page.Param "image" }}
+            {{ $credit := .Page.Param "image-credit" }}
+            {{ $description := .Page.Param "image-description" }}
+            {{ $imgOpts := dict
+              "filename" $name
+              "credit" $credit
+              "description" $description
+              "widthRatio" 16
+              "heightRatio" 9
+              "sizeHint" "33vw"
+            }}
+            {{ partial "component/image-block.html" $imgOpts }}
+          </div>
+          <div class="{{ $classes.text }}">
+            <a href="{{ .Page.RelPermalink }}"><h3 class="text-3xl font-black text-black">{{ .Page.Params.kicker | default .Page.Title }}</h3></a>
+            <p class="mb-2">{{ .Page.Params.description }}</p>
+            <div class="text-2xl">{{ len . }} Articles</div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
     <div class="flex justify-center mt-12">
       <a class="px-4 py-2 text-2xl font-bold duration-300 border border-black hover:text-red hover:border-red" href="#">See More Examples of Our Impact</a>
     </div>
