@@ -1,4 +1,10 @@
-<div class="w-full max-w-6xl px-5 mx-auto">
+<nav 
+  id="#top"
+  x-data="{ isOpen: false }"
+  data-ga-category="navbar"
+  data-sf-campaign="701f4000000TVu3AAG"
+  aria-label="main navigation"
+  class="w-full max-w-6xl px-5 mx-auto">
   <div class="flex flex-wrap justify-between">
     <div class="mr-5">
       <a class="inline-flex items-end px-3 py-1 duration-300 rounded-b-lg shadow hover:shadow-md bg-beige hover:bg-g-5 hover:text-black hover:bg-opacity-80" href="#">
@@ -11,12 +17,27 @@
     </div>
 
     <div class="flex flex-wrap items-center justify-end py-7">
-      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" href="/topics/events">Newsletters</a>
-      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" href="/topics/events">Investigations</a>
-      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" href="/topics/events">Events</a>
-      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" href="/about">About Us</a>
-      <span class="inline-block px-4 mb-2 text-black cursor-pointer hover:text-opacity-80"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.02 15.08H16l-.36-.35a8.4 8.4 0 1 0-.9.9l.34.37v1.02l6.46 6.45 1.93-1.93-6.45-6.46Zm-7.75 0a5.8 5.8 0 1 1-.01-11.6 5.8 5.8 0 0 1 .01 11.6Z" fill="#000" fill-opacity=".51"/></svg></span>
-      <a class="self-center inline-block max-w-xs px-4 py-2 mb-2 ml-6 leading-none text-white duration-300 rounded-md sm:flex bg-red hover:text-white hover:bg-black" href="/donate">Donate</a>
+      {{ range site.Menus.main }}
+      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" data-ga-category="item" href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+        <a
+        href="/search/"
+        class="inline-block px-4 mb-2 text-black cursor-pointer hover:text-opacity-80"
+        data-ga-category="search"
+        :data-ga-action="'modal:search:open'"
+        x-data
+        @click.prevent="$dispatch('modal:search:open')"
+      >
+        <svg class="site-nav:svg-icon">
+          <use href="#search-svg"></use>
+        </svg>
+      </a>
+      <a data-ga-category="donate" class="self-center inline-block max-w-xs px-4 py-2 mb-2 ml-6 leading-none text-white duration-300 rounded-md sm:flex bg-red hover:text-white hover:bg-black" href="/donate">Donate</a>
     </div>
   </div>
-</div>
+</nav>
+<div
+  x-data
+  x-intersect.once="$report({ target: $el })"
+  data-ga-action="view:nav"
+></div>
