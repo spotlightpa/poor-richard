@@ -67,9 +67,9 @@ Ultimately, the ruling may have broad impacts.
 
 The order was released just days after the May 17 primary, which featured at least two tightly contested races that could be decided by a handful of votes.
 
-Voters turned in thousands of undated mail ballots during the primary, Acting Secretary of State Leigh Chapman said during a news conference Wednesday. Based on information from 65 of the state’s 67 counties, Chapman said Republicans submitted 860 undated ballots and Democrats submitted 4,190.
+Thousands of voters turned in undated mail ballots during the primary, Acting Secretary of State Leigh Chapman said during a news conference Wednesday. Based on information from 65 of the state’s 67 counties, Chapman said Republicans submitted 860 undated ballots and Democrats submitted 4,190.
 
-Pennsylvania’s marquee GOP U.S. Senate primary has still not been called by analysts, and is likely heading to a recount. Heart surgeon turned TV host Mehmet Oz led former hedge fund manager David McCormick by just under 1,000 votes Tuesday, according to <a href="https://www.electionreturns.pa.gov/">unofficial results</a>.
+Pennsylvania’s marquee GOP U.S. Senate primary is now subject to a <a href="https://apnews.com/article/2022-midterm-elections-mehmet-oz-donald-trump-david-mccormick-congress-54d25db360a333bd5334260e60fa2b94" target="_blank">mandatory recount that could take until June 8</a> to complete. Heart surgeon turned TV host Mehmet Oz led former hedge fund manager David McCormick by just under 1,000 votes Tuesday, according to <a href="https://www.electionreturns.pa.gov/">unofficial results</a>.
 
 And in the Lehigh Valley, state Senate Appropriations Chair Pat Browne (R., Lehigh), one of the most powerful Republicans in Harrisburg, was trailing a conservative primary challenger by 17 votes as of Tuesday.
 
