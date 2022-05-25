@@ -27,7 +27,7 @@ Though the ruling specifically targeted a 2021 local judicial election, it could
 
 Here’s an explainer of the ruling and what comes next:
 
-<i>Last updated: 3 p.m., May 24</i>
+<i>Last updated: 2:10 p.m., May 25</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -67,7 +67,7 @@ Ultimately, the ruling may have broad impacts.
 
 The order was released just days after the May 17 primary, which featured at least two tightly contested races that could be decided by a handful of votes.
 
-It’s unclear how many undated mail ballots voters submitted during the primary. Allegheny County, home of Pittsburgh, reported 218; Bucks County, in suburban Philadelphia, said it received 168, according to the <a href="https://twitter.com/FordTurnerMCall/status/1529125257864421382?s=20&t=l25M4mOSXWZooLeK1NSNDw">Morning Call</a>; rural Lycoming County recorded just three.
+Voters turned in thousands of undated mail ballots during the primary, Acting Secretary of State Leigh Chapman said during a news conference Wednesday. Based on information from 65 of the state’s 67 counties, Chapman said Republicans submitted 860 undated ballots and Democrats submitted 4,190.
 
 Pennsylvania’s marquee GOP U.S. Senate primary has still not been called by analysts, and is likely heading to a recount. Heart surgeon turned TV host Mehmet Oz led former hedge fund manager David McCormick by just under 1,000 votes Tuesday, according to <a href="https://www.electionreturns.pa.gov/">unofficial results</a>.
 
