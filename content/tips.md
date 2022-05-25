@@ -40,9 +40,9 @@ Signal is a free app with end-to-end encryption, meaning the content of messages
 
 Spotlight PA's reporters [each have their own Signal number](https://www.spotlightpa.org/about/staff/). You must add their number to your contacts before messaging, so use a fake name for the entry, and they'll do the same.
 
-## Protonmail
+## Proton
 
-[ProtonMail](https://protonmail.com/about) is an email service that allows users to send encrypted messages back and forth with one another. This operates much like other email services but encrypts message contents. Sign up requires a username and password, so don't use any identifying information. Once you have an account, you can communicate with us.
+[Proton](https://proton.me/about) is an email service that allows users to send encrypted messages back and forth with one another. This operates much like other email services but encrypts message contents. Sign up requires a username and password, so don't use any identifying information. Once you have an account, you can communicate with us.
 
 **Write us**: [spotlightpa@protonmail.com](mailto:spotlightpa@protonmail.com)
 
