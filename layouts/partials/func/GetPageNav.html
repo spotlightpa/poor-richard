@@ -1,0 +1,44 @@
+{{/*
+  GetPageNav
+  Retrieves the navigation item for a given page, either as on-page links (for list page) or siblings.
+
+  @author @regisphilibert
+
+  @context Page (.)
+
+  @access private
+
+  @returns Slice
+    String (.url)
+    String (.name)
+    String (.id)
+    Boolean (.active)?
+
+*/}}
+{{ $items := slice }}
+{{ if eq .Kind "section" }}
+  {{ with .Params.blocks }}
+    {{ range . }}
+      {{ $id := urlize .title }}
+      {{ $items = $items | append (dict
+        "url" (printf "#%s" $id)
+        "name" .title
+        "id" $id
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ with .Parent.Pages }}
+    {{ range . }}
+      {{ $id := urlize .Title }}
+      {{ $items = $items | append (dict
+        "url" .RelPermalink
+        "name" .LinkTitle
+        "active" (eq $ .)
+        "id" $id
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $items }}

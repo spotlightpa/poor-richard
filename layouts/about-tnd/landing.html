@@ -1,0 +1,16 @@
+<div x-data="{
+  aboutActive: ''
+}">
+{{ .Render "hero" }}
+{{ .Render "page-nav" }}
+
+{{ range $blocks := .Params.blocks }}
+  {{ $id := urlize .title }}
+  <div
+    id="{{ $id }}"
+    x-intersect.full="aboutActive = '{{ $id }}'"
+  >
+    {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+  </div>
+{{ end }}
+</div>

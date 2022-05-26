@@ -7,19 +7,18 @@ title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 layout = "about-page-tnd"
 linktitle = "About"
-featured_topics_entries = ["/news/2022-03-29-SPLNEXT.md", "/news/2022-04-12-SPLRECAPPS12.md"]
-featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
-featured_series = ["Mariner East pipeline", "The PSERS Scandal"]
 [cascade]
-type = "about"
+type = "about-tnd"
 modal-exclude = true
 suppress-related = true
+featured_topics_entries = ["/news/2022-03-29-SPLNEXT.md", "/news/2022-04-12-SPLRECAPPS12.md"]
+featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
 [[blocks]]
 layout = "series"
 title = "Impact & Awards"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 [blocks.cta]
-url = "/"
+url = "/about-tnd/impact-awards"
 copy = "See More Examples of Our Impact"
 [[blocks]]
 layout = "partners"
@@ -27,6 +26,14 @@ title = "Partners"
 partners = ["Philadelphia Inquirer", "Delaware Valley News", "The Evening Sun", "The Intelligencer", "Next Pittsburgh", "BCTV"]
 copy = "Spotlight PA combines the strengths of The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune Review and WITF Public Media in a historic commitment to investigative and accountability reporting on state government and beyond."
 [blocks.cta]
-url = "/"
+url = "/about/partners"
 copy = "See More Of Our Partner"
+[[blocks]]
+title = "Mission"
+layout = "text"
+copy="""
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."""
+[blocks.cta]
+url = "/about-tnd/mission"
+copy = "See More Of Our Mission"
 +++
