@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-05-24-SPLBAEXPL.md"
+    "content/news/2022-05-26-SPLADVERTISING26.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-03-08-SPLMAILHEAR09.md",
-    "content/news/2022-05-16-SPLYASS.md"
+    "content/news/2022-02-21-SPLCANNABIS21.md",
+    "content/news/2022-05-10-SPLCOURT10.md"
   ],
   "topSlots": [
+    "content/news/2022-05-24-SPLBAEXPL.md",
     "content/news/2022-05-23-SPLURGE.md",
-    "content/news/2022-05-23-SPLMASWIN23.md",
-    "content/news/2022-05-19-SPLMORATORIUM18.md"
+    "content/news/2022-05-23-SPLMASWIN23.md"
   ],
   "topper": []
 }
