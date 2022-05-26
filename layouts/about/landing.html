@@ -1,0 +1,6 @@
+{{ partial "tw/tnd-nav-hero.html" . }}
+{{ partial "tw/tnd-page-header.html" . }}
+
+{{ range $blocks := .Params.blocks }}
+  {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+{{ end }}

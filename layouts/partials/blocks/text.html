@@ -1,0 +1,17 @@
+{{ with .block }}
+<section class="py-10 bg-g-3" id="{{ urlize .title }}">
+  <div class="max-w-6xl px-5 mx-auto">
+    <h2 class="mb-10 text-6xl font-black uppercase text-g-6">{{ .title }}</h2>
+    {{ with .copy }}
+    <div class="my-4">
+      {{ $.Page.RenderString . }}
+    </div>
+    {{ end }}
+    {{ with .cta }}
+      <div class="flex justify-center mt-12">
+        <a class="px-4 py-2 text-2xl font-bold duration-300 border border-black hover:text-red hover:border-red" href="{{ .url }}">{{ .copy }}</a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

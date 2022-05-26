@@ -1,0 +1,20 @@
+{{ define "promo" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "topper" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "nav" }}
+  {{ partial "tw/tnd-small-nav.html" . }}
+{{ end }}
+
+{{ define "main" }}
+{{ .Render "landing" }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "tw/tnd-footer.html" . }}
+{{ end }}
+

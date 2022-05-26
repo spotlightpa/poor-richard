@@ -1,0 +1,42 @@
+{{ with .block }}
+<section class="py-20 bg-black bg-opacity-70">
+  <div class="max-w-6xl px-5 mx-auto">
+    <div class="flex">
+      <div class="text-6xl font-black text-white uppercase opacity-40" style="writing-mode: vertical-rl; text-orientation: mixed;">
+        {{ .title }}
+      </div>
+      <div class="max-w-3xl text-2xl text-white md:pl-20">
+        {{ $.Page.RenderString .copy }}
+      </div>
+    </div>
+    {{ with .partners }}
+    <div class="columns is-multiline is-centered" data-ga-category="inline">
+      {{ range . }}
+        {{ with where site.Data.partners.partners "name" . }}
+          {{ with index . 0 }}
+          <div class="my-8 column is-narrow has-text-centered" data-ga-category="logos">
+            <a href="{{ .url }}" title="{{ .name }}">
+              <span class="logo-column">
+                <img
+                  src="{{ index . "logo-url" }}"
+                  alt="Logo for {{ .name }}"
+                  style="width: auto; height: 64px;"
+                />
+              </span>
+            </a>
+          </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    
+    </div>
+    
+    {{ with .cta }}
+    <div class="flex justify-center mt-12">
+      <a class="px-4 py-2 text-2xl font-bold text-white duration-300 border border-white hover:text-red hover:border-red" href="{{ .url }}">{{ .copy }}</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
