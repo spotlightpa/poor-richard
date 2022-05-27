@@ -22,7 +22,7 @@ topics = ["The Capitol"]
 
 HARRISBURG — The primary defeat of one of Harrisburg’s top budget negotiators and the potential loss of another could embolden a contingent of conservative state House Republicans to derail the annual process.
 
-At least five Republican House incumbents lost reelection on May 17, including Stan Saylor (R., York), who chairs the powerful Appropriations Committee. Saylor’s state Senate counterpart, Pat Browne (R., Lehigh), was losing by 19 votes as of May 27 and is <a href="https://www.mcall.com/news/elections/mc-nws-pa-coleman-browne-nailbiter-20220525-leld5preb5gxddwvhayc3fazvy-story.html">considering a recount</a>.
+At least four Republican House incumbents lost reelection on May 17, including Stan Saylor (R., York), who chairs the powerful Appropriations Committee. Saylor’s state Senate counterpart, Pat Browne (R., Lehigh), was losing by 19 votes as of May 27 and is <a href="https://www.mcall.com/news/elections/mc-nws-pa-coleman-browne-nailbiter-20220525-leld5preb5gxddwvhayc3fazvy-story.html">considering a recount</a>.
 
 As the majority Appropriations Committee chairs, Browne and Saylor play a leading role in negotiations with Gov. Tom Wolf and top Democrats, hammering out an annual budget that directs tens of billions of state tax dollars to education, human services, and economic development.
 
@@ -34,13 +34,13 @@ But they found themselves targeted not only by a political action committee <a h
 
 Capitol insiders believe their poor primary performances could inspire frustrated Republicans to use the budget, which must be passed each year, as leverage to force Wolf to expand voter ID, end mail voting, or ban vaccine mandates.
 
-Amid budget negotiations in 2021, Wolf vetoed the Republicans’ <a href="https://www.penncapital-star.com/government-politics/wolf-vetoes-republican-voting-bill-gop-pivots-to-constitutional-referendums/">omnibus election overhaul</a>, which included stricter voter ID requirements, and <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=S&billTyp=B&billNbr=0618&pn=0945">a bill</a> that would have <a href="https://www.penncapital-star.com/blog/wolf-vetoes-bill-banning-pa-primary-schools-colleges-from-requiring-covid-vaccines/">blocked schools</a> and government agencies from requiring vaccination to “use any public service.”
+Amid budget negotiations in 2021, Wolf vetoed the Republicans’ <a href="https://www.penncapital-star.com/government-politics/wolf-vetoes-republican-voting-bill-gop-pivots-to-constitutional-referendums/">omnibus election overhaul</a>, which included stricter voter ID requirements, and <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2021&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0618&amp;pn=0945">a bill</a> that would have <a href="https://www.penncapital-star.com/blog/wolf-vetoes-bill-banning-pa-primary-schools-colleges-from-requiring-covid-vaccines/">blocked schools</a> and government agencies from requiring vaccination to “use any public service.”
 
 “We could have used the power of the purse strings a lot more,” said state Rep. Mike Jones (R., York), who endorsed Saylor’s opponent and has emerged as a vocal opponent of GOP leadership. “We could have been a lot more visible in the public. And we could have picked a few more fights on principle.”
 
 It’s unclear how many votes Jones and his allies can sway, but it takes just 68 lawmakers in the 203-member lower chamber to block parts of the budget, potentially upsetting the delicate negotiations.
 
-The state Capitol saw three late budgets — including one nine-month long impasse — in Wolf’s first four years in office over the Democrat’s plans to raise taxes to increase education funding.
+The state Capitol saw three late budgets — including one nine-month-long impasse — in Wolf’s first four years in office over the Democrat’s plans to raise taxes to increase education funding.
 
 Failure to pass an on-time budget can have far-reaching consequences, <a href="https://apnews.com/article/8081794b451248bfada3293e206f8a13">including</a> forcing domestic violence shelters to close or putting school districts into debt to cover their costs.
 
