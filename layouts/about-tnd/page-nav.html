@@ -5,19 +5,33 @@
     <div class="pr-10 text-2xl text-black">
       {{ .Description }}
     </div>
-    <div class="flex justify-end w-auto mt-5 md:w-64 md:mt-0">
-      <a class="self-center inline-block px-3 py-2 text-xl text-white rounded bg-red" href="/donate/">Support Us!</a>
-    </div>
   </div>
 </div>
 {{ with partial "func/GetPageNav" $ }}
 {{ $active_classes := "bg-black text-white" }}
-<div class="sticky top-0 z-10 bg-white">
-  <div class="flex flex-wrap max-w-6xl px-5 pt-5 mx-auto">
-    <span class="px-4 py-2 mb-5 mr-5 text-white duration-300 bg-black border border-black">Spotlight Logo Here</span>
+<div class="sticky z-10 bg-white sticky-nav">
+  <div class="flex flex-wrap items-start max-w-6xl px-5 pt-5 mx-auto">
+    <span class="hidden w-40 py-2 mb-5 mr-5 text-white duration-300 bg-black border border-black show-when-sticky md:inline-block">
+      <svg class="flex self-center w-full h-5 fill-current">
+        <title>Home</title>
+        <desc>Spotlight PA logo</desc>
+        <use href="#banner-svg"></use>
+      </svg>
+    </span>
     {{ range . }}
       <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="px-4 py-2 mb-5 mr-5 duration-300 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
     {{ end }}
+    <div class="flex justify-end flex-1">
+      <a class="self-center inline-block px-3 py-1 text-xl text-white rounded bg-red" href="/donate/">Support Us!</a>
+    </div>
   </div>
 </div>
+<script>
+  const el = document.querySelector(".sticky-nav")
+  const observer = new IntersectionObserver(
+    ([e]) => e.target.classList.toggle("is-sticky", e.intersectionRatio < 1),
+    { threshold: [1] }
+  );
+  observer.observe(el);
+</script>
 {{ end }}

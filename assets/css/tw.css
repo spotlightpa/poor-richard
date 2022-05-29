@@ -341,3 +341,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.sticky-nav {
+  top: -1px;
+}
+
+.show-when-sticky {
+  @apply opacity-0;
+}
+
+.is-sticky .show-when-sticky {
+  @apply opacity-100;
+}
