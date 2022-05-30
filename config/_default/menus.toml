@@ -1,38 +1,27 @@
 [[main]]
+name = "Newsletters"
+pre = "is-uppercase"
+url = "/newsletters/"
+weight = 1
+
+[[main]]
 pre = "is-uppercase"
 name = "Investigations"
 url = "/investigations/"
-weight = 1
+weight = 2
 
 [[main]]
 name = "Events"
 url = "/topics/events/"
 pre = "is-uppercase"
-weight = 2
-
-[[main]]
-name = "Newsletters"
-pre = "is-uppercase"
-url = "/newsletters/"
 weight = 3
 
 [[main]]
-name = "Staff"
+name = "About Us"
 pre = "is-uppercase"
-url = "/about/staff/"
+url = "/about-tnd/"
 weight = 4
 
-[[main]]
-name = "Mission"
-pre = "is-uppercase"
-url = "/about/mission/"
-weight = 5
-
-[[main]]
-name = "Tips"
-pre = "is-uppercase"
-url = "/tips/"
-weight = 6
 
 [[footer]]
 name = "Home"

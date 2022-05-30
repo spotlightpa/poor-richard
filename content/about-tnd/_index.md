@@ -26,7 +26,7 @@ title = "Partners"
 partners = ["Philadelphia Inquirer", "Delaware Valley News", "The Evening Sun", "The Intelligencer", "Next Pittsburgh", "BCTV"]
 copy = "Spotlight PA combines the strengths of The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune Review and WITF Public Media in a historic commitment to investigative and accountability reporting on state government and beyond."
 [blocks.cta]
-url = "/about/partners"
+url = "/about-tnd/partners"
 copy = "See More Of Our Partners"
 [[blocks]]
 title = "Staff"
