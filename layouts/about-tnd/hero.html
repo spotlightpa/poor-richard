@@ -45,9 +45,9 @@
     </div>
   </div>
   <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
-    <div class="pl-4 text-base leading-normal text-white md:text-2xl">
+    <div class="pl-4 text-base leading-normal text-gray-600 md:text-2xl">
       {{ range $index, $v := $first_topics }}
-      {{ if $index }}, {{ end }}<a href="{{ .Page.RelPermalink }}" class="pl-1">{{ .Page.Title }}</a>
+      {{ if $index }}| {{ end }}<a href="{{ .Page.RelPermalink }}" class="pl-1 text-white">{{ .Page.Title }}</a>
       {{ end }}
     </div>
   </div>
