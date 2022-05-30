@@ -4,14 +4,14 @@
 {{ .Render "hero" }}
 {{ .Render "page-nav" }}
 {{ with .Content }}
-<div class="block max-w-6xl my-8 px-5 mx-auto" data-ga-category="content">
+<div class="block max-w-6xl px-5 mx-auto my-8" data-ga-category="content">
   <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
   <div
     x-data
     x-intersect.once="$report({ target: $el })"
     data-ga-action="view:content-start"
   ></div>
-  <div class="content" data-sf-campaign="701f4000000TVuXAAW">
+  <div class="text-lg content" data-sf-campaign="701f4000000TVuXAAW">
     {{ . }}
   </div>
   <div
