@@ -27,7 +27,23 @@ partners = ["Philadelphia Inquirer", "Delaware Valley News", "The Evening Sun", 
 copy = "Spotlight PA combines the strengths of The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune Review and WITF Public Media in a historic commitment to investigative and accountability reporting on state government and beyond."
 [blocks.cta]
 url = "/about/partners"
-copy = "See More Of Our Partner"
+copy = "See More Of Our Partners"
+[[blocks]]
+title = "Staff"
+layout = "text"
+copy="""
+staff copyDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."""
+[blocks.cta]
+url = "/about-tnd/staff"
+copy = "See More about our Staff"
+[[blocks]]
+title = "Supporters"
+layout = "text"
+copy="""
+supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."""
+[blocks.cta]
+url = "/about-tnd/mission"
+copy = "See More Of Our Mission"
 [[blocks]]
 title = "Mission"
 layout = "text"
