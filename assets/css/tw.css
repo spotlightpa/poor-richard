@@ -346,10 +346,22 @@ html {
   top: -1px;
 }
 
-.show-when-sticky {
-  @apply opacity-0;
+.is-sticky .logo-show-when-sticky {
+  @apply w-40 mr-5 border border-black;
 }
 
-.is-sticky .show-when-sticky {
-  @apply opacity-100;
+.support-show-when-sticky {
+  @apply opacity-0 pointer-events-none;
+}
+
+.is-sticky .support-show-when-sticky {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.support-hide-when-sticky {
+  @apply duration-100 opacity-100;
+}
+
+.is-sticky .support-hide-when-sticky {
+  @apply opacity-0;
 }

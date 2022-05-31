@@ -26,6 +26,7 @@
   <div
     id="{{ $id }}"
     x-intersect.full="aboutActive = '{{ $id }}'"
+    class="scroll-mt-10 md:scroll-mt-20"
   >
     {{ partial "blocks/block" (dict "Page" $ "block" .) }}
   </div>
