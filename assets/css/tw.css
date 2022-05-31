@@ -346,8 +346,12 @@ html {
   top: -1px;
 }
 
+.logo-show-when-sticky {
+  @apply w-0 mr-0 border-none opacity-0;
+}
+
 .is-sticky .logo-show-when-sticky {
-  @apply md:mr-5 md:border md:border-black md:w-40 md:opacity-100;
+  @apply md:mr-5 md:border md:border-black md:w-40 md:opacity-100 md:duration-100 md:bg-black md:py-2 md:mb-5 md:text-white;
 }
 
 .support-show-when-sticky {

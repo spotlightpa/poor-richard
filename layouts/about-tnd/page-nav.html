@@ -14,15 +14,15 @@
 {{ $active_classes := "bg-black text-white" }}
 <div class="sticky z-10 bg-white sticky-nav">
   <div class="flex flex-wrap items-start max-w-6xl px-5 pt-5 mx-auto">
-    <span class="w-0 py-2 mb-5 text-white duration-100 bg-black opacity-0 logo-show-when-sticky">
-      <svg class="flex self-center w-full h-5 fill-current">
+    <span class="logo-show-when-sticky">
+      <svg class="flex self-center w-full h-6 fill-current">
         <title>Home</title>
         <desc>Spotlight PA logo</desc>
         <use href="#banner-svg"></use>
       </svg>
     </span>
     {{ range . }}
-      <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="px-4 py-2 mb-5 mr-5 duration-300 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
+      <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="px-4 py-2 mb-5 mr-5 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
     {{ end }}
     <div class="flex justify-end flex-1 mb-5">
       <a class="self-center px-3 py-1 text-xl text-white delay-75 rounded support-show-when-sticky bg-red" href="/donate/">Support Us!</a>

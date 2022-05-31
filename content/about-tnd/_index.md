@@ -42,8 +42,8 @@ layout = "text"
 copy="""
 supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."""
 [blocks.cta]
-url = "/about-tnd/mission"
-copy = "See More Of Our Mission"
+url = "/about-tnd/supporters"
+copy = "See More Of Our Supporters"
 [[blocks]]
 title = "Mission"
 layout = "text"

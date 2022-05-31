@@ -1,6 +1,7 @@
 +++
 published = 2020-07-17T14:22:15.114Z
 title = "Impact & Awards"
+weight = 10
 linktitle = "Impact & Awards"
 [[blocks]]
 layout = "text"
