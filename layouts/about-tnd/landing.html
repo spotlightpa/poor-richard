@@ -25,7 +25,7 @@
   {{ $id := urlize .title }}
   <div
     id="{{ $id }}"
-    x-intersect.full="aboutActive = '{{ $id }}'"
+    x-intersect.half="aboutActive = '{{ $id }}'"
     class="scroll-mt-20"
   >
     {{ partial "blocks/block" (dict "Page" $ "block" .) }}
