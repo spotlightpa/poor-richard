@@ -347,7 +347,7 @@ html {
 }
 
 .is-sticky .logo-show-when-sticky {
-  @apply w-40 mr-5 border border-black;
+  @apply w-40 mr-5 border border-black opacity-100;
 }
 
 .support-show-when-sticky {
