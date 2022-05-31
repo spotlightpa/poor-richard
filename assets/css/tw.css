@@ -347,7 +347,7 @@ html {
 }
 
 .is-sticky .logo-show-when-sticky {
-  @apply w-40 mr-5 border border-black opacity-100;
+  @apply md:mr-5 md:border md:border-black md:w-40 md:opacity-100;
 }
 
 .support-show-when-sticky {
@@ -355,13 +355,13 @@ html {
 }
 
 .is-sticky .support-show-when-sticky {
-  @apply opacity-100 pointer-events-auto;
+  @apply md:pointer-events-auto md:opacity-100;
 }
 
 .support-hide-when-sticky {
-  @apply duration-100 opacity-100;
+  @apply md:duration-100 md:opacity-100;
 }
 
 .is-sticky .support-hide-when-sticky {
-  @apply opacity-0;
+  @apply md:opacity-0;
 }
