@@ -1,4 +1,6 @@
 {
+	"draft": true,
+	"url": "/xxx-old-dashboard",
 	"type": "dashboard",
 	"image": "external/9h1eadb80ay1w6d4dk98fhpn38.jpeg",
 	"image-description": "Live updates on the latest numbers of Pa. coronavirus cases, as well as a county-by-county coronavirus map.",

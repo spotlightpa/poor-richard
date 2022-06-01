@@ -18,6 +18,10 @@ slug = "pennsylvania-covid-dashboard-updates-guides-resources-cases-vaccines-tes
 suppress-date = true
 title = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests"
 topics = ["Coronavirus"]
+aliases = [
+    "/about/coronavirus-dashboard-faq/",
+    "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
+]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
