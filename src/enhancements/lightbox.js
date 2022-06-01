@@ -5,7 +5,11 @@ export default function lightbox() {
     state: "initial",
 
     init() {
-      if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+      if (
+        window.matchMedia(
+          "(max-width: 640px), (prefers-reduced-motion), (speech)"
+        ).matches
+      ) {
         this.state = "disabled";
       }
       this.$watch("state", (val) => {
