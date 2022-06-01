@@ -30,6 +30,11 @@ url = "https://www.bctv.org"
 logo-url = "https://files.data.spotlightpa.org/uploads/01gy/dn82/bctv.png"
 
 [[partners]]
+name = "Butler Eagle"
+url = "https://www.butlereagle.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01h9/ffn5/eaglelogo.png"
+
+[[partners]]
 name = "The Caucus"
 url = "https://caucuspa.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx72/caucus.png"
