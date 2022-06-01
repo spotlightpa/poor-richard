@@ -1,8 +1,9 @@
 import { buildAndSend } from "../utils/google-analytics.js";
 
+// TODO: remove module
 export default function lightbox() {
   return {
-    state: "initial",
+    state: "disabled",
 
     init() {
       if (
