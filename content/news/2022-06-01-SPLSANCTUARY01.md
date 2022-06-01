@@ -26,7 +26,7 @@ HARRISBURG — An unofficial online directory of doctors who can approve patient
 
 “This is fraud and unfair to both the physicians and the patients,” Kimberlee Williams Park, a Delaware County physician who participates in the medical cannabis program, wrote in a May complaint to the state attorney general’s office. “It disrupts continuity of care and is pure greed.”
 
-A complaint from Park and at least one other physician to the Department of Health prompted the agency to warn doctors in the state’s medical cannabis program on May 27 about the website, Medical Marijuana doctorsrx, and The Sanctuary Wellness Institute, a medical marijuana card company.
+A complaint from Park and at least one other physician to the Department of Health prompted the agency to warn all approved doctors in the state’s medical cannabis program on May 27 about the website, Medical Marijuana doctorsrx, and The Sanctuary Wellness Institute, a medical marijuana card company.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -42,7 +42,7 @@ Meanwhile, the law currently bans doctors from advertising that they can approve
 
 “If the DOH has interpreted the statute to mean that physicians cannot even identify themselves as ‘certifying physicians’ on their own practice’s website because that is considered ‘advertising,’ then by no means should any outside website be able to advertise a physician’s name, let alone without the consent of the physician,” Minkovich wrote in an email.
 
-A Department of Health spokesperson said Wednesday that the agency needed more time to respond to questions. John DiBella, who described himself as the sole owner of The Sanctuary Wellness Institute and the creator of Medical Marijuana doctorsrx, said he took immediate action following a May 27 email from state officials.
+John DiBella, who described himself as the sole owner of The Sanctuary Wellness Institute and the creator of Medical Marijuana doctorsrx, said he took immediate action following a May 27 email from state officials.
 
 DiBella told Spotlight PA “our developer made the mistake of adding our phone number as the default number” on the directory pages under doctors’ physical addresses.
 
@@ -86,6 +86,8 @@ Several physicians told Spotlight PA they don’t see it that way.
 
 “These large corporations that are driven by nonclinical people … are basically trying to lure patients falsely to their company,” Abbruzzi told Spotlight PA. “And I think it’s a shame that the Department of Health isn’t doing more about it.”
 
+A health department spokesperson told Spotlight PA the agency “does not have authority” over third-party operators. “We would welcome legislative interest in strengthening our ability to protect patients and doctors from outside vendors using loopholes in the legislation to mislead or otherwise victimize patients seeking medicine,” the spokesperson said.
+
 As of June 1, a search on Medical Marijuana doctorsrx for physicians in Pennsylvania yielded 28 pages of results on the site. Almost every page listed more than 40 physicians.
 
 The directory still included physician names and addresses, but not phone numbers. A disclaimer on the “Contact Us” page noted that the website “is not affiliated with every doctor listed on this website,” but didn’t go into more detail.
@@ -94,7 +96,7 @@ Individual profile pages included a note at the bottom, telling physicians to co
 
 DiBella told Spotlight PA the company was offering to update doctor profile pages with any information they would like free of charge as “a show of good will.”
 
-Some doctors, like Park, the Delaware County physician, aren’t interested in that offer. 
+Some doctors, like Park, the Delaware County physician, aren’t interested in that offer.
 
 “No way,” she wrote in a text message to Spotlight PA.
 
