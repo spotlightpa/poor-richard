@@ -21,6 +21,14 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, June 1:</b></i><b> </b>The U.S. Supreme Court has temporarily blocked the counting of mail ballots that lack a date with their signature.
+
+Justice Samuel Alito on May 31 <a href="https://www.washingtonpost.com/politics/2022/05/31/supreme-court-pennsylvania-undated-ballots-alito/">paused a lower court ruling</a> that found such ballots should be counted in one Leigh County election, according to the Washington Post.
+
+Meanwhile, the state Supreme Court has <a href="https://apnews.com/article/2022-midterm-elections-us-supreme-court-pennsylvania-lawsuits-620c5057a1e2aad50dbe21e276ddad9b">rejected an emergency appeal</a> to immediately take up a case on such ballots and is letting a lawsuit from GOP U.S. Senate candidate David McCormick work its way through the Commonwealth Court first.
+
+<i><b>Original post</b></i>
+
 HARRISBURG — A federal appeals court ruled Friday that election officials in one Pennsylvania county must count legally cast mail ballots signed by a voter even if they lack a date on the outer envelope.
 
 Though the ruling specifically targeted a 2021 local judicial election, it could have far-reaching implications in a few of this year’s primary races — including the closely watched Republican U.S. Senate contest.
