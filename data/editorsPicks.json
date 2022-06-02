@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-06-01-SPLSANCTUARY01.md"
+    "content/news/2022-06-02-SPLBROADBAND02.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-05-26-SPLADVERTISING26.md",
-    "content/news/2022-02-21-SPLCANNABIS21.md"
+    "content/news/2020-02-13-splcredit.md"
   ],
   "topSlots": [
+    "content/news/2022-06-01-SPLSANCTUARY01.md",
     "content/news/2022-06-01-SPLGUNS.md",
-    "content/news/2022-05-31-SPLREFORM.md",
-    "content/news/2022-05-26-SPLADVERTISING26.md"
+    "content/news/2022-05-31-SPLREFORM.md"
   ],
   "topper": []
 }
