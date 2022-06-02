@@ -1,7 +1,7 @@
 {{ with .block }}
 <section class="py-10 bg-g-3 anchor-section">
   <div class="max-w-6xl px-5 mx-auto">
-    <h2 class="mb-10 text-6xl font-black uppercase text-g-6">{{ .title }}</h2>
+    <h2 class="mb-10 text-4xl font-black uppercase md:text-6xl text-g-6">{{ .title }}</h2>
     {{ with .series }}
       {{ range $index, $series := . }}
         {{ $even := modBool $index 2 }}
