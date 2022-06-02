@@ -369,3 +369,7 @@ html {
 .is-sticky .support-hide-when-sticky {
   @apply md:opacity-0;
 }
+
+.anchor-section {
+  min-height: 65vh;
+}
