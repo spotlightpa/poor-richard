@@ -347,7 +347,7 @@ html {
 }
 
 .logo-show-when-sticky {
-  @apply w-0 mr-0 duration-100 border-none opacity-0;
+  @apply w-0 mr-0 duration-200 border-none opacity-0;
 }
 
 .is-sticky .logo-show-when-sticky {
