@@ -8,6 +8,10 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     standard: [
       // modal bg
       "is-clipped",
+      "is-sticky",
+      "is-sticky logo-show-when-sticky",
+      "is-sticky support-hide-when-sticky",
+      "is-sticky support-show-when-sticky",
     ],
     deep: [
       /textarea/,
