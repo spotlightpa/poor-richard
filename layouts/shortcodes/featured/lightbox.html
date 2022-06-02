@@ -7,40 +7,22 @@
 
 
 <aside
-  x-data="lightbox"
   class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
   data-ga-category="inline:lightbox"
-  x-intersect:enter="$dispatch('close-sticky')"
-  x-intersect:enter.full="enter"
-  x-intersect:leave.full="leave"
 >
-  <div
-    x-cloak
-    x-show="active"
-    class="pointer-events-none fixed inset-0 z-10 bg-g-6 opacity-75"
-    x-transition:enter="transition ease-out duration-500"
-    x-transition:enter-start="opacity-0 transform translate-y-full"
-    x-transition:enter-end="opacity-75"
-    x-transition:leave="transition ease-in duration-300"
-    x-transition:leave-start="opacity-75"
-    x-transition:leave-end="opacity-0 transform -translate-y-full"
-  ></div>
-  <div class="relative z-10">
-    <a
-      class="flex flex-col overflow-hidden rounded shadow"
-      style="background-color: {{ $bgColor }};"
-      @click.outside="dismiss()"
-      href="{{ $link }}"
-    >
-      <img
-        class="block h-auto max-w-full self-center"
-        src="{{ $imageURL }}"
-        alt="{{ $text }}"
-        {{ with $width }}
-          width="{{ . }}" style="width: {{ . }}px;"
-        {{ end }}
-        {{ with $height }}height="{{ . }}"{{ end }}
-      />
-    </a>
-  </div>
+  <a
+    class="flex flex-col overflow-hidden rounded shadow"
+    style="background-color: {{ $bgColor }};"
+    href="{{ $link }}"
+  >
+    <img
+      class="block h-auto max-w-full self-center"
+      src="{{ $imageURL }}"
+      alt="{{ $text }}"
+      {{ with $width }}
+        width="{{ . }}" style="width: {{ . }}px;"
+      {{ end }}
+      {{ with $height }}height="{{ . }}"{{ end }}
+    />
+  </a>
 </aside>

@@ -6,7 +6,6 @@ import { reportClick } from "../utils/google-analytics.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
-import lightbox from "../enhancements/lightbox.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
 import readmore from "../enhancements/read-more.js";
@@ -20,7 +19,6 @@ for (let [name, comp] of [
   ["embedList", embedList],
   ["funnelStatus", funnelStatus],
   ["imageRotator", imageRotator],
-  ["lightbox", lightbox],
   ["modal", modal],
   ["mostPopular", mostPopular],
   ["readmore", readmore],
