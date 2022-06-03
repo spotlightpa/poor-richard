@@ -1,8 +1,8 @@
 +++
 published = 2020-07-17T14:22:15.114Z
-title = "Investigative journalism for Pennsylvania"
+title = "Investigative Journalism for Pennsylvania"
 subhed = "Together, we can hold the powerful to account."
-description = "Spotlight PA: Find Pennsylvania news and investigations about state and local governments, businesses and special interests."
+description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more. "
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 layout = "about-page-tnd"
@@ -23,30 +23,34 @@ copy = "See More Examples of Our Impact"
 [[blocks]]
 layout = "partners"
 title = "Partners"
-partners = ["Philadelphia Inquirer", "Delaware Valley News", "The Evening Sun", "The Intelligencer", "Next Pittsburgh", "BCTV"]
-copy = "Spotlight PA combines the strengths of The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune Review and WITF Public Media in a historic commitment to investigative and accountability reporting on state government and beyond."
+partners = ["Philadelphia Inquirer", "The Intelligencer"]
+copy = "Spotlight PA distributes its work across the largest collaborative partner network of its kind in the United States. We share our unique, high-quality journalism with more than 80 community newsroom partners, making Spotlight PA a centralized, efficient model to drive more and better journalism across Pennsylvania. Our partners routinely report Spotlight PA stories rank high for engagement and overall value. Read more about our partner network and how to join:"
 [blocks.cta]
 url = "/about-tnd/partners"
 copy = "See More Of Our Partners"
 [[blocks]]
 title = "Staff"
 layout = "text"
-copy="staff copyDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. staff copyDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. staff copyDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. staff copyDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."
+copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them."
 [blocks.cta]
 url = "/about-tnd/staff"
 copy = "See More about our Staff"
 [[blocks]]
 title = "Supporters"
-layout = "text"
-copy="supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. supportersDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."
+layout = "text-2"
+copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them."
 [blocks.cta]
 url = "/about-tnd/supporters"
 copy = "See More Of Our Supporters"
 [[blocks]]
-title = "Mission"
+title = "History & Mission"
 layout = "text"
+
 copy="""
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor."""
+The mission of Spotlight PA is to hold powerful public and private forces — especially governments, elected officials, businesses, and special interests — to account through urgent and compelling investigative and public-service journalism that drives change and strengthens our democracy, the state, and all who live here.
+
+At Spotlight PA, we value independence, transparency, diversity, innovation, and collaboration. Read more about our vital efforts to empower communities and reinvigorate local news in Pennsylvania
+"""
 [blocks.cta]
 url = "/about-tnd/mission"
 copy = "See More Of Our Mission"
