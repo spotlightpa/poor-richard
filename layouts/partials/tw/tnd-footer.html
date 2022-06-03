@@ -1,11 +1,16 @@
 {{ define "footer-link" }}
-  <li class="inline-block">
+  <li class="mb-2">
     <a
       href="{{ .URL }}"
-      class="{{ .Pre }}"
+      class="{{ .Pre }} inline-flex items-center mr-3"
       {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
     >
-      {{ .Name }}
+    {{ with .Params.icon }}
+    <svg class="w-4 h-4 mr-1 fill-current">
+      <use xlink:href="{{ . }}"></use>
+    </svg>
+    {{ end }}
+      <span>{{ .Name }}</span>
     </a>
   </li>
 {{ end }}
