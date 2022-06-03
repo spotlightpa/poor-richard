@@ -6,8 +6,12 @@
   {{/* If page has .featured_topics set, we used those as "first" instead. */}}
   {{ $first_topics = partialCached "func/GetTopicsByName" . . }}
 {{ end }}
-{{ $other_topics := symdiff $first_topics $all_topics }}
-
+{{ $other_topics := "" }}
+{{ if not .Params.disable_hero }}
+  {{ $other_topics = symdiff $first_topics $all_topics }}
+{{ else }}  
+  {{ $other_topics = $all_topics }}  
+{{ end }}
 {{/* Next we need to split the remaining topics into 3 for the following "Trending Topics" module's three columns */}}
 {{ $other_col_limit := div (len $other_topics) 3 }}
 {{ $other_col_1 := $other_topics | first $other_col_limit | group "1" }}
@@ -44,6 +48,7 @@
       </div>
     </div>
   </div>
+  {{ if not .Params.disable_hero }}
   <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
     <div class="pl-4 text-base leading-normal text-gray-600 md:text-2xl">
       {{ range $index, $v := $first_topics }}
@@ -51,6 +56,7 @@
       {{ end }}
     </div>
   </div>
+  {{ end }}
 </nav>
 <div class="w-full py-12 bg-beige" x-transition  x-show="catNav">
   <div class="grid w-full max-w-6xl grid-cols-2 gap-10 px-8 mx-auto font-bold lg:px-5 md:grid-cols-4">
@@ -77,7 +83,7 @@
     {{ end }}
 
       <div class="col-span-2">
-        <div class="w-full mb-3 border-b border-gray-500">More Topics</div>
+        <div class="w-full mb-3 border-b border-gray-500">{{ if not .Params.disable_hero }}More{{end}} Topics</div>
         <div class="grid grid-cols-3 gap-4">
           {{ range $other_cols }}
             <ul>
