@@ -4,6 +4,7 @@ title = "Our Mission"
 description = "Holding powerful private and public forces across Pennsylvania to account through urgent and compelling investigative journalism."
 url = "/about-tnd/mission/"
 weight = 50
+disable_hero = true
 +++
 {{%about/pullquote%}}
 The mission of ***Spotlight PA*** is to hold powerful private and public forces across Pennsylvania — especially governments, businesses and special interests — to account through urgent and compelling investigative journalism that drives change and strengthens our democracy, the state and all who live here.

@@ -1,7 +1,9 @@
 <div x-data="{
   aboutActive: ''
 }">
-{{ .Render "hero" }}
+{{ if not .Params.disable_hero }}
+  {{ .Render "hero" }}
+{{ end }}
 {{ .Render "page-nav" }}
 {{ with .Content }}
 <div class="block max-w-6xl px-5 mx-auto my-8" data-ga-category="content">
