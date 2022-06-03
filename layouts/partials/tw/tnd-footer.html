@@ -1,5 +1,5 @@
 {{ define "footer-link" }}
-  <li class="mb-2">
+  <li class="inline-block mb-2">
     <a
       href="{{ .URL }}"
       class="{{ .Pre }} inline-flex items-center mr-3"
@@ -93,8 +93,8 @@
     <div class="max-w-5xl px-5 mx-auto">
 
 
-      <div class="column is-3" data-ga-category="follow">
-        <h3 class="has-text-weight-semibold is-uppercase">Follow Us</h3>
+      <div class="py-12 is-3" data-ga-category="follow">
+        <h3 class="mb-4 has-text-weight-semibold is-uppercase">Follow Us</h3>
         <ul>
           {{ range .Site.Menus.social }}
             {{ template "footer-link" . }}
