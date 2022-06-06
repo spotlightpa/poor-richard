@@ -2,7 +2,7 @@
 <div class="max-w-6xl px-5 pt-12 mx-auto">
   <h1 class="text-5xl font-bold text-black">{{ .Title }}</h1>
   <div class="flex flex-wrap md:flex-nowrap">
-    <div class="pb-10 pr-10 text-2xl text-gray-900">
+    <div class="pb-2 pr-10 text-2xl text-gray-900">
       {{ .Description }}      
     </div>
     <div class="flex justify-end w-auto mt-5 md:w-64 md:mt-0">
@@ -22,10 +22,10 @@
       </svg>
     </span>
     {{ range . }}
-      <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="rounded px-4 py-2 mb-5 mr-5 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
+      <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="rounded px-4 py-2 mr-5 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
     {{ end }}
     <div class="flex justify-end flex-1 mb-5">
-      <a  class="self-center px-4 py-2 mb-5 mr-5 text-white delay-75 rounded support-show-when-sticky bg-red" href="/donate/">Support Us!</a>
+      <a  class="self-center px-4 py-2 mr-5 text-white delay-75 rounded support-show-when-sticky bg-red" href="/donate/">Support Us!</a>
     </div>
   </div>
 </div>
