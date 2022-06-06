@@ -21,14 +21,14 @@
     ></div>
   </div>
   {{ end }}
-  {{ range $blocks := .Params.blocks }}
+  {{ range $i, $blocks := .Params.blocks }}
     {{ $id := urlize .title }}
     <div
       id="{{ $id }}"
       x-intersect.half="aboutActive = '{{ $id }}'"
-      class="scroll-mt-20"
+      class="scroll-mt-20{{if eq $i 0}} pt-8{{end}}"
     >
-      {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+    {{ partial "blocks/block" (dict "Page" $ "block" .) }}
     </div>
   {{ end }}
 </div>
