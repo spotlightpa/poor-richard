@@ -1,17 +1,17 @@
 {{ with .block }}
 <section class="py-20 {{ with .class }} {{ . }}{{ else }}bg-black bg-opacity-70{{ end }} anchor-section">
   <div class="max-w-6xl px-5 mx-auto">
-    <div class="flex">
-      <div class="text-6xl font-black text-white uppercase opacity-40 sideways-heading">
+    <div class="lg:flex">
+      <div class="mb-4 text-4xl font-black leading-none text-white uppercase md:text-6xl opacity-40 lg:mb-0 sideways-heading">
         {{ .title }}
       </div>
-      <div class="max-w-3xl text-2xl text-white md:pl-20">
+      <div class="max-w-3xl text-xl text-white lg:text-2xl lg:pl-20">
         {{ $.Page.RenderString .copy }}
       </div>
     </div>
     {{ with .cta }}
     <div class="flex justify-center mt-12">
-      <a class="px-4 py-2 text-2xl font-bold text-white duration-300 border border-white hover:text-red hover:border-red" href="{{ .url }}">{{ .copy }}</a>
+      <a class="px-4 py-2 text-xl font-bold text-white duration-300 border border-white lg:text-2xl hover:text-red hover:border-red" href="{{ .url }}">{{ .copy }}</a>
     </div>
     {{ end }}
   </div>

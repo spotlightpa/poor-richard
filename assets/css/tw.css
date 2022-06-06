@@ -374,9 +374,13 @@ html {
   min-height: 65vh;
 }
 
-.sideways-heading {
-  @apply flex justify-end;
-  transform: rotate(180deg);
-  text-orientation: mixed;
-  writing-mode: vertical-rl;
+
+@media screen(lg) {
+  .sideways-heading {
+    @apply flex justify-end;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+  }
+  
 }
