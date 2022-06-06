@@ -1,6 +1,7 @@
 +++
 published = 2020-07-17T14:22:15.114Z
 title = "Impact & Awards"
+description = "At Spotlight PA, we measure our success in terms of the positive change we’re driving for all Pennsylvanians."
 weight = 10
 linktitle = "Impact & Awards"
 [[blocks]]
