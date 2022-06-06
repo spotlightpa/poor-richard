@@ -28,15 +28,26 @@
     {{ end }}
   {{ end }}
 {{ else }}
-  {{ with .Parent.Pages }}
-    {{ range . }}
-      {{ $id := urlize .Title }}
+  {{ with $parent := .Parent }}
+    {{ with .Pages }}
+      {{/* We start by adding the Parent (the about page) */}}
+      {{ $id := urlize $parent.Title }}
       {{ $items = $items | append (dict
-        "url" .RelPermalink
-        "name" .LinkTitle
-        "active" (eq $ .)
+        "url" $parent.RelPermalink
+        "name" $parent.LinkTitle
+        "active" (eq $ $parent)
         "id" $id
       ) }}
+      {{/* Then we add the silbings of the current page */}}
+      {{ range . }}
+        {{ $id := urlize .Title }}
+        {{ $items = $items | append (dict
+          "url" .RelPermalink
+          "name" .LinkTitle
+          "active" (eq $ .)
+          "id" $id
+        ) }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
