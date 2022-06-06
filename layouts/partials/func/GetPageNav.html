@@ -33,7 +33,7 @@
       {{/* We start by adding the Parent (the about page) */}}
       {{ $id := urlize $parent.Title }}
       {{ $items = $items | append (dict
-        "url" $parent.RelPermalink
+        "url" (printf "%s#%s" $parent.RelPermalink "page-heading") 
         "name" $parent.LinkTitle
         "active" (eq $ $parent)
         "id" $id
@@ -41,8 +41,8 @@
       {{/* Then we add the silbings of the current page */}}
       {{ range . }}
         {{ $id := urlize .Title }}
-        {{ $items = $items | append (dict
-          "url" .RelPermalink
+        {{ $items = $items | append (dict          
+          "url" (printf "%s#%s" .RelPermalink "page-heading") 
           "name" .LinkTitle
           "active" (eq $ .)
           "id" $id
