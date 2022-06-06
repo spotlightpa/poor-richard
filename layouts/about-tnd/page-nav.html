@@ -3,15 +3,7 @@
   <h1 class="text-5xl font-bold text-black">{{ .Title }}</h1>
   <div class="flex flex-wrap md:flex-nowrap">
     <div class="pb-10 pr-10 text-2xl text-gray-900">
-      {{ .Description }}
-
-      <div>
-        <a href="#" class="mr-6 text-base text-blue"> State College Regional Bureau</a>
-        <a href="#" class="mr-6 text-base text-blue"> Advertising & Sponsorship</a>
-        <a href="#" class="mr-6 text-base text-blue"> Partners</a>
-        <a href="#" class="mr-6 text-base text-blue"> FAQ</a>
-
-      </div>
+      {{ .Description }}      
     </div>
     <div class="flex justify-end w-auto mt-5 md:w-64 md:mt-0">
       <a class="self-center inline-block px-3 py-1 text-xl text-center text-white rounded w-44 bg-red support-hide-when-sticky" href="/donate/">Support Us!</a>
@@ -33,7 +25,7 @@
       <a :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' " class="rounded px-4 py-2 mb-5 mr-5 border border-black hover:text-red hover:border-red {{ if .active }}{{ $active_classes }}{{ end }}" href="{{ .url }}">{{ .name }}</a>
     {{ end }}
     <div class="flex justify-end flex-1 mb-5">
-      <a  class="self-center px-3 py-1 text-xl text-white delay-75 rounded support-show-when-sticky bg-red" href="/donate/">Support Us!</a>
+      <a  class="self-center px-4 py-2 mb-5 mr-5 text-white delay-75 rounded support-show-when-sticky bg-red" href="/donate/">Support Us!</a>
     </div>
   </div>
 </div>
