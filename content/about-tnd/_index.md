@@ -60,7 +60,7 @@ layout = "text-2"
 copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them."
 [blocks.cta]
 url = "/about-tnd/supporters"
-copy = "See More Of Our Supporters"
+copy = "See More of our Supporters"
 [[blocks]]
 title = "Mission"
 layout = "text"
@@ -72,5 +72,5 @@ At Spotlight PA, we value independence, transparency, diversity, innovation, and
 """
 [blocks.cta]
 url = "/about-tnd/mission"
-copy = "See More Of Our Mission"
+copy = "See More about our Mission"
 +++
