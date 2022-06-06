@@ -1,23 +1,25 @@
-{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-
-
-<div class="mt-6 rounded bg-g-4 p-6 shadow" data-ga-category="editors-pick">
+<div
+  class="mt-6 rounded bg-g-4 p-6 shadow"
+  style="background-color: {{ .backgroundColor }};"
+  data-ga-category="editors-pick"
+>
   <h2
     class="text-center font-sans text-base font-bold uppercase leading-none tracking-wider text-orange"
+    style="color: {{ .labelColor }};"
   >
-    Editor’s Pick
+    {{ .label }}
   </h2>
 
   <article class="mt-6">
     <div class="mx-auto w-full flex-shrink-0 sm:w-64">
-      {{ $name := .Page.Param "image" }}
-      {{ $credit := .Page.Param "image-credit" }}
-      {{ $description := .Page.Param "image-description" }}
+      {{ $name := .page.Param "image" }}
+      {{ $credit := .page.Param "image-credit" }}
+      {{ $description := .page.Param "image-description" }}
       {{ $imgOpts := dict
         "filename" $name
         "credit" $credit
         "description" $description
-        "link" .RelPermalink
+        "link" .params.link
         "widthRatio" 16
         "heightRatio" 9
         "widths" (slice 128 256 384 512 1280)
@@ -27,26 +29,30 @@
       {{ partial "tw/image-block.html" $imgOpts }}
     </div>
     <div class="group mx-auto mt-6 w-full flex-grow space-y-1 sm:w-64">
-      <h3 class="text-lg font-semibold leading-tight tracking-tight text-black">
+      <h3
+        class="text-lg font-semibold leading-tight tracking-tight"
+        style="color: {{ .linkColor }}"
+      >
         <a
           class="group-hover:underline"
-          href="{{ .RelPermalink }}"
+          href="{{ .params.link }}"
           data-ga-category="hed"
         >
-          {{ .LinkTitle }}
+          {{ .page.LinkTitle }}
         </a>
       </h3>
-      {{ if $params.byline }}
+      {{ if .params.byline }}
         <h4
-          class="font-sans text-base font-normal leading-tight tracking-normal text-g-9"
+          class="font-sans text-base font-normal leading-tight tracking-normal"
+          style="color: {{ .linkColor }}"
         >
           <a
-            href="{{ .RelPermalink }}"
+            href="{{ .params.link }}"
             class="group-hover:underline"
             data-ga-category="byline"
           >
             by
-            {{ $params.byline }}
+            {{ .params.byline }}
           </a>
         </h4>
       {{ end }}

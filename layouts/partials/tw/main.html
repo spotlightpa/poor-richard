@@ -195,10 +195,12 @@
       <div class="col-start-1 row-start-1 row-end-3">
         {{ partial "tw/most-popular.html" dict }}
       </div>
-      {{ $edPicks := partial "helper/get-picks" "sidebarPicks" }}
+      {{ $edPicks := partial "helper/get-items" "sidebar" }}
       {{ range $edPicks }}
-        {{ if ne .RelPermalink $.RelPermalink }}
-          {{ partialCached "tw/editors-picks.html" . .RelPermalink }}
+        {{ if .page }}
+          {{ if ne .page.RelPermalink $.RelPermalink }}
+            {{ partial "tw/editors-picks.html" . }}
+          {{ end }}
         {{ end }}
       {{ end }}
       {{ if .Param "sidebar-sticky-images" }}

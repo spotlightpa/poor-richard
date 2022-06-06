@@ -1,0 +1,21 @@
+{{ $items := slice }}
+{{ $src := index (index site.Data .) "items" }}
+{{ range $src }}
+  {{ $item := dict
+    "label" .label
+    "labelColor" .labelColor
+    "linkColor" .linkColor
+    "backgroundColor" .backgroundColor
+  }}
+  {{ with $page := site.GetPage (.page | default "-") }}
+    {{ $params := partialCached "helper/page-params" $page.Page $page.RelPermalink }}
+    {{ $item = $item | merge (dict
+      "page" $page
+      "params" $params
+      )
+    }}
+  {{ end }}
+  {{ $items = $items | append $item }}
+{{ end }}
+
+{{ return $items }}
