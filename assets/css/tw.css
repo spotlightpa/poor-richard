@@ -373,3 +373,10 @@ html {
 .anchor-section {
   min-height: 65vh;
 }
+
+.partner-heading {
+  @apply flex justify-end;
+  transform: rotate(180deg);
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+}
