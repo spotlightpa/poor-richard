@@ -2,7 +2,7 @@
 published = 2020-07-17T14:22:15.114Z
 title = "Investigative Journalism for Pennsylvania"
 subhed = "Together, we can hold the powerful to account."
-description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more. "
+description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more."
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 suppress-title = true
 layout = "about-page-tnd"
@@ -13,6 +13,25 @@ modal-exclude = true
 suppress-related = true
 featured_topics_entries = ["/news/2022-03-29-SPLNEXT.md", "/news/2022-04-12-SPLRECAPPS12.md"]
 featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
+[[blocks]]
+layout = "links"
+title = "About"
+copy = "Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individual members, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."
+[[blocks.links]]
+link = "/about-tnd"
+name = "How to Give to Spotlight PA"
+[[blocks.links]]
+link = "/about-tnd/"
+name = "State College Regional Bureau"
+[[blocks.links]]
+link = "/about-tnd/"
+name = "Advertising & Sponsorship"
+[[blocks.links]]
+link = "/about-tnd/"
+name = "Partners"
+[[blocks.links]]
+link = "/about-tnd/"
+name = "FAQ"
 [[blocks]]
 layout = "series"
 title = "Impact & Awards"
@@ -43,7 +62,7 @@ copy="Spotlight PA is powered by thousands of members across Pennsylvania as wel
 url = "/about-tnd/supporters"
 copy = "See More Of Our Supporters"
 [[blocks]]
-title = "History & Mission"
+title = "Mission"
 layout = "text"
 
 copy="""
