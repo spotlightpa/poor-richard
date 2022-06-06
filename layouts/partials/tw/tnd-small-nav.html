@@ -16,9 +16,9 @@
       </a>
     </div>
 
-    <div class="flex flex-wrap items-center justify-end py-7">
+    <div class="flex flex-wrap items-center lg:justify-end py-7">
       {{ range site.Menus.main }}
-      <a class="inline-block px-4 mb-2 text-black hover:text-black hover:underline" data-ga-category="item" href="{{ .URL }}">{{ .Name }}</a>
+      <a class="inline-block pr-4 mb-2 text-black lg:pl-4 hover:text-black hover:underline" data-ga-category="item" href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
         <a
         href="/search/"
