@@ -13,6 +13,7 @@ kicker = "Events"
 modal-exclude = false
 no-index = false
 published = 2022-06-08T14:38:00-04:00
+series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-cards-advertising-rules-event"
 suppress-date = false
 title = "You’re invited! A free virtual Q&A on Pa.’s uneven rules for medical marijuana cards"
