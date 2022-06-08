@@ -1,17 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-06-06-SPLSPEEDS06.md"
+    "content/news/2022-06-08-SPLOPPO.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-06-02-SPLBROADBAND02.md"
+    "content/news/2022-03-23-SPLFAIRANA.md",
+    "content/news/2021-11-30-SPLLATINO01.md"
   ],
   "topSlots": [
-    "content/newsletters/palocal/2022-06-03-1008.md",
-    "content/news/2022-06-01-SPLSANCTUARY01.md",
-    "content/news/2022-06-01-SPLGUNS.md"
+    "content/news/2022-06-06-SPLSPEEDS06.md",
+    "content/news/2022-06-02-SPLBROADBAND02.md",
+    "content/news/2022-06-01-SPLSANCTUARY01.md"
   ],
   "topper": []
 }
