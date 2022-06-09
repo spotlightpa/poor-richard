@@ -1,30 +1,22 @@
 +++
 arc-id = "GFVW7ASD3ZHKHDT72VM3YSYZ4M"
-internal-id = "SPLCORONERS10"
-internal-budget = ""
-image = "external/dveqr2p60d929tnzsxvc605pdc.jpeg"
-image-description = "Chester County Coroner Dr. Christina VandePol — seen here with office manager Patty Emmons — said her office has had two positive COVID-19 test results come back from deaths that occurred “at home or in the community.”"
-image-caption = ""
-image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
-image-size = ""
-published = 2020-04-10T10:30:00Z
-slug = "pennsylvania-coronavirus-coroners-testing-communication-health-department"
 authors = ["Sara Simon"]
-byline = "Sara Simon of Spotlight PA"
-title = "Pa. coroners, health department at odds over how to handle suspected coronavirus cases, potentially affecting death count"
-subtitle = ""
-description = "A lack of tests is just one problem the state's coroners are facing as they take on the coronavirus."
 blurb = "A lack of tests is just one problem the state's coroners are facing as they take on the coronavirus."
+byline = "Sara Simon of Spotlight PA"
+description = "A lack of tests is just one problem the state's coroners are facing as they take on the coronavirus."
+image = "external/dveqr2p60d929tnzsxvc605pdc.jpeg"
+image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
+image-description = "Chester County Coroner Dr. Christina VandePol — seen here with office manager Patty Emmons — said her office has had two positive COVID-19 test results come back from deaths that occurred “at home or in the community.”"
+internal-id = "SPLCORONERS10"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
+published = 2020-04-10T06:30:00-04:00
+slug = "pennsylvania-coronavirus-coroners-testing-communication-health-department"
+suppress-date = false
+suppress-featured = false
+title = "Pa. coroners, health department at odds over how to handle suspected coronavirus cases, potentially affecting death count"
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -105,7 +97,7 @@ Pamela Gay, who spent three decades as a registered nurse before becoming corone
 
 Though Gay’s jurisdiction isn’t seeing high numbers of COVID-19 deaths, York County has a population of nearly 450,000 and doesn’t have a morgue. Her staff shares space with a hospital in town. The joint morgue fits barely 10 bodies.
 
-For years, long before the COVID-19 crisis hit, Gay was vocal about the morgue’s capacity issues. In a 2018 <a href="https://yorkcountypa.gov/images/pdf/coroner/2018_York_County_PA_Coroner_Annual_Report.pdf">report</a>, her office warned that it was their “most urgent need.” Concerns were reaching “critical levels.”
+For years, long before the COVID-19 crisis hit, Gay was vocal about the morgue’s capacity issues. In a 2018 <a href="https://web.archive.org/web/20220605221624/https://yorkcountypa.gov/images/pdf/coroner/2018_York_County_PA_Coroner_Annual_Report.pdf">report</a>, her office warned that it was their “most urgent need.” Concerns were reaching “critical levels.”
 
 Finally, last summer, York County commissioners approved a plan. Gay and her staff could expect a new office in 2020, and following that, a new morgue — triple the size they were used to.
 
