@@ -1,17 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-06-08-SPLBIPSPEND.md"
+    "content/news/2022-06-09-SPLCONTROL.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-05-27-SPLBULOSS.md"
+    "content/news/2022-05-31-SPLREFORM.md",
+    "content/news/2022-05-16-SPLYASS.md"
   ],
   "topSlots": [
+    "content/news/2022-06-08-SPLBIPSPEND.md",
     "content/news/2022-06-08-SPLOPPO.md",
-    "content/news/2022-06-08-SPLMMJEVENT.md",
-    "content/news/2022-06-06-SPLSPEEDS06.md"
+    "content/news/2022-06-08-SPLMMJEVENT.md"
   ],
   "topper": []
 }
