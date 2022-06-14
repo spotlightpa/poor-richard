@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "backgroundColor": "#5c0c75",
-      "label": "JOIN OUR NEXT EVENT",
-      "labelColor": "#ffffff",
-      "linkColor": "#ffffff",
-      "page": "content/news/2022-06-08-SPLMMJEVENT.md"
-    },
-    {
       "backgroundColor": "#f5f5f5",
       "label": "Editor’s Pick",
       "labelColor": "#ff6c36",
