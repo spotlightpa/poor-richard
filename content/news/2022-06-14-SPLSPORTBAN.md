@@ -23,17 +23,17 @@ topics = ["The Capitol"]
 
 HARRISBURG — A coalition of Pennsylvania lawmakers and activists recently gathered on the Capitol rotunda steps with one mission in mind: passing a law separating sports teams by sex.
 
-Legislation titled the Protect Women’s Sports Act would ban transgender girls and women, in grade school through college, from participating on the team that corresponds to their gender. It also would prohibit organizations like the National Collegiate Athletic Association from investigating or taking action against schools for following the law.
+Legislation titled the Protect Women’s Sports Act would ban transgender girls and women, in grade school through college, from participating on the team that corresponds to their gender. It also would prohibit organizations like the NCAA from investigating or taking action against schools for following the law.
 
-“Over the past half-century, we have fought to protect athletic opportunities for female students,” state Sen. Judy Ward (R., Blair), one of the main sponsors of the legislation, said at <a href="https://senatorkristin.com/2022/06/06/media-advisory-fairness-in-womens-sports-news-conference-set-for-tuesday-june-7/">a rally in early June</a>. “And now these opportunities are in jeopardy.”
+“Over the past half-century, we have fought to protect athletic opportunities for female students,” State Sen. Judy Ward (R., Blair), one of the main sponsors of the legislation, said at <a href="https://senatorkristin.com/2022/06/06/media-advisory-fairness-in-womens-sports-news-conference-set-for-tuesday-june-7/">a rally in early June</a>. “And now these opportunities are in jeopardy.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 During the event, speakers misgendered transgender athletes and called Lia Thomas — <a href="https://www.inquirer.com/college-sports/penn/penn-transgender-swimmer-lia-thomas-interview-20220531.html" target="_blank">a former University of Pennsylvania swimmer who won a national championship</a> — by her birth name, a practice known as deadnaming. Some speakers argued against the very existence of transgender people while claiming they pose a threat to women’s sports.
 
-The two bills under consideration in Pennsylvania — <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=972">HB 972</a> introduced by state Rep. Barbara Gleim (R., Cumberland) and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2021&sind=0&body=S&type=B&bn=1191">SB 1181</a> from Ward and state Sen. Kristin Phillips-Hill (R., York) — contain some of the same language as a law passed in Idaho that is being <a href="https://www.aclu.org/cases/hecox-v-little">challenged as </a>unconstitutional.
+The two bills under consideration in Pennsylvania — <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=972">HB 972</a> introduced by State Rep. Barbara Gleim (R., Cumberland) and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2021&sind=0&body=S&type=B&bn=1191">SB 1181</a> from Ward and State Sen. Kristin Phillips-Hill (R., York) — contain some of the same language as a law passed in Idaho that is being <a href="https://www.aclu.org/cases/hecox-v-little">challenged as </a>unconstitutional.
 
-A lawmaker there wrote the legislation with <a href="https://www.idahopress.com/news/local/group-that-helped-craft-trans-sports-ban-seeks-to-join-court-case/article_7d077cc4-59b7-5838-82f8-bc9714de53f1.html">the Alliance Defending Freedom</a>, a legal advocacy organization that the Southern Poverty Law Center has designated a hate group.
+A lawmaker there wrote the legislation with <a href="https://www.idahopress.com/news/local/group-that-helped-craft-trans-sports-ban-seeks-to-join-court-case/article_7d077cc4-59b7-5838-82f8-bc9714de53f1.html">the Alliance Defending Freedom</a>, a legal advocacy organization that the Southern Poverty Law Center has designated a hate group. (After the publication of this article, a representative from ADF disputed this designation. “The truth is, Alliance Defending Freedom is among the largest and most effective legal advocacy organizations dedicated to protecting the religious freedom and free speech rights of all Americans,” the persons said via email.)
 
 Supporters of the legislation argue that transgender women have an unfair physical advantage when competing in women’s sports. But experts who study the performance of transgender athletes said a blanket ban like the one proposed in Pennsylvania is “anti-evidence.”
 
@@ -41,11 +41,11 @@ In grade school, such a ban would be exclusionary and unnecessary, they said, no
 
 Some restrictions make sense for adult athletes, the experts said, while also noting that research on the effects of gender-affirming hormone therapy over time shows it can negate some of the physical advantages of male puberty.
 
-Both the state House and Senate bills have passed their respective chambers and are awaiting further consideration. Democratic Gov. Tom Wolf has vowed to veto the <a href="https://twitter.com/GovernorTomWolf/status/1513955114003963909">legislation</a> if it reaches his desk.
+Both the state House and Senate bills have passed their chambers and are awaiting further consideration. Democratic Gov. Tom Wolf has vowed to veto the <a href="https://twitter.com/GovernorTomWolf/status/1513955114003963909">legislation</a> if it reaches his desk.
 
 But Wolf’s time in office is coming to an end, as he is term-limited from seeking reelection this November.
 
-State Attorney General Josh Shapiro, the Democratic gubernatorial candidate, has backed Wolf and called such legislation “<a href="https://twitter.com/joshshapiropa/status/1379456417770438659">cruel</a>.” Republican nominee for governor Doug Mastriano, a state senator from Franklin County, co-sponsored the legislation.
+State Attorney General Josh Shapiro, the Democratic gubernatorial candidate, has backed Wolf and called such legislation “<a href="https://twitter.com/joshshapiropa/status/1379456417770438659">cruel</a>.” Republican nominee for governor Doug Mastriano, a state senator from Franklin County, cosponsored the legislation.
 
 “We are in a day when good is called evil and evil is called good,” Mastriano said recently on the state Senate floor before the chamber passed Ward and Phillips-Hill’s bill in a near-party-line vote. “There’s nothing right about this here.”
 
@@ -61,15 +61,15 @@ These efforts targeting queer and transgender people and allies are having a dam
 
 In a recently released report, the Trevor Project, an LGBTQIA+ suicide prevention nonprofit, found that <a href="https://www.thetrevorproject.org/survey-2022/">83% of transgender and nonbinary respondents are worried about transgender sports bills</a>, and almost three-quarters face discrimination because of their gender identity. Research has found that transgender youth are <a href="https://pubmed.ncbi.nlm.nih.gov/25577670/">three times more likely to report depression and suicide attempts</a> than their cisgender peers, and <a href="https://www.publichealth.columbia.edu/public-health-now/news/protecting-transgender-youths-right-participate-sports">legislation like the sports bills can worsen the situation</a>.
 
-“Trans girls are as equally deserving of these opportunities as their cisgender peers,” Preston Heldibridle, the executive director of LGBTQIA+ advocacy organization the Pennsylvania Youth Congress, said earlier this year. “They do not deserve to be routinely and pointlessly scapegoated by adult politicians during primary election season.”
+“Trans girls are as equally deserving of these opportunities as their cisgender peers,” Preston Heldibridle, the executive director of the LGBTQIA+ advocacy organization the Pennsylvania Youth Congress, said earlier this year. “They do not deserve to be routinely and pointlessly scapegoated by adult politicians during primary election season.”
 
 ## An ‘anti-evidence’ ban
 
 In <a href="https://www.legis.state.pa.us/cfdocs/legis/CMS/ArchiveDetails.cfm?SessYear=2021&MeetingId=2180&Code=12&Chamber=H">testimony before the state House Education Committee in March</a>, Gleim said that allowing transgender women and girls to compete in women’s and girl’s sports “reverses nearly 50 years of advancement for women,” citing biological differences between men and women.
 
-Experts in the performance of transgender athletes don’t dispute the advantages that people who have gone through male puberty experience, but said focusing on those details oversimplify the issue.
+Experts in the performance of transgender athletes don’t dispute the advantages that people who have gone through male puberty experience, but said focusing on those details oversimplifies the issue.
 
-Pre-puberty, boys and girls have similar athletic abilities. <a href="https://www.lboro.ac.uk/schools/sport-exercise-health-sciences/postgraduate-research/doctoral-researchers/joanna-harper/">Joanna Harper</a> — a transgender runner, a doctoral student at Loughborough University in the United Kingdom, and a leading researcher in transgender athletic performance — called the idea of keeping transgender girls out of girls sports before puberty “ridiculous” in an interview with Spotlight PA.
+Pre-puberty, boys and girls have similar athletic abilities. <a href="https://www.lboro.ac.uk/schools/sport-exercise-health-sciences/postgraduate-research/doctoral-researchers/joanna-harper/">Joanna Harper</a> — a transgender runner, a doctoral student at Loughborough University in the United Kingdom, and a leading researcher in transgender athletic performance — called the idea of keeping transgender girls out of girls’ sports before puberty “ridiculous” in an interview with Spotlight PA.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Spotlight%20PA%20is%20investigating%20the%20treatment%20of%20LGBTQ%20people%20across%20the%20state.%20%3Cb%3ESee%20something%20we%20should%20be%20aware%20of%3F%3C%2Fb%3E%20Let%20us%20know."></div>
 
@@ -87,17 +87,17 @@ Though there’s not a lot of research on the topic yet, they said existing stud
 
 Performance in athletics isn’t determined just by physical attributes. Mental health, quality of sleep, coaching, skills, and diet all play a role in how an athlete performs.
 
-Harper has found that advantages in height, strength, and size can remain for athletes after two years, but that doesn’t always translate to a performance advantage across the board because each sport requires a different skillset. Hormone therapy can <a href="https://bjsm.bmj.com/content/55/15/865">actually take a toll in endurance sports</a>, but may not affect strength-based sports as much.
+Harper has found that advantages in height, strength, and size can remain for athletes after two years, but that doesn’t always translate to a performance advantage across the board because each sport requires a different skill set. Hormone therapy can <a href="https://bjsm.bmj.com/content/55/15/865">actually take a toll in endurance sports</a>, but may not affect strength-based sports as much.
 
 “Their larger frames are now being powered by reduced muscle mass, reduced aerobic capacity that can lead to disadvantages in things like endurance recovery and quickness,” she said.
 
-Roberts believes that the rules at the National Collegiate Athletic Association and professional level should be determined from sport to sport, since hormone therapy can be enough to take away advantages in endurance sports, such as running and swimming.
+Roberts believes that the rules at the NCAA and professional level should be determined from sport to sport, since hormone therapy can be enough to take away advantages in endurance sports, such as running and swimming.
 
 The NCAA recently <a href="https://www.ncaa.org/news/2022/1/19/media-center-board-of-governors-updates-transgender-participation-policy.aspx">changed its policy</a> to allow for individual sport-by-sport rules with a focus on inclusivity. In 2021, the <a href="https://stillmed.olympics.com/media/Documents/News/2021/11/IOC-Framework-Fairness-Inclusion-Non-discrimination-2021.pdf?_ga=2.56495211.1560876467.1642745279-1258333344.1642131641">International Olympic Committee also issued new inclusivity-focused guidelines</a> due to the lack of available research, delegating rules to individual sports commissions, a shift away from previous testosterone testing requirements.
 
 Harper disagrees with the new rule, saying the IOC dismissed the 30 experts it consulted, and warning that the policy is already having the opposite effect — sports committees <a href="https://www.si.com/olympics/2022/03/23/transgender-athletes-testosterone-policies-ioc-framework">have started to enact</a> more restrictive rules than necessary.
 
-Out transgender athletes <a href="https://www.nbcnews.com/nbc-out/out-news/first-openly-transgender-olympians-are-competing-tokyo-rcna1507" target="_blank">participated in the 2020 Summer Olympics in Tokyo</a>, but they didn’t dominate the competition. Laurel Hubbard, a transgender weightlifter from New Zealand who was the center of controversy because she transitioned later in life, <a href="https://apnews.com/article/2020-tokyo-olympics-sports-weightlifting-laurel-hubbard-e721827cdaf7299f47a9115a09c2a162">didn’t complete any of her lifts</a> and didn’t qualify for a medal.
+Out transgender athletes <a href="https://www.nbcnews.com/nbc-out/out-news/first-openly-transgender-olympians-are-competing-tokyo-rcna1507" target="_blank">participated in the 2020 Summer Olympics in Tokyo</a> but they didn’t dominate the competition. Laurel Hubbard, a transgender weightlifter from New Zealand who was the center of controversy because she transitioned later in life, <a href="https://apnews.com/article/2020-tokyo-olympics-sports-weightlifting-laurel-hubbard-e721827cdaf7299f47a9115a09c2a162">didn’t complete any of her lifts</a> and didn’t qualify for a medal.
 
 “Eleven years after trans women were first allowed in, they’re not dominating women’s sports; they’re still hugely underrepresented,” Harper said. “And I think that’s an indication that whatever advantages trans women have, there are numerous disadvantages as well.”
 
@@ -111,9 +111,9 @@ Some go even further and espouse the <a href="https://slate.com/human-interest/2
 
 “These lies are devastatingly harmful to the transgender children themselves,” a parent of a student-athlete who did not give her name said at the Capitol recent rally. “It’s harmful to tell a child they can be something they’re not.”
 
-Opponents of the legislation said it not only harms transgender youth, but it could also promote discrimination against cisgender women who, as one student-athlete put it, “don’t fit in to the expected mold.”
+Opponents of the legislation said it not only harms transgender youth, but it could also promote discrimination against cisgender women who, as one student-athlete put it, “don’t fit into the expected mold.”
 
-Bills in other states include guidance on what to do if someone disputes an athlete’s sex. Advocates fear that any girl, trans or cisgender, <a href="https://www.usatoday.com/story/sports/columnist/nancy-armour/2022/06/04/ohio-bill-targets-transgender-athletes-with-genital-check/7504997001/">who doesn’t look “girly” enough</a> will be forced to go through invasive procedures such as <a href="https://www.dispatch.com/story/news/2022/06/07/bill-transgender-athletes-could-require-genital-checks-girls/7529718001/">genital examinations</a> in order to play sports.
+Bills in other states include guidance on what to do if someone disputes an athlete’s sex. Advocates fear that any girl, trans or cisgender, <a href="https://www.usatoday.com/story/sports/columnist/nancy-armour/2022/06/04/ohio-bill-targets-transgender-athletes-with-genital-check/7504997001/">who doesn’t look “girly” enough</a> will be forced to go through invasive procedures such as <a href="https://www.dispatch.com/story/news/2022/06/07/bill-transgender-athletes-could-require-genital-checks-girls/7529718001/">genital examinations</a> to play sports.
 
 Pennsylvania’s legislation doesn’t specify how to determine an athlete’s sex, only that the distinction is required.
 
@@ -125,10 +125,10 @@ Heim said she didn’t fit stereotypical views of what a girl should be growing 
 
 “Despite my clear love of the games,” she said, “I never felt like I would have a place on any team, even though I was a cisgender female.”
 
-Opponents of the legislation also said lawmakers should focus on actual inequities between girls and boys teams. Despite Title IX, many girls teams still struggle with unequal funding, training, and other issues.
+Opponents of the legislation also said lawmakers should focus on actual inequities between girls’ and boys’ teams. Despite Title IX, many girls’ teams still struggle with unequal funding, training, and other issues.
 
-Kelsea Dague, a student-athlete from Hempfield, said in a letter to a state House committee that the men’s lacrosse team at her school had access to larger facilities and didn’t have to pay for their equipment. Members of the women’s team, meanwhile, have to provide their own protective gear.
+Kelsea Dague, a student-athlete from Hempfield, in Westmoreland County, said in a letter to a state House committee that the men’s lacrosse team at her school had access to larger facilities and didn’t have to pay for their equipment. Members of the women’s team, meanwhile, have to provide their own protective gear.
 
 “Fairness in athletics should be about expanding the opportunities for women’s athletic programs to increase the level of participation and create more opportunities,” Dague wrote, “not reducing opportunities for women to play women’s sports.”
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>WHILE YOU’RE HERE ...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
