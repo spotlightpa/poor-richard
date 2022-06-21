@@ -76,6 +76,11 @@
         "Category": "$1,000-$4,999",
         "Name": "Daniel & Linda Trevino",
         "Sort": "Trevino, Daniel & Linda "
+      },
+      {
+        "Category": "$1,000-$4,999",
+        "Name": "Nancy Chiswick & Arthur Patterson",
+        "Sort": "Chiswick, Nancy & Arthur Patterson"
       }
     ]
   },
@@ -96,6 +101,11 @@
         "Category": "$500-$999",
         "Name": "Graham Spanier",
         "Sort": "Spanier, Graham "
+      },
+      {
+        "Category": "$500-$999",
+        "Name": "Sharon Hyde",
+        "Sort": "Hyde, Sharon "
       }
     ]
   },
@@ -236,6 +246,16 @@
         "Category": "$100-$499",
         "Name": "Hugh Mose",
         "Sort": "Mose, Hugh"
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Cynthia Nixon-Hudson & Randolph Hudson",
+        "Sort": "Nixon-Hudson, Cynthia & Randolph Hudson"
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Deborah Wolfe",
+        "Sort": "Wolfe, Deborah"
       }
     ]
   },
@@ -371,6 +391,16 @@
         "Category": "Under $100",
         "Name": "Deborah Wolfe",
         "Sort": "Wolfe, Deborah "
+      },
+      {
+        "Category": "Under $100",
+        "Name": "Michael Desmond",
+        "Sort": "Desmond, Michael"
+      },
+      {
+        "Category": "Under $100",
+        "Name": "Josh Portney",
+        "Sort": "Portney, Josh"
       }
     ]
   }
