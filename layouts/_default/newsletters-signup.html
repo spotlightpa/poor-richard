@@ -17,7 +17,6 @@
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
   {{ $pages := where .Pages "Kind" "section" }}
-
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
@@ -59,6 +58,9 @@
         <nav class="tile is-ancestor is-vertical">
           <div class="tile is-wrapped">
             {{ range $page := $pages }}
+              {{ if not (len $page.Pages) }}
+                {{ continue }}
+              {{ end }}
               <div class="p-4 tile is-parent is-4">
                 <div
                   class="tile is-child box"
@@ -123,11 +125,9 @@
                     </article>
                   </label>
                   <p class="mt-2">
-                    {{ if len $page.Pages }}
-                      <a href="{{ $page.RelPermalink }}#archives"
-                        >View Archives</a
-                      >
-                    {{ end }}
+                    <a href="{{ $page.RelPermalink }}#archives">
+                      View Archives
+                    </a>
                   </p>
                   <input
                     hidden
