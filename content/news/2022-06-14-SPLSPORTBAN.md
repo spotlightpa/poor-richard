@@ -101,6 +101,12 @@ The NCAA recently <a href="https://www.ncaa.org/news/2022/1/19/media-center-boar
 
 Harper disagrees with the new rule, saying the IOC dismissed the 30 experts it consulted, and warning that the policy is already having the opposite effect — sports committees <a href="https://www.si.com/olympics/2022/03/23/transgender-athletes-testosterone-policies-ioc-framework">have started to enact</a> more restrictive rules than necessary.
 
+Last week, the International Swimming Federation (FINA) introduced <a href="https://resources.fina.org/fina/document/2022/06/19/525de003-51f4-47d3-8d5a-716dac5f77c7/FINA-INCLUSION-POLICY-AND-APPENDICES-FINAL-.pdf">restrictions on transgender women</a>. The new rules — reportedly created in consultation with medical and legal experts, as well as retired athletes and coaches — say transgender women can only participate in women’s sports if they transitioned by age 12 and have not experienced the physical changes of puberty. Trans men, however, are allowed to participate in mens swimming if they’re undergoing hormone therapy.
+
+This week, a day after FINA’s restrictions went into effect, the International Rugby League announced a <a href="https://www.intrl.sport/news/statement-on-transgender-particiption-in-women-s-international-rugby-league/">total ban on transgender women in women’s competitions</a> — one of the strictest restrictions on transgender women’s participation in elite-level sports.
+
+FINA’s policy argues that cisgender women need sex-based separation so they can win competitions, although a <a href="https://apnews.com/article/transgender-swimmers-new-rules-fina-world-governing-body-c17e99d3121fa964336458b57ae266f7">spokesperson for the group told the Associated Press</a> that there are no transgender women competing at elite levels.
+
 Out transgender athletes <a href="https://www.nbcnews.com/nbc-out/out-news/first-openly-transgender-olympians-are-competing-tokyo-rcna1507" target="_blank">participated in the 2020 Summer Olympics in Tokyo</a> but they didn’t dominate the competition. Laurel Hubbard, a transgender weightlifter from New Zealand who was the center of controversy because she transitioned later in life, <a href="https://apnews.com/article/2020-tokyo-olympics-sports-weightlifting-laurel-hubbard-e721827cdaf7299f47a9115a09c2a162">didn’t complete any of her lifts</a> and didn’t qualify for a medal.
 
 “Eleven years after trans women were first allowed in, they’re not dominating women’s sports; they’re still hugely underrepresented,” Harper said. “And I think that’s an indication that whatever advantages trans women have, there are numerous disadvantages as well.”
@@ -134,5 +140,7 @@ Opponents of the legislation also said lawmakers should focus on actual inequiti
 Kelsea Dague, a student-athlete from Hempfield, in Westmoreland County, said in a letter to a state House committee that the men’s lacrosse team at her school had access to larger facilities and didn’t have to pay for their equipment. Members of the women’s team, meanwhile, have to provide their own protective gear.
 
 “Fairness in athletics should be about expanding the opportunities for women’s athletic programs to increase the level of participation and create more opportunities,” Dague wrote, “not reducing opportunities for women to play women’s sports.”
+
+<i>Update, June, 21 2022: This story has been updated to include newly announced restrictions on transgender woman’s participation in elite-level rugby and swimming.</i>
 
 <i><b>WHILE YOU’RE HERE ...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
