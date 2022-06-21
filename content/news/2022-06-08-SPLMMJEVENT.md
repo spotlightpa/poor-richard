@@ -40,7 +40,7 @@ Our panelists were:
 
 - <b>Judith Cassel</b>, an attorney who specializes in medical marijuana issues
 
-- <b>Shalawn James</b>, member of the Pennsylvania Medical Marijuana Advisory Board
+- <b>Shalawn James</b>, member of Pennsylvania’s Medical Marijuana Advisory Board
 
 <iframe src="https://player.vimeo.com/video/722594618?h=13e22b54e3" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
