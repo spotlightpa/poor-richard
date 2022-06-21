@@ -1,18 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-06-17-SPLRULE.md"
+    "content/news/2022-06-21-SPLDATABASE21.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-05-31-SPLREFORM.md",
-    "content/news/2021-01-05-SPLRULES06.md"
+    "content/news/2020-06-20-SPLROSE20.md",
+    "content/news/2020-06-15-SPLREFORM16.md"
   ],
   "topSlots": [
+    "content/news/2022-06-17-SPLRULE.md",
     "content/newsletters/palocal/2022-06-17-1002.md",
-    "content/news/2022-06-16-SPLTAXCUT.md",
-    "content/news/2022-06-14-SPLSPORTBAN.md"
+    "content/news/2022-06-16-SPLTAXCUT.md"
   ],
   "topper": []
 }
