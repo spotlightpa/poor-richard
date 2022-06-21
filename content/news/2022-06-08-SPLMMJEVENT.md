@@ -1,8 +1,8 @@
 +++
 arc-id = "LLAC2UU33NDVPKGB4FV2VEZYFU"
-blurb = "Join Spotlight PA on June 14 for a free panel on the rules and flaws of Pennsylvania's medical marijuana program."
+blurb = "On June 14, Spotlight PA held a free panel on the rules and flaws of Pennsylvania's medical marijuana program."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA on June 14 for a free panel on the rules and flaws of Pennsylvania's medical marijuana program."
+description = "On June 14, Spotlight PA held a free panel on the rules and flaws of Pennsylvania's medical marijuana program."
 event-date = 2022-06-14T06:00:00-04:00
 image = "external/bs4h1qewrs065rchvaetm0n91m.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
@@ -16,7 +16,7 @@ published = 2022-06-08T14:38:00-04:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-cards-advertising-rules-event"
 suppress-date = false
-title = "You’re invited! A free virtual Q&A on Pa.’s uneven rules for medical marijuana cards"
+title = "WATCH: A free virtual Q&A on Pa.’s uneven rules for medical marijuana cards"
 topics = ["Events", "Health"]
 +++
 
@@ -30,17 +30,19 @@ But those restrictions only apply to doctors. The companies that connect patient
 
 Doctors, lawyers, and even at least one certification company owner argue this loophole is unfair, and some advocates say it undermines trust in the marijuana program among patients. Now, as lawmakers in Harrisburg debate whether to legalize recreational cannabis, we’ll be looking at how Pa.’s advertising ban and other medical marijuana rules are affecting hundreds of thousands of patients across the state.
 
-On Tuesday, June 14 at 6 p.m. ET, join Spotlight PA via Zoom for a free Q&amp;A on the rules and flaws of the state’s medical marijuana program.
+On Tuesday, June 14 Spotlight PA held a free Q&amp;A on the rules and flaws of the state’s medical marijuana program. Watch the discussion below.
 
-Our panelists include:
+Our panelists were:
 
 - <b>Ed Mahon</b>, investigative reporter
 
 - <b>MaryFrances Koester</b>, a physician based in Lackawanna County
 
-- <b>Judith Cassel</b>, an attorney who specializes in medical marijuana issues<br/>
+- <b>Judith Cassel</b>, an attorney who specializes in medical marijuana issues
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_w16Xk6wOT0yaMOUU0Lorsw">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
+- <b>Shalawn James</b>, member of the Pennsylvania Medical Marijuana Advisory Board
+
+<iframe src="https://player.vimeo.com/video/722594618?h=13e22b54e3" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system</b></i><i>. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
