@@ -30,7 +30,7 @@ But those restrictions only apply to doctors. The companies that connect patient
 
 Doctors, lawyers, and even at least one certification company owner argue this loophole is unfair, and some advocates say it undermines trust in the marijuana program among patients. Now, as lawmakers in Harrisburg debate whether to legalize recreational cannabis, we’ll be looking at how Pa.’s advertising ban and other medical marijuana rules are affecting hundreds of thousands of patients across the state.
 
-On Tuesday, June 14 Spotlight PA held a free Q&amp;A on the rules and flaws of the state’s medical marijuana program. Watch the discussion below.
+On June 14, Spotlight PA held a free Q&amp;A on the rules and flaws of the state’s medical marijuana program. Watch the discussion below.
 
 Our panelists were:
 
