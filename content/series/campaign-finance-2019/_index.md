@@ -4,7 +4,6 @@ image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati,
 image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
 kicker = "Big Spending, Little Accountability"
 title = "Big Spending, Little Accountability"
-weight = 1
 image = "2019/11/st-peter.jpeg"
 linktitle = "A year-long investigation into how Pennsylvania lawmakers obscured nearly $3.5 million in campaign spending from 2016 through 2018."
 description = "A year-long investigation by The Caucus and Spotlight PA that found Pennsylvania lawmakers, operating under some of the weakest campaign finance laws in the country, obscured nearly $3.5 million in campaign spending from 2016 through 2018."
