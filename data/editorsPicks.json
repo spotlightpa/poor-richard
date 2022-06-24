@@ -1,18 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2022-06-24-SPLNURSE624.md"
+    "content/news/2022-06-21-SPLROE.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2021-07-21-SPLNURSING22.md",
-    "content/news/2020-06-13-SPLINFECTION14.md"
+    "content/news/2022-05-03-SPLROE.md"
   ],
   "topSlots": [
+    "content/news/2022-06-24-SPLNURSE624.md",
     "content/news/2022-06-23-SPLDEAL23.md",
-    "content/news/2022-06-21-SPLDATABASE21.md",
-    "content/news/2022-06-17-SPLRULE.md"
+    "content/news/2022-06-21-SPLDATABASE21.md"
   ],
   "topper": []
 }
