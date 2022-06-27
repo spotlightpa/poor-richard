@@ -16,6 +16,6 @@ hint = "Text for the flag over the box"
 
 [[page-query-params]]
 name = "form_name"
-placeholder = "Valid values: blank, 'contact-page', and 'elections-embed'"
+placeholder = "Valid values: blank, 'contact-page', 'elections-embed', and 'statecollege-embed'"
 hint = "Form target type"
 +++
