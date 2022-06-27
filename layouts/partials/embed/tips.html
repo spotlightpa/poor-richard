@@ -14,6 +14,9 @@
       let h = window.location.hash.replace(/^#/, '');
       return new URLSearchParams(h).get('host_page')
     },
+    setFormName() {
+      this.$refs.formName.value = this._('form_name', 'contact-page');
+    }
   }"
   x-cloak
 >
@@ -63,11 +66,13 @@
     netlify-honeypot="bot-field"
     data-ga-form="contact"
     target="_parent"
+    @submit="setFormName"
   >
     <input
       type="hidden"
       name="form-name"
-      :value="_('form_name', 'contact-page')"
+      value="contact-page"
+      x-ref="formName"
     />
     <p class="is-hidden">
       <label>
