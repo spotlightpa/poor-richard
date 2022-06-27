@@ -1,17 +1,18 @@
 {
   "featuredStories": [
-    "content/news/2022-06-21-SPLROE.md"
+    "content/news/2022-06-27-SPLLEAS27.md"
   ],
   "sidebarPicks": [
     "content/news/2022-05-12-SPLLAB12.md"
   ],
   "subfeatures": [
-    "content/news/2022-05-03-SPLROE.md"
+    "content/news/2022-06-21-SPLDATABASE21.md",
+    "content/news/2022-05-23-SPLURGE.md"
   ],
   "topSlots": [
+    "content/news/2022-05-03-SPLROE.md",
     "content/news/2022-06-24-SPLNURSE624.md",
-    "content/news/2022-06-23-SPLDEAL23.md",
-    "content/news/2022-06-21-SPLDATABASE21.md"
+    "content/news/2022-06-23-SPLDEAL23.md"
   ],
   "topper": []
 }
