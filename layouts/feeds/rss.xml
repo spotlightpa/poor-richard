@@ -1,5 +1,8 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 {{- $news := site.GetPage "/news/_index.md" -}}
+{{- $sc := site.GetPage "/statecollege/_index.md" -}}
+{{- $stories := union $news.RegularPages $sc.RegularPages -}}
+{{- $stories = sort $stories ".PublishDate" "desc" -}}
 <rss
   version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
@@ -20,7 +23,7 @@
     {{ if not .Date.IsZero -}}
       <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     {{- end }}
-    {{ range first 50 $news.Pages }}
+    {{ range first 50 $stories }}
       <item>
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>

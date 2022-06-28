@@ -1,6 +1,9 @@
 {{- $items := slice -}}
 {{- $news := site.GetPage "/news/_index.md" -}}
-{{- range first 15 $news.RegularPages -}}
+{{- $sc := site.GetPage "/statecollege/_index.md" -}}
+{{- $stories := union $news.RegularPages $sc.RegularPages -}}
+{{- $stories = sort $stories ".PublishDate" "desc" -}}
+{{- range first 15 $stories -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $item := dict
     "id" .Permalink
