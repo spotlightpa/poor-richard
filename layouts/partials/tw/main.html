@@ -226,8 +226,7 @@
 
     {{ if .Param "suppress-related" | not }}
       <nav class="{{ $mainWellClass }} mt-12">
-        {{ $news := site.GetPage "/news/_index.md" }}
-        {{ $related := $news.RegularPages.Related . | first 10 }}
+        {{ $related := .Parent.RegularPages.Related . | first 10 }}
         {{ partial "tw/related-articles.html" $related }}
       </nav>
     {{ end }}

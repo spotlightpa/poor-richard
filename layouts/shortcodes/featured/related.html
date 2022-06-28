@@ -4,8 +4,7 @@
   "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
   "float-left sm:px-6 lg:-ml-24"
 }}
-{{ $news := .Site.GetPage "/news/_index.md" }}
-{{ $related := $news.RegularPages.Related .Page }}
+{{ $related := .Page.Parent.RegularPages.Related .Page }}
 {{ if .Get "hide-series" }}
   {{ $params := partialCached "helper/page-params" .Page .Page.RelPermalink }}
   {{ with $series := $params.series }}

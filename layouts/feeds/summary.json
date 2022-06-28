@@ -1,7 +1,10 @@
 {{- $news := site.GetPage "/news/_index.md" -}}
+{{- $sc := site.GetPage "/statecollege/_index.md" -}}
+{{- $stories := union $news.RegularPages $sc.RegularPages -}}
+{{- $stories = sort $stories ".PublishDate" "desc" -}}
 {
   "items": [
-    {{ range $i, $p := first 800 $news.RegularPages }}
+    {{ range $i, $p := first 800 $stories }}
       {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
       {{ if ne $i 0 }},{{ end }}
       {
