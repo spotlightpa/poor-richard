@@ -8,36 +8,7 @@ aliases = ["/jobs/"]
 +++
 ## Current listings
 
-* <a href="#major-gifts-director-spotlight-pa">Major Gifts Director, Spotlight PA</a>
 * <a href="#membership-manager-spotlight-pa">Membership Manager, Spotlight PA</a>
-
-## Major Gifts Director, Spotlight PA
-
-## <a href="https://us61e2.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/492">Apply Here</a>
-
-**Summary:** We are seeking a Major Gifts Director to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across more than 80 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners. The newsroom is supported by grants and donations from individual and institutional donors who believe in the value of the work and want to sustain it. In partnership with the American Journalism Project, we are building out a best-in-class development team to enable Spotlight PA to sustain and grow its reporting. Our expansion plans include the launch of Spotlight PA local bureaus in news deserts around the state. 
-
-**What you’ll do:** The Major Gifts Director will lead Spotlight PA’s aggressive growth of its major individual giving, a vital pillar of our overall long-term revenue strategy. We are seeking an experienced fundraiser to help us meet the following ambitious targets over the next three years for major gifts ($1,000+): $450,000 in 2022; $750,000 in 2023; and $1 million in 2024. This position will report to the Senior Director of Strategic Development and be a part of a team that will include a Membership Manager. This team, in turn, will work closely with the Executive Director and key newsroom leaders to aggressively expand Spotlight PA’s fundraising sophistication and capacity.
-
-**Responsibilities include:**
-
-* Identify prospective donors with the capacity to give $1,000 or more annually, develop individual strategies, conduct personalized outreach and communication (in-person and virtually), and directly solicit major gifts from prospects throughout the year. 
-* Plan and lead small-group solicitation events across Pennsylvania, including events hosted by current supporters. 
-* Steward existing major donors through regular communications and impact reports related to their areas of interest. 
-* Help with the creation of an annual report. 
-* Conduct major donor digital campaigns and hard-mail solicitations to retain and upgrade existing donors. 
-* Advance diversity, equity, and inclusion initiatives on our team and through fundraising. 
-* Work collaboratively with the Senior Director of Strategic Development and Membership Manager to identify current members who could be upgraded. 
-* Partner with the Executive Director and Senior Director of Strategic Development to solicit major grants and corporate donations, and prepare reports for foundations and other institutional funders. 
-* Track all major donor research, communications, pledges, and more in Salesforce.
-
-**Who we’re looking for:** We are seeking a Pennsylvania-based fundraiser with a proven track record (at least 5-8 years of experience) in raising major gifts from individuals for important causes. Spotlight PA launched in late 2019, and most of our focus to date has been on grants and grassroots fundraising (membership); now, we are seeking to hire someone who believes deeply in the importance of non-partisan, independent journalism and has the experience, skills, and persistence to help Spotlight PA build an effective major gifts program. An ability to work in a collaborative environment is a must, as you will work closely with the Executive Director and the fundraising team, as well as external partners and advocates for our work. Applicants should have a passion for building relationships on behalf of the organizations they serve, and be goal-oriented and able to work independently. You should be a self-starter and have strong organizational and communication skills. You must also be committed to advancing diversity, equity, and inclusion on our team and through your work. 
-
-**This job is full-time and includes benefits, and can be based anywhere in Pennsylvania. This position is budgeted for a salary from $90,000-$100,000, depending on experience. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.** Note that the application portal is managed by The Philadelphia Inquirer — Spotlight PA is a fully grant- and donation-supported project of The Philadelphia Inquirer and The Lenfest Institute for Journalism. 
-
-We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
-
-<hr>
 
 ## Membership Manager, Spotlight PA
 
