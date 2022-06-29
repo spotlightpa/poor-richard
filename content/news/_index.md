@@ -2,6 +2,7 @@
 title = "Latest News"
 linktitle = "News"
 description = "Read the latest news from Spotlight PA"
+layout = "news"
 
 [cascade]
 layout = "article"
