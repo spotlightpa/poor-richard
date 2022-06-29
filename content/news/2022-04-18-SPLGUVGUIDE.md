@@ -85,7 +85,7 @@ Barletta started his political career in Hazleton on the city council in 1998 an
 
 {{<picture src="external/av2brf5deqp7r1q5krkx0day4w.jpeg" description="Jake Corman replaced his father as a state senator in 1999. " caption="Jake Corman replaced his father as a state senator in 1999. " credit="Commonwealth Media Services">}} 
 
-<b>Jake Corman </b>| <a href="https://www.cormanforpa.com/">Website</a>
+<b>Jake Corman </b>| <a href="https://web.archive.org/web/20220527051336/https://www.cormanforpa.com/">Website</a>
 
 <i><b>UPDATE</b></i>: <i>On May 12, Jake Corman announced he was backing Lou Barletta. His name will still appear on the ballot.</i>
 
