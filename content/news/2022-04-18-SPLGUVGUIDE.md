@@ -125,7 +125,7 @@ Gale calls himself “staunchly pro-life,” and said one of his top priorities 
 
 {{<picture src="external/kbttz9rh9b7phq9c44x9tghpn4.jpeg" description="Charlie Gerow is a prominent Republican political strategist." caption="Charlie Gerow is a prominent Republican political strategist." credit="Courtesy Charlie Gerow">}} 
 
-<b>Charlie Gerow </b>| <a href="https://www.charlieforgovernor.com/">Website</a>
+<b>Charlie Gerow </b>| <a href="https://web.archive.org/web/20220519061750/https://www.charlieforgovernor.com/">Website</a>
 
 Gerow, a prominent Republican political strategist, began his career working for Ronald Reagan. Since then, Gerow has worked as a lobbyist and consultant, opening his own public communications firm. He currently serves as the vice-chairman of the American Conservative Union, which hosts the annual Conservative Political Action Conference (CPAC).
 
