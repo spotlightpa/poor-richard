@@ -79,7 +79,18 @@
   ></script>
     {{ partial "header/ld-json.html" . }}
     {{ block "svg-resources" . }}
-      {{ partialCached "header/svg-resources.html" . }}
+      {{ $svgs := dict
+        "check-svg" "@fontawesome/solid/check.svg"
+        "email-svg" "@fontawesome/regular/envelope.svg"
+        "fb-svg" "@fontawesome/brands/facebook-f.svg"
+        "bars-svg" "@fontawesome/solid/bars.svg"
+        "banner-svg" "/img/logos/banner-default-on-trans.svg"
+        "logo-svg" "/img/logos/circle-default-on-trans.svg"
+        "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+        "share-svg" "@fontawesome/solid/share.svg"
+        "twitter-svg" "@fontawesome/brands/twitter.svg"
+      }}
+      {{ partialCached "header/svgs.html" $svgs }}
     {{ end }}
   </body>
 </html>

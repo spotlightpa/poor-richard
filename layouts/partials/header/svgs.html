@@ -1,0 +1,6 @@
+<div hidden>
+  {{ range $id, $rsc := . }}
+    {{ $svg := resources.Get $rsc }}
+    <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+  {{ end }}
+</div>
