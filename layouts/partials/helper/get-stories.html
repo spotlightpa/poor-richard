@@ -1,0 +1,9 @@
+{{ $stories := slice }}
+{{ $src := index site.Data .src }}
+{{ range index $src .name }}
+  {{ with site.GetPage . }}
+    {{ $stories = $stories | append . }}
+  {{ end }}
+{{ end }}
+
+{{ return $stories }}
