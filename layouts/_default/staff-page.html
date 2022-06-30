@@ -168,10 +168,5 @@
     "phone-svg" "@fontawesome/solid/phone.svg"
     "chat-svg" "@fontawesome/solid/comment.svg"
   }}
-  <div hidden>
-    {{ range $id, $rsc := $svgs }}
-      {{ $svg := resources.Get $rsc }}
-      <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
-    {{ end }}
-  </div>
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

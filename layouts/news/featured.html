@@ -122,12 +122,7 @@
       "times-svg" "@fontawesome/solid/xmark.svg"
       "twitter-svg" "@fontawesome/brands/twitter.svg"
     }}
-    <div hidden>
-      {{ range $id, $rsc := $svgs }}
-        {{ $svg := resources.Get $rsc }}
-        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
-      {{ end }}
-    </div>
+    {{ partial "header/svgs.html" $svgs }}
     {{ partial "header/ld-json.html" . }}
   </body>
 </html>
