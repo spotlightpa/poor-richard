@@ -125,6 +125,9 @@
               {{ end }}
 
               {{ partial "tile/readmore.html" dict }}
+              {{ if gt 30 (len .river) }}
+                <div style="height: 100%;">&nbsp;</div>
+              {{ end }}
             </div>
           </div>
         </div>
