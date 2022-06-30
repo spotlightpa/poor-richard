@@ -1,4 +1,5 @@
 +++
+aliases = ["/about/coronavirus-dashboard-faq/", "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"]
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
 authors = ["Jamie Martines"]
 blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
