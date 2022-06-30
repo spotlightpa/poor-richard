@@ -1,12 +1,12 @@
 +++
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
 authors = ["Jamie Martines"]
-blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
+blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
 byline = "Jamie Martines of Spotlight PA"
-description = "Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
+description = "Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
-image-description = "Pa. COVID updates: Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
+image-description = "Pa. COVID updates: Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
 image-size = "hidden"
 internal-budget = "Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
 internal-id = "SPLCOVIDRESOURCEXX"
@@ -18,10 +18,6 @@ slug = "pennsylvania-covid-dashboard-updates-guides-resources-cases-vaccines-tes
 suppress-date = true
 title = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests"
 topics = ["Coronavirus"]
-aliases = [
-    "/about/coronavirus-dashboard-faq/",
-    "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"
-]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -30,7 +26,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of June 1, 2022.
+Information on this page is current as of July 1, 2022.
 
 If you have a story idea or tip related to the pandemic response, please contact reporter <a href="mailto:jamie@spotlightpa.org" target="_blank">Jamie Martines</a>.
 
@@ -46,15 +42,23 @@ The following pages provide data related to testing, case counts, and hospitaliz
 
 <b>If you also want to see how Pennsylvania compares to other states or countries, check these sources:</b>
 
-<a href="https://coronavirus.jhu.edu/us-map">Johns Hopkins Coronavirus Resource Center</a> presents case counts and deaths by state, territory, and county nationwide.
+<a href="https://coronavirus.jhu.edu/us-map">Johns Hopkins Coronavirus Resource Center</a>: Presents case counts and deaths by state, territory, and county nationwide.
 
-<a href="https://www.nytimes.com/interactive/2021/us/covid-cases.html">The New York Times</a> pulls data from a variety of federal, state, and local sources and regularly adjusts for anomalies in the data when calculating averages. Explore data by case counts, hospitalizations, and deaths by state, county, and metro area.
+<a href="https://www.nytimes.com/interactive/2021/us/covid-cases.html">The New York Times</a>: Pulls data from a variety of federal, state, and local sources and regularly adjusts for anomalies in the data when calculating averages. Explore data by case counts, hospitalizations, and deaths by state, county, and metro area.
 
 ## Where can I get a free COVID vaccine or booster shot?
 
-Anyone 5 years of age and older is eligible for a COVID vaccine and booster shot. The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?s_cid=11747:cdc%20up%20to%20date%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY22">provides resources</a> on how to pick a vaccine or booster, guidance based on age or risk level, and answers to other frequently asked questions on COVID vaccines.
+Anyone 6 months of age and older is eligible for a COVID vaccine. Anyone 5 years of age and older should get a booster shot, according to the CDC.
 
-Most retail pharmacies offer vaccines and boosters. Many do not require an appointment, and all COVID vaccines are <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/no-cost.html?s_cid=10473:are%20covid%2019%20vaccines%20free:sem.ga:p:RG:GM:gen:PTN:FY21">free, regardless of insurance or immigration status</a>. You can find locations offering vaccines near you by entering your ZIP code at <a href="http://www.vaccines.gov/">www.vaccines.gov</a>.
+The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?s_cid=11747:cdc%20up%20to%20date%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY22">provides resources</a> on how to pick a vaccine or booster, guidance based on age or risk level, and answers to other frequently asked questions on COVID vaccines.
+
+Most retail pharmacies offer vaccines and boosters. Many do not require an appointment, and all COVID vaccines are <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/no-cost.html?s_cid=10473:are%20covid%2019%20vaccines%20free:sem.ga:p:RG:GM:gen:PTN:FY21">free, regardless of insurance or immigration status</a>. 
+
+You can find locations offering vaccines near you by entering your ZIP code at <a href="http://www.vaccines.gov/">www.vaccines.gov</a>.
+
+<b>If you are looking for vaccines for children younger than 5 years old</b>, be sure to check the boxes for that age group during your search. Not all providers carry vaccines specifically for young children, and some only give vaccines to certain age groups.
+
+For example, some retail pharmacies like Rite Aid and Walmart will only administer vaccines to children over the age of 3. Others have specific policies for scheduling appointments and vaccinating young children, so it’s best to check with the provider before arriving.
 
 ## What should I do if I lose my vaccine card?
 
