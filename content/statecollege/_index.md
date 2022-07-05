@@ -5,8 +5,11 @@ image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 
+river-promo-desktop-images = []
+modal-exclude = true
 [cascade]
 layout = "article"
+extended-kicker = "State College Region"
 +++
 
 ## A Novel Approach to Reinvigorating Local News

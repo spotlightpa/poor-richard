@@ -4,7 +4,7 @@
 
 {{ define "topper" }}
   {{ if .Param "topper-active" }}
-    {{ partialCached "component/topper.html" . }}
+    {{/* partialCached "component/topper.html" . */}}
   {{ else if $topperStories := partial "helper/get-sc-picks" "topper" }}
     {{ partial "component/topper-articlepromo.html" $topperStories }}
   {{ end }}
