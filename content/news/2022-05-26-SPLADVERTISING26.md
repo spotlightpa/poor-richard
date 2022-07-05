@@ -87,6 +87,7 @@ Pennsylvania’s blanket ban on physician advertising for medical cannabis is un
   eyebrow="Investigation"
   hed="The Ad Block"
   dek="With millions of dollars at stake, companies are blanketing Pennsylvania with ads about how to get a medical marijuana card. But if doctors do the same, they risk their license."
+  date="May 26, 2022"
   byline="Ed Mahon"
   outlet="Spotlight PA"
   art-type="Illustration"
