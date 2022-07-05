@@ -10,6 +10,10 @@
 {{ $rubric := dict }}
 {{ $exKicker := .Param "extended-kicker" | default "Top News" }}
 
+{{ if and .Parent .Parent.Parent }}
+  {{ $rubric = .Parent }}
+{{ end }}
+
 {{ $topic := "" }}
 {{ if .Param "topics" }}
   {{ $topic = index (.GetTerms "topics") 0 }}
