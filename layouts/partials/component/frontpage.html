@@ -1,11 +1,11 @@
-{{ $imageDescription := site.Param "river-promo-description" }}
-{{ $link := site.Param "river-promo-link" }}
-{{ $desktopImages := site.Param "river-promo-desktop-images" }}
-{{ $desktopWidth := site.Param "river-promo-desktop-width" }}
-{{ $desktopHeight := site.Param "river-promo-desktop-height" }}
-{{ $mobileImages := site.Param "river-promo-mobile-images" }}
-{{ $mobileWidth := site.Param "river-promo-mobile-width" }}
-{{ $mobileHeight := site.Param "river-promo-mobile-height" }}
+{{ $imageDescription := .page.Param "river-promo-description" }}
+{{ $link := .page.Param "river-promo-link" }}
+{{ $desktopImages := .page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := .page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := .page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := .page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := .page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := .page.Param "river-promo-mobile-height" }}
 
 
 <section class="section {{ .marginClass }}" data-ga-category="homepage">
