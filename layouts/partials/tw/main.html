@@ -23,6 +23,8 @@
   {{ end }}
 {{ end }}
 
+{{ $sidebarNewsletter := .Param "sidebar-newsletter" | default "tw/rail-papost.html" }}
+
 
 <section class="bg-white px-4 pt-12 pb-6 text-g-9" id="article">
   <div class="mx-auto grid max-w-screen-lg grid-cols-none">
@@ -175,7 +177,7 @@
       class="{{ $rightRailClass }} mt-6 grid-cols-2 place-items-center items-stretch gap-4"
       data-ga-category="sidebar"
     >
-      {{ partial "tw/rail-newsletter.html" . }}
+      {{ partial $sidebarNewsletter . }}
       <div
         data-ga-category="top"
         data-sf-campaign="7015G0000013oHLQAY"
