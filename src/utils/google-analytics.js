@@ -162,10 +162,11 @@ export function addGAListeners() {
             source = new URL(hostPage).host;
           }
         }
+        let theme = el.closest("[data-sf-theme]")?.dataset.sfTheme || "";
         let salesforceCampaign =
           el.closest("[data-sf-campaign]")?.dataset.sfCampaign ||
           "7015G0000013oXTQAY";
-        let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
+        let donateURL = `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=${theme}&campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
         el.href = donateURL;
       }
     });
