@@ -4,7 +4,7 @@
 {{ $kickerLink := $featuredParams.series | default $featuredParams.topic }}
 
 
-<div class="tile is-parent is-top" data-ga-category="featured">
+<div class="pb-0 tile is-parent" data-ga-category="featured">
   <div class="tile is-child">
     <div class="mb-2">
       {{ if $kickerLink }}
@@ -54,15 +54,15 @@
   "heightRatio" 9
   "sizeHint" "40vw"
 }}
-<div class="tile is-bottom" data-ga-category="featured">
-  <div class="tile is-parent is-6 is-top-tablet">
+<div class="tile" data-ga-category="featured">
+  <div class="pt-0 tile is-parent is-6">
     <article class="tile is-child">
       {{ partial "component/image-block.html" $imgOpts }}
     </article>
   </div>
-  <div class="tile is-parent is-bottom-tablet">
+  <div class="pt-0 tile is-parent is-bottom-tablet">
     <article class="tile is-child">
-      <h1 class="title is-spaced is-size-3-touch mt-2">
+      <h1 class="title is-spaced is-size-3-touch">
         <a
           href="{{ $featured.RelPermalink }}"
           class="has-text-black hover-underline"
