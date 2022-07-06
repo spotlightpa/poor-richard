@@ -7,6 +7,7 @@ description = "A recent graduate of Columbia Journalism School, Ashad Hajela is 
 image = "external/bztezgh7my1bkj2g4nycn2tt2w.jpeg"
 image-credit = "Photo Provided"
 image-description = "Ashad Hajela"
+image-size = "hidden"
 internal-budget = "A recent graduate of Columbia Journalism School, Ashad Hajela is covering rural issues — from utilities to agriculture — thanks to Spotlight PA’s first-ever partnership with Report for America."
 internal-id = "SPLHAJELA"
 kicker = "Rural Issues"
