@@ -7,6 +7,7 @@ description = "Penn State investigative reporter Wyatt Massey is looking forward
 image = "2022/07/01hc-92d6-yd2f-49ps.jpeg"
 image-credit = "Photo provided"
 image-description = "Wyatt Massey"
+image-size = "hidden"
 internal-budget = "Penn State investigative reporter Wyatt Massey is looking forward to providing a lens of accountability to the influential university, as well as returning to his rural roots."
 internal-id = "SPLMASSEY"
 kicker = "Penn State"
