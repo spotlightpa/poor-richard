@@ -9,4 +9,5 @@ river-promo-desktop-images = []
 modal-exclude = true
 [cascade]
 extended-kicker = "State College Region"
+sidebar-newsletter = "tw/rail-talkofthetown.html"
 +++
