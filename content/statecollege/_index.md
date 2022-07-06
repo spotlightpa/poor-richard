@@ -8,6 +8,5 @@ image-credit = "Abby Drey / Centre Daily Times"
 river-promo-desktop-images = []
 modal-exclude = true
 [cascade]
-layout = "article"
 extended-kicker = "State College Region"
 +++
