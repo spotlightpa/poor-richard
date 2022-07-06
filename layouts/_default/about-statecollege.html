@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html
+  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+  class="base-17"
+>
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{- with .Param "title-tag" -}}
+      <title>{{ . }}</title>
+    {{- else -}}
+      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    {{- end -}}
+
+    {{ partial "header/meta.html" . }}
+    {{ partial "header/google-analytics-meta.html" . }}
+    {{ partialCached "header/css-tw-rale.html" . }}
+    {{ partial "header/noscript.html" . }}
+    {{ partial "header/script.html" . }}
+    {{ partial "header/favicons.html" . }}
+    {{ partial "header/feeds.html" . }}
+  </head>
+  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  <body
+    data-sf-campaign="7015G0000013pUYQAY"
+    data-ga-label="{{ $pageCat }}"
+    data-ga-category="statecollege"
+    class="bg-beige font-raleway leading-normal"
+  >
+    <!-- mobile overflow guard -->
+    <div
+      class="flex min-h-screen w-screen flex-col overflow-x-hidden sm:overflow-x-visible"
+    >
+      <main data-ga-category="main">
+        {{ partial "tw/state-college.html" . }}
+      </main>
+
+      <footer id="footer" class="mt-auto" data-ga-category="footer">
+        {{ partial "tw/footer.html" . }}
+      </footer>
+      {{ $svgs := dict
+        "banner-svg" "/img/logos/banner-default-on-trans.svg"
+        "bars-svg"  "@fontawesome/solid/bars.svg"
+        "close-svg" "@fontawesome/solid/circle-xmark.svg"
+        "email-svg" "@fontawesome/regular/envelope.svg"
+        "fb-svg" "@fontawesome/brands/facebook-f.svg"
+        "logo-svg" "/img/logos/circle-default-on-trans.svg"
+        "plus-svg" "@fontawesome/solid/circle-xmark.svg"
+        "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+        "share-svg" "@fontawesome/solid/share.svg"
+        "twitter-svg" "@fontawesome/brands/twitter.svg"
+        "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+      }}
+      <div hidden>
+        {{ range $id, $rsc := $svgs }}
+          {{ $svg := resources.Get $rsc }}
+          <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+        {{ end }}
+      </div>
+      {{ partial "header/ld-json.html" . }}
+    </div>
+  </body>
+</html>
