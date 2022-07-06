@@ -19,7 +19,7 @@ title = "Meet Wyatt Massey, Penn State investigative reporter for Spotlight PA S
 topics = ["Education"]
 +++
 
-<a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+<i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
 
 I’m Wyatt Massey, and I’m excited to join Spotlight PA in the State College regional bureau as an investigative reporter covering Penn State University.
 
@@ -39,4 +39,4 @@ You can reach me at <a href="mailto:wmassey@spotlightpa.org">wmassey@spotlightpa
 
 <i>— Wyatt</i>
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>SUPPORT THIS JOURNALISM</b></i><i> and help us save local news in State College and north-central Pennsylvania at </i><a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013pUYQAY&utm_source=www.spotlightpa.org&utm_medium=statecollege:section&utm_campaign=statecollege:main"><i>spotlightpa.org/statecollege</i></a><i>. Spotlight PA is funded by </i><a href="https://www.spotlightpa.org/support"><i>foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability and public-service journalism that gets results.</i>
