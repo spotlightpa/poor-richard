@@ -5,6 +5,7 @@ blurb = "A Centre County native and Penn State graduate, Rafacz has spent the pa
 byline = "Sarah Rafacz of Spotlight PA State College"
 description = "A Centre County native and Penn State graduate, Rafacz has spent the past seven years working in local news in State College."
 image = "2022/07/01hc-bd3d-2ftq-1j93.jpeg"
+image-credit = "Photo Provided"
 internal-budget = "A Centre County native and Penn State graduate, Rafacz has spent the past seven years working in local news in State College."
 internal-id = "SPLRAFACZ"
 kicker = "Editor's Notes"
