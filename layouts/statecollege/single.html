@@ -25,22 +25,22 @@
     data-sf-campaign="7015G0000013pUYQAY"
     data-sf-theme="centrecounty"
   >
-    {{ block "header" . }}
+    {{ block "sc-header" . }}
       <header data-ga-category="header">
-        {{ block "nav" . }}
+        {{ block "sc-nav" . }}
           {{ partialCached "sc/nav.html" . }}
         {{ end }}
-        {{ block "banner" . }}
+        {{ block "sc-banner" . }}
           {{ if .Param "banner-active" }}
             {{ partialCached "tw/banner.html" . }}
           {{ end }}
         {{ end }}
-        {{ block "topper" . }}
+        {{ block "sc-topper" . }}
           {{ if .Param "topper-active" }}
             {{ partialCached "tw/topper.html" . }}
           {{ end }}
         {{ end }}
-        {{ block "promo" . }}
+        {{ block "sc-promo" . }}
           {{ partialCached "tw/promo-header.html" . }}
         {{ end }}
       </header>
