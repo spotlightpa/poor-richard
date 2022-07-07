@@ -7,6 +7,9 @@ image-credit = "Abby Drey / Centre Daily Times"
 
 river-promo-desktop-images = []
 modal-exclude = true
+donate-hed = "Vital Journalism for North-Central Pa."
+donate-text = "Support the future of news in State College & beyond"
+
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"
