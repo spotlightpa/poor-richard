@@ -60,7 +60,9 @@
     </footer>
     {{ partialCached "tw/modal-sticky.html" . }}
     {{ partialCached "tw/modal-search.html" . }}
-    {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ if .Param "modal-exclude" | not }}
+      {{ partialCached "sc/modal-newsletter.html" . }}
+    {{ end }}
     {{ $svgs := dict
       "banner-svg" "/img/logos/banner-default-on-trans.svg"
       "banner-state-college-svg" "/img/logos/banner-state-college.svg"
