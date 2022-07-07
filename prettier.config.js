@@ -14,11 +14,12 @@ module.exports = {
     },
     {
       files: [
-        "**/news/single.html",
-        "**/news/featured.html",
-        "**/tw/*.html",
         "**/featured/*.html",
+        "**/news/featured.html",
+        "**/news/single.html",
+        "**/sc/*.html",
         "**/statecollege/*.html",
+        "**/tw/*.html",
       ],
       options: {
         plugins: [pluginGoTemplate, pluginTailwind],
