@@ -11,7 +11,7 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ $news := site.GetPage "/statecollege/_index.md" }}
+  {{ $sc := site.GetPage "/statecollege/_index.md" }}
 
   {{ $topperStories := partial "helper/get-sc-picks" "topper" }}
   {{ $topperStory := first 1 $topperStories }}
@@ -27,7 +27,7 @@
   {{ $pinnedStories := partial "helper/get-sc-picks" "topSlots" }}
 
   {{ $paPost := site.GetPage "/newsletters/talkofthetown" }}
-  {{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+  {{ $river := sort (union $paPost.RegularPages $sc.RegularPages) ".PublishDate" "desc" }}
   {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
 
   {{ $hasPromo := .Param "promo-active" }}
