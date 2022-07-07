@@ -1,3 +1,6 @@
+{{ $nlBox := .page.Param "newsletter-box" |
+  default "newsletter/multi-box.html"
+}}
 {{ $imageDescription := .page.Param "river-promo-description" }}
 {{ $link := .page.Param "river-promo-link" }}
 {{ $desktopImages := .page.Param "river-promo-desktop-images" }}
@@ -36,7 +39,7 @@
             x-data="funnelStatus"
           >
             <div x-show="!isSubscriber">
-              {{ partial "newsletter/multi-box.html" . }}
+              {{ partial $nlBox . }}
             </div>
             <div data-ga-category="donate" x-cloak x-show="isSubscriber">
               {{ partial "component/donate-prefill.html" .page }}
