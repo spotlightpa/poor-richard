@@ -1,3 +1,7 @@
+{{ $hed := .Param "donate-hed" | default "Become a Member" }}
+{{ $text := .Param "donate-text" | default "Help Spotlight PA hold the powerful to account with a gift today." }}
+
+
 <div
   class="box no-js:hidden"
   x-data="{
@@ -13,12 +17,17 @@
       this.showOther = false;
     },
     get donateURL() {
+      let campaign = this.$el.
+        closest('[data-sf-campaign]')?.dataset.sfCampaign ||
+        '701f4000000TVuDAAW';
+      let theme =  this.$el.
+        closest('[data-sf-theme]')?.dataset.sfTheme || '';
       let period = {
         o: 'once',
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuDAAW&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=home&utm_campaign=homepage:midpage`;
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=home&utm_campaign=homepage:midpage`;
     }
   }"
 >
@@ -26,9 +35,9 @@
     <h2 class="title is-6 has-text-danger has-text-left is-uppercase is-spaced">
       Like what you read?
     </h2>
-    <h2 class="title is-size-3-mobile has-text-centered">Become a Member</h2>
+    <h2 class="title is-size-3-mobile has-text-centered">{{ $hed }}</h2>
     <p class="subtitle has-text-centered has-text-black">
-      Help Spotlight PA hold the powerful to account with a gift today.
+      {{ $text }}
     </p>
     <div class="mt-1 buttons is-centered">
       <button

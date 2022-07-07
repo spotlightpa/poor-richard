@@ -38,14 +38,17 @@
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
-  {{ partial "component/frontpage" (dict
-    "featuredStories" $featuredStories
-    "pinnedStories" $pinnedStories
-    "river" $river
-    "marginClass" $marginClass
-    "page" .Page
-    )
-  }}
+
+  <div data-sf-campaign="7015G0000013pUYQAY" data-sf-theme="centrecounty">
+    {{ partial "component/frontpage" (dict
+      "featuredStories" $featuredStories
+      "pinnedStories" $pinnedStories
+      "river" $river
+      "marginClass" $marginClass
+      "page" .Page
+      )
+    }}
+  </div>
 {{ end }}
 
 {{ define "extra-footer" }}
