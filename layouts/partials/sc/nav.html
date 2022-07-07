@@ -1,3 +1,7 @@
+{{ $sc := site.GetPage "/statecollege/_index.md" }}
+{{ $link := cond (.Page.IsDescendant $sc) $sc.RelPermalink "/" }}
+
+
 <nav
   id="#top"
   x-data="{ isOpen: false }"
@@ -8,11 +12,7 @@
 >
   <div class="site-nav:container">
     <div class="site-nav:content">
-      <a
-        class="site-nav:logo"
-        href="/about/statecollege/"
-        data-ga-category="logo"
-      >
+      <a class="site-nav:logo" href="{{ $link }}" data-ga-category="logo">
         <svg class="site-nav:logo-svg">
           <title>Home</title>
           <desc>Spotlight PA State College logo</desc>
