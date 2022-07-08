@@ -31,7 +31,9 @@ The state House approved the spending plan in a 180-20 vote Thursday afternoon.
 
 The state Senate followed, in a 47-3 vote, on Friday after <a href="https://www.spotlightpa.org/news/2022/07/pa-abortion-restrictions-constitutional-amendment-voter-id/">a contentious debate</a> on adding language to the state constitution declaring it does not grant any right relating to abortion and requiring voter ID to vote in all instances.
 
-Wolf’s office did not immediately respond to a request for comment Friday. His spokesperson praised the state House’s passage of the plan Thursday.
+In a statement, Wolf said the budget solidified “his commitment to education at all levels.”
+
+“Since I took office, Pennsylvania’s students and families have been my top priority,” Wolf said. “We have made long overdue investments in the people of Pennsylvania, including better education for all, safer communities, and a brighter future.”
 
 Overall, the deal represents a 2.9% increase in state spending compared to last year’s budget. Education saw a major investment, with $525 million more appropriated for K-12 schools, $225 million for some of the state’s poorest districts, and $100 million each for special education, school safety, and school mental health services.
 
@@ -43,7 +45,7 @@ The plan includes a gradual decrease in <a href="https://www.spotlightpa.org/new
 
 <div class="flourish-embed flourish-table" data-src="visualisation/10572916"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-The General Assembly also agreed to spend $2.2 billion in remaining federal stimulus dollars on a number of one-off conservation, water infrastructure, housing, child care, and public safety projects.
+The General Assembly also agreed to spend $2.2 billion in remaining federal stimulus dollars on a number of one-off conservation, water infrastructure, housing, childcare, and public safety projects.
 
 A property tax rebate program for people 65 or older and those with disabilities, typically funded by the Pennsylvania Lottery, will get a one-time $140 million infusion, which represents a 70% expansion.
 
@@ -55,7 +57,7 @@ Democrats largely backed the budget and stimulus spending plan, seizing the oppo
 
 “We are poised to enact the largest increase in education funding in the history of Pennsylvania,” state Sen. Vincent Hughes (D., Philadelphia), minority chair of the chamber’s Appropriations Committee, said Thursday. “To have this kind of increase for the children of Pennsylvania, teachers, those who work in schools, I think is significant.”
 
-Lawmakers also created a new tax credit aimed at supporting working families. People with one or more dependents can claim up to 30% of the child-care expenses they claimed on their federal taxes.
+Lawmakers also created a new tax credit aimed at supporting working families. People with one or more dependents can claim up to 30% of the childcare expenses they claimed on their federal taxes.
 
 The budget was delayed by a week as state House Republicans tried to withhold funding from four major universities unless the schools swore under oath that they do not “engage in research or experimentation using fetal tissue obtained from an elective abortion.” The ban specifically targeted the University of Pittsburgh.
 
