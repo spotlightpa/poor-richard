@@ -21,6 +21,12 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, July 8: </b></i><i>Gov. Tom Wolf has </i><a href="https://www.governor.pa.gov/newsroom/gov-wolf-vetoes-discriminatory-transphobic-legislation/" target="_blank"><i>vetoed</i></a><i> HB 972, introduced by State Rep. Barbara Gleim (R., Cumberland). </i>
+
+<i>“The fact that this bill passed through Pennsylvania’s Republican-led General Assembly solely to bully and oppress vulnerable children is atrocious,” he said in a statement. “These members should be ashamed of themselves for proposing and voting on policies that are discriminatory,&nbsp;unnecessary, and incredibly harmful.”</i>
+
+<i>Original story</i>
+
 HARRISBURG — A coalition of Pennsylvania lawmakers and activists recently gathered on the Capitol rotunda steps with one mission in mind: passing a law separating sports teams by sex.
 
 Legislation titled the Protect Women’s Sports Act would ban transgender girls and women, in grade school through college, from participating on the team that corresponds to their gender. It also would prohibit organizations like the NCAA from investigating or taking action against schools for following the law.
