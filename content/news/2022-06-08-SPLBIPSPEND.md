@@ -21,6 +21,8 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, July 8:</b></i><i> </i><a href="https://www.spotlightpa.org/news/2022/07/pa-stimulus-2022-money-gov-wolf-update-budget/" target="_blank"><i>Pennsylvania lawmakers have agreed on a plan to use $2.2 billion in remaining federal stimulus money from the pandemic on housing, conservation, and child care programs.</i></a>
+
 HARRISBURG — As the June 30 deadline for the Pennsylvania legislature to pass a new budget approaches, support for spending some of the state’s billions in remaining stimulus money and surplus tax revenue is gaining bipartisan traction.
 
 Discussions are preliminary, and top budget negotiators stressed on the record that nothing was yet concrete.
