@@ -31,7 +31,7 @@ The state House approved the spending plan in a 180-20 vote Thursday afternoon.
 
 The state Senate followed, in a 47-3 vote, on Friday after <a href="https://www.spotlightpa.org/news/2022/07/pa-abortion-restrictions-constitutional-amendment-voter-id/">a contentious debate</a> on adding language to the state constitution declaring it does not grant any right relating to abortion and requiring voter ID to vote in all instances.
 
-In a statement, Wolf said the budget solidified “his commitment to education at all levels.”
+Wolf signed the budget Friday. In a statement, he said the plan solidified “his commitment to education at all levels.”
 
 “Since I took office, Pennsylvania’s students and families have been my top priority,” Wolf said. “We have made long overdue investments in the people of Pennsylvania, including better education for all, safer communities, and a brighter future.”
 
