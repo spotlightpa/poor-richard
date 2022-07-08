@@ -9,25 +9,11 @@
     <div class="column is-three-fifths">
       {{ if $params.showTitle }}
         <header class="block" data-ga-category="header">
-          {{ if $params.rubric }}
-            <a
-              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-              href="{{ $params.rubric.RelPermalink }}"
-              >{{ $params.kicker | default $params.rubric.Title }}</a
-            >
-          {{ else if $params.kicker }}
-            <p
-              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-            >
-              {{ $params.kicker }}
-            </p>
-          {{ else }}
-            <div class="is-clearfix">
-              <div class="is-pulled-right">
-                {{ partial "component/breadcrumbs.html" . }}
-              </div>
+          <div class="is-clearfix">
+            <div class="is-pulled-right">
+              {{ partial "component/breadcrumbs.html" . }}
             </div>
-          {{ end }}
+          </div>
 
 
           <h1 class="title is-2 is-size-3-touch is-spaced">
