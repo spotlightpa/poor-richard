@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-06-28-SPLPOL77.md"
+    "content/news/2022-07-08-SPLDOC.md"
   ],
   "sidebarPicks": [],
   "subfeatures": [
-    "content/news/2022-06-21-SPLDATABASE21.md",
-    "content/news/2022-06-27-SPLLEAS27.md"
+    "content/news/2022-03-18-SPLINDIE.md"
   ],
   "topSlots": [
+    "content/news/2022-06-21-SPLDATABASE21.md",
     "content/news/2022-07-01-SPLLATE.md",
-    "content/newsletters/palocal/2022-07-01-1000.md",
     "content/statecollege/2022-06-28-SPLPFAS29.md"
   ],
   "topper": []
