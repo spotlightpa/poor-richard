@@ -27,7 +27,7 @@
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": false,
+  "promo-active": true,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01h4/40r7/7.png",
@@ -108,11 +108,11 @@
   "support-link": "/donate/",
   "support-text": "We believe everyone in Pennsylvania should have access to trusted public-service and investigative journalism. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state.\n\n\u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nEach of our stories costs hundreds if not thousands of dollars to produce. If you learned something today, do your part and join our effort to rebuild reliable, high-quality local journalism in Pennsylvania by \u003cstrong\u003emaking a tax-deductible contribution of any amount.\u003c/strong\u003e We can't do this work without you.",
   "support-text-color": "#000000",
-  "topper-active": true,
-  "topper-bg-color": "#000000",
+  "topper-active": false,
+  "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hb/ykwn/special-report-84-.svg"
+    "https://files.data.spotlightpa.org/uploads/01h9/r400/special-report-83-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ff0000",
@@ -120,7 +120,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hb/ykyr/spotlight-donate-square-ad-set-500-x-250-px-1024-512-px-2-.svg"
+    "https://files.data.spotlightpa.org/uploads/01h9/r3zz/spring-2022-rectangles-1024-512-px-25-.svg"
   ],
   "topper-mobile-width": 1024
 }
