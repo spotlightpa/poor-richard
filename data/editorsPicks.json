@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-07-09-SPLELFUND.md"
+    "content/news/2022-07-12-SPLCHILD.md"
   ],
   "subfeatures": [
-    "content/news/2022-07-08-SPLBUDMAIN.md",
-    "content/news/2022-07-08-SPLSTIMPLAN.md"
+    "content/news/2022-07-08-SPLSTIMPLAN.md",
+    "content/news/2022-07-08-SPLBUDMAIN.md"
   ],
   "topSlots": [
     "content/news/2022-07-11-SPLLOOPHOLE711.md",
-    "content/news/2022-07-08-SPLABAM.md",
-    "content/news/2022-06-21-SPLDATABASE21.md"
+    "content/news/2022-07-09-SPLELFUND.md",
+    "content/news/2022-07-08-SPLABAM.md"
   ],
   "topper": []
 }
