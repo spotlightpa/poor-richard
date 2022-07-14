@@ -21,6 +21,10 @@ topics = ["Penn State", "Criminal Justice"]
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
 
+<i>UPDATE: Several hours after this story was published, Centre County President Judge Pamela Ruest ordered that copies of the search warrants, with only names and identification of the victims redacted, be made publicly available.</i>
+
+<i>Ruest did so in response to a motion by District Attorney Bernie Cantorna to dissolve the emergency ex parte preliminary injunction brought by Penn State.</i>
+
 STATE COLLEGE — At the request of Penn State, a Centre County judge has agreed to seal a case that includes search warrants involving crime victims who attend the university, shielding this information from the public and the press.
 
 Sealing an entire file is “rare” and “should not happen absent extraordinary circumstances,” said Paula Knudsen Burke, the Pennsylvania attorney for the nonprofit Reporters Committee for Freedom of the Press.
