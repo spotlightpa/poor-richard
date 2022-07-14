@@ -1,9 +1,9 @@
 +++
 arc-id = "NYEAE7XAYRFHBOCZAV2BHDZ52M"
 authors = ["Sarah Rafacz"]
-blurb = "A judge in Centre County has sealed an entire case at the request of Penn State, a rare move that potentially violates the right to open courts guaranteed by the state and U.S. Constitutions."
+blurb = "A judge in Centre County had sealed an entire case at the request of Penn State, a rare move that potentially violates the right to open courts guaranteed by the state and U.S. Constitutions."
 byline = "Sarah Rafacz of Spotlight PA State College"
-description = "A judge in Centre County has sealed an entire case at the request of Penn State, a rare move that potentially violates the right to open courts guaranteed by the state and U.S. Constitutions."
+description = "A judge in Centre County had sealed an entire case at the request of Penn State, a rare move that potentially violates the right to open courts guaranteed by the state and U.S. Constitutions."
 image = "external/3v4gxdwcyd8s92pj3v11pcvee0.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
 image-description = "The Centre County Courthouse on Nov. 1, 2018."
@@ -15,7 +15,7 @@ no-index = false
 published = 2022-07-14T14:00:00-04:00
 slug = "centre-county-court-penn-state-search-warrants"
 suppress-date = false
-title = "In ‘rare’ move, judge agrees to Penn State’s request to seal entire case concerning search warrants involving student victims"
+title = "Judge makes public search warrants involving Penn State student crime victims after university had them sealed"
 topics = ["Penn State", "Criminal Justice"]
 +++
 
