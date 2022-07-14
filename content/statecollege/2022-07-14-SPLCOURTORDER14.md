@@ -29,6 +29,8 @@ Burke filed a motion Thursday on behalf of Spotlight PA, the Centre Daily Times,
 
 “Precious little” is known about the matter, Burke said. The sealed case is captioned “search warrants involving crime victims who are students of the Pennsylvania State University.”
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
+
 Penn State went to court on June 23 to ask for emergency relief in an ex parte nature, meaning that the other officials involved in the case — respondents Centre County District Attorney Bernie Cantorna and Prothonotary and Clerk of Courts Jeremy Breon — were not immediately told. The following day, President Judge Pamela Ruest issued an order to seal the entire case.
 
 The Pennsylvania and U.S. Constitutions guarantee people the right to open courts, allowing them to both watch proceedings and read documents filed in court.
@@ -40,6 +42,8 @@ Burke added that if there is particularly private information contained in a cou
 Additionally, she said, under the Pennsylvania Rules of Criminal Procedure, there’s no role for a private actor like Penn State to try to shield search warrants. The university isn’t a law enforcement agency; nor is it a prosecutor.
 
 “We don’t have secret courts in the United States,” Burke said. “Powerful institutions don’t have the right to go into court and seal records to try to shield unflattering information about their institution. It’s up to citizens and the media to be watchdogs and to push back and say, ‘These court records are constitutionally guaranteed to be open. We have the right to see them.’”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 The matter has larger implications.
 
