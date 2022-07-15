@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-07-14-SPLCENTRE14.md"
+    "content/news/2022-07-15-SPLOPBAN.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-07-14-SPLCOURTORDER14.md",
-    "content/statecollege/2022-06-28-SPLPFAS29.md"
+    "content/news/2022-02-15-SPLMEDICATIONS15.md",
+    "content/news/2021-09-29-SPLINSIDE29.md"
   ],
   "topSlots": [
+    "content/statecollege/2022-07-14-SPLCENTRE14.md",
     "content/news/2022-07-12-SPLCHILD.md",
-    "content/news/2022-07-11-SPLLOOPHOLE711.md",
-    "content/news/2022-07-09-SPLELFUND.md"
+    "content/news/2022-07-11-SPLLOOPHOLE711.md"
   ],
   "topper": []
 }
