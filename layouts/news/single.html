@@ -74,7 +74,7 @@
       "times-svg" "@fontawesome/solid/xmark.svg"
       "twitter-svg" "@fontawesome/brands/twitter.svg"
     }}
-    {{ partialCached "header/svgs.html" $svgs "article" }}
+    {{ partial "header/svgs.html" $svgs }}
     {{ partial "header/ld-json.html" . }}
   </body>
 </html>
