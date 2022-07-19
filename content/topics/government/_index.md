@@ -1,0 +1,9 @@
++++
+image = "external/4x28x2w5m3x2amqddre34t3ptw.jpeg"
+image-description = "Pennsylvania salary data illustration"
+image-credit = "Daniel Fishel for Spotlight PA"
+image-size = "hidden"
+title = "Government"
+kicker = "Government"
+linktitle = "Local government news from Spotlight PA"
++++
