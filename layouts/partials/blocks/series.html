@@ -1,0 +1,64 @@
+{{ with .block }}
+  <section class="py-10 bg-g-3 anchor-section">
+    <div class="max-w-6xl px-5 mx-auto">
+      <h2
+        class="mb-10 text-4xl font-black leading-none uppercase md:text-6xl text-g-6"
+      >
+        {{ .title }}
+      </h2>
+      {{ with .series }}
+        {{ range $index, $series := . }}
+          {{ $even := modBool $index 2 }}
+          {{ $classes := dict
+            "block" "flex flex-wrap my-10"
+            "image" "w-full md:w-3/5 md:pr-10"
+            "text" "w-full md:w-2/5"
+          }}
+          {{ if not $even }}
+            {{ $classes = dict
+              "block" "flex flex-wrap my-10 md:flex-row-reverse"
+              "image" "w-full md:w-4/6 md:pl-10"
+              "text" "w-full md:w-2/6 md:text-right"
+            }}
+          {{ end }}
+          {{ with index site.Taxonomies.series (urlize .) }}
+            <div class="{{ $classes.block }}">
+              <div class="{{ $classes.image }}">
+                {{ $name := .Page.Param "image" }}
+                {{ $credit := .Page.Param "image-credit" }}
+                {{ $description := .Page.Param "image-description" }}
+                {{ $imgOpts := dict
+                  "filename" $name
+                  "credit" $credit
+                  "description" $description
+                  "widthRatio" 16
+                  "heightRatio" 9
+                  "sizeHint" "33vw"
+                }}
+                {{ partial "component/image-block.html" $imgOpts }}
+              </div>
+              <div class="{{ $classes.text }}">
+                <a href="{{ .Page.RelPermalink }}"
+                  ><h3 class="text-3xl font-black text-black">
+                    {{ .Page.Params.kicker | default .Page.Title }}
+                  </h3></a
+                >
+                <p class="mb-2">{{ .Page.Params.description }}</p>
+                <div class="text-2xl">{{ len . }} Articles</div>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with .cta }}
+        <div class="flex justify-center mt-12">
+          <a
+            class="px-4 py-2 text-xl font-bold text-center duration-300 border border-black lg:text-2xl hover:text-red hover:border-red"
+            href="{{ .url }}"
+            >{{ .copy }}</a
+          >
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

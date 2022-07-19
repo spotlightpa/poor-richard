@@ -24,7 +24,7 @@ Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.i
 
 {{<about/partner-logos>}}
 
-{{<about/right-link href="/contact/">}}Become a partner with Spotlight PA{{</about/right-link>}}
+{{<about/right-link href="/contact/">}}Become a partner with Spotlight PA{{</about/right-link>}}
 
 {{<about/content-header>}}Journalism powered by you{{</about/content-header>}}
 

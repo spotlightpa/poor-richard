@@ -1,0 +1,56 @@
+{{/* GetPageNav
+  Retrieves the navigation item for a given page, either as on-page links (for list page) or siblings.
+
+  @author @regisphilibert
+
+  @context Page (.)
+
+  @access private
+
+  @returns Slice
+  String (.url)
+  String (.name)
+  String (.id)
+  Boolean (.active)?
+*/}}
+{{ $items := slice }}
+{{ if eq .Kind "section" }}
+  {{ with .Params.blocks }}
+    {{ range . }}
+      {{ $id := urlize .title }}
+      {{ $items = $items | append (dict
+        "url" (printf "#%s" $id)
+        "name" .title
+        "id" $id
+        )
+      }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ with $parent := .Parent }}
+    {{ with .Pages }}
+      {{/* We start by adding the Parent (the about page) */}}
+      {{ $id := urlize $parent.Title }}
+      {{ $items = $items | append (dict
+        "url" (printf "%s#%s" $parent.RelPermalink "page-heading")
+        "name" $parent.LinkTitle
+        "active" (eq $ $parent)
+        "id" $id
+        )
+      }}
+      {{/* Then we add the silbings of the current page */}}
+      {{ range . }}
+        {{ $id := urlize .Title }}
+        {{ $items = $items | append (dict
+          "url" (printf "%s#%s" .RelPermalink "page-heading")
+          "name" .LinkTitle
+          "active" (eq $ .)
+          "id" $id
+          )
+        }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $items }}
