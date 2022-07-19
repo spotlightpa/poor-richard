@@ -1,0 +1,118 @@
+{{ define "footer-link" }}
+  <li class="mb-2 inline-block">
+    <a
+      href="{{ .URL }}"
+      class="{{ .Pre }} mr-3 inline-flex items-center"
+      {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
+    >
+      {{ with .Params.icon }}
+        <svg class="mr-1 h-4 w-4 fill-current">
+          <use xlink:href="{{ . }}"></use>
+        </svg>
+      {{ end }}
+      <span>{{ .Name }}</span>
+    </a>
+  </li>
+{{ end }}
+
+
+<section data-sf-campaign="701f4000000TVuIAAW" id="footer">
+  <div class="bg-black py-10 text-white md:pt-8 md:pb-24">
+    <div class="mx-auto max-w-5xl px-5">
+      <div class="flex flex-wrap items-center justify-center md:justify-start">
+        <div class="w-11/12 max-w-full md:mr-10 md:w-1/2">
+          <svg class="w-full fill-current">
+            <title>Home</title>
+            <desc>Spotlight PA logo</desc>
+            <use href="#banner-svg"></use>
+          </svg>
+        </div>
+        <div class="text-2xl font-bold text-white md:pl-10 md:text-3xl">
+          <a class="flex items-center justify-center" href="block">
+            <span class="flex-shrink-0 md:mr-4 md:mt-4">Donate Now</span>
+            <div class="w-10 flex-grow-0">
+              <svg class="w-full fill-current">
+                <title>Donate</title>
+                <desc>Spotlight PA Donate logo</desc>
+                <use href="#donate-svg"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto mb-24 max-w-4xl px-5 text-center text-lg font-bold opacity-40 md:text-2xl"
+    >
+      Spotlight PA relies on funding from foundations and readers like you who
+      are committed to accountability journalism that gets results.
+    </div>
+
+    <div class="mx-auto max-w-4xl px-5 text-2xl font-bold">
+      <h3 class="mb-2 text-2xl font-bold text-white md:text-3xl">
+        Sign up for Spotlight PA's newsletters
+      </h3>
+      <form class="flex-wrap items-center lg:flex">
+        <div class="mr-5 flex-1 py-6 lg:py-0">
+          <input
+            aria-label="Enter Your Email"
+            type="text"
+            class="w-full p-3"
+            placeholder="Enter Your Email"
+          />
+        </div>
+        <div class="flex flex-col text-sm md:mr-20">
+          <label class="pb-1" for="pa-local"
+            ><input checked class="mr-1" type="checkbox" value="PA Local" />PA
+            Local</label
+          >
+          <label class="pb-1" for="pa-local"
+            ><input checked class="mr-1" type="checkbox" value="PA Post" />PA
+            Post</label
+          >
+          <label class="pb-1" for="pa-local"
+            ><input
+              checked
+              class="mr-1"
+              type="checkbox"
+              value="The Investigator"
+            />The Investigator</label
+          >
+        </div>
+        <div class="w-full md:w-auto">
+          <button
+            class="mt-2 cursor-pointer rounded border border-black bg-yellow px-5 py-2 text-3xl font-bold text-black duration-300 hover:border-white hover:bg-black hover:text-white lg:mt-0"
+            style="background-color:#FEDE7F !important;"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="bg-beige">
+    <div class="mx-auto max-w-5xl px-5">
+      <div class="is-3 py-12" data-ga-category="follow">
+        <h3 class="has-text-weight-semibold is-uppercase mb-4">Follow Us</h3>
+        <ul>
+          {{ range .Site.Menus.social }}
+            {{ template "footer-link" . }}
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="flex items-center space-x-12">
+        <div class="inline-block py-2 text-xs ">
+          Spotlight PA &bull; 225 Market St Suite 502A &bull; Harrisburg PA
+          17101
+        </div>
+        <div class="inline-block text-xs ">
+          <a href="">privacy policy</a>
+          <a href="" class="mx-2">cookie policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

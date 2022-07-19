@@ -1,0 +1,129 @@
+{{ $all_topics := partialCached "func/GetSiteTopics" "GetSiteTopics" }}
+{{ $first_limit := 8 }}
+{{/* Defaults for first topics are first 8 */}}
+{{ $first_topics := first $first_limit $all_topics }}
+{{ with .Params.featured_topics }}
+  {{/* If page has .featured_topics set, we used those as "first" instead. */}}
+  {{ $first_topics = partialCached "func/GetTopicsByName" . . }}
+{{ end }}
+{{ $other_topics := "" }}
+{{ if not .Params.disable_hero }}
+  {{ $other_topics = symdiff $first_topics $all_topics }}
+{{ else }}
+  {{ $other_topics = $all_topics }}
+{{ end }}
+{{/* Next we need to split the remaining topics into 3 for the following "Trending Topics" module's three columns */}}
+{{ $other_col_limit := div (len $other_topics) 3 }}
+{{ $other_col_1 := $other_topics | first $other_col_limit | group "1" }}
+{{ $other_col_2 := $other_topics | first (mul $other_col_limit 2) | last $other_col_limit | group "2" }}
+{{ $other_col_3 := $other_topics | first (mul $other_col_limit 3) | last $other_col_limit | group "3" }}
+{{ $other_cols := slice $other_col_1 }}
+{{ with $other_col_2 }}
+  {{ $other_cols = $other_cols | append . }}
+{{ end }}
+{{ with $other_col_3 }}
+  {{ $other_cols = $other_cols | append . }}
+{{ end }}
+
+
+<nav
+  class="bg-black md:py-6"
+  id="#top"
+  data-ga-category="navbar"
+  data-sf-campaign="701f4000000TVu3AAG"
+  aria-label="main navigation"
+>
+  <div class="flex flex-wrap items-center w-full max-w-6xl px-3 mx-auto mb-6">
+    <div class="flex items-center w-full md:w-1/2">
+      <a
+        href="/"
+        class="flex-1 px-4 text-white duration-300 md:px-6 xl:px-2 hover:text-gray-500"
+        data-ga-category="logo"
+      >
+        <svg class="w-full fill-current">
+          <title>Home</title>
+          <desc>Spotlight PA logo</desc>
+          <use href="#banner-svg"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div
+        class="relative flex-1 pl-4 pr-2 text-2xl leading-10 text-white lg:text-3xl lg:leading-9 md:pl-2 lg:mt-6 lg:pl-5"
+      >
+        Investigative and public service journalism for Pennsylvania
+      </div>
+    </div>
+  </div>
+  {{ if not .Params.disable_hero }}
+    <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
+      <div class="pl-4 text-base leading-normal text-gray-600 md:text-2xl">
+        {{ range $index, $v := $first_topics }}
+          {{ if $index }}|{{ end }}<a
+            href="{{ .Page.RelPermalink }}"
+            class="pl-1 text-white"
+            >{{ .Page.Title }}</a
+          >
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</nav>
+<div class="w-full py-12 bg-beige" x-transition x-show="catNav">
+  <div
+    class="grid w-full max-w-6xl grid-cols-2 gap-10 px-8 mx-auto font-bold lg:px-5 md:grid-cols-4"
+  >
+    {{ with .Params.featured_topics_entries }}
+      {{ range first 2 . }}
+        {{ with site.GetPage . }}
+          <div class="col-span-1">
+            {{ $name := .Param "image" }}
+            {{ $credit := .Param "image-credit" }}
+            {{ $description := .Param "image-description" }}
+            {{ $imgOpts := dict
+              "filename" $name
+              "credit" $credit
+              "description" $description
+              "widthRatio" 16
+              "heightRatio" 9
+              "sizeHint" "20vw"
+            }}
+            {{ partial "component/image-block.html" $imgOpts }}
+            <p class="mt-1 text-sm">{{ .Title }}</p>
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+
+    <div class="col-span-2">
+      <div class="w-full mb-3 border-b border-gray-500">
+        {{ if not .Params.disable_hero }}More{{ end }} Topics
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        {{ range $other_cols }}
+          <ul>
+            {{ range .Pages }}
+              <li class="mb-1">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex w-full max-w-6xl px-5 mx-auto">
+  <div class="hidden w-full md:w-1/2 md:block"></div>
+  <div class="w-full md:w-1/2 md:pl-4">
+    <button
+      class="px-4 pt-1 pb-2 ml-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:text-gray-500 hover:shadow-lg"
+      x-on:click="catNav = ! catNav"
+      x-transition
+      :class="catNav ? 'bg-beige border-b border-gray-500 hover:text-black text-black' : ''"
+    >
+      Trending Topics
+    </button>
+  </div>
+</div>

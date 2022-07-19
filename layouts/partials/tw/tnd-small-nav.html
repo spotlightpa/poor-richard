@@ -1,0 +1,66 @@
+<nav
+  id="#top"
+  x-data="{ isOpen: false }"
+  data-ga-category="navbar"
+  data-sf-campaign="701f4000000TVu3AAG"
+  aria-label="main navigation"
+  class="mx-auto w-full max-w-6xl px-5"
+>
+  <div class="flex flex-wrap justify-between">
+    <div class="mr-5">
+      <a
+        class="inline-flex items-end rounded-b-lg bg-beige px-3 py-1 shadow duration-300 hover:bg-g-5 hover:bg-opacity-80 hover:text-black hover:shadow-md"
+        href="#"
+      >
+        <span class="mr-2 text-sm">Send a Tip</span>
+        {{/* <svg width="14" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.007 25.139 14 12.569.007 0 0 9.776l10 2.793-10 2.794.007 9.776Z" fill="#000"/></svg> */}}
+        <svg
+          width="12pt"
+          height="12pt"
+          version="1.1"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m100 50-100-42.527 6.3203 34.48 35.059 8.0469-35.059 8.0469-6.3203 34.48z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="flex flex-wrap items-center py-7 lg:justify-end">
+      {{ range site.Menus.main }}
+        <a
+          class="mb-2 inline-block pr-4 text-black hover:text-black hover:underline lg:pl-4"
+          data-ga-category="item"
+          href="{{ .URL }}"
+          >{{ .Name }}</a
+        >
+      {{ end }}
+      <a
+        href="/search/"
+        class="mb-2 inline-block cursor-pointer px-4 text-black hover:text-opacity-80"
+        data-ga-category="search"
+        :data-ga-action="'modal:search:open'"
+        x-data
+        @click.prevent="$dispatch('modal:search:open')"
+      >
+        <svg class="site-nav:svg-icon">
+          <use href="#search-svg"></use>
+        </svg>
+      </a>
+      <a
+        data-ga-category="donate"
+        class="mb-2 ml-6 inline-block max-w-xs self-center rounded-md bg-red px-4 py-2 leading-none text-white duration-300 hover:bg-black hover:text-white sm:flex"
+        href="/donate"
+        >Donate</a
+      >
+    </div>
+  </div>
+</nav>
+<div
+  x-data
+  x-intersect.once="$report({ target: $el })"
+  data-ga-action="view:nav"
+></div>

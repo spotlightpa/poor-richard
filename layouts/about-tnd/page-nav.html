@@ -1,0 +1,56 @@
+<div id="page-heading" class="max-w-6xl px-5 pt-12 mx-auto">
+  <h1 class="mb-2 text-4xl font-bold leading-tight text-black lg:text-5xl">
+    {{ .Title }}
+  </h1>
+  <div class="flex flex-wrap md:flex-nowrap">
+    <div class="pb-2 text-lg text-gray-900 lg:pr-10 lg:text-2xl">
+      {{ .Description }}
+    </div>
+    <div class="flex justify-end w-auto mt-5 md:w-64 md:mt-0">
+      <a
+        class="self-center inline-block px-3 py-1 text-xl text-center text-white rounded w-44 bg-red support-hide-when-sticky"
+        href="/donate/"
+        >Support Us!</a
+      >
+    </div>
+  </div>
+</div>
+{{ with partial "func/GetPageNav" $ }}
+  {{ $active_classes := "bg-black text-white" }}
+  <div class="sticky z-10 bg-white sticky-nav">
+    <div class="flex flex-wrap items-start max-w-6xl px-5 pt-5 mx-auto">
+      <span class="logo-show-when-sticky">
+        <svg class="flex self-center w-full h-5 fill-current">
+          <title>Home</title>
+          <desc>Spotlight PA logo</desc>
+          <use href="#banner-svg"></use>
+        </svg>
+      </span>
+      {{ range . }}
+        <a
+          :class="aboutActive == '{{ .id }}' ? '{{ $active_classes }}' : '' "
+          class="rounded px-2 lg:px-4 py-2 mr-4 text-sm lg:text-base lg:mr-5 mb-2 lg:mb-0 w-2/5 lg:w-auto leading-4 border border-black hover:text-red hover:border-red {{ if .active }}
+            {{ $active_classes }}
+          {{ end }}"
+          href="{{ .url }}"
+          >{{ .name }}</a
+        >
+      {{ end }}
+      <div class="flex justify-end flex-1 mb-5">
+        <a
+          class="self-center px-4 py-2 mb-2 mr-5 text-white delay-75 rounded lg:mb-0 support-show-when-sticky bg-red"
+          href="/donate/"
+          >Support Us!</a
+        >
+      </div>
+    </div>
+  </div>
+  <script>
+    const el = document.querySelector(".sticky-nav");
+    const observer = new IntersectionObserver(
+      ([e]) => e.target.classList.toggle("is-sticky", e.intersectionRatio < 1),
+      { threshold: [1] }
+    );
+    observer.observe(el);
+  </script>
+{{ end }}

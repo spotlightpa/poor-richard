@@ -1,0 +1,36 @@
+<div
+  x-data="{
+  aboutActive: ''
+}"
+>
+  {{ .Render "hero" }}
+  {{ .Render "page-nav" }}
+  {{ with .Content }}
+    <div class="block max-w-6xl px-5 mx-auto my-8" data-ga-category="content">
+      <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+      <div
+        x-data
+        x-intersect.once="$report({ target: $el })"
+        data-ga-action="view:content-start"
+      ></div>
+      <div class="text-lg content" data-sf-campaign="701f4000000TVuXAAW">
+        {{ . }}
+      </div>
+      <div
+        x-data
+        x-intersect.once="$report({ target: $el })"
+        data-ga-action="view:content-finish"
+      ></div>
+    </div>
+  {{ end }}
+  {{ range $i, $blocks := .Params.blocks }}
+    {{ $id := urlize .title }}
+    <div
+      id="{{ $id }}"
+      x-intersect.half="aboutActive = '{{ $id }}'"
+      class="scroll-mt-20{{ if eq $i 0 }}pt-8{{ end }}"
+    >
+      {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+    </div>
+  {{ end }}
+</div>

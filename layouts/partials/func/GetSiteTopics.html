@@ -1,0 +1,17 @@
+{{/* GetSiteTopics
+  Retrieves all the "Topics" taxonomy terms as pages
+
+  @author @regisphilibert
+
+  @context Any (.)
+
+  @access private
+
+  @returns Slice of Pages
+*/}}
+{{ $topics := slice }}
+{{ range site.Taxonomies.topics }}
+  {{ $topics = $topics | append .Page }}
+{{ end }}
+
+{{ return $topics }}
