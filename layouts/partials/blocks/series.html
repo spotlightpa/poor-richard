@@ -31,11 +31,12 @@
                   "filename" $name
                   "credit" $credit
                   "description" $description
+                  "widths" (slice 128 256 384 512 1280)
                   "widthRatio" 16
                   "heightRatio" 9
                   "sizeHint" "33vw"
                 }}
-                {{ partial "component/image-block.html" $imgOpts }}
+                {{ partial "tw/image-block.html" $imgOpts }}
               </div>
               <div class="{{ $classes.text }}">
                 <a href="{{ .Page.RelPermalink }}"

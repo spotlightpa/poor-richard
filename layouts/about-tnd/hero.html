@@ -84,12 +84,15 @@
               "filename" $name
               "credit" $credit
               "description" $description
+              "widths" (slice 128 256 384 512 1280)
               "widthRatio" 16
               "heightRatio" 9
               "sizeHint" "20vw"
+              "link" .RelPermalink
+              "figClass" ""
             }}
-            {{ partial "component/image-block.html" $imgOpts }}
-            <p class="mt-1 text-sm">{{ .Title }}</p>
+            {{ partial "tw/image-block.html" $imgOpts }}
+            <a href="{{ .RelPermalink }}" class="block mt-1 text-sm leading-tight">{{ .LinkTitle }}</a>
           </div>
         {{ end }}
       {{ end }}
