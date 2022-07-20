@@ -33,6 +33,7 @@ link = "/about/faq/"
 name = "FAQ"
 [[blocks]]
 layout = "links"
+title = "About Us"
 [[blocks]]
 layout = "series"
 title = "Impact & Awards"
