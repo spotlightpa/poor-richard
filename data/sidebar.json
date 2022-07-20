@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "backgroundColor": "#c7e8f1",
+      "label": "state college bureau",
+      "labelColor": "#000000",
+      "linkColor": "#000000",
+      "page": "content/statecollege/2022-07-14-SPLCOURTORDER14.md"
+    },
+    {
       "backgroundColor": "#5c0b75",
       "label": "upcoming event",
       "labelColor": "#ffffff",
