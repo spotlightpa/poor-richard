@@ -1,0 +1,11 @@
+<!-- header tags that are the same on all pages -->
+{{ partial "header/css-bulma.html" . }}
+
+
+<link
+  rel="modulepreload"
+  href="{{ partialCached `helper/get-enhancements` . }}"
+/>
+
+{{ partial "header/feeds.html" . }}
+{{ partial "header/favicons.html" . }}

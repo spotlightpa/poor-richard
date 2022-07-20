@@ -10,7 +10,9 @@
       <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
     {{- end -}}
 
-    {{ partialCached "header/static.html" . }}
+    {{ block "static-head" . }}
+      {{ partialCached "header/static-bulma.html" . }}
+    {{ end }}
     {{ partial "header/google-analytics-meta.html" . }}
 
 
