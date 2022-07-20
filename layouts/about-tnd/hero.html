@@ -37,7 +37,7 @@
     <div class="flex items-center w-full md:w-1/2">
       <a
         href="/"
-        class="flex-1 px-4 text-white duration-300 md:px-6 xl:px-2 hover:text-gray-500"
+        class="flex-1 px-4 text-white duration-300 md:px-6 xl:px-2 hover:text-yellow"
         data-ga-category="logo"
       >
         <svg class="w-full fill-current">
@@ -57,7 +57,7 @@
   </div>
   {{ if not .Params.disable_hero }}
     <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
-      <div class="pl-4 text-base leading-normal text-gray-600 md:text-2xl">
+      <div class="pl-4 text-base leading-normal text-g-6 md:text-2xl">
         {{ range $index, $v := $first_topics }}
           {{ if $index }}|{{ end }}<a
             href="{{ .Page.RelPermalink }}"
@@ -100,7 +100,7 @@
 
 
     <div class="col-span-2">
-      <div class="w-full mb-3 border-b border-gray-500">
+      <div class="w-full mb-3 border-b border-g-6">
         {{ if not .Params.disable_hero }}More{{ end }} Topics
       </div>
       <div class="grid grid-cols-3 gap-4">
@@ -121,10 +121,10 @@
   <div class="hidden w-full md:w-1/2 md:block"></div>
   <div class="w-full md:w-1/2 md:pl-4">
     <button
-      class="px-4 pt-1 pb-2 ml-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:text-gray-500 hover:shadow-lg"
+      class="px-4 pt-1 pb-2 ml-2 text-sm text-white transition-all bg-black rounded-b-lg shadow hover:text-g-5 hover:shadow-lg"
       x-on:click="catNav = ! catNav"
       x-transition
-      :class="catNav ? 'bg-beige border-b border-gray-500 hover:text-black text-black' : ''"
+      :class="catNav ? 'bg-beige border-b border-g-5 hover:text-black text-black' : ''"
     >
       Trending Topics
     </button>
