@@ -29,10 +29,10 @@ Our tip line can be reached at any time by phone or text message. Leave a detail
 
 Snail mail remains one of the most secure ways of sending us information.
 
-**Address:**\
-Spotlight PA\
-225 Market St., Suite 502A\
-Harrisburg, PA 17101
+**Address:**<br>
+Spotlight PA<br>
+228 Walnut St., #11728<br>
+Harrisburg, PA 17108-1728
 
 ## Signal
 

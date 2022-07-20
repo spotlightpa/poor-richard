@@ -50,7 +50,8 @@ url = "/about/faq/"
 
 **Q: Where is Spotlight PA based?**
 
-**A:** Our office in Harrisburg is located at 225 Market St., Suite 502A, Harrisburg, PA 17101. We are currently remote because of the ongoing coronavirus pandemic.
+**A:** Our office in Harrisburg is located at 228 Walnut St., #11728
+Harrisburg, PA 17108-1728. We are currently remote because of the ongoing coronavirus pandemic.
 
 **Q: Where does Spotlight PA’s work appear?**
 
