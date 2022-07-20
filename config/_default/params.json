@@ -1,9 +1,9 @@
 {
-  "banner": "\u003cstrong\u003eRead the latest from our first-ever regional bureau in State College  » \u003c/strong\u003e",
+  "banner": "\u003cstrong\u003eRead the latest news from our first-ever regional bureau in State College  » \u003c/strong\u003e",
   "banner-active": true,
-  "banner-bg-color": "#0a92e6",
+  "banner-bg-color": "#c7e8f1",
   "banner-link": "/statecollege",
-  "banner-text-color": "#ffffff",
+  "banner-text-color": "#000000",
   "footer-promo-description": "Your complete guide to Pennsylvania's top local news, amazing people, great places, and delicious food, all from Spotlight PA. Sign up for one of our free daily or weekly newsletters.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
