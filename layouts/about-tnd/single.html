@@ -17,3 +17,7 @@
 {{ define "footer" }}
   {{ partial "tw/tnd-footer.html" . }}
 {{ end }}
+
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
