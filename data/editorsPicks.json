@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-07-18-SPLEITC.md"
+    "content/news/2022-07-21-SPLRTK21.md"
   ],
   "subfeatures": [
-    "content/news/2022-01-25-SPLCREDIT26.md"
+    "content/news/2022-06-21-SPLDATABASE21.md",
+    "content/news/2022-03-21-SPLRECORDS21.md"
   ],
   "topSlots": [
+    "content/news/2022-07-18-SPLEITC.md",
     "content/news/2022-07-19-SPLBUDGET726.md",
-    "content/news/2022-07-15-SPLOPBAN.md",
-    "content/newsletters/palocal/2022-07-15-1004.md"
+    "content/news/2022-07-15-SPLOPBAN.md"
   ],
   "topper": []
 }
