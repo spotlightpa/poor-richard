@@ -1,12 +1,11 @@
-{{ define "promo" }}
-  <!-- noop -->
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
-{{ define "topper" }}
-  <!-- noop -->
-{{ end }}
-
-{{ define "nav" }}
+{{ define "header" }}
+  {{ if .Param "banner-active" }}
+    {{ partialCached "tw/banner.html" . }}
+  {{ end }}
   {{ partial "tw/tnd-small-nav.html" . }}
 {{ end }}
 
@@ -16,8 +15,4 @@
 
 {{ define "footer" }}
   {{ partial "tw/tnd-footer.html" . }}
-{{ end }}
-
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
