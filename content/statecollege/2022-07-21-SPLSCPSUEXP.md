@@ -55,7 +55,7 @@ We heard in numerous community listening sessions that you want us here, in the 
 
 That’s what we plan to provide on this story and every story we publish.
 
-Massey is diligently working on getting answers about what happened, and a detailed examination of the case is forthcoming. But we know that journalists have an immense responsibility to get the story right, especially when it’s highly sensitive.
+Massey is diligently working on getting answers about what happened, and a detailed examination of the case is forthcoming. But we know that journalists have an immense responsibility to get the story right, especially when it’s highly sensitive. We understand the importance of getting breaking news to the community and respect our local partners, like the Centre Daily Times, who make those decisions on a daily basis. Our decision is not a commentary or criticism of our partner newsrooms that chose to publish, but rather an explanation of our thought process and news judgment at Spotlight PA.
 
 You can send tips or questions about the case to Massey at <a href="mailto:wmassey@spotlightpa.org">wmassey@spotlightpa.org</a> or 445-236-0562.
 
