@@ -15,6 +15,11 @@ to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=ce
 code = 302
 
 [[redirects]]
+from = "/statecollege/donate/"
+to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pUYQAY "
+code = 302
+
+[[redirects]]
 from = "/almanack/"
 to = "https://almanack.data.spotlightpa.org"
 code = 302
