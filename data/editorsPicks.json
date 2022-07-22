@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-07-21-SPLRTK21.md"
+    "content/news/2022-07-22-SPLTRUST.md"
   ],
   "subfeatures": [
-    "content/news/2022-06-21-SPLDATABASE21.md",
-    "content/news/2022-03-21-SPLRECORDS21.md"
+    "content/news/2021-07-09-SPLUNEMPLOYMENT10.md",
+    "content/news/2022-07-19-SPLBUDGET726.md"
   ],
   "topSlots": [
+    "content/news/2022-07-21-SPLRTK21.md",
     "content/news/2022-07-18-SPLEITC.md",
-    "content/news/2022-07-19-SPLBUDGET726.md",
     "content/statecollege/2022-07-21-SPLSCPSUEXP.md"
   ],
   "topper": []
