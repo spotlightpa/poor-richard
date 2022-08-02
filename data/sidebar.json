@@ -8,13 +8,6 @@
       "page": "content/statecollege/2022-07-14-SPLCOURTORDER14.md"
     },
     {
-      "backgroundColor": "#5c0b75",
-      "label": "upcoming event",
-      "labelColor": "#ffffff",
-      "linkColor": "#ffffff",
-      "page": "content/news/2022-07-19-SPLBUDGET726.md"
-    },
-    {
       "backgroundColor": "#f5f5f5",
       "label": "AMENDMENT  TRACKER",
       "labelColor": "#000000",
@@ -41,6 +34,13 @@
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
       "page": "content/news/2022-05-26-SPLADVERTISING26.md"
+    },
+    {
+      "backgroundColor": "#5c0b75",
+      "label": "upcoming event",
+      "labelColor": "#ffffff",
+      "linkColor": "#ffffff",
+      "page": "content/newsletters/talkofthetown/2022-08-02-1129.md"
     }
   ]
 }
