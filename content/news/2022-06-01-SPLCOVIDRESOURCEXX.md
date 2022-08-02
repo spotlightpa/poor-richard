@@ -2,9 +2,9 @@
 aliases = ["/about/coronavirus-dashboard-faq/", "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"]
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
 authors = ["Jamie Martines"]
-blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
+blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on second boosters ahead of fall."
 byline = "Jamie Martines of Spotlight PA"
-description = "Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
+description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on second boosters ahead of fall."
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-description = "Pa. COVID updates: Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
@@ -27,9 +27,9 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of July 1, 2022.
+Information on this page is current as of August 1, 2022.
 
-If you have a story idea or tip related to the pandemic response, please contact reporter <a href="mailto:jamie@spotlightpa.org" target="_blank">Jamie Martines</a>.
+If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
 ## Where can I find data about cases, hospitalizations, and other key data points?
 
@@ -47,13 +47,23 @@ The following pages provide data related to testing, case counts, and hospitaliz
 
 <a href="https://www.nytimes.com/interactive/2021/us/covid-cases.html">The New York Times</a>: Pulls data from a variety of federal, state, and local sources and regularly adjusts for anomalies in the data when calculating averages. Explore data by case counts, hospitalizations, and deaths by state, county, and metro area.
 
-## Where can I get a free COVID vaccine or booster shot?
+## Am I eligible for a vaccine or boosters?
 
-Anyone 6 months of age and older is eligible for a COVID vaccine. Anyone 5 years of age and older should get a booster shot, according to the CDC.
+The CDC has determined eligibility for <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html">vaccines</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html">boosters</a> to be the following:
+
+<b>Primary vaccine:</b> Anyone 6 months of age and older.
+
+<b>First booster:</b> Anyone ages 5 years of age and older.
+
+<b>Second booster:</b> Anyone over the age of 50, or older than 12 with certain health conditions.
+
+Federal authorities <a href="https://www.nytimes.com/2022/07/28/us/politics/covid-booster-shots.html">are debating</a> when to open up eligibility for second booster shots to other age groups, and are considering expanding those recommendations when updated boosters are available in the fall.
 
 The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?s_cid=11747:cdc%20up%20to%20date%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY22">provides resources</a> on how to pick a vaccine or booster, guidance based on age or risk level, and answers to other frequently asked questions on COVID vaccines.
 
-Most retail pharmacies offer vaccines and boosters. Many do not require an appointment, and all COVID vaccines are <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/no-cost.html?s_cid=10473:are%20covid%2019%20vaccines%20free:sem.ga:p:RG:GM:gen:PTN:FY21">free, regardless of insurance or immigration status</a>. 
+## Where can I get a free COVID vaccine or booster shot?
+
+Most retail pharmacies offer vaccines and boosters. Many do not require an appointment, and all COVID vaccines are <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/no-cost.html?s_cid=10473:are%20covid%2019%20vaccines%20free:sem.ga:p:RG:GM:gen:PTN:FY21">free, regardless of insurance or immigration status</a>.
 
 You can find locations offering vaccines near you by entering your ZIP code at <a href="http://www.vaccines.gov/">www.vaccines.gov</a>.
 
@@ -61,22 +71,22 @@ You can find locations offering vaccines near you by entering your ZIP code at <
 
 For example, some retail pharmacies like Rite Aid and Walmart will only administer vaccines to children over the age of 3. Others have specific policies for scheduling appointments and vaccinating young children, so it’s best to check with the provider before arriving.
 
-## What should I do if I lose my vaccine card?
-
-If you lost your vaccine card, <a href="https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx">the Pennsylvania Department of Health can help</a> you get a replacement.
-
 ## How do I find a COVID test?
 
 Most retail pharmacies carry at-home COVID tests. As of May 17, households may also order eight more free rapid tests from the federal government <a href="https://special.usps.com/testkits">through the U.S. Postal Service website</a>.
 
 If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital.
 
-Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs a <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">rotating schedule</a> of public testing sites.
+Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in seven counties</a> that, as of mid-July, offer both PCR tests and rapid antigen tests.
+
+## What should I do if I lose my vaccine card?
+
+If you lost your vaccine card, <a href="https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx">the Pennsylvania Department of Health can help</a> you get a replacement.
 
 ## Are there still statewide COVID mandates?
 
 Statewide COVID mitigation measures <a href="https://www.pa.gov/guides/responding-to-covid-19/#COVIDMitigationinPennsylvania">have been lifted in Pennsylvania</a>.
 
-Counties and municipalities may implement stricter requirements. Businesses, performance venues, restaurants, or <a href="https://www.inquirer.com/news/philadelphia-school-district-mask-covid-20220520.html">schools</a> may also set their own COVID rules on masking, capacity limits, or proof of vaccination.
+Counties and municipalities may implement stricter requirements. Businesses, performance venues, restaurants, or schools may also set their own COVID rules on masking, capacity limits, or proof of vaccination.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
