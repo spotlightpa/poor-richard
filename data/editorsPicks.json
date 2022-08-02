@@ -1,14 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2022-07-28-SPLBLOCK.md"
+    "content/news/2022-08-02-SPLRULING.md"
   ],
   "subfeatures": [
-    "content/news/2022-07-08-SPLABAM.md",
-    "content/news/2022-01-26-SPLTRACK.md"
+    "content/news/2022-05-24-SPLBAEXPL.md"
   ],
   "topSlots": [
+    "content/news/2022-07-28-SPLBLOCK.md",
     "content/statecollege/2022-08-01-SPLTALK812.md",
-    "content/newsletters/palocal/2022-07-29-1000.md",
     "content/news/2022-07-25-SPLWOLFPITT.md"
   ],
   "topper": []
