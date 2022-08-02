@@ -23,9 +23,11 @@ topics = ["Elections"]
 
 HARRISBURG — The state Supreme Court has upheld Pennsylvania’s mail ballot law, preserving a popular voting method that passed the legislature with bipartisan support but was later challenged by Republican elected officials.
 
-In its 5-2 <a href="https://www.pacourts.us/assets/opinions/Supreme/out/J-18A-E-2022mo.pdf?cb=1">decision</a> on Tuesday, the justices rejected the GOP argument that the legislature did not have the power under the state constitution to allow Pennsylvanians to vote by mail without an excuse. The law, known as Act 77 and employed for the first time during the contentious 2020 presidential election, ushered in the most sweeping expansion of voting access in Pennsylvania in decades.
+In its 5-2 <a href="https://www.pacourts.us/assets/opinions/Supreme/out/J-18A-E-2022mo.pdf?cb=1">decision</a> released Tuesday, the justices rejected the GOP argument that the legislature did not have the power under the state constitution to allow Pennsylvanians to vote by mail without an excuse. The law, known as Act 77 and employed for the first time during the contentious 2020 presidential election, ushered in the most sweeping expansion of voting access in Pennsylvania in decades.
 
-A lower appellate court earlier this year had sided with Republicans, saying that permitting no-excuse mail voting required amending the state constitution, a lengthy process in which voters decide the matter through a ballot question.
+“We reiterate that our General Assembly is endowed with great legislative power, subject only to express restrictions in the constitution,” Justice Christine Donohue wrote in the majority opinion.
+
+A lower appellate court earlier this year had sided with Republicans, <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-mail-voting-unconstitutional-supreme-court-appeal/" target="_blank">saying that permitting no-excuse mail voting required amending the state constitution</a>, a lengthy process in which voters decide the matter through a ballot question.
 
 <i>This is breaking news and will be updated.</i>
 
