@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "backgroundColor": "#5c0b75",
+      "label": "Editor’s Pick",
+      "labelColor": "#ffffff",
+      "linkColor": "#ffffff",
+      "page": "content/statecollege/2022-08-01-SPLTALK812.md"
+    },
+    {
       "backgroundColor": "#c7e8f1",
       "label": "state college bureau",
       "labelColor": "#000000",
@@ -34,13 +41,6 @@
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
       "page": "content/news/2022-05-26-SPLADVERTISING26.md"
-    },
-    {
-      "backgroundColor": "#5c0b75",
-      "label": "upcoming event",
-      "labelColor": "#ffffff",
-      "linkColor": "#ffffff",
-      "page": "content/newsletters/talkofthetown/2022-08-02-1129.md"
     }
   ]
 }
