@@ -1,8 +1,8 @@
 +++
 arc-id = "JZABRY6DAFCSFET4OKKMHAEYH4"
-authors = ["Angela Couloumbis"]
+authors = ["Angela Couloumbis", "Stephen Caruso"]
 blurb = "A lower appellate court earlier this year sided with Republican lawmakers, saying that permitting no-excuse mail voting required amending the state constitution."
-byline = "Angela Couloumbis of Spotlight PA"
+byline = "Stephen Caruso of Spotlight PA and Angela Couloumbis of Spotlight PA"
 description = "A lower appellate court earlier this year sided with Republican lawmakers, saying that permitting no-excuse mail voting required amending the state constitution."
 image = "external/gvkzb41ac2p9v37bd2nbqnwbf0.jpeg"
 image-credit = "Matt Smith / For Spotlight PA "
