@@ -271,6 +271,51 @@
         "Category": "$100-$499",
         "Name": "Deborah Wolfe",
         "Sort": "Wolfe, Deborah"
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Donald Young",
+        "Sort": "Young Donald "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Helene Dow",
+        "Sort": "Dow Helene "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Laura and Mark Morrisson",
+        "Sort": "Morrisson Laura and Mark "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Leslie Schlessinger",
+        "Sort": "Schlessinger Leslie "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Melissa Egbertson",
+        "Sort": "Egbertson Melissa "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Stephen Seidman",
+        "Sort": "Seidman Stephen "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Sue Sargo",
+        "Sort": "Sargo Sue "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "Susan Venegoni",
+        "Sort": "Venegoni Susan "
+      },
+      {
+        "Category": "$100-$499",
+        "Name": "William Ewing",
+        "Sort": "Ewing William "
       }
     ]
   },
@@ -412,56 +457,6 @@
         "Name": "Josh Portney",
         "Sort": "Portney, Josh"
       },
-      {
-        "Category": "$100-$499",
-        "Name": "Donald Young",
-        "Sort": "Young Donald "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Helene Dow",
-        "Sort": "Dow Helene "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Laura and Mark Morrisson",
-        "Sort": "Morrisson Laura and Mark "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Leslie Schlessinger",
-        "Sort": "Schlessinger Leslie "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Melissa Egbertson",
-        "Sort": "Egbertson Melissa "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Stephen Seidman",
-        "Sort": "Seidman Stephen "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Sue Sargo",
-        "Sort": "Sargo Sue "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "Susan Venegoni",
-        "Sort": "Venegoni Susan "
-      },
-      {
-        "Category": "$100-$499",
-        "Name": "William Ewing",
-        "Sort": "Ewing William "
-      }
-    ]
-  },
-  {
-    "Category": "Under $100",
-    "Items": [
       {
         "Category": "Under $100",
         "Name": "Aaron Songer",
