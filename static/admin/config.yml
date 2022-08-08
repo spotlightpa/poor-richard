@@ -325,14 +325,17 @@ collections:
         name: beat
         widget: string
         hint: "Label before a reporter's name on staff page"
+        required: false
       - label: Focus
         name: focusHed
         widget: string
         hint: "Short label for the reporter's focus area"
+        required: false
       - label: Focus description
         name: focus
         widget: markdown
         hint: "Longer explanation of focus area"
+        required: false
       - label: Bio
         name: content
         widget: markdown
