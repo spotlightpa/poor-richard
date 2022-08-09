@@ -3,13 +3,7 @@ firstName = "Nicholas"
 lastName = "Beiling"
 title = "Membership Manager"
 email = "nick@spotlightpa.org"
-twitter = ""
-active = true
-content = "Nicholas joined Spotlight PA in August 2022 as the organization's first Membership Manager. He was recently a staff member for a New York State Senator in the Buffalo, NY area, and he also previously worked on multiple political campaigns, assisting with fundraising and organizing in Upstate NY. Nicholas is based in State College and will work closely with Spotlight PA's development team to lead our grassroots donation program both locally and statewide."
+twitter = "NicholasBeiling"
 headshot = "2022/08/01hf-2npz-qget-a3x3.jpeg"
-
-
-
-
-
-
+content = "Nicholas joined Spotlight PA in August 2022 as the organization's first Membership Manager. He was recently a staff member for a New York State Senator in the Buffalo, NY area, and he also previously worked on multiple political campaigns, assisting with fundraising and organizing in Upstate NY. Nicholas is based in State College and will work closely with Spotlight PA's development team to lead our grassroots donation program both locally and statewide."
+active = true
