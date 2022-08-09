@@ -348,34 +348,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.sticky-nav {
-  top: -1px;
-}
-
-.logo-show-when-sticky {
-  @apply w-0 mr-0 duration-200 border-none opacity-0;
-}
-
-.is-sticky .logo-show-when-sticky {
-  @apply md:mr-5 md:border md:border-black md:w-40 md:opacity-100 md:bg-black md:py-2 md:mb-5 md:text-white;
-}
-
-.support-show-when-sticky {
-  @apply opacity-0 pointer-events-none;
-}
-
-.is-sticky .support-show-when-sticky {
-  @apply md:pointer-events-auto md:opacity-100;
-}
-
-.support-hide-when-sticky {
-  @apply md:duration-100 md:opacity-100;
-}
-
-.is-sticky .support-hide-when-sticky {
-  @apply md:opacity-0;
-}
-
 .anchor-section {
   min-height: 65vh;
 }
