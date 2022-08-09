@@ -112,10 +112,5 @@
   {{ $trackerJS := resources.Get "js/esbuild/tracker.js" | js.Build $jsOpts }}
   {{ $trackerJS = $trackerJS | babel }}
   <!-- Hack to tell Hugo to build the partner tracker JS -->
-  {{ `<noscript>` | safeHTML }}
-
-  <script src="{{ $trackerJS.RelPermalink }}"></script>
-
-  {{ `</noscript>`
-  | safeHTML }}
+  <div data-tracker-src="{{ $trackerJS.RelPermalink }}"></div>
 {{ end }}

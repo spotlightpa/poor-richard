@@ -42,6 +42,8 @@
 {{ $json.Get "webpage" | jsonify | safeJS }}
 </script>
 
+<!-- -->
+
 {{ $socialURLs := slice }}
 {{ range .Site.Menus.social }}
   {{ $socialURLs = append .URL $socialURLs }}
@@ -55,9 +57,12 @@
 {{ $json.SetInMap "org" "sameAs" $socialURLs }}
 {{ $json.SetInMap "org" "url" .Site.BaseURL }}
 {{ $json.Get "location" | $json.SetInMap "org" "location" }}
+
 <script type="application/ld+json">
 {{ $json.Get "org" | jsonify | safeJS }}
 </script>
+
+<!-- -->
 
 {{ $itemlist := slice }}
 {{ range $i, $page := partialCached "helper/find-parents" . .RelPermalink }}

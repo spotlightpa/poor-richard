@@ -9,7 +9,8 @@
   {{ $js := resources.Get "js/esbuild/embed-frame.js" | js.Build $jsOpts }}
   {{ $js = $js | minify | fingerprint }}
 
-  <script src='{{ $js.RelPermalink }}' defer></script>
+
+  <script src="{{ $js.RelPermalink }}" defer></script>
   <style>
     body {
       min-height: unset;
