@@ -1,20 +1,7 @@
-{{ $images := slice }}
-{{ with $.Param "image" }}
-  {{ $images = $images | append . }}
-{{ end }}
-{{ with $.Param "images" }}
-  {{ $images = $images | append . }}
-{{ end }}
-
-
-{{ range first 1 $images }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 630 }}
+{{ $image := $.Param "image" }}
+{{ with $image }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 900 }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
-  <meta property="og:image" content="{{ $imgSrc }}" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  {{ $imgOpt = dict "filename" . "width" 1200 "height" 900 }}
-  {{ $imgSrc = partial "helper/imgproxy" $imgOpt }}
   <meta property="og:image" content="{{ $imgSrc }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="900" />
@@ -94,7 +81,7 @@
     <meta itemprop="dateModified" content="{{ .Lastmod.Format $ISO8601 | safeHTML }}" />
   {{ end }}
   <meta itemprop="wordCount" content="{{ .WordCount }}">
-  {{ range first 1 $images }}
+  {{ with $image }}
     {{ $imgOpt := dict "filename" . "width" 1000 "height" 800 }}
     {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
     <meta itemprop="image" content="{{ $imgSrc }}">
@@ -104,8 +91,8 @@
   <meta itemprop="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
 {{ end }}
 
-{{ with index $images 0 }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 600 }}
+{{ with $image }}
+  {{ $imgOpt := dict "filename" . "width" 1200 "height" 675 }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="{{ $imgSrc }}"/>
