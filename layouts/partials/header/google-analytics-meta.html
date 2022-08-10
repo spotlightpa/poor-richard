@@ -11,4 +11,6 @@
   data-ga-page-path="{{ $relink }}"
   data-ga-page-url="{{ $link }}"
 />
-<!-- todo: add no js tracking pixel -->
+<script>
+  window.dataLayer = [{ "gtm.start": new Date().getTime(), event: "gtm.js" }];
+</script>
