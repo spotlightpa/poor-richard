@@ -87,11 +87,14 @@
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
+  "sticky-image-description": "Support Spotlight PA and your gift will be doubled as part of our 2022 Week of Giving.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01h4/3ymc/spotlight-donate-square-ad-set-5-.png"
+    "https://files.data.spotlightpa.org/uploads/01hf/d2z9/16.png",
+    "https://files.data.spotlightpa.org/uploads/01hf/d2z9/17.png",
+    "https://files.data.spotlightpa.org/uploads/01hf/d2z9/18.png",
+    "https://files.data.spotlightpa.org/uploads/01hf/d2z8/15.png"
   ],
-  "sticky-link": "/newsletters",
+  "sticky-link": "/donate",
   "support-active": true,
   "support-bg-color": "#bbe0f7",
   "support-button-bg-color": "#ff0000",
