@@ -9,22 +9,17 @@
   <div class="flex flex-wrap justify-between">
     <div class="mr-5">
       <a
-        class="inline-flex items-end rounded-b-lg bg-beige px-3 py-1 shadow duration-300 hover:bg-g-5 hover:bg-opacity-80 hover:text-black hover:shadow-md"
-        href="#"
+        class="inline-flex items-center rounded-b-lg bg-beige px-3 py-1 shadow duration-300 hover:bg-g-5 hover:bg-opacity-80 hover:text-black hover:shadow-md"
+        href="/tips/"
       >
         <span class="mr-2 text-sm">Send a Tip</span>
-        {{/* <svg width="14" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.007 25.139 14 12.569.007 0 0 9.776l10 2.793-10 2.794.007 9.776Z" fill="#000"/></svg> */}}
         <svg
-          width="12pt"
-          height="12pt"
-          version="1.1"
+          class="w-3 h-3"
           viewBox="0 0 100 100"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="m100 50-100-42.527 6.3203 34.48 35.059 8.0469-35.059 8.0469-6.3203 34.48z"
-            fill-rule="evenodd"
-          />
+          <desc>Paper plane</desc>
+          <use href="#paper-plane-svg"></use>
         </svg>
       </a>
     </div>
@@ -40,7 +35,7 @@
       {{ end }}
       <a
         href="/search/"
-        class="mb-2 inline-block cursor-pointer px-4 text-black hover:text-opacity-80"
+        class="mb-2 inline-block cursor-pointer px-4 text-black hover:text-yellow"
         data-ga-category="search"
         :data-ga-action="'modal:search:open'"
         x-data
