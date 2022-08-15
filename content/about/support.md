@@ -1,7 +1,7 @@
 +++
 published = 2019-09-05T13:14:35.433Z
 title = "Transparency statement"
-description = "Our independent newsroom is grant-funded by community foundations and individuals committed to robust investigative reporting."
+description = "Spotlight PA is a project of the Lenfest Institute that combines the strength of Philadelphia Inquirer, PennLive, and many more partners."
 url = "/support/"
 +++
 Spotlight PA is a nonpartisan, independent newsroom paid for by grants from foundations and donations from individuals committed to robust investigative reporting. Now more than ever, the health of our state and democracy depends on strong accountability journalism. Our newsroom provides the time and resources necessary to do investigative work that drives change.
