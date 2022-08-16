@@ -34,11 +34,11 @@
     data-sf-campaign="701f4000000TVu3AAG"
     aria-label="main navigation"
   >
-    <div class="flex flex-wrap items-center w-full max-w-6xl px-3 mx-auto mb-6">
-      <div class="flex items-center w-full md:w-1/2">
+    <div class="mx-auto mb-6 flex w-full max-w-6xl flex-wrap items-center px-3">
+      <div class="flex w-full items-center md:w-1/2">
         <a
           href="/"
-          class="flex-1 px-4 text-white duration-300 md:px-6 xl:px-2 hover:text-yellow"
+          class="flex-1 px-4 text-white duration-300 hover:text-yellow md:px-6 xl:px-2"
           data-ga-category="logo"
         >
           <svg class="w-full fill-current">
@@ -50,14 +50,14 @@
       </div>
       <div class="w-full md:w-1/2">
         <div
-          class="relative flex-1 pl-4 pr-2 text-2xl leading-10 text-white lg:text-3xl lg:leading-9 md:pl-2 lg:mt-6 lg:pl-5"
+          class="relative flex-1 pl-4 pr-2 text-2xl leading-10 text-white md:pl-2 lg:mt-6 lg:pl-5 lg:text-3xl lg:leading-9"
         >
           Investigative and public service journalism for Pennsylvania
         </div>
       </div>
     </div>
     {{ if not .Params.disable_hero }}
-      <div class="w-full max-w-6xl px-3 pb-8 mx-auto lg:pb-4">
+      <div class="mx-auto w-full max-w-6xl px-3 pb-8 lg:pb-4">
         <div class="pl-4 text-base leading-normal text-g-6 md:text-2xl">
           {{ range $index, $v := $first_topics }}
             {{ if $index }}|{{ end }}<a
@@ -70,9 +70,9 @@
       </div>
     {{ end }}
   </nav>
-  <div class="w-full py-12 bg-beige" x-transition x-cloak x-show="isCatNavOpen">
+  <div class="w-full bg-beige py-12" x-transition x-cloak x-show="isCatNavOpen">
     <div
-      class="grid w-full max-w-6xl grid-cols-2 gap-10 px-8 mx-auto font-bold lg:px-5 md:grid-cols-4"
+      class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 font-bold md:grid-cols-4 lg:px-5"
     >
       {{ with .Params.featured_topics_entries }}
         {{ range first 2 . }}
@@ -95,7 +95,7 @@
               {{ partial "tw/image-block.html" $imgOpts }}
               <a
                 href="{{ .RelPermalink }}"
-                class="block mt-1 text-sm leading-tight"
+                class="mt-1 block text-sm leading-tight"
                 >{{ .LinkTitle }}</a
               >
             </div>
@@ -105,7 +105,7 @@
 
 
       <div class="col-span-2">
-        <div class="w-full mb-3 border-b border-g-6">
+        <div class="mb-3 w-full border-b border-g-6">
           {{ if not .Params.disable_hero }}More{{ end }} Topics
         </div>
         <div class="grid grid-cols-3 gap-4">
@@ -122,13 +122,13 @@
       </div>
     </div>
   </div>
-  <div class="flex w-full max-w-6xl px-5 mx-auto">
-    <div class="hidden w-full md:w-1/2 md:block"></div>
+  <div class="mx-auto flex w-full max-w-6xl px-5">
+    <div class="hidden w-full md:block md:w-1/2"></div>
     <div class="w-full md:w-1/2 md:pl-4">
       <button
         class="
-        px-4 pt-1 pb-2 ml-2 text-sm transition-all rounded-b-lg
-        bg-black text-white hover:text-g-5
+        ml-2 rounded-b-lg bg-black px-4 pt-1 pb-2 text-sm
+        text-white transition-all hover:text-g-5
       "
         @click="isCatNavOpen = ! isCatNavOpen"
         x-transition
