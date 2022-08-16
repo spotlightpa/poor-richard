@@ -362,3 +362,22 @@ html {
   }
   
 }
+
+/* Tailwind v2 does underline wrong. TODO: remove for v3. */
+@variants hover {
+  .underline-l {
+    text-decoration-line: underline;
+  }
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.decoration-yellow {
+  text-decoration-color: #ffcb05;
+}
