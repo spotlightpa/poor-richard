@@ -1,9 +1,9 @@
 +++
 arc-id = "N23VKBLSMRAM3OWB42AOFX4EFQ"
 authors = ["Colin Deppen"]
-blurb = "An app dedicated to promoting the squish and kill of the spotted lanterfly is waning in popularity in Pennsylvania, while gaining in states where the invasive species is newer. Are we losing our edge?"
+blurb = "An app dedicated to promoting the squish and kill of the spotted lanternfly is waning in popularity in Pennsylvania, while gaining in states where the invasive species is newer. Are we losing our edge?"
 byline = "Colin Deppen of Spotlight PA"
-description = "An app dedicated to promoting the squish and kill of the spotted lanterfly is waning in popularity in Pennsylvania, while gaining in states where the invasive species is newer. Are we losing our edge?"
+description = "An app dedicated to promoting the squish and kill of the spotted lanternfly is waning in popularity in Pennsylvania, while gaining in states where the invasive species is newer. Are we losing our edge?"
 image = "external/h345tr02vx46p1v2s2f91n9h7c.jpeg"
 image-credit = "ELIZABETH ROBERTSON / Philadelphia Inquirer"
 image-description = "Kill-on-sight orders for the spotted lanternfly from Pennsylvania officials were meant to curb the spread of the ecologically and economically threatening pest through altruistic violence."
