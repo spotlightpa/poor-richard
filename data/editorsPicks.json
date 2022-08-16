@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-08-15-SPLOVERTIME15.md"
+    "content/news/2022-08-16-SPLOPENHEAR.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-07-14-SPLCENTRE14.md"
+    "content/news/2022-04-25-SPLOPENPRIM.md"
   ],
   "topSlots": [
     "content/news/2022-08-16-SPLSQUASH.md",
-    "content/statecollege/2022-08-01-SPLTALK812.md",
-    "content/news/2022-08-05-SPLPRIV.md"
+    "content/statecollege/2022-08-15-SPLOVERTIME15.md",
+    "content/statecollege/2022-08-01-SPLTALK812.md"
   ],
   "topper": []
 }
