@@ -1,10 +1,10 @@
-{{ $context := $ }}
-{{ $output := partial "blocks/default.html" $ }}
+{{ $output := "" }}
 {{ with .block.layout }}
-  {{ $partial := printf "blocks/%s.html" . }}
-  {{ $template := printf "partials/%s" $partial }}
+  {{ $template := printf "partials/blocks/%s.html" . }}
   {{ if templates.Exists $template }}
-    {{ $output = partial $partial $ }}
+    {{ $output = partial $template $ }}
+  {{ else }}
+    {{ $output = partial "blocks/default.html" $ }}
   {{ end }}
 {{ end }}
 
