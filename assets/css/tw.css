@@ -375,6 +375,10 @@ html {
   text-underline-offset: 4px;
 }
 
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
 .decoration-yellow {
   text-decoration-color: #ffcb05;
 }

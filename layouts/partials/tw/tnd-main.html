@@ -29,7 +29,8 @@
     <div
       id="{{ $id }}"
       x-intersect.half="aboutActive = '{{ $id }}'"
-      class="scroll-mt-20{{ if eq $i 0 }}pt-8{{ end }}"
+      class="scroll-mt-20"
+      data-ga-category="blocks"
     >
       {{ partial "blocks/block" (dict "Page" $ "block" .) }}
     </div>
