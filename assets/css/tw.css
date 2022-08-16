@@ -12,9 +12,9 @@
   float: left;
   font-size: 4.25rem;
   line-height: 1;
-  padding-top: .25rem;
-  padding-right: .5rem;
-  padding-left: .25rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.25rem;
 }
 
 /*! purgecss start ignore */
@@ -143,7 +143,6 @@
   @apply line-through text-orange;
 }
 
-
 @responsive {
   .shape-outside {
     shape-outside: border-box;
@@ -199,7 +198,7 @@
   @apply mt-8;
 }
 
-.content-aside > * + * ,
+.content-aside > * + *,
 .content-aside ul > li + li,
 .content-aside ol > li + li {
   @apply mt-3;
@@ -227,7 +226,7 @@
 }
 
 .snap-x {
-  scroll-snap-type: x mandatory
+  scroll-snap-type: x mandatory;
 }
 
 .snap-center {
@@ -352,7 +351,6 @@ html {
   min-height: 65vh;
 }
 
-
 @media screen(lg) {
   .sideways-heading {
     @apply flex justify-end;
@@ -360,7 +358,6 @@ html {
     text-orientation: mixed;
     writing-mode: vertical-rl;
   }
-  
 }
 
 /* Tailwind v2 does underline wrong. TODO: remove for v3. */
