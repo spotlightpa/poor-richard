@@ -351,7 +351,7 @@ html {
   min-height: 65vh;
 }
 
-@media screen(lg) {
+@responsive {
   .sideways-heading {
     @apply flex justify-end;
     transform: rotate(180deg);
