@@ -1,8 +1,8 @@
 {{ define "tnd-footer-link" }}
-  <li class="mb-2 inline-block">
+  <li class="inline-flex">
     <a
       href="{{ .URL }}"
-      class="{{ .Pre }} mr-3 inline-flex items-center"
+      class="{{ .Pre }} inline-flex items-center hover:text-blue"
       {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
     >
       {{ with .Params.icon }}
@@ -27,9 +27,12 @@
             <use href="#banner-svg"></use>
           </svg>
         </div>
-        <div class="text-2xl font-bold text-white md:pl-10 md:text-3xl">
-          <a class="flex items-center justify-center" href="block">
-            <span class="flex-shrink-0 md:mr-4 md:mt-4">Donate Now</span>
+        <div class="text-2xl font-bold md:pl-10 md:text-3xl">
+          <a
+            class="flex items-center justify-center hover:text-yellow"
+            href="/donate/"
+          >
+            <span class="flex-shrink-0 md:mr-4 md:mt-2">Donate Now</span>
             <div class="w-10 flex-grow-0">
               <svg class="w-full fill-current">
                 <title>Donate</title>
@@ -50,40 +53,69 @@
     </div>
 
     <div class="mx-auto max-w-4xl px-5 text-2xl font-bold">
-      <h3 class="mb-2 text-2xl font-bold text-white md:text-3xl">
-        Sign up for Spotlight PA's newsletters
-      </h3>
-      <form class="flex-wrap items-center lg:flex">
+      {{ $id := partial "helper/new-id" $.Page }}
+      <label
+        for="{{ $id }}"
+        class="mb-2 text-2xl font-bold text-white md:text-3xl"
+      >
+        Sign up for our newsletters
+      </label>
+      <form
+        class="flex-wrap items-center lg:flex"
+        action="{{ site.Param `newsletters-action` }}"
+        method="post"
+        target="_blank"
+        data-ga-form="newsletters:multi"
+        data-ga-category="newsletter"
+      >
+        {{ partial "newsletter/hidden-input.html" . }}
         <div class="mr-5 flex-1 py-6 lg:py-0">
           <input
+            id="{{ $id }}"
             aria-label="Enter Your Email"
-            type="text"
-            class="w-full p-3"
+            type="email"
+            class="focus:outline-none block w-full appearance-none rounded p-3 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-darker focus:ring-2"
             placeholder="Enter Your Email"
           />
         </div>
-        <div class="flex flex-col text-sm md:mr-20">
-          <label class="pb-1" for="pa-local"
-            ><input checked class="mr-1" type="checkbox" value="PA Local" />PA
-            Local</label
-          >
-          <label class="pb-1" for="pa-local"
-            ><input checked class="mr-1" type="checkbox" value="PA Post" />PA
-            Post</label
-          >
-          <label class="pb-1" for="pa-local"
+        <div class="flex flex-col text-xl md:mr-20 lg:text-sm">
+          <label class="pb-1"
             ><input
               checked
               class="mr-1"
               type="checkbox"
-              value="The Investigator"
+              name="palocal"
+              value="1"
+              data-ga-button
+              data-ga-action="toggle-newsletter:palocal"
+            />PA Local</label
+          >
+          <label class="pb-1"
+            ><input
+              checked
+              class="mr-1"
+              type="checkbox"
+              name="papost"
+              value="1"
+              data-ga-button
+              data-ga-action="toggle-newsletter:papost"
+            />PA Post</label
+          >
+          <label class="pb-1"
+            ><input
+              checked
+              class="mr-1"
+              type="checkbox"
+              name="investigator"
+              value="1"
+              data-ga-button
+              data-ga-action="toggle-newsletter:investigator"
             />The Investigator</label
           >
         </div>
         <div class="w-full md:w-auto">
           <button
             class="mt-2 cursor-pointer rounded border border-black bg-yellow px-5 py-2 text-3xl font-bold text-black duration-300 hover:border-white hover:bg-black hover:text-white lg:mt-0"
-            style="background-color:#FEDE7F !important;"
           >
             Subscribe
           </button>
@@ -94,23 +126,31 @@
 
   <div class="bg-beige">
     <div class="mx-auto max-w-5xl px-5">
-      <div class="is-3 py-12" data-ga-category="follow">
-        <h3 class="has-text-weight-semibold is-uppercase mb-4">Follow Us</h3>
-        <ul>
+      <div class="py-12 text-lg" data-ga-category="follow">
+        <h3 class="mb-4 font-semibold uppercase">Follow Us</h3>
+        <ul class="flex flex-wrap items-center justify-around gap-8">
           {{ range .Site.Menus.social }}
             {{ template "tnd-footer-link" . }}
           {{ end }}
         </ul>
       </div>
 
-      <div class="flex items-center space-x-12">
+      <div class="items-center space-x-12 text-center md:flex md:text-left">
         <div class="inline-block py-2 text-xs ">
           &copy; {{ now.Format "2006" }} &bull; Spotlight PA &bull; 228 Walnut
           St., #11728 &bull; Harrisburg, PA 17108-1728
         </div>
-        <div class="inline-block text-xs ">
-          <a href="">privacy policy</a>
-          <a href="" class="mx-2">cookie policy</a>
+        <div class="inline-flex gap-2 text-xs">
+          <a
+            href="https://www.inquirer.com/about/terms_and_conditions/"
+            class="hover:underline"
+            >terms of use</a
+          >
+          <a
+            href="https://www.inquirer.com/privacy-policy/"
+            class="hover:underline"
+            >privacy policy</a
+          >
         </div>
       </div>
     </div>
