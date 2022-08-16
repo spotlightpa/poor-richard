@@ -7,14 +7,14 @@
   {{ partial "tw/tnd-nav-hero.html" . }}
   {{ partial "tw/tnd-sticky.html" . }}
   {{ with .Content }}
-    <div class="block max-w-6xl px-5 mx-auto my-8" data-ga-category="content">
+    <div class="mx-auto my-8 block max-w-6xl px-5" data-ga-category="content">
       <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
       <div
         x-data
         x-intersect.once="$report({ target: $el })"
         data-ga-action="view:content-start"
       ></div>
-      <div class="text-lg content" data-sf-campaign="701f4000000TVuXAAW">
+      <div class="content text-lg" data-sf-campaign="701f4000000TVuXAAW">
         {{ . }}
       </div>
       <div

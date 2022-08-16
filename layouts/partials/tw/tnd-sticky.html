@@ -1,4 +1,4 @@
-<div id="page-heading" class="max-w-6xl px-5 pt-12 mx-auto">
+<div id="page-heading" class="mx-auto max-w-6xl px-5 pt-12">
   <h1 class="mb-2 text-4xl font-bold leading-tight text-black lg:text-5xl">
     {{ .Title }}
   </h1>
@@ -10,13 +10,13 @@
     <div class="pb-2 text-lg text-g-9 lg:pr-10 lg:text-2xl">
       {{ .Description }}
     </div>
-    <div class="flex justify-end w-auto mt-5 md:w-64 md:mt-0">
+    <div class="mt-5 flex w-auto justify-end md:mt-0 md:w-64">
       <a
         x-data="{
           unstuckClasses: 'md:duration-100 md:opacity-100',
           stuckClasses: 'md:opacity-0',
         }"
-        class="self-center inline-block px-3 py-1 text-xl text-center text-white rounded w-44 bg-red hover:bg-black hover:text-white"
+        class="inline-block w-44 self-center rounded bg-red px-3 py-1 text-center text-xl text-white hover:bg-black hover:text-white"
         :class="isStuck ? stuckClasses : unstuckClasses"
         href="/donate/"
         >Support Us!</a
@@ -25,18 +25,18 @@
   </div>
 </div>
 {{ with partial "func/GetPageNav" $ }}
-  <div class="-top-px sticky z-10 bg-white">
-    <div class="flex flex-wrap items-stretch max-w-6xl p-5 mx-auto">
+  <div class="sticky -top-px z-10 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-stretch p-5">
       <a
         x-data="{
           unstuckClasses: 'w-0 mr-0 border-none opacity-0',
           stuckClasses: 'md:mr-5 md:border md:border-black md:w-16 md:opacity-100 md:bg-white md:py-2 md:text-black',
         }"
-        class="flex rounded duration-200 hover:text-red hover:border-red"
+        class="flex rounded duration-200 hover:border-red hover:text-red"
         :class="isStuck ? stuckClasses : unstuckClasses"
         href="/"
       >
-        <svg class="flex self-center w-full h-5 fill-current">
+        <svg class="flex h-5 w-full self-center fill-current">
           <desc>Spotlight PA logo</desc>
           <use href="#logo-svg"></use>
         </svg>
@@ -44,7 +44,7 @@
       {{ range . }}
         <a
           data-about-id="{{ .id }}"
-          class="inline-flex items-center rounded px-2 lg:px-4 py-2 mr-4 text-sm lg:text-base lg:mr-5 w-2/5 lg:w-auto leading-4 border border-black hover:text-red hover:border-red"
+          class="mr-4 inline-flex w-2/5 items-center rounded border border-black px-2 py-2 text-sm leading-4 hover:border-red hover:text-red lg:mr-5 lg:w-auto lg:px-4 lg:text-base"
           :class="
             aboutActive === $el.dataset.aboutId ?
             'bg-black text-white hover:text-robin hover:border-robin' :
@@ -57,13 +57,13 @@
           </span>
         </a>
       {{ end }}
-      <div class="flex justify-end flex-1">
+      <div class="flex flex-1 justify-end">
         <a
           x-data="{
             unstuckClasses: '',
             stuckClasses: 'md:pointer-events-auto md:opacity-100',
           }"
-          class="self-center px-4 py-2 mb-2 mr-5 text-white delay-75 rounded lg:mb-0 bg-red opacity-0 pointer-events-none hover:bg-robin hover:text-white"
+          class="pointer-events-none mb-2 mr-5 self-center rounded bg-red px-4 py-2 text-white opacity-0 delay-75 hover:bg-robin hover:text-white lg:mb-0"
           :class="isStuck ? stuckClasses : unstuckClasses"
           href="/donate/"
           >Support Us!</a
