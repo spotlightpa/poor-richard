@@ -8,7 +8,6 @@ linktitle = "About"
 [cascade]
 modal-exclude = true
 suppress-related = true
-type = "about-page"
 featured_topics_entries = ["/news/2022-03-29-SPLNEXT.md", "/news/2022-04-12-SPLRECAPPS12.md"]
 featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
 [links]
