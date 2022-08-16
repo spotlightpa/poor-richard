@@ -7,36 +7,33 @@ title-tag = "Spotlight PA: Pennsylvania news and investigations"
 linktitle = "About"
 [cascade]
 modal-exclude = true
-suppress-related = true
-featured_topics_entries = ["/news/2022-03-29-SPLNEXT.md", "/news/2022-04-12-SPLRECAPPS12.md"]
 featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
-[links]
-title = "About"
-copy = "Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individual members, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."
 
-[[links.entries]]
-link = "/donate/"
-name = "How to Give to Spotlight PA"
-
-[[links.entries]]
-link = "/about/partners/"
-name = "Partners"
-
-[[links.entries]]
-link = "/about/sponsorships/"
-name = "Advertising & Sponsorship"
-
-[[links.entries]]
-link = "/about/faq/"
-name = "FAQ"
-
-[[links.entries]]
-link = "/about/statecollege/"
-name = "State College Regional Bureau"
 
 [[blocks]]
 layout = "links"
-title = "About Us"
+title = "About"
+copy = "Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individual members, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."
+
+[[blocks.entries]]
+link = "/donate/"
+name = "How to Give to Spotlight PA"
+
+[[blocks.entries]]
+link = "/about/partners/"
+name = "Partners"
+
+[[blocks.entries]]
+link = "/about/sponsorships/"
+name = "Advertising & Sponsorship"
+
+[[blocks.entries]]
+link = "/about/faq/"
+name = "FAQ"
+
+[[blocks.entries]]
+link = "/about/statecollege/"
+name = "State College Regional Bureau"
 
 [[blocks]]
 layout = "series"
@@ -49,7 +46,7 @@ copy = "See More About Our Impact"
 [[blocks]]
 title = "Staff"
 layout = "text-2"
-copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them."
+copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:"
 [blocks.cta]
 url = "/about/staff/"
 copy = "See More About Our Staff"
@@ -66,7 +63,7 @@ copy = "See More of Our Partners"
 [[blocks]]
 title = "Supporters"
 layout = "text-2"
-copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them."
+copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:"
 [blocks.cta]
 url = "/support/"
 copy = "See More About Our Supporters"
@@ -77,7 +74,7 @@ layout = "text"
 copy="""
 The mission of Spotlight PA is to hold powerful public and private forces — especially governments, elected officials, businesses, and special interests — to account through urgent and compelling investigative and public-service journalism that drives change and strengthens our democracy, the state, and all who live here.
 
-At Spotlight PA, we value independence, transparency, diversity, innovation, and collaboration. Read more about our vital efforts to empower communities and reinvigorate local news in Pennsylvania
+At Spotlight PA, we value independence, transparency, diversity, innovation, and collaboration. Read more about our vital efforts to empower communities and reinvigorate local news in Pennsylvania:
 """
 [blocks.cta]
 url = "/about/mission/"
