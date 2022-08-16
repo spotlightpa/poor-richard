@@ -1,5 +1,8 @@
 {{ with .Page.Params.links }}
-  <section class="py-20 bg-black bg-opacity-10 anchor-section">
+  <section
+    class="py-20 bg-black bg-opacity-10 anchor-section"
+    data-ga-category="links"
+  >
     <div class="max-w-6xl px-5 mx-auto">
       <div class="lg:flex">
         <div
@@ -10,19 +13,16 @@
         <div class="max-w-5xl text-xl text-g-8 lg:pl-20">
           {{ $.Page.RenderString .copy }}
           {{ with .entries }}
-            <ul class="mt-8" data-ga-category="inline">
+            <ul class="mt-8 flex flex-wrap justify-center">
               {{ range . }}
-                {{ $name := .name }}
-                {{ with .link }}
-                  <li class="inline-block mb-2 mr-6">
-                    <a
-                      href="{{ . }}"
-                      class="block mr-4 text-blue hover:underline"
-                      >&bull; {{ $name }}</a
-                    >
-                  </li>
-                {{ end }}
-
+                <li class="inline-block mb-2 mr-6">
+                  <a
+                    href="{{ .link }}"
+                    class="block mr-4 text-blue underline-offset-8 decoration-4 hover:underline-l"
+                  >
+                    {{- .name -}}
+                  </a>
+                </li>
               {{ end }}
             </ul>
           {{ end }}
