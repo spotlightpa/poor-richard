@@ -25,6 +25,8 @@
   {{ $other_cols = $other_cols | append . }}
 {{ end }}
 
+{{ $edPicks := partial "helper/get-items" "sidebar" | shuffle | first 2 }}
+
 
 <div x-data="{ isCatNavOpen: false }">
   <nav
@@ -60,11 +62,13 @@
       <div class="mx-auto w-full max-w-6xl px-3 pb-8 lg:pb-4">
         <div class="pl-4 text-base leading-normal text-g-6 md:text-2xl">
           {{ range $index, $v := $first_topics }}
-            {{ if $index }}|{{ end }}<a
+            {{ if $index }}|{{ end }}
+            <a
               href="{{ .Page.RelPermalink }}"
-              class="pl-1 text-white"
-              >{{ .Page.Title }}</a
+              class="pl-1 text-white hover:text-yellow"
             >
+              {{- .Page.Title -}}
+            </a>
           {{ end }}
         </div>
       </div>
@@ -72,48 +76,53 @@
   </nav>
   <div class="w-full bg-beige py-12" x-transition x-cloak x-show="isCatNavOpen">
     <div
-      class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 font-bold md:grid-cols-4 lg:px-5"
+      class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 md:grid-cols-4 lg:px-5"
     >
-      {{ with .Params.featured_topics_entries }}
-        {{ range first 2 . }}
-          {{ with site.GetPage . }}
-            <div class="col-span-1">
-              {{ $name := .Param "image" }}
-              {{ $credit := .Param "image-credit" }}
-              {{ $description := .Param "image-description" }}
-              {{ $imgOpts := dict
-                "filename" $name
-                "credit" $credit
-                "description" $description
-                "widths" (slice 128 256 384 512 1280)
-                "widthRatio" 16
-                "heightRatio" 9
-                "sizeHint" "20vw"
-                "link" .RelPermalink
-                "figClass" ""
-              }}
-              {{ partial "tw/image-block.html" $imgOpts }}
-              <a
-                href="{{ .RelPermalink }}"
-                class="mt-1 block text-sm leading-tight"
-                >{{ .LinkTitle }}</a
-              >
-            </div>
-          {{ end }}
+      {{ range $edPicks }}
+        {{ with .page }}
+          <div class="col-span-1">
+            {{ $name := .Param "image" }}
+            {{ $credit := .Param "image-credit" }}
+            {{ $description := .Param "image-description" }}
+            {{ $imgOpts := dict
+              "filename" $name
+              "credit" $credit
+              "description" $description
+              "widths" (slice 128 256 384 512 1280)
+              "widthRatio" 16
+              "heightRatio" 9
+              "sizeHint" "20vw"
+              "link" .RelPermalink
+              "rounded" true
+              "figClass" ""
+            }}
+            {{ partial "tw/image-block.html" $imgOpts }}
+            <a
+              href="{{ .RelPermalink }}"
+              class="mt-1 block text-sm leading-tight"
+            >
+              {{- .LinkTitle -}}
+            </a>
+          </div>
         {{ end }}
       {{ end }}
 
 
       <div class="col-span-2">
-        <div class="mb-3 w-full border-b border-g-6">
+        <div class="mb-3 w-full border-b border-g-6 font-bold">
           {{ if not .Params.disable_hero }}More{{ end }} Topics
         </div>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-3 gap-4 font-bold">
           {{ range $other_cols }}
             <ul>
               {{ range .Pages }}
                 <li class="mb-1">
-                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <a
+                    class="decoration-4 decoration-yellow underline-offset-4 hover:underline"
+                    href="{{ .RelPermalink }}"
+                  >
+                    {{- .Title -}}
+                  </a>
                 </li>
               {{ end }}
             </ul>
@@ -134,8 +143,8 @@
         x-transition
         :class="
         isCatNavOpen ?
-        'relative -top-px bg-beige border-b border-g-5 text-black hover:text-white' :
-        'bg-black text-white hover:text-g-5'
+        'relative -top-px bg-beige border-b border-g-5 text-black hover:text-g-7' :
+        'bg-black text-white hover:text-g-2'
       "
       >
         Trending Topics
