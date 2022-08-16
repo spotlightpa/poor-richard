@@ -6,11 +6,11 @@
   {{ if .Param "banner-active" }}
     {{ partialCached "tw/banner.html" . }}
   {{ end }}
-  {{ partial "tw/tnd-small-nav.html" . }}
+  {{ partial "tw/tnd-nav-top.html" . }}
 {{ end }}
 
 {{ define "main" }}
-  {{ .Render "landing" }}
+  {{ partial "tw/tnd-main.html" . }}
 {{ end }}
 
 {{ define "before-footer" }}

@@ -4,8 +4,8 @@
   isStuck: false
 }"
 >
-  {{ .Render "hero" }}
-  {{ .Render "page-nav" }}
+  {{ partial "tw/tnd-nav-hero.html" . }}
+  {{ partial "tw/tnd-sticky.html" . }}
   {{ with .Content }}
     <div class="block max-w-6xl px-5 mx-auto my-8" data-ga-category="content">
       <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
