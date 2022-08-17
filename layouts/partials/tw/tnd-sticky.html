@@ -17,7 +17,7 @@
           stuckClasses: 'md:opacity-0',
         }"
         class="
-          bg-red-7 inline-block w-44 self-center rounded px-3 py-1
+          inline-block w-44 self-center rounded bg-red-7 px-3 py-1
           text-center text-xl text-white hover:bg-black hover:text-white
         "
         :class="isStuck ? stuckClasses : unstuckClasses"
@@ -49,7 +49,7 @@
   <div class="-top-px z-10 bg-white lg:sticky">
     <div class="mx-auto flex max-w-6xl flex-wrap justify-between py-3 px-5">
       <a
-        class="hover:border-red-7 hover:text-red-7 my-5 mr-0 hidden w-0 rounded opacity-0 duration-200 lg:my-0 lg:flex"
+        class="my-5 mr-0 hidden w-0 rounded opacity-0 duration-200 hover:border-red-7 hover:text-red-7 lg:my-0 lg:flex"
         :class="
           isStuck ?
           'lg:mr-5 lg:w-16 lg:border lg:border-black lg:bg-white lg:py-2 lg:text-black lg:opacity-100' :
@@ -66,11 +66,11 @@
         <a
           data-about-id="{{ .id }}"
           class="
-            hover:border-red-7 hover:text-red-7 my-2 mr-5 inline-flex
-            w-auto items-center rounded
-            border border-black
+            my-2 mr-5 inline-flex w-auto items-center
+            rounded border border-black
             px-4 py-2
             text-base leading-4
+            hover:border-red-7 hover:text-red-7
             lg:my-0
           "
           :class="
@@ -86,7 +86,7 @@
       {{ end }}
       <div class="hidden flex-1 justify-end lg:flex">
         <a
-          class="bg-red-7 pointer-events-none mb-2 mr-5 inline-block self-center rounded px-4 py-2 text-white opacity-0 delay-75 hover:bg-robin hover:text-white lg:mb-0"
+          class="pointer-events-none mb-2 mr-5 inline-block self-center rounded bg-red-7 px-4 py-2 text-white opacity-0 delay-75 hover:bg-robin hover:text-white lg:mb-0"
           :class="isStuck ? 'lg:pointer-events-auto lg:opacity-100' : ''"
           href="/donate/"
           >Support Us!</a
