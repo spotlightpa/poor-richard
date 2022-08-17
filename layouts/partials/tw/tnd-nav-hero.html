@@ -1,10 +1,10 @@
-{{ $all_topics := partialCached "func/GetSiteTopics" "GetSiteTopics" }}
+{{ $all_topics := partial "helper/get-site-topics" }}
 {{ $first_limit := 8 }}
 {{/* Defaults for first topics are first 8 */}}
 {{ $first_topics := first $first_limit $all_topics }}
 {{ with .Params.featured_topics }}
   {{/* If page has .featured_topics set, we used those as "first" instead. */}}
-  {{ $first_topics = partialCached "func/GetTopicsByName" . . }}
+  {{ $first_topics = partial "helper/get-topics-by-name" . }}
 {{ end }}
 {{ $other_topics := "" }}
 {{ if not .Params.disable_hero }}
