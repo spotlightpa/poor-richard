@@ -142,7 +142,7 @@
         x-transition
         :class="
         isCatNavOpen ?
-        'relative -top-px bg-beige border-b border-g-5 text-black hover:text-g-7' :
+        'relative -top-px border-b border-g-5 bg-beige text-black hover:text-g-7' :
         'bg-black text-white hover:text-g-2'
       "
       >
@@ -150,4 +150,12 @@
       </button>
     </div>
   </div>
+</div>
+
+<!-- For CSS purge -->
+<div hidden>
+  <span
+    class="relative -top-px border-b border-g-5 bg-beige text-black hover:text-g-7"
+  ></span>
+  <span class="bg-black text-white hover:text-g-2"></span>
 </div>
