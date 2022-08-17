@@ -128,7 +128,9 @@
     <div class="mx-auto max-w-5xl px-5">
       <div class="py-12 text-lg" data-ga-category="follow">
         <h3 class="mb-4 font-semibold uppercase">Follow Us</h3>
-        <ul class="flex flex-wrap items-center justify-between gap-8 sm:justify-around">
+        <ul
+          class="flex flex-wrap items-center justify-between gap-8 sm:justify-around"
+        >
           {{ range .Site.Menus.social }}
             {{ template "tnd-footer-link" . }}
           {{ end }}
