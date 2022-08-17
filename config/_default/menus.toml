@@ -19,7 +19,7 @@ weight = 3
 [[main]]
 name = "About Us"
 pre = "is-uppercase"
-url = "/about-tnd/"
+url = "/about/"
 weight = 4
 
 
