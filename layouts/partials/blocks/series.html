@@ -1,5 +1,5 @@
 {{ with .block }}
-  <section class="py-10 bg-g-3 anchor-section">
+  <section class="py-10 bg-g-3 anchor-section" data-ga-category="series">
     <div class="max-w-6xl px-5 mx-auto">
       <h2
         class="mb-10 text-4xl font-black leading-none uppercase md:text-6xl text-g-6"
@@ -36,29 +36,32 @@
                   "heightRatio" 9
                   "sizeHint" "33vw"
                   "rounded" true
+                  "link" .Page.RelPermalink
                 }}
                 {{ partial "tw/image-block.html" $imgOpts }}
               </div>
               <div class="{{ $classes.text }}">
                 <a href="{{ .Page.RelPermalink }}"
+                  data-ga-category="hed"
                   ><h3 class="text-3xl font-black text-black">
-                    {{ .Page.Params.kicker | default .Page.Title }}
+                    {{- .Page.Params.kicker | default .Page.Title -}}
                   </h3></a
                 >
-                <p class="mb-2">{{ .Page.Params.description }}</p>
-                <div class="text-2xl">{{ len . }} Articles</div>
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="blurb" class="mb-2">{{ .Page.Params.description }}</p>
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="length" class="text-2xl">{{ len . }} Articles</a>
               </div>
             </div>
           {{ end }}
         {{ end }}
       {{ end }}
       {{ with .cta }}
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-12" data-ga-category="cta">
           <a
             class="px-4 py-2 text-xl font-bold text-center leading-tight duration-300 border border-black lg:text-2xl hover:text-red-7 hover:border-red-7"
             href="{{ .url }}"
-            >{{ .copy }}</a
           >
+            {{- .copy -}}
+          </a>
         </div>
       {{ end }}
     </div>

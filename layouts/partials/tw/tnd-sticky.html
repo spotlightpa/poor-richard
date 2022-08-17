@@ -1,4 +1,8 @@
-<div id="page-heading" class="mx-auto max-w-6xl px-5 pt-12">
+<div
+  id="page-heading"
+  class="mx-auto max-w-6xl px-5 pt-12"
+  data-ga-category="page-heading"
+>
   <h1 class="mb-2 text-4xl font-bold leading-tight text-black lg:text-5xl">
     {{ .Title }}
   </h1>
@@ -12,6 +16,7 @@
     </div>
     <div class="mt-5 flex w-auto justify-end md:mt-0 md:w-64">
       <a
+        data-ga-category="donate"
         x-data="{
           unstuckClasses: 'md:duration-100 md:opacity-100',
           stuckClasses: 'md:opacity-0',
@@ -46,7 +51,7 @@
     <span class="lg:pointer-events-auto lg:opacity-100"></span>
   </div>
 
-  <div class="-top-px z-10 bg-white lg:sticky">
+  <div class="-top-px z-10 bg-white lg:sticky" data-ga-category="sticky">
     <div class="mx-auto flex max-w-6xl flex-wrap justify-between py-3 px-5">
       <a
         class="my-5 mr-0 hidden w-0 rounded opacity-0 duration-200 hover:border-red-7 hover:text-red-7 lg:my-0 lg:flex"
@@ -56,6 +61,7 @@
           ''
         "
         href="/"
+        data-ga-category="logo"
       >
         <svg class="flex h-5 w-full self-center fill-current">
           <desc>Spotlight PA logo</desc>
@@ -65,6 +71,7 @@
       {{ range . }}
         <a
           data-about-id="{{ .id }}"
+          data-ga-category="item"
           class="
             my-2 mr-5 inline-flex w-auto items-center
             rounded border border-black
@@ -86,6 +93,7 @@
       {{ end }}
       <div class="hidden flex-1 justify-end lg:flex">
         <a
+          data-ga-category="donate"
           class="pointer-events-none mb-2 mr-5 inline-block self-center rounded bg-red-7 px-4 py-2 text-white opacity-0 delay-75 hover:bg-robin hover:text-white lg:mb-0"
           :class="isStuck ? 'lg:pointer-events-auto lg:opacity-100' : ''"
           href="/donate/"
