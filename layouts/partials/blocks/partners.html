@@ -1,5 +1,8 @@
 {{ with .block }}
-  <section class="py-20 text-g-9 bg-white anchor-section">
+  <section
+    class="py-20 text-g-9 bg-white anchor-section"
+    data-ga-category="partners"
+  >
     <div class="max-w-6xl px-5 mx-auto">
       <div
         class="mb-4 text-4xl font-black leading-none  uppercase md:text-6xl opacity-40 lg:mb0"
@@ -29,12 +32,13 @@
       {{ end }}
 
       {{ with .cta }}
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-12" data-ga-category="cta">
           <a
             class="px-4 py-2 text-xl font-bold text-black duration-300 text-center leading-tight border border-black lg:text-2xl hover:text-red-7 hover:border-red-7"
             href="{{ .url }}"
-            >{{ .copy }}</a
           >
+            {{- .copy -}}
+          </a>
         </div>
       {{ end }}
     </div>

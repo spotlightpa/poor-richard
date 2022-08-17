@@ -58,7 +58,10 @@
       </div>
     </div>
     {{ if not .Params.disable_hero }}
-      <div class="mx-auto w-full max-w-6xl px-3 pb-8 lg:pb-4">
+      <div
+        class="mx-auto w-full max-w-6xl px-3 pb-8 lg:pb-4"
+        data-ga-category="topics"
+      >
         <div class="pl-4 text-base leading-normal text-g-6 md:text-2xl">
           {{ range $index, $v := $first_topics }}
             {{ if $index }}|{{ end }}
@@ -73,9 +76,16 @@
       </div>
     {{ end }}
   </nav>
-  <div class="w-full bg-beige py-12" x-transition x-cloak x-show="isCatNavOpen">
+  <div
+    class="w-full bg-beige py-12"
+    x-transition
+    x-cloak
+    x-show="isCatNavOpen"
+    data-ga-category="menu"
+  >
     <div
       class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 md:grid-cols-4 lg:px-5"
+      data-ga-category="picks"
     >
       {{ range $edPicks }}
         {{ with .page }}
@@ -99,6 +109,7 @@
             <a
               href="{{ .RelPermalink }}"
               class="mt-1 block text-sm leading-tight"
+              data-ga-category="hed"
             >
               {{- .LinkTitle -}}
             </a>
@@ -107,7 +118,7 @@
       {{ end }}
 
 
-      <div class="col-span-2">
+      <div class="col-span-2" data-ga-category="topics">
         <div class="mb-3 w-full border-b border-g-6 font-bold">
           {{ if not .Params.disable_hero }}More{{ end }} Topics
         </div>
@@ -140,6 +151,9 @@
       "
         @click="isCatNavOpen = ! isCatNavOpen"
         x-transition
+        data-ga-category="navbar:menu:button"
+        data-ga-action="menu:toggle"
+        data-ga-button
         :class="
         isCatNavOpen ?
         'relative -top-px border-b border-g-5 bg-beige text-black hover:text-g-7' :
