@@ -373,14 +373,14 @@ html {
   text-decoration-thickness: 4px;
 }
 
+.decoration-yellow {
+  text-decoration-color: #ffcb05;
+}
+
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
 
 .underline-offset-8 {
   text-underline-offset: 8px;
-}
-
-.decoration-yellow {
-  text-decoration-color: #ffcb05;
 }
