@@ -24,10 +24,6 @@ link = "/about/partners/"
 name = "Partners"
 
 [[blocks.entries]]
-link = "/about/sponsorships/"
-name = "Advertising & Sponsorship"
-
-[[blocks.entries]]
 link = "/about/faq/"
 name = "FAQ"
 
@@ -40,7 +36,7 @@ layout = "series"
 title = "Impact & Awards"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 [blocks.cta]
-url = "/about/impact-awards/"
+url = "/investigations/"
 copy = "See More About Our Impact"
 
 [[blocks]]
