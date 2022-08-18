@@ -70,18 +70,27 @@
         data-ga-category="newsletter"
       >
         {{ partial "newsletter/hidden-input.html" . }}
-        <div class="flex-1 py-6 lg:mr-5 lg:py-0">
+        <div class="relative flex-1 py-6 lg:mr-5 lg:py-0">
           <input
             id="{{ $id }}"
-            aria-label="Enter Your Email"
+            class="outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-6 focus:ring-2"
             type="email"
-            class="outline-none block w-full appearance-none rounded p-3 pl-8 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-6 focus:ring-2"
-            placeholder="Enter Your Email"
+            name="EMAIL"
+            placeholder="Email address"
+            required
           />
+          <span
+            class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
+            aria-hidden="true"
+          >
+            <svg class="h-4 w-4 fill-current">
+              <use xlink:href="#email-svg"></use>
+            </svg>
+          </span>
         </div>
-        <div class="flex flex-col text-xl md:mr-20 lg:text-sm">
-          <label class="pb-1"
-            ><input
+        <div class="flex flex-col gap-1 text-xl md:mr-20 lg:text-sm">
+          <label class="flex items-center gap-1">
+            <input
               checked
               class="mr-1"
               type="checkbox"
@@ -89,10 +98,11 @@
               value="1"
               data-ga-button
               data-ga-action="toggle-newsletter:palocal"
-            />PA Local</label
-          >
-          <label class="pb-1"
-            ><input
+            />
+            <span>PA Local</span>
+          </label>
+          <label class="flex items-center gap-1">
+            <input
               checked
               class="mr-1"
               type="checkbox"
@@ -100,10 +110,11 @@
               value="1"
               data-ga-button
               data-ga-action="toggle-newsletter:papost"
-            />PA Post</label
-          >
-          <label class="pb-1"
-            ><input
+            />
+            <span>PA Post</span>
+          </label>
+          <label class="flex items-center gap-1">
+            <input
               checked
               class="mr-1"
               type="checkbox"
@@ -111,8 +122,9 @@
               value="1"
               data-ga-button
               data-ga-action="toggle-newsletter:investigator"
-            />The Investigator</label
-          >
+            />
+            <span>The Investigator</span>
+          </label>
         </div>
         <div class="w-full md:w-auto">
           <button
