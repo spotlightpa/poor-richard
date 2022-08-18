@@ -50,14 +50,16 @@
                   href="{{ .Page.RelPermalink }}"
                   data-ga-category="blurb"
                   class="mb-2"
-                  >{{ .Page.Params.description }}</a
                 >
+                  {{- .Page.Params.description -}}
+                </a>
                 <a
                   href="{{ .Page.RelPermalink }}"
                   data-ga-category="length"
                   class="text-2xl"
-                  >{{ len . }} Articles</a
                 >
+                  {{- printf "%d Articles" (len .) -}}
+                </a>
               </div>
             </div>
           {{ end }}
