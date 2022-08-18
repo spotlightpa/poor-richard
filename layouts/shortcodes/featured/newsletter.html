@@ -29,7 +29,7 @@
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="focus:outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-darker focus:ring-2"
+        class="outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-yellow-6 focus:ring-2"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -46,19 +46,14 @@
     </p>
     <p class="mt-4 sm:mt-0 sm:ml-1">
       <button
-        class="focus:outline-none w-full rounded border-2 border-yellow-darker bg-yellow px-8 py-2 font-bold uppercase tracking-widest text-black ring-yellow-darker focus:ring-2"
+        class="outline-none w-full rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase tracking-widest text-black ring-yellow-6 focus:ring-2"
         type="submit"
       >
         Sign Up
       </button>
     </p>
   </div>
-  <div
-    x-show="active"
-    x-transition:enter="transition-opacity ease-out duration-300"
-    x-transition:enter-start="opacity-25"
-    x-cloak
-  >
+  <div x-show="active" x-transition x-cloak>
     <p class="mt-4 text-left">
       <label>
         <input
