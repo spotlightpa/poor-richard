@@ -33,7 +33,7 @@
 /*! purgecss end ignore */
 
 .featured-content > p a {
-  @apply underline text-darkblue;
+  @apply underline text-navy;
   @apply transition-colors duration-500;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .article-content :where(a) {
-  @apply underline text-darkblue;
+  @apply underline text-navy;
   @apply transition-colors duration-500;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .content-aside a {
-  @apply underline text-darkblue;
+  @apply underline text-navy;
   @apply transition-colors duration-500;
 }
 
