@@ -1,8 +1,6 @@
 <div
-  x-data="{
-  aboutActive: '',
-  isStuck: false
-}"
+  x-data="{ aboutActive: '', isStuck: false }"
+  data-sf-campaign="7015G000001Z6ZgQAK"
 >
   <header class="contents" data-ga-category="header">
     {{ partial "tw/tnd-nav-hero.html" . }}
@@ -16,7 +14,7 @@
         x-intersect.once="$report({ target: $el })"
         data-ga-action="view:content-start"
       ></div>
-      <div class="content text-lg" data-sf-campaign="701f4000000TVuXAAW">
+      <div class="content text-lg">
         {{ . }}
       </div>
       <div
