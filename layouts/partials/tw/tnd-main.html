@@ -1,11 +1,4 @@
-<div
-  x-data="{ aboutActive: '', isStuck: false }"
-  data-sf-campaign="7015G000001Z6ZgQAK"
->
-  <header class="contents" data-ga-category="header">
-    {{ partial "tw/tnd-nav-hero.html" . }}
-    {{ partial "tw/tnd-sticky.html" . }}
-  </header>
+<div data-sf-campaign="7015G000001Z6ZgQAK">
   {{ with .Content }}
     <div class="mx-auto my-8 block max-w-6xl px-5" data-ga-category="content">
       <div x-data x-intersect.once="$dispatch('open-sticky')"></div>

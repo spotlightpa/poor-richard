@@ -81,15 +81,14 @@
     x-transition
     x-cloak
     x-show="isCatNavOpen"
-    data-ga-category="menu"
+    data-ga-category="navbar:menu"
   >
     <div
       class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 md:grid-cols-4 lg:px-5"
-      data-ga-category="picks"
     >
       {{ range $edPicks }}
         {{ with .page }}
-          <div class="col-span-1">
+          <div class="col-span-1" data-ga-category="picks">
             {{ $name := .Param "image" }}
             {{ $credit := .Param "image-credit" }}
             {{ $description := .Param "image-description" }}

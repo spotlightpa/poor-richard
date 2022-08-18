@@ -11,7 +11,15 @@
   {{ if .Param "banner-active" }}
     {{ partialCached "tw/banner.html" . }}
   {{ end }}
-  {{ partial "tw/tnd-nav-top.html" . }}
+  <header
+    class="contents"
+    x-data="{ aboutActive: '', isStuck: false }"
+    data-sf-campaign="7015G000001Z6ZgQAK"
+  >
+    {{ partial "tw/tnd-nav-top.html" . }}
+    {{ partial "tw/tnd-nav-hero.html" . }}
+    {{ partial "tw/tnd-sticky.html" . }}
+  </header>
 {{ end }}
 
 {{ define "main" }}
