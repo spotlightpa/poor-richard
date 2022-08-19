@@ -6,4 +6,6 @@ image-size = "hidden"
 kicker = "Elections"
 title = "Elections"
 linktitle = "Election news from Spotlight PA"
+url = "/elections/"
+aliases = ["/topics/elections/"]
 +++
