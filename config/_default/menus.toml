@@ -173,12 +173,6 @@ url = "/topics/events/"
 pre = "is-uppercase"
 weight = 3
 
-[[tndmain]]
-name = "About Us"
-pre = "is-uppercase"
-url = "/about/"
-weight = 4
-
 [[social]]
 name = "Facebook"
 pre = "is-uppercase"
