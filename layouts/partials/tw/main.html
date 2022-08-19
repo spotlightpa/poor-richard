@@ -49,6 +49,18 @@
           </p>
         {{ end }}
 
+        {{ if not $params.evergreen | and .PublishDate }}
+          {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
+          {{ if .PublishDate.Before $eighteenMonthsAgo }}
+            <p
+              class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
+            >
+              From the archives
+              {{ .PublishDate.Format "2006" }}
+            </p>
+          {{ end }}
+        {{ end }}
+
 
         <h1
           class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
