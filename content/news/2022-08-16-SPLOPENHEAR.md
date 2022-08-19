@@ -25,7 +25,7 @@ HARRISBURG — Former elected officials and government experts told a panel of s
 
 Pennsylvania is one of nine states that has closed primary elections, meaning only registered Democrats and Republicans can vote for candidates from those parties and choose who will advance to the general election.
 
-<a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=1369">Two</a> <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=S&type=B&bn=690">bills</a> currently awaiting consideration in the General Assembly would change that by allowing independent voters to choose one major party’s primary to participate in. The bills Both bills have bipartisan support, as have similar efforts in the past.
+<a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=1369">Two</a> <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=S&type=B&bn=690">bills</a> currently awaiting consideration in the General Assembly would change that by allowing independent voters to choose one major party’s primary to participate in. Both bills have bipartisan support, as have similar efforts in the past.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
