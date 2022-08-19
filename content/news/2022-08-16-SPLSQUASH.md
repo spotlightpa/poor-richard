@@ -16,7 +16,6 @@ published = 2022-08-16T05:00:00-04:00
 slug = "spotted-lanternfly-pa-nymph-report-prevalence-kill"
 suppress-date = false
 title = "Spotted lanternfly squashing was once all the rage in Pennsylvania. Is that zeal fading?"
-topics = ["PA Local"]
 +++
 
 <i>This story first appeared in </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s PA Local newsletter, a fresh, positive look at the incredible people, beautiful places, and delicious food Pennsylvania has to offer. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free</i></a><i>.</i>
