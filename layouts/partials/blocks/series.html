@@ -40,26 +40,24 @@
                 }}
                 {{ partial "tw/image-block.html" $imgOpts }}
               </div>
-              <div class="{{ $classes.text }}">
+              <div class="{{ $classes.text }} group">
                 <a href="{{ .Page.RelPermalink }}" data-ga-category="hed"
                   ><h3 class="text-3xl font-black text-black">
                     {{- .Page.Params.kicker | default .Page.Title -}}
                   </h3></a
                 >
-                <a
-                  href="{{ .Page.RelPermalink }}"
-                  data-ga-category="blurb"
-                  class="mb-2"
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="blurb"
+                  ><p class="leading-tight">
+                    {{- .Page.Params.description -}}
+                  </p></a
                 >
-                  {{- .Page.Params.description -}}
-                </a>
-                <a
-                  href="{{ .Page.RelPermalink }}"
-                  data-ga-category="length"
-                  class="text-2xl"
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="length"
+                  ><p
+                    class="mt-4 text-base uppercase group-hover:underline-l decoration-4 underline-offset-4 decoration-yellow tracking-wider"
+                  >
+                    {{- printf "%d Articles" (len .) -}}
+                  </p></a
                 >
-                  {{- printf "%d Articles" (len .) -}}
-                </a>
               </div>
             </div>
           {{ end }}

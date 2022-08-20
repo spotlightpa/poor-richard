@@ -363,7 +363,7 @@ html {
 }
 
 /* Tailwind v2 does underline wrong. TODO: remove for v3. */
-@variants hover {
+@variants hover, group-hover {
   .underline-l {
     text-decoration-line: underline;
   }
