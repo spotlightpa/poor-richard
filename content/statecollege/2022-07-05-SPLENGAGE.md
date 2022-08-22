@@ -1,6 +1,5 @@
 +++
 arc-id = "ESKMGJO6JBDNTKDRJ7G62AQOSM"
-authors = ["Spotlight PA State College Staff"]
 blurb = "From story ideas to events, positive news to your best local photos, we want you to be a part of our historic initiative to rebuild and revitalize local news."
 byline = "Spotlight PA State College Staff"
 description = "From story ideas to events, positive news to your best local photos, we want you to be a part of our historic initiative to rebuild and revitalize local news."
