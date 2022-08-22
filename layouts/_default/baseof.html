@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Param `language-code` | default site.LanguageCode }}">
-  <head>
+<html
+  class="{{ block `html-class` . }}{{ end }}"
+  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+>
+  <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -23,7 +26,10 @@
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body data-ga-label="{{ $pageCat }}">
+  <body
+    class="{{ block `body-class` . }}{{ end }}"
+    data-ga-label="{{ $pageCat }}"
+  >
     {{ block "header" . }}
       {{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}
       {{ block "banner" . }}
@@ -54,6 +60,11 @@
       {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}
     </footer>
+
+    {{ block "search-modal" . }}
+      {{ partial "modal/search.html" . }}
+    {{ end }}
+
     {{ block "modal" . }}
       {{ if .Param "modal-exclude" | not }}
         {{ if .Param "sticky-active" }}
@@ -65,22 +76,6 @@
       {{ end }}
     {{ end }}
 
-    {{ block "search-modal" . }}
-      {{ partial "modal/search.html" . }}
-    {{ end }}
-
-
-    <script
-      nomodule
-      defer
-      src="{{ partialCached `helper/get-nomodules-js` . }}"
-    ></script>
-    <script
-      src="{{ partialCached `helper/get-enhancements` . }}"
-      type="module"
-      onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
-    ></script>
-    {{ partial "header/ld-json.html" . }}
     {{ block "svg-resources" . }}
       {{ $svgs := dict
         "check-svg" "@fontawesome/solid/check.svg"
@@ -95,5 +90,18 @@
       }}
       {{ partial "header/svgs.html" $svgs }}
     {{ end }}
+
+
+    <script
+      nomodule
+      defer
+      src="{{ partialCached `helper/get-nomodules-js` . }}"
+    ></script>
+    <script
+      src="{{ partialCached `helper/get-enhancements` . }}"
+      type="module"
+      onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
+    ></script>
+    {{ partial "header/ld-json.html" . }}
   </body>
 </html>
