@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-08-17-SPLCOLA.md"
+    "content/news/2022-08-22-SPLCANORDER.md"
   ],
   "subfeatures": [
-    "content/news/2021-05-12-SPLEXPENSES13.md",
-    "content/news/2021-10-12-SPLBILLS12.md"
+    "content/news/2022-05-10-SPLCOURT10.md",
+    "content/news/2022-06-01-SPLSANCTUARY01.md"
   ],
   "topSlots": [
+    "content/news/2022-08-17-SPLCOLA.md",
     "content/news/2022-08-16-SPLOPENHEAR.md",
-    "content/news/2022-08-16-SPLSQUASH.md",
-    "content/statecollege/2022-08-15-SPLOVERTIME15.md"
+    "content/news/2022-08-16-SPLSQUASH.md"
   ],
   "topper": []
 }
