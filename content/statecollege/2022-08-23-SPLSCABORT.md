@@ -35,7 +35,7 @@ The U.S. Supreme Court’s decision to overturn <i>Roe v. Wade</i> left abortion
 
 But for people living in north-central Pennsylvania like Minor, it’s at least an hour drive to the closest abortion provider. And the reason lies in the state’s history of abortion restrictions, regulatory laws that make it difficult to financially sustain an abortion clinic in lower-population areas, and a series of troubles that led what was the region’s only provider to close in 2010.
 
-## Restricted access
+### Restricted access
 
 When former Gov. Bob Casey Sr., a Democrat, signed restrictions on abortion into law in 1989, <a href="https://www.mcall.com/news/mc-xpm-1989-11-18-2715790-story.html">Pennsylvania became the state with the strictest abortion laws in the country</a>.
 
@@ -57,11 +57,11 @@ In states like Maine and New York, abortion providers have expanded access by al
 
 Some clinics have been forced to close because of rising costs and failure to meet the safety and operating standards required to pass inspections. For example, <a href="https://www.fox43.com/article/news/local/contests/hillcrest-womens-medical-center-violated-pa-health-laws-for-fourth-time-in-six-years/521-1cade787-5266-462d-b8ea-151f62fc83e8">Hillcrest Women’s Medical Center in Harrisburg, where Minor went, shut down in 2017 after failing health inspections.</a>
 
-## A troubled clinic and lack of services
+### A troubled clinic and lack of services
 
 In 1997, State College Medical Services opened on East Beaver Avenue and provided abortions and other reproductive health services. Downtown State College already had a Planned Parenthood clinic, but it didn’t provide abortions.
 
-Jill Wood, a professor of women’s, gender, and sexuality studies at Penn State and an alumnus of the university, had her first of two abortions when she was a senior at the school, right before the local clinic opened (her second was later in life, at age 39 with three kids). She had to drive to Baltimore and stay with a friend, so she was optimistic the new location in State College would provide better access for those who couldn’t afford to travel.
+Jill Wood, a professor of women’s, gender, and sexuality studies at Penn State and an alumna of the university, had her first of two abortions when she was a senior at the school, right before the local clinic opened (her second was later in life, at age 39 with three kids). She had to drive to Baltimore and stay with a friend, so she was optimistic the new location in State College would provide better access for those who couldn’t afford to travel.
 
 But the clinic faced a series of problems and scandals before and during its operation. It was the target of bomb and anthrax threats and battles with its landlord. Noisy and aggressive anti-abortion protesters stood outside, Wood recalled. The clinic couldn’t get an agreement to transfer patients to a local hospital in the case of an emergency. And in 2002 it was evicted.
 
@@ -83,7 +83,7 @@ But a medicated abortion is generally available within the first nine to 12 week
 
 Not everyone has access to the personal transportation required to get to abortion clinics, said Joanne Tosti-Vasey, a Bellefonte Borough Council member, and a member of Centre Countians for Choice.
 
-According to Tosti-Vasey, the small nonprofit organization helps people understand their options, recommends certified clinics, and pays up to 50% of a person’s fee to receive an abortion for anyone. It also arranges transportation to an abortion clinic, she says, which is important because nearly 10 percent of households just in Centre County don’t have cars, census data shows.
+According to Tosti-Vasey, the small nonprofit organization helps people understand their options, recommends certified clinics, and pays up to 50% of a person’s fee to receive an abortion. It also arranges transportation to an abortion clinic, she says, which is important because nearly 10 percent of households just in Centre County don’t have cars, census data shows.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
