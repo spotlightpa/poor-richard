@@ -7,8 +7,6 @@ title-tag = "Spotlight PA: Pennsylvania news and investigations"
 linktitle = "About"
 [cascade]
 modal-exclude = true
-featured_topics = ["Criminal Justice", "Education", "Elections", "Politics", "Economy"]
-
 
 [[blocks]]
 layout = "links"

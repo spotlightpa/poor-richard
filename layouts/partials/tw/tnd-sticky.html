@@ -7,25 +7,21 @@
     {{ .Title }}
   </h1>
   <div
-    class="flex flex-wrap md:flex-nowrap"
+    class="flex flex-col md:flex-row"
     x-intersect:leave="isStuck = true"
     x-intersect.full="isStuck = false"
   >
     <div class="pb-2 text-lg text-g-9 lg:pr-10 lg:text-2xl">
       {{ .Description }}
     </div>
-    <div class="mt-5 flex w-auto justify-end md:mt-0 md:w-64">
+    <div class="mt-5 flex w-auto justify-end px-8 md:mt-0 md:w-64">
       <a
         data-ga-category="donate"
-        x-data="{
-          unstuckClasses: 'md:duration-100 md:opacity-100',
-          stuckClasses: 'md:opacity-0',
-        }"
         class="
-          inline-block w-44 self-center rounded bg-red-7 px-3 py-1
+          mx-auto inline-block w-44 self-center rounded bg-red-7 px-3 py-1
           text-center text-xl text-white hover:bg-black hover:text-white
+          lg:hidden
         "
-        :class="isStuck ? stuckClasses : unstuckClasses"
         href="/donate/"
         >Support Us!</a
       >
@@ -51,19 +47,22 @@
     <span class="lg:pointer-events-auto lg:opacity-100"></span>
   </div>
 
-  <div class="-top-px z-10 bg-white lg:sticky" data-ga-category="sticky">
+  <div
+    class="-top-px z-10 hidden bg-white lg:sticky lg:block"
+    data-ga-category="sticky"
+  >
     <div class="mx-auto flex max-w-6xl flex-wrap justify-between py-3 px-5">
       <a
-        class="my-5 mr-0 hidden w-0 rounded opacity-0 duration-200 hover:border-red-7 hover:text-red-7 lg:my-0 lg:flex"
+        class="hidden w-0 rounded text-black opacity-0 duration-200 hover:border-red-7 hover:text-red-7 lg:flex"
         :class="
           isStuck ?
-          'lg:mr-5 lg:w-16 lg:border lg:border-black lg:bg-white lg:py-2 lg:text-black lg:opacity-100' :
+          'lg:mr-5 lg:w-10 lg:opacity-100' :
           ''
         "
         href="/"
         data-ga-category="logo"
       >
-        <svg class="flex h-5 w-full self-center fill-current">
+        <svg class="flex h-10 w-full self-center fill-current">
           <desc>Spotlight PA logo</desc>
           <use href="#logo-svg"></use>
         </svg>
@@ -91,15 +90,17 @@
           </span></a
         >
       {{ end }}
-      <div class="hidden flex-1 justify-end lg:flex">
+      <div class="flex flex-1 justify-end">
         <a
           data-ga-category="donate"
-          class="pointer-events-none mb-2 mr-5 inline-block self-center rounded bg-red-7 px-4 py-2 text-white opacity-0 delay-75 hover:bg-black hover:text-white lg:mb-0"
-          :class="isStuck ? 'lg:pointer-events-auto lg:opacity-100' : ''"
+          class="mb-0 mr-5 inline-block self-center rounded bg-red-7 px-4 py-2 text-white hover:bg-black hover:text-white"
           href="/donate/"
-          >Support Us!</a
         >
+          {{- "Support Us!" -}}
+        </a>
       </div>
     </div>
   </div>
+
+  <div class="py-6"></div>
 {{ end }}

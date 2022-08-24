@@ -156,10 +156,12 @@ url = "/about/jobs/"
 weight = 10
 
 [[tndmain]]
-name = "Newsletters"
+name = "Sign Up for Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
 weight = 1
+[tndmain.params]
+attrs = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:newsletters:open')\""
 
 [[tndmain]]
 pre = "is-uppercase"

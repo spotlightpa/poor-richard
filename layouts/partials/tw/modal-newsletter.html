@@ -9,7 +9,10 @@
   x-show="isOpen"
   x-transition.opacity
   x-trap.noscroll.inert="isOpen"
-  @scroll.window.once.passive="trigger()"
+  @modal:newsletters:open.window="isOpen = true"
+  {{ if .Param "modal-exclude" | not }}
+    @scroll.window.once.passive="trigger()"
+  {{ end }}
   @click="isOpen = false"
   role="dialog"
   aria-modal="true"

@@ -1,30 +1,4 @@
 {{ $all_topics := partial "helper/get-site-topics" }}
-{{ $first_limit := 8 }}
-{{/* Defaults for first topics are first 8 */}}
-{{ $first_topics := first $first_limit $all_topics }}
-{{ with .Params.featured_topics }}
-  {{/* If page has .featured_topics set, we used those as "first" instead. */}}
-  {{ $first_topics = partial "helper/get-topics-by-name" . }}
-{{ end }}
-{{ $other_topics := "" }}
-{{ if not .Params.disable_hero }}
-  {{ $other_topics = symdiff $first_topics $all_topics }}
-{{ else }}
-  {{ $other_topics = $all_topics }}
-{{ end }}
-{{/* Next we need to split the remaining topics into 3 for the following "Trending Topics" module's three columns */}}
-{{ $other_col_limit := div (len $other_topics) 3 }}
-{{ $other_col_1 := $other_topics | first $other_col_limit | group "1" }}
-{{ $other_col_2 := $other_topics | first (mul $other_col_limit 2) | last $other_col_limit | group "2" }}
-{{ $other_col_3 := $other_topics | first (mul $other_col_limit 3) | last $other_col_limit | group "3" }}
-{{ $other_cols := slice $other_col_1 }}
-{{ with $other_col_2 }}
-  {{ $other_cols = $other_cols | append . }}
-{{ end }}
-{{ with $other_col_3 }}
-  {{ $other_cols = $other_cols | append . }}
-{{ end }}
-
 {{ $edPicks := partial "helper/get-items" "sidebar" | shuffle | first 2 }}
 
 
@@ -49,32 +23,12 @@
           </svg>
         </a>
       </div>
-      <div class="w-full md:w-1/2">
-        <div
-          class="relative flex-1 pl-4 pr-2 text-2xl leading-10 text-white md:pl-2 lg:mt-6 lg:pl-5 lg:text-3xl lg:leading-9"
-        >
-          Investigative and public service journalism for Pennsylvania
+      <div class="w-full md:w-1/2 lg:pl-12">
+        <div class="relative mt-6  flex-1 pl-5 text-3xl leading-9 text-white">
+          Investigative and public-service journalism for Pennsylvania
         </div>
       </div>
     </div>
-    {{ if not .Params.disable_hero }}
-      <div
-        class="mx-auto w-full max-w-6xl px-3 pb-8 lg:pb-4"
-        data-ga-category="topics"
-      >
-        <div class="pl-4 text-base leading-normal text-g-6 md:text-2xl">
-          {{ range $index, $v := $first_topics }}
-            {{ if $index }}|{{ end }}
-            <a
-              href="{{ .Page.RelPermalink }}"
-              class="pl-1 text-white hover:text-yellow"
-            >
-              {{- .Page.Title -}}
-            </a>
-          {{ end }}
-        </div>
-      </div>
-    {{ end }}
   </nav>
   <div
     class="w-full bg-beige py-12"
@@ -83,9 +37,12 @@
     x-show="isCatNavOpen"
     data-ga-category="navbar:menu"
   >
-    <div
-      class="mx-auto grid w-full max-w-6xl grid-cols-2 gap-10 px-8 md:grid-cols-4 lg:px-5"
-    >
+    <div class="mx-auto grid w-full max-w-6xl grid-cols-4 gap-x-10 px-8">
+      <div class="col-span-2" data-ga-category="picks">
+        <div class="mb-3 w-full border-b border-g-6 font-bold">
+          Investigations
+        </div>
+      </div>
       {{ range $edPicks }}
         {{ with .page }}
           <div class="col-span-1" data-ga-category="picks">
@@ -117,26 +74,23 @@
       {{ end }}
 
 
+      <div class="col-span-2 col-start-3 row-start-1" data-ga-category="picks">
+        <div class="mb-3 w-full border-b border-g-6 font-bold">Topics</div>
+      </div>
+
       <div class="col-span-2" data-ga-category="topics">
-        <div class="mb-3 w-full border-b border-g-6 font-bold">
-          {{ if not .Params.disable_hero }}More{{ end }} Topics
-        </div>
-        <div class="grid grid-cols-3 gap-4 font-bold">
-          {{ range $other_cols }}
-            <ul>
-              {{ range .Pages }}
-                <li class="mb-1">
-                  <a
-                    class="decoration-4 decoration-yellow underline-offset-4 hover:underline"
-                    href="{{ .RelPermalink }}"
-                  >
-                    {{- .Title -}}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
+        <ul class="columns-3 font-bold">
+          {{ range $all_topics }}
+            <li class="mb-1">
+              <a
+                class="decoration-4 decoration-yellow underline-offset-4 hover:underline"
+                href="{{ .RelPermalink }}"
+              >
+                {{- .Title -}}
+              </a>
+            </li>
           {{ end }}
-        </div>
+        </ul>
       </div>
     </div>
   </div>
