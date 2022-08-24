@@ -155,6 +155,12 @@
   }
 }
 
+@responsive {
+  .columns-3 {
+    columns: 3;
+  }
+}
+
 .content-aside > p {
   @apply leading-relaxed;
 }

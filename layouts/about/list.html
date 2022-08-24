@@ -8,16 +8,23 @@
 {{ end }}
 
 {{ define "header" }}
-  {{ if .Param "banner-active" }}
-    {{ partialCached "tw/banner.html" . }}
-  {{ end }}
   <header
     class="contents"
     x-data="{ aboutActive: '', isStuck: false }"
+    @intersect:about.window="aboutActive = $event.detail"
+    data-ga-category="header"
     data-sf-campaign="7015G000001Z6ZgQAK"
   >
-    {{ partial "tw/tnd-nav-top.html" . }}
-    {{ partial "tw/tnd-nav-hero.html" . }}
+    <div class="md:hidden">
+      {{ partialCached "tw/nav.html" . }}
+    </div>
+    {{ if .Param "banner-active" }}
+      {{ partialCached "tw/banner.html" . }}
+    {{ end }}
+    <div class="hidden md:contents">
+      {{ partial "tw/tnd-nav-top.html" . }}
+      {{ partial "tw/tnd-nav-hero.html" . }}
+    </div>
     {{ partial "tw/tnd-sticky.html" . }}
   </header>
 {{ end }}
@@ -35,7 +42,7 @@
 {{ end }}
 
 {{ define "modal" }}
-  <!-- noop -->
+  {{ partialCached "tw/modal-newsletter.html" . }}
 {{ end }}
 
 {{ define "search-modal" }}
@@ -48,12 +55,14 @@
     "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "bars-svg" "@fontawesome/solid/bars.svg"
     "check-svg" "@fontawesome/solid/check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
     "donate-svg" "/img/logos/donate.svg"
     "email-svg" "@fontawesome/regular/envelope.svg"
     "fb-svg" "@fontawesome/brands/facebook-f.svg"
     "flip-svg" "@fontawesome/brands/flipboard.svg"
     "gh-svg" "@fontawesome/brands/github.svg"
     "google-svg" "@fontawesome/brands/google.svg"
+    "heart-svg" "@fontawesome/solid/heart.svg"
     "ig-svg" "@fontawesome/brands/instagram.svg"
     "logo-svg" "/img/logos/circle-default-on-trans.svg"
     "paper-plane-svg" "@fontawesome/solid/paper-plane.svg"
