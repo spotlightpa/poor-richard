@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-03T05:00:04-05:00
 slug = "pennsylvania-society-gala-"
+suppress-date = false
 title = "Vaunted Pennsylvania Society weekend loses luster among politicos"
 topics = ["The Capitol"]
 +++
