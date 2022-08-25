@@ -16,7 +16,7 @@ published = 2022-08-15T05:00:00-04:00
 slug = "penn-state-football-police-overtime"
 suppress-date = false
 title = "Penn State spent half a million dollars on police overtime at football games in 2021"
-topics = ["Penn State", "Government"]
+topics = ["Penn State", "Local Government"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
