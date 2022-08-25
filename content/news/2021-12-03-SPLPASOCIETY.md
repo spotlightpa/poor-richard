@@ -15,7 +15,7 @@ no-index = false
 published = 2021-12-03T05:00:04-05:00
 slug = "pennsylvania-society-gala-"
 title = "Vaunted Pennsylvania Society weekend loses luster among politicos"
-topics = ["Politics"]
+topics = ["The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
