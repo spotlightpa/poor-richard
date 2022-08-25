@@ -31,7 +31,9 @@ onLoad(() => {
     let sandbox =
       "allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation";
     let attributes = { sandbox };
-
+    if ("loading" in HTMLIFrameElement.prototype) {
+      attributes.loading = "lazy";
+    }
     new Framer(container, { src, attributes });
   });
 });
