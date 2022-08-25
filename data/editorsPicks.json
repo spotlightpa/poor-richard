@@ -1,13 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-08-25-SPLMONKAID.md"
+    "content/news/2022-08-25-SPLMED26.md"
   ],
   "subfeatures": [
-    "content/newsletters/investigator/2022-08-04-1200.md"
+    "content/news/2020-02-20-SPLMEDMAL20.md",
+    "content/news/2021-01-27-SPLJUD28.md"
   ],
   "topSlots": [
     "content/news/2022-08-24-SPLPLATES25.md",
-    "content/news/2022-08-22-SPLCANORDER.md",
+    "content/news/2022-08-25-SPLMONKAID.md",
     "content/news/2022-08-17-SPLCOLA.md"
   ],
   "topper": []
