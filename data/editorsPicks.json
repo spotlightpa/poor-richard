@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2022-08-25-SPLMED26.md"
+    "content/news/2022-08-26-SPLSTOPS26.md"
   ],
   "subfeatures": [
-    "content/news/2020-02-20-SPLMEDMAL20.md",
-    "content/news/2021-01-27-SPLJUD28.md"
+    "content/news/2019-09-20-SPLRACE20.md",
+    "content/news/2020-01-23-SPLPSP23.md",
+    "content/news/2021-01-12-SPLPSP13.md"
   ],
   "topSlots": [
-    "content/news/2022-08-24-SPLPLATES25.md",
+    "content/news/2022-08-25-SPLMED26.md",
     "content/news/2022-08-25-SPLMONKAID.md",
-    "content/news/2022-08-17-SPLCOLA.md"
+    "content/news/2022-08-24-SPLPLATES25.md"
   ],
   "topper": []
 }
