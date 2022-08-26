@@ -2,10 +2,16 @@ const pluginTailwind = require("prettier-plugin-tailwindcss");
 const pluginGoTemplate = require("prettier-plugin-go-template");
 
 module.exports = {
-  plugins: [pluginGoTemplate, pluginTailwind],
+  plugins: [pluginGoTemplate],
   pluginSearchDirs: false,
   tailwindConfig: "./tailwind.config.js",
   overrides: [
+    {
+      files: ["*.css"],
+      options: {
+        plugins: [pluginTailwind],
+      },
+    },
     {
       files: ["*.html"],
       options: {
@@ -20,6 +26,8 @@ module.exports = {
         "**/sc/*.html",
         "**/statecollege/*.html",
         "**/tw/*.html",
+        "**/blocks/*.html",
+        "**/shortcodes/*.html",
       ],
       options: {
         plugins: [pluginGoTemplate, pluginTailwind],
