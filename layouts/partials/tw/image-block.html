@@ -59,7 +59,7 @@
 {{ $credit := .credit }}
 {{ $eager := .eager | default false }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
-
+{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-g-6" }}
 {{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
 {{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
 
@@ -118,9 +118,7 @@
   {{- end -}}
 
   {{ with $credit }}
-    <figcaption
-      class="mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-g-6"
-    >
+    <figcaption class="{{ $creditClass }}">
       {{ $credit }}
     </figcaption>
   {{ end }}
