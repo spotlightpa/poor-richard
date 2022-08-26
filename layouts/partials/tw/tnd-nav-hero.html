@@ -42,8 +42,8 @@
     x-show="isCatNavOpen"
     data-ga-category="navbar:menu"
   >
-    <div class="mx-auto grid w-full max-w-6xl grid-cols-4 gap-x-10 px-8">
-      <div class="col-span-2" data-ga-category="picks">
+    <div class="mx-auto grid w-full max-w-6xl grid-cols-6 gap-x-10 px-8">
+      <div class="col-span-4" data-ga-category="picks">
         <a
           class="mb-3 block w-full border-b border-g-6 font-bold"
           href="/investigations/"
@@ -52,7 +52,7 @@
         </a>
       </div>
       {{ range $investigations }}
-        <article class="col-span-1 pt-2" data-ga-category="picks">
+        <article class="col-span-2" data-ga-category="picks">
           <div data-ga-category="eyebrow">
             <a
               class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
@@ -75,7 +75,7 @@
               "widths" (slice 128 256 384 512 1280)
               "figClass" "mt-1"
               "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
-              "sizeHint" "242px"
+              "sizeHint" "336px"
             }}
             {{ partial "tw/image-block.html" $imgOpts }}
           </div>
@@ -96,7 +96,7 @@
       {{ end }}
 
 
-      <div class="col-span-2 col-start-3 row-start-1" data-ga-category="picks">
+      <div class="col-span-2 col-start-5 row-start-1" data-ga-category="picks">
         <a
           class="mb-3 block w-full border-b border-g-6 font-bold"
           href="/topics/"
@@ -106,7 +106,7 @@
       </div>
 
       <div class="col-span-2" data-ga-category="topics">
-        <ul class="columns-2 text-lg font-bold">
+        <ul class="columns-2 font-bold">
           {{ range $all_topics }}
             <li class="mb-1">
               <a
