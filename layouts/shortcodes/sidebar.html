@@ -12,10 +12,10 @@
 <aside
   class="
     {{ $sideClass }}
-    my-4 relative w-auto h-40 py-4
-    sm:my-0 sm:max-w-xs sm:h-auto
-    font-sans text-sm
-    sm:shape-outside
+    sm:shape-outside relative my-4 h-40 w-auto
+    py-4 font-sans text-sm
+    sm:my-0 sm:h-auto
+    sm:max-w-xs
   "
   data-ga-category="inline:sidebar"
   x-data="{ isOpen: {{ $mobileReveal }} }"
@@ -25,21 +25,21 @@
   <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
     <button
       :aria-expanded="isOpen"
-      class="text-navy hover:text-yellow hover:underline leading-4 mb-4"
+      class="mb-4 leading-4 text-navy hover:text-yellow hover:underline"
       @click="isOpen = true"
       data-ga-button
       data-ga-action="sidebar:toggle"
     >
       <span aria-hidden="true">
-        <svg class="fill-current h-4 w-4 inline-block">
+        <svg class="inline-block h-4 w-4 fill-current">
           {{ $plusSVG.Content | safeHTML }}
         </svg>
       </span>
-      <span class="ml-2 uppercase align-bottom"> Show more… </span>
+      <span class="ml-2 align-bottom uppercase"> Show more… </span>
     </button>
   </div>
   <div
-    class="relative content-aside h-24 sm:h-auto overflow-y-hidden sm:overflow-y-visible"
+    class="content-aside relative h-24 overflow-y-hidden sm:h-auto sm:overflow-y-visible"
     :class="{'h-24': !isOpen, 'overflow-y-hidden': !isOpen}"
   >
     {{ .Inner | markdownify }}

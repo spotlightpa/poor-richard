@@ -1,20 +1,20 @@
 {{ with .block }}
   <section
-    class="py-20 text-g-9 bg-white anchor-section"
+    class="anchor-section bg-white py-20 text-g-9"
     data-ga-category="partners"
   >
-    <div class="max-w-6xl px-5 mx-auto">
+    <div class="mx-auto max-w-6xl px-5">
       <h2
-        class="mb-4 text-4xl font-black leading-none  uppercase md:text-6xl opacity-40 lg:mb0"
+        class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
       >
         {{ .title }}
       </h2>
-      <div class="my-4 text-xl lg:text-2xl article-content">
+      <div class="article-content my-4 text-xl lg:text-2xl">
         {{ $.Page.RenderString .copy }}
       </div>
       {{ with .show_partners }}
         <div
-          class="py-12 mx-auto max-w-3xl flex flex-wrap justify-center gap-8"
+          class="mx-auto flex max-w-3xl flex-wrap justify-center gap-8 py-12"
           data-ga-category="logos"
         >
           {{ range site.Data.partners.partners | first . }}
@@ -32,9 +32,9 @@
       {{ end }}
 
       {{ with .cta }}
-        <div class="flex justify-center mt-12" data-ga-category="cta">
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="px-4 py-2 text-xl font-bold text-black duration-300 text-center leading-tight border border-black lg:text-2xl hover:text-red-7 hover:border-red-7"
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight text-black duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}

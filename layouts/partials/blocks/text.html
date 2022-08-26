@@ -1,20 +1,20 @@
 {{ with .block }}
-  <section class="py-10 anchor-section bg-g-3" data-ga-category="links">
-    <div class="max-w-6xl px-5 mx-auto">
+  <section class="anchor-section bg-g-3 py-10" data-ga-category="links">
+    <div class="mx-auto max-w-6xl px-5">
       <h2
-        class="mb-10 text-4xl font-black leading-none uppercase md:text-6xl text-g-6"
+        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
       >
         {{ .title }}
       </h2>
       {{ with .copy }}
-        <div class="my-4 text-xl lg:text-2xl article-content">
+        <div class="article-content my-4 text-xl lg:text-2xl">
           {{ $.Page.RenderString . }}
         </div>
       {{ end }}
       {{ with .cta }}
-        <div class="flex justify-center mt-12" data-ga-category="cta">
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="px-4 py-2 text-xl font-bold duration-300 border border-black text-center leading-tight lg:text-2xl hover:text-red-7 hover:border-red-7"
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}
