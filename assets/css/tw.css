@@ -12,9 +12,9 @@
   float: left;
   font-size: 4.25rem;
   line-height: 1;
-  padding-top: .25rem;
-  padding-right: .5rem;
-  padding-left: .25rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.25rem;
 }
 
 /*! purgecss start ignore */
@@ -143,7 +143,6 @@
   @apply text-orange line-through;
 }
 
-
 @responsive {
   .shape-outside {
     shape-outside: border-box;
@@ -170,10 +169,10 @@
 }
 
 .content-aside > ul {
-  @apply list-disc list-inside;
+  @apply list-inside list-disc;
 }
 .content-aside > ol {
-  @apply list-decimal list-inside;
+  @apply list-inside list-decimal;
 }
 
 @screen sm {
@@ -189,7 +188,7 @@
 .content-aside > h2,
 .content-aside > h3,
 .content-aside > h4 {
-  @apply uppercase font-bold text-lg leading-none;
+  @apply text-lg font-bold uppercase leading-none;
 }
 
 .content-aside > * + h1,
@@ -199,7 +198,7 @@
   @apply mt-8;
 }
 
-.content-aside > * + * ,
+.content-aside > * + *,
 .content-aside ul > li + li,
 .content-aside ol > li + li {
   @apply mt-3;
@@ -227,7 +226,7 @@
 }
 
 .snap-x {
-  scroll-snap-type: x mandatory
+  scroll-snap-type: x mandatory;
 }
 
 .snap-center {
@@ -266,7 +265,7 @@
 }
 
 .site-nav {
-  @apply px-4 bg-black;
+  @apply bg-black px-4;
 }
 
 .site-nav\:container {
@@ -274,35 +273,35 @@
 }
 
 .site-nav\:content {
-  @apply flex items-center justify-between h-16;
+  @apply flex h-16 items-center justify-between;
 }
 
 .site-nav\:logo {
-  @apply flex-shrink-0 inline-flex text-white hover:text-yellow;
+  @apply inline-flex flex-shrink-0 text-white hover:text-yellow;
 }
 
 .site-nav\:logo-svg {
-  @apply pr-4 sm:pr-0 h-12 w-60 max-w-full fill-current;
+  @apply h-12 w-60 max-w-full fill-current pr-4 sm:pr-0;
 }
 
 .site-nav\:desktop {
-  @apply hidden lg:flex w-full items-center space-x-4 justify-end font-sans;
+  @apply hidden w-full items-center justify-end space-x-4 font-sans lg:flex;
 }
 
 .site-nav\:item {
-  @apply uppercase text-white hover:text-yellow duration-500;
+  @apply uppercase text-white duration-500 hover:text-yellow;
 }
 
 .site-nav\:svg-icon {
-  @apply inline-block relative w-4 h-4 fill-current align-middle;
+  @apply relative inline-block h-4 w-4 fill-current align-middle;
 }
 
 .site-nav\:donate-button {
-  @apply flex items-baseline px-2 py-1 min-w-max bg-orange text-white rounded uppercase font-semibold;
+  @apply flex min-w-max items-baseline rounded bg-orange px-2 py-1 font-semibold uppercase text-white;
 }
 
 .site-nav\:mobile {
-  @apply lg:hidden flex items-center font-sans;
+  @apply flex items-center font-sans lg:hidden;
 }
 
 .site-nav\:hamburger {
@@ -310,20 +309,20 @@
 }
 
 .site-nav\:flyout {
-  @apply absolute z-10 mt-2 right-0 w-48 min-w-min border border-g-7 rounded shadow;
-  @apply py-2 px-4 space-y-2 bg-black text-white text-lg uppercase;
+  @apply absolute right-0 z-10 mt-2 w-48 min-w-min rounded border border-g-7 shadow;
+  @apply space-y-2 bg-black py-2 px-4 text-lg uppercase text-white;
 }
 
 .site-nav\:flyout-donate {
-  @apply px-3 py-2 inline-flex items-center whitespace-nowrap bg-orange text-white rounded uppercase font-semibold hover:shadow-beige;
+  @apply inline-flex items-center whitespace-nowrap rounded bg-orange px-3 py-2 font-semibold uppercase text-white hover:shadow-beige;
 }
 
 .site-nav\:flyout-donate-svg {
-  @apply inline mr-1 h-6 w-6 fill-current;
+  @apply mr-1 inline h-6 w-6 fill-current;
 }
 
 .site-nav\:flyout-item {
-  @apply block w-full hover:text-yellow transition-colors duration-500;
+  @apply block w-full transition-colors duration-500 hover:text-yellow;
 }
 
 @tailwind components;
