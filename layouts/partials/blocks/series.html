@@ -1,8 +1,8 @@
 {{ with .block }}
-  <section class="py-10 bg-g-3 anchor-section" data-ga-category="series">
-    <div class="max-w-6xl px-5 mx-auto">
+  <section class="anchor-section bg-g-3 py-10" data-ga-category="series">
+    <div class="mx-auto max-w-6xl px-5">
       <h2
-        class="mb-10 text-4xl font-black leading-none uppercase md:text-6xl text-g-6"
+        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
       >
         {{ .title }}
       </h2>
@@ -53,7 +53,7 @@
                 >
                 <a href="{{ .Page.RelPermalink }}" data-ga-category="length"
                   ><p
-                    class="mt-4 text-base uppercase group-hover:underline-l decoration-4 underline-offset-4 decoration-yellow tracking-wider"
+                    class="group-hover:underline-l decoration-4 underline-offset-4 decoration-yellow mt-4 text-base uppercase tracking-wider"
                   >
                     {{- printf "%d Articles" (len .) -}}
                   </p></a
@@ -64,9 +64,9 @@
         {{ end }}
       {{ end }}
       {{ with .cta }}
-        <div class="flex justify-center mt-12" data-ga-category="cta">
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="px-4 py-2 text-xl font-bold text-center leading-tight duration-300 border border-black lg:text-2xl hover:text-red-7 hover:border-red-7"
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}

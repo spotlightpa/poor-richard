@@ -1,12 +1,12 @@
 {{ with .block }}
   <section
-    class="py-20 bg-black bg-opacity-10 anchor-section"
+    class="anchor-section bg-black bg-opacity-10 py-20"
     data-ga-category="links"
   >
-    <div class="max-w-6xl px-5 mx-auto">
+    <div class="mx-auto max-w-6xl px-5">
       <div class="lg:flex">
         <h2
-          class="mb-4 text-4xl font-black leading-none text-g-7 uppercase md:text-6xl lg:rotate-180 opacity-40 lg:sideways-heading lg:mb-0"
+          class="lg:sideways-heading mb-4 text-4xl font-black uppercase leading-none text-g-7 opacity-40 md:text-6xl lg:mb-0 lg:rotate-180"
         >
           {{ .title }}
         </h2>
@@ -15,10 +15,10 @@
           {{ with .entries }}
             <ul class="mt-8 flex flex-wrap justify-center">
               {{ range . }}
-                <li class="inline-block mb-2 mr-6">
+                <li class="mb-2 mr-6 inline-block">
                   <a
                     href="{{ .link }}"
-                    class="block mr-4 text-blue underline-offset-8 decoration-4 hover:underline-l"
+                    class="underline-offset-8 decoration-4 hover:underline-l mr-4 block text-blue"
                     data-ga-category="link"
                   >
                     {{- .name -}}
