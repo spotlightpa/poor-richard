@@ -1,5 +1,10 @@
 {{ $all_topics := partial "helper/get-site-topics" }}
-{{ $edPicks := partial "helper/get-items" "sidebar" | shuffle | first 2 }}
+
+{{ $investigations := slice }}
+{{ $series := site.GetPage "content/series/_index.md" }}
+{{ range $series.Pages.ByPublishDate.Reverse | first 2 }}
+  {{ $investigations = $investigations | append .Page }}
+{{ end }}
 
 
 <div x-data="{ isCatNavOpen: false }">
@@ -39,47 +44,69 @@
   >
     <div class="mx-auto grid w-full max-w-6xl grid-cols-4 gap-x-10 px-8">
       <div class="col-span-2" data-ga-category="picks">
-        <div class="mb-3 w-full border-b border-g-6 font-bold">
-          Investigations
-        </div>
+        <a
+          class="mb-3 block w-full border-b border-g-6 font-bold"
+          href="/investigations/"
+        >
+          {{- "Investigations" -}}
+        </a>
       </div>
-      {{ range $edPicks }}
-        {{ with .page }}
-          <div class="col-span-1" data-ga-category="picks">
-            {{ $name := .Param "image" }}
-            {{ $credit := .Param "image-credit" }}
-            {{ $description := .Param "image-description" }}
+      {{ range $investigations }}
+        <article class="col-span-1 pt-2" data-ga-category="picks">
+          <div data-ga-category="eyebrow">
+            <a
+              class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+              href="{{ .RelPermalink }}"
+            >
+              {{- .Title -}}
+            </a>
+          </div>
+          <div>
+            {{ $name := .Page.Param "image" }}
+            {{ $credit := .Page.Param "image-credit" }}
+            {{ $description := .Page.Param "image-description" }}
             {{ $imgOpts := dict
               "filename" $name
               "credit" $credit
               "description" $description
-              "widths" (slice 128 256 384 512 1280)
+              "link" .RelPermalink
               "widthRatio" 16
               "heightRatio" 9
-              "sizeHint" "20vw"
-              "link" .RelPermalink
-              "rounded" true
-              "figClass" ""
+              "widths" (slice 128 256 384 512 1280)
+              "figClass" "mt-1"
+              "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+              "sizeHint" "242px"
             }}
             {{ partial "tw/image-block.html" $imgOpts }}
-            <a
-              href="{{ .RelPermalink }}"
-              class="mt-1 block text-sm leading-tight"
-              data-ga-category="hed"
-            >
-              {{- .LinkTitle -}}
-            </a>
           </div>
-        {{ end }}
+          <div class="mt-3 w-full flex-grow space-y-1">
+            <h2
+              class="font-serif text-base font-bold leading-snug tracking-tight text-black"
+            >
+              <a
+                class="hover:underline"
+                href="{{ .RelPermalink }}"
+                data-ga-category="hed"
+              >
+                {{- .LinkTitle -}}
+              </a>
+            </h2>
+          </div>
+        </article>
       {{ end }}
 
 
       <div class="col-span-2 col-start-3 row-start-1" data-ga-category="picks">
-        <div class="mb-3 w-full border-b border-g-6 font-bold">Topics</div>
+        <a
+          class="mb-3 block w-full border-b border-g-6 font-bold"
+          href="/topics/"
+        >
+          {{- "Topics" -}}
+        </a>
       </div>
 
       <div class="col-span-2" data-ga-category="topics">
-        <ul class="columns-3 font-bold">
+        <ul class="columns-2 text-lg font-bold">
           {{ range $all_topics }}
             <li class="mb-1">
               <a
@@ -94,14 +121,13 @@
       </div>
     </div>
   </div>
-  <div class="mx-auto flex w-full max-w-6xl px-5">
-    <div class="hidden w-full md:block md:w-1/2"></div>
-    <div class="w-full md:w-1/2 md:pl-4">
+  <div class="grid grid-cols-5">
+    <div class="col-start-2 mx-auto">
       <button
         class="
-        ml-2 rounded-b-lg bg-black px-4 pt-1 pb-2 text-sm
-        text-white transition-all hover:text-g-5
-      "
+          rounded-b-lg bg-black px-4 pt-1 pb-2 text-sm
+          text-white transition-all hover:text-g-5
+        "
         @click="isCatNavOpen = ! isCatNavOpen"
         x-transition
         data-ga-category="navbar:menu:button"
@@ -113,7 +139,7 @@
         'bg-black text-white hover:text-g-2'
       "
       >
-        Trending Topics
+        Investigations &amp; More
       </button>
     </div>
   </div>
