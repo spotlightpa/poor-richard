@@ -49,7 +49,7 @@ copy = "See More About Our Staff"
 layout = "partners"
 title = "Partners"
 show_partners = 4
-copy = "Spotlight PA distributes its work across the largest collaborative partner network of its kind in the United States. We share our unique, high-quality journalism with more than 80 community newsroom partners, making Spotlight PA a centralized, efficient model to drive more and better journalism across Pennsylvania. Our partners routinely report Spotlight PA stories rank high for engagement and overall value. Read more about our partner network and how to join:"
+copy = "Spotlight PA distributes its work across the largest collaborative partner network of its kind in the United States. We share our unique, high-quality journalism with more than 90 community newsroom partners, making Spotlight PA a centralized, efficient model to drive more and better journalism across Pennsylvania. Our partners routinely report Spotlight PA stories rank high for engagement and overall value. Read more about our partner network and how to join:"
 [blocks.cta]
 url = "/about/partners/"
 copy = "See More of Our Partners"
