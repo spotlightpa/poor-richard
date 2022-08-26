@@ -33,7 +33,7 @@
 /*! purgecss end ignore */
 
 .featured-content > p a {
-  @apply underline text-navy;
+  @apply text-navy underline;
   @apply transition-colors duration-500;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .featured-content > p del {
-  @apply line-through text-orange;
+  @apply text-orange line-through;
 }
 
 .featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
@@ -75,11 +75,11 @@
 }
 
 .featured-content > ul {
-  @apply pl-6 list-disc;
+  @apply list-disc pl-6;
 }
 
 .featured-content > ol {
-  @apply pl-6 list-decimal;
+  @apply list-decimal pl-6;
 }
 
 .article-content > :where(*) {
@@ -123,15 +123,15 @@
 }
 
 .article-content > ul {
-  @apply pl-6 list-disc;
+  @apply list-disc pl-6;
 }
 
 .article-content > ol {
-  @apply pl-6 list-decimal;
+  @apply list-decimal pl-6;
 }
 
 .article-content :where(a) {
-  @apply underline text-navy;
+  @apply text-navy underline;
   @apply transition-colors duration-500;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .article-content > p del {
-  @apply line-through text-orange;
+  @apply text-orange line-through;
 }
 
 @responsive {
@@ -166,7 +166,7 @@
 }
 
 .content-aside a {
-  @apply underline text-navy;
+  @apply text-navy underline;
   @apply transition-colors duration-500;
 }
 
@@ -175,10 +175,10 @@
 }
 
 .content-aside > ul {
-  @apply list-disc list-inside;
+  @apply list-inside list-disc;
 }
 .content-aside > ol {
-  @apply list-decimal list-inside;
+  @apply list-inside list-decimal;
 }
 
 @screen sm {
@@ -194,7 +194,7 @@
 .content-aside > h2,
 .content-aside > h3,
 .content-aside > h4 {
-  @apply text-lg font-bold leading-none uppercase;
+  @apply text-lg font-bold uppercase leading-none;
 }
 
 .content-aside > * + h1,
@@ -252,7 +252,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-transparent rounded-full;
+  @apply rounded-full bg-transparent;
 }
 
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
@@ -271,7 +271,7 @@
 }
 
 .site-nav {
-  @apply px-4 bg-black;
+  @apply bg-black px-4;
 }
 
 .site-nav\:container {
@@ -279,7 +279,7 @@
 }
 
 .site-nav\:content {
-  @apply flex items-center justify-between h-16;
+  @apply flex h-16 items-center justify-between;
 }
 
 .site-nav\:logo {
@@ -287,23 +287,23 @@
 }
 
 .site-nav\:logo-svg {
-  @apply h-12 max-w-full pr-4 fill-current sm:pr-0 w-60;
+  @apply h-12 w-60 max-w-full fill-current pr-4 sm:pr-0;
 }
 
 .site-nav\:desktop {
-  @apply items-center justify-end hidden w-full space-x-4 font-sans lg:flex;
+  @apply hidden w-full items-center justify-end space-x-4 font-sans lg:flex;
 }
 
 .site-nav\:item {
-  @apply text-white uppercase duration-500 hover:text-yellow;
+  @apply uppercase text-white duration-500 hover:text-yellow;
 }
 
 .site-nav\:svg-icon {
-  @apply relative inline-block w-4 h-4 align-middle fill-current;
+  @apply relative inline-block h-4 w-4 fill-current align-middle;
 }
 
 .site-nav\:donate-button {
-  @apply flex items-baseline px-2 py-1 font-semibold text-white uppercase rounded min-w-max bg-orange;
+  @apply flex min-w-max items-baseline rounded bg-orange px-2 py-1 font-semibold uppercase text-white;
 }
 
 .site-nav\:mobile {
@@ -311,20 +311,20 @@
 }
 
 .site-nav\:hamburger {
-  @apply px-4 py-2 text-white border border-white rounded;
+  @apply rounded border border-white px-4 py-2 text-white;
 }
 
 .site-nav\:flyout {
-  @apply absolute right-0 z-10 w-48 mt-2 border rounded shadow min-w-min border-g-7;
-  @apply px-4 py-2 space-y-2 text-lg text-white uppercase bg-black;
+  @apply absolute right-0 z-10 mt-2 w-48 min-w-min rounded border border-g-7 shadow;
+  @apply space-y-2 bg-black px-4 py-2 text-lg uppercase text-white;
 }
 
 .site-nav\:flyout-donate {
-  @apply inline-flex items-center px-3 py-2 font-semibold text-white uppercase rounded whitespace-nowrap bg-orange hover:shadow-beige;
+  @apply inline-flex items-center whitespace-nowrap rounded bg-orange px-3 py-2 font-semibold uppercase text-white hover:shadow-beige;
 }
 
 .site-nav\:flyout-donate-svg {
-  @apply inline w-6 h-6 mr-1 fill-current;
+  @apply mr-1 inline h-6 w-6 fill-current;
 }
 
 .site-nav\:flyout-item {
