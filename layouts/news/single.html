@@ -30,7 +30,9 @@
 {{ end }}
 
 {{ define "before-footer" }}
-  <!-- noop -->
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
 {{ end }}
 
 {{ define "footer" }}
