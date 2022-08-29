@@ -29,6 +29,7 @@
   <body
     class="{{ block `body-class` . }}{{ end }}"
     data-ga-label="{{ $pageCat }}"
+    {{ block `body-attributes` . }}{{ end }}
   >
     {{ block "header" . }}
       {{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}
