@@ -1,3 +1,13 @@
+{{ define "nav" }}
+  {{ $tott := site.GetPage "/newsletters/talkofthetown/_index.md" }}
+  {{ $isSCpage := .Page.InSection $tott }}
+  {{ if $isSCpage }}
+    {{ partial "sc/nav.html" . }}
+  {{ else }}
+    {{ partial "tw/nav.html" . }}
+  {{ end }}
+{{ end }}
+
 {{ define "promo" }}
   <!-- noop -->
 {{ end }}
@@ -65,4 +75,11 @@
       {{ partial "component/paginator-level.html" $p }}
     </div>
   </section>
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ $svgs := dict
+    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}
