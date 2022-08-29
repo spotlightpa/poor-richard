@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ end }}
 
+{{ define "nav" }}
+  {{ $tott := site.GetPage "/newsletters/talkofthetown/_index.md" }}
+  {{ $isSCpage := .Page.InSection $tott }}
+  {{ if $isSCpage }}
+    {{ partial "sc/nav.html" . }}
+  {{ else }}
+    {{ partial "tw/nav.html" . }}
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
   <div class="raw-content" data-ga-category="content">
     {{ .Param "raw-content" | safeHTML }}
@@ -23,4 +33,11 @@
 
 {{ define "modal" }}
   <!-- noop -->
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ $svgs := dict
+    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}
