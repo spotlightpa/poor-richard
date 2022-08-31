@@ -14,7 +14,7 @@ type = "root"
 +++
 # Thank you for your generous donation
 
-Thank you for your generous donation in support of Spotlight PA. You should receive a receipt by email — if you do not receive it or if you have any questions, please email membership@spotlightpa.org. 
+Thank you for your generous donation in support of Spotlight PA. You should receive a receipt by email — if you do not receive it or if you have any questions, please email [membership@spotlightpa.org](mailto:membership@spotlightpa.org). 
 
 To receive all of Spotlight PA's journalism via email, sign up for our newsletters at [spotlightpa.org/newsletters](https://www.spotlightpa.org/newsletters). 
 
