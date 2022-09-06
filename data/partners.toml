@@ -185,6 +185,11 @@ url = "https://observer-reporter.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/observer-reporter.png"
 
 [[partners]]
+name = "Pittsburgh City Paper"
+url = "https://www.pghcitypaper.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01hh/f6jd/citypaper.svg"
+
+[[partners]]
 name = "Postindustrial"
 url = "https://postindustrial.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx7b/postindustrial.png"
