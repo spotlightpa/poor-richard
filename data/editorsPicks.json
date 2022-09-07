@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-09-05-SPLCOSTS.md"
+    "content/statecollege/2022-09-07-SPLWALKER.md"
   ],
-  "subfeatures": [
-    "content/news/2022-03-29-SPLNEXT.md",
-    "content/news/2022-03-23-SPLFAIRANA.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2022-09-05-SPLCOSTS.md",
     "content/news/2022-09-01-SPLSTRIKE.md",
-    "content/news/2022-09-01-SPLBDAYXX.md",
-    "content/statecollege/2022-08-30-SPLSCFIRE.md"
+    "content/news/2022-09-01-SPLBDAYXX.md"
   ],
   "topper": []
 }
