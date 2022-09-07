@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/statecollege/2022-09-07-SPLWALKER.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/statecollege/2022-08-30-SPLSCFIRE.md"
+  ],
   "topSlots": [
     "content/news/2022-09-05-SPLCOSTS.md",
     "content/news/2022-09-01-SPLSTRIKE.md",
