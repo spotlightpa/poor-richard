@@ -13,21 +13,13 @@
   "figClass" "mt-1"
   "sizeHint" "256px"
 }}
-{{ $rubricLink := "" }}
-{{ $eyebrow := $params.kicker }}
-{{ if $params.rubric }}
-  {{ $rubricLink = $params.rubric.RelPermalink }}
-  {{ $eyebrow = $params.kicker | default $params.rubric.Title }}
-{{ end }}
 {{ partial "tw/horizontal-list.html" (dict
   "imgOpts" $imgOpts
-  "rubricLink" $rubricLink
-  "eyebrow" $eyebrow
+  "rubricLink" .RelPermalink
+  "eyebrow" $params.published
   "link" .RelPermalink
   "hed" .LinkTitle
   "dek" (printf "by %s" $params.byline)
-  "showDate" true
-  "date" $params.published
-  "dateISO" $params.publishedISO
+  "showDate" false
   )
 }}

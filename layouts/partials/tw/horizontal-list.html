@@ -1,0 +1,64 @@
+<article class="flex flex-col space-y-1">
+  <div data-ga-category="eyebrow">
+    {{ if .rubricLink }}
+      <a
+        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+        href="{{ .rubricLink }}"
+      >
+        {{- .eyebrow -}}
+      </a>
+    {{ else if .eyebrow }}
+      <p
+        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+      >
+        {{- .eyebrow -}}
+      </p>
+    {{ end }}
+  </div>
+  <div
+    class="
+      flex w-full flex-col space-y-2
+      sm:flex-row sm:space-y-0 sm:space-x-6
+    "
+  >
+    <div class="w-full flex-shrink-0 sm:w-64">
+      {{ partial "tw/image-block.html" .imgOpts }}
+    </div>
+    <div class="group w-full flex-grow space-y-1">
+      <h2 class="text-lg font-bold leading-tight tracking-tight text-black">
+        <a
+          class="group-hover:underline"
+          href="{{ .link }}"
+          data-ga-category="hed"
+        >
+          {{ .hed }}
+        </a>
+      </h2>
+      {{ if .dek }}
+        <h3
+          class="font-sans text-base font-semibold leading-tight tracking-normal text-g-7"
+        >
+          <a
+            href="{{ .link }}"
+            class="group-hover:underline"
+            data-ga-category="byline"
+          >
+            {{- .dek -}}
+          </a>
+        </h3>
+      {{ end }}
+      {{- if .showDate }}
+        <h3
+          class="font-sans text-base font-light leading-tight tracking-normal text-g-7"
+          data-ga-category="time"
+        >
+          <a href="{{ .link }}" class="group-hover:underline">
+            <time datetime="{{ .dateISO }}">
+              {{- .date }}
+            </time>
+          </a>
+        </h3>
+      {{- end -}}
+    </div>
+  </div>
+</article>
