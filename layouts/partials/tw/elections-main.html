@@ -75,12 +75,30 @@
         {{ end }}
       </ul>
     </div>
+    {{ range .Param "dates" }}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "{{ .name }}",
+          "startDate": "{{ .date }}",
+          "endDate": "{{ .date }}",
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "PA"
+            }
+          }
+        }
+      </script>
+    {{ end }}
   {{ end }}
 </section>
 
-<section class="py-8 bg-white">
+<section class="px-8 py-12 bg-white">
   <h2 class="font-sans text-3xl font-bold uppercase leading-none tracking-wide text-center">Follow the money</h2>
-  <div class="flex gap-4">
+  <div class="mt-6 flex gap-8">
     <div class="flex-1 mx-auto max-w-screen-sm">
       <iframe
         src='https://flo.uri.sh/visualisation/11123651/embed'
