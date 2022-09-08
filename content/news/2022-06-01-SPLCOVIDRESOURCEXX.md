@@ -1,13 +1,12 @@
 +++
 aliases = ["/about/coronavirus-dashboard-faq/", "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"]
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
-authors = ["Jamie Martines"]
-blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on second boosters ahead of fall."
-byline = "Jamie Martines of Spotlight PA"
-description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on second boosters ahead of fall."
+blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on updated boosters"
+byline = "Spotlight PA Staff"
+description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on updated boosters"
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
-image-description = "Pa. COVID updates: Where to find reliable data and information about Pennsylvania’s COVID response, including vaccines for kids under 5."
+image-description = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests."
 image-size = "hidden"
 internal-budget = "Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
 internal-id = "SPLCOVIDRESOURCEXX"
@@ -27,7 +26,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of August 1, 2022.
+Information on this page is current as of September 8, 2022.
 
 If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
@@ -53,11 +52,7 @@ The CDC has determined eligibility for <a href="https://www.cdc.gov/coronavirus/
 
 <b>Primary vaccine:</b> Anyone 6 months of age and older.
 
-<b>First booster:</b> Anyone ages 5 years of age and older.
-
-<b>Second booster:</b> Anyone over the age of 50, or older than 12 with certain health conditions.
-
-Federal authorities <a href="https://www.nytimes.com/2022/07/28/us/politics/covid-booster-shots.html">are debating</a> when to open up eligibility for second booster shots to other age groups, and are considering expanding those recommendations when updated boosters are available in the fall.
+<b>Updated (bivalent) boosters:</b> In many cases, anyone ages 5 years of age and older. See the CDC website for specific guidance on updated boosters.
 
 The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?s_cid=11747:cdc%20up%20to%20date%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY22">provides resources</a> on how to pick a vaccine or booster, guidance based on age or risk level, and answers to other frequently asked questions on COVID vaccines.
 
@@ -73,11 +68,13 @@ For example, some retail pharmacies like Rite Aid and Walmart will only administ
 
 ## How do I find a COVID test?
 
-Most retail pharmacies carry at-home COVID tests. As of May 17, households may also order eight more free rapid tests from the federal government <a href="https://special.usps.com/testkits">through the U.S. Postal Service website</a>.
+Most retail pharmacies carry at-home COVID tests.
 
-If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital.
+If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
 
 Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in seven counties</a> that, as of mid-July, offer both PCR tests and rapid antigen tests.
+
+The U.S. Postal Service <a href="https://special.usps.com/testkits">suspended its free at-home test program</a> in early September.
 
 ## What should I do if I lose my vaccine card?
 
