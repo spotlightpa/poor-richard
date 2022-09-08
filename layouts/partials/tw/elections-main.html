@@ -78,12 +78,37 @@
   {{ end }}
 </section>
 
+<section class="py-8 bg-white">
+  <h2 class="font-sans text-3xl font-bold uppercase leading-none tracking-wide text-center">Follow the money</h2>
+  <div class="flex gap-4">
+    <div class="flex-1 mx-auto max-w-screen-sm">
+      <iframe
+        src='https://flo.uri.sh/visualisation/11123651/embed'
+        title='Interactive or visual content'
+        class='flourish-embed-iframe'
+        frameborder='0'
+        scrolling='no'
+        style='display: block; width: 100%; height: 600px;'
+        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+    </div>
+    <div class="flex-1 mx-auto max-w-screen-sm">
+      <iframe
+        src='https://flo.uri.sh/visualisation/11123651/embed'
+        title='Interactive or visual content'
+        class='flourish-embed-iframe'
+        frameborder='0'
+        scrolling='no'
+        style='display: block; width: 100%; height: 600px;'
+        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+    </div>
+  </div>
+</section>
+
 {{ if .Content }}
   <div class="article-content mx-auto mt-12 max-w-prose leading-relaxed">
     {{ .Content }}
   </div>
 {{ end }}
-
 
 <section class="bg-white px-6 pt-12 pb-6 text-g-9">
   <nav class="mx-auto mt-12 max-w-prose">
@@ -135,5 +160,4 @@
       {{ end }}
     </nav>
   {{ end }}
-
 </section>
