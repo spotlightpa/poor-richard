@@ -14,8 +14,9 @@
 </section>
 
 {{ if eq $pg.PageNumber 1 }}
-  {{ $highlights := first 3 $pg.Pages }}
-  {{ $pages = after 3 $pg.Pages }}
+  {{ $feature := index $pg.Pages 1 }}
+  {{ $highlights := first 3 (after 2 $pg.Pages) }}
+  {{ $pages = after 5 $pg.Pages }}
   <section class="bg-white px-6 py-4">
     <nav class="">
       <ul class="mx-auto flex flex-wrap items-stretch justify-center gap-4">
@@ -104,16 +105,58 @@
   {{ end }}
 
 
+  <script
+    src="https://stage--viz-redistricting-2020.netlify.app/embed.js"
+    defer
+  ></script>
+
   <section class="bg-white p-6">
-    <div class="mx-auto max-w-screen-md">
+    <div class="mx-auto flex max-w-screen-lg items-start gap-12">
+      <div class="flex-1">
+        <div
+          data-spl-interactive="viz-redistricting-2020"
+          data-spl-path="/district-finder"
+        ></div>
+      </div>
+      <div class="flex-1">
+        {{ with $page := $feature }}
+          {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
+          {{ $imgOpts := dict
+            "filename" (.Param "image")
+            "credit" (.Param "image-credit")
+            "description" (.Param "image-description")
+            "link" .RelPermalink
+            "widthRatio" 16
+            "heightRatio" 9
+            "widths" (slice 128 256 384 512 1280)
+            "figClass" "mt-1"
+            "sizeHint" "256px"
+          }}
+          {{ partial "tw/list-v-item.html" (dict
+            "wrapperClass" "w-full"
+            "imgOpts" $imgOpts
+            "rubricLink" .RelPermalink
+            "eyebrow" $params.published
+            "link" .RelPermalink
+            "hed" .LinkTitle
+            "dek" (printf "by %s" $params.byline)
+            "showDate" false
+            )
+          }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white p-6">
+    <div class="mx-auto max-w-screen-lg">
       <h2
         class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
       >
         Election Coverage from Spotlight&nbsp;PA
       </h2>
     </div>
-    <nav class="mx-auto mt-4 grid max-w-screen-md grid-cols-3 justify-between">
-      {{ $wrappers := slice "mr-auto" "mx-auto" "ml-auto" }}
+    <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
       {{ range $i, $page := $highlights }}
         {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
         {{ $imgOpts := dict
@@ -125,10 +168,10 @@
           "heightRatio" 9
           "widths" (slice 128 256 384 512 1280)
           "figClass" "mt-1"
-          "sizeHint" "256px"
+          "sizeHint" "(min-width: 1080px) 516px, 90vw"
         }}
         {{ partial "tw/list-v-item.html" (dict
-          "wrapperClass" (index $wrappers $i)
+          "wrapperClass" "sm:w-64 lg:w-72"
           "imgOpts" $imgOpts
           "rubricLink" .RelPermalink
           "eyebrow" $params.published
@@ -188,14 +231,17 @@
 
 
 <section class="bg-white p-6 text-g-9">
-  <nav class="mx-auto mt-12 max-w-prose">
+  <nav class="mx-auto mt-12 max-w-screen-lg">
     <h2
-      class="font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+      class="max-w-screen-sm font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
       More Election Coverage from Spotlight&nbsp;PA
     </h2>
-    <hr class="mt-1 border-2 border-black bg-black" />
-    <div class="mt-3 flex flex-col space-y-8 sm:space-y-6" x-ref="archives">
+    <hr class="mt-1 max-w-screen-sm  border-2 border-black bg-black" />
+    <div
+      class="mt-3 flex max-w-screen-sm flex-col space-y-8 sm:space-y-6"
+      x-ref="archives"
+    >
       {{ range $page := $pages }}
         {{ partialCached "tw/list-h-story-date-eyebrow.html" $page $page.RelPermalink }}
       {{ end }}
@@ -204,37 +250,39 @@
 
   {{ with $pg }}
     <nav
-      class="mx-auto flex max-w-prose items-center justify-between gap-4 py-8 font-sans font-semibold"
+      class="mx-auto max-w-screen-lg py-8 font-sans font-semibold"
       data-ga-category="paginator"
     >
-      {{ if .HasPrev }}
-        <span>
-          <a
-            class="
+      <div class="flex max-w-screen-sm items-center justify-between gap-4">
+        {{ if .HasPrev }}
+          <span>
+            <a
+              class="
               outline-none inline-block rounded bg-blue-6 px-3 py-1
               uppercase text-white ring-2 ring-transparent
               hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7
             "
-            href="{{ .Prev.URL }}"
-          >
-            {{- "← Newer" -}}
-          </a>
-        </span>
-      {{ end }}
-      {{ if .HasNext }}
-        <span>
-          <a
-            class="
+              href="{{ .Prev.URL }}"
+            >
+              {{- "← Newer" -}}
+            </a>
+          </span>
+        {{ end }}
+        {{ if .HasNext }}
+          <span>
+            <a
+              class="
               outline-none inline-block rounded bg-blue-6 px-3 py-1
               uppercase text-white ring-2 ring-transparent
               hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7
             "
-            href="{{ .Next.URL }}"
-          >
-            {{- "Older →" -}}
-          </a>
-        </span>
-      {{ end }}
+              href="{{ .Next.URL }}"
+            >
+              {{- "Older →" -}}
+            </a>
+          </span>
+        {{ end }}
+      </div>
     </nav>
   {{ end }}
 </section>
