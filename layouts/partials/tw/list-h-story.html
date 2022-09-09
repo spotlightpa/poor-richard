@@ -19,7 +19,7 @@
   {{ $rubricLink = $params.rubric.RelPermalink }}
   {{ $eyebrow = $params.kicker | default $params.rubric.Title }}
 {{ end }}
-{{ partial "tw/horizontal-list.html" (dict
+{{ partial "tw/list-h-item.html" (dict
   "imgOpts" $imgOpts
   "rubricLink" $rubricLink
   "eyebrow" $eyebrow

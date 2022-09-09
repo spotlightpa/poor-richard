@@ -61,7 +61,7 @@
 
   <div class="flex flex-col space-y-8 sm:space-y-6" x-data="{ showDate: true }">
     <template x-for="story in stories" :key="story.url">
-      {{ partial "tw/story-js.html" . }}
+      {{ partial "tw/list-h-story-js.html" . }}
     </template>
   </div>
 </form>
