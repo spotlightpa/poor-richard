@@ -1,33 +1,25 @@
 {
   "banner": "Read the latest news from our first-ever regional bureau in State College  »",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#c7e8f1",
   "banner-link": "/statecollege",
   "banner-text-color": "#000000",
-  "footer-promo-description": "Your complete guide to Pennsylvania's top local news, amazing people, great places, and delicious food, all from Spotlight PA. Sign up for one of our free daily or weekly newsletters.",
+  "footer-promo-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h4/40r1/6.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/40r3/11.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/40r5/10.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/40r5/9.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/40r6/8.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/40r7/7.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/m774/rally-round-our-coverage-2022-desktop-site-graphic-728-90-px-.png"
   ],
   "footer-promo-desktop-width": 728,
-  "footer-promo-link": "/newsletters",
+  "footer-promo-link": "/donate",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h4/426b/9.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/426a/10.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/4269/11.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/4268/12.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/4267/13.png",
-    "https://files.data.spotlightpa.org/uploads/01h4/4264/14.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/m4z8/rally-mobile-topper-non-tracker.svg",
+    "https://files.data.spotlightpa.org/uploads/01hh/m4z0/rally-mobile-topper-non-tracker-2.svg",
+    "https://files.data.spotlightpa.org/uploads/01hh/m5m2/rally-round-our-coverage-2022-mobile-banner-500-250-px-.svg"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": true,
+  "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01h4/40r7/7.png",
@@ -74,53 +66,57 @@
     "https://files.data.spotlightpa.org/uploads/01h4/4264/14.png"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
+  "sidebar-sticky-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/19.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8t3/20.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8t4/21.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/m5xx/rally-square-1.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m5y5/rally-square-2.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m5y1/rally-square-3.png"
   ],
-  "sidebar-sticky-link": "/newsletters",
+  "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Your support powers the best investigative and public-service journalism in Pennsylvania. Contribute now.",
+  "sidebar-top-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/30.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/31.png",
-    "https://files.data.spotlightpa.org/uploads/01h1/j8kt/29.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/m6n0/4.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m6n4/8.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m6n8/7.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m6nb/6.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m6ne/5.png"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "From top news to hard-hitting investigations to the lighter side of Pennsylvania, Spotlight PA has a free newsletter for you. Sign up now.",
+  "sticky-image-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01h4/3ymc/spotlight-donate-square-ad-set-5-.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/m5xx/rally-square-1.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m5y5/rally-square-2.png",
+    "https://files.data.spotlightpa.org/uploads/01hh/m5y1/rally-square-3.png"
   ],
-  "sticky-link": "/newsletters",
+  "sticky-link": "/donate",
   "support-active": true,
-  "support-bg-color": "#fff94d",
+  "support-bg-color": "#fff6f5",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "Support Spotlight PA »",
-  "support-hed": "THIS IS JUST THE BEGINNING...",
+  "support-cta": "Give Now, Get the Match »",
+  "support-hed": "AN URGENT CALL TO ACTION...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "We believe everyone in Pennsylvania should have access to trusted public-service and investigative journalism. That’s why we don’t have a paywall on our site, charge a subscription fee, or clutter our articles with ads that have nothing to do with our state.\n\n\u003cstrong\u003eInstead, we use the honor system.\u003c/strong\u003e\n\nEach of our stories costs hundreds if not thousands of dollars to produce. If you learned something today, do your part and join our effort to rebuild reliable, high-quality local journalism in Pennsylvania by \u003cstrong\u003emaking a tax-deductible contribution of any amount.\u003c/strong\u003e We can't do this work without you.",
+  "support-text": "The stakes in this election could not be higher. This November, Pennsylvanians will choose between two vastly different visions for our state. Regardless of your political affiliation, reliable, nonpartisan, and accurate reporting is the bedrock of an informed vote and being an informed voter.\n\n\u003cstrong\u003eThat’s why Spotlight PA’s election coverage puts voters first.\u003c/strong\u003e\n\nHere, you won’t find the horse race or the political noise. Instead, you’ll get deep, issue-oriented coverage, guides, and explainers to help you cast your ballot. And we make all of that work available to everyone at no cost — because everyone deserves access to the facts.\n\nBut this vital work depends on your support. As part of our fall fundraising campaign, we’re seeking \u003cstrong\u003e500 pledges in support of our election coverage\u003c/strong\u003e to continue to deliver unique, insightful journalism ahead of this pivotal election. As a special bonus, all gifts will be DOUBLED.",
   "support-text-color": "#000000",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01h9/r400/special-report-83-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hh/m4x7/rally-round-our-coverage-2022-campaign-trackers-1350-225-px-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ff0000",
-  "topper-image-description": "Honor our sacred right to a free press by supporting Spotlight PA's vital work today.",
+  "topper-image-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01h9/r3zz/spring-2022-rectangles-1024-512-px-25-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hh/m5m2/rally-round-our-coverage-2022-mobile-banner-500-250-px-.svg"
   ],
   "topper-mobile-width": 1024
 }
