@@ -23,9 +23,9 @@ topics = ["Elections"]
 
 HARRISBURG — The 2022 election for Pennsylvania governor is coming soon, and Spotlight PA wants to make sure you are prepared to make your choice.
 
-The state’s governors wield a vast amount of power. They propose a yearly spending plan that sets the course for months of policy debates with the General Assembly on issues including education spending and taxes.
+The state’s governor wields a vast amount of power. They propose a yearly spending plan that sets the course for months of policy debates with the General Assembly on issues including education spending and taxes.
 
-They also have the ability to sign into law or veto bills impacting abortion, guns, the minimum wage, health care, and more; hold vast executive powers that allow them to advance their agenda and appoint cabinet secretaries including the state’s top election official; and are the boss to tens of thousands of state employees from police troopers to environmental inspectors.
+The governor also has the ability to sign into law or veto bills impacting abortion, guns, the minimum wage, health care, and more; holds vast executive powers that allow them to advance their agenda and appoint cabinet secretaries including the state’s top election official; and are the boss to tens of thousands of state employees from police troopers to environmental inspectors.
 
 Five gubernatorial candidates will be on the Nov. 8 ballot, alongside their party’s candidate for lieutenant governor. Below, we provide brief biographies for the candidates as well as donor information from the beginning of 2021 through June 6, 2022. Then we break down where the top two candidates stand on the issues.
 
@@ -126,8 +126,6 @@ Her running mate is Michael Badges-Canning, a Butler County environmental activi
 
 <div id="spl-hackenburg"></div>
 
-{{<picture src="external/zkf0arqvkmf2gs8t1mkk16rcq4.jpeg" description="Matt Hackenburg, the Libertarian candidate for governor" caption="Matt Hackenburg, the Libertarian candidate for governor" credit="Courtesy Matt Hackenburg campaign">}} 
-
 ### <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertarian
 
 Hackenburg is a computer engineer from Northampton County. A former member of the Army National Guard, he argues that states should have the ability to nullify federal laws they disagree with, including passing laws that prevent guard members from being deployed overseas without a declaration of war and encouraging the use of precious metals and cryptocurrency instead of the U.S. dollar. He also supports rolling back public education and opposes public health mandates, gun laws, and taxes.
@@ -178,7 +176,9 @@ Shapiro has said he would create jobs by plugging abandoned wells, modernizing h
 
 ### Education
 
-<b>Mastriano</b> said in a March radio interview that he <a href="https://whyy.org/articles/pa-2022-election-governor-candidates-shapiro-mastriano-education-plans/">wants to reduce</a> state per-student public school funding from $19,000 to $10,000 a year, using the difference to fund “education opportunity accounts,” or a restricted fund that parents can use to fund their child’s education at a public or private school. He wants to <a href="https://delawarevalleyjournal.com/mastriano-meltdown-gop-gov-candidate-abruptly-ends-podcast-interview-over-questions-about-qanon-linked-rally/">ban</a> “critical race theory” curricula — an academic concept that has become a catchall term in right-wing spheres to describe anti-racism teachings — through an executive order within his first 100 days in office.
+<b>Mastriano</b> said in a March radio interview that he <a href="https://whyy.org/articles/pa-2022-election-governor-candidates-shapiro-mastriano-education-plans/">wants to reduce</a> state per-student public school funding from $19,000 to $10,000 a year, while creating education opportunity accounts,” or a restricted fund that parents can use to fund their child’s education at a public or private school. He wants to <a href="https://delawarevalleyjournal.com/mastriano-meltdown-gop-gov-candidate-abruptly-ends-podcast-interview-over-questions-about-qanon-linked-rally/">ban</a> “critical race theory” curricula — an academic concept that has become a catchall term in right-wing spheres to describe anti-racism teachings — through an executive order within his first 100 days in office.
+
+<i>This paragraph has been updated. </i>
 
 <b>Shapiro</b> has campaigned as a strong supporter of public schools. In May, his office <a href="https://www.attorneygeneral.gov/taking-action/ag-shapiro-files-brief-in-support-of-fair-funding-in-pennsylvania-schools/">filed a court brief</a> in support of six school districts and others who have sued the state over what they contend is an unfair funding system that has led to chronic disinvestment in some schools. He has advocated for less reliance on standardized tests, and for putting more vocational, technical, and computer training in classrooms. He has said that if elected, he would appoint at least two parents to the state Board of Education, the highest educational authority in the state that creates academic standards.
 
