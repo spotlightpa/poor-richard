@@ -23,15 +23,15 @@ url = "/about/staff/"
 weight = 4
 
 [[main]]
-name = "Mission"
-pre = "is-uppercase"
-url = "/about/mission/"
-weight = 5
-
-[[main]]
 name = "Tips"
 pre = "is-uppercase"
 url = "/tips/"
+weight = 5
+
+[[main]]
+name = "State College"
+pre = "is-uppercase"
+url = "/statecollege/"
 weight = 6
 
 [[footer]]
