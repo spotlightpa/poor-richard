@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-09-07-SPLWALKER.md"
+    "content/statecollege/2022-09-12-SPLPSUMELVIN.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/newsletters/talkofthetown/2022-08-11-1000.md"
+  ],
   "topSlots": [
+    "content/statecollege/2022-09-07-SPLWALKER.md",
     "content/statecollege/2022-08-30-SPLSCFIRE.md",
-    "content/statecollege/2022-08-23-SPLSCABORT.md",
-    "content/statecollege/2022-08-15-SPLOVERTIME15.md"
+    "content/statecollege/2022-08-23-SPLSCABORT.md"
   ],
   "topper": []
 }
