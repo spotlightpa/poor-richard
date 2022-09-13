@@ -72,7 +72,7 @@ Shapiro and other officials <a href="https://www.timesleader.com/archive/356313/
 
 ## Transgender rights
 
-Mastriano voted for <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=972">a bill</a> that would ban transgender girls and women from participating on teams that correspond with their gender (<a href="https://www.metroweekly.com/2022/07/pennsylvania-governor-vetoes-transgender-sports-ban/">legislation that Wolf vetoed it in July</a>) and has said he’d implement such a ban in his first 100 days in office through <a href="https://delawarevalleyjournal.com/mastriano-meltdown-gop-gov-candidate-abruptly-ends-podcast-interview-over-questions-about-qanon-linked-rally/">an executive order</a>.
+Mastriano voted for <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=972">a bill</a> that would ban transgender girls and women from participating on teams that correspond with their gender (<a href="https://www.metroweekly.com/2022/07/pennsylvania-governor-vetoes-transgender-sports-ban/">legislation that Wolf vetoed in July</a>) and has said he’d implement such a ban in his first 100 days in office through <a href="https://delawarevalleyjournal.com/mastriano-meltdown-gop-gov-candidate-abruptly-ends-podcast-interview-over-questions-about-qanon-linked-rally/">an executive order</a>.
 
 In his Republican nomination victory speech, he pledged to restrict transgender people’s access to restrooms, saying “on day one, you can only use the bathroom that your biology, anatomy says.”
 
