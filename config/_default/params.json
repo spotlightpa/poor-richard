@@ -89,9 +89,7 @@
   "sticky-active": true,
   "sticky-image-description": "Support Spotlight PA's trusted, independent election coverage that puts voters first.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hh/m5xx/rally-square-1.png",
-    "https://files.data.spotlightpa.org/uploads/01hh/m5y5/rally-square-2.png",
-    "https://files.data.spotlightpa.org/uploads/01hh/m5y1/rally-square-3.png"
+    "https://files.data.spotlightpa.org/uploads/01hh/zn7h/rally-round-our-coverage-2022-squares-300-250-px-.png"
   ],
   "sticky-link": "/donate",
   "support-active": true,
@@ -108,7 +106,7 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hh/m4x7/rally-round-our-coverage-2022-campaign-trackers-1350-225-px-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hh/zn7g/rally-round-our-coverage-2022-campaign-trackers-1350-225-px-1-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ff0000",
@@ -116,7 +114,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hh/m5m2/rally-round-our-coverage-2022-mobile-banner-500-250-px-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hh/zn7h/rally-round-our-coverage-2022-mobile-banner-500-250-px-2-.svg"
   ],
   "topper-mobile-width": 1024
 }
