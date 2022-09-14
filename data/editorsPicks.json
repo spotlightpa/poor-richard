@@ -1,14 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2022-09-14-SPLEMPLOYMENT14.md"
+    "content/news/2022-09-14-SPLGIFTS15.md"
   ],
   "subfeatures": [
-    "content/news/2022-05-26-SPLADVERTISING26.md",
-    "content/news/2022-02-21-SPLCANNABIS21.md"
+    "content/news/2022-05-31-SPLREFORM.md"
   ],
   "topSlots": [
+    "content/news/2022-09-14-SPLEMPLOYMENT14.md",
     "content/news/2022-09-12-SPLGUVGUIDE.md",
-    "content/statecollege/2022-09-12-SPLPSUMELVIN.md",
     "content/news/2022-09-09-SPLCAPQA.md"
   ],
   "topper": []
