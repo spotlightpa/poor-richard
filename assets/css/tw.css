@@ -295,7 +295,7 @@
 }
 
 .site-nav\:item {
-  @apply uppercase text-white duration-500 hover:text-yellow;
+  @apply uppercase tracking-tight text-white duration-500 hover:text-yellow;
 }
 
 .site-nav\:svg-icon {

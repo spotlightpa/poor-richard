@@ -690,8 +690,9 @@ a.navbar-burger:hover {
 }
 
 .site-nav\:item {
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
   transition-duration: 500ms;
 }
 
