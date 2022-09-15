@@ -40,6 +40,8 @@
   >
     <div class="column is-three-fifths">
       <header class="mb-5">
+        {{ partial "component/hero-image-block.html" . }}
+
         {{ if $showDate }}
           <p
             class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
@@ -57,8 +59,6 @@
         >
           {{ $subtitle }}
         </h2>
-
-        {{ partial "component/hero-image-block.html" . }}
       </header>
       {{ with .Content }}
         <div class="content mb-6">
