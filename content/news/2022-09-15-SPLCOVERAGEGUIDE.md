@@ -35,12 +35,12 @@ This vital work is only possible with your support. If you value this public-ser
 
 <h3>Contents</h3>
 <ol>
-<li><a href="#spl-races”>The races we will cover, and why</a></li>
-<li><a href="#spl-cover”>How we will cover the candidates</a></li>
-<li><a href="#spl-voting”>How we will cover voting</a></li>
-<li><a href="#spl-results”>How we will cover voting results</a></li>
-<li><a href="#spl-coverage”>How you can help guide our coverage</a></li>
-<li><a href="#spl-find”>Where you can find our coverage</a></li>
+<li><a href="#spl-races">The races we will cover, and why</a></li>
+<li><a href="#spl-cover">How we will cover the candidates</a></li>
+<li><a href="#spl-voting">How we will cover voting</a></li>
+<li><a href="#spl-results">How we will cover voting results</a></li>
+<li><a href="#spl-coverage">How you can help guide our coverage</a></li>
+<li><a href="#spl-find">Where you can find our coverage</a></li>
 </ol>
 
 ## The races we will cover, and why
