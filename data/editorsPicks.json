@@ -1,13 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-09-15-SPLLGBTBILL.md"
+    "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md"
   ],
   "subfeatures": [
-    "content/news/2022-09-13-SPLLGBTGUV.md",
-    "content/news/2022-06-14-SPLSPORTBAN.md"
+    "content/statecollege/2022-09-12-SPLPSUMELVIN.md"
   ],
   "topSlots": [
-    "content/news/2022-09-15-SPLCOVERAGEGUIDE.md",
+    "content/news/2022-09-15-SPLLGBTBILL.md",
     "content/news/2022-09-12-SPLGUVGUIDE.md",
     "content/news/2022-09-14-SPLEMPLOYMENT14.md"
   ],
