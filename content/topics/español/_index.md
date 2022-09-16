@@ -7,4 +7,8 @@ title = "Español"
 description = "Translations of select Spotlight PA articles into Spanish"
 kicker = "Español"
 linktitle = "Translations of select Spotlight PA articles into Spanish"
+aliases = [
+    "/topics/espanol/",
+    "/topics/spanish/",
+]
 +++
