@@ -31,6 +31,35 @@ link = "https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/"
 title = "Contact your county election office"
 link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
 
+[[internal-links]]
+title = "Key Dates"
+link = "#dates"
+
+
+[[internal-links]]
+title = "Sample Ballot"
+link = "#ballot"
+
+[[internal-links]]
+title = "Election Guides"
+link = "#guides"
+
+[[internal-links]]
+title = "The Issues"
+link = "#issues"
+
+[[internal-links]]
+title = "Coverage"
+link = "#coverage"
+
+[[internal-links]]
+title = "Follow the Money"
+link = "#money"
+
+[[internal-links]]
+title = "Ask Us"
+link = "#contact"
+
 [[dates]]
 date = "2022-10-24"
 dateVerbose = "Oct. 24"

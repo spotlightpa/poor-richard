@@ -35,7 +35,41 @@
   </div>
 </section>
 
+<section class="bg-white px-6 py-2">
+  <nav class="text-center text-lg font-semibold uppercase">
+    {{ range $i, $item := .Param "internal-links" -}}
+      {{- if ne $i 0 }}
+        {{ if modBool $i 4 }}
+          <br />
+        {{ else }}
+          <span class="mx-2 inline-block h-0 border-l-4 border-g-6 text-g-7"
+            >|</span
+          >
+        {{ end }}
+      {{ end -}}
+      <a
+        href="{{ .link }}"
+        class="underline-l decoration-4 underline-offset-4 hover:decoration-yellow"
+      >
+        {{- .title -}}
+      </a>
+    {{- end }}
+  </nav>
+</section>
+
+<script src="https://www.spotlightpa.org/embed.js" async></script>
+
+<section class="bg-white px-6 py-2">
+  <div class="mx-auto max-w-prose">
+    <div
+      data-spl-embed-version="1"
+      data-spl-src="https://www.spotlightpa.org/embeds/donate/"
+    ></div>
+  </div>
+</section>
+
 <section
+  id="dates"
   x-data='{
       url: "https://unpkg.com/add-to-calendar-button@1.14.6/npm_dist/mjs/index.js",
       data(el) {
@@ -107,7 +141,7 @@
   defer
 ></script>
 
-<section class="bg-white p-6">
+<section class="bg-white p-6" id="ballot">
   <div class="mx-auto flex max-w-screen-lg">
     <div
       class="w-full"
@@ -117,7 +151,74 @@
   </div>
 </section>
 
-<section class="bg-white p-6">
+<section class="bg-white p-6" id="guides">
+  <div class="mx-auto max-w-screen-lg">
+    <h2
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      Election Guides from Spotlight&nbsp;PA
+    </h2>
+  </div>
+  <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
+    {{ $guide := site.GetPage "content/news/2022-09-12-SPLGUVGUIDE.md" }}
+    {{ $stories := slice $guide }}
+    {{ range $i, $page := $stories }}
+      {{ block "election-story" . }}
+        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+        {{ $imgOpts := dict
+          "filename" (.Param "image")
+          "credit" (.Param "image-credit")
+          "description" (.Param "image-description")
+          "link" .RelPermalink
+          "widthRatio" 16
+          "heightRatio" 9
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "mt-1"
+          "sizeHint" "(min-width: 1080px) 288px, 90vw"
+        }}
+        {{ partial "tw/list-v-item.html" (dict
+          "wrapperClass" "sm:w-64 lg:w-72"
+          "imgOpts" $imgOpts
+          "rubricLink" .RelPermalink
+          "eyebrow" $params.published
+          "link" .RelPermalink
+          "hed" .LinkTitle
+          "dek" (printf "by %s" $params.byline)
+          "showDate" false
+          )
+        }}
+      {{ end }}
+    {{ end }}
+  </nav>
+</section>
+
+<section class="bg-white p-6" id="issues">
+  <div class="mx-auto max-w-screen-lg">
+    <h2
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      Issues Coverage from Spotlight&nbsp;PA
+    </h2>
+  </div>
+  <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
+    {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
+    {{ $stories = first 3 $onetwo.RegularPages }}
+    {{ range $i, $page := $stories }}
+      {{ template "election-story" . }}
+    {{ end }}
+  </nav>
+</section>
+
+<section class="bg-white px-6">
+  <div class="mx-auto max-w-prose">
+    <div
+      data-spl-embed-version="1"
+      data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"
+    ></div>
+  </div>
+</section>
+
+<section class="bg-white p-6" id="coverage">
   <div class="mx-auto max-w-screen-lg">
     <h2
       class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
@@ -126,36 +227,15 @@
     </h2>
   </div>
   <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
-    {{ $highlights := slice }}
-    {{ range $i, $page := $highlights }}
-      {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
-      {{ $imgOpts := dict
-        "filename" (.Param "image")
-        "credit" (.Param "image-credit")
-        "description" (.Param "image-description")
-        "link" .RelPermalink
-        "widthRatio" 16
-        "heightRatio" 9
-        "widths" (slice 128 256 384 512 1280)
-        "figClass" "mt-1"
-        "sizeHint" "(min-width: 1080px) 288px, 90vw"
-      }}
-      {{ partial "tw/list-v-item.html" (dict
-        "wrapperClass" "sm:w-64 lg:w-72"
-        "imgOpts" $imgOpts
-        "rubricLink" .RelPermalink
-        "eyebrow" $params.published
-        "link" .RelPermalink
-        "hed" .LinkTitle
-        "dek" (printf "by %s" $params.byline)
-        "showDate" false
-        )
-      }}
+    {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
+    {{ $stories = first 3 $elex.RegularPages }}
+    {{ range $i, $page := $stories }}
+      {{ template "election-story" . }}
     {{ end }}
   </nav>
 </section>
 
-<section class="bg-white p-6">
+<section class="bg-white p-6" id="money">
   <h2
     class="text-center font-sans text-3xl font-bold uppercase leading-none tracking-wide"
   >
@@ -173,8 +253,8 @@
         x-intersect.margin.200px="src = $el.dataset.src"
         :src="src"
         data-src="https://flo.uri.sh/visualisation/11123651/embed"
-        title="Interactive or visual content"
-        class="flourish-embed-iframe"
+        title="Donors to Doug Mastriano"
+        class="flourish-embed-iframe bg-g-5"
         frameborder="0"
         scrolling="no"
         style="display: block; width: 100%; height: 600px;"
@@ -187,8 +267,8 @@
         x-intersect.margin.200px="src = $el.dataset.src"
         :src="src"
         data-src="https://flo.uri.sh/visualisation/11123875/embed"
-        title="Interactive or visual content"
-        class="flourish-embed-iframe"
+        title="Donors to Josh Shapiro"
+        class="flourish-embed-iframe bg-g-5"
         frameborder="0"
         scrolling="no"
         style="display: block; width: 100%; height: 600px;"
@@ -198,21 +278,18 @@
   </div>
 </section>
 
-<section class="bg-white p-6 text-g-9">
-  <nav class="mx-auto mt-12 max-w-screen-lg">
+<section class="bg-white p-6" id="contact">
+  <div class="mx-auto max-w-prose">
     <h2
-      class="max-w-screen-sm font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
-      More Election Coverage from Spotlight&nbsp;PA
+      Ask Us Your Questions
     </h2>
-    <hr class="mt-1 max-w-screen-sm  border-2 border-black bg-black" />
+  </div>
+  <div class="mx-auto max-w-prose">
     <div
-      class="mt-3 flex max-w-screen-sm flex-col space-y-8 sm:space-y-6"
-      x-ref="archives"
-    >
-      {{ range $page := $pages }}
-        {{ partialCached "tw/list-h-story-date-eyebrow.html" $page $page.RelPermalink }}
-      {{ end }}
-    </div>
-  </nav>
+      data-spl-embed-version="1"
+      data-spl-src="https://www.spotlightpa.org/embeds/tips/?flag_text=ELECTION%202022&tip_text=Spotlight%20PA%20is%20covering%20Pennsylvania's%202022%20gubernatorial%20and%20legislative%20elections%20%E2%80%94%20and%20we%20want%20you%20to%20help%20shape%20our%20stories.%20%3Cb%3ETell%20us%20what%20you%20want%20to%20know%20about%20those%20races%2C%20and%20send%20us%20any%20questions%20you%20have%20about%20the%20voting%20system.%3C%2Fb%3E%20Use%20the%20form%20below%20to%20reach%20our%20election%20team.&form_name=elections-embed"
+    ></div>
+  </div>
 </section>
