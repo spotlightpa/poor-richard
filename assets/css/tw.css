@@ -389,8 +389,10 @@ html {
   text-decoration-thickness: 4px;
 }
 
-.decoration-yellow {
-  text-decoration-color: #ffcb05;
+@variants hover {
+  .decoration-yellow {
+    text-decoration-color: #ffcb05;
+  }
 }
 
 .underline-offset-4 {
