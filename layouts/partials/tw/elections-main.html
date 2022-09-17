@@ -21,13 +21,9 @@
     <nav class="">
       <ul class="mx-auto flex flex-wrap items-stretch justify-center gap-4">
         {{ range $i, $_ := .Param "links" }}
-          {{ $color :=  cond (modBool $i 2)
-            "bg-red-6 text-white hover:bg-red-4"
-            "bg-navy-6 text-white hover:bg-navy-4"
-          }}
           <li class="contents">
             <a
-              class="{{ $color }} block whitespace-nowrap rounded-sm p-4 font-sans font-semibold"
+              class="bg-election-green text-white block whitespace-nowrap rounded-sm p-4 font-sans font-semibold hover:bg-election-green-lighter shadow"
               href="{{ .link }}"
             >
               {{- .title -}}

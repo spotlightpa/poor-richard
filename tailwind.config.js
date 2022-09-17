@@ -94,6 +94,13 @@ module.exports = {
         8: "#22416e",
         9: "#20375a",
       },
+      "election-green": {
+        lightest: "#daece9",
+        lighter: "#aad4cc",
+        DEFAULT: "#1b998b",
+        darker: "#1e877b",
+        darkest: "#1d534c",
+      },
     },
     extend: {
       boxShadow: {
