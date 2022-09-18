@@ -1,0 +1,42 @@
+<div class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}">
+  <h2
+    class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+  >
+    {{ .hed }}
+  </h2>
+
+  <nav class="mt-4 flex justify-between">
+    {{ range $i, $page := first 3 .pages }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" .RelPermalink
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "(min-width: 1080px) 288px, 90vw"
+      }}
+      {{ partial "tw/list-v-item.html" (dict
+        "wrapperClass" "sm:w-64 lg:w-72"
+        "imgOpts" $imgOpts
+        "rubricLink" .RelPermalink
+        "eyebrow" $params.published
+        "link" .RelPermalink
+        "hed" .LinkTitle
+        "dek" (printf "by %s" $params.byline)
+        "showDate" false
+        )
+      }}
+    {{ end }}
+  </nav>
+  {{ if gt (len .pages) 3 | and .readMoreLink }}
+    <div class="mt-3 text-right text-lg font-semibold uppercase">
+      <a href="{{ .readMoreLink }}">
+        {{- .readMore | default "Read More" -}}
+      </a>
+    </div>
+  {{ end }}
+</div>

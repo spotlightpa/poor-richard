@@ -152,61 +152,23 @@
 </section>
 
 <section class="bg-white p-6" id="guides">
-  <div class="mx-auto max-w-screen-lg">
-    <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-    >
-      Election Guides from Spotlight&nbsp;PA
-    </h2>
-  </div>
-  <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
-    {{ $guide := site.GetPage "content/news/2022-09-12-SPLGUVGUIDE.md" }}
-    {{ $stories := slice $guide }}
-    {{ range $i, $page := $stories }}
-      {{ block "election-story" . }}
-        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-        {{ $imgOpts := dict
-          "filename" (.Param "image")
-          "credit" (.Param "image-credit")
-          "description" (.Param "image-description")
-          "link" .RelPermalink
-          "widthRatio" 16
-          "heightRatio" 9
-          "widths" (slice 128 256 384 512 1280)
-          "figClass" "mt-1"
-          "sizeHint" "(min-width: 1080px) 288px, 90vw"
-        }}
-        {{ partial "tw/list-v-item.html" (dict
-          "wrapperClass" "sm:w-64 lg:w-72"
-          "imgOpts" $imgOpts
-          "rubricLink" .RelPermalink
-          "eyebrow" $params.published
-          "link" .RelPermalink
-          "hed" .LinkTitle
-          "dek" (printf "by %s" $params.byline)
-          "showDate" false
-          )
-        }}
-      {{ end }}
-    {{ end }}
-  </nav>
+  {{ $guide := site.GetPage "content/news/2022-09-12-SPLGUVGUIDE.md" }}
+  {{ $stories := slice $guide }}
+  {{ partial "tw/list-three-h.html" (dict
+    "hed" "Election Guides from Spotlight PA"
+    "pages" $stories
+    )
+  }}
 </section>
 
 <section class="bg-white p-6" id="issues">
-  <div class="mx-auto max-w-screen-lg">
-    <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-    >
-      Issues Coverage from Spotlight&nbsp;PA
-    </h2>
-  </div>
-  <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
-    {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
-    {{ $stories = first 3 $onetwo.RegularPages }}
-    {{ range $i, $page := $stories }}
-      {{ template "election-story" . }}
-    {{ end }}
-  </nav>
+  {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
+  {{ partial "tw/list-three-h.html" (dict
+    "hed" "Issues Coverage from Spotlight PA"
+    "pages" $onetwo.RegularPages
+    "readMoreLink" $onetwo.RelPermalink
+    )
+  }}
 </section>
 
 <section class="bg-white px-6">
@@ -219,20 +181,23 @@
 </section>
 
 <section class="bg-white p-6" id="coverage">
-  <div class="mx-auto max-w-screen-lg">
-    <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-    >
-      Election Coverage from Spotlight&nbsp;PA
-    </h2>
-  </div>
-  <nav class="mx-auto mt-4 flex max-w-screen-lg justify-between">
-    {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
-    {{ $stories = first 3 $elex.RegularPages }}
-    {{ range $i, $page := $stories }}
-      {{ template "election-story" . }}
-    {{ end }}
-  </nav>
+  {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
+  {{ partial "tw/list-three-h.html" (dict
+    "hed" "Election Coverage from Spotlight PA"
+    "pages" $elex.RegularPages
+    "readMoreLink" $elex.RelPermalink
+    )
+  }}
+</section>
+
+<section class="bg-white p-6" id="espan">
+  {{ $espan := site.GetPage "content/topics/español/_index.md" }}
+  {{ partial "tw/list-three-h.html" (dict
+    "hed" "Spanish Translations from Spotlight PA"
+    "pages" $espan.RegularPages
+    "readMoreLink" $espan.RelPermalink
+    )
+  }}
 </section>
 
 <section class="bg-white p-6" id="money">
