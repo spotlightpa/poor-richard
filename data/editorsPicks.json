@@ -1,13 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md"
+    "content/news/2022-09-19-SPLPACETRIP.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-09-12-SPLPSUMELVIN.md"
+    "content/news/2022-04-11-SPLCASINO.md",
+    "content/news/2022-04-11-SPLSKILLGAMES.md"
   ],
   "topSlots": [
+    "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md",
     "content/news/2022-09-15-SPLLGBTBILL.md",
-    "content/news/2022-09-12-SPLGUVGUIDE.md",
     "content/news/2022-09-14-SPLEMPLOYMENT14.md"
   ],
   "topper": []
