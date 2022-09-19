@@ -125,7 +125,7 @@ Su compañero de fórmula es Michael Badges-Canning, un activista ambiental del 
 
 <i><b>Principales donantes, 2021-6 de junio de 2022:</b></i> Un funcionario estatal del Partido Verde dijo que el Comité de Acción Política (PAC) del partido está recaudando fondos para la candidata. El partido aún no había presentado un informe de finanzas de este año hasta el 6 de septiembre.
 
-<div id="spl-hackenberg"></div>
+<div id="spl-hackenburg"></div>
 
 ## <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertario
 
