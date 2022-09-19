@@ -102,12 +102,14 @@
   @apply mb-0;
 }
 
-.article-content > :where(p, ol, ul, div, figure) + :where(h1, h2, h3, h4, h5, h6) {
+.article-content
+  > :where(p, ol, ul, div, figure)
+  + :where(h1, h2, h3, h4, h5, h6) {
   @apply mt-8;
 }
 
 .article-content > h1 {
-  @apply mb-4 text-3xl font-sans font-semibold leading-tight;
+  @apply mb-4 font-sans text-3xl font-semibold leading-tight;
 }
 
 .article-content > h2 {
