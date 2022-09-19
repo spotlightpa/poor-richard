@@ -125,6 +125,8 @@ Su compañero de fórmula es Michael Badges-Canning, un activista ambiental del 
 
 <i><b>Principales donantes, 2021-6 de junio de 2022:</b></i> Un funcionario estatal del Partido Verde dijo que el Comité de Acción Política (PAC) del partido está recaudando fondos para la candidata. El partido aún no había presentado un informe de finanzas de este año hasta el 6 de septiembre.
 
+<div id="spl-hackenberg"></div>
+
 ## <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertario
 
 Hackenburg es un ingeniero informático del condado de Northampton. Ex miembro de la Guardia Nacional de Ejército, argumenta que los estados deberían tener la capacidad de anular leyes federales con las que estén en desacuerdo, incluyendo la aprobación de leyes que impidan que los miembros de la guardia sean desplegados en el extranjero sin una declaración de guerra y alentar el uso de metales preciosos y criptomonedas en lugar del dólar estadounidense. También apoya la reducción de la educación pública y se opone a los mandatos de la salud pública, las leyes de armas y los impuestos.
