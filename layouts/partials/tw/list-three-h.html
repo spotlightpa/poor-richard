@@ -5,7 +5,7 @@
     {{ .hed }}
   </h2>
 
-  <nav class="mt-4 flex justify-between">
+  <nav class="mt-4 flex flex-col justify-between gap-y-12 md:flex-row">
     {{ range $i, $page := first 3 .pages }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
       {{ $imgOpts := dict
