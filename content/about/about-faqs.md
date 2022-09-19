@@ -6,7 +6,7 @@ url = "/about/faq/"
 +++
 **Q: What is Spotlight PA?**
 
-**A:** Spotlight PA is an independent, nonpartisan and statewide newsroom dedicated to producing investigative journalism about Pennsylvania government — with a particular focus on how it's spending your tax dollars — and significant statewide issues that matter to communities in all corners of the state. The project is led by [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org).
+**A:** Spotlight PA is an independent, nonpartisan and statewide newsroom dedicated to producing investigative journalism about Pennsylvania government — with a particular focus on how it's spending your tax dollars — and significant statewide issues that matter to communities in all corners of the state. The project is led by [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com), and [WITF Public Media](https://www.witf.org).
 
 **Q: What is Spotlight PA’s mission?**
 
@@ -26,11 +26,11 @@ url = "/about/faq/"
 
 **Q: How do I support Spotlight PA?**
 
-**A:** You can [become a member of Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check or discuss other ways to support our mission, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
+**A:** You can [become a member of Spotlight PA here](https://www.spotlightpa.org/donate). If you would like to send a check, please send it to 228 Walnut St., #11728, Harrisburg, PA 17108-1728.
 
 **Q: How do I change a recurring donation or update my credit card?**
 
-**A:** Please contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org) and we'll be happy to help.
+**A:** Please contact [membership@spotlightpa.org](mailto:membership@spotlightpa.org) and we'll be happy to help.
 
 **Q: Is my donation tax deductible?**
 
@@ -48,10 +48,9 @@ url = "/about/faq/"
 
 **A:** Spotlight PA is the largest newsroom dedicated to covering the state government and significant statewide issues, and the only newsroom in the state focused solely on investigative and accountability reporting. We are grant-funded, and that allows us to make all of our decisions based on the best way to inform  and engage you, our reader, as opposed to page views, visitors, ad impressions or other business-related metrics.
 
-**Q: Where is Spotlight PA based?**
+**Q: How can I reach Spotlight PA by mail?**
 
-**A:** Our office in Harrisburg is located at 228 Walnut St., #11728
-Harrisburg, PA 17108-1728. We are currently remote because of the ongoing coronavirus pandemic.
+**A:** Please send all mail to 228 Walnut St., #11728, Harrisburg, PA 17108-1728.
 
 **Q: Where does Spotlight PA’s work appear?**
 
@@ -92,10 +91,6 @@ Harrisburg, PA 17108-1728. We are currently remote because of the ongoing corona
 **Q: How do I stay updated on Spotlight PA’s work?**
 
 **A:** You can [sign up for our weekly newsletter, The Investigator, here](https://www.spotlightpa.org/newsletters).
-
-**Q: How do I pitch an idea to Spotlight PA?**
-
-**A:** Pitches can be sent to our editor in chief at [cbaxter@spotlightpa.org](mailto:cbaxter@spotlightpa.org).
 
 **Q: How do I contact Spotlight PA reporters?**
 
