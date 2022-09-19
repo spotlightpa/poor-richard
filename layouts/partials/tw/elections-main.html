@@ -208,8 +208,8 @@
   >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit
   </h3>
-  <div class="mt-8 flex gap-6">
-    <div class="mx-auto max-w-screen-sm flex-1">
+  <div class="mt-8 flex flex-col gap-y-12 gap-x-6 md:flex-row">
+    <div class="mx-auto w-full max-w-screen-sm">
       <iframe
         x-data="{ src: '' }"
         x-intersect.margin.200px="src = $el.dataset.src"
@@ -223,7 +223,7 @@
         sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
       ></iframe>
     </div>
-    <div class="mx-auto max-w-screen-sm flex-1">
+    <div class="mx-auto w-full max-w-screen-sm">
       <iframe
         x-data="{ src: '' }"
         x-intersect.margin.200px="src = $el.dataset.src"
