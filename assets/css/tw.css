@@ -102,32 +102,40 @@
   @apply mb-0;
 }
 
+.article-content > :where(p, ol, ul, div, figure) + :where(h1, h2, h3, h4, h5, h6) {
+  @apply mt-8;
+}
+
+.article-content > h1 {
+  @apply mb-4 text-3xl font-sans font-semibold leading-tight;
+}
+
 .article-content > h2 {
-  @apply mt-8 mb-4 text-2xl font-semibold leading-tight;
+  @apply mb-4 text-2xl font-semibold leading-tight;
 }
 
 .article-content > h3 {
-  @apply mt-8 mb-4 text-xl font-semibold leading-tight;
+  @apply mb-4 text-xl font-semibold leading-tight;
 }
 
 .article-content > h4 {
-  @apply mt-8 mb-4 text-lg font-semibold leading-tight;
+  @apply mb-4 text-lg font-semibold leading-tight;
 }
 
 .article-content > h5 {
-  @apply mt-8 mb-4 text-base font-semibold leading-tight;
+  @apply mb-4 text-base font-semibold leading-tight;
 }
 
 .article-content > h6 {
-  @apply mt-8 mb-4 text-base italic leading-tight;
+  @apply mb-4 text-base italic leading-tight;
 }
 
 .article-content > ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-8;
 }
 
 .article-content > ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal pl-8;
 }
 
 .article-content :where(a) {
