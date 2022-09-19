@@ -155,8 +155,9 @@
   {{ $guide := site.GetPage "content/news/2022-09-12-SPLGUVGUIDE.md" }}
   {{ $stories := slice $guide }}
   {{ partial "tw/list-three-h.html" (dict
-    "hed" "Election Guides from Spotlight PA"
+    "hed" "PA Election 2022: Candidate And Voting Guides"
     "pages" $stories
+    "readMore" "Read More PA Election 2022 Guides"
     )
   }}
 </section>
@@ -164,9 +165,10 @@
 <section class="bg-white p-6" id="issues">
   {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
   {{ partial "tw/list-three-h.html" (dict
-    "hed" "Issues Coverage from Spotlight PA"
+    "hed" "PA Election 2022: By The Issues"
     "pages" $onetwo.RegularPages
     "readMoreLink" $onetwo.RelPermalink
+    "readMore" "Read More PA Election 2022 Issues Coverage"
     )
   }}
 </section>
@@ -180,9 +182,10 @@
 <section class="bg-white p-6" id="coverage">
   {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
   {{ partial "tw/list-three-h.html" (dict
-    "hed" "Election Coverage from Spotlight PA"
+    "hed" "PA Election 2o22: More Coverage"
     "pages" $elex.RegularPages
     "readMoreLink" $elex.RelPermalink
+    "readMore" "Read More PA Election 2022 Stories"
     )
   }}
 </section>
@@ -190,9 +193,10 @@
 <section class="bg-white p-6" id="espan">
   {{ $espan := site.GetPage "content/topics/español/_index.md" }}
   {{ partial "tw/list-three-h.html" (dict
-    "hed" "Spanish Translations from Spotlight PA"
+    "hed" "Elecciones Pa. 2022: Traducciones al Español"
     "pages" $espan.RegularPages
     "readMoreLink" $espan.RelPermalink
+    "readMore" "Leer Más Historias De La Elección PA 2022"
     )
   }}
 </section>
@@ -206,7 +210,9 @@
   <h3
     class="mt-3 text-center font-sans text-lg font-semibold leading-none text-g-6"
   >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    Donors have contributed millions of dollars to Democrat Josh Shapiro and
+    Republican Doug Mastriano as the two candidates compete to become
+    Pennsylvania’s next governor. Search their donors using the tools below.
   </h3>
   <div class="mt-8 flex flex-col gap-y-12 gap-x-6 md:flex-row">
     <div class="mx-auto w-full max-w-screen-sm">

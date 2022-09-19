@@ -7,7 +7,7 @@ kicker = "Elections"
 title = "Pennsylvania Elections 2022"
 title-tag = "2022 Pennsylvania Election News and Information from Spotlight PA"
 linktitle = "Election news from Spotlight PA"
-dek = "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+dek = "Candidates for governor, U.S. Senate, and more will appear on the Nov. 8 ballot."
 url = "/elections/"
 layout = "elections"
 
@@ -76,11 +76,8 @@ dateVerbose = "Nov. 8"
 name = "Election Day 2022"
 +++
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae, laboriosam mollitia, et fuga numquam molestiae. Placeat vel aliquid hic laboriosam necessitatibus ad in optio? Labore dolore et praesentium, eum!
+As Pennsylvania gears up for the pivotal 2022 election, Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Specifically, we’ll focus our reporting resources on where candidates stand on the issues, how the voting process works, and how to get involved.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+As part of that, our election series — [“One Vote, Two Pennsylvanias”](/series/one-vote-two-pennsylvanias/) — will clearly articulate through policy proposals and issue-based reporting the vastly different visions the candidates for governor have for the future of our state. You can find links to that coverage below, with new stories publishing regularly.
+
+Our new Election Center also features a voter toolbox with key dates, an interactive sample ballot, a campaign finance tracker, and a form to get in contact with our reporters. We invite <a href="mailto:shughes@spotlightpa.org">suggestions for new features</a> for this page, or you can <a href="/news/2022/09/pa-election-2022-mastriano-shapiro-governor-our-coverage-explainer/">read more about how we’re covering the 2022 Pennsylvania election.</a>
