@@ -1,0 +1,9 @@
++++
+published = 2022-09-19T15:52:57.125Z
+image = "2022/09/01hj-h4ag-6t5w-gwbc.jpeg"
+image-credit = "ALEJANDRO A. ALVAREZ / Philadelphia Inquirer"
+kicker = "Pa. Election 2022 Candidate and Voting Guides"
+title = "Pa. Election 2022 Candidate and Voting Guides"
+linktitle = "The 2022 election for governor, U.S. Senate, and more in Pennsylvania could dramatically change the course of the state. Here’s what you need to know to make an informed vote."
+description = "The 2022 election for governor, U.S. Senate, and more in Pennsylvania could dramatically change the course of the state. Here’s what you need to know to make an informed vote."
++++
