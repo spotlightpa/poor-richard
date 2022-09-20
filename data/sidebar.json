@@ -26,7 +26,7 @@
       "label": "NEW INVESTIGATION",
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
-      "page": "content/news/2022-06-02-SPLBROADBAND02.md"
+      "page": "content/news/2022-09-14-SPLEMPLOYMENT14.md"
     },
     {
       "backgroundColor": "#f5f5f5",
@@ -37,10 +37,10 @@
     },
     {
       "backgroundColor": "#000000",
-      "label": "NEW INVESTIGATION",
+      "label": "Election 2022",
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
-      "page": "content/news/2022-05-26-SPLADVERTISING26.md"
+      "page": "content/news/2022-09-12-SPLGUVGUIDE.md"
     }
   ]
 }
