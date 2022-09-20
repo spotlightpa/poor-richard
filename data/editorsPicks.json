@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2022-09-19-SPLPACETRIP.md"
+    "content/news/2022-09-20-SPLMMJRECAP20.md"
   ],
   "subfeatures": [
-    "content/news/2022-04-11-SPLCASINO.md",
-    "content/news/2022-04-11-SPLSKILLGAMES.md"
+    "content/news/2022-09-14-SPLEMPLOYMENT14.md",
+    "content/news/2022-05-26-SPLADVERTISING26.md",
+    "content/news/2022-02-21-SPLCANNABIS21.md"
   ],
   "topSlots": [
+    "content/news/2022-09-19-SPLPACETRIP.md",
     "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md",
-    "content/news/2022-09-15-SPLLGBTBILL.md",
-    "content/news/2022-09-14-SPLEMPLOYMENT14.md"
+    "content/news/2022-09-15-SPLLGBTBILL.md"
   ],
   "topper": []
 }
