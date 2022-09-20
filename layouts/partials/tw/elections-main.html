@@ -1,6 +1,3 @@
-{{ $pages := slice }}
-
-
 <section class="bg-white px-6 pt-16 pb-4">
   <h1 class="text-center text-4xl font-semibold leading-none md:text-6xl">
     {{ .Title }}
@@ -152,11 +149,11 @@
 </section>
 
 <section class="bg-white p-6" id="guides">
-  {{ $guide := site.GetPage "content/news/2022-09-12-SPLGUVGUIDE.md" }}
-  {{ $stories := slice $guide }}
+  {{ $guide := site.GetPage "content/series/voting-guides/_index.md" }}
   {{ partial "tw/list-three-h.html" (dict
     "hed" "PA Election 2022: Candidate And Voting Guides"
-    "pages" $stories
+    "pages" $guide.RegularPages
+    "readMoreLink" $guide.RelPermalink
     "readMore" "Read More PA Election 2022 Guides"
     )
   }}
