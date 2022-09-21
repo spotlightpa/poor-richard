@@ -1,0 +1,193 @@
+{{ $eyebrow := "Like what you read?" }}
+{{ $hed := "Become a Member" }}
+{{ $text := "Help Spotlight PA hold the powerful to account with a gift today." }}
+{{ $btnClass := `outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent` }}
+{{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
+{{ $inactiveClass := `bg-g-4 text-g-8 hover:bg-g-5 focus:ring-g-7 active:ring-g-9` }}
+
+
+<div
+  class="no-js:hidden rounded border border-g-5 p-6 font-sans shadow"
+  x-data="{
+    active: '{{ $activeClass }}',
+    inactive: '{{ $inactiveClass }}',
+    buildClass(cs, val) {
+      return Object.fromEntries(cs.split(/ /).map(c=>[c, val]));
+    },
+    init() {
+      this.activeClasses = {
+        ...this.buildClass(this.active, true),
+        ...this.buildClass(this.inactive, false),
+      }
+      this.inactiveClasses = {
+        ...this.buildClass(this.active, false),
+        ...this.buildClass(this.inactive, true),
+      }
+    },
+    amount: '15',
+    freq: 'm',
+    showOther: false,
+    btnClass(cond) {
+      return cond? this.activeClasses : this.inactiveClasses;
+    },
+    setAmt(freq, amount) {
+      this.freq = freq;
+      this.amount = amount;
+      this.showOther = false;
+    },
+    get donateURL() {
+      let campaign = this.$el.
+        closest('[data-sf-campaign]')?.dataset.sfCampaign ||
+        '701f4000000TVuDAAW';
+      let theme =  this.$el.
+        closest('[data-sf-theme]')?.dataset.sfTheme || '';
+      let period = {
+        o: 'once',
+        m: 'monthly',
+        y: 'yearly',
+      }[this.freq];
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=home&utm_campaign=homepage:midpage`;
+    }
+  }"
+>
+  <div>
+    <h2 class="font-bold uppercase text-red">{{ $eyebrow }}</h2>
+    <h2 class="mt-8 text-center text-3xl font-bold leading-tight">
+      {{ $hed }}
+    </h2>
+    <p class="text-center text-xl leading-tight">
+      {{ $text }}
+    </p>
+    <div class="mt-8 flex justify-center gap-2">
+      <button
+        type="button"
+        class="{{ $btnClass }} {{ $activeClass }}"
+        :class="btnClass(freq === 'm')"
+        @click="setAmt('m', '15')"
+      >
+        Monthly
+      </button>
+      <button
+        type="button"
+        class="{{ $btnClass }} {{ $inactiveClass }}"
+        :class="btnClass(freq === 'y')"
+        @click="setAmt('y', '180')"
+      >
+        Yearly
+      </button>
+      <button
+        type="button"
+        class="{{ $btnClass }} {{ $inactiveClass }}"
+        :class="btnClass(freq === 'o')"
+        @click="setAmt('o', '180')"
+      >
+        One time
+        <span class="hidden sm:inline">only</span>
+      </button>
+    </div>
+    <div class="mt-6 flex justify-center gap-2">
+      {{ define "tw-donate-prefill-button" }}
+        {{ $btnClass := `outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent` }}
+        {{ $inactiveClass := `bg-g-4 text-g-8 hover:bg-g-5 focus:ring-g-7 active:ring-g-9` }}
+
+        {{ $amount := index . 0 }}
+        {{ $period := index . 1 }}
+        {{ $freq := index . 2 }}
+        <button
+          type="button"
+          class="{{ $btnClass }} {{ $inactiveClass }}"
+          :class="btnClass(amount === '{{ $amount }}')"
+          @click="amount = '{{ $amount }}'"
+          x-show="freq === '{{ $freq }}'"
+        >
+          ${{ $amount }}{{ $period }}
+        </button>
+      {{ end }}
+
+      {{ $btn := slice 10 "/mo." "m" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 15 "/mo." "m" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 25 "/mo." "m" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+
+      {{ $btn = slice 120 "/yr." "y" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 180 "/yr." "y" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 300 "/yr." "y" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+
+      {{ $btn = slice 120 "" "o" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 180 "" "o" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+      {{ $btn = slice 300 "" "o" }}
+      {{ template "tw-donate-prefill-button" $btn }}
+
+
+      <button
+        type="button"
+        x-cloak
+        x-show="freq === 'o'"
+        class="{{ $btnClass }} {{ $inactiveClass }}"
+        :class="btnClass(showOther)"
+        @click="showOther = !showOther"
+      >
+        Other
+      </button>
+
+      <button
+        type="button"
+        x-show="freq !== 'o'"
+        class="{{ $btnClass }} {{ $inactiveClass }} hidden sm:inline-block"
+        :class="btnClass(showOther)"
+        @click="showOther = !showOther"
+      >
+        Other
+      </button>
+    </div>
+    <div class="mt-8" x-cloak x-show="showOther" x-transition>
+      {{ $idOther := partial "helper/new-id" . }}
+      <label for="{{ $idOther }}" class="font-bold"> Other Amount: </label>
+      <div class="relative mt-2">
+        <input
+          id="{{ $idOther }}"
+          type="text"
+          class="outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-1 ring-transparent focus:ring-red-4"
+          inputmode="numeric"
+          x-model="amount"
+        />
+        <span
+          class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-5"
+          aria-hidden="true"
+        >
+          $
+        </span>
+      </div>
+    </div>
+    <div class="mt-12 text-center">
+      <a
+        class="outline-none inline-block rounded bg-red-6 px-6 py-3 text-lg font-semibold tracking-wide text-white ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
+        :href="donateURL"
+        data-ga-action="https://www.spotlightpa.org/donate/"
+      >
+        <span class="sm:hidden"> Donate now </span>
+        <span class="hidden sm:inline"> Yes, accountability matters </span>
+        <span class="">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 512 512"
+            class="inline-block h-6 w-6"
+          >
+            <path
+              fill="currentColor"
+              d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"
+            />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
