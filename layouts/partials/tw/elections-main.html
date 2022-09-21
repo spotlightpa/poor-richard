@@ -3,7 +3,7 @@
     {{ .Title }}
   </h1>
   <h2
-    class="mt-3 text-center text-3xl font-semibold leading-none text-g-6 md:text-4xl"
+    class="mt-3 text-center text-3xl font-semibold leading-tight text-g-6 md:text-4xl"
   >
     {{ .Param "dek" }}
   </h2>
@@ -115,7 +115,7 @@
               {{- .dateVerbose -}}
             </time>
           </h3>
-          <p class="mt-6 px-2 text-xl">
+          <p class="mt-6 px-2 text-xl leading-tight">
             {{ .name }}
           </p>
           <button
@@ -130,7 +130,7 @@
             <svg class="mb-2 inline-block h-5 w-5 fill-current">
               <use href="#calendar-svg" />
             </svg>
-            <span class="tracking-tight">Add to Calendar</span>
+            <span class="tracking-wide">Add to Calendar</span>
           </button>
         </li>
       {{ end }}
