@@ -5,7 +5,7 @@
     {{ .hed }}
   </h2>
 
-  <nav class="mt-4 flex flex-col justify-between gap-y-12 md:flex-row">
+  <nav class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
     {{ range $i, $page := first 3 .pages }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
       {{ $imgOpts := dict
@@ -17,10 +17,10 @@
         "heightRatio" 9
         "widths" (slice 128 256 384 512 1280)
         "figClass" "mt-1"
-        "sizeHint" "(min-width: 1080px) 288px, 90vw"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
       }}
       {{ partial "tw/list-v-item.html" (dict
-        "wrapperClass" "sm:w-64 lg:w-72"
+        "wrapperClass" "w-full"
         "imgOpts" $imgOpts
         "rubricLink" .RelPermalink
         "eyebrow" $params.published
