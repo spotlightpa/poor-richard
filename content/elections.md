@@ -68,7 +68,7 @@ name = "Last day to register to vote"
 [[dates]]
 date = "2022-11-01"
 dateVerbose = "Nov. 1"
-name = "Last day to register to vote"
+name = "Last day to request a mail ballot"
 
 [[dates]]
 date = "2022-11-08"
