@@ -34,7 +34,7 @@
   </nav>
   {{ if gt (len .pages) 3 | and .readMoreLink }}
     <div
-      class="decoration-4 underline-offset-4 hover:underline-l mt-3 text-right text-lg font-semibold uppercase"
+      class="decoration-4 underline-offset-4 mt-3 text-right text-lg font-semibold uppercase text-navy underline duration-500 hover:text-yellow"
     >
       <a href="{{ .readMoreLink }}">
         {{- .readMore | default "Read More" -}}
