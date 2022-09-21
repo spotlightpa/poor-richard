@@ -16,7 +16,7 @@ published = 2022-09-15T05:00:00-04:00
 slug = "pa-lgbtq-curriculum-ban-dont-say-gay-2022-election-governor"
 suppress-date = false
 title = "Efforts to ban, restrict LGBTQ curriculum in Pa. schools hinge on who becomes the next governor"
-topics = ["Education", "The Capitol"]
+topics = ["Education", "The Capitol", "Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
