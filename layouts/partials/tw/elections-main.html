@@ -1,41 +1,45 @@
-<section class="bg-white px-6 pt-16 pb-4">
+<section class="bg-white px-6 pt-16 pb-6">
   {{ $banner := partial "helper/build-srcset" (dict
     "filename" "2022/09/01hj-qggb-frqm-s0j4.png"
     "sizes" (slice
-    (dict "width" 650 "height" 125)
-    (dict "width" 850 "height" 164)
+    (dict "width" 621 "height" 120)
+    (dict "width" 1242 "height" 240)
     (dict "width" 1700 "height" 328)
-    (dict "width" 2500 "height" 483)
     ))
   }}
-  <picture class="mx-auto block w-full max-w-screen-md">
-    <img
-      srcset="{{ $banner }}"
-      alt="An Election 2022 banner"
-      class="h-auto w-full object-cover"
-      sizes="(min-width: 850px) 850px, 90vw"
-      width="2500"
-      height="483"
-    />
-  </picture>
-
-  <h1 class="text-center text-4xl font-semibold leading-none md:text-6xl">
-    {{ .Title }}
-  </h1>
-  <h2
-    class="mt-3 text-center text-3xl font-semibold leading-tight text-g-7 md:text-4xl"
-  >
-    {{ .Param "dek" }}
-  </h2>
+  <div class="mx-auto w-full max-w-prose">
+    <div class="pb-8 md:px-6">
+      <picture class="mx-auto block w-0 min-w-full">
+        <img
+          srcset="{{ $banner }}"
+          alt="An Election 2022 banner"
+          class="h-auto w-full object-cover"
+          sizes="(min-width: 850px) 621px, 90vw"
+          width="2500"
+          height="483"
+        />
+      </picture>
+    </div>
+    <h1
+      class="text-4xl font-semibold leading-none md:whitespace-nowrap md:text-5xl"
+    >
+      {{ .Title }}
+    </h1>
+    <h2
+      class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-g-7 md:text-3xl"
+    >
+      {{ .Param "dek" }}
+    </h2>
+  </div>
 </section>
 
 <section class="bg-white px-6 py-6">
-  <nav class="">
-    <ul class="mx-auto max-w-screen-md flex flex-wrap items-stretch justify-center gap-4">
+  <nav class="mx-auto max-w-prose">
+    <ul class="flex flex-wrap items-stretch justify-center gap-4">
       {{ range $i, $_ := .Param "links" }}
         <li class="contents">
           <a
-            class="block whitespace-nowrap rounded-sm bg-election-green p-4 font-sans font-semibold text-white shadow hover:bg-election-green-lighter"
+            class="block flex-1 whitespace-nowrap rounded-sm bg-election-green p-4 text-center font-sans font-semibold text-white shadow hover:bg-election-green-lighter sm:flex-none"
             href="{{ .link }}"
           >
             {{- .title -}}
@@ -77,12 +81,13 @@
 <section class="bg-white px-6 py-8">
   <div class="mx-auto max-w-prose">
     {{ partial "tw/donate-prefill.html" (dict
-        "page" .
-        "eyebrow" "Help Empower Voters"
-        "hed" "Support Our Vital Election Coverage"
-        "body" "The future of Spotlight PA depends on you."
-        "cta" "Contribute Now"
-    )}}
+      "page" .
+      "eyebrow" "Help Empower Voters"
+      "hed" "Support Our Vital Election Coverage"
+      "body" "The future of Spotlight PA depends on you."
+      "cta" "Contribute Now"
+      )
+    }}
   </div>
 </section>
 
