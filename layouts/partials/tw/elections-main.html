@@ -1,9 +1,27 @@
 <section class="bg-white px-6 pt-16 pb-4">
+  {{ $banner := partial "helper/build-srcset" (dict
+    "filename" "2022/09/01hj-qggb-frqm-s0j4.png"
+    "sizes" (slice
+    (dict "width" 650 "height" 125)
+    (dict "width" 850 "height" 164)
+    (dict "width" 1700 "height" 328)
+    (dict "width" 2500 "height" 483)
+    ))
+  }}
+  <picture class="mx-auto block w-full max-w-screen-md">
+    <img
+      srcset="{{ $banner }}"
+      alt="An Election 2022 banner"
+      class="h-full w-full object-cover"
+      sizes="(min-width: 850px) 850px, 90vw"
+    />
+  </picture>
+
   <h1 class="text-center text-4xl font-semibold leading-none md:text-6xl">
     {{ .Title }}
   </h1>
   <h2
-    class="mt-3 text-center text-3xl font-semibold leading-tight text-g-6 md:text-4xl"
+    class="mt-3 text-center text-3xl font-semibold leading-tight text-g-7 md:text-4xl"
   >
     {{ .Param "dek" }}
   </h2>
