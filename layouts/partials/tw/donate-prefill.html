@@ -1,6 +1,8 @@
-{{ $eyebrow := "Like what you read?" }}
-{{ $hed := "Become a Member" }}
-{{ $text := "Help Spotlight PA hold the powerful to account with a gift today." }}
+{{ $eyebrow := .eyebrow | default "Like what you read?" }}
+{{ $hed := .hed | default "Become a Member" }}
+{{ $text := .body | default "Help Spotlight PA hold the powerful to account with a gift today." }}
+{{ $cta := .cta | default "Donate Now" }}
+
 {{ $btnClass := `outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-g-4 text-g-8 hover:bg-g-5 focus:ring-g-7 active:ring-g-9` }}
@@ -148,7 +150,7 @@
       </button>
     </div>
     <div class="mt-8" x-cloak x-show="showOther" x-transition>
-      {{ $idOther := partial "helper/new-id" . }}
+      {{ $idOther := partial "helper/new-id" .page }}
       <label for="{{ $idOther }}" class="font-bold"> Other Amount: </label>
       <div class="relative mt-2">
         <input
@@ -172,9 +174,8 @@
         :href="donateURL"
         data-ga-action="https://www.spotlightpa.org/donate/"
       >
-        <span class="sm:hidden"> Donate now </span>
-        <span class="hidden sm:inline"> Yes, accountability matters </span>
-        <span class="">
+        <span> {{- $cta -}} </span>
+        <span>
           <svg
             aria-hidden="true"
             focusable="false"
