@@ -113,7 +113,11 @@
     class="absolute inset-0 block overflow-hidden opacity-10"
     aria-hidden="true"
   >
-    <img srcset="{{ $srcset }}" class="h-full w-full object-cover" />
+    <img
+      srcset="{{ $srcset }}"
+      class="h-full w-full object-cover"
+      sizes="100vw"
+    />
   </picture>
   <div class="relative mx-auto max-w-screen-lg">
     <h2
