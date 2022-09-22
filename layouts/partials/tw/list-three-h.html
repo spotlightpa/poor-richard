@@ -1,4 +1,7 @@
-<div class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}">
+<div
+  class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}"
+  data-ga-category="threeup"
+>
   <h2
     class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
   >
@@ -19,21 +22,24 @@
         "figClass" "mt-1"
         "sizeHint" "(min-width: 850px) 328px, 90vw"
       }}
-      {{ partial "tw/list-v-item.html" (dict
-        "wrapperClass" "w-full"
-        "imgOpts" $imgOpts
-        "rubricLink" .RelPermalink
-        "eyebrow" $params.published
-        "link" .RelPermalink
-        "hed" .LinkTitle
-        "dek" (printf "by %s" $params.byline)
-        "showDate" false
-        )
-      }}
+      <div class="contents" data-ga-category="story-{{ add 1 $i }}">
+        {{ partial "tw/list-v-item.html" (dict
+          "wrapperClass" "w-full"
+          "imgOpts" $imgOpts
+          "rubricLink" .RelPermalink
+          "eyebrow" $params.published
+          "link" .RelPermalink
+          "hed" .LinkTitle
+          "dek" (printf "by %s" $params.byline)
+          "showDate" false
+          )
+        }}
+      </div>
     {{ end }}
   </nav>
   {{ if gt (len .pages) 3 | and .readMoreLink }}
     <div
+      data-ga-category="readmore"
       class="decoration-4 underline-offset-4 mt-3 text-right text-lg font-semibold uppercase text-navy underline duration-500 hover:text-yellow"
     >
       <a href="{{ .readMoreLink }}">
