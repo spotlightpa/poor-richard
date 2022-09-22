@@ -127,31 +127,35 @@
     </h2>
     <ul class="mt-8 flex flex-col gap-6 md:flex-row">
       {{ range .Param "dates" }}
-        <li class="flex-1 rounded border border-g-5 bg-white p-4 shadow-inner">
+        <li
+          class="flex flex-1 flex-col rounded border border-g-5 bg-white py-4 px-6 shadow-inner"
+        >
           <h3
-            class="rounded bg-election-green px-3 py-1 text-center font-sans  text-xl font-bold uppercase text-white"
+            class="-mx-2 rounded bg-election-green px-3 py-1 text-center font-sans  text-xl font-bold uppercase text-white"
           >
             <time datetime="{{ .date }}">
               {{- .dateVerbose -}}
             </time>
           </h3>
-          <p class="mt-6 px-2 text-xl leading-tight">
+          <p class="my-6 text-xl leading-tight">
             {{ .name }}
           </p>
-          <button
-            @click.prevent="
+          <p class="mt-auto">
+            <button
+              @click.prevent="
             import(url).then((m) => m.atcb_action(data($el), $el))
           "
-            class="mx-2 mt-6 border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-g-6 hover:border-election-green-darker"
-            type="button"
-            data-name="{{ .name }}"
-            data-date="{{ .date }}"
-          >
-            <svg class="mb-2 inline-block h-5 w-5 fill-current">
-              <use href="#calendar-svg" />
-            </svg>
-            <span class="tracking-wide">Add to Calendar</span>
-          </button>
+              class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-g-6 hover:border-election-green-darker"
+              type="button"
+              data-name="{{ .name }}"
+              data-date="{{ .date }}"
+            >
+              <svg class="mb-2 inline-block h-5 w-5 fill-current">
+                <use href="#calendar-svg" />
+              </svg>
+              <span class="tracking-wide">Add to Calendar</span>
+            </button>
+          </p>
         </li>
       {{ end }}
     </ul>
