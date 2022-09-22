@@ -9,6 +9,7 @@
 
 
 <div
+  data-ga-category="donate-prefill"
   class="no-js:hidden rounded border border-g-5 p-6 font-sans shadow"
   x-data="{
     active: '{{ $activeClass }}',
@@ -48,7 +49,7 @@
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=home&utm_campaign=homepage:midpage`;
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
     }
   }"
 >

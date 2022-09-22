@@ -10,7 +10,11 @@ description = "Candidates for governor, U.S. Senate, and more will appear on the
 linktitle = "Election news from Spotlight PA"
 dek = "Candidates for governor, U.S. Senate, and more will appear on the Nov. 8 ballot."
 url = "/elections/"
+aliases = [
+    "/election/"
+]
 layout = "elections"
+type = "elections"
 
 [[links]]
 title = "Register to vote"
