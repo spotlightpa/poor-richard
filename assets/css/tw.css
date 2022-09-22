@@ -385,6 +385,10 @@ html {
   }
 }
 
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
 .decoration-4 {
   text-decoration-thickness: 4px;
 }
@@ -393,10 +397,6 @@ html {
   .decoration-yellow {
     text-decoration-color: #ffcb05;
   }
-}
-
-.underline-offset-2 {
-  text-underline-offset: 2px;
 }
 
 .underline-offset-4 {
