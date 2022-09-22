@@ -27,9 +27,9 @@
   </h2>
 </section>
 
-<section class="bg-white px-6 py-8">
+<section class="bg-white px-6 py-6">
   <nav class="">
-    <ul class="mx-auto flex flex-wrap items-stretch justify-center gap-4">
+    <ul class="mx-auto max-w-screen-md flex flex-wrap items-stretch justify-center gap-4">
       {{ range $i, $_ := .Param "links" }}
         <li class="contents">
           <a
@@ -44,14 +44,14 @@
   </nav>
 </section>
 
-<section class="bg-white px-6 py-8">
+<section class="bg-white px-6 py-6">
   <div class="article-content mx-auto max-w-prose leading-relaxed">
     {{ .Content }}
   </div>
 </section>
 
 <section class="hidden bg-white px-6 py-8 md:block">
-  <nav class="text-center text-lg font-semibold uppercase">
+  <nav class="text-center text-xl font-semibold uppercase">
     {{ range $i, $item := .Param "internal-links" -}}
       {{- if ne $i 0 }}
         {{ if modBool $i 4 }}
