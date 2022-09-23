@@ -1,9 +1,9 @@
 +++
 arc-id = "GLATVTPAA5CDNIO4NKPRNDMERI"
 authors = ["Stephen Caruso"]
-blurb = "The GOP-led legislature moved five bills authored by the party’s gubernatorial candidate, forcing Democrats to choose between policies they might support and bolstering Doug Mastriano's record."
+blurb = "The GOP-led legislature moved five bills authored by the party’s gubernatorial candidate, state Sen. Doug Mastriano, forcing Democrats to choose between policies they might support and bolstering the record of their political opponent."
 byline = "Stephen Caruso of Spotlight PA"
-description = "The GOP-led legislature moved five bills authored by the party’s gubernatorial candidate, forcing Democrats to choose between policies they might support and bolstering Doug Mastriano's record."
+description = "The GOP-led legislature moved five bills authored by the party’s gubernatorial candidate, state Sen. Doug Mastriano, forcing Democrats to choose between policies they might support and bolstering the record of their political opponent."
 image = "external/r3g7fm3c9j10hd53y1drbcwmy8.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "The Pennsylvania Capitol this week jolted into action with just six more voting days before the pivotal midterm election, advancing a slew of bills with one common theme while lawmakers raced from fundraiser to fundraiser seeking to bolster their campaign coffers."
