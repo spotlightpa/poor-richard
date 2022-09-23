@@ -248,9 +248,13 @@
 
 <section class="bg-white px-6 py-8" id="espan" data-ga-category="espanol">
   {{ $espan := site.GetPage "content/topics/español/_index.md" }}
+  {{ $primary := (time "2022-05-17").Unix }}
+  {{ $newEspan := where $espan.RegularPages
+    ".PublishDate.Unix" "gt" $primary
+  }}
   {{ partial "tw/list-three-h.html" (dict
     "hed" "Elecciones PA 2022: Traducciones al Español"
-    "pages" (first 1 $espan.RegularPages)
+    "pages" $newEspan
     "readMoreLink" $espan.RelPermalink
     "readMore" "Leer Más Historias De La Elección PA 2022"
     )
@@ -283,7 +287,7 @@
       Pennsylvania’s next governor. Search their donors using the tools below.
     </h3>
     <div class="mt-8 flex flex-col gap-y-12 gap-x-6 md:flex-row">
-      <div class="mx-auto w-full max-w-screen-sm">
+      <div class="mx-auto flow-root w-full max-w-screen-sm">
         <iframe
           x-data="{ src: '' }"
           x-intersect.margin.200px="src = $el.dataset.src"
