@@ -37,12 +37,12 @@ This vital work is only possible with your support. If you value this public-ser
 
 <h3>Contents</h3>
 <ol>
-<li><a href="#spl-races">The races we will cover, and why</a></li>
-<li><a href="#spl-cover">How we will cover the candidates</a></li>
-<li><a href="#spl-voting">How we will cover voting</a></li>
-<li><a href="#spl-results">How we will cover voting results</a></li>
-<li><a href="#spl-coverage">How you can help guide our coverage</a></li>
-<li><a href="#spl-find">Where you can find our coverage</a></li>
+<li><a href="#spl-races”>The races we will cover, and why</a></li>
+<li><a href="#spl-cover”>How we will cover the candidates</a></li>
+<li><a href="#spl-voting”>How we will cover voting</a></li>
+<li><a href="#spl-results”>How we will cover voting results</a></li>
+<li><a href="#spl-coverage”>How you can help guide our coverage</a></li>
+<li><a href="#spl-find”>Where you can find our coverage</a></li>
 </ol>
 
 ## The races we will cover, and why
@@ -84,7 +84,7 @@ Spotlight PA does not publish any editorial or opinion content, nor does it take
 
 There are three aspects to our effort to empower voters: The first is to provide trusted information about where candidates stand on the issues. The second is to explain how elections in Pennsylvania are run, how to properly cast a ballot, and how to get involved in the process. And the third is to educate voters on how they can protect themselves against misinformation and other purposeful efforts to peddle falsehoods or sow confusion.
 
-We will publish guides on how to research candidates, how to become a poll worker, and how to vote, whether you choose to do it by mail or in person. All of this coverage — plus key dates, sample ballots, and more — will be available as part of a new Spotlight PA Election Center website that we’ll be unveiling in the coming days.
+We will publish guides on how to research candidates, how to become a poll worker, and how to vote, whether you choose to do it by mail or in person. All of this coverage — plus key dates, sample ballots, and more — is available as part of a new <a href="https://www.spotlightpa.org/elections" target="_blank">Spotlight PA Election Center website</a>.
 
 After the last presidential election and in the years since, Pennsylvania’s voting process — in particular, its mail voting law — has come under intense scrutiny and attack by Republicans, some of whom have advanced false or misleading claims put forth by former President Donald Trump. Our coverage will seek to help readers parse the noise from the facts.
 
@@ -114,7 +114,7 @@ Send a message using the form below (if you can’t see the form, <a href="https
 
 <div id="spl-find"></div>
 
-All of Spotlight PA’s election coverage will be available on our site and will be shared with our more than 90 newsroom partners across the state. In mid-September, we will launch Spotlight PA’s new Election Center with a voter toolbox, key dates, a feed of election-related stories, an interactive sample ballot, and a campaign finance tracker. Stay tuned for that announcement.
+All of Spotlight PA’s election coverage will be available on our site and will be shared with our more than 90 newsroom partners across the state. We have also launched <a href="https://www.spotlightpa.org/elections" target="_blank">Spotlight PA’s new Election Center</a> with a voter toolbox, key dates, a feed of election-related stories, an interactive sample ballot, and a campaign finance tracker. 
 
 If you’re subscribed to one of our newsletters, you’ll also get periodic Voter Alerts letting you know about our latest coverage, key developments, and important upcoming dates. If you’re not yet subscribed, you can do so at <a href="http://spotlightpa.org/newsletters">spotlightpa.org/newsletters</a>.
 
