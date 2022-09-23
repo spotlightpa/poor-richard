@@ -15,6 +15,20 @@ aliases = [
 ]
 layout = "elections"
 type = "elections"
+credits = """
+{{<featured/credit
+    eyebrow="Content and Editing"
+    name="Sarah Anne Hughes"
+    role="Deputy Editor"
+    email="shughes@spotlightpa.org"
+>}}
+{{<featured/credit
+    eyebrow="Layout"
+    name="Carl Johnson"
+    role="Director of Technology"
+    email="cjohnson@spotlightpa.org"
+>}}
+"""
 
 [[links]]
 title = "Register to vote"
