@@ -1,8 +1,7 @@
 +++
-image = "external/nh0z1hnfvhx52585s1xqsz1gtm.jpeg"
-image-description = "A person drops an absentee ballot into a mailbox."
-image-credit = "YONG KIM / Philadelphia Inquirer"
-image-size = "hidden"
+image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
+image-credit = "Amanda Berg / For Spotlight PA"
 kicker = "Elections"
 title = "Pennsylvania Election 2022"
 title-tag = "2022 Pennsylvania Election News and Information from Spotlight PA"
@@ -28,6 +27,11 @@ credits = """
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
 >}}
+  {{<featured/credit
+    eyebrow="Illustration"
+    name="Leise Hook"
+    role="For Spotlight PA"
+  >}}
 """
 
 [[links]]
