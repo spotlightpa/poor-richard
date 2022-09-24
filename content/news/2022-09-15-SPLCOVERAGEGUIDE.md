@@ -37,12 +37,12 @@ This vital work is only possible with your support. If you value this public-ser
 
 <h3>Contents</h3>
 <ol>
-<li><a href="#spl-races”>The races we will cover, and why</a></li>
-<li><a href="#spl-cover”>How we will cover the candidates</a></li>
-<li><a href="#spl-voting”>How we will cover voting</a></li>
-<li><a href="#spl-results”>How we will cover voting results</a></li>
-<li><a href="#spl-coverage”>How you can help guide our coverage</a></li>
-<li><a href="#spl-find”>Where you can find our coverage</a></li>
+<li><a href="#spl-races">The races we will cover, and why</a></li>
+<li><a href="#spl-cover">How we will cover the candidates</a></li>
+<li><a href="#spl-voting">How we will cover voting</a></li>
+<li><a href="#spl-results">How we will cover voting results</a></li>
+<li><a href="#spl-coverage">How you can help guide our coverage</a></li>
+<li><a href="#spl-find">Where you can find our coverage</a></li>
 </ol>
 
 ## The races we will cover, and why
@@ -114,7 +114,7 @@ Send a message using the form below (if you can’t see the form, <a href="https
 
 <div id="spl-find"></div>
 
-All of Spotlight PA’s election coverage will be available on our site and will be shared with our more than 90 newsroom partners across the state. We have also launched <a href="https://www.spotlightpa.org/elections" target="_blank">Spotlight PA’s new Election Center</a> with a voter toolbox, key dates, a feed of election-related stories, an interactive sample ballot, and a campaign finance tracker. 
+All of Spotlight PA’s election coverage will be available on our site and will be shared with our more than 90 newsroom partners across the state. We have also launched <a href="https://www.spotlightpa.org/elections" target="_blank">Spotlight PA’s new Election Center</a> with a voter toolbox, key dates, a feed of election-related stories, an interactive sample ballot, and a campaign finance tracker.
 
 If you’re subscribed to one of our newsletters, you’ll also get periodic Voter Alerts letting you know about our latest coverage, key developments, and important upcoming dates. If you’re not yet subscribed, you can do so at <a href="http://spotlightpa.org/newsletters">spotlightpa.org/newsletters</a>.
 
