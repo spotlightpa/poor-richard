@@ -74,16 +74,26 @@
       </a>
     {{- end }}
   </nav>
-  <select
-    x-data
-    @change="window.location = event.target.value"
-    class="outline-none block w-full appearance-none rounded-lg border-2 border-g-5 bg-white py-2 px-6 font-sans font-semibold uppercase tracking-wider text-g-6 shadow ring-2 ring-transparent focus:ring-blue-2 active:ring-blue-5 md:hidden"
-  >
-    <option disabled selected>More on this page</option>
-    {{ range .Param "internal-links" }}
-      <option value="{{ .link }}">{{- .title -}}</option>
-    {{ end }}
-  </select>
+  <div class="relative mx-auto w-96 max-w-full md:hidden">
+    <select
+      x-data
+      @change="window.location.assign($event.target.value)"
+      class="outline-none block w-full appearance-none rounded-lg border-2 border-g-5 bg-white py-2 pl-6 font-sans text-xl font-semibold uppercase tracking-wider text-g-6 shadow ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8"
+    >
+      <option disabled selected>Jump to…</option>
+      {{ range .Param "internal-links" }}
+        <option value="{{ .link }}">{{- .title -}}</option>
+      {{ end }}
+    </select>
+    <span
+      class="pointer-events-none absolute inset-y-0 right-6 z-10 inline-flex items-center justify-center leading-none text-g-6"
+      aria-hidden="true"
+    >
+      <svg class="h-6 w-6 fill-current">
+        <use xlink:href="#down-triangle-svg"></use>
+      </svg>
+    </span>
+  </div>
 </section>
 
 <section class="bg-white px-6 py-8">
