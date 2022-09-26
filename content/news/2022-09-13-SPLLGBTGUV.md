@@ -36,7 +36,7 @@ Below, we break down their positions on a number of key issues.
 
 ## Discrimination protections
 
-<b>Mastriano</b> does not support enshrining nondiscrimination protections based on gender identity into law. “Absolutely not, that’s madness,” he said in a <a href="https://soundcloud.com/newstalk1037fm/news-talk-1037fm-welcomes-col-doug-mastriano-12-feb-18" target="_blank">2018 radio interview</a>. The interviewer did not ask about sexual orientation, and Mastriano’s campaign did not respond to a request for comment. 
+<b>Mastriano</b> does not support enshrining nondiscrimination protections based on gender identity or sexual orientation into law, his campaign told the Pennsylvania Family Council in an <a href="https://www.pafamilyvoter.com/candidate/governor/mastriano-doug/" target="_blank">election survey</a>. 
 
 In July, he was part of a unanimous vote to <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=685">remove “acts of homosexuality”</a> from the Pennsylvania crimes code.
 
@@ -50,7 +50,7 @@ In a 2001 <a href="https://s3.documentcloud.org/documents/22023661/gop-nominee-d
 
 He has also called for an expansion of the state’s hate crime laws to cover attacks on LGBTQ individuals, and he <a href="https://joshshapiro.org/policy-lgbtq/">supports</a> banning conversion therapy for minors.
 
-<i>This section has been updated. </i>
+<i>This section has been updated.</i>
 
 ## LGBTQ-inclusive curriculum
 
