@@ -1,33 +1,24 @@
 +++
 arc-id = "OS4ZD2PK6JGLZG7UVJN56JHDQ4"
-internal-id = "SPLEVICTxx"
-internal-budget = ""
-image = "external/et86n59fx2pbcfxr0n6swfghfr.jpeg"
-image-description = "“I’m supposed to be a mom and protect my kid and I’m failing at that,” said Laura Gallagher of Bucks County."
-image-caption = ""
-image-credit = "TYGER WILLIAMS / Philadelphia Inquirer"
-image-size = ""
-published = 2020-11-02T10:00:00Z
-slug = "pa-eviction-cdc-ban-loophole-renters-despair"
 authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Gaping loopholes and vague state guidance leave some Pa. families out of a home despite federal ban on evictions"
-subtitle = ""
-description = "Whether or not families get kicked out often comes down to where they live, and which judge happens to hear their case, a Spotlight PA investigation found."
 blurb = "Whether or not families get kicked out often comes down to where they live, and which judge happens to hear their case, a Spotlight PA investigation found."
+byline = "Charlotte Keith of Spotlight PA"
+description = "Whether or not families get kicked out often comes down to where they live, and which judge happens to hear their case, a Spotlight PA investigation found."
+image = "external/et86n59fx2pbcfxr0n6swfghfr.jpeg"
+image-credit = "TYGER WILLIAMS / Philadelphia Inquirer"
+image-description = "“I’m supposed to be a mom and protect my kid and I’m failing at that,” said Laura Gallagher of Bucks County."
+internal-id = "SPLEVICTxx"
 kicker = "Coronavirus"
-topics = ["Coronavirus", "Eviction"]
-series = ["Locked Out"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
+layout = "featured"
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = "featured"
-extended-kicker = ""
+published = 2020-11-02T05:00:00-05:00
+series = ["Locked Out"]
+slug = "pa-eviction-cdc-ban-loophole-renters-despair"
+suppress-date = false
+suppress-featured = false
+title = "Gaping loopholes and vague state guidance leave some Pa. families out of a home despite federal ban on evictions"
+topics = ["Coronavirus", "Eviction"]
 +++
 
 {{<featured/header
@@ -175,7 +166,7 @@ There has been confusion over how to interpret the CDC order from the start.
 {{<featured/info side="right">}}
 ### What the CDC order requires
 
-To qualify, you must [sign a form](https://www.cdc.gov/coronavirus/2019-ncov/downloads/declaration-form.pdf) declaring under penalty of perjury that:
+To qualify, you must [sign a form](https://web.archive.org/web/20220827082051/https://www.cdc.gov/coronavirus/2019-ncov/downloads/declaration-form.pdf) declaring under penalty of perjury that:
 
 - You have used “best efforts” to obtain all available government assistance for rent or housing.
 - You expect to earn no more than $99,000 in 2020, or did not report any income to the IRS in 2019, or received a CARES Act stimulus check.
