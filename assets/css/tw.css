@@ -406,3 +406,10 @@ html {
 .underline-offset-8 {
   text-underline-offset: 8px;
 }
+
+@supports (grid-template-rows: subgrid) {
+  .row-subgrid {
+    display: grid;
+    grid-template-rows: subgrid;
+  }
+}
