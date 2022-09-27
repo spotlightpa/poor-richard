@@ -1,6 +1,11 @@
 {{ $image := $.Param "image" }}
 {{ with $image }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 900 }}
+  {{ $imgOpt := dict
+    "filename" .
+    "width" 1200
+    "height" 900
+    "gravity" ($.Param "image-gravity")
+  }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
   <meta property="og:image" content="{{ $imgSrc }}" />
   <meta property="og:image:width" content="1200" />
@@ -92,7 +97,12 @@
 {{ end }}
 
 {{ with $image }}
-  {{ $imgOpt := dict "filename" . "width" 1200 "height" 675 }}
+  {{ $imgOpt := dict
+    "filename" .
+    "width" 1200
+    "height" 675
+    "gravity" ($.Param "image-gravity")
+  }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="{{ $imgSrc }}"/>
