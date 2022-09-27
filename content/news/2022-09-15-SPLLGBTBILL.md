@@ -7,6 +7,7 @@ description = " Educators fear a Florida-like proposed ban on elementary school 
 image = "external/aga3xdssdvaypcqr3kk0vm2yg0.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Legislation sponsored by Republican state Sens. Ryan Aument and Scott Martin of Lancaster County would ban classroom instruction on gender identity and sexual orientation in kindergarten through fifth grade, claiming it’s not “age appropriate.”"
+image-gravity = "ce"
 internal-budget = "A Pa. bill targeting LGBTQ youth pits ‘parental rights’ against student well-being"
 internal-id = "SPLLGBTBILL"
 kicker = "Education"
