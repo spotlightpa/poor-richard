@@ -19,14 +19,17 @@
   {{ $name := .Page.Param "image" }}
   {{ $credit := .Page.Param "image-credit" }}
   {{ $description := .Page.Param "image-description" }}
+  {{ $gravity := .Page.Param "image-gravity" }}
   {{ $imgOpts := dict
     "filename" $name
     "credit" $credit
     "description" $description
+    "gravity" $gravity
     "link" .RelPermalink
     "widthRatio" 16
     "heightRatio" 9
     "sizeHint" "25vw"
+    "gravity" (.Page.Param "image-gravity")
   }}
   {{ partial "component/image-block.html" $imgOpts }}
 

@@ -9,6 +9,7 @@
   {{ $caption := .Get "caption" | htmlUnescape }}
   {{ $widthRatio := .Get "width-ratio" | default 3 | int }}
   {{ $heightRatio := .Get "height-ratio" | default 2 | int }}
+  {{ $gravity := .Get "focus" }}
 
   {{ $imgOpts := dict
     "filename" $src
@@ -17,6 +18,7 @@
     "widthRatio" $widthRatio
     "heightRatio" $heightRatio
     "sizeHint" "50vw"
+    "gravity" $gravity
   }}
   {{ partial "component/image-block.html" $imgOpts }}
 

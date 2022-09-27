@@ -21,6 +21,7 @@
         "widths" (slice 128 256 384 512 1280)
         "figClass" "mt-1"
         "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
       }}
       <div class="contents" data-ga-category="story-{{ add 1 $i }}">
         {{ partial "tw/list-v-item.html" (dict
