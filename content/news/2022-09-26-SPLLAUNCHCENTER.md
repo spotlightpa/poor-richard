@@ -5,6 +5,7 @@ byline = "Spotlight PA Staff"
 description = "The free website features a voter toolbox with key election dates, an interactive sample ballot, a campaign finance tracker, and a form to get in contact with our reporters."
 image = "2022/09/01hj-64a5-y92n-68y3.png"
 image-credit = "LEISE HOOK / FOR SPOTLIGHT PA"
+image-gravity = "ce"
 internal-budget = "Spotlight PA launches comprehensive 2022 election center"
 internal-id = "SPLLAUNCHCENTER"
 modal-exclude = false
