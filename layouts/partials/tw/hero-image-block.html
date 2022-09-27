@@ -10,6 +10,7 @@
   "description" $description
   "caption" $caption
   "eager" true
+  "gravity" (.Param "image-gravity")
 }}
 {{ if eq $size "inline" }}
   {{ $imgOpts = dict

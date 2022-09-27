@@ -8,6 +8,7 @@
   "credit" $credit
   "description" $description
   "eager" true
+  "gravity" (.Param "image-gravity")
 }}
 {{ if eq $size "inline" }}
   {{ $imgOpts = dict

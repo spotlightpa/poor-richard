@@ -58,15 +58,32 @@
 {{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
 {{ $credit := .credit }}
 {{ $eager := .eager | default false }}
+{{ $gravity := .gravity }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-g-6" }}
-{{ $sizes := dict "widths" $widths "widthRatio" $widthR "heightRatio" $heightR | partial "helper/build-sizes" }}
-{{ $srcset := dict "sizes" $sizes "filename" $imagename | partial "helper/build-srcset" }}
+
+{{ $sizes :=  partial "helper/build-sizes" (dict
+  "widths" $widths
+  "widthRatio" $widthR
+  "heightRatio" $heightR
+  )
+}}
+{{ $srcset := partial "helper/build-srcset" (dict
+  "sizes" $sizes
+  "filename" $imagename
+  "gravity" $gravity
+  )
+}}
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
 {{ $padding := slice $widthR $heightR | partial "helper/aspect-ratio" }}
-{{ $imgOpt := dict "filename" $imagename "width" $width "height" $height }}
+{{ $imgOpt := dict
+  "filename" $imagename
+  "width" $width
+  "height" $height
+  "gravity" $gravity
+}}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 {{ $showCaption := .showCaption | default false }}
 
