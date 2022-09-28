@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "yarn run test:eslint && yarn run test:prettier",
-    "format": "yarn run format:eslint; yarn run format:prettier",
+    "format": "yarn run format:eslint; yarn run format:prettier; yarn run format:html",
     "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
     "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "test:prettier": "prettier --ignore-path .gitignore --check '**/*.{scss,css,js,yml}'",
