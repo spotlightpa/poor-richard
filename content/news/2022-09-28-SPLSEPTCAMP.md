@@ -7,6 +7,7 @@ description = "Democrat Josh Shapiro raised $25.4 million between early June and
 image = "external/7ytn6brchz3z6ka4zqkbgzc954.jpeg"
 image-credit = "THOMAS HENGGE, STEVEN M. FALK / Philadelphia Inquirer Photographers"
 image-description = "State Sen. Doug Mastriano (left) and Attorney General Josh Shapiro (right)"
+image-gravity = "no"
 internal-budget = "Pa. election 2022: Shapiro something money Mastriano something money"
 internal-id = "SPLSEPTCAMP"
 kicker = "Elections"
