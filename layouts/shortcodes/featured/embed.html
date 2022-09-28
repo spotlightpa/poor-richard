@@ -1,7 +1,7 @@
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-s-7 text-sm mt-4" }}
 
 <figure
   class="{{ $figClass }}"
@@ -14,7 +14,7 @@
     <figcaption class="{{ $capClass }}">
       {{ if $link }}
         <a
-          class="text-g-7 hover:underline hover:text-yellow duration-500"
+          class="text-s-7 hover:underline hover:text-yellow duration-500"
           href="{{ $link }}"
         >
       {{ end }}

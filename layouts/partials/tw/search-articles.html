@@ -13,9 +13,9 @@
         class="
           outline-none block w-full
           appearance-none rounded-lg
-          rounded-r-none border-2 border-g-5 bg-white
-          py-2 pl-4 tracking-wider text-g-8
-          placeholder-g-5 placeholder-opacity-100 focus:border-blue
+          rounded-r-none border-2 border-s-4 bg-white
+          py-2 pl-4 tracking-wider text-s-8
+          placeholder-s-4 placeholder-opacity-100 focus:border-blue
         "
         @input="isLoading = true"
         x-model.debounce.500ms="query"
@@ -29,7 +29,7 @@
           outline-none h-full
           rounded-r-lg border-2 border-yellow-5
           bg-yellow-4 px-4 py-2
-          font-bold uppercase tracking-widest text-g-1
+          font-bold uppercase tracking-widest text-s-0
           focus:border-yellow-6
         "
       >
@@ -48,7 +48,7 @@
   </div>
   <div class="mt-1">
     <p
-      class="font-light text-g-6"
+      class="font-light text-s-6"
       x-show="resultsText"
       x-text="resultsText"
     ></p>

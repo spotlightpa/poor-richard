@@ -64,7 +64,7 @@
   >
     <a
       class="
-        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
+        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-s-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
       "
       href="/donate/"
     >
@@ -92,7 +92,7 @@
     <label
       for="{{ $idEmail }}"
       class="
-        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
+        backdrop-fallback my-8 block w-full rounded p-8 shadow ring-1 ring-s-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter sm:w-96
       "
     >
       <form
@@ -118,14 +118,14 @@
           <span class="relative block">
             <input
               id="{{ $idEmail }}"
-              class="outline-none block h-full w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-orange ring-opacity-50 focus:ring-2"
+              class="outline-none block h-full w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 ring-orange ring-opacity-50 focus:ring-2"
               type="email"
               name="EMAIL"
               placeholder="Email address"
               required
             />
             <span
-              class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
+              class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
               aria-hidden="true"
             >
               <svg class="h-4 w-4 fill-current">
@@ -139,7 +139,7 @@
                 outline-none
                 h-full w-full whitespace-nowrap rounded bg-orange px-4 py-2
                 font-bold uppercase tracking-widest text-white
-                ring-g-5 ring-opacity-50 focus:ring-2
+                ring-s-4 ring-opacity-50 focus:ring-2
               "
               type="submit"
             >
@@ -153,18 +153,18 @@
 </div>
 <figcaption
   aria-hidden="true"
-  class="bg-white p-1 text-right font-sans text-sm uppercase leading-none text-g-6 md:text-base"
+  class="bg-white p-1 text-right font-sans text-sm uppercase leading-none text-s-6 md:text-base"
 >
   {{ .Param "image-credit" }}
 </figcaption>
 
-<section class="bg-white px-4 pt-8 pb-12 text-g-9">
+<section class="bg-white px-4 pt-8 pb-12 text-s-9">
   <article class="featured-content mx-auto max-w-prose leading-relaxed">
     {{ .Content }}
   </article>
 </section>
 
-<section class="bg-beige px-4 pt-8 pb-12 text-g-9">
+<section class="bg-beige px-4 pt-8 pb-12 text-s-9">
   <article class="mx-auto max-w-prose leading-relaxed">
     <h2
       id="donors"

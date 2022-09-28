@@ -45,7 +45,7 @@
     <div class="mx-auto grid w-full max-w-6xl grid-cols-6 gap-x-10 px-8">
       <div class="col-span-4" data-ga-category="picks">
         <a
-          class="mb-3 block w-full border-b border-g-6 font-bold"
+          class="mb-3 block w-full border-b border-s-6 font-bold"
           href="/investigations/"
         >
           {{- "Investigations" -}}
@@ -74,7 +74,7 @@
               "heightRatio" 9
               "widths" (slice 128 256 384 512 1280)
               "figClass" "mt-1"
-              "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+              "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-s-7"
               "sizeHint" "336px"
               "gravity" (.Page.Param "image-gravity")
             }}
@@ -99,7 +99,7 @@
 
       <div class="col-span-2 col-start-5 row-start-1" data-ga-category="picks">
         <a
-          class="mb-3 block w-full border-b border-g-6 font-bold"
+          class="mb-3 block w-full border-b border-s-6 font-bold"
           href="/topics/"
         >
           {{- "Topics" -}}
@@ -127,7 +127,7 @@
       <button
         class="
           rounded-b-lg bg-black px-4 pt-1 pb-2 text-sm
-          text-white transition-all hover:text-g-5
+          text-white transition-all hover:text-s-4
         "
         @click="isCatNavOpen = ! isCatNavOpen"
         x-transition
@@ -136,8 +136,8 @@
         data-ga-button
         :class="
         isCatNavOpen ?
-        'relative -top-px border-b border-g-5 bg-beige text-black hover:text-g-7' :
-        'bg-black text-white hover:text-g-2'
+        'relative -top-px border-b border-s-4 bg-beige text-black hover:text-s-7' :
+        'bg-black text-white hover:text-s-1'
       "
       >
         Investigations &amp; More
@@ -149,7 +149,7 @@
 <!-- For CSS purge -->
 <div hidden>
   <span
-    class="relative -top-px border-b border-g-5 bg-beige text-black hover:text-g-7"
+    class="relative -top-px border-b border-s-4 bg-beige text-black hover:text-s-7"
   ></span>
-  <span class="bg-black text-white hover:text-g-2"></span>
+  <span class="bg-black text-white hover:text-s-1"></span>
 </div>

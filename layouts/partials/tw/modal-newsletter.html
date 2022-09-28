@@ -18,7 +18,7 @@
   aria-modal="true"
   aria-label="Newsletter sign up"
 >
-  <div class="absolute inset-0 bg-g-5 opacity-75"></div>
+  <div class="absolute inset-0 bg-s-4 opacity-75"></div>
   <div
     class="absolute inset-0 backdrop-blur-sm backdrop-filter"
     x-transition.delay.150ms
@@ -29,7 +29,7 @@
     x-transition.delay.50ms
   >
     <form
-      class="m-auto max-w-prose overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
+      class="m-auto max-w-prose overflow-hidden rounded-lg text-center font-sans text-s-9 shadow-lg"
       data-ga-form="newsletters:multi"
       action="{{ .Param `newsletters-action` }}"
       method="post"
@@ -52,7 +52,7 @@
         </p>
         <p class="absolute inset-y-0 right-0 flex items-center p-4">
           <button
-            class="group flex rounded-full text-g-5 hover:text-yellow"
+            class="group flex rounded-full text-s-4 hover:text-yellow"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -88,14 +88,14 @@
             <label class="sr-only" for="{{ $idEmail }}">Email address</label>
             <input
               id="{{ $idEmail }}"
-              class="outline-none block w-full appearance-none rounded border-2 border-g-5 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-5 placeholder-opacity-100 ring-blue-2 focus:ring-2"
+              class="outline-none block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 ring-blue-2 focus:ring-2"
               type="email"
               name="EMAIL"
               placeholder="Email address"
               required
             />
             <span
-              class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-g-5"
+              class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
               aria-hidden="true"
             >
               <svg class="h-4 w-4 fill-current">
@@ -155,7 +155,7 @@
         </button>
         <p class="mt-5 flex space-x-2">
           <button
-            class="flex-grow text-g-6 hover:underline"
+            class="flex-grow text-s-6 hover:underline"
             aria-label="close"
             type="button"
             @click="
@@ -166,7 +166,7 @@
             I’m already a subscriber
           </button>
           <button
-            class="flex-grow text-g-6 hover:underline"
+            class="flex-grow text-s-6 hover:underline"
             aria-label="close"
             type="button"
             @click="isOpen = false"
