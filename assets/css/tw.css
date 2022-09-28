@@ -266,7 +266,7 @@
 }
 
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  @apply bg-g-3;
+  @apply bg-s-2;
 }
 
 .backdrop-fallback {
@@ -325,7 +325,7 @@
 }
 
 .site-nav\:flyout {
-  @apply absolute right-0 z-10 mt-2 w-48 min-w-min rounded border border-g-7 shadow;
+  @apply absolute right-0 z-10 mt-2 w-48 min-w-min rounded border border-s-7 shadow;
   @apply space-y-2 bg-black px-4 py-2 text-lg uppercase text-white;
 }
 

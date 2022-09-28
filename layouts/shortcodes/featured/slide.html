@@ -2,7 +2,7 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-g-8 text-xs xl:text-sm" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-s-8 text-xs xl:text-sm" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
@@ -32,7 +32,7 @@
       class="
         absolute inset-0 block
         overflow-hidden rounded
-        bg-g-4 transition-shadow duration-300
+        bg-s-3 transition-shadow duration-300
         group-focus:shadow-md
       "
     >

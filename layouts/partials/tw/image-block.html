@@ -39,7 +39,7 @@
       class="
         {{ if .rounded }}rounded-b overflow-hidden{{ end }}
         backdrop-fallback absolute inset-x-0 bottom-0 p-4
-        font-sans text-base text-g-1
+        font-sans text-base text-s-0
         backdrop-blur-sm backdrop-brightness-50 backdrop-filter
       "
       x-cloak
@@ -60,7 +60,7 @@
 {{ $eager := .eager | default false }}
 {{ $gravity := .gravity }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
-{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-g-6" }}
+{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-s-6" }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
@@ -116,7 +116,7 @@
     <a
       class="
         {{ $rounded }}
-        relative block w-full overflow-hidden bg-g-4 shadow
+        relative block w-full overflow-hidden bg-s-3 shadow
       "
       href="{{ .link }}"
     >
@@ -127,7 +127,7 @@
       class="
         {{ $rounded }}
         {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
-        relative block w-full overflow-hidden bg-g-4 shadow
+        relative block w-full overflow-hidden bg-s-3 shadow
       "
     >
       {{- template "tw-image-block-picture" $pictOpts -}}
@@ -140,7 +140,7 @@
     </figcaption>
   {{ end }}
   {{ if $showCaption }}
-    <figcaption class="mx-auto mt-2 font-sans text-sm leading-tight text-g-8">
+    <figcaption class="mx-auto mt-2 font-sans text-sm leading-tight text-s-8">
       {{ .caption }}
     </figcaption>
   {{ end }}

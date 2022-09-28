@@ -26,7 +26,7 @@
       {{ .Title }}
     </h1>
     <h2
-      class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-g-7 md:text-3xl"
+      class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-s-7 md:text-3xl"
     >
       {{ .Param "dek" }}
     </h2>
@@ -63,7 +63,7 @@
         {{ if modBool $i 4 }}
           <br />
         {{ else }}
-          <span class="mx-2 inline-block text-g-6"> | </span>
+          <span class="mx-2 inline-block text-s-6"> | </span>
         {{ end }}
       {{ end -}}
       <a
@@ -78,7 +78,7 @@
     <select
       x-data
       @change="window.location.assign($event.target.value)"
-      class="outline-none block w-full appearance-none rounded-lg border-2 border-g-5 bg-white py-2 pl-6 font-sans text-xl font-semibold uppercase tracking-wider text-g-6 shadow ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8"
+      class="outline-none block w-full appearance-none rounded-lg border-2 border-s-4 bg-white py-2 pl-6 font-sans text-xl font-semibold uppercase tracking-wider text-s-6 shadow ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8"
     >
       <option disabled selected>Jump to…</option>
       {{ range .Param "internal-links" }}
@@ -86,7 +86,7 @@
       {{ end }}
     </select>
     <span
-      class="pointer-events-none absolute inset-y-0 right-6 z-10 inline-flex items-center justify-center leading-none text-g-6"
+      class="pointer-events-none absolute inset-y-0 right-6 z-10 inline-flex items-center justify-center leading-none text-s-6"
       aria-hidden="true"
     >
       <svg class="h-6 w-6 fill-current">
@@ -160,7 +160,7 @@
     <ul class="mt-8 flex flex-col gap-6 md:flex-row">
       {{ range .Param "dates" }}
         <li
-          class="flex flex-1 flex-col rounded border border-g-5 bg-white py-4 px-6 shadow-inner"
+          class="flex flex-1 flex-col rounded border border-s-4 bg-white py-4 px-6 shadow-inner"
           data-ga-category="{{ urlize .name }}"
         >
           <h3
@@ -179,7 +179,7 @@
                 $report($event);
                 import(url).then((m) => m.atcb_action(data($el), $el))
               "
-              class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-g-6 hover:border-election-green-darker"
+              class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-s-6 hover:border-election-green-darker"
               type="button"
               data-name="{{ .name }}"
               data-date="{{ .date }}"
@@ -292,7 +292,7 @@
       Follow the money
     </h2>
     <h3
-      class="mt-3 text-center font-sans text-lg font-semibold leading-none text-g-6"
+      class="mt-3 text-center font-sans text-lg font-semibold leading-none text-s-6"
     >
       Donors have contributed millions of dollars to Democrat Josh Shapiro and
       Republican Doug Mastriano as the two candidates compete to become
@@ -306,7 +306,7 @@
           :src="src"
           data-src="https://flo.uri.sh/visualisation/11162395/embed"
           title="Top donors to Doug Mastriano"
-          class="flourish-embed-iframe bg-g-5"
+          class="flourish-embed-iframe bg-s-4"
           frameborder="0"
           scrolling="no"
           style="display: block; width: 100%; height: 350px;"
@@ -318,7 +318,7 @@
           :src="src"
           data-src="https://flo.uri.sh/visualisation/11123651/embed"
           title="All donors to Doug Mastriano"
-          class="flourish-embed-iframe bg-g-5"
+          class="flourish-embed-iframe bg-s-4"
           frameborder="0"
           scrolling="no"
           style="display: block; width: 100%; height: 600px;"
@@ -332,7 +332,7 @@
           :src="src"
           data-src="https://flo.uri.sh/visualisation/11162577/embed"
           title="Top donors to Josh Shapiro"
-          class="flourish-embed-iframe bg-g-5"
+          class="flourish-embed-iframe bg-s-4"
           frameborder="0"
           scrolling="no"
           style="display: block; width: 100%; height: 350px;"
@@ -344,7 +344,7 @@
           :src="src"
           data-src="https://flo.uri.sh/visualisation/11123875/embed"
           title="All donors to Josh Shapiro"
-          class="flourish-embed-iframe bg-g-5"
+          class="flourish-embed-iframe bg-s-4"
           frameborder="0"
           scrolling="no"
           style="display: block; width: 100%; height: 600px;"
