@@ -153,19 +153,19 @@
   @apply text-orange line-through;
 }
 
-@responsive {
+@layer utilities {
   .shape-outside {
     shape-outside: border-box;
   }
 }
 
-@responsive {
+@layer utilities {
   .columns-2 {
     columns: 2;
   }
 }
 
-@responsive {
+@layer utilities {
   .columns-3 {
     columns: 3;
   }
@@ -345,7 +345,7 @@
 
 @tailwind utilities;
 
-@responsive {
+@layer utilities {
   .block-important {
     display: block !important;
   }
@@ -355,7 +355,7 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-@responsive {
+@layer utilities {
   .scroll-mt-20 {
     scroll-margin-top: 5rem;
   }
@@ -369,42 +369,13 @@ html {
   min-height: 65vh;
 }
 
-@responsive {
+@layer utilities {
   .sideways-heading {
     @apply flex justify-end;
     transform: rotate(180deg);
     text-orientation: mixed;
     writing-mode: vertical-rl;
   }
-}
-
-/* Tailwind v2 does underline wrong. TODO: remove for v3. */
-@variants hover, group-hover {
-  .underline-l {
-    text-decoration-line: underline;
-  }
-}
-
-.decoration-2 {
-  text-decoration-thickness: 2px;
-}
-
-.decoration-4 {
-  text-decoration-thickness: 4px;
-}
-
-@variants hover {
-  .decoration-yellow {
-    text-decoration-color: #ffcb05;
-  }
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
-}
-
-.underline-offset-8 {
-  text-underline-offset: 8px;
 }
 
 @supports (grid-template-rows: subgrid) {

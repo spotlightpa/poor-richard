@@ -132,16 +132,11 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      boxShadow: ["active", "group-focus"],
-      ringColor: ["active"],
-    },
-  },
   plugins: [],
   future: {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
   darkMode: "media",
+  content: ["./layouts/**/*.html", "./src/**/*.js}"],
 };
