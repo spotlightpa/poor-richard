@@ -18,6 +18,27 @@ layout = "elections"
 type = "elections"
 credits = """
 {{<featured/credit
+    eyebrow="Reporting"
+    name="Stephen Caruso"
+    role="Capitol Reporter"
+    email="scaruso@spotlightpa.org"
+>}}
+{{<featured/credit
+    name="Angela Couloumbis"
+    role="Investigative Reporter"
+    email="acouloumbis@spotlightpa.org"
+>}}
+{{<featured/credit
+    name="Kate Huangpu"
+    role="Government Reporter"
+    email="khuangpu@spotlightpa.org"
+>}}
+{{<featured/credit
+    name="Katie Meyer"
+    role="Government Editor/Reporter"
+    email="kmeyer@spotlightpa.org"
+>}}
+{{<featured/credit
     eyebrow="Content and Editing"
     name="Sarah Anne Hughes"
     role="Deputy Editor"
@@ -29,11 +50,11 @@ credits = """
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
 >}}
-  {{<featured/credit
+{{<featured/credit
     eyebrow="Illustration"
     name="Leise Hook"
     role="For Spotlight PA"
-  >}}
+>}}
 """
 
 [[links]]
