@@ -96,6 +96,10 @@ source = "assets"
 target = "assets"
 
 [[module.mounts]]
+source = "tailwind.config.js"
+target = "assets/tailwind.config.js"
+
+[[module.mounts]]
 source = "src"
 target = "assets/js"
 

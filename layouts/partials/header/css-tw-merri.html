@@ -1,11 +1,24 @@
 {{ $cssFonts := resources.Get "css/font-merri.css" }}
 {{ $cssTW := resources.Get "css/tw.css" }}
 {{ $css := slice $cssFonts $cssTW | resources.Concat "css/tw-merri.css" }}
-{{ $css = $css | postCSS }}
 {{ if ne hugo.Environment "development" }}
-  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ $css = $css |
+    postCSS |
+    minify |
+    fingerprint |
+    resources.PostProcess
+  }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+{{ else }}
+  <script src="https://cdn.tailwindcss.com/3.1.8"></script>
+  {{ $rsc := resources.Get "js/tailwind/dev.js" | js.Build }}
+  <script src="{{ $rsc.RelPermalink }}"></script>
+  <style type="text/tailwindcss">
+    {{ $css.Content | safeCSS }}
+  </style>
 {{ end }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+
+
 <link
   rel="preload"
   as="font"
