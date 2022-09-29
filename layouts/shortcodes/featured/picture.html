@@ -4,7 +4,7 @@
 {{ $caption := .Get "caption" | htmlUnescape }}
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "mt-4 max-w-content mx-auto text-s-7 text-sm" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "mt-4 max-w-content mx-auto text-s-8 text-sm" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
