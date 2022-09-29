@@ -1,6 +1,6 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $padding := slice .width .height | partial "helper/aspect-ratio" }}
-{{ $bgClass := cond (not .transparent) "bg-s-4" "" }}
+{{ $bgClass := cond (not .transparent) "bg-s-3" "" }}
 
 
 <span class="mx-auto block max-w-full" style="width: {{ .width }}px;">
