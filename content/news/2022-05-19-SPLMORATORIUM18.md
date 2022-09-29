@@ -61,7 +61,7 @@ In certain prisons, getting rid of three group meals daily has freed up time and
 
 “Each facility is different and there is no ‘one size fits all’ solution,” Bivens wrote in an email. “The [Department of Corrections] will continue to assess best practices for each facility and adjust meal delivery as appropriate.”
 
-A March <a href="https://www.prisonsociety.org/_files/ugd/4c2da0_c3eb3ea083524a3cab23666b6d903607.pdf">survey</a> of 429 people at 23 state prisons by Pennsylvania Prison Society, which advocates for people in state prisons, found 62% of respondents would prefer to return to dining hall meals. Eating in a cell eliminated the opportunity to walk and socialize, respondents said, and reduced the number of hot meals.
+A March <a href="https://web.archive.org/web/20220828091708/https://www.prisonsociety.org/_files/ugd/4c2da0_c3eb3ea083524a3cab23666b6d903607.pdf">survey</a> of 429 people at 23 state prisons by Pennsylvania Prison Society, which advocates for people in state prisons, found 62% of respondents would prefer to return to dining hall meals. Eating in a cell eliminated the opportunity to walk and socialize, respondents said, and reduced the number of hot meals.
 
 “Hot meals have been reduced to cold substitute — grilled cheese is now cheesed sandwich; pancakes are now a third hard-boiled egg breakfast,” wrote a person jailed at Albion. “Breakfast(s) are usually already sitting on the block at count time — over an hour before they’re served.”
 
