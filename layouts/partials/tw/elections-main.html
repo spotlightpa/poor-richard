@@ -60,7 +60,13 @@
   <div class="no-js:hidden relative mx-auto w-96 max-w-full">
     <select
       x-data
-      @change="window.location.assign($event.target.value)"
+      @change="
+        window.location.assign($event.target.value);
+        $report({
+          target: $el,
+          currentTarget: window.location,
+        });
+      "
       class="outline-none block w-full appearance-none rounded-lg border-2 border-s-4 bg-white py-2 pl-6 font-sans text-xl font-semibold uppercase tracking-wider text-s-6 shadow ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8"
     >
       <option disabled selected>Jump to…</option>
