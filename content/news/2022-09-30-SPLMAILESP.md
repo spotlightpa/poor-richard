@@ -75,7 +75,7 @@ Los políticos han utilizado <a href="https://www.mcall.com/news/pennsylvania/mc
 
 Visite <a href="https://www.vote.pa.gov/">vote.pa.gov</a> para <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">leer las normas del Departamento de Estado para las papeletas de voto por correo</a>.
 
-<i><b>&gt;&gt;LEE MAS:</b></i>
+<i><b>&gt;&gt;MÁS COBERTURA DE LAS ELECCIONES DE 2022 DE SPOTLIGHT PA:</b></i>
 
 - <a href="https://www.spotlightpa.org/news/2022/09/pa-elecci%C3%B3n-2022-mastriano-shapiro-gobernador-candidatura-completa-gu%C3%ADa/" target="_blank">Su guía completa de los candidatos a gobernador</a>
 
