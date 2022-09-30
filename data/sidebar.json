@@ -37,10 +37,10 @@
     },
     {
       "backgroundColor": "#000000",
-      "label": "Election 2022",
+      "label": "Editor’s Pick",
       "labelColor": "#ffcb03",
-      "linkColor": "#ffffff",
-      "page": "content/news/2022-09-12-SPLGUVGUIDE.md"
+      "linkColor": "#FFFFFF",
+      "page": "content/news/2022-09-19-SPLPACETRIP.md"
     }
   ]
 }
