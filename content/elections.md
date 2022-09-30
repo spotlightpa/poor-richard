@@ -99,7 +99,7 @@ title = "Coverage"
 link = "#coverage"
 
 [[internal-links]]
-title = "Traducciones al Español"
+title = "Español"
 link = "#espan"
 
 [[internal-links]]
