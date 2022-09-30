@@ -1,9 +1,9 @@
 +++
 aliases = ["/about/coronavirus-dashboard-faq/", "/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/"]
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
-blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on updated boosters"
+blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on bivalent booster shots"
 byline = "Spotlight PA Staff"
-description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on updated boosters"
+description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on bivalent booster shots"
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-description = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests."
@@ -26,7 +26,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of September 8, 2022.
+Information on this page is current as of October 1, 2022.
 
 If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
@@ -36,7 +36,7 @@ The following pages provide data related to testing, case counts, and hospitaliz
 
 <b>If you’re looking for Pennsylvania-specific data, check these sources:</b>
 
-<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania Department of Health</a>: Provides Pennsylvania-specific data on case counts, deaths, and hospitalizations by county and ZIP code. A separate dashboard shows detailed information about vaccinations, including boosters. This page also includes information about cases in nursing homes (referred to as long-term care facilities), hospitalizations and deaths among breakthrough cases, and case counts among children 18 and younger.
+<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania Department of Health</a>: Provides Pennsylvania-specific data on case counts, deaths, and hospitalizations by county and ZIP code. A separate dashboard shows detailed information about vaccinations, including boosters. This page also includes information about cases in nursing homes (referred to as long-term care facilities) and case counts among children 18 and younger.
 
 <a href="https://covid.cdc.gov/covid-data-tracker/#county-view?list_select_state=Pennsylvania&data-type=CommunityLevels">Centers for Disease Control and Prevention</a>: Includes data about Pennsylvania case counts, hospitalizations, vaccinations, and testing. This page also includes a map showing <a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/covid-by-county.html">COVID community levels</a>, which some regions might use to determine what types of mitigation measures — like mask guidelines or mandates — to use to prevent the spread of the virus.
 
@@ -50,9 +50,11 @@ The following pages provide data related to testing, case counts, and hospitaliz
 
 The CDC has determined eligibility for <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html">vaccines</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html">boosters</a> to be the following:
 
-<b>Primary vaccine:</b> Anyone 6 months of age and older.
+<b>Primary series doses:</b> Anyone 6 months of age and older.
 
-<b>Updated (bivalent) boosters:</b> In many cases, anyone ages 5 years of age and older. See the CDC website for specific guidance on updated boosters.
+<b>Original (monovalent) booster:</b> Anyone ages 5 to 11.
+
+<b>Updated (bivalent) boosters:</b> Anyone age 12 and older. (See the CDC website for specific guidance on updated boosters.)
 
 The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?s_cid=11747:cdc%20up%20to%20date%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY22">provides resources</a> on how to pick a vaccine or booster, guidance based on age or risk level, and answers to other frequently asked questions on COVID vaccines.
 
@@ -60,11 +62,11 @@ The CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-d
 
 Most retail pharmacies offer vaccines and boosters. Many do not require an appointment, and all COVID vaccines are <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/no-cost.html?s_cid=10473:are%20covid%2019%20vaccines%20free:sem.ga:p:RG:GM:gen:PTN:FY21">free, regardless of insurance or immigration status</a>.
 
+Children, teens, and adults can get a COVID-19 vaccine and a flu shot at the same time, according to the CDC.
+
 You can find locations offering vaccines near you by entering your ZIP code at <a href="http://www.vaccines.gov/">www.vaccines.gov</a>.
 
 <b>If you are looking for vaccines for children younger than 5 years old</b>, be sure to check the boxes for that age group during your search. Not all providers carry vaccines specifically for young children, and some only give vaccines to certain age groups.
-
-For example, some retail pharmacies like Rite Aid and Walmart will only administer vaccines to children over the age of 3. Others have specific policies for scheduling appointments and vaccinating young children, so it’s best to check with the provider before arriving.
 
 ## How do I find a COVID test?
 
@@ -72,7 +74,7 @@ Most retail pharmacies carry at-home COVID tests.
 
 If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
 
-Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in seven counties</a> that, as of mid-July, offer both PCR tests and rapid antigen tests.
+Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
 
 The U.S. Postal Service <a href="https://special.usps.com/testkits">suspended its free at-home test program</a> in early September.
 
