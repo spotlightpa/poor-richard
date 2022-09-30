@@ -9,7 +9,8 @@ aliases = ["/jobs/"]
 ## Current listings
 
 * Newsroom Developer, Democracy Initiative
-* Operations Manager, Spotlight PA
+
+
 
 ## Newsroom Developer, **Democracy Initiative**
 
