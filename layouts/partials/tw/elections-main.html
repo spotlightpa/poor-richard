@@ -57,24 +57,7 @@
 </section>
 
 <section class="bg-white px-6 py-8" data-ga-category="internal-nav">
-  <nav class="hidden text-center text-xl font-semibold uppercase md:block">
-    {{ range $i, $item := .Param "internal-links" -}}
-      {{- if ne $i 0 }}
-        {{ if modBool $i 4 }}
-          <br />
-        {{ else }}
-          <span class="mx-2 inline-block text-s-6"> | </span>
-        {{ end }}
-      {{ end -}}
-      <a
-        href="{{ .link }}"
-        class="decoration-4 underline-offset-4 text-navy underline duration-500 hover:text-yellow"
-      >
-        {{- .title -}}
-      </a>
-    {{- end }}
-  </nav>
-  <div class="relative mx-auto w-96 max-w-full md:hidden">
+  <div class="no-js:hidden relative mx-auto w-96 max-w-full">
     <select
       x-data
       @change="window.location.assign($event.target.value)"
@@ -221,18 +204,19 @@
 
 <section class="bg-white px-6 py-8" id="guides" data-ga-category="guides">
   {{ $guide := site.GetPage "content/series/voting-guides/_index.md" }}
-  {{ partial "tw/list-three-h.html" (dict
+  {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Election 2022: Candidate And Voting Guides"
     "pages" $guide.RegularPages
     "readMoreLink" $guide.RelPermalink
     "readMore" "Read More PA Election 2022 Guides"
+    "rows" 2
     )
   }}
 </section>
 
 <section class="bg-white px-6 py-8" id="issues" data-ga-category="issues">
   {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
-  {{ partial "tw/list-three-h.html" (dict
+  {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Election 2022: By The Issues"
     "pages" $onetwo.RegularPages
     "readMoreLink" $onetwo.RelPermalink
@@ -249,11 +233,13 @@
 
 <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
   {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
-  {{ partial "tw/list-three-h.html" (dict
+  {{ $pages := $elex.RegularPages | complement $guide.RegularPages $onetwo.RegularPages }}
+  {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Election 2o22: More Coverage"
-    "pages" $elex.RegularPages
+    "pages" $pages
     "readMoreLink" $elex.RelPermalink
     "readMore" "Read More PA Election 2022 Stories"
+    "rows" 2
     )
   }}
 </section>
@@ -264,7 +250,7 @@
   {{ $newEspan := where $espan.RegularPages
     ".PublishDate.Unix" "gt" $primary
   }}
-  {{ partial "tw/list-three-h.html" (dict
+  {{ partial "tw/list-3-col-story.html" (dict
     "hed" "Elecciones PA 2022: Traducciones al Español"
     "pages" $newEspan
     "readMoreLink" $espan.RelPermalink
@@ -371,7 +357,7 @@
   </div>
 </section>
 
-<section class="bg-white p-6">
+<section class="bg-white p-6" data-ga-category="credits" id="credits">
   <div class="mx-auto max-w-prose">
     <h2
       class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"

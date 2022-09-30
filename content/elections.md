@@ -99,12 +99,20 @@ title = "Coverage"
 link = "#coverage"
 
 [[internal-links]]
+title = "Traducciones al Español"
+link = "#espan"
+
+[[internal-links]]
 title = "Follow the Money"
 link = "#money"
 
 [[internal-links]]
 title = "Ask Us"
 link = "#contact"
+
+[[internal-links]]
+title = "Credits"
+link = "#credits"
 
 
 [[dates]]
