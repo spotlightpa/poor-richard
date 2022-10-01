@@ -1,19 +1,6 @@
 @tailwind base;
 
-/*! purgecss start ignore */
-[x-cloak] {
-  display: none;
-}
-.no-js\:block {
-  display: none;
-}
-.has-old-js .no-js\:block {
-  display: block;
-}
-.has-old-js .no-js\:hidden {
-  display: none;
-}
-/*! purgecss end ignore */
+@tailwind components;
 
 .featured-content > p a {
   @apply text-navy underline;
@@ -136,12 +123,6 @@
   @apply text-orange line-through;
 }
 
-@layer utilities {
-  .shape-outside {
-    shape-outside: border-box;
-  }
-}
-
 .content-aside > p {
   @apply leading-relaxed;
 }
@@ -189,56 +170,6 @@
 .content-aside ul > li + li,
 .content-aside ol > li + li {
   @apply mt-3;
-}
-
-.bg-key {
-  background-image: url("/featured/img/icon__key__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
-
-.bg-info {
-  background-image: url("/featured/img/icon__info__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
-
-.bg-pullquote {
-  background-image: url("/featured/img/quote__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
-
-.custom-scrollbar {
-  scrollbar-color: transparent transparent;
-}
-
-.custom-scrollbar:hover {
-  scrollbar-color: #f5f5f5 transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  @apply h-2 bg-transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-transparent;
-}
-
-.custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  @apply bg-s-2;
-}
-
-/* if backdrop support: very transparent and blurred */
-@supports (
-  not (-webkit-backdrop-filter: none) and not (backdrop-filter: none)
-) {
-  .backdrop-fallback {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
 }
 
 .site-nav {
@@ -303,19 +234,62 @@
   @apply block w-full transition-colors duration-500 hover:text-yellow;
 }
 
-@tailwind components;
+.bg-key {
+  background-image: url("/featured/img/icon__key__graphic.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+.bg-info {
+  background-image: url("/featured/img/icon__info__graphic.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+.bg-pullquote {
+  background-image: url("/featured/img/quote__graphic.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.custom-scrollbar {
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: #f5f5f5 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  @apply h-2 bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-transparent;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  @apply bg-s-2;
+}
 
 @tailwind utilities;
-
-.text-shadow {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-}
 
 .print-exact {
   print-color-adjust: exact;
 }
 
 @layer utilities {
+  .shape-outside {
+    shape-outside: border-box;
+  }
+
+  .text-shadow {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
   .sideways-heading {
     @apply flex justify-end;
     transform: rotate(180deg);
@@ -330,3 +304,27 @@
     grid-template-rows: subgrid;
   }
 }
+
+/* if backdrop support: very transparent and blurred */
+@supports (
+  not (-webkit-backdrop-filter: none) and not (backdrop-filter: none)
+) {
+  .backdrop-fallback {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+/*! purgecss start ignore */
+[x-cloak] {
+  display: none;
+}
+.no-js\:block {
+  display: none;
+}
+.has-old-js .no-js\:block {
+  display: block;
+}
+.has-old-js .no-js\:hidden {
+  display: none;
+}
+/*! purgecss end ignore */
