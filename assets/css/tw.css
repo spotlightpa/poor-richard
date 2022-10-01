@@ -243,6 +243,7 @@
 
 .site-nav {
   @apply bg-black px-4;
+  print-color-adjust: exact;
 }
 
 .site-nav\:container {
@@ -308,6 +309,10 @@
 
 .text-shadow {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.print-exact {
+  print-color-adjust: exact;
 }
 
 @layer utilities {

@@ -103,7 +103,7 @@
         </div>
       </header>
 
-      <div class="{{ $mainWellClass }} w-full lg:w-screen">
+      <div class="{{ $mainWellClass }} w-full print:!max-w-md lg:w-screen">
         {{ partial "tw/hero-image-block.html" . }}
       </div>
 
@@ -186,7 +186,7 @@
     </article>
 
     <aside
-      class="{{ $rightRailClass }} mt-6 grid-cols-2 place-items-center items-stretch gap-4"
+      class="{{ $rightRailClass }} mt-6 grid-cols-2 place-items-center items-stretch gap-4 print:!hidden"
       data-ga-category="sidebar"
     >
       {{ partial $sidebarNewsletter . }}
@@ -239,7 +239,7 @@
     </aside>
 
     {{ if .Param "suppress-related" | not }}
-      <nav class="{{ $mainWellClass }} mt-12">
+      <nav class="{{ $mainWellClass }} mt-12 print:!hidden">
         {{ $related := .Parent.RegularPages.Related . | first 10 }}
         {{ partial "tw/related-articles.html" $related }}
       </nav>
