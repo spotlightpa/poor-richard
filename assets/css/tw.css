@@ -1,22 +1,5 @@
 @tailwind base;
 
-.base-16 {
-  font-size: 16px;
-}
-
-.base-17 {
-  font-size: 17px;
-}
-
-.drop-cap:first-letter {
-  float: left;
-  font-size: 4.25rem;
-  line-height: 1;
-  padding-top: 0.25rem;
-  padding-right: 0.5rem;
-  padding-left: 0.25rem;
-}
-
 /*! purgecss start ignore */
 [x-cloak] {
   display: none;
@@ -159,18 +142,6 @@
   }
 }
 
-@layer utilities {
-  .columns-2 {
-    columns: 2;
-  }
-}
-
-@layer utilities {
-  .columns-3 {
-    columns: 3;
-  }
-}
-
 .content-aside > p {
   @apply leading-relaxed;
 }
@@ -241,14 +212,6 @@
   background-size: 100px;
 }
 
-.snap-x {
-  scroll-snap-type: x mandatory;
-}
-
-.snap-center {
-  scroll-snap-align: center;
-}
-
 .custom-scrollbar {
   scrollbar-color: transparent transparent;
 }
@@ -269,14 +232,12 @@
   @apply bg-s-2;
 }
 
-.backdrop-fallback {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
 /* if backdrop support: very transparent and blurred */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+@supports (
+  not (-webkit-backdrop-filter: none) and not (backdrop-filter: none)
+) {
   .backdrop-fallback {
-    background: revert;
+    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -345,28 +306,8 @@
 
 @tailwind utilities;
 
-@layer utilities {
-  .block-important {
-    display: block !important;
-  }
-}
-
 .text-shadow {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-@layer utilities {
-  .scroll-mt-20 {
-    scroll-margin-top: 5rem;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.anchor-section {
-  min-height: 65vh;
 }
 
 @layer utilities {
