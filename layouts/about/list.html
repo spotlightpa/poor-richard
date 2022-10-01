@@ -1,3 +1,7 @@
+{{ define "html-class" -}}
+  scroll-smooth
+{{- end }}
+
 {{ define "static-head" }}
   {{ partialCached "header/static-tw.html" . }}
   {{ $color := "#000" }}
@@ -7,7 +11,7 @@
   <meta name="theme-color" content="{{ $color }}" />
 {{ end }}
 
-{{ define "body-class" }}base-16 bg-white font-sans leading-normal{{ end }}
+{{ define "body-class" }}text-[16px] bg-white font-sans leading-normal{{ end }}
 
 {{ define "header" }}
   <header
