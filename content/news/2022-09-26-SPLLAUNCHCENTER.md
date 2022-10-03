@@ -8,6 +8,7 @@ image-credit = "LEISE HOOK / FOR SPOTLIGHT PA"
 image-gravity = "ce"
 internal-budget = "Spotlight PA launches comprehensive 2022 election center"
 internal-id = "SPLLAUNCHCENTER"
+kicker = "Elections"
 modal-exclude = false
 no-index = false
 published = 2022-09-26T05:00:00-04:00
