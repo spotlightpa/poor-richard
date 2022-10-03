@@ -1,64 +1,72 @@
-<!DOCTYPE html>
-<html
-  lang="{{ .Param `language-code` | default site.LanguageCode }}"
-  class="text-[17px]"
->
-  <head itemscope itemtype="http://schema.org/WebSite">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{- with .Param "title-tag" -}}
-      <title>{{ . }}</title>
-    {{- else -}}
-      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-    {{- end -}}
+{{ define "html-class" }}text-[17px]{{ end }}
 
-    {{ partial "header/meta.html" . }}
-    {{ partial "header/google-analytics-meta.html" . }}
-    {{ partialCached "header/css-tw-rale.html" . }}
-    {{ partial "header/noscript.html" . }}
-    {{ partial "header/script.html" . }}
-    {{ partial "header/favicons.html" . }}
-    {{ partial "header/feeds.html" . }}
-  </head>
-  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body
+{{ define "body-class" }}bg-beige font-raleway leading-normal{{ end }}
+
+{{ define "static-head" }}
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/noscript.html" . }}
+
+
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+
+  {{ partial "header/favicons.html" . }}
+  {{ partial "header/feeds.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+  <div
     data-sf-campaign="7015G0000013pYzQAI"
     data-sf-theme="centrecounty"
-    data-ga-label="{{ $pageCat }}"
     data-ga-category="statecollege"
-    class="bg-beige font-raleway leading-normal"
   >
-    <!-- mobile overflow guard -->
-    <div
-      class="flex min-h-screen w-screen flex-col overflow-x-hidden sm:overflow-x-visible"
-    >
-      <main data-ga-category="main">
-        {{ partial "tw/state-college.html" . }}
-      </main>
+    {{ partial "tw/state-college.html" . }}
+  </div>
+{{ end }}
 
-      <footer id="footer" class="mt-auto" data-ga-category="footer">
-        {{ partial "tw/footer.html" . }}
-      </footer>
-      {{ $svgs := dict
-        "banner-svg" "/img/logos/banner-default-on-trans.svg"
-        "bars-svg"  "@fontawesome/solid/bars.svg"
-        "close-svg" "@fontawesome/solid/circle-xmark.svg"
-        "email-svg" "@fontawesome/regular/envelope.svg"
-        "fb-svg" "@fontawesome/brands/facebook-f.svg"
-        "logo-svg" "/img/logos/circle-default-on-trans.svg"
-        "search-svg" "@fontawesome/solid/magnifying-glass.svg"
-        "share-svg" "@fontawesome/solid/share.svg"
-        "twitter-svg" "@fontawesome/brands/twitter.svg"
-        "banner-state-college-svg" "/img/logos/banner-state-college.svg"
-      }}
-      <div hidden>
-        {{ range $id, $rsc := $svgs }}
-          {{ $svg := resources.Get $rsc }}
-          <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
-        {{ end }}
-      </div>
-      {{ partial "header/ld-json.html" . }}
-    </div>
-  </body>
-</html>
+{{ define "before-footer" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "footer" }}
+  <div
+    id="footer"
+    data-sf-campaign="7015G0000013pYzQAI"
+    data-sf-theme="centrecounty"
+    data-ga-category="statecollege"
+  >
+    {{ partial "tw/footer.html" . }}
+  </div>
+{{ end }}
+
+{{ define "modal" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+
+    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}
