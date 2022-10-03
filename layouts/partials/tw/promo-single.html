@@ -11,7 +11,7 @@
     <p>
       {{ with $link }}
         <a href="{{ . }}">
-          {{- partial "tw/image-aspect-ratio.html" (dict
+          {{- partial "tw/image-rotator.html" (dict
             "images" $images
             "width" $width
             "height" $height
@@ -20,7 +20,7 @@
           -}}
         </a>
       {{ else }}
-        {{- partial "tw/image-aspect-ratio.html" (dict
+        {{- partial "tw/image-rotator.html" (dict
           "images" $images
           "width" $width
           "height" $height
