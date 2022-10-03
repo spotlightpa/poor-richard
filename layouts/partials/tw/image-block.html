@@ -1,10 +1,10 @@
 {{ define "tw-image-block-picture" }}
+  {{ $aspect := printf "aspect-[%d/%d]" .widthRatio .heightRatio }}
   <picture
-    class="block"
+    class="{{ $aspect }} block"
     {{ if .caption }}
       @click="showCaption = !showCaption"
     {{ end }}
-    style="aspect-ratio: {{ .widthRatio }} / {{ .heightRatio }}"
   >
     {{ $isJPEG := in (string .srcset) ".jpeg" }}
     {{ if $isJPEG }}
