@@ -27,7 +27,7 @@
         {{ else }}
           <span class="hidden sm:block">
         {{ end }}
-        {{ partial "tw/image-aspect-ratio.html" (dict
+        {{ partial "tw/image-rotator.html" (dict
           "images" $imgDesktop
           "width" $widthDesktop
           "height" $heightDesktop
@@ -49,7 +49,7 @@
         {{ else }}
           <span class="sm:hidden">
         {{ end }}
-        {{ partial "tw/image-aspect-ratio.html" (dict
+        {{ partial "tw/image-rotator.html" (dict
           "images" $imgMobile
           "width" $widthMobile
           "height" $heightMobile

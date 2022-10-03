@@ -32,7 +32,7 @@
     {{ if $imgDesktop }}
       {{ with $link }}
         <a class="hidden sm:block" data-ga-category="desktop" href="{{ . }}">
-          {{- partial "tw/image-aspect-ratio.html" (dict
+          {{- partial "tw/image-rotator.html" (dict
             "images" $imgDesktop
             "width" $widthDesktop
             "height" $heightDesktop
@@ -43,7 +43,7 @@
         </a>
       {{ else }}
         <span class="hidden sm:block">
-          {{- partial "tw/image-aspect-ratio.html" (dict
+          {{- partial "tw/image-rotator.html" (dict
             "images" $imgDesktop
             "width" $widthDesktop
             "height" $heightDesktop
@@ -57,7 +57,7 @@
     {{ if $imgMobile }}
       {{ with $link }}
         <a class="sm:hidden" data-ga-category="mobile" href="{{ . }}">
-          {{- partial "tw/image-aspect-ratio.html" (dict
+          {{- partial "tw/image-rotator.html" (dict
             "images" $imgMobile
             "width" $widthMobile
             "height" $heightMobile
@@ -68,7 +68,7 @@
         </a>
       {{ else }}
         <span class="sm:hidden">
-          {{- partial "tw/image-aspect-ratio.html" (dict
+          {{- partial "tw/image-rotator.html" (dict
             "images" $imgMobile
             "width" $widthMobile
             "height" $heightMobile

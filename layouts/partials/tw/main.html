@@ -104,7 +104,7 @@
       </header>
 
       <div class="{{ $mainWellClass }} w-full print:!max-w-md lg:w-screen">
-        {{ partial "tw/hero-image-block.html" . }}
+        {{ partial "tw/image-hero.html" . }}
       </div>
 
       <div class="{{ $mainWellClass }}">
@@ -207,13 +207,13 @@
       </div>
 
       <div class="col-start-1 row-start-1 row-end-3">
-        {{ partial "tw/most-popular.html" dict }}
+        {{ partial "tw/rail-most-popular.html" dict }}
       </div>
       {{ $edPicks := partial "helper/get-items" "sidebar" }}
       {{ range $edPicks }}
         {{ if .page }}
           {{ if ne .page.RelPermalink $.RelPermalink }}
-            {{ partial "tw/editors-picks.html" . }}
+            {{ partial "tw/rail-picks.html" . }}
           {{ end }}
         {{ end }}
       {{ end }}

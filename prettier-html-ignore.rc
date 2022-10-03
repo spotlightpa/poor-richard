@@ -5,7 +5,7 @@ layouts/partials/component/topper.html
 layouts/partials/featured/content-area-end.html
 layouts/partials/featured/content-area-start.html
 layouts/partials/header/meta.html
-layouts/partials/tw/image-aspect-ratio.html
+layouts/partials/tw/image-rotator.html
 layouts/partials/tw/promo-double.html
 layouts/shortcodes/featured/credit.html
 layouts/shortcodes/featured/embed.html
