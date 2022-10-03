@@ -1,16 +1,20 @@
 {
   "featuredStories": [
-    "content/news/2022-09-30-SPLMAIL2022.md"
+    "content/news/2022-10-03-SPLINSURE.md"
   ],
   "subfeatures": [
-    "content/news/2022-09-30-SPLMAILESP.md",
-    "content/news/2022-09-12-SPLGUVGUIDE.md",
-    "content/news/2022-09-26-SPLPOLL2022.md"
+    "content/news/2022-09-23-SPLACTION.md"
   ],
   "topSlots": [
-    "content/news/2022-09-29-SPLCRIMEXPLAN.md",
     "content/news/2022-09-28-SPLSEPTCAMP.md",
-    "content/news/2022-09-28-SPLREBATEGUIDE.md"
+    "content/news/2022-09-22-SPLREBATES22.md",
+    "content/news/2022-09-27-SPLCON2022.md"
   ],
-  "topper": []
+  "topper": [
+    "content/elections.md",
+    "content/news/2022-09-12-SPLGUVGUIDE.md",
+    "content/news/2022-09-21-SPLVET2022.md",
+    "content/news/2022-09-26-SPLPOLL2022.md",
+    "content/news/2022-09-30-SPLMAIL2022.md"
+  ]
 }
