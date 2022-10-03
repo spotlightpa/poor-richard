@@ -10,6 +10,7 @@ image-description = "Five gubernatorial candidates will be on the Nov. 8 ballot,
 internal-budget = "Pa. election 2022: Your complete guide to the candidates for governor"
 internal-id = "SPLGUVGUIDE"
 kicker = "Elections"
+linktitle = "Your complete guide to the candidates for governor"
 modal-exclude = false
 no-index = false
 published = 2022-09-12T05:00:00-04:00
