@@ -7,6 +7,7 @@ description = "¿Quiere saber más sobre los candidatos a las elecciones de 2022
 image = "external/cxczne8hpptcmz8kv5gqmk78a8.jpeg"
 image-credit = "ELIZABETH ROBERTSON, JOSE F. MORENO, HEATHER KHALIFA, STEVEN M. FALK  / PHILADELPHIA INQUIRER"
 image-description = "Desde arriba a la izquierda, en el sentido de las agujas del reloj: John Fetterman, candidato al Senado; Mehmet Oz, candidato al Senado; Josh Shapiro, candidato a gobernador; Doug Mastriano, candidato a gobernador."
+image-gravity = "no"
 internal-budget = "¿Quiere saber más sobre los candidatos a las elecciones de 2022 en Pensilvania? Aprenda a investigar quiénes están en su papeleta, sus posturas y quiénes financian sus campañas."
 internal-id = "SPLSPANVET"
 kicker = "Español"
