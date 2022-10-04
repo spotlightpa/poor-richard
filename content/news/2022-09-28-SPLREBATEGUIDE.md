@@ -28,9 +28,9 @@ But as Spotlight PA reported in a new investigation, <a href="https://www.spotli
 
 Still, many people who could benefit are missing out because they don’t know about the program. State officials estimate that about one-third of eligible Pennsylvanians don’t apply each year.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
-
 Spotlight PA pulled together some common questions about how the rent and property tax rebate program works, who is eligible, and how this year’s bonuses will work.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 ## How do I know if I qualify?
 
@@ -40,7 +40,7 @@ The income limit is $35,000 per household for homeowners and $15,000 per househo
 
 You could also be eligible if you’re a widow or widower and over the age of 50. More detailed information is <a href="https://revenue-pa.custhelp.com/app/answers/detail/a_id/181/related/1">available from the state Department of Revenue</a>, which administers the program.
 
-One thing to bear in mind: the income limit doesn’t change based on how many people are in your household. If you are married and live together, you and your spouse’s combined income still needs to be at or under the threshold in order to qualify.
+One thing to bear in mind: if you are married and live together, you and your spouse’s combined income still needs to be at or under the threshold in order to qualify.
 
 If you think you might be eligible, contact your state lawmaker’s office, a <a href="https://www.revenue.pa.gov/ContactUs/Pages/District-Offices.aspx">regional office</a> of the state Department of Revenue, the <a href="https://www.aging.pa.gov/local-resources/Pages/AAA.aspx">Area Agency on Aging</a> in your county, or a local senior center. None should charge you a fee for letting you know whether you qualify or helping you apply.
 
