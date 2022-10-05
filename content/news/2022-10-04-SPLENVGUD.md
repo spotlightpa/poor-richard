@@ -9,6 +9,7 @@ image-credit = "Clem Murray/Philadelphia Inquirer"
 image-description = "In Pennsylvania, it’s usually not a question of whether a statewide candidate is supportive of the oil and gas industry but to what extent."
 internal-budget = "Pa. election 2022: Where the candidates for governor Mastriano, Shapiro stand on energy and the environment"
 internal-id = "SPLENVGUD"
+kicker = "Two Pennsylvanias"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on energy and the environment"
 modal-exclude = false
 no-index = false
