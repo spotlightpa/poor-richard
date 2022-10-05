@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-10-04-SPLENVGUD.md"
+    "content/news/2022-10-05-SPLGRAYLAW.md"
   ],
   "subfeatures": [
-    "content/news/2022-09-29-SPLCRIMEXPLAN.md",
-    "content/news/2022-09-13-SPLLGBTGUV.md"
+    "content/news/2020-10-27-SPLHARVESTXX.md"
   ],
   "topSlots": [
+    "content/news/2022-10-04-SPLENVGUD.md",
     "content/news/2022-10-03-SPLINSURE.md",
-    "content/news/2022-09-28-SPLSEPTCAMP.md",
-    "content/news/2022-09-22-SPLREBATES22.md"
+    "content/news/2022-09-28-SPLSEPTCAMP.md"
   ],
   "topper": [
     "content/elections.md",
