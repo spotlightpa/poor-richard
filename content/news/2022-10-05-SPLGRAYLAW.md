@@ -54,7 +54,7 @@ With two major statewide contests on the ballot this November — for governor a
 
 Dauphin County election director Jerry Feaser told Spotlight PA that “when it comes to things subject to litigation,” he said, “we’re going to review the guidance provided in consultation with our solicitor.”
 
-## Ballot curing up to counties
+### Ballot curing up to counties
 
 Mail ballots offer voters more flexibility and tend to increase turnout. But widespread mail voting also means lots of people are filling out ballots without supervision, and that can lead to eligible voters making minor mistakes that invalidate their ballot.
 
@@ -72,7 +72,7 @@ Pennsylvania’s <a href="https://www.inquirer.com/politics/election/pennsylvani
 
 It’s unclear if the court will act ahead of the midterms, but for now, it’s likely that voters’ ability to fix mistakes on their ballots will depend on where they live.
 
-## No guarantee to drop boxes
+### No guarantee to drop boxes
 
 Drop box availability varies widely among the counties.
 
@@ -82,15 +82,17 @@ But drop boxes have also been a major point of contention for Republican lawmake
 
 Across the country, <a href="https://www.npr.org/2020/08/11/901066396/ballot-drop-boxes-become-latest-front-in-voting-legal-fights">about 16% of 2016 voters</a> cast ballots using drop boxes, according to NPR.
 
-Several ongoing lawsuits may still determine whether some counties use the boxes, including in <a href="https://www.penncapital-star.com/election-2022/group-led-by-stephen-miller-mark-meadows-sues-lehigh-co-over-ballot-drop-off-boxes/">Lehigh</a>, <a href="https://www.wesa.fm/politics-government/2022-05-11/pennsylvania-aclu-and-lancaster-county-commissioners-fight-over-ballot-drop-box-removal-in-court">Lancaster</a>, and <a href="https://whyy.org/articles/chester-county-ballot-drop-box-monitoring-lawsuit/">Chester</a>. In other cases, it’s up to the county commissioners who often sit on the boards of election.
+In some cases, counties have already removed drop boxes — as <a href="https://www.fox43.com/article/news/politics/ballot-drop-box-permanently-removed-in-lancaster-county-aclu-lawsuit-board-of-elections/521-c77bfebb-c0c5-416e-b99e-5b7587fe9844">happened in Lancaster</a> ahead of the primary election. Several ongoing lawsuits may still determine whether some counties use the boxes or change how they are monitored, including in <a href="https://www.penncapital-star.com/election-2022/group-led-by-stephen-miller-mark-meadows-sues-lehigh-co-over-ballot-drop-off-boxes/">Lehigh</a> and <a href="https://whyy.org/articles/chester-county-ballot-drop-box-monitoring-lawsuit/">Chester</a>.
+
+In other cases county commissioners, who often sit on the boards of election, will simply make the decision.
 
 “Those decisions are actually happening right now,” Chapman said. “Local county boards of elections are meeting, they’re voting on where the drop boxes are going to be and if they’re going to have drop boxes at all.”
 
 “If you want them in your community,” she added, “go to those board of elections meetings and put that on the record.”
 
-{{<picture src="external/f8y0kq28x7qvy4xzc0gjkc55d4.jpeg" description="Drop box use availabilty widely among the counties." caption="Drop box use availabilty widely among the counties." credit="YONG KIM / Philadelphia Inquirer">}} 
+{{<picture src="external/f8y0kq28x7qvy4xzc0gjkc55d4.jpeg" description="Drop box availability varies widely among the counties." caption="Drop box availability varies widely among the counties." credit="YONG KIM / Philadelphia Inquirer">}} 
 
-## To date or not to date
+### To date or not to date
 
 The Department of State recently issued guidance telling counties to <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/Documents/2022-09-26-DOS-Guidance-Civilian-Absentee-Mail-In-Ballot-Procedures.pdf">count</a> undated mail ballots — those on which a voter has failed to put a date on the outer envelope — as long as they’re returned before 8 p.m. on Election Day.
 
@@ -104,7 +106,7 @@ A case asking the U.S Supreme Court to rule on the legality of undated ballots i
 
 Counties are preparing for the upcoming contest with that uncertainty in mind. Dauphin County, for instance, is segregating undated ballots in case a late court order once again means those ballots shouldn’t be counted, said Feaser, the local election director.
 
-## How to vote by mail
+### How to vote by mail
 
 Given the looming threat of litigation and the possibility that legal precedents in some areas of Pennsylvania’s election law could change, a voter’s best bet is always to follow the letter of the law.
 
@@ -126,7 +128,7 @@ If you aren’t sure what your particular county’s policy is, you can find con
 
 <hr>
 
-<i><b>Read our complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b></i><a href="http://spotlightpa.org/elections"><i><b>Election Center 2022 website</b></i></a><i><b>.</b></i>
+<i><b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b></i><a href="http://spotlightpa.org/elections"><i><b>Election Center 2022 website</b></i></a><i><b>.</b></i>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on...</b>
 
@@ -161,5 +163,7 @@ If you aren’t sure what your particular county’s policy is, you can find con
 <b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-votacion-por-correo-boleta-como-solicitar-llenar-devolver/">Todo lo que necesita saber para votar por correo</a>
 
 <b>» </b><a href="https://spotlightpa.us15.list-manage.com/track/click?u=77370ff1d001f9bb991fed9e7&id=89ed636808&e=ebfd0c4eb5">Su guía completa de los candidatos a gobernador</a>
+
+<i><b>Correction:</b></i><i> A previous version of this story incorrectly stated that a lawsuit was pending over drop boxes in Lancaster County. That case was resolved, and the county removed its only drop box earlier this year. </i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
