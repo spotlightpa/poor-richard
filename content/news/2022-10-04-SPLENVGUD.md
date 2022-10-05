@@ -9,7 +9,7 @@ image-credit = "Clem Murray/Philadelphia Inquirer"
 image-description = "In Pennsylvania, it’s usually not a question of whether a statewide candidate is supportive of the oil and gas industry but to what extent."
 internal-budget = "Pa. election 2022: Where the candidates for governor Mastriano, Shapiro stand on energy and the environment"
 internal-id = "SPLENVGUD"
-kicker = "Two Pennsylvanias"
+kicker = "Elections"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on energy and the environment"
 modal-exclude = false
 no-index = false
@@ -18,6 +18,7 @@ series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-environment-rggi-fracking"
 suppress-date = false
 title = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on energy and the environment"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
