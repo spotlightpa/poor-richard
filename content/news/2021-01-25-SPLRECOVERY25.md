@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-01-25T05:00:00-05:00
 slug = "pennsylvania-recovery-homes-oversight-ddap-opioid-addiction"
+suppress-date = false
 suppress-featured = false
 title = "Thousands of drug, alcohol recovery homes in Pa. still operate without state oversight"
 topics = ["Health"]
@@ -52,7 +53,7 @@ Officials with the department have adjusted the draft regulations based on feedb
 
 “I think we may still hear some of those same concerns,” Smith told Spotlight PA. “In fact, I think we probably won’t hear the concerns die a little bit until we actually start implementing.”
 
-The lack of action on recovery homes comes as the opioid crisis continues to kill thousands of people in Pennsylvania each year. More than 4,400 people died of a drug overdose in Pennsylvania in 2018 — a rate that ranked fourth in the nation, according to the <a href="https://www.cdc.gov/drugoverdose/data/statedeaths/drug-overdose-death-2018.html">U.S. Centers for Disease Control and Prevention</a>. Drug overdose deaths <a href="https://www.health.pa.gov/topics/Documents/Programs/PDMP/Pennsylvania%20Overdose%20Data%20Brief%202019.pdf">were similar in 2019</a>, and some parts of Pennsylvania are reporting <a href="https://www.abc27.com/news/local/york/york-county-reports-record-number-of-drug-overdose-deaths-in-2020-as-deaths-of-despair-surge-nationally/">a record number of drug overdose deaths for 2020, in tandem with the outbreak of the coronavirus pandemic.</a>
+The lack of action on recovery homes comes as the opioid crisis continues to kill thousands of people in Pennsylvania each year. More than 4,400 people died of a drug overdose in Pennsylvania in 2018 — a rate that ranked fourth in the nation, according to the <a href="https://web.archive.org/web/20220927121902/https://www.cdc.gov/drugoverdose/data/statedeaths/drug-overdose-death-2018.html">U.S. Centers for Disease Control and Prevention</a>. Drug overdose deaths <a href="https://www.health.pa.gov/topics/Documents/Programs/PDMP/Pennsylvania%20Overdose%20Data%20Brief%202019.pdf">were similar in 2019</a>, and some parts of Pennsylvania are reporting <a href="https://www.abc27.com/news/local/york/york-county-reports-record-number-of-drug-overdose-deaths-in-2020-as-deaths-of-despair-surge-nationally/">a record number of drug overdose deaths for 2020, in tandem with the outbreak of the coronavirus pandemic.</a>
 
 COVID-19 has contributed to the delay, but the Department of Drug and Alcohol Programs was already behind on its plan before the pandemic began. Smith said the department faced other priorities as it responded to the opioid epidemic, including expanding access to naloxone, which can rapidly reverse a narcotic overdose.
 
