@@ -1,38 +1,27 @@
 +++
 arc-id = "E3PFNUPB5RCD3P7OQQ754VNHAQ"
-internal-id = "SPLDDAPMETHODXX"
-internal-budget = ""
-image = "2021/04/01g7br70177k0k68.jpeg"
-image-description = ""
-image-caption = ""
-image-credit = "Kristina Serafini/TribLIVE for Spotlight PA"
-image-size = ""
-published = 2021-04-29T09:00:00Z
-slug = "pa-addiction-treatment-investigation-how-we-did-it-spotlight-pa-khn"
 authors = ["Aneri Pattani", "Ed Mahon"]
-byline = "Aneri Pattani of KHN and Ed Mahon of Spotlight PA"
-title = "How we investigated Pennsylvania’s addiction treatment industry and found weak oversight of providers"
-subtitle = ""
-description = "The final story was based on interviews with more than 80 people and a review of thousands of pages of state government and court records."
 blurb = "The final story was based on interviews with more than 80 people and a review of thousands of pages of state government and court records."
+byline = "Aneri Pattani of KHN and Ed Mahon of Spotlight PA"
+description = "The final story was based on interviews with more than 80 people and a review of thousands of pages of state government and court records."
+image = "2021/04/01g7br70177k0k68.jpeg"
+image-credit = "Kristina Serafini/TribLIVE for Spotlight PA"
+internal-id = "SPLDDAPMETHODXX"
 kicker = "Health"
-topics = ["Health"]
-series = ["Fundamental Flaws"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-04-29T05:00:00-04:00
+series = ["Fundamental Flaws"]
+slug = "pa-addiction-treatment-investigation-how-we-did-it-spotlight-pa-khn"
+suppress-date = false
+suppress-featured = false
+title = "How we investigated Pennsylvania’s addiction treatment industry and found weak oversight of providers"
+topics = ["Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-Pennsylvania is at the epicenter of the nation’s opioid crisis, ranking among the <a href="https://www.cdc.gov/drugoverdose/data/statedeaths/drug-overdose-death-2018.html">top five states for overdose death rates</a> and <a href="https://www.samhsa.gov/data/report/2018-2019-nsduh-estimated-totals-state">top 10 for number of adults suffering from substance use disorder</a> in recent years, according to national data. And the addiction treatment industry here is growing.
+Pennsylvania is at the epicenter of the nation’s opioid crisis, ranking among the <a href="https://web.archive.org/web/20220927121902/https://www.cdc.gov/drugoverdose/data/statedeaths/drug-overdose-death-2018.html">top five states for overdose death rates</a> and <a href="https://www.samhsa.gov/data/report/2018-2019-nsduh-estimated-totals-state">top 10 for number of adults suffering from substance use disorder</a> in recent years, according to national data. And the addiction treatment industry here is growing.
 
 Federal grants, state initiatives, and Medicaid pump millions of taxpayer dollars into the field annually. The state has seen a net gain of about 40 licensed treatment facilities over the past four years, bringing the total to more than 800.
 
