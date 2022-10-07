@@ -92,12 +92,13 @@
             Subscribe
           </button>
         </div>
+        {{ $checkClass := `mr-1 accent-yellow` }}
         <div class="flex flex-col gap-1 text-xl md:mr-20 lg:text-sm">
           <label class="flex items-center gap-1">
             <input
               checked
-              class="mr-1"
               type="checkbox"
+              class="{{ $checkClass }}"
               name="papost"
               value="1"
               data-ga-button
@@ -108,8 +109,8 @@
           <label class="flex items-center gap-1">
             <input
               checked
-              class="mr-1"
               type="checkbox"
+              class="{{ $checkClass }}"
               name="palocal"
               value="1"
               data-ga-button
@@ -120,8 +121,8 @@
           <label class="flex items-center gap-1">
             <input
               checked
-              class="mr-1"
               type="checkbox"
+              class="{{ $checkClass }}"
               name="investigator"
               value="1"
               data-ga-button
