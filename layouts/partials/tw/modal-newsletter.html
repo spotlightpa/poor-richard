@@ -104,10 +104,12 @@
             </span>
           </p>
         </div>
+        {{ $checkClass := `accent-orange` }}
         <p class="mt-3 text-left">
           <label>
             <input
               type="checkbox"
+              class="{{ $checkClass }}"
               name="papost"
               value="1"
               checked
@@ -122,6 +124,7 @@
           <label>
             <input
               type="checkbox"
+              class="{{ $checkClass }}"
               name="investigator"
               value="1"
               checked
@@ -136,6 +139,7 @@
           <label>
             <input
               type="checkbox"
+              class="{{ $checkClass }}"
               name="palocal"
               value="1"
               checked

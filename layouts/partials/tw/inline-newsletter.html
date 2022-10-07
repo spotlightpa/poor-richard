@@ -9,7 +9,7 @@
   @focusin="active = true"
   data-ga-form="newsletters:multi"
   data-ga-category="tout"
-  action="{{ .Page.Param "newsletters-action" }}"
+  action="{{ .Page.Param `newsletters-action` }}"
   method="post"
   target="_blank"
 >
@@ -53,12 +53,14 @@
       </button>
     </p>
   </div>
+  {{ $checkClass := `accent-yellow w-3 h-3` }}
   <div x-show="active" x-transition x-cloak>
     <p class="mt-4 text-left">
       <label>
         <input
           type="checkbox"
           name="papost"
+          class="{{ $checkClass }}"
           value="1"
           checked
           data-ga-button
@@ -73,6 +75,7 @@
         <input
           type="checkbox"
           name="investigator"
+          class="{{ $checkClass }}"
           value="1"
           checked
           data-ga-button
@@ -87,6 +90,7 @@
         <input
           type="checkbox"
           name="palocal"
+          class="{{ $checkClass }}"
           value="1"
           checked
           data-ga-button
