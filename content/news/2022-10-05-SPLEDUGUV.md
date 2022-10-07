@@ -9,6 +9,7 @@ image-credit = "Jose F. Moreno / Philadelphia Inquirer"
 image-description = "Bloomsburg University"
 internal-budget = "Pa. election 2022: Where governor candidates stand on college funding, transparency, and debt forgiveness"
 internal-id = "SPLEDUGUV"
+kicker = "Elections"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on college funding, transparency, and debt forgiveness"
 modal-exclude = false
 no-index = false
@@ -17,6 +18,7 @@ series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-shapiro-mastriano-governor-higher-education-explainer"
 suppress-date = false
 title = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on college funding, transparency, and debt forgiveness"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
