@@ -113,10 +113,8 @@
 .article-content :where(a) {
   @apply text-navy underline;
   @apply transition-colors duration-500;
-}
-
-.article-content :where(a:hover) {
-  @apply text-yellow;
+  @apply hover:text-yellow;
+  @apply dark:text-yellow hover:dark:text-yellow-3;
 }
 
 .article-content > p del {

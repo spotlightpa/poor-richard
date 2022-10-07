@@ -26,7 +26,10 @@
 {{ $sidebarNewsletter := .Param "sidebar-newsletter" | default "tw/rail-papost.html" }}
 
 
-<section class="bg-white px-4 pt-12 pb-6 text-s-9" id="article">
+<section
+  class="bg-white px-4 pt-12 pb-6 text-s-9 dark:bg-s-9 dark:text-s-1"
+  id="article"
+>
   <div class="mx-auto grid max-w-screen-lg grid-cols-none">
     <article class="contents">
       <header
@@ -35,7 +38,7 @@
       >
         {{ if $params.rubric }}
           <a
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-1 dark:text-s-9"
             href="{{ $params.rubric.RelPermalink }}"
             data-ga-category="eyebrow"
           >
@@ -43,7 +46,7 @@
           </a>
         {{ else if $params.kicker }}
           <p
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-1 dark:text-s-9"
           >
             {{- $params.kicker -}}
           </p>
@@ -63,14 +66,14 @@
 
 
         <h1
-          class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
+          class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black dark:text-white sm:text-4xl"
         >
           {{ .Title }}
         </h1>
 
         {{ with $params.byline }}
           <h2
-            class="mt-1 font-sans text-base leading-tight tracking-normal text-s-8 sm:leading-normal"
+            class="mt-1 font-sans text-base leading-tight tracking-normal text-s-8 dark:text-s-0 sm:leading-normal"
           >
             {{ if $bylineLink }}
               <a href="{{ $bylineLink }}">

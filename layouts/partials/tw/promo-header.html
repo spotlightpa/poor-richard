@@ -2,7 +2,10 @@
   {{ if eq (.Param "promo-type") "text" }}
     {{ partialCached "tw/promo-text.html" . }}
   {{ else }}
-    <div class="bg-white px-6 pt-6" data-sf-campaign="701f4000000TVuEAAW">
+    <div
+      class="bg-white px-6 pt-6 dark:bg-s-9"
+      data-sf-campaign="701f4000000TVuEAAW"
+    >
       {{ partialCached "tw/promo-double.html" (dict
         "imageDescription" (site.Param "promo-image-description")
         "link" (site.Param "promo-link")
