@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-10-07-SPLMMJLAWSUITS07.md"
+    "content/statecollege/2022-10-10-SPLTTFRANKLIN.md"
   ],
-  "subfeatures": [
-    "content/news/2022-09-14-SPLEMPLOYMENT14.md",
-    "content/news/2022-09-20-SPLMMJRECAP20.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2022-10-07-SPLMMJLAWSUITS07.md",
     "content/news/2022-10-05-SPLGRAYLAW.md",
-    "content/news/2022-10-04-SPLENVGUD.md",
-    "content/news/2022-10-03-SPLINSURE.md"
+    "content/news/2022-10-04-SPLENVGUD.md"
   ],
   "topper": [
     "content/elections.md",
