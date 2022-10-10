@@ -55,7 +55,7 @@ Private insurers defend their review powers as a necessary cost control method t
 
 He’s seen patients who changed insurance providers and were asked to go off a drug they took for years because the new plan wouldn’t cover their medication until they tried a cheaper alternative. The bill would specifically allow for an exemption to step therapy in such a situation.
 
-Lopatin’s experience is not unique. A 2021 American Medical Society <a href="https://www.ama-assn.org/system/files/prior-authorization-survey.pdf">survey</a> of 1,000 physicians nationwide reported 93% encountered care delays due to prior authorization, and 82% said those delays have led to patients abandoning treatment.
+Lopatin’s experience is not unique. A 2021 American Medical Society <a href="https://web.archive.org/web/20221007071522/https://www.ama-assn.org/system/files/prior-authorization-survey.pdf">survey</a> of 1,000 physicians nationwide reported 93% encountered care delays due to prior authorization, and 82% said those delays have led to patients abandoning treatment.
 
 “Scientific breakthroughs [and] medical advancements mean that in many cases, a diagnosis can now be managed and treated,” said Emma Watson, the chief lobbyist for the state branch of the American Cancer Society and the point person for the other patient groups. “Patients need the ability to quickly assess their condition with their medical professionals to find the best course of action for their individual health needs.”
 
