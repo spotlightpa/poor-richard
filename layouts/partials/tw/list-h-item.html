@@ -41,9 +41,22 @@
           <a
             href="{{ .link }}"
             class="group-hover:underline"
-            data-ga-category="byline"
+            data-ga-category="dek"
           >
             {{- .dek -}}
+          </a>
+        </h3>
+      {{ end }}
+      {{ if .byline }}
+        <h3
+          class="font-sans text-base font-semibold leading-tight tracking-normal text-s-9"
+        >
+          <a
+            href="{{ .link }}"
+            class="group-hover:underline"
+            data-ga-category="byline"
+          >
+            {{- printf "by %s" .byline -}}
           </a>
         </h3>
       {{ end }}
