@@ -6,27 +6,18 @@
       @click="showCaption = !showCaption"
     {{ end }}
   >
-    {{ $isJPEG := in (string .srcset) ".jpeg" }}
-    {{ if $isJPEG }}
-      <source
-        type="image/webp"
-        srcset="{{ replace .srcset `.jpeg` `.webp` }}"
-        {{ with .sizeHint }}
-          sizes="{{ . }}"
-        {{ end }}
-      />
-    {{ end }}
+    <source
+      type="image/webp"
+      srcset="{{ .srcset }}"
+      {{ with .sizeHint }}
+        sizes="{{ . }}"
+      {{ end }}
+    />
     <img
       class="block h-full w-full object-cover"
       alt="{{ .description }}"
       title="{{ .description }}"
       src="{{ .imgSmallSrc }}"
-      {{ if not $isJPEG }}
-        srcset="{{ .srcset }}"
-      {{ end }}
-      {{ if not $isJPEG | and .sizeHint }}
-        sizes="{{ .sizeHint }}"
-      {{ end }}
       {{ if not .eager }}
         loading="lazy" decoding="async"
       {{ end }}

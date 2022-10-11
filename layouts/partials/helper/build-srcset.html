@@ -12,6 +12,7 @@
     "width" $width
     "height" $height
     "gravity" $gravity
+    "ext" "webp"
   }}
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   {{ $src := printf "%s %dw" $url $width }}

@@ -37,6 +37,7 @@
   "width" $width
   "height" $height
   "gravity" $gravity
+  "ext" "jpeg"
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
@@ -92,18 +93,11 @@
           {{ end }}
         />
       {{ else }}
-        {{ $isJPEG := in (string $srcset) ".jpeg" }}
-        {{ if $isJPEG }}
-          <source
-            type="image/webp"
-            srcset="{{ replace $srcset ".jpeg" ".webp" }}"
-          />
-        {{ end }}
+        <source type="image/webp" srcset="{{ $srcset }}" />
         <img
           alt="{{ $imageDesc }}"
           title="{{ $imageDesc }}"
           src="{{ $imgSmallSrc }}"
-          {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
           class="h-full w-full object-cover"
           {{ if $focus }}
             style="object-position: {{ $focus }};"

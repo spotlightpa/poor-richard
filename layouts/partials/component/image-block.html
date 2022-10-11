@@ -1,25 +1,16 @@
 {{ define "image-block-picture" }}
   <picture class="has-ratio">
-    {{ $isJPEG := in (string .srcset) ".jpeg" }}
-    {{ if $isJPEG }}
-      <source
-        type="image/webp"
-        srcset="{{ replace .srcset ".jpeg" ".webp" }}"
-        {{ if .sizeHint }}
-          sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
-        {{ end }}
-      />
-    {{ end }}
+    <source
+      type="image/webp"
+      srcset="{{ .srcset }}"
+      {{ if .sizeHint }}
+        sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
+      {{ end }}
+    />
     <img
       alt="{{ .description }}"
       title="{{ .description }}"
       src="{{ .imgSmallSrc }}"
-      {{ if not $isJPEG }}
-        srcset="{{ .srcset }}"
-      {{ end }}
-      {{ if not $isJPEG | and .sizeHint }}
-        sizes="(min-width: 769px) {{ .sizeHint }}, 90vw"
-      {{ end }}
       {{ if not .eager }}
         loading="lazy" decoding="async"
       {{ end }}

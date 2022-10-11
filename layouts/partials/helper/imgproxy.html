@@ -6,10 +6,7 @@
 {{ $gravity := .gravity | default "sm" }}
 {{ $enlarge := "1" }}
 {{ $encoded_source_url := .filename | base64Encode }}
-{{ $extension := "jpeg" }}
-{{ if strings.HasSuffix .filename ".png" }}
-  {{ $extension = "png" }}
-{{ end }}
+{{ $extension := .ext | default "jpeg" }}
 {{ $quality := 75 }}
 
 {{ $url := printf
