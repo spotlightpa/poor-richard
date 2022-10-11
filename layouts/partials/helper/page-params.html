@@ -20,9 +20,18 @@
   {{ $rubric = $topic }}
 {{ end }}
 
+{{ $series := dict }}
+{{ if .Param "series" }}
+  {{ $series = index (.GetTerms "series") 0 }}
+  {{ $rubric = $series }}
+{{ end }}
+
+{{ if and (eq $kicker "") $rubric }}
+  {{ $kicker = $rubric.LinkTitle }}
+{{ end }}
+
 {{ $blurb := .Param "blurb" | default "" }}
 
-{{ $showTitle := .Param "suppress-title" | not }}
 {{ $evergreen := .Param "suppress-date" }}
 
 {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
@@ -56,8 +65,9 @@
   "kicker" $kicker
   "extendedKicker" $exKicker
   "blurb" $blurb
-  "showTitle" $showTitle
   "topic" $topic
+  "series" $series
+  "rubric" $rubric
   "link" $link
   "published" $pubDate
   "publishedISO" $pubDateISO
@@ -65,13 +75,5 @@
   "eventDateISO" $eventDateISO
   "evergreen" $evergreen
 }}
-
-{{ if .Param "series" }}
-  {{ $series := index (.GetTerms "series") 0 }}
-  {{ $params = dict "series" $series | merge $params }}
-  {{ $rubric = $series }}
-{{ end }}
-
-{{ $params = dict "rubric" $rubric | merge $params }}
 
 {{ return $params }}
