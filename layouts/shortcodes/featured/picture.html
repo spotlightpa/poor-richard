@@ -17,6 +17,7 @@
   "width" $width
   "height" $height
   "resize" "fill"
+  "ext" "jpeg"
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
@@ -26,19 +27,12 @@
     <picture
       class="absolute inset-0 block overflow-hidden rounded bg-s-3 shadow"
     >
-      {{ $isJPEG := in (string $srcset) ".jpeg" }}
-      {{ if $isJPEG }}
-        <source
-          type="image/webp"
-          srcset="{{ replace $srcset ".jpeg" ".webp" }}"
-        />
-      {{ end }}
+      <source type="image/webp" srcset="{{ $srcset }}" />
       <img
         class="h-full w-full"
         alt="{{ $description }}"
         title="{{ $description }}"
         src="{{ $imgSmallSrc }}"
-        {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
         loading="lazy"
         width="16"
         height="9"

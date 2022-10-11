@@ -10,7 +10,12 @@
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
-{{ $imgOpt := dict "filename" $src "width" $width "height" $height }}
+{{ $imgOpt := dict
+  "filename" $src
+  "width" $width
+  "height" $height
+  "ext" "jpeg"
+}}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 {{ $id := partial "helper/new-id" . }}
@@ -36,19 +41,12 @@
         group-focus:shadow-md
       "
     >
-      {{ $isJPEG := in (string $srcset) ".jpeg" }}
-      {{ if $isJPEG }}
-        <source
-          type="image/webp"
-          srcset="{{ replace $srcset ".jpeg" ".webp" }}"
-        />
-      {{ end }}
+      <source type="image/webp" srcset="{{ $srcset }}" />
       <img
         class="h-auto w-full"
         alt="{{ $description }}"
         title="{{ $description }}"
         src="{{ $imgSmallSrc }}"
-        {{ if not $isJPEG }}srcset="{{ $srcset }}"{{ end }}
         draggable="false"
         decode="async"
         loading="lazy"
