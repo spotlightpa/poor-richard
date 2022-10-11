@@ -7,41 +7,39 @@
 <section class="section {{ $marginClass }}">
   <article class="columns is-centered is-multiline">
     <div class="column is-three-fifths">
-      {{ if $params.showTitle }}
-        <header class="block" data-ga-category="header">
-          <div class="is-clearfix">
-            <div class="is-pulled-right">
-              {{ partial "component/breadcrumbs.html" . }}
-            </div>
+      <header class="block" data-ga-category="header">
+        <div class="is-clearfix">
+          <div class="is-pulled-right">
+            {{ partial "component/breadcrumbs.html" . }}
           </div>
+        </div>
 
-          <h1 class="title is-2 is-size-3-touch is-spaced">
-            {{ .Title }}
-          </h1>
+        <h1 class="title is-2 is-size-3-touch is-spaced">
+          {{ .Title }}
+        </h1>
 
-          {{ with $params.byline }}
-            <h3 class="is-size-5 has-margin-top-negative-medium">
-              <span class="has-text-weight-semibold">
-                by
-                <span itemtype="http://schema.org/Person" itemprop="author">
-                  {{- $params.byline -}}
-                </span>
+        {{ with $params.byline }}
+          <h3 class="is-size-5 has-margin-top-negative-medium">
+            <span class="has-text-weight-semibold">
+              by
+              <span itemtype="http://schema.org/Person" itemprop="author">
+                {{- $params.byline -}}
               </span>
-              {{ if $params.published }}
-                |
-                <time datetime="{{ $params.publishedISO }}"
-                  >{{ $params.published }}</time
-                >
-              {{ end }}
-            </h3>
-          {{ end }}
+            </span>
+            {{ if $params.published }}
+              |
+              <time datetime="{{ $params.publishedISO }}"
+                >{{ $params.published }}</time
+              >
+            {{ end }}
+          </h3>
+        {{ end }}
 
 
-          <div class="my-5">
-            {{ partial "component/social-buttons.html" . }}
-          </div>
-        </header>
-      {{ end }}
+        <div class="my-5">
+          {{ partial "component/social-buttons.html" . }}
+        </div>
+      </header>
 
       {{ partial "component/hero-image-block.html" . }}
 
