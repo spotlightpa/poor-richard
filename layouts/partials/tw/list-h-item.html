@@ -72,6 +72,21 @@
           </a>
         </h3>
       {{- end -}}
+      {{ if .subitems }}
+        <ul class="list-inside pt-5">
+          {{ range .subitems }}
+            <li class="list-[square]">
+              <a
+                href="{{ .link }}"
+                class="text-g-9 hover:underline"
+                data-ga-category="subfeature"
+              >
+                {{ .title }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
     </div>
   </div>
 </article>
