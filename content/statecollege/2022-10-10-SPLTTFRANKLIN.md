@@ -4,19 +4,20 @@ authors = ["Wyatt Massey"]
 blurb = "Penn State’s head football coach makes a guaranteed $7 million a year, but he doesn’t appear on the university’s required list of top 25 highest-salaried employees."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "Penn State’s head football coach makes a guaranteed $7 million a year, but he doesn’t appear on the university’s required list of top 25 highest-salaried employees."
+extended-kicker = "Penn State"
 image = "external/j4b77rtg28csgrpd10rhy3qc10.jpeg"
 image-credit = "CRAIG HOUTZ / For The Inquirer"
 image-description = "Penn State’s head football coach makes a guaranteed $7 million a year, but he doesn’t appear on the university’s required list of top 25 highest-salaried employees."
 internal-budget = "Penn State’s head football coach makes a guaranteed $7 million a year, but he doesn’t appear on the university’s required list of top 25 highest-salaried employees."
 internal-id = "SPLTTFRANKLIN"
-kicker = "Penn State Transparency Tracker"
+kicker = "Transparency Tracker"
 modal-exclude = false
 no-index = false
 published = 2022-10-10T05:00:00-04:00
 slug = "penn-state-football-franklin-highest-salaries-transparency-law"
 suppress-date = false
 title = "Why doesn’t James Franklin show up on Penn State’s list of highest-paid employees?"
-topics = ["Penn State Transparency Tracker"]
+topics = ["Penn State"]
 +++
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
