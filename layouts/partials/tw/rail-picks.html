@@ -1,6 +1,12 @@
 <div
   class="mt-6 rounded bg-s-3 p-6 shadow"
-  style="background-color: {{ .backgroundColor }};"
+  style="
+    background-color: {{ .backgroundColor }};
+    --hed-color: {{ .linkColor }};
+    --dek-color: {{ .linkColor }};
+    --byline-color: {{ .linkColor }};
+    --credit-color: {{ .linkColor }};
+  "
   data-ga-category="editors-pick"
 >
   <h2
@@ -28,11 +34,9 @@
   {{ partial "tw/list-v-item.html" (dict
     "wrapperClass" "mt-6 mx-auto sm:w-64"
     "imgOpts" $imgOpts
-    "linkColor" .linkColor
     "link" .page.RelPermalink
     "hed" .page.LinkTitle
     "byline" .params.byline
-    "showDate" false
     )
   }}
 </div>
