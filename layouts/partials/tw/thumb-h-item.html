@@ -24,58 +24,60 @@
     <div class="w-full flex-shrink-0 sm:w-64">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="group w-full flex-grow space-y-1">
-      <h2 class="text-hed text-lg font-bold leading-tight tracking-tight">
-        <a
-          class="group-hover:underline"
-          href="{{ .link }}"
-          data-ga-category="hed"
-        >
-          {{ .hed }}
-        </a>
-      </h2>
-      {{ if .dek }}
-        <h3
-          class="text-subhed font-sans text-base font-semibold leading-tight tracking-normal"
-        >
+    <div class="w-full flex-grow space-y-1">
+      <div class="group contents">
+        <h2 class="text-hed text-lg font-bold leading-tight tracking-tight">
           <a
-            href="{{ .link }}"
             class="group-hover:underline"
-            data-ga-category="dek"
-          >
-            {{- .dek -}}
-          </a>
-        </h3>
-      {{ end }}
-      {{ if .byline }}
-        <h3
-          class="text-byline font-sans text-base font-semibold leading-tight tracking-normal"
-        >
-          <a
             href="{{ .link }}"
-            class="group-hover:underline"
-            data-ga-category="byline"
+            data-ga-category="hed"
           >
-            {{- printf "by %s" .byline -}}
+            {{ .hed }}
           </a>
-        </h3>
-      {{ end }}
-      {{- if .showDate }}
-        <h3
-          class="text-date font-sans text-base font-light leading-tight tracking-normal"
-          data-ga-category="time"
-        >
-          <a href="{{ .link }}" class="group-hover:underline">
-            <time datetime="{{ .dateISO }}">
-              {{- .date }}
-            </time>
-          </a>
-        </h3>
-      {{- end -}}
+        </h2>
+        {{ if .dek }}
+          <h3
+            class="text-subhed font-sans text-base font-semibold leading-tight tracking-normal"
+          >
+            <a
+              href="{{ .link }}"
+              class="group-hover:underline"
+              data-ga-category="dek"
+            >
+              {{- .dek -}}
+            </a>
+          </h3>
+        {{ end }}
+        {{ if .byline }}
+          <h3
+            class="text-byline font-sans text-base font-semibold leading-tight tracking-normal"
+          >
+            <a
+              href="{{ .link }}"
+              class="group-hover:underline"
+              data-ga-category="byline"
+            >
+              {{- printf "by %s" .byline -}}
+            </a>
+          </h3>
+        {{ end }}
+        {{- if .showDate }}
+          <h3
+            class="text-date font-sans text-base font-light leading-tight tracking-normal"
+            data-ga-category="time"
+          >
+            <a href="{{ .link }}" class="group-hover:underline">
+              <time datetime="{{ .dateISO }}">
+                {{- .date }}
+              </time>
+            </a>
+          </h3>
+        {{- end -}}
+      </div>
       {{ if .subitems }}
-        <ul class="list-inside pt-5">
+        <ul class="list-inside space-y-3 pt-5">
           {{ range .subitems }}
-            <li class="list-[square]">
+            <li class="list-[square] leading-snug tracking-normal">
               <a
                 href="{{ .link }}"
                 class="text-dek hover:underline"
