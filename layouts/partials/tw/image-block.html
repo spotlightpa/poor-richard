@@ -51,7 +51,7 @@
 {{ $eager := .eager | default false }}
 {{ $gravity := .gravity }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
-{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-s-7" }}
+{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-sm uppercase leading-tight text-credit" }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
