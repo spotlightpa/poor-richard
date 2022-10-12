@@ -7,6 +7,7 @@ description = "Democratic nominee Josh Shapiro has raised roughly $25 million fr
 image = "external/yd0pjmncgbft02hyg5bmr9x9aw.jpeg"
 image-credit = "THOMAS HENGGE, STEVEN M. FALK / Philadelphia Inquirer Photographers"
 image-description = "State Sen. Doug Mastriano (left) and Attorney General Josh Shapiro (right)"
+image-gravity = "no"
 internal-budget = "4 maps show where Pa. governor candidates Mastriano, Shapiro are getting big cash"
 internal-id = "SPLMONEYMAPS"
 kicker = "Elections"
