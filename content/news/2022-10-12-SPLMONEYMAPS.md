@@ -1,9 +1,9 @@
 +++
 arc-id = "BTXEINHV4JHF3MBFV6MN5CV56M"
 authors = ["Kate Huangpu", "Stephen Caruso"]
-blurb = "Democratic nominee Josh Shapiro has raised roughly $25 million from outside Pennsylvania, while GOP nominee Doug Mastriano’s out-of-state haul stands at just over $3 million."
+blurb = "Democratic nominee Josh Shapiro has raised roughly $25 million from outside Pennsylvania, while GOP nominee Doug Mastriano’s out-of-state haul stands at around $2 million."
 byline = "Kate Huangpu of Spotlight PA and Stephen Caruso of Spotlight PA"
-description = "Democratic nominee Josh Shapiro has raised roughly $25 million from outside Pennsylvania, while GOP nominee Doug Mastriano’s out-of-state haul stands at just over $3 million."
+description = "Democratic nominee Josh Shapiro has raised roughly $25 million from outside Pennsylvania, while GOP nominee Doug Mastriano’s out-of-state haul stands at around $2 million."
 image = "external/yd0pjmncgbft02hyg5bmr9x9aw.jpeg"
 image-credit = "THOMAS HENGGE, STEVEN M. FALK / Philadelphia Inquirer Photographers"
 image-description = "State Sen. Doug Mastriano (left) and Attorney General Josh Shapiro (right)"
