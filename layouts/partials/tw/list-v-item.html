@@ -2,14 +2,14 @@
   <div data-ga-category="eyebrow">
     {{ if .rubricLink }}
       <a
-        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
         href="{{ .rubricLink }}"
       >
         {{- .eyebrow -}}
       </a>
     {{ else if .eyebrow }}
       <p
-        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
       >
         {{- .eyebrow -}}
       </p>
@@ -20,12 +20,7 @@
     {{ partial "tw/image-block.html" .imgOpts }}
   </div>
   <div class="group mt-6">
-    <h3
-      class="text-lg font-semibold leading-tight tracking-tight"
-      {{ if .linkColor }}
-        style="color: {{ .linkColor }}"
-      {{ end }}
-    >
+    <h3 class="text-hed text-lg font-semibold leading-tight tracking-tight">
       <a
         class="group-hover:underline"
         href="{{ .link }}"
@@ -36,10 +31,7 @@
     </h3>
     {{ if .dek }}
       <h4
-        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-s-9"
-        {{ if .linkColor }}
-          style="color: {{ .linkColor }}"
-        {{ end }}
+        class="text-dek mt-2 font-sans text-base font-normal leading-tight tracking-normal"
       >
         <a
           href="{{ .link }}"
@@ -52,10 +44,7 @@
     {{ end }}
     {{ if .byline }}
       <h4
-        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-s-9"
-        {{ if .linkColor }}
-          style="color: {{ .linkColor }}"
-        {{ end }}
+        class="text-byline mt-2 font-sans text-base font-normal leading-tight tracking-normal"
       >
         <a
           href="{{ .link }}"
@@ -68,7 +57,7 @@
     {{ end }}
     {{- if .showDate }}
       <h3
-        class="font-sans text-base font-light leading-tight tracking-normal text-s-9"
+        class="text-date font-sans text-base font-light leading-tight tracking-normal"
         data-ga-category="time"
       >
         <a href="{{ .link }}" class="group-hover:underline">

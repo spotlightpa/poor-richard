@@ -2,14 +2,14 @@
   <div data-ga-category="eyebrow">
     {{ if .rubricLink }}
       <a
-        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
         href="{{ .rubricLink }}"
       >
         {{- .eyebrow -}}
       </a>
     {{ else if .eyebrow }}
       <p
-        class="inline-block bg-black px-2 font-sans text-sm font-semibold uppercase text-white"
+        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
       >
         {{- .eyebrow -}}
       </p>
@@ -25,7 +25,7 @@
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
     <div class="group w-full flex-grow space-y-1">
-      <h2 class="text-lg font-bold leading-tight tracking-tight text-black">
+      <h2 class="text-hed text-lg font-bold leading-tight tracking-tight">
         <a
           class="group-hover:underline"
           href="{{ .link }}"
@@ -36,7 +36,7 @@
       </h2>
       {{ if .dek }}
         <h3
-          class="font-sans text-base font-semibold leading-tight tracking-normal text-s-9"
+          class="text-subhed font-sans text-base font-semibold leading-tight tracking-normal"
         >
           <a
             href="{{ .link }}"
@@ -49,7 +49,7 @@
       {{ end }}
       {{ if .byline }}
         <h3
-          class="font-sans text-base font-semibold leading-tight tracking-normal text-s-9"
+          class="text-byline font-sans text-base font-semibold leading-tight tracking-normal"
         >
           <a
             href="{{ .link }}"
@@ -62,7 +62,7 @@
       {{ end }}
       {{- if .showDate }}
         <h3
-          class="font-sans text-base font-light leading-tight tracking-normal text-s-9"
+          class="text-date font-sans text-base font-light leading-tight tracking-normal"
           data-ga-category="time"
         >
           <a href="{{ .link }}" class="group-hover:underline">
@@ -78,7 +78,7 @@
             <li class="list-[square]">
               <a
                 href="{{ .link }}"
-                class="text-g-9 hover:underline"
+                class="text-dek hover:underline"
                 data-ga-category="subfeature"
               >
                 {{ .title }}
