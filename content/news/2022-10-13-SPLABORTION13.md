@@ -28,7 +28,9 @@ HARRISBURG — When Melissa Reed became CEO of Planned Parenthood Keystone in 20
 
 Planned Parenthood Keystone runs over half of the 17 freestanding abortion clinics in Pennsylvania, servicing patients beyond the Philadelphia and Pittsburgh metros.
 
-When Keystone’s Lancaster facility — which never provided abortion services — closed in April 2020 due to the pandemic, Reed saw an opportunity in the setback.After years of planning, the organization reopened the clinic 10 minutes away from its old location and arranged for it to offer a new service it previously couldn’t: medication abortions.
+When Keystone’s Lancaster facility — which never provided abortion services — closed in April 2020 due to the pandemic, Reed saw an opportunity in the setback.
+
+After years of planning, the organization reopened the clinic 10 minutes away from its old location and arranged for it to offer a new service it previously couldn’t: medication abortions.
 
 Reed said the change of address presents the provider’s best option for handling a tide of new patients and advancing her mission of expanding access to reproductive care.
 
@@ -38,13 +40,17 @@ The new facility has limits, however: It will not offer surgical abortions. “I
 
 In Pennsylvania, the thicket of restrictions on abortion providers shapes the number of abortion facilities in the state and limits the services they can provide, effectively circumscribing access to the procedure.
 
-As providers across Pennsylvania deal with a surge in patients from neighboring states following the U.S. Supreme Court striking down Roe v. Wade, those barriers have pushed them to focus on retooling their services to offer medication abortions and telehealth, and to consider alternatives to new brick and mortar sites, such as mobile clinics for more rural areas.”What I’m really looking at is how can I expand access to the most requested type of abortion care needed in a way that makes it the most successful and most affordable for our patients,” said Reed.
+As providers across Pennsylvania deal with a surge in patients from neighboring states following the U.S. Supreme Court striking down <i>Roe v. Wade</i>, those barriers have pushed them to focus on retooling their services to offer medication abortions and telehealth, and to consider alternatives to new brick and mortar sites, such as mobile clinics for more rural areas.
+
+“What I’m really looking at is how can I expand access to the most requested type of abortion care needed in a way that makes it the most successful and most affordable for our patients,” said Reed.
 
 Providers also are anxiously waiting to see who will take over the governor’s office following the November election — some of them are unsure whether they’ll have a job after January.
 
-“Of course, we want to expand and provide care for people,” said Sara Dixon, a spokesperson for Planned Parenthood of Western Pennsylvania. “It would provide another place where people could receive care and just relieve some of the pressure on the two clinics [in Pittsburgh]. But we have to wait until the end of November … I feel like everything is on the line. "
+“Of course, we want to expand and provide care for people,” said Sara Dixon, a spokesperson for Planned Parenthood of Western Pennsylvania. “It would provide another place where people could receive care and just relieve some of the pressure on the two clinics [in Pittsburgh]. But we have to wait until the end of November … I feel like everything is on the line.”
 
-Republican gubernatorial nominee Doug Mastriano, a state senator from Franklin County, has called abortion his “No. 1 issue” and has proposed banning the procedure at six weeks with no exceptions for rape, incest, or the life of the pregnant person. And the Democratic nominee, Attorney General Josh Shapiro, has vowed to veto any legislation that would further curb abortion access.Providers are watching the race closely, they told Spotlight PA, but are more immediately focused on navigating the current landscape rather than changing it. Most providers predict a six-week ban will go into effect if a Republican becomes governor. And even if the office remains under Democratic control, providers do not anticipate abortion access in the state expanding, due to the prospect of a Republican-controlled legislature.
+Republican gubernatorial nominee Doug Mastriano, a state senator from Franklin County, has called abortion his “No. 1 issue” and has proposed banning the procedure at six weeks with no exceptions for rape, incest, or the life of the pregnant person. And the Democratic nominee, Attorney General Josh Shapiro, has vowed to veto any legislation that would further curb abortion access.
+
+Providers are watching the race closely, they told Spotlight PA, but are more immediately focused on navigating the current landscape rather than changing it. Most providers predict a six-week ban will go into effect if a Republican becomes governor. And even if the office remains under Democratic control, providers do not anticipate abortion access in the state expanding, due to the prospect of a Republican-controlled legislature.
 
 “We have to work with the legislature and right now we don’t have the majority that has the will [to protect abortion rights],” said Reed.
 
@@ -56,9 +62,11 @@ Reproductive health care workers attribute this dearth of clinics to Pennsylvani
 
 {{<picture src="external/w9g0z7mxe49ec7eh3d4tms34qg.jpeg" description="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." caption="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." credit="Kate Huangpu of Spotlight PA">}} 
 
-Those restrictions include a mandatory 24-hour waiting period for people seeking abortions, no Medicaid coverage except in cases of incest, rape, or when the person’s life is endangered, and blood and urine tests that <a href="https://www.inquirer.com/health/abortion-patients-wv-ohio-pennsylvania-roe-wade-overturned-20220621.html">health care workers argue are unnecessary</a>..
+Those restrictions include a mandatory 24-hour waiting period for people seeking abortions, no Medicaid coverage except in cases of incest, rape, or when the person’s life is endangered, and blood and urine tests that <a href="https://www.inquirer.com/health/abortion-patients-wv-ohio-pennsylvania-roe-wade-overturned-20220621.html">health care workers argue are unnecessary</a>.
 
-Abortion clinics have to abide by <a href="https://www.guttmacher.org/state-policy/explore/targeted-regulation-abortion-providers">facility rules</a> mandating specific room sizes and corridor widths. Those particular restrictions influenced Planned Parenthood Keystone’s decision to open a location that provides medication abortions but not surgical ones, explained Reed.According to Reed, a majority of patients now seek medication abortions, also known as medical abortions or abortion by pills, in part because that procedure requires less travel and fewer appointments.
+Abortion clinics have to abide by <a href="https://www.guttmacher.org/state-policy/explore/targeted-regulation-abortion-providers">facility rules</a> mandating specific room sizes and corridor widths. Those particular restrictions influenced Planned Parenthood Keystone’s decision to open a location that provides medication abortions but not surgical ones, explained Reed.
+
+According to Reed, a majority of patients now seek medication abortions, also known as medical abortions or abortion by pills, in part because that procedure requires less travel and fewer appointments.
 
 Reed explained it would have cost millions of dollars to equip the new clinic to legally offer surgical abortions, a procedure that has more stringent facility rules. Planned Parenthood Southeastern Pennsylvania operates most of the clinics that provide such abortions.
 
@@ -66,9 +74,9 @@ Given those obstacles, Planned Parenthood Keystone, which oversees nine of the s
 
 ## New clinics unlikely
 
-Following the leak of the eventual Roe decision in May, Pennsylvania clinics began receiving record levels of calls from people seeking answers and appointments from within and outside Pennsylvania. Anticipating greater demand, providers hired more patient navigators, expanded appointment availability, and recruited volunteers to help them answer phone calls.
+Following the leak of the eventual <i>Roe</i> decision in May, Pennsylvania clinics began receiving record levels of calls from people seeking answers and appointments from within and outside Pennsylvania. Anticipating greater demand, providers hired more patient navigators, expanded appointment availability, and recruited volunteers to help them answer phone calls.
 
-On the day of the leak, Allentown Women’s Center received over 400 calls, a spokesperson told Spotlight PA, a 100% increase from its pre-Roe average. In response, the center organized a new volunteer program to help with answering phones to allow health workers to focus on providing care.
+On the day of the leak, Allentown Women’s Center received over 400 calls, a spokesperson told Spotlight PA, a 100% increase from its pre-<i>Roe</i> average. In response, the center organized a new volunteer program to help with answering phones to allow health workers to focus on providing care.
 
 Planned Parenthood of Western Pennsylvania hired four new health care workers — including assistants, clinicians, and registered nurses — as well as more administrative staff.When the official ruling was made, call volumes again spiked. For Allegheny Reproductive Health Center, the only other freestanding abortion clinic in Pittsburgh, call volume increased to 10 times the rate before the court decision was made, Medical Director Sheila Ramgopal said in an August public <a href="https://www.penncapital-star.com/health-care/western-pa-abortion-providers-say-they-are-seeing-an-increase-in-out-of-state-patients-post-dobbs">hearing on abortion access</a>.
 
@@ -76,15 +84,19 @@ Despite this uptick in need, most providers do not plan to build new clinics. Re
 
 “We are absolutely thinking strategically about how we can continue to provide care [under new restrictions],” said Lindsey Mauldin, a spokesperson for Planned Parenthood Southeastern Pennsylvania, “but at this point, we’re laser-focused on providing care because it’s still legal.”
 
-{{<picture src="external/ck5n72tj3ftkq958edschvgnbm.jpeg" description="Melissa L. Reed, MA, JD, President and CEO, Planned Parenthood at her office in Warminster, PA on Tuesday morning October 4, 2022." caption="Melissa L. Reed, MA, JD, President and CEO, Planned Parenthood at her office in Warminster, PA on Tuesday morning October 4, 2022." credit="Alejandro A. Alvarez / Philadelphia Inquirer">}} 
+{{<picture src="external/ck5n72tj3ftkq958edschvgnbm.jpeg" description="Melissa L. Reed, president and CEO, Planned Parenthood Keystone, at her office in Warminster." caption="Melissa L. Reed, president and CEO, Planned Parenthood Keystone, at her office in Warminster." credit="Alejandro A. Alvarez / Philadelphia Inquirer">}} 
 
-Boosting staffing at existing clinics also isn’t cut and dry, providers said.The Women’s Centers, which has locations in Philadelphia and Delaware County, already faced labor shortages due to the pandemic. When it saw the influx of calls and patients brought forth by the Dobbs decision, the center was able to call in employees from its Georgia and New Jersey locations to boost staffing, but workers were already drained and the schedule was at capacity.
+Boosting staffing at existing clinics also isn’t cut and dry, providers said.
+
+The Women’s Centers, which has locations in Philadelphia and Delaware County, already faced labor shortages due to the pandemic. When it saw the influx of calls and patients brought forth by the <i>Dobbs</i> decision, the center was able to call in employees from its Georgia and New Jersey locations to boost staffing, but workers were already drained and the schedule was at capacity.
 
 Additionally, state mandates allowing only physicians to perform abortion care prevents providers from hiring medical professionals such as doulas, midwives, and physician assistants. Lizbeth Rodriguez, a community engagement coordinator for The Women’s Centers, described having to turn away such workers when they reached out following the Supreme Court ruling.
 
 When asked about obstacles to expanding access, she said “it’s 100% the legal restrictions.”
 
-The millions of dollars required to open a new facility capable of providing surgical abortions aren’t attainable for most abortion clinics, explained Reed of Planned Parenthood Keystone — even for a large organization such as <a href="http://hers.in/" target="_blank">hers.In</a> 2019, the most recent year for which data are available, Planned Parenthood Keystone had a total revenue of about $10.5 million. Half of that went to salaries, while the other half went to expenses, leaving them at a deficit of nearly $200,000. A spokesperson from the organization said that the new Lancaster center was funded mostly by donations.
+The millions of dollars required to open a new facility capable of providing surgical abortions aren’t attainable for most abortion clinics, explained Reed of Planned Parenthood Keystone — even for a large organization such as hers.
+
+In 2019, the most recent year for which data are available, Planned Parenthood Keystone had a total revenue of about $10.5 million. Half of that went to salaries, while the other half went to expenses, leaving them at a deficit of nearly $200,000. A spokesperson from the organization said that the new Lancaster center was funded mostly by donations.
 
 Financial records show other Planned Parenthood facilities in the state also face tight budgets.
 
