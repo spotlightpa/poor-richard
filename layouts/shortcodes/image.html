@@ -8,19 +8,6 @@
       @click="showCaption = !showCaption"
     />
   </picture>
-  {{ with .caption }}
-    <figcaption
-      class="
-        absolute p-4 bottom-0 inset-x-0
-        backdrop-filter backdrop-blur-sm backdrop-brightness-50
-        font-sans text-base text-s-0
-      "
-      x-show="showCaption"
-      @click="showCaption = false"
-    >
-      {{ . }}
-    </figcaption>
-  {{ end }}
 {{ end }}
 
 
@@ -60,6 +47,11 @@
         class="mt-1 px-1 w-full text-right font-sans text-s-6 text-sm uppercase"
       >
         {{ $credit }}
+      </figcaption>
+    {{ end }}
+    {{ with $caption }}
+      <figcaption class="mx-auto mt-2 font-sans text-sm leading-tight text-s-8">
+        {{- . -}}
       </figcaption>
     {{ end }}
   </figure>
