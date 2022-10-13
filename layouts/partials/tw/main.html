@@ -27,7 +27,7 @@
 
 
 <section
-  class="bg-white px-4 pt-12 pb-6 text-s-9 dark:bg-s-9 dark:text-s-1"
+  class="bg-white px-4 pt-12 pb-6 text-s-9 dark:bg-s-8 dark:text-s-1"
   id="article"
 >
   <div class="mx-auto grid max-w-screen-lg grid-cols-none">
@@ -38,7 +38,7 @@
       >
         {{ if $params.rubric }}
           <a
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-1 dark:text-s-9"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-3 dark:text-s-8"
             href="{{ $params.rubric.RelPermalink }}"
             data-ga-category="eyebrow"
           >
@@ -46,7 +46,7 @@
           </a>
         {{ else if $params.kicker }}
           <p
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-1 dark:text-s-9"
+            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white dark:bg-s-3 dark:text-s-8"
           >
             {{- $params.kicker -}}
           </p>
