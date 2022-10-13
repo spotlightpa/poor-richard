@@ -5,7 +5,8 @@
       title="{{ .description }}"
       src="{{ .src }}"
       loading="lazy"
-      @click="showCaption = !showCaption"
+      {{ with .width }}width="{{ . }}"{{ end }}
+      {{ with .height }}height="{{ . }}"{{ end }}
     />
   </picture>
 {{ end }}
@@ -17,26 +18,32 @@
   {{ $description := .Get "description" | htmlUnescape }}
   {{ $caption := .Get "caption" | htmlUnescape }}
   {{ $imgClass := .Get "class" | htmlUnescape }}
+  {{ $width := .Get "width" | htmlUnescape }}
+  {{ $height := .Get "height" | htmlUnescape }}
   {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-8" }}
   {{ $link := .Get "link" | htmlUnescape }}
 
 
-  <figure class="{{ $figClass }}" x-data="{ showCaption: true }">
+  <figure class="{{ $figClass }}">
     {{- if $link -}}
       <a class="block relative" href="{{ $link }}">
         {{- template "shortcode-image-picture" (dict
           "src" $src
           "description" $description
           "caption" $caption
+          "width" $width
+          "height" $height
           )
         -}}
       </a>
     {{- else -}}
-      <div class="relative {{ if $caption }}cursor-pointer{{ end }}">
+      <div class="relative">
         {{- template "shortcode-image-picture" (dict
           "src" $src
           "description" $description
           "caption" $caption
+          "width" $width
+          "height" $height
           )
         -}}
       </div>
