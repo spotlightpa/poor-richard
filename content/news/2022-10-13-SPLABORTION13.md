@@ -60,7 +60,7 @@ Over 85% of counties in the state have no abortion providers.
 
 Reproductive health care workers attribute this dearth of clinics to Pennsylvania’s strict rules regarding abortion care access, also known as targeted regulation of abortion providers, or TRAP, laws.
 
-{{<picture src="external/w9g0z7mxe49ec7eh3d4tms34qg.jpeg" description="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." caption="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." credit="Kate Huangpu of Spotlight PA">}} 
+{{<image src="https://images.data.spotlightpa.org/insecure/rt:fill/w:1280/h:1477/g:sm/el:1/q:75/ZXh0ZXJuYWwvdzlnMHo3bXhlNDllYzdlaDNkNHRtczM0cWcuanBlZw==.webp" description="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." caption="In Pennsylvania, restrictions on abortion providers shape the number of abortion facilities in the state and limit the services they can provide." credit="Kate Huangpu of Spotlight PA">}}
 
 Those restrictions include a mandatory 24-hour waiting period for people seeking abortions, no Medicaid coverage except in cases of incest, rape, or when the person’s life is endangered, and blood and urine tests that <a href="https://www.inquirer.com/health/abortion-patients-wv-ohio-pennsylvania-roe-wade-overturned-20220621.html">health care workers argue are unnecessary</a>.
 
