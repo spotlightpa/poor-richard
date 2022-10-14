@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-11-26T05:00:00-05:00
 slug = "pa-child-care-crisis-by-the-numbers"
+suppress-date = false
 title = "Pennsylvania’s child care and staffing crisis, by the numbers"
 topics = ["Economy", "Coronavirus"]
 +++
@@ -60,7 +61,7 @@ A survey released in September of more than 1,100 child care providers in Pennsy
 
 ## High costs, low wages
 
-- Pennsylvania’s median household income is <b>$61,744</b>, <a href="https://www.census.gov/quickfacts/fact/table/PA,US/PST045219">according to census data</a>.
+- Pennsylvania’s median household income is <b>$61,744</b>, <a href="https://web.archive.org/web/20221007071333/https://www.census.gov/quickfacts/fact/table/PA,US/PST045219">according to census data</a>.
 
 - <b>$12,308 </b>was the average annual price of sending an infant to a Pennsylvania child care center full-time in 2019, <a href="https://www.childcareaware.org/wp-content/uploads/2020/09/PUTP-Appendices-FINAL-9-18-20.pdf">according to a survey by an advocacy group</a>.
 
