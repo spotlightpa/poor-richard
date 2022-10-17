@@ -87,6 +87,10 @@ title = "Sample Ballot"
 link = "#ballot"
 
 [[internal-links]]
+title = "Featured Stories"
+link = "#featured"
+
+[[internal-links]]
 title = "Election Guides"
 link = "#guides"
 
