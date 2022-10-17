@@ -9,12 +9,14 @@ image-credit = "Commonwealth Media Services"
 image-description = "The court’s decision could potentially help other members of the public who request information."
 internal-budget = "Commonwealth Court orders Wolf administration to release info about medical marijuana program"
 internal-id = "SPLCANORDER"
+kicker = "Health"
 modal-exclude = false
 no-index = false
 published = 2022-08-22T05:00:00-04:00
 slug = "pa-medical-marijuana-program-addiction-treatment-court-order"
 suppress-date = false
 title = "Commonwealth Court orders Pa.’s health department to release information on medical marijuana program"
+topics = ["Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
