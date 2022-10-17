@@ -1,3 +1,7 @@
+{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-64` }}
+{{ $storyClass := .storyClass | default `w-full flex-grow` }}
+
+
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if .rubricLink }}
@@ -21,10 +25,10 @@
       sm:flex-row sm:space-y-0 sm:space-x-6
     "
   >
-    <div class="w-full flex-shrink-0 sm:w-64">
+    <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="w-full flex-grow space-y-1">
+    <div class="{{ $storyClass }} space-y-1">
       <div class="group contents">
         <h2 class="text-hed text-lg font-bold leading-tight tracking-tight">
           <a
