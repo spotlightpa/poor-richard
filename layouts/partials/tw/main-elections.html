@@ -198,13 +198,52 @@
   </div>
 </section>
 
-<section class="bg-white p-6 py-12" id="ballot" data-ga-category="ballot">
+<section class="bg-white px-6 py-16" id="ballot" data-ga-category="ballot">
   <div class="mx-auto flex max-w-screen-lg">
     <div
       class="w-full"
       data-spl-interactive="viz-redistricting-2020"
       data-spl-path="/district-finder"
     ></div>
+  </div>
+</section>
+
+<section class="bg-white px-6 py-8" id="featured" data-ga-category="featured">
+  <div class="mx-auto max-w-screen-lg">
+    {{ $elexFeats := partial "helper/get-items" "elections" }}
+    {{ $feat := (index $elexFeats 0) }}
+    {{ $subitems := slice }}
+    {{ range after 1 $elexFeats }}
+      {{ $subitems = $subitems | append (dict
+        "link" .params.link
+        "title" .page.LinkTitle
+        )
+      }}
+    {{ end }}
+    {{ $imgOpts := dict
+      "filename" ($feat.page.Param "image")
+      "credit" ($feat.page.Param "image-credit")
+      "description" ($feat.page.Param "image-description")
+      "gravity" ($feat.page.Param "image-gravity")
+      "link" $feat.params.link
+      "widthRatio" 16
+      "heightRatio" 9
+      "widths" (slice 528 1056 1280)
+      "sizeHint" "(min-width: 1080px) 528px, (min-width: 850px) 40vw, 90vw"
+    }}
+    {{ partial "tw/thumb-h-item.html" (dict
+      "imgOpts" $imgOpts
+      "link" $feat.params.link
+      "extendedEyebrow" ($feat.page.Param "extended-kicker")
+      "eyebrow" $feat.params.kicker
+      "rubricLink" (and $feat.params.rubric $feat.params.rubric.RelPermalink)
+      "hed" $feat.page.LinkTitle
+      "byline" $feat.params.byline
+      "subitems" $subitems
+      "thumbClass" "flex-1"
+      "storyClass" "flex-1"
+      )
+    }}
   </div>
 </section>
 
@@ -239,7 +278,7 @@
 
 <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
   {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
-  {{ $pages := $elex.RegularPages | complement $guide.RegularPages $onetwo.RegularPages }}
+  {{ $pages := $elex.RegularPages | complement $guide.RegularPages $onetwo.RegularPages (slice $feat.page) }}
   {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Election 2o22: More Coverage"
     "pages" $pages
