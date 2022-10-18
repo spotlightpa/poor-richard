@@ -4,19 +4,28 @@
 
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
-    {{ if .rubricLink }}
-      <a
-        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
-        href="{{ .rubricLink }}"
-      >
-        {{- .eyebrow -}}
-      </a>
-    {{ else if .eyebrow }}
-      <p
-        class="bg-eyebrow text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase"
-      >
-        {{- .eyebrow -}}
-      </p>
+    {{ if .extendedEyebrow }}
+      <span class="inline-flex">
+        {{ partial "tag/a-link.html" (dict
+          "link" .rubricLink
+          "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
+          "text" .extendedEyebrow
+          )
+        -}}
+        {{- partial "tag/a-link.html" (dict
+          "link" .rubricLink
+          "class" "bg-eyebrow text-eyebrow-bg inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
+          "text" .eyebrow
+          )
+        }}
+      </span>
+    {{ else }}
+      {{ partial "tag/a-link.html" (dict
+        "link" .rubricLink
+        "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+        "text" .eyebrow
+        )
+      }}
     {{ end }}
   </div>
   <div
@@ -30,7 +39,7 @@
     </div>
     <div class="{{ $storyClass }} space-y-1">
       <div class="group contents">
-        <h2 class="text-hed text-lg font-bold leading-tight tracking-tight">
+        <h2 class="text-lg font-bold leading-tight tracking-tight text-hed">
           <a
             class="group-hover:underline"
             href="{{ .link }}"
@@ -54,7 +63,7 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="text-byline font-sans text-base font-semibold leading-tight tracking-normal"
+            class="font-sans text-base font-semibold leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
@@ -67,7 +76,7 @@
         {{ end }}
         {{- if .showDate }}
           <h3
-            class="text-date font-sans text-base font-light leading-tight tracking-normal"
+            class="font-sans text-base font-light leading-tight tracking-normal text-date"
             data-ga-category="time"
           >
             <a href="{{ .link }}" class="group-hover:underline">

@@ -281,6 +281,18 @@
   print-color-adjust: exact;
 }
 
+@layer base {
+  :root {
+    --eyebrow-color: theme("colors.white");
+    --eyebrow-bg: theme("colors.black");
+    --hed-color: theme("colors.black");
+    --dek-color: theme("colors.s.9");
+    --byline-color: theme("colors.s.9");
+    --date-color: theme("colors.s.9");
+    --credit-color: theme("colors.s.7");
+  }
+}
+
 @layer utilities {
   .shape-outside {
     shape-outside: border-box;
@@ -295,34 +307,6 @@
     transform: rotate(180deg);
     text-orientation: mixed;
     writing-mode: vertical-rl;
-  }
-
-  .text-eyebrow {
-    color: var(--eyebrow-color, theme("colors.white"));
-  }
-
-  .bg-eyebrow {
-    background-color: var(--eyebrow-bg, theme("colors.black"));
-  }
-
-  .text-hed {
-    color: var(--hed-color, theme("colors.black"));
-  }
-
-  .text-dek {
-    color: var(--dek-color, theme("colors.s.9"));
-  }
-
-  .text-byline {
-    color: var(--byline-color, theme("colors.s.9"));
-  }
-
-  .text-date {
-    color: var(--date-color, theme("colors.s.9"));
-  }
-
-  .text-credit {
-    color: var(--credit-color, theme("colors.s.7"));
   }
 }
 

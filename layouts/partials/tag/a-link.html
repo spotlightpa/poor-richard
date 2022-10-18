@@ -1,0 +1,9 @@
+{{ if .link }}
+  <a class="{{ .class }}" href="{{ .link }}">
+    {{- .text -}}
+  </a>
+{{ else }}
+  <span class="{{ .class }}">
+    {{- .text -}}
+  </span>
+{{ end }}
