@@ -10,6 +10,7 @@ image-description = "People gather on the steps of the Pennsylvania State Capito
 image-gravity = "no"
 internal-budget = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
 internal-id = "SPLHEALTHISSUES"
+linktitle = "Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
 modal-exclude = false
 no-index = false
 published = 2022-10-14T05:00:15-04:00
