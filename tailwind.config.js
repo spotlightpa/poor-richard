@@ -102,6 +102,13 @@ module.exports = {
         darker: "#1e877b",
         darkest: "#1d534c",
       },
+      eyebrow: "var(--eyebrow-color)",
+      "eyebrow-bg": "var(--eyebrow-bg)",
+      hed: "var(--hed-color)",
+      dek: "var(--dek-color)",
+      byline: "var(--byline-color)",
+      date: "var(--date-color)",
+      credit: "var(--credit-color)",
     },
     extend: {
       boxShadow: {
