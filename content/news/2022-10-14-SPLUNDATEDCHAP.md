@@ -21,7 +21,7 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<b><i>Updated, Oct. 17:</b> The state and national Republican parties are asking the state Supreme Court to block undated ballots from being counted this November. <a href="https://apnews.com/article/elections-pennsylvania-lawsuits-government-and-politics-2ada261b306c94edca4d4915667f2154">Read more.</a><i>
+<b><i>Updated, Oct. 17:</b> The state and national Republican parties are asking the state Supreme Court to block undated ballots from being counted this November. <a href="https://apnews.com/article/elections-pennsylvania-lawsuits-government-and-politics-2ada261b306c94edca4d4915667f2154">Read more.</a></i>
 
 HARRISBURG — Pennsylvania’s top election official is doubling down on guidance that directs county officials to count undated mail ballots during this November’s highly consequential midterm election.
 
