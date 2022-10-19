@@ -6,13 +6,13 @@
   <div data-ga-category="eyebrow">
     {{ if .extendedEyebrow }}
       <span class="inline-flex">
-        {{ partial "tag/a-link.html" (dict
+        {{ partial "tag/maybe-link.html" (dict
           "link" .rubricLink
           "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
           "text" .extendedEyebrow
           )
         -}}
-        {{- partial "tag/a-link.html" (dict
+        {{- partial "tag/maybe-link.html" (dict
           "link" .rubricLink
           "class" "bg-eyebrow text-eyebrow-bg inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
           "text" .eyebrow
@@ -20,7 +20,7 @@
         }}
       </span>
     {{ else }}
-      {{ partial "tag/a-link.html" (dict
+      {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
         "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
         "text" .eyebrow
