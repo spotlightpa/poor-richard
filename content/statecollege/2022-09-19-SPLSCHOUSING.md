@@ -16,7 +16,7 @@ published = 2022-09-19T05:00:00-04:00
 slug = "state-college-high-rises-student-housing-development-zoning"
 suppress-date = false
 title = "An attempt to deter more student high-rises in State College raises larger debate about the future of downtown"
-topics = ["Local Government", "State College"]
+topics = ["Local Government"]
 +++
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
