@@ -2,7 +2,9 @@
   "featuredStories": [
     "content/statecollege/2022-10-19-SPLCORONER.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2020-09-24-SPLEDRS27.md"
+  ],
   "topSlots": [
     "content/news/2022-10-18-SPLRURALISSUES.md",
     "content/news/2022-10-14-SPLUNDATEDCHAP.md",
