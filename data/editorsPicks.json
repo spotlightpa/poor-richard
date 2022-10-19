@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-10-18-SPLRURALISSUES.md"
+    "content/statecollege/2022-10-19-SPLCORONER.md"
   ],
-  "subfeatures": [
-    "content/news/2022-10-14-SPLHEALTHISSUES.md",
-    "content/news/2022-10-17-SPLELEXGUIDE2022.md",
-    "content/news/2022-10-11-SPLGUVRACE1019.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2022-10-18-SPLRURALISSUES.md",
     "content/news/2022-10-14-SPLUNDATEDCHAP.md",
-    "content/news/2022-10-13-SPLABORTION13.md",
-    "content/news/2022-10-12-SPLYORK12.md"
+    "content/news/2022-10-13-SPLABORTION13.md"
   ],
   "topper": [
     "content/elections.md",
