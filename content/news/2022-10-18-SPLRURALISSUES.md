@@ -1,6 +1,6 @@
 +++
 arc-id = "B3PWMIFFVRCVRFZWMCNIPV27LI"
-authors = ["Ashad Hajela and Min Xian"]
+authors = ["Ashad Hajela", "Min Xian"]
 blurb = "The winner of the 2022 Pennsylvania race for governor will have the authority to address a wide range of issues affecting roughly 3.4 million people."
 byline = "Ashad Hajela and Min Xian of Spotlight PA State College"
 description = "The winner of the 2022 Pennsylvania race for governor will have the authority to address a wide range of issues affecting roughly 3.4 million people."
@@ -9,6 +9,7 @@ image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania’s $81.5 billion agriculture sector supported 301,900 jobs and $14.5 billion in labor income in 2019, according to the state Department of Agriculture."
 internal-budget = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on rural health care, broadband, and agriculture"
 internal-id = "SPLRURALISSUES"
+kicker = "Elections"
 modal-exclude = false
 no-index = false
 published = 2022-10-18T05:00:27-04:00
@@ -16,6 +17,7 @@ series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-broadband-rural-farms-health-care"
 suppress-date = false
 title = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on rural health care, broadband, and agriculture"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
