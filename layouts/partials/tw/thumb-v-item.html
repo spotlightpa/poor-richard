@@ -1,12 +1,15 @@
 <article class="{{ .wrapperClass | default `sm:w-64` }}">
-  <div data-ga-category="eyebrow">
-    {{ partial "tag/maybe-link.html" (dict
-      "link" .rubricLink
-      "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
-      "text" .eyebrow
-      )
-    -}}
-  </div>
+  {{ if .eyebrow }}
+    <div data-ga-category="eyebrow">
+      {{ partial "tag/maybe-link.html" (dict
+        "link" .rubricLink
+        "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+        "text" .eyebrow
+        )
+      -}}
+    </div>
+  {{ end }}
+
 
   <div>
     {{ partial "tw/image-block.html" .imgOpts }}
