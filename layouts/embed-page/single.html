@@ -1,7 +1,18 @@
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 
 {{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
+  <!-- header tags that are the same on all pages -->
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/noscript.html" . }}
+
+
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+
+  {{ partial "header/favicons.html" . }}
+  {{ partial "header/feeds.html" . }}
 {{ end }}
 
 {{ define "header" }}<!-- -->{{ end }}
