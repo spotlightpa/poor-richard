@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-10-19-SPLCORONER.md"
+    "content/news/2022-10-20-SPLSURVEY.md"
   ],
   "subfeatures": [
-    "content/news/2020-09-24-SPLEDRS27.md"
+    "content/news/2020-12-16-SPLSHORT16.md"
   ],
   "topSlots": [
+    "content/statecollege/2022-10-19-SPLCORONER.md",
     "content/news/2022-10-18-SPLRURALISSUES.md",
-    "content/news/2022-10-14-SPLUNDATEDCHAP.md",
-    "content/news/2022-10-13-SPLABORTION13.md"
+    "content/news/2022-10-14-SPLUNDATEDCHAP.md"
   ],
   "topper": [
     "content/elections.md",
