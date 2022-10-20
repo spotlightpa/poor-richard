@@ -15,7 +15,7 @@ no-index = false
 published = 2022-10-01T05:00:41-04:00
 slug = "pa-election-day-2022-mastriano-shapiro-fetterman-oz-voter-profiles"
 suppress-date = false
-title = "11 Pennsylvanians on the candidates for governor and U.S. Senate, and why some are still undecided"
+title = "11 Pennsylvanians on the candidates for governor and US Senate, and why some are still undecided"
 topics = ["Elections"]
 +++
 
