@@ -3,8 +3,8 @@
 {{ $isWide := .Param "image-size" | eq "wide" }}
 {{ $isOneCol := (not $hasImage | or $isWide) }}
 {{ $mainWellClass := cond $isOneCol
-  `mx-auto max-w-prose lg:max-w-screen-md`
-  `col-start-1 mx-auto lg:ml-0 max-w-prose`
+  `mx-auto w-full max-w-prose overflow-hidden lg:max-w-screen-md`
+  `col-start-1 mx-auto w-full max-w-prose overflow-hidden lg:ml-0`
 }}
 {{ $rightRailClass := cond $isOneCol
   `mx-auto w-full max-w-prose lg:max-w-screen-md sm:grid`

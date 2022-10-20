@@ -34,7 +34,7 @@
 </section>
 
 <section class="bg-white px-6 py-6" data-ga-category="links">
-  <nav class="mx-auto max-w-prose">
+  <nav class="mx-auto w-full max-w-prose">
     <ul class="flex flex-wrap items-stretch justify-center gap-4">
       {{ range $i, $_ := .Param "links" }}
         <li class="contents">
@@ -51,7 +51,7 @@
 </section>
 
 <section class="bg-white px-6 py-6" data-ga-category="content">
-  <div class="article-content mx-auto max-w-prose leading-relaxed">
+  <div class="article-content mx-auto w-full max-w-prose leading-relaxed">
     {{ .Content }}
   </div>
 </section>
@@ -86,7 +86,7 @@
 </section>
 
 <section class="bg-white px-6 py-8">
-  <div class="mx-auto max-w-prose">
+  <div class="mx-auto w-full max-w-prose">
     {{ partial "tw/donate-prefill.html" (dict
       "page" .
       "eyebrow" "Help Empower Voters"
@@ -387,14 +387,14 @@
 </section>
 
 <section class="bg-white p-6" id="contact" data-ga-category="contact">
-  <div class="mx-auto max-w-prose">
+  <div class="mx-auto w-full max-w-prose">
     <h2
       class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
       Ask Us Your Questions
     </h2>
   </div>
-  <div class="mx-auto max-w-prose">
+  <div class="mx-auto w-full max-w-prose">
     <div
       data-spl-embed-version="1"
       data-spl-src="https://www.spotlightpa.org/embeds/tips/?flag_text=ELECTION%202022&tip_text=Spotlight%20PA%20is%20covering%20Pennsylvania's%202022%20gubernatorial%20and%20legislative%20elections%20%E2%80%94%20and%20we%20want%20you%20to%20help%20shape%20our%20stories.%20%3Cb%3ETell%20us%20what%20you%20want%20to%20know%20about%20those%20races%2C%20and%20send%20us%20any%20questions%20you%20have%20about%20the%20voting%20system.%3C%2Fb%3E%20Use%20the%20form%20below%20to%20reach%20our%20election%20team.&form_name=elections-embed"
@@ -403,7 +403,7 @@
 </section>
 
 <section class="bg-white p-6" data-ga-category="credits" id="credits">
-  <div class="mx-auto max-w-prose">
+  <div class="mx-auto w-full max-w-prose">
     <h2
       class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
