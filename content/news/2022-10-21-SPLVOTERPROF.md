@@ -139,8 +139,6 @@ Mastriano has called for banning abortions at six weeks, without exceptions for 
 
 Poe says he has vacillated over the years on how he feels about abortion, but firmly believes that there should be exceptions.
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMaketheroadpa%2Fposts%2Fpfbid0z5QsNWMPkVqrouPuad8TsGF9QnyP9HLKQ43AcZc7oHfpsw8YCpoycSnFoFocTruUl&show_text=true&width=500" width="500" height="678" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-
 <div id="spl-new"></div>
 
 ## The new voter
@@ -333,9 +331,9 @@ Though he plans to vote for Fetterman, he says that choice was not as easy. Chur
 
 <b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-broadband-rural-farms-health-care/">Rural Health Care &amp; Broadband</a>
 
-<i>More issue analyses will be published in the coming weeks. </i>
+<i>More issue analyses will be published in the coming weeks.</i>
 
-<b>A complete listing of Spotlight PA voter guides: </b>
+<b>A complete listing of Spotlight PA voter guides:</b>
 
 <b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">Your complete guide to</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/"> </a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">voting in the</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/"> Nov. 8 election</a>
 
