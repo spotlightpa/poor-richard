@@ -1,7 +1,7 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="has-text-centered box"
-  action="{{ .Param "newsletters-action" }}"
+  class="rounded border border-red font-raleway leading-tight shadow"
+  action="{{ .Param `newsletters-action` }}"
   method="post"
   target="_blank"
   data-ga-form="newsletters:multi"
@@ -16,6 +16,7 @@
       return this.params.get('preselect');
     },
   }"
+  @focusin="hasFocused = true"
 >
   {{ partial "newsletter/hidden-input.html" . }}
   <p class="is-hidden" hidden>
@@ -28,104 +29,110 @@
     </template>
   </p>
   <h2
-    class="title is-6 has-text-danger has-text-left is-uppercase is-spaced"
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-text="_('eyebrow', $el.innerText)"
   >
     Free Newsletter
   </h2>
   <h2
-    class="subtitle is-5 has-text-black"
+    class="mt-8 px-4 text-center font-semibold sm:mt-12 sm:text-xl"
     x-rich-text="_('cta', $el.innerText)"
   >
     Sign up for a free roundup of the top news from across Pennsylvania, all in
     one daily or weekly email from Spotlight PA.
   </h2>
-  <div class="field">
-    <p class="control has-icons-left has-icons-right is-expanded">
-      <label class="is-sr-only" for="{{ $idEmail }}">Email</label>
+  <div class="mx-auto mt-8 items-stretch px-4 sm:flex sm:max-w-2xl">
+    <p class="relative flex-grow">
+      <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="input"
+        class="outline-none block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 ring-red-7 focus:ring-2"
         type="email"
         name="EMAIL"
-        placeholder="Enter your email address"
+        placeholder="Email address"
         required
-        @focus.once="hasFocused = true"
       />
-      <span class="icon is-left">
-        <svg viewBox="0 0 1 1">
+      <span
+        class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
+        aria-hidden="true"
+      >
+        <svg class="h-4 w-4 fill-current">
           <use xlink:href="#email-svg"></use>
         </svg>
       </span>
-      <span class="icon is-right validator-icon">
-        <svg viewBox="0 0 1 1">
-          <use xlink:href="#check-svg"></use>
-        </svg>
-      </span>
     </p>
-  </div>
-  <div
-    class="field"
-    x-cloak
-    x-show="hasFocused && ! preselected"
-    x-transition:enter="fade-enter-active"
-    x-transition:enter-start="fade-enter"
-    x-transition:leave="fade-enter-active"
-    x-transition:leave-end="fade-enter"
-  >
-    <p class="control has-text-left">
-      <label class="checkbox">
-        <input
-          type="checkbox"
-          name="papost"
-          value="1"
-          :checked="! preselected"
-          data-ga-button
-          data-ga-action="toggle-newsletter:papost"
-        />
-        <strong>PA Post (Daily)</strong>: Top news every weekday morning, plus a
-        daily puzzle.
-      </label>
-    </p>
-    <p class="control has-text-left">
-      <label class="checkbox">
-        <input
-          type="checkbox"
-          name="investigator"
-          value="1"
-          :checked="! preselected"
-          data-ga-button
-          data-ga-action="toggle-newsletter:investigator"
-        />
-        <strong>The Investigator (Weekly)</strong>: Best accountability
-        journalism every Thursday, plus a weekly riddle.
-      </label>
-    </p>
-    <p class="control has-text-left">
-      <label class="checkbox">
-        <input
-          type="checkbox"
-          name="palocal"
-          value="1"
-          :checked="! preselected"
-          data-ga-button
-          data-ga-action="toggle-newsletter:palocal"
-        />
-        <strong>PA Local (Weekly)</strong>: A fresh look at the incredible
-        people, places, and food of Pa. every Friday, plus events, guides,
-        best-of, and more.
-      </label>
-    </p>
-  </div>
-  <div class="field">
-    <p class="control">
+    <p class="mt-2 sm:mt-0 sm:ml-1">
       <button
+        class="outline-none w-full rounded border-2 border-red bg-red px-8 py-2 font-bold uppercase tracking-widest text-white ring-red-7 focus:ring-2"
         type="submit"
-        class="button is-danger has-text-weight-semibold is-fullwidth"
-        x-text="_('button', $el.innerText)"
       >
         Sign Up
       </button>
     </p>
+  </div>
+  {{ $checkClass := `accent-red w-3 h-3 shrink-0` }}
+  <div
+    class="mt-4 flex flex-col gap-2 px-4 text-left"
+    x-show="hasFocused"
+    x-transition
+    x-cloak
+  >
+    <p class="">
+      <label class="flex items-baseline gap-2">
+        <input
+          type="checkbox"
+          name="papost"
+          class="{{ $checkClass }}"
+          value="1"
+          checked
+          data-ga-button
+          data-ga-action="toggle-newsletter:papost"
+        />
+        <span>
+          <strong>PA Post (Daily)</strong>: Top news every weekday morning, plus
+          a daily puzzle.
+        </span>
+      </label>
+    </p>
+    <p>
+      <label class="flex items-baseline gap-2">
+        <input
+          type="checkbox"
+          name="investigator"
+          class="{{ $checkClass }}"
+          value="1"
+          checked
+          data-ga-button
+          data-ga-action="toggle-newsletter:investigator"
+        />
+        <span>
+          <strong>The Investigator (Weekly)</strong>: Best accountability
+          journalism every Thursday, plus a weekly riddle.
+        </span>
+      </label>
+    </p>
+    <p>
+      <label class="flex items-baseline gap-2">
+        <input
+          type="checkbox"
+          name="palocal"
+          class="{{ $checkClass }}"
+          value="1"
+          checked
+          data-ga-button
+          data-ga-action="toggle-newsletter:palocal"
+        />
+        <span>
+          <strong>PA Local (Weekly)</strong>: A fresh look at the incredible
+          people, places, and food of Pa. every Friday, plus events, guides,
+          best-of, and more.
+        </span>
+      </label>
+    </p>
+  </div>
+  <div class="mt-10 mb-4 mr-3 text-right text-s-9 md:mt-4">
+    <svg class="inline-block h-8 w-48 fill-current">
+      <use href="#banner-svg" aria-label="Spotlight PA logo"></use>
+    </svg>
   </div>
 </form>
