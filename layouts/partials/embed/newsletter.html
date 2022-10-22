@@ -46,7 +46,7 @@
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="outline-none block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 ring-red-7 focus:ring-2"
+        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -63,7 +63,7 @@
     </p>
     <p class="mt-2 sm:mt-0 sm:ml-1">
       <button
-        class="outline-none w-full rounded border-2 border-red bg-red px-8 py-2 font-bold uppercase tracking-widest text-white ring-red-7 focus:ring-2"
+        class="w-full rounded border-2 border-red bg-red px-8 py-2 font-bold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
         type="submit"
       >
         Sign Up
@@ -73,7 +73,7 @@
   {{ $checkClass := `accent-red w-3 h-3 shrink-0` }}
   <div
     class="mt-4 flex flex-col gap-2 px-4 text-left"
-    x-show="hasFocused"
+    x-show="hasFocused && ! preselected"
     x-transition
     x-cloak
   >
@@ -84,7 +84,7 @@
           name="papost"
           class="{{ $checkClass }}"
           value="1"
-          checked
+          :checked="! preselected"
           data-ga-button
           data-ga-action="toggle-newsletter:papost"
         />
@@ -101,7 +101,7 @@
           name="investigator"
           class="{{ $checkClass }}"
           value="1"
-          checked
+          :checked="! preselected"
           data-ga-button
           data-ga-action="toggle-newsletter:investigator"
         />
@@ -118,7 +118,7 @@
           name="palocal"
           class="{{ $checkClass }}"
           value="1"
-          checked
+          :checked="! preselected"
           data-ga-button
           data-ga-action="toggle-newsletter:palocal"
         />
