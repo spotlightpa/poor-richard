@@ -21,7 +21,7 @@ $yellow-invert: #fff;
 $white: #fff;
 $black: #000;
 $black-ter: hsla(0, 0%, 14%, 0.8);
-$danger: $orange;
+$danger: #f00;
 $grey-light: #8a8a8a;
 
 $link-hover: $spotlight-lightblue;
@@ -716,7 +716,7 @@ a.navbar-burger:hover {
   min-width: max-content;
   align-items: baseline;
   border-radius: 0.25rem;
-  background-color: rgba(255, 108, 54, 1);
+  background-color: rgba(255, 0, 0, 1);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;

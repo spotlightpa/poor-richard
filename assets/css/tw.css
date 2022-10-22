@@ -206,7 +206,7 @@
 }
 
 .site-nav\:donate-button {
-  @apply flex min-w-max items-baseline rounded bg-orange px-2 py-1 font-semibold uppercase text-white;
+  @apply flex min-w-max items-baseline rounded bg-red px-2 py-1 font-semibold uppercase text-white;
 }
 
 .site-nav\:mobile {
