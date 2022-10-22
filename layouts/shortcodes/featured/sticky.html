@@ -23,7 +23,7 @@
   >
     <button
       type="button"
-      class="focus:outline-none absolute top-0 right-0 -mt-2 mr-1 flex h-10 w-10 justify-center rounded-full border-2 border-beige bg-yellow text-white ring-yellow hover:bg-black hover:text-yellow focus:ring-2"
+      class="absolute top-0 right-0 -mt-2 mr-1 flex h-10 w-10 justify-center rounded-full border-2 border-beige bg-yellow text-white ring-yellow hover:bg-black hover:text-yellow focus:outline-none focus:ring-2"
       aria-label="close"
       @click="close"
       x-ref="close"
@@ -33,7 +33,7 @@
       </svg>
     </button>
     <a
-      class="focus:outline-none my-2 mx-4 block rounded p-4 text-center font-sans leading-tight text-white shadow-beige ring-yellow focus:ring-2"
+      class="my-2 mx-4 block rounded p-4 text-center font-sans leading-tight text-white shadow-beige ring-yellow focus:outline-none focus:ring-2"
       style="background-color: {{ $bgColor }};"
       @click.capture="close()"
       @click.outside="close()"
