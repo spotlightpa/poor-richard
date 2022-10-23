@@ -3,8 +3,8 @@
 {{ $isWide := .Param "image-size" | eq "wide" }}
 {{ $isOneCol := (not $hasImage | or $isWide) }}
 {{ $mainWellClass := cond $isOneCol
-  `mx-auto w-full max-w-prose overflow-hidden lg:max-w-screen-md`
-  `col-start-1 mx-auto w-full max-w-prose overflow-hidden lg:ml-0`
+  `mx-auto min-w-0 w-full max-w-prose lg:max-w-screen-md`
+  `col-start-1 min-w-0 mx-auto w-full max-w-prose lg:ml-0`
 }}
 {{ $rightRailClass := cond $isOneCol
   `mx-auto w-full max-w-prose lg:max-w-screen-md sm:grid`
@@ -116,7 +116,7 @@
             data-ga-action="view:content-start"
           ></div>
           <div
-            class="article-content max-w-full leading-relaxed"
+            class="article-content w-full overflow-hidden leading-relaxed"
             data-sf-campaign="701f4000000TVuXAAW"
           >
             {{ .Content }}
