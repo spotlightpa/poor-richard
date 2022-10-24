@@ -3,9 +3,9 @@ export default function sanitizeText(text) {
   el.innerText = text;
   text = el.innerHTML;
   text = text
-    .replace(/&lt;b&gt;/g, "<strong>")
-    .replace(/&lt;\/b&gt;/g, "</strong>")
-    .replace(/&lt;i&gt;/g, "<em>")
-    .replace(/&lt;\/i&gt;/g, "</em>");
+    .replace(/&lt;b&gt;/g, "<b>")
+    .replace(/&lt;\/b&gt;/g, "</b>")
+    .replace(/&lt;i&gt;/g, "<i>")
+    .replace(/&lt;\/i&gt;/g, "</i>");
   return text;
 }

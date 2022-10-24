@@ -275,6 +275,10 @@
   @apply bg-s-2;
 }
 
+.embed-prose :where(b, strong) {
+  @apply bg-yellow-3 ring-yellow-3 ring-4 font-semibold;
+}
+
 @tailwind utilities;
 
 .print-exact {
