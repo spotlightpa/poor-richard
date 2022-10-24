@@ -25,7 +25,7 @@
     <div class="flex items-center justify-end py-6">
       {{ range site.Menus.tndmain }}
         <a
-          class="decoration-4 decoration-yellow underline-offset-4 inline-block pr-4 text-black hover:text-black hover:underline lg:pl-4"
+          class="inline-block pr-4 text-black decoration-yellow decoration-4 underline-offset-4 hover:text-black hover:underline lg:pl-4"
           data-ga-category="item"
           href="{{ .URL }}"
           {{ with .Params.attrs }}{{ . | safeHTMLAttr }}{{ end }}

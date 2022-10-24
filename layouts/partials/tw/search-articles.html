@@ -11,11 +11,11 @@
       <input
         id="{{ $idInput }}"
         class="
-          outline-none block w-full
-          appearance-none rounded-lg
-          rounded-r-none border-2 border-s-4 bg-white
-          py-2 pl-4 tracking-wider text-s-8
-          placeholder-s-4 placeholder-opacity-100 focus:border-blue
+          block w-full appearance-none
+          rounded-lg rounded-r-none
+          border-2 border-s-4 bg-white py-2
+          pl-4 tracking-wider text-s-8 placeholder-s-4
+          placeholder-opacity-100 outline-none focus:border-blue
         "
         @input="isLoading = true"
         x-model.debounce.500ms="query"
@@ -26,10 +26,10 @@
     <div class="z-10 mt-0">
       <button
         class="
-          outline-none h-full
-          rounded-r-lg border-2 border-yellow-5
-          bg-yellow-4 px-4 py-2
-          font-bold uppercase tracking-widest text-s-0
+          h-full rounded-r-lg
+          border-2 border-yellow-5 bg-yellow-4
+          px-4 py-2 font-bold
+          uppercase tracking-widest text-s-0 outline-none
           focus:border-yellow-6
         "
       >

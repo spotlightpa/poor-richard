@@ -22,7 +22,7 @@
 
 
 <figure
-  class="snap-center focus:outline-none group w-5/6 flex-none px-2 pb-2 sm:px-8"
+  class="group w-5/6 flex-none snap-center px-2 pb-2 focus:outline-none sm:px-8"
   :class="{'cursor-pointer': currentSlide !== +$el.dataset.slideId }"
   x-intersect:enter.full="currentSlide = +$el.dataset.slideId"
   data-slide-id="{{ .Ordinal }}"
