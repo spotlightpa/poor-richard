@@ -276,7 +276,11 @@
 }
 
 .embed-prose :where(b, strong) {
-  @apply bg-yellow-3 ring-yellow-3 ring-4 font-semibold;
+  @apply font-extrabold;
+}
+
+.embed-prose-highlight :where(b, strong) {
+  @apply bg-yellow-3/75 p-1 font-semibold;
 }
 
 @tailwind utilities;

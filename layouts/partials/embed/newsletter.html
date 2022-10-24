@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="rounded border border-red font-raleway leading-tight shadow"
+  class="rounded border border-red font-raleway font-semibold leading-tight shadow"
   action="{{ .Param `newsletters-action` }}"
   method="post"
   target="_blank"
@@ -35,7 +35,7 @@
     Free Newsletter
   </h2>
   <h2
-    class="mt-8 px-4 text-center font-semibold sm:mt-12 sm:text-xl"
+    class="embed-prose mt-8 px-4 text-center font-semibold sm:mt-12 sm:text-xl"
     x-rich-text="_('cta', $el.innerText)"
   >
     Sign up for a free roundup of the top news from across Pennsylvania, all in
@@ -63,7 +63,7 @@
     </p>
     <p class="mt-2 sm:mt-0 sm:ml-1">
       <button
-        class="w-full rounded border-2 border-red bg-red px-8 py-2 font-bold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
+        class="w-full rounded border-2 border-red bg-red px-8 py-2 font-semibold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
         type="submit"
       >
         Sign Up
@@ -89,8 +89,8 @@
           data-ga-action="toggle-newsletter:papost"
         />
         <span>
-          <strong>PA Post (Daily)</strong>: Top news every weekday morning, plus
-          a daily puzzle.
+          <strong class="font-extrabold">PA Post (Daily)</strong>: Top news
+          every weekday morning, plus a daily puzzle.
         </span>
       </label>
     </p>
@@ -106,8 +106,8 @@
           data-ga-action="toggle-newsletter:investigator"
         />
         <span>
-          <strong>The Investigator (Weekly)</strong>: Best accountability
-          journalism every Thursday, plus a weekly riddle.
+          <strong class="font-extrabold">The Investigator (Weekly)</strong>:
+          Best accountability journalism every Thursday, plus a weekly riddle.
         </span>
       </label>
     </p>
@@ -123,9 +123,9 @@
           data-ga-action="toggle-newsletter:palocal"
         />
         <span>
-          <strong>PA Local (Weekly)</strong>: A fresh look at the incredible
-          people, places, and food of Pa. every Friday, plus events, guides,
-          best-of, and more.
+          <strong class="font-extrabold">PA Local (Weekly)</strong>: A fresh
+          look at the incredible people, places, and food of Pa. every Friday,
+          plus events, guides, best-of, and more.
         </span>
       </label>
     </p>
