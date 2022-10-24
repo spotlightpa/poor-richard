@@ -32,7 +32,7 @@
 
 {{ define "main" }}
   <div
-    class="bg-white p-4"
+    class="bg-white py-4 px-8"
     data-ga-category="embed"
     data-sf-campaign="701f4000000TVu8AAG"
   >
@@ -43,10 +43,11 @@
 
 {{ define "svg-resources" }}
   {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "check-svg" "@fontawesome/solid/check.svg"
     "email-svg" "@fontawesome/regular/envelope.svg"
-    "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "user-svg" "@fontawesome/solid/user.svg"
   }}
   {{ partial "header/svgs.html" $svgs }}
 {{ end }}
