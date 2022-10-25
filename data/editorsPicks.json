@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-10-24-SPLGASPACK.md"
+    "content/news/2022-10-25-SPLBIZISSUES.md"
   ],
   "subfeatures": [
-    "content/news/2022-08-05-SPLPRIV.md",
-    "content/statecollege/2022-06-28-SPLPFAS29.md"
+    "content/news/2022-10-21-SPLVOTERPROF.md",
+    "content/news/2022-10-24-SPLIEMAST.md"
   ],
   "topSlots": [
-    "content/news/2022-10-24-SPLIEMAST.md",
-    "content/news/2022-10-21-SPLVOTERPROF.md",
-    "content/news/2022-10-20-SPLSURVEY.md"
+    "content/news/2022-10-24-SPLGASPACK.md",
+    "content/news/2022-10-20-SPLSURVEY.md",
+    "content/statecollege/2022-10-25-SPLARPA.md"
   ],
   "topper": [
     "content/elections.md",
