@@ -8,6 +8,10 @@ from = "/donate/"
 to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa"
 code = 302
 
+[[redirects]]
+from = "/leaders/"
+to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
+code = 302
 
 [[redirects]]
 from = "/donate/statecollege/"
