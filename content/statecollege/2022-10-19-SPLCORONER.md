@@ -25,7 +25,7 @@ STATE COLLEGE — In one Pennsylvania county, the coroner’s office relies on a
 
 A coroner in another county claimed his part-time deputies don’t really investigate deaths. Instead, “they just pick up the body and use this as an opportunity to steer business to their funeral home.”
 
-And only five of Pennsylvania’s 67 counties have accredited coroner or medical examiner offices, which the state doesn’t require but “is perceived as validation of best medicolegal death investigation practices,” according to a new <a href="https://www.rural.pa.gov/download.cfm?file=Resources/reports/assets/249/Coroner%20Services%20in%20PA%202022.pdf">Center for Rural Pennsylvania study</a>.
+And only six of Pennsylvania’s 67 counties have accredited coroner or medical examiner offices, which the state doesn’t require but “is perceived as validation of best medicolegal death investigation practices,” according to a new <a href="https://www.rural.pa.gov/download.cfm?file=Resources/reports/assets/249/Coroner%20Services%20in%20PA%202022.pdf">Center for Rural Pennsylvania study</a>.
 
 The August report by the state agency determined that Pennsylvania’s county coroners and medical examiners — the people who investigate suspicious deaths and suss out foul play — lack adequate funding, transparency, and training.
 
@@ -94,6 +94,8 @@ One of the major barriers to additional training, VandePol said, is that many of
 The Pennsylvania State Coroners Association is trying to increase the minimum yearly continuing education requirements from eight hours to 12 hours, or possibly even 16 hours, Sayers said.
 
 But like so many things, it’s up to the state legislature to make changes.
+
+<i><b>CORRECTION:</b></i><i> Only six of Pennsylvania’s 67 counties have accredited coroner or medical examiner offices. A previous version of this story incorrectly stated there were five.</i>
 
 <i>Ashad Hajela is a </i><a href="https://www.reportforamerica.org/"><i>Report for America</i></a><i> corps member and writes about rural affairs for Spotlight PA’s State College regional bureau.</i>
 
