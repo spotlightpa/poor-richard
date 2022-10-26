@@ -148,8 +148,13 @@
     </h2>
     <ul class="mt-8 flex flex-col gap-6 md:flex-row">
       {{ range .Param "dates" }}
+        {{ $past := (time .date).Before now }}
+        {{ $class := cond $past
+          "bg-red-0"
+          "bg-white"
+        }}
         <li
-          class="flex flex-1 flex-col rounded border border-s-4 bg-white py-4 px-6 shadow-inner"
+          class="{{ $class }} flex flex-1 flex-col rounded border border-s-4 py-4 px-6 shadow-inner"
           data-ga-category="{{ urlize .name }}"
         >
           <h3
@@ -162,24 +167,26 @@
           <p class="my-6 text-xl leading-tight">
             {{ .name }}
           </p>
-          <p class="mt-auto">
-            <button
-              @click.prevent="
-                $report($event);
-                import(url).then((m) => m.atcb_action(data($el), $el))
-              "
-              class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-s-6 hover:border-election-green-darker"
-              type="button"
-              data-name="{{ .name }}"
-              data-date="{{ .date }}"
-              data-ga-action="add-to-calendar"
-            >
-              <svg class="mb-2 inline-block h-5 w-5 fill-current">
-                <use href="#calendar-svg" />
-              </svg>
-              <span class="tracking-wide">Add to Calendar</span>
-            </button>
-          </p>
+          {{ if not $past }}
+            <p class="mt-auto">
+              <button
+                @click.prevent="
+                  $report($event);
+                  import(url).then((m) => m.atcb_action(data($el), $el))
+                "
+                class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-s-6 hover:border-election-green-darker"
+                type="button"
+                data-name="{{ .name }}"
+                data-date="{{ .date }}"
+                data-ga-action="add-to-calendar"
+              >
+                <svg class="mb-2 inline-block h-5 w-5 fill-current">
+                  <use href="#calendar-svg" />
+                </svg>
+                <span class="tracking-wide">Add to Calendar</span>
+              </button>
+            </p>
+          {{ end }}
         </li>
       {{ end }}
     </ul>
