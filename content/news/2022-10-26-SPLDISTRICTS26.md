@@ -41,15 +41,15 @@ Experts score political maps for competitiveness by predicting future results ba
 
 This is in part due to the population shifts over the past decade. More people left rural areas and moved into urban and suburban regions, which traditionally lean Democratic.
 
+<iframe title="Where competitive Pa. House districts are located" aria-label="Map" id="datawrapper-chart-GhgNE" src="https://datawrapper.dwcdn.net/GhgNE/6/" scrolling="no" frameborder="0" style="border: none;" width="100%" height="535"></iframe>
+
 Creating competitive districts isn’t required under the Pennsylvania Constitution, but it’s a top priority for the many citizens and advocates who have lobbied lawmakers to make the process more inclusive and transparent. Over 6,000 voters identified competitive elections as a top priority in a survey conducted by Draw the Lines, a redistricting project of the Committee of Seventy, a good-government advocacy group.
 
 While both maps saw an overall decrease in the number of competitive districts, they are now more representative of the partisan composition of the state, according to Dave’s Redistricting App.
 
-<iframe title="Where competitive Pa. House districts are located" aria-label="Map" id="datawrapper-chart-GhgNE" src="https://datawrapper.dwcdn.net/GhgNE/6/" scrolling="no" frameborder="0" style="border: none;" width="600" height="535"></iframe>
-
-<iframe title="Where competitive Pa. Senate districts are located" aria-label="Map" id="datawrapper-chart-6usAT" src="https://datawrapper.dwcdn.net/6usAT/3/" scrolling="no" frameborder="0" style="border: none;" width="600" height="535"></iframe>
-
 Increasing the number of competitive districts would have required manipulation of Pennsylvania’s political geography — or the way that voters are concentrated or dispersed across the state — and would have affected districts’ compactness, contiguity, and equal populations, which are all requirements under the state constitution. The artificial creation of more competitive districts also would have influenced the partisan fairness of the map.
+
+<iframe title="Where competitive Pa. Senate districts are located" aria-label="Map" id="datawrapper-chart-6usAT" src="https://datawrapper.dwcdn.net/6usAT/3/" scrolling="no" frameborder="0" style="border: none;" width="100%" height="535"></iframe>
 
 “You want competitive districts, but in some districts, you can’t have that,” said Justin Villere, the executive director of Draw the Lines. He used Philadelphia as an example, where more than three-quarters of voters are <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Pages/VotingElectionStatistics.aspx">registered as Democrats</a>.
 
