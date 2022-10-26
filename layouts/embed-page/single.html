@@ -1,3 +1,16 @@
+{{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
+
+{{ define "static-head" }}
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/noscript.html" . }}
+
+
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+{{ end }}
+
 {{ define "header" }}<!-- -->{{ end }}
 {{ define "before-footer" }}<!-- -->{{ end }}
 {{ define "footer" }}<!-- -->{{ end }}
@@ -11,20 +24,26 @@
 
 
   <script src="{{ $js.RelPermalink }}" defer></script>
-  <style>
-    body {
-      min-height: unset;
-    }
-  </style>
 {{ end }}
 
 {{ define "main" }}
   <div
-    class="section is-small"
+    class="bg-white p-px"
     data-ga-category="embed"
     data-sf-campaign="701f4000000TVu8AAG"
   >
     {{ $embed := .Param "embed-partial" | printf "embed/%s" }}
     {{ partial $embed . }}
   </div>
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "check-svg" "@fontawesome/solid/check.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "user-svg" "@fontawesome/solid/user.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

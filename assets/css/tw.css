@@ -206,7 +206,7 @@
 }
 
 .site-nav\:donate-button {
-  @apply flex min-w-max items-baseline rounded bg-orange px-2 py-1 font-semibold uppercase text-white;
+  @apply flex min-w-max items-baseline rounded bg-red px-2 py-1 font-semibold uppercase text-white;
 }
 
 .site-nav\:mobile {
@@ -273,6 +273,14 @@
 
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   @apply bg-s-2;
+}
+
+.embed-prose :where(b, strong) {
+  @apply font-extrabold;
+}
+
+.embed-prose-highlight :where(b, strong) {
+  @apply bg-yellow-3/75 p-1 font-semibold;
 }
 
 @tailwind utilities;
