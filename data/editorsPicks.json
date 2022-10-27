@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-10-26-SPLDISTRICTS26.md"
+    "content/news/2022-10-27-SPLELEXISSUES.md"
   ],
   "subfeatures": [
-    "content/news/2022-03-23-SPLFAIRANA.md",
-    "content/news/2022-06-08-SPLOPPO.md",
-    "content/news/2022-03-03-SPLREGUIDE.md"
+    "content/news/2022-10-25-SPLBIZISSUES.md"
   ],
   "topSlots": [
-    "content/news/2022-10-25-SPLBIZISSUES.md",
+    "content/news/2022-10-26-SPLDISTRICTS26.md",
     "content/news/2022-10-24-SPLGASPACK.md",
     "content/news/2022-10-20-SPLSURVEY.md"
   ],
