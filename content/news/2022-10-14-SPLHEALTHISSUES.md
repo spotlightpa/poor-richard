@@ -10,6 +10,7 @@ image-description = "People gather on the steps of the Pennsylvania State Capito
 image-gravity = "no"
 internal-budget = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
 internal-id = "SPLHEALTHISSUES"
+kicker = "Elections"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
 modal-exclude = false
 no-index = false
@@ -18,6 +19,7 @@ series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-opioid-medicaid-abortion-health-issues"
 suppress-date = false
 title = "Pa. election 2022: Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
