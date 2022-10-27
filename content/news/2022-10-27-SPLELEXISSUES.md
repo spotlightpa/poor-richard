@@ -9,6 +9,7 @@ image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "Pennsylvania’s next governor will have a lot of power over the way elections are run, and the two major party candidates plan to wield that authority in wildly different ways."
 internal-budget = "Pa. election 2022: Where governor candidates Mastriano and Shapiro stand on election security and administration"
 internal-id = "SPLELEXISSUES"
+kicker = "Elections"
 modal-exclude = false
 no-index = false
 published = 2022-10-27T05:00:46-04:00
@@ -16,6 +17,7 @@ series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-fraud-mail-voting-security"
 suppress-date = false
 title = "Pa. election 2022: Where governor candidates Mastriano and Shapiro stand on mail ballots, election security, and voting rights"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
