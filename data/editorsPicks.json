@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-10-27-SPLELEXISSUES.md"
+    "content/news/2022-10-28-SPLWASHCO.md"
   ],
   "subfeatures": [
-    "content/news/2022-10-25-SPLBIZISSUES.md"
+    "content/statecollege/2022-10-25-SPLARPA.md",
+    "content/news/2022-08-22-SPLCANORDER.md"
   ],
   "topSlots": [
+    "content/news/2022-10-27-SPLELEXISSUES.md",
     "content/news/2022-10-26-SPLDISTRICTS26.md",
-    "content/news/2022-10-24-SPLGASPACK.md",
-    "content/news/2022-10-20-SPLSURVEY.md"
+    "content/statecollege/2022-10-28-SPLPSUCENTER.md"
   ],
   "topper": [
     "content/elections.md",
