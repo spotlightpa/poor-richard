@@ -7,22 +7,27 @@
 
 
 <aside
-  class="my-12 mx-auto lg:-mx-32 xl:-mx-48"
+  class="my-12 mx-auto text-center lg:-mx-32 xl:-mx-48"
   data-ga-category="inline:lightbox"
 >
   <a
-    class="flex flex-col overflow-hidden rounded shadow"
+    class="inline-flex overflow-hidden rounded shadow"
     style="background-color: {{ $bgColor }};"
     href="{{ $link }}"
   >
     <img
-      class="block h-auto max-w-full self-center"
+      class="block h-auto w-full"
       src="{{ $imageURL }}"
       alt="{{ $text }}"
-      {{ with $width }}
-        width="{{ . }}" style="width: {{ . }}px;"
-      {{ end }}
+      {{ with $width }}width="{{ . }}"{{ end }}
       {{ with $height }}height="{{ . }}"{{ end }}
+      {{ if $width }}
+        style=" max-width: {{ $width }}px;
+        {{ if $height }}
+          aspect-ratio: {{ $width }} / {{ $height }};
+        {{ end }}
+        "
+      {{ end }}
     />
   </a>
 </aside>
