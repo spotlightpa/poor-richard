@@ -21,6 +21,8 @@ topics = ["Penn State"]
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
 
+<i><b>UPDATE: </b></i><i>Penn State formally ended its Center for Racial Justice on Oct. 26. More details about the decision can be found </i><a href="https://www.spotlightpa.org/statecollege/2022/10/penn-state-psu-center-racial-justice-bendapudi/" target="_blank"><i>here</i></a><i>.</i>
+
 STATE COLLEGE — Penn State faculty are pressing President Neeli Bendapudi for clarity on the future of the Center for Racial Justice after learning the university had not allocated funding for the initiative that was pitched as a key university commitment following protests for greater racial equity in 2020.
 
 In a meeting last month with the search committee for the center’s director and other university leaders, Bendapudi raised doubts about whether Penn State would financially support the effort, according to an internal letter obtained by Spotlight PA and three university employees who were present at the meeting.
