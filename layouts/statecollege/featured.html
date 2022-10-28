@@ -1,127 +1,79 @@
-<!DOCTYPE html>
-<html
-  lang="{{ .Param `language-code` | default site.LanguageCode }}"
-  class="text-[17px]"
->
-  <head itemscope itemtype="http://schema.org/WebSite">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{- with .Param "title-tag" -}}
-      <title>{{ . }}</title>
-    {{- else -}}
-      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-    {{- end -}}
+{{ define "body-class" }}
+  w-screen overflow-x-hidden bg-beige font-serif leading-normal text-[17px]
+{{ end }}
 
-    {{ partial "header/meta.html" . }}
-    {{ partial "header/google-analytics-meta.html" . }}
-    {{ partialCached "header/css-tw-merri.html" . }}
-    {{ partial "header/noscript.html" . }}
-    {{ partial "header/script.html" . }}
-    {{ partial "header/favicons.html" . }}
-    {{ partial "header/feeds.html" . }}
-  </head>
-  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
-  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body
-    data-ga-label="{{ $pageCat }}:featured"
-    data-ga-category="featured"
-    data-sf-campaign="7015G000001IRG8QAO"
-    class="w-screen overflow-x-hidden bg-beige font-serif leading-normal"
+{{ define "body-attributes" }}
+  data-ga-category="featured" data-sf-campaign="7015G000001IRG8QAO"
+{{ end }}
+
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <nav
+    class="z-10 flex bg-black sm:absolute sm:bg-transparent"
+    data-ga-category="header"
   >
-    <nav
-      class="z-10 flex bg-black sm:absolute sm:bg-transparent"
-      data-ga-category="header"
-    >
-      <a class="mx-auto block px-12 py-5 sm:w-full" href="/">
-        <svg
-          class="
+    <a class="mx-auto block px-12 py-5 sm:w-full" href="/statecollege/">
+      <svg
+        class="
             h-8 fill-current text-white
             drop-shadow-outline filter
             hover:text-yellow lg:h-10
           "
-          role="img"
-          aria-label="Spotlight PA banner"
-          viewBox="0 0 1024 190"
-        >
-          <use xlink:href="#banner-svg"></use>
-        </svg>
-      </a>
-    </nav>
+        role="img"
+        aria-label="Spotlight PA State College banner"
+        viewBox="0 0 1024 190"
+      >
+        <use xlink:href="#banner-state-college-svg"></use>
+      </svg>
+    </a>
+  </nav>
+{{ end }}
 
-    <article data-ga-category="main" class="bg-white">
-      {{ .Content }}
-    </article>
+{{ define "main" }}
+  <article class="bg-white">
+    {{ .Content }}
+  </article>
+{{ end }}
 
-    <footer
-      class="bg-black p-12 font-sans uppercase text-white"
-      data-ga-category="footer"
-    >
-      <nav class="flex max-w-screen-lg flex-col gap-6 lg:flex-row">
-        <div class="flex-grow md:order-last">
-          <p>
-            <a
-              href="/"
-              class="
-                rounded-lg bg-red py-3 px-4
-                font-sans text-base font-bold leading-none tracking-widest text-white
-                transition-shadow duration-500 hover:shadow-beige
-              "
-              data-ga-category="logo"
-            >
-              <svg
-                class="inline-block h-8 w-8 fill-current"
-                role="img"
-                aria-label="Spotlight PA logo"
-                viewBox="0 0 1 1"
-              >
-                <use xlink:href="#logo-svg"></use>
-              </svg>
-              Support Us
-            </a>
-          </p>
-          <p class="mt-6">
-            &copy; {{ now.Format "2006" }} <br />
-            Spotlight PA <br />
-            228 Walnut St., #11728 <br />
-            Harrisburg, PA 17108-1728
-          </p>
-        </div>
-        {{ $context := dict "category" "spotlightpa" "menu" site.Menus.footer "name" "Spotlight PA" }}
-        {{ block "featured-footer" $context }}
-          <div class="flex-1" data-ga-category="{{ .category }}">
-            <h3 class="font-bold">{{ .name }}</h3>
-            <ul class="mt-3 space-y-2 leading-tight">
-              {{ range .menu }}
-                <li>
-                  <a
-                    class="text-blue transition-colors duration-500 hover:text-yellow"
-                    href="{{ .URL }}"
-                    >{{ .Name }}</a
-                  >
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-        {{ $context = dict "category" "about" "menu" site.Menus.about "name" "About" }}
-        {{ template "featured-footer" $context }}
-        {{ $context = dict "category" "follow" "menu" site.Menus.social "name" "Follow Us" }}
-        {{ template "featured-footer" $context }}
-      </nav>
-    </footer>
-    {{ $svgs := dict
-      "banner-svg" "/img/logos/banner-default-on-trans.svg"
-      "email-svg" "@fontawesome/regular/envelope.svg"
-      "fb-svg" "@fontawesome/brands/facebook-f.svg"
-      "left-svg" "@fontawesome/solid/circle-arrow-left.svg"
-      "logo-svg" "/img/logos/circle-default-on-trans.svg"
-      "plus-svg" "@fontawesome/solid/circle-plus.svg"
-      "right-svg" "@fontawesome/solid/circle-arrow-right.svg"
-      "share-svg" "@fontawesome/solid/share.svg"
-      "times-svg" "@fontawesome/solid/xmark.svg"
-      "twitter-svg" "@fontawesome/brands/twitter.svg"
-    }}
-    {{ partial "header/svgs.html" $svgs }}
-    {{ partial "header/ld-json.html" . }}
-  </body>
-</html>
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
+{{ end }}
+
+{{ define "modal" }}
+  <!-- todo -->
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "left-svg" "@fontawesome/solid/circle-arrow-left.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "plus-svg" "@fontawesome/solid/circle-plus.svg"
+    "right-svg" "@fontawesome/solid/circle-arrow-right.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}
