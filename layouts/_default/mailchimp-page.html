@@ -1,3 +1,9 @@
+{{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
+
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
 {{ define "extra-head" }}
   {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true }}
   {{ $styles := resources.Get "css/mailchimp.scss" | toCSS $scssOptions | postCSS }}
@@ -7,14 +13,31 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ end }}
 
-{{ define "nav" }}
-  {{ $tott := site.GetPage "/newsletters/talkofthetown/_index.md" }}
-  {{ $isSCpage := .Page.InSection $tott }}
-  {{ if $isSCpage }}
-    {{ partial "tw/nav-sc.html" . }}
-  {{ else }}
-    {{ partial "tw/nav.html" . }}
-  {{ end }}
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ $tott := site.GetPage "/newsletters/talkofthetown/_index.md" }}
+      {{ $isSCpage := .Page.InSection $tott }}
+      {{ if $isSCpage }}
+        {{ partial "tw/nav-sc.html" . }}
+      {{ else }}
+        {{ partial "tw/nav.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      <!-- noop -->
+    {{ end }}
+  </header>
 {{ end }}
 
 {{ define "main" }}
@@ -23,21 +46,42 @@
   </div>
 {{ end }}
 
-{{ define "promo" }}
+{{ define "before-footer" }}
   <!-- noop -->
 {{ end }}
 
-{{ define "topper" }}
-  <!-- noop -->
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
 {{ end }}
 
 {{ define "modal" }}
-  <!-- noop -->
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
-{{ define "extra-footer" }}
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
   {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "banner-state-college-svg" "/img/logos/banner-state-college.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
   }}
   {{ partial "header/svgs.html" $svgs }}
 {{ end }}
