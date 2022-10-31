@@ -26,7 +26,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of October 1, 2022.
+Information on this page is current as of November 1, 2022.
 
 If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
@@ -74,7 +74,7 @@ Most retail pharmacies carry at-home COVID tests.
 
 If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
 
-Some counties, like <a href="https://www.alleghenycounty.us/Health-Department/Resources/COVID-19/Information-on-COVID-19-Testing.aspx">Allegheny</a>, have partnered with COVID testing companies like <a href="https://book.curative.com/search#9/40.4624/-79.9443">Curative</a> to offer pop-up testing sites or mobile testing vans. The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
+The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
 
 The U.S. Postal Service <a href="https://special.usps.com/testkits">suspended its free at-home test program</a> in early September.
 
