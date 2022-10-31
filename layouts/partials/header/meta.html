@@ -7,7 +7,7 @@
     "gravity" ($.Param "image-gravity")
   }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
-  <meta property="og:image" content="{{ $imgSrc }}" />
+  <meta property="og:image" content="{{ $imgSrc | absURL }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="900" />
 {{ end }}
@@ -89,7 +89,7 @@
   {{ with $image }}
     {{ $imgOpt := dict "filename" . "width" 1000 "height" 800 }}
     {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
-    <meta itemprop="image" content="{{ $imgSrc }}">
+    <meta itemprop="image" content="{{ $imgSrc | absURL }}">
   {{ end }}
 
   <!-- Output all taxonomies as schema.org keywords -->
@@ -105,7 +105,7 @@
   }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="{{ $imgSrc }}"/>
+  <meta name="twitter:image" content="{{ $imgSrc | absURL }}"/>
 {{ else }}
   <meta name="twitter:card" content="summary"/>
 {{ end }}
