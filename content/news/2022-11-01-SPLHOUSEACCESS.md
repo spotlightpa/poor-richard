@@ -87,7 +87,7 @@ Stephens said his vote for stricter medical standards at abortion clinics was in
 
 He added that those votes were “clearly not that big a deal” if he earned the group’s endorsement after he took them.
 
-“Every single time that a woman’s right to choose has been up for a vote … I have voted no,” he added. “I have sided with women to make that choice.”
+“Every single time that a woman’s right to choose has been up for a vote if there were restrictions … I have voted no,” he added. “I have sided with women to make that choice.”
 
 A more recent vote might be his most controversial. In 2021, Stephens voted in favor of <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=1095">a bill </a>that would mandate a life sentence if a person is convicted of “murder of an unborn child” — a crime that <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18&div=0&chpt=26&sctn=4&subsctn=0#:~:text=(1)%20A%20criminal%20homicide%20of,murder%20of%20an%20unborn%20child).">already exists</a> in state law. It <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=H&rc_nbr=295">passed</a> the state House 123-80.
 
