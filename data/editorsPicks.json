@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-10-31-SPLPSPDATA31.md"
+    "content/statecollege/2022-11-01-SPLBENDAPUDI.md"
   ],
   "subfeatures": [
-    "content/news/2022-08-26-SPLSTOPS26.md",
-    "content/news/2021-01-12-SPLPSP13.md"
+    "content/statecollege/2022-10-28-SPLPSUCENTER.md",
+    "content/statecollege/2022-09-12-SPLPSUMELVIN.md"
   ],
   "topSlots": [
-    "content/news/2022-10-31-SPLUNDATEDEXPLAIN.md",
-    "content/statecollege/2022-10-28-SPLPSUCENTER.md",
-    "content/news/2022-10-28-SPLWASHCO.md"
+    "content/news/2022-11-01-SPLHOUSEACCESS.md",
+    "content/news/2022-10-31-SPLPSPDATA31.md",
+    "content/news/2022-10-31-SPLUNDATEDEXPLAIN.md"
   ],
   "topper": []
 }
