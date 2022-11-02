@@ -1,13 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-11-01-SPLBENDAPUDI.md"
+    "content/news/2022-11-02-SPLPSO.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-10-28-SPLPSUCENTER.md",
-    "content/statecollege/2022-09-12-SPLPSUMELVIN.md"
+    "content/news/2022-09-19-SPLPACETRIP.md"
   ],
   "topSlots": [
-    "content/news/2022-11-01-SPLUNDATEDRULE.md",
+    "content/statecollege/2022-11-01-SPLBENDAPUDI.md",
     "content/news/2022-11-01-SPLHOUSEACCESS.md",
     "content/news/2022-10-31-SPLPSPDATA31.md"
   ],
