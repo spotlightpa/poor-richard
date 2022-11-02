@@ -1,28 +1,136 @@
-{{ define "extra-main" }}
-  <section
-    class="section columns is-centered is-multiline"
-    data-ga-category="news-archive"
-  >
-    <div class="column is-three-fifths">
-      <div class="tile is-ancestor is-vertical">
-        {{ range .Paginator.Pages.GroupByDate "January 2006" }}
-          <div class="tile is-parent">
-            <h2 class="title">{{ .Key }}</h2>
-          </div>
-          <div class="tile is-wrapped">
-            {{ range $page := .Pages }}
-              <div class="tile is-parent is-4 has-margin-top-negative">
-                <div class="tile is-child">
-                  {{ $props :=  dict "Page" . "showDate" true }}
-                  {{ partialCached "tile/list.html" $props $page.RelPermalink true }}
-                </div>
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
+{{ end }}
 
-      {{ partial "component/paginator-level.html" .Paginator }}
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <article class="bg-white px-4 pt-12 pb-6">
+    <div class="mx-auto w-full max-w-prose">
+      <header>
+        <h1 class="text-4xl font-semibold leading-none text-black">
+          {{ .Title }}
+        </h1>
+        <h2
+          class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-s-7 md:text-3xl"
+        >
+          {{ .Param "dek" }}
+        </h2>
+
+        <div class="mt-4">
+          {{ partial "tw/social-buttons.html" . }}
+        </div>
+      </header>
+      <div class="mt-6" data-ga-category="content">
+        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view:content-start"
+        ></div>
+        <div
+          class="article-content w-full overflow-hidden leading-relaxed"
+          data-sf-campaign="701f4000000TVuXAAW"
+        >
+          {{ .Content }}
+        </div>
+        <div
+          x-data
+          x-intersect.once="$report({ target: $el })"
+          data-ga-action="view:content-finish"
+        ></div>
+      </div>
+    </div>
+  </article>
+{{ end }}
+
+{{ define "extra-main" }}
+  <section class="bg-white px-4 pb-12 pt-6">
+    {{ $news := site.GetPage "/news/_index.md" }}
+    {{ $sc := site.GetPage "/statecollege/_index.md" }}
+    {{ $stories := union $news.RegularPages $sc.RegularPages }}
+    {{ $stories = sort $stories ".PublishDate" "desc" }}
+    {{ $p := .Paginate $stories }}
+    {{ range .Paginator.Pages.GroupByDate "January 2006" }}
+      {{ partial "tw/list-3-col-story.html" (dict
+        "hed" .Key
+        "pages" .Pages
+        "rows" -1
+        "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
+        )
+      }}
+    {{ end }}
+    <div class="mx-auto max-w-screen-lg">
+      {{ partial "tw/paginator-level.html" .Paginator }}
     </div>
   </section>
+{{ end }}
+
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "down-triangle-svg" "@fontawesome/solid/caret-down.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}
