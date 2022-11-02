@@ -1,4 +1,12 @@
-{{ $limit := mul (.rows | default 1) 3 }}
+{{ $rows := .rows | default 1 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 3 }}
+{{ end }}
+{{ $pages := .pages }}
+{{ if $limit }}
+  {{ $pages = first $limit .pages }}
+{{ end }}
 
 
 <div
@@ -12,7 +20,7 @@
   </h2>
 
   <nav class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
-    {{ range $i, $page := first $limit .pages }}
+    {{ range $i, $page := $pages }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
       {{ $imgOpts := dict
         "filename" (.Param "image")
@@ -41,7 +49,7 @@
       </div>
     {{ end }}
   </nav>
-  {{ if gt (len .pages) $limit | and .readMoreLink }}
+  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"
       class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
