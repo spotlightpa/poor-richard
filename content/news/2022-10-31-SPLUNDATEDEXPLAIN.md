@@ -21,6 +21,8 @@ topics = ["Elections", "The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, Nov. 1: </b></i><a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-undated-mail-ballots-supreme-court-decision/" target="_blank"><i><b>Election officials should not count undated mail ballots on Nov. 8, Pa. high court rules</b></i></a>
+
 HARRISBURG — Pennsylvania’s Supreme Court is expected to soon rule on a case that could decide whether undated mail ballots can be counted in the quickly approaching Nov. 8 election.
 
 The case comes after years of highly partisan litigation that yielded <a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mail-ballot-supreme-court-rulings-explained/">no firm legal consensus</a> on how counties should treat the ballots.
