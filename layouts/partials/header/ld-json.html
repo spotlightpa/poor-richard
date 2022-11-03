@@ -29,7 +29,7 @@
   {{ if $isArticle }}"headline": {{ .Title }},{{ end }}
   {{ with $params.byline }}"author": {{ . }},{{ end }}
   {{ with $params.publishedISO }}"datePublished": {{ . }},{{ end }}
-
+  {{ if $isArticle }}"wordcount": {{ .WordCount }},{{ end }}
   {{ with $image}}"image": {{ . }},{{ end }}
 
   "publisher": {
