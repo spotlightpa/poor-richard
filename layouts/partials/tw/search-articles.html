@@ -3,7 +3,7 @@
   x-data="searchArticles"
   @submit.prevent="document.activeElement.blur()"
   data-ga-category="search"
-  class="no-js:hidden p-1 text-left"
+  class="no-js:hidden p-1 text-left font-sans"
 >
   <div class="flex">
     <div class="flex-grow">
@@ -47,11 +47,10 @@
     </div>
   </div>
   <div class="mt-1">
-    <p
-      class="font-light text-s-6"
-      x-show="resultsText"
-      x-text="resultsText"
-    ></p>
+    <p class="font-light text-s-6">
+      <span x-text="resultsText"></span>
+      &nbsp;
+    </p>
     <template x-if="error">
       <div class="font-light text-orange" x-template>
         Could not load results. ${error.message}
