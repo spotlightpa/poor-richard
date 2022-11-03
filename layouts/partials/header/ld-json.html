@@ -86,6 +86,7 @@
       {
         "@type": "ListItem",
         "@id": {{ .Permalink }},
+        "item": {{ .Permalink }},
         "name": {{ .Param "seo-title" | default .LinkTitle }},
         "position": {{ add 1 $i }}
       }
