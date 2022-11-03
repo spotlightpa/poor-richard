@@ -52,6 +52,7 @@ export default function searchArticles() {
     search() {
       if (!this.query) {
         this.isLoading = false;
+        this.results = null;
         this.error = null;
         return;
       }
