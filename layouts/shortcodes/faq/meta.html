@@ -1,0 +1,23 @@
+{{ $qs := .Page.Scratch.Get "faq-q" }}
+{{ $as := .Page.Scratch.Get "faq-a" }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $q := $qs }}
+      {{ $a := index $as $i }}
+      {{ if ne $i 0 }},{{ end }}
+      {
+        "@type": "Question",
+        "name": {{ $q }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ $.Page.RenderString $a }}
+        }
+      }
+    {{ end }}
+  ]
+}
+</script>
