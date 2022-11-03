@@ -94,3 +94,50 @@
   ]
 }
 </script>
+
+<!-- -->
+
+{{ if $params.eventDateISO }}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "description": {{ .Description }},
+      "name": {{ .Param "event-title" | default $params.seoTitle }},
+      {{ with $image}}"image": {{ . }},{{ end }}
+      "startDate": {{ $params.eventDateISO }},
+      "endDate": {{ $params.eventDateISO }},
+      "eventStatus": "eventScheduled",
+      {{ with .Param "event-url" }}
+        "eventAttendanceMode": "OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": {{ . }}
+        },
+      {{ else }}
+        "location": {
+          "@type": "Place",
+          "name": "Pennsylvania",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "PA"
+          }
+        },
+      {{ end }}
+      "organizer": {
+        "@type": "Organization",
+        "name": {{ site.Title }},
+        "url": {{ site.BaseURL }},
+        "location": {
+          "@type": "Place",
+          "name": "Pennsylvania"
+        },
+        "logo": {
+          "@type": "ImageObject",
+          "contentUrl": {{ $icon.Permalink }},
+          "url": {{ $icon.Permalink }}
+        }
+      }
+    }
+  </script>
+{{ end }}
