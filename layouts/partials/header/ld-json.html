@@ -1,85 +1,91 @@
 {{ $icon := .Param "logo" | resources.Get | fingerprint }}
-{{ $json := newScratch }}
-
-{{ $json.SetInMap "location" "@type" "Place" }}
-{{ $json.SetInMap "location" "name" "Pennsylvania" }}
-
-{{ $json.SetInMap "logo" "@type" "ImageObject" }}
-{{ $json.SetInMap "logo" "contentUrl" $icon.Permalink }}
-{{ $json.SetInMap "logo" "url" $icon.Permalink }}
-
-{{ $json.SetInMap "publisher" "@type" "Organization" }}
-{{ $json.SetInMap "publisher" "name" .Site.Title }}
-{{ $json.SetInMap "publisher" "url" .Site.BaseURL }}
-{{ $json.Get "location" | $json.SetInMap "publisher" "location" }}
-{{ $json.Get "logo" | $json.SetInMap "publisher" "logo" }}
-
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+
 {{ $pageType := "WebPage" }}
+{{ $isArticle := false }}
 {{ if $params.byline }}
+  {{ $isArticle = true }}
   {{ $pageType = "Article" }}
-  {{ $json.SetInMap "webpage" "author" $params.byline }}
-  {{ $json.SetInMap "webpage" "headline" .Title }}
-  {{ $json.SetInMap "webpage" "datePublished" $params.publishedISO }}
-  {{ if $imgName := .Param "image" }}
-    {{ $imgOpt := dict "filename" $imgName "width" 1000 "height" 1000 }}
-    {{ $url := partial "helper/imgproxy" $imgOpt }}
-    {{ $json.SetInMap "webpage" "image" $url }}
-  {{ end }}
 {{ end }}
 
-{{ if $params.kicker }}
-  {{ $json.SetInMap "webpage" "genre" $params.kicker }}
+{{ $image := "" }}
+{{ with .Param "image" }}
+  {{ $imgOpt := dict
+    "filename" .
+    "width" 1200
+    "height" 900
+    "gravity" ($.Param "image-gravity")
+  }}
+  {{ $image = partial "helper/imgproxy" $imgOpt | absURL }}
 {{ end }}
-
-{{ $json.SetInMap "webpage" "@context" "http://schema.org" }}
-{{ $json.SetInMap "webpage" "@type" $pageType }}
-{{ $json.SetInMap "webpage" "name" .Title }}
-{{ $json.SetInMap "webpage" "description" .Description }}
-{{ $json.Get "publisher" | $json.SetInMap "webpage" "publisher" }}
 
 <script type="application/ld+json">
-{{ $json.Get "webpage" | jsonify | safeJS }}
+{
+  "@context": "http://schema.org",
+  "@type": {{ $pageType }},
+  "description": {{ .Description }},
+  "name": {{ .Title }},
+
+  {{ if $isArticle }}"headline": {{ .Title }},{{ end }}
+  {{ with $params.byline }}"author": {{ . }},{{ end }}
+  {{ with $params.publishedISO }}"datePublished": {{ . }},{{ end }}
+
+  {{ with $image}}"image": {{ . }},{{ end }}
+
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.Title }},
+    "url": {{ site.BaseURL }},
+    "location": {
+      "@type": "Place",
+      "name": "Pennsylvania"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "contentUrl": {{ $icon.Permalink }},
+      "url": {{ $icon.Permalink }}
+    }
+  }
+}
 </script>
 
-<!-- -->
-
-{{ $socialURLs := slice }}
-{{ range .Site.Menus.social }}
-  {{ $socialURLs = append .URL $socialURLs }}
-{{ end }}
-
-{{ $json.SetInMap "org" "@context" "http://schema.org" }}
-{{ $json.SetInMap "org" "@type" "Organization" }}
-{{ $json.SetInMap "org" "name" .Site.Title }}
-{{ $json.SetInMap "org" "logo" $icon.Permalink }}
-{{ $json.SetInMap "org" "foundingDate" 2019 }}
-{{ $json.SetInMap "org" "sameAs" $socialURLs }}
-{{ $json.SetInMap "org" "url" .Site.BaseURL }}
-{{ $json.Get "location" | $json.SetInMap "org" "location" }}
-
 <script type="application/ld+json">
-{{ $json.Get "org" | jsonify | safeJS }}
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": {{ site.Title }},
+  "url": {{ site.BaseURL }},
+  "logo": {{ $icon.Permalink }},
+  "foundingDate": 2019,
+  "location": {
+    "@type": "Place",
+    "name": "Pennsylvania"
+  },
+  "sameAs": [
+    {{ range $i, $m := site.Menus.social }}
+      {{ if ne $i 0 }},{{ end }}
+      {{ .URL }}
+    {{ end }}
+  ]
+}
 </script>
 
-<!-- -->
-
-{{ $itemlist := slice }}
-{{ range $i, $page := partialCached "helper/find-parents" . .RelPermalink }}
-  {{ $name := .Title }}
-  {{ if .IsHome }}
-    {{ $name = .Site.Title }}
-  {{ end }}
-  {{ $pos := add 1 $i }}
-  {{ $item := dict "@id" .Permalink "name" $name }}
-  {{ $li := dict "@type" "ListItem" "position" $pos "item" $item }}
-  {{ $itemlist = append $li $itemlist }}
-{{ end }}
-
-{{ $json.SetInMap "nav" "@context" "http://schema.org" }}
-{{ $json.SetInMap "nav" "@type" "BreadcrumbList" }}
-{{ $json.SetInMap "nav" "itemListElement" $itemlist }}
+{{ $parents := partialCached "helper/find-parents" . .RelPermalink }}
 
 <script type="application/ld+json">
-{{ $json.Get "nav" | jsonify | safeJS }}
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{ range $i, $page := $parents }}
+      {{ if ne $i 0 }},{{ end }}
+      {
+        "@type": "ListItem",
+        "@id": {{ .Permalink }},
+        "name": {{ cond .IsHome site.Title .Title }},
+        "position": {{ add 1 $i }}
+      }
+    {{ end }}
+  ]
+}
 </script>
