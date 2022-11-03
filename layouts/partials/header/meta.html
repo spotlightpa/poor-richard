@@ -85,7 +85,6 @@
   {{ if not .Lastmod.IsZero }}
     <meta itemprop="dateModified" content="{{ .Lastmod.Format $ISO8601 | safeHTML }}" />
   {{ end }}
-  <meta itemprop="wordCount" content="{{ .WordCount }}">
   {{ with $image }}
     {{ $imgOpt := dict "filename" . "width" 1000 "height" 800 }}
     {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
