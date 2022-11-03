@@ -3,7 +3,7 @@
   x-data="searchArticles"
   @submit.prevent="document.activeElement.blur()"
   data-ga-category="search"
-  class="p-1 text-left"
+  class="no-js:hidden p-1 text-left"
 >
   <div class="flex">
     <div class="flex-grow">
@@ -33,14 +33,14 @@
           focus:border-yellow-6
         "
       >
-        <svg
-          x-show="!isLoading"
-          class="h-4 w-4 animate-bounce fill-current"
-          :class="{ 'animate-bounce': isLoading }"
-        >
+        <svg x-show="!isLoading" class="h-4 w-4 fill-current">
           <use xlink:href="#search-svg"></use>
         </svg>
-        <svg x-show="isLoading" class="h-4 w-4 animate-spin fill-current">
+        <svg
+          x-cloak
+          x-show="isLoading"
+          class="h-4 w-4 animate-spin fill-current"
+        >
           <use xlink:href="#spinner-svg"></use>
         </svg>
       </button>
