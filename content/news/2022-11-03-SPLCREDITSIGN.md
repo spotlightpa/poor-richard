@@ -26,7 +26,7 @@ HARRISBURG — Gov. Tom Wolf has signed a <a href="https://www.legis.state.pa.us
 
 Ninety cents out of each dollar offered will be used to encourage the use of natural gas, including $1 billion in tax incentives to attract a new “hydrogen hub” to Pennsylvania.
 
-The package will provide $50 million a year in tax breaks to a company that agrees to produce hydrogen for 20 years and increase an existing methane tax credit from $30 million to $56.5 million annually. The latter credit, passed in 2020 and set to expire in 2050, was designed to encourage the use of methane to manufacture other products, such as fertilizer or gasoline.
+The package will provide $50 million a year in tax breaks to a company that agrees to produce hydrogen for 20 years and increase an existing methane tax credit by $30 million to $56.5 million annually. The latter credit, passed in 2020 and set to expire in 2050, was designed to encourage the use of methane to manufacture other products, such as fertilizer or gasoline.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
