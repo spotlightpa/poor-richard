@@ -74,6 +74,7 @@
   "eventDate" $eventDate
   "eventDateISO" $eventDateISO
   "evergreen" $evergreen
+  "seoTitle" (.Param "seo-title" | default .Title)
 }}
 
 {{ return $params }}

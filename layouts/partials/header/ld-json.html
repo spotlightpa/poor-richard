@@ -24,7 +24,7 @@
   "@context": "http://schema.org",
   "@type": {{ $pageType }},
   "description": {{ .Description }},
-  "name": {{ .Title }},
+  "name": {{ $params.seoTitle }},
 
   {{ if $isArticle }}"headline": {{ .Title }},{{ end }}
   {{ with $params.byline }}"author": {{ . }},{{ end }}
@@ -82,7 +82,7 @@
       {
         "@type": "ListItem",
         "@id": {{ .Permalink }},
-        "name": {{ cond .IsHome site.Title .Title }},
+        "name": {{ .Param "seo-title" | default .LinkTitle }},
         "position": {{ add 1 $i }}
       }
     {{ end }}

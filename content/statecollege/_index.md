@@ -1,7 +1,8 @@
 +++
 title = "State College"
+seo-title = "Spotlight PA State College"
 title-tag = "Spotlight PA State College: North-Central Pennsylvania news and investigations"
-description = "The future of journalism in State College is here. Join our historic effort to invigorate local news."
+description = "North-Central Pennsylvania news and investigations."
 image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
