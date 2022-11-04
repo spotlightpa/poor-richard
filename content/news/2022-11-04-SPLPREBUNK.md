@@ -22,7 +22,7 @@ title-tag = "The top 4 false or misleading voting claims in Pa. right now - Spot
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG —&nbsp;Since 2020, when former President Donald Trump and his allies began spreading conspiracy theories that the presidential election had been stolen, such falsehoods have become a prevalent feature of U.S. local, state, and national elections.
+HARRISBURG — Since 2020, when former President Donald Trump and his allies began spreading conspiracy theories that the presidential election had been stolen, such falsehoods have become a prevalent feature of U.S. local, state, and national elections.
 
 That’s especially true in swing states like Pennsylvania, and this year’s <a href="https://www.spotlightpa.org/elections" target="_blank">2022 midterm election</a> — featuring high-stakes races for governor and U.S. Senate — is no exception.
 
@@ -48,6 +48,10 @@ Another conspiracy theory that has grown popular since 2020 is that there’s so
 But there’s nothing scandalous about the delay. It’s just a function of the commonwealth’s election law.
 
 Pennsylvania doesn’t allow counties to begin processing mail ballots until 7 a.m. on Election Day. That was fine when there was limited mail voting, but it became an issue after 2019, when the state dramatically expanded access to the practice.
+
+<p class="inq-p type-interstitial"><b>» SIGN UP: <a data-link-type="nl-interstitial" href="https://www.inquirer.com/newsletters/pa-elections/sign-up/">Election Day is coming. Are you ready? Get our free PA 2022 newsletter in your inbox and you will be.</a></b></p>
+
+
 
 Beginning in 2020, many more people voted by mail than ever before — Democrats in particular — and those ballots took counties more time to process. Many states with mail voting start processing ballots well before Election Day to speed things up, but while Pennsylvania counties regularly ask for a legislative change to allow it, the legislature and governor still haven’t agreed on a fix.
 
@@ -123,56 +127,56 @@ Fact-checking website <a href="https://www.politifact.com/factchecks/2022/oct/28
 
 Those 18 ballots that were returned by drop box early “have been segregated until adjudication at a future public meeting of the Centre County Board of Elections,” the county said in a statement.
 
-State law is completely silent on the specifics of drop boxes and security measures that should be used. It was county policy to open the boxes for use at a specific time, said Centre County Commissioner Michael Pipe. He added that in the future, “there will be a strong recommendation to have the drop box operational prior to ballots going out.”
+State law is completely silent on the specifics of drop boxes and security measures that should be used. It was county policy to open the boxes for use at a specific time, Pipe said. He added that in the future, “there will be a strong recommendation to have the drop box operational prior to ballots going out.”
 
-<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our&nbsp;</b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
+<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on:</b>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-shapiro-mastriano-governor-higher-education-explainer/">College Funding &amp; Student Debt</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-shapiro-mastriano-governor-higher-education-explainer/">College Funding &amp; Student Debt</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-environment-rggi-fracking/">Energy &amp; Environment</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-environment-rggi-fracking/">Energy &amp; Environment</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-crime-prison-bail-reform/">Crime &amp; Justice</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-crime-prison-bail-reform/">Crime &amp; Justice</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-lgbtq-rights-issues/">LGBTQ Rights</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-lgbtq-rights-issues/">LGBTQ Rights</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-opioid-medicaid-abortion-health-issues/">Abortion, Medicaid, &amp; Opioids</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-opioid-medicaid-abortion-health-issues/">Abortion, Medicaid, &amp; Opioids</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-broadband-rural-farms-health-care/">Rural Health Care &amp; Broadband</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-broadband-rural-farms-health-care/">Rural Health Care &amp; Broadband</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-governor-mastriano-shapiro-inflation-gas-tax/">Taxes &amp; Business Regulations</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-governor-mastriano-shapiro-inflation-gas-tax/">Taxes &amp; Business Regulations</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-fraud-mail-voting-security/">E</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-fraud-mail-voting-security/">lection Security &amp; Voting Rights</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-fraud-mail-voting-security/">E</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-mastriano-shapiro-fraud-mail-voting-security/">lection Security &amp; Voting Rights</a>
 
 <b>A complete listing of Spotlight PA voter guides:</b>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">Your complete guide to</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/"> </a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">voting in the</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">&nbsp;Nov. 8 election</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">Your complete guide to</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/"> </a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/">voting in the</a><a href="https://www.spotlightpa.org/news/2022/10/pa-election-day-2022-november-polling-place-mail-ballots/"> Nov. 8 election</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mail-voting-ballot-how-to-request-fill-out-return/">Everything you need to know about mail ballot</a><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mail-voting-ballot-how-to-request-fill-out-return/">s</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mail-voting-ballot-how-to-request-fill-out-return/">Everything you need to know about mail ballot</a><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mail-voting-ballot-how-to-request-fill-out-return/">s</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-complete-guide/">Your complete guide to the candidates for governor</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-complete-guide/">Your complete guide to the candidates for governor</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-fetterman-oz-candidates-vetting-guide/">How to vet the candidates on your midterm ballot</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-fetterman-oz-candidates-vetting-guide/">How to vet the candidates on your midterm ballot</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-constitutional-amendments-abortion-voter-id/">No constitutional amendments on the ballot, but big ones loom</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-constitutional-amendments-abortion-voter-id/">No constitutional amendments on the ballot, but big ones loom</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-poll-worker-guide-how-to-explainer/">How to serve as a poll worker on Nov. 8</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-poll-worker-guide-how-to-explainer/">How to serve as a poll worker on Nov. 8</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-voters-hall-of-fame-interview/">These Pa. voters haven’t missed a Nov. election in 50+ years</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-voters-hall-of-fame-interview/">These Pa. voters haven’t missed a Nov. election in 50+ years</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-our-coverage-explainer/">How Spotlight PA will cover Pennsylvania’s 2022 election</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-our-coverage-explainer/">How Spotlight PA will cover Pennsylvania’s 2022 election</a>
 
 <b>En Español:</b>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-eleccion-2022-mastriano-shapiro-fetterman-oz-candidatos-investigacion-guia/">Una guía básica para investigar a los candidatos</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-eleccion-2022-mastriano-shapiro-fetterman-oz-candidatos-investigacion-guia/">Una guía básica para investigar a los candidatos</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-trabajador-electoral-completa-guia/">Cómo trabajar como trabajador electoral el 8 de noviembre</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-trabajador-electoral-completa-guia/">Cómo trabajar como trabajador electoral el 8 de noviembre</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-votacion-por-correo-boleta-como-solicitar-llenar-devolver/">Todo lo que necesita saber para votar por correo</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-votacion-por-correo-boleta-como-solicitar-llenar-devolver/">Todo lo que necesita saber para votar por correo</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/09/pa-elecci%C3%B3n-2022-mastriano-shapiro-gobernador-candidatura-completa-gu%C3%ADa/">Su guía completa de los candidatos a gobernador</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-elecci%C3%B3n-2022-mastriano-shapiro-gobernador-candidatura-completa-gu%C3%ADa/">Su guía completa de los candidatos a gobernador</a>
 
-<b>»&nbsp;</b><a href="https://www.spotlightpa.org/news/2022/10/pa-eleccion-2022-papeletas-por-correo-lugar-de-votacion-guia/">Una guía completa para las elecciones del 8 de noviembre</a>
+<b>» </b><a href="https://www.spotlightpa.org/news/2022/10/pa-eleccion-2022-papeletas-por-correo-lugar-de-votacion-guia/">Una guía completa para las elecciones del 8 de noviembre</a>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
