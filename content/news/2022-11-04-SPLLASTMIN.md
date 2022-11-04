@@ -3,10 +3,10 @@ arc-id = "RDYEAQW6VBEPZIKZYRGEAP2H5U"
 authors = ["Kate Huangpu"]
 blurb = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting, polling places, who's on the ballot, & more."
 byline = "Kate Huangpu of Spotlight PA"
-description = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting, polling places, who's on the ballot, & more."
+description = "How to vote and where to vote in Pennsylvania, who are the candidates on the ballot, and answers to all of your last-minute 2022 election questions."
 image = "external/sfpvbr0vtwgbxxshghq1t1bm4r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
-image-description = "Election Day 2022 is approaching and Spotlight PA wants to make sure you’re equipped with the knowledge you’ll need to cast your ballot."
+image-description = "A street sign showing people where to vote in Pennsylvania for 2022 election."
 internal-budget = "2022 Pa. election: A last-minute guide to everything you need to know to vote Nov. 8"
 internal-id = "SPLLASTMIN"
 kicker = "Elections"
@@ -17,6 +17,7 @@ series = ["Voting Guides"]
 slug = "pa-election-day-2022-voting-polling-place-mail-ballot-guide"
 suppress-date = false
 title = "2022 Pa. election: How to vote, where to vote, and everything you need to know for Nov. 8"
+title-tag = "2022 PA Election: A last-minute guide to voting, the candidates & more"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
