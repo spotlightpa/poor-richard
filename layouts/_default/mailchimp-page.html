@@ -41,6 +41,8 @@
 {{ end }}
 
 {{ define "main" }}
+  <h1 class="sr-only">{{ .Title }}</h1>
+  {{ with .Param "blurb" }}<h2 class="sr-only">{{ . }}</h2>{{ end }}
   <div class="raw-content" data-ga-category="content">
     {{ .Param "raw-content" | safeHTML }}
   </div>
