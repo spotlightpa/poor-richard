@@ -1,3 +1,7 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
+
 {{ define "nav" }}
   {{ partial "tw/nav-sc.html" . }}
 {{ end }}

@@ -7,11 +7,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {{- with .Param "title-tag" -}}
-      <title>{{ . }}</title>
-    {{- else -}}
-      <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-    {{- end -}}
+    {{ block "title" . }}
+      <title>
+        {{ .Param "title-tag" | default .LinkTitle }} &middot;
+        {{ site.Title }}
+      </title>
+    {{ end }}
 
     {{ block "static-head" . }}
       {{ partialCached "header/static-bulma.html" . }}
