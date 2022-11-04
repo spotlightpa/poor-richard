@@ -8,8 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{ block "title" . }}
+      {{ $pageNo := "" }}
+      {{ with .Paginator }}
+        {{ if ne .PageNumber 1 }}
+          {{ $pageNo = printf "(Page %d)" .PageNumber }}
+        {{ end }}
+      {{ end }}
       <title>
-        {{ .Param "title-tag" | default .LinkTitle }} &middot;
+        {{ .Param "title-tag" | default .LinkTitle }}
+        {{ $pageNo }}
+        &middot;
         {{ site.Title }}
       </title>
     {{ end }}
