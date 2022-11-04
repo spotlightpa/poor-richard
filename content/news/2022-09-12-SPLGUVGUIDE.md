@@ -3,10 +3,10 @@ arc-id = "XEEIRKLEPNHETLCLSR3LA3WPSM"
 authors = ["Stephen Caruso", "Ethan Edward Coston", "Angela Couloumbis"]
 blurb = "The 2022 election for governor in Pennsylvania could dramatically change the course of the state. Here’s what you need to know about Democrat Josh Shapiro and Republican Doug Mastriano to make an informed vote."
 byline = "Stephen Caruso of Spotlight PA, Ethan Edward Coston of Spotlight PA and Angela Couloumbis of Spotlight PA"
-description = "The 2022 election for governor in Pennsylvania could dramatically change the course of the state. Here’s what you need to know about Democrat Josh Shapiro and Republican Doug Mastriano to make an informed vote."
+description = "Here’s what you need to know about Democrat Josh Shapiro and Republican Doug Mastriano ahead of the 2022 Pennsylvania election."
 image = "external/m20kec48mye5yyeqptmvzg0bhw.jpeg"
 image-credit = "THOMAS HENGGE & STEVEN M. FALK / Philadelphia Inquirer"
-image-description = "Five gubernatorial candidates will be on the Nov. 8 ballot, including Democrat Josh Shapiro (left) and Doug Mastriano (right)."
+image-description = "The 2022 Pennsylvania gubernatorial candidates Democrat Josh Shapiro and Republican Doug Mastriano."
 internal-budget = "Pa. election 2022: Your complete guide to the candidates for governor"
 internal-id = "SPLGUVGUIDE"
 kicker = "Elections"
@@ -18,6 +18,7 @@ series = ["Voting Guides"]
 slug = "pa-election-2022-mastriano-shapiro-governor-race-complete-guide"
 suppress-date = false
 title = "Pa. election 2022: Your complete guide to the candidates for governor"
+title-tag = "A complete guide to the PA candidates for governor"
 topics = ["Elections"]
 +++
 
