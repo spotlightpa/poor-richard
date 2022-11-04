@@ -77,7 +77,7 @@
                 {{- block "main-byline" $params }}
                   <span class="font-semibold">
                     by
-                    <span itemtype="http://schema.org/Person" itemprop="author">
+                    <span>
                       {{- .byline -}}
                     </span>
                   </span>
@@ -135,49 +135,65 @@
           >
             {{ range $name := . }}
               {{ $author := partial "helper/get-author" $name }}
-              {{ if $author.link }}
-                <a
-                  class="flex items-center space-x-6"
-                  href="{{ $author.link }}"
-                >
-                  {{ template "main-author-loop" $author }}
-                </a>
-              {{ else }}
-                <div class="flex items-center space-x-6">
-                  {{ block "main-author-loop" $author }}
-                    {{ if .thumb }}
-                      <span
-                        class="inline-flex h-16 w-16"
-                        data-ga-category="thumb"
-                      >
-                        <img
-                          src="{{ .thumb }}"
-                          alt="Photo of {{ .name }}"
-                          class="m-auto rounded-full ring-2 ring-s-6 grayscale filter"
-                          loading="lazy"
-                          decoding="async"
-                          width="256"
-                          height="256"
-                        />
-                      </span>
-                    {{ else }}
-                      <span class="inline-flex w-16"></span>
-                    {{ end }}
-                    <div class="font-sans font-semibold leading-tight">
-                      {{ $showLink := and .active .link | not | not }}
-                      {{ $color := cond $showLink "text-blue" "text-s-7" }}
-                      <h3 class="{{ $color }} text-2xl" data-ga-category="name">
-                        {{ .name }}
-                      </h3>
-                      {{ if and .active .title }}
-                        <h3 class="text-lg text-s-6" data-ga-category="role">
-                          {{ .title }}
-                        </h3>
+              <div
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                {{ if $author.link }}
+                  <a
+                    class="flex items-center space-x-6"
+                    href="{{ $author.link | absURL }}"
+                    itemprop="url"
+                  >
+                    {{ template "main-author-loop" $author }}
+                  </a>
+                {{ else }}
+                  <div class="flex items-center space-x-6">
+                    {{ block "main-author-loop" $author }}
+                      {{ if .thumb }}
+                        <span
+                          class="inline-flex h-16 w-16"
+                          data-ga-category="thumb"
+                        >
+                          <img
+                            itemprop="image"
+                            src="{{ .thumb | absURL }}"
+                            alt="Photo of {{ .name }}"
+                            class="m-auto rounded-full ring-2 ring-s-6 grayscale filter"
+                            loading="lazy"
+                            decoding="async"
+                            width="256"
+                            height="256"
+                          />
+                        </span>
+                      {{ else }}
+                        <span class="inline-flex w-16"></span>
                       {{ end }}
-                    </div>
-                  {{ end }}
-                </div>
-              {{ end }}
+                      <div class="font-sans font-semibold leading-tight">
+                        {{ $showLink := and .active .link | not | not }}
+                        {{ $color := cond $showLink "text-blue" "text-s-7" }}
+                        <h3
+                          class="{{ $color }} text-2xl"
+                          data-ga-category="name"
+                          itemprop="name"
+                        >
+                          {{ .name }}
+                        </h3>
+                        {{ if and .active .title }}
+                          <h3
+                            class="text-lg text-s-6"
+                            data-ga-category="role"
+                            itemprop="jobTitle"
+                          >
+                            {{ .title }}
+                          </h3>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
             {{ end }}
           </footer>
         {{ end }}
