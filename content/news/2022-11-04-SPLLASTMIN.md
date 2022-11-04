@@ -17,7 +17,7 @@ series = ["Voting Guides"]
 slug = "pa-election-day-2022-voting-polling-place-mail-ballot-guide"
 suppress-date = false
 title = "2022 Pa. election: How to vote, where to vote, and everything you need to know for Nov. 8"
-title-tag = "2022 PA Election: A last-minute guide to voting, the candidates & more"
+title-tag = "PA Election 2022: Your last minute guide to voting"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
