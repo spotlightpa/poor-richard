@@ -1,9 +1,9 @@
 +++
 arc-id = "RDYEAQW6VBEPZIKZYRGEAP2H5U"
 authors = ["Kate Huangpu"]
-blurb = "It’s too late to register to vote or to request a mail ballot, but there’s still plenty that registered voters can do to be prepared."
+blurb = "The 2022 election in Pennsylvania is almost here, and we've got answers to all your questions about voting and the candidates"
 byline = "Kate Huangpu of Spotlight PA"
-description = "It’s too late to register to vote or to request a mail ballot, but there’s still plenty that registered voters can do to be prepared."
+description = "The 2022 election in Pennsylvania is almost here, and we've got answers to all your questions about voting and the candidates"
 image = "external/sfpvbr0vtwgbxxshghq1t1bm4r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Election Day 2022 is approaching and Spotlight PA wants to make sure you’re equipped with the knowledge you’ll need to cast your ballot."
@@ -16,12 +16,12 @@ published = 2022-11-04T05:00:00-04:00
 series = ["Voting Guides"]
 slug = "pa-election-day-2022-voting-polling-place-mail-ballot-guide"
 suppress-date = false
-title = "2022 Pa. election: A last-minute guide to everything you need to know to vote Nov. 8"
+title = "2022 Pa. election: How to vote, where to vote, and everything you need to know for Nov. 8"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Election Day 2022 is approaching and Spotlight PA wants to make sure you’re equipped with the knowledge you’ll need to cast your ballot.
+HARRISBURG — Election Day 2022 in Pennsylvania is approaching fast and Spotlight PA has all the answers about where to vote, how to vote, and how to be informed when you cast your ballot.
 
 Voters will choose a new governor and U.S. senator this year, elected officials who will help determine the future of major issues like abortion access and energy production. Voters will also cast ballots for representatives to the U.S. House and lawmakers to serve in the General Assembly.
 
