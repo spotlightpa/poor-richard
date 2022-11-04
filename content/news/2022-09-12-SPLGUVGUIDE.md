@@ -18,7 +18,7 @@ series = ["Voting Guides"]
 slug = "pa-election-2022-mastriano-shapiro-governor-race-complete-guide"
 suppress-date = false
 title = "Pa. election 2022: Your complete guide to the candidates for governor"
-title-tag = "A complete guide to the PA candidates for governor"
+title-tag = "A complete guide to the PA candidates for governor - Spotlight PA"
 topics = ["Elections"]
 +++
 
