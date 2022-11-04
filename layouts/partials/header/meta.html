@@ -1,3 +1,5 @@
+{{ $seoTitle := .Param "title-tag" | default .LinkTitle }}
+
 {{ $image := $.Param "image" }}
 {{ with $image }}
   {{ $imgOpt := dict
@@ -20,7 +22,7 @@
 {{ end }}
 
 <meta name="description" content="{{ .Description }}">
-<meta property="og:title" content="{{ .Title }} | Spotlight PA" />
+<meta property="og:title" content="{{ .Param `og-title` | default $seoTitle }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
@@ -74,7 +76,7 @@
 
 {{- /* Facebook Page Admin ID for Domain Insights */}}
 {{- with .Site.Social.facebook_admin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}
-<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="name" content="{{ $seoTitle }}">
 <meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
 {{if .IsPage}}
@@ -108,7 +110,7 @@
 {{ else }}
   <meta name="twitter:card" content="summary"/>
 {{ end }}
-<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:title" content="{{ .Param `twitter-title` | default $seoTitle }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 {{ with .Site.Social.twitter -}}
 <meta name="twitter:site" content="@{{ . }}"/>
