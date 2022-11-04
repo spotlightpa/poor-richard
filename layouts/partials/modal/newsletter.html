@@ -146,14 +146,26 @@
           </button>
         </div>
         <div class="has-text-centered">
-          <a
-            class="has-text-grey hover-underline"
+          <button
+            class="button is-ghost has-text-grey hover-underline"
+            aria-label="close"
+            type="button"
+            @click="
+              $dispatch('x-form-submit', 'newsletters:seenit:submit');
+              isOpen = false
+            "
+          >
+            I’m already a subscriber
+          </button>
+          <button
+            class="button is-ghost has-text-grey hover-underline"
+            type="button"
             aria-label="close"
             tabindex="0"
             @click="isOpen = false"
           >
             No thanks
-          </a>
+          </button>
         </div>
       </div>
     </form>
