@@ -27,11 +27,23 @@
   "name": {{ $params.seoTitle }},
 
   {{ if $isArticle }}"headline": {{ .Title }},{{ end }}
-  {{ with $params.byline }}"author": {{ . }},{{ end }}
   {{ with $params.publishedISO }}"datePublished": {{ . }},{{ end }}
   {{ if $isArticle }}"wordcount": {{ .WordCount }},{{ end }}
   {{ with $image}}"image": {{ . }},{{ end }}
-
+  "author": [
+    {{ with .Param "authors" }}
+      {{ range $i, $name := . }}
+        {{ if ne $i 0 }},{{ end }}
+        {{ $author := partial "helper/get-author" $name }}
+        {
+          {{ with $author.name }}"name": "{{ . }}",{{ end }}
+          {{ with $author.title }}"jobTitle": "{{ . }}",{{ end }}
+          {{ with $author.link }}"url": "{{ . | absURL }}",{{ end }}
+          "@type": "Person"
+        }
+      {{ end }}
+    {{ end }}
+  ],
   "publisher": {
     "@type": "Organization",
     "name": {{ site.Title }},
