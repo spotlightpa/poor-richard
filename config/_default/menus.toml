@@ -17,9 +17,9 @@ url = "/newsletters/"
 weight = 3
 
 [[main]]
-name = "Staff"
+name = "About Us"
 pre = "is-uppercase"
-url = "/about/staff/"
+url = "/about/"
 weight = 4
 
 [[main]]
@@ -160,6 +160,7 @@ name = "Sign Up for Newsletters"
 pre = "is-uppercase"
 url = "/newsletters/"
 weight = 1
+
 [tndmain.params]
 attrs = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:newsletters:open')\""
 
@@ -180,54 +181,60 @@ name = "Facebook"
 pre = "is-uppercase"
 url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
+
 [social.params]
-  icon = '#fb-svg'
+icon = "#fb-svg"
 
 [[social]]
 name = "Twitter"
 pre = "is-uppercase"
 url = "https://www.twitter.com/SpotlightPA"
 weight = 2
+
 [social.params]
-  icon = '#twitter-svg'
+icon = "#twitter-svg"
 
 [[social]]
 name = "Instagram"
 pre = "is-uppercase"
 url = "https://www.instagram.com/Spotlightpennsylvania/"
 weight = 3
+
 [social.params]
-  icon = '#ig-svg'
+icon = "#ig-svg"
 
 [[social]]
 name = "Apple News"
 pre = "is-uppercase"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
 weight = 4
+
 [social.params]
-  icon = '#apple-svg'
+icon = "#apple-svg"
 
 [[social]]
 name = "Flipboard"
 pre = "is-uppercase"
 url = "https://flipboard.com/@SpotlightPA"
 weight = 5
-[social.params]
-  icon = '#flip-svg'
 
+[social.params]
+icon = "#flip-svg"
 
 [[social]]
 name = "Github"
 pre = "is-uppercase"
 url = "https://www.github.com/spotlightpa/"
 weight = 6
+
 [social.params]
-  icon = '#gh-svg'
+icon = "#gh-svg"
 
 [[social]]
 name = "Google News"
 pre = "is-uppercase"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
 weight = 7
+
 [social.params]
-  icon = '#google-svg'
+icon = "#google-svg"
