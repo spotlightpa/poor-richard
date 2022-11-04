@@ -1,3 +1,7 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
+
 {{ define "topper" }}
   {{ if .Param "topper-active" }}
     {{ partialCached "component/topper.html" . }}

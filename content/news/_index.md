@@ -1,5 +1,6 @@
 +++
 title = "News Archive for Spotlight PA"
+title-tag = "Latest News from Spotlight PA"
 linktitle = "News"
 description = "Read the latest news from Spotlight PA"
 +++
