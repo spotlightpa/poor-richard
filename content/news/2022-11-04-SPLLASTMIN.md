@@ -1,9 +1,9 @@
 +++
 arc-id = "RDYEAQW6VBEPZIKZYRGEAP2H5U"
 authors = ["Kate Huangpu"]
-blurb = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting and the candidates."
+blurb = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting, polling places, who's on the ballot, & more."
 byline = "Kate Huangpu of Spotlight PA"
-description = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting and the candidates."
+description = "The 2022 election in Pennsylvania is almost here, and we've got answers to all of your last-minute questions about voting, polling places, who's on the ballot, & more."
 image = "external/sfpvbr0vtwgbxxshghq1t1bm4r.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Election Day 2022 is approaching and Spotlight PA wants to make sure you’re equipped with the knowledge you’ll need to cast your ballot."
