@@ -60,24 +60,28 @@
           style="position: relative;"
         >
           <!-- no JS fallback link to footer -->
-          <a style="display: flex;" href="#footer" :href="null" @click.prevent>
-            <button
-              type="button"
-              class="site-nav:hamburger"
-              x-ref="button"
-              aria-label="Site Menu"
-              :aria-expanded="isOpen"
-              :aria-controls="$id('dropdown-button')"
-              @click="isOpen = !isOpen"
-              data-ga-category="burger"
-              data-ga-action="menu:toggle"
-            >
-              <svg class="site-nav:svg-icon">
-                <title>Site Menu</title>
-                <use href="#bars-svg"></use>
-              </svg>
-            </button>
+          <a class="no-js:block" href="#footer">
+            <svg class="site-nav:svg-icon">
+              <title>Footer Menu</title>
+              <use href="#bars-svg"></use>
+            </svg>
           </a>
+          <button
+            class="no-js:hidden site-nav:hamburger"
+            type="button"
+            x-ref="button"
+            aria-label="Site Menu"
+            :aria-expanded="isOpen"
+            :aria-controls="$id('dropdown-button')"
+            @click="isOpen = !isOpen"
+            data-ga-category="burger"
+            data-ga-action="menu:toggle"
+          >
+            <svg class="site-nav:svg-icon">
+              <title>Site Menu</title>
+              <use href="#bars-svg"></use>
+            </svg>
+          </button>
 
           <div
             data-ga-category="mobile"
