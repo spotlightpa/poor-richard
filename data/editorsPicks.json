@@ -1,11 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-11-04-SPLLASTMIN.md"
+    "content/news/2022-11-04-SPLLASTMIN.md",
+    "content/news/2022-11-04-SPLPREBUNK.md"
   ],
   "subfeatures": [
     "content/news/2022-09-12-SPLGUVGUIDE.md",
     "content/news/2022-09-21-SPLVET2022.md",
-    "content/news/2022-09-30-SPLMAIL2022.md"
+    "content/news/2022-11-04-SPLLASTMIN.md"
   ],
   "topSlots": [
     "content/news/2022-11-03-SPLCREDITSIGN.md",
