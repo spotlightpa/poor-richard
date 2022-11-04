@@ -12,12 +12,12 @@
       class="absolute inset-0 object-cover"
       {{ if len .images | eq 1 }}
         src="{{ index .images 0 }}"
-        loading="lazy"
       {{ else }}
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ .images | jsonify }}" :src="choice"
         src="{{ $magicPixel }}"
       {{ end }}
+      {{ if not .eager }}loading="lazy"{{ end }}
       alt="{{ .description }}"
       width="{{ .width }}"
       height="{{ .height }}"

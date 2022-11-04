@@ -14,12 +14,12 @@
       class="aspect-ratio-inner"
       {{ if len .images | eq 1 }}
         src="{{ index .images 0 }}"
-        loading="lazy"
       {{ else }}
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ .images | jsonify }}" :src="choice"
         src="{{ $magicPixel }}"
       {{ end }}
+      loading="lazy"
       alt="{{ .description }}"
       width="{{ .width }}"
       height="{{ .height }}"
