@@ -111,6 +111,14 @@ target = "assets/@fontawesome"
 source = "static"
 target = "static"
 
+[[module.mounts]]
+source = "node_modules/@builder.io/partytown/lib"
+target = "static/~partytown"
+
+[[module.mounts]]
+source = "node_modules/@builder.io/partytown/lib"
+target = "assets/@partytown"
+
 [related]
 includeNewer = true
 

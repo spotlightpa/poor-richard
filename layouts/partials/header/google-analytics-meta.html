@@ -12,6 +12,22 @@
   data-ga-page-url="{{ $link }}"
 />
 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
 <script>
   window.dataLayer = [{ "gtm.start": new Date().getTime(), event: "gtm.js" }];
+  window.partytown = {
+    forward: ["dataLayer.push"],
+  };
+</script>
+
+{{ $party := resources.Get "@partytown/partytown.js" }}
+
+<script>
+  {{ $party.Content | safeJS }}
+</script>
+<script type="text/partytown">
+  var s = document.createElement("script");
+  s.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NTQ87KG";
+  s.async = true;
+  document.head.appendChild(s);
 </script>
