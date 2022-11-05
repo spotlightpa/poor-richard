@@ -48,7 +48,11 @@
         </div>
       </div>
       {{ if .river }}
-        <div class="tile" @mouseover.once="load()" @touchstart.once="load()">
+        <div
+          class="tile"
+          @mouseover.passive.once="load()"
+          @touchstart.passive.once="load()"
+        >
           <div class="tile is-parent is-top is-4" style="order: 2">
             <div class="tile is-child" data-ga-category="sidebar">
               <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
