@@ -1,9 +1,9 @@
 +++
 arc-id = "YZH2W6VJ5JGPLLFJCASW45IUN4"
 authors = ["Katie Meyer"]
-blurb = "The city’s commissioners plan to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+blurb = "The city wants to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
 byline = "Katie Meyer of Spotlight PA"
-description = "The city’s commissioners plan to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+description = "The city wants to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
 image = "external/pj66vj5ym26gna84b2cybrjgkc.jpeg"
 image-credit = "Jessica Griffin / Philadelphia Inquirer"
 image-description = "Election Clerk Lisa Gogel demonstrates a Ballot Scanner during a media tour of the election warehouse where ballots will be counted, in Philadelphia, Thursday, October 27, 2022."
@@ -15,34 +15,38 @@ no-index = false
 published = 2022-11-07T11:58:52.246-05:00
 slug = "pa-election-2022-philadelphia-double-voting-lawsuit"
 suppress-date = false
-title = "Philadelphia shouldn’t be forced to change its vote-counting plan for the Nov. 8 election, judge rules"
+title = "Judge rules Philadelphia shouldn’t be forced to change its vote-counting plan for Nov. 8 election, but the case isn’t over"
 title-tag = "Philly won't be forced to change it's Nov. 8 election plan"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Philadelphia does not need to change a significant aspect of its vote-counting plan hours before the 2022 general election, a judge ruled Monday.
+HARRISBURG — Philadelphia does not need to change a significant aspect of its vote-counting plan hours before the 2022 general election, a judge ruled Monday, but the case isn’t over yet.
 
-The city’s commissioners, who administer Philadelphia’s elections, plan to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures.
+It revolves around the city’s commissioners’ plan to discontinue a time-consuming procedure they previously used to catch people who vote both by mail and in person. The commissioners, who administer Philadelphia’s elections, argue it’s duplicative of other effective measures.
 
-Two elected poll workers who are Republicans brought the suit, asking the commissioners to reinstate the time-consuming measure they had used in the past several elections to check for double voting.
+Two elected poll workers who are Republicans are plaintiffs in the case. They’re asking the commissioners to reinstate that security measure.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 In her decision Monday morning, Common Pleas Judge Anne Marie Coyle wrote that the suit came “too close in time to the upcoming general election” and that forcing Philly to change its plans now would “cause greater measure of harm to the electoral process.”
 
-The check at the center of the lawsuit has never caught much double voting — which is defined, in this case, as voters casting ballots both by mail and in person. It’s one of a number of measures Philadelphia takes in order to make sure nobody votes twice, and it’s a measure that has, since 2020, gone beyond the checks that most counties conduct.
+Litigation is ongoing, however. The GOP attorneys who brought the suit confirmed to Spotlight PA that they have already appealed it to Commonwealth Court — and the Philly judge’s order gives them plenty to use in that appeal.
 
-Additionally, the check turned up zero instances of double voting in the past three elections, according to commissioners.
+Coyle said the GOP attorneys who brought the suit had “sufficiently established” the merits of their case, and she harshly criticized the Philadelphia commissioners’ decision to forego the double-voting check — which is known as poll book reconciliation — and their decision to delay announcing the change until just before the Nov. 8 election.
 
-The Republican plaintiffs plan to appeal the decision ahead of the election. An attorney for the GOP side confirmed to Spotlight PA that the appeal is being filed in Commonwealth Court.
+The commissioners “failed to consider the harm to public perception of our electoral process that could reasonably result” from their late announcement of the change, Coyle wrote, going on to say that “fraudulent voting” could “reasonably result from” the change in process, and that the commissioners “unwisely discounted the inherent deterrence of fraudulent voting value [and] fraud detection value” that poll book reconciliation provided.
+
+The process has never caught much double voting — which is defined, in this case, as voters casting ballots both by mail and in person. It’s one of a number of measures Philadelphia takes in order to make sure nobody votes twice, and it’s a measure that has, since 2020, gone beyond the checks that most counties conduct.
+
+Additionally, the check turned up zero instances of double voting in the past three elections, according to commissioners. That’s a key part of their argument, though in her order, Coyle noted that she believes it is “illusory” because those elections were “poorly attended and minor races” that don’t compare to this year’s midterm.
 
 Philadelphia’s commissioners — two Democrats and a Republican — and voting rights groups said they see this suit as part of a pattern of litigation they believe is intended to sow mistrust in elections.
 
 The goal, ACLU attorney Marian Schneider said, seems to be to “make people think that double voting is rampant … double voting is not rampant.”
 
-The suit comes from a group called RITE — Restoring Integrity and Trust in Elections — that GOP operative Karl Rove, former Trump U.S. Attorney General Bill Barr, and others founded relatively recently. RITE claims the integrity of Philly’s count is at risk, and that commissioners “<a href="https://twitter.com/Restoring_USA/status/1587906170920091652">are refusing to keep double votes out of the ballot box</a>.”
+The suit comes via a group called RITE — Restoring Integrity and Trust in Elections — that GOP operative Karl Rove, former Trump U.S. Attorney General Bill Barr, and others founded relatively recently. RITE claims the integrity of Philly’s count is at risk, and that commissioners “<a href="https://twitter.com/Restoring_USA/status/1587906170920091652">are refusing to keep double votes out of the ballot box</a>.”
 
 ## What is poll book reconciliation?
 
