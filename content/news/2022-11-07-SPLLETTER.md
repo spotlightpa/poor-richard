@@ -49,7 +49,7 @@ As used by the state, the term “unverified” refers to voters who applied onl
 
 That task of verification falls to the county issuing that mail ballot. <a href="https://www.dos.pa.gov/about-us/Documents/statements/2022-10-27-Statement-UnverifiedMailBallot.pdf">According</a> to Department of State data, they verify identities in 97% of cases. Election directors do so by running a manual check with the federal government or their own records.
 
-The 3% of voters who aren’t matched will still get their mail ballot, along with a letter noting their ballot will not be counted unless they provide documentation proving their identity. Often, the mixup is due to typos on the part of the voter, issues with county record-keeping, or people who apply for a mail ballot using a nickname.
+The 3% of voters who aren’t matched will still get their mail ballot, along with a letter noting their ballot will not be counted unless they provide documentation proving their identity. Often, the mix-up is due to typos on the part of the voter, issues with county record-keeping, or people who apply for a mail ballot using a nickname.
 
 Still, the top two state Senate Republicans — President Pro Tempore Jake Corman (R., Centre) and Majority Leader Kim Ward (R., Westmoreland) — referenced the “unverified” voter claim in a separate letter to Chapman, saying that “conflicting reports regarding mail-in ballots of unverified voters have emerged.”
 
@@ -57,7 +57,7 @@ Still, the top two state Senate Republicans — President Pro Tempore Jake Corma
 
 State Rep. Seth Grove (R., York), who heads the powerful State Government Committee, has also recently <a href="https://twitter.com/RepGrove/status/1585362871097372675">claimed on Twitter</a> that Philadelphia runs “illegal elections,” and that the city’s vote-counting process <a href="https://twitter.com/RepGrove/status/1587787021384392705">violates election law</a>.
 
-Grove is part of a still-undecided case over whether Philly should continue conducting <a href="https://www.inquirer.com/politics/election/philadelphia-poll-book-reconciliation-double-votes-20221017.html">a double-check it has used in recent years</a> to catch voters casting ballots both in person and by mail. City officials argue that the check was never actually required by law and that it’s no longer necessary because they haven’t found double voters in the past three elections.
+Grove is part of a <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-philadelphia-double-voting-lawsuit/" target="_blank">case over whether Philly should continue conducting a double-check</a> it has used in recent years to catch voters casting ballots both in person and by mail. City officials argue that the check was never actually required by law and that it’s no longer necessary because they haven’t found double voters in the past three elections.
 
 Voting rights advocates, like ACLU attorney Marian Schneider, say the lawsuit is part of a pattern of litigation intended to sow mistrust in elections.
 
