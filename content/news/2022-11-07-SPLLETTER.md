@@ -7,6 +7,7 @@ description = "Doug Mastriano and Josh Shapiro must accept the voting results of
 image = "external/yd0pjmncgbft02hyg5bmr9x9aw.jpeg"
 image-credit = "THOMAS HENGGE, STEVEN M. FALK / Philadelphia Inquirer Photographers"
 image-description = "Pennsylvania 2022 election governor candidates Republican state Sen. Doug Mastriano (left) and Democratic Attorney General Josh Shapiro (right)"
+image-gravity = "no"
 internal-budget = "Pa. election 2022: Former Pa. governors ask candidates Doug Mastriano, Josh Shapiro to accept results"
 internal-id = "SPLLETTER"
 kicker = "Elections"
