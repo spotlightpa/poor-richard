@@ -35,6 +35,12 @@ The letter comes less than 24 hours before Pennsylvanians <a href="https://www.s
 
 Rendell is the lone Democrat among the four men, who collectively represent nearly three decades of leadership in the state’s top job.
 
+Speaking to reporters on Monday at a campaign stop in North Philadelphia, Shapiro said he will accept the results and urged Mastriano to do the same.
+
+“I have tremendous faith in the Republican and Democratic clerks of elections all across Pennsylvania to do their jobs … I will not only trust their work, I’ll trust the will of the people of Pennsylvania,” Shapiro said. “And I’m glad that the former governors spoke up on a bipartisan basis. We need to begin to repair our democracy.”
+
+Mastriano’s campaign did not respond to a request for comment.
+
 In the weeks leading up to the election, Mastriano and his allies have frequently raised questions about <a href="https://www.spotlightpa.org/news/2022/11/2022-pa-election-misinformation-unverified-ballots-drop-boxes-vote-delays/">debunked or misleading election fraud theories</a>.
 
 In a recent interview on a right-wing news show, Mastriano claimed that the fact that Pennsylvania will likely take a few days to finish counting ballots is an effort to “have the fix in,” and that Democrats have “pre-loaded” drop boxes in order to cheat. Neither is true.
