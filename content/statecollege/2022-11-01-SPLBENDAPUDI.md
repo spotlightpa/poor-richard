@@ -210,7 +210,7 @@ Renee Shaw, the director of public affairs at Kentucky Educational Television wh
 
 Bendapudi’s administration slated the agenda — often abbreviated to CARA — to be finished by late September 2020, when it could be presented at the next trustees meetings, according to internal emails. The faculty and administrators crafting it worked through the summer, typically a time off for faculty.
 
-The group missed its deadline. As the fall semester moved forward, Michele Foster, a professor in the university’s Department of Early Childhood and Elementary Education who worked on the agenda for several months, grew increasingly skeptical of what could be accomplished. In June 2021, nearly a year after the initial announcement, <a href="https://www.uoflnews.com/post/uofltoday/uofls-cardinals-anti-racism-agenda-in-the-final-stages-of-development/">the university said</a> CARA was in “the final stages of development.”
+The group missed its deadline. As the fall semester moved forward, Michele Foster, a professor in the university’s College of Education and Human Development who worked on the agenda for several months, grew increasingly skeptical of what could be accomplished. In June 2021, nearly a year after the initial announcement, <a href="https://www.uoflnews.com/post/uofltoday/uofls-cardinals-anti-racism-agenda-in-the-final-stages-of-development/">the university said</a> CARA was in “the final stages of development.”
 
 Having a person of color in leadership does not immediately overhaul decades of institutional inertia, Foster told Spotlight PA. The “premier anti-racist metropolitan research university” statement sounded good, she said, but a slogan would not change the ongoing realities of being a person of color.
 
