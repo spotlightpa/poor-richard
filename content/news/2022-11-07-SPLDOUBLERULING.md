@@ -21,7 +21,7 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan to catch double votes. </b></i><a href="https://www.inquirer.com/politics/election/live/election-2022-results-pennsylvania-senate-governor-candidates-voting-updates-news-20221108.html#card-2076970891" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
+<i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan. </b></i><a href="https://www.inquirer.com/politics/election/philadelphia-election-vote-count-slowed-poll-book-reconciliation-20221108.html" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
 
 A last-minute change to Philadelphia’s vote-counting plan means that Pennsylvania’s largest, most heavily Democratic county will take longer than it originally anticipated to finish tabulating ballots.
 
