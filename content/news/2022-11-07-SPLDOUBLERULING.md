@@ -15,7 +15,7 @@ no-index = false
 published = 2022-11-07T11:58:52.246-05:00
 slug = "pa-election-2022-philadelphia-double-voting-lawsuit"
 suppress-date = false
-title = "Philadelphia will change its vote-counting plan for Nov. 8 election, delaying results"
+title = "Philadelphia will change its vote-counting plan for Nov. 8 election"
 topics = ["Elections"]
 +++
 
