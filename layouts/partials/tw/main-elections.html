@@ -101,21 +101,6 @@
 <section
   id="dates"
   data-ga-category="dates"
-  x-data='{
-      url: "https://unpkg.com/add-to-calendar-button@1.14.6/npm_dist/mjs/index.js",
-      data(el) {
-        return {
-          name: el.dataset.name,
-          startDate: el.dataset.date,
-          endDate: el.dataset.date,
-          options: ["Apple", "Google", "Outlook.com"],
-          timeZone: "America/New_York",
-          listStyle: "modal",
-          iCalFileName: el.dataset.name,
-        };
-      },
-    }'
-  @mouseover.once="import(url)"
   class="relative bg-election-green-darker px-6 pt-12 pb-16"
 >
   {{ $sizes := slice
@@ -167,26 +152,6 @@
           <p class="my-6 text-xl leading-tight">
             {{ .name }}
           </p>
-          {{ if not $past }}
-            <p class="mt-auto">
-              <button
-                @click.prevent="
-                  $report($event);
-                  import(url).then((m) => m.atcb_action(data($el), $el))
-                "
-                class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-s-6 hover:border-election-green-darker"
-                type="button"
-                data-name="{{ .name }}"
-                data-date="{{ .date }}"
-                data-ga-action="add-to-calendar"
-              >
-                <svg class="mb-2 inline-block h-5 w-5 fill-current">
-                  <use href="#calendar-svg" />
-                </svg>
-                <span class="tracking-wide">Add to Calendar</span>
-              </button>
-            </p>
-          {{ end }}
         </li>
       {{ end }}
     </ul>
