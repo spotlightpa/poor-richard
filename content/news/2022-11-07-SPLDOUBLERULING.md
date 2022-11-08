@@ -23,6 +23,14 @@ topics = ["Elections"]
 
 <i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan to catch double votes. </b></i><a href="https://www.inquirer.com/politics/election/live/election-2022-results-pennsylvania-senate-governor-candidates-voting-updates-news-20221108.html#card-2076970891" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
 
+A last-minute change to Philadelphia’s vote-counting plan means that Pennsylvania’s largest, most heavily Democratic county will take longer than it originally anticipated to finish tabulating ballots.
+
+Philadelphia officials had initially projected that they would be mostly finished counting ballots by Wednesday morning. It was an important prediction. The incorrect idea that a slow vote count means something nefarious is going on is common in right-wing political circles and is frequently <a href="https://www.spotlightpa.org/news/2022/11/2022-pa-election-misinformation-unverified-ballots-drop-boxes-vote-delays/">used to cast doubt on election results</a> in places like Philly.
+
+But now, some tens of thousands of mail ballots still left to count on Tuesday night will need to be counted more slowly through the week, <a href="https://www.inquirer.com/politics/election/philadelphia-election-vote-count-slowed-poll-book-reconciliation-20221108.html">according to The Inquirer</a>.
+
+That’s not a sign that anything is wrong with the count — just that election workers are conducting an extra, time-consuming check for double votes.
+
 <i>Original story</i>
 
 HARRISBURG — Philadelphia does not need to change a significant aspect of its vote-counting plan hours before the 2022 general election, a judge ruled Monday, but the case isn’t over yet.
