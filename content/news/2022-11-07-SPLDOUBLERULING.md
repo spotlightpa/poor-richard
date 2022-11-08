@@ -1,9 +1,9 @@
 +++
 arc-id = "YZH2W6VJ5JGPLLFJCASW45IUN4"
 authors = ["Katie Meyer"]
-blurb = "The city wants to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+blurb = "The city wanted to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
 byline = "Katie Meyer of Spotlight PA"
-description = "The city wants to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+description = "The city wanted to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
 image = "external/pj66vj5ym26gna84b2cybrjgkc.jpeg"
 image-credit = "Jessica Griffin / Philadelphia Inquirer"
 image-description = "Election Clerk Lisa Gogel demonstrates a Ballot Scanner during a media tour of the election warehouse where ballots will be counted, in Philadelphia, Thursday, October 27, 2022."
@@ -15,11 +15,15 @@ no-index = false
 published = 2022-11-07T11:58:52.246-05:00
 slug = "pa-election-2022-philadelphia-double-voting-lawsuit"
 suppress-date = false
-title = "Judge rules Philadelphia shouldn’t be forced to change its vote-counting plan for Nov. 8 election, but the case isn’t over"
+title = "Philadelphia will change its vote-counting plan for Nov. 8 election, delaying results"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+
+<i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan to catch double votes. </b></i><a href="https://www.inquirer.com/politics/election/live/election-2022-results-pennsylvania-senate-governor-candidates-voting-updates-news-20221108.html#card-2076970891" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
+
+<i>Original story</i>
 
 HARRISBURG — Philadelphia does not need to change a significant aspect of its vote-counting plan hours before the 2022 general election, a judge ruled Monday, but the case isn’t over yet.
 
