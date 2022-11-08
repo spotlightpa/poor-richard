@@ -1,12 +1,12 @@
 +++
 arc-id = "YZH2W6VJ5JGPLLFJCASW45IUN4"
 authors = ["Katie Meyer"]
-blurb = "The city wanted to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+blurb = "The city reinstated a procedure used to catch people who vote both by mail and in person, but the vote count will now take longer than expected."
 byline = "Katie Meyer of Spotlight PA"
-description = "The city wanted to discontinue a procedure used to catch people who vote both by mail and in person, arguing it’s duplicative of other effective measures."
+description = "The city reinstated a procedure used to catch people who vote both by mail and in person, but counting the 2022 election results will take longer."
 image = "external/pj66vj5ym26gna84b2cybrjgkc.jpeg"
 image-credit = "Jessica Griffin / Philadelphia Inquirer"
-image-description = "Election Clerk Lisa Gogel demonstrates a Ballot Scanner during a media tour of the election warehouse where ballots will be counted, in Philadelphia, Thursday, October 27, 2022."
+image-description = "Philadelphia Election Clerk Lisa Gogel demonstrates a ballot scanner that will be used in the 2022 election in Pennsylvania."
 internal-budget = "Philadelphia won’t be forced to change its vote-counting plan for the Nov. 8 election"
 internal-id = "SPLDOUBLERULING"
 kicker = "Elections"
@@ -16,12 +16,13 @@ published = 2022-11-07T11:58:52.246-05:00
 slug = "pa-election-2022-philadelphia-double-voting-lawsuit"
 suppress-date = false
 title = "Philadelphia will change its vote-counting plan for Nov. 8 election"
+title-tag = "Last-minute change will prolong Philadelphia vote tally"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan. </b></i><a href="https://www.inquirer.com/politics/election/philadelphia-election-vote-count-slowed-poll-book-reconciliation-20221108.html" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
+<i><b>UPDATED, Nov. 8: Philadelphia commissioners voted Tuesday to reinstate the plan to catch double votes. </b></i><a href="https://www.inquirer.com/politics/election/live/election-2022-results-pennsylvania-senate-governor-candidates-voting-updates-news-20221108.html#card-2076970891" target="_blank"><i><b>Read more from The Inquirer</b></i></a><i><b>.</b></i>
 
 A last-minute change to Philadelphia’s vote-counting plan means that Pennsylvania’s largest, most heavily Democratic county will take longer than it originally anticipated to finish tabulating ballots.
 
