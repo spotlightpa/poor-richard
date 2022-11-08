@@ -6,7 +6,7 @@ byline = "Charlotte Keith of Spotlight PA"
 description = "Learn how to take advantage of Pennsylvania’s property tax rebate and rent rebate program, and a special one-time bonus approved this year."
 image = "external/vqdbs7zn0dm9fp9tpw6972kypg.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
-image-description = "Everything you need to know about Pennsylvania’s property tax rebate and rent rebate program."
+image-description = "People in Pennsylvania filing for property tax rebates and rent rebates."
 image-gravity = "no"
 internal-budget = "Learn how to take advantage of Pennsylvania’s property tax rebate and rent rebate program, and a special one-time bonus approved this year."
 internal-id = "SPLREBATEGUIDE"
@@ -17,6 +17,7 @@ published = 2022-09-28T05:00:00-04:00
 slug = "pa-property-tax-rebate-status-pennsylvania-guide"
 suppress-date = false
 title = "How to apply for a Pennsylvania property tax rebate or rent rebate"
+title-tag = "How to apply for a PA property tax rebate or rent rebate"
 topics = ["Economy"]
 +++
 
