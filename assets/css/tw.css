@@ -52,10 +52,6 @@
   @apply list-decimal pl-6;
 }
 
-.article-content > :where(*) {
-  @apply overflow-x-auto;
-}
-
 .article-content > :where(p, aside, figure, ol, ul) {
   @apply mt-4 mb-4;
 }
