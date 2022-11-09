@@ -30,7 +30,9 @@ Budget battles and fights over environmental regulation, election access, and ed
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Key to his success will be whether the state House of Representatives flips to Democrats for the first time in more than a decade. The Associated Press hasn’t yet made a call on which party will control the chamber, and there could still be litigation over several close races. But state House Democrats on Wednesday declared victory, citing a slew of unexpected victories and their own analysis of county results.
+Key to his success will be whether the state House of Representatives flips to Democrats for the first time in more than a decade. The Associated Press hasn’t yet made a call on which party will control the chamber, and there could still be litigation over several close races. 
+
+But state House Democrats on Wednesday declared victory, citing a slew of unexpected victories and their own analysis of county results.
 
 Shapiro having one chamber on his side would, at the least, blunt <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-tom-wolf-vetoes-republican-legislature/">the GOP’s strategy</a> in recent years of using constitutional amendments to circumvent vetoes by a Democratic governor, a move Republicans used successfully to narrow Gov. Tom Wolf’s powers.
 
@@ -63,6 +65,8 @@ Commonwealth Partners’ political action committees get millions of dollars fro
 A spokesperson for the Pennsylvania State Education Association, a prominent Shapiro backer, said it too is keeping a close eye on lifeline scholarships.
 
 “PSEA disagrees with Attorney General Shapiro on the issue of lifeline scholarships,” union spokesperson Chris Lilienthal told Spotlight PA. “We’ve made that clear to him. PSEA would oppose any type of tuition voucher program and we have no intention of changing that.”
+
+{{<picture src="external/j63rhmb07yn19n3mf3257tzp1c.jpeg" description="Josh Shapiro at the Election Day lunch at Relish, in Philadelphia, Tuesday, November 8, 2022." caption="Josh Shapiro at the Election Day lunch at Relish, in Philadelphia, Tuesday, November 8, 2022." credit="Jessica Griffin / Philadelphia Inquirer">}} 
 
 He added that Shapiro has also been a firm supporter of increasing public school funding and routing that money through a formula designed to more fairly allocate resources. Despite disagreements, PSEA sees Shapiro’s election as an unequivocal victory — especially, Lilienthal said, because of Shapiro’s proven negotiation skills.
 
