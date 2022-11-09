@@ -1,7 +1,10 @@
 {{ define "extra-main" }}
-  {{ $jsOpts := dict "minify" true "targetPath" "/embed.js" }}
-  {{ $hostJS := resources.Get "js/esbuild/embed-host.js" | js.Build $jsOpts }}
-  {{ $hostJS = $hostJS | babel }}
+  {{ $hostJS := resources.Get "js/esbuild/embed-host.js" }}
+  {{ $jsOpts := dict "minify" true }}
+  {{ $hostJS = $hostJS | js.Build $jsOpts }}
+  {{ $hostJS = $hostJS | minify }}
+  {{/* Use resources.Concat to remove .min. from the URL */}}
+  {{ $hostJS = slice $hostJS | resources.Concat "/embed.js" }}
   {{ $scriptSrc := $hostJS.Permalink }}
   <section
     class="section columns is-centered is-multiline"
