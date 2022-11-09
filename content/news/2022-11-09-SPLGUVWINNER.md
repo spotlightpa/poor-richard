@@ -7,6 +7,7 @@ description = "Shapiro, the current Democratic attorney general, vastly outspent
 image = "2022/11/01hp-pf67-bqdw-9d18.jpeg"
 image-credit = "Heather Khalifa / Philadelphia Inquirer"
 image-description = "Josh Shapiro at his election night victory party in Montgomery County."
+image-gravity = "no"
 internal-budget = "This person will be Pennsylvania's next governor."
 internal-id = "SPLGUVWINNER"
 kicker = "Elections"
