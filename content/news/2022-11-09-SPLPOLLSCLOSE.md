@@ -14,12 +14,14 @@ no-index = false
 published = 2022-11-08T20:00:00-05:00
 slug = "pa-election-day-2022-results-when-will-we-know-winner"
 suppress-date = false
-title = "Election Day polls are closed in most of Pennsylvania, but the process is far from over. Here’s what happens now."
+title = "Election Day polls are closed in Pennsylvania. Here’s what happens now."
 title-tag = "Why we may not know all PA election results tonight"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+
+<i><b>Second update, Nov. 9: </b></i><a href="https://www.spotlightpa.org/news/2022/11/pa-election-day-2022-updates-voting-results-mastriano-shapiro-oz-fetterman/#spl-fet" target="_blank"><i><b>John Fetterman wins U.S. Senate race in Pennsylvania, AP projects</b></i></a>
 
 <i><b>Update, Nov. 9: </b></i><a href="https://www.spotlightpa.org/news/2022/11/pa-governor-election-2022-results-winner-josh-shapiro-doug-mastriano/" target="_blank"><i><b>Democrat Josh Shapiro elected governor of Pennsylvania, defeating Republican Doug Mastriano</b></i></a>
 
