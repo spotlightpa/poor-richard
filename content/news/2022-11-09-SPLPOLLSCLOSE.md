@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, Nov. 9: </b></i><a href="https://www.spotlightpa.org/news/2022/11/pa-governor-election-2022-results-winner-josh-shapiro-doug-mastriano/" target="_blank"><i><b>Democrat Josh Shapiro elected governor of Pennsylvania, defeating Republican Doug Mastriano</b></i></a>
+
 HARRISBURG — The polls are closed in Pennsylvania after an Election Day that saw high turnout in some parts of the state, few significant issues for in-person voters, and rampant misinformation about ballot counting in Philadelphia.
 
 But for a host of reasons, you might not know all the winners before you go to bed.
