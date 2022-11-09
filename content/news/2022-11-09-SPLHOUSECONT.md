@@ -7,6 +7,7 @@ description = "Unofficial results from Tuesday’s midterm election show that De
 image = "external/gsemyvp8544t2j5z6rbzv6014c.jpeg"
 image-credit = "Alejandro A. Alvarez / Philadelphia Inquirer"
 image-description = "“We've had an agenda to defend democracy for a long time, and we finally will get ready to enact it as we go into 2023,” state House Democratic Leader Joanna McClinton of Philadelphia said Wednesday."
+image-gravity = "no"
 internal-budget = "Democrats believe they will take control of the Pennsylvania House for the first time in more than a decade"
 internal-id = "SPLHOUSECONT"
 kicker = "Elections"
