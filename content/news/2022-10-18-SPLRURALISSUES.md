@@ -44,7 +44,7 @@ Mastriano also <a href="https://senatormastriano.com/2019/11/07/senator-mastrian
 
 Mastriano is also one of the lead sponsors of a bill that would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0957">cap insulin pricing</a>, which pertains to people in rural areas because they <a href="https://www.ruralhealthinfo.org/toolkits/diabetes/1/rural-concerns">face higher risk factors for diabetes</a> and have access to fewer services.
 
-Shapiro has advocated for <a href="https://twitter.com/JoshShapiroPA/status/1559973027940634626">affordable health care in rural communities</a> and said he would “strengthen the pipeline for healthcare providers in under-served areas” on his <a href="https://joshshapiro.org/policy-healthcare/">campaign website</a>.
+Shapiro has advocated for <a href="https://twitter.com/JoshShapiroPA/status/1559973027940634626">affordable health care in rural communities</a> and said he would “strengthen the pipeline for healthcare providers in under-served areas” on his <a href="https://web.archive.org/web/20221105124310/https://joshshapiro.org/policy-healthcare/">campaign website</a>.
 
 In 2007, when Shapiro was a state representative, <a href="https://www.post-gazette.com/breaking/2007/06/04/Bill-would-forgive-med-school-loans-if-docs-stay-in-Pa/stories/200706040165">he proposed a bill that would forgive doctors’ medical school loans</a> if they stayed in Pennsylvania for at least 10 years.
 
