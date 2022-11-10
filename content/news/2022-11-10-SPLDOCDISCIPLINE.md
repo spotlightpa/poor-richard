@@ -17,7 +17,7 @@ series = ["Unproven, Unsafe"]
 slug = "pa-medical-marijuana-card-veriheal-doctor-disciplined"
 suppress-date = false
 title = "Rare disciplinary case against Pa. doctor offers glimpse into the big business of medical marijuana cards"
-title-tag = "Pennsylvania medical marijuana card doctor disciplined"
+title-tag = "A rare look inside PA's medical marijuana card industry"
 topics = ["Health"]
 +++
 
