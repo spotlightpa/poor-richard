@@ -99,7 +99,7 @@ Acting Pennsylvania Secretary of State Lehigh Chapman was active on Election Day
 
 Those expressed concerns included “conflicting reports regarding mail-in ballots of unverified voters.” This is a misleading theory <a href="https://www.spotlightpa.org/news/2022/11/2022-pa-election-misinformation-unverified-ballots-drop-boxes-vote-delays/">raised by a number of elected Republicans that is based on a misreading</a> of the way the state verifies mail voters’ identities.
 
-Chapman wrote that she, too, wants elections to be “fair, secure, and accurate,” and that most of the senators’ concerns are <a href="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/Pages/Election-Directive-and-%20Guidance.aspx">already addressed in Department of State guidance to counties</a>. On the topic of “unverified voters,” she told the senators that the theory is “parroted from internet election deniers.”
+Chapman wrote that she, too, wants elections to be “fair, secure, and accurate,” and that most of the senators’ concerns are <a data-gone="https://www.dos.pa.gov/VotingElections/OtherServicesEvents/Pages/Election-Directive-and-%20Guidance.aspx">already addressed in Department of State guidance to counties</a>. On the topic of “unverified voters,” she told the senators that the theory is “parroted from internet election deniers.”
 
 Trump has already capitalized on the real legal uncertainty over nuanced issues of Pennsylvania’s vague election law to sow doubt.
 
