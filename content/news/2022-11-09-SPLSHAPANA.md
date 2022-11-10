@@ -30,7 +30,7 @@ Budget battles and fights over environmental regulation, election access, and ed
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Key to his success will be whether the state House of Representatives flips to Democrats for the first time in more than a decade. The Associated Press hasn’t yet made a call on which party will control the chamber, and there could still be litigation over several close races. 
+Key to his success will be whether the state House of Representatives flips to Democrats for the first time in more than a decade. The Associated Press hasn’t yet made a call on which party will control the chamber, and there could still be litigation over several close races.
 
 But state House Democrats on Wednesday declared victory, citing a slew of unexpected victories and their own analysis of county results.
 
@@ -78,7 +78,7 @@ But, he adds, he understands why Shapiro is being pragmatic on energy.
 
 “To get where we need to go is going to be a process. It’s not surprising that Shapiro wasn’t running on a fracking moratorium,” Altenburg said. “He has stressed that he understands the reality of the climate crisis.”
 
-That pragmatism is what allowed Shapiro to get strong support from both environmental groups like PennFuture, and organizations they sometimes clash with, like the building trades.
+That pragmatism is what allowed Shapiro to mostly avoid conflict with environmental groups like PennFuture, and win endorsements from organizations that environmentalists sometimes clash with, like the building trades.
 
 Jim Snell, business manager with Steamfitters Local 420 in Philadelphia, looks at energy politics in terms of jobs. Lots of his members work in the natural gas industry, so he finds it difficult to back candidates who want to end fracking or make it harder to build pipelines.
 
