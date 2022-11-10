@@ -18,7 +18,7 @@ slug = "pa-medical-marijuana-card-veriheal-doctor-disciplined"
 suppress-date = false
 title = "Rare disciplinary case against Pa. doctor offers glimpse into the big business of medical marijuana cards"
 title-tag = "A rare look inside PA's medical marijuana card industry"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
