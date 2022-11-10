@@ -3,7 +3,7 @@ arc-id = "FFIYPYV545DEHGIUION72UUQJQ"
 authors = ["Ed Mahon"]
 blurb = "A patient’s complaint about her virtual appointment through Veriheal has offered a look inside the multimillion dollar certification industry."
 byline = "Ed Mahon of Spotlight PA"
-description = "A Pennsylvania patient’s complaint about how easily she was approved to use medical marijuana led to the first disciplinary case against a doctor."
+description = "A Pennsylvania patient’s complaint about how easily she was approved for a medical marijuana card led to the first disciplinary case against a doctor."
 image = "external/762sc91pkh0cdae9x1csje05gr.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Each year, hundreds of thousands of Pennsylvania patients receive approval from a doctor to get a medical marijuana card."
@@ -17,7 +17,7 @@ series = ["Unproven, Unsafe"]
 slug = "pa-medical-marijuana-card-veriheal-doctor-disciplined"
 suppress-date = false
 title = "Rare disciplinary case against Pa. doctor offers glimpse into the big business of medical marijuana cards"
-title-tag = "A rare look inside PA's medical marijuana card industry"
+title-tag = "Pennsylvania medical marijuana card doctor disciplined"
 topics = ["Health"]
 +++
 
