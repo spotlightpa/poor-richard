@@ -48,7 +48,7 @@ In a 2001 <a href="https://s3.documentcloud.org/documents/22023661/gop-nominee-d
 
 “We’re going to get it done when I’m governor because I give a damn,” Shapiro <a href="https://epgn.com/2021/11/10/shapiro-pledges-to-pass-nondiscrimination-as-governor/">told</a> Philly Gay News earlier this year.
 
-He has also called for an expansion of the state’s hate crime laws to cover attacks on LGBTQ individuals, and he <a href="https://joshshapiro.org/policy-lgbtq/">supports</a> banning conversion therapy for minors.
+He has also called for an expansion of the state’s hate crime laws to cover attacks on LGBTQ individuals, and he <a href="https://web.archive.org/web/20221106184709/https://joshshapiro.org/policy-lgbtq/">supports</a> banning conversion therapy for minors.
 
 <i>This section has been updated.</i>
 
