@@ -17,7 +17,7 @@
 {{ if .Param "no-index" }}
   <meta name="robots" content="noindex">
 {{ else }}
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link href="{{ .Permalink }}" rel="canonical">
 {{ end }}
 
