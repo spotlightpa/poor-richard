@@ -1,30 +1,22 @@
 +++
 arc-id = "3UPOFITT5JGRVFLMLO7Z7YNQ4A"
-internal-id = "SPLDISTRICTS08"
-internal-budget = ""
-image = "external/mdv8bzf428921xcg1x985v7dqg.jpeg"
-image-description = "Independent research shows gerrymandering protects incumbents and strips communities of political power by heavily concentrating one party’s voters into a single district or spreading them out unnaturally."
-image-caption = ""
-image-credit = "TIM TAI / Philadelphia Inquirer"
-image-size = ""
-published = 2020-07-08T10:25:00Z
-slug = "redistricting-gerrymandering-pennsylvania-maps-fair-districts"
 authors = ["Cynthia Fernandez"]
-byline = "Cynthia Fernandez of Spotlight PA"
-title = "Lawmakers will rule again over redrawing of Pa. political boundaries, but critics aren’t giving up"
-subtitle = ""
-description = "While an effort to create an independent commission to draw the state’s congressional and legislative maps has run out of time, a new bill would increase transparency and ban the most egregious practices."
 blurb = "While an effort to create an independent commission to draw the state’s congressional and legislative maps has run out of time, a new bill would increase transparency and ban the most egregious practices."
+byline = "Cynthia Fernandez of Spotlight PA"
+description = "While an effort to create an independent commission to draw the state’s congressional and legislative maps has run out of time, a new bill would increase transparency and ban the most egregious practices."
+image = "external/mdv8bzf428921xcg1x985v7dqg.jpeg"
+image-credit = "TIM TAI / Philadelphia Inquirer"
+image-description = "Independent research shows gerrymandering protects incumbents and strips communities of political power by heavily concentrating one party’s voters into a single district or spreading them out unnaturally."
+internal-id = "SPLDISTRICTS08"
 kicker = "The Capitol"
-topics = ["The Capitol"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
+published = 2020-07-08T06:25:00-04:00
+slug = "redistricting-gerrymandering-pennsylvania-maps-fair-districts"
+suppress-date = false
+suppress-featured = false
+title = "Lawmakers will rule again over redrawing of Pa. political boundaries, but critics aren’t giving up"
+topics = ["The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -33,7 +25,7 @@ HARRISBURG — For a moment, anti-gerrymandering advocates in Pennsylvania had a
 
 Fed up with political districts that experts said were drawn to benefit one party over another, grassroots groups launched a campaign to take lawmakers out of the process and create a commission of everyday voters to do the work instead. 
 
-They held rallies, demanded public hearings, and even showed up <a href="https://archive.theincline.com/2018/07/13/police-arrested-6-redistricting-protesters-outside-mike-turzais-wexford-home/">on the doorstep of one top lawmaker’s home</a>, all with the goal of getting a constitutional amendment to voters before maps are drawn again in 2021. 
+They held rallies, demanded public hearings, and even showed up <a href="https://web.archive.org/web/20221105071617/https://archive.theincline.com/2018/07/13/police-arrested-6-redistricting-protesters-outside-mike-turzais-wexford-home/">on the doorstep of one top lawmaker’s home</a>, all with the goal of getting a constitutional amendment to voters before maps are drawn again in 2021. 
 
 The stakes are significant: Independent research shows gerrymandering protects incumbents and strips communities of political power by heavily concentrating one party’s voters into a single district or spreading them out unnaturally. 
 
