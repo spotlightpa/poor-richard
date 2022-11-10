@@ -145,7 +145,7 @@ Read more:<a href="https://www.inquirer.com/politics/election/charlie-gerow-repu
 
 {{<picture src="external/93k9j9ez1gx5qv5gwerg0j4n7g.jpeg" description="Melissa Hart has served as both a member of Congress and as a state senator." caption="Melissa Hart has served as both a member of Congress and as a state senator." credit="TYGER WILLIAMS / Philadelphia Inquirer">}} 
 
-<b>Melissa Hart</b> | <a href="https://www.hartforpa.org/services-7">Website</a>
+<b>Melissa Hart</b> | <a href="https://web.archive.org/web/20221108220653/http://hartforpa.org/">Website</a>
 
 <i><b>UPDATE</b></i>: <i>On May 13, Melissa Hart announced she was backing Lou Barletta. Her name will still appear on the ballot.</i>
 
