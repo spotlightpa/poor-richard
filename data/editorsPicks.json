@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-11-10-SPLNOCONCEDE.md"
+    "content/statecollege/2022-11-11-SPLRJCFOLO.md"
   ],
   "subfeatures": [
-    "content/news/2022-11-09-SPLGUVWINNER.md",
-    "content/news/2022-11-09-SPLPOLLSCLOSE.md"
+    "content/statecollege/2022-11-01-SPLBENDAPUDI.md",
+    "content/statecollege/2022-10-28-SPLPSUCENTER.md"
   ],
   "topSlots": [
+    "content/news/2022-11-10-SPLNOCONCEDE.md",
     "content/news/2022-11-10-SPLDOCDISCIPLINE.md",
-    "content/news/2022-11-09-SPLHOUSECONT.md",
-    "content/news/2022-11-09-SPLSHAPANA.md"
+    "content/news/2022-11-09-SPLHOUSECONT.md"
   ],
   "topper": []
 }
