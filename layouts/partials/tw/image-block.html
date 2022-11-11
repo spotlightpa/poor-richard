@@ -34,7 +34,12 @@
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 
-<figure class="{{ .figClass }}" data-ga-category="thumb">
+<figure
+  class="{{ .figClass }}"
+  data-ga-category="thumb"
+  itemscope
+  itemtype="https://schema.org/ImageObject"
+>
   <div
     class="{{ $rounded }} relative w-full overflow-clip bg-s-3 shadow"
     {{ if .overlay }}
@@ -65,6 +70,7 @@
         "
         x-show="showOverlay"
         x-transition.opacity
+        itemprop="caption"
       >
         {{- .overlay -}}
       </figcaption>
@@ -77,12 +83,15 @@
   </div>
 
   {{ with $credit }}
-    <div class="{{ $creditClass }}">
+    <div class="{{ $creditClass }}" itemprop="creditText">
       {{ $credit }}
     </div>
   {{ end }}
   {{ with .caption }}
-    <figcaption class="mt-6 font-sans leading-tight text-s-8">
+    <figcaption
+      class="mt-6 font-sans leading-tight text-s-8"
+      itemprop="caption"
+    >
       {{- . -}}
     </figcaption>
   {{ end }}
