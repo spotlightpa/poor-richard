@@ -2,7 +2,7 @@
 arc-id = "PLN5WQPBLJH4FF33HZ2WSIDNSQ"
 authors = ["Stephen Caruso", "Angela Couloumbis", "Kate Huangpu", "Katie Meyer"]
 blurb = "Unofficial results show Mastriano, a far-right state senator, lost to Shapiro by 14 points."
-byline = "Stephen Caruso of Spotlight PA, Angela Couloumbis of Spotlight PA, Kate Huangpu of Spotlight PA and Katie Meyer of Spotlight PA"
+byline = "Stephen Caruso, Angela Couloumbis, Kate Huangpu and Katie Meyer of Spotlight PA"
 description = "Mastriano, a current Pennsylvania state senator and retired Army colonel, was vastly outspent in the midterms and routinely trailed in the polls."
 image = "external/p9sg6zz2njrkpxc59nyh4t4dmw.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
