@@ -21,7 +21,7 @@ series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-job-fired"
 suppress-date = false
 title = "Pa. law protects workers who are approved for medical marijuana — but once they use it, it’s a different story."
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 
