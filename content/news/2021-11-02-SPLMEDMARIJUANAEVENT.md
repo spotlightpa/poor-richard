@@ -14,8 +14,9 @@ modal-exclude = false
 no-index = false
 published = 2021-11-02T16:50:56.906-04:00
 slug = "opioids-medical-marijuana-pennsylvania-addiction"
+suppress-date = false
 title = "WATCH: A free panel on using cannabis to treat opioid addiction"
-topics = ["Events", "Health"]
+topics = ["Events", "Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
