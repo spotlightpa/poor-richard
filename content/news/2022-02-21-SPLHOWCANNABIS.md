@@ -15,8 +15,9 @@ no-index = false
 published = 2022-02-21T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-cannabis-websites-investigation-how-why"
+suppress-date = false
 title = "How we investigated misleading addiction claims on Pennsylvania cannabis websites"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
