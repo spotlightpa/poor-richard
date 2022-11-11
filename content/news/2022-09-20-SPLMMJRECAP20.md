@@ -17,7 +17,7 @@ series = ["Unproven, Unsafe"]
 slug = "pa-medical-marijuana-cards-employees-ads-investigations-impact"
 suppress-date = false
 title = "A complete guide to Spotlight PA’s investigations of Pennsylvania’s flawed medical marijuana program"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
