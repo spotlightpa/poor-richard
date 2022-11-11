@@ -16,7 +16,7 @@ published = 2022-08-22T05:00:00-04:00
 slug = "pa-medical-marijuana-program-addiction-treatment-court-order"
 suppress-date = false
 title = "Commonwealth Court orders Pa.’s health department to release information on medical marijuana program"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
