@@ -17,8 +17,9 @@ no-index = false
 published = 2022-02-21T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites"
+suppress-date = false
 title = "Some Pa. companies promote cannabis as an addiction treatment using misleading or dangerous tactics"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 {{<block name="keypoints">}}
