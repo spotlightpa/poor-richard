@@ -18,7 +18,7 @@ series = ["Unproven, Unsafe"]
 slug = "pa-medical-marijuana-employment-lawsuits"
 suppress-date = false
 title = "How we tracked workplace lawsuits involving Pa.’s medical marijuana law"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>
