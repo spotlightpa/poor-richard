@@ -2,9 +2,9 @@
 arc-id = "DKSQZSLFGVDY3EAZVXUUDIP67I"
 blurb = "Join us Thursday, Nov. 17 for a discussion on who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office."
 byline = "Spotlight PA Staff"
-description = "Spotlight PA reporters will discuss Democratic Gov.-elect Josh Shapiro, the Pennsylvania legislature, and more. "
+description = "Join Spotlight PA to discuss Democratic Gov.-elect Josh Shapiro, control of the Pennsylvania legislature and more following the 2022 midterm election."
 event-date = 2022-11-17T18:00:00-05:00
-event-title = "What's Next?"
+event-title = "What's Next in Pennsylvania Politics After the 2022 Midterm Election?"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_SXHjTc4XTGWEQE3_FbLx3A"
 image = "external/5nkd2ahgmhkjqey197v3dghkwm.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
@@ -18,7 +18,7 @@ published = 2022-11-11T12:05:11.849-05:00
 slug = "pa-election-2022-results-josh-shapiro-democrats-legislature-event"
 suppress-date = false
 title = "You’re invited! A free panel on the winners of Pa.’s 2022 election and how they plan to run the state"
-title-tag = "A free panel on the winners of Pa.'s 2022 election"
+title-tag = "Live event: What's next in PA politics post-election"
 topics = ["Events", "Elections"]
 +++
 
