@@ -1,47 +1,3 @@
-{{ define "tw-image-block-picture" }}
-  {{ $aspect := printf "aspect-[%d/%d]" .widthRatio .heightRatio }}
-  <picture
-    class="{{ $aspect }} block"
-    {{ if .caption }}
-      @click="showCaption = !showCaption"
-    {{ end }}
-  >
-    <source
-      type="image/webp"
-      srcset="{{ .srcset }}"
-      {{ with .sizeHint }}
-        sizes="{{ . }}"
-      {{ end }}
-    />
-    <img
-      class="block h-full w-full object-cover"
-      alt="{{ .description }}"
-      title="{{ .description }}"
-      src="{{ .imgSmallSrc }}"
-      {{ if not .eager }}
-        loading="lazy" decoding="async"
-      {{ end }}
-      width="{{ .width }}"
-      height="{{ .height }}"
-    />
-  </picture>
-  {{ if not .showCaption | and .caption }}
-    <figcaption
-      class="
-        {{ if .rounded }}rounded-b overflow-hidden{{ end }}
-        backdrop-fallback absolute inset-x-0 bottom-0 p-4
-        font-sans text-base text-s-0
-        backdrop-blur-sm backdrop-brightness-50 backdrop-filter
-      "
-      x-cloak
-      x-show="showCaption"
-      @click="showCaption = false"
-    >
-      {{ .caption }}
-    </figcaption>
-  {{ end }}
-{{ end }}
-
 {{ $widths := .widths }}
 {{ $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
 {{ $widthR := .widthRatio | default 16 }}
@@ -76,63 +32,58 @@
   "gravity" $gravity
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
-{{ $showCaption := .showCaption | default false }}
-
-{{ $pictOpts := dict
-  "srcset" $srcset
-  "imgSmallSrc" $imgSmallSrc
-  "sizeHint" .sizeHint
-  "description" .description
-  "eager" $eager
-  "rounded" $rounded
-  "showCaption" $showCaption
-  "caption" .caption
-  "width" $width
-  "height" $height
-  "widthRatio" $widthR
-  "heightRatio" $heightR
-}}
 
 
-<figure
-  class="{{ .figClass }}"
-  data-ga-category="thumb"
-  x-data="{ showCaption: false }"
-  {{ if not $showCaption | and .caption }}
-    x-effect="showCaption && $report({ target: $el })"
-    data-ga-action="image:toggle-caption"
-  {{ end }}
->
-  {{- if .link -}}
-    <a
-      class="
-        {{ $rounded }}
-        relative block w-full overflow-hidden bg-s-3 shadow
-      "
-      href="{{ .link }}"
-    >
-      {{- template "tw-image-block-picture" $pictOpts -}}
-    </a>
-  {{- else -}}
-    <div
-      class="
-        {{ $rounded }}
-        {{ if not $showCaption | and .caption }}cursor-pointer{{ end }}
-        relative block w-full overflow-hidden bg-s-3 shadow
-      "
-    >
-      {{- template "tw-image-block-picture" $pictOpts -}}
-    </div>
-  {{- end -}}
+<figure class="{{ .figClass }}" data-ga-category="thumb">
+  <div
+    class="{{ $rounded }} relative w-full overflow-clip bg-s-3 shadow"
+    {{ if .overlay }}
+      x-data="{ showOverlay: true }"
+    {{ end }}
+  >
+    {{ partial "tag/picture-maybe-link.html" (dict
+      "link" .link
+      "wrapperClass" "block"
+      "pictureClass" (printf "flex aspect-[%d/%d]" .widthRatio .heightRatio)
+      "imgClass" "flex h-full w-full object-cover"
+      "sizeHint" .sizeHint
+      "eager" $eager
+      "description" .description
+      "srcset" $srcset
+      "src" $imgSmallSrc
+      "width" $width
+      "height" $height
+      )
+    }}
+    {{ if .overlay }}
+      <figcaption
+        class="
+          {{ if .rounded }}rounded-b overflow-clip{{ end }}
+          backdrop-fallback absolute inset-x-0 bottom-0 p-4
+          font-sans text-base text-s-0
+          backdrop-blur-sm backdrop-brightness-50 backdrop-filter
+        "
+        x-show="showOverlay"
+        x-transition.opacity
+      >
+        {{- .overlay -}}
+      </figcaption>
+      <div
+        class="absolute inset-0 cursor-pointer"
+        @click="$report($event); showOverlay = !showOverlay"
+        data-ga-action="image:toggle-overlay"
+      ></div>
+    {{ end }}
+  </div>
 
   {{ with $credit }}
-    <figcaption class="{{ $creditClass }}">
+    <div class="{{ $creditClass }}">
       {{ $credit }}
-    </figcaption>
+    </div>
   {{ end }}
-  {{ if $showCaption }}
-    <figcaption class="mx-auto mt-2 font-sans text-sm leading-tight text-s-8">
-      {{ .caption }}
+  {{ with .caption }}
+    <figcaption class="mt-6 font-sans leading-tight text-s-8">
+      {{- . -}}
     </figcaption>
   {{ end }}
 </figure>
