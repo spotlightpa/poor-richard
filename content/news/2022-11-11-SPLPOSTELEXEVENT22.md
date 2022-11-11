@@ -2,7 +2,7 @@
 arc-id = "DKSQZSLFGVDY3EAZVXUUDIP67I"
 blurb = "Join us Thursday, Nov. 17 for a discussion on who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA to discuss Democratic Gov.-elect Josh Shapiro, control of the Pennsylvania legislature and more following the 2022 midterm election."
+description = "Join Spotlight PA to discuss Gov.-elect Josh Shapiro, loser Doug Mastriano, control of the legislature, and what's next after the 2022 Pa. election."
 event-date = 2022-11-17T18:00:00-05:00
 event-title = "What's Next in Pennsylvania Politics After the 2022 Midterm Election?"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_SXHjTc4XTGWEQE3_FbLx3A"
