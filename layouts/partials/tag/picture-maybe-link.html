@@ -1,0 +1,23 @@
+{{/* Props:
+
+  .link
+  .wrapperClass
+  .imgClass
+  .pictureClass
+  .sizeHint
+  .eager
+  .description
+  .srcset
+  .src
+  .width
+  .height
+*/}}
+{{ if .link }}
+  <a class="{{ .wrapperClass }}" href="{{ .link }}">
+    {{- partial "tag/picture.html" . -}}
+  </a>
+{{ else }}
+  <span class="{{ .wrapperClass }}">
+    {{- partial "tag/picture.html" . -}}
+  </span>
+{{ end }}

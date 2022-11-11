@@ -1,0 +1,18 @@
+<picture class="{{ .pictureClass }}">
+  <source
+    type="image/webp"
+    srcset="{{ .srcset }}"
+    {{ with .sizeHint }}sizes="{{ . }}"{{ end }}
+  />
+  <img
+    class="{{ .imgClass }}"
+    alt="{{ .description }}"
+    title="{{ .description }}"
+    src="{{ .src }}"
+    {{ if not .eager }}
+      loading="lazy" decoding="async"
+    {{ end }}
+    {{ with .width }}width="{{ . }}"{{ end }}
+    {{ with .height }}height="{{ . }}"{{ end }}
+  />
+</picture>
