@@ -20,7 +20,7 @@ series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-card-doctor-advertising"
 suppress-date = false
 title = "Companies blanket Pa. with ads about how to get a medical marijuana card, but doctors are silenced"
-topics = ["Health"]
+topics = ["Health", "Medical Marijuana"]
 +++
 
 {{<block name="keypoints">}}
