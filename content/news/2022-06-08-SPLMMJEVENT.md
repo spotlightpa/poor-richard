@@ -17,7 +17,7 @@ series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-cards-advertising-rules-event"
 suppress-date = false
 title = "WATCH: A free virtual Q&A on Pa.’s uneven rules for medical marijuana cards"
-topics = ["Events", "Health"]
+topics = ["Events", "Health", "Medical Marijuana"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
