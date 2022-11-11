@@ -1,13 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2022-11-10-SPLDOCDISCIPLINE.md"
+    "content/news/2022-11-10-SPLNOCONCEDE.md"
   ],
   "subfeatures": [
-    "content/news/2022-06-01-SPLSANCTUARY01.md",
-    "content/news/2022-09-20-SPLMMJRECAP20.md"
+    "content/news/2022-11-09-SPLGUVWINNER.md",
+    "content/news/2022-11-09-SPLPOLLSCLOSE.md"
   ],
   "topSlots": [
-    "content/news/2022-11-10-SPLNOCONCEDE.md",
+    "content/news/2022-11-10-SPLDOCDISCIPLINE.md",
     "content/news/2022-11-09-SPLHOUSECONT.md",
     "content/news/2022-11-09-SPLSHAPANA.md"
   ],
