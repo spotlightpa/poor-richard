@@ -12,12 +12,14 @@ internal-id = "SPLRJCFOLO"
 kicker = "Penn State"
 modal-exclude = false
 no-index = false
+og-title = "Hundreds of Penn State faculty question commitment to racial justice"
 published = 2022-11-11T11:38:00-05:00
 slug = "penn-state-university-psu-racial-justice-proud-boys-protest"
 suppress-date = false
 title = "Hundreds of Penn State faculty are publicly and privately questioning university leadership"
 title-tag = "Penn State faculty question commitment to racial justice"
 topics = ["Penn State"]
+twitter-title = "Hundreds of Penn State faculty question commitment to racial justice"
 +++
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
