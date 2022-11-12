@@ -1,3 +1,4 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
 {{ $alt := .Param "sticky-image-description" }}
 {{ $images := .Param "sticky-images" }}
 {{ $link := .Param "sticky-link" }}
@@ -46,6 +47,7 @@
         class="rounded shadow-beige"
         x-data="imageRotator(JSON.parse($el.dataset.images))"
         data-images="{{ $images | jsonify }}"
+        src="{{ $magicPixel }}"
         :src="choice"
         alt="{{ $alt }}"
         title="{{ $alt }}"
