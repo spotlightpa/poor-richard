@@ -2,8 +2,11 @@
   <li class="inline-flex">
     <a
       href="{{ .URL }}"
-      class="{{ .Pre }} inline-flex items-center hover:text-blue"
-      {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
+      class="inline-flex items-center hover:text-blue"
+      {{ with .Params.dispatch }}
+        x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+        data-dispatch="{{ . }}"
+      {{ end }}
     >
       {{ with .Params.icon }}
         <svg class="mr-1 h-4 w-4 fill-current">

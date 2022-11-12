@@ -433,10 +433,6 @@ collections:
                 name: url
                 widget: string
                 required: true
-              - label: "CSS class"
-                name: pre
-                widget: string
-                required: false
               - label: Order
                 name: weight
                 widget: number

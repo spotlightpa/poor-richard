@@ -1,5 +1,4 @@
 [[main]]
-pre = "is-uppercase"
 name = "Investigations"
 url = "/investigations/"
 weight = 1
@@ -7,165 +6,140 @@ weight = 1
 [[main]]
 name = "Events"
 url = "/topics/events/"
-pre = "is-uppercase"
 weight = 2
 
 [[main]]
 name = "Newsletters"
-pre = "is-uppercase"
 url = "/newsletters/"
 weight = 3
 
 [[main]]
 name = "About Us"
-pre = "is-uppercase"
 url = "/about/"
 weight = 4
 
 [[main]]
 name = "Tips"
-pre = "is-uppercase"
 url = "/tips/"
 weight = 5
 
 [[main]]
 name = "State College"
-pre = "is-uppercase"
 url = "/statecollege/"
 weight = 6
 
 [[footer]]
 name = "Home"
-pre = "is-uppercase"
 url = "/"
 weight = 1
 
 [[footer]]
 name = "Contact"
-pre = "is-uppercase"
 url = "/contact/"
 weight = 2
 
 [[footer]]
 name = "Tips"
-pre = "is-uppercase"
 url = "/tips/"
 weight = 3
 
 [[footer]]
 name = "Newsletters"
-pre = "is-uppercase"
 url = "/newsletters/"
 weight = 4
 
 [[footer]]
 name = "News Archive"
-pre = "is-uppercase"
 url = "/news/"
 weight = 5
 
 [[footer]]
 name = "Search"
-pre = "is-uppercase"
-post = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:search:open')\""
 url = "/search/"
 weight = 6
 
+[footer.params]
+dispatch = "modal:search:open"
+
 [[footer]]
 name = "Special Projects & Investigations"
-pre = "is-uppercase"
 url = "/investigations/"
 weight = 7
 
 [[footer]]
 name = "Topic Archive"
-pre = "is-uppercase"
 url = "/topics/"
 weight = 8
 
 [[footer]]
 name = "Events"
-pre = "is-uppercase"
 url = "/events/"
 weight = 9
 
 [[footer]]
 name = "Donate"
-pre = "is-uppercase"
 url = "/donate/"
 weight = 10
 
 [[about]]
 name = "About State College"
-pre = "is-uppercase"
 url = "/about/statecollege/"
 weight = 1
 
 [[about]]
 name = "State College"
-pre = "is-uppercase"
 url = "/statecollege/"
 weight = 2
 
 [[about]]
 name = "About Us"
-pre = "is-uppercase"
 url = "/about/"
 weight = 3
 
 [[about]]
 name = "Our Mission"
-pre = "is-uppercase"
 url = "/about/mission/"
 weight = 4
 
 [[about]]
 name = "Supporters"
-pre = "is-uppercase"
 url = "/support/"
 weight = 5
 
 [[about]]
 name = "Partners"
-pre = "is-uppercase"
 url = "/about/partners/"
 weight = 6
 
 [[about]]
 name = "Staff"
-pre = "is-uppercase"
 url = "/about/staff/"
 weight = 7
 
 [[about]]
 name = "Diversity"
-pre = "is-uppercase"
 url = "/about/diversity/"
 weight = 8
 
 [[about]]
 name = "FAQ"
-pre = "is-uppercase"
 url = "/about/faq/"
 weight = 9
 
 [[about]]
 name = "Jobs"
-pre = "is-uppercase"
 url = "/about/jobs/"
 weight = 10
 
 [[tndmain]]
 name = "Sign Up for Newsletters"
-pre = "is-uppercase"
 url = "/newsletters/"
 weight = 1
 
 [tndmain.params]
-attrs = "x-data=\"{}\" @click.prevent=\"$dispatch('modal:newsletters:open')\""
+dispatch = "modal:newsletters:open"
 
 [[tndmain]]
-pre = "is-uppercase"
 name = "Investigations"
 url = "/investigations/"
 weight = 2
@@ -173,12 +147,10 @@ weight = 2
 [[tndmain]]
 name = "Events"
 url = "/topics/events/"
-pre = "is-uppercase"
 weight = 3
 
 [[social]]
 name = "Facebook"
-pre = "is-uppercase"
 url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
 
@@ -187,7 +159,6 @@ icon = "#fb-svg"
 
 [[social]]
 name = "Twitter"
-pre = "is-uppercase"
 url = "https://www.twitter.com/SpotlightPA"
 weight = 2
 
@@ -196,7 +167,6 @@ icon = "#twitter-svg"
 
 [[social]]
 name = "Instagram"
-pre = "is-uppercase"
 url = "https://www.instagram.com/Spotlightpennsylvania/"
 weight = 3
 
@@ -205,7 +175,6 @@ icon = "#ig-svg"
 
 [[social]]
 name = "Apple News"
-pre = "is-uppercase"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
 weight = 4
 
@@ -214,7 +183,6 @@ icon = "#apple-svg"
 
 [[social]]
 name = "Flipboard"
-pre = "is-uppercase"
 url = "https://flipboard.com/@SpotlightPA"
 weight = 5
 
@@ -223,7 +191,6 @@ icon = "#flip-svg"
 
 [[social]]
 name = "Github"
-pre = "is-uppercase"
 url = "https://www.github.com/spotlightpa/"
 weight = 6
 
@@ -232,7 +199,6 @@ icon = "#gh-svg"
 
 [[social]]
 name = "Google News"
-pre = "is-uppercase"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
 weight = 7
 
