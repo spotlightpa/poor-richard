@@ -2,8 +2,11 @@
   <li>
     <a
       href="{{ .URL }}"
-      class="{{ .Pre }}"
-      {{ if .Post }}{{ .Post|safeHTMLAttr }}{{ end }}
+      class="is-uppercase"
+      {{ with .Params.dispatch }}
+        x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+        data-dispatch="{{ . }}"
+      {{ end }}
     >
       {{ .Name }}
     </a>

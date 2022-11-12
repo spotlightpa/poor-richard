@@ -28,7 +28,10 @@
           class="inline-block pr-4 text-black decoration-yellow decoration-4 underline-offset-4 hover:text-black hover:underline lg:pl-4"
           data-ga-category="item"
           href="{{ .URL }}"
-          {{ with .Params.attrs }}{{ . | safeHTMLAttr }}{{ end }}
+          {{ with .Params.dispatch }}
+            x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+            data-dispatch="{{ . }}"
+          {{ end }}
         >
           {{- .Name -}}
         </a>
