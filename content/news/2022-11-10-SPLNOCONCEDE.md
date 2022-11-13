@@ -15,12 +15,20 @@ no-index = false
 published = 2022-11-10T15:39:07.332-05:00
 slug = "pa-governor-election-2022-results-doug-mastriano-no-concession-josh-shapiro"
 suppress-date = false
-title = "Republican Doug Mastriano yet to concede Pa. governor’s race nearly 2 days after Democrat Josh Shapiro declared winner"
-title-tag = "Doug Mastriano yet to concede 2022 PA governor election"
+title = "Republican Doug Mastriano concedes Pa. governor’s race 4 days after Democrat Josh Shapiro declared winner"
+title-tag = "Doug Mastriano concedes 2022 PA governor election"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+
+<i><b>UPDATED, Nov. 13: </b></i><i>In a message posted to Twitter Sunday evening, Republican Doug Mastriano said “there is no right course but to conceded, which I do.</i>
+
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/JlpP39uOKm">pic.twitter.com/JlpP39uOKm</a></p>&mdash; Doug Mastriano (@dougmastriano) <a href="https://twitter.com/dougmastriano/status/1591925822268788737?ref_src=twsrc%5Etfw">November 13, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<i><b>Original post</b></i>
 
 HARRISBURG — Republican Doug Mastriano had yet to concede Pennsylvania’s gubernatorial election nearly two days after it was called for Democrat Josh Shapiro despite members of his own party calling for him to do so.
 
