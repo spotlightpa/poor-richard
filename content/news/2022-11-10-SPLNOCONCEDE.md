@@ -22,7 +22,9 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i><b>UPDATED, Nov. 13: </b></i><i>In a message posted to Twitter Sunday evening, Republican Doug Mastriano said “there is no right course but to conceded, which I do.</i>
+<i><b>UPDATED, Nov. 13:</b></i><b> </b>In a message posted to social media Sunday evening, Republican Doug Mastriano conceded the race for Pennsylvania governor — four days after Democrat Josh Shapiro was declared the winner. 
+
+“Difficult to accept as the results are, there is no right course but to concede, which | do, and | look to the challenges ahead,” Mastriano wrote. “Josh Shapiro will be our next Governor, and | ask everyone to give him the opportunity to lead and pray that he leads well.”
 
 <blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/JlpP39uOKm">pic.twitter.com/JlpP39uOKm</a></p>&mdash; Doug Mastriano (@dougmastriano) <a href="https://twitter.com/dougmastriano/status/1591925822268788737?ref_src=twsrc%5Etfw">November 13, 2022</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
