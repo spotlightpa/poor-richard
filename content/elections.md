@@ -80,14 +80,6 @@ link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.
 
 
 [[internal-links]]
-title = "Key Dates"
-link = "#dates"
-
-[[internal-links]]
-title = "Sample Ballot"
-link = "#ballot"
-
-[[internal-links]]
 title = "Featured Stories"
 link = "#featured"
 
