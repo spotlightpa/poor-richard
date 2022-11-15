@@ -9,7 +9,7 @@
 
     {{ block "title" . }}
       {{ $pageNo := "" }}
-      {{ with .Paginator }}
+      {{ with partial "helper/paginator" . }}
         {{ if ne .PageNumber 1 }}
           {{ $pageNo = printf "(Page %d)" .PageNumber }}
         {{ end }}

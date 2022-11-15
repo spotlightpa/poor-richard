@@ -69,16 +69,11 @@
 
 {{ define "extra-main" }}
   <section class="bg-white px-4 pb-12 pt-6">
-    {{ $news := site.GetPage "/news/_index.md" }}
-    {{ $sc := site.GetPage "/statecollege/_index.md" }}
-    {{ $stories := union $news.RegularPages $sc.RegularPages }}
-    {{ $stories = sort $stories ".PublishDate" "desc" }}
-    {{ $p := .Paginate $stories }}
-    {{ range .Paginator.Pages.GroupByDate "January 2006" }}
+    {{ $p := partial "helper/paginator" . }}
+    {{ range $p.PageGroups }}
       {{ partial "tw/list-3-col-story.html" (dict
         "hed" .Key
         "pages" .Pages
-        "rows" -1
         "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
         )
       }}

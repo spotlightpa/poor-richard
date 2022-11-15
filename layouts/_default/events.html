@@ -9,7 +9,7 @@
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
 
-  {{ $p := .Paginator 30 }}
+  {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
   {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
   {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}

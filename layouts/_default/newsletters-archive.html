@@ -20,7 +20,7 @@
 
   {{ $subtitle := .Param "subhed" | default .Description }}
 
-  {{ $p := .Paginator 50 }}
+  {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}

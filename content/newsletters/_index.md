@@ -6,5 +6,8 @@ linktitle = "Newsletters"
 modal-exclude = true
 layout = "newsletters-signup"
 aliases = ["/newsletters/covid/","/newsletters/covid-alerts-manage/"]
+
+[cascade]
+paginate = 60
 +++
 

@@ -1,0 +1,24 @@
+{{/* Pagination must be defined exactly once per page.
+
+  See https://discourse.gohugo.io/t/control-pagination-and-page-collections-from-baseof-html/37643/7
+*/}}
+
+{{ $p := "" }}
+{{ if .IsNode }}
+  {{ $sort := .Param "sort-by" }}
+  {{ $size := .Param "paginate" | default 30 }}
+  {{ if eq $sort "pub" }}
+    {{ $p = .Paginate (.Pages.ByPublishDate) $size }}
+  {{ else if eq $sort "title" }}
+    {{ $p = .Paginate (.Pages.ByTitle) $size }}
+  {{ else if eq $sort "all" }}
+    {{ $news := site.GetPage "/news/_index.md" }}
+    {{ $sc := site.GetPage "/statecollege/_index.md" }}
+    {{ $stories := union $news.RegularPages $sc.RegularPages }}
+    {{ $p = .Paginate ($stories.GroupByDate "January 2006") $size }}
+  {{ else }}
+    {{ $p = .Paginator $size }}
+  {{ end }}
+{{ end }}
+
+{{ return $p }}

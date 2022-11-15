@@ -1,5 +1,5 @@
 {{ define "extra-main" }}
-  {{ $pg := .Paginator 100 }}
+  {{ $pg := partial "helper/paginator" . }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
   <section class="section columns" data-ga-category="authors">
     <div class="column is-three-fifths is-offset-one-fifth">

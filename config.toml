@@ -3,8 +3,8 @@ languageCode = "en-us"
 title = "Spotlight PA"
 enableRobotsTXT = true
 enableGitInfo = true
-rssLimit = 50
-Paginate = 50
+rssLimit = 60
+Paginate = 30
 
 googleAnalytics = "UA-141126362-1"
 

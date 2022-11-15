@@ -90,7 +90,7 @@
           <hr class="is-emphatic-underline has-margin-top-negative" />
         </div>
       </div>
-      {{ range $page := .Paginator.Pages }}
+      {{ range $page := (partial "helper/paginator" .).Pages }}
         {{ partialCached "tile/archive.html" $page $page.RelPermalink }}
       {{ end }}
     </div>
