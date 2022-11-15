@@ -13,11 +13,14 @@
   class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}"
   data-ga-category="threeup"
 >
-  <h2
-    class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-  >
-    {{ .hed }}
-  </h2>
+  {{ with .hed }}
+    <h2
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
 
   <nav class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
     {{ range $i, $page := $pages }}
