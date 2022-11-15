@@ -60,7 +60,9 @@ Matt Brouillette, who runs the conservative Commonwealth Partners Chamber of Ent
 
 He said that he expects Shapiro to “keep his word and sign legislation that allows money to follow the child so every child, regardless of zip code, has access to the best education that meets their needs, whether that education be public, private, charter, parochial, homeschool, or other.”
 
-Commonwealth Partners’ political action committees get millions of dollars from billionaire Jeff Yass, who himself has a complicated history with Shapiro. During his 2016 run for attorney general, Shapiro took <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-billionaire-donations-jeff-yass/">money from Yass</a>. During this year’s GOP primary, Yass funded anti-Shapiro ads; he did not, however, give any money to Mastriano.
+Commonwealth Partners’ political action committees get millions of dollars from billionaire Jeff Yass, who himself has a complicated history with Shapiro. During his 2016 run for attorney general, Shapiro took <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-billionaire-donations-jeff-yass/">money from Yass</a>. 
+
+During this year’s GOP primary, a Commonwealth Partners PAC overwhelmingly bankrolled by Yass funded anti-Shapiro ads. The organization reached out to Spotlight PA after the publication of thus article to insist it used other funds, and not Yass’ money, on those ads. The PAC did not give any money to Mastriano.
 
 A spokesperson for the Pennsylvania State Education Association, a prominent Shapiro backer, said it too is keeping a close eye on lifeline scholarships.
 
