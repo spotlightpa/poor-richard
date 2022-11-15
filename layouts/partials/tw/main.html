@@ -2,13 +2,17 @@
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $isWide := .Param "image-size" | eq "wide" }}
 {{ $isOneCol := (not $hasImage | or $isWide) }}
+{{ $gridClass := cond $isOneCol
+  `grid-cols-1`
+  `grid-cols-1 lg:grid-cols-[theme(maxWidth.prose)_1fr] gap-x-20`
+}}
 {{ $mainWellClass := cond $isOneCol
   `mx-auto min-w-0 w-full max-w-prose lg:max-w-screen-md`
-  `col-start-1 min-w-0 mx-auto w-full max-w-prose lg:ml-0`
+  `col-start-1 min-w-0 mx-auto w-full max-w-prose`
 }}
 {{ $rightRailClass := cond $isOneCol
   `mx-auto w-full max-w-prose lg:max-w-screen-md sm:grid`
-  `mx-auto w-full max-w-prose lg:pl-16 sm:grid lg:block lg:col-start-2 lg:row-start-2 row-span-4`
+  `mx-auto max-w-prose sm:grid lg:block lg:col-start-2 lg:row-start-2 row-span-4`
 }}
 {{ $hedClass := cond $isOneCol "" "lg:col-span-2 lg:max-w-full" }}
 
@@ -27,7 +31,7 @@
 
 
 <section class="bg-white px-4 pt-12 pb-6 text-s-9" id="article">
-  <div class="mx-auto grid max-w-screen-lg grid-cols-none">
+  <div class="{{ $gridClass }} mx-auto grid max-w-screen-lg">
     <article class="contents">
       <header
         data-ga-category="header"
@@ -103,7 +107,7 @@
         </div>
       </header>
 
-      <div class="{{ $mainWellClass }} w-full print:!max-w-md lg:w-screen">
+      <div class="{{ $mainWellClass }} w-full print:!max-w-md">
         {{ partial "tw/image-hero.html" . }}
       </div>
 
