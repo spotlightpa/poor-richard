@@ -1,7 +1,7 @@
 [[redirects]]
 from = "/events/"
 to = "/topics/events/"
-code = 302
+code = 301
 
 [[redirects]]
 from = "/donate/"
