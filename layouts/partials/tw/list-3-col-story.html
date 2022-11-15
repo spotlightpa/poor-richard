@@ -1,4 +1,4 @@
-{{ $rows := .rows | default 1 }}
+{{ $rows := .rows | default -1 }}
 {{ $limit := 0 }}
 {{ if gt $rows 0 }}
   {{ $limit = mul $rows 3 }}
