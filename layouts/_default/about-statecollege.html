@@ -1,6 +1,6 @@
-{{ define "html-class" }}text-[17px]{{ end }}
-
-{{ define "body-class" }}bg-beige font-raleway leading-normal{{ end }}
+{{ define "body-class" }}
+  bg-beige font-raleway leading-normal text-[16px]
+{{ end }}
 
 {{ define "static-head" }}
   {{ partial "header/css-tw-rale.html" . }}
@@ -22,6 +22,7 @@
 
 {{ define "main" }}
   <div
+    class="text-lg"
     data-sf-campaign="7015G0000013pYzQAI"
     data-sf-theme="centrecounty"
     data-ga-category="statecollege"
