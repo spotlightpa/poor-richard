@@ -21,16 +21,8 @@
 
   {{ $subtitle := .Param "subhed" | default .Description }}
 
-  {{ $p := .Paginator 30 }}
+  {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
-  {{ if .Param "reverse-cron" }}
-    {{ $p = dict }}
-    {{ $pages = .Pages.ByPublishDate.Reverse }}
-  {{ end }}
-  {{ if .Param "by-title" }}
-    {{ $p = dict }}
-    {{ $pages = .Pages.ByTitle }}
-  {{ end }}
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
