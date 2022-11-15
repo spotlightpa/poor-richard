@@ -52,6 +52,7 @@ topics = ["Rural Issues"]
   hed="The Disconnect"
   dek="An obscure state law has snarled efforts to bring faster internet speeds to rural communities. Now it might complicate a historic infusion of federal funding."
   byline="Charlotte Keith"
+  date="June 2, 2022"
   outlet="Spotlight PA"
   image-credit="Amanda Berg"
   credit-relation="for"
