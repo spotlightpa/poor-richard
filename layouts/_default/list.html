@@ -46,10 +46,6 @@
 
         {{ partial "tw/image-hero.html" . }}
 
-
-        <div class="mx-auto w-full mt-4 text-right">
-          {{ partial "tw/social-buttons.html" . }}
-        </div>
       </div>
     </header>
     {{ with .Content }}
@@ -82,7 +78,10 @@
   {{ $pages := $p.Pages }}
 
 
-  <section class="bg-white px-4 py-12">
+  <section class="bg-white px-4 pt-6 pb-12 font-sans">
+    <div class="mx-auto w-full max-w-screen-lg mt-4 mb-8">
+      {{ partial "tw/social-buttons.html" . }}
+    </div>
     {{ partial "tw/list-3-col-story.html" (dict
       "pages" $pages
       "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
