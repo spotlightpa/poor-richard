@@ -6,7 +6,7 @@
   "filename" $name
   "credit" $credit
   "description" $description
-  "link" .RelPermalink
+  "link" $params.link
   "widthRatio" 16
   "heightRatio" 9
   "widths" (slice 128 256 384 512 1280)
@@ -14,7 +14,7 @@
   "sizeHint" "256px"
   "gravity" (.Page.Param "image-gravity")
 }}
-{{ $rubricLink := "" }}
+{{ $rubricLink := $params.link }}
 {{ $eyebrow := $params.kicker }}
 {{ if $params.rubric }}
   {{ $rubricLink = $params.rubric.RelPermalink }}
@@ -24,7 +24,7 @@
   "imgOpts" $imgOpts
   "rubricLink" $rubricLink
   "eyebrow" $eyebrow
-  "link" .RelPermalink
+  "link" $params.link
   "hed" .LinkTitle
   "byline" $params.byline
   "showDate" true
