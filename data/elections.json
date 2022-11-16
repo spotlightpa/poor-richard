@@ -1,6 +1,9 @@
 {
   "items": [
     {
+      "page": "content/news/2022-11-16-SPLFLIPUPDATE.md"
+    },
+    {
       "page": "content/news/2022-11-11-SPLPOSTELEXEVENT22.md"
     },
     {
@@ -11,9 +14,6 @@
     },
     {
       "page": "content/news/2022-11-09-SPLPOLLSCLOSE.md"
-    },
-    {
-      "page": "content/news/2022-11-08-SPLMISINFOPHIL.md"
     }
   ]
 }
