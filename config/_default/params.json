@@ -7,13 +7,13 @@
   "footer-promo-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b73/newsmatch-2022-banner-ads-728-90-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51q/newsmatch-2022-banner-ads-728-90-px-1-.png"
   ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7bb6/newsmatch-2022-rectangles-1024-512-px-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51q/newsmatch-2022-rectangles-1024-512-px-2-.png"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
@@ -35,33 +35,33 @@
   "river-promo-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
   "river-promo-desktop-height": 90,
   "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b73/newsmatch-2022-banner-ads-728-90-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51q/newsmatch-2022-banner-ads-728-90-px-1-.png"
   ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate",
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7bb6/newsmatch-2022-rectangles-1024-512-px-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51q/newsmatch-2022-rectangles-1024-512-px-2-.png"
   ],
   "river-promo-mobile-width": 500,
   "sidebar-sticky-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b72/newsmatch-2022-squares-9-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51r/newsmatch-2022-squares-12-.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b72/newsmatch-2022-squares-9-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51r/newsmatch-2022-squares-12-.png"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b72/newsmatch-2022-squares-9-.png"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51r/newsmatch-2022-squares-12-.png"
   ],
   "sticky-link": "/donate",
   "support-active": true,
@@ -78,7 +78,7 @@
   "topper-bg-color": "#4c50e9",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b72/newsmatch-2022-tracker-banners-1-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51p/newsmatch-2022-tracker-banners-2-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ff0000",
@@ -86,7 +86,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hq/7b71/newsmatch-2022-rectangles-1024-512-px-2-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hq/a51r/newsmatch-2022-rectangles-1024-512-px-3-.svg"
   ],
   "topper-mobile-width": 1024
 }
