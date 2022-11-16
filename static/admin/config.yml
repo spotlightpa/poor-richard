@@ -65,11 +65,6 @@ yaml-definitions: &page-fields
     name: title
     hint: "Title as it appears at top of page"
     widget: string
-  - label: Subhed
-    name: subhed
-    widget: string
-    hint: "Appears below hed at top of page; AKA dek"
-    required: false
   - label: Summary
     name: description
     hint: "Shown in social share previews and search results"
@@ -199,10 +194,10 @@ yaml-definitions2: &taxonomy-fields
     name: title
     hint: "Title as it appears at top of page"
     widget: string
-  - label: Subhed
-    name: subhed
+  - label: Dek
+    name: dek
     widget: string
-    hint: "Appears below hed at top of page; AKA dek"
+    hint: "Appears below hed at top of page; AKA subhed"
     required: false
   - label: "Override title tag"
     name: title-tag
