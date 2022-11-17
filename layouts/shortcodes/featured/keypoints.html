@@ -15,7 +15,7 @@
   <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
     <button
       :aria-expanded="''+isOpen"
-      class="mb-4 leading-4 text-navy hover:text-yellow hover:underline"
+      class="group mb-4 leading-4 text-navy hover:text-yellow"
       @click="isOpen = true"
       data-ga-button
       data-ga-action="sidebar:toggle"
@@ -25,7 +25,9 @@
           <use xlink:href="#plus-svg"></use>
         </svg>
       </span>
-      <span class="ml-2 align-bottom uppercase"> Show more… </span>
+      <span class="ml-2 align-bottom uppercase hover:underline">
+        Show more…
+      </span>
     </button>
   </div>
   <div
