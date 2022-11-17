@@ -5,7 +5,7 @@ blurb = "Democrats have not controlled the chamber for more than a decade, and t
 byline = "Stephen Caruso of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "The party picked up 12 seats during the 2022 midterm election. "
 image = "external/hrv6gh5799y89bbtrkwgv4jptc.jpeg"
-image-credit = "Amanda Berg"
+image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "At the Pennsylvania Capitol, a new party will be in charge of the state House come January."
 internal-budget = "Democrats win control of Pennsylvania state House after picking up 12 seats"
 internal-id = "SPLHOUSECONTFINAL"
@@ -24,9 +24,9 @@ twitter-title = "Democrats win control of Pennsylvania state House"
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Democrats have won control of the Pennsylvania state House for the first time in more than a decade.
+HARRISBURG — Democrats have won control of the Pennsylvania state House for the first time in more than a decade, but it’s still unclear exactly how big their margin over Republicans will be.
 
-State Rep. Todd Stephens (R., Montgomery) conceded his race in the 151st District on Thursday, more than a week after Election Day, Democrat Melissa Cerrato’s campaign told Spotlight PA. 
+State Rep. Todd Stephens (R., Montgomery) conceded his race in the 151st District on Thursday, more than a week after Election Day, Democrat Melissa Cerrato’s campaign told Spotlight PA.
 
 The Associated Press had already called 101 races for Democrats and 100 for Republicans in the 203-member chamber. The AP calls races when it can find no mathematical path for losing candidates to win based on outstanding votes.
 
@@ -39,7 +39,21 @@ Democrats’ pickup of a dozen seats has come as a shock to many in Harrisburg �
 
 Population shifts over the past 10 years from rural areas to suburban and urban parts of Pennsylvania — and the subsequent redrawing of political lines earlier this year to account for those changes — allowed the party to make many of these gains.
 
-Democratic candidates won seats in safe blue areas such as Harrisburg, Lancaster, Reading, and Allentown, while also flipping redrawn suburban districts outside of Pittsburgh and Philadelphia. The party defeated a handful of GOP incumbents in these areas, including Stephens. 
+Democratic candidates won seats in safe blue areas such as Harrisburg, Lancaster, Reading, and Allentown, while also flipping redrawn suburban districts outside of Pittsburgh and Philadelphia. The party defeated a handful of GOP incumbents in these areas, including Stephens.
+
+In the still-contested 142nd state House District, Republican Joseph Hogan led Democrat Mark Moffa by 53 votes as of Thursday afternoon.
+
+The candidates’ campaigns are fighting to either count or throw out a group of provisional ballots. The Bucks County Board of Elections will make a final decision about those ballots during a meeting Tuesday. Attorneys for both campaigns agree those ballots are unlikely to shift the status of the race.
+
+It’s possible that Moffa’s campaign will file a lawsuit this week arguing that a group of regular mail ballots that were set aside because they had flaws like a missing or incorrect date, missing signature, or a missing inner envelope should be counted. Such ballots have already been subject to extensive litigation, but federal precedents on their legal status remain unsettled.
+
+If Moffa’s campaign decides to sue, they’ll use an argument that federal district courts have already heard: that refusing to count ballots based on technical flaws that don’t have significant security implications violates federal civil rights law.
+
+Republicans have argued before in court that dates, signatures, and secrecy envelopes are all necessary security measures, and would likely continue to do so.
+
+Any lawsuit could potentially drag on for months — possibly creating a situation in which no representative from the 142nd District can be seated when the chamber reconvenes Jan. 3 to swear in new members.
+
+## A major shift
 
 With Gov.-elect Josh Shapiro controlling the executive branch, Democrats will have a much larger say in Harrisburg’s day-to-day agenda. Lawmakers from the party will be able to advance policy priorities such as raising the minimum wage or instituting LGBTQ non-discrimination protections, and block constitutional amendments from reaching voters.
 
@@ -55,7 +69,7 @@ But to win the position, she must have the support of a majority of lawmakers �
 
 That’s because of the death of one Democratic lawmaker, and the impending resignations of two more.
 
-Rep. Tony DeLuca of Allegheny County died shortly before the Nov. 8 election but still appeared on the ballot and won. Allegheny County state Reps. Austin Davis and Summer Lee won races for lieutenant governor and Congress, respectively, and must resign their seats in January.
+State Rep. Tony DeLuca of Allegheny County died shortly before the Nov. 8 election but still appeared on the ballot and won. Allegheny County state Reps. Austin Davis and Summer Lee won races for lieutenant governor and Congress, respectively, and must resign their seats in January.
 
 The speaker (whoever they are) will then call special elections for the open seats.
 
