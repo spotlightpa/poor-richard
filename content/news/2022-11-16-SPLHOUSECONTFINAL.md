@@ -1,8 +1,8 @@
 +++
 arc-id = "3L6AF6P2S5BFRJYO2W7RB4ILJU"
-authors = ["Stephen Caruso"]
+authors = ["Stephen Caruso", "Katie Meyer"]
 blurb = "Democrats have not controlled the chamber for more than a decade, and the win will allow lawmakers to advance policy priorities like raising the minimum wage."
-byline = "Stephen Caruso of Spotlight PA"
+byline = "Stephen Caruso of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "The party picked up 12 seats during the 2022 midterm election. "
 image = "external/hrv6gh5799y89bbtrkwgv4jptc.jpeg"
 image-credit = "Amanda Berg"
