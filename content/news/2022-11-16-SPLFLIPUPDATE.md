@@ -24,6 +24,10 @@ twitter-title = "Have Democrats flipped the Pa. House? The latest on the final r
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>UPDATE, Nov. 17:</b></i><i> </i><a href="https://www.spotlightpa.org/news/2022/11/pa-governor-election-2022-results-house-democrats-flip-republican-control/" target="_blank"><i>Democrats win control of Pennsylvania state House after picking up 12 seats</i></a>
+
+<i><b>Original story</b></i>
+
 HARRISBURG — With control of the Pennsylvania state House on the line, attorneys for Democratic and Republican candidates in two close, still-uncalled races are haggling over whether to count several dozen provisional ballots.
 
 The arguments mostly come down to relatively minor issues with the ballots — like a voter signing in one place instead of two, or writing an incorrect date.
