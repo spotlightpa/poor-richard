@@ -22,6 +22,10 @@ topics = ["Elections", "The Capitol", "Redistricting"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>UPDATE, Nov. 17: </b></i><a href="https://www.spotlightpa.org/news/2022/11/pa-governor-election-2022-results-house-democrats-flip-republican-control/" target="_blank"><i>Democrats win control of Pennsylvania state House after picking up 12 seats</i></a>
+
+<i><b>Original story</b></i>
+
 HARRISBURG — Pennsylvania Democrats believe they will win enough state House seats after Tuesday’s midterm election to secure a majority when the legislature’s new session begins in January.
 
 The party was expected to pick up several seats in the chamber after a redistricting cycle that produced new political lines that account for population shifts from GOP-leaning rural areas to suburban and urban areas populated by Democrats.
