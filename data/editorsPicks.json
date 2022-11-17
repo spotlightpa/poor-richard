@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-11-17-SPLMILBUNION.md"
+    "content/news/2022-11-16-SPLHOUSECONTFINAL.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
-    "content/news/2022-11-11-SPLPOSTELEXEVENT22.md",
-    "content/news/2022-11-15-SPLPAPERELEX.md",
+  "subfeatures": [
     "content/news/2022-11-16-SPLFLIPUPDATE.md"
+  ],
+  "topSlots": [
+    "content/news/2022-11-17-SPLMILBUNION.md",
+    "content/news/2022-11-11-SPLPOSTELEXEVENT22.md",
+    "content/news/2022-11-15-SPLPAPERELEX.md"
   ],
   "topper": []
 }
