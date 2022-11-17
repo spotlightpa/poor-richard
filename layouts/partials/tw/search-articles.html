@@ -32,11 +32,16 @@
           focus:border-yellow-6
         "
       >
-        <svg x-show="!isLoading" class="h-4 w-4 fill-current">
+        <svg
+          x-show="!isLoading"
+          aria-label="Search"
+          class="h-4 w-4 fill-current"
+        >
           <use xlink:href="#search-svg"></use>
         </svg>
         <svg
           x-cloak
+          aria-label="Loading results"
           x-show="isLoading"
           class="h-4 w-4 animate-spin fill-current"
         >
