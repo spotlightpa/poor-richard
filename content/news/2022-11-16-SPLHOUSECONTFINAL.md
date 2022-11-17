@@ -26,7 +26,9 @@ twitter-title = "Democrats win control of Pennsylvania state House"
 
 HARRISBURG — Democrats have won control of the Pennsylvania state House for the first time in more than a decade, but it’s still unclear exactly how big their margin over Republicans will be.
 
-State Rep. Todd Stephens (R., Montgomery) conceded his race in the 151st District on Thursday, more than a week after Election Day, Democrat Melissa Cerrato’s campaign told Spotlight PA.
+State Rep. Todd Stephens (R., Montgomery) conceded his race in the 151st District to Democrat Melissa Cerrato on Thursday, more than a week after Election Day.
+
+“Though I am disappointed that I won’t be returning to Harrisburg to serve the community where I was born, raised, and am raising my family, I am proud of my accomplishments,” Stephens wrote on <a href="https://www.facebook.com/ToddStephensPA/posts/pfbid0Z7jp1eFfMDgtCapLkqXJsF2eiPfGTNHVNNPswpUMn9PHvV1fkwfiXBbQHiB6jgorl" target="_blank">Facebook</a>. “I’ll certainly look back at my time as your State Representative with pride.”
 
 The Associated Press had already called 101 races for Democrats and 100 for Republicans in the 203-member chamber. The AP calls races when it can find no mathematical path for losing candidates to win based on outstanding votes.
 
@@ -52,6 +54,9 @@ If Moffa’s campaign decides to sue, they’ll use an argument that federal dis
 Republicans have argued before in court that dates, signatures, and secrecy envelopes are all necessary security measures, and would likely continue to do so.
 
 Any lawsuit could potentially drag on for months — possibly creating a situation in which no representative from the 142nd District can be seated when the chamber reconvenes Jan. 3 to swear in new members.
+
+<iframe title="The path to the Democratic state House majority" aria-label="Map" id="datawrapper-chart-bLHTz" src="https://datawrapper.dwcdn.net/bLHTz/22/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="531" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 
 ## A major shift
 
