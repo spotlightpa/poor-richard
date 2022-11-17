@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2022-11-16-SPLFLIPUPDATE.md"
+    "content/news/2022-11-17-SPLMILBUNION.md"
   ],
-  "subfeatures": [
-    "content/news/2022-11-11-SPLPOSTELEXEVENT22.md",
-    "content/news/2022-11-10-SPLCONTCOUNT.md",
-    "content/news/2022-11-09-SPLHOUSECONT.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
     "content/news/2022-11-15-SPLPAPERELEX.md",
-    "content/statecollege/2022-11-11-SPLRJCFOLO.md",
-    "content/news/2022-11-10-SPLDOCDISCIPLINE.md"
+    "content/news/2022-11-16-SPLFLIPUPDATE.md",
+    "content/statecollege/2022-11-11-SPLRJCFOLO.md"
   ],
   "topper": []
 }
