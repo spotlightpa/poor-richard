@@ -21,7 +21,7 @@ title = "Why these Pa. teams got left out of the minor league baseball union"
 topics = ["Economy"]
 +++
 
-<i>This story was produced by Spotlight PA in collaboration with Defector, an independent sports blog and media company.</i>
+<i>This story was produced by </i><a href="https://www.spotlightpa.org/" target="_blank"><i>Spotlight PA</i></a><i> in collaboration with </i><a href="https://defector.com/" target="_blank"><i>Defector</i></a><i>, an independent sports blog and media company.</i>
 
 HARRISBURG — Professional baseball will become a fairer sport next year — at least in terms of compensation.
 
@@ -47,7 +47,7 @@ For decades, such barriers, and the promise of meritocracy built into the minor 
 
 In recent years, a perfect storm of factors broke that inertia: a <a href="https://www.espn.com/mlb/story/_/id/34249632/mlb-pay-185-million-settlement-minor-league-players-minimum-wage-allegations">$185 million settlement</a> between MLB and minor leaguers in a class-action lawsuit over minimum wage and overtime violations, government scrutiny of MLB’s antitrust exemption in the form of a <a href="https://www.si.com/mlb/2022/07/29/rob-manfred-responds-senate-committee-inquiry-mlb-antitrust-exemption">U.S. Senate inquiry</a>, mounting political support for a minor league union in state capitals and Washington, D.C, and the tailwinds of <a href="https://news.gallup.com/poll/398303/approval-labor-unions-highest-point-1965.aspx">surging public support</a> for labor unions.
 
-“Minor league players make near poverty wages while serving as some of MLB’s best ambassadors in communities across America,” U.S. Sen. Dick Durbin (D., Ill.) <a href="https://twitter.com/SenatorDurbin/status/1564275086798077955?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1564275086798077955%7Ctwgr%5E9517b6a61b96fca4ed089f7a09328e6f7275aa86%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fwww.espn.com%2Fmlb%2Fstory%2F_%2Fid%2F34479699%2Fmlbpa-sends-union-authorization-cards-first-step-unionizing-minor-leaguers">said in August</a>. “Unionization would finally allow minor leaguers to negotiate for better pay and working conditions. I welcome this step by MLBPA.”
+“Minor league players make near poverty wages while serving as some of MLB’s best ambassadors in communities across America,” U.S. Sen. Dick Durbin (D., Ill.) <a href="https://twitter.com/SenatorDurbin/status/1564275086798077955?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1564275086798077955%7Ctwgr%5E9517b6a61b96fca4ed089f7a09328e6f7275aa86%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.espn.com%2Fmlb%2Fstory%2F_%2Fid%2F34479699%2Fmlbpa-sends-union-authorization-cards-first-step-unionizing-minor-leaguers">said in August</a>. “Unionization would finally allow minor leaguers to negotiate for better pay and working conditions. I welcome this step by MLBPA.”
 
 ## Why did minor leaguers need a union?
 
@@ -81,7 +81,7 @@ The Atlantic and Frontier Leagues are independent, meaning they aren’t direct 
 
 What’s the difference between affiliates and partners? Affiliate teams, like those listed in the section above, are controlled and funded by major league clubs. Teams in partner leagues, meanwhile, control their own rosters and payrolls. While “partner” may sound like a closer relationship than “affiliate,” in this case it’s not.
 
-<div class=”flourish-embed flourish-map” data-src=”visualisation/11818817″><script src=“https://public.flourish.studio/resources/embed.js”></script></div>
+<div class="flourish-embed flourish-map" data-src="visualisation/11818817"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 MLB <a href="https://apnews.com/article/sports-mlb-baseball-rob-manfred-coronavirus-pandemic-f8a0f1c09161e83db87bca8e78219725">reorganized the minors in 2021</a>, controversially cutting dozens of teams to reduce costs. The league also designated four independent leagues — the Atlantic and Frontier among them — as partners.
 
@@ -124,8 +124,6 @@ He pointed to the midwest’s Northwoods League, where even broadcasters <a href
 Asked to make the case for more unions in baseball, Rosenblum-Larson was unequivocal.
 
 “Baseball players are a perfect example of a group of people who have immense and unique talent. And people are making money off that talent, and the players themselves are not seeing any of that money,” he said. “They deserve to be compensated fairly, and they haven’t since the beginning of minor league baseball.”
-
-If you or someone you know has insight on working conditions in independent league baseball — the Atlantic League, Frontier League, or elsewhere — we want to hear from you. Reach out to reporter Colin Deppen <a href="mailto:cdeppen@spotlightpa.org">here</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20minor%20league%20baseball%20that%20Defector%20and%20Spotlight%20PA%20should%20investigate%3F%20Tell%20us."></div>
 
