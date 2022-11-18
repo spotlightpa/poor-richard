@@ -40,8 +40,4 @@ Watch the conversation below.
 
 <iframe src="https://player.vimeo.com/video/772490826?h=4cd8a348ca" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
-<b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwnv6N_dpqibiOCQHlOD8IeWtqC2ldWh36Ll7KL7yZ-Iu7KA/viewform?embedded=true" width="100%" height="1132" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
