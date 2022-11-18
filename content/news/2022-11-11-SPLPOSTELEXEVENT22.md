@@ -1,8 +1,8 @@
 +++
 arc-id = "DKSQZSLFGVDY3EAZVXUUDIP67I"
-blurb = "Join us Thursday, Nov. 17 for a discussion on who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office."
+blurb = "Spotlight PA held a discussion on who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA to discuss Gov.-elect Josh Shapiro, loser Doug Mastriano, control of the legislature, and what's next after the 2022 Pa. election."
+description = "Panelists discussed Gov.-elect Josh Shapiro, loser Doug Mastriano, control of the legislature, and what's next after the 2022 Pa. election."
 event-date = 2022-11-17T18:00:00-05:00
 event-title = "What's Next in Pennsylvania Politics After the 2022 Midterm Election?"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_SXHjTc4XTGWEQE3_FbLx3A"
@@ -17,8 +17,8 @@ no-index = false
 published = 2022-11-11T12:05:11.849-05:00
 slug = "pa-election-2022-results-josh-shapiro-democrats-legislature-event"
 suppress-date = false
-title = "You’re invited! A free panel on the winners of Pa.’s 2022 election and how they plan to run the state"
-title-tag = "Live event: What's next in PA politics post-election"
+title = "WATCH: A free panel on the winners of Pa.’s 2022 election and how they plan to run the state"
+title-tag = "VIDEO: What's next in PA politics post-election"
 topics = ["Events", "Elections"]
 +++
 
@@ -26,19 +26,19 @@ topics = ["Events", "Elections"]
 
 After a long and contentious election cycle that saw Pennsylvania become a bellwether for national policy debates, the votes are in. Near the top of the ballot, <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-results-josh-shapiro-governor-analysis/" target="_blank">Democrat Josh Shapiro defeated Republican Doug Mastriano to become the state’s 48th governor</a>, and <a href="https://www.spotlightpa.org/news/2022/11/pa-election-day-2022-updates-voting-results-mastriano-shapiro-oz-fetterman/" target="_blank">Democrat John Fetterman won a U.S. Senate seat over Republican Mehmet Oz</a>.
 
-Down the ballot, Democrats have <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-results-legislature-state-house-majority/" target="_blank">already picked up more than a dozen seats in the state House with two races still too close to call</a>, leading party leaders to declare they will control the chamber for the first time in over a decade.
+Down the ballot, Democrats have <a href="https://www.spotlightpa.org/news/2022/11/pa-governor-election-2022-results-house-democrats-flip-republican-control/" target="_blank">won the state House</a> for the first time in more than a decade, and Republicans maintained control of the state Senate.
 
-In 2023, these newly elected officials will shape education, environmental, health, and labor policies that affect all Pennsylvanians. To help you make sense of the election and give you a glimpse of what might lie ahead, Spotlight PA’s government team will discuss the results and the policy plans the winners will prioritize after they are sworn in.
+In 2023, these newly elected officials will shape education, environmental, health, and labor policies that affect all Pennsylvanians. To help you make sense of the election and give you a glimpse of what might lie ahead, Spotlight PA’s government team discussed the results and the policy plans the winners will prioritize after they are sworn in.
 
-Join us Thursday, Nov. 17 at 6 p.m. EST on Zoom for a free panel about who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office.
+Watch the conversation below.
 
-<b>Our confirmed panelists include:</b>
+<b>Our panelists were:</b>
 
-- Stephen Caruso, Capitol reporter for Spotlight PA
+- <b>Stephen Caruso</b>, capitol reporter for Spotlight PA
 
-- Katie Meyer, government editor/reporter for Spotlight PA
+- <b>Katie Meyer</b>, government editor/reporter for Spotlight PA
 
-<b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_SXHjTc4XTGWEQE3_FbLx3A"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a><b>, or fill out the </b><a href="https://docs.google.com/forms/d/e/1FAIpQLScwnv6N_dpqibiOCQHlOD8IeWtqC2ldWh36Ll7KL7yZ-Iu7KA/viewform?usp=sf_link" target="_blank"><b>form</b></a><b> below.</b>
+<iframe src="https://player.vimeo.com/video/772490826?h=4cd8a348ca" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
