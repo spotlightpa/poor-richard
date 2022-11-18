@@ -24,36 +24,26 @@ twitter-title = "Democrats win control of Pennsylvania state House"
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Democrats have won control of the Pennsylvania state House for the first time in more than a decade, but it’s still unclear exactly how big their margin over Republicans will be.
+HARRISBURG — Democrats have won control of the Pennsylvania state House for the first time in more than a decade.
 
 State Rep. Todd Stephens (R., Montgomery) conceded his race in the 151st District to Democrat Melissa Cerrato on Thursday, more than a week after Election Day.
 
 “Though I am disappointed that I won’t be returning to Harrisburg to serve the community where I was born, raised, and am raising my family, I am proud of my accomplishments,” Stephens wrote on <a href="https://www.facebook.com/ToddStephensPA/posts/pfbid0Z7jp1eFfMDgtCapLkqXJsF2eiPfGTNHVNNPswpUMn9PHvV1fkwfiXBbQHiB6jgorl" target="_blank">Facebook</a>. “I’ll certainly look back at my time as your State Representative with pride.”
 
-The Associated Press had already called 101 races for Democrats and 100 for Republicans in the 203-member chamber. The AP calls races when it can find no mathematical path for losing candidates to win based on outstanding votes.
+A few hours later, Democrat Mark Moffa conceded the last disputed state House race, <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-results-state-house-democrat-flip-latest-legal-challenges/" target="_blank">for Bucks County’s 142nd District</a>, to Republican Joseph Hogan.
 
-The fate of the last disputed state House race, <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-results-state-house-democrat-flip-latest-legal-challenges/" target="_blank">for Bucks County’s 142nd District</a>, is still unsettled and could be decided in court.
+“While we stand to further narrow Joe Hogan’s current 53-vote lead, the ballots remaining in contention do not appear to be enough for me to pull ahead,” Moffa wrote on Facebook. 
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
+
+The Associated Press had previously called 101 races for Democrats and 100 for Republicans in the 203-member chamber. The AP calls races when it can find no mathematical path for losing candidates to win based on outstanding votes.
 
 Democrats’ pickup of a dozen seats has come as a shock to many in Harrisburg — including the party now slated to be in power.
 
 Population shifts over the past 10 years from rural areas to suburban and urban parts of Pennsylvania — and the subsequent redrawing of political lines earlier this year to account for those changes — allowed the party to make many of these gains.
 
 Democratic candidates won seats in safe blue areas such as Harrisburg, Lancaster, Reading, and Allentown, while also flipping redrawn suburban districts outside of Pittsburgh and Philadelphia. The party defeated a handful of GOP incumbents in these areas, including Stephens.
-
-In the still-contested 142nd state House District, Republican Joseph Hogan led Democrat Mark Moffa by 53 votes as of Thursday afternoon.
-
-The candidates’ campaigns are fighting to either count or throw out a group of provisional ballots. The Bucks County Board of Elections will make a final decision about those ballots during a meeting Tuesday. Attorneys for both campaigns agree those ballots are unlikely to shift the status of the race.
-
-It’s possible that Moffa’s campaign will file a lawsuit this week arguing that a group of regular mail ballots that were set aside because they had flaws like a missing or incorrect date, missing signature, or a missing inner envelope should be counted. Such ballots have already been subject to extensive litigation, but federal precedents on their legal status remain unsettled.
-
-If Moffa’s campaign decides to sue, they’ll use an argument that federal district courts have already heard: that refusing to count ballots based on technical flaws that don’t have significant security implications violates federal civil rights law.
-
-Republicans have argued before in court that dates, signatures, and secrecy envelopes are all necessary security measures, and would likely continue to do so.
-
-Any lawsuit could potentially drag on for months — possibly creating a situation in which no representative from the 142nd District can be seated when the chamber reconvenes Jan. 3 to swear in new members.
 
 <iframe title="The path to the Democratic state House majority" aria-label="Map" id="datawrapper-chart-bLHTz" src="https://datawrapper.dwcdn.net/bLHTz/22/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="531" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
@@ -77,5 +67,7 @@ That’s because of the death of one Democratic lawmaker, and the impending resi
 State Rep. Tony DeLuca of Allegheny County died shortly before the Nov. 8 election but still appeared on the ballot and won. Allegheny County state Reps. Austin Davis and Summer Lee won races for lieutenant governor and Congress, respectively, and must resign their seats in January.
 
 The speaker (whoever they are) will then call special elections for the open seats.
+
+<i>This story was updated at 9:05 p.m. to reflect that Democrat Mark Moffa conceded. </i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
