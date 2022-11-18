@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-10-18T05:00:00-04:00
 slug = "pa-election-2021-november-ballot-candidates"
+suppress-date = false
 title = "Pa. election 2021: Polling places, mail ballot details, and more things to know about Nov. 2"
 topics = ["Elections"]
 +++
@@ -41,7 +42,7 @@ You can also go to your county election office (find the address <a href="https:
 
 You have at least two options. Option one: Mail your ballot back to your county election office. Some counties pay for the postage, while others don’t, so pay attention to the writing on the envelope.
 
-Option two: In all 67 counties, a voter can return their <a href="https://www.spotlightpa.org/news/2020/10/pa-who-can-drop-off-mail-absentee-ballots/">own</a> ballot to a local election office in person (again, find the address <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">here</a>). Some counties have set up satellite offices and drop boxes. <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Drop-Box.aspx">Look up those locations here</a>.
+Option two: In all 67 counties, a voter can return their <a href="https://www.spotlightpa.org/news/2020/10/pa-who-can-drop-off-mail-absentee-ballots/">own</a> ballot to a local election office in person (again, find the address <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">here</a>). Some counties have set up satellite offices and drop boxes. <a href="https://web.archive.org/web/20221110211624/https://www.vote.pa.gov/Voting-in-PA/pages/drop-box.aspx">Look up those locations here</a>.
 
 This part is extra important: Ballots must be received by the county election office before 8 p.m. on Election Day. Plan accordingly.
 
