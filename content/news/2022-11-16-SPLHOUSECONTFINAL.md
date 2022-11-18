@@ -37,7 +37,7 @@ A few hours later, Democrat Mark Moffa conceded the last disputed state House ra
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-The Associated Press had previously called 101 races for Democrats and 100 for Republicans in the 203-member chamber. The AP calls races when it can find no mathematical path for losing candidates to win based on outstanding votes.
+The Associated Press had previously called 101 races for Democrats and 100 for Republicans in the 203-member chamber. By Thursday night, Democrats had secured a one-seat majority.
 
 Democrats’ pickup of a dozen seats has come as a shock to many in Harrisburg — including the party now slated to be in power.
 
