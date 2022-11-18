@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-05-31T05:00:00-04:00
 slug = "pa-unemployment-claims-overhaul-ibm-gsi-benefits-labor-industry"
+suppress-date = false
 suppress-featured = false
 title = "Anxiety runs high as Pa. begins massive overhaul of 60-year-old unemployment computer system"
 +++
@@ -39,7 +40,7 @@ But technology experts and unemployment advocates are warning that the state’s
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The overhaul is the heart of a $35 million contract with Florida-based Geographic Solutions Inc., which is leading the project and will manage the new system. Residents will not be able to file new state unemployment claims from May 31 through June 7, and people with continuing claims <a href="https://www.uc.pa.gov/unemployment-benefits/UCBenMod/Pages/Offline-Transition-Information.aspx">will not be able to file</a> from June 3 through June 7. The new system is to be up and running June 8.
+The overhaul is the heart of a $35 million contract with Florida-based Geographic Solutions Inc., which is leading the project and will manage the new system. Residents will not be able to file new state unemployment claims from May 31 through June 7, and people with continuing claims <a href="https://web.archive.org/web/20220612041613/https://www.uc.pa.gov/unemployment-benefits/UCBenMod/Pages/Offline-Transition-Information.aspx">will not be able to file</a> from June 3 through June 7. The new system is to be up and running June 8.
 
 William Trusky, the state’s deputy secretary for unemployment compensation programs, said he anticipates minimal benefit disruption but acknowledged, “There will be bumps in the road.”
 
@@ -137,7 +138,7 @@ The contract with GSI for the latest upgrade is more than 2,500 pages. The compa
 
 But a Carnegie Mellon University study <a href="https://www.cs.cmu.edu/afs/cs/project/able/www/paper_abstracts/archmismatch-icse17.html">found</a> that these systems had “very little success,” and the underlying assumptions about how to adapt the technology to a new environment lead to “virtually all our serious problems.”
 
-There are also technical concerns: Advocates said a new password requirement could lock numerous people out of the system, and the state’s attempts to <a href="https://www.uc.pa.gov/unemployment-benefits/UCBenMod/Pages/default.aspx">educate the public</a> about how to use the new portal are not practical or helpful for most. It is relying on claimants to read a 45-page instruction manual posted on its site or attend an hour-long webinar.
+There are also technical concerns: Advocates said a new password requirement could lock numerous people out of the system, and the state’s attempts to <a href="https://web.archive.org/web/20221108223928/https://www.uc.pa.gov/unemployment-benefits/UCBenMod/Pages/default.aspx">educate the public</a> about how to use the new portal are not practical or helpful for most. It is relying on claimants to read a 45-page instruction manual posted on its site or attend an hour-long webinar.
 
 Scott Andes, executive director of the Block Center for Technology and Society at Carnegie Mellon University, said too few governments prioritize the most important question when modernizing a system: Does the technology benefit the public?
 
