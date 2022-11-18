@@ -4,11 +4,11 @@ arc-id = "4E2GNVEGHFEZFNIVSPHAWOCBUQ"
 authors = ["Ed Mahon"]
 blurb = "Fired workers and frustrated employers are facing off in court battles over Pennsylvania’s vague safeguards for marijuana patients, and those on both sides are asking for a legislative fix."
 byline = "Ed Mahon of Spotlight PA"
-description = "Fired workers and frustrated employers are facing off in court battles over Pennsylvania’s vague safeguards for marijuana patients, and those on both sides are asking for a legislative fix."
+description = "Fired employees and frustrated employers are facing off in court battles over Pennsylvania’s vague safeguards for medical marijuana patients."
 extended-kicker = "Special Investigation"
 image = "external/f110jqs7y6aehexgean169fm90.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
-image-description = "Vague legal protections in Pennsylvania's medical marijuana law force some workers to choose between their job and a doctor-approved drug."
+image-description = "A Pennsylvania medical marijuana card doesn't necessarily protect workers from facing demotion or firing at work."
 image-gravity = "ce"
 internal-budget = "Fired workers and frustrated employers are facing off in court battles over Pennsylvania’s vague safeguards for marijuana patients, and those on both sides are asking for a legislative fix."
 internal-id = "SPLEMPLOYMENT14"
@@ -21,6 +21,7 @@ series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-job-fired"
 suppress-date = false
 title = "Pa. law protects workers who are approved for medical marijuana — but once they use it, it’s a different story."
+title-tag = "Workers with medical marijuana cards in PA face firing"
 topics = ["Health", "Medical Marijuana"]
 +++
 
