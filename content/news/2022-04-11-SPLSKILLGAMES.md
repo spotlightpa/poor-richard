@@ -3,10 +3,10 @@ arc-id = "7PWGFYJFVJEKXG5SGAPSICUICA"
 authors = ["Angela Couloumbis"]
 blurb = "Unlike casino slot machines, skill games aren’t regulated under the state’s gambling law or subject to the same high taxes."
 byline = "Angela Couloumbis of Spotlight PA"
-description = "Unlike casino slot machines, skill games aren’t regulated under the state’s gambling law or subject to the same high taxes."
+description = "Learn more about how skill games work in Pennsylvania and why they are at the center of a multimillion-dollar fight with casinos."
 image = "external/rdw7p75frqb0x92zwp0d3tmkh0.jpeg"
 image-credit = "Keith Srakocic / AP"
-image-description = "Skill games have the look and feel of a slot machine, but their makers say that unlike slots in casinos, these games do not rely purely on chance."
+image-description = "A Pennsylvania skill game terminal. Games of skill here are the center of a multimillion-dollar fight with casinos."
 internal-budget = "What are skill games, and why are they are the center of a multimillion-dollar fight"
 internal-id = "SPLSKILLGAMES"
 kicker = "The Capitol"
@@ -17,6 +17,7 @@ series = ["Ghost Writers"]
 slug = "pennsylvania-skill-games-what-are-they"
 suppress-date = false
 title = "What are skill games, and why are they at the center of a multimillion-dollar fight"
+title-tag = "Why games of skill are so controversial in PA"
 topics = ["The Capitol"]
 +++
 
