@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2022-02-15T05:00:00-05:00
 slug = "pa-courts-discrimination-opioid-use-disorder"
+suppress-date = false
 title = "Justice Department finds Pa. courts discriminated against people with opioid use disorder"
 topics = ["Health"]
 +++
@@ -22,7 +23,7 @@ topics = ["Health"]
 
 HARRISBURG — Courts in Pennsylvania violated federal law by telling people to stop taking life-saving addiction medications, the Department of Justice recently alleged while warning of possible legal consequences if the policies continue.
 
-An <a href="https://www.ada.gov/ujs_lof.pdf">eight-page letter</a> the agency sent to the state court system in February focused on two Pennsylvania counties — Jefferson and Northumberland — and identified six others that currently or recently had “problematic policies that prohibit or otherwise limit” the use of medications for opioid use disorder.
+An <a href="https://web.archive.org/web/20221111143713/https://www.ada.gov/ujs_lof.pdf">eight-page letter</a> the agency sent to the state court system in February focused on two Pennsylvania counties — Jefferson and Northumberland — and identified six others that currently or recently had “problematic policies that prohibit or otherwise limit” the use of medications for opioid use disorder.
 
 The policies caused at least two people under court supervision “significant harm,” the department concluded, as they attempted to stop using proven and scientifically accepted treatments. One major national study found people are about 50% less likely to die when treated long-term with buprenorphine or methadone, two federally approved drugs that have faced bans in Pennsylvania.
 
