@@ -55,7 +55,7 @@ The state Supreme Court’s new decision overruled the 1988 Superior Court. The 
 
 Justices Kevin Dougherty and Sallie Updyke Mundy dissented.
 
-The opinion gives trial courts the authority to cut a case short if it’s clear the defendant will never be able to participate in their own defense, said Bradley Bridge, an attorney with Defender Association of Philadelphia, a firm providing no-cost defense to people who cannot afford counsel.
+The opinion gives trial courts the authority to cut a case short if it’s clear the defendant will never be able to participate in their own defense, said Bradley Bridge, an attorney with the Defender Association of Philadelphia, a firm providing no-cost defense to people who cannot afford counsel.
 
 “All we wanted was for the trial court judge, who had observed the client for possibly years, to have the discretion to dismiss the charges while considering the length of time involved and why it would be unjust to continue the prosecution,” said Bridge, whose firm filed an amicus brief in the Humphrey case. “It was plainly unfair for the district attorney, the one bringing the charges, to exclusively have that authority.”
 
