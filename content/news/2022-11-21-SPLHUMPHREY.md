@@ -55,7 +55,7 @@ The state Supreme Court’s new decision overruled the 1988 Superior Court. The 
 
 Justices Kevin Dougherty and Sallie Updyke Mundy dissented.
 
-The opinion gives trial courts the authority to cut a case short if it’s clear the defendant will never be able to participate in their own defense, said Bradley Bridge, an attorney with Philadelphia Defenders, a firm providing no-cost defense to people who cannot afford counsel.
+The opinion gives trial courts the authority to cut a case short if it’s clear the defendant will never be able to participate in their own defense, said Bradley Bridge, an attorney with Defender Association of Philadelphia, a firm providing no-cost defense to people who cannot afford counsel.
 
 “All we wanted was for the trial court judge, who had observed the client for possibly years, to have the discretion to dismiss the charges while considering the length of time involved and why it would be unjust to continue the prosecution,” said Bridge, whose firm filed an amicus brief in the Humphrey case. “It was plainly unfair for the district attorney, the one bringing the charges, to exclusively have that authority.”
 
@@ -74,5 +74,7 @@ While the Mental Health Procedures Act gives the department the authority to adm
 In his majority opinion, Baer repeatedly noted the lack of treatment options available to Humphrey.
 
 “Any changes to laws and regulations for state hospital admissions would require legislative action or regulatory amendments,” Cwalina said.
+
+<i><b>Correction: </b></i><i>A previous version of this story incorrectly identified Bradley Bridge’s employer. He works for the bridge.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
