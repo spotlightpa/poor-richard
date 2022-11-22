@@ -123,6 +123,7 @@ All of those laws include exceptions if federal laws or rules require drug testi
   dek=" Workers in Pennsylvania can’t be fired for having a doctor’s approval for medical marijuana — but once they actually use it, it’s a whole different story."
   byline="Ed Mahon"
   outlet="Spotlight PA"
+  date="Sept. 14, 2022"
   image-credit="Leise Hook"
   art-type= "Illustrations"
   credit-relation="for"
