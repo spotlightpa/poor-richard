@@ -49,7 +49,7 @@
     {{ partial "tag/picture-maybe-link.html" (dict
       "link" .link
       "wrapperClass" "block"
-      "pictureClass" (printf "flex aspect-[%d/%d]" .widthRatio .heightRatio)
+      "pictureClass" "flex"
       "imgClass" "flex h-full w-full object-cover"
       "sizeHint" .sizeHint
       "eager" $eager

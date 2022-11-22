@@ -13,11 +13,22 @@
   .height
 */}}
 {{ if .link }}
-  <a class="{{ .wrapperClass }}" href="{{ .link }}">
+  <a
+    class="{{ .wrapperClass }}"
+    href="{{ .link }}"
+    {{ if and .width .height }}
+      style="aspect-ratio: {{ .width }} / {{ .height }};"
+    {{ end }}
+  >
     {{- partial "tag/picture.html" . -}}
   </a>
 {{ else }}
-  <span class="{{ .wrapperClass }}">
+  <span
+    class="{{ .wrapperClass }}"
+    {{ if and .width .height }}
+      style="aspect-ratio: {{ .width }} / {{ .height }};"
+    {{ end }}
+  >
     {{- partial "tag/picture.html" . -}}
   </span>
 {{ end }}
