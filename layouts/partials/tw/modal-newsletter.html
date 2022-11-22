@@ -7,10 +7,9 @@
   x-data="modal"
   x-cloak
   x-show="isOpen"
-  x-transition.opacity
   x-trap.noscroll.inert="isOpen"
   @modal:newsletters:open.window="isOpen = true"
-  {{ if .Param "modal-exclude" | not }}
+  {{ if .Param `modal-exclude` | not }}
     @scroll.window.once.passive="trigger()"
   {{ end }}
   @click="isOpen = false"
@@ -21,12 +20,12 @@
   <div class="absolute inset-0 bg-s-4 opacity-75"></div>
   <div
     class="absolute inset-0 backdrop-blur-sm backdrop-filter"
-    x-transition.delay.150ms
+    x-transition.opacity
   ></div>
   <div
     class="absolute inset-1 flex overflow-y-auto"
     x-show="isOpen"
-    x-transition.delay.50ms
+    x-transition
   >
     <form
       class="m-auto w-full max-w-prose overflow-hidden rounded-lg text-center font-sans text-s-9 shadow-lg"
