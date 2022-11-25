@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-11-23-SPLTK.md"
+    "content/news/2022-05-26-SPLADVERTISING26.md"
   ],
   "subfeatures": [
-    "content/news/2022-11-18-SPLHOUSE2023.md",
-    "content/news/2022-11-16-SPLHOUSECONTFINAL.md"
+    "content/news/2022-09-20-SPLMMJRECAP20.md",
+    "content/news/2022-02-21-SPLCANNABIS21.md"
   ],
   "topSlots": [
-    "content/news/2022-11-24-SPLThanksgiving22.md",
     "content/news/2022-11-23-SPLSHAPINSIDE.md",
-    "content/news/2022-11-21-SPLHUMPHREY.md"
+    "content/news/2022-11-21-SPLHUMPHREY.md",
+    "content/news/2022-11-17-SPLMILBUNION.md"
   ],
   "topper": []
 }
