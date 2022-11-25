@@ -7,5 +7,5 @@ aliases = ["/series/"]
 sort-by = ""
 
 [cascade]
-sort-by = "pub"
+sort-by = "newest"
 +++
