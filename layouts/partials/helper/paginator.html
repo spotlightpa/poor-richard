@@ -7,7 +7,7 @@
 {{ if .IsNode }}
   {{ $sort := .Param "sort-by" }}
   {{ $size := .Param "paginate" | default 30 }}
-  {{ if eq $sort "pub" }}
+  {{ if eq $sort "pub" | or (eq $sort "oldest") }}
     {{ $p = .Paginate (.Pages.ByPublishDate) $size }}
   {{ else if eq $sort "title" }}
     {{ $p = .Paginate (.Pages.ByTitle) $size }}
