@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-05-26-SPLADVERTISING26.md"
+    "content/news/2022-06-02-SPLBROADBAND02.md"
   ],
   "subfeatures": [
-    "content/news/2022-09-20-SPLMMJRECAP20.md",
-    "content/news/2022-02-21-SPLCANNABIS21.md"
+    "content/news/2022-09-08-SPLMAPS08.md",
+    "content/news/2022-06-06-SPLSPEEDS06.md"
   ],
   "topSlots": [
+    "content/news/2022-11-23-SPLTK.md",
     "content/news/2022-11-23-SPLSHAPINSIDE.md",
-    "content/news/2022-11-21-SPLHUMPHREY.md",
-    "content/news/2022-11-17-SPLMILBUNION.md"
+    "content/news/2022-11-21-SPLHUMPHREY.md"
   ],
   "topper": []
 }
