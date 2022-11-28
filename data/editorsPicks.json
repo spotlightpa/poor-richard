@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-04-11-SPLCASINO.md"
+    "content/news/2022-09-14-SPLEMPLOYMENT14.md"
   ],
   "subfeatures": [
-    "content/news/2022-04-11-SPLSKILLGAMES.md"
+    "content/news/2022-09-20-SPLMMJRECAP20.md",
+    "content/news/2022-10-07-SPLMMJLAWSUITS07.md"
   ],
   "topSlots": [
+    "content/news/2022-11-23-SPLTK.md",
     "content/news/2022-11-23-SPLSHAPINSIDE.md",
-    "content/news/2022-11-21-SPLHUMPHREY.md",
-    "content/news/2022-11-17-SPLMILBUNION.md"
+    "content/news/2022-11-21-SPLHUMPHREY.md"
   ],
   "topper": []
 }
