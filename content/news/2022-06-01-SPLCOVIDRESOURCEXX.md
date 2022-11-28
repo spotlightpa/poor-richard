@@ -3,7 +3,7 @@ aliases = ["/about/coronavirus-dashboard-faq/", "/news/2020/03/pa-coronavirus-up
 arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
 blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on bivalent booster shots"
 byline = "Spotlight PA Staff"
-description = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on bivalent booster shots"
+description = "Where to find reliable information about Pennsylvania’s COVID response, including updated booster shots."
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-description = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests."
@@ -13,11 +13,14 @@ internal-id = "SPLCOVIDRESOURCEXX"
 kicker = "Coronavirus"
 modal-exclude = false
 no-index = false
+og-title = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests"
 published = 2022-06-01T14:22:00-04:00
 slug = "pennsylvania-covid-dashboard-updates-guides-resources-cases-vaccines-tests"
 suppress-date = true
 title = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests"
+title-tag = "Pa. COVID guide: Updates on cases, vaccines, and tests"
 topics = ["Coronavirus"]
+twitter-title = "Pa. COVID guide: Resources on cases, vaccines, and tests"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
