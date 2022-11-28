@@ -4,13 +4,11 @@
 {{ $imgDesktop := .Param "topper-desktop-images" }}
 {{ $widthDesktop := .Param "topper-desktop-width" }}
 {{ $heightDesktop := .Param "topper-desktop-height" }}
-{{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
 
 {{ $imgMobile := .Param "topper-mobile-images" }}
 
 {{ $widthMobile := .Param "topper-mobile-width" }}
 {{ $heightMobile := .Param "topper-mobile-height" }}
-{{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
 
 {{ $bannerActive := .Param "banner-active" }}
 {{ $toppperBgColor := .Param "topper-bg-color" }}

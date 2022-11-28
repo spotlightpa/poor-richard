@@ -24,7 +24,6 @@
 
 {{ $width := (index $sizes 0).width }}
 {{ $height := (index $sizes 0).height }}
-{{ $padding := slice $widthR $heightR | partial "helper/aspect-ratio" }}
 {{ $imgOpt := dict
   "filename" $imagename
   "width" $width
