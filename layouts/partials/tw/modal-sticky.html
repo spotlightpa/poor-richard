@@ -42,7 +42,7 @@
       class="flex ring-yellow focus:outline-none focus:ring-2"
       @click.capture="close()"
       @click.outside="close()"
-      href="/donate/"
+      href="{{ $link }}"
       ><img
         class="rounded shadow-beige"
         x-data="imageRotator(JSON.parse($el.dataset.images))"
