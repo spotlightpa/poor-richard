@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2022-09-14-SPLEMPLOYMENT14.md"
+    "content/news/2022-11-29-SPLUNDANA.md"
   ],
   "subfeatures": [
-    "content/news/2022-09-20-SPLMMJRECAP20.md",
-    "content/news/2022-10-07-SPLMMJLAWSUITS07.md"
+    "content/news/2022-11-23-SPLRISKLIM.md",
+    "content/news/2022-11-01-SPLUNDATEDRULE.md"
   ],
   "topSlots": [
+    "content/news/2022-11-29-SPLGNDXX.md",
     "content/news/2022-11-23-SPLTK.md",
-    "content/news/2022-11-23-SPLSHAPINSIDE.md",
-    "content/news/2022-11-21-SPLHUMPHREY.md"
+    "content/news/2022-11-23-SPLSHAPINSIDE.md"
   ],
   "topper": []
 }
