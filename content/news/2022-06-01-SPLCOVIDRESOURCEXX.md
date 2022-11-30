@@ -6,7 +6,7 @@ byline = "Spotlight PA Staff"
 description = "Where to find reliable information about Pennsylvania’s COVID response, including updated booster shots."
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
-image-description = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests."
+image-description = "Illustration of Pennsylvania COVID guide to finding resources on cases, vaccines, and tests."
 image-size = "hidden"
 internal-budget = "Where to find reliable data and information about Pennsylvania’s COVID response, including at-home test kits and boosters."
 internal-id = "SPLCOVIDRESOURCEXX"
@@ -29,7 +29,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of November 1, 2022.
+Information on this page is current as of December 1, 2022.
 
 If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
