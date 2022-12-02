@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-09-15T11:04:32.909-04:00
 slug = "pennsylvania-senate-republicans-audit-subpoenas"
+suppress-date = false
 title = "Pa. Senate GOP moves to collect private voter information in controversial review of 2020 election"
 topics = ["Elections", "The Capitol"]
 +++
@@ -42,7 +43,7 @@ Dush did reveal Wednesday that the private company the Senate hires will be paid
 
 They have also struggled to describe its scope, and have vacillated on why they believe it is necessary. As recently as June, Corman said<a href="https://www.spotlightpa.org/news/2021/08/jake-corman-pennsylvania-senate-election-audit/"> he did not see a need to “relitigate” the 2020 election</a>.
 
-But in an <a href="https://www.senatorcorman.com/2021/08/23/op-ed-careful-thoughtful-investigation-is-necessary-to-restore-faith-in-our-elections/">editorial</a> two months later, Corman wrote of the necessity for a “forensic audit” that would restore faith in the same elections Pennsylvania Republicans repeatedly challenged in court last year, to no avail.
+But in an <a href="https://web.archive.org/web/20221018051410/https://www.senatorcorman.com/2021/08/23/op-ed-careful-thoughtful-investigation-is-necessary-to-restore-faith-in-our-elections/">editorial</a> two months later, Corman wrote of the necessity for a “forensic audit” that would restore faith in the same elections Pennsylvania Republicans repeatedly challenged in court last year, to no avail.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
