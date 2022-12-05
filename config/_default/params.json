@@ -108,11 +108,7 @@
   "topper-bg-color": "#4c50e9",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hn/r7pr/4.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7pr/6.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7pr/8.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7ps/10.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7ps/12.svg"
+    "https://files.data.spotlightpa.org/uploads/01hr/tj7z/newsmatch-2022-tracker-banners-10-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ff0000",
@@ -120,11 +116,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hn/r7yx/3.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7yy/5.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7yy/7.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7yy/9.svg",
-    "https://files.data.spotlightpa.org/uploads/01hn/r7yz/11.svg"
+    "https://files.data.spotlightpa.org/uploads/01hr/tj80/newsmatch-2022-rectangles-1024-512-px-13-.svg"
   ],
   "topper-mobile-width": 1024
 }
