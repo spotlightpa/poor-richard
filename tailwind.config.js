@@ -9,18 +9,6 @@ module.exports = {
         '"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif',
       raleway: "Raleway, Helvetica, Arial, sans-serif",
     },
-    fontSize: {
-      xs: "0.75rem",
-      sm: "0.875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.3125rem",
-      "2xl": "1.5rem",
-      "3xl": "2rem",
-      "4xl": "2.5rem",
-      "5xl": "3rem",
-      "6xl": "3.5em",
-    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
