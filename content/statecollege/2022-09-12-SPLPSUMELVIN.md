@@ -16,7 +16,7 @@ published = 2022-09-12T12:00:00-04:00
 slug = "penn-state-transparency-matt-melvin-hiring-freeze"
 suppress-date = false
 title = "Why did Penn State create a new VP position during a hiring freeze?"
-topics = ["Penn State"]
+topics = ["Penn State","Transparency Tracker"]
 +++
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
