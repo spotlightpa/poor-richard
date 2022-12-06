@@ -53,6 +53,6 @@
     "eslint-plugin-standard": ">=5.0.0",
     "prettier": "^2.6.0",
     "prettier-plugin-go-template": "^0.0.13",
-    "prettier-plugin-tailwindcss": "^0.1.8"
+    "prettier-plugin-tailwindcss": "^0.2.0"
   }
 }
