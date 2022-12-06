@@ -19,7 +19,8 @@ topics = ["Editor's Notes"]
 
 We're excited to announce that our state has been selected by the Reporters Committee for Freedom of the Press to receive a First Amendment lawyer dedicated exclusively to helping journalists combat government secrecy.
 
-<img src="/img/press-release/local-legal-initiative.png" alt="The Reporters Committee for Freedom of the Press logo" style="float: right; height: 150px; width: 150px; margin: .5rem;">
+
+{{<image src="https://files.data.spotlightpa.org/uploads/01hr/z7t9/local-legal-initiative.png" alt="The Reporters Committee for Freedom of the Press logo" width="150" height="150" >}}
 
 Though often unseen, journalists here fight every day to obtain documents, data and other records in order to inform you, the public, about what the government is doing (or failing to do) and how your tax dollars are spent.
 
@@ -38,7 +39,9 @@ Or you can [support the efforts of the Reporters Committee](http://www.rcfp.org/
 Let's bring more accountability and transparency to Pennsylvania this year.
 
 Warm regards, <br>
-<img src="/img/press-release/cbaxter-signature.png" width="200" height="83" alt="Signature of Christopher Baxter, editor in chief of Spotlight PA"><br>
+
+{{<image src="https://files.data.spotlightpa.org/uploads/01hr/z7th/cbaxter-signature.png" alt="Signature of Christopher Baxter, editor in chief of Spotlight PA" width="200" height="83">}}
+
 Christopher Baxter <br>
 Editor in Chief
 
