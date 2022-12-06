@@ -18,7 +18,6 @@ subtitle = "Happy Thanksgiving from Spotlight PA."
 suppress-date = false
 title = "Answers to Spotlight PA’s 2022 Thanksgiving Day Scrambler, Riddler, and trivia puzzles"
 title-tag = "Answers to Spotlight PA’s Thanksgiving Day puzzles 2022"
-topics = ["Puzzles"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
