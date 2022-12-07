@@ -17,7 +17,7 @@ slug = "pa-2022-election-state-house-specials-joanna-mcclinton"
 suppress-date = false
 title = "Dispute over Pa. House special elections, control likely heading to court"
 title-tag = "Control of Pennsylvania House in dispute"
-topics = ["The Capitol", "Elections"]
+topics = ["The Capitol", "Elections", "Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -51,18 +51,18 @@ The current fight over who has the power to call these special elections is lead
 
 On that day, lawmakers usually elect a new speaker, who has the power to name powerful committee chairs and, in normal times, schedule special elections.
 
-Democrats will have 99 members to Republicans’ 101 on that day.
-
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?cta_text=YES%2C%20I%20want%20to%20contribute&eyebrow_text=support%20spotlight%20pa&teaser_text=The%20future%20of%20Spotlight%20PA%20depends%20on%20your%20support.%20Make%20a%20tax-deductible%20gift%20now%20to%20ensure%20this%20vital%20journalism%20can%20continue%20in%202023.%20As%20a%20special%20bonus%2C%20%3Cb%3Eall%20gifts%20will%20be%20TRIPLED%20through%20Dec.%203.%20"></div>
 
 
-It takes 100 votes to name a new speaker, meaning Republicans have the numbers to elect their own speaker and attempt to run the chamber, at least until the empty seats are filled. All three vacant seats are in districts that have backed Democratic candidates by double-digit margins in the past.
+With 200 members on swearing-in day, it will take 101 votes to name a new speaker. That means Republicans will have the numbers to elect their own speaker and attempt to run the chamber, at least until the empty seats are filled. All three vacant seats are in districts that have backed Democratic candidates by double-digit margins in the past.
 
 Cutler and McClinton met Monday to discuss how to proceed considering the tight margin, both parties said. McClinton told reporters Wednesday morning that the meeting was positive and productive, but that the sides could not work out an agreement.
 
 Looking ahead to Jan. 3, McClinton said that she was looking forward to getting support from Democrats and Republicans to officially become the next speaker to “respect the will of the voters of Pennsylvania.”
 
 If she becomes speaker, she’d be the first woman to helm the institution in its 240-plus years.
+
+<i>Correction: The amount of votes needed for House lawmakers to elect a speaker has been corrected.</i>
 
 <i>This story will be updated.</i>
 
