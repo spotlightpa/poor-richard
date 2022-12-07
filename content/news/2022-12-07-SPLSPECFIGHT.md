@@ -7,6 +7,7 @@ description = "Democrats say they control the Pennsylvania House after winning a
 image = "external/gsemyvp8544t2j5z6rbzv6014c.jpeg"
 image-credit = "Alejandro A. Alvarez / Philadelphia Inquirer"
 image-description = "PA House Democrat Joanna McClinton speaks at Independence Hall in Philadelphia to discuss the 2022 midterm election. "
+image-gravity = "no"
 internal-budget = "Dispute over Pa. House special elections, control likely heading to court"
 internal-id = "SPLSPECFIGHT"
 kicker = "The Capitol"
