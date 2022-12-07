@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-12-07-SPLLGBTREG.md"
+    "content/news/2022-12-07-SPLSPECFIGHT.md"
   ],
   "subfeatures": [
-    "content/news/2021-06-15-SPLFAIR16.md",
-    "content/news/2020-06-18-SPLLGBT19.md"
+    "content/news/2022-12-02-SPLHOUSE02.md"
   ],
   "topSlots": [
+    "content/news/2022-12-07-SPLLGBTREG.md",
     "content/news/2022-12-06-SPLWOLFFIRM.md",
-    "content/statecollege/2022-12-06-SPLTTPLANE.md",
-    "content/news/2022-12-02-SPLHOUSE02.md"
+    "content/statecollege/2022-12-06-SPLTTPLANE.md"
   ],
   "topper": []
 }
