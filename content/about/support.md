@@ -21,3 +21,11 @@ Allegheny Foundation <br> American Journalism Project <br> Laura and John Arnold
 ## Spotlight PA Members
 
 {{<about/supporters-list>}}
+
+## Leaders in action
+
+Leaders in Action are individuals who are champions of Spotlight PA's mission at the highest level. Below are Spotlight PA’s current Leaders in Action, who are contributing annually at a level of $1,000 or more, listed alphabetically. We’re so thankful for you!
+
+To learn more about Leaders in Action or your current giving level, please contact Michelle Mertz, Director of Major Gifts, at <michelle@spotlightpa.org>.
+
+{{<about/leaders-list>}}
