@@ -22,6 +22,10 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i>Update, Dec. 8: The Independent Regulatory Review Commission voted 3-2 on Thursday to approve the regulatory change.</i>
+
+<i>Original story</i>
+
 HARRISBURG — In the closing days of his final term in office, Gov. Tom Wolf is backing a regulatory change that would formalize nondiscrimination protections for LGBTQ people while circumventing the legislature.
 
 Under guidance released in 2018, a student, tenant, or worker at most businesses can file a complaint with the Pennsylvania Human Relations Commission against their school, landlord, or boss if they think they’ve been discriminated against because of their sexual orientation or gender identity.
@@ -33,9 +37,9 @@ A little-noted proposal supported by Wolf, which is up for <a href="http://www.i
 
 “The governor has been clear — hate has no place in Pennsylvania, and that includes sex-based discrimination as defined by these regulations,” Wolf spokesperson Beth Rementer said in a statement.
 
-Wolf, a Democrat first elected in 2014, has asked Republican leaders in the General Assembly throughout his tenure to pass a bill that would add discrimination protections based on sexual orientation and gender identity to state law. Pennsylvania is the only state in the northeast without such a law on the books, and <a href="https://freedomforallamericans.org/states/">one of 27</a> nationwide without an explicit law banning such discrimination.
+Wolf, a Democrat first elected in 2014, has asked Republican leaders in the General Assembly throughout his tenure to pass a bill that would add discrimination protections based on sexual orientation and gender identity to state law. Pennsylvania is the only state in the Northeast without such a law on the books, and <a href="https://freedomforallamericans.org/states/">one of 27</a> nationwide without an explicit law banning such discrimination.
 
-The legislature has ignored Wolf’s prodding, as it has on many other issues. So, like he has on <a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-climate-carbon-rule-tom-wolf-20220703.html">climate change</a> and <a href="https://www.governor.pa.gov/newsroom/gov-wolf-signs-executive-order-to-create-pennsylvania-state-law-enforcement-citizen-advisory-commission/">policing</a>, Wolf has turned to a channel that avoids state lawmakers.
+The legislature has ignored Wolf’s prodding, as it has on many other issues. So, as he has on <a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-climate-carbon-rule-tom-wolf-20220703.html">climate change</a> and <a href="https://www.governor.pa.gov/newsroom/gov-wolf-signs-executive-order-to-create-pennsylvania-state-law-enforcement-citizen-advisory-commission/">policing</a>, Wolf has turned to a channel that avoids state lawmakers.
 
 “Unfortunately, given Republican-led efforts to push legislation that only seeks to discriminate and bully individuals and their refusal to take up commonsense bills, this action through regulation is one more way the administration can protect Pennsylvanians,” Rementer said in a statement.
 
@@ -45,7 +49,7 @@ In 2018, the state’s Human Relations Commission said it would adopt an expande
 
 The commission considered it “<a href="https://billypenn.com/2018/08/15/pennsylvanians-can-finally-file-lgbtq-discrimination-complaints/">the right thing to do</a>,” its executive director told Billy Penn at the time, though the guidance was not formally adopted through the regulatory process.
 
-The proposed rulemaking would adopt a definition of sex based upon the 2020 U.S. Supreme Court ruling in <i>Bostock v. Clayton County</i>, in which the court found 6-3 that existing federal law protected an employee from being fired just for being gay or transgender.
+The proposed rulemaking would adopt a definition of sex based upon the 2020 U.S. Supreme Court ruling in <i>Bostock v. Clayton County</i>, in which the court found, by 6-3, that existing federal law protected an employee from being fired just for being gay or transgender.
 
 The Pennsylvania Human Relations Commission enforces the state’s nondiscrimination laws, including the Human Relations Act. That law is more expansive than federal ones in a key way: It applies to businesses with <a href="https://www.phrc.pa.gov/AboutUs/Documents/Fair%20Employment.pdf">four or more employees</a>, as opposed to 15 or more.
 
@@ -61,13 +65,13 @@ And by ensuring that the LGBTQ community has access to education, housing, and m
 
 The Wolf administration, many Democratic lawmakers, and a number of LGBTQ advocacy groups are backing the proposal currently before the Independent Regulatory Review Commission, a state agency that oversees executive rulemaking.
 
-A group of Republican legislators have pushed back and said it usurps their authority to make laws.
+A group of Republican legislators has pushed back and said it usurps their authority to make laws.
 
 “While the General Assembly has yet to make these policy decisions, that should not be interpreted as an abdication of responsibility and thus a signal to a bureaucratic agency to pick up the task,” 11 Republican state senators wrote in <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2006-07-22%20Sen%20Martin%20and%2010%20Senators.pdf">a June letter</a> to the review commission. “Without the General Assembly’s action to do so, the PHRC is attempting to circumvent the constitutional power and responsibility of the General Assembly.”
 
 Other opposition came from the Pennsylvania Catholic Conference, which <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_PUBLIC/3339%2005-11-22%20PA%20CATHOLIC%20CONFERENCE.pdf">argued</a> in May that the rule would infringe on the religious freedom of those who believe “that God created each person either male or female” and “created marriage as sacred between one man and one woman.”
 
-In <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2005-17-22%20REP%20DAN%20FRANKEL.pdf">a May letter</a> to the regulatory panel, state Rep. Dan Frankel (D., Allegheny) pushed back on claims that allowing LGBTQ people to file discrimination complaints unduly burdens businesses or religious organizations. He cited numbers from the commission that show just 42 out of 3,660 complaints filed from July 2020 until June 2021 were related to sexual orientation or gender identity.
+In <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2005-17-22%20REP%20DAN%20FRANKEL.pdf">a May letter</a> to the regulatory panel, State Rep. Dan Frankel (D., Allegheny) pushed back on claims that allowing LGBTQ people to file discrimination complaints unduly burdens businesses or religious organizations. He cited numbers from the commission that show just 42 out of 3,660 complaints filed from July 2020 until June 2021 were related to sexual orientation or gender identity.
 
 “While these protections are incredibly important, implementing them has not appeared to cause any crisis, including for small businesses or religious organizations,” Frankel wrote.
 
@@ -87,4 +91,4 @@ In an email, Manuel Bonder, spokesperson for Shapiro’s transition team, said t
 
 A statewide nondiscrimination law would ensure that “when it comes to liberty and justice for all, where we founded our government, we’re going to lead and that we mean liberty and justice for all,” Titus said.
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>WHILE YOU’RE HERE ...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
