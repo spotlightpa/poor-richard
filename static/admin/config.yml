@@ -325,11 +325,6 @@ collections:
         widget: string
         hint: "Short label for the reporter's focus area"
         required: false
-      - label: Focus description
-        name: focus
-        widget: markdown
-        hint: "Longer explanation of focus area"
-        required: false
       - label: Bio
         name: content
         widget: markdown
