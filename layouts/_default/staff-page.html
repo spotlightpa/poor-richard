@@ -147,14 +147,11 @@
           </div>
         </div>
       </div>
-      {{ if $author.focus }}
+      {{ with $author.focusHed }}
         <h3 class="mb-3 subtitle is-4">
           <b class="has-text-weight-semibold">Focus:</b>
-          {{ $author.focusHed }}
+          {{ . }}
         </h3>
-        <div class="content" data-ga-category="author-bio">
-          {{ $author.focus|markdownify }}
-        </div>
       {{ end }}
       <div class="content" data-ga-category="author-bio">
         {{ $author.content|markdownify }}
