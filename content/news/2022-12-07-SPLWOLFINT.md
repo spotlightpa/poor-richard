@@ -17,7 +17,7 @@ no-index = false
 published = 2022-12-07T17:17:43.868-05:00
 slug = "pa-governor-tom-wolf-legacy-live-interview"
 suppress-date = false
-title = "You’re invited! A free 1-on-1 interview with Pa. Gov. Tom Wolf on his legacy."
+title = "You’re invited! A live 1-on-1 interview with Pa. Gov. Tom Wolf on his legacy."
 title-tag = "A live interview with PA Governor Tom Wolf"
 topics = ["Events", "The Capitol"]
 +++
