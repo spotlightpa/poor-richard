@@ -8,8 +8,7 @@ logo_url: https://www.spotlightpa.org/img/logos/banner-share-5000.png
 show_preview_links: true
 
 backend:
-  name: github
-  repo: spotlightpa/poor-richard
+  name: git-gateway
   branch: master
 
 yaml-definitions: &page-fields
