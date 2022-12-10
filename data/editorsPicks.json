@@ -1,9 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2022-12-10-SPLCOST10.md"
+    "content/news/2022-12-09-SPLHOUSE09.md"
   ],
   "subfeatures": [
-    "content/news/2022-12-07-SPLSPECFIGHT.md"
+    "content/news/2022-12-07-SPLSPECFIGHT.md",
+    "content/news/2022-12-10-SPLCOST10.md"
   ],
   "topSlots": [
     "content/news/2022-12-07-SPLWOLFINT.md",
