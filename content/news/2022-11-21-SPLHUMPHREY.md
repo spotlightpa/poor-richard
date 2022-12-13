@@ -18,7 +18,7 @@ slug = "pennsylvania-supreme-court-ruling-humphrey-competency"
 suppress-date = false
 title = "Judges in Pa. can now dismiss charges against people ‘incompetent’ to stand trial, but flaws remain"
 title-tag = "Judges in PA can dismiss charges for ‘incompetent’ defendants"
-topics = ["Criminal Justice"]
+topics = ["Criminal Justice","Corrections"]
 +++
 
 <i>This story is a collaboration between </i><a href="https://www.spotlightpa.org/" target="_blank"><i>Spotlight PA</i></a><i> and the </i><a href="https://pinjnews.org/" target="_blank"><i>Pittsburgh Institute for Nonprofit Journalism</i></a><i>, published as part of a Pittsburgh Media Partnership project. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s free newsletters</i></a><i>.</i>
