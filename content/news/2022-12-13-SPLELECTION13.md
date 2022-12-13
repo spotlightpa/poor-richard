@@ -23,7 +23,7 @@ title-tag = "PA election laws could change after House power shift"
 topics = ["The Capitol"]
 +++
 
-<a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — Pennsylvania lawmakers agree on one thing: the commonwealth needs to rewrite its election laws.
 
