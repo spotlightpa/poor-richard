@@ -100,6 +100,16 @@
     </section>
   </article>
 
+  <div class="px-2 md:px-20 py-14 my-0 bg-blue">
+    {{ partial "tw/donate-prefill-lg.html" (dict
+      "page" .
+      "hed" "Support Nonpartisan, <br>Independent Journalism"
+      "cta" "Contribute Now"
+      )
+    }}
+  </div>
+
+  </div>
 {{ end }}
 
 {{ define "extra-main" }}
