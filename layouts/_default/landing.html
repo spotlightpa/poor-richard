@@ -1,0 +1,157 @@
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
+{{ end }}
+
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <article class="bg-white px-4 pt-12 pb-2 md:pb-6">
+    <header>
+      <div class="mx-auto w-full max-w-screen-md">
+        <h1
+          class="font-sans text-2xl sm:text-4xl md:text-5xl font-black leading-none tracking-wide"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+      <div class="mx-auto w-full max-w-prose">
+
+        {{ partial "tw/image-hero.html" . }}
+
+      </div>
+    </header>
+    {{ with .Content }}
+      <div class="mx-auto w-full max-w-screen-md">
+        <div class="mt-6" data-ga-category="content">
+          <div
+            x-data
+            x-intersect.once="$report({ target: $el })"
+            data-ga-action="view:content-start"
+          ></div>
+          <div
+            class="article-content max-w-prose w-full overflow-hidden leading-relaxed"
+            data-sf-campaign="701f4000000TVuXAAW"
+          >
+            {{ . }}
+          </div>
+          <div
+            x-data
+            x-intersect.once="$report({ target: $el })"
+            data-ga-action="view:content-finish"
+          ></div>
+        </div>
+      </div>
+    {{ end }}
+
+    <section class="bg-white mx-auto flex justify-evenly my-14 px-4 pt-10 pb-10 font-serif max-w-screen-lg border-t-2 border-b-2">
+      <h2 
+        class="font-sans text-2xl sm:text-4xl md:text-5xl font-black leading-none tracking-wide"
+      >
+        Join the Leaders in Action
+      </h2>
+      <button 
+        class="font-sans outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
+      >
+        Contribute &rarr;
+      </button>
+    </section>
+
+    <section class="mx-auto w-full max-w-screen-md my-14">
+      <h2 
+        class="font-sans text-2xl sm:text-4xl md:text-5xl font-black leading-none tracking-wide"
+      >
+        Current Leaders
+      </h2>
+
+      <div class="supporters-list">
+        <ul
+          class="columns-3 column-gap-2 py-8" 
+          style="column-gap:40px;"
+        >
+          {{ range sort site.Data.leaders.list "sort" "asc" }}
+            <li>{{ .display }}</li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </section>
+  </article>
+
+{{ end }}
+
+{{ define "extra-main" }}
+  {{ $pages := $.Pages }}
+  {{ if .Param "sort-by" | eq "title" }}
+    {{ $pages = $.Pages.ByTitle }}
+  {{ end }}
+
+
+{{ end }}
+
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}
