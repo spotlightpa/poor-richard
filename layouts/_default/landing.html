@@ -1,7 +1,9 @@
 {{ define "body-class" }}
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
-
+{{ define "html-class" -}}
+  scroll-smooth
+{{- end }}
 {{ define "static-head" }}
   {{ partialCached "header/static-tw.html" . }}
 {{ end }}
@@ -72,11 +74,11 @@
       >
         Join the Leaders in Action
       </h2>
-      <button 
-        class="font-sans outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
+      <a href="#donate-leader"
+        class="flex items-center justify-center font-sans outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
       >
         Contribute &rarr;
-      </button>
+      </a>
     </section>
 
     <section class="mx-auto w-full max-w-screen-md my-14">
@@ -88,7 +90,7 @@
 
       <div class="supporters-list">
         <ul
-          class="columns-3 column-gap-2 py-8" 
+          class=" columns-2 md:columns-3 column-gap-2 py-8" 
           style="column-gap:40px;"
         >
           {{ range sort site.Data.leaders.list "sort" "asc" }}
@@ -100,10 +102,10 @@
     </section>
   </article>
 
-  <div class="px-2 md:px-20 py-14 my-0 bg-blue">
+  <div id="donate-leader" class="px-2 md:px-20 py-14 my-0 bg-blue">
     {{ partial "tw/donate-prefill-lg.html" (dict
       "page" .
-      "hed" "Support Nonpartisan, <br>Independent Journalism"
+      "hed" "Support Nonpartisan, Independent Journalism"
       "cta" "Contribute Now"
       )
     }}
