@@ -1,14 +1,14 @@
 {{ $hed := .hed | default "Become a Member" }}
 {{ $cta := .cta | default "Donate Now" }}
 
-{{ $btnClass := `outline-none min-w-[158px] inline-block rounded py-3 px-6 text-white font-sans font-black text-2xl tracking-wide ring ring-transparent` }}
+{{ $btnClass := `outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
-
+{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]`}}
 
 <div
   data-ga-category="donate-prefill-lg"
-  class="no-js:hidden mx-auto w-full max-w-screen-md"
+  class="no-js:hidden mx-auto w-full max-w-screen-md "
   x-data="{
     active: '{{ $activeClass }}',
     inactive: '{{ $inactiveClass }}',
@@ -51,13 +51,13 @@
     }
   }"
 >
-  <div class="flex items-baseline flex-wrap">
-    <h2 class="font-sans text-2xl sm:text-4xl md:text-5xl font-black text-white leading-none tracking-wide">
+  <div class="flex items-center flex-wrap">
+    <h2 class="flex-[0_1_614px] font-sans text-2xl sm:text-4xl md:text-5xl font-black text-white leading-none tracking-wide">
       {{ $hed }}
     </h2>
     <div class="mt-6 flex flex-wrap justify-start gap-2">
       {{ define "tw-donate-prefill-button-lg" }}
-        {{ $btnClass := `outline-none min-w-[158px] inline-block rounded py-3 px-6 text-white font-sans font-black text-2xl tracking-wide ring ring-transparent` }}
+        {{ $btnClass := `outline-none min-w-[180px] inline-block rounded py-3 px-12 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
         {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
 
         {{ $amount := index . 0 }}
@@ -137,7 +137,7 @@
         </span>
       </div>
     </div>
-    <div class="mt-12 mr-8 flex justify-start gap-2 font-sans text-base text-white font-extrabold">
+    <div class="mt-12 mr-8 flex justify-start gap-2 font-sans text-lg text-white font-extrabold">
       <label class="flex flex-row items-center mr-10">
         Monthly
         <input
@@ -173,7 +173,7 @@
 
     <div class="mt-12 text-center">
       <a
-        class="{{ $btnClass }} inline-block rounded bg-red-6 px-6 py-3 text-lg tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
+        class="{{ $btnClass }} inline-block rounded bg-red-6 px-6 py-3 tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
         :href="donateURL"
         data-ga-action="https://www.spotlightpa.org/donate/"
       >
