@@ -4,6 +4,7 @@
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
 {{ $date := .Get "date" }}
+{{ $creditType := .Get "credit-type" | default "by" }}
 {{ $byline := .Get "byline" }}
 {{ $outlet := .Get "outlet" | default "Spotlight PA" }}
 {{ $videoSrc := .Get "video-src" }}
@@ -57,25 +58,31 @@
         <h1 class="{{ $hedSizes }} mt-4 uppercase leading-hed">
           {{ $hed }}
         </h1>
-        <h2 class="mt-4 lg:text-xl">{{ $dek }}</h2>
+        <h2 class="mt-4 lg:text-xl lg:leading-relaxed">{{ $dek }}</h2>
       </div>
       <time
         class="font-sans font-bold uppercase"
         datetime="{{ $params.publishedISO }}"
-        >{{ $date }}</time
       >
+        {{- $date -}}
+      </time>
       <div class="mt-8 leading-none lg:text-lg">
-        by <span class="font-sans font-bold uppercase">{{ $byline }}</span>
+        {{ $creditType }}
+        <span class="font-sans font-bold uppercase">{{ $byline }}</span>
       </div>
       <div class="mt-3 font-sans text-sm font-bold uppercase">
         {{ $outlet }}
       </div>
-      <div class="mt-4 text-sm lg:mt-8">
-        {{ $artType }} by
-        <span class="font-sans font-bold uppercase">{{ $imageCredit }}</span>
-        {{ $preposition }}
-        <span class="font-sans uppercase">{{ $imageSource }}</span>
-      </div>
+      {{ if $imageCredit }}
+        <div class="mt-4 text-sm lg:mt-8">
+          {{ $artType }} by
+          <span class="font-sans font-bold uppercase">
+            {{- $imageCredit -}}
+          </span>
+          {{ $preposition }}
+          <span class="font-sans uppercase">{{ $imageSource }}</span>
+        </div>
+      {{ end }}
     </div>
   </div>
 
