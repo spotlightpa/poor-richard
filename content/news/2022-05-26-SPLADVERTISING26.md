@@ -145,7 +145,7 @@ And in at least one case, the department told a physician she could face even mo
 
 “I was shocked,” MaryFrances Koester, the physician who received that warning, told Spotlight PA. “Quite frankly, I was scared. And I was angry because I didn’t think I’d done anything wrong.”
 
-{{<featured/hr>}}
+
 ### Uneven rules
 
 Koester is an emergency medicine physician who decided to start her own cannabis telehealth business in Lackawanna County in 2020. She sees cannabis as a life-changing treatment option for many patients who suffer from chronic pain, anxiety, post-traumatic stress disorder, and other conditions.
@@ -203,7 +203,7 @@ Meanwhile, physicians who try to make themselves easier for patients to find can
 
 <script>!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("#datawrapper-chart-lSIOu");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 
-{{<featured/hr>}}
+
 ### What counts as advertising?
 
 Jennifer Minkovich, a physician in Bucks County, told Spotlight PA she was aware of the restrictions on advertising, but she was still surprised to receive a warning from the Department of Health earlier this year.
@@ -248,7 +248,7 @@ Nine of the 11 advertising warning letters sent to Pennsylvania physicians invol
   caption="An outdoor sign promoting medical marijuana exams and certifications led the Pennsylvania Department of Health to send a warning letter to an Allegheny County physician in February 2020. A manager for the physician&#39;s office told officials he ordered the sign to be removed and “effective this day no more signs will be placed advertising certifications.” The photo, which was included as an attachment to the warning letter, was obtained from the Department of Health through a Right-to-Know request."
 >}}
 
-{{<featured/hr>}}
+
 ### ‘Like the Wild West’
 
 While reporting this story, Spotlight PA found multiple websites for Pennsylvania physicians and practices that made statements similar to ones that led to warning letters. But as of early February, none of those websites led to warnings for physicians, documents obtained by Spotlight PA show.
@@ -338,7 +338,7 @@ Even though the ban gives an advantage to businesses like his, he criticized the
   caption="Gov. Tom Wolf pushed for medical marijuana legalization, including when he met with advocates at the state Capitol in Harrisburg on March 15, 2016. A compromise plan, which included a blanket ban on physician advertising, passed out of the GOP-controlled House the next day. Photo by Dan Gleiter of PennLive"
 >}}
 
-{{<featured/hr>}}
+
 ### A compromise with stricter rules
 
 Pennsylvania’s advertising restrictions were created by lawmakers as part of a broader compromise several years ago.

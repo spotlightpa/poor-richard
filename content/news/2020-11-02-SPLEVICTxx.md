@@ -109,7 +109,7 @@ The day before they were due to be evicted, she still wasn’t sure where they w
 
 Finally, on Oct. 15, the constable came to lock them out.
 
-{{<featured/hr>}}
+
 
 ### Bearing the burden
 
@@ -157,7 +157,7 @@ Lee said she remembers seeing people putting the flyers on her neighbors’ door
 
 In a statement, Morgan Properties said the company’s general policy “is not to allow postings of flyers, etc. by any outside businesses/organizations, regardless of the source."
 
-{{<featured/hr>}}
+
 
 ### ‘Consistently inconsistent’
 
@@ -201,7 +201,7 @@ Many judges have been “evasive, dismissive, and even hostile when tenants inqu
 
 <script async src="https://pym.nprapps.org/pym.v1.min.js"></script>
 
-{{<featured/hr>}}
+
 
 ### A gaping loophole
 
@@ -265,7 +265,7 @@ Earlier this month, when she arrived home from a local copy store after scanning
   credit="Elizabeth Robertson / Philadelphia Inquirer"
 >}}
 
-{{<featured/hr>}}
+
 
 ### Unforeseen circumstances
 

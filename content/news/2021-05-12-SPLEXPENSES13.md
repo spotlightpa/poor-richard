@@ -143,7 +143,7 @@ Corman said he has already broached the idea with members of his caucus and did 
   height="365"
 >}}
 
-{{<featured/hr>}}
+
 ### A financial ‘time warp’
 
 Operating one of the largest-in-numbers legislatures in the country isn’t free, lawmakers and their supporters say. There are costs, sometimes significant.
@@ -201,7 +201,7 @@ That’s on top of the $1.3 million the legislature paid to lease cars for lawma
   credit="Commonwealth Media Services"
 >}}
 
-{{<featured/hr>}}
+
 ### Office life
 
 In Pennsylvania, legislators have at least one — and sometimes up to three — satellite offices in addition to their offices inside the state Capitol complex.
@@ -212,7 +212,7 @@ Only one in four states makes any allowance for district offices. In places like
 
 {{<featured/newsletter>}}
 
-{{<featured/hr>}}
+
 ### Receipts not required
 
 Legislators award themselves flat-rate per diems for showing up to work, whether in Harrisburg or someplace else they travel, and the rules they wrote don’t require them to present receipts for what they spend the money on. The practice can add tens of thousands of dollars a year to their already-generous salaries.
@@ -227,7 +227,7 @@ Sainato and Longietti raked in the most by far, at $128,000 and $124,000, respec
   height="600"
 >}}
 
-{{<featured/hr>}}
+
 ### An army of lawyers
 
 All four caucuses have state-paid lawyers on staff, but that hasn’t stopped them from charging taxpayers for outside counsel as well. Both chambers pay outside lawyers to represent them on matters ranging from election-related lawsuits to school funding litigation to sexual harassment claims.
@@ -243,7 +243,7 @@ Often, the public can&#39;t even find out what work those firms are doing, let a
   credit="Dan Gleiter / PennLive"
 >}}
 
-{{<featured/hr>}}
+
 ### ‘Just post it online’
 
 In addition, redactions of the names of people lawmakers met over lunch or dinner, along with many standard redactions of account numbers and personal addresses, led to about 4,770 transactions worth $330,000 with at least some information missing.

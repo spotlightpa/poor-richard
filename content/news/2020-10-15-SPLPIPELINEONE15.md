@@ -132,7 +132,7 @@ Are we prepared?
   credit="Michael Bryant / Philadelphia Inquirer"
 >}}
 
-{{<featured/hr>}}
+
 
 ### What is enough public information?
 
@@ -210,7 +210,7 @@ The sole exit from the Meadowbrook community is a dirt road, forking precipitous
 <script>new pym.Parent("vis-map-mariner-east-route--container", "https://interactives.data.spotlightpa.org/2020/vis-map-mariner-east-route/", {});</script>
 <!-- END responsive iframe -->
 
-{{<featured/hr>}}
+
 
 ### Slow violence
 
@@ -263,7 +263,7 @@ Amid these environmental and public health concerns, the FBI is investigating wh
   credit="Steven M. Falk / Philadelphia Inquirer"
 >}}
 
-{{<featured/hr>}}
+
 
 ### Unknown hazard zone
 
@@ -318,7 +318,7 @@ Reached by phone on vacation in Fort Lauderdale, Fla., Metro, who retired in Aug
   credit="Michael Bryant / Philadelphia Inquirer"
 >}}
 
-{{<featured/hr>}}
+
 
 ### Confidential security information
 
