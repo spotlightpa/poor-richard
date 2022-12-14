@@ -199,7 +199,7 @@ Businesses don’t want to have to guess which positions are appropriate for med
   bgcolor="#fff"
 >}}
 
-{{<featured/hr>}}
+
 ### Fights in courts
 
 In lawsuits, medical marijuana patients said they were denied or fired from a variety of jobs:  forklift operator, welder, medical assistant, construction worker, emergency medical technician, and customer service representative.
@@ -221,7 +221,7 @@ A spokesperson for Weis and an attorney who represented Longenecker declined to 
   description="Pennsylvania’s medical marijuana law doesn’t specifically address the rights of patients to use the drug when they aren’t at work, and unlike some other states, it doesn’t include protections for them if they fail a drug test but are not impaired."
 >}}
 
-{{<featured/hr>}}
+
 ### A dispute over federal rules
 
 Marijuana is still illegal at the federal level, which can create additional complications for some industries. The U.S. Department of Transportation, for instance, says pilots, school bus drivers, truck drivers, train engineers, ship captains — all deemed “safety-sensitive” employees — fall under its drug testing requirements and can’t use the drug.
@@ -257,7 +257,7 @@ A spokesperson for Philadelphia Gas Works wouldn’t answer questions about Doug
 
 “PGW’s first responsibility is always the safety of our employees, customers, and communities across the City of Philadelphia and ensuring safety throughout all our operations,” spokesperson Richard Barnes said in an email.
 
-{{<featured/hr>}}
+
 ### Asking for clarity
 
 Attorneys in a Lancaster County case recently asked Pennsylvania Superior Court judges to provide guidance on what it takes to win a wrongful termination lawsuit under the state’s medical marijuana law — and specifically what protections employees have if they exclusively use marijuana “on an off-duty basis.”
@@ -299,7 +299,7 @@ In late August, Pennsylvania Superior Court declined to weigh in on the case, an
   description="In lawsuits, medical marijuana patients said they were denied or fired from a variety of jobs: forklift operator, welder, medical assistant, construction worker, emergency medical technician, and customer service representative."
 >}}
 
-{{<featured/hr>}}
+
 ### Unemployment benefits denied
 
 After employees lose their job, they can run into other problems.
@@ -324,7 +324,7 @@ In June 2021, Commonwealth Court ruled in Moyer’s favor, a victory in a battle
 
 Jack Lehr Electric declined to comment for this story, through an attorney. A spokesperson for the Department of Labor and Industry said the agency doesn’t have statistics for the number of people initially denied benefits in cases similar to Moyer’s.
 
-{{<featured/hr>}}
+
 ### Different approaches
 
 Pennsylvania’s Department of Health oversees the state’s medical marijuana program, but an agency spokesperson said the law does not give it “broad oversight of enforcement of employee protections,” adding that changes to the law would require legislative action.

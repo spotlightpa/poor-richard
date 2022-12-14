@@ -108,7 +108,7 @@ The current broadband rule “clearly doesn’t serve the best interests of Penn
   caption="Radios and a microwave dish, installed on top of a farm silo, provide internet service to nearby homes. It’s one of 21 sites that make up the broadband network built by DRIVE, an economic development organization in the Central Susquehanna region. Amanda Berg / For Spotlight PA"
 >}}
 
-{{<featured/hr>}}
+
 ### A ‘virtual veto’
 
 The power struggle over who would provide high-speed internet in Pennsylvania can be traced back to the early 1990s, when lawmakers struck an ambitious deal they hoped would put the state ahead of the curve.
@@ -150,7 +150,7 @@ The law’s goal of “universally available, state-of-the-art” broadband rema
 <iframe title="Two recent broadband expansion efforts in central Pa." aria-label="Map" id="datawrapper-chart-WkSmb" src="https://datawrapper.dwcdn.net/WkSmb/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;margin-top: 2rem;margin-bottom: 2rem;" height="480"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
-{{<featured/hr>}}
+
 ### A workaround
 
 In early 2020, a survey of broadband access across the Southern Alleghenies region was yielding thousands of desperate responses.
@@ -198,7 +198,7 @@ Carson, until recently ABI’s executive director, says the new model is already
   caption="The view from the Shikellamy Overlook, along the western shore of the Susquehanna River, in the region served by DRIVE. Dense tree cover and hilly ground drive up the cost of building broadband infrastructure across much of rural Pennsylvania. Amanda Berg / For Spotlight PA"
 >}}
 
-{{<featured/hr>}}
+
 ### Unanswered questions
 
 The legal ambiguities that worked to ABI’s advantage threatened to smother another broadband initiative a few counties to the east.
@@ -243,7 +243,7 @@ The PUC hasn’t yet issued a final ruling.
   caption="DRIVE’s executive director, Jennifer Wakeman, found herself playing hardball with subsidiaries of two major telephone companies after the tiny economic development group sought to expand its broadband network in late 2020. Amanda Berg / For Spotlight PA"
 >}}
 
-{{<featured/hr>}}
+
 ### Still unsettled
 
 In newly released guidance, the federal government “strongly encourages” states with laws like Pennsylvania’s to waive them as the new funding starts to flow — a change that would need approval from state lawmakers.

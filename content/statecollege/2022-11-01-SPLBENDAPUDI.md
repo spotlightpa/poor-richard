@@ -103,7 +103,6 @@ But, as she takes the helm of a university with a $7.7 billion budget and one of
 
 {{<featured/newsletter-sc>}}
 
-{{<featured/hr>}}
 ### Louisville: A university in crisis
 
 In the mid-2010s, scandals plagued the University of Louisville. The school’s president, James Ramsey, hosted a 2015 Halloween party at the university mansion where <a href="https://www.louisvillecardinal.com/2015/10/what-what-what-are-you-wearing-ramsey-goes-racist/">guests and the president wore racist costumes</a>. Then the NCAA <a href="https://www.nytimes.com/2017/06/15/sports/ncaabasketball/louisville-probation-rick-pitino-suspended-ncaa.html">sanctioned the men’s basketball team</a> for providing sex workers for recruits. Ramsey was also <a href="https://www.courier-journal.com/story/news/local/2021/08/03/university-louisville-approves-ex-president-james-ramsey-lawsuit-settlement/5431823001/">accused of mismanaging funds for the university’s philanthropic foundation</a>, leading <a href="https://www.insidehighered.com/quicktakes/2021/08/04/university-louisville-settles-lawsuit-former-president">the school to sue him for $80 million</a> in damages.
@@ -154,7 +153,6 @@ Among them, working at one of the newly acquired medical centers, was a young em
   description="In her first months as president of the University of Louisville, Neeli Bendapudi dealt with a controversy involving a prominent trustee, oversaw a 5% cut to the university’s general fund spending, and approved a nearly 4% increase in tuition."
 >}}
 
-{{<featured/hr>}}
 ### The banker, the academic, the chief of staff
 
 Raised in Andhra Pradesh, in southern India, and the oldest of three girls, a young Bendapudi often heard that sons were traditionally preferable to daughters. Again and again, people would tell her family, “Don’t be sad you only have daughters, who knows what you did in your previous life.”
@@ -181,7 +179,6 @@ Their close working relationship overshadows their clear differences. Smith grew
 
 People who have worked with the two say the pair moves in lockstep. A directive from Smith is a directive from Bendapudi.
 
-{{<featured/hr>}}
 ### Louisville: The ‘premier’ anti-racist university
 
 The police killing of Breonna Taylor in her Louisville home in March 2020 galvanized residents across the city to take to the streets demanding changes to policing.
@@ -246,7 +243,6 @@ In an <a href="https://www.courier-journal.com/story/opinion/2022/08/18/uk-is-be
 
 {{<featured/pullquote side="right" cite="Ricky Jones, University of Louisville professor">}}“People can criticize Neeli Bendapudi all they want. But no such proclamation was made before she got here, and no such proclamation or follow-up has been made since she’s left. So that, in my thinking, is a feather in her cap.”{{</featured/pullquote>}}
 
-{{<featured/hr>}}
 ### ‘Bendapudi is the university’
 
 While Bendapudi appeared to be navigating her position’s precarity to the praise of campus and community members, her leadership was challenged in several ongoing lawsuits claiming her choices were, at certain points, retaliation.
@@ -288,7 +284,6 @@ Penn State Board of Trustees Chair Matthew Schuyler, in a university-provided st
   description="Bendapudi had never visited State College before accepting the job as Penn State’s 19th president. She said in September that she plans to retire as a Nittany Lion."
 >}}
 
-{{<featured/hr>}}
 ### Away to Happy Valley
 
 When Burse — the Louisville trustee who helped oversee Bendapudi’s hiring — stepped off a plane in late 2021 and reconnected his phone he got “the shock of my life.”
