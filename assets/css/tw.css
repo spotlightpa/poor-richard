@@ -316,6 +316,10 @@
     text-orientation: mixed;
     writing-mode: vertical-rl;
   }
+
+  .contain-content {
+    contain: layout paint style inline-size;
+  }
 }
 
 @supports (grid-template-rows: subgrid) {
