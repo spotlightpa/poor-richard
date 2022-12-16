@@ -1,8 +1,8 @@
 +++
 arc-id = "JOYBZLJPTJHR5C3B4DWJTDOB4U"
-blurb = "Join us for a free discussion with Pennsylvania’s top official on the end of his time in office and what’s next for the state."
+blurb = "The Democrat discussed the challenges and highlights of his 8 years in office."
 byline = "Spotlight PA Staff"
-description = "Pennsylvania Governor Tom Wolf will join Spotlight PA on Dec. 15 for a live interview about his two terms in office."
+description = "The Democrat discussed the challenges and highlights of his 8 years in office."
 event-date = 2022-12-15T15:00:00-05:00
 event-title = "Wolf's Legacy"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_XBsd914CQQKMBLJQpgvZdg"
@@ -17,7 +17,7 @@ no-index = false
 published = 2022-12-07T17:17:43.868-05:00
 slug = "pa-governor-tom-wolf-legacy-live-interview"
 suppress-date = false
-title = "You’re invited! A live 1-on-1 interview with Pa. Gov. Tom Wolf on his legacy."
+title = "WATCH: A 1-on-1 exit interview with outgoing Pa. Gov. Tom Wolf"
 title-tag = "A live interview with PA Governor Tom Wolf"
 topics = ["Events", "The Capitol"]
 +++
@@ -28,14 +28,8 @@ After eight years in office, Gov. Tom Wolf will relinquish his seat as Pennsylva
 
 He presided as governor during a rocky period for Pennsylvania, and his responses to climate change, the COVID-19 pandemic, the opioid crisis, and other statewide issues frequently put him at odds with Republican legislative leaders.
 
-The end of Wolf’s term offers an opportunity to reflect on the legacy of his administration and probe the impact of his many decisions. What moments and choices define his leadership of Pennsylvania?
+In this interview with Spotlight PA reporters Stephen Caruso and Angela Couloumbis, Wolf reflects on the legacy of his administration and discusses the impact of his many decisions. Watch below.
 
-To find out, Spotlight PA will speak to the man himself about the policies that shaped his term and what he hopes for the future of the state.
-
-On Thursday, Dec. 15 from 3-3:30 p.m. EST, join our legislative team on Zoom for a free Q&amp;A with Wolf on his two terms, his legacy, and what comes next for Pennsylvania.
-
-<b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_XBsd914CQQKMBLJQpgvZdg"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a><b>.</b>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc18OUb_jM1J9HQM6BMiUT7ILFjhcMUl5TzbKkplTWwBD257Q/viewform?embedded=true" width="640" height="1137" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://player.vimeo.com/video/781879431?h=efdec2e2ca" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <i><b>&gt;&gt; Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
