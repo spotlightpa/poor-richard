@@ -4,12 +4,7 @@ lastName = "Pavelko"
 title = "Major Gifts Advisor"
 email = "kpavelko@spotlightpa.org"
 twitter = "KPav"
-active = true
-content = """Kathleen Pavelko is a journalist, media executive and consultant to non-profits. She served as President and CEO of WITF in Harrisburg, Pennsylvania from 1999 to 2019. She now holds the title of CEO Emerita. In her consultant role, Pavelko’s current assignment is to establish a major donor program for Spotlight PA’s new bureau, based in State College. Ms. Pavelko was founder and advocate for PA Post, a statewide non-partisan digital news service launched by WITF in September 2018. PA Post is now part of Spotlight PA.
-
-During her tenure as CEO of WITF Public Media, Pavelko secured $21 million in capital campaign contributions to build the Public Media Center, which opened in April 2007. Ms. Pavelko also served as president and CEO of Prairie Public Broadcasting (1996-99), and in various roles at Penn State Public Broadcasting (1987-1996), at West Virginia Public Broadcasting and as a freelance journalist in Athens and London.
-
-Ms. Pavelko earned a B.A. in ancient history and an M.A. in Journalism from Penn State University, certificates in non-profit management from the U.C./Berkeley and the Harvard Business School and was awarded an honorary doctorate by Elizabethtown College. She currently serves on the boards of UPMC Central PA,  the UPMC Health Plan board and the Archaeological Institute of America.
-"""
 headshot = "2022/09/01hh-f6ve-4n27-h4be.jpeg"
+content = "Kathleen Pavelko is a journalist, media executive and consultant to non-profits. She served as President and CEO of WITF in Harrisburg, Pennsylvania from 1999 to 2019. She now holds the title of CEO Emerita. In her consultant role, Pavelko’s current assignment is to establish a major donor program for Spotlight PA’s new bureau, based in State College. Ms. Pavelko was founder and advocate for PA Post, a statewide non-partisan digital news service launched by WITF in September 2018. PA Post is now part of Spotlight PA.\n\nDuring her tenure as CEO of WITF Public Media, Pavelko secured $21 million in capital campaign contributions to build the Public Media Center, which opened in April 2007. Ms. Pavelko also served as president and CEO of Prairie Public Broadcasting (1996-99), and in various roles at Penn State Public Broadcasting (1987-1996), at West Virginia Public Broadcasting and as a freelance journalist in Athens and London.\n\nMs. Pavelko earned a B.A. in ancient history and an M.A. in Journalism from Penn State University, certificates in non-profit management from the U.C./Berkeley and the Harvard Business School and was awarded an honorary doctorate by Elizabethtown College. She currently serves on the boards of UPMC Central PA,  the UPMC Health Plan board and the Archaeological Institute of America.\n"
+active = false
 image-gravity = "fp:.55:.45"

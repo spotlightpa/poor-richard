@@ -114,7 +114,7 @@ One district judge said he remembered the advice a colleague gave him shortly af
 
 {{<featured/embed link="https://vimeo.com/489080838" caption="Everything you need to know about Pa. district judges, in 2 minutes.">}}<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/489080838?color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{{</featured/embed>}}
 
-{{<featured/hr>}}
+
 
 ### Huge variations
 
@@ -188,7 +188,7 @@ Presented with the findings of the investigation, state Supreme Court Chief Just
 
 <div class="my-8" data-pym-src="https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/"></div>
 
-{{<featured/hr>}}
+
 
 ### Too many judges
 
@@ -237,7 +237,7 @@ Kevin Kelly, Delaware County’s president judge, did not return multiple messag
   credit="Dan Gleiter / PennLive"
 >}}
 
-{{<featured/hr>}}
+
 
 ### Case stacking
 
@@ -307,7 +307,7 @@ For a judge who has a business to run, Romero said, a technique like case stacki
 
 <div class="mt-8" data-pym-src="https://interactives.data.spotlightpa.org/2020/vis-chart-judge-workloads/"></div>
 
-{{<featured/hr>}}
+
 
 ### Weak oversight
 

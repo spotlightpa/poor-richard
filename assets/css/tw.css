@@ -29,7 +29,12 @@
 }
 
 .featured-content > h3 {
-  @apply mt-4 mb-8 font-sans text-3xl italic leading-none;
+  @apply mb-8 font-sans text-3xl italic leading-none;
+}
+
+.featured-content > h3:before {
+  content: "";
+  @apply mt-16 mb-4 block h-1 w-12 bg-yellow;
 }
 
 .featured-content > h4 {
@@ -310,6 +315,10 @@
     transform: rotate(180deg);
     text-orientation: mixed;
     writing-mode: vertical-rl;
+  }
+
+  .contain-content {
+    contain: layout paint style inline-size;
   }
 }
 

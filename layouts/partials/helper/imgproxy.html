@@ -7,7 +7,7 @@
 {{ $enlarge := "1" }}
 {{ $encoded_source_url := .filename | base64Encode }}
 {{ $extension := .ext | default "jpeg" }}
-{{ $quality := 75 }}
+{{ $quality := .quality | default 75 }}
 
 {{ $url := printf
   "%s/%s/rt:%s/w:%d/h:%d/g:%s/el:%s/q:%d/%s.%s"

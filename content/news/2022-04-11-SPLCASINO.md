@@ -131,7 +131,7 @@ But good-government experts say having partisan interests writing bill language 
 
 {{<featured/newsletter>}}
 
-{{<featured/hr>}}
+
 ### ‘The game plan’
 
 In Pennsylvania, lobbying around gambling has been fierce since the state legalized slot machines in 2004. Since then, lawmakers have vastly expanded the types of games people can pay to play — including table games, online gaming, fantasy sports, and sports betting — and where they can play them.
@@ -191,7 +191,7 @@ The bill that Tomlinson introduced at the end of the month contained near-identi
   bgcolor="#4d52b9"
 >}}
 
-{{<featured/hr>}}
+
 ### ‘Talking points’
 
 The next year, when the pandemic began, legislative activity focused on dealing with its fallout.
@@ -222,7 +222,7 @@ At the hearing, Tomlinson was clear: “To get any compromise is going to be ver
 
 The 2019-20 session ended without any changes to the law or resolution over how to best handle skill games.
 
-{{<featured/hr>}}
+
 ### ‘Tommy will adapt it to his needs’
 
 The debate over skill games has spilled into the current legislative session, which ends in November, although a deal again seems elusive.

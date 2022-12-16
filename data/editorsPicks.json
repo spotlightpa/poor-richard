@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2022-12-12-SPLGOPLOSSES.md",
-    "content/news/2022-12-13-SPLELECTION13.md"
+    "content/statecollege/2022-12-16-SPLPSURACE.md"
   ],
   "subfeatures": [
-    "content/news/2022-12-02-SPLHOUSE02.md",
-    "content/news/2022-12-09-SPLHOUSE09.md"
+    "content/statecollege/2022-12-15-SPLPSUSECRET.md"
   ],
   "topSlots": [
-    "content/news/2022-12-12-SPLGOPLOSSES.md",
-    "content/news/2022-12-07-SPLWOLFINT.md",
-    "content/news/2022-12-09-SPLELECTUD.md"
+    "content/news/2022-12-16-SPLWOLF15.md",
+    "content/news/2022-12-14-SPLMMJREFORM.md",
+    "content/news/2022-12-13-SPLELECTION13.md"
   ],
   "topper": []
 }

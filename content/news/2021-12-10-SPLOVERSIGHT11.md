@@ -16,7 +16,7 @@ published = 2021-12-10T14:28:29.514-05:00
 series = ["The Final Moments"]
 slug = "pennsylvania-state-police-use-of-force-investigations-independent"
 title = "Investigations of Pennsylvania State Police troopers who injure, kill should be independent, panel says"
-topics = ["Criminal Justice"]
+topics = ["Criminal Justice","Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

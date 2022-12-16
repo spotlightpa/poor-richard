@@ -16,7 +16,7 @@ published = 2022-04-20T13:23:34.719-04:00
 slug = "pennsylvania-primary-election-2022-republican-governor-debate-takeaways"
 suppress-date = false
 title = "Pa. primary election 2022: 5 takeaways from Spotlight PA’s Republican gubernatorial debate"
-topics = ["Elections"]
+topics = ["Elections","Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

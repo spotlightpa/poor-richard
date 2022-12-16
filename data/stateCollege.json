@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2022-12-08-SPLRURALHOUSING.md"
+    "content/statecollege/2022-12-16-SPLPSURACE.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-10-19-SPLCORONER.md"
+    "content/statecollege/2022-12-15-SPLPSUSECRET.md"
   ],
   "topSlots": [
+    "content/statecollege/2022-12-08-SPLRURALHOUSING.md",
     "content/statecollege/2022-12-06-SPLTTPLANE.md",
-    "content/statecollege/2022-11-22-SPLSCOVERSIGHT.md",
-    "content/statecollege/2022-11-14-SPLCOGBUDGET.md"
+    "content/statecollege/2022-11-22-SPLSCOVERSIGHT.md"
   ],
   "topper": []
 }

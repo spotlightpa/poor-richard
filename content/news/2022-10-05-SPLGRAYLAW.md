@@ -17,7 +17,7 @@ published = 2022-10-05T05:00:22-04:00
 slug = "pa-election-2022-mail-ballot-rules-act-77-lawsuits"
 suppress-date = false
 title = "Unresolved gray areas in Pa. mail voting law likely to spur fresh confusion, legal challenges"
-topics = ["Elections"]
+topics = ["Elections","Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

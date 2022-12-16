@@ -172,7 +172,7 @@ Keith Humphreys, an addiction researcher and professor at Stanford University Sc
 
 {{<featured/newsletter>}}
 
-{{<featured/hr>}}
+
 ### Limited oversight, potential consequences
 
 When Pennsylvania lawmakers legalized medical cannabis in 2016, they put safeguards in place for the messages patients receive. But those have significant limits.
@@ -197,7 +197,7 @@ Barton said the department does not have enforcement power over cannabis certifi
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20a%20cannabis%20company%20publishing%20%3Cb%3Emisleading%2C%20false%2C%20or%20dangerous%20statements%3C%2Fb%3E%20about%20medical%20marijuana%20and%20addiction%3F%20We%20want%20to%20hear%20from%20you."></div>
 
-{{<featured/hr>}}
+
 ### ‘False hope’
 
 Releaf Specialists described itself online as “an industry leader,” while Compassionate Certification Centers’ website promoted “PA’s Most Trusted Medical Marijuana Certification Providers.”
@@ -266,7 +266,7 @@ And she told Spotlight PA it’s important to distinguish between CBD, which is 
   bgcolor="#4d52b9"
 >}}
 
-{{<featured/hr>}}
+
 ### ‘A lot of optimism’ but little evidence
 
 When Pennsylvania added opioid use disorder as a qualifying condition for medical marijuana in 2018, the Wolf administration said it was the first state to take such an action.
