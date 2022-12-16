@@ -1,4 +1,4 @@
-w+++
++++
 aliases = ["/cannabisclaims"]
 arc-id = "2ZX45YXUCBHVVHE6D5PK2XQUIA"
 authors = ["Ed Mahon"]
