@@ -83,10 +83,9 @@
         <svg
           class="h-20 -order-1 mr-6 self-end"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 66 75"
+          viewBox="0 0 82 82"
         >
           <use href="#ticket-stub" />
-
         </svg>
         <p class="mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,7 +108,6 @@
           viewBox="0 0 66 75"
         >
           <use href="#envelope-with-letter" />
-
         </svg>
         <p class="mt-4">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -145,9 +143,7 @@
       </h2>
 
       <div class="supporters-list">
-        <ul
-          class=" columns-2 md:columns-3 column-gap-2 py-8 gap-10" 
-        >
+        <ul class=" columns-2 md:columns-3 column-gap-2 py-8 gap-10">
           {{ range sort site.Data.leaders.list "sort" "asc" }}
             <li>{{ .display }}</li>
           {{ end }}
