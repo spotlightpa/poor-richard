@@ -81,15 +81,12 @@
           Private <br />Events
         </h3>
         <svg
-          class="w-20 -order-1 mr-6 self-end"
+          class="h-20 -order-1 mr-6 self-end"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 82 82"
+          viewBox="0 0 66 75"
         >
-          <g fill="#000" fill-rule="evenodd">
-            <path
-              d="m0 54.917 6.77 6.77A9.575 9.575 0 1 1 20.312 75.23L27.084 82 65 44.083 37.917 17 0 54.917ZM41 13.667 68.333 41 82 27.333 75.167 20.5c-3.775 3.774-9.894 3.774-13.667 0-3.774-3.774-3.774-9.893 0-13.667L54.666 0 41 13.667Z"
-            />
-          </g>
+          <use href="#ticket-stub" />
+
         </svg>
         <p class="mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -111,14 +108,8 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 66 75"
         >
-          <g fill="#000" fill-rule="evenodd">
-            <path
-              d="m6 24-5 5.065L6 34zM0 72.874V73l20-20.499L0 32zM14.272 32h37.45c.626 0 1.252.625 1.252 1.25s-.626 1.25-1.253 1.25H14.272c-.626 0-1.252-.5-1.252-1.25S13.646 32 14.272 32Zm0-8.875h37.575c.626 0 1.252.625 1.252 1.25s-.626 1.25-1.252 1.25H14.272c-.626 0-1.252-.625-1.252-1.25s.626-1.25 1.252-1.25Zm0-8.875h37.575c.626 0 1.252.5 1.252 1.25s-.626 1.25-1.252 1.25H14.272c-.626 0-1.252-.5-1.252-1.25 0-.625.626-1.25 1.252-1.25Zm0-8.875h37.575c.626 0 1.252.625 1.252 1.25s-.626 1.25-1.252 1.25H14.272c-.626 0-1.252-.625-1.252-1.25s.626-1.25 1.252-1.25Zm28.306 38H23.541c-.626 0-1.252-.625-1.252-1.25s.5-1.25 1.252-1.25h19.037c.627 0 1.253.5 1.253 1.25 0 .625-.626 1.25-1.253 1.25ZM8.011 1.25v35.5l25.05 25 25.05-25V1.25C58.11.5 57.483 0 56.857 0H9.265c-.752 0-1.253.625-1.253 1.25h-.001Z"
-            />
-            <path
-              d="M33.937 64.376c-.25.25-.626.375-.876.375-.376 0-.626-.125-.877-.375l-9.77-9.75L2 75h62.122L43.707 54.625l-9.77 9.75ZM60.615 34.25 65.5 29.5l-4.885-4.875zM66 73.25V32.5L45.585 52.875z"
-            />
-          </g>
+          <use href="#envelope-with-letter" />
+
         </svg>
         <p class="mt-4">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -225,6 +216,8 @@
     "spinner-svg" "@fontawesome/solid/spinner.svg"
     "times-svg" "@fontawesome/solid/xmark.svg"
     "twitter-svg" "@fontawesome/brands/twitter.svg"
+    "email-svg" "/img/icons/envelope-with-letter.svg"
+    "ticket-svg" "/img/icons/ticket-stub.svg"
   }}
   {{ partial "header/svgs.html" $svgs }}
 {{ end }}
