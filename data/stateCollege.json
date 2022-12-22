@@ -1,8 +1,10 @@
 {
   "featuredStories": [
+    "content/statecollege/2022-12-22-SPLTIOGA3.md"
+  ],
+  "subfeatures": [
     "content/statecollege/2022-12-19-SPLTIOGA.md"
   ],
-  "subfeatures": [],
   "topSlots": [
     "content/statecollege/2022-12-16-SPLPSURACE.md",
     "content/statecollege/2022-12-15-SPLPSUSECRET.md",
