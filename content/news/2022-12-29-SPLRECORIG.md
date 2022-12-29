@@ -48,7 +48,7 @@ But Elizabeth Grossman, a senior regulatory counsel at Informing Democracy, a no
 
 “I think this is more about ‘what is this for,’” she said. “If the purpose is to check if there is an error, we don’t need it. This is an old bill. We have recounts when the margin is slim, and we have audits in Pennsylvania.”
 
-{{<picture src="external/dwtvacsgppmepz0w3xr5a9caj8.jpeg" description="The provision was championed by the newly elected Republican Gov. John Fisher as part of a package of election reform proposals Fisher had offered during his 1926 campaign. It had been a cause championed by his predecessor, Gov. Gifford Pinchot (pictured), also a Republican." caption="The provision was championed by the newly elected Republican Gov. John Fisher as part of a package of election reform proposals Fisher had offered during his 1926 campaign. It had been a cause championed by his predecessor, Gov. Gifford Pinchot (pictured), also a Republican." credit="">}} 
+{{<picture src="external/dwtvacsgppmepz0w3xr5a9caj8.jpeg" description="The provision was championed by the newly elected Republican Gov. John Fisher as part of a package of election reform proposals Fisher had offered during his 1926 campaign. It had been a cause championed by his predecessor, Gov. Gifford Pinchot (pictured), also a Republican." caption="The provision was championed by the newly elected Republican Gov. John Fisher as part of a package of election reform proposals Fisher had offered during his 1926 campaign. It had been a cause championed by his predecessor, Gov. Gifford Pinchot (pictured), also a Republican." credit="Library of Congress ">}} 
 
 ## Provision dates back to 1927
 
