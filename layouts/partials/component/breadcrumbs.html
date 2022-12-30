@@ -1,17 +1,11 @@
-{{ $parents := partialCached "helper/find-parents" . .RelPermalink }}
-{{ $breadcrumbs := where $parents "Kind" "!=" "page" }}
-{{ if len $breadcrumbs | lt 1 }}
-  <nav
-    class="breadcrumb has-succeeds-separator"
-    data-ga-category="breadcrumbs"
-    aria-label="breadcrumbs"
-  >
-    <ul>
-      {{ range $i, $page := $breadcrumbs }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
-{{ end }}
+<nav
+  class="breadcrumb has-succeeds-separator"
+  data-ga-category="breadcrumbs"
+  aria-label="breadcrumbs"
+>
+  <ul>
+    {{- range .Ancestors.Reverse }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
