@@ -5,13 +5,13 @@
 <article>
   {{ if .showDate }}
     <h3
-      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+      class="bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
     >
       {{ $params.published | default $params.kicker | default "News" }}
     </h3>
   {{ else }}
     <h3
-      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
+      class="bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
     >
       {{ $params.kicker | default "News" }}
     </h3>
@@ -32,10 +32,10 @@
   }}
   {{ partial "component/image-block.html" $imgOpts }}
 
-
-  <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
+  <div class="group mt-6">
+  <h2 class="text-lg font-semibold leading-snug text-hed">
     <a
-      class="has-text-grey-dark hover-underline"
+      class="group-hover:underline"
       href="{{ $params.link }}"
       data-ga-category="hed"
     >
@@ -44,12 +44,12 @@
   </h2>
   {{ if or $params.byline $params.blurb }}
     <h3
-      class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+      class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-byline"
     >
       {{ if $params.byline }}
         <a
           href="{{ $params.link }}"
-          class="has-text-grey hover-underline"
+          class="group-hover:underline"
           data-ga-category="byline"
         >
           by
@@ -58,12 +58,13 @@
       {{ else }}
         <a
           href="{{ $params.link }}"
-          class="has-text-grey hover-underline"
+          class="group-hover:underline"
           data-ga-category="blurb"
         >
           {{ $params.blurb }}
         </a>
       {{ end }}
     </h3>
+    </div>
   {{ end }}
 </article>
