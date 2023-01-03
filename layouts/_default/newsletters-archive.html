@@ -53,13 +53,13 @@
         {{ end }}
       </div>
     {{ end }}
-    <div class="column is-four-fifths mb-6" id="archives">
-      <nav class="tile is-ancestor is-vertical">
+    <div class="column is-four-fifths mb-6 p-2 font-serif" id="archives">
+      <nav class="mb-16 mx-auto max-w-screen-lg">
         {{ range $pages.GroupByDate "January 2006" }}
           <div class="tile is-parent">
-            <h2 class="title">{{ .Key }}</h2>
+            <h2 class=" text-3xl font-bold my-9">{{ .Key }}</h2>
           </div>
-          <div class="tile is-wrapped">
+          <div class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
             {{ range $page := .Pages }}
               <div class="tile is-parent is-4 has-margin-top-negative">
                 <div class="tile is-child">
