@@ -8,6 +8,10 @@
   {{ end }}
 {{ end }}
 
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
 {{ define "promo" }}
   <!-- noop -->
 {{ end }}
@@ -25,28 +29,25 @@
 
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
-  <section
-    class="section columns is-centered is-multiline"
-    data-ga-category="list"
-  >
+  <section class="bg-white px-4 pt-12 pb-2 md:pb-6" data-ga-category="list">
     {{ if not $p.HasPrev }}
-      <div class="column is-three-fifths">
-        <header class="mb-5">
+      <div class="mx-auto w-full max-w-screen-lg">
+        <header class="mb-5 max-w-prose mx-auto">
           <h1
-            class="title has-text-centered {{ $titleClass }} is-size-2-touch is-spaced"
+            class="text-center font-sans text-3xl mb-6 sm:text-4xl md:text-6xl font-bold leading-none tracking-wide {{ $titleClass }}"
           >
             {{ .Title }}
           </h1>
           <h2
-            class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
+            class="text-center font-sans text-2xl font-light mb-12 text-s-8 {{ $subheadClass }}"
           >
             {{ $subtitle }}
           </h2>
 
-          {{ partial "component/hero-image-block.html" . }}
+          {{ partial "tw/image-hero.html" . }}
         </header>
         {{ with .Content }}
-          <div class="content mb-6">
+          <div class="article-content max-w-prose mx-auto">
             {{ . }}
           </div>
         {{ end }}

@@ -6,6 +6,7 @@ blurb = "Every Friday, you’ll get a fresh, positive look at the incredible peo
 linktitle = "PA Local"
 modal-exclude = true
 layout = "newsletters-archive"
+image-size = "inline"
 
 [cascade]
 image = "2022/02/01gz-k3bg-4tet-0as8.png"
