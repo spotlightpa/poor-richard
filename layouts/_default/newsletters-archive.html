@@ -43,8 +43,9 @@
           >
             {{ $subtitle }}
           </h2>
-
-          {{ partial "tw/image-hero.html" . }}
+          <div class="max-w-prose m-auto">
+            {{ partial "tw/image-hero.html" . }}
+          </div>
         </header>
         {{ with .Content }}
           <div class="article-content max-w-prose mx-auto">

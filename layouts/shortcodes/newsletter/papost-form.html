@@ -10,7 +10,9 @@
     data-ga-category="newsletters:papost-full"
   >
     {{ partial "newsletter/papost-hidden.html" . }}
-    <h2 class="title is-3">Sign Up for PA Post</h2>
+    <h2 class="title is-3 font-sans text-3xl mt-7 mb-6 font-bold">
+      Sign Up for PA Post
+    </h2>
     <div class="field">
       <label class="label font-sans font-black" for="{{ $idFname }}">First Name</label>
     </div>
@@ -57,7 +59,7 @@
         <span
           class="icon is-right validator-icon w-4 h-4 absolute  top-[10px] right-2"
         >
-          <svg class="fill-green w-4 h-4" viewBox="0 0 1 1">
+          <svg class="fill-green w-4 h-4 hidden" viewBox="0 0 1 1">
             <use xlink:href="#check-svg"></use>
           </svg>
         </span>
