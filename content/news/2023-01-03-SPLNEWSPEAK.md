@@ -16,7 +16,7 @@ published = 2023-01-03T14:35:00-05:00
 slug = "pa-midterm-election-2022-house-majority-democrats-speaker-election"
 suppress-date = false
 title = "Democrats and a handful of Republicans picked the Pennsylvania House’s new speaker"
-title-tag = "PA House picks Democrat as new speaker"
+title-tag = "Pennsylvania House picks new speaker"
 topics = ["The Capitol"]
 +++
 
