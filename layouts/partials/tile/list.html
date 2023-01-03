@@ -5,13 +5,13 @@
 <article>
   {{ if .showDate }}
     <h3
-      class="bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+      class="mb-1 bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
     >
       {{ $params.published | default $params.kicker | default "News" }}
     </h3>
   {{ else }}
     <h3
-      class="bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+      class="mb-1 bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
     >
       {{ $params.kicker | default "News" }}
     </h3>
