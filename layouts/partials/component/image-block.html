@@ -51,7 +51,7 @@
   {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 
-  <figure class="mt-1 {{ .figClass }}" data-ga-category="thumb">
+  <figure class="{{ .figClass }}" data-ga-category="thumb">
     {{- if .link -}}
       <a
         class="image {{ $imgClass }} has-background-grey-lighter"
