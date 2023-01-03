@@ -12,12 +12,12 @@
     {{ partial "newsletter/investigator-hidden.html" . }}
     <h2 class="title is-3">Sign Up for The Investigator</h2>
     <div class="field">
-      <label class="label" for="{{ $idFname }}">First Name</label>
+      <label class="label font-sans font-black" for="{{ $idFname }}">First Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
-          id="{{ $idFname }}"
+          class="input border font-sans w-full border-s-4 rounded p-1"
           class="input"
           type="text"
           name="FNAME"
@@ -26,36 +26,38 @@
       </p>
     </div>
     <div class="field">
-      <label class="label" for="{{ $idLname }}">Last Name</label>
+      <label class="label font-sans font-black" for="{{ $idLname }}">Last Name</label>
     </div>
     <div class="field">
       <p class="control is-expanded">
         <input
           id="{{ $idLname }}"
-          class="input"
+          class="input border font-sans w-full border-s-4 rounded p-1"
           type="text"
           name="LNAME"
           required
         />
       </p>
     </div>
-    <div class="field">
-      <label class="label" for="{{ $idEmail }}">Email Address</label>
-      <p class="control is-expanded has-icons-left has-icons-right">
+    <div class="field mb-3">
+      <label class="label font-sans font-black" for="{{ $idEmail }}">Email Address</label>
+      <p class="control is-expanded has-icons-left has-icons-right relative">
         <input
           id="{{ $idEmail }}"
-          class="input"
+          class="input border font-sans w-full border-s-4 rounded px-8 py-1"
           type="email"
           name="EMAIL"
           required
         />
-        <span class="icon is-left">
-          <svg viewBox="0 0 1 1">
+        <span class="icon is-left w-4 h-4 absolute top-[10px] left-2">
+          <svg class="fill-s-4 w-4 h-4" viewBox="0 0 1 1">
             <use xlink:href="#email-svg"></use>
           </svg>
         </span>
-        <span class="icon is-right validator-icon">
-          <svg viewBox="0 0 1 1">
+        <span
+          class="icon is-right validator-icon w-4 h-4 absolute  top-[10px] right-2"
+        >
+          <svg class="fill-green w-4 h-4" viewBox="0 0 1 1">
             <use xlink:href="#check-svg"></use>
           </svg>
         </span>
@@ -66,7 +68,7 @@
       <div class="control">
         <button
           type="submit"
-          class="button is-large is-danger has-text-weight-semibold"
+          class="button is-large is-danger has-text-weight-semibold font-sans font-bold text-2xl bg-red rounded text-s-0 px-4 py-3"
         >
           Subscribe
         </button>
