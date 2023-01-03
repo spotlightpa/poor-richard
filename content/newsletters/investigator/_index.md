@@ -1,6 +1,6 @@
 +++
 image = "2021/06/01gc-4k5c-twja-965v.jpeg"
-image-size = "hidden"
+image-size = "inline"
 published = 2020-09-03T01:14:40.334Z
 title = "Sign up for The Investigator"
 description = "Sign up for The Investigator, a free weekly newsletter from Spotlight PA"

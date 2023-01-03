@@ -1,6 +1,6 @@
 +++
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-image-size = "hidden"
+image-size = "inline"
 published = 2020-09-03T01:15:52.230Z
 title = "Sign up for PA Post"
 description = "Sign up for PA Post, Spotlight PA's free daily newsletter"

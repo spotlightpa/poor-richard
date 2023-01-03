@@ -1,6 +1,6 @@
 +++
 image = "2022/06/01hb-4958-4rxz-4t0q.png"
-image-size = "letterbox"
+image-size = "inline"
 title = "Sign up for Talk of the Town"
 description = "Top news and notes every Thursday for North-Central PA."
 blurb = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
