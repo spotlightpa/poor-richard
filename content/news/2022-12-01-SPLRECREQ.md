@@ -26,7 +26,7 @@ Recount petitions, claiming without evidence that fraud occurred during Pennsylv
 
 An obscure section of state law allows such petitions to be easily filed, and right-wing groups appear to be exploiting that provision to an unprecedented degree this year, gumming up the works.
 
-According to a spokesperson for the state’s court system, 147 petitions were filed in 41 counties as of Thursday morning.
+According to a spokesperson for the state’s court system, 147 petitions were filed in 27 counties as of Thursday morning.
 
 The requests reviewed by Votebeat and Spotlight PA primarily target the races for governor and U.S. Senate, which were won by Democrats Josh Shapiro and John Fetterman.
 
@@ -45,7 +45,7 @@ Jim O’Malley, deputy director of communications for Bucks County, said that th
 
 At least 56 of Pennsylvania’s 67 counties — including Chester, <a href="https://triblive.com/local/westmoreland/westmoreland-election-results-certified-hearing-tuesday-for-challenges/">Allegheny, and Westmoreland</a>, which received recount petitions — <a href="https://www.politicspa.com/these-counties-have-certified-their-votes/115664/">had certified their results</a> as of Wednesday. Columbia County plans to certify on Monday.
 
-The petitions appear to have a cascading effect on the Pennsylvania Department of State, which needs to move forward with its statewide certification. On Wednesday, Acting Secretary of State Leigh Chapman was scheduled to be part of a panel on threats to elections in Washington, D.C., but was “held back in Pennsylvania due to the certification process,” organizers said. 
+The petitions appear to have a cascading effect on the Pennsylvania Department of State, which needs to move forward with its statewide certification. On Wednesday, Acting Secretary of State Leigh Chapman was scheduled to be part of a panel on threats to elections in Washington, D.C., but was “held back in Pennsylvania due to the certification process,” organizers said.
 
 A spokesperson for her office said Thursday the absence was due to a “scheduling conflict.”
 
@@ -84,5 +84,7 @@ Audit the Vote PA <a href="https://lancasteronline.com/news/politics/court-strik
 In a statement Wednesday, Aument said the races targeted by recounts were won by large margins, and no one has presented evidence showing fraud or procedural issues. He added that unfounded efforts only undermine meaningful attempts at election integrity reform.
 
 “If the law continues to be abused this way, I think we need a legislative change to safeguard taxpayer dollars and ensure election workers aren’t wasting their time administering hand recounts of elections for which there is no evidence that any malfeasance occurred,” he said. “I think we need some kind of evidentiary standard or burden of proof before unfounded accusations can be made and taxpayer dollars can be used to order costly recounts.”
+
+<i><b>Correction, Dec. 30, 2022: </b></i><i>This article originally misstated the number of counties where recount petitions were filed.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
