@@ -114,7 +114,7 @@ Separate from the budget, legislative Republicans this week <a href="https://www
 
 Another election priority, Argall said, was a bill authored by state Sen. Doug Mastriano, the Republican gubernatorial nominee, that would give poll watchers more access to vote casting and counting and allow them to serve outside of their home county.
 
-Former President Donald Trump<a href="https://www.donaldjtrump.com/news/news-ethg3vxg7x2196"> urged Republicans to make the bill part of the budget negotiations.</a>
+Former President Donald Trump<a href="https://web.archive.org/web/20221227071513/https://www.donaldjtrump.com/news/news-ethg3vxg7x2196"> urged Republicans to make the bill part of the budget negotiations.</a>
 
 Wolf <a href="https://www.governor.pa.gov/wp-content/uploads/2022/07/20220708-Veto-Message-SB573.pdf">vetoed</a> Mastriano’s bill Friday, saying it “undermines the integrity of our election process and encourages voter intimidation.”
 
