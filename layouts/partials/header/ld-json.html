@@ -86,7 +86,7 @@
 
 <!-- -->
 
-{{ $parents := partialCached "helper/find-parents" . .RelPermalink }}
+{{ $parents := .Ancestors.Reverse }}
 
 <script type="application/ld+json">
 {
