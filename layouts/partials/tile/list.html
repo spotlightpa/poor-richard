@@ -32,39 +32,40 @@
   }}
   {{ partial "component/image-block.html" $imgOpts }}
 
+
   <div class="group mt-6">
-  <h2 class="text-lg font-semibold leading-snug text-hed">
-    <a
-      class="group-hover:underline"
-      href="{{ $params.link }}"
-      data-ga-category="hed"
-    >
-      {{ $page.LinkTitle }}
-    </a>
-  </h2>
-  {{ if or $params.byline $params.blurb }}
-    <h3
-      class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-byline"
-    >
-      {{ if $params.byline }}
-        <a
-          href="{{ $params.link }}"
-          class="group-hover:underline"
-          data-ga-category="byline"
-        >
-          by
-          {{ $params.byline }}
-        </a>
-      {{ else }}
-        <a
-          href="{{ $params.link }}"
-          class="group-hover:underline"
-          data-ga-category="blurb"
-        >
-          {{ $params.blurb }}
-        </a>
-      {{ end }}
-    </h3>
-    </div>
-  {{ end }}
+    <h2 class="text-lg font-semibold leading-snug text-hed">
+      <a
+        class="group-hover:underline"
+        href="{{ $params.link }}"
+        data-ga-category="hed"
+      >
+        {{ $page.LinkTitle }}
+      </a>
+    </h2>
+    {{ if or $params.byline $params.blurb }}
+      <h3
+        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-byline"
+      >
+        {{ if $params.byline }}
+          <a
+            href="{{ $params.link }}"
+            class="group-hover:underline"
+            data-ga-category="byline"
+          >
+            by
+            {{ $params.byline }}
+          </a>
+        {{ else }}
+          <a
+            href="{{ $params.link }}"
+            class="group-hover:underline"
+            data-ga-category="blurb"
+          >
+            {{ $params.blurb }}
+          </a>
+        {{ end }}
+      </h3>
+    {{ end }}
+  </div>
 </article>
