@@ -51,7 +51,7 @@
   {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
 
-  <figure class="{{ .figClass }}" data-ga-category="thumb">
+  <figure class="mt-1 {{ .figClass }}" data-ga-category="thumb">
     {{- if .link -}}
       <a
         class="image {{ $imgClass }} has-background-grey-lighter"
@@ -80,7 +80,7 @@
     {{- end -}}
     {{ with $credit }}
       <figcaption
-        class="is-clearfix is-size-7 is-uppercase has-text-grey-light"
+        class="is-clearfix is-size-7 is-uppercase has-text-grey-light mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit"
       >
         <span class="mt-2 is-single-spaced is-pulled-right">
           {{ $credit }}
