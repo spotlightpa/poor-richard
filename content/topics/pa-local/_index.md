@@ -1,6 +1,7 @@
 +++
 image = "2022/02/01h0-cwrk-fbjj-n32w.jpeg"
 image-credit = "For Spotlight PA"
+image-size = "hidden"
 title = "PA Local"
 kicker = "PA Local"
 description = "Sign up for PA Local, a free weekly newsletter from Spotlight PA"
