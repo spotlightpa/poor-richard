@@ -22,11 +22,13 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Pennsylvania House Democrats joined by a handful of Republicans tapped a member of their own party to serve as the next speaker of the Pennsylvania House — but not the one anyone expected.
+HARRISBURG — Pennsylvania House Democrats and a handful of Republicans joined together to pick the next speaker of the Pennsylvania House — but not the one anyone expected.
 
 State Rep. Mark Rozzi of Berks County, a survivor of childhood sexual abuse who has pushed for the creation of a civil window to bring lawsuits against abusers, was named as the next presiding officer with 115 votes.
 
-The position is a critically important one, with the power to moderate floor debate, call up bills for votes, and name the chamber’s committee chairs.
+In remarks made after his selection, Rozzi announced he would no longer caucus with the Democrats and would become independent.
+
+The position of speaker is a critically important one, with the power to moderate floor debate, call up bills for votes, and name the chamber’s committee chairs.
 
 Until Tuesday, and for much of that day, Democrats had publicly maintained that Rep. Joanna McClinton (D., Philadelphia), who had served as caucus leader, was their only pick for the role. She would have been the first woman to hold the gavel.
 
