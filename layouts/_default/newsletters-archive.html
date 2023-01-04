@@ -76,9 +76,21 @@
       </nav>
     </div>
     <div class="column is-three-fifths">
-      {{ partial "component/paginator-level.html" $p }}
+      {{ partial "tw/paginator-level.html" $p }}
     </div>
   </section>
+{{ end }}
+
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
 {{ end }}
 
 {{ define "extra-footer" }}
