@@ -6,7 +6,8 @@ description = "Top news and notes every Thursday for North-Central PA."
 blurb = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
 linktitle = "Talk of the Town"
 modal-exclude = true
-layout = "newsletters-archive"
+layout = "news"
+sort-by = "month"
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"

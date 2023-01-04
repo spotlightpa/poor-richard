@@ -7,7 +7,8 @@ description = "Sign up for The Investigator, a free weekly newsletter from Spotl
 blurb = "Every Thursday, you’ll get exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol, and a roundup of the best accountability journalism from across Pennsylvania."
 linktitle = "The Investigator"
 modal-exclude = true
-layout = "newsletters-archive"
+layout = "news"
+sort-by = "month"
 
 [cascade]
 image = "2021/06/01gc-4k5c-twja-965v.jpeg"

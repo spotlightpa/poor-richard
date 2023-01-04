@@ -5,8 +5,8 @@ description = "Sign up for PA Local, a free weekly newsletter from Spotlight PA"
 blurb = "Every Friday, you’ll get a fresh, positive look at the incredible people, beautiful places, and delicious food Pennsylvania has to offer. Plus events, guides, best-of, and more."
 linktitle = "PA Local"
 modal-exclude = true
-layout = "newsletters-archive"
-image-size = "inline"
+layout = "news"
+sort-by = "month"
 
 [cascade]
 image = "2022/02/01gz-k3bg-4tet-0as8.png"

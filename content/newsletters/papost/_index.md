@@ -7,7 +7,8 @@ description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
 blurb = "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, helpful tips, and some fun, too. It's like your morning bowl of oats, but with marshmallows."
 linktitle = "PA Post"
 modal-exclude = true
-layout = "newsletters-archive"
+layout = "news"
+sort-by = "month"
 
 [cascade]
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
