@@ -25,7 +25,7 @@ HARRISBURG — The Pennsylvania House picked state Rep. Mark Rozzi to be the cha
 
 Here are the basics about the Berks County lawmaker, how he became speaker, and more.
 
-<i>Last updated: Jan. 4, 12:30 p.m.</i>
+<i>Last updated: Jan. 4, 2 p.m.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?flag_text=ASK%20SPOTLIGHT%20PA&tip_text=Do%20you%20have%20questions%20about%20Mark%20Rozzi%20or%20how%20he%20became%20speaker%20of%20the%20Pennsylvania%20House%3F%20Ask%20us%20below."></div>
 
@@ -100,7 +100,9 @@ Democrats including Appropriations Chair Matt Bradford said Rozzi privately assu
 
 Republican leaders, meanwhile, say Rozzi “<a href="https://www.pahousegop.com/News/31708/Latest-News/Republican-Leaders-Congratulate-Rep-Mark-Rozzi-on-Being-Elected-Speaker-of-the-House">pledged to become an independent</a>,” which would give the chamber a 101-101-1 split when at full complement.
 
-Rozzi declined to say anything about his registration Tuesday. He did state that he will not caucus with either party. 
+“We spoke to Speaker Rozzi yesterday after session and we continue to believe what he committed to publicly in his address and what he promised to our leaders privately about fully becoming an independent has not changed,” state Rep. Bryan Cutler (R., Lancaster) said. “We continue to believe having a fully independent speaker is the best path forward given the realities of this session.”
+
+Rozzi declined to say anything about his registration Tuesday. He did state that he will not caucus with either party.
 
 ## Who is Joanna McClinton?
 
@@ -108,7 +110,7 @@ Joanna McClinton is a state representative from Philadelphia. Until Tuesday afte
 
 McClinton served as minority leader for the caucus last session and she will continue to lead them this year. After his nomination, McClinton threw her support behind Rozzi on Tuesday and said her caucus would do the same.
 
-She declined to answer questions about whether she would support Rozzi serving as speaker for the entire two-year session. 
+She declined to answer questions about whether she would support Rozzi serving as speaker for the entire two-year session.
 
 ## Does this change when the special elections will be held?
 
