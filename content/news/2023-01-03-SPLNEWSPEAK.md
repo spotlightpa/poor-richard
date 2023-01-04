@@ -49,7 +49,7 @@ Gregory later told Spotlight PA he and Rozzi had discussed the option of Rozzi r
 
 “They were not aware,” Gregory said. “I made a suggestion to them. ‘Go to Mark Rozzi, I think you might be able to do it.’ And they did.”
 
-State Rep. Bryan Cutler (R., Lancaster), who served as speaker last session and will lead the GOP caucus moving forward, said this year’s narrowly divided state House body was always going to require compromise in order to get anything passed. Now, with Rozzi declaring himself independent, Cutler said that’s even more necessary.
+State Rep. Bryan Cutler (R., Lancaster), who served as speaker last session and will lead the GOP caucus moving forward, said this year’s narrowly divided state House body was always going to require compromise in order to get anything passed.
 
 “Even at a full complement, we’re going to be at 101, 101, and one,” he said. “It’s going to necessitate all of us working together.”
 
