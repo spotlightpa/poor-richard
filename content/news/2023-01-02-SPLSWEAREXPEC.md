@@ -22,6 +22,8 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update: </b></i><a href="https://www.spotlightpa.org/news/2023/01/pa-midterm-election-2022-house-majority-democrats-speaker-election/" target="_blank"><i><b>Democrats and a handful of Republicans have picked Mark Rozzi to be the Pennsylvania House’s new speaker</b></i></a>
+
 HARRISBURG — Lawmakers in Pennsylvania’s state House are scheduled to elect a new speaker Tuesday. But unlike in most legislative sessions, it’s not clear who it will be, what party they’ll be from, or even how long they’ll serve.
 
 Also up in the air is whether a normally ceremonial day of swearings-in and celebrations will be overshadowed by political maneuvering as Democrats and Republicans vie for control in the closely divided chamber.
