@@ -86,7 +86,7 @@
 
 <!-- -->
 
-{{ $parents := .Ancestors.Reverse }}
+{{ $parents := .Ancestors.Reverse | append .Page }}
 
 <script type="application/ld+json">
 {
