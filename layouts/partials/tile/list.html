@@ -17,20 +17,22 @@
     </h3>
   {{ end }}
 
-  {{ $name := $page.Param "image" }}
-  {{ $credit := $page.Param "image-credit" }}
-  {{ $description := $page.Param "image-description" }}
+  {{ $name := .Page.Param "image" }}
+  {{ $credit := .Page.Param "image-credit" }}
+  {{ $description := .Page.Param "image-description" }}
   {{ $imgOpts := dict
     "filename" $name
     "credit" $credit
     "description" $description
-    "link" $params.link
+    "widths" (slice 128 256 384 512 1280)
     "widthRatio" 16
     "heightRatio" 9
-    "sizeHint" "25vw"
-    "gravity" ($page.Param "image-gravity")
+    "sizeHint" "(min-width: 850px) 627px, 100vw"
+    "rounded" true
+    "link" .Page.RelPermalink
+    "gravity" (.Page.Param "image-gravity")
   }}
-  {{ partial "component/image-block.html" $imgOpts }}
+  {{ partial "tw/image-block.html" $imgOpts }}
 
 
   <div class="group mt-6">
