@@ -31,7 +31,7 @@ Going into Tuesday, the chamber’s razor-thin margin led to intense clashes bet
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-In remarks made after his selection, Rozzi, who was elected as a Democrat, announced he would no longer caucus with the party and would become independent.
+In remarks made after his selection, Rozzi, who was elected as a Democrat, announced he would no longer caucus with the party and would act as an independent. He did not clarify whether he would change his registration. 
 
 “The commonwealth that is home to Independence Hall will now be home to this commonwealth’s first independent speaker of the House,” Rozzi said on the floor Tuesday. “I pledge my allegiance and my loyalty to no interest in this building, to no interest in our politics. I pledge my loyalty to the people of the commonwealth.”
 
