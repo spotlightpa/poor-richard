@@ -36,7 +36,7 @@ In an interview late Wednesday with Votebeat and Spotlight PA, Schmidt said his 
 
 Schmidt also stressed the need to push back on election misinformation, something he highlighted in response to a question about how the Department of State could support local electionsdirectors, who have been leaving the job in droves.
 
-“A great benefit will be that I’ve run elections on the ground for the past 20 years, really knowing what counties need to be successful,” he said. “A component of that, and something I really valued, was monitoring election lies seeking to undermine confidence in the results in Philly, which were broadcast well in advance. It is important not to ignore those lies because they cause harm.”
+“A great benefit will be that I’ve run elections on the ground for the past [10] years, really knowing what counties need to be successful,” he said. “A component of that, and something I really valued, was monitoring election lies seeking to undermine confidence in the results in Philly, which were broadcast well in advance. It is important not to ignore those lies because they cause harm.”
 
 The selection marks Shapiro’s first cabinet-level appointment, fulfilling a <a href="https://www.inquirer.com/politics/election/pennsylvania-voting-laws-2022-governor-election-20220125.html">campaign promise</a>, and is an unusual nomination across the partisan divide. Schmidt <a href="https://www.penncapital-star.com/blog/state-cabinet-secretaries-explained-how-are-they-appointed-and-what-does-the-process-look-like/">must still be confirmed</a> by the state Senate.
 
