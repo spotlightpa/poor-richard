@@ -1,6 +1,6 @@
 +++
 arc-id = "NNZRJ2WQPNF3HPRNIWSJTPKNM4"
-blurb = "Join us Jan. 26 to learn about Pa.’s local governments, and how their accountability — or lack thereof — impacts residents and governance."
+blurb = "Join us Jan. 26 to learn about Pa.’s local governments, and how their oversight — or lack thereof — impacts residents and governance."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA's panelists will discuss Pennsylvania's patchwork system of local governments."
 event-date = 2023-01-26T18:00:00-05:00
