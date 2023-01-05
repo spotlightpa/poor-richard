@@ -22,12 +22,12 @@
 {{ define "main" }}
 
   <section class="font-raleway">
-    <header class="bg-black text-white ">
+    <header class="bg-black text-white py-14 px-3">
       <div
         class="mx-auto max-w-[1248px] md:grid md:grid-cols-12 gap-y-3 gap-x-5 grid-rows-[auto_1fr]"
       >
         <h1
-          class="text-2xl font-black col-start-1 col-span-3 row-start-1 row-span-1"
+          class="text-2xl font-black col-start-1 col-span-3 row-start-1 row-span-1 md:max-w-[276px]"
         >
           {{ .Title }}
         </h1>
@@ -35,25 +35,34 @@
           {{ .Content }}
 
         </div>
-        <div class="col-start-5 col-span-8 row-start-1 row-span-2">
+        <div
+          class="bg-s-3 col-start-5 col-span-8 row-start-1 row-span-2 max-h-[440px] flex flex-row items-center justify-stretch overflow-hidden"
+        >
           {{ partial "tw/image-hero.html" . }}
         </div>
       </div>
     </header>
 
-    {{ range $i, $blocks := .Params.blocks }}
-      {{ $id := urlize .title }}
-      <div
-        id="{{ $id }}"
-        x-data
-        x-intersect.half="$dispatch('intersect:about', $el.id)"
-        class="lg:scroll-mt-20"
-        data-ga-category="blocks"
-      >
-        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
-      </div>
-    {{ end }}
+    <div class="bg-s-2 mt-14 md:mt-24">
+      {{ .Page.RenderString (.Param "form") }}
+    </div>
 
+    <div class="bg-white" data-ga-category="text">
+      <article
+        class="article-content mx-auto md:grid max-w-[1248px] md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5 py-24 md:grid-cols-12"
+      >
+        {{ range $i, $blocks := .Params.blocks }}
+          {{ $id := urlize .title }}
+          {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+        {{ end }}
+        <aside
+          class="md:row-start-1 md:row-span-2 md:col-span-3 md:col-start-10"
+        >
+          {{ .Page.RenderString (.Param "credits") }}
+
+        </aside>
+      </article>
+    </div>
   </section>
 {{ end }}
 
