@@ -10,9 +10,13 @@
     data-ga-category="newsletters:palocal-full"
   >
     {{ partial "newsletter/palocal-hidden.html" . }}
-    <h2 class="title is-3 font-sans text-3xl mt-7 mb-6 font-bold">Sign Up for PA Local</h2>
+    <h2 class="title is-3 font-sans text-3xl mt-7 mb-6 font-bold">
+      Sign Up for PA Local
+    </h2>
     <div class="field">
-      <label class="label font-sans font-black" for="{{ $idFname }}">First Name</label>
+      <label class="label font-sans font-black" for="{{ $idFname }}"
+        >First Name</label
+      >
     </div>
     <div class="field mb-3">
       <p class="control is-expanded">
@@ -26,7 +30,9 @@
       </p>
     </div>
     <div class="field">
-      <label class="label font-sans font-black" for="{{ $idLname }}">Last Name</label>
+      <label class="label font-sans font-black" for="{{ $idLname }}"
+        >Last Name</label
+      >
     </div>
     <div class="field mb-3">
       <p class="control is-expanded">
@@ -40,7 +46,9 @@
       </p>
     </div>
     <div class="field mb-3">
-      <label class="label font-sans font-black" for="{{ $idEmail }}">Email Address</label>
+      <label class="label font-sans font-black" for="{{ $idEmail }}"
+        >Email Address</label
+      >
       <p class="control is-expanded has-icons-left has-icons-right relative">
         <input
           id="{{ $idEmail }}"
@@ -54,8 +62,10 @@
             <use xlink:href="#email-svg"></use>
           </svg>
         </span>
-        <span class="icon is-right validator-icon w-4 h-4 absolute  top-[10px] right-2">
-          <svg class="fill-green w-4 h-4" viewBox="0 0 1 1">
+        <span
+          class="icon is-right validator-icon w-4 h-4 absolute  top-[10px] right-2"
+        >
+          <svg class="fill-green w-4 h-4 hidden" viewBox="0 0 1 1">
             <use xlink:href="#check-svg"></use>
           </svg>
         </span>
@@ -66,7 +76,7 @@
       <div class="control">
         <button
           type="submit"
-          class="button is-large is-danger has-text-weight-semibold font-sans font-bold text-2xl bg-red rounded text-s-0 px-4 py-3"
+          class="button is-large is-danger has-text-weight-semibold font-sans font-bold text-2xl bg-red hover:bg-red-8 rounded text-s-0 px-4 py-3"
         >
           Subscribe
         </button>
