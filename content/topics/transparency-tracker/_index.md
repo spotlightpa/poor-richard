@@ -11,7 +11,6 @@ description = "The latest reporting on the inner workings of Penn State Universi
 subhed = "The latest reporting on the inner workings of Penn State University, one of the most influential institutions in Pennsylvania, by Spotlight PA's regional bureau in State College."
 title-tag = "Penn State Transparency Tracker"
 linktitle = "Penn State Transparency Tracker from Spotlight PA"
-layout = "transparency-tracker"
 
 
 [[blocks]]
