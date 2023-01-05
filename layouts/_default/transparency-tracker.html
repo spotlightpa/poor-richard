@@ -16,56 +16,45 @@
         {{ partialCached "tw/banner.html" . }}
       {{ end }}
     {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
   </header>
 {{ end }}
 
 {{ define "main" }}
+
   <section class="font-raleway">
-      <header class="bg-black text-white ">
-        <div
-        class="mx-auto max-w-[1248px] grid md:grid-cols-12 gap-y-3 gap-x-5 grid-rows-[auto_1fr]"
+    <header class="bg-black text-white ">
+      <div
+        class="mx-auto max-w-[1248px] md:grid md:grid-cols-12 gap-y-3 gap-x-5 grid-rows-[auto_1fr]"
       >
-        <h1 class="text-2xl font-black col-start-1 col-span-3 row-start-1 row-span-1">
+        <h1
+          class="text-2xl font-black col-start-1 col-span-3 row-start-1 row-span-1"
+        >
           {{ .Title }}
         </h1>
-        <div
-          class=" text-lg font-medium col-start-1 col-span-3 row-start-2"
-        >
+        <div class=" text-lg font-medium col-start-1 col-span-3 row-start-2">
           {{ .Content }}
 
         </div>
-        <div
-          class="col-start-5 col-span-8 row-start-1 row-span-2"
-        >
+        <div class="col-start-5 col-span-8 row-start-1 row-span-2">
           {{ partial "tw/image-hero.html" . }}
         </div>
-        </div>
-      </header>
+      </div>
+    </header>
 
+    {{ range $i, $blocks := .Params.blocks }}
+      {{ $id := urlize .title }}
+      <div
+        id="{{ $id }}"
+        x-data
+        x-intersect.half="$dispatch('intersect:about', $el.id)"
+        class="lg:scroll-mt-20"
+        data-ga-category="blocks"
+      >
+        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+      </div>
+    {{ end }}
 
-  {{ range $i, $blocks := .Params.blocks }}
-    {{ $id := urlize .title }}
-    <div
-      id="{{ $id }}"
-      x-data
-      x-intersect.half="$dispatch('intersect:about', $el.id)"
-      class="lg:scroll-mt-20"
-      data-ga-category="blocks"
-    >
-      {{ partial "blocks/block" (dict "Page" $ "block" .) }}
-    </div>
-  {{ end }}
-
-
-   </section>
+  </section>
 {{ end }}
 
 {{ define "before-footer" }}

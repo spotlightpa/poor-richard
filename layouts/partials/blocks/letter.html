@@ -1,22 +1,17 @@
 {{ with .block }}
-  <section
-    class="bg-white"
-    data-ga-category="text"
-  >
-    <article class="article-content py-24 mx-auto max-w-[1248px] grid md:grid-cols-12 gap-y-3 gap-x-5 grid-rows-[auto_1fr]">
-        <h2
-          class="col-start-3 col-span-6 row-start-1 row-span-1"
-        >
-          {{ .title }}
-        </h2>
-        <div class="text-black col-start-3 col-span-6 row-star2-1 row-span-1  article-content">
-          {{ $.Page.RenderString .copy }}
-        </div>
-      </div>
-      <aside
-        class=""
+  <section class="bg-white" data-ga-category="text">
+    <article
+      class="article-content mx-auto grid max-w-[1248px] grid-rows-[auto_1fr] gap-y-3 gap-x-5 py-24 md:grid-cols-12"
+    >
+      <h2 class="col-span-6 col-start-3 row-span-1 row-start-1">
+        {{ .title }}
+      </h2>
+      <div
+        class="row-star2-1 article-content col-span-6 col-start-3 row-span-1  text-black"
       >
-      </aside>
+        {{ $.Page.RenderString .copy }}
+      </div>
+      <aside class=""></aside>
     </article>
   </section>
 {{ end }}
