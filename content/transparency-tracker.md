@@ -8,10 +8,24 @@ layout = "transparency-tracker"
 image = "2022/12/01hs-1wgp-dhzx-qrgw.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-gravity = "no"
-
+credits = """
+{{<featured/credit-long
+    hed="Meet Spotlight PA’s Penn State Investigative Reporter"
+    name="Wyatt Massey"
+    role="Capitol Reporter"
+    email="wmassey@spotlightpa.org"
+    bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
+>}}
+"""
+form ="""
+{{<featured/promo-tips-form
+  hed="Tips"
+  dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at wmassey@spotlightpa.org, or one of the methods described below."
+>}}
+"""
 [[blocks]]
 title = "Why This Project Matters"
-layout = "letter"
+layout = "supplemental"
 copy="""
 Unlike most public universities, Penn State is largely exempt from open records laws despite receiving taxpayer money.
 
@@ -33,6 +47,7 @@ It’s important you know that we promise confidentiality if you share documents
 
 The best way to start is with a simple conversation, even if it’s off the record (meaning it’s not for publication). I look forward to hearing from you.
 """
+author = "Wyatt Massey"
 +++
 
 The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.
