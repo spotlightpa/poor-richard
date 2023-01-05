@@ -5,69 +5,65 @@
 <article>
   {{ if .showDate }}
     <h3
-      class="mb-1 bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
     >
       {{ $params.published | default $params.kicker | default "News" }}
     </h3>
   {{ else }}
     <h3
-      class="mb-1 bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+      class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
     >
       {{ $params.kicker | default "News" }}
     </h3>
   {{ end }}
 
-  {{ $name := .Page.Param "image" }}
-  {{ $credit := .Page.Param "image-credit" }}
-  {{ $description := .Page.Param "image-description" }}
+  {{ $name := $page.Param "image" }}
+  {{ $credit := $page.Param "image-credit" }}
+  {{ $description := $page.Param "image-description" }}
   {{ $imgOpts := dict
     "filename" $name
     "credit" $credit
     "description" $description
-    "widths" (slice 128 256 384 512 1280)
+    "link" $params.link
     "widthRatio" 16
     "heightRatio" 9
-    "sizeHint" "(min-width: 850px) 627px, 100vw"
-    "rounded" true
-    "link" .Page.RelPermalink
-    "gravity" (.Page.Param "image-gravity")
+    "sizeHint" "25vw"
+    "gravity" ($page.Param "image-gravity")
   }}
-  {{ partial "tw/image-block.html" $imgOpts }}
+  {{ partial "component/image-block.html" $imgOpts }}
 
 
-  <div class="group mt-6">
-    <h2 class="text-lg font-semibold leading-snug text-hed">
-      <a
-        class="group-hover:underline"
-        href="{{ $params.link }}"
-        data-ga-category="hed"
-      >
-        {{ $page.LinkTitle }}
-      </a>
-    </h2>
-    {{ if or $params.byline $params.blurb }}
-      <h3
-        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-byline"
-      >
-        {{ if $params.byline }}
-          <a
-            href="{{ $params.link }}"
-            class="group-hover:underline"
-            data-ga-category="byline"
-          >
-            by
-            {{ $params.byline }}
-          </a>
-        {{ else }}
-          <a
-            href="{{ $params.link }}"
-            class="group-hover:underline"
-            data-ga-category="blurb"
-          >
-            {{ $params.blurb }}
-          </a>
-        {{ end }}
-      </h3>
-    {{ end }}
-  </div>
+  <h2 class="subtitle is-5 is-size-4-widescreen is-spaced mt-2">
+    <a
+      class="has-text-grey-dark hover-underline"
+      href="{{ $params.link }}"
+      data-ga-category="hed"
+    >
+      {{ $page.LinkTitle }}
+    </a>
+  </h2>
+  {{ if or $params.byline $params.blurb }}
+    <h3
+      class="subtitle has-margin-top-negative-medium is-5 has-text-weight-normal"
+    >
+      {{ if $params.byline }}
+        <a
+          href="{{ $params.link }}"
+          class="has-text-grey hover-underline"
+          data-ga-category="byline"
+        >
+          by
+          {{ $params.byline }}
+        </a>
+      {{ else }}
+        <a
+          href="{{ $params.link }}"
+          class="has-text-grey hover-underline"
+          data-ga-category="blurb"
+        >
+          {{ $params.blurb }}
+        </a>
+      {{ end }}
+    </h3>
+  {{ end }}
 </article>
