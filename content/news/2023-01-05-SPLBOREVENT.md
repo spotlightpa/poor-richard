@@ -31,15 +31,15 @@ As residents protested and the resignations of public officials, including the p
 
 To unpack this issue, Spotlight PA is holding a discussion on small governments in Pennsylvania and how they are run and overseen.
 
-Join us Thursday, Jan. 26 at 6 p.m. EST on Zoom for a free panel on Pennsylvania’s local governments, and how their accountability — or lack thereof — impacts residents and governance.
+Join us Thursday, Jan. 26 at 6 p.m. EST on Zoom for a free panel on Pennsylvania’s local governments, and how their oversight — or lack thereof — impacts residents and governance.
 
 Our panelists include:
 
-- <b>Min Xian</b>, accountability reporter for Spotlight PA’s State College bureau<br/>
+- <b>Min Xian</b>, accountability reporter for Spotlight PA’s State College bureau
 
-- <b>Matthew Creme Jr.</b>, municipal lawyer<br/>
+- <b>Matthew Creme Jr.</b>, municipal lawyer
 
-- <b>Other panelists to be announced</b>.<br/>
+- <b>Other panelists to be announced</b>.
 
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_q_fR0ohGQA2kkiLAs_hCag">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
 
