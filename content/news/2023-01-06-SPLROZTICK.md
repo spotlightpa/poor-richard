@@ -1,4 +1,5 @@
 +++
+aliases = ["/rozzistory"]
 arc-id = "YWPR2NTR7ZC2ZJ773TS7MBHE7I"
 authors = ["Stephen Caruso", "Katie Meyer"]
 blurb = "Republicans were the primary engineers behind the Berks County Democrat’s candidacy and announcement — and even wrote his acceptance speech."
