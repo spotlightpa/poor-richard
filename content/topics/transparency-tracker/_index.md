@@ -7,7 +7,6 @@ image-description = "The latest reporting on the inner workings of Penn State Un
 image-size = "hidden"
 kicker = "Transparency Tracker"
 title = "Penn State Transparency Tracker"
-layout = "transparency-tracker"
 subhed = "The latest reporting on the inner workings of Penn State University, one of the most influential institutions in Pennsylvania, by Spotlight PA's regional bureau in State College."
 title-tag = "Penn State Transparency Tracker"
 linktitle = "Penn State Transparency Tracker from Spotlight PA"
