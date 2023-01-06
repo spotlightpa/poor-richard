@@ -9,11 +9,12 @@
       -}}
     {{ end }}
   </div>
-
-  <div>
+  {{- if ne .showImg false }}
+  <div class="mb-6">
     {{ partial "tw/image-block.html" .imgOpts }}
   </div>
-  <div class="group mt-6">
+  {{ end }}
+  <div class="group">
     <h3 class="text-lg font-semibold leading-snug text-hed">
       <a
         class="group-hover:underline"
