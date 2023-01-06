@@ -1,56 +1,57 @@
-  <section class="font-raleway">
-    <header class="bg-black text-white py-14 px-3">
-      <div
-        class="mx-auto max-w-[1248px] md:grid md:grid-cols-12 gap-y-3 gap-x-5 grid-rows-[auto_1fr]"
+<section class="font-raleway">
+  <header class="bg-black py-14 px-3 text-white">
+    <div
+      class="mx-auto max-w-[1248px] grid-rows-[auto_1fr] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+    >
+      <h1
+        class="col-span-3 col-start-1 row-span-1 row-start-1 text-2xl font-black md:max-w-[276px]"
       >
-        <h1
-          class="text-2xl font-black col-start-1 col-span-3 row-start-1 row-span-1 md:max-w-[276px]"
-        >
-          {{ .Title }}
-        </h1>
-        <div class=" text-lg font-medium col-start-1 col-span-3 row-start-2">
-          {{ .Content }}
+        {{ .Title }}
+      </h1>
+      <div class=" col-span-3 col-start-1 row-start-2 text-lg font-medium">
+        {{ .Content }}
 
-        </div>
-        <div
-          class="bg-s-3 col-start-5 col-span-8 row-start-1 row-span-2 max-h-[440px] flex flex-row items-center justify-stretch overflow-hidden"
-        >
-          {{ partial "tw/image-hero.html" . }}
-        </div>
       </div>
-    </header>
-
-<section class="bg-white px-6 py-8 md:pb-24" id="guides" data-ga-category="guides">
-  {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
-  {{ partial "tw/list-3-col-story-noImg.html" (dict
-    "hed" "Penn State Transparency Tracker"
-    "pages" $guide.RegularPages
-    "readMoreLink" $guide.RelPermalink
-    "readMore" "Read More Transparency Tracker stories"
-    "rows" 2
-    )
-  }}
-</section>
-
-
-    <div class="bg-s-2">
-      {{ .Page.RenderString (.Param "form") }}
-    </div>
-
-    <div class="bg-white" data-ga-category="text">
-      <article
-        class="article-content mx-auto md:grid max-w-[1248px] md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5 py-24 md:grid-cols-12"
+      <div
+        class="justify-stretch col-span-8 col-start-5 row-span-2 row-start-1 flex max-h-[440px] flex-row items-center overflow-hidden bg-s-3"
       >
-        {{ range $i, $blocks := .Params.blocks }}
-          {{ $id := urlize .title }}
-          {{ partial "blocks/block" (dict "Page" $ "block" .) }}
-        {{ end }}
-        <aside
-          class="md:row-start-1 md:row-span-2 md:col-span-3 md:col-start-10"
-        >
-          {{ .Page.RenderString (.Param "credits") }}
-
-        </aside>
-      </article>
+        {{ partial "tw/image-hero.html" . }}
+      </div>
     </div>
+  </header>
+
+  <section
+    class="bg-white px-6 py-8 md:pb-24"
+    id="guides"
+    data-ga-category="guides"
+  >
+    {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
+    {{ partial "tw/list-3-col-story-noImg.html" (dict
+      "hed" "Penn State Transparency Tracker"
+      "pages" $guide.RegularPages
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read More Transparency Tracker stories"
+      "rows" 1
+      )
+    }}
   </section>
+
+  <div class="bg-s-2">
+    {{ .Page.RenderString (.Param "form") }}
+  </div>
+
+  <div class="bg-white" data-ga-category="text">
+    <article
+      class="article-content mx-auto max-w-[1248px] py-24 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+    >
+      {{ range $i, $blocks := .Params.blocks }}
+        {{ $id := urlize .title }}
+        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+      {{ end }}
+      <aside class="md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1">
+        {{ .Page.RenderString (.Param "credits") }}
+
+      </aside>
+    </article>
+  </div>
+</section>
