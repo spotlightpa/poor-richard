@@ -1,0 +1,72 @@
+{{ $rows := .rows | default -1 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 3 }}
+{{ end }}
+{{ $pages := .pages }}
+{{ if $limit }}
+  {{ $pages = first $limit .pages }}
+{{ end }}
+{{ $showImg := newScratch }}
+{{ $showImg.Set "showImg" "false" }}
+
+
+<div
+  class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}"
+  data-ga-category="threeup"
+>
+  {{ with .hed }}
+    <h2
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
+
+  <nav class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
+    {{ range $i, $page := $pages }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div class="contents" data-ga-category="story-{{ add 1 $i }}">
+        {{ $eyebrow := $params.published }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ end }}
+        {{ partial "tw/thumb-v-item.html" (dict
+          "showImg" false
+          "wrapperClass" "row-subgrid row-span-3 w-full grid-flow-row gap-y-0"
+          "imgOpts" $imgOpts
+          "rubricLink" $params.link
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          )
+        }}
+      </div>
+    {{ end }}
+  </nav>
+  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
+    <div
+      data-ga-category="readmore"
+      class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
+    >
+      <a href="{{ .readMoreLink }}">
+        {{- .readMore | default "Read More" -}}
+      </a>
+    </div>
+  {{ end }}
+</div>
