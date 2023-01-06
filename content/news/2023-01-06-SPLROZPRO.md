@@ -45,6 +45,8 @@ Until the moment he was elected to the state House’s top position this week, R
 
 His rapid rise was organized by top Republicans, who saw an opportunity to tilt the chamber’s partisan score to an even 101-101 by asking Rozzi to become an independent in exchange for their votes.
 
+Both parties claim the outcome as a victory. Republicans say his speakership means that no party has total control over the state House, while Democrats have Rozzi listed on their website as the “Democratic Speaker of the House.”
+
 Which version is true remains unclear. Rozzi has so far refused to resolve the confusion. And in uncharacteristic fashion, he hasn’t responded to requests for comment. When he did hold a brief press conference Tuesday after winning the speakership, he did not take questions.
 
 Rozzi has said he won’t caucus with either party, has already tapped a top Democratic staffer as his first hire, and claimed in his speech he’d still hire Republican staff.
