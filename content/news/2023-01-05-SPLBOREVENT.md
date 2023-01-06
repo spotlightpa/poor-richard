@@ -35,7 +35,7 @@ Join us Thursday, Jan. 26 at 6 p.m. EST on Zoom for a free panel on Pennsylvania
 
 Our panelists include:
 
-- <b>Min Xian</b>, accountability reporter for Spotlight PA’s State College bureau
+- <b>Min Xian</b>, local accountability reporter for Spotlight PA’s State College bureau
 
 - <b>Matthew Creme Jr.</b>, municipal lawyer
 
