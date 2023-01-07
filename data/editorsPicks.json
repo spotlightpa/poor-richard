@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-01-06-SPLROZTICK.md"
+    "content/news/2023-01-06-SPLROZPRO.md"
   ],
   "subfeatures": [
     "content/news/2023-01-05-SPLHOURULES.md",
     "content/news/2023-01-04-SPLROZFAQ.md"
   ],
   "topSlots": [
+    "content/news/2023-01-06-SPLROZTICK.md",
     "content/news/2023-01-06-SPLSPEABU.md",
-    "content/news/2023-01-06-SPLROZPRO.md",
     "content/news/2023-01-05-SPLBOREVENT.md"
   ],
   "topper": []
