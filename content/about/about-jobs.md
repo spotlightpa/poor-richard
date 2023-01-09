@@ -29,13 +29,13 @@ aliases = ["/jobs/"]
 
 An ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of connecting with readers and members.
 
-**This job is full-time and includes benefits, and is fully remote, though a home base in Pennsylvania is preferred. This position is budgeted for a salary from $65,000-$75,000, depending on experience. Applicants should include a resume and cover letter explaining why they’re a good fit for this role.** 
+**This job is full-time and includes benefits, and is fully remote, though a home base in Pennsylvania is preferred. This position is budgeted for a salary from $65,000-$75,000, depending on experience. Applicants should include a resume and cover letter explaining why they’re a good fit for this role. Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.** 
 
-We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage peoplefrom marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage peoplefrom marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities. 
 
-## **[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695).** 
+## **[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695)** 
 
-Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
+
 
 ## Sign up to receive alerts so you don't miss new job postings.
 
