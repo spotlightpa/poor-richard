@@ -33,7 +33,9 @@ An ability to work in a collaborative environment is a must. We’re an agile st
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage peoplefrom marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
-**[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695).** Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
+## **[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695).** 
+
+Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
 
 ## Sign up to receive alerts so you don't miss new job postings.
 
