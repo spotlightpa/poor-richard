@@ -3,10 +3,10 @@ published = 2019-09-05T13:14:35.433Z
 title = "Leaders In Action"
 description = "TK"
 url = "/support/leaders-in-action/"
-layout = "landing"
+layout = "support"
 +++
 
-<svg class="float-right w-40 md:w-60 -mt-6 md:-mr-16 mb-2 ml-1 md:ml-2">
+<svg class="float-right -mt-6 md:-mr-16 mb-2 ml-1 md:ml-2 md:h-52">
   <use href="#leaders-in-action" />
 </svg>
 
