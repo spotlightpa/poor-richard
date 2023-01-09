@@ -29,6 +29,7 @@ module.exports = {
         "**/tw/*.html",
         "**/blocks/*.html",
         "**/shortcodes/*.html",
+        "**/shortcodes/newsletters/*.html",
       ],
       options: {
         plugins: [pluginGoTemplate, pluginTailwind],

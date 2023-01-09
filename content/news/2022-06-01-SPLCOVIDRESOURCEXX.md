@@ -29,7 +29,7 @@ Looking for Spotlight PA’s COVID-19 dashboard and information about cases and 
 
 Due to the varying ways state and federal agencies now report case data, we’ve decided to archive our live coronavirus dashboard. In its place, we’ve compiled a list of resources you can use to stay up to date on the pandemic in Pennsylvania. This page will be updated on the first business day of every month.
 
-Information on this page is current as of December 1, 2022.
+Information on this page is current as of January 5, 2023.
 
 If you have a story idea or tip related to the pandemic response, please contact <a href="mailto:tips@spotlightpa.org">tips@spotlightpa.org</a>.
 
@@ -79,7 +79,7 @@ If you’re looking for a PCR test, check with your local pharmacy, urgent care 
 
 The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
 
-The U.S. Postal Service <a href="https://special.usps.com/testkits">suspended its free at-home test program</a> in early September.
+The U.S. Postal Service restarted its <a href="https://special.usps.com/testkits">free at-home test program</a> in December. Each household can order one set of four rapid antigen tests.
 
 ## What should I do if I lose my vaccine card?
 

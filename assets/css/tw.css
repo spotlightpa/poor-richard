@@ -111,6 +111,9 @@
   @apply list-decimal pl-8;
 }
 
+.article-content :where(code) {
+  @apply -my-[2px] mx-1 rounded-sm bg-s-2 py-[2px] px-1 text-red-8;
+}
 .article-content :where(a) {
   @apply text-navy underline;
   @apply transition-colors duration-500;
