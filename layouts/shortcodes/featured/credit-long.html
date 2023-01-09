@@ -8,7 +8,9 @@
 {{ $author := partial "helper/get-author" $name }}
 
 
-<div class="font-sans">
+<aside
+  class="grid grid-cols-3 gap-3 md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
+>
   {{ if $image }}
     {{ $imgOpt := dict
       "filename" $image
@@ -17,26 +19,36 @@
     }}
     {{ $thumb := partial "helper/imgproxy" $imgOpt }}
     <img
-      class="mb-1 h-48 w-48 rounded-full grayscale filter md:mb-6"
+      class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
       src="{{ $thumb }}"
       alt="Picture of {{ $name }}"
     />
   {{ else if $author.thumb }}
     <img
-      class="mb-1 h-48 w-48 rounded-full grayscale filter md:mb-6"
+      class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
       src="{{ $author.thumb }}"
       alt="Picture of {{ $name }}"
     />
   {{ end }}
   {{ if $eyebrow }}
-    <h4 class="mb-4 text-xs font-bold uppercase">{{ $eyebrow }}</h4>
+    <h4 class="col-span-2 col-start-2 mb-4 text-xs font-bold uppercase">
+      {{ $eyebrow }}
+    </h4>
   {{ end }}
   {{ if $hed }}
-    <h3 class="mb-1 max-w-[270px] text-lg font-black md:mb-6">{{ $hed }}</h3>
+    <h3
+      class="col-span-2 col-start-2 mb-1 text-lg font-black md:mb-6 md:max-w-[270px]"
+    >
+      {{ $hed }}
+    </h3>
   {{ end }}
   {{ if $bio }}
-    <div class="max-w-[192px] text-base">{{ $bio }}</div>
+    <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
+      {{ $bio }}
+    </div>
   {{ else if $author }}
-    <div class="max-w-[192px] text-base">{{ $author.content }}</div>
+    <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
+      {{ $author.content }}
+    </div>
   {{ end }}
-</div>
+</aside>

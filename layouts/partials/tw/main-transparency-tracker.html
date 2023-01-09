@@ -13,7 +13,7 @@
 
       </div>
       <div
-        class="justify-stretch col-span-8 col-start-5 row-span-2 row-start-1 flex max-h-[440px] flex-row items-center overflow-hidden bg-s-3"
+        class="justify-stretch col-span-8 col-start-5 row-span-2 row-start-1 flex max-h-[440px] flex-row items-center overflow-hidden rounded bg-s-3"
       >
         {{ partial "tw/image-hero.html" . }}
       </div>
@@ -21,7 +21,7 @@
   </header>
 
   <section
-    class="bg-white px-6 py-8 md:pb-24"
+    class="bg-white px-6 py-8 md:py-24"
     id="guides"
     data-ga-category="guides"
   >
@@ -34,6 +34,7 @@
       "rows" 1
       )
     }}
+
   </section>
 
   <div class="bg-s-2">
@@ -42,16 +43,13 @@
 
   <div class="bg-white" data-ga-category="text">
     <article
-      class="article-content mx-auto max-w-[1248px] py-24 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+      class="article-content mx-auto max-w-[1248px] py-24 px-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
       {{ range $i, $blocks := .Params.blocks }}
         {{ $id := urlize .title }}
         {{ partial "blocks/block" (dict "Page" $ "block" .) }}
       {{ end }}
-      <aside class="md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1">
-        {{ .Page.RenderString (.Param "credits") }}
-
-      </aside>
+      {{ .Page.RenderString (.Param "credits") }}
     </article>
   </div>
 </section>

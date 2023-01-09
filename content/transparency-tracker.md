@@ -7,7 +7,7 @@ url = "/statecollege/transparency-tracker"
 layout = "transparency-tracker"
 image = "2022/12/01hs-1wgp-dhzx-qrgw.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
-image-gravity = "no"
+image-gravity = "so"
 credits = """
 {{<featured/credit-long
     hed="Meet Spotlight PA’s Penn State Investigative Reporter"
