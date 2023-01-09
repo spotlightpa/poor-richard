@@ -6,11 +6,11 @@ linktitle = "Jobs"
 url = "/about/jobs/"
 aliases = ["/jobs/"]
 +++
-## Membership Manager\
-\
-**[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695)** 
+## Membership Manager
 
-\
+### **[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695)** 
+
+
 **Summary:** We are seeking a Membership Manager to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across dozens of partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners. The newsroom is supported by grants and donations from Pennsylvanians who believe in the value of the work and want to sustain it. In partnership with the American Journalism Project, we are building out a best-in-class development team to enable Spotlight PA to sustain and grow its reporting in the long term. 
 
 **What you’ll do:** The Membership Manager will lead aggressive growth of Spotlight PA’s grassroots donation program, a critical revenue stream for the newsroom and a key part of its growth plan. This position will report to the Development Director and will also work closely with the Major Gifts Director and the Executive Director to expand Spotlight PA’s fundraising sophistication and capacity.
