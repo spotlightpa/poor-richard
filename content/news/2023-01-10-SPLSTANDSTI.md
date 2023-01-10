@@ -44,7 +44,7 @@ The state Senate, firmly in Republican control, also met Monday but did not take
 
 Caught in the middle of the legislative dysfunction is a dedicated community of childhood sexual abuse survivors, who called Monday a disappointing continuation of emotionally taxing inaction. Still, their trust in Rozzi appears unshaken.
 
-“However [Rozzi] got to the speakership, I’m glad he’s there,” said James Faluszczak, a 53-year-old survivor from Erie.
+”It’s all hands on deck. It doesn’t matter,” said James Faluszczak, a 53-year-old survivor from Erie. “We just want this legislation.”
 
 A vocal advocate for survivors, Rozzi became speaker less than a week ago in a bargain <a href="https://www.spotlightpa.org/news/2023/01/pa-house-speaker-mark-rozzi-behind-the-scenes/">engineered by Republican leaders. </a>
 
@@ -102,5 +102,7 @@ In 2021, when it appeared the amendment had cleared its many legislative hurdles
 Early on Monday, Gregory said he had no idea what would happen with the amendment.
 
 “For the sake of my recovery and my sobriety, I have to put it in God’s hands,” he said.
+
+<i>This story has been updated to replace a quote from James Faluszczack that better reflects his feelings toward how Rozzi gained the speakership.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
