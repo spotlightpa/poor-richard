@@ -77,7 +77,7 @@ State Rep.-elect Dallas Kephart (R., Clearfield) said there are areas where the 
 
 ## The cost of a General Assembly seat
 
-Pennsylvania is <a href="https://www.ncsl.org/Portals/1/Documents/Elections/Contribution_Limits_to_Candidates_2020_2021.pdf">one of ten states</a> that does not limit how much money individuals and political action committees can donate. That shows in new lawmakers’ fund-raising reports.
+Pennsylvania is <a href="https://web.archive.org/web/20221116200705/https://www.ncsl.org/Portals/1/Documents/Elections/Contribution_Limits_to_Candidates_2020_2021.pdf">one of ten states</a> that does not limit how much money individuals and political action committees can donate. That shows in new lawmakers’ fund-raising reports.
 
 The 2023 class of new legislators raised more than $10 million this year. Among candidates who won for the first time, the median amount raised was $127,972 for state House races and $495,692 for state Senate races.
 
