@@ -1,0 +1,16 @@
+{{ with .block }}
+  <section class="bg-s-2 py-14 px-2">
+    <div class="mx-auto my-14 w-full max-w-screen-md">
+      <h2
+        class="font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-5xl"
+      >
+        {{ .hed }}
+      </h2>
+      <div class="supporters-list">
+        <ul class=" column-gap-2 columns-2 gap-10 py-8 md:columns-3">
+          {{ partial .data_file }}
+        </ul>
+      </div>
+    </div>
+  </section>
+{{ end }}

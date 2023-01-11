@@ -1,0 +1,27 @@
+{{ with .block }}
+  <section
+    class="min-h-[65vh] bg-black bg-opacity-10 py-20"
+    data-ga-category="links"
+  >
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="lg:flex">
+        <h2
+          class="lg:sideways-heading mb-4 text-4xl font-black uppercase leading-none text-s-7 opacity-40 md:text-6xl lg:mb-0 lg:rotate-180"
+        >
+          {{ .title }}
+        </h2>
+        <div class="max-w-5xl text-xl text-s-8 lg:pl-20">
+          {{ with .entries }}
+            <ul class="mt-8 flex flex-wrap justify-center">
+              {{ range . }}
+                <li class="mb-2 md:mx-10 inline-block md:flex-[0_1_40%]">
+                    <p>{{- .testimonial -}}</p>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
