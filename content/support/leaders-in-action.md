@@ -27,7 +27,7 @@ testimonial = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
     layout = "donate"
     hed="Become a Leader in Action"
     cta="Join"
-    donate="leader"
+    theme="leader"
 +++
 
 <svg class="float-right -mt-6 md:-mr-16 mb-2 ml-1 md:ml-2 md:h-52">
