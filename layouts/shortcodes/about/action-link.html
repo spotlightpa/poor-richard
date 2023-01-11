@@ -1,0 +1,22 @@
+{{- $url := "" -}}
+{{- with .Get "href" }}{{ $url = . }}{{ end -}}
+
+
+<a
+  data-ga-category="item"
+  class="
+            my-2 mr-5 inline-flex w-auto items-center
+            rounded border border-black
+            px-4 py-4
+            text-base font-black leading-4
+            hover:border-red-7 hover:text-red-7
+            no-underline md:my-6
+          "
+  :class="
+            aboutActive === $el.dataset.aboutId ?
+            'bg-black text-white hover:border-blue-3 hover:text-blue-3' :
+            ''
+          "
+  href="{{ $url }}"
+  >{{ .Inner }}</a
+>

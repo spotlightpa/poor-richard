@@ -1,0 +1,43 @@
+{{ with .block }}
+  <div class="bg-s-2 py-14 px-2">
+    <h2 class="mx-auto mb-5 max-w-[1248px] font-raleway text-5xl font-black">
+      {{ .title }}
+    </h2>
+    {{ with .entries }}
+      <ul class="mx-auto flex max-w-[1248px] items-stretch justify-between">
+        {{ range . }}
+          <li
+            class="mb-2 flex max-w-xl flex-wrap justify-between rounded bg-white p-5 shadow-md md:flex-[0_1_48%]"
+          >
+            <div class="ml-5 mb-2 flex-[0_0_160px]">
+              {{ $name := .image }}
+              {{ $imgOpts := dict
+                "filename" $name
+                "widthRatio" 34
+                "heightRatio" 27
+                "sizeHint" "25vw"
+              }}
+              {{ partial "component/image-block.html" $imgOpts }}
+            </div>
+            <h3
+              class="-order-1 mb-2 max-w-xs flex-1 self-end text-4xl font-black"
+            >
+              {{- .hed -}}
+            </h3>
+            <p class="mb-5 max-w-sm flex-[0_0_100%]">{{- .body -}}</p>
+            <nav
+              class="clear-both flex flex-[0_0_100%] items-center justify-between"
+            >
+              <a class="font-bold" href="{{ .url }}">Learn More</a>
+              <a
+                class="float-right flex min-w-[145px] max-w-[245px] items-center justify-center rounded bg-red-6 px-3 py-5 font-sans text-base font-semibold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
+                href="{{ .actionUrl }}"
+                >{{ .actionText }}</a
+              >
+            </nav>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}
