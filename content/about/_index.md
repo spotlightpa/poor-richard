@@ -40,7 +40,7 @@ copy = "See More About Our Impact"
 [[blocks]]
 title = "Staff"
 layout = "text-2"
-copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:"
+copy="{{<featured/large>}}We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:{{</featured/large>}}"
 [blocks.cta]
 url = "/about/staff/"
 copy = "See More About Our Staff"
@@ -57,7 +57,7 @@ copy = "See More of Our Partners"
 [[blocks]]
 title = "Supporters"
 layout = "text-2"
-copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:"
+copy="{{<featured/large>}}Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:{{</featured/large>}}"
 [blocks.cta]
 url = "/support/"
 copy = "See More About Our Supporters"
