@@ -1,21 +1,19 @@
 {{ with .block }}
-<div
-        class="lg:scroll-mt-20 bg-white py-14 px-5"
->
-  <div
-    class="mx-auto sm:flex max-w-screen-lg justify-evenly items-center rounded border-2 border-red bg-white px-4 pt-10 pb-10 font-serif"
-  >
-    <h2
-      class="flex-[1_1_628px] my-2 font-sans text-2xl font-black leading-none tracking-wide sm:text-3xl md:text-4xl"
+  <div class="bg-white py-14 px-5 lg:scroll-mt-20">
+    <div
+      class="mx-auto max-w-screen-lg items-center justify-evenly rounded border-2 border-red bg-white px-4 pt-10 pb-10 font-serif sm:flex"
     >
-      {{ .hed }}
-    </h2>
-    <a
-      href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme={{ .theme }}"
-      class="min-w-[145px] flex md:min-w-[218px] items-center justify-center rounded bg-red-6 px-3 py-5 font-sans text-base font-semibold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
-    >
-      Contribute &rarr;
-    </a>
-  </div>
+      <h2
+        class="my-2 flex-[1_1_628px] font-sans text-2xl font-black leading-none tracking-wide sm:text-3xl md:text-4xl"
+      >
+        {{ .hed }}
+      </h2>
+      <a
+        href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme={{ .theme }}"
+        class="flex min-w-[145px] items-center justify-center rounded bg-red-6 px-3 py-5 font-sans text-base font-semibold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
+      >
+        Contribute &rarr;
+      </a>
+    </div>
   </div>
 {{ end }}

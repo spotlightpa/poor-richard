@@ -20,23 +20,26 @@
 {{ end }}
 
 {{ define "main" }}
-    <header class="bg-black py-14 px-3 text-white">
-      <div
-        class="mx-auto max-w-[1248px] items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+  <header class="bg-black py-14 px-3 text-white">
+    <div
+      class="mx-auto max-w-[1248px] items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+    >
+      <h1
+        class=" font-serif text-5xl col-span-5 col-start-2 row-span-1 row-start-1 font-black"
       >
-        <h1
-          class=" font-serif text-5xl col-span-5 col-start-2 row-span-1 row-start-1 font-black"
-        >
-          {{ .Title }}
-        </h1>
-        <div class="font-raleway col-span-5 col-start-7 row-start-1 text-xl font-medium ">
-          {{ .Description }}
-        </div>
+        {{ .Title }}
+      </h1>
+      <div
+        class="font-raleway col-span-5 col-start-7 row-start-1 text-xl font-medium "
+      >
+        {{ .Description }}
       </div>
-    </header>
-    <section class=" bg-s-0">
-    <div 
-      class="mx-auto max-w-[1038px] font-raleway article-content text-lg font-medium  py-14 px-5 ">
+    </div>
+  </header>
+  <section class=" bg-s-0">
+    <div
+      class="mx-auto max-w-[1038px] font-raleway article-content text-lg font-medium  py-14 px-5 "
+    >
       {{ .Content }}
     </div>
 
