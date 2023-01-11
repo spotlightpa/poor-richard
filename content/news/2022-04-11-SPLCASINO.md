@@ -212,7 +212,7 @@ The emails do not show whether the talking points made their way to Tomlinson, a
 
 <a href="https://www.spotlightpa.org/news/2020/06/pennsylvania-gambling-video-gaming-terminals-joe-scarnati-jake-corman/">The effort fizzled</a>. But that fall, with just weeks left before the end of the 2019-20 legislative session, a key state Senate committee chaired by then-Sen. Tom Killion (R., Delaware) held a hearing on a bill championed by Corman that would legalize and regulate skill games.
 
-The day before the <a href="https://www.pasenategop.com/blog/100620-4/">Oct. 6 hearing</a>, Schafer emailed Gmerek, Stewart, and several Parx executives, including Green.
+The day before the <a href="https://web.archive.org/web/20221212101453/https://www.pasenategop.com/blog/100620-4/">Oct. 6 hearing</a>, Schafer emailed Gmerek, Stewart, and several Parx executives, including Green.
 
 “I think I will personally watch the hearing from Tommy’s office,” Schafer wrote at 12:23 p.m. “It is safer and makes sense. We could probably accommodate safely a good 8 to 10 people in Tommy’s office if anyone else wants to join I’ll arrange it.”
 
@@ -229,7 +229,7 @@ The debate over skill games has spilled into the current legislative session, wh
 
 Gambling expansion has for years been an area legislators explore when they need new dollars. But at the moment, the state is flush with cash, thanks to unspent federal COVID-19 relief dollars.
 
-Still, the issue has been on the legislature’s radar. In June of last year, state Sen. John Yudichak (I., Luzerne) convened a <a href="https://community.pasenategop.com/cerd-061421/">hearing</a> on what was billed as the “sustainability of gaming” in the state.
+Still, the issue has been on the legislature’s radar. In June of last year, state Sen. John Yudichak (I., Luzerne) convened a <a href="https://web.archive.org/web/20221222071721/https://community.pasenategop.com/cerd-061421/">hearing</a> on what was billed as the “sustainability of gaming” in the state.
 
 {{<featured/related>}}
 

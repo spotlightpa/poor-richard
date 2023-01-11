@@ -47,7 +47,7 @@ These ballots have been subject to years of litigation in Pennsylvania — much 
 
 Joshua Voss, an attorney who frequently argues election cases on Republicans’ behalf, said he thinks Chapman’s new guidance is legally shaky.
 
-Chapman’s guidance is based on May Commonwealth Court decisions made by a Republican judge. But the rulings are <a href="https://kb.osu.edu/bitstream/handle/1811/64261/OSLJ_V46N2_0313.pdf">unpublished</a>, meaning they are <a href="https://www.law.uga.edu/sites/default/files/uploaded-files/Clutter%20WHICH_COURT_IS_BINDING_Painter-and-Mayer-FINAL.pdf">considered “persuasive” but not binding</a>. This means that while courts can refer to these decisions in future mail ballot cases, they don’t have to.
+Chapman’s guidance is based on May Commonwealth Court decisions made by a Republican judge. But the rulings are <a href="https://web.archive.org/web/20221210191707/https://kb.osu.edu/bitstream/handle/1811/64261/OSLJ_V46N2_0313.pdf">unpublished</a>, meaning they are <a href="https://www.law.uga.edu/sites/default/files/uploaded-files/Clutter%20WHICH_COURT_IS_BINDING_Painter-and-Mayer-FINAL.pdf">considered “persuasive” but not binding</a>. This means that while courts can refer to these decisions in future mail ballot cases, they don’t have to.
 
 The Wolf administration basing guidance on an “unpublished single-judge opinion,” Voss said, is “a remarkable position.”
 

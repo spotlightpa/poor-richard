@@ -68,7 +68,7 @@
 {{ end }}
 
 {{ define "extra-main" }}
-  <section class="bg-white px-4 pb-12 pt-6">
+  <section class="bg-white px-4 pb-12 pt-6" id="archives">
     {{ $p := partial "helper/paginator" . }}
     {{ range $p.PageGroups }}
       {{ partial "tw/list-3-col-story.html" (dict

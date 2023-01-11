@@ -1,0 +1,73 @@
+{{ $gaForm := .gaForm }}
+{{ $gaCategory := .gaCategory }}
+{{ $hiddenField := .hiddenField }}
+{{ $hed := .hed }}
+{{ $cta := .cta }}
+
+{{ $idFname := partial "helper/new-id" .dot }}
+{{ $idLname := partial "helper/new-id" .dot }}
+{{ $idEmail := partial "helper/new-id" .dot }}
+
+
+<section data-ga-category="inline">
+  <form
+    action="{{ site.Param `newsletters-action` }}"
+    method="post"
+    target="_blank"
+    class="p-1 font-sans text-black"
+    data-ga-form="{{ $gaForm }}"
+    data-ga-category="{{ $gaCategory }}"
+  >
+    {{ partial $hiddenField . }}
+    <h2 class="mt-8 text-3xl font-extrabold">
+      {{ $hed }}
+    </h2>
+
+    <label class="mt-8 block font-extrabold" for="{{ $idFname }}">
+      First Name
+    </label>
+    <p>
+      <input
+        id="{{ $idFname }}"
+        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+        type="text"
+        name="FNAME"
+        placeholder="William"
+        required
+      />
+    </p>
+
+    <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+      Last Name
+    </label>
+    <p>
+      <input
+        id="{{ $idLname }}"
+        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+        type="text"
+        name="LNAME"
+        placeholder="Penn"
+        required
+      />
+    </p>
+    <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+      Email Address
+    </label>
+    <p class="relative">
+      <input
+        id="{{ $idEmail }}"
+        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+        type="email"
+        name="EMAIL"
+        placeholder="billpenn@example.com"
+        required
+      />
+    </p>
+    <button
+      type="submit"
+      class="mt-8 rounded border-2 border-red bg-red px-8 py-2 font-semibold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
+    >
+      {{ $cta }}
+    </button>
+  </form>
+</section>

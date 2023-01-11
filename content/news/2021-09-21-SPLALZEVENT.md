@@ -1,9 +1,9 @@
 +++
-event-date = 2021-10-08T12:00:00-04:00
 arc-id = "S25A56K3CRCG5FZFNC6JBJ3RII"
 blurb = "On Oct. 8, Spotlight PA held a free Q&A on Alzheimer’s disease in Pennsylvania and possible solutions to the coming crisis."
 byline = "Spotlight PA Staff"
 description = "On Oct. 8, Spotlight PA held a free Q&A on Alzheimer’s disease in Pennsylvania and possible solutions to the coming crisis."
+event-date = 2021-10-08T12:00:00-04:00
 image = "external/jk52g1krg12ec6sc5rtj70ab8m.jpeg"
 image-credit = "Quinn Glabicki for Spotlight PA / PublicSource "
 image-description = "Alice “Candy” Loughney, 71, has Alzheimer’s disease and moved into a long-term care facility in Monroeville after her symptoms became too much for her husband to manage."
@@ -15,6 +15,7 @@ no-index = false
 published = 2021-09-21T10:46:52.805-04:00
 series = ["Crisis Of Care"]
 slug = "pa-alzheimers-dementia-crisis-event"
+suppress-date = false
 title = "WATCH: A free panel on Alzheimer’s disease preparedness in Pennsylvania"
 topics = ["Health", "Events"]
 +++
@@ -73,7 +74,7 @@ Spotlight PA has also compiled a list of resources for people caring for others 
 
 - Find <a href="https://www.aging.pa.gov/local-resources/Pages/Adult-Day-Center.aspx">adult day services</a> with the state’s online search tool
 
-- Pennsylvania’s <a href="https://www.palifeprograms.org/">LIFE program</a> helps older Pennsylvanians get care at home
+- Pennsylvania’s <a href="https://web.archive.org/web/20221212041606/https://www.palifeprograms.org/">LIFE program</a> helps older Pennsylvanians get care at home
 
 - Find nearby home health agencies with Medicare’s <a href="https://www.medicare.gov/homehealthcompare/search.html">Home Health Compare tool</a>
 

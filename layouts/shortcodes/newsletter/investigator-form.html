@@ -1,76 +1,9 @@
-{{ $idFname := partial "helper/new-id" . }}
-{{ $idLname := partial "helper/new-id" . }}
-{{ $idEmail := partial "helper/new-id" . }}
-<section data-ga-category="inline">
-  <form
-    action="{{ .Page.Param "newsletters-action" }}"
-    method="post"
-    target="_blank"
-    data-ga-form="newsletters:investigator"
-    data-ga-category="newsletters:investigator-full"
-  >
-    {{ partial "newsletter/investigator-hidden.html" . }}
-    <h2 class="title is-3">Sign Up for The Investigator</h2>
-    <div class="field">
-      <label class="label" for="{{ $idFname }}">First Name</label>
-    </div>
-    <div class="field">
-      <p class="control is-expanded">
-        <input
-          id="{{ $idFname }}"
-          class="input"
-          type="text"
-          name="FNAME"
-          required
-        />
-      </p>
-    </div>
-    <div class="field">
-      <label class="label" for="{{ $idLname }}">Last Name</label>
-    </div>
-    <div class="field">
-      <p class="control is-expanded">
-        <input
-          id="{{ $idLname }}"
-          class="input"
-          type="text"
-          name="LNAME"
-          required
-        />
-      </p>
-    </div>
-    <div class="field">
-      <label class="label" for="{{ $idEmail }}">Email Address</label>
-      <p class="control is-expanded has-icons-left has-icons-right">
-        <input
-          id="{{ $idEmail }}"
-          class="input"
-          type="email"
-          name="EMAIL"
-          required
-        />
-        <span class="icon is-left">
-          <svg viewBox="0 0 1 1">
-            <use xlink:href="#email-svg"></use>
-          </svg>
-        </span>
-        <span class="icon is-right validator-icon">
-          <svg viewBox="0 0 1 1">
-            <use xlink:href="#check-svg"></use>
-          </svg>
-        </span>
-      </p>
-    </div>
-
-    <div class="field">
-      <div class="control">
-        <button
-          type="submit"
-          class="button is-large is-danger has-text-weight-semibold"
-        >
-          Subscribe
-        </button>
-      </div>
-    </div>
-  </form>
-</section>
+{{ partial "tw/inline-newsletter-form.html" (dict
+  "gaCategory" "newsletters:investigator"
+  "gaForm" "newsletters:investigator-full"
+  "hiddenField" "newsletter/investigator-hidden.html"
+  "hed" "Sign Up for The Investigator"
+  "cta" "Subscribe"
+  "dot" .
+  )
+}}

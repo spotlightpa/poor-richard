@@ -4,25 +4,16 @@
   "banner-bg-color": "#c7e8f1",
   "banner-link": "/statecollege",
   "banner-text-color": "#000000",
-  "footer-promo-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "footer-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/9.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/7.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/5.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/3.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynh/1.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/newsmatch-2022-banner-ads-728-90-px-3-.png"
   ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zyna/15.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyna/14.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/12.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/10.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/8.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn8/6.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/campaign-trackers-week-of-giving-1024-512-px-.png"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
@@ -41,57 +32,36 @@
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
-  "river-promo-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "river-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "river-promo-desktop-height": 90,
   "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/9.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/7.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/5.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynj/3.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zynh/1.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/newsmatch-2022-banner-ads-728-90-px-3-.png"
   ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate",
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zyna/15.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyna/14.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/12.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/10.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn9/8.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zyn8/6.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/campaign-trackers-week-of-giving-1024-512-px-.png"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "sidebar-sticky-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zymj/10.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/8.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/6.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/4.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymg/12.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "sidebar-top-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zymj/10.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/8.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/6.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/4.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymg/12.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "sticky-image-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/4.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/6.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymh/8.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymj/10.png",
-    "https://files.data.spotlightpa.org/uploads/01hr/zymg/12.png"
+    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
   ],
   "sticky-link": "/donate",
   "support-active": true,
@@ -99,24 +69,24 @@
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "YES, I WILL CONTRIBUTE »",
-  "support-hed": "AN URGENT REQUEST",
+  "support-hed": "MAKE A DIFFERENCE THIS YEAR",
   "support-hed-color": "#ff0000",
   "support-link": "/donate/",
-  "support-text": "Huge stories will shape Pennsylvania’s future next year, and now is the time to make an end-of-year investment in Spotlight PA’s unique, independent investigative reporting. \u003cstrong\u003eWe're more than halfway to our goal of raising $125,000 by 11:59 p.m. Dec. 31. Can we count on your support?\u003c/strong\u003e\n\nAs a special bonus, all gifts made right now \u003cstrong\u003ewill be DOUBLED\u003c/strong\u003e thanks to a challenge grant from the Lenfest Institute for Journalism.\n\nUnlike many others, Spotlight PA has no shareholders, no billionaire owner, no pressure to turn a big profit. Just the determination and passion to deliver high-impact investigative and public-service reporting for Pennsylvania, always free from commercial or political influence. \n\nWe provide our journalism for free, for everyone to read, because we believe in information equality. Greater numbers of people can keep track of the issues and events shaping our state, understand their impact on people and communities, and become inspired to take meaningful action. Millions can benefit from open access to quality, truthful news, regardless of their ability to pay for it.\n\nEvery contribution, however big or small, powers our journalism in tight economic times and sustains our future. As you consider your end-of-year giving, please support Spotlight PA by making a tax-deductible gift today. If you can, consider supporting us with a regular amount each month. \u003cstrong\u003eAnd don’t forget – every dollar contributed before Dec. 31 will be DOUBLED.\u003c/strong\u003e\n\nWill you take a moment now to ensure this important work can continue?",
+  "support-text": "Huge stories will shape Pennsylvania’s future next year, and you can help determine the course of our state by supporting tough, nonpartisan investigative and public service journalism that gets results.\n\nFearless journalism is the backbone of our democracy, and we can't leave its future in Pennsylvania up to big corporations and predatory hedge funds. Unlike many others, Spotlight PA has no shareholders, no billionaire owner, no pressure to turn a big profit. Just the determination and passion to deliver high-impact investigative and public-service reporting for Pennsylvania, always free from commercial or political influence. \n\nWe provide our journalism for free to all Pennsylvanians because we believe in information equality. Greater numbers of people can keep track of the issues and events shaping our state, understand their impact on people and communities, and become inspired to take meaningful action. Millions can benefit from open access to quality, truthful news, regardless of their ability to pay for it.\n\nEvery contribution, however big or small, powers our journalism in tight economic times and sustains our future. As you consider your causes to support this year, please contribute to Spotlight PA by making a tax-deductible gift today. If you can, consider supporting us with a regular amount each month.\n\nWill you take a moment now to ensure this important work can continue?",
   "support-text-color": "#000000",
   "topper-active": true,
-  "topper-bg-color": "#050058",
+  "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01ht/28cr/newsmatch-2022-tracker-banners-22-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hv/rqhg/campaign-trackers-week-of-giving-12-.svg"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#ffde59",
-  "topper-image-description": "Help raise $125,000 in support of Spotlight PA's vital investigative journalism for Pennsylvania as part of our end-of-year fundraising campaign.",
+  "topper-divider-color": "#ff0000",
+  "topper-image-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01ht/28cq/newsmatch-2022-rectangles-1024-512-px-24-.svg"
+    "https://files.data.spotlightpa.org/uploads/01hv/rqhk/campaign-trackers-week-of-giving-1024-512-px-3-.svg"
   ],
   "topper-mobile-width": 1024
 }
