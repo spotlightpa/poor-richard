@@ -15,22 +15,22 @@
       <div
         class="justify-stretch col-span-8 col-start-5 row-span-2 row-start-1 max-h-[440px] items-center"
       >
-                {{ $name := .Page.Param "image" }}
-                {{ $credit := .Page.Param "image-credit" }}
-                {{ $description := .Page.Param "image-description" }}
-                {{ $imgOpts := dict
-                  "filename" $name
-                  "credit" $credit
-                  "description" $description
-                  "widths" (slice 128 256 384 512 1280)
-                  "widthRatio" 15
-                  "heightRatio" 8
-                  "sizeHint" "(min-width: 850px) 627px, 100vw"
-                  "rounded" true
-                  "link" .Page.RelPermalink
-                  "gravity" (.Page.Param "image-gravity")
-                }}
-                {{ partial "tw/image-block.html" $imgOpts }}
+        {{ $name := .Page.Param "image" }}
+        {{ $credit := .Page.Param "image-credit" }}
+        {{ $description := .Page.Param "image-description" }}
+        {{ $imgOpts := dict
+          "filename" $name
+          "credit" $credit
+          "description" $description
+          "widths" (slice 128 256 384 512 1280)
+          "widthRatio" 15
+          "heightRatio" 8
+          "sizeHint" "(min-width: 850px) 627px, 100vw"
+          "rounded" true
+          "link" .Page.RelPermalink
+          "gravity" (.Page.Param "image-gravity")
+        }}
+        {{ partial "tw/image-block.html" $imgOpts }}
 
       </div>
     </div>

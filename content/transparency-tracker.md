@@ -48,6 +48,11 @@ The best way to start is with a simple conversation, even if it’s off the reco
 *— **Wyatt Massey**, Penn State investigative reporter*
 """
 author = "Wyatt Massey"
+
+eyebrow = ""
+hed = ""
+body = ""
+cta = ""
 +++
 
 The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.
