@@ -1,88 +1,105 @@
 {{ with .block }}
-{{ $gaForm := .gaForm }}
-{{ $gaCategory := .gaCategory }}
-{{ $hiddenField := .hiddenField }}
-{{ $hed := .hed }}
-{{ $cta := .cta }}
-{{ $dot := . }}
+  {{ $gaForm := .gaForm }}
+  {{ $gaCategory := .gaCategory }}
+  {{ $hiddenField := .hiddenField }}
+  {{ $hed := .hed }}
+  {{ $cta := .cta }}
+  {{ $dot := . }}
 
-{{ $idFname := partial "helper/new-id" $dot }}
-{{ $idLname := partial "helper/new-id" $dot }}
-{{ $idEmail := partial "helper/new-id" $dot }}
+  {{ $idFname := partial "helper/new-id" $dot }}
+  {{ $idLname := partial "helper/new-id" $dot }}
+  {{ $idEmail := partial "helper/new-id" $dot }}
 
-  <section class="min-h-[65vh] bg-s-2 py-10" data-ga-category="links">
-    <div class="mx-auto max-w-6xl px-5">
-      <h2
-        class="mb-10 text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
-      >
-        {{ .hed }}
-      </h2>
-      {{ with .copy }}
-        <div class="article-content my-4 text-xl lg:text-2xl">
-          {{ $.Page.RenderString . }}
-        </div>
-      {{ end }}
-    </div>
 
-<section data-ga-category="inline">
-  <form
-    action="{{ site.Param `newsletters-action` }}"
-    method="post"
-    target="_blank"
-    class="p-1 font-sans text-black"
-    data-ga-form="{{ $gaForm }}"
-    data-ga-category="{{ $gaCategory }}"
-  >
-    {{ partial $hiddenField . }}
-
-    <label class="mt-8 block font-extrabold" for="{{ $idFname }}">
-      First Name
-    </label>
-    <p>
-      <input
-        id="{{ $idFname }}"
-        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
-        type="text"
-        name="FNAME"
-        placeholder="William"
-        required
-      />
-    </p>
-
-    <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
-      Last Name
-    </label>
-    <p>
-      <input
-        id="{{ $idLname }}"
-        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
-        type="text"
-        name="LNAME"
-        placeholder="Penn"
-        required
-      />
-    </p>
-    <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
-      Email Address
-    </label>
-    <p class="relative">
-      <input
-        id="{{ $idEmail }}"
-        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
-        type="email"
-        name="EMAIL"
-        placeholder="billpenn@example.com"
-        required
-      />
-    </p>
-    <button
-      type="submit"
-      class="mt-8 rounded border-2 border-red bg-red px-8 py-2 font-semibold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
+  <section class=" bg-s-3" data-ga-category="inline">
+    <div
+      class="mx-auto max-w-[1248px] py-6 px-3 md:grid md:grid-cols-12 md:gap-y-3 md:gap-x-5 md:py-24 md:px-0"
     >
-      {{ $cta }}
-    </button>
-  </form>
-</section>
+      <div class="md:col-span-5 md:col-start-2">
+        <h2 class="mb-10 text-5xl font-black leading-none text-black">
+          {{ .hed }}
+        </h2>
+        {{ with .copy }}
+          <div class="article-content my-4 text-base">
+            {{ $.Page.RenderString . }}
+          </div>
+        {{ end }}
 
+
+        <form
+          action="{{ site.Param `newsletters-action` }}"
+          method="post"
+          target="_blank"
+          class="p-1 font-sans text-black"
+          data-ga-form="{{ $gaForm }}"
+          data-ga-category="{{ $gaCategory }}"
+        >
+          {{ partial $hiddenField . }}
+
+
+          <div class="mb-5 flex flex-wrap justify-start align-baseline">
+            <p class="mr-3 flex-[1_0_45%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
+                First Name
+              </label>
+              <input
+                id="{{ $idFname }}"
+                class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                type="text"
+                name="FNAME"
+                placeholder="William"
+                required
+              />
+            </p>
+
+            <p class="ml-3 flex-[1_0_45%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+                Last Name
+              </label>
+              <input
+                id="{{ $idLname }}"
+                class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                type="text"
+                name="LNAME"
+                placeholder="Penn"
+                required
+              />
+            </p>
+            <p class="mr-6 flex-[1_0_45%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+                Email Address
+              </label>
+              <input
+                id="{{ $idEmail }}"
+                class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 px-4 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                type="email"
+                name="EMAIL"
+                placeholder="billpenn@example.com"
+                required
+              />
+            </p>
+            <button
+              type="submit"
+              class="mt-8 rounded border-2 border-red bg-red px-8 py-2 font-semibold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
+            >
+              {{ $cta }}
+            </button>
+          </div>
+          <p class=" text-sm text-s-7">{{ .disclaimer }}</p>
+        </form>
+      </div>
+      <div
+        class="items-center justify-center self-center overflow-hidden rounded border border-s-5 shadow md:col-span-4 md:col-start-8"
+      >
+        {{ $name := .image }}
+        {{ $imgOpts := dict
+          "filename" $name
+          "widthRatio" 4
+          "heightRatio" 3
+        }}
+        {{ partial "component/image-block.html" $imgOpts }}
+
+      </div>
+    </div>
   </section>
 {{ end }}

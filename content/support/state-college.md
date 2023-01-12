@@ -9,13 +9,14 @@ layout = "support"
 [[blocks]]
   hed =  "Talk of the Town"
   copy = "Spotlight PA’s free weekly newsletter with a fresh, positive look at the incredible people, beautiful places, and delicious food Pennsylvania has to offer. Plus events, guides, best-of, and more."
+  image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
   layout = "signup"
   list = "talkofthetown"
    gaCategory= "newsletters:statecollege"
   gaForm= "newsletters:statecollege-full"
   hiddenField= "newsletter/talkofthetown-hidden.html"
   cta= "Subscribe"
-
+  disclaimer="please add newsletters@spotlightpa.org to your contacts, or check your spam folder and mark it as “not spam.”"
 
 [[blocks]]
 layout = "supplemental"
