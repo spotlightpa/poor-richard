@@ -1,5 +1,7 @@
 {{ with .block }}
-  <section class="  py-12 px-2">
+  {{ $id := urlize .hed }}
+
+  <section id="{{ $id }}" class="py-12 px-2">
     <div class="mx-auto my-14 w-full max-w-[1248px]">
       <h2
         class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
@@ -14,7 +16,7 @@
         </h3>
       {{ end }}
       <div class="supporters-list">
-        <ul class=" max-w-4xl column-gap-2 columns-2 gap-10 py-8 md:columns-3">
+        <ul class=" column-gap-2 max-w-4xl columns-2 gap-10 py-8 md:columns-3">
           {{ partial .data_file }}
         </ul>
       </div>
