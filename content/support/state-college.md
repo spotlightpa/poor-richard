@@ -7,8 +7,15 @@ image-credit = "Abby Drey / Centre Daily Times"
 layout = "support"
 
 [[blocks]]
-title =  "Signup Form"
-layout = "text"
+  hed =  "Talk of the Town"
+  copy = "Spotlight PA’s free weekly newsletter with a fresh, positive look at the incredible people, beautiful places, and delicious food Pennsylvania has to offer. Plus events, guides, best-of, and more."
+  layout = "signup"
+  list = "talkofthetown"
+   gaCategory= "newsletters:statecollege"
+  gaForm= "newsletters:statecollege-full"
+  hiddenField= "newsletter/talkofthetown-hidden.html"
+  cta= "Subscribe"
+
 
 [[blocks]]
 layout = "supplemental"
