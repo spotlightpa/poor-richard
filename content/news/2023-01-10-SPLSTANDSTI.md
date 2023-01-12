@@ -12,11 +12,14 @@ internal-id = "SPLSTANDSTI"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-01-10T13:17:56.11-05:00
-slug = "pa-house-speaker-mark-rozzi-resign-jim-gregory-clergy-abuse-amednment"
+slug = "pa-house-speaker-mark-rozzi-resign-jim-gregory-clergy-abuse-amendment"
 suppress-date = false
 title = "Pa. House at a standstill as deadline nears to get relief for child sex abuse survivors on May ballot"
 title-tag = "Deadline nears for PA abuse relief amendment"
 topics = ["The Capitol"]
+aliases = [
+"/news/2023/01/pa-house-speaker-mark-rozzi-resign-jim-gregory-clergy-abuse-amednment/"
+]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
