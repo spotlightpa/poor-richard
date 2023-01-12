@@ -42,7 +42,7 @@
     data-ga-category="guides"
   >
     {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
-    {{ partial "tw/list-3-col-story-noImg.html" (dict
+    {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Penn State Transparency Tracker"
       "pages" $guide.RegularPages
       "readMoreLink" $guide.RelPermalink
