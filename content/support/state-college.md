@@ -37,7 +37,22 @@ Recognized as one of the most promising journalism endeavors in the United State
 
 [[blocks]]
 title =  "Team"
-layout = "text"
+layout = "team"
+
+[[blocks.staff]]
+    name="Wyatt Massey"
+    role="Investigative Reporter"
+    email="wmassey@spotlightpa.org"
+    headshot = "/2022/12/01hs-mh4k-sc16-tc09.jpeg"
+    bio = "Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
+
+[[blocks.staff]]
+    hed="Meet Spotlight PA’s Penn State Investigative Reporter"
+    name="Sarah Rafacz"
+    headshot = "/2022/12/01hs-ja54-d44m-7mff.webp"
+    role="State College Editor"
+    email="srafacz@spotlightpa.org"
+    bio="Sarah Rafacz is the editor of Spotlight PA’s State College bureau. Before joining Spotlight PA to help launch its first regional bureau, she was the editor of State College Magazine."
 
 [[blocks]]
     layout = "donate"
