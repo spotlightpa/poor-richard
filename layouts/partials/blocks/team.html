@@ -7,42 +7,43 @@
         {{ .title }}
       </h2>
 
-        {{ with .staff }}
-          <ul class="mx-auto my-14 w-full max-w-[1248px] flex flex-wrap justify-between">
-            {{ range . }}
-              <li 
-                class="mb-2 grid grid-cols-5 gap-5 max-w-xl rounded bg-white p-5 shadow-md md:flex-[0_1_48%]"
-              >
-                {{ if .headshot }}
-                  {{ $thumb := .headshot }}
-                  {{ $imgOpt := dict
-                    "filename" .headshot
-                    "width" 376
-                    "height" 376
-                  }}
-                  {{ $thumb := partial "helper/imgproxy" $imgOpt }}
-                  <img
-                    class="col-span-2 row-span-2 mr-4 rounded-full grayscale filter"
-                    src="{{ $thumb }}"
-                    alt="Picture of {{ .name }}"
-                  />
-                {{ end }}
+      {{ with .staff }}
+        <ul
+          class="mx-auto my-14 flex w-full max-w-[1248px] flex-wrap justify-between"
+        >
+          {{ range . }}
+            <li
+              class="mb-2 grid max-w-xl grid-cols-5 gap-5 rounded bg-white p-5 shadow-md md:flex-[0_1_48%]"
+            >
+              {{ if .headshot }}
+                {{ $thumb := .headshot }}
+                {{ $imgOpt := dict
+                  "filename" .headshot
+                  "width" 376
+                  "height" 376
+                }}
+                {{ $thumb := partial "helper/imgproxy" $imgOpt }}
+                <img
+                  class="col-span-2 row-span-2 mr-4 rounded-full"
+                  src="{{ $thumb }}"
+                  alt="Picture of {{ .name }}"
+                />
+              {{ end }}
 
-                <header
-                  class="col-span-3 mt-6 row-span-1 mb-2 max-w-xs self-end font-black"
->
+
+              <header
+                class="col-span-3 row-span-1 mt-6 mb-2 max-w-xs self-end font-black"
+              >
                 <h3 class="text-2xl">{{- .name -}}</h3>
                 <h4 class="text-sm uppercase">{{ .role }}</h4>
-                </header>
-                <p
-                  class="mb-5 max-w-sm col-span-3 row-span-1 "
-                >
-                  {{ .bio }}
-                </p>
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+              </header>
+              <p class="col-span-3 row-span-1 mb-5 max-w-sm ">
+                {{ .bio }}
+              </p>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
 
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
