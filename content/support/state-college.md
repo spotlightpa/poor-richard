@@ -44,6 +44,12 @@ layout = "text"
     hed="Become a Supporter"
     cta="Join"
     theme="centrecounty"
+
+[[blocks]]
+    layout = "supporters"
+    hed="Our Major Donors"
+    category="$1000 and above"
+    data_file = "helper/get-supporters-sc"
 +++
 
 ## A Novel Approach to Reinvigorating Local News

@@ -1,13 +1,20 @@
 {{ with .block }}
-  <section class="bg-s-2 py-14 px-2">
-    <div class="mx-auto my-14 w-full max-w-screen-md">
+  <section class="  py-12 px-2">
+    <div class="mx-auto my-14 w-full max-w-[1248px]">
       <h2
-        class="font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-5xl"
+        class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
       >
         {{ .hed }}
       </h2>
+      {{ with .category }}
+        <h3
+          class="mb-6 font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"
+        >
+          {{ . }}
+        </h3>
+      {{ end }}
       <div class="supporters-list">
-        <ul class=" column-gap-2 columns-2 gap-10 py-8 md:columns-3">
+        <ul class=" max-w-4xl column-gap-2 columns-2 gap-10 py-8 md:columns-3">
           {{ partial .data_file }}
         </ul>
       </div>
