@@ -38,9 +38,9 @@ copy = """
 
   [Institutional funders and members since launch →]()
 
-  [Leaders in Action →](/support/leaders-in-action)
+  [Leaders in Action →](/support/leaders-in-action/#our-current-leaders)
 
-  [State College regional bureau supporters →]()
+  [State College regional bureau supporters →](/support/state-college/#our-major-donors)
 """
 
 [[blocks]]
