@@ -17,7 +17,7 @@ published = 2023-01-05T15:30:00-05:00
 slug = "tioga-tamir-rice-pennsylvania-local-accountability-event"
 suppress-date = false
 title = "You’re invited! A free virtual panel on Pa.’s patchwork system of local governments"
-title-tag = "Free panel on PA's patchwork local government sytem"
+title-tag = "Free panel on PA's patchwork local government system"
 topics = ["Events"]
 +++
 
