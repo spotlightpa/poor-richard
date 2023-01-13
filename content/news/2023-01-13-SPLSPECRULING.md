@@ -25,16 +25,18 @@ HARRISBURG — Special elections to fill Pennsylvania House seats vacated by Dem
 
 Democratic and Republican leaders from the lower chamber had both claimed they had the authority to schedule three critical special elections in Allegheny County. The outcome of those races will likely determine which party holds the majority in the state House, which is currently at a standstill because of the ongoing power struggle.
 
-The parties had previously agreed to hold one special election, to replace the late state Rep. Tony Deluca, on Feb. 7, but were at loggerheads on two others.
+The parties had previously agreed to hold one special election, to replace the late state Rep. Tony DeLuca, on Feb. 7, but were at loggerheads on two others.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
 On Friday, a three-judge panel <a href="https://www.pacourts.us/Storage/media/pdfs/20230113/183545-jan.13,2022-preliminaryobjectionssustained.pdf">ruled</a> in favor of Democratic Leader Joanna McClinton’s preference to hold all three elections on that date. Republicans had requested that two of the elections be held in the May primary.
 
-It was not immediately clear whether Republicans would appeal the ruling to the state Supreme Court. Jason Gottesman, a spokesperson for state House Republicans, did not immediately return a call seeking comment.
-
 “Today’s decision is good news for the nearly 200,000 Allegheny County residents currently without representation in the state House,” a spokesperson for the state House Democratic caucus said in a statement. “Now county elections officials can proceed to print ballots and make final preparations for special elections in the 32nd, 34th, and 35th legislative districts on February 7.”
+
+A statement released by state House Republicans did not say whether the caucus would appeal the ruling to the Pennsylvania Supreme Court. 
+
+“Instead of resolving a dispute where the answer was self-evident based on the numbers, the court took the path of least resistance and thereby weakened the foundations of our republic and faith in the rule of law,” state House Republican Leader Bryan Cutler said in a <a href="https://www.pahousegop.com/News/31761/Latest-News/Republican-Leader-Bryan-Cutler-Issues-Statement-on-Commonwealth-Court-Ruling" target="_blank">statement</a>. “House Republicans remained steadfast and consistent in our desire to hold elections and fill these seats in the normal course of business, and not through illegitimate loopholes.”
 
 A spokesperson for the Allegheny County Elections Division did not immediately respond to a request for comment. <a href="https://apnews.com/article/pennsylvania-pittsburgh-c17d343149408a2fda1743a9630444a6">According to the Associated Press</a>, a lawyer for the county said Wednesday that voting machines had been tested and precincts had been secured for the elections. Ballots had not yet been printed nor had mail ballots been sent out as of Wednesday.
 
@@ -46,7 +48,7 @@ In the lead-up to the beginning of the session, Democratic and Republican leader
 
 After talks failed, McClinton had herself sworn in early and claimed Democrats’ 102 wins gave her the authority to schedule the elections for Feb. 7.
 
-While still serving as state House speaker in November, Republican Bryan Cutler set the date for DeLuca’s special election for Feb. 7. A few days after McClinton’s actions — which Republicans called a “paperwork insurrection” — Cutler had himself sworn in and scheduled the other two elections for the May primary. He claimed doing so would reduce confusion and costs for Allegheny County.
+While still serving as state House speaker in November, Cutler set the date for DeLuca’s special election for Feb. 7. A few days after McClinton’s actions — which Republicans called a “paperwork insurrection” — Cutler had himself sworn in and scheduled the other two elections for the May primary. He claimed doing so would reduce confusion and costs for Allegheny County.
 
 Cutler then filed a lawsuit that asked the state’s appellate courts to reject McClinton’s election dates and honor his authority to set the dates.
 
