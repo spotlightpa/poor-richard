@@ -16,7 +16,7 @@ slug = "pa-legislature-constitutional-amendments-voter-id-abortion-explainer"
 suppress-date = false
 title = "How a constitutional amendment gets on the ballot in Pennsylvania"
 title-tag = "How a constitutional amendment gets on PA's ballot "
-topics = ["The Capitol"]
+topics = ["The Capitol", "How Harrisburg Works"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
