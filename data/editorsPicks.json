@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-01-12-SPLCONEXP.md"
+    "content/news/2023-01-13-SPLSPECRULING.md"
   ],
   "subfeatures": [
-    "content/news/2022-12-16-SPLWOLF15.md",
-    "content/news/2022-12-07-SPLWOLFINT.md"
+    "content/news/2023-01-10-SPLSTANDSTI.md"
   ],
   "topSlots": [
+    "content/news/2023-01-12-SPLCONEXP.md",
     "content/news/2023-01-13-SPLRECRES.md",
-    "content/news/2023-01-12-SPLWOLFLEG.md",
-    "content/news/2023-01-10-SPLSTANDSTI.md"
+    "content/news/2023-01-12-SPLWOLFLEG.md"
   ],
   "topper": []
 }
