@@ -25,7 +25,7 @@ HARRISBURG — More than two years after the first coronavirus cases were report
 
 But with nearly 90% of people held at state prisons vaccinated and cases significantly down, both incarcerated people and their advocates are asking the Department of Corrections to reassess restrictions that sacrifice quality of life and add financial hardship.
 
-The coronavirus hit Pennsylvania state prisons in <a href="https://www.wgal.com/article/pennsylvania-department-of-corrections-reports-first-inmate-to-test-positive-with-covid-19/31970534">late March 2020</a>, sending the system’s 23 prisons into <a href="https://www.cor.pa.gov/About%20Us/Newsroom/Pages/2020-News-Releases.aspx">quarantine</a>. Extreme restrictions on movement kept people in cells and largely uninfected through the spring. But more contagious permutations of the virus overwhelmed the tight restrictions.
+The coronavirus hit Pennsylvania state prisons in <a href="https://www.wgal.com/article/pennsylvania-department-of-corrections-reports-first-inmate-to-test-positive-with-covid-19/31970534">late March 2020</a>, sending the system’s 23 prisons into <a href="https://web.archive.org/web/20221231211520/https://www.cor.pa.gov/About%20Us/Newsroom/Pages/2020-News-Releases.aspx">quarantine</a>. Extreme restrictions on movement kept people in cells and largely uninfected through the spring. But more contagious permutations of the virus overwhelmed the tight restrictions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
