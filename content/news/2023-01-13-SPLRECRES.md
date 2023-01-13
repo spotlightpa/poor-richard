@@ -92,7 +92,9 @@ There’s been some sign of this already. Lycoming Patriots, one of the conserva
 
 And DiSalvo has already sought to cast doubt on the results of the recount. She questioned the accuracy of the results even before they were posted, saying that because Lehman was the one counting the vote tally sheets, the results would be suspect because he had a “vested interest.”
 
-DiSalvo did not immediately respond to a request for comment, but Peters said he thinks it will give people more confidence in the system.
+DiSalvo complained about not having access to the tally sheets, but said if the results are accurate, “it confirms our position that hand counts can be done quickly and economically and should be a part of every election going forward.”
+
+Peters said he thinks it will give people more confidence in the system.
 
 “I think there was a total of maybe 37 discrepancies, so yeah that’s not a deal breaker,” he said. “But you get to half a percent, I think maybe there’s something to worry about.”
 
