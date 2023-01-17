@@ -58,11 +58,9 @@ Republicans, with support from a handful of Democrats, advanced extremely contro
 
 Some of those measures could reach voters this May.
 
-In early January, the state Senate, in a 28-20 vote, passed four amendments bundled together in one package:
+In early January, the state Senate, in a 28-20 vote, passed three amendments bundled together in one package:
 
-- a <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">mandate for universal voter ID</a>,
-
-- a directive for the Office of Auditor General to <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0130&pn=0015">conduct annual review of elections and election results</a>,
+- a <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">mandate for universal voter ID</a>;
 
 - a provision to give the <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">General Assembly more power to override regulations</a>;
 
