@@ -43,6 +43,8 @@ series = []
 
 {{<featured/large>}}In April, she applied to a Pennsylvania program that promises to help homeowners recover from the financial impact of the pandemic. {{</featured/large>}}
 
+{{<featured/sticky-trigger>}}
+
 After Fajinmi’s husband died of COVID-19, in the spring of 2021, she found herself responsible for more than $5,000 in late mortgage payments on the house they had lived in together. 
 
 She felt like she was living in “survival mode.” The stress and grief made her hair fall out in clumps. She checked online for updates on her application every day, sometimes twice a day.
