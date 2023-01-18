@@ -56,7 +56,7 @@ Chrysan Cronin, director and professor of public health at Muhlenberg College, s
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-Also Friday, Wolf announced that some counties will soon be allowed to enter the green phase, which lifts most restrictions on businesses but still requires them to follow social-distancing guidelines and other safety precautions. Restaurants, bars, gyms, hair salons, and barbershops <a href="https://www.governor.pa.gov/plan-for-pennsylvania/" target=_blank>will only be allowed to operate</a> at 50% capacity, and large gatherings will be restricted. Officials said they will release more details next week.
+Also Friday, Wolf announced that some counties will soon be allowed to enter the green phase, which lifts most restrictions on businesses but still requires them to follow social-distancing guidelines and other safety precautions. Restaurants, bars, gyms, hair salons, and barbershops <a href="https://web.archive.org/web/20200418013147/https://www.governor.pa.gov/plan-for-pennsylvania/">will only be allowed to operate</a> at 50% capacity, and large gatherings will be restricted. Officials said they will release more details next week.
 
 The counties moving to green on May 29 are in north-central and northwest Pennsylvania: Bradford, Cameron, Clarion, Clearfield, Crawford, Elk, Forest, Jefferson, Lawrence, McKean, Montour, Potter, Snyder, Sullivan, Tioga, Venango, and Warren.
 

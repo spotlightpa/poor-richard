@@ -36,7 +36,7 @@ HARRISBURG — Gov. Tom Wolf on Friday announced the broad outline of his plan f
 
 Wolf has shuttered all but “life-sustaining” businesses and ordered residents in all 67 counties to stay at home. That order expires April 30.
 
-Information released Friday includes six “[standards](https://web.archive.org/web/20200418013147/https://www.governor.pa.gov/plan-for-pennsylvania/#Phase2Reopening)” for reopening. See them below.
+Information released Friday includes six “[standards](https://web.archive.org/web/20200418013147/https://www.governor.pa.gov/plan-for-pennsylvania/)” for reopening. See them below.
 
 1. Our approach will be data driven and reliant upon quantifiable criteria to drive a targeted, evidence-based, regional approach to reopenings in Pennsylvania.
 2. We will put forth guidance and recommendations for employers, individuals, and health care facilities and providers for assured accountability as we reopen.

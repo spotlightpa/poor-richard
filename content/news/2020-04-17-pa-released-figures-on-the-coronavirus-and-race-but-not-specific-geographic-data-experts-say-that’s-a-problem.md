@@ -42,7 +42,7 @@ Public health experts say officials and providers can’t wait until the pandemi
 
 The Wolf administration has published the number of confirmed COVID-19 cases and deaths for every county in Pennsylvania and created a public dashboard of hospital preparedness data. It also this week began releasing county-by-county data on cases and deaths in elder-care facilities, as well as a breakdown of cases by sex.
 
-Department of Health spokesperson Nate Wardle said Thursday officials are working to provide more data to the public, and Gov. Tom Wolf on Wednesday [announced a task force](https://www.governor.pa.gov/newsroom/gov-wolf-lt-gov-fetterman-new-task-force-for-health-disparity-to-address-how-covid-19-affects-minorities/) to be led by Lt. Gov. John Fetterman that will study health disparities in Pennsylvania’s vulnerable communities.
+Department of Health spokesperson Nate Wardle said Thursday officials are working to provide more data to the public, and Gov. Tom Wolf on Wednesday [announced a task force](https://web.archive.org/web/20230117045913/https://www.governor.pa.gov/newsroom/gov-wolf-lt-gov-fetterman-new-task-force-for-health-disparity-to-address-how-covid-19-affects-minorities/) to be led by Lt. Gov. John Fetterman that will study health disparities in Pennsylvania’s vulnerable communities.
 
 House Minority Leader Frank Dermody said reliable information is “one of the best weapons” for mitigating the spread of COVID-19 and acknowledged the racial disparities already emerging, though data are limited.
 
