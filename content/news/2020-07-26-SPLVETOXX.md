@@ -36,7 +36,7 @@ HARRISBURG — After facing months of questions about his administration’s tra
 
 Despite the legislation’s unanimous approval in the General Assembly, Wolf had repeatedly threatened to veto the measure.
 
-“While I am still very concerned about the ill-conceived and poorly drafted legislation as it pertains to protections for critical security and infrastructure during an emergency, I am going to err on the side of transparency, as I have done throughout my term, and let this bill become law,” Wolf said in a <a href="hhttps://web.archive.org/web/20230116195121/https://www.governor.pa.gov/newsroom/gov-wolf-allows-hb-2463-to-become-law/">statement</a> Sunday. 
+“While I am still very concerned about the ill-conceived and poorly drafted legislation as it pertains to protections for critical security and infrastructure during an emergency, I am going to err on the side of transparency, as I have done throughout my term, and let this bill become law,” Wolf said in a <a href="https://web.archive.org/web/20230116195121/https://www.governor.pa.gov/newsroom/gov-wolf-allows-hb-2463-to-become-law/">statement</a> Sunday.
 
 Republicans in the legislature have complained bitterly for months that Wolf has shielded important information about his administration’s decision-making while responding to the public health crisis. The dispute has even led some GOP lawmakers to sue the administration for records related to a <a href="https://www.spotlightpa.org/news/2020/06/coronavirus-business-waivers-pennsylvania-shutdown-governor-tom-wolf/">controversial waiver program</a> that allowed some businesses to reopen during the shutdown while others had to remain closed.
 

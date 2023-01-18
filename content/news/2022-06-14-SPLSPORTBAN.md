@@ -21,7 +21,7 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i><b>Update, July 8: </b></i><i>Gov. Tom Wolf has </i><a href="https://www.governor.pa.gov/newsroom/gov-wolf-vetoes-discriminatory-transphobic-legislation/" target="_blank"><i>vetoed</i></a><i> HB 972, introduced by State Rep. Barbara Gleim (R., Cumberland). </i>
+<i><b>Update, July 8: </b></i><i>Gov. Tom Wolf has </i><a href="https://web.archive.org/web/20230116210800/https://www.governor.pa.gov/newsroom/gov-wolf-vetoes-discriminatory-transphobic-legislation/" target="_blank"><i>vetoed</i></a><i> HB 972, introduced by State Rep. Barbara Gleim (R., Cumberland). </i>
 
 <i>“The fact that this bill passed through Pennsylvania’s Republican-led General Assembly solely to bully and oppress vulnerable children is atrocious,” he said in a statement. “These members should be ashamed of themselves for proposing and voting on policies that are discriminatory,&nbsp;unnecessary, and incredibly harmful.”</i>
 

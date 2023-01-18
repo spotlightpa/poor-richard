@@ -39,7 +39,7 @@ Overall, the deal represents a 2.9% increase in state spending compared to last 
 
 A tax credit for individuals or businesses who donate to parochial and private schools, <a href="https://www.penncapital-star.com/education/eitc-explained-how-pennsylvanias-educational-tax-credit-program-works/">so they can in turn offer scholarships to students</a>, was also expanded by $125 million, a 45% increase.
 
-The plan includes a gradual decrease in <a href="https://www.spotlightpa.org/news/2022/06/pa-corporate-tax-cut-bipartisan-proposals/">corporate net income tax</a> from 9.99% to 4.99% by 2031, the repeal of <a href="https://www.governor.pa.gov/newsroom/gov-wolf-new-regulations-providing-for-charter-school-transparency-equity-and-accountability-to-take-effect/">new regulations</a> on charter schools, and a $2.1 billion deposit into the state’s rainy day fund, which Republican leaders pointed to as key wins.
+The plan includes a gradual decrease in <a href="https://www.spotlightpa.org/news/2022/06/pa-corporate-tax-cut-bipartisan-proposals/">corporate net income tax</a> from 9.99% to 4.99% by 2031, the repeal of <a href="https://web.archive.org/web/20230116210611/https://www.governor.pa.gov/newsroom/gov-wolf-new-regulations-providing-for-charter-school-transparency-equity-and-accountability-to-take-effect/">new regulations</a> on charter schools, and a $2.1 billion deposit into the state’s rainy day fund, which Republican leaders pointed to as key wins.
 
 “This bill is exactly the medicine this commonwealth needs,” House Appropriations Chair Stan Saylor (R., York) said Thursday on the House floor.
 
