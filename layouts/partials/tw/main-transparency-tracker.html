@@ -1,23 +1,23 @@
-<section class="bg-white px-4 md:px-0 pt-12 pb-2 md:pb-6">
-    <header>
-      <div class="mx-auto w-full max-w-screen-lg">
-        <h1
-          class="font-serif text-center max-w-3xl mx-auto text-3xl sm:text-4xl md:text-6xl font-extrabold leading-none tracking-wide"
-        >
-          {{- .Title -}}
-        </h1>
-      </div>
-      <div class="mx-auto w-full max-w-prose mb-5">
-        <h2
-          class="mt-4 text-justify font-sans text-lg font-semibold leading-tight text-s-6"
-        >
-          {{ .Param "dek" | default .Params.description }}
-        </h2>
+<section class="bg-white px-4 pt-12 pb-2 md:px-0 md:pb-6">
+  <header>
+    <div class="mx-auto w-full max-w-screen-lg">
+      <h1
+        class="mx-auto max-w-3xl text-center font-serif text-3xl font-extrabold leading-none tracking-wide sm:text-4xl md:text-6xl"
+      >
+        {{- .Title -}}
+      </h1>
+    </div>
+    <div class="mx-auto mb-5 w-full max-w-prose">
+      <h2
+        class="mt-4 text-center font-sans text-lg font-semibold leading-tight text-s-6"
+      >
+        {{ .Param "dek" | default .Params.description }}
+      </h2>
 
-        {{ partial "tw/image-hero.html" . }}
+      {{ partial "tw/image-hero.html" . }}
 
-      </div>
-    </header>
+    </div>
+  </header>
 
   <div class="bg-s-2 font-raleway">
     {{ .Page.RenderString (.Param "form") }}
@@ -30,7 +30,7 @@
   >
     {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
     {{ partial "tw/list-3-col-story-nobyline.html" (dict
-      "hed" "Penn State Transparency Tracker"
+      "hed" "Previous Stories"
       "pages" $guide.RegularPages
       "readMoreLink" $guide.RelPermalink
       "readMore" "Read More Transparency Tracker stories"
@@ -42,7 +42,7 @@
 
   <div class="bg-s-2" data-ga-category="text">
     <article
-      class="article-content font-raleway mx-auto max-w-[1248px] py-24 px-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+      class="article-content mx-auto max-w-[1248px] py-24 px-5 font-raleway md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
       {{ range $i, $blocks := .Params.blocks }}
         {{ $id := urlize .title }}
