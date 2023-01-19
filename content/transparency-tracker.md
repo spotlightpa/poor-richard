@@ -8,6 +8,7 @@ layout = "transparency-tracker"
 image = "2023/01/01hv-rnbb-kdh9-51jb.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-gravity = "so"
+newsletter-active = false
 credits = """
 {{<featured/credit-long
     hed="Meet Spotlight PA’s Penn State Investigative Reporter"
