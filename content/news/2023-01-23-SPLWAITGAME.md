@@ -343,7 +343,7 @@ In December, VanBuren was relieved to learn that her mortgage company had finall
     email="shutchins@spotlightpa.org"
   >}}
   {{<featured/credit
-    eyebrow="Fact-checking"
+    eyebrow="Fact-checking and copy editing"
     name="Stephen Kearse"
     role="Assistant Editor"
     email="skearse@spotlightpa.org"
