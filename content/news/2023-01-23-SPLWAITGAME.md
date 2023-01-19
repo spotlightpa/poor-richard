@@ -55,20 +55,20 @@ Starting in 2020, federal protections allowed most homeowners to temporarily sto
 
 Almost a year after it launched, however, the Pennsylvania Homeowner Assistance Fund (PAHAF) is overwhelmed by demand, interviews and public records show. The fund frequently struggles to get the information it needs from mortgage companies, causing delays and complaints from increasingly desperate applicants who say they cannot get updates from program workers. 
 
-Wait times depend largely on how responsive mortgage companies are to PAHAF’s requests to confirm how much someone owes, which can involve weeks or months of back-and-forth. An application cannot move ahead until that information is provided. 
+Wait times depend largely on how responsive mortgage companies are to PAHAF’s requests to confirm how much someone owes, which can involve weeks or months of back-and-forth, administrators said. An application cannot move ahead until that information is provided. 
 
 By mid-December, more than 6,000 applications were in the final stage of approval, according to public data. Those people had been waiting, on average, more than 6 months, said Mandy McIntyre, a PAHAF spokesperson.
 
 {{<featured/info
   side="right"
 >}}
-### Key points:
+### Key points
 
 - Pennsylvania received $350 million from the federal government to help homeowners recover from the pandemic. 
 - The state program launched in February 2022 and covers mortgage and utility debt, delinquent property taxes, and other housing costs, as well as ongoing mortgage payments. 
 - The process of confirming an applicant’s debt with their mortgage or utility company has caused months-long delays, pushing average wait times to twice the program’s goal of 60 days.  
 - Some homeowners seeking help with overdue utility bills have had their service shut off while waiting. 
-- Nearly two dozen applicants told Spotlight PA they had difficulty getting updates from the program while waiting, compounding their frustration and anxiety. 
+- Nearly two dozen applicants told Spotlight PA they had difficulty getting updates from the program, compounding their frustration and anxiety. 
 {{</featured/info>}}
 Most applicants are not at risk of losing their homes while they wait, administrators and advocates said. In the majority of cases, federal rules require mortgage companies to pause foreclosure proceedings for 60 days once someone has applied to the program. 
 
@@ -79,8 +79,6 @@ Two said their applications were delayed for months after they thought they’d 
 “This program is not what you promised and absolutely not what the applicants thought they were getting into,” someone complained in an email to Democratic Gov. Tom Wolf's office in October. 
 
 In an interview, administrators acknowledged there have been problems, but stressed they are making changes to speed up the process. 
-
- 
 
 “We hear these things and we are always working to make improvements — and most of all to complete the mission of the program, which is to keep people in their homes,” said Kelly Wilson, a senior official at the Pennsylvania Housing Finance Agency, which oversees the program run by contractor Innovative Emergency Management, Inc. 
 
@@ -93,13 +91,12 @@ Thousands of other applicants are still waiting. Every few weeks, they receive t
 {{<featured/picture
   src="2023/01/01hw-g1n3-z0pq-9hab.jpeg"
   description="Rooftops of homes in Blair County, Pennsylvania."
-  caption="Rooftops of homes in Blair County, Pennsylvania."
   credit="Amanda Berg / For Spotlight PA"
 >}}
 
 ### ‘We should have been foreclosing by now’
 
-For PAHAF administrators, the most-time consuming part of the process is also one of the most crucial: confirming with someone’s mortgage company how much they owe.
+For PAHAF administrators, the most time-consuming part of the process is also one of the most crucial: confirming with someone’s mortgage company how much they owe.
 
 But mortgage companies — often overwhelmed, short-staffed, and juggling requests from multiple states running their own assistance efforts — do not always respond promptly to the program’s inquiries, leaving thousands of applications in limbo. 
 
@@ -107,12 +104,11 @@ One homeowner complained to PAHAF in July that their application seemed to be �
 
 {{<featured/info>}}
 
-### How we reported this story: 
+### How we reported this story
 
-Spotlight PA spoke to more than 20 people who had applied to the program, many of whom shared emails, text messages, program records, mortgage statements, and utility bills to help document their experience. We also spoke to attorneys, advocates, and housing counselors. 
+Spotlight PA spoke to more than 20 people who had applied to the Pennsylvania Homeowner Assistance Fund, many of whom shared emails, text messages, program records, mortgage statements, and utility bills to help document their experience. We also spoke to attorneys, advocates, and housing counselors. 
 
-All of the homeowners who are quoted by name, or whose experience is discussed at length, 
-signed releases giving the program permission to respond to Spotlight PA’s detailed questions about their experiences. 
+All of the homeowners who are quoted by name, or whose experience is discussed at length, signed releases giving the program permission to respond to Spotlight PA’s detailed questions about their experiences. 
 
 
 To ensure program administrators could respond in detail, Spotlight PA shared several rounds of written questions and summaries of applicants’ experiences. Program officials provided several detailed written responses and spoke with a reporter in an hour-long interview. 
@@ -130,10 +126,10 @@ The delays — multiplied across hundreds of companies and thousands of applicat
 Between February 2022, when PAHAF launched, and late December, the average wait time was roughly four-and-a-half months, she said. (This does not account for people seeking ongoing mortgage help.) 
 
 The prolonged back-and-forth leaves some applicants feeling as if they are playing a high-stakes game of telephone, relaying information from their mortgage company to the program and vice versa. 
-“I’ve gone above and beyond to provide relevant info and to keep everyone informed, but I do have a full time job,” one applicant wrote in a Facebook message to 
-the program in June. “I sincerely don’t have the bandwidth to be on the phone [with the program and the bank] almost everyday.” 
 
-One woman, who asked not to be named to protect her family’s privacy, told PAHAF via Facebook messenger in April that her lender had accused her of making the program up. The company told her they hadn’t heard from the program in weeks; program workers told her the company wasn’t giving them the information they needed.
+“I’ve gone above and beyond to provide relevant info and to keep everyone informed, but I do have a full time job,” one applicant wrote in a Facebook message to the program in June. “I sincerely don’t have the bandwidth to be on the phone [with the program and the bank] almost everyday.” 
+
+One woman, who asked not to be named to protect her family’s privacy, told PAHAF via Facebook Messenger in April that her lender had accused her of making the program up. The company told her they hadn’t heard from the program in weeks; program workers told her the company wasn’t giving them the information they needed.
 
 The problem, public records show, was a minor mistake she had made on a crucial form, which program workers failed to catch. For weeks, they had been contacting the wrong company — “United Federal Credit Union” instead of “_The_ United Federal Credit Union.”
 
@@ -143,13 +139,13 @@ Even after the confusion was resolved, however, an official at the credit union 
   side="right"
   mobile-reveal="true"
 >}}
-### By the numbers: 
+### By the numbers 
 
 **$350 million** – amount Pennsylvania received from the federal government 
 
 **$87.6 million** – amount paid out as of Jan. 16, 2023 
 
-**$7,806** – amount homeowners have received, on average as of Jan. 16, 2023 
+**$7,806** – amount homeowners have received, on average, as of Jan. 16, 2023 
 
 **23,003** – number of applications submitted as of Jan. 16, 2023 
 {{</featured/info>}}
@@ -165,7 +161,7 @@ Another three weeks. Her credit score dropped 160 points. The program reassured 
 Another snag came two days later. Despite months of phone calls and emails from the program, her lender still had not signed a formal agreement to take part. The company finally received the payment in mid-July, more than six months after she first applied. 
 
 
-A PAHAF official followed up on Facebook to apologize again, saying that the “delays and challenges” in her case had been “flagged with top management” as an example of the need for changes. (In a statement, McIntyre said administrators changed their process to prevent similar holdups and that the woman’s failure to promptly return a key document contributed to some of the delays.) 
+A PAHAF official followed up on Facebook to apologize again, saying that the “delays and challenges” in her case had been “flagged with top management” as an example of the need for changes. In a statement, McIntyre said administrators changed their process to prevent similar holdups and that the woman’s failure to promptly return a key document contributed to some of the delays. 
 
 By August, the woman had another problem: After waiting weeks for help with her water bill, her service had been shut off. The timing was awful. It was the week before school started, and her four boys couldn’t shower. She had to use her food stamps to buy water to cook and flush the toilet.
 
@@ -177,14 +173,14 @@ The board later voted to participate, and after a few days with no water, the wo
 
 
 {{<featured/picture
-  src="2023/01/01hw-g2ky-z3ds-fhjx.jpeg"
-  description="Alexis VanBuren’s application was approved in August, but was delayed another three months after her mortgage company needed to update some of the information it had provided."
-  caption="Alexis VanBuren’s application was approved in August, but was delayed another three months after her mortgage company needed to update some of the information it had provided."
+  src="2023/01/01hw-grf6-ej4g-82je.jpeg"
+  description="Pennsylvania received $350 million in federal aid for mortgage relief. The Pennsylvania Homeowner Assistance Fund opened in February 2022."
+  caption="Pennsylvania received $350 million in federal aid for mortgage relief. The Pennsylvania Homeowner Assistance Fund opened in February 2022."
   credit="Amanda Berg / For Spotlight PA"
 >}}
 
 
-### ‘The power has now been off all week’ 
+### ‘The power has been off now all week’ 
 
 
 While mortgage companies are mostly required to pause the foreclosure process after someone applies to PAHAF, no similar restrictions exist for utility companies. 
@@ -192,16 +188,14 @@ While mortgage companies are mostly required to pause the foreclosure process af
 McIntyre said the program strives to prevent applicants’ utilities from being shut off, but companies are not legally obliged to comply with those requests. The program urges applicants who receive shut-off warnings to share them so their cases can be fast-tracked — an instruction that doesn’t always help. 
 
 
-{{<featured/info
-  side="right"
->}}
-### Timeline: 
+{{<featured/info>}}
+### Timeline
 
-- March 11, 2021 – President Biden signs the American Rescue Plan into law. The package includes almost $10 billion in relief for homeowners. 
-- June 25, 2021 – Pennsylvania lawmakers task the Pennsylvania Housing Finance Agency with overseeing the state’s aid program. 
-- August 2021 – PHFA launches a pilot homeowner assistance program.
-- October 7, 2021 – PHFA contracts with Innovative Emergency Management, Inc. to run the wider program. 
-- February 1, 2022 – The Pennsylvania Homeowner Assistance Fund opens to the public.
+- **March 11, 2021** – President Biden signs the American Rescue Plan into law. The package includes almost $10 billion in relief for homeowners. 
+- **June 25, 2021** – Pennsylvania lawmakers task the Pennsylvania Housing Finance Agency (PHFA) with overseeing the state’s aid program. 
+- **August 2021** – PHFA launches a pilot homeowner assistance program.
+- **October 7, 2021** – PHFA contracts with Innovative Emergency Management, Inc. to run the wider program. 
+- **February 1, 2022** – The Pennsylvania Homeowner Assistance Fund opens to the public.
  
 {{</featured/info>}}
 
@@ -215,7 +209,9 @@ Several days later, he tried again, writing in an email: “I’m sorry to gripe
 
 About a week later, Sim scraped together enough money to enter a payment agreement and turn the electricity back on. But he was $182 behind on his water bill as well. He’d already sent the program the notice warning that his service would be disconnected.
 
-Nonetheless, in September, the water was turned off. To prepare, he'd filled gallon jugs of water, which he poured over himself in the shower. (In a statement, McIntyre said that despite multiple reminders, Sim didn’t return a form PAHAF needed in order to contact his power company; Sim disputed this. McIntyre said the program asked Sim’s water company to postpone the shut-off, but was unsuccessful.)
+Nonetheless, in September, the water was turned off. To prepare, he'd filled gallon jugs of water, which he poured over himself in the shower. 
+
+In a statement, McIntyre said that despite multiple reminders, Sim didn’t return a form PAHAF needed in order to contact his power company; Sim disputed this. McIntyre said the program asked Sim’s water company to postpone the shut-off, but was unsuccessful.
 
 It’s unclear how many homeowners have had their utilities terminated while waiting for help. In some cases, applicants complained that their gas or electricity had been turned off for weeks or even months, according to documents obtained by Spotlight PA through Right-to-Know requests.
 
@@ -235,6 +231,7 @@ Another policy also complicated the program's efforts to prevent shut-offs.
 
 When applicants sought help with housing expenses like utility bills as well as their mortgage, the utility aid would not be provided until the mortgage debt had been dealt with. This meant that some requests for utility assistance were left on hold for months, causing people to fall further behind. 
 
+{{<featured/newsletter>}}
 
 Officials said the rule ensured that applicants’ requests for help with other housing costs did not jeopardize their chances of receiving mortgage assistance by putting them over the program’s per-household cap, originally $30,000. 
 
@@ -242,6 +239,9 @@ Officials said the rule ensured that applicants’ requests for help with other 
 
 Three applicants who waited months for help with utilities or property taxes told Spotlight PA they did not know these requests could not move forward until their mortgage aid was approved. If program workers had made this clear, they said, they would have made different financial decisions. In a statement, McIntyre said that staff explain the policy “to each and every applicant,” but acknowledged that not knowing about it “became an issue for some applicants.” 
 
+{{<featured/related
+  side="right"
+>}}
 
 Wilson said the policy did not make it harder for the program to prevent utility shut-offs. If someone is at risk of having their utilities disconnected, she said, “it pushes everything to the front,” and PAHAF intervenes as soon as possible. Still, some applicants found they could not rely on those interventions, and ended up further in debt or behind on other bills in order to keep their utilities on, records show. 
 
@@ -255,14 +255,15 @@ In a statement about Welsh’s case, McIntyre said that “many applicants recei
 Welsh told program workers, via Facebook and email, that entering the payment plan would leave her with $175 until her next paycheck.
 
 
-### Any progress today?
+### ‘Any progress today?’ 
 
-CHATTER: Keisha Welsh is one of dozens of applicants who asked for updates from the Pennsylvania Homeowner Assistance Fund on Facebook Messenger. Welsh received a warning in September that her gas would be shut off unless she caught up on payments. She sent the notice to program workers, but when she couldn’t get an update, she entered a payment plan with the gas company — a decision that caused her to fall behind on other bills.
+<p class="font-sans text-base  text-s-8">Keisha Welsh is one of dozens of applicants who asked for updates from the Pennsylvania Homeowner Assistance Fund on Facebook Messenger. Welsh received a warning in September that her gas would be shut off unless she caught up on payments. She sent the notice to program workers, but when she couldn’t get an update, she entered a payment plan with the gas company — a decision that caused her to fall behind on other bills.</p>
 
-<p><script src="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/embed.js" defer></script><div data-spl-interactive="viz-sms" id="embed-container" style="border-radius:4px;overflow:hidden;"></div><small><a href="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/">Click here if you have trouble loading this dialog</a></small></p>
+<p class="font-sans text-sm  text-s-8">Sources: Keisha Welsh and Right-to-Know Request</p>
+<script src="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/embed.js" defer></script><div data-spl-interactive="viz-sms" id="embed-container" style="border-radius:4px;overflow:hidden;"></div><small class="font-sans text-sm  text-s-8"><a href="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/">Click here if you have trouble loading this dialog</a></small>
 
 
-### ‘It’s like there’s nothing they can tell me’ 
+### ‘It’s like there is nothing they can tell me’ 
 
 On top of the delays, applicants have consistently complained about a lack of communication from PAHAF, according to interviews and public records. 
 
@@ -274,18 +275,23 @@ On top of the delays, applicants have consistently complained about a lack of co
 “We are desperate, as are all who have applied, and beginning to think it is all a hoax,” came another complaint in October.
 
 
-
-{{<featured/info
-  side="right"
+{{<featured/picture
+  src="2023/01/01hw-g2ky-z3ds-fhjx.jpeg"
+  description="Alexis VanBuren’s application was approved in August, but was delayed another three months after her mortgage company needed to update some of the information it had provided."
+  caption="Alexis VanBuren’s application was approved in August, but was delayed another three months after her mortgage company needed to update some of the information it had provided."
+  credit="Amanda Berg / For Spotlight PA"
 >}}
-### Program changes:
+
+
+{{<featured/info>}}
+### Program changes
 
 **Since the program launched, administrators have:**
 
 - Increased the maximum amount homeowners can receive from $30,000 to $50,000. 
 - Raised the cap on utility assistance from $3,000 to $10,000. 
 - Replaced grant agreements that applicants had to sign and return with letters telling them how much they have been awarded, with no further action required. 
-- Given applicants the option to prioritize help with other housing costs over mortgage assistance 
+- Given applicants the option to prioritize help with other housing costs over mortgage assistance.
  
 {{</featured/info>}}Applicants told Spotlight PA that their assigned caseworkers stopped responding to them and missed scheduled appointments to call, that they were bounced from one worker to another, and that the program’s call center only provided generic updates. The communication problems, they said, heightened the stress of the long wait. 
 
@@ -306,6 +312,13 @@ When Alexis VanBuren’s application for mortgage assistance was approved in lat
 VanBuren’s mortgage company needed to change several small details in the information it gave to the program, McIntyre said. By the time these were resolved, the original grant agreement had expired, which meant PAHAF had to start the process of confirming how much VanBuren owed all over again. 
 
 In December, VanBuren was relieved to learn that her mortgage company had finally received the money. While waiting, she had watched her grandson start the fourth grade, broken both her arms in a car accident, and recovered enough to go back to work. It had been more than nine months.
+
+{{<featured/lightbox
+  image-url="https://files.data.spotlightpa.org/uploads/01hn/qzp2/newsmatch-2022-rectangles-1024-512-px-.svg"
+  width="730"
+  height="365"
+  bgcolor="#fff"
+>}}
 
 {{<featured/footer>}}
   {{<featured/credit
@@ -328,6 +341,12 @@ In December, VanBuren was relieved to learn that her mortgage company had finall
     name="Sarah Hutchins"
     role="Investigations Editor"
     email="shutchins@spotlightpa.org"
+  >}}
+  {{<featured/credit
+    eyebrow="Fact-checking"
+    name="Stephen Kearse"
+    role="Assistant Editor"
+    email="skearse@spotlightpa.org"
   >}}
   {{<featured/credit
     eyebrow="Layout"
