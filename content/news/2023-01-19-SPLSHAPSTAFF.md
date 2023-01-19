@@ -7,6 +7,7 @@ description = "Josh Shapiro's top advisors will be instrumental in helping the n
 image = "external/7t1rw8006sja0hbwqsq7yqprym.jpeg"
 image-credit = "Tom Gralish / Philadelphia Inquirer"
 image-description = "Governor Josh Shapiro, who has hired allies to advise him, leaves the Capitol with his wife Lori before being sworn in."
+image-gravity = "no"
 internal-budget = "Loyal allies, political veterans will have Josh Shapiro’s ear as governor. Here’s what to know."
 internal-id = "SPLSHAPSTAFF"
 kicker = "The Capitol"
