@@ -57,7 +57,7 @@ Almost a year after it launched, however, the Pennsylvania Homeowner Assistance 
 
 Wait times depend largely on how responsive mortgage companies are to PAHAF’s requests to confirm how much someone owes, which can involve weeks or months of back-and-forth, administrators said. An application cannot move ahead until that information is provided. 
 
-By mid-December, more than 6,000 applications were in the final stage of approval, according to public data. Those people had been waiting, on average, more than 6 months, said Mandy McIntyre, a PAHAF spokesperson.
+By mid-December, more than 6,000 applications were in the final stage of approval, according to public data. Those people, mostly stuck in debt verification, had been waiting, on average, more than 6 months, said Mandy McIntyre, a PAHAF spokesperson.
 
 {{<featured/info
   side="right"
@@ -66,7 +66,7 @@ By mid-December, more than 6,000 applications were in the final stage of approva
 
 - Pennsylvania received $350 million from the federal government to help homeowners recover from the pandemic. 
 - The state program launched in February 2022 and covers mortgage and utility debt, delinquent property taxes, and other housing costs, as well as ongoing mortgage payments. 
-- The process of confirming an applicant’s debt with their mortgage or utility company has caused months-long delays, pushing average wait times to twice the program’s goal of 60 days.  
+- The process of confirming an applicant’s debt with their mortgage or utility company has caused months-long delays, pushing average wait times to twice the program’s internal goal of 60 days.  
 - Some homeowners seeking help with overdue utility bills have had their service shut off while waiting. 
 - Nearly two dozen applicants told Spotlight PA they had difficulty getting updates from the program, compounding their frustration and anxiety. 
 {{</featured/info>}}
@@ -121,7 +121,7 @@ The program was waiting for Mr. Cooper to provide information for almost 500 cus
 
 PAHAF sends participating companies weekly reports on pending applications, and officials have weekly phone calls with the companies that have the largest backlogs, McIntyre said. The companies have a strong incentive to work with the program: They stand to receive thousands of dollars per applicant. Still, some have told administrators they “simply do not have the bandwidth or processes in place to keep up,” McIntyre told one applicant via email in October. 
 
-The delays — multiplied across hundreds of companies and thousands of applications — have caused the program to fall short of its goal to get assistance to homeowners within two months. It typically takes longer than that just to confirm how much someone owes, McIntyre said. 
+The delays — multiplied across hundreds of companies and thousands of applications — have caused the program to fall short of its internal goal to get assistance to homeowners within two months. It typically takes longer than that just to confirm how much someone owes, McIntyre said. 
 
 Between February 2022, when PAHAF launched, and late December, the average wait time was roughly four-and-a-half months, she said. (This does not account for people seeking ongoing mortgage help.) 
 
@@ -148,6 +148,8 @@ Even after the confusion was resolved, however, an official at the credit union 
 **$7,806** – amount homeowners have received, on average, as of Jan. 16, 2023 
 
 **23,003** – number of applications submitted as of Jan. 16, 2023 
+
+<p class="text-sm">Source: <a href="https://pahaf.org/program-dashboard/">PAHAF Dashboard</a>.</p>
 {{</featured/info>}}
 
 Another two weeks passed. An administrator apologized for the “constant delays,” telling the woman: “​​We are aware of a multitude of program/systems/process issues and are dedicated to fixing.”
@@ -303,7 +305,7 @@ In response to Spotlight PA’s questions, McIntyre said Zembrowski did not sign
 
 McIntyre declined to elaborate when asked about the apparent DocuSign discrepancy and disagreed that Zembrowski had difficulty reaching her caseworker. But in an interview and written responses to Spotlight PA, she acknowledged broader problems with the program’s communication with applicants, and said administrators were working to address them. 
 
-For months, the PAHAF website also failed to tell applicants seeking ongoing mortgage assistance that they had to meet additional income requirements to qualify. Officials said the policy was “internally implemented” in February, when the program launched, but was not added to the website until May, after applicants raised the issue. The policy only affected about 50 applicants through September 2022, according to a state report, but some said they felt blindsided when they learned they were not eligible for the extra help based on a requirement they had not known about.
+For months, the PAHAF website also failed to tell applicants seeking ongoing mortgage assistance that they had to meet additional income requirements to qualify. Officials said the policy was “internally implemented” in February, when the program launched, but was not added to the website until May, after applicants raised the issue. The policy only affected about 50 applicants out of thousands through September 2022, according to a state report, but some said they felt blindsided when they learned they were not eligible for the extra help based on a requirement they had not known about.
 
 McIntyre emphasized that the program has made changes in response to applicants’ feedback. In September, the program introduced a form allowing people at risk of having their utilities shut off to prioritize other types of assistance over mortgage aid, in an attempt to reduce wait times. Starting in October, applicants no longer had to sign and return grant agreements; instead, the money could be paid out with no further action required on their part. And in November, the total amount of assistance homeowners can receive was increased from $30,000 to $50,000. Housing advocates had pushed for a higher cap since before the program launched. 
 
@@ -314,10 +316,10 @@ VanBuren’s mortgage company needed to change several small details in the info
 In December, VanBuren was relieved to learn that her mortgage company had finally received the money. While waiting, she had watched her grandson start the fourth grade, broken both her arms in a car accident, and recovered enough to go back to work. It had been more than nine months.
 
 {{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01hn/qzp2/newsmatch-2022-rectangles-1024-512-px-.svg"
-  width="730"
-  height="365"
-  bgcolor="#fff"
+  image-url="https://files.data.spotlightpa.org/uploads/01hw/0xmb/campaign-trackers-week-of-giving-1024-512-px-3-.webp"
+  width="1024"
+  height="512"
+  bgcolor="#000"
 >}}
 
 {{<featured/footer>}}
