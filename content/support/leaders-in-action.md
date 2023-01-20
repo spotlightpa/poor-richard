@@ -13,10 +13,38 @@ layout = "testimonials"
 title = "Testimonials"
 
 [[blocks.entries]]
-testimonial = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+testimonial = """
+  Pennsylvanians deserve better than having to rely on shrinking, vanishing, and increasingly biased media and unverified social media postings.  SpotlightPA fills this critical need for trusted investigations and reporting.  We are proud to support this essential organization that stays focused on its mission with unquestionable integrity, is run efficiently and effectively, and achieves results that bring positive changes for Pennsylvanians. 
+  
+  – Merrill and Nancy Brenner, Macungie, PA, Leaders in Action 
+"""
 
 [[blocks.entries]]
-testimonial = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+testimonial = """
+  I support Spotlight PA because I believe it is important to have independent investigative journalists covering state and local government. Spotlight needs public support so that it can remain independent. 
+  
+  – Sharon Hyde, State College, Leader in Action
+"""
+
+[[blocks.entries]]
+testimonial = """
+  We support Spotlight because we believe being informed citizens is essential for a democracy. Spotlight provides essential in-depth articles that my local papers no longer can supply independently. 
+  
+  - Roger and Karen Klotz, Latrobe, Leaders in Action   
+"""
+
+[[blocks.entries]]
+testimonial = """
+  All Pennsylvanians interested in state government issues are very well served by SpotlightPA reporting teams. Their in-depth and timely reporting informs readers truthfully about statewide issues affecting daily life. SpotlightPA is a trustworthy news source in this era of misinformation and disinformation. 
+  
+  – David Martens, York Dispatch, Leader in Action
+  """
+
+[[blocks.entries]]
+testimonial = """
+  In an era where fraud and dishonesty among public officials (and their supporters) have become more frequent and blatant, it is critical to have a crusading press focused on exposing wrongdoing. This is especially true in Pennsylvania where regulations are lax or poorly enforced. The expertise and resources of Spotlight PA are essential to good government in this state.
+  – Betsey Useem, Merion Station, Leader in Action
+"""
 
 [[blocks]]
     layout = "supporters"
