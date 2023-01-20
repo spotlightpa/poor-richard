@@ -108,7 +108,7 @@ One homeowner complained to PAHAF in July that their application seemed to be �
 
 Spotlight PA spoke to more than 20 people who had applied to the Pennsylvania Homeowner Assistance Fund, many of whom shared emails, text messages, program records, mortgage statements, and utility bills to help document their experience. We also spoke to attorneys, advocates, and housing counselors. 
 
-All of the homeowners who are quoted by name, or whose experience is discussed at length, signed releases giving the program permission to respond to Spotlight PA’s detailed questions about their experiences. 
+All of the homeowners who are quoted by name, or whose experience is discussed at length, signed releases giving the program permission to respond to Spotlight PA’s questions about their experiences. 
 
 
 To ensure program administrators could respond in detail, Spotlight PA shared several rounds of written questions and summaries of applicants’ experiences. Program officials provided several detailed written responses and spoke with a reporter in an hour-long interview. 
@@ -145,7 +145,7 @@ Even after the confusion was resolved, however, an official at the credit union 
 
 **$87.6 million** – amount paid out as of Jan. 16, 2023 
 
-**$7,806** – amount homeowners have received, on average, as of Jan. 16, 2023 
+**$7,806** – average amount homeowners have received, as of Jan. 16, 2023 
 
 **23,003** – number of applications submitted as of Jan. 16, 2023 
 
@@ -201,7 +201,7 @@ McIntyre said the program strives to prevent applicants’ utilities from being 
  
 {{</featured/info>}}
 
-In July, about four months after he first applied, Aaron Sim received warning that his power would soon be turned off unless he paid his overdue balance of $833. 
+In July, about four months after he first applied, Aaron Sim received warning that his power would soon be turned off because of his overdue balance of $833. 
 
 Sim sent a copy of his bill, which included a warning about the termination, to his caseworker. A few days later, he woke to a house that was oddly quiet. The whirring of the air conditioner was gone. It was one of the hottest weeks of the year, and inside it was sweltering, Sim said. The fridge and freezer were full of groceries that had to be thrown out; he lived off canned beets, tinned ravioli, and bread with peanut butter. 
 
