@@ -18,12 +18,12 @@ slug = "gov-tom-wolf-prepares-to-unveil-his-2020-21-budget-proposal"
 
 **Wolf’s budget would also:**
 
-* Fund an “[innovation plan](https://www.governor.pa.gov/newsroom/gov-wolf-announces-pa-innovation-plan-proposal/)” that earmarks millions for workforce development
-* Create a new grant program to “[address employment barriers](https://www.governor.pa.gov/newsroom/gov-wolf-business-and-labor-leaders-unveil-strategy-to-strengthen-pennsylvanias-workforce/)”
+* Fund an “[innovation plan](https://web.archive.org/web/20230117025550/https://www.governor.pa.gov/newsroom/gov-wolf-announces-pa-innovation-plan-proposal/)” that earmarks millions for workforce development
+* Create a new grant program to “[address employment barriers](https://web.archive.org/web/20230117025116/https://www.governor.pa.gov/newsroom/gov-wolf-business-and-labor-leaders-unveil-strategy-to-strengthen-pennsylvanias-workforce/)”
 * Put $1 billion (yes, billion) toward [lead and asbestos clean-ups](https://www.inquirer.com/news/gov-tom-wolf-asbestos-lead-schools-1-billion-20200129.html) in schools
-* [Invest heavily in human services programs](https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/), including $1.2 million to train workers who look after people receiving long-term care outside of institutions
+* [Invest heavily in human services programs](https://web.archive.org/web/20230117013832/https://www.governor.pa.gov/newsroom/gov-wolfs-2020-21-budget-will-further-protect-vulnerable-populations/), including $1.2 million to train workers who look after people receiving long-term care outside of institutions
 
-Wolf is scheduled to deliver his budget address at 11:30 a.m. in the Capitol. His speech will be streamed live at [governor.pa.gov/live](https://www.governor.pa.gov/live/). 
+Wolf is scheduled to deliver his budget address at 11:30 a.m. in the Capitol. His speech will be streamed live at governor.pa.gov/live. 
 
 ### **CONTROVERSY OVER KOBE**
 

@@ -121,7 +121,7 @@ Both candidates have said they support ending the transfers, but haven’t speci
 
 ## Property tax relief
 
-A popular state program that gives low-income older and disabled homeowners a partial refund on their property taxes received a <a href="https://www.governor.pa.gov/newsroom/gov-wolf-pennsylvanians-who-qualify-for-rebates-on-property-taxes-rent-paid-in-2021-to-receive-one-time-bonus/">one-time boost</a> this year. Wolf said the bonus payments would help some of the most vulnerable Pennsylvanians as they face steep price increases.
+A popular state program that gives low-income older and disabled homeowners a partial refund on their property taxes received a <a href="https://web.archive.org/web/20230116212554/https://www.governor.pa.gov/newsroom/gov-wolf-pennsylvanians-who-qualify-for-rebates-on-property-taxes-rent-paid-in-2021-to-receive-one-time-bonus/">one-time boost</a> this year. Wolf said the bonus payments would help some of the most vulnerable Pennsylvanians as they face steep price increases.
 
 But, as <a href="https://www.spotlightpa.org/news/2022/09/pennsylvania-property-tax-rebate-decline/">Spotlight PA reported</a>, the number of people getting help from the program has been shrinking for years because the state legislature hasn’t updated the income limits for homeowners to qualify since 2006. Lawmakers from both parties have repeatedly proposed legislation that would address the program’s declining numbers, but those bills have mostly failed to advance in the legislature.
 

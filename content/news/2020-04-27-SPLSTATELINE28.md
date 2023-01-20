@@ -109,7 +109,7 @@ Last week, South Carolina <a href="https://scdhec.gov/news-releases/dhec-reports
 
 After saying the information served “no public health purpose,” Maryland officials on Monday reversed course and said a list of long-term care facilities with COVID-19 cases would be released.
 
-“Keeping Marylanders informed and being transparent with the facts continues to be at the heart of our response to COVID-19," Republican Gov. Larry Hogan said in a <a href="https://governor.maryland.gov/2020/04/27/governor-hogan-directs-maryland-department-of-health-to-release-nursing-home-data-on-covid-19-cases/" target="_blank">statement</a>. "We are grateful to the staff in our nursing homes working around the clock to save lives.”
+“Keeping Marylanders informed and being transparent with the facts continues to be at the heart of our response to COVID-19," Republican Gov. Larry Hogan said in a <a href="https://web.archive.org/web/20221206190950/https://governor.maryland.gov/2020/04/27/governor-hogan-directs-maryland-department-of-health-to-release-nursing-home-data-on-covid-19-cases/">statement</a>. "We are grateful to the staff in our nursing homes working around the clock to save lives.”
 
 Despite being the site of the country’s first nursing home outbreak, Washington has not provided such information. Pennsylvania also does not provide facility-specific information and doesn’t plan to do it.
 

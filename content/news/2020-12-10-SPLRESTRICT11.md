@@ -66,7 +66,7 @@ Thursday’s announcement was foreshadowed by a round of advisories and orders a
 
 The administration banned the sale of alcohol in bars and restaurants for one night, Thanksgiving eve, and scaled back capacity limits for indoor and outdoor gatherings. The Nov. 23 orders also created staffing, bed capacity, and admissions metrics that, if met, would require hospitals to limit elective procedures in order to free up resources to treat a surge of COVID-19 patients.
 
-The state’s <a href="https://www.governor.pa.gov/newsroom/as-covid-19-cases-reach-critical-levels-wolf-admin-announces-new-mitigation-efforts/">stay-at-home advisory</a>, also issued Nov. 23, remains in place, along with an order requiring residents to wear a mask any time they leave the house.
+The state’s <a href="https://web.archive.org/web/20230117043024/https://www.governor.pa.gov/newsroom/as-covid-19-cases-reach-critical-levels-wolf-admin-announces-new-mitigation-efforts/">stay-at-home advisory</a>, also issued Nov. 23, remains in place, along with an order requiring residents to wear a mask any time they leave the house.
 
 “The hope was that the things that I did put into place would be enough to take us through the Thanksgiving season,” Wolf said Thursday. “It didn’t work out as well as I hoped it would.”
 

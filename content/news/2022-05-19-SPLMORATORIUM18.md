@@ -37,7 +37,7 @@ But advocates say the remaining mitigation measures have further isolated incarc
 
 ## Release program
 
-Anticipating prisons would become a COVID-19 hotspot, Gov. Tom Wolf signed an April 2020 <a href="https://www.governor.pa.gov/wp-content/uploads/2020/04/20200410-GOV-DOC-reprieve-release-order-COVID-19.pdf">executive order</a> that allowed for the release of nonviolent incarcerated people with a higher chance of severe illness if they caught the virus. His unilateral action responded to a Republican plan that would have limited the number of releases to roughly 450.
+Anticipating prisons would become a COVID-19 hotspot, Gov. Tom Wolf signed an April 2020 <a href="https://web.archive.org/web/20200416085537/https://www.governor.pa.gov/wp-content/uploads/2020/04/20200410-GOV-DOC-reprieve-release-order-COVID-19.pdf">executive order</a> that allowed for the release of nonviolent incarcerated people with a higher chance of severe illness if they caught the virus. His unilateral action responded to a Republican plan that would have limited the number of releases to roughly 450.
 
 State officials identified 1,200 people who might fit the governor’s narrow criteria, but ultimately only 159 were released between April and June 2020. Some people initially identified as potential candidates didn’t complete drug and alcohol program requirements, or had violence in their recent history. Others were disqualified when they didn’t have a plan for where to stay while out on reprieve. Some chose to wait for parole instead of participating.
 
