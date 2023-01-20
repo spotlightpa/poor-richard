@@ -290,10 +290,10 @@ On top of the delays, applicants have consistently complained about a lack of co
 
 **Since the program launched, administrators have:**
 
-- Increased the maximum amount homeowners can receive from $30,000 to $50,000. 
-- Raised the cap on utility assistance from $3,000 to $10,000. 
-- Replaced grant agreements that applicants had to sign and return with letters telling them how much they have been awarded, with no further action required. 
-- Given applicants the option to prioritize help with other housing costs over mortgage assistance.
+- Increased the maximum amount homeowners can receive from $30,000 to $50,000 
+- Raised the cap on utility assistance from $3,000 to $10,000
+- Replaced grant agreements that applicants had to sign and return with letters telling them how much they have been awarded, with no further action required
+- Given applicants the option to prioritize help with other housing costs over mortgage assistance
  
 {{</featured/info>}}Applicants told Spotlight PA that their assigned caseworkers stopped responding to them and missed scheduled appointments to call, that they were bounced from one worker to another, and that the program’s call center only provided generic updates. The communication problems, they said, heightened the stress of the long wait. 
 
