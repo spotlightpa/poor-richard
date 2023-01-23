@@ -316,12 +316,7 @@ VanBuren’s mortgage company needed to change several small details in the info
 
 In December, VanBuren was relieved to learn that her mortgage company had finally received the money. While waiting, she had watched her grandson start the fourth grade, broken both her arms in a car accident, and recovered enough to go back to work. It had been more than nine months.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01hw/0xmb/campaign-trackers-week-of-giving-1024-512-px-3-.webp"
-  width="1024"
-  height="512"
-  bgcolor="#000"
->}}
+{{<featured/support>}}
 
 {{<featured/footer>}}
   {{<featured/credit
