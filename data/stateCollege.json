@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-01-05-SPLBOREVENT.md"
+    "content/statecollege/2023-01-23-SPLDARKSKIES.md"
   ],
-  "subfeatures": [
-    "content/statecollege/2022-12-19-SPLTIOGA.md",
-    "content/statecollege/2022-12-30-SPLHOWTIOGA.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-01-05-SPLBOREVENT.md",
     "content/statecollege/2023-01-10-SPLPSUPOLICE.md",
-    "content/statecollege/2022-12-16-SPLPSURACE.md",
-    "content/statecollege/2022-12-15-SPLPSUSECRET.md"
+    "content/statecollege/2022-12-19-SPLTIOGA.md"
   ],
   "topper": []
 }
