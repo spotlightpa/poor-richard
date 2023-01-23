@@ -99,7 +99,7 @@ export function addGAListeners() {
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
   const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
   const onDevSite = !!window.location.host.match(
-    /(^goldbook)|(^localhost)|(spotlightpa\.netlify\.app$)|(spotlightpa-org\.pages\.dev$)/
+    /(^localhost)|(^spotlightpa\.)|(spotlightpa\.netlify\.app$)/
   );
 
   if (onDNTPage || (dnt === null && !onProdSite)) {
