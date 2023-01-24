@@ -7,28 +7,28 @@
         {{ .title }}
       </h2>
 
-            {{ with .authors }}
-        <ul 
+      {{ with .authors }}
+        <ul
           class="mx-auto my-14 flex w-full max-w-[1248px] flex-wrap justify-between"
           data-ga-category="inline-footer:author"
         >
           {{ range $name := . }}
             {{ $author := partial "helper/get-author" $name }}
-              <li
+            <li
               class="mb-2 grid max-w-xl grid-cols-5 gap-5 rounded bg-white p-5 shadow-md md:flex-[0_1_48%]"
-              >
-                  {{ if $author.thumb }}
-                        <img
-                          src="{{ $author.thumb }}"
-                          alt="Photo of {{ $author.name }}"
-                          class="col-span-2 row-span-2 mr-4 rounded-full"
-                          loading="lazy"
-                          decoding="async"
-                        />
+            >
+              {{ if $author.thumb }}
+                <img
+                  src="{{ $author.thumb }}"
+                  alt="Photo of {{ $author.name }}"
+                  class="col-span-2 row-span-2 mr-4 rounded-full"
+                  loading="lazy"
+                  decoding="async"
+                />
+              {{ else }}
+                <span class="image is-64x64"></span>
+              {{ end }}
 
-                  {{ else }}
-                    <span class="image is-64x64"></span>
-                  {{ end }}
 
               <header
                 class="col-span-3 row-span-1 mt-6 mb-2 max-w-xs self-end font-black"
@@ -39,8 +39,8 @@
               <p class="col-span-3 row-span-1 mb-5 max-w-sm ">
                 {{ $author.content }}
               </p>
-              </li>
-         {{ end }}
+            </li>
+          {{ end }}
         </ul>
       {{ end }}
 
