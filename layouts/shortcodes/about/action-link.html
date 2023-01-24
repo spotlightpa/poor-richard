@@ -1,6 +1,4 @@
-{{- $url := "" -}}
-{{- with .Get "href" }}{{ $url = . }}{{ end -}}
-
+{{- $url := .Get "href" | default "#" -}}
 
 <a
   data-ga-category="item"
