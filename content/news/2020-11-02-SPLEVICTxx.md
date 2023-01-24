@@ -70,7 +70,9 @@ Rather than establish a clear and robust standard, the state court system has la
 
 A review of 10 eviction cases in nine counties found tenants — many of them already distraught by the prospect of losing their home, and confused by a string of ever-changing rules — face pitfalls at every turn and a bureaucratic system that doesn’t go out of its way to help.
 
-Some tenants don’t know about the order at all, and neither judges nor landlords are required to tell them. Others think it applies automatically, like previous state and federal bans. A judge might decide the order doesn’t apply (even if it should), or a landlord might accuse a tenant of lying on the declaration form, leaving it up to a judge to decide.  
+Some tenants don’t know about the order at all, and neither judges nor landlords are required to tell them. Others think it applies automatically, like previous state and federal bans. A judge might decide the order doesn’t apply (even if it should), or a landlord might accuse a tenant of lying on the declaration form, leaving it up to a judge to decide.
+
+
 
 These cases are unfolding on the lowest rung of Pennsylvania’s court system, in more than 500 local magisterial district courts that handle traffic violations, small claims cases, and criminal arraignments, as well as evictions. Landlords are more likely to have attorneys, to understand how the eviction process works — and to win.
 
@@ -97,7 +99,8 @@ In a statement, a spokesperson for Gov. Tom Wolf said the administration “has 
 
 Those losing their homes face an increasingly dangerous situation. With the black mark of an eviction on their record, it will be harder to find another place to live, just as winter approaches and the coronavirus is surging again in Pennsylvania. New daily confirmed cases are at all-time highs. The percentage of tests coming back positive and the number of hospitalizations are rising at their fastest rates in months.
 
- For Gallagher, the days after the hearing were a blur. She called friends, scrambling to find a place to go. She tried to find out if she would qualify for public housing. She packed a bag of essentials: clothes, dog food, and medication for her rheumatoid arthritis.
+
+For Gallagher, the days after the hearing were a blur. She called friends, scrambling to find a place to go. She tried to find out if she would qualify for public housing. She packed a bag of essentials: clothes, dog food, and medication for her rheumatoid arthritis.
 
 When she found a piece of paper taped to her door, she knew exactly what it was: the start of the countdown to the final stage of the eviction process, when Bucks County constables would come to remove them. Gallagher said she tore it off quickly, afraid her son might see.
 
@@ -184,16 +187,21 @@ In a Sept. 2 memo, the Pennsylvania state court administrator told judges that t
 
 At least 12 counties have issued local orders on how judges should handle eviction cases, with some stark differences.
 
- In Erie County, once a tenant submits the CDC declaration, their landlord cannot even begin the eviction process. If the case has already been filed, it is postponed until January. But under Lancaster County’s order, cases can proceed as normal, with only the final stage — where tenants are actually removed — on hold. That matters because the filing itself, regardless of the outcome, can make it harder for someone to find housing elsewhere, essentially blacklisting them.
 
-Dauphin and Blair Counties instruct magisterial district judges not to try to determine whether a tenant has been truthful in signing a declaration, which has the weight of sworn testimony. Others, such as Lehigh and Philadelphia, say they can. Legal aid attorneys contend holding hearings to determine whether a tenant has been truthful is unfair, given the CDC order’s vague language on “best efforts” to pay rent and seek government help.  
+In Erie County, once a tenant submits the CDC declaration, their landlord cannot even begin the eviction process. If the case has already been filed, it is postponed until January. But under Lancaster County’s order, cases can proceed as normal, with only the final stage — where tenants are actually removed — on hold. That matters because the filing itself, regardless of the outcome, can make it harder for someone to find housing elsewhere, essentially blacklisting them.
+
+Dauphin and Blair Counties instruct magisterial district judges not to try to determine whether a tenant has been truthful in signing a declaration, which has the weight of sworn testimony. Others, such as Lehigh and Philadelphia, say they can. Legal aid attorneys contend holding hearings to determine whether a tenant has been truthful is unfair, given the CDC order’s vague language on “best efforts” to pay rent and seek government help.
+
+
 Tenants’ attorneys themselves have different views on what a tenant must do to meet the “best efforts” standard. Some urge clients to be cautious, advising them they should have already submitted an application for rental assistance before submitting the form. Others argue a quick phone call to ask about an aid program would be enough.
 
 Washington, Allegheny, and Berks Counties also encourage judges to postpone cases that aren’t covered by the CDC order, to give tenants time to apply for assistance programs, or hear back about pending applications. Pennsylvania set aside $150 million in federal funding for rent relief paid directly to landlords, many of whom are also struggling financially. But the program has been [plagued by problems from the start](https://www.spotlightpa.org/news/2020/08/pa-evictions-ban-rental-assistance-program-coronavirus-flaws/), and state Senate Republicans recently [killed a last-ditch effort to fix it](https://www.spotlightpa.org/news/2020/10/pa-rental-assistance-program-bill-house-senate-republicans/).
 
 Even in the counties that have issued their own guidance, there is no guarantee judges will follow it. In Dauphin County, volunteers with Greater Harrisburg Tenants United have observed “widespread confusion and inconsistent interpretation” of the CDC order among tenants, landlords, constables, and judges, the group wrote in an [open letter](https://docs.google.com/forms/d/e/1FAIpQLSd0zvYJSYVTCTNv9ulHDwrCxtha87nubn1JlKI8ZY5TFWckzg/viewform) to President Judge John Cherry.
 
-Many judges have been “evasive, dismissive, and even hostile when tenants inquire about the CDC form,” they wrote. As a result, they say, many tenants who should have been protected by the federal order have not signed the form, fearing landlord retaliation or accusations of perjury.  
+Many judges have been “evasive, dismissive, and even hostile when tenants inquire about the CDC form,” they wrote. As a result, they say, many tenants who should have been protected by the federal order have not signed the form, fearing landlord retaliation or accusations of perjury.
+
+
 
 “An unprecedented housing crisis is unfolding — there is no room for ambiguity,” they wrote.
 
@@ -255,7 +263,9 @@ By the time of the hearing, Horrocks owed more than $6,000.
 
 With the help of a legal aid attorney, Horrocks is appealing the judge’s decision, which will buy her some time. Eventually, however, she will almost certainly have to pay rent to the court in order to be able to stay in the apartment while the appeal moves forward — money she says she does not have.
 
-“There’s no magical rescue for me in this,” she said.  
+“There’s no magical rescue for me in this,” she said.
+
+
 Earlier this month, when she arrived home from a local copy store after scanning the paperwork for the appeal and sending it to her attorney, she found a “for rent” sign stuck into the grass in her front yard.
 
 {{<featured/picture
@@ -279,9 +289,12 @@ Then, COVID-19 hit, courts closed, and Pennington said she lost her job at a tem
 
 {{<featured/related side="left">}}
 
- A rental ledger shows her efforts to stay afloat throughout June and July: $400 one day, $100 the next week, $550 the next, another $650 the week after that. By the end of July, her outstanding balance was down to $50. Then, the $600 federal unemployment supplement ran out and she fell behind again.
 
-She asked her landlord to take part in the city’s rental assistance program, but one of the property managers told her, in a text message, that it involved “too many extremely difficult conditions.” An attorney for Pennington’s landlord declined to comment.  
+A rental ledger shows her efforts to stay afloat throughout June and July: $400 one day, $100 the next week, $550 the next, another $650 the week after that. By the end of July, her outstanding balance was down to $50. Then, the $600 federal unemployment supplement ran out and she fell behind again.
+
+She asked her landlord to take part in the city’s rental assistance program, but one of the property managers told her, in a text message, that it involved “too many extremely difficult conditions.” An attorney for Pennington’s landlord declined to comment.
+
+
 
 In September, after she sent the CDC declaration to her landlord, the case was back in court. Her landlord said she hadn’t stuck to the terms of the February agreement.
 
@@ -307,7 +320,9 @@ Moss did set another court date for Pennington and her landlord to renegotiate t
 
 Now, with an eviction on her record, Pennington is moving her things to a friend’s house and scrambling to find somewhere else for her family to live before Nov. 9, when Philadelphia will resume lockouts. The City Council is considering legislation to reinstate a local eviction ban, but the bill has stalled in the housing committee over disagreements about how broad it should be. The committee is not scheduled to meet again until Nov. 6.
 
-Pennington worries that her daughters — ages 9, 7, and four months old — hear her endless phone calls, trying to find a new apartment. She tries to reassure them that they will have a new home soon.  
+Pennington worries that her daughters — ages 9, 7, and four months old — hear her endless phone calls, trying to find a new apartment. She tries to reassure them that they will have a new home soon.
+
+
 
 “You want me out, I want to be out — I don’t want to be somewhere I’m not welcome,” she said. “But where the heck am I gonna go?”
 
@@ -347,4 +362,3 @@ Pennington worries that her daughters — ages 9, 7, and four months old — hea
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky>}}

@@ -186,9 +186,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01g7/vkgq/ddap-donate-sticky.svg"
-  width="300"
-  height="250"
->}}
-

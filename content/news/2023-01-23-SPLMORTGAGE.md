@@ -354,4 +354,3 @@ In December, VanBuren was relieved to learn that her mortgage company had finall
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky>}}

@@ -402,5 +402,3 @@ A Pennsylvania Supreme Court decision could offer clarity, but McCreary said “
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky>}}
-

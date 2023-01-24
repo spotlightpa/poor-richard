@@ -409,11 +409,3 @@ Still, when asked about rules banning advertising by physicians — but not busi
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01h8/wxw0/square.png"
-  width="300"
-  height="250"
-  bgcolor="#ffffff"
->}}
-
