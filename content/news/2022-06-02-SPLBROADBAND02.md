@@ -315,5 +315,3 @@ Then, Budget Secretary Gregory Thall, who chairs the board, replied: “I’ve l
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky>}}

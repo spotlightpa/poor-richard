@@ -348,6 +348,3 @@ A board of trustees is again turning to Bendapudi to fix it.
     email="cjohnson@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky>}}
-

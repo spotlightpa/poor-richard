@@ -278,10 +278,3 @@ Gmerek’s response: “He could also sell cocaine and have the same result.”
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01g7/vkgq/ddap-donate-sticky.svg"
-  width="300"
-  height="250"
->}}
-

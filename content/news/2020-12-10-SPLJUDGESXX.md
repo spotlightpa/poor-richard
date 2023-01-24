@@ -390,5 +390,4 @@ _PennLive reporter Jan Murphy contributed to this story._
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky text="Support more in-depth investigative journalism in Pennsylvania like this report by becoming a member of Spotlight PA today.">}}
 
