@@ -35,11 +35,13 @@ Join us Thursday, Jan. 26 at 6 p.m. EST on Zoom for a free panel on Pennsylvania
 
 Our panelists include:
 
-- <b>Min Xian</b>, local accountability reporter for Spotlight PA’s State College bureau
+- <b>Min Xian</b>, local accountability reporter, Spotlight PA State College bureau
 
 - <b>Matthew Creme Jr.</b>, municipal lawyer
 
-- <b>Other panelists to be announced</b>.
+- <b>Melissa Melewsky</b>, medical law counsel, Pennsylvania NewsMedia Association
+
+- <b>David Rusk</b>, senior fellow, D.C. Policy Center
 
 RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_q_fR0ohGQA2kkiLAs_hCag">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
 
