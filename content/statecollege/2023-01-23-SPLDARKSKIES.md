@@ -55,9 +55,9 @@ A dark sky preservation success story is Potter County’s Cherry Springs State 
 
 Cherry Springs attracts stargazers from all around the world, according to Park Manager Scott Morgan. That tourism benefits businesses in nearby towns like Coudersport, particularly on new moon nights — the darkest. Last year, more than 179,000 people visited the park, Morgan told Spotlight PA.
 
-Chip Harrison, a member of a committee that advises the ISDA board, first found someone stargazing with a telescope in Cherry Springs in 1997. After a conversation with the amateur astronomer, Harrison, then the park’s manager, said he saw an opportunity to attract more visitors to what was then a low-use park through stargazing programs. By the time he retired years later, he was credited by local newspapers with bringing development and allure to the park.
+Chip Harrison, a member of a committee that advises the IDA board, first found someone stargazing with a telescope in Cherry Springs in 1997. After a conversation with the amateur astronomer, Harrison, then the park’s manager, said he saw an opportunity to attract more visitors to what was then a low-use park through stargazing programs. By the time he retired years later, he was credited by local newspapers with bringing development and allure to the park.
 
-The IDSA’s certification of the park especially boosted the park’s popularity, Harrison said. He also noted that local businesses embraced the area’s celestial claim to fame.
+The IDA's certification of the park especially boosted the park’s popularity, Harrison said. He also noted that local businesses embraced the area’s celestial claim to fame.
 
 Dylan Setzer changed the name of a Coudersport restaurant to the Orion Inn Bar &amp; Grill, a nod to the constellation, when he bought it in 2021, <a href="https://www.tiogapublishing.com/potter_leader_enterprise/news/local/hungry-orion-inn-bar-and-grill-satisfies/article_c7317894-1721-11ed-959e-5b0acc3fb57f.html">according to the Potter Leader-Enterprise</a>. Straub Brewery, located in St. Marys, has a beer called Stellar Night.
 
@@ -71,7 +71,7 @@ Josh Zucal, the marketing director for Cameron County, sees preserving the count
 
 “The inspiration came from Cherry Springs because we have areas that are just as dark,” he said.
 
-Zucal is working with Harrison to get a potential Cameron County site officially recognized as a dark sky area by the ISDA.
+Zucal is working with Harrison to get a potential Cameron County site officially recognized as a dark sky area by the IDA.
 
 Cameron County hasn’t taken steps to introduce municipal ordinances to preserve darkness yet, Zucal said, but they plan to in the near future.
 
