@@ -10,11 +10,14 @@
         >
           {{ .title }}
         </h2>
-        <div class="mt-8 flex" x-data="carousel()">
+        <div class="mt-8 flex" x-data="carousel">
           {{ with .entries }}
 
-            <div class="hidden h-64 w-12 md:flex">
-              <span @click="slide('left', 2)">
+            <div class="hidden h-64 w-20 md:flex">
+              <span
+                class="h-12 w-12 cursor-pointer self-center"
+                @click="slide('left', 1)"
+              >
                 <svg
                   class="h-12 w-12 self-center fill-s-2 opacity-75 drop-shadow filter lg:h-16 lg:w-16"
                 >
@@ -23,20 +26,23 @@
               </span>
             </div>
             <ul
-              class="flex-no-wrap hide-scrollbars -mx-2 flex flex-1 overflow-y-hidden overflow-x-scroll md:-mx-4"
+              class="flex-no-wrap hide-scrollbars mx-2 flex flex-1 overflow-y-hidden overflow-x-scroll md:-mx-4"
               x-ref="carousel"
             >
               {{ range . }}
                 <li
-                  class="group mb-2 inline-block w-2/3 flex-none cursor-pointer snap-center px-2 pr-2 pb-2 focus:outline-none sm:pr-8 md:mr-12 md:w-1/2 md:px-4"
+                  class="group mb-2 inline-block w-2/3 flex-none snap-center px-2 pr-2 pb-2 focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
                 >
                   <p>{{- .testimonial -}}</p>
                 </li>
               {{ end }}
 
             </ul>
-            <div class="hidden h-64 w-12 md:flex">
-              <span @click="slide('right', 2)">
+            <div class="hidden h-64 w-16 md:flex">
+              <span
+                class="h-12 w-12 cursor-pointer self-center"
+                @click="slide('right', 1)"
+              >
                 <svg
                   class="h-12 w-12 self-center fill-s-2 opacity-75 drop-shadow filter lg:h-16 lg:w-16"
                 >
@@ -47,30 +53,6 @@
           {{ end }}
 
         </div>
-
-        <script>
-          function carousel() {
-            return {
-              slide(direction, multiplier) {
-                if (direction === "left") {
-                  var pixelsToScroll =
-                    this.$refs.carousel.childNodes[1].scrollWidth * multiplier;
-                  this.$refs.carousel.scrollBy({
-                    left: -pixelsToScroll,
-                    behavior: "smooth",
-                  });
-                } else {
-                  var pixelsToScroll =
-                    this.$refs.carousel.childNodes[1].scrollWidth * multiplier;
-                  this.$refs.carousel.scrollBy({
-                    left: pixelsToScroll,
-                    behavior: "smooth",
-                  });
-                }
-              },
-            };
-          }
-        </script>
       </div>
     </div>
   </section>
