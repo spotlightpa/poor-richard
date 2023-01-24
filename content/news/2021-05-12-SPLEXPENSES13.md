@@ -137,11 +137,7 @@ He said he is working with Senate officials to make the chamber’s expenses mor
 
 Corman said he has already broached the idea with members of his caucus and did not receive any &#34;negative feedback.&#34;
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01g7/vkgp/ddap-donate-promo.svg"
-  width="730"
-  height="365"
->}}
+{{<featured/lightbox>}}
 
 
 ### A financial ‘time warp’

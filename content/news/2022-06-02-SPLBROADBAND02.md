@@ -209,11 +209,7 @@ The first phase of the project had gone smoothly. The original network only serv
 
 The proposed expansion, however, would add four more counties — Columbia, Northumberland, Snyder, and Union — which meant DRIVE would need permission from not one but seven phone companies.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01gj/zh6b/member.svg"
-  width="730"
-  height="365"
->}}
+{{<featured/lightbox>}}
 
 With offices closed during the pandemic, even getting the “right of first refusal” letters in front of the correct people proved difficult.
 

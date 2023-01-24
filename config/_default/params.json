@@ -4,6 +4,14 @@
   "banner-bg-color": "#c7e8f1",
   "banner-link": "/statecollege",
   "banner-text-color": "#000000",
+  "featured-promo-bg-color": "#000000",
+  "featured-promo-height": 512,
+  "featured-promo-image-description": "Donate to Spotlight PA",
+  "featured-promo-images": [
+    "https://files.data.spotlightpa.org/uploads/01hw/0xmb/campaign-trackers-week-of-giving-1024-512-px-3-.webp"
+  ],
+  "featured-promo-link": "/donate/",
+  "featured-promo-width": 1024,
   "footer-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
