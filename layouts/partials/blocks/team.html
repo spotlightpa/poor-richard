@@ -7,41 +7,40 @@
         {{ .title }}
       </h2>
 
-      {{ with .staff }}
-        <ul
+            {{ with .authors }}
+        <ul 
           class="mx-auto my-14 flex w-full max-w-[1248px] flex-wrap justify-between"
+          data-ga-category="inline-footer:author"
         >
-          {{ range . }}
-            <li
+          {{ range $name := . }}
+            {{ $author := partial "helper/get-author" $name }}
+              <li
               class="mb-2 grid max-w-xl grid-cols-5 gap-5 rounded bg-white p-5 shadow-md md:flex-[0_1_48%]"
-            >
-              {{ if .headshot }}
-                {{ $thumb := .headshot }}
-                {{ $imgOpt := dict
-                  "filename" .headshot
-                  "width" 376
-                  "height" 376
-                }}
-                {{ $thumb := partial "helper/imgproxy" $imgOpt }}
-                <img
-                  class="col-span-2 row-span-2 mr-4 rounded-full"
-                  src="{{ $thumb }}"
-                  alt="Picture of {{ .name }}"
-                />
-              {{ end }}
+              >
+                  {{ if $author.thumb }}
+                        <img
+                          src="{{ $author.thumb }}"
+                          alt="Photo of {{ $author.name }}"
+                          class="col-span-2 row-span-2 mr-4 rounded-full"
+                          loading="lazy"
+                          decoding="async"
+                        />
 
+                  {{ else }}
+                    <span class="image is-64x64"></span>
+                  {{ end }}
 
               <header
                 class="col-span-3 row-span-1 mt-6 mb-2 max-w-xs self-end font-black"
               >
-                <h3 class="text-2xl">{{- .name -}}</h3>
-                <h4 class="text-sm uppercase">{{ .role }}</h4>
+                <h3 class="text-2xl">{{- $author.name -}}</h3>
+                <h4 class="text-sm uppercase">{{ $author.title }}</h4>
               </header>
               <p class="col-span-3 row-span-1 mb-5 max-w-sm ">
-                {{ .bio }}
+                {{ $author.content }}
               </p>
-            </li>
-          {{ end }}
+              </li>
+         {{ end }}
         </ul>
       {{ end }}
 
