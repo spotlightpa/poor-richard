@@ -1,20 +1,9 @@
 {{- $url := .Get "href" | default "#" -}}
 
+
 <a
   data-ga-category="item"
-  class="
-            my-2 mr-5 inline-flex w-auto items-center
-            rounded border border-black
-            px-4 py-4
-            text-base font-black leading-4
-            hover:border-red-7 hover:text-red-7
-            no-underline md:my-6
-          "
-  :class="
-            aboutActive === $el.dataset.aboutId ?
-            'bg-black text-white hover:border-blue-3 hover:text-blue-3' :
-            ''
-          "
+  class=" mb-5 mr-5 no-underline min-w-[145px] max-w-[245px] inline-flex w-auto items-center justify-center rounded bg-red-6 px-3 py-5 font-sans text-base font-semibold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
   href="{{ $url }}"
   >{{ .Inner }}</a
 >
