@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-01-10-SPLSTANDSTI.md"
+    "content/news/2023-01-19-SPLSHAPSTAFF.md"
   ],
   "subfeatures": [
-    "content/news/2023-01-06-SPLSPEABU.md",
-    "content/news/2023-01-06-SPLROZPRO.md"
+    "content/news/2023-01-18-SPLCABLIST.md",
+    "content/news/2023-01-17-SPLSWOIN.md",
+    "content/news/2022-12-28-SPLSHAPIRO21.md"
   ],
   "topSlots": [
-    "content/statecollege/2023-01-10-SPLPSUPOLICE.md",
-    "content/news/2023-01-08-SPLLYCO.md",
-    "content/news/2023-01-06-SPLROZTICK.md"
+    "content/news/2023-01-16-SPLNDA.md",
+    "content/news/2023-01-13-SPLSPECRULING.md",
+    "content/news/2023-01-12-SPLCONEXP.md"
   ],
   "topper": []
 }

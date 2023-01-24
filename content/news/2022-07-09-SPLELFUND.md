@@ -116,7 +116,7 @@ Another election priority, Argall said, was a bill authored by state Sen. Doug M
 
 Former President Donald Trump<a href="https://web.archive.org/web/20221227071513/https://www.donaldjtrump.com/news/news-ethg3vxg7x2196"> urged Republicans to make the bill part of the budget negotiations.</a>
 
-Wolf <a href="https://www.governor.pa.gov/wp-content/uploads/2022/07/20220708-Veto-Message-SB573.pdf">vetoed</a> Mastriano’s bill Friday, saying it “undermines the integrity of our election process and encourages voter intimidation.”
+Wolf <a href="https://web.archive.org/web/20230117122345/https://www.governor.pa.gov/wp-content/uploads/2022/07/20220708-Veto-Message-SB573.pdf">vetoed</a> Mastriano’s bill Friday, saying it “undermines the integrity of our election process and encourages voter intimidation.”
 
 As for pre-canvassing, Argall said, there’s not enough Republican support to bring it up for discussion.
 

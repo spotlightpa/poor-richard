@@ -21,7 +21,7 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — In likely one of his last acts in office, Gov. Tom Wolf has <a href="https://www.governor.pa.gov/wp-content/uploads/2023/01/20230106-TWW-Special-Session-Proclamation-and-Letter.pdf">asked</a> the Pennsylvania legislature to gather for a special session Monday to pass a constitutional amendment allowing adult victims of childhood sexual abuse to sue the perpetrators.
+HARRISBURG — In likely one of his last acts in office, Gov. Tom Wolf has <a href="https://web.archive.org/web/20230117122244/https://www.governor.pa.gov/wp-content/uploads/2023/01/20230106-TWW-Special-Session-Proclamation-and-Letter.pdf">asked</a> the Pennsylvania legislature to gather for a special session Monday to pass a constitutional amendment allowing adult victims of childhood sexual abuse to sue the perpetrators.
 
 Newly minted state House Speaker Mark Rozzi responded Friday with a vow to halt all other chamber action until that issue is addressed.
 

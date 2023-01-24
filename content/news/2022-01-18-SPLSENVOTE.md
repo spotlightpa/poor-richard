@@ -46,7 +46,7 @@ However, it was amended in the House State Government Committee after Republican
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-Wolf recently <a href="https://davesredistricting.org/maps#ratings::fe2ff034-a707-4d2f-a781-60eb79ea8b7d">released his own proposed congressional map</a>, saying it and a citizen-drawn map championed by Draw the Lines — an initiative of the good-government organization Committee of Seventy — were “free of gerrymandering” and in line with <a href="https://www.governor.pa.gov/newsroom/gov-wolf-announces-pennsylvania-redistricting-advisory-councils-redistricting-principles/">principles released by the governor’s advisory council</a>.
+Wolf recently <a href="https://davesredistricting.org/maps#ratings::fe2ff034-a707-4d2f-a781-60eb79ea8b7d">released his own proposed congressional map</a>, saying it and a citizen-drawn map championed by Draw the Lines — an initiative of the good-government organization Committee of Seventy — were “free of gerrymandering” and in line with <a href="https://web.archive.org/web/20230117011610/https://www.governor.pa.gov/newsroom/gov-wolf-announces-pennsylvania-redistricting-advisory-councils-redistricting-principles/">principles released by the governor’s advisory council</a>.
 
 Both Wolf’s map and the proposal in the legislature fulfill four basic fairness criteria embraced by the Pennsylvania Supreme Court.
 
