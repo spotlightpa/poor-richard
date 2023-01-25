@@ -1,6 +1,7 @@
 {{ $nlBox := .page.Param "newsletter-box" |
   default "newsletter/multi-box.html"
 }}
+{{ $cta := .page.Param "cta" | default "component/blank.html" }}
 {{ $imageDescription := .page.Param "river-promo-description" }}
 {{ $link := .page.Param "river-promo-link" }}
 {{ $desktopImages := .page.Param "river-promo-desktop-images" }}
@@ -17,6 +18,7 @@
       {{ if .featuredStories }}
         {{ partial "tile/featured.html" .featuredStories }}
       {{ end }}
+      {{ partial $cta . }}
       {{ if .pinnedStories }}
         <div class="tile" data-ga-category="pinned">
           {{ range $page := .pinnedStories }}
