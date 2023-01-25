@@ -109,11 +109,3 @@
     </div>
   </section>
 {{ end }}
-
-{{ define "extra-footer" }}
-  {{ $jsOpts := dict "minify" true "targetPath" "/tracker.js" }}
-  {{ $trackerJS := resources.Get "js/esbuild/tracker.js" | js.Build $jsOpts }}
-  {{ $trackerJS = $trackerJS | babel }}
-  <!-- Hack to tell Hugo to build the partner tracker JS -->
-  <div data-tracker-src="{{ $trackerJS.RelPermalink }}"></div>
-{{ end }}
