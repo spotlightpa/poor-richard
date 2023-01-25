@@ -39,7 +39,7 @@ Our panelists include:
 
 - <b>Matthew Creme Jr.</b>, municipal lawyer
 
-- <b>Melissa Melewsky</b>, medical law counsel, Pennsylvania NewsMedia Association
+- <b>Melissa Melewsky</b>, media law counsel, Pennsylvania NewsMedia Association
 
 - <b>David Rusk</b>, senior fellow, D.C. Policy Center
 
