@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-01-25-SPLHOUSE25.md"
+    "content/news/2023-01-26-SPLMORTGAGEGUIDE.md"
   ],
   "subfeatures": [
-    "content/news/2023-01-13-SPLSPECRULING.md",
-    "content/news/2023-01-10-SPLSTANDSTI.md"
+    "content/news/2023-01-23-SPLMORTGAGE.md"
   ],
   "topSlots": [
+    "content/news/2023-01-25-SPLHOUSE25.md",
     "content/statecollege/2023-01-25-SPLBRADFORD.md",
-    "content/news/2023-01-23-SPLMORTGAGE.md",
-    "content/news/2023-01-20-SPLGIFT20.md"
+    "content/statecollege/2023-01-23-SPLDARKSKIES.md"
   ],
   "topper": []
 }
