@@ -1,7 +1,7 @@
 {{ $nlBox := .page.Param "newsletter-box" |
   default "newsletter/multi-box.html"
 }}
-{{ $cta := .page.Param "cta" | default "component/blank.html" }}
+{{ $cta := .page.Param "cta" | default "" }}
 {{ $imageDescription := .page.Param "river-promo-description" }}
 {{ $link := .page.Param "river-promo-link" }}
 {{ $desktopImages := .page.Param "river-promo-desktop-images" }}
@@ -11,14 +11,15 @@
 {{ $mobileWidth := .page.Param "river-promo-mobile-width" }}
 {{ $mobileHeight := .page.Param "river-promo-mobile-height" }}
 
-
+{{ with $cta }}
+  {{ partial . }}
+{{ end }}
 <section class="section {{ .marginClass }}" data-ga-category="homepage">
   <div class="container-hp" x-data="readmore(false)" x-ref="root">
     <div class="tile is-ancestor is-vertical">
       {{ if .featuredStories }}
         {{ partial "tile/featured.html" .featuredStories }}
       {{ end }}
-      {{ partial $cta . }}
       {{ if .pinnedStories }}
         <div class="tile" data-ga-category="pinned">
           {{ range $page := .pinnedStories }}
