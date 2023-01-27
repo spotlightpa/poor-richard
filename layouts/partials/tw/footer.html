@@ -80,17 +80,32 @@
     }}
     {{ template "tw-footer" $context }}
   </div>
-  <p class="mt-12 text-center normal-case" data-ga-category="cdn">
+  <p class="mt-6 text-center">
+    &copy; {{ now.Format "2006" }} <br />
+    Spotlight PA <br />
+    228 Walnut St., #11728 <br />
+    Harrisburg, PA 17108-1728 <br />
+  </p>
+
+  <p class="mt-12 text-center" data-ga-category="cdn">
     <a
       class="text-blue transition-colors duration-500 hover:text-yellow"
       href="https://www.netlify.com/"
       >This site is powered by Netlify</a
     >
   </p>
-  <p class="mt-6 text-center">
-    &copy; {{ now.Format "2006" }} <br />
-    Spotlight PA <br />
-    228 Walnut St., #11728 <br />
-    Harrisburg, PA 17108-1728 <br />
+  <p class="flex justify-center gap-2">
+    <a
+      href="/about/terms/"
+      class="text-blue transition-colors duration-500 hover:text-yellow"
+    >
+      Terms of use
+    </a>
+    <a
+      href="/about/privacy/"
+      class="text-blue transition-colors duration-500 hover:text-yellow"
+    >
+      Privacy policy
+    </a>
   </p>
 </nav>
