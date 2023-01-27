@@ -22,6 +22,8 @@ topics = ["Economy"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, Jan. 27, 2023: </b></i><i>The Pennsylvania Homeowner Assistance Fund </i><a href="https://www.phfa.org/forms/press_releases/2023/pahaf-pressannounce-final-01272023.pdf"><i>announced today</i></a><i> that it will&nbsp;temporarily stop&nbsp;taking new applications starting Feb. 1, as part of a wider change in how the program is run and to allow&nbsp;officials&nbsp;time to work through existing applications.</i>
+
 Pennsylvania received $350 million from the federal government to help homeowners who fell behind on their mortgages during the pandemic.
 
 Getting the money out, however, has been slow going. <a href="https://www.spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/">As Spotlight PA reported</a>, the aid program is overwhelmed by demand and struggling to get critical information from mortgage companies, leaving thousands of people in limbo.
