@@ -1,14 +1,14 @@
 +++
 arc-id = "NNZRJ2WQPNF3HPRNIWSJTPKNM4"
-blurb = "Join us Jan. 26 to learn about Pa.’s local governments, and how their oversight — or lack thereof — impacts residents and governance."
+blurb = "Spotlight PA's panelists discussed Pennsylvania's patchwork system of local governments."
 byline = "Spotlight PA Staff"
-description = "Spotlight PA's panelists will discuss Pennsylvania's patchwork system of local governments."
+description = "Spotlight PA's panelists discussed Pennsylvania's patchwork system of local governments."
 event-date = 2023-01-26T18:00:00-05:00
 event-title = "Broken Boroughs"
-image = "2022/12/01hs-hpwr-pmcb-g394.jpeg"
+image = "external/jqkqx95mc5kkb49w25mtfnsdn4.jpeg"
 image-credit = "Min Xian / Spotlight PA"
-image-description = "Residents of Tioga, Pennsylvania, stand outside the borough's office. "
-internal-budget = "Join Spotlight PA Jan. 26 to learn about Pa.’s local governments, and how their accountability — or lack thereof — impacts residents and governance."
+image-description = "Tioga elected officials’ decision to hire Timothy Loehmann as the borough’s sole police officer followed a long line of troubling actions taken by its leaders."
+internal-budget = "On Jan. 26, Spotlight PA held a discussion about Pa.’s local governments, and how their oversight — or lack thereof — impacts residents and governance."
 internal-id = "SPLBOREVENT"
 kicker = "Events"
 modal-exclude = false
@@ -16,7 +16,7 @@ no-index = false
 published = 2023-01-05T15:30:00-05:00
 slug = "tioga-tamir-rice-pennsylvania-local-accountability-event"
 suppress-date = false
-title = "You’re invited! A free virtual panel on Pa.’s patchwork system of local governments"
+title = "WATCH: A free virtual panel on Pa.’s patchwork system of local governments"
 title-tag = "Free panel on PA's patchwork local government system"
 topics = ["Events"]
 +++
@@ -29,11 +29,11 @@ As residents protested and the resignations of public officials, including the p
 
 <a href="https://www.spotlightpa.org/statecollege/2022/12/tamir-rice-timothy-loehmann-police-tioga-pa-pennsylvania/">A Spotlight PA investigation</a> revealed that beneath the troubling hire were long-simmering vendettas among elected officials, disorganization, and a lack of critical oversight — problems facing many of Pennsylvania’s more than 2,500 cities, towns, townships, and boroughs. Why is the state set up this way? How does this system affect taxpayers and core government services? And how can the public hold officials accountable and participate in local affairs?
 
-To unpack this issue, Spotlight PA is holding a discussion on small governments in Pennsylvania and how they are run and overseen.
+On Thursday, Jan. 26, Spotlight PA held a discussion on Pennsylvania’s local governments, and how their oversight — or lack thereof — impacts residents and governance.
 
-Join us Thursday, Jan. 26 at 6 p.m. EST on Zoom for a free panel on Pennsylvania’s local governments, and how their oversight — or lack thereof — impacts residents and governance.
+Watch the conversation below.
 
-Our panelists include:
+Our panelists were:
 
 - <b>Min Xian</b>, local accountability reporter, Spotlight PA State College bureau
 
@@ -43,6 +43,6 @@ Our panelists include:
 
 - <b>David Rusk</b>, senior fellow, D.C. Policy Center
 
-RSVP for free <a href="https://inquirer.zoom.us/webinar/register/WN_q_fR0ohGQA2kkiLAs_hCag">here</a>. Submit your questions in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
+<iframe src="https://player.vimeo.com/video/793387652?h=3629934556" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
