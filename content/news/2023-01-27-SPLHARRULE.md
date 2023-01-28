@@ -23,22 +23,30 @@ topics = ["The Capitol"]
 
 HARRISBURG — A lobbyist for one of Pennsylvania’s most influential unions says a sitting state House lawmaker sexually harassed her, and she is urging the legislature to expand internal rules that govern who can bring misconduct complaints.
 
-Andi Perez, who advocates on behalf of Service Employees International Union 32BJ in Harrisburg, plans to make the allegation Friday evening in Philadelphia during a listening session organized by new state Houser Speaker Mark Rozzi (D., Berks).
+Andi Perez, who advocates on behalf of Service Employees International Union 32BJ in Harrisburg, made the allegation Friday in Philadelphia during a listening session organized by new state House Speaker Mark Rozzi (D., Berks).
 
 Rozzi has scheduled a series of public meetings to solicit feedback about the state House’s operating procedures <a href="https://www.spotlightpa.org/news/2023/01/pennsylvania-house-rozzi-deadlock-amendment/">amid partisan deadlock over which political party controls the chamber</a>. The sessions offer a rare opportunity for Pennsylvanians to directly weigh in on the rules, which in most years are quickly adopted at the beginning of each new legislative session.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-Perez said she was harassed by a male lawmaker while discussing a bill outside of the Capitol building, according to prepared testimony reviewed by Spotlight PA. She did not provide the lawmaker’s name, his party affiliation, or additional details.
+Perez said Friday that she was harassed by a male lawmaker while discussing a bill outside of the Capitol building. She did not provide the lawmaker’s name, his party affiliation, or additional details.
 
-The lawmaker “decided to caress my leg while I was wearing a skirt all the while telling me he was impressed by my passion and knowledge of the issues we were discussing,” Perez plans to say. “I moved away from him hoping he would stop — he did not.”
+The lawmaker “decided to caress my leg while I was wearing a skirt all the while telling me he was impressed by my passion and knowledge of the issues we were discussing,” Perez said. “I moved away from him hoping he would stop — he did not.”
 
-“I could sit here for hours telling you the range of emotions I felt after this,” she wrote in the remarks. “Of course I was full of rage at the disrespect and arrogance it requires to so brazenly sexually harass me in a public place where I am just trying to do my job for the workers in my union.”
+“I could sit here for hours telling you the range of emotions I felt after this,” she continued. “Of course I was full of rage at the disrespect and arrogance it requires to so brazenly sexually harass me in a public place where I am just trying to do my job for the workers in my union.”
 
-Perez attempted to file a complaint with the state House Ethics Committee, according to her testimony, but was told “sorry, the rules do not allow you to file a complaint since you are not an employee of the House. There was nothing in the House Rules that allowed leadership to officially take any further action.”
+Perez attempted to file a complaint with the state House Ethics Committee, she said, but was told “sorry, the rules do not allow you to file a complaint since you are not an employee of the House. There was nothing in the House Rules that allowed leadership to officially take any further action.”
 
-A spokesperson for state House Democrats did not immediately respond to a request for comment. A spokesperson for the chamber’s GOP caucus said it had “not been made aware of the referenced allegation.”
+In a brief response Friday, Rozzi thanked Perez for her “bravery.”
+
+“I promise that will be another issue we review in our rules moving forward,” he said.
+
+A spokesperson for state House Democrats said in a statement, “There have been situations in the past, and unfortunately, we know that they are possible in the future.”
+
+“While progress was made through rules changes adopted in 2019, we continue working to develop a broader set of rules to ensure a fair process for claims of harassment and discrimination — for all protected classes — to be included in the rules finally adopted for this session,” the spokesperson, Nicole Reigelman, said.
+
+A spokesperson for the chamber’s GOP caucus said it had “not been made aware of the referenced allegation.”
 
 In 2019, state House leadership added workplace protections to the chamber’s rules for the first time, banning “unwelcome sexual advances, requests for sexual favors or other verbal or physical conduct of a sexual nature.”
 
@@ -46,9 +54,9 @@ The change was made after <a href="https://www.inquirer.com/philly/news/politics
 
 As Spotlight PA <a href="https://www.spotlightpa.org/news/2022/06/pa-house-sexual-misconduct-allegations-rules-punishment/">previously reported</a>, the policy only covers state House employees. That has meant individuals who regularly interact with lawmakers — such as other government employees, lobbyists, constituents, and journalists — have been unable to report an allegation to the committee.
 
-Perez wants the legislature to adopt sexual abuse and harassment policies that cover more people who interact with lawmakers in the course of their official duties, according to her testimony.
+Perez wants the legislature to adopt sexual abuse and harassment policies that cover more people who interact with lawmakers in the course of their official duties.
 
-“No one is above the law,” Perez wrote in her prepared remarks. “A lawmaker who harasses someone should be held accountable by their own peers through an Ethics process.”
+“No one is above the law,” Perez said. “A lawmaker who harasses someone should be held accountable by their own peers through an Ethics process.”
 
 The state House and Senate typically adopt rules on the first day of a new two-year legislative session after leaders <a href="https://www.spotlightpa.org/news/2021/01/pennsylvania-legislature-house-senate-rules-majority-party-reform/">hammer out the details behind closed doors</a>.
 
@@ -56,7 +64,7 @@ The upper chamber did so on Jan. 3, but the rules remain unfinished in the lower
 
 Rozzi has canceled future sessions of the state House and convened a bipartisan committee to negotiate the rules. According to his office, he scheduled the listening tour to “yield solutions to partisan gridlock” and to figure out a path to advancing a proposed constitutional amendment that would give survivors of childhood sexual abuse a chance to sue their perpetrators.
 
-The latter is a personal cause for Rozzi, who himself is a survivor.
+The latter is a personal cause for Rozzi, who himself is a survivor. He said Friday he planned to hold at least two more hearings before releasing a rules package that “all Pennsylvanians will be proud of.”
 
 The hearings provide an unusual opportunity for public discussion of the rules, which dictate how easy or hard it is for bills to become law and, importantly for Perez and other advocates, disciplinary procedures for lawmakers.
 
