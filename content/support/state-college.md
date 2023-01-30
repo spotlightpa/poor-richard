@@ -61,6 +61,6 @@ authors = ["Wyatt Massey", "Sarah Rafacz"]
     dataSrc = "leadersInAction"
 +++
 
-## A Novel Approach to Reinvigorating Local News
+# A Novel Approach to Reinvigorating Local News
 
 {{<featured/large>}}To combat the continuing loss of local news in Pennsylvania, Spotlight PA launched its first pilot regional bureau based in State College and covering north-central Pennsylvania. We hope this bureau will serve as a model for how to address the crisis in local news in communities across the state. As part of this initiative, Spotlight PA hired <a href="/statecollege/2022/07/state-college-penn-state-rural-pennsylvania-local-news/">a team of four journalists dedicated to the region</a>, which represents a sizable and significant infusion of talent relative to the number of current reporters.{{</featured/large>}}
