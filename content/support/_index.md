@@ -34,6 +34,9 @@ layout = "text-3"
 title = "Who Supports Us?"
 show_partners = 4
 copy = """
+
+  [PARAGRAPH TK]
+  
   ## See our supporters
 
   [Institutional funders and members since launch →]()
