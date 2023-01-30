@@ -4,10 +4,12 @@
       {{ .title }}
     </h2>
     {{ with .entries }}
-      <ul class="mx-auto flex flex-wrap max-w-[1248px] items-stretch justify-between">
+      <ul
+        class="mx-auto flex max-w-[1248px] flex-wrap items-stretch justify-between"
+      >
         {{ range . }}
           <li
-            class="mb-2 flex flex-wrap justify-between rounded bg-white p-5 shadow-md flex-[0_0_100%] sm:flex-[0_0_48%]"
+            class="mb-2 flex flex-[0_0_100%] flex-wrap justify-between rounded bg-white p-5 shadow-md sm:flex-[0_0_48%]"
           >
             <div class="ml-5 mb-2 flex-[0_0_160px]">
               {{ $name := .image }}
