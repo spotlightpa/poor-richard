@@ -1,0 +1,5 @@
+{{ $data := index site.Data.supporters . }}
+
+{{ range sort $data.list "sort" "asc" }}
+  <li>{{ .display }}</li>
+{{ end }}

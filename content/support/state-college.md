@@ -56,9 +56,9 @@ authors = ["Wyatt Massey", "Sarah Rafacz"]
 
 [[blocks]]
     layout = "supporters"
-    hed="Our Major Donors"
+    title="Our Major Donors"
     category="$1000 and above"
-    data_file = "helper/get-supporters-sc"
+    dataSrc = "leadersInAction"
 +++
 
 ## A Novel Approach to Reinvigorating Local News

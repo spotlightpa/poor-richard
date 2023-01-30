@@ -48,8 +48,8 @@ testimonial = """
 
 [[blocks]]
     layout = "supporters"
-    hed="Our Current Leaders"
-    data_file = "helper/get-leaders"
+    title="Our Current Leaders"
+    dataSrc = "leadersInAction"
 
 [[blocks]]
     layout = "donate"

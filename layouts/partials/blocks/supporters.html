@@ -1,26 +1,25 @@
 {{ with .block }}
-  {{ $id := urlize .hed }}
-
-
-  <section id="{{ $id }}" class="py-12 px-2">
-    <div class="mx-auto my-14 w-full max-w-[1248px]">
-      <h2
-        class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+  {{ $id := urlize .title }}
+  {{ $dataSrc := .dataSrc }}
+  <div class="m-auto flex max-w-[1248px] flex-wrap justify-center">
+    <h2
+      class="w-full max-w-5xl text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+    >
+      {{ .title }}
+    </h2>
+    {{ with .category }}
+      <h3
+        class="mb-6 w-full max-w-5xl font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"
       >
-        {{ .hed }}
-      </h2>
-      {{ with .category }}
-        <h3
-          class="mb-6 font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"
-        >
-          {{ . }}
-        </h3>
+        {{ . }}
+      </h3>
+    {{ end }}
+    <ul
+      class=" column-gap-2 w-full max-w-5xl columns-2 gap-10 py-8 md:columns-3"
+    >
+      {{ with $dataSrc }}
+        {{ partial "helper/get-supporter-list" $dataSrc }}
       {{ end }}
-      <div class="supporters-list">
-        <ul class=" column-gap-2 max-w-4xl columns-2 gap-10 py-8 md:columns-3">
-          {{ partial .data_file }}
-        </ul>
-      </div>
-    </div>
-  </section>
+    </ul>
+  </div>
 {{ end }}
