@@ -1,5 +1,5 @@
-{{ $qs := .Page.Scratch.Get "faq-q" }}
-{{ $as := .Page.Scratch.Get "faq-a" }}
+{{ $qs := .Page.Store.Get "faq-q" }}
+{{ $as := .Page.Store.Get "faq-a" }}
 
 <script type="application/ld+json">
 {

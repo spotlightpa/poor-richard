@@ -1,2 +1,2 @@
 {{- $name := .Get "name" | htmlUnescape -}}
-{{- .Page.Scratch.Add $name .Inner -}}
+{{- .Page.Store.Add $name .Inner -}}

@@ -1,2 +1,2 @@
-{{ .Page.Scratch.Add "uid" 1 }}
-{{ return (.Page.Scratch.Get "uid" | printf "label-uid-%d") }}
+{{ .Page.Store.Add "uid" 1 }}
+{{ return (.Page.Store.Get "uid" | printf "label-uid-%d") }}
