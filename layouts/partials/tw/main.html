@@ -112,25 +112,8 @@
       </div>
 
       <div class="{{ $mainWellClass }}">
-        <div class="mt-6" data-ga-category="content">
-          <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-start"
-          ></div>
-          <div
-            class="article-content contain-content w-full overflow-hidden break-words leading-relaxed"
-            data-sf-campaign="701f4000000TVuXAAW"
-          >
-            {{ .Content }}
-          </div>
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-finish"
-          ></div>
-        </div>
+        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+        {{ partial "tw/content-well.html" . }}
 
         {{ with .Param "authors" }}
           <footer
