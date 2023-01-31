@@ -1,40 +1,79 @@
-{{ define "promo" }}
-  <!-- noop -->
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
-{{ define "topper" }}
-  <!-- noop -->
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
 {{ end }}
 
 {{ define "main" }}
-  {{ $subtitle := .Param "subhed" | default .Description }}
-
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
   {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
   {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}
-  {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
-  {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
-  <section class="section" data-ga-category="list:events">
-    <header>
-      <h1
-        class="mt-0 mb-4 title has-text-centered {{ $titleClass }} is-size-2-touch"
-      >
-        {{ .Title }}
-      </h1>
-      {{ if $subtitle }}
-        <h2
-          class="subtitle has-text-centered {{ $subheadClass }} is-size-4-touch mb-6"
-        >
-          {{ $subtitle }}
-        </h2>
-      {{ end }}
 
-      {{ partial "component/hero-image-block.html" . }}
+
+  <article class="bg-white px-4 pt-12 pb-2 md:pb-6">
+    <header>
+      <div class="mx-auto w-full max-w-screen-lg">
+        <h1
+          class="text-center font-sans text-3xl sm:text-4xl md:text-6xl font-bold uppercase leading-none tracking-wide"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+      <div class="mx-auto w-full max-w-prose">
+        <h2
+          class="mt-4 text-justify font-sans text-lg font-semibold leading-tight text-s-6"
+        >
+          {{ .Param "dek" | default .Params.description }}
+        </h2>
+
+        {{ partial "tw/image-hero.html" . }}
+
+      </div>
     </header>
     {{ with .Content }}
-      <div class="content mb-6">
-        {{ . }}
+      <div class="mx-auto w-full max-w-prose">
+        <div class="mt-6" data-ga-category="content">
+          <div
+            x-data
+            x-intersect.once="$report({ target: $el })"
+            data-ga-action="view:content-start"
+          ></div>
+          <div
+            class="article-content w-full overflow-hidden leading-relaxed"
+            data-sf-campaign="701f4000000TVuXAAW"
+          >
+            {{ . }}
+          </div>
+          <div
+            x-data
+            x-intersect.once="$report({ target: $el })"
+            data-ga-action="view:content-finish"
+          ></div>
+        </div>
       </div>
     {{ end }}
 
@@ -42,180 +81,119 @@
       {{ $event := index (last 1  $upcomingEvents) 0 }}
       {{ $date := $event.Param "event-date" }}
       {{ $items := where $upcomingEvents `Params.event-date` "eq" $date }}
-      <div class="section plain-notification" data-ga-category="upcoming">
-        <div class="container-hp">
-          <div class="tile is-vertical">
-            {{ template "upcoming-event" $items }}
-          </div>
-        </div>
+      <div class="bg-s-2 rounded shadow" data-ga-category="upcoming">
+        {{ template "upcoming-event" $items }}
       </div>
     {{ end }}
+  </article>
+{{ end }}
 
-
-    <nav class="tile is-vertical" data-ga-category="river">
-      <div class="tile is-wrapped">
-        {{ range $page := $pages }}
-          {{ template "event" $page }}
-        {{ end }}
-      </div>
-    </nav>
-
-    <div>
-      {{ partial "component/paginator-level.html" $p }}
+{{ define "upcoming-event" }}
+  <section class="px-6 py-8" id="upcoming" data-ga-category="upcoming">
+    <div class="mx-auto max-w-screen-lg">
+      {{ $feat := index . 0 }}
+      {{ $params := partialCached "helper/page-params" $feat $feat.RelPermalink }}
+      {{ $subitems := slice }}
+      {{ range after 1 . }}
+        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+        {{ $subitems = $subitems | append (dict
+          "link" $params.link
+          "title" .LinkTitle
+          )
+        }}
+      {{ end }}
+      {{ $imgOpts := dict
+        "filename" ($feat.Param "image")
+        "credit" ($feat.Param "image-credit")
+        "description" ($feat.Param "image-description")
+        "gravity" ($feat.Param "image-gravity")
+        "link" $params.link
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 528 1056 1280)
+        "sizeHint" "(min-width: 1080px) 528px, (min-width: 850px) 40vw, 90vw"
+      }}
+      {{ partial "tw/thumb-h-item.html" (dict
+        "imgOpts" $imgOpts
+        "link" $params.link
+        "extendedEyebrow" "Upcoming Event"
+        "eyebrow" $params.eventDate
+        "hed" $feat.LinkTitle
+        "byline" $params.byline
+        "showDate" true
+        "date" $params.eventDate
+        "dateISO" $params.eventDateISO
+        "subitems" $subitems
+        "hedSize" "text-2xl"
+        "thumbClass" "flex-1"
+        "storyClass" "flex-1"
+        )
+      }}
     </div>
   </section>
 {{ end }}
 
-{{ define "upcoming-event" }}
-  {{ $page := index . 0 }}
-  {{ $params := partialCached "helper/page-params" $page.Page $page.RelPermalink }}
+{{ define "extra-main" }}
+  {{ $p := partial "helper/paginator" . }}
+  {{ $pages := $p.Pages }}
 
 
-  <div class="py-0 tile is-parent">
-    <div class="tile is-child">
-      <div class="mb-2">
-        <span class="tags has-addons">
-          <span
-            class="tag is-square is-black is-uppercase has-text-weight-semibold"
-          >
-            {{ $params.kicker }}
-          </span>
-          <span
-            class="tag is-square is-outline is-uppercase has-text-weight-semibold"
-            >{{ $params.eventDate }}</span
-          >
-        </span>
-      </div>
+  <section class="bg-white px-4 pt-6 pb-12 font-serif">
+    <div class="mx-auto w-full max-w-screen-lg mt-4 mb-8">
+      {{ partial "tw/social-buttons.html" . }}
     </div>
-  </div>
+    {{ partial "tw/list-3-col-story.html" (dict
+      "pages" $pages
+      "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
+      )
+    }}
+    <div class="mx-auto max-w-screen-lg">
+      {{ partial "tw/paginator-level.html" .Paginator }}
+    </div>
+  </section>
+{{ end }}
 
-  {{ $heroName := $page.Page.Param "image" }}
-  {{ $heroCredit := $page.Page.Param "image-credit" }}
-  {{ $heroDescription := $page.Page.Param "image-description" }}
-  {{ $imgOpts := dict
-    "filename" $heroName
-    "credit" $heroCredit
-    "description" $heroDescription
-    "eager" true
-    "link" $page.RelPermalink
-    "widthRatio" 16
-    "heightRatio" 9
-    "gravity" ($page.Page.Param "image-gravity")
-    "sizeHint" "40vw"
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
   }}
-  <div class="tile">
-    <div class="pt-0 tile is-parent is-6 is-top-tablet">
-      <article class="tile is-child">
-        {{ partial "component/image-block.html" $imgOpts }}
-      </article>
-    </div>
-    <div class="pt-0 tile is-parent is-bottom-tablet">
-      <article class="tile is-child">
-        <h1 class="my-0 title is-size-3-touch">
-          <a
-            href="{{ $page.RelPermalink }}"
-            class="has-text-black hover-underline"
-            data-ga-category="hed"
-          >
-            {{ $page.LinkTitle }}
-          </a>
-        </h1>
-        {{ if $params.blurb }}
-          <h2 class="mt-2 mb-0 subtitle is-5 is-size-4-widescreen">
-            {{ $params.blurb }}
-          </h2>
-        {{ end }}
-        {{ if gt (len .) 1 }}
-          <ul class="mt-2 is-size-5 related">
-            {{ range after 1 . }}
-              <li>
-                <a
-                  href="{{ .RelPermalink }}"
-                  class="has-text-black hover-underline"
-                  data-ga-category="subfeature"
-                >
-                  {{ .LinkTitle }}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
-        <h3
-          class="mt-2 subtitle is-6 is-size-5-mobile is-size-5-widescreen has-text-weight-normal"
-        >
-          <a
-            href="{{ $page.RelPermalink }}"
-            class="has-text-grey hover-underline"
-            data-ga-category="date"
-            >{{ $params.eventDate }}
-          </a>
-        </h3>
-      </article>
-    </div>
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
   </div>
 {{ end }}
 
-{{ define "event" }}
-  <div class="tile is-parent is-4">
-    <div class="tile is-child">
-      {{ $page := .Page }}
-      {{ $params := partialCached "helper/page-params" $page $page.RelPermalink }}
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
 
-      <article>
-        {{ if $params.eventDate }}
-          <h3
-            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-          >
-            <time datetime="{{ $params.eventDateISO }}">
-              {{ $params.eventDate }}
-            </time>
-          </h3>
-        {{ else }}
-          <h3
-            class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-          >
-            Events
-          </h3>
-        {{ end }}
-
-        {{ $name := $page.Param "image" }}
-        {{ $credit := $page.Param "image-credit" }}
-        {{ $description := $page.Param "image-description" }}
-        {{ $imgOpts := dict
-          "filename" $name
-          "credit" $credit
-          "description" $description
-          "link" $params.link
-          "widthRatio" 16
-          "heightRatio" 9
-          "sizeHint" "25vw"
-          "gravity" ($page.Param "image-gravity")
-        }}
-        {{ partial "component/image-block.html" $imgOpts }}
-
-
-        <h2 class="mt-2 mb-0 subtitle is-5 is-size-4-widescreen">
-          <a
-            class="has-text-grey-dark hover-underline"
-            href="{{ $params.link }}"
-            data-ga-category="hed"
-          >
-            {{ $page.LinkTitle }}
-          </a>
-        </h2>
-        {{ if $params.blurb }}
-          <h3 class="mt-2 mb-0 subtitle is-5 has-text-weight-normal">
-            <a
-              href="{{ $params.link }}"
-              class="has-text-grey hover-underline"
-              data-ga-category="blurb"
-            >
-              {{ $params.blurb }}
-            </a>
-          </h3>
-        {{ end }}
-      </article>
-    </div>
-  </div>
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
 {{ end }}
