@@ -1,18 +1,12 @@
-{{ $donateHed := .donateHed | default "Join our historic effort to invigorate local news." }}
-{{ $donateCta := .donateCta | default "Contribute" }}
-{{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
-{{ $donateGaForm := .donateGaForm | default "" }}
-{{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
-{{ $donateTheme := .donateTheme | default "" }}
-{{ $donateAmounts := .donateAmounts }}
+
+{{ partial "helper/get-donation-form"}}
 
 {{ $btnClass := ` mr-4 flex-[0_1_30%] outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
-{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
+{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]`}}
 
-
-<div id="donate-leader" class="my-0 bg-blue px-2 py-14 md:px-20">
+<div id="donate-leader" class="px-2 md:px-0 py-14 bg-blue w-[calc(100vw - (100vw - 100%))] my-10 -mx-[50%] box-content">
   <div
     data-ga-category=" {{ $donateGaCategory }}"
     class="no-js:hidden mx-auto w-full max-w-2xl"
