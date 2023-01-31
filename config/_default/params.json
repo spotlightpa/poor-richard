@@ -1,8 +1,8 @@
 {
-  "banner": "Read the latest news from our first-ever regional bureau in State College  »",
-  "banner-active": false,
-  "banner-bg-color": "#c7e8f1",
-  "banner-link": "/statecollege",
+  "banner": "The news you need \u0026amp; none of the noise. \u003cstrong\u003eSign up for our newsletters  »\u003c/strong\u003e",
+  "banner-active": true,
+  "banner-bg-color": "#ffcb03",
+  "banner-link": "/newsletters",
   "banner-text-color": "#000000",
   "featured-promo-bg-color": "#000000",
   "featured-promo-height": 512,
@@ -82,7 +82,7 @@
   "support-link": "/donate/",
   "support-text": "Huge stories will shape Pennsylvania’s future next year, and you can help determine the course of our state by supporting tough, nonpartisan investigative and public service journalism that gets results.\n\nFearless journalism is the backbone of our democracy, and we can't leave its future in Pennsylvania up to big corporations and predatory hedge funds. Unlike many others, Spotlight PA has no shareholders, no billionaire owner, no pressure to turn a big profit. Just the determination and passion to deliver high-impact investigative and public-service reporting for Pennsylvania, always free from commercial or political influence. \n\nWe provide our journalism for free to all Pennsylvanians because we believe in information equality. Greater numbers of people can keep track of the issues and events shaping our state, understand their impact on people and communities, and become inspired to take meaningful action. Millions can benefit from open access to quality, truthful news, regardless of their ability to pay for it.\n\nEvery contribution, however big or small, powers our journalism in tight economic times and sustains our future. As you consider your causes to support this year, please contribute to Spotlight PA by making a tax-deductible gift today. If you can, consider supporting us with a regular amount each month.\n\nWill you take a moment now to ensure this important work can continue?",
   "support-text-color": "#000000",
-  "topper-active": true,
+  "topper-active": false,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
