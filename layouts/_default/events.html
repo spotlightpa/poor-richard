@@ -54,28 +54,7 @@
 
       </div>
     </header>
-    {{ with .Content }}
-      <div class="mx-auto w-full max-w-prose">
-        <div class="mt-6" data-ga-category="content">
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-start"
-          ></div>
-          <div
-            class="article-content w-full overflow-hidden leading-relaxed"
-            data-sf-campaign="701f4000000TVuXAAW"
-          >
-            {{ . }}
-          </div>
-          <div
-            x-data
-            x-intersect.once="$report({ target: $el })"
-            data-ga-action="view:content-finish"
-          ></div>
-        </div>
-      </div>
-    {{ end }}
+    {{ partial "tw/content-well.html" . }}
 
     {{ if $upcomingEvents }}
       {{ $event := index (last 1  $upcomingEvents) 0 }}
