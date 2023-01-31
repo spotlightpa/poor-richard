@@ -31,9 +31,9 @@
             >
               {{ range . }}
                 <li
-                  class="group mb-2 inline-block w-2/3 flex-none snap-center px-2 pr-2 pb-2 focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
+                  class="article-content group mb-2 inline-block w-2/3 flex-none snap-center px-2 pr-2 pb-2 focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
                 >
-                  <p>{{- .testimonial -}}</p>
+                  {{ $.Page.RenderString .testimonial }}
                 </li>
               {{ end }}
 
