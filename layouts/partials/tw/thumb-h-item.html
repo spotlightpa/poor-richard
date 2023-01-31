@@ -1,5 +1,6 @@
 {{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-64` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
+{{ $hedSize := .hedSize | default `text-lg` }}
 
 
 <article class="flex flex-col space-y-1">
@@ -39,7 +40,9 @@
     </div>
     <div class="{{ $storyClass }} space-y-1">
       <div class="group contents">
-        <h2 class="text-lg font-bold leading-tight tracking-tight text-hed">
+        <h2
+          class="{{ $hedSize }} font-bold leading-tight tracking-tight text-hed"
+        >
           <a
             class="group-hover:underline"
             href="{{ .link }}"
@@ -76,7 +79,7 @@
         {{ end }}
         {{- if .showDate }}
           <h3
-            class="font-sans text-base font-light leading-tight tracking-normal text-date"
+            class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
             data-ga-category="time"
           >
             <a href="{{ .link }}" class="group-hover:underline">
