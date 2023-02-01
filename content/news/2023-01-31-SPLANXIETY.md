@@ -41,6 +41,23 @@ topics = ["Medical Marijuana", "Health"]
 
 {{<featured/social-buttons>}}
 
+<figure x-data="{ isOpen: false }">
+    <figcaption
+      @click.once="isOpen = true; $refs.player.play()"
+      class="text-navy underline italic cursor-pointer"
+    >
+      Click here to listen to an audio introduction to this story.
+    </figcaption>
+    <audio
+        x-show="isOpen"
+        x-ref="player"
+        controls
+        src="https://files.data.spotlightpa.org/uploads/01hx/n25g/edwrap.mp3"
+      >
+            <a href="https://files.data.spotlightpa.org/uploads/01hx/n25g/edwrap.mp3">Download audio</a>
+    </audio>
+</figure>
+
 {{<featured/dropcap>}}When Lehigh Valley doctor Charles Harris started approving patients for medical marijuana a few years ago, most of them were dealing with chronic pain. Using cannabis helped them tremendously, he said. Patients told him their pain wasn’t keeping them awake at night anymore — they could finally get a good night’s sleep or at least a few hours of rest in a row.{{</featured/dropcap>}}
 
 {{<featured/large>}}Then, in the summer of 2019, the Pennsylvania Department of Health changed its rules to allow patients to use medical marijuana for another condition: anxiety disorders.{{</featured/large>}}
