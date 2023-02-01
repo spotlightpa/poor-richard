@@ -1,4 +1,4 @@
-{{ $wrapperClass := .Get "wrapperClass" | default "w-[calc(100vw - (100vw - 100%))] my-10 -mx-[50%]"}}
+{{ $wrapperClass := .Get "wrapperClass" | default " my-10 -mx-[50%]" }}
 {{ $donateHed := .Get "donateHed" | default "Join our historic effort to invigorate local news." }}
 {{ $donateCta := .Get "donateCta" | default "Contribute" }}
 {{ $donateGaCategory := .Get "donateGaCategory" | default "donate-prefill-lg" }}
@@ -16,5 +16,5 @@
   "donateCampaign" $donateCampaign
   "donateTheme" $donateTheme
   "donateAmounts" $donateAmounts
-) }}
-
+  )
+}}

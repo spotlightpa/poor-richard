@@ -17,12 +17,11 @@
 {{ $donateFirst := index $donateAmounts 1 }}
 {{ $donateDefault := int $donateFirst }}
 <div
-  id="donate-leader"
   class="{{ $wrapperClass }} box-content bg-blue px-2 py-14 md:px-0"
 >
   <div
     data-ga-category=" {{ $donateGaCategory }}"
-    class="no-js:hidden mx-auto w-full max-w-2xl"
+    class="no-js:hidden mx-auto w-full max-w-content"
     x-data="{
     active: '{{ $activeClass }}',
     inactive: '{{ $inactiveClass }}',
