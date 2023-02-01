@@ -40,6 +40,28 @@
 
   </section>
 
+  <div class="font-raleway">
+    {{ .Page.RenderString (.Param "newsletter") }}
+  </div>
+
+  <section
+    class="bg-white px-6 py-8 md:py-24"
+    id="guides"
+    data-ga-category="guides"
+  >
+    {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
+    {{ partial "tw/list-3-col-story-nobyline.html" (dict
+      "hed" "Penn State Coverage"
+      "pages" $guide.RegularPages
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read more Penn State stories"
+      "rows" 1
+      )
+    }}
+
+  </section>
+
+
   <div class="bg-s-2 -mx-4 md:mx-0" data-ga-category="text">
     <article
       class="article-content mx-auto max-w-[1248px] py-24 px-5 font-raleway md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
@@ -50,9 +72,6 @@
       {{ end }}
       {{ .Page.RenderString (.Param "credits") }}
     </article>
-  </div>
-    <div class="font-raleway">
-    {{ .Page.RenderString (.Param "newsletter") }}
   </div>
 
 </section>
