@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-01-31-SPLANXIETY.md"
+    "content/statecollege/2023-02-01-SPLALTOONARIFLE.md"
   ],
-  "subfeatures": [
-    "content/news/2023-01-31-SPLHOWANXIETY.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2023-02-01-SPLPAHAF31.md",
     "content/news/2023-01-31-SPLSPECEVENT.md",
-    "content/statecollege/2023-01-31-SPLACT57PROBATION.md"
+    "content/news/2023-01-31-SPLANXIETY.md",
+    "content/news/2023-01-31-SPLHOWANXIETY.md"
   ],
   "topper": []
 }
