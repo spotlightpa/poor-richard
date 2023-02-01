@@ -1,3 +1,15 @@
+{{ $imgOpts := dict
+  "filename" "2023/01/01hv-rnbb-kdh9-51jb.jpeg"
+  "credit" ""
+  "description" "$heroDescription"
+  "eager" true
+  "link" ""
+  "widthRatio" 16
+  "heightRatio" 9
+  "gravity" ""
+  "sizeHint" "40vw"
+}}
+
 <style>
   @media (max-width: 760px) {
     .cta-body {
@@ -58,8 +70,6 @@
   .cta-grfx {
     grid-column: 1 / span 1;
     grid-row:1 / span 3;
-  }
-  .cta-grfx img {
     border-radius: 4px;
     overflow: hidden;
   }
@@ -67,7 +77,7 @@
 </style>
 <div class="cta-body">
   <div class="cta-grfx">
-    <img src="https://images.data.spotlightpa.org/insecure/rt:fill/w:300/h:168/g:ce/el:1/q:75/MjAyMy8wMS8wMWh2LXJuYmIta2RoOS01MWpiLmpwZWc=.jpeg">
+    {{ partial "component/image-block.html" $imgOpts }}
   </div>
   <h2>Holding Penn State Accountable</h2>
   <p>The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community.</p>
