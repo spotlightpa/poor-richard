@@ -1,12 +1,23 @@
-
-{{ partial "helper/get-donation-form"}}
+{{ $donateHed := .Get "donateHed" | default "Join our historic effort to invigorate local news." }}
+{{ $donateCta := .Get "donateCta" | default "Contribute" }}
+{{ $donateGaCategory := .Get "donateGaCategory" | default "donate-prefill-lg" }}
+{{ $donateGaForm := .Get "donateGaForm" | default "" }}
+{{ $donateCampaign := .Get "donateCampaign" | default "7015G0000013oHVQAY" }}
+{{ $donateTheme := .Get "donateTheme" | default "" }}
+{{ $donateAmounts := .Get "donateAmounts" | default "10,15,25,50" }}
 
 {{ $btnClass := ` mr-4 flex-[0_1_30%] outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
-{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]`}}
+{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
 
-<div id="donate-leader" class="px-2 md:px-0 py-14 bg-blue w-[calc(100vw - (100vw - 100%))] my-10 -mx-[50%] box-content">
+{{ $donateAmount := split $donateAmounts "," }}
+{{ $donateFirst := index $donateAmounts 1 }}
+{{ $donateDefault := int $donateFirst }}
+<div
+  id="donate-leader"
+  class="w-[calc(100vw - (100vw - 100%))] my-10 -mx-[50%] box-content bg-blue px-2 py-14 md:px-0"
+>
   <div
     data-ga-category=" {{ $donateGaCategory }}"
     class="no-js:hidden mx-auto w-full max-w-2xl"
@@ -26,7 +37,7 @@
         ...this.buildClass(this.inactive, true),
       }
     },
-    amount: '15',
+    amount: '{{ $donateDefault }}',
     freq: 'm',
     showOther: false,
     btnClass(cond) {
@@ -57,6 +68,7 @@
         class="flex-[0_1_614px] font-sans text-2xl font-black leading-none tracking-wide text-white sm:text-4xl md:text-5xl"
       >
         {{ $donateHed }}
+
       </h2>
 
       <div class="mt-6 flex flex-wrap justify-start gap-2">
@@ -78,22 +90,23 @@
           </button>
         {{ end }}
 
-        {{ with $donateAmounts }}
-          {{ range $donateAmount := . }}
-            {{ $amount := int $donateAmount }}
+        {{ with $donateAmount }}
+          {{ range . }}
+            {{ $amount := int . }}
             {{ $btn := slice $amount "/mo." "m" }}
             {{ template "tw-donate-prefill-button-lg" $btn }}
           {{ end }}
 
-          {{ range $donateAmount := . }}
-            {{ $donateYr := int $donateAmount }}
+          {{ range . }}
+            {{ $amount := int . }}
+            {{ $donateYr := int . }}
             {{ $amount := mul $donateYr 12 }}
             {{ $btn := slice $amount "/yr." "y" }}
             {{ template "tw-donate-prefill-button-lg" $btn }}
           {{ end }}
 
-          {{ range $donateAmount := . }}
-            {{ $donateYr := int $donateAmount }}
+          {{ range . }}
+            {{ $donateYr := int . }}
             {{ $amount := mul $donateYr 12 }}
             {{ $btn := slice $amount "" "o" }}
             {{ template "tw-donate-prefill-button-lg" $btn }}
@@ -164,7 +177,7 @@
             name="freq"
             class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-s-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
             :class="btnClass(freq === 'y')"
-            @click="setAmt('y', '180')"
+            @click="setAmt('y', '{{ mul $donateDefault 12 }}')"
           />
         </label>
         <label class="flex flex-row items-center">
@@ -175,7 +188,7 @@
             name="freq"
             class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-s-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
             :class="btnClass(freq === 'o')"
-            @click="setAmt('o', '180')"
+            @click="setAmt('o', '{{ mul $donateDefault 12 }}')"
           />
         </label>
       </div>
