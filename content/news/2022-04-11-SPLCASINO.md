@@ -184,12 +184,7 @@ Another staffer from Tomlinson’s office a week later emailed the lobbyists wit
 
 The bill that Tomlinson introduced at the end of the month contained near-identical language to the draft that Parx’s lobbyists had drawn up.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01gp/9pz0/lightbox.svg"
-  width="750"
-  height="375"
-  bgcolor="#4d52b9"
->}}
+{{<featured/lightbox>}}
 
 
 ### ‘Talking points’
@@ -278,10 +273,3 @@ Gmerek’s response: “He could also sell cocaine and have the same result.”
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01g7/vkgq/ddap-donate-sticky.svg"
-  width="300"
-  height="250"
->}}
-

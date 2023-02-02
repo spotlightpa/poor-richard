@@ -299,12 +299,7 @@ The company asks new patients to share one form of documentation for their quali
 
 Her company is allowed to advertise in print and on the radio, and Hutchison said she’s done so.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01h8/wxbe/lightbox.svg"
-  width="1024"
-  height="512"
-  bgcolor="white"
->}}
+{{<featured/lightbox>}}
 
 While the Department of Health has said it doesn’t have “regulatory authority” over certification companies, it can take action against physicians associated with them.
 
@@ -409,11 +404,3 @@ Still, when asked about rules banning advertising by physicians — but not busi
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01h8/wxw0/square.png"
-  width="300"
-  height="250"
-  bgcolor="#ffffff"
->}}
-

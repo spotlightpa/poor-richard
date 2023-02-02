@@ -5,6 +5,7 @@ blurb = "Capitol insiders believe the poor primary performances of Harrisburg’
 byline = "Stephen Caruso of Spotlight PA"
 description = "Capitol insiders believe the poor primary performances of Harrisburg’s top budget negotiators could inspire frustrated Republicans to revolt during budget season."
 image = "external/2q080njycaygmkch0t3fckawkr.jpeg"
+image-credit = "MICHAEL BRYANT / Philadelphia Inquirer"
 image-description = "At least five Republican House incumbents lost reelection on May 17, including Stan Saylor (R., York), who chairs the powerful Appropriations Committee."
 internal-budget = "How high-profile GOP primary losses in Pa. could lead to a painful budget impasse this summer"
 internal-id = "SPLBULOSS"

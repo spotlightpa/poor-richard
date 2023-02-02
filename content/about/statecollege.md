@@ -1,12 +1,12 @@
 +++
-title = "State College"
-description = "The future of journalism in State College is here. Join our historic effort to invigorate local news."
 image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
+published = 2023-01-23T14:31:27.470Z
+title = "State College"
+description = "The future of journalism in State College is here. Join our historic effort to invigorate local news."
 layout = "about-statecollege"
 +++
-
 ## A Novel Approach to Reinvigorating Local News
 
 To combat the continuing loss of local news in Pennsylvania, Spotlight PA launched its first pilot regional bureau based in State College and covering north-central Pennsylvania. We hope this bureau will serve as a model for how to address the crisis in local news in communities across the state. As part of this initiative, Spotlight PA hired <a href="/statecollege/2022/07/state-college-penn-state-rural-pennsylvania-local-news/">a team of four journalists dedicated to the region</a>, which represents a sizable and significant infusion of talent relative to the number of current reporters.
@@ -21,7 +21,7 @@ The team is employed by Spotlight PA and receives organizational support from th
 
 ## Fundraising
 
-We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. To encourage founding donors to join the effort, The Lenfest Institute for Journalism is offering to match all contributions up to $200,000 this year. You can <a href="/donate/">support this special effort by clicking here</a>, or to learn more about getting involved, you can email Spotlight PA Major Gifts Advisor Kathleen Pavelko at <a href="mailto:kpavelko@spotlightpa.org">kpavelko@spotlightpa.org</a>.
+We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="/donate/">support this special effort by clicking here</a>, or to learn more about getting involved, you can email Spotlight PA Major Gifts Director Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>.
 
 We’re so grateful to our <a href="#donors">founding individual donors for supporting this effort</a> (see our State College bureau donor list below).
 

@@ -432,5 +432,4 @@ Richard Kuprewicz, a pipeline safety expert and consultant, also based in Washin
   >}}
 {{</featured/footer>}}
 
-{{<featured/sticky text="Donate now and support Spotlight PA's original, exclusive investigations like this report on Mariner East.">}}
 
