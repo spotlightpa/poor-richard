@@ -20,6 +20,7 @@ module.exports = {
     },
     {
       files: [
+        "_default/staff-page.html",
         "**/embed/*.html",
         "**/featured/*.html",
         "**/news/featured.html",
