@@ -25,7 +25,7 @@ form ="""
 >}}
 """
 newsletter = """
-{{<newsletter/long-form>}}
+{{<newsletter/pennstatealert-longform>}}
 """
 [[blocks]]
   title = "You can help us cover Penn State"
