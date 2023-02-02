@@ -3,7 +3,17 @@
 {{ end }}
 
 {{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/noscript.html" . }}
+
+
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+
+  {{ partial "header/favicons.html" . }}
+  {{ partial "header/feeds.html" . }}
 {{ end }}
 
 {{ define "header" }}
@@ -85,7 +95,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="bg-s-2 py-10 px-2">
+  <section class="bg-s-2 py-10 px-2  font-raleway">
     <div class="mx-auto my-14 w-full max-w-[1248px]">
       <h2
         class="mb-10 text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
@@ -123,7 +133,7 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class=" mb-8 grid grid-cols-5 grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)] font-raleway"
+    class=" mb-8 grid grid-cols-5 grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)]"
   >
     {{ if $author.thumb }}
       <img
@@ -134,7 +144,13 @@
         decoding="async"
       />
     {{ else }}
-      <span class="col-span-2 row-span-1 mr-4 rounded-full"></span>
+      <svg
+        class="col-span-2 bg-s-4 p-5 fill-s-7 box-content row-span-1 mr-4 rounded-full"
+        viewBox="0 0 1 1"
+        aria-hidden="true"
+      >
+        <use xlink:href="#user-svg"></use>
+      </svg>
     {{ end }}
 
 
@@ -280,6 +296,7 @@
   {{ $svgs := dict
     "phone-svg" "@fontawesome/solid/phone.svg"
     "chat-svg" "@fontawesome/solid/comment.svg"
+    "user-svg" "@fontawesome/solid/user.svg"
   }}
   {{ partial "header/svgs.html" $svgs }}
 {{ end }}
