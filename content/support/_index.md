@@ -2,7 +2,7 @@
 published = 2019-09-05T13:14:35.433Z
 title = "Support Us"
 subhed = "How We’re Funded"
-description = "Spotlight PA is a project of the Lenfest Institute that combines the strength of Philadelphia Inquirer, PennLive, and many more partners."
+description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania."
 url = "/support/"
 layout = "support"
 
@@ -63,8 +63,8 @@ copy="""
 
 ## Mail a Check
 
-Make a check out to Spotlight PA and send it to <br>
-**Spotlight PA,** <br>
+Make a check out to Spotlight PA and send it to: <br>
+**Spotlight PA** <br>
 **228 Walnut St., #11728,** <br> 
 **Harrisburg, PA 17108-1728.** <br>
 
