@@ -125,7 +125,6 @@
     id="{{ $author.slug }}"
     class=" mb-8 grid grid-cols-5 grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)] font-raleway"
   >
-
     {{ if $author.thumb }}
       <img
         src="{{ $author.thumb }}"
@@ -149,13 +148,16 @@
           {{ . }}
         </h3>
       {{ end }}
-        <h3 class="text-2xl mb-1 flex-1 flex items-end font-bold" data-ga-category="author-articles">
-          {{ if $author.link }}
+      <h2
+        class="text-2xl mb-1 flex-1 flex items-end font-bold"
+        data-ga-category="author-articles"
+      >
+        {{ if $author.link }}
           <a class="text-blue" href="{{ $author.link }}">{{ $author.name }}</a>
-          {{ else }}
-            {{ $author.name }}
-      {{ end }}
-        </h3>
+        {{ else }}
+          {{ $author.name }}
+        {{ end }}
+      </h2>
       <p class="text-sm uppercase font-black">{{ $author.title }}</p>
       <dl class="flex flex-wrap mt-3">
         {{ with $author.email }}
@@ -166,8 +168,8 @@
               </svg>
             </span>
             Email:
-            </dt>
-            <dd class="flex-[0_1_50%]">
+          </dt>
+          <dd class="flex-[0_1_50%]">
             <a
               class=" text-blue"
               data-ga-category="author-email"
@@ -176,7 +178,7 @@
             >
               {{ . }}
             </a>
-            </dd>
+          </dd>
         {{ end }}
         {{ with $author.twitter }}
           <dt class="flex-0 flex items-center mr-2">
@@ -186,8 +188,8 @@
               </svg>
             </span>
             Twitter:
-            </dt>
-            <dd class="flex-[0_1_50%]">
+          </dt>
+          <dd class="flex-[0_1_50%]">
             <a
               class=" text-blue"
               data-ga-category="author-twitter"
@@ -206,8 +208,8 @@
               </svg>
             </span>
             Telephone:
-            </dt>
-            <dd class="flex-[0_1_50%]">
+          </dt>
+          <dd class="flex-[0_1_50%]">
             <a
               class=" text-blue"
               title="Telephone"
@@ -224,8 +226,8 @@
               </svg>
             </span>
             Signal:
-            </dt>
-            <dd class="flex-[0_1_50%]">
+          </dt>
+          <dd class="flex-[0_1_50%]">
             <a
               class=" text-blue"
               title="Contact via the Signal app"
@@ -236,10 +238,10 @@
         {{ end }}
       </dl>
     </header>
-    <div class="col-span-5 row-span-1 mb-5">
+    <div class="col-span-5 row-span-1 mb-5 article-content">
       {{ with $author.focusHed }}
-        <h3 class="mb-3 subtitle is-4">
-          <b class="has-text-weight-semibold">Focus:</b>
+        <h3 class="my-2">
+          <b class="font-bold">Focus: </b>
           {{ . }}
         </h3>
       {{ end }}
@@ -273,7 +275,6 @@
 {{ define "search-modal" }}
   {{ partial "tw/modal-search.html" . }}
 {{ end }}
-
 
 {{ define "extra-footer" }}
   {{ $svgs := dict
