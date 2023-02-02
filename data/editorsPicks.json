@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-02-01-SPLPAHAF31.md"
+    "content/statecollege/2023-02-02-SPLTTLIONS.md"
   ],
   "subfeatures": [
-    "content/news/2023-01-26-SPLMORTGAGEGUIDE.md",
-    "content/news/2023-01-23-SPLMORTGAGE.md"
+    "content/statecollege/2023-01-10-SPLPSUPOLICE.md",
+    "content/statecollege/2022-12-06-SPLTTPLANE.md"
   ],
   "topSlots": [
+    "content/news/2023-02-01-SPLPAHAF31.md",
     "content/news/2023-01-31-SPLSPECEVENT.md",
-    "content/news/2023-01-31-SPLANXIETY.md",
-    "content/statecollege/2023-02-01-SPLALTOONARIFLE.md"
+    "content/news/2023-01-31-SPLANXIETY.md"
   ],
   "topper": []
 }
