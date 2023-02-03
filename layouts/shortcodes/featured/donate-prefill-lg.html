@@ -1,0 +1,20 @@
+{{ $wrapperClass := .Get "wrapperClass" | default " my-10 -mx-[50%]" }}
+{{ $donateHed := .Get "donateHed" | default "Join our historic effort to invigorate local news." }}
+{{ $donateCta := .Get "donateCta" | default "Contribute" }}
+{{ $donateGaCategory := .Get "donateGaCategory" | default "donate-prefill-lg" }}
+{{ $donateGaForm := .Get "donateGaForm" | default "" }}
+{{ $donateCampaign := .Get "donateCampaign" | default "7015G0000013oHVQAY" }}
+{{ $donateTheme := .Get "donateTheme" | default "" }}
+{{ $donateAmounts := .Get "donateAmounts" | default "10,15,25,50" }}
+
+{{ partial "tw/donate-prefill-lg" (dict
+  "wrapperClass" $wrapperClass
+  "donateHed" $donateHed
+  "donateCta" $donateCta
+  "donateGaCategory" $donateGaCategory
+  "donateGaForm" $donateGaForm
+  "donateCampaign" $donateCampaign
+  "donateTheme" $donateTheme
+  "donateAmounts" $donateAmounts
+  )
+}}
