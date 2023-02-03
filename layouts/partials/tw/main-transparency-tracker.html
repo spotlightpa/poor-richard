@@ -1,4 +1,4 @@
-<section class="bg-white px-4 pt-12 pb-2 md:px-0 md:pb-6">
+<section class="bg-white px-4 pt-12 md:px-0">
   <header>
     <div class="mx-auto w-full max-w-screen-lg">
       <h1
@@ -40,7 +40,7 @@
 
   </section>
 
-  <div class="font-raleway">
+  <div class="-mx-4 font-sans md:mx-0">
     {{ .Page.RenderString (.Param "newsletter") }}
   </div>
 
@@ -61,8 +61,7 @@
 
   </section>
 
-
-  <div class="bg-s-2 -mx-4 md:mx-0" data-ga-category="text">
+  <div class="-mx-4 bg-s-2 md:mx-0" data-ga-category="text">
     <article
       class="article-content mx-auto max-w-[1248px] py-24 px-5 font-raleway md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
@@ -73,5 +72,4 @@
       {{ .Page.RenderString (.Param "credits") }}
     </article>
   </div>
-
 </section>
