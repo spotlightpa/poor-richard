@@ -1,4 +1,4 @@
-{{ $wrapperClass := .wrapperClass  | default ""}}
+{{ $wrapperClass := .wrapperClass  | default "" }}
 {{ $donateHed := .donateHed | default "Join our historic effort to invigorate local news." }}
 {{ $donateCta := .donateCta | default "Contribute" }}
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
@@ -6,7 +6,6 @@
 {{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
 {{ $donateTheme := .donateTheme | default "" }}
 {{ $donateAmounts := .donateAmounts | default (slice "10" "15" "25" "50") }}
-
 
 {{ $btnClass := ` mr-4 flex-[0_1_30%] outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
@@ -16,9 +15,7 @@
 {{ $donateAmount := split $donateAmounts "," }}
 {{ $donateFirst := index $donateAmounts 1 }}
 {{ $donateDefault := int $donateFirst }}
-<div
-  class="{{ $wrapperClass }} box-content bg-blue px-2 py-14 md:px-0"
->
+<div class="{{ $wrapperClass }} box-content bg-blue px-2 py-14 md:px-0">
   <div
     data-ga-category=" {{ $donateGaCategory }}"
     class="no-js:hidden mx-auto w-full max-w-content"

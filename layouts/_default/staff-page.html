@@ -40,15 +40,15 @@
 {{ define "main" }}
   <header class="bg-black py-14 px-3 text-white">
     <div
-      class="mx-auto max-w-[1248px] items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+      class="mx-auto max-w-[1248px] items-center gap-y-3 gap-x-5 md:grid md:min-h-[110px] md:grid-cols-12"
     >
       <h1
-        class="uppercase font-serif text-[45px] leading-none col-span-5 col-start-2 row-span-1 row-start-1 font-black"
+        class="col-span-5 col-start-2 row-span-1 row-start-1 font-serif text-[45px] font-black uppercase leading-none"
       >
         {{ .Title }}
       </h1>
       <div
-        class="font-raleway col-span-5 col-start-7 row-start-1 text-xl font-medium mt-3 md:mt-0"
+        class="col-span-5 col-start-7 row-start-1 mt-3 font-raleway text-xl font-medium md:mt-0"
       >
         {{ .Description }}
       </div>
@@ -56,10 +56,10 @@
   </header>
   <section class=" bg-s-0">
     <div
-      class="mx-auto max-w-[1038px] font-raleway text-lg font-medium  py-14 px-5 lg:px-0"
+      class="mx-auto max-w-[1038px] py-14 px-5 font-raleway  text-lg font-medium lg:px-0"
     >
       {{ with .Page.Params.subhed }}
-        <h2 class="font-black text-5xl mb-5">{{ . }}</h2>
+        <h2 class="mb-5 text-5xl font-black">{{ . }}</h2>
       {{ end }}
       <div class=" article-content">
         {{ .Content }}
@@ -73,7 +73,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class="mx-auto pb-14 w-full"
+        class="mx-auto w-full pb-14"
       >
         {{ partial "blocks/block" (dict "Page" $ "block" .) }}
       </div>
@@ -135,37 +135,71 @@
     id="{{ $author.slug }}"
     class=" mb-8 grid grid-cols-5 grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)]"
   >
-    {{ if $author.thumb }}
-      <img
-        src="{{ $author.thumb }}"
-        alt="Photo of {{ $author.name }}"
-        class="col-span-2 row-span-1 mr-4 rounded-full"
-        loading="lazy"
-        decoding="async"
-      />
+    {{ if $author.headshot }}
+      {{ $sizes := (slice
+        (dict "width" 256 "height" 256)
+        (dict "width" 512 "height" 512)
+        )
+      }}
+      {{ $srcset := partial "helper/build-srcset" (dict
+        "sizes" $sizes
+        "filename" $author.headshot
+        "gravity" $author.gravity
+        )
+      }}
+
+      {{ $imgOpt := dict
+        "filename" $author.headshot
+        "width" 256
+        "height" 256
+        "gravity" $author.gravity
+      }}
+      {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+      <div class="col-span-2 row-span-1 mr-4">
+        {{ partial "tag/picture-maybe-link.html" (dict
+          "link" $author.link
+          "wrapperClass" "m-auto flex max-h-full"
+          "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+          "imgClass" "w-full h-full object-cover"
+          "sizeHint" "256px"
+          "eager" false
+          "description" (printf "Photo of %s" $author.name)
+          "srcset" $srcset
+          "src" $imgSmallSrc
+          "width" 256
+          "height" 256
+          )
+        }}
+      </div>
     {{ else }}
-      <svg
-        class="col-span-2 bg-s-4 p-5 fill-s-7 box-content row-span-1 mr-4 rounded-full"
-        viewBox="0 0 1 1"
-        aria-hidden="true"
-      >
-        <use xlink:href="#user-svg"></use>
-      </svg>
+      <a class="col-span-2 row-span-1 mr-4" href="{{ $author.link }}">
+        <span class="m-auto flex aspect-square max-h-full">
+          <svg
+            class="h-full w-full overflow-hidden rounded-full bg-s-4 fill-current p-5 text-s-7 shadow"
+            viewBox="0 0 1 1"
+            aria-hidden="true"
+          >
+            <use xlink:href="#user-svg"></use>
+          </svg>
+        </span>
+      </a>
     {{ end }}
 
 
     <header
-      class="col-span-3 row-span-1 mt-6 h-52 mb-2 max-w-xs flex flex-col items-start"
+      class="col-span-3 row-span-1 mt-6 mb-2 flex h-52 max-w-xs flex-col items-start"
     >
       {{ with $author.beat }}
-        <h3
-          class="self-start bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
-        >
-          {{ . }}
+        <h3 class="inline-block self-start leading-snug">
+          <span
+            class="border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
+          >
+            {{- . -}}
+          </span>
         </h3>
       {{ end }}
       <h2
-        class="text-2xl mb-1 flex-1 flex items-end font-bold"
+        class="mb-1 flex flex-1 items-end text-2xl font-bold"
         data-ga-category="author-articles"
       >
         {{ if $author.link }}
@@ -174,11 +208,11 @@
           {{ $author.name }}
         {{ end }}
       </h2>
-      <p class="text-sm uppercase font-black">{{ $author.title }}</p>
-      <dl class="flex flex-wrap mt-3">
+      <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+      <dl class="mt-3 flex flex-wrap">
         {{ with $author.email }}
-          <dt class="flex-0 flex items-center mr-2">
-            <span class=" w-4 h-4 mr-2">
+          <dt class="flex-0 mr-2 flex items-center">
+            <span class=" mr-2 h-4 w-4">
               <svg viewBox="0 0 1 1">
                 <use xlink:href="#email-svg"></use>
               </svg>
@@ -197,8 +231,8 @@
           </dd>
         {{ end }}
         {{ with $author.twitter }}
-          <dt class="flex-0 flex items-center mr-2">
-            <span class=" w-4 h-4 mr-2">
+          <dt class="flex-0 mr-2 flex items-center">
+            <span class=" mr-2 h-4 w-4">
               <svg viewBox="0 0 1 1">
                 <use xlink:href="#twitter-svg"></use>
               </svg>
@@ -217,8 +251,8 @@
           </dd>
         {{ end }}
         {{ with $author.tel }}
-          <dt class="flex-0 flex items-center mr-2">
-            <span class=" w-4 h-4 mr-2">
+          <dt class="flex-0 mr-2 flex items-center">
+            <span class=" mr-2 h-4 w-4">
               <svg viewBox="0 0 1 1" aria-hidden="true">
                 <use xlink:href="#phone-svg"></use>
               </svg>
@@ -235,8 +269,8 @@
           </dd>
         {{ end }}
         {{ with $author.signal }}
-          <dt class="flex-0 flex items-center mr-2">
-            <span class=" w-4 h-4 mr-2">
+          <dt class="flex-0 mr-2 flex items-center">
+            <span class=" mr-2 h-4 w-4">
               <svg viewBox="0 0 1 1" aria-hidden="true">
                 <use xlink:href="#chat-svg"></use>
               </svg>
@@ -254,7 +288,7 @@
         {{ end }}
       </dl>
     </header>
-    <div class="col-span-5 row-span-1 mb-5 article-content">
+    <div class="article-content col-span-5 row-span-1 mb-5">
       {{ with $author.focusHed }}
         <h3 class="my-2">
           <b class="font-bold">Focus: </b>
