@@ -133,7 +133,7 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class=" mb-8 grid grid-cols-5 grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)]"
+    class=" mb-8 grid grid-cols-5 grid-rows-[auto_auto_auto] md:grid-rows-[248px_3fr] gap-5 rounded bg-white p-5 shadow-md lg:flex-[0_1_calc(50%_-_1rem)]"
   >
     {{ if $author.headshot }}
       {{ $sizes := (slice
@@ -155,7 +155,7 @@
         "gravity" $author.gravity
       }}
       {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
-      <div class="col-span-2 row-span-1 mr-4">
+      <div class="col-span-2 row-1 row-span-1 mr-4">
         {{ partial "tag/picture-maybe-link.html" (dict
           "link" $author.link
           "wrapperClass" "m-auto flex max-h-full"
@@ -172,7 +172,7 @@
         }}
       </div>
     {{ else }}
-      <a class="col-span-2 row-span-1 mr-4" href="{{ $author.link }}">
+      <a class="col-span-2 row-1 row-span-1 mr-4" href="{{ $author.link }}">
         <span class="m-auto flex aspect-square max-h-full">
           <svg
             class="h-full w-full overflow-hidden rounded-full bg-s-4 fill-current p-5 text-s-7 shadow"
@@ -187,7 +187,7 @@
 
 
     <header
-      class="col-span-3 row-span-1 mt-6 mb-2 flex h-52 max-w-xs flex-col items-start"
+      class="col-span-5 md:col-span-3 row-2 md:row-1 row-span-1 mt-6 mb-2 flex h-52 max-w-xs flex-col items-start"
     >
       {{ with $author.beat }}
         <h3 class="inline-block self-start leading-snug">
