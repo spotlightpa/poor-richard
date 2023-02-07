@@ -1,0 +1,42 @@
+{{ $featured := index . 0 }}
+{{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
+
+{{ $kickerLink := $featuredParams.series | default $featuredParams.topic }}
+
+{{ $imgOpts := dict
+  "filename" ($featured.Param "image")
+  "credit" ($featured.Param "image-credit")
+  "description" ($featured.Param "image-description")
+  "gravity" ($featured.Param "image-gravity")
+  "link" $featured.RelPermalink
+  "widthRatio" 16
+  "heightRatio" 9
+  "widths" (slice 528 1056 1280)
+  "sizeHint" "(min-width: 1080px) 528px, (min-width: 850px) 40vw, 90vw"
+}}
+
+{{ partial "tw/thumb-h-item.html" (dict
+  "imgOpts" $imgOpts
+  "rubricLink" $kickerLink.RelPermalink
+  "extendedEyebrow" $featuredParams.extendedKicker
+  "eyebrow" $featuredParams.kicker
+  "link" $featured.RelPermalink
+  "hed" $featured.LinkTitle
+  "dek" $featuredParams.blurb
+  "byline" $featuredParams.byline
+  "hedSize" "text-2xl"
+  "thumbClass" "flex-1"
+  "storyClass" "flex-1"
+
+  )
+}}
+
+{{ if $featured.Params.subhed }}
+  {{ $featured.Params.subhed }}
+{{ end }}
+
+{{ if gt (len .) 1 }}
+  {{ range after 1 . }}
+    <a href="{{ .RelPermalink }}"> {{ .LinkTitle }}</a>
+  {{ end }}
+{{ end }}

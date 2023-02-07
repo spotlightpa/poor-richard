@@ -1,0 +1,150 @@
+{{ $nlBox := .page.Param "newsletter-box" |
+  default "tw/inline-newsletter-box.html"
+}}
+{{ $imageDescription := .page.Param "river-promo-description" }}
+{{ $link := .page.Param "river-promo-link" }}
+{{ $desktopImages := .page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := .page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := .page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := .page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := .page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := .page.Param "river-promo-mobile-height" }}
+
+{{ $btn := `inline-block
+  rounded-lg bg-blue-6 py-3 px-4
+  font-sans text-base font-bold
+  uppercase leading-none tracking-widest
+  text-white shadow
+  outline-none ring-2 ring-transparent
+  hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7`
+}}
+
+
+<section class="px-6 py-8" data-ga-category="homepage">
+  <div class="mx-auto mb-5 max-w-[1248px]">
+    {{ if .featuredStories }}
+      {{ partial "tw/featured.html" .featuredStories }}
+    {{ end }}
+    {{ if .pinnedStories }}
+      {{ $pages := .pinnedStories }}
+      {{ partial "tw/list-3-col-story.html" (dict
+        "pages" $pages
+        "wrapperClass" "mb-16 mx-auto"
+        )
+      }}
+    {{ end }}
+    <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+
+    <div class="tile is-2"></div>
+    <div class="tile is-parent is-8">
+      <div
+        class="tile is-child"
+        data-ga-category="midpage"
+        x-data="funnelStatus"
+      >
+        <div x-show="!isSubscriber">
+          {{ partial $nlBox . }}
+        </div>
+        <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+          {{ partial "tw/donate-prefill-lg.html" (dict
+            "wrapperClass" "rounded overflow-hidden")
+          }}
+        </div>
+      </div>
+    </div>
+    {{ if .river }}
+      <div
+        class=" flex flex-wrap items-start"
+        @mouseover.passive.once="load()"
+        @touchstart.passive.once="load()"
+      >
+        <div class="flex-[1_0_30%] p-8" style="order: 2">
+          <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mb-5 w-0 min-w-full no-js:hidden"
+              "images" (.page.Param "sidebar-top-images")
+              "width" (.page.Param "sidebar-top-width")
+              "height" (.page.Param "sidebar-top-height")
+              "link"  (.page.Param "sidebar-top-link")
+              "description"  (.page.Param "sidebar-top-description")
+              )
+            }}
+          </div>
+
+          {{ partial "tw/rail-most-popular.html" dict }}
+          {{ range .edPicks }}
+            {{ if .page }}
+              {{ partial "tw/rail-editors-picks.html" . }}
+            {{ end }}
+          {{ end }}
+          {{ if .page.Param "sidebar-sticky-images" }}
+            <div
+              class="sticky"
+              data-ga-category="sticky"
+              data-sf-campaign="7015G0000013oHQQAY"
+              x-intersect="$dispatch('close-sticky')"
+            >
+              {{ partial "tw/promo-single.html" (dict
+                "class" "pt-5 w-0 min-w-full no-js:hidden"
+                "images" (.page.Param "sidebar-sticky-images")
+                "width" (.page.Param "sidebar-sticky-width")
+                "height" (.page.Param "sidebar-sticky-height")
+                "link" (.page.Param "sidebar-sticky-link")
+                "description" (.page.Param "sidebar-sticky-description")
+                )
+              }}
+            </div>
+          {{ end }}
+        </div>
+        <div
+          class="tile is-vertical order-1 flex-[0_0_66%] justify-between py-8 pr-8"
+          x-ref="archives"
+          data-ga-category="river"
+          data-sf-campaign="7015G0000013oHGQAY"
+        >
+          <h2
+            class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+          >
+            More top stories
+          </h2>
+          <hr
+            class=" is-emphatic-underline has-margin-top-negative mb-5 border-b-2"
+          />
+          <div
+            class="mt-3 flex flex-col space-y-8 sm:space-y-6"
+            x-ref="archives"
+          >
+            {{ range $page := .river | first 30 }}
+              {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+            {{ end }}
+          </div>
+
+          {{ partial "tile/readmore.html" dict }}
+          {{ if gt 30 (len .river) }}
+            <div style="height: 100%;">&nbsp;</div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+    {{ if gt (len .river) 30 }}
+      <div class="tile">
+        <div class="tile is-parent">
+          <div class="tile is-child has-text-centered">
+            <a
+              @click.prevent="click()"
+              @mouseover.once="load()"
+              @touchstart.passive.once="load()"
+              data-ga-category="readmore"
+              :data-ga-action='"readmore:load"'
+              href="/news/"
+              class="{{ $btn }}"
+              :class="loadingClass"
+              :disabled="!canReadMore"
+              >More Stories</a
+            >
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
