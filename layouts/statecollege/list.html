@@ -1,18 +1,33 @@
 {{ define "title" }}
   <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
 {{ end }}
-
-{{ define "nav" }}
-  {{ partial "tw/nav-sc.html" . }}
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
-{{ define "topper" }}
-  {{ if .Param "topper-active" }}
-    {{ partialCached "component/topper.html" . }}
-  {{ end }}
-  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-    {{ partial "component/topper-articlepromo.html" $topperStories }}
-  {{ end }}
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
 {{ end }}
 
 {{ define "main" }}
@@ -44,9 +59,9 @@
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
 
-  <div data-sf-campaign="7015G0000013pUYQAY" data-sf-theme="centrecounty">
-    <h1 class="is-sr-only">{{ .Title }}</h1>
-    {{ partial "component/frontpage" (dict
+  <div data-sf-campaign="7015G0000013pUYQAY" class="bg-white px-4 pt-12 pb-2 md:pb-6" data-sf-theme="centrecounty">
+    <h1 class="sr-only">{{ .Title }}</h1>
+    {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
       "pinnedStories" $pinnedStories
       "river" $river
