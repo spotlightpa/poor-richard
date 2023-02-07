@@ -12,7 +12,7 @@
 {{ define "header" }}
   <header data-ga-category="header">
     {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
+      {{ partial "tw/nav-sc.html" . }}
     {{ end }}
     {{ block "banner" . }}
       {{ if .Param "banner-active" }}
@@ -59,7 +59,11 @@
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
 
-  <div data-sf-campaign="7015G0000013pUYQAY" class="bg-white px-4 pt-12 pb-2 md:pb-6" data-sf-theme="centrecounty">
+  <div
+    data-sf-campaign="7015G0000013pUYQAY"
+    class="bg-white px-4 pt-12 pb-2 md:pb-6"
+    data-sf-theme="centrecounty"
+  >
     <h1 class="sr-only">{{ .Title }}</h1>
     {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
