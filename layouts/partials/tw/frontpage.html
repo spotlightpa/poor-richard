@@ -20,7 +20,9 @@
 }}
 
 
-<section class="px-6 py-8" data-ga-category="homepage">
+<section 
+    class="bg-white px-4 pt-12 pb-2 md:pb-6"
+ data-ga-category="homepage">
   <div class="mx-auto mb-5 max-w-[1248px]">
     {{ if .featuredStories }}
       {{ partial "tw/featured.html" .featuredStories }}
@@ -74,7 +76,7 @@
           {{ partial "tw/rail-most-popular.html" dict }}
           {{ range .edPicks }}
             {{ if .page }}
-              {{ partial "tw/rail-editors-picks.html" . }}
+              {{ partial "tw/rail-picks.html" . }}
             {{ end }}
           {{ end }}
           {{ if .page.Param "sidebar-sticky-images" }}
