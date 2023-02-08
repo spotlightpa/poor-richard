@@ -59,7 +59,7 @@
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
 
-  <div
+  <section
     data-sf-campaign="7015G0000013pUYQAY"
     class="bg-white px-4 pt-12 pb-2 md:pb-6"
     data-sf-theme="centrecounty"
@@ -73,7 +73,7 @@
       "page" .Page
       )
     }}
-  </div>
+      </section>
 {{ end }}
 {{ define "before-footer" }}
   {{ partialCached "tw/promo-footer.html" (dict

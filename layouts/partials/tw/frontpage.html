@@ -20,7 +20,6 @@
 }}
 
 
-<section class="bg-white px-4 pt-12 pb-2 md:pb-6" data-ga-category="homepage">
   <div class="mx-auto mb-5 max-w-[1248px]">
     {{ if .featuredStories }}
       {{ partial "tw/featured.html" .featuredStories }}
@@ -35,10 +34,7 @@
     {{ end }}
     <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
-    <div class="tile is-2"></div>
-    <div class="tile is-parent is-8">
       <div
-        class="tile is-child"
         data-ga-category="midpage"
         x-data="funnelStatus"
       >
@@ -51,14 +47,13 @@
           }}
         </div>
       </div>
-    </div>
     {{ if .river }}
       <div
         class=" flex flex-wrap items-start"
         @mouseover.passive.once="load()"
         @touchstart.passive.once="load()"
       >
-        <div class="flex-[1_0_30%] p-8" style="order: 2">
+        <div class="flex-[1_0_30%] p-8 order-2 flex flex-col self-stretch" style="order: 2">
           <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
             {{ partial "tw/promo-single.html" (dict
               "class" "mb-5 w-0 min-w-full no-js:hidden"
@@ -79,13 +74,13 @@
           {{ end }}
           {{ if .page.Param "sidebar-sticky-images" }}
             <div
-              class="sticky"
+              class="flex-1"
               data-ga-category="sticky"
               data-sf-campaign="7015G0000013oHQQAY"
               x-intersect="$dispatch('close-sticky')"
             >
               {{ partial "tw/promo-single.html" (dict
-                "class" "pt-5 w-0 min-w-full no-js:hidden"
+                "class" "pt-5 w-0 min-w-full no-js:hidden sticky top-0"
                 "images" (.page.Param "sidebar-sticky-images")
                 "width" (.page.Param "sidebar-sticky-width")
                 "height" (.page.Param "sidebar-sticky-height")
@@ -97,7 +92,7 @@
           {{ end }}
         </div>
         <div
-          class="tile is-vertical order-1 flex-[0_0_66%] justify-between py-8 pr-8"
+          class="order-1 flex-[0_0_66%] justify-between py-8 pr-8"
           x-ref="archives"
           data-ga-category="river"
           data-sf-campaign="7015G0000013oHGQAY"
@@ -115,7 +110,7 @@
             x-ref="archives"
           >
             {{ range $page := .river | first 30 }}
-              {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+              {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
             {{ end }}
           </div>
 
@@ -127,9 +122,7 @@
       </div>
     {{ end }}
     {{ if gt (len .river) 30 }}
-      <div class="tile">
-        <div class="tile is-parent">
-          <div class="tile is-child has-text-centered">
+      <div class="flex justify-center">
             <a
               @click.prevent="click()"
               @mouseover.once="load()"
@@ -142,9 +135,6 @@
               :disabled="!canReadMore"
               >More Stories</a
             >
-          </div>
-        </div>
       </div>
     {{ end }}
   </div>
-</section>

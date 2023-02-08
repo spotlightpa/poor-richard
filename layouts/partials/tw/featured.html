@@ -25,9 +25,9 @@
   "dek" $featuredParams.blurb
   "byline" $featuredParams.byline
   "hedSize" "text-3xl"
-  "thumbClass" "flex-1"
+  "thumbClass" "flex-1 py-6 md:pr-8 md:pb-8 md:pt-0"
   "storyClass" "flex-1"
-
+  "subitems" $featured.Params.subhed
   )
 }}
 
@@ -36,7 +36,11 @@
 {{ end }}
 
 {{ if gt (len .) 1 }}
+  <ul class="list-inside font-sans font-light space-y-3 pt-5">
   {{ range after 1 . }}
-    <a href="{{ .RelPermalink }}"> {{ .LinkTitle }}</a>
+    <li class="list-[square] leading-snug tracking-normal">
+      <a class="text-dek hover:underline" href="{{ .RelPermalink }}"> {{ .LinkTitle }}</a>
+      </li>
   {{ end }}
+  </ul>
 {{ end }}

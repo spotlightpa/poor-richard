@@ -6,7 +6,7 @@
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if .extendedEyebrow }}
-      <span class="inline-flex">
+      <span class="inline-flex pb-4 text-sm md:pr-8 md:pb-2">
         {{ partial "tag/maybe-link.html" (dict
           "link" .rubricLink
           "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
@@ -39,7 +39,7 @@
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
     <div class="{{ $storyClass }} space-y-1">
-      <div class="group contents">
+      <div class=" flex flex-col">
         <h2
           class="{{ $hedSize }} font-bold leading-tight tracking-tight text-hed"
         >
@@ -53,7 +53,7 @@
         </h2>
         {{ if .dek }}
           <h3
-            class="font-sans text-base font-semibold leading-tight tracking-normal text-dek"
+            class=" order-1 font-sans text-xl font-light leading-tight tracking-normal text-dek"
           >
             <a
               href="{{ .link }}"
@@ -66,18 +66,22 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="font-sans text-base font-semibold leading-tight tracking-normal text-byline"
+            class="font-sans my-3 text-base font-light leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
-              class="group-hover:underline"
+              class="group-hover:none text-s-7"
               data-ga-category="byline"
             >
               {{- printf "by %s" .byline -}}
             </a>
           </h3>
+        {{ else if .blurb }}
+          <p
+                      class="font-sans my-3 text-base font-light leading-tight tracking-normal text-byline"
+>{{ .blurb }}</p>
         {{ end }}
-        {{- if .showDate }}
+        {{ if .showDate }}
           <h3
             class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
             data-ga-category="time"
@@ -88,8 +92,9 @@
               </time>
             </a>
           </h3>
-        {{- end -}}
+        {{ end }}
       </div>
+      
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5">
           {{ range .subitems }}
