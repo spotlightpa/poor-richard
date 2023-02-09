@@ -32,8 +32,6 @@ The Democrat’s department chairs will preside over the day-to-day operations o
 
 All cabinet appointees must be approved by the state Senate, which is controlled by Republicans.
 
-Shapiro’s nominees for secretary of general services and inspector general have not been announced yet. Here’s a running list of who we know about so far:
-
 <ul>
     <li><a href="#spl-aging">Aging: Jason Kavulich</a></li>
     <li><a href="#spl-agr">Agriculture: Russell Redding</a></li>
@@ -46,6 +44,7 @@ Shapiro’s nominees for secretary of general services and inspector general hav
     <li><a href="#spl-emerg">Emergency Management: Randy Padfield</a></li>
   <li><a href="#spl-enviro">Environmental Protection: Rich Negrin</a></li>
   <li><a href="#spl-fire">Fire: Thomas Cook</a></li>
+<li><a href="#spl-gen">General Services: Reggie McNeil</a></li>
   <li><a href="#spl-health">Health: Debra Bogen</a></li>
   <li><a href="#spl-human">Human Services: Val Arkoosh</a></li>
   <li><a href="#spl-ins">Insurance: Mike Humphreys</a></li>
@@ -125,7 +124,7 @@ In 2013, she was <a href="https://www.prnewswire.com/news-releases/pennfuture-an
 
 Many of the environmental conservation organizations that Dunn worked with in the past now commend Shapiro for his appointment, including PennFuture and the Chesapeake Bay Foundation. David Callahan, president of the Marcellus Shale Coalition — an organization that supports natural gas production in Pennsylvania — <a href="https://www.publicnow.com/view/43D10E0612AE53CD868610192A33D5FA93F66AD5?1673553601">has also supported</a> Dunn’s reappointment.
 
-Under the Wolf administration, Dunn added four new state parks and pledged to have the agency exclusively use renewable energy by 2030. In 2018, Dunn also developed the state’s<a href="https://www.media.pa.gov/pages/dcnr_details.aspx?newsid=464"> first climate change mitigation plan</a>.
+Under the Wolf administration, Dunn added <a href="https://www.dcnr.pa.gov/Pages/WolfAdministrationAccomplishments.aspx">four new state parks</a> and pledged to have the agency exclusively use renewable energy by 2030. In 2018, Dunn also developed the state’s<a href="https://www.media.pa.gov/pages/dcnr_details.aspx?newsid=464"> first climate change mitigation plan</a>.
 
 Dunn also procured an additional <a href="https://www.pasenategop.com/news/martin-laughlin-and-yaw-applaud-establishment-of-220m-pennsylvania-clean-streams-fund/">$220 million investment</a> toward the Clean Streams Fund, which protects the water quality of rivers and streams in Pennsylvania. Another $100 million from the American Rescue Plan Act went to state parks.
 
@@ -164,7 +163,7 @@ Since 2021, Mumin has been superintendent in Lower Merion, one of Pennsylvania�
 
 As Reading superintendent, Mumin <a href="https://www.inquirer.com/philly/education/in-pa-school-funding-maze-formula-for-equity-elusive-20170925.html">spoke to The Inquirer</a> about long-standing funding inequities at Pennsylvania schools, particularly urban ones. He said his goal was “to be sure we’re giving our kids the same opportunities the suburban kids have.”
 
-Mumin also <a href="https://www.wfmz.com/news/area/berks/reading-superintendent-calls-for-school-funding-reform/article_c09f7e48-2e42-5eb4-8850-52070a740f1b.html">vocally supported putting money into PlanCon</a>, a state program that reimburses districts for construction projects, telling local news station WFMZ it’s necessary “especially for school districts like Reading School District, with old infrastructure, beautiful buildings but need a lot of work.” It <a href="https://whyy.org/articles/pa-lawmakers-want-to-reform-school-construction-program-but-funding-remains-a-question/">hasn’t been funded since a 2015 budget battle</a> and is <a href="https://web.archive.org/web/20230122231143/https://www.psba.org/issue/plancon-funding/">taking no new applicants</a>.
+Mumin also <a href="https://www.wfmz.com/news/area/berks/reading-superintendent-calls-for-school-funding-reform/article_c09f7e48-2e42-5eb4-8850-52070a740f1b.html">vocally supported putting money into PlanCon</a>, a state program that reimburses districts for construction projects, telling local news station WFMZ it’s necessary “especially for school districts like Reading School District, with old infrastructure, beautiful buildings but need a lot of work.” It <a href="https://whyy.org/articles/pa-lawmakers-want-to-reform-school-construction-program-but-funding-remains-a-question/">hasn’t been funded since a 2015 budget battle</a> and is <a href="https://www.psba.org/issue/plancon-funding/">taking no new applicants</a>.
 
 Before his tenure at Reading, Mumin was superintendent in Caroline County, Maryland, and worked for schools in Bucks, Lancaster, and York Counties.
 
@@ -210,6 +209,19 @@ He was previously assistant fire chief for Pittsburgh, overseeing daily operatio
 If confirmed, Cook will continue working to develop statewide emergency training programs and will oversee the commonwealth’s Fire and Emergency Medical Services Loan Program, which gives low-interest loans to volunteer fire and emergency services organizations.
 
 He’ll also work closely with Pennsylvania’s more than 2,000 local fire departments on issues like recruitment and training.
+
+<div id="spl-gen"></div>
+
+
+## General Services: Reggie McNeil
+
+If confirmed, McNeil would come to the Department of General Services via the School District of Philadelphia, where he has served since 2020 as chief operating officer.
+
+He previously spent four years as executive director of capital programs in the Charleston County School District, which is the second biggest district in South Carolina.
+
+Most of his career before that was spent in the military, often in facilities roles — first as a construction manager at a Marine Corps logistics base in Georgia, then as officer in the U.S. Navy. His roles there included being an aide of the chief of the Navy’s civil engineer corps, a program manager for various naval operations, and an assistant public works officer.
+
+As General Services secretary, McNeil would oversee a department tasked with maintaining state buildings and vehicles, as well as providing security and insurance assistance for nonprofits and local government, as well as the state.
 
 <div id="spl-health"></div>
 
