@@ -25,7 +25,7 @@ A Pennsylvania appellate court won’t force the Department of State to release 
 
 But the court also left the door open for the GOP to continue seeking voters’ partial Social Security numbers and more. 
 
-In a decision Thursday, Commonwealth Court ruled that the state Senate Intergovernmental Operations Committee had other tools at its disposal to compel the department to comply with its subpoenas and thus did not need the court to do so.
+In a decision Thursday, Commonwealth Court ruled that the state Senate Intergovernmental Operations Committee had other tools at its disposal to compel the department to comply with its subpoena and thus did not need the court to do so.
 
 “The Senate Committee has express constitutional authority to enforce its subpoena,” the opinion read. “It may enforce its subpoena in accordance with the contempt statutes.”
 
@@ -46,15 +46,15 @@ The court declined to provide that type of “extraordinary remedy” the commit
 
 “As I read it, it’s sort of saying, we’re not going to weigh in to enforce it, we’re not going to knock it down, you have your own constitutional authority,” said Adam Bonin, a Philadelphia-based attorney who regularly works on election law issues for Democratic candidates.
 
-Commonwealth Court also dismissed the <a href="https://www.spotlightpa.org/news/2022/12/election-2020-audit-subpoena-doug-mastriano-tom-wolf/">Department of State’s December motion</a> to render the case moot, since the court’s decision addresses the underlying arguments of the case. The Department of State has argued that the subpoenas had effectively expired at the end of the last legislative session.
+Commonwealth Court also dismissed the <a href="https://www.spotlightpa.org/news/2022/12/election-2020-audit-subpoena-doug-mastriano-tom-wolf/">Department of State’s December motion</a> to render the case moot, since the court’s decision addresses the underlying arguments of the case. The Department of State has argued that the subpoena effectively expired at the end of the last legislative session.
 
 The Department of State did not respond to a request for comment. State Sen. Cris Dush (R., Jefferson), who was chair of the Intergovernmental Operations Committee when the case began, also did not respond to a request for comment.
 
-Clifford Levine, a Pittsburgh lawyer who represented state Senate Democrats in the case, said the caucus was pleased “that the privacy interests of 9 million voters will be preserved.” Levine said since the subpoenas were issued last legislative session — before the state Senate could move to hold anyone in contempt — the committee would need to issue new subpoenas in the current session.
+Clifford Levine, a Pittsburgh lawyer who represented state Senate Democrats in the case, said the caucus was pleased “that the privacy interests of 9 million voters will be preserved.” Levine said since the subpoena was issued last legislative session — before the state Senate could move to hold anyone in contempt — the committee would need to issue new ones in the current session.
 
 “The question is will the new Senate want to continue the Arizona-style audit that we saw in 2021,” he said. “We would be hopeful that this would be put to rest.”
 
-The subpoenas were issued as part of a Republican <a href="https://www.spotlightpa.org/news/2021/08/pa-forensic-audit-explainer-2020-election-mastriano-corman/">inquiry which began in July 2021</a> when state Sen. Doug Mastriano (R., Franklin), acting as chair of the committee at the time, took up Trump’s call for a “forensic audit” of the 2020 election and sent letters to three counties requesting election materials from them for auditing purposes.
+The subpoena was issued as part of a Republican <a href="https://www.spotlightpa.org/news/2021/08/pa-forensic-audit-explainer-2020-election-mastriano-corman/">inquiry which began in July 2021</a> when state Sen. Doug Mastriano (R., Franklin), acting as chair of the committee at the time, took up Trump’s call for a “forensic audit” of the 2020 election and sent letters to three counties requesting election materials from them for auditing purposes.
 
 Earlier in the summer, Dush and Mastriano had visited Maricopa County, Arizona, to tour an election review that legislative Republicans were conducting there.
 
