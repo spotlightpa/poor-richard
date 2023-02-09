@@ -16,6 +16,7 @@
     "gravity" $gravity
     "ext" "webp"
   }}
+  {{ $thumb = partial "helper/imgproxy" $imgOpt }}
 {{ end }}
 
 {{ $data = dict
