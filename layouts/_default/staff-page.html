@@ -103,7 +103,7 @@
         Reporters
       </h2>
       <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 sm:grid-cols-2"
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
         data-ga-category="inline-footer:author"
       >
         {{ range $reporters }}
@@ -118,7 +118,7 @@
       </h2>
 
       <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 sm:grid-cols-2"
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
         data-ga-category="inline-footer:author"
       >
         {{ range $others }}
@@ -133,7 +133,7 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="row-subgrid row-span-3 grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md md:row-span-2"
+    class="row-subgrid row-span-3 grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md lg:row-span-2"
   >
     {{ if $author.headshot }}
       {{ $sizes := (slice
@@ -155,10 +155,10 @@
         "gravity" $author.gravity
       }}
       {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
-      <div class="col-span-5 md:col-span-2">
+      <div class="col-span-5 lg:col-span-2">
         {{ partial "tag/picture-maybe-link.html" (dict
           "link" $author.link
-          "wrapperClass" "m-auto flex max-h-full"
+          "wrapperClass" "m-auto flex aspect-square max-h-full max-w-[256px]"
           "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
           "imgClass" "w-full h-full object-cover"
           "sizeHint" "256px"
@@ -172,8 +172,8 @@
         }}
       </div>
     {{ else }}
-      <a class="col-span-5 md:col-span-2" href="{{ $author.link }}">
-        <span class="m-auto flex aspect-square max-h-full">
+      <a class="col-span-5 lg:col-span-2" href="{{ $author.link }}">
+        <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
           <svg
             class="h-full w-full overflow-hidden rounded-full bg-s-4 fill-current p-5 text-s-7 shadow"
             viewBox="0 0 1 1"
@@ -186,7 +186,7 @@
     {{ end }}
 
 
-    <header class="col-span-5 flex flex-col justify-end gap-2 md:col-span-3">
+    <header class="col-span-5 flex flex-col justify-end gap-2 lg:col-span-3">
       {{ with $author.beat }}
         <h3 class="mb-auto leading-snug">
           <span
