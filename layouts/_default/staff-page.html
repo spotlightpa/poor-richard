@@ -96,7 +96,7 @@
     {{ end }}
   {{ end }}
   <section class="bg-s-2 py-10 px-2  font-raleway">
-    <div class="mx-auto my-14 w-full max-w-screen-lg">
+    <div class="mx-auto my-14 w-full max-w-screen-xl">
       <h2
         class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
       >
@@ -133,7 +133,7 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="row-subgrid row-span-3 grid max-w-lg auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md md:row-span-2"
+    class="row-subgrid row-span-3 grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md md:row-span-2"
   >
     {{ if $author.headshot }}
       {{ $sizes := (slice
@@ -186,9 +186,9 @@
     {{ end }}
 
 
-    <header class="col-span-5 flex flex-col gap-2 md:col-span-3">
+    <header class="col-span-5 flex flex-col justify-end gap-2 md:col-span-3">
       {{ with $author.beat }}
-        <h3 class="leading-snug">
+        <h3 class="mb-auto leading-snug">
           <span
             class="border-2 border-eyebrow-bg bg-eyebrow-bg box-decoration-clone px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
           >
@@ -209,7 +209,7 @@
       <p class="text-sm font-black uppercase">{{ $author.title }}</p>
       <dl>
         {{ with $author.email }}
-          <div class="flex basis-0 items-start justify-between gap-2">
+          <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
@@ -231,7 +231,7 @@
           </div>
         {{ end }}
         {{ with $author.twitter }}
-          <div class="flex basis-0 items-start justify-between gap-2">
+          <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="inline-flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
@@ -253,7 +253,7 @@
           </div>
         {{ end }}
         {{ with $author.tel }}
-          <div class="flex basis-0 items-start justify-between gap-2">
+          <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
@@ -273,7 +273,7 @@
           </div>
         {{ end }}
         {{ with $author.signal }}
-          <div class="flex basis-0 items-start justify-between gap-2">
+          <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
