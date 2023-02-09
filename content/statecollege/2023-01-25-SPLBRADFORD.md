@@ -16,12 +16,12 @@ slug = "pennsylvania-property-tax-revenue-bradford-mckean"
 suppress-date = false
 title = "Tax caps leave many Pa. municipalities with few ways to raise revenue"
 title-tag = "Tax caps limit options for some PA municipalities"
-topics = ["Rural Issues"]
+topics = ["Rural Issues", "Corrections"]
 +++
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>
 
-Bradford, a small city situated just a few miles south of the New York state line in McKean County, no longer has 24-hour police coverage.
+Bradford, a small city situated just a few miles south of the New York state line in McKean County, no longer staffs its police station 24/7.
 
 It has deferred necessary maintenance and projects, and laid off employees in several departments — including fire, police, and streets — to cut costs, City Manager Chris Lucco told Spotlight PA.
 
@@ -60,6 +60,8 @@ Local governments can charge a <a href="https://dced.pa.gov/local-government/loc
 Beyond that, a local government can only tax nonresidents if the municipality has a home rule charter — an effort to enact one in Bradford failed in the ‘90s — or can prove under <a href="https://dced.pa.gov/local-government/act-47-financial-distress/">Act 47</a> that it is sufficiently financially distressed. A <a href="https://whyy.org/articles/how-does-pennsylvanias-distressed-communities-law-act-47-work/">municipality with red flags like bankruptcy, deficits, missed payrolls, or overspending</a> may qualify.
 
 Lucco said a 1% earned income tax on nonresidents would be most beneficial to the city. A report that the city commissioned from Berkheimer, which offers tax administration services, showed the tax would generate more revenue than what the city collects in property tax.
+
+<i>Correction: This story has been updated to clarify police coverage in Bradford.</i>
 
 <i>Ashad Hajela is a </i><a href="https://www.reportforamerica.org/"><i>Report for America</i></a><i> corps member and writes about rural affairs for Spotlight PA’s State College regional bureau.</i>
 
