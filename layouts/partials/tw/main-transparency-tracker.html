@@ -36,7 +36,7 @@
 
   </section>
 
-  <div class="bg-s-2 font-sans">
+  <div class=" bg-s-3 font-sans">
     {{ .Page.RenderString (.Param "form") }}
   </div>
 
@@ -60,7 +60,7 @@
     data-ga-category="guides"
   >
     {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
-    {{ partial "tw/list-3-col-story-nobyline.html" (dict
+    {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Penn State University"
       "pages" $guide.RegularPages
       "readMoreLink" $guide.RelPermalink
