@@ -1,0 +1,79 @@
+<link rel="prefetch" as="fetch" :href="'/feeds/summary.json'" x-ref="feedSrc" />
+<template x-for="story in stories" :key="story.url" x-cloak>
+  <article class="" data-ga-category="readmore">
+    <div class="">
+      <div class="">
+        <div class="">
+          <h3 class="" x-text="story.kicker"></h3>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="">
+        <div class="">
+          <figure>
+            <a
+              class=""
+              data-ga-category="thumb"
+              :href="story.url"
+              @click.passive="$report($event)"
+            >
+              <picture class="">
+                <img
+                  :alt="story.imageDescription"
+                  :title="story.imageDescription"
+                  :src="story.imageURL"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+            <figcaption class="">
+              <span class="" x-text="story.imageCredit"></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="">
+        <div class="">
+          <h2 class="">
+            <a
+              class=""
+              data-ga-category="hed"
+              :href="story.url"
+              @click.passive="$report($event)"
+              x-text="story.title"
+            >
+            </a>
+          </h2>
+          <h3 class="" x-show="story.byline">
+            <a
+              class=""
+              data-ga-category="byline"
+              @click.passive="$report($event)"
+              :href="story.url"
+              x-template="by ${story.byline}"
+            ></a>
+          </h3>
+          <h3 x-show="showDate" class="">
+            <a
+              class=""
+              data-ga-category="time"
+              :href="story.url"
+              @click.passive="$report($event)"
+            >
+              <time :datetime="story.publishedISO" x-text="story.published">
+              </time>
+            </a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>
+
+<template x-if="error && hasClicked" x-cloak>
+  <div class="" data-ga-category="error">
+    Could not load more.
+    <a href="/news/" class="">Try again?</a>
+  </div>
+</template>
