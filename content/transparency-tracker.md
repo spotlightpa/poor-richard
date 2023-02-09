@@ -21,7 +21,7 @@ credits = """
 form ="""
 {{<featured/promo-tips-form
   hed="Send A Tip"
-  dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at wmassey@spotlightpa.org, or one of the methods described below."
+  dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at [wmassey@spotlightpa.org](wmassey@spotlightpa.org), or one of the methods described below."
 >}}
 """
 newsletter = """

@@ -19,7 +19,7 @@
     </div>
   </header>
 
-  <div class="bg-s-2 font-raleway">
+  <div class="bg-s-2 font-sans">
     {{ .Page.RenderString (.Param "form") }}
   </div>
 
@@ -63,7 +63,7 @@
 
   <div class="-mx-4 bg-s-2 md:mx-0" data-ga-category="text">
     <article
-      class="article-content mx-auto max-w-[1248px] py-24 px-5 font-raleway md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
       {{ range $i, $blocks := .Params.blocks }}
         {{ $id := urlize .title }}
