@@ -19,29 +19,28 @@
     </div>
   </header>
 
+  <section
+    class="bg-white md:px-6 py-8 md:py-24"
+    id="transparency-tracker-stories"
+    data-ga-category="guides"
+  >
+    {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
+    {{ partial "tw/list-3-col-story-nobyline.html" (dict
+      "hed" "Previous Stories"
+      "pages" $guide.RegularPages
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read More Transparency Tracker stories"
+      "rows" 2
+      )
+    }}
 
+  </section>
 
   <div class="bg-s-2 font-sans">
     {{ .Page.RenderString (.Param "form") }}
   </div>
 
 
-  <section
-    class="bg-white px-6 py-8 md:py-24"
-    id="guides"
-    data-ga-category="guides"
-  >
-    {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
-    {{ partial "tw/list-3-col-story-nobyline.html" (dict
-      "hed" "Penn State Coverage"
-      "pages" $guide.RegularPages
-      "readMoreLink" $guide.RelPermalink
-      "readMore" "Read more Penn State stories"
-      "rows" 1
-      )
-    }}
-
-  </section>
 
   <div class="-mx-4 bg-s-2 md:mx-0" data-ga-category="text">
     <article
@@ -56,8 +55,8 @@
   </div>
 
     <section
-    class="bg-white px-6 py-8 md:py-24"
-    id="guides"
+    class="bg-white md:px-6 py-8 md:py-24"
+    id="penn-state-stories"
     data-ga-category="guides"
   >
     {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
