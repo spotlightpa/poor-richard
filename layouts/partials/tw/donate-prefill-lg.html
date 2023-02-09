@@ -57,7 +57,7 @@
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign={{ $donateCampaign }}&theme={{ $donateTheme }}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
     }
   }"
   >
@@ -180,7 +180,7 @@
         </label>
         <label class="flex flex-row items-center">
           One time
-          <span class="hidden sm:inline">only</span>
+          <span class="hidden">only</span>
           <input
             type="radio"
             name="freq"
