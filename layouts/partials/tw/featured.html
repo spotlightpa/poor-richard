@@ -36,11 +36,13 @@
 {{ end }}
 
 {{ if gt (len .) 1 }}
-  <ul class="list-inside font-sans font-light space-y-3 pt-5">
-  {{ range after 1 . }}
-    <li class="list-[square] leading-snug tracking-normal">
-      <a class="text-dek hover:underline" href="{{ .RelPermalink }}"> {{ .LinkTitle }}</a>
+  <ul class="list-inside space-y-3 pt-5 font-sans font-light">
+    {{ range after 1 . }}
+      <li class="list-[square] leading-snug tracking-normal">
+        <a class="text-dek hover:underline" href="{{ .RelPermalink }}">
+          {{ .LinkTitle }}</a
+        >
       </li>
-  {{ end }}
+    {{ end }}
   </ul>
 {{ end }}

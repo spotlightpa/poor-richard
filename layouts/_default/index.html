@@ -31,9 +31,9 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="bg-white px-4 pt-12 pb-2 md:pb-6" data-ga-category="homepage">
-  {{ partial "tw/homepage.html" . }}
-</section>
+  <section class="bg-white px-4 pt-12 pb-2 md:pb-6" data-ga-category="homepage">
+    {{ partial "tw/homepage.html" . }}
+  </section>
 {{ end }}
 {{ define "before-footer" }}
   {{ partialCached "tw/promo-footer.html" (dict

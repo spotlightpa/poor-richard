@@ -66,7 +66,7 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="font-sans my-3 text-base font-light leading-tight tracking-normal text-byline"
+            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
@@ -78,8 +78,10 @@
           </h3>
         {{ else if .blurb }}
           <p
-                      class="font-sans my-3 text-base font-light leading-tight tracking-normal text-byline"
->{{ .blurb }}</p>
+            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
+          >
+            {{ .blurb }}
+          </p>
         {{ end }}
         {{ if .showDate }}
           <h3
@@ -94,7 +96,7 @@
           </h3>
         {{ end }}
       </div>
-      
+
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5">
           {{ range .subitems }}
