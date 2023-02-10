@@ -72,9 +72,12 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class="mx-auto w-full"
-      >
-        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+        class=" w-full -mx-4 bg-s-1 md:mx-0"
+     >
+        {{ partial "blocks/block" (dict 
+          "Page" $ 
+          "block" .
+        ) }}
       </div>
     {{ end }}
 

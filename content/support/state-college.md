@@ -11,6 +11,7 @@ newsletter = """
 """
 [[blocks]]
 layout = "supplemental"
+wrapperClass = "article-content mx-auto max-w-screen-xl px-5 pt-10 pb-20 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
 copy="""
 You can follow all of their work, and get all the news from the region, by <a href="/newsletters/talkofthetown">signing up for our free weekly newsletter, Talk of the Town.</a>
 
