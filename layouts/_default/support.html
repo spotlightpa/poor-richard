@@ -59,11 +59,11 @@
         </div>
       {{ end }}
     </div>
-  {{ with .Page.RenderString (.Param "newsletter") }}
-  <div class="-mx-4 font-sans md:mx-0">
-    {{ . }}
-  </div>
-  {{ end }}
+    {{ with .Page.RenderString (.Param "newsletter") }}
+      <div class="-mx-4 font-sans md:mx-0">
+        {{ . }}
+      </div>
+    {{ end }}
 
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
@@ -73,11 +73,12 @@
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
         class=" w-full -mx-4 bg-s-1 md:mx-0"
-     >
-        {{ partial "blocks/block" (dict 
-          "Page" $ 
+      >
+        {{ partial "blocks/block" (dict
+          "Page" $
           "block" .
-        ) }}
+          )
+        }}
       </div>
     {{ end }}
 
