@@ -1,6 +1,6 @@
 +++
 title = "Penn State Transparency Tracker"
-description = "The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community."
+description = "An ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community."
 title-tag = "Transparency Tracker"
 linktitle = "Transparency Tracker"
 url = "/statecollege/transparency-tracker"
