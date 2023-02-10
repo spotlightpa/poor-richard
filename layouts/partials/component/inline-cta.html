@@ -40,7 +40,9 @@
       grid-row: 3;
     }
   }
-  .cta-body {
+  .cta-body,
+  .cta-body:link,
+  .cta-body:hover {
     background: black;
     color: white;
     border-top: 4px solid rgb(255, 203, 3);
@@ -56,7 +58,7 @@
   .cta-body p {
     margin: 0 20px 0 0;
   }
-  .cta-body a {
+  .cta-body span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,15 +77,13 @@
     overflow: hidden;
   }
 </style>
-<div class="cta-body">
+<a href="/statecollege/transparency-tracker" class="cta-body">
   <div class="cta-grfx">
     {{ partial "component/image-block.html" $imgOpts }}
   </div>
   <h2>Holding Penn State Accountable</h2>
   <p>
-    The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to
-    document and share the ways in which the university is, and is not, being
-    transparent with the community.
+    An ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community.
   </p>
-  <a href="/statecollege/transparency-tracker">Visit the tracker</a>
-</div>
+  <span>Visit the tracker</a>
+</a>
