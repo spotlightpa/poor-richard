@@ -124,7 +124,7 @@ In 2013, she was <a href="https://www.prnewswire.com/news-releases/pennfuture-an
 
 Many of the environmental conservation organizations that Dunn worked with in the past now commend Shapiro for his appointment, including PennFuture and the Chesapeake Bay Foundation. David Callahan, president of the Marcellus Shale Coalition — an organization that supports natural gas production in Pennsylvania — <a href="https://www.publicnow.com/view/43D10E0612AE53CD868610192A33D5FA93F66AD5?1673553601">has also supported</a> Dunn’s reappointment.
 
-Under the Wolf administration, Dunn added <a href="https://www.dcnr.pa.gov/Pages/WolfAdministrationAccomplishments.aspx">four new state parks</a> and pledged to have the agency exclusively use renewable energy by 2030. In 2018, Dunn also developed the state’s<a href="https://www.media.pa.gov/pages/dcnr_details.aspx?newsid=464"> first climate change mitigation plan</a>.
+Under the Wolf administration, Dunn added <a href="https://web.archive.org/20230118213654/https://www.dcnr.pa.gov/Pages/WolfAdministrationAccomplishments.aspx">four new state parks</a> and pledged to have the agency exclusively use renewable energy by 2030. In 2018, Dunn also developed the state’s<a href="https://www.media.pa.gov/pages/dcnr_details.aspx?newsid=464"> first climate change mitigation plan</a>.
 
 Dunn also procured an additional <a href="https://www.pasenategop.com/news/martin-laughlin-and-yaw-applaud-establishment-of-220m-pennsylvania-clean-streams-fund/">$220 million investment</a> toward the Clean Streams Fund, which protects the water quality of rivers and streams in Pennsylvania. Another $100 million from the American Rescue Plan Act went to state parks.
 
