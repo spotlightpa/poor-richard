@@ -2,22 +2,22 @@
   {{ $id := urlize .title }}
   {{ $dataSrc := .dataSrc }}
   <div
-    class="m-auto flex max-w-[1248px] flex-wrap justify-center px-5 md:px-0 md:py-14"
+    class="m-auto flex max-w-screen-xl flex-wrap justify-center px-5 md:px-0 md:py-14"
   >
     <h2
-      class="w-full max-w-5xl text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+      class="w-full max-w-screen-lg text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
     >
       {{ .title }}
     </h2>
     {{ with .category }}
       <h3
-        class="mb-6 w-full max-w-5xl font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"
+        class="mb-6 w-full max-w-screen-lg font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"
       >
         {{ . }}
       </h3>
     {{ end }}
     <ul
-      class=" column-gap-2 w-full max-w-5xl columns-2 gap-10 py-8 md:columns-3"
+      class=" column-gap-2 w-full max-w-screen-lg columns-2 gap-10 py-8 md:columns-3"
     >
       {{ with $dataSrc }}
         {{ partial "helper/get-supporter-list" $dataSrc }}

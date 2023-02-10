@@ -32,7 +32,7 @@
 {{ define "main" }}
   <header class="bg-black py-14 px-3 text-white">
     <div
-      class="mx-auto max-w-[1288px] items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+      class="mx-auto max-w-screen-xl items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
     >
       <h1
         class="uppercase font-serif text-[45px] leading-none col-span-5 col-start-2 row-span-1 row-start-1 font-black"
@@ -47,7 +47,7 @@
     </div>
   </header>
   <section class="font-raleway bg-s-0">
-    <div class="mx-auto max-w-[1078px] text-lg font-medium  py-14 px-5 lg:px-0">
+    <div class="mx-auto max-w-screen-lg text-lg font-medium  py-14 px-5 lg:px-0">
       {{ with .Page.Params.subhed }}
         <h2 class="font-black text-5xl mb-5">{{ . }}</h2>
       {{ end }}

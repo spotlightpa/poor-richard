@@ -1,13 +1,13 @@
 {{ with .block }}
   <div class="bg-s-2 py-14 px-2">
     <h2
-      class="mx-auto mb-5 max-w-[1248px] text-5xl font-black uppercase text-s-8"
+      class="mx-auto mb-5 max-w-screen-xl text-5xl font-black uppercase text-s-8"
     >
       {{ .title }}
     </h2>
     {{ with .entries }}
       <ul
-        class="mx-auto flex max-w-[1248px] flex-wrap items-stretch justify-between"
+        class="mx-auto flex max-w-screen-xl flex-wrap items-stretch justify-between"
       >
         {{ range . }}
           <li
@@ -34,7 +34,7 @@
             >
               <a class="font-bold underline" href="{{ .url }}">Learn More</a>
               <a
-                class="float-right flex min-w-[145px] max-w-[245px] items-center justify-center rounded bg-red-6 px-3 py-5 text-base font-bold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
+                class="float-right flex min-w-min max-w-max items-center justify-center rounded bg-red-6 px-3 py-5 text-base font-bold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
                 href="{{ .actionUrl }}"
                 >{{ .actionText }}</a
               >
