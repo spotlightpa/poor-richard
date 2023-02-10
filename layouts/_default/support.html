@@ -59,6 +59,11 @@
         </div>
       {{ end }}
     </div>
+  {{ with .Page.RenderString (.Param "newsletter") }}
+  <div class="-mx-4 font-sans md:mx-0">
+    {{ . }}
+  </div>
+  {{ end }}
 
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
