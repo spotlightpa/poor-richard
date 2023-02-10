@@ -192,12 +192,7 @@ Businesses don’t want to have to guess which positions are appropriate for med
 
 “They took what was a bright line rule … and they completely muddied it up in a way that nobody can really make any sense out of,” McCreary said of lawmakers.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01hh/yyax/rally.svg"
-  width="730"
-  height="365"
-  bgcolor="#fff"
->}}
+{{<featured/lightbox>}}
 
 
 ### Fights in courts
@@ -401,6 +396,4 @@ A Pennsylvania Supreme Court decision could offer clarity, but McCreary said “
 
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky>}}
 

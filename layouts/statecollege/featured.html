@@ -59,7 +59,14 @@
 {{ end }}
 
 {{ define "modal" }}
-  <!-- todo -->
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter-sc.html" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 {{ define "search-modal" }}

@@ -1,33 +1,30 @@
-{{ $text := .Get "text" | default `Spotlight PA provides essential journalism with support from readers like you. Help shine a light on injustice and hold the powerful to account by becoming a member now.` }}
-{{ $imageURL := .Get "image-url" }}
-{{ $width := .Get "width" }}
-{{ $height := .Get "height" }}
-{{ $bgColor := .Get "bgcolor" | default "#000" }}
-{{ $link := .Get "link" | default "/donate/" }}
+{{ $alt := .Page.Param "featured-promo-image-description" }}
+{{ $images := .Page.Param "featured-promo-images" }}
+{{ $width := .Page.Param "featured-promo-width" }}
+{{ $height := .Page.Param "featured-promo-height" }}
+{{ $bgColor := .Page.Param "featured-promo-bg-color" | default "#000" }}
+{{ $link := .Page.Param "featured-promo-link" | default "/donate/" }}
 
-
-<aside
-  class="my-12 mx-auto text-center lg:-mx-32 xl:-mx-48"
-  data-ga-category="inline:lightbox"
->
-  <a
-    class="inline-flex overflow-hidden rounded shadow"
-    style="background-color: {{ $bgColor }};"
-    href="{{ $link }}"
+{{ if $images }}
+  <aside
+    class="my-12 mx-auto text-center lg:-mx-32 xl:-mx-48"
+    data-ga-category="inline:lightbox"
   >
-    <img
-      class="block h-auto w-full"
-      src="{{ $imageURL }}"
-      alt="{{ $text }}"
-      {{ with $width }}width="{{ . }}"{{ end }}
-      {{ with $height }}height="{{ . }}"{{ end }}
-      {{ if $width }}
-        style=" max-width: {{ $width }}px;
-        {{ if $height }}
-          aspect-ratio: {{ $width }} / {{ $height }};
-        {{ end }}
-        "
-      {{ end }}
-    />
-  </a>
-</aside>
+    <a
+      class="flex overflow-hidden rounded shadow"
+      style="background-color: {{ $bgColor }};"
+      href="{{ $link }}"
+    >
+      {{- partial "tw/image-rotator.html" (dict
+        "images" $images
+        "width" $width
+        "height" $height
+        "description" $alt
+        "transparent" 1
+        )
+      -}}
+    </a>
+  </aside>
+{{ else if eq hugo.Environment "development" }}
+  {{ warnf "no images for featured/lightbox.html" }}
+{{ end }}

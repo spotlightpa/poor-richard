@@ -62,7 +62,7 @@ As attorney general, <a href="https://triblive.com/local/pittsburgh-allegheny/ag
 
 <a href="https://www.spotlightpa.org/news/2022/09/pennsylvania-broadband-internet-expansion-map/">At least 13% of rural Pennsylvanians don’t have broadband access</a>, according to the Federal Communications Commission, but federal funds provide the state with an opportunity to build the infrastructure needed to support access.
 
-In September, Gov. Tom Wolf, a Democrat, <a href="https://www.governor.pa.gov/newsroom/gov-wolf-announces-local-governments-receiving-nearly-500-million-in-second-round-of-american-rescue-plan-funding/">announced that $500 million from the American Rescue Plan Act</a> will go to local governments to invest in infrastructure, including broadband.
+In September, Gov. Tom Wolf, a Democrat, <a href="https://web.archive.org/web/20230116212105/https://www.governor.pa.gov/newsroom/gov-wolf-announces-local-governments-receiving-nearly-500-million-in-second-round-of-american-rescue-plan-funding/">announced that $500 million from the American Rescue Plan Act</a> will go to local governments to invest in infrastructure, including broadband.
 
 Up to $1 billion of federal funding can potentially be spent on broadband expansion. <a href="https://www.spotlightpa.org/news/2022/06/pennsylvania-broadband-internet-rural-expansion/">However, a 2004 law restricts local governments from building their own broadband networks</a>, limiting how much of that infrastructure money will actually go toward expanding access.
 
@@ -96,7 +96,7 @@ Rising prices for equipment and fertilizers have become financial burdens for fa
 
 A member of the state Senate Agriculture &amp; Rural Affairs Committee, Mastriano voted for the 2019 Pennsylvania farm bill both in committee and on the state Senate floor. The legislation, the first state-based farm bill in the nation, passed with bipartisan support.
 
-The Wolf administration <a href="https://www.governor.pa.gov/wp-content/uploads/2019/02/021319-farm-bill.pdf">touted the bill</a> for creating the Pennsylvania Agricultural Business Development Center, funding programs to expand the state’s processing capabilities, and providing the agricultural industry with incentives to invest in farming.
+The Wolf administration <a href="https://web.archive.org/web/20230118001805/https://www.governor.pa.gov/wp-content/uploads/2019/02/021319-farm-bill.pdf">touted the bill</a> for creating the Pennsylvania Agricultural Business Development Center, funding programs to expand the state’s processing capabilities, and providing the agricultural industry with incentives to invest in farming.
 
 Mastriano is one of the lead sponsors of a bill that would amend the Agricultural Area Security Law to increase funding for the Agriculture Conservation Easement Purchase Program and ease eligibility requirements so more farms can participate.
 

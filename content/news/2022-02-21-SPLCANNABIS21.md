@@ -259,12 +259,7 @@ And she told Spotlight PA it’s important to distinguish between CBD, which is 
 
 “We should hold people accountable, especially today, to be very clear about what is it that they are promoting and really substantiate that,” Hurd said.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01gp/9pz0/lightbox.svg"
-  width="750"
-  height="375"
-  bgcolor="#4d52b9"
->}}
+{{<featured/lightbox>}}
 
 
 ### ‘A lot of optimism’ but little evidence
@@ -359,10 +354,3 @@ During the reporting, multiple experts were most alarmed by statements that prom
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01g7/vkgq/ddap-donate-sticky.svg"
-  width="300"
-  height="250"
->}}
-

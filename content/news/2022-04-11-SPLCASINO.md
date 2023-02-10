@@ -53,7 +53,7 @@ That status has made them a prime target. The casino industry has complained tha
 
 <strong>Ryan Skoczylas</strong> is Tomlinson’s chief of staff. He previously worked for the senator’s campaign.
 
-<strong>Mark Stewart</strong> is an attorney with Eckert Seamans Cherin & Mellott who focuses “on areas where business, law, and government intersect,” his <a href="https://www.eckertseamans.com/our-people/mark-s-stewart">biography</a> states. He served as “counsel to three of Pennsylvania’s 13 licensed casinos” and previously worked for the Office of Attorney General.
+<strong>Mark Stewart</strong> is an attorney with Eckert Seamans Cherin & Mellott who focuses “on areas where business, law, and government intersect,” his <a href="https://web.archive.org/web/20221230111806/https://www.eckertseamans.com/our-people/mark-s-stewart">biography</a> states. He served as “counsel to three of Pennsylvania’s 13 licensed casinos” and previously worked for the Office of Attorney General.
 
 <strong>Dick Gmerek</strong> is president and CEO of the Harrisburg-based lobbying firm Gmerek Government Relations. He served as counsel to state Senate Republicans in the 1980s. His clients include the Pennsylvania AAA Federation, 84 Lumber Company, and Family Planning Councils of America, according to his <a href="https://www.ggrgov.com/firm-profile/">biography</a>.
 
@@ -184,12 +184,7 @@ Another staffer from Tomlinson’s office a week later emailed the lobbyists wit
 
 The bill that Tomlinson introduced at the end of the month contained near-identical language to the draft that Parx’s lobbyists had drawn up.
 
-{{<featured/lightbox
-  image-url="https://files.data.spotlightpa.org/uploads/01gp/9pz0/lightbox.svg"
-  width="750"
-  height="375"
-  bgcolor="#4d52b9"
->}}
+{{<featured/lightbox>}}
 
 
 ### ‘Talking points’
@@ -278,10 +273,3 @@ Gmerek’s response: “He could also sell cocaine and have the same result.”
     email="ecoston@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-{{<featured/sticky
-  url="https://files.data.spotlightpa.org/uploads/01g7/vkgq/ddap-donate-sticky.svg"
-  width="300"
-  height="250"
->}}
-

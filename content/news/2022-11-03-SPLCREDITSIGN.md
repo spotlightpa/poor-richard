@@ -52,7 +52,7 @@ But the proposal also had the backing of the politically potent building trade u
 
 The package “has been carefully and thoughtfully crafted to support several major construction projects around the state,” the letter said without providing specifics.
 
-The final language requires a company to pay construction workers on any project that qualifies for a tax credit the <a href="https://www.dli.pa.gov/Individuals/Labor-Management-Relations/llc/prevailing-wage/Pages/default.aspx">prevailing wage</a>. However, no similar protections exist within the law for workers who receive permanent jobs at the completed facilities.
+The final language requires a company to pay construction workers on any project that qualifies for a tax credit the <a href="https://web.archive.org/web/20221215091416/https://www.dli.pa.gov/Individuals/Labor-Management-Relations/llc/prevailing-wage/Pages/default.aspx">prevailing wage</a>. However, no similar protections exist within the law for workers who receive permanent jobs at the completed facilities.
 
 The council did not reply to a request for comment.
 

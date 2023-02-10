@@ -25,7 +25,7 @@ HARRISBURG — Pennsylvania lawmakers have agreed on a plan to use $2.2 billion 
 
 The agreement came as the state <a href="https://www.spotlightpa.org/news/2022/07/pa-budget-education-funding-stimulus-money-plan/">finalized a $45.2 billion budget</a> a week after the deadline.
 
-None of the money will be used for direct payments to Pennsylvanians, <a href="https://www.governor.pa.gov/newsroom/wolf-administration-continues-push-for-2000-direct-payments-to-pennsylvanians-as-prices-soar/">as Democratic Gov. Tom Wolf had called for</a>. Instead, Spotlight PA identified 20 programs that will be funded using the stimulus dollars. Here’s an overview of the spending:
+None of the money will be used for direct payments to Pennsylvanians, <a href="https://web.archive.org/web/20230116210352/https://www.governor.pa.gov/newsroom/wolf-administration-continues-push-for-2000-direct-payments-to-pennsylvanians-as-prices-soar/">as Democratic Gov. Tom Wolf had called for</a>. Instead, Spotlight PA identified 20 programs that will be funded using the stimulus dollars. Here’s an overview of the spending:
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 

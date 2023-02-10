@@ -7,8 +7,8 @@
 {{ end }}
 
 {{ $thumb := "" }}
+{{ $gravity := index $data "image-gravity" | default "sm" }}
 {{ with $data.headshot }}
-  {{ $gravity := index $data "image-gravity" | default "sm" }}
   {{ $imgOpt := dict
     "filename" .
     "width" 256
@@ -24,6 +24,8 @@
   "slug" $nameID
   "link" $link
   "thumb" $thumb
+  "headshot" $data.headshot
+  "gravity" $gravity
   | merge $data
 }}
 

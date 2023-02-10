@@ -50,10 +50,8 @@
   </nav>
 </section>
 
-<section class="bg-white px-6 py-6" data-ga-category="content">
-  <div class="article-content mx-auto w-full max-w-prose leading-relaxed">
-    {{ .Content }}
-  </div>
+<section class="bg-white px-6 py-6">
+  {{ partial "tw/content-well.html" . }}
 </section>
 
 <section class="bg-white px-6 py-8" data-ga-category="internal-nav">

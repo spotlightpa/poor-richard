@@ -1,4 +1,4 @@
-{{ .Page.Scratch.Add "faq-a" (slice .Inner) }}
+{{ .Page.Store.Add "faq-a" (slice .Inner) }}
 
 
 <strong>A:</strong> {{ .Inner | markdownify }}

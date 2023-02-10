@@ -1,3 +1,87 @@
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
+{{ end }}
+
+{{ define "static-head" }}
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/noscript.html" . }}
+
+
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+
+  {{ partial "header/favicons.html" . }}
+  {{ partial "header/feeds.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <header class="bg-black py-14 px-3 text-white">
+    <div
+      class="mx-auto max-w-screen-xl items-center gap-y-3 gap-x-5 md:grid md:min-h-[110px] md:grid-cols-12"
+    >
+      <h1
+        class="col-span-5 col-start-2 row-span-1 row-start-1 font-serif text-[45px] font-black uppercase leading-none"
+      >
+        {{ .Title }}
+      </h1>
+      <div
+        class="col-span-5 col-start-7 row-start-1 mt-3 font-raleway text-xl font-medium md:mt-0"
+      >
+        {{ .Description }}
+      </div>
+    </div>
+  </header>
+  <section class=" bg-s-0">
+    <div
+      class="mx-auto max-w-screen-lg py-14 px-5 font-raleway text-lg font-medium lg:px-0"
+    >
+      {{ with .Page.Params.subhed }}
+        <h2 class="mb-5 text-5xl font-black">{{ . }}</h2>
+      {{ end }}
+      <div class=" article-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    {{ range $i, $blocks := .Params.blocks }}
+      {{ $id := urlize .title }}
+      <div
+        id="{{ $id }}"
+        x-data
+        x-intersect.half="$dispatch('intersect:support', $el.id)"
+        data-ga-category="blocks"
+        class="mx-auto w-full pb-14"
+      >
+        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+      </div>
+    {{ end }}
+
+  </section>
+{{ end }}
+
 {{ define "extra-main" }}
   {{ $reporters := slice }}
   {{ $others := slice }}
@@ -11,159 +95,253 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="pt-0 section columns" data-ga-category="staff:reporters">
-    <div class="column is-three-fifths is-offset-one-fifth">
-      <h2 class="title">Reporters</h2>
+  <section class="bg-s-2 py-10 px-2  font-raleway">
+    <div class="mx-auto my-14 w-full max-w-screen-xl">
+      <h2
+        class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+      >
+        Reporters
+      </h2>
+      <ul
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $reporters }}
+          {{ template "staff-page-card" . }}
+        {{ end }}
+      </ul>
 
-      {{ range $reporters }}
-        {{ template "staff-page-card" . }}
-      {{ end }}
+      <h2
+        class="mt-10 text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+      >
+        Leadership
+      </h2>
 
-
-      <h2 class="mt-6 title">Leadership</h2>
-
-      {{ range $others }}
-        {{ template "staff-page-card" . }}
-      {{ end }}
+      <ul
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $others }}
+          {{ template "staff-page-card" . }}
+        {{ end }}
+      </ul>
     </div>
   </section>
 {{ end }}
 
 {{ define "staff-page-card" }}
   {{ $author := . }}
-  <div id="{{ $author.slug }}" class="card block">
-    <div class="card-content">
-      <div class="media">
-        {{ if $author.thumb }}
-          <div class="media-left is-hidden-mobile">
-            <figure class="image is-128x128">
-              <img
-                src="{{ $author.thumb }}"
-                alt="Photo of {{ $author.name }}"
-                class="is-rounded"
-              />
-            </figure>
+  <li
+    id="{{ $author.slug }}"
+    class="row-subgrid row-span-3 grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md sm:max-md:row-span-2 lg:row-span-2"
+  >
+    {{ if $author.headshot }}
+      {{ $sizes := (slice
+        (dict "width" 256 "height" 256)
+        (dict "width" 512 "height" 512)
+        )
+      }}
+      {{ $srcset := partial "helper/build-srcset" (dict
+        "sizes" $sizes
+        "filename" $author.headshot
+        "gravity" $author.gravity
+        )
+      }}
+
+      {{ $imgOpt := dict
+        "filename" $author.headshot
+        "width" 256
+        "height" 256
+        "gravity" $author.gravity
+      }}
+      {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+      <div class="col-span-5 sm:max-md:col-span-2 lg:col-span-2">
+        {{ partial "tag/picture-maybe-link.html" (dict
+          "link" $author.link
+          "wrapperClass" "m-auto flex aspect-square max-h-full max-w-[256px]"
+          "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+          "imgClass" "w-full h-full object-cover"
+          "sizeHint" "256px"
+          "eager" false
+          "description" (printf "Photo of %s" $author.name)
+          "srcset" $srcset
+          "src" $imgSmallSrc
+          "width" 256
+          "height" 256
+          )
+        }}
+      </div>
+    {{ else }}
+      <a
+        class="col-span-5 sm:max-md:col-span-2 lg:col-span-2"
+        href="{{ $author.link }}"
+      >
+        <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
+          <svg
+            class="h-full w-full overflow-hidden rounded-full bg-s-4 fill-current p-5 text-s-7 shadow"
+            viewBox="0 0 1 1"
+            aria-hidden="true"
+          >
+            <use xlink:href="#user-svg"></use>
+          </svg>
+        </span>
+      </a>
+    {{ end }}
+
+
+    <header
+      class="col-span-5 flex flex-col justify-end gap-2 sm:max-md:col-span-3 lg:col-span-3"
+    >
+      {{ with $author.beat }}
+        <h3 class="mb-auto leading-snug">
+          <span
+            class="border-2 border-eyebrow-bg bg-eyebrow-bg box-decoration-clone px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
+          >
+            {{- . -}}
+          </span>
+        </h3>
+      {{ end }}
+      <h2
+        class="flex items-end text-2xl font-bold"
+        data-ga-category="author-articles"
+      >
+        {{ if $author.link }}
+          <a class="text-blue" href="{{ $author.link }}">{{ $author.name }}</a>
+        {{ else }}
+          {{ $author.name }}
+        {{ end }}
+      </h2>
+      <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+      <dl>
+        {{ with $author.email }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class=" mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1">
+                  <use xlink:href="#email-svg"></use>
+                </svg>
+              </span>
+              Email:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                data-ga-category="author-email"
+                href="mailto:{{ . }}"
+                title="Email"
+              >
+                {{ . }}
+              </a>
+            </dd>
           </div>
         {{ end }}
-        <div class="media-content">
-          {{ if $author.thumb }}
-            <div class="is-hidden-tablet has-text-centered">
-              <div class="is-inline-block">
-                <figure class="image is-128x128">
-                  <img
-                    src="{{ $author.thumb }}"
-                    alt="Photo of {{ $author.name }}"
-                    class="is-rounded"
-                  />
-                </figure>
-              </div>
-            </div>
-          {{ end }}
-
-          {{ with $author.beat }}
-            <h3
-              class="tag is-square is-black is-uppercase has-text-weight-semibold mb-2"
-            >
-              {{ . }}
-            </h3>
-          {{ end }}
-          {{ if $author.link }}
-            <p class="title is-3" data-ga-category="author-articles">
-              <a href="{{ $author.link }}">{{ $author.name }}</a>
-            </p>
-          {{ else }}
-            <p class="title is-3">{{ $author.name }}</p>
-          {{ end }}
-          <p class="mb-3 subtitle is-4">{{ $author.title }}</p>
-          <div class="subtitle is-5 has-text-break-all">
-            {{ with $author.email }}
-              <div class="is-flex">
-                <span class="icon" style="position: relative; bottom: 2px;">
-                  <svg viewBox="0 0 1 1">
-                    <use xlink:href="#email-svg"></use>
-                  </svg>
-                </span>
-                Email:
-                <a
-                  class="ml-1"
-                  data-ga-category="author-email"
-                  href="mailto:{{ . }}"
-                  title="Email"
-                >
-                  {{ . }}
-                </a>
-              </div>
-            {{ end }}
-            {{ with $author.twitter }}
-              <div class="is-flex">
-                <span class="icon" style="position: relative; bottom: 2px;">
-                  <svg viewBox="0 0 1 1">
-                    <use xlink:href="#twitter-svg"></use>
-                  </svg>
-                </span>
-                Twitter:
-                <a
-                  class="ml-1"
-                  data-ga-category="author-twitter"
-                  href="https://www.twitter.com/{{ . }}"
-                  title="Twitter"
-                >
-                  @{{ . }}
-                </a>
-              </div>
-            {{ end }}
-            {{ with $author.tel }}
-              <div class="is-flex">
-                <span class="icon" style="position: relative; bottom: 3px;">
-                  <svg viewBox="0 0 1 1" aria-hidden="true">
-                    <use xlink:href="#phone-svg"></use>
-                  </svg>
-                </span>
-                Telephone:
-                <a
-                  class="ml-1"
-                  title="Telephone"
-                  href="tel:+1{{ replaceRE `\D` `` . }}"
-                  >{{ . }}</a
-                >
-              </div>
-            {{ end }}
-            {{ with $author.signal }}
-              <div class="is-flex">
-                <span class="icon" style="position: relative; bottom: 3px;">
-                  <svg viewBox="0 0 1 1" aria-hidden="true">
-                    <use xlink:href="#chat-svg"></use>
-                  </svg>
-                </span>
-                Signal:
-                <a
-                  class="ml-1"
-                  title="Contact via the Signal app"
-                  href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
-                  >{{ . }}</a
-                >
-              </div>
-            {{ end }}
+        {{ with $author.twitter }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="inline-flex items-center">
+              <span class=" mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1">
+                  <use xlink:href="#twitter-svg"></use>
+                </svg>
+              </span>
+              Twitter:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                data-ga-category="author-twitter"
+                href="https://www.twitter.com/{{ . }}"
+                title="Twitter"
+              >
+                @{{ . }}
+              </a>
+            </dd>
           </div>
-        </div>
-      </div>
+        {{ end }}
+        {{ with $author.tel }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class=" mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1" aria-hidden="true">
+                  <use xlink:href="#phone-svg"></use>
+                </svg>
+              </span>
+              Telephone:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                title="Telephone"
+                href="tel:+1{{ replaceRE `\D` `` . }}"
+                >{{ . }}</a
+              >
+            </dd>
+          </div>
+        {{ end }}
+        {{ with $author.signal }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class=" mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1" aria-hidden="true">
+                  <use xlink:href="#chat-svg"></use>
+                </svg>
+              </span>
+              Signal:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                title="Contact via the Signal app"
+                href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
+                >{{ . }}</a
+              >
+            </dd>
+          </div>
+        {{ end }}
+      </dl>
+    </header>
+    <div class="article-content col-span-5">
       {{ with $author.focusHed }}
-        <h3 class="mb-3 subtitle is-4">
-          <b class="has-text-weight-semibold">Focus:</b>
+        <h3 class="my-2">
+          <b class="font-bold">Focus: </b>
           {{ . }}
         </h3>
       {{ end }}
-      <div class="content" data-ga-category="author-bio">
-        {{ $author.content|markdownify }}
-      </div>
+      {{ $author.content|markdownify }}
     </div>
+  </li>
+{{ end }}
+{{ define "before-footer" }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
   </div>
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
 {{ end }}
 
 {{ define "extra-footer" }}
   {{ $svgs := dict
     "phone-svg" "@fontawesome/solid/phone.svg"
     "chat-svg" "@fontawesome/solid/comment.svg"
+    "user-svg" "@fontawesome/solid/user.svg"
   }}
   {{ partial "header/svgs.html" $svgs }}
 {{ end }}

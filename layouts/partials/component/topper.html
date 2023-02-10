@@ -51,11 +51,13 @@
             class="aspect-ratio-inner"
             {{ if len $imgDesktop | eq 1 }}
               src="{{ index $imgDesktop 0 }}"
+              fetchpriority="high"
             {{ else }}
               x-data="imageRotator(JSON.parse($el.dataset.images))"
               data-images="{{ $imgDesktop | jsonify }}"
               :src="choice"
               src="{{ $magicPixel }}"
+              :fetchpriority="'high'"
             {{ end }}
             alt="{{ $alt }}"
             title="{{ $alt }}"

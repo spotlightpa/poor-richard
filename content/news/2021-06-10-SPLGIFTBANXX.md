@@ -48,7 +48,7 @@ Lawmakers and other public officials in the state can accept any gift they want,
 
 Even then, they only need to disclose gifts worth $250 or more, and transportation and hospitality worth $650 or more.
 
-In 2015, Gov. Tom Wolf <a href="https://www.governor.pa.gov/newsroom/executive-order-2015-01-executive-branch-employee-gift-ban/">signed an order</a> that banned members of the executive branch from accepting gifts from lobbyists and other organizations. Though he and others have urged the legislature to do the same, they have not taken action, despite numerous gift ban bills that have been introduced over the years.
+In 2015, Gov. Tom Wolf <a href="https://web.archive.org/web/20230117192934/https://www.governor.pa.gov/newsroom/executive-order-2015-01-executive-branch-employee-gift-ban/">signed an order</a> that banned members of the executive branch from accepting gifts from lobbyists and other organizations. Though he and others have urged the legislature to do the same, they have not taken action, despite numerous gift ban bills that have been introduced over the years.
 
 Activists on Wednesday said they targeted Corman because, unlike some leaders, he has not publicly backed a gift ban.
 

@@ -72,7 +72,7 @@ The announcement Wednesday came as the state prepares to loosen some coronavirus
 
 As of March 31, 35 counties in Pennsylvania were showing a rise in new cases over the past two weeks, a <a href="https://www.spotlightpa.org/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">Spotlight PA analysis</a> shows. New cases statewide have averaged 4,034 per day in the past week — a 67% increase over the seven-day moving average from March 8, which recorded the lowest moving average since Nov. 3.
 
-Beginning April 4, restaurants can loosen <a href="https://www.governor.pa.gov/newsroom/gov-wolf-effective-april-4-more-options-for-restaurants-and-other-businesses-mass-gathering-maximums-increase/">restrictions</a> related to alcohol service, and capacity limits in restaurants, gyms, casinos, theaters, and malls will be increased to 75%, Wolf announced earlier this month.
+Beginning April 4, restaurants can loosen <a href="https://web.archive.org/web/20230117093448/https://www.governor.pa.gov/newsroom/gov-wolf-effective-april-4-more-options-for-restaurants-and-other-businesses-mass-gathering-maximums-increase/">restrictions</a> related to alcohol service, and capacity limits in restaurants, gyms, casinos, theaters, and malls will be increased to 75%, Wolf announced earlier this month.
 
 During a press briefing Wednesday, Acting Secretary of Health Alison Beam was questioned about whether it was safe to ease restrictions before all restaurant and public-facing service workers are eligible to be vaccinated.
 

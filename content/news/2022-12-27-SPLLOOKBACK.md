@@ -103,7 +103,7 @@ Over the past two years, Wolf sent 17 proposals back to the legislature, includi
 
 - A bill that would allow gun owners to carry a concealed firearm <a href="https://www.penncapital-star.com/blog/wolf-vetoes-bill-to-allow-permitless-concealed-carry-in-pennsylvania/">without a permit </a>
 
-- An attempt to block the state from <a href="https://www.governor.pa.gov/newsroom/governor-wolf-vetoes-resolution-that-would-hinder-pennsylvanias-ability-to-address-climate-crisis/">capping carbon emissions from power plants</a>
+- An attempt to block the state from <a href="https://web.archive.org/web/20230117020624/https://www.governor.pa.gov/newsroom/governor-wolf-vetoes-resolution-that-would-hinder-pennsylvanias-ability-to-address-climate-crisis/">capping carbon emissions from power plants</a>
 
 - An effort to preempt government agencies, schools, and colleges from <a href="https://www.penncapital-star.com/blog/wolf-vetoes-bill-banning-pa-primary-schools-colleges-from-requiring-covid-vaccines/">requiring COVID-19 vaccines</a>
 
