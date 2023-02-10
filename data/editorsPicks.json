@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-02-09-SPLINQRULING.md"
+    "content/news/2023-02-10-SPLSHAPIRO09.md"
   ],
   "subfeatures": [
-    "content/news/2022-12-09-SPLELECTUD.md"
+    "content/news/2023-01-20-SPLGIFT20.md",
+    "content/news/2023-01-19-SPLSHAPSTAFF.md"
   ],
   "topSlots": [
+    "content/news/2023-02-09-SPLINQRULING.md",
     "content/news/2023-02-09-SPLNEWSQUIZFEB9.md",
-    "content/news/2023-02-09-SPLSCHOIMPAC.md",
-    "content/news/2023-02-07-SPLHOUSE07.md"
+    "content/news/2023-02-09-SPLSCHOIMPAC.md"
   ],
   "topper": []
 }
