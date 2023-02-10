@@ -7,7 +7,7 @@
 {{ $donateTheme := .donateTheme | default "" }}
 {{ $donateAmounts := .donateAmounts | default (slice "10" "15" "25" "50") }}
 
-{{ $btnClass := ` mr-4 flex-[0_1_30%] outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
+{{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
 {{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
@@ -71,7 +71,7 @@
 
       <div class="mt-6 flex flex-wrap justify-start gap-2">
         {{ define "tw-donate-prefill-button-lg" }}
-          {{ $btnClass := ` mr-4 flex-[0_1_30%] outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
+          {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
           {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
 
           {{ $amount := index . 0 }}
@@ -127,7 +127,7 @@
         <button
           type="button"
           x-show="freq !== 'o'"
-          class="{{ $btnClass }} {{ $inactiveClass }} hidden sm:inline-block"
+          class="{{ $btnClass }} {{ $inactiveClass }}"
           :class="btnClass(showOther)"
           @click="showOther = !showOther"
         >
@@ -156,7 +156,7 @@
         </div>
       </div>
       <div
-        class="mt-12 mr-8 w-full sm:flex sm:justify-start gap-2 font-sans text-lg font-extrabold text-white"
+        class="mt-12 mr-8 w-full flex justify-start flex-wrap sm:flex-nowrap gap-2 font-sans text-lg font-extrabold text-white"
       >
         <label class="mr-10 my-2 md:my-0 flex flex-row items-center">
           Monthly
