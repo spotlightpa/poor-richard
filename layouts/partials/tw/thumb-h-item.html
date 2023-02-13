@@ -30,10 +30,7 @@
     {{ end }}
   </div>
   <div
-    class="
-      flex w-full flex-col space-y-2
-      sm:flex-row sm:space-y-0 sm:space-x-6
-    "
+    class="flex w-full flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6"
   >
     <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}
@@ -98,7 +95,7 @@
       </div>
 
       {{ if .subitems }}
-        <ul class="list-inside space-y-3 pt-5">
+        <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
             <li class="list-[square] leading-snug tracking-normal">
               <a

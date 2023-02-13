@@ -3,6 +3,16 @@
 
 {{ $kickerLink := $featuredParams.series | default $featuredParams.topic }}
 
+{{ $subitems := slice }}
+{{ range after 1 . }}
+  {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+  {{ $subitems = $subitems | append (dict
+    "link" $params.link
+    "title" .LinkTitle
+    )
+  }}
+{{ end }}
+
 {{ $imgOpts := dict
   "filename" ($featured.Param "image")
   "credit" ($featured.Param "image-credit")
@@ -27,22 +37,6 @@
   "hedSize" "text-3xl"
   "thumbClass" "flex-1 py-6 md:pr-8 md:pb-8 md:pt-0"
   "storyClass" "flex-1"
-  "subitems" $featured.Params.subhed
+  "subitems" $subitems
   )
 }}
-
-{{ if $featured.Params.subhed }}
-  {{ $featured.Params.subhed }}
-{{ end }}
-
-{{ if gt (len .) 1 }}
-  <ul class="list-inside space-y-3 pt-5 font-sans font-light">
-    {{ range after 1 . }}
-      <li class="list-[square] leading-snug tracking-normal">
-        <a class="text-dek hover:underline" href="{{ .RelPermalink }}">
-          {{ .LinkTitle }}</a
-        >
-      </li>
-    {{ end }}
-  </ul>
-{{ end }}
