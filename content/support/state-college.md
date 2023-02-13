@@ -5,7 +5,7 @@ image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 layout = "support"
-authors = ["Wyatt Massey", "Sarah Rafacz"]
+authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 newsletter = """
   {{<newsletter/talkofthetown-full-form>}}
 """
@@ -38,7 +38,7 @@ Recognized as one of the most promising journalism endeavors in the United State
 [[blocks]]
 title =  "Team"
 layout = "team"
-authors = ["Wyatt Massey", "Sarah Rafacz"]
+authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 
 [[blocks]]
     layout = "donate"
