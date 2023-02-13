@@ -6,6 +6,7 @@
 {{ end }}
 
 {{ define "static-head" }}
+  {{ partial "header/css-tw-rale.html" . }}
   {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
@@ -33,10 +34,12 @@
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
   <section class=" bg-s-0 py-14 px-5 text-lg font-medium lg:px-0">
-    {{ partial "tw/breadcrumbs.html" . }}
+    <div class="mx-auto max-w-screen-md">
+      {{ partial "tw/breadcrumbs.html" . }}
+    </div>
     <header
       id="{{ $author.slug }}"
-      class="mb-8 font-raleway mx-auto max-w-[1038px] grid grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 shadow-md sm:grid-rows-[248px_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
+      class="mb-8 font-raleway mx-auto max-w-screen-md grid grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 shadow-md sm:grid-rows-[248px_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
     >
       {{ if $author.active }}
         {{ if $author.headshot }}
@@ -217,26 +220,23 @@
     {{ end }}
 
 
-    <div class=" mx-auto max-w-[1038px]" data-ga-category="author">
-      <div class="tile is-ancestor is-vertical">
-        <div class="tile is-parent is-top">
-          <div class="tile is-child">
-            <h2
-              class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-            >
-              Stories by
-              {{ .Title }}
-            </h2>
-            <hr
-              class=" is-emphatic-underline has-margin-top-negative mb-5 border-b-2"
-            />
-          </div>
-        </div>
-        <div class="mt-3 flex flex-col space-y-8 sm:space-y-6" x-ref="archives">
-          {{ range $page := (partial "helper/paginator" .).Pages }}
-            {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
-          {{ end }}
-        </div>
+    <div class=" mx-auto max-w-screen-md" data-ga-category="author">
+      <div>
+        <h2
+          class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+        >
+          Stories by
+          {{ .Title }}
+        </h2>
+        <hr class="mb-5 border-b-2" />
+      </div>
+      <div
+        class="mt-3 flex flex-col space-y-8 sm:space-y-6 mb-8"
+        x-ref="archives"
+      >
+        {{ range $page := (partial "helper/paginator" .).Pages }}
+          {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+        {{ end }}
       </div>
 
       {{ partial "tw/paginator-level.html" .Paginator }}
