@@ -97,41 +97,48 @@
         data-ga-category="river"
         data-sf-campaign="7015G0000013oHGQAY"
       >
-        <h2
-          class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+  <nav
+    data-ga-category="related-content"
+    x-data="readmore(true)"
+    x-ref="root"
+    @mouseover.once="load()"
+    @touchstart.passive.once="load()"
+  >
+    <h2
+      class="font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      More Stories from Spotlight&nbsp;PA
+    </h2>
+    <hr class="mt-1 border-2 border-black bg-black" />
+    <div class="mt-3 flex flex-col space-y-8 sm:space-y-6" x-ref="archives">
+        {{ range $page := .river | first 30 }}
+        {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+      {{ end }}
+    </div>
+    {{ partial "tw/related-articles-js.html" dict }}
+    <div class="flex py-8">
+      <div class="mx-auto">
+        <a
+          @click.prevent="click()"
+          @mouseover.once="load()"
+          @touchstart.passive.once="load()"
+          :data-ga-action='"readmore:load"'
+          href="/news/"
+          class="
+            inline-block
+            rounded-lg bg-blue-6 py-3 px-4
+            font-sans text-base font-bold
+            uppercase leading-none tracking-widest
+            text-white shadow
+            outline-none ring-2 ring-transparent
+            hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7
+          "
+          :class="{ 'animate-pulse': hasClicked && isLoading }"
+          :disabled="!canReadMore"
+          >More Stories</a
         >
-          More top stories
-        </h2>
-        <hr
-          class=" is-emphatic-underline has-margin-top-negative mb-5 border-b-2"
-        />
-        <div class="mt-3 flex flex-col space-y-8 sm:space-y-6" x-ref="archives">
-          {{ range $page := .river | first 30 }}
-            {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
-          {{ end }}
-        </div>
-
-        {{ partial "tw/readmore.html" dict }}
-        {{ if gt 30 (len .river) }}
-          <div style="height: 100%;">&nbsp;</div>
-        {{ end }}
       </div>
     </div>
-  {{ end }}
-  {{ if gt (len .river) 30 }}
-    <div class="flex justify-center">
-      <a
-        @click.prevent="click()"
-        @mouseover.once="load()"
-        @touchstart.passive.once="load()"
-        data-ga-category="readmore"
-        :data-ga-action='"readmore:load"'
-        href="/news/"
-        class="{{ $btn }}"
-        :class="loadingClass"
-        :disabled="!canReadMore"
-        >More Stories</a
-      >
-    </div>
+  </nav>
   {{ end }}
 </div>
