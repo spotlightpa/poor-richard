@@ -37,11 +37,11 @@
     <div class="mx-auto max-w-screen-md">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
+    {{ if $author.active }}
     <header
       id="{{ $author.slug }}"
-      class="mb-8 font-raleway mx-auto max-w-screen-md grid grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 shadow-md sm:grid-rows-[248px_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
+      class="mb-8 font-raleway mx-auto max-w-screen-md grid grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
     >
-      {{ if $author.active }}
         {{ if $author.headshot }}
           {{ $sizes := (slice
             (dict "width" 256 "height" 256)
@@ -209,14 +209,8 @@
           {{ end }}
           {{ $author.content|markdownify }}
         </div>
-      {{ else }}
-        <h1 class="title is-2 is-size-3-touch is-spaced">
-          {{ .Title }}
-        </h1>
-      {{ end }}
     </header>
 
-    {{ if $author.active }}
     {{ end }}
 
 
