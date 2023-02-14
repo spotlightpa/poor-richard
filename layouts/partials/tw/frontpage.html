@@ -46,15 +46,14 @@
   </div>
   {{ if .river }}
     <div
-      class=" flex flex-wrap items-start"
+      class=" items-start sm:grid sm:grid-cols-3 sm:gap-8"
       @mouseover.passive.once="load()"
       @touchstart.passive.once="load()"
     >
       <div
         data-ga-category="midpage"
         x-data="funnelStatus"
-        class="order-2 flex flex-[1_0_30%] flex-col self-stretch p-8"
-        style="order: 2"
+        class=" flex flex-col self-stretch py-8 sm:col-start-3 md:px-8"
       >
         <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
           {{ partial "tw/promo-single.html" (dict
@@ -94,7 +93,7 @@
         {{ end }}
       </div>
       <div
-        class="order-1 flex-[0_0_66%] justify-between py-8 pr-8"
+        class="justify-between py-8 sm:col-span-2 sm:row-start-1"
         x-ref="archives"
         data-ga-category="river"
         data-sf-campaign="7015G0000013oHGQAY"

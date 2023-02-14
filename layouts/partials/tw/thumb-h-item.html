@@ -1,4 +1,4 @@
-{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-64` }}
+{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-40 md:w-64` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-lg` }}
 
@@ -30,12 +30,12 @@
     {{ end }}
   </div>
   <div
-    class="flex w-full flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6"
+    class="w-full flex-col sm:flex sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-6"
   >
     <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="{{ $storyClass }} space-y-1">
+    <div class="{{ $storyClass }} sm:space-y-1">
       <div class=" flex flex-col">
         <h2
           class="{{ $hedSize }} font-bold leading-tight tracking-tight text-hed"
