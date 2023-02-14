@@ -1,4 +1,5 @@
 +++
+aliases = ["/anxiety"]
 arc-id = "DJHKMYGTSFH6BFEP2FI6JGHOLU"
 authors = ["Ed Mahon"]
 blurb = "The Pennsylvania Department of Health sued Spotlight PA in an attempt to keep data on qualifying conditions secret, but a court ruling in favor of the newsroom forced their release."
