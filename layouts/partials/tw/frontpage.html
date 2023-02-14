@@ -115,8 +115,27 @@
             class="mt-3 flex flex-col space-y-8 sm:space-y-6"
             x-ref="archives"
           >
-            {{ range $page := .river | first 30 }}
+            {{ range $i, $page := .river | first 30 }}
               {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+                {{ if eq (mod $i 4) 3 | and $desktopImages }}
+                  <div
+                    class="pt-0 px-0 tile is-parent"
+                    data-ga-category="{{ div $i 4 | add 1 }}"
+                  >
+                    {{ partial "tw/promo-double.html" (dict
+                      "class" "w-0 min-w-full no-js:hidden"
+                      "imageDescription" $imageDescription
+                      "link" $link
+                      "desktopImages" $desktopImages
+                      "desktopWidth" $desktopWidth
+                      "desktopHeight" $desktopHeight
+                      "mobileImages" $mobileImages
+                      "mobileWidth" $mobileWidth
+                      "mobileHeight" $mobileHeight
+                      )
+                    }}
+                  </div>
+                {{ end }}
             {{ end }}
           </div>
           {{ partial "tw/related-articles-js.html" dict }}
