@@ -21,22 +21,22 @@ topics = ["Elections"]
 
 <i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
-She may not have known it, but on Nov. 8, Beth Gilbert-McBride was experiencing a Luzerne County election tradition. Or perhaps a curse.
+She may not have known it, but on Nov. 8, Beth Gilbert McBride was experiencing a Luzerne County election tradition. Or perhaps a curse.
 
-Gilbert-McBride, who had become acting director of elections just three months earlier, started hearing a trickle of reports in the morning about precincts running out of ballot paper. As the day dragged on, dozens of precincts would report a shortage. Some said they had to turn voters away for lack of paper to use in Luzerne’s ballot-on-demand printers.
+Gilbert McBride, who had become acting director of elections just three months earlier, started hearing a trickle of reports in the morning about precincts running out of ballot paper. As the day dragged on, dozens of precincts would report a shortage. Some said they had to turn voters away for lack of paper to use in Luzerne’s ballot-on-demand printers.
 
-Gilbert-McBride and her election staff tried to keep track of the affected locations on a movable whiteboard as she rushed around the office trying to deal with the crisis. The county scrambled to order paper from a supplier, and reams piled up next to the office Pepsi machine, awaiting delivery to the triaged list of 44 precincts. As the situation worsened, a local judge stepped in to order that polls stay open two hours late.
+Gilbert McBride and her election staff tried to keep track of the affected locations on a movable whiteboard as she rushed around the office trying to deal with the crisis. The county scrambled to order paper from a supplier, and reams piled up next to the office Pepsi machine, awaiting delivery to the triaged list of 44 precincts. As the situation worsened, a local judge stepped in to order that polls stay open two hours late.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
 By the end of the day, Luzerne would be singled out by the Department of State as the only county with <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-luzerne-county-paper-shortage-da-investigation/" target="_blank">significant voting problems during an otherwise smooth midterm Election Day for Pennsylvania</a>.
 
-The exact cause of the paper shortage has yet to be disclosed. The local district attorney is investigating but has yet to release his findings, and neither Gilbert-McBride nor the County Board of Elections has offered detailed explanations to the many residents who have demanded answers.
+The exact cause of the paper shortage has yet to be disclosed. The local district attorney is investigating but has yet to release his findings, and neither Gilbert McBride nor the County Board of Elections has offered detailed explanations to the many residents who have demanded answers.
 
-Gilbert-McBride declined to be interviewed for this story.
+Gilbert McBride declined to be interviewed for this story.
 
-What is clear is that the incident was not Luzerne’s first problem during an election and Gilbert-McBride is not the first election director to oversee voting there with no prior experience.
+What is clear is that the incident was not Luzerne’s first problem during an election and Gilbert McBride is not the first election director to oversee voting there with no prior experience.
 
 Luzerne has cycled through election directors and other staff over the past several years, leading to an immense loss of institutional knowledge and making it an outlier even in an industry that has seen accelerating turnover.
 
@@ -44,17 +44,17 @@ This loss of knowledge, say current and former county officials and longtime ele
 
 “A lot of these [problems] are attributable to human error — in fact all these things in one form or another,” said Bob Morgan, who served as election director for eight months in 2021. “But part of it is exacerbated by people just leaving and the next person just kind has to figure things out by themselves and there is no formal training program.”
 
-Gilbert-McBride, who is also a member of Wilkes-Barre City Council, was brand new to the election office when she started as deputy director in July. One month later, her boss was out the door, having served only eight months himself. With the midterms just around the corner, Gilbert-McBride was temporarily promoted.
+Gilbert McBride, who is also a member of Wilkes-Barre City Council, was brand new to the election office when she started as deputy director in July. One month later, her boss was out the door, having served only eight months himself. With the midterms just around the corner, Gilbert McBride was temporarily promoted.
 
-Last week, however, the County Council announced one change it hopes will put county elections back on track: another new elections director, with Gilbert-McBride returning to the deputy position.
+Last week, however, the County Council announced one change it hopes will put county elections back on track: another new elections director, with Gilbert McBride returning to the deputy position.
 
 ## Turnover and trip-ups
 
 Luzerne’s high turnover in elections leadership began in 2019 when Marisa Crispell, who <a href="https://www.timesleader.com/news/local/380977/marisa-crispell-back-as-luzerne-county-election-director">had previously worked for the department</a> and had experience running elections elsewhere, <a href="https://www.timesleader.com/news/793889/crispells-conflict-ex-luzerne-county-election-director-must-pay-ethics-violation-fine">resigned amid ethics questions</a>. Crispell did not return a call seeking comment.
 
-Since then, the county has had a succession of four elections directors, plus acting director Gilbert-McBride. Since the August 2020 resignation of longtime deputy director Mary-Beth Steininger, the county has also had three deputy directors.
+Since then, the county has had a succession of four elections directors, plus acting director Gilbert McBride. Since the August 2020 resignation of longtime deputy director Mary-Beth Steininger, the county has also had three deputy directors.
 
-One of those deputies, Gilbert-McBride’s immediate predecessor, was Eryn Harvey, who resigned after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment.
+One of those deputies, Gilbert McBride’s immediate predecessor, was Eryn Harvey, who resigned after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment.
 
 An analysis of data provided by the county shows the precipitous loss of experience. During the 2016 through 2019 elections, staff in the department had a median of 17 to 22 years of service. That number fell to roughly one year of median experience in 2020 and in 2021, when the November election was administered without a formal director in place.
 
@@ -141,7 +141,7 @@ Herring said he believed the issues with the department go deeper than a lack of
 
 Morgan said there isn’t any such manual, but residents shouldn’t be surprised that one doesn’t exist. Morgan likened the extra work of creating a manual to firemen shining the firetruck when there are fires going on, saying that there are more urgent things to be done in administering elections.
 
-His version of onboarding was his boss handing him a copy of the ballot for the upcoming election and saying, “Proof this.” Similarly, Morgan left little in the way of instructions for his successor, Michael Susek, the director who left when Gilbert-McBride was barely 30 days into her job as deputy.
+His version of onboarding was his boss handing him a copy of the ballot for the upcoming election and saying, “Proof this.” Similarly, Morgan left little in the way of instructions for his successor, Michael Susek, the director who left when Gilbert McBride was barely 30 days into her job as deputy.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
