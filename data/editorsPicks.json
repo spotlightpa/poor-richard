@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-02-14-SPLCOURTSIDE.md"
+    "content/news/2023-02-15-SPLLUZVOTE.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-10-SPLSHAPIRO09.md",
-    "content/news/2023-02-09-SPLSCHOIMPAC.md"
+    "content/news/2023-02-09-SPLINQRULING.md",
+    "content/news/2023-01-13-SPLRECRES.md"
   ],
   "topSlots": [
-    "content/news/2023-02-10-SPL8THWARD.md",
+    "content/news/2023-02-14-SPLCOURTSIDE.md",
     "content/news/2023-02-13-SPLPOTLAWS.md",
-    "content/news/2023-02-09-SPLINQRULING.md"
+    "content/news/2023-02-10-SPLSHAPIRO09.md"
   ],
   "topper": []
 }
