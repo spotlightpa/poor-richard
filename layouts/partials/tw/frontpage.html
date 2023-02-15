@@ -20,7 +20,16 @@
 }}
 
 
-<div class="mx-auto mb-5 max-w-[1248px]">
+<div class="mx-auto mb-5 max-w-screen-xl">
+  {{ define "topper" }}
+    {{ if .Param "topper-active" }}
+      {{ partialCached "tw/topper.html" . }}
+    {{ end }}
+    {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
+      {{ partial "tw/topper-articlepromo.html" $topperStories }}
+    {{ end }}
+  {{ end }}
+
   {{ if .featuredStories }}
     {{ partial "tw/featured.html" .featuredStories }}
   {{ end }}
@@ -117,25 +126,25 @@
           >
             {{ range $i, $page := .river | first 30 }}
               {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
-                {{ if eq (mod $i 4) 3 | and $desktopImages }}
-                  <div
-                    class="pt-0 px-0 tile is-parent"
-                    data-ga-category="{{ div $i 4 | add 1 }}"
-                  >
-                    {{ partial "tw/promo-double.html" (dict
-                      "class" "w-0 min-w-full no-js:hidden"
-                      "imageDescription" $imageDescription
-                      "link" $link
-                      "desktopImages" $desktopImages
-                      "desktopWidth" $desktopWidth
-                      "desktopHeight" $desktopHeight
-                      "mobileImages" $mobileImages
-                      "mobileWidth" $mobileWidth
-                      "mobileHeight" $mobileHeight
-                      )
-                    }}
-                  </div>
-                {{ end }}
+              {{ if eq (mod $i 4) 3 | and $desktopImages }}
+                <div
+                  class="tile is-parent px-0 pt-0"
+                  data-ga-category="{{ div $i 4 | add 1 }}"
+                >
+                  {{ partial "tw/promo-double.html" (dict
+                    "class" "w-0 min-w-full no-js:hidden"
+                    "imageDescription" $imageDescription
+                    "link" $link
+                    "desktopImages" $desktopImages
+                    "desktopWidth" $desktopWidth
+                    "desktopHeight" $desktopHeight
+                    "mobileImages" $mobileImages
+                    "mobileWidth" $mobileWidth
+                    "mobileHeight" $mobileHeight
+                    )
+                  }}
+                </div>
+              {{ end }}
             {{ end }}
           </div>
           {{ partial "tw/related-articles-js.html" dict }}

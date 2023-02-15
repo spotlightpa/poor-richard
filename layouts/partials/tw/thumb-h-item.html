@@ -1,6 +1,8 @@
 {{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-40 md:w-64` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-lg` }}
+{{ $hedColor := .hedColor | default `text-hed ` }}
+{{ $linkColor := .linkColor | default `text-dek ` }}
 
 
 <article class="flex flex-col space-y-1">
@@ -38,7 +40,7 @@
     <div class="{{ $storyClass }} sm:space-y-1">
       <div class=" flex flex-col">
         <h2
-          class="{{ $hedSize }} font-bold leading-tight tracking-tight text-hed"
+          class="{{ $hedSize }} {{ $hedColor }} font-bold leading-tight tracking-tight"
         >
           <a
             class="group-hover:underline"
@@ -54,7 +56,7 @@
           >
             <a
               href="{{ .link }}"
-              class="group-hover:underline"
+              class="{{ .linkColor }} group-hover:underline"
               data-ga-category="dek"
             >
               {{- .dek -}}
@@ -100,7 +102,7 @@
             <li class="list-[square] leading-snug tracking-normal">
               <a
                 href="{{ .link }}"
-                class="text-dek hover:underline"
+                class="{{ $linkColor }} hover:underline"
                 data-ga-category="subfeature"
               >
                 {{ .title }}

@@ -33,6 +33,17 @@
 {{ define "main" }}
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
 
+  {{ if .Param "topper-active" }}
+    {{ partialCached "tw/topper.html" . }}
+  {{ end }}
+  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
+    <div class=" bg-black">
+      <div class="mx-auto max-w-screen-xl py-12">
+        {{ partial "tw/topper-articlepromo.html" $topperStories }}
+      </div>
+    </div>
+  {{ end }}
+
   {{ $topperStories := partial "helper/get-sc-picks" "topper" }}
   {{ $topperStory := first 1 $topperStories }}
 
