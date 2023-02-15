@@ -56,7 +56,7 @@ Since then, the county has had a succession of four elections directors, plus ac
 
 One of those deputies, Gilbert-McBride’s immediate predecessor, was Eryn Harvey, who resigned after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment.
 
-An analysis of data provided by the county shows the precipitous loss of experience. During the 2016 through 2019 elections, staff in the department had a median of 17 to 21 years of service. That number fell to roughly one year of median experience in 2020 and in 2021, when the November election was administered without a formal director in place.
+An analysis of data provided by the county shows the precipitous loss of experience. During the 2016 through 2019 elections, staff in the department had a median of 17 to 22 years of service. That number fell to roughly one year of median experience in 2020 and in 2021, when the November election was administered without a formal director in place.
 
 The November midterm election was run by a staff with a median of 1.5 years experience.
 
@@ -69,7 +69,7 @@ The turnover has led to problems.
 
 During the 2020 election, a worker in Luzerne <a href="https://apnews.com/article/election-2020-local-elections-pennsylvania-elections-campaigns-07ab572103d67a3341011a691118f696">improperly threw out nine ballots</a>, an incident then-President Donald Trump seized upon to sow doubt in mail voting. The U.S. attorney for the Middle District of Pennsylvania later said <a href="https://www.justice.gov/usao-mdpa/pr/investigation-concluded-luzerne-county-ballot-case">there was no criminal intent</a>, and the Pennsylvania Department of State said the mistake was <a href="https://apnews.com/article/election-2020-donald-trump-state-elections-pennsylvania-elections-dccd3f68f7d533c3e2a1c571d5affa7b">due to poor training</a>.
 
-The director had less than a year of experience at the time, and there was no deputy director in place.
+The director had less than a year of experience at the time.
 
 Then, during the May 2021 primary, Republican ballots displayed on voting machine screens were <a href="https://www.timesleader.com/news/1493598/cause-of-luzerne-county-ballot-mislabeling-identified">mistakenly labeled as Democratic</a>. A new director and deputy director had just been hired.
 
@@ -81,7 +81,7 @@ Robertson did not return a call seeking comment, but in <a href="https://www.tim
 
 Luzerne’s last four directors have been paid $64,500, which is the lowest salary compared to peers in similarly sized counties in the U.S., according to a<a href="https://evic.reed.edu/leo-survey-summary/"> 2022 survey of local elections officials</a> by Democracy Fund and the Elections and Voting Information Center at Reed College.
 
-Robertson also noted that the home rule structure caused issues for election administration and other parts of government.
+Robertson also noted that the home rule structure has caused issues.
 
 {{<picture src="external/rc2x1agqsbb78p14q9jpbvcmkm.jpeg" description="Bob Morgan served as election director for eight months in 2021. " caption="Bob Morgan served as election director for eight months in 2021. " credit="Fred Adams / For Spotlight PA">}} 
 
