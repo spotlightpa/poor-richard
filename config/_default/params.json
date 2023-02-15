@@ -4,24 +4,30 @@
   "banner-bg-color": "#ffcb03",
   "banner-link": "/newsletters",
   "banner-text-color": "#000000",
-  "featured-promo-bg-color": "#000000",
+  "featured-promo-bg-color": "#ddeb3f",
   "featured-promo-height": 512,
-  "featured-promo-image-description": "Donate to Spotlight PA",
+  "featured-promo-image-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
   "featured-promo-images": [
-    "https://files.data.spotlightpa.org/uploads/01hw/0xmb/campaign-trackers-week-of-giving-1024-512-px-3-.webp"
+    "https://files.data.spotlightpa.org/uploads/01hy/tebn/febmarch-2023-mobile-toppers-1024-512-px-1-.svg"
   ],
   "featured-promo-link": "/donate/",
   "featured-promo-width": 1024,
   "footer-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/newsmatch-2022-banner-ads-728-90-px-3-.png"
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td71/febmarch-2023-banners-728-90-px-1-.gif"
   ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/campaign-trackers-week-of-giving-1024-512-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01hy/td0x/febmarch-2023-mobile-toppers-1024-512-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-1-.gif"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
@@ -40,47 +46,62 @@
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
-  "river-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
+  "river-promo-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
   "river-promo-desktop-height": 90,
   "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/newsmatch-2022-banner-ads-728-90-px-3-.png"
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td71/febmarch-2023-banners-728-90-px-1-.gif"
   ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate",
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wyk/campaign-trackers-week-of-giving-1024-512-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01hy/td0x/febmarch-2023-mobile-toppers-1024-512-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-1-.gif"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
+  "sidebar-sticky-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
+  "sidebar-top-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
+  "sticky-image-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hv/1wym/newsmatch-2022-squares.gif"
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
   ],
   "sticky-link": "/donate",
   "support-active": true,
-  "support-bg-color": "#ffffff",
+  "support-bg-color": "#d1fffe",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "YES, I WILL CONTRIBUTE »",
-  "support-hed": "MAKE A DIFFERENCE THIS YEAR",
-  "support-hed-color": "#ff0000",
+  "support-cta": "CLICK TO CONTRIBUTE NOW »",
+  "support-hed": "BEFORE YOU GO, A QUICK REQUEST...",
+  "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "Huge stories will shape Pennsylvania’s future next year, and you can help determine the course of our state by supporting tough, nonpartisan investigative and public service journalism that gets results.\n\nFearless journalism is the backbone of our democracy, and we can't leave its future in Pennsylvania up to big corporations and predatory hedge funds. Unlike many others, Spotlight PA has no shareholders, no billionaire owner, no pressure to turn a big profit. Just the determination and passion to deliver high-impact investigative and public-service reporting for Pennsylvania, always free from commercial or political influence. \n\nWe provide our journalism for free to all Pennsylvanians because we believe in information equality. Greater numbers of people can keep track of the issues and events shaping our state, understand their impact on people and communities, and become inspired to take meaningful action. Millions can benefit from open access to quality, truthful news, regardless of their ability to pay for it.\n\nEvery contribution, however big or small, powers our journalism in tight economic times and sustains our future. As you consider your causes to support this year, please contribute to Spotlight PA by making a tax-deductible gift today. If you can, consider supporting us with a regular amount each month.\n\nWill you take a moment now to ensure this important work can continue?",
+  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider taking the step of supporting Spotlight PA's journalism — either one time, or with a monthly gift.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution? As a special bonus, all new monthly gifts made today will be matched as 12X their value thanks to the generosity of the Lenfest Institute for Journalism.\n\nYou've been reading our work. Now join thousands of your friends and neighbors in supporting it.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief",
   "support-text-color": "#000000",
   "topper-active": true,
   "topper-bg-color": "#ddeb3f",
