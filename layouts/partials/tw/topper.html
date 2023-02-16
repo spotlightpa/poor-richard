@@ -1,0 +1,115 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+
+{{ $alt := .Param "topper-image-description" }}
+{{ $link := .Param "topper-link" }}
+
+{{ $imgDesktop := .Param "topper-desktop-images" }}
+{{ $widthDesktop := .Param "topper-desktop-width" }}
+{{ $heightDesktop := .Param "topper-desktop-height" }}
+{{ $pbDesktop := slice $widthDesktop $heightDesktop | partial "helper/aspect-ratio" }}
+
+{{ $imgMobile := .Param "topper-mobile-images" }}
+
+{{ $widthMobile := .Param "topper-mobile-width" }}
+{{ $heightMobile := .Param "topper-mobile-height" }}
+{{ $pbMobile := slice $widthMobile $heightMobile | partial "helper/aspect-ratio" }}
+
+{{ $bannerActive := .Param "banner-active" }}
+{{ $toppperBgColor := .Param "topper-bg-color" }}
+{{ $toppperDividerColor := .Param "topper-divider-color" }}
+
+<section
+  class="no-js:hidden"
+  data-ga-category="topper"
+  data-sf-campaign="7015G0000013nlKQAQ"
+  style='
+    background-color: {{ $toppperBgColor }};
+    {{ if not $bannerActive }}
+      border-top: .25rem solid {{ $toppperDividerColor }};
+    {{ end }}
+  '
+>
+  <p>
+    {{ with $link }}
+      <a
+        class="is-hidden-mobile"
+        data-ga-category="desktop"
+        href="{{ . }}"
+      >
+    {{ else }}
+      <span class="is-hidden-mobile">
+    {{ end }}
+      <span
+        class="aspect-ratio-outer"
+        style="width: {{ $widthDesktop }}px;"
+      >
+        <span
+          class="aspect-ratio-middle"
+          style='padding-bottom: {{ $pbDesktop | printf "%0.3f" }}%;'
+        >
+          <img
+            class="aspect-ratio-inner"
+            {{ if len $imgDesktop | eq 1 }}
+              src="{{ index $imgDesktop 0 }}"
+              fetchpriority="high"
+            {{ else }}
+              x-data="imageRotator(JSON.parse($el.dataset.images))"
+              data-images="{{ $imgDesktop | jsonify }}"
+              :src="choice"
+              src="{{ $magicPixel }}"
+              :fetchpriority="'high'"
+            {{ end }}
+            alt="{{ $alt }}"
+            title="{{ $alt }}"
+            width="{{ $widthDesktop }}"
+            height="{{ $heightDesktop }}"
+          >
+        </span>
+      </span>
+    {{ with $link }}
+      </a>
+    {{ else }}
+      </span>
+    {{ end }}
+    {{ with $link }}
+      <a
+        class="is-hidden-tablet"
+        data-ga-category="mobile"
+        href="{{ . }}"
+      >
+    {{ else }}
+      <span class="is-hidden-tablet">
+    {{ end }}
+      <span
+        class="aspect-ratio-outer"
+        style="width: {{ $widthMobile }}px;"
+      >
+        <span
+          class="aspect-ratio-middle"
+          style='padding-bottom: {{ $pbMobile | printf "%0.3f" }}%;'
+        >
+          <img
+            class="aspect-ratio-inner"
+            {{ if len $imgMobile | eq 1 }}
+              src="{{ index $imgMobile 0 }}"
+              loading="lazy"
+            {{ else }}
+              x-data="imageRotator(JSON.parse($el.dataset.images))"
+              data-images="{{ $imgMobile | jsonify }}"
+              :src="choice"
+              src="{{ $magicPixel }}"
+            {{ end}}
+            alt="{{ $alt }}"
+            title="{{ $alt }}"
+            width="{{ $widthMobile }}"
+            height="{{ $heightMobile }}"
+          >
+        </span>
+      </span>
+    {{ with $link }}
+      </a>
+    {{ else }}
+      </span>
+    {{ end }}
+  </p>
+</section>
