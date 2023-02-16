@@ -23,10 +23,10 @@
 <div class="mx-auto mb-5 max-w-screen-xl">
   {{ define "topper" }}
     {{ if .Param "topper-active" }}
-      {{ partialCached "tw/topper.html" . }}
+      {{ partialCached "tw/promo-topper.html" . }}
     {{ end }}
     {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-      {{ partial "tw/topper-articlepromo.html" $topperStories }}
+      {{ partial "tw/promo-topperarticle.html" $topperStories }}
     {{ end }}
   {{ end }}
 
