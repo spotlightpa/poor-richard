@@ -105,10 +105,10 @@
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
-            <li class="list-[square] leading-snug tracking-normal">
+            <li class="list-[square] text-yellow leading-snug tracking-normal">
               <a
                 href="{{ .link }}"
-                class="{{ $linkColor }} hover:underline"
+                class="{{ $linkColor }} hover:underline text-white"
                 data-ga-category="subfeature"
               >
                 {{ .title }}
