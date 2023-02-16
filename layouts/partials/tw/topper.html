@@ -32,12 +32,12 @@
   <p>
     {{ with $link }}
       <a
-        class="is-hidden-mobile"
+        class="hidden sm:block"
         data-ga-category="desktop"
         href="{{ . }}"
       >
     {{ else }}
-      <span class="is-hidden-mobile">
+      <span class="hidden sm:block">
     {{ end }}
       <span
         class="aspect-ratio-outer"
@@ -73,12 +73,12 @@
     {{ end }}
     {{ with $link }}
       <a
-        class="is-hidden-tablet"
+        class="sm:hidden"
         data-ga-category="mobile"
         href="{{ . }}"
       >
     {{ else }}
-      <span class="is-hidden-tablet">
+      <span class="sm:hidden">
     {{ end }}
       <span
         class="aspect-ratio-outer"

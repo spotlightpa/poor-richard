@@ -5,7 +5,7 @@
 {{ $linkColor := .linkColor | default `text-dek ` }}
 
 
-<article class="flex flex-col space-y-1">
+<article class="flex flex-col space-y-1 p-4 md:p-0">
   <div class="flex items-center" data-ga-category="eyebrow">
     <span aria-hidden="true" class="relative flex h-3 w-3" style="">
       <span
@@ -54,7 +54,7 @@
     <div class="{{ $thumbClass }} sm:flex-[0_0_50%]">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="{{ $storyClass }} sm:space-y-1  md:ml-6">
+    <div class="{{ $storyClass }} sm:space-y-1  sm:ml-6">
       <div class=" flex flex-col">
         {{ if .dek }}
           <h3
