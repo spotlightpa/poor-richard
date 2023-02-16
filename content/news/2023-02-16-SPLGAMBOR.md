@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2023/02/pa-parx-casino-gaming-control-board-skill-games-private-meeting/"]
 arc-id = "PMICWAS76VAG7KSJAGK432ABSA"
 authors = ["Angela Couloumbis"]
 blurb = "The state Gaming Control Board, which previously took no position on the legality of skill games despite casino opposition, reversed course after their meeting with Parx Casino representatives."
