@@ -54,7 +54,7 @@
     <div class="{{ $thumbClass }} sm:flex-[0_0_50%]">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="{{ $storyClass }} sm:space-y-1  sm:ml-6">
+    <div class="{{ $storyClass }} sm:ml-6  sm:space-y-1">
       <div class=" flex flex-col">
         {{ if .dek }}
           <h3
@@ -105,10 +105,10 @@
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
-            <li class="list-[square] text-yellow leading-snug tracking-normal">
+            <li class="list-[square] leading-snug tracking-normal text-yellow">
               <a
                 href="{{ .link }}"
-                class="{{ $linkColor }} hover:underline text-white"
+                class="{{ $linkColor }} text-white hover:underline"
                 data-ga-category="subfeature"
               >
                 {{ .title }}
