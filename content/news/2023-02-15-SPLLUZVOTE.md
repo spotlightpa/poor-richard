@@ -54,7 +54,7 @@ Luzerne’s high turnover in elections leadership began in 2019 when Marisa Cris
 
 Since then, the county has had a succession of four elections directors, plus acting director Gilbert McBride. Since the August 2020 resignation of longtime deputy director Mary-Beth Steininger, the county has also had o deputy directors.
 
-One of those deputies was Eryn Harvey, who resigned after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment. Harvey was succeeded by a deputy, Sarah Knoell, who stayed roughly three months in the job, which was then filled by Gilbert McBride.
+One of those deputies was Eryn Harvey, who resigned in February after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment. Harvey was succeeded by a deputy, Sarah Knoell, who stayed roughly three months in the job, which was then filled by Gilbert McBride.
 
 An analysis of data provided by the county shows the precipitous loss of experience. During the 2016 through 2019 elections, staff in the department had a median of 17 to 22 years of service. That number fell to roughly one year of median experience in 2020 and in 2021, when the November election was administered without a formal director in place.
 
