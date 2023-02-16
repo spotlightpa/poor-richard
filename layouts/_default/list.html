@@ -1,8 +1,12 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
 {{ define "body-class" }}
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
 {{ define "static-head" }}
+  {{ partialCached "header/static-bulma.html" . }}
   {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
