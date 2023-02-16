@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-02-03-SPLBORO5.md"
+    "content/statecollege/2023-02-16-SPLTHON.md"
   ],
-  "subfeatures": [
-    "content/news/2023-01-05-SPLBOREVENT.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/statecollege/2023-02-02-SPLTTLIONS.md",
-    "content/statecollege/2023-02-01-SPLALTOONARIFLE.md",
-    "content/statecollege/2023-01-31-SPLACT57PROBATION.md"
+    "content/statecollege/2023-02-14-SPLREGCOM.md",
+    "content/statecollege/2023-02-03-SPLBORO5.md",
+    "content/statecollege/2023-02-02-SPLTTLIONS.md"
   ],
   "topper": [
     "content/newsletters/palocal/2023-02-10-1000.md",

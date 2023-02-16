@@ -57,7 +57,7 @@ That status has made them a prime target. The casino industry has complained tha
 
 <strong>Dick Gmerek</strong> is president and CEO of the Harrisburg-based lobbying firm Gmerek Government Relations. He served as counsel to state Senate Republicans in the 1980s. His clients include the Pennsylvania AAA Federation, 84 Lumber Company, and Family Planning Councils of America, according to his <a href="https://www.ggrgov.com/firm-profile/">biography</a>.
 
-<strong>Sean Schafer</strong> is director of Pennsylvania operations for Commonwealth Strategic Partners, a lobbying firm with offices in Washington, D.C., and Harrisburg. He worked for Tomlinson from 2008 and 2014 in various roles including chief of staff, according to his <a href="https://commonwealthstrategic.com/who-we-are/pennsylvania/schafer/">biography</a>, and was later director of government relations for Parx Casino.
+<strong>Sean Schafer</strong> is director of Pennsylvania operations for Commonwealth Strategic Partners, a lobbying firm with offices in Washington, D.C., and Harrisburg. He worked for Tomlinson from 2008 and 2014 in various roles including chief of staff, according to his <a href="https://web.archive.org/20220414071317/https://commonwealthstrategic.com/who-we-are/pennsylvania/schafer/">biography</a>, and was later director of government relations for Parx Casino.
 {{</block>}}
 
 {{<featured/header
