@@ -84,8 +84,13 @@
   </section>
 {{ end }}
 {{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  {{ partialCached "tw/donate-prefill-lg.html" (dict
+    "donateHed" "Support Spotlight PA in State College"
+    "donateCta" "Give Today"
+    "donateCampaign" "7015G0000013pZiQAI"
+    "donateTheme" "centrecounty"
+    "donateAmounts" "10,15,25"
+    )
   }}
 {{ end }}
 

@@ -5,7 +5,7 @@
 {{ $donateGaForm := .donateGaForm | default "" }}
 {{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
 {{ $donateTheme := .donateTheme | default "" }}
-{{ $donateAmounts := .donateAmounts | default (slice "10" "15" "25" "50") }}
+{{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
 
 {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
