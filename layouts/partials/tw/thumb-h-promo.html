@@ -71,11 +71,11 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
+            class="my-3 font-sans text-base font-bold leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
-              class="group-hover:none text-s-7"
+              class="group-hover:none text-white"
               data-ga-category="byline"
             >
               {{- printf "by %s" .byline -}}
