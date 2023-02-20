@@ -90,7 +90,6 @@
     {{ $imgOpts := dict
       "filename" $name
       "link" .RelPermalink
-      "credit" "Georgianna Sutherland / For Spotlight PA"
       "widthRatio" 4
       "heightRatio" 3
       "widths" (slice 128 256 384 512 1280)
@@ -98,7 +97,7 @@
       "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-s-7"
       "sizeHint" "400px"
       "rounded" true
-      "gravity" (.Page.Param "image-gravity")
+      "gravity" "ce"
     }}
     {{ partial "tw/image-block.html" $imgOpts }}
 
