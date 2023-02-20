@@ -26,7 +26,7 @@ image = "2022/06/01hb-4958-4rxz-4t0q.png"
 hed = "Support Our State College Bureau"
 body = "Want to support our investigative journalism about Penn State and our State College regional bureau?"
 actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZTQAY"
-actionText = "Support State College →"
+actionText = "Support the Bureau →"
 url = "/support/state-college"
 
 [[blocks]]
@@ -63,10 +63,11 @@ copy="""
 
 ## Mail a Check
 
-Make a check out to Spotlight PA and send it to: <br>
+Make a check out to Spotlight PA and send it to:
+
 **Spotlight PA** <br>
-**228 Walnut St., #11728,** <br> 
-**Harrisburg, PA 17108-1728.** <br>
+**228 Walnut St. #11728,** <br> 
+**Harrisburg, PA 17108-1728** <br>
 
 ## Use Your Donor-Advised Fund
 
