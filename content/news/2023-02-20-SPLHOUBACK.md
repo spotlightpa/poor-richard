@@ -40,7 +40,7 @@ Even more importantly, he said, he wants to pass it without any unrelated measur
 
 “It became apparent that if we ran the victims’ bills in regular session that members would try to tie them to voter ID and regulatory reform measures,” Rozzi told Spotlight PA in a text message Monday. “I will not allow victims to be used for political gain.”
 
-Rozzi last month formed a group of Democrats and Republicans to work on rules for the chamber. Rule drafted to govern the special session would restrict debate to the topic of child sexual abuse, raise the bar to change a bill, and concentrate power in the hands of top lawmakers.
+Rozzi last month formed a group of Democrats and Republicans to work on rules for the chamber. Rules drafted to govern the special session would restrict debate to the topic of child sexual abuse, raise the bar to change a bill, and concentrate power in the hands of top lawmakers.
 
 According to a draft viewed by Spotlight PA, the proposed rules would create a single committee made up of both parties’ leaders and Appropriations Committee chairs. Rozzi would pick a fifth member to helm the committee.
 
