@@ -49,8 +49,7 @@ authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 [[blocks]]
     layout = "supporters"
     title="Our Major Donors"
-    category="$1000 and above"
-    dataSrc = "leadersInAction"
+    dataSrc = "stateCollege"
 +++
 
 # A Novel Approach to Reinvigorating Local News

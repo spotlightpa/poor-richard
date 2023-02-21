@@ -1,99 +1,928 @@
 {
   "list": [
     {
-      "category": "$5,000 and above",
-      "display": "The Lenfest Institute for Journalism ",
-      "sort": "Lenfest Institute for Journalism , The "
+      "display": "Leslie Schlessinger and Joycellen Auritt",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Auritt"
     },
     {
-      "category": "$5,000 and above",
-      "display": "R Thomas Berner",
-      "sort": "R Thomas Berner"
+      "display": "Cynthia Nixon-Hudson and Randolph Hudson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hudson"
     },
     {
-      "category": "$5,000 and above",
-      "display": "Report for America",
-      "sort": "Report for America,  "
+      "display": "The Lenfest Institute for Journalism",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Lenfest"
     },
     {
-      "category": "$1,000 to $4999",
-      "display": "Mimi Barash Coppersmith",
-      "sort": "Barash Coppersmith, Mimi "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Tony Barbieri",
-      "sort": "Barbieri, Tony "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Nancy Chiswick and Arthur Patterson",
-      "sort": "Chiswick and Arthur Patterson, Nancy "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Vincent Crespi",
-      "sort": "Crespi, Vincent "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "John and Janet Dillon",
-      "sort": "Dillon, John and Janet "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Susan F. and Ron Smith",
-      "sort": "F. and Ron Smith, Susan "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "David Gray",
-      "sort": "Gray, David "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Sharon Hyde",
-      "sort": "Hyde, Sharon "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Richard and Sally Kalin",
-      "sort": "Kalin, Richard and Sally "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Laura and Peter Kemper",
-      "sort": "Kemper, Laura and Peter "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "David Martens",
-      "sort": "Martens, David "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Katie O'Toole",
-      "sort": "O'Toole, Katie "
-    },
-    {
-      "category": "$1,000 to $4999",
-      "display": "Kathleen Pavelko",
-      "sort": "Pavelko, Kathleen "
-    },
-    {
-      "category": "$1,000 to $4999",
       "display": "Donna Queeney and Nicholas Kerlin",
-      "sort": "Queeney and Nicholas Kerlin, Donna "
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Kerlin"
     },
     {
-      "category": "$1,000 to $4999",
-      "display": "Gary Schell",
-      "sort": "Schell, Gary "
+      "display": "Nancy Chiswick and Arthur Patterson",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Patterson"
     },
     {
-      "category": "$1,000 to $4999",
+      "display": "Susan F. and Ron Smith",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Smith"
+    },
+    {
+      "display": "John and Janet Dillon",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Dillon"
+    },
+    {
+      "display": "Thomas and Barbara Hale",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hale"
+    },
+    {
+      "display": "Ellen & Jim Hermann",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hermann"
+    },
+    {
+      "display": "Sharon and Jeff Hyde",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Hyde"
+    },
+    {
+      "display": "Richard and Sally Kalin",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Kalin"
+    },
+    {
+      "display": "Rhonda and Peter Keller",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Keller"
+    },
+    {
+      "display": "Laura and Peter Kemper",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Kemper"
+    },
+    {
+      "display": "Benson and Christine Lichtig",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Lichtig"
+    },
+    {
+      "display": "Laura and Mark Morrisson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Morrisson"
+    },
+    {
+      "display": "Robert and Ann Pangborn",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Pangborn"
+    },
+    {
       "display": "Daniel and Linda Trevino",
-      "sort": "Trevino, Daniel and Linda "
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Trevino"
+    },
+    {
+      "display": "Catherine S Alloway",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Alloway"
+    },
+    {
+      "display": "Report for America",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Report"
+    },
+    {
+      "display": "R Thomas Berner",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Berner"
+    },
+    {
+      "display": "Carol Ann Brady",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Brady"
+    },
+    {
+      "display": "Mimi Barash Coppersmith",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Coppersmith"
+    },
+    {
+      "display": "Michael J Schroeder",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Schroeder"
+    },
+    {
+      "display": "Linda Arble",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Arble"
+    },
+    {
+      "display": "Tony Barbieri",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Barbieri"
+    },
+    {
+      "display": "Brian Beer",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Beer"
+    },
+    {
+      "display": "Michael Berkman",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Berkman"
+    },
+    {
+      "display": "Steve Blake",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Blake"
+    },
+    {
+      "display": "Janet Blankenhorn",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Blankenhorn"
+    },
+    {
+      "display": "Lisa Borghesi",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Borghesi"
+    },
+    {
+      "display": "Susan Brantley",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Brantley"
+    },
+    {
+      "display": "Jennifer Brock",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Brock"
+    },
+    {
+      "display": "Stephen Brunner",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Brunner"
+    },
+    {
+      "display": "James Casey",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Casey"
+    },
+    {
+      "display": "Laura Clifton",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Clifton"
+    },
+    {
+      "display": "Patricia Cossick",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Cossick"
+    },
+    {
+      "display": "Billie Coyne",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Coyne"
+    },
+    {
+      "display": "Vincent Crespi",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Crespi"
+    },
+    {
+      "display": "Candace Dannaker",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Dannaker"
+    },
+    {
+      "display": "Michael Desmond",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Desmond"
+    },
+    {
+      "display": "Carolyn Donaldson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Donaldson"
+    },
+    {
+      "display": "Helene Dow",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Dow"
+    },
+    {
+      "display": "Charles DuBois",
+      "category": "999",
+      "group": "state-college",
+      "sort": "DuBois"
+    },
+    {
+      "display": "Dan Duffy",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Duffy"
+    },
+    {
+      "display": "Robert DuPlessis",
+      "category": "999",
+      "group": "state-college",
+      "sort": "DuPlessis"
+    },
+    {
+      "display": "Melissa Egbertson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Egbertson"
+    },
+    {
+      "display": "James Eisenstein",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Eisenstein"
+    },
+    {
+      "display": "William Ewing",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ewing"
+    },
+    {
+      "display": "Jubalyn ExWilliams",
+      "category": "999",
+      "group": "state-college",
+      "sort": "ExWilliams"
+    },
+    {
+      "display": "Ronald Filippelli",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Filippelli"
+    },
+    {
+      "display": "Elizabeth Foster",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Foster"
+    },
+    {
+      "display": "David Gackenbach",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Gackenbach"
+    },
+    {
+      "display": "Mitch Gerstein",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Gerstein"
+    },
+    {
+      "display": "Carol Gillespie",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Gillespie"
+    },
+    {
+      "display": "Jennifer Glick",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Glick"
+    },
+    {
+      "display": "Richard Gordon",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Gordon"
+    },
+    {
+      "display": "David Gray",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Gray"
+    },
+    {
+      "display": "John Graybill",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Graybill"
+    },
+    {
+      "display": "Elizabeth Green",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Green"
+    },
+    {
+      "display": "Louise Grim",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Grim"
+    },
+    {
+      "display": "Rebekah Grmela",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Grmela"
+    },
+    {
+      "display": "Cari Gustafson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Gustafson"
+    },
+    {
+      "display": "Etta Habegger",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Habegger"
+    },
+    {
+      "display": "Margaret Hambrick",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hambrick"
+    },
+    {
+      "display": "Marie Hardin",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hardin"
+    },
+    {
+      "display": "William Hartman",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hartman"
+    },
+    {
+      "display": "Ellen Harvey",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Harvey"
+    },
+    {
+      "display": "Molly Hasselman-Gnan",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hasselman-Gnan"
+    },
+    {
+      "display": "Judith Heberling",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Heberling"
+    },
+    {
+      "display": "Paul Hughes",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Hughes"
+    },
+    {
+      "display": "Eric Husted",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Husted"
+    },
+    {
+      "display": "Clinton Ibarra",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ibarra"
+    },
+    {
+      "display": "Bruce Jankura",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Jankura"
+    },
+    {
+      "display": "Ryan Jones",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Jones"
+    },
+    {
+      "display": "Marilyn Keat",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Keat"
+    },
+    {
+      "display": "Paul Kellermann",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Kellermann"
+    },
+    {
+      "display": "Michael Kiernan",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Kiernan"
+    },
+    {
+      "display": "Lynn Kipp",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Kipp"
+    },
+    {
+      "display": "Janet Koch",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Koch"
+    },
+    {
+      "display": "Ann Koziar",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Koziar"
+    },
+    {
+      "display": "Stephen Krupa",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Krupa"
+    },
+    {
+      "display": "Christian Kurpiel-Wakamiya",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Kurpiel-Wakamiya"
+    },
+    {
+      "display": "James Kvitkovich",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Kvitkovich"
+    },
+    {
+      "display": "Michael Lee",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Lee"
+    },
+    {
+      "display": "Dale Lenox",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Lenox"
+    },
+    {
+      "display": "John Lopatka",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Lopatka"
+    },
+    {
+      "display": "Robert Maney",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Maney"
+    },
+    {
+      "display": "Michele Marchetti",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Marchetti"
+    },
+    {
+      "display": "David Martens",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Martens"
+    },
+    {
+      "display": "Martina Martin",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Martin"
+    },
+    {
+      "display": "Claudia McGill",
+      "category": "999",
+      "group": "state-college",
+      "sort": "McGill"
+    },
+    {
+      "display": "Maryann McNally",
+      "category": "999",
+      "group": "state-college",
+      "sort": "McNally"
+    },
+    {
+      "display": "Allen Mengel",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Mengel"
+    },
+    {
+      "display": "Jean Morrow",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Morrow"
+    },
+    {
+      "display": "Hugh Mose",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Mose"
+    },
+    {
+      "display": "Tracy Mullen",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Mullen"
+    },
+    {
+      "display": "Gary Muzzelo",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Muzzelo"
+    },
+    {
+      "display": "James Newcomer",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Newcomer"
+    },
+    {
+      "display": "John Nichols",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Nichols"
+    },
+    {
+      "display": "Eric Norenberg",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Norenberg"
+    },
+    {
+      "display": "Katie O'Toole",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "O'Toole"
+    },
+    {
+      "display": "Elaine Olson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Olson"
+    },
+    {
+      "display": "Carol ONeill",
+      "category": "999",
+      "group": "state-college",
+      "sort": "ONeill"
+    },
+    {
+      "display": "Kathleen Pavelko",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Pavelko"
+    },
+    {
+      "display": "Lynn Petnick",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Petnick"
+    },
+    {
+      "display": "Jennifer Pollock",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Pollock"
+    },
+    {
+      "display": "Josh Portney",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Portney"
+    },
+    {
+      "display": "Gail Preuninger",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Preuninger"
+    },
+    {
+      "display": "Louis Prevost",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Prevost"
+    },
+    {
+      "display": "Todd Price",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Price"
+    },
+    {
+      "display": "Mary Prunty",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Prunty"
+    },
+    {
+      "display": "Donna Quadri",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Quadri"
+    },
+    {
+      "display": "Paula Ralph",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ralph"
+    },
+    {
+      "display": "Ronald Ranieri",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ranieri"
+    },
+    {
+      "display": "William Rathfon",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Rathfon"
+    },
+    {
+      "display": "Jillian Rodgers",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Rodgers"
+    },
+    {
+      "display": "Craig Rose",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Rose"
+    },
+    {
+      "display": "Richard Ross",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ross"
+    },
+    {
+      "display": "Benedict Saia",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Saia"
+    },
+    {
+      "display": "Sue Sargo",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sargo"
+    },
+    {
+      "display": "Steven Sattinger",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sattinger"
+    },
+    {
+      "display": "Barb Saulsbury",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Saulsbury"
+    },
+    {
+      "display": "Gary Schell",
+      "category": "1000",
+      "group": "state-college",
+      "sort": "Schell"
+    },
+    {
+      "display": "Thomas Schmoyer",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Schmoyer"
+    },
+    {
+      "display": "Geraldine Sealey",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sealey"
+    },
+    {
+      "display": "Stephen Seidman",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Seidman"
+    },
+    {
+      "display": "Barbara Sherlock",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sherlock"
+    },
+    {
+      "display": "Frances Sherr",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sherr"
+    },
+    {
+      "display": "Jennifer Sibum",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sibum"
+    },
+    {
+      "display": "Kent Simendinger",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Simendinger"
+    },
+    {
+      "display": "Douglas Sivers",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sivers"
+    },
+    {
+      "display": "Patricia Slagle",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Slagle"
+    },
+    {
+      "display": "Stephen Snell",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Snell"
+    },
+    {
+      "display": "Jackie Sobel",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Sobel"
+    },
+    {
+      "display": "Aaron Songer",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Songer"
+    },
+    {
+      "display": "Graham Spanier",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Spanier"
+    },
+    {
+      "display": "Jenna Spinelle",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Spinelle"
+    },
+    {
+      "display": "Brian Strahl",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Strahl"
+    },
+    {
+      "display": "Lynn Thomas",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Thomas"
+    },
+    {
+      "display": "Karen Toth",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Toth"
+    },
+    {
+      "display": "Christina VandePol",
+      "category": "999",
+      "group": "state-college",
+      "sort": "VandePol"
+    },
+    {
+      "display": "Tanner Vea",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Vea"
+    },
+    {
+      "display": "Susan Venegoni",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Venegoni"
+    },
+    {
+      "display": "Richard Villastrigo",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Villastrigo"
+    },
+    {
+      "display": "Kathleen Weidner",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Weidner"
+    },
+    {
+      "display": "David Whiteman",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Whiteman"
+    },
+    {
+      "display": "Marty Wilder",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Wilder"
+    },
+    {
+      "display": "Ellen Wilson",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Wilson"
+    },
+    {
+      "display": "Stephen Wistar",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Wistar"
+    },
+    {
+      "display": "Deborah Wolfe",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Wolfe"
+    },
+    {
+      "display": "Mina Yindra",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Yindra"
+    },
+    {
+      "display": "Donald Young",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Young"
+    },
+    {
+      "display": "Barbara Ziff",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Ziff"
+    },
+    {
+      "display": "Charlotte Zmyslo",
+      "category": "999",
+      "group": "state-college",
+      "sort": "Zmyslo"
     }
   ]
 }

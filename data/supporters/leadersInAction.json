@@ -2,291 +2,441 @@
   "list": [
     {
       "display": "Teresa Amott",
-      "sort": "Amott, Teresa"
-    },
-    {
-      "display": "Hilary Appelman",
-      "sort": "Appelman, Hilary"
+      "category": "",
+      "group": "leaders",
+      "sort": "Amott"
     },
     {
       "display": "Leslie Schlessinger and Joycellen Auritt",
-      "sort": "Auritt, Leslie Schlessinger and Joycellen"
+      "category": "",
+      "group": "leaders",
+      "sort": "Auritt"
     },
     {
       "display": "Dorothy Aylward",
-      "sort": "Aylward, Dorothy"
+      "category": "",
+      "group": "leaders",
+      "sort": "Aylward"
     },
     {
       "display": "Beryl Kuhr and Patrick Bair",
-      "sort": "Bair, Beryl Kuhr and Patrick"
-    },
-    {
-      "display": "Carol Baker",
-      "sort": "Baker, Carol"
+      "category": "",
+      "group": "leaders",
+      "sort": "Bair"
     },
     {
       "display": "Tony Barbieri",
-      "sort": "Barbieri, Tony"
+      "category": "",
+      "group": "leaders",
+      "sort": "Barbieri"
     },
     {
       "display": "Phyllis Beck",
-      "sort": "Beck, Phyllis"
+      "category": "",
+      "group": "leaders",
+      "sort": "Beck"
     },
     {
       "display": "R Thomas Berner",
-      "sort": "Berner, R Thomas"
+      "category": "",
+      "group": "leaders",
+      "sort": "Berner"
     },
     {
       "display": "Jennifer Bertetto",
-      "sort": "Bertetto, Jennifer"
+      "category": "",
+      "group": "leaders",
+      "sort": "Bertetto"
     },
     {
       "display": "David and Barbara Boardman",
-      "sort": "Boardman, David and Barbara"
+      "category": "",
+      "group": "leaders",
+      "sort": "Boardman"
     },
     {
       "display": "Merrill and Nancy Brenner",
-      "sort": "Brenner, Merrill and Nancy"
+      "category": "",
+      "group": "leaders",
+      "sort": "Brenner"
     },
     {
       "display": "Wayne and Cynthia Bullaughey",
-      "sort": "Bullaughey, Wayne and Cynthia"
+      "category": "",
+      "group": "leaders",
+      "sort": "Bullaughey"
     },
     {
       "display": "Adelaide Ferguson and Ron Cahan",
-      "sort": "Cahan, Adelaide Ferguson and Ron"
+      "category": "",
+      "group": "leaders",
+      "sort": "Cahan"
     },
     {
       "display": "Richard Carroll",
-      "sort": "Carroll, Richard"
+      "category": "",
+      "group": "leaders",
+      "sort": "Carroll"
     },
     {
       "display": "Audry Carter",
-      "sort": "Carter, Audry"
+      "category": "",
+      "group": "leaders",
+      "sort": "Carter"
     },
     {
       "display": "Michael Clark",
-      "sort": "Clark, Michael"
+      "category": "",
+      "group": "leaders",
+      "sort": "Clark"
     },
     {
-      "display": "Mimi Barash Coppersmith",
-      "sort": "Coppersmith, Mimi Barash"
-    },
-    {
-      "display": "Vincent Crespi",
-      "sort": "Crespi, Vincent"
+      "display": "Frederick Steinberg and Jo DeBolt",
+      "category": "",
+      "group": "leaders",
+      "sort": "DeBolt"
     },
     {
       "display": "John and Janet Dillon",
-      "sort": "Dillon, John and Janet"
+      "category": "",
+      "group": "leaders",
+      "sort": "Dillon"
     },
     {
       "display": "Melissa Egbertson",
-      "sort": "Egbertson, Melissa"
+      "category": "",
+      "group": "leaders",
+      "sort": "Egbertson"
     },
     {
       "display": "Thomas Eveslage",
-      "sort": "Eveslage, Thomas"
+      "category": "",
+      "group": "leaders",
+      "sort": "Eveslage"
+    },
+    {
+      "display": "William Ewing",
+      "category": "",
+      "group": "leaders",
+      "sort": "Ewing"
     },
     {
       "display": "Ronald Filippelli",
-      "sort": "Filippelli, Ronald"
+      "category": "",
+      "group": "leaders",
+      "sort": "Filippelli"
     },
     {
       "display": "Mary France",
-      "sort": "France, Mary"
+      "category": "",
+      "group": "leaders",
+      "sort": "France"
     },
     {
       "display": "David Gray",
-      "sort": "Gray, David"
+      "category": "",
+      "group": "leaders",
+      "sort": "Gray"
     },
     {
       "display": "Steve Coll and Eliza Griswold",
-      "sort": "Griswold, Steve Coll and Eliza"
+      "category": "",
+      "group": "leaders",
+      "sort": "Griswold"
     },
     {
       "display": "Paul Hallacher",
-      "sort": "Hallacher, Paul"
+      "category": "",
+      "group": "leaders",
+      "sort": "Hallacher"
+    },
+    {
+      "display": "Marie Hardin",
+      "category": "",
+      "group": "leaders",
+      "sort": "Hardin"
     },
     {
       "display": "Ruth and Bruce Hollender",
-      "sort": "Hollender, Ruth and Bruce"
+      "category": "",
+      "group": "leaders",
+      "sort": "Hollender"
+    },
+    {
+      "display": "Ray and Donna Holton",
+      "category": "",
+      "group": "leaders",
+      "sort": "Holton"
     },
     {
       "display": "Xia Li and Jun Huangpu",
-      "sort": "Huangpu, Xia Li and Jun"
+      "category": "",
+      "group": "leaders",
+      "sort": "Huangpu"
     },
     {
       "display": "Mary and Howard Hurtig",
-      "sort": "Hurtig, Mary and Howard"
+      "category": "",
+      "group": "leaders",
+      "sort": "Hurtig"
     },
     {
-      "display": "Sharon Hyde",
-      "sort": "Hyde, Sharon"
+      "display": "Sharon and Jeff Hyde",
+      "category": "",
+      "group": "leaders",
+      "sort": "Hyde"
+    },
+    {
+      "display": "Christine Jacobs",
+      "category": "",
+      "group": "leaders",
+      "sort": "Jacobs"
     },
     {
       "display": "Richard and Sally Kalin",
-      "sort": "Kalin, Richard and Sally"
+      "category": "",
+      "group": "leaders",
+      "sort": "Kalin"
+    },
+    {
+      "display": "Roberta Kangilaski",
+      "category": "",
+      "group": "leaders",
+      "sort": "Kangilaski"
     },
     {
       "display": "Laura and Peter Kemper",
-      "sort": "Kemper, Laura and Peter"
+      "category": "",
+      "group": "leaders",
+      "sort": "Kemper"
     },
     {
       "display": "Donna Queeney and Nicholas Kerlin",
-      "sort": "Kerlin, Donna Queeney and Nicholas"
+      "category": "",
+      "group": "leaders",
+      "sort": "Kerlin"
+    },
+    {
+      "display": "Roger and Karen Klotz",
+      "category": "",
+      "group": "leaders",
+      "sort": "Klotz"
+    },
+    {
+      "display": "James and Denise Lanning",
+      "category": "",
+      "group": "leaders",
+      "sort": "Lanning"
     },
     {
       "display": "Julie Linowes",
-      "sort": "Linowes, Julie"
+      "category": "",
+      "group": "leaders",
+      "sort": "Linowes"
     },
     {
       "display": "Joseph Manning",
-      "sort": "Manning, Joseph"
+      "category": "",
+      "group": "leaders",
+      "sort": "Manning"
     },
     {
       "display": "Richard Mansberger",
-      "sort": "Mansberger, Richard"
+      "category": "",
+      "group": "leaders",
+      "sort": "Mansberger"
     },
     {
       "display": "Clifford Pearlman and Lynn Marks",
-      "sort": "Marks, Clifford Pearlman and Lynn"
+      "category": "",
+      "group": "leaders",
+      "sort": "Marks"
     },
     {
       "display": "David Martens",
-      "sort": "Martens, David"
-    },
-    {
-      "display": "Gabriel Weinberg and Lauren McCann",
-      "sort": "McCann, Gabriel Weinberg and Lauren"
+      "category": "",
+      "group": "leaders",
+      "sort": "Martens"
     },
     {
       "display": "Michelle Mertz",
-      "sort": "Mertz, Michelle"
+      "category": "",
+      "group": "leaders",
+      "sort": "Mertz"
     },
     {
       "display": "Edward Mitchell",
-      "sort": "Mitchell, Edward"
+      "category": "",
+      "group": "leaders",
+      "sort": "Mitchell"
     },
     {
       "display": "Gaylon Morris",
-      "sort": "Morris, Gaylon"
+      "category": "",
+      "group": "leaders",
+      "sort": "Morris"
     },
     {
       "display": "Robert Haines and Susan Mount",
-      "sort": "Mount, Robert Haines and Susan"
+      "category": "",
+      "group": "leaders",
+      "sort": "Mount"
     },
     {
       "display": "Ramona and Glenn Nelson",
-      "sort": "Nelson, Ramona and Glenn"
+      "category": "",
+      "group": "leaders",
+      "sort": "Nelson"
     },
     {
       "display": "John Nichols",
-      "sort": "Nichols, John"
+      "category": "",
+      "group": "leaders",
+      "sort": "Nichols"
     },
     {
-      "display": "Karen O'Brien",
-      "sort": "O'Brien, Karen"
+      "display": "Ed Nielsen",
+      "category": "",
+      "group": "leaders",
+      "sort": "Nielsen"
     },
     {
       "display": "Katie O'Toole",
-      "sort": "O'Toole, Katie"
+      "category": "",
+      "group": "leaders",
+      "sort": "O'Toole"
     },
     {
       "display": "David Ottaway",
-      "sort": "Ottaway, David"
+      "category": "",
+      "group": "leaders",
+      "sort": "Ottaway"
     },
     {
       "display": "Sheldon Parker",
-      "sort": "Parker, Sheldon"
+      "category": "",
+      "group": "leaders",
+      "sort": "Parker"
     },
     {
       "display": "Nancy Chiswick and Arthur Patterson",
-      "sort": "Patterson, Nancy Chiswick and Arthur"
+      "category": "",
+      "group": "leaders",
+      "sort": "Patterson"
     },
     {
       "display": "Kathleen Pavelko",
-      "sort": "Pavelko, Kathleen"
+      "category": "",
+      "group": "leaders",
+      "sort": "Pavelko"
     },
     {
-      "display": "Elisa Rapaport",
-      "sort": "Rapaport, Elisa"
+      "display": "Norman Pine",
+      "category": "",
+      "group": "leaders",
+      "sort": "Pine"
     },
     {
-      "display": "Sarah Ricks",
-      "sort": "Ricks, Sarah"
+      "display": "Mary Prunty",
+      "category": "",
+      "group": "leaders",
+      "sort": "Prunty"
     },
     {
       "display": "Guinevere Ritter",
-      "sort": "Ritter, Guinevere"
+      "category": "",
+      "group": "leaders",
+      "sort": "Ritter"
     },
     {
       "display": "Gary Schell",
-      "sort": "Schell, Gary"
+      "category": "",
+      "group": "leaders",
+      "sort": "Schell"
     },
     {
       "display": "Nicholas Selch",
-      "sort": "Selch, Nicholas"
-    },
-    {
-      "display": "Kevin Shivers",
-      "sort": "Shivers, Kevin"
+      "category": "",
+      "group": "leaders",
+      "sort": "Selch"
     },
     {
       "display": "Marguerite Chandler and Richmond Shreve",
-      "sort": "Shreve, Marguerite Chandler and Richmond"
+      "category": "",
+      "group": "leaders",
+      "sort": "Shreve"
     },
     {
       "display": "Joshua Singer",
-      "sort": "Singer, Joshua"
+      "category": "",
+      "group": "leaders",
+      "sort": "Singer"
     },
     {
       "display": "Susan F. and Ron Smith",
-      "sort": "Smith, Susan F. and Ron"
+      "category": "",
+      "group": "leaders",
+      "sort": "Smith"
+    },
+    {
+      "display": "Jane Sprecher",
+      "category": "",
+      "group": "leaders",
+      "sort": "Sprecher"
     },
     {
       "display": "Diane and Brinkley Sprunt",
-      "sort": "Sprunt, Diane and Brinkley"
-    },
-    {
-      "display": "Frederick Steinberg",
-      "sort": "Steinberg, Frederick"
+      "category": "",
+      "group": "leaders",
+      "sort": "Sprunt"
     },
     {
       "display": "James Friedlich and Melissa Stern",
-      "sort": "Stern, James Friedlich and Melissa"
+      "category": "",
+      "group": "leaders",
+      "sort": "Stern"
     },
     {
-      "display": "Ardith Talbott",
-      "sort": "Talbott, Ardith"
+      "display": "Stephanie Szakal",
+      "category": "",
+      "group": "leaders",
+      "sort": "Szakal"
     },
     {
       "display": "Daniel and Linda Trevino",
-      "sort": "Trevino, Daniel and Linda"
-    },
-    {
-      "display": "Elizabeth Useem",
-      "sort": "Useem, Elizabeth"
+      "category": "",
+      "group": "leaders",
+      "sort": "Trevino"
     },
     {
       "display": "Robert and Dianne Vickery",
-      "sort": "Vickery, Robert and Dianne"
+      "category": "",
+      "group": "leaders",
+      "sort": "Vickery"
     },
     {
       "display": "Ronald Vodenichar",
-      "sort": "Vodenichar, Ronald"
+      "category": "",
+      "group": "leaders",
+      "sort": "Vodenichar"
     },
     {
       "display": "David Whiteman",
-      "sort": "Whiteman, David"
+      "category": "",
+      "group": "leaders",
+      "sort": "Whiteman"
     },
     {
       "display": "Richard Williams",
-      "sort": "Williams, Richard"
+      "category": "",
+      "group": "leaders",
+      "sort": "Williams"
     },
     {
       "display": "Cliff Zukin",
-      "sort": "Zukin, Cliff"
+      "category": "",
+      "group": "leaders",
+      "sort": "Zukin"
     }
   ]
 }
