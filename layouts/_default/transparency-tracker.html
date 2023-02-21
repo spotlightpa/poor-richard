@@ -1,0 +1,84 @@
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
+{{ end }}
+
+{{ define "static-head" }}
+  {{ partialCached "header/static-tw.html" . }}
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partialCached "tw/nav.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <div data-sf-campaign="7015G000001Z77xQAC">
+    {{ partial "tw/main-transparency-tracker.html" . }}
+  </div>
+{{ end }}
+
+{{ define "before-footer" }}
+  {{ partialCached "tw/donate-prefill-lg.html" (dict
+    "donateHed" "Support Spotlight PA in State College"
+    "donateCta" "Give Today"
+    "donateCampaign" "7015G0000013pZiQAI"
+    "donateTheme" "centrecounty"
+    "donateAmounts" "10,15,25"
+    )
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
+  </div>
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter-sc.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
+{{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}

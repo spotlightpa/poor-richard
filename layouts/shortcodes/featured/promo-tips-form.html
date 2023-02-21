@@ -1,0 +1,115 @@
+{{ $idURL := partial "helper/new-id" . }}
+{{ $idFrom := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+{{ $idSubject := partial "helper/new-id" . }}
+{{ $idBody := partial "helper/new-id" . }}
+{{ $idAnonymous := partial "helper/new-id" . }}
+{{ $hed := .Get "hed" }}
+{{ $dek := .Get "dek" }}
+<div 
+  class="mx-auto max-w-screen-lg py-6 px-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:px-0 md:py-24"
+>
+  <header class="md:col-span-4 md:col-start-1">
+    <h2 class=" text-2xl md:text-5xl font-black leading-none text-black">{{ $hed }}</h2>
+    <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
+  </header>
+
+  <div class="md:col-span-5 md:col-start-6">
+    <form
+      id="state-college-tips"
+      name="state-college-tips"
+      class=""
+      action="/contact/thanks/"
+      method="post"
+      netlify
+      netlify-honeypot="bot-field"
+      data-ga-form="state-college-tips"
+      data-ga-category="inline:contact"
+    >
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you're human: <input name="bot-field" />
+        </label>
+        <label class="label is-sr-only" for="{{ $idURL }}">Host URL</label>
+        <input
+          id="{{ $idURL }}"
+          class="input"
+          type="text"
+          name="host_page"
+          value="Spotlight PA"
+        />
+      </p>
+      <div class="my-5 flex flex-wrap justify-between align-baseline">
+        <h3 class="flex-[0_0_100%] font-sans font-black">From</h3>
+
+        <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
+          <label class="hidden" for="{{ $idFrom }}">From</label>
+          <input
+            id="{{ $idFrom }}"
+            class="input w-full rounded border border-s-4 p-1 font-sans"
+            type="text"
+            placeholder="William Penn"
+            name="name"
+            required
+          />
+        </p>
+        <p class="flex-[0_0_100%] mt-3 sm:mt-0 relative sm:flex-[0_1_calc(50%-10px)]">
+          <label class="hidden" for="{{ $idEmail }}">Email Address</label>
+          <input
+            id="{{ $idEmail }}"
+            class="input w-full rounded border border-s-4 pl-8 py-1 font-sans"
+            type="email"
+            placeholder="williampenn@example.com"
+            name="email"
+            required
+          />
+          <span class="icon is-left absolute top-[10px] left-2 h-4 w-4">
+            <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+              <use xlink:href="#email-svg"></use>
+            </svg>
+          </span>
+          <span
+            class="icon is-right validator-icon absolute top-[10px] right-2  h-4 w-4"
+          >
+            <svg class="h-4 w-4 fill-green" viewBox="0 0 1 1">
+              <use xlink:href="#check-svg"></use>
+            </svg>
+          </span>
+        </p>
+      </div>
+
+      <div class="field mb-3">
+        <label class="font-sans font-black" for="{{ $idBody }}">Comment</label>
+        <div class="control">
+          <textarea
+            id="{{ $idBody }}"
+            class="input min-h-[128px] w-full rounded border border-s-4 p-1 font-sans"
+            placeholder="Explain how we can help you"
+            name="comment"
+          ></textarea>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <p class="flex flex-row-reverse flex-1">
+          <label class="flex-grow font-sans font-black" for="{{ $idAnonymous }}"
+            >I would like to remain anonymous</label
+          >
+          <input
+            id="{{ $idAnonymous }}"
+            class=" mr-3 h-6 w-6 rounded border border-s-4 p-1 accent-yellow hover:accent-yellow-4"
+            type="checkbox"
+            placeholder="William Penn"
+            name="anonymous"
+            required
+          />
+        </p>
+        <button
+          type="submit"
+          class="button is-large is-danger has-text-weight-semibold float-right rounded bg-yellow px-4 py-2 font-sans text-xl font-bold text-black"
+        >
+          Send Tip
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
