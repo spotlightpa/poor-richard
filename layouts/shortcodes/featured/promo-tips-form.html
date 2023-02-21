@@ -6,11 +6,13 @@
 {{ $idAnonymous := partial "helper/new-id" . }}
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
-<div 
+<div
   class="mx-auto max-w-screen-lg py-6 px-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:px-0 md:py-24"
 >
   <header class="md:col-span-4 md:col-start-1">
-    <h2 class=" text-2xl md:text-5xl font-black leading-none text-black">{{ $hed }}</h2>
+    <h2 class=" text-2xl font-black leading-none text-black md:text-5xl">
+      {{ $hed }}
+    </h2>
     <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
   </header>
 
@@ -53,11 +55,13 @@
             required
           />
         </p>
-        <p class="flex-[0_0_100%] mt-3 sm:mt-0 relative sm:flex-[0_1_calc(50%-10px)]">
+        <p
+          class="relative mt-3 flex-[0_0_100%] sm:mt-0 sm:flex-[0_1_calc(50%-10px)]"
+        >
           <label class="hidden" for="{{ $idEmail }}">Email Address</label>
           <input
             id="{{ $idEmail }}"
-            class="input w-full rounded border border-s-4 pl-8 py-1 font-sans"
+            class="input w-full rounded border border-s-4 py-1 pl-8 font-sans"
             type="email"
             placeholder="williampenn@example.com"
             name="email"
@@ -90,7 +94,7 @@
         </div>
       </div>
       <div class="flex justify-between">
-        <p class="flex flex-row-reverse flex-1">
+        <p class="flex flex-1 flex-row-reverse">
           <label class="flex-grow font-sans font-black" for="{{ $idAnonymous }}"
             >I would like to remain anonymous</label
           >
