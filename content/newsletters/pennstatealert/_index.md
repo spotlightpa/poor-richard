@@ -1,5 +1,5 @@
 +++
-image = "2023/01/01hv-bhas-vcbb-5jq0.jpeg"
+image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
 image-description = "To combat the loss of local news, Spotlight PA launched its first pilot regional bureau based in State College in 2022."
 image-size = "inline"
@@ -12,7 +12,7 @@ layout = "news"
 sort-by = "month"
 
 [cascade]
-image = "2023/01/01hv-bhas-vcbb-5jq0.jpeg"
+image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
 +++
 Sign up for **Penn State Alerts**, and be the first to know about our latest investigative and accountability journalism about Penn State University by by Spotlight PA’s State College regional bureau.
 

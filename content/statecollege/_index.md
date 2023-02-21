@@ -12,6 +12,7 @@ river-promo-desktop-images = []
 modal-exclude = true
 donate-hed = "Vital Journalism for North-Central Pa."
 donate-text = "Support the future of news in State College & beyond"
+cta = "component/inline-cta.html"
 
 [cascade]
 extended-kicker = "State College Region"

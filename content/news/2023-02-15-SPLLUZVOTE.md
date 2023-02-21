@@ -16,7 +16,7 @@ slug = "pa-luzerne-county-2022-election-paper-shortage-turnover"
 suppress-date = false
 title = "Why election problems continue to plague this northeast Pa. county"
 title-tag = "Luzerne County, PA plagued by election issues"
-topics = ["Elections"]
+topics = ["Elections", "Corrections"]
 +++
 
 <i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
@@ -52,9 +52,9 @@ Last week, however, the County Council announced one change it hopes will put co
 
 Luzerne’s high turnover in elections leadership began in 2019 when Marisa Crispell, who <a href="https://www.timesleader.com/news/local/380977/marisa-crispell-back-as-luzerne-county-election-director">had previously worked for the department</a> and had experience running elections elsewhere, <a href="https://www.timesleader.com/news/793889/crispells-conflict-ex-luzerne-county-election-director-must-pay-ethics-violation-fine">resigned amid ethics questions</a>. Crispell did not return a call seeking comment.
 
-Since then, the county has had a succession of four elections directors, plus acting director Gilbert McBride. Since the August 2020 resignation of longtime deputy director Mary-Beth Steininger, the county has also had three deputy directors.
+Since then, the county has had a succession of four elections directors, plus acting director Gilbert McBride. Since the August 2020 resignation of longtime deputy director Mary-Beth Steininger, the county has also had o deputy directors.
 
-One of those deputies, Gilbert McBride’s immediate predecessor, was Eryn Harvey, who resigned after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment.
+One of those deputies was Eryn Harvey, who resigned in February after less than a year to run unsuccessfully for state representative — and now is Luzerne’s new hire for the top elections job. Harvey did not respond to a request for comment. Harvey was succeeded by a deputy, Sarah Knoell, who stayed roughly three months in the job, which was then filled by Gilbert McBride.
 
 An analysis of data provided by the county shows the precipitous loss of experience. During the 2016 through 2019 elections, staff in the department had a median of 17 to 22 years of service. That number fell to roughly one year of median experience in 2020 and in 2021, when the November election was administered without a formal director in place.
 
@@ -159,6 +159,8 @@ District Attorney Sam Sanguedolce told Votebeat and Spotlight PA that the “bul
 Now that the county has hired a new election director, Lombardo would like to bring in an outside consultant, perhaps from the County Commissioners Association of Pennsylvania, to study the department.
 
 “Hopefully,” he said, “that will give us the secret sauce to make changes and have progress there.”
+
+<i>Correction: This article originally stated that Eryn Harvey immediately preceded Beth Gilbert McBride as a deputy elections director. One other deputy was in the job for roughly three months before Gilbert McBride.</i>
 
 <i>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </i><a href="mailto:cwalker@votebeat.org"><i>cwalker@votebeat.org</i></a><i>.</i>
 

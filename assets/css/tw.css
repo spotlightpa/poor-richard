@@ -107,6 +107,14 @@
   @apply list-disc pl-8;
 }
 
+.article-content > :where(ul, ol) :where(ul, ol) {
+  @apply pl-6;
+}
+
+.article-content > :where(ul, ol) ul {
+  @apply list-[circle];
+}
+
 .article-content > ol {
   @apply list-decimal pl-8;
 }

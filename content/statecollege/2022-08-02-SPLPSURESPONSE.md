@@ -97,7 +97,7 @@ Penn State did provide limited information related to Title IX and Clery Act con
 
 Title IX is a federal law barring sexual harassment or discrimination based on gender in all federally funded educational settings. Under<a href="https://policy.psu.edu/policies/ad85#"> Penn State’s Title IX policy</a>, coaches and assistant coaches are mandatory reporters if they learn of a potential violation.
 
-Penn State<a href="https://titleix.psu.edu/helpful-definitions/"> policy</a> defines sexual exploitation to include “non-consensual visual or audio recording of sexual activity; non-consensual display or distribution of photos, images or information of an individual’s sexual activity or intimate body parts,” among other things.
+Penn State<a href="https://web.archive.org/20220802205422/https://titleix.psu.edu/helpful-definitions/"> policy</a> defines sexual exploitation to include “non-consensual visual or audio recording of sexual activity; non-consensual display or distribution of photos, images or information of an individual’s sexual activity or intimate body parts,” among other things.
 
 Penn State said in a statement that “the proper entities within the University were appropriately notified in a timely manner, including the Title IX Office and the Athletics Integrity Office, among others.” However, the university would not answer a question about whether a Title IX complaint was filed.
 
