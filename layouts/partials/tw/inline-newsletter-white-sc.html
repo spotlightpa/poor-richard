@@ -1,0 +1,58 @@
+{{ $idEmail := partial "helper/new-id" . }}
+<form
+  class="rounded bg-white border-s-3 border text-black font-sans shadow max-w-3xl mx-auto px-6 pb-6 my-6 md:my-8 md:px-8 md:pb-8 overflow-hidden
+  "
+  x-data="{ active: false }"
+  @focusin="active = true"
+  data-ga-form="newsletters:talkofthetown"
+  data-ga-category="tout"
+  action="{{ .Page.Param `newsletters-action` }}"
+  method="post"
+  target="_blank"
+>
+  {{ partial "newsletter/talkofthetown-hidden.html" . }}
+  <h6
+    class=" -ml-6 md:-ml-8 bg-eyebrow-bg text-eyebrow leading-relaxed inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2"
+  >
+    Newsletters
+  </h6>
+
+  <p class="mt-6 leading-tight text-center font-bold text-lg mx-auto max-w-xl">
+    Sign up for <b>Talk of the Town</b>, a free weekly newsletter with top news
+    and notes for North-Central PA by Spotlight PA’s State College regional
+    bureau.
+  </p>
+  <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
+    <p class="relative flex-grow">
+      <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+      <input
+        id="{{ $idEmail }}"
+        class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-4 placeholder-opacity-100 outline-none ring-yellow-6 focus:ring-2"
+        type="email"
+        name="EMAIL"
+        placeholder="Email address"
+        required
+      />
+      <span
+        class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
+        aria-hidden="true"
+      >
+        <svg class="h-4 w-4 fill-current">
+          <use xlink:href="#email-svg"></use>
+        </svg>
+      </span>
+    </p>
+    <p class="mt-4 sm:mt-0 sm:ml-1">
+      <button
+        class="w-full rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase tracking-widest text-black outline-none ring-yellow-6 focus:ring-2"
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </p>
+  </div>
+  <p class="mt-4 leading-tight text-center text-sm font-normal mx-auto">
+    <b>Talk of the Town</b> is delivered straight to your inbox every Thursday.
+  </p>
+
+</form>
