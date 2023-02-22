@@ -1,5 +1,6 @@
 {{ $wrapperClass := .wrapperClass  | default "" }}
 {{ $donateHed := .donateHed | default "Join our historic effort to invigorate local news." }}
+{{ $donateDek := .donateDek }}
 {{ $donateCta := .donateCta | default "Contribute" }}
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
 {{ $donateGaForm := .donateGaForm | default "" }}
@@ -68,7 +69,9 @@
         {{ $donateHed }}
 
       </h2>
-
+      {{ with $donateDek }}
+        <p class="font-sans text-lg text-white my-4">{{ . }}</p>
+      {{ end }}
       <div class="mt-6 flex flex-wrap justify-start gap-2">
         {{ define "tw-donate-prefill-button-lg" }}
           {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
