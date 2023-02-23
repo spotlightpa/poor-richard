@@ -40,7 +40,7 @@
   </div>
   <div class="w-full flex-row flex-wrap sm:flex sm:space-y-8">
     <h2
-      class="{{ $hedSize }} {{ $hedColor }} w-full text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight"
+      class="{{ $hedSize }} {{ $hedColor }} w-full text-center text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl"
     >
       <a
         class="group-hover:underline"
@@ -51,7 +51,7 @@
       </a>
     </h2>
 
-    <div class="{{ $thumbClass }} sm:flex-[0_0_50%] my-4 sm:my-0">
+    <div class="{{ $thumbClass }} my-4 sm:my-0 sm:flex-[0_0_50%]">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
     <div class="{{ $storyClass }} sm:ml-6  sm:space-y-1">
