@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-02-16-SPLTHON.md"
+    "content/statecollege/2023-02-23-SPLPSPFOOTBALL.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/statecollege/2022-08-15-SPLOVERTIME15.md"
+  ],
   "topSlots": [
+    "content/statecollege/2023-02-16-SPLTHON.md",
     "content/statecollege/2023-02-14-SPLREGCOM.md",
-    "content/statecollege/2023-02-03-SPLBORO5.md",
-    "content/statecollege/2023-02-02-SPLTTLIONS.md"
+    "content/statecollege/2023-02-03-SPLBORO5.md"
   ],
   "topper": []
 }
