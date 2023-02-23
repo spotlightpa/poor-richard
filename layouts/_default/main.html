@@ -4,122 +4,54 @@
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
 
-<section class="section {{ $marginClass }}">
-  <article class="columns is-centered is-multiline">
-    <div class="column is-three-fifths">
-      <header class="block" data-ga-category="header">
-        <div class="is-clearfix">
-          <div class="is-pulled-right">
-            {{ partial "component/breadcrumbs.html" . }}
-          </div>
-        </div>
-
-        <h1 class="title is-2 is-size-3-touch is-spaced">
-          {{ .Title }}
-        </h1>
-
-        {{ with $params.byline }}
-          <h3 class="is-size-5 has-margin-top-negative-medium">
-            <span class="has-text-weight-semibold">
-              by
-              <span itemtype="http://schema.org/Person" itemprop="author">
-                {{- $params.byline -}}
-              </span>
-            </span>
-            {{ if $params.published }}
-              |
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
-              >
-            {{ end }}
-          </h3>
-        {{ end }}
-
-
-        <div class="my-5">
-          {{ partial "component/social-buttons.html" . }}
-        </div>
-      </header>
-
-      {{ partial "component/hero-image-block.html" . }}
-
-
-      <div class="block" data-ga-category="content">
-        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-        <div
-          x-data
-          x-intersect.once="$report({ target: $el })"
-          data-ga-action="view:content-start"
-        ></div>
-        <div class="content" data-sf-campaign="701f4000000TVuXAAW">
-          {{ .Content }}
-        </div>
-        <div
-          x-data
-          x-intersect.once="$report({ target: $el })"
-          data-ga-action="view:content-finish"
-        ></div>
-      </div>
-
-      {{ with .Param "authors" }}
-        <footer class="block" data-ga-category="inline-footer:author">
-          {{ range $name := . }}
-            {{ $author := partial "helper/get-author" $name }}
-            <div class="level">
-              <div class="level-left">
-                <div class="level-item">
-                  {{ if $author.thumb }}
-                    {{ if $author.link }}
-                      <a href="{{ $author.link }}" class="image is-64x64">
-                        <img
-                          src="{{ $author.thumb }}"
-                          alt="Photo of {{ $author.name }}"
-                          class="is-rounded is-monochrome"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </a>
-                    {{ else }}
-                      <span class="image is-64x64">
-                        <img
-                          src="{{ $author.thumb }}"
-                          alt="Photo of {{ $author.name }}"
-                          class="is-rounded is-monochrome"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </span>
-                    {{ end }}
-                  {{ else }}
-                    <span class="image is-64x64"></span>
-                  {{ end }}
-                </div>
-
-                <div class="level-item">
-                  <div>
-                    <h3 class="subtitle is-3 has-text-weight-semibold">
-                      {{ if and $author.active $author.link }}
-                        <a href="{{ $author.link }}">
-                          {{ $author.name }}
-                        </a>
-                      {{ else }}
-                        <span class="has-text-grey">
-                          {{ $author.name }}
-                        </span>
-                      {{ end }}
-                    </h3>
-                    {{ if and $author.active $author.title }}
-                      <h3 class="subtitle ">
-                        {{ $author.title }}
-                      </h3>
-                    {{ end }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          {{ end }}
-        </footer>
-      {{ end }}
+<header class="bg-black py-14 px-3 text-white">
+  <div
+    class="mx-auto max-w-screen-xl items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
+  >
+    <h1
+      class="uppercase font-serif text-[45px] leading-none col-span-5 col-start-2 row-span-1 row-start-1 font-black"
+    >
+      {{ .Title }}
+    </h1>
+    <div
+      class="font-raleway col-span-5 col-start-7 row-start-1 text-xl font-medium mt-3 md:mt-0"
+    >
+      {{ .Description }}
     </div>
-  </article>
+  </div>
+</header>
+<section class="font-raleway bg-s-0">
+  <div class="mx-auto max-w-screen-lg text-lg font-medium  py-14 px-5 lg:px-0">
+    {{ with .Page.Params.subhed }}
+      <h2 class="font-black text-5xl mb-5 uppercase">{{ . }}</h2>
+    {{ end }}
+    {{ with .Content }}
+      <div class=" article-content max-w-prose mx-auto">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+  {{ with .Page.RenderString (.Param "newsletter") }}
+    <div class="-mx-4 font-sans md:mx-0">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{ range $i, $blocks := .Params.blocks }}
+    {{ $id := urlize .title }}
+    <div
+      id="{{ $id }}"
+      x-data
+      x-intersect.half="$dispatch('intersect:support', $el.id)"
+      data-ga-category="blocks"
+      class=" w-full -mx-4 bg-s-1 md:mx-0"
+    >
+      {{ partial "blocks/block" (dict
+        "Page" $
+        "block" .
+        )
+      }}
+    </div>
+  {{ end }}
+
 </section>

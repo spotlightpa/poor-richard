@@ -5,13 +5,16 @@ description = "Our reporters rely on readers like you to alert us to waste, frau
 modal-exclude = true
 type = "root"
 +++
-Our reporters rely on readers like you to alert us to waste, fraud, abuse, or other problems involving state or local government, businesses, or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people).
+
+
+
+{{<about/contact-form
+  dek="Our reporters rely on readers like you to alert us to waste, fraud, abuse, or other problems involving state or local government, businesses, or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people)."
+>}}
 
 **[Read more about what our reporters cover and how to reach them directly](https://www.spotlightpa.org/about/staff/).**
 
 *PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
-
-{{<about/contact-form>}}
 
 ## Email
 
