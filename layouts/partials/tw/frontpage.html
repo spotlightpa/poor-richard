@@ -48,9 +48,16 @@
       {{ partial $nlBox . }}
     </div>
     <div data-ga-category="donate" x-cloak x-show="isSubscriber">
-      {{ partial "tw/donate-prefill-lg.html" (dict
+      {{ partial "helper/get-donate-prefill.html" (dict
         "wrapperClass" "rounded overflow-hidden"
-        "donateDek" "Support vital investigative and public-service journalism for Pennsylvania.")
+        "donateHed" (.page.Param "donate-hed")
+        "donateDek" (.page.Param "donate-text")
+        "donateCta" (.page.Param "donate-cta")
+        "donateGaCategory" (.page.Param "donate-ga-category")
+        "donateCampaign" (.page.Param "donate-ga-campaign")
+        "donateTheme" (.page.Param "donate-ga-theme")
+        "donateAmounts" (.page.Param "donate-amounts")
+        )
       }}
     </div>
   </div>
