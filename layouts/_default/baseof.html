@@ -23,7 +23,7 @@
     {{ end }}
 
     {{ block "static-head" . }}
-      {{ partialCached "header/static-bulma.html" . }}
+      {{ partialCached "header/static-tw.html" . }}
     {{ end }}
     {{ partial "header/google-analytics-meta.html" . }}
 
@@ -46,16 +46,16 @@
         {{ block "nav" . }}{{ partial "tw/nav.html" . }}{{ end }}
         {{ block "banner" . }}
           {{ if .Param "banner-active" }}
-            {{ partialCached "component/banner.html" . }}
+            {{ partialCached "tw/banner.html" . }}
           {{ end }}
         {{ end }}
         {{ block "topper" . }}
           {{ if .Param "topper-active" }}
-            {{ partialCached "component/topper.html" . }}
+            {{ partialCached "tw/promo-topper.html" . }}
           {{ end }}
         {{ end }}
         {{ block "promo" . }}
-          {{ partialCached "component/promo-header.html" $ }}
+          {{ partialCached "tw/promo-header.html" $ }}
         {{ end }}
       </header>
     {{ end }}
@@ -68,23 +68,25 @@
     </main>
     <footer data-ga-category="footer">
       {{ block "before-footer" . }}
-        {{ partialCached "component/promo-footer.html" . }}
+  {{ partialCached "tw/promo-footer.html" (dict
+    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
+  }}
       {{ end }}
-      {{ block "footer" . }}{{ partial "component/footer.html" . }}{{ end }}
+      {{ block "footer" . }}{{ partial "tw/footer.html" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}
     </footer>
 
     {{ block "search-modal" . }}
-      {{ partial "modal/search.html" . }}
+      {{ partial "tw/modal-search.html" . }}
     {{ end }}
 
     {{ block "modal" . }}
       {{ if .Param "modal-exclude" | not }}
         {{ if .Param "sticky-active" }}
-          {{ partialCached "modal/sticky.html" . }}
+          {{ partialCached "tw/modal-sticky.html" . }}
         {{ end }}
         {{ if .Param "newsletter-active" }}
-          {{ partialCached "modal/newsletter.html" . }}
+          {{ partialCached "tw/modal-newsletter.html" . }}
         {{ end }}
       {{ end }}
     {{ end }}
