@@ -5,7 +5,7 @@
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
 {{ $donateGaForm := .donateGaForm | default "" }}
 {{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
-{{ $donateTheme := .donateTheme | default "leaders" }}
+{{ $donateTheme := .donateTheme }}
 {{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
 
 {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
@@ -19,6 +19,8 @@
 <div class="{{ $wrapperClass }} box-content bg-blue px-4 py-14 md:px-0">
   <div
     data-ga-category=" {{ $donateGaCategory }}"
+    data-donate-campaign="{{ $donateCampaign }}"
+    data-donate-theme="{{ $donateTheme }}"
     class="no-js:hidden mx-auto w-full max-w-content"
     x-data="{
     active: '{{ $activeClass }}',
@@ -49,10 +51,9 @@
     },
     get donateURL() {
       let campaign = this.$el.
-        closest('[data-sf-campaign]')?.dataset.sfCampaign ||
-        '{{ $donateCampaign }}';
+        closest('[data-donate-campaign]')?.dataset.donateCampaign;
       let theme =  this.$el.
-        closest('[data-sf-theme]')?.dataset.sfTheme || '{{ $donateTheme }}';
+        closest('[data-donate-theme]')?.dataset.donateTheme;
       let period = {
         o: 'once',
         m: 'monthly',
