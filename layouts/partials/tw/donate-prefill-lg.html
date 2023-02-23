@@ -5,7 +5,7 @@
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
 {{ $donateGaForm := .donateGaForm | default "" }}
 {{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
-{{ $donateTheme := .donateTheme | default "" }}
+{{ $donateTheme := .donateTheme | default "leaders" }}
 {{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
 
 {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
@@ -50,15 +50,15 @@
     get donateURL() {
       let campaign = this.$el.
         closest('[data-sf-campaign]')?.dataset.sfCampaign ||
-        '701f4000000TVuDAAW';
+        '{{ $donateCampaign }}';
       let theme =  this.$el.
-        closest('[data-sf-theme]')?.dataset.sfTheme || '';
+        closest('[data-sf-theme]')?.dataset.sfTheme || '{{ $donateTheme }}';
       let period = {
         o: 'once',
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign={{ $donateCampaign }}&theme={{ $donateTheme }}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
     }
   }"
   >
