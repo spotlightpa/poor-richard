@@ -6,6 +6,7 @@ modal-exclude = true
 type = "root"
 +++
 
+*PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
 
 
 {{<about/contact-form
@@ -13,8 +14,6 @@ type = "root"
 >}}
 
 **[Read more about what our reporters cover and how to reach them directly](https://www.spotlightpa.org/about/staff/).**
-
-*PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
 
 ## Email
 
