@@ -1,4 +1,7 @@
-{{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
+{{ $dot := . }}
+{{ $idEmail := partial "helper/new-id" $dot | printf "modal-newsletter-%s" }}
+{{ $imagename := .param.filename }}
+{{ $actionColor := .param.actionColor | default "#FFCB05" }}
 
 
 <div
@@ -9,7 +12,7 @@
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
   @modal:newsletters:open.window="isOpen = true"
-  {{ if .Param `modal-exclude` | not }}
+  {{ if .page.Param `modal-exclude` | not }}
     @scroll.window.once.passive="trigger()"
   {{ end }}
   @click="isOpen = false"
@@ -27,12 +30,12 @@
     x-show="isOpen"
     x-transition
   >
-    <div class="w-full border-b-2 border-t-2 bg-yellow font-sans">
+    <div class="w-full border-b-2 border-t-2 bg-[{{ $actionColor }}] font-sans">
       <div
-        class="md:mx-auto items-start -mt-11 mx-5 max-w-screen-xl grid-cols-6 md:grid-cols-12 md:mr-auto md:ml-auto grid gap-x-5"
+        class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
       >
         <button
-          class="flex text-s-4 hover:text-yellow col-start-6 md:col-start-10 md:row-start-1"
+          class="col-start-6 flex text-s-4 hover:text-[{{ $actionColor }}] md:col-start-10 md:row-start-1"
           type="button"
           aria-label="close"
           x-ref="closer"
@@ -42,7 +45,7 @@
           :autofocus="isOpen"
         >
           <svg
-            class="my-auto h-5 w-5 p-3 box-content fill-black"
+            class="my-auto box-content h-5 w-5 fill-black p-3"
             style="margin-right: -2px;"
           >
             <use xlink:href="#close-svg"></use>
@@ -50,9 +53,11 @@
         </button>
 
         <form
-          class=" rounded border-2 bg-white col-start-1 col-span-5 row-start-1 md:col-span-7 md:col-start-3  md:row-start-1 -mr-5 md:-ml-5"
+          class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 rounded border-2 
+          bg-white md:col-span-7
+          md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
           data-ga-form="newsletters:multi"
-          action="{{ .Param `newsletters-action` }}"
+          action="{{ .page.Param `newsletters-action` }}"
           method="post"
           target="_blank"
           tabindex="-1"
@@ -62,11 +67,48 @@
           <svg
             viewBox="0 0 1024 190"
             aria-hidden="true"
-            class="mx-0 h-14 rounded-br bg-black fill-white py-3 px-7"
+            class="relative z-10 mx-0 h-14 rounded-br bg-black fill-white py-3 px-7"
           >
             <use xlink:href="#banner-svg"></use>
           </svg>
-          <header class="mx-5 mt-5">
+          {{ with $imagename }}
+            <div
+              class="-mt-14 flex aspect-video items-stretch justify-center self-stretch overflow-hidden md:col-start-3 md:row-start-1 md:row-end-4 md:mt-0 md:aspect-auto"
+            >
+              {{ $sizes := (slice
+                (dict "width" 256 "height" 256)
+                (dict "width" 512 "height" 512)
+                )
+              }}
+              {{ $srcset := partial "helper/build-srcset" (dict
+                "sizes" $sizes
+                "filename" $imagename
+                "gravity" "ce"
+                )
+              }}
+
+              {{ $imgOpt := dict
+                "filename" $imagename
+                "width" 256
+                "height" 256
+                "gravity" "ce"
+              }}
+              {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+              {{ partial "tag/picture.html" (dict
+                "pictureClass" "w-full flex"
+                "imgClass" "w-full object-cover"
+                "sizeHint" "256px"
+                "eager" false
+                "description" ""
+                "srcset" $srcset
+                "src" $imgSmallSrc
+                "width" 256
+                "height" 256
+                )
+              }}
+            </div>
+          {{ end }}
+          <header class="mx-5 mt-5 md:col-start-1 md:col-end-3">
             <h2 class=" text-2xl font-black lg:text-3xl">
               Investigative Journalism for Pennsylvania
             </h2>
@@ -75,7 +117,9 @@
               from across Pa.
             </p>
           </header>
-          <div class="m-5 flex max-w-md items-stretch justify-center">
+          <div
+            class="m-5 flex max-w-md items-stretch justify-center md:col-start-1 md:col-end-3"
+          >
             <label class="sr-only" for="{{ $idEmail }}">Email address</label>
             <input
               id="{{ $idEmail }}"
@@ -86,16 +130,18 @@
               required
             />
             <button
-              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider text-yellow hover:shadow md:px-8"
+              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider text-[{{ $actionColor }}] hover:shadow md:px-8"
               type="submit"
             >
               Sign Up
             </button>
           </div>
         </form>
-        <p class=" flex leading-tight col-start-1 col-span-6 md:col-span-7 md:col-start-3">
+        <p
+          class=" col-span-6 col-start-1 flex leading-tight md:col-span-7 md:col-start-3"
+        >
           <button
-            class="md:mr-5 flex-initial py-3 pr-5 text-black underline"
+            class="flex-initial py-3 pr-5 text-black underline md:mr-5"
             aria-label="close"
             type="button"
             @click="
@@ -106,7 +152,7 @@
             I’m already a subscriber
           </button>
           <button
-            class=" md:mr-5 flex-initial py-4 pr-5  text-black underline"
+            class=" flex-initial py-4 pr-5 text-black  underline md:mr-5"
             aria-label="close"
             type="button"
             @click="isOpen = false"

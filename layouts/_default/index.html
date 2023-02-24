@@ -61,7 +61,10 @@
       {{ partialCached "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-ribbon.html" . }}
+      {{ partial "tw/modal-ribbon.html" ( dict
+        "actionColor" "#ddeb3f"
+        )
+      }}
     {{ end }}
   {{ end }}
 {{ end }}
