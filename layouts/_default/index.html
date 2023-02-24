@@ -61,7 +61,7 @@
       {{ partialCached "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-newsletter.html" . }}
+      {{ partialCached "tw/modal-ribbon.html" . }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -80,7 +80,7 @@
   {{ $svgs := dict
     "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "bars-svg" "@fontawesome/solid/bars.svg"
-    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "close-svg" "@fontawesome/solid/xmark.svg"
     "email-svg" "@fontawesome/regular/envelope.svg"
     "fb-svg" "@fontawesome/brands/facebook-f.svg"
     "share-svg" "@fontawesome/solid/share.svg"

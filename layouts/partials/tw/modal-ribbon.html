@@ -1,0 +1,120 @@
+{{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
+
+
+<div
+  class="fixed inset-0 z-20"
+  data-ga-category="modal:newsletter:multi"
+  x-data="modal"
+  x-cloak
+  x-show="isOpen"
+  x-trap.noscroll.inert="isOpen"
+  @modal:newsletters:open.window="isOpen = true"
+  {{ if .Param `modal-exclude` | not }}
+    @scroll.window.once.passive="trigger()"
+  {{ end }}
+  @click="isOpen = false"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Newsletter sign up"
+>
+  <div class="absolute inset-0 bg-s-4 opacity-75"></div>
+  <div
+    class="absolute inset-0 backdrop-blur-sm backdrop-filter"
+    x-transition.opacity
+  ></div>
+  <div
+    class="absolute inset-0 flex items-center overflow-y-auto"
+    x-show="isOpen"
+    x-transition
+  >
+    <div class="w-full border-b-2 border-t-2 bg-yellow font-sans">
+      <div
+        class="md:mx-auto items-start -mt-11 mx-5 max-w-screen-xl grid-cols-6 md:grid-cols-12 md:mr-auto md:ml-auto grid gap-x-5"
+      >
+        <button
+          class="flex text-s-4 hover:text-yellow col-start-6 md:col-start-10 md:row-start-1"
+          type="button"
+          aria-label="close"
+          x-ref="closer"
+          data-ga-action="modal:newsletter:dismiss"
+          @keydown.escape="isOpen = false"
+          @click="isOpen = false;"
+          :autofocus="isOpen"
+        >
+          <svg
+            class="my-auto h-5 w-5 p-3 box-content fill-black"
+            style="margin-right: -2px;"
+          >
+            <use xlink:href="#close-svg"></use>
+          </svg>
+        </button>
+
+        <form
+          class=" rounded border-2 bg-white col-start-1 col-span-5 row-start-1 md:col-span-7 md:col-start-3  md:row-start-1 -mr-5 md:-ml-5"
+          data-ga-form="newsletters:multi"
+          action="{{ .Param `newsletters-action` }}"
+          method="post"
+          target="_blank"
+          tabindex="-1"
+          @click.stop
+          @keydown.escape="isOpen = false"
+        >
+          <svg
+            viewBox="0 0 1024 190"
+            aria-hidden="true"
+            class="mx-0 h-14 rounded-br bg-black fill-white py-3 px-7"
+          >
+            <use xlink:href="#banner-svg"></use>
+          </svg>
+          <header class="mx-5 mt-5">
+            <h2 class=" text-2xl font-black lg:text-3xl">
+              Investigative Journalism for Pennsylvania
+            </h2>
+            <p class="mt-2 text-base">
+              Get every Spotlight PA story and the best investigative journalism
+              from across Pa.
+            </p>
+          </header>
+          <div class="m-5 flex max-w-md items-stretch justify-center">
+            <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+            <input
+              id="{{ $idEmail }}"
+              class=" box-border w-7/12 appearance-none rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2"
+              type="email"
+              name="EMAIL"
+              placeholder="Email address"
+              required
+            />
+            <button
+              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider text-yellow hover:shadow md:px-8"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+        <p class=" flex leading-tight col-start-1 col-span-6 md:col-span-7 md:col-start-3">
+          <button
+            class="md:mr-5 flex-initial py-3 pr-5 text-black underline"
+            aria-label="close"
+            type="button"
+            @click="
+              $dispatch('x-form-submit', 'newsletters:seenit:submit');
+              isOpen = false
+            "
+          >
+            I’m already a subscriber
+          </button>
+          <button
+            class=" md:mr-5 flex-initial py-4 pr-5  text-black underline"
+            aria-label="close"
+            type="button"
+            @click="isOpen = false"
+          >
+            No thanks
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
