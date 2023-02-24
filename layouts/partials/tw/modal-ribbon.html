@@ -30,12 +30,15 @@
     x-show="isOpen"
     x-transition
   >
-    <div class="w-full border-b-2 border-t-2 bg-[{{ $actionColor }}] font-sans">
+    <div 
+      style="background-color: {{ $actionColor }};"
+      class="w-full border-b-2 border-t-2 font-sans">
       <div
         class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
       >
         <button
-          class="col-start-6 flex text-s-4 hover:text-[{{ $actionColor }}] md:col-start-10 md:row-start-1"
+          style="color: {{ $actionColor }};"
+          class="col-start-6 flex text-s-4  md:col-start-10 md:row-start-1"
           type="button"
           aria-label="close"
           x-ref="closer"
@@ -130,7 +133,8 @@
               required
             />
             <button
-              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider text-[{{ $actionColor }}] hover:shadow md:px-8"
+              style="color: {{ $actionColor }};"
+              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider hover:shadow md:px-8"
               type="submit"
             >
               Sign Up
