@@ -133,7 +133,7 @@
             x-ref="archives"
           >
             {{ range $i, $page := .river | first 30 }}
-              {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+              {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
               {{ if eq (mod $i 4) 3 | and $desktopImages }}
                 <div
                   class="tile is-parent px-0 pt-0"
