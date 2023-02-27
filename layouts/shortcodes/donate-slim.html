@@ -1,0 +1,9 @@
+{{ $donateHed := .Get "title" | default "Become a Supporter" }}
+{{ $donateCta := .Get "cta" | default "Contribute" }}
+{{ $donateTheme := .Get "theme" }}
+
+{{ partial "tw/donate-slim" (dict
+  "donateHed" $donateHed
+  "donateCta" $donateCta
+  "donateTheme" $donateTheme )
+}}
