@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-02-16-SPLTHON.md"
+    "content/statecollege/2023-02-27-SPLPSUENGLISH.md"
   ],
   "subfeatures": [],
   "topSlots": [
-    "content/statecollege/2023-02-14-SPLREGCOM.md",
-    "content/statecollege/2023-02-03-SPLBORO5.md",
-    "content/statecollege/2023-02-02-SPLTTLIONS.md"
+    "content/statecollege/2023-02-23-SPLPSPFOOTBALL.md",
+    "content/statecollege/2023-02-16-SPLTHON.md",
+    "content/statecollege/2023-02-14-SPLREGCOM.md"
   ],
-  "topper": [
-    "content/newsletters/palocal/2023-02-10-1000.md",
-    "content/news/2023-02-10-SPLSHAPIRO09.md",
-    "content/news/2023-02-09-SPLINQRULING.md"
-  ]
+  "topper": []
 }
