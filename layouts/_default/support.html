@@ -65,6 +65,10 @@
       </div>
     {{ end }}
 
+        {{ with .Page.RenderString (.Param "supplemental") }}
+          {{ . }}
+    {{ end }}
+
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
@@ -81,14 +85,24 @@
         }}
       </div>
     {{ end }}
+        {{ .Page.RenderString (.Param "supporters") }}
+          <div class="-mx-4 font-sans md:mx-0">
+          </div>
 
   </section>
 {{ end }}
 
 {{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
+    {{ with .Page.RenderString (.Param "donate") }}
+      <div class="-mx-4 font-sans md:mx-0 bg-white">
+        {{ . }}
+      </div>
+    {{ else }}
+    {{ partialCached "tw/promo-footer.html" (dict
     "wrapperClass" "bg-white pt-2 pb-14 hidden")
   }}
+    {{ end }}
+
 {{ end }}
 
 {{ define "footer" }}
