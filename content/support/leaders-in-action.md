@@ -4,9 +4,21 @@ title = "Our Champions"
 theme = "leaders"
 url = "/support/leaders-in-action/"
 layout = "support"
+donate = """
+{{<donate-slim
+    title="Become a Leader in Action"
+    cta="Join"
+    theme="leaders"
+>}}
+"""
+supporters = """
+{{<supporters
+  title="Our Current Leaders"
+  dataSrc="leadersInAction"
+>}}
+"""
 [cascade]
 modal-exclude = true
-
 [[blocks]]
 layout = "testimonials"
 title = "Testimonials"
@@ -45,17 +57,6 @@ testimonial = """
   
   *– Betsey Useem, Merion Station, PA, Leader in Action*
 """
-
-[[blocks]]
-    layout = "supporters"
-    title="Our Current Leaders"
-    dataSrc = "leadersInAction"
-
-[[blocks]]
-    layout = "donate"
-    hed="Become a Leader in Action"
-    cta="Join"
-    theme="leaders"
 +++
 
 <svg class="float-right -mt-6 lg:-mr-16 mb-2 ml-1 md:ml-2 md:h-52">

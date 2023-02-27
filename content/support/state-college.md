@@ -9,10 +9,16 @@ authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 newsletter = """
   {{<newsletter/talkofthetown-full-form>}}
 """
-[[blocks]]
-layout = "supplemental"
-wrapperClass = "article-content mx-auto max-w-screen-xl px-5 pt-10 pb-20 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
-copy="""
+donate = """
+{{<donate-slim
+    title="Become a Supporter"
+    cta="Join"
+    theme="centrecounty"
+>}}
+"""
+supplemental = """
+{{<supplemental>}}
+<div class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2">
 You can follow all of their work, and get all the news from the region, by <a href="/newsletters/talkofthetown">signing up for our free weekly newsletter, Talk of the Town.</a>
 
 Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
@@ -32,24 +38,20 @@ In addition, Spotlight PA has partnered with Report for America, a national jour
 ## About Spotlight PA
 
 Recognized as one of the most promising journalism endeavors in the United States, Spotlight PA is dedicated to providing unique, in-depth accountability and investigative journalism about the state government, urgent statewide issues, and the most pressing matters facing our local communities. Our member-supported newsroom distributes its public-service reporting at no cost via <a href="/">spotlightpa.org</a> and more than 90 partner newsrooms from State College to Erie, Philadelphia to Pittsburgh. Over the last three years, Spotlight PA’s reporting has garnered numerous state and national awards, and driven meaningful change and important policy reforms in Harrisburg, strengthening democracy in our state.
+</div>
+{{</supplemental>}}"""
 
+supporters = """
+{{<supporters
+  title="Our Major Donors"
+  dataSrc="stateCollege"
+>}}
 """
 
 [[blocks]]
 title =  "Team"
 layout = "team"
 authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
-
-[[blocks]]
-    layout = "donate"
-    hed="Become a Supporter"
-    cta="Join"
-    theme="centrecounty"
-
-[[blocks]]
-    layout = "supporters"
-    title="Our Major Donors"
-    dataSrc = "stateCollege"
 +++
 
 # A Novel Approach to Reinvigorating Local News

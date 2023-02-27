@@ -4,13 +4,20 @@ title = "Supporters"
 description = " Spotlight PA is is powered by thousands of individuals across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. "
 url = "/support/funders-and-members"
 layout = "support"
-
+donate = """
+{{<donate-slim
+    title="Become a supporter"
+    cta="Join"
+>}}
+"""
+supporters = """
+{{<supporters
+  title="Spotlight PA Members"
+  dataSrc="members"
+>}}
+"""
 [[blocks]]
     layout = "supporters"
     title="Major Donors and Funders"
     dataSrc = "founders"
-[[blocks]]
-    layout = "supporters"
-    title="Spotlight PA Members"
-    dataSrc = "members"
 +++
