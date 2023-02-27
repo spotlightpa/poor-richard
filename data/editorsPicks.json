@@ -1,18 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-02-20-SPLVOTSURV.md"
+    "content/news/2023-02-27-SPLRULPRIMR.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-15-SPLLUZVOTE.md",
-    "content/news/2022-11-29-SPLUNDANA.md"
+    "content/news/2023-01-27-SPLHARRULE.md",
+    "content/news/2023-02-07-SPLHOUSE07.md"
   ],
   "topSlots": [
-    "content/news/2023-02-20-SPLHOUBACK.md",
-    "content/news/2023-02-16-SPLGAMBOR.md",
-    "content/news/2023-02-14-SPLCOURTSIDE.md"
+    "content/news/2023-02-24-SPLROLLBEN.md",
+    "content/news/2023-02-22-SPLTEAMPA.md",
+    "content/statecollege/2023-02-27-SPLPSUENGLISH.md"
   ],
-  "topper": [
-    "content/news/2023-02-10-SPLSHAPIRO09.md",
-    "content/news/2023-02-09-SPLINQRULING.md"
-  ]
+  "topper": []
 }
