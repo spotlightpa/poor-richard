@@ -30,9 +30,10 @@
     x-show="isOpen"
     x-transition
   >
-    <div 
+    <div
       style="background-color: {{ $actionColor }};"
-      class="w-full border-b-2 border-t-2 font-sans">
+      class="w-full border-b-2 border-t-2 font-sans"
+    >
       <div
         class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
       >
@@ -115,7 +116,7 @@
             <h2 class=" text-2xl font-extrabold md:text-3xl lg:text-4xl">
               Investigative Journalism for Pennsylvania
             </h2>
-            <p class="mt-2 text-xl max-w-lg">
+            <p class="mt-2 max-w-lg text-xl">
               Get every Spotlight PA story and the best investigative journalism
               from across Pa.
             </p>
@@ -123,6 +124,7 @@
           <div
             class="m-5 flex max-w-md items-stretch justify-center md:col-start-1 md:col-end-3"
           >
+            {{ partial "newsletter/hidden-input.html" . }}
             <label class="sr-only" for="{{ $idEmail }}">Email address</label>
             <input
               id="{{ $idEmail }}"
