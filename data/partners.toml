@@ -135,6 +135,11 @@ url = "https://www.lebtown.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx77/lebtown.png"
 
 [[partners]]
+name = "Lehigh Valley News"
+url = "https://www.lehighvalleynews.com"
+logo-url = "https://files.data.spotlightpa.org/uploads/01hz/7hb0/lehighvalleynews.webp"
+
+[[partners]]
 name = "Levittown Now.com"
 url = "https://levittownnow.com"
 logo-url = "https://files.data.spotlightpa.org/uploads/01g8/nx78/levittown-now.png"

@@ -1,0 +1,74 @@
+<section class="bg-white px-4 pt-12 md:px-0">
+  <header>
+    <div class="mx-auto w-full max-w-screen-lg">
+      <h1
+        class="mx-auto max-w-3xl text-center font-serif text-3xl font-extrabold leading-none tracking-wide sm:text-4xl md:text-6xl"
+      >
+        {{- .Title -}}
+      </h1>
+    </div>
+    <div class="mx-auto mb-5 w-full max-w-prose">
+      <h2
+        class="mt-4 text-center font-sans text-lg font-semibold leading-tight text-s-6"
+      >
+        {{ .Param "dek" | default .Params.description }}
+      </h2>
+
+      {{ partial "tw/image-hero.html" . }}
+
+    </div>
+  </header>
+
+  <div
+    class="bg-white py-8 md:px-6 md:py-24"
+    id="transparency-tracker-stories"
+    data-ga-category="guides"
+  >
+    {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
+    {{ partial "tw/list-3-col-story-nobyline.html" (dict
+      "hed" "Transparency Stories"
+      "pages" $guide.RegularPages
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read More Transparency Tracker stories"
+      "rows" 2
+      )
+    }}
+
+  </div>
+
+  <div class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
+    {{ .Page.RenderString (.Param "form") }}
+  </div>
+
+  <div class="-mx-4 bg-s-2 md:mx-0" data-ga-category="text">
+    <article
+      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+    >
+      {{ range $i, $blocks := .Params.blocks }}
+        {{ $id := urlize .title }}
+        {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+      {{ end }}
+      {{ .Page.RenderString (.Param "credits") }}
+    </article>
+  </div>
+
+  <section
+    class="bg-white py-8 md:px-6 md:py-24"
+    id="penn-state-stories"
+    data-ga-category="guides"
+  >
+    {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "All Penn State Stories"
+      "pages" $guide.RegularPages
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read More Penn State stories"
+      "rows" 1
+      )
+    }}
+
+  </section>
+  <div class="-mx-4 font-sans md:mx-0">
+    {{ .Page.RenderString (.Param "newsletter") }}
+  </div>
+</section>

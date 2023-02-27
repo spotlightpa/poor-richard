@@ -10,9 +10,9 @@
 {{ $idEmail := partial "helper/new-id" $dot }}
 
 
-<section class=" bg-s-3" data-ga-category="inline">
+<section class=" bg-s-3 md:px-4" data-ga-category="inline">
   <div
-    class="mx-auto max-w-screen-lg py-6 px-8 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:py-24 md:px-0"
+    class="mx-auto max-w-screen-lg py-6 px-4 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:py-24 lg:px-0"
   >
     <div class="md:col-span-5 md:col-start-1">
       <h2
@@ -28,7 +28,7 @@
         action="{{ site.Param `newsletters-action` }}"
         method="post"
         target="_blank"
-        class="p-1 font-sans text-black"
+        class="font-sans text-black"
         data-ga-form="{{ $gaForm }}"
         data-ga-category="{{ $gaCategory }}"
       >
@@ -63,7 +63,7 @@
               required
             />
           </p>
-          <p class="mr-6 flex-[1_0_45%]">
+          <p class="mr-6 flex-[1_0_100%]">
             <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
               Email Address
             </label>
@@ -89,7 +89,7 @@
     {{ $name := .image }}
     {{ $imgOpts := dict
       "filename" $name
-      "link" .RelPermalink
+      "credit" "Georgianna Sutherland / For Spotlight PA"
       "widthRatio" 4
       "heightRatio" 3
       "widths" (slice 128 256 384 512 1280)
@@ -97,7 +97,7 @@
       "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-s-7"
       "sizeHint" "400px"
       "rounded" true
-      "gravity" "ce"
+      "gravity" (.Page.Param "image-gravity")
     }}
     {{ partial "tw/image-block.html" $imgOpts }}
 

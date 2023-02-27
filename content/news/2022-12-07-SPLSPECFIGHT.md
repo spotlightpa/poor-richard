@@ -18,7 +18,7 @@ slug = "pa-2022-election-state-house-specials-joanna-mcclinton"
 suppress-date = false
 title = "Dispute over Pa. House special elections, control likely heading to court"
 title-tag = "Control of Pennsylvania House in dispute"
-topics = ["The Capitol", "Elections", "Corrections"]
+topics = ["The Capitol", "Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

@@ -1,12 +1,10 @@
 {{ with .block }}
-  <div class="{{ .wrapperClass | default `block` }}">
-    <h2 class="md:col-span-6 md:col-start-3 md:row-span-1 md:row-start-1">
-      {{ .title }}
-    </h2>
-    <div
-      class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2"
-    >
-      {{ $.Page.RenderString .copy }}
-    </div>
+  <h2 class="md:col-span-6 md:col-start-3 md:row-span-1 md:row-start-1">
+    {{ .title }}
+  </h2>
+  <div
+    class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2"
+  >
+    {{ $.Page.RenderString .copy }}
   </div>
 {{ end }}

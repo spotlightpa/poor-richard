@@ -1,4 +1,5 @@
 +++
+aliases = ["/anxiety"]
 arc-id = "G5WHREFS4RAZHAHWQR26PGIAUY"
 authors = ["Ed Mahon"]
 blurb = "An unprecedented Spotlight PA analysis of 1 million medical marijuana certifications reveals how a change by policymakers made it possible for virtually anyone to get a card."

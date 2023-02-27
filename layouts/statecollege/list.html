@@ -2,6 +2,10 @@
   <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
 {{ end }}
 
+{{ define "body-attributes" }}
+  data-sf-campaign="7015G0000013pUYQAY" data-sf-theme="centrecounty"
+{{ end }}
+
 {{ define "nav" }}
   {{ partial "tw/nav-sc.html" . }}
 {{ end }}
