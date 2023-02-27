@@ -41,14 +41,11 @@
   </div>
 
   <div class="-mx-4 bg-s-2 md:mx-0" data-ga-category="text">
-    <article
-      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
-    >
-      {{ range $i, $blocks := .Params.blocks }}
+       {{ range $i, $blocks := .Params.blocks }}
         {{ $id := urlize .title }}
         {{ partial "blocks/block" (dict "Page" $ "block" .) }}
       {{ end }}
-      {{ .Page.RenderString (.Param "credits") }}
+      {{ .Page.RenderString (.Param "supplemental") }}
     </article>
   </div>
 
