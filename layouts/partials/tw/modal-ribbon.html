@@ -2,7 +2,7 @@
 {{ $idEmail := partial "helper/new-id" $dot | printf "modal-newsletter-%s" }}
 {{ $imagename := .filename }}
 {{ $actionColor := .actionColor | default "#FFCB05" }}
-
+{{ $newsletterAction := .newsletterAction }}
 
 <div
   class="fixed inset-0 z-20"
@@ -12,7 +12,7 @@
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
   @modal:newsletters:open.window="isOpen = true"
-  {{ if .page.Param `modal-exclude` | not }}
+  {{ if .site.param `modal-exclude` | not }}
     @scroll.window.once.passive="trigger()"
   {{ end }}
   @click="isOpen = false"
@@ -55,13 +55,12 @@
             <use xlink:href="#close-svg"></use>
           </svg>
         </button>
-
         <form
           class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 rounded border-2 
           bg-white md:col-span-7
           md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
           data-ga-form="newsletters:multi"
-          action="{{ .page.Param `newsletters-action` }}"
+          action="{{ $newsletterAction }}"
           method="post"
           target="_blank"
           tabindex="-1"
