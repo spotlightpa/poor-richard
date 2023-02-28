@@ -11,7 +11,7 @@ aliases = ["/jobs/"]
 * [Membership Manager](#membership-manager)
 * [Senior Editor, Investigations](#senior-editor-investigations)
 
-***
+<hr class="mb-5">
 
 ## Membership Manager
 
