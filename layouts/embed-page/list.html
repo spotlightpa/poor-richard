@@ -7,7 +7,7 @@
   {{ $hostJS = slice $hostJS | resources.Concat "/embed.js" }}
   {{ $scriptSrc := $hostJS.Permalink }}
   <section
-    class="section columns is-centered is-multiline"
+    class="article-content max-w-prose mx-auto"
     data-ga-category="embed-list"
   >
     <div class="column is-three-fifths">
@@ -21,7 +21,7 @@
             "scriptSrc" $scriptSrc
           }}
           <div
-            class="box has-background-light"
+            class=" bg-s-2 rounded border border-s-4 p-5 shadow mb-10"
             x-data="embedList({
               url: $el.dataset.url,
               scriptSrc: $el.dataset.scriptSrc
@@ -29,13 +29,13 @@
             data-url="{{ .Permalink }}"
             data-script-src="{{ $scriptSrc }}"
           >
-            <h2 class="title is-spaced">{{ .Title }}</h2>
+            <h2 class=" text-2xl font-black leading-none text-black md:text-5xl mb-3">{{ .Title }}</h2>
             <div class="block">
               {{ if $params }}
-                <h2 class="subtitle is-4">Parameters:</h2>
+                <h2 class="font-sans text-2xl font-light mt-5">Parameters:</h2>
                 {{ range $param := $params }}
-                  <div class="field">
-                    <label for="{{ $param.name }}-field" class="label">
+                  <div class=" mt-5 mb-1">
+                    <label for="{{ $param.name }}-field" class="font-sans font-black">
                       {{ $param.hint }}
                     </label>
                     <div class="control">
@@ -43,7 +43,7 @@
                         id="{{ $param.name }}-field"
                         placeholder="{{ $param.placeholder }}"
                         type="text"
-                        class="input"
+                        class="input w-full rounded border border-s-4 p-1 font-sans"
                         name="{{ $param.name }}"
                         @input.debounce.500ms="updateParams"
                         {{ with $param.pattern }}
@@ -57,27 +57,27 @@
               {{ end }}
 
 
-              <h3 class="subtitle is-4">Code:</h3>
+              <h3 class="font-sans font-black mt-5">Code:</h3>
               <div class="mb-5" description="embed code">
-                <div class="field">
+                <div class=" mt-5 mb-1">
                   <div class="control">
-                    <div
+                    <code
                       rows="bulmaoverride"
                       contenteditable="true"
-                      class="textarea pre-wrap"
+                      class="p-2 bg-white border border-s-4 rounded-sm block text-black mx-0"
                       x-text="embedCode"
-                    ></div>
+                    ></code>
                   </div>
                 </div>
-                <div class="field">
-                  <div class="buttons">
+                <div class=" mt-5 mb-1">
+                  <div class="flex items-center">
                     <button
                       type="button"
                       title="Copy"
-                      class="button is-primary has-text-weight-semibold"
+    class="flex items-center py-2 px-5 m-2 bg-blue rounded shadow text-white font-black tracking-wider  mx-0"
                       @click="copy()"
                     >
-                      <span class="icon">
+    <span class=" w-6 h-6 mr-3 fill-white">
                         {{ $iconCopy := resources.Get "@fontawesome/regular/copy.svg" }}
                         {{ $iconCopy.Content|safeHTML }}
                       </span>
@@ -90,7 +90,7 @@
                       x-transition:enter-start="fade-enter"
                       x-transition:leave="fade-leave-active"
                       x-transition:leave-end="fade-leave-to"
-                      class="tag is-rounded is-success is-light has-text-weight-semibold"
+                      class="font-black text-blue ml-2"
                     >
                       Copied
                     </div>
@@ -99,7 +99,7 @@
               </div>
             </div>
 
-            <h3 class="subtitle is-4">Sample:</h3>
+            <h3 class="font-sans font-black mt-5">Sample:</h3>
             <div x-ref="code">
               {{ partial "component/embed-code.html" $page }}
             </div>
