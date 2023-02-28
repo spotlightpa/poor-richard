@@ -56,7 +56,6 @@
 {{ end }}
 
 {{ define "modal" }}
-  {{ $newsletterAction := $.Site.Param `newsletters-action`}}
   {{ if .Param "modal-exclude" | not }}
     {{ if .Param "sticky-active" }}
       {{ partialCached "tw/modal-sticky.html" . }}
@@ -64,7 +63,6 @@
     {{ if .Param "newsletter-active" }}
       {{ partial "tw/modal-ribbon.html" ( dict
         "actionColor" "#ddeb3f"
-        "newsletterAction" $newsletterAction
         )
       }}
     {{ end }}

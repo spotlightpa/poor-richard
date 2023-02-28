@@ -2,7 +2,8 @@
 {{ $idEmail := partial "helper/new-id" $dot | printf "modal-newsletter-%s" }}
 {{ $imagename := .filename }}
 {{ $actionColor := .actionColor | default "#FFCB05" }}
-{{ $newsletterAction := .newsletterAction }}
+{{ $newsletterAction := site.Param "newsletters-action" }}
+
 
 <div
   class="fixed inset-0 z-20"
