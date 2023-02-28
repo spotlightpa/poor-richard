@@ -2,47 +2,47 @@
 {{ $emailBody := "I just donated to Spotlight PA because Pennsylvania needs more accountability journalism. Join me:\n\n https://wwww.spotlightpa.org/donate/" }}
 
 
-<div class="buttons is-centered" data-ga-category="inline:share-donation">
+<div class="flex flex-wrap items-center justify-center content-center" data-ga-category="inline:share-donation">
   <button
-    class="button is-primary is-medium"
+    class="flex items-center py-2 px-5 m-2 bg-blue-7 rounded shadow text-white font-black tracking-wider"
     data-share="facebook"
     data-share-url="https://www.spotlightpa.com/donate/"
     data-ga-action="share:facebook"
     title="Share your donation on Facebook"
   >
-    <span class="icon has-text-white has-colored-svg">
+    <span class=" w-6 h-6 mr-3 fill-white">
       <svg viewBox="0 0 1 1">
         <use xlink:href="#fb-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold"> Share on Facebook </span>
+    <span> Share on Facebook </span>
   </button>
   <button
-    class="button is-info is-medium"
+    class="flex items-center py-2 px-5 m-2 bg-blue-4 rounded shadow text-white font-black tracking-wider"
     data-share="tweet"
     data-share-text="I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:"
     data-share-url="https://www.spotlightpa.com/donate/"
     data-ga-action="share:twitter"
     title="Tweet about your donation"
   >
-    <span class="icon has-text-white has-colored-svg">
+    <span class=" w-6 h-6 mr-3 fill-white">
       <svg viewBox="0 0 1 1">
         <use xlink:href="#twitter-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold has-text-white"> Share on Twitter </span>
+    <span> Share on Twitter </span>
   </button>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
-    class="button is-success is-medium"
+    class="flex items-center py-2 px-5 m-2 bg-green rounded shadow text-white font-black tracking-wider no-underline"
     title="Share your donation by email"
     data-ga-action="share:email"
   >
-    <span class="icon has-text-white has-colored-svg">
+    <span class=" w-6 h-6 mr-3 fill-white">
       <svg viewBox="0 0 1 1">
         <use xlink:href="#email-svg"></use>
       </svg>
     </span>
-    <span class="has-text-weight-bold"> Share by email </span>
+    <span> Share by email </span>
   </a>
 </div>
