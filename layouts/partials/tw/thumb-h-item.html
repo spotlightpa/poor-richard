@@ -1,12 +1,14 @@
-{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-64` }}
+{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-40 md:w-64` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-lg` }}
+{{ $hedColor := .hedColor | default `text-hed ` }}
+{{ $linkColor := .linkColor | default `text-dek ` }}
 
 
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if .extendedEyebrow }}
-      <span class="inline-flex">
+      <span class="inline-flex pb-4 text-sm md:pr-8 md:pb-2">
         {{ partial "tag/maybe-link.html" (dict
           "link" .rubricLink
           "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
@@ -30,18 +32,15 @@
     {{ end }}
   </div>
   <div
-    class="
-      flex w-full flex-col space-y-2
-      sm:flex-row sm:space-y-0 sm:space-x-6
-    "
+    class="w-full flex-col sm:flex sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-6"
   >
     <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
-    <div class="{{ $storyClass }} space-y-1">
-      <div class="group contents">
+    <div class="{{ $storyClass }} sm:space-y-1">
+      <div class=" flex flex-col">
         <h2
-          class="{{ $hedSize }} font-bold leading-tight tracking-tight text-hed"
+          class="{{ $hedSize }} {{ $hedColor }} font-bold leading-tight tracking-tight"
         >
           <a
             class="group-hover:underline"
@@ -53,11 +52,11 @@
         </h2>
         {{ if .dek }}
           <h3
-            class="font-sans text-base font-semibold leading-tight tracking-normal text-dek"
+            class=" order-1 font-sans text-xl font-light leading-tight tracking-normal text-dek"
           >
             <a
               href="{{ .link }}"
-              class="group-hover:underline"
+              class="{{ .linkColor }} group-hover:underline"
               data-ga-category="dek"
             >
               {{- .dek -}}
@@ -66,18 +65,24 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="font-sans text-base font-semibold leading-tight tracking-normal text-byline"
+            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
-              class="group-hover:underline"
+              class="group-hover:none text-s-7"
               data-ga-category="byline"
             >
               {{- printf "by %s" .byline -}}
             </a>
           </h3>
+        {{ else if .blurb }}
+          <p
+            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
+          >
+            {{ .blurb }}
+          </p>
         {{ end }}
-        {{- if .showDate }}
+        {{ if .showDate }}
           <h3
             class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
             data-ga-category="time"
@@ -88,15 +93,16 @@
               </time>
             </a>
           </h3>
-        {{- end -}}
+        {{ end }}
       </div>
+
       {{ if .subitems }}
-        <ul class="list-inside space-y-3 pt-5">
+        <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
             <li class="list-[square] leading-snug tracking-normal">
               <a
                 href="{{ .link }}"
-                class="text-dek hover:underline"
+                class="{{ $linkColor }} hover:underline"
                 data-ga-category="subfeature"
               >
                 {{ .title }}

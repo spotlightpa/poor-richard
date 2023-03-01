@@ -1,26 +1,49 @@
 {{ define "title" }}
   <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
 {{ end }}
-
+{{ define "body-class" }}
+  text-[16px] bg-beige font-serif leading-normal text-s-9
+{{ end }}
 {{ define "body-attributes" }}
   data-sf-campaign="7015G0000013pUYQAY" data-sf-theme="centrecounty"
 {{ end }}
 
-{{ define "nav" }}
-  {{ partial "tw/nav-sc.html" . }}
+{{ define "static-head" }}
+  {{ partial "header/css-tw-rale.html" . }}
+  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
-{{ define "topper" }}
-  {{ if .Param "topper-active" }}
-    {{ partialCached "component/topper.html" . }}
-  {{ end }}
-  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-    {{ partial "component/topper-articlepromo.html" $topperStories }}
-  {{ end }}
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "nav" . }}
+      {{ partial "tw/nav-sc.html" . }}
+    {{ end }}
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" . }}
+    {{ end }}
+  </header>
 {{ end }}
 
 {{ define "main" }}
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
+  {{ partial "component/inline-cta.html" }}
+  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
+    <div class=" bg-black">
+      <div class="mx-auto max-w-screen-lg py-12">
+        {{ partial "tw/promo-topperarticle.html" $topperStories }}
+      </div>
+    </div>
+  {{ end }}
 
   {{ $topperStories := partial "helper/get-sc-picks" "topper" }}
   {{ $topperStory := first 1 $topperStories }}
@@ -48,9 +71,13 @@
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
 
-  <div data-sf-campaign="7015G0000013pUYQAY" data-sf-theme="centrecounty">
-    <h1 class="is-sr-only">{{ .Title }}</h1>
-    {{ partial "component/frontpage" (dict
+  <section
+    data-sf-campaign="7015G0000013pUYQAY"
+    class="bg-white px-4 pt-12 pb-2 md:pb-6"
+    data-sf-theme="centrecounty"
+  >
+    <h1 class="sr-only">{{ .Title }}</h1>
+    {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
       "pinnedStories" $pinnedStories
       "river" $river
@@ -58,7 +85,38 @@
       "page" .Page
       )
     }}
+  </section>
+{{ end }}
+{{ define "before-footer" }}
+  {{ partialCached "tw/donate-prefill-lg.html" (dict
+    "donateHed" "Support Spotlight PA in State College"
+    "donateCta" "Give Today"
+    "donateCampaign" "7015G0000013pZiQAI"
+    "donateTheme" "centrecounty"
+    "donateAmounts" "10,15,25"
+    )
+  }}
+{{ end }}
+
+{{ define "footer" }}
+  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
+    {{ partial "tw/footer.html" . }}
   </div>
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "sticky-active" }}
+      {{ partialCached "tw/modal-sticky.html" . }}
+    {{ end }}
+    {{ if .Param "newsletter-active" }}
+      {{ partialCached "tw/modal-newsletter.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "search-modal" }}
+  {{ partial "tw/modal-search.html" . }}
 {{ end }}
 
 {{ define "extra-footer" }}

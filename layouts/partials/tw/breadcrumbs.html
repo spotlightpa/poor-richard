@@ -1,0 +1,15 @@
+<nav
+  class="mx-auto max-w-screen-lg py-3 px-5 text-base font-light"
+  data-ga-category="breadcrumbs"
+  aria-label="breadcrumbs"
+>
+  <ul class=" flex justify-end font-sans">
+    {{- range .Ancestors.Reverse }}
+      <li
+        class=" pr-1 before:pr-1 before:content-['\0227B'] first:before:content-['']"
+      >
+        <a class="text-blue" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </li>
+    {{- end }}
+  </ul>
+</nav>

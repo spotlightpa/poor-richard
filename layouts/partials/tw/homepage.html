@@ -1,0 +1,38 @@
+{{ $news := site.GetPage "/news/_index.md" }}
+
+{{ $topperStories := partial "helper/get-picks" "topper" }}
+{{ $topperStory := first 1 $topperStories }}
+
+{{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
+{{ $featuredStory = last 1 $featuredStory }}
+
+{{ $subfeatures := partial "helper/get-picks" "subfeatures" }}
+{{ $subfeatures = $subfeatures | complement $featuredStory }}
+
+{{ $featuredStories := $featuredStory | append $subfeatures }}
+
+{{ $pinnedStories := partial "helper/get-picks" "topSlots" }}
+
+{{ $paPost := site.GetPage "/newsletters/papost" }}
+{{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+{{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
+
+{{ $hasPromo := .Param "promo-active" }}
+{{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
+{{ if eq (len $featuredStory) 0 }}
+  {{ $marginClass = "mt-4" }}
+{{ end }}
+
+{{ $edPicks := partial "helper/get-items" "sidebar" }}
+
+
+<h1 class="sr-only">{{ .Title }}</h1>
+{{ partial "tw/frontpage" (dict
+  "featuredStories" $featuredStories
+  "pinnedStories" $pinnedStories
+  "river" $river
+  "edPicks" $edPicks
+  "marginClass" $marginClass
+  "page" .Page
+  )
+}}

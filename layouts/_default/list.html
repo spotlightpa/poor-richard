@@ -1,3 +1,6 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
 {{ define "body-class" }}
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
@@ -16,10 +19,18 @@
         {{ partialCached "tw/banner.html" . }}
       {{ end }}
     {{ end }}
+
     {{ block "topper" . }}
       {{ if .Param "topper-active" }}
         {{ partialCached "tw/promo-topper.html" . }}
       {{ end }}
+    {{ end }}
+    {{ if $topperStories := partial "helper/get-picks" "topper" }}
+      <div class=" bg-black">
+        <div class="max-w-screen-lg mx-auto py-12">
+          {{ partial "tw/promo-topperarticle.html" $topperStories }}
+        </div>
+      </div>
     {{ end }}
     {{ block "promo" . }}
       {{ partialCached "tw/promo-header.html" . }}

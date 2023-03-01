@@ -1,0 +1,36 @@
+{{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+{{ $name := .Page.Param "image" }}
+{{ $credit := .Page.Param "image-credit" }}
+{{ $description := .Page.Param "image-description" }}
+{{ $imgOpts := dict
+  "filename" $name
+  "credit" $credit
+  "description" $description
+  "link" $params.link
+  "widthRatio" 16
+  "heightRatio" 9
+  "widths" (slice 128 256 384 512 1280)
+  "figClass" "mt-1"
+  "sizeHint" "256px"
+  "gravity" (.Page.Param "image-gravity")
+}}
+{{ $rubricLink := $params.link }}
+{{ $eyebrow := $params.kicker }}
+{{ if $params.rubric }}
+  {{ $rubricLink = $params.rubric.RelPermalink }}
+  {{ $eyebrow = $params.kicker | default $params.rubric.Title }}
+{{ end }}
+{{ partial "tw/thumb-h-item.html" (dict
+  "imgOpts" $imgOpts
+  "thumbClass" "w-full flex-shrink-0 sm:w-64 pr-8"
+  "rubricLink" $rubricLink
+  "eyebrow" $eyebrow
+  "link" $params.link
+  "hed" .LinkTitle
+  "byline" $params.byline
+  "showDate" false
+  "date" $params.published
+  "dateISO" $params.publishedISO
+  "blurb" $params.blurb
+  )
+}}
