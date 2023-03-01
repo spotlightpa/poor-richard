@@ -7,6 +7,7 @@ description = "Andi Perez, a lobbyist for Service Employees International Union 
 image = "external/vhn1k5t4rprwt7nrksrzryf57g.jpeg"
 image-credit = "Gov. Tom Wolf / Flickr"
 image-description = "Pennsylvania state Rep. Mike Zabel, a former prosecutor, is accused of sexual harassment by a lobbyist."
+image-gravity = "no"
 internal-budget = "Lobbyist says she was sexually harassed by Pa. lawmaker Mike Zabel, calls on him to resign"
 internal-id = "SPLZABLACU"
 kicker = "The Capitol"
