@@ -32,7 +32,7 @@ Previous chamber rules had allowed only state House members and employees to fil
 
 The <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=H&billTyp=R&billNbr=0001&pn=0002">rules</a> adopted Wednesday, written by former Speaker Mark Rozzi (D., Berks), prohibit state House members from sexually harassing “any individual” while the member is performing their official duties, on state House property, or at a state House-sponsored meeting or event.
 
-Expanding that provision was key for Andi Perez, <a href="https://www.spotlightpa.org/news/2023/01/pa-house-lawmaker-harassment-allegation-misconduct-rules/">an SEIU lobbyist who recently accused</a> a sitting state House member — later identified as Mike Zabel (D., Delaware) — of harassment. She said she was unable to make an ethics complaint under previous rules.
+Expanding that provision was key for Andi Perez, <a href="https://www.spotlightpa.org/news/2023/01/pa-house-lawmaker-harassment-allegation-misconduct-rules/">an SEIU lobbyist who recently accused</a> a sitting state House member — <a href="https://www.spotlightpa.org/news/2023/03/pa-house-mike-zabel-alleged-sexual-harassment-lobbyist/" target="_blank">later identified as Mike Zabel (D., Delaware)</a> — of harassment. She said she was unable to make an ethics complaint under previous rules.
 
 Zabel has yet to respond to the allegations.
 
