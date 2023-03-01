@@ -122,13 +122,13 @@
             </p>
           </header>
           <div
-            class="m-5 flex max-w-md items-stretch justify-center md:col-start-1 md:col-end-3"
+            class="m-5 flex flex-wrap sm:flex-nowrap max-w-md items-stretch justify-start space-y-4 md:col-start-1 md:col-end-3"
           >
             {{ partial "newsletter/hidden-input.html" . }}
             <label class="sr-only" for="{{ $idEmail }}">Email address</label>
             <input
               id="{{ $idEmail }}"
-              class=" box-border w-7/12 appearance-none rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2"
+              class=" box-border w-full sm:w-7/12 appearance-none rounded sm:rounded-tr-none sm:rounded-br-none rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2"
               type="email"
               name="EMAIL"
               placeholder="Email address"
@@ -136,7 +136,7 @@
             />
             <button
               style="color: {{ $actionColor }};"
-              class=" box-border  w-5/12 rounded-tr rounded-br bg-black py-2 font-black tracking-wider hover:shadow md:px-8"
+              class=" box-border w-5/12 rounded sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr sm:rounded-b bg-black py-2 font-black tracking-wider hover:shadow md:px-8"
               type="submit"
             >
               Sign Up
