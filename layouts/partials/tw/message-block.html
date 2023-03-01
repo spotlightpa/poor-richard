@@ -1,13 +1,21 @@
-<section class="mx-auto max-w-screen-lg text-lg font-medium  py-14 px-5 lg:px-0">
-    <article class="article-content max-w-prose mx-auto rounded shadow overflow-hidden bg-white">
-      <div class=" text-white py-3 px-5" style="background: rgb({{ .color }})">
-        <h3 class="font-extrabold text-2xl">{{ .title }}</h3>
-        {{ with .subhed }}
-          <p>{{ . }}</p>
-        {{ end }}
-      </div>
-      <div class="text-base py-3 px-5 font-light" style="background: rgba({{ .color }},.1);color: rgb({{ .color }}; " data-ga-category="message-body">
-        {{ .content }}
-      </div>
-    </article>
+<section
+  class="mx-auto max-w-screen-lg py-14 px-5  text-lg font-medium lg:px-0"
+>
+  <article
+    class="article-content mx-auto max-w-prose overflow-hidden rounded bg-white shadow"
+  >
+    <div class=" py-3 px-5 text-white" style="background: rgb({{ .color }})">
+      <h3 class="text-2xl font-extrabold">{{ .title }}</h3>
+      {{ with .subhed }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </div>
+    <div
+      class="py-3 px-5 text-base font-light"
+      style="background: rgba({{ .color }},.1);color: rgb({{ .color }}; "
+      data-ga-category="message-body"
+    >
+      {{ .content }}
+    </div>
+  </article>
 </section>

@@ -29,13 +29,20 @@
             data-url="{{ .Permalink }}"
             data-script-src="{{ $scriptSrc }}"
           >
-            <h2 class=" text-2xl font-black leading-none text-black md:text-5xl mb-3">{{ .Title }}</h2>
+            <h2
+              class=" text-2xl font-black leading-none text-black md:text-5xl mb-3"
+            >
+              {{ .Title }}
+            </h2>
             <div class="block">
               {{ if $params }}
                 <h2 class="font-sans text-2xl font-light mt-5">Parameters:</h2>
                 {{ range $param := $params }}
                   <div class=" mt-5 mb-1">
-                    <label for="{{ $param.name }}-field" class="font-sans font-black">
+                    <label
+                      for="{{ $param.name }}-field"
+                      class="font-sans font-black"
+                    >
                       {{ $param.hint }}
                     </label>
                     <div class="control">
@@ -74,10 +81,10 @@
                     <button
                       type="button"
                       title="Copy"
-    class="flex items-center py-2 px-5 m-2 bg-blue rounded shadow text-white font-black tracking-wider  mx-0"
+                      class="flex items-center py-2 px-5 m-2 bg-blue rounded shadow text-white font-black tracking-wider  mx-0"
                       @click="copy()"
                     >
-    <span class=" w-6 h-6 mr-3 fill-white">
+                      <span class=" w-6 h-6 mr-3 fill-white">
                         {{ $iconCopy := resources.Get "@fontawesome/regular/copy.svg" }}
                         {{ $iconCopy.Content|safeHTML }}
                       </span>
