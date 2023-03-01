@@ -9,6 +9,7 @@ linktitle = "The Investigator"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
+occurence = "Every Thursday"
 
 [cascade]
 image = "2021/06/01gc-4k5c-twja-965v.jpeg"

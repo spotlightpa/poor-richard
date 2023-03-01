@@ -10,6 +10,7 @@ linktitle = "Penn State Alerts"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
+occurence = "When news breaks"
 
 [cascade]
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
