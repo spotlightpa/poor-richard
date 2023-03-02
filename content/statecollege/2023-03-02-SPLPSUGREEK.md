@@ -35,9 +35,11 @@ According to the document, Penn State plans to end the regular monitoring of cha
 
 These changes, which the university has not publicly acknowledged, were discussed on Nov. 16, 2022, during a private gathering of university leadership, Greek life leaders, and members of the Committee on Academic Affairs, Research and Student Life, which is part of the Board of Trustees.
 
-Spotlight PA asked the university whether these changes — which the school framed in the November memo as “next steps” — had been implemented. (<a href="https://www.documentcloud.org/documents/23693508-strat-comm-exchange-greek-life-feb-2023">Read the full exchange here</a>.)
+Prior to publication of this story, Spotlight PA asked the university whether these changes — which the school framed in the November memo as “next steps” — had been implemented. 
 
 In a statement, the university said it “remains committed to the safety of all Penn State students and any changes in Greek life at Penn State would only be put into place after carefully considering how they would impact the well-being of our students.”
+
+After publication, Penn State confirmed the proposed changes to Greek life oversight have not occurred. The university described Spotlight PA’s story as “speculative.” (<a href="https://www.documentcloud.org/documents/23694806-updated-strat-comm-exchange">Read the full exchange here</a>.)
 
 The memo also states the policies put in place following Piazza’s death were “never intended to be permanent and were clearly presented at the time as necessary, yet temporary, actions.” The university declined to provide Spotlight PA with examples of statements that showed the rules were not meant to be lasting.
 
@@ -76,5 +78,7 @@ The following year, Penn State created the Timothy J. Piazza Center for Fraterni
 Penn State Greek Life has faced <a href="https://www.collegian.psu.edu/news/crime_courts/article_f746ca20-b3fa-11e5-a328-3fff69349c8a.html">multiple scandals</a> and <a href="https://www.pennlive.com/midstate/2012/05/hazing_on_campus_a_national_ep.html?_sp=ca1e5460-3931-4198-b903-a478eb380933.1677178964023">allegations of misconduct</a>, including the <a href="https://www.centredaily.com/news/special-reports/article42800994.html">death of a freshman</a> in 2009. In 2015, the university <a href="https://www.washingtonpost.com/news/morning-mix/wp/2015/05/27/penn-state-suspends-kappa-delta-rho-fraternity-for-3-years-following-findings-of-hazing-and-sexual-harassment/">suspended a fraternity</a> for violations that included members <a href="https://www.collegian.psu.edu/features/examining-greek-life-at-penn-state-after-the-kappa-delta-rho-case/article_44631cb2-ec10-11e5-ad6e-33594fb7bb41.html">posting pictures of nude women</a>, who were possibly unconscious, on a private Facebook page.
 
 The university, in creating the new compliance model in 2017, <a href="https://www.psu.edu/news/administration/story/beta-theta-pi-permanently-banned-new-restrictions-put-greek-letter-groups/">cited research</a> that Greek life members were more likely to be heavy drinkers than the general student population and fraternity members were more likely to commit sexual assault then their peers in the general student population.
+
+<i>This story has been updated with additional comment from Penn State.</i>
 
 <i><b>SUPPORT THIS JOURNALISM</b></i><i> and help us reinvigorate local news in north-central Pennsylvania at </i><a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013pUYQAY&utm_source=www.spotlightpa.org&utm_medium=statecollege:section&utm_campaign=statecollege:main"><i>spotlightpa.org/statecollege</i></a><i>. Spotlight PA is funded by </i><a href="https://www.spotlightpa.org/support"><i>foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability and public-service journalism that gets results.</i>
