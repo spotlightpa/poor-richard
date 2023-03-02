@@ -12,6 +12,7 @@ occurence = "Every Thursday"
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
+nav = "statecollege"
 +++
 Sign up for **Talk of the Town**, a free weekly newsletter every Thursday with top news and notes for North-Central PA by Spotlight PA’s State College regional bureau.
 

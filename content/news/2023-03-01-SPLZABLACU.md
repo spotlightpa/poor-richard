@@ -22,7 +22,7 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — A lobbyist for one of Pennsylvania’s most influential unions says state Rep. Mike Zabel (D., Delaware) sexually harassed her, and is calling for him to resign.
+HARRISBURG — A lobbyist for one of Pennsylvania’s most influential unions says State Rep. Mike Zabel (D., Delaware) sexually harassed her and is calling for him to resign.
 
 Andi Perez, a lobbyist for Service Employees International Union 32BJ, publicly shared her story for the first time in January at a meeting organized by then-state House Speaker Mark Rozzi (D., Berks).
 
@@ -37,11 +37,13 @@ Perez said in an interview with Spotlight PA that Zabel harassed her in Septembe
 
 Spotlight PA also viewed a text message Zabel sent to Perez the day after she said the harassment occurred, in which he confirmed the two met and apologized for his “bad manners at times.” The news organization matched the number to one used by Zabel.
 
-Zabel, an attorney and former prosecutor who was first elected to a suburban Philadelphia district in 2018, did not respond to requests for comment. His name was first publicly <a href="https://broadandliberty.com/2023/03/01/source-delaware-county-rep-mike-zabel-is-alleged-groper-of-lobbyist-also-sexually-propositioned-fellow-state-house-member/">reported</a> Wednesday by the news and editorial website Broad &amp; Liberty.
+Zabel, an attorney and former prosecutor who was first elected in 2018 to a suburban Philadelphia district that includes Drexel Hill and Upper Darby, did not respond to requests for comment. His name was first publicly <a href="https://broadandliberty.com/2023/03/01/source-delaware-county-rep-mike-zabel-is-alleged-groper-of-lobbyist-also-sexually-propositioned-fellow-state-house-member/">reported</a> Wednesday by the news and editorial website Broad &amp; Liberty.
 
-A spokesperson for the state House Democratic caucus did not immediately respond to a request for comment.
+In a statement, state House Democratic leaders said “we are concerned by the allegations we learned today, and take such accusations seriously.”
 
-Perez told Spotlight PA that she reported the incident to state House Democratic leadership the day after it occurred, but declined to say how they responded.
+“The rules passed today include a five-year lookback for accusations to ensure all those who under the previous leadership had no recourse have a pathway to having their voices heard,” the statement continued. “Everyone deserves to be safe at work and our caucus commends and respects the courage of those who come forward.”
+
+Perez told Spotlight PA that she reported the incident to state House Democratic leadership the day after it occurred, but she declined to say how they responded.
 
 She subsequently moved to file a complaint with the state House Ethics Committee, a bipartisan panel that handles internal investigations of lawmakers. But she said she was told she could not because she wasn’t an employee of the chamber.
 
@@ -49,7 +51,7 @@ Perez said she told her story to urge lawmakers to expand who can bring an ethic
 
 “If I had named Zabel at the time that I went and testified, then the story would become about him,” Perez told Spotlight PA. “And the goal was to get real change in Harrisburg, to allow people like me to file ethics complaints.”
 
-Under the rules adopted Wednesday, harassment against a person based on race, religion, sexual orientation, disability, and more is banned. The new rules also prohibit sexual harassment by a lawmaker against “any individual” who they encounter while “performing services or duties of the House,” “in or on House designated offices, property or facilities,” or “at a House-sponsored meeting or event.”
+Under the rules adopted Wednesday, harassment against a person based on race, religion, sexual orientation, disability, and more is banned. The new rules also prohibit sexual harassment by a lawmaker against “any individual” whom they encounter while “performing services or duties of the House,” “in or on House designated offices, property or facilities,” or “at a House-sponsored meeting or event.”
 
 Sexual harassment is defined in the rules as “unwelcome sexual advances, requests for sexual favors or other verbal or physical conduct of a sexual nature.”
 
@@ -59,15 +61,15 @@ In a statement after the rules were approved, Perez thanked “everyone who made
 
 Perez told Spotlight PA that she is undecided on whether to formally file an ethics complaint against Zabel.
 
-“It’s been a lot for me. It’s been four years of trying to fix a problem. And so I’m taking this step by step and I’m reserving the right to say, ‘I don’t know,’” Perez said.
+“It’s been a lot for me,” she said. “It’s been four years of trying to fix a problem. And so I’m taking this step by step and I’m reserving the right to say, ‘I don’t know.’”
 
 Since Perez first told her story in January, some legislative Republicans have called on Democratic leadership to investigate the allegation.
 
-The topic came up repeatedly last week as state House lawmakers debated relief efforts for childhood sexual abuse survivors during a special session. State Rep. Martina White (R., Philadelphia) also sent Rozzi and then-House Majority Leader Joanna McClinton (D., Philadelphia) — <a href="https://www.spotlightpa.org/news/2023/02/pa-house-speaker-mark-rozzi-resigns/">who is now speaker</a> — a letter urging an investigation.
+The topic came up repeatedly last week as state House lawmakers debated relief efforts for childhood sexual-abuse survivors during a special session. State Rep. Martina White (R., Philadelphia) also sent Rozzi and then-House Majority Leader Joanna McClinton (D., Philadelphia) — <a href="https://www.spotlightpa.org/news/2023/02/pa-house-speaker-mark-rozzi-resigns/">who is now speaker</a> — a letter urging an investigation.
 
 “We must ensure that this Capitol Building is safe for anyone to advocate for their issues and exercise their right to free speech without fear of immoral legislators abusing their power,” White said at a news conference on the same topic.
 
-Last session, state Rep. Kate Klunk (R., York) introduced a bill that would expand who can report harassment. The then Republican-controlled state House Rules Committee never considered the legislation.
+Last session, State Rep. Kate Klunk (R., York) introduced a bill that would expand who can report harassment. The then Republican-controlled state House Rules Committee never considered the legislation.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
@@ -76,9 +78,9 @@ During a floor debate on the rules Wednesday, White asked why a sitting member o
 
 State House Minority Leader Bryan Cutler (R., Lancaster) later asked McClinton if she was aware of the publication of Broad &amp; Liberty’s article naming the lawmaker.
 
-McClinton then moved to hold a vote on the rules. They <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=10">passed</a> 102-100 with no Republican support.
+McClinton then moved to hold a vote on the rules. They <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=10">passed</a>, 102-100, with no Republican support.
 
-Cutler said after the vote that Republicans are concerned the new sexual harassment rule isn't as expansive as Democrats say it is.
+Cutler said after the vote that Republicans are concerned the new sexual-harassment rule isn’t as expansive as Democrats say it is.
 
 “I understand that they believe it covers the situation,” Cutler said, referring to the allegation against Zabel. “I’m afraid we may not know until a complaint is potentially filed.”
 
