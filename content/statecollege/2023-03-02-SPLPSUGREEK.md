@@ -31,7 +31,7 @@ In an internal memo obtained by Spotlight PA, the university declares it is “t
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
 
-According to the document, Penn State plans to end the regular monitoring of chapter houses, allow first-semester recruitment, and help Greek organizations that want to reestablish themselves at the university. The memo says that university officials who enforce the 2017 expanding rules will focus on coaching Greek leaders. The university also wants to engage Greek life and student media to discuss “promoting the strengths and benefits of Greek life.”
+According to the document, Penn State plans to end the regular monitoring of chapter houses, allow first-semester recruitment, and help Greek organizations that want to reestablish themselves at the university. The memo says that university officials who enforce the 2017 rules will focus on coaching Greek leaders. The university also wants to engage Greek life and student media to discuss “promoting the strengths and benefits of Greek life.”
 
 These changes, which the university has not publicly acknowledged, were discussed on Nov. 16, 2022, during a private gathering of university leadership, Greek life leaders, and members of the Committee on Academic Affairs, Research and Student Life, which is part of the Board of Trustees.
 
