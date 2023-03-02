@@ -58,7 +58,7 @@ The new rules also curb committee chairs’ ability to unilaterally sink legisla
 
 There has long been a mechanism in chamber rules known as a discharge resolution that in theory allows members to sign a petition asking a bill to be released from committee against the will of the chair. The legislation then would be subject to approval from the full state House. But the old mechanism was easy to circumvent because chairs could simply reassign the unwanted bill to a different committee and keep the discharge resolution from a floor vote indefinitely.
 
-The new rules make two key changes to discharge resolutions. First, they increase the number of members required to sign the resolution from 25 to 50, and add a new requirement that the group be bipartisan, with 25 Republicans and 25 Democrats. Republicans complained this setup lessens the minority’s ability to use discharge petitions.
+The new rules make two key changes to discharge resolutions. First, they increase the number of members required to sign a discharge resolution from 25 to 50, and add a new requirement that the group be bipartisan, with 25 Republicans and 25 Democrats. Republicans complained this setup lessens the minority’s ability to use discharge petitions.
 
 The changes also get rid of procedural waiting periods that previously allowed bills subject to discharge petitions to be shuffled away into other committees; Democrats say they are now much likelier to get a vote by the full state House.
 
@@ -93,7 +93,7 @@ He thinks any complaints from Republicans are disingenuous.
 
 “I’m so sick of hearing [Republicans] saying that, ‘Oh, well, now that we’re in the minority, we need good-government rules, and we’re going to do things this way,” Rozzi said. “Well, where was that the last 12 years when you’ve been shoving down all kinds of horrible rules down the Democrats’ mouths?”
 
-<i>This story has been corrected to clarify that signatures from 25 members were required in order to file a discharge petition under the previous House rules.</i>
+<i>This story has been corrected to clarify that signatures from 25 members were required in order to file a discharge petition under the previous House rules. </i>
 
 <i>Spotlight PA’s Stephen Caruso contributed reporting.</i>
 
