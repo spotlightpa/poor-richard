@@ -13,6 +13,7 @@ sort-by = "month"
 
 [cascade]
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
+nav = "statecollege"
 +++
 Sign up for **Penn State Alerts**, and be the first to know about our latest investigative and accountability journalism about Penn State University by by Spotlight PA’s State College regional bureau.
 
