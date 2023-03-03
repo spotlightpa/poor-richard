@@ -213,7 +213,7 @@ Top donors who gave at least $25,000 at one time:
 
 - Steamfitters Local Union 420 COPE Fund ($100,000)
 
-White, a business owner from Delaware County, has received his top donations from a PAC controlled by Bob Asher, a candy magnate and <a href="https://www.inquirer.com/philly/news/local/20101107_Asher_a_hidden_force_behind_GOP_success_in_Pa__1.html">powerful</a> figure in Republican politics from Montgomery County. Asher was a major <a href="https://www.ozy.com/news-and-politics/the-candy-magnate-fueling-trumps-arms-race-in-pennsylvania/372473/">backer of Donald Trump</a>.
+White, a business owner from Delaware County, has received his top donations from a PAC controlled by Bob Asher, a candy magnate and <a href="https://www.inquirer.com/philly/news/local/20101107_Asher_a_hidden_force_behind_GOP_success_in_Pa__1.html">powerful</a> figure in Republican politics from Montgomery County. Asher was a major <a href="https://web.archive.org/20220414092356/https://www.ozy.com/news-and-politics/the-candy-magnate-fueling-trumps-arms-race-in-pennsylvania/372473/">backer of Donald Trump</a>.
 
 White on his campaign website says he worked for “decades as a union pipefitter,” and he has also seen large donations from PACs associated with that industry.
 
