@@ -61,14 +61,10 @@
       {{ partialCached "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-<<<<<<< HEAD
       {{ partial "tw/modal-ribbon.html" ( dict
         "actionColor" "#ddeb3f"
         )
       }}
-=======
-      {{ partialCached "tw/modal-newsletter.html" . }}
->>>>>>> master
     {{ end }}
   {{ end }}
 {{ end }}
