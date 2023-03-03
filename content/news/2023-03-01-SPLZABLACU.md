@@ -22,6 +22,8 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, March 3: </b></i><a href="https://www.spotlightpa.org/news/2023/03/pa-mike-zabel-sexual-harassment-allegations-wont-resign-letter/" target="_blank"><i><b>Mike Zabel says he won’t resign, will seek treatment for “illness”</b></i></a>
+
 HARRISBURG — A lobbyist for one of Pennsylvania’s most influential unions says State Rep. Mike Zabel (D., Delaware) sexually harassed her and is calling for him to resign.
 
 Andi Perez, a lobbyist for Service Employees International Union 32BJ, publicly shared her story for the first time in January at a meeting organized by then-state House Speaker Mark Rozzi (D., Berks).
