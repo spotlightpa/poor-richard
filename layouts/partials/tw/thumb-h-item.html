@@ -69,7 +69,7 @@
           >
             <a
               href="{{ .link }}"
-              class="group-hover:underline text-s-7"
+              class="text-s-7 group-hover:underline"
               data-ga-category="byline"
             >
               {{- printf "by %s" .byline -}}
@@ -79,14 +79,13 @@
           <p
             class="my-3 font-sans text-base font-normal leading-tight tracking-normal text-byline"
           >
-                      <a
+            <a
               href="{{ .link }}"
-              class="group-hover:underline text-s-7"
+              class="text-s-7 group-hover:underline"
               data-ga-category="byline"
             >
-            {{ .blurb }}
+              {{ .blurb }}
             </a>
-
           </p>
         {{ end }}
         {{ if .showDate }}
