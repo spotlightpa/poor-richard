@@ -38,7 +38,7 @@
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
     <div class="{{ $storyClass }} sm:space-y-1">
-      <div class=" flex flex-col">
+      <div class="group flex flex-col">
         <h2
           class="{{ $hedSize }} {{ $hedColor }} font-bold leading-tight tracking-tight"
         >
@@ -56,7 +56,7 @@
           >
             <a
               href="{{ .link }}"
-              class="{{ .linkColor }} group-hover:underline"
+              class="{{ .linkColor }}"
               data-ga-category="dek"
             >
               {{- .dek -}}
@@ -65,11 +65,11 @@
         {{ end }}
         {{ if .byline }}
           <h3
-            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
+            class="my-3 font-sans text-base font-normal leading-tight tracking-normal text-byline"
           >
             <a
               href="{{ .link }}"
-              class="group-hover:none text-s-7"
+              class="group-hover:underline text-s-7"
               data-ga-category="byline"
             >
               {{- printf "by %s" .byline -}}
@@ -77,9 +77,16 @@
           </h3>
         {{ else if .blurb }}
           <p
-            class="my-3 font-sans text-base font-light leading-tight tracking-normal text-byline"
+            class="my-3 font-sans text-base font-normal leading-tight tracking-normal text-byline"
           >
+                      <a
+              href="{{ .link }}"
+              class="group-hover:underline text-s-7"
+              data-ga-category="byline"
+            >
             {{ .blurb }}
+            </a>
+
           </p>
         {{ end }}
         {{ if .showDate }}
