@@ -105,7 +105,7 @@ She said in a statement that she will “work to strengthen and enhance our cons
 
 Siger is currently the chief of staff and senior advisor to the president of Carnegie Mellon University and has worked extensively in politics.
 
-Siger <a href="https://www.cmu.edu/leadership/senior-admin/vp-bios/siger-bio.html">served in</a> the administration of former Democratic Virginia Gov. Tim Kaine, and he worked under former President Barack Obama as chief of staff at the Office of Science and Technology Policy and deputy chief of staff at the Department of Commerce. Siger was also a member of the”innovation policy committee” of President Joe Biden’s 2020 campaign and volunteered on his presidential transition.
+Siger <a href="https://web.archive.org/20230112232247/https://www.cmu.edu/leadership/senior-admin/vp-bios/siger-bio.html">served in</a> the administration of former Democratic Virginia Gov. Tim Kaine, and he worked under former President Barack Obama as chief of staff at the Office of Science and Technology Policy and deputy chief of staff at the Department of Commerce. Siger was also a member of the”innovation policy committee” of President Joe Biden’s 2020 campaign and volunteered on his presidential transition.
 
 At CMU, Siger advises the president on community engagement and economic development. He previously <a href="https://www.cmu.edu/leadership/senior-admin/vp-bios/siger-bio.html">worked</a> as the head of university engagement at Piazza Technologies, a social learning platform for students and faculty.
 
