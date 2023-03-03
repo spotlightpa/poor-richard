@@ -1,5 +1,5 @@
 +++
-title = "List articles by authors"
+title = "Authors"
 linktitle = "Authors"
 sort-by = "title"
 paginate = 100
@@ -8,3 +8,4 @@ paginate = 100
 sort-by = ""
 paginate = 60
 +++
+## List articles by authors

@@ -1,60 +1,82 @@
 {{ define "extra-main" }}
   {{ $pg := partial "helper/paginator" . }}
   {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
-  <section class="section columns" data-ga-category="authors">
-    <div class="column is-three-fifths is-offset-one-fifth">
-      {{ range $pg.Pages.ByTitle }}
-        {{ $author := partial "helper/get-author" .Title }}
-        <div class="level">
-          <div class="level-left">
-            <div class="level-item">
-              {{ if $author.thumb }}
-                <a href="{{ $author.link }}" class="image is-64x64">
-                  <img
-                    src="{{ $author.thumb }}"
-                    alt="Photo of {{ $author.name }}"
-                    class="is-rounded is-monochrome"
-                  />
-                </a>
-              {{ else }}
-                <span class="image is-64x64"></span>
-              {{ end }}
-            </div>
+  <section class="bg-s-2 py-10 px-2">
+    <div class="mx-auto w-full max-w-prose text-lg">
+      <ul
+        class="mx-auto my-14 mt-10 w-full"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $pg.Pages.ByTitle }}
+          {{ $author := partial "helper/get-author" .Title }}
+          <li
+            id="{{ $author.slug }}"
+            class="flex items-center justify-start space-x-4 mb-4"
+          >
+            {{ if $author.headshot }}
+              {{ $sizes := (slice
+                (dict "width" 64 "height" 64)
+                (dict "width" 64 "height" 64)
+                )
+              }}
+              {{ $srcset := partial "helper/build-srcset" (dict
+                "sizes" $sizes
+                "filename" $author.headshot
+                "gravity" $author.gravity
+                )
+              }}
 
-            <div class="level-item">
-              <div>
-                <h3 class="subtitle is-3 has-text-weight-semibold">
-                  {{ if $author.link }}
-                    <a href="{{ $author.link }}">
-                      {{ $author.name }}
-                    </a>
-                  {{ else }}
-                    <span class="has-text-grey">
-                      {{ $author.name }}
-                    </span>
-                  {{ end }}
-                </h3>
-                {{ if $author.active }}
-                  <h3 class="subtitle ">
-                    {{ $author.title }}
-                  </h3>
-                {{ end }}
+              {{ $imgOpt := dict
+                "filename" $author.headshot
+                "width" 64
+                "height" 64
+                "gravity" $author.gravity
+              }}
+              {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+              <div class="col-span-1">
+                {{ partial "tag/picture-maybe-link.html" (dict
+                  "link" $author.link
+                  "wrapperClass" "m-auto flex aspect-square  w-16 h-16"
+                  "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+                  "imgClass" "w-full h-full object-cover"
+                  "sizeHint" "64px"
+                  "eager" false
+                  "description" (printf "Photo of %s" $author.name)
+                  "srcset" $srcset
+                  "src" $imgSmallSrc
+                  "width" 64
+                  "height" 64
+                  )
+                }}
               </div>
-            </div>
-          </div>
-        </div>
-      {{ end }}
+            {{ else }}
+              <span class="col-span-1 flex aspect-square max-h-full w-16 h-16">
+              </span>
+            {{ end }}
 
-      {{ if gt $pg.TotalPages 0 }}
-        <div class="level">
-          {{ if $pg.HasPrev }}
-            <a class="level-item" href="{{ $pg.Prev.URL }}">←</a>
-          {{ end }}
-          {{ if $pg.HasNext }}
-            <a class="level-item" href="{{ $pg.Next.URL }}">→</a>
-          {{ end }}
-        </div>
-      {{ end }}
+
+            <h2 class="text-2xl font-bold" data-ga-category="author-articles">
+              {{ if $author.link }}
+                <a class="text-blue" href="{{ $author.link }}"
+                  >{{ $author.name }}</a
+                >
+              {{ else }}
+                {{ $author.name }}
+              {{ end }}
+            </h2>
+          </li>
+        {{ end }}
+      </ul>
     </div>
+    {{ if gt $pg.TotalPages 0 }}
+      <div class="level">
+        {{ if $pg.HasPrev }}
+          <a class="level-item" href="{{ $pg.Prev.URL }}">←</a>
+        {{ end }}
+        {{ if $pg.HasNext }}
+          <a class="level-item" href="{{ $pg.Next.URL }}">→</a>
+        {{ end }}
+      </div>
+    {{ end }}
   </section>
 {{ end }}
