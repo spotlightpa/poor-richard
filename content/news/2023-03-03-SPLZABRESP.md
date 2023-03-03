@@ -6,6 +6,7 @@ description = "Democrat Mike Zabel said he was “mindful of and saddened” by 
 image = "external/kxc9kn2gcb252n7wfzbcxga5j8.jpeg"
 image-credit = "The Office of Governor Tom Wolf / Flickr"
 image-description = "State Rep. Mike Zabel"
+image-gravity = "no"
 internal-budget = "Pa. lawmaker accused of sexual harassment says he won’t resign, will seek treatment for ‘illness’"
 internal-id = "SPLZABRESP"
 kicker = "The Capitol"
