@@ -23,7 +23,7 @@ topics = ["The Capitol"]
 
 HARRISBURG — A Pennsylvania lawmaker accused of sexual harassment says he won’t resign from office but will seek treatment for an unnamed “illness.”
 
-In a <a href="https://www.scribd.com/document/629217366/Rep-Mike-Zabel-letter-to-leadership">letter</a> to Pennsylvania House Democratic leadership, state Rep. Mike Zabel (D., Delaware) said he is “very mindful of and saddened by the sensitive and disturbing allegations against me.”
+In a <a href="https://www.scribd.com/document/629769816/Rep-Mike-Zabel-letter-to-House-leadership" target="_blank">letter</a> to Pennsylvania House Democratic leadership, state Rep. Mike Zabel (D., Delaware) said he is “very mindful of and saddened by the sensitive and disturbing allegations against me.”
 
 “I will not let myself be a distraction to the important work of this institution. Therefore, I resign my position on the Judiciary Committee effective immediately,” Zabel wrote. “I also will not accept any other committee assignments at this time so that I can better focus on my family, my treatment, and my recovery.”
 
@@ -46,7 +46,7 @@ One of them, Colleen Kennedy, managed Zabel’s 2018 bid for state House and wro
 
 Perez and the SEIU PA State Council have<a href="https://twitter.com/SEIUPA/status/1631770377041981442"> asked Zabel to resign</a>, as have state House Republicans, who said in a statement they “hope that Democrats would join us” in that call.
 
-Shortly after the allegations against Zabel became public, Democratic leaders released a statement, saying “We are concerned by the allegations we learned today, and take such accusations seriously.”
+Shortly after the allegations against Zabel became public, Democratic leaders released a statement, saying, “We are concerned by the allegations we learned today, and take such accusations seriously.”
 
 But as of Friday afternoon, no Democratic leaders, including new Speaker Joanna McClinton of Philadelphia, had called on Zabel to resign, though some members of the party have done so independently.
 
@@ -54,16 +54,16 @@ State Rep. David Delloso (D., Delaware) <a href="https://twitter.com/DavidMDello
 
 Also on Twitter, state Sen. Lindsey Williams (D., Allegheny) <a href="https://twitter.com/SenWilliamsPA/status/1631676786877538306">wrote</a> that Zabel should “resign immediately,” and that “standing with [Perez] and other victims means holding their harassers accountable.” State Sen. Katie Muth (D., Montgomery) also <a href="https://twitter.com/SenatorMuth/status/1631681660126101505">tweeted an affirmation</a> of that position.
 
-Democratic Gov. Josh Shapiro has not called on Zabel to resign. In a statement, he said the allegations against Zabel are “concerning” and that they “must be taken seriously as the Speaker determines the appropriate course of action.”
+Democratic Gov. Josh Shapiro has not called on Zabel to resign. In a statement, he said the allegations against Zabel are “concerning” and that they “must be taken seriously as the speaker determines the appropriate course of action.”
 
 Perez told Spotlight PA she moved to file a complaint with the state House Ethics Committee — a bipartisan panel that handles internal investigations of lawmakers — shortly after the incident but was told she could not because she wasn’t an employee of the chamber.
 
-Under new rules that lawmakers adopted this week, the Pennsylvania House expanded who can bring such a complaint. The policy applies to “any individual” whom a lawmaker encounters while “performing services or duties of the House,” “in or on House designated offices, property or facilities,” or “at a House-sponsored meeting or event.”
+Under new rules that lawmakers adopted this week, the Pennsylvania House expanded who can bring such a complaint. The policy applies to “any individual” whom a lawmaker encounters while “performing services or duties of the House,” “in or on House designated offices, property, or facilities,” or “at a House-sponsored meeting or event.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-Sexual harassment is defined in the rules as “unwelcome sexual advances, requests for sexual favors or other verbal or physical conduct of a sexual nature.”
+Sexual harassment is defined in the rules as “unwelcome sexual advances, requests for sexual favors, or other verbal or physical conduct of a sexual nature.”
 
 In a statement this week, Perez thanked “everyone who made this Rules Change possible and voted for its passage,” as well as “everyone who stood by me, and who supports and believes all women and their stories.”
 
