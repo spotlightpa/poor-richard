@@ -41,7 +41,7 @@
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
 <section
-  class="-mx-4 bg-s-3 font-sans md:mx-[calc(-50vw_+_50%)] w-screen relative md:px-4"
+  class="-mx-5 bg-s-3 font-sans md:mx-[calc(-50vw_+_50%)] md:w-screen relative md:px-4"
 >
   <div
     class="mx-auto max-w-screen-lg py-6 px-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:px-0 md:py-24"
@@ -79,7 +79,9 @@
         <div class="my-5 flex flex-wrap justify-between align-baseline">
           <h3 class="flex-[0_0_100%] font-sans font-black">From</h3>
 
-          <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
+          <p
+            class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+          >
             <label class="hidden" for="{{ $idFrom }}">From</label>
             <input
               id="{{ $idFrom }}"
@@ -91,7 +93,7 @@
             />
           </p>
           <p
-            class="relative mt-3 flex-[0_0_100%] sm:mt-0 sm:flex-[0_1_calc(50%-10px)]"
+            class="relative flex-[0_0_100%] mt-3 sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 lg:mt-0 md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
           >
             <label class="hidden" for="{{ $idEmail }}">Email Address</label>
             <input
