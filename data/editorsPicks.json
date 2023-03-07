@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-03-01-SPLRULPASS.md"
+    "content/news/2023-03-07-SPLREBNEG.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-28-SPLSTEP.md"
+    "content/news/2023-03-06-SPLSHAPPRE.md",
+    "content/news/2023-02-09-SPLSCHOIMPAC.md"
   ],
   "topSlots": [
-    "content/newsletters/palocal/2023-03-03-1000.md",
-    "content/news/2023-03-02-SPLNEWSQUIZMAR2.md",
-    "content/news/2023-03-01-SPLZABLACU.md"
+    "content/news/2023-03-06-SPLVITAL316.md",
+    "content/news/2023-03-03-SPLZABRESP.md",
+    "content/statecollege/2023-03-02-SPLPSUGREEK.md"
   ],
   "topper": []
 }
