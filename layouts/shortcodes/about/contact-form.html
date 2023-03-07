@@ -40,6 +40,7 @@
 {{ $idBody := partial "helper/new-id" . }}
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
+{{ $cta := .Get "submit" | default "Submit" }}
 <section
   class="-mx-5 bg-s-3 font-sans md:mx-[calc(-50vw_+_50%)] md:w-screen relative md:px-4"
 >
@@ -156,7 +157,7 @@
             type="submit"
             class="button is-large is-danger has-text-weight-semibold float-right rounded bg-yellow px-4 py-2 font-sans text-xl font-bold text-black"
           >
-            Send Tip
+            {{ $cta }}
           </button>
         </div>
       </form>
