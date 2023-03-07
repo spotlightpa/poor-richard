@@ -8,13 +8,13 @@ aliases = ["/jobs/"]
 +++
 ### Current openings:
 
-* [Membership Manager](#membership-manager)
+* <a class="text-blue hover:text-blue-3" href="#membership-manager">Membership Manager</a>
 
 <hr class="mb-5">
 
 ## Membership Manager
 
-### **[Apply here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695)**
+###  <a class="text-blue hover:text-blue-3 font-black text-2xl" href="https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/695">Apply here</a>
 
 **Summary:** We are seeking a Membership Manager to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across dozens of partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners. The newsroom is supported by grants and donations from Pennsylvanians who believe in the value of the work and want to sustain it. In partnership with the American Journalism Project, we are building out a best-in-class development team to enable Spotlight PA to sustain and grow its reporting in the long term.
 
@@ -40,8 +40,5 @@ An ability to work in a collaborative environment is a must. We’re an agile st
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
-***
-
-## Sign up to receive alerts so you don't miss new job postings.
 
 {{<newsletter/jobs-form>}}
