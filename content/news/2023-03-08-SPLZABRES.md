@@ -23,18 +23,27 @@ topics = ["The Capitol"]
 
 HARRISBURG — A Pennsylvania House Democrat accused of sexually harassing multiple people including two sitting Republican lawmakers says he will resign.
 
-State Rep. Mike Zabel (D., Delaware) announced his decision Wednesday in a letter to Pennsylvania House Speaker Joanna McClinton (D., Philadelphia). He said he will resign March 16.
+State Rep. Mike Zabel (D., Delaware) announced his decision Wednesday in a three-sentence letter to Pennsylvania House Speaker Joanna McClinton (D., Philadelphia). He said he will resign March 16.
 
 His decision comes a week after union lobbyist Andi Perez publicly accused him of sexually harassing her, and the same day that state Rep. Abby Major (R., Armstrong) made a similar accusation.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
-
-
 At least two other people have accused Zabel of similar harassment. One is a sitting GOP lawmaker who has requested anonymity; the other is Zabel’s former campaign manager, Colleen Kennedy, who wrote a public essay about his behavior.
 
-Perez, her employer SEIU, state House Republicans including Major, Kennedy, and dozens of rank-and-file Democrats previously called on Zabel to resign. McClinton and other Democratic leaders said they took the “accusations seriously” but did not demand Zabel step down.
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+
+Perez; her employer SEIU; state House Republicans including Major; Kennedy; and dozens of rank-and-file Democrats previously called on Zabel to resign. McClinton and other Democratic leaders said they took the “accusations seriously” but did not demand Zabel step down.
 
 Zabel, an attorney who was first elected to a suburban Philadelphia district in 2018, initially <a href="https://www.spotlightpa.org/news/2023/03/pa-mike-zabel-sexual-harassment-allegations-wont-resign-letter/">rebuffed calls to resign</a>, telling leadership he would seek inpatient treatment for an unnamed illness. He has not responded to Spotlight PA’s multiple requests for comment.
+
+In a statement Wednesday, state House Democratic leadership said Zabel “has chosen to do what is best for his family, the people he represents, and the state House of Representatives.”
+
+They added that they are committed “to a safe work environment that encourages people to come forward to have their concerns addressed responsibly and thoroughly,” and argued that such an environment “did not exist for 12 years under Republican leadership.”
+
+In early March, the chamber <a href="https://www.spotlightpa.org/news/2023/03/pa-house-rules-sexual-harassment-committees-legislation/">adopted new rules</a> governing workplace harassment, including sexual harassment, that expanded who can file a complaint to the state House Ethics Committee. Previous chamber rules allowed only state House members and employees to file harassment complaints.
+
+Democrats and Perez said the rule change will allow more people to come forward and create a safer Capitol workplace. Republicans have argued the rule isn’t as comprehensive as Democrats claim and still prevents individuals harassed outside the Capitol building from filing complaints.
+
+Major said Wednesday that she thinks the change wouldn’t cover her or her fellow lawmaker’s interactions with Zabel because those incidents occurred outside of the Capitol or outside of official House business.
 
 Major told Spotlight PA that in November 2022, Zabel put his arm around her, propositioned her, and then followed her out of a Harrisburg hotel bar where she, Zabel, and other lawmakers had been socializing.
 
@@ -50,9 +59,13 @@ At a January meeting organized by then-state House Speaker Mark Rozzi (D., Berks
 
 She later identified the lawmaker as Zabel in an interview with Spotlight PA. The news outlet corroborated the incident with another source who witnessed the incident, and viewed a text message from the next morning in which Zabel apologized for his “bad manners.”
 
+In a statement, Perez welcomed Zabel’s resignation and said she hopes “all the women who so bravely shared their stories can find comfort in knowing that Mike Zabel is no longer in office.”
+
+“No one who sexually harasses people should get to keep their job, and Mike Zabel is no different,” Perez said.
+
 Kennedy was Zabel’s campaign manager during his initial bid for office. In an essay and in a conversation with Spotlight PA, she described an incident at a fundraiser in which Zabel, who she says had been drinking, put his arm around her waist “in a way that a person would do that to their partner.”
 
-Kennedy said she assumed that Zabel confused her with his wife, moved away from Zabel, and that he apologized.
+Kennedy said she assumed that Zabel confused her with his wife and moved away from him, and that he apologized.
 
 “I don’t think that it was necessarily intentional,” Kennedy said. “But I think that due to some drinking that had been happening, that very much confused the situation for him.”
 
@@ -60,12 +73,9 @@ However, Kennedy said she subsequently had “five to 10″ conversations with Z
 
 When she shared her experiences with local and state Democratic officials, Kennedy said they “all were varying levels of concerned, but nobody was willing to do anything. They all felt that it wasn’t their job to do anything about it.”
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
-
 Major told Spotlight PA that when Zabel put his arm around her and propositioned her in 2022, he was “obviously very drunk.”
 
-“I didn’t really care, but I wasn’t interested. I was like, ‘No, thank you’ and that was fine,” Major said.
+“I didn’t really care, but I wasn’t interested. I was like, ‘No, thank you,’ and that was fine,” Major said.
 
 But after she left the hotel to walk to her car, Zabel followed her, she said. Major said she noticed him, felt uncomfortable, and went back inside to have a Republican colleague walk her out.
 
@@ -74,5 +84,11 @@ Major’s Republican colleague confirmed to Spotlight PA that he walked her to h
 After Major learned about Perez’s story, she said she began to warn female colleagues in the Capitol to “watch out” for Zabel.
 
 “In the moment, I let it slide because I didn’t know him well enough,” Major said. “I didn’t know he had this history.”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
+Democrats will hold a one-seat majority after Zabel resigns. A seat in the upper Susquehanna Valley that was previously held by a Republican is vacant after the incumbent resigned to take a seat in the state Senate.
+
+The special election for that seat is scheduled for primary day, May 16. McClinton will be tasked with setting the date for the special election to replace Zabel, which can’t take place until at least 60 days after his resignation. The primary is 61 days after Zabel’s resignation date.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
