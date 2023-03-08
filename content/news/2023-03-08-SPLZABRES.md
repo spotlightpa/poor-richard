@@ -33,7 +33,11 @@ At least two other people have accused Zabel of similar harassment. One is a sit
 
 Perez; her employer SEIU; state House Republicans including Major; Kennedy; and dozens of rank-and-file Democrats previously called on Zabel to resign. McClinton and other Democratic leaders said they took the “accusations seriously” but did not demand Zabel step down.
 
-Zabel, an attorney who was first elected to a suburban Philadelphia district in 2018, initially <a href="https://www.spotlightpa.org/news/2023/03/pa-mike-zabel-sexual-harassment-allegations-wont-resign-letter/">rebuffed calls to resign</a>, telling leadership he would seek inpatient treatment for an unnamed illness. He has not responded to Spotlight PA’s multiple requests for comment.
+Zabel, an attorney who was first elected to a suburban Philadelphia district in 2018, initially <a href="https://www.spotlightpa.org/news/2023/03/pa-mike-zabel-sexual-harassment-allegations-wont-resign-letter/">rebuffed calls to resign</a>, telling leadership he would seek inpatient treatment for an unnamed illness. 
+
+He did not respond to Spotlight PA’s multiple requests for comment, but he <a href="https://apnews.com/article/pennsylvania-sexual-harassment-mike-zabel-d7001476c3d7bd66a47346c0d948d638" target="_blank">told</a> the AP he had intended to “go through the Ethics Committee process and defend myself there.”
+
+“At this point, though, I am unwilling to put my loved ones through any more of this,” he said in a text to the AP. 
 
 In a statement Wednesday, state House Democratic leadership said Zabel “has chosen to do what is best for his family, the people he represents, and the state House of Representatives.”
 
@@ -72,6 +76,10 @@ Kennedy said she assumed that Zabel confused her with his wife and moved away fr
 However, Kennedy said she subsequently had “five to 10″ conversations with Zabel about his alcohol use. “I don’t feel that he’s taken a ton of action on those root causes.”
 
 When she shared her experiences with local and state Democratic officials, Kennedy said they “all were varying levels of concerned, but nobody was willing to do anything. They all felt that it wasn’t their job to do anything about it.”
+
+In a <a href="https://twitter.com/RTKvampire/status/1633576484609708033/photo/1" target="_blank">statement</a>, Kennedy said Zabel’s resignation “or a hastily drafted set of House rules will not end he crisis of sexual harassment, rape culture, and retaliation that plagues our State Capitol and our political campaigns.”
+
+“If we are serious about this issue beyond a partisan lens, let’s come together and continue the conversation, and center survivors of this abuse in those decisions,” Kennedy continued. 
 
 Major told Spotlight PA that when Zabel put his arm around her and propositioned her in 2022, he was “obviously very drunk.”
 
