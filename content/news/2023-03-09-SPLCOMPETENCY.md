@@ -249,9 +249,10 @@ Attorneys with the Defender Association of Philadelphia, a public firm that prov
 “It’s not in our clients’ best interest,” said Gregg Blender, chief of the firm’s mental health unit.
 
 {{<featured/picture
+  gravity="so"
   src="2023/03/01j0-1ccs-zy69-8yvr.jpeg"
-  description="Torrance State Hospital is one of only two hospitals in Pennsylvania that provide \"competency restoration,\" treatment for people who have been deemed incompetent to stand trial."
-  caption="Torrance State Hospital is one of only two hospitals in Pennsylvania that provide \"competency restoration,\" treatment for people who have been deemed incompetent to stand trial. (Nate Smallwood/For Spotlight PA and PINJ)"
+  description="Torrance State Hospital is one of only two hospitals in Pennsylvania that provide “competency restoration,” treatment for people who have been deemed incompetent to stand trial."
+  caption="Torrance State Hospital is one of only two hospitals in Pennsylvania that provide “competency restoration,” treatment for people who have been deemed incompetent to stand trial. (Nate Smallwood/For Spotlight PA and PINJ)"
 >}}
 
 ### Lack of beds leads to longer waits
