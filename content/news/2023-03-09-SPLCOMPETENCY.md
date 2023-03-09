@@ -4,6 +4,7 @@ authors = ["Danielle Ohl"]
 blurb = "A Spotlight PA/PINJ investigation found few state hospital beds for those with severe mental illness, ill-equipped jails, and a system so broken some defense attorneys avoid it entirely."
 byline = "Danielle Ohl of Spotlight PA and Brittany Hailer of The Pittsburgh Institute for Nonprofit Journalism"
 description = "The process to determine if someone is mentally fit to stand trial in Pennsylvania often harms the very people it’s supposed to protect."
+extended-kicker = "Special Investigation"
 image = "external/92s0gtw09atpv1vq7cn4j3f0dm.jpeg"
 image-credit = "Nate Smallwood / For Spotlight PA and PINJ"
 image-description = "Rachel Bridgeman spent 49 days in Allegheny County Jail waiting for treatment at a state hospital because a court found her incompetent to stand trial."
