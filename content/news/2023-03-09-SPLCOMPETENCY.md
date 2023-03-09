@@ -425,7 +425,7 @@ But in-custody treatment and restoration is still a criminal solution, Slobogin 
 
 “I'm not trying to say, ‘Well, there's an obvious easy fix to this,’” he said. “But if you're going to try to do something about it, using the criminal system is probably the worst way to go.”
 
-_This story is a collaboration between Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism, published as part of a Pittsburgh Media Partnership project. 
+_This story is a collaboration between Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism, published as part of a Pittsburgh Media Partnership project._
 
 {{<featured/support>}}
 
