@@ -1,4 +1,5 @@
 +++
+aliases = ["/competence/"]
 arc-id = "FCEQWRPAEVDFJMB7W3HDSEH7OM"
 authors = ["Danielle Ohl"]
 blurb = "A Spotlight PA/PINJ investigation found few state hospital beds for those with severe mental illness, ill-equipped jails, and a system so broken some defense attorneys avoid it entirely."
