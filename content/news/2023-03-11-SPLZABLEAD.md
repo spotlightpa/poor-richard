@@ -7,6 +7,7 @@ description = "A former Democratic leader told Mike Zabel to receive treatment a
 image = "external/wfsf1vkzvwkbj0afztgkmy6kzw.jpeg"
 image-credit = "House Democratic Caucus"
 image-description = "Pennsylvania Democrat Mike Zabel said he will resign March 16."
+image-gravity = "no"
 internal-budget = "Top Democrats knew about sexual harassment allegation against Pa. lawmaker in 2019"
 internal-id = "SPLZABLEAD"
 kicker = "The Capitol"
