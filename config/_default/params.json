@@ -4,40 +4,37 @@
   "banner-bg-color": "#ffcb03",
   "banner-link": "/newsletters",
   "banner-text-color": "#000000",
-  "featured-promo-bg-color": "#ddeb3f",
+  "featured-promo-bg-color": "#000000",
   "featured-promo-height": 512,
-  "featured-promo-image-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "featured-promo-image-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "featured-promo-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/tebn/febmarch-2023-mobile-toppers-1024-512-px-1-.svg"
+    "https://files.data.spotlightpa.org/uploads/01j0/4k69/sunshine-week-2023-1024-512-px-.svg"
   ],
   "featured-promo-link": "/donate/",
   "featured-promo-width": 1024,
-  "footer-promo-description": "This new year, pledge to support vital investigative journalism that strengthens our democracy.",
+  "footer-promo-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "footer-promo-desktop-height": 90,
   "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td71/febmarch-2023-banners-728-90-px-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-728-90-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-728-90-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jng/sunshine-week-2023-728-90-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jng/sunshine-week-2023-728-90-px-3-.gif"
   ],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "/donate",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/td0x/febmarch-2023-mobile-toppers-1024-512-px-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jne/sunshine-week-2023-1024-512-px-3-.gif"
   ],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/td71/febmarch-2023-banners-728-90-px-1-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-.gif"
+    "https://files.data.spotlightpa.org/uploads/01hk/8yz2/rally-round-our-coverage-2022-desktop-site-graphic-728-90-px-1-.png"
   ],
   "promo-desktop-width": 728,
   "promo-image-description": "Support Spotlight PA's vital election coverage ahead of Pennsylvania's high-stakes fall election.",
@@ -49,72 +46,72 @@
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
-  "river-promo-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "river-promo-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "river-promo-desktop-height": 90,
   "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td70/febmarch-2023-banners-728-90-px-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td71/febmarch-2023-banners-728-90-px-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-728-90-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jng/sunshine-week-2023-728-90-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jng/sunshine-week-2023-728-90-px-3-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-728-90-px-1-.gif"
   ],
   "river-promo-desktop-width": 728,
   "river-promo-link": "/donate",
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/td0x/febmarch-2023-mobile-toppers-1024-512-px-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/td0y/febmarch-2023-mobile-toppers-1024-512-px-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnf/sunshine-week-2023-1024-512-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jne/sunshine-week-2023-1024-512-px-3-.gif"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "sidebar-sticky-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-3-.gif"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "sidebar-top-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-3-.gif"
   ],
   "sidebar-top-link": "/donate",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "sticky-image-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxq/febmarch-2023-squares.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-3-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-2-.gif",
-    "https://files.data.spotlightpa.org/uploads/01hy/tcxr/febmarch-2023-squares-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnj/sunshine-week-2023-300-250-px-1-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-2-.gif",
+    "https://files.data.spotlightpa.org/uploads/01j0/4jnh/sunshine-week-2023-300-250-px-3-.gif"
   ],
   "sticky-link": "/donate",
   "support-active": true,
-  "support-bg-color": "#ddeb3f",
+  "support-bg-color": "#f6c831",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CLICK TO CONTRIBUTE NOW »",
   "support-hed": "BEFORE YOU GO, A QUICK REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider taking the step of supporting Spotlight PA's journalism — either one time, or with a monthly gift.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution? As a special bonus, all new monthly gifts made today will be matched as 12X their value thanks to the generosity of the Lenfest Institute for Journalism.\n\nYou've been reading our work. Now join thousands of your friends and neighbors in supporting it.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief",
+  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider taking the step of supporting Spotlight PA's journalism — and taking advantage of a \u003cstrong\u003elimited-time offer to get your gift MATCHED dollar for dollar\u003c/strong\u003e by the Benter Foundation in Pittsburgh.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution? As a special bonus, \u003cstrong\u003eall gifts made today will be DOUBLED\u003c/strong\u003e thanks to a special matching gift offered by the Benter Foundation in Pittsburgh.\n\nYou've been reading our work. Now join thousands of your friends and neighbors in supporting it.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief",
   "support-text-color": "#000000",
-  "topper-active": false,
-  "topper-bg-color": "#ddeb3f",
+  "topper-active": true,
+  "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01hy/tebm/febmarch-2023-site-toppers-1350-225-px-1-.svg"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#ddeb3f",
-  "topper-image-description": "Contribute to Spotlight PA now and support vital investigative and public-service journalism for Pennsylvania.",
+  "topper-divider-color": "#f6c831",
+  "topper-image-description": "Support Spotlight PA's vital investigative journalism for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
