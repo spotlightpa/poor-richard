@@ -94,7 +94,7 @@
                   }}
                   {{ partial "tw/image-block.html" $imgOpts }}
                   <h2
-                    class=" col-start-1 col-span-2 row-start-1 flex-wrap xl:flex-nowrap flex items-center xl:items-baseline text-lg lg:text-2xl"
+                    class=" col-start-1 col-span-2 row-start-1 flex-wrap xl:flex-nowrap flex items-center lg:items-baseline text-lg lg:text-2xl"
                   >
                     <span class=" order-2 font-bold ">
                       {{ .LinkTitle }}:&nbsp;
@@ -103,7 +103,8 @@
                       {{ $page.Params.occurence }}
                     </span>
                     <input
-                      class=" mr-3 h-6 w-6 rounded border  sm:-ml-9 md:-ml-0 lg:-ml-9 border-s-4 p-1 accent-yellow hover:accent-yellow-4"
+                      class=" mr-3 h-5 w-5 rounded border appearance-none sm:-ml-9 md:-ml-0 lg:-ml-9 border-s-4 
+                      accent-yellow hover:accent-yellow-4 checked:bg-yellow checked: checked:bg-[url('/img/icons/check.svg')]"
                       type="checkbox"
                       x-model="isChecked"
                       id="{{ $id }}"
