@@ -3,19 +3,21 @@ arc-id = "JS4QE5UHGZBL3NXFJFU3OBILHA"
 authors = ["Danielle Ohl", "Brittany Hailer"]
 blurb = "A statewide survey of county jails by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 byline = "Danielle Ohl of Spotlight PA and Brittany Hailer of the Pittsburgh Institute for Nonprofit Journalism"
-description = "A statewide survey of county jails by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism revealed many facilities openly admit they are not equipped for the growing mental health crisis."
+description = "A survey of county jails in Pennsylvania revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 image = "external/1n6855p33tcez9txk4fvgmtwac.jpeg"
 image-credit = "ELIZABETH ROBERTSON / Philadelphia Inquirer"
-image-description = "Survey responses from more than 20 Pennsylvania jails described a growing number of incarcerated people with serious mental health needs, a lack of medical staff, and a complex system for accessing state resources."
+image-description = "A survey of county jails like this one in Pennsylvania revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 internal-budget = "A statewide survey of county jails by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 internal-id = "SPLSURVEY"
 kicker = "Criminal Justice"
 modal-exclude = false
 no-index = false
 published = 2022-10-20T05:00:00-04:00
+series = ["A Criminal Solution"]
 slug = "pennsylvania-county-jail-mental-health-survey"
 suppress-date = false
 title = "Jail officials across Pa. sound alarm as mental health crisis puts people at risk, survey finds"
+title-tag = "Jails in PA report mental health crisis"
 topics = ["Criminal Justice"]
 +++
 
