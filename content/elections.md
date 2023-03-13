@@ -4,11 +4,11 @@ image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
 image-credit = "Amanda Berg / For Spotlight PA"
 kicker = "Elections"
-title = "Pennsylvania Election 2022"
-title-tag = "Official Pennsylvania Election Center 2022"
+title = "Pennsylvania Primary Election 2023"
+title-tag = "Official Pennsylvania Primary Election Center 2023"
 description = "See how to vote, where to vote, polling places, sample ballots, candidate & issue guides, and more from Spotlight PA."
-dek = "Candidates for governor, U.S. Senate, and more will appear on the Nov. 8 ballot."
-extended-kicker = "Pa. Election Center 2022"
+dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more will appear on the May 16 ballot. "
+extended-kicker = "Pa. Election Center 2023"
 linktitle = "Everything you need to prepare for Pa.’s high-stakes 2022 election"
 blurb = "Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
 url = "/elections/"
@@ -98,10 +98,6 @@ link = "#coverage"
 [[internal-links]]
 title = "Español"
 link = "#espan"
-
-[[internal-links]]
-title = "Follow the Money"
-link = "#money"
 
 [[internal-links]]
 title = "Ask Us"
