@@ -138,23 +138,11 @@
 <section class="bg-white px-6 py-8" id="guides" data-ga-category="guides">
   {{ $guide := site.GetPage "content/series/voting-guides/_index.md" }}
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Election 2022: Candidate And Voting Guides"
+    "hed" "PA ELECTION 2023: CANDIDATE AND VOTING GUIDES"
     "pages" $guide.RegularPages
     "readMoreLink" $guide.RelPermalink
-    "readMore" "Read More PA Election 2022 Guides"
+    "readMore" "Read More PA Election 2023 Guides"
     "rows" 2
-    )
-  }}
-</section>
-
-<section class="bg-white px-6 py-8" id="issues" data-ga-category="issues">
-  {{ $onetwo := site.GetPage "content/series/one-vote-two-pennsylvanias/_index.md" }}
-  {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Election 2022: By The Issues"
-    "pages" $onetwo.RegularPages
-    "readMoreLink" $onetwo.RelPermalink
-    "readMore" "Read More PA Election 2022 Issues Coverage"
-    "rows" 1
     )
   }}
 </section>
@@ -167,12 +155,13 @@
 
 <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
   {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
-  {{ $pages := $elex.RegularPages | complement $guide.RegularPages $onetwo.RegularPages (slice $feat.page) }}
+
+  {{ $pages := $elex.RegularPages | complement $guide.RegularPages (slice $feat.page) }}
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Election 2o22: More Coverage"
+    "hed" "PA Election 2023: More Coverage"
     "pages" $pages
     "readMoreLink" $elex.RelPermalink
-    "readMore" "Read More PA Election 2022 Stories"
+    "readMore" "Read More PA Election 2023 Stories"
     "rows" 2
     )
   }}
@@ -185,10 +174,10 @@
     ".PublishDate.Unix" "gt" $primary
   }}
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "Elecciones PA 2022: Traducciones al Español"
+    "hed" "Elecciones Pa. 2023: Traducciones al Español"
     "pages" $newEspan
     "readMoreLink" $espan.RelPermalink
-    "readMore" "Leer Más Historias De La Elección PA 2022"
+    "readMore" "Leer Más Historias De La Elección PA 2023"
     "rows" 1
     )
   }}
