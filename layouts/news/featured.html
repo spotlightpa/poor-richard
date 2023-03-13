@@ -56,7 +56,7 @@
       {{ partialCached "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-ribbon.html" ( dict
+      {{ partial "tw/modal-ribbon.html" ( dict
         "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
         )
       }}
