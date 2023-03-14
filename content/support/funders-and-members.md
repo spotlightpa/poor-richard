@@ -12,12 +12,12 @@ donate = """
 """
 supporters = """
 {{<supporters
+  title="Major donors and funders since launch"
+  dataSrc="majorDonors"
+>}}
+{{<supporters
   title="Members since launch"
   dataSrc="members"
 >}}
 """
-[[blocks]]
-    layout = "supporters"
-    title="Major donors and funders since launch"
-    dataSrc = "majorDonors"
 +++
