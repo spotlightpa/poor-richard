@@ -18,7 +18,7 @@ Leader in Action
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
 actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
-actionText = "Become A Leader →"
+actionText = "Become a leader →"
 url = "/support/leaders-in-action"
 
 [[blocks.entries]]
@@ -66,7 +66,7 @@ copy="""
 Make a check out to Spotlight PA and send it to:
 
 **Spotlight PA** <br>
-**228 Walnut St. #11728,** <br> 
+**228 Walnut St. #11728** <br> 
 **Harrisburg, PA 17108-1728** <br>
 
 ## Use Your Donor-Advised Fund
