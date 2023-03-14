@@ -18,7 +18,7 @@ donate = """
 """
 supplemental = """
 {{<supplemental>}}
-<div class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2">
+<div class="article-content text-black text-lg md:col-span-6 md:col-start-3 md:row-span-1 md:row-start-2">
 
 Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
 
