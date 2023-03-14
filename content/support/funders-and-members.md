@@ -19,5 +19,5 @@ supporters = """
 [[blocks]]
     layout = "supporters"
     title="Major Donors and Funders"
-    dataSrc = "founders"
+    dataSrc = "majorDonors"
 +++

@@ -59,7 +59,7 @@ testimonial = """
 """
 +++
 
-<svg class="float-right -mt-6 lg:-mr-16 mb-2 ml-1 md:ml-2 md:h-52">
+<svg class="float-right -mt-6 mb-2 ml-1 md:ml-2 md:h-52 xl:-mr-16">
   <use href="#leaders-in-action" />
 </svg>
 
