@@ -19,32 +19,33 @@ donate = """
 supplemental = """
 {{<supplemental>}}
 <div class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2">
-You can follow all of their work, and get all the news from the region, by <a href="/newsletters/talkofthetown">signing up for our free weekly newsletter, Talk of the Town.</a>
 
 Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
 
-Spotlight PA is conducting ongoing community listening sessions to determine the region’s most urgent information needs. Our team of four journalists has the time, resources, and mandate to dig deep into the issues of the region. You can expect reporting on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run. All of Spotlight PA’s reporting is conducted through an equity and accountability lens, examining issues that are causing harm and proposing solutions.
+Spotlight PA is conducting ongoing community listening sessions to determine the region’s most urgent information needs. Our team of journalists has the time, resources, and mandate to dig deep into the issues of the region. You can expect reporting on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run. All of Spotlight PA’s reporting is conducted through an equity and accountability lens, examining issues that are causing harm and proposing solutions.
 
 The team is employed by Spotlight PA and receives organizational support from the statewide newsroom, including management and editing — thus avoiding the significant start-up costs associated with launching a brand-new, nonprofit news outlet. The bureau publishes via Spotlight PA’s extensive distribution network, elevating issues of regional importance to a statewide audience, while also fostering mutual understanding among all Pennsylvanians.
 
 ## Fundraising
 
-We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. To encourage founding donors to join the effort, The Lenfest Institute for Journalism is offering to match all contributions up to $200,000 this year. You can <a href="/donate/">support this special effort by clicking here</a>, or to learn more about getting involved, you can email Spotlight PA Major Gifts Advisor Kathleen Pavelko at <a href="mailto:kpavelko@spotlightpa.org">kpavelko@spotlightpa.org</a>.
+We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty">support this special effort by clicking here</a>, or to learn more about getting involved, please contact Spotlight PA Director of Individual and Corporate Giving Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. 
 
 We’re so grateful to our <a href="#donors">founding individual donors for supporting this effort</a> (see our State College bureau donor list below).
 
-In addition, Spotlight PA has partnered with Report for America, a national journalism project, to offset the cost of one reporting position. This expansion has also been made possible by a $1 million grant from the American Journalism Project, which is focused on enhancing Spotlight PA’s business and operations capacity to enable it to expand its journalism locally.
-
-## About Spotlight PA
-
-Recognized as one of the most promising journalism endeavors in the United States, Spotlight PA is dedicated to providing unique, in-depth accountability and investigative journalism about the state government, urgent statewide issues, and the most pressing matters facing our local communities. Our member-supported newsroom distributes its public-service reporting at no cost via <a href="/">spotlightpa.org</a> and more than 90 partner newsrooms from State College to Erie, Philadelphia to Pittsburgh. Over the last three years, Spotlight PA’s reporting has garnered numerous state and national awards, and driven meaningful change and important policy reforms in Harrisburg, strengthening democracy in our state.
+This expansion has also been made possible by a $1 million grant from the American Journalism Project, which is focused on enhancing Spotlight PA’s business and operations capacity to enable it to expand its journalism locally.
 </div>
 {{</supplemental>}}"""
 
 supporters = """
 {{<supporters
-  title="Our Major Donors"
+  title="Major Donors"
   dataSrc="stateCollege"
+  category="Spotlight PA's State College Bureau (Donations of $1,000 and above)"
+>}}
+{{<supporters
+  title="Members"
+  dataSrc="stateCollegeMembers"
+  category="Spotlight PA's State College Bureau (Donations below $1,000)"
 >}}
 """
 
