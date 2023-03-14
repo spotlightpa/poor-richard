@@ -2,19 +2,16 @@
   class="flex flex-col space-y-1"
   @click.passive.capture="$report($event)"
 >
-  <div>
+  <span class="inline-flex pb-4 text-sm md:pr-8 md:pb-2">
     <a
       class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
       :href="story.url"
       data-ga-category="eyebrow"
       x-text="story.kicker"
     ></a>
-  </div>
+  </span>
   <div
-    class="
-      flex w-full flex-col space-y-2
-      sm:flex-row sm:space-y-0 sm:space-x-6
-    "
+    class="w-full flex-col sm:flex sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-6"
   >
     <div class="w-full flex-shrink-0 sm:w-64">
       <figure class="mt-1" data-ga-category="thumb">
@@ -38,7 +35,7 @@
         ></figcaption>
       </figure>
     </div>
-    <div class="group w-full flex-grow space-y-1">
+    <div class="group w-full flex-grow sm:space-y-1 mt-5">
       <h2 class="text-lg font-bold leading-tight tracking-tight text-hed">
         <a
           class="group-hover:underline"
@@ -48,24 +45,15 @@
         ></a>
       </h2>
       <h3
-        class="font-sans text-base font-semibold leading-tight tracking-normal text-byline"
+        class="my-3 font-sans text-base font-normal leading-tight tracking-normal text-byline"
       >
         <a
-          class="group-hover:underline"
+          class="text-s-7 group-hover:underline"
           :href="story.url"
           data-ga-category="byline"
           x-show="story.byline"
           x-template="by ${story.byline}"
         ></a>
-      </h3>
-      <h3
-        class="font-sans text-base font-light leading-tight tracking-normal text-date"
-        data-ga-category="time"
-        x-show="showDate"
-      >
-        <a class="group-hover:underline" :href="story.url">
-          <time :datetime="story.publishedISO" x-text="story.published"></time>
-        </a>
       </h3>
     </div>
   </div>

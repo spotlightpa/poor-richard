@@ -26,8 +26,8 @@
 {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
 
-<h1 class="is-sr-only">{{ .Title }}</h1>
-{{ partial "component/frontpage" (dict
+<h1 class="sr-only">{{ .Title }}</h1>
+{{ partial "tw/frontpage" (dict
   "featuredStories" $featuredStories
   "pinnedStories" $pinnedStories
   "river" $river

@@ -96,7 +96,7 @@ But Myers doesn’t think the commonwealth should wait until then to expand 12-m
 
 “There’s no reason why we can’t implement this policy now,” she said. “There’s no hurdle.”
 
-Pennsylvania Partnerships for Children <a href="https://www.inquirer.com/wires/ap/resuming-medicaid-case-checks-confronts-36m-pennsylvania-20230206.html">is also urging Democratic Gov. Josh Shapiro</a> to extend the continuous coverage provision to include people up to age 21.
+Pennsylvania Partnerships for Children <a href="https://apnews.com/article/josh-shapiro-access-to-health-care-pennsylvania-philadelphia-harrisburg-1b06fdd8926a794030dc659aa212a1be">is also urging Democratic Gov. Josh Shapiro</a> to extend the continuous coverage provision to include people up to age 21.
 
 Asked about the administration’s stance on those kinds of changes, Brandon Cwalina, a spokesperson for the Department of Human Services, said it “is open to exploring all options to improve the services we provide to Pennsylvanians,” though he didn’t offer more detail.
 

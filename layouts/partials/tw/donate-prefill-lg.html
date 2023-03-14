@@ -1,11 +1,12 @@
 {{ $wrapperClass := .wrapperClass  | default "" }}
 {{ $donateHed := .donateHed | default "Join our historic effort to invigorate local news." }}
+{{ $donateDek := .donateDek }}
 {{ $donateCta := .donateCta | default "Contribute" }}
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
 {{ $donateGaForm := .donateGaForm | default "" }}
 {{ $donateCampaign := .donateCampaign | default "7015G0000013oHVQAY" }}
-{{ $donateTheme := .donateTheme | default "" }}
-{{ $donateAmounts := .donateAmounts | default (slice "10" "15" "25" "50") }}
+{{ $donateTheme := .donateTheme }}
+{{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
 
 {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
@@ -18,6 +19,8 @@
 <div class="{{ $wrapperClass }} box-content bg-blue px-4 py-14 md:px-0">
   <div
     data-ga-category=" {{ $donateGaCategory }}"
+    data-donate-campaign="{{ $donateCampaign }}"
+    data-donate-theme="{{ $donateTheme }}"
     class="no-js:hidden mx-auto w-full max-w-content"
     x-data="{
     active: '{{ $activeClass }}',
@@ -48,27 +51,28 @@
     },
     get donateURL() {
       let campaign = this.$el.
-        closest('[data-sf-campaign]')?.dataset.sfCampaign ||
-        '701f4000000TVuDAAW';
+        closest('[data-donate-campaign]')?.dataset.donateCampaign;
       let theme =  this.$el.
-        closest('[data-sf-theme]')?.dataset.sfTheme || '';
+        closest('[data-donate-theme]')?.dataset.donateTheme;
       let period = {
         o: 'once',
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign={{ $donateCampaign }}&theme={{ $donateTheme }}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
+      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
     }
   }"
   >
     <div class="flex flex-wrap items-center">
       <h2
-        class="flex-[0_1_614px] font-sans text-2xl font-black leading-none tracking-wide text-white sm:text-4xl md:text-5xl"
+        class="flex-1 font-sans text-3xl font-black leading-none tracking-wide text-white sm:text-4xl md:text-5xl"
       >
         {{ $donateHed }}
 
       </h2>
-
+      {{ with $donateDek }}
+        <p class="my-4 font-sans text-lg text-white">{{ . }}</p>
+      {{ end }}
       <div class="mt-6 flex flex-wrap justify-start gap-2">
         {{ define "tw-donate-prefill-button-lg" }}
           {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}

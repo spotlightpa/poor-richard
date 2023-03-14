@@ -74,7 +74,9 @@ Pennsylvania is one of 12 states that has a zero-tolerance law that prohibits dr
 
 “Because of this, unimpaired patients currently face the risk of being arrested, prosecuted and convicted for using medicinal marijuana that has no bearing on their ability to drive a vehicle,” state Sen. Camera Bartolotta (R., Washington) wrote in a memo to her colleagues.
 
-Bartolotta’s proposal would require proof of actual impairment as the basis for a DUI conviction in those cases. Last session, the measure passed out of committee without opposition but did not receive a vote in the full Senate.”There just wasn’t time to get it on the floor,” Bartolotta told Spotlight PA. “But I’m optimistic that we will be able to move forward.”
+Bartolotta’s proposal would require proof of actual impairment as the basis for a DUI conviction in those cases. Last session, the measure passed out of committee without opposition but did not receive a vote in the full Senate.
+
+"There just wasn’t time to get it on the floor," Bartolotta told Spotlight PA. "But I’m optimistic that we will be able to move forward."
 
 ## Employment rules
 
@@ -101,6 +103,8 @@ More Democrats than Republicans support legalizing cannabis. But it is not clear
 
 “Any expansion of the marijuana industry for adult use would need to emphasize health and safety, social justice, and equity, as well as supporting the industry’s workforce,” Reigelman said in an email.
 
-Patrick Nightingale, an attorney and executive director of the Pittsburgh chapter of the National Organization for the Reform of Marijuana Laws, hopes the change in power will result in cannabis bills at least receiving committee hearings in Harrisburg.”When the Republicans were in the majority ... they appointed the committee chairs, and if their leadership didn’t want something moving through committee, it didn’t,” Nightingale told Spotlight PA. “That barrier no longer remains.”
+Patrick Nightingale, an attorney and executive director of the Pittsburgh chapter of the National Organization for the Reform of Marijuana Laws, hopes the change in power will result in cannabis bills at least receiving committee hearings in Harrisburg.
+
+"When the Republicans were in the majority ... they appointed the committee chairs, and if their leadership didn’t want something moving through committee, it didn’t," Nightingale told Spotlight PA. "That barrier no longer remains."
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

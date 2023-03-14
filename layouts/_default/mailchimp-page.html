@@ -16,9 +16,7 @@
 {{ define "header" }}
   <header data-ga-category="header">
     {{ block "nav" . }}
-      {{ $tott := site.GetPage "/newsletters/talkofthetown/_index.md" }}
-      {{ $isSCpage := .Page.InSection $tott }}
-      {{ if $isSCpage }}
+      {{ if eq .Params.nav "statecollege" }}
         {{ partial "tw/nav-sc.html" . }}
       {{ else }}
         {{ partial "tw/nav.html" . }}

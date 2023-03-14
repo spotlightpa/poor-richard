@@ -235,7 +235,7 @@
 }
 
 .site-nav\:flyout-donate {
-  @apply inline-flex items-center whitespace-nowrap rounded bg-orange px-3 py-2 font-semibold uppercase text-white hover:shadow-beige;
+  @apply inline-flex items-center whitespace-nowrap rounded bg-red px-3 py-2 font-semibold uppercase text-white hover:shadow-beige;
 }
 
 .site-nav\:flyout-donate-svg {

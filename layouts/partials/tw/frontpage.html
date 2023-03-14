@@ -1,0 +1,188 @@
+{{ $nlBox := .page.Param "newsletter-box" |
+  default "tw/inline-newsletter-white.html"
+}}
+{{ $imageDescription := .page.Param "river-promo-description" }}
+{{ $link := .page.Param "river-promo-link" }}
+{{ $desktopImages := .page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := .page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := .page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := .page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := .page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := .page.Param "river-promo-mobile-height" }}
+
+{{ $btn := `inline-block
+  rounded-lg bg-blue-6 py-3 px-4
+  font-sans text-base font-bold
+  uppercase leading-none tracking-widest
+  text-white shadow
+  outline-none ring-2 ring-transparent
+  hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7`
+}}
+
+
+<div class="mx-auto mb-5 max-w-screen-xl">
+  {{ define "topper" }}
+    {{ if .Param "topper-active" }}
+      {{ partialCached "tw/promo-topper.html" . }}
+    {{ end }}
+    {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
+      {{ partial "tw/promo-topperarticle.html" $topperStories }}
+    {{ end }}
+  {{ end }}
+
+  {{ if .featuredStories }}
+    {{ partial "tw/featured.html" .featuredStories }}
+  {{ end }}
+  {{ if .pinnedStories }}
+    {{ $pages := .pinnedStories }}
+    {{ partial "tw/list-3-col-story.html" (dict
+      "pages" $pages
+      "wrapperClass" "mb-16 mx-auto"
+      "eyebrow" "rubric"
+      "rubricLink" "rubric"
+      )
+    }}
+  {{ end }}
+  <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+
+  <div data-ga-category="midpage" x-data="funnelStatus">
+    <div x-show="!isSubscriber">
+      {{ partial $nlBox . }}
+    </div>
+    <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+      {{ partial "tw/donate-prefill-lg-page.html" (dict
+        "wrapperClass" "rounded overflow-hidden"
+        "donateHed" (.page.Param "donate-hed")
+        "donateDek" (.page.Param "donate-text")
+        "donateCta" (.page.Param "donate-cta")
+        "donateGaCategory" (.page.Param "donate-ga-category")
+        "donateCampaign" (.page.Param "donate-ga-campaign")
+        "donateTheme" (.page.Param "donate-theme")
+        "donateAmounts" (.page.Param "donate-amounts")
+        )
+      }}
+    </div>
+  </div>
+  {{ if .river }}
+    <div
+      class=" items-start md:grid md:grid-cols-3 md:gap-8"
+      @mouseover.passive.once="load()"
+      @touchstart.passive.once="load()"
+    >
+      <div
+        data-ga-category="midpage"
+        x-data="funnelStatus"
+        class=" flex flex-col self-stretch py-8 md:col-start-3 md:px-8"
+      >
+        <div data-ga-category="top" data-sf-campaign="7015G0000013oHLQAY">
+          {{ partial "tw/promo-single.html" (dict
+            "class" "mb-5 w-0 min-w-full no-js:hidden"
+            "images" (.page.Param "sidebar-top-images")
+            "width" (.page.Param "sidebar-top-width")
+            "height" (.page.Param "sidebar-top-height")
+            "link"  (.page.Param "sidebar-top-link")
+            "description"  (.page.Param "sidebar-top-description")
+            )
+          }}
+        </div>
+
+        {{ partial "tw/rail-most-popular.html" dict }}
+        {{ range .edPicks }}
+          {{ if .page }}
+            {{ partial "tw/rail-picks.html" . }}
+          {{ end }}
+        {{ end }}
+        {{ if .page.Param "sidebar-sticky-images" }}
+          <div
+            class="flex-1"
+            data-ga-category="sticky"
+            data-sf-campaign="7015G0000013oHQQAY"
+            x-intersect="$dispatch('close-sticky')"
+          >
+            {{ partial "tw/promo-single.html" (dict
+              "class" "pt-5 w-0 min-w-full no-js:hidden sticky top-0"
+              "images" (.page.Param "sidebar-sticky-images")
+              "width" (.page.Param "sidebar-sticky-width")
+              "height" (.page.Param "sidebar-sticky-height")
+              "link" (.page.Param "sidebar-sticky-link")
+              "description" (.page.Param "sidebar-sticky-description")
+              )
+            }}
+          </div>
+        {{ end }}
+      </div>
+      <div
+        class="justify-between py-8 md:col-span-2 md:row-start-1"
+        x-ref="archives"
+        data-ga-category="river"
+        data-sf-campaign="7015G0000013oHGQAY"
+      >
+        <nav
+          data-ga-category="related-content"
+          x-data="readmore(true)"
+          x-ref="root"
+          @mouseover.once="load()"
+          @touchstart.passive.once="load()"
+        >
+          <h2
+            class="font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+          >
+            More top stories
+          </h2>
+          <hr class="mt-1 border-2 border-black bg-black" />
+          <div
+            class="mt-3 flex flex-col space-y-8 md:space-y-6"
+            x-ref="archives"
+          >
+            {{ range $i, $page := .river | first 30 }}
+              {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
+              {{ if eq (mod $i 4) 3 | and $desktopImages }}
+                <div
+                  class="tile is-parent px-0 pt-0"
+                  data-ga-category="{{ div $i 4 | add 1 }}"
+                >
+                  {{ partial "tw/promo-double.html" (dict
+                    "class" "w-0 min-w-full no-js:hidden"
+                    "imageDescription" $imageDescription
+                    "link" $link
+                    "desktopImages" $desktopImages
+                    "desktopWidth" $desktopWidth
+                    "desktopHeight" $desktopHeight
+                    "mobileImages" $mobileImages
+                    "mobileWidth" $mobileWidth
+                    "mobileHeight" $mobileHeight
+                    )
+                  }}
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ partial "tw/related-articles-js.html" dict }}
+          <div class="flex py-8">
+            <div class="mx-auto">
+              <a
+                @click.prevent="click()"
+                @mouseover.once="load()"
+                @touchstart.passive.once="load()"
+                :data-ga-action='"readmore:load"'
+                href="/news/"
+                class="
+            inline-block
+            rounded-lg bg-blue-6 py-3 px-4
+            font-sans text-base font-bold
+            uppercase leading-none tracking-widest
+            text-white shadow
+            outline-none ring-2 ring-transparent
+            hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7
+          "
+                :class="{ 'animate-pulse': hasClicked && isLoading }"
+                :disabled="!canReadMore"
+                >More Stories</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  {{ end }}
+</div>

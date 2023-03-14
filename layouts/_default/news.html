@@ -9,7 +9,11 @@
 {{ define "header" }}
   <header data-ga-category="header">
     {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
+      {{ if eq .Params.nav "statecollege" }}
+        {{ partial "tw/nav-sc.html" . }}
+      {{ else }}
+        {{ partial "tw/nav.html" . }}
+      {{ end }}
     {{ end }}
     {{ block "banner" . }}
       {{ if .Param "banner-active" }}
@@ -99,6 +103,7 @@
 {{ define "svg-resources" }}
   {{ $svgs := dict
     "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
     "bars-svg" "@fontawesome/solid/bars.svg"
     "calendar-svg" "@fontawesome/regular/calendar-check.svg"
     "close-svg" "@fontawesome/solid/circle-xmark.svg"

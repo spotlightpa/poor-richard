@@ -7,6 +7,7 @@ layouts/partials/featured/content-area-start.html
 layouts/partials/header/meta.html
 layouts/partials/tw/image-rotator.html
 layouts/partials/tw/promo-double.html
+layouts/partials/tw/topper.html
 layouts/shortcodes/featured/credit.html
 layouts/shortcodes/featured/embed.html
 layouts/shortcodes/image.html
