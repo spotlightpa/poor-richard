@@ -20,8 +20,6 @@ credits = """
 >}}"""
 supplemental = """
 {{<supplemental>}}
-<div class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2">
-
 ## You can help us cover Penn State
 
 Unlike most public universities, Penn State is largely exempt from open records laws despite receiving taxpayer money.
@@ -43,7 +41,8 @@ It’s important you know that we promise confidentiality if you share documents
 The best way to start is with a simple conversation, even if it’s off the record (meaning it’s not for publication). I look forward to hearing from you.
 
 *— **Wyatt Massey**, Penn State investigative reporter*
-</div>
+{{</supplemental>}}"""
+credit = """
 {{<featured/credit-long
 hed="Meet Spotlight PA’s Penn State Investigative Reporter"
 name="Wyatt Massey"
@@ -51,8 +50,7 @@ role="Capitol Reporter"
 email="wmassey@spotlightpa.org"
 bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
 shortcode="{{<supplemental>}}"
->}}
-{{</supplemental>}}"""
+>}}"""
 form ="""
 {{<featured/promo-tips-form
   hed="Send A Tip"
