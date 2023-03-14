@@ -65,13 +65,12 @@
       </div>
     {{ end }}
 
-        {{ with .Page.RenderString (.Param "supplemental") }}
-            <article
-      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
-    >
-
-          {{ . }}
-  </article>
+    {{ with .Page.RenderString (.Param "supplemental") }}
+      <article
+        class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+      >
+        {{ . }}
+      </article>
     {{ end }}
 
     {{ range $i, $blocks := .Params.blocks }}
@@ -91,20 +90,19 @@
       </div>
     {{ end }}
     {{ .Page.RenderString (.Param "supporters") }}
-
   </section>
 {{ end }}
 
 {{ define "before-footer" }}
-    {{ with .Page.RenderString (.Param "donate") }}
-      <div class=" font-sans bg-white">
-        {{ . }}
-      </div>
-    {{ else }}
+  {{ with .Page.RenderString (.Param "donate") }}
+    <div class=" font-sans bg-white">
+      {{ . }}
+    </div>
+  {{ else }}
     {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 hidden")
-  }}
-    {{ end }}
+      "wrapperClass" "bg-white pt-2 pb-14 hidden")
+    }}
+  {{ end }}
 
 {{ end }}
 
