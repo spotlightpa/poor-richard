@@ -2,7 +2,7 @@
 
 {{ range sort $data.list "sort" "asc" }}
   <li>
-    {{ if ne .url "" }}
+    {{ if .url }}
       <a class="hover:underline text-blue" href="{{ .url }}">{{ .display }}</a>
     {{ else }}
       {{ .display }}
