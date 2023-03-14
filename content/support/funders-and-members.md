@@ -12,12 +12,12 @@ donate = """
 """
 supporters = """
 {{<supporters
-  title="Spotlight PA Members"
+  title="Members since launch"
   dataSrc="members"
 >}}
 """
 [[blocks]]
     layout = "supporters"
-    title="Major Donors and Funders"
+    title="Major donors and funders since launch"
     dataSrc = "majorDonors"
 +++
