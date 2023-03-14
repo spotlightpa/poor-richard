@@ -60,7 +60,7 @@
       {{ end }}
     </div>
     {{ with .Page.RenderString (.Param "newsletter") }}
-      <div class="-mx-4 font-sans md:mx-0">
+      <div class=" font-sans">
         {{ . }}
       </div>
     {{ end }}
@@ -76,7 +76,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class=" w-full -mx-4 bg-s-1 md:mx-0"
+        class=" w-full bg-s-1"
       >
         {{ partial "blocks/block" (dict
           "Page" $
@@ -85,16 +85,14 @@
         }}
       </div>
     {{ end }}
-        {{ .Page.RenderString (.Param "supporters") }}
-          <div class="-mx-4 font-sans md:mx-0">
-          </div>
+    {{ .Page.RenderString (.Param "supporters") }}
 
   </section>
 {{ end }}
 
 {{ define "before-footer" }}
     {{ with .Page.RenderString (.Param "donate") }}
-      <div class="-mx-4 font-sans md:mx-0 bg-white">
+      <div class=" font-sans bg-white">
         {{ . }}
       </div>
     {{ else }}
