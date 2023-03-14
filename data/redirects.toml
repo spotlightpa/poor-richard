@@ -29,6 +29,11 @@ to = "https://almanack.data.spotlightpa.org"
 code = 302
 
 [[redirects]]
+from = "/about/statecollege/"
+to = "/support/state-college"
+code = 302
+
+[[redirects]]
 from = "/imgproxy/*"
 to = "https://images.data.spotlightpa.org/:splat"
 code = 200
