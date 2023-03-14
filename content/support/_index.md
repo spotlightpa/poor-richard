@@ -39,7 +39,7 @@ copy = """
   
   ## Learn more about who supports our work
 
-  [Institutional funders and members since launch →](/support/funders-and-members)
+  [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders)
 
   [Leaders in Action →](/support/leaders-in-action/#our-current-leaders)
 
