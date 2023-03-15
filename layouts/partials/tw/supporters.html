@@ -6,11 +6,13 @@
   id="{{ $id }}"
   class="m-auto flex max-w-screen-xl flex-wrap justify-center p-5 md:px-0 md:py-14"
 >
+  {{ with $title}}
   <h2
     class="w-full max-w-screen-lg text-4xl font-black leading-none text-s-6 md:text-6xl"
   >
-    {{ $title }}
+    {{ . }}
   </h2>
+  {{ end }}
   {{ with $category }}
     <h3
       class="mb-6 w-full max-w-screen-lg font-sans text-2xl font-black leading-none tracking-wide sm:text-4xl md:text-3xl"

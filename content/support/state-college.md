@@ -33,17 +33,15 @@ We estimate this new bureau will cost approximately $500,000 a year to sustain a
 We’re so grateful to our <a href="#donors">founding individual donors for supporting this effort</a> (see our State College bureau donor list below).
 
 This expansion has also been made possible by a $1 million grant from the American Journalism Project, which is focused on enhancing Spotlight PA’s business and operations capacity to enable it to expand its journalism locally.
-</div>
 {{</supplemental>}}"""
 
 supporters = """
 {{<supporters
-  title="State College Bureau Donors"
+  title="Supporters of Spotlight PA's State College Bureau  "
   dataSrc="stateCollege"
   category="Spotlight PA's State College Bureau (Donations of $1,000 and above)"
 >}}
 {{<supporters
-  title="Members"
   dataSrc="stateCollegeMembers"
   category="Spotlight PA's State College Bureau (Donations below $1,000)"
 >}}
