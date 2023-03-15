@@ -8,7 +8,7 @@ aliases = ["/jobs/"]
 +++
 ### Current openings:
 
-* Membership Manager](#membership-manager)
+* [Membership Manager](#membership-manager)
 * Newsletter Writer/Reporter
 
 - - -
