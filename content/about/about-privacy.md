@@ -80,21 +80,21 @@ We set some cookies ourselves and others are set by third parties.  You can man
 
 The following chart lists the different types of cookies that we and our service providers use on the Services, examples of who serves those cookies and links to the privacy notices and opt-out information of those cookie servers.
 
-<div class="table-container">
-<table class="table is-striped is-narrow is-fullwidth">
-  <thead>
-    <tr>
-      <th>
+<div class=" overflow-y-scroll w-full rounded">
+<table class="border-collapse table-fixed text-sm">
+  <thead class="bg-s-2 text-left">
+    <tr class="border-b border-s-3">
+      <th class=" p-2">
         <p>
           Types of Cookies
         </p>
       </th>
-      <th>
+      <th class="p-2">
         <p>
           Purpose
         </p>
       </th>
-      <th>
+      <th class=" p-2 whitespace-normal">
         <p>
           Who Serves (for example)
         </p>
@@ -102,18 +102,18 @@ The following chart lists the different types of cookies that we and our service
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
+    <tr class="even:bg-s-1  border-b border-s-3">
+      <td class="align-baseline p-2">
         <p>
           Essential
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <p>
           These cookies are required for the operation of the Services and enable you to move around the Services and use its features.  Disabling these cookies can negatively impact the performance of Services.
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <ul>
           <li>
             <p>
@@ -132,20 +132,20 @@ The following chart lists the different types of cookies that we and our service
         </p>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr class="even:bg-s-1  border-b border-s-3">
+      <td class="align-baseline p-2">
         <p>
           Functionality
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <p>
           <em>
           </em>
           These cookies are used to recognize you when you return to the Services.  This enables us to personalize content for you and remember your preferences. These cookies also enable your interactions with the Services such as emailing us.
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <ul>
           <li>
             <p>
@@ -164,18 +164,18 @@ The following chart lists the different types of cookies that we and our service
         </p>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr class="even:bg-s-1  border-b border-s-3">
+      <td class="align-baseline p-2">
         <p>
           Analytics, Performance, and Research
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <p>
           These cookies, beacons, and pixels allow us to analyze activities on the Services.  They can be used to improve the functioning of the Services.  For example, these cookies recognize and count the number of visitors and see how they move around the Services.  Analytics cookies also help us measure the performance of our advertising campaigns to help us improve them and to optimize the content on the Services for those who engage with our advertising.
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <ul>
           <li>
             <p>
@@ -198,18 +198,18 @@ The following chart lists the different types of cookies that we and our service
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>
+    <tr class="even:bg-s-1  border-b border-s-3">
+      <td class="align-baseline p-2">
         <p>
           Advertising
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <p>
           These cookies and pixels are used to deliver relevant ads, track ad campaign performance, or track email marketing.
         </p>
       </td>
-      <td>
+      <td class="align-baseline p-2">
         <ul>
           <li>
             <p>
