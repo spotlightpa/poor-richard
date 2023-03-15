@@ -50,7 +50,7 @@
                         id="{{ $param.name }}-field"
                         placeholder="{{ $param.placeholder }}"
                         type="text"
-                        class="input w-full rounded border border-s-4 p-1 font-sans"
+                        class="spl-input"
                         name="{{ $param.name }}"
                         @input.debounce.500ms="updateParams"
                         {{ with $param.pattern }}

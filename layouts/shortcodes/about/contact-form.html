@@ -53,7 +53,7 @@
       </h2>
       <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
     </header>
-    <div class="md:col-span-5 md:col-start-6">
+    <div class="md:col-span-5 md:col-start-6 text-base">
       <form
         id="contact-page-form"
         name="contact-page"
@@ -86,7 +86,7 @@
             <label class="hidden" for="{{ $idFrom }}">From</label>
             <input
               id="{{ $idFrom }}"
-              class="input w-full shadow rounded border border-s-4 p-1 font-sans"
+              class="spl-input"
               type="text"
               placeholder="William Penn"
               name="name"
@@ -99,13 +99,13 @@
             <label class="hidden" for="{{ $idEmail }}">Email Address</label>
             <input
               id="{{ $idEmail }}"
-              class="input w-full shadow rounded border border-s-4 p-1 pr-8 font-sans"
+              class="spl-input"
               type="email"
               placeholder="billpenn@example.com"
               name="email"
               required
             />
-            <span class="icon is-left absolute top-[10px] right-3 h-4 w-4">
+            <span class="icon is-left absolute top-3 right-3 h-4 w-4">
               <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
                 <use xlink:href="#email-svg"></use>
               </svg>
@@ -122,7 +122,7 @@
               <select
                 id="{{ $idSubject }}"
                 class="select block w-full appearance-none bg-white text-s-6 shadow 
-                outline-none ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8
+                outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6
                rounded border border-s-4 p-1"
                 name="subject"
                 @input="cc = $el.options[$el.selectedIndex].dataset.cc"

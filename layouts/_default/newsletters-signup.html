@@ -174,7 +174,7 @@
               >
               <input
                 id="{{ $idFname }}"
-                class="input w-full rounded border h-11 border-s-4 py-2 px-4 font-sans"
+                class="spl-input"
                 type="text"
                 name="FNAME"
                 required
@@ -190,7 +190,7 @@
 
               <input
                 id="{{ $idLname }}"
-                class="input w-full rounded border h-11 border-s-4 py-2 px-4 font-sans"
+                class="spl-input"
                 type="text"
                 name="LNAME"
                 required
@@ -204,11 +204,17 @@
               >
               <input
                 id="{{ $idEmail }}"
-                class="input w-full rounded border h-11 border-s-4 py-2 px-4 font-sans"
+                class="spl-input"
                 type="email"
                 name="EMAIL"
                 required
               />
+              <span class="icon is-left absolute bottom-4 right-3 h-4 w-4">
+              <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+                <use xlink:href="#email-svg"></use>
+              </svg>
+            </span>
+
             </p>
             <div class="sm:ml-5 self-end mt-2 flex-1">
               <button

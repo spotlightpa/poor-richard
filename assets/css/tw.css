@@ -183,6 +183,9 @@
 .content-aside ol > li + li {
   @apply mt-3;
 }
+.spl-input {
+  @apply w-full rounded border border-s-4 py-2 pl-4 pr-7 font-sans outline-none ring-2 ring-transparent focus:ring-yellow;
+}
 
 .site-nav {
   @apply bg-black px-4;
