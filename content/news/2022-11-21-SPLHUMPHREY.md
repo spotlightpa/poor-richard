@@ -12,13 +12,14 @@ internal-id = "SPLHUMPHREY"
 kicker = "Criminal Justice"
 modal-exclude = false
 no-index = false
-og-title = "Judges in Pa. can now dismiss charges against people ‘incompetent’ to stand trial"
+og-title = "Judges in Pa. can now dismiss charges against people deemed mentally incompetent"
 published = 2022-11-21T05:00:00-05:00
+series = ["A Criminal Solution"]
 slug = "pennsylvania-supreme-court-ruling-humphrey-competency"
 suppress-date = false
 title = "Judges in Pa. can now dismiss charges against people ‘incompetent’ to stand trial, but flaws remain"
-title-tag = "Judges in PA can dismiss charges for ‘incompetent’ defendants"
-topics = ["Criminal Justice","Corrections"]
+title-tag = "Judges in PA can nix charges for mentally incompetent"
+topics = ["Criminal Justice", "Corrections"]
 +++
 
 <i>This story is a collaboration between </i><a href="https://www.spotlightpa.org/" target="_blank"><i>Spotlight PA</i></a><i> and the </i><a href="https://pinjnews.org/" target="_blank"><i>Pittsburgh Institute for Nonprofit Journalism</i></a><i>, published as part of a Pittsburgh Media Partnership project. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s free newsletters</i></a><i>.</i>

@@ -21,11 +21,13 @@ topics = ["The Capitol", "Economy"]
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>
 
+<i>This story was updated on March 7 to include remarks from Gov. Josh Shapiro’s budget address.</i>
+
 HARRISBURG — An upcoming federal cost-of-living adjustment to Social Security benefits could shake up a state program that helps older and disabled Pennsylvanians pay their rent and property taxes.
 
 Lawmakers have just a few months to pass legislation that would expand the shrinking rebate program.
 
-On the campaign trail, Democratic Gov. Josh Shapiro promised to support such a measure, but the fate of any proposal depends on coming budget negotiations between the governor and the legislature.
+In his budget address Tuesday, Democratic Gov. Josh Shapiro <a href="https://www.spotlightpa.org/news/2023/03/governor-shapiro-budget-education-spending-conservative/">proposed a major expansion of the program</a>, but the fate of any proposal depends on coming negotiations between the governor and the legislature.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -34,7 +36,9 @@ The issue is not new to Harrisburg. As Spotlight PA has reported, the number of 
 
 Most people who are eligible for the state rebates also receive Social Security payments, which are adjusted each year to keep up with inflation. The state program doesn’t account for this. As a result, these routine Social Security increases can cause people who’ve been receiving rebates for years to suddenly find that their income is too high to qualify — even though their financial situation hasn’t really changed.
 
-During his campaign, Shapiro proposed expanding the program to cover an additional 275,000 people — an increase of roughly 60% — and increasing the maximum rebate amount to $1,000. The estimated price tag for those changes is $400 million, which Shapiro previously said could be paid for with leftover federal pandemic aid.
+In his budget address, Shapiro proposed boosting the dollar value of the rebates, increasing the income cap, and tying the income limits to inflation. This, he said, will ensure that Pennsylvania “never has to tell another senior, ‘Sorry, you’re out of luck’ because their Social Security payment went up and we didn’t act.”
+
+All told, Shapiro said the changes would nearly double the number of people eligible for the assistance, as well as the amount they could receive. Expanding the rebate program was a key campaign promise for the governor.
 
 For years, a handful of lawmakers from both parties tried to address the program’s declining numbers, but those bills mostly died in committee. In the current session, legislators have already introduced at least eight bills that would increase the income limits to qualify for the program, or ensure that recipients do not lose out because of Social Security cost-of-living adjustments.
 

@@ -43,7 +43,11 @@
       {{ partialCached "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-newsletter.html" . }}
+      {{ partial "tw/modal-ribbon.html" ( dict
+        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
+        "actionColor" "#FFCB05"
+        )
+      }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -57,7 +61,7 @@
     "banner-svg" "/img/logos/banner-default-on-trans.svg"
     "bars-svg" "@fontawesome/solid/bars.svg"
     "calendar-svg" "@fontawesome/regular/calendar-check.svg"
-    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "close-svg" "@fontawesome/solid/xmark.svg"
     "down-triangle-svg" "@fontawesome/solid/caret-down.svg"
     "email-svg" "@fontawesome/regular/envelope.svg"
     "fb-svg" "@fontawesome/brands/facebook-f.svg"

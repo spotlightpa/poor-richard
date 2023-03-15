@@ -22,6 +22,10 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><b>Update, March 7: </b></i><a href="https://www.spotlightpa.org/news/2023/03/governor-shapiro-budget-education-spending-conservative/" target="_blank"><i><b>Shapiro’s $44.4B budget pitch keeps Pa. spending relatively flat, preserves some pandemic benefits</b></i></a>
+
+<i>Original story</i>
+
 HARRISBURG — As Gov. Josh Shapiro prepares to pitch his first state budget, he’s doling out a few hints about what will be in it.
 
 The Democrat wants more money for <a href="https://www.pennlive.com/politics/2023/03/shapiros-first-budget-to-include-more-money-for-neighborhood-community-revitalization.html?utm_campaign=pennlive_sf&amp;utm_medium=social&amp;utm_source=twitter">community development programs</a>, <a href="https://twitter.com/atraceofcool/status/1629476005768224768">child care</a>, and <a href="https://www.wesa.fm/economy-business/2023-03-02/shapiro-hints-education-economy-will-get-top-billing-in-pennsylvania-budget-proposal">tech research</a>; he’s planning <a href="https://apnews.com/article/pennsylvania-shapiro-teacher-police-nurse-tax-credit-0a360c563a156d8f53dc07e2b1bff77d">a tax break</a> for teachers, police officers, and nurses; and he <a href="https://apnews.com/article/school-funding-lawsuit-pennsylvania-budget-ab7d29bf4aff77833e4b8fd9001cc3d1?mc_cid=8d3fc9d27c&amp;mc_eid=f5a4195818">may take a stab at</a> making school funding more equitable.

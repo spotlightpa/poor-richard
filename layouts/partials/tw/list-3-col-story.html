@@ -39,13 +39,19 @@
       }}
       <div class="contents" data-ga-category="story-{{ add 1 $i }}">
         {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
         {{ if eq $.eyebrow "rubric" }}
           {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
         {{ end }}
         {{ partial "tw/thumb-v-item.html" (dict
           "wrapperClass" "row-subgrid row-span-3 w-full grid-flow-row gap-y-0"
           "imgOpts" $imgOpts
-          "rubricLink" $params.link
+          "rubricLink" $rubricLink
           "eyebrow" $eyebrow
           "link" $params.link
           "hed" .LinkTitle
