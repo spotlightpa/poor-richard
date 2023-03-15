@@ -1,5 +1,4 @@
 {{ with .block }}
-  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.js"></script>
   <section
     class="min-h-[65vh] bg-black bg-opacity-10 py-20"
     data-ga-category="links"
@@ -14,7 +13,7 @@
 
         <div
           x-data="{
-        skip: 3,
+        skip: 1,
         atBeginning: false,
         atEnd: false,
         next() {
@@ -111,11 +110,12 @@
                 tabindex="0"
                 role="listbox"
                 aria-labelledby="carousel-content-label"
-                class="flex w-full snap-x snap-mandatory overflow-x-scroll"
+                class="flex-no-wrap hide-scrollbars mx-2 flex flex-1 overflow-y-hidden overflow-x-scroll md:-mx-4"
               >
                 {{ range . }}
 
                   <li
+                    style="scroll-snap-type: x mandatory"
                     x-bind="disableNextAndPreviousButtons"
                     role="option"
                     class="article-content group mb-2 inline-block w-2/3 flex-none snap-center px-2 pr-2 pb-2 focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
