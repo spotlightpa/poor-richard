@@ -9,13 +9,6 @@ authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 newsletter = """
   {{<newsletter/talkofthetown-full-form>}}
 """
-donate = """
-{{<donate-slim
-    title="Become a Supporter"
-    cta="Join"
-    theme="centrecounty"
->}}
-"""
 supplemental = """
 {{<supplemental>}}
 <div class="article-content text-black text-lg md:col-span-6 md:col-start-3 md:row-span-1 md:row-start-2">
@@ -51,6 +44,12 @@ supporters = """
 title =  "Team"
 layout = "team"
 authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
+
+[[blocks]]
+layout = "donate"
+title="Become a Supporter"
+cta="Join"
+theme="centrecounty"
 +++
 
 # A Novel Approach to Reinvigorating Local News
