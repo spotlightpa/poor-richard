@@ -50,9 +50,9 @@
       <div class="mx-auto max-w-screen-lg">
     {{ partial "tw/breadcrumbs.html" . }}
   </div>
-
+    {{ if or (.Content) (.Page.Params.subhed) }}
     <div
-      class="mx-auto max-w-screen-lg text-lg font-medium  py-14 px-5 lg:px-0"
+      class="mx-auto max-w-screen-lg text-lg font-medium py-14 px-5 lg:px-0"
     >
       {{ with .Page.Params.subhed }}
         <h2 class="font-black text-5xl mb-5 uppercase">{{ . }}</h2>
@@ -63,6 +63,7 @@
         </div>
       {{ end }}
     </div>
+    {{ end }}
     {{ with .Page.RenderString (.Param "newsletter") }}
       <div class=" font-sans">
         {{ . }}

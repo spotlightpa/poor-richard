@@ -37,7 +37,7 @@ This expansion has also been made possible by a $1 million grant from the Americ
 
 supporters = """
 {{<supporters
-  title="Supporters of Spotlight PA's State College Bureau  "
+  title="State College Bureau Donors"
   dataSrc="stateCollege"
   category="Spotlight PA's State College Bureau (Donations of $1,000 and above)"
 >}}
