@@ -73,6 +73,6 @@ Alpine.plugin(focus);
 
 Alpine.start();
 
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 
 smoothscroll.polyfill();
