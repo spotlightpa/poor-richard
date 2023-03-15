@@ -80,8 +80,8 @@ We set some cookies ourselves and others are set by third parties.  You can man
 
 The following chart lists the different types of cookies that we and our service providers use on the Services, examples of who serves those cookies and links to the privacy notices and opt-out information of those cookie servers.
 
-<div class=" overflow-y-scroll w-full rounded">
-<table class="border-collapse table-fixed text-sm">
+<div class=" w-full rounded overflow-x-scroll overflow-y-hidden">
+<table class="border-collapse table-auto text-sm">
   <thead class="bg-s-2 text-left">
     <tr class="border-b border-s-3">
       <th class=" p-2">
@@ -94,7 +94,7 @@ The following chart lists the different types of cookies that we and our service
           Purpose
         </p>
       </th>
-      <th class=" p-2 whitespace-normal">
+      <th class="p-2">
         <p>
           Who Serves (for example)
         </p>
@@ -102,7 +102,7 @@ The following chart lists the different types of cookies that we and our service
     </tr>
   </thead>
   <tbody>
-    <tr class="even:bg-s-1  border-b border-s-3">
+    <tr class="even:bg-s-1 border-b border-s-3">
       <td class="align-baseline p-2">
         <p>
           Essential
