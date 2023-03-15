@@ -72,3 +72,7 @@ import focus from "@alpinejs/focus";
 Alpine.plugin(focus);
 
 Alpine.start();
+
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
