@@ -8,9 +8,9 @@ aliases = ["/jobs/"]
 +++
 ### Current openings:
 
-* Newsletter Writer/Reporter
-* Berks County Project Lead
-* Membership Manager
+* [Newsletter Writer/Reporter](#newsletter-writerreporter)
+* [Berks County Project Lead](#berks-county-project-lead)
+* [Membership Manager](#membership-manager)
 
 - - -
 
@@ -45,7 +45,7 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 
 - - -
 
-## Berks County Project Lead 
+## Berks County Project Lead
 
 ### **[Apply Here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/735)**
 
