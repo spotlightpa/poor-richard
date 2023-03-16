@@ -55,24 +55,26 @@
             required
           />
         </p>
-          <p
-            class="relative flex-[0_0_100%] mt-3 sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 lg:mt-0 md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+        <p
+          class="relative mt-3 flex-[0_0_100%] sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 md:flex-[0_0_100%] lg:mt-0 lg:flex-[0_1_calc(50%-10px)]"
+        >
+          <label class="hidden" for="{{ $idEmail }}">Email Address</label>
+          <input
+            id="{{ $idEmail }}"
+            class="spl-input"
+            type="email"
+            placeholder="billpenn@example.com"
+            name="email"
+            required
+          />
+          <span
+            class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
           >
-            <label class="hidden" for="{{ $idEmail }}">Email Address</label>
-            <input
-              id="{{ $idEmail }}"
-              class="spl-input"
-              type="email"
-              placeholder="billpenn@example.com"
-              name="email"
-              required
-            />
-            <span class="pointer-events-none inset-y-0 inline-flex items-center absolute right-3 text-s-4">
-              <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
-                <use xlink:href="#email-svg"></use>
-              </svg>
-            </span>
-          </p>
+            <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+              <use xlink:href="#email-svg"></use>
+            </svg>
+          </span>
+        </p>
       </div>
 
       <div class="field mb-3">
