@@ -4,11 +4,11 @@
 {{ $dataSrc := .dataSrc }}
 <div
   id="{{ $id }}"
-  class="m-auto flex max-w-screen-xl flex-wrap justify-center p-5 md:px-0 md:py-14"
+  class="m-auto flex max-w-screen-xl flex-wrap justify-center p-5 xl:px-0 md:py-4"
 >
   {{ with $title}}
   <h2
-    class="w-full uppercase max-w-screen-lg text-4xl font-black leading-none text-s-6 md:text-6xl"
+    class="w-full uppercase max-w-screen-lg text-4xl font-black leading-none text-s-6 md:text-6xl mb-4"
   >
     {{ . }}
   </h2>
@@ -21,7 +21,7 @@
     </h3>
   {{ end }}
   <ul
-    class=" column-gap-2 w-full max-w-screen-lg columns-2 gap-10 py-8 md:columns-3"
+    class=" column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pt-3 pb-8 md:columns-3"
   >
     {{ with $dataSrc }}
       {{ partial "helper/get-supporter-list" $dataSrc }}
