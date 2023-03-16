@@ -103,8 +103,7 @@
                       {{ $page.Params.occurence }}
                     </span>
                     <input
-                      class=" mr-3 h-5 w-5 rounded border appearance-none sm:-ml-9 md:-ml-0 lg:-ml-9 border-s-4 
-                      accent-yellow hover:accent-yellow-4 checked:bg-yellow checked: checked:bg-[url('/img/icons/check.svg')]"
+                      class="peer mr-3 h-5 w-5 opacity-0 rounded border appearance-none sm:-ml-9 md:-ml-0 lg:-ml-9 border-s-4 "
                       type="checkbox"
                       x-model="isChecked"
                       id="{{ $id }}"
@@ -113,6 +112,10 @@
                       data-ga-button
                       data-ga-action="toggle-newsletter:{{ $slug }}"
                     />
+                    <svg class="-ml-8 mr-3 h-5 w-5 p-0 rounded border border-s-4 bg-white fill-none peer-checked:fill-black peer-checked:bg-yellow" viewBox="0 0 1 1">
+                      <use xlink:href="#check-svg"></use>
+                    </svg>
+                   
                     <div
                       class="order-1 flex items-center flex-[0_1_calc(100%_-_36px)] xl:flex-auto xl:flex-grow-0 xl:order-4 text-xs font-light tracking-widest"
                     >
