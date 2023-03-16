@@ -30,26 +30,29 @@
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-black py-14 px-3 text-white">
-    <div
-      class="mx-auto max-w-screen-xl items-center md:min-h-[110px] gap-y-3 gap-x-5 md:grid md:grid-cols-12"
-    >
-      <h1
-        class="uppercase font-serif text-[45px] leading-none col-span-5 col-start-2 row-span-1 row-start-1 font-black"
-      >
-        {{ .Title }}
-      </h1>
-      <div
-        class="font-raleway col-span-5 col-start-7 row-start-1 text-xl font-medium mt-3 md:mt-0"
-      >
-        {{ .Description }}
-      </div>
-    </div>
-  </header>
-  <section class="font-raleway bg-s-0">
+  <header class="bg-s-0 py-8 px-3 text-black">
     <div class="mx-auto max-w-screen-lg">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
+    <div class="mx-auto w-full max-w-screen-lg">
+      <h1
+        class="mx-auto max-w-3xl text-center font-serif text-3xl font-extrabold leading-none tracking-wide sm:text-4xl md:text-6xl"
+      >
+        {{- .Title -}}
+      </h1>
+    </div>
+    <div class="mx-auto mb-5 w-full max-w-prose">
+      <h2
+        class="mt-4 text-center font-sans text-lg font-semibold leading-tight text-s-6"
+      >
+        {{ .Param "dek" | default .Params.description }}
+      </h2>
+
+      {{ partial "tw/image-hero.html" . }}
+
+    </div>
+  </header>
+  <section class="font-raleway bg-s-0">
     {{ if or (.Content) (.Page.Params.subhed) }}
       <div
         class="mx-auto max-w-screen-lg text-lg font-medium py-14 px-5 lg:px-0"
