@@ -77,7 +77,7 @@
             tabindex="0"
             role="region"
             aria-labelledby="carousel-label"
-            class="flex space-x-6"
+            class="flex gap-x-4"
           >
             <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
 
@@ -108,9 +108,6 @@
               <span class="sr-only">Skip to previous slide page</span>
             </button>
 
-            <span id="carousel-content-label" class="sr-only" hidden
-              >Carousel</span
-            >
             {{ with .entries }}
 
               <ul
@@ -126,7 +123,7 @@
                     style="scroll-snap-type: x mandatory"
                     x-bind="disableNextAndPreviousButtons"
                     role="option"
-                    class="article-content group mb-2 inline-block w-2/3 flex-none snap-center px-2 pr-2 pb-2 text-lg focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
+                    class="article-content group mb-2 inline-block w-full sm:w-2/3 flex-none snap-center px-2 pr-2 pb-2 text-lg focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
                   >
                     {{ $.Page.RenderString .testimonial }}
                   </li>
@@ -139,7 +136,7 @@
             <!-- Next Button -->
             <button
               x-on:click="next"
-              class="text-6xl"
+              class="text-6xl w-10 md:w-auto"
               :aria-disabled="atEnd"
               :tabindex="atEnd ? -1 : 0"
               :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
