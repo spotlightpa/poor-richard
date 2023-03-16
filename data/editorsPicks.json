@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-03-15-SPLSHACEL.md"
+    "content/statecollege/2023-03-16-SPLPSUBUDGET.md"
   ],
-  "subfeatures": [
-    "content/news/2023-03-07-SPLBUDGET.md",
-    "content/news/2023-03-07-SPLREBNEG.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-03-15-SPLSHACEL.md",
     "content/news/2023-03-14-SPLSUNCOLXX.md",
-    "content/news/2023-03-13-SPLEXEMPT.md",
-    "content/news/2023-03-11-SPLZABLEAD.md"
+    "content/news/2023-03-13-SPLEXEMPT.md"
   ],
   "topper": []
 }
