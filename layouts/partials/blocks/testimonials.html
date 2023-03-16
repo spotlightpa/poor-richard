@@ -1,4 +1,13 @@
 {{ with .block }}
+  {{ $jsOpts := dict
+    "minify" true
+  }}
+  {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
+  <script type="module">
+    {{ $js.Content | safeJS }}
+  </script>
+
+
   <section
     class="min-h-[65vh] bg-black bg-opacity-10 py-20"
     data-ga-category="links"
