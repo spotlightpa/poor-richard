@@ -1,8 +1,6 @@
 +++
 published = 2019-09-05T13:14:35.433Z
-title = "Support Us"
-subhed = "How We’re Funded"
-description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania."
+title = "Support Spotlight PA"
 url = "/support/"
 layout = "support"
 
