@@ -27,7 +27,7 @@ Chairing that committee — in the only arm of government controlled by Republic
 
 Dush is perhaps best known for leading an attempt by the Pennsylvania Senate to perform <a href="https://www.inquirer.com/politics/election/doug-mastriano-pa-election-audit-20210707.html">an Arizona-style investigation of the 2020 election</a>, though his history with hard-right positions on election issues extends further back. Already this session, he has sponsored bills to <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=S&type=B&bn=292">eliminate mail voting</a> and <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&sind=0&body=S&type=B&bn=130">require additional election audits</a>.
 
-“People are worried about getting any election legislation past him,” said Kyle Miller, a policy advocate with Protect Democracy and a former aide to a Democratic member of the committee. “We don’t see a realistic path for getting anything done, given his past.”
+“People are worried about getting any election legislation past him,” said Kyle Miller, a policy advocate with the nonpartisan group Protect Democracy and a former aide to a Democratic member of the committee. “We don’t see a realistic path for getting anything done, given his past.”
 
 But Democratic lawmakers say Harrisburg’s new political dynamic — with their party in charge of the state House for the first time in more than a decade — means Dush must adapt to the new reality and engage in order to stay relevant.
 
