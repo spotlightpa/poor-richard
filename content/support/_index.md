@@ -43,7 +43,7 @@ copy = """
 
   [Leaders in Action →](/support/leaders-in-action/#our-current-leaders)
 
-  [State College regional bureau supporters →](/support/state-college/#our-major-donors)
+  [State College regional bureau supporters →](/support/state-college/#state-college-bureau-donors)
 """
 
 [[blocks]]
