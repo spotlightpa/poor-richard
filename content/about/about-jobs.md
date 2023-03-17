@@ -8,9 +8,31 @@ aliases = ["/jobs/"]
 +++
 ### Current openings:
 
+* [Digital Growth Strategist](#digital-growth-strategist)
 * [Newsletter Writer/Reporter](#newsletter-writerreporter)
 * [Berks County Project Lead](#berks-county-project-lead)
 * [Membership Manager](#membership-manager)
+
+- - -
+## Digital Growth Strategist
+
+### [Apply Here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/739)
+
+[](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/739)**Summary:** We are seeking a Digital Growth Strategist to join our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across more than 90 partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners. Get in on the ground floor of a fast-growing statewide news organization recognized as one of the most promising new models for collaborative local journalism in the United States. 
+
+**What you’ll do:** Reporting directly to the executive director, the Digital Growth Strategist will oversee the alignment of Spotlight PA’s product and editorial touchpoints to create a unified marketing strategy aimed at audience and revenue growth to sustain our award-winning, public-service journalism. The strategist will drive the acquisition, activation, retention, and reactivation of readers and members using new and existing product channels, including our website, email newsletters, social media, virtual and in-person events, partner distribution network, organic and paid search, and display advertising. In addition, they will educate, inform, and collaborate with staff and managers regularly on how metrics and technology can guide and drive the organization to desired business outcomes.
+
+This role is funded through a grant from the American Journalism Project, which seeks to help a select group of the most promising nonprofit newsrooms in the United States hire experienced business and digital leaders to sustain vital public-service journalism.
+
+**Who we’re looking for:** The growth strategist should have experience developing and implementing successful data-informed marketing strategies aligned with business goals. Those marketing techniques should be aimed at acquiring customers and measuring and driving conversion and/or retention. Other relevant skills or experience include A/B testing, a strong knowledge of SEO best practices, collection and analysis of user feedback, identifying growth opportunities and aligning current products or launching new products, developing digital campaigns to increase web traffic, and using data and analytics to maximize the effectiveness and performance of marketing spend. Applicants should be passionate about revitalizing nonpartisan, independent journalism in Pennsylvania and helping a fast-growing organization take the next steps toward long-term organizational stability and success. We welcome applicants with relevant experience in any industry or sector, regardless of their career path.
+
+The ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie and equity across all of the work that we do, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of doing our work and connecting it with readers across the state.
+
+**This job is full-time and includes benefits. The position is remote from anywhere in the United States. This position is budgeted for a salary from $90,000-$100,000, depending on experience. Applicants should include a resume and cover letter clearly articulating past successes and why they’re a good fit for this role.**
+
+Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
+
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
 - - -
 
