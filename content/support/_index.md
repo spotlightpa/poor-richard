@@ -74,3 +74,7 @@ Recommend a gift via your donor-advised fund. Please direct it to The Lenfest In
 ## Donate Shares of Stock
 
 For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org). 
+
+## Other Ways to Give
+
+For Qualified Charitable Distributions (QCD), planned giving, and other ways to give, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org)
