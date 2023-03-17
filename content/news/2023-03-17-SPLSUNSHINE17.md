@@ -57,7 +57,9 @@ The office’s online appeal form helps ensure people’s cases aren’t <a href
 
 ## 3. Consider mediation.
 
-If you and the agency both <a href="https://www.openrecords.pa.gov/Appeals/Mediation.cfm">agree to mediation</a>, it could give the agency a chance to clarify what’s available or you a chance to clarify what you’ll accept. If mediation fails, the appeals process continues normally.”Any time you can have a conversation with the agency and they’re open to it, I think that’s a good thing,” said Melissa Melewsky, media law counsel for the Pennsylvania NewsMedia Association, which Spotlight PA is a member of. “The Right-to-Know Law and the appeals process is not intended to be adversarial. It’s intended to facilitate access.”
+If you and the agency both <a href="https://www.openrecords.pa.gov/Appeals/Mediation.cfm">agree to mediation</a>, it could give the agency a chance to clarify what’s available or you a chance to clarify what you’ll accept. If mediation fails, the appeals process continues normally.
+
+“Any time you can have a conversation with the agency and they’re open to it, I think that’s a good thing,” said Melissa Melewsky, media law counsel for the Pennsylvania NewsMedia Association, which Spotlight PA is a member of. “The Right-to-Know Law and the appeals process is not intended to be adversarial. It’s intended to facilitate access.”
 
 ## 4. Check out the big index of open records cases.
 
@@ -72,6 +74,8 @@ After you file your appeal, the office is responsible for creating a schedule fo
 
 If you want to submit additional information and need more time, ask for an extension. That can be especially useful if you have other commitments or you want to respond to a new argument from an agency.
 
-Separately, appeals officers might ask for more time to make a decision. Melewsky recommends agreeing if you can.”When you have decisions that are rushed, it’s not always the best decision,” Melewsky told Spotlight PA. “You want to give the appeals officer the time and the information that she needs to make the decision that’s consistent with the law.”
+Separately, appeals officers might ask for more time to make a decision. Melewsky recommends agreeing if you can.
+
+“When you have decisions that are rushed, it’s not always the best decision,” Melewsky told Spotlight PA. “You want to give the appeals officer the time and the information that she needs to make the decision that’s consistent with the law.”
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
