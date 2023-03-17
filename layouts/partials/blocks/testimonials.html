@@ -7,10 +7,7 @@
     {{ $js.Content | safeJS }}
   </script>
 
-  <section
-    class="min-h-[65vh] bg-black bg-opacity-10 py-20"
-    data-ga-category="links"
-  >
+  <section class="min-h-[65vh] bg-s-2 py-20" data-ga-category="links">
     <div class="mx-auto max-w-6xl px-5">
       <div class="lg:flex">
         <h2
@@ -123,7 +120,7 @@
                     style="scroll-snap-type: x mandatory"
                     x-bind="disableNextAndPreviousButtons"
                     role="option"
-                    class="article-content group mb-2 inline-block w-full sm:w-2/3 flex-none snap-center px-2 pr-2 pb-2 text-lg focus:outline-none sm:pr-8 md:w-1/2 md:px-4 md:pr-12"
+                    class="article-content group mb-2 inline-block w-full flex-none snap-center px-2 pr-2 pb-2 text-lg focus:outline-none sm:w-2/3 sm:pr-8 md:w-1/2 md:px-12"
                   >
                     {{ $.Page.RenderString .testimonial }}
                   </li>
@@ -136,7 +133,7 @@
             <!-- Next Button -->
             <button
               x-on:click="next"
-              class="text-6xl w-10 md:w-auto"
+              class="w-10 text-6xl md:w-auto"
               :aria-disabled="atEnd"
               :tabindex="atEnd ? -1 : 0"
               :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
