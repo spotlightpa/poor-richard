@@ -11,9 +11,7 @@ newsletter = """
 """
 supplemental = """
 {{<supplemental>}}
-<div class="article-content text-black text-lg md:col-span-6 md:col-start-3 md:row-span-1 md:row-start-2">
-
-Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
+{{<image src="https://www.spotlightpa.org/imgproxy/insecure/rt:fill/w:590/h:372/g:ce/el:1/q:75/MjAyMi8wMi8wMWd6LWszYmItbno3Mi1zcGUyLmpwZWc=.jpeg" description="Sunsrise over State College, PA" credit="Abby Drey / Centre Daily Times" width="610" height="398">}}Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
 
 Spotlight PA is conducting ongoing community listening sessions to determine the region’s most urgent information needs. Our team of journalists has the time, resources, and mandate to dig deep into the issues of the region. You can expect reporting on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run. All of Spotlight PA’s reporting is conducted through an equity and accountability lens, examining issues that are causing harm and proposing solutions.
 
