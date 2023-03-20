@@ -59,7 +59,7 @@ Such costs were “not an unreasonable expense when talking about the safety and
 
 According to Spotlight PA’s analysis, the university paid the six law enforcement agencies nearly $1.9 million for the home games in 2021, averaging $270,000 each.
 
-Security costs for Penn State football games are an expense paid by the university’s Intercollegiate Athletics department. An <a href="https://gopsusports.com/documents/2023/2/1/2021-22_NCAA_Report_Final.pdf">NCAA financial report</a> shows that in 2021 the department spent more than $13 million on “game expenses,” which included game day security. No state or government funding was used for game day expenses, as Intercollegiate Athletics’ income covered the entire cost, according to the report.
+Security costs for Penn State football games are an expense paid by the university’s Intercollegiate Athletics department. An <a href="https://web.archive.org/20230301172809/https://gopsusports.com/documents/2023/2/1/2021-22_NCAA_Report_Final.pdf">NCAA financial report</a> shows that in 2021 the department spent more than $13 million on “game expenses,” which included game day security. No state or government funding was used for game day expenses, as Intercollegiate Athletics’ income covered the entire cost, according to the report.
 
 <i>Spotlight PA’s former intern Emma Dooling contributed reporting.</i>
 

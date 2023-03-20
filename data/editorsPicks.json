@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-03-15-SPLSHACEL.md"
+    "content/news/2023-03-20-SPLCOMPSOLUTIONS20.md"
   ],
   "subfeatures": [
-    "content/news/2023-03-07-SPLBUDGET.md",
-    "content/news/2023-03-07-SPLREBNEG.md"
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2023-03-09-SPLCOMPMINSIDE.md",
+    "content/news/2023-03-09-SPLCOMPHOWSIDE.md"
   ],
   "topSlots": [
-    "content/news/2023-03-14-SPLSUNCOLXX.md",
-    "content/news/2023-03-13-SPLEXEMPT.md",
-    "content/news/2023-03-11-SPLZABLEAD.md"
+    "content/news/2023-03-06-SPLVITAL316.md",
+    "content/news/2023-03-17-SPLSUNSHINE17.md",
+    "content/statecollege/2023-03-17-SPLSCOSAZE.md"
   ],
   "topper": []
 }
