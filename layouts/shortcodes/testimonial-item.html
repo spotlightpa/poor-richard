@@ -1,0 +1,17 @@
+{{ $author := .Get "author" | default "Test" }}
+<li
+  style="scroll-snap-type: x mandatory"
+  x-bind="disableNextAndPreviousButtons"
+  role="option"
+  class="article-content group mb-2 inline-block w-full flex-none snap-center px-2 pr-2 pb-2 text-lg focus:outline-none sm:w-2/3 sm:pr-8 md:w-1/2 md:px-12"
+>
+  <blockquote>
+    <p
+      class="relative before:absolute before:-ml-8  before:text-5xl before:italic before:text-s-7 before:content-['“'] after:absolute after:ml-2 after:text-5xl after:italic after:text-s-7 after:content-['”']"
+    >
+      {{ .Inner }}
+    </p>
+
+    <cite class=" italic">&ndash; <strong>{{ $author }}</strong></cite>
+  </blockquote>
+</li>
