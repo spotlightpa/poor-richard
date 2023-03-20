@@ -16,7 +16,6 @@ import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 
 for (let [name, comp] of [
-  ["carousel", carousel],
   ["embedList", embedList],
   ["funnelStatus", funnelStatus],
   ["imageRotator", imageRotator],
