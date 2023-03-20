@@ -9,8 +9,8 @@ title-tag = "Official Pennsylvania Primary Election Center 2023"
 description = "See how to vote, where to vote, polling places, sample ballots, candidate & issue guides, and more from Spotlight PA."
 dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more will appear on the May 16 ballot. "
 extended-kicker = "Pa. Election Center 2023"
-linktitle = "Everything you need to prepare for Pa.’s high-stakes 2022 election"
-blurb = "Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
+linktitle = "Everything you need to prepare for Pa.’s 2023 election"
+blurb = "Spotlight PA wants to empower voters to make an informed decision on May 16. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
 url = "/elections/"
 aliases = [
     "/election/"
@@ -109,23 +109,19 @@ link = "#credits"
 
 
 [[dates]]
-date = "2022-10-24"
-dateVerbose = "Oct. 24"
+date = "2023-05-01"
+dateVerbose = "May 1"
 name = "Last day to register to vote"
 
 [[dates]]
-date = "2022-11-01"
-dateVerbose = "Nov. 1"
-name = "Last day to request a mail ballot"
+date = "2023-05-09"
+dateVerbose = "May 9"
+name = "Last day to apply for a mail ballot"
 
 [[dates]]
-date = "2022-11-08"
-dateVerbose = "Nov. 8"
-name = "Election Day 2022"
+date = "2023-05-16"
+dateVerbose = "May 16"
+name = "Election Day"
 +++
 
-As Pennsylvania gears up for the pivotal 2022 election, Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Specifically, we’ll focus our reporting resources on where candidates stand on the issues, how the voting process works, and how to get involved.
-
-As part of that, our election series — [“One Vote, Two Pennsylvanias”](/series/one-vote-two-pennsylvanias/) — will clearly articulate through policy proposals and issue-based reporting the vastly different visions the candidates for governor have for the future of our state. You can find links to that coverage below, with new stories publishing regularly.
-
-Our new Election Center also features a voter toolbox with key dates, an interactive sample ballot, a campaign finance tracker, and a form to get in contact with our reporters. We invite <a href="mailto:shughes@spotlightpa.org">suggestions for new features</a> for this page, or you can <a href="/news/2022/09/pa-election-2022-mastriano-shapiro-governor-our-coverage-explainer/">read more about how we’re covering the 2022 Pennsylvania election.</a>
+There is no such thing as an off-year election. [more tk]
