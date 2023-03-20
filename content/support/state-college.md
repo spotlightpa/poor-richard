@@ -6,7 +6,6 @@ image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 layout = "support"
 aliases = ["/about/statecollege/"]
-authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 newsletter = """
   {{<newsletter/talkofthetown-full-form>}}
 """
