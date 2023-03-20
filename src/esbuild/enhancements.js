@@ -3,7 +3,6 @@ import Alpine from "alpinejs/src/index.js";
 import "../utils/add-listeners.js";
 import { reportClick } from "../utils/google-analytics.js";
 
-import carousel from "../enhancements/carousel.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
