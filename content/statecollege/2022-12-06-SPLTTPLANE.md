@@ -44,7 +44,7 @@ The jet logged 44 individual flights during that time period, including an Oct. 
 
 3. What is the university’s policy for when to use the private plane for travel as opposed to commercial flights, chartered flights, or driving?
 
-4. Football coach James Franklin’s <a href="https://gopsusports.com/documents/2021/11/23/Franklin_Contract_2021.pdf">current contract</a> stipulates he can use a private aircraft for personal use for “up to 55 hours per calendar year.” Is the private aircraft the university’s jet (N517PD)? Is the “55 hours” of time calculated by time in air, time the plane is away from State College, or another metric?
+4. Football coach James Franklin’s <a href="https://web.archive.org/20221214161823/https://gopsusports.com/documents/2021/11/23/Franklin_Contract_2021.pdf">current contract</a> stipulates he can use a private aircraft for personal use for “up to 55 hours per calendar year.” Is the private aircraft the university’s jet (N517PD)? Is the “55 hours” of time calculated by time in air, time the plane is away from State College, or another metric?
 
 <b>Penn State responded in an email:</b>
 
