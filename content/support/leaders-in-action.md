@@ -1,5 +1,4 @@
 +++
-published = 2019-09-05T13:14:35.433Z
 title = "Our Champions"
 theme = "leaders"
 url = "/support/leaders-in-action/"
