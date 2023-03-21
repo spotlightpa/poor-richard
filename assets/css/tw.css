@@ -187,7 +187,7 @@
   @apply w-full rounded border border-s-4 py-2 pl-4 pr-7 font-sans outline-none ring-2 ring-transparent focus:ring-yellow;
 }
 .spl-select {
-  @apply block w-full appearance-none rounded border border-s-4 bg-white py-2 pl-4 pr-7 font-sans text-2xl text-s-6 shadow outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
+  @apply block w-full appearance-none rounded border border-s-4 bg-white py-2 pl-4 pr-7 font-sans text-s-6 shadow outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
 }
 
 .site-nav {
