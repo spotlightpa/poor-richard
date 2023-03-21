@@ -11,7 +11,7 @@ layout = "promo"
 [[blocks.entries]]
 image = "2022/12/01hs-hn2r-zez7-rm35.png"
 hed = """
-Become A 
+Become a 
 Leader in Action
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
@@ -64,7 +64,7 @@ copy="""
 Make a check out to Spotlight PA and send it to:
 
 **Spotlight PA** <br>
-**228 Walnut St. #11728** <br> 
+**228 Walnut St., #11728** <br> 
 **Harrisburg, PA 17108-1728** <br>
 
 ## Use Your Donor-Advised Fund
@@ -77,4 +77,4 @@ For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joan
 
 ## Other Ways to Give
 
-For Qualified Charitable Distributions (QCD), planned giving, and other ways to give, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org)
+For Qualified Charitable Distributions (QCD), planned giving, and other ways to give, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).

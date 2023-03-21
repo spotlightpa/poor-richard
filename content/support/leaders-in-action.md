@@ -44,4 +44,4 @@ In an era where fraud and dishonesty among public officials (and their supporter
 
 {{<featured/large>}}Leaders in Action are individual donors who are champions of Spotlight PA's mission at the highest level, contributing $1,000 or more annually to our newsroom. Leaders in Action help us to expand Spotlight PA's urgent investigative reporting, increase accessibility to quality, fact-based information for all Pennsylvanians, and advance our commitment to protecting democracy. Leaders in Action not only sustain—but directly advance—unique and vital reporting that drives change.{{</featured/large>}}
 
-{{<featured/large>}}Have questions about joining Leaders in Action? Please contact Michelle Mertz at <a href="mailto:michelle@Spotlight PA.org">michelle@Spotlight PA.org</a>. We are so grateful for your consideration!{{</featured/large>}}
+{{<featured/large>}}Have questions about joining Leaders in Action? Please contact Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. We are so grateful for your consideration!{{</featured/large>}}
