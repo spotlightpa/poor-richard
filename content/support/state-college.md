@@ -13,7 +13,7 @@ supplemental = """
 {{<supplemental>}}
 {{<image src="https://www.spotlightpa.org/imgproxy/insecure/rt:fill/w:590/h:372/g:ce/el:1/q:75/MjAyMi8wMi8wMWd6LWszYmItbno3Mi1zcGUyLmpwZWc=.jpeg" description="Sunsrise over State College, PA" credit="Abby Drey / Centre Daily Times" width="610" height="398">}}Consistent with Spotlight PA’s member-funded, public-service mission, all of this high-quality journalism is distributed at no cost to our media partners — led by the Centre Daily Times — and to the public through <a href="/">spotlightpa.org</a>.
 
-Spotlight PA is conducting ongoing community listening sessions to determine the region’s most urgent information needs. Our team of journalists has the time, resources, and mandate to dig deep into the issues of the region. You can expect reporting on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run. All of Spotlight PA’s reporting is conducted through an equity and accountability lens, examining issues that are causing harm and proposing solutions.
+Our team of journalists has the time, resources, and mandate to dig deep into the issues of the region. You can expect reporting on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run. All of Spotlight PA’s reporting is conducted through an equity and accountability lens, examining issues that are causing harm and proposing solutions.
 
 The team is employed by Spotlight PA and receives organizational support from the statewide newsroom, including management and editing — thus avoiding the significant start-up costs associated with launching a brand-new, nonprofit news outlet. The bureau publishes via Spotlight PA’s extensive distribution network, elevating issues of regional importance to a statewide audience, while also fostering mutual understanding among all Pennsylvanians.
 
@@ -39,15 +39,15 @@ supporters = """
 """
 
 [[blocks]]
-title =  "Team"
-layout = "team"
-authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
-
-[[blocks]]
 layout = "donate"
 title="Become a Supporter"
 cta="Join"
 theme="centrecounty"
+
+[[blocks]]
+title =  "Team"
+layout = "team"
+authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 +++
 
 # A Novel Approach to Reinvigorating Local News
