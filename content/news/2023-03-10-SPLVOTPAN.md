@@ -42,12 +42,10 @@ Our panelists include:
 
 - <b>Carter Walker</b>, reporter, Votebeat
 
-- <b>Jonathan Marks</b>, deputy secretary for elections and commissions, Pennsylvania Department of State
-
 - <b>Khalif Ali</b>, executive director, Common Cause Pennsylvania
 
 - <b>Lisa Schaefer</b>, executive director, County Commissioners Association of Pennsylvania
 
-<b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
+<b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a><b>.</b>
 
 <i>» Spotlight PA’s events operate on a “pay-what-you-can” honor system. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
