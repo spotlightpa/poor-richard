@@ -26,7 +26,7 @@ HARRISBURG —<b> </b>The state agency overseeing Pennsylvania’s troubled mort
 
 The allegations represent a stark reversal from the Pennsylvania Housing Finance Agency. In January, the agency announced that it would end the contract March 31 and run the program itself, but pointedly avoided saying the company, Innovative Emergency Management, Inc., was at fault.
 
-Spotlight PA reported in January that homeowners seeking help from the program faced waits as long as nine months and poor communication from caseworkers. Some applicants with overdue utility bills had their service shut off while waiting. Others watched their credit scores plummet as they fell months behind on mortgage payments because of the delays.
+Spotlight PA reported in January that <a href="https://www.spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/" target="_blank">homeowners seeking help from the program faced waits as long as nine months and poor communication from caseworkers</a>. Some applicants with overdue utility bills had their service shut off while waiting. Others watched their credit scores plummet as they fell months behind on mortgage payments because of the delays.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
