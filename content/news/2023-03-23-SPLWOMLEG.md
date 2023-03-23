@@ -40,7 +40,7 @@ But the state legislature remains far from perfect for women, Kinkead said, poin
 
 “There’s definitely stuff that’s still ongoing,” she said.
 
-{{<picture src="external/gp5f3avr04gftwaxt2bjf2b15r.jpeg" description="“There&#39;s definitely been a change in the number of women that are around and the kinds of men that are elected,” state Rep. Emily Kinkead said." caption="“There&#39;s definitely been a change in the number of women that are around and the kinds of men that are elected,” state Rep. Emily Kinkead said." credit="Amanda Berg / For Spotlight PA">}} 
+{{<picture src="external/y9t0tbke5jzwmdvd9a68ywzvkr.jpeg" description="“There&#39;s definitely been a change in the number of women that are around and the kinds of men that are elected,” state Rep. Emily Kinkead said." caption="“There&#39;s definitely been a change in the number of women that are around and the kinds of men that are elected,” state Rep. Emily Kinkead said." credit="Amanda Berg / For Spotlight PA">}} 
 
 A century after <a href="https://static1.squarespace.com/static/630fa4fd03bd375d69dc4931/t/6369347b2eb2a752dd2f22c9/1667839099935/fast-facts-pennsylvania-2022.pdf">the first women were elected</a> to Pennsylvania’s state legislature, both chambers now have women at their helm — Republican President Pro Tempore Kim Ward in the state Senate, and Democratic Speaker Joanna McClinton in the state House.
 
@@ -54,7 +54,8 @@ She noted that two-thirds of people earning <a href="https://www.workstats.dli.p
 
 “Pennsylvania women are our workers, they are providing for their households, they are people who are working minimum wage,” Bullock said.
 
-<div><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/VU1Fh/embed.js?v=9" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/VU1Fh/full.png" alt="" /></noscript></div>
+<iframe title=" Female representation in the Pa. legislature" aria-label="Interactive line chart" id="datawrapper-chart-VU1Fh" src="https://datawrapper.dwcdn.net/VU1Fh/15/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
 
 ## Contending with ‘gatekeepers’
 
@@ -82,7 +83,9 @@ When she joined the state House, Boscola said she felt isolated at first, recoun
 
 “When you’re a man and you get into the legislature, you’re right up there with them. For women, you start below that and you have to earn that,” Boscola said. “I do see that women are having an easier time now and they’re more accepted because the number has grown so much … They can’t ignore us anymore.”
 
-<div><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/EbyZL/embed.js?v=6" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/EbyZL/full.png" alt="" /></noscript></div>
+<iframe title="Female representation in the Pa. Senate
+" aria-label="Interactive line chart" id="datawrapper-chart-EbyZL" src="https://datawrapper.dwcdn.net/EbyZL/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
 
 While the number of women overall has grown, the number of women of color in the state legislature has remained relatively flat.
 
@@ -100,7 +103,8 @@ State Rep. Tina Pickett (R., Bradford) echoed Bullock, saying that when she firs
 
 “When I first came in, it was very difficult for women to fundraise,” she said. “At a fundraising function, you might see a check written to support the campaign of a man be double or triple what someone might write to support a woman’s campaign.”
 
-<div><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/X7bjb/embed.js?v=7" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/X7bjb/full.png" alt="" /></noscript></div>
+<iframe title="Female representation in the Pa. House" aria-label="Interactive line chart" id="datawrapper-chart-X7bjb" src="https://datawrapper.dwcdn.net/X7bjb/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
 
 ## A shrinking confidence gap
 
@@ -110,7 +114,7 @@ After winning an endorsement from county officials, Cerrato received hundreds of
 
 Cerrato said she hasn’t been treated any differently because of her gender since she arrived for work in the state House. But she noted there are small things that make the lives of female lawmakers, particularly mothers, more difficult.
 
-{{<picture src="external/haaeyz45rzdt18e766taxrf4g0.jpeg" description="State Rep. Emily Kinkead is one of 63 women currently serving in the Pennsylvania House." caption="State Rep. Emily Kinkead is one of 63 women currently serving in the Pennsylvania House." credit="Amanda Berg / For Spotlight PA">}} 
+{{<picture src="external/ee3sfs26bfj62zjd4zj9gfy0mr.jpeg" description="State Rep. Emily Kinkead is one of 63 women currently serving in the Pennsylvania House." caption="State Rep. Emily Kinkead is one of 63 women currently serving in the Pennsylvania House." credit="Amanda Berg / For Spotlight PA">}} 
 
 Cerrato pointed to last-minute changes to committee schedules that have forced her to find child care options in a matter of hours. She said she was coordinating with other female lawmakers in the legislature to organize child care in the Capitol during budget hearings.
 
