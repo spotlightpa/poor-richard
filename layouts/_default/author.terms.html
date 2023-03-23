@@ -16,7 +16,7 @@
             {{ if $author.headshot }}
               {{ $sizes := (slice
                 (dict "width" 64 "height" 64)
-                (dict "width" 64 "height" 64)
+                (dict "width" 128 "height" 128)
                 )
               }}
               {{ $srcset := partial "helper/build-srcset" (dict
@@ -37,7 +37,7 @@
                 {{ partial "tag/picture-maybe-link.html" (dict
                   "link" $author.link
                   "wrapperClass" "m-auto flex aspect-square  w-16 h-16"
-                  "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+                  "pictureClass" "w-full h-full rounded-full overflow-hidden grayscale shadow"
                   "imgClass" "w-full h-full object-cover"
                   "sizeHint" "64px"
                   "eager" false
