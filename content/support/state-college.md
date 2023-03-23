@@ -52,6 +52,4 @@ layout = "team"
 authors = ["Ashad Hajela", "Wyatt Massey", "Sarah Rafacz", "Min Xian"]
 +++
 
-# A Novel Approach to Reinvigorating Local News
-
 {{<featured/large>}}To combat the continuing loss of local news in Pennsylvania, Spotlight PA launched its first pilot regional bureau based in State College and covering north-central Pennsylvania. We hope this bureau will serve as a model for how to address the crisis in local news in communities across the state. As part of this initiative, Spotlight PA hired a team of journalists dedicated to the region, which represents a sizable and significant infusion of talent relative to the number of current reporters.{{</featured/large>}}
