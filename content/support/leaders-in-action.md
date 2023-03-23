@@ -38,7 +38,7 @@ In an era where fraud and dishonesty among public officials (and their supporter
 """
 +++
 
-<svg class=" w-52 h-26 float-right -mt-6 mb-2 ml-1 md:ml-2 md:w-auto md:h-52 xl:-mr-16">
+<svg class=" w-full h-52 sm:w-52 sm:h-26 float-right -mt-6 mb-2 ml-1 md:ml-2 md:w-auto md:h-52 xl:-mr-16">
   <use href="#leaders-in-action" />
 </svg>
 
