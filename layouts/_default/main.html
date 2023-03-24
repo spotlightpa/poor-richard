@@ -4,13 +4,13 @@
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
 
-<header class="bg-white py-8 px-3 text-black">
+<header class="bg-white pt-8 px-5 text-black">
   <div class="mx-auto max-w-screen-lg">
     {{ partial "tw/breadcrumbs.html" . }}
   </div>
   <div class="mx-auto w-full max-w-2xl">
     <h1
-      class="mx-auto font-serif text-3xl font-extrabold leading-none tracking-wide sm:text-4xl md:text-6xl"
+      class="mx-auto text-3xl font-bold leading-tight tracking-wide sm:text-4xl md:text-5xl"
     >
       {{- .Title -}}
     </h1>
@@ -18,7 +18,7 @@
 </header>
 
 <section class="font-raleway bg-white">
-  <div class="mx-auto max-w-screen-lg font-medium  py-10 px-5 lg:px-0">
+  <div class="mx-auto max-w-screen-lg font-medium pt-5 pb-10 px-5 lg:px-0">
     {{ with .Page.Params.subhed }}
       <h2 class="font-black text-5xl mb-5 uppercase">{{ . }}</h2>
     {{ end }}
