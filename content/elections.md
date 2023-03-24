@@ -53,7 +53,7 @@ credits = """
 >}}
 {{<featured/credit
     eyebrow="Illustration"
-    name="Leise Hook"
+    name="Daniel Fishel"
     role="For Spotlight PA"
 >}}
 """

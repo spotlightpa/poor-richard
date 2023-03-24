@@ -1,12 +1,25 @@
 <section class="bg-white px-6 pt-16 pb-6" data-ga-category="header">
-  {{ $banner := partial "helper/build-srcset" (dict
-    "filename" "2022/09/01hj-qggb-frqm-s0j4.png"
+ {{ $banner := partial "helper/build-srcset" (dict
+    "filename" "2023/03/01j1-vcqr-md4q-wdkb.png"
     "sizes" (slice
     (dict "width" 621 "height" 120)
     (dict "width" 1242 "height" 240)
     (dict "width" 1700 "height" 328)
     ))
   }}
+  <div class="mx-auto w-full max-w-prose">
+    <div class="pb-8 md:px-6">
+      <picture class="mx-auto block w-0 min-w-full">
+        <img
+          srcset="{{ $banner }}"
+          alt="Pennsylvania Election 2022"
+          class="h-auto w-full object-cover"
+          sizes="(min-width: 850px) 621px, 90vw"
+          width="2500"
+          height="483"
+        />
+      </picture>
+    </div>
   <div class="mx-auto w-full max-w-prose">
     <h1 class="text-4xl font-semibold leading-none md:text-5xl">
       {{ .Title }}
