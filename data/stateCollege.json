@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-03-17-SPLSCOSAZE.md"
+    "content/statecollege/2023-03-23-SPLHOWLOCAL.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-11-22-SPLSCOVERSIGHT.md"
+    "content/news/2023-01-05-SPLBOREVENT.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-03-17-SPLSCOSAZE.md",
     "content/statecollege/2023-03-16-SPLPSUBUDGET.md",
-    "content/statecollege/2023-03-10-SPLTTSALARIES.md",
-    "content/statecollege/2023-03-02-SPLPSUGREEK.md"
+    "content/statecollege/2023-03-10-SPLTTSALARIES.md"
   ],
   "topper": []
 }
