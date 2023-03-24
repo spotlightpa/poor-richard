@@ -269,7 +269,7 @@
 
 <section class="bg-white px-6 py-8" id="espan" data-ga-category="espanol">
   {{ $espan := site.GetPage "content/topics/español/_index.md" }}
-  {{ $primary := (time "2022-05-17").Unix }}
+  {{ $primary := (time "2023-03-28").Unix }}
   {{ $newEspan := where $espan.RegularPages
     ".PublishDate.Unix" "gt" $primary
   }}
