@@ -128,4 +128,12 @@ dateVerbose = "May 16"
 name = "Election Day"
 +++
 
-There is no such thing as an off-year election. [more tk]
+In 2023, Pennsylvania voters statewide will be asked to pick a new state Supreme Court justice as well as judges to sit on Superior and Commonwealth courts. These appellate courts set down highly consequential decisions about elections, school funding, and more.
+
+Further down the ballot are more judicial contests as well as municipal races for local officials and school board members. These elected officials have regular, close contact with communities and can use that power for good (and bad).
+
+Spotlight PA is focusing its nonpartisan reporting resources on the May 16 primary election this year, in addition to the Nov. 7 general election. That’s because, in some parts of the state, voter registration is so dominated by one major party that the primary essentially serves as the general — with the eventual victor effectively decided in the spring.
+
+Regardless of your political affiliation, trusted election reporting is the bedrock of an informed electorate and an informed vote.
+
+On this page you will find key dates, guides to the races, and more. We <a href="mailto:shughes@spotlightpa.org">invite suggestions</a> for new features for this page, or you can <a href="/news/2023/03/pa-primary-election-2023-spotlight-pa-coverage/">read more about how we’re covering the 2023 Pennsylvania primary election</a>.

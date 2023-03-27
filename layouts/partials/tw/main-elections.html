@@ -12,7 +12,7 @@
       <picture class="mx-auto block w-0 min-w-full">
         <img
           srcset="{{ $banner }}"
-          alt="Pennsylvania Election 2023"
+          alt="Pennsylvania Primary Election 2023"
           class="h-auto w-full object-cover"
           sizes="(min-width: 850px) 621px, 90vw"
           width="2500"
@@ -238,7 +238,7 @@
 <section class="bg-white px-6 py-8" id="guides" data-ga-category="guides">
   {{ $guide := site.GetPage "content/series/voting-guides-2023/_index.md" }}
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA ELECTION 2023: CANDIDATE AND VOTING GUIDES"
+    "hed" "PA Primary Election 2023: Candidate and Voting Guides"
     "pages" $guide.RegularPages
     "readMoreLink" $guide.RelPermalink
     "readMore" "Read More PA Election 2023 Guides"
@@ -258,7 +258,7 @@
 
   {{ $pages := $elex.RegularPages | complement $guide.RegularPages (slice $feat.page) }}
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Election 2023: More Coverage"
+    "hed" "PA Primary Election 2023: More Coverage"
     "pages" $pages
     "readMoreLink" $elex.RelPermalink
     "readMore" "Read More PA Election 2023 Stories"
