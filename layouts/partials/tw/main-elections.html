@@ -267,21 +267,24 @@
   }}
 </section>
 
-<section class="bg-white px-6 py-8" id="espan" data-ga-category="espanol">
-  {{ $espan := site.GetPage "content/topics/español/_index.md" }}
-  {{ $primary := (time "2023-03-28").Unix }}
-  {{ $newEspan := where $espan.RegularPages
-    ".PublishDate.Unix" "gt" $primary
-  }}
-  {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "Elecciones Pa. 2023: Traducciones al Español"
-    "pages" $newEspan
-    "readMoreLink" $espan.RelPermalink
-    "readMore" "Leer Más Historias De La Elección PA 2023"
-    "rows" 1
-    )
-  }}
-</section>
+{{ $espan := site.GetPage "content/topics/español/_index.md" }}
+{{ $primary := (time "2023-03-28").Unix }}
+{{ $newEspan := where $espan.RegularPages
+  ".PublishDate.Unix" "gt" $primary
+}}
+{{ if $newEspan }}
+  <section class="bg-white px-6 py-8" id="espan" data-ga-category="espanol">
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "Elecciones Pa. 2023: Traducciones al Español"
+      "pages" $newEspan
+      "readMoreLink" $espan.RelPermalink
+      "readMore" "Leer Más Historias De La Elección PA 2023"
+      "rows" 1
+      )
+    }}
+  </section>
+{{ end }}
+
 
 <section class="bg-white p-6">
   <div class="mx-auto max-w-screen-md">
@@ -297,7 +300,7 @@
 <section class="bg-white p-6" id="contact" data-ga-category="contact">
   <div class="mx-auto w-full max-w-prose">
     <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+      class="mb-2 border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
     >
       Ask Us Your Questions
     </h2>

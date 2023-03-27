@@ -52,6 +52,11 @@ credits = """
     email="cjohnson@spotlightpa.org"
 >}}
 {{<featured/credit
+    name="Jeff Rummel"
+    role="News Developer"
+    email="jrummel@spotlightpa.org"
+>}}
+{{<featured/credit
     eyebrow="Illustration"
     name="Daniel Fishel"
     role="For Spotlight PA"
@@ -84,10 +89,6 @@ title = "Key Dates"
 link = "#dates"
 
 [[internal-links]]
-title = "Find My Ballot"
-link = "#ballot"
-
-[[internal-links]]
 title = "Featured Stories"
 link = "#featured"
 
@@ -99,9 +100,10 @@ link = "#guides"
 title = "Coverage"
 link = "#coverage"
 
-[[internal-links]]
-title = "Español"
-link = "#espan"
+# Hide for now
+# [[internal-links]]
+# title = "Español"
+# link = "#espan"
 
 [[internal-links]]
 title = "Ask Us"
