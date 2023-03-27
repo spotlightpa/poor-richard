@@ -42,8 +42,6 @@ Our panelists include:
 
 - <b>Carter Walker</b>, reporter, Votebeat
 
-- <b>Khalif Ali</b>, executive director, Common Cause Pennsylvania
-
 - <b>Lisa Schaefer</b>, executive director, County Commissioners Association of Pennsylvania
 
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a><b>.</b>
