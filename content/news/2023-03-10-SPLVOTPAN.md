@@ -44,7 +44,9 @@ Our panelists include:
 
 - <b>Lisa Schaefer</b>, executive director, County Commissioners Association of Pennsylvania
 
-- <b>Jeff Greenburg</b>, senior advisor on election administration, Committee of Seventy
+- <b>Jeff Greenburg,</b> senior advisor on election administration, Committee of Seventy
+
+- <b>Susan Gobreski,</b> director of government policy, League of Women Voters of Pennsylvania
 
 <b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a><b>.</b>
 
