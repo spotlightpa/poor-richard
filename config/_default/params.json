@@ -1,8 +1,8 @@
 {
-  "banner": "The news you need \u0026amp; none of the noise. \u003cstrong\u003eSign up for our newsletters  »\u003c/strong\u003e",
-  "banner-active": false,
+  "banner": "Everything you need to know for the 2023 Pa. primary. \u003cstrong\u003eVisit our Election Center »\u003c/strong\u003e",
+  "banner-active": true,
   "banner-bg-color": "#ffcb03",
-  "banner-link": "/newsletters",
+  "banner-link": "/elections",
   "banner-text-color": "#000000",
   "featured-promo-bg-color": "#000000",
   "featured-promo-height": 512,
