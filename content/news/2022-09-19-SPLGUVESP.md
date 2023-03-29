@@ -127,7 +127,7 @@ Su compañero de fórmula es Michael Badges-Canning, un activista ambiental del 
 
 <div id="spl-hackenburg"></div>
 
-## <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertario
+## <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertario
 
 Hackenburg es un ingeniero informático del condado de Northampton. Ex miembro de la Guardia Nacional de Ejército, argumenta que los estados deberían tener la capacidad de anular leyes federales con las que estén en desacuerdo, incluyendo la aprobación de leyes que impidan que los miembros de la guardia sean desplegados en el extranjero sin una declaración de guerra y alentar el uso de metales preciosos y criptomonedas en lugar del dólar estadounidense. También apoya la reducción de la educación pública y se opone a los mandatos de la salud pública, las leyes de armas y los impuestos.
 
