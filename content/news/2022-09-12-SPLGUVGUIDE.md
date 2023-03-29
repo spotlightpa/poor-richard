@@ -129,7 +129,7 @@ Her running mate is Michael Badges-Canning, a Butler County environmental activi
 
 <div id="spl-hackenburg"></div>
 
-### <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertarian
+### <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertarian
 
 Hackenburg is a computer engineer from Northampton County. A former member of the Army National Guard, he argues that states should have the ability to nullify federal laws they disagree with, including passing laws that prevent guard members from being deployed overseas without a declaration of war and encouraging the use of precious metals and cryptocurrency instead of the U.S. dollar. He also supports rolling back public education and opposes public health mandates, gun laws, and taxes.
 
