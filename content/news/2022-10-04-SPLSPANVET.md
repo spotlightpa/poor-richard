@@ -75,7 +75,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Joe Soloski (Keystone Party of Pennsylvania), <a href="https://www.joesoloski.com/">Sitio we</a>b | <a href="https://www.facebook.com/Soloski4Governor/">Facebook</a>
 
-- Matt Hackenburg (L), <a href="https://www.matthackenburg.com/">Sitio web</a> | <a href="https://www.facebook.com/MattHackenburgPA">Facebook</a>
+- Matt Hackenburg (L), <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Sitio web</a> | <a href="https://www.facebook.com/MattHackenburgPA">Facebook</a>
 
 <b>Vicegobernador:</b>
 
