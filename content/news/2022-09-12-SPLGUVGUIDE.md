@@ -121,7 +121,7 @@ His running mate is state Rep. Austin Davis (D., Allegheny), a former aide to Al
 
 DiGiulio is a former analytical chemist for the U.S. Department of Defense and a vocal opponent of the Mariner East pipeline system. She co-founded <a href="https://www.wasepa.org/">Watchdogs of Southeastern Pennsylvania</a>, a group that documents the harms of oil and gas infrastructure, and the <a href="https://www.betterpathcoalition.org/">Better Path Coalition</a>, an alliance of pro-renewable energy organizations.
 
-Digiulio’s <a href="https://www.greenslate2022.com/platform">platform</a> includes banning fracking, providing more tax incentives for renewable energy instead of fossil fuels, decriminalizing marijuana, implementing ranked-choice voting, and passing a constitutional amendment that would allow for a graduated income tax.
+Digiulio’s <a href="https://web.archive.org/20220901171127/https://www.greenslate2022.com/platform">platform</a> includes banning fracking, providing more tax incentives for renewable energy instead of fossil fuels, decriminalizing marijuana, implementing ranked-choice voting, and passing a constitutional amendment that would allow for a graduated income tax.
 
 Her running mate is Michael Badges-Canning, a Butler County environmental activist and perennial Green Party candidate.
 
