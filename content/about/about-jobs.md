@@ -8,9 +8,34 @@ aliases = ["/jobs/"]
 +++
 ### Current openings:
 
+* [Rural Affairs Reporter](#rural-affairs-reporter)
 * [Digital Growth Strategist](#digital-growth-strategist)
 * [Newsletter Writer/Reporter](#newsletter-writerreporter)
 * [Berks County Project Lead](#berks-county-project-lead)
+
+- - -
+
+## Rural Affairs Reporter
+
+### **[Apply Here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/758)**
+
+[](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/758)**Summary:** We are seeking a passionate reporter to provide vital reporting on the rural communities of north-central Pennsylvania for Spotlight PA, an award-winning, independent, and nonpartisan newsroom. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across more than 90 partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners. To combat the continuing loss of local news in the state, Spotlight PA launched its first regional bureau in July 2022. This reporter will be an integral part of the bureau, which is based in State College and covers 14 counties in central and northern Pennsylvania.
+
+**What You’ll Do:** This reporter will be critical in telling the stories of the people who live in our rural communities to a regional and statewide audience, including policymakers. This reporter will focus on how policies enacted by the state departments of Agriculture, Community and Economic Development, and Environmental Protection affect residents of north-central Pennsylvania. They will also dig into grants and programs meant to benefit rural communities to determine the true impact. They will be embedded in the region and expected to spend time in the communities they are covering. This is an enterprise beat, and the reporter will be expected to publish one story per week, as well as to uncover and investigate issues that are otherwise getting little to no attention. Those stories may at times be in collaboration with journalists from our many partner news organizations in the region.
+
+**Who We’re Looking For:** Ideal candidates will have clips that show an ability to report beyond daily news, build a diverse network of sources, and aggressively fight for and use public records. We want someone who can persistently pitch stories and keep several projects of varying lengths cooking at one time. The best candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters. 
+
+Some other ideal traits, though not essential:
+
+* Knowledge of Pennsylvania; 
+* Fluency in foreign languages, particularly Spanish; 
+* A comfort with requesting, scrutinizing, and using data in the reporting process. 
+
+**This job is full-time and includes benefits. This reporter can be based anywhere in our north-central Pennsylvania coverage area. The position is budgeted for a salary from $65,000-$75,000, depending on experience. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.** 
+
+Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
+
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
 - - -
 
