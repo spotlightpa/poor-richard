@@ -42,16 +42,6 @@ La Corte Suprema del Estado se ocupa de relativamente pocos casos, pero sus sent
 
 “La Corte Suprema es la que decide en última instancia asuntos de ley en Pensilvania, pero la mayoría de la gente no tiene una interacción cotidiana”, dijo Deb Gross, presidente y CEO de Pennsylvanians for Modern Courts, una organización sin fines de lucro que educa a la gente sobre el sistema judicial de Pensilvania. “Rara vez se encargarían de un caso entre propietario e inquilino, pero ... decidiría un caso sobre el voto o la redistribución de distritos”.
 
-<i><b>Aprenda más sobre los candidatos:</b></i>
-
-- Deborah Kunselman, Demócrata
-
-- Daniel McCaffery, Demócrata
-
-- Carolyn Carluccio, Republicana
-
-- Patricia McCullough, Republicana
-
 ## <b>Lo que hace la justicia</b>
 
 Los jueces de la Corte Suprema de Pensilvania tienen la última palabra en los casos que se apelan a través de los otros dos tribunales de apelación de la Commonwealth, lo que significa que a menudo deciden si confirman o revocan las decisiones de los gobernadores y la legislatura estatal.
