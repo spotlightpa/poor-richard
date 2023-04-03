@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-03-31-SPLATT.md"
+    "content/news/2023-04-03-SPLDHSST.md"
   ],
   "subfeatures": [
-    "content/news/2022-12-10-SPLCOST10.md",
-    "content/news/2023-02-16-SPLGAMBOR.md"
+    "content/news/2023-02-24-SPLROLLBEN.md",
+    "content/news/2023-03-07-SPLBUDGET.md"
   ],
   "topSlots": [
-    "content/news/2023-03-10-SPLVOTPAN.md",
+    "content/news/2023-03-31-SPLATT.md",
     "content/news/2023-03-30-SPLNEWSQUIZMAR30.md",
-    "content/news/2023-03-29-SPLPRICOSU.md"
+    "content/statecollege/2023-04-03-SPLEXPAY.md"
   ],
   "topper": []
 }
