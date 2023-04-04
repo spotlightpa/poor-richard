@@ -10,4 +10,4 @@ dek = "Full coverage of Pennsylvania's 2023 primary and general elections, inclu
 linktitle = "Latest Pennsylvania election news from Spotlight PA"
 description = "Full coverage of Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to cast a ballot, and more."
 +++
-For a full guide to Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to vote, where to vote, and more, [visit Spotlight PA's Officials 2023 Election Center](https://www.spotlightpa.org/elections).
+For a full guide to Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to vote, where to vote, and more, [visit Spotlight PA's Official 2023 Election Center](https://www.spotlightpa.org/elections).
