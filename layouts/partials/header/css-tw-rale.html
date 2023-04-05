@@ -10,7 +10,7 @@
   }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 {{ else }}
-  <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+  <script src="https://cdn.tailwindcss.com/3.2.7"></script>
   {{ $rsc := resources.Get "js/tailwind/dev.js" | js.Build }}
   <script src="{{ $rsc.RelPermalink }}"></script>
   <style type="text/tailwindcss">

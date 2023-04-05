@@ -4,13 +4,13 @@ image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
 image-credit = "Amanda Berg / For Spotlight PA"
 kicker = "Elections"
-title = "Pennsylvania Election 2022"
-title-tag = "Official Pennsylvania Election Center 2022"
+title = "Pennsylvania Primary Election 2023"
+title-tag = "Official Pennsylvania Primary Election Center 2023"
 description = "See how to vote, where to vote, polling places, sample ballots, candidate & issue guides, and more from Spotlight PA."
-dek = "Candidates for governor, U.S. Senate, and more will appear on the Nov. 8 ballot."
-extended-kicker = "Pa. Election Center 2022"
-linktitle = "Everything you need to prepare for Pa.’s high-stakes 2022 election"
-blurb = "Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
+dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more will appear on the May 16 ballot. "
+extended-kicker = "Pa. Election Center 2023"
+linktitle = "Everything you need to prepare for Pa.’s 2023 election"
+blurb = "Spotlight PA wants to empower voters to make an informed decision on May 16. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
 url = "/elections/"
 aliases = [
     "/election/"
@@ -52,8 +52,13 @@ credits = """
     email="cjohnson@spotlightpa.org"
 >}}
 {{<featured/credit
+    name="Jeff Rummel"
+    role="News Developer"
+    email="jrummel@spotlightpa.org"
+>}}
+{{<featured/credit
     eyebrow="Illustration"
-    name="Leise Hook"
+    name="Daniel Fishel"
     role="For Spotlight PA"
 >}}
 """
@@ -80,6 +85,10 @@ link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.
 
 
 [[internal-links]]
+title = "Key Dates"
+link = "#dates"
+
+[[internal-links]]
 title = "Featured Stories"
 link = "#featured"
 
@@ -88,20 +97,13 @@ title = "Election Guides"
 link = "#guides"
 
 [[internal-links]]
-title = "The Issues"
-link = "#issues"
-
-[[internal-links]]
 title = "Coverage"
 link = "#coverage"
 
-[[internal-links]]
-title = "Español"
-link = "#espan"
-
-[[internal-links]]
-title = "Follow the Money"
-link = "#money"
+# Hide for now
+# [[internal-links]]
+# title = "Español"
+# link = "#espan"
 
 [[internal-links]]
 title = "Ask Us"
@@ -113,23 +115,27 @@ link = "#credits"
 
 
 [[dates]]
-date = "2022-10-24"
-dateVerbose = "Oct. 24"
+date = "2023-05-01"
+dateVerbose = "May 1"
 name = "Last day to register to vote"
 
 [[dates]]
-date = "2022-11-01"
-dateVerbose = "Nov. 1"
-name = "Last day to request a mail ballot"
+date = "2023-05-09"
+dateVerbose = "May 9"
+name = "Last day to apply for a mail ballot"
 
 [[dates]]
-date = "2022-11-08"
-dateVerbose = "Nov. 8"
-name = "Election Day 2022"
+date = "2023-05-16"
+dateVerbose = "May 16"
+name = "Election Day"
 +++
 
-As Pennsylvania gears up for the pivotal 2022 election, Spotlight PA wants to empower voters to make an informed decision on Nov. 8. Specifically, we’ll focus our reporting resources on where candidates stand on the issues, how the voting process works, and how to get involved.
+In 2023, Pennsylvania voters statewide will be asked to pick a new state Supreme Court justice as well as judges to sit on Superior and Commonwealth courts. These appellate courts set down highly consequential decisions about elections, school funding, and more.
 
-As part of that, our election series — [“One Vote, Two Pennsylvanias”](/series/one-vote-two-pennsylvanias/) — will clearly articulate through policy proposals and issue-based reporting the vastly different visions the candidates for governor have for the future of our state. You can find links to that coverage below, with new stories publishing regularly.
+Further down the ballot are more judicial contests as well as municipal races for local officials and school board members. These elected officials have regular, close contact with communities and can use that power for good (and bad).
 
-Our new Election Center also features a voter toolbox with key dates, an interactive sample ballot, a campaign finance tracker, and a form to get in contact with our reporters. We invite <a href="mailto:shughes@spotlightpa.org">suggestions for new features</a> for this page, or you can <a href="/news/2022/09/pa-election-2022-mastriano-shapiro-governor-our-coverage-explainer/">read more about how we’re covering the 2022 Pennsylvania election.</a>
+Spotlight PA is focusing its nonpartisan reporting resources on the May 16 primary election this year, in addition to the Nov. 7 general election. That’s because, in some parts of the state, voter registration is so dominated by one major party that the primary essentially serves as the general — with the eventual victor effectively decided in the spring.
+
+Regardless of your political affiliation, trusted election reporting is the bedrock of an informed electorate and an informed vote.
+
+On this page you will find key dates, guides to the races, and more. We <a href="mailto:shughes@spotlightpa.org">invite suggestions</a> for new features for this page, or you can <a href="/news/2023/03/pa-primary-election-2023-spotlight-pa-coverage/">read more about how we’re covering the 2023 Pennsylvania primary election</a>.

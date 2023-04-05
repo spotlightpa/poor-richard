@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-03-23-SPLHOWLOCAL.md"
+    "content/news/2023-04-05-SPLSPFUND.md"
   ],
   "subfeatures": [
-    "content/news/2023-03-17-SPLSUNSHINE17.md"
+    "content/news/2022-10-31-SPLPSPDATA31.md"
   ],
   "topSlots": [
-    "content/news/2023-03-23-SPLWOMLEG.md",
-    "content/news/2023-03-23-SPLNEWSQUIZMAR23.md",
-    "content/news/2023-03-22-SPLmortgagecontract22.md"
+    "content/news/2023-04-04-SPLOPENPR.md",
+    "content/news/2023-04-03-SPLDHSST.md",
+    "content/statecollege/2023-04-03-SPLEXPAY.md"
   ],
   "topper": []
 }
