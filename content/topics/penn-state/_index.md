@@ -7,7 +7,7 @@ image-description = "The Centre County Courthouse in Centre County, home State C
 image-credit = "Abby Drey / Centre Daily Times"
 image-size = "hidden"
 kicker = "Penn State"
-title = "Latest Penn State University News"
+title = "Penn State University"
 linktitle = "Penn State news from Spotlight PA"
 description = ""
 +++
