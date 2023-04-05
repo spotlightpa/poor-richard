@@ -11,4 +11,4 @@ title = "Latest Penn State University News"
 linktitle = "Penn State news from Spotlight PA"
 description = ""
 +++
-Our reporting on Pennsylvania State University in State College, Pa. goes far beyond Nittany Lions football, providing deep insights and vital reporting holding leadership to account and empowering people in the community to drive positive change. Our unique reporting is powered by the only investigative reporter in the country dedicated to Penn State coverage.
+Our reporting on Pennsylvania State University and University Park in State College, Pa. goes far beyond Nittany Lions football, providing deep insights and vital reporting holding leadership to account and empowering people in the community to drive positive change. Our unique reporting is powered by the only investigative reporter in the country dedicated to Penn State, Pennsylvania's sole land grant institution.
