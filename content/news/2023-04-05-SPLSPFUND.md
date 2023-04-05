@@ -7,6 +7,7 @@ description = "Gov. Josh Shapiro wants to stop diverting money meant for road an
 image = "external/f73f6asmxj8pzner186c2fg3z4.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania Governor Josh Shapiro wants to create a steady funding stream for Pennsylvania State Police."
+image-gravity = "no"
 internal-budget = "How Josh Shapiro wants to fund the State Police, and what experts think about the plan"
 internal-id = "SPLSPFUND"
 kicker = "The Capitol"
