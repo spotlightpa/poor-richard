@@ -6,8 +6,9 @@ image-credit = "YONG KIM / Philadelphia Inquirer"
 image-size = "hidden"
 kicker = "Elections"
 title = "Elections"
-dek = "Full coverage of Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to cast a ballot, and more."
+dek = "Latest election news and full coverage of Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to cast a ballot, and more."
+title-tag = "Latest Pennsylvania election news from Spotlight PA"
 linktitle = "Latest Pennsylvania election news from Spotlight PA"
 description = "Full coverage of Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to cast a ballot, and more."
 +++
-For a full guide to Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to vote, where to vote, and more, [visit Spotlight PA's Official 2023 Election Center](https://www.spotlightpa.org/elections).
+For a full guide to Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to vote on Election Day, where to vote, and more, [visit Spotlight PA's Official 2023 Election Center](https://www.spotlightpa.org/elections).
