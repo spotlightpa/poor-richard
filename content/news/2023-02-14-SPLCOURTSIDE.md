@@ -16,7 +16,7 @@ slug = "pa-josh-shapiro-sixers-campaign-contribution"
 suppress-date = false
 title = "Shapiro sat courtside at a Sixers game with a donor. His campaign called it a ‘political meeting.’"
 title-tag = "Shapiro's Sixers tickets were a ‘political meeting.’"
-topics = ["The Capitol", "Elections"]
+topics = ["The Capitol", "Elections", "Josh Shapiro"]
 +++
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>
