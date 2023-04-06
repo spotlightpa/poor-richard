@@ -16,7 +16,7 @@ slug = "pa-super-bowl-josh-shapiro-gift-ban"
 suppress-date = false
 title = "Shapiro admin contends taking Super Bowl tickets from group that gets state money didn’t violate governor’s own gift ban"
 title-tag = "Did PA governor’s trip to Super Bowl violate gift ban?"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
