@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-04-06-SPLTTROSE.md"
+    "content/news/2023-04-05-SPLSPFUND.md"
   ],
-  "subfeatures": [
-    "content/news/2023-02-22-SPLTEAMPA.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
     "content/news/2023-04-05-SPLCOEV.md",
-    "content/news/2023-04-05-SPLSPFUND.md",
-    "content/news/2023-04-04-SPLOPENPR.md"
+    "content/news/2023-04-04-SPLOPENPR.md",
+    "content/news/2023-04-03-SPLDHSST.md"
   ],
   "topper": []
 }
