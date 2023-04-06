@@ -17,7 +17,7 @@ slug = "pa-election-2022-governor-josh-shapiro-transition-teams"
 suppress-date = false
 title = "The teams helping Josh Shapiro prepare to become Pa.’s governor include wealthy donors, Republicans"
 title-tag = "How Josh Shapiro is preparing to be PA’s next governor"
-topics = ["Elections", "The Capitol"]
+topics = ["Elections", "The Capitol", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
