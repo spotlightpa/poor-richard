@@ -17,7 +17,7 @@ slug = "pa-josh-shapiro-budget-state-police-transportation"
 suppress-date = false
 title = "Shapiro’s proposed Pa. State Police fund saves road dollars but raises accountability concerns"
 title-tag = "How Gov. Josh Shapiro wants to fund PA State Police"
-topics = ["The Capitol", "Criminal Justice"]
+topics = ["The Capitol", "Criminal Justice", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
