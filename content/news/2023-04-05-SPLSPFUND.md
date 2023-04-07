@@ -7,6 +7,7 @@ description = "Gov. Josh Shapiro wants to stop diverting money meant for road an
 image = "external/f73f6asmxj8pzner186c2fg3z4.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania Governor Josh Shapiro wants to create a steady funding stream for Pennsylvania State Police."
+image-gravity = "no"
 internal-budget = "How Josh Shapiro wants to fund the State Police, and what experts think about the plan"
 internal-id = "SPLSPFUND"
 kicker = "The Capitol"
@@ -16,7 +17,7 @@ slug = "pa-josh-shapiro-budget-state-police-transportation"
 suppress-date = false
 title = "Shapiro’s proposed Pa. State Police fund saves road dollars but raises accountability concerns"
 title-tag = "How Gov. Josh Shapiro wants to fund PA State Police"
-topics = ["The Capitol", "Criminal Justice"]
+topics = ["The Capitol", "Criminal Justice", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -34,7 +35,7 @@ Instead, by law, a set amount of tax revenue would automatically be allocated to
 
 “The pledge I’ve made to our state troopers is that that money would be set aside and walled off only for law enforcement, meaning it couldn’t be used for any other purpose,” Shapiro said recently in Erie. “We’ve got to make sure those dollars first go to meeting our law enforcement needs.”
 
-Shapiro’s plan has the support of legislative Democrats, who see another possible upside: Creating such an account would mean the legislature and Shapiro would need to pass a law, which could also include provisions <a href="https://www.penncapital-star.com/civil-rights-social-justice/pa-black-caucus-pushes-for-universal-traffic-stop-racial-data-collection">like a long-sought requirement</a> for state and local police to collect racial data from traffic stops. As Spotlight PA <a href="https://triblive.com/news/pennsylvania/pa-state-police-resume-tracking-racial-data-during-traffic-stops-in-response-to-spotlight-pa-report/">previously reported</a>, State Police stopped collecting such data for nearly a decade, leaving observers unable to check for racial bias.
+Shapiro’s plan has the support of legislative Democrats, who see another possible upside: Creating such an account would mean the legislature and Shapiro would need to pass a law, which could also include provisions <a href="https://www.penncapital-star.com/civil-rights-social-justice/pa-black-caucus-pushes-for-universal-traffic-stop-racial-data-collection">like a long-sought requirement</a> for state and local police to collect racial data from traffic stops. As Spotlight PA previously <a href="https://www.spotlightpa.org/news/2022/10/pa-state-police-traffic-stop-racial-discrimination-data-problems/" target="_blank">reported</a>, State Police stopped collecting such data for nearly a decade, leaving observers unable to check for racial bias.
 
 State Rep. Donna Bullock (D., Philadelphia), chair of the Legislative Black Caucus, said such a requirement, crafted in partnership with State Police, is an option.
 
