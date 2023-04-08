@@ -1,13 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-04-07-SPLCLOSURES.md"
+    "content/news/2023-04-08-SPLSCOPA.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-09-SPLSCHOIMPAC.md"
+    "content/news/2023-03-29-SPLPRICOSU.md",
+    "content/news/2023-04-04-SPLOPENPR.md",
+    "content/news/2023-04-05-SPLCOEV.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-04-07-SPLCLOSURES.md",
     "content/news/2023-04-06-SPLNEWSQUIZAPR6.md",
-    "content/statecollege/2023-04-06-SPLTTROSE.md",
     "content/news/2023-04-05-SPLSPFUND.md"
   ],
   "topper": []
