@@ -1,0 +1,19 @@
+{{ with .block }}
+  <div class="max-w-5xl text-xl text-s-8 lg:pl-20">
+    {{ with .entries }}
+      <ul class="mt-8 flex flex-wrap justify-center">
+        {{ range . }}
+          <li class="mb-2 mr-6 inline-block">
+            <a
+              href="{{ .link }}"
+              class="mr-4 block text-blue decoration-4 underline-offset-8 hover:underline"
+              data-ga-category="link"
+            >
+              {{- .name -}}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}

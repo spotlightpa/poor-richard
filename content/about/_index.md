@@ -14,7 +14,7 @@ title = "About"
 copy = "Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individual members, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."
 
 [[blocks.entries]]
-link = "/donate/"
+link = "/support/"
 name = "How to Give to Spotlight PA"
 
 [[blocks.entries]]
@@ -40,7 +40,7 @@ copy = "See More About Our Impact"
 [[blocks]]
 title = "Staff"
 layout = "text-2"
-copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:"
+copy="{{<featured/large>}}We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:{{</featured/large>}}"
 [blocks.cta]
 url = "/about/staff/"
 copy = "See More About Our Staff"
@@ -57,7 +57,7 @@ copy = "See More of Our Partners"
 [[blocks]]
 title = "Supporters"
 layout = "text-2"
-copy="Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:"
+copy="{{<featured/large>}}Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:{{</featured/large>}}"
 [blocks.cta]
 url = "/support/"
 copy = "See More About Our Supporters"
