@@ -15,7 +15,7 @@ slug = "Governor-Shapiro-budget-education-spending-conservative"
 suppress-date = false
 title = "Shapiro’s $44.4B budget pitch keeps Pa. spending relatively flat, preserves some pandemic benefits"
 title-tag = "PA Gov. Josh Shapiro gives 1st budget address"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

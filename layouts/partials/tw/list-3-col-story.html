@@ -22,7 +22,7 @@
   {{ end }}
 
 
-  <nav class=" mt-12 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
+  <nav class="mt-4 grid gap-12 sm:grid-cols-2 md:grid-cols-3">
     {{ range $i, $page := $pages }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
       {{ $imgOpts := dict

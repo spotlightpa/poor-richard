@@ -17,7 +17,7 @@ slug = "pa-election-2022-results-josh-shapiro-governor-win-inside-story"
 suppress-date = false
 title = "How Democrat Josh Shapiro won Pennsylvania’s 2022 election for governor"
 title-tag = "How Josh Shapiro won PA's 2022 election for governor"
-topics = ["Elections"]
+topics = ["Elections", "Josh Shapiro"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

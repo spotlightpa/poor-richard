@@ -1,8 +1,8 @@
 +++
 arc-id = "6O42LXR2VBEW7PZD7BMMPP2KKA"
-blurb = "Join Spotlight PA and Votebeat for a discussion on the state’s patchwork voting policies and possible solutions."
+blurb = "Election experts discuss Pennsylvania's patchwork voting policies and possible solutions."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA and Votebeat for a discussion on the state’s patchwork voting policies and possible solutions."
+description = "Election experts discuss Pennsylvania's patchwork voting policies and possible solutions."
 event-date = 2023-03-30T18:00:00-04:00
 event-title = "UNEQUAL ELECTIONS"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw "
@@ -16,8 +16,8 @@ modal-exclude = false
 published = 2023-03-10T14:18:19.112-05:00
 slug = "pa-elections-mail-ballot-drop-box-unequal-policies-event"
 suppress-date = false
-title = "You’re invited! A free panel on Pa.’s unequal voting rules and how they impact you"
-title-tag = "A free event on Pa.’s unequal voting rules"
+title = "WATCH: A free panel on Pa.’s unequal voting rules and how they impact you"
+title-tag = "Election experts discuss Pa.’s unequal voting rules"
 topics = ["Events"]
 +++
 
@@ -32,22 +32,21 @@ As part of a review of all 67 counties’ election policies, the news organizati
 
 In Pennsylvania, the governor and legislature broadly set election rules, but county officials also make important decisions like whether or not to offer drop boxes. These different decisions result in a patchwork of election policies across the state.
 
-To unpack these disparities, Spotlight PA is hosting a free panel on Pennsylvania’s unequal election policies and how they impact voters.
+To unpack these disparities, Spotlight PA hosted a free panel on Pennsylvania’s unequal election policies and how they impact voters. Watch the discussion below.
 
-Join us and a panel of election experts on Thursday, March 30 from 6-7 p.m. EST for a free discussion on unequal voting policies in the state and possible solutions.
-
-Our panelists include:
+Our panelists were:
 
 - <b>Kate Huangpu</b>, government reporter, Spotlight PA
 
 - <b>Carter Walker</b>, reporter, Votebeat
 
-- <b>Jonathan Marks</b>, deputy secretary for elections and commissions, Pennsylvania Department of State
-
-- <b>Khalif Ali</b>, executive director, Common Cause Pennsylvania
-
 - <b>Lisa Schaefer</b>, executive director, County Commissioners Association of Pennsylvania
 
-<b>RSVP for free </b><a href="https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw"><b>here</b></a><b>. Submit your questions in advance to </b><a href="mailto:events@spotlightpa.org"><b>events@spotlightpa.org</b></a>
+- <b>Jeff Greenburg,</b> senior advisor on election administration, Committee of Seventy
 
-<i>» Spotlight PA’s events operate on a “pay-what-you-can” honor system. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+- <b>Susan Gobreski,</b> chair of Government Policy Committee, League of Women Voters of Pennsylvania
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/813579359?h=8198969ff3&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p></p>
+
+<i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>

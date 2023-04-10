@@ -71,11 +71,11 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Doug Mastriano (R), <a href="https://www.doug4gov.com/">Sitio web</a> | <a href="https://www.facebook.com/Fight4pa">Facebook</a>
 
-- Christina Digiulio (G), <a href="https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/PKforPA">Facebook</a>
+- Christina Digiulio (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/PKforPA">Facebook</a>
 
 - Joe Soloski (Keystone Party of Pennsylvania), <a href="https://www.joesoloski.com/">Sitio we</a>b | <a href="https://www.facebook.com/Soloski4Governor/">Facebook</a>
 
-- Matt Hackenburg (L), <a href="https://www.matthackenburg.com/">Sitio web</a> | <a href="https://www.facebook.com/MattHackenburgPA">Facebook</a>
+- Matt Hackenburg (L), <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Sitio web</a> | <a href="https://www.facebook.com/MattHackenburgPA">Facebook</a>
 
 <b>Vicegobernador:</b>
 
@@ -83,9 +83,9 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Carrie DelRosso (R), <a href="https://carrieforpa.com/">Sitio web</a> | <a href="https://www.facebook.com/CarrieForPA">Facebook</a>
 
-- Michael Bagdes-Canning (G), <a href="https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/michael.bagdescanning">Facebook</a>
+- Michael Bagdes-Canning (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/michael.bagdescanning">Facebook</a>
 
-- Nicole Shultz (Partido Keystone de Pensilvania), <a href="https://www.nicoleshultz.com/">Sitio we</a>b | <a href="https://www.facebook.com/ShultzforPALtGov">Facebook</a>
+- Nicole Shultz (Partido Keystone de Pensilvania), <a href="https://web.archive.org/20220922103445/https://www.nicoleshultz.com/">Sitio web</a> | <a href="https://www.facebook.com/ShultzforPALtGov">Facebook</a>
 
 - Tim McMaster (L), <a href="https://tim4pa.com/">Sitio web</a> | <a href="https://www.facebook.com/McMasterLtGov2022">Facebook</a>
 
@@ -95,7 +95,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Mehmet Oz (R), <a href="https://doctoroz.com/">Sitio web</a> | <a href="https://www.facebook.com/droz">Facebook</a>
 
-- Richard Weiss (G), <a href="https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/richard.weiss.1485537">Facebook</a>
+- Richard Weiss (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/richard.weiss.1485537">Facebook</a>
 
 - Daniel Wassmer (Partido Keystone de Pensilvania), <a href="http://www.wassmer4pa.com/">Sitio we</a>b | <a href="https://www.facebook.com/Wassmer4USSenate">Facebook</a>
 

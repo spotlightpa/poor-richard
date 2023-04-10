@@ -27,25 +27,25 @@ A decades-old Pennsylvania law is supposed to protect people with mental health 
 
 The six-month <a href="https://www.spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/">investigation</a>, published by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism, found the state’s “competency” review system is so broken it often extends incarceration, which can exacerbate mental health issues.
 
-There is no one state agency overseeing the competency system and no standardized way for documenting competency assessments and hearings, making it difficult to identify people who may be languishing in jail. In the absence of a statewide solution, some local government officials and agencies have come up with their own ways to address the problems:
+There is no one state agency overseeing the competency system and no standardized way for documenting competency assessments and hearings, making it difficult to identify people who might be languishing in jail. In the absence of a statewide solution, some local government officials and agencies have come up with their own ways to address the problems:
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 ## Police
 
-As part of their investigation, Spotlight PA and PINJ conducted an analysis of nearly 700 cases involving competency issues — cases likely to involve someone with serious mental health needs. The review found the cases most often involved non-violent misdemeanors or summary offenses, Pennsylvania’s most minor charges.
+As part of their investigation, Spotlight PA and PINJ conducted an analysis of nearly 700 cases involving competency issues — cases likely to involve someone with serious mental health needs. The review found the cases most often involved nonviolent misdemeanors or summary offenses, Pennsylvania’s most minor charges.
 
 Experts echoed this finding and said it creates a cycle of incarceration. Those with mental illness often face arrest for low-level crimes, may deteriorate while incarcerated, and upon release are at greater risk of another arrest.
 
-Fixing the system, they said, includes preventing that cycle before it begins. In Lancaster, some police departments are trying to do just that.
+Fixing the system, they said, includes preventing that cycle before it begins. In Lancaster County, some police departments are trying to do just that.
 
-“The problem is that officers only had two tools, handcuffs and ambulances,” said Elizabethtown Police Chief Ed Cunningham. “If we couldn’t force you to go in an ambulance, then the only way we could get you to somebody who would help you with handcuffs.”
+“The problem is that officers only had two tools — handcuffs and ambulances,” said Elizabethtown Police Chief Ed Cunningham. “If we couldn’t force you to go in an ambulance, then the only way we could get you to somebody who would help you is with handcuffs.”
 
 Previously, officers responding to a person in crisis might have engaged in “mercy booking,” Cunningham said, to try to get someone clearly suffering from a mental health or addiction issue in front of a judge who can order treatment.
 
-Now, in his jurisdiction, the district attorney, local judges, and the department have given officers the authority to throw away low level charges.
+Now, in his jurisdiction, the district attorney, local judges, and the department have given officers the authority to throw away low-level charges.
 
-Instead of arresting people in crisis, Cunningham said, officers connect the person with an on-call civilian crisis responder who will help figure out what they need — whether that’s to get home so they can take their medicine, or to check into a long-term treatment facility.
+Instead of arresting people in crisis, Cunningham said, officers connect the individuals with an on-call civilian crisis responder who will help figure out what they need — whether that’s to get home so they can take their medicine, or to check into a long-term treatment facility.
 
 But the Elizabethtown programs survive on a hodgepodge of support from Lancaster County, state and federal grants, and partnerships with local businesses including the local addiction recovery provider Blueprints.
 
@@ -55,17 +55,17 @@ But the Elizabethtown programs survive on a hodgepodge of support from Lancaster
 
 Defense attorneys across Pennsylvania told Spotlight PA and PINJ the state competency system is so broken, they routinely avoid it.
 
-In Philadelphia, attorneys at the Defender Association of Philadelphia, a public firm that provides no-cost legal counsel, can do so because they have a strong working relationship with the city’s district attorney, Norristown State Hospital, and the courts.
+In Philadelphia, attorneys at the Defender Association of Philadelphia, a public firm that provides no-cost legal counsel, can do so because it has a strong working relationship with the city’s district attorney, Norristown State Hospital, and the courts.
 
-These connections help them avoid trapping people with minor charges in the criminal system.
+These connections help avoid trapping people with minor charges in the criminal system.
 
-Gregg Blender, formerly the head of the firm’s mental health unit, recently represented a woman who police repeatedly arrested for breaking into a residential home, a potentially serious offense.
+Gregg Blender, formerly the head of the firm’s mental health unit, recently represented a woman whom police repeatedly arrested for breaking into a residential home, a potentially serious offense.
 
 “That sounds horrible, except the house was abandoned, it was being rehabbed, and … that was her childhood home,” Blender said. “And she kept going back to it because she believed she still lived there.”
 
 Instead of requesting a competency evaluation, the firm worked with the Philadelphia prosecutor to drop the charges, an option Blender admits isn’t feasible everywhere.
 
-The Defender Association has done training for public defenders in other counties, but without the same level of resources or relationships, their system is difficult to replicate.
+The Defender Association has done training for public defenders in other counties, but without the same level of resources or relationships, the system is difficult to replicate.
 
 “They look at us like we have two heads. ‘That will never work here,’” Blender said. “We hear that.”
 
@@ -73,13 +73,13 @@ The Defender Association has done training for public defenders in other countie
 
 In response to a Spotlight PA and PINJ survey, jail leaders across the state said that while arrest and incarceration have become the de facto resource for people experiencing mental health crises, the facilities are largely unable to provide proper care for these people once they arrive.
 
-If the person’s mental health condition interferes with their ability to stand trial, the leaders said, they can languish for weeks if not months waiting for one of less than 400 state hospital beds designated for competency restoration treatment.
+If the person’s mental health condition interferes with their ability to stand trial, the leaders said, they can languish for weeks if not months waiting for one of fewer than 400 state hospital beds designated for competency restoration treatment.
 
-In Allegheny County, where the problem is particularly acute, the jail and the local human resources department have plans to create a “mobile competency restoration and support team.”
+In Allegheny County, where the problem is particularly acute, the jail and the local human services department have plans to create a “mobile competency restoration and support team.”
 
 The team would provide treatment outside the state hospitals and cut down on the amount of time people remain incarcerated for mental health issues.
 
-The county issued a request for proposals in October and closed submissions from interested contractors in December, but received no bids, according to county spokesperson Amie Downs.
+The county issued a request for proposals in October and closed submissions from interested contractors in December but received no bids, according to county spokesperson Amie Downs.
 
 “They have revised it and expect to issue that revised solicitation in the coming weeks,” Downs said.
 

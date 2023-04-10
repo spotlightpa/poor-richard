@@ -1,39 +1,46 @@
 {
   "items": [
     {
-      "backgroundColor": "#f5f5f5",
+      "backgroundColor": "#ffcb03",
       "label": "RSVP NOW",
+      "labelColor": "#FFFFFF",
+      "linkColor": "#000000",
+      "page": "content/news/2023-04-05-SPLCOEV.md"
+    },
+    {
+      "backgroundColor": "#f5f5f5",
+      "label": "PRIMARY 2023",
       "labelColor": "#ff6c36",
       "linkColor": "#000000",
-      "page": "content/news/2023-03-10-SPLVOTPAN.md"
+      "page": "content/elections.md"
     },
     {
       "backgroundColor": "#000000",
-      "label": "New investigation",
+      "label": "NEW INVESTIGATION",
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
+      "page": "content/news/2023-03-09-SPLCOMPETENCY.md"
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "label": "Editor's Pick",
+      "labelColor": "#000000",
+      "linkColor": "#000000",
       "page": "content/news/2023-01-31-SPLANXIETY.md"
     },
     {
-      "backgroundColor": "#f5f5f5",
-      "label": "editor's pick",
-      "labelColor": "#000000",
-      "linkColor": "#000000",
-      "page": "content/news/2023-01-23-SPLMORTGAGE.md"
-    },
-    {
       "backgroundColor": "#99d9f1",
-      "label": "State College Bureau",
+      "label": "State College bureau",
       "labelColor": "#000000",
       "linkColor": "#000000",
-      "page": "content/statecollege/2023-02-16-SPLTHON.md"
+      "page": "content/statecollege/2023-03-23-SPLHOWLOCAL.md"
     },
     {
       "backgroundColor": "#000000",
-      "label": "INVESTIGATION",
+      "label": "Investigation",
       "labelColor": "#ffcb03",
       "linkColor": "#ffffff",
-      "page": "content/statecollege/2022-12-19-SPLTIOGA.md"
+      "page": "content/news/2023-01-23-SPLMORTGAGE.md"
     }
   ]
 }

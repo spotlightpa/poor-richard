@@ -14,7 +14,7 @@ linktitle = "Your complete guide to the candidates for governor"
 modal-exclude = false
 no-index = false
 published = 2022-09-12T05:00:00-04:00
-series = ["Voting Guides"]
+series = ["Voting Guides 2022"]
 slug = "pa-election-2022-mastriano-shapiro-governor-race-complete-guide"
 suppress-date = false
 title = "Pa. election 2022: Your complete guide to the candidates for governor"
@@ -121,7 +121,7 @@ His running mate is state Rep. Austin Davis (D., Allegheny), a former aide to Al
 
 DiGiulio is a former analytical chemist for the U.S. Department of Defense and a vocal opponent of the Mariner East pipeline system. She co-founded <a href="https://www.wasepa.org/">Watchdogs of Southeastern Pennsylvania</a>, a group that documents the harms of oil and gas infrastructure, and the <a href="https://www.betterpathcoalition.org/">Better Path Coalition</a>, an alliance of pro-renewable energy organizations.
 
-Digiulio’s <a href="https://www.greenslate2022.com/platform">platform</a> includes banning fracking, providing more tax incentives for renewable energy instead of fossil fuels, decriminalizing marijuana, implementing ranked-choice voting, and passing a constitutional amendment that would allow for a graduated income tax.
+Digiulio’s <a href="https://web.archive.org/20220901171127/https://www.greenslate2022.com/platform">platform</a> includes banning fracking, providing more tax incentives for renewable energy instead of fossil fuels, decriminalizing marijuana, implementing ranked-choice voting, and passing a constitutional amendment that would allow for a graduated income tax.
 
 Her running mate is Michael Badges-Canning, a Butler County environmental activist and perennial Green Party candidate.
 
@@ -129,7 +129,7 @@ Her running mate is Michael Badges-Canning, a Butler County environmental activi
 
 <div id="spl-hackenburg"></div>
 
-### <a href="https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertarian
+### <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Matt Hackenburg</a>, Libertarian
 
 Hackenburg is a computer engineer from Northampton County. A former member of the Army National Guard, he argues that states should have the ability to nullify federal laws they disagree with, including passing laws that prevent guard members from being deployed overseas without a declaration of war and encouraging the use of precious metals and cryptocurrency instead of the U.S. dollar. He also supports rolling back public education and opposes public health mandates, gun laws, and taxes.
 
