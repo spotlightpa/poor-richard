@@ -1,12 +1,11 @@
-{{ $src := .Get "src" | htmlUnescape }}
-{{ $credit := .Get "credit" | htmlUnescape }}
-{{ $description := .Get "description" | htmlUnescape }}
-{{ $caption := .Get "caption" | htmlUnescape }}
-{{ $widthRatio := .Get "width-ratio" | default 3 | int }}
-{{ $heightRatio := .Get "height-ratio" | default 2 | int }}
-{{ $gravity := .Get "focus" }}
-{{ $wrapperClass := .Get "class" | default "my-12"}}
-<div class="{{ $wrapperClass }}" data-ga-category="inline:picture">
+<div class="my-12" data-ga-category="inline:picture">
+  {{ $src := .Get "src" | htmlUnescape }}
+  {{ $credit := .Get "credit" | htmlUnescape }}
+  {{ $description := .Get "description" | htmlUnescape }}
+  {{ $caption := .Get "caption" | htmlUnescape }}
+  {{ $widthRatio := .Get "width-ratio" | default 3 | int }}
+  {{ $heightRatio := .Get "height-ratio" | default 2 | int }}
+  {{ $gravity := .Get "focus" }}
 
   {{ $imgOpts := dict
     "filename" $src

@@ -38,7 +38,7 @@ In an era where fraud and dishonesty among public officials (and their supporter
 """
 +++
 
-{{<picture class="w-full bg-white sm:w-52 sm:h-26 float-right -mt-6 mb-2 ml-1 md:ml-2 md:w-80 xl:-mr-16" src="2023/03/01j1-rzgq-rvdt-5ra7.png" description="Leaders In Action logo" width-ratio="100" height-ratio="77">}}
+{{<picture-leaders-in-action src="2023/03/01j1-rzgq-rvdt-5ra7.png" description="Leaders In Action logo" width-ratio="100" height-ratio="77">}}
 
 
 {{<featured/large>}}Leaders in Action are individual donors who are champions of Spotlight PA's mission at the highest level, contributing $1,000 or more annually to our newsroom. Leaders in Action help us to expand Spotlight PA's urgent investigative reporting, increase accessibility to quality, fact-based information for all Pennsylvanians, and advance our commitment to protecting democracy. Leaders in Action not only sustain—but directly advance—unique and vital reporting that drives change.{{</featured/large>}}
