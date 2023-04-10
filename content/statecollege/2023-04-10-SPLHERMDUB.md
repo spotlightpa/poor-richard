@@ -11,12 +11,14 @@ internal-budget = "How a Pa. city manager allegedly stole thousands of taxpayer 
 internal-id = "SPLHERMDUB"
 kicker = "Local Government"
 modal-exclude = false
+og-title = "How Herm Suplizio allegedly bilked DuBois, PA of $600K"
 published = 2023-04-10T05:00:00-04:00
 slug = "pa-attorney-general-dubois-herm-suplizio-charges"
 suppress-date = false
 title = "How a Pa. city manager allegedly stole thousands of taxpayer dollars with virtually no oversight"
-title-tag = "PA attorney general: Herm Suplizio stole DuBois funds"
+title-tag = "How Herm Suplizio allegedly bilked DuBois, PA of $600K"
 topics = ["Local Government"]
+twitter-title = "How Herm Suplizio allegedly bilked DuBois, PA of $600K"
 +++
 
 <i>This story was produced by the </i><a href="https://www.spotlightpa.org/statecollege"><i>State College regional bureau of Spotlight PA</i></a><i>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><i>Sign up for our regional newsletter, Talk of the Town.</i></a>
