@@ -59,7 +59,7 @@ Cinco candidatos a gobernador estarán en la papeleta del 8 de noviembre, junto 
 
 # Los candidatos
 
-{{<picture src="external/03w70xfxxc592thnhvtr6w26vg.jpeg" description="Doug Mastriano, el republicano nominado a gobernador " caption="Doug Mastriano, el republicano nominado a gobernador " credit="YONG KIM / Philadelphia Inquirer">}} 
+{{<picture src="external/03w70xfxxc592thnhvtr6w26vg.jpeg" description="Doug Mastriano, el republicano nominado a gobernador " caption="Doug Mastriano, el republicano nominado a gobernador " credit="YONG KIM / Philadelphia Inquirer">}}
 
 <div id="spl-mastriano"></div>
 
@@ -89,7 +89,7 @@ Los propietarios de concesionarios de automóviles Clayton Black y Steven L. Lat
 
 <div id="spl-shapiro"></div>
 
-{{<picture src="external/bbt5kknye7atbrxxryn13kswhc.jpeg" description="Josh Shapiro, el demócrata nominado a gobernador " caption="Josh Shapiro, el demócrata nominado a gobernador " credit="HEATHER KHALIFA / Philadelphia Inquirer">}} 
+{{<picture src="external/bbt5kknye7atbrxxryn13kswhc.jpeg" description="Josh Shapiro, el demócrata nominado a gobernador " caption="Josh Shapiro, el demócrata nominado a gobernador " credit="HEATHER KHALIFA / Philadelphia Inquirer">}}
 
 ## <a href="https://joshshapiro.org/">Josh Shapiro</a>, Demócrata
 
@@ -113,13 +113,13 @@ Su compañero de fórmula es el representante estatal Austin Davis (D., Alleghen
 
 <div id="spl-digiulio"></div>
 
-{{<picture src="external/f2apd9v1fkk28cvp338edn487r.jpeg" description="Christina “PK” Digiulio, la candidata del Partido Verde a gobernadora" caption="Christina “PK” Digiulio, la candidata del Partido Verde a gobernadora" credit="Courtesy Christina &#34;PK&#34; Digiulio campaign">}} 
+{{<picture src="external/f2apd9v1fkk28cvp338edn487r.jpeg" description="Christina “PK” Digiulio, la candidata del Partido Verde a gobernadora" caption="Christina “PK” Digiulio, la candidata del Partido Verde a gobernadora" credit="Courtesy Christina &#34;PK&#34; Digiulio campaign">}}
 
 ## <a href="https://www.facebook.com/PKforPA">Christina “PK” DiGiulio</a>, Partido Verde
 
 DiGiulio es una ex química analítica para el Departamento de Defensa de los Estados Unidos y una opositora vocal del sistema de gasoductos Mariner East. Es cofundadora de <a href="https://www.wasepa.org/">Watchdogs of Southeastern Pennsylvania</a>, un grupo que documenta los daños de la infraestructura de petróleo y gas, y la <a href="https://www.betterpathcoalition.org/">Better Path Coalition</a>, una alianza de organizaciones a favor de la energía renovable.
 
-<a href="https://www.greenslate2022.com/platform">La plataforma</a> de DiGiulio incluye la prohibición del fracking, proveer más incentivos fiscales para la energía renovable en lugar de los combustibles fósiles, la despenalización de la marihuana, la implementación de la votación por orden de preferencia y la aprobación de una enmienda constitucional que permita un impuesto sobre la renta escalonado.
+<a href="https://web.archive.org/20220901171127/https://www.greenslate2022.com/platform">La plataforma</a> de DiGiulio incluye la prohibición del fracking, proveer más incentivos fiscales para la energía renovable en lugar de los combustibles fósiles, la despenalización de la marihuana, la implementación de la votación por orden de preferencia y la aprobación de una enmienda constitucional que permita un impuesto sobre la renta escalonado.
 
 Su compañero de fórmula es Michael Badges-Canning, un activista ambiental del Condado de Butler y candidato perenne del Partido Verde.
 
@@ -137,7 +137,7 @@ Su compañero de fórmula es el residente del condado de York, Timothy McMaster.
 
 <div id="spl-soloski"></div>
 
-{{<picture src="external/ktzjdmr15mnm6vpm5w6hckexmm.jpeg" description="Joe Soloski, el candidato del Partido de Keystone a gobernador  " caption="Joe Soloski, el candidato del Partido de Keystone a gobernador  " credit="Courtesy Joe Soloski campaign">}} 
+{{<picture src="external/ktzjdmr15mnm6vpm5w6hckexmm.jpeg" description="Joe Soloski, el candidato del Partido de Keystone a gobernador  " caption="Joe Soloski, el candidato del Partido de Keystone a gobernador  " credit="Courtesy Joe Soloski campaign">}}
 
 ## <a href="https://www.joesoloski.com/">Joe Soloski</a>, Partido de Keystone
 
@@ -171,7 +171,7 @@ Spotlight PA se centró en las posiciones de Mastriano y Shapiro, ya que lideran
 
 Shapiro ha dicho que generará empleo tapando pozos abandonados, modernizando hogares y negocios por medio de programas de eficiencia energética, invirtiendo en proyectos de alcantarillado y aguas pluviales, y reparando puentes y carreteras estructuralmente ineficientes.
 
-{{<picture src="external/7sx4qrnbfdvp0njbky2dsfj90r.jpeg" description="Mastriano quiere reducir fondos estatales por estudiante para las escuelas públicas, mientras Shapiro, como fiscal general, ha apoyado una demanda que pide más." caption="Mastriano quiere reducir fondos estatales por estudiante para las escuelas públicas, mientras Shapiro, como fiscal general, ha apoyado una demanda que pide más." credit="TIM TAI / Philadelphia Inquirer">}} 
+{{<picture src="external/7sx4qrnbfdvp0njbky2dsfj90r.jpeg" description="Mastriano quiere reducir fondos estatales por estudiante para las escuelas públicas, mientras Shapiro, como fiscal general, ha apoyado una demanda que pide más." caption="Mastriano quiere reducir fondos estatales por estudiante para las escuelas públicas, mientras Shapiro, como fiscal general, ha apoyado una demanda que pide más." credit="TIM TAI / Philadelphia Inquirer">}}
 
 <div id="spl-education"></div>
 
@@ -203,7 +203,7 @@ El comité del congreso que investiga la insurrección del 6 de enero citó a Ma
 
 <b>La Oficina del Fiscal General de Shapiro</b> ha jugado un rol clave en la defensa del estado en los meses posteriores a la elección de noviembre de 2020, cuando el ex presidente Donal Trump y sus aliados presentaron una avalancha de demandas que buscaban anular los resultados de las elecciones en Pensilvania. Ha dicho que las “mentiras peligrosas” acerca de esa elección, junto con las teorías de conspiración y litigios “frívolos” que llevaron a la insurrección del 6 de enero en el Capitolio de los Estados Unidos, han alimentado los ataques contra el acceso al voto.
 
-{{<picture src="external/4m6k0syhtt11a48xvv5rdr5cbg.jpeg" description="Mastriano ha prometido sacar a Pensilvania de la RGGI — la Iniciativa Regional de Gases de Efecto Invernadero, un programa interestatal que apunta a reducir las emisiones de carbón de las centrales eléctricas — el primer día de su administración. Shapiro no se ha comprometido a mantener a Pensilvania en la RGGI." caption="Mastriano ha prometido sacar a Pensilvania de la RGGI — la Iniciativa Regional de Gases de Efecto Invernadero, un programa interestatal que apunta a reducir las emisiones de carbón de las centrales eléctricas — el primer día de su administración. Shapiro no se ha comprometido a mantener a Pensilvania en la RGGI." credit="MICHAEL BRYANT / Philadelphia Inquirer">}} 
+{{<picture src="external/4m6k0syhtt11a48xvv5rdr5cbg.jpeg" description="Mastriano ha prometido sacar a Pensilvania de la RGGI — la Iniciativa Regional de Gases de Efecto Invernadero, un programa interestatal que apunta a reducir las emisiones de carbón de las centrales eléctricas — el primer día de su administración. Shapiro no se ha comprometido a mantener a Pensilvania en la RGGI." caption="Mastriano ha prometido sacar a Pensilvania de la RGGI — la Iniciativa Regional de Gases de Efecto Invernadero, un programa interestatal que apunta a reducir las emisiones de carbón de las centrales eléctricas — el primer día de su administración. Shapiro no se ha comprometido a mantener a Pensilvania en la RGGI." credit="MICHAEL BRYANT / Philadelphia Inquirer">}}
 
 <div id="spl-environment"></div>
 
@@ -229,7 +229,7 @@ El comité del congreso que investiga la insurrección del 6 de enero citó a Ma
 
 <b>Shapiro</b> apoya medidas de seguridad más estrictas para las armas, incluyendo la promulgación de verificaciones de antecedentes universales y una ley de “bandera roja”, que permitiría la confiscación temporal de armas de fuego a personas que sean consideradas por un juez como un riesgo para ellos mismos o para otros. Como fiscal general, ha abogado firmemente por cerrar el vacío legal que permite a las personas comprar las llamadas pistolas fantasmas — armas de fuego no serializadas que a menudo se ensamblan en casa con piezas o kits que se pueden comprar sin una verificación de antecedentes.
 
-{{<picture src="external/6qd571q5nv7xz4r9gy9658he7g.jpeg" description="Mastriano tiene una larga historia de oposición a los derechos LGBTQ, mientras Shapiro dice que presionaría para expandir las protecciones en contra de la discriminación a las personas en base a su orientación sexual e identidad de género." caption="Mastriano tiene una larga historia de oposición a los derechos LGBTQ, mientras Shapiro dice que presionaría para expandir las protecciones en contra de la discriminación a las personas en base a su orientación sexual e identidad de género." credit="Commonwealth Media Services">}} 
+{{<picture src="external/6qd571q5nv7xz4r9gy9658he7g.jpeg" description="Mastriano tiene una larga historia de oposición a los derechos LGBTQ, mientras Shapiro dice que presionaría para expandir las protecciones en contra de la discriminación a las personas en base a su orientación sexual e identidad de género." caption="Mastriano tiene una larga historia de oposición a los derechos LGBTQ, mientras Shapiro dice que presionaría para expandir las protecciones en contra de la discriminación a las personas en base a su orientación sexual e identidad de género." credit="Commonwealth Media Services">}}
 
 <div id="spl-lgbtq"></div>
 
