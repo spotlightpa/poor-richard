@@ -117,7 +117,7 @@ Su compañero de fórmula es el representante estatal Austin Davis (D., Alleghen
 
 ## <a href="https://www.facebook.com/PKforPA">Christina “PK” DiGiulio</a>, Partido Verde
 
-DiGiulio es una ex química analítica para el Departamento de Defensa de los Estados Unidos y una opositora vocal del sistema de gasoductos Mariner East. Es cofundadora de <a href="https://www.wasepa.org/">Watchdogs of Southeastern Pennsylvania</a>, un grupo que documenta los daños de la infraestructura de petróleo y gas, y la <a href="https://www.betterpathcoalition.org/">Better Path Coalition</a>, una alianza de organizaciones a favor de la energía renovable.
+DiGiulio es una ex química analítica para el Departamento de Defensa de los Estados Unidos y una opositora vocal del sistema de gasoductos Mariner East. Es cofundadora de <a href="https://web.archive.org/20220913122759/https://www.wasepa.org/">Watchdogs of Southeastern Pennsylvania</a>, un grupo que documenta los daños de la infraestructura de petróleo y gas, y la <a href="https://www.betterpathcoalition.org/">Better Path Coalition</a>, una alianza de organizaciones a favor de la energía renovable.
 
 <a href="https://web.archive.org/20220901171127/https://www.greenslate2022.com/platform">La plataforma</a> de DiGiulio incluye la prohibición del fracking, proveer más incentivos fiscales para la energía renovable en lugar de los combustibles fósiles, la despenalización de la marihuana, la implementación de la votación por orden de preferencia y la aprobación de una enmienda constitucional que permita un impuesto sobre la renta escalonado.
 
