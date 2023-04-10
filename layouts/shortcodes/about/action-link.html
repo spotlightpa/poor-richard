@@ -1,0 +1,9 @@
+{{- $url := .Get "href" | default "#" -}}
+
+
+<a
+  data-ga-category="item"
+  class="font-bold mb-9 mr-5 no-underline min-w-[145px] max-w-xs inline-flex w-auto items-center justify-center rounded bg-red-6 px-3 py-5 text-base tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px]"
+  href="{{ $url }}"
+  >{{ .Inner }}</a
+>

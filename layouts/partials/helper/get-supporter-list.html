@@ -1,0 +1,11 @@
+{{ $data := index site.Data.supporters . }}
+
+{{ range sort $data.list "sort" "asc" }}
+  <li>
+    {{ if .url }}
+      <a class="hover:underline text-blue" href="{{ .url }}">{{ .display }}</a>
+    {{ else }}
+      {{ .display }}
+    {{ end }}
+  </li>
+{{ end }}

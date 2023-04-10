@@ -5,10 +5,26 @@
 {{- $p := first 1000 $stories -}}
 {{- range $i, $p := $p -}}
   {{- if eq $i 0 -}}
-    {{- $row := slice "date" "kicker" "title"  "byline" "url" -}}
+    {{- $row := slice
+      "date"
+      "kicker"
+      "title"
+      "byline"
+      "photo"
+      "photo credit"
+      "url"
+    -}}
     {{- partial "helper/csv-row.txt" $row -}}
   {{- end -}}
   {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
-  {{- $row := slice .PublishDate $params.kicker .Title  $params.byline .Permalink -}}
+  {{- $row := slice
+    .PublishDate
+    $params.kicker
+    .Title
+    $params.byline
+    (.Param "image")
+    (.Param "image-credit")
+    .Permalink
+  -}}
   {{- partial "helper/csv-row.txt" $row -}}
 {{- end -}}
