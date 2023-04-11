@@ -1,33 +1,22 @@
 +++
 arc-id = "H2GVX4X3IRB3JLGFJGUOP5KAFY"
-internal-id = "SPLCORMANXX"
-internal-budget = ""
-image = "external/hrgymvjb21axaezhmy4sbbkkam.jpeg"
-image-description = "Senate Majority Leader Jake Corman said while he doesn’t “have any evidence of misdoing,” half of the state will not have faith in the results because of actions taken by Kathy Boockvar, the secretary of the commonwealth, in administering the election."
-image-caption = ""
-image-credit = "Matt Rourke / Associated Press"
-image-size = ""
-published = 2020-11-06T22:55:27Z
-slug = "pennsylvania-election-2020-republican-fraud-cured-late-ballots"
 authors = ["Marie Albiges", "Cynthia Fernandez"]
-byline = "Marie Albiges for Spotlight PA and Cynthia Fernandez of Spotlight PA"
-title = "Top Pa. Republican casting doubt on vote while conceding he doesn’t have ‘any evidence of misdoing’"
-subtitle = ""
-description = "While the validity of some ballots is in dispute, they would probably not be enough to affect the outcome of the presidential race. Claims of fraud lack any credible evidence."
 blurb = "While the validity of some ballots is in dispute, they would probably not be enough to affect the outcome of the presidential race. Claims of fraud lack any credible evidence."
+byline = "Marie Albiges for Spotlight PA and Cynthia Fernandez of Spotlight PA"
+description = "While the validity of some ballots is in dispute, they would probably not be enough to affect the outcome of the presidential race. Claims of fraud lack any credible evidence."
+image = "external/av2brf5deqp7r1q5krkx0day4w.jpeg"
+image-credit = "Commonwealth Media Services"
+image-description = "Senate Majority Leader Jake Corman said while he doesn’t “have any evidence of misdoing,” half of the state will not have faith in the results because of actions taken by Kathy Boockvar, the secretary of the commonwealth, in administering the election."
+internal-id = "SPLCORMANXX"
 kicker = "Elections"
-topics = ["Elections"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-11-06T17:55:27-05:00
+slug = "pennsylvania-election-2020-republican-fraud-cured-late-ballots"
+suppress-date = false
+suppress-featured = false
+title = "Top Pa. Republican casting doubt on vote while conceding he doesn’t have ‘any evidence of misdoing’"
+topics = ["Elections"]
 +++
 
 <i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
