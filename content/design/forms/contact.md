@@ -35,7 +35,7 @@ featured-newsletter = """
     Tips Embed
   </h3>
 
-  <script src="http://localhost:39019/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="http://localhost:39019/embeds/tips/?tip_text=Customizable%20Tips%20Teaser&flag_text=Customizable%20Eyebrow"></div>
+  <script src="https://spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://spotlightpa.org/embeds/tips/?tip_text=Customizable%20Tips%20Teaser&flag_text=Customizable%20Eyebrow"></div>
 
 
 </div>
