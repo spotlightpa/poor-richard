@@ -1,18 +1,20 @@
 +++
-internal-id = "splfail05"
-draft = false
-image = "2020/02/drip.jpeg"
-image-description = "In this May 25, 2017 file photo, chemotherapy drugs are administered to a patient at a hospital in Chapel Hill, N.C."
-image-credit = "GERRY BROOME / AP"
-published = 2020-02-05T18:35:39.294Z
 authors = ["Cynthia Fernandez"]
-title = "Pa. will expand insurance coverage of innovative treatments for advanced cancers"
-description = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
 blurb = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
+description = "The state House on Tuesday gave final approval to a bill that would abolish the heavily criticized “fail first” approach, which requires stage IV cancer patients to show no improvement with cheaper, insurance-approved drugs before moving on to more innovative approaches."
+draft = false
+image = "external/ep33361dtv7gj3jtx9efm9xrj8.jpeg"
+image-credit = "TIM TAI / Philadelphia Inquirer"
+internal-id = "splfail05"
 kicker = "Capitol Notebook"
-suppress-featured = false
+modal-exclude = false
+published = 2020-02-05T13:35:39.294-05:00
 slug = "fail-first-no-more-pennsylvania-will-expand-coverage-of-treatments-for-advanced-cancers"
+suppress-date = false
+suppress-featured = false
+title = "Pa. will expand insurance coverage of innovative treatments for advanced cancers"
 +++
+
 **\*Capitol Notebook by [Spotlight PA](https://www.spotlightpa.org/)** provides updates on important news and notes from the halls of power in Harrisburg. [Sign up for our weekly newsletter.](https://www.spotlightpa.org/newsletters)*
 
 HARRISBURG — Patients in Pennsylvania facing the most serious stage of cancer will no longer be forced to try cheaper drugs before their insurance covers other, more expensive treatments.
