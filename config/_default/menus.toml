@@ -117,11 +117,6 @@ url = "/about/staff/"
 weight = 7
 
 [[about]]
-name = "Diversity"
-url = "/about/diversity/"
-weight = 8
-
-[[about]]
 name = "Jobs"
 url = "/about/jobs/"
 weight = 10
