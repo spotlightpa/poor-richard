@@ -102,7 +102,7 @@ url = "/about/mission/"
 weight = 4
 
 [[about]]
-name = "Supporters"
+name = "Ways to Give"
 url = "/support/"
 weight = 5
 
@@ -115,16 +115,6 @@ weight = 6
 name = "Staff"
 url = "/about/staff/"
 weight = 7
-
-[[about]]
-name = "Diversity"
-url = "/about/diversity/"
-weight = 8
-
-[[about]]
-name = "FAQ"
-url = "/about/faq/"
-weight = 9
 
 [[about]]
 name = "Jobs"
