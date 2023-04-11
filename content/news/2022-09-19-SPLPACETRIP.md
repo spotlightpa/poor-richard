@@ -71,8 +71,6 @@ In an interview, Helm, who is not running for reelection this year, said the com
 
 “They weren’t paying for first-class airfare,” she said, noting she flew economy.
 
-{{<picture src="external/dfj06aj399jyrqyfvth6t4csfg.jpeg" description="Skill game companies want their machines to be formally recognized as legal. " caption="Skill game companies want their machines to be formally recognized as legal. " credit="Keith Srakocic / AP File Photo">}} 
-
 Pace-O-Matic had a hospitality suite, where Helm said she met some of the company’s employees and others with an interest in seeing skill games regulated and recognized as a legal and important revenue-producing industry.
 
 “I went more for the learning experience,” she said, although she also said she attended two rodeos, one dinner, and a concert.
