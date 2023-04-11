@@ -1,0 +1,143 @@
+    {{ $data := index site.Data.colors }}
+
+      <ul class="w-full">
+        {{ range  $data }}
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Grayscale</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+            >
+              {{ range .s }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Red</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+            >
+              {{ range .red }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Yellow</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+            >
+              {{ range .yellow }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Blue</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline  !pl-0"
+            >
+              {{ range .blue }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Navy</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+            >
+              {{ range .navy }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          <li class="w-full font-sans article-content mt-6">
+            <h3>Election Green</h3>
+            <ul
+              class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+            >
+              {{ range .electionGreen }}
+
+                <li
+                  class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white"
+                >
+                  <figure
+                    class="h-32 w-full"
+                    style="background-color: {{ . }}"
+                  ></figure>
+                  <p>
+                    Color:
+                    {{ . }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+      </ul>
