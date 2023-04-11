@@ -55,12 +55,12 @@ url = "/about/partners/"
 copy = "See More of Our Partners"
 
 [[blocks]]
-title = "Supporters"
+title = "Ways to Give"
 layout = "text-2"
 copy="{{<featured/large>}}Spotlight PA is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts. Learn more about who supports our work and how to join them:{{</featured/large>}}"
 [blocks.cta]
 url = "/support/"
-copy = "See More About Our Supporters"
+copy = "See More Ways to Give"
 
 [[blocks]]
 title = "Mission"
