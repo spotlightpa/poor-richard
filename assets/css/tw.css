@@ -57,7 +57,7 @@
   @apply list-decimal pl-6;
 }
 
-.article-content > :where(p, aside, figure, ol, ul) {
+.article-content > :where(p, aside, figure, ol, ul, hr) {
   @apply mt-4 mb-4;
 }
 
