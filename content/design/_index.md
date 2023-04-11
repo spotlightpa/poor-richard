@@ -16,4 +16,4 @@ title-tag = "Spotlight PA design and visual style"
   - [Donation forms](/design/forms/donations)
 - [Pages](/design/pages)
   - [Standard page](/design/pages/standard-page)
-  - [Destination page](/design/pages/destination-page)
+  - [Landing page](/design/pages/landing-page)

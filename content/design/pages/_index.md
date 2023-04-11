@@ -9,10 +9,10 @@ layout = "links"
 title = "Page Types"
 
 [[blocks.entries]]
-link = "/pages/landing-page"
+link = "/design/pages/landing-page"
 name = "Landing Page"
 
 [[blocks.entries]]
-link = "/pages/standard-page/"
+link = "/design/pages/standard-page/"
 name = "Standard Page"
 +++

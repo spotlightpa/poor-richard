@@ -1,76 +1,70 @@
-
-      <div
-        class="
+<div
+  class="
          border-b border-s-4 mt-10 space-y-4 p-4
       "
-      >
-        <h3 class="mb-8 font-sans text-3xl italic leading-none">
-          Donation Embed
-        </h3>
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">Donation Embed</h3>
 
-        <script src="https://www.spotlightpa.org/embed.js" async></script>
-        <div
-          data-spl-embed-version="1"
-          data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Teaser%20Text%20of%20any%20length.&cta_text=Customizable%20CTA&eyebrow_text=Custom%20Eyebrow"
-        ></div>
-      </div>
+  <script src="https://www.spotlightpa.org/embed.js" async></script>
+  <div
+    data-spl-embed-version="1"
+    data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Teaser%20Text%20of%20any%20length.&cta_text=Customizable%20CTA&eyebrow_text=Custom%20Eyebrow"
+  ></div>
+</div>
 
-      <div
-        class="
+<div
+  class="
          border-b border-s-4 mt-10 space-y-4 p-4
       "
-      >
-        <h3 class="mb-8 font-sans text-3xl italic leading-none">
-          Donation Prefill
-        </h3>
-        {{ partial "tw/donate-prefill.html" (dict
-          "page" .
-          "eyebrow" "Help Empower Voters"
-          "hed" "Support Our Vital Election Coverage"
-          "body" "The future of Spotlight PA depends on you."
-          "cta" "Contribute Now"
-          )
-        }}
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">Donation Prefill</h3>
+  {{ partial "tw/donate-prefill.html" (dict
+    "page" .
+    "eyebrow" "Help Empower Voters"
+    "hed" "Support Our Vital Election Coverage"
+    "body" "The future of Spotlight PA depends on you."
+    "cta" "Contribute Now"
+    )
+  }}
 
-      </div>
-      <div
-        class="
+</div>
+<div
+  class="
          border-b border-s-4 mt-10 space-y-4 p-4
       "
-      >
-        <h3 class="mb-8 font-sans text-3xl italic leading-none">
-          Featured Donation Prefill Large
-        </h3>
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">
+    Featured Donation Prefill Large
+  </h3>
 
-        {{ partial "tw/donate-prefill-lg.html" (dict
-          "donateHed" "Customizable Donation Headline"
-          "donateDek" "customizable dek for large donation prefill"
-          "donateCta" "Give Today"
-          "donateCampaign" "7015G0000013pZiQAI"
-          "donateTheme" "centrecounty"
-          "donateAmounts" "10,15,25"
-          )
-        }}
+  {{ partial "tw/donate-prefill-lg.html" (dict
+    "donateHed" "Customizable Donation Headline"
+    "donateDek" "customizable dek for large donation prefill"
+    "donateCta" "Give Today"
+    "donateCampaign" "7015G0000013pZiQAI"
+    "donateTheme" "centrecounty"
+    "donateAmounts" "10,15,25"
+    )
+  }}
 
-      </div>
+</div>
 
-      <div
-        class="
+<div
+  class="
          border-b border-s-4 mt-10 space-y-4 p-4
       "
-      >
-        <h3 class="mb-8 font-sans text-3xl italic leading-none">
-          Featured Donation Prefill Large Page
-        </h3>
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">
+    Featured Donation Prefill Large Page
+  </h3>
 
-        {{ partial "tw/donate-prefill-lg-page.html" (dict
-          "donateHed" "Customizable Donation Headline"
-          "donateDek" "customizable dek for large donation prefill"
-          "donateCta" "Give Today"
-          "donateCampaign" "7015G0000013pZiQAI"
-          "donateTheme" "centrecounty"
-          "donateAmounts" "10,15,25"
-          )
-        }}
-
-      </div>
+  {{ partial "tw/donate-prefill-lg-page.html" (dict
+    "donateHed" "Customizable Donation Headline"
+    "donateDek" "customizable dek for large donation prefill"
+    "donateCta" "Give Today"
+    "donateCampaign" "7015G0000013pZiQAI"
+    "donateTheme" "centrecounty"
+    "donateAmounts" "10,15,25"
+    )
+  }}
+</div>
