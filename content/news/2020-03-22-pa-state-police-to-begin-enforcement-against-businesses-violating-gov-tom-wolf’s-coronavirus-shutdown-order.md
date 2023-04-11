@@ -1,19 +1,21 @@
 +++
-internal-id = "splenforce22"
-draft = false
-image = "2020/03/01f7g06atam9tyrv.jpeg"
-image-credit = "AP Photo / Matt Rourke"
-published = 2020-03-22T17:47:15.857Z
-slug = "pennsylvania-state-police-coronavirus-order-enforcement"
 authors = ["Sarah Anne Hughes", "Angela Couloumbis"]
-title = "Gov. Tom Wolf says Pa. coronavirus business restrictions, school closures could extend beyond two weeks"
-description = "The State Police will begin enforcement Monday against businesses in violation of Wolf's shutdown order."
 blurb = "The State Police will begin enforcement Monday against businesses in violation of Wolf's shutdown order."
+description = "The State Police will begin enforcement Monday against businesses in violation of Wolf's shutdown order."
+draft = false
+image = "external/vexn0myh3f66pvaaqxq6vapbp8.jpeg"
+image-credit = "JOSE F. MORENO / Philadelphia Inquirer"
+internal-id = "splenforce22"
 kicker = "Coronavirus"
+modal-exclude = false
+published = 2020-03-22T13:47:15.857-04:00
+slug = "pennsylvania-state-police-coronavirus-order-enforcement"
+suppress-date = false
 suppress-featured = false
+title = "Gov. Tom Wolf says Pa. coronavirus business restrictions, school closures could extend beyond two weeks"
 topics = ["Coronavirus"]
-series = []
 +++
+
 <i>This story was produced as part of a joint effort among [Spotlight PA](https://www.spotlightpa.org/), [LNP Media Group](https://lancasteronline.com/), [PennLive](https://www.pennlive.com/), [PA Post](https://papost.org/), and [WITF](https://www.witf.org/) to cover how Pennsylvania state government is responding to the coronavirus. [Sign up for Spotlight PA’s newsletter.](https://www.spotlightpa.org/newsletters)</i>
 
 The Pennsylvania State Police on Monday will begin enforcing the statewide shutdown for [all but “life-sustaining” businesses](https://www.inquirer.com/health/coronavirus/spl/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down-20200319.html) across the state, as Gov. Tom Wolf warned that emergency measures may last longer than initially anticipated.
