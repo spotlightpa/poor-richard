@@ -11,5 +11,5 @@ beat = "Rural Affairs"
 focusHed = "Agriculture/environment, broadband, criminal justice, education, healthcare, government spending, and housing"
 content = "Ashad Hajela is a Report for America corps member at Spotlight PA's State College Bureau. He follows the impact of issues like broadband, education and healthcare on the fast-evolving rural central and northern Pennsylvania.\n\nAs a former Stabile Fellow at Columbia Journalism School, he investigated the parole system in New York and problematic hospitals and nursing homes in North Carolina and New Hampshire. He previously worked at The News & Observer in Raleigh, North Carolina where he covered crime and criminal justice."
 reporter = true
-active = true
+active = false
 image-gravity = "fp:.1:.9"

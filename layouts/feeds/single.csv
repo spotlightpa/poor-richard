@@ -2,7 +2,7 @@
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
 {{- $stories := union $news.RegularPages $sc.RegularPages -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
-{{- $p := first 1000 $stories -}}
+{{- $p := first 5000 $stories -}}
 {{- range $i, $p := $p -}}
   {{- if eq $i 0 -}}
     {{- $row := slice
