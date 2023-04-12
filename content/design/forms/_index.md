@@ -4,25 +4,22 @@ modal-exclude = true
 no-index = true
 layout = "page-landing"
 type = "root"
-[[blocks]]
-layout = "links"
-title = "Forms"
-
-
-[[blocks.entries]]
-link = "/design/forms/elements"
-name = "Form Elements"
-
-[[blocks.entries]]
-link = "/design/forms/contact"
-name = "Contact Forms"
-
-[[blocks.entries]]
-link = "/design/forms/signups"
-name = "Signup Forms"
-
-[[blocks.entries]]
-link = "/design/forms/donations"
-name = "Donation Forms"
-
 +++
+{{<design/links>}}
+  {{<design/link-single
+    link="/design/forms/elements"
+    text="Form Elements"
+  >}}
+  {{<design/link-single
+    link="/design/forms/contact"
+    text="Contact Forms"
+  >}}
+  {{<design/link-single
+    link="/design/forms/signups"
+    text="Signup Forms"
+  >}}
+  {{<design/link-single
+    link="/design/forms/donations"
+    text="Donation Forms"
+  >}}
+{{</design/links>}}
