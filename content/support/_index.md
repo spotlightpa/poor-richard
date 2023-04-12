@@ -37,7 +37,7 @@ copy = """
   
   ## Learn more about who supports our work
 
-  [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders)
+  [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders-since-launch)
 
   [Leaders in Action →](/support/leaders-in-action/#our-current-leaders)
 
@@ -55,7 +55,7 @@ copy="""
 +++
 {{<featured/large>}}Spotlight PA produces investigative and public-service journalism that gets results, and shares that work at no cost with communities across Pennsylvania. But we can't do it without your support. Here are the several ways you can sustain our newsroom with a tax-deductible donation today:{{</featured/large>}} 
 
-{{<about/action-link href="/donate/">}}Donate With Credit Card  →{{</about/action-link>}}
+{{<about/action-link href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G000001Z88SQAS">}}Donate With Credit Card  →{{</about/action-link>}}
 
 {{<about/action-link href="https://www.paypal.com/donate?hosted_button_id=BWKY4YD8CU9ML">}}Donate Via PayPal  →{{</about/action-link>}}
 

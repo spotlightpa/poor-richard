@@ -4,9 +4,8 @@ authors = ["Angela Couloumbis"]
 blurb = "In the ongoing war of cash and influence between skill game operators and casinos, state lawmakers and their campaign coffers are benefitting handsomely."
 byline = "Angela Couloumbis of Spotlight PA"
 description = "In the ongoing war of cash and influence between skill game operators and casinos, state lawmakers and their campaign coffers are benefitting handsomely."
-image = "external/mfp0cq02tckshgt13jyvfnt4kc.jpeg"
-image-credit = "Blaine McCartney / The Wyoming Tribune Eagle via AP,  JULY 29, 2018, FILE PHOTO"
-image-description = "This past summer, a select group of Pennsylvania legislators, including House Majority Leader Kerry Benninghoff (R., Centre), got to experience Cheyenne Frontier Days, the premier summer festival in Wyoming."
+image = "external/22n3jqtrm0anq2a5gv3pj58pmm.png"
+image-credit = "BLAINE SHAHAN | LNP/LancasterOnline"
 image-gravity = "no"
 internal-budget = "Gaming company at center of a multimillion-dollar fight offered key Pa. lawmakers all-expenses-paid trip to Wyoming"
 internal-id = "SPLPACETRIP"
@@ -71,8 +70,6 @@ State Rep. Sue Helm (R., Dauphin) — who chairs the state House Gaming Oversigh
 In an interview, Helm, who is not running for reelection this year, said the company paid for her travel and accommodations but contended that “it wasn’t a lavish trip.”
 
 “They weren’t paying for first-class airfare,” she said, noting she flew economy.
-
-{{<picture src="external/dfj06aj399jyrqyfvth6t4csfg.jpeg" description="Skill game companies want their machines to be formally recognized as legal. " caption="Skill game companies want their machines to be formally recognized as legal. " credit="Keith Srakocic / AP File Photo">}} 
 
 Pace-O-Matic had a hospitality suite, where Helm said she met some of the company’s employees and others with an interest in seeing skill games regulated and recognized as a legal and important revenue-producing industry.
 

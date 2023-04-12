@@ -1,17 +1,20 @@
 +++
-internal-id = "splscarnati13"
-draft = false
-image = "2020/02/01f49cpwqh5cw3qn.jpeg"
-image-credit = "MATT ROURKE / AP"
-published = 2020-02-13T01:47:28.588Z
-slug = "joe-scarnati-pennsylvania-senate-retirement"
 authors = ["Angela Couloumbis", "Brad Bumsted", "Paula Knudsen"]
 byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted and Paula Knudsen of The Caucus"
-title = "The Pa. Senate's most powerful Republican won't seek reelection"
 description = "State Sen. Joe Scarnati (R., Jefferson) said the decision was \"personal, not political.\""
+draft = false
+image = "2023/04/01j3-b7jt-ex4b-ejbv.jpeg"
+image-credit = "Steven M. Falk / Philadelphia Inquirer"
+internal-id = "splscarnati13"
 kicker = "Capitol Notebook"
+modal-exclude = false
+published = 2020-02-12T20:47:28.588-05:00
+slug = "joe-scarnati-pennsylvania-senate-retirement"
+suppress-date = false
 suppress-featured = false
+title = "The Pa. Senate's most powerful Republican won't seek reelection"
 +++
+
 *[Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/") is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. [Sign up for our free weekly newsletter](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/").*
 
 HARRISBURG — The top Republican in the Pennsylvania Senate announced late Wednesday that he is not running for reelection, becoming the second ranking GOP lawmaker in the Capitol to seek retirement in a pivotal election year.

@@ -1,5 +1,5 @@
 {{ $title := .title }}
-{{ $id := urlize .title }}
+{{ $id := .id | default (urlize $title) }}
 {{ $category := .category }}
 {{ $dataSrc := .dataSrc }}
 <div
