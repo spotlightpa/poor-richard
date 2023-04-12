@@ -1,86 +1,73 @@
+{{ $gaForm := "newsletters:careers" }}
+{{ $gaCategory := "inline:newsletters:careers" }}
+{{ $hed := "Spotlight PA Career Opportunity Alerts" }}
+{{ $cta := "Subscribe" }}
+
 {{ $idFname := partial "helper/new-id" . }}
 {{ $idLname := partial "helper/new-id" . }}
 {{ $idEmail := partial "helper/new-id" . }}
-<section class="box">
+
+
+<section data-ga-category="inline">
   <form
     action="https://spotlightpa.us3.list-manage.com/subscribe/post?u=4f6d92afd9b3de3ddb48714b9&amp;id=8c2a45d138"
     method="post"
     target="_blank"
-    data-ga-form="newsletters:careers"
-    data-ga-category="inline:newsletters:careers"
+    class="p-1 font-sans text-black"
+    data-ga-form="{{ $gaForm }}"
+    data-ga-category="{{ $gaCategory }}"
   >
-    <h2 class="title is-3">Spotlight PA Career Opportunity Alerts</h2>
-    <p class="is-hidden" aria-hidden="true">
-      <label>
-        Don’t fill this out if you're human:
-        <input
-          type="text"
-          name="b_4f6d92afd9b3de3ddb48714b9_8c2a45d138"
-          tabindex="-1"
-          value=""
-        />
-      </label>
-    </p>
-    <div class="field">
-      <label class="label" for="{{ $idFname }}">First Name</label>
-    </div>
-    <div class="field">
-      <p class="control is-expanded">
-        <input
-          id="{{ $idFname }}"
-          class="input"
-          type="text"
-          name="FNAME"
-          required
-        />
-      </p>
-    </div>
-    <div class="field">
-      <label class="label" for="{{ $idLname }}">Last Name</label>
-    </div>
-    <div class="field">
-      <p class="control is-expanded">
-        <input
-          id="{{ $idLname }}"
-          class="input"
-          type="text"
-          name="LNAME"
-          required
-        />
-      </p>
-    </div>
-    <div class="field">
-      <label class="label" for="{{ $idEmail }}">Email Address</label>
-      <p class="control is-expanded has-icons-left has-icons-right">
-        <input
-          id="{{ $idEmail }}"
-          class="input"
-          type="email"
-          name="EMAIL"
-          required
-        />
-        <span class="icon is-left">
-          <svg viewBox="0 0 1 1">
-            <use xlink:href="#email-svg"></use>
-          </svg>
-        </span>
-        <span class="icon is-right validator-icon">
-          <svg viewBox="0 0 1 1">
-            <use xlink:href="#check-svg"></use>
-          </svg>
-        </span>
-      </p>
-    </div>
+    <h2 class="mt-8 text-3xl font-extrabold">
+      {{ $hed }}
+    </h2>
 
-    <div class="field">
-      <div class="control">
-        <button
-          type="submit"
-          class="button is-medium is-danger has-text-weight-semibold"
-        >
-          Subscribe
-        </button>
-      </div>
-    </div>
+    <p>Sign up to receive alerts so you don’t miss new job postings.</p>
+
+    <label class="mt-8 block font-extrabold" for="{{ $idFname }}">
+      First Name
+    </label>
+    <p>
+      <input
+        id="{{ $idFname }}"
+        class="spl-input"
+        type="text"
+        name="FNAME"
+        placeholder="First Name"
+        required
+      />
+    </p>
+
+    <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+      Last Name
+    </label>
+    <p>
+      <input
+        id="{{ $idLname }}"
+        class="spl-input"
+        type="text"
+        name="LNAME"
+        placeholder="Last Name"
+        required
+      />
+    </p>
+    <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+      Email Address
+    </label>
+    <p class="relative">
+      <input
+        id="{{ $idEmail }}"
+        class="spl-input"
+        type="email"
+        name="EMAIL"
+        placeholder="Email address"
+        required
+      />
+    </p>
+    <button
+      type="submit"
+      class="mt-8 rounded border-2 border-red bg-red px-8 py-2 font-semibold uppercase tracking-widest text-white outline-none ring-red-7 focus:ring-2"
+    >
+      {{ $cta }}
+    </button>
   </form>
 </section>

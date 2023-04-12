@@ -7,6 +7,7 @@ linktitle = "PA Local"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
+occurence = "Every Friday"
 
 [cascade]
 image = "2022/02/01gz-k3bg-4tet-0as8.png"

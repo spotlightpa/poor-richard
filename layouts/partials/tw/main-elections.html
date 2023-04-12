@@ -65,7 +65,7 @@
           currentTarget: window.location,
         });
       "
-      class="block w-full appearance-none rounded-lg border-2 border-s-4 bg-white py-2 pl-6 font-sans text-xl font-semibold uppercase tracking-wider text-s-6 shadow outline-none ring-2 ring-transparent focus:ring-navy-6 active:ring-navy-8"
+      class="spl-select text-2xl"
     >
       <option disabled selected>Jump to…</option>
       {{ range .Param "internal-links" }}
@@ -73,11 +73,11 @@
       {{ end }}
     </select>
     <span
-      class="pointer-events-none absolute inset-y-0 right-6 z-10 inline-flex items-center justify-center leading-none text-s-6"
+      class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
       aria-hidden="true"
     >
-      <svg class="h-6 w-6 fill-current">
-        <use xlink:href="#down-triangle-svg"></use>
+      <svg class="h-4 w-4 fill-s-5">
+        <use xlink:href="#chevron-svg"></use>
       </svg>
     </span>
   </div>

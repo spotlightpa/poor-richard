@@ -89,14 +89,14 @@
       <p class="relative">
         <input
           id="{{ $idName }}"
-          class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-5 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+          class="spl-input"
           type="text"
           :placeholder="showSpanish? 'Nombre': 'Name'"
           name="name"
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -110,14 +110,14 @@
       <p class="relative">
         <input
           id="{{ $idEmail }}"
-          class="block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 tracking-wider text-s-8 placeholder-s-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
+          class="spl-input"
           type="text"
           :placeholder="showSpanish? 'Correo o número de teléfono': 'Email or phone number'"
           name="email"
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center leading-none text-s-4"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">

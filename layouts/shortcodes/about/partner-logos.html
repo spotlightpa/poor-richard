@@ -1,6 +1,9 @@
-<div class="columns is-multiline is-centered" data-ga-category="inline">
+<div
+  class="flex md:flex-row flex-col flex-wrap items-center justify-center"
+  data-ga-category="inline"
+>
   {{ range .Site.Data.partners.partners }}
-    <div class="column is-narrow has-text-centered" data-ga-category="logos">
+    <div class=" p-3 max-w-sm m-auto text-center" data-ga-category="logos">
       <a href="{{ .url }}" title="{{ .name }}">
         <span class="logo-column">
           <img

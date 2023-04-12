@@ -22,10 +22,6 @@ link = "/about/partners/"
 name = "Partners"
 
 [[blocks.entries]]
-link = "/about/faq/"
-name = "FAQ"
-
-[[blocks.entries]]
 link = "/about/statecollege/"
 name = "State College Regional Bureau"
 

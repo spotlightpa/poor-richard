@@ -1,0 +1,21 @@
+<section
+  class="mx-auto max-w-screen-lg py-14 px-5  text-lg font-medium lg:px-0"
+>
+  <article
+    class="article-content mx-auto max-w-prose overflow-hidden rounded bg-white shadow"
+    style="--c: {{ .color }}"
+  >
+    <div class=" bg-[rgb(var(--c))] py-3 px-5 text-white">
+      <h3 class="text-2xl font-extrabold">{{ .title }}</h3>
+      {{ with .subhed }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </div>
+    <div
+      class="bg-[rgba(var(--c)/.1)] py-3 px-5 text-base font-normal text-[rgb(var(--c))]"
+      data-ga-category="message-body"
+    >
+      {{ .content }}
+    </div>
+  </article>
+</section>

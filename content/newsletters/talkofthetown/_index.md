@@ -8,6 +8,7 @@ linktitle = "Talk of the Town"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
+occurence = "Every Thursday"
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"

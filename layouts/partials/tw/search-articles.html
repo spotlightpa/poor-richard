@@ -10,13 +10,7 @@
       <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         id="{{ $idInput }}"
-        class="
-          block w-full appearance-none
-          rounded-lg rounded-r-none
-          border-2 border-s-4 bg-white py-2
-          pl-4 tracking-wider text-s-8 placeholder-s-4
-          placeholder-opacity-100 outline-none focus:border-blue
-        "
+        class="spl-input"
         @input="isLoading = true"
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"

@@ -8,6 +8,6 @@
 
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" }}
-  {{ $dict := dict "class" "is-primary" "title" .Title "subhed" $subtitle "content" .Content }}
-  {{ partial "component/message-block.html" $dict }}
+  {{ $dict := dict "color" "0 158 219" "title" .Title "subhed" $subtitle "content" .Content }}
+  {{ partial "tw/message-block.html" $dict }}
 {{ end }}

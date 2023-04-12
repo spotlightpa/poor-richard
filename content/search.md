@@ -9,4 +9,5 @@ suppress-title = true
 
 Search Spotlight PA with the box below:
 
-{{<about/news-search>}}
+
+{{<news-search>}}

@@ -9,6 +9,7 @@ linktitle = "PA Post"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
+occurence = "Each weekday"
 
 [cascade]
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"

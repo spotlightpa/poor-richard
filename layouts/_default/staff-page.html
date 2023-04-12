@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
+  {{ partial "header/static-tw.html" . }}
   {{ partialCached "header/noscript.html" . }}
 
 
@@ -38,43 +38,34 @@
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-black py-14 px-3 text-white">
-    <div
-      class="mx-auto max-w-screen-xl items-center gap-y-3 gap-x-5 md:grid md:min-h-[110px] md:grid-cols-12"
-    >
+  <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
+    <div class="mx-auto max-w-screen-lg">
+      {{ partial "tw/breadcrumbs.html" . }}
+    </div>
+    <div class="mx-auto w-full max-w-screen-lg">
       <h1
-        class="col-span-5 col-start-2 row-span-1 row-start-1 font-serif text-[45px] font-black uppercase leading-none"
+        class="mb-2 font-sans text-4xl font-bold leading-tight text-black lg:text-5xl"
       >
-        {{ .Title }}
+        {{- .Title -}}
       </h1>
-      <div
-        class="col-span-5 col-start-7 row-start-1 mt-3 font-raleway text-xl font-medium md:mt-0"
-      >
-        {{ .Description }}
-      </div>
     </div>
   </header>
-  <section class=" bg-s-0">
-    <div
-      class="mx-auto max-w-screen-lg py-14 px-5 font-raleway text-lg font-medium lg:px-0"
-    >
+
+  <section class="bg-s-0 pt-4 font-sans">
+    <div class="mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0">
       {{ with .Page.Params.subhed }}
         <h2 class="mb-5 text-5xl font-black">{{ . }}</h2>
       {{ end }}
-      <div class=" article-content">
-        {{ .Content }}
-      </div>
+      {{ with .Content }}
+        <div class=" article-content">
+          {{ . }}
+        </div>
+      {{ end }}
     </div>
 
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
-      <div
-        id="{{ $id }}"
-        x-data
-        x-intersect.half="$dispatch('intersect:support', $el.id)"
-        data-ga-category="blocks"
-        class="mx-auto w-full pb-14"
-      >
+      <div data-ga-category="blocks" class="mx-auto w-full pb-14">
         {{ partial "blocks/block" (dict "Page" $ "block" .) }}
       </div>
     {{ end }}
@@ -95,7 +86,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="bg-s-2 px-2 pb-10  font-raleway">
+  <section class="bg-s-2 px-2 pb-10  font-sans">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <h2
         class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
