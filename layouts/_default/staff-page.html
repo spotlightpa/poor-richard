@@ -38,22 +38,17 @@
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-black py-14 px-3 text-white">
-    <div
-      class="mx-auto max-w-screen-xl items-center gap-y-3 gap-x-5 md:grid md:min-h-[110px] md:grid-cols-12"
-    >
-      <h1
-        class="col-span-5 col-start-2 row-span-1 row-start-1 font-serif text-[45px] font-black uppercase leading-none"
-      >
-        {{ .Title }}
-      </h1>
-      <div
-        class="col-span-5 col-start-7 row-start-1 mt-3 font-raleway text-xl font-medium md:mt-0"
-      >
-        {{ .Description }}
-      </div>
+  <header class="bg-s-0 pt-8 md:pb-4 px-3 text-black">
+    <div class="mx-auto max-w-screen-lg">
+      {{ partial "tw/breadcrumbs.html" . }}
     </div>
+    <div class="mx-auto w-full max-w-screen-lg">
+      <h1 class="mb-2 text-4xl font-sans font-bold leading-tight text-black lg:text-5xl">
+        {{- .Title -}}
+      </h1>
+    </div>    
   </header>
+
   <section class=" bg-s-0">
     <div
       class="mx-auto max-w-screen-lg py-14 px-5 font-raleway text-lg font-medium lg:px-0"
