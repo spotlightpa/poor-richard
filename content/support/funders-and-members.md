@@ -12,6 +12,7 @@ donate = """
 """
 supporters = """
 {{<supporters
+  id="major-donors-and-funders-since-launch"
   category="Major donors and funders since launch"
   dataSrc="majorDonors"
 >}}
