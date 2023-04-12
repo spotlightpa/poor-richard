@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
+  {{ partial "header/static-tw.html" . }}
   {{ partialCached "header/noscript.html" . }}
 
 
@@ -51,16 +51,16 @@
     </div>
   </header>
 
-  <section class=" bg-s-0">
-    <div
-      class="mx-auto max-w-screen-lg py-14 px-5 font-raleway text-lg font-medium lg:px-0"
-    >
+  <section class="bg-s-0 pt-4 font-sans">
+    <div class="mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0">
       {{ with .Page.Params.subhed }}
         <h2 class="mb-5 text-5xl font-black">{{ . }}</h2>
       {{ end }}
-      <div class=" article-content">
-        {{ .Content }}
-      </div>
+      {{ with .Content }}
+        <div class=" article-content">
+          {{ . }}
+        </div>
+      {{ end }}
     </div>
 
     {{ range $i, $blocks := .Params.blocks }}
@@ -86,7 +86,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="bg-s-2 px-2 pb-10  font-raleway">
+  <section class="bg-s-2 px-2 pb-10  font-sans">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <h2
         class="text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
