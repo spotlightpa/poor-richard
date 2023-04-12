@@ -66,7 +66,7 @@
       {{ end }}
       {{ block "extra-main" . }}{{ end }}
     </main>
-    <footer data-ga-category="footer">
+    <footer id="footer" data-ga-category="footer">
       {{ block "before-footer" . }}
         {{ partialCached "tw/promo-footer.html" (dict
           "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
