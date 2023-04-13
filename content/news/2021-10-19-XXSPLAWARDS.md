@@ -31,6 +31,6 @@ In both competitions, Spotlight PA competed against newsrooms of similar size fr
 
 Spotlight PA, the largest statewide news organization in Pennsylvania, was founded in 2019 to revitalize accountability and investigative journalism across Pennsylvania. Spotlight PA provides all of its journalism at no cost through a network of 77 newsroom partners, ensuring communities in all corners of the state have access to the information they need to hold their elected officials to account and make informed decisions at the polls.
 
-Spotlight PA’s investigative reporting relies on the support of our readers, with every dollar donated going straight back into our 100% essential journalism. Help power our next investigation and <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgpIIAS" target="_blank">make a tax-deductible contribution now at spotlightpa.org/donate</a>.
+Spotlight PA’s investigative reporting relies on the support of our readers, with every dollar donated going straight back into our 100% essential journalism. Help power our next investigation and <a href="/donate?campaign=701Dn000000YgpIIAS" target="_blank">make a tax-deductible contribution now at spotlightpa.org/donate</a>.
 
 <i>Christopher Baxter is the executive director and editor in chief of Spotlight PA. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

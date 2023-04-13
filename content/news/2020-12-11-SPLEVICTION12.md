@@ -120,4 +120,4 @@ Sulitz had been quarantining, waiting for the results of a COVID-19 test as the 
 
 “I’m just running out of time with everything right now,” he said.
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>

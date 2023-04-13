@@ -30,7 +30,7 @@ Making matters worse, state and local governments have vastly more resources tha
 
 We know all too well what can happen when governments are left to their own devices. And that’s why <a href="https://www.spotlightpa.org/">Spotlight PA</a> and many of our partner newsrooms are forging creative solutions to shift the balance of power back in favor of you, the taxpayer.
 
-But <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgpAIAS">we need your support to keep up the fight</a>.
+But <a href="/donate?campaign=701Dn000000YgpAIAS">we need your support to keep up the fight</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20and%20public-service%20journalism%20and%20%3Cb%3Eall%20gifts%20will%20be%20DOUBLED%3C%2Fb%3E%20until%20March%2025%20thanks%20to%20a%20generous%20matching%20gift%20from%20the%20Benter%20Foundation%20in%20Pittsburgh.&eyebrow_text=SUPPORT%20SPOTLIGHT%20PA"></div>
 
@@ -56,8 +56,8 @@ Each and every day, Spotlight PA reporters across the state are fighting in big 
 
 That’s thanks to you.
 
-Our journalism and the future of Spotlight PA depend on your support. Make a tax-deductible gift of any amount at <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgpAIAS">spotlightpa.org/donate</a>, and as a special bonus, <b>all contributions will be DOUBLED</b> thanks to a matching gift from The Benter Foundation in Pittsburgh, which is committed to ensuring an honest and ethical government.
+Our journalism and the future of Spotlight PA depend on your support. Make a tax-deductible gift of any amount at <a href="/donate?campaign=701Dn000000YgpAIAS">spotlightpa.org/donate</a>, and as a special bonus, <b>all contributions will be DOUBLED</b> thanks to a matching gift from The Benter Foundation in Pittsburgh, which is committed to ensuring an honest and ethical government.
 
-I hope I can count on you to help Spotlight PA continue to fight for government transparency, hand-in-hand with our newsroom partners. Please consider making a gift now at <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgpAIAS">spotlightpa.org/donate</a>. If you’d like to donate by check, please send it to: Spotlight PA, 228 Walnut St., #11728, Harrisburg, PA 17108-1728.
+I hope I can count on you to help Spotlight PA continue to fight for government transparency, hand-in-hand with our newsroom partners. Please consider making a gift now at <a href="/donate?campaign=701Dn000000YgpAIAS">spotlightpa.org/donate</a>. If you’d like to donate by check, please send it to: Spotlight PA, 228 Walnut St., #11728, Harrisburg, PA 17108-1728.
 
 <i>Christopher Baxter is the executive director and editor-in-chief of Spotlight PA, an independent, nonpartisan newsroom based in Harrisburg. Email him at </i><a href="mailto:cbaxter@spotlightpa.org"><i>cbaxter@spotlightpa.org</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
