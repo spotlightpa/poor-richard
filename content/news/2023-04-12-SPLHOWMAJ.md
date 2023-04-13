@@ -40,11 +40,11 @@ There are two state House special elections scheduled for primary day, May 16. O
 
 Both state House seats are likely safe holds for the respective parties (The Inquirer’s Gillian McGoldrick <a href="https://www.inquirer.com/politics/election/mike-zabel-heather-boyd-katie-ford-special-election-house-20230330.html#loaded">has an in-depth look</a> at the Delaware County race).
 
-But May 16 likely won’t be the end of special elections. At least three state representatives are running for local office and will have to give up their seats if they win in November.
+But May 16 likely won’t be the end of special elections. At least four state representatives are running for local office and will have to give up their seats if they win in November.
 
-All are Democrats: Sara Innamorato is <a href="https://www.wesa.fm/politics-government/2022-12-15/with-progressives-on-a-winning-streak-innamorato-launches-county-executive-bid">running</a> for Allegheny County executive; Amen Brown is <a href="https://www.inquirer.com/politics/election/amen-brown-philadelphia-mayor-2023-election-20230126.html">vying</a> to become the next mayor of Philadelphia; and John Galloway is <a href="https://levittownnow.com/2023/02/09/district-judge-vislosky-to-retire-rep-galloway-considering-run-for-seat/">seeking</a> a Bucks County judgeship.
+All are Democrats: Sara Innamorato is <a href="https://www.wesa.fm/politics-government/2022-12-15/with-progressives-on-a-winning-streak-innamorato-launches-county-executive-bid">running</a> for Allegheny County executive; Amen Brown is <a href="https://www.inquirer.com/politics/election/amen-brown-philadelphia-mayor-2023-election-20230126.html">vying</a> to become the next mayor of Philadelphia;  John Galloway is <a href="https://levittownnow.com/2023/02/09/district-judge-vislosky-to-retire-rep-galloway-considering-run-for-seat/">seeking</a> a Bucks County judgeship; and Kristine Howard is <a href="https://www.dailylocal.com/2023/03/20/rep-howard-enters-crowded-field-for-chester-county-court-judge/" target="_blank">launching a bid</a> for a Chester County judgeship.  
 
-None of these seats are likely to flip parties if they become vacant. President Joe Biden won all three by at least 10 percentage points in 2020.
+None of these seats are likely to flip parties if they become vacant. President Joe Biden won all four by at least 10 percentage points in 2020.
 
 Still, even a temporary vacancy or two could see the Democratic caucus dip below the mathematical definition of majority. But the math doesn’t matter.
 
