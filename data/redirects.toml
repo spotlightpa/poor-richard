@@ -5,7 +5,7 @@ code = 301
 
 [[redirects]]
 from = "/donate/"
-to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa"
+to = "https://spotlightpa.fundjournalism.org/donate?org_id=spotlightpa"
 code = 302
 
 [[redirects]]
