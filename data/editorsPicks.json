@@ -1,6 +1,7 @@
 {
   "featuredStories": [
-    "content/news/2023-04-13-SPLVETGU.md"
+    "content/news/2023-04-13-SPLVETGU.md",
+    "content/newsletters/papost/2023-04-07-0700.md"
   ],
   "subfeatures": [
     "content/news/2023-04-12-SPLEL23GU.md",
@@ -10,7 +11,7 @@
   "topSlots": [
     "content/news/2023-04-12-SPLHOWMAJ.md",
     "content/statecollege/2023-04-10-SPLHERMDUB.md",
-    "content/news/2023-04-13-SPLNEWSQUIZAPR13.md"
+    "content/statecollege/2023-04-07-SPLCLOSURES.md"
   ],
   "topper": []
 }
