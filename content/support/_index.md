@@ -15,7 +15,7 @@ Become a
 Leader in Action
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
-actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
+actionUrl = "https://spotlightpa.fundjournalism.org/leaders/"
 actionText = "Become a leader →"
 url = "/support/leaders-in-action"
 
@@ -23,7 +23,7 @@ url = "/support/leaders-in-action"
 image = "2022/06/01hb-4958-4rxz-4t0q.png"
 hed = "Support Our State College Bureau"
 body = "Want to support our investigative journalism about Penn State and our State College regional bureau?"
-actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZTQAY"
+actionUrl = "https://spotlightpa.fundjournalism.org/statecollege?campaign=701Dn000000Ygq9IAC"
 actionText = "Support the Bureau →"
 url = "/support/state-college"
 
@@ -55,7 +55,7 @@ copy="""
 +++
 {{<featured/large>}}Spotlight PA produces investigative and public-service journalism that gets results, and shares that work at no cost with communities across Pennsylvania. But we can't do it without your support. Here are the several ways you can sustain our newsroom with a tax-deductible donation today:{{</featured/large>}} 
 
-{{<about/action-link href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G000001Z88SQAS">}}Donate With Credit Card  →{{</about/action-link>}}
+{{<about/action-link href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000Ygp9IAC">}}Donate With Credit Card  →{{</about/action-link>}}
 
 {{<about/action-link href="https://www.paypal.com/donate?hosted_button_id=BWKY4YD8CU9ML">}}Donate Via PayPal  →{{</about/action-link>}}
 

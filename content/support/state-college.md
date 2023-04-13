@@ -21,7 +21,7 @@ The team is employed by Spotlight PA and receives organizational support from th
 
 ## Fundraising
 
-We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty">support this special effort by clicking here</a>, or to learn more about getting involved, please contact Spotlight PA Director of Individual and Corporate Giving Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. 
+We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="https://spotlightpa.fundjournalism.org/statecollege?">support this special effort by clicking here</a>, or to learn more about getting involved, please contact Spotlight PA Director of Individual and Corporate Giving Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. 
 
 We’re so grateful to our <a href="#state-college-bureau-donors">founding individual donors for supporting this effort</a> (see our State College bureau donor list below).
 

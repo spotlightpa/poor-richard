@@ -58,6 +58,6 @@ Spotlight PA, the largest statewide news organization in Pennsylvania, produces 
 
 Spotlight PA’s investigative reporting relies on the support of our readers, with every dollar donated going straight back into our 100% essential journalism.
 
-» <b>For a limited time only, as part of our Spring membership drive, all contributions will be doubled</b> thanks to a generous dollar-for-dollar matching gift from The Lenfest Institute for Journalism. Join us in celebrating these awards by making a tax-deductible donation today at <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuXAAW">spotlightpa.org/donate</a>.
+» <b>For a limited time only, as part of our Spring membership drive, all contributions will be doubled</b> thanks to a generous dollar-for-dollar matching gift from The Lenfest Institute for Journalism. Join us in celebrating these awards by making a tax-deductible donation today at <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgozIAC">spotlightpa.org/donate</a>.
 
 <i>Christopher Baxter is the executive director and editor in chief of Spotlight PA. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

@@ -33,7 +33,7 @@ So we want to hear from you. Here are 6 ways you can engage with our team:
 
 5. <a href="mailto:talkofthetown@spotlightpa.org">Send Us Your Local Gems:</a> North-central Pennsylvania is a gorgeous place to live and play. Send us your favorite photos of the region.
 
-6. <a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZoQAI">Become A Founding Donor:</a> Our effort to rebuild and revitalize local news depends on support from our local community. Help power more, quality reporting for our communities by contributing now. As a special bonus, all founding gifts will be doubled.
+6. <a href="https://spotlightpa.fundjournalism.org/statecollege?campaign=701Dn000000Ygq5IAC">Become A Founding Donor:</a> Our effort to rebuild and revitalize local news depends on support from our local community. Help power more, quality reporting for our communities by contributing now. As a special bonus, all founding gifts will be doubled.
 
 Our work is for you, and we want to make sure we’re delivering something unique and valuable.
 
@@ -49,4 +49,4 @@ Min Xian, local accountability reporter, <a href="mailto:mxian@spotlightpa.org">
 
 For more information about how to support Spotlight PA’s first-ever regional bureau based in State College, contact Joanna Zuckerman Bernstein at <a href="mailto:joanna@spotlightpa.org">joanna@spotlightpa.org</a>.
 
-<i><b>SUPPORT THIS JOURNALISM</b></i><i>&nbsp;and help us save local news in State College and north-central Pennsylvania at&nbsp;</i><a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013pUYQAY&utm_source=www.spotlightpa.org&utm_medium=statecollege:section&utm_campaign=statecollege:main"><i>spotlightpa.org/statecollege</i></a><i>. Spotlight PA is funded by&nbsp;</i><a href="https://www.spotlightpa.org/support"><i>foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability and public-service journalism that gets results.</i>
+<i><b>SUPPORT THIS JOURNALISM</b></i><i>&nbsp;and help us save local news in State College and north-central Pennsylvania at&nbsp;</i><a href="https://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000Ygq1IAC&utm_source=www.spotlightpa.org&utm_medium=statecollege:section&utm_campaign=statecollege:main"><i>spotlightpa.org/statecollege</i></a><i>. Spotlight PA is funded by&nbsp;</i><a href="https://www.spotlightpa.org/support"><i>foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability and public-service journalism that gets results.</i>

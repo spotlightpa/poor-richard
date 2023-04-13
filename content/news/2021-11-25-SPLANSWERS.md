@@ -19,7 +19,7 @@ title = "Answers to Spotlight PA’s 2021 Thanksgiving Day Scrambler and Riddler
 
 Rather than make you wait until next week, we’re providing answers to the Thanksgiving Day Scramblers and Riddlers here. We hope you have a great holiday, and we’ll get back to the news next week. 
 
-If you’re feeling thankful for Spotlight PA’s fearless, independent journalism, you can <a href="https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013oXOQAY&utm_source=www.spotlightpa.org&utm_medium=home%20&utm_campaign=header:banner">become a member now</a> and have your tax-deductible gift automatically doubled.
+If you’re feeling thankful for Spotlight PA’s fearless, independent journalism, you can <a href="https://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgojIAC&utm_source=www.spotlightpa.org&utm_medium=home%20&utm_campaign=header:banner">become a member now</a> and have your tax-deductible gift automatically doubled.
 
 ### SCRAMBLERS
 

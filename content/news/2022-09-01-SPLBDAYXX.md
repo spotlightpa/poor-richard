@@ -28,7 +28,7 @@ And, fundamentally, we believe a strong free press is vital to the health of our
 
 That does not mean we favor one political party over another or one particular policy over another. Instead, with your support, we have the time and resources to follow the facts wherever they lead, and our body of reporting shows we’re unafraid to call out both sides of the aisle.
 
-<b>Today, on the third anniversary of the launch of Spotlight PA, I invite you to consider all we’ve achieved so far, and to </b><a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013qX9QAI"><b>make a one-time or sustaining contribution to power another year of vital journalism</b></a><b>.</b> If you read and appreciate our work, we need your support. It’s that simple.
+<b>Today, on the third anniversary of the launch of Spotlight PA, I invite you to consider all we’ve achieved so far, and to </b><a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgopIAC"><b>make a one-time or sustaining contribution to power another year of vital journalism</b></a><b>.</b> If you read and appreciate our work, we need your support. It’s that simple.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?cta_text=SEND%20A%20BIRTHDAY%20GIFT&eyebrow_text=SPOTLIGHT%20PA'S%203RD%20ANNIVERSARY&teaser_text=Help%20expand%20Spotlight%20PA's%20vital%20investigative%20and%20public-service%20journalism%20by%20making%20a%20contribution%20of%20any%20amount%20now."></div>
 
@@ -42,13 +42,13 @@ And this year, we’ve taken our first step toward returning more reporters back
 
 Together, we’ve created something special, and it’s getting attention across the U.S. Just this week, Spotlight PA was named a finalist for two more national reporting awards, and new startups in other states are increasingly looking to replicate our success.
 
-Make no mistake — this is just the beginning. The opportunity to grow and expand Spotlight PA’s reporting, impact, and service to our communities is enormous. We have big plans for the future, but <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013qX9QAI">none of it matters without your support</a>.
+Make no mistake — this is just the beginning. The opportunity to grow and expand Spotlight PA’s reporting, impact, and service to our communities is enormous. We have big plans for the future, but <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgopIAC">none of it matters without your support</a>.
 
 This unique work is sustained by the generosity of our members — not advertisers or subscription fees. Each contribution not only helps financially, but also serves as a resounding vote of confidence in the public service our team provides.
 
 With a recent contribution, Spotlight PA member Andrea S. wrote, “I value what you are doing, how you do it, and the good that can result. Thank you!”
 
-Today, I say <i><b>thank you</b></i> to our members for believing in our mission and ensuring Spotlight PA’s future is strong. And if you’re not yet a member, I invite you to <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013qX9QAI">make a one-time or sustaining gift now and invest in trusted, independent journalism</a> you can’t get anywhere else.
+Today, I say <i><b>thank you</b></i> to our members for believing in our mission and ensuring Spotlight PA’s future is strong. And if you’re not yet a member, I invite you to <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgopIAC">make a one-time or sustaining gift now and invest in trusted, independent journalism</a> you can’t get anywhere else.
 
 Onwards together, and happy birthday Spotlight PA!
 
@@ -56,6 +56,6 @@ Onwards together, and happy birthday Spotlight PA!
 
 <i>Executive Director &amp; Editor in Chief, Spotlight PA</i>
 
-<b>PS:</b> If you were moved by this note and wish to support Spotlight PA’s work, you can <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000013qX9QAI">do so now by clicking this link</a> or visiting <a href="//spotlightpa.org/donate" target="_blank">spotlightpa.org/donate</a>.
+<b>PS:</b> If you were moved by this note and wish to support Spotlight PA’s work, you can <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgopIAC">do so now by clicking this link</a> or visiting <a href="//spotlightpa.org/donate" target="_blank">spotlightpa.org/donate</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>

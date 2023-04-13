@@ -46,7 +46,7 @@ Esto se debe principalmente a la escasez de la vacuna en general. Para empeorar 
 
 El jueves 11 de febrero, Spotlight PA organizó un <a href="https://www.spotlightpa.org/news/2021/02/pa-covid-vaccine-help-providers-availability-questions-answers-spotlight-pa/">evento en vivo de preguntas y respuestas</a> con expertos en salud y activistas de todo el estado para abordar algunas de las preguntas más urgentes. A continuación, recopilamos algunas de las preguntas más frecuentes e información útil.
 
-Si te ayudó algo de esta historia para el servicio público, <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuXAAW">devuelve el favor y apoya a Spotlight PA</a> para que otros puedan beneficiarse más adelante.
+Si te ayudó algo de esta historia para el servicio público, <a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgozIAC">devuelve el favor y apoya a Spotlight PA</a> para que otros puedan beneficiarse más adelante.
 
 ## ¿Cómo pueden las personas obtener una cita para vacunarse?
 
@@ -136,4 +136,4 @@ El gobierno estatal aún no ha organizado clínicas masivas de vacunación, pero
 
 “Los sitios de vacunación masiva son parte de cualquier plan”, dijo Wolf. “El paso inicial fue trabajar con el programa federal y llevarlos a los centros de atención a largo plazo, hogares de ancianos, trabajadores de atención médica de primera línea y proveerlo a más de 4 millones de personas, además de aquellos que tienen 65 años o más tan rápidamente como sea posible.”
 
-<i><b>100% ESENCIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> depende del financiamiento de fundaciones y lectores como usted que están comprometidos con el periodismo de responsabilidad que obtiene resultados. Hazte miembro hoy mismo en </i><a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuIAAW"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESENCIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> depende del financiamiento de fundaciones y lectores como usted que están comprometidos con el periodismo de responsabilidad que obtiene resultados. Hazte miembro hoy mismo en </i><a href="http://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>
