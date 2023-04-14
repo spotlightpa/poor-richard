@@ -29,7 +29,7 @@ On Wednesday, July 28 at 5 p.m., Spotlight PA’s Angela Couloumbis; Sam Janesch
 
 A full recording of the event is available below.
 
-<b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G0000003ZrjQAE">spotlightpa.org/donate.</a>
+<b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="/donate?campaign=701Dn000000YgpHIAS">spotlightpa.org/donate.</a>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/o0FSR_NvGqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

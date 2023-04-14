@@ -5,22 +5,22 @@ code = 301
 
 [[redirects]]
 from = "/donate/"
-to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa"
+to = "https://spotlightpa.fundjournalism.org/donate"
 code = 302
 
 [[redirects]]
-from = "/leaders/"
-to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
+from = "/leaders"
+to = "https://spotlightpa.fundjournalism.org/leaders"
 code = 302
 
 [[redirects]]
-from = "/donate/statecollege/"
-to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pUYQAY "
+from = "/donate/statecollege"
+to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
 [[redirects]]
-from = "/statecollege/donate/"
-to = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pUYQAY "
+from = "/statecollege/donate"
+to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
 [[redirects]]

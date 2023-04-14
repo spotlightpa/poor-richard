@@ -84,4 +84,4 @@ State Sen. Lindsey Williams (D., Allegheny) pointed to Mastriano’s election rh
 
 
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuIAAW"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>
