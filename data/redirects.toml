@@ -5,21 +5,21 @@ code = 301
 
 [[redirects]]
 from = "/donate/"
-to = "https://spotlightpa.fundjournalism.org/donate?org_id=spotlightpa"
+to = "https://spotlightpa.fundjournalism.org/donate"
 code = 302
 
 [[redirects]]
-from = "/leaders/"
+from = "/leaders"
 to = "https://spotlightpa.fundjournalism.org/leaders"
 code = 302
 
 [[redirects]]
-from = "/donate/statecollege/"
+from = "/donate/statecollege"
 to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
 [[redirects]]
-from = "/statecollege/donate/"
+from = "/statecollege/donate"
 to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
