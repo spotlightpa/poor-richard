@@ -14,7 +14,7 @@
 {{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
 
 {{ $donateAmount := split $donateAmounts "," }}
-{{ $donateFirst := index $donateAmounts 1 }}
+{{ $donateFirst := index $donateAmount 0 }}
 {{ $donateDefault := int $donateFirst }}
 <div class="{{ $wrapperClass }} box-content bg-blue px-4 py-14 md:px-0">
   <div
@@ -59,7 +59,7 @@
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_campaign=donate-prefill`;
+      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_campaign=donate-prefill`;
     }
   }"
   >
