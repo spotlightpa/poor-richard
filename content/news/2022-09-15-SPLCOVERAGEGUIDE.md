@@ -31,7 +31,7 @@ Regardless of your political affiliation, trusted, nonpartisan election reportin
 
 For the first time, Spotlight PA will be translating its election guides into Spanish and distributing them through our Spanish-language partners as well as in partnership with Latino Connection, a marketing and communications firm that specializes in reaching Latino communities.
 
-This vital work is only possible with your support. If you value this public-service approach to election reporting, help Spotlight PA continue to empower voters to get involved and strengthen our democracy. You can <a href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=701f4000000TVuXAAW">make a tax-deductible gift to Spotlight PA now at spotlightpa.org/donate</a>, and as a special bonus, all gifts will be doubled through Sept. 24.
+This vital work is only possible with your support. If you value this public-service approach to election reporting, help Spotlight PA continue to empower voters to get involved and strengthen our democracy. You can <a href="/donate?campaign=701Dn000000YgozIAC">make a tax-deductible gift to Spotlight PA now at spotlightpa.org/donate</a>, and as a special bonus, all gifts will be doubled through Sept. 24.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?eyebrow=RALLY%20ROUND%20OUR%20COVERAGE&body=Support%20Spotlight%20PA's%20%3Cb%3Etrusted%2C%20reliable%20election%20reporting%3C%2Fb%3E%20that%20informs%20and%20empowers%20Pennsylvania%20voters.&cta=ALL%20GIFTS%20DOUBLED.%20GIVE%20NOW%20%C2%BB"></div>
 
