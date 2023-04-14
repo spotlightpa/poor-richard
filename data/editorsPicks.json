@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-04-14-SPLMEDEX.md"
+    "content/news/2023-04-14-SPLMEDEX.md",
+    "content/news/2023-04-08-SPLSCOPA.md"
   ],
   "subfeatures": [
     "content/news/2023-04-03-SPLDHSST.md",
     "content/news/2023-02-24-SPLROLLBEN.md"
   ],
   "topSlots": [
+    "content/news/2023-04-05-SPLCOEV.md",
     "content/news/2023-04-13-SPLNEWSQUIZAPR13.md",
-    "content/news/2023-04-13-SPLVETGU.md",
-    "content/news/2023-04-12-SPLHOWMAJ.md"
+    "content/news/2023-04-13-SPLVETGU.md"
   ],
   "topper": []
 }
