@@ -1,8 +1,6 @@
 {{ $featured := index . 0 }}
 {{ $featuredParams := partialCached "helper/page-params" $featured.Page $featured.RelPermalink }}
 
-{{ $kickerLink := $featuredParams.series | default $featuredParams.topic }}
-
 {{ $subitems := slice }}
 {{ range after 1 . }}
   {{ $params := partialCached "helper/page-params" . .RelPermalink }}
@@ -27,7 +25,7 @@
 
 {{ partial "tw/thumb-h-item.html" (dict
   "imgOpts" $imgOpts
-  "rubricLink" $kickerLink.RelPermalink
+  "rubricLink" $featuredParams.rubric.RelPermalink
   "extendedEyebrow" $featuredParams.extendedKicker
   "eyebrow" $featuredParams.kicker
   "link" $featured.RelPermalink
