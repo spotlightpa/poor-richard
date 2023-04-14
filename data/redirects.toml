@@ -15,12 +15,12 @@ code = 302
 
 [[redirects]]
 from = "/donate/statecollege/"
-to = "https://spotlightpa.fundjournalism.org/statecollege?campaign=701Dn000000Ygq1IAC "
+to = "https://spotlightpa.fundjournalism.org/statecollege/"
 code = 302
 
 [[redirects]]
 from = "/statecollege/donate/"
-to = "https://spotlightpa.fundjournalism.org/statecollege?campaign=701Dn000000Ygq1IAC "
+to = "https://spotlightpa.fundjournalism.org/statecollege/"
 code = 302
 
 [[redirects]]

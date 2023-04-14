@@ -57,7 +57,7 @@ Agencies have to respond to your request within five business days of submission
 
 Keeping track of response time is essential, especially if an appeal becomes necessary. Spotlight PA’s Ed Mahon recently <a href="https://www.spotlightpa.org/news/2023/03/pa-sunshine-week-appeal-records-denial/">explained</a> five key elements of the appeal process.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?eyebrow=Support%20Spotlight%20PA%20in%20State%20College&url=https%3A%2F%2Fcheckout.fundjournalism.org%2Fmemberform%3Forg_id%3Dspotlightpa%26theme%3Dcentrecounty%26campaign%3D701Dn000000YgqDIAS&body=Support%20Spotlight%20PA's%20journalism%20in%20State%20College%20%26%20north-central%20Pa.%20and%20%3Cb%3E%20all%20gifts%20will%20be%20DOUBLED%20until%20March%2025%3C%2Fb%3E%20thanks%20to%20a%20generous%20matching%20gift%20from%20The%20Benter%20Foundation%20in%20Pittsburgh.&cta=Click%20to%20Contribute"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?eyebrow=Support%20Spotlight%20PA%20in%20State%20College&url=https%3A%2F%2Fspotlightpa.fundjournalism.org%2Fstatecollege%3Forg_id%3Dspotlightpa%26theme%3Dcentrecounty%26campaign%3D701Dn000000YgqDIAS&body=Support%20Spotlight%20PA's%20journalism%20in%20State%20College%20%26%20north-central%20Pa.%20and%20%3Cb%3E%20all%20gifts%20will%20be%20DOUBLED%20until%20March%2025%3C%2Fb%3E%20thanks%20to%20a%20generous%20matching%20gift%20from%20The%20Benter%20Foundation%20in%20Pittsburgh.&cta=Click%20to%20Contribute"></div>
 
 ## Limitations of the law
 
