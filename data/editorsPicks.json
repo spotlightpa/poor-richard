@@ -2,11 +2,14 @@
   "featuredStories": [
     "content/statecollege/2023-04-17-SPLCOUBU.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-04-05-SPLSPFUND.md",
+    "content/news/2023-03-07-SPLBUDGET.md"
+  ],
   "topSlots": [
-    "content/newsletters/papost/2023-04-17-0700.md",
     "content/news/2023-04-14-SPLMEDEX.md",
-    "content/news/2023-04-13-SPLVETGU.md"
+    "content/news/2023-04-13-SPLVETGU.md",
+    "content/news/2023-04-12-SPLEL23GU.md"
   ],
   "topper": []
 }
