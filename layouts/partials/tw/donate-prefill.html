@@ -41,7 +41,7 @@
     get donateURL() {
       let campaign = this.$el.
         closest('[data-sf-campaign]')?.dataset.sfCampaign ||
-        '701f4000000TVuDAAW';
+        '701Dn000000YgouIAC';
       let theme =  this.$el.
         closest('[data-sf-theme]')?.dataset.sfTheme || '';
       let period = {
@@ -49,7 +49,7 @@
         m: 'monthly',
         y: 'yearly',
       }[this.freq];
-      return `https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=${campaign}&theme=${theme}&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
+      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
     }
   }"
 >

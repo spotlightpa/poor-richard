@@ -51,7 +51,7 @@ The commission considered it “<a href="https://billypenn.com/2018/08/15/pennsy
 
 The proposed rulemaking would adopt a definition of sex based upon the 2020 U.S. Supreme Court ruling in <i>Bostock v. Clayton County</i>, in which the court found, by 6-3, that existing federal law protected an employee from being fired just for being gay or transgender.
 
-The Pennsylvania Human Relations Commission enforces the state’s nondiscrimination laws, including the Human Relations Act. That law is more expansive than federal ones in a key way: It applies to businesses with <a href="https://www.phrc.pa.gov/AboutUs/Documents/Fair%20Employment.pdf">four or more employees</a>, as opposed to 15 or more.
+The Pennsylvania Human Relations Commission enforces the state’s nondiscrimination laws, including the Human Relations Act. That law is more expansive than federal ones in a key way: It applies to businesses with <a href="https://web.archive.org/20221207111817/https://www.phrc.pa.gov/AboutUs/Documents/Fair%20Employment.pdf">four or more employees</a>, as opposed to 15 or more.
 
 A person can file a complaint directly with the commission, whose staff will help navigate the process, said Angela Giampolo, a Philadelphia lawyer who works on LGBTQ issues. The person doesn’t need to hire their own attorney, which can be costly.
 
@@ -67,11 +67,11 @@ The Wolf administration, many Democratic lawmakers, and a number of LGBTQ advoca
 
 A group of Republican legislators has pushed back and said it usurps their authority to make laws.
 
-“While the General Assembly has yet to make these policy decisions, that should not be interpreted as an abdication of responsibility and thus a signal to a bureaucratic agency to pick up the task,” 11 Republican state senators wrote in <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2006-07-22%20Sen%20Martin%20and%2010%20Senators.pdf">a June letter</a> to the review commission. “Without the General Assembly’s action to do so, the PHRC is attempting to circumvent the constitutional power and responsibility of the General Assembly.”
+“While the General Assembly has yet to make these policy decisions, that should not be interpreted as an abdication of responsibility and thus a signal to a bureaucratic agency to pick up the task,” 11 Republican state senators wrote in <a href="https://web.archive.org/20221207111942/http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2006-07-22%20Sen%20Martin%20and%2010%20Senators.pdf">a June letter</a> to the review commission. “Without the General Assembly’s action to do so, the PHRC is attempting to circumvent the constitutional power and responsibility of the General Assembly.”
 
-Other opposition came from the Pennsylvania Catholic Conference, which <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_PUBLIC/3339%2005-11-22%20PA%20CATHOLIC%20CONFERENCE.pdf">argued</a> in May that the rule would infringe on the religious freedom of those who believe “that God created each person either male or female” and “created marriage as sacred between one man and one woman.”
+Other opposition came from the Pennsylvania Catholic Conference, which <a href="https://web.archive.org/20221207112002/http://www.irrc.state.pa.us/docs/3339/COMMENTS_PUBLIC/3339%2005-11-22%20PA%20CATHOLIC%20CONFERENCE.pdf">argued</a> in May that the rule would infringe on the religious freedom of those who believe “that God created each person either male or female” and “created marriage as sacred between one man and one woman.”
 
-In <a href="http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2005-17-22%20REP%20DAN%20FRANKEL.pdf">a May letter</a> to the regulatory panel, State Rep. Dan Frankel (D., Allegheny) pushed back on claims that allowing LGBTQ people to file discrimination complaints unduly burdens businesses or religious organizations. He cited numbers from the commission that show just 42 out of 3,660 complaints filed from July 2020 until June 2021 were related to sexual orientation or gender identity.
+In <a href="https://web.archive.org/20221207111817/http://www.irrc.state.pa.us/docs/3339/COMMENTS_LEGISLATIVE/3339%2005-17-22%20REP%20DAN%20FRANKEL.pdf">a May letter</a> to the regulatory panel, State Rep. Dan Frankel (D., Allegheny) pushed back on claims that allowing LGBTQ people to file discrimination complaints unduly burdens businesses or religious organizations. He cited numbers from the commission that show just 42 out of 3,660 complaints filed from July 2020 until June 2021 were related to sexual orientation or gender identity.
 
 “While these protections are incredibly important, implementing them has not appeared to cause any crisis, including for small businesses or religious organizations,” Frankel wrote.
 

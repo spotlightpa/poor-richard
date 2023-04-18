@@ -13,8 +13,9 @@ modal-exclude = true
 donate-hed = "Vital Journalism for North-Central Pa."
 donate-text = "Support the future of news in State College & beyond"
 cta = "component/inline-cta.html"
-donate-theme = "centrecounty"
+donate-theme = "statecollege"
 donate-amounts = "10,15,25"
+donate-ga-campaign = "701Dn000000Ygq1IAC"
 
 [cascade]
 extended-kicker = "State College Region"

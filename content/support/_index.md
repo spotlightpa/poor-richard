@@ -15,7 +15,7 @@ Become a
 Leader in Action
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
-actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
+actionUrl = "/leaders/"
 actionText = "Become a leader →"
 url = "/support/leaders-in-action"
 
@@ -23,7 +23,7 @@ url = "/support/leaders-in-action"
 image = "2022/06/01hb-4958-4rxz-4t0q.png"
 hed = "Support Our State College Bureau"
 body = "Want to support our investigative journalism about Penn State and our State College regional bureau?"
-actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZTQAY"
+actionUrl = "/donate/statecollege?campaign=701Dn000000Ygq9IAC"
 actionText = "Support the Bureau →"
 url = "/support/state-college"
 
@@ -50,12 +50,12 @@ layout = "text-2"
 copy="""
   {{<featured/large>}}Spotlight PA is a nonpartisan, independent newsroom paid for by grants from foundations and donations from individuals committed to robust investigative reporting. Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership. In short, we answer to you, the public.{{</featured/large>}}
 
-  {{<featured/large>}}Funds for Spotlight PA are donated to the nonprofit <a href="https://www.lenfestinstitute.org/" class="text-yellow">Lenfest Institute for Journalism</a>, which then directs them to our work. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
+  {{<featured/large>}}As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
 """
 +++
 {{<featured/large>}}Spotlight PA produces investigative and public-service journalism that gets results, and shares that work at no cost with communities across Pennsylvania. But we can't do it without your support. Here are the several ways you can sustain our newsroom with a tax-deductible donation today:{{</featured/large>}} 
 
-{{<about/action-link href="http://checkout.fundjournalism.org/memberform?org_id=spotlightpa&campaign=7015G000001Z88SQAS">}}Donate With Credit Card  →{{</about/action-link>}}
+{{<about/action-link href="/donate?campaign=701Dn000000Ygp9IAC">}}Donate With Credit Card  →{{</about/action-link>}}
 
 {{<about/action-link href="https://www.paypal.com/donate?hosted_button_id=BWKY4YD8CU9ML">}}Donate Via PayPal  →{{</about/action-link>}}
 
@@ -69,7 +69,7 @@ Make a check out to Spotlight PA and send it to:
 
 ## Use Your Donor-Advised Fund
 
-Recommend a gift via your donor-advised fund. Please direct it to The Lenfest Institute for Journalism Special Asset Fund of The Philadelphia Foundation, tax ID number 04-3731829, and be sure to mention that the gift is for Spotlight PA in the paperwork.
+Recommend a gift via your donor-advised fund. Please direct it to Spotlight PA, tax ID number 92-0577182.
 
 ## Donate Shares of Stock
 
