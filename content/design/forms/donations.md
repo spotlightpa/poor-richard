@@ -3,7 +3,6 @@ title = "Donation Forms"
 modal-exclude = true
 no-index = true
 layout = "page-landing"
-type = "root"
 url = "design/forms/donations"
 +++
 {{<design/donations>}}

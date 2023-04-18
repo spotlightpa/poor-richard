@@ -4,7 +4,6 @@ modal-exclude = true
 no-index = true
 url = "design/forms/contact"
 layout = "page-landing"
-type = "root"
 newsletter = """
 """
 featured-newsletter = """

@@ -4,11 +4,6 @@ modal-exclude = true
 no-index = true
 url = "design/forms/signups"
 layout = "page-landing"
-type = "root"
-newsletter = """
-"""
-featured-newsletter = """
-"""
 +++
 {{<design/signups>}}
 

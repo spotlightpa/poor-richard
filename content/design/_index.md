@@ -4,6 +4,8 @@ title = "Design Guide"
 description = "Design/visual style guide for Spotlight PA"
 title-tag = "Spotlight PA design and visual style"
 layout = "page-landing"
+modal-exclude = true
+no-index = true
 +++
 
 ## [Colors](/design/colors)

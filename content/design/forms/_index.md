@@ -3,7 +3,6 @@ title = "Forms"
 modal-exclude = true
 no-index = true
 layout = "page-landing"
-type = "root"
 +++
 {{<design/links>}}
   {{<design/link-single

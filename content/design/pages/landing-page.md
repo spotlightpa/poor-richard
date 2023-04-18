@@ -4,8 +4,6 @@ modal-exclude = true
 no-index = true
 url = "/design/pages/landing-page"
 layout = "page-landing"
-type = "root"
-
 donate = """
 {{<donate-slim
     title="Slim donation shortcode"

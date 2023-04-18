@@ -3,7 +3,6 @@ title = "Standard Page Sample"
 modal-exclude = true
 no-index = true
 url = "design/pages/standard-page"
-type = "root"
 +++
 # Heading One (h1)
 
