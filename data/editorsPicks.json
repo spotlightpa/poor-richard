@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-04-21-SPLECPATH.md"
+    "content/statecollege/2023-04-24-SPLPSUBUD.md"
   ],
-  "subfeatures": [
-    "content/newsletters/palocal/2023-04-14-1000.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/statecollege/2023-04-24-SPLSANDY.md",
     "content/news/2023-04-20-SPLNEWSQUIZAPR20.md",
-    "content/news/2023-04-20-SPLGUARDSUIT.md",
-    "content/news/2023-04-19-SPLMAIL23.md"
+    "content/news/2023-04-20-SPLGUARDSUIT.md"
   ],
   "topper": []
 }
