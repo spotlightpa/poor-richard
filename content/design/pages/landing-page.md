@@ -38,32 +38,25 @@ In an era where fraud and dishonesty among public officials (and their supporter
 """
 supplemental = """
 {{<supplemental>}}
-## You can help us cover Penn State
+## Supplemental Shortcode
 
-Unlike most public universities, Penn State is largely exempt from open records laws despite receiving taxpayer money.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris augue. Eu nisl nunc mi ipsum faucibus. Maecenas pharetra convallis posuere morbi. 
 
-Beyond disclosing some basic financial information, the university mostly operates outside of the public eye. For example, Penn State does not have to make public the contracts it signs or how money is spent.
+Massa vitae tortor condimentum lacinia quis vel eros. Ipsum nunc aliquet bibendum enim facilisis. Nisl suscipit adipiscing bibendum est ultricies integer quis. Curabitur vitae nunc sed velit dignissim sodales. Pharetra sit amet aliquam id diam maecenas ultricies. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet luctus venenatis lectus magna fringilla urna. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Et malesuada fames ac turpis. Quam id leo in vitae turpis. Pellentesque elit eget gravida cum sociis natoque.
 
-Our success covering Penn State — and the public’s ability to understand what is going on inside a nearly $9 billion institution with tremendous influence in the state — relies on you.
+Aenean sed adipiscing diam donec. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Nunc sed velit dignissim sodales. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Duis convallis convallis tellus id interdum velit. 
 
-Many of the best investigative stories are possible because of people inside an institution who know what is happening and want to solve a problem or put an end to waste, fraud, or abuse.
+Magna fermentum iaculis eu non. Faucibus in ornare quam viverra orci sagittis eu volutpat. At erat pellentesque adipiscing commodo elit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Turpis egestas integer eget aliquet nibh praesent tristique. Semper quis lectus nulla at volutpat diam ut.
 
-Often, primary source records — documents such as memos, emails, reports, and more — are vital to a successful investigation. Which is why **[we’ve established a few secure ways](https://www.spotlightpa.org/tips)** for you to share documents with us.
+Turpis nunc eget lorem dolor sed viverra ipsum. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Quisque sagittis purus sit amet volutpat consequat mauris. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Quis enim lobortis scelerisque fermentum dui faucibus in. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Nisl nisi scelerisque eu ultrices vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Felis bibendum ut tristique et. Ac turpis egestas sed tempus urna et pharetra. Lectus urna duis convallis convallis tellus. A cras semper auctor neque vitae. [Ullamcorper velit](//spotlightpa.org) sed ullamcorper morbi tincidunt ornare. Libero volutpat sed cras ornare arcu dui.
 
-You can do so by signing up for a free account and using **[Protonmail](https://account.proton.me/signup)** (write to us at **[spotlightpa@protonmail.com](mailto:spotlightpa@protonmail.com)**) or by sending snail mail to Spotlight PA State College, 210 W. Hamilton Ave., #331, State College PA, 16801.
 
-You can also connect with me on **[Twitter](https://twitter.com/News4Mass)**, over **[email](mailto:wmassey@spotlightpa.org)**, or on Signal, an encrypted phone messaging app, at 445-236-0562.
-
-It’s important you know that we promise confidentiality if you share documents with us. It can be your only interaction with us, or it can be the first of many. You can provide follow-up contact information, or choose not to. 
-
-The best way to start is with a simple conversation, even if it’s off the record (meaning it’s not for publication). I look forward to hearing from you.
-
-*— **Wyatt Massey**, Penn State investigative reporter*
+*— Accepts **markdown***
 {{</supplemental>}}"""
 
 credit = """
 {{<featured/credit-long
-hed="Meet Spotlight PA’s Penn State Investigative Reporter"
+hed="Custom Credit-Long Shortcode"
 name="Wyatt Massey"
 role="Capitol Reporter"
 email="wmassey@spotlightpa.org"
@@ -81,14 +74,26 @@ newsletter = """
 {{<newsletter/pennstatealert-full-form>}}
 """
 [[blocks]]
-title = "More Ways To Give"
+title = "Text Block Two"
+layout = "text-2"
+copy="""
+  {{<featured/large>}}Spotlight PA is a nonpartisan, independent newsroom paid for by grants from foundations and donations from individuals committed to robust investigative reporting. Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership. In short, we answer to you, the public.{{</featured/large>}}
+
+  {{<featured/large>}}Funds for Spotlight PA are donated to the nonprofit <a href="https://www.lenfestinstitute.org/" class="text-yellow">Lenfest Institute for Journalism</a>, which then directs them to our work. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
+
+"""
+[blocks.cta]
+url = "/design/"
+copy = "Action in block two"
+
+[[blocks]]
+title = "Promo Block"
 layout = "promo"
 
 [[blocks.entries]]
 image = "2022/12/01hs-hn2r-zez7-rm35.png"
 hed = """
-Become a 
-Leader in Action
+Option One
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
 actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=leaders"
@@ -97,7 +102,7 @@ url = "/support/leaders-in-action"
 
 [[blocks.entries]]
 image = "2022/06/01hb-4958-4rxz-4t0q.png"
-hed = "Support Our State College Bureau"
+hed = "Option Two"
 body = "Want to support our investigative journalism about Penn State and our State College regional bureau?"
 actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZTQAY"
 actionText = "Support the Bureau →"
@@ -105,7 +110,7 @@ url = "/support/state-college"
 
 [[blocks]]
 layout = "text-3"
-title = "Who Supports Us?"
+title = "Text Block Three"
 show_partners = 4
 copy = """
 
@@ -121,17 +126,8 @@ copy = """
 """
 
 [[blocks]]
-title = "Transparency"
-layout = "text-2"
-copy="""
-  {{<featured/large>}}Spotlight PA is a nonpartisan, independent newsroom paid for by grants from foundations and donations from individuals committed to robust investigative reporting. Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content they produce. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership. In short, we answer to you, the public.{{</featured/large>}}
-
-  {{<featured/large>}}Funds for Spotlight PA are donated to the nonprofit <a href="https://www.lenfestinstitute.org/" class="text-yellow">Lenfest Institute for Journalism</a>, which then directs them to our work. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
-"""
-
-[[blocks]]
 layout = "links"
-title = "About"
+title = "Links Block"
 copy = "Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individual members, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."
 
 
@@ -158,15 +154,6 @@ series = ["Standard Series", "The PSERS Scandal"]
 [blocks.cta]
 url = "/investigations/"
 copy = "See More About Our Impact"
-
-[[blocks]]
-title = "Text Block 2"
-layout = "text-2"
-copy="We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:"
-[blocks.cta]
-url = "/about/staff/"
-copy = "See More About Our Staff"
-
 +++
 
 # Heading One (h1)
