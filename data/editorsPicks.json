@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-04-19-SPLMAIL23.md"
+    "content/statecollege/2023-04-24-SPLPSUBUD.md"
   ],
-  "subfeatures": [
-    "content/news/2023-04-13-SPLVETGU.md",
-    "content/elections.md",
-    "content/news/2023-04-18-SPLAGENEVENT.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2023-04-18-SPLOPIOID0420.md",
-    "content/statecollege/2023-04-17-SPLCOUBU.md",
-    "content/news/2023-04-14-SPLMEDEX.md"
+    "content/statecollege/2023-04-24-SPLSANDY.md",
+    "content/news/2023-04-20-SPLNEWSQUIZAPR20.md",
+    "content/news/2023-04-20-SPLGUARDSUIT.md"
   ],
   "topper": []
 }
