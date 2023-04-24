@@ -63,12 +63,13 @@
 
     {{ .Page.RenderString (.Param "testimonials-group") }}
 
-      <article
-        class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
-      >
+
+    <article
+      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+    >
       {{ .Page.RenderString (.Param "supplemental") }}
       {{ .Page.RenderString (.Param "credit") }}
-      </article>
+    </article>
 
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
