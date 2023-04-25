@@ -118,24 +118,6 @@ name = "How We're Funded"
 url = "/support/funders-and-members#major-donors-and-funders-since-launch"
 weight = 2
 
-[[tndmain]]
-name = "Sign Up for Newsletters"
-url = "/newsletters/"
-weight = 1
-
-[tndmain.params]
-dispatch = "modal:newsletters:open"
-
-[[tndmain]]
-name = "Investigations"
-url = "/investigations/"
-weight = 2
-
-[[tndmain]]
-name = "Events"
-url = "/topics/events/"
-weight = 3
-
 [[social]]
 name = "Facebook"
 url = "https://www.facebook.com/SpotlightPennsylvania"
