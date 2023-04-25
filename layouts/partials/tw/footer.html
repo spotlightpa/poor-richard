@@ -52,7 +52,7 @@
       @click.stop
       @keydown.escape="isOpen = false"
     >
-      <p class="text-center text-2xl md:text-3xl font-bold text-white">
+      <p class="text-center text-2xl font-bold text-white md:text-3xl">
         Sign up for our newsletters
       </p>
       <div
@@ -161,9 +161,9 @@
     }}
     {{ block "tw-footer" $context }}
       <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
-        <h3 class="font-bold uppercase hover:underline">
+        <h3 class="font-bold uppercase tracking-wide hover:underline">
           <a
-            class="transition-color tracking-wide text-black duration-500 hover:text-blue hover:underline"
+            class="transition-color text-black duration-500 hover:text-blue hover:underline"
             href="{{ .link }}"
             >{{ .name }}</a
           >
@@ -208,8 +208,8 @@
     }}
     {{ template "tw-footer" $context }}
   </nav>
-  <nav class="mt-10 px-3 md:mx-auto md:mt-16 md:max-w-screen-lg">
-    <h3 class="mb-4 font-semibold uppercase">Follow Us</h3>
+  <nav class="mt-10 px-3 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg">
+    <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
     <ul class="flex items-center justify-start gap-6 md:justify-between">
       {{ range .Site.Menus.social }}
         {{ template "social-link" . }}
