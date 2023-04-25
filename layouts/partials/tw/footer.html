@@ -1,59 +1,178 @@
-<nav class="bg-black px-4 py-8 font-sans uppercase text-white md:p-12">
-  <div
-    x-data
-    x-intersect.once="$report({ target: $el })"
-    data-ga-action="view:footer"
-  ></div>
-  <div class="flex max-w-screen-lg flex-col gap-6 print:!hidden lg:flex-row">
-    <div class="max-w-xs flex-grow lg:order-last" data-ga-category="who">
-      <p>
-        <a
-          href="/donate/"
-          class="
-            rounded-lg bg-red py-3 px-4
-            font-sans text-base font-bold leading-none tracking-widest text-white
-            ring-white transition-shadow duration-500 hover:shadow-beige
+{{ $dot := . }}
+{{ $idEmail := partial "helper/new-id" $dot | printf "footer-newsletter-%s" }}
+{{ $newsletterAction := site.Param "newsletters-action" }}
+
+
+<footer class="bg-beige font-sans">
+  <div class="bg-black p-3 px-3 sm:py-8 md:py-12">
+    <nav class="flex items-end justify-between gap-8 sm:justify-center">
+      <a
+        class="flex w-3/5 max-w-xs text-white hover:text-yellow md:w-1/2 md:max-w-md"
+        href="/"
+      >
+        <svg class="aspect-[16/3] w-full fill-current">
+          <title>Home</title>
+          <desc>Spotlight PA logo</desc>
+          <use href="#banner-svg"></use>
+        </svg>
+      </a>
+      <a
+        data-sf-campaign="701Dn000000YgogIAC"
+        data-ga-category="donate"
+        class="
+            inline-flex items-center self-center whitespace-nowrap rounded-md bg-red p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white duration-300 hover:bg-blue sm:flex sm:w-44 sm:justify-center sm:p-3
+            sm:text-lg md:w-64 md:p-4 md:text-xl
           "
-          data-ga-category="logo"
+        href="/donate"
+      >
+        <svg
+          class="mr-2 h-4 w-4 fill-current sm:h-6 sm:w-6 md:mr-6 md:h-9 md:w-9"
+          aria-hidden="true"
         >
-          <svg
-            class="inline-block h-8 w-8 fill-current"
-            role="img"
-            aria-label="Spotlight PA logo"
-          >
-            <use xlink:href="#logo-svg"></use>
+          <use href="#heart-svg"></use>
+        </svg>
+        Support<span class="hidden sm:inline"> Us</span>
+      </a>
+    </nav>
+    <h2
+      class=" my-7 mx-auto text-center font-bold leading-relaxed text-white sm:max-w-md md:my-8 md:max-w-4xl md:text-2xl"
+    >
+      Spotlight PA relies on funding from foundations and readers like you who
+      are committed to accountability journalism that gets results.
+    </h2>
+
+    <form
+      class=" mx-auto max-w-xl md:max-w-2xl"
+      data-ga-form="newsletters:multi"
+      x-data="{ hasFocused: false }"
+      action="{{ $newsletterAction }}"
+      method="post"
+      target="_blank"
+      tabindex="-1"
+      @click.stop
+      @keydown.escape="isOpen = false"
+    >
+      <p class="text-center text-2xl font-bold text-white">
+        Sign up for our newsletters
+      </p>
+      <div
+        class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:items-center sm:gap-0 md:col-start-1 md:col-end-3"
+      >
+        {{ partial "newsletter/hidden-input.html" . }}
+        <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+        <input
+          id="{{ $idEmail }}"
+          class=" box-content w-full appearance-none rounded rounded-tl rounded-bl border-4 border-yellow bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+          @focus.once="hasFocused = true"
+          type="email"
+          name="EMAIL"
+          placeholder="Email address"
+          required
+        />
+        <span
+          class="absolute right-4 flex h-14 w-6 items-center fill-s-4 sm:relative sm:-ml-9 sm:h-8 sm:w-8"
+        >
+          <svg viewBox="0 0 1 1">
+            <use xlink:href="#email-svg"></use>
           </svg>
-          Support Us
-        </a>
-      </p>
-      <p class="mt-6 text-lg font-semibold">100% Essential Reporting</p>
-      <p class="font-regular mt-3 normal-case">
-        Spotlight PA relies on funding from
-        <a class="text-yellow hover:underline" href="/support/"
-          >foundations and readers like you</a
+        </span>
+
+        <button
+          class=" box-border w-full rounded border-4  border-yellow bg-yellow p-3 font-black tracking-wider hover:shadow sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+          type="submit"
         >
-        who are committed to accountability journalism that gets results.
-      </p>
-      <p class="font-regular mt-2 normal-case">
-        If you value this reporting, please give a gift today at
-        <a class="text-yellow hover:underline" href="/donate/"
-          >spotlightpa.org/donate</a
-        >.
-      </p>
-    </div>
+          Sign Up
+        </button>
+      </div>
+      <div
+        class="col-span-3 col-start-1 mt-8 text-white"
+        x-cloak
+        x-show="hasFocused"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+      >
+        {{ $checkClass := `accent-orange` }}
+        <p class="mt-3 text-left">
+          <label class="flex items-baseline">
+            <input
+              type="checkbox"
+              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              name="papost"
+              value="1"
+              checked
+              data-ga-button
+              data-ga-action="toggle-newsletter:papost"
+            />
+            <span
+              ><strong>PA Post (Daily)</strong>: Top news every weekday morning,
+              plus a daily puzzle.</span
+            >
+          </label>
+        </p>
+        <p class="mt-1 text-left">
+          <label class="flex items-baseline">
+            <input
+              type="checkbox"
+              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              name="investigator"
+              value="1"
+              checked
+              data-ga-button
+              data-ga-action="toggle-newsletter:investigator"
+            />
+            <span
+              ><strong>The Investigator (Weekly)</strong>: Best accountability
+              journalism every Thursday, plus a weekly riddle.</span
+            >
+          </label>
+        </p>
+        <p class="mt-1 text-left">
+          <label class="flex items-baseline">
+            <input
+              type="checkbox"
+              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              name="palocal"
+              value="1"
+              checked
+              data-ga-button
+              data-ga-action="toggle-newsletter:palocal"
+            />
+            <span
+              ><strong>PA Local (Weekly)</strong>: A fresh look at the
+              incredible people, places, and food of Pa. every Friday.</span
+            >
+          </label>
+        </p>
+      </div>
+    </form>
+  </div>
+  <nav
+    class="gap-5 px-3 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-screen-lg md:grid-cols-4"
+  >
     {{ $context := dict
-      "category" "spotlightpa"
-      "menu" site.Menus.footer
-      "name" "Spotlight PA"
+      "category" "about"
+      "menu" site.Menus.about
+      "name" "About"
+      "link" "/about/"
     }}
     {{ block "tw-footer" $context }}
-      <div class="flex-1 text-lg" data-ga-category="{{ .category }}">
-        <h3 class="font-bold">{{ .name }}</h3>
-        <ul class="mt-6 space-y-3 leading-tight">
+      <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
+        <h3 class="font-bold uppercase hover:underline">
+          <a
+            class="transition-color tracking-wide text-black duration-500 hover:text-blue hover:underline"
+            href="{{ .link }}"
+            >{{ .name }}</a
+          >
+        </h3>
+        <ul class="mt-3 space-y-2 leading-tight">
           {{ range .menu }}
             <li>
               <a
-                class="block text-blue transition-colors duration-500 hover:text-yellow"
+                class="transition-color block text-black duration-500 hover:text-blue hover:underline"
                 href="{{ .URL }}"
                 {{ with .Params.dispatch }}
                   x-data @click.prevent="$dispatch($el.dataset.dispatch)"
@@ -68,44 +187,80 @@
       </div>
     {{ end }}
     {{ $context = dict
-      "category" "about"
-      "menu" site.Menus.about
-      "name" "About"
+      "category" "news"
+      "menu" site.Menus.news
+      "name" "News"
+      "link" "/news/"
     }}
     {{ template "tw-footer" $context }}
     {{ $context = dict
-      "category" "follow"
-      "menu" site.Menus.social
-      "name" "Follow Us"
+      "category" "newsletters"
+      "menu" site.Menus.newsletters
+      "name" "Newsletters"
+      "link" "/newsletters/"
     }}
     {{ template "tw-footer" $context }}
+    {{ $context = dict
+      "category" "support"
+      "menu" site.Menus.support
+      "name" "Support Spotlight PA"
+      "link" "/support/"
+    }}
+    {{ template "tw-footer" $context }}
+  </nav>
+  <nav class="mt-10 px-3 md:mx-auto md:mt-16 md:max-w-screen-lg">
+    <h3 class="mb-4 font-semibold uppercase">Follow Us</h3>
+    <ul class="flex items-center justify-start gap-6 md:justify-between">
+      {{ range .Site.Menus.social }}
+        {{ template "social-link" . }}
+      {{ end }}
+    </ul>
+    {{ define "social-link" }}
+      <li class="inline-flex">
+        <a
+          href="{{ .URL }}"
+          class="inline-flex items-center hover:text-blue"
+          {{ with .Params.dispatch }}
+            x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+            data-dispatch="{{ . }}"
+          {{ end }}
+        >
+          {{ with .Params.icon }}
+            <svg class="mr-1 h-4 w-4 fill-current">
+              <use xlink:href="{{ . }}"></use>
+            </svg>
+          {{ end }}
+          <span class="hidden md:inline">{{ .Name }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </nav>
+  <div
+    class="mt-10 px-3 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-screen-lg"
+  >
+    <p class="text-center">
+      &copy; {{ now.Format "2006" }} Spotlight PA.
+      <br class=" sm:hidden" />
+      <a
+        class="underline transition-colors duration-500 hover:text-blue"
+        href="https://www.netlify.com/"
+        >This site is powered by Netlify</a
+      >
+    </p>
+    <div class="mt-10 flex justify-between sm:mt-0 sm:self-end">
+      <a
+        href="/about/terms/"
+        class="underline transition-colors duration-500 hover:text-blue"
+      >
+        Terms of use
+      </a>
+      &nbsp;
+      <a
+        href="/about/privacy/"
+        class="underline transition-colors duration-500 hover:text-blue"
+      >
+        Privacy policy
+      </a>
+    </div>
   </div>
-  <p class="mt-6 text-center">
-    &copy; {{ now.Format "2006" }} <br />
-    Spotlight PA <br />
-    228 Walnut St., #11728 <br />
-    Harrisburg, PA 17108-1728 <br />
-  </p>
-
-  <p class="mt-12 text-center" data-ga-category="cdn">
-    <a
-      class="text-blue transition-colors duration-500 hover:text-yellow"
-      href="https://www.netlify.com/"
-      >This site is powered by Netlify</a
-    >
-  </p>
-  <p class="flex justify-center gap-2">
-    <a
-      href="/about/terms/"
-      class="text-blue transition-colors duration-500 hover:text-yellow"
-    >
-      Terms of use
-    </a>
-    <a
-      href="/about/privacy/"
-      class="text-blue transition-colors duration-500 hover:text-yellow"
-    >
-      Privacy policy
-    </a>
-  </p>
-</nav>
+</footer>
