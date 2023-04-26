@@ -1,132 +1,129 @@
-{{ $data := index site.Data.colors }}
+{{ $red := .Site.Data.colors.red }}
+{{ $s := index site.Data.colors.s }}
+{{ $yellow := .Site.Data.colors.yellow }}
+{{ $blue := .Site.Data.colors.blue }}
+{{ $navy := .Site.Data.colors.navy }}
+{{ $green := .Site.Data.colors.electionGreen }}
 
 
 <ul class="w-full">
-  {{ range  $data }}
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Grayscale</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
-      >
-        {{ range .s }}
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Grayscale</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val := $s }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Gray {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Red</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val := $red }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Red {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Red</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
-      >
-        {{ range .red }}
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Yellow</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val :=$yellow }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Yellow {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Blue</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline  !pl-0"
+    >
+      {{ range $key, $val :=$blue }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Blue {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Yellow</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
-      >
-        {{ range .yellow }}
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Navy</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val :=$navy }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Navy {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
-
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Blue</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline  !pl-0"
-      >
-        {{ range .blue }}
-
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
-
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Navy</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
-      >
-        {{ range .navy }}
-
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
-
-    <li class="w-full font-sans article-content mt-6">
-      <h3>Election Green</h3>
-      <ul
-        class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
-      >
-        {{ range .electionGreen }}
-
-          <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
-            <figure
-              class="h-32 w-full"
-              style="background-color: {{ . }}"
-            ></figure>
-            <p>
-              Color:
-              {{ . }}
-            </p>
-          </li>
-        {{ end }}
-      </ul>
-    </li>
-  {{ end }}
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Election Green</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val := $green }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            Election Green {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
 </ul>

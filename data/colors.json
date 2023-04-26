@@ -1,4 +1,4 @@
-[{
+{
   "transparent": "transparent",
   "current": "currentColor",
   "white": "#fff",
@@ -16,6 +16,7 @@
     "9": "#2e2e2e"
   },
   "red": {
+    "DEFAULT": "#ff0000",
     "0": "#ffe4da",
     "1": "#ffc8b5",
     "2": "#ffac92",
@@ -25,8 +26,7 @@
     "6": "#ff0000",
     "7": "#d70000",
     "8": "#b10303",
-    "9": "#920a0a",
-    "DEFAULT": "#ff0000"
+    "9": "#920a0a"
   },
   "beige": "#f4f1ee",
   "tw-blue": "#99d9f1",
@@ -34,6 +34,7 @@
   "orange": "#ff6c36",
   "green": "#78bc20",
   "yellow": {
+    "DEFAULT": "#ffcb03",
     "0": "#fefce8",
     "1": "#fffac2",
     "2": "#fff187",
@@ -43,10 +44,10 @@
     "6": "#ce8b00",
     "7": "#a46204",
     "8": "#884c0b",
-    "9": "#733e10",
-    "DEFAULT": "#ffcb03"
+    "9": "#733e10"
   },
   "blue": {
+    "DEFAULT": "#009edb",
     "0": "#f0faff",
     "1": "#e0f4fe",
     "2": "#b9eafe",
@@ -56,10 +57,10 @@
     "6": "#009edb",
     "7": "#0173a3",
     "8": "#066186",
-    "9": "#0b506f",
-    "DEFAULT": "#009edb"
+    "9": "#0b506f"
   },
   "navy": {
+    "DEFAULT": "#22416e",
     "0": "#f3f6fc",
     "1": "#e6edf8",
     "2": "#c8d9ef",
@@ -69,8 +70,7 @@
     "6": "#2b5b9e",
     "7": "#244980",
     "8": "#22416e",
-    "9": "#20375a",
-    "DEFAULT": "#22416e"
+    "9": "#20375a"
   },
   "electionGreen": {
     "lightest": "#daece9",
@@ -86,4 +86,4 @@
   "byline": "var(--byline-color)",
   "date": "var(--date-color)",
   "credit": "var(--credit-color)"
-}]
+}
