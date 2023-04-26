@@ -190,6 +190,13 @@
   @apply block w-full appearance-none rounded border border-s-4 bg-white py-2 pl-4 pr-7 font-sans text-s-6 outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
 }
 
+.spl-donate {
+  @apply font-sans font-black text-lg no-underline inline-block rounded bg-red px-6 py-3 tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9;
+}
+.spl-donate-lg {
+  @apply inline-flex min-w-[145px] items-center justify-center rounded bg-red-6 px-3 py-5 font-sans text-base font-semibold tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px];
+}
+
 .site-nav {
   @apply bg-black px-4;
   print-color-adjust: exact;
