@@ -1,12 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-04-25-SPL_BIZFILE0425.md"
+    "content/news/2023-04-26-SPLPUBDEF.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-02-10-SPLSHAPIRO09.md",
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2023-03-20-SPLCOMPSOLUTIONS20.md"
+  ],
   "topSlots": [
+    "content/news/2023-04-25-SPL_BIZFILE0425.md",
     "content/news/2023-04-25-SPLMAIL25.md",
-    "content/statecollege/2023-04-24-SPLSANDY.md",
-    "content/news/2023-04-20-SPLGUARDSUIT.md"
+    "content/statecollege/2023-04-24-SPLSANDY.md"
   ],
   "topper": []
 }
