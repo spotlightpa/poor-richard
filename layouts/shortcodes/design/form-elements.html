@@ -1,6 +1,5 @@
 {{ $idEmail := "email-input" }}
 {{ $idFname := "text-input" }}
-{{ $checkClass := `accent-yellow w-3 h-3` }}
 <div
   class="
          border-b border-s-4 mt-10 space-y-4 p-4
@@ -97,28 +96,11 @@
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">Checkboxes</h3>
 
-  <p class="">
-    <label class="flex items-baseline gap-2">
-      <input
-        type="checkbox"
-        name="papost"
-        class="{{ $checkClass }}"
-        value="1"
-        :checked="! preselected"
-        data-ga-button
-        data-ga-action="toggle-newsletter:papost"
-      />
-      <span>
-        <strong class="font-extrabold">PA Post (Daily)</strong>: Top news every
-        weekday morning, plus a daily puzzle.
-      </span>
-    </label>
-  </p>
   <p class="mt-3 text-left">
     <label>
       <input
         type="checkbox"
-        class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+        class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
         name="papost"
         value="1"
         checked
