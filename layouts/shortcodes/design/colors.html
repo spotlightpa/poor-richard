@@ -4,6 +4,7 @@
 {{ $blue := .Site.Data.colors.blue }}
 {{ $navy := .Site.Data.colors.navy }}
 {{ $green := .Site.Data.colors.electionGreen }}
+{{ $other := .Site.Data.colors.other }}
 
 
 <ul class="w-full">
@@ -126,4 +127,25 @@
       {{ end }}
     </ul>
   </li>
+
+  <li class="w-full font-sans article-content mt-6">
+    <h3>Other Colors</h3>
+    <ul
+      class="justify-stretch flex w-full flex-wrap gap-4 align-baseline !pl-0"
+    >
+      {{ range $key, $val := $other }}
+        <li class="flex flex-[0_1_32%] flex-col gap-3 p-5 shadow bg-white">
+          <figure
+            class="h-32 w-full"
+            style="background-color: {{ . }}"
+          ></figure>
+          <p>
+            {{ $key }}:
+            {{ . }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
+
 </ul>

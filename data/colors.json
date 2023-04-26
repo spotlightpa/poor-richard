@@ -1,8 +1,4 @@
 {
-  "transparent": "transparent",
-  "current": "currentColor",
-  "white": "#fff",
-  "black": "#000",
   "s": {
     "0": "#fcfcfc",
     "1": "#f9f9f9",
@@ -28,11 +24,6 @@
     "8": "#b10303",
     "9": "#920a0a"
   },
-  "beige": "#f4f1ee",
-  "tw-blue": "#99d9f1",
-  "fb-blue": "#009edb",
-  "orange": "#ff6c36",
-  "green": "#78bc20",
   "yellow": {
     "DEFAULT": "#ffcb03",
     "0": "#fefce8",
@@ -79,11 +70,15 @@
     "darker": "#1e877b",
     "darkest": "#1d534c"
   },
-  "eyebrow": "var(--eyebrow-color)",
-  "eyebrow-bg": "var(--eyebrow-bg)",
-  "hed": "var(--hed-color)",
-  "dek": "var(--dek-color)",
-  "byline": "var(--byline-color)",
-  "date": "var(--date-color)",
-  "credit": "var(--credit-color)"
+  "other": {
+    "transparent": "transparent",
+    "current": "currentColor",
+    "white": "#fff",
+    "black": "#000",
+    "beige": "#f4f1ee",
+    "tw-blue": "#99d9f1",
+    "fb-blue": "#009edb",
+    "orange": "#ff6c36",
+    "green": "#78bc20"
+  }
 }
