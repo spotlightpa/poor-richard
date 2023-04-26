@@ -38,11 +38,14 @@
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idSubject := partial "helper/new-id" . }}
 {{ $idBody := partial "helper/new-id" . }}
+{{ $idAnonymous := partial "helper/new-id" . }}
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
+{{ $recipient := .Get "recipient" }}
+{{ $anonymous := .Get "show-anon" | default false }}
 {{ $cta := .Get "submit" | default "Submit" }}
 <section
-  class="-mx-5 bg-s-3 font-sans md:mx-[calc(-50vw_+_50%)] sm:rounded md:rounded-none md:w-screen relative sm:px-5 md:px-4"
+  class="relative -mx-5 bg-s-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
 >
   <div
     class="mx-auto max-w-screen-lg py-6 px-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:px-0 md:py-24"
@@ -53,7 +56,7 @@
       </h2>
       <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
     </header>
-    <div class="md:col-span-5 md:col-start-6 text-base">
+    <div class="text-base md:col-span-5 md:col-start-6">
       <form
         id="contact-page-form"
         name="contact-page"
@@ -81,7 +84,7 @@
           <h3 class="flex-[0_0_100%] font-sans font-black">From</h3>
 
           <p
-            class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+            class=" relative flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
           >
             <label class="hidden" for="{{ $idFrom }}">From</label>
             <input
@@ -92,9 +95,17 @@
               name="name"
               required
             />
+            <span
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+            >
+              <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+                <use xlink:href="#user-svg"></use>
+              </svg>
+            </span>
+
           </p>
           <p
-            class="relative flex-[0_0_100%] mt-3 sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 lg:mt-0 md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+            class="relative mt-3 flex-[0_0_100%] sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 md:flex-[0_0_100%] lg:mt-0 lg:flex-[0_1_calc(50%-10px)]"
           >
             <label class="hidden" for="{{ $idEmail }}">Email Address</label>
             <input
@@ -106,7 +117,7 @@
               required
             />
             <span
-              class="pointer-events-none inset-y-0 inline-flex items-center absolute right-3 text-s-4"
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
             >
               <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
                 <use xlink:href="#email-svg"></use>
@@ -116,36 +127,41 @@
         </div>
 
         <div class=" mb-3">
-          <label class="font-sans font-black" for="{{ $idSubject }}"
-            >Subject</label
-          >
-          <div class="control is-expanded" x-data="{ cc: '' }">
-            <div class="relative select is-fullwidth">
-              <select
-                id="{{ $idSubject }}"
-                class="spl-select"
-                name="subject"
-                @input="cc = $el.options[$el.selectedIndex].dataset.cc"
-                required
-              >
-                <option selected disabled value="">Select a topic</option>
-                {{ range $subjects }}
-                  {{ $subject := index . 0 }}
-                  {{ $cc := index . 1 }}
-                  <option data-cc="{{ $cc }}">{{ $subject }}</option>
-                {{ end }}
-              </select>
-              <input type="hidden" name="CC" :value="cc" />
-              <span
-                class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
-                aria-hidden="true"
-              >
-                <svg class="h-4 w-4 fill-s-5">
-                  <use xlink:href="#chevron-svg"></use>
-                </svg>
-              </span>
+          {{ with $recipient }}
+            <input type="hidden" name="CC" :value="{{ . }}" />
+          {{ else }}
+            <label class="font-sans font-black" for="{{ $idSubject }}"
+              >Subject</label
+            >
+            <div class="control is-expanded" x-data="{ cc: '' }">
+              <div class="select is-fullwidth relative">
+                <select
+                  id="{{ $idSubject }}"
+                  class="spl-select"
+                  name="subject"
+                  @input="cc = $el.options[$el.selectedIndex].dataset.cc"
+                  required
+                >
+                  <option selected disabled value="">Select a topic</option>
+                  {{ range $subjects }}
+                    {{ $subject := index . 0 }}
+                    {{ $cc := index . 1 }}
+                    <option data-cc="{{ $cc }}">{{ $subject }}</option>
+                  {{ end }}
+                </select>
+                <input type="hidden" name="CC" :value="cc" />
+                <span
+                  class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
+                  aria-hidden="true"
+                >
+                  <svg class="h-4 w-4 fill-s-5">
+                    <use xlink:href="#chevron-svg"></use>
+                  </svg>
+                </span>
+              </div>
             </div>
-          </div>
+          {{ end }}
+
         </div>
 
         <div class="field mb-3">
@@ -155,13 +171,29 @@
           <div class="control">
             <textarea
               id="{{ $idBody }}"
-              class="input min-h-[128px] shadow w-full rounded border border-s-4 p-1 font-sans"
+              class="input min-h-[128px] w-full rounded border border-s-4 p-1 font-sans shadow"
               placeholder="Explain how we can help you"
               name="comment"
             ></textarea>
           </div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex items-center justify-between">
+          {{ with $anonymous }}
+            <p class="flex flex-1 flex-row-reverse">
+              <label
+                class="flex-grow font-sans font-black"
+                for="{{ $idAnonymous }}"
+                >I would like to remain anonymous</label
+              >
+              <input
+                id="{{ $idAnonymous }}"
+                class=" mr-3 h-6 w-6 rounded border border-s-4 p-1 accent-yellow hover:accent-yellow-4"
+                type="checkbox"
+                name="anonymous"
+                required
+              />
+            </p>
+          {{ end }}
           <button
             type="submit"
             class="button is-large is-danger has-text-weight-semibold float-right rounded bg-yellow px-4 py-2 font-sans text-xl font-bold text-black"

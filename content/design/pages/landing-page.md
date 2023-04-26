@@ -65,9 +65,9 @@ shortcode="{{<supplemental>}}"
 >}}"""
 
 form ="""
-{{<featured/promo-tips-form
-  hed="Send A Tip"
-  dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at [wmassey@spotlightpa.org](mailto:wmassey@spotlightpa.org), or one of the methods described below."
+{{<featured/promo-contact-form
+  hed="Contact Form"
+  dek="Contact form allows you to specify recipient to bypass the Subject select menu and set 'show-anon' to true and display an anonymity checkbox"
 >}}
 """
 newsletter = """
