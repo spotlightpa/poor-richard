@@ -20,7 +20,7 @@
         data-sf-campaign="701Dn000000YgogIAC"
         data-ga-category="donate"
         class="
-            inline-flex items-center self-center whitespace-nowrap rounded-md bg-red p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white duration-300 hover:bg-blue sm:flex sm:w-44 sm:justify-center sm:p-3
+            inline-flex items-center whitespace-nowrap rounded-md bg-red p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white duration-300 hover:bg-blue sm:flex sm:w-44 sm:justify-center sm:p-3
             sm:text-lg md:w-64 md:p-4 md:text-xl
           "
         href="/donate"
@@ -35,7 +35,7 @@
       </a>
     </nav>
     <h2
-      class=" my-7 mx-auto text-center font-bold leading-relaxed tracking-wide text-white sm:max-w-md md:my-8 md:max-w-4xl md:text-2xl"
+      class="my-7 mx-auto text-xs sm:text-base text-center font-bold leading-relaxed tracking-wide text-white sm:max-w-md md:my-8 md:max-w-4xl md:text-2xl"
     >
       Spotlight PA relies on funding from foundations and readers like you who
       are committed to accountability journalism that gets results.
@@ -64,7 +64,7 @@
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
-          class=" box-content w-full appearance-none rounded rounded-tl rounded-bl border-4 border-yellow bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+          class=" box-content w-full appearance-none shadow-yellow shadow-[0_0_0_4px] rounded rounded-tl rounded-bl bg-white p-3 m-1 sm:m-0 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
           @focus.once="hasFocused = true"
           type="email"
           name="EMAIL"
@@ -80,7 +80,7 @@
         </span>
 
         <button
-          class=" box-border w-full rounded border-4  border-yellow bg-yellow p-3 font-black tracking-wider hover:shadow sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+          class=" box-border w-full rounded shadow-yellow shadow-[0_0_0_4px] bg-yellow p-3 m-1 sm:m-0 font-black text-yellow-9 uppercase tracking-wider hover:shadow sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
           type="submit"
         >
           Sign Up
@@ -102,7 +102,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              class="mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="papost"
               value="1"
               checked
@@ -119,7 +119,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              class="mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="investigator"
               value="1"
               checked
@@ -136,7 +136,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue"
+              class="mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="palocal"
               value="1"
               checked
@@ -241,7 +241,7 @@
     class="mt-10 px-4 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-screen-lg"
   >
     <p class="text-center">
-      &copy; {{ now.Format "2006" }} Spotlight PA.
+      &copy; {{ now.Format "2006" }} Spotlight PA.&nbsp;
       <br class=" sm:hidden" />
       <a
         class="underline transition-colors duration-500 hover:text-blue"
