@@ -25,7 +25,7 @@ topics = ["Events"]
 
 This year ushered in major changes for the Pennsylvania House. For the first time in a decade, the chamber has a Democratic majority, which earlier this year picked Joanna McClinton to serve as speaker. She’s the first woman and second Black lawmaker to hold that position.
 
-The state Senate is still under Republican control, but many are wondering what the new power dynamic in the lower chamber could mean for policies that Democratic lawmakers have championed such as a minimum wage increase.
+The state Senate is still under Republican control, but many are wondering what the new power dynamic in the lower chamber could mean for policies that Democratic lawmakers have championed, such as a minimum wage increase.
 
 On April 27, Spotlight PA held a panel discussion on the issues and policies that are on the legislature’s docket this session. Watch it below.
 
