@@ -35,7 +35,7 @@
       </a>
     </nav>
     <h2
-      class="my-7 mx-auto text-xs sm:text-base text-center font-bold leading-relaxed tracking-wide text-white sm:max-w-md md:my-8 md:max-w-4xl md:text-2xl"
+      class="my-7 mx-auto text-center text-xs font-bold leading-relaxed tracking-wide text-white sm:max-w-md sm:text-base md:my-8 md:max-w-4xl md:text-2xl"
     >
       Spotlight PA relies on funding from foundations and readers like you who
       are committed to accountability journalism that gets results.
@@ -64,7 +64,7 @@
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
-          class=" box-content w-full appearance-none shadow-yellow shadow-[0_0_0_4px] rounded rounded-tl rounded-bl bg-white p-3 m-1 sm:m-0 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+          class=" m-1 box-content w-full appearance-none rounded rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:m-0 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
           @focus.once="hasFocused = true"
           type="email"
           name="EMAIL"
@@ -80,7 +80,7 @@
         </span>
 
         <button
-          class=" box-border w-full rounded shadow-yellow shadow-[0_0_0_4px] bg-yellow p-3 m-1 sm:m-0 font-black text-yellow-9 uppercase tracking-wider sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+          class=" m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:m-0 sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
           type="submit"
         >
           Sign Up
@@ -102,7 +102,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class="mr-3 h-4 w-4 flex-0 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
+              class="flex-0 mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="papost"
               value="1"
               checked
@@ -119,7 +119,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class="mr-3 h-4 w-4 flex-0 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
+              class="flex-0 mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="investigator"
               value="1"
               checked
@@ -136,7 +136,7 @@
           <label class="flex items-baseline">
             <input
               type="checkbox"
-              class="mr-3 h-4 w-4 flex-0 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
+              class="flex-0 mr-3 h-4 w-4 rounded border border-black p-1 accent-yellow hover:accent-blue-4"
               name="palocal"
               value="1"
               checked
