@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-04-27-SPLDEMS26.md"
+    "content/news/2023-04-28-SPLTRACK23.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-07-SPLHOUSE07.md",
-    "content/news/2023-02-28-SPLSTEP.md",
-    "content/news/2023-03-23-SPLWOMLEG.md"
+    "content/news/2023-01-12-SPLCONEXP.md",
+    "content/news/2023-01-10-SPLSTANDSTI.md"
   ],
   "topSlots": [
+    "content/news/2023-04-27-SPLDEMS26.md",
     "content/news/2023-04-26-SPLPUBDEF.md",
-    "content/news/2023-04-25-SPL_BIZFILE0425.md",
-    "content/news/2023-04-25-SPLMAIL25.md"
+    "content/news/2023-04-25-SPL_BIZFILE0425.md"
   ],
   "topper": []
 }
