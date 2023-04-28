@@ -210,7 +210,10 @@
     }}
     {{ template "tw-footer" $context }}
   </nav>
-  <nav class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg">
+  <nav
+    class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg"
+    data-ga-category="follow"
+  >
     <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
     <ul class="flex items-center justify-start gap-6 md:justify-between">
       {{ range .Site.Menus.social }}
