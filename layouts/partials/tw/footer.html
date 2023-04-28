@@ -3,7 +3,7 @@
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
 
-<footer class="bg-beige font-sans">
+<div class="bg-beige font-sans">
   <div class="bg-black p-4 sm:py-8 md:py-12">
     <nav class="flex items-end justify-between gap-8 sm:justify-center">
       <a
@@ -170,7 +170,7 @@
             >{{ .name }}</a
           >
         </h3>
-        <ul class="mt-3 space-y-2 leading-tight">
+        <ul class="mt-3 space-y-4 leading-tight">
           {{ range .menu }}
             <li>
               <a
@@ -268,4 +268,4 @@
       </a>
     </div>
   </div>
-</footer>
+</div>
