@@ -96,18 +96,24 @@
 
     {{ block "svg-resources" . }}
       {{ $svgs := dict
+        "apple-svg" "@fontawesome/brands/apple.svg"
         "check-svg" "@fontawesome/solid/check.svg"
         "close-svg" "@fontawesome/solid/xmark.svg"
         "email-svg" "@fontawesome/regular/envelope.svg"
         "chevron-svg" "@fontawesome/solid/chevron-down.svg"
         "fb-svg" "@fontawesome/brands/facebook-f.svg"
+        "google-svg" "@fontawesome/brands/google.svg"
+        "heart-svg" "@fontawesome/solid/heart.svg"
         "bars-svg" "@fontawesome/solid/bars.svg"
         "banner-svg" "/img/logos/banner-default-on-trans.svg"
+        "ig-svg" "@fontawesome/brands/instagram.svg"
         "logo-svg" "/img/logos/circle-default-on-trans.svg"
         "search-svg" "@fontawesome/solid/magnifying-glass.svg"
         "share-svg" "@fontawesome/solid/share.svg"
         "spinner-svg" "@fontawesome/solid/spinner.svg"
         "twitter-svg" "@fontawesome/brands/twitter.svg"
+        "flip-svg" "@fontawesome/brands/flipboard.svg"
+        "gh-svg" "@fontawesome/brands/github.svg"
       }}
       {{ partial "header/svgs.html" $svgs }}
     {{ end }}
