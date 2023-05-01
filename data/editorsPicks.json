@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-04-28-SPLTRACK23.md"
+    "content/news/2023-05-01-SPLTAX28.md"
   ],
   "subfeatures": [
-    "content/news/2023-01-12-SPLCONEXP.md",
-    "content/news/2023-01-10-SPLSTANDSTI.md"
+    "content/news/2023-03-07-SPLBUDGET.md",
+    "content/statecollege/2023-04-17-SPLCOUBU.md"
   ],
   "topSlots": [
-    "content/news/2023-04-27-SPLDEMS26.md",
+    "content/news/2023-04-28-SPLTRACK23.md",
     "content/news/2023-04-26-SPLPUBDEF.md",
-    "content/news/2023-04-25-SPL_BIZFILE0425.md"
+    "content/news/2023-04-27-SPLDEMS26.md"
   ],
   "topper": []
 }
