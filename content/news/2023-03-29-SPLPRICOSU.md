@@ -87,7 +87,7 @@ Neft previously ran for Superior Court in 2021, ultimately finishing behind the 
 
 A graduate of Boston University School of Law, Neft has predominantly spent his career in private practice. He clerked for former Superior Court Judge William Cercone in Pittsburgh from 1991 to 1995, drafting memorandums on civil and criminal issues.
 
-Neft served as a committee member for the Mt. Lebanon Democratic Party from 2016 to 2020, when he resigned to run for Superior Court. He was reappointed after his loss in the primary but resigned again in November 2022 for his current Superior Court bid.
+Neft served as a committee member for the Mt. Lebanon Democratic Party from 2016 to 2020, when he resigned to run for Superior Court. He was reappointed after his loss in the primary but resigned again in November 2022 for his current Commonwealth Court bid.
 
 The Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Neft as “recommended,” writing that peers viewed him as “hard working, honest and committed to equal justice, fairness and impartiality in the judicial system.”
 
