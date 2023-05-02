@@ -8,7 +8,7 @@
 {{ $donateTheme := .donateTheme | default "donate" }}
 {{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
 
-{{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
+{{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none inline-block` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
 {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
 {{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
@@ -75,7 +75,7 @@
       {{ end }}
       <div class="mt-6 flex flex-wrap justify-start gap-2">
         {{ define "tw-donate-prefill-button-lg" }}
-          {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none min-w-[180px] inline-block rounded py-3 px-6 text-white font-sans font-black text-lg tracking-wide ring ring-transparent` }}
+          {{ $btnClass := ` mr-4 flex-[1_1_30%] sm:grow-0 outline-none inline-block` }}
           {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
 
           {{ $amount := index . 0 }}
@@ -83,7 +83,7 @@
           {{ $freq := index . 2 }}
           <button
             type="button"
-            class="{{ $btnClass }} {{ $inactiveClass }}"
+            class="{{ $btnClass }} {{ $inactiveClass }} spl-donate min-w-[180px]"
             :class="btnClass(amount === '{{ $amount }}')"
             @click="amount = '{{ $amount }}'"
             x-show="freq === '{{ $freq }}'"
@@ -121,7 +121,7 @@
           type="button"
           x-cloak
           x-show="freq === 'o'"
-          class="{{ $btnClass }} {{ $inactiveClass }}"
+          class="{{ $btnClass }} {{ $inactiveClass }} spl-donate min-w-[180px]"
           :class="btnClass(showOther)"
           @click="showOther = !showOther"
         >
@@ -131,7 +131,7 @@
         <button
           type="button"
           x-show="freq !== 'o'"
-          class="{{ $btnClass }} {{ $inactiveClass }}"
+          class="{{ $btnClass }} {{ $inactiveClass }} spl-donate min-w-[180px]"
           :class="btnClass(showOther)"
           @click="showOther = !showOther"
         >
@@ -197,7 +197,7 @@
 
       <div class="mt-12 text-center">
         <a
-          class="{{ $btnClass }} inline-block min-w-[260px] rounded bg-red-6 px-6 py-3 tracking-wide text-white outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9"
+          class="{{ $btnClass }} spl-donate min-w-[260px]"
           :href="donateURL"
           data-ga-action="https://www.spotlightpa.org/donate/"
         >

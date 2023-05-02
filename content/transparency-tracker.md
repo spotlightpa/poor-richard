@@ -52,8 +52,10 @@ bio="Wyatt Massey investigates how Penn State University operates, including its
 shortcode="{{<supplemental>}}"
 >}}"""
 form ="""
-{{<featured/promo-tips-form
+{{<featured/promo-contact-form
   hed="Send A Tip"
+  show-anon=true
+  recipient="Wyatt Massey"
   dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at [wmassey@spotlightpa.org](mailto:wmassey@spotlightpa.org), or one of the methods described below."
 >}}
 """
