@@ -74,6 +74,14 @@ newsletter = """
 {{<newsletter/pennstatealert-full-form>}}
 """
 [[blocks]]
+layout = "signup"
+hed = "Heading"
+cta = "Action"
+hiddenField = "newsletter/pennstatealert-hidden.html"
+gaCategory = "newsletters:pennstatealert"
+gaForm = "newsletters:pennstatealert-full"
+
+[[blocks]]
 title = "Text Block Two"
 layout = "text-2"
 copy="""
