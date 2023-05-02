@@ -2,7 +2,7 @@
 arc-id = "4IPTAJAXMZHTBCQPAHAIL2UMD4"
 authors = ["Lilly Riddle"]
 blurb = "For years, State College area residents have expressed their grievances regarding a casino slated to go in College Township’s Nittany Mall. They just didn’t do it early enough."
-byline = "Lilly Riddle for Spotlight PA State College"
+byline = "Lilly Riddle for the News Lab at Penn State and Spotlight PA State College"
 description = "Nittany Mall casino given green light despite lack of public support. Two court cases against Pennsylvania Gaming Control Board are the hurdle now."
 image = "external/51t8majzccnccjq95gtrbk0y1m.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
