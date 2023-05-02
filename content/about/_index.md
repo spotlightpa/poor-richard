@@ -5,6 +5,7 @@ subhed = "Together, we can hold the powerful to account."
 description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more."
 title-tag = "Spotlight PA: Pennsylvania news and investigations"
 linktitle = "About"
+aliases = ["/about/faq/"]
 [cascade]
 modal-exclude = true
 

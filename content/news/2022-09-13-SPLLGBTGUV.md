@@ -36,7 +36,7 @@ Below, we break down their positions on a number of key issues.
 
 ## Discrimination protections
 
-<b>Mastriano</b> does not support enshrining nondiscrimination protections based on gender identity or sexual orientation into law, his campaign told the Pennsylvania Family Council in an <a href="https://www.pafamilyvoter.com/candidate/governor/mastriano-doug/" target="_blank">election survey</a>. 
+<b>Mastriano</b> does not support enshrining nondiscrimination protections based on gender identity or sexual orientation into law, his campaign told the Pennsylvania Family Council in an <a href="https://web.archive.org/20220927203350/https://www.pafamilyvoter.com/candidate/governor/mastriano-doug/">election survey</a>. 
 
 In July, he was part of a unanimous vote to <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=685">remove “acts of homosexuality”</a> from the Pennsylvania crimes code.
 

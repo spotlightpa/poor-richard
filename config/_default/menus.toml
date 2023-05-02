@@ -28,116 +28,95 @@ name = "State College"
 url = "/statecollege/"
 weight = 6
 
-[[footer]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[footer]]
-name = "Contact"
-url = "/contact/"
-weight = 2
-
-[[footer]]
-name = "Tips"
-url = "/tips/"
-weight = 3
-
-[[footer]]
-name = "Newsletters"
-url = "/newsletters/"
-weight = 4
-
-[[footer]]
-name = "News Archive"
-url = "/news/"
-weight = 5
-
-[[footer]]
-name = "Search"
-url = "/search/"
-weight = 6
-
-[footer.params]
-dispatch = "modal:search:open"
-
-[[footer]]
-name = "Special Projects & Investigations"
-url = "/investigations/"
-weight = 7
-
-[[footer]]
-name = "Topic Archive"
-url = "/topics/"
-weight = 8
-
-[[footer]]
-name = "Events"
-url = "/events/"
-weight = 9
-
-[[footer]]
-name = "Donate"
-url = "/donate/"
-weight = 10
-
-[[about]]
-name = "About State College"
-url = "/about/statecollege/"
-weight = 1
-
-[[about]]
-name = "State College"
-url = "/statecollege/"
-weight = 2
-
-[[about]]
-name = "About Us"
-url = "/about/"
-weight = 3
-
 [[about]]
 name = "Our Mission"
 url = "/about/mission/"
+weight = 2
+
+[[about]]
+name = "Meet the Team"
+url = "/about/staff/"
+weight = 3
+
+[[about]]
+name = "Spotlight PA Partners"
+url = "/about/partners"
 weight = 4
 
 [[about]]
-name = "Ways to Give"
-url = "/support/"
+name = "Careers"
+url = "/jobs/"
 weight = 5
 
 [[about]]
-name = "Partners"
-url = "/about/partners/"
+name = "Contact"
+url = "/contact/"
 weight = 6
 
-[[about]]
-name = "Staff"
-url = "/about/staff/"
-weight = 7
-
-[[about]]
-name = "Jobs"
-url = "/about/jobs/"
-weight = 10
-
-[[tndmain]]
-name = "Sign Up for Newsletters"
-url = "/newsletters/"
-weight = 1
-
-[tndmain.params]
-dispatch = "modal:newsletters:open"
-
-[[tndmain]]
+[[news]]
 name = "Investigations"
 url = "/investigations/"
-weight = 2
+weight = 7
 
-[[tndmain]]
+[[news]]
+name = "The Capitol"
+url = "/topics/the-capitol/"
+weight = 8
+
+[[news]]
+name = "More Topics"
+url = "/topics/"
+weight = 9
+
+[[news]]
+name = "State College Region"
+url = "/statecollege/"
+weight = 10
+
+[[news]]
 name = "Events"
-url = "/topics/events/"
+url = "/events/"
+weight = 11
+
+[[news]]
+name = "Archives"
+url = "/news/"
+weight = 12
+
+[[newsletters]]
+name = "PA Post"
+url = "/newsletters/papost/"
 weight = 3
+
+[[newsletters]]
+name = "The Investigator"
+url = "/newsletters/investigator/"
+weight = 4
+
+[[newsletters]]
+name = "PA Local"
+url = "/newsletters/palocal/"
+weight = 5
+
+[[newsletters]]
+name = "Penn State Alerts"
+url = "/newsletters/pennstatealert/"
+weight = 6
+
+[[newsletters]]
+name = "Talk of the Town"
+url = "/newsletters/talkofthetown/"
+weight = 7
+
+[[support]]
+name = "Ways to Give"
+url = "/support/"
+weight = 1
+
+[[support]]
+name = "How We're Funded"
+url = "/support/funders-and-members#major-donors-and-funders-since-launch"
+weight = 2
 
 [[social]]
 name = "Facebook"
@@ -166,7 +145,7 @@ icon = "#ig-svg"
 [[social]]
 name = "Apple News"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
-weight = 4
+weight = 5
 
 [social.params]
 icon = "#apple-svg"
@@ -174,7 +153,7 @@ icon = "#apple-svg"
 [[social]]
 name = "Flipboard"
 url = "https://flipboard.com/@SpotlightPA"
-weight = 5
+weight = 4
 
 [social.params]
 icon = "#flip-svg"
@@ -182,7 +161,7 @@ icon = "#flip-svg"
 [[social]]
 name = "Github"
 url = "https://www.github.com/spotlightpa/"
-weight = 6
+weight = 9
 
 [social.params]
 icon = "#gh-svg"
@@ -190,7 +169,7 @@ icon = "#gh-svg"
 [[social]]
 name = "Google News"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 7
+weight = 6
 
 [social.params]
 icon = "#google-svg"
