@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-05-02-SPLCASINO.md"
+    "content/statecollege/2023-05-03-SPLWILDS.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2021-12-02-SPLWILDS03.md"
+  ],
   "topSlots": [
-    "content/news/2023-05-01-SPLTAX28.md",
-    "content/news/2023-04-28-SPLTRACK23.md",
-    "content/news/2023-04-26-SPLPUBDEF.md"
+    "content/news/2023-05-03-SPLREG03.md",
+    "content/statecollege/2023-05-02-SPLCASINO.md",
+    "content/news/2023-05-01-SPLTAX28.md"
   ],
   "topper": []
 }
