@@ -4,6 +4,7 @@ title = "Support Spotlight PA"
 url = "/support/"
 layout = "support"
 image = "2020/06/01fdjfj1nf20rwxt.jpeg"
+image-gravity = "ce"
 
 [[blocks]]
 title = "More Ways To Give"
