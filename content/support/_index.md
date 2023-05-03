@@ -3,6 +3,7 @@ published = 2019-09-05T13:14:35.433Z
 title = "Support Spotlight PA"
 url = "/support/"
 layout = "support"
+image = "2020/06/01fdjfj1nf20rwxt.jpeg"
 
 [[blocks]]
 title = "More Ways To Give"
