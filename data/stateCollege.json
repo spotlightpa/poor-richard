@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-05-03-SPLWILDS.md"
+    "content/statecollege/2023-05-04-SPLPSUJOBS.md"
   ],
   "subfeatures": [
-    "content/news/2021-12-02-SPLWILDS03.md"
+    "content/statecollege/2023-03-16-SPLPSUBUDGET.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-05-03-SPLWILDS.md",
     "content/statecollege/2023-05-02-SPLCASINO.md",
-    "content/statecollege/2023-04-24-SPLPSUBUD.md",
-    "content/statecollege/2023-04-24-SPLSANDY.md"
+    "content/statecollege/2023-04-24-SPLPSUBUD.md"
   ],
   "topper": []
 }
