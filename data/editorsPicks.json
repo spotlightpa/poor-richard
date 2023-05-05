@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-05-04-SPLREBBOOST.md"
+    "content/statecollege/2023-05-04-SPLPSUJOBS.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-01-SPLBILL01.md",
-    "content/news/2023-05-01-SPLTAX28.md"
+    "content/statecollege/2023-03-16-SPLPSUBUDGET.md"
   ],
   "topSlots": [
-    "content/news/2023-05-03-SPLREG03.md",
-    "content/statecollege/2023-05-04-SPLPSUJOBS.md",
-    "content/news/2023-05-04-SPLNEWSQUIZMAY4.md"
+    "content/news/2023-05-04-SPLNEWSQUIZMAY4.md",
+    "content/news/2023-05-04-SPLREBBOOST.md",
+    "content/news/2023-05-03-SPLREG03.md"
   ],
   "topper": []
 }
