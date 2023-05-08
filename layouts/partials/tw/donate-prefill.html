@@ -151,7 +151,7 @@
       </button>
     </div>
     <div class="mt-8" x-cloak x-show="showOther" x-transition>
-      {{ $idOther := partial "helper/new-id" .page }}
+      {{ $idOther := partial "helper/new-id" . }}
       <label for="{{ $idOther }}" class="font-bold"> Other Amount: </label>
       <div class="relative mt-2">
         <input

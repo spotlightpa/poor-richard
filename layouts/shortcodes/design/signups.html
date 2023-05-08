@@ -13,7 +13,6 @@
     "hiddenField" "newsletter/pennstatealert-hidden.html"
     "hed" "Sign Up for Penn State Alerts"
     "cta" "Subscribe"
-    "dot" .
     )
   }}
 </div>
@@ -35,7 +34,6 @@
       "hiddenField" "newsletter/pennstatealert-hidden.html"
       "hed" "Sign Up for Penn State Alerts"
       "cta" "Subscribe"
-      "dot" .
       )
     }}
   </div>
@@ -62,8 +60,7 @@
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">Ribbon Modal</h3>
 
-  {{ $dot := . }}
-  {{ $idEmail := partial "helper/new-id" $dot | printf "modal-newsletter-%s" }}
+  {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
   {{ $imagename := "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg" }}
   {{ $actionColor := "#FFCB05" }}
   {{ $newsletterAction := site.Param "newsletters-action" }}
