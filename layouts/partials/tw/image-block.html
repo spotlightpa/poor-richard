@@ -7,6 +7,7 @@
 {{ $eager := .eager | default false }}
 {{ $gravity := .gravity }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
+{{ $shadow := cond (.shadow|not|not) "shadow" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
@@ -40,7 +41,7 @@
   itemtype="https://schema.org/ImageObject"
 >
   <div
-    class="{{ $rounded }} relative w-full overflow-clip bg-s-3 shadow"
+    class="{{ $rounded }} {{ $shadow }} relative w-full overflow-clip bg-s-3"
     {{ if .overlay }}
       x-data="{ showOverlay: true }"
     {{ end }}
