@@ -35,7 +35,7 @@
         aria-label="Spotlight PA banner"
         viewBox="0 0 1024 190"
       >
-        <use href="#banner-state-college-svg"></use>
+        {{ partial "helper/svg.html" "banner-state-college" }}
       </svg>
     </a>
   </nav>
@@ -126,7 +126,7 @@
               aria-hidden="true"
             >
               <svg class="h-4 w-4 fill-current">
-                <use xlink:href="#email-svg"></use>
+                {{ partial "helper/svg.html" "email" }}
               </svg>
             </span>
           </span>
