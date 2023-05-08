@@ -230,12 +230,16 @@
             data-dispatch="{{ . }}"
           {{ end }}
         >
+          {{ $linkID := partial "helper/new-id.html" . }}
           {{ with .Params.icon }}
-            <svg class="mr-1 h-4 w-4 fill-current">
+            <svg
+              class="mr-1 h-4 w-4 fill-current"
+              aria-labelledby="{{ $linkID }}"
+            >
               <use xlink:href="{{ . }}"></use>
             </svg>
           {{ end }}
-          <span class="hidden md:inline">{{ .Name }}</span>
+          <span id="{{ $linkID }}" class="hidden md:inline">{{ .Name }}</span>
         </a>
       </li>
     {{ end }}
