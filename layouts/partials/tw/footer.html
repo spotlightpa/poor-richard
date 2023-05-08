@@ -1,5 +1,4 @@
-{{ $dot := . }}
-{{ $idEmail := partial "helper/new-id" $dot | printf "footer-newsletter-%s" }}
+{{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
 

@@ -1,14 +1,14 @@
-{{ $nlBox := .page.Param "newsletter-box" |
+{{ $nlBox := page.Param "newsletter-box" |
   default "tw/inline-newsletter-white.html"
 }}
-{{ $imageDescription := .page.Param "river-promo-description" }}
-{{ $link := .page.Param "river-promo-link" }}
-{{ $desktopImages := .page.Param "river-promo-desktop-images" }}
-{{ $desktopWidth := .page.Param "river-promo-desktop-width" }}
-{{ $desktopHeight := .page.Param "river-promo-desktop-height" }}
-{{ $mobileImages := .page.Param "river-promo-mobile-images" }}
-{{ $mobileWidth := .page.Param "river-promo-mobile-width" }}
-{{ $mobileHeight := .page.Param "river-promo-mobile-height" }}
+{{ $imageDescription := page.Param "river-promo-description" }}
+{{ $link := page.Param "river-promo-link" }}
+{{ $desktopImages := page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
 
 {{ $btn := `inline-block
   rounded-lg bg-blue-6 py-3 px-4
@@ -52,13 +52,13 @@
     <div data-ga-category="donate" x-cloak x-show="isSubscriber">
       {{ partial "tw/donate-prefill-lg-page.html" (dict
         "wrapperClass" "rounded overflow-hidden"
-        "donateHed" (.page.Param "donate-hed")
-        "donateDek" (.page.Param "donate-text")
-        "donateCta" (.page.Param "donate-cta")
-        "donateGaCategory" (.page.Param "donate-ga-category")
-        "donateCampaign" (.page.Param "donate-ga-campaign")
-        "donateTheme" (.page.Param "donate-theme")
-        "donateAmounts" (.page.Param "donate-amounts")
+        "donateHed" (page.Param "donate-hed")
+        "donateDek" (page.Param "donate-text")
+        "donateCta" (page.Param "donate-cta")
+        "donateGaCategory" (page.Param "donate-ga-category")
+        "donateCampaign" (page.Param "donate-ga-campaign")
+        "donateTheme" (page.Param "donate-theme")
+        "donateAmounts" (page.Param "donate-amounts")
         )
       }}
     </div>
@@ -77,11 +77,11 @@
         <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
           {{ partial "tw/promo-single.html" (dict
             "class" "mb-5 w-0 min-w-full no-js:hidden"
-            "images" (.page.Param "sidebar-top-images")
-            "width" (.page.Param "sidebar-top-width")
-            "height" (.page.Param "sidebar-top-height")
-            "link"  (.page.Param "sidebar-top-link")
-            "description"  (.page.Param "sidebar-top-description")
+            "images" (page.Param "sidebar-top-images")
+            "width" (page.Param "sidebar-top-width")
+            "height" (page.Param "sidebar-top-height")
+            "link"  (page.Param "sidebar-top-link")
+            "description"  (page.Param "sidebar-top-description")
             )
           }}
         </div>
@@ -92,7 +92,7 @@
             {{ partial "tw/rail-picks.html" . }}
           {{ end }}
         {{ end }}
-        {{ if .page.Param "sidebar-sticky-images" }}
+        {{ if page.Param "sidebar-sticky-images" }}
           <div
             class="flex-1"
             data-ga-category="sticky"
@@ -101,11 +101,11 @@
           >
             {{ partial "tw/promo-single.html" (dict
               "class" "pt-5 w-0 min-w-full no-js:hidden sticky top-0"
-              "images" (.page.Param "sidebar-sticky-images")
-              "width" (.page.Param "sidebar-sticky-width")
-              "height" (.page.Param "sidebar-sticky-height")
-              "link" (.page.Param "sidebar-sticky-link")
-              "description" (.page.Param "sidebar-sticky-description")
+              "images" (page.Param "sidebar-sticky-images")
+              "width" (page.Param "sidebar-sticky-width")
+              "height" (page.Param "sidebar-sticky-height")
+              "link" (page.Param "sidebar-sticky-link")
+              "description" (page.Param "sidebar-sticky-description")
               )
             }}
           </div>
