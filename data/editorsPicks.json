@@ -1,11 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-05-06-SPLPSUEMAIL.md"
+    "content/news/2023-05-08-SPLHEALTHBUDGET0508.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
-    "content/news/2023-05-04-SPLNEWSQUIZMAY4.md",
+  "subfeatures": [
     "content/news/2023-05-04-SPLREBBOOST.md",
+    "content/news/2023-04-26-SPLPUBDEF.md",
+    "content/statecollege/2023-04-24-SPLPSUBUD.md",
+    "content/statecollege/2023-04-17-SPLCOUBU.md"
+  ],
+  "topSlots": [
+    "content/statecollege/2023-05-06-SPLPSUEMAIL.md",
+    "content/news/2023-05-04-SPLNEWSQUIZMAY4.md",
     "content/statecollege/2023-05-04-SPLPSUJOBS.md"
   ],
   "topper": []
