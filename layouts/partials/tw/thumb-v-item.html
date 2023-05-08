@@ -1,5 +1,6 @@
 {{ $showByline := .showByline | default "true" }}
 
+
 <article class="{{ .wrapperClass | default `sm:w-64` }}">
   <div data-ga-category="eyebrow">
     {{ if .eyebrow }}
@@ -38,7 +39,7 @@
         </a>
       </h4>
     {{ end }}
-    {{ if ( and ( .byline ) ( $showByline ) )}}
+    {{ if ( and ( .byline ) ( $showByline ) ) }}
       <h4
         class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-byline"
       >
