@@ -25,12 +25,13 @@
     data-ga-category="guides"
   >
     {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
-    {{ partial "tw/list-3-col-story-nobyline.html" (dict
+    {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Transparency Stories"
       "pages" $guide.RegularPages
       "readMoreLink" $guide.RelPermalink
       "readMore" "Read More Transparency Tracker stories"
       "rows" 2
+      "showByline" false
       )
     }}
 
