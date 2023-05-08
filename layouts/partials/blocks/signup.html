@@ -89,11 +89,19 @@
       >
         {{ $name := .image }}
         {{ $imgOpts := dict
+          "credit" ""
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "col-start-1"
+          "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-s-7"
+          "sizeHint" "400px"
+          "rounded" true
+          "gravity" (.Page.Param "image-gravity")
+
           "filename" $name
           "widthRatio" 4
           "heightRatio" 3
         }}
-        {{ partial "component/image-block.html" $imgOpts }}
+        {{ partial "tw/image-block.html" $imgOpts }}
 
       </div>
     </div>
