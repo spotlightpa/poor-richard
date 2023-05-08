@@ -22,8 +22,16 @@
                 "widthRatio" 34
                 "heightRatio" 27
                 "sizeHint" "25vw"
+                "credit" ""
+                "widths" (slice 128 256 384 512 1280)
+                "figClass" "col-start-1"
+                "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-s-7"
+                "sizeHint" "400px"
+                "rounded" true
+                "shadow" false
+                "gravity" (.Page.Param "image-gravity")
               }}
-              {{ partial "component/image-block.html" $imgOpts }}
+              {{ partial "tw/image-block.html" $imgOpts }}
             </div>
             <h3
               class="-order-1 mb-2 max-w-[21rem] flex-1 self-end text-4xl font-black"
