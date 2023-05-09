@@ -14,10 +14,6 @@
   data-sf-theme="statecollege"
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
 {{ define "header" }}
   <nav
     class="z-10 flex bg-black sm:absolute sm:bg-transparent"
@@ -45,30 +41,8 @@
     {{ .Content }}
   </article>
 {{ end }}
-
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
 {{ define "footer" }}
   <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
     {{ partial "tw/footer.html" . }}
   </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-newsletter-sc.html" . }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}

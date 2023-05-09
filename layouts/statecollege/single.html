@@ -11,31 +11,6 @@
   data-sf-campaign="701Dn000000Ygq1IAC" data-sf-theme="statecollege"
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav-sc.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   {{ partial "tw/main.html" . }}
 {{ end }}
@@ -55,14 +30,10 @@
 {{ define "modal" }}
   {{ if .Param "modal-exclude" | not }}
     {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
+      {{ partial "tw/modal-sticky.html" . }}
     {{ end }}
     {{ if .Param "newsletter-active" }}
-      {{ partialCached "tw/modal-newsletter-sc.html" . }}
+      {{ partial "tw/modal-newsletter-sc.html" . }}
     {{ end }}
   {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}

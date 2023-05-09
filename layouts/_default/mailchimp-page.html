@@ -1,9 +1,5 @@
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
 {{ define "extra-head" }}
   {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true }}
   {{ $styles := resources.Get "css/mailchimp.scss" | toCSS $scssOptions | postCSS }}
@@ -11,31 +7,6 @@
     {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
   {{ end }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ if eq .Params.nav "statecollege" }}
-        {{ partial "tw/nav-sc.html" . }}
-      {{ else }}
-        {{ partial "tw/nav.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      <!-- noop -->
-    {{ end }}
-  </header>
 {{ end }}
 
 {{ define "main" }}
@@ -65,8 +36,4 @@
       }}
     {{ end }}
   {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}

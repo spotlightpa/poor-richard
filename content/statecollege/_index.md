@@ -20,4 +20,5 @@ donate-ga-campaign = "701Dn000000Ygq1IAC"
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"
+nav = "statecollege"
 +++
