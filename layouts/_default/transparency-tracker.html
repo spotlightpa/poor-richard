@@ -68,3 +68,28 @@
 {{ define "search-modal" }}
   {{ partial "tw/modal-search.html" . }}
 {{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "bars-svg" "@fontawesome/solid/bars.svg"
+    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
+    "close-svg" "@fontawesome/solid/circle-xmark.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+    "share-svg" "@fontawesome/solid/share.svg"
+    "spinner-svg" "@fontawesome/solid/spinner.svg"
+    "times-svg" "@fontawesome/solid/xmark.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+    "apple-svg" "@fontawesome/brands/apple.svg"
+    "google-svg" "@fontawesome/brands/google.svg"
+    "heart-svg" "@fontawesome/solid/heart.svg"
+    "ig-svg" "@fontawesome/brands/instagram.svg"
+    "flip-svg" "@fontawesome/brands/flipboard.svg"
+    "gh-svg" "@fontawesome/brands/github.svg"
+    "chevron-svg" "@fontawesome/solid/chevron-down.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}

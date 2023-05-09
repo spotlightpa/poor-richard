@@ -37,3 +37,22 @@
     {{ partial $embed . }}
   </div>
 {{ end }}
+
+{{ define "svg-resources" }}
+  {{ $svgs := dict
+    "banner-svg" "/img/logos/banner-default-on-trans.svg"
+    "check-svg" "@fontawesome/solid/check.svg"
+    "email-svg" "@fontawesome/regular/envelope.svg"
+    "logo-svg" "/img/logos/circle-default-on-trans.svg"
+    "user-svg" "@fontawesome/solid/user.svg"
+    "fb-svg" "@fontawesome/brands/facebook-f.svg"
+    "twitter-svg" "@fontawesome/brands/twitter.svg"
+    "apple-svg" "@fontawesome/brands/apple.svg"
+    "google-svg" "@fontawesome/brands/google.svg"
+    "heart-svg" "@fontawesome/solid/heart.svg"
+    "ig-svg" "@fontawesome/brands/instagram.svg"
+    "flip-svg" "@fontawesome/brands/flipboard.svg"
+    "gh-svg" "@fontawesome/brands/github.svg"
+  }}
+  {{ partial "header/svgs.html" $svgs }}
+{{ end }}

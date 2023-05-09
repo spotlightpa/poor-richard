@@ -124,7 +124,7 @@ url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
 
 [social.params]
-icon = "fb"
+icon = "#fb-svg"
 
 [[social]]
 name = "Twitter"
@@ -132,7 +132,7 @@ url = "https://www.twitter.com/SpotlightPA"
 weight = 2
 
 [social.params]
-icon = "twitter"
+icon = "#twitter-svg"
 
 [[social]]
 name = "Instagram"
@@ -140,7 +140,7 @@ url = "https://www.instagram.com/Spotlightpennsylvania/"
 weight = 3
 
 [social.params]
-icon = "ig"
+icon = "#ig-svg"
 
 [[social]]
 name = "Apple News"
@@ -148,7 +148,7 @@ url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
 weight = 5
 
 [social.params]
-icon = "apple"
+icon = "#apple-svg"
 
 [[social]]
 name = "Flipboard"
@@ -156,7 +156,7 @@ url = "https://flipboard.com/@SpotlightPA"
 weight = 4
 
 [social.params]
-icon = "flip"
+icon = "#flip-svg"
 
 [[social]]
 name = "Github"
@@ -164,7 +164,7 @@ url = "https://www.github.com/spotlightpa/"
 weight = 9
 
 [social.params]
-icon = "gh"
+icon = "#gh-svg"
 
 [[social]]
 name = "Google News"
@@ -172,4 +172,4 @@ url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
 weight = 6
 
 [social.params]
-icon = "google"
+icon = "#google-svg"

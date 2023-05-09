@@ -77,7 +77,7 @@
       aria-hidden="true"
     >
       <svg class="h-4 w-4 fill-s-5">
-        {{ partial "helper/svg.html" "chevron" }}
+        <use xlink:href="#chevron-svg"></use>
       </svg>
     </span>
   </div>
@@ -172,7 +172,7 @@
               data-ga-action="add-to-calendar"
             >
               <svg class="mb-2 inline-block h-5 w-5 fill-current">
-                {{ partial "helper/svg.html" "calendar" }}
+                <use href="#calendar-svg" />
               </svg>
               <span class="tracking-wide">Add to Calendar</span>
             </button>

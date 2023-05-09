@@ -12,7 +12,7 @@
         <svg class="site-nav:logo-svg">
           <title>Home</title>
           <desc>Spotlight PA logo</desc>
-          {{ partial "helper/svg.html" "banner" }}
+          <use href="#banner-svg"></use>
         </svg>
       </a>
       <div class="site-nav:desktop" data-ga-category="desktop">
@@ -30,7 +30,7 @@
           @click.prevent="$dispatch('modal:search:open')"
         >
           <svg class="site-nav:svg-icon" aria-label="Search">
-            {{ partial "helper/svg.html" "search" }}
+            <use href="#search-svg"></use>
           </svg>
         </a>
         <a
@@ -44,7 +44,9 @@
             aria-hidden="true"
             style="top: 1px; margin-right: 2px"
           >
-            {{ partial "helper/svg.html" "heart" }}"
+            <path
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            />
           </svg>
           Support Us
         </a>
@@ -60,7 +62,7 @@
           <a class="no-js:block" href="#footer">
             <svg class="site-nav:svg-icon">
               <title>Footer Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
+              <use href="#bars-svg"></use>
             </svg>
           </a>
           <button
@@ -76,7 +78,7 @@
           >
             <svg class="site-nav:svg-icon">
               <title>Site Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
+              <use href="#bars-svg"></use>
             </svg>
           </button>
 
@@ -102,7 +104,7 @@
                   viewBox="0 0 20 20"
                   aria-hidden="true"
                 >
-                  {{ partial "helper/svg.html" "logo" }}
+                  <use href="#logo-svg"></use>
                 </svg>
                 Support Us
               </a>
