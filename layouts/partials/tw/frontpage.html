@@ -19,7 +19,6 @@
   hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7`
 }}
 
-
 <div class="mx-auto mb-5 max-w-screen-xl">
   {{ define "topper" }}
     {{ if .Param "topper-active" }}
@@ -118,7 +117,6 @@
         data-sf-campaign="701Dn000000YgodIAC"
       >
         <nav
-          data-ga-category="related-content"
           x-data="readmore(true)"
           x-ref="root"
           @mouseover.once="load()"
@@ -135,7 +133,11 @@
             x-ref="archives"
           >
             {{ range $i, $page := .river | first 30 }}
+              <div
+                  data-ga-category="story-{{ $i| add 1 }}"
+              >
               {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
+            </div>
               {{ if eq (mod $i 4) 3 | and $desktopImages }}
                 <div
                   class="tile is-parent px-0 pt-0"
