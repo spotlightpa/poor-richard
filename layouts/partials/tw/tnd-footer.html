@@ -57,7 +57,7 @@
     </div>
 
     <div class="mx-auto mt-12 max-w-4xl px-5 text-2xl font-bold">
-      {{ $id := partial "helper/new-id" $.Page }}
+      {{ $id := partial "helper/new-id" . }}
       <label for="{{ $id }}" class="text-2xl font-bold text-white md:text-3xl">
         Sign up for our newsletters
       </label>

@@ -68,7 +68,7 @@
             >
               {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
               {{ $slug := .File.Dir | path.Base }}
-              {{ $id := partial "helper/new-id" $ }}
+              {{ $id := partial "helper/new-id" . }}
               <label
                 class="flex"
                 data-ga-action="toggle-newsletter:{{ $slug }}"
