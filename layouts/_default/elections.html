@@ -12,50 +12,8 @@
   />
 {{ end }}
 
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   <div data-sf-campaign="701Dn000000Ygp6IAC">
     {{ partial "tw/main-elections.html" . }}
   </div>
-{{ end }}
-
-{{ define "before-footer" }}
-  <!-- noop -->
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        "actionColor" "#FFCB05"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}

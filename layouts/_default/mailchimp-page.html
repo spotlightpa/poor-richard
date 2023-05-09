@@ -1,9 +1,5 @@
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
 {{ define "extra-head" }}
   {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true }}
   {{ $styles := resources.Get "css/mailchimp.scss" | toCSS $scssOptions | postCSS }}
@@ -13,60 +9,10 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ end }}
 
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ if eq .Params.nav "statecollege" }}
-        {{ partial "tw/nav-sc.html" . }}
-      {{ else }}
-        {{ partial "tw/nav.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      <!-- noop -->
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   <h1 class="sr-only">{{ .Title }}</h1>
   {{ with .Param "blurb" }}<h2 class="sr-only">{{ . }}</h2>{{ end }}
   <div class="raw-content" data-ga-category="content">
     {{ .Param "raw-content" | safeHTML }}
   </div>
-{{ end }}
-
-{{ define "before-footer" }}
-  <!-- noop -->
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}
