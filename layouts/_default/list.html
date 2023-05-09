@@ -1,41 +1,5 @@
-{{ define "title" }}
-  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
-{{ end }}
 {{ define "body-class" }}
   text-[16px] bg-beige font-serif leading-normal text-s-9
-{{ end }}
-
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ if $topperStories := partial "helper/get-picks" "topper" }}
-      <div class=" bg-black">
-        <div class="max-w-screen-lg mx-auto py-12">
-          {{ partial "tw/promo-topperarticle.html" $topperStories }}
-        </div>
-      </div>
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
 {{ end }}
 
 {{ define "main" }}
@@ -87,33 +51,8 @@
     </div>
   </section>
 {{ end }}
-
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
 {{ define "footer" }}
   <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
     {{ partial "tw/footer.html" . }}
   </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}

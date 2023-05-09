@@ -16,27 +16,6 @@
   {{ partial "header/feeds.html" . }}
 {{ end }}
 
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
     <div class="mx-auto max-w-screen-lg">
@@ -301,32 +280,8 @@
     </div>
   </li>
 {{ end }}
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
 {{ define "footer" }}
   <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
     {{ partial "tw/footer.html" . }}
   </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
 {{ end }}
