@@ -27,7 +27,7 @@
     <svg
       class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
     >
-      <use xlink:href="#left-svg"></use>
+      {{ partial "helper/svg.html" "left" }}
     </svg>
   </div>
   <div
@@ -40,7 +40,7 @@
     <svg
       class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
     >
-      <use xlink:href="#right-svg"></use>
+      {{ partial "helper/svg.html" "right" }}
     </svg>
   </div>
   <span id="{{ $id }}" class="sr-only">Story continues below…</span>

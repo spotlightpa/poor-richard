@@ -99,7 +99,7 @@
               class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
             >
               <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
-                <use xlink:href="#user-svg"></use>
+                {{ partial "helper/svg.html" "user" }}
               </svg>
             </span>
           </p>
@@ -119,7 +119,7 @@
               class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
             >
               <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
-                <use xlink:href="#email-svg"></use>
+                {{ partial "helper/svg.html" "email" }}
               </svg>
             </span>
           </p>
@@ -154,7 +154,7 @@
                   aria-hidden="true"
                 >
                   <svg class="h-4 w-4 fill-s-5">
-                    <use xlink:href="#chevron-svg"></use>
+                    {{ partial "helper/svg.html" "chevron" }}
                   </svg>
                 </span>
               </div>
