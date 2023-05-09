@@ -1,17 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-05-08-SPLHEALTHBUDGET0508.md"
+    "content/news/2023-05-09-SPLCOMMANA.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-04-SPLREBBOOST.md",
-    "content/news/2023-04-26-SPLPUBDEF.md",
-    "content/statecollege/2023-04-24-SPLPSUBUD.md",
-    "content/statecollege/2023-04-17-SPLCOUBU.md"
+    "content/elections.md",
+    "content/news/2023-05-03-SPLREG03.md"
   ],
   "topSlots": [
+    "content/news/2023-05-08-SPLHEALTHBUDGET0508.md",
     "content/statecollege/2023-05-06-SPLPSUEMAIL.md",
-    "content/news/2023-05-04-SPLNEWSQUIZMAY4.md",
-    "content/statecollege/2023-05-04-SPLPSUJOBS.md"
+    "content/news/2023-05-04-SPLREBBOOST.md"
   ],
   "topper": []
 }
