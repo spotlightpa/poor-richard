@@ -13,7 +13,7 @@
     data-ga-action="share:email"
   >
     <svg class="h-4 w-4 fill-current">
-      <use xlink:href="#email-svg"></use>
+      {{ partial "helper/svg.html" "email" }}
     </svg>
   </a>
   <a
@@ -23,7 +23,7 @@
     title="Share this page on Facebook"
   >
     <svg class="h-4 w-4 fill-current">
-      <use xlink:href="#fb-svg"></use>
+      {{ partial "helper/svg.html" "fb" }}
     </svg>
   </a>
   <a
@@ -33,7 +33,7 @@
     title="Tweet about this page"
   >
     <svg class="h-4 w-4 fill-current">
-      <use xlink:href="#twitter-svg"></use>
+      {{ partial "helper/svg.html" "twitter" }}
     </svg>
   </a>
   <button
@@ -47,7 +47,7 @@
     x-cloak
   >
     <svg class="h-4 w-4 fill-current">
-      <use xlink:href="#share-svg"></use>
+      {{ partial "helper/svg.html" "share" }}
     </svg>
   </button>
 </nav>

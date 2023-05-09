@@ -17,7 +17,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <desc>Paper plane</desc>
-          <use href="#paper-plane-svg"></use>
+          {{ partial "helper/svg.html" "paper-plane" }}
         </svg>
       </a>
     </div>
@@ -45,7 +45,7 @@
         @click.prevent="$dispatch('modal:search:open')"
       >
         <svg class="h-4 w-4 fill-current">
-          <use href="#search-svg"></use>
+          {{ partial "helper/svg.html" "search" }}
         </svg>
       </a>
       <a
@@ -54,7 +54,7 @@
         href="/donate"
       >
         <svg class="h-3 w-3 fill-current" aria-hidden="true">
-          <use href="#heart-svg"></use>
+          {{ partial "helper/svg.html" "heart" }}
         </svg>
         <span
           class="ml-2 whitespace-nowrap font-semibold uppercase tracking-wide"
