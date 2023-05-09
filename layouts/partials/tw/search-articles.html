@@ -31,7 +31,7 @@
           aria-label="Search"
           class="h-4 w-4 fill-current"
         >
-          <use xlink:href="#search-svg"></use>
+          {{ partial "helper/svg.html" "search" }}
         </svg>
         <svg
           x-cloak
@@ -39,7 +39,7 @@
           x-show="isLoading"
           class="h-4 w-4 animate-spin fill-current"
         >
-          <use xlink:href="#spinner-svg"></use>
+          {{ partial "helper/svg.html" "spinner" }}
         </svg>
       </button>
     </div>

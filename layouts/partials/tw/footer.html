@@ -12,7 +12,7 @@
         <svg class="aspect-[16/3] w-full fill-current">
           <title>Home</title>
           <desc>Spotlight PA logo</desc>
-          <use href="#banner-svg"></use>
+          {{ partial "helper/svg.html" "banner" }}
         </svg>
       </a>
       <a
@@ -28,7 +28,7 @@
           class="mr-2 h-4 w-4 fill-current sm:h-6 sm:w-6 md:mr-6 md:h-9 md:w-9"
           aria-hidden="true"
         >
-          <use href="#heart-svg"></use>
+          {{ partial "helper/svg.html" "heart" }}
         </svg>
         Support<span class="hidden sm:inline"> Us</span>
       </a>
@@ -74,7 +74,7 @@
           class="absolute right-4 flex h-14 w-6 items-center fill-s-4 sm:relative sm:-ml-9 sm:h-8 sm:w-8"
         >
           <svg viewBox="0 0 1 1">
-            <use xlink:href="#email-svg"></use>
+            {{ partial "helper/svg.html" "email" }}
           </svg>
         </span>
 
@@ -235,7 +235,7 @@
               class="mr-1 h-4 w-4 fill-current"
               aria-labelledby="{{ $linkID }}"
             >
-              <use xlink:href="{{ . }}"></use>
+              {{ partial "helper/svg.html" . }}
             </svg>
           {{ end }}
           <span id="{{ $linkID }}" class="hidden md:inline">{{ .Name }}</span>

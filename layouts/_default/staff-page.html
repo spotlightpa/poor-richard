@@ -173,7 +173,7 @@
             viewBox="0 0 1 1"
             aria-hidden="true"
           >
-            <use xlink:href="#user-svg"></use>
+            {{ partial "helper/svg.html" "user" }}
           </svg>
         </span>
       </a>
@@ -209,7 +209,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
-                  <use xlink:href="#email-svg"></use>
+                  {{ partial "helper/svg.html" "email" }}
                 </svg>
               </span>
               Email:
@@ -231,7 +231,7 @@
             <dt class="inline-flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
-                  <use xlink:href="#twitter-svg"></use>
+                  {{ partial "helper/svg.html" "twitter" }}
                 </svg>
               </span>
               Twitter:
@@ -253,7 +253,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
-                  <use xlink:href="#phone-svg"></use>
+                  {{ partial "helper/svg.html" "phone" }}
                 </svg>
               </span>
               Telephone:
@@ -273,7 +273,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
-                  <use xlink:href="#chat-svg"></use>
+                  {{ partial "helper/svg.html" "chat" }}
                 </svg>
               </span>
               Signal:
@@ -329,22 +329,4 @@
 
 {{ define "search-modal" }}
   {{ partial "tw/modal-search.html" . }}
-{{ end }}
-
-{{ define "extra-footer" }}
-  {{ $svgs := dict
-    "phone-svg" "@fontawesome/solid/phone.svg"
-    "chat-svg" "@fontawesome/solid/comment.svg"
-    "user-svg" "@fontawesome/solid/user.svg"
-    "email-svg" "@fontawesome/regular/envelope.svg"
-    "fb-svg" "@fontawesome/brands/facebook-f.svg"
-    "twitter-svg" "@fontawesome/brands/twitter.svg"
-    "apple-svg" "@fontawesome/brands/apple.svg"
-    "google-svg" "@fontawesome/brands/google.svg"
-    "heart-svg" "@fontawesome/solid/heart.svg"
-    "ig-svg" "@fontawesome/brands/instagram.svg"
-    "flip-svg" "@fontawesome/brands/flipboard.svg"
-    "gh-svg" "@fontawesome/brands/github.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
 {{ end }}
