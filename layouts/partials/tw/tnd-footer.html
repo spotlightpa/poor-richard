@@ -10,7 +10,7 @@
     >
       {{ with .Params.icon }}
         <svg class="mr-1 h-4 w-4 fill-current">
-          <use xlink:href="{{ . }}"></use>
+          {{ partial "helper/svg.html" . }}
         </svg>
       {{ end }}
       <span>{{ .Name }}</span>
@@ -30,7 +30,7 @@
           <svg class="aspect-[16/3] w-full fill-current">
             <title>Home</title>
             <desc>Spotlight PA logo</desc>
-            <use href="#banner-svg"></use>
+            {{ partial "helper/svg.html" "banner" }}
           </svg>
         </a>
         <a
@@ -39,7 +39,7 @@
           href="/donate"
         >
           <svg class="h-5 w-5 fill-current" aria-hidden="true">
-            <use href="#heart-svg"></use>
+            {{ partial "helper/svg.html" "heart" }}
           </svg>
           <span
             class="ml-2 whitespace-nowrap font-semibold uppercase tracking-wide"
@@ -84,7 +84,7 @@
             aria-hidden="true"
           >
             <svg class="h-6 w-6 fill-current">
-              <use xlink:href="#email-svg"></use>
+              {{ partial "helper/svg.html" "email" }}
             </svg>
           </span>
         </div>
