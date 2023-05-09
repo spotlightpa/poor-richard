@@ -4,11 +4,10 @@
   {{ $hiddenField := .hiddenField }}
   {{ $hed := .hed }}
   {{ $cta := .cta }}
-  {{ $dot := . }}
 
-  {{ $idFname := partial "helper/new-id" $dot }}
-  {{ $idLname := partial "helper/new-id" $dot }}
-  {{ $idEmail := partial "helper/new-id" $dot }}
+  {{ $idFname := partial "helper/new-id" . }}
+  {{ $idLname := partial "helper/new-id" . }}
+  {{ $idEmail := partial "helper/new-id" . }}
 
 
   <section class=" bg-s-3" data-ga-category="inline">
