@@ -36,7 +36,7 @@ His beliefs about elections have led him to a new phase in his journey: running 
 
 In Butler, like many other parts of the state, the officials who hold the position make critical decisions shaping how elections are run and the access voters have to the ballot box.
 
-In an in-depth review, Votebeat and Spotlight PA found that Scherer is one of dozens of commissioner candidates in the May 16 primary holding these beliefs or giving them lip service. At least 26 people running for county commissioner have directly said the 2020 election was stolen from former President Donald Trump, that the outcome was affected by voter fraud, or otherwise said there is a conspiracy to manipulate elections.
+In an in-depth review, Votebeat and Spotlight PA found that Scherer is one of dozens of commissioner candidates in the May 16 primary holding these beliefs or giving them lip service. At least 26 people running for county commissioner or city council have directly said the 2020 election was stolen from former President Donald Trump, that the outcome was affected by voter fraud, or otherwise said there is a conspiracy to manipulate elections.
 
 The review included searching more than 400 candidates’ social media posts, campaign materials, and other public statements. Votebeat and Spotlight PA also sent a two-question email survey to as many candidates as could be reached, and spoke to others by phone. That survey asked “1) Did President Joe Biden legitimately win the 2020 election? 2) Are Pennsylvania elections secure against significant fraud or manipulation?”
 
