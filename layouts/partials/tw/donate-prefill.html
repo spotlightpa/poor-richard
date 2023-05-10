@@ -11,47 +11,9 @@
 <div
   data-ga-category="donate-prefill"
   class="no-js:hidden rounded border border-s-4 p-6 font-sans shadow"
-  x-data="{
-    active: '{{ $activeClass }}',
-    inactive: '{{ $inactiveClass }}',
-    buildClass(cs, val) {
-      return Object.fromEntries(cs.split(/ /).map(c=>[c, val]));
-    },
-    init() {
-      this.activeClasses = {
-        ...this.buildClass(this.active, true),
-        ...this.buildClass(this.inactive, false),
-      }
-      this.inactiveClasses = {
-        ...this.buildClass(this.active, false),
-        ...this.buildClass(this.inactive, true),
-      }
-    },
-    amount: '15',
-    freq: 'm',
-    showOther: false,
-    btnClass(cond) {
-      return cond? this.activeClasses : this.inactiveClasses;
-    },
-    setAmt(freq, amount) {
-      this.freq = freq;
-      this.amount = amount;
-      this.showOther = false;
-    },
-    get donateURL() {
-      let campaign = this.$el.
-        closest('[data-sf-campaign]')?.dataset.sfCampaign ||
-        '701Dn000000YgouIAC';
-      let theme =  this.$el.
-        closest('[data-sf-theme]')?.dataset.sfTheme || '';
-      let period = {
-        o: 'once',
-        m: 'monthly',
-        y: 'yearly',
-      }[this.freq];
-      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&&amount=${this.amount}&installmentPeriod=${period}&utm_source=spotlightpa.org&utm_medium=elections&utm_campaign=donate-prefill`;
-    }
-  }"
+  data-active="{{ $activeClass }}"
+  data-inactive="{{ $inactiveClass }}"
+  x-data="prefill"
 >
   <div>
     <h2 class="font-bold uppercase text-red">{{ $eyebrow }}</h2>
