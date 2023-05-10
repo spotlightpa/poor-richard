@@ -37,9 +37,3 @@
     {{ .Content }}
   </article>
 {{ end }}
-
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
