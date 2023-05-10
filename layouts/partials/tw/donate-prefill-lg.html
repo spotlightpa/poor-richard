@@ -18,50 +18,13 @@
 {{ $donateDefault := int $donateFirst }}
 <div class="{{ $wrapperClass }} box-content bg-blue px-4 py-14 md:px-0">
   <div
-    data-ga-category=" {{ $donateGaCategory }}"
+    data-ga-category="{{ $donateGaCategory }}"
     data-donate-campaign="{{ $donateCampaign }}"
     data-donate-theme="{{ $donateTheme }}"
     class="no-js:hidden mx-auto w-full max-w-content"
-    x-data="{
-    active: '{{ $activeClass }}',
-    inactive: '{{ $inactiveClass }}',
-    buildClass(cs, val) {
-      return Object.fromEntries(cs.split(/ /).map(c=>[c, val]));
-    },
-    init() {
-      this.activeClasses = {
-        ...this.buildClass(this.active, true),
-        ...this.buildClass(this.inactive, false),
-      }
-      this.inactiveClasses = {
-        ...this.buildClass(this.active, false),
-        ...this.buildClass(this.inactive, true),
-      }
-    },
-    amount: '{{ $donateDefault }}',
-    freq: 'm',
-    showOther: false,
-    btnClass(cond) {
-      return cond? this.activeClasses : this.inactiveClasses;
-    },
-    setAmt(freq, amount) {
-      this.freq = freq;
-      this.amount = amount;
-      this.showOther = false;
-    },
-    get donateURL() {
-      let campaign = this.$el.
-        closest('[data-donate-campaign]')?.dataset.donateCampaign;
-      let theme =  this.$el.
-        closest('[data-donate-theme]')?.dataset.donateTheme;
-      let period = {
-        o: 'once',
-        m: 'monthly',
-        y: 'yearly',
-      }[this.freq];
-      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&amount=${this.amount}&frequency=${period}&utm_source=spotlightpa.org&utm_campaign=donate-prefill`;
-    }
-  }"
+    data-active="{{ $activeClass }}"
+    data-inactive="{{ $inactiveClass }}"
+    x-data="prefill"
   >
     <div class="flex flex-wrap items-center">
       <h2
