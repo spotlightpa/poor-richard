@@ -67,9 +67,9 @@ Shapiro has listed defending voting access, maintaining abortion rights, and reb
 
 {{<picture src="external/231t8bvt2t22rmtpeskysskpjc.jpeg" description="Lou Barletta started his political career in Hazleton on the city council in 1998 and then as mayor in 2000." caption="Lou Barletta started his political career in Hazleton on the city council in 1998 and then as mayor in 2000." credit="TOM GRALISH / Philadelphia Inquirer">}} 
 
-<b>Lou Barletta</b> | <a href="https://www.loubarletta.com/">Website</a>
+<b>Lou Barletta</b> | <a href="https://web.archive.org/20220401203907/https://www.loubarletta.com/">Website</a>
 
-Barletta started his political career in Hazleton on the city council in 1998 and then as mayor in 2000. In 2010, Barletta was elected to the U.S. House of Representatives, where he served for eight years. He unsuccessfully ran for U.S. Senate in 2018. Without providing specifics, Barletta is running on a <a href="https://www.loubarletta.com/issues">myriad of issues</a> including strengthening the economy, school choice, and oil and natural gas production; limiting access to abortion; and addressing “illegal immigration.”
+Barletta started his political career in Hazleton on the city council in 1998 and then as mayor in 2000. In 2010, Barletta was elected to the U.S. House of Representatives, where he served for eight years. He unsuccessfully ran for U.S. Senate in 2018. Without providing specifics, Barletta is running on a <a href="https://web.archive.org/20220403180429/https://www.loubarletta.com/issues">myriad of issues</a> including strengthening the economy, school choice, and oil and natural gas production; limiting access to abortion; and addressing “illegal immigration.”
 
 <b>Supports repealing Pa.’s no-excuse mail voting law?</b> Yes. Barletta has called Act 77 “unconstitutional” and believes the state needs signature verification and stricter voter ID requirements. During Republican attempts to overturn the results of the 2020 election, Barletta was included on a <a href="https://lancasteronline.com/news/politics/pa-republicans-hedged-language-may-have-saved-them-from-prosecution-over-electoral-vote-scheme/article_849d4f7e-7589-11ec-8881-6383a823557d.html">list of alternate Republican electors for Trump</a>.
 
