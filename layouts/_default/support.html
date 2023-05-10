@@ -4,18 +4,6 @@
 {{ define "html-class" -}}
   scroll-smooth
 {{- end }}
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-
-  {{ partial "header/favicons.html" . }}
-  {{ partial "header/feeds.html" . }}
-{{ end }}
 
 {{ define "main" }}
   <header class="bg-s-0 pt-8 md:pb-4 px-3 text-black">

@@ -2,20 +2,6 @@
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partial "header/static-tw.html" . }}
-  {{ partialCached "header/noscript.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-
-  {{ partial "header/favicons.html" . }}
-  {{ partial "header/feeds.html" . }}
-{{ end }}
-
 {{ define "main" }}
   <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
     <div class="mx-auto max-w-screen-lg">
