@@ -4,18 +4,10 @@
 {{ define "html-class" -}}
   scroll-smooth
 {{- end }}
+
 {{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
   {{ partial "header/css-tw-rale.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-
-  {{ partial "header/favicons.html" . }}
-  {{ partial "header/feeds.html" . }}
+  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
 {{ define "main" }}
