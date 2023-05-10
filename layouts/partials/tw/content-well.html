@@ -1,22 +1,14 @@
 {{ with .Content }}
   <div class="mx-auto w-full max-w-prose">
     <div class="mt-6" data-ga-category="content">
-      <div
-        x-data
-        x-intersect.once="$report({ target: $el })"
-        data-ga-action="view:content-start"
-      ></div>
+      {{ partial "js/view-trigger.html" "content-start" }}
       <div
         class="article-content w-full overflow-hidden leading-relaxed"
         data-sf-campaign="701Dn000000YgozIAC"
       >
         {{ . }}
       </div>
-      <div
-        x-data
-        x-intersect.once="$report({ target: $el })"
-        data-ga-action="view:content-finish"
-      ></div>
+      {{ partial "js/view-trigger.html" "content-finish" }}
     </div>
   </div>
 {{ end }}

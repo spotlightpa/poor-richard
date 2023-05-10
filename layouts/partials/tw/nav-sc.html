@@ -134,8 +134,4 @@
     </div>
   </div>
 </nav>
-<div
-  x-data
-  x-intersect.once="$report({ target: $el })"
-  data-ga-action="view:nav"
-></div>
+{{ partial "js/view-trigger.html" "nav" }}
