@@ -1,41 +1,5 @@
-{{ define "title" }}
-  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
-{{ end }}
 {{ define "body-class" }}
   text-[16px] bg-beige font-serif leading-normal text-s-9
-{{ end }}
-
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ if $topperStories := partial "helper/get-picks" "topper" }}
-      <div class=" bg-black">
-        <div class="max-w-screen-lg mx-auto py-12">
-          {{ partial "tw/promo-topperarticle.html" $topperStories }}
-        </div>
-      </div>
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
 {{ end }}
 
 {{ define "main" }}
@@ -86,59 +50,4 @@
       {{ partial "tw/paginator-level.html" .Paginator }}
     </div>
   </section>
-{{ end }}
-
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
-{{ end }}
-
-{{ define "svg-resources" }}
-  {{ $svgs := dict
-    "banner-svg" "/img/logos/banner-default-on-trans.svg"
-    "bars-svg" "@fontawesome/solid/bars.svg"
-    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
-    "close-svg" "@fontawesome/solid/circle-xmark.svg"
-    "email-svg" "@fontawesome/regular/envelope.svg"
-    "fb-svg" "@fontawesome/brands/facebook-f.svg"
-    "logo-svg" "/img/logos/circle-default-on-trans.svg"
-    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
-    "share-svg" "@fontawesome/solid/share.svg"
-    "spinner-svg" "@fontawesome/solid/spinner.svg"
-    "times-svg" "@fontawesome/solid/xmark.svg"
-    "twitter-svg" "@fontawesome/brands/twitter.svg"
-    "apple-svg" "@fontawesome/brands/apple.svg"
-    "google-svg" "@fontawesome/brands/google.svg"
-    "heart-svg" "@fontawesome/solid/heart.svg"
-    "ig-svg" "@fontawesome/brands/instagram.svg"
-    "flip-svg" "@fontawesome/brands/flipboard.svg"
-    "gh-svg" "@fontawesome/brands/github.svg"
-    "chevron-svg" "@fontawesome/solid/chevron-down.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

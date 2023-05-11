@@ -9,28 +9,6 @@
   {{ partial "header/css-tw-rale.html" . }}
   {{ partialCached "header/static-tw.html" . }}
 {{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partial "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
   <section class=" bg-s-0 py-14 px-5 text-lg font-medium lg:px-0">
@@ -89,7 +67,7 @@
                 viewBox="0 0 1 1"
                 aria-hidden="true"
               >
-                <use xlink:href="#user-svg"></use>
+                {{ partial "helper/svg.html" "user" }}
               </svg>
             </span>
           </a>
@@ -126,7 +104,7 @@
               <dt class="flex-0 mr-2 flex items-center">
                 <span class=" mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
-                    <use xlink:href="#email-svg"></use>
+                    {{ partial "helper/svg.html" "email" }}
                   </svg>
                 </span>
                 Email:
@@ -146,7 +124,7 @@
               <dt class="flex-0 mr-2 flex items-center">
                 <span class=" mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
-                    <use xlink:href="#twitter-svg"></use>
+                    {{ partial "helper/svg.html" "twitter" }}
                   </svg>
                 </span>
                 Twitter:
@@ -166,7 +144,7 @@
               <dt class="flex-0 mr-2 flex items-center">
                 <span class=" mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
-                    <use xlink:href="#phone-svg"></use>
+                    {{ partial "helper/svg.html" "phone" }}
                   </svg>
                 </span>
                 Telephone:
@@ -184,7 +162,7 @@
               <dt class="flex-0 mr-2 flex items-center">
                 <span class=" mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
-                    <use xlink:href="#chat-svg"></use>
+                    {{ partial "helper/svg.html" "chat" }}
                   </svg>
                 </span>
                 Signal:
@@ -235,66 +213,4 @@
       {{ partial "tw/paginator-level.html" .Paginator }}
     </div>
   </section>
-{{ end }}
-
-{{ define "extra-main" }}
-{{ end }}
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
-{{ end }}
-
-{{ define "extra-footer" }}
-  {{ $svgs := dict
-    "banner-state-college-svg" "/img/logos/banner-state-college.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
-{{ end }}
-{{ define "svg-resources" }}
-  {{ $svgs := dict
-    "banner-svg" "/img/logos/banner-default-on-trans.svg"
-    "close-svg" "@fontawesome/solid/circle-xmark.svg"
-    "email-svg" "@fontawesome/regular/envelope.svg"
-    "phone-svg" "@fontawesome/solid/phone.svg"
-    "chat-svg" "@fontawesome/solid/comment.svg"
-    "user-svg" "@fontawesome/solid/user.svg"
-    "fb-svg" "@fontawesome/brands/facebook-f.svg"
-    "share-svg" "@fontawesome/solid/share.svg"
-    "spinner-svg" "@fontawesome/solid/spinner.svg"
-    "times-svg" "@fontawesome/solid/xmark.svg"
-    "twitter-svg" "@fontawesome/brands/twitter.svg"
-    "apple-svg" "@fontawesome/brands/apple.svg"
-    "google-svg" "@fontawesome/brands/google.svg"
-    "heart-svg" "@fontawesome/solid/heart.svg"
-    "ig-svg" "@fontawesome/brands/instagram.svg"
-    "flip-svg" "@fontawesome/brands/flipboard.svg"
-    "gh-svg" "@fontawesome/brands/github.svg"
-    "chevron-svg" "@fontawesome/solid/chevron-down.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

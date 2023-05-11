@@ -8,6 +8,7 @@ import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
+import prefill from "../enhancements/prefill.js";
 import readmore from "../enhancements/read-more.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
 import searchArticles from "../enhancements/search-articles.js";
@@ -21,6 +22,7 @@ for (let [name, comp] of [
   ["imageRotator", imageRotator],
   ["modal", modal],
   ["mostPopular", mostPopular],
+  ["prefill", prefill],
   ["readmore", readmore],
   ["searchArticles", searchArticles],
   ["searchModal", searchModal],

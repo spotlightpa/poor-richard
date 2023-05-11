@@ -27,21 +27,17 @@
               <q class="inline before:content-[''] after:content-['']">
                 <svg
                   class="-mt-4 inline-block h-10  w-10 fill-blue md:-mt-6 md:-ml-11 md:h-14 md:w-14"
+                  aria-label="Quote"
                 >
-                  <use
-                    href="#openquote-svg"
-                    aria-label="Spotlight PA logo"
-                  ></use>
+                  {{ partial "helper/svg.html" "openquote" }}
                 </svg>
 
                 {{ $featuredQuote | markdownify }}
                 <svg
                   class="-mr-5 -mb-1 inline-block h-10 w-10 fill-blue md:-mr-11 md:h-14 md:w-14"
+                  aria-label="Unquote"
                 >
-                  <use
-                    href="#closequote-svg"
-                    aria-label="Spotlight PA logo"
-                  ></use>
+                  {{ partial "helper/svg.html" "closequote" }}
                 </svg>
               </q>
             </p>

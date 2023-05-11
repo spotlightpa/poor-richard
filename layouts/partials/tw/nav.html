@@ -12,7 +12,7 @@
         <svg class="site-nav:logo-svg">
           <title>Home</title>
           <desc>Spotlight PA logo</desc>
-          <use href="#banner-svg"></use>
+          {{ partial "helper/svg.html" "banner" }}
         </svg>
       </a>
       <div class="site-nav:desktop" data-ga-category="desktop">
@@ -30,7 +30,7 @@
           @click.prevent="$dispatch('modal:search:open')"
         >
           <svg class="site-nav:svg-icon" aria-label="Search">
-            <use href="#search-svg"></use>
+            {{ partial "helper/svg.html" "search" }}
           </svg>
         </a>
         <a
@@ -44,9 +44,7 @@
             aria-hidden="true"
             style="top: 1px; margin-right: 2px"
           >
-            <path
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-            />
+            {{ partial "helper/svg.html" "heart" }}
           </svg>
           Support Us
         </a>
@@ -62,7 +60,7 @@
           <a class="no-js:block" href="#footer">
             <svg class="site-nav:svg-icon">
               <title>Footer Menu</title>
-              <use href="#bars-svg"></use>
+              {{ partial "helper/svg.html" "bars" }}
             </svg>
           </a>
           <button
@@ -78,7 +76,7 @@
           >
             <svg class="site-nav:svg-icon">
               <title>Site Menu</title>
-              <use href="#bars-svg"></use>
+              {{ partial "helper/svg.html" "bars" }}
             </svg>
           </button>
 
@@ -104,7 +102,7 @@
                   viewBox="0 0 20 20"
                   aria-hidden="true"
                 >
-                  <use href="#logo-svg"></use>
+                  {{ partial "helper/svg.html" "logo" }}
                 </svg>
                 Support Us
               </a>
@@ -135,8 +133,4 @@
     </div>
   </div>
 </nav>
-<div
-  x-data
-  x-intersect.once="$report({ target: $el })"
-  data-ga-action="view:nav"
-></div>
+{{ partial "js/view-trigger.html" "nav" }}

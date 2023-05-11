@@ -4,29 +4,10 @@
 {{ define "html-class" -}}
   scroll-smooth
 {{- end }}
+
 {{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
   {{ partial "header/css-tw-rale.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-
-  {{ partial "header/favicons.html" . }}
-  {{ partial "header/feeds.html" . }}
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
+  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
 {{ define "main" }}
@@ -106,54 +87,4 @@
     }}
   {{ end }}
 
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701f4000000TVuIAAW">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
-{{ end }}
-
-{{ define "svg-resources" }}
-  {{ $svgs := dict
-    "leaders-in-action" "/img/logos/leaders-in-action.svg"
-    "banner-svg" "/img/logos/banner-default-on-trans.svg"
-    "bars-svg" "@fontawesome/solid/bars.svg"
-    "calendar-svg" "@fontawesome/regular/calendar-check.svg"
-    "chevron-svg" "@fontawesome/solid/chevron-down.svg"
-    "close-svg" "@fontawesome/solid/circle-xmark.svg"
-    "email-svg" "@fontawesome/regular/envelope.svg"
-    "fb-svg" "@fontawesome/brands/facebook-f.svg"
-    "logo-svg" "/img/logos/circle-default-on-trans.svg"
-    "search-svg" "@fontawesome/solid/magnifying-glass.svg"
-    "share-svg" "@fontawesome/solid/share.svg"
-    "spinner-svg" "@fontawesome/solid/spinner.svg"
-    "times-svg" "@fontawesome/solid/xmark.svg"
-    "twitter-svg" "@fontawesome/brands/twitter.svg"
-    "ticket-svg" "/img/icons/ticket-stub.svg"
-    "right-svg" "@fontawesome/solid/circle-arrow-right.svg"
-    "left-svg" "@fontawesome/solid/circle-arrow-left.svg"
-    "openquote-svg" "/img/icons/open-quotations.svg"
-    "closequote-svg" "/img/icons/close-quotations.svg"
-    "user-svg" "@fontawesome/solid/user.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

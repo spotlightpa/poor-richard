@@ -2,41 +2,6 @@
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partial "header/static-tw.html" . }}
-  {{ partialCached "header/noscript.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-
-  {{ partial "header/favicons.html" . }}
-  {{ partial "header/feeds.html" . }}
-{{ end }}
-
-{{ define "header" }}
-  <header data-ga-category="header">
-    {{ block "nav" . }}
-      {{ partialCached "tw/nav.html" . }}
-    {{ end }}
-    {{ block "banner" . }}
-      {{ if .Param "banner-active" }}
-        {{ partialCached "tw/banner.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
-    {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" . }}
-    {{ end }}
-  </header>
-{{ end }}
-
 {{ define "main" }}
   <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
     <div class="mx-auto max-w-screen-lg">
@@ -173,7 +138,7 @@
             viewBox="0 0 1 1"
             aria-hidden="true"
           >
-            <use xlink:href="#user-svg"></use>
+            {{ partial "helper/svg.html" "user" }}
           </svg>
         </span>
       </a>
@@ -209,7 +174,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
-                  <use xlink:href="#email-svg"></use>
+                  {{ partial "helper/svg.html" "email" }}
                 </svg>
               </span>
               Email:
@@ -231,7 +196,7 @@
             <dt class="inline-flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
-                  <use xlink:href="#twitter-svg"></use>
+                  {{ partial "helper/svg.html" "twitter" }}
                 </svg>
               </span>
               Twitter:
@@ -253,7 +218,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
-                  <use xlink:href="#phone-svg"></use>
+                  {{ partial "helper/svg.html" "phone" }}
                 </svg>
               </span>
               Telephone:
@@ -273,7 +238,7 @@
             <dt class="flex items-center">
               <span class=" mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
-                  <use xlink:href="#chat-svg"></use>
+                  {{ partial "helper/svg.html" "chat" }}
                 </svg>
               </span>
               Signal:
@@ -300,51 +265,4 @@
       {{ $author.content|markdownify }}
     </div>
   </li>
-{{ end }}
-{{ define "before-footer" }}
-  {{ partialCached "tw/promo-footer.html" (dict
-    "wrapperClass" "bg-white pt-2 pb-14 no-js:hidden")
-  }}
-{{ end }}
-
-{{ define "footer" }}
-  <div id="footer" data-sf-campaign="701Dn000000YgovIAC">
-    {{ partial "tw/footer.html" . }}
-  </div>
-{{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partialCached "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-ribbon.html" ( dict
-        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
-        )
-      }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ define "search-modal" }}
-  {{ partial "tw/modal-search.html" . }}
-{{ end }}
-
-{{ define "extra-footer" }}
-  {{ $svgs := dict
-    "phone-svg" "@fontawesome/solid/phone.svg"
-    "chat-svg" "@fontawesome/solid/comment.svg"
-    "user-svg" "@fontawesome/solid/user.svg"
-    "email-svg" "@fontawesome/regular/envelope.svg"
-    "fb-svg" "@fontawesome/brands/facebook-f.svg"
-    "twitter-svg" "@fontawesome/brands/twitter.svg"
-    "apple-svg" "@fontawesome/brands/apple.svg"
-    "google-svg" "@fontawesome/brands/google.svg"
-    "heart-svg" "@fontawesome/solid/heart.svg"
-    "ig-svg" "@fontawesome/brands/instagram.svg"
-    "flip-svg" "@fontawesome/brands/flipboard.svg"
-    "gh-svg" "@fontawesome/brands/github.svg"
-  }}
-  {{ partial "header/svgs.html" $svgs }}
 {{ end }}

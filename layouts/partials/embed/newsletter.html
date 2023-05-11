@@ -57,7 +57,7 @@
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">
-          <use xlink:href="#email-svg"></use>
+          {{ partial "helper/svg.html" "email" }}
         </svg>
       </span>
     </p>
@@ -127,8 +127,11 @@
   </div>
   <div class="mt-10 mb-4 mr-3 text-right text-s-9 md:mt-4">
     <a href="/" target="_blank">
-      <svg class="inline-block h-8 w-48 fill-current">
-        <use href="#banner-svg" aria-label="Spotlight PA logo"></use>
+      <svg
+        class="inline-block h-8 w-48 fill-current"
+        aria-label="Spotlight PA logo"
+      >
+        {{ partial "helper/svg.html" "banner" }}
       </svg>
     </a>
   </div>
