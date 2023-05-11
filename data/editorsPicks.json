@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-05-10-SPLLASTPRIMGU.md"
+    "content/news/2023-05-11-SPLWELLS11.md"
   ],
   "subfeatures": [
-    "content/elections.md",
-    "content/news/2023-05-03-SPLREG03.md"
+    "content/news/2023-02-10-SPLSHAPIRO09.md",
+    "content/news/2022-11-03-SPLCREDITSIGN.md"
   ],
   "topSlots": [
-    "content/news/2023-05-09-SPLCOMMANA.md",
-    "content/news/2023-05-08-SPLHEALTHBUDGET0508.md",
-    "content/statecollege/2023-05-10-SPLCENTREGIVES.md"
+    "content/news/2023-05-12-SPLMARIJDOC0512.md",
+    "content/elections.md",
+    "content/news/2023-05-09-SPLCOMMANA.md"
   ],
   "topper": []
 }
