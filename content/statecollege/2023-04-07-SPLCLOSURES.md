@@ -40,7 +40,7 @@ When it comes to shutting down schools, officials often don’t have much of a c
 
 In 2012, the Clearfield Area School District Board of Directors voted to close Girard-Goshen Elementary School after it had been temporarily shut down in 2010 because of abnormalities in the roof structure, which put students’ safety at risk, then-district Superintendent Thomas B. Otto said in a letter to the state Department of Education.
 
-Although the school was not particularly old at the time — <a href="https://www.theprogressnews.com/news/former-girard-goshen-elementary-to-become-dementia-care-village/article_3e796c62-57af-5689-be01-0c8fcec4b322.html">it was reportedly built in 2002</a> — it would have cost $1.5 million to repair the roof for the 66 students enrolled there. The superintendent wrote a shortfall in district revenue played a role in the decision to shut down the school.
+Although the school was not particularly old at the time — <a href="https://web.archive.org/20230414135419/https://www.theprogressnews.com/news/former-girard-goshen-elementary-to-become-dementia-care-village/article_3e796c62-57af-5689-be01-0c8fcec4b322.html">it was reportedly built in 2002</a> — it would have cost $1.5 million to repair the roof for the 66 students enrolled there. The superintendent wrote a shortfall in district revenue played a role in the decision to shut down the school.
 
 “I think that’s the position that a lot of rural schools are in,” said Kai Schafft, the director of Penn State’s Center on Rural Education and Communities. “They just don’t have a whole lot of financial wiggle room.”
 
