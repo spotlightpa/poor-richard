@@ -2,10 +2,10 @@
   "items": [
     {
       "backgroundColor": "#ffcb03",
-      "label": "RSVP NOW",
-      "labelColor": "#FFFFFF",
+      "label": "Editor’s Pick",
+      "labelColor": "",
       "linkColor": "#000000",
-      "page": "content/news/2023-04-05-SPLCOEV.md"
+      "page": "content/news/2023-05-09-SPLOPIOD525.md"
     },
     {
       "backgroundColor": "#f5f5f5",
