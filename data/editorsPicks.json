@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-05-15-SPLVOTECO23.md"
+    "content/news/2023-05-16-SPLELEXDAYGU.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-10-SPLLASTPRIMGU.md",
-    "content/news/2023-05-09-SPLCOMMANA.md",
+    "content/news/2023-05-15-SPLVOTECO23.md",
     "content/elections.md"
   ],
   "topSlots": [
-    "content/news/2023-05-12-SPLMARIJDOC0512.md",
-    "content/news/2023-05-11-SPLNEWSQUIZMAY11.md",
-    "content/news/2023-05-11-SPLWELLS11.md"
+    "content/news/2023-05-03-SPLREG03.md",
+    "content/news/2023-04-13-SPLVETGU.md",
+    "content/news/2023-03-23-SPLSCGU.md"
   ],
   "topper": []
 }
