@@ -30,11 +30,9 @@ The Associated Press called the race for McCaffery around 9:30 p.m. and for Carl
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-In the lower appellate court races, just one contested primary had yet to be called by the AP as of 11:30 p.m.: the Democratic race for Commonwealth Court. 
+In the lower appellate court races, Philadelphia Democrat Matt Wolf will run against Cumberland County Republican Megan Martin in the Nov. 7 general election for a seat on Commonwealth Court, which handles cases involving local governments, Pennsylvania agencies, and the state itself.
 
-The AP earlier in the evening declared Cumberland County Republican Megan Martin the winner of the Republican primary for Commonwealth Court, which handles cases involving local governments, Pennsylvania agencies, and the state itself.
-
-For two seats on Superior Court, Democrats Jill Beck of Allegheny County and Timika Lane of Philadelphia will go up against Republicans Maria Battista of Clarion County and Harry Smail of Westmoreland County. Superior Court handles civil cases not related to governments, as well as criminal cases.
+And Democrats Jill Beck of Allegheny County and Timika Lane of Philadelphia will go up against Republicans Maria Battista of Clarion County and Harry Smail of Westmoreland County for two seats on Superior Court, which handles civil cases not related to governments, as well as criminal cases.
 
 The eventual winners of these races will have a major impact on politics and policy in Pennsylvania.
 
