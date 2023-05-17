@@ -1,10 +1,8 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-05-03-SPLWILDS.md"
+    "content/statecollege/2023-05-17-SPLMAP.md"
   ],
-  "subfeatures": [
-    "content/news/2021-12-02-SPLWILDS03.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
     "content/statecollege/2023-05-06-SPLPSUEMAIL.md",
     "content/statecollege/2023-05-04-SPLPSUJOBS.md",
