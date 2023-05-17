@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-05-16-SPLCOURTRES.md"
+    "content/statecollege/2023-05-17-SPLMAP.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-09-SPLCOMMANA.md"
+    "content/news/2023-05-08-SPLHEALTHBUDGET0508.md",
+    "content/news/2023-04-26-SPLPUBDEF.md"
   ],
   "topSlots": [
+    "content/news/2023-05-16-SPLCOURTRES.md",
     "content/news/2023-05-12-SPLMARIJDOC0512.md",
-    "content/news/2023-05-11-SPLWELLS11.md",
-    "content/news/2023-05-09-SPLOPIOD525.md"
+    "content/news/2023-05-11-SPLWELLS11.md"
   ],
   "topper": []
 }
