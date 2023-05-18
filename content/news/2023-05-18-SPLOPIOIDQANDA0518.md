@@ -15,7 +15,7 @@ published = 2023-05-18T05:00:00-04:00
 slug = "pa-opioid-settlement-money-explained"
 suppress-date = false
 title = "Pa. opioid settlement money: What you need to know"
-title-tag = "Opioid settlement money in Pennsylvania, explained K"
+title-tag = "Opioid settlement money in Pennsylvania, explained"
 topics = ["Health"]
 +++
 
