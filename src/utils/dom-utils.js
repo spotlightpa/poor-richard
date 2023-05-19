@@ -75,27 +75,6 @@ export function loadDate(name, { useSession = false } = {}) {
   return new Date(date);
 }
 
-export function polyfillClosest() {
-  // Source: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
-  if (!Element.prototype.matches) {
-    Element.prototype.matches =
-      Element.prototype.msMatchesSelector ||
-      Element.prototype.webkitMatchesSelector;
-  }
-
-  if (!Element.prototype.closest) {
-    Element.prototype.closest = function (s) {
-      var el = this;
-
-      do {
-        if (el.matches(s)) return el;
-        el = el.parentElement || el.parentNode;
-      } while (el !== null && el.nodeType === 1);
-      return null;
-    };
-  }
-}
-
 export function onLoad(cb) {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", cb);
