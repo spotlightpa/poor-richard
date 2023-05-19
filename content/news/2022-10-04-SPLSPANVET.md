@@ -87,7 +87,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Nicole Shultz (Partido Keystone de Pensilvania), <a href="https://web.archive.org/20220922103445/https://www.nicoleshultz.com/">Sitio web</a> | <a href="https://www.facebook.com/ShultzforPALtGov">Facebook</a>
 
-- Tim McMaster (L), <a href="https://tim4pa.com/">Sitio web</a> | <a href="https://www.facebook.com/McMasterLtGov2022">Facebook</a>
+- Tim McMaster (L), <a href="https://web.archive.org/20220101115004/https://tim4pa.com">Sitio web</a> | <a href="https://www.facebook.com/McMasterLtGov2022">Facebook</a>
 
 <b>Senado de los Estados Unidos:</b>
 
