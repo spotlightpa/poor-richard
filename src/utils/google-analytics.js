@@ -1,12 +1,5 @@
 import galite from "ga-lite/src/ga-lite.js";
-import {
-  each,
-  on,
-  storeItem,
-  loadItem,
-  polyfillClosest,
-  allClosest,
-} from "./dom-utils.js";
+import { each, on, storeItem, loadItem, allClosest } from "./dom-utils.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -94,8 +87,6 @@ export function reportClick(ev) {
 }
 
 export function addGAListeners() {
-  polyfillClosest();
-
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
   const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
   const onDevSite = !!window.location.host.match(
