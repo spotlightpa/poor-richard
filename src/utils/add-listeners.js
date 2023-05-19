@@ -1,5 +1,4 @@
 import { each, on, onLoad } from "./dom-utils.js";
-import { addSocialButtonListeners } from "./social.js";
 import { addGAListeners } from "./google-analytics.js";
 
 onLoad(() => {
@@ -25,5 +24,4 @@ onLoad(() => {
   });
 
   addGAListeners();
-  addSocialButtonListeners();
 });

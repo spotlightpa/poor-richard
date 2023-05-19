@@ -32,6 +32,10 @@ for (let [name, comp] of [
   Alpine.data(name, comp);
 }
 
+import shareButton from "../enhancements/share-button.js";
+
+Alpine.bind("shareButton", shareButton);
+
 Alpine.directive(
   "rich-text",
   (el, { expression }, { evaluateLater, effect }) => {
