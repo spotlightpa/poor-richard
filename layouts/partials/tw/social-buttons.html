@@ -38,12 +38,12 @@
   </a>
   <button
     class="{{ $btnClass }} bg-orange"
-    data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
+    data-ga-button
     title="More ways to share this page"
     x-data
-    x-show="!! navigator.share"
+    x-bind="shareButton"
     x-cloak
   >
     <svg class="h-4 w-4 fill-current">
