@@ -1,16 +1,7 @@
-import { each, on, onLoad } from "./dom-utils.js";
 import { addGAListeners } from "./google-analytics.js";
+import { on, onLoad } from "./dom-utils.js";
 
 onLoad(() => {
-  on("click", "[data-target]", (ev) => {
-    let targets = ev.currentTarget.dataset.target;
-    let toggleClass = ev.currentTarget.dataset.toggleClass;
-    toggleClass = toggleClass ? toggleClass : "is-active";
-
-    each(targets, (el) => {
-      el.classList.toggle(toggleClass);
-    });
-  });
   on("click", "a[data-gone]", (ev) => {
     ev.preventDefault();
     let url = ev.currentTarget.dataset.gone;
