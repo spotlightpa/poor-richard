@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-05-18-SPLCOLUMBIA.md"
+    "content/statecollege/2023-05-22-SPLSOCIALRTK.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-09-SPLCOMMANA.md",
-    "content/news/2023-04-25-SPLMAIL25.md",
-    "content/news/2023-05-16-SPLCOURTRES.md"
+    "content/statecollege/2023-05-17-SPLMAP.md"
   ],
   "topSlots": [
-    "content/statecollege/2023-05-19-SPLPRIVATEBUD.md",
-    "content/news/2023-05-18-SPLOPIOIDQANDA0518.md",
-    "content/news/2023-05-18-SPLNEWSQUIZMAY18.md"
+    "content/news/2023-05-18-SPLCOLUMBIA.md",
+    "content/news/2023-05-18-SPLNEWSQUIZMAY18.md",
+    "content/news/2023-05-18-SPLOPIOIDQANDA0518.md"
   ],
   "topper": []
 }
