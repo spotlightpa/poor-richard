@@ -1,5 +1,6 @@
 import galite from "ga-lite/src/ga-lite.js";
 import { each, on, storeItem, loadItem, allClosest } from "./dom-utils.js";
+import { recordNewsletterSignup } from "./metrics.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -171,18 +172,14 @@ export function addGAListeners() {
     el.addEventListener(
       "submit",
       () => {
-        let validity = el.reportValidity() ? "submit" : "invalid";
+        let valid = el.reportValidity();
+        if (valid) recordNewsletterSignup();
+        let validity = valid ? "submit" : "invalid";
         let eventAction = `${el.dataset.gaForm}:${validity}`;
         buildAndSend(el, {
           eventAction,
           transport: "beacon",
         });
-        el.dispatchEvent(
-          new CustomEvent("x-form-submit", {
-            detail: eventAction,
-            bubbles: true,
-          })
-        );
       },
       {
         passive: true,
