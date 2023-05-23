@@ -1,4 +1,5 @@
 import { focus, blur } from "../utils/active-element.js";
+import { modalKind } from "../utils/metrics.js";
 import { buildAndSend } from "../utils/google-analytics.js";
 
 export default function sticky() {
@@ -6,11 +7,7 @@ export default function sticky() {
     isOpen: false,
 
     show() {
-      if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
-        // eslint-disable-next-line no-console
-        console.warn("aborting sticky display");
-        return;
-      }
+      if (modalKind !== "sticky") return;
       this.isOpen = true;
       buildAndSend(this.$el, { eventAction: "sticky:open" });
       this.$nextTick(() => focus(this.$refs.close));

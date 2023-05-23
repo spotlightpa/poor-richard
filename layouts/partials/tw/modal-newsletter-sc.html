@@ -9,7 +9,7 @@
   x-show="isOpen"
   x-transition.opacity
   x-trap.noscroll.inert="isOpen"
-  @scroll.window.once.passive="trigger()"
+  @open-sticky.window="show()"
   @click="isOpen = false"
   role="dialog"
   aria-modal="true"
