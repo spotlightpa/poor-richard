@@ -1,12 +1,12 @@
 +++
 arc-id = "6VIMJDYG25DJBDWMNMQHCO36IY"
 authors = ["Danielle Ohl"]
-blurb = "Despite optional searches being more likely for Black and Hispanic drivers, contraband seizures from searches occurred more often for white drivers, according to new report"
+blurb = "Despite optional searches being more likely for Black and Hispanic drivers, contraband seizures from searches occurred more often for white drivers, according to the new report."
 byline = "Danielle Ohl of Spotlight PA"
-description = "The 2022 analysis is the first in more than a decade after State Police ceased collecting traffic stop data in 2012."
-image = "external/vnc0mqbx9fxfp8hqem8hzm5zz8.jpeg"
-image-credit = "Photo illustration Kat Wawrykow / Getty Images"
-image-description = "Photo illustration for state police story"
+description = "The analysis is the first in more than a decade after State Police ceased collecting traffic stop data in 2012."
+image = "external/ywptdvdw6vvvsfh6vzm90990cm.jpeg"
+image-credit = "Jose F. Moreno"
+image-description = "A new report found Pennsylvania State Police troopers were more likely to do optional searches of Black, Hispanic drivers. JOSE F. MORENO / Staff Photographer"
 internal-budget = "Despite optional searches being more likely for Black and Hispanic drivers, contraband seizures from searches occurred more often for white drivers, according to new report"
 internal-id = "SPLPSPANALYSIS0524"
 kicker = "Criminal Justice"
@@ -81,7 +81,8 @@ Throughout 2022, the researchers audited the data to identify additional collect
 
 The researchers will work with State Police through 2025 and plan to provide annual reports to the department for the next two years. The four-year contract will cost State Police $696,000.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SPRING%20MEMBER%20DRIVE&teaser_text=Before%20you%20continue...%20This%20vital%20public-service%20journalism%20is%20only%20possible%20with%20your%20support.%20%3Cb%3EMake%20a%20gift%20to%20Spotlight%20PA%20now%20and%20it%20will%20be%20DOUBLED%20as%20part%20of%20our%20Spring%20Member%20Drive.%3C%2Fb%3E&cta_text=GET%20YOUR%20GIFT%20DOUBLED"></div>
+
 
 This is the second time State Police have partnered with Engel to examine traffic stop data for evidence of racial disparities. Officials initially told Spotlight PA they stopped collecting the data because the analysis, which spanned 2002 to 2010, showed no evidence that troopers conducted traffic stops based on race or ethnicity.
 
