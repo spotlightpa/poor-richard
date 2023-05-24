@@ -1,7 +1,7 @@
 +++
 arc-id = "AJC6HKGRKBBW7D52DJXU5J7PQA"
 authors = ["Kate Huangpu"]
-blurb = "The state House panel passed a bill Tuesday that would restore the Environmental Quality Board’s ability to raise bond prices on conventional well drillers."
+blurb = "A state House panel passed a bill Tuesday that would restore the Environmental Quality Board’s ability to raise bond prices on conventional well drillers."
 byline = "Kate Huangpu of Spotlight PA"
 description = "A PA House panel advanced a bill that would restore the Environmental Quality Board’s ability to raise bond prices on conventional well drillers."
 image = "external/066xnt69xhf544q2f853k1nw70.jpeg"
