@@ -1,7 +1,9 @@
 import Alpine from "alpinejs/src/index.js";
 
 import "../utils/add-listeners.js";
-import { reportClick } from "../utils/google-analytics.js";
+import { analyticsPlugin } from "../utils/google-analytics.js";
+
+Alpine.plugin(analyticsPlugin);
 
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
@@ -64,8 +66,6 @@ Alpine.directive(
     });
   }
 );
-
-Alpine.magic("report", () => (ev) => reportClick(ev));
 
 import intersect from "@alpinejs/intersect";
 
