@@ -1,5 +1,6 @@
 import galite from "ga-lite/src/ga-lite.js";
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
+import { recordNewsletterSignup } from "./metrics.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -167,4 +168,30 @@ export function addGAListeners() {
     },
     { passive: true }
   );
+}
+
+export function analyticsPlugin(Alpine) {
+  Alpine.magic("report", () => (ev) => reportClick(ev));
+
+  Alpine.directive("report-click", (el) => {
+    el.addEventListener("click", (ev) => reportClick(ev));
+  });
+
+  Alpine.directive("form", (el, { expression }) => {
+    el.addEventListener("submit", (ev) => {
+      let valid = el.reportValidity();
+      if (valid) recordNewsletterSignup();
+      let validity = valid ? "submit" : "invalid";
+      let eventAction = `${expression}:${validity}`;
+      buildAndSend(ev.target, {
+        eventAction,
+      });
+    });
+    el.addEventListener("focusin", (ev) => {
+      let eventAction = `${expression}:focus`;
+      buildAndSend(ev.target, {
+        eventAction,
+      });
+    });
+  });
 }
