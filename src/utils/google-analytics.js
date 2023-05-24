@@ -1,6 +1,5 @@
 import galite from "ga-lite/src/ga-lite.js";
-import { each, on, storeItem, loadItem, allClosest } from "./dom-utils.js";
-import { recordNewsletterSignup } from "./metrics.js";
+import { storeItem, loadItem, allClosest } from "./dom-utils.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -131,18 +130,22 @@ export function addGAListeners() {
     });
   });
 
-  each("a", (el) => {
-    let isInternal =
-      el.host === window.location.host || el.host.match(/spotlightpa\.org$/);
+  window.addEventListener(
+    "click",
+    (ev) => {
+      let el = ev.target.closest("a");
+      if (!el) return;
 
-    // Open external links in new window
-    if (!isInternal) {
-      el.target = "_blank";
-      el.rel = "noopener noreferrer";
-    }
+      let isInternal =
+        el.host === window.location.host || el.host.match(/spotlightpa\.org$/);
 
-    on("click", el, (ev) => {
-      let gaEvent = buildClick(ev);
+      // Open external links in new window
+      if (!isInternal) {
+        el.target = "_blank";
+        el.rel = "noopener noreferrer";
+      }
+
+      let gaEvent = buildClick({ target: el });
       sendGAEvent(gaEvent);
 
       if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
@@ -161,43 +164,7 @@ export function addGAListeners() {
         let donateURL = `https://spotlightpa.fundjournalism.org/${theme}?campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${gaEvent.eventLabel}&utm_campaign=${gaEvent.eventCategory}`;
         el.href = donateURL;
       }
-    });
-  });
-
-  on("click", "[data-ga-button]", (ev) => {
-    reportClick(ev);
-  });
-
-  each("[data-ga-form]", (el) => {
-    el.addEventListener(
-      "submit",
-      () => {
-        let valid = el.reportValidity();
-        if (valid) recordNewsletterSignup();
-        let validity = valid ? "submit" : "invalid";
-        let eventAction = `${el.dataset.gaForm}:${validity}`;
-        buildAndSend(el, {
-          eventAction,
-          transport: "beacon",
-        });
-      },
-      {
-        passive: true,
-      }
-    );
-    el.addEventListener(
-      "focus",
-      () => {
-        let eventAction = `${el.dataset.gaForm}:focus`;
-        buildAndSend(el, {
-          eventAction,
-        });
-      },
-      {
-        once: true,
-        capture: true,
-        passive: true,
-      }
-    );
-  });
+    },
+    { passive: true }
+  );
 }
