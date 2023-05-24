@@ -16,7 +16,7 @@ slug = "pennsylvania-local-government-right-to-know-social-media"
 suppress-date = false
 title = "How Local Government Works: Are government officials’ personal social media posts public records?"
 title-tag = "New PA test weighs boundary of public records"
-topics = ["Local Government"]
+topics = ["How Local Government Works", "Local Government"]
 +++
 
 <i>How Local Government Works is a series that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable. </i>

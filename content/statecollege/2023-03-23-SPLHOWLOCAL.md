@@ -16,7 +16,7 @@ slug = "pennsylvania-right-to-know-local-government-open-records"
 suppress-date = false
 title = "How Local Government Works: A basic guide to requesting public records in Pa."
 title-tag = "Keep municipalities open with PA open records law"
-topics = ["Local Government"]
+topics = ["How Local Government Works", "Local Government"]
 +++
 
 <i>In January, I hosted an </i><a href="https://www.spotlightpa.org/news/2023/01/tioga-tamir-rice-pennsylvania-local-accountability-event/"><i>event</i></a><i> that highlighted how Pennsylvania’s system of fragmented local governments </i><a href="https://www.spotlightpa.org/statecollege/2023/02/local-government-accountability-transparency-pennsylvania/"><i>hinders public oversight</i></a><i>. The level of interest in the topic and the number of questions from attendees overwhelmed me, delighted me — and it gave me an idea. What if I answered your questions about the commonwealth’s more than 2,500 municipalities on a regular basis?</i>
