@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-05-23-SPLUNCLMO.md"
+    "content/news/2023-05-24-SPLWELCAP.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-04-SPLREBBOOST.md"
+    "content/news/2023-05-11-SPLWELLS11.md"
   ],
   "topSlots": [
-    "content/newsletters/palocal/2023-05-19-0900.md",
+    "content/news/2023-05-23-SPLUNCLMO.md",
     "content/statecollege/2023-05-22-SPLSOCIALRTK.md",
-    "content/news/2023-05-18-SPLCOLUMBIA.md"
+    "content/statecollege/2023-05-19-SPLPRIVATEBUD.md"
   ],
   "topper": []
 }
