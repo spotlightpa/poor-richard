@@ -79,7 +79,7 @@ Throughout 2022, the researchers audited the data to identify additional collect
 
 “I am really thrilled to say the error rate is well below 10%,” Engel said Tuesday, “and for the missing data fields, it’s in the less than 1%,” well below the threshold the researchers established.
 
-The researchers will work with State Police through 2025 and plan to provide annual reports to the department for the next three years. The four-year contract will cost State Police $696,000.
+The researchers will work with State Police through 2025 and plan to provide annual reports to the department for the next two years. The four-year contract will cost State Police $696,000.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
