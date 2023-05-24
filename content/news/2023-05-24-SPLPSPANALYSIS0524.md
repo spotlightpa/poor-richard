@@ -5,8 +5,8 @@ blurb = "Despite optional searches being more likely for Black and Hispanic driv
 byline = "Danielle Ohl of Spotlight PA"
 description = "The analysis is the first in more than a decade after State Police ceased collecting traffic stop data in 2012."
 image = "external/ywptdvdw6vvvsfh6vzm90990cm.jpeg"
-image-credit = "Jose F. Moreno"
-image-description = "A new report found Pennsylvania State Police troopers were more likely to do optional searches of Black, Hispanic drivers. JOSE F. MORENO / Staff Photographer"
+image-credit = "Jose F. Moreno / Philadelphia Inquirer"
+image-description = "A new report found PA State Police troopers were more likely to do optional searches of Black, Hispanic drivers."
 internal-budget = "Despite optional searches being more likely for Black and Hispanic drivers, contraband seizures from searches occurred more often for white drivers, according to new report"
 internal-id = "SPLPSPANALYSIS0524"
 kicker = "Criminal Justice"
@@ -15,7 +15,7 @@ published = 2023-05-24T16:00:00-04:00
 slug = "pennsylvania-state-trooper-search-bias-study"
 suppress-date = false
 title = "Pa. State troopers more likely to do optional searches for Black, Hispanic drivers than white ones"
-title-tag = "Report: Pa. State troopers more likely to do optional searches of Black, Hispanic drivers"
+title-tag = "PA troopers search Black, Hispanic drivers more: report"
 topics = ["Criminal Justice"]
 +++
 
