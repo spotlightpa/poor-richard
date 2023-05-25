@@ -187,11 +187,17 @@ export function analyticsPlugin(Alpine) {
         eventAction,
       });
     });
-    el.addEventListener("focusin", (ev) => {
-      let eventAction = `${expression}:focus`;
-      buildAndSend(ev.target, {
-        eventAction,
-      });
-    });
+    el.addEventListener(
+      "focusin",
+      (ev) => {
+        let eventAction = `${expression}:focus`;
+        buildAndSend(ev.target, {
+          eventAction,
+        });
+      },
+      {
+        once: true,
+      }
+    );
   });
 }
