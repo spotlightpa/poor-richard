@@ -44,10 +44,10 @@
     class="{{ $btnClass }} hover:bg-orange hover:text-white"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
-    data-ga-button
     title="More ways to share this page"
     x-data
     x-bind="shareButton"
+    x-report-click
     x-cloak
   >
     <span class="m-auto">
