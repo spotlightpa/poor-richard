@@ -94,9 +94,8 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
           bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
-            data-ga-form="newsletters:multi"
             x-data="{ hasFocused: false }"
             action="{{ $newsletterAction }}"
             method="post"
@@ -240,10 +239,7 @@
               class="flex-initial py-3 pr-5 text-black underline md:mr-5"
               aria-label="close"
               type="button"
-              @click="
-              $dispatch('x-form-submit', 'newsletters:seenit:submit');
-              isOpen = false
-            "
+              @click="isOpen = false"
             >
               I’m already a subscriber
             </button>
