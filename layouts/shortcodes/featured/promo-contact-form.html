@@ -127,7 +127,7 @@
 
         <div class=" mb-3">
           {{ with $recipient }}
-            <input type="hidden" name="CC" :value="{{ . }}" />
+            <input type="hidden" name="CC" value="{{ . }}" />
           {{ else }}
             <label class="font-sans font-black" for="{{ $idSubject }}"
               >Subject</label
