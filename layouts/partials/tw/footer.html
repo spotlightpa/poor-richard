@@ -42,14 +42,11 @@
 
     <form
       class=" mx-auto max-w-xl md:max-w-2xl"
-      data-ga-form="newsletters:multi"
+      x-form="newsletters:multi"
       x-data="{ hasFocused: false }"
       action="{{ $newsletterAction }}"
       method="post"
       target="_blank"
-      tabindex="-1"
-      @click.stop
-      @keydown.escape="isOpen = false"
     >
       <p
         class="text-center text-2xl font-bold tracking-wide text-white md:text-3xl"
