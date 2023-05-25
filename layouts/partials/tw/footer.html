@@ -15,22 +15,32 @@
           {{ partial "helper/svg.html" "banner" }}
         </svg>
       </a>
+
       <a
         data-sf-campaign="701Dn000000YgogIAC"
         data-ga-category="donate"
         class="
-            inline-flex items-center whitespace-nowrap rounded-md bg-red p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white duration-300 hover:bg-blue sm:flex sm:w-44 sm:justify-center sm:p-3
-            sm:text-lg md:w-64 md:p-4 md:text-xl
+           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue 
+           sm:flex sm:w-32 sm:justify-center md:w-52 md:py-4 md:px-7
           "
         href="/donate"
       >
-        <svg
-          class="mr-2 h-4 w-4 fill-current sm:h-6 sm:w-6 md:mr-6 md:h-9 md:w-9"
-          aria-hidden="true"
+        <span
+          class="
+          absolute inset-0 z-0 bg-red [clip-path:_polygon(0_0,_0%_100%,_15%_50%)] group-hover:bg-blue
+          "
+        ></span>
+        <span
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
         >
-          {{ partial "helper/svg.html" "heart" }}
-        </svg>
-        Support<span class="hidden sm:inline"> Us</span>
+          <svg
+            class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "heart" }}
+          </svg>
+          Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
+        </span>
       </a>
     </nav>
     <h2
