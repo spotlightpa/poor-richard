@@ -6,7 +6,7 @@ weight = 1
 [[main]]
 name = "Events"
 url = "/topics/events/"
-weight = 2
+weight = 4
 
 [[main]]
 name = "Newsletters"
@@ -14,19 +14,121 @@ url = "/newsletters/"
 weight = 3
 
 [[main]]
-name = "About Us"
-url = "/about/"
-weight = 4
-
-[[main]]
-name = "Tips"
-url = "/tips/"
-weight = 5
-
-[[main]]
 name = "State College"
 url = "/statecollege/"
-weight = 6
+weight = 2
+
+[[main_more]]
+name = "About"
+url = "/about/"
+weight = 1
+
+[[main_more]]
+name = "Mission"
+parent = "About"
+url = "/about/mission/"
+weight = 1
+
+[[main_more]]
+name = "Meet the Team"
+parent = "About"
+url = "/about/staff/"
+weight = 1
+
+[[main_more]]
+name = "Our Partners"
+parent = "About"
+url = "/about/partners"
+weight = 1
+
+[[main_more]]
+name = "Careers"
+parent = "About"
+url = "/about/jobs/"
+weight = 1
+
+[[main_more]]
+name = "Contact"
+parent = "About"
+url = "/contact/"
+weight = 1
+
+[[main_more]]
+name = "Support Spotlight PA"
+url = "/support/"
+weight = 2
+
+[[main_more]]
+name = "Ways to give"
+parent = "Support Spotlight PA"
+url = "/support/"
+weight = 1
+
+[[main_more]]
+name = "How we're funded"
+parent = "Support Spotlight PA"
+url = "/support/"
+weight = 2
+
+[[main_more]]
+name = "News"
+url = "/news/"
+weight = 3
+
+[[main_more]]
+parent = "News"
+name = "Criminal Justice"
+url = "/topics/criminal-justice/"
+
+[[main_more]]
+parent = "News"
+name = "Economy"
+url = "/topics/economy/"
+
+[[main_more]]
+parent = "News"
+name = "Elections"
+url = "/elections/"
+
+[[main_more]]
+parent = "News"
+name = "State Capitol"
+url = "/topics/the-capitol/"
+
+[[main_more]]
+parent = "News"
+name = "Health"
+url = "/topics/health/"
+
+[[main_more]]
+parent = "News"
+name = "How Harrisburg Works"
+url = "/topics/how-harrisburg-works/"
+
+[[main_more]]
+parent = "News"
+name = "Local Government"
+url = "/topics/local-government/"
+
+[[main_more]]
+parent = "News"
+name = "Penn State"
+url = "/topics/penn-state/"
+
+[[main_more]]
+parent = "News"
+name = "Rural Issues"
+url = "/topics/rural-issues/"
+
+[[main_more]]
+parent = "News"
+name = "More Topics"
+url = "/topics/"
+
+[[main_more]]
+parent = "News"
+name = "Archives"
+url = "/news/"
 
 [[about]]
 name = "Our Mission"
