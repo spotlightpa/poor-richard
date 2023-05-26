@@ -71,9 +71,9 @@ Graduado de la Facultad de Derecho de la Universidad de Boston, Neft ha desarrol
 
 Neft se desempeñó como miembro del comité del Partido Demócrata de Mt. Lebanon de 2016 a 2020, cuando renunció para postularse para a la Corte Superior. Fue reasignado después de su derrota en las primarias, pero renunció nuevamente en noviembre de 2022 para su actual candidatura la Corte Superior.
 
-El Colegio de Abogados de Pensilvania <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> a Neft como “recomendado”, escribiendo que sus compañeros lo consideraban “trabajador, honesto y comprometido con la justicia igualitaria, la equidad y la imparcialidad en el sistema judicial.”
+El Colegio de Abogados de Pensilvania <a href="https://web.archive.org/20230314063744/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> a Neft como “recomendado”, escribiendo que sus compañeros lo consideraban “trabajador, honesto y comprometido con la justicia igualitaria, la equidad y la imparcialidad en el sistema judicial.”
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/BryanNeftCommonwealth.pdf">aquí</a> las respuestas de Neft al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230314064133/https://www.pabar.org/public/news%20releases/23jec/BryanNeftCommonwealth.pdf">aquí</a> las respuestas de Neft al cuestionario de la PBA.
 
 <b>Matthew Wolf</b>
 
@@ -83,9 +83,9 @@ Antes de su elección a la corte en 2017, Wolf dirigía un bufete de abogados co
 
 Wolf pasó años en la Reserva del Ejército de EE.UU., sirviendo como oficial de 2003 a 2020 y desplegándose en Afganistán e Irak. Tras renunciar a su comisión militar en 2020, se alistó en la Guardia Nacional del Ejército de Pensilvania.
 
-El Colegio de Abogados de Pensilvania <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> a Wolf como “recomendado”, afirmando que sus escritos son “claros y concisos”, y señalando que tiene un historial de servicio público.
+El Colegio de Abogados de Pensilvania <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> a Wolf como “recomendado”, afirmando que sus escritos son “claros y concisos”, y señalando que tiene un historial de servicio público.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/MatthewWolfCommonwealth.pdf">aquí</a> las respuestas de Wolf al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230405095410/https://www.pabar.org/public/news%20releases/23jec/MatthewWolfCommonwealth.pdf">aquí</a> las respuestas de Wolf al cuestionario de la PBA.
 
 ### Candidatos republicanos
 
@@ -97,9 +97,9 @@ Como secretaria parlamentaria, Martin asesoraba al presidente de la cámara sobr
 
 Antes de incorporarse a la cámara, trabajó como miembro del personal y luego como abogada de los ex gobernadores republicanos Tom Ridge y Tom Corbett, como abogada de la Marina de los Estados Unidos y como asistente jurídica de un juez del condado de Lancaster.
 
-El Colegio de Abogados del Estado la <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> de “recomendada”, afirmando que “la considerable experiencia [de Martin] en derecho administrativo le será muy útil”.
+El Colegio de Abogados del Estado la <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> de “recomendada”, afirmando que “la considerable experiencia [de Martin] en derecho administrativo le será muy útil”.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/MeganMartinCommonwealth.pdf">aquí</a> las respuestas de Martin al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230314064020/https://www.pabar.org/public/news%20releases/23jec/MeganMartinCommonwealth.pdf">aquí</a> las respuestas de Martin al cuestionario de la PBA.
 
 <b>Joshua Prince</b>
 
@@ -115,13 +115,13 @@ Prince declaró a Spotlight PA que desconocía los antecedentes de Scavo cuando 
 
 “Es imposible conocer los antecedentes personales de todo el mundo a partir de una interacción de un minuto”, afirmó.
 
-Prince no ha sido recomendado por el Colegio de Abogados del Estado, que <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">consideró</a> que “carece de la profundidad y amplitud de experiencia y preparación necesarias para asumir la función de mando de juez en la Corte de la Commonwealth.”
+Prince no ha sido recomendado por el Colegio de Abogados del Estado, que <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">consideró</a> que “carece de la profundidad y amplitud de experiencia y preparación necesarias para asumir la función de mando de juez en la Corte de la Commonwealth.”
 
 En un correo electrónico, Prince dijo que no estaba de acuerdo con su calificación y <a href="https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">señaló el éxito de candidatos</a> que no contaban con la bendición del grupo.
 
 “Confío en que los votantes vean una vez más que el respaldo de una sola organización no es la plena medida de un candidato, y que basarán su decisión en la totalidad de la experiencia real, especialmente en los tribunales”, dijo Prince.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/JoshuaPrinceCommonwealth.pdf">aquí</a> las respuestas de Prince al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230316111930/https://www.pabar.org/public/news%20releases/23jec/JoshuaPrinceCommonwealth.pdf">aquí</a> las respuestas de Prince al cuestionario de la PBA.
 
 ## Corte Superior
 
@@ -141,11 +141,11 @@ Beck es una abogada con sede en Pittsburgh quien trabaja en litigios comerciales
 
 Beck fue asistente jurídica de la jueza de la Corte Suprema estatal, Christine Donohue de 2016 a 2019, y también para Donohue en la Corte Superior de 2010 a 2015.
 
-En <a href="https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">su cuestionario</a> para el Colegio de Abogados de Pensilvania, Beck dijo que durante su tiempo como secretaria de la Corte Superior redactó memorandos y publicó opiniones sobre casi 500 decisiones.
+En <a href="https://web.archive.org/20230314064014/https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">su cuestionario</a> para el Colegio de Abogados de Pensilvania, Beck dijo que durante su tiempo como secretaria de la Corte Superior redactó memorandos y publicó opiniones sobre casi 500 decisiones.
 
 Beck también ha trabajado en KidsVoice, una agencia sin fines de lucro que defiende a los niños del sistema de bienestar infantil en la Corte de Menores del condado de Allegheny.
 
-El Colegio de Abogados del Estado la <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> de “muy recomendada”, escribiendo que Beck posee “la más alta combinación de capacidad jurídica, experiencia e integridad.”
+El Colegio de Abogados del Estado la <a href="https://web.archive.org/20230314063744/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> de “muy recomendada”, escribiendo que Beck posee “la más alta combinación de capacidad jurídica, experiencia e integridad.”
 
 Lea <a href="https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">aquí</a> las respuestas de Beck al cuestionario de la PBA.
 
@@ -163,7 +163,7 @@ También trabajó varios años como asesora jurídica del senador estatal demóc
 
 La Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó a</a> Lane de “muy recomendada”, afirmando que sus “escritos están bien razonados, claros y concisos”.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/TimikaLaneSuperior.pdf">aquí</a> las respuestas de Lane al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230314064013/https://www.pabar.org/public/news%20releases/23jec/TimikaLaneSuperior.pdf">aquí</a> las respuestas de Lane al cuestionario de la PBA.
 
 <b>Patrick Dugan</b>
 

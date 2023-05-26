@@ -77,7 +77,7 @@ There is one seat open on Commonwealth Court this year, and both parties’ prim
 
 ### Democratic candidates
 
-{{<picture src="external/q6rxavwz01g7p728qdwrwr80sc.png" description="Bryan Neft" caption="Bryan Neft" credit="Via candidate website ">}} 
+{{<picture src="external/q6rxavwz01g7p728qdwrwr80sc.png" description="Bryan Neft" caption="Bryan Neft" credit="Via candidate website ">}}
 
 <a href="https://bryanneft.com/" target="_blank"><b>Bryan Neft</b></a>
 
@@ -89,11 +89,11 @@ A graduate of Boston University School of Law, Neft has predominantly spent his 
 
 Neft served as a committee member for the Mt. Lebanon Democratic Party from 2016 to 2020, when he resigned to run for Superior Court. He was reappointed after his loss in the primary but resigned again in November 2022 for his current Commonwealth Court bid.
 
-The Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Neft as “recommended,” writing that peers viewed him as “hard working, honest and committed to equal justice, fairness and impartiality in the judicial system.”
+The Pennsylvania Bar Association <a href="https://web.archive.org/20230314063744/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Neft as “recommended,” writing that peers viewed him as “hard working, honest and committed to equal justice, fairness and impartiality in the judicial system.”
 
-Read Neft’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/BryanNeftCommonwealth.pdf">here</a>.
+Read Neft’s answers to the PBA questionnaire <a href="https://web.archive.org/20230314064133/https://www.pabar.org/public/news%20releases/23jec/BryanNeftCommonwealth.pdf">here</a>.
 
-{{<picture src="external/1b2ac1evvggv5g7jacdmfq2pyr.png" description="Matthew Wolf" caption="Matthew Wolf" credit="Via candidate website">}} 
+{{<picture src="external/1b2ac1evvggv5g7jacdmfq2pyr.png" description="Matthew Wolf" caption="Matthew Wolf" credit="Via candidate website">}}
 
 <a href="https://judgemattwolf.com/home" target="_blank"><b>Matthew Wolf</b></a>
 
@@ -103,16 +103,16 @@ Prior to his election to the court in 2017, Wolf ran a legal practice based in C
 
 Wolf spent years in the U.S. Army Reserve, serving as an officer from 2003 to 2020 and deploying to Afghanistan and Iraq. After resigning his commission in 2020, he enlisted in the Pennsylvania Army National Guard.
 
-The Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Wolf as “recommended,” saying that his writing is “clear and concise,” and noting that he has a history of public service.
+The Pennsylvania Bar Association <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Wolf as “recommended,” saying that his writing is “clear and concise,” and noting that he has a history of public service.
 
-Read Wolf’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/MatthewWolfCommonwealth.pdf">here</a>.
+Read Wolf’s answers to the PBA questionnaire <a href="https://web.archive.org/20230405095410/https://www.pabar.org/public/news%20releases/23jec/MatthewWolfCommonwealth.pdf">here</a>.
 
 <div id="spl-repco"></div>
 
 
 ### Republican candidates
 
-{{<picture src="external/q7qpftykx7ehnsgahsbjxvmxe0.png" description="Megan Martin" caption="Megan Martin" credit="Via candidate Facebook page">}} 
+{{<picture src="external/q7qpftykx7ehnsgahsbjxvmxe0.png" description="Megan Martin" caption="Megan Martin" credit="Via candidate Facebook page">}}
 
 <a href="https://meganmartinforpa.com/" target="_blank"><b>Megan Martin</b></a>
 
@@ -122,11 +122,11 @@ As the secretary-parliamentarian, Martin advised the chamber’s presiding offic
 
 Before joining the chamber, she served as a staffer and then an attorney for former GOP Govs. Tom Ridge and Tom Corbett, as an attorney for the U.S. Navy, and as a law clerk for a Lancaster County judge.
 
-The state bar association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> her as “recommended,” saying that Martin’s “substantial administrative law experience will serve her well.”
+The state bar association <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> her as “recommended,” saying that Martin’s “substantial administrative law experience will serve her well.”
 
-Read Martin’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/MeganMartinCommonwealth.pdf">here</a>.
+Read Martin’s answers to the PBA questionnaire <a href="https://web.archive.org/20230314064020/https://www.pabar.org/public/news%20releases/23jec/MeganMartinCommonwealth.pdf">here</a>.
 
-{{<picture src="external/6gdca9sy9pqfeemr5zngzm4vpm.png" description="Joshua Prince" caption="Joshua Prince" credit="Via candidate Facebook page">}} 
+{{<picture src="external/6gdca9sy9pqfeemr5zngzm4vpm.png" description="Joshua Prince" caption="Joshua Prince" credit="Via candidate Facebook page">}}
 
 <a href="https://www.princeforjustice.com/" target="_blank"><b>Joshua Prince</b></a>
 
@@ -142,13 +142,13 @@ Prince told Spotlight PA that he wasn’t aware of Scavo’s background when he 
 
 “It is impossible to know everyone’s personal background from a 1-minute interaction,” he said.
 
-Prince is not recommended by the state bar association, which <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">found</a> that he “lacks the depth and breadth of experience and preparation necessary to take on the commanding role of judge on the Commonwealth Court.”
+Prince is not recommended by the state bar association, which <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">found</a> that he “lacks the depth and breadth of experience and preparation necessary to take on the commanding role of judge on the Commonwealth Court.”
 
 In an email, Prince said he disagreed with his rating and <a href="https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">pointed to the success of candidates</a> who didn’t have the group’s blessing.
 
 “I have confidence voters will once again see that a single organizational endorsement is not the full measure of a candidate, and that they will base their decision on the totality of actual experience, especially in the courtroom,” Prince said.
 
-Read Prince’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/JoshuaPrinceCommonwealth.pdf">here</a>.
+Read Prince’s answers to the PBA questionnaire <a href="https://web.archive.org/20230316111930/https://www.pabar.org/public/news%20releases/23jec/JoshuaPrinceCommonwealth.pdf">here</a>.
 
 <div id="spl-sup"></div>
 
@@ -168,7 +168,7 @@ There are two open seats on Superior Court this year. Its partisan makeup is cur
 
 ### Democratic candidates
 
-{{<picture src="external/sxnqaw79kgx69bsdewceb9sxd8.png" description="Jill Beck" caption="Jill Beck" credit="Via candidate Facebook page ">}} 
+{{<picture src="external/sxnqaw79kgx69bsdewceb9sxd8.png" description="Jill Beck" caption="Jill Beck" credit="Via candidate Facebook page ">}}
 
 <a href="https://www.jillbeck.com/" target="_blank"><b>Jill Beck</b></a>
 
@@ -176,15 +176,15 @@ Beck is a Pittsburgh-based attorney who works in commercial litigation. She ran 
 
 Beck clerked for state Supreme Court Justice Christine Donohue from 2016 to 2019, and for Donohue on Superior Court from 2010 to 2015.
 
-In <a href="https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">her questionnaire</a> for the Pennsylvania Bar Association, Beck said that during her time as a clerk on Superior Court she drafted memoranda and published opinions on nearly 500 decisions.
+In <a href="https://web.archive.org/20230314064014/https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">her questionnaire</a> for the Pennsylvania Bar Association, Beck said that during her time as a clerk on Superior Court she drafted memoranda and published opinions on nearly 500 decisions.
 
 Beck has also worked at KidsVoice, a nonprofit agency that advocates for children in the child welfare system in Allegheny County’s Juvenile Court.
 
-The state bar association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> her “highly recommended,” writing that Beck possesses “the highest combination of legal ability, experience and integrity.”
+The state bar association <a href="https://web.archive.org/20230314063744/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> her “highly recommended,” writing that Beck possesses “the highest combination of legal ability, experience and integrity.”
 
-Read Beck’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">here</a>.
+Read Beck’s answers to the PBA questionnaire <a href="https://web.archive.org/20230314064014/https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">here</a>.
 
-{{<picture src="external/hv2a01xe5sa21gaa3cdc8h7t80.png" description="Timika Lane" caption="Timika Lane" credit="Via candidate Facebook page ">}} 
+{{<picture src="external/hv2a01xe5sa21gaa3cdc8h7t80.png" description="Timika Lane" caption="Timika Lane" credit="Via candidate Facebook page ">}}
 
 <a href="https://judgelaneforpa.com/" target="_blank"><b>Timika Lane</b></a>
 
@@ -198,11 +198,11 @@ She then spent a year working primarily in private practice family law before ta
 
 She also spent several years as legal counsel for Democratic state Sen. Anthony Williams before being elected to the Philadelphia Court of Common Pleas in 2013. The trial court hears appeals for civil, criminal, and family matters.
 
-The Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Lane”highly recommended,” saying that her “writing is well-reasoned, clear and concise.”
+The Pennsylvania Bar Association <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">rated</a> Lane”highly recommended,” saying that her “writing is well-reasoned, clear and concise.”
 
-Read Lane’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/TimikaLaneSuperior.pdf">here</a>.
+Read Lane’s answers to the PBA questionnaire <a href="https://web.archive.org/20230314064013/https://www.pabar.org/public/news%20releases/23jec/TimikaLaneSuperior.pdf">here</a>.
 
-{{<picture src="external/fmk99zsnchaqvartwdtcxjyn7c.png" description="Patrick Dugan" caption="Patrick Dugan" credit="Via candidate website">}} 
+{{<picture src="external/fmk99zsnchaqvartwdtcxjyn7c.png" description="Patrick Dugan" caption="Patrick Dugan" credit="Via candidate website">}}
 
 <a href="https://www.judgepatdugan.com/" target="_blank"><b>Patrick Dugan</b></a>
 
@@ -219,7 +219,7 @@ As of March 23, the Pennsylvania Bar Association had not assigned Dugan a rating
 
 ### Republican candidates
 
-{{<picture src="external/1nfzfmwn4bqc5x9a4ba6v9t3pr.png" description="Maria Battista" caption="Maria Battista" credit="Via candidate website">}} 
+{{<picture src="external/1nfzfmwn4bqc5x9a4ba6v9t3pr.png" description="Maria Battista" caption="Maria Battista" credit="Via candidate website">}}
 
 <a href="https://www.battistaforjudge.com/" target="_blank"><b>Maria Battista</b></a>
 
@@ -231,7 +231,7 @@ She is endorsed by the state Republican Party.
 
 As of March 23, the Pennsylvania Bar Association had not assigned Battista a rating.
 
-{{<picture src="external/xmkazn9etgb1jj7xbasqqn9rng.png" description="Harry Smail" caption="Harry Smail" credit="Via candidate website">}} 
+{{<picture src="external/xmkazn9etgb1jj7xbasqqn9rng.png" description="Harry Smail" caption="Harry Smail" credit="Via candidate website">}}
 
 <a href="https://votejudgesmail.com/" target="_blank"><b>Harry Smail</b></a>
 
@@ -252,6 +252,6 @@ Smail ruled that the board of elections did not conduct due diligence in accepti
 
 The bar rated Smail “recommended,” “based on his extensive background, legal ability and temperament.”
 
-Read Smail’s answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/23jec/HarrySmailSuperior.pdf">here</a>.
+Read Smail’s answers to the PBA questionnaire <a href="https://web.archive.org/20230314064057/https://www.pabar.org/public/news%20releases/23jec/HarrySmailSuperior.pdf">here</a>.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
