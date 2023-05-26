@@ -1,9 +1,9 @@
 {
   "banner": "Everything you need to know for the 2023 Pa. primary. \u003cstrong\u003eVisit our Election Center »\u003c/strong\u003e",
   "banner-active": true,
-  "banner-bg-color": "#ffcb03",
+  "banner-bg-color": "#000",
   "banner-link": "/elections",
-  "banner-text-color": "#000000",
+  "banner-text-color": "#FFF",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
   "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
