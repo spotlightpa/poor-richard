@@ -1,6 +1,8 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
+{{ partial "js/view-trigger.html" "footer" }}
+
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   <div class="bg-black p-4 sm:py-8 md:py-12">
