@@ -52,21 +52,21 @@ These rulings have made the court a target among some Republicans, <a href="http
 
 ### Candidates
 
-{{<picture src="external/k6a1kvtzv82cg8mn0wqkfgw2gc.jpeg" description="Superior Court Judge Maria McLaughlin" caption="Superior Court Judge Maria McLaughlin" credit="Maria McLaughlin">}} 
+{{<picture src="external/k6a1kvtzv82cg8mn0wqkfgw2gc.jpeg" description="Superior Court Judge Maria McLaughlin" caption="Superior Court Judge Maria McLaughlin" credit="Maria McLaughlin">}}
 
 <b>Maria McLaughlin, Democrat: </b>McLaughlin is from Philadelphia and has been serving on Pennsylvania Superior Court since 2018. Before that, she served as a judge in Philadelphia’s family court and as an assistant district attorney.
 
 As a district attorney, McLaughlin worked in the child support enforcement division, prosecuting delinquent payments, and later became the chief assistant district attorney supervising the unit.
 
-The Pennsylvania Bar Association rated McLaughlin highly recommended, its top designation. Read her answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/MariaMcLaughlinSupreme.pdf">here</a>.
+The Pennsylvania Bar Association rated McLaughlin highly recommended, its top designation. Read her answers to the PBA questionnaire <a href="https://web.archive.org/20211016074233/https://www.pabar.org/public/news%20releases/21jec/MariaMcLaughlinSupreme.pdf">here</a>.
 
-{{<picture src="external/83nv9h6ec95k9qtgazkz1key9r.jpeg" description="Commonwealth Court Judge Kevin Brobson" caption="Commonwealth Court Judge Kevin Brobson" credit="Campaign handout">}} 
+{{<picture src="external/83nv9h6ec95k9qtgazkz1key9r.jpeg" description="Commonwealth Court Judge Kevin Brobson" caption="Commonwealth Court Judge Kevin Brobson" credit="Campaign handout">}}
 
 <b>Kevin Brobson, Republican:</b> Brobson has been a Commonwealth Court judge since 2010. Previously, he worked for the Harrisburg law firm Buchanan Ingersoll &amp; Rooney. There he handled commercial and insurance litigation in both state and federal courts.
 
 Brobson sat on the Supreme Court for one case, involving a <a href="https://law.justia.com/cases/pennsylvania/supreme-court/2016/6-eap-2015.html">defamation suit</a> against a Philadelphia Inquirer columnist, because other justices had recused themselves.
 
-The Pennsylvania Bar Association rated Brobson highly recommended. Read his answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/KevinBrobsonSupreme.pdf">here</a>.
+The Pennsylvania Bar Association rated Brobson highly recommended. Read his answers to the PBA questionnaire <a href="https://web.archive.org/20211016071942/https://www.pabar.org/public/news%20releases/21jec/KevinBrobsonSupreme.pdf">here</a>.
 
 <b><i>READ MORE: <a href="https://www.spotlightpa.org/news/2021/10/pa-supreme-court-election-2021-biggest-donors/">Powerful special interests are pouring millions into the 2021 Pa. Supreme Court race</a></b></i>
 
@@ -80,19 +80,19 @@ Often, the cases it handles do not involve public figures, but there are excepti
 
 Judges serve initial 10-year terms, then face a retention vote, which usually succeeds. There is one seat open on Superior Court because Republican Judge Susan Gantman is retiring.
 
-{{<picture src="external/f50svbsdw4ptkcsrb2178vdk20.jpeg" description="Superior Court candidates Timika Lane (left) and Megan Sullivan." caption="Superior Court candidates Timika Lane (left) and Megan Sullivan." credit="Images via campaigns">}} 
+{{<picture src="external/f50svbsdw4ptkcsrb2178vdk20.jpeg" description="Superior Court candidates Timika Lane (left) and Megan Sullivan." caption="Superior Court candidates Timika Lane (left) and Megan Sullivan." credit="Images via campaigns">}}
 
 ### Candidates
 
 <b>Timika Lane, Democrat: </b>Lane has served on the Philadelphia County Court of Common Pleas since 2014. Prior to her term, she served as chief counsel to state Sen. Anthony Williams (D., Philadelphia) and as the Democratic executive director of the Senate State Government Committee. Prior to that, Lane served as a trial attorney with the Defender Association of Philadelphia, a pro-bono defense firm.
 
-The Pennsylvania Bar Association rated Lane recommended. Read her answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/TimikaLaneSuperior.pdf">here</a>.
+The Pennsylvania Bar Association rated Lane recommended. Read her answers to the PBA questionnaire <a href="https://web.archive.org/20211018101643/https://www.pabar.org/public/news%20releases/21jec/TimikaLaneSuperior.pdf">here</a>.
 
 <b>Megan Sullivan, Republican: </b>Sullivan has served as a deputy attorney general since 2017. Prior to joining the attorney general’s office, Sullivan worked as an attorney for Chester County, West Chester University, and two private firms.
 
 In her 20 years as an attorney, Sullivan has handled both criminal and civil matters. With the attorney general’s office, she investigates and prosecutes insurance fraud.
 
-The Pennsylvania Bar Association rated Sullivan recommended. Read her answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/MeganSullivanSuperior.pdf">here</a>.
+The Pennsylvania Bar Association rated Sullivan recommended. Read her answers to the PBA questionnaire <a href="https://web.archive.org/20211022211804/https://www.pabar.org/public/news%20releases/21jec/MeganSullivanSuperior.pdf">here</a>.
 
 ## Commonwealth Court
 
@@ -100,7 +100,7 @@ Commonwealth Court is, like Superior Court, an intermediate appellate court, but
 
 Judges serve initial 10-year terms, then face a retention vote, which usually succeeds. There are two seats open on Commonwealth Court, and the top vote-getters of the four candidates will secure spots on the bench.
 
-{{<picture src="external/k2kvbe1vq1snfes7gj3962n44w.jpeg" description="From upper left, clockwise: Commonwealth Court candidates David Lee Spurgeon, Drew Crompton, Lori Dumas, Stacy Wallace." caption="From upper left, clockwise: Commonwealth Court candidates David Lee Spurgeon, Drew Crompton, Lori Dumas, Stacy Wallace." credit="Images via campaigns">}} 
+{{<picture src="external/k2kvbe1vq1snfes7gj3962n44w.jpeg" description="From upper left, clockwise: Commonwealth Court candidates David Lee Spurgeon, Drew Crompton, Lori Dumas, Stacy Wallace." caption="From upper left, clockwise: Commonwealth Court candidates David Lee Spurgeon, Drew Crompton, Lori Dumas, Stacy Wallace." credit="Images via campaigns">}}
 
 ### Candidates
 
@@ -108,13 +108,13 @@ Judges serve initial 10-year terms, then face a retention vote, which usually su
 
 As a Common Pleas judge, she has heard family, criminal, and civil cases.
 
-She is recommended by the Pennsylvania Bar Association. Read her answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/LoriDumasCommonwealth.pdf">here</a>.
+She is recommended by the Pennsylvania Bar Association. Read her answers to the PBA questionnaire <a href="https://web.archive.org/20211023201805/https://www.pabar.org/public/news%20releases/21jec/LoriDumasCommonwealth.pdf">here</a>.
 
 <b>David Lee Spurgeon, Democrat:</b> Spurgeon has served as an Allegheny County Court of Common Pleas judge since 2016. Prior to his term, Spurgeon worked as a prosecutor in Allegheny County.
 
 As a Common Pleas judge, Spurgeon hears family law cases.
 
-He is highly recommended by the Pennsylvania Bar Association. Read his answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/DavidSpurgeonCommonwealth.pdf">here</a>.
+He is highly recommended by the Pennsylvania Bar Association. Read his answers to the PBA questionnaire <a href="https://web.archive.org/20211014111437/https://www.pabar.org/public/news%20releases/21jec/DavidSpurgeonCommonwealth.pdf">here</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=If%20you%20learned%20something%20from%20this%20report%2C%20pay%20it%20forward%20and%20become%20a%20member%20of%20Spotlight%20PA%20so%20someone%20else%20can%20in%20the%20future."></div>
 
@@ -125,10 +125,10 @@ Before <a href="https://www.spotlightpa.org/news/2019/11/wolf-judicial-vacancies
 
 As a Commonwealth Court judge, Crompton has heard workers’ compensation and unemployment cases as well as zoning, election, and other governmental disputes.
 
-He is recommended by the Pennsylvania Bar Association. Read his answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/AndrewCromptonCommonwealth.pdf">here</a>.
+He is recommended by the Pennsylvania Bar Association. Read his answers to the PBA questionnaire <a href="https://web.archive.org/20211016041909/https://www.pabar.org/public/news%20releases/21jec/AndrewCromptonCommonwealth.pdf">here</a>.
 
 <b>Stacy Sorokes Wallace, Republican:</b> Wallace currently practices at her own firm, Stacy Wallace Law, in Bradford. Recently, she has handled estate planning and trust administration. She is the president of the McKean County Bar Association.
 
-She is <a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2021/Commonwealth-Court">not recommended</a> by the Pennsylvania Bar Association. The PBA found that while the community holds Wallace in high regard, she “lacks the depth and breadth of experience and preparation necessary” to be a judge on the Commonwealth Court. Read her answers to the PBA questionnaire <a href="https://www.pabar.org/public/news%20releases/21jec/StacyWallaceCommonwealth.pdf">here</a>.
+She is <a href="https://web.archive.org/20211005125441/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2021/Commonwealth-Court">not recommended</a> by the Pennsylvania Bar Association. The PBA found that while the community holds Wallace in high regard, she “lacks the depth and breadth of experience and preparation necessary” to be a judge on the Commonwealth Court. Read her answers to the PBA questionnaire <a href="https://web.archive.org/20211016205613/https://www.pabar.org/public/news%20releases/21jec/StacyWallaceCommonwealth.pdf">here</a>.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
