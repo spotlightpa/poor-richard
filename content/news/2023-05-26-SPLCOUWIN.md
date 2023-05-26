@@ -65,7 +65,7 @@ At least one current election director is breathing a sigh of relief after Tuesd
 
 Melanie Ostrander, who runs elections in far-western Washington County, <a href="https://www.bloomberg.com/opinion/features/2023-05-07/gop-election-deniers-are-gunning-big-for-pennsylvania-local-government">recently told Bloomberg News</a> that her position could be at risk, depending on the primary results.
 
-Ashley Duff — who led a canvassing effort in that county on behalf of Audit the Vote, an election conspiracy group — had long been the main promoter of conspiratorial claims of voter fraud there. After regularly tussling with Ostrander in public meetings, she decided to run for office.
+Ashley Duff — who led a canvassing effort in that county on behalf of Audit the Vote PA, an election conspiracy group — had long been the main promoter of conspiratorial claims of voter fraud there. After regularly tussling with Ostrander in public meetings, she decided to run for office.
 
 Audit the Vote PA boosted her bid, but she nonetheless came up short.
 
