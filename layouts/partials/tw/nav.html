@@ -1,136 +1,142 @@
 <nav
   id="top"
   x-data="{ isOpen: false }"
-  class="site-nav"
+  class="flex flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans xl:justify-around"
   data-ga-category="navbar"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-label="main navigation"
 >
-  <div class="site-nav:container">
-    <div class="site-nav:content">
-      <a class="site-nav:logo" href="/" data-ga-category="logo">
-        <svg class="site-nav:logo-svg">
-          <title>Home</title>
-          <desc>Spotlight PA logo</desc>
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
-      </a>
-      <div class="site-nav:desktop" data-ga-category="desktop">
-        {{ range site.Menus.main }}
-          <a class="site-nav:item" href="{{ .URL }}" data-ga-category="item"
-            >{{ .Name }}</a
-          >
-        {{ end }}
-        <a
-          href="/search/"
-          class="site-nav:item"
-          data-ga-category="search"
-          :data-ga-action="'modal:search:open'"
-          x-data
-          @click.prevent="$dispatch('modal:search:open')"
-        >
-          <svg class="site-nav:svg-icon" aria-label="Search">
-            {{ partial "helper/svg.html" "search" }}
-          </svg>
-        </a>
-        <a
-          class="site-nav:donate-button"
-          href="/donate/"
-          data-ga-category="donate"
-        >
-          <svg
-            class="site-nav:svg-icon"
-            viewBox="0 0 20 20"
-            aria-hidden="true"
-            style="top: 1px; margin-right: 2px"
-          >
-            {{ partial "helper/svg.html" "heart" }}
-          </svg>
-          Support Us
-        </a>
-      </div>
-      <div class="site-nav:mobile">
-        <div
-          x-data="{ isOpen: false }"
-          x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
-          x-id="['dropdown-button']"
-          style="position: relative;"
-        >
-          <!-- no JS fallback link to footer -->
-          <a class="no-js:block" href="#footer">
-            <svg class="site-nav:svg-icon">
-              <title>Footer Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
-            </svg>
-          </a>
-          <button
-            class="no-js:hidden site-nav:hamburger"
-            type="button"
-            x-ref="button"
-            aria-label="Site Menu"
-            :aria-expanded="isOpen"
-            :aria-controls="$id('dropdown-button')"
-            @click="isOpen = !isOpen"
-            data-ga-category="burger"
-            data-ga-action="menu:toggle"
-          >
-            <svg class="site-nav:svg-icon">
-              <title>Site Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
-            </svg>
-          </button>
+  <h1
+    class="flex flex-[0_1_178px] justify-around sm:flex-[0_1_305px] lg:flex-[0_1_448px] xl:flex-[0_0_864px]"
+  >
+    <a class="h-max flex-[auto]" href="/" data-ga-category="logo">
+      <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
+        <title>Home</title>
+        <desc>Spotlight PA logo</desc>
+        {{ partial "helper/svg.html" "banner" }}
+      </svg>
+    </a>
+  </h1>
+  <a
+    data-sf-campaign="701Dn000000YgogIAC"
+    data-ga-category="donate"
+    class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:py-4 lg:px-7"
+    href="/donate"
+  >
+    <span
+      class="absolute inset-0 z-0 bg-red [clip-path:_polygon(0_0,_0%_100%,_15%_50%)] group-hover:bg-blue"
+    ></span>
+    <span
+      class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white lg:text-lg lg:leading-none"
+    >
+      <svg
+        class="mr-1 inline-block h-4 w-4 fill-current lg:h-5 lg:w-5"
+        aria-hidden="true"
+      >
+        {{ partial "helper/svg.html" "heart" }}
+      </svg>
+      Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
+    </span>
+  </a>
+  <p
+    class="flex-0 w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide lg:text-sm xl:text-base"
+  >
+    Journalism that gets results for Pennsylvania
+  </p>
+  <ul
+    class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
+  >
+    <li>Independent</li>
+    <li>Nonpartisan</li>
+    <li>Nonprofit</li>
+  </ul>
+  <div
+    x-data="{ open: false }"
+    class="relative -mx-3 flex h-11 w-[100vw] items-center justify-between border-t border-b bg-white"
+    :class="open ? 'px-5' : 'px-3'"
 
-          <div
-            data-ga-category="mobile"
-            x-ref="panel"
-            :id="$id('dropdown-button')"
-            x-show="isOpen"
-            x-cloak
-            x-transition.origin.top.right
-            class="site-nav:flyout"
-            @click.outside="isOpen = false; $refs.button.focus()"
-            @focusin.outside="isOpen = false"
-          >
-            <div class="py-2">
-              <a
-                class="site-nav:flyout-donate"
-                href="/donate/"
-                data-ga-category="donate"
-              >
-                <svg
-                  class="site-nav:flyout-donate-svg"
-                  viewBox="0 0 20 20"
-                  aria-hidden="true"
-                >
-                  {{ partial "helper/svg.html" "logo" }}
-                </svg>
-                Support Us
-              </a>
-            </div>
-            {{ range site.Menus.main }}
-              <a
-                class="site-nav:flyout-item"
-                href="{{ .URL }}"
-                data-ga-category="item"
-                >{{ .Name }}</a
-              >
-            {{ end }}
-            <div>
-              <a
-                href="/search/"
-                class="site-nav:flyout-item"
-                data-ga-category="search"
-                :data-ga-action="'modal:search:open'"
-                x-data
-                @click.prevent="$dispatch('modal:search:open')"
-              >
-                Search
-              </a>
-            </div>
-          </div>
+  >
+    <a
+      href="/search/"
+      class="z-20 flex flex-row-reverse items-center gap-1 text-sm font-bold leading-none tracking-wide"
+      data-ga-category="search"
+      :data-ga-action="'modal:search:open'"
+      x-data
+      @click.prevent="$dispatch('modal:search:open')"
+    >
+      <svg class="h-[14px] w-[14px]" aria-label="Search">
+        {{ partial "helper/svg.html" "search" }}
+      </svg>
+      Search
+    </a>
+
+    <button
+      class="no-js:hidden group z-20 flex flex-row items-center gap-1 text-sm font-bold leading-none tracking-wide"
+      type="button"
+      x-ref="button"
+      aria-label="Site Menu"
+      :aria-expanded="isOpen"
+      :aria-controls="$id('dropdown-button')"
+      @click="open = ! open"
+      data-ga-category="burger"
+      data-ga-action="menu:toggle"
+    >
+      Menu
+      <div class=" flex h-5 w-5 cursor-pointer items-center justify-center">
+        <div class="space-y-1">
+          <span
+            class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="open ? 'translate-y-1.5 rotate-45' : ''"
+          ></span>
+          <span
+            class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="open ? 'w-0' : ''"
+          ></span>
+          <span
+            class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="open ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+          ></span>
         </div>
       </div>
-    </div>
+    </button>
+    <ul
+      x-show="open"
+      class="absolute right-1 -top-2 left-1 z-10 flex-wrap gap-2 rounded border border-s-5 bg-white px-4 pt-12 pb-10 shadow before:mt-4 before:w-full before:border-b before:content-['']"
+      :class="open ? 'flex' : 'hidden'"
+    >
+      {{ range site.Menus.main }}
+        <li class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none">
+          <a class="flex-1 uppercase" href="{{ .URL }}" data-ga-category="item"
+            >{{ .Name }}</a
+          >
+        </li>
+      {{ end }}
+      {{ range site.Menus.main_more }}
+        <li
+          class="mt-4 flex w-full flex-wrap items-center text-sm leading-none"
+        >
+          <a
+            class="w-full flex-1 border-b py-4 font-bold uppercase"
+            href="{{ .URL }}"
+            data-ga-category="item"
+            >{{ .Name }}</a
+          >
+          {{ if .HasChildren }}
+            <ul class="my-3 flex w-full flex-wrap gap-2">
+              {{ range .Children }}
+                <li
+                  class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none"
+                >
+                  <a class="flex-1" href="{{ .URL }}" data-ga-category="item"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+
+    </ul>
   </div>
 </nav>
-{{ partial "js/view-trigger.html" "nav" }}
