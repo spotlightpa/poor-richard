@@ -1,6 +1,6 @@
 <nav
   id="top"
-  x-data="{ isOpen: false }"
+  x-data="{ isToggle: false }"
   class="flex flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans xl:justify-around"
   data-ga-category="navbar"
   data-sf-campaign="701Dn000000YgosIAC"
@@ -51,9 +51,9 @@
     <li>Nonprofit</li>
   </ul>
   <div
-    x-data="{ open: false }"
-    class="relative -mx-3 flex h-11 w-[100vw] items-center justify-between border-t border-b bg-white"
-    :class="open ? 'px-5' : 'px-3'"
+    x-data="{ toggle: false }"
+    class="relative -mx-3 flex h-11 w-[100vw] items-center justify-between md:justify-around border-t border-b bg-white"
+    :class="toggle ? 'px-5' : 'px-3'"
 
   >
     <a
@@ -71,13 +71,13 @@
     </a>
 
     <button
-      class="no-js:hidden group z-20 flex flex-row items-center gap-1 text-sm font-bold leading-none tracking-wide"
+      class="no-js:hidden group z-20 order-1 flex flex-row items-center gap-1 text-sm font-bold leading-none tracking-wide"
       type="button"
       x-ref="button"
       aria-label="Site Menu"
-      :aria-expanded="isOpen"
+      :aria-expanded="isToggle"
       :aria-controls="$id('dropdown-button')"
-      @click="open = ! open"
+      @click="toggle = ! toggle"
       data-ga-category="burger"
       data-ga-action="menu:toggle"
       x-report-click
@@ -87,26 +87,28 @@
         <div class="space-y-1">
           <span
             class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-            :class="open ? 'translate-y-1.5 rotate-45' : ''"
+            :class="toggle ? 'translate-y-1.5 rotate-45' : ''"
           ></span>
           <span
             class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-            :class="open ? 'w-0' : ''"
+            :class="toggle ? 'w-0' : ''"
           ></span>
           <span
             class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
-            :class="open ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+            :class="toggle ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
           ></span>
         </div>
       </div>
     </button>
     <ul
-      x-show="open"
-      class="absolute right-1 -top-2 left-1 z-10 flex-wrap gap-2 rounded border border-s-5 bg-white px-4 pt-12 pb-10 shadow before:mt-4 before:w-full before:border-b before:content-['']"
-      :class="open ? 'flex' : 'hidden'"
+      x-on="toggle"
+      class="absolute right-1 -top-2 ml-1 z-10 flex-wrap gap-2 rounded border border-s-5 bg-white shadow 
+       sm:rounded-none sm:border-0 sm:bg-transparent sm:justify-evenly sm:flex sm:flex-1 sm:items-center sm:mx-4 md:mx-16 sm:top-auto sm:w-auto sm:h-11 sm:bg-none sm:shadow-none sm:before:content-[] sm:relative
+      sm:max-w-lg md:max-w-5xl before:mt-4 before:w-full before:border-b before:content-['']"
+      :class="toggle ? 'flex w-auto h-auto px-4 pt-12 pb-10' : 'overflow-hidden w-0 h-0'"
     >
       {{ range site.Menus.main }}
-        <li class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none">
+        <li class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_auto]">
           <a class="flex-1 uppercase" href="{{ .URL }}" data-ga-category="item"
             >{{ .Name }}</a
           >
@@ -114,7 +116,7 @@
       {{ end }}
       {{ range site.Menus.main_more }}
         <li
-          class="mt-4 flex w-full flex-wrap items-center text-sm leading-none"
+          class="mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:hidden"
         >
           <a
             class="w-full flex-1 border-b py-4 font-bold uppercase"
