@@ -147,7 +147,7 @@ Beck también ha trabajado en KidsVoice, una agencia sin fines de lucro que defi
 
 El Colegio de Abogados del Estado la <a href="https://web.archive.org/20230314063744/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó</a> de “muy recomendada”, escribiendo que Beck posee “la más alta combinación de capacidad jurídica, experiencia e integridad.”
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">aquí</a> las respuestas de Beck al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230314064014/https://www.pabar.org/public/news%20releases/23jec/JillBeckSuperior.pdf">aquí</a> las respuestas de Beck al cuestionario de la PBA.
 
 <b>Timika Lane</b>
 
@@ -161,7 +161,7 @@ Luego pasó un año trabajando principalmente en una práctica privada de derech
 
 También trabajó varios años como asesora jurídica del senador estatal demócrata Anthony Williams antes de ser elegida miembro de la Corte de Apelaciones de Filadelfia en 2013. El tribunal de primera instancia oye apelaciones civiles, penales y de familia.
 
-La Pennsylvania Bar Association <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó a</a> Lane de “muy recomendada”, afirmando que sus “escritos están bien razonados, claros y concisos”.
+La Pennsylvania Bar Association <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">calificó a</a> Lane de “muy recomendada”, afirmando que sus “escritos están bien razonados, claros y concisos”.
 
 Lea <a href="https://web.archive.org/20230314064013/https://www.pabar.org/public/news%20releases/23jec/TimikaLaneSuperior.pdf">aquí</a> las respuestas de Lane al cuestionario de la PBA.
 
@@ -203,4 +203,4 @@ Smail dictaminó que la junta electoral no actuó con la diligencia debida al ac
 
 El Colegio de Abogados calificó a Smail de “recomendado”, “basándose en su amplia trayectoria, capacidad jurídica y temperamento”.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/HarrySmailSuperior.pdf">aquí</a> las respuestas de Smail al cuestionario de la PBA.
+Lea <a href="https://web.archive.org/20230314064057/https://www.pabar.org/public/news%20releases/23jec/HarrySmailSuperior.pdf">aquí</a> las respuestas de Smail al cuestionario de la PBA.
