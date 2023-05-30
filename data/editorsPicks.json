@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-05-26-SPLCOUWIN.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md"
   ],
   "subfeatures": [
-    "content/news/2023-05-18-SPLCOLUMBIA.md",
-    "content/news/2023-05-09-SPLCOMMANA.md"
+    "content/statecollege/2023-04-24-SPLSANDY.md",
+    "content/statecollege/2023-04-10-SPLHERMDUB.md"
   ],
   "topSlots": [
+    "content/news/2023-05-26-SPLCOUWIN.md",
     "content/statecollege/2023-05-25-SPLACCREDIT.md",
-    "content/news/2023-05-25-SPLNEWSQUIZMAY25.md",
     "content/news/2023-05-24-SPLWELCAP.md"
   ],
   "topper": []
