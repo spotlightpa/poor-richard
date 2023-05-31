@@ -18,53 +18,53 @@ name = "State College"
 url = "/statecollege/"
 weight = 2
 
-[[main_more]]
+[[main_about]]
 name = "About"
 url = "/about/"
 weight = 1
 
-[[main_more]]
+[[main_about]]
 name = "Mission"
 parent = "About"
 url = "/about/mission/"
 weight = 1
 
-[[main_more]]
+[[main_about]]
 name = "Meet the Team"
 parent = "About"
 url = "/about/staff/"
 weight = 1
 
-[[main_more]]
+[[main_about]]
 name = "Our Partners"
 parent = "About"
 url = "/about/partners"
 weight = 1
 
-[[main_more]]
+[[main_about]]
 name = "Careers"
 parent = "About"
 url = "/about/jobs/"
 weight = 1
 
-[[main_more]]
+[[main_about]]
 name = "Contact"
 parent = "About"
 url = "/contact/"
 weight = 1
 
-[[main_more]]
+[[main_support]]
 name = "Support Spotlight PA"
 url = "/support/"
 weight = 2
 
-[[main_more]]
+[[main_support]]
 name = "Ways to give"
 parent = "Support Spotlight PA"
 url = "/support/"
 weight = 1
 
-[[main_more]]
+[[main_support]]
 name = "How we're funded"
 parent = "Support Spotlight PA"
 url = "/support/"
