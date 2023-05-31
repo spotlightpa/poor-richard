@@ -58,13 +58,13 @@
     </header>
     <div class="text-base md:col-span-5 md:col-start-6">
       <form
-        id="contact-page-form"
         name="contact-page"
         action="/contact/thanks/"
         method="post"
         netlify
         netlify-honeypot="bot-field"
-        data-ga-form="contact"
+        x-data
+        x-form="contact"
         data-ga-category="inline:contact"
       >
         <p class="hidden">
@@ -127,7 +127,7 @@
 
         <div class=" mb-3">
           {{ with $recipient }}
-            <input type="hidden" name="CC" :value="{{ . }}" />
+            <input type="hidden" name="CC" value="{{ . }}" />
           {{ else }}
             <label class="font-sans font-black" for="{{ $idSubject }}"
               >Subject</label
@@ -189,7 +189,6 @@
                 class=" mr-3 h-6 w-6 rounded border border-s-4 p-1 accent-yellow hover:accent-yellow-4"
                 type="checkbox"
                 name="anonymous"
-                required
               />
             </p>
           {{ end }}

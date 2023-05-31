@@ -1,6 +1,8 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
+{{ partial "js/view-trigger.html" "footer" }}
+
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   <div class="bg-black p-4 sm:py-8 md:py-12">
@@ -52,14 +54,11 @@
 
     <form
       class=" mx-auto max-w-xl md:max-w-2xl"
-      data-ga-form="newsletters:multi"
+      x-form="newsletters:multi"
       x-data="{ hasFocused: false }"
       action="{{ $newsletterAction }}"
       method="post"
       target="_blank"
-      tabindex="-1"
-      @click.stop
-      @keydown.escape="isOpen = false"
     >
       <p
         class="text-center text-2xl font-bold tracking-wide text-white md:text-3xl"
@@ -73,23 +72,16 @@
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
-          class=" m-1 box-content w-full appearance-none rounded rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:m-0 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+          class="m-1 box-content w-full appearance-none rounded rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
           @focus.once="hasFocused = true"
           type="email"
           name="EMAIL"
           placeholder="Email address"
           required
         />
-        <span
-          class="absolute right-4 flex h-14 w-6 items-center fill-s-4 sm:relative sm:-ml-9 sm:h-8 sm:w-8"
-        >
-          <svg viewBox="0 0 1 1">
-            {{ partial "helper/svg.html" "email" }}
-          </svg>
-        </span>
 
         <button
-          class=" m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:m-0 sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+          class="m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
           type="submit"
         >
           Sign Up
@@ -115,7 +107,7 @@
               name="papost"
               value="1"
               checked
-              data-ga-button
+              x-report-click
               data-ga-action="toggle-newsletter:papost"
             />
             <span class="flex-1"
@@ -132,7 +124,7 @@
               name="investigator"
               value="1"
               checked
-              data-ga-button
+              x-report-click
               data-ga-action="toggle-newsletter:investigator"
             />
             <span class="flex-1"
@@ -149,7 +141,7 @@
               name="palocal"
               value="1"
               checked
-              data-ga-button
+              x-report-click
               data-ga-action="toggle-newsletter:palocal"
             />
             <span class="flex-1"

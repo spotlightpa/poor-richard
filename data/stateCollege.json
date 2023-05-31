@@ -1,12 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-05-22-SPLSOCIALRTK.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/statecollege/2023-04-24-SPLSANDY.md",
+    "content/statecollege/2023-04-10-SPLHERMDUB.md"
+  ],
   "topSlots": [
-    "content/statecollege/2023-05-17-SPLMAP.md",
-    "content/statecollege/2023-05-06-SPLPSUEMAIL.md",
-    "content/statecollege/2023-05-04-SPLPSUJOBS.md"
+    "content/statecollege/2023-05-25-SPLACCREDIT.md",
+    "content/statecollege/2023-05-22-SPLSOCIALRTK.md",
+    "content/statecollege/2023-05-17-SPLMAP.md"
   ],
   "topper": []
 }

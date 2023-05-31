@@ -16,9 +16,9 @@
       </svg>
     </span>
   </a>
-  <button
+  <a
     class="{{ $btnClass }} hover:bg-fb-blue hover:text-white"
-    data-share="facebook"
+    href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ .Permalink }}"
     data-ga-action="share:facebook"
     title="Share this page on Facebook"
   >
@@ -27,11 +27,10 @@
         {{ partial "helper/svg.html" "fb" }}
       </svg>
     </span>
-  </button>
-  <button
+  </a>
+  <a
     class="{{ $btnClass }} hover:bg-tw-blue hover:text-white"
-    data-share="tweet"
-    data-share-text="{{ .LinkTitle }} from @spotlightpa"
+    href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
     data-ga-action="share:twitter"
     title="Tweet about this page"
   >
@@ -40,15 +39,15 @@
         {{ partial "helper/svg.html" "twitter" }}
       </svg>
     </span>
-  </button>
+  </a>
   <button
     class="{{ $btnClass }} hover:bg-orange hover:text-white"
-    data-share="sharesheet"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
     data-ga-action="share:sharesheet"
     title="More ways to share this page"
     x-data
-    x-show="!! navigator.share"
+    x-bind="shareButton"
+    x-report-click
     x-cloak
   >
     <span class="m-auto">

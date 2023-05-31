@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-05-25-SPLHOWCAU.md"
+    "content/news/2023-05-31-SPLSHACAL.md"
   ],
   "subfeatures": [
-    "content/news/2023-04-12-SPLHOWMAJ.md",
-    "content/news/2023-01-31-SPLSPECEVENT.md"
+    "content/news/2023-04-05-SPLSPFUND.md",
+    "content/news/2023-02-22-SPLTEAMPA.md"
   ],
   "topSlots": [
-    "content/news/2023-05-24-SPLPSPANALYSIS0524.md",
-    "content/news/2023-05-24-SPLWELCAP.md",
-    "content/news/2023-05-23-SPLUNCLMO.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md",
+    "content/news/2023-05-26-SPLCOUWIN.md",
+    "content/statecollege/2023-05-25-SPLACCREDIT.md"
   ],
   "topper": []
 }

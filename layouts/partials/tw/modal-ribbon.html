@@ -11,11 +11,7 @@
   x-cloak
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
-  @modal:newsletters:open.window="isOpen = true"
-  {{ if .site.param `modal-exclude` | not }}
-    @scroll.window.once.passive="trigger()"
-  {{ end }}
-  @click="isOpen = false"
+  @open-sticky.window="show()"
   role="dialog"
   aria-modal="true"
   aria-label="Newsletter sign up"
@@ -61,9 +57,9 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
           bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
-            data-ga-form="newsletters:multi"
+            x-form="newsletters:multi"
             x-data="{ hasFocused: false }"
             action="{{ $newsletterAction }}"
             method="post"
@@ -160,7 +156,7 @@
                     name="papost"
                     value="1"
                     checked
-                    data-ga-button
+                    x-report-click
                     data-ga-action="toggle-newsletter:papost"
                   />
                   <strong>PA Post (Daily)</strong>: Top news every weekday
@@ -175,7 +171,7 @@
                     name="investigator"
                     value="1"
                     checked
-                    data-ga-button
+                    x-report-click
                     data-ga-action="toggle-newsletter:investigator"
                   />
                   <strong>The Investigator (Weekly)</strong>: Best
@@ -191,7 +187,7 @@
                     name="palocal"
                     value="1"
                     checked
-                    data-ga-button
+                    x-report-click
                     data-ga-action="toggle-newsletter:palocal"
                   />
                   <strong>PA Local (Weekly)</strong>: A fresh look at the

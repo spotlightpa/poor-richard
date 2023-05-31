@@ -68,7 +68,7 @@ In March, she <a href="https://mobile.twitter.com/KiraResistance/status/16347556
 
 Though Carluccio has been much less involved in election politics, she has criticized the state’s mail voting law. <a href="https://www.inquirer.com/politics/clout/philadelphia-sheriff-rochelle-bilal-democratic-primary-retracted-claim-20230505.html">According to The Inquirer</a>, Carluccio recently told Erie County Republicans that Act 77 should be reworked and is “bad for the commonwealth.” Asked whether the 2020 and 2022 elections were free and fair, she did not answer directly.
 
-The <a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">state bar association</a> rated Carluccio “highly recommended.” It rated McCullough “not recommended,” as she did not participate in the process.
+The <a href="https://web.archive.org/20230321092448/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">state bar association</a> rated Carluccio “highly recommended.” It rated McCullough “not recommended,” as she did not participate in the process.
 
 ## Superior Court
 
@@ -82,7 +82,7 @@ Beck, a commercial litigation attorney, made a first bid for Superior Court in 2
 
 The Pennsylvania Bar Association rated Beck “highly recommended,” writing that she has “the highest combination of legal ability, experience and integrity.”
 
-Lane, a former public school teacher and assistant public defender, has served on Philadelphia’s Court of Common Pleas since 2014. She also got <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">a “highly recommended” rating</a> from the bar association, which called her writing “well-reasoned, clear and concise.”
+Lane, a former public school teacher and assistant public defender, has served on Philadelphia’s Court of Common Pleas since 2014. She also got <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">a “highly recommended” rating</a> from the bar association, which called her writing “well-reasoned, clear and concise.”
 
 Dugan, a Philadelphia Municipal Court judge since 2007, was “not recommended” by the bar association for failure to participate in the process.
 
@@ -117,7 +117,7 @@ In the GOP primary, Martin won her state party’s endorsement. As the parliamen
 
 The bar association rated her as “recommended.” Martin’s campaign spent more than $30,000 in the most recent filing period and kept more than $60,000 on hand, raising much of the cash from Republican leadership funds and from sitting GOP lawmakers’ campaign accounts.
 
-While Prince collected endorsements from some conservative groups and lawmakers focused on gun rights, the bar association did not recommend him, <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">writing</a> that he “lacks the depth and breadth of experience and preparation necessary to take on the commanding role of judge on the Commonwealth Court.”
+While Prince collected endorsements from some conservative groups and lawmakers focused on gun rights, the bar association did not recommend him, <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">writing</a> that he “lacks the depth and breadth of experience and preparation necessary to take on the commanding role of judge on the Commonwealth Court.”
 
 Prince’s career has primarily concerned fighting gun restrictions, for instance suing the state and federal governments to block bans on <a href="https://www.firearmspolicy.org/lawsuit-challenging-trump-bump-stock-ban">bump stocks</a> and partial firearm frames that lack identifying information, which opponents have labeled <a href="https://apnews.com/article/police-pennsylvania-lawsuits-gun-politics-af013cd0d14c2e28d4669c35db8f6359">“ghost guns.”</a>
 

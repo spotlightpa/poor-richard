@@ -5,7 +5,6 @@ import {
   storeDate,
 } from "../utils/dom-utils.js";
 
-export const onTestPage = !!window.location.href.match(/debug/);
 const onTestNewsletterPage = !!window.location.href.match(/debug=newsletter/);
 
 const LAST_VISIT_KEY = "last-visit";
@@ -59,11 +58,7 @@ if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
 
 storeItem(PRIOR_FUNNEL_STATUS_KEY, funnelStatus);
 
-export function sawModalNewsletter() {
-  storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
-}
-
-export function showModalNewsletter() {
+let shouldShowModalNewsletter = (() => {
   if (onTestNewsletterPage) {
     return true;
   }
@@ -78,10 +73,21 @@ export function showModalNewsletter() {
   }
   let lastPrompt = Math.max(cameFromMCOn, sawNLModalOn);
   return now - lastPrompt > SHOW_INTERVAL;
+})();
+
+export let modalKind = (() => {
+  if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+    // eslint-disable-next-line no-console
+    console.warn("prefers-reduced-motion; aborting modal display");
+    return "none";
+  }
+  return shouldShowModalNewsletter ? "newsletter" : "sticky";
+})();
+
+export function recordModalNewsletterView() {
+  storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
 }
 
-document.addEventListener("x-form-submit", ({ detail }) => {
-  if (detail.match(/newsletters.*submit/)) {
-    storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
-  }
-});
+export function recordNewsletterSignup() {
+  storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
+}

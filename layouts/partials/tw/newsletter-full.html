@@ -28,7 +28,8 @@
         method="post"
         target="_blank"
         class="font-sans text-black"
-        data-ga-form="{{ $gaForm }}"
+        x-data
+        x-form="{{ $gaForm }}"
         data-ga-category="{{ $gaCategory }}"
       >
         {{ partial $hiddenField . }}

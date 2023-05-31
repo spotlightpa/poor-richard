@@ -6,10 +6,10 @@
   class="flex flex-wrap items-center justify-center content-center"
   data-ga-category="inline:share-donation"
 >
-  <button
+  {{ $url := "https://www.spotlightpa.com/" }}
+  <a
     class="flex items-center py-2 px-5 m-2 bg-blue-7 rounded shadow text-white font-black tracking-wider"
-    data-share="facebook"
-    data-share-url="https://www.spotlightpa.com/donate/"
+    href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
     data-ga-action="share:facebook"
     title="Share your donation on Facebook"
   >
@@ -19,12 +19,12 @@
       </svg>
     </span>
     <span> Share on Facebook </span>
-  </button>
-  <button
+  </a>
+  {{ $url = "https://www.spotlightpa.com/donate/" }}
+  {{ $text := `I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:` }}
+  <a
     class="flex items-center py-2 px-5 m-2 bg-blue-4 rounded shadow text-white font-black tracking-wider"
-    data-share="tweet"
-    data-share-text="I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:"
-    data-share-url="https://www.spotlightpa.com/donate/"
+    href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ $url }}&tw_p=tweetbutton"
     data-ga-action="share:twitter"
     title="Tweet about your donation"
   >
@@ -34,7 +34,7 @@
       </svg>
     </span>
     <span> Share on Twitter </span>
-  </button>
+  </a>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
     class="flex items-center py-2 px-5 m-2 bg-green rounded shadow text-white font-black tracking-wider no-underline"

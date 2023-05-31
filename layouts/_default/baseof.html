@@ -43,16 +43,16 @@
   >
     {{ block "header" . }}
       <header data-ga-category="header">
+        {{ block "banner" . }}
+          {{ if .Param "banner-active" }}
+            {{ partialCached "tw/banner.html" . }}
+          {{ end }}
+        {{ end }}
         {{ block "nav" . }}
           {{ if eq .Params.nav "statecollege" }}
             {{ partial "tw/nav-sc.html" . }}
           {{ else }}
             {{ partial "tw/nav.html" . }}
-          {{ end }}
-        {{ end }}
-        {{ block "banner" . }}
-          {{ if .Param "banner-active" }}
-            {{ partialCached "tw/banner.html" . }}
           {{ end }}
         {{ end }}
         {{ block "topper" . }}

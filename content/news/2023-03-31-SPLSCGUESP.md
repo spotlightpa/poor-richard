@@ -60,7 +60,7 @@ El 4 de abril es la <a href="https://www.dos.pa.gov/VotingElections/CandidatesCo
 
 ## <b>Candidatos demócratas</b>
 
-{{<picture src="external/kjfgtkv1s32n25bf01etzp730w.jpeg" description="Deborah A. Kunselman" caption="Deborah A. Kunselman" credit="Via candidate ">}} 
+{{<picture src="external/kjfgtkv1s32n25bf01etzp730w.jpeg" description="Deborah A. Kunselman" caption="Deborah A. Kunselman" credit="Via candidate ">}}
 
 <a href="https://kunselmanforpa.com/?fbclid=IwAR38Na06Z1j2CbamdmCXNFNk2vurhcNS1-UWuEZEtQf9jTtd79RINEl5xzU">Deborah Kunselman</a>
 
@@ -70,13 +70,13 @@ Antes de eso, trabajó 13 años en el sector privado, en litigios civiles y en d
 
 Fuera de su práctica, Kunselman a veces da <a href="https://www.superiorcourthistory.org/archives/410">conferencias sobre temas legales</a>, hace voluntariado como instructora de educación religiosa, y anualmente sirve como juez en el Concurso de Juicio Simulado del Condado de Beaver.
 
-<a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">Fue calificada</a> como “Altamente Recomendada” — la máxima designación — por la Pennsylvania Bar Association, que escribió que ella tiene “reputación de ser una atenta tomadora de decisiones en apelación, abierta a la persuasión, y de proceder en cada asunto con integridad y alto carácter”.
+<a href="https://web.archive.org/20230321092448/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">Fue calificada</a> como “Altamente Recomendada” — la máxima designación — por la Pennsylvania Bar Association, que escribió que ella tiene “reputación de ser una atenta tomadora de decisiones en apelación, abierta a la persuasión, y de proceder en cada asunto con integridad y alto carácter”.
 
 En su cuestionario de la PBA, Kunselman escribió que su “pasión por la ley y el amor de escribir opiniones” la llevó a postularse para la Corte Suprema del estado. Dijo que espera escribir opiniones sin ambigüedades, que sienten precedentes y que puedan ser entendidas claramente por los abogados.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/DeborahKunselmanSupreme.pdf">aquí</a> el cuestionario de Kunselman sobre la PBA.
+Lea <a href="https://web.archive.org/20230314064241/https://www.pabar.org/public/news%20releases/23jec/DeborahKunselmanSupreme.pdf">aquí</a> el cuestionario de Kunselman sobre la PBA.
 
-{{<picture src="external/4x894j7de5j7hyhfjbv9rtnxdc.jpeg" description="Daniel McCaffery" caption="Daniel McCaffery" credit="Via campaign Facebook page">}} 
+{{<picture src="external/4x894j7de5j7hyhfjbv9rtnxdc.jpeg" description="Daniel McCaffery" caption="Daniel McCaffery" credit="Via campaign Facebook page">}}
 
 <a href="https://judgemccaffery.com/">Daniel McCaffery</a>
 
@@ -90,15 +90,15 @@ Antes de ser elegido miembro de la Corte de Causas Comunes de Filadelfia en 2013
 
 McCaffery es el candidato apoyado por el Partido Demócrata de Pensilvania, y <a href="https://judgemccaffery.com/endorsements/">en su página web también figuran los apoyos</a> de la Asociación de Bomberos Profesionales de Pensilvania, la Conferencia de Teamsters de Pensilvania y el Consejo de Oficios de la Construcción del Estado de Pensilvania.
 
-Fue <a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">calificado</a> como “Altamente Recomendado” por el Colegio de Abogados de Pensilvania, que escribió que tiene “sólidos conocimientos de los principios jurídicos” y un historial de “participación en la comunidad.”
+Fue <a href="https://web.archive.org/20230321092448/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">calificado</a> como “Altamente Recomendado” por el Colegio de Abogados de Pensilvania, que escribió que tiene “sólidos conocimientos de los principios jurídicos” y un historial de “participación en la comunidad.”
 
 McCaffery escribió en su cuestionario de la PBA que se presenta al Tribunal Supremo del estado porque piensa que “las instituciones democráticas, incluido el poder judicial, están bajo presión”. Dijo que espera restaurar la confianza en el sistema de las cortes y que “abordará cada caso de manera no partidista.”
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/DanielMcCafferySupreme.pdf">aquí</a> el cuestionario de McCaffery sobre la PBA<a href="https://www.pabar.org/public/news%20releases/23jec/DanielMcCafferySupreme.pdf">. </a>
+Lea <a href="https://web.archive.org/20230314063935/https://www.pabar.org/public/news%20releases/23jec/DanielMcCafferySupreme.pdf">aquí</a> el cuestionario de McCaffery sobre la PBA.
 
 ## <b>Candidatos republicanos</b>
 
-{{<picture src="external/h5qj78jhctxxpa256886th33sm.jpeg" description="Carolyn Carluccio" caption="Carolyn Carluccio" credit="Via campaign Facebook page">}} 
+{{<picture src="external/h5qj78jhctxxpa256886th33sm.jpeg" description="Carolyn Carluccio" caption="Carolyn Carluccio" credit="Via campaign Facebook page">}}
 
 <a href="https://www.facebook.com/judgecarluccioforsupremecourt">Carolyn Carluccio</a>
 
@@ -112,13 +112,13 @@ Carluccio fue elegida unánimemente por sus compañeros para ocupar el cargo de 
 
 El Partido Republicano de Pensilvania dio su respaldo a Carluccio a principios de febrero, eligiéndola por sobre otro candidato que había corrido anteriormente para la Corte Suprema del estado.
 
-Fue <a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">calificada</a> de “Altamente Recomendada” por el Colegio de Abogados de Pensilvania, que la calificó de “jurista muy respetada”.
+Fue <a href="https://web.archive.org/20230321092448/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">calificada</a> de “Altamente Recomendada” por el Colegio de Abogados de Pensilvania, que la calificó de “jurista muy respetada”.
 
 En su cuestionario de la PBA, escribió que “quiere un sistema judicial que sea justo e imparcial”. También escribió que su “diversa experiencia en los tribunales” es una ventaja, citando su experiencia en ambos lados del sistema judicial, así como en casos familiares y civiles.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/23jec/CarolynCarluccioSupreme.pdf">aquí</a> el cuestionario de Carluccio sobre la PBA.
+Lea <a href="https://web.archive.org/20230314064014/https://www.pabar.org/public/news%20releases/23jec/CarolynCarluccioSupreme.pdf">aquí</a> el cuestionario de Carluccio sobre la PBA.
 
-{{<picture src="external/g4vgd8cyzqbqehhgc48rgz4e94.jpeg" description="Patricia McCullough" caption="Patricia McCullough" credit="Via candidate&#39;s 2021 campaign website">}} 
+{{<picture src="external/g4vgd8cyzqbqehhgc48rgz4e94.jpeg" description="Patricia McCullough" caption="Patricia McCullough" credit="Via candidate&#39;s 2021 campaign website">}}
 
 Patricia McCullough
 
@@ -148,12 +148,12 @@ Trabajó en el sector privado durante cinco años, hasta que fue nombrada jueza 
 
 En el <a href="https://web.archive.org/web/20220202200503/https:/www.patriciaforjustice.com/">sitio web de la campaña</a> para su candidatura a la Corte Suprema estatal en 2021, McCullough escribió que se presentaba como constitucionalista y que su creencia en la constitución estatal y la federal alimentaba su deseo de formar parte de la Corte Suprema estatal.
 
-McCullough no completó el cuestionario de la Asociación de Abogados de Pensilvania (PBA), según Charles Eppolito III, presidente de la <a href="https://www.pabar.org/public/committees/JUD03/OrgRules.pdf">Comisión de Evaluación Judicial</a> de la organización — un panel de miembros de la PBA que evalúan a los candidatos judiciales. Los candidatos que no completan el proceso reciben una calificación de “No Recomendado por no participar”, dijo.
+McCullough no completó el cuestionario de la Asociación de Abogados de Pensilvania (PBA), según Charles Eppolito III, presidente de la <a href="https://web.archive.org/20211016075110/https://www.pabar.org/public/committees/JUD03/OrgRules.pdf">Comisión de Evaluación Judicial</a> de la organización — un panel de miembros de la PBA que evalúan a los candidatos judiciales. Los candidatos que no completan el proceso reciben una calificación de “No Recomendado por no participar”, dijo.
 
-Durante su candidatura a la Corte Suprema del estado en 2021, McCullough <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2021/May/JEC-Releases-One-Additional-Appellate-Court-Candidate-Rating">recibió</a> una calificación de “No recomendada” por parte de la PBA.
+Durante su candidatura a la Corte Suprema del estado en 2021, McCullough <a href="https://web.archive.org/20211016062943/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2021/May/JEC-Releases-One-Additional-Appellate-Court-Candidate-Rating">recibió</a> una calificación de “No recomendada” por parte de la PBA.
 
-La Comisión de Evaluación Judicial de la organización <a href="https://www.pabar.org/site/News-and-Publications/News/News-Releases/2021/May/JEC-Releases-One-Additional-Appellate-Court-Candidate-Rating">escribió que</a> tuvo conocimiento de la “presunta conducta de McCullough en un empleo anterior”, y que cuando los miembros interrogaron a McCullough sobre el tema, ella no respondió a las preguntas “a satisfacción de la comisión”.
+La Comisión de Evaluación Judicial de la organización <a href="https://web.archive.org/20211016062943/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2021/May/JEC-Releases-One-Additional-Appellate-Court-Candidate-Rating">escribió que</a> tuvo conocimiento de la “presunta conducta de McCullough en un empleo anterior”, y que cuando los miembros interrogaron a McCullough sobre el tema, ella no respondió a las preguntas “a satisfacción de la comisión”.
 
-Lea <a href="https://www.pabar.org/public/news%20releases/21jec/PatriciaMcCulloughSupreme.pdf">aquí</a> el cuestionario de McCullough para la PBA 2021.
+Lea <a href="https://web.archive.org/20230308002901/https://www.pabar.org/public/news%20releases/21jec/PatriciaMcCulloughSupreme.pdf">aquí</a> el cuestionario de McCullough para la PBA 2021.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
