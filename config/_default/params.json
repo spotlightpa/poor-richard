@@ -1,6 +1,6 @@
 {
   "banner": "Everything you need to know for the 2023 Pa. primary. \u003cstrong\u003eVisit our Election Center »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#000",
   "banner-link": "/elections",
   "banner-text-color": "#FFF",
@@ -150,16 +150,16 @@
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CLICK TO CONTRIBUTE NOW »",
-  "support-hed": "BEFORE YOU GO, A QUICK REQUEST...",
+  "support-hed": "WE HAVE ONLY 3 DAYS LEFT...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider supporting Spotlight PA's journalism and taking advantage of our special, limited-time matching gift offer as part of our Spring Member Drive.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution?\n\n\u003cstrong\u003eAs a special bonus, all gifts made before June 3 as part of our Spring Member Drive will be DOUBLED by the Lenfest Institute for Journalism. \u003c/strong\u003e\n\nYour gift can go twice as far if you take just one minute to show us your support now. You've been reading our work. Now join thousands of your friends and neighbors in supporting it.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA\n228 Walnut St., #11728\nHarrisburg, PA 17108-1728",
+  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider supporting Spotlight PA's journalism and taking advantage of our special, limited-time matching gift offer as part of our Spring Member Drive.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution?\n\n\u003cstrong\u003eAs a special bonus, all gifts made before midnight Saturday as part of our Spring Member Drive will be DOUBLED by the Lenfest Institute for Journalism. \u003c/strong\u003e\n\nYour gift can go twice as far if you take just one minute to show us your support now. But hurry! This matching offer will expire soon. Join thousands of your friends and neighbors in supporting this work.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA\n228 Walnut St., #11728\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "topper-active": true,
   "topper-bg-color": "#f6c831",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01j7/d6eg/spring-campaign-topper-tracker-13-.svg"
+    "https://files.data.spotlightpa.org/uploads/01j7/ftzk/spring-campaign-topper-tracker-14-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#f6c831",
@@ -167,7 +167,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01j7/d6eg/spring-campaign-2023-rectangles-14-.svg"
+    "https://files.data.spotlightpa.org/uploads/01j7/ftzm/spring-campaign-2023-rectangles-15-.svg"
   ],
   "topper-mobile-width": 1024
 }
