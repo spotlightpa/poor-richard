@@ -122,6 +122,7 @@
     "
     :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : 'overflow-hidden w-0'"
     x-on="toggle"
+    x-cloak
   >
     {{ range site.Menus.main }}
       <li
