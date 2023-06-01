@@ -1,13 +1,13 @@
 <div
   id="top"
-  x-data="{ isToggle: false }"
+  x-data="{ isOpen: false }"
   class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pt-2 font-sans"
   data-ga-category="navbar"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-label="main navigation"
 >
   <h1
-    class=" max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
+    class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
   >
     <a class="h-max flex-1 sm:mx-auto" href="/" data-ga-category="logo">
       <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
@@ -20,7 +20,7 @@
   <a
     data-sf-campaign="701Dn000000YgogIAC"
     data-ga-category="donate"
-    class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:py-4 lg:px-7"
+    class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:px-7 lg:py-4"
     href="/donate"
   >
     <span
@@ -53,7 +53,9 @@
 </div>
 <nav
   x-data="{ toggle: false }"
-  class="relative flex h-11 w-full items-stretch justify-between border-t border-b bg-white font-sans md:justify-center"
+  class="
+    relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white font-sans md:justify-center
+  "
   :class="toggle ? 'px-5 sm:px-3' : 'px-3'"
 >
   <a
@@ -71,12 +73,14 @@
   </a>
 
   <button
-    class="no-js:hidden group z-20 order-1 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+    class="
+      no-js:hidden group z-20 order-1 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
+    "
     :class="toggle ? 'sm:mr-3 sm:-ml-3' : 'mx-0'"
     type="button"
     x-ref="button"
     aria-label="Site Menu"
-    :aria-expanded="isToggle"
+    :aria-expanded="toggle"
     :aria-controls="$id('dropdown-button')"
     @click="toggle = ! toggle"
     data-ga-category="burger"
@@ -84,29 +88,35 @@
     x-report-click
   >
     Menu
-    <div class=" flex h-5 w-5 cursor-pointer items-center justify-center">
+    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
       <div class="space-y-1">
         <span
-          class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
           :class="toggle ? 'translate-y-1.5 rotate-45' : ''"
         ></span>
         <span
-          class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
           :class="toggle ? 'w-0 opacity-0' : 'opacity-1'"
         ></span>
         <span
-          class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
+          class="
+            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
           :class="toggle ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
         ></span>
       </div>
     </div>
   </button>
   <ul
+    class="
+      -top-2 right-1 z-10 ml-1 box-content flex-wrap gap-2 bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
+    "
+    :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-12 pb-10 sm:px-16 sm:pt-0 sm:pb-0 sm:overflow-visible' : 'overflow-hidden w-0'"
     x-on="toggle"
-    class="right-1 -top-2 z-10 ml-1 box-content flex-wrap gap-2 rounded border border-s-5 bg-white shadow before:mt-4 before:w-full 
-       before:border-b before:content-[''] sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent
-      sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]"
-    :class="toggle ? 'max-sm:absolute flex w-auto h-auto px-4 pt-12 pb-10 sm:px-16 sm:pt-0 sm:pb-0 sm:overflow-visible' : 'overflow-hidden w-0 h-0'"
   >
     {{ range site.Menus.main }}
       <li
@@ -122,12 +132,15 @@
     {{ end }}
     {{ range site.Menus.main_about }}
       <li
-        class="mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none sm:absolute sm:z-10
-          sm:w-0 md:my-0 md:flex md:h-11 md:flex-[0_0_auto] md:overflow-visible"
-        :class="toggle ? 'sm:block sm:-right-16 sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 md:absolute md:h-auto md:-top-4 md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 md:top-0 md:right-1'"
+        class="
+          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none sm:absolute sm:z-10 md:my-0 md:flex md:flex-[0_0_auto] md:overflow-visible
+        "
+        :class="toggle ? 'sm:block sm:-right-16 sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-auto md:absolute md:h-auto md:-top-4 md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11 md:top-0 md:right-1'"
       >
         <a
-          class="sm:h block w-full flex-1 border-b py-4 font-bold uppercase sm:flex sm:w-full sm:items-center sm:capitalize"
+          class="
+            sm:h block w-full flex-1 border-b py-4 font-bold uppercase sm:flex sm:w-full sm:items-center sm:capitalize
+          "
           :class="toggle ? 'sm:py-0 sm:h-11 md:justify-start' : 'md:py-0 md:justify-end'"
           href="{{ .URL }}"
           data-ga-category="item"
@@ -135,8 +148,10 @@
         >
         {{ if .HasChildren }}
           <ul
-            class="my-3 flex w-full flex-wrap gap-2"
-            :class="toggle ? 'md:overflow-visible md:w-full sm:w-48 ' : 'md:hidden md:w-0'"
+            class="
+              my-3 flex w-full flex-wrap gap-2
+            "
+            :class="toggle ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
           >
             {{ range .Children }}
               <li
@@ -154,12 +169,13 @@
 
     {{ range site.Menus.main_support }}
       <li
-        class="mt-4 box-content flex w-full flex-wrap items-center text-sm leading-none sm:absolute"
+        class="
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute
+        "
         :class="toggle ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : 'sm:overflow-hidden sm:w-0'"
       >
         <a
           class="w-full flex-1 border-b py-4 font-bold uppercase sm:block sm:w-full md:capitalize"
-          :class=""
           href="{{ .URL }}"
           data-ga-category="item"
           >{{ .Name }}</a
@@ -181,11 +197,15 @@
     {{ end }}
     {{ range site.Menus.main_more }}
       <li
-        class="mt-4 box-content flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44"
+        class="
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44
+        "
         :class="toggle ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-[35px] sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : 'sm:overflow-hidden sm:w-0'"
       >
         <a
-          class="sm:h block w-full flex-1 border-b py-4 font-bold uppercase sm:flex sm:w-full sm:items-center sm:capitalize"
+          class="
+            sm:h block w-full flex-1 border-b py-4 font-bold uppercase sm:flex sm:w-full sm:items-center sm:capitalize
+          "
           :class="toggle ? 'sm:py-0 sm:h-11 md:justify-start' : 'md:py-0 md:justify-end'"
           href="{{ .URL }}"
           data-ga-category="item"
