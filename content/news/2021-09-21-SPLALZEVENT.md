@@ -46,9 +46,9 @@ Spotlight PA has also compiled a list of resources for people caring for others 
 
 - The University of Pittsburgh Alzheimer’s Disease Research Center’s <a href="https://www.adrc.pitt.edu/about/memory-evaluation/">memory evaluation</a> service
 
-- UCLA Alzheimer and Dementia Care Program’s <a href="https://connect.uclahealth.org/2018/06/06/online-training-videos-provide-coping-skills-for-caregivers-of-people-with-dementia/">caregiver training videos</a>
+- UCLA Alzheimer and Dementia Care Program’s <a href="https://web.archive.org/20210905032026/https://connect.uclahealth.org/2018/06/06/online-training-videos-provide-coping-skills-for-caregivers-of-people-with-dementia/">caregiver training videos</a>
 
-- Pitt’s <a href="https://www.adrc.pitt.edu/brite-wellness-program-aims-to-help-seniors-with-mild-memory-problems/">Brite Wellness Program</a>, which works to stimulate the brain and body of those with mild cognitive impairment
+- Pitt’s <a href="https://web.archive.org/20210906041726/https://www.adrc.pitt.edu/brite-wellness-program-aims-to-help-seniors-with-mild-memory-problems/">Brite Wellness Program</a>, which works to stimulate the brain and body of those with mild cognitive impairment
 
 - <a href="http://alleghenycountyda.us/project-lifesaver/">Project Lifesaver</a> is a service offered by law enforcement and emergency responders “to find citizens enrolled in the program when they become lost”
 
