@@ -49,11 +49,7 @@
           {{ end }}
         {{ end }}
         {{ block "nav" . }}
-          {{ if eq .Params.nav "statecollege" }}
-            {{ partial "tw/nav-sc.html" . }}
-          {{ else }}
-            {{ partial "tw/nav.html" . }}
-          {{ end }}
+          {{ partial "tw/nav.html" . }}
         {{ end }}
         {{ block "topper" . }}
           {{ if .Param "topper-active" }}
