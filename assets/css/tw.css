@@ -207,7 +207,9 @@
 .btn-donate-lg {
   @apply inline-flex min-w-[145px] items-center justify-center rounded bg-red px-3 py-5 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px];
 }
-
+.clip-triangle {
+  @apply [clip-path:_polygon(0_0,_0%_100%,_15%_50%)];
+}
 
 .bg-key {
   background-image: url("/featured/img/icon__key__graphic.png");
