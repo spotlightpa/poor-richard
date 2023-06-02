@@ -321,9 +321,16 @@
 .no-js\:block {
   display: none;
 }
+.no-js\:flex {
+  display: none;
+}
 .has-old-js .no-js\:block {
   display: block;
 }
+.has-old-js .no-js\:flex {
+  display: flex;
+}
+
 .has-old-js .no-js\:hidden {
   display: none;
 }
