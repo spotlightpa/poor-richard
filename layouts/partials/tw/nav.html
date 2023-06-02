@@ -28,7 +28,7 @@
     href="/donate"
   >
     <span
-      class="absolute inset-0 z-0 bg-red clip-triangle group-hover:bg-blue"
+      class="clip-triangle absolute inset-0 z-0 bg-red group-hover:bg-blue"
     ></span>
     <span
       class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white lg:text-lg lg:leading-none"
@@ -59,7 +59,7 @@
   x-data="{ toggle: false }"
   x-id="['dropdown-button']"
   class="
-    relative flex h-11 w-full px-3 items-stretch justify-between border-b border-t bg-white font-sans md:justify-center
+    relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
   "
   :class="toggle ? 'px-5 sm:px-3' : ''"
   x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
@@ -82,7 +82,7 @@
 
   <button
     class="
-      no-js:hidden group z-20 order-1 flex flex-[0_1_70px] flex-row items-center mx-0 gap-1 self-stretch text-sm font-bold leading-none tracking-wide
+      no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
     "
     :class="toggle ? 'sm:mr-3 sm:-ml-3' : ''"
     type="button"
@@ -122,7 +122,7 @@
   </button>
   <ul
     class="
-      -top-2 right-1 z-10 ml-1 box-content overflow-hidden w-0 flex-wrap gap-2 bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
+      -top-2 right-1 z-10 ml-1 box-content w-0 flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
     "
     :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
     x-on="toggle"
@@ -131,7 +131,7 @@
     {{ range site.Menus.main }}
       <li
         class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_auto] md:justify-center"
-          >
+      >
         <a
           class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
           href="{{ .URL }}"
@@ -143,10 +143,10 @@
     {{ range site.Menus.main_about }}
       <li
         class="
-          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none sm:absolute sm:z-10 sm:overflow-hidden sm:w-0 sm:h-11 md:my-0 md:flex md:flex-[0_0_auto] md:overflow-visible
+          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden md:my-0 md:flex md:flex-[0_0_auto] md:overflow-visible
         "
         :class="toggle ? 'sm:block sm:-right-16 sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-auto md:absolute md:h-auto md:-top-4 md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11 md:top-0 md:right-1'"
-          >
+      >
         <a
           class="
             sm:h block w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
@@ -183,10 +183,10 @@
     {{ range site.Menus.main_support }}
       <li
         class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:overflow-hidden sm:w-0
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:w-0 sm:overflow-hidden
         "
         :class="toggle ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
-          >
+      >
         <a
           class="w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:w-full md:capitalize"
           href="{{ .URL }}"
@@ -219,7 +219,7 @@
     {{ range site.Menus.main_more }}
       <li
         class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:overflow-hidden sm:w-0
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:w-0 sm:overflow-hidden
         "
         :class="toggle ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
       >
@@ -271,9 +271,9 @@
 ></span>
 <span
   class="
-  pt-14
-  sm:pb-9
-  w-5 -translate-y-1.5 -rotate-45
+  w-5
+  -translate-y-1.5
+  -rotate-45 pt-14 sm:pb-9
 "
   style="display:none;"
 ></span>
