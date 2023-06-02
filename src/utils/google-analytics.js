@@ -185,13 +185,13 @@ export function addGAListeners() {
     console.warn("could not report page view!");
     return;
   }
-  let { gaId, gaPageTitle, gaPagePath, gaPageUrl } = el.dataset;
+  let { gaId, gaPageTitle, gaPagePath, gaPageUrl, byline } = el.dataset;
 
   let kind = allClosest(document.body, "[data-ga-label]")
     .map((el) => el.dataset.gaLabel)
     .join(":");
   // TODO: Add byline; 404
-  callGA4("page_view", { pageCategory: kind, title: gaPageTitle });
+  callGA4("page_view", { pageCategory: kind, title: gaPageTitle, byline });
 
   callGA("create", gaId, "auto");
   callGA("send", "pageview", gaPagePath, {
