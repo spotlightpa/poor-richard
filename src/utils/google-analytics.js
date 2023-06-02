@@ -187,12 +187,12 @@ export function addGAListeners() {
   }
   let { gaId, gaPageTitle, gaPagePath, gaPageUrl, byline } = el.dataset;
 
-  let kind = allClosest(document.body, "[data-ga-label]")
-    .map((el) => el.dataset.gaLabel)
+  let pageCategory = allClosest(document.body, "[data-page-cat]")
+    .map((el) => el.dataset.pageCat)
     .join(":");
   // TODO: Add byline; 404
   callGA4("page_view", {
-    pageCategory: kind,
+    pageCategory,
     title: gaPageTitle,
     byline,
     funnelStatus,
