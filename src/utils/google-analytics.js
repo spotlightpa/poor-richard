@@ -11,6 +11,7 @@ export const DO_NOT_TRACK_KEY = "do-not-track";
 
 let dnt = loadItem(DO_NOT_TRACK_KEY);
 
+// eslint-disable-next-line no-unused-vars
 function sendPlausible(action, params = {}) {
   if (dnt) {
     // eslint-disable-next-line no-console
@@ -44,6 +45,20 @@ function callGA(...args) {
     return;
   }
   galite(...args);
+}
+
+window.dataLayer = window.dataLayer || [];
+
+function callGA4(action, params = {}) {
+  if (dnt) {
+    // eslint-disable-next-line no-console
+    console.log("GA4", action, params);
+    return;
+  }
+  window.dataLayer.push({
+    event: action,
+    ...params,
+  });
 }
 
 function buildGA(action, params = {}) {
@@ -85,7 +100,7 @@ function buildGA(action, params = {}) {
 }
 
 function callAnalytics(action, params = {}) {
-  sendPlausible(action, params);
+  callGA4(action, params);
   callGA(...buildGA(action, params));
 }
 
@@ -176,7 +191,7 @@ export function addGAListeners() {
     .map((el) => el.dataset.gaLabel)
     .join(":");
   // TODO: Add byline; 404
-  sendPlausible("pageview", { pageCategory: kind, title: gaPageTitle });
+  callGA4("page_view", { pageCategory: kind, title: gaPageTitle });
 
   callGA("create", gaId, "auto");
   callGA("send", "pageview", gaPagePath, {
@@ -192,12 +207,12 @@ export function addGAListeners() {
   });
 
   window.addEventListener("error", (ev) => {
-    sendPlausible("error", {
-      message: ev.message,
-    });
     callGA("send", "exception", {
       exDescription: ev.message,
       exFatal: true,
+    });
+    callGA4("error", {
+      message: ev.message,
     });
   });
 
