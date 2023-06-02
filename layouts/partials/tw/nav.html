@@ -62,6 +62,9 @@
     relative flex h-11 w-full px-3 items-stretch justify-between border-b border-t bg-white font-sans md:justify-center
   "
   :class="toggle ? 'px-5 sm:px-3' : ''"
+  x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
+  @click.outside="toggle = false; $refs.button.focus()"
+  @focusin.outside="toggle = false"
 >
   <a
     href="/search/"
