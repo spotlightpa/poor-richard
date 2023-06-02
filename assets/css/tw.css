@@ -208,67 +208,6 @@
   @apply inline-flex min-w-[145px] items-center justify-center rounded bg-red px-3 py-5 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px];
 }
 
-.site-nav {
-  @apply bg-black px-4;
-  print-color-adjust: exact;
-}
-
-.site-nav\:container {
-  @apply mx-auto max-w-prose lg:max-w-screen-lg;
-}
-
-.site-nav\:content {
-  @apply flex h-16 items-center justify-between;
-}
-
-.site-nav\:logo {
-  @apply inline-flex flex-shrink-0 text-white hover:text-yellow;
-}
-
-.site-nav\:logo-svg {
-  @apply h-12 w-60 max-w-full fill-current pr-4 sm:pr-0;
-}
-
-.site-nav\:desktop {
-  @apply hidden w-full items-center justify-end space-x-4 font-sans lg:flex;
-}
-
-.site-nav\:item {
-  @apply uppercase tracking-tight text-white duration-500 hover:text-yellow;
-}
-
-.site-nav\:svg-icon {
-  @apply relative inline-block h-4 w-4 fill-current align-middle;
-}
-
-.site-nav\:donate-button {
-  @apply flex min-w-max items-baseline rounded bg-red px-2 py-1 font-semibold uppercase text-white;
-}
-
-.site-nav\:mobile {
-  @apply flex items-center font-sans lg:hidden;
-}
-
-.site-nav\:hamburger {
-  @apply rounded border border-white px-4 py-2 text-white;
-}
-
-.site-nav\:flyout {
-  @apply absolute right-0 z-10 mt-2 w-48 min-w-min rounded border border-s-7 shadow;
-  @apply space-y-2 bg-black px-4 py-2 text-lg uppercase text-white;
-}
-
-.site-nav\:flyout-donate {
-  @apply inline-flex items-center whitespace-nowrap rounded bg-red px-3 py-2 font-semibold uppercase text-white hover:shadow-beige;
-}
-
-.site-nav\:flyout-donate-svg {
-  @apply mr-1 inline h-6 w-6 fill-current;
-}
-
-.site-nav\:flyout-item {
-  @apply block w-full transition-colors duration-500 hover:text-yellow;
-}
 
 .bg-key {
   background-image: url("/featured/img/icon__key__graphic.png");
