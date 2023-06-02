@@ -1,6 +1,6 @@
 import galite from "ga-lite/src/ga-lite.js";
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
-import { recordNewsletterSignup } from "./metrics.js";
+import { recordNewsletterSignup, funnelStatus } from "./metrics.js";
 
 // Ensure a Google Analytics window func
 if (!window.ga) {
@@ -191,7 +191,12 @@ export function addGAListeners() {
     .map((el) => el.dataset.gaLabel)
     .join(":");
   // TODO: Add byline; 404
-  callGA4("page_view", { pageCategory: kind, title: gaPageTitle, byline });
+  callGA4("page_view", {
+    pageCategory: kind,
+    title: gaPageTitle,
+    byline,
+    funnelStatus,
+  });
 
   callGA("create", gaId, "auto");
   callGA("send", "pageview", gaPagePath, {
