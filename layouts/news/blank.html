@@ -22,7 +22,7 @@
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
-  <body data-ga-label="{{ $pageCat }}:blank" data-ga-category="featured">
+  <body data-page-cat="{{ $pageCat }}:blank" data-ga-category="featured">
     {{ .Content }}
     {{ partial "header/ld-json.html" . }}
   </body>
