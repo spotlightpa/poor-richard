@@ -25,7 +25,7 @@
 }
 
 .featured-content > h2 {
-  @apply mt-8 mb-2 font-sans text-4xl font-semibold leading-tight;
+  @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
 }
 
 .featured-content > h3 {
@@ -34,19 +34,19 @@
 
 .featured-content > h3:before {
   content: "";
-  @apply mt-16 mb-4 block h-1 w-12 bg-yellow;
+  @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
 }
 
 .featured-content > h4 {
-  @apply mt-8 mb-4 font-sans text-lg font-semibold leading-tight;
+  @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
 }
 
 .featured-content > h5 {
-  @apply mt-6 mb-2 text-base font-semibold leading-tight;
+  @apply mb-2 mt-6 text-base font-semibold leading-tight;
 }
 
 .featured-content > h6 {
-  @apply mt-4 mb-1 text-base italic leading-tight;
+  @apply mb-1 mt-4 text-base italic leading-tight;
 }
 
 .featured-content > ul {
@@ -58,7 +58,7 @@
 }
 
 .article-content > :where(p, aside, figure, ol, ul, hr) {
-  @apply mt-4 mb-4;
+  @apply mb-4 mt-4;
 }
 
 .article-content > :where(iframe) {
@@ -120,7 +120,7 @@
 }
 
 .article-content :where(code) {
-  @apply -my-[2px] mx-1 rounded-sm bg-s-2 py-[2px] px-1 text-red-8;
+  @apply -my-[2px] mx-1 rounded-sm bg-s-2 px-1 py-[2px] text-red-8;
 }
 .article-content :where(a) {
   @apply text-navy underline;
