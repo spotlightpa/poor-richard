@@ -1,3 +1,7 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
+
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 
 {{ $hasPromo := .Param "promo-active" }}
