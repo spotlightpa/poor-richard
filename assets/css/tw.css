@@ -322,7 +322,7 @@
   display: none;
 }
 .no-js\:flex {
-  display: flex;
+  display: none;
 }
 .has-old-js .no-js\:block {
   display: block;
