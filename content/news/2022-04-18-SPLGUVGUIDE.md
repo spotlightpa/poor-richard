@@ -43,13 +43,13 @@ Here’s what you need to know about the 2022 primary governor election before g
 
 {{<picture src="external/rsrsf5g73p6jqjx3mtpxtte35m.jpeg" description="Josh Shapiro has been involved in Pennsylvania politics since 2004." caption="Josh Shapiro has been involved in Pennsylvania politics since 2004." credit="THOMAS HENGGE / Philadelphia Inquirer">}} 
 
-<b>Josh Shapiro </b>|<b> </b><a href="https://joshshapiro.org/joshs-record/">Website</a>
+<b>Josh Shapiro </b>|<b> </b><a href="https://web.archive.org/20220418164034/https://joshshapiro.org/joshs-record/">Website</a>
 
 Elected attorney general in 2016, Shapiro has been involved in Pennsylvania politics since 2004 — first as a state representative, then as a county commissioner in Montgomery County. As Pennsylvania’s top prosecutor, Shapiro investigated sexual abuse perpetrated by members of the Catholic Church and pursued cases relating to the opioid epidemic.
 
 Shapiro has listed defending voting access, maintaining abortion rights, and rebuilding infrastructure as major tenets of his campaign.
 
-<b>Supports repealing Pa.’s no-excuse mail voting law? </b>No. Shapiro has said he would <a href="https://joshshapiro.org/votingrights/">reject any effort</a> to repeal the law known as Act 77.
+<b>Supports repealing Pa.’s no-excuse mail voting law? </b>No. Shapiro has said he would <a href="https://web.archive.org/20220418163955/https://joshshapiro.org/votingrights/">reject any effort</a> to repeal the law known as Act 77.
 
 <b>Endorsements:</b> Pennsylvania Democratic Party, AFL-CIO
 
@@ -105,7 +105,7 @@ Corman replaced his father as a state senator in 1999. He served as the state Se
 
 {{<picture src="external/c386a6f4s4prvnknk4gbkjkfzw.jpeg" description="Joe Gale became a Montgomery County commissioner after being elected in an upset in 2015." caption="Joe Gale became a Montgomery County commissioner after being elected in an upset in 2015." credit="Michael Bryant / Philadelphia Inquirer ">}} 
 
-<b>Joe Gale</b> | <a href="http://www.joegale.com/about-joe.html">Website</a>
+<b>Joe Gale</b> | <a href="https://web.archive.org/20220405131840/http://www.joegale.com/about-joe.html">Website</a>
 
 Gale became a Montgomery County commissioner after being elected in an upset in 2015 with virtually no political experience. Gale labels himself an outsider and considers the Pennsylvania Republican party insufficiently conservative. In particular, he has criticized the Republican establishment, including his opponents Lou Barletta and Doug Mastriano.
 
@@ -165,7 +165,7 @@ Hart’s campaign has focused on deregulating corporations and lowering taxes, e
 
 {{<picture src="external/7qwb9qap8g0ndcawxh1vw8z0g0.jpeg" description="Doug Mastriano began serving as a state senator in 2019." caption="Doug Mastriano began serving as a state senator in 2019." credit="Amanda Berg / For Spotlight PA">}} 
 
-<b>Doug Mastriano </b>| <a href="https://www.doug4gov.com/">Website</a>
+<b>Doug Mastriano </b>| <a href="https://web.archive.org/20220411032228/https://www.doug4gov.com/">Website</a>
 
 A retired Army colonel, Mastriano began serving as a state senator in 2019 and <a href="https://www.penncapital-star.com/commentary/new-yorker-profile-positions-pa-s-mastriano-as-icon-of-christian-nationalism-tuesday-morning-coffee/">has been called a Christian nationalist</a>, a label he rejects. However, he has often shared Islamophobic posts on social media, the New Yorker reported.
 
@@ -183,7 +183,7 @@ Mastriano has highlighted anti-abortion policy, fiscal conservatism, and Second 
 
 {{<picture src="external/af9hkb89jqf9xx31ge1fz82w1c.jpeg" description="Bill McSwain is a former Trump-appointed U.S. attorney in Philadelphia." caption="Bill McSwain is a former Trump-appointed U.S. attorney in Philadelphia." credit="JOSE F. MORENO / Philadelphia Inquirer">}} 
 
-<b>Bill McSwain </b>| <a href="https://billmcswain.com/">Website</a>
+<b>Bill McSwain </b>| <a href="https://web.archive.org/20220401110154/https://billmcswain.com/">Website</a>
 
 McSwain is a former Trump-appointed U.S. attorney in Philadelphia, where he had a <a href="https://www.inquirer.com/politics/election/bill-mcswain-pa-governor-race-fact-check-20220321.html">contentious relationship with its elected officials</a>.
 
@@ -201,11 +201,11 @@ If elected governor, he has promised to focus on stimulating the economy and ene
 
 {{<picture src="external/g83c145r69x4evxmwrmt7qq9jc.jpeg" description="Dave White is the owner of an HVAC company and a former Delaware County Council member. " caption="Dave White is the owner of an HVAC company and a former Delaware County Council member. " credit="Keith Srakocic / AP">}} 
 
-<b>Dave White</b> | <a href="https://www.davewhiteforgovernor.com/">Website</a>
+<b>Dave White</b> | <a href="https://web.archive.org/20220401203943/https://www.davewhiteforgovernor.com/">Website</a>
 
 White is the owner of an HVAC company and a former Delaware County Council member. He’s campaigning as a political outsider and someone with “real world” experience.
 
-In <a href="https://www.davewhiteforgovernor.com/annoucements_launches_campaign">a press release</a> announcing his candidacy, he called for allocating more funding to police, lowering taxes, and railed against “critical race theory” — an academic framework to study race in society and law that has been co-opted by right-wing activists as indoctrination by progressives — and “kids failing in schools.” On his website, White listed protecting Second Amendment rights, limiting access to abortion, and preventing transgender women from competing in women’s sports as priorities.
+In <a href="https://web.archive.org/20220418164116/https://www.davewhiteforgovernor.com/annoucements_launches_campaign">a press release</a> announcing his candidacy, he called for allocating more funding to police, lowering taxes, and railed against “critical race theory” — an academic framework to study race in society and law that has been co-opted by right-wing activists as indoctrination by progressives — and “kids failing in schools.” On his website, White listed protecting Second Amendment rights, limiting access to abortion, and preventing transgender women from competing in women’s sports as priorities.
 
 <b>Supports repealing Pa.’s no-excuse mail voting law? </b>Yes. White has said that no-excuse mail voting is a “disaster.”
 
@@ -217,7 +217,7 @@ In <a href="https://www.davewhiteforgovernor.com/annoucements_launches_campaign"
 
 {{<picture src="external/pmeatgvnr2hsmdvsyptvfmty1m.jpeg" description="Nche Zama is a cardiothoracic surgeon who lives in the Poconos and immigrated to the United States from Cameroon as a teenager on a student visa. " caption="Nche Zama is a cardiothoracic surgeon who lives in the Poconos and immigrated to the United States from Cameroon as a teenager on a student visa. " credit="Courtesy Nche Zama campaign">}} 
 
-<b>Nche Zama</b> | <a href="https://www.zamaforpa.com/about">Website</a>
+<b>Nche Zama</b> | <a href="https://web.archive.org/20220405130523/https://www.zamaforpa.com/about">Website</a>
 
 Zama is a cardiothoracic surgeon who lives in the Poconos and immigrated to the United States from Cameroon as a teenager on a student visa. With virtually no political experience, Zama believes his independence from the political establishment will distinguish him from the other candidates.
 
