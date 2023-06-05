@@ -67,7 +67,7 @@ weight = 1
 [[main_support]]
 name = "How we're funded"
 parent = "Support Spotlight PA"
-url = "/support/"
+url = "/support/funders-and-members"
 weight = 2
 
 [[main_more]]
@@ -79,56 +79,68 @@ weight = 3
 parent = "News"
 name = "Criminal Justice"
 url = "/topics/criminal-justice/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Economy"
 url = "/topics/economy/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Elections"
 url = "/elections/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "State Capitol"
 url = "/topics/the-capitol/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Health"
 url = "/topics/health/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "How Harrisburg Works"
 url = "/topics/how-harrisburg-works/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Local Government"
 url = "/topics/local-government/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Penn State"
 url = "/topics/penn-state/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "Rural Issues"
 url = "/topics/rural-issues/"
+weight = 1
 
 [[main_more]]
 parent = "News"
 name = "More Topics"
 url = "/topics/"
+weight = 10
+
 
 [[main_more]]
 parent = "News"
 name = "Archives"
 url = "/news/"
+weight = 1
 
 [[about]]
 name = "Our Mission"
