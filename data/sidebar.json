@@ -3,7 +3,7 @@
     {
       "backgroundColor": "#ffcb03",
       "label": "Editor’s Pick",
-      "labelColor": "",
+      "labelColor": "#000000",
       "linkColor": "#000000",
       "page": "content/news/2023-05-09-SPLOPIOD525.md"
     },
