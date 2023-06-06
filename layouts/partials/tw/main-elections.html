@@ -1,4 +1,4 @@
-<section class="bg-white px-6 pt-16 pb-6" data-ga-category="header">
+<section class="bg-white px-6 pb-6 pt-16" data-ga-category="header">
   {{ $banner := partial "helper/build-srcset" (dict
     "filename" "2023/03/01j1-vcqr-md4q-wdkb.png"
     "sizes" (slice
@@ -113,7 +113,7 @@
       },
     }'
   @mouseover.once="import(url)"
-  class="relative bg-election-green-darker px-6 pt-12 pb-16"
+  class="relative bg-election-green-darker px-6 pb-16 pt-12"
 >
   {{ $sizes := slice
     (dict "width" 300 "height" 900)
@@ -146,7 +146,7 @@
     <ul class="mt-8 flex flex-col gap-6 md:flex-row">
       {{ range .Param "dates" }}
         <li
-          class="flex flex-1 flex-col rounded border border-s-4 bg-white py-4 px-6 shadow-inner"
+          class="flex flex-1 flex-col rounded border border-s-4 bg-white px-6 py-4 shadow-inner"
           data-ga-category="{{ urlize .name }}"
         >
           <h3
