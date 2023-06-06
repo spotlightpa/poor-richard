@@ -122,28 +122,6 @@
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-5">
-    <div class="col-start-2 mx-auto">
-      <button
-        class="
-          rounded-b-lg bg-black px-4 pt-1 pb-2 text-sm
-          text-white transition-all hover:text-s-4
-        "
-        @click="isCatNavOpen = ! isCatNavOpen"
-        x-transition
-        data-ga-category="navbar:menu:button"
-        data-ga-action="menu:toggle"
-        x-report-click
-        :class="
-        isCatNavOpen ?
-        'relative -top-px border-b border-s-4 bg-beige text-black hover:text-s-7' :
-        'bg-black text-white hover:text-s-1'
-      "
-      >
-        Investigations &amp; More
-      </button>
-    </div>
-  </div>
 </div>
 
 <!-- For CSS purge -->

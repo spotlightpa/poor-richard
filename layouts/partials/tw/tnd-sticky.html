@@ -1,36 +1,37 @@
-<div
-  id="page-heading"
-  class="mx-auto max-w-6xl px-5 pt-12"
-  data-ga-category="page-heading"
->
-  <h1
-    class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
-  >
-    {{ .Title }}
-  </h1>
+<div class="w-full bg-white">
   <div
-    class="flex flex-col md:flex-row"
-    x-intersect:leave="isStuck = true"
-    x-intersect.full="isStuck = false"
+    id="page-heading"
+    class="mx-auto max-w-6xl px-5 pt-12"
+    data-ga-category="page-heading"
   >
-    <div class="pb-2 text-lg text-s-9 lg:pr-10 lg:text-2xl">
-      {{ .Description }}
-    </div>
-    <div class="mt-5 flex w-auto justify-end px-8 md:mt-0 md:w-64">
-      <a
-        data-ga-category="donate"
-        class="
-          mx-auto inline-block w-44 self-center rounded bg-red-7 px-3 py-1
-          text-center text-xl text-white hover:bg-black hover:text-white
-          lg:hidden
-        "
-        href="/donate/"
-        >Support Us!</a
-      >
+    <h1
+      class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
+    >
+      {{ .Title }}
+    </h1>
+    <div
+      class="flex flex-col md:flex-row"
+      x-intersect:leave="isStuck = true"
+      x-intersect.full="isStuck = false"
+    >
+      <div class="pb-2 text-lg text-s-9 lg:pr-10 lg:text-2xl">
+        {{ .Description }}
+      </div>
+      <div class="mt-5 flex w-auto justify-end px-8 md:mt-0 md:w-64">
+        <a
+          data-ga-category="donate"
+          class="
+            mx-auto inline-block w-44 self-center rounded bg-red-7 px-3 py-1
+            text-center text-xl text-white hover:bg-black hover:text-white
+            lg:hidden
+          "
+          href="/donate/"
+          >Support Us!</a
+        >
+      </div>
     </div>
   </div>
 </div>
-
 {{ with partial "helper/get-page-nav" $ }}
   <!-- For CSS purge -->
   <div hidden>
@@ -96,5 +97,5 @@
     </div>
   </div>
 
-  <div class="py-6"></div>
+  <div class="py-6 bg-white"></div>
 {{ end }}

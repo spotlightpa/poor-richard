@@ -11,7 +11,7 @@
   <meta name="theme-color" content="{{ $color }}" />
 {{ end }}
 
-{{ define "body-class" }}text-[16px] bg-white font-sans leading-normal{{ end }}
+{{ define "body-class" }}text-[16px] bg-beige font-sans leading-normal{{ end }}
 
 {{ define "header" }}
   <header
@@ -28,7 +28,7 @@
       {{ partialCached "tw/banner.html" . }}
     {{ end }}
     <div class="hidden md:contents">
-      {{ partial "tw/tnd-nav-top.html" . }}
+      {{ partial "tw/nav.html" . }}
       {{ partial "tw/tnd-nav-hero.html" . }}
     </div>
     {{ partial "tw/tnd-sticky.html" . }}
