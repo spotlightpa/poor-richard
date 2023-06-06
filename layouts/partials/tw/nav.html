@@ -62,7 +62,7 @@
   "
   :class="toggle ? 'px-5 sm:px-3' : ''"
   x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
-  @click.outside="toggle = false; $refs.button.focus()"
+  @click.outside="toggle = false; $refs.button()"
   @focusin.outside="toggle = false"
 >
   <a
