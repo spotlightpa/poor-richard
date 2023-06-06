@@ -35,10 +35,10 @@
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if .Layout }}{{ $pageCat = print $pageCat ":" .Layout }}{{ end }}
-  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home" }}{{ end }}
   <body
     class="{{ block `body-class` . }}{{ end }}"
-    data-ga-label="{{ $pageCat }}"
+    data-page-cat="{{ $pageCat }}"
     {{ block `body-attributes` . }}{{ end }}
   >
     {{ block "header" . }}

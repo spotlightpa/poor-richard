@@ -1,5 +1,3 @@
-import { buildAndSend } from "../utils/google-analytics.js";
-
 export default function slider() {
   return {
     slideEls: [],
@@ -15,9 +13,7 @@ export default function slider() {
         if (i > 0) {
           this.loadingMode = "auto";
         }
-        buildAndSend(this.$el, {
-          eventAction: `slider:view:${i}`,
-        });
+        this.$view(this.slideEls[i]);
       });
     },
 
@@ -45,9 +41,6 @@ export default function slider() {
         return;
       }
       this.center(el);
-      buildAndSend(this.$el, {
-        eventAction: `slider:space`,
-      });
     },
   };
 }

@@ -1,0 +1,12 @@
+name = "Tanisha Thomas"
+firstName = "Tanisha"
+lastName = "Thomas"
+title = "Newsletter Writer"
+email = "tthomas@spotlightpa.org"
+twitter = "tanishajanae"
+active = true
+content = "Tanisha Thomas is a newsletter writer/reporter for Spotlight PA. She previously worked as a digital editor for the Pittsburgh Post-Gazette. She also worked as a reporter and social media producer for the Pittsburgh Tribune-Review and interned in various roles for her hometown paper The Columbus Dispatch in Columbus, Ohio. In her free time, Tanisha enjoys playing trivia, checking out shows/concerts, attending sporting events, finding new hobbies to try or talking about the latest pop culture news."
+headshot = "2023/06/01j7-w7rq-962z-2024.webp"
+reporter = true
+beat = "Newsletters"
+focusHed = "Writer / Reporter"
