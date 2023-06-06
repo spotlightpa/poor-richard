@@ -1,5 +1,1 @@
-<div
-  x-data
-  x-intersect.once="$report({ target: $el })"
-  data-ga-action="view:{{ . }}"
-></div>
+<div x-data x-intersect.once="$view($el)" data-ga-category="{{ . }}"></div>

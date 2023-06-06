@@ -1,4 +1,4 @@
-import { buildAndSend } from "../utils/google-analytics.js";
+import { reportView } from "../utils/google-analytics.js";
 import { modalKind, recordModalNewsletterView } from "../utils/metrics.js";
 
 export default function modal() {
@@ -9,10 +9,7 @@ export default function modal() {
       this.$watch("isOpen", (val) => {
         if (val) {
           recordModalNewsletterView();
-          buildAndSend(this.$el, {
-            eventAction: "modal:newsletter:open",
-            nonInteraction: true,
-          });
+          reportView(this.$el);
         } else {
           this.$report({ target: this.$refs.closer });
         }
