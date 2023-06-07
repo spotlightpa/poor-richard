@@ -1,4 +1,5 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+{{ define "body-class" }}text-[16px] bg-beige leading-normal{{ end }}
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
