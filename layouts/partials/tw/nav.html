@@ -57,15 +57,15 @@
 </div>
 
 <nav
-  x-data="{ toggle: false }"
+  x-data="{ isOpen: false }"
   x-id="['dropdown-button']"
   class="
     relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
   "
-  :class="toggle ? 'px-5 sm:px-3' : ''"
-  x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
-  @click.outside="toggle = false; $refs.button()"
-  @focusin.outside="toggle = false"
+  :class="isOpen ? 'px-5 sm:px-3' : ''"
+  x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
+  @click.outside="isOpen = false; $refs.button()"
+  @focusin.outside="isOpen = false"
 >
   <a
     href="/search/"
@@ -85,15 +85,15 @@
     class="
       no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
     "
-    :class="toggle ? 'sm:mr-3 sm:-ml-3' : ''"
+    :class="isOpen ? 'sm:mr-3 sm:-ml-3' : ''"
     type="button"
     x-ref="button"
     aria-label="Site Menu"
-    :aria-expanded="toggle"
+    :aria-expanded="isOpen"
     :aria-controls="$id('dropdown-button')"
-    @click="toggle = ! toggle"
+    @click="isOpen = ! isOpen"
     data-ga-category="burger"
-    data-ga-action="menu:toggle"
+    data-ga-action="menu:isOpen"
     x-report-click
   >
     <span class="sm:hidden">Menu</span>
@@ -104,19 +104,19 @@
           class="
             block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
           "
-          :class="toggle ? 'translate-y-1.5 rotate-45' : ''"
+          :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
         ></span>
         <span
           class="
             block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
           "
-          :class="toggle ? 'w-0 opacity-0' : 'opacity-1'"
+          :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
         ></span>
         <span
           class="
             block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
           "
-          :class="toggle ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+          :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
         ></span>
       </div>
     </div>
@@ -152,7 +152,7 @@
     class="
       -top-2 right-1 z-10 ml-1 box-content w-0 flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
     "
-    :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
+    :class="isOpen ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
     :id="$id('dropdown-button')"
   >
     {{ range site.Menus.main }}
@@ -175,17 +175,17 @@
           md:right-1 md:top-0 md:my-0 md:flex
           md:flex-[0_0_auto] md:overflow-visible
         "
-        :class="toggle ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
+        :class="isOpen ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
       >
         <a
           class="
             sm:h block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
           "
           :class="{
-            'sm:py-0': toggle,
-            'sm:h-11': toggle,
-            'md:justify-start': toggle,
-            'md:justify-end': ! toggle,
+            'sm:py-0': isOpen,
+            'sm:h-11': isOpen,
+            'md:justify-start': isOpen,
+            'md:justify-end': ! isOpen,
           }"
           href="{{ .URL }}"
           data-ga-category="item"
@@ -197,13 +197,13 @@
               my-3 flex w-full flex-wrap gap-2 md:h-0 md:w-0 md:overflow-hidden
             "
             :class="{
-              'md:visible': toggle,
-              'md:overflow-visible': toggle,
-              'md:w-auto': toggle,
-              'md:h-auto': toggle,
-              'sm:w-48': toggle,
-              'md:hidden': ! toggle,
-              'md:w-0': ! toggle
+              'md:visible': isOpen,
+              'md:overflow-visible': isOpen,
+              'md:w-auto': isOpen,
+              'md:h-auto': isOpen,
+              'sm:w-48': isOpen,
+              'md:hidden': ! isOpen,
+              'md:w-0': ! isOpen
             }"
           >
             {{ range .Children }}
@@ -228,7 +228,7 @@
         class="
           mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:w-0 sm:overflow-hidden
         "
-        :class="toggle ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
+        :class="isOpen ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
       >
         <a
           class="w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:w-full md:capitalize"
@@ -241,7 +241,7 @@
             class="
               my-3 flex w-full flex-wrap gap-2
             "
-            :class="toggle ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
+            :class="isOpen ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
           >
             {{ range .Children }}
               <li
@@ -264,13 +264,13 @@
         class="
           mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:w-0 sm:overflow-hidden
         "
-        :class="toggle ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
+        :class="isOpen ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
       >
         <a
           class="
             sm:h block w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
           "
-          :class="toggle ? 'sm:py-0 sm:h-11 md:justify-start' : ''"
+          :class="isOpen ? 'sm:py-0 sm:h-11 md:justify-start' : ''"
           href="{{ .URL }}"
           data-ga-category="item"
           >{{ .Name }}</a
