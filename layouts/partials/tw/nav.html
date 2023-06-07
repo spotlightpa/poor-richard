@@ -1,4 +1,6 @@
-<a href="#main" class="sr-only">Skip to main content</a>
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute">
+  <span class="m-4 font-sans font-bold underline"> Skip to main content </span>
+</a>
 
 <div
   class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans"
@@ -6,13 +8,6 @@
   data-sf-campaign="701Dn000000YgosIAC"
   aria-labelledby="top"
 >
-  <div
-    class="hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
-  >
-    <p>Independent</p>
-    <p>Nonpartisan</p>
-    <p>Nonprofit</p>
-  </div>
   <div
     class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
   >
@@ -54,6 +49,13 @@
   >
     Journalism that gets results for Pennsylvania
   </p>
+  <div
+    class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
+  >
+    <p>Independent</p>
+    <p>Nonpartisan</p>
+    <p>Nonprofit</p>
+  </div>
 </div>
 
 <nav
@@ -118,15 +120,16 @@
   </div>
 
   <ul
+    id="hamburger-menu"
     x-cloak
     class="
       absolute left-2 right-2 -top-6 z-10 max-w-screen-md rounded border border-s-5 bg-white px-4 py-2
       sm:left-auto sm:grid-cols-2 md:-top-2"
     :class="{ 'hidden': !isOpen, 'grid': isOpen }"
     x-trap="isOpen"
-    aria-label="Site Menu"
+    role="menu"
+    aria-labelledby="hamburger-button"
     :aria-expanded="isOpen"
-    :aria-controls="$id('dropdown-button')"
   >
     <ul class="mt-16 flex flex-wrap sm:hidden">
       {{ range site.Menus.main }}
@@ -172,12 +175,13 @@
   </ul>
 
   <button
-    :id="$id('dropdown-button')"
+    id="hamburger-button"
     class="
       no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
     type="button"
-    x-ref="button"
     @click="isOpen = ! isOpen"
+    aria-controls="hamburger-menu"
+    aria-haspopup="true"
     data-ga-category="burger"
     data-ga-action="menu:isOpen"
     x-report-click
