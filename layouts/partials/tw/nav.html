@@ -1,25 +1,33 @@
+<a href="#main" class="sr-only">Skip to main content</a>
+
 <div
-  id="top"
-  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pt-2 font-sans"
-  data-ga-category="navbar"
+  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans"
+  data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
-  aria-label="main navigation"
+  aria-labelledby="top"
 >
-  <h1
+  <div
+    class="hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
+  >
+    <p>Independent</p>
+    <p>Nonpartisan</p>
+    <p>Nonprofit</p>
+  </div>
+  <div
     class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
   >
     <a
+      id="top"
       class="h-max flex-1 sm:mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md"
       href="/"
       data-ga-category="logo"
     >
       <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
-        <title>Home</title>
-        <desc>Spotlight PA logo</desc>
+        <title>Spotlight PA Home</title>
         {{ partial "helper/svg.html" "banner" }}
       </svg>
     </a>
-  </h1>
+  </div>
   <a
     data-sf-campaign="701Dn000000YgogIAC"
     data-ga-category="donate"
@@ -46,14 +54,8 @@
   >
     Journalism that gets results for Pennsylvania
   </p>
-  <ul
-    class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
-  >
-    <li>Independent</li>
-    <li>Nonpartisan</li>
-    <li>Nonprofit</li>
-  </ul>
 </div>
+
 <nav
   x-data="{ toggle: false }"
   x-id="['dropdown-button']"
@@ -168,16 +170,16 @@
     {{ range site.Menus.main_about }}
       <li
         class="
-          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none 
-          sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden 
-          md:right-4 md:top-0 md:my-0 md:flex
+          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none
+          sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden
+          md:right-1 md:top-0 md:my-0 md:flex
           md:flex-[0_0_auto] md:overflow-visible
         "
         :class="toggle ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
       >
         <a
           class="
-            sm:h block w-full flex-1 md:justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
+            sm:h block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
           "
           :class="{
             'sm:py-0': toggle,
@@ -197,8 +199,8 @@
             :class="{
               'md:visible': toggle,
               'md:overflow-visible': toggle,
-              'md:w-auto': toggle, 
-              'md:h-auto': toggle, 
+              'md:w-auto': toggle,
+              'md:h-auto': toggle,
               'sm:w-48': toggle,
               'md:hidden': ! toggle,
               'md:w-0': ! toggle
