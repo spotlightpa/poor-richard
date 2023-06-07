@@ -62,8 +62,7 @@
   class="
     relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
   "
-  :class="isOpen ? 'px-5 sm:px-3' : ''"
-  x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
+  @keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
   @click.outside="isOpen = false"
   @focusin.outside="isOpen = false"
 >
@@ -120,18 +119,16 @@
 
   <ul
     x-cloak
-    class="absolute left-2 right-2 -top-6 z-10 max-w-screen-md rounded border border-s-5 bg-white px-4 py-2 sm:left-auto sm:grid-cols-2 md:-top-2"
+    class="
+      absolute left-2 right-2 -top-6 z-10 max-w-screen-md rounded border border-s-5 bg-white px-4 py-2
+      sm:left-auto sm:grid-cols-2 md:-top-2"
     :class="{ 'hidden': !isOpen, 'grid': isOpen }"
     x-trap="isOpen"
     aria-label="Site Menu"
     :aria-expanded="isOpen"
     :aria-controls="$id('dropdown-button')"
   >
-    <ul
-      class="
-        mt-16 flex flex-wrap sm:hidden
-      "
-    >
+    <ul class="mt-16 flex flex-wrap sm:hidden">
       {{ range site.Menus.main }}
         <li class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none">
           <a
@@ -148,10 +145,7 @@
     {{ range site.Menus.main_more }}
       <li
         class="
-        row-span-2
-        mt-4
-          box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
-        "
+          row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
       >
         {{ template "nav-menu-item" . }}
       </li>
@@ -160,9 +154,7 @@
     {{ range site.Menus.main_about }}
       <li
         class="
-        mt-4
-          box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
-        "
+          mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
       >
         {{ template "nav-menu-item" . }}
       </li>
@@ -171,9 +163,7 @@
     {{ range site.Menus.main_support }}
       <li
         class="
-        mt-4
-          box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
-        "
+          mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
       >
         {{ template "nav-menu-item" . }}
       </li>
@@ -184,8 +174,7 @@
   <button
     :id="$id('dropdown-button')"
     class="
-          no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
-        "
+      no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
     type="button"
     x-ref="button"
     @click="isOpen = ! isOpen"
@@ -194,7 +183,7 @@
     x-report-click
   >
     {{ block "nav-hamburger-button" . }}
-      <span class="hover:underline hover:underline-offset-2 sm:hidden "
+      <span class="hover:underline hover:underline-offset-2 sm:hidden"
         >Menu</span
       >
       <span class="hover:underline hover:underline-offset-2 max-sm:hidden"
@@ -204,20 +193,17 @@
         <span class="block space-y-1">
           <span
             class="
-                block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-              "
+              block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
             :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
           ></span>
           <span
             class="
-                block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-              "
+              block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
             :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
           ></span>
           <span
             class="
-                block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
-              "
+                block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
             :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
           ></span>
         </span>
@@ -260,10 +246,7 @@
   <a
     class="
       block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2
-
-      sm:capitalize
-      md:justify-start md:py-0
-    "
+      sm:capitalize md:justify-start md:py-0"
     href="{{ .URL }}"
     data-ga-category="item"
   >
