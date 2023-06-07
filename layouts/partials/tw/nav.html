@@ -62,7 +62,7 @@
   class="
     relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
   "
-  @keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
+  @keydown.escape.prevent.stop="isOpen = false"
   @click.outside="isOpen = false"
   @focusin.outside="isOpen = false"
 >
@@ -218,26 +218,10 @@
     {{ template "nav-hamburger-button" . }}
   </a>
 </nav>
-<!-- hidden spans prevent alpinejs classes from being CSS purged -->
+<!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
 <div hidden>
   <span
-    class=" opacity-1
-  mx-0 box-content box-content
-  box-content flex h-auto
-  w-0 w-0
-  w-auto w-5 translate-y-1.5
-  -translate-y-1.5 rotate-45 -rotate-45 overflow-hidden rounded border-s-5 px-3 px-4 px-5 pb-10 pt-12 pt-14 opacity-0 max-sm:absolute max-sm:border sm:-right-16
-  sm:-right-16 sm:-top-6 sm:right-[-4rem] sm:top-52 sm:-ml-3 sm:mr-3 sm:block sm:block sm:block sm:h-40 sm:h-[auto] sm:w-48 sm:w-48 sm:w-48 sm:w-48 sm:overflow-hidden sm:overflow-hidden sm:overflow-hidden
-  sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:rounded-l
-  sm:rounded-br sm:rounded-tr sm:border-b sm:border-b sm:border-l
-  sm:border-r sm:border-r sm:border-t sm:border-t sm:border-s-5 sm:border-s-5 sm:border-s-5 sm:bg-white sm:bg-white sm:bg-white sm:px-16 sm:px-3 sm:py-0 sm:py-0 sm:pb-0 sm:pb-10 sm:pb-3 sm:pb-[35px]
-  sm:pl-4 sm:pl-4 sm:pl-8 sm:pr-4 sm:pr-8 sm:pr-8 sm:pt-0 sm:pt-2 sm:pt-2 sm:pt-6 sm:pb-9 md:absolute md:-top-8 md:right-[-4rem] md:top-[-1rem] md:hidden
-  md:h-auto md:w-0 md:w-full md:justify-start md:justify-start
-  md:justify-end md:justify-end
-  md:overflow-visible
-  md:py-0
-  md:py-0 md:pt-[15px] md:pt-[15px]
-  "
+    class="translate-y-1.5 rotate-45 w-0 opacity-0 opacity-1 w-5 -translate-y-1.5 -rotate-45"
     hidden
   ></span>
 </div>
