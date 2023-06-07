@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/1999-01-01-SPLEDSUBILL.md"
+    "content/statecollege/2023-06-07-SPLSTAY.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-09-SPLSCHOIMPAC.md",
-    "content/statecollege/2023-04-07-SPLCLOSURES.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md",
+    "content/statecollege/2023-04-24-SPLSANDY.md",
+    "content/statecollege/2023-04-10-SPLHERMDUB.md"
   ],
   "topSlots": [
+    "content/news/1999-01-01-SPLEDSUBILL.md",
     "content/news/2023-06-05-SPLBU23GU.md",
-    "content/news/2023-06-01-SPLOPTRANSPARENCY0601.md",
-    "content/news/2023-05-31-SPLSHACAL.md"
+    "content/news/2023-06-01-SPLOPTRANSPARENCY0601.md"
   ],
   "topper": []
 }
