@@ -10,7 +10,6 @@ aliases = ["/jobs/"]
 
 * [Rural Affairs Reporter](#rural-affairs-reporter)
 * [Digital Growth Strategist](#digital-growth-strategist)
-* [Berks County Project Lead](#berks-county-project-lead)
 
 - - -
 
@@ -53,29 +52,6 @@ This role is funded through a grant from the American Journalism Project, which 
 The ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie and equity across all of the work that we do, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of doing our work and connecting it with readers across the state.
 
 **This job is full-time and includes benefits. The position is remote from anywhere in the United States. This position is budgeted for a salary from $90,000-$100,000, depending on experience. Applicants should include a resume and cover letter clearly articulating past successes and why they’re a good fit for this role.**
-
-Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
-
-We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
-
-- - -
-
-## Berks County Project Lead
-
-### **[Apply Here](https://us63.dayforcehcm.com/CandidatePortal/en-US/philainquirer/Posting/View/735)**
-
-**Summary:** We are seeking a project lead to oversee the planning process for a potential new Spotlight PA regional bureau based in Berks County. The ongoing and rapid decline of local news and investigative journalism in Berks County has prompted Spotlight PA and its partners to consider this regional expansion. This would be the second regional bureau for Spotlight PA, an award-winning independent newsroom founded in 2019 to cover Pennsylvania’s Capitol and urgent statewide issues. The first is based in State College and launched in 2022 ([spotlightpa.org/statecollege](https://www.spotlightpa.org/statecollege/)). The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across more than 90 partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners.
-
-**What you’ll do:** The project lead will be our local, on-the-ground expert, and will collaborate with community residents, leaders, donors, funders, media partners, and businesses to help guide the creation of the bureau. The role is funded by a one-year planning grant from Berks County Community Foundation. Responsibilities will include leading a needs assessment to gain a better understanding of information gaps in Berks County, what kind of news coverage community members want, and in what form. This will entail conducting listening sessions and surveys in English and Spanish. The project lead will also evaluate and develop product and distribution pathways, which may include partnering with local media and creating new products, depending on community feedback (e.g. a newsletter or texting service). In collaboration with Spotlight PA’s leadership team, the project lead will also help oversee a third-party feasibility study of local philanthropic capacity and develop relationships with local donors and funders to ensure a clear pathway to financial sustainability.
-
-**Who we’re looking for:** We welcome applications from individuals with experience in any aspect of journalism, as well as those who have non-traditional career paths or relevant experience in another industry or sector. Fluency in Spanish is a major plus. Applicants should be passionate about revitalizing nonpartisan, independent journalism in Berks County and helping a fast-growing organization take the next steps toward expanding locally. We want someone who’s not afraid to bring big ideas to the table with the skills and persistence to pull them off. 
-
-The ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie and equity across all of the work that we do, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of doing our work and connecting it with readers across the state.
-
-**This is a one-year position, supported by a grant from Berks County Community Foundation, and is full-time and includes benefits. The position is remote, though applicants should be based in or near Berks County. This position is budgeted for a salary of $90,000-$110,000, depending on experience. Applicants should include a resume and one-page cover letter answering the following questions:** 
-
-* What is your connection to Berks County? 
-* How would your past experience inform your work on this project?
 
 Note that the application portal is managed by The Philadelphia Inquirer, but Spotlight PA operates as an independent newsroom.
 
