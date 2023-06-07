@@ -17,26 +17,36 @@
           {{ partial "helper/svg.html" "banner" }}
         </svg>
       </a>
+
       <a
         data-sf-campaign="701Dn000000YgogIAC"
         data-ga-category="donate"
         class="
-            inline-flex items-center whitespace-nowrap rounded-md bg-red p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white duration-300 hover:bg-blue sm:flex sm:w-44 sm:justify-center sm:p-3
-            sm:text-lg md:w-64 md:p-4 md:text-xl
+           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue 
+           sm:flex sm:w-32 sm:justify-center md:w-52 md:px-7 md:py-4
           "
         href="/donate"
       >
-        <svg
-          class="mr-2 h-4 w-4 fill-current sm:h-6 sm:w-6 md:mr-6 md:h-9 md:w-9"
-          aria-hidden="true"
+        <span
+          class="
+          clip-triangle absolute inset-0 z-0 bg-red group-hover:bg-blue
+          "
+        ></span>
+        <span
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
         >
-          {{ partial "helper/svg.html" "heart" }}
-        </svg>
-        Support<span class="hidden sm:inline"> Us</span>
+          <svg
+            class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "heart" }}
+          </svg>
+          Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
+        </span>
       </a>
     </nav>
     <h2
-      class="my-7 mx-auto text-center text-xs font-bold leading-relaxed tracking-wide text-white sm:max-w-md sm:text-base md:my-8 md:max-w-4xl md:text-2xl"
+      class="mx-auto my-7 text-center text-xs font-bold leading-relaxed tracking-wide text-white sm:max-w-md sm:text-base md:my-8 md:max-w-4xl md:text-2xl"
     >
       Spotlight PA relies on funding from foundations and readers like you who
       are committed to accountability journalism that gets results.
@@ -62,7 +72,7 @@
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
-          class="m-1 box-content w-full appearance-none rounded rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+          class="m-1 box-content w-full appearance-none rounded rounded-bl rounded-tl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
           @focus.once="hasFocused = true"
           type="email"
           name="EMAIL"
@@ -71,7 +81,7 @@
         />
 
         <button
-          class="m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+          class="m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
           type="submit"
         >
           Sign Up

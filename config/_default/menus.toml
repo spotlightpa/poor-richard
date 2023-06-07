@@ -6,7 +6,7 @@ weight = 1
 [[main]]
 name = "Events"
 url = "/topics/events/"
-weight = 2
+weight = 4
 
 [[main]]
 name = "Newsletters"
@@ -14,19 +14,133 @@ url = "/newsletters/"
 weight = 3
 
 [[main]]
-name = "About Us"
-url = "/about/"
-weight = 4
-
-[[main]]
-name = "Tips"
-url = "/tips/"
-weight = 5
-
-[[main]]
 name = "State College"
 url = "/statecollege/"
-weight = 6
+weight = 2
+
+[[main_about]]
+name = "About"
+url = "/about/"
+weight = 1
+
+[[main_about]]
+name = "Mission"
+parent = "About"
+url = "/about/mission/"
+weight = 1
+
+[[main_about]]
+name = "Meet the Team"
+parent = "About"
+url = "/about/staff/"
+weight = 1
+
+[[main_about]]
+name = "Our Partners"
+parent = "About"
+url = "/about/partners"
+weight = 1
+
+[[main_about]]
+name = "Careers"
+parent = "About"
+url = "/about/jobs/"
+weight = 1
+
+[[main_about]]
+name = "Contact"
+parent = "About"
+url = "/contact/"
+weight = 1
+
+[[main_support]]
+name = "Support Spotlight PA"
+url = "/support/"
+weight = 2
+
+[[main_support]]
+name = "Ways to give"
+parent = "Support Spotlight PA"
+url = "/support/"
+weight = 1
+
+[[main_support]]
+name = "How we're funded"
+parent = "Support Spotlight PA"
+url = "/support/funders-and-members"
+weight = 2
+
+[[main_more]]
+name = "News"
+url = "/news/"
+weight = 3
+
+[[main_more]]
+parent = "News"
+name = "Criminal Justice"
+url = "/topics/criminal-justice/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Economy"
+url = "/topics/economy/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Elections"
+url = "/elections/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "State Capitol"
+url = "/topics/the-capitol/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Health"
+url = "/topics/health/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "How Harrisburg Works"
+url = "/topics/how-harrisburg-works/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Local Government"
+url = "/topics/local-government/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Penn State"
+url = "/topics/penn-state/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Rural Issues"
+url = "/topics/rural-issues/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "More Topics"
+url = "/topics/"
+weight = 10
+
+
+[[main_more]]
+parent = "News"
+name = "Archives"
+url = "/news/"
+weight = 1
 
 [[about]]
 name = "Our Mission"

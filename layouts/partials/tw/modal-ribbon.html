@@ -36,7 +36,7 @@
         class="w-full border-b-2 border-t-2 font-sans"
       >
         <div
-          class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
+          class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:ml-auto md:mr-auto md:grid-cols-12"
         >
           <button
             style="color: {{ $actionColor }};"
@@ -121,7 +121,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class=" box-border w-full appearance-none rounded rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -130,14 +130,14 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-t-none sm:rounded-b sm:rounded-bl-none sm:rounded-tr md:px-8"
+                class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                 type="submit"
               >
                 Sign Up
               </button>
             </div>
             <div
-              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-s-3 px-6 pt-5 pb-9"
+              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-s-3 px-6 pb-9 pt-5"
               x-cloak
               x-show="hasFocused"
               x-transition:enter="transition ease-in-out duration-300"

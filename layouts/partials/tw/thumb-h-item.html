@@ -8,7 +8,7 @@
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if .extendedEyebrow }}
-      <span class="inline-flex pb-4 text-sm md:pr-8 md:pb-2">
+      <span class="inline-flex pb-4 text-sm md:pb-2 md:pr-8">
         {{ partial "tag/maybe-link.html" (dict
           "link" .rubricLink
           "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-md font-semibold uppercase border-eyebrow-bg border-2"
@@ -32,7 +32,7 @@
     {{ end }}
   </div>
   <div
-    class="w-full flex-col sm:flex sm:flex-row sm:space-y-0 sm:space-x-10 md:space-x-6"
+    class="w-full flex-col sm:flex sm:flex-row sm:space-x-10 sm:space-y-0 md:space-x-6"
   >
     <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}

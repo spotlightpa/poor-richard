@@ -1,137 +1,322 @@
-<nav
+<div
   id="top"
-  x-data="{ isOpen: false }"
-  class="site-nav"
+  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pt-2 font-sans"
   data-ga-category="navbar"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-label="main navigation"
 >
-  <div class="site-nav:container">
-    <div class="site-nav:content">
-      <a class="site-nav:logo" href="/" data-ga-category="logo">
-        <svg class="site-nav:logo-svg">
-          <title>Home</title>
-          <desc>Spotlight PA logo</desc>
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
-      </a>
-      <div class="site-nav:desktop" data-ga-category="desktop">
-        {{ range site.Menus.main }}
-          <a class="site-nav:item" href="{{ .URL }}" data-ga-category="item"
-            >{{ .Name }}</a
-          >
-        {{ end }}
-        <a
-          href="/search/"
-          class="site-nav:item"
-          data-ga-category="search"
-          :data-ga-action="'modal:search:open'"
-          x-data
-          @click.prevent="$dispatch('modal:search:open')"
-        >
-          <svg class="site-nav:svg-icon" aria-label="Search">
-            {{ partial "helper/svg.html" "search" }}
-          </svg>
-        </a>
-        <a
-          class="site-nav:donate-button"
-          href="/donate/"
-          data-ga-category="donate"
-        >
-          <svg
-            class="site-nav:svg-icon"
-            viewBox="0 0 20 20"
-            aria-hidden="true"
-            style="top: 1px; margin-right: 2px"
-          >
-            {{ partial "helper/svg.html" "heart" }}
-          </svg>
-          Support Us
-        </a>
-      </div>
-      <div class="site-nav:mobile">
-        <div
-          x-data="{ isOpen: false }"
-          x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
-          x-id="['dropdown-button']"
-          style="position: relative;"
-        >
-          <!-- no JS fallback link to footer -->
-          <a class="no-js:block" href="#footer">
-            <svg class="site-nav:svg-icon">
-              <title>Footer Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
-            </svg>
-          </a>
-          <button
-            class="no-js:hidden site-nav:hamburger"
-            type="button"
-            x-ref="button"
-            aria-label="Site Menu"
-            :aria-expanded="isOpen"
-            :aria-controls="$id('dropdown-button')"
-            @click="isOpen = !isOpen"
-            data-ga-category="burger"
-            data-ga-action="menu:toggle"
-            x-report-click
-          >
-            <svg class="site-nav:svg-icon">
-              <title>Site Menu</title>
-              {{ partial "helper/svg.html" "bars" }}
-            </svg>
-          </button>
+  <h1
+    class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
+  >
+    <a
+      class="h-max flex-1 sm:mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md"
+      href="/"
+      data-ga-category="logo"
+    >
+      <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
+        <title>Home</title>
+        <desc>Spotlight PA logo</desc>
+        {{ partial "helper/svg.html" "banner" }}
+      </svg>
+    </a>
+  </h1>
+  <a
+    data-sf-campaign="701Dn000000YgogIAC"
+    data-ga-category="donate"
+    class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:px-7 lg:py-4"
+    href="/donate"
+  >
+    <span
+      class="clip-triangle absolute inset-0 z-0 bg-red group-hover:bg-blue"
+    ></span>
+    <span
+      class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white lg:text-lg lg:leading-none"
+    >
+      <svg
+        class="mr-1 inline-block h-4 w-4 fill-current lg:h-5 lg:w-5"
+        aria-hidden="true"
+      >
+        {{ partial "helper/svg.html" "heart" }}
+      </svg>
+      Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
+    </span>
+  </a>
+  <p
+    class="flex-0 w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide lg:text-sm xl:text-base"
+  >
+    Journalism that gets results for Pennsylvania
+  </p>
+  <ul
+    class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
+  >
+    <li>Independent</li>
+    <li>Nonpartisan</li>
+    <li>Nonprofit</li>
+  </ul>
+</div>
+<nav
+  x-data="{ toggle: false }"
+  x-id="['dropdown-button']"
+  class="
+    relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
+  "
+  :class="toggle ? 'px-5 sm:px-3' : ''"
+  x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
+  @click.outside="toggle = false; $refs.button()"
+  @focusin.outside="toggle = false"
+>
+  <a
+    href="/search/"
+    class="z-20 flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide"
+    data-ga-category="search"
+    :data-ga-action="'modal:search:open'"
+    x-data
+    @click.prevent="$dispatch('modal:search:open')"
+  >
+    <svg class="h-[14px] w-[14px]" aria-label="Search">
+      {{ partial "helper/svg.html" "search" }}
+    </svg>
+    Search
+  </a>
 
-          <div
-            data-ga-category="mobile"
-            x-ref="panel"
-            :id="$id('dropdown-button')"
-            x-show="isOpen"
-            x-cloak
-            x-transition.origin.top.right
-            class="site-nav:flyout"
-            @click.outside="isOpen = false; $refs.button.focus()"
-            @focusin.outside="isOpen = false"
-          >
-            <div class="py-2">
-              <a
-                class="site-nav:flyout-donate"
-                href="/donate/"
-                data-ga-category="donate"
-              >
-                <svg
-                  class="site-nav:flyout-donate-svg"
-                  viewBox="0 0 20 20"
-                  aria-hidden="true"
-                >
-                  {{ partial "helper/svg.html" "logo" }}
-                </svg>
-                Support Us
-              </a>
-            </div>
-            {{ range site.Menus.main }}
-              <a
-                class="site-nav:flyout-item"
-                href="{{ .URL }}"
-                data-ga-category="item"
-                >{{ .Name }}</a
-              >
-            {{ end }}
-            <div>
-              <a
-                href="/search/"
-                class="site-nav:flyout-item"
-                data-ga-category="search"
-                :data-ga-action="'modal:search:open'"
-                x-data
-                @click.prevent="$dispatch('modal:search:open')"
-              >
-                Search
-              </a>
-            </div>
-          </div>
-        </div>
+  <button
+    class="
+      no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
+    "
+    :class="toggle ? 'sm:mr-3 sm:-ml-3' : ''"
+    type="button"
+    x-ref="button"
+    aria-label="Site Menu"
+    :aria-expanded="toggle"
+    :aria-controls="$id('dropdown-button')"
+    @click="toggle = ! toggle"
+    data-ga-category="burger"
+    data-ga-action="menu:toggle"
+    x-report-click
+  >
+    <span class="sm:hidden">Menu</span>
+    <span class="max-sm:hidden">More</span>
+    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
+      <div class="space-y-1">
+        <span
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+          :class="toggle ? 'translate-y-1.5 rotate-45' : ''"
+        ></span>
+        <span
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+          :class="toggle ? 'w-0 opacity-0' : 'opacity-1'"
+        ></span>
+        <span
+          class="
+            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+          :class="toggle ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+        ></span>
       </div>
     </div>
-  </div>
+  </button>
+  <!-- no JS fallback link to footer -->
+  <a
+    class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+    href="#footer"
+  >
+    <span>Menu</span>
+    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
+      <div class="space-y-1">
+        <span
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+        ></span>
+        <span
+          class="
+            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+        ></span>
+        <span
+          class="
+            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
+          "
+        ></span>
+      </div>
+    </div>
+  </a>
+
+  <ul
+    class="
+      -top-2 right-1 z-10 ml-1 box-content w-0 flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
+    "
+    :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
+    :id="$id('dropdown-button')"
+  >
+    {{ range site.Menus.main }}
+      <li
+        class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_auto] md:justify-center"
+      >
+        <a
+          class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
+          href="{{ .URL }}"
+          data-ga-category="item"
+          >{{ .Name }}</a
+        >
+      </li>
+    {{ end }}
+    {{ range site.Menus.main_about }}
+      <li
+        class="
+          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none 
+          sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden 
+          md:right-1 md:top-0 md:my-0 md:flex
+          md:flex-[0_0_auto] md:overflow-visible
+        "
+        :class="toggle ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
+      >
+        <a
+          class="
+            sm:h block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
+          "
+          :class="{
+            'sm:py-0': toggle,
+            'sm:h-11': toggle,
+            'md:justify-start': toggle,
+            'md:justify-end': ! toggle,
+          }"
+          href="{{ .URL }}"
+          data-ga-category="item"
+          >{{ .Name }}</a
+        >
+        {{ if .HasChildren }}
+          <ul
+            class="
+              my-3 flex w-full flex-wrap gap-2 md:h-0 md:w-0 md:overflow-hidden
+            "
+            :class="{
+              'md:visible': toggle,
+              'md:overflow-visible': toggle,
+              'md:w-auto': toggle, 
+              'md:h-auto': toggle, 
+              'sm:w-48': toggle,
+              'md:hidden': ! toggle,
+              'md:w-0': ! toggle
+            }"
+          >
+            {{ range .Children }}
+              <li
+                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
+              >
+                <a
+                  class="flex-1 hover:underline hover:underline-offset-2"
+                  href="{{ .URL }}"
+                  data-ga-category="item"
+                  >{{ .Name }}</a
+                >
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+
+    {{ range site.Menus.main_support }}
+      <li
+        class="
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:w-0 sm:overflow-hidden
+        "
+        :class="toggle ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
+      >
+        <a
+          class="w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:w-full md:capitalize"
+          href="{{ .URL }}"
+          data-ga-category="item"
+          >{{ .Name }}</a
+        >
+        {{ if .HasChildren }}
+          <ul
+            class="
+              my-3 flex w-full flex-wrap gap-2
+            "
+            :class="toggle ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
+          >
+            {{ range .Children }}
+              <li
+                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
+              >
+                <a
+                  class="flex-1 hover:underline hover:underline-offset-2"
+                  href="{{ .URL }}"
+                  data-ga-category="item"
+                  >{{ .Name }}</a
+                >
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+    {{ range site.Menus.main_more }}
+      <li
+        class="
+          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:w-0 sm:overflow-hidden
+        "
+        :class="toggle ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
+      >
+        <a
+          class="
+            sm:h block w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
+          "
+          :class="toggle ? 'sm:py-0 sm:h-11 md:justify-start' : ''"
+          href="{{ .URL }}"
+          data-ga-category="item"
+          >{{ .Name }}</a
+        >
+        {{ if .HasChildren }}
+          <ul class="my-3 flex w-full flex-wrap gap-2">
+            {{ range .Children }}
+              <li
+                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
+              >
+                <a
+                  class="flex-1 hover:underline hover:underline-offset-2"
+                  href="{{ .URL }}"
+                  data-ga-category="item"
+                  >{{ .Name }}</a
+                >
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
 </nav>
-{{ partial "js/view-trigger.html" "nav" }}
+<!-- spans load styles for alpinejs -->
+<span
+  class=" opacity-1
+  mx-0 box-content box-content
+  box-content flex h-auto
+  w-0 w-0
+  w-auto translate-y-1.5 rotate-45
+  overflow-hidden rounded border-s-5 px-3 px-4 px-5 pb-10 pt-12 opacity-0 max-sm:absolute max-sm:border sm:-right-16 sm:-right-16 sm:-top-6 sm:right-[-4rem] sm:top-52
+  sm:-ml-3 sm:mr-3 sm:block sm:block sm:block sm:h-40 sm:h-[auto] sm:w-48 sm:w-48 sm:w-48 sm:w-48 sm:overflow-hidden sm:overflow-hidden sm:overflow-hidden sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:overflow-visible
+  sm:rounded-l sm:rounded-br sm:rounded-tr sm:border-b sm:border-b
+  sm:border-l sm:border-r sm:border-r sm:border-t sm:border-t
+  sm:border-s-5 sm:border-s-5 sm:border-s-5 sm:bg-white sm:bg-white sm:bg-white sm:px-16 sm:px-3 sm:py-0 sm:py-0 sm:pb-0 sm:pb-10 sm:pb-3 sm:pb-[35px] sm:pl-4 sm:pl-4 sm:pl-8 sm:pr-4
+  sm:pr-8 sm:pr-8 sm:pt-0 sm:pt-2 sm:pt-2 sm:pt-6 md:absolute md:-top-8 md:right-[-4rem] md:top-[-1rem] md:hidden md:h-auto md:w-0 md:w-full md:justify-start md:justify-start
+  md:justify-end md:justify-end md:overflow-visible md:py-0 md:py-0
+  md:pt-[15px] md:pt-[15px]
+"
+  style="display:none;"
+></span>
+<span
+  class="
+  w-5
+  -translate-y-1.5
+  -rotate-45 pt-14 sm:pb-9
+"
+  style="display:none;"
+></span>
+<!-- end: spans load styles for alpinejs -->
