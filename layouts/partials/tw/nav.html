@@ -64,7 +64,7 @@
   "
   :class="isOpen ? 'px-5 sm:px-3' : ''"
   x-on:keydown.escape.prevent.stop="isOpen = false; $refs.button.focus()"
-  @click.outside="isOpen = false; $refs.button()"
+  @click.outside="isOpen = false"
   @focusin.outside="isOpen = false"
 >
   <a
@@ -81,79 +81,10 @@
     Search
   </a>
 
-  <button
-    class="
-      no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
-    "
-    :class="isOpen ? 'sm:mr-3 sm:-ml-3' : ''"
-    type="button"
-    x-ref="button"
-    aria-label="Site Menu"
-    :aria-expanded="isOpen"
-    :aria-controls="$id('dropdown-button')"
-    @click="isOpen = ! isOpen"
-    data-ga-category="burger"
-    data-ga-action="menu:isOpen"
-    x-report-click
-  >
-    <span class="sm:hidden">Menu</span>
-    <span class="max-sm:hidden">More</span>
-    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
-      <div class="space-y-1">
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
-        ></span>
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
-        ></span>
-        <span
-          class="
-            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
-        ></span>
-      </div>
-    </div>
-  </button>
-  <!-- no JS fallback link to footer -->
-  <a
-    class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
-    href="#footer"
-  >
-    <span>Menu</span>
-    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
-      <div class="space-y-1">
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-        <span
-          class="
-            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-      </div>
-    </div>
-  </a>
-
   <ul
     class="
-      -top-2 right-1 z-10 ml-1 box-content w-0 flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
+      -top-2 right-1 z-10 ml-1 box-content hidden flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
     "
-    :class="isOpen ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
-    :id="$id('dropdown-button')"
   >
     {{ range site.Menus.main }}
       <li
@@ -163,162 +94,178 @@
           class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
           href="{{ .URL }}"
           data-ga-category="item"
-          >{{ .Name }}</a
         >
+          {{- .Name -}}
+        </a>
       </li>
     {{ end }}
+  </ul>
+
+  <div
+    class="
+      hidden self-center px-4 text-sm leading-none md:block
+    "
+  >
+    <a
+      class="
+      block py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:capitalize
+
+    "
+      href="/about/"
+      data-ga-category="item"
+    >
+      About
+    </a>
+  </div>
+
+  <ul
+    x-cloak
+    x-show="isOpen"
+    x-trap="isOpen"
+    aria-label="Site Menu"
+    :aria-expanded="isOpen"
+    :aria-controls="$id('dropdown-button')"
+  >
     {{ range site.Menus.main_about }}
       <li
         class="
-          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none
-          sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden
-          md:right-1 md:top-0 md:my-0 md:flex
-          md:flex-[0_0_auto] md:overflow-visible
-        "
-        :class="isOpen ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
+        mt-4 box-content flex-[0_0_100%] flex-wrap items-center text-sm
+        leading-none sm:absolute sm:right-[-4rem] sm:-top-6 sm:z-10
+        sm:block sm:h-11 sm:h-[auto] sm:w-0
+        sm:w-48 sm:overflow-hidden
+        sm:overflow-visible sm:rounded-tr sm:border-r sm:border-t sm:border-s-5 sm:bg-white
+        sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 md:absolute
+        md:right-3 md:-top-4
+        md:my-0 md:flex md:h-auto md:flex-[0_0_auto] md:overflow-visible md:pt-[15px]"
       >
-        <a
-          class="
-            sm:h block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
-          "
-          :class="{
-            'sm:py-0': isOpen,
-            'sm:h-11': isOpen,
-            'md:justify-start': isOpen,
-            'md:justify-end': ! isOpen,
-          }"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
-        >
-        {{ if .HasChildren }}
-          <ul
-            class="
-              my-3 flex w-full flex-wrap gap-2 md:h-0 md:w-0 md:overflow-hidden
-            "
-            :class="{
-              'md:visible': isOpen,
-              'md:overflow-visible': isOpen,
-              'md:w-auto': isOpen,
-              'md:h-auto': isOpen,
-              'sm:w-48': isOpen,
-              'md:hidden': ! isOpen,
-              'md:w-0': ! isOpen
-            }"
-          >
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+        {{ template "nav-menu-item" . }}
       </li>
     {{ end }}
 
     {{ range site.Menus.main_support }}
       <li
         class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:w-0 sm:overflow-hidden
+          z-10 mt-4 box-content flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:right-3
+          sm:top-52 sm:block sm:h-40 sm:w-0 sm:w-48 sm:overflow-hidden sm:overflow-visible sm:rounded-br sm:border-r sm:border-b sm:border-s-5 sm:bg-white sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8
         "
-        :class="isOpen ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
       >
-        <a
-          class="w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:w-full md:capitalize"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
-        >
-        {{ if .HasChildren }}
-          <ul
-            class="
-              my-3 flex w-full flex-wrap gap-2
-            "
-            :class="isOpen ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
-          >
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+        {{ template "nav-menu-item" . }}
       </li>
     {{ end }}
     {{ range site.Menus.main_more }}
       <li
         class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:w-0 sm:overflow-hidden
+          z-10 mt-4 box-content flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-[253px] sm:block
+          sm:w-0 sm:w-48 sm:overflow-hidden sm:overflow-visible sm:rounded-l sm:border-t sm:border-l sm:border-b sm:border-s-5 sm:bg-white sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 md:-top-8 md:pt-[15px]
         "
-        :class="isOpen ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
       >
-        <a
-          class="
-            sm:h block w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
-          "
-          :class="isOpen ? 'sm:py-0 sm:h-11 md:justify-start' : ''"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
-        >
-        {{ if .HasChildren }}
-          <ul class="my-3 flex w-full flex-wrap gap-2">
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+        {{ template "nav-menu-item" . }}
       </li>
     {{ end }}
   </ul>
+
+  <button
+    :id="$id('dropdown-button')"
+    class="
+          no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
+        "
+    type="button"
+    x-ref="button"
+    @click="isOpen = ! isOpen"
+    data-ga-category="burger"
+    data-ga-action="menu:isOpen"
+    x-report-click
+  >
+    {{ block "nav-hamburger-button" . }}
+      <span class="hover:underline hover:underline-offset-2 sm:hidden "
+        >Menu</span
+      >
+      <span class="hover:underline hover:underline-offset-2 max-sm:hidden"
+        >More</span
+      >
+      <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
+        <span class="block space-y-1">
+          <span
+            class="
+                block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+              "
+            :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
+          ></span>
+          <span
+            class="
+                block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
+              "
+            :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
+          ></span>
+          <span
+            class="
+                block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
+              "
+            :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+          ></span>
+        </span>
+      </span>
+    {{ end }}
+  </button>
+  <!-- no JS fallback link to footer -->
+  <a
+    class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+    href="#footer"
+  >
+    {{ template "nav-hamburger-button" . }}
+  </a>
 </nav>
-<!-- spans load styles for alpinejs -->
+<!-- hidden spans prevent alpinejs classes from being CSS purged -->
 <span
   class=" opacity-1
   mx-0 box-content box-content
   box-content flex h-auto
   w-0 w-0
-  w-auto translate-y-1.5 rotate-45
-  overflow-hidden rounded border-s-5 px-3 px-4 px-5 pb-10 pt-12 opacity-0 max-sm:absolute max-sm:border sm:-right-16 sm:-right-16 sm:-top-6 sm:right-[-4rem] sm:top-52
-  sm:-ml-3 sm:mr-3 sm:block sm:block sm:block sm:h-40 sm:h-[auto] sm:w-48 sm:w-48 sm:w-48 sm:w-48 sm:overflow-hidden sm:overflow-hidden sm:overflow-hidden sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:overflow-visible
-  sm:rounded-l sm:rounded-br sm:rounded-tr sm:border-b sm:border-b
-  sm:border-l sm:border-r sm:border-r sm:border-t sm:border-t
-  sm:border-s-5 sm:border-s-5 sm:border-s-5 sm:bg-white sm:bg-white sm:bg-white sm:px-16 sm:px-3 sm:py-0 sm:py-0 sm:pb-0 sm:pb-10 sm:pb-3 sm:pb-[35px] sm:pl-4 sm:pl-4 sm:pl-8 sm:pr-4
-  sm:pr-8 sm:pr-8 sm:pt-0 sm:pt-2 sm:pt-2 sm:pt-6 md:absolute md:-top-8 md:right-[-4rem] md:top-[-1rem] md:hidden md:h-auto md:w-0 md:w-full md:justify-start md:justify-start
-  md:justify-end md:justify-end md:overflow-visible md:py-0 md:py-0
-  md:pt-[15px] md:pt-[15px]
-"
-  style="display:none;"
+  w-auto w-5 translate-y-1.5
+  -translate-y-1.5 rotate-45 -rotate-45 overflow-hidden rounded border-s-5 px-3 px-4 px-5 pb-10 pt-12 pt-14 opacity-0 max-sm:absolute max-sm:border sm:-right-16
+  sm:-right-16 sm:-top-6 sm:right-[-4rem] sm:top-52 sm:-ml-3 sm:mr-3 sm:block sm:block sm:block sm:h-40 sm:h-[auto] sm:w-48 sm:w-48 sm:w-48 sm:w-48 sm:overflow-hidden sm:overflow-hidden sm:overflow-hidden
+  sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:rounded-l
+  sm:rounded-br sm:rounded-tr sm:border-b sm:border-b sm:border-l
+  sm:border-r sm:border-r sm:border-t sm:border-t sm:border-s-5 sm:border-s-5 sm:border-s-5 sm:bg-white sm:bg-white sm:bg-white sm:px-16 sm:px-3 sm:py-0 sm:py-0 sm:pb-0 sm:pb-10 sm:pb-3 sm:pb-[35px]
+  sm:pl-4 sm:pl-4 sm:pl-8 sm:pr-4 sm:pr-8 sm:pr-8 sm:pt-0 sm:pt-2 sm:pt-2 sm:pt-6 sm:pb-9 md:absolute md:-top-8 md:right-[-4rem] md:top-[-1rem] md:hidden
+  md:h-auto md:w-0 md:w-full md:justify-start md:justify-start
+  md:justify-end md:justify-end
+  md:overflow-visible
+  md:py-0
+  md:py-0 md:pt-[15px] md:pt-[15px]
+  "
+  hidden
 ></span>
-<span
-  class="
-  w-5
-  -translate-y-1.5
-  -rotate-45 pt-14 sm:pb-9
-"
-  style="display:none;"
-></span>
-<!-- end: spans load styles for alpinejs -->
+
+{{ define "nav-menu-item" }}
+  <a
+    class="
+      block w-full flex-1 justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:h-11 sm:w-full sm:items-center sm:py-0 sm:capitalize md:justify-start md:py-0
+    "
+    href="{{ .URL }}"
+    data-ga-category="item"
+  >
+    {{- .Name -}}
+  </a>
+  {{ if .HasChildren }}
+    <ul
+      class="
+        my-3 flex w-full flex-wrap gap-2 sm:w-48 md:visible md:h-0 md:h-auto md:w-0 md:w-auto md:overflow-hidden md:overflow-visible
+      "
+    >
+      {{ range .Children }}
+        <li
+          class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
+        >
+          <a
+            class="flex-1 hover:underline hover:underline-offset-2"
+            href="{{ .URL }}"
+            data-ga-category="item"
+          >
+            {{- .Name -}}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
