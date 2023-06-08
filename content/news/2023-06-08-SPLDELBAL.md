@@ -40,7 +40,7 @@ At a Delaware County election board meeting last month, the board members said t
 
 Provisional ballots are given to people whose eligibility to vote is in question when they check in at a polling place. Election officials withhold those ballots from being counted until eligibility can be confirmed.
 
-The provisional ballots came from voters who had requested and returned a mail ballot, but had that mail ballot canceled by the county due to defects before the vote was tallied. By law, counties cannot count mail ballots which lack a signature, proper date, or are returned without being placed in a secrecy envelope, though <a href="https://www.aclupa.org/en/cases/pennsylvania-state-conference-naacp-et-al-v-schmidt-et-al">a case making its way through the federal courts</a> may change that. 
+The provisional ballots came from voters who had requested and returned a mail ballot, but had that mail ballot canceled by the county due to defects before the vote was tallied. By law, counties cannot count mail ballots which lack a signature, proper date, or are returned without being placed in a secrecy envelope, though <a href="https://www.aclupa.org/en/cases/pennsylvania-state-conference-naacp-et-al-v-schmidt-et-al">a case making its way through the federal courts</a> may change that.
 
 The total number of twice-rejected voters in the May primary is small, largely because Delaware County’s municipal primary was a low-turnout, off-year election. In a presidential or midterm election year, the number of twice-rejected voters under this policy could be much higher.
 
@@ -72,7 +72,9 @@ Schneider and the board’s attorney went back and forth at <a href="https://www
 
 A spokesperson for Pennsylvania’s court system said the decision was “an unreported memorandum opinion (i.e., unpublished),” meaning it does not have the same precedential value as a reported or published opinion.
 
-A spokesperson for the county did not respond to questions about the case, including if there was any other legal reasoning the county was relying on other than the lone 2020 case.
+A spokesperson for the county said that even though the board felt the ruling in question is incorrect, the board members voted to follow the law as they understood it.
+
+“It is not for the Board to ignore court rulings it does not like,” said spokesperson Adrienne Marofsky in a statement to Votebeat and Spotlight PA. “Rather, the Board will litigate this matter with the goal of seeking clarity from the courts of Pennsylvania on this important issue.”
 
 Lawyers with ties to former President Donald Trump have signaled the provision could be the basis for litigation in future elections for federal races.
 
