@@ -218,7 +218,13 @@
     <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
     <ul class="flex items-center justify-start gap-6 md:justify-between">
       {{ range .Site.Menus.social }}
+        <span class="hidden">{{.Name}}</span>
+        {{ if .HasChildren }}
+                      {{ range .Children }}
+
         {{ template "social-link" . }}
+      {{ end }}
+      {{ end }}
       {{ end }}
     </ul>
     {{ define "social-link" }}

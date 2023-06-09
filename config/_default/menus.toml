@@ -233,9 +233,25 @@ url = "/support/funders-and-members#major-donors-and-funders-since-launch"
 weight = 2
 
 [[social]]
+name = "Social"
+url = "#"
+weight = 1
+
+[[social]]
+name = "News Apps"
+url = "#"
+weight = 20
+
+[[social]]
+name = "Tools"
+url = "#"
+weight = 30
+
+[[social]]
 name = "Facebook"
 url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
+Parent = "Social"
 
 [social.params]
 icon = "fb"
@@ -244,6 +260,7 @@ icon = "fb"
 name = "Twitter"
 url = "https://www.twitter.com/SpotlightPA"
 weight = 2
+Parent = "Social"
 
 [social.params]
 icon = "twitter"
@@ -252,6 +269,7 @@ icon = "twitter"
 name = "Instagram"
 url = "https://www.instagram.com/Spotlightpennsylvania/"
 weight = 3
+Parent = "Social"
 
 [social.params]
 icon = "ig"
@@ -259,15 +277,26 @@ icon = "ig"
 [[social]]
 name = "Apple News"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
-weight = 5
+weight = 4
+Parent = "News Apps"
 
 [social.params]
 icon = "apple"
 
 [[social]]
+name = "RSS"
+url = "/feeds/full.xml"
+weight = 7
+Parent = "News Apps"
+
+[social.params]
+icon = "rss"
+
+[[social]]
 name = "Flipboard"
 url = "https://flipboard.com/@SpotlightPA"
-weight = 4
+weight = 6
+Parent = "News Apps"
 
 [social.params]
 icon = "flip"
@@ -276,6 +305,7 @@ icon = "flip"
 name = "Github"
 url = "https://www.github.com/spotlightpa/"
 weight = 9
+Parent = "Tools"
 
 [social.params]
 icon = "gh"
@@ -283,7 +313,8 @@ icon = "gh"
 [[social]]
 name = "Google News"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 6
+weight = 5
+Parent = "News Apps"
 
 [social.params]
 icon = "google"
