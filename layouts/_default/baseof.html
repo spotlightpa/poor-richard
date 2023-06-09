@@ -63,6 +63,10 @@
     {{ end }}
     <main data-ga-category="main">
       {{ block "before-main" . }}{{ end }}
+
+
+      <div id="main" class="sr-only">Main content</div>
+
       {{ block "main" . }}
         {{ .Render "main" }}
       {{ end }}

@@ -316,7 +316,7 @@
 
 /*! purgecss start ignore */
 [x-cloak] {
-  display: none;
+  display: none !important;
 }
 .no-js\:block {
   display: none;
