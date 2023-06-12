@@ -1,0 +1,55 @@
+{{ with .block }}
+  <nav
+    class="mx-5 mt-10 rounded border border-s-4 p-6 shadow md:mx-auto md:mt-16 md:max-w-screen-lg md:px-20 md:py-10"
+    data-ga-category="follow"
+  >
+    <h3
+      class="font-sans text-base font-bold uppercase leading-none tracking-wider text-orange"
+    >
+      {{ .title }}
+    </h3>
+    <ul class="items-start justify-start gap-6 sm:flex md:justify-between">
+      {{ range site.Menus.social }}
+        <li
+          class="mt-10 block odd:w-1/4 odd:flex-initial even:w-1/2 even:flex-1"
+        >
+          <span
+            class="block font-sans text-base font-bold uppercase leading-none tracking-wider"
+          >
+            {{ .Name }}
+          </span>
+          {{ if .HasChildren }}
+            <ul class="flex flex-wrap">
+              {{ range .Children }}
+
+                <li class="mt-5 flex-[1_0_160px]">
+                  <a
+                    href="{{ .URL }}"
+                    class="inline-flex items-center hover:text-blue"
+                    {{ with .Params.dispatch }}
+                      x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+                      data-dispatch="{{ . }}"
+                    {{ end }}
+                  >
+                    {{ $linkID := partial "helper/new-id.html" . }}
+                    {{ with .Params.icon }}
+                      <svg
+                        class="mr-1 h-8 w-8 fill-current"
+                        aria-labelledby="{{ $linkID }}"
+                      >
+                        {{ partial "helper/svg.html" . }}
+                      </svg>
+                    {{ end }}
+                    <span id="{{ $linkID }}" class="md:inline"
+                      >{{ .Name }}</span
+                    >
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}

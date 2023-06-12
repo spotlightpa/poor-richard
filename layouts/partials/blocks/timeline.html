@@ -1,0 +1,52 @@
+{{ with .block }}
+  <div class="bg-s-2 p-5 sm:py-5 xl:px-0 md:py-16">
+    <header class=" m-auto flex max-w-screen-lg items-baseline gap-3">
+      <svg class="mr-1 h-9 w-9 fill-s-5">
+        {{ partial "helper/svg.html" "trophy" }}
+      </svg>
+
+      <h3
+        class="mb-2 font-sans text-3xl font-black leading-tight tracking-wide sm:text-4xl lg:text-5xl"
+      >
+        {{- .title -}}
+      </h3>
+    </header>
+
+    <div 
+      class=" m-auto max-w-screen-lg border-t-4 sm:flex sm:items-start"
+      x-data="{ selected: 'item-2023' }"
+    >
+      {{ with .entries }}
+        <div
+          class="flex w-full items-end justify-start top-0 sticky space-x-2 bg-s-2 border-b-4 border-black pt-5 text-s-5 sm:w-1/6 sm:flex-col sm:border-b-0"
+        >
+          {{ range . }}
+
+            <a
+              href="#item-{{ .name }}"
+              class="
+                flex-0 text-2xl font-black leading-loose active:focus:text-black px-4
+              " 
+              :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'item-{{ .name }}' }"
+              @click="selected = 'item-{{ .name }}' "
+              >{{- .name -}}</a
+            >
+          {{ end }}
+        </div>
+          <div class="px-2 py-8 md:px-16 max-w-4xl sm:border-l-4">
+        {{ range . }}
+            <article 
+              id="item-{{ .name }}"
+              x-show="selected === 'item-{{ .name }}'"
+              class="article-content"
+              :class="{'pt-20 -mt-20': selected === 'item-{{ .name }}' }"
+
+            >
+              {{ $.Page.RenderString .body }}
+            </article>
+        {{ end }}
+          </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
