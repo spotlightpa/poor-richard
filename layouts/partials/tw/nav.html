@@ -1,25 +1,28 @@
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute">
+  <span class="m-4 font-sans font-bold underline"> Skip to main content </span>
+</a>
+
 <div
-  id="top"
-  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pt-2 font-sans"
-  data-ga-category="navbar"
+  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans"
+  data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
-  aria-label="main navigation"
+  aria-labelledby="top"
 >
-  <h1
+  <div
     class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
   >
     <a
+      id="top"
       class="h-max flex-1 sm:mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md"
       href="/"
       data-ga-category="logo"
     >
       <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
-        <title>Home</title>
-        <desc>Spotlight PA logo</desc>
+        <title>Spotlight PA Home</title>
         {{ partial "helper/svg.html" "banner" }}
       </svg>
     </a>
-  </h1>
+  </div>
   <a
     data-sf-campaign="701Dn000000YgogIAC"
     data-ga-category="donate"
@@ -46,277 +49,207 @@
   >
     Journalism that gets results for Pennsylvania
   </p>
-  <ul
+  <div
     class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
   >
-    <li>Independent</li>
-    <li>Nonpartisan</li>
-    <li>Nonprofit</li>
-  </ul>
+    <p>Independent</p>
+    <p>Nonpartisan</p>
+    <p>Nonprofit</p>
+  </div>
 </div>
+
 <nav
-  x-data="{ toggle: false }"
-  x-id="['dropdown-button']"
-  class="
-    relative flex h-11 w-full items-stretch justify-between border-b border-t bg-white px-3 font-sans md:justify-center
-  "
-  :class="toggle ? 'px-5 sm:px-3' : ''"
-  x-on:keydown.escape.prevent.stop="toggle = false; $refs.button.focus()"
-  @click.outside="toggle = false; $refs.button()"
-  @focusin.outside="toggle = false"
+  class="h-11 border-b border-t bg-white font-sans"
+  x-data="{ isOpen: false }"
+  @keydown.escape.prevent.stop="isOpen = false"
+  @click.outside="isOpen = false"
+  @focusin.outside="isOpen = false"
 >
-  <a
-    href="/search/"
-    class="z-20 flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide"
-    data-ga-category="search"
-    :data-ga-action="'modal:search:open'"
-    x-data
-    @click.prevent="$dispatch('modal:search:open')"
-  >
-    <svg class="h-[14px] w-[14px]" aria-label="Search">
-      {{ partial "helper/svg.html" "search" }}
-    </svg>
-    Search
-  </a>
-
-  <button
+  <div
     class="
-      no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide
-    "
-    :class="toggle ? 'sm:mr-3 sm:-ml-3' : ''"
-    type="button"
-    x-ref="button"
-    aria-label="Site Menu"
-    :aria-expanded="toggle"
-    :aria-controls="$id('dropdown-button')"
-    @click="toggle = ! toggle"
-    data-ga-category="burger"
-    data-ga-action="menu:toggle"
-    x-report-click
+      relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
   >
-    <span class="sm:hidden">Menu</span>
-    <span class="max-sm:hidden">More</span>
-    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
-      <div class="space-y-1">
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="toggle ? 'translate-y-1.5 rotate-45' : ''"
-        ></span>
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="toggle ? 'w-0 opacity-0' : 'opacity-1'"
-        ></span>
-        <span
-          class="
-            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-          :class="toggle ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
-        ></span>
-      </div>
-    </div>
-  </button>
-  <!-- no JS fallback link to footer -->
-  <a
-    class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
-    href="#footer"
-  >
-    <span>Menu</span>
-    <div class="flex h-5 w-5 cursor-pointer items-center justify-center">
-      <div class="space-y-1">
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-        <span
-          class="
-            block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-        <span
-          class="
-            block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out
-          "
-        ></span>
-      </div>
-    </div>
-  </a>
+    <a
+      href="/search/"
+      class="z-20 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
+      data-ga-category="search"
+      :data-ga-action="'modal:search:open'"
+      :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
+      x-data
+      @click.prevent="$dispatch('modal:search:open')"
+    >
+      <svg class="h-[14px] w-[14px]" aria-label="Search">
+        {{ partial "helper/svg.html" "search" }}
+      </svg>
+      Search
+    </a>
 
-  <ul
-    class="
-      -top-2 right-1 z-10 ml-1 box-content w-0 flex-wrap gap-2 overflow-hidden bg-white shadow sm:relative sm:top-auto sm:flex sm:h-auto sm:w-auto sm:max-w-4xl sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-evenly sm:rounded-none sm:border-none sm:bg-transparent sm:bg-none sm:px-16 sm:shadow-none sm:before:content-[] md:overflow-visible md:px-[6.75rem]
-    "
-    :class="toggle ? 'max-sm:absolute max-sm:border rounded border-s-5 flex w-auto h-auto px-4 pt-14 pb-10 sm:pt-0 sm:pb-0 sm:overflow-visible' : ''"
-    :id="$id('dropdown-button')"
-  >
-    {{ range site.Menus.main }}
-      <li
-        class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_auto] md:justify-center"
-      >
-        <a
-          class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
-        >
-      </li>
-    {{ end }}
-    {{ range site.Menus.main_about }}
-      <li
-        class="
-          mt-4 flex-[0_0_100%] flex-wrap items-center text-sm leading-none 
-          sm:absolute sm:z-10 sm:h-11 sm:w-0 sm:overflow-hidden 
-          md:right-4 md:top-0 md:my-0 md:flex
-          md:flex-[0_0_auto] md:overflow-visible
-        "
-        :class="toggle ? 'sm:block sm:right-[-4rem] md:right-[-4rem] sm:-top-6 sm:pt-2 sm:pb-3 sm:pr-8 sm:pl-4 sm:rounded-tr sm:bg-white sm:overflow-visible sm:w-48 sm:h-[auto] md:absolute md:h-auto md:top-[-1rem] md:pt-[15px] box-content sm:border-s-5 sm:border-r sm:border-t' : 'sm:overflow-hidden sm:w-0 sm:h-11'"
-      >
-        <a
+    <ul
+      class="
+        ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
+    >
+      {{ range site.Menus.main }}
+        <li
           class="
-            sm:h block w-full flex-1 md:justify-end border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
-          "
-          :class="{
-            'sm:py-0': toggle,
-            'sm:h-11': toggle,
-            'md:justify-start': toggle,
-            'md:justify-end': ! toggle,
-          }"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
+            flex h-11 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_auto] md:justify-center"
         >
-        {{ if .HasChildren }}
-          <ul
-            class="
-              my-3 flex w-full flex-wrap gap-2 md:h-0 md:w-0 md:overflow-hidden
-            "
-            :class="{
-              'md:visible': toggle,
-              'md:overflow-visible': toggle,
-              'md:w-auto': toggle, 
-              'md:h-auto': toggle, 
-              'sm:w-48': toggle,
-              'md:hidden': ! toggle,
-              'md:w-0': ! toggle
-            }"
+          <a
+            class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
+            href="{{ .URL }}"
+            data-ga-category="item"
           >
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
-      </li>
-    {{ end }}
+            {{- .Name -}}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
 
-    {{ range site.Menus.main_support }}
-      <li
+    <div class="ml-auto hidden self-center px-6 text-sm leading-none md:block">
+      <a
         class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:w-0 sm:overflow-hidden
-        "
-        :class="toggle ? 'sm:block sm:w-48 sm:rounded-br sm:bg-white sm:overflow-visible sm:pt-6 sm:pb-10 sm:pl-4 sm:pr-8 sm:-right-16 sm:top-52 sm:h-40 sm:border-s-5 sm:border-r sm:border-b box-content' : ''"
+        block py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:capitalize"
+        href="/about/"
+        data-ga-category="item"
       >
-        <a
-          class="w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:w-full md:capitalize"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
-        >
-        {{ if .HasChildren }}
-          <ul
-            class="
-              my-3 flex w-full flex-wrap gap-2
-            "
-            :class="toggle ? 'md:overflow-visible md:w-full sm:w-48' : 'md:hidden md:w-0'"
+        About
+      </a>
+    </div>
+
+    <ul
+      id="hamburger-menu"
+      x-cloak
+      class="
+        absolute left-2 right-2 -top-2 z-10 max-w-screen-md gap-y-2 rounded border border-s-5 bg-white px-4 pb-12
+        sm:left-auto sm:-top-4 sm:grid-cols-2 sm:gap-8 sm:px-8"
+      :class="{ 'hidden': !isOpen, 'grid': isOpen }"
+      x-trap="isOpen"
+      role="menu"
+      aria-labelledby="hamburger-button"
+      :aria-expanded="isOpen"
+    >
+      <ul class="mt-14 flex flex-wrap gap-2 sm:hidden">
+        {{ range site.Menus.main }}
+          <li
+            class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none"
           >
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
+            <a
+              class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2"
+              href="{{ .URL }}"
+              data-ga-category="item"
+            >
+              {{- .Name -}}
+            </a>
+          </li>
         {{ end }}
-      </li>
-    {{ end }}
-    {{ range site.Menus.main_more }}
-      <li
-        class="
-          mt-4 flex w-full flex-wrap items-center text-sm leading-none sm:absolute sm:-top-6 sm:right-44 sm:w-0 sm:overflow-hidden
-        "
-        :class="toggle ? 'sm:block sm:w-48 sm:rounded-l sm:bg-white sm:overflow-visible sm:pt-2 sm:pb-9 sm:pr-4 sm:pl-8 sm:border-s-5 sm:border-t sm:border-l sm:border-b md:-top-8 md:pt-[15px] box-content' : ''"
-      >
-        <a
-          class="
-            sm:h block w-full flex-1 border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:flex sm:w-full sm:items-center sm:capitalize md:py-0
-          "
-          :class="toggle ? 'sm:py-0 sm:h-11 md:justify-start' : ''"
-          href="{{ .URL }}"
-          data-ga-category="item"
-          >{{ .Name }}</a
+      </ul>
+
+      {{ range site.Menus.main_about }}
+        <li
+          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
         >
-        {{ if .HasChildren }}
-          <ul class="my-3 flex w-full flex-wrap gap-2">
-            {{ range .Children }}
-              <li
-                class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
-              >
-                <a
-                  class="flex-1 hover:underline hover:underline-offset-2"
-                  href="{{ .URL }}"
-                  data-ga-category="item"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
-      </li>
-    {{ end }}
-  </ul>
+          {{ template "nav-menu-item" . }}
+        </li>
+      {{ end }}
+
+      {{ range site.Menus.main_support }}
+        <li
+          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
+        >
+          {{ template "nav-menu-item" . }}
+        </li>
+      {{ end }}
+
+      {{ range site.Menus.main_more }}
+        <li
+          class="
+            row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
+            sm:col-start-1 sm:row-start-1"
+        >
+          {{ template "nav-menu-item" . }}
+        </li>
+      {{ end }}
+    </ul>
+
+    <button
+      id="hamburger-button"
+      class="
+        no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+      :class="isOpen ? '-translate-x-3' : ''"
+      type="button"
+      @click="isOpen = ! isOpen"
+      aria-controls="hamburger-menu"
+      aria-haspopup="true"
+      data-ga-category="burger"
+      data-ga-action="menu:isOpen"
+      x-report-click
+    >
+      {{ block "nav-hamburger-button" . }}
+        <span class="hover:underline hover:underline-offset-2 sm:hidden"
+          >Menu</span
+        >
+        <span class="hover:underline hover:underline-offset-2 max-sm:hidden"
+          >More</span
+        >
+        <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
+          <span class="block space-y-1">
+            <span
+              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+              :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
+            ></span>
+            <span
+              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+              :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
+            ></span>
+            <span
+              class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
+              :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+            ></span>
+          </span>
+        </span>
+      {{ end }}
+    </button>
+    <!-- no JS fallback link to footer -->
+    <a
+      class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+      href="#footer"
+    >
+      {{ template "nav-hamburger-button" . }}
+    </a>
+  </div>
 </nav>
-<!-- spans load styles for alpinejs -->
-<span
-  class=" opacity-1
-  mx-0 box-content box-content
-  box-content flex h-auto
-  w-0 w-0
-  w-auto translate-y-1.5 rotate-45
-  overflow-hidden rounded border-s-5 px-3 px-4 px-5 pb-10 pt-12 opacity-0 max-sm:absolute max-sm:border sm:-right-16 sm:-right-16 sm:-top-6 sm:right-[-4rem] sm:top-52
-  sm:-ml-3 sm:mr-3 sm:block sm:block sm:block sm:h-40 sm:h-[auto] sm:w-48 sm:w-48 sm:w-48 sm:w-48 sm:overflow-hidden sm:overflow-hidden sm:overflow-hidden sm:overflow-visible sm:overflow-visible sm:overflow-visible sm:overflow-visible
-  sm:rounded-l sm:rounded-br sm:rounded-tr sm:border-b sm:border-b
-  sm:border-l sm:border-r sm:border-r sm:border-t sm:border-t
-  sm:border-s-5 sm:border-s-5 sm:border-s-5 sm:bg-white sm:bg-white sm:bg-white sm:px-16 sm:px-3 sm:py-0 sm:py-0 sm:pb-0 sm:pb-10 sm:pb-3 sm:pb-[35px] sm:pl-4 sm:pl-4 sm:pl-8 sm:pr-4
-  sm:pr-8 sm:pr-8 sm:pt-0 sm:pt-2 sm:pt-2 sm:pt-6 md:absolute md:-top-8 md:right-[-4rem] md:top-[-1rem] md:hidden md:h-auto md:w-0 md:w-full md:justify-start md:justify-start
-  md:justify-end md:justify-end md:overflow-visible md:py-0 md:py-0
-  md:pt-[15px] md:pt-[15px]
-"
-  style="display:none;"
-></span>
-<span
-  class="
-  w-5
-  -translate-y-1.5
-  -rotate-45 pt-14 sm:pb-9
-"
-  style="display:none;"
-></span>
-<!-- end: spans load styles for alpinejs -->
+<!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
+<div hidden>
+  <span
+    class="opacity-1 w-0 w-5 translate-x-3 -translate-x-3 translate-y-1.5 -translate-y-1.5 rotate-45 -rotate-45 opacity-0 sm:translate-x-0"
+    hidden
+  ></span>
+</div>
+
+{{ define "nav-menu-item" }}
+  <a
+    class="
+      flex w-full flex-1 justify-start border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2
+      sm:block sm:h-11 sm:capitalize"
+    href="{{ .URL }}"
+    data-ga-category="item"
+  >
+    {{- .Name -}}
+  </a>
+  {{ if .HasChildren }}
+    <ul class="my-3 flex w-full flex-wrap gap-2 sm:w-48">
+      {{ range .Children }}
+        <li
+          class="flex h-6 flex-[1_0_45%] items-center text-sm leading-none sm:flex-[0_0_100%]"
+        >
+          <a
+            class="flex-1 hover:underline hover:underline-offset-2"
+            href="{{ .URL }}"
+            data-ga-category="item"
+          >
+            {{- .Name -}}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
