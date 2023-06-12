@@ -1,13 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-06-09-SPLEDUSPE.md"
+    "content/news/2023-06-12-SPLRAILODDS.md"
   ],
   "subfeatures": [
-    "content/news/1999-01-01-SPLEDSUBILL.md",
-    "content/news/2023-06-05-SPLBU23GU.md"
+    "content/newsletters/papost/2023-02-20-0700.md"
   ],
   "topSlots": [
-    "content/news/2023-06-08-SPLNEWSQUIZJUNE8.md",
+    "content/news/2023-06-09-SPLEDUSPE.md",
     "content/news/2023-06-08-SPLDELBAL.md",
     "content/statecollege/2023-06-07-SPLSTAY.md"
   ],
