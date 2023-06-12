@@ -18,6 +18,11 @@ name = "State College"
 url = "/statecollege/"
 weight = 2
 
+[[main]]
+name = "Impact"
+url = "/about/impact"
+weight = 5
+
 [[main_about]]
 name = "About"
 url = "/about/"
