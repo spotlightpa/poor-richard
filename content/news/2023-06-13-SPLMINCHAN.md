@@ -21,6 +21,10 @@ topics = ["The Capitol", "Economy"]
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>
 
+<i><b>Updated, Tuesday 4:30 p.m.: </b></i><i>In a party-line vote, Democrats on the Pennsylvania House Labor and Industy Committee passed a </i><a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sind=0&body=H&type=B&bn=1500"><i>bill</i></a><i> that would increase the state’s minimum wage to $15 by 2026, tying future increases to the rate of inflation. It could come up for a final vote as soon as next week.</i>
+
+<i><b>Original story</b></i>
+
 HARRISBURG — After years of arguments and <a href="https://www.penncapital-star.com/working-the-economy/a-9-50-minimum-wage-by-2022-the-pa-senate-just-passed-it-now-its-up-to-the-house/">a near-deal in 2019</a>, Democrats in the Pennsylvania legislature say it’s now just a matter of time before Republicans agree to vote in favor of raising the state’s minimum wage.
 
 At the moment, Pennsylvania’s wage floor is $7.25 an hour — the same as the federal minimum. The legislature last increased the state’s minimum wage in 2006, and every neighboring state currently has a higher wage floor.
