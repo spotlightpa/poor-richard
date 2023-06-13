@@ -7,7 +7,7 @@ linktitle = "Contact Us"
 type = "root"
 modal-exclude = true
 +++
-We're eager to hear from you about our work. For general inquiries, use the form below or check out our [staff page](/about/staff) to contact someone in particular.. You can also write to us at:
+We're eager to hear from you about our work. For general inquiries, use the form below or check out our [staff page](/about/staff) to contact someone in particular. You can also write to us at:
 
 Spotlight PA <br>
 PO Box 11728<br>
