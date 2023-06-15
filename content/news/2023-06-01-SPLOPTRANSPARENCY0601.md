@@ -21,6 +21,23 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<figure x-data="{ isOpen: false }">
+    <figcaption
+      @click.once="isOpen = true; $refs.player.play()"
+      class="text-navy underline italic cursor-pointer"
+    >
+      Click here to listen to an audio introduction to this story.
+    </figcaption>
+    <audio
+        x-show="isOpen"
+        x-ref="player"
+        controls
+        src="https://files.data.spotlightpa.org/uploads/01j8/pb67/opioid-transparency-with-intro-and-tag-2-.mp3"
+      >
+            <a href="https://files.data.spotlightpa.org/uploads/01j8/pb67/opioid-transparency-with-intro-and-tag-2-.mp3">Download audio</a>
+    </audio>
+</figure>
+
 Tom VanKirk leads a board with power over a vast amount of money.
 
 The Pennsylvania Opioid Misuse and Addiction Abatement Trust is responsible for ensuring counties and other local governments appropriately spend hundreds of millions of dollars expected to come their way from settlements with opioid companies. That money is intended to help Pennsylvania respond to a crisis that kills thousands of people annually in the state.
