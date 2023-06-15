@@ -3,11 +3,13 @@
 
 
 <figure x-data="{ isOpen: false }">
-  <figcaption
-    @click.once="isOpen = true; $refs.player.play()"
-    class="cursor-pointer italic text-navy underline"
-  >
-    {{ $label }}
+  <figcaption>
+    <button
+      class="cursor-pointer italic text-navy underline"
+      @click.once="isOpen = true; $refs.player.play()"
+    >
+      {{- $label -}}
+    </button>
   </figcaption>
   <audio x-show="isOpen" x-ref="player" controls src="{{ $src }}">
     <a href="{{ $src }}">Download audio</a>
