@@ -1,0 +1,19 @@
+{{ $label := .Get "label" | default `Click here to listen to an audio introduction to this story.` }}
+{{ $src := .Get "src" }}
+
+<figure x-data="{ isOpen: false }">
+    <figcaption
+      @click.once="isOpen = true; $refs.player.play()"
+      class="text-navy underline italic cursor-pointer"
+    >
+      {{ $label }}
+    </figcaption>
+    <audio
+        x-show="isOpen"
+        x-ref="player"
+        controls
+        src="{{ $src }}"
+      >
+            <a href="{{ $src }}">Download audio</a>
+    </audio>
+</figure>
