@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-06-15-SPLGAMINVEST.md"
+    "content/news/2023-06-16-SPLLUZERNE.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-16-SPLGAMBOR.md",
-    "content/news/2022-04-11-SPLCASINO.md"
+    "content/news/2022-11-15-SPLPAPERELEX.md",
+    "content/news/2023-02-15-SPLLUZVOTE.md",
+    "content/news/2023-02-28-SPLCORANK.md"
   ],
   "topSlots": [
+    "content/news/2023-06-15-SPLGAMINVEST.md",
     "content/news/2023-06-14-SPLEDBUD.md",
-    "content/news/2023-06-13-SPLMINCHAN.md",
-    "content/news/2023-06-15-SPLNEWSQUIZJUNE15.md"
+    "content/news/2023-06-13-SPLMINCHAN.md"
   ],
   "topper": []
 }
