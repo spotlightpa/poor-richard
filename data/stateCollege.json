@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-06-07-SPLSTAY.md"
+    "content/statecollege/2023-06-20-SPLTTLAW.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-05-30-SPLDUBCASH.md",
-    "content/statecollege/2023-04-24-SPLSANDY.md",
-    "content/statecollege/2023-04-10-SPLHERMDUB.md"
+    "content/statecollege/2023-04-06-SPLTTROSE.md",
+    "content/statecollege/2023-01-10-SPLPSUPOLICE.md",
+    "content/statecollege/2023-03-10-SPLTTSALARIES.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-06-07-SPLSTAY.md",
     "content/statecollege/2023-05-25-SPLACCREDIT.md",
-    "content/statecollege/2023-05-22-SPLSOCIALRTK.md",
-    "content/statecollege/2023-05-17-SPLMAP.md"
+    "content/statecollege/2023-05-22-SPLSOCIALRTK.md"
   ],
   "topper": []
 }
