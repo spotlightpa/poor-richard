@@ -58,7 +58,7 @@ The longest-tenured staffer, Emily Cook, had 14 months of experience on Election
 
 Sanguedolce’s report found that the causes of the ballot paper shortage were part of a complicated series of events that led up to and continued throughout Election Day.
 
-Luzerne uses a system referred to as “ballot-on-demand” voting. In this type of system, used by other counties in Pennsylvania, voters make their selection on an electronic ballot-marking device, which then prints out a ballot with their selections on it. Voters then review the printout and feed it into a <a href="http://tabulator.In" target="_blank">tabulator.In</a> some other counties, ballots are printed ahead of time and hand-marked by voters. Ballot-on-demand systems, by nature, require sufficient paper at polling places.
+Luzerne uses a system referred to as “ballot-on-demand” voting. In this type of system, used by other counties in Pennsylvania, voters make their selection on an electronic ballot-marking device, which then prints out a ballot with their selections on it. Voters then review the printout and feed it into a tabulator. In some other counties, ballots are printed ahead of time and hand-marked by voters. Ballot-on-demand systems, by nature, require sufficient paper at polling places.
 
 Prior to the election, election officials knew they had relatively little paper on hand. In a text to Gilbert McBride, Cook said the county was running low on paper, but that she didn’t think it was necessary to order more for the November election. Gilbert McBride nonetheless said she would order paper, but did not seem to have followed through and done it.
 
