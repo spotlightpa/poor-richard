@@ -98,7 +98,7 @@ In a letter informing lawmakers he would sign the bill, Wolf said that “partne
 
 One source close to negotiations, who asked for anonymity to discuss private discussions, said the intended recipient for the hydrogen hub credit is Pittsburgh-based U.S. Steel.
 
-The company <a href="https://investors.ussteel.com/news/news-details/2022/U.-S.-Steel-Equinor-and-Shell-to-Explore-Regional-Clean-Energy-Opportunities/default.aspx">announced</a> plans in August to pursue a hydrogen hub in the “Ohio, West Virginia, Pennsylvania region” in conjunction with Shell and a third company.
+The company <a href="https://web.archive.org/20221103205442/https://investors.ussteel.com/news/news-details/2022/U.-S.-Steel-Equinor-and-Shell-to-Explore-Regional-Clean-Energy-Opportunities/default.aspx">announced</a> plans in August to pursue a hydrogen hub in the “Ohio, West Virginia, Pennsylvania region” in conjunction with Shell and a third company.
 
 The company still has <a href="https://www.ussteel.com/about-us/locations">four steel-making facilities</a> in Pennsylvania — including one in Clairton that has been <a href="https://www.alleghenyfront.org/us-steel-fined-1-8-million-for-rotten-egg-pollution-near-pittsburgh-clairton-coke-works/">fined</a> for pollution in recent years — and experts have noted that one of hydrogen’s best uses could be to decarbonize heavy industries like steel.
 
