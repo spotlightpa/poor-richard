@@ -9,6 +9,10 @@ modal-exclude = true
 layout = "page-landing"
 
 [[blocks]]
+layout = "impact-carousel"
+title = "Spotlight PA Impact since launch"
+
+[[blocks]]
 layout = "text-3"
 title = "How We Track Impact"
 copy = "We look at impact across a broad spectrum of indicators to assess how our journalism is affecting and benefitting Pennsylvania. Our work often prompts significant change, such as policy changes or new legislation, but its importance extends much further. Whether it’s sparking further discussion, garnering additional media coverage, spurring action by advocacy groups, prompting individual readers to get involved, and more, we track and record all of it. You can read more in our inaugural Impact Report, slated for early 2024."
