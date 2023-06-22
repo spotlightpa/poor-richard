@@ -1,9 +1,9 @@
 {
   "banner": "Everything you need to know for the 2023 Pa. primary. \u003cstrong\u003eVisit our Election Center »\u003c/strong\u003e",
   "banner-active": false,
-  "banner-bg-color": "#000",
+  "banner-bg-color": "#ffcb03",
   "banner-link": "/elections",
-  "banner-text-color": "#FFF",
+  "banner-text-color": "#000000",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
   "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
@@ -42,22 +42,26 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
+  "sidebar-sticky-description": "Explore the beautiful places, amazing people, and delicious food of Pennsylvania through our free weekly newsletter, PA Local. Sign up now.",
   "sidebar-sticky-height": 250,
-  "sidebar-sticky-images": [],
-  "sidebar-sticky-link": "/donate",
-  "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
-  "sidebar-top-height": 250,
-  "sidebar-top-images": [],
-  "sidebar-top-link": "/donate",
-  "sidebar-top-width": 300,
-  "sticky-active": false,
-  "sticky-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
-  "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01j5/x0q1/1.png"
+  "sidebar-sticky-images": [
+    "https://files.data.spotlightpa.org/uploads/01j9/9jzc/22.png"
   ],
-  "sticky-link": "/donate",
+  "sidebar-sticky-link": "/newsletters",
+  "sidebar-sticky-width": 300,
+  "sidebar-top-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
+  "sidebar-top-height": 250,
+  "sidebar-top-images": [
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
+  ],
+  "sidebar-top-link": "/newsletters/",
+  "sidebar-top-width": 300,
+  "sticky-active": true,
+  "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
+  "sticky-images": [
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
+  ],
+  "sticky-link": "/newsletters",
   "support-active": true,
   "support-bg-color": "#ffe5e5",
   "support-button-bg-color": "#ff0000",
