@@ -216,7 +216,7 @@
     data-ga-category="follow"
   >
     <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
-    <ul class="flex items-center justify-start gap-6 md:justify-between">
+    <ul class="flex flex-wrap lg:flex-nowrap items-center justify-start gap-6 md:justify-between">
       {{ range .Site.Menus.social }}
         <span class="hidden">{{ .Name }}</span>
         {{ if .HasChildren }}
@@ -239,7 +239,7 @@
           {{ $linkID := partial "helper/new-id.html" . }}
           {{ with .Params.icon }}
             <svg
-              class="mr-1 h-4 w-4 fill-current"
+              class="mr-1 h-7 w-7 md:h-4 md:w-4 fill-current"
               aria-labelledby="{{ $linkID }}"
             >
               {{ partial "helper/svg.html" . }}
