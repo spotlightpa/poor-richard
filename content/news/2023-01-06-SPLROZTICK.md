@@ -128,8 +128,6 @@ As the dust settled, members began to realize that this could be a big deal for 
 
 “In the game of politics, there’s chess and there’s checkers,” Gregory said. “And I think we just played a really good game of chess.”
 
-{{<picture src="external/yc7s1egcgfn13xfaft33bg920w.jpeg" description="Lawmakers in the Pennsylvania House of Representatives were sworn in on Jan. 3." caption="Lawmakers in the Pennsylvania House of Representatives were sworn in on Jan. 3." credit="Matt Smith / AP">}} 
-
 ## ‘Now there is no majority’
 
 In the three days since Rozzi’s election and declaration of independence, Democrats and Republicans alike have insisted that they have his allegiance and a numerical advantage in the chamber.
