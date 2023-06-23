@@ -195,8 +195,6 @@ McSwain, a former Trump-appointed U.S. attorney in Philadelphia, has attracted b
 
 The Commonwealth Leaders Fund — a political action committee founded by prominent conservative Matthew Brouillette and funded in large part by billionaire Jeffrey Yass — has bet big on McSwain, donating almost $6 million in TV and digital ads as well as other items like mailers. These are known as in-kind donations.
 
-{{<picture src="external/g83c145r69x4evxmwrmt7qq9jc.jpeg" description="Dave White has received his top donations from a PAC controlled by Bob Asher." caption="Dave White has received his top donations from a PAC controlled by Bob Asher." credit="Keith Srakocic / AP">}} 
-
 ## Dave White
 
 Cash raised overall: $5.1 million

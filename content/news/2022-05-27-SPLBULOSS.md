@@ -55,8 +55,6 @@ Leo Knepper, political director of the PAC, said that he hoped the primary was a
 
 He said rank-and-file Republicans need to “recognize that there are significant consequences when they say one thing and do another.”
 
-{{<picture src="external/sqyfh11f5gyg5ma4ze2hcxqhd0.jpeg" description="One likely conservative target is the University of Pittsburgh, which received $154 million in state support last year, most of the money earmarked to help keep in-state students’ tuition low." caption="One likely conservative target is the University of Pittsburgh, which received $154 million in state support last year, most of the money earmarked to help keep in-state students’ tuition low." credit="Gene J. Puskar / AP">}} 
-
 ## A possible target
 
 Even before the primary, some were taking note of Knepper’s warning.
