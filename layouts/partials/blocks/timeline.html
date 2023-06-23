@@ -25,7 +25,7 @@
             <a
               href="#item-{{ .name }}"
               class="
-                flex-0 text-2xl font-black leading-loose active:focus:text-black px-4
+                flex-0 text-sm px-2 sm:text-2xl font-black leading-loose active:focus:text-black sm:px-4
               " 
               :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'item-{{ .name }}' }"
               @click="selected = 'item-{{ .name }}' "
