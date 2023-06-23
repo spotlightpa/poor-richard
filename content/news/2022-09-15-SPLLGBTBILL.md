@@ -50,8 +50,6 @@ A United Nations independent expert echoed those concerns in a report in August,
 
 “The evidence shows that, without exception, these actions rely on prejudiced and stigmatizing views of LGBT persons, in particular transgender children and youth, and seek to leverage their lives as props for political profit.”
 
-{{<picture src="external/7ft3zea9ze63yb3j2pgpf4af5c.jpeg" description="In March 2022, demonstrators protested what critics call the &#34;Don&#39;t Say Gay&#34; law inside the Florida State Capitol. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade. " caption="In March 2022, demonstrators protested what critics call the &#34;Don&#39;t Say Gay&#34; law inside the Florida State Capitol. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade. " credit="Wilfredo Lee">}} 
-
 The state Senate bill is similar to the Parental Rights in Education <a href="https://web.archive.org/20220901012820/https://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=76545">law</a> enacted in Florida this summer, dubbed “Don’t Say Gay” by its critics. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade.
 
 It requires schools to notify parents if there “is a change in the student’s services or monitoring related to the student’s mental, emotional, or physical health or well-being” — a <a href="https://time.com/6208554/florida-lgbtq-teachers-dont-say-gay-education-law/">confusing clause that some teachers fear means they must “out” their students</a>.
