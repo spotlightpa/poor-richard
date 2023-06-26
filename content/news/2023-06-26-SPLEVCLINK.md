@@ -27,9 +27,12 @@ Tickets are $35 per person. All proceeds will support Spotlight PA’s investiga
 
 Buy your ticket now:
 
-<noscript><a href="https://www.eventbrite.com/e/clink-and-think-quiz-bash-with-spotlight-pa-tickets-663145254307" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
-<!-- You can customize this button any way you like --><button id="eventbrite-widget-modal-trigger-663145254307" type="button">Buy Tickets</button>
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script><script type="text/javascript">var exampleCallback = function() {console.log('Order complete!');};window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '663145254307',modal: true,modalTriggerElementId: 'eventbrite-widget-modal-trigger-663145254307',onOrderComplete: exampleCallback});</script>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-663145254307" type="button" class="btn-signup">Buy Tickets</button>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js" defer onload="var exampleCallback = function() {console.log('Order complete!');};window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '663145254307',modal: true,modalTriggerElementId: 'eventbrite-widget-modal-trigger-663145254307',onOrderComplete: exampleCallback});"></script>
+
+<a href="https://www.eventbrite.com/e/clink-and-think-quiz-bash-with-spotlight-pa-tickets-663145254307">Or buy your tickets on Eventbrite.</a>
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
