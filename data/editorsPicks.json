@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-06-23-SPLHYDOVER.md"
+    "content/news/2023-06-27-WHR-Investigator-0627.md"
   ],
-  "subfeatures": [
-    "content/news/2022-11-03-SPLCREDITSIGN.md",
-    "content/news/2023-05-11-SPLWELLS11.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-06-23-SPLHYDOVER.md",
     "content/news/2023-06-22-SPLNEWSQUIZJUNE22.md",
-    "content/news/2023-06-22-SPLLIFESCH.md",
-    "content/news/2023-06-21-SPLFAMCRED.md"
+    "content/news/2023-06-22-SPLLIFESCH.md"
   ],
   "topper": []
 }
