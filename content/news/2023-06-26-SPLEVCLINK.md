@@ -19,7 +19,7 @@ topics = ["Events"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-Join Spotlight PA for a &#34;Clink and Think&#34; quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m., upstairs at Axemann Brewery in Bellefonte, to celebrate the one-year anniversary of our State College bureau.
+Join Spotlight PA for a “Clink and Think” quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m., upstairs at Axemann Brewery in Bellefonte, to celebrate the one-year anniversary of our State College bureau.
 
 Test your Pennsylvania knowledge with a quiz hosted by Penn State play-by-play announcer <strong>Steve Jones</strong>. Enjoy hearty food buffets by Marin Eats and Flo Bros., non-alcoholic beverages, and a cash bar. Trivia teams can have 2-6 players, with prizes for the top three teams. There will be plenty of breaks for mingling and enjoying the outdoor deck, so come to play or simply to cheer for your friends and support Spotlight PA!
 
