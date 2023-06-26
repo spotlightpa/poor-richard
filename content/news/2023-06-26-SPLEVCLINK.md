@@ -1,4 +1,5 @@
 +++
+aliases = ["/quizbash/"]
 blurb = "Join Spotlight PA for a \"Clink and Think\" quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a \"Clink and Think\" quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m."
@@ -15,7 +16,6 @@ slug = "pa-state-college-anniversary-event"
 suppress-date = false
 title = "You’re invited! Spotlight PA State College hosts quiz bash and anniversary fundraiser"
 topics = ["Events"]
-aliases = ["/quizbash/"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
