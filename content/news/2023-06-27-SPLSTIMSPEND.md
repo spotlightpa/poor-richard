@@ -16,7 +16,7 @@ slug = "pa-covid-stimulus-money-american-rescue-plan-act-full-list"
 suppress-date = false
 title = "How Pennsylvania has (and hasn’t) spent billions of COVID-19 stimulus dollars (FULL LIST) "
 title-tag = "How PA spent COVID stimulus money"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
