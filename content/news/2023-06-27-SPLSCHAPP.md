@@ -14,7 +14,7 @@ modal-exclude = false
 published = 2023-06-27T11:33:23.333-04:00
 slug = "pa-al-schmidt-election-official-confirmation-hearing"
 suppress-date = false
-title = "Trump target Al Schmidt gets crucial approval to become Pa.’s top election official"
+title = "Trump target Al Schmidt gets crucial approval as he moves closer to becoming Pa.’s top election official"
 title-tag = "Al Schmidt closer to being PA's top election official"
 topics = ["Elections", "The Capitol"]
 +++
