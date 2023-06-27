@@ -1,11 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-06-27-WHR-Investigator-0627.md"
+    "content/news/2023-06-27-SPLSTIMSPEND.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2022-07-08-SPLSTIMPLAN.md"
+  ],
   "topSlots": [
+    "content/news/2023-06-27-WHR-Investigator-0627.md",
     "content/news/2023-06-23-SPLHYDOVER.md",
-    "content/news/2023-06-22-SPLNEWSQUIZJUNE22.md",
     "content/news/2023-06-22-SPLLIFESCH.md"
   ],
   "topper": []
