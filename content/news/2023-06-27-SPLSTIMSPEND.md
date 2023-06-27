@@ -50,7 +50,7 @@ Here’s a rundown of where Pennsylvania’s stimulus spending stands:
 
 Upon first receiving the federal funds in 2021, the state legislature agreed to spend over half of the total $7.3 billion on revenue replacement. In the document filed with the U.S. Treasury, state officials said $4.6 billion was used “to counteract revenue loss within the General Fund and to aid the provision of government services.”
 
-A <a href="https://www.spotlightpa.org/news/2022/07/pa-stimulus-2022-money-gov-wolf-update-budget/">spending plan for the remaining $2.7 billion</a> was negotiated separately, with all funds appropriated by summer 2022.
+A <a href="https://www.spotlightpa.org/news/2022/07/pa-stimulus-2022-money-gov-wolf-update-budget/">spending plan for the remaining $2.7 billion</a> was negotiated as part of the 2022 budget.
 
 Using stimulus money to replace lost revenue is an extremely common practice, according to Marquette University political science professor Philip Rocco, who has studied how <a href="https://gfrc.uic.edu/our-work/featured-projects/how-are-cities-using-arpa-fiscal-recovery-funds/">local governments nationwide have used ARPA funds</a>.
 
@@ -84,9 +84,9 @@ The program, championed by progressive state Sen. Nikil Saval (D., Philadelphia)
 
 The program has so far used just under $68 million of its funding, about half its total allocation. As Spotlight PA previously reported, <a href="https://www.spotlightpa.org/news/2023/06/pa-whole-home-repairs-program-rural-counties-applications/">three of the state’s 67 counties declined to participate</a>.
 
-The Whole-Home Repairs Program is one of several initially paid for with federal money that Democratic Gov. Josh Shapiro now wants to keep funding through state resources. In Shapiro’s budget proposal this year, he suggested continuing the Whole-Home Repairs Program using $200 million in state revenue.
+The Whole-Home Repairs Program is one of several initially paid for with federal money that state House Democrats now want to keep funding through state resources. Along party lines, the state House recently <a href="https://www.spotlightpa.org/news/2023/06/pa-education-spending-legislature-budget-josh-shapiro/" target="_blank">passed a budget bill</a> that would continue the Whole-Home Repairs Program using $200 million in state revenue.
 
-All told, the governor’s proposal allocates $400 in state tax revenue to continue such programs, which also include violence intervention and prevention programming and grants to stabilize child care rates.
+Gov. Josh Shapiro has expressed his support for supporting and growing the initiative. His budget proposal allocates $400 million in state tax revenue to continue programs funded with federal money, including violence intervention and prevention programming and grants to stabilize child care rates.
 
 ## Money left to spend
 
@@ -116,5 +116,7 @@ The plan “has broad support, frankly as it should,” said bill sponsor and me
 The bill now goes to the Republican-controlled state Senate for final approval.
 
 “We’ve had talks with the Senate since we started last year. And I think there were some concerns, and we’ll certainly be restarting those talks,” Schlossberg said.
+
+<i>Correction: This piece initially included incorrect information about what is in Gov. Josh Shapiro’s budget proposal regarding the Whole-Homes Repair Program.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
