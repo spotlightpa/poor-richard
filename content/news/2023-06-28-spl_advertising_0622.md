@@ -11,6 +11,7 @@ internal-id = "spl_advertising_0622"
 kicker = "Medical marijuana"
 modal-exclude = false
 published = 2023-06-28T05:00:00-04:00
+series = ["Unproven, Unsafe"]
 slug = "medical-marijuana-advertising-ban-end"
 suppress-date = false
 title = "Medical marijuana law update would lift the advertising ban on Pa. doctors"
