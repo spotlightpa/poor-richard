@@ -23,7 +23,7 @@ topics = ["Economy"]
 
 HARRISBURG — Thousands of Pennsylvania homeowners who have been waiting months for help from a troubled state mortgage relief program are stuck in limbo — again.
 
-Their situation is a consequence of the state’s efforts to fix the program, which launched last February with $350 million in federal pandemic aid to help homeowners catch up on their bills, but has been hamstrung by internal problems.
+Their situation is a consequence of the state’s efforts to fix the program, which launched in February  2022 with $350 million in federal pandemic aid to help homeowners catch up on their bills, but has been hamstrung by internal problems.
 
 “We need to make sure no one loses their home while they’re waiting for help,” said Rachel Labush, an attorney at Community Legal Services in Philadelphia, at an event at the state Capitol on Tuesday.
 
@@ -49,7 +49,7 @@ PHFA aims to prioritize the applicants at the greatest risk of losing their home
 
 Meanwhile, applicants who have successfully registered still face a wait of about two months, on average, before receiving the aid.
 
-The program opened last February and offers grants of up to $50,000 to help eligible homeowners catch up on mortgage payments, utility bills, property taxes, and other housing costs.
+The program opened in February 2022 and offers grants of up to $50,000 to help eligible homeowners catch up on mortgage payments, utility bills, property taxes, and other housing costs.
 
 But as Spotlight PA <a href="https://www.spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/">previously</a> reported, homeowners seeking help from the program have faced long and uncertain waits — in some cases, more than a year. Some applicants with overdue utility bills had their service shut off while waiting. Others saw their credit scores plunge as they fell further behind on mortgage payments because of the delays.
 
