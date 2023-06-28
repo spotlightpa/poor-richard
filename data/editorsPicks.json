@@ -2,11 +2,14 @@
   "featuredStories": [
     "content/news/2023-06-27-SPL_Mortgage_27.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-03-22-SPLmortgagecontract22.md",
+    "content/news/2023-02-01-SPLPAHAF31.md"
+  ],
   "topSlots": [
+    "content/news/2023-06-27-SPLBALREJ.md",
     "content/news/2023-06-27-SPLSTIMSPEND.md",
-    "content/news/2023-06-27-SPLSCHAPP.md",
-    "content/news/2023-06-27-WHR-Investigator-0627.md"
+    "content/news/2023-06-27-SPLSCHAPP.md"
   ],
   "topper": []
 }
