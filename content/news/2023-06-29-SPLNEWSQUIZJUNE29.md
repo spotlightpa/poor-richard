@@ -19,7 +19,7 @@ topics = ["News Quiz"]
 
 Test your knowledge of the week in news, from legislative battles over private school vouchers to a key Senate committee vote. Click the button below to get started:
 
-<div data-tf-widget="uRADQ72W" data-tf-opacity="100" data-tf-iframe-props="title=SPL News Quiz Week 23 - June 29" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<button data-tf-popup="uRADQ72W" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=SPL News Quiz Week 23 - June 29" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Take the News Quiz!</button><script src="//embed.typeform.com/next/embed.js"></script>
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (cdeppen@spotlightpa.org) with a heads up. And good luck!
 
