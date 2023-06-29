@@ -3,12 +3,13 @@
     "content/news/2023-06-29-SOLVOUCHNEG.md"
   ],
   "subfeatures": [
+    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
     "content/news/2023-06-22-SPLLIFESCH.md"
   ],
   "topSlots": [
+    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
     "content/statecollege/2023-06-29-SPLSTATEAPP.md",
-    "content/news/2023-06-28-spl_advertising_0622.md",
-    "content/news/2023-06-27-SPL_Mortgage_27.md"
+    "content/news/2023-06-28-spl_advertising_0622.md"
   ],
   "topper": []
 }
