@@ -33,7 +33,7 @@ As in previous years, the funding would come with a mandate that the universitie
 
 Through an open records request, Spotlight PA obtained copies of reports filed with the auditor general in the past five years. The documents show that the state-related universities report their appropriation spending as a lump sum.
 
-{{<picture src="https://images.data.spotlightpa.org/insecure/rt:fill/w:770/h:352/g:sm/el:1/q:75/MjAyMy8wNi8wMWo5LXM3ZnktejJoMS1icTAwLnBuZw==.webp" width="770" height="352" description="A screenshot of Penn State’s “statement of appropriations earned” for fiscal year 2022." caption="A screenshot of Penn State’s “statement of appropriations earned” for fiscal year 2022." credit="Screenshot">}}
+{{<image src="https://images.data.spotlightpa.org/insecure/rt:fill/w:770/h:352/g:sm/el:1/q:75/MjAyMy8wNi8wMWo5LXM3ZnktejJoMS1icTAwLnBuZw==.webp" width="770" height="352" description="A screenshot of Penn State’s “statement of appropriations earned” for fiscal year 2022." caption="A screenshot of Penn State’s “statement of appropriations earned” for fiscal year 2022." credit="Screenshot">}}
 
 “It does not appear that the universities have been required to track their exact expenditures directly to the appropriations, which is likely why the statutory sections allow them to also include ‘other university accounts’ so that it is reported in total,” Michèlle Pokrifka, deputy chief counsel in the Department of the Auditor General, told Spotlight PA in an email.
 
