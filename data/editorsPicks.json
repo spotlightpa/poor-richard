@@ -1,13 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-06-29-SOLVOUCHNEG.md"
+    "content/news/2023-06-29-SPLSCHOOLCHOICE.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
+    "content/news/2023-06-29-SOLVOUCHNEG.md",
     "content/news/2023-06-22-SPLLIFESCH.md"
   ],
   "topSlots": [
-    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
+    "content/news/2023-06-29-SPLNEWSQUIZJUNE29.md",
     "content/statecollege/2023-06-29-SPLSTATEAPP.md",
     "content/news/2023-06-28-spl_advertising_0622.md"
   ],
