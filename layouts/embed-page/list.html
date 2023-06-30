@@ -6,11 +6,8 @@
   {{/* Use resources.Concat to remove .min. from the URL */}}
   {{ $hostJS = slice $hostJS | resources.Concat "/embed.js" }}
   {{ $scriptSrc := $hostJS.Permalink }}
-  <section
-    class="article-content max-w-prose mx-auto"
-    data-ga-category="embed-list"
-  >
-    <div class="column is-three-fifths">
+  <section class="bg-white" data-ga-category="embed-list">
+    <div class="article-content max-w-prose mx-auto ">
       {{ range $page := .Pages }}
         {{ if .Param "hide-embed-list" | not }}
           {{ $params := .Param "page-query-params" }}
@@ -75,7 +72,7 @@
                     ></code>
                   </div>
                 </div>
-                <div class=" mt-5 mb-1">
+                <div class="mt-5 mb-1">
                   <div class="flex items-center">
                     <button
                       type="button"
@@ -83,11 +80,10 @@
                       class="flex items-center py-2 px-5 m-2 bg-blue rounded shadow text-white font-black tracking-wider  mx-0"
                       @click="copy()"
                     >
-                      <span class=" w-6 h-6 mr-3 fill-white">
-                        {{ $iconCopy := resources.Get "@fontawesome/regular/copy.svg" }}
-                        {{ $iconCopy.Content|safeHTML }}
-                      </span>
-                      <span> Copy text </span>
+                      <svg class="w-6 h-6 mr-3 fill-white">
+                        {{ partial "helper/svg.html" "copy" }}
+                      </svg>
+                      <span>Copy text</span>
                     </button>
                     <div
                       x-cloak
@@ -96,9 +92,14 @@
                       x-transition:enter-start="fade-enter"
                       x-transition:leave="fade-leave-active"
                       x-transition:leave-end="fade-leave-to"
-                      class="font-black text-blue ml-2"
+                      class="flex items-baseline gap-2 font-black text-blue ml-2"
                     >
-                      Copied
+                      <span>Copied</span>
+                      <svg
+                        class="translate-y-px h-4 w-4 text-green fill-current"
+                      >
+                        {{ partial "helper/svg.html" "check" }}
+                      </svg>
                     </div>
                   </div>
                 </div>
