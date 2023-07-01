@@ -56,7 +56,7 @@ The voucher proposal included in state Senate Republicans’ budget proposal wou
 
 It would give between $2,500 and $15,000 per year in state-funded vouchers to eligible students, depending on grade and whether the student needed special education services. That money could be used only for tuition at a nonpublic school, or on associated fees, including special education expenses.
 
-Students would be eligible if they attend public schools categorized as “<a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” — that is, in the bottom 15% in reading and math scores among schools of their kind. The funds would be limited to children whose families make less than 250% of <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>. A family of four, for instance, would have to make less than $75,000 annually to qualify.
+Students would be eligible if they live in the attendance area of a public school categorized as “<a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” — that is, in the bottom 15% in reading and math scores among schools of its kind. The funds would be limited to children whose families make less than 250% of <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>. A family of four, for instance, would have to make less than $75,000 annually to qualify.
 
 The scholarships would begin in the 2024-25 school year, and be awarded on a first-come, first-served basis to eligible students who apply. Preference would be given in subsequent years to children who had already received a scholarship.
 
@@ -102,9 +102,9 @@ Shapiro urged lawmakers on both sides of the Capitol to be more flexible.
 
 “After a dozen years of total Republican control of the Legislature, Senate Republicans need to give more than they’re used to — and after a dozen years in the minority, House Democrats can’t expect to get everything they’ve wanted over the last decade in one budget,” he said in a statement.
 
-<br/>At publication time, state House Democratic leaders hadn’t said when they plan to return to the Capitol. Members were told they were on a six-hour call to get back to Harrisburg.
+<br/>At publication time, state House Democratic leaders hadn’t said when they plan to resume voting. Members were told they were on a six-hour call to get back to Harrisburg.
 
-State Senate Republican leaders told reporters after their chamber had passed the bill that they would stick by Shapiro if he maintained that he wanted to fund private school vouchers. But they cautioned that if Shapiro were to pull his support, their agreement would be “null and void” and they would reduce the total spend of the budget.
+After passing their budget package Friday, state Senate Republican leaders told reporters that they would stick by Shapiro if he stayed committed to funding private school vouchers. But they cautioned that if Shapiro were to pull his support, their agreement would be “null and void” and they would reduce the total spend of the budget.
 
-“We have to be crystal clear the governor has made clear that he supports \[vouchers\],” Pittman said. “As long as we continue to hear that he supports that initiative, we will stand with him.”
+“The governor has made clear that he supports \[vouchers\],” Pittman said. “As long as we continue to hear that he supports that initiative, we will stand with him.”
 
