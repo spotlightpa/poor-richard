@@ -45,8 +45,6 @@ First elected to the state Senate in a 2019 special election, Mastriano started 
 
 His profile began its meteoric rise in 2020, as the COVID-19 pandemic shut down the world.
 
-{{<picture src="external/8cvdrry9effngag0qkz0ej6njc.jpeg" description="Mastriano, a retired Army colonel and Gulf War veteran, is a favorite among grassroots conservatives and evangelicals." caption="Mastriano, a retired Army colonel and Gulf War veteran, is a favorite among grassroots conservatives and evangelicals." credit="Carolyn Kaster / AP">}} 
-
 At first, he appeared somewhat supportive of mitigation efforts — even proposing legislation that would let public health officials <a href="https://www.penncapital-star.com/election-2022/now-a-defender-of-personal-freedom-mastriano-wanted-to-lift-privacy-rules-in-pandemics-early-days/">release the names</a> of people who tested positive for the coronavirus. But after a few weeks of lockdowns — ordered by the Wolf administration to prevent hospitals from becoming overwhelmed — Mastriano began railing against Wolf in daily Facebook videos and later at Capitol rallies opposing the pandemic response.
 
 Those videos and events earned him a dedicated fandom that, by the summer of 2020, was calling for him to run for governor.

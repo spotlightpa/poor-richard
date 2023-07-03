@@ -1,7 +1,7 @@
 +++
-image = "external/gj0edhbyr200btx1sazq6qczq0.jpeg"
-image-description = "A police officer writes a ticket for a motorist"
-image-credit = "Photo illustration Kat Wawrykow / Getty Images"
+image = "2022/08/01hg-j9dw-vn7r-hbcs.jpeg"
+image-credit = "Jose F. Moreno / Philadelphia Inquirer"
+image-description = "A police cruiser on the highway"
 image-size = "hidden"
 title = "Criminal Justice"
 kicker = "Criminal Justice"

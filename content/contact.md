@@ -1,13 +1,21 @@
 +++
 published = 2019-10-20T20:31:11.792Z
-title = "Become a partner"
+title = "Contact Us"
 description = "Contact Spotlight PA about stories, tips and how to become a partner."
 title-tag = "Contact Us"
 linktitle = "Contact Us"
 type = "root"
 modal-exclude = true
 +++
-Spotlight PA was created to provide news organizations across Pennsylvania quality, in-depth investigative reporting on the state government and issues of statewide importance. We're eager to expand our network of distribution partners and provide all of our work **free of charge** to other newsrooms. To become a distribution partner, please contact Joanna Zuckerman Bernstein at [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
+We're eager to hear from you about our work. For general inquiries, use the form below or check out our [staff page](/about/staff) to contact someone in particular. You can also write to us at:
+
+Spotlight PA <br>
+PO Box 11728<br>
+Harrisburg, PA 17108-1728
+
+For questions about your membership, including how to change or cancel a gift, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org).
+
+For more information on supporting Spotlight PA, visit our [Ways to Give](/support) page.
 
 <div class="my-12">
 {{<featured/promo-contact-form
@@ -16,3 +24,7 @@ Spotlight PA was created to provide news organizations across Pennsylvania quali
   submit="Send Inquiry"
 >}}
 </div>
+
+## Become a partner
+
+Spotlight PA was created to provide news organizations across Pennsylvania quality, in-depth investigative reporting on the state government and issues of statewide importance. We're eager to expand our network of distribution partners and provide all of our work **free of charge** to other newsrooms. To become a distribution partner, please contact Skyler Cruz at [skyler@spotlightpa.org](mailto:skyler@spotlightpa.org).

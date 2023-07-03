@@ -21,7 +21,7 @@ topics = ["Penn State"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-A <a href="https://www.supremecourt.gov/opinions/20pdf/20-512_gfbh.pdf">unanimous 2021 Supreme Court decision</a> opened the door to student-athletes earning money for their “name, image, and likeness” — often called NIL — while participating in college sports.
+A <a href="https://web.archive.org/20220903053810/https://www.supremecourt.gov/opinions/20pdf/20-512_gfbh.pdf">unanimous 2021 Supreme Court decision</a> opened the door to student-athletes earning money for their “name, image, and likeness” — often called NIL — while participating in college sports.
 
 At their most basic level, NIL deals allow a brand or company to pay a student-athlete to be featured in an advertisement, appear at an event, or promote a product on social media, for example.
 
@@ -63,9 +63,9 @@ The landscape is great for people who want little regulation, Lust said.
 
 In the initial months after the Supreme Court decision, contracts between individual companies and athletes received a lot of attention. Now groups called “collectives” dominate the conversation. Collectives pool money — often from alumni and other supporters — to arrange contracts for athletes at specific schools.
 
-Penn State <a href="https://gopsusports.com/sports/2021/9/28/statement.aspx">promotes the collectives</a> We Are and Success With Honor on its webpage.
+Penn State <a href="https://web.archive.org/20220907005720/https://gopsusports.com/sports/2021/9/28/statement.aspx">promotes the collectives</a> We Are and Success With Honor on its webpage.
 
-We Are <a href="https://nittanycommonwealth.com/">describes itself as a “football first collective”</a> that works “by providing fan incentives and business relationships for student-athletes.” The collective did not respond to requests for comment.
+We Are <a href="https://web.archive.org/20220913154623/https://nittanycommonwealth.com/">describes itself as a “football first collective”</a> that works “by providing fan incentives and business relationships for student-athletes.” The collective did not respond to requests for comment.
 
 Success With Honor told Spotlight PA it has worked with over 70 student-athletes to facilitate more than 50 NIL deals across 18 sports at Penn State. In the first five months after its March launch, the group raised nearly $2 million to support Penn State student-athletes, said Jason Belzer, CEO of Student Athlete NIL, the company that manages Success With Honor.
 

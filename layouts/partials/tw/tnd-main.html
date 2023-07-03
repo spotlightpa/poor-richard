@@ -15,7 +15,7 @@
       id="{{ $id }}"
       x-data
       x-intersect.half="$dispatch('intersect:about', $el.id)"
-      class="lg:scroll-mt-20 bg-white"
+      class="bg-white lg:scroll-mt-20"
       data-ga-category="blocks"
     >
       {{ partial "blocks/block" (dict "Page" $ "block" .) }}

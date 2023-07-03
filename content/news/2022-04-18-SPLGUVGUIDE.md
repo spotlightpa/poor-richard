@@ -199,8 +199,6 @@ If elected governor, he has promised to focus on stimulating the economy and ene
 
 - Inquirer: <a href="https://www.inquirer.com/politics/election/bill-mcswain-us-attorney-2022-pa-governor-race-20220316.html">Bill McSwain was ‘angling to run for something’ as U.S. attorney. Now his run for governor is all about his time as a prosecutor.</a>
 
-{{<picture src="external/g83c145r69x4evxmwrmt7qq9jc.jpeg" description="Dave White is the owner of an HVAC company and a former Delaware County Council member. " caption="Dave White is the owner of an HVAC company and a former Delaware County Council member. " credit="Keith Srakocic / AP">}} 
-
 <b>Dave White</b> | <a href="https://web.archive.org/20220401203943/https://www.davewhiteforgovernor.com/">Website</a>
 
 White is the owner of an HVAC company and a former Delaware County Council member. He’s campaigning as a political outsider and someone with “real world” experience.

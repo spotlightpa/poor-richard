@@ -50,9 +50,7 @@ A United Nations independent expert echoed those concerns in a report in August,
 
 “The evidence shows that, without exception, these actions rely on prejudiced and stigmatizing views of LGBT persons, in particular transgender children and youth, and seek to leverage their lives as props for political profit.”
 
-{{<picture src="external/7ft3zea9ze63yb3j2pgpf4af5c.jpeg" description="In March 2022, demonstrators protested what critics call the &#34;Don&#39;t Say Gay&#34; law inside the Florida State Capitol. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade. " caption="In March 2022, demonstrators protested what critics call the &#34;Don&#39;t Say Gay&#34; law inside the Florida State Capitol. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade. " credit="Wilfredo Lee">}} 
-
-The state Senate bill is similar to the Parental Rights in Education <a href="https://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=76545">law</a> enacted in Florida this summer, dubbed “Don’t Say Gay” by its critics. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade.
+The state Senate bill is similar to the Parental Rights in Education <a href="https://web.archive.org/20220901012820/https://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=76545">law</a> enacted in Florida this summer, dubbed “Don’t Say Gay” by its critics. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade.
 
 It requires schools to notify parents if there “is a change in the student’s services or monitoring related to the student’s mental, emotional, or physical health or well-being” — a <a href="https://time.com/6208554/florida-lgbtq-teachers-dont-say-gay-education-law/">confusing clause that some teachers fear means they must “out” their students</a>.
 
@@ -98,7 +96,7 @@ Among the <a href="https://www.senatoraument.com/empowering-families-in-educatio
 
 - A middle school health teacher showed students a video explaining the chemistry behind hormone therapy.
 
-According to the American Academy of Pediatrics, “<a href="https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Gender-Identity-and-Gender-Confusion-In-Children.aspx">most children have a stable sense of their gender identity</a>” by age 4. A study of transgender children between ages 5-12 published by the journal Psychological Science <a href="https://rcgd.isr.umich.edu/wp-content/uploads/2018/08/Olson.Key.Eaton_.2015.pdf">found their identities were “deeply held”</a> — they weren’t confused or pretending.
+According to the American Academy of Pediatrics, “<a href="https://web.archive.org/20220901051058/https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Gender-Identity-and-Gender-Confusion-In-Children.aspx">most children have a stable sense of their gender identity</a>” by age 4. A study of transgender children between ages 5-12 published by the journal Psychological Science <a href="https://web.archive.org/20190616080207/https://rcgd.isr.umich.edu/wp-content/uploads/2018/08/Olson.Key.Eaton_.2015.pdf">found their identities were “deeply held”</a> — they weren’t confused or pretending.
 
 “Those kids know it,” said Strohman. “It just takes them time to develop language to communicate to someone else, but also the courage and bravery to risk saying it out loud.”
 

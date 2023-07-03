@@ -1,33 +1,22 @@
 +++
 arc-id = "KLDGOXBVHFAALKZMDDHTF64QQM"
-internal-id = "SPLGIFTBANXX"
-internal-budget = ""
-image = "external/v9hzvkrmfpnjng4qrpgc7fhrvw.jpeg"
-image-description = "Activists from MarchOnHarrisburg have been pushing for a gift ban for decades."
-image-caption = ""
-image-credit = "Marc Levy"
-image-size = ""
-published = 2021-06-10T13:45:11Z
-slug = "pa-legislature-gift-ban-march-on-harrisburg"
 authors = ["Shaniece Holmes Brown"]
-byline = "Shaniece Holmes Brown for Spotlight PA"
-title = "Activists target top Republican in Pa. Senate as they push for gift ban"
-subtitle = ""
-description = "Four protesters were arrested and charged with trespassing during the peaceful demonstration at the Capitol."
 blurb = "Four protesters were arrested and charged with trespassing during the peaceful demonstration at the Capitol."
+byline = "Shaniece Holmes Brown for Spotlight PA"
+description = "Four protesters were arrested and charged with trespassing during the peaceful demonstration at the Capitol."
+image = "external/yhxbkbz0jdbgfrhgpck0jerwrw.jpeg"
+image-credit = "Tom Gralish / Philadelphia Inquirer"
+image-description = "The Pennsylvania state Capitol building in Harrisburg."
+internal-id = "SPLGIFTBANXX"
 kicker = "The Capitol"
-topics = ["The Capitol"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-06-10T09:45:11-04:00
+slug = "pa-legislature-gift-ban-march-on-harrisburg"
+suppress-date = false
+suppress-featured = false
+title = "Activists target top Republican in Pa. Senate as they push for gift ban"
+topics = ["The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
