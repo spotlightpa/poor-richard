@@ -22,7 +22,7 @@ HARRISBURG — Pennsylvania’s state budget is late, and so far there’s no de
 
 Talks between Democratic Gov. Josh Shapiro, the Republican-controlled state Senate, and the narrowly Democratic-controlled state House fell apart last week thanks to a deadlock over whether to include <a href="https://www.spotlightpa.org/news/2023/06/pa-senate-budget-private-school-voucher-pass-house-leaves/">private school vouchers in the spending plan</a>.
 
-Three days after the June 30 deadline, most lawmakers are back in their districts and the House and Senate have yet to schedule a return to Harrisburg.
+Three days after the June 30 deadline, most lawmakers are back in their districts. While the House is planning a voting session for Wednesday, the Senate has yet to schedule a return to Harrisburg.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -86,13 +86,11 @@ A survey by the United Way of Pennsylvania, a nonprofit dedicated to boosting ed
 
 ## What happens now?
 
-Rank and file members in both the state House and Senate told Spotlight PA on Monday that they still hadn’t heard from chamber leaders about when they would be called back to Harrisburg, or whether talks were still actively ongoing among leaders.
+Rank and file members in both the state House and Senate told Spotlight PA on Monday that they hadn’t heard whether talks were still actively ongoing among leaders.
 
 Spokespeople for state House Democrats and Shapiro either did not return requests for comment, or declined to comment on the status of negotiations. Kate Flessner, a spokesperson for Senate Republicans, said in an email that,“Until the governor and House Democrats reconcile their differences on the PASS initiative, the Senate has completed its work.”
 
-Neither chamber has session days planned in <a href="https://www.legis.state.pa.us/">the near future</a>.
-
-The state Senate’s next scheduled session day is September 18, and state House members are on a six-hour call with no precise return date scheduled.
+The state Senate’s next scheduled session day is September 18. Late on Monday, the state House scheduled its next voting session for this Wednesday, July 5.
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
