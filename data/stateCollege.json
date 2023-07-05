@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-06-29-SPLSTATEAPP.md"
+    "content/statecollege/2023-07-05-SPLTIOGAFOLO.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-04-24-SPLPSUBUD.md"
+    "content/statecollege/2022-12-19-SPLTIOGA.md",
+    "content/statecollege/2022-12-22-SPLTIOGA3.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-06-29-SPLSTATEAPP.md",
     "content/statecollege/2023-06-20-SPLTTLAW.md",
-    "content/statecollege/2023-06-07-SPLSTAY.md",
-    "content/statecollege/2023-05-25-SPLACCREDIT.md"
+    "content/statecollege/2023-06-07-SPLSTAY.md"
   ],
   "topper": []
 }
