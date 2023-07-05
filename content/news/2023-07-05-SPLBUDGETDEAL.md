@@ -28,7 +28,7 @@ Separately, Shapiro’s general counsel has sent House Democrats’ counsel a le
 
 The voucher program would give publicly-funded private school scholarships to students in low-achieving public schools, and it was the reason why House Democrats last week refused to pass a budget deal that Shapiro negotiated with Senate Republicans.
 
-That deal, which passed the state Senate <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=213">29-21</a> on Friday, included key Democratic priorities like increased education funding, universal free school lunch, and the commonwealth’s first-ever funding for <a href="https://www.spotlightpa.org/news/2023/04/pa-public-defense-gov-shapiro/">public legal defense</a>. However, Democrats viewed the inclusion of vouchers as a poison pill.
+That deal, which passed the state Senate <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=213">29-21</a> on Friday, included key Democratic priorities like increased education funding, universal free school breakfast, and the commonwealth’s first-ever funding for <a href="https://www.spotlightpa.org/news/2023/04/pa-public-defense-gov-shapiro/">public legal defense</a>. However, Democrats viewed the inclusion of vouchers as a poison pill.
 
 When they passed it last week, Senate GOP leaders made it clear that their support for it was contingent on vouchers being included in the plan, with Senate President Pro Tempore Kim Ward (R., Westmoreland) telling reporters that any plan that didn’t include vouchers would have to have “a different number.”
 
@@ -40,13 +40,37 @@ It remains unclear whether Shapiro’s offer to veto the program would secure th
 
 The governor has the power to selectively veto individual appropriations while leaving the rest of the budget intact. That power was last used in 2021, when former Gov. Tom Wolf <a href="https://www.thecentersquare.com/pennsylvania/article_ab150b84-d9e8-11eb-a03b-03ca685c7e76.html">line-item vetoed</a> additional funding for the state’s auditor general that legislative Republicans said was <a href="https://www.penncapital-star.com/election-2020/gop-legislature-says-it-funded-election-audits-wolf-auditor-general-defoor-disagree/">meant to fund election audits.</a>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
 Members of the House and Senate have the power to override a governor’s veto, but only if they can muster support from two thirds of their chamber. It’s unlikely that Senate Republicans — who passed their budget plan last week with a less than two-thirds majority, and with support from only one Democrat — can change the budget’s path.
 
 The deal would raise spending by about 5% over last year, with most of that new money going toward education — a priority for Democrats. But with the state sitting on about $12 billion in cash reserves, Democrats had hopes for an even bigger increase in light of <a href="https://www.spotlightpa.org/news/2023/02/pa-public-school-funding-lawsuit-state-budget-billions/">a court ruling earlier this year</a> that found the state was unconstitutionally underfunding poorer school districts.
 
 The deal also did not include action on a number of other Democratic priorities, from a <a href="https://www.spotlightpa.org/news/2023/06/pa-minimum-wage-raise-legislature/#:~:text=At%20the%20moment%2C%20Pennsylvania&#39;s%20wage,same%20as%20the%20federal%20minimum.">minimum wage increase</a> to an LGBTQ non-discrimination measure.
+
+Vouchers emerged as a budget flashpoint in the weeks leading up to the commonwealth’s June 30 deadline.
+
+Shapiro’s administration kicked off speculation about the issue when his education secretary, Khalid Mumin, <a href="https://www.spotlightpa.org/news/2023/06/pa-private-school-voucher-legislature-josh-shapiro-jeff-yass/">told the state Senate in a written Q&amp;A</a> that Shapiro would support vouchers so long as they “do not impact school district funding.” Shapiro then doubled down, <a href="https://www.foxnews.com/video/6329975337112">appearing on Fox News</a> to again express support for voucher programs.
+
+The sudden focus on vouchers led unions across Pennsylvania — particularly the commonwealth’s politically and financially powerful teachers’ unions — to push back strongly against Shapiro.
+
+A broad coalition of labor organizations <a href="https://www.spotlightpa.org/news/2023/06/pa-private-school-voucher-legislature-josh-shapiro-jeff-yass/">sent Shapiro a letter</a> urging him to reconsider. Rich Askey, who heads the Pennsylvania State Education Association, said his group had made it “clear” to Shapiro that the unions do not have his back on vouchers, saying that they are “incredibly disappointed.”
+
+At the same time, vouchers received support from a similarly broad group of advocates for school choice — that is, people who believe state dollars should fund a range of educational options, not just public schools.
+
+A group with well-heeled backers launched a barrage of pro-voucher TV ads, and <a href="https://www.spotlightpa.org/news/2023/06/pa-senate-budget-private-school-voucher-pass-house-leaves/">a letter endorsing vouchers</a> went out to Shapiro with signatures from prominent conservatives such as Grover Norquist and former U.S. Education Secretary Betsy DeVos, as well as music industry figures with Philadelphia ties such as rapper Meek Mill and talent manager Troy Carter.
+
+Amid the furor, state Senate Republicans approved a <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=0479&amp;pn=1815">$45.5 billion budget deal</a> that they said had been negotiated in close consultation with Shapiro. It included $100 million in funding for what became known as the Pennsylvania Award for Student Success (or PASS) program.
+
+The program would give students in “<a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” school districts between $2,500 and $15,000 in scholarships on a first-come, first-served basis. It would have an income cap of less than 250% of <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>, which means a family of four, for instance, would have to make less than $75,000 annually to qualify. Students awarded scholarships would only be able to use the money for tuition or related expenses at a nonpublic school.
+
+State House Democratic leadership drew a line in the sand, vowing to vote down any voucher program that arrived in the lower chamber. Pennsylvania House Majority Leader Matt Bradford (D., Montgomery) told reporters Friday that he believed “the voucher issue is over.”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
+At a news conference following the vote, state Senate Republicans made it clear that the budget and lifeline scholarships were intrinsically linked and that they intended to slim down any budget deal without funding for the scholarships. Pennsylvania Senate Majority Leader Joe Pittman (R., Indiana) added that the issue surrounding scholarships should be negotiated between House Democrats and Shapiro.
+
+“We&#39;ve completed our constitutional obligation,” Pittman said. “We will wait to hear what the governor and his majority party in the House wants to do and where they want to go from here.”
+
+The state Senate is not scheduled to return to Harrisburg until September.
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
