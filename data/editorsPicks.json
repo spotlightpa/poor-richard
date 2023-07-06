@@ -1,11 +1,10 @@
 {
   "featuredStories": [
-    "content/news/2023-07-05-SPLBUDGETDEAL.md"
+    "content/news/2023-07-05-SPLHOUSEPASS.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
-    "content/news/2023-07-03-SPLIMPASSE.md",
-    "content/news/2023-06-30-SPLSENBUD.md"
+    "content/news/2023-07-05-SPLBUDGETDEAL.md",
+    "content/news/2023-06-29-SPLSCHOOLCHOICE.md"
   ],
   "topSlots": [
     "content/statecollege/2023-07-05-SPLTIOGAFOLO.md",
