@@ -1,9 +1,10 @@
 {{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-40 md:w-64` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-lg` }}
+{{ $dekSize := .dekSize | default `text-xl` }}
 {{ $hedColor := .hedColor | default `text-hed ` }}
 {{ $linkColor := .linkColor | default `text-dek ` }}
-
+{{ $subitemSize := .subitemSize | default `` }}
 
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
@@ -52,7 +53,7 @@
         </h2>
         {{ if .dek }}
           <h3
-            class=" order-1 font-sans text-xl font-light leading-tight tracking-normal text-dek"
+            class="{{ $dekSize }} leading-tight tracking-normal order-1 font-sans font-light text-dek"
           >
             <a
               href="{{ .link }}"
@@ -105,7 +106,7 @@
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
-            <li class="list-[square] leading-snug tracking-normal">
+            <li class="{{ $subitemSize }} list-[square] leading-snug tracking-normal">
               <a
                 href="{{ .link }}"
                 class="{{ $linkColor }} hover:underline"
