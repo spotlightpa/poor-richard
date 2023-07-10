@@ -1,13 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-07-07-SPLCODES.md"
+    "content/news/2023-07-07-SPLSTATERELATED.md"
   ],
   "subfeatures": [
     "content/news/2023-07-05-SPLHOUSEPASS.md",
     "content/news/2023-07-05-SPLBUDGETDEAL.md"
   ],
   "topSlots": [
-    "content/news/2023-07-07-SPLSTATERELATED.md",
+    "content/news/2023-07-07-SPLCODES.md",
     "content/news/2023-07-06-SPLNEWSQUIZJULY03.md",
     "content/statecollege/2023-07-05-SPLTIOGAFOLO.md"
   ],
