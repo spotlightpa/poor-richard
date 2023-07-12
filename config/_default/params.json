@@ -6,8 +6,10 @@
   "banner-text-color": "#000000",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
-  "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
-  "featured-promo-images": [],
+  "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and all monthly recurring gifts will be MATCHED 12 times!",
+  "featured-promo-images": [
+    "https://files.data.spotlightpa.org/uploads/01ja/y09q/febmarch-2023-mobile-toppers-1024-512-px-5-.svg"
+  ],
   "featured-promo-link": "/donate/",
   "featured-promo-width": 1024,
   "footer-promo-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
