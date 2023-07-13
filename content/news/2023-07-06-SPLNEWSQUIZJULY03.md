@@ -1,4 +1,5 @@
 +++
+authors = ["Colin Deppen"]
 blurb = "Test your knowledge of the week in news, from legislative efforts to pass a budget to U.S. Rep. Brendan Boyle’s favorite cartoon reptile."
 byline = "Colin Deppen of Spotlight PA"
 description = "Test your knowledge of the week in news, from legislative efforts to pass a budget to U.S. Rep. Brendan Boyle’s favorite cartoon reptile."
