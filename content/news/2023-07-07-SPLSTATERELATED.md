@@ -1,4 +1,5 @@
 +++
+authors = ["Samuel O’Neal"]
 blurb = "Pa. House lawmakers have left Harrisburg after deadlocking over state funding for four universities, with a GOP faction raising concerns about puberty blockers and transparency."
 byline = "Samuel O’Neal for Spotlight PA"
 description = "After multiple failures, the PA House left Harrisburg without passing funding for Lincoln University, Penn State, Pitt, and Temple."
