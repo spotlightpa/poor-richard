@@ -14,10 +14,14 @@ language-code = "es"
 modal-exclude = false
 no-index = false
 published = 2022-09-19T05:00:00-04:00
-slug = "pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía "
+slug = "pa-eleccion-2022-mastriano-shapiro-gobernador-candidatura-completa-guia"
 suppress-date = false
 title = "Elecciones Pa. 2022: Su guía completa de los candidatos a gobernador"
 topics = ["Español"]
+aliases = [
+"/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía/",
+"/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía%20/"
+]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> es una sala de redacción independiente y no partidista impulsada por The Philadelphia Inquirer en asociación con PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review y WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Inscríbete sin costo a nuestros boletines</i></a><i>.</i>

@@ -13,11 +13,14 @@ kicker = "Español"
 language-code = "es"
 modal-exclude = false
 published = 2023-03-31T23:59:10-04:00
-slug = "pa-primarias-elección-2023-corte-suprema"
+slug = "pa-primarias-eleccion-2023-corte-suprema"
 suppress-date = false
 title = "Elecciones primarias Pa. 2023: Guía completa de los candidatos a la Corte Suprema del Estado"
 title-tag = "Guía para las elecciones primarias a la Corte Suprema de PA 2023"
 topics = ["Español", "Elections"]
+aliases = [
+"/news/2023/03/pa-primarias-elección-2023-corte-suprema/"
+]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
