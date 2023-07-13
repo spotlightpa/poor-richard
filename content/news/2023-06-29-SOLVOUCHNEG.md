@@ -1,4 +1,5 @@
 +++
+authors = ["Stephen Caruso", "Kate Huangpu"]
 blurb = "Republicans who control the Pa. Senate and Gov. Josh Shapiro, a Democrat, have backed a voucher proposal known as the lifeline scholarship program. State House Democratic leadership has balked."
 byline = "Stephen Caruso of Spotlight PA and Kate Huangpu of Spotlight PA"
 description = "Republicans who control the Pa. Senate and Gov. Josh Shapiro, a Democrat, have backed a voucher proposal known as the lifeline scholarship program."
