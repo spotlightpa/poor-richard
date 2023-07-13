@@ -1,4 +1,5 @@
 +++
+authors = ["Colin Deppen"]
 blurb = "Test your knowledge of the week in news, from the consequences of the ongoing budget impasse to public support for legal cannabis."
 byline = "Colin Deppen of Spotlight PA"
 description = "Test your knowledge of the week in news, from the consequences of the ongoing budget impasse to public support for legal cannabis."
