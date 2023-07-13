@@ -112,11 +112,17 @@
 {{ end }}
 <meta name="twitter:title" content="{{ .Param `twitter-title` | default $seoTitle }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-{{ with .Site.Social.twitter -}}
-<meta name="twitter:site" content="@{{ . }}"/>
-{{ end -}}
-{{ range .Site.Authors }}
-{{ with .twitter -}}
-<meta name="twitter:creator" content="@{{ . }}"/>
-{{ end -}}
-{{ end -}}
+<meta name="twitter:site" content="@spotlightpa"/>
+{{ range .Param "authors" }}
+  {{ $author := partial "helper/get-author" . }}
+  {{ with $author.twitter }}
+    <meta name="twitter:creator" content="@{{ . }}"/>
+  {{ end }}
+{{ end }}
+{{ if .Param "byline" }}
+  <!-- Despite the name, this only displays in Slack -->
+  <meta name="twitter:label1" value="Authored by" />
+  <meta name="twitter:data1" value="{{ .Param `byline` }}" />
+  <meta name="twitter:label2" value="Reading time" />
+  <meta name="twitter:data2" value="{{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}" />
+{{ end }}

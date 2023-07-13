@@ -58,6 +58,11 @@ parent = "About"
 url = "/contact/"
 weight = 1
 
+[[main_about]]
+name = "Send a Tip"
+parent = "About"
+url = "/tips/"
+
 [[main_support]]
 name = "Support Spotlight PA"
 url = "/support/"
@@ -171,6 +176,11 @@ weight = 5
 name = "Contact"
 url = "/contact/"
 weight = 6
+
+[[about]]
+name = "Send a Tip"
+url = "/tips/"
+weight = 7
 
 [[news]]
 name = "Investigations"

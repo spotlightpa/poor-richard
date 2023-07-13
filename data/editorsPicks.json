@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-06-30-SPLSENBUD.md"
+    "content/news/2023-07-11-SPLPROPROB.md"
   ],
-  "subfeatures": [
-    "content/news/2023-06-29-SOLVOUCHNEG.md",
-    "content/news/2023-06-22-SPLLIFESCH.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2023-06-29-SPLSCHOOLCHOICE.md",
-    "content/news/2023-06-29-SPLNEWSQUIZJUNE29.md",
-    "content/statecollege/2023-06-29-SPLSTATEAPP.md"
+    "content/news/2023-07-07-SPLSTATERELATED.md",
+    "content/news/2023-07-07-SPLCODES.md",
+    "content/news/2023-07-06-SPLNEWSQUIZJULY03.md"
   ],
   "topper": []
 }

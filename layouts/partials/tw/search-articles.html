@@ -10,7 +10,7 @@
       <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         id="{{ $idInput }}"
-        class="spl-input"
+        class="spl-input rounded-r-none"
         @input="isLoading = true"
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
@@ -20,10 +20,10 @@
       <button
         class="
           h-full rounded-r-lg
-          border-2 border-yellow-5 bg-yellow-4
+          border border-yellow-5 bg-yellow-4
           px-4 py-2 font-bold
           uppercase tracking-widest text-s-0 outline-none
-          focus:border-yellow-6
+          ring-2 ring-transparent focus:ring-yellow
         "
       >
         <svg
