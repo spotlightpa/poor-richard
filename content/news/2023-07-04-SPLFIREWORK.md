@@ -1,4 +1,5 @@
 +++
+authors = ["Samuel O’Neal"]
 blurb = "Ever since Pennsylvania made recreational fireworks legal, there have been attempts to restrict them. They haven’t caught on."
 byline = "Samuel O’Neal for Spotlight PA"
 description = "July 4 fireworks are controversial in Pennsylvania. But lawmakers say there’s no appetite for restrictions."
