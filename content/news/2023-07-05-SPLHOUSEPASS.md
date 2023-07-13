@@ -1,4 +1,5 @@
 +++
+authors = ["Stephen Caruso", "Kate Huangpu", "Katie Meyer"]
 blurb = "Pa. House Democrats have passed a budget plan, after Gov. Josh Shapiro promised to veto a contentious voucher proposal. Republicans say Shapiro double-crossed them."
 byline = "Stephen Caruso of Spotlight PA, Kate Huangpu of Spotlight PA, and Katie Meyer of Spotlight PA"
 description = "The PA House has passed a budget plan, after Gov. Josh Shapiro pledged to veto a school voucher program. Senate Republicans say it’s a betrayal."
