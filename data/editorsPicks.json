@@ -1,12 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-07-11-SPLPROPROB.md"
+    "content/news/2023-07-13-SPLHHW4.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-05-25-SPLHOWCAU.md",
+    "content/news/2023-04-12-SPLHOWMAJ.md"
+  ],
   "topSlots": [
-    "content/news/2023-07-07-SPLSTATERELATED.md",
-    "content/news/2023-07-07-SPLCODES.md",
-    "content/news/2023-07-06-SPLNEWSQUIZJULY03.md"
+    "content/news/2023-07-13-SPLNEWSQUIZJULY10.md",
+    "content/news/2023-07-11-SPLPROPROB.md",
+    "content/news/2023-07-07-SPLSTATERELATED.md"
   ],
   "topper": []
 }
