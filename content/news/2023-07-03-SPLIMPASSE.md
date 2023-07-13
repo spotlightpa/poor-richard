@@ -1,4 +1,5 @@
 +++
+authors = ["Kate Huangpu", "Katie Meyer"]
 blurb = "Pennsylvania’s budget is late and lawmakers are deadlocked. Here’s the conflict behind the impasse, and context on what it means for public services."
 byline = "Kate Huangpu of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "Lawmakers missed the PA budget deadline. What does a late budget mean, and how long might the impasse go?"
