@@ -65,7 +65,7 @@ copy="""
 Make a check out to Spotlight PA and send it to:
 
 **Spotlight PA** <br>
-**228 Walnut St., #11728** <br> 
+**PO Box 11728** <br> 
 **Harrisburg, PA 17108-1728** <br>
 
 ## Use Your Donor-Advised Fund
