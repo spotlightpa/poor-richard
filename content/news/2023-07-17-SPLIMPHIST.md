@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-07-17T05:00:00-04:00
 slug = "pennsylvania-budget-impasse-shapiro-wolf-rendell-corbett-legislature"
 suppress-date = false
-title = "What’s Pa.’s past budget impasses can tell us about the current standoff"
+title = "What Pa.’s past budget impasses can tell us about the current standoff"
 title-tag = "A history of Pennsylvania budget impasses"
 topics = ["The Capitol"]
 +++
