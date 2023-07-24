@@ -1,4 +1,5 @@
 +++
+authors = ["Stephen Caruso", "Kate Huangpu", "Katie Meyer"]
 blurb = "Pa. House Democrats have passed a budget plan, after Gov. Josh Shapiro promised to veto a contentious voucher proposal. Republicans say Shapiro double-crossed them."
 byline = "Stephen Caruso of Spotlight PA, Kate Huangpu of Spotlight PA, and Katie Meyer of Spotlight PA"
 description = "The PA House has passed a budget plan, after Gov. Josh Shapiro pledged to veto a school voucher program. Senate Republicans say it’s a betrayal."
@@ -9,7 +10,7 @@ internal-id = "SPLHOUSEPASS"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-07-05T22:15:09.04-04:00
-slug = "Pennsylvania-budget-pass-House-Senate-Shapiro-education"
+slug = "pennsylvania-budget-pass-house-senate-shapiro-education"
 suppress-date = false
 title = "After Shapiro reverses position on school vouchers, Pa. House passes a budget and Senate cries foul"
 title-tag = "Shapiro says he'll veto vouchers, PA House moves budget"

@@ -1,6 +1,6 @@
 +++
 arc-id = "HTEINRGJFVBETMYSQUEJWKDO7M"
-authors = ["Ed Mahon", "Kate Giammarise of WESA"]
+authors = ["Ed Mahon", "Kate Giammarise"]
 blurb = "In Pennsylvania, there’s currently no single resource for people to see how counties and local governments plan to spend the money. But understanding the process can help you influence it."
 byline = "Ed Mahon of Spotlight PA and Kate Giammarise of WESA"
 description = "The attorney general’s office has said Pennsylvania is ‘set to receive more than $2.2 billion.’ Here’s how to follow the money."

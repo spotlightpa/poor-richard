@@ -1,4 +1,5 @@
 +++
+authors = ["Kate Huangpu", "Katie Meyer"]
 blurb = "Pennsylvania’s budget is late and lawmakers are deadlocked. Here’s the conflict behind the impasse, and context on what it means for public services."
 byline = "Kate Huangpu of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "Lawmakers missed the PA budget deadline. What does a late budget mean, and how long might the impasse go?"
@@ -9,7 +10,7 @@ internal-id = "SPLIMPASSE"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-07-03T17:21:44.549-04:00
-slug = "late-budget-Pennsylvania-impasse-schools-Shapiro"
+slug = "late-budget-pennsylvania-impasse-schools-shapiro"
 suppress-date = false
 title = "Pennsylvania’s budget is late. Here’s what you need to know about the impasse."
 title-tag = "What to know about the PA budget impasse"

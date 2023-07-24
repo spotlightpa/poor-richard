@@ -1,4 +1,5 @@
 +++
+authors = ["Samuel O’Neal"]
 blurb = "Pa. House lawmakers have left Harrisburg after deadlocking over state funding for four universities, with a GOP faction raising concerns about puberty blockers and transparency."
 byline = "Samuel O’Neal for Spotlight PA"
 description = "After multiple failures, the PA House left Harrisburg without passing funding for Lincoln University, Penn State, Pitt, and Temple."
@@ -9,7 +10,7 @@ internal-id = "SPLSTATERELATED"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-07-07T17:55:19.337-04:00
-slug = "Pennsylvania-state-related-university-Lincoln-PSU-Pitt-Temple-deadlock"
+slug = "pennsylvania-state-related-university-lincoln-psu-pitt-temple-deadlock"
 suppress-date = false
 title = "State funding for Temple, Penn State caught in Pa. budget impasse"
 title-tag = "PA House deadlocks over funding for Temple, Penn State"

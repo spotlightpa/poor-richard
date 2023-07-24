@@ -1,4 +1,5 @@
 +++
+authors = ["Colin Deppen"]
 blurb = "Test your knowledge of the week in news, from legislative battles over private school vouchers to a key Senate committee vote."
 byline = "Colin Deppen of Spotlight PA"
 description = "Test your knowledge of the week in news, from legislative battles over private school vouchers to a key Senate committee vote."

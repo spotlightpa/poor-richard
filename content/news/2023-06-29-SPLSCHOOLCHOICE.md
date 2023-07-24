@@ -1,4 +1,5 @@
 +++
+authors = ["Samuel O’Neal"]
 blurb = "A proposal to route taxpayer money into private school vouchers is at the center of Pennsylvania's budget negotiations. It's part of a much bigger, longstanding debate over school choice."
 byline = "Samuel O’Neal for Spotlight PA"
 description = "A debate over private school vouchers could delay the PA budget. It's part of longstanding, complicated debate over school choice."

@@ -14,7 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2022-02-01T17:24:00-05:00
 series = ["The PSERS Scandal"]
-slug = "PSERS-womble-report-pensions-omission"
+slug = "psers-womble-report-pensions-omission"
 title = "Big PSERS report gives new details on top staff’s actions"
 topics = ["Pensions"]
 +++

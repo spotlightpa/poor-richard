@@ -1,4 +1,5 @@
 +++
+authors = ["Stephen Caruso", "Kate Huangpu", "Katie Meyer"]
 blurb = "Pa. Gov. Josh Shapiro says he has promised House Democrats that he will strip a contentious private school voucher program out of the budget in exchange for their support."
 byline = "Stephen Caruso of Spotlight PA, Kate Huangpu of Spotlight PA, and Katie Meyer of Spotlight PA"
 description = "School choice vouchers will be cut from the Pennsylvania budget in a new plan under negotiation with Democrats."
@@ -9,7 +10,7 @@ internal-id = "SPLBUDGETDEAL"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-07-05T11:58:16.09-04:00
-slug = "Pennsylvania-budget-Josh-Shapiro-education-school-vouchers-deal"
+slug = "pennsylvania-budget-josh-shapiro-education-school-vouchers-deal"
 suppress-date = false
 title = "Pa. Gov. Shapiro says he will scrap school vouchers in end-run on Senate Republicans"
 title-tag = "PA Gov. Josh Shapiro will abandon school voucher push"

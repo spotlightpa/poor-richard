@@ -1,4 +1,5 @@
 +++
+authors = ["Kate Huangpu", "Katie Meyer"]
 blurb = "Democrats who control the Pa. House said they would leave Harrisburg for the weekend, indicating no budget will reach the governor by the deadline."
 byline = "Kate Huangpu of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "Democrats who control the PA House said they would leave Harrisburg for the weekend, indicating no budget will reach the governor by the deadline."

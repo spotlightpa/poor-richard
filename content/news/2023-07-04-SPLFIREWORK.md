@@ -1,4 +1,5 @@
 +++
+authors = ["Samuel O’Neal"]
 blurb = "Ever since Pennsylvania made recreational fireworks legal, there have been attempts to restrict them. They haven’t caught on."
 byline = "Samuel O’Neal for Spotlight PA"
 description = "July 4 fireworks are controversial in Pennsylvania. But lawmakers say there’s no appetite for restrictions."
@@ -9,7 +10,7 @@ internal-id = "SPLFIREWORK"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-07-04T05:00:00.135-04:00
-slug = "Fireworks-legal-independence-day-fourth-of-july-recreational"
+slug = "fireworks-legal-independence-day-fourth-of-july-recreational"
 suppress-date = false
 title = "Several years after Pennsylvania legalized fireworks, they're probably here to stay"
 title-tag = "July 4 fireworks aren’t leaving PA despite complaints"
