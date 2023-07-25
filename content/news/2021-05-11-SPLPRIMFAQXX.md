@@ -1,34 +1,23 @@
 +++
-event-date = 2021-05-04T17:00:00-04:00
 arc-id = "JDDXYNAICNF2LI2OPYBN5QTTJA"
-internal-id = "SPLPRIMFAQXX"
-internal-budget = ""
-image = "external/zyfzz59nbhjxte101eqp1nd9r4.jpeg"
-image-description = "All voters, regardless of affiliation, will be asked to weigh in on four ballot questions, including two proposed constitutional amendments that could significantly shape Pennsylvania’s future response to disasters like the coronavirus pandemic."
-image-caption = ""
-image-credit = "Fred Adams / Spotlight PA"
-image-size = ""
-published = 2021-05-11T09:00:00Z
-slug = "pa-may-2021-primary-questions-answered"
 authors = ["Sarah Anne Hughes"]
-byline = "Sarah Anne Hughes of Spotlight PA"
-title = "Independents can vote on ballot questions, and more things to know about the May 18 primary"
-subtitle = ""
-description = "Spotlight PA answers your questions about controversial constitutional amendments, judicial races, and more."
 blurb = "Spotlight PA answers your questions about controversial constitutional amendments, judicial races, and more."
+byline = "Sarah Anne Hughes of Spotlight PA"
+description = "Spotlight PA answers your questions about controversial constitutional amendments, judicial races, and more."
+event-date = 2021-05-04T17:00:00-04:00
+image = "external/zyfzz59nbhjxte101eqp1nd9r4.jpeg"
+image-credit = "Fred Adams / Spotlight PA"
+image-description = "All voters, regardless of affiliation, will be asked to weigh in on four ballot questions, including two proposed constitutional amendments that could significantly shape Pennsylvania’s future response to disasters like the coronavirus pandemic."
+internal-id = "SPLPRIMFAQXX"
 kicker = "Elections"
-topics = ["Elections", "The Capitol", "Events"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-05-11T05:00:00-04:00
+slug = "pa-may-2021-primary-questions-answered"
+suppress-date = false
+suppress-featured = false
+title = "Independents can vote on ballot questions, and more things to know about the May 18 primary"
+topics = ["Elections", "The Capitol", "Events"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -57,7 +46,7 @@ Just for good measure, here’s that information again, from Pennsylvania’s to
 
 “Pennsylvania’s primaries are usually limited to Democratic and Republican voters, who are choosing their parties’ nominees,” Acting Secretary of State Veronica Degraffenreid said in a statement. “But this year’s primary ballot will include four important ballot questions. That means every registered voter can vote on those ballot questions in this primary, even if they are registered with a third party or no party at all.”
 
-Non-affiliated and minor-party voters can also cast a ballot in special elections that are held at the same time as the primary. That’s the case in <a href="https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Pages/SpecialElections.aspx">two state Senate and two state House districts</a> this May. (Unsure which districts you live in? <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/#address">There’s a tool for that</a>.)
+Non-affiliated and minor-party voters can also cast a ballot in special elections that are held at the same time as the primary. That’s the case in <a href="https://web.archive.org/20210506115809/https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Pages/SpecialElections.aspx">two state Senate and two state House districts</a> this May. (Unsure which districts you live in? <a href="https://web.archive.org/20210503234720/https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/#address">There’s a tool for that</a>.)
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -111,6 +100,6 @@ It is (the last day was May 3).
 
 ## How about to request a mail ballot?
 
-If you’re reading this before May 11 at 5 p.m., <a href="https://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">you’re in luck</a>. If not, you’ll have to vote in person. <a href="https://www.pavoterservices.pa.gov/pages/pollingplaceinfo.aspx">Find your polling place here</a>.
+If you’re reading this before May 11 at 5 p.m., <a href="https://www.votespa.com/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">you’re in luck</a>. If not, you’ll have to vote in person. <a href="https://web.archive.org/20210502120531/https://www.pavoterservices.pa.gov/pages/pollingplaceinfo.aspx">Find your polling place here</a>.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
