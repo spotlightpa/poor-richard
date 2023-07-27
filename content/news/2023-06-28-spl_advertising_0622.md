@@ -21,6 +21,8 @@ topics = ["Medical Marijuana"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+{{<audio src="https://files.data.spotlightpa.org/uploads/01jc/3j7p/mmj.mp3" label="Click here to listen to an audio introduction to this story.">}}
+
 HARRISBURG — A proposal being considered in the state legislature would eliminate an unusual restriction in Pennsylvania that bans doctors from advertising their ability to approve patients for the state’s medical marijuana program.
 
 Several medical marijuana advocates, patients, and doctors welcomed the idea, saying it would create a fairer system. Currently, large third-party companies — which offer to connect patients to doctors — are free to promote themselves on the radio, run newspaper ads, offer discounts on sites like Groupon, dominate Google searches, and put up signs on the side of roads. The advertising disparity was the subject of a <a href="https://www.spotlightpa.org/news/2022/05/pennsylvania-medical-marijuana-card-doctor-advertising/">Spotlight PA investigation last year</a>.
