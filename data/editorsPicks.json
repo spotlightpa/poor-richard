@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-07-26-SPLPSU5.md"
+    "content/news/2023-07-27-SPLCOLA.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-07-19-SPLPSUACCOUNT.md",
-    "content/statecollege/2023-07-19-SPLPSUHOW.md",
-    "content/statecollege/2023-07-19-SPLPSUSURVEY.md"
+    "content/news/2021-02-05-SPLGAMING06.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-07-26-SPLPSU5.md",
     "content/news/2023-07-25-SPLHYDPRI.md",
-    "content/news/2023-07-24-SPLREDRUL.md",
-    "content/news/2023-07-21-SPLCYBERCHART.md"
+    "content/news/2023-07-24-SPLREDRUL.md"
   ],
   "topper": []
 }
