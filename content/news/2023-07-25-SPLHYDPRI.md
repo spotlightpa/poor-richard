@@ -47,7 +47,7 @@ But the bill never moved. Vitali said at least one Democratic House leader and t
 
 When asked if state House Majority Leader Matt Bradford (D., Montgomery) had requested Vitali to hold the bill, a spokesperson for Bradford told Spotlight PA, “We recognize that members are eager to advance their legislation and we also are mindful that we have a humble 102-member majority.”
 
-A spokesperson for Shapiro said the governor does not comment on legislative affairs.
+A spokesperson for Shapiro said the governor does not comment on specific legislative conversations, but that a guiding principle for the administration is competing for hydrogen hubs.
 
 Environmental advocates want the state to take its time crafting policies that ensure hydrogen production won’t exacerbate climate change, but some worry that the legislature will rush through regulations and defer to labor interests.
 
