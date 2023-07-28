@@ -1,12 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-07-27-SPLELMAN FUND.md"
+    "content/news/2023-07-28-SPLELEXGRA.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-27-SPLSTIMSPEND.md"
+    "content/news/2022-11-10-SPLCONTCOUNT.md",
+    "content/news/2022-07-09-SPLELFUND.md"
   ],
   "topSlots": [
-    "content/news/2023-07-28-SPLELEXGRA.md",
+    "content/news/2023-07-27-SPLELMAN FUND.md",
     "content/news/2023-07-27-SPLNEWSQUIZJULY24.md",
     "content/news/2023-07-27-SPLCOLA.md"
   ],
