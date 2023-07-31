@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-07-28-SPLELEXGRA.md"
+    "content/news/2023-07-31-SPLIMPCON.md"
   ],
   "subfeatures": [
-    "content/news/2022-11-10-SPLCONTCOUNT.md",
-    "content/news/2022-07-09-SPLELFUND.md"
+    "content/news/2023-07-19-SPLDARKVOU.md",
+    "content/news/2023-07-17-SPLIMPHIST.md"
   ],
   "topSlots": [
+    "content/news/2023-07-28-SPLELEXGRA.md",
     "content/news/2023-07-27-SPLELMAN FUND.md",
-    "content/news/2023-07-27-SPLNEWSQUIZJULY24.md",
-    "content/news/2023-07-27-SPLCOLA.md"
+    "content/news/2023-07-27-SPLNEWSQUIZJULY24.md"
   ],
   "topper": []
 }
