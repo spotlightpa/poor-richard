@@ -1,0 +1,46 @@
+{{ $percent := .Get "percent" | default 0 }}
+{{ $inner := .Get "body" }}
+{{ $number := .Get "number" }}
+
+<style>.w-{{ $percent }} {width: {{ $percent }}%;}.max-w-{{ $percent }} {max-width: {{ $percent }}%;}</style>
+<figure
+  x-data="{ onScreen: false }"
+  x-intersect.half="onScreen = true"
+  class="mx-auto flex max-w-5xl flex-col justify-center py-6 md:py-10"
+>
+  <figcaption class="w-full">
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="font-sans text-lg text-white"
+    >
+      {{ $inner }}
+    </p>
+  </figcaption>
+  <div class="relative mt-3 mb-8 h-9 bg-yellow-7 md:mb-24 md:h-32">
+    <span
+      x-show="onScreen"
+      class="max-w-{{ $percent }} block h-9 bg-yellow md:h-32"
+      x-transition:enter="transition-all ease-out duration-1000 delay-700"
+      x-transition:enter-start="w-0"
+      x-transition:enter-end="w-{{ $percent }}"
+    ></span>
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="absolute top-0 left-0 bottom-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-black md:text-4xl"
+    >
+      {{ $number }}
+    </p>
+  </div>
+</figure>
