@@ -29,27 +29,27 @@ Spotlight PA assembled all the things that you’ll need to know before you head
 
 ## Make sure you can vote
 
-- First, make sure that you’re registered to vote. You can check your registration status <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>.
+- First, make sure that you’re registered to vote. You can check your registration status <a href="https://web.archive.org/20220501013643/https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>.
 
 - If you’re not registered, then you’ve missed the deadline for the primary but can still register to participate in the general election in November.
 
-- To participate in the Democratic or Republican primary, you have to be registered to that party. You can check which party you’re registered to <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>.
+- To participate in the Democratic or Republican primary, you have to be registered to that party. You can check which party you’re registered to <a href="https://web.archive.org/20220501013643/https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>.
 
-- Unaffiliated voters won’t be able to vote for Democratic or Republican candidates in the primary, but they can still vote on ballot questions (<a href="https://www.inquirer.com/politics/election/ballot-questions-philadelphia-2022-election.html">there are four in Philadelphia</a>, for example) or in special elections (<a href="https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Pages/SpecialElections.aspx">like a state Senate race in Philadelphia</a>) held on that date. Look for a sample ballot on your county’s election website or call the office to confirm whether any of these questions will appear on the ballot.
+- Unaffiliated voters won’t be able to vote for Democratic or Republican candidates in the primary, but they can still vote on ballot questions (<a href="https://www.inquirer.com/politics/election/ballot-questions-philadelphia-2022-election.html">there are four in Philadelphia</a>, for example) or in special elections (<a href="https://web.archive.org/20220511105538/https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Pages/SpecialElections.aspx">like a state Senate race in Philadelphia</a>) held on that date. Look for a sample ballot on your county’s election website or call the office to confirm whether any of these questions will appear on the ballot.
 
-- Visit <a href="https://www.vote.pa.gov/Pages/default.aspx">vote.pa.gov</a> for more information.
+- Visit <a href="https://web.archive.org/20220501020441/https://www.vote.pa.gov/Pages/default.aspx">vote.pa.gov</a> for more information.
 
 ## Make a plan to cast a ballot
 
-- The deadline to request a mail ballot has passed. If you have requested one, be sure to return it as soon as possible. The fastest way to do this is to return it to your county’s election office or another designated drop-off location. Locate drop-off locations or your county election offices <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Return-Ballot.aspx">here</a>.
+- The deadline to request a mail ballot has passed. If you have requested one, be sure to return it as soon as possible. The fastest way to do this is to return it to your county’s election office or another designated drop-off location. Locate drop-off locations or your county election offices <a href="https://web.archive.org/20220501013605/https://www.vote.pa.gov/Voting-in-PA/Pages/Return-Ballot.aspx">here</a>.
 
 - You can also drop a mail ballot in the mail. But beware: Your ballot must be received by your county election office by 8 p.m. on Election Day or it won’t be counted.
 
-- If you’re going to vote in person, you can locate your polling place <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">here</a>. Polls are open from 7 a.m. to 8 p.m.
+- If you’re going to vote in person, you can locate your polling place <a href="https://web.archive.org/20220501013602/https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">here</a>. Polls are open from 7 a.m. to 8 p.m.
 
-- If it’s your first time voting in person, bring a state-issued photo ID. Here’s a <a href="https://www.vote.pa.gov/Register-to-Vote/Pages/Voter-ID-for-First-Time-Voters.aspx">list </a>of acceptable forms of ID.
+- If it’s your first time voting in person, bring a state-issued photo ID. Here’s a <a href="https://web.archive.org/20220509134121/https://www.vote.pa.gov/Register-to-Vote/Pages/Voter-ID-for-First-Time-Voters.aspx">list </a>of acceptable forms of ID.
 
-- Before you vote, you can see what your ballot will look like by going to your <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">county’s election website</a> or using this <a href="https://www.vote411.org/ballot">tool</a> created by the League of Women Voters, a national nonpartisan group that advocates for voting rights.
+- Before you vote, you can see what your ballot will look like by going to your <a href="https://web.archive.org/20220501013608/https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">county’s election website</a> or using this <a href="https://www.vote411.org/ballot">tool</a> created by the League of Women Voters, a national nonpartisan group that advocates for voting rights.
 
 - You can read more about voting in the primaries <a href="https://www.spotlightpa.org/news/2022/04/pa-election-day-2022-pennsylvania-primary-governor-senate-voting-guide/">here</a> and using mail ballots <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-mail-ballot-instructions/">here</a>.
 

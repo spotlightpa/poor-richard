@@ -27,7 +27,7 @@ Federal guidance around COVID-19 vaccine boosters has changed significantly sinc
 
 All adults 18 and older are now eligible for a booster. Centers for Disease Control and Prevention guidance still allows for a “mix and match” approach to boosters for adults. In other words, no matter which of the three vaccines you initially received, you may choose any of the three for your booster shot.
 
-That said, the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html">CDC now recommends</a> the Pfizer or Moderna vaccines over the Johnson &amp; Johnson vaccine due to the risk of rare but serious side effects of that vaccine. The Johnson &amp; Johnson vaccine will still be available to anyone who wants it or who cannot receive Pfizer or Moderna because of other medical conditions.
+That said, the <a href="https://web.archive.org/20211001042512/https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html">CDC now recommends</a> the Pfizer or Moderna vaccines over the Johnson &amp; Johnson vaccine due to the risk of rare but serious side effects of that vaccine. The Johnson &amp; Johnson vaccine will still be available to anyone who wants it or who cannot receive Pfizer or Moderna because of other medical conditions.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
