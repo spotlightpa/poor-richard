@@ -9,6 +9,11 @@ modal-exclude = true
 layout = "page-landing"
 
 [[blocks]]
+layout = "blockquote"
+copy = 'If you live in Pennsylvania, <br>you gotta have Spotlight PA.'
+author = "John C., Spotlight PA member"
+
+[[blocks]]
 layout = "impact-carousel"
 title = "Spotlight PA Impact since launch"
 
@@ -169,8 +174,3 @@ title  = "Follow Us"
 At Spotlight PA, we seek to positively impact the future of Pennsylvania through unfettered public access to nonpartisan investigative and public-service journalism that informs, equips, and empowers people in all parts of the state to individually and collectively drive change. 
 
 In short, we measure our success by the results we’re getting for you.
-
-<blockquote>
-<q>If you live in Pennsylvania, <br>you gotta have Spotlight PA.</q> 
-<em>— John C., Spotlight PA member</em>
-</blockquote>
