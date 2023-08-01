@@ -1,0 +1,32 @@
+{{ with .block }}
+  <div
+    class="
+  mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0"
+  >
+    <blockquote
+      class="mt-2 flex max-w-xl flex-col border-l-4 border-s-4 px-4 md:px-12"
+    >
+      <q
+        class="text-center text-2xl font-semibold before:content-[''] after:content-[''] md:text-4xl"
+      >
+        <svg
+          class="-mt-4 inline-block h-10 w-10 fill-blue md:-ml-11 md:-mt-6 md:h-14 md:w-14"
+          aria-label="Quote"
+        >
+          {{ partial "helper/svg.html" "openquote" }}
+        </svg>
+
+        {{ $.Page.RenderString .copy }}
+        <svg
+          class="-mb-1 -mr-5 inline-block h-10 w-10 fill-blue md:-mr-11 md:h-14 md:w-14"
+          aria-label="Unquote"
+        >
+          {{ partial "helper/svg.html" "closequote" }}
+        </svg>
+      </q>
+      <em class="-mr-5 flex justify-end text-base md:text-2xl"
+        >— {{ .author }}</em
+      >
+    </blockquote>
+  </div>
+{{ end }}
