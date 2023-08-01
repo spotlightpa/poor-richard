@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-07-31-SPLFAKEEL.md"
+    "content/news/2023-08-01-SPL_PHFA_TRANSITION.md"
   ],
   "subfeatures": [
-    "content/news/2023-07-28-SPLELEXGRA.md"
+    "content/news/2023-01-23-SPLMORTGAGE.md",
+    "content/news/2023-02-01-SPLPAHAF31.md",
+    "content/news/2023-03-22-SPLmortgagecontract22.md"
   ],
   "topSlots": [
+    "content/news/2023-07-31-SPLFAKEEL.md",
     "content/news/2023-07-31-SPLIMPCON.md",
-    "content/news/2023-07-27-SPLELMAN FUND.md",
-    "content/news/2023-07-27-SPLNEWSQUIZJULY24.md"
+    "content/news/2023-07-28-SPLELEXGRA.md"
   ],
   "topper": []
 }
