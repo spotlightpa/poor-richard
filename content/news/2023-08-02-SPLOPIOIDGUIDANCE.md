@@ -3,10 +3,10 @@ authors = ["Ed Mahon"]
 blurb = "A drug task force, a county detective, and body scanner at a county jail are some of the proposed uses that county officials across the state have sought clarity on."
 byline = "Ed Mahon of Spotlight PA"
 description = "An oversight board said it would “generally approve” the use of opioid funds on a drug task force, but the county's plans remain unclear."
-image = "2023/08/01jc-gp6j-x722-7xk4.jpeg"
+image = "2023/08/01jc-gpaj-xda5-xejh.jpeg"
 image-caption = "In Pennsylvania, most opioid settlement money will go to counties where local officials can decide how to spend the funds, although an oversight board has the power to withhold and ultimately cut funding if it determines counties spend inappropriately. Officials in Lancaster County proposed spending $275,000 per year in settlement money on the county’s drug task force, but the plans are now unclear."
-image-credit = "Andy Blackburn / LNP | LancasterOnline"
-image-description = "Exterior of Lancaster County Government Center"
+image-credit = "Ed Mahon / Spotlight PA"
+image-description = "Jason Snyder of the Rehabilitation and Community Providers Association described the challenges facing addiction treatment providers during a hearing in Harrisburg on March 9, 2023."
 image-size = "inline"
 internal-id = "SPLOPIOIDGUIDANCE"
 kicker = "Health"
@@ -75,7 +75,7 @@ The county’s opioid settlement plan also includes using money for a criminal j
 
 Jacquelyn Pfursich, the county’s solicitor, previously told the state opioid trust that spending settlement funds on the drug task is part of the county’s “multifaceted” plan “to address the various impacts of the opioid crisis.”
 
-{{<picture src="2023/08/01jc-gpaj-xda5-xejh.jpeg" description="Hearing on addiction treatment at State Capitol" caption="Jason Snyder of the Rehabilitation and Community Providers Association described the challenges facing addiction treatment providers during a hearing in Harrisburg on March 9, 2023." credit="Ed Mahon / Spotlight PA">}}
+{{<picture src="2023/08/01jc-gpaj-xda5-xejh.jpeg" focus="we" description="Hearing on addiction treatment at State Capitol" caption="Jason Snyder of the Rehabilitation and Community Providers Association described the challenges facing addiction treatment providers during a hearing in Harrisburg on March 9, 2023." credit="Ed Mahon / Spotlight PA">}}
 
 ## Other requests for guidance
 
