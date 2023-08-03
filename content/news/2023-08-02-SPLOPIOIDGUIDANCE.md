@@ -75,7 +75,7 @@ The county’s opioid settlement plan also includes using money for a criminal j
 
 Jacquelyn Pfursich, the county’s solicitor, previously told the state opioid trust that spending settlement funds on the drug task is part of the county’s “multifaceted” plan “to address the various impacts of the opioid crisis.”
 
-{{<picture src="2023/08/01jc-gpaj-xda5-xejh.jpeg" focus="we" description="Hearing on addiction treatment at State Capitol" caption="Jason Snyder of the Rehabilitation and Community Providers Association described the challenges facing addiction treatment providers during a hearing in Harrisburg on March 9, 2023." credit="Ed Mahon / Spotlight PA">}}
+{{<picture src="2023/08/01jc-gpaj-xda5-xejh.jpeg" description="Hearing on addiction treatment at State Capitol" caption="Jason Snyder of the Rehabilitation and Community Providers Association described the challenges facing addiction treatment providers during a hearing in Harrisburg on March 9, 2023." credit="Ed Mahon / Spotlight PA">}}
 
 ## Other requests for guidance
 
