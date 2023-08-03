@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-08-02-SPLOPIOIDGUIDANCE.md"
+    "content/news/2023-08-03-SPLAMETIUP.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-01-SPLOPTRANSPARENCY0601.md",
-    "content/news/2023-04-18-SPLOPIOID0420.md"
+    "content/news/2023-01-10-SPLSTANDSTI.md"
   ],
   "topSlots": [
+    "content/news/2023-08-02-SPLOPIOIDGUIDANCE.md",
     "content/news/2023-08-01-SPL_PHFA_TRANSITION.md",
-    "content/news/2023-07-31-SPLFAKEEL.md",
-    "content/news/2023-07-31-SPLIMPCON.md"
+    "content/news/2023-07-31-SPLFAKEEL.md"
   ],
   "topper": []
 }
