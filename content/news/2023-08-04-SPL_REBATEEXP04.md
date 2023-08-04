@@ -41,9 +41,7 @@ The lowest-income households will be eligible for rebates of $1,000, up from $65
 
 The law also resolves the mismatch between state and federal law that fueled the program’s waning usage.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src=""></div>
-
-https://www.spotlightpa.org/embeds/donate/
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 The federal government adjusts Social Security payments each year to keep pace with inflation. Although most people who are eligible for state rebates also receive Social Security payments, the state program didn’t account for this. As a result, many recipients found that small cost-of-living increases to their Social Security benefits nudged their incomes over the limit to qualify for a state rebate — even though their underlying financial situation had not changed. The new law solves this problem by tying the income thresholds for the rebate program to inflation so that they will gradually increase over time.
 
