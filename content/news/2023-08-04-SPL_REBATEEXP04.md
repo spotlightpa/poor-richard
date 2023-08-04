@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-08-04T14:56:53.936-04:00
 slug = "pennsylvania-property-tax-rebate-fix"
 suppress-date = false
-title = "Property tax and rent rebate program will serve soon serve more older Pennsylvanians"
+title = "Property tax and rent rebate program will soon serve more older Pennsylvanians"
 title-tag = "New PA law expands property tax rebate program"
 topics = ["Economy"]
 +++
