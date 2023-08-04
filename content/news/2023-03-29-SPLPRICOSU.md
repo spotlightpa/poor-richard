@@ -79,7 +79,7 @@ There is one seat open on Commonwealth Court this year, and both parties’ prim
 
 {{<picture src="external/q6rxavwz01g7p728qdwrwr80sc.png" description="Bryan Neft" caption="Bryan Neft" credit="Via candidate website ">}}
 
-<a href="https://bryanneft.com/" target="_blank"><b>Bryan Neft</b></a>
+<a href="https://web.archive.org/20230301044443/https://bryanneft.com/" target="_blank"><b>Bryan Neft</b></a>
 
 Neft is an attorney based in Mt. Lebanon who works in commercial litigation.
 
@@ -95,7 +95,7 @@ Read Neft’s answers to the PBA questionnaire <a href="https://web.archive.org/
 
 {{<picture src="external/1b2ac1evvggv5g7jacdmfq2pyr.png" description="Matthew Wolf" caption="Matthew Wolf" credit="Via candidate website">}}
 
-<a href="https://judgemattwolf.com/home" target="_blank"><b>Matthew Wolf</b></a>
+<a href="https://web.archive.org/20230405095411/https://judgemattwolf.com/home" target="_blank"><b>Matthew Wolf</b></a>
 
 Wolf is a judge on the Philadelphia Municipal Court, where he has served since 2018.
 
@@ -114,7 +114,7 @@ Read Wolf’s answers to the PBA questionnaire <a href="https://web.archive.org/
 
 {{<picture src="external/q7qpftykx7ehnsgahsbjxvmxe0.png" description="Megan Martin" caption="Megan Martin" credit="Via candidate Facebook page">}}
 
-<a href="https://meganmartinforpa.com/" target="_blank"><b>Megan Martin</b></a>
+<a href="https://web.archive.org/20230313232509/https://meganmartinforpa.com/" target="_blank"><b>Megan Martin</b></a>
 
 A Cumberland County resident and Widener University law school graduate, Martin is the former parliamentarian of the state Senate and is endorsed by the state Republican Party in the primary race for Commonwealth Court.
 
@@ -128,7 +128,7 @@ Read Martin’s answers to the PBA questionnaire <a href="https://web.archive.or
 
 {{<picture src="external/6gdca9sy9pqfeemr5zngzm4vpm.png" description="Joshua Prince" caption="Joshua Prince" credit="Via candidate Facebook page">}}
 
-<a href="https://www.princeforjustice.com/" target="_blank"><b>Joshua Prince</b></a>
+<a href="https://web.archive.org/20230314022536/https://www.princeforjustice.com/" target="_blank"><b>Joshua Prince</b></a>
 
 A Berks County lawyer and Widener University law school graduate, Prince runs a firm that specializes in gun-related litigation.
 
@@ -170,7 +170,7 @@ There are two open seats on Superior Court this year. Its partisan makeup is cur
 
 {{<picture src="external/sxnqaw79kgx69bsdewceb9sxd8.png" description="Jill Beck" caption="Jill Beck" credit="Via candidate Facebook page ">}}
 
-<a href="https://www.jillbeck.com/" target="_blank"><b>Jill Beck</b></a>
+<a href="https://web.archive.org/20230301044439/https://www.jillbeck.com/" target="_blank"><b>Jill Beck</b></a>
 
 Beck is a Pittsburgh-based attorney who works in commercial litigation. She ran for Superior Court in 2021 but was defeated in the primary by Timika Lane.
 
@@ -186,7 +186,7 @@ Read Beck’s answers to the PBA questionnaire <a href="https://web.archive.org/
 
 {{<picture src="external/hv2a01xe5sa21gaa3cdc8h7t80.png" description="Timika Lane" caption="Timika Lane" credit="Via candidate Facebook page ">}}
 
-<a href="https://judgelaneforpa.com/" target="_blank"><b>Timika Lane</b></a>
+<a href="https://web.archive.org/20230313232505/https://judgelaneforpa.com/" target="_blank"><b>Timika Lane</b></a>
 
 Lane has served as a Philadelphia Court of Common Pleas judge since 2014.
 
@@ -204,7 +204,7 @@ Read Lane’s answers to the PBA questionnaire <a href="https://web.archive.org/
 
 {{<picture src="external/fmk99zsnchaqvartwdtcxjyn7c.png" description="Patrick Dugan" caption="Patrick Dugan" credit="Via candidate website">}}
 
-<a href="https://www.judgepatdugan.com/" target="_blank"><b>Patrick Dugan</b></a>
+<a href="https://web.archive.org/20230308180426/https://www.judgepatdugan.com/" target="_blank"><b>Patrick Dugan</b></a>
 
 Dugan is a judge on the Philadelphia Municipal Court, a trial court where civil and criminal cases in the city are first adjudicated. First appointed to the court in 2007 by former Democratic Gov. Ed Rendell, Dugan was then elected to the court in 2009 and retained in 2015. Dugan’s peers on the court elected him president judge in 2019.
 
@@ -221,7 +221,7 @@ As of March 23, the Pennsylvania Bar Association had not assigned Dugan a rating
 
 {{<picture src="external/1nfzfmwn4bqc5x9a4ba6v9t3pr.png" description="Maria Battista" caption="Maria Battista" credit="Via candidate website">}}
 
-<a href="https://www.battistaforjudge.com/" target="_blank"><b>Maria Battista</b></a>
+<a href="https://web.archive.org/20230308214842/https://www.battistaforjudge.com/" target="_blank"><b>Maria Battista</b></a>
 
 A Clarion County resident who holds a law degree from Ohio Northern University, Battista previously served as assistant general counsel for the departments of Health and State under former Govs. Tom Corbett, a Republican, and Tom Wolf, a Democrat. She also was a prosecutor in Franklin and Venango Counties, and was a contract specialist for the Department of Defense.
 
@@ -233,7 +233,7 @@ As of March 23, the Pennsylvania Bar Association had not assigned Battista a rat
 
 {{<picture src="external/xmkazn9etgb1jj7xbasqqn9rng.png" description="Harry Smail" caption="Harry Smail" credit="Via candidate website">}}
 
-<a href="https://votejudgesmail.com/" target="_blank"><b>Harry Smail</b></a>
+<a href="https://web.archive.org/20230313232451/https://votejudgesmail.com/" target="_blank"><b>Harry Smail</b></a>
 
 Smail has been a Westmoreland County Common Pleas judge since former Republican Gov. Tom Corbett appointed him to the bench in 2014. Before that, he was a private practice attorney who ran unsuccessfully for numerous county offices. He received his law degree from Duquesne University.
 
