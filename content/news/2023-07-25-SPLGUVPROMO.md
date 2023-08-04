@@ -35,11 +35,11 @@ Our <a href="https://www.spotlightpa.org/news/2023/01/tioga-tamir-rice-pennsylva
 
 - <strong>Neal Fogle,</strong> senior economic and community development educator, Penn State Extension
 
-- <strong>Alice Elia, </strong>council member, Borough of Chambersburg
-
-<a href="https://www.spotlightpa.org/topics/how-local-government-works/"><em>How Local Government Works</em></a><em> is a series of articles and events that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable.</em>
+- <strong>Alice Elia, </strong>council member, Borough of Chambersburg<em></em>
 
 <iframe src="https://player.vimeo.com/video/851677485?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="How Local Government Works"></iframe>
+
+<a href="https://www.spotlightpa.org/topics/how-local-government-works/"><em>How Local Government Works</em></a><em> is a series of articles and events that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable.</em>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
