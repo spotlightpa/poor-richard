@@ -2,7 +2,7 @@
 authors = ["Charlotte Keith"]
 blurb = "The rebate program had not seen a full update since 2006 despite repeated bipartisan efforts to stem enrollment declines."
 byline = "Charlotte Keith of Spotlight PA"
-description = "Gov. Shapiro signed the bill Friday, which raises the income caps, ties the income cap to inflation, and boosts the benefit amount for current recipients."
+description = "Gov. Josh Shapiro has signed a bill that will expand Pennsylvania’s property tax rebate to serve more older and disabled people."
 image = "2023/07/01jb-2wj9-7c7j-j9jk.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "The Pennsylvania Capitol building in Harrisburg."
@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-08-04T14:56:53.936-04:00
 slug = "pennsylvania-property-tax-rebate-fix"
 suppress-date = false
-title = "Long-awaited fix for Pa.’s property tax and rent rebate program signed into law"
+title = "Property tax and rent rebate program will serve soon serve more older Pennsylvanians"
 title-tag = "New PA law expands property tax rebate program"
 topics = ["Economy"]
 +++
