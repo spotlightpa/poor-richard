@@ -37,7 +37,7 @@ Join us Thursday, Aug. 3 from 6-7:15 p.m. ET on Zoom for a free panel on oversig
 
 - <strong>Neal Fogle,</strong> senior economic and community development educator, Penn State Extension
 
-- <strong>Other panelists to be announced</strong>
+- <strong>Alice Elia, </strong>council member, Borough of Chambersburg
 
 <a href="https://www.spotlightpa.org/topics/how-local-government-works/"><em>How Local Government Works</em></a><em> is a series of articles and events that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable.</em>
 
