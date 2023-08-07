@@ -31,7 +31,7 @@ layout = "series"
 title = "Impact & Awards"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 [blocks.cta]
-url = "/investigations/"
+url = "/about/impact"
 copy = "See More About Our Impact"
 
 [[blocks]]
