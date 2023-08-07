@@ -74,7 +74,7 @@ In that scenario, DeMarco added, the campaign was concerned that if there was no
 
 “So I as well as others said, ‘Fine, but let&#39;s make the document reflect that,’” he said. “So we&#39;re a bit different from the other folks.”
 
-Nevada’s fake electors included similar language in their certificate.
+New Mexico’s fake electors included similar language in their certificate.
 
 The fake electors’ certificate in Michigan, where they were recently charged with forgery and other related crimes, included no such caveat.
 
@@ -84,7 +84,7 @@ Gerow echoed DeMarco’s remarks that the concern among the electors was that th
 
 Still, many of Trump’s legal arguments <a href="https://abcnews.go.com/Politics/election-2020-trump-campaign-election-lawsuits-stand/story?id=74041748">had been settled by Dec. 14</a>. Many of the original Trump electors, like Pennsylvania GOP Chair Lawrence Tabas, also declined to sign the certificate either due to concerns over legality or because they recognized Biden as the legitimate winner, according to the <a href="https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/pdf/GPO-J6-REPORT.pdf">final report of the U.S. House’s Jan. 6 committee</a>.
 
-Kevin Greenberg, a Philadelphia-based attorney who has represented national Democratic clients, including in 2020, agreed that the caveat on the courts was an important distinction that set Pennsylvania and Nevada apart. He said in unusual situations like <a href="https://www.politico.com/news/2022/02/07/1960-electoral-college-certificates-false-trump-electors-00006186">Hawaii in 1960</a> or <a href="https://www.cnn.com/2015/10/31/politics/bush-gore-2000-election-results-studies/index.html">Florida in 2000</a> — situations where there was in fact a “bona fide” dispute about the results — a second, conditional slate may theoretically be appropriate.
+Kevin Greenberg, a Philadelphia-based attorney who has represented national Democratic clients, including in 2020, agreed that the caveat on the courts was an important distinction that set Pennsylvania and New Mexico apart. He said in unusual situations like <a href="https://www.politico.com/news/2022/02/07/1960-electoral-college-certificates-false-trump-electors-00006186">Hawaii in 1960</a> or <a href="https://www.cnn.com/2015/10/31/politics/bush-gore-2000-election-results-studies/index.html">Florida in 2000</a> — situations where there was in fact a “bona fide” dispute about the results — a second, conditional slate may theoretically be appropriate.
 
 “I understand proactively voting your electors in a truly disputed situation, but always with a crystal clear statement that your actions are not representations of victory but only a prophylactic measure in case a court action finally goes your way,” he said. “That’s why I expect Pennsylvania will not have the criminal prosecutions we are seeing elsewhere.”
 
@@ -110,7 +110,9 @@ Criminal charges may also be <a href="https://www.washingtonpost.com/national-se
 
 DeMarco has been open about his contact with FBI agents last spring, with whom he said he fully cooperated. Asked if he has been in contact with Smith’s investigators since he was appointed as special counsel last November, DeMarco replied only with “no comment.”
 
-Gerow said neither he nor Kevin Harley, another member of his firm and a fellow alternate elector, have had contact with any investigators.<strong><em></em></strong>
+Gerow said neither he nor Kevin Harley, another member of his firm and a fellow alternate elector, have had contact with any investigators.
+
+<em>Correction: An earlier version of this article misstated the second state whose alternate electors included a caveat to the legitimacy of their votes.</em>
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-08-01-SPL_PHFA_TRANSITION.md"
+    "content/news/2023-08-07-SPLPAHAF5THINGS.md"
   ],
   "subfeatures": [
+    "content/news/2023-08-01-SPL_PHFA_TRANSITION.md",
     "content/news/2023-01-23-SPLMORTGAGE.md",
-    "content/news/2023-02-01-SPLPAHAF31.md",
     "content/news/2023-03-22-SPLmortgagecontract22.md"
   ],
   "topSlots": [
-    "content/news/2023-07-31-SPLFAKEEL.md",
-    "content/news/2023-07-31-SPLIMPCON.md",
-    "content/news/2023-07-28-SPLELEXGRA.md"
+    "content/news/2023-08-03-SPLBUD23SHAP.md",
+    "content/news/2023-08-04-SPL_REBATEEXP04.md",
+    "content/news/2023-08-03-SPLAMETIUP.md"
   ],
   "topper": []
 }
