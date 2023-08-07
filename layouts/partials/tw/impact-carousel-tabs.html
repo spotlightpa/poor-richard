@@ -13,42 +13,35 @@
       atBeginning: false,
       atEnd: false,
       next() {
-          this.to((current, offset) => current + (offset * this.skip))
+        this.to((current, offset) => current + (offset * this.skip))
       },
-            prev() {
-          this.to((current, offset) => current - (offset * this.skip))
+      prev() {
+        this.to((current, offset) => current - (offset * this.skip))
       },
       to(strategy) {
-          let slider = this.$refs.tablist
-          let current = slider.scrollLeft
-          let offset = slider.firstElementChild.getBoundingClientRect().width
-          slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
+        let slider = this.$refs.tablist
+        let current = slider.scrollLeft
+        let offset = slider.firstElementChild.getBoundingClientRect().width
+        slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
       },
-           disableNextAndPreviousButtons: {
-          'x-intersect:enter.threshold.05'() {
-              let slideEls = this.$el.parentElement.children
-
-              // If this is the first slide.
-              if (slideEls[0] === this.$el) {
-                  this.atBeginning = true
-              // If this is the last slide.
-              } else if (slideEls[slideEls.length-1] === this.$el) {
-                  this.atEnd = true
-              }
-          },
-          'x-intersect:leave.threshold.05'() {
-              let slideEls = this.$el.parentElement.children
-
-              // If this is the first slide.
-              if (slideEls[0] === this.$el) {
-                  this.atBeginning = false
-              // If this is the last slide.
-              } else if (slideEls[slideEls.length-1] === this.$el) {
-                  this.atEnd = false
-              }
-          },
+      disableNextAndPreviousButtons: {
+        'x-intersect:enter.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = true
+          } else if (slideEls[slideEls.length-1] === this.$el) {
+            this.atEnd = true
+          }
+        },
+        'x-intersect:leave.threshold.05'() {
+          let slideEls = this.$el.parentElement.children
+          if (slideEls[0] === this.$el) {
+            this.atBeginning = false
+          } else if (slideEls[slideEls.length-1] === this.$el) {
+            this.atEnd = false
+          }
+        },
       },
-
     }"
   >
     <div
@@ -85,7 +78,6 @@
         </span>
         <span class="sr-only">Skip to previous slide page</span>
       </button>
-
       <div
         x-ref="slider"
         tabindex="0"
@@ -139,7 +131,6 @@
                     >
                     <p class="mt-3 text-sm">{{ .dek }}</p>
                   </div>
-
                   {{ $name := .page.Param "image" }}
                   {{ $credit := .page.Param "image-credit" }}
                   {{ $description := .page.Param "image-description" }}

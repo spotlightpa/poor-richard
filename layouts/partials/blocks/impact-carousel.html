@@ -6,17 +6,16 @@
     x-data="{
         selectedId: null,
         init() {
-            // Set the first available tab on the page on page load.
-            this.$nextTick(() => this.select(this.$id('tab', 1)))
+          this.$nextTick(() => this.select(this.$id('tab', 1)))
         },
         select(id) {
-            this.selectedId = id
+          this.selectedId = id
         },
         isSelected(id) {
-            return this.selectedId === id
+          return this.selectedId === id
         },
         whichChild(el, parent) {
-            return Array.from(parent.children).indexOf(el) + 1
+          return Array.from(parent.children).indexOf(el) + 1
         }
     }"
     x-id="['tab']"
@@ -24,8 +23,8 @@
   >
     <h2
       class="
-        z-20 col-span-6 col-start-2 row-span-1 row-start-1 mb-2 box-content max-w-xs self-start py-10
-        text-2xl font-bold leading-tight tracking-wide text-white sm:text-4xl md:p-16 lg:text-5xl
+        tracking-widetext-2xl z-20 col-span-6 col-start-2 row-span-1 row-start-1 mb-2 box-content max-w-xs self-start
+        py-10 font-bold leading-tight  text-white sm:text-4xl md:p-16 lg:text-5xl
       "
     >
       {{ .title }}
