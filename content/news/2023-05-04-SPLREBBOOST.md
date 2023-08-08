@@ -21,8 +21,7 @@ topics = ["The Capitol", "Economy"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-<i><strong>Update, Aug. 4, 2023:</strong> Gov. Josh Shapiro signed <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-property-tax-rebate-fix/"
-> a major expansion of Pennsylvania's property tax and rent rebate program into law.</a></i>
+<i><strong>Update, Aug. 4, 2023:</strong> Gov. Josh Shapiro signed <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-property-tax-rebate-fix/"> a major expansion of Pennsylvania's property tax and rent rebate program into law.</a></i>
 
 HARRISBURG — The number of people getting help from a state program that offsets some housing costs for older and disabled Pennsylvanians will drop again this year, continuing more than a decade of decline.
 
