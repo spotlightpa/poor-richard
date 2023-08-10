@@ -1,0 +1,14 @@
+name = "Elizabeth Estrada"
+firstName = "Elizabeth"
+lastName = "Estrada"
+title = "Democracy Editor"
+email = "eestrada@spotlightpa.org"
+twitter = "TheElizabethEst"
+active = true
+content = """With a passion for engagement and commitment to serving communities, Elizabeth Estrada connects voters with the information they need in order to confidently participate in our democracy. She helps shape the growth of Spotlight PA’s service journalism around voting and elections, and general issues as they relate to state government.
+
+Previously, Elizabeth worked at WHYY’s PlanPhilly as an engagement editor, where she reported positive stories through her original Feel Good Friday series, launched the station’s first-ever bilingual series, and managed an opinion and essay section.
+
+
+Originally from Queens, New York, she now lives in South Philadelphia with her husband and dog. In her free time, she enjoys visiting breweries, exploring the city, and sewing her own clothes."""
+headshot = "2023/08/01jd-9z56-5z5x-cy78.webp"
