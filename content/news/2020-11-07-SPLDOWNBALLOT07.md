@@ -1,33 +1,22 @@
 +++
 arc-id = "SFJDC4IW2BCCXPYXLWMUYYSQ5Q"
-internal-id = "SPLDOWNBALLOT07"
-internal-budget = ""
-image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
-image-description = "Pennsylvania’s Capitol building in Harrisburg on the morning of Election Day 2020."
-image-caption = ""
-image-credit = "Amanda Berg / For Spotlight PA"
-image-size = ""
-published = 2020-11-07T01:02:36Z
-slug = "pennsylvania-democrats-election-2020-down-ballot-losses-biden-trump"
 authors = ["Ed Mahon"]
-byline = "Ed Mahon of Spotlight PA"
-title = "Biden may win Pennsylvania, but Democrats fell in races across the state — and the infighting has begun"
-subtitle = ""
-description = "While political strategists and candidates were still assessing the damage, they offered a number of theories, from ticket-splitting to coronavirus backlash to Trump outperforming expectations."
 blurb = "While political strategists and candidates were still assessing the damage, they offered a number of theories, from ticket-splitting to coronavirus backlash to Trump outperforming expectations."
+byline = "Ed Mahon of Spotlight PA"
+description = "While political strategists and candidates were still assessing the damage, they offered a number of theories, from ticket-splitting to coronavirus backlash to Trump outperforming expectations."
+image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+image-credit = "Amanda Berg / For Spotlight PA"
+image-description = "Pennsylvania’s Capitol building in Harrisburg on the morning of Election Day 2020."
+internal-id = "SPLDOWNBALLOT07"
 kicker = "Elections"
-topics = ["Elections"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-11-06T20:02:36-05:00
+slug = "pennsylvania-democrats-election-2020-down-ballot-losses-biden-trump"
+suppress-date = false
+suppress-featured = false
+title = "Biden may win Pennsylvania, but Democrats fell in races across the state — and the infighting has begun"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -50,7 +39,7 @@ So why didn’t <a href="https://www.inquirer.com/news/2020-election-trump-biden
 
 Matthew J. Brouillette, a prominent conservative linked to political action committees that spent millions boosting GOP candidates, said the results were a “complete repudiation" of Democratic Gov. Tom Wolf and his COVID-19 lockdowns and policies.
 
-Wolf and the legislature have clashed frequently this year, after Wolf in the spring ordered the temporary closure of businesses to slow the spread of the coronavirus. Fights over <a href="https://www.post-gazette.com/business/money/2020/10/21/Pennsylvania-House-governor-wolf-veto-coronavirus-restrictions-bars/stories/202010210114">limits on bars and restaurants</a>, <a href="https://www.pennlive.com/sports/2020/09/pa-house-falls-short-in-effort-to-override-gov-tom-wolfs-veto-of-high-schools-sports-bill.html">high school sporting events</a>, and<a href="https://apnews.com/article/virus-outbreak-donald-trump-pennsylvania-pittsburgh-tom-wolf-b458bed82c1b20cf77fdd89736687708"> crowd sizes</a> continued into the fall, with some Democratic lawmakers breaking with the governor.
+Wolf and the legislature have clashed frequently this year, after Wolf in the spring ordered the temporary closure of businesses to slow the spread of the coronavirus. Fights over <a href="https://www.post-gazette.com/business/money/2020/10/21/Pennsylvania-House-governor-wolf-veto-coronavirus-restrictions-bars/stories/202010210114">limits on bars and restaurants</a>, <a href="https://www.pennlive.com/sports/2020/09/pa-house-falls-short-in-effort-to-override-gov-tom-wolfs-veto-of-high-schools-sports-bill.html">high school sporting events</a>, and<a href="https://web.archive.org/web/20201004093956/https://apnews.com/article/virus-outbreak-donald-trump-pennsylvania-pittsburgh-tom-wolf-b458bed82c1b20cf77fdd89736687708"> crowd sizes</a> continued into the fall, with some Democratic lawmakers breaking with the governor.
 
 But public health experts widely credit Wolf’s moves for slowing the spread of the virus this summer and reducing hospitalization rates and the number of deaths.
 
