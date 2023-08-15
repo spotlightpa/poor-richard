@@ -1,10 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-08-08-SPLPSUWAGES.md"
+    "content/statecollege/2023-08-15-SPLGOVTAKEAWAYS.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-07-25-SPLGUVPROMO.md"
+  ],
   "topSlots": [
-    "content/news/2023-07-25-SPLGUVPROMO.md",
+    "content/statecollege/2023-08-08-SPLPSUWAGES.md",
     "content/statecollege/2023-07-26-SPLPSU5.md",
     "content/statecollege/2023-07-19-SPLPSUSURVEY.md"
   ],
