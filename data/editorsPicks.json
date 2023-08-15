@@ -1,13 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-08-11-SPLEWLPRIV.md"
+    "content/statecollege/2023-08-15-SPLGOVTAKEAWAYS.md"
   ],
   "subfeatures": [
-    "content/news/2022-08-05-SPLPRIV.md"
+    "content/news/2023-07-25-SPLGUVPROMO.md"
   ],
   "topSlots": [
+    "content/news/2023-08-11-SPLEWLPRIV.md",
     "content/newsletters/palocal/2023-08-11-1000.md",
-    "content/news/2023-08-10-SPLNEWSQUIZAUG7.md",
     "content/news/2023-08-07-SPLPAHAF5THINGS.md"
   ],
   "topper": []
