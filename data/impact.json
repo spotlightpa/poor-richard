@@ -1,116 +1,132 @@
 {
-  "items": [
+  "impactbase": [
     {
-      "dek": "A Spotlight PA investigative series led to an unprecedented move towards transparency in Harrisburg",
-      "page": "content/series/the-hidden-tab/_index.md",
-      "kicker": "The Hidden Tab",
-      "body": "A Spotlight PA investigative [series](https://www.spotlightpa.org/series/the-hidden-tab/) into how lawmakers spend tax dollars on themselves and hide it from the public resulted in new proposed bills and the [Senate posting all expenses online for the first time](https://www.spotlightpa.org/news/2021/09/pa-senate-spending-records-online-historic/) — an unprecedented move towards transparency in Harrisburg. ",
-      "url": "https://spotlightpa.org/series/the-hidden-tab/"
-    },
-    {
-      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2021/07/pa-department-of-labor-unemployment-claims-overpayment-interest/) revealed for the first time how the state Labor Department overcharged unemployed Pennsylvanians for years and never made the problem public, directly prompting state officials to admit the error and say it would return [$19 million to Pennsylvanians](https://www.spotlightpa.org/news/2021/09/pa-unemployment-interest-overcharged-refund-website/).",
-      "page": "content/news/2021-07-09-SPLUNEMPLOYMENT10.md",
-      "kicker": "Economy",
-      "dek": "A Spotlight PA investigation prompted state officials to admit the error and say it would return $19 million to Pennsylvanians.",
-      "url": "https://spotlightpa.org/news/2021/07/pa-department-of-labor-unemployment-claims-overpayment-interest/"
-    },
-    {
-      "page": "content/news/2023-01-23-SPLMORTGAGE.md",
-      "kicker": "Economy",
-      "dek": "A Spotlight PA story prompted the state to fire the third-party contractor that was running the program.",
-      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/) into Pennsylvania’s pandemic mortgage relief program found that long delays and poor communication were leaving thousands in limbo, with their homes and utilities on the line. The story [prompted the state to fire the third-party contractor](https://www.spotlightpa.org/news/2023/02/pa-phfa-mortgage-utility-tax-relief-applications-paused/) that was running the program.",
-      "url": "https://spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/"
-    },
-    {
-      "page": "content/news/2023-03-09-SPLCOMPETENCY.md",
-      "kicker": "Criminal Justice",
-      "dek": "A Spotlight PA investigation into the state’s broken system for protecting incarcerated people with mental health needs.",
-      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/) into the state’s broken system for protecting incarcerated people with mental health needs included the creation of a first-of-its-kind database of cases involving competency hearings. The data has since been requested by researchers as valuable to understanding the extent of the problem.",
-      "url": "https://spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/"
-    },
-    {
-      "page": "content/series/unproven-unsafe/_index.md",
-      "kicker": "Cannabis Card Game",
-      "dek": "A yearlong investigation into Pennsylvania’s medical marijuana card program.",
-      "body": "A yearlong [investigation](https://www.spotlightpa.org/series/unproven-unsafe/) into Pennsylvania’s medical marijuana card program — including questionable health claims, weak oversight, and unfair rules — sparked calls for change from doctors, patients, industry leaders, and policymakers. Among the changes, a dispensary removed incorrect information from its website after it was contacted by Spotlight PA, a medical marijuana card company updated its homepage, removing a direct page to a claim that several experts called potentially dangerous, and a company featured in Spotlight PA’s reporting updated its drug policy to provide new protections to medical marijuana patients in nearly 80 positions.",
-      "url": "https://spotlightpa.org/series/unproven-unsafe/"
-    },
-    {
-      "page": "content/news/2022-08-22-SPLCANORDER.md",
-      "kicker": "Health",
-      "dek": "A public records request prevailed in state appellate court, setting new precedential case law regarding the release of aggregate data.",
-      "body": "A public records request seeking data about how many medical marijuana certifications had been issued for each qualifying condition resulted in the state Health Department suing Spotlight PA to block access. The newsroom prevailed in state appellate court, setting [new precedential case law regarding the release of aggregate data](https://www.spotlightpa.org/news/2022/08/pa-medical-marijuana-program-addiction-treatment-court-order/).",
-      "url": "https://spotlightpa.org/news/2022/08/pa-medical-marijuana-program-addiction-treatment-court-order/"
-    },
-    {
-      "page": "content/statecollege/2022-10-28-SPLPSUCENTER.md",
-      "kicker": "Penn State",
-      "dek": "Spotlight PA broke the news that Penn State [hadn’t allocated funding to its Center for Racial Justice.",
+      "airtableId": "rec1unE6fJFSyKBz7",
       "body": "Spotlight PA broke the news that Penn State [hadn’t allocated funding to its Center for Racial Justice](https://www.spotlightpa.org/statecollege/2022/10/penn-state-psu-center-racial-justice-bendapudi/), a key commitment following the 2020 protests against racism and police brutality. That reporting spurred national coverage and was cited by The Washington Post, among other outlets.",
+      "dek": "Spotlight PA broke the news that Penn State [hadn’t allocated funding to its Center for Racial Justice.",
+      "kicker": "Penn State",
+      "page": "content/statecollege/2022-10-28-SPLPSUCENTER.md",
       "url": "https://spotlightpa.org/statecollege/2022/10/penn-state-psu-center-racial-justice-bendapudi/"
     },
     {
-      "page": "content/news/2022-03-30-SPLRELEASE30.md",
-      "kicker": "Criminal Justice",
-      "dek": "A Spotlight PA investigation about the state’s broken compassionate relief program.",
+      "airtableId": "rec37sL2mzgOtLMiz",
       "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2022/03/pa-prison-life-sentence-compassionate-release/) about the state’s broken compassionate relief program for the state’s oldest and most frail prisoners is now available in prison law libraries, and a prisoner has said they are using it to educate inmates about their rights.",
+      "dek": "A Spotlight PA investigation about the state’s broken compassionate relief program.",
+      "kicker": "Criminal Justice",
+      "page": "content/news/2022-03-30-SPLRELEASE30.md",
       "url": "https://spotlightpa.org/news/2022/03/pa-prison-life-sentence-compassionate-release/"
     },
     {
-      "page": "content/news/2021-11-18-SPLHALL19.md",
-      "kicker": "Criminal Justice",
-      "dek": "A Spotlight PA and NBC News investigation into the State Police shooting of Christian Hall in the Poconos revealedthat the teenager had his hands in the air when he was shot and killed.",
-      "body": "A Spotlight PA and NBC News [investigation](https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/) into the State Police shooting of Christian Hall in the Poconos revealed for the first time that the teenager had his hands in the air when he was shot and killed, prompting a new national wave of attention on the case. The story contributed to calls to remove State Police from investigating incidents involving fellow troopers, and to a [pending federal excessive force lawsuit](https://www.spotlightpa.org/news/2022/03/christian-hall-pennsylvania-state-police-lawsuit/) against the agency. The case became a central issue in the local district attorney’s election.",
-      "url": "https://spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/"
-    },
-    {
-      "page": "content/news/2021-06-28-SPLMEDMAR28.md",
-      "kicker": "Health",
-      "dek": "State officials updated their policies after A Spotlight PA investigation found failure to clarify federal rules around funding for addiction treatment and medical marijuana use had deadly consequences.",
+      "airtableId": "rec4cKj6rHFw4leJ5",
       "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2021/06/pa-medical-marijuana-insurance-drug-treatment-confusion/) found that a state agency’s long-running failure to clarify federal rules around funding for addiction treatment and medical marijuana use had deadly consequences. In response, state officials updated their policies, and the [federal government eliminated the language in their policy that had first caused the confusion](https://www.spotlightpa.org/news/2021/08/addiction-treatment-cannabis-pennsylvania-federal-rules-roll-back/). ",
+      "dek": "State officials updated their policies after A Spotlight PA investigation found failure to clarify federal rules around funding for addiction treatment and medical marijuana use had deadly consequences.",
+      "kicker": "Health",
+      "page": "content/news/2021-06-28-SPLMEDMAR28.md",
       "url": "https://spotlightpa.org/news/2021/06/pa-medical-marijuana-insurance-drug-treatment-confusion/"
     },
     {
-      "page": "content/news/2021-04-29-SPLDDAP02.md",
-      "kicker": "Health",
-      "dek": "A Spotlight PA and Kaiser Health News investigation contributed to a new effort to give the state the authority to fine providers.",
-      "body": "A Spotlight PA and Kaiser Health News [investigation](https://www.spotlightpa.org/news/2021/04/pa-addiction-treatment-facilities-investigation-state-oversight-flawed-violations-harm-clients/) into how Pennsylvania’s Department of Drug and Alcohol Programs has allowed treatment providers to continue operating despite repeated violations and harm to clients [contributed to a new effort to give the state the authority to fine providers](https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=35613). ",
-      "url": "https://spotlightpa.org/news/2021/04/pa-addiction-treatment-facilities-investigation-state-oversight-flawed-violations-harm-clients/"
-    },
-    {
-      "page": "content/news/2020-08-06-SPLCAMPUS06.md",
-      "kicker": "Education",
-      "dek": "After Spotlight PA published an investigation in 2020 into how Pennsylvania’s higher education system failed students of color, public universities adopted a strategy to address campus racism.",
-      "body": "After Spotlight PA published an [investigation](https://www.spotlightpa.org/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/) in 2020 into how Pennsylvania’s higher education system failed students of color, [state senators urged the universities to take action](https://www.spotlightpa.org/series/condemn-discuss-repeat/). Then, in a [live interview](https://www.spotlightpa.org/news/2021/01/passhe-coronavirus-chancellor-daniel-greenstein-racism-higher-education-college-campus-integration/) with Spotlight PA, the chancellor of the system said he would examine the historic roots of racism in the state colleges after conceding he had not considered how such a review could inform solutions. Finally, in spring 2021, the public university system [adopted a strategy to address campus racism](https://www.spotlightpa.org/news/2021/05/pa-state-university-system-campus-racism-plan/).",
-      "url": "https://spotlightpa.org/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/"
-    },
-    {
-      "page": "content/news/2019-09-20-SPLRACE20.md",
-      "kicker": "Criminal Justice",
-      "dek": "After Spotlight PA revealed that the Pennsylvania State Police had quietly stopped tracking the race of drivers who get pulled over the State Police resumed tracking race data from traffic stops and resumed a data analysis partnership.",
+      "airtableId": "rec597cPrRU1bNfNk",
       "body": "After Spotlight PA [revealed](https://www.spotlightpa.org/news/2019/09/pa-state-police-stopped-tracking-driver-race/) that the Pennsylvania State Police had quietly stopped tracking the race of drivers who get pulled over—making it harder to detect bias—the State Police [resumed tracking race data from traffic stops and resumed a data analysis partnership with the University of Cincinnati](https://www.spotlightpa.org/news/2021/01/pa-state-police-traffic-stops-racial-profiling-data-collection/).",
+      "dek": "After Spotlight PA revealed that the Pennsylvania State Police had quietly stopped tracking the race of drivers who get pulled over the State Police resumed tracking race data from traffic stops and resumed a data analysis partnership.",
+      "kicker": "Criminal Justice",
+      "page": "content/news/2019-09-20-SPLRACE20.md",
       "url": "https://spotlightpa.org/news/2019/09/pa-state-police-stopped-tracking-driver-race/"
     },
     {
-      "page": "content/news/2020-05-09-SPLHOMES10.md",
-      "kicker": "Coronavirus",
-      "dek": "In spring 2020, Spotlight PA uncovered that the state had a plan to protect nursing homes from COVID-19 but didn’t fully implement it. In response, two state senators sent a letter demanding answers.",
+      "airtableId": "rec7HwdCQFBJcEmzt",
+      "body": "A Spotlight PA and Kaiser Health News [investigation](https://www.spotlightpa.org/news/2021/04/pa-addiction-treatment-facilities-investigation-state-oversight-flawed-violations-harm-clients/) into how Pennsylvania’s Department of Drug and Alcohol Programs has allowed treatment providers to continue operating despite repeated violations and harm to clients [contributed to a new effort to give the state the authority to fine providers](https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=35613). ",
+      "dek": "A Spotlight PA and Kaiser Health News investigation contributed to a new effort to give the state the authority to fine providers.",
+      "kicker": "Health",
+      "page": "content/news/2021-04-29-SPLDDAP02.md",
+      "url": "https://spotlightpa.org/news/2021/04/pa-addiction-treatment-facilities-investigation-state-oversight-flawed-violations-harm-clients/"
+    },
+    {
+      "airtableId": "recBOodvbKvl09PSp",
+      "body": "After Spotlight PA published an [investigation](https://www.spotlightpa.org/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/) in 2020 into how Pennsylvania’s higher education system failed students of color, [state senators urged the universities to take action](https://www.spotlightpa.org/series/condemn-discuss-repeat/). Then, in a [live interview](https://www.spotlightpa.org/news/2021/01/passhe-coronavirus-chancellor-daniel-greenstein-racism-higher-education-college-campus-integration/) with Spotlight PA, the chancellor of the system said he would examine the historic roots of racism in the state colleges after conceding he had not considered how such a review could inform solutions. Finally, in spring 2021, the public university system [adopted a strategy to address campus racism](https://www.spotlightpa.org/news/2021/05/pa-state-university-system-campus-racism-plan/).",
+      "dek": "After Spotlight PA published an investigation in 2020 into how Pennsylvania’s higher education system failed students of color, public universities adopted a strategy to address campus racism.",
+      "kicker": "Education",
+      "page": "content/news/2020-08-06-SPLCAMPUS06.md",
+      "url": "https://spotlightpa.org/news/2020/08/pennsylvania-public-universities-colleges-campus-racism/"
+    },
+    {
+      "airtableId": "recJV8OLIW9lCl03c",
+      "body": "A yearlong [investigation](https://www.spotlightpa.org/series/unproven-unsafe/) into Pennsylvania’s medical marijuana card program — including questionable health claims, weak oversight, and unfair rules — sparked calls for change from doctors, patients, industry leaders, and policymakers. Among the changes, a dispensary removed incorrect information from its website after it was contacted by Spotlight PA, a medical marijuana card company updated its homepage, removing a direct page to a claim that several experts called potentially dangerous, and a company featured in Spotlight PA’s reporting updated its drug policy to provide new protections to medical marijuana patients in nearly 80 positions.",
+      "dek": "A yearlong investigation into Pennsylvania’s medical marijuana card program.",
+      "kicker": "Cannabis Card Game",
+      "page": "content/series/unproven-unsafe/_index.md",
+      "url": "https://spotlightpa.org/series/unproven-unsafe/"
+    },
+    {
+      "airtableId": "recLcugDScrewn7E7",
       "body": "In spring 2020, Spotlight PA [uncovered](https://www.spotlightpa.org/news/2020/05/pennsylvania-coronavirus-nursing-homes-plan-quick-strike-teams/) that the state had a plan to protect nursing homes from COVID-19 but didn’t fully implement it. In response, [two state senators sent a letter demanding answers from the health department, citing our reporting](https://drive.google.com/file/d/1_kJcWrrIhjSV-gE0Tpk6OpyS9HaUL2E-/view).",
+      "dek": "In spring 2020, Spotlight PA uncovered that the state had a plan to protect nursing homes from COVID-19 but didn’t fully implement it. In response, two state senators sent a letter demanding answers.",
+      "kicker": "Coronavirus",
+      "page": "content/news/2020-05-09-SPLHOMES10.md",
       "url": "https://spotlightpa.org/news/2020/05/pennsylvania-coronavirus-nursing-homes-plan-quick-strike-teams/"
     },
     {
-      "page": "content/news/2021-01-29-SPLDATA30.md",
-      "kicker": "Coronavirus",
-      "dek": "Spotlight PA found that the Department of Corrections was reporting flawed data about COVID-19 in prisons, prompting the department to remove, revamp, and relaunch a public data dashboard.",
+      "airtableId": "recMTzWICBqwZ0nmJ",
+      "body": "A Spotlight PA investigative [series](https://www.spotlightpa.org/series/the-hidden-tab/) into how lawmakers spend tax dollars on themselves and hide it from the public resulted in new proposed bills and the [Senate posting all expenses online for the first time](https://www.spotlightpa.org/news/2021/09/pa-senate-spending-records-online-historic/) — an unprecedented move towards transparency in Harrisburg. ",
+      "dek": "A Spotlight PA investigative series led to an unprecedented move towards transparency in Harrisburg",
+      "kicker": "The Hidden Tab",
+      "page": "content/series/the-hidden-tab/_index.md",
+      "url": "https://spotlightpa.org/series/the-hidden-tab/"
+    },
+    {
+      "airtableId": "recPfNjr1QRTUGYAy",
+      "body": "A Spotlight PA and NBC News [investigation](https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/) into the State Police shooting of Christian Hall in the Poconos revealed for the first time that the teenager had his hands in the air when he was shot and killed, prompting a new national wave of attention on the case. The story contributed to calls to remove State Police from investigating incidents involving fellow troopers, and to a [pending federal excessive force lawsuit](https://www.spotlightpa.org/news/2022/03/christian-hall-pennsylvania-state-police-lawsuit/) against the agency. The case became a central issue in the local district attorney’s election.",
+      "dek": "A Spotlight PA and NBC News investigation into the State Police shooting of Christian Hall in the Poconos revealedthat the teenager had his hands in the air when he was shot and killed.",
+      "kicker": "Criminal Justice",
+      "page": "content/news/2021-11-18-SPLHALL19.md",
+      "url": "https://spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/"
+    },
+    {
+      "airtableId": "recUtC6llUfrmzoJI",
+      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/) into the state’s broken system for protecting incarcerated people with mental health needs included the creation of a first-of-its-kind database of cases involving competency hearings. The data has since been requested by researchers as valuable to understanding the extent of the problem.",
+      "dek": "A Spotlight PA investigation into the state’s broken system for protecting incarcerated people with mental health needs.",
+      "kicker": "Criminal Justice",
+      "page": "content/news/2023-03-09-SPLCOMPETENCY.md",
+      "url": "https://spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/"
+    },
+    {
+      "airtableId": "recZlxZEDiAmX9Pbj",
       "body": "Spotlight PA [found](https://www.spotlightpa.org/news/2021/01/pennsylvania-prisons-coronavirus-deaths-data-transparency/) that the Department of Corrections was reporting flawed data to inmates, families, and public officials about COVID-19 in prisons, prompting the department to remove, revamp, and relaunch a public data dashboard.",
+      "dek": "Spotlight PA found that the Department of Corrections was reporting flawed data about COVID-19 in prisons, prompting the department to remove, revamp, and relaunch a public data dashboard.",
+      "kicker": "Coronavirus",
+      "page": "content/news/2021-01-29-SPLDATA30.md",
       "url": "https://spotlightpa.org/news/2021/01/pennsylvania-prisons-coronavirus-deaths-data-transparency/"
     },
     {
-      "page": "content/news/2020-08-31-SPLFRISK31.md",
-      "kicker": "Criminal Justice",
-      "dek": "After Spotlight PA and The Appeal reported on illegal stops and searches by the Pennsylvania State Police, the governor requested a formal review.",
+      "airtableId": "receCXmnarsIyYNk1",
+      "body": "A public records request seeking data about how many medical marijuana certifications had been issued for each qualifying condition resulted in the state Health Department suing Spotlight PA to block access. The newsroom prevailed in state appellate court, setting [new precedential case law regarding the release of aggregate data](https://www.spotlightpa.org/news/2022/08/pa-medical-marijuana-program-addiction-treatment-court-order/).",
+      "dek": "A public records request prevailed in state appellate court, setting new precedential case law regarding the release of aggregate data.",
+      "kicker": "Health",
+      "page": "content/news/2022-08-22-SPLCANORDER.md",
+      "url": "https://spotlightpa.org/news/2022/08/pa-medical-marijuana-program-addiction-treatment-court-order/"
+    },
+    {
+      "airtableId": "recfF3IXoRBovIYU8",
       "body": "After Spotlight PA and The Appeal [reported](https://www.spotlightpa.org/news/2020/08/pa-state-police-troopers-highway-stop-and-frisk/) on illegal stops and searches by the Pennsylvania State Police, a practice likened to “highway stop-and-frisk,” [the governor asked the Office of the Inspector General to conduct a formal review](https://www.spotlightpa.org/news/2020/09/pa-state-police-traffic-stops-illegal-searches-inspector-general-review/).",
+      "dek": "After Spotlight PA and The Appeal reported on illegal stops and searches by the Pennsylvania State Police, the governor requested a formal review.",
+      "kicker": "Criminal Justice",
+      "page": "content/news/2020-08-31-SPLFRISK31.md",
       "url": "https://spotlightpa.org/news/2020/08/pa-state-police-troopers-highway-stop-and-frisk/"
+    },
+    {
+      "airtableId": "recfijtaXVw5BlHg4",
+      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/) into Pennsylvania’s pandemic mortgage relief program found that long delays and poor communication were leaving thousands in limbo, with their homes and utilities on the line. The story [prompted the state to fire the third-party contractor](https://www.spotlightpa.org/news/2023/02/pa-phfa-mortgage-utility-tax-relief-applications-paused/) that was running the program.",
+      "dek": "A Spotlight PA story prompted the state to fire the third-party contractor that was running the program.",
+      "kicker": "Economy",
+      "page": "content/news/2023-01-23-SPLMORTGAGE.md",
+      "url": "https://spotlightpa.org/news/2023/01/pa-homeowner-mortgage-utility-assistance-fund/"
+    },
+    {
+      "airtableId": "rechy6UD4deUah54C",
+      "body": "A Spotlight PA [investigation](https://www.spotlightpa.org/news/2021/07/pa-department-of-labor-unemployment-claims-overpayment-interest/) revealed for the first time how the state Labor Department overcharged unemployed Pennsylvanians for years and never made the problem public, directly prompting state officials to admit the error and say it would return [$19 million to Pennsylvanians](https://www.spotlightpa.org/news/2021/09/pa-unemployment-interest-overcharged-refund-website/).",
+      "dek": "A Spotlight PA investigation prompted state officials to admit the error and say it would return $19 million to Pennsylvanians.",
+      "kicker": "Economy",
+      "page": "content/news/2021-07-09-SPLUNEMPLOYMENT10.md",
+      "url": "https://spotlightpa.org/news/2021/07/pa-department-of-labor-unemployment-claims-overpayment-interest/"
     }
   ]
 }

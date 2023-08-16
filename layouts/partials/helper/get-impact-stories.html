@@ -1,5 +1,5 @@
 {{ $items := slice }}
-{{ $src := index (index site.Data .) "items" }}
+{{ $src := index (index site.Data .) "impactbase" }}
 {{ range $src }}
   {{ $item := dict
     "body" .body
