@@ -83,7 +83,7 @@ He appeared in court Wednesday for a status conference. He waived both his arrai
 
 During the appearance, Senior Deputy Attorney General Summer Ford Carroll, the commonwealth’s prosecutor in its case against Suplizio, said the Office of Attorney General plans to file additional charges against him in about two weeks.
 
-Carroll did not give details on what the new charges will be, and the attorney general’s office has not responded to Spotlight PA’s request for comment.
+Carroll did not give details on what the new charges will be. A spokesperson for the attorney general’s office told Spotlight PA, &#34;At this point, we would have nothing additional to offer.&#34;
 
 With their motion to unseal, the four news organizations are appealing to Allegheny County Judge Anthony Mariani. Mariani supervised the 48th Statewide Investigating Grand Jury, which heard evidence in the case against Suplizio, and he sealed the grand jury’s presentment.
 
