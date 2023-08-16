@@ -77,9 +77,17 @@ Prosecutors allege <a href="https://www.spotlightpa.org/statecollege/2023/04/pa-
 
 Law enforcement officials said Suplizio routinely withdrew money from those accounts. According to prosecutors, Suplizio diverted tens of thousands of dollars into personal bank accounts, and used that money to pay his credit card bill and make political contributions. For instance, he donated $3,000 over a two-year period starting in 2016 to Scarnati.
 
-Suplizio’s criminal case will play out in Clearfield County’s Court of Common Pleas. The docket in that case is public and shows a status conference is scheduled for later Wednesday (Suplizio waived both his arraignment and his preliminary hearing).
+Suplizio’s criminal case will play out in Clearfield County’s Court of Common Pleas.
+
+He appeared in court Wednesday for a status conference. He waived both his arraignment and his preliminary hearing. Michael Comber, defense attorney for Suplizio, declined to comment.
+
+During the appearance, Senior Deputy Attorney General Summer Ford Carroll, the commonwealth’s prosecutor in its case against Suplizio, said the Office of Attorney General plans to file additional charges against him in about two weeks.
+
+Carroll did not give details on what the new charges will be, and the attorney general’s office has not responded to Spotlight PA’s request for comment.
 
 With their motion to unseal, the four news organizations are appealing to Allegheny County Judge Anthony Mariani. Mariani supervised the 48th Statewide Investigating Grand Jury, which heard evidence in the case against Suplizio, and he sealed the grand jury’s presentment.
+
+<em>Spotlight PA’s Min Xian contributed reporting from Clearfield.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
