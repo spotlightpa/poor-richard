@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-08-15-SPLGOVTAKEAWAYS.md"
+    "content/statecollege/2023-08-16-SPLUNSEALCASE.md"
   ],
   "subfeatures": [
-    "content/news/2023-07-25-SPLGUVPROMO.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md",
+    "content/statecollege/2023-04-10-SPLHERMDUB.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-08-15-SPLGOVTAKEAWAYS.md",
     "content/news/2023-08-11-SPLEWLPRIV.md",
-    "content/newsletters/palocal/2023-08-11-1000.md",
-    "content/news/2023-08-07-SPLPAHAF5THINGS.md"
+    "content/statecollege/2023-08-08-SPLPSUWAGES.md"
   ],
   "topper": []
 }
