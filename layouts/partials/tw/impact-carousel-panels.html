@@ -2,6 +2,30 @@
 <div
   class="relative col-span-8 col-start-1 row-span-3 row-start-1 w-full items-center justify-center md:col-span-14"
 >
+  <!-- PANEL NAVIGATION -->
+  <button
+    class="absolute left-0 top-0 z-20 h-full w-16 text-6xl text-white"
+    @click="select($el.id) - 1"
+  >
+    <span aria-hidden="true">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="text-gray-600 h-16 w-16"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="3"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </span>
+    <span class="sr-only">Skip to previous slide page</span>
+  </button>
+
   <div role="tabpanels" class="relative bg-black">
     <!-- Panel -->
     {{ range .impactStories }}
@@ -14,11 +38,11 @@
           x-transition:leave="transition ease-in"
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
-          x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
-          :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+          x-show="isSelected( $id( 'tab', whichChild($el, $el.parentElement) ) )"
+          :aria-labelledby="$id( 'tab', whichChild($el, $el.parentElement) )"
           role="tabpanel"
           class="
-            relative grid max-h-[740px] w-screen min-w-full grid-flow-row grid-cols-8 grid-rows-3 gap-3 overflow-x-hidden bg-s-7 before:z-10
+            relative grid max-h-[640px] w-screen min-w-full grid-flow-row grid-cols-8 grid-rows-3 gap-3 overflow-x-hidden bg-s-7 before:z-10
             before:col-span-8 before:col-start-1 before:row-span-3 before:row-start-1 before:bg-black/80 before:bg-blend-overlay md:grid-cols-14 md:gap-5 
           "
         >
@@ -58,7 +82,7 @@
             "description" $description
             "widthRatio" 5
             "heightRatio" 4
-            "widths" (slice 576 488 2880 1920)
+            "widths" (slice 576 488 1280 1920)
             "figClass" "col-start-1 col-span-8 row-start-1 row-span-3 overflow-hidden md:col-span-14 bg-red object-cover"
             "sizeHint" "400px"
             "gravity" (.page.Param "image-gravity")
@@ -68,4 +92,23 @@
       {{ end }}
     {{ end }}
   </div>
+
+  <button
+    class="absolute right-0 top-0 z-20 h-full w-16 text-6xl text-white"
+    @click="select($el.id) + 1"
+  >
+    <span aria-hidden="true">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="text-gray-600 h-16 w-16"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="3"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </span>
+    <span class="sr-only">Skip to next slide page</span>
+  </button>
 </div>
