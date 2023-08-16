@@ -14,7 +14,7 @@
 
     <div
       class=" m-auto max-w-screen-lg border-t-4 sm:flex sm:items-start"
-      x-data="{ selected: 'item-2023' }"
+      x-data="{ selected: 'awards-2023' }"
     >
       {{ with .entries }}
         <div
@@ -23,12 +23,12 @@
           {{ range . }}
 
             <a
-              href="#item-{{ .name }}"
+              href="#awards-{{ .name }}"
               class="
                 flex-0 px-2 text-sm font-black leading-loose active:focus:text-black sm:px-4 sm:text-2xl
               "
-              :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'item-{{ .name }}' }"
-              @click="selected = 'item-{{ .name }}' "
+              :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'awards-{{ .name }}' }"
+              @click="selected = 'awards-{{ .name }}' "
               >{{- .name -}}</a
             >
           {{ end }}
@@ -36,10 +36,10 @@
         <div class="max-w-4xl px-2 py-8 sm:border-l-4 md:px-16">
           {{ range . }}
             <article
-              id="item-{{ .name }}"
-              x-show="selected === 'item-{{ .name }}'"
+              id="awards-{{ .name }}"
+              x-show="selected === 'awards-{{ .name }}'"
               class="article-content"
-              :class="{'pt-20 -mt-20': selected === 'item-{{ .name }}' }"
+              :class="{'pt-20 -mt-20': selected === 'awards-{{ .name }}' }"
             >
               {{ $.Page.RenderString .body }}
             </article>
