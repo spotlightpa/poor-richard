@@ -44,7 +44,7 @@
   <a
     href="{{ $link }}"
     data-sf-campaign="701Dn000000YqKfIAK"
-    class="bottom-0 flex flex-wrap overflow-y-scroll md:left-auto md:top-0 md:h-full"
+    class="bottom-0 flex flex-wrap overflow-y-scroll ring-red focus:outline-none focus:ring-2 md:left-auto md:top-0 md:h-full"
     :class="{'left-full': !isOpen, 'overflow-y-hidden': !isOpen}"
   >
     <header
@@ -73,7 +73,7 @@
 
     {{ with $imagename }}
       <div
-        class="order-1 m-0 hidden w-5/12 justify-items-stretch overflow-hidden sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
+        class="order-1 m-0 bg-black w-5/12 justify-items-stretch overflow-hidden sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
       >
         {{ $sizes := (slice
           (dict "width" 266 "height" 266)
