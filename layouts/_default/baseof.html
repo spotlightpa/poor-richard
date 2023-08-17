@@ -89,7 +89,13 @@
     {{ block "modal" . }}
       {{ if .Param "modal-exclude" | not }}
         {{ if .Param "sticky-active" }}
-          {{ partial "tw/modal-sticky.html" . }}
+          {{ partial "tw/modal-takeover.html" ( dict
+            "filename" "2023/08/01jd-w2vj-77eb-3dp1.jpeg"
+            "hed" "Time is running out and we need your help"
+            "dek" "Only a few hours remain for your gift to Spotlight PA to be DOUBLED. Contribute now and ensure our trusted, nonpartisan investigative journalism can continue."
+            "link" "https://spotlightpa.fundjournalism.org/statecollege/?campaign=701Dn000000YqKfIAK"
+            )
+          }}
         {{ end }}
         {{ if .Param "newsletter-active" }}
           {{ partial "tw/modal-ribbon.html" ( dict
