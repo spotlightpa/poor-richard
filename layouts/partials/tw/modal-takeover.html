@@ -25,12 +25,11 @@
   <button
     class="absolute right-3 -top-10 flex rounded-xl bg-white text-white md:top-4 md:right-auto md:left-5"
     type="button"
-    aria-label="close"
-    x-ref="closer"
-    data-ga-action="modal:newsletter:dismiss"
+    data-ga-action="modal:takeover:dismiss"
     @keydown.escape="isOpen = false"
-    @click="isOpen = false;"
-    :autofocus="isOpen"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
   >
     <svg class="my-auto box-content h-6 w-6 fill-black">
       {{ partial "helper/svg.html" "close" }}
