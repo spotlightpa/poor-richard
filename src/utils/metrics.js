@@ -13,7 +13,7 @@ const FROM_MC_KEY = "originated-from-mailchimp";
 const SAW_DONATE_MODAL_KEY = "saw-donate-modal-totebag";
 const SIGNED_UP_FOR_NEWSLETTER_KEY = "signed-up-for-newsletter";
 const PRIOR_FUNNEL_STATUS_KEY = "funnel-status";
-const SAW_TAKEOVER_MODAL_KEY = "saw-newsletter-modal";
+const SAW_TAKEOVER_MODAL_KEY = "saw-takeover-modal";
 
 const SHOW_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 1 week
 const TAKEOVER_INTERVAL = 10 * 60 * 1000; // 10 minutes
@@ -81,13 +81,8 @@ let shouldShowModalTakeover = (() => {
   if (onTestNewsletterPage) {
     return true;
   }
-  let cameFromMCOn = loadDate(FROM_MC_KEY) || 0;
-  let sawNLModalOn = loadDate(SAW_NEWSLETTER_MODAL_KEY) || 0;
-  if (!cameFromMCOn && !sawNLModalOn) {
-    return true;
-  }
-  let lastPrompt = Math.max(cameFromMCOn, sawNLModalOn);
-  return now - lastPrompt > TAKEOVER_INTERVAL;
+  let sawTakeoverModalOn = loadDate(SAW_TAKEOVER_MODAL_KEY) || 0;
+  return now - sawTakeoverModalOn > TAKEOVER_INTERVAL;
 })();
 
 export let modalKind = (() => {
