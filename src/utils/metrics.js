@@ -100,7 +100,7 @@ export let modalTakeover = (() => {
     console.warn("prefers-reduced-motion; aborting modal display");
     return "none";
   }
-  return shouldShowModalTakeover ? "takeover" : "sticky";
+  return shouldShowModalTakeover ? "takeover" : "none";
 })();
 
 export function recordModalNewsletterView() {
