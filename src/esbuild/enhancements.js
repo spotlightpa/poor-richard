@@ -17,6 +17,7 @@ import searchArticles from "../enhancements/search-articles.js";
 import searchModal from "../enhancements/search-modal.js";
 import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
+import takeover from "../enhancements/takeover.js";
 
 for (let [name, comp] of [
   ["embedList", embedList],
@@ -30,6 +31,7 @@ for (let [name, comp] of [
   ["searchModal", searchModal],
   ["slider", slider],
   ["sticky", sticky],
+  ["takeover", takeover],
 ]) {
   Alpine.data(name, comp);
 }

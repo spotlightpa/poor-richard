@@ -13,8 +13,10 @@ const FROM_MC_KEY = "originated-from-mailchimp";
 const SAW_DONATE_MODAL_KEY = "saw-donate-modal-totebag";
 const SIGNED_UP_FOR_NEWSLETTER_KEY = "signed-up-for-newsletter";
 const PRIOR_FUNNEL_STATUS_KEY = "funnel-status";
+const SAW_TAKEOVER_MODAL_KEY = "saw-newsletter-modal";
 
-const SHOW_INTERVAL = 10 * 60 * 1000; // 1 minutes
+const SHOW_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 1 week
+const TAKEOVER_INTERVAL = 10 * 60 * 1000; // 10 minutes
 
 let now = new Date();
 
@@ -75,6 +77,19 @@ let shouldShowModalNewsletter = (() => {
   return now - lastPrompt > SHOW_INTERVAL;
 })();
 
+let shouldShowModalTakeover = (() => {
+  if (onTestNewsletterPage) {
+    return true;
+  }
+  let cameFromMCOn = loadDate(FROM_MC_KEY) || 0;
+  let sawNLModalOn = loadDate(SAW_NEWSLETTER_MODAL_KEY) || 0;
+  if (!cameFromMCOn && !sawNLModalOn) {
+    return true;
+  }
+  let lastPrompt = Math.max(cameFromMCOn, sawNLModalOn);
+  return now - lastPrompt > TAKEOVER_INTERVAL;
+})();
+
 export let modalKind = (() => {
   if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
     // eslint-disable-next-line no-console
@@ -84,10 +99,22 @@ export let modalKind = (() => {
   return shouldShowModalNewsletter ? "newsletter" : "sticky";
 })();
 
+export let modalTakeover = (() => {
+  if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
+    // eslint-disable-next-line no-console
+    console.warn("prefers-reduced-motion; aborting modal display");
+    return "none";
+  }
+  return shouldShowModalTakeover ? "takeover" : "sticky";
+})();
+
 export function recordModalNewsletterView() {
   storeDate(SAW_NEWSLETTER_MODAL_KEY, now);
 }
 
 export function recordNewsletterSignup() {
   storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
+}
+export function recordModalTakeoverView() {
+  storeDate(SAW_TAKEOVER_MODAL_KEY, now);
 }
