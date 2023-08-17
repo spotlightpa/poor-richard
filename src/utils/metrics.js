@@ -14,7 +14,7 @@ const SAW_DONATE_MODAL_KEY = "saw-donate-modal-totebag";
 const SIGNED_UP_FOR_NEWSLETTER_KEY = "signed-up-for-newsletter";
 const PRIOR_FUNNEL_STATUS_KEY = "funnel-status";
 
-const SHOW_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 1 week
+const SHOW_INTERVAL = 10 * 60 * 1000; // 1 minutes
 
 let now = new Date();
 
