@@ -3,9 +3,11 @@
 {{ $dek := .dek }}
 {{ $link := .link }}
 
+
+<div x-data x-intersect.once="$dispatch('open-takeover')"></div>
 <section
   data-ga-category="modal:donate:takeover"
-  x-data="sticky"
+  x-data="modal"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
   x-transition:enter-start="opacity-0 transform translate-x-8"
@@ -13,11 +15,16 @@
   x-transition:leave="transition ease-in duration-500"
   x-transition:leave-start="opacity-100 transform translate-x-0"
   x-transition:leave-end="opacity-0 transform translate-x-8"
-  @open-sticky.window="show()"
-  @close-sticky.window="close()"
+  @open-takeover.window="show()"
+  @close-takeover.window="close()"
   data-ga-category="modal:sticky"
-  @keydown.escape="close"
+  @keydown.escape="close()"
+  @keydown.escape="isOpen = false"
+  tabindex="-1"
+  @click.stop
+  @keydown.escape="isOpen = false"
   x-cloak
+  role="dialog"
   aria-modal="true"
   aria-label="Contribute"
   class="fixed bottom-0 left-0 z-30 flex flex-wrap md:left-auto md:top-0 md:right-0 md:h-full md:w-1/3"
@@ -25,11 +32,12 @@
   <button
     class="absolute right-3 -top-10 flex rounded-xl bg-white text-white md:top-4 md:right-auto md:left-5"
     type="button"
+    aria-label="close"
+    x-ref="closer"
     data-ga-action="modal:takeover:dismiss"
     @keydown.escape="isOpen = false"
-    aria-label="close"
-    @click="close"
-    x-ref="close"
+    @click="isOpen = false;"
+    :autofocus="isOpen"
   >
     <svg class="my-auto box-content h-6 w-6 fill-black">
       {{ partial "helper/svg.html" "close" }}
@@ -37,6 +45,8 @@
   </button>
   <a
     href="{{ $link }}"
+    @click.capture="isOpen = false;"
+    @click.outside="isOpen = false;"
     data-sf-campaign="701Dn000000YqKfIAK"
     class="bottom-0 flex flex-wrap overflow-y-scroll ring-red focus:outline-none focus:ring-2 md:left-auto md:top-0 md:h-full"
     :class="{'left-full': !isOpen, 'overflow-y-hidden': !isOpen}"
@@ -51,6 +61,7 @@
       </h2>
     </header>
     <span class="c-red-8 -order-1 self-end sm:order-1 sm:self-start md:mt-28">
+      <!-- triangle fold -->
       <svg
         class="fill-red-8 sm:origin-center sm:scale-[(-1,_1)]"
         width="16"
@@ -67,7 +78,7 @@
 
     {{ with $imagename }}
       <div
-        class="order-1 m-0 hidden bg-black w-5/12 justify-items-stretch overflow-hidden sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
+        class="order-1 m-0 hidden w-5/12 justify-items-stretch overflow-hidden bg-black sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
       >
         {{ $sizes := (slice
           (dict "width" 266 "height" 266)
