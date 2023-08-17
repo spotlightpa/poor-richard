@@ -3,11 +3,6 @@
 {{ $dek := .dek }}
 {{ $link := .link }}
 
-
-<!-- 
-  x-data="modal"
-  x-cloak
--->
 <section
   data-ga-category="modal:donate:takeover"
   x-data="sticky"
@@ -73,7 +68,7 @@
 
     {{ with $imagename }}
       <div
-        class="order-1 m-0 bg-black w-5/12 justify-items-stretch overflow-hidden sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
+        class="order-1 m-0 hidden bg-black w-5/12 justify-items-stretch overflow-hidden sm:flex sm:items-stretch md:-order-1 md:h-2/5 md:w-full"
       >
         {{ $sizes := (slice
           (dict "width" 266 "height" 266)
