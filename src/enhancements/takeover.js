@@ -1,5 +1,5 @@
 import { reportView } from "../utils/google-analytics.js";
-import { modalTakeover, recordModalTakeoverView } from "../utils/metrics.js";
+import { modalKind, recordModalTakeoverView } from "../utils/metrics.js";
 
 export default function takeover() {
   return {
@@ -21,7 +21,7 @@ export default function takeover() {
     },
 
     show() {
-      if (modalTakeover !== "takeover") return;
+      if (modalKind !== "takeover") return;
       this.isOpen = true;
     },
   };

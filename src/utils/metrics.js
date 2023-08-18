@@ -60,6 +60,7 @@ if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
 
 storeItem(PRIOR_FUNNEL_STATUS_KEY, funnelStatus);
 
+// eslint-disable-next-line no-unused-vars
 let shouldShowModalNewsletter = (() => {
   if (onTestNewsletterPage) {
     return true;
@@ -91,16 +92,11 @@ export let modalKind = (() => {
     console.warn("prefers-reduced-motion; aborting modal display");
     return "none";
   }
-  return shouldShowModalNewsletter ? "newsletter" : "sticky";
-})();
-
-export let modalTakeover = (() => {
-  if (window.matchMedia("(prefers-reduced-motion), (speech)").matches) {
-    // eslint-disable-next-line no-console
-    console.warn("prefers-reduced-motion; aborting modal display");
-    return "none";
+  if (shouldShowModalTakeover) {
+    return "takeover";
   }
-  return shouldShowModalTakeover ? "takeover" : "none";
+  // Disable newsletter kind for now
+  return "sticky";
 })();
 
 export function recordModalNewsletterView() {
