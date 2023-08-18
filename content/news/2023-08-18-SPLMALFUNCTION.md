@@ -69,7 +69,7 @@ Skoglund said the purpose of the malfunction reporting was to see how well votin
 
 Skoglund gave examples of malfunctions he thinks the settlement requires officials to report: machines running out of ink frequently, experiencing paper jams, or ballots falling out of machines and onto the floor, something he said Philadelphia has experienced.
 
-<br/>Skoglund said while the possibility exists that someone looking to sow doubt in election results could use this malfunction report database as a way to do so, the goal is to make voting equipment as secure and well-functioning as it can be.
+Skoglund said while the possibility exists that someone looking to sow doubt in election results could use this malfunction report database as a way to do so, the goal is to make voting equipment as secure and well-functioning as it can be.
 
 “I think you can&#39;t stop people from using good information for bad purposes, and I don’t think that&#39;s a reason to not do quality control,” he said.
 
