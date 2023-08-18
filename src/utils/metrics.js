@@ -60,7 +60,6 @@ if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
 
 storeItem(PRIOR_FUNNEL_STATUS_KEY, funnelStatus);
 
-// eslint-disable-next-line no-unused-vars
 let shouldShowModalNewsletter = (() => {
   // Does this page even have a newsletter to pop up?
   if (!document.querySelector("[data-modal-kind=newsletter]")) {
