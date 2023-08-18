@@ -97,7 +97,7 @@ Though there’s not a lot of research on the topic yet, they said existing stud
 
 Performance in athletics isn’t determined just by physical attributes. Mental health, quality of sleep, coaching, skills, and diet all play a role in how an athlete performs.
 
-Harper has found that advantages in height, strength, and size can remain for athletes after two years, but that doesn’t always translate to a performance advantage across the board because each sport requires a different skill set. Hormone therapy can <a href="https://bjsm.bmj.com/content/55/15/865">actually take a toll in endurance sports</a>, but may not affect strength-based sports as much.
+Harper has found that advantages in height, strength, and size can remain for athletes after two years, but that doesn’t always translate to a performance advantage across the board because each sport requires a different skill set. Hormone therapy can <a href="https://web.archive.org/20220603132632/https://bjsm.bmj.com/content/55/15/865">actually take a toll in endurance sports</a>, but may not affect strength-based sports as much.
 
 “Their larger frames are now being powered by reduced muscle mass, reduced aerobic capacity that can lead to disadvantages in things like endurance recovery and quickness,” she said.
 
