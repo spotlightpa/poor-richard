@@ -112,10 +112,7 @@
             class="flex-grow text-s-6 hover:underline"
             aria-label="close"
             type="button"
-            @click="
-                $dispatch('x-form-submit', 'newsletters:seenit:submit');
-                isOpen = false
-              "
+            @click="seenIt()"
           >
             I’m already a subscriber
           </button>

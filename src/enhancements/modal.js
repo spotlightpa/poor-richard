@@ -1,5 +1,9 @@
 import { reportView } from "../utils/google-analytics.js";
-import { modalKind, recordModalNewsletterView } from "../utils/metrics.js";
+import {
+  modalKind,
+  recordModalNewsletterView,
+  recordNewsletterSignup,
+} from "../utils/metrics.js";
 
 export default function modal() {
   return {
@@ -23,6 +27,11 @@ export default function modal() {
     show() {
       if (modalKind !== "newsletter") return;
       this.isOpen = true;
+    },
+
+    seenIt() {
+      recordNewsletterSignup();
+      this.isOpen = false;
     },
   };
 }

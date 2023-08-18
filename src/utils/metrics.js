@@ -60,8 +60,11 @@ if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
 
 storeItem(PRIOR_FUNNEL_STATUS_KEY, funnelStatus);
 
-// eslint-disable-next-line no-unused-vars
 let shouldShowModalNewsletter = (() => {
+  // Does this page even have a newsletter to pop up?
+  if (!document.querySelector("[data-modal-kind=newsletter]")) {
+    return false;
+  }
   if (onTestNewsletterPage) {
     return true;
   }
@@ -79,6 +82,10 @@ let shouldShowModalNewsletter = (() => {
 })();
 
 let shouldShowModalTakeover = (() => {
+  // Does this page even have a takeover to pop up?
+  if (!document.querySelector("[data-modal-kind=takeover]")) {
+    return false;
+  }
   if (onTestNewsletterPage) {
     return true;
   }
@@ -95,7 +102,9 @@ export let modalKind = (() => {
   if (shouldShowModalTakeover) {
     return "takeover";
   }
-  // Disable newsletter kind for now
+  if (shouldShowModalNewsletter) {
+    return "newsletter";
+  }
   return "sticky";
 })();
 

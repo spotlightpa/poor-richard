@@ -1,11 +1,12 @@
-{{ $imagename := .filename }}
-{{ $hed := .hed }}
-{{ $dek := .dek }}
-{{ $link := .link }}
+{{ $imagename := page.Param "takeover-image" }}
+{{ $hed := page.Param "takeover-hed" }}
+{{ $dek := page.Param "takeover-dek" }}
+{{ $link := page.Param "takeover-link" }}
 
 
 <div x-data x-intersect.once="$dispatch('open-takeover')"></div>
 <section
+  data-modal-kind="takeover"
   data-ga-category="modal:takeover"
   x-intersect.once="show()"
   x-cloak
