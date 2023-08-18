@@ -31,7 +31,7 @@ Shapiro recalled Bogen’s nomination in late June after it became clear she did
 
 Bogen, a pediatrician, had served as the head of the Allegheny County Health Department during the first years of the COVID-19 pandemic, and Republican leadership attributed the lack of support to Bogen’s “past management work.”<strong></strong>
 
-The governor has yet to announce publicly whether he will once again put Bogen before the state Senate for consideration or will nominate someone else to fill the role on a permanent basis.
+The governor has yet to announce publicly whether he will once again put Bogen before the state Senate for consideration or will nominate someone else to fill the role on a permanent basis. In a statement, Shapiro spokesperson Manuel Bonder said Bogen is "an immensely qualified public health expert, and Governor Shapiro continues to fully support her and her exemplary leadership at the Department of Health.”
 
 State Sens. Kristin Phillips-Hill (R., York) and Judy Ward (R., Blair) say that allowing acting secretaries to perform their duties without lawmakers’ approval permits the governor and his cabinet to evade oversight set up in the state constitution. They intend to <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=41275&amp;mobile_choice=suppress">introduce a constitutional amendment</a> that would limit the powers of such secretaries in September.
 
