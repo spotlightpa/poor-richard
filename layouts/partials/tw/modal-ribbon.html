@@ -5,6 +5,7 @@
 
 
 <div
+  data-modal-kind="newsletter"
   class="fixed inset-0 z-20 overflow-y-scroll"
   data-ga-category="modal:newsletter:multi"
   x-data="modal"
@@ -203,10 +204,7 @@
               class="flex-initial py-3 pr-5 text-black underline md:mr-5"
               aria-label="close"
               type="button"
-              @click="
-              $dispatch('x-form-submit', 'newsletters:seenit:submit');
-              isOpen = false
-            "
+              @click="seenIt()"
             >
               I’m already a subscriber
             </button>
