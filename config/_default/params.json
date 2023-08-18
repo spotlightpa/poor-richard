@@ -20,7 +20,8 @@
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": true,
+  "newsletter-active": false,
+  "takeover-active": true,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
