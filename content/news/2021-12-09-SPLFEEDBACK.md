@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-09T12:14:22.987-05:00
 slug = "pennsylvania-congressional-map-redistricting-feedback"
+suppress-date = false
 title = "How to weigh in on Pennsylvania’s next congressional map"
 topics = ["Redistricting"]
 +++
@@ -25,7 +26,7 @@ The map was picked by House Republicans from among 19 citizen submissions and wa
 
 The redistricting process will now kick into high gear, as lawmakers hold hearings and begin to take votes while considering additional public input.
 
-It’s important to note the <a href="http://www.paredistricting.com/">proposed House map</a> will likely undergo changes as it moves through the legislative process, and that two state senators plan to release their own map next week.
+It’s important to note the <a href="https://web.archive.org/20211204111311/http://www.paredistricting.com/">proposed House map</a> will likely undergo changes as it moves through the legislative process, and that two state senators plan to release their own map next week.
 
 After passing the GOP-controlled House and Senate, a congressional map must also win the approval of Democratic Gov. Tom Wolf to go into effect.
 
@@ -39,11 +40,11 @@ Here’s how to get involved:
 
 <b>Thursday, Dec. 9, at 5:30 p.m.: </b>The House State Government Committee held an informational meeting with Amanda Holt, the former Lehigh County Republican commissioner whose map Republicans on the panel selected.
 
-<a href="http://www.paredistricting.com/Video/Redistricting" target="_blank">Archived video</a>
+<a href="https://web.archive.org/20211207110116/http://www.paredistricting.com/Video/Redistricting" target="_blank">Archived video</a>
 
 <b>Monday, Dec. 13, at 8 a.m.: </b>The committee is expected to vote on the map. If a majority of members on the panel vote yes, the map then goes to the full House for consideration.
 
-<a href="http://www.pacapitol.com/plan-a-visit/capitol-complex.cfm">Room 523, Irvis Office Building in Harrisburg</a> | <a href="http://www.paredistricting.com/LiveStreams">Livestream</a>
+<a href="http://www.pacapitol.com/plan-a-visit/capitol-complex.cfm">Room 523, Irvis Office Building in Harrisburg</a> | <a href="https://web.archive.org/20211207115640/http://www.paredistricting.com/LiveStreams">Livestream</a>
 
 ## Submit comments
 
@@ -51,7 +52,7 @@ The House State Government Committee is directing people who want to comment on 
 
 ## Track changes
 
-The House State Government Committee has a <a href="http://www.paredistricting.com/">website dedicated to the redistricting process</a>.
+The House State Government Committee has a <a href="https://web.archive.org/20211204111311/http://www.paredistricting.com/">website dedicated to the redistricting process</a>.
 
 You can also find information about votes on the map, changes to the districts, and more by <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=H&type=B&bn=2146">following the legislation page</a>.
 
