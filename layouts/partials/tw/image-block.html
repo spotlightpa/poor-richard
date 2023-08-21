@@ -10,7 +10,7 @@
 {{ $shadow := cond (.shadow|not|not) "shadow" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
-{{ $pictureClass := .pictureClass | default "flex"}}
+{{ $pictureClass := .pictureClass | default "flex" }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
