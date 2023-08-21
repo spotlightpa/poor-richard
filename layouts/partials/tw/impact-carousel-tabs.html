@@ -102,7 +102,7 @@
           style="scroll-snap-type: x mandatory;"
         >
           <!-- Tab -->
-          {{ range .impactStories }}
+          {{ range sort .impactStories "date" "desc" }}
             {{ if .page }}
               <li
                 data-ga-category="selected-impact"
