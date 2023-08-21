@@ -13,6 +13,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-08T14:33:20.929-05:00
 slug = "pennsylvania-redistricting-congressional-map-gop-proposal"
+suppress-date = false
 title = "Proposed redrawing of Pennsylvania’s congressional map draws mixed reviews"
 topics = ["Redistricting"]
 +++
@@ -71,7 +72,7 @@ That map was thrown out several years later by the state Supreme Court, which fo
 
 This time around, GOP lawmakers must seek a consensus with Wolf, a Democrat, if they want to avoid the high court.
 
-See the map below or <a href="http://www.paredistricting.com/pcplan" target="_blank">here</a>.
+See the map below or <a href="https://web.archive.org/20211208184528/http://www.paredistricting.com/pcplan">here</a>.
 
 {{<picture src="external/59y431r338cchwb1bxytrvrm34.jpeg" description="The Pennsylvania House State Government Committee&#39;s preliminary congressional map, released Dec. 8." caption="The Pennsylvania House State Government Committee&#39;s preliminary congressional map, released Dec. 8." credit="Pennsylvania House State Government Committee">}} 
 

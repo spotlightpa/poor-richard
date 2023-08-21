@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2021-12-15T15:12:00-05:00
 slug = "pa-congressional-maps-proposed-redistricting"
+suppress-date = false
 title = "House GOP advances amended Pennsylvania congressional map before public can analyze it"
 topics = ["Redistricting"]
 +++
@@ -30,7 +31,7 @@ Republicans also countered that this was hardly the final step in the process.
 
 But without the underlying files and data prior to the vote, it’s not yet clear if or how the changes alter what would likely be the primary sticking point of their proposal: That it clearly favors their own party. A map must be approved in the full House and Senate and then go to Democratic Gov. Tom Wolf.
 
-Grove said that data would be available after the vote. It can now be <a href="http://www.paredistricting.com/pcplan">viewed here</a>.
+Grove said that data would be available after the vote. It can now be <a href="https://web.archive.org/20211208184528/http://www.paredistricting.com/pcplan">viewed here</a>.
 
 Rep. Ryan Mackenzie, (R., Berks), said moving the map so quickly out of committee opened the possibility that it could be fast-tracked in the full House without further amendments.
 

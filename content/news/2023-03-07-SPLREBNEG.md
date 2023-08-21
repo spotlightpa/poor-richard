@@ -23,6 +23,8 @@ topics = ["The Capitol", "Economy"]
 
 <i>This story was updated on March 7 to include remarks from Gov. Josh Shapiro’s budget address.</i>
 
+<i><strong>Update, Aug. 4, 2023:</strong> Gov. Josh Shapiro signed </i> <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-property-tax-rebate-fix/"> <i> a major expansion of Pennsylvania's property tax and rent rebate program into law.</i></a>
+
 HARRISBURG — An upcoming federal cost-of-living adjustment to Social Security benefits could shake up a state program that helps older and disabled Pennsylvanians pay their rent and property taxes.
 
 Lawmakers have just a few months to pass legislation that would expand the shrinking rebate program.

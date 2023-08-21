@@ -1,18 +1,14 @@
 import { reportView } from "../utils/google-analytics.js";
-import {
-  modalKind,
-  recordModalNewsletterView,
-  recordNewsletterSignup,
-} from "../utils/metrics.js";
+import { modalKind, recordModalTakeoverView } from "../utils/metrics.js";
 
-export default function modal() {
+export default function takeover() {
   return {
     isOpen: false,
 
     init() {
       this.$watch("isOpen", (val) => {
         if (val) {
-          recordModalNewsletterView();
+          recordModalTakeoverView();
           reportView(this.$el);
         } else {
           this.$report({ target: this.$refs.closer });
@@ -25,13 +21,8 @@ export default function modal() {
     },
 
     show() {
-      if (modalKind !== "newsletter") return;
+      if (modalKind !== "takeover") return;
       this.isOpen = true;
-    },
-
-    seenIt() {
-      recordNewsletterSignup();
-      this.isOpen = false;
     },
   };
 }

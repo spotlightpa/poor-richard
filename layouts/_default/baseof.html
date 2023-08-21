@@ -41,6 +41,11 @@
     data-page-cat="{{ $pageCat }}"
     {{ block `body-attributes` . }}{{ end }}
   >
+    {{ if .Param "modal-exclude" | not }}
+      {{ if .Param "takeover-active" }}
+        {{ partial "tw/modal-takeover.html" . }}
+      {{ end }}
+    {{ end }}
     {{ block "header" . }}
       <header data-ga-category="header">
         {{ block "banner" . }}

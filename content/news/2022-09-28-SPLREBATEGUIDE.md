@@ -23,6 +23,8 @@ topics = ["Economy"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
+<i><strong>Update, Aug. 4, 2023:</strong> Gov. Josh Shapiro signed </i> <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-property-tax-rebate-fix/"> <i> a major expansion of Pennsylvania's property tax and rent rebate program into law.</i></a>
+
 HARRISBURG — Pennsylvania’s rent and property tax rebate program — which helps older and disabled residents offset the rising cost of housing — got a major, one-time boost this year as part of the state budget.
 
 But as Spotlight PA reported in a new investigation, <a href="https://www.spotlightpa.org/news/2022/09/pennsylvania-property-tax-rebate-decline/">fewer and fewer people receive rent and property tax rebates each year</a>, largely because state lawmakers haven’t increased the income limits to qualify in more than 15 years.

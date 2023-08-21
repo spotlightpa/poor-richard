@@ -40,7 +40,7 @@ Likewise, SNAP has allowed Hill some peace of mind when it comes to food.
 
 “I have a hard time being able to consistently make myself food,” said Hill, who also advocates for health care access with the volunteer group Put People First! Pennsylvania. “A huge part of my life is making sure that I have a lot of things that I can just grab and go. And food stamps have been indispensable for that.”
 
-The changes to SNAP and Medicaid that have been in place since 2020 have had a big impact. Supplemental SNAP payments have given Pennsylvania households that use the program at least an extra $95 per month, often more. And in 2022, the uninsured rate in the U.S. <a href="https://www.hhs.gov/about/news/2022/08/02/new-hhs-report-shows-national-uninsured-rate-reached-all-time-low-in-2022.html">hit an all-time low</a> of 8%.
+The changes to SNAP and Medicaid that have been in place since 2020 have had a big impact. Supplemental SNAP payments have given Pennsylvania households that use the program at least an extra $95 per month, often more. And in 2022, the uninsured rate in the U.S. <a href="https://web.archive.org/20230201130833/https://www.hhs.gov/about/news/2022/08/02/new-hhs-report-shows-national-uninsured-rate-reached-all-time-low-in-2022.html">hit an all-time low</a> of 8%.
 
 Now, the federal government is ending both measures.
 
