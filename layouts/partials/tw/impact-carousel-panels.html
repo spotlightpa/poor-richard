@@ -28,11 +28,11 @@
 
   <div role="tabpanels" class="relative bg-black">
     <!-- Panel -->
-    {{ range .impactStories }}
+    {{ range sort .impactStories "date" "desc" }}
       {{ if .page }}
         {{ $link := .page.Permalink }}
         <section
-          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter="transition ease-out duration-500"
           x-transition:enter-start="opacity-0"
           x-transition:enter-end="opacity-100"
           x-transition:leave="transition ease-in"
@@ -81,9 +81,12 @@
             "filename" $name
             "description" $description
             "widthRatio" 5
-            "heightRatio" 4
+            "heightRatio" 3
+            "wrapperClass" "flex w-full h-full"
+            "pictureClass" "flex w-full items-center justify-stretch"
+            "imgClass" "self-center object-cover flex-1"
             "widths" (slice 576 488 1280 1920)
-            "figClass" "col-start-1 col-span-8 row-start-1 row-span-3 overflow-hidden md:col-span-14 bg-red object-cover"
+            "figClass" "flex col-start-1 col-span-8 row-start-1 row-span-3 overflow-hidden md:col-span-14 bg-red object-cover"
             "sizeHint" "400px"
             "gravity" (.page.Param "image-gravity")
           }}
