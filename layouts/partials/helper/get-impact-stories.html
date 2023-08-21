@@ -2,6 +2,7 @@
 {{ $src := index (index site.Data .) "impactbase" }}
 {{ range $src }}
   {{ $item := dict
+    "date" .date
     "body" .body
     "dek" .dek
     "eyebrow" .kicker
