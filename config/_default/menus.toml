@@ -158,24 +158,30 @@ url = "/about/staff/"
 weight = 3
 
 [[about]]
+name = "Board of Directors"
+url = "/about/board/"
+weight = 4
+
+
+[[about]]
 name = "Spotlight PA Partners"
 url = "/about/partners"
-weight = 4
+weight = 5
 
 [[about]]
 name = "Careers"
 url = "/jobs/"
-weight = 5
+weight = 6
 
 [[about]]
 name = "Contact"
 url = "/contact/"
-weight = 6
+weight = 7
 
 [[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 7
+weight = 8
 
 [[news]]
 name = "Investigations"
