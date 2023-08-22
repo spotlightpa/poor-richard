@@ -226,18 +226,15 @@
             {{ template "social-link" . }}
           {{ end }}
         {{ end }}
+        {{ if .HasChildren | not }}
+          {{ template "social-link" . }}
+        {{ end }}
       {{ end }}
+
     </ul>
     {{ define "social-link" }}
       <li class="inline-flex">
-        <a
-          href="{{ .URL }}"
-          class="inline-flex items-center hover:text-blue"
-          {{ with .Params.dispatch }}
-            x-data @click.prevent="$dispatch($el.dataset.dispatch)"
-            data-dispatch="{{ . }}"
-          {{ end }}
-        >
+        <a href="{{ .URL }}" class="inline-flex items-center hover:text-blue">
           {{ $linkID := partial "helper/new-id.html" . }}
           {{ with .Params.icon }}
             <svg

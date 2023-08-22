@@ -10,15 +10,13 @@
     </h3>
     <ul class="items-start justify-start gap-6 sm:flex md:justify-between">
       {{ range site.Menus.social }}
-        <li
-          class="mt-10 block odd:w-1/4 odd:flex-initial even:w-1/2 even:flex-1"
-        >
-          <span
-            class="block font-sans text-base font-bold uppercase leading-none tracking-wider"
-          >
-            {{ .Name }}
-          </span>
-          {{ if .HasChildren }}
+        {{ if .HasChildren }}
+          <li class="mt-10 block w-1/2 flex-initial">
+            <span
+              class="block font-sans text-base font-bold uppercase leading-none tracking-wider"
+            >
+              {{ .Name }}
+            </span>
             <ul class="flex flex-wrap">
               {{ range .Children }}
 
@@ -26,10 +24,6 @@
                   <a
                     href="{{ .URL }}"
                     class="inline-flex items-center hover:text-blue"
-                    {{ with .Params.dispatch }}
-                      x-data @click.prevent="$dispatch($el.dataset.dispatch)"
-                      data-dispatch="{{ . }}"
-                    {{ end }}
                   >
                     {{ $linkID := partial "helper/new-id.html" . }}
                     {{ with .Params.icon }}
@@ -47,8 +41,8 @@
                 </li>
               {{ end }}
             </ul>
-          {{ end }}
-        </li>
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </nav>

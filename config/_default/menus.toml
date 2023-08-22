@@ -258,11 +258,6 @@ url = "#"
 weight = 20
 
 [[social]]
-name = "Tools"
-url = "#"
-weight = 30
-
-[[social]]
 name = "Facebook"
 url = "https://www.facebook.com/SpotlightPennsylvania"
 weight = 1
@@ -320,7 +315,6 @@ icon = "flip"
 name = "Github"
 url = "https://www.github.com/spotlightpa/"
 weight = 9
-Parent = "Tools"
 
 [social.params]
 icon = "gh"
