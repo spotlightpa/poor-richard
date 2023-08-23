@@ -43,7 +43,7 @@ While it’s entirely up to each of Pennsylvania’s more than 2,500 municipalit
 
 “What elected officials and communities want out of the municipal managers is not always just efficiency and competence,” he said. “In some cases, they hire folks simply because they trust them rather than for their expertise. … There is a little bit of loss of local control, and there&#39;s some loss of the community connectedness.”
 
-Dogherty added that firms can garner trust by actively engaging with communities, while Freeman said the proposed change has a safeguard of accountability built in it.
+Dougherty added that firms can garner trust by actively engaging with communities, while Freeman said the proposed change has a safeguard of accountability built in it.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
