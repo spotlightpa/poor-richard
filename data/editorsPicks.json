@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-08-23-SPLCODEEXP.md"
+    "content/statecollege/2023-08-24-SPLPSUFOOTBALL.md"
   ],
-  "subfeatures": [
-    "content/news/2023-08-03-SPLBUD23SHAP.md",
-    "content/news/2023-07-17-SPLIMPHIST.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/statecollege/2023-08-21-SPLMANAGERS.md",
-    "content/news/2023-08-18-SPLMALFUNCTION.md",
-    "content/news/2023-08-18-SPLACTCAB.md"
+    "content/news/2023-08-24-SPLNEWSQUIZAUG21.md",
+    "content/news/2023-08-23-SPLCODEEXP.md",
+    "content/statecollege/2023-08-21-SPLMANAGERS.md"
   ],
   "topper": []
 }
