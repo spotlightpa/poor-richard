@@ -15,7 +15,7 @@ published = 2023-08-25T16:17:36.607-04:00
 series = ["A Criminal Solution"]
 slug = "pennsylvania-mental-health-jails-point-park-event"
 suppress-date = false
-title = "Join us! A live panel on incarceration and mental health in Pa."
+title = "You're invited! A live panel on incarceration and mental health in Pa."
 title-tag = "A live panel on incarceration and mental health in Pa."
 topics = ["Events"]
 +++
