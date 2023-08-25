@@ -6,8 +6,8 @@ event-date = 2023-09-14T18:00:00-04:00
 event-title = "A Criminal Solution"
 event-url = "https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"
 image = "external/39rq978hghymsw37kcxqppqqhr.jpeg"
-image-credit = "The Allegheny County Jail, where people deemed incompetent to stand trial wait for a spot in a state hospital."
-image-description = "Nate Smallwood / For Spotlight PA and PINJ"
+image-credit = "Nate Smallwood / For Spotlight PA and PINJ"
+image-description = "The Allegheny County Jail, where people deemed incompetent to stand trial wait for a spot in a state hospital."
 internal-id = "SPLPOIPARKEV"
 kicker = "Events"
 modal-exclude = false
