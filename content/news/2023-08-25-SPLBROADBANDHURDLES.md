@@ -25,10 +25,7 @@ HARRISBURG — In the coming years, Pennsylvania will receive more than $1 billi
 
 It’s a historic opportunity and a serious challenge, according to a new plan from the state Broadband Development Authority that <a href="https://dced.pa.gov/download/bead-five-year-action-plan/?wpdmdl=120962&amp;refresh=64e3750c46f561692628236&amp;ind=1691779432964&amp;filename=BEAD-5-YearStrategyReport_2023-1.pdf">outlines</a> how it will accomplish that goal over the next five years.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src=""></div>
-
-
-https://www.spotlightpa.org/embeds/newsletter/
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 The money comes from the wide-ranging bipartisan infrastructure bill signed into law by President Joe Biden in 2021. Pennsylvania will also receive an estimated $900 million for broadband from other federal programs and private investment required as a condition of grant funding.
 
