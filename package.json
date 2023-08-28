@@ -6,7 +6,7 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "test": "yarn run test:eslint && yarn run test:prettier",
+    "test": "yarn run test:eslint; yarn run test:prettier; yarn run test:html",
     "format": "yarn run format:eslint; yarn run format:prettier; yarn run format:html",
     "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
     "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
