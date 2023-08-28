@@ -16,23 +16,6 @@ module.exports = {
       files: ["*.html"],
       options: {
         parser: "go-template",
-      },
-    },
-    {
-      files: [
-        "**/_default/staff-page.html",
-        "**/embed/*.html",
-        "**/featured/*.html",
-        "**/news/featured.html",
-        "**/news/single.html",
-        "**/sc/*.html",
-        "**/statecollege/*.html",
-        "**/tw/*.html",
-        "**/blocks/*.html",
-        "**/shortcodes/*.html",
-        "**/shortcodes/newsletters/*.html",
-      ],
-      options: {
         plugins: [pluginGoTemplate, pluginTailwind],
       },
     },

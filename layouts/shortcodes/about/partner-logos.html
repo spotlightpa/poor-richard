@@ -1,9 +1,9 @@
 <div
-  class="flex md:flex-row flex-col flex-wrap items-center justify-center"
+  class="flex flex-col flex-wrap items-center justify-center md:flex-row"
   data-ga-category="inline"
 >
   {{ range .Site.Data.partners.partners }}
-    <div class=" p-3 max-w-sm m-auto text-center" data-ga-category="logos">
+    <div class=" m-auto max-w-sm p-3 text-center" data-ga-category="logos">
       <a href="{{ .url }}" title="{{ .name }}">
         <span class="logo-column">
           <img
