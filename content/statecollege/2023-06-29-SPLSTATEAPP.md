@@ -1,4 +1,5 @@
 +++
+authors = ["Wyatt Massey"]
 blurb = "The way the law is written, along with how Penn State, Temple, Pitt, and Lincoln report using taxpayer funds, makes transparency a challenge."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "Transparency into how Pennsylvania’s state-related universities spend annual appropriations is limited."
