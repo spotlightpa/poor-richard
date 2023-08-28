@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-08-25-SPLBROADBANDHURDLES.md"
+    "content/news/2023-08-28-SPLPOLICEDENIED.md"
   ],
   "subfeatures": [
-    "content/news/2022-06-02-SPLBROADBAND02.md",
-    "content/news/2022-09-08-SPLMAPS08.md",
-    "content/news/2023-07-14-SPLBBNEXT.md"
+    "content/news/2022-06-21-SPLDATABASE21.md",
+    "content/statecollege/2022-12-19-SPLTIOGA.md",
+    "content/news/2022-06-27-SPLLEAS27.md"
   ],
   "topSlots": [
-    "content/news/2023-08-25-SPLPOIPARKEV.md",
+    "content/news/2023-08-25-SPLBROADBANDHURDLES.md",
     "content/statecollege/2023-08-24-SPLPSUFOOTBALL.md",
-    "content/news/2023-08-24-SPLNEWSQUIZAUG21.md"
+    "content/news/2023-08-25-SPLPOIPARKEV.md"
   ],
   "topper": []
 }
