@@ -46,14 +46,14 @@
 
     {{ .Page.RenderString (.Param "testimonials-group") }}
 
-
+    {{ with .Page.RenderString (.Param "supplemental") }}
     <article
       class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
-      {{ .Page.RenderString (.Param "supplemental") }}
+      {{ . }}
       {{ .Page.RenderString (.Param "credit") }}
     </article>
-
+    {{ end }}
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
@@ -70,9 +70,16 @@
         }}
       </div>
     {{ end }}
+      {{ with .Page.RenderString (.Param "supporters") }}
     <div class="py-9">
-      {{ .Page.RenderString (.Param "supporters") }}
+      {{ . }}
     </div>
+    {{ end }}
+    {{ with .Page.RenderString (.Param "form") }}
+      <div class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
+    {{ . }}
+  </div>
+{{ end }}
   </section>
 {{ end }}
 

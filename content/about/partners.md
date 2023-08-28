@@ -3,9 +3,14 @@ published = 2020-07-17T14:28:05.611Z
 title = "Unprecedented collaboration"
 description = "Spotlight PA combines the strength of Philadelphia Inquirer, PennLive, and many more partners."
 linktitle = "Partners"
+layout = "page-landing"
+
+form ="""
+{{<featured/promo-contact-form
+  hed="Become a partner"
+  show-anon=false
+  dek="Gain access to Spotlight PA's award-winning journalism free of charge and enhance your news report with in-depth reporting about the state Capitol and urgent statewide issues."
+>}}
+"""
 +++
-Spotlight PA combines the strengths of [The Philadelphia Inquirer](https://www.inquirer.com) in partnership with [PennLive/The Patriot-News](https://www.pennlive.com), [TribLIVE/Pittsburgh Tribune Review](https://www.triblive.com) and [WITF Public Media](https://www.witf.org) in a historic commitment to investigative reporting on state government and beyond. Additional distribution partners allow us to share resources and maximize audience and reporting power. We provide our content **free of charge** to newsrooms across the state to help bolster local media and better inform the public.
-
-{{<about/partner-logos>}}
-
-{{<about/right-link href="/contact/">}}Become a partner with Spotlight PA{{</about/right-link>}}
+The support of readers like you allows Spotlight PA to share its unique investigative and public-service journalism free of charge with more than 90 community news partners in all corners of Pennsylvania. They include newspapers, digital outlets, radio, television, and more, collectively reaching millions of people across the state.
