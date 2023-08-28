@@ -1,6 +1,7 @@
 {{ define "html-class" -}}
   scroll-smooth
 {{- end }}
+{{ $elecStories := partial "helper/get-items" "elections" }}
 
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 

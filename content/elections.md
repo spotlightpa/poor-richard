@@ -63,6 +63,13 @@ credits = """
 >}}
 """
 
+form ="""
+{{<featured/promo-contact-form
+  hed="Ask Us Your Questions"
+  dek="Spotlight PA is covering Pennsylvania's 2023 judicial and municipal elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form below to reach our election team."
+  submit="Send Inquiry"
+>}}
+"""
 [[links]]
 title = "Register to vote"
 link = "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
