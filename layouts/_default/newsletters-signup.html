@@ -25,10 +25,12 @@
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
-    action="{{ .Param "newsletters-action" }}"
+    action="{{ .Param `newsletters-action` }}"
     method="post"
     target="_blank"
     data-ga-category="all-newsletters"
+    x-data
+    x-form="all-newsletters"
   >
     {{ partial "newsletter/hidden-input.html" . }}
     <p class="is-hidden" hidden>
