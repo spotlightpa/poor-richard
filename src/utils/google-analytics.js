@@ -67,9 +67,26 @@ function buildActionParams(el) {
   ];
 }
 
+function toggleGA4Classes(el, action, params) {
+  if (!el) return;
+  // Remove existing classes
+  let remove = Array.from(el.classList).filter((name) =>
+    name.startsWith("ga:")
+  );
+  for (let name of remove) {
+    el.classList.remove(name);
+  }
+  // Hack: Add dummy classes with ga:whatever so GA4 can search for them
+  el.classList.add(`ga:action:${action}`);
+  for (let [param, value] of Object.entries(params)) {
+    el.classList.add(`ga:${param}:${value}`);
+  }
+}
+
 function buildAndReport(el, action = "", overrides = {}) {
   let [elAction, params] = buildActionParams(el);
   callAnalytics(action || elAction, { ...params, ...overrides });
+  toggleGA4Classes(el, action || elAction, { ...params, ...overrides });
 }
 
 function normalizeLink(target) {
