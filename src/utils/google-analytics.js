@@ -106,6 +106,17 @@ export function reportView(el) {
   buildAndReport(el, "view");
 }
 
+function buildGAClasses(el) {
+  let pageCategory = allClosest(el, "[data-page-cat]")
+    .map((el) => el.dataset.pageCat)
+    .join(":");
+  el.classList.add(`ga:source-page-category:${pageCategory}`);
+  let component = allClosest(el, "[data-ga-category]")
+    .map((el) => el.dataset.gaCategory)
+    .join(":");
+  el.classList.add(`ga:component:${component}`);
+}
+
 export function addGAListeners() {
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
   const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
@@ -190,6 +201,11 @@ export function addGAListeners() {
     },
     { passive: true }
   );
+
+  let links = document.querySelectorAll("a");
+  for (let el of links) {
+    buildGAClasses(el);
+  }
 }
 
 export function analyticsPlugin(Alpine) {
@@ -201,6 +217,7 @@ export function analyticsPlugin(Alpine) {
   });
 
   Alpine.directive("form", (el, { expression }) => {
+    buildGAClasses(el);
     el.addEventListener("submit", (ev) => {
       let valid = el.reportValidity();
       if (valid) recordNewsletterSignup();
