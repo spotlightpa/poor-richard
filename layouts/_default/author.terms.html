@@ -11,7 +11,7 @@
           {{ $author := partial "helper/get-author" .Title }}
           <li
             id="{{ $author.slug }}"
-            class="flex items-center justify-start space-x-4 mb-4"
+            class="mb-4 flex items-center justify-start space-x-4"
           >
             {{ if $author.headshot }}
               {{ $sizes := (slice
@@ -50,7 +50,7 @@
                 }}
               </div>
             {{ else }}
-              <span class="col-span-1 flex aspect-square max-h-full w-16 h-16">
+              <span class="col-span-1 flex aspect-square h-16 max-h-full w-16">
               </span>
             {{ end }}
 

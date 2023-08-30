@@ -1,11 +1,11 @@
 {{- $url := "" -}}
 {{- with .Get "href" }}{{ $url = . }}{{ end -}}
 <p
-  class=" font-black text-right tracking-wide"
+  class=" text-right font-black tracking-wide"
   data-ga-category="inline:right-link"
 >
   <a
-    class="text-blue hover:text-blue-4 no-underline hover:underline"
+    class="text-blue no-underline hover:text-blue-4 hover:underline"
     href="{{ $url }}"
     >{{ .Inner }}</a
   >
