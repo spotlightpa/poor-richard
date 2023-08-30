@@ -1,8 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
-{{ partial "js/view-trigger.html" "" }}
-
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   <div class="bg-black p-4 sm:py-8 md:py-12">
@@ -22,7 +20,7 @@
         data-sf-campaign="701Dn000000YgogIAC"
         data-ga-category="donate"
         class="
-           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue 
+           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
            sm:flex sm:w-32 sm:justify-center md:w-52 md:px-7 md:py-4
           "
         href="/donate"
