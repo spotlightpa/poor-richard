@@ -58,13 +58,7 @@
   <div class="no-js:hidden relative mx-auto w-96 max-w-full">
     <select
       x-data
-      @change="
-        window.location.assign($event.target.value);
-        $report({
-          target: $el,
-          currentTarget: window.location,
-        });
-      "
+      @change="window.location.assign($event.target.value);"
       class="spl-select text-2xl"
     >
       <option disabled selected>Jump to…</option>
@@ -162,7 +156,6 @@
           <p class="mt-auto">
             <button
               @click.prevent="
-                $report($event);
                 import(url).then((m) => m.atcb_action(data($el), $el))
               "
               class="border-b-4 border-transparent font-sans text-lg font-semibold uppercase text-s-6 hover:border-election-green-darker"
