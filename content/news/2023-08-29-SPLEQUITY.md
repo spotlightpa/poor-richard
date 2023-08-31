@@ -8,7 +8,7 @@ event-title = "The Path to Equity: Empowering Pennsylvanians through Democracy I
 event-url = "https://www.eventbrite.com/e/pa-democracy-the-path-to-equity-tickets-668975653187?aff=oddtdtcreator"
 image = "2023/08/01jf-19jp-rgxe-xkcw.webp"
 image-credit = "Spotlight PA Staff"
-image-description = "Path to Equity 2"
+image-description = "Promotional details for Path to Equity event"
 image-gravity = "ce"
 image-size = "inline"
 internal-id = "SPLEQUITY"
