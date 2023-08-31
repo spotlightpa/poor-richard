@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-08-30-SPLCODEPROGRESS.md"
+    "content/news/2023-08-31-SPLVBPRIMARY.md"
   ],
-  "subfeatures": [
-    "content/news/2023-08-23-SPLCODEEXP.md",
-    "content/news/2023-08-03-SPLBUD23SHAP.md",
-    "content/news/2023-07-07-SPLCODES.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-08-30-SPLCODEPROGRESS.md",
     "content/news/2023-08-29-SPLFIRSTYEAR.md",
-    "content/news/2023-08-28-SPLPOLICEDENIED.md",
-    "content/news/2023-08-25-SPLBROADBANDHURDLES.md"
+    "content/news/2023-08-28-SPLPOLICEDENIED.md"
   ],
   "topper": []
 }
