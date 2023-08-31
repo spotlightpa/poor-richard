@@ -29,10 +29,6 @@ function sendPlausible(action, params = {}) {
 }
 
 function buildGAClasses(el) {
-  let pageCategory = allClosest(el, "[data-page-cat]")
-    .map((el) => el.dataset.pageCat)
-    .join(":");
-  el.classList.add(`ga:source-page-category:${pageCategory}`);
   let component = allClosest(el, "[data-ga-category]")
     .map((el) => el.dataset.gaCategory)
     .join(":");

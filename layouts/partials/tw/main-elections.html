@@ -162,7 +162,8 @@
               type="button"
               data-name="{{ .name }}"
               data-date="{{ .date }}"
-              data-ga-action="add-to-calendar"
+              data-ga-category="add-to-calendar"
+              x-report-click
             >
               <svg class="mb-2 inline-block h-5 w-5 fill-current">
                 {{ partial "helper/svg.html" "calendar" }}
