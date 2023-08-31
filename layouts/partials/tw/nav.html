@@ -73,7 +73,6 @@
       href="/search/"
       class="z-20 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
       data-ga-category="search"
-      :data-ga-action="'modal:search:open'"
       :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
       x-data
       @click.prevent="$dispatch('modal:search:open')"
@@ -180,7 +179,6 @@
       aria-controls="hamburger-menu"
       aria-haspopup="true"
       data-ga-category="burger"
-      data-ga-action="menu:isOpen"
       x-report-click
     >
       {{ block "nav-hamburger-button" . }}

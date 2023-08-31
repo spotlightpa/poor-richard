@@ -28,89 +28,7 @@ function sendPlausible(action, params = {}) {
   );
 }
 
-window.dataLayer = window.dataLayer || [];
-
-// eslint-disable-next-line no-unused-vars
-function callGA4(action, params = {}) {
-  if (dnt) {
-    // eslint-disable-next-line no-console
-    console.log("GA4", action, params);
-    return;
-  }
-  window.dataLayer.push({
-    event: action,
-    ...params,
-  });
-}
-
-function callAnalytics(action, params = {}) {
-  sendPlausible(action, params);
-}
-
-function buildActionParams(el) {
-  let component = allClosest(el, "[data-ga-category]")
-    .map((el) => el.dataset.gaCategory)
-    .join(":");
-  let eventAction = allClosest(el, "[data-ga-action]")
-    .map((el) => el.dataset.gaAction)
-    .join(":");
-  let pageCategory = allClosest(el, "[data-page-cat]")
-    .map((el) => el.dataset.pageCat)
-    .join(":");
-
-  return [
-    eventAction,
-    {
-      component,
-      pageCategory,
-    },
-  ];
-}
-
-function buildAndReport(el, action = "", overrides = {}) {
-  let [elAction, params] = buildActionParams(el);
-  callAnalytics(action || elAction, { ...params, ...overrides });
-}
-
-function normalizeLink(target) {
-  if (!target) return "";
-
-  target = target.replace(
-    /^(https?:\/\/(www\.)?spotlightpa\.org)/,
-    "https://www.spotlightpa.org"
-  );
-  if (target.match(/checkout\.fundjournalism\.org\/memberform/)) {
-    target = "https://www.spotlightpa.org/donate/";
-  }
-  if (target.match(/^https:\/\/www\.spotlightpa\.org.*[^/]$/)) {
-    target = target + "/";
-  }
-  return target;
-}
-
-export function reportClick(ev) {
-  let target = ev.target.href;
-  if (!target || !target.replace) {
-    target = ev.currentTarget?.href;
-  }
-  target = normalizeLink(target);
-  let elAction = ev.target.closest("[data-ga-action]");
-  if (elAction) {
-    target = elAction.dataset.gaAction || target;
-  }
-
-  buildAndReport(ev.target, "click", { target });
-}
-
-export function reportView(el) {
-  buildAndReport(el, "view");
-}
-
 function buildGAClasses(el) {
-  let pageCategory = allClosest(el, "[data-page-cat]")
-    .map((el) => el.dataset.pageCat)
-    .join(":");
-  el.classList.add(`ga:source-page-category:${pageCategory}`);
   let component = allClosest(el, "[data-ga-category]")
     .map((el) => el.dataset.gaCategory)
     .join(":");
@@ -173,8 +91,6 @@ export function addGAListeners() {
         el.rel = "noopener noreferrer";
       }
 
-      reportClick(ev);
-
       if (isInternal && el.pathname.match(/^\/donate\/?$/)) {
         let source = "www.spotlightpa.org";
         if (window.frameElement && "URLSearchParams" in window) {
@@ -204,37 +120,22 @@ export function addGAListeners() {
 
   let links = document.querySelectorAll("a");
   for (let el of links) {
-    buildGAClasses(el);
+    window.setTimeout(() => {
+      buildGAClasses(el);
+    }, 0);
   }
 }
 
 export function analyticsPlugin(Alpine) {
-  Alpine.magic("report", () => (ev) => reportClick(ev));
-  Alpine.magic("view", () => (el) => reportView(el));
-
   Alpine.directive("report-click", (el) => {
-    el.addEventListener("click", (ev) => reportClick(ev));
+    buildGAClasses(el);
   });
 
-  Alpine.directive("form", (el, { expression }) => {
+  Alpine.directive("form", (el) => {
     buildGAClasses(el);
-    el.addEventListener("submit", (ev) => {
+    el.addEventListener("submit", () => {
       let valid = el.reportValidity();
       if (valid) recordNewsletterSignup();
-      let validity = valid ? "submit" : "invalid";
-      buildAndReport(ev.target, "form", { form: expression, action: validity });
     });
-    el.addEventListener(
-      "focusin",
-      (ev) => {
-        buildAndReport(ev.target, "form", {
-          form: expression,
-          action: "focus",
-        });
-      },
-      {
-        once: true,
-      }
-    );
   });
 }

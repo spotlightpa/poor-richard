@@ -77,7 +77,8 @@
               {{ $id := partial "helper/new-id" . }}
               <label
                 class="flex"
-                data-ga-action="toggle-newsletter:{{ $slug }}"
+                data-ga-category="toggle-newsletter:{{ $slug }}"
+                x-report-click
                 for="{{ $id }}"
               >
                 <article
@@ -116,7 +117,7 @@
                       name="{{ $slug }}"
                       value="1"
                       x-report-click
-                      data-ga-action="toggle-newsletter:{{ $slug }}"
+                      data-ga-category="toggle-newsletter:{{ $slug }}"
                     />
                     <svg
                       class="-ml-8 mr-3 h-5 w-5 rounded border border-s-4 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
