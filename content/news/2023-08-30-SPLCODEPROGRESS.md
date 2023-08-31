@@ -37,11 +37,11 @@ It also formalizes approval of a suite of other programs that had already been m
 
 Senate Minority Leader Jay Costa (D., Allegheny) said that after speaking to his caucus he decided to vote against the bill because it does not fund programs that Democrats consider priorities, like the popular <a href="https://www.spotlightpa.org/newsletters/investigator/demand-set-to-swamp-pennsylvania-home-repair-program/">Whole-Home Repairs Program</a> and a stipend for student teachers. Earlier that day, state Senate Democrats tried to amend the bill to add funding for those programs but the amendments were tabled.
 
-“More work needs to be done on the other side of the aisle,” Costa said on the state Senate floor. The bill passed 29-18, with state Sen. Lisa Boscola (D., Lehigh) crossing party lines to vote with Republicans.
+“More work needs to be done on the other side of the aisle,” Costa said on the state Senate floor. <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1300">The bill</a> passed 29-18, with state Sens. Lisa Boscola (D., Lehigh) and Anthony Williams (D., Philadelphia) crossing party lines to vote with Republicans.
 
-The more controversial bill passed by the Pennsylvania Senate on Wednesday included Republicans’ more partisan priorities, such as a reintroduction of the school voucher program that <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-budget-legislature-josh-shapiro-kim-ward-education-voucher-funding/">Shapiro already axed from the main budget</a> — and which state House Democrats have summarily rejected.
+The <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=757">more controversial bill</a> passed by the Pennsylvania Senate on Wednesday included Republicans’ more partisan priorities, such as a reintroduction of the school voucher program that <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-budget-legislature-josh-shapiro-kim-ward-education-voucher-funding/">Shapiro already axed from the main budget</a> — and which state House Democrats have summarily rejected.
 
-It also includes additional funding for the Educational Improvement Tax Credit program, a tax break that businesses can receive in exchange for funding private school scholarships. It passed, 29-19 in a party-line vote.
+It also includes additional funding for the Educational Improvement Tax Credit program, a tax break that businesses can receive in exchange for funding private school scholarships. It passed 28-19, with Williams again crossing the aisle to vote with Republicans.
 
 Not included in either bill was code language for five programs Democrats have championed. Along with home repair and student-teacher stipends, these include funding for the commonwealth’s roughly 100 poorest school districts, allocation of new federal money for school mental health services, and Pennsylvania’s first-ever state funding for public defense.
 
@@ -66,6 +66,8 @@ In a statement released by her office following the upper chamber’s floor vote
 In the state Senate’s Wednesday session, lawmakers also advanced a bipartisan bill that would move up the date of Pennsylvania’s 2024 general election primary, which is currently scheduled for April 23, during Passover. That change is considered time-sensitive, and is broadly supported by Democrats and Republicans in both chambers — though they differ on precisely which date the primary should fall on.
 
 As of Wednesday, the House is still scheduled to come back to order in late September. But a spokesperson for Bradford said they “are not foreclosing on the possibility that we may return sooner if an agreement is reached.”
+
+<em>Correction: Two Democrats crossed party lines to vote for HB 1300, which passed 29-18: Sen. Lisa Boscola and Sen. Anthony Williams. One, Williams, also crossed party lines to vote for SB 757, which passed 28-19.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
