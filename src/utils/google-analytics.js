@@ -1,11 +1,5 @@
-import galite from "ga-lite/src/ga-lite.js";
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
 import { recordNewsletterSignup, funnelStatus } from "./metrics.js";
-
-// Ensure a Google Analytics window func
-if (!window.ga) {
-  window.ga = galite;
-}
 
 export const DO_NOT_TRACK_KEY = "do-not-track";
 
@@ -34,18 +28,6 @@ function sendPlausible(action, params = {}) {
   );
 }
 
-function callGA(...args) {
-  if (dnt) {
-    /* eslint-disable no-console */
-    console.group("Google Analytics Debug");
-    for (let arg of args) console.log("%o", arg);
-    console.groupEnd();
-    /* eslint-enable no-console */
-    return;
-  }
-  galite(...args);
-}
-
 window.dataLayer = window.dataLayer || [];
 
 // eslint-disable-next-line no-unused-vars
@@ -61,47 +43,8 @@ function callGA4(action, params = {}) {
   });
 }
 
-function buildGA(action, params = {}) {
-  if (action === "click") {
-    return [
-      "send",
-      "event",
-      {
-        eventCategory: params.component || "",
-        eventLabel: params.pageCategory || "",
-        eventAction: params.target || "",
-      },
-    ];
-  }
-  if (action === "form") {
-    return [
-      "send",
-      "event",
-      {
-        eventCategory: params.component || "",
-        eventLabel: params.pageCategory || "",
-        eventAction: params.form + ":" + params.action,
-      },
-    ];
-  }
-  if (action === "view") {
-    return [
-      "send",
-      "event",
-      {
-        eventCategory: params.component || "",
-        eventLabel: params.pageCategory || "",
-        eventAction: `view:${params.component}`,
-        nonInteraction: true,
-      },
-    ];
-  }
-  return ["send", "event", { eventAction: JSON.stringify(params) }];
-}
-
 function callAnalytics(action, params = {}) {
   sendPlausible(action, params);
-  callGA(...buildGA(action, params));
 }
 
 function buildActionParams(el) {
@@ -185,7 +128,7 @@ export function addGAListeners() {
     console.warn("could not report page view!");
     return;
   }
-  let { gaId, gaPageTitle, gaPagePath, gaPageUrl, byline } = el.dataset;
+  let { gaPageTitle, byline } = el.dataset;
 
   let pageCategory = allClosest(document.body, "[data-page-cat]")
     .map((el) => el.dataset.pageCat)
@@ -196,19 +139,6 @@ export function addGAListeners() {
     title: gaPageTitle,
     byline,
     funnelStatus,
-  });
-
-  callGA("create", gaId, "auto");
-  callGA("send", "pageview", gaPagePath, {
-    title: gaPageTitle,
-    location: gaPageUrl,
-  });
-
-  window.addEventListener("pagehide", () => {
-    callGA("send", "event", {
-      transport: "beacon",
-      nonInteraction: true,
-    });
   });
 
   window.addEventListener("error", (ev) => {

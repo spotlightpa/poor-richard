@@ -2193,11 +2193,6 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-ga-lite@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/ga-lite/-/ga-lite-2.1.6.tgz#829fcc6bf0637675fec1c52313ccdee49cc06642"
-  integrity sha512-zhRorLrhoXl2wIAq13rIdPEQN6uu1SpQG/sGgsRPMDKWXmj7ZpMzP/6k/OtCtGJiJlsZZl/sqoalybkZ9r7cYQ==
-
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"

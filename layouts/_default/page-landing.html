@@ -11,25 +11,25 @@
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-s-0 pt-8 md:pb-4 px-3 text-black">
+  <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
     <div class="mx-auto max-w-screen-lg">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
     <div class="mx-auto w-full max-w-screen-lg">
       <h1
-        class="mb-2 text-3xl sm:text-4xl font-sans font-bold leading-tight tracking-wide text-black lg:text-5xl"
+        class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
       >
         {{- .Title -}}
       </h1>
     </div>
   </header>
-  <section class="font-sans bg-s-0 pt-4">
+  <section class="bg-s-0 pt-4 font-sans">
     {{ if or (.Content) (.Page.Params.subhed) }}
       <div
-        class="mx-auto max-w-screen-lg text-lg font-medium pb-10 px-5 lg:px-0"
+        class="mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0"
       >
         {{ with .Page.Params.subhed }}
-          <h2 class="font-black text-5xl mb-5 uppercase">{{ . }}</h2>
+          <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
         {{ end }}
         {{ with .Content }}
           <div class=" article-content">
@@ -70,7 +70,7 @@
 
 {{ define "before-footer" }}
   {{ with .Page.RenderString (.Param "donate") }}
-    <div class=" font-sans bg-white">
+    <div class=" bg-white font-sans">
       {{ . }}
     </div>
   {{ else }}

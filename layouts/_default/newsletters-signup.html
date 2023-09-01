@@ -25,10 +25,12 @@
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
-    action="{{ .Param "newsletters-action" }}"
+    action="{{ .Param `newsletters-action` }}"
     method="post"
     target="_blank"
     data-ga-category="all-newsletters"
+    x-data
+    x-form="all-newsletters"
   >
     {{ partial "newsletter/hidden-input.html" . }}
     <p class="is-hidden" hidden>
@@ -40,7 +42,7 @@
     <section class="bg-white px-4 pt-12 pb-2 md:pb-6">
       <header class="mx-auto w-full max-w-screen-lg">
         <h1
-          class="text-center font-sans text-3xl sm:text-4xl md:text-6xl font-bold uppercase leading-none tracking-wide"
+          class="text-center font-sans text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl md:text-6xl"
         >
           {{ .Title }}
         </h1>
@@ -52,21 +54,21 @@
 
         {{ partial "tw/image-hero.html" . }}
       </header>
-      <div class="mx-auto max-w-screen-xl text-lg font-medium  py-14 lg:px-0">
+      <div class="mx-auto max-w-screen-xl py-14 text-lg  font-medium lg:px-0">
         {{ with .Content }}
-          <div class="article-content max-w-prose mx-auto">
+          <div class="article-content mx-auto max-w-prose">
             {{ . }}
           </div>
         {{ end }}
         <nav
-          class="flex items-stretch flex-wrap md:flex md:flex-wrap justify-center gap-10"
+          class="flex flex-wrap items-stretch justify-center gap-10 md:flex md:flex-wrap"
         >
           {{ range $page := $pages }}
             {{ if not (len $page.Pages) }}
               {{ continue }}
             {{ end }}
             <div
-              class=" md:flex-[0_0_calc(50%_-_40px)] flex hover:scale-105 hover:rounded transition-all cursor-pointer hover:bg-s-2 hover:border-s-4 p-5 hover:shadow"
+              class=" flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-s-4 hover:bg-s-2 hover:shadow md:flex-[0_0_calc(50%_-_40px)]"
               x-data="{ isChecked: true }"
               :class="{ 'rounded bg-s-1': isChecked }"
             >
@@ -79,7 +81,7 @@
                 for="{{ $id }}"
               >
                 <article
-                  class="sm:grid md:block lg:grid grid-cols-[2fr,_3fr] space-y-3 lg:space-y-0 gap-x-5 gap-y-2 sm:ml-9 md:ml-0 lg:ml-9 grid-row-[auto,_1fr,_auto]"
+                  class="grid-row-[auto,_1fr,_auto] grid-cols-[2fr,_3fr] gap-x-5 gap-y-2 space-y-3 sm:ml-9 sm:grid md:ml-0 md:block lg:ml-9 lg:grid lg:space-y-0"
                 >
                   {{ $name := .Page.Param "image" }}
                   {{ $credit := .Page.Param "image-credit" }}
@@ -98,7 +100,7 @@
                   }}
                   {{ partial "tw/image-block.html" $imgOpts }}
                   <h2
-                    class=" col-start-1 col-span-2 row-start-1 flex-wrap xl:flex-nowrap flex items-center lg:items-baseline text-lg lg:text-2xl"
+                    class=" col-span-2 col-start-1 row-start-1 flex flex-wrap items-center text-lg lg:items-baseline lg:text-2xl xl:flex-nowrap"
                   >
                     <span class=" order-2 font-bold ">
                       {{ .LinkTitle }}:&nbsp;
@@ -107,7 +109,7 @@
                       {{ $page.Params.occurence }}
                     </span>
                     <input
-                      class="peer mr-3 h-5 w-5 opacity-0 rounded border appearance-none sm:-ml-9 md:-ml-0 lg:-ml-9 border-s-4 "
+                      class="peer mr-3 h-5 w-5 appearance-none rounded border border-s-4 opacity-0 sm:-ml-9 md:-ml-0 lg:-ml-9 "
                       type="checkbox"
                       x-model="isChecked"
                       id="{{ $id }}"
@@ -117,14 +119,14 @@
                       data-ga-action="toggle-newsletter:{{ $slug }}"
                     />
                     <svg
-                      class="-ml-8 mr-3 h-5 w-5 p-0 rounded border border-s-4 bg-white fill-none peer-checked:fill-black peer-checked:bg-yellow"
+                      class="-ml-8 mr-3 h-5 w-5 rounded border border-s-4 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
                       viewBox="0 0 1 1"
                     >
                       {{ partial "helper/svg.html" "check" }}
                     </svg>
 
                     <div
-                      class="order-1 flex items-center flex-[0_1_calc(100%_-_36px)] xl:flex-auto xl:flex-grow-0 xl:order-4 text-xs tracking-widest"
+                      class="order-1 flex flex-[0_1_calc(100%_-_36px)] items-center text-xs tracking-widest xl:order-4 xl:flex-auto xl:flex-grow-0"
                     >
                       <span x-show="isChecked">Selected</span>
                       <span
@@ -142,7 +144,7 @@
                     class="col-start-2 col-end-2 self-end text-sm tracking-widest"
                   >
                     <a
-                      class="text-blue hover:text-blue-7 underline"
+                      class="text-blue underline hover:text-blue-7"
                       href="{{ $page.RelPermalink }}#archives"
                     >
                       View Archives
@@ -154,9 +156,9 @@
           {{ end }}
         </nav>
       </div>
-      <div class="w-screen -mx-4 bg-s-2">
+      <div class="-mx-4 w-screen bg-s-2">
         <div
-          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 lg:px-0 md:py-6"
+          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:gap-y-3 md:gap-x-5 md:py-6 lg:px-0"
         >
           {{ $idFname := partial "helper/new-id" . }}
           {{ $idLname := partial "helper/new-id" . }}
@@ -174,7 +176,7 @@
           </header>
 
           <div
-            class="md:col-span-5 md:col-start-6 flex flex-wrap justify-between align-baseline"
+            class="flex flex-wrap justify-between align-baseline md:col-span-5 md:col-start-6"
           >
             <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
               <label
@@ -223,14 +225,14 @@
                 required
               />
               <span
-                class="pointer-events-none inset-y-0 inline-flex absolute top-9 right-3 text-s-4"
+                class="pointer-events-none absolute inset-y-0 top-9 right-3 inline-flex text-s-4"
               >
                 <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
                   {{ partial "helper/svg.html" "email" }}
                 </svg>
               </span>
             </p>
-            <div class="sm:ml-5 self-end mt-2 flex-1">
+            <div class="mt-2 flex-1 self-end sm:ml-5">
               <button type="submit" class="btn-signup">Subscribe</button>
             </div>
           </div>

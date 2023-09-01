@@ -3,17 +3,17 @@
 
 
 <div
-  class="flex flex-wrap items-center justify-center content-center"
+  class="flex flex-wrap content-center items-center justify-center"
   data-ga-category="inline:share-donation"
 >
   {{ $url := "https://www.spotlightpa.com/" }}
   <a
-    class="flex items-center py-2 px-5 m-2 bg-blue-7 rounded shadow text-white font-black tracking-wider"
+    class="m-2 flex items-center rounded bg-blue-7 py-2 px-5 font-black tracking-wider text-white shadow"
     href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
     data-ga-action="share:facebook"
     title="Share your donation on Facebook"
   >
-    <span class=" w-6 h-6 mr-3 fill-white">
+    <span class=" mr-3 h-6 w-6 fill-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "fb" }}
       </svg>
@@ -23,12 +23,12 @@
   {{ $url = "https://www.spotlightpa.com/donate/" }}
   {{ $text := `I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:` }}
   <a
-    class="flex items-center py-2 px-5 m-2 bg-blue-4 rounded shadow text-white font-black tracking-wider"
+    class="m-2 flex items-center rounded bg-blue-4 py-2 px-5 font-black tracking-wider text-white shadow"
     href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ $url }}&tw_p=tweetbutton"
     data-ga-action="share:twitter"
     title="Tweet about your donation"
   >
-    <span class=" w-6 h-6 mr-3 fill-white">
+    <span class=" mr-3 h-6 w-6 fill-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "twitter" }}
       </svg>
@@ -37,11 +37,11 @@
   </a>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
-    class="flex items-center py-2 px-5 m-2 bg-green rounded shadow text-white font-black tracking-wider no-underline"
+    class="m-2 flex items-center rounded bg-green py-2 px-5 font-black tracking-wider text-white no-underline shadow"
     title="Share your donation by email"
     data-ga-action="share:email"
   >
-    <span class=" w-6 h-6 mr-3 fill-white">
+    <span class=" mr-3 h-6 w-6 fill-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "email" }}
       </svg>

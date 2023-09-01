@@ -16,7 +16,7 @@ series = ["Missed Conduct"]
 slug = "pennsylvania-penn-state-sandusky-misconduct-investigation-event"
 suppress-date = false
 title = "You’re invited! A free panel on how Penn State handles misconduct"
-title-tag = "Join a free panel on how Penn State handles misconduct"
+title-tag = "Attend our panel on how Penn State handles misconduct"
 topics = ["Events"]
 +++
 
