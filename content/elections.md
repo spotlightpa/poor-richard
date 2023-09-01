@@ -70,26 +70,61 @@ form ="""
   submit="Send Inquiry"
 >}}
 """
-[[links]]
-title = "Register to vote"
-link = "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+sidebar = """
+{{<landing-sidebar>}}
+  {{<sidebar-links hed="State Election Resources">}}
+    {{<sidebar-link
+    title="Register to vote"
+    link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+    >}}
 
-[[links]]
-title = "Check your registration status"
-link = "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
+    {{<sidebar-link
+    title = "Check your registration status"
+    link = "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
+    >}}
 
-[[links]]
-title = "Find your polling place"
-link = "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
+    {{<sidebar-link
+    title = "Find your polling place"
+    link = "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
-[[links]]
-title = "Request a mail ballot"
-link = "https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/"
+    >}}
 
-[[links]]
-title = "Contact your county election office"
-link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
+    {{<sidebar-link
+    title = "Request a mail ballot"
+    link = "https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/"
 
+    >}}
+
+    {{<sidebar-link
+    title = "Contact your county election office"
+    link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
+    >}}
+  {{</sidebar-links>}}
+  {{<sidebar-links hed="Key Dates" event="true">}}
+    {{<sidebar-link
+    title="Last day to register to vote"
+    date="2023-09-28"
+    dateVerbose="Sept. 28, 2023"
+    link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+    >}}
+
+    {{<sidebar-link
+    title="Last day to apply for mail-in ballot"
+    date="2023-10-12"
+    dateVerbose="Oct. 12, 2023"
+    link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
+    >}}
+
+    {{<sidebar-link
+    title="Election Day"
+    date="2023-11-02"
+    dateVerbose="Nov. 2, 2023"
+    link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
+
+    >}}
+  {{</sidebar-links>}}
+{{</landing-sidebar>}}
+"""
 
 [[internal-links]]
 title = "Key Dates"

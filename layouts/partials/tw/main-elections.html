@@ -1,7 +1,9 @@
 <section class="bg-white px-6 pb-6 pt-16" data-ga-category="header">
-  <div class="
+  <div
+    class="
     mx-auto flex w-full max-w-screen-xl flex-wrap gap-4 md:gap-x-6 lg:gap-x-12
-  ">
+  "
+  >
     <h1
       class="w-full pb-2 font-sans text-4xl font-bold leading-tight text-black lg:text-5xl"
     >
@@ -24,28 +26,21 @@
       {{ end }}
 
     </div>
-    <nav class="mx-auto w-full max-w-prose md:w-2/6 md:pl-6 lg:pl-12 border-l-2 border-s-4">
-      <h2 class="mb-4 font-sans font-bold text-xl md:text-2xl">State Election Resources</h2>
-      <ul class=" space-y-4">
-        {{ range $i, $_ := .Param "links" }}
-          <li class="text-base md:text-lg font-bold font-serif">
-            <a
-              class="hover:underline underline-offset-2 hover:text-blue"
-              href="{{ .link }}"
-            >
-              {{- .title -}}
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    </nav>
+    {{ .Page.RenderString (.Param "sidebar") }}
+
   </div>
 </section>
 
 <section class="bg-white px-6 py-6"></section>
 
-<section class="bg-white px-6 py-8" data-ga-category="internal-nav">
-  <div class="no-js:hidden relative mx-auto w-96 max-w-full">
+<section
+  class="top-0 z-20 hidden bg-white shadow-md lg:sticky lg:block"
+  data-ga-category="internal-nav"
+>
+  {{ partial "tw/internal-page-nav.html" . }}
+
+
+  <div class="no-js:hidden relative mx-auto w-96 max-w-full md:hidden">
     <select
       x-data
       @change="
@@ -73,25 +68,13 @@
   </div>
 </section>
 
-
-    {{ $pages := .elecStories }}
-    {{ partial "tw/list-3-col-story.html" (dict
-      "pages" $pages
-      "wrapperClass" "mb-16 mx-auto"
-      "eyebrow" "rubric"
-      "rubricLink" "rubric"
-      )
-    }}
-
-
-
-
-
-
-
-
-
-<section class="bg-white px-6 py-8" id="guides" data-ga-category="guides">
+<section
+  class="bg-white px-6 py-8"
+  id="guides"
+  data-ga-category="guides"
+  x-data
+  x-intersect.half="$dispatch('intersect:about', $el.id)"
+>
   {{ $guide := site.GetPage "content/series/voting-guides-2023/_index.md" }}
   {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Primary Election 2023: Candidate and Voting Guides"
@@ -112,7 +95,7 @@
 <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
   {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
 
-  {{ $pages := $elex.RegularPages  }}
+  {{ $pages := $elex.RegularPages }}
   {{ partial "tw/list-3-col-story.html" (dict
     "hed" "PA Primary Election 2023: More Coverage"
     "pages" $pages
@@ -129,7 +112,11 @@
   ".PublishDate.Unix" "gt" $primary
 }}
 {{ if $newEspan }}
-  <section class="bg-white px-6 py-8 md:py-16" id="espan" data-ga-category="espanol">
+  <section
+    class="bg-white px-6 py-8 md:py-16"
+    id="espan"
+    data-ga-category="espanol"
+  >
     {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Elecciones Pa. 2023: Traducciones al Español"
       "pages" $newEspan
@@ -141,7 +128,8 @@
   </section>
 {{ end }}
 
-<div class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
+
+<div id="contact" class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
   {{ .Page.RenderString (.Param "form") }}
 </div>
 
