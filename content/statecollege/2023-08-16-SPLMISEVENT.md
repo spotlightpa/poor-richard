@@ -18,6 +18,7 @@ suppress-date = false
 title = "WATCH: A free panel on how Penn State handles misconduct"
 title-tag = "Experts discuss how Penn State handles misconduct"
 topics = ["Events"]
+twitter-title = "Experts discuss how Penn State handles misconduct"
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
