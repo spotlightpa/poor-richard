@@ -5,11 +5,13 @@ import { analyticsPlugin } from "../utils/google-analytics.js";
 
 Alpine.plugin(analyticsPlugin);
 
+import carousel from "../enhancements/carousel.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
+import panels from "../enhancements/panels.js";
 import prefill from "../enhancements/prefill.js";
 import readmore from "../enhancements/read-more.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
@@ -20,11 +22,13 @@ import sticky from "../enhancements/sticky.js";
 import takeover from "../enhancements/takeover.js";
 
 for (let [name, comp] of [
+  ["carousel", carousel],
   ["embedList", embedList],
   ["funnelStatus", funnelStatus],
   ["imageRotator", imageRotator],
   ["modal", modal],
   ["mostPopular", mostPopular],
+  ["panels", panels],
   ["prefill", prefill],
   ["readmore", readmore],
   ["searchArticles", searchArticles],
