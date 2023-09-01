@@ -155,6 +155,36 @@ link = "#contact"
 title = "Credits"
 link = "#credits"
 
+
+[[blocks]]
+layout = "events"
+title = "Spotlight PA voter event series"
+image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
+
+[[blocks.entries]]
+hed="Candidate guide"
+dek="A guide to the top judicial candidates up for election. Link to Spotlight PA candidate guide. Include visual element of candidates."
+date="2023-10-12"
+dateVerbose="Oct. 12, 2023"
+link="#"
+registration="#eventbrite-link"
+
+[[blocks.entries]]
+hed="Understanding your voting rights and answering your last minute election questions"
+dek="A panel focusing on last minute election things and answering reader questions. Link to Spotlight PA guide. Include powerpoint of important voting info."
+date="2023-11-02"
+dateVerbose="Nov. 2, 2023"
+link="#"
+registration="#eventbrite-link"
+
+[[blocks.entries]]
+hed="Understanding Election Day results"
+dek="A panel focusing on the results of the judicial election and how they impact Pennsylvania."
+date="2023-11-12"
+dateVerbose="Nov. 12, 2023"
+link="#"
+registration="#eventbrite-link"
+
 [[blocks]]
 layout = "tabs"
 title = "Your Issues"

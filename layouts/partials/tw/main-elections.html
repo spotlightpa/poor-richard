@@ -86,11 +86,10 @@
   }}
 </section>
 
-    {{ range $i, $blocks := .Params.blocks }}
-      {{ $id := urlize .title }}
-      {{ partial "blocks/block" (dict "Page" $ "block" .) }}
-    {{ end }}
-
+{{ range $i, $blocks := .Params.blocks }}
+  {{ $id := urlize .title }}
+  {{ partial "blocks/block" (dict "Page" $ "block" .) }}
+{{ end }}
 
 
 <section class="bg-white p-6" data-ga-category="inline-newsletter">

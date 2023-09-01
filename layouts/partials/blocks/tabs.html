@@ -2,43 +2,39 @@
   <div class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0">
     <header class=" m-auto flex max-w-screen-lg items-baseline gap-3">
       {{ with .icon }}
-      <svg class="mr-1 h-9 w-9 fill-s-5">
-        {{ partial "helper/svg.html" .icon }}
-      </svg>
-{{ end }}
+        <svg class="mr-1 h-9 w-9 fill-s-5">
+          {{ partial "helper/svg.html" .icon }}
+        </svg>
+      {{ end }}
       <h3
         class="mb-2 font-sans text-3xl font-black leading-tight tracking-wide sm:text-4xl lg:text-5xl"
       >
         {{- .title -}}
-
       </h3>
     </header>
 
-      {{ with .entries }}
+    {{ with .entries }}
     <div
       class=" m-auto max-w-screen-lg border-t-4 sm:flex sm:items-start"
-        {{ range first 1 . }}
-      x-data="{ selected: 'tab-{{ .name | urlize }}' }"
-        {{ end }}
+      {{ range first 1 . }}
+        x-data="{ selected: 'tab-{{ .name | urlize }}' }"
+      {{ end }}
     >
-    
-          
-
-        <div
+      <div
           class="sticky top-0 flex w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 sm:w-1/6 sm:flex-col sm:border-b-0 md:min-w-max"
-        >
-          {{ range . }}
-            <a
-              href="#tab-{{ .name | urlize }}"
-              class="
-                flex-0 px-2 text-sm text-right font-black leading-loose hover:text-blue active:focus:text-black sm:px-4 sm:text-2xl
-              "
-              :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'tab-{{ .name | urlize }}' }"
-              @click="selected = 'tab-{{ .name | urlize }}' "
-              >{{- .name -}}</a
-            >
-          {{ end }}
-        </div>
+      >
+        {{ range . }}
+          <a
+            href="#tab-{{ .name | urlize }}"
+            class="
+              flex-0 px-2 text-sm text-right font-black leading-loose hover:text-blue active:focus:text-black sm:px-4 sm:text-2xl
+            "
+            :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'tab-{{ .name | urlize }}' }"
+            @click="selected = 'tab-{{ .name | urlize }}' "
+            >{{- .name -}}</a
+          >
+        {{ end }}
+      </div>
         <div class="max-w-4xl px-2 py-8 sm:border-l-4 md:px-16">
           {{ range . }}
             <article

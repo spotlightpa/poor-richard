@@ -1,0 +1,51 @@
+{{ with .block }}
+  <section class="bg-black p-5 font-sans sm:py-5 md:py-12 xl:px-0">
+    <h2 class="m-auto flex max-w-screen-xl items-baseline gap-3 text-base font-bold uppercase tracking-widest text-white">
+      {{ .title }}
+    </h2>
+
+    <div
+      class="m-auto max-w-screen-xl mt-4 md:mt-6 md:flex md:items-stretch md:justify-between"
+    >
+      <div class="flex-0 md:w-7/12">
+        {{ $name := .image }}
+          {{ $credit := "credit" }}
+          {{ $description := "desc" }}
+
+          {{ $imgOpts := dict
+            "filename" $name
+            "description" $description
+            "widthRatio" 5
+            "heightRatio" 3
+            "wrapperClass" "flex w-full h-full"
+            "pictureClass" "flex w-full items-center justify-stretch"
+            "imgClass" "self-center object-cover flex-1 h-full"
+            "widths" (slice 576 488 1280 1920)
+            "figClass" "flex flex-0 h-full overflow-hidden bg-red object-cover rounded"
+            "sizeHint" "400px"
+            "gravity" (.page.Param "image-gravity")
+          }}
+          {{ partial "tw/image-block.html" $imgOpts }}
+      </div>
+      <span class="hidden min-h-full w-0 border border-s-3 md:inline-flex"></span>
+      <div class="flex flex-col items-start space-y-6 text-white md:w-4/12">
+        {{ with .entries }}
+          {{ range . }}
+            <article>
+              <h3 class="font-serif text-lg font-bold">
+                <a href="{{ .link }}">{{ .hed }}</a>
+              </h3>
+              <p class="font-base pt-2">{{ .dek }}</p>
+              <p class="pt-2 font-sans text-sm uppercase tracking-wide">
+                <time datetime="{{ .date }}" class="font-bold"
+                  >{{ .dateVerbose }}</time
+                >
+                <a href="{{ .registration }}">Register</a>
+              </p>
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
