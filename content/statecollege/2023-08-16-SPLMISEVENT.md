@@ -1,7 +1,7 @@
 +++
-blurb = "Join us for a free panel on Penn State’s misconduct policies and transparency."
+blurb = "Experts discuss Penn State’s misconduct policies and transparency in higher education."
 byline = "Spotlight PA Staff"
-description = "Join us for a free panel on Penn State’s misconduct policies and transparency."
+description = "Experts discuss Penn State’s misconduct policies and transparency in higher education."
 event-date = 2023-08-31T18:00:00-04:00
 event-title = "Missed Conduct"
 event-url = "https://zoom.us/webinar/register/WN_PECUx9dZSp2iYgGwQaI6HQ#/registration"
@@ -15,8 +15,8 @@ published = 2023-08-16T15:22:13.123-04:00
 series = ["Missed Conduct"]
 slug = "pennsylvania-penn-state-sandusky-misconduct-investigation-event"
 suppress-date = false
-title = "You’re invited! A free panel on how Penn State handles misconduct"
-title-tag = "Attend our panel on how Penn State handles misconduct"
+title = "WATCH: A free panel on how Penn State handles misconduct"
+title-tag = "Experts discuss how Penn State handles misconduct"
 topics = ["Events"]
 +++
 
@@ -24,13 +24,11 @@ topics = ["Events"]
 
 In the wake of the Jerry Sandusky child sex abuse scandal, Penn State vowed to never again let such extreme misconduct happen under its watch. The school created a series of offices and positions specifically to ensure it upheld safe practices that protected staff, students, and faculty.
 
-Over a decade later, a Spotlight PA and Centre Daily Times review of that monitoring system revealed it began to unravel shortly after it was created. The <a href="https://www.spotlightpa.org/statecollege/2023/07/penn-state-sandusky-accountability-transparency-misconduct-retaliation/">newsrooms’ year-long investigation foun</a>d, among other issues, that Penn State lacks a unified way to track all reported misconduct, and that staff and students fear retaliation if they speak up.
+Over a decade later, a Spotlight PA and Centre Daily Times review of that monitoring system revealed it began to unravel shortly after it was created. The <a href="https://www.spotlightpa.org/statecollege/2023/07/penn-state-sandusky-accountability-transparency-misconduct-retaliation/">newsrooms’ year-long investigation found</a>, among other issues, that Penn State lacks a unified way to track all reported misconduct, and that staff and students fear retaliation if they speak up.
 
-To further examine the issue, Spotlight PA is hosting a panel on how the newsrooms reported the story and what the investigation uncovered.
+To further examine the issue, Spotlight PA hosted a panel on how the newsrooms reported the story and what the investigation uncovered. Watch it below.
 
-Join us <strong>Thursday, Aug. 31 from 6-7 p.m. on Zoom</strong> for a free panel discussion on Penn State’s post-Sandusky misconduct policies, transparency in higher education, and how universities can keep students and employees safe.
-
-<strong>Our panelists include:</strong>
+<strong>Our panelists were:</strong>
 
 - <strong>Wyatt Massey</strong>, investigative reporter, Spotlight PA State College
 
@@ -38,7 +36,7 @@ Join us <strong>Thursday, Aug. 31 from 6-7 p.m. on Zoom</strong> for a free pane
 
 - <strong>Eugene DePasquale</strong>, former Pennsylvania auditor general
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_PECUx9dZSp2iYgGwQaI6HQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/860181015?h=3a70f6d632&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
