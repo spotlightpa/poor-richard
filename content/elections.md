@@ -127,16 +127,17 @@ sidebar = """
 """
 
 [[internal-links]]
-title = "Key Dates"
-link = "#dates"
-
-[[internal-links]]
-title = "Featured Stories"
-link = "#featured"
-
-[[internal-links]]
-title = "Election Guides"
+title = "Voter Guides"
 link = "#guides"
+
+
+[[internal-links]]
+title = "Election Event Series"
+link = "#events"
+
+[[internal-links]]
+title = "Issues"
+link = "#your-issues"
 
 [[internal-links]]
 title = "Coverage"
@@ -158,6 +159,7 @@ link = "#credits"
 
 [[blocks]]
 layout = "events"
+id = "events"
 title = "Spotlight PA voter event series"
 image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 

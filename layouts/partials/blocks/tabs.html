@@ -1,5 +1,5 @@
 {{ with .block }}
-  <div class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0">
+  <div id="{{ .title | urlize }}" class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0">
     <header class=" m-auto flex max-w-screen-lg items-baseline gap-3">
       {{ with .icon }}
         <svg class="mr-1 h-9 w-9 fill-s-5">
