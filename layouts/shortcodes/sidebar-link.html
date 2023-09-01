@@ -1,0 +1,50 @@
+{{ $title := .Get "title" }}
+{{ $link := .Get "link" }}
+{{ $date := .Get "date" }}
+{{ $dateVerbose := .Get "dateVerbose" }}
+
+
+<li
+  class="font-serif text-base md:text-lg"
+  data-ga-category="{{ urlize $title }}"
+>
+  {{ if $date }}
+    <button
+      @click.prevent="
+        $report($event);
+        import(url).then((m) => m.atcb_action(data($el), $el))
+      "
+      @click.prevent="
+        $report($event);
+        import(url).then((m) => m.atcb_action(data($el), $el))
+      "
+      data-name="{{ $title }}"
+      data-date="{{ $date }}"
+      data-ga-action="add-to-calendar"
+      class="text-left font-bold underline-offset-2"
+    >
+      <p class="font-bold underline-offset-2">
+        {{- $title -}}
+      </p>
+      <time
+        class="pt-1 font-sans text-sm font-bold uppercase tracking-wide text-black"
+        datetime="{{ $date }}"
+      >
+        {{- $dateVerbose -}}
+      </time>
+
+      <span
+        class="border-transparent pt-1 font-sans text-sm uppercase tracking-wide text-s-6 underline underline-offset-2 hover:text-blue"
+        type="button"
+        >Add to Calendar</span
+      >
+    </button>
+  {{ else }}
+    <a
+      class="font-bold underline-offset-2 hover:text-blue hover:underline"
+      href="{{ $link }}"
+    >
+      {{- $title -}}
+    </a>
+  {{ end }}
+</li>
