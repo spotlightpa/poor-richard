@@ -1,5 +1,8 @@
 {{ with .block }}
-  <div id="{{ .title | urlize }}" class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0">
+  <div
+    id="{{ .title | urlize }}"
+    class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0"
+  >
     <header class=" m-auto flex max-w-screen-lg items-baseline gap-3">
       {{ with .icon }}
         <svg class="mr-1 h-9 w-9 fill-s-5">
@@ -14,27 +17,50 @@
     </header>
 
     {{ with .entries }}
-    <div
-      class=" m-auto max-w-screen-lg border-t-4 sm:flex sm:items-start"
-      {{ range first 1 . }}
-        x-data="{ selected: 'tab-{{ .name | urlize }}' }"
-      {{ end }}
-    >
       <div
-          class="sticky top-0 flex w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 sm:w-1/6 sm:flex-col sm:border-b-0 md:min-w-max"
-      >
-        {{ range . }}
-          <a
-            href="#tab-{{ .name | urlize }}"
-            class="
-              flex-0 px-2 text-sm text-right font-black leading-loose hover:text-blue active:focus:text-black sm:px-4 sm:text-2xl
-            "
-            :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'tab-{{ .name | urlize }}' }"
-            @click="selected = 'tab-{{ .name | urlize }}' "
-            >{{- .name -}}</a
-          >
+        class=" m-auto max-w-screen-lg border-t-4 sm:flex sm:items-start"
+        {{ range first 1 . }}
+          x-data="{ selected: 'tab-{{ .name | urlize }}' }"
         {{ end }}
-      </div>
+      >
+        <div class="no-js:hidden my-3 relative w-96 max-w-full md:hidden">
+          <select x-data class="spl-select text-2xl">
+            <option disabled selected>Jump to…</option>
+            {{ range . }}
+              <option
+                @click="selected = 'tab-{{ .name | urlize }}' "
+                value="#tab-{{ .name | urlize }}"
+              >
+                {{- .name -}}
+              </option>
+            {{ end }}
+          </select>
+          <span
+            class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
+            aria-hidden="true"
+          >
+            <svg class="h-4 w-4 fill-s-5">
+              {{ partial "helper/svg.html" "chevron" }}
+            </svg>
+          </span>
+        </div>
+
+        <div
+          class="hidden sticky top-0 w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 
+          sm:flex sm:w-1/6 sm:flex-col sm:border-b-0 md:min-w-max"
+        >
+          {{ range . }}
+            <a
+              href="#tab-{{ .name | urlize }}"
+              class="
+                flex-0 px-2 text-right text-sm font-black leading-loose hover:text-blue active:focus:text-black sm:px-4 sm:text-2xl
+              "
+              :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'tab-{{ .name | urlize }}' }"
+              @click="selected = 'tab-{{ .name | urlize }}' "
+              >{{- .name -}}</a
+            >
+          {{ end }}
+        </div>
         <div class="max-w-4xl px-2 py-8 sm:border-l-4 md:px-16">
           {{ range . }}
             <article
@@ -47,7 +73,7 @@
             </article>
           {{ end }}
         </div>
-      {{ end }}
-    </div>
+      </div>
+    {{ end }}
   </div>
 {{ end }}
