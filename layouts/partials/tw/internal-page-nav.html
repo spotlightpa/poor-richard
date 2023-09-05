@@ -1,0 +1,57 @@
+<div class="flex flex-col md:flex-row" data-ga-category="sticky">
+  <div class="no-js:hidden relative mx-auto w-96 max-w-full md:hidden">
+    <select
+      x-data
+      @change="
+        window.location.assign($event.target.value);
+        $report({
+          target: $el,
+          currentTarget: window.location,
+        });
+      "
+      class="spl-select text-2xl"
+    >
+      <option disabled selected>Jump to…</option>
+      {{ range .Param "internal-links" }}
+        <option value="{{ .link }}">{{- .title -}}</option>
+      {{ end }}
+    </select>
+    <span
+      class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
+      aria-hidden="true"
+    >
+      <svg class="h-4 w-4 fill-s-5">
+        {{ partial "helper/svg.html" "chevron" }}
+      </svg>
+    </span>
+  </div>
+
+  <div
+    class="mx-auto hidden max-w-screen-xl flex-wrap justify-evenly py-3 font-sans md:flex"
+  >
+    {{ range .Param "internal-links" }}
+      <a
+        id="{{ .id }}"
+        data-id="{{ .id }}"
+        data-ga-category="item"
+        class="
+            my-2 mr-5 inline-flex w-auto items-center
+            rounded border border-black
+            px-4 py-2
+            text-base leading-4
+            hover:border-red-7 hover:text-red-7
+            lg:my-0
+          "
+        :class="
+            aboutActive === $el.dataset.aboutId ?
+            'bg-black text-white hover:border-blue-3 hover:text-blue-3' :
+            ''
+          "
+        href="{{ .link }}"
+        ><span>
+          {{- .title -}}
+        </span></a
+      >
+    {{ end }}
+  </div>
+</div>
