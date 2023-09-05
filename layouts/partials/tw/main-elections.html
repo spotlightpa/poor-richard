@@ -34,38 +34,11 @@
 <section class="bg-white px-6 py-6"></section>
 
 <section
-  class="top-0 z-20 hidden bg-white shadow-md lg:sticky lg:block"
+  class="top-0 z-20 bg-white shadow-md lg:sticky lg:block"
   data-ga-category="internal-nav"
 >
   {{ partial "tw/internal-page-nav.html" . }}
 
-
-  <div class="no-js:hidden relative mx-auto w-96 max-w-full md:hidden">
-    <select
-      x-data
-      @change="
-        window.location.assign($event.target.value);
-        $report({
-          target: $el,
-          currentTarget: window.location,
-        });
-      "
-      class="spl-select text-2xl"
-    >
-      <option disabled selected>Jump to…</option>
-      {{ range .Param "internal-links" }}
-        <option value="{{ .link }}">{{- .title -}}</option>
-      {{ end }}
-    </select>
-    <span
-      class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
-      aria-hidden="true"
-    >
-      <svg class="h-4 w-4 fill-s-5">
-        {{ partial "helper/svg.html" "chevron" }}
-      </svg>
-    </span>
-  </div>
 </section>
 
 <section
@@ -135,10 +108,11 @@
 {{ end }}
 
 
-<div id="contact" class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
-  {{ .Page.RenderString (.Param "form") }}
-</div>
-
+<section class="px-4 pt-12 md:px-0">
+  <div id="contact" class=" bg-s-3 font-sans md:mx-0 md:px-4">
+    {{ .Page.RenderString (.Param "form") }}
+  </div>
+</section>
 <section class="bg-white p-6" data-ga-category="credits" id="credits">
   <div class="mx-auto w-full max-w-prose">
     <h2
