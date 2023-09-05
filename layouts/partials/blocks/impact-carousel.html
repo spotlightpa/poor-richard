@@ -3,22 +3,6 @@
 
 
   <section
-    x-data="{
-        selectedId: null,
-        init() {
-          this.$nextTick(() => this.select(this.$id('tab', 1)))
-        },
-        select(id) {
-          this.selectedId = id
-        },
-        isSelected(id) {
-          return this.selectedId === id
-        },
-        whichChild(el, parent) {
-          return Array.from(parent.children).indexOf(el) + 1
-        }
-    }"
-    x-id="['tab']"
     class="grid w-screen min-w-full grid-flow-row grid-cols-8 gap-3 overflow-x-hidden bg-s-7 font-sans md:grid-cols-14 md:gap-5"
   >
     <h2

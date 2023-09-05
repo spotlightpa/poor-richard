@@ -7,43 +7,7 @@
 </script>
 <!-- Tabs -->
 <div class="relative col-span-8 col-start-1 row-start-4 mb-5 md:col-span-14">
-  <div
-    x-data="{
-      skip: 1,
-      atBeginning: false,
-      atEnd: false,
-      next() {
-        this.to((current, offset) => current + (offset * this.skip))
-      },
-      prev() {
-        this.to((current, offset) => current - (offset * this.skip))
-      },
-      to(strategy) {
-        let slider = this.$refs.tablist
-        let current = slider.scrollLeft
-        let offset = slider.firstElementChild.getBoundingClientRect().width
-        slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
-      },
-      disableNextAndPreviousButtons: {
-        'x-intersect:enter.threshold.05'() {
-          let slideEls = this.$el.parentElement.children
-          if (slideEls[0] === this.$el) {
-            this.atBeginning = true
-          } else if (slideEls[slideEls.length-1] === this.$el) {
-            this.atEnd = true
-          }
-        },
-        'x-intersect:leave.threshold.05'() {
-          let slideEls = this.$el.parentElement.children
-          if (slideEls[0] === this.$el) {
-            this.atBeginning = false
-          } else if (slideEls[slideEls.length-1] === this.$el) {
-            this.atEnd = false
-          }
-        },
-      },
-    }"
-  >
+  <div x-data="carousel">
     <div
       x-on:keydown.right="next"
       x-on:keydown.left="prev"
@@ -57,7 +21,7 @@
         x-on:click="prev"
         class="col-1 col-start-1 row-start-1 flex w-10 items-center justify-center text-6xl"
         :aria-disabled="atBeginning"
-        :tabindex="atEnd ? -1 : 0"
+        :tabindex="atBeginning ? -1 : 0"
         :class="{ 'opacity-25 cursor-not-allowed': atBeginning }"
       >
         <span aria-hidden="true">
@@ -83,7 +47,6 @@
         tabindex="0"
         role="listbox"
         style="scroll-snap-type: x mandatory"
-        aria-labelledby="carousel-content-label"
         class="relative col-span-2 col-start-2 row-start-1 m-0 flex items-start justify-start overflow-y-hidden overflow-x-scroll bg-s-7 md:col-end-15 md:row-start-1"
       >
         <ul
@@ -93,16 +56,15 @@
           @keydown.left.prevent.stop="$focus.wrap().prev()"
           @keydown.end.prevent.stop="$focus.last()"
           @keydown.page-down.prevent.stop="$focus.last()"
-          x-ref="tablist"
+          x-ref="slider"
           role="tablist"
           tabindex="0"
           style="scroll-snap-type: x mandatory"
-          aria-labelledby="carousel-content-label"
           class="relative col-span-8 col-start-2 m-0 flex items-start justify-start overflow-y-hidden overflow-x-scroll bg-s-7 pr-16 md:col-end-15"
           style="scroll-snap-type: x mandatory;"
         >
           <!-- Tab -->
-          {{ range sort .impactStories "date" "desc" }}
+          {{ range $i, $story := sort .impactStories "date" "desc" }}
             {{ if .page }}
               <li
                 data-ga-category="selected-impact"
@@ -112,14 +74,10 @@
                 style="scroll-snap-align: end;"
               >
                 <button
-                  :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
-                  @click="select($el.id)"
-                  @mousedown.prevent
-                  @focus="select($el.id)"
+                  @click="$dispatch('focus-panel', +$el.dataset.pos)"
+                  data-pos="{{ $i }}"
                   type="button"
-                  :tabindex="isSelected($el.id) ? 0 : -1"
-                  :aria-selected="isSelected($el.id)"
-                  :class="isSelected($el.id) ? 'opacity-60' : 'opacity-100'"
+                  x-bind="focusableWhenVisible"
                   class="flex flex-shrink-0 flex-col items-stretch gap-3 font-sans md:w-[442px] md:flex-row"
                   role="tab"
                 >
