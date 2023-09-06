@@ -11,4 +11,4 @@ beat = "Democracy And Disinformation"
 focusHed = "Legislature, county and local governments"
 tel =  "(717) 585-0197"
 signal = "(717) 585-0197"
-reporter = true
+role = "reporter"

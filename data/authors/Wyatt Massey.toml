@@ -11,4 +11,4 @@ beat = "Penn State University"
 focusHed = "Penn State University"
 tel =  ""
 signal = ""
-reporter = true
+role = "reporter"
