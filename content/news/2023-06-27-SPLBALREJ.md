@@ -1,4 +1,5 @@
 +++
+authors = ["Carter Walker", "Laura Benshoff"]
 blurb = "Data shows that communities of color and older Philadelphians are more likely to have their mail ballot rejected due to simple mistakes."
 byline = "Carter Walker of Votebeat and Laura Benshoff for Votebeat"
 description = "Data shows that communities of color and older Philadelphians are more likely to have their mail ballot rejected due to simple mistakes."

@@ -18,7 +18,7 @@
     {{ if $author.active }}
       <header
         id="{{ $author.slug }}"
-        class="mb-8 font-sans mx-auto max-w-screen-md grid grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
+        class="mx-auto mb-8 grid max-w-screen-md grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
       >
         {{ if $author.headshot }}
           {{ $sizes := (slice
@@ -202,7 +202,7 @@
         <hr class="mb-5 border-b-2" />
       </div>
       <div
-        class="mt-3 flex flex-col space-y-8 sm:space-y-6 mb-8"
+        class="mt-3 mb-8 flex flex-col space-y-8 sm:space-y-6"
         x-ref="archives"
       >
         {{ range $page := (partial "helper/paginator" .).Pages }}

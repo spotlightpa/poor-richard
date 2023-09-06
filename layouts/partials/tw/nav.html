@@ -73,7 +73,6 @@
       href="/search/"
       class="z-20 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
       data-ga-category="search"
-      :data-ga-action="'modal:search:open'"
       :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
       x-data
       @click.prevent="$dispatch('modal:search:open')"
@@ -119,8 +118,8 @@
       id="hamburger-menu"
       x-cloak
       class="
-        absolute left-2 right-2 -top-2 z-10 max-w-screen-md gap-y-2 rounded border border-s-5 bg-white px-4 pb-12
-        sm:left-auto sm:-top-4 sm:grid-cols-2 sm:gap-8 sm:px-8"
+        absolute -top-2 left-2 right-2 z-10 max-w-screen-md gap-y-2 rounded border border-s-5 bg-white px-4 pb-12
+        sm:-top-4 sm:left-auto sm:grid-cols-2 sm:gap-8 sm:px-8"
       :class="{ 'hidden': !isOpen, 'grid': isOpen }"
       x-trap="isOpen"
       role="menu"
@@ -180,7 +179,6 @@
       aria-controls="hamburger-menu"
       aria-haspopup="true"
       data-ga-category="burger"
-      data-ga-action="menu:isOpen"
       x-report-click
     >
       {{ block "nav-hamburger-button" . }}
@@ -220,7 +218,7 @@
 <!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
 <div hidden>
   <span
-    class="opacity-1 w-0 w-5 translate-x-3 -translate-x-3 translate-y-1.5 -translate-y-1.5 rotate-45 -rotate-45 opacity-0 sm:translate-x-0"
+    class="opacity-1 w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 sm:translate-x-0"
     hidden
   ></span>
 </div>

@@ -14,11 +14,7 @@
     {{ partial "header/google-analytics-meta.html" . }}
 
 
-    <!-- Just Google Analytics -->
-    <script
-      src="{{ partialCached `helper/get-nomodules-js` . }}"
-      async
-    ></script>
+    <!-- TODO: Add basic analytics -->
   </head>
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}

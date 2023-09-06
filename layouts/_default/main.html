@@ -5,26 +5,26 @@
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
 
 
-<header class="bg-white pt-8 px-5 text-black pb-2">
+<header class="bg-white px-5 pt-8 pb-2 text-black">
   <div class="mx-auto max-w-screen-lg">
     {{ partial "tw/breadcrumbs.html" . }}
   </div>
   <div class="mx-auto w-full max-w-2xl">
     <h1
-      class="mb-2 text-3xl sm:text-4xl font-sans font-bold leading-tight tracking-wide text-black lg:text-5xl"
+      class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
     >
       {{- .Title -}}
     </h1>
   </div>
 </header>
 
-<section class="font-sans bg-white">
-  <div class="mx-auto max-w-screen-lg font-medium pt-5 pb-10 px-5 lg:px-0">
+<section class="bg-white font-sans">
+  <div class="mx-auto max-w-screen-lg px-5 pt-5 pb-10 font-medium lg:px-0">
     {{ with .Page.Params.subhed }}
-      <h2 class="font-black text-5xl mb-5 uppercase">{{ . }}</h2>
+      <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
     {{ end }}
     {{ with .Content }}
-      <div class="article-content max-w-2xl mx-auto text-lg">
+      <div class="article-content mx-auto max-w-2xl text-lg">
         {{ . }}
       </div>
     {{ end }}
@@ -37,7 +37,7 @@
 
   {{ range $i, $blocks := .Params.blocks }}
     {{ $id := urlize .title }}
-    <div data-ga-category="blocks" class=" w-full -mx-4 bg-s-1 md:mx-0">
+    <div data-ga-category="blocks" class=" -mx-4 w-full bg-s-1 md:mx-0">
       {{ partial "blocks/block" (dict
         "Page" $
         "block" .

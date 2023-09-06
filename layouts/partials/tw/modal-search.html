@@ -42,7 +42,8 @@
             type="button"
             aria-label="close"
             x-ref="closer"
-            data-ga-action="modal:search:dismiss"
+            x-report-click
+            data-ga-category="dismiss"
             @keydown.escape="isOpen = false"
             @click="isOpen = false;"
             :autofocus="isOpen"
