@@ -190,7 +190,7 @@ weight = 8
 [[news]]
 name = "More Topics"
 url = "/topics/"
-weight = 9
+weight = 11
 
 [[news]]
 name = "State College Region"
@@ -200,7 +200,12 @@ weight = 10
 [[news]]
 name = "Events"
 url = "/events/"
-weight = 11
+weight = 12
+
+[[news]]
+name = "Elections"
+url = "/election/"
+weight = 8
 
 [[news]]
 name = "Archives"
