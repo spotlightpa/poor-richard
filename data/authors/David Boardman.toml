@@ -1,7 +1,7 @@
 name = "David Boardman"
 lastName = "aaBoardman"
 title = "Board Chair"
-role = "board"
+board = "board"
 active = true
 headshot = "2023/08/01je-9w10-vs5e-xczg.jpeg"
 content = """David Boardman is Dean of the Klein College of Media and Communication at Temple University in Philadelphia. He has academic and financial responsibility for one of the largest and most comprehensive programs of its kind, with some 2,500 students and 200 faculty members. 

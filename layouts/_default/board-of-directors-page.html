@@ -44,7 +44,7 @@
   {{ range sort .Site.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
     {{ if $author.active }}
-      {{ if eq $author.role "board" }}
+      {{ if eq $author.board "board" }}
         {{ $board = $board | append $author }}
       {{ end }}
     {{ end }}
