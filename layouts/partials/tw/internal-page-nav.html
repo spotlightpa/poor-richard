@@ -9,9 +9,9 @@
           currentTarget: window.location,
         });
       "
-      class="spl-select text-2xl"
+      class="spl-select text-xl"
     >
-      <option disabled selected>Jump to…</option>
+      <option disabled selected>Jump to Section…</option>
       {{ range .Param "internal-links" }}
         <option value="{{ .link }}">{{- .title -}}</option>
       {{ end }}
