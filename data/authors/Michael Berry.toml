@@ -1,6 +1,6 @@
 name = "Michael Berry"
 lastName = "Berry"
-role = "board"
+board = "board"
 active = true
 headshot = "2023/08/01je-9vkw-99rr-mfaq.jpeg"
 
