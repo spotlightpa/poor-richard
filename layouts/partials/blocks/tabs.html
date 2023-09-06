@@ -23,7 +23,7 @@
           x-data="{ selected: 'tab-{{ .name | urlize }}' }"
         {{ end }}
       >
-        <div class="no-js:hidden my-3 relative w-96 max-w-full md:hidden">
+        <div class="no-js:hidden relative my-3 w-96 max-w-full md:hidden">
           <select x-data class="spl-select text-2xl">
             <option disabled selected>Jump to…</option>
             {{ range . }}
@@ -46,7 +46,7 @@
         </div>
 
         <div
-          class="hidden sticky top-0 w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 
+          class="sticky top-0 hidden w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 
           sm:flex sm:w-1/6 sm:flex-col sm:border-b-0 md:min-w-max"
         >
           {{ range . }}
