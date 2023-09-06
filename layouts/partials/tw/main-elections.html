@@ -34,7 +34,7 @@
 <section class="bg-white px-6 py-6"></section>
 
 <section
-  class="top-0 z-20 bg-white shadow-md md:sticky lg:block"
+  class="sticky top-0 z-20 bg-white p-3 shadow-md lg:block"
   data-ga-category="internal-nav"
 >
   {{ partial "tw/internal-page-nav.html" . }}
@@ -42,7 +42,7 @@
 </section>
 
 <section
-  class="bg-white px-6 py-8"
+  class="bg-white px-6 py-12 md:pt-16"
   id="guides"
   data-ga-category="guides"
   x-data
@@ -58,6 +58,10 @@
     )
   }}
 </section>
+
+<div class="bg-white">
+  {{ .Page.RenderString (.Param "donate") }}
+</div>
 
 {{ range $i, $blocks := .Params.blocks }}
   {{ $id := urlize .title }}
@@ -108,7 +112,7 @@
 {{ end }}
 
 
-<section class="px-4 pt-12 md:px-0">
+<section class="px-4 md:px-0">
   <div id="contact" class=" bg-s-3 font-sans md:mx-0 md:px-4">
     {{ .Page.RenderString (.Param "form") }}
   </div>
