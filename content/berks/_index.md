@@ -7,7 +7,21 @@ image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 layout = "page-landing"
+signupHed = "Join our mailing list "
+signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County." 
 bg-img = true
+takeover = """
+{{<featured/main-takeover
+  title = "Help us write the future of journalism in Berks County."
+  dek = "Join our historic effort to invigorate local news."
+  image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
+  signupHed = "Join our mailing list "
+  signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
+  gaCategory = "newsletters:palocal"
+  gaForm = "newsletters:palocal-full"
+  hiddenField = "newsletter/hidden-input.html"
+>}}
+"""
 supplemental = """
 {{<supplemental>}}
 ## A Novel Approach to Reinvigorating Local News

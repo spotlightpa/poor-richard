@@ -1,0 +1,88 @@
+{{ $src := .Get "image" }}
+{{ $hed := .Get "title" }}
+{{ $dek := .Get "dek" }}
+{{ $signupHed := .Get "signupHed" }}
+{{ $signupDek := .Get "signupDek" }}
+{{ $cta := .Get "cta" | default "Sign Up!" }}
+{{ $gaCategory := .Get "gaCategory" }}
+{{ $gaForm := .Get "gaForm" }}
+{{ $hiddenField := .Get "hiddenField" }}
+<header class="relative z-20 flex flex-col bg-black text-white">
+  {{ $imgOpt := dict
+    "filename" ($src)
+    "width" 2271
+    "height" 1431
+    "gravity" "ce"
+  }}
+  {{ $url := partial "helper/imgproxy" $imgOpt }}
+  <div
+    class="absolute inset-0 flex bg-blue-1 bg-cover"
+    style="background-image: url({{ $url }}); background-position: 38% 0; z-index: -1;"
+    aria-hidden="true"
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"
+    ></div>
+  </div>
+  <div class="px-4 py-8 leading-tight sm:p-12">
+    <div class="mx-auto flex w-full flex-col justify-center md:max-w-2xl">
+      <div class="mx-auto">
+        <h1
+          class="text-shadow  text-3xl font-extrabold md:text-4xl lg:text-5xl xl:text-6xl"
+        >
+          {{ $hed }}
+        </h1>
+        <h2
+          class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+        >
+          {{ $dek }}
+
+        </h2>
+      </div>
+      {{ $idEmail :=  partial "helper/new-id" . }}
+      <label
+        for="{{ $idEmail }}"
+        class="backdrop-fallback mx-auto my-8 block w-full rounded p-8 shadow ring-1 ring-s-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
+      >
+        <form
+          action="{{ site.Param `newsletters-action` }}"
+          method="post"
+          target="_blank"
+          class="p-1 font-sans text-white"
+          x-data
+          x-form="{{ $gaForm }}"
+          data-ga-category="{{ $gaCategory }}"
+        >
+          {{ partial $hiddenField . }}
+          <h2 class="text-3xl font-extrabold">
+            {{ $hed }}
+          </h2>
+          <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
+            <p class="relative flex-grow">
+              <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+              <input
+                id="{{ $idEmail }}"
+                class="spl-input text-lg text-black"
+                type="email"
+                name="EMAIL"
+                placeholder="Email address"
+                required
+              />
+              <span
+                class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+                aria-hidden="true"
+              >
+                <svg class="h-4 w-4 fill-current">
+                  {{ partial "helper/svg.html" "email" }}
+                </svg>
+              </span>
+            </p>
+            <p class="mt-4 sm:ml-1 sm:mt-0">
+              <button class="btn-signup" type="submit">{{ $cta }}</button>
+            </p>
+          </div>
+        </form>
+      </label>
+    </div>
+  </div>
+</header>
