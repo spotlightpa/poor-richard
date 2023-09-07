@@ -70,7 +70,7 @@ Before joining the chamber, she served as a staffer and then an attorney for for
 
 “I am a strict constructionist,” she <a href="https://paforciviljusticereform.org/wp-content/uploads/2023/04/PPCJR-Megan-Martin-Candidate-Questionnaire-2023.pdf">wrote in response to a survey</a> by the Pennsylvania Coalition for Civil Justice Reform, a nonprofit that primarily advocates for friendlier laws for the health care industry and other business interests in civil cases. “I am a textualist and an originalist; I do not believe the constitution is a ‘living document.’”
 
-In a <a href="https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">survey</a> by the socially conservative Pennsylvania Family Institute, she said she agreed with the U.S. Supreme Court majority opinion that overturned <em>Roe v. Wade</em>, which calls Roe an “egregiously wrong” decision and compares it to Plessy v. Ferguson, which affirmed the constitutionality of slavery.
+In a <a href="https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">survey</a> by the socially conservative Pennsylvania Family Institute, she said she agreed with the U.S. Supreme Court majority opinion that overturned <em>Roe v. Wade</em>, which calls Roe an “egregiously wrong” decision and compares it to Plessy v. Ferguson, which affirmed the constitutionality of segregation.
 
 Martin’s campaign did not respond to a request for comment on the survey.
 
@@ -207,6 +207,8 @@ Judge Vic Stabile, elected as a Republican in 2013, is seeking a second term. Pr
 Rather than face a head-to-head election, state appellate judges earn a new term in a yes-or-no vote, in which a majority yes vote means they serve another 10-year term unless they turn 75 before then. These races normally attract little attention, and subsequent terms are almost always approved.
 
 The only exception since Pennsylvania adopted its current constitution is state Supreme Court Justice Russell Nigro, who was <a href="https://news.google.com/newspapers?id=1L4iAAAAIBAJ&amp;sjid=NLYFAAAAIBAJ&amp;pg=1358,2907716&amp;dq=russell+m+nigro&amp;hl=en">denied a second term</a> in 2005 after lawmakers voted to increase legislative and judicial salaries in a late-night vote. Nigro had nothing to do with the pay hike, but was nonetheless defeated amid widespread public anger.
+
+<em>Correction: Plessy v. Ferguson affirmed the constitutionality of segregation.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
