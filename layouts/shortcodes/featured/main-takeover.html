@@ -59,50 +59,51 @@
           <h2 class="text-3xl font-extrabold">
             {{ $hed }}
           </h2>
-        <div class="mb-5 flex flex-wrap justify-start align-baseline">
-          <p class="mr-3 flex-[1_0_45%]">
-            <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
-              First Name
-            </label>
-            <input
-              id="{{ $idFname }}"
-              class="spl-input text-black"
-              type="text"
-              name="FNAME"
-              placeholder="First Name"
-              required
-            />
-          </p>
+          <div class="mb-5 flex flex-wrap justify-start align-baseline">
+            <p class="mr-3 flex-[1_0_45%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
+                First Name
+              </label>
+              <input
+                id="{{ $idFname }}"
+                class="spl-input text-black"
+                type="text"
+                name="FNAME"
+                placeholder="First Name"
+                required
+              />
+            </p>
 
-          <p class="ml-3 flex-[1_0_45%]">
-            <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
-              Last Name
-            </label>
-            <input
-              id="{{ $idLname }}"
-              class="spl-input text-black"
-              type="text"
-              name="LNAME"
-              placeholder="Last Name"
-              required
-            />
-          </p>
-          <p class="mr-6 flex-[1_0_100%]">
-            <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
-              Email Address
-            </label>
-            <input
-              id="{{ $idEmail }}"
-              class="spl-input text-black"
-              type="email"
-              name="EMAIL"
-              placeholder="Email address"
-              required
-            />
-          </p>
-          <button type="submit" class="btn-signup mt-4">
-            {{ $cta }}
-          </button>
+            <p class="ml-3 flex-[1_0_45%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+                Last Name
+              </label>
+              <input
+                id="{{ $idLname }}"
+                class="spl-input text-black"
+                type="text"
+                name="LNAME"
+                placeholder="Last Name"
+                required
+              />
+            </p>
+            <p class="mr-6 flex-[1_0_100%]">
+              <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+                Email Address
+              </label>
+              <input
+                id="{{ $idEmail }}"
+                class="spl-input text-black"
+                type="email"
+                name="EMAIL"
+                placeholder="Email address"
+                required
+              />
+            </p>
+            <button type="submit" class="btn-signup mt-4">
+              {{ $cta }}
+            </button>
+          </div>
         </form>
       </label>
     </div>
