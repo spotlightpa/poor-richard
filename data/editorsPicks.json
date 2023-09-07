@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-09-07-SPLEMAILSEARCH.md"
+    "content/news/2023-09-07-SPLAPPELLATEGEN23.md"
   ],
-  "subfeatures": [
-    "content/news/2023-05-31-SPLSHACAL.md",
-    "content/news/2023-01-16-SPLNDA.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-09-07-SPLEMAILSEARCH.md",
     "content/news/2023-09-05-SPLSCOPAGEN23.md",
-    "content/news/2023-09-01-SPLRTKCASE.md",
-    "content/news/2023-09-01-SPLCIVWARTAILS.md"
+    "content/news/2023-09-01-SPLRTKCASE.md"
   ],
   "topper": []
 }
