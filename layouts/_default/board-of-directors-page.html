@@ -67,9 +67,9 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="row-subgrid relative  grid flex-[0_0_calc(50%_-_2rem)] auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 pb-12 shadow-md"
+    class="row-subgrid relative  grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 pb-12 shadow-md sm:flex-[0_0_calc(50%_-_2rem)]"
     x-data="{ isOpen: false }"
-    :style="!isOpen && { height: '640px' }"
+    :style="!isOpen && { height: '560px' }"
     :class="{'overflow-hidden': !isOpen}"
   >
     <div
@@ -77,7 +77,6 @@
     >
       <button
         x-show="!isOpen"
-        :aria-expanded="''+isOpen"
         class="group leading-4 text-navy hover:text-yellow"
         @click="isOpen = true"
         x-report-click
@@ -94,7 +93,6 @@
       </button>
       <button
         x-show="isOpen"
-        :aria-expanded="''+isOpen"
         class="group leading-4 text-navy hover:text-yellow"
         @click="isOpen = false"
         x-report-click
