@@ -19,7 +19,7 @@ takeover = """
   signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
   gaCategory = "newsletters:palocal"
   gaForm = "newsletters:palocal-full"
-  hiddenField = "newsletter/hidden-input.html"
+  hiddenField = "newsletter/berks-county-hidden.html"
 >}}
 """
 supplemental = """
