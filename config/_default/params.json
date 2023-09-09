@@ -79,19 +79,17 @@
   "takeover-hed": "Time is running out and we need your help",
   "takeover-image": "2023/08/01jd-w2vj-77eb-3dp1.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/statecollege/?campaign=701Dn000000YqKfIAK",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#f6c831",
-  "topper-desktop-height": 225,
+  "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01j7/n08w/spring-campaign-topper-tracker-16-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jf/qgjz/september-site-toppertracker.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#f6c831",
   "topper-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
-  "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01j7/n08v/spring-campaign-2023-rectangles-18-.svg"
-  ],
+  "topper-mobile-images": [],
   "topper-mobile-width": 1024
 }
