@@ -10,5 +10,5 @@ Ms. Pavelko also served as president of Prairie Public Broadcasting (1996-99), a
 
 Ms. Pavelko served as assistant professor of communications at Penn State, where she earned a B.A. in ancient history and an M.A. in Journalism. She also earned certificates in non-profit management from the U.C./Berkeley and the Harvard Business School, and was awarded an honorary doctorate by Elizabethtown College. She currently serves on the boards of UPMC Central PA, UPMC Health Plan and the Archaeological Institute of America."""
 active = true
-role = "board"
+board = "board"
 image-gravity = "fp:.55:.45"

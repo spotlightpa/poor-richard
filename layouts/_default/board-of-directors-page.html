@@ -44,7 +44,7 @@
   {{ range sort .Site.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
     {{ if $author.active }}
-      {{ if eq $author.role "board" }}
+      {{ if eq $author.board "board" }}
         {{ $board = $board | append $author }}
       {{ end }}
     {{ end }}
@@ -52,7 +52,7 @@
   <section class="bg-s-2 px-2 pb-10  font-sans">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+        class="mx-auto my-14 mt-10 flex w-full flex-wrap gap-8"
         data-ga-category="inline-footer:author"
       >
         {{ range $board }}
@@ -67,8 +67,47 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="row-subgrid row-span-3 grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 shadow-md sm:max-md:row-span-2 lg:row-span-2"
+    class="row-subgrid relative  grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%_-_2rem)]"
+    x-data="{ isOpen: false }"
+    :style="!isOpen && { height: '560px' }"
+    :class="{'overflow-hidden': !isOpen}"
   >
+    <div
+      class="via-40% absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white px-4 pt-12 pb-4"
+    >
+      <button
+        x-show="!isOpen"
+        class="group leading-4 text-navy hover:text-yellow"
+        @click="isOpen = true"
+        x-report-click
+        data-ga-category="toggle-bio"
+      >
+        <span aria-hidden="true">
+          <svg class="inline-block h-4 w-4 fill-current">
+            {{ partial "helper/svg.html" "plus" }}
+          </svg>
+        </span>
+        <span class="ml-2 align-bottom uppercase hover:underline">
+          Show more…
+        </span>
+      </button>
+      <button
+        x-show="isOpen"
+        class="group leading-4 text-navy hover:text-yellow"
+        @click="isOpen = false"
+        x-report-click
+        data-ga-category="toggle-bio"
+      >
+        <span aria-hidden="true">
+          <svg class="inline-block h-4 w-4 fill-current">
+            {{ partial "helper/svg.html" "minus" }}
+          </svg>
+        </span>
+        <span class="ml-2 align-bottom uppercase hover:underline">
+          Show less…
+        </span>
+      </button>
+    </div>
     {{ if $author.headshot }}
       {{ $sizes := (slice
         (dict "width" 256 "height" 256)
