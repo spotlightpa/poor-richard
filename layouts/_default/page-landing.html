@@ -11,18 +11,24 @@
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
-    <div class="mx-auto max-w-screen-lg">
-      {{ partial "tw/breadcrumbs.html" . }}
-    </div>
-    <div class="mx-auto w-full max-w-screen-lg">
-      <h1
-        class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
-      >
-        {{- .Title -}}
-      </h1>
-    </div>
-  </header>
+  {{ with .Page.RenderString (.Param "takeover") }}
+    {{ . }}
+  {{ else }}
+    <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
+      <div class="mx-auto max-w-screen-lg">
+        {{ partial "tw/breadcrumbs.html" . }}
+      </div>
+      <div class="mx-auto w-full max-w-screen-lg">
+        <h1
+          class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+    </header>
+  {{ end }}
+
+
   <section class="bg-s-0 pt-4 font-sans">
     {{ if or (.Content) (.Page.Params.subhed) }}
       <div
