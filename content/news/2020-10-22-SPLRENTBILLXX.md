@@ -1,33 +1,22 @@
 +++
 arc-id = "OHURLPJWAFGM7B6NKKGXR3GDX4"
-internal-id = "SPLRENTBILLXX"
-internal-budget = ""
-image = "external/rd4epnv2dx47vkjbrxx92dfkr0.jpeg"
-image-description = "As a result of the Senate’s inaction, the relief program will probably expire Nov. 4 having distributed just a fraction of the money allotted to it."
-image-caption = ""
-image-credit = "Dan Nott / For Spotlight PA"
-image-size = ""
-published = 2020-10-22T09:30:00Z
-slug = "pa-rental-assistance-program-bill-house-senate-republicans"
 authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Senate GOP halts fixes for Pa.’s troubled rent relief program, surprising even their own"
-subtitle = ""
-description = "The state House unanimously passed long-awaited changes Monday, but Senate leadership refused to advance it, leaving many landlords and families on the financial brink."
 blurb = "The state House unanimously passed long-awaited changes Monday, but Senate leadership refused to advance it, leaving many landlords and families on the financial brink."
+byline = "Charlotte Keith of Spotlight PA"
+description = "The state House unanimously passed long-awaited changes Monday, but Senate leadership refused to advance it, leaving many landlords and families on the financial brink."
+image = "external/rd4epnv2dx47vkjbrxx92dfkr0.jpeg"
+image-credit = "Dan Nott / For Spotlight PA"
+image-description = "As a result of the Senate’s inaction, the relief program will probably expire Nov. 4 having distributed just a fraction of the money allotted to it."
+internal-id = "SPLRENTBILLXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-10-22T05:30:00-04:00
+slug = "pa-rental-assistance-program-bill-house-senate-republicans"
+suppress-date = false
+suppress-featured = false
+title = "Senate GOP halts fixes for Pa.’s troubled rent relief program, surprising even their own"
+topics = ["Coronavirus", "Eviction"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
