@@ -5,6 +5,9 @@ description = "Spotlight PA combines the strength of Philadelphia Inquirer, Penn
 linktitle = "Partners"
 layout = "page-landing"
 
+[[blocks]]
+layout = "partners"
+
 form ="""
 {{<featured/promo-contact-form
   hed="Become a partner"
