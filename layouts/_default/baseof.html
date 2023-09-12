@@ -116,6 +116,7 @@
       onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
     ></script>
     {{ partialCached "header/gtm.html" . }}
+    {{ partialCached "header/captcha.html" . }}
     {{ partial "header/ld-json.html" . }}
   </body>
 </html>

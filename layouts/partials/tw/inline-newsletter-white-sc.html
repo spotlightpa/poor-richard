@@ -1,5 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
+  id="inline-newsletter-white-sc"
   class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-s-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8
   "
   x-data="{ active: false }"
@@ -43,7 +44,15 @@
       </span>
     </p>
     <p class="mt-4 sm:ml-1 sm:mt-0">
-      <button class="btn-signup" type="submit">Sign Up</button>
+      <button
+        class="btn-signup g-recaptcha"
+        type="submit"
+        data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
+        data-callback="onSubmit"
+        data-action="submit"
+      >
+        Sign Up
+      </button>
     </p>
   </div>
   <p class="mx-auto mt-4 text-center text-sm font-normal leading-tight">

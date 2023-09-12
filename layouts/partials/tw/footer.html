@@ -49,8 +49,13 @@
       Spotlight PA relies on funding from foundations and readers like you who
       are committed to accountability journalism that gets results.
     </h2>
-
+    <script>
+      function onSubmit(token) {
+        document.getElementById("footer-signup").submit();
+      }
+    </script>
     <form
+      id="footer-signup"
       class=" mx-auto max-w-xl md:max-w-2xl"
       x-form="newsletters:multi"
       x-data="{ hasFocused: false }"
@@ -79,8 +84,11 @@
         />
 
         <button
-          class="m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+          class="g-recaptcha m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
           type="submit"
+          data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
+          data-callback="onSubmit"
+          data-action="submit"
         >
           Sign Up
         </button>
