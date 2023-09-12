@@ -11,24 +11,18 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ with .Page.RenderString (.Param "takeover") }}
-    {{ . }}
-  {{ else }}
-    <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
-      <div class="mx-auto max-w-screen-lg">
-        {{ partial "tw/breadcrumbs.html" . }}
-      </div>
-      <div class="mx-auto w-full max-w-screen-lg">
-        <h1
-          class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
-        >
-          {{- .Title -}}
-        </h1>
-      </div>
-    </header>
-  {{ end }}
-
-
+  <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
+    <div class="mx-auto max-w-screen-lg">
+      {{ partial "tw/breadcrumbs.html" . }}
+    </div>
+    <div class="mx-auto w-full max-w-screen-lg">
+      <h1
+        class="mb-2 font-sans text-3xl font-bold leading-tight tracking-wide text-black sm:text-4xl lg:text-5xl"
+      >
+        {{- .Title -}}
+      </h1>
+    </div>
+  </header>
   <section class="bg-s-0 pt-4 font-sans">
     {{ if or (.Content) (.Page.Params.subhed) }}
       <div
@@ -52,14 +46,14 @@
 
     {{ .Page.RenderString (.Param "testimonials-group") }}
 
-    {{ with .Page.RenderString (.Param "supplemental") }}
+
     <article
       class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
     >
-      {{ . }}
+      {{ .Page.RenderString (.Param "supplemental") }}
       {{ .Page.RenderString (.Param "credit") }}
     </article>
-    {{ end }}
+
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
@@ -76,16 +70,9 @@
         }}
       </div>
     {{ end }}
-      {{ with .Page.RenderString (.Param "supporters") }}
     <div class="py-9">
-      {{ . }}
+      {{ .Page.RenderString (.Param "supporters") }}
     </div>
-    {{ end }}
-    {{ with .Page.RenderString (.Param "form") }}
-      <div class="-mx-4 bg-s-3 font-sans md:mx-0 md:px-4">
-    {{ . }}
-  </div>
-{{ end }}
   </section>
 {{ end }}
 
