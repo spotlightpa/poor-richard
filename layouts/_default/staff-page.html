@@ -40,14 +40,17 @@
 
 {{ define "extra-main" }}
   {{ $reporters := slice }}
-  {{ $others := slice }}
+  {{ $admin := slice }}
+  {{ $board := slice }}
+
   {{ range sort .Site.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
     {{ if $author.active }}
-      {{ if $author.reporter }}
+      {{ if eq $author.role "reporter" }}
         {{ $reporters = $reporters | append $author }}
-      {{ else }}
-        {{ $others = $others | append $author }}
+      {{ end }}
+      {{ if eq $author.role "admin" }}
+        {{ $admin = $admin | append $author }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -77,7 +80,7 @@
         class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
         data-ga-category="inline-footer:author"
       >
-        {{ range $others }}
+        {{ range $admin }}
           {{ template "staff-page-card" . }}
         {{ end }}
       </ul>

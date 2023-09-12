@@ -6,7 +6,7 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "test": "yarn run test:eslint && yarn run test:prettier",
+    "test": "yarn run test:eslint; yarn run test:prettier; yarn run test:html",
     "format": "yarn run format:eslint; yarn run format:prettier; yarn run format:html",
     "test:eslint": "eslint --ext .js --ignore-path .gitignore .",
     "format:eslint": "eslint --fix --ext .js --ignore-path .gitignore .",
@@ -35,7 +35,6 @@
     "alpinejs": "^3.12.3",
     "autoprefixer": "^10.4.14",
     "bulma": "^0.9.3",
-    "ga-lite": "^2.1.6",
     "journalize": "^2.5.1",
     "postcss": "^8.4.25",
     "postcss-cli": "^10.0.0",

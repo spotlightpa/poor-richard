@@ -1,6 +1,6 @@
 <div
   class="
-         border-b border-s-4 mt-10 space-y-4 p-4
+         mt-10 space-y-4 border-b border-s-4 p-4
       "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
@@ -19,7 +19,7 @@
 
 <div
   class="
-         border-b border-s-4 mt-10 space-y-4 p-4 font-sans
+         mt-10 space-y-4 border-b border-s-4 p-4 font-sans
       "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
@@ -40,7 +40,7 @@
 </div>
 <div
   class="
-         border-b border-s-4 mt-10 space-y-4 p-4 font-sans
+         mt-10 space-y-4 border-b border-s-4 p-4 font-sans
       "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
@@ -55,7 +55,7 @@
 </div>
 <div
   class="
-         border-b border-s-4 mt-10 space-y-4 p-4 font-sans
+         mt-10 space-y-4 border-b border-s-4 p-4 font-sans
       "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">Ribbon Modal</h3>
@@ -81,7 +81,7 @@
             type="button"
             aria-label="close"
             x-ref="closer"
-            data-ga-action="modal:newsletter:dismiss"
+            data-ga-category="dismiss"
             @keydown.escape="isOpen = false"
             @click="isOpen = false;"
             :autofocus="isOpen"
@@ -192,7 +192,7 @@
                     name="papost"
                     value="1"
                     checked
-                    data-ga-action="toggle-newsletter:papost"
+                    data-ga-category="toggle-newsletter:papost"
                   />
                   <strong>PA Post (Daily)</strong>: Top news every weekday
                   morning, plus a daily puzzle.
@@ -206,7 +206,7 @@
                     name="investigator"
                     value="1"
                     checked
-                    data-ga-action="toggle-newsletter:investigator"
+                    data-ga-category="toggle-newsletter:investigator"
                   />
                   <strong>The Investigator (Weekly)</strong>: Best
                   accountability journalism every Thursday, plus a weekly
@@ -221,7 +221,7 @@
                     name="palocal"
                     value="1"
                     checked
-                    data-ga-action="toggle-newsletter:palocal"
+                    data-ga-category="toggle-newsletter:palocal"
                   />
                   <strong>PA Local (Weekly)</strong>: A fresh look at the
                   incredible people, places, and food of Pa. every Friday.

@@ -6,6 +6,7 @@
 {{ $linkColor := .linkColor | default `text-dek ` }}
 {{ $subitemSize := .subitemSize | default `` }}
 
+
 <article class="flex flex-col space-y-1">
   <div data-ga-category="eyebrow">
     {{ if .extendedEyebrow }}
@@ -53,7 +54,7 @@
         </h2>
         {{ if .dek }}
           <h3
-            class="{{ $dekSize }} leading-tight tracking-normal order-1 font-sans font-light text-dek"
+            class="{{ $dekSize }} order-1 font-sans font-light leading-tight tracking-normal text-dek"
           >
             <a
               href="{{ .link }}"
@@ -106,7 +107,9 @@
       {{ if .subitems }}
         <ul class="list-inside space-y-3 pt-5 font-sans font-light">
           {{ range .subitems }}
-            <li class="{{ $subitemSize }} list-[square] leading-snug tracking-normal">
+            <li
+              class="{{ $subitemSize }} list-[square] leading-snug tracking-normal"
+            >
               <a
                 href="{{ .link }}"
                 class="{{ $linkColor }} hover:underline"

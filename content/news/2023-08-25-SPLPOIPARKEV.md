@@ -28,7 +28,7 @@ Pennsylvania’s Mental Health Procedures Act of 1976 was designed to protect pe
 
 On Thursday, Sept. 14, join Spotlight PA at Point Park University’s Center for Media Innovation for a live discussion of mental health in Pennsylvania jails and how the newsrooms reported one woman’s fight for freedom.
 
-<a href="https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"><strong>RSVP now</strong></a><strong> to reserve your seat; seating is limited. The event will also be livestreamed.</strong>
+<a href="https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"><strong>RSVP now</strong></a><strong> to reserve your seat; seating is limited. The event will also be livestreamed. Register </strong><a href="https://zoom.us/webinar/register/WN_C34sE95OQemW6clgAcV_nw"><strong>here</strong></a><strong> to attend the event virtually.</strong>
 
 <strong>When:</strong> Thursday, Sept. 14, 6-7:30 p.m. ET
 
