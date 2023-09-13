@@ -175,7 +175,7 @@ At Spotlight PA, we’re here to help you navigate the Pennsylvania election pro
 
 Our goal is that the resources on this page will give you the critical information you need in order to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 
-This November, voters across Pennsylvania will pick a new state Supreme Court justice and a new judge to sit on Commonwealth Court. They will also decide whether two judges on Superior Court should get another term. These positions hold a lot of power and hand down consequential decisions on everything from school funding to elections to abortion access.
+This November, voters across Pennsylvania will pick a new state Supreme Court justice and new judges to sit on Commonwealth and Superior Cours. They will also decide whether two judges on Superior Court should get another term. These positions hold a lot of power and hand down consequential decisions on everything from school funding to elections to abortion access.
 
 Further down the ballot are local and regional judicial contests as well as municipal races for local officials and school board members. These elected officials have regular, close contact with communities and can use that power to directly affect people’s lives for good (and bad).
 
