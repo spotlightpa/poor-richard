@@ -65,8 +65,10 @@ donate ="""
 """
 form ="""
 {{<featured/promo-contact-form
+  formName="elections"
   hed="Ask Us Your Questions"
-  dek="Spotlight PA is covering Pennsylvania's 2023 judicial and municipal elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form below to reach our election team."
+  recipient="Angela Couloumbis, Katie Meyer, Kate Huangpu"
+  dek="Spotlight PA is covering Pennsylvania's 2023 judicial and municipal elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
   submit="Send Inquiry"
 >}}
 """
@@ -102,7 +104,7 @@ sidebar = """
   {{</sidebar-links>}}
   {{<sidebar-links hed="Key Dates" event="true">}}
     {{<sidebar-link
-    title="last day to register to vote"
+    title="Last day to register to vote"
     date="2023-10-23"
     dateVerbose="Oct. 23, 2023"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
@@ -173,7 +175,7 @@ At Spotlight PA, we’re here to help you navigate the Pennsylvania election pro
 
 Our goal is that the resources on this page will give you the critical information you need in order to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 
-This November, voters across Pennsylvania will pick a new state Supreme Court justice and judge to sit on Commonwealth Court, as well as decide whether two judges on Superior Court should get another term. These judges hold a lot of power and hand down consequential decisions on everything from school funding to elections to abortion access. 
+This November, voters across Pennsylvania will pick a new state Supreme Court justice and a new judge to sit on Commonwealth Court. They will also decide whether two judges on Superior Court should get another term. These positions hold a lot of power and hand down consequential decisions on everything from school funding to elections to abortion access.
 
 Further down the ballot are local and regional judicial contests as well as municipal races for local officials and school board members. These elected officials have regular, close contact with communities and can use that power to directly affect people’s lives for good (and bad).
 
