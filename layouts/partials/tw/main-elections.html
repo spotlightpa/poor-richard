@@ -50,23 +50,22 @@
 >
   {{ $guide := site.GetPage "content/series/voting-guides-2023/_index.md" }}
 
-
-{{ $pages := $guide.RegularPages }}
-{{ $primary := (time "2023-08-01").Unix }}
-{{ $newGuide := where $guide.RegularPages
-  ".PublishDate.Unix" "gt" $primary
-}}
-{{ if $newGuide }}
-
-  {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Election 2023: Candidate and Voting Guides"
-    "pages" $newGuide
-    "readMoreLink" $guide.RelPermalink
-    "readMore" "Read More PA Election 2023 Guides"
-    "rows" 2
-    )
+  {{ $pages := $guide.RegularPages }}
+  {{ $primary := (time "2023-08-01").Unix }}
+  {{ $newGuide := where $guide.RegularPages
+    ".PublishDate.Unix" "gt" $primary
   }}
-{{ end }}
+  {{ if $newGuide }}
+
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "PA Election 2023: Candidate and Voting Guides"
+      "pages" $newGuide
+      "readMoreLink" $guide.RelPermalink
+      "readMore" "Read More PA Election 2023 Guides"
+      "rows" 2
+      )
+    }}
+  {{ end }}
 </section>
 
 <div class="bg-white">
