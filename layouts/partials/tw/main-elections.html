@@ -49,14 +49,24 @@
   x-intersect.half="$dispatch('intersect:about', $el.id)"
 >
   {{ $guide := site.GetPage "content/series/voting-guides-2023/_index.md" }}
+
+
+{{ $pages := $guide.RegularPages }}
+{{ $primary := (time "2023-08-01").Unix }}
+{{ $newGuide := where $guide.RegularPages
+  ".PublishDate.Unix" "gt" $primary
+}}
+{{ if $newGuide }}
+
   {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Primary Election 2023: Candidate and Voting Guides"
-    "pages" $guide.RegularPages
+    "hed" "PA Election 2023: Candidate and Voting Guides"
+    "pages" $newGuide
     "readMoreLink" $guide.RelPermalink
     "readMore" "Read More PA Election 2023 Guides"
     "rows" 2
     )
   }}
+{{ end }}
 </section>
 
 <div class="bg-white">
@@ -75,22 +85,28 @@
   </div>
 </section>
 
-<section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
-  {{ $elex := site.GetPage "content/topics/elections/_index.md" }}
+{{ $elex := site.GetPage "content/topics/elections/_index.md" }}
 
-  {{ $pages := $elex.RegularPages }}
-  {{ partial "tw/list-3-col-story.html" (dict
-    "hed" "PA Primary Election 2023: More Coverage"
-    "pages" $pages
-    "readMoreLink" $elex.RelPermalink
-    "readMore" "Read More PA Election 2023 Stories"
-    "rows" 2
-    )
-  }}
-</section>
+{{ $pages := $elex.RegularPages }}
+{{ $primary := (time "2023-08-01").Unix }}
+{{ $newElex := where $elex.RegularPages
+  ".PublishDate.Unix" "gt" $primary
+}}
+{{ if $newElex }}
 
+  <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "PA Election 2023: More Coverage"
+      "pages" $newElex
+      "readMoreLink" $elex.RelPermalink
+      "readMore" "Read More PA Election 2023 Stories"
+      "rows" 2
+      )
+    }}
+  </section>
+{{ end }}
 {{ $espan := site.GetPage "content/topics/español/_index.md" }}
-{{ $primary := (time "2023-03-28").Unix }}
+{{ $primary := (time "2023-08-01").Unix }}
 {{ $newEspan := where $espan.RegularPages
   ".PublishDate.Unix" "gt" $primary
 }}
