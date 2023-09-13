@@ -11,7 +11,7 @@ Before joining Spotlight PA, she covered the state Senate for the Pennsylvania C
 
 She has received statewide recognition for her coverage of the 2020 post-election review conducted by Senate Republicans and how the U.S. Supreme Court's decision to overturn Roe v. Wade could affect statewide access to reproductive care."""
 headshot = "2023/08/01je-75nq-gypz-1e19.webp"
-reporter = true
+role = "reporter"
 beat = "Rural Affairs"
 focusHed = "Agriculture, environment, community development, how state agencies and policies affect rural communities"
 focus = ""

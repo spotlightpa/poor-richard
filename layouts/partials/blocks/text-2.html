@@ -14,19 +14,23 @@
           {{ $.Page.RenderString .copy }}
         </div>
       </div>
-      {{ with .cta }}
+
+      {{ with .actions }}
         <div
-          class="mt-12 flex justify-center text-center leading-tight"
+          class="mt-12 flex justify-center space-x-3 text-center leading-tight"
           data-ga-category="cta"
         >
-          <a
-            class="border border-white px-4 py-2 text-xl font-bold text-white duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
-            href="{{ .url }}"
-          >
-            {{- .copy -}}
-          </a>
+          {{ range . }}
+            <a
+              class="border border-white px-4 py-2 text-xl font-bold text-white duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+              href="{{ .url }}"
+            >
+              {{- .copy -}}
+            </a>
+          {{ end }}
         </div>
       {{ end }}
+
     </div>
   </section>
 {{ end }}

@@ -16,7 +16,7 @@ slug = "mortgage-assistance-five-things"
 suppress-date = false
 title = "5 takeaways from our ‘Lost in Transition’ project about Pa.’s struggling mortgage assistance program"
 title-tag = "5 takeaways from our ‘Lost in Transition’ investigation"
-topics = ["Housing"]
+topics = ["Eviction"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

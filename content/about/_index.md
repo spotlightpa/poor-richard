@@ -35,12 +35,17 @@ url = "/investigations/"
 copy = "See More About Our Impact"
 
 [[blocks]]
-title = "Staff"
+title = "Team"
 layout = "text-2"
 copy="{{<featured/large>}}We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, they work for you, the public. Meet our staff, and learn how you can contact them:{{</featured/large>}}"
-[blocks.cta]
+
+[[blocks.actions]]
 url = "/about/staff/"
 copy = "See More About Our Staff"
+
+[[blocks.actions]]
+url = "/about/board/"
+copy = "Meet Our Board"
 
 [[blocks]]
 layout = "partners"
