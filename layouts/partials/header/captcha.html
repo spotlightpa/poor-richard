@@ -1,1 +1,14 @@
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"></script>
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha
+      .execute("6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa", {
+        action: "signup",
+      })
+      .then(function (token) {
+        document
+          .querySelectorAll(".recaptcha-response")
+          .forEach((elem) => (elem.value = token));
+      });
+  });
+</script>

@@ -9,11 +9,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 
 
-<script>
-  function onSubmit(token) {
-    document.getElementById("newsletter-full").submit();
-  }
-</script>
 <section class=" bg-s-3 md:px-4" data-ga-category="inline">
   <div
     class="mx-auto max-w-screen-lg px-4 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-24 lg:px-0"
@@ -29,7 +24,6 @@
       </div>
 
       <form
-        id="newsletter-full"
         action="{{ site.Param `newsletters-action` }}"
         method="post"
         target="_blank"
@@ -82,13 +76,7 @@
               required
             />
           </p>
-          <button
-            type="submit"
-            class="btn-signup g-recaptcha mt-4"
-            data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-            data-callback="onSubmit"
-            data-action="submit"
-          >
+          <button type="submit" class="btn-signup mt-4">
             {{ $cta }}
           </button>
         </div>

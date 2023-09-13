@@ -24,13 +24,7 @@
   {{ $pages := where .Pages "Kind" "section" }}
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
-  <script>
-    function onSubmit(token) {
-      document.getElementById("newsletter-signup").submit();
-    }
-  </script>
   <form
-    id="newsletter-signup"
     action="{{ .Param `newsletters-action` }}"
     method="post"
     target="_blank"
@@ -240,15 +234,7 @@
               </span>
             </p>
             <div class="mt-2 flex-1 self-end sm:ml-5">
-              <button
-                type="submit"
-                class="btn-signup g-recaptcha"
-                data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-                data-callback="onSubmit"
-                data-action="submit"
-              >
-                Subscribe
-              </button>
+              <button type="submit" class="btn-signup">Subscribe</button>
             </div>
           </div>
         </div>

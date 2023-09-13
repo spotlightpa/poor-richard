@@ -7,11 +7,6 @@
 {{ $gaCategory := .Get "gaCategory" }}
 {{ $gaForm := .Get "gaForm" }}
 {{ $hiddenField := .Get "hiddenField" }}
-<script>
-  function onSubmit(token) {
-    document.getElementById("main-takeover").submit();
-  }
-</script>
 <header class="relative z-20 flex flex-col bg-black text-white">
   {{ $imgOpt := dict
     "filename" ($src)
@@ -52,7 +47,6 @@
         class="backdrop-fallback mx-auto my-8 block w-full rounded p-8 shadow ring-1 ring-s-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
       >
         <form
-          id="main-takeover"
           action="{{ site.Param `newsletters-action` }}"
           method="post"
           target="_blank"
@@ -107,13 +101,7 @@
                 required
               />
             </p>
-            <button
-              type="submit"
-              class="btn-signup g-recaptcha mt-4"
-              data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-              data-callback="onSubmit"
-              data-action="submit"
-            >
+            <button type="submit" class="btn-signup mt-4">
               {{ $cta }}
             </button>
           </div>

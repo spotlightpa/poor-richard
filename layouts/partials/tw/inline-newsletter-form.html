@@ -9,14 +9,8 @@
 {{ $idEmail := partial "helper/new-id" . }}
 
 
-<script>
-  function onSubmit(token) {
-    document.getElementById("inline-newsletter-form").submit();
-  }
-</script>
 <section data-ga-category="inline">
   <form
-    id="inline-newsletter-form"
     action="{{ site.Param `newsletters-action` }}"
     method="post"
     target="_blank"
@@ -70,13 +64,7 @@
         required
       />
     </p>
-    <button
-      type="submit"
-      class="btn-signup g-recaptcha mt-4"
-      data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-      data-callback="onSubmit"
-      data-action="submit"
-    >
+    <button type="submit" class="btn-signup mt-4">
       {{ $cta }}
     </button>
   </form>

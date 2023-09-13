@@ -2,11 +2,7 @@
 {{ $imagename := .filename }}
 {{ $actionColor := .actionColor | default "#FFCB05" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
-<script>
-  function onSubmit(token) {
-    document.getElementById("ribbon-signup").submit();
-  }
-</script>
+
 
 <div
   data-modal-kind="newsletter"
@@ -63,7 +59,6 @@
             </svg>
           </button>
           <form
-            id="ribbon-signup"
             class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
           bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-form="newsletters:multi"
@@ -137,11 +132,8 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class="g-recaptcha box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+                class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                 type="submit"
-                data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-                data-callback="onSubmit"
-                data-action="submit"
               >
                 Sign Up
               </button>

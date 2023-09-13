@@ -1,11 +1,5 @@
 {{ $idEmail := partial "helper/new-id" . }}
-<script>
-  function onSubmit(token) {
-    document.getElementById("inline-newsletter-box").submit();
-  }
-</script>
 <form
-  id="inline-newsletter-box"
   class="
     rounded bg-black p-8
     text-center font-sans text-white shadow
@@ -51,15 +45,7 @@
       </span>
     </p>
     <p class="mt-4 sm:ml-1 sm:mt-0">
-      <button
-        class="btn-signup g-recaptcha"
-        type="submit"
-        data-sitekey="6LcAyh0oAAAAAKXck2xbmQ22pcEyHSEr9IBreBYa"
-        data-callback="onSubmit"
-        data-action="submit"
-      >
-        Sign Up
-      </button>
+      <button class="btn-signup" type="submit">Sign Up</button>
     </p>
   </div>
   {{ $checkClass := `mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4` }}
