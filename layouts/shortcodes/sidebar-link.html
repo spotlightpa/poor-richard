@@ -11,16 +11,13 @@
   {{ if $date }}
     <button
       @click.prevent="
-        $report($event);
         import(url).then((m) => m.atcb_action(data($el), $el))
       "
-      @click.prevent="
-        $report($event);
-        import(url).then((m) => m.atcb_action(data($el), $el))
-      "
+      type="button"
       data-name="{{ $title }}"
       data-date="{{ $date }}"
-      data-ga-action="add-to-calendar"
+      data-ga-category="add-to-calendar"
+      x-report-click
       class="text-left font-bold underline-offset-2"
     >
       <p class="font-bold underline-offset-2">
@@ -34,14 +31,14 @@
       </time>
 
       <span
-        class="border-transparent pt-1 font-sans text-sm uppercase tracking-wide text-s-6 underline underline-offset-2 hover:text-blue"
+        class="border-transparent pt-1 font-sans text-sm uppercase tracking-wide text-blue underline underline-offset-2 hover:text-s-6"
         type="button"
         >Add to Calendar</span
       >
     </button>
   {{ else }}
     <a
-      class="font-bold underline-offset-2 hover:text-blue hover:underline"
+      class="font-bold text-blue underline-offset-2 hover:text-s-6 hover:underline"
       href="{{ $link }}"
     >
       {{- $title -}}
