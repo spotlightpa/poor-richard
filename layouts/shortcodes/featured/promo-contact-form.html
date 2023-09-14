@@ -39,13 +39,14 @@
 {{ $idSubject := partial "helper/new-id" . }}
 {{ $idBody := partial "helper/new-id" . }}
 {{ $idAnonymous := partial "helper/new-id" . }}
+{{ $formName := .Get "formName" | default "Contact Page" }}
 {{ $hed := .Get "hed" }}
 {{ $dek := .Get "dek" }}
 {{ $recipient := .Get "recipient" }}
 {{ $anonymous := .Get "show-anon" | default false }}
 {{ $cta := .Get "submit" | default "Submit" }}
 <section
-  class="relative -mx-5 bg-s-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
+  class="relative -mx-4 bg-s-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
 >
   <div
     class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
@@ -58,7 +59,7 @@
     </header>
     <div class="text-base md:col-span-5 md:col-start-6">
       <form
-        name="contact-page"
+        name="{{ $formName }}"
         action="/contact/thanks/"
         method="post"
         netlify
