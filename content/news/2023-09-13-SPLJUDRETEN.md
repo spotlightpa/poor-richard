@@ -28,7 +28,7 @@ All state judges — from those who preside over municipal courts to the justice
 
 Retention elections, Pennsylvania&#39;s process for keeping those judges in their positions, are a big part of the reason why.
 
-### What is a judicial retention election? Who is running for retention in 2023? The records of the Superior Court judges up for retention
+### Table of Contents
 
 1. <a href="#spl-heading-1">What is a judicial retention election?</a>
 
