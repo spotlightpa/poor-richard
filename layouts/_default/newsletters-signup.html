@@ -32,13 +32,7 @@
     x-data
     x-form="all-newsletters"
   >
-    {{ partial "newsletter/hidden-input.html" . }}
-    <p class="is-hidden" hidden>
-      <label>
-        <input type="checkbox" name="contact" value="1" />
-        I am a robot
-      </label>
-    </p>
+    {{ partial "newsletter/basic-hidden.html" . }}
     <section class="bg-white px-4 pt-12 pb-2 md:pb-6">
       <header class="mx-auto w-full max-w-screen-lg">
         <h1
