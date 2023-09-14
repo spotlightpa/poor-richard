@@ -19,7 +19,7 @@ topics = ["Education", "The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-HARRISBURG —&nbsp;Months after a landmark court decision found Pennsylvania&#39;s public school funding system unconstitutional, a new commission tasked with resolving statewide disparities held its first series of hearings this week.
+HARRISBURG —&nbsp;Months after a landmark court decision found Pennsylvania&#39;s public school funding system unconstitutional, a commission tasked with resolving statewide disparities held its first series of hearings this week.
 
 The hearings kick off a process that could affect generations of students. But lawmakers said they&#39;re still far apart on bedrock issues, like how much additional cash they&#39;ll need to pump into the system.
 
