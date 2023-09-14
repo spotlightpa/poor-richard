@@ -70,6 +70,7 @@
             @click.stop
             @keydown.escape="isOpen = false"
           >
+            {{ partial "newsletter/basic-hidden.html" . }}
             {{ with $imagename }}
               <div
                 class="-mt-14 flex aspect-video items-stretch justify-center self-stretch overflow-hidden rounded-tr md:col-start-3 md:row-start-1 md:row-end-4 md:mt-0 md:aspect-auto"
@@ -119,7 +120,6 @@
             <div
               class="m-5 flex max-w-md flex-wrap items-stretch justify-start space-y-4 sm:flex-nowrap md:col-start-1 md:col-end-3"
             >
-              {{ partial "newsletter/hidden-input.html" . }}
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"

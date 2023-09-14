@@ -18,12 +18,8 @@
   }"
   @focusin="hasFocused = true"
 >
-  {{ partial "newsletter/hidden-input.html" . }}
-  <p class="is-hidden" hidden>
-    <label>
-      <input type="checkbox" name="contact" value="1" />
-      I am a robot
-    </label>
+  {{ partial "newsletter/basic-hidden.html" . }}
+  <p class="hidden" hidden>
     <template x-if="!! preselected">
       <input type="hidden" :name="preselected" value="1" />
     </template>

@@ -1,20 +1,2 @@
-<input
-  type="hidden"
-  name="redirect"
-  value="https://www.spotlightpa.org/newsletters/thanks/"
-/>
-<input
-  type="hidden"
-  name="redirect_sorry"
-  value="https://www.spotlightpa.org/newsletters/sorry/"
-/>
-<input type="hidden" x-data :name="'shibboleth'" :value="'PA Rocks!'" />
+{{ partial "newsletter/basic-hidden.html" . }}
 <input type="hidden" name="papost" value="1" />
-<input type="hidden" name="breaking_news" value="1" />
-<input type="hidden" name="week_in_review" value="1" />
-<p class="is-hidden" hidden>
-  <label>
-    <input type="checkbox" name="contact" value="1" />
-    I am a robot
-  </label>
-</p>
