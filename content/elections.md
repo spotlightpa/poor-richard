@@ -137,18 +137,18 @@ link = "guides"
 title = "Election Event Series"
 link = "events"
 
-[[internal-links]]
-title = "Issues"
-link = "issues"
+# [[internal-links]]
+# title = "Issues"
+# link = "issues"
 
 
 [[internal-links]]
 title = "Coverage"
 link = "coverage"
 
-[[internal-links]]
-title = "Español"
-link = "#espan"
+# [[internal-links]]
+# title = "Español"
+# link = "#espan"
 
 [[internal-links]]
 title = "Ask Us"
