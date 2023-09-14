@@ -76,29 +76,34 @@ sidebar = """
 {{<landing-sidebar>}}
   {{<sidebar-links hed="State Election Resources">}}
     {{<sidebar-link
-    title="Register to vote"
-    link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+    title = "Register to vote"
+    emoji = ":ballot_box_with_ballot:"
+    link = "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title = "Check your registration status"
+    emoji = ":memo:"
     link = "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title = "Find your polling place"
+    emoji = ":round_pushpin:"
     link = "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
 
     {{<sidebar-link
     title = "Request a mail ballot"
+    emoji = ":email:"
     link = "https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/"
 
     >}}
 
     {{<sidebar-link
     title = "Contact your county election office"
+    emoji = ":iphone:"
     link = "https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
     >}}
   {{</sidebar-links>}}
@@ -169,19 +174,19 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 hed="Court Primer"
 dek="Join Spotlight PA on Oct. 12 to learn more about the candidates running for state Supreme Court and more, and what these elections will mean for you."
 date="2023-10-12"
-dateVerbose="Oct. 12, 2023"
+dateVerbose="Oct. 12, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
 registration="https://zoom.us/webinar/register/WN_YOXkhwI5SHSHQCCoc-OJNA"
 
 [[blocks.entries]]
 hed="Voter Ready"
-dek="Learn about your voting rights and ask your remaining questions ahead of Election Day."
+dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."
 date="2023-11-02"
 dateVerbose="Nov. 2, 2023 on Zoom"
 
 [[blocks.entries]]
 hed="Result Review"
-dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come."
+dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come. Registration coming soon."
 date="2023-11-16"
 dateVerbose="Nov. 16, 2023 on Zoom"
 +++

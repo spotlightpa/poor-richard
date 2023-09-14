@@ -2,6 +2,7 @@
 {{ $link := .Get "link" }}
 {{ $date := .Get "date" }}
 {{ $dateVerbose := .Get "dateVerbose" }}
+{{ $emoji := .Get "emoji" }}
 
 
 <li
@@ -37,11 +38,11 @@
       >
     </button>
   {{ else }}
-    <a
-      class="font-bold text-blue underline underline-offset-2 hover:text-s-6 hover:no-underline"
-      href="{{ $link }}"
-    >
-      {{- $title -}}
+    <a class="font-bold text-blue hover:text-s-6" href="{{ $link }}">
+      {{ emojify $emoji }}
+      <span class="underline underline-offset-2 hover:no-underline"
+        >{{- $title -}}</span
+      >
     </a>
   {{ end }}
 </li>
