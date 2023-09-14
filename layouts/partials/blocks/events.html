@@ -44,9 +44,11 @@
               <h3 class="font-serif text-lg font-bold">
                 <a href="{{ .link }}">{{ .hed }}</a>
               </h3>
-                <time datetime="{{ .date }}" class="font-bold my-2 font-sans text-sm uppercase tracking-wide"
-                  >{{ .dateVerbose }}</time
-                >
+              <time
+                datetime="{{ .date }}"
+                class="my-2 font-sans text-sm font-bold uppercase tracking-wide"
+                >{{ .dateVerbose }}</time
+              >
               <p class="font-base">{{ .dek }}</p>
               <p class="my-4 font-sans text-sm tracking-wide">
                 <a class="btn-signup" href="{{ .registration }}">Register</a>
