@@ -44,12 +44,12 @@
               <h3 class="font-serif text-lg font-bold">
                 <a href="{{ .link }}">{{ .hed }}</a>
               </h3>
-              <p class="font-base pt-2">{{ .dek }}</p>
-              <p class="pt-2 font-sans text-sm uppercase tracking-wide">
-                <time datetime="{{ .date }}" class="font-bold"
+                <time datetime="{{ .date }}" class="font-bold my-2 font-sans text-sm uppercase tracking-wide"
                   >{{ .dateVerbose }}</time
                 >
-                <a href="{{ .registration }}">Register</a>
+              <p class="font-base">{{ .dek }}</p>
+              <p class="my-4 font-sans text-sm tracking-wide">
+                <a class="btn-signup" href="{{ .registration }}">Register</a>
               </p>
             </article>
           {{ end }}
