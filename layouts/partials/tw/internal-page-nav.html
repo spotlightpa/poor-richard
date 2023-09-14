@@ -30,20 +30,20 @@
   </div>
 
   <div
-    class="mx-auto hidden w-full flex-wrap justify-start lg:py-3 font-sans md:flex"
+    class="mx-auto hidden w-full flex-wrap justify-start font-sans md:flex lg:py-3"
   >
     {{ range .Param "internal-links" }}
       <a
         data-about-id="{{ .link }}"
         data-ga-category="item"
         class="
-            my-2 mr-3 inline-flex w-auto items-center rounded border text-sm
-            border-black px-4 py-2 lg:mr-5
-            lg:text-base leading-4
+            my-2 mr-3 inline-flex w-auto items-center rounded border border-black
+            px-4 py-2 text-sm leading-4
             last:ml-auto last:mr-0
             hover:border-red-7 hover:text-red-7
             active:bg-black active:text-white
-            lg:my-0
+            lg:my-0 lg:mr-5
+            lg:text-base
           "
         :class="
             aboutActive === $el.dataset.aboutId ?
