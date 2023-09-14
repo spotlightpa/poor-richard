@@ -7,10 +7,6 @@
       x-data
       @change="
         window.location.assign($event.target.value);
-        $report({
-          target: $el,
-          currentTarget: window.location,
-        });
       "
       class="spl-select text-xl"
     >
