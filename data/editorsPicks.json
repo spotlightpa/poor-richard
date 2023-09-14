@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
+    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-02-09-SPLSCHOIMPAC.md"
+  ],
   "topSlots": [
+    "content/statecollege/2023-09-13-SPLOUTDOORREC.md",
     "content/statecollege/2023-09-14-SPL4PSU.md",
-    "content/news/2023-09-13-SPLJUDRETEN.md",
-    "content/news/2023-09-07-SPLAPPELLATEGEN23.md"
+    "content/news/2023-09-13-SPLJUDRETEN.md"
   ],
   "topper": []
 }
