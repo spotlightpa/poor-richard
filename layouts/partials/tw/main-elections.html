@@ -138,11 +138,23 @@
 
 
 <section class="px-4 md:px-0">
-  <div id="contact" class=" bg-s-3 font-sans md:mx-0 md:px-4">
+  <div
+    id="contact"
+    data-ga-category="contact"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+    class=" bg-s-3 font-sans md:mx-0 md:px-4"
+  >
     {{ .Page.RenderString (.Param "form") }}
   </div>
 </section>
-<section class="bg-white p-6" data-ga-category="credits" id="credits">
+<section
+  class="bg-white p-6"
+  id="credits"
+  data-ga-category="credits"
+  x-data
+  x-intersect.half="$dispatch('intersect:about', $el.id)"
+>
   <div class="mx-auto w-full max-w-prose">
     <h2
       class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"

@@ -111,7 +111,7 @@ sidebar = """
     >}}
 
     {{<sidebar-link
-    title="Last day to apply for mail-in ballot"
+    title="Last day to apply for mail ballot"
     date="2023-10-31"
     dateVerbose="Oct. 31, 2023"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
@@ -130,29 +130,33 @@ sidebar = """
 
 [[internal-links]]
 title = "Voter Guides"
-link = "#guides"
+link = "guides"
 
 
 [[internal-links]]
 title = "Election Event Series"
-link = "#events"
+link = "events"
+
+[[internal-links]]
+title = "Issues"
+link = "issues"
+
 
 [[internal-links]]
 title = "Coverage"
-link = "#coverage"
+link = "coverage"
 
-# Hide for now
-# [[internal-links]]
-# title = "Español"
-# link = "#espan"
+[[internal-links]]
+title = "Español"
+link = "#espan"
 
 [[internal-links]]
 title = "Ask Us"
-link = "#contact"
+link = "contact"
 
 [[internal-links]]
 title = "Credits"
-link = "#credits"
+link = "credits"
 
 
 [[blocks]]
@@ -169,6 +173,17 @@ dateVerbose="Oct. 12, 2023"
 link="#"
 registration="#eventbrite-link"
 
+[[blocks.entries]]
+hed="Voter Ready"
+dek="Learn about your voting rights and ask your remaining questions ahead of Election Day."
+date="2023-11-02"
+dateVerbose="Nov. 2, 2023 on Zoom"
+
+[[blocks.entries]]
+hed="Result Review"
+dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come."
+date="2023-11-16"
+dateVerbose="Nov. 16, 2023 on Zoom"
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes. 
@@ -179,4 +194,4 @@ This November, voters across Pennsylvania will pick a new state Supreme Court ju
 
 Further down the ballot are local and regional judicial contests as well as municipal races for local officials and school board members. These elected officials have regular, close contact with communities and can use that power to directly affect people’s lives for good (and bad).
 
-We [invite suggestions](mailto:eestrada@spotlightpa.org) for new features for this page and encourage you to check back regularly for all your 2023 election needs. Read more about how we’re covering the 2023 Pennsylvania election.
+We [invite suggestions](mailto:eestrada@spotlightpa.org) for new features for this page and encourage you to check back regularly for all your 2023 election needs. Read more about [how we’re covering the 2023 Pennsylvania election](https://www.spotlightpa.org/news/2023/09/pennsylvania-general-election-2023-supreme-superior-commonwealth-court-coverage-guide/).
