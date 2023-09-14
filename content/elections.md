@@ -60,7 +60,7 @@ credits = """
 donate ="""
 {{<donate-slim
     title="Help Empower Voters. Support Our Vital Election Coverage."
-    cta="Donate Now"
+    cta="Donate"
 >}}
 """
 form ="""
