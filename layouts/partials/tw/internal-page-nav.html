@@ -26,13 +26,14 @@
     </span>
   </div>
 
+  <div class="bg-white py-6"></div>
+
   <div
     class="mx-auto hidden max-w-screen-xl flex-wrap justify-evenly py-3 font-sans md:flex"
   >
     {{ range .Param "internal-links" }}
       <a
-        id="{{ .id }}"
-        data-id="{{ .id }}"
+        data-about-id="{{ .title | urlize }}"
         data-ga-category="item"
         class="
             my-2 mr-5 inline-flex w-auto items-center
@@ -40,6 +41,7 @@
             px-4 py-2
             text-base leading-4
             hover:border-red-7 hover:text-red-7
+            active:bg-black active:text-white
             lg:my-0
           "
         :class="

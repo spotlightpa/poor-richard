@@ -36,6 +36,8 @@
 <section
   class="sticky top-0 z-20 bg-white p-3 shadow-md lg:block"
   data-ga-category="internal-nav"
+  x-data="{ aboutActive: '', isStuck: false }"
+  @intersect:about.window="aboutActive = $event.detail"
 >
   {{ partial "tw/internal-page-nav.html" . }}
 
@@ -93,7 +95,13 @@
 }}
 {{ if $newElex }}
 
-  <section class="bg-white px-6 py-8" id="coverage" data-ga-category="coverage">
+  <section
+    class="bg-white px-6 py-8"
+    id="coverage"
+    data-ga-category="coverage"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+  >
     {{ partial "tw/list-3-col-story.html" (dict
       "hed" "PA Election 2023: More Coverage"
       "pages" $newElex
@@ -114,6 +122,8 @@
     class="bg-white px-6 py-8 md:py-16"
     id="espan"
     data-ga-category="espanol"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
   >
     {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Elecciones Pa. 2023: Traducciones al Español"
