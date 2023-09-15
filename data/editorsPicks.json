@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md"
+    "content/news/2023-09-15-SPLGEN23.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-09-SPLSCHOIMPAC.md"
+    "content/news/2023-09-15-SPLDEMDAY.md",
+    "content/news/2023-09-14-SPLCOURTS1012.md",
+    "content/elections.md"
   ],
   "topSlots": [
-    "content/statecollege/2023-09-13-SPLOUTDOORREC.md",
-    "content/statecollege/2023-09-14-SPL4PSU.md",
-    "content/news/2023-09-13-SPLJUDRETEN.md"
+    "content/news/2023-09-14-SPLNEWSQUIZSEPT11.md",
+    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md",
+    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
   ],
   "topper": []
 }
