@@ -24,17 +24,7 @@ topics = ["Events"]
 
 Pennsylvania’s Mental Health Procedures Act of 1976 was designed to protect people experiencing mental health issues from prosecution if they cannot understand the legal system and cannot aid in their own defense.
 
-<a href="https://www.spotlightpa.org/series/a-criminal-solution/">A six-month investigation</a> by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism found that the law often traps these people in jails — which can worsen their mental health — and that it has little oversight and is applied inconsistently.
-
-On Thursday, Sept. 14, join Spotlight PA at Point Park University’s Center for Media Innovation for a live discussion of mental health in Pennsylvania jails and how the newsrooms reported one woman’s fight for freedom.
-
-<a href="https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"><strong>RSVP now</strong></a><strong> to reserve your seat; seating is limited. The event will also be livestreamed. Register </strong><a href="https://zoom.us/webinar/register/WN_C34sE95OQemW6clgAcV_nw"><strong>here</strong></a><strong> to attend the event virtually.</strong>
-
-<strong>When:</strong> Thursday, Sept. 14, 6-7:30 p.m. ET
-
-<strong>Where</strong>: Point Park University’s Center for Media Innovation, 14 Wood St., Pittsburgh, Pa. 15222.
-
-<strong>Who</strong>: <strong></strong>
+<a href="https://www.spotlightpa.org/series/a-criminal-solution/">A six-month investigation</a> by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism found that the law often traps these people in jails — which can worsen their mental health — and that it has little oversight and is applied inconsistently.<br/><br/>In a September event at Point Park University, panelists discussed Pennsylvania’s mental health system and how Spotlight PA and PINJ reported out their investigation. Watch it below.<br/><br/>The panelists were:
 
 - <strong>Danielle Ohl,</strong> justice system reporter, Spotlight PA
 
@@ -45,6 +35,8 @@ On Thursday, Sept. 14, join Spotlight PA at Point Park University’s Center for
 - <strong>Jeremy Northup</strong>, psychology professor, Point Park University
 
 - <strong>Nev Jones</strong>, mental health researcher and professor, University of Pittsburgh
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/864936837?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A Criminal Solution"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
