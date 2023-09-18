@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-09-15-SPLGEN23.md"
+    "content/news/2023-09-18-SPL_M_HEALTH_EVENT.md"
   ],
   "subfeatures": [
-    "content/news/2023-09-15-SPLDEMDAY.md",
-    "content/news/2023-09-14-SPLCOURTS1012.md",
-    "content/elections.md"
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2023-03-20-SPLCOMPSOLUTIONS20.md",
+    "content/news/2023-03-09-SPLCOMPHOWSIDE.md"
   ],
   "topSlots": [
-    "content/news/2023-09-14-SPLNEWSQUIZSEPT11.md",
-    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md",
-    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
+    "content/news/2023-09-15-SPLGEN23.md",
+    "content/news/2023-09-15-SPLDEMDAY.md",
+    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md"
   ],
   "topper": []
 }
