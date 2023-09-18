@@ -1,13 +1,13 @@
 +++
-blurb = "Join Spotlight PA at Point Park University for a live discussion of mental health in Pennsylvania jails and how the newsrooms reported one woman’s fight for freedom."
+blurb = "Panelists discuss mental health in Pennsylvania jails and how Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism reported one woman’s fight for freedom."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA at Point Park University for a live discussion of mental health in Pennsylvania jails."
+description = "Panelists discuss mental health in PA jails and how Spotlight PA and PINJ reported one woman’s fight for freedom."
 event-date = 2023-09-14T18:00:00-04:00
 event-title = "A Criminal Solution"
 event-url = "https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"
 image = "external/39rq978hghymsw37kcxqppqqhr.jpeg"
-image-credit = "Nate Smallwood / For Spotlight PA and PINJ"
-image-description = "The Allegheny County Jail, where people deemed incompetent to stand trial wait for a spot in a state hospital."
+image-credit = "The Allegheny County Jail, where people deemed incompetent to stand trial wait for a spot in a state hospital."
+image-description = "Nate Smallwood / For Spotlight PA and PINJ"
 internal-id = "SPLPOIPARKEV"
 kicker = "Events"
 modal-exclude = false
@@ -15,8 +15,8 @@ published = 2023-08-25T16:17:36.607-04:00
 series = ["A Criminal Solution"]
 slug = "pennsylvania-mental-health-jails-point-park-event"
 suppress-date = false
-title = "You're invited! A live panel on incarceration and mental health in Pa."
-title-tag = "A live panel on incarceration and mental health in Pa."
+title = "WATCH! A panel on incarceration and mental health in Pa."
+title-tag = "A panel on incarceration and mental health in PA"
 topics = ["Events"]
 +++
 
