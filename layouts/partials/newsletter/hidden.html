@@ -1,0 +1,20 @@
+<!-- Tell email-alerts where to send us -->
+<input
+  type="hidden"
+  name="redirect"
+  value="https://www.spotlightpa.org/newsletters/thanks/"
+/>
+<input
+  type="hidden"
+  name="redirect_sorry"
+  value="https://www.spotlightpa.org/newsletters/sorry/"
+/>
+<!-- Honeypot checkmark: server will reject message if checked -->
+<div class="hidden" hidden>
+  <label>
+    <input type="checkbox" name="contact" value="1" />
+    I am a robot
+  </label>
+</div>
+<!-- Shibboleth field: server will reject message if blank -->
+<input type="hidden" x-data :name="'shibboleth'" :value="'PA Rocks!'" />

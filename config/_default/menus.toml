@@ -191,12 +191,12 @@ weight = 7
 [[news]]
 name = "The Capitol"
 url = "/topics/the-capitol/"
-weight = 8
+weight = 9
 
 [[news]]
 name = "More Topics"
 url = "/topics/"
-weight = 9
+weight = 11
 
 [[news]]
 name = "State College Region"
@@ -206,7 +206,12 @@ weight = 10
 [[news]]
 name = "Events"
 url = "/events/"
-weight = 11
+weight = 12
+
+[[news]]
+name = "Elections"
+url = "/election/"
+weight = 8
 
 [[news]]
 name = "Archives"

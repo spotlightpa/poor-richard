@@ -2,13 +2,15 @@
 {{ $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
 {{ $widthR := .widthRatio | default 16 }}
 {{ $heightR := .heightRatio | default 9 }}
-{{ $imgClass := printf "is-%dby%d" $widthR $heightR }}
+{{ $imgClass := .imgClass | default "flex h-full w-full object-cover" }}
 {{ $credit := .credit }}
 {{ $eager := .eager | default false }}
 {{ $gravity := .gravity }}
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
 {{ $shadow := cond (.shadow|not|not) "shadow" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
+{{ $wrapperClass := .wrapperClass | default "block" }}
+{{ $pictureClass := .pictureClass | default "flex" }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
@@ -48,9 +50,9 @@
   >
     {{ partial "tag/picture-maybe-link.html" (dict
       "link" .link
-      "wrapperClass" "block"
-      "pictureClass" "flex"
-      "imgClass" "flex h-full w-full object-cover"
+      "wrapperClass" $wrapperClass
+      "pictureClass" $pictureClass
+      "imgClass" $imgClass
       "sizeHint" .sizeHint
       "eager" $eager
       "description" .description

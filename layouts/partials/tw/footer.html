@@ -58,6 +58,7 @@
       method="post"
       target="_blank"
     >
+      {{ partial "newsletter/basic-hidden.html" . }}
       <p
         class="text-center text-2xl font-bold tracking-wide text-white md:text-3xl"
       >
@@ -66,7 +67,6 @@
       <div
         class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:items-center sm:gap-0 md:col-start-1 md:col-end-3"
       >
-        {{ partial "newsletter/hidden-input.html" . }}
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
