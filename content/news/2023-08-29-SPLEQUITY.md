@@ -36,7 +36,7 @@ The day also includes two panels (details below), lunch, a coffee bar and desser
 
 - <strong>&#34;Leadership in Change&#34; Panel:</strong> The panelists are the executive directors from the Governor’s Advisory Commissions on African American Affairs, Asian American and Pacific Islander Affairs, Latino Affairs, LGBTQ Affairs, Next Generation Engagement, and Women.
 
-- <strong>“Power to the People” Panel: </strong>Moderated by journalist Anthony Orozco, the panelists are: Salewa Ogunmefun, Executive Director, Pennsylvania Voice; Yamelisa Taveras, Founder and Director of The Unidos Foundation, CEO of Counseling Solutions of LV; Rep. Johanny Cepeda-Freytiz, Pennsylvania House District 129; Jonathan Cervas, Carnegie Mellon Postdoctoral Fellow, Institute for Politics &amp; Strategy; and Jennie Dallas, Publisher, La Voz Latina Central.
+- <strong>“Power to the People” Panel: </strong>Moderated by journalist Anthony Orozco, the panelists are: Salewa Ogunmefun, Executive Director, Pennsylvania Voice; Yamelisa Taveras, Founder and Director of The Unidos Foundation, CEO of Counseling Solutions of LV; Rep. Johanny Cepeda-Freytiz, Pennsylvania House District 129; Jonathan Cervas, Carnegie Mellon Postdoctoral Fellow, Institute for Politics &amp; Strategy; and Jennie Dallas, Publisher, La Voz Latina Central; and former Rep. Stanley Saylor, Pennsylvania House District 94.
 
 For sponsorship information or to sponsor a student or an attendee in financial need, please email <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>.
 
