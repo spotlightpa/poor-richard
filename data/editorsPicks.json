@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-09-18-SPLPRIMARIES.md"
+    "content/news/2023-09-19-SPLLOBBAN.md"
   ],
   "subfeatures": [
-    "content/news/2022-08-16-SPLOPENHEAR.md",
-    "content/news/2023-04-04-SPLOPENPR.md"
+    "content/news/2023-03-31-SPLATT.md"
   ],
   "topSlots": [
+    "content/news/2023-09-18-SPLPRIMARIES.md",
     "content/news/2023-09-18-SPL_M_HEALTH_EVENT.md",
-    "content/news/2023-09-15-SPLGEN23.md",
-    "content/news/2023-09-15-SPLDEMDAY.md"
+    "content/news/2023-09-14-SPLSCHOOLCOMMISH.md"
   ],
   "topper": []
 }
