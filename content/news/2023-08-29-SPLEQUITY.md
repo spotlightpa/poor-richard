@@ -6,7 +6,7 @@ description = "Join Spotlight PA for its first in-person summit on Wednesday, Oc
 event-date = 2023-10-11T11:30:00-04:00
 event-title = "The Path to Equity: Empowering Pennsylvanians through Democracy Initiatives"
 event-url = "https://www.eventbrite.com/e/pa-democracy-the-path-to-equity-tickets-668975653187?aff=oddtdtcreator"
-image = "2023/09/01jg-p4pt-r0fr-1ek1.png"
+image = "2023/09/01jg-p504-hc3r-6tsh.png"
 image-credit = "Spotlight PA Staff"
 image-description = "Promotional details for Path to Equity event"
 image-gravity = "ce"
