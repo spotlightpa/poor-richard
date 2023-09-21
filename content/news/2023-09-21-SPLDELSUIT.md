@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-09-21T18:44:50.878-04:00
 slug = "pennsylvania-mail-provisional-ballot-delaware-county-lawsuit"
 suppress-date = false
-title = "Judge tells Pa. county to accept in-person votes from residents who cast flawed mail ballots"
+title = "Judge tells Delaware County to accept in-person votes from residents whose mail ballots were rejected"
 title-tag = "PA judge says to count rejected primary 2023 ballots"
 topics = ["Elections"]
 +++
