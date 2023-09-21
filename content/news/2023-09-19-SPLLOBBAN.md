@@ -14,7 +14,7 @@ slug = "pennsylvania-legislature-lobbyists-lawmakers-private-sector"
 suppress-date = false
 title = "A bipartisan bill seeks to crack down on Harrisburg’s ‘revolving door’ of lobbyists"
 title-tag = "Stricter lobbying rules for ex-PA lawmakers proposed"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
