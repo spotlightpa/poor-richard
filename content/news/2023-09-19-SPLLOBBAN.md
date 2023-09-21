@@ -53,7 +53,7 @@ A former state House staffer, for example, can lobby senators and their staff im
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-The law also does not apply to any former government official who is an attorney because of <a href="https://casetext.com/case/shaulis-v-pennsylvania-state-ethics-com">a 2003 state Supreme Court decision</a> that rejected the legislature’s ability to regulate the legal profession.
+Until June 1, 2023, the law did not apply to any former government official who is an attorney because of <a href="https://casetext.com/case/shaulis-v-pennsylvania-state-ethics-com">a 2003 state Supreme Court decision</a> that rejected the legislature’s ability to regulate the legal profession. However, <a href="https://www.pacodeandbulletin.gov/Display/pabull?file=/secure/pabulletin/data/vol53/53-16/530.html">an April order</a> by the court now means the one-year ban also applies to public sector attorneys.
 
 Enforcement of the <a href="https://www.ethics.pa.gov/Ethics-Act/Ethics-Act/Pages/Section-1109.aspx">state’s ethics law</a> is complaint-driven, and unless the attorney general files a criminal complaint, the penalties for violating the law are financial.
 
@@ -64,6 +64,8 @@ Most of those states set the cooling-off period at two years; Florida implemente
 The latter, Pollack said, is closer to his ideal of a five-year gap.
 
 “There needs to be a firewall between public service and private gain,” Pollack said.
+
+<em>Correction: This article has been updated to reflect that the lobbying ban applies to public sector attorneys.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
