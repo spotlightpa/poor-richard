@@ -21,7 +21,7 @@ The team is employed by Spotlight PA and receives organizational support from th
 
 ## Fundraising
 
-We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="/donate/statecollege?">support this special effort by clicking here</a>, or to learn more about getting involved, please contact Spotlight PA Director of Individual and Corporate Giving Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. 
+We estimate this new bureau will cost approximately $500,000 a year to sustain at its proposed size, and its future will depend on local support from the community. You can <a href="/donate/statecollege?">support this special effort by clicking here</a>, or to learn more about getting involved, please contact Spotlight PA Director of Individual and Corporate Giving Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>.
 
 We’re so grateful to our <a href="#state-college-bureau-donors">founding individual donors for supporting this effort</a> (see our State College bureau donor list below).
 
@@ -49,7 +49,7 @@ theme="centrecounty"
 [[blocks]]
 title =  "Team"
 layout = "team"
-authors = ["Wyatt Massey", "Sarah Rafacz", "Min Xian"]
+authors = ["Wyatt Massey", "Marley Parish", "Sarah Rafacz", "Min Xian"]
 +++
 
 {{<featured/large>}}To combat the continuing loss of local news in Pennsylvania, Spotlight PA launched its first pilot regional bureau based in State College and covering north-central Pennsylvania. We hope this bureau will serve as a model for how to address the crisis in local news in communities across the state. As part of this initiative, Spotlight PA hired a team of journalists dedicated to the region, which represents a sizable and significant infusion of talent relative to the number of current reporters.{{</featured/large>}}
