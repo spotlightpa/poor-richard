@@ -5,7 +5,7 @@ image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 layout = "support"
-aliases = ["/about/statecollege/"]
+aliases = ["/about/statecollege/", "/support/statecollege/"]
 newsletter = """
   {{<newsletter/talkofthetown-full-form>}}
 """
