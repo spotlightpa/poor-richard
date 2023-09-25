@@ -1,0 +1,24 @@
+{{ $lastLetter := "" }}
+<div>
+  <ul>
+    {{ range . }}
+      {{ $letterGroup := slicestr .sort 0 1 | upper }}
+      {{ if ne $letterGroup $lastLetter }}
+        {{ $lastLetter = $letterGroup }}
+        {{ `</ul></div>` | safeHTML }}
+        {{ `<div class="mb-6 break-inside-avoid-column">` | safeHTML }}
+        <h2 class="font-sans text-3xl font-bold">{{ $lastLetter }}</h2>
+        {{ `<ul>` | safeHTML }}
+      {{ end }}
+      <li>
+        {{ if .url }}
+          <a class="text-blue hover:underline" href="{{ .url }}">
+            {{- .display -}}
+          </a>
+        {{ else }}
+          {{ .display }}
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</div>
