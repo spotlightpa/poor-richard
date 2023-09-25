@@ -7,6 +7,6 @@ promo-active = false
 banner-active = false
 no-index = true
 modal-exclude = true
-googleAnalytics = "UA-141126362-3"
+googleAnalytics = "GTM-PF8PXH5G"
 headers = []
 +++
