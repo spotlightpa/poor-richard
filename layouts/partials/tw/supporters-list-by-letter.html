@@ -5,6 +5,7 @@
       {{ $letterGroup := slicestr .sort 0 1 | upper }}
       {{ if ne $letterGroup $lastLetter }}
         {{ $lastLetter = $letterGroup }}
+        <!-- Escape code to pacify Prettier -->
         {{ `</ul></div>` | safeHTML }}
         {{ `<div class="mb-6 break-inside-avoid-column">` | safeHTML }}
         <h2 class="font-sans text-3xl font-bold">{{ $lastLetter }}</h2>
