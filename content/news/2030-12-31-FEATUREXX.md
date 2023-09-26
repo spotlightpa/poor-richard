@@ -74,6 +74,22 @@ series = []
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+{{<featured/scroll-video 
+hed = "Pennsylvania's voting law is old — really, really old." 
+dek = "Because the law is old, there are still some rules on the books that don’t make much sense in 2023." 
+outro = "While these rules aren’t enforced, conflicting guidance and old language can still cause confusion for the people in charge of running elections."
+>}}
+
+{{<video-item 
+  width="800"
+  height="450"
+  body="BUT ACTUALLY… Spring elections are technically held an hour later than the law mandates since they take place during Eastern Daylight Time."
+>}}
+
+{{</featured/scroll-video>}}
+
+
+
 {{<featured/picture
   src="2021/08/01gj-x582-5asm-wcx2.jpeg"
   description="A frame is held showing a picture of Alice “Candy” Loughney as a young girl with her father, Joseph M. Barr."
