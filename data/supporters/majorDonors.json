@@ -281,6 +281,11 @@
       "url": "https://web.archive.org/web/20211110101853/https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/"
     },
     {
+      "display": "The Grable Foundation",
+      "sort": "Grable",
+      "url": "https://grable.org/"
+    },
+    {
       "display": "David Gray",
       "sort": "Gray",
       "url": ""
@@ -387,8 +392,8 @@
     },
     {
       "display": "The John S. and James L. Knight Foundation",
-      "sort": "John",
-      "url": ""
+      "sort": "Knight",
+      "url": "https://knightfoundation.org"
     },
     {
       "display": "Richard \u0026 Sally Kalin",

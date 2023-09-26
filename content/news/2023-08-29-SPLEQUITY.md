@@ -6,7 +6,7 @@ description = "Join Spotlight PA for its first in-person summit on Wednesday, Oc
 event-date = 2023-10-11T11:30:00-04:00
 event-title = "The Path to Equity: Empowering Pennsylvanians through Democracy Initiatives"
 event-url = "https://www.eventbrite.com/e/pa-democracy-the-path-to-equity-tickets-668975653187?aff=oddtdtcreator"
-image = "2023/08/01jf-1k2t-qf51-mhrn.webp"
+image = "2023/09/01jg-9dwf-242z-pfzd.png"
 image-credit = "Spotlight PA Staff"
 image-description = "Promotional details for Path to Equity event"
 image-gravity = "ce"
@@ -36,7 +36,7 @@ The day also includes two panels (details below), lunch, a coffee bar and desser
 
 - <strong>&#34;Leadership in Change&#34; Panel:</strong> The panelists are the executive directors from the Governor’s Advisory Commissions on African American Affairs, Asian American and Pacific Islander Affairs, Latino Affairs, LGBTQ Affairs, Next Generation Engagement, and Women.
 
-- <strong>“Power to the People” Panel: </strong>Moderated by journalist Anthony Orozco, the panelists are: Salewa Ogunmefun, Executive Director, Pennsylvania Voice; Yamelisa Taveras, Founder and Director of The Unidos Foundation, CEO of Counseling Solutions of LV; Rep. Johanny Cepeda-Freytiz, Pennsylvania House District 129; Jonathan Cervas, Carnegie Mellon Postdoctoral Fellow, Institute for Politics &amp; Strategy; and Jennie Dallas, Publisher, La Voz Latina Central.
+- <strong>“Power to the People” Panel: </strong>Moderated by journalist Anthony Orozco, the panelists are: Salewa Ogunmefun, Executive Director, Pennsylvania Voice; Yamelisa Taveras, Founder and Director of The Unidos Foundation, CEO of Counseling Solutions of LV; Rep. Johanny Cepeda-Freytiz, Pennsylvania House District 129; Jonathan Cervas, Carnegie Mellon Postdoctoral Fellow, Institute for Politics &amp; Strategy; and Jennie Dallas, Publisher, La Voz Latina Central; and former Rep. Stanley Saylor, Pennsylvania House District 94.
 
 For sponsorship information or to sponsor a student or an attendee in financial need, please email <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>.
 
