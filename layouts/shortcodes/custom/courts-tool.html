@@ -1,0 +1,14 @@
+{{ $hed := .Get "hed" }}
+
+<section 
+  class="bg-s-8 w-screen my-10 mx-[calc(-50vw_+_50%)] pt-5 min-h-screen font-sans"
+  x-data="{ selected: 'issue-abortion' }"
+>
+
+  <h2 class="text-4xl text-white font-black max-w-screen-xl mx-auto">
+    {{ $hed }}
+  </h2>
+
+  {{ .Inner }}
+
+</section>

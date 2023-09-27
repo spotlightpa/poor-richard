@@ -1,0 +1,11 @@
+{{ $issue := .Get "issue-title" }}
+<li class="
+  shadow-lg border-4 border-white rounded text-2xl font-bold"
+>
+  <a
+    href="#issue-{{ $issue | urlize }}"
+    class="bg-blue aspect-square flex items-center justify-center"
+    @click="selected = 'issue-{{ $issue | urlize }}' "
+    :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'issue-{{ $issue | urlize }}' }"
+  >{{ $issue }}</a>
+</li>

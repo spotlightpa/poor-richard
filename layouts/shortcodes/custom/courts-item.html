@@ -1,0 +1,22 @@
+{{ $title := .Get "issue-title" }}
+{{ $court := .Get "court" }}
+{{ $case := .Get "case" }}
+
+<section 
+  id="issue-{{ $title }}"
+  x-show="selected === 'issue-{{ $title | urlize }}'"
+  class="w-full bg-white py-10"
+  :class="{'pt-20': selected === 'issue-{{ $title | urlize }}' }"
+>
+  <h2 class=" max-w-screen-lg mx-auto pb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider border-b-4 border-black">{{ $title }}</h2>
+  <div class="max-w-screen-lg mx-auto md:flex items-stretch justify-start">
+    <aside class="md:w-2/6 mt-8">
+      <p class="top-8 sticky text-base leading-none font-bold"><span class="uppercase">Case:</span> {{ $court }}</p>
+    </aside>
+    <article class="featured-content md:w-5/6">
+      <h4 class="text-base leading-none font-bold  mb-0">{{ $case }}</h4>
+      {{ .Inner  | markdownify }}
+    </article>
+  </div>
+
+</section>
