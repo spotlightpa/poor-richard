@@ -70,6 +70,9 @@
   {{ end }}
 </section>
 
+{{ .Page.RenderString (.Param "promo") }}
+
+
 <div class="bg-white">
   {{ .Page.RenderString (.Param "donate") }}
 </div>

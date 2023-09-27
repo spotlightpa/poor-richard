@@ -1,0 +1,23 @@
+{{ $id := .Get "id" | default "promo" }}
+{{ $hed := .Get "hed" }}
+{{ $sub := .Get "subhed" }}
+{{ $dek := .Get "dek" }}
+{{ $cta := .Get "cta" }}
+{{ $link := .Get "link" }}
+
+<section id="{{ $id }}" class="bg-s-2 font-sans md:flex md:py-16 lg:py-24">
+  <div class="max-w-screen-xl w-full mx-auto md:flex justify-between">
+    <figure class="md:w-5/12 aspect-auto rounded bg-blue"></figure>
+    <div class="md:w-6/12">
+      <h2 class="text-3xl font-bold md:text-4xl">{{ $hed }}</h2>
+      {{ with $sub }}
+        <h3 class="max-w-xl mt-4 text-2xl font-semibold tracking-wide leading-none">{{ $sub }}</h3>
+      {{ end }}
+      <p class="max-w-lg mt-2 text-lg">{{ $dek }}</p>
+      <a
+        href="{{ $link }}"
+        class="btn-signup block mt-10 max-w-lg"
+      >{{ $cta }}</a>
+    </div>
+  </div>
+</section>
