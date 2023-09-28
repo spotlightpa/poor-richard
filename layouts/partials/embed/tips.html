@@ -21,7 +21,7 @@
   x-cloak
 >
   <h2
-    class="btn-donate"
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-show="!showSpanish"
     x-text="_('flag_text', $el.innerText)"
   >
@@ -130,7 +130,7 @@
       <label class="sr-only" for="{{ $idTip }}">Your tip or comment</label>
       <textarea
         id="{{ $idTip }}"
-        class="w-full rounded border-2 border-s-4 p-4 text-s-8 placeholder-s-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
+        class="w-full rounded border border-s-4 p-4 text-s-8 placeholder-s-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
         :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
         name="comment"
         rows="3"
