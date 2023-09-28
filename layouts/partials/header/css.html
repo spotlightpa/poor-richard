@@ -1,6 +1,7 @@
-{{ $cssFonts := resources.Get "css/font-merri.css" }}
+{{ $cssMerri := resources.Get "css/font-merri.css" }}
+{{ $cssRale := resources.Get "css/font-rale.css" }}
 {{ $cssTW := resources.Get "css/tw.css" }}
-{{ $css := slice $cssFonts $cssTW | resources.Concat "css/tw-merri.css" }}
+{{ $css := slice $cssMerri $cssRale $cssTW | resources.Concat "css/main.css" }}
 {{ if ne hugo.Environment "development" }}
   {{ $css = $css |
     postCSS |
@@ -18,16 +19,9 @@
   </style>
 {{ end }}
 
-
-<link
-  rel="preload"
-  as="font"
-  href="/css/fonts/merriweather-v25/merriweather-v25-latin-700.woff2"
-  crossorigin
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2"
-  crossorigin
-/>
+{{ $color := "#f4f1ee" }}
+{{ if .Param "banner-active" }}
+  {{ $color = .Param "banner-bg-color" }}
+{{ end }}
+<!-- For Safari header -->
+<meta name="theme-color" content="{{ $color }}" />

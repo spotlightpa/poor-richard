@@ -5,9 +5,12 @@
   scroll-smooth
 {{- end }}
 
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/static-tw.html" . }}
+{{ define "preload" }}
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+  {{ partial "header/preload-rale.html" . }}
 {{ end }}
 
 {{ define "main" }}
