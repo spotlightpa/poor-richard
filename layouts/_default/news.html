@@ -1,16 +1,16 @@
 {{ define "body-class" }}
-  text-[16px] bg-beige font-serif leading-normal text-s-9
+  text-[16px] bg-beige font-serif leading-normal text-g-9
 {{ end }}
 
 {{ define "main" }}
-  <article class="bg-white px-4 pt-12 pb-6">
+  <article class="bg-white px-4 pb-6 pt-12">
     <div class="mx-auto w-full max-w-prose">
       <header>
         <h1 class="text-4xl font-semibold leading-none text-black">
           {{ .Title }}
         </h1>
         <h2
-          class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-s-7 md:text-3xl"
+          class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-g-7 md:text-3xl"
         >
           {{ .Param "dek" }}
         </h2>

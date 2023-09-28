@@ -1,23 +1,8 @@
-{{ $cssMerri := resources.Get "css/font-merri.css" }}
-{{ $cssRale := resources.Get "css/font-rale.css" }}
-{{ $cssTW := resources.Get "css/tw.css" }}
-{{ $css := slice $cssMerri $cssRale $cssTW | resources.Concat "css/main.css" }}
-{{ if ne hugo.Environment "development" }}
-  {{ $css = $css |
-    postCSS |
-    minify |
-    fingerprint |
-    resources.PostProcess
-  }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
-{{ else }}
-  <script src="https://cdn.tailwindcss.com/3.2.7"></script>
-  {{ $rsc := resources.Get "js/tailwind/dev.js" | js.Build }}
-  <script src="{{ $rsc.RelPermalink }}"></script>
-  <style type="text/tailwindcss">
-    {{ $css.Content | safeCSS }}
-  </style>
+{{ $css := resources.Get "css/tw.css" | resources.PostCSS (dict "inlineImports" true) }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
 {{ $color := "#f4f1ee" }}
 {{ if .Param "banner-active" }}

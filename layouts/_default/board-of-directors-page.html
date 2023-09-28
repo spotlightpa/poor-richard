@@ -1,9 +1,9 @@
 {{ define "body-class" }}
-  text-[16px] bg-beige font-serif leading-normal text-s-9
+  text-[16px] bg-beige font-serif leading-normal text-g-9
 {{ end }}
 
 {{ define "main" }}
-  <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
+  <header class="bg-g-0 px-3 pt-8 text-black md:pb-4">
     <div class="mx-auto max-w-screen-lg">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
@@ -16,7 +16,7 @@
     </div>
   </header>
 
-  <section class="bg-s-0 pt-4 font-sans">
+  <section class="bg-g-0 pt-4 font-sans">
     <div class="mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0">
       {{ with .Page.Params.subhed }}
         <h2 class="mb-5 text-5xl font-black">{{ . }}</h2>
@@ -49,7 +49,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="bg-s-2 px-2 pb-10  font-sans">
+  <section class="bg-g-2 px-2 pb-10  font-sans">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <ul
         class="mx-auto my-14 mt-10 flex w-full flex-wrap gap-8"
@@ -73,7 +73,7 @@
     :class="{'overflow-hidden': !isOpen}"
   >
     <div
-      class="via-40% absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white px-4 pt-12 pb-4"
+      class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white via-40% px-4 pb-4 pt-12"
     >
       <button
         x-show="!isOpen"
@@ -151,7 +151,7 @@
       >
         <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
           <svg
-            class="h-full w-full overflow-hidden rounded-full bg-s-4 fill-current p-5 text-s-7 shadow"
+            class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow"
             viewBox="0 0 1 1"
             aria-hidden="true"
           >

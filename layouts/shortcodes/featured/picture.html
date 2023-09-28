@@ -5,7 +5,7 @@
 {{ $link := .Get "link" | htmlUnescape }}
 {{ $gravity := .Get "gravity" | htmlUnescape }}
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "mt-4 max-w-content mx-auto text-s-8 text-sm" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "mt-4 max-w-content mx-auto text-g-8 text-sm" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict
@@ -37,7 +37,7 @@
 <figure class="{{ $figClass }}" data-ga-category="inline:image">
   <div class="relative h-0 w-full pb-16x9">
     <picture
-      class="absolute inset-0 block overflow-hidden rounded bg-s-3 shadow"
+      class="absolute inset-0 block overflow-hidden rounded bg-g-3 shadow"
     >
       <source type="image/webp" srcset="{{ $srcset }}" />
       <img

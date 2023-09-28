@@ -1,11 +1,11 @@
 {{ with .block }}
   <div
     id="{{ .title | urlize }}"
-    class="bg-s-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0"
+    class="bg-g-2 p-5 font-sans sm:py-5 md:py-16 xl:px-0"
   >
     <header class=" m-auto flex max-w-screen-lg items-baseline gap-3">
       {{ with .icon }}
-        <svg class="mr-1 h-9 w-9 fill-s-5">
+        <svg class="mr-1 h-9 w-9 fill-g-5">
           {{ partial "helper/svg.html" .icon }}
         </svg>
       {{ end }}
@@ -36,17 +36,17 @@
             {{ end }}
           </select>
           <span
-            class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
+            class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
             aria-hidden="true"
           >
-            <svg class="h-4 w-4 fill-s-5">
+            <svg class="h-4 w-4 fill-g-5">
               {{ partial "helper/svg.html" "chevron" }}
             </svg>
           </span>
         </div>
 
         <div
-          class="sticky top-0 hidden w-full items-end justify-start space-x-2 border-b-4 border-black bg-s-2 pt-5 text-s-5 
+          class="sticky top-0 hidden w-full items-end justify-start space-x-2 border-b-4 border-black bg-g-2 pt-5 text-g-5 
           sm:flex sm:w-1/6 sm:flex-col sm:border-b-0 md:min-w-max"
         >
           {{ range . }}

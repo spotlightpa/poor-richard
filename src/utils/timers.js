@@ -11,7 +11,7 @@ export function after({ minutes = 0, seconds = 0, milliseconds = 0 }) {
   return new Promise((resolve) => {
     window.setTimeout(
       resolve,
-      millisecondsFrom({ minutes, seconds, milliseconds })
+      millisecondsFrom({ minutes, seconds, milliseconds }),
     );
   });
 }

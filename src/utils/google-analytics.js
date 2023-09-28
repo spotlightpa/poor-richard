@@ -24,7 +24,7 @@ function sendPlausible(action, params = {}) {
   };
   navigator.sendBeacon(
     "https://plausible.io/api/event",
-    JSON.stringify(payload)
+    JSON.stringify(payload),
   );
 }
 
@@ -39,7 +39,7 @@ export function addGAListeners() {
   const onDNTPage = !!window.location.href.match(/debug=do-not-track/);
   const onProdSite = !!window.location.host.match(/spotlightpa\.org$/);
   const onDevSite = !!window.location.host.match(
-    /(^localhost)|(^spotlightpa\.)|(spotlightpa\.netlify\.app$)/
+    /(^localhost)|(^spotlightpa\.)|(spotlightpa\.netlify\.app$)/,
   );
 
   if (onDNTPage || (dnt === null && !onProdSite)) {
@@ -115,7 +115,7 @@ export function addGAListeners() {
         el.href = donateURL;
       }
     },
-    { passive: true }
+    { passive: true },
   );
 
   let links = document.querySelectorAll("a");

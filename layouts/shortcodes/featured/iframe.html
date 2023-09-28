@@ -4,7 +4,7 @@
 {{ $pb := slice $width $height | partial "helper/aspect-ratio" }}
 
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-s-8 text-sm mt-4" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-8 text-sm mt-4" }}
 {{ $credit := .Get "credit" | htmlUnescape }}
 
 
