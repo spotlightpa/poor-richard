@@ -1,9 +1,6 @@
 buildDrafts = true
 buildFuture = true
 
-[build]
-  writeStats = false
-
 [privacy.googleAnalytics]
     disable = true
 

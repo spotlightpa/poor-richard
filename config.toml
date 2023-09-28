@@ -91,13 +91,32 @@ allow = [
 [security.funcs]
 getenv = ["^HUGO_", "^IMGPROXY_URL$"]
 
+[build]
+[build.buildStats]
+  disableClasses = false
+  disableIDs = true
+  disableTags = false
+  enable = true
+[[build.cachebusters]]
+  source = "assets/watching/hugo_stats\\.json"
+  target = "css"
+[[build.cachebusters]]
+  source = "(postcss|tailwind)\\.config\\.js"
+  target = "css"
+[[build.cachebusters]]
+  source = "assets/.*\\.(js|ts|jsx|tsx)"
+  target = "js"
+[[build.cachebusters]]
+  source = "assets/.*\\.(.*)$"
+  target = "$1"
+
 [[module.mounts]]
 source = "assets"
 target = "assets"
 
 [[module.mounts]]
-source = "tailwind.config.js"
-target = "assets/tailwind.config.js"
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
 
 [[module.mounts]]
 source = "src"
