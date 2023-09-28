@@ -1,14 +1,11 @@
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/noscript.html" . }}
-
-
+{{ define "preload" }}
   <link
     rel="modulepreload"
     href="{{ partialCached `helper/get-enhancements` . }}"
   />
+  {{ partial "header/preload-rale.html" . }}
 {{ end }}
 
 {{ define "header" }}<!-- -->{{ end }}

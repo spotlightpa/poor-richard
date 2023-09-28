@@ -22,10 +22,21 @@
       </title>
     {{ end }}
 
-    {{ block "static-head" . }}
-      {{ partialCached "header/static-tw.html" . }}
+    {{ block "preload" . }}
+      <link
+        rel="modulepreload"
+        href="{{ partialCached `helper/get-enhancements` . }}"
+      />
+      {{ partial "header/preload-merri.html" . }}
     {{ end }}
+    {{ block "css" . }}
+      {{ partial "header/css" . }}
+      {{ partial "header/noscript.html" . }}
+    {{ end }}
+
+    {{ partial "header/favicons.html" . }}
     {{ partial "header/google-analytics-meta.html" . }}
+    {{ partial "header/feeds.html" . }}
 
 
     <!-- Metadata -->

@@ -5,10 +5,14 @@
   text-[16px] bg-beige font-serif leading-normal text-s-9
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/static-tw.html" . }}
+{{ define "preload" }}
+  <link
+    rel="modulepreload"
+    href="{{ partialCached `helper/get-enhancements` . }}"
+  />
+  {{ partial "header/preload-rale.html" . }}
 {{ end }}
+
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
   <section class=" bg-s-0 py-14 px-5 text-lg font-medium lg:px-0">

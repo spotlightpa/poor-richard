@@ -8,11 +8,6 @@
   data-sf-campaign="701Dn000000Ygq1IAC" data-sf-theme="statecollege"
 {{ end }}
 
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
 {{ define "main" }}
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
   {{ partial "tw/inline-cta.html" }}
