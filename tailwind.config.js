@@ -14,7 +14,7 @@ module.exports = {
       current: "currentColor",
       white: "#fff",
       black: "#000",
-      s: {
+      g: {
         0: "#fcfcfc",
         1: "#f9f9f9",
         2: "#f1f1f1",
@@ -129,5 +129,5 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   darkMode: "media",
-  content: ["./layouts/**/*.html", "./src/**/*.js}"],
+  content: ["./hugo_stats.json"],
 };

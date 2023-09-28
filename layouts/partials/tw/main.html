@@ -30,7 +30,7 @@
 {{ $sidebarNewsletter := .Param "sidebar-newsletter" | default "tw/rail-papost.html" }}
 
 
-<section class="bg-white px-4 pb-6 pt-12 text-s-9" id="article">
+<section class="bg-white px-4 pb-6 pt-12 text-g-9" id="article">
   <div class="{{ $gridClass }} mx-auto grid max-w-screen-lg">
     <article class="contents">
       <header
@@ -74,7 +74,7 @@
 
         {{ with $params.byline }}
           <h2
-            class="mt-1 font-sans text-base leading-tight tracking-normal text-s-8 sm:leading-normal"
+            class="mt-1 font-sans text-base leading-tight tracking-normal text-g-8 sm:leading-normal"
           >
             {{ if $bylineLink }}
               <a href="{{ $bylineLink }}">
@@ -147,7 +147,7 @@
                             itemprop="image"
                             src="{{ .thumb | absURL }}"
                             alt="Photo of {{ .name }}"
-                            class="m-auto rounded-full ring-2 ring-s-6 grayscale filter"
+                            class="m-auto rounded-full ring-2 ring-g-6 grayscale filter"
                             loading="lazy"
                             decoding="async"
                             width="256"
@@ -159,7 +159,7 @@
                       {{ end }}
                       <div class="font-sans font-semibold leading-tight">
                         {{ $showLink := and .active .link | not | not }}
-                        {{ $color := cond $showLink "text-blue" "text-s-7" }}
+                        {{ $color := cond $showLink "text-blue" "text-g-7" }}
                         <h3
                           class="{{ $color }} text-2xl"
                           data-ga-category="name"
@@ -169,7 +169,7 @@
                         </h3>
                         {{ if and .active .title }}
                           <h3
-                            class="text-lg text-s-6"
+                            class="text-lg text-g-6"
                             data-ga-category="role"
                             itemprop="jobTitle"
                           >

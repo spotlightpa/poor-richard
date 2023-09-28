@@ -43,7 +43,7 @@
   itemtype="https://schema.org/ImageObject"
 >
   <div
-    class="{{ $rounded }} {{ $shadow }} relative w-full overflow-clip bg-s-3"
+    class="{{ $rounded }} {{ $shadow }} relative w-full overflow-clip bg-g-3"
     {{ if .overlay }}
       x-data="{ showOverlay: true }"
     {{ end }}
@@ -67,7 +67,7 @@
         class="
           {{ if .rounded }}rounded-b overflow-clip{{ end }}
           backdrop-fallback absolute inset-x-0 bottom-0 p-4
-          font-sans text-base text-s-0
+          font-sans text-base text-g-0
           backdrop-blur-sm backdrop-brightness-50 backdrop-filter
         "
         x-show="showOverlay"
@@ -91,7 +91,7 @@
   {{ end }}
   {{ with .caption }}
     <figcaption
-      class="mt-6 font-sans leading-tight text-s-8"
+      class="mt-6 font-sans leading-tight text-g-8"
       itemprop="caption"
     >
       {{- . -}}

@@ -46,7 +46,7 @@
 {{ $anonymous := .Get "show-anon" | default false }}
 {{ $cta := .Get "submit" | default "Submit" }}
 <section
-  class="relative -mx-4 bg-s-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
+  class="relative -mx-4 bg-g-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
 >
   <div
     class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
@@ -97,9 +97,9 @@
               required
             />
             <span
-              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
             >
-              <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+              <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "user" }}
               </svg>
             </span>
@@ -117,9 +117,9 @@
               required
             />
             <span
-              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
             >
-              <svg class="h-4 w-4 fill-s-4" viewBox="0 0 1 1">
+              <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "email" }}
               </svg>
             </span>
@@ -151,10 +151,10 @@
                 </select>
                 <input type="hidden" name="CC" :value="cc" />
                 <span
-                  class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-s-6"
+                  class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
                   aria-hidden="true"
                 >
-                  <svg class="h-4 w-4 fill-s-5">
+                  <svg class="h-4 w-4 fill-g-5">
                     {{ partial "helper/svg.html" "chevron" }}
                   </svg>
                 </span>
@@ -171,7 +171,7 @@
           <div class="control">
             <textarea
               id="{{ $idBody }}"
-              class="input min-h-[128px] w-full rounded border border-s-4 p-1 font-sans shadow"
+              class="input min-h-[128px] w-full rounded border border-g-4 p-1 font-sans shadow"
               placeholder="Explain how we can help you"
               name="comment"
             ></textarea>
@@ -187,7 +187,7 @@
               >
               <input
                 id="{{ $idAnonymous }}"
-                class=" mr-3 h-6 w-6 rounded border border-s-4 p-1 accent-yellow hover:accent-yellow-4"
+                class=" mr-3 h-6 w-6 rounded border border-g-4 p-1 accent-yellow hover:accent-yellow-4"
                 type="checkbox"
                 name="anonymous"
               />
