@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-09-28-SPLSEPBUDUP.md"
+    "content/news/2023-09-28-SPLVERENRES.md"
   ],
-  "subfeatures": [
-    "content/news/2023-08-30-SPLCODEPROGRESS.md",
-    "content/news/2023-08-23-SPLCODEEXP.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-09-28-SPLSEPBUDUP.md",
     "content/news/2023-09-26-SPLTIXBILLS.md",
-    "content/news/2023-09-25-SPLESCAPES.md",
-    "content/news/2023-09-21-SPLDELSUIT.md"
+    "content/news/2023-09-25-SPLESCAPES.md"
   ],
   "topper": []
 }
