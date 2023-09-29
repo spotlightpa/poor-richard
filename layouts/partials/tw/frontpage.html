@@ -65,18 +65,18 @@
   </div>
   {{ if .river }}
     <div
-      class=" items-start md:grid md:grid-cols-3 md:gap-8"
+      class="items-start lg:grid lg:grid-cols-3 lg:gap-8"
       @mouseover.passive.once="load()"
       @touchstart.passive.once="load()"
     >
       <div
         id="frontpage-sidebar"
         x-data="funnelStatus"
-        class=" flex flex-col self-stretch py-8 md:col-start-3 md:px-8"
+        class="grid items-start justify-items-center gap-2 py-8 sm:max-lg:grid-cols-2 md:px-8 lg:col-start-3 lg:flex lg:flex-col lg:self-stretch"
       >
         <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
           {{ partial "tw/promo-single.html" (dict
-            "class" "mb-5 w-0 min-w-full no-js:hidden"
+            "class" "mb-5 min-w-full no-js:hidden"
             "images" (page.Param "sidebar-top-images")
             "width" (page.Param "sidebar-top-width")
             "height" (page.Param "sidebar-top-height")
@@ -86,10 +86,14 @@
           }}
         </div>
 
-        {{ partial "tw/rail-most-popular.html" dict }}
+        <div class="w-full sm:max-w-xs">
+          {{ partial "tw/rail-most-popular.html" dict }}
+        </div>
         {{ range .edPicks }}
           {{ if .page }}
-            {{ partial "tw/rail-picks.html" . }}
+            <div class="w-full sm:max-w-xs">
+              {{ partial "tw/rail-picks.html" . }}
+            </div>
           {{ end }}
         {{ end }}
         {{ if page.Param "sidebar-sticky-images" }}
@@ -100,7 +104,7 @@
             x-intersect="$dispatch('close-sticky')"
           >
             {{ partial "tw/promo-single.html" (dict
-              "class" "pt-5 w-0 min-w-full no-js:hidden sticky top-0"
+              "class" "pt-5 min-w-full no-js:hidden sticky top-0"
               "images" (page.Param "sidebar-sticky-images")
               "width" (page.Param "sidebar-sticky-width")
               "height" (page.Param "sidebar-sticky-height")
@@ -143,7 +147,7 @@
                   data-ga-category="{{ div $i 4 | add 1 }}"
                 >
                   {{ partial "tw/promo-double.html" (dict
-                    "class" "w-0 min-w-full no-js:hidden"
+                    "class" "min-w-full no-js:hidden"
                     "imageDescription" $imageDescription
                     "link" $link
                     "desktopImages" $desktopImages
