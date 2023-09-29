@@ -1,5 +1,4 @@
 module.exports = {
-  purge: false,
   theme: {
     fontFamily: {
       serif: "Merriweather, serif",
@@ -7,7 +6,6 @@ module.exports = {
         'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", ' +
         'Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", ' +
         '"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif',
-      raleway: "Raleway, Helvetica, Arial, sans-serif",
     },
     colors: {
       transparent: "transparent",

@@ -1,14 +1,6 @@
 {{ define "body-class" -}}
-  text-[16px] bg-white font-raleway leading-normal
+  text-[16px] bg-white font-sans leading-normal
 {{- end }}
-
-{{ define "preload" }}
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-  {{ partial "header/preload-rale.html" . }}
-{{ end }}
 
 {{ define "header" }}<!-- -->{{ end }}
 {{ define "before-footer" }}<!-- -->{{ end }}

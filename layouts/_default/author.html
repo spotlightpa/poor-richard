@@ -5,14 +5,6 @@
   text-[16px] bg-beige font-serif leading-normal text-g-9
 {{ end }}
 
-{{ define "preload" }}
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-  {{ partial "header/preload-rale.html" . }}
-{{ end }}
-
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
   <section class=" bg-g-0 px-5 py-14 text-lg font-medium lg:px-0">
