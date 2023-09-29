@@ -85,11 +85,11 @@
   "takeover-hed": "Expiring soon!",
   "takeover-image": "2023/08/01jd-w2vj-77eb-3dp1.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate?campaign=701Dn000000YqKfIAK",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#f6c831",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01jh/brry/september-site-toppertracker-14-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jh/djmm/september-site-toppertracker-15-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#f6c831",
@@ -97,7 +97,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01jh/brrx/september-campaign-mobile-topperrectangles-14-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jh/djmk/september-campaign-mobile-topperrectangles-15-.svg"
   ],
   "topper-mobile-width": 1024
 }
