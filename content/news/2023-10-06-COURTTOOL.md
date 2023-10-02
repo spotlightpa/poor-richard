@@ -8,7 +8,7 @@ image = ""
 image-credit = ""
 image-description = ""
 kicker = "Elections"
-layout = "featured"
+layout = "custom"
 published = 2030-12-31T05:00:00-04:00
 slug = "court-tool"
 title = "Why Judges Matter"
@@ -16,15 +16,11 @@ topics = ["Elections"]
 series = []
 +++
 
-
-{{<featured/header
-  image="external/f98jyaza883casbzytgtmqpe6c.jpeg"
-  eyebrow="Elections"
-  hed="Why Judges Matter"
+{{<featured/main-takeover
+  title="Why Judges Matter"
   dek="Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
-  date="October 6, 2023"
-  byline="TK"
-  outlet="Spotlight PA"
+  image="external/f98jyaza883casbzytgtmqpe6c.jpeg"
+  story="true"
   image-credit="TK"
   credit-relation="for"
   image-source="Spotlight PA"
@@ -33,9 +29,18 @@ series = []
   image-description="TK"
 >}}
 
+
 {{<featured/social-buttons>}}
 
 {{<featured/dropcap>}}The judges you elect this November will have a profound impact on some of the most pressing and hot-button issues of our time, including abortion, civil liberties, education, voting and elections, the environment, and more. But their impact isn’t always readily apparent.{{</featured/dropcap>}}
+
+## Heading Two
+
+### Heading Three
+
+#### Heading Four
+
+##### Heading Five
 
 That’s why Spotlight PA has created this new voter tool showcasing how judges and the courts have affected policy over the past several years. 
 
@@ -69,11 +74,11 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
   case = "Allegheny Reproductive Health Center v. Pennsylvania Department of Human Services"
 >}}
 
-### WHY IT MATTERS: 
+### Why It Matters: 
 
 A rule prevents people who have state-issued insurance from using it to pay for an abortion. 
 
-### SUMMARY: 
+### Summary: 
 
 A group of abortion providers is suing the Pennsylvania Department of Human Services to challenge a law, passed in 1982, that prevents the state from using public dollars to cover abortions except in cases of rape, incest, or the life of the pregnant person. 
 

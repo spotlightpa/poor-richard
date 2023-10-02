@@ -1,13 +1,15 @@
 {{ $src := .Get "image" }}
 {{ $hed := .Get "title" }}
 {{ $dek := .Get "dek" }}
+{{ $sub := .Get "subhed"}}
 {{ $signupHed := .Get "signupHed" }}
 {{ $signupDek := .Get "signupDek" }}
 {{ $cta := .Get "cta" | default "Sign Up!" }}
 {{ $gaCategory := .Get "gaCategory" }}
 {{ $gaForm := .Get "gaForm" }}
 {{ $hiddenField := .Get "hiddenField" }}
-<header class="relative z-20 flex flex-col bg-black text-white">
+{{ $story := .Get "story" }}
+<header class="relative z-20 flex flex-col justify-center bg-black text-white min-h-[80vh]">
   {{ $imgOpt := dict
     "filename" ($src)
     "width" 2271
@@ -26,22 +28,30 @@
   </div>
   <div class="px-4 py-8 leading-tight sm:p-12">
     <div class="mx-auto flex w-full flex-col justify-center md:max-w-2xl">
-      <div class="mx-auto">
+      <div class="mx-auto font-sans">
         <h1
           class="text-shadow  text-3xl font-extrabold md:text-4xl lg:text-5xl xl:text-6xl"
         >
           {{ $hed }}
         </h1>
-        <h2
-          class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-        >
-          {{ $dek }}
-
-        </h2>
+        {{ with $sub}}
+          <h2
+            class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+          >
+            {{ $sub }}
+          </h2>
+        {{ end }}
+        {{ with $dek }}
+          <p
+            class="mt-3 text-2xl text-shadow leading-tight"
+          >{{ $dek }}</p>
+        {{ end }}
+        
       </div>
       {{ $idFname :=  partial "helper/new-id" . }}
       {{ $idLname :=  partial "helper/new-id" . }}
       {{ $idEmail :=  partial "helper/new-id" . }}
+      {{ with $hiddenField }}
       <label
         for="{{ $idFname }}"
         class="backdrop-fallback mx-auto my-8 block w-full rounded p-8 shadow ring-1 ring-s-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
@@ -107,6 +117,10 @@
           </div>
         </form>
       </label>
+      {{ end }}
     </div>
   </div>
 </header>
+{{ with $story }}
+{{ partial "featured/content-area-start" . }}
+{{ end }}
