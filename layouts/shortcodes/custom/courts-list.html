@@ -1,11 +1,36 @@
 {{ $issue := .Get "issue-title" }}
+{{ $filename := .Get "issue-icon" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 296)
+  (dict "width" 480 "height" 480)
+}}
+
 <li class="
   shadow-lg border-4 border-white rounded text-2xl font-bold"
 >
   <a
     href="#issue-{{ $issue | urlize }}"
-    class="bg-blue aspect-square flex items-center justify-center"
+    class="aspect-square text-white flex items-end justify-center relative pb-4"
     @click="selected = 'issue-{{ $issue | urlize }}' "
-    :class="{'text-white bg-black sm:bg-transparent sm:text-black': selected === 'issue-{{ $issue | urlize }}' }"
-  >{{ $issue }}</a>
+    :class="{'bg-black': selected === 'issue-{{ $issue | urlize }}' }"
+  >
+    <span class="relative z-10 drop-shadow">{{ $issue }}</span>
+      {{ $srcset := partial "helper/build-srcset" (dict
+    "filename" $filename
+    "sizes" $sizes
+    )
+  }}
+  <picture
+    class="absolute inset-0 block overflow-hidden z-0"
+    aria-hidden="true"
+    :class="{'opacity-50': selected === 'issue-{{ $issue | urlize }}' }"
+  >
+    <img
+      srcset="{{ $srcset }}"
+      class="h-full object-cover"
+      sizes="100vh"
+    />
+  </picture>
+
+  </a>
 </li>

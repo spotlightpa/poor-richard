@@ -32,41 +32,70 @@ series = []
 
 {{<featured/social-buttons>}}
 
-{{<featured/dropcap>}}The judges you elect this November will have a profound impact on some of the most pressing and hot-button issues of our time, including abortion, civil liberties, education, voting and elections, the environment, and more. But their impact isn’t always readily apparent.{{</featured/dropcap>}}
+{{<featured/dropcap>}}On Nov. 7, Pennsylvania voters will be asked to pick new judges to sit on state Supreme, Superior, and Commonwealth Courts.{{</featured/dropcap>}}
 
-## Heading Two
-
-### Heading Three
-
-#### Heading Four
-
-##### Heading Five
-
-That’s why Spotlight PA has created this new voter tool showcasing how judges and the courts have affected policy over the past several years. 
-
-On Nov. 7, Pennsylvania voters will be asked to pick new judges to sit on state Supreme, Superior, and Commonwealth Courts.
+These three appellate courts hold a tremendous amount of power and make decisions that can directly affect the lives of people in the commonwealth — yet many don’t know much about them.
 
 Judges on these courts are elected in statewide, partisan elections that often don’t have high turnout. Once on the court, judges often stay there for decades — interpreting state laws, striking them down completely, and determining guilt and punishments. 
 
 To illustrate how decisions from Pennsylvania’s appellate courts impact residents, we collected some of the most relevant and important cases across a range of issues to showcase what the court receives and how it makes its decisions on everything from paid sick leave to legislative districts to gun control. 
+
+Click on the topic to see how the courts shape policy on the issue:
+
 
 {{<custom/courts-tool
   hed="Select a topic to see the impact of the courts:"
 >}}
 <ul class="grid grid-cols-2 gap-3 max-w-screen-xl mx-auto mt-10 pb-10 md:grid-cols-4 md:gap-5">
 
-  {{<custom/courts-list issue-title = "Abortion">}}
-  {{<custom/courts-list issue-title = "Civil Liberties">}}
-  {{<custom/courts-list issue-title = "Clergy Abuse">}}
-  {{<custom/courts-list issue-title = "COVID-19">}}
-  {{<custom/courts-list issue-title = "Criminal Appeals">}}
-  {{<custom/courts-list issue-title = "Death Penalty">}}
-  {{<custom/courts-list issue-title = "Elections">}}
-  {{<custom/courts-list issue-title = "Environment">}}
-  {{<custom/courts-list issue-title = "Gun Rights">}}
-  {{<custom/courts-list issue-title = "Paid Sick Leave">}}
-  {{<custom/courts-list issue-title = "Redistricting">}}
-  {{<custom/courts-list issue-title = "Schools">}}
+  {{<custom/courts-list 
+    issue-title = "Abortion"
+    issue-icon = "2023/10/01jh-nnw6-bs9w-vjrj.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Civil Liberties"
+    issue-icon = "2023/10/01jh-nnwt-xf50-hw6y.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Clergy Abuse"
+    issue-icon = "2023/10/01jh-nnwx-db40-jxnp.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "COVID-19"
+    issue-icon = "2023/10/01jh-nnx2-t6dz-ee1a.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Criminal Appeals"
+    issue-icon = "2023/10/01jh-nnx4-7e79-h576.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Death Penalty"
+    issue-icon = "2023/10/01jh-nnxm-s6es-yv0c.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Elections"
+    issue-icon = "2023/10/01jh-nnxp-qtw1-dsb0.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Environment"
+    issue-icon = "2023/10/01jh-nnxr-4e6w-jjg7.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Gun Rights"
+    issue-icon = "2023/10/01jh-nnxs-1fj5-7gxe.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Paid Sick Leave"
+    issue-icon = "2023/10/01jh-nny3-escj-74pd.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Redistricting"
+    issue-icon = "2023/10/01jh-nny5-xqpk-71z4.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Schools"
+    issue-icon = "2023/10/01jh-nny6-0zfd-fd30.jpeg"
+  >}}
 </ul>
 {{<custom/courts-item 
   issue-title = "Abortion"
@@ -74,11 +103,11 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
   case = "Allegheny Reproductive Health Center v. Pennsylvania Department of Human Services"
 >}}
 
-### Why It Matters: 
+#### Why It Matters: 
 
 A rule prevents people who have state-issued insurance from using it to pay for an abortion. 
 
-### Summary: 
+#### Summary: 
 
 A group of abortion providers is suing the Pennsylvania Department of Human Services to challenge a law, passed in 1982, that prevents the state from using public dollars to cover abortions except in cases of rape, incest, or the life of the pregnant person. 
 
@@ -88,49 +117,37 @@ The petitioners appealed to the state Supreme Court, which accepted the case and
 {{</custom/courts-item>}}
 
 
-{{<custom/courts-item issue-title = "Civil Liberties">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Clergy Abuse">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "COVID-19">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Criminal Appeals">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Death Penalty">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Elections">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Environment">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Gun Rights">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Paid Sick Leave">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Redistricting">}}{{</custom/courts-item>}}
-{{<custom/courts-item issue-title = "Schools">}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Civil Liberties"
+  >}}
+
+{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Clergy Abuse"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "COVID-19"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Criminal Appeals"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Death Penalty"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Elections"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Environment"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Gun Rights"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Paid Sick Leave"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Redistricting"
+  >}}{{</custom/courts-item>}}
+{{<custom/courts-item issue-title = "Schools"
+  >}}{{</custom/courts-item>}}
 
 
 {{</custom/courts-tool>}}
-{{<featured/support>}}
+
+{{<featured/election-promo>}}
 
 {{<featured/footer>}}
-{{<featured/credit
-    eyebrow="Reporting"
-    name="Stephen Caruso"
-    role="Capitol Reporter"
-    email="scaruso@spotlightpa.org"
->}}
-{{<featured/credit
-    name="Angela Couloumbis"
-    role="Investigative Reporter"
-    email="acouloumbis@spotlightpa.org"
->}}
-{{<featured/credit
-    name="Kate Huangpu"
-    role="Government Reporter"
-    email="khuangpu@spotlightpa.org"
->}}
-{{<featured/credit
-    name="Katie Meyer"
-    role="Government Editor/Reporter"
-    email="kmeyer@spotlightpa.org"
->}}
-{{<featured/credit
-  eyebrow="Illustrations"
-  name="Daniel Fishel"
-  role="For Spotlight PA"
->}}
 
 {{<featured/credit
     eyebrow="Content and Editing"
@@ -138,12 +155,18 @@ The petitioners appealed to the state Supreme Court, which accepted the case and
     role="Democracy Editor"
     email="eestrada@spotlightpa.org"
 >}}
+
+{{<featured/credit
+  eyebrow="Illustrations"
+  name="Daniel Fishel"
+  role="For Spotlight PA"
+>}}
+
 {{<featured/credit
   eyebrow="Editing"
-  name="Sarah Anne Hughes"
-  headshot="sarah-anne-hughes"
-  role="Deputy Editor"
-  email="shughes@spotlightpa.org"
+    name="Katie Meyer"
+    role="Government Editor/Reporter"
+    email="kmeyer@spotlightpa.org"
 >}}
 
 {{<featured/credit
