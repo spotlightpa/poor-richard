@@ -5,19 +5,23 @@
 {{ $cta := .Get "cta" }}
 {{ $link := .Get "link" }}
 
+
 <section id="{{ $id }}" class="bg-s-2 font-sans md:flex md:py-16 lg:py-24">
-  <div class="max-w-screen-xl w-full mx-auto md:flex justify-between">
-    <figure class="md:w-5/12 aspect-auto rounded bg-blue"></figure>
+  <div class="mx-auto w-full max-w-screen-xl justify-between md:flex">
+    <figure class="aspect-auto rounded bg-blue md:w-5/12"></figure>
     <div class="md:w-6/12">
       <h2 class="text-3xl font-bold md:text-4xl">{{ $hed }}</h2>
       {{ with $sub }}
-        <h3 class="max-w-xl mt-4 text-2xl font-semibold tracking-wide leading-none">{{ $sub }}</h3>
+        <h3
+          class="mt-4 max-w-xl text-2xl font-semibold leading-none tracking-wide"
+        >
+          {{ $sub }}
+        </h3>
       {{ end }}
-      <p class="max-w-lg mt-2 text-lg">{{ $dek }}</p>
-      <a
-        href="{{ $link }}"
-        class="btn-signup block mt-10 max-w-lg"
-      >{{ $cta }}</a>
+      <p class="mt-2 max-w-lg text-lg">{{ $dek }}</p>
+      <a href="{{ $link }}" class="btn-signup mt-10 block max-w-lg"
+        >{{ $cta }}</a
+      >
     </div>
   </div>
 </section>
