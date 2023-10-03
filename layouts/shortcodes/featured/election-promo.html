@@ -1,7 +1,7 @@
 {{ $hed := .Get "hed" | default "Visit the election center" }}
 {{ $dek := .Get "dek"  | default "Key dates, candidate guides, how to vote and more" }}
 {{ $link := .Get "link" | default "/elections" }}
-{{ $cta := .Get "cta" | default "Let's Go →"}}
+{{ $cta := .Get "cta" | default "Let's Go →" }}
 {{ $sizes := slice
   (dict "width" 300 "height" 900)
   (dict "width" 600 "height" 1200)
@@ -9,20 +9,21 @@
   (dict "width" 1200 "height" 500)
   (dict "width" 2400 "height" 1000)
 }}
-  <section class="relative bg-election-green-darkest mx-[calc(-50vw_+_50%)] py-16 px-5">
-    <div class="mx-auto max-w-lg text-white font-sans text-center z-10 relative">
-
+<section
+  class="relative mx-[calc(-50vw_+_50%)] bg-election-green-darkest py-16 px-5"
+>
+  <div class="relative z-10 mx-auto max-w-lg text-center font-sans text-white">
     <h2 class="text-3xl font-black uppercase tracking-widest">{{ $hed }}</h2>
-    <p class="text-xl mt-2 mb-6">{{ $dek }}</p>
+    <p class="mt-2 mb-6 text-xl">{{ $dek }}</p>
     <a class="btn-signup-slim inline" href="{{ $link }}">{{ $cta }}</a>
-    </div>
+  </div>
   {{ $srcset := partial "helper/build-srcset" (dict
     "filename" "2022/09/01hj-pfkr-0knb-0t41.jpeg"
     "sizes" $sizes
     )
   }}
   <picture
-    class="absolute inset-0 block overflow-hidden opacity-10 z-0"
+    class="absolute inset-0 z-0 block overflow-hidden opacity-10"
     aria-hidden="true"
   >
     <img
@@ -31,4 +32,4 @@
       sizes="100vw"
     />
   </picture>
-  </section>
+</section>
