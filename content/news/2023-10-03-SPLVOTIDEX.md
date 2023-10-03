@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-10-03T13:29:49.337-04:00
 slug = "pennsylvania-voter-id-election-rules-expanded-proposal"
 suppress-date = false
-title = "Expanded voter ID is back on the table in Pennsylvania"
+title = "Expanded voter ID requirements are back on the table in Pennsylvania"
 title-tag = "Pennsylvania may expand voter ID requirements"
 topics = ["Elections"]
 +++
