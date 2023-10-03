@@ -1,13 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-09-29-SPLSTATEPARKSFUNDING.md"
+    "content/news/2023-10-03-SPLPRIMEXPLA.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
+    "content/news/2023-08-31-SPLVBPRIMARY.md",
+    "content/news/2023-09-18-SPLPRIMARIES.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-09-29-SPLSTATEPARKSFUNDING.md",
     "content/news/2023-09-28-SPLVERENRES.md",
-    "content/news/2023-09-28-SPLNEWSQUIZSEPT25.md",
     "content/news/2023-09-28-SPLSEPBUDUP.md"
   ],
   "topper": []
