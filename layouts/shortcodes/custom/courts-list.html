@@ -5,32 +5,30 @@
   (dict "width" 480 "height" 480)
 }}
 
-<li class="
-  shadow-lg border-4 border-white rounded text-2xl font-bold"
+
+<li
+  class="
+  rounded border-4 border-white text-xl font-bold shadow-lg lg:text-2xl"
 >
   <a
     href="#issue-{{ $issue | urlize }}"
-    class="aspect-square text-white flex items-end justify-center relative pb-4"
+    class="relative flex aspect-square items-end justify-center pb-4 text-white"
     @click="selected = 'issue-{{ $issue | urlize }}' "
     :class="{'bg-black': selected === 'issue-{{ $issue | urlize }}' }"
   >
     <span class="relative z-10 drop-shadow">{{ $issue }}</span>
-      {{ $srcset := partial "helper/build-srcset" (dict
-    "filename" $filename
-    "sizes" $sizes
-    )
-  }}
-  <picture
-    class="absolute inset-0 block overflow-hidden z-0"
-    aria-hidden="true"
-    :class="{'opacity-50': selected === 'issue-{{ $issue | urlize }}' }"
-  >
-    <img
-      srcset="{{ $srcset }}"
-      class="h-full object-cover"
-      sizes="100vh"
-    />
-  </picture>
-
+    {{ $srcset := partial "helper/build-srcset" (dict
+      "filename" $filename
+      "sizes" $sizes
+      "gravity" "ce"
+      )
+    }}
+    <picture
+      class="absolute inset-0 z-0 block overflow-hidden"
+      aria-hidden="true"
+      :class="{'opacity-50': selected === 'issue-{{ $issue | urlize }}' }"
+    >
+      <img srcset="{{ $srcset }}" class="h-full object-cover" sizes="100vh" />
+    </picture>
   </a>
 </li>

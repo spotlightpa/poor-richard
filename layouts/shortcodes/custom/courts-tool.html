@@ -1,14 +1,13 @@
 {{ $hed := .Get "hed" }}
 
-<section 
-  class="bg-s-8 bg-gradient-to-b from-s-2 via-s-3 to-s-5 w-screen my-10 mx-[calc(-50vw_+_50%)] pt-5 min-h-screen font-sans"
+
+<section
+  class="mx-[calc(-50vw_+_50%)] mt-10 min-h-screen w-screen bg-s-8 bg-gradient-to-b from-s-2 via-s-3 to-s-5 pt-5 font-sans"
   x-data="{ selected: '' }"
 >
-
-  <h2 class="text-4xl text-white font-black max-w-screen-xl mx-auto">
+  <h2 class="mx-auto max-w-screen-xl px-5 text-4xl font-black text-s-9">
     {{ $hed }}
   </h2>
 
   {{ .Inner }}
-
 </section>

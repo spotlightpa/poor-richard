@@ -1,22 +1,16 @@
-{{ $title := .Get "issue-title" }}
 {{ $court := .Get "court" }}
 {{ $case := .Get "case" }}
-
-<section 
-  id="issue-{{ $title }}"
-  x-show="selected === 'issue-{{ $title | urlize }}'"
-  class="w-full bg-white py-10"
-  :class="{'pt-20': selected === 'issue-{{ $title | urlize }}' }"
->
-  <h2 class=" max-w-screen-lg mx-auto pb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider border-b-4 border-black">{{ $title }}</h2>
-  <div class="max-w-screen-lg mx-auto md:flex md:gap-5 items-stretch justify-start">
-    <aside class="md:w-2/6 mt-8">
-      <p class="top-8 sticky text-sm leading-tight font-bold"> {{ $court }}</p>
-    </aside>
-    <article class="featured-content md:w-9/12">
-      <h4 class=" mb-0 font-sans"><span class="bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-sm font-semibold uppercase border-eyebrow-bg border-2">Case</span> <em class="text-sm">{{ $case }}</em></h4>
-      {{ .Inner  | markdownify }}
-    </article>
-  </div>
-
-</section>
+{{ $link := .Get "link" }}
+  <article class="featured-content mb-8 border-black border-t-4 first:border-t-0">
+    <h4 class=" mb-0 font-sans">
+      <span
+        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
+        >Case</span
+      >
+      <a class="text-sm italic underline underline-offset-2" href="{{ $link }}"
+        >{{ $case }}</a
+      >
+    </h4>
+    <h6 class="text-sm">{{ $court }}</h6>
+    {{ .Inner  | markdownify }}
+  </article>
