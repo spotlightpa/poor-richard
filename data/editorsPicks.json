@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-10-04-SPLCFYASS.md"
+    "content/statecollege/2023-10-04-SPLSUPNEWCH.md"
   ],
   "subfeatures": [
-    "content/news/2023-09-05-SPLSCOPAGEN23.md",
-    "content/news/2023-09-07-SPLAPPELLATEGEN23.md"
+    "content/statecollege/2023-05-30-SPLDUBCASH.md",
+    "content/statecollege/2023-04-10-SPLHERMDUB.md"
   ],
   "topSlots": [
+    "content/news/2023-10-04-SPLCFYASS.md",
     "content/news/2023-10-04-SPLAVRLEGAL.md",
-    "content/news/2023-10-03-SPLVOTIDEX.md",
-    "content/news/2023-10-03-SPLPRIMEXPLA.md"
+    "content/news/2023-10-03-SPLVOTIDEX.md"
   ],
   "topper": []
 }
