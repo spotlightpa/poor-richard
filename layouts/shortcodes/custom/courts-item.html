@@ -12,7 +12,9 @@
       class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
       >Case</span
     >
-    <a class="block text-sm italic uppercase underline underline-offset-2 sm:inline" href="{{ $link }}"
+    <a
+      class="block text-sm uppercase italic underline underline-offset-2 sm:inline"
+      href="{{ $link }}"
       >{{ $case }}</a
     >
   </h4>
@@ -21,7 +23,7 @@
 
 
   <div
-    class="via-40% sticky inset-x-0 bottom-0 bg-gradient-to-t from-white via-white pt-12 pb-4"
+    class="sticky inset-x-0 bottom-0 bg-gradient-to-t from-white via-white via-40% pb-4 pt-12"
   >
     <button
       x-show="!isOpen"
