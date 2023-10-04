@@ -63,14 +63,8 @@ promo="""
     image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
     hed="See how electing judges affects you and the issues you care about most"
     dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
-    cta="View the Tool →"
+    cta="Use the tool →"
     link="/news/2030/12/court-tool/"
->}}
-"""
-donate ="""
-{{<donate-slim
-    title="Help Empower Voters. Support Our Vital Election Coverage."
-    cta="Donate"
 >}}
 """
 form ="""
@@ -141,6 +135,12 @@ sidebar = """
     >}}
   {{</sidebar-links>}}
 {{</landing-sidebar>}}
+"""
+donate ="""
+{{<donate-slim
+    title="Help Empower Voters. Support Our Vital Election Coverage."
+    cta="Donate"
+>}}
 """
 
 [[internal-links]]

@@ -72,16 +72,10 @@
 
 {{ .Page.RenderString (.Param "promo") }}
 
-
-<div class="bg-white">
-  {{ .Page.RenderString (.Param "donate") }}
-</div>
-
 {{ range $i, $blocks := .Params.blocks }}
   {{ $id := urlize .title }}
   {{ partial "blocks/block" (dict "Page" $ "block" .) }}
 {{ end }}
-
 
 <section class="bg-white p-6" data-ga-category="inline-newsletter">
   <div class="mx-auto max-w-screen-md">
@@ -151,6 +145,11 @@
     {{ .Page.RenderString (.Param "form") }}
   </div>
 </section>
+
+<div class="bg-white">
+  {{ .Page.RenderString (.Param "donate") }}
+</div>
+
 <section
   class="bg-white p-6"
   id="credits"
