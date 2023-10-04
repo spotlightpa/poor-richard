@@ -20,40 +20,36 @@
   {{ .Inner  | markdownify }}
 
 
-    <div
-      class="via-40% absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white pt-12 pb-4"
+  <div
+    class="via-40% absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white pt-12 pb-4"
+  >
+    <button
+      x-show="!isOpen"
+      class="group leading-4 text-navy hover:text-yellow"
+      @click="isOpen = true"
+      x-report-click
+      data-ga-category="toggle-bio"
     >
-      <button
-        x-show="!isOpen"
-        class="group leading-4 text-navy hover:text-yellow"
-        @click="isOpen = true"
-        x-report-click
-        data-ga-category="toggle-bio"
-      >
-        <span aria-hidden="true">
-          <svg class="inline-block h-4 w-4 fill-current">
-            {{ partial "helper/svg.html" "plus" }}
-          </svg>
-        </span>
-        <span class="align-bottom uppercase hover:underline">
-          Show more…
-        </span>
-      </button>
-      <button
-        x-show="isOpen"
-        class="group leading-4 text-navy hover:text-yellow"
-        @click="isOpen = false"
-        x-report-click
-        data-ga-category="toggle-bio"
-      >
-        <span aria-hidden="true">
-          <svg class="inline-block h-4 w-4 fill-current">
-            {{ partial "helper/svg.html" "minus" }}
-          </svg>
-        </span>
-        <span class="align-bottom uppercase hover:underline">
-          Show less…
-        </span>
-      </button>
-    </div>
+      <span aria-hidden="true">
+        <svg class="inline-block h-4 w-4 fill-current">
+          {{ partial "helper/svg.html" "plus" }}
+        </svg>
+      </span>
+      <span class="align-bottom uppercase hover:underline"> Show more… </span>
+    </button>
+    <button
+      x-show="isOpen"
+      class="group leading-4 text-navy hover:text-yellow"
+      @click="isOpen = false"
+      x-report-click
+      data-ga-category="toggle-bio"
+    >
+      <span aria-hidden="true">
+        <svg class="inline-block h-4 w-4 fill-current">
+          {{ partial "helper/svg.html" "minus" }}
+        </svg>
+      </span>
+      <span class="align-bottom uppercase hover:underline"> Show less… </span>
+    </button>
+  </div>
 </article>

@@ -4,11 +4,26 @@
 {{ $dek := .Get "dek" }}
 {{ $cta := .Get "cta" }}
 {{ $link := .Get "link" }}
+{{ $filename := .Get "image" | default "2023/10/01jh-nnsg-6zn1-3c7b.jpeg" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 110)
+  (dict "width" 1072 "height" 512)
+}}
 
 
 <section id="{{ $id }}" class="bg-s-2 font-sans md:flex md:py-16 lg:py-24">
   <div class="mx-auto w-full max-w-screen-xl justify-between md:flex">
-    <figure class="aspect-auto rounded bg-blue md:w-5/12"></figure>
+    {{ $srcset := partial "helper/build-srcset" (dict
+      "filename" $filename
+      "sizes" $sizes
+      "gravity" "ce"
+      )
+    }}
+
+
+    <figure class="flex overflow-hidden rounded md:w-5/12">
+      <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
+    </figure>
     <div class="md:w-6/12">
       <h2 class="text-3xl font-bold md:text-4xl">{{ $hed }}</h2>
       {{ with $sub }}

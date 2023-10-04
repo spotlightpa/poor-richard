@@ -4,7 +4,7 @@ authors = []
 blurb = "Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
 byline = "Jane Doe"
 extended-kicker = "2023"
-image = ""
+image = "2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
 image-credit = ""
 image-description = ""
 kicker = "Elections"
@@ -19,7 +19,7 @@ series = []
 {{<featured/main-takeover
   title="Why Judges Matter"
   dek="Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
-  image="external/f98jyaza883casbzytgtmqpe6c.jpeg"
+  image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
   story="true"
   image-credit="TK"
   credit-relation="for"
@@ -157,9 +157,9 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
     case = "In re: Fortieth Statewide Investigating Grand Jury"
     link = "https://www.pacourts.us/Storage/media/pdfs/20210610/013823-file-7473.pdf"
   >}}
-    #### WHY IT MATTERS 
+  #### WHY IT MATTERS 
     
-    The names of 11 Catholic clergy members implicated in a grand jury investigation of child sexual abuse were kept secret.
+  The names of 11 Catholic clergy members implicated in a grand jury investigation of child sexual abuse were kept secret.
 
   #### SUMMARY
 

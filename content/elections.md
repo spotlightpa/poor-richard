@@ -60,7 +60,7 @@ credits = """
 promo="""
 {{<featured/promo
     id="court-tool"
-    image="external/f98jyaza883casbzytgtmqpe6c.jpeg"
+    image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
     hed="See how electing judges affects you and the issues you care about most"
     dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
     cta="View the Tool →"
