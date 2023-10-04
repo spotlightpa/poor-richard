@@ -1,9 +1,11 @@
 name = "Christopher Baxter"
 firstName = "Christopher"
-lastName = "Baxter"
+lastName = "aaaBaxter"
 title = "CEO & President"
 email = "cbaxter@spotlightpa.org"
 twitter = "cbaxter1"
 headshot = "2021/06/01gd-pm19-0wb0-3s97.jpeg"
 content = "Christopher Baxter is the CEO and founding editor in chief of Spotlight PA, and oversees all aspects of the organization. His work as an investigative reporter and editor has regularly prompted meaningful change in the form of new laws and regulations, criminal investigations, resignations, legislative hearings, and more. Most recently, he was the editor for data and investigations at NJ Advance Media (NJ.com & The Star-Ledger), where he led the newsroom's highest-level investigative projects with a digital-first approach and an emphasis on journalism that gets results. Previously, he was the Mike Wallace Fellow in Investigative Reporting with the Knight-Wallace Fellowships at the University of Michigan and, before that, worked for four years as a statehouse investigative reporter in The Star-Ledger's Trenton Bureau. He began his career as a local reporter for The Morning Call in Allentown, Pa. His work has garnered numerous state and national awards, including the 2014 Livingston Award in Local Reporting, the 2018 Investigative Reporters & Editors Freedom of Information Award, as well as the 2019 Knight Award for Public Service and the 2019 Investigative Data Journalism Award from the Online News Association."
 active = true
+role = "admin"
+board = "board"

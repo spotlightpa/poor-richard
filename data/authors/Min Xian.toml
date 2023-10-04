@@ -10,6 +10,6 @@ headshot = "external/0xp4d7gq3heywvk8wd2ja35j8c.jpeg"
 beat = "Accountability"
 focusHed = "Local government accountability"
 content = "Central and northern Pennsylvania is home to vast natural beauty, historic towns with changing economies, and a diverse mix of social-political values. Xian reports on how local governments are run and how public dollars are spent, with a focus on how public and private forces shape ordinary life in this region.\n\nBefore joining Spotlight PA, Xian covered local government and rural issues for the region’s NPR affiliate, WPSU. Originally from southern China, she has called State College home since 2013."
-reporter = true
+role = "reporter"
 active = true
 image-gravity = "fp:.47:.5"

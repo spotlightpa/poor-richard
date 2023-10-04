@@ -2,7 +2,7 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-s-8 text-xs xl:text-sm" }}
+{{ $capClass := .Get "caption-class" | htmlUnescape | default "p-2 text-g-8 text-xs xl:text-sm" }}
 
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
 {{ $sizes := dict "widths" $widths "widthRatio" 16 "heightRatio" 9 | partial "helper/build-sizes" }}
@@ -30,14 +30,13 @@
   tabindex="0"
   data-ga-category="slide:{{ .Ordinal }}"
   x-report-click
-  data-ga-action="slider:focus"
 >
   <div class="relative h-0 w-full pb-16x9">
     <picture
       class="
         absolute inset-0 block
         overflow-hidden rounded
-        bg-s-3 transition-shadow duration-300
+        bg-g-3 transition-shadow duration-300
         group-focus:shadow-md
       "
     >

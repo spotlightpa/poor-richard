@@ -1,0 +1,13 @@
+<ul>
+  {{ range . }}
+    <li>
+      {{ if .url }}
+        <a class="text-blue hover:underline" href="{{ .url }}">
+          {{- .display -}}
+        </a>
+      {{ else }}
+        {{ .display }}
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>

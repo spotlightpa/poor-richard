@@ -26,14 +26,15 @@
   role="dialog"
   aria-modal="true"
   aria-label="Contribute to Spotlight PA"
-  class="fixed bottom-0 left-0 z-30 flex flex-wrap md:left-auto md:top-0 md:right-0 md:h-full md:w-1/3"
+  class="fixed bottom-0 left-0 z-30 flex flex-wrap md:left-auto md:right-0 md:top-0 md:h-full md:w-1/3"
 >
   <button
-    class="absolute right-3 -top-10 flex rounded-xl bg-white text-white md:top-4 md:right-auto md:left-5"
+    class="absolute -top-10 right-3 flex rounded-xl bg-white text-white md:left-5 md:right-auto md:top-4"
     type="button"
     aria-label="close"
     x-ref="closer"
-    data-ga-action="modal:takeover:dismiss"
+    x-report-click
+    data-ga-category="dismiss"
     @keydown.escape="isOpen = false"
     @click="isOpen = false;"
     :autofocus="isOpen"
@@ -54,7 +55,7 @@
       class="z-20 flex-1 self-start overflow-visible font-serif font-bold text-white sm:min-w-full md:flex md:h-0 md:items-end md:bg-black"
     >
       <h2
-        class="bg-red p-4 text-2xl md:mr-9 md:-mb-28 md:p-10 lg:text-3xl xl:text-4xl"
+        class="bg-red p-4 text-2xl md:-mb-28 md:mr-9 md:p-10 lg:text-3xl xl:text-4xl"
       >
         {{ $hed }}
       </h2>
@@ -115,7 +116,7 @@
 
 
     <div
-      class="flex-0 flex w-full flex-col items-center justify-center space-y-6 bg-black p-4 font-sans sm:order-1 sm:flex-1 sm:space-y-4 sm:pr-12 sm:pl-16 md:h-3/5 md:justify-start md:space-y-4 md:self-start md:py-12 md:pt-32 md:pb-8"
+      class="flex-0 flex w-full flex-col items-center justify-center space-y-6 bg-black p-4 font-sans sm:order-1 sm:flex-1 sm:space-y-4 sm:pl-16 sm:pr-12 md:h-3/5 md:justify-start md:space-y-4 md:self-start md:py-12 md:pb-8 md:pt-32"
     >
       <p class="text-base text-white lg:text-lg">
         {{ $dek }}

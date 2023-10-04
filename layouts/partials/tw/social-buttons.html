@@ -1,7 +1,7 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
 
-{{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow outline-none ring-2 ring-transparent focus:ring-s-4 active:ring-s-8` }}
+{{ $btnClass := `inline-flex rounded w-9 h-9 justify-center items-center shadow hover:shadow-md transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8` }}
 <nav
   class="print-exact inline-flex space-x-2 text-white"
   data-ga-category="social-buttons"
@@ -10,7 +10,7 @@
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="{{ $btnClass }} bg-green"
     title="Share this page by email"
-    data-ga-action="share:email"
+    data-ga-category="email"
   >
     <svg class="h-4 w-4 fill-current">
       {{ partial "helper/svg.html" "email" }}
@@ -19,7 +19,7 @@
   <a
     class="{{ $btnClass }} bg-fb-blue"
     href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ .Permalink }}"
-    data-ga-action="share:facebook"
+    data-ga-category="facebook"
     title="Share this page on Facebook"
   >
     <svg class="h-4 w-4 fill-current">
@@ -29,7 +29,7 @@
   <a
     class="{{ $btnClass }} bg-tw-blue"
     href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
-    data-ga-action="share:twitter"
+    data-ga-category="twitter"
     title="Tweet about this page"
   >
     <svg class="h-4 w-4 fill-current">
@@ -39,7 +39,7 @@
   <button
     class="{{ $btnClass }} bg-orange"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
-    data-ga-action="share:sharesheet"
+    data-ga-category="sharesheet"
     x-report-click
     title="More ways to share this page"
     x-data

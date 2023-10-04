@@ -1,52 +1,47 @@
 /* merriweather-regular - latin */
 @font-face {
-  font-display: fallback;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/css/fonts/merriweather-v25/merriweather-v25-latin-regular.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/css/fonts/merriweather-v30/merriweather-v30-latin-regular.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* merriweather-italic - latin */
 @font-face {
-  font-display: fallback;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: italic;
   font-weight: 400;
-  src: local(""),
-    url("/css/fonts/merriweather-v25/merriweather-v25-latin-italic.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/css/fonts/merriweather-v25/merriweather-v25-latin-italic.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/css/fonts/merriweather-v30/merriweather-v30-latin-italic.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* merriweather-700 - latin */
 @font-face {
-  font-display: fallback;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
-  src: local(""),
-    url("/css/fonts/merriweather-v25/merriweather-v25-latin-700.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/css/fonts/merriweather-v25/merriweather-v25-latin-700.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/css/fonts/merriweather-v30/merriweather-v30-latin-700.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* merriweather-700italic - latin */
 @font-face {
-  font-display: fallback;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: italic;
   font-weight: 700;
-  src: local(""),
-    url("/css/fonts/merriweather-v25/merriweather-v25-latin-700italic.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/css/fonts/merriweather-v25/merriweather-v25-latin-700italic.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/css/fonts/merriweather-v30/merriweather-v30-latin-700italic.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

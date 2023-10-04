@@ -17,7 +17,7 @@
   aria-modal="true"
   aria-label="Newsletter sign up"
 >
-  <div class="absolute inset-0 bg-s-4 opacity-75"></div>
+  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div
     class="absolute inset-0 backdrop-blur-sm backdrop-filter"
     x-transition.opacity
@@ -41,11 +41,12 @@
         >
           <button
             style="color: {{ $actionColor }};"
-            class="col-start-6 flex text-s-4  md:col-start-10 md:row-start-1"
+            class="col-start-6 flex text-g-4  md:col-start-10 md:row-start-1"
             type="button"
             aria-label="close"
             x-ref="closer"
-            data-ga-action="modal:newsletter:dismiss"
+            x-report-click
+            data-ga-category="dismiss"
             @keydown.escape="isOpen = false"
             @click="isOpen = false;"
             :autofocus="isOpen"
@@ -69,6 +70,7 @@
             @click.stop
             @keydown.escape="isOpen = false"
           >
+            {{ partial "newsletter/basic-hidden.html" . }}
             {{ with $imagename }}
               <div
                 class="-mt-14 flex aspect-video items-stretch justify-center self-stretch overflow-hidden rounded-tr md:col-start-3 md:row-start-1 md:row-end-4 md:mt-0 md:aspect-auto"
@@ -118,11 +120,10 @@
             <div
               class="m-5 flex max-w-md flex-wrap items-stretch justify-start space-y-4 sm:flex-nowrap md:col-start-1 md:col-end-3"
             >
-              {{ partial "newsletter/hidden-input.html" . }}
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -138,7 +139,7 @@
               </button>
             </div>
             <div
-              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-s-3 px-6 pb-9 pt-5"
+              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
               x-cloak
               x-show="hasFocused"
               x-transition:enter="transition ease-in-out duration-300"
@@ -158,7 +159,7 @@
                     value="1"
                     checked
                     x-report-click
-                    data-ga-action="toggle-newsletter:papost"
+                    data-ga-category="toggle-newsletter:papost"
                   />
                   <strong>PA Post (Daily)</strong>: Top news every weekday
                   morning, plus a daily puzzle.
@@ -173,7 +174,7 @@
                     value="1"
                     checked
                     x-report-click
-                    data-ga-action="toggle-newsletter:investigator"
+                    data-ga-category="toggle-newsletter:investigator"
                   />
                   <strong>The Investigator (Weekly)</strong>: Best
                   accountability journalism every Thursday, plus a weekly
@@ -189,7 +190,7 @@
                     value="1"
                     checked
                     x-report-click
-                    data-ga-action="toggle-newsletter:palocal"
+                    data-ga-category="toggle-newsletter:palocal"
                   />
                   <strong>PA Local (Weekly)</strong>: A fresh look at the
                   incredible people, places, and food of Pa. every Friday.

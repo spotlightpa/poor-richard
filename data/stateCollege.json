@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-08-24-SPLPSUFOOTBALL.md"
+    "content/statecollege/2023-09-29-SPLSTATEPARKSFUNDING.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
+  ],
   "topSlots": [
-    "content/statecollege/2023-08-16-SPLMISEVENT.md",
-    "content/statecollege/2023-08-21-SPLMANAGERS.md",
-    "content/statecollege/2023-08-16-SPLUNSEALCASE.md"
+    "content/statecollege/2023-09-21-SPLPSUFILINGS.md",
+    "content/statecollege/2023-09-14-SPL4PSU.md",
+    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
   ],
   "topper": []
 }

@@ -1,8 +1,4 @@
 buildFuture = true
 
-[build]
-  writeStats = true
-  noJSConfigInAssets = true
-
 [minify]
   minifyOutput = true

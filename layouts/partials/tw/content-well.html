@@ -1,14 +1,12 @@
 {{ with .Content }}
   <div class="mx-auto w-full max-w-prose">
-    <div class="mt-6" data-ga-category="content">
-      {{ partial "js/view-trigger.html" "content-start" }}
+    <div class="mt-6" data-ga-category="content" id="content">
       <div
         class="article-content w-full overflow-hidden leading-relaxed"
         data-sf-campaign="701Dn000000YgozIAC"
       >
         {{ . }}
       </div>
-      {{ partial "js/view-trigger.html" "content-finish" }}
     </div>
   </div>
 {{ end }}

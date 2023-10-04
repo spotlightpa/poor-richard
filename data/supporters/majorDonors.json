@@ -2,1212 +2,876 @@
   "list": [
     {
       "display": "Allegheny Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Allegheny",
       "url": ""
     },
     {
       "display": "American Journalism Project",
-      "category": "",
-      "group": "major-donors",
       "sort": "American",
       "url": ""
     },
     {
-      "display": "Helen Andrews",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Andrews",
-      "url": ""
-    },
-    {
-      "display": "Laura and John Arnold",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Arnold",
-      "url": ""
-    },
-    {
       "display": "Teresa Amott",
-      "category": "",
-      "group": "major-donors",
       "sort": "Amott",
       "url": ""
     },
     {
+      "display": "Helen Andrews",
+      "sort": "Andrews",
+      "url": ""
+    },
+    {
       "display": "Hilary Appelman",
-      "category": "",
-      "group": "major-donors",
       "sort": "Appelman",
       "url": ""
     },
     {
+      "display": "Laura and John Arnold",
+      "sort": "Arnold",
+      "url": ""
+    },
+    {
       "display": "Dorothy E Aylward",
-      "category": "",
-      "group": "major-donors",
       "sort": "Aylward",
       "url": ""
     },
     {
       "display": "Carol Baker",
-      "category": "",
-      "group": "major-donors",
       "sort": "Baker",
       "url": ""
     },
     {
-      "display": "Mimi Barash Coppersmith",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Coppersmith",
-      "url": ""
-    },
-    {
       "display": "Tony Barbieri",
-      "category": "",
-      "group": "major-donors",
       "sort": "Barbieri",
       "url": ""
     },
     {
       "display": "Kenneth Baumert",
-      "category": "",
-      "group": "major-donors",
       "sort": "Baumert",
       "url": ""
     },
     {
       "display": "Christopher Baxter",
-      "category": "",
-      "group": "major-donors",
       "sort": "Baxter",
       "url": ""
     },
     {
       "display": "Mike Beattie",
-      "category": "",
-      "group": "major-donors",
       "sort": "Beattie",
       "url": ""
     },
     {
       "display": "Phyllis Beck",
-      "category": "",
-      "group": "major-donors",
       "sort": "Beck",
       "url": ""
     },
     {
       "display": "Amanda Bennett",
-      "category": "",
-      "group": "major-donors",
       "sort": "Bennett",
       "url": ""
     },
     {
       "display": "The Benter Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Benter",
       "url": ""
     },
     {
       "display": "Berks County Community Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Berks",
       "url": ""
     },
     {
       "display": "R Thomas Berner",
-      "category": "",
-      "group": "major-donors",
       "sort": "Berner",
       "url": ""
     },
     {
-      "display": "Rita Bernstein & Alan Zuckerman",
-      "category": "",
-      "group": "major-donors",
+      "display": "Rita Bernstein \u0026 Alan Zuckerman",
       "sort": "Bernstein",
       "url": ""
     },
     {
       "display": "Jennifer Bertetto",
-      "category": "",
-      "group": "major-donors",
       "sort": "Bertetto",
       "url": ""
     },
     {
       "display": "David Boardman",
-      "category": "",
-      "group": "major-donors",
       "sort": "Boardman",
       "url": ""
     },
     {
-      "display": "Merrill & Nancy Brenner",
-      "category": "",
-      "group": "major-donors",
+      "display": "Merrill \u0026 Nancy Brenner",
       "sort": "Brenner",
       "url": ""
     },
     {
       "display": "Clarence Brommer",
-      "category": "",
-      "group": "major-donors",
       "sort": "Brommer",
       "url": ""
     },
     {
-      "display": "Wayne & Cynthia Bullaughey",
-      "category": "",
-      "group": "major-donors",
+      "display": "Wayne \u0026 Cynthia Bullaughey",
       "sort": "Bullaughey",
       "url": ""
     },
     {
       "display": "Janet Carpenter",
-      "category": "",
-      "group": "major-donors",
       "sort": "Carpenter",
       "url": ""
     },
     {
       "display": "Richard Carroll",
-      "category": "",
-      "group": "major-donors",
       "sort": "Carroll",
       "url": ""
     },
     {
       "display": "Audry Carter",
-      "category": "",
-      "group": "major-donors",
       "sort": "Carter",
       "url": ""
     },
     {
       "display": "Ron Castille",
-      "category": "",
-      "group": "major-donors",
       "sort": "Castille",
       "url": ""
     },
     {
       "display": "Center for Cooperative Media, Montclair State University",
-      "category": "",
-      "group": "major-donors",
       "sort": "Center",
       "url": ""
     },
     {
       "display": "Chandler - Shreve Family Fund",
-      "category": "",
-      "group": "major-donors",
       "sort": "Chandler",
       "url": ""
     },
     {
-      "display": "Nancy Chiswick and Arthur Patterson<br> Michael Clark",
-      "category": "",
-      "group": "major-donors",
+      "display": "Nancy Chiswick and Arthur Patterson",
       "sort": "Chiswick",
       "url": ""
     },
     {
-      "display": "Jeffrey Cogshall & Rosamond Ryan",
-      "category": "",
-      "group": "major-donors",
+      "display": "Michael Clark",
+      "sort": "Clark",
+      "url": ""
+    },
+    {
+      "display": "Jeffrey Cogshall \u0026 Rosamond Ryan",
       "sort": "Cogshall",
       "url": ""
     },
     {
-      "display": "Kate Connolly & Alan Gardner",
-      "category": "",
-      "group": "major-donors",
+      "display": "Kate Connolly \u0026 Alan Gardner",
       "sort": "Connolly",
       "url": ""
     },
     {
+      "display": "Mimi Barash Coppersmith",
+      "sort": "Coppersmith",
+      "url": ""
+    },
+    {
       "display": "Vincent Crespi",
-      "category": "",
-      "group": "major-donors",
       "sort": "Crespi",
       "url": ""
     },
     {
-      "display": "Jean & Barry DeSantis",
-      "category": "",
-      "group": "major-donors",
+      "display": "Nancy Decker",
+      "sort": "Decker",
+      "url": ""
+    },
+    {
+      "display": "Jean \u0026 Barry DeSantis",
       "sort": "DeSantis",
       "url": ""
     },
     {
-      "display": "John & Janet Dillon",
-      "category": "",
-      "group": "major-donors",
+      "display": "John \u0026 Janet Dillon",
       "sort": "Dillon",
       "url": ""
     },
     {
       "display": "Deborah DiPlacido",
-      "category": "",
-      "group": "major-donors",
       "sort": "DiPlacido",
       "url": ""
     },
     {
       "display": "Susan Duggan",
-      "category": "",
-      "group": "major-donors",
       "sort": "Duggan",
       "url": ""
     },
     {
       "display": "Melissa Egbertson",
-      "category": "",
-      "group": "major-donors",
       "sort": "Egbertson",
       "url": ""
     },
     {
-      "display": "Dianne & Dave Elderkin",
-      "category": "",
-      "group": "major-donors",
+      "display": "Dianne \u0026 Dave Elderkin",
       "sort": "Elderkin",
       "url": ""
     },
     {
       "display": "The Erie Community Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Erie",
       "url": "https://www.eriecommunityfoundation.org/"
     },
     {
-      "display": "Facebook Journalism Project",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Facebook",
-      "url": "https://www.facebook.com/journalismproject"
-    },
-    {
-      "display": "Ronald Filipelli",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Filipelli",
-      "url": ""
-    },
-    {
-      "display": "The Foundation for Enhancing Communities",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Foundation",
-      "url": "https://www.tfec.org/"
-    },
-    {
       "display": "Thomas Eveslage",
-      "category": "",
-      "group": "major-donors",
       "sort": "Eveslage",
       "url": ""
     },
     {
-      "display": "Adelaide Ferguson and Ron Cahan",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Ferguson",
-      "url": ""
-    },
-    {
-      "display": "Nancy Decker",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Decker",
-      "url": ""
-    },
-    {
       "display": "William Ewing",
-      "category": "",
-      "group": "major-donors",
       "sort": "Ewing",
       "url": ""
     },
     {
+      "display": "Facebook Journalism Project",
+      "sort": "Facebook",
+      "url": "https://www.facebook.com/journalismproject"
+    },
+    {
+      "display": "Adelaide Ferguson and Ron Cahan",
+      "sort": "Ferguson",
+      "url": ""
+    },
+    {
+      "display": "Ronald Filipelli",
+      "sort": "Filipelli",
+      "url": ""
+    },
+    {
       "display": "Lauri Fink",
-      "category": "",
-      "group": "major-donors",
       "sort": "Fink",
       "url": ""
     },
     {
+      "display": "Inasmuch Foundation",
+      "sort": "Foundation",
+      "url": "https://inasmuchfoundation.org/"
+    },
+    {
+      "display": "The Foundation for Enhancing Communities",
+      "sort": "Foundation",
+      "url": "https://www.tfec.org/"
+    },
+    {
       "display": "Mary France",
-      "category": "",
-      "group": "major-donors",
       "sort": "France",
       "url": ""
     },
     {
-      "display": "Jim Friedlich & Melissa Stern",
-      "category": "",
-      "group": "major-donors",
+      "display": "Jim Friedlich \u0026 Melissa Stern",
       "sort": "Friedlich",
       "url": ""
     },
     {
       "display": "Fund for Nonprofit News at The Miami Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Fund",
       "url": "https://miamifoundation.org/"
     },
     {
       "display": "Good Words Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Good",
       "url": ""
     },
     {
       "display": "Google News Initiative Journalism Emergency Relief Fund",
-      "category": "",
-      "group": "major-donors",
       "sort": "Google",
       "url": "https://web.archive.org/web/20211110101853/https://newsinitiative.withgoogle.com/journalism-emergency-relief-fund/recipients/"
     },
     {
-      "display": "Eliza Griswold & Steve Coll",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Griswold",
-      "url": ""
+      "display": "The Grable Foundation",
+      "sort": "Grable",
+      "url": "https://grable.org/"
     },
     {
       "display": "David Gray",
-      "category": "",
-      "group": "major-donors",
       "sort": "Gray",
       "url": ""
     },
     {
+      "display": "Eliza Griswold \u0026 Steve Coll",
+      "sort": "Griswold",
+      "url": ""
+    },
+    {
       "display": "Beverly Hahn",
-      "category": "",
-      "group": "major-donors",
       "sort": "Hahn",
       "url": ""
     },
     {
-      "display": "David Hakes",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Hakes",
-      "url": ""
-    },
-    {
       "display": "Robert Haines",
-      "category": "",
-      "group": "major-donors",
       "sort": "Haines",
       "url": ""
     },
     {
+      "display": "David Hakes",
+      "sort": "Hakes",
+      "url": ""
+    },
+    {
       "display": "Paul Hallacher",
-      "category": "",
-      "group": "major-donors",
       "sort": "Hallacher",
       "url": ""
     },
     {
       "display": "Marie Hardin",
-      "category": "",
-      "group": "major-donors",
       "sort": "Hardin",
       "url": ""
     },
     {
       "display": "Jean Harris",
-      "category": "",
-      "group": "major-donors",
       "sort": "Harris",
       "url": ""
     },
     {
       "display": "The Heinz Endowments",
-      "category": "",
-      "group": "major-donors",
       "sort": "Heinz",
       "url": "https://www.heinz.org/"
     },
     {
       "display": "Henry L. Hillman Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Henry",
       "url": "https://hillmanfamilyfoundations.org/"
     },
     {
-      "display": "Ruth & Bruce Hollender",
-      "category": "",
-      "group": "major-donors",
+      "display": "Ruth \u0026 Bruce Hollender",
       "sort": "Hollender",
       "url": ""
     },
     {
-      "display": "Ray & Donna Holton",
-      "category": "",
-      "group": "major-donors",
+      "display": "Ray \u0026 Donna Holton",
       "sort": "Holton",
       "url": ""
     },
     {
       "display": "Avram Hornik",
-      "category": "",
-      "group": "major-donors",
       "sort": "Hornik",
       "url": ""
     },
     {
       "display": "Feather Houstoun",
-      "category": "",
-      "group": "major-donors",
       "sort": "Houstoun",
       "url": ""
     },
     {
-      "display": "Xia Li & Jun Huangpu",
-      "category": "",
-      "group": "major-donors",
+      "display": "Xia Li \u0026 Jun Huangpu",
       "sort": "Huangpu",
       "url": ""
     },
     {
       "display": "Richard Hurst",
-      "category": "",
-      "group": "major-donors",
       "sort": "Hurst",
       "url": ""
     },
     {
-      "display": "Mary & Howard Hurtig",
-      "category": "",
-      "group": "major-donors",
+      "display": "Mary \u0026 Howard Hurtig",
       "sort": "Hurtig",
       "url": ""
     },
     {
-      "display": "Sharon & Jeff Hyde",
-      "category": "",
-      "group": "major-donors",
+      "display": "Sharon \u0026 Jeff Hyde",
       "sort": "Hyde",
       "url": ""
     },
     {
-      "display": "Inasmuch Foundation",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Foundation",
-      "url": "https://inasmuchfoundation.org/"
-    },
-    {
       "display": "Independence Public Media Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Independence",
       "url": "https://independencemedia.org/"
     },
     {
       "display": "Christine Jacobs",
-      "category": "",
-      "group": "major-donors",
       "sort": "Jacobs",
       "url": ""
     },
     {
-      "display": "Joseph & Patricia James",
-      "category": "",
-      "group": "major-donors",
+      "display": "Joseph \u0026 Patricia James",
       "sort": "James",
       "url": ""
     },
     {
-      "display": "Richard & Sally Kalin",
-      "category": "",
-      "group": "major-donors",
+      "display": "The John S. and James L. Knight Foundation",
+      "sort": "Knight",
+      "url": "https://knightfoundation.org"
+    },
+    {
+      "display": "Richard \u0026 Sally Kalin",
       "sort": "Kalin",
       "url": ""
     },
     {
       "display": "Roberta Kangilaski",
-      "category": "",
-      "group": "major-donors",
       "sort": "Kangilaski",
       "url": ""
     },
     {
-      "display": "Richard & Janice Kleiser",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Kleiser",
-      "url": ""
-    },
-    {
-      "display": "Roger & Karen Klotz",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Klotz",
-      "url": ""
-    },
-    {
-      "display": "Laura & Peter Kemper",
-      "category": "",
-      "group": "major-donors",
+      "display": "Laura \u0026 Peter Kemper",
       "sort": "Kemper",
       "url": ""
     },
     {
-      "display": "The John S. and James L. Knight Foundation",
-      "category": "",
-      "group": "major-donors",
-      "sort": "John",
+      "display": "Richard \u0026 Janice Kleiser",
+      "sort": "Kleiser",
+      "url": ""
+    },
+    {
+      "display": "Roger \u0026 Karen Klotz",
+      "sort": "Klotz",
       "url": ""
     },
     {
       "display": "Howard Kolus",
-      "category": "",
-      "group": "major-donors",
       "sort": "Kolus",
       "url": ""
     },
     {
       "display": "Elaine Kramer",
-      "category": "",
-      "group": "major-donors",
       "sort": "Kramer",
       "url": ""
     },
     {
       "display": "Beryl Kuhr and Patrick Bair",
-      "category": "",
-      "group": "major-donors",
       "sort": "Kuhr",
       "url": ""
     },
     {
       "display": "Lancaster County Community Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Lancaster",
       "url": "https://www.lancfound.org/"
     },
     {
-      "display": "James & Denise Lanning",
-      "category": "",
-      "group": "major-donors",
+      "display": "James \u0026 Denise Lanning",
       "sort": "Lanning",
       "url": ""
     },
     {
-      "display": "Barbara Makar",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Makar",
-      "url": ""
-    },
-    {
       "display": "Lehigh Valley Public Media",
-      "category": "",
-      "group": "major-donors",
       "sort": "Lehigh",
       "url": ""
     },
     {
       "display": "H.F. “Gerry” Lenfest",
-      "category": "",
-      "group": "major-donors",
       "sort": "Lenfest",
       "url": ""
     },
     {
       "display": "The Lenfest Institute for Journalism",
-      "category": "",
-      "group": "major-donors",
       "sort": "Lenfest",
       "url": "https://www.lenfestinstitute.org/"
     },
     {
       "display": "Julie Linowes",
-      "category": "",
-      "group": "major-donors",
       "sort": "Linowes",
       "url": ""
     },
     {
+      "display": "Barbara Makar",
+      "sort": "Makar",
+      "url": ""
+    },
+    {
       "display": "Robin Mann",
-      "category": "",
-      "group": "major-donors",
       "sort": "Mann",
       "url": ""
     },
     {
       "display": "Joseph Manning",
-      "category": "",
-      "group": "major-donors",
       "sort": "Manning",
       "url": ""
     },
     {
-      "display": "David Martens/The York Dispatch",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Martens/The",
-      "url": ""
-    },
-    {
       "display": "Richard Mansberger",
-      "category": "",
-      "group": "major-donors",
       "sort": "Mansberger",
       "url": ""
     },
     {
-      "display": "Martina Martin",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Martin",
+      "display": "David Martens/The York Dispatch",
+      "sort": "Martens/The",
       "url": ""
     },
     {
       "display": "George E. Martin",
-      "category": "",
-      "group": "major-donors",
+      "sort": "Martin",
+      "url": ""
+    },
+    {
+      "display": "Martina Martin",
       "sort": "Martin",
       "url": ""
     },
     {
       "display": "Mary Martin",
-      "category": "",
-      "group": "major-donors",
       "sort": "Martin",
       "url": ""
     },
     {
       "display": "Annie McCain Madonia",
-      "category": "",
-      "group": "major-donors",
       "sort": "McCain",
       "url": ""
     },
     {
-      "display": "Ed Mitchell/Edward Mitchell Communications",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Mitchell/Edward",
-      "url": ""
-    },
-    {
       "display": "Melissa Meier",
-      "category": "",
-      "group": "major-donors",
       "sort": "Meier",
       "url": ""
     },
     {
       "display": "Michelle Mertz",
-      "category": "",
-      "group": "major-donors",
       "sort": "Mertz",
       "url": ""
     },
     {
-      "display": "Bruce Morris & Colleen Gallagher",
-      "category": "",
-      "group": "major-donors",
+      "display": "Ed Mitchell/Edward Mitchell Communications",
+      "sort": "Mitchell/Edward",
+      "url": ""
+    },
+    {
+      "display": "Bruce Morris \u0026 Colleen Gallagher",
       "sort": "Morris",
       "url": ""
     },
     {
       "display": "Gaylon Morris",
-      "category": "",
-      "group": "major-donors",
       "sort": "Morris",
       "url": ""
     },
     {
-      "display": "Ramona & Glenn Nelson",
-      "category": "",
-      "group": "major-donors",
+      "display": "Ramona \u0026 Glenn Nelson",
       "sort": "Nelson",
       "url": ""
     },
     {
       "display": "John Nichols",
-      "category": "",
-      "group": "major-donors",
       "sort": "Nichols",
       "url": ""
     },
     {
       "display": "Ed Nielsen",
-      "category": "",
-      "group": "major-donors",
       "sort": "Nielsen",
       "url": ""
     },
     {
       "display": "Karen O'Brien",
-      "category": "",
-      "group": "major-donors",
       "sort": "O'Brien",
       "url": ""
     },
     {
       "display": "Marty O'Brien",
-      "category": "",
-      "group": "major-donors",
       "sort": "O'Brien",
       "url": ""
     },
     {
-      "display": "David Ottaway",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Ottaway",
-      "url": ""
-    },
-    {
       "display": "Katie O'Toole",
-      "category": "",
-      "group": "major-donors",
       "sort": "O'Toole",
       "url": ""
     },
     {
+      "display": "David Ottaway",
+      "sort": "Ottaway",
+      "url": ""
+    },
+    {
       "display": "Sheldon Parker",
-      "category": "",
-      "group": "major-donors",
       "sort": "Parker",
       "url": ""
     },
     {
       "display": "Kathleen Pavelko",
-      "category": "",
-      "group": "major-donors",
       "sort": "Pavelko",
       "url": ""
     },
     {
-      "display": "Clifford Pearlman & Lynn Marks",
-      "category": "",
-      "group": "major-donors",
+      "display": "Clifford Pearlman \u0026 Lynn Marks",
       "sort": "Pearlman",
       "url": ""
     },
     {
-      "display": "Sue & Jack Peck",
-      "category": "",
-      "group": "major-donors",
+      "display": "Sue \u0026 Jack Peck",
       "sort": "Peck",
       "url": ""
     },
     {
+      "display": "PennLive/The Patriot-News",
+      "sort": "PennLive/The",
+      "url": "https://www.pennlive.com/"
+    },
+    {
       "display": "Pennsylvania NewsMedia Association Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Pennsylvania",
       "url": "https://panewsmedia.org/"
     },
     {
       "display": "Pennsylvania NewsMedia Association Foundation Fellows Fund for the Future",
-      "category": "",
-      "group": "major-donors",
       "sort": "Pennsylvania",
       "url": "https://panewsmedia.org/"
     },
     {
-      "display": "PennLive/The Patriot-News",
-      "category": "",
-      "group": "major-donors",
-      "sort": "PennLive/The",
-      "url": "https://www.pennlive.com/"
-    },
-    {
       "display": "The Philadelphia Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Philadelphia",
       "url": "https://www.philafound.org/"
     },
     {
       "display": "Norman Pine",
-      "category": "",
-      "group": "major-donors",
       "sort": "Pine",
       "url": ""
     },
     {
       "display": "The Lois Tack Thompson Fund of The Pittsburgh Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Pittsburgh",
       "url": "https://pittsburghfoundation.org/"
     },
     {
-      "display": "Pittsburgh Post-Gazette",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Post-Gazette",
-      "url": "https://www.post-gazette.com/"
-    },
-    {
       "display": "Poor Richard’s Charitable Trust",
-      "category": "",
-      "group": "major-donors",
       "sort": "Poor",
       "url": ""
     },
     {
       "display": "Posner Foundation of Pittsburgh",
-      "category": "",
-      "group": "major-donors",
       "sort": "Posner",
       "url": "https://posnerfoundation.org/"
     },
     {
+      "display": "Pittsburgh Post-Gazette",
+      "sort": "Post-Gazette",
+      "url": "https://www.post-gazette.com/"
+    },
+    {
       "display": "Donna Queeney",
-      "category": "",
-      "group": "major-donors",
       "sort": "Queeney",
       "url": ""
     },
     {
       "display": "Elisa Rapaport",
-      "category": "",
-      "group": "major-donors",
       "sort": "Rapaport",
       "url": ""
     },
     {
       "display": "Report for America",
-      "category": "",
-      "group": "major-donors",
       "sort": "Report",
       "url": ""
     },
     {
       "display": "RevLab at The Texas Tribune",
-      "category": "",
-      "group": "major-donors",
       "sort": "RevLab",
       "url": "https://revenuelab.org/"
     },
     {
       "display": "Sarah Ricks",
-      "category": "",
-      "group": "major-donors",
       "sort": "Ricks",
       "url": ""
     },
     {
       "display": "Guinevere Ritter",
-      "category": "",
-      "group": "major-donors",
       "sort": "Ritter",
       "url": ""
     },
     {
-      "display": "Dr. Michael Ryan & Dr. Linda Ryan",
-      "category": "",
-      "group": "major-donors",
+      "display": "Dr. Michael Ryan \u0026 Dr. Linda Ryan",
       "sort": "Ryan",
       "url": ""
     },
     {
       "display": "Patrick Sanaghan",
-      "category": "",
-      "group": "major-donors",
       "sort": "Sanaghan",
       "url": ""
     },
     {
       "display": "Alletta Schadler",
-      "category": "",
-      "group": "major-donors",
       "sort": "Schadler",
       "url": ""
     },
     {
       "display": "Gary Schell",
-      "category": "",
-      "group": "major-donors",
       "sort": "Schell",
       "url": ""
     },
     {
-      "display": "Leslie Schlessinger & Joycellen Auritt",
-      "category": "",
-      "group": "major-donors",
+      "display": "Leslie Schlessinger \u0026 Joycellen Auritt",
       "sort": "Schlessinger",
       "url": ""
     },
     {
       "display": "Gail Scott",
-      "category": "",
-      "group": "major-donors",
       "sort": "Scott",
       "url": ""
     },
     {
       "display": "Scranton Area Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Scranton",
       "url": "https://safdn.org/"
     },
     {
       "display": "Nicholas Selch",
-      "category": "",
-      "group": "major-donors",
       "sort": "Selch",
       "url": ""
     },
     {
-      "display": "Kevin Shivers",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Shivers",
-      "url": ""
-    },
-    {
       "display": "Mark Sheppard",
-      "category": "",
-      "group": "major-donors",
       "sort": "Sheppard",
       "url": ""
     },
     {
+      "display": "Kevin Shivers",
+      "sort": "Shivers",
+      "url": ""
+    },
+    {
       "display": "Rebecca Shoval",
-      "category": "",
-      "group": "major-donors",
       "sort": "Shoval",
       "url": ""
     },
     {
       "display": "Joshua Singer",
-      "category": "",
-      "group": "major-donors",
       "sort": "Singer",
       "url": ""
     },
     {
-      "display": "Ron & Sue Smith",
-      "category": "",
-      "group": "major-donors",
+      "display": "Ron \u0026 Sue Smith",
       "sort": "Smith",
       "url": ""
     },
     {
       "display": "The Snider Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Snider",
       "url": "https://www.sniderfoundation.org/"
     },
     {
       "display": "Jane Sprecher",
-      "category": "",
-      "group": "major-donors",
       "sort": "Sprecher",
       "url": ""
     },
     {
       "display": "Diane and Brinkley Sprunt",
-      "category": "",
-      "group": "major-donors",
       "sort": "Sprunt",
       "url": ""
     },
     {
-      "display": "Frederick Steinberg & Jo DeBolt",
-      "category": "",
-      "group": "major-donors",
+      "display": "Frederick Steinberg \u0026 Jo DeBolt",
       "sort": "Steinberg",
       "url": ""
     },
     {
       "display": "The Steinman Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Steinman",
       "url": "https://steinmanfoundation.org/"
     },
     {
       "display": "Catherine Stouch",
-      "category": "",
-      "group": "major-donors",
       "sort": "Stouch",
       "url": ""
     },
     {
       "display": "Stephanie Szakal",
-      "category": "",
-      "group": "major-donors",
       "sort": "Szakal",
       "url": ""
     },
     {
       "display": "Ardith Talbott",
-      "category": "",
-      "group": "major-donors",
       "sort": "Talbott",
       "url": ""
     },
     {
       "display": "Carol Thomas",
-      "category": "",
-      "group": "major-donors",
       "sort": "Thomas",
       "url": ""
     },
     {
-      "display": "Daniel & Linda Trevino",
-      "category": "",
-      "group": "major-donors",
+      "display": "Daniel \u0026 Linda Trevino",
       "sort": "Trevino",
       "url": ""
     },
     {
       "display": "TribLIVE/Pittsburgh Tribune-Review",
-      "category": "",
-      "group": "major-donors",
       "sort": "Tribune-Review",
       "url": "https://triblive.com/"
     },
     {
       "display": "Elizabeth Useem",
-      "category": "",
-      "group": "major-donors",
       "sort": "Useem",
       "url": ""
     },
     {
       "display": "Robert and Dianne Vickery",
-      "category": "",
-      "group": "major-donors",
       "sort": "Vickery",
       "url": ""
     },
     {
       "display": "Caitlin Virtue",
-      "category": "",
-      "group": "major-donors",
       "sort": "Virtue",
       "url": ""
     },
     {
       "display": "Ron Vodenichar",
-      "category": "",
-      "group": "major-donors",
       "sort": "Vodenichar",
       "url": ""
     },
     {
       "display": "Votebeat",
-      "category": "",
-      "group": "major-donors",
       "sort": "Votebeat",
       "url": "https://votebeat.org/"
     },
     {
-      "display": "Steven & Patricia Walmer",
-      "category": "",
-      "group": "major-donors",
+      "display": "Steven \u0026 Patricia Walmer",
       "sort": "Walmer",
       "url": ""
     },
     {
       "display": "Kathleen Weidner",
-      "category": "",
-      "group": "major-donors",
       "sort": "Weidner",
       "url": ""
     },
     {
-      "display": "Gabriel Weinberg & Lauren McCann",
-      "category": "",
-      "group": "major-donors",
+      "display": "Gabriel Weinberg \u0026 Lauren McCann",
       "sort": "Weinberg",
       "url": ""
     },
     {
-      "display": "Richard Williams",
-      "category": "",
-      "group": "major-donors",
-      "sort": "Williams",
-      "url": ""
-    },
-    {
-      "display": "WITF Public Media",
-      "category": "",
-      "group": "major-donors",
-      "sort": "WITF",
-      "url": ""
-    },
-    {
       "display": "David Whiteman",
-      "category": "",
-      "group": "major-donors",
       "sort": "Whiteman",
       "url": ""
     },
     {
+      "display": "Richard Williams",
+      "sort": "Williams",
+      "url": ""
+    },
+    {
       "display": "Cheryl Wist",
-      "category": "",
-      "group": "major-donors",
       "sort": "Wist",
       "url": ""
     },
     {
+      "display": "WITF Public Media",
+      "sort": "WITF",
+      "url": ""
+    },
+    {
       "display": "Wyncote Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "Wyncote",
       "url": "https://www.wyncotefoundation.org/"
     },
     {
       "display": "York County Community Foundation",
-      "category": "",
-      "group": "major-donors",
       "sort": "York",
       "url": "https://yccf.org/"
     },
     {
       "display": "Berwood Yost",
-      "category": "",
-      "group": "major-donors",
       "sort": "Yost",
       "url": ""
     },
     {
       "display": "Rick Young",
-      "category": "",
-      "group": "major-donors",
       "sort": "Young",
       "url": ""
     },
     {
       "display": "Florence and Stephen Zeller",
-      "category": "",
-      "group": "major-donors",
       "sort": "Zeller",
       "url": ""
     },
     {
       "display": "Cliff Zukin",
-      "category": "",
-      "group": "major-donors",
       "sort": "Zukin",
       "url": ""
     }

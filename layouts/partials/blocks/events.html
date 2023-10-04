@@ -1,0 +1,72 @@
+{{ with .block }}
+  <section
+    id="{{ .id }}"
+    data-ga-category="{{ .id }}"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+    class="bg-black p-5 font-sans sm:py-5 md:py-12 xl:px-0"
+  >
+    <h2
+      class="m-auto flex max-w-screen-xl items-baseline gap-3 text-base font-bold uppercase tracking-widest text-white"
+    >
+      {{ .title }}
+    </h2>
+
+    <div
+      class="m-auto mt-4 max-w-screen-xl md:mt-6 md:flex md:items-stretch md:justify-between"
+    >
+      <div class="flex-0 md:w-7/12">
+        {{ $name := .image }}
+        {{ $credit := "credit" }}
+        {{ $description := "desc" }}
+
+        {{ $imgOpts := dict
+          "filename" $name
+          "description" $description
+          "widthRatio" 5
+          "heightRatio" 3
+          "wrapperClass" "flex w-full h-full"
+          "pictureClass" "flex w-full items-center justify-stretch"
+          "imgClass" "self-center object-cover flex-1 h-full"
+          "widths" (slice 1024 1600 1500 2880)
+          "figClass" "flex flex-0 h-full overflow-hidden bg-red object-cover rounded"
+          "sizeHint" "400px"
+          "gravity" (.page.Param "image-gravity")
+        }}
+        {{ partial "tw/image-block.html" $imgOpts }}
+      </div>
+      <span
+        class="hidden min-h-full w-0 border border-g-3 md:inline-flex"
+      ></span>
+      <div
+        class="mt-6 flex flex-col items-start space-y-6 text-white md:mt-0 md:w-4/12"
+      >
+        {{ with .entries }}
+          {{ range . }}
+            {{ $hed := .hed }}
+            <article>
+              <h3 class="font-serif text-lg font-bold">
+                {{ with .link }}
+                  <a href="{{ . }}">{{ $hed }}</a>
+                {{ else }}
+                  <span>{{ $hed }}</span>
+                {{ end }}
+              </h3>
+              <time
+                datetime="{{ .date }}"
+                class="my-2 font-sans text-sm font-bold uppercase tracking-wide"
+                >{{ .dateVerbose }}</time
+              >
+              <p class="font-base">{{ .dek }}</p>
+              {{ with .registration }}
+                <p class="my-4 font-sans text-sm tracking-wide">
+                  <a class="btn-signup" href="{{ . }}">Register</a>
+                </p>
+              {{ end }}
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,33 +1,22 @@
 +++
 arc-id = "LJ2QH34JONG2LKVZR2JNXTD5XY"
-internal-id = "SPLCASHXX"
-internal-budget = ""
-image = "external/w48sh7kqq1qa2e142kt6gat358.jpeg"
-image-description = "There’s widespread agreement in the Capitol that Pennsylvania’s $150 million rental assistance program to keep families in their homes during the coronavirus pandemic isn’t working."
-image-caption = ""
-image-credit = "Dan Nott / For Spotlight PA"
-image-size = ""
-published = 2020-09-08T10:00:00Z
-slug = "pa-evictions-rental-assistance-problems-landlords-tenants"
 authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Want to help Pa. renters avoid eviction? Give them cash directly, experts say."
-subtitle = ""
-description = "Pennsylvania's current rental assistance program sends money directly to landlords, many of whom won't participate. "
 blurb = "Pennsylvania's current rental assistance program sends money directly to landlords, many of whom won't participate. "
+byline = "Charlotte Keith of Spotlight PA"
+description = "Pennsylvania's current rental assistance program sends money directly to landlords, many of whom won't participate. "
+image = "external/w48sh7kqq1qa2e142kt6gat358.jpeg"
+image-credit = "Dan Nott / For Spotlight PA"
+image-description = "There’s widespread agreement in the Capitol that Pennsylvania’s $150 million rental assistance program to keep families in their homes during the coronavirus pandemic isn’t working."
+internal-id = "SPLCASHXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-09-08T06:00:00-04:00
+slug = "pa-evictions-rental-assistance-problems-landlords-tenants"
+suppress-date = false
+suppress-featured = false
+title = "Want to help Pa. renters avoid eviction? Give them cash directly, experts say."
+topics = ["Coronavirus", "Eviction"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media.</i>

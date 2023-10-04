@@ -1,8 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
 
-{{ partial "js/view-trigger.html" "" }}
-
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   <div class="bg-black p-4 sm:py-8 md:py-12">
@@ -22,7 +20,7 @@
         data-sf-campaign="701Dn000000YgogIAC"
         data-ga-category="donate"
         class="
-           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue 
+           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
            sm:flex sm:w-32 sm:justify-center md:w-52 md:px-7 md:py-4
           "
         href="/donate"
@@ -60,6 +58,7 @@
       method="post"
       target="_blank"
     >
+      {{ partial "newsletter/basic-hidden.html" . }}
       <p
         class="text-center text-2xl font-bold tracking-wide text-white md:text-3xl"
       >
@@ -68,11 +67,10 @@
       <div
         class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:items-center sm:gap-0 md:col-start-1 md:col-end-3"
       >
-        {{ partial "newsletter/hidden-input.html" . }}
         <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
           id="{{ $idEmail }}"
-          class="m-1 box-content w-full appearance-none rounded rounded-bl rounded-tl bg-white p-3 font-bold tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+          class="m-1 box-content w-full appearance-none rounded rounded-bl rounded-tl bg-white p-3 font-bold tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 shadow-[0_0_0_4px] shadow-yellow outline-none ring-yellow-9 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
           @focus.once="hasFocused = true"
           type="email"
           name="EMAIL"
@@ -108,7 +106,7 @@
               value="1"
               checked
               x-report-click
-              data-ga-action="toggle-newsletter:papost"
+              data-ga-category="toggle-newsletter:papost"
             />
             <span class="flex-1"
               ><strong>PA Post (Daily)</strong>: Top news every weekday morning,
@@ -125,7 +123,7 @@
               value="1"
               checked
               x-report-click
-              data-ga-action="toggle-newsletter:investigator"
+              data-ga-category="toggle-newsletter:investigator"
             />
             <span class="flex-1"
               ><strong>The Investigator (Weekly)</strong>: Best accountability
@@ -142,7 +140,7 @@
               value="1"
               checked
               x-report-click
-              data-ga-action="toggle-newsletter:palocal"
+              data-ga-category="toggle-newsletter:palocal"
             />
             <span class="flex-1"
               ><strong>PA Local (Weekly)</strong>: A fresh look at the

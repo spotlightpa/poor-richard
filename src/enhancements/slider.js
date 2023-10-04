@@ -13,7 +13,6 @@ export default function slider() {
         if (i > 0) {
           this.loadingMode = "auto";
         }
-        this.$view(this.slideEls[i]);
       });
     },
 

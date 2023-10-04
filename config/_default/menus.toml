@@ -163,24 +163,30 @@ url = "/about/staff/"
 weight = 3
 
 [[about]]
+name = "Board of Directors"
+url = "/about/board/"
+weight = 4
+
+
+[[about]]
 name = "Spotlight PA Partners"
 url = "/about/partners"
-weight = 4
+weight = 5
 
 [[about]]
 name = "Careers"
 url = "/jobs/"
-weight = 5
+weight = 6
 
 [[about]]
 name = "Contact"
 url = "/contact/"
-weight = 6
+weight = 7
 
 [[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 7
+weight = 8
 
 [[news]]
 name = "Investigations"
@@ -190,12 +196,12 @@ weight = 7
 [[news]]
 name = "The Capitol"
 url = "/topics/the-capitol/"
-weight = 8
+weight = 9
 
 [[news]]
 name = "More Topics"
 url = "/topics/"
-weight = 9
+weight = 11
 
 [[news]]
 name = "State College Region"
@@ -205,7 +211,12 @@ weight = 10
 [[news]]
 name = "Events"
 url = "/events/"
-weight = 11
+weight = 12
+
+[[news]]
+name = "Elections"
+url = "/election/"
+weight = 8
 
 [[news]]
 name = "Archives"

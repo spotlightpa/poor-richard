@@ -2,15 +2,6 @@
   scroll-smooth
 {{- end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
-  {{ $color := "#000" }}
-  {{ if .Param "banner-active" }}
-    {{ $color = .Param "banner-bg-color" }}
-  {{ end }}
-  <meta name="theme-color" content="{{ $color }}" />
-{{ end }}
-
 {{ define "body-class" }}text-[16px] bg-beige font-sans leading-normal{{ end }}
 
 {{ define "header" }}

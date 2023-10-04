@@ -2,11 +2,9 @@
   {{ with .Content }}
     <div class="mx-auto my-8 block max-w-6xl px-5" data-ga-category="content">
       <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-      {{ partial "js/view-trigger.html" "content-start" }}
       <div class="content text-lg">
         {{ . }}
       </div>
-      {{ partial "js/view-trigger.html" "content-finish" }}
     </div>
   {{ end }}
   {{ range $i, $blocks := .Params.blocks }}

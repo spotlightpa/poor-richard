@@ -8,7 +8,7 @@
 >
   {{ with $title }}
     <h2
-      class="mb-4 w-full max-w-screen-lg text-4xl font-black uppercase leading-none text-s-6 md:text-6xl"
+      class="mb-4 w-full max-w-screen-lg text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
     >
       {{ . }}
     </h2>
@@ -20,11 +20,19 @@
       {{ . }}
     </h3>
   {{ end }}
-  <ul
-    class=" column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
+  <div
+    class="column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
   >
     {{ with $dataSrc }}
-      {{ partial "helper/get-supporter-list" $dataSrc }}
+      {{ $data := index site.Data.supporters . }}
+      <!-- Sort by .sort and break ties with .display -->
+      {{ $sorted := sort $data.list "display" "asc" }}
+      {{ $sorted = sort $sorted "sort" "asc" }}
+      {{ if gt (len $sorted) 100 }}
+        {{ partial "tw/supporters-list-by-letter.html" $sorted }}
+      {{ else }}
+        {{ partial "tw/supporters-list.html" $sorted }}
+      {{ end }}
     {{ end }}
-  </ul>
+  </div>
 </div>

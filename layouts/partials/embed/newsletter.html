@@ -18,12 +18,8 @@
   }"
   @focusin="hasFocused = true"
 >
-  {{ partial "newsletter/hidden-input.html" . }}
-  <p class="is-hidden" hidden>
-    <label>
-      <input type="checkbox" name="contact" value="1" />
-      I am a robot
-    </label>
+  {{ partial "newsletter/basic-hidden.html" . }}
+  <p class="hidden" hidden>
     <template x-if="!! preselected">
       <input type="hidden" :name="preselected" value="1" />
     </template>
@@ -53,7 +49,7 @@
         required
       />
       <span
-        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">
@@ -81,7 +77,7 @@
           value="1"
           :checked="! preselected"
           x-report-click
-          data-ga-action="toggle-newsletter:papost"
+          data-ga-category="toggle-newsletter:papost"
         />
         <span>
           <strong class="font-extrabold">PA Post (Daily)</strong>: Top news
@@ -98,7 +94,7 @@
           value="1"
           :checked="! preselected"
           x-report-click
-          data-ga-action="toggle-newsletter:investigator"
+          data-ga-category="toggle-newsletter:investigator"
         />
         <span>
           <strong class="font-extrabold">The Investigator (Weekly)</strong>:
@@ -115,7 +111,7 @@
           value="1"
           :checked="! preselected"
           x-report-click
-          data-ga-action="toggle-newsletter:palocal"
+          data-ga-category="toggle-newsletter:palocal"
         />
         <span>
           <strong class="font-extrabold">PA Local (Weekly)</strong>: A fresh
@@ -125,7 +121,7 @@
       </label>
     </p>
   </div>
-  <div class="mb-4 mr-3 mt-10 text-right text-s-9 md:mt-4">
+  <div class="mb-4 mr-3 mt-10 text-right text-g-9 md:mt-4">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"

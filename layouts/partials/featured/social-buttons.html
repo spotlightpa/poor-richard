@@ -3,12 +3,12 @@
 {{ $btnClass := `flex h-12 w-12 self-center rounded transition-colors duration-500` }}
 
 
-<nav class="flex flex-col space-y-1 text-s-4" data-ga-category="social-buttons">
+<nav class="flex flex-col space-y-1 text-g-4" data-ga-category="social-buttons">
   <a
     href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
     class="{{ $btnClass }} hover:bg-green hover:text-white"
     title="Share this page by email"
-    data-ga-action="share:email"
+    data-ga-category="email"
   >
     <span class="m-auto">
       <svg class="h-6 w-6 fill-current">
@@ -19,7 +19,7 @@
   <a
     class="{{ $btnClass }} hover:bg-fb-blue hover:text-white"
     href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ .Permalink }}"
-    data-ga-action="share:facebook"
+    data-ga-category="facebook"
     title="Share this page on Facebook"
   >
     <span class="m-auto">
@@ -31,7 +31,7 @@
   <a
     class="{{ $btnClass }} hover:bg-tw-blue hover:text-white"
     href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
-    data-ga-action="share:twitter"
+    data-ga-category="twitter"
     title="Tweet about this page"
   >
     <span class="m-auto">
@@ -43,7 +43,7 @@
   <button
     class="{{ $btnClass }} hover:bg-orange hover:text-white"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
-    data-ga-action="share:sharesheet"
+    data-ga-category="sharesheet"
     title="More ways to share this page"
     x-data
     x-bind="shareButton"

@@ -54,7 +54,7 @@ Alpine.directive(
         el.innerHTML = sanitizeText(html);
       });
     });
-  }
+  },
 );
 
 Alpine.directive(
@@ -70,7 +70,7 @@ Alpine.directive(
         el.innerText = value;
       });
     });
-  }
+  },
 );
 
 import intersect from "@alpinejs/intersect";
