@@ -25,6 +25,8 @@ Suspended City Manager Herm Suplizio now faces a total of 23 criminal counts —
 
 The charges Wednesday replace the 15 counts of theft and other crimes that prosecutors filed against Suplizio, 63, earlier this year. Some of the counts tweak the amounts of money Suplizio had already been charged with allegedly stealing from DuBois — a small city about two hours northeast of Pittsburgh — as well as from a nonprofit and other community organization that he ran.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+
 Many of the new charges relate to <a href="https://www.spotlightpa.org/statecollege/2023/05/pa-dubois-herm-suplizio-toni-cherry-cash-city-hall/">a bag containing nearly $94,000 in cash</a> that was delivered to City Hall in early May.
 
 At the time, city officials said only that the money had been dropped off in a gift bag by the city’s solicitor, Toni Cherry. Cherry did not say where or how she got it — only that it belonged to a fund associated with the city’s annual summer celebration, called Community Days. Suplizio had a key role in organizing the festival and managed bank accounts associated with the event.
@@ -39,9 +41,13 @@ The four keys corresponding to those lock boxes, according to investigators, wer
 
 Cherry, according to investigators, told DuBois City Council members during a closed-door meeting in May that Suplizio had brought her the money six weeks earlier, but that she had held onto it “to keep the PA OAG from confiscating it.” When interviewed by the attorney general’s office, however, investigators claim she said she did not remember when Suplizio had brought it to her.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
 Cherry could not be reached for comment on Wednesday. She does not face any charges.
 
 Separately, Suplizio faces new charges in connection with efforts he allegedly made to shield the former mayor of DuBois from shoplifting charges.
 
 <em>This story will be updated.</em>
+
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
