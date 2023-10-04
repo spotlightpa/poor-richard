@@ -1,5 +1,4 @@
 +++
-draft = true
 authors = []
 blurb = "Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
 byline = "Jane Doe"
@@ -9,7 +8,7 @@ image-credit = ""
 image-description = ""
 kicker = "Elections"
 layout = "custom-court-tool"
-published = 2030-12-31T05:00:00-04:00
+published = 2023-10-06T05:00:00-04:00
 slug = "court-tool"
 title = "Why Judges Matter"
 topics = ["Elections"]
