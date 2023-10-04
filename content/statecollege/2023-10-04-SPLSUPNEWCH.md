@@ -1,7 +1,7 @@
 +++
 authors = ["Angela Couloumbis"]
 blurb = "Herm Suplizio now faces a total of 23 criminal counts, including ones that involve a mysterious bag of cash delivered to city hall."
-byline = "Angela Couloumbis of Spotlight PA"
+byline = "Angela Couloumbis of Spotlight PA and Brad Bumsted of LNP"
 description = "Herm Suplizio now faces a total of 23 criminal counts, including ones that involve a mysterious bag of cash delivered to city hall."
 image = "external/f75jebrwjgnx8tzx76k90f84s4.jpeg"
 image-credit = "Min Xian / Spotlight PA"
