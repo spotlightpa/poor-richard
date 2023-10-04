@@ -21,7 +21,7 @@
   x-cloak
 >
   <h2
-    class="btn-donate"
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-show="!showSpanish"
     x-text="_('flag_text', $el.innerText)"
   >
@@ -96,7 +96,7 @@
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -117,7 +117,7 @@
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -130,7 +130,7 @@
       <label class="sr-only" for="{{ $idTip }}">Your tip or comment</label>
       <textarea
         id="{{ $idTip }}"
-        class="w-full rounded border-2 border-s-4 p-4 text-s-8 placeholder-s-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
+        class="w-full rounded border border-g-4 p-4 text-g-8 placeholder-g-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
         :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
         name="comment"
         rows="3"
@@ -150,7 +150,7 @@
       <a
         x-show="!showSpanish"
         href="/tips/"
-        class="font-semibold text-s-7"
+        class="font-semibold text-g-7"
         target="_blank"
       >
         Or see more secure ways to contact us
@@ -159,14 +159,14 @@
         x-cloak
         x-show="showSpanish"
         href="/tips/"
-        class="font-semibold text-s-7"
+        class="font-semibold text-g-7"
         target="_blank"
       >
         Ver otras maneras más privadas de contactarnos
       </a>
     </div>
   </form>
-  <div class="mb-4 mr-3 text-right text-s-9">
+  <div class="mb-4 mr-3 text-right text-g-9">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"

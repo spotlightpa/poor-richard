@@ -22,7 +22,7 @@
       {{ $inner }}
     </p>
   </figcaption>
-  <div class="relative mt-3 mb-8 h-9 bg-yellow-7 md:mb-24 md:h-32">
+  <div class="relative mb-8 mt-3 h-9 bg-yellow-7 md:mb-24 md:h-32">
     <span
       x-show="onScreen"
       class="max-w-{{ $percent }} block h-9 bg-yellow md:h-32"
@@ -38,7 +38,7 @@
       x-transition:leave="transition ease-in duration-500"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
-      class="absolute top-0 left-0 bottom-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-black md:text-4xl"
+      class="absolute bottom-0 left-0 top-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-black md:text-4xl"
     >
       {{ $number }}
     </p>

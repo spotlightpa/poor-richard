@@ -44,25 +44,19 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Support Spotlight PA right now and the first 500 gifts made during our Fall Member Drive will be DOUBLED!",
+  "sidebar-sticky-description": "Explore the beautiful places, amazing people, and delicious food of Pennsylvania through our free weekly newsletter, PA Local. Sign up now.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/1.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/2.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/3.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/4.png"
+    "https://files.data.spotlightpa.org/uploads/01j9/9jzc/22.png"
   ],
-  "sidebar-sticky-link": "/donate",
+  "sidebar-sticky-link": "/newsletters",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Support Spotlight PA right now and the first 500 gifts made during our Fall Member Drive will be DOUBLED!",
+  "sidebar-top-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/1.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/2.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/3.png",
-    "https://files.data.spotlightpa.org/uploads/01jf/qgkm/4.png"
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
   ],
-  "sidebar-top-link": "/donate/",
+  "sidebar-top-link": "/newsletters/",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
@@ -78,26 +72,26 @@
   "support-hed": "BEFORE YOU GO, A QUICK REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider supporting Spotlight PA's journalism during our 2023 Fall Member Drive and taking advance of a special DOUBLE match.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nWe do this journalism for you, but we can't do it without you. Your support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution?\n\n\u003cstrong\u003eAs a special bonus, the first 500 gifts made during our Fall Member Drive will be DOUBLED! But hurry before this special matching offer expires.\u003c/strong\u003e\n\nJoin thousands of your friends and neighbors by stepping up and letting us know you value quality, nonpartisan journalism that gets results for Pennsylvania. Make a gift now.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "I hope you appreciated this article. Before you move on, I was hoping you would consider supporting Spotlight PA's journalism.\n\nThis article and all of our journalism are available to you at no cost thanks to our supporters. We don't believe vital investigative and public-service journalism should be hidden behind a paywall or only for those who can afford a subscription fee. Everyone deserves access to the facts.\n\nEspecially in tighter economic times, people should not be forced to choose between the essentials, and essential news.\n\n\u003cstrong\u003eThat's why we need your help now.\u003c/strong\u003e\n\nYour support enables us to continue to produce tough, unique reporting you won't find anywhere else. And it also enables us to share that work with more than 90 newsroom partners in your community and communities across the state at no charge.\n\nFrom giant corporations to predatory hedge funds, a small number of billionaire owners have a powerful hold on so much of the information that reaches the public about what’s happening here. Spotlight PA is different. We have no billionaire owner or shareholders to consider.\n\nOur journalism is produced to serve the public interest – not profit motives.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone – whether they can afford to pay for news, or not. Will you do your part today by making a contribution?\n\n\u003cstrong\u003eAs a special bonus, all new monthly gifts will be matched at their annual value — that’s 12x your gift!\u003c/strong\u003e\n\nJoin thousands of your friends and neighbors by stepping up and letting us know you value quality, nonpartisan journalism that gets results for Pennsylvania. Make a gift now.\n\nWith gratitude,\n\u003cstrong\u003eChristopher Baxter\u003c/strong\u003e\nEditor in Chief\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "Only a few hours remain for your gift to Spotlight PA to be DOUBLED. Contribute now and ensure our trusted, nonpartisan investigative journalism can continue.",
   "takeover-hed": "Time is running out and we need your help",
   "takeover-image": "2023/08/01jd-w2vj-77eb-3dp1.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/statecollege/?campaign=701Dn000000YqKfIAK",
-  "topper-active": true,
+  "topper-active": false,
   "topper-bg-color": "#f6c831",
-  "topper-desktop-height": 175,
+  "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01jh/3v2c/september-site-toppertracker-10-.svg"
+    "https://files.data.spotlightpa.org/uploads/01j7/n08w/spring-campaign-topper-tracker-16-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#f6c831",
-  "topper-image-description": "Support Spotlight PA right now and the first 500 gifts made during our Fall Member Drive will be DOUBLED!",
+  "topper-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01jh/3v2b/september-campaign-mobile-topperrectangles-10-.svg"
+    "https://files.data.spotlightpa.org/uploads/01j7/n08v/spring-campaign-2023-rectangles-18-.svg"
   ],
   "topper-mobile-width": 1024
 }

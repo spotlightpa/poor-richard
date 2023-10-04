@@ -17,7 +17,7 @@
   aria-modal="true"
   aria-label="Newsletter sign up"
 >
-  <div class="absolute inset-0 bg-s-4 opacity-75"></div>
+  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div
     class="absolute inset-0 backdrop-blur-sm backdrop-filter"
     x-transition.opacity
@@ -41,7 +41,7 @@
         >
           <button
             style="color: {{ $actionColor }};"
-            class="col-start-6 flex text-s-4  md:col-start-10 md:row-start-1"
+            class="col-start-6 flex text-g-4  md:col-start-10 md:row-start-1"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -123,7 +123,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-s-8 placeholder-s-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -139,7 +139,7 @@
               </button>
             </div>
             <div
-              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-s-3 px-6 pb-9 pt-5"
+              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
               x-cloak
               x-show="hasFocused"
               x-transition:enter="transition ease-in-out duration-300"

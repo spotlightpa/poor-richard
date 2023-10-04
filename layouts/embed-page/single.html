@@ -1,15 +1,6 @@
-{{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
-
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/noscript.html" . }}
-
-
-  <link
-    rel="modulepreload"
-    href="{{ partialCached `helper/get-enhancements` . }}"
-  />
-{{ end }}
+{{ define "body-class" -}}
+  text-[16px] bg-white font-sans leading-normal
+{{- end }}
 
 {{ define "header" }}<!-- -->{{ end }}
 {{ define "before-footer" }}<!-- -->{{ end }}

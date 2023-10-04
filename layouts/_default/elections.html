@@ -4,8 +4,7 @@
 
 {{ define "body-class" }}text-[16px] bg-beige font-serif leading-normal{{ end }}
 
-{{ define "static-head" }}
-  {{ partialCached "header/static-tw.html" . }}
+{{ define "extra-head" }}
   <link
     rel="stylesheet"
     href="https://unpkg.com/add-to-calendar-button@1.14.6/assets/css/atcb.css"

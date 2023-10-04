@@ -1,20 +1,15 @@
 {{ define "body-class" }}
-  text-[16px] bg-beige font-sans leading-normal text-s-9
+  text-[16px] bg-beige font-sans leading-normal text-g-9
 {{ end }}
 {{ define "html-class" -}}
   scroll-smooth
 {{- end }}
 
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/static-tw.html" . }}
-{{ end }}
-
 {{ define "main" }}
   {{ with .Page.RenderString (.Param "takeover") }}
     {{ . }}
   {{ else }}
-    <header class="bg-s-0 px-3 pt-8 text-black md:pb-4">
+    <header class="bg-g-0 px-3 pt-8 text-black md:pb-4">
       <div class="mx-auto max-w-screen-lg">
         {{ partial "tw/breadcrumbs.html" . }}
       </div>
@@ -29,7 +24,7 @@
   {{ end }}
 
 
-  <section class="bg-s-0 pt-4 font-sans">
+  <section class="bg-g-0 pt-4 font-sans">
     {{ if or (.Content) (.Page.Params.subhed) }}
       <div
         class="mx-auto max-w-screen-lg px-5 pb-10 text-lg font-medium lg:px-0"
@@ -54,7 +49,7 @@
 
 
     <article
-      class=" article-content mx-auto max-w-screen-xl py-24 px-5 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:gap-x-5"
+      class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
     >
       {{ .Page.RenderString (.Param "supplemental") }}
       {{ .Page.RenderString (.Param "credit") }}
@@ -67,7 +62,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class=" w-full bg-s-0"
+        class=" w-full bg-g-0"
       >
         {{ partial "blocks/block" (dict
           "Page" $

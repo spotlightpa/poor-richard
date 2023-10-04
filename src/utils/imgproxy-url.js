@@ -22,7 +22,7 @@ testWebpSupport()
 
 export default function imageURL(
   filepath,
-  { width = 400, height = 300, extension = "jpeg" } = {}
+  { width = 400, height = 300, extension = "jpeg" } = {},
 ) {
   if (!filepath) {
     return "";
