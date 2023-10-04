@@ -43,62 +43,13 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
 {{<custom/courts-tool
   hed="Select a topic to see the impact of the courts:"
 >}}
-<ul class="grid grid-cols-2 gap-6 px-5 max-w-screen-xl mx-auto mt-10 pb-10 sm:grid-cols-3 md:grid-cols-4 md:gap-5">
 
-  {{<custom/courts-list 
-    issue-title = "Abortion"
-    issue-icon = "2023/10/01jh-nnw6-bs9w-vjrj.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Civil Liberties"
-    issue-icon = "2023/10/01jh-nnwt-xf50-hw6y.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Clergy Abuse"
-    issue-icon = "2023/10/01jh-nnwx-db40-jxnp.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "COVID-19"
-    issue-icon = "2023/10/01jh-nnx2-t6dz-ee1a.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Criminal Appeals"
-    issue-icon = "2023/10/01jh-nnx4-7e79-h576.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Death Penalty"
-    issue-icon = "2023/10/01jh-nnxm-s6es-yv0c.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Elections"
-    issue-icon = "2023/10/01jh-nnxp-qtw1-dsb0.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Environment"
-    issue-icon = "2023/10/01jh-nnxr-4e6w-jjg7.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Gun Rights"
-    issue-icon = "2023/10/01jh-nnxs-1fj5-7gxe.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Paid Sick Leave"
-    issue-icon = "2023/10/01jh-nny3-escj-74pd.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Redistricting"
-    issue-icon = "2023/10/01jh-nny5-xqpk-71z4.jpeg"
-  >}}
-  {{<custom/courts-list 
-    issue-title = "Schools"
-    issue-icon = "2023/10/01jh-nny6-0zfd-fd30.jpeg"
-  >}}
-</ul>
 
 {{<custom/courts-items
   issue-title = "Abortion"
     issue-icon = "2023/10/01jh-nnw6-bs9w-vjrj.jpeg"
 >}}
+
   {{<custom/courts-item 
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Allegheny Reproductive Health Center v. Pennsylvania Department of Human Services"
@@ -569,6 +520,60 @@ The decision [was not appealed](https://www.inquirer.com/education/pa-school-fun
 
 As of September 2023, state lawmakers are holding hearings to explore funding disparities, and have [generally broken along party lines over the best way to address school funding](https://www.spotlightpa.org/news/2023/09/pennsylvania-public-school-education-funding-unconstitutional-hearings/), with Democrats in favor of additional money in education, and Republicans favoring strategies that push responsibility for education to the private sector, [as in the use of school vouchers](https://www.spotlightpa.org/news/2023/06/pa-school-choice-voucher-budget-explain-history-tax-credit/).{{</custom/courts-item>}}
 {{</custom/courts-items>}}
+
+<h2 class="mx-auto max-w-screen-xl px-5 text-4xl font-black text-s-9">Select a topic to see the impact of the courts:</h2>
+
+<ul class="grid grid-cols-2 gap-6 px-5 max-w-screen-xl mx-auto mt-10 pb-10 sm:grid-cols-3 md:grid-cols-4 md:gap-5">
+
+  {{<custom/courts-list 
+    issue-title = "Abortion"
+    issue-icon = "2023/10/01jh-nnw6-bs9w-vjrj.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Civil Liberties"
+    issue-icon = "2023/10/01jh-nnwt-xf50-hw6y.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Clergy Abuse"
+    issue-icon = "2023/10/01jh-nnwx-db40-jxnp.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "COVID-19"
+    issue-icon = "2023/10/01jh-nnx2-t6dz-ee1a.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Criminal Appeals"
+    issue-icon = "2023/10/01jh-nnx4-7e79-h576.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Death Penalty"
+    issue-icon = "2023/10/01jh-nnxm-s6es-yv0c.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Elections"
+    issue-icon = "2023/10/01jh-nnxp-qtw1-dsb0.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Environment"
+    issue-icon = "2023/10/01jh-nnxr-4e6w-jjg7.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Gun Rights"
+    issue-icon = "2023/10/01jh-nnxs-1fj5-7gxe.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Paid Sick Leave"
+    issue-icon = "2023/10/01jh-nny3-escj-74pd.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Redistricting"
+    issue-icon = "2023/10/01jh-nny5-xqpk-71z4.jpeg"
+  >}}
+  {{<custom/courts-list 
+    issue-title = "Schools"
+    issue-icon = "2023/10/01jh-nny6-0zfd-fd30.jpeg"
+  >}}
+</ul>
 
 {{</custom/courts-tool>}}
 

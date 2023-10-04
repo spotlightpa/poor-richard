@@ -4,10 +4,8 @@
 <section
   class="mx-[calc(-50vw_+_50%)] mt-10 min-h-screen w-screen bg-s-8 bg-gradient-to-b from-s-2 via-s-3 to-s-5 pt-5 font-sans"
   x-data="{ selected: '' }"
+  x-intersect.half="$dispatch('intersect:selected', $el.id)"
 >
-  <h2 class="mx-auto max-w-screen-xl px-5 text-4xl font-black text-s-9">
-    {{ $hed }}
-  </h2>
 
   {{ .Inner }}
 </section>
