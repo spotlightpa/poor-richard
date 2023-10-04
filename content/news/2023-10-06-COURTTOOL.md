@@ -8,12 +8,45 @@ image = "2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
 image-credit = ""
 image-description = ""
 kicker = "Elections"
-layout = "custom"
+layout = "custom-court-tool"
 published = 2030-12-31T05:00:00-04:00
 slug = "court-tool"
 title = "Why Judges Matter"
 topics = ["Elections"]
 series = []
+credits = """
+{{<featured/election-promo>}}
+
+{{<featured/footer>}}
+
+{{<featured/credit
+    eyebrow="Content and Editing"
+    name="Elizabeth Estrada"
+    role="Democracy Editor"
+    email="eestrada@spotlightpa.org"
+>}}
+
+{{<featured/credit
+  eyebrow="Illustrations"
+  name="Daniel Fishel"
+  role="For Spotlight PA"
+>}}
+
+{{<featured/credit
+  eyebrow="Editing"
+    name="Katie Meyer"
+    role="Government Editor/Reporter"
+    email="kmeyer@spotlightpa.org"
+>}}
+
+{{<featured/credit
+    eyebrow="Layout"
+    name="Jeff Rummel"
+    role="News Developer"
+    email="jrummel@spotlightpa.org"
+>}}
+{{</featured/footer>}}
+"""
 +++
 
 {{<featured/main-takeover
@@ -521,7 +554,7 @@ The decision [was not appealed](https://www.inquirer.com/education/pa-school-fun
 As of September 2023, state lawmakers are holding hearings to explore funding disparities, and have [generally broken along party lines over the best way to address school funding](https://www.spotlightpa.org/news/2023/09/pennsylvania-public-school-education-funding-unconstitutional-hearings/), with Democrats in favor of additional money in education, and Republicans favoring strategies that push responsibility for education to the private sector, [as in the use of school vouchers](https://www.spotlightpa.org/news/2023/06/pa-school-choice-voucher-budget-explain-history-tax-credit/).{{</custom/courts-item>}}
 {{</custom/courts-items>}}
 
-<h2 class="mx-auto max-w-screen-xl px-5 text-4xl font-black text-s-9">Select a topic to see the impact of the courts:</h2>
+<h2 class="mx-auto max-w-screen-xl px-5 pt-5 text-4xl font-black text-s-9">Select a topic to see the impact of the courts:</h2>
 
 <ul class="grid grid-cols-2 gap-6 px-5 max-w-screen-xl mx-auto mt-10 pb-10 sm:grid-cols-3 md:grid-cols-4 md:gap-5">
 
@@ -576,36 +609,4 @@ As of September 2023, state lawmakers are holding hearings to explore funding di
 </ul>
 
 {{</custom/courts-tool>}}
-
-{{<featured/election-promo>}}
-
-{{<featured/footer>}}
-
-{{<featured/credit
-    eyebrow="Content and Editing"
-    name="Elizabeth Estrada"
-    role="Democracy Editor"
-    email="eestrada@spotlightpa.org"
->}}
-
-{{<featured/credit
-  eyebrow="Illustrations"
-  name="Daniel Fishel"
-  role="For Spotlight PA"
->}}
-
-{{<featured/credit
-  eyebrow="Editing"
-    name="Katie Meyer"
-    role="Government Editor/Reporter"
-    email="kmeyer@spotlightpa.org"
->}}
-
-{{<featured/credit
-    eyebrow="Layout"
-    name="Jeff Rummel"
-    role="News Developer"
-    email="jrummel@spotlightpa.org"
->}}
-{{</featured/footer>}}
 
