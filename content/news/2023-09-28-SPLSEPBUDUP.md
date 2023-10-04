@@ -35,7 +35,7 @@ Beth Rementer, spokesperson for state House Majority Leader Matt Bradford (D., M
 
 She added that a fiscal code “is not always necessary.”
 
-However, budget secretary Uri Monson <a href="https://senatorpittman.com/wp-content/uploads/sites/96/2023/08/8.2.23-Memo-from-Budget-Secretary-Uri-Monson.pdf">told Shapiro and legislative leaders</a> in August that he would not release roughly $1.1 billion for a number of programs without additional legislation from state lawmakers.
+However, budget secretary Uri Monson <a href="https://web.archive.org/20230808032701/https://senatorpittman.com/wp-content/uploads/sites/96/2023/08/8.2.23-Memo-from-Budget-Secretary-Uri-Monson.pdf">told Shapiro and legislative leaders</a> in August that he would not release roughly $1.1 billion for a number of programs without additional legislation from state lawmakers.
 
 Since late August, state Senate Republicans have advanced a handful of bills containing language that would authorize spending on some of the stalled funding items. One includes funding for increased reimbursements for first responders, and would renew judicial fees that courts rely on.
 
@@ -43,7 +43,7 @@ The chamber also passed two education bills. One again proposes to create a $100
 
 The other bill would allocate tens of millions of dollars in school safety grants to the Commission on Crime and Delinquency — a bipartisan state panel including administration officials, legislators, judges, and law enforcement officials — rather than the Pennsylvania Department of Education. The Shapiro administration supports that effort.
 
-Following the latter’s passage, state Senate Majority Leader Joe Pittman (R., Indiana) published <a href="https://senatorpittman.com/2023/09/22/an-opportunity-to-bring-back-common-sense/">an op-ed</a> arguing that “it is time we demonstrate what can be done in divided government instead of what cannot.”
+Following the latter’s passage, state Senate Majority Leader Joe Pittman (R., Indiana) published <a href="https://web.archive.org/20230928112419/https://senatorpittman.com/2023/09/22/an-opportunity-to-bring-back-common-sense/">an op-ed</a> arguing that “it is time we demonstrate what can be done in divided government instead of what cannot.”
 
 “The Senate continues to act and demonstrate we can move forward with the most basic parameters which make our government function,” Pittman said. “It is past time for the House to come back to session and work with us to solve real problems for the people of Pennsylvania — starting with keeping our students safe.”
 
