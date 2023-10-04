@@ -17,26 +17,29 @@
   >
     {{ $title }}
   </h2>
-<div
-  class="mx-auto max-w-screen-lg items-stretch justify-start md:flex md:flex-wrap md:gap-5"
->
-  <aside class="mt-8 md:w-2/6">
+  <div
+    class="mx-auto max-w-screen-lg items-stretch justify-start md:flex md:flex-wrap md:gap-5"
+  >
+    <aside class="mt-8 md:w-2/6">
       {{ $srcset := partial "helper/build-srcset" (dict
-      "filename" $filename
-      "sizes" $sizes
-      "gravity" "ce"
-      )
-    }}
-    <picture
-      class="aspect-auto overflow-hidden sticky top-8"
-      aria-hidden="true"
-    >
-      <img srcset="{{ $srcset }}" class="object-cover rounded" sizes="100vh" />
-    </picture>
-
-  </aside>
-<div class="md:w-7/12">
-  {{ .Inner }}
-  </div>
+        "filename" $filename
+        "sizes" $sizes
+        "gravity" "ce"
+        )
+      }}
+      <picture
+        class="sticky top-8 aspect-auto overflow-hidden"
+        aria-hidden="true"
+      >
+        <img
+          srcset="{{ $srcset }}"
+          class="rounded object-cover"
+          sizes="100vh"
+        />
+      </picture>
+    </aside>
+    <div class="md:w-7/12">
+      {{ .Inner }}
+    </div>
   </div>
 </section>
