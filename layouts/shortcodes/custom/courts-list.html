@@ -18,12 +18,13 @@
     @click.prevent="
       selected = issue;
       window.setTimeout(() => {
-        document.getElementById(issue).
+        document.
+          getElementById(issue).
           scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'start'
-        });
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start',
+          });
       }, 250);
     "
     :class="{'bg-black': selected === issue }"
