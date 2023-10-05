@@ -19,9 +19,9 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
-<strong><em>Update, Oct. 4:</em></strong><em> The state House adopted two amendments that would overhaul election laws on Wednesday, including expanded voter ID requirements, which passed with bipartisan support. Democrats passed another amendment along a party line vote, which includes three days of pre-canvassing mail ballots, a requirement that counties notify voters of disqualifying mail ballot errors, and other provisions.</em>
+<strong><em>Update, Oct. 5: </em></strong>The Pennsylvania House has advanced a bill to change the date of the 2024 presidential primary while <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-2024-presidential-primary-date-legislation-change-house/">rejecting an effort to implement expanded voter ID requirements, mail ballot rule changes, and a slew of other provisions</a>.
 
-<em>The complete bill, which would also move Pennsylvania’s 2024 primary earlier, to March 19, could be passed out of the state House as soon as Thursday. The amendments mean it would then need to go back to the state Senate for another vote, followed by Gov. Josh Shapiro’s signature, before it becomes law.</em>
+<strong><em>Update, Oct. 4:</em></strong><em> </em>The state House adopted two amendments that would overhaul election laws on Wednesday, including expanded voter ID requirements, which passed with bipartisan support. Democrats passed another amendment along a party line vote, which includes three days of pre-canvassing mail ballots, a requirement that counties notify voters of disqualifying mail ballot errors, and other provisions.
 
 <em>Original story</em>
 
