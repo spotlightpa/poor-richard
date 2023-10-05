@@ -29,7 +29,9 @@ A second bill to move the primary to March 19 — previously approved by the sta
 
 “This bill should have been in the Senate by June,” state Rep. Seth Grove (R., York) said of the legislation to move the primary to April 2, capturing the sentiment of many Republican legislators and county leaders.
 
-State Senate leaders have yet to publicly comment on whether they will bring the April 2 proposal up for a vote. The chamber had <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-presidential-primary-date-2024-passover/">opted for March 19 as the date for the primary</a> when it passed a bill last month.
+In a statement, state Senate Majority Leader Joe Pittman (R., Indiana) did not directly address whether leadership will bring the April 2 measure up for a vote. The chamber had <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-presidential-primary-date-2024-passover/">opted for March 19 as the date for the primary</a> when it passed a bill last month.
+
+“We have tried to advance a new primary date out of respect for the Jewish holiday,” the statement said. “Those efforts have clearly not been successful and the window to make any change is rapidly closing given the House actions this week.”
 
 The current date of the 2024 primary, April 23, conflicts with the Jewish holiday of Passover and places the swing state late in the primary cycle. While the effort to move the primary has received bipartisan, bicameral, and gubernatorial support, counties, school boards, and a legislative advisory board are concerned it will strain local election offices, especially if lawmakers drag the decision out.
 
@@ -102,8 +104,6 @@ Act 77, the 2019 law that created no-excuse mail voting, “was threading a need
 The April 2 bill will now head to the state Senate for consideration.
 
 The upper chamber is not scheduled to return to session until Oct. 16, meaning the earliest date Shapiro could receive the bill is late October. The proposed April 2 primary would be less than six months away at that point.
-
-It is unclear how the Senate plans to address the April 2 bill. A spokesperson for the Senate Republican Caucus did not immediately return a request for comment.
 
 A spokesperson for Shapiro declined to comment on whether the governor would support the April 2 bill.
 
