@@ -19,6 +19,12 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
+<strong><em>Update, Oct. 4:</em></strong><em> The state House adopted two amendments that would overhaul election laws on Wednesday, including expanded voter ID requirements, which passed with bipartisan support. Democrats passed another amendment along a party line vote, which includes three days of pre-canvassing mail ballots, a requirement that counties notify voters of disqualifying mail ballot errors, and other provisions.</em>
+
+<em>The complete bill, which would also move Pennsylvania’s 2024 primary earlier, to March 19, could be passed out of the state House as soon as Thursday. The amendments mean it would then need to go back to the state Senate for another vote, followed by Gov. Josh Shapiro’s signature, before it becomes law.</em>
+
+<em>Original story</em>
+
 HARRISBURG — Pennsylvania lawmakers are once again considering expanding the state’s voter ID requirements, this time as part of a larger proposal to change the date of the 2024 presidential primary.
 
 The Democratic-controlled state House is expected to consider a Republican-authored amendment this week that would require voters to show proof of identification every time they cast a ballot in person. Currently, state law requires voters to show proof of identification the first time they vote at a polling place.
