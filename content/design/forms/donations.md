@@ -8,7 +8,7 @@ url = "design/forms/donations"
 {{<design/donations>}}
 <div
   class="
-    border-b border-s-4 mt-10 space-y-4 p-4
+    border-b border-g-4 mt-10 space-y-4 p-4
 "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">

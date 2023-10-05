@@ -260,10 +260,10 @@ Welsh told program workers, via Facebook and email, that entering the payment pl
 
 ### ‘Any progress today?’ 
 
-<p class="font-sans text-base  text-s-8">Keisha Welsh is one of dozens of applicants who asked for updates from the Pennsylvania Homeowner Assistance Fund on Facebook Messenger. Welsh received a warning in September that her gas would be shut off unless she caught up on payments. She sent the notice to program workers, but when she couldn’t get an update, she entered a payment plan with the gas company — a decision that caused her to fall behind on other bills.</p>
+<p class="font-sans text-base  text-g-8">Keisha Welsh is one of dozens of applicants who asked for updates from the Pennsylvania Homeowner Assistance Fund on Facebook Messenger. Welsh received a warning in September that her gas would be shut off unless she caught up on payments. She sent the notice to program workers, but when she couldn’t get an update, she entered a payment plan with the gas company — a decision that caused her to fall behind on other bills.</p>
 
-<p class="font-sans text-sm  text-s-8">Sources: Keisha Welsh and Right-to-Know Request</p>
-<script src="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/embed.js" defer></script><div data-spl-interactive="viz-sms" id="embed-container" style="border-radius:4px;overflow:hidden;"></div><small class="font-sans text-sm  text-s-8"><a href="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/">Click here if you have trouble loading this dialog</a></small>
+<p class="font-sans text-sm  text-g-8">Sources: Keisha Welsh and Right-to-Know Request</p>
+<script src="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/embed.js" defer></script><div data-spl-interactive="viz-sms" id="embed-container" style="border-radius:4px;overflow:hidden;"></div><small class="font-sans text-sm  text-g-8"><a href="https://interactives.data.spotlightpa.org/2023/viz-sms-dialog/">Click here if you have trouble loading this dialog</a></small>
 
 
 ### ‘It’s like there is nothing they can tell me’ 

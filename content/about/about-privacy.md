@@ -82,8 +82,8 @@ The following chart lists the different types of cookies that we and our service
 
 <div class=" w-full rounded overflow-x-scroll overflow-y-hidden">
 <table class="border-collapse table-auto text-sm">
-  <thead class="bg-s-2 text-left">
-    <tr class="border-b border-s-3">
+  <thead class="bg-g-2 text-left">
+    <tr class="border-b border-g-3">
       <th class=" p-2">
         <p>
           Types of Cookies
@@ -102,7 +102,7 @@ The following chart lists the different types of cookies that we and our service
     </tr>
   </thead>
   <tbody>
-    <tr class="even:bg-s-1 border-b border-s-3">
+    <tr class="even:bg-g-1 border-b border-g-3">
       <td class="align-baseline p-2">
         <p>
           Essential
@@ -132,7 +132,7 @@ The following chart lists the different types of cookies that we and our service
         </p>
       </td>
     </tr>
-    <tr class="even:bg-s-1  border-b border-s-3">
+    <tr class="even:bg-g-1  border-b border-g-3">
       <td class="align-baseline p-2">
         <p>
           Functionality
@@ -164,7 +164,7 @@ The following chart lists the different types of cookies that we and our service
         </p>
       </td>
     </tr>
-    <tr class="even:bg-s-1  border-b border-s-3">
+    <tr class="even:bg-g-1  border-b border-g-3">
       <td class="align-baseline p-2">
         <p>
           Analytics, Performance, and Research
@@ -198,7 +198,7 @@ The following chart lists the different types of cookies that we and our service
         </ul>
       </td>
     </tr>
-    <tr class="even:bg-s-1  border-b border-s-3">
+    <tr class="even:bg-g-1  border-b border-g-3">
       <td class="align-baseline p-2">
         <p>
           Advertising
