@@ -6,18 +6,33 @@
 {{ $caption := .Get "caption" | default "No caption" }}
 
 
-<figure class="mx-auto md:max-w-5xl">
-  <div class="lg:-mx-32 xl:-mx-48">
+<figure 
+  class="mx-auto md:max-w-5xl"
+  x-data="{ onScreen: false, splPlayer: new Vimeo.Player(
+    'video-2', {
+      id: 562400724,
+      height: 576,
+      responsive: true,
+      loop: true,
+      title: 0,
+      sidedock: 0,
+    }
+  ) 
+ }"
+>
+  <div 
+    class="lg:-mx-32 xl:-mx-48"
+  >
+    <span x-text="onScreen"></span>
     <div
+      x-ref="splVideo"
       id="video-2"
       class="relative mx-auto h-0 w-full pb-16x9"
-      data-vimeo="562400724"
+      data-vimeo-id="562400724"
     ></div>
   </div>
   {{ if $inner }}
     <figcaption
-      x-data="{ onScreen: false }"
-      x-intersect.full="onScreen = true"
       class="mt-3 mb-8 md:mt-8 md:mb-24"
     >
       <p

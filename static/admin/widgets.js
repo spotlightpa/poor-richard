@@ -39,7 +39,7 @@ let SupportersControl = createClass({
         new JSONMap([
           ["display", display],
           ["sort", sort],
-        ])
+        ]),
       );
       n++;
     }

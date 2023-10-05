@@ -1,0 +1,12 @@
+{{ $css := resources.Get "css/tw.css" | resources.PostCSS (dict "inlineImports" true) }}
+{{ if not site.IsServer }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+
+{{ $color := "#f4f1ee" }}
+{{ if .Param "banner-active" }}
+  {{ $color = .Param "banner-bg-color" }}
+{{ end }}
+<!-- For Safari header -->
+<meta name="theme-color" content="{{ $color }}" />

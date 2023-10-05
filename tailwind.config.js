@@ -1,5 +1,4 @@
 module.exports = {
-  purge: false,
   theme: {
     fontFamily: {
       serif: "Merriweather, serif",
@@ -7,14 +6,13 @@ module.exports = {
         'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", ' +
         'Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", ' +
         '"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif',
-      raleway: "Raleway, Helvetica, Arial, sans-serif",
     },
     colors: {
       transparent: "transparent",
       current: "currentColor",
       white: "#fff",
       black: "#000",
-      s: {
+      g: {
         0: "#fcfcfc",
         1: "#f9f9f9",
         2: "#f1f1f1",
@@ -129,5 +127,5 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   darkMode: "media",
-  content: ["./layouts/**/*.html", "./src/**/*.js}"],
+  content: ["./hugo_stats.json"],
 };

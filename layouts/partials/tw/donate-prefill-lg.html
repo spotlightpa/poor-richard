@@ -10,8 +10,8 @@
 
 {{ $btnClass := ` btn-donate-lg mr-4 border-none flex-[1_1_30%] sm:grow-0 outline-none inline-block` }}
 {{ $activeClass := `bg-red-6 text-white hover:bg-red-5 focus:ring-red-7 active:ring-red-9` }}
-{{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
-{{ $radioClass  :=  `rounded-full border-s-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
+{{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
+{{ $radioClass  :=  `rounded-full border-g-1 appearance-none mr-4 order-first w-6 h-6 checked:bg-black shadow-[0_0_0_3px_rgba(255,255,255,1)]` }}
 
 {{ $donateAmount := split $donateAmounts "," }}
 {{ $donateFirst := index $donateAmount 0 }}
@@ -39,7 +39,7 @@
       <div class="mt-6 flex flex-wrap justify-start gap-2 font-sans">
         {{ define "tw-donate-prefill-button-lg" }}
           {{ $btnClass := ` btn-donate-lg mr-4 flex-[1_1_30%] border-none sm:grow-0 outline-none inline-block` }}
-          {{ $inactiveClass := `bg-s-2 text-s-9 hover:bg-s-3 focus:ring-s-7 active:ring-s-9` }}
+          {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
 
           {{ $amount := index . 0 }}
           {{ $period := index . 1 }}
@@ -110,12 +110,12 @@
           <input
             id="other-amount"
             type="text"
-            class="placeholder-opacity-25outline-none block w-full appearance-none rounded border-2 border-s-4 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide placeholder-s-4 ring-1 ring-transparent focus:ring-red-4"
+            class="placeholder-opacity-25outline-none block w-full appearance-none rounded border-2 border-g-4 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide placeholder-g-4 ring-1 ring-transparent focus:ring-red-4"
             inputmode="numeric"
             x-model="amount"
           />
           <span
-            class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-s-4"
+            class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-4"
             aria-hidden="true"
           >
             $
@@ -130,7 +130,7 @@
           <input
             type="radio"
             name="freq"
-            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-s-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
+            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-g-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
             :class="btnClass(freq === 'm')"
             @click="setAmt('m', '15')"
           />
@@ -140,7 +140,7 @@
           <input
             type="radio"
             name="freq"
-            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-s-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
+            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-g-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
             :class="btnClass(freq === 'y')"
             @click="setAmt('y', '{{ mul $donateDefault 12 }}')"
           />
@@ -151,7 +151,7 @@
           <input
             type="radio"
             name="freq"
-            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-s-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
+            class=" order-first mr-4 h-6 w-6 appearance-none rounded-full border-g-1 shadow-[0_0_0_3px_rgba(255,255,255,1)] checked:bg-black"
             :class="btnClass(freq === 'o')"
             @click="setAmt('o', '{{ mul $donateDefault 12 }}')"
           />

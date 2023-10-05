@@ -1,12 +1,10 @@
 {{ $title := .Title }}
 {{ $relink := .RelPermalink }}
 {{ $link := .Permalink }}
-{{ $id := .Param "GoogleAnalytics" | default site.GoogleAnalytics }}
 <link
   rel="dns-prefetch"
   href="https://plausible.io"
   data-ga-settings
-  data-ga-id="{{ $id }}"
   data-ga-page-title="{{ $title }}"
   data-ga-page-path="{{ $relink }}"
   data-ga-page-url="{{ $link }}"
