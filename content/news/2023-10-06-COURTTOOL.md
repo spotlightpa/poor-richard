@@ -88,7 +88,7 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
     link = "https://www.pacourts.us/news-and-statistics/cases-of-public-interest/allegheny-reproductive-health-center-et-al-v-pa-department-of-human-services-et-al"
   >}}
 
-  #### Why It Matters: 
+  #### » Why It Matters: 
 
   A rule prevents people who have state-issued insurance from using it to pay for an abortion. 
 
@@ -112,11 +112,11 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
     link = "https://www.pacourts.us/assets/opinions/Superior/out/J-S17005-22o%20-%20105250310195477950.pdf?cb=1"
   >}}
 
-  #### WHY IT MATTERS: 
+  #### » Why It Matters: 
 
   Police officers have the right to stop drivers if any part of their license plate is obscured. A law later clarified police cannot stop drivers solely because their vehicle has a license frame plate. 
 
-  #### SUMMARY: 
+  #### Summary: 
 
   The Superior Court ruled in 2022 that police officers have the right to [stop drivers if any part of their license plate is obscured](https://www.spotlightpa.org/news/2022/08/pa-police-license-plate-frame-pulled-over-traffic-stop/). 
 
@@ -140,11 +140,11 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
     case = "In re: Fortieth Statewide Investigating Grand Jury"
     link = "https://www.pacourts.us/Storage/media/pdfs/20210610/013823-file-7473.pdf"
   >}}
-  #### WHY IT MATTERS 
+  #### » Why It Matters: 
     
   The names of 11 Catholic clergy members implicated in a grand jury investigation of child sexual abuse were kept secret.
 
-  #### SUMMARY
+  #### Summary:
 
   In late 2018, the Pennsylvania Supreme Court ruled [to shield the identities of 11 Catholic clergy members](https://www.inquirer.com/philly/news/breaking/pa-supreme-court-catholic-clergy-sex-abuse-redactions-grand-jury-20181203.html) implicated in a grand jury investigation of child sexual abuse. 
 
@@ -177,11 +177,11 @@ To illustrate how decisions from Pennsylvania’s appellate courts impact reside
   case = "Wolf v. Scarnati"
   link = "https://casetext.com/case/wolf-v-scarnati-4?"
 >}}
-#### WHY IT MATTERS
+#### » Why It Matters:
 
 The Pennsylvania legislature cannot unilaterally end a governor’s disaster declaration. The ruling has since been overridden by a constitutional amendment. 
 
-#### SUMMARY 
+#### Summary: 
 
 In July 2020, the state Supreme Court found that the legislature could not end a disaster declaration declared by a governor without the executive’s approval. 
 
@@ -203,11 +203,11 @@ The legislature later responded to this and other conflicts over emergency power
   >}}
 
 
-  #### WHY IT MATTERS
+  #### » Why It Matters:
 
   Gov. Tom Wolf’s order closing some Pennsylvania businesses during the early months of the COVID-19 pandemic was allowed to stay in place. 
 
-  #### SUMMARY
+  #### Summary:
 
   Four businesses — including the campaign of state House candidate Danny DeVito — and one individual challenged Gov. Tom Wolf’s order to temporarily [close all businesses deemed not “life-sustaining”](https://www.spotlightpa.org/news/2020/03/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down/) to prevent the spread of COVID-19. 
 
@@ -228,11 +228,11 @@ The legislature later responded to this and other conflicts over emergency power
     link = "https://casetext.com/case/commonwealth-v-williams-1154"
   >}}
 
-  #### WHY IT MATTERS 
+  #### » Why It Matters: 
 
   Rapper Meek Mill’s decade-old weapon and drug charges were vacated.
 
-  #### SUMMARY 
+  #### Summary: 
 
   In 2019, Superior Court vacated Philadelphia-born rapper [Meek Mill’s decade-old weapon and drug charges](https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html).
 
@@ -248,11 +248,11 @@ The legislature later responded to this and other conflicts over emergency power
     case = "Commonwealth v. Sandusky "
     link = "https://www.pacourts.us/news-and-statistics/cases-of-public-interest/commonwealth-v-sandusky"
   >}}
-  #### WHY IT MATTERS
+  #### » Why It Matters:
 
   Jerry Sandusky remains in prison for sexually abusing children. 
 
-  #### SUMMARY
+  #### Summary:
 
   For more than a decade, Pennsylvania’s court system has considered charges and appeals in the case of former Penn State defensive coordinator Jerry Sandusky, who was convicted in 2012 of serially sexually abusing children in his care. 
 
@@ -283,11 +283,11 @@ The legislature later responded to this and other conflicts over emergency power
     court = "SUPREME COURT"
     case = "Commonwealth of Pennsylvania v. Williams"
     link = "https://www.pacourts.us/assets/opinions/Supreme/out/J-52-2015mo%20-%201024791385860124.pdf"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
 
   Pennsylvania’s governor has the right under the state constitution to issue a reprieve to any incarcerated person sentenced to death, effectively instituting a moratorium. 
 
-  #### SUMMARY
+  #### Summary:
 
   In 2015, the Supreme Court unanimously [upheld then-Gov. Tom Wolf’s moratorium on executions](https://deathpenaltyinfo.org/news/pennsylvania-supreme-court-unanimously-upholds-governors-moratorium-on-executions), which he had imposed soon after he took office as he awaited a task force report on Pennsylvania’s death penalty.
 
@@ -307,11 +307,11 @@ The legislature later responded to this and other conflicts over emergency power
     court = "SUPREME COURT"
     case = "Ball v. Chapman"
     link = "https://www.democracydocket.com/wp-content/uploads/2022/10/Certified-Copy-Majority-Opinion-J.-Wecht.pdf"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   County officials can’t count mail ballots that are missing a date on the outer envelope or that have a date that is considered “incorrect,” meaning [outside the mail voting window](https://www.inquirer.com/politics/election/pennsylvania-undated-ballots-supreme-court-wrongly-dated-lawsuit-20221105.html). 
 
-#### SUMMARY
+#### Summary:
 
 In 2022, with only one week until the November midterm election, the Pennsylvania Supreme Court ordered election officials to “refrain from counting” mail ballots with a wrong or missing date on their outer envelopes. 
 
@@ -342,11 +342,11 @@ In the absence of any other ruling, the 2022 decision from the Pennsylvania Supr
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Pennsylvania Democratic Party v. Boockvar"
     link = "https://law.justia.com/cases/pennsylvania/supreme-court/2020/133-mm-2020-1.html"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Counties are allowed to use mail ballot drop boxes, even though they are not specifically mentioned in state law.
 
-  #### SUMMARY
+  #### Summary:
 
   Less than two months before the 2020 election, the Pennsylvania Supreme Court issued a ruling that allowed the use of ballot drop boxes, required poll watchers to live in the county where they wanted to serve, and temporarily extended mail ballot deadlines. 
 
@@ -370,11 +370,11 @@ In the absence of any other ruling, the 2022 decision from the Pennsylvania Supr
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Robinson Township v. Commonwealth of Pennsylvania"
     link = "https://casetext.com/case/robinson-twp-v-commonwealth-9#:~:text=The%20people%20have%20a%20right,including%20generations%20yet%20to%20come."
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Gave teeth to the state’s Environmental Rights Amendment, which provides a constitutional guarantee to clean air and water. 
 
-  #### SUMMARY
+  #### Summary:
   
   In 2016, the state Supreme Court handed down a ruling that struck a blow to the oil and gas industry in the commonwealth, and was credited with [“breathing new life”](http://www.rutgerslawreview.com/wp-content/uploads/2015/11/03_Dernbach_Article_Ready-for-Publication.pdf) into the state’s environmental rights amendment. 
 
@@ -390,11 +390,11 @@ In the absence of any other ruling, the 2022 decision from the Pennsylvania Supr
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Pennsylvania Environmental Defense Foundation v. Commonwealth Of Pennsylvania"
     link = "https://casetext.com/case/pennsylvania-environmental-defense-foundation-v-commonwealth"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Established that the protections provided by the Environmental Rights Amendment, which provides a constitutional guarantee to clean air and water, cannot be altered through legislation. 
 
-  #### SUMMARY
+  #### Summary:
   
   From 2015 to 2021, a case ping-ponged through Pennsylvania’s court system that sought to give more teeth to the Environmental Rights Amendment — a provision in the state constitution that guarantees clean air, pure water, and the preservation of the environment.
 
@@ -418,11 +418,11 @@ In the absence of any other ruling, the 2022 decision from the Pennsylvania Supr
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Crawford v. Commonwealth"
     link = "https://casetext.com/case/crawford-v-commonwealth-102"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Philadelphia and Pittsburgh cannot pass their own gun laws. The state Supreme Court is considering an appeal.
 
-#### SUMMARY
+#### Summary:
 
 Philadelphia and other plaintiffs — including the nonprofit CeaseFirePA and a group of city residents affected by gun violence — want to strike down as unconstitutional a 1995 law, the Uniform Firearms Act, that preempts municipalities from enacting stricter gun regulations. 
 
@@ -460,11 +460,11 @@ Like Crawford, these two cases have both been appealed to the state Supreme Cour
     court = "COMMONWEALTH COURT, SUPREME COURT"
     case = "Pa. Rest. & Lodging Ass'n v. City of Pittsburgh"
     link = "https://law.justia.com/cases/pennsylvania/supreme-court/2019/58-wap-2017.html"
-  >}}#### WHY IT MATTERS 
+  >}}#### » Why It Matters: 
   
   The ruling set a new standard for the state by finding a local municipality, rather than the state legislature alone, has the power to order businesses to provide paid sick leave. 
 
-#### SUMMARY
+#### Summary:
 
 In 2015, Pittsburgh passed the Paid Sick Days Act, an ordinance that required employers with fewer than 15 employees to offer at least three days of sick leave a year. Local businesses sued the city, arguing that Pittsburgh was overstepping its home rule authority by regulating businesses. 
 
@@ -484,11 +484,11 @@ The ordinance took effect in 2020.{{</custom/courts-item>}}
     court = "SUPREME COURT"
     case = "League of Women Voters v. Commonwealth of Pennsylvania"
     link = "https://www.pacourts.us/news-and-statistics/cases-of-public-interest/league-of-women-voters-et-al-v-the-commonwealth-of-pennsylvania-et-al-159-mm-2017"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Pennsylvania got a brand new congressional map after this ruling threw out the 2011 version for being unfairly drawn to benefit Republicans. The state’s delegation went from 12-6 in favor of Republicans to a 9-9 tie between the major parties in the following election. 
 
-#### SUMMARY
+#### Summary:
 
 In 2017, the League of Women Voters of Pennsylvania and a group of Democratic voters filed a lawsuit against the commonwealth alleging that the [2011 congressional map was unconstitutional and discriminated against Democratic voters](https://www.brennancenter.org/our-work/court-cases/league-women-voters-pennsylvania-v-commonwealth-pennsylvania). 
 
@@ -510,11 +510,11 @@ That election [yielded a very different Pennsylvania congressional delegation](h
     court = "COMMONWEALTH, SUPREME COURT"
     case = "Carter v. Chapman"
     link = "https://www.pacourts.us/Storage/media/pdfs/20220207/173141-feb.7,2022-specialmaster'sreportfiled.pdf"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   The state Supreme Court — not the General Assembly and governor — put in place Pennsylvania’s congressional map to break an impasse. 
 
-#### SUMMARY
+#### Summary:
 
 In 2021, two groups of Pennsylvania voters filed lawsuits against the acting secretary of the commonwealth and other election officials, saying that they were concerned that new congressional districts would not be in place in time for the 2022 midterm elections. 
 
@@ -538,11 +538,11 @@ She [recommended a map submitted by state House Republicans](https://www.spotlig
     court = "COMMONWEALTH COURT"
     case = "William Penn School District et al. v. Pennsylvania Department of Education et al."
     link = "https://pubintlaw.org/wp-content/uploads/2023/02/02.07.23-Memorandum-Opinion-Filed-pubintlaw.pdf"
-  >}}#### WHY IT MATTERS
+  >}}#### » Why It Matters:
   
   Pennsylvania will need to come up with a new or updated way to fund public schools.
 
-#### SUMMARY
+#### Summary:
 
 In 2023, a Commonwealth Court judge ruled that the way Pennsylvania funds its [public schools is unconstitutionally inequitable](https://www.spotlightpa.org/news/2023/02/pa-public-school-funding-lawsuit-state-budget-billions/), siding with parents, advocates, and six school districts that filed the lawsuit eight years ago.
 
