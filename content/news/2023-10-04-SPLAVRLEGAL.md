@@ -23,7 +23,7 @@ Republicans at the state and national level are still crying foul over Pennsylva
 
 Conservatives are questioning not only the security and motives of the program, but also Shapiro’s authority to unilaterally make such a change without the legislature.
 
-Despite claims of overreach and one threat to sue the governor, no one has yet actually challenged the move in court. A law from 1996 offers clues as to where the authority lies.
+Despite claims of overreach and one threat to sue the governor, no one has yet actually challenged the move in court. A law from 1995 offers clues as to where the authority lies.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 

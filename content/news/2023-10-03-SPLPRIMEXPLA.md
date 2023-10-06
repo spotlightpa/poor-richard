@@ -21,11 +21,11 @@ topics = ["Elections"]
 
 HARRISBURG — Pennsylvania lawmakers are weighing whether to move the date of the state’s 2024 primary.
 
-The state Senate has already passed a bill that would move the election from April 23, 2024, to March 19, while the state House is back in Harrisburg this week and ready to consider legislation.
+The state Senate has passed a bill that would move the election from April 23, 2024, to March 19, while the state House has passed its own legislation that would move the date to April 2.
 
 Here’s what you need to know about Pennsylvania’s primary, the arguments in support or moving it, and the arguments against:
 
-<em>Last updated 5 a.m., Oct. 3.</em>
+<em>Last updated 3 p.m., Oct. 5.</em>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -57,11 +57,15 @@ In a <a href="https://twitter.com/ByCarterWalker/status/1707881324063723583/phot
 
 The GOP-controlled state Senate recently passed a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=224">bill</a> 45-2 that would move the primary date to March 19, 2024. (Three lawmakers in the 50-member chamber did not vote).
 
-A committee in the Democratic-controlled state House is expected to soon consider a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1634">bill</a> that would move the date to April 2, 2024.
+The Democratic-controlled state House, meanwhile, passed its own <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1634">bill</a> along party lines that would move the date to April 2, 2024.
 
 ## What happens next?
 
-The state House may choose to take up the measure passed by the state Senate for consideration, or the chamber may choose to advance its own legislation.
+That’s unclear.
+
+The state House’s April 2 bill has been sent to the state Senate for consideration. Republican leaders in that chamber have yet to comment on whether they will bring it up for a vote.
+
+It’s also possible that March 19 could once again be on the table in new or amended legislation.
 
 Gov. Josh Shapiro, a Democrat, <a href="https://www.inquirer.com/politics/election/pa-primary-date-presidential-2024-20230919.html">supports</a> moving the primary but hasn’t publicly backed a specific date.
 
