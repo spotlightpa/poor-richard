@@ -1,7 +1,7 @@
 +++
 authors = ["Elizabeth Estrada"]
 blurb = "Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
-byline = "Jane Doe"
+byline = "Elizabeth Estrada"
 extended-kicker = "2023"
 image = "2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
 image-credit = "Daniel Fishel / for Spotlight PA"
