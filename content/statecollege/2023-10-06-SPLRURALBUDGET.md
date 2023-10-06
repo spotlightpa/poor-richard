@@ -4,7 +4,6 @@ blurb = "Rural Pennsylvania is expected to benefit from an expanded property tax
 byline = "Marley Parish of Spotlight PA State College"
 description = "Rural Pennsylvania is expected to benefit from an expanded property tax rebate for older people and millions for agriculture."
 image = "2023/10/01jh-xz7w-w9n5-vynp.jpeg"
-image-caption = "Budget"
 image-credit = "Georgianna Sutherland / For Spotlight PA"
 image-description = "A street in Tyrone, a borough in Blair County, Pennsylvania."
 internal-id = "SPLRURALBUDGET"
