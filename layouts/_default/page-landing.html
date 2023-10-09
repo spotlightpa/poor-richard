@@ -47,13 +47,14 @@
 
     {{ .Page.RenderString (.Param "testimonials-group") }}
 
+    {{ with .Page.RenderString (.Param "supplemental") }}
 
-    <article
-      class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
-    >
-      {{ .Page.RenderString (.Param "supplemental") }}
-    </article>
-
+      <article
+        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+      >
+        {{ . }}
+      </article>
+    {{ end }}
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
