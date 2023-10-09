@@ -6,7 +6,7 @@
 >
   <!-- PANEL NAVIGATION -->
   <button
-    class="absolute left-0 top-0 z-20 h-full w-16 text-6xl text-white"
+    class="absolute left-0 top-0 z-20 h-full w-16 text-6xl text-g-1"
     type="button"
     @click="prev()"
     :aria-disabled="atBeginning"
@@ -49,7 +49,7 @@
           x-show="isSelected($el)"
           role="tabpanel"
           class="
-            relative grid max-h-[640px] w-screen min-w-full grid-flow-row grid-cols-8 grid-rows-3 gap-3 overflow-x-hidden bg-g-7 before:z-10
+            relative grid max-h-[768px] w-screen min-w-full grid-flow-row grid-cols-8 grid-rows-3 gap-3 overflow-x-hidden bg-g-7 before:z-10
             before:col-span-8 before:col-start-1 before:row-span-3 before:row-start-1 before:bg-black/80 before:bg-blend-overlay md:grid-cols-14 md:gap-5
           "
         >
