@@ -31,8 +31,8 @@ export default function readMore(showDate = false) {
 
       let hrefs = new Set(
         Array.from(this.$refs.root.querySelectorAll("a")).map(
-          (el) => el.pathname
-        )
+          (el) => el.pathname,
+        ),
       );
       hrefs.add(window.location.pathname);
 

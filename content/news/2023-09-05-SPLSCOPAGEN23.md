@@ -8,6 +8,7 @@ image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center."
 internal-id = "SPLSCOPAGEN23"
 kicker = "Elections"
+linktitle = "A complete guide to the candidates for state Supreme Court"
 modal-exclude = false
 published = 2023-09-05T05:00:00-04:00
 series = ["Voting Guides 2023"]
@@ -15,7 +16,7 @@ slug = "pennsylvania-election-2023-supreme-court-candidates"
 suppress-date = false
 title = "Pa. election 2023: A complete guide to the candidates for state Supreme Court"
 title-tag = "PA Supreme Court election guide 2023"
-topics = ["Education"]
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

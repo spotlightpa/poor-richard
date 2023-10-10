@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-s-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8
+  class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-g-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8
   "
   x-data="{ active: false }"
   @focusin="active = true"
@@ -34,7 +34,7 @@
         required
       />
       <span
-        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-s-4"
+        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">

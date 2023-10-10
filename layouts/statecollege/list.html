@@ -2,15 +2,10 @@
   <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
 {{ end }}
 {{ define "body-class" }}
-  text-[16px] bg-beige font-serif leading-normal text-s-9
+  text-[16px] bg-beige font-serif leading-normal text-g-9
 {{ end }}
 {{ define "body-attributes" }}
   data-sf-campaign="701Dn000000Ygq1IAC" data-sf-theme="statecollege"
-{{ end }}
-
-{{ define "static-head" }}
-  {{ partial "header/css-tw-rale.html" . }}
-  {{ partialCached "header/static-tw.html" . }}
 {{ end }}
 
 {{ define "main" }}

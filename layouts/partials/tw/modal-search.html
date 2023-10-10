@@ -15,7 +15,7 @@
   aria-modal="true"
   aria-labelledby="{{ $idSearch }}"
 >
-  <div class="absolute inset-0 bg-s-4 opacity-75"></div>
+  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div class="absolute inset-0 backdrop-blur-sm backdrop-filter"></div>
   <div class="absolute inset-1 flex overflow-y-auto">
     <div
@@ -24,7 +24,7 @@
         flex h-3/4 w-full
         max-w-prose flex-col overflow-hidden
         rounded-lg text-center
-        font-sans text-s-9 shadow-lg
+        font-sans text-g-9 shadow-lg
       "
       @click.outside="isOpen = false"
       @keydown.escape="isOpen = false"
@@ -38,7 +38,7 @@
         </h2>
         <p class="absolute inset-y-0 right-0 flex items-center p-4">
           <button
-            class="group flex rounded-full text-s-4 hover:text-yellow"
+            class="group flex rounded-full text-g-4 hover:text-yellow"
             type="button"
             aria-label="close"
             x-ref="closer"
