@@ -1,4 +1,5 @@
 +++
+aliases = ["/court-tool/", "/courttool/"]
 authors = ["Elizabeth Estrada"]
 blurb = "From abortion to the death penalty to education, Pennsylvania judges regularly shape, define, and affect policies on hot-button topics."
 byline = "Elizabeth Estrada"

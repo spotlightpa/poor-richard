@@ -64,7 +64,7 @@ promo="""
     hed="See how electing judges affects you and the issues you care about most"
     dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
     cta="Use the tool →"
-    link="/news/2023/10/court-tool/"
+    link="/court-tool/"
 >}}
 """
 form ="""
