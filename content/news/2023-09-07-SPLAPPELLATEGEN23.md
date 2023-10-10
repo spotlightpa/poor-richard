@@ -8,6 +8,7 @@ image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The exterior of the Pennsylvania Judicial Center."
 internal-id = "SPLAPPELLATEGEN23"
 kicker = "Elections"
+linktitle = "A complete guide to the candidates for Commonwealth and Superior Courts"
 modal-exclude = false
 published = 2023-09-07T05:00:00.647-04:00
 series = ["Voting Guides 2023"]

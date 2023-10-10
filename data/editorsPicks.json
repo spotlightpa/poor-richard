@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-10-06-SPLRURALBUDGET.md"
+    "content/news/2023-10-10-SPLRGGIMEMO.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-09-29-SPLSTATEPARKSFUNDING.md"
+    "content/news/2023-07-25-SPLHYDPRI.md",
+    "content/news/2023-05-24-SPLWELCAP.md"
   ],
   "topSlots": [
-    "content/news/2023-10-05-SPLNEWSQUIZOCT2.md",
-    "content/news/2023-10-05-SPLPRIMMOVE.md",
-    "content/statecollege/2023-10-04-SPLSUPNEWCH.md"
+    "content/news/2023-10-09-SPLNOV24FULLGU.md",
+    "content/statecollege/2023-10-06-SPLRURALBUDGET.md",
+    "content/news/2023-10-05-SPLPRIMMOVE.md"
   ],
   "topper": []
 }

@@ -8,6 +8,7 @@ image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center."
 internal-id = "SPLSCOPAGEN23"
 kicker = "Elections"
+linktitle = "A complete guide to the candidates for state Supreme Court"
 modal-exclude = false
 published = 2023-09-05T05:00:00-04:00
 series = ["Voting Guides 2023"]
