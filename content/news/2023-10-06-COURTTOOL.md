@@ -1,6 +1,6 @@
 +++
 authors = ["Elizabeth Estrada"]
-blurb = "Use this interactive tool to discover how the judges you elect have a direct impact on the issues that matter most to you, including abortion, civil liberties, and education."
+blurb = "From abortion to the death penalty to education, Pennsylvania judges regularly shape, define, and affect policies on hot-button topics."
 byline = "Elizabeth Estrada"
 extended-kicker = "2023"
 image = "2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
@@ -9,8 +9,10 @@ image-description = "Gavel with election topics in the background"
 kicker = "Elections"
 layout = "custom-court-tool"
 published = 2023-10-06T05:00:00-04:00
-slug = "court-tool"
-title = "Why Judges Matter"
+slug = "pennsylvania-judges-supreme-superior-commonwealth-court-interactive-tool"
+title = "See how electing judges affects you and the issues you care about most"
+title-tag = "Why the PA judges you elect this November matter"
+description = "Use this interactive tool to discover how Pennsylvania judges shape policies on abortion, education, and more."
 topics = ["Elections"]
 series = []
 credits = """
