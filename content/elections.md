@@ -57,10 +57,14 @@ credits = """
     email="jrummel@spotlightpa.org"
 >}}
 """
-donate ="""
-{{<donate-slim
-    title="Help Empower Voters. Support Our Vital Election Coverage."
-    cta="Donate"
+promo="""
+{{<featured/promo
+    id="court-tool"
+    image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
+    hed="See how electing judges affects you and the issues you care about most"
+    dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
+    cta="Use the tool →"
+    link="/court-tool/"
 >}}
 """
 form ="""
@@ -132,20 +136,24 @@ sidebar = """
   {{</sidebar-links>}}
 {{</landing-sidebar>}}
 """
+donate ="""
+{{<donate-slim
+    title="Help Empower Voters. Support Our Vital Election Coverage."
+    cta="Donate"
+>}}
+"""
 
 [[internal-links]]
 title = "Voter Guides"
 link = "guides"
 
+[[internal-links]]
+title = "Issues"
+link = "court-tool"
 
 [[internal-links]]
 title = "Election Event Series"
 link = "events"
-
-# [[internal-links]]
-# title = "Issues"
-# link = "issues"
-
 
 [[internal-links]]
 title = "Coverage"

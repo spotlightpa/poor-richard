@@ -1,0 +1,64 @@
+<article class="bg-white text-lg leading-relaxed">
+  {{ .Content }}
+</article>
+
+{{ $elex := site.GetPage "content/series/pa-courts-101/_index.md" }}
+
+{{ $pages := $elex.RegularPages }}
+{{ $primary := (time "2023-08-01").Unix }}
+{{ $courts := where $elex.RegularPages
+  ".PublishDate.Unix" "gt" $primary
+}}
+{{ if $courts }}
+
+  <section
+    class="bg-white px-6 py-8"
+    id="coverage"
+    data-ga-category="coverage"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+  >
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "How each court works"
+      "eyebrow" "rubric"
+      "pages" $courts
+      "rows" 1
+      )
+    }}
+  </section>
+{{ end }}
+{{ $vet := site.GetPage "content/series/vetting-candidates/_index.md" }}
+{{ $primary := (time "2023-08-01").Unix }}
+{{ $vetCand := where $vet.RegularPages
+  ".PublishDate.Unix" "gt" $primary
+}}
+{{ if $vetCand }}
+  <section
+    class="bg-white px-6 py-8 md:py-16"
+    id="espan"
+    data-ga-category="espanol"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+  >
+    {{ partial "tw/list-3-col-story.html" (dict
+      "hed" "How to vet the candidates"
+      "pages" $vetCand
+      "eyebrow" "rubric"
+      "rows" 1
+      )
+    }}
+  </section>
+{{ end }}
+
+
+<section
+  class="bg-white p-6"
+  id="credits"
+  data-ga-category="credits"
+  x-data
+  x-intersect.half="$dispatch('intersect:about', $el.id)"
+>
+  <div class="space-y-12 py-8">
+    {{ .Page.RenderString (.Param "credits") }}
+  </div>
+</section>
