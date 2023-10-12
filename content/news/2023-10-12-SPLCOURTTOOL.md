@@ -1,5 +1,5 @@
 +++
-aliases = ["court-tool", "courttool"]
+aliases = ["court-tool", "courttool", "whyjudgesmatter"]
 authors = ["Elizabeth Estrada"]
 blurb = "From abortion to the death penalty to education, Pennsylvania judges regularly shape, define, and affect policies on hot-button topics."
 byline = "Elizabeth Estrada"
@@ -529,7 +529,7 @@ The decision [was not appealed](https://www.inquirer.com/education/pa-school-fun
 As of September 2023, state lawmakers are holding hearings to explore funding disparities, and have [generally broken along party lines over the best way to address school funding](https://www.spotlightpa.org/news/2023/09/pennsylvania-public-school-education-funding-unconstitutional-hearings/), with Democrats in favor of additional money in education, and Republicans favoring strategies that push responsibility for education to the private sector, [as in the use of school vouchers](https://www.spotlightpa.org/news/2023/06/pa-school-choice-voucher-budget-explain-history-tax-credit/).{{</custom/courts-item>}}
 {{</custom/courts-items>}}
 
-<h2 class="mx-auto max-w-screen-xl px-5 pt-5 text-4xl font-black text-s-9">Select a topic to see the impact of the courts:</h2>
+<h2 class="mx-auto max-w-screen-xl px-5 pt-5 text-2xl font-black text-s-9 md:text-4xl">Select a topic to see the impact of the courts:</h2>
 
 <ul class="grid grid-cols-2 gap-6 px-5 max-w-screen-xl mx-auto mt-10 pb-10 sm:grid-cols-3 md:grid-cols-4 md:gap-5">
 
