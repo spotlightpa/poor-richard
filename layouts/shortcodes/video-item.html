@@ -1,40 +1,22 @@
 {{ $inner := .Get "body" }}
-{{ $law := .Get "law" }}
-{{ $width := .Get "width" | int }}
-{{ $height := .Get "height" | int }}
-{{ $pb := slice $width $height | partial "helper/aspect-ratio" }}
-{{ $caption := .Get "caption" | default "No caption" }}
+<!-- TODO: Remove hardcoded ID -->
+{{ $playerID := .Get "id" | default "562400724" }}
 
 
 <figure
   class="mx-auto md:max-w-5xl"
-  x-data="{ onScreen: false, splPlayer: null }"
-  x-init="
-    splPlayer = new Vimeo.Player(
-      $refs.splVideo, {
-        id: $refs.splVideo.dataset.dataVimeoId,
-        height: 576,
-        responsive: true,
-        loop: true,
-        controls: false,
-        title: 0,
-        sidedock: 0,
-        muted: true,
-      }
-    );
-    splPlayer.setVolume(0);
-  "
+  x-data="scrollVimeo"
   x-intersect="onScreen = true"
   x-intersect:leave="onScreen = false"
 >
   <div class="lg:-mx-32 xl:-mx-48">
-    <span x-text="onScreen"></span>
     <div
       x-ref="splVideo"
-      x-intersect="splPlayer.play()"
-      x-intersect:leave="splPlayer.pause()"
       class="relative mx-auto h-0 w-full pb-16x9"
-      data-vimeo-id="562400724"
+      x-intersect="play()"
+      x-intersect:leave="pause()"
+      data-vimeo-id="{{ $playerID }}"
+      data-vimeo-defer
     ></div>
   </div>
   {{ if $inner }}
