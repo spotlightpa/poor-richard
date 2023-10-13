@@ -1,17 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-10-12-SPLTOOLINTRO.md"
+    "content/statecollege/2023-10-12-SPLSNOWSHOE.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-09-SPLNOV24FULLGU.md",
-    "content/news/2023-10-12-SPLSCOPA101.md",
-    "content/news/2023-10-12-SPLSUP101.md",
-    "content/news/2023-10-12-SPLCOMM101.md"
+    "content/statecollege/2023-10-06-SPLRURALBUDGET.md"
   ],
   "topSlots": [
-    "content/statecollege/2023-10-12-SPLSNOWSHOE.md",
-    "content/statecollege/2023-10-11-SPLPSUCOUNSEL.md",
-    "content/news/2023-10-12-SPLNEWSQUIZOCT9.md"
+    "content/news/2023-10-12-SPLNEWSQUIZOCT9.md",
+    "content/news/2023-10-12-SPLTOOLINTRO.md",
+    "content/statecollege/2023-10-11-SPLPSUCOUNSEL.md"
   ],
   "topper": []
 }
