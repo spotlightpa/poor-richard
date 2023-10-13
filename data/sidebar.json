@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "backgroundColor": "#f5f5f5",
+      "label": "election 2023",
+      "labelColor": "#ff6c36",
+      "linkColor": "#000000",
+      "page": "content/news/2023-10-12-SPLCOURTTOOL.md"
+    },
+    {
       "backgroundColor": "#000000",
       "label": "Editor’s Pick",
       "labelColor": "#ffcb03",
@@ -13,13 +20,6 @@
       "labelColor": "#ff6c36",
       "linkColor": "#000000",
       "page": "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
-    },
-    {
-      "backgroundColor": "#000000",
-      "label": "State College bureau",
-      "labelColor": "#99d9f1",
-      "linkColor": "#f5f5f5",
-      "page": "content/statecollege/2023-07-19-SPLPSUSURVEY.md"
     },
     {
       "backgroundColor": "#000000",
