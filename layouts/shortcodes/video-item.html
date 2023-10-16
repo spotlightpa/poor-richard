@@ -3,12 +3,7 @@
 {{ $playerID := .Get "id" | default "562400724" }}
 
 
-<figure
-  class="mx-auto md:max-w-5xl"
-  x-data="scrollVimeo"
-  x-intersect="onScreen = true"
-  x-intersect:leave="onScreen = false"
->
+<figure class="mx-auto md:max-w-5xl" x-data="scrollVimeo">
   <div class="lg:-mx-32 xl:-mx-48">
     <div
       x-ref="splVideo"
@@ -20,16 +15,17 @@
     ></div>
   </div>
   {{ if $inner }}
-    <figcaption class="mb-8 mt-3 md:mb-24 md:mt-8">
+    <figcaption
+      x-data="{ onScreen: false }"
+      x-intersect.half="onScreen = true"
+      class="mb-8 mt-3 md:mb-24 md:mt-8"
+    >
       <p
         class="text-s-8 flex items-center px-2 text-xl leading-none md:text-2xl"
         x-show="onScreen"
-        x-transition:enter="transition ease-out duration-700 delay-1000"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"
-        x-transition:leave="transition ease-in duration-500"
-        x-transition:leave-start="opacity-100"
-        x-transition:leave-end="opacity-0"
+        x-transition:enter="transition-all ease-out duration-1000 delay-700"
+        x-transition:enter-start=" opacity-0"
+        x-transition:enter-end="opacity-1"
       >
         {{ $inner | markdownify }}
       </p>
