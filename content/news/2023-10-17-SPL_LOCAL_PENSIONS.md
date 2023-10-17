@@ -70,8 +70,6 @@ Bryan Vescio previously worked at Vescio Asset Management, SEC records show. He 
 
 &lt;Chart: <a href="https://www.datawrapper.de/_/Gi3HD/">How much local governments received</a>&gt;
 
-<img src="https://lh7-us.googleusercontent.com/OId6m2WKWgBcqgsYT2uCenEqds3sVnzgi8LZ2YUFUODjyd8dibOxbJ7J0DhYcbDergsKDXbxEWNd_-0FUyZCIZxqUJ-hQ4ueJKq_9JUu9VyN-WOOFaaOCE1oJIKSmUmOKWsam4wzrRB0htnfHbcu6pHISXHrxMIF" title="" alt="" data-oid="kix.38ptgpkrq59o"/>
-
 ## Business as usual
 
 In Somerset County, officials acknowledged continuing to work directly with William Vescio after the SEC sanctions, but said they did so “not without concern.” They also said that they didn’t inform the public about the county’s relationship to the federal order and the payments. In response to an open records request for related notifications to retirees, employees, and others, the county replied that it had no such documents.
@@ -88,7 +86,9 @@ In northeastern Pennsylvania, Wyoming County officials signed a contract with VA
 
 Spotlight PA first requested records from the county related to William Vescio on May 8, and sent a detailed list of findings and questions to Wyoming County officials July 5. A letter obtained through a Right-to-Know request and dated <a href="https://www.documentcloud.org/documents/23990906-vescio-termination-letter-4-1?responsive=1&amp;title=1">July 13</a> shows county retirement officials voted to terminate the relationship with VAM Group. The letter — addressed to William Vescio at VAM Group and reading “Dear Bill and Associates” — did not state a reason.
 
-In response to questions from Spotlight PA, officials in Tioga and Wyoming declined to say whether they ever informed the public about their connection to the SEC order or the payments from William Vescio. Tioga and Wyoming counties responded to open records requests for related notifications to retirees, employees, and others by saying it didn’t have any such documents.
+In response to questions from Spotlight PA, officials in Tioga and Wyoming declined to say whether they ever informed the public about their connection to the SEC order or the payments from William Vescio. Tioga and Wyoming counties responded to open records requests for related notifications to retirees, employees, and others by saying they didn’t have any such documents.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 Monongahela, a city in Washington County, handed over pension records to Spotlight PA only after twice being ordered to produce them by the state Office of Open Records following the news organization’s public records requests.
 
@@ -105,6 +105,11 @@ But in a <a href="https://www.documentcloud.org/documents/23990911-economy_termi
 The letter didn’t explain why borough officials were citing actions by the SEC more than three years after the agency issued its order against William Vescio. The records provided by the borough included a <a href="https://www.documentcloud.org/documents/24002445-economy-letter?responsive=1&amp;title=1">2022 letter</a> in which William Vescio described the SEC settlement and making payments as part of it in prior years, along with a copy of a 2022 check.
 
 An attorney for the borough, Joseph Askar, declined to elaborate on the reasoning. In emails, he told Spotlight PA that council members “moved on from the Vescios” and decided to “go in a different direction.”
+
+<iframe title="Following the Payments" aria-label="Bar Chart" id="datawrapper-chart-Gi3HD" src="https://datawrapper.dwcdn.net/Gi3HD/14/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="453" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+&lt;Chart: <a href="https://www.datawrapper.de/_/gmJgn/">Total pension systems by state</a> &gt;
 
 ## A debate over enforcement
 
@@ -128,16 +133,7 @@ Hauptman said officials overseeing pensions “should have a high level of sophi
 
 The William Vescio case raises questions of whether local officials lived up to their responsibilities to protect participants in the plans, he said.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
 Across the state, many other local officials have similar responsibilities. Pennsylvania has more than 1,500 local public pension systems, more than any other state in the country.
-
-<iframe title="Following the Payments" aria-label="Bar Chart" id="datawrapper-chart-Gi3HD" src="https://datawrapper.dwcdn.net/Gi3HD/14/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="453" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-
-&lt;Chart: <a href="https://www.datawrapper.de/_/gmJgn/">Total pension systems by state</a> &gt;
-
-<img src="https://lh7-us.googleusercontent.com/S9HUR3fiBYZIquc9B7kXixRSjYfGSeZQHbjD1SsMGUEEWIu1h9fVhabipZu1buHyARt7t5LU7ftFAB_Fn3YN4j7neVK6nJfspOmbq31R4YZ2rBzdm6uXr51fGoyCrmk4GhA3KW4-7v_Zpkr49Lr9I0rcZrIFtqti" title="" alt="" data-oid="kix.h7sweof4v8sv"/>
 
 “Often there’s a price to pay by trying to provide all these individualized, often very small services,” said Christopher Borick, a political science professor at Muhlenberg College in Lehigh County. “It provides many more opportunities for mismanagement, potential fraud, and problems.”
 
