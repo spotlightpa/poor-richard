@@ -58,12 +58,11 @@
                 >{{ .dateVerbose }}</time
               >
               <p class="font-base">{{ .dek }}</p>
-              {{ with .registration }}
+              {{ if .registration }}
                 <p class="my-4 font-sans text-sm tracking-wide">
                   <a class="btn-signup" href="{{ . }}">Register</a>
                 </p>
-              {{ end }}
-              {{ with .link }}
+              {{ else if .link }}
                 <p class="my-4 font-sans text-sm tracking-wide">
                   <a class="btn-signup" href="{{ . }}">Watch</a>
                 </p>
