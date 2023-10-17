@@ -180,11 +180,10 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
 [[blocks.entries]]
 hed="Court Primer"
-dek="Join Spotlight PA on Oct. 12 to learn more about the candidates running for state Supreme Court and more, and what these elections will mean for you."
+dek="Spotlight PA held a live event about the candidates running for state Supreme Court and more, and what these elections will mean for you."
 date="2023-10-12"
 dateVerbose="Oct. 12, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
-registration="https://zoom.us/webinar/register/WN_YOXkhwI5SHSHQCCoc-OJNA"
 
 [[blocks.entries]]
 hed="Voter Ready"
