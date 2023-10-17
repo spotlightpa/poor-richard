@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-10-16-SPLMAGENGUI.md"
+    "content/news/2023-10-17-SPL_LOCAL_PENSIONS.md"
   ],
-  "subfeatures": [
-    "content/news/2023-10-09-SPLNOV24FULLGU.md",
-    "content/news/2023-09-05-SPLSCOPAGEN23.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2023-10-16-SPLMAGENGUI.md",
     "content/news/2023-10-13-SPLVESETT.md",
-    "content/news/2023-10-12-SPLTOOLINTRO.md",
-    "content/statecollege/2023-10-12-SPLSNOWSHOE.md"
+    "content/news/2023-10-12-SPLTOOLINTRO.md"
   ],
   "topper": []
 }
