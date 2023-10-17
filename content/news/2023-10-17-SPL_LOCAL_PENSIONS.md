@@ -25,7 +25,7 @@ That includes three counties and at least two municipal systems that received pa
 
 The SEC case and the lack of transparency from local government agencies afterward highlights how these systems make crucial decisions about people’s finances and retirement funds, but often face little public scrutiny.
 
-The U.S. Securities and Exchange Commission alleged William Vescio caused clients to invest in a class of shares with higher fees, most of which he received, instead of a lower-cost option. For some clients, federal authorities alleged William Vescio negligently failed to disclose information and those “inaccurate disclosures gave the misleading impression that the overall fees were lower than they actually were.”
+The U.S. Securities and Exchange Commission alleged William Vescio caused clients to invest in a class of mutual fund shares with higher fees, most of which he received, instead of a lower-cost option. For some clients, federal authorities alleged William Vescio negligently failed to disclose information and those “inaccurate disclosures gave the misleading impression that the overall fees were lower than they actually were.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -41,13 +41,17 @@ The commission’s allegations focused on his practices for disclosing fees. Its
 
 For two clients who explicitly requested he disclose the fees charged, the order alleged he negligently failed to disclose information about a type of compensation known as 12b-1 fees. The agency alleged William Vescio “excluded 12b-1 fees from all reports for a number of months” for a client that required quarterly fee reports. For another client, he “reported a purported total fee amount that failed to include 12b-1 fees,” the agency’s order said.
 
+The agency said 12b-1 fees vary by share class. Its order alleged he placed clients in a class of shares with higher 12b-1 fees and did not provide them the option of investing in a different class.
+
 In a written statement to Spotlight PA, William Vescio defended his practices and referred to the issue as an “Administrative oversight.” He said clients’ assets were held on a brokerage platform with a choice in how fees were structured, and each prospective client was sent a “proposal showing the fee calculations for both procedures.”
 
 William Vescio said, at the time of an SEC enforcement initiative, he believed the agency considered the following a violation: brokerage firms charging an upfront management fee while also having investments with additional 12b-1 fees.
 
-“Since that was not the case with my clients, I had no concern that I was in violation of any SEC orders,” he said. “In my experience over forty years managing public pension plans, my clients were not being charged more than industry standards in that the total fund fees covered custodial, trading and investment consulting costs.”
+“Since that was not the case with my clients, I had no concern that I was in violation of any SEC orders,” he said. The agency’s order said his compensation consisted exclusively of 12b-1 fees, and he did not receive commissions for trades or investment advisory fees from clients.
 
-William Vescio said he agreed to the 2020 settlement after years of discussions and at the advice of his attorneys because of his age. In describing the settlement terms, he noted multiple items that were favorable to him. He emphasized that he neither admitted nor denied guilt in the settlement, and he described an agreement that “No intentional fraud charges will be alleged, negligence-based only.” The order also didn’t bar or suspend him from working as an investment adviser.
+“In my experience over forty years managing public pension plans, my clients were not being charged more than industry standards in that the total fund fees covered custodial, trading and investment consulting costs,” Vescio wrote.
+
+William Vescio said he agreed to the 2020 settlement after years of discussions and at the advice of his attorneys because of his age. In describing the settlement terms, he noted multiple items that were favorable to him. He emphasized that he neither admitted nor denied guilt in the settlement. He also described the agreement as providing that “No intentional fraud charges will be alleged” and that the alleged charges would be “negligence-based only.” The order also didn’t bar or suspend him from working as an investment adviser.
 
 An attorney for William Vescio, John Caputo, told Spotlight PA that his client was not in a category of financial representatives who were “double dipping” by, for instance, receiving both 12b-1 fees and management fees for investments.
 
@@ -59,7 +63,7 @@ In his statement, William Vescio highlighted his company’s relationship to the
 
 William Vescio, 70, said he’s retired now, that his son, Bryan Vescio, is the sole owner of a separate company, VAM Group. William Vescio said that while he does “do some consulting” for VAM Group, he has “no investment or management relationship with the firm.”
 
-At least two letters obtained by Spotlight PA to VAM Group identify William Vescio, and VAM Group has used the same mailing address, email domain, website, and at least one phone number that Vescio Asset Management used, public records obtained by Spotlight PA show.
+At least two letters obtained by Spotlight PA to VAM Group reference William Vescio in connection with that company, and VAM Group has used the same mailing address, email domain, website, and at least one phone number that Vescio Asset Management used, public records obtained by Spotlight PA show.
 
 In his statement, William Vescio said, since Bryan Vescio “inherited some of my clients that I have known for over twenty plus years, they still occasionally incorrectly refer inquiries and information to me in correspondence.”
 
@@ -67,8 +71,6 @@ Bryan Vescio previously worked at Vescio Asset Management, SEC records show. He 
 
 <iframe title="Following the Payments" aria-label="Bar Chart" id="datawrapper-chart-Gi3HD" src="https://datawrapper.dwcdn.net/Gi3HD/14/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="453" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
-
-&lt;Chart: <a href="https://www.datawrapper.de/_/Gi3HD/">How much local governments received</a>&gt;
 
 ## Business as usual
 
@@ -82,13 +84,13 @@ Since the SEC order, Somerset County officials have changed how they manage over
 
 Officials in Tioga County in north-central Pennsylvania signed a new contract with <a href="https://www.documentcloud.org/documents/23990910-vescio_asset_management_tioga?responsive=1&amp;title=1">Vescio Asset Management in February 2021</a>. They then signed a contract with <a href="https://www.documentcloud.org/documents/23990907-vam_group_tioga?responsive=1&amp;title=1">VAM Group in December 2022</a>. Meeting minutes from as recently as July show Tioga County’s retirement board approving a payment for VAM Group. Through an attorney, Tioga County officials refused to be interviewed or answer questions for this story.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
 In northeastern Pennsylvania, Wyoming County officials signed a contract with VAM Group in <a href="https://www.documentcloud.org/documents/24002849-wyoming-county-contract?responsive=1&amp;title=1">December 2022.</a> Richard Wilbur, chair of the Wyoming County Board of Commissioners, told Spotlight PA in a July email that “we have handled the problem in a fiduciary manner and other than that, we have no comment.”
 
 Spotlight PA first requested records from the county related to William Vescio on May 8, and sent a detailed list of findings and questions to Wyoming County officials July 5. A letter obtained through a Right-to-Know request and dated <a href="https://www.documentcloud.org/documents/23990906-vescio-termination-letter-4-1?responsive=1&amp;title=1">July 13</a> shows county retirement officials voted to terminate the relationship with VAM Group. The letter — addressed to William Vescio at VAM Group and reading “Dear Bill and Associates” — did not state a reason.
 
 In response to questions from Spotlight PA, officials in Tioga and Wyoming declined to say whether they ever informed the public about their connection to the SEC order or the payments from William Vescio. Tioga and Wyoming counties responded to open records requests for related notifications to retirees, employees, and others by saying they didn’t have any such documents.
-
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 Monongahela, a city in Washington County, handed over pension records to Spotlight PA only after twice being ordered to produce them by the state Office of Open Records following the news organization’s public records requests.
 
@@ -108,17 +110,15 @@ An attorney for the borough, Joseph Askar, declined to elaborate on the reasonin
 
 <iframe title="A National Outlier" aria-label="Map" id="datawrapper-chart-gmJgn" src="https://datawrapper.dwcdn.net/gmJgn/15/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="615" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-&lt;Chart: <a href="https://www.datawrapper.de/_/gmJgn/">Total pension systems by state</a> &gt;
-
 ## A debate over enforcement
 
 In recent years, the SEC has disciplined many investment advisers over alleged failures to adequately disclose information related to fees. The agency has said, “investor harm involving this lack of disclosure may be widespread.” A self-reporting initiative ultimately led the SEC to order nearly 100 investment advisory firms to return more than $139 million to investors, according to <a href="https://www.sec.gov/files/enforcement-annual-report-2020.pdf">a 2020 report</a>.
 
-Advocates for the financial services industry and their allies have pushed back on the commission’s enforcement efforts, writing <a href="https://financialservices.org/wp-content/uploads/2020/04/Petition-for-Rulemaking-End-Backdoor-Regulation-20200429.pdf?utm_source=cision&amp;utm_medium=press_release">in a petition that the actions are an overreach of the commission’s authority</a> and that the SEC unfairly “proclaimed that virtually every investment adviser had been violating federal law, presumably for decades” based on the enforcement division’s opinion of what disclosures should contain.
+Advocates for the financial services industry and their allies have pushed back on the commission’s enforcement efforts, <a href="https://financialservices.org/wp-content/uploads/2020/04/Petition-for-Rulemaking-End-Backdoor-Regulation-20200429.pdf?utm_source=cision&amp;utm_medium=press_release">writing in a petition formally asking the SEC to implement a rule to end the “back door” regulation of the actions and describing them as an overreach of the commission’s authority.</a> The petition argued that the SEC unfairly “proclaimed that virtually every investment adviser had been violating federal law, presumably for decades” based on the enforcement division’s opinion of what disclosures should contain.
 
 The petition was filed prior to the SEC’s order against William Vescio and doesn’t make any reference to him. But the petition deals with similar alleged disclosure violations, and it described the enforcement efforts as an “unfair surprise.”
 
-While also not commenting on William Vescio’s case, a <a href="https://www.sec.gov/comments/4-761/4761-7312664-218287.pdf">representative for the Consumer Federation of America</a> countered that the SEC’s efforts were “laudable,” and said the agency “has simply been engaged in enforcing well-established and long-recognized fiduciary obligations … including the obligations to act in the best interests of the client.”
+While also not commenting on William Vescio’s case, a <a href="https://www.sec.gov/comments/4-761/4761-7312664-218287.pdf">representative for the Consumer Federation of America</a> countered that the SEC’s efforts on this topic were “laudable,” and said the agency “has simply been engaged in enforcing well-established and long-recognized fiduciary obligations … including the obligations to act in the best interests of the client.”
 
 David Chase, a former SEC attorney who practices in Florida, said if the alleged conduct occurred as the SEC described it in William Vescio’s case, then “it’s not exemplary conduct” and “it shouldn’t have happened.”
 
@@ -139,3 +139,4 @@ Across the state, many other local officials have similar responsibilities. Penn
 “They do fly under the radar,” he added.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+
