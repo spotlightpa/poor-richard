@@ -106,9 +106,6 @@ The letter didn’t explain why borough officials were citing actions by the SEC
 
 An attorney for the borough, Joseph Askar, declined to elaborate on the reasoning. In emails, he told Spotlight PA that council members “moved on from the Vescios” and decided to “go in a different direction.”
 
-<iframe title="Following the Payments" aria-label="Bar Chart" id="datawrapper-chart-Gi3HD" src="https://datawrapper.dwcdn.net/Gi3HD/14/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="453" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-
 &lt;Chart: <a href="https://www.datawrapper.de/_/gmJgn/">Total pension systems by state</a> &gt;
 
 ## A debate over enforcement
