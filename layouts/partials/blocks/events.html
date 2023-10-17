@@ -63,6 +63,12 @@
                   <a class="btn-signup" href="{{ . }}">Register</a>
                 </p>
               {{ end }}
+              {{ with .link }}
+                <p class="my-4 font-sans text-sm tracking-wide">
+                  <a class="btn-signup" href="{{ . }}">Watch</a>
+                </p>
+              {{ end }}
+
             </article>
           {{ end }}
         {{ end }}
