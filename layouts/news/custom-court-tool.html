@@ -1,0 +1,35 @@
+{{ define "body-class" }}
+  w-screen overflow-x-hidden bg-beige font-serif leading-normal text-[16px]
+{{ end }}
+{{ define "html-class" -}}
+  scroll-smooth
+{{- end }}
+
+{{ define "body-attributes" }}
+  data-ga-category="featured" data-sf-campaign="701Dn000000YgpDIAS"
+{{ end }}
+
+{{ define "header" }}
+  <header data-ga-category="header">
+    {{ block "banner" . }}
+      {{ if .Param "banner-active" }}
+        {{ partialCached "tw/banner.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "nav" . }}
+      {{ partial "tw/nav.html" . }}
+    {{ end }}
+    {{ block "topper" . }}
+      {{ if .Param "topper-active" }}
+        {{ partialCached "tw/promo-topper.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "promo" . }}
+      {{ partialCached "tw/promo-header.html" $ }}
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "tw/main-court-tool.html" . }}
+{{ end }}

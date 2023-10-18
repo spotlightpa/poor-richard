@@ -28,39 +28,39 @@ To help you prepare for Election Day 2023 in Pennsylvania, we’ve answered some
 
 ### Election Day 2023 FAQ:
 
-1. <a href="#spl-heading-1">When is the 2023 Election Day in Pennsylvania?</a>
+- <a href="#spl-heading-1">When is the 2023 Election Day in Pennsylvania?</a>
 
-2. <a href="#spl-heading-2">When do polls open for Pennsylvania’s 2023 election?</a>
+- <a href="#spl-heading-2">When do polls open for Pennsylvania’s 2023 election?</a>
 
-3. <a href="#spl-heading-3">When is the last day to register to vote?</a>
+- <a href="#spl-heading-3">When is the last day to register to vote?</a>
 
-4. <a href="#spl-heading-4">How can I check my registration?</a>
+- <a href="#spl-heading-4">How can I check my registration?</a>
 
-5. <a href="#spl-heading-5">How do I change parties?</a>
+- <a href="#spl-heading-5">How do I change parties?</a>
 
-6. <a href="#spl-heading-6">I’m a registered independent. Can I still vote on Nov. 7?</a>
+- <a href="#spl-heading-6">I’m a registered independent. Can I still vote on Nov. 7?</a>
 
-7. <a href="#spl-heading-7">How do I find my polling place?</a>
+- <a href="#spl-heading-7">How do I find my polling place?</a>
 
-8. <a href="#spl-heading-8">What else do I need to know to vote in person?</a>
+- <a href="#spl-heading-8">What else do I need to know to vote in person?</a>
 
-9. <a href="#spl-heading-9">Can I still request a mail ballot?</a>
+- <a href="#spl-heading-9">Can I still request a mail ballot?</a>
 
-10. <a href="#spl-heading-10">How do I vote absentee?</a>
+- <a href="#spl-heading-10">How do I vote absentee?</a>
 
-11. <a href="#spl-heading-11">I applied but still haven’t gotten my absentee or mail ballot. What should I do?</a>
+- <a href="#spl-heading-11">I applied but still haven’t gotten my absentee or mail ballot. What should I do?</a>
 
-12. <a href="#spl-heading-12">I’ve received my absentee or mail ballot. How do I return it?</a>
+- <a href="#spl-heading-12">I’ve received my absentee or mail ballot. How do I return it?</a>
 
-13. <a href="#spl-heading-13">Which races will I be voting on?</a>
+- <a href="#spl-heading-13">Which races will I be voting on?</a>
 
-14. <a href="#spl-heading-14">Supreme Court of Pennsylvania</a>
+  - <a href="#spl-heading-14">Supreme Court of Pennsylvania</a>
 
-15. <a href="#spl-heading-15">Superior Court</a>
+  - <a href="#spl-heading-15">Superior Court</a>
 
-16. <a href="#spl-heading-16">Commonwealth Court</a>
+  - <a href="#spl-heading-16">Commonwealth Court</a>
 
-17. <a href="#spl-heading-17">What else will be on my ballot?</a>
+- <a href="#spl-heading-17">What else will be on my ballot?</a>
 
 <h2 id="spl-heading-1"><strong>When is the 2023 Election Day in Pennsylvania?</strong></h2>
 

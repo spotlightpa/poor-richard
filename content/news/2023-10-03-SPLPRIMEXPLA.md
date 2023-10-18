@@ -19,6 +19,10 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Oct. 13: </em></strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-2024-presidential-primary-date-change-legislative-impasse/"><strong><em>Pennsylvania’s 2024 presidential primary date unlikely to change due to legislative impasse</em></strong></a><strong><em></em></strong>
+
+<strong><em>Original post</em></strong>
+
 HARRISBURG — Pennsylvania lawmakers are weighing whether to move the date of the state’s 2024 primary.
 
 The state Senate has passed a bill that would move the election from April 23, 2024, to March 19, while the state House has passed its own legislation that would move the date to April 2.

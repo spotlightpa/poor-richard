@@ -69,7 +69,7 @@ Economic and environmental studies examining the impact of RGGI on utility costs
 
 While Wolf’s administration staunchly defended the program, Shapiro has taken a more neutral stance. Emails obtained by Spotlight PA through a Right-to-Know request show that the new administration began looking for “RGGI alternatives” as early as February.
 
-In an April email to a Shapiro aide, oil and gas lobbyist Peter Gleason wrote that he would “attempt to ferret out the RGGI ‘alternative’” they had discussed that day. (Gleason, whose clients include GE Energy and Olympus Power, helped state lawmakers draft a letter opposing RGGI in 2021, emails <a href="https://energyandpolicy.org/coal-gas-lobbyists-behind-pa-officials-letters-against-rggi-emails-show/">obtained</a> by the Energy and Policy Institute show.)
+In an April email to a Shapiro aide, oil, gas, and coal lobbyist Peter Gleason wrote that he would “attempt to ferret out the RGGI ‘alternative’” they had discussed that day. (Gleason, whose clients include GE Energy and Olympus Power, helped state lawmakers draft a letter opposing RGGI in 2021, emails <a href="https://energyandpolicy.org/coal-gas-lobbyists-behind-pa-officials-letters-against-rggi-emails-show/">obtained</a> by the Energy and Policy Institute show.)
 
 He told the aide, Mike Vereb, that an alternative would require at least two conditions. One, the legislature would need to delay the date that Pennsylvania began participating in RGGI carbon credit auctions.
 

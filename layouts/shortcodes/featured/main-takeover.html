@@ -1,13 +1,18 @@
 {{ $src := .Get "image" }}
 {{ $hed := .Get "title" }}
 {{ $dek := .Get "dek" }}
+{{ $sub := .Get "subhed" }}
 {{ $signupHed := .Get "signupHed" }}
 {{ $signupDek := .Get "signupDek" }}
 {{ $cta := .Get "cta" | default "Sign Up!" }}
 {{ $gaCategory := .Get "gaCategory" }}
 {{ $gaForm := .Get "gaForm" }}
 {{ $hiddenField := .Get "hiddenField" }}
-<header class="relative z-20 flex flex-col bg-black text-white">
+{{ $story := .Get "story" }}
+<header
+  class="relative z-20 flex min-h-[80vh] flex-col justify-center bg-black text-white"
+  style="min-height: 80vh;"
+>
   {{ $imgOpt := dict
     "filename" ($src)
     "width" 2271
@@ -21,92 +26,100 @@
     aria-hidden="true"
   >
     <div
-      class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-50"
+      class="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black opacity-60"
     ></div>
   </div>
   <div class="px-4 py-8 leading-tight sm:p-12">
     <div class="mx-auto flex w-full flex-col justify-center md:max-w-2xl">
-      <div class="mx-auto">
-        <h1
-          class="text-shadow  text-3xl font-extrabold md:text-4xl lg:text-5xl xl:text-6xl"
-        >
+      <div class="mx-auto font-sans">
+        <h1 class="text-shadow text-4xl font-extrabold lg:text-5xl xl:text-6xl">
           {{ $hed }}
         </h1>
-        <h2
-          class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-        >
-          {{ $dek }}
+        {{ with $sub }}
+          <h2
+            class="text-shadow mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+          >
+            {{ $sub }}
+          </h2>
+        {{ end }}
+        {{ with $dek }}
+          <p class="text-shadow mt-3 text-2xl leading-tight">{{ $dek }}</p>
+        {{ end }}
 
-        </h2>
       </div>
       {{ $idFname :=  partial "helper/new-id" . }}
       {{ $idLname :=  partial "helper/new-id" . }}
       {{ $idEmail :=  partial "helper/new-id" . }}
-      <label
-        for="{{ $idFname }}"
-        class="backdrop-fallback mx-auto my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
-      >
-        <form
-          action="{{ site.Param `newsletters-action` }}"
-          method="post"
-          target="_blank"
-          class="p-1 font-sans text-white"
-          x-data
-          x-form="{{ $gaForm }}"
-          data-ga-category="{{ $gaCategory }}"
+      {{ with $hiddenField }}
+        <label
+          for="{{ $idFname }}"
+          class="backdrop-fallback mx-auto my-8 block w-full rounded p-8 shadow ring-1 ring-g-7 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
         >
-          {{ partial $hiddenField . }}
-          <h2 class="text-3xl font-extrabold">
-            {{ $signupHed }}
-          </h2>
-          <p class="mt-2 text-base">{{ $signupDek }}</p>
-          <div class="mb-5 flex flex-wrap justify-start align-baseline">
-            <p class="flex-auto sm:mr-3 sm:flex-[1_0_45%]">
-              <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
-                First Name
-              </label>
-              <input
-                id="{{ $idFname }}"
-                class="spl-input text-black"
-                type="text"
-                name="FNAME"
-                placeholder="First Name"
-                required
-              />
-            </p>
+          <form
+            action="{{ site.Param `newsletters-action` }}"
+            method="post"
+            target="_blank"
+            class="p-1 font-sans text-white"
+            x-data
+            x-form="{{ $gaForm }}"
+            data-ga-category="{{ $gaCategory }}"
+          >
+            {{ partial $hiddenField . }}
+            <h2 class="text-3xl font-extrabold">
+              {{ $signupHed }}
+            </h2>
+            <p class="mt-2 text-base">{{ $signupDek }}</p>
+            <div class="mb-5 flex flex-wrap justify-start align-baseline">
+              <p class="flex-auto sm:mr-3 sm:flex-[1_0_45%]">
+                <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
+                  First Name
+                </label>
+                <input
+                  id="{{ $idFname }}"
+                  class="spl-input text-black"
+                  type="text"
+                  name="FNAME"
+                  placeholder="First Name"
+                  required
+                />
+              </p>
 
-            <p class="flex-auto sm:ml-3 sm:flex-[1_0_45%]">
-              <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
-                Last Name
-              </label>
-              <input
-                id="{{ $idLname }}"
-                class="spl-input text-black"
-                type="text"
-                name="LNAME"
-                placeholder="Last Name"
-                required
-              />
-            </p>
-            <p class="mr-6 flex-[1_0_100%]">
-              <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
-                Email Address
-              </label>
-              <input
-                id="{{ $idEmail }}"
-                class="spl-input text-black"
-                type="email"
-                name="EMAIL"
-                placeholder="Email address"
-                required
-              />
-            </p>
-            <button type="submit" class="btn-signup mt-4">
-              {{ $cta }}
-            </button>
-          </div>
-        </form>
-      </label>
+              <p class="flex-auto sm:ml-3 sm:flex-[1_0_45%]">
+                <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+                  Last Name
+                </label>
+                <input
+                  id="{{ $idLname }}"
+                  class="spl-input text-black"
+                  type="text"
+                  name="LNAME"
+                  placeholder="Last Name"
+                  required
+                />
+              </p>
+              <p class="mr-6 flex-[1_0_100%]">
+                <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+                  Email Address
+                </label>
+                <input
+                  id="{{ $idEmail }}"
+                  class="spl-input text-black"
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Email address"
+                  required
+                />
+              </p>
+              <button type="submit" class="btn-signup mt-4">
+                {{ $cta }}
+              </button>
+            </div>
+          </form>
+        </label>
+      {{ end }}
     </div>
   </div>
 </header>
+{{ with $story }}
+  {{ partial "featured/content-area-start" . }}
+{{ end }}
