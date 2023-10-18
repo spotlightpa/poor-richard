@@ -6,8 +6,8 @@ linktitle = "Partners"
 layout = "page-landing"
 
 [[blocks]]
-layout = "partners"
-
+layout = "partners-page"
+dataSrc = "partners"
 form ="""
 {{<featured/promo-contact-form
   hed="Become a partner"
