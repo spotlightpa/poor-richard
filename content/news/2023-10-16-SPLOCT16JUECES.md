@@ -75,7 +75,7 @@ Los operadores de ambos partidos esperan ampliamente que esa carrera se conviert
 
 &#34;Hay gente deseando sacar de la banca a uno o a los tres bebés demócratas de 2015&#34;, dijo el consultor político del Partido Republicano Christopher Nicholas.
 
-<strong>&gt;&gt; LEER MÁS DE SPOLIGHT PA SOBRE LAS ELECCIONES 2023:</strong>
+<strong>&gt;&gt; LEER MÁS DE SPOTLIGHT PA SOBRE LAS ELECCIONES 2023:</strong>
 
 - <a href="https://www.spotlightpa.org/news/2023/10/pensilvania-eleccion-judicial-2023-colegio-electoral-voto-correo-guia-completa/">Elecciones de Pa. 2023: Una guía completa sobre quién está en la papeleta, cuándo votar, cómo votar, dónde votar, la emisión de votos por correo y más</a>
 
