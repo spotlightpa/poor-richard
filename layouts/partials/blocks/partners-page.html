@@ -1,0 +1,55 @@
+{{ with .block }}
+  {{ $id := "id" }}
+  {{ $category := "category" }}
+  {{ $dataSrc := "partners" }}
+  <section
+    class="min-h-[65vh] bg-white py-20 text-g-9"
+    data-ga-category="partners"
+  >
+    <div class="mx-auto max-w-6xl px-5">
+      {{ with .title }}
+        <h2
+          class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
+        >
+          {{ . }}
+        </h2>
+      {{ end }}
+      {{ with $.Page.RenderString .copy }}
+        <div class="article-content my-4 text-xl lg:text-2xl">
+          {{ . }}
+        </div>
+      {{ end }}
+
+
+      <svg
+        class="-ml-6 -mt-2 mr-1 inline-block h-full w-full fill-blue"
+        aria-label="Quote"
+        viewBox="0 0 902 521"
+      >
+        {{ partial "helper/svg.html" "counties" }}
+      </svg>
+
+      {{ with .cta }}
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
+          <a
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight text-black duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            href="{{ .url }}"
+          >
+            {{- .copy -}}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+
+    <div>
+      {{ partial "tw/partners" (dict
+        "id" $id
+        "category" $category
+        "dataSrc" $dataSrc )
+      }}
+      {{ with $dataSrc }}
+        {{ partial "tw/partners-list.html" }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
