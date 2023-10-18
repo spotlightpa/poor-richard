@@ -2,7 +2,7 @@
   text-[16px] bg-beige font-sans leading-normal text-g-9
 {{ end }}
 {{ define "html-class" -}}
-  scroll-smooth
+  scroll-smooth scroll-pt-20
 {{- end }}
 
 {{ define "main" }}
@@ -49,12 +49,12 @@
 
     {{ with .Page.RenderString (.Param "supplemental") }}
 
-    <article
-      class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
-    >
-      {{ .}}
-    </article>
-  {{ end }}
+      <article
+        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+      >
+        {{ . }}
+      </article>
+    {{ end }}
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
