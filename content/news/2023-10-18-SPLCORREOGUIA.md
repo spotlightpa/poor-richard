@@ -37,7 +37,7 @@ Aquí encontrará todo lo que necesita saber sobre la votación por correo:
 
 ## ¿Cómo puedo solicitar el voto por correo?<br/>
 
-Puede solicitar una papeleta de voto por correo, también conocida como boleta de voto por correo, <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">en línea</a>, en persona en una <a href="https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">oficina electoral del condado</a>, o <a href="https://www.vote.pa.gov/Resources/Documents/PADOS_MailInApplication_Spanish.pdf">por correo</a>. Las aplicaciones para votar por correo también están <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">disponibles para descargar</a> en español y chino, además de inglés. Las solicitudes deben ser <strong>recibidas </strong>por su condado antes de <strong>las 5 p.m. del 31 de octubre</strong>.
+Puede solicitar una papeleta de voto por correo, también conocida como boleta de voto por correo, <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin?lang=ES">en línea</a>, en persona en una <a href="https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">oficina electoral del condado</a>, o <a href="https://www.vote.pa.gov/Resources/Documents/PADOS_MailInApplication_Spanish.pdf">por correo</a>. Las aplicaciones para votar por correo también están <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin?lang=ES">disponibles para descargar</a> en español y chino, además de inglés. Las solicitudes deben ser <strong>recibidas </strong>por su condado antes de <strong>las 5 p.m. del 31 de octubre</strong>.
 
 Si aún no está registrado para votar, el último día para hacerlo es el 23 de octubre. Las solicitudes de registro de votantes en línea deben presentarse antes de las 11:59 p.m. de ese día. Las solicitudes por correo y en persona deben ser recibidas por la junta electoral del condado antes del cierre de las oficinas, a las 5 p.m.
 
@@ -87,7 +87,7 @@ Visite <a href="https://www.vote.pa.gov/LanguageResources/Pages/default.aspx">vo
 
 Lea la cobertura completa de Spotlight PA, incluidas guías electorales y de candidatos, explicaciones judiciales, casos importantes y más, en nuestro <a href="https://www.spotlightpa.org/elections">Centro Electoral 2023</a>.
 
-<strong>&gt;&gt; LEER MÁS DE SPOLIGHT PA SOBRE LAS ELECCIONES 2023:</strong>
+<strong>&gt;&gt; LEER MÁS DE SPOTLIGHT PA SOBRE LAS ELECCIONES 2023:</strong>
 
 - <a href="https://www.spotlightpa.org/news/2023/10/pensilvania-eleccion-judicial-2023-colegio-electoral-voto-correo-guia-completa/">Elecciones de Pa. 2023: Una guía completa sobre quién está en la papeleta, cuándo votar, cómo votar, dónde votar, la emisión de votos por correo y más</a>
 
@@ -95,7 +95,7 @@ Lea la cobertura completa de Spotlight PA, incluidas guías electorales y de can
 
 - <a href="https://www.spotlightpa.org/news/2023/09/elecciones-mancomunidad-pennsylvania-2023-candidatos-corte-superior/">Elecciones Pa. 2023: Una guía completa de los candidatos a la Commonwealth y las Cortes Superiores</a>
 
-- <a href="https://www.spotlightpa.org/news/2023/04/pa-eleccion-primaria-2023-candidatos-contienda-alcalde-concejal-juez-investigacion-guia/">Elecciones primarias Pa. 2023: Una guía básica para investigar a los candidatos a la junta escolar, para juez y más</a><strong><em></em></strong>
+- <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-judicial-retention-superior-court-common-pleas/">Elecciones Pa. 2023: Lo que hay que saber sobre las preguntas de retención judicial en la papeleta de noviembre</a>
 
 <strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en</em><a href="http://spotlightpa.org/donate"><em> spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por</em><a href="https://www.spotlightpa.org/support"><em> fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em><strong><em></em></strong>
 
