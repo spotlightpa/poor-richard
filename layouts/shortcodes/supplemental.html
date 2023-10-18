@@ -11,50 +11,51 @@
   {{ .Inner | markdownify }}
 </div>
 {{ with $name }}
-{{ $author := partial "helper/get-author" $name }}
+  {{ $author := partial "helper/get-author" $name }}
 
-<aside
-  class="sticky top-0 grid-cols-3 gap-3 self-start md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
->
-  {{ if $image }}
-    {{ $imgOpt := dict
-      "filename" $image
-      "width" 188
-      "height" 188
-    }}
-    {{ $thumb := partial "helper/imgproxy" $imgOpt }}
-    <img
-      class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
-      src="{{ $thumb }}"
-      alt="Picture of {{ $name }}"
-    />
-  {{ else if $author.thumb }}
-    <img
-      class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
-      src="{{ $author.thumb }}"
-      alt="Picture of {{ $name }}"
-    />
-  {{ end }}
-  {{ if $eyebrow }}
-    <h4 class="col-span-2 col-start-2 mb-4 text-xs font-bold uppercase">
-      {{ $eyebrow }}
-    </h4>
-  {{ end }}
-  {{ if $hed }}
-    <h3
-      class="col-span-2 col-start-2 mb-1 text-lg font-black md:mb-6 md:max-w-[270px]"
-    >
-      {{ $hed }}
-    </h3>
-  {{ end }}
-  {{ if $bio }}
-    <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
-      {{ $bio|markdownify }}
-    </div>
-  {{ else if $author }}
-    <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
-      {{ $author.content }}
-    </div>
-  {{ end }}
-</aside>
+
+  <aside
+    class="sticky top-0 grid-cols-3 gap-3 self-start md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
+  >
+    {{ if $image }}
+      {{ $imgOpt := dict
+        "filename" $image
+        "width" 188
+        "height" 188
+      }}
+      {{ $thumb := partial "helper/imgproxy" $imgOpt }}
+      <img
+        class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
+        src="{{ $thumb }}"
+        alt="Picture of {{ $name }}"
+      />
+    {{ else if $author.thumb }}
+      <img
+        class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
+        src="{{ $author.thumb }}"
+        alt="Picture of {{ $name }}"
+      />
+    {{ end }}
+    {{ if $eyebrow }}
+      <h4 class="col-span-2 col-start-2 mb-4 text-xs font-bold uppercase">
+        {{ $eyebrow }}
+      </h4>
+    {{ end }}
+    {{ if $hed }}
+      <h3
+        class="col-span-2 col-start-2 mb-1 text-lg font-black md:mb-6 md:max-w-[270px]"
+      >
+        {{ $hed }}
+      </h3>
+    {{ end }}
+    {{ if $bio }}
+      <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
+        {{ $bio|markdownify }}
+      </div>
+    {{ else if $author }}
+      <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
+        {{ $author.content }}
+      </div>
+    {{ end }}
+  </aside>
 {{ end }}
