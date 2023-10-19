@@ -33,7 +33,7 @@ Instead, Wolf plans to direct a one-time 5% increase to the schools using stimul
 
 The governor did not highlight the appropriation in a <a href="https://web.archive.org/web/20230117172213/https://www.governor.pa.gov/newsroom/governor-wolf-cements-legacy-with-historic-3-7-billion-in-education-funding/">press release</a> touting his education funding “legacy,” nor did he publicly disclose it elsewhere. It was noted in a <a href="https://houseappropriations.com/Topic/BudgetYears/716">budget summary</a> released by state House Democrats.
 
-In an email, Wolf spokesperson Elizabeth Rementer confirmed the plan, which matches what the Democratic governor proposed in his <a href="https://www.budget.pa.gov/Publications%20and%20Reports/CommonwealthBudget/Documents/2022-23%20Proposed%20Budget/Web%20Track%202022-23.pdf">February budget address</a>.
+In an email, Wolf spokesperson Elizabeth Rementer confirmed the plan, which matches what the Democratic governor proposed in his <a href="https://web.archive.org/20220612031351/https://www.budget.pa.gov/Publications%20and%20Reports/CommonwealthBudget/Documents/2022-23%20Proposed%20Budget/Web%20Track%202022-23.pdf">February budget address</a>.
 
 “I support supporting the state universities,” Wolf told reporters in June. “I’d like to figure out a way to do that.”
 
@@ -57,7 +57,7 @@ Knowles was frustrated that the school received its usual appropriation even tho
 
 In previous years, funding the state-related universities was a pro forma vote that elicited little controversy in the legislature. But starting in 2019, some Republican lawmakers began to use talking points from anti-abortion advocates to attempt to block Pitt’s appropriation.
 
-Anti-abortion activists have claimed that Pitt violated state and federal law as well as medical ethics in these studies, charges that a <a href="https://humancelltissueresearch.pitt.edu/sites/default/files/Regulatory%20Assessment%20of%20Human%20Fetal%20Tissue%20Research%20(00877347-2)%5b4%5d.PDF">report</a> commissioned by the university found to be untrue.
+Anti-abortion activists have claimed that Pitt violated state and federal law as well as medical ethics in these studies, charges that a <a href="https://web.archive.org/20220611060054/https://humancelltissueresearch.pitt.edu/sites/default/files/Regulatory%20Assessment%20of%20Human%20Fetal%20Tissue%20Research%20(00877347-2)%5b4%5d.PDF">report</a> commissioned by the university found to be untrue.
 
 Shortly before the June 30 budget deadline, House Republicans <a href="https://www.spotlightpa.org/news/2022/06/pa-pittsburgh-fetal-tissue-research-budget/">successfully added an amendment</a> to the universities’ funding bill that would ban Pitt from conducting fetal tissue research.
 
