@@ -19,6 +19,8 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+{{<audio src="https://files.data.spotlightpa.org/uploads/01jk/33sr/opiods-muni-funding.mp3" label="Click here to listen to an audio introduction to this story.">}}
+
 <strong>LAPORTE — </strong>A new Spotlight PA analysis of recently released opioid settlement payments shows which Pennsylvania counties are receiving the most money per resident to help them respond to an epidemic that continues to kill thousands of people each year in the state.
 
 The data show that based on that measure, there are wide disparities on how much individual counties received.
