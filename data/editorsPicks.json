@@ -1,12 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-10-19-SPLPOTTER.md"
+    "content/news/2023-10-20-SPL_INCENTIVE1020.md"
   ],
   "subfeatures": [],
   "topSlots": [
+    "content/statecollege/2023-10-19-SPLPOTTER.md",
     "content/news/2023-10-18-SPL_LOCAL_PENSIONS.md",
-    "content/news/2023-10-17-SPL_LOCAL_PENSIONS.md",
-    "content/news/2023-10-17-SPLCODEEX.md"
+    "content/news/2023-10-17-SPL_LOCAL_PENSIONS.md"
   ],
   "topper": []
 }
