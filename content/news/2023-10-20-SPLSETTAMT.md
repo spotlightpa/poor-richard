@@ -37,6 +37,8 @@ Bonder said complaints like this are often settled because litigation is expensi
 
 “Complainants and defendants often settle litigation for reasons not related to the validity of the underlying facts and claims,” Bonder said.
 
+Chuck Pascal, who represents the woman who filed the complaint, added: “Generally speaking, settlements occur after both parties determine the value of a case — and given the uncertainties of litigation — come to a settlement that is somewhere between those two numbers.”
+
 According to administration officials, $250,000 of the $295,000 settlement will be covered by the state’s Employee Liability Self-Insurance Program, which has been <a href="https://www.inquirer.com/philly/news/breaking/sex-harassment-payments-pennsylvania-state-workers-millions-20180131.html">widely used</a> in the past to cover payments resolving harassment and discrimination claims. The remaining $45,000 will be covered by Shapiro’s office.
 
 Nearly $100,000 of the settlement will go to two lawyers who represented the woman who brought the misconduct complaint. The woman worked for Shapiro’s office for just over a month before resigning her position.
