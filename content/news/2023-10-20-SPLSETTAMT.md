@@ -1,6 +1,6 @@
 +++
 authors = ["Angela Couloumbis", "Katie Meyer"]
-blurb = "The settlement, paid for using state funds, came after a top aide to Shapiro was accused of sexually harassing a female subordinate."
+blurb = "The settlement, paid for using taxpayer dollars, came after a top aide to Shapiro was accused of sexually harassing a female subordinate."
 byline = "Angela Couloumbis of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "A top aide to Pennsylvania Gov. Josh Shapiro was accused of sexually harassing a female subordinate and later resigned."
 image = "2023/10/01jk-5943-a0eb-k5qb.jpeg"
