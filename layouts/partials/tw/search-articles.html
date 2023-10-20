@@ -18,15 +18,7 @@
       />
     </div>
     <div class="z-10 mt-0">
-      <button
-        class="
-          h-full rounded-r-lg
-          border border-yellow-5 bg-yellow-4
-          px-4 py-2 font-bold
-          uppercase tracking-widest text-g-0 outline-none
-          ring-2 ring-transparent focus:ring-yellow
-        "
-      >
+      <button class="btn-signup-slim h-full rounded-l-none">
         <svg
           x-show="!isLoading"
           aria-label="Search"
@@ -67,13 +59,7 @@
     <div class="flex justify-between font-sans">
       <button
         x-show="hasPreviousPage"
-        class="
-      rounded border
-      border-yellow-5 bg-yellow-4 px-4
-      py-2 font-sans font-bold
-      uppercase tracking-widest text-g-0 outline-none
-      ring-2 ring-transparent focus:ring-yellow
-    "
+        class="btn-signup-slim w-auto"
         type="button"
         @click="previousPage"
       >
@@ -82,13 +68,7 @@
       <button
         x-cloak
         x-show="hasNextPage"
-        class="
-      rounded border
-      border-yellow-5 bg-yellow-4 px-4
-      py-2 font-sans font-bold
-      uppercase tracking-widest text-g-0 outline-none
-      ring-2 ring-transparent focus:ring-yellow
-    "
+        class="btn-signup-slim w-auto"
         type="button"
         @click="nextPage"
       >
