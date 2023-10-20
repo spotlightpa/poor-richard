@@ -49,7 +49,7 @@ State Rep. Jerry Knowles (R., Schuylkill) led the effort to block Pitt’s fundi
 
 Such research uses tissue obtained from aborted fetuses, whether from an elective abortion or a miscarriage.
 
-According to Pitt, scientists at the university <a href="https://research.pitt.edu/researchfacts">have</a> “used fetal tissue to better understand the efficacy and safety of certain treatments for HIV, AIDS, and cancer.” The research is funded by federal grants.
+According to Pitt, scientists at the university <a href="https://web.archive.org/20220725121430/https://research.pitt.edu/researchfacts">have</a> “used fetal tissue to better understand the efficacy and safety of certain treatments for HIV, AIDS, and cancer.” The research is funded by federal grants.
 
 Knowles was frustrated that the school received its usual appropriation even though his effort to ban fetal tissue research fizzled. He compared the extra money from Wolf to “poking somebody in the eye.”
 
