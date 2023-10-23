@@ -155,7 +155,7 @@ export default function searchArticles() {
     },
 
     get hasPreviousPage() {
-      return this.page - 1 >= 0;
+      return this.page > 0;
     },
 
     previousPage() {
