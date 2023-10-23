@@ -17,13 +17,9 @@ function searchAPI(query, page = 0) {
   return fetchJSON(baseURL + new URLSearchParams(params).toString());
 }
 
-function roundUp(n, by) {
-  return by * Math.ceil(n / by);
-}
-
 const baseWidth = 256;
 const aspectRatio = 16 / 9;
-let width = roundUp(window.devicePixelRatio * baseWidth, 1);
+let width = Math.ceil(window.devicePixelRatio * baseWidth);
 let height = Math.round(width / aspectRatio);
 
 function normalize(obj) {
@@ -48,9 +44,6 @@ function normalize(obj) {
   };
 }
 
-const magicPixel =
-  "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
-
 export default function searchArticles() {
   return {
     query: "",
@@ -58,7 +51,6 @@ export default function searchArticles() {
     error: null,
     isLoading: false,
     page: 0,
-    magicPixel,
 
     init() {
       this.$watch("query", () => {
@@ -121,19 +113,6 @@ export default function searchArticles() {
         msg += ` Showing results page ${this.page + 1} of ${nbPages}.`;
       }
       return msg;
-    },
-
-    loadImage(ev) {
-      let el = ev.target;
-      let { src } = el.dataset;
-      if (el.src !== this.magicPixel || src === "") {
-        return;
-      }
-      let { width = 0, height = 0 } = el;
-      let aspectRatio = height / width;
-      width = roundUp(window.devicePixelRatio * width, 1);
-      height = Math.round(aspectRatio * width);
-      el.src = imgproxy(src, { width, height });
     },
 
     get hasNextPage() {
