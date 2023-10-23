@@ -307,7 +307,7 @@ If you are facing eviction, there are resources available to help you:
 
 - Contact a legal aid organization near you. You can find one [here](https://palegalaid.net/). They may be able to give you legal advice or represent you in court at no cost.
 
-- The deadline to apply for the state’s [rental assistance](https://www.phfa.org/pacares/rent.aspx) program is Nov. 4. Your landlord must agree to participate and you must apply through a local organization in the county where you live. A list is available [here](https://web.archive.org/web/20210422071326/https://www.phfa.org/forms/pacares/rental/RRP-County-Contact-List.pdf).
+- The deadline to apply for the state’s [rental assistance](https://web.archive.org/20200701203919/https://www.phfa.org/pacares/rent.aspx) program is Nov. 4. Your landlord must agree to participate and you must apply through a local organization in the county where you live. A list is available [here](https://web.archive.org/web/20210422071326/https://www.phfa.org/forms/pacares/rental/RRP-County-Contact-List.pdf).
 
 - Some counties also have local rent relief programs, which may require less paperwork to apply.
 {{</featured/info>}}

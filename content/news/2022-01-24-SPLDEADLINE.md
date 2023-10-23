@@ -14,6 +14,7 @@ modal-exclude = false
 no-index = false
 published = 2022-01-24T13:34:02.268-05:00
 slug = "pennsylvania-primary-2022-redistricting-delays"
+suppress-date = false
 title = "Pa. primary 2022: What delayed redistricting maps could mean for the May election"
 topics = ["Redistricting"]
 +++
@@ -38,7 +39,7 @@ In June and December last year, then-acting Secretary of State Veronica Degraffe
 
 While the primary is scheduled for May, preparations for the election begin much earlier. Major party candidates have from <a href="https://www.vote.pa.gov/About-Elections/Pages/Upcoming-Elections.aspx">Feb. 15 to March 8</a> to collect enough signatures from residents in their district to get on the ballot.
 
-But without finalized congressional and legislative districts, potential candidates don’t have all the information they need to decide on a run. They can, however, begin collecting signatures <a href="https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Documents/GENERAL%20INFORMATION%20ABOUT%20RUNNING%20FOR%20PUBLIC%20OFFICE%20Rev%205.31.17.pdf">before the boundaries are set</a>.
+But without finalized congressional and legislative districts, potential candidates don’t have all the information they need to decide on a run. They can, however, begin collecting signatures <a href="https://web.archive.org/20220130171301/https://www.dos.pa.gov/VotingElections/CandidatesCommittees/RunningforOffice/Documents/GENERAL%20INFORMATION%20ABOUT%20RUNNING%20FOR%20PUBLIC%20OFFICE%20Rev%205.31.17.pdf">before the boundaries are set</a>.
 
 County election directors, meanwhile, have to begin preparing poll workers and ballots without essential knowledge.
 
@@ -78,7 +79,7 @@ The legislature and Wolf could move the primary date. That happened in 2020, whe
 
 That appears unlikely to happen this year, with Republican leaders opposed to the idea and Democrats viewing it as a last resort.
 
-The legislature’s unwillingness to move the primary date is cited in a <a href="https://www.pacourts.us/Storage/media/pdfs/20220120/205706-jan.20,2022-petitionforreview.pdf">new legal challenge</a> brought by Pennsylvanians who live in legislative districts that saw high population growth over the past decade.
+The legislature’s unwillingness to move the primary date is cited in a <a href="https://web.archive.org/web/20220201132722/https://www.pacourts.us/Storage/media/pdfs/20220120/205706-jan.20,2022-petitionforreview.pdf">new legal challenge</a> brought by Pennsylvanians who live in legislative districts that saw high population growth over the past decade.
 
 The suit, filed last week in Commonwealth Court, argues that these population shifts render the current maps unusable as they diminish representation and create overcrowded districts. The petitioners are asking the court to adopt a new election calendar that accounts for forthcoming legal challenges to the maps.
 
