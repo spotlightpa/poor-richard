@@ -115,6 +115,13 @@ export default function searchArticles() {
       return msg;
     },
 
+    scrollToTop() {
+      this.$refs.top.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    },
+
     get hasNextPage() {
       let nbPages = this.results?.nbPages ?? 0;
       return this.page + 1 < nbPages;
@@ -123,14 +130,7 @@ export default function searchArticles() {
     async nextPage() {
       this.page++;
       // Seems to need to wait to scroll to prevent layout jank
-      window.setTimeout(
-        () =>
-          this.$refs.top.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          }),
-        150,
-      );
+      window.setTimeout(() => this.scrollToTop(), 150);
     },
 
     get hasPreviousPage() {
@@ -139,10 +139,7 @@ export default function searchArticles() {
 
     previousPage() {
       this.page--;
-      this.$refs.top.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      this.scrollToTop();
     },
   };
 }
