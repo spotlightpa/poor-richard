@@ -11,7 +11,7 @@
   x-data="{ selectedCounty: '' }"
   class="m-auto w-full justify-center md:py-4 xl:px-0"
 >
-  <header class="sticky top-0 w-full bg-white shadow md:relative">
+  <header class="top-0 w-full bg-white md:relative">
     <div class="m-auto max-w-screen-lg px-5 md:flex md:items-baseline md:gap-3">
       <h3
         x-text="selectedCounty"
@@ -63,14 +63,14 @@
     <div
       id="{{ . | urlize }}"
       x-show="selectedCounty === '{{ . }} County'"
-      class=" mx-auto max-w-screen-lg pt-16 p-5 md:flex md:gap-6"
-      :class="{'pt-4': selectedCounty === '{{ . }} County' }"
+      class="mx-auto max-w-screen-lg border-t border-g-4 p-5 pt-0 md:flex md:gap-6"
+      :class="{'': selectedCounty === '{{ . }} County' }"
     >
       {{ with . }}
-        <div class="flex w-80 max-w-xs justify-center">
+        <div class="flex w-80 max-w-xs justify-center pt-5">
           <svg
             width="100%"
-            class="inline-block bg-none fill-blue stroke-white"
+            class="inline-block bg-none fill-blue stroke-white stroke-2"
           >
             <use
               xlink:href="#{{ . }}"
@@ -81,7 +81,7 @@
       {{ end }}
       <span class="w-0 border border-g-3"></span>
       <ul
-        class="m-auto w-full max-w-screen-lg space-y-2 md:flex md:flex-wrap md:items-baseline md:gap-4"
+        class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
       >
         {{ range where $data "County" . }}
           <li class="flex-auto md:w-1/3">
