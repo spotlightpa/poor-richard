@@ -111,13 +111,15 @@ Joanna Rosenhein, a consumer engagement manager with PHAN, said Philadelphia’s
 
 And overall, Arkoosh said, the state’s reenrollment numbers have been fine.
 
-DHS only provided <a href="https://www.dhs.pa.gov/PHE/Pages/Final-Monthly-Unwind-Renewal-Outcomes.aspx">complete data for April and May</a>, the first two months of the unwinding. In both of those months, about 71% of enrollees kept their coverage and a little less than 13% were found ineligible. Another 15 to 16% were terminated for “procedural” reasons, which means it’s unclear if they were eligible, but paperwork issues precluded their renewal.
+DHS only provided <a href="https://www.dhs.pa.gov/PHE/Pages/Final-Monthly-Unwind-Renewal-Outcomes.aspx">complete data for April and May</a>, the first two months of the unwinding. In both of those months, about 71% of enrollees kept their coverage and a little less than 13% were found ineligible. Another 15 to 16% were terminated for “procedural” reasons, which means it’s unclear if they were eligible, but missing paperwork precluded their renewal.
 
 Advocates maintain that they see other signs that the system is bogged down.
 
 In its August report to the federal government, for instance, Pennsylvania reported that of the roughly 322,000 people due for renewal that reporting period, more than 40% didn’t have their renewals done when the period ended.
 
-That large volume of pending renewals <a href="https://www.cbpp.org/research/health/unwinding-watch-tracking-medicaid-coverage-as-pandemic-protections-end">could show that people are waiting</a> for their applications to be processed, which means some may have to put off care while they’re in limbo.
+That large volume of pending renewals could show that people are waiting for their applications to be processed. The Center on Budget and Policy Priorities, which closely monitors Medicaid unwinding, notes that while enrollees keep their coverage for the duration of their reenrollment no matter how long it takes, long wait times can confuse people.
+
+They &#34;may not realize that they’re still covered,&#34; CBPP <a href="https://www.cbpp.org/research/health/unwinding-watch-tracking-medicaid-coverage-as-pandemic-protections-end">wrote in its Unwinding Watch</a>. People &#34;may forgo care or have to make multiple phone calls to determine their status.&#34;
 
 Keenan, the PHAN policy director, said it’s a problem. “Timely and accurate eligibility decisions help new applicants get the medical care they need,” he said.
 
