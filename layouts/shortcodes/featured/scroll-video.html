@@ -3,19 +3,20 @@
 {{ $outro := .Get "outro" }}
 
 
-<h3>
-  {{ $hed }}
-</h3>
-<p>
-  {{ $dek }}
-</p>
-
-<div class="my-8 min-h-screen w-full md:my-11">
-  {{ .Inner }}
-
-
-  <p class="text-s-8 font-sans text-xl md:text-2xl">
-    {{ $outro }}
+<div class="mx-[calc(-50vw_+_50%)] -mt-12 bg-black px-8 py-12 text-white">
+  <h3 class="mx-auto mb-8 font-sans text-3xl italic leading-none md:max-w-content">
+    {{ $hed }}
+  </h3>
+  <p class="text-s-8 mx-auto font-sans text-xl md:max-w-content md:text-2xl">
+    {{ $dek }}
   </p>
-  <hr class="mt-16 h-1 w-12 border-none bg-yellow" />
+
+  <div class="mx-auto my-8 min-h-screen w-full md:my-11 md:max-w-content">
+    {{ .Inner }}
+
+
+    <p class="text-s-8 font-sans text-xl md:text-2xl">
+      {{ $outro }}
+    </p>
+  </div>
 </div>

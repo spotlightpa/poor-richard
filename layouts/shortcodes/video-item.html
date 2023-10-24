@@ -3,7 +3,10 @@
 {{ $playerID := .Get "id" | default "562400724" }}
 
 
-<figure class=" mx-auto h-screen md:h-auto md:max-w-5xl" x-data="scrollVimeo">
+<figure
+  class=" mx-auto min-h-screen md:h-auto md:max-w-5xl"
+  x-data="scrollVimeo"
+>
   <div class="mx-[calc(-50vw_+_50%)]">
     <div
       x-ref="splVideo"
@@ -18,10 +21,10 @@
     <figcaption
       x-data="{ onScreen: false }"
       x-intersect.half="onScreen = true"
-      class="featured-content mb-8 mt-3 md:mb-24 md:mt-8"
+      class="mb-8 mt-3 md:mb-24 md:mt-8"
     >
       <p
-        class="text-s-8 font-sans text-xl md:text-2xl"
+        class="text-s-8 font-sans text-2xl leading-loose md:leading-relaxed"
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-1000 delay-700"
         x-transition:enter-start=" opacity-0"
