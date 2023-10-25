@@ -102,7 +102,7 @@ Divided government, other hot-button legislative priorities, and a series of dif
 
 The amount of tax forgiveness someone can receive is based on family size, marital status, and income. Some people whose incomes exceed the cap can still receive partial forgiveness, but only within a narrow range. Once someone makes more than $2,250 over the limit, they don’t qualify at all.
 
-<br/>And because the eligibility formula doesn’t count retirement income — which generally isn’t taxed in Pennsylvania —&nbsp;some retirees with six-figure incomes can still receive tax forgiveness, said Jason Skrinak, an accountant and president of a tax consulting firm in Harrisburg.
+And because the eligibility formula doesn’t count retirement income — which generally isn’t taxed in Pennsylvania — some retirees with six-figure incomes can still receive tax forgiveness, said Jason Skrinak, an accountant and president of a tax consulting firm in Harrisburg.
 
 “They qualify, so it totally makes sense for them to take it — I’m just not sure that was the true intent of this program,” he said.
 
