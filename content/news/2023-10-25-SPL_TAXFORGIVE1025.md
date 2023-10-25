@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2023/10/pennsylvania-low-income-tax-forgiveness/"]
 authors = ["Charlotte Keith"]
 blurb = "New legislation would raise the income limit for inflation and create a new state earned income tax credit"
 byline = "Charlotte Keith of Spotlight PA"
@@ -15,6 +16,7 @@ suppress-date = false
 title = "Thousands miss out on low-income tax forgiveness program due to outdated income limits"
 title-tag = "Fewer Pa. residents qualify for income tax forgiveness"
 topics = ["The Capitol"]
+url = "/news/2023/10/pennsylvania-low-income-tax-forgiveness-inflation"
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
