@@ -64,7 +64,7 @@ When Gov. Milton Shapp signed Pennsylvania’s state income tax into law in 1971
 
 Shapp, a Democrat, wanted a system that would tax higher incomes at higher rates.
 
-<br/>Instead, facing a looming fiscal crisis, and stymied by state Supreme Court rulings that a graduated tax would violate Pennsylvania’s Constitution, he had to settle for a flat tax.
+Instead, facing a looming fiscal crisis, and stymied by state Supreme Court rulings that a graduated tax would violate Pennsylvania’s Constitution, he had to settle for a flat tax.
 
 The debate over the fairness of the state income tax has raged ever since.
 
@@ -92,7 +92,7 @@ In 1981, a state commission said that “basic equity” called for increasing t
 
 Between 1987 and 2003, lawmakers tweaked the income thresholds nine times, gradually increasing them and targeting the benefit more toward those with children.
 
-<br/>Then, the increases stopped.
+Then, the increases stopped.
 
 ## Different approaches
 
