@@ -21,7 +21,7 @@ topics = ["The Capitol"]
 
 Unlike most states and the federal government, Pennsylvania has a flat income tax.
 
-<br/>The state Supreme Court has ruled that a graduated income tax, with rates that increase as someone’s income rises, would violate the state constitution.
+The state Supreme Court has ruled that a graduated income tax, with rates that increase as someone’s income rises, would violate the state constitution.
 
 The same goes for all state and local taxes in Pennsylvania, beyond limited constitutional exemptions, including special tax provisions for those deemed in need on the grounds of “age, disability, infirmity or poverty.”
 
