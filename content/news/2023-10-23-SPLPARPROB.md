@@ -1,5 +1,4 @@
 +++
-aliases = ["/medicaid"]
 authors = ["Katie Meyer"]
 blurb = "Tens of thousands of people in Pennsylvania are believed to have wrongly lost their benefits since the state began “unwinding” pandemic-era protections."
 byline = "Katie Meyer of Spotlight PA"
