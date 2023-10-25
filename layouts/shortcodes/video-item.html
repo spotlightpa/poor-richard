@@ -1,10 +1,11 @@
+{{ $hed := .Get "hed" }}
 {{ $inner := .Get "body" }}
 <!-- TODO: Remove hardcoded ID -->
 {{ $playerID := .Get "id" | default "562400724" }}
 
 
 <figure
-  class=" mx-auto min-h-screen md:h-auto md:max-w-5xl"
+  class=" mx-auto w-full bg-black text-white md:h-auto"
   x-data="scrollVimeo"
 >
   <div class="mx-[calc(-50vw_+_50%)]">
@@ -21,18 +22,26 @@
     <figcaption
       x-data="{ onScreen: false }"
       x-intersect.half="onScreen = true"
-      class="mb-8 mt-3 md:mb-24 md:mt-8"
+      class="mx-auto py-40 font-sans md:max-w-content"
     >
-      <p
-        class="text-s-8 font-sans text-2xl leading-loose md:leading-relaxed"
+      <h3
+        class="text-2xl font-bold leading-loose md:text-4xl md:leading-relaxed"
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-1000 delay-700"
         x-transition:enter-start=" opacity-0"
         x-transition:enter-end="opacity-1"
       >
+        {{ $hed }}
+      </h3>
+      <p
+        class="text-s-8 text-xl leading-loose md:text-2xl md:leading-loose"
+        x-show="onScreen"
+        x-transition:enter="transition-all ease-out duration-700 delay-1000"
+        x-transition:enter-start=" opacity-0"
+        x-transition:enter-end="opacity-1"
+      >
         {{ $inner | markdownify }}
       </p>
-      <hr class="mt-16 h-1 w-12 border-none bg-yellow" />
     </figcaption>
   {{ end }}
 
