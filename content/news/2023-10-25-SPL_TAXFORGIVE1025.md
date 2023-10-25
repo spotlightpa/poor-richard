@@ -42,7 +42,9 @@ The nearly 20 years since lawmakers last revised the eligibility criteria marks 
 
 Unlike most states and the federal government, Pennsylvania has a flat income tax: Someone making $50,000 per year who doesn’t qualify for tax forgiveness pays the same tax rate, currently 3.07%, as someone earning 10 times as much. The state Supreme Court has ruled that Pennsylvania’s Constitution <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness/">forbids a graduated income tax</a>, which would impose higher rates on higher earners.
 
-As a result, Pennsylvania has one of the most regressive tax systems in the U.S, meaning that state and local taxes hit low-income residents the hardest. The bottom 20% of Pennsylvania taxpayers pay roughly twice as much of their income in state and local taxes as the top 1%, according to <a href="https://itep.org/whopays/">one analysis</a>.<br/><br/>Advocates for low-income Pennsylvanians say tax forgiveness — also known as the “poverty exemption” — does not do enough to address this unfairness.
+As a result, Pennsylvania has one of the most regressive tax systems in the U.S, meaning that state and local taxes hit low-income residents the hardest. The bottom 20% of Pennsylvania taxpayers pay roughly twice as much of their income in state and local taxes as the top 1%, according to <a href="https://itep.org/whopays/">one analysis</a>.
+
+Advocates for low-income Pennsylvanians say tax forgiveness — also known as the “poverty exemption” — does not do enough to address this unfairness.
 
 “It does its job, but it’s limited in what it does,” said Marc Stier, executive director of the Pennsylvania Policy Center, a progressive think tank. “It doesn’t apply to enough people and the benefit itself isn’t large enough.”
 
@@ -54,7 +56,7 @@ A measure to increase the income limits for tax forgiveness each year to keep pa
 
 The bill would also create a state version of a popular federal tax credit for low- and middle-income workers, which supporters say would help thousands of families who struggle to make ends meet but earn too much to qualify for state tax forgiveness.
 
-The bill also contains business tax cuts, increased funding for public transit, and an expansion of a tax credit for child care costs, among <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">many other provisions</a>. Its <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">chances of success</a> in the Republican-controlled state Senate are unclear. In a statement in early October, state Senate Majority Leader Joe Pittman (R., Indiana) appeared open to considering the legislation, calling it “a historic shift in tax policy, which is very intriguing.”<br/>
+The bill also contains business tax cuts, increased funding for public transit, and an expansion of a tax credit for child care costs, among <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">many other provisions</a>. Its <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">chances of success</a> in the Republican-controlled state Senate are unclear. In a statement in early October, state Senate Majority Leader Joe Pittman (R., Indiana) appeared open to considering the legislation, calling it “a historic shift in tax policy, which is very intriguing.”
 
 Without a change in the law, the number of people receiving tax forgiveness is projected to keep declining. State budget documents estimate the value of tax forgiveness awarded will fall almost 13% over the next five fiscal years.
 
@@ -68,17 +70,19 @@ Instead, facing a looming fiscal crisis, and stymied by state Supreme Court ruli
 
 The debate over the fairness of the state income tax has raged ever since.
 
-“We must substitute it for a genuinely fair system which will take a greater share of the burden off the little man and place a greater share of it on the shoulders of those better able to pay,” Shapp said in a 1973 speech.<br/>
+“We must substitute it for a genuinely fair system which will take a greater share of the burden off the little man and place a greater share of it on the shoulders of those better able to pay,” Shapp said in a 1973 speech.
 
 Largely because of its flat income tax, Pennsylvania has the seventh-most regressive tax system in the U.S., according to a 2018 <a href="https://itep.org/whopays/">study</a> by the Institute on Taxation and Economic Policy, a left-leaning policy organization based in Washington, D.C. The bottom 20% of Pennsylvania taxpayers pay almost 14% of their income in state and local taxes, whereas the top 1% pay an <a href="https://itep.org/whopays/pennsylvania/">effective tax rate</a> of just 6%, the analysis found.
 
 Sales and property taxes take a larger bite out of the incomes of lower earners. A graduated income tax can offset some of that imbalance, while a flat tax leaves those disparities unaddressed, the study said.
 
-<strong>&gt;&gt;Releated: </strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness/"><strong>Explainer: The history behind Pennsylvania’s flat income tax</strong></a><strong></strong>
+<strong>» Related: </strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness/"><strong>Explainer: The history behind Pennsylvania’s flat income tax</strong></a><strong></strong>
 
 Not everyone agrees that a flat tax is unfair.
 
-When everyone pays income tax at the same rate, lawmakers have a greater incentive to keep rates low, said Katherine Loughead, a senior policy analyst at the <a href="https://taxfoundation.org/">Tax Foundation</a>, a Washington, D.C. think tank that generally advocates for lower taxes.<br/><br/>Flat taxes also make state revenues more stable and easier to predict, she said.
+When everyone pays income tax at the same rate, lawmakers have a greater incentive to keep rates low, said Katherine Loughead, a senior policy analyst at the <a href="https://taxfoundation.org/">Tax Foundation</a>, a Washington, D.C. think tank that generally advocates for lower taxes.
+
+Flat taxes also make state revenues more stable and easier to predict, she said.
 
 Flush with budget surpluses after the pandemic, at least four states moved to <a href="https://taxfoundation.org/blog/flat-tax-state-income-tax-reform/">adopt</a> flat income taxes in 2022, arguing that the changes would spur economic growth.
 
@@ -102,7 +106,7 @@ Divided government, other hot-button legislative priorities, and a series of dif
 
 The amount of tax forgiveness someone can receive is based on family size, marital status, and income. Some people whose incomes exceed the cap can still receive partial forgiveness, but only within a narrow range. Once someone makes more than $2,250 over the limit, they don’t qualify at all.
 
-And because the eligibility formula doesn’t count retirement income — which generally isn’t taxed in Pennsylvania — some retirees with six-figure incomes can still receive tax forgiveness, said Jason Skrinak, an accountant and president of a tax consulting firm in Harrisburg.
+And because the eligibility formula doesn’t count retirement income — which generally isn’t taxed in Pennsylvania —&nbsp;some retirees with six-figure incomes can still receive tax forgiveness, said Jason Skrinak, an accountant and president of a tax consulting firm in Harrisburg.
 
 “They qualify, so it totally makes sense for them to take it — I’m just not sure that was the true intent of this program,” he said.
 
