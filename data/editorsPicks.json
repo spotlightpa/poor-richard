@@ -1,14 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-10-24-SPLHYDTRAN.md"
+    "content/news/2023-10-25-SPL_TAXFORGIVE1025.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-23-SPLHYDOVER.md",
-    "content/news/2023-07-25-SPLHYDPRI.md"
+    "content/news/2023-10-25-SPL_UNIFORMITY1025.md"
   ],
   "topSlots": [
+    "content/news/2023-10-24-SPLHYDTRAN.md",
     "content/news/2023-10-23-SPLPARPROB.md",
-    "content/news/2023-10-23-SPLICNFRACKING.md",
     "content/news/2023-10-20-SPLSETTAMT.md"
   ],
   "topper": []
