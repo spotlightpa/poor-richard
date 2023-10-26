@@ -1,6 +1,7 @@
 {{ $title := .Get "title" }}
 {{ $link := .Get "link" }}
 {{ $date := .Get "date" }}
+{{ $dateExpired := .Get "date-expired" }}
 {{ $dateVerbose := .Get "dateVerbose" }}
 {{ $emoji := .Get "emoji" }}
 
@@ -37,17 +38,24 @@
         >Add to Calendar</span
       >
     </button>
-  {{ else if $link }}
+  {{ else if $dateExpired }}
+    <div class="text-left font-bold underline-offset-2">
+      <p class="font-bold underline-offset-2">
+        {{- $title -}}
+      </p>
+      <time
+        class="pt-1 font-sans text-sm font-bold uppercase tracking-wide text-black"
+        datetime="{{ $dateExpired }}"
+      >
+        {{- $dateVerbose -}}
+      </time>
+    </div>
+  {{ else }}
     <a class="font-bold text-blue hover:text-g-6" href="{{ $link }}">
       {{ emojify $emoji }}
       <span class="underline underline-offset-2 hover:no-underline"
         >{{- $title -}}</span
       >
     </a>
-  {{ else }}
-    <span class="font-bold text-g-8" href="{{ $link }}">
-      {{ emojify $emoji }}
-      <span>{{- $title -}}</span>
-    </span>
   {{ end }}
 </li>

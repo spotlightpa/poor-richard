@@ -82,6 +82,7 @@ sidebar = """
     {{<sidebar-link
     title = "Register to vote"
     emoji = ":ballot_box_with_ballot:"
+    link = "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
@@ -113,7 +114,7 @@ sidebar = """
   {{<sidebar-links hed="Key Dates" event="true">}}
     {{<sidebar-link
     title="Last day to register to vote"
-    date="2023-10-23"
+    date-expired="2023-10-23"
     dateVerbose="Oct. 23, 2023"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
