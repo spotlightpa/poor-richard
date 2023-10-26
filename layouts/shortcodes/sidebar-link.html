@@ -9,7 +9,7 @@
 {{ if $date }}
   {{ $dateObj = time $date }}
   {{ $dateVerbose = partial "helper/date-apstyle" $dateObj.UTC }}
-  {{ $show = cond ($dateObj.After now) "sub" "expired" }}
+  {{ $show = cond ($dateObj.After now) "add-to-cal" "expired" }}
 {{ end }}
 
 
@@ -17,7 +17,7 @@
   class="font-serif text-base md:text-lg"
   data-ga-category="{{ urlize $title }}"
 >
-  {{ if eq $show "sub" }}
+  {{ if eq $show "add-to-cal" }}
     <button
       @click.prevent="
         import(url).then((m) => m.atcb_action(data($el), $el))
