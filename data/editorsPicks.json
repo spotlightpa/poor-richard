@@ -1,12 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-10-25-SPL_TAXFORGIVE1025.md"
+    "content/news/2023-10-26-SPLCODEREV.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-25-SPL_UNIFORMITY1025.md"
+    "content/news/2023-10-12-SPLCOURTTOOL.md",
+    "content/news/2023-10-04-SPLAVRLEGAL.md"
   ],
   "topSlots": [
-    "content/statecollege/2023-10-25-SPLALPCO.md",
+    "content/news/2023-10-25-SPL_TAXFORGIVE1025.md",
     "content/news/2023-10-24-SPLHYDTRAN.md",
     "content/news/2023-10-23-SPLPARPROB.md"
   ],
