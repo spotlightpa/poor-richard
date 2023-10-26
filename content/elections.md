@@ -82,7 +82,6 @@ sidebar = """
     {{<sidebar-link
     title = "Register to vote"
     emoji = ":ballot_box_with_ballot:"
-    link = "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link

@@ -37,12 +37,17 @@
         >Add to Calendar</span
       >
     </button>
-  {{ else }}
+  {{ else if $link }}
     <a class="font-bold text-blue hover:text-g-6" href="{{ $link }}">
       {{ emojify $emoji }}
       <span class="underline underline-offset-2 hover:no-underline"
         >{{- $title -}}</span
       >
     </a>
+  {{ else }}
+    <span class="font-bold text-g-8" href="{{ $link }}">
+      {{ emojify $emoji }}
+      <span>{{- $title -}}</span>
+    </span>
   {{ end }}
 </li>
