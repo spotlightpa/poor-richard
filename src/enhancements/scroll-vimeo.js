@@ -30,12 +30,14 @@ export default function scrollVimeo() {
     async play() {
       await this.loaded;
       await player.play();
+      // eslint-disable-next-line no-console
       console.log("play", this.$refs.splVideo.dataset.vimeoId);
     },
 
     async pause() {
       await this.loaded;
       await player.pause();
+      // eslint-disable-next-line no-console
       console.log("pause", this.$refs.splVideo.dataset.vimeoId);
     },
   };
