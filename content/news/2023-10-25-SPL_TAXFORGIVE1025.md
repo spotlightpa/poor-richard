@@ -76,7 +76,7 @@ Largely because of its flat income tax, Pennsylvania has the seventh-most regres
 
 Sales and property taxes take a larger bite out of the incomes of lower earners. A graduated income tax can offset some of that imbalance, while a flat tax leaves those disparities unaddressed, the study said.
 
-<strong>» Related: </strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness/"><strong>Explainer: The history behind Pennsylvania’s flat income tax</strong></a><strong></strong>
+<strong>» Related: </strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness-constitution/"><strong>Explainer: The history behind Pennsylvania’s flat income tax</strong></a><strong></strong>
 
 Not everyone agrees that a flat tax is unfair.
 
