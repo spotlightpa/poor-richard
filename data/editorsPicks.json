@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-10-26-SPLCODEREV.md"
+    "content/news/2023-10-27-SPLTOLBILLS.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-12-SPLCOURTTOOL.md",
-    "content/news/2023-10-04-SPLAVRLEGAL.md"
+    "content/news/2020-02-05-guns.md"
   ],
   "topSlots": [
+    "content/news/2023-10-26-SPLCODEREV.md",
     "content/statecollege/2023-10-26-SPLWILDSWORK.md",
-    "content/statecollege/2023-10-26-SPL_PSULETTER1026.md",
-    "content/news/2023-10-25-SPL_TAXFORGIVE1025.md"
+    "content/news/2023-10-26-SPLNEWSQUIZOCT23.md"
   ],
   "topper": []
 }
