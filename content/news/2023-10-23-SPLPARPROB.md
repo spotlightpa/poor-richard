@@ -33,7 +33,7 @@ Broadly, it’s clear that Pennsylvanians are dealing with a frustrating bureauc
 
 Kathryn Ah Wong is one of those people.
 
-In April, the Clearfield County mother of two was told her younger son had been kicked off of his CHIP benefits because he had outside insurance. It was an error, Ah Wong said, but it led her on a monthslong odyssey.
+In April, the Crawford County mother of two was told her younger son had been kicked off of his CHIP benefits because he had outside insurance. It was an error, Ah Wong said, but it led her on a monthslong odyssey.
 
 It’s possible Ah Wong’s issues were related to yet another big change Pennsylvania was undertaking earlier this year: <a href="https://www.spotlightpa.org/news/2023/04/pa-medicaid-snap-food-stamps-rollbacks-staffing/">an ambitious IT overhaul of its CHIP system</a>, switching the responsibility for reenrolling children in that program from participating insurers to DHS.
 
@@ -149,7 +149,7 @@ Keenan said the children qualify for CHIP and is hopeful the issue will be resol
 
 “What really stresses me out is like, kids get sick,” she said. “It&#39;s October. It&#39;s flu season. COVID exists. My kids get sick, I have to wonder, can I take them to the doctor?”
 
-Ah Wong, the Clearfield County mom who spent the spring and summer trying to get her younger son back on CHIP, is in a similar situation.
+Ah Wong, the Crawford County mom who spent the spring and summer trying to get her younger son back on CHIP, is in a similar situation.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
