@@ -35,6 +35,8 @@ Have a question for our panelists? Send them in advance to <a href="mailto:event
 
 - <strong>Salewa Ogunmefun,</strong> executive director, Pennsylvania Voice
 
+- <strong>Jeff Greenburg</strong>, senior advisor, Committee of Seventy
+
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a><br/>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
