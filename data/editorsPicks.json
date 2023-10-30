@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-10-27-SPLTOLBILLS.md"
+    "content/news/2023-10-30-SPLNO23COUNT.md"
   ],
   "subfeatures": [
-    "content/news/2020-02-05-guns.md"
+    "content/news/2023-10-09-SPLNOV24FULLGU.md",
+    "content/news/2023-10-12-SPLCOURTTOOL.md"
   ],
   "topSlots": [
+    "content/news/2023-10-27-SPLTOLBILLS.md",
     "content/news/2023-10-26-SPLCODEREV.md",
-    "content/statecollege/2023-10-26-SPLWILDSWORK.md",
-    "content/news/2023-10-26-SPLNEWSQUIZOCT23.md"
+    "content/statecollege/2023-10-26-SPLWILDSWORK.md"
   ],
   "topper": []
 }
