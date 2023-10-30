@@ -1,14 +1,10 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-10-26-SPL_PSULETTER1026.md"
+    "content/statecollege/2023-10-26-SPLWILDSWORK.md"
   ],
-  "subfeatures": [
-    "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md",
-    "content/statecollege/2022-12-15-SPLPSUSECRET.md",
-    "content/statecollege/2023-05-19-SPLPRIVATEBUD.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/statecollege/2023-10-26-SPLWILDSWORK.md",
+    "content/statecollege/2023-10-26-SPL_PSULETTER1026.md",
     "content/statecollege/2023-10-19-SPLPOTTER.md",
     "content/statecollege/2023-10-12-SPLSNOWSHOE.md"
   ],
