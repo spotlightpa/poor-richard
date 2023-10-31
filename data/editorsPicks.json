@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-10-30-SPLNO23COUNT.md"
+    "content/news/2023-10-31-SPLCOFOLO.md"
   ],
   "subfeatures": [
+    "content/news/2023-10-26-SPLCODEREV.md",
     "content/news/2023-10-09-SPLNOV24FULLGU.md",
     "content/news/2023-10-12-SPLCOURTTOOL.md"
   ],
   "topSlots": [
+    "content/news/2023-10-30-SPLNO23COUNT.md",
     "content/news/2023-10-27-SPLTOLBILLS.md",
-    "content/news/2023-10-26-SPLCODEREV.md",
     "content/statecollege/2023-10-26-SPLWILDSWORK.md"
   ],
   "topper": []
