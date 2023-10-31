@@ -65,7 +65,7 @@ All told, the Supreme Court race has attracted at least $12.6 million and counti
 
 No matter who wins the high court’s vacant seat, it won’t flip the balance of power; four of the current justices are Democrats and two are Republicans.
 
-However, the outcome could make a big difference in the court’s partisan makeup later in the decade, when several judges are up for reelection.
+However, the outcome could make a big difference in the court’s partisan makeup later in the decade, when several judges are up for retention.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
