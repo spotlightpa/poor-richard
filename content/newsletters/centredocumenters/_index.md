@@ -1,5 +1,5 @@
 +++
-image = "2021/06/01gc-4k5c-twja-965v.jpeg"
+image = "2023/11/01jm-5423-9jym-wv30.webp"
 image-size = "inline"
 published = 2020-09-03T01:14:40.334Z
 title = "Sign up for Centre Documenters"
@@ -13,7 +13,7 @@ occurence = "First and Third Monday"
 url = "/centredocumenters/"
 
 [cascade]
-image = "2021/06/01gc-4k5c-twja-965v.jpeg"
+image = "2023/11/01jm-5423-9jym-wv30.webp"
 +++
 
 **Centre Documenters** recruits, trains, and pays local citizen Documenters to attend and document meetings in six under-covered townships across Centre County.
