@@ -19,7 +19,7 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-HARRISBURG — Voters this Election Day in Pennsylvania will be asked to consider judicial retentions, including if they want to keep Judge Vic Stabile on the bench of the commonwealth’s Superior Court.
+HARRISBURG — Voters this Election Day in Pennsylvania will be asked to consider judicial retentions, including if they want to keep Judge Jack Panella on the bench of the commonwealth’s Superior Court.
 
 After a judge is elected to one of Pennsylvania’s statewide courts, they get a ten-year term and must then go up for retention.
 
