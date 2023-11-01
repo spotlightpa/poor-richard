@@ -71,7 +71,7 @@ Courts of Common Pleas are the main trial courts in the commonwealth, and are th
 
 Even more consequential retention votes will be coming up in 2025, when three state Supreme Court justices elected as Democrats will be on the ballot and the balance of the court could flip.
 
-For more on retention, <a href="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-judicial-retention-superior-court-common-pleas/">check out Spotlight PA’s full guide on the topic</a>. And for details about Vic Stabile, the other Superior Court judge up for retention this November, read on here.
+For more on retention, <a href="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-judicial-retention-superior-court-common-pleas/">check out Spotlight PA’s full guide on the topic</a>. And for details about Vic Stabile, the other Superior Court judge up for retention this November, <a href="https://www.spotlightpa.org/news/2023/11/victor-stabile-pennsylvania-judicial-retention-2023-electionn/">read on here</a>.
 
 <strong>Spotlight PA’s 2023 voter guides:</strong>
 
