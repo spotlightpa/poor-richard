@@ -65,11 +65,11 @@
   "sidebar-top-link": "/donate/",
   "sidebar-top-width": 300,
   "sticky-active": true,
-  "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
+  "sticky-image-description": "Support Spotlight PA's vital investigative and public-service journalism and for a limited time, your gift will be TRIPLED!",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
+    "https://files.data.spotlightpa.org/uploads/01jm/5fg2/newsmatch-2022-squares-5-.gif"
   ],
-  "sticky-link": "/newsletters",
+  "sticky-link": "/donate",
   "support-active": true,
   "support-bg-color": "#ffe5e5",
   "support-button-bg-color": "#ff0000",
