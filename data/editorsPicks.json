@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-11-01-SPLPOLLSJOE.md"
+    "content/news/2023-11-01-SPLPOLLSJOE.md",
+    "content/news/2023-11-01-SPLRGGIRULING.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-09-SPLNOV24FULLGU.md",
-    "content/news/2023-10-16-SPLMAGENGUI.md",
-    "content/news/2023-10-30-SPLNO23COUNT.md"
+    "content/news/2023-10-10-SPLRGGIMEMO.md"
   ],
   "topSlots": [
+    "content/news/2023-11-01-SPLPOLLSJOE.md",
     "content/news/2023-10-31-SPLFINALCF.md",
-    "content/news/2023-10-31-SPLCOFOLO.md",
-    "content/news/2023-10-30-SPLNO23COUNT.md"
+    "content/news/2023-10-31-SPLCOFOLO.md"
   ],
   "topper": []
 }
