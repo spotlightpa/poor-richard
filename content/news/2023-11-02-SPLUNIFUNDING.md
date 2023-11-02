@@ -1,6 +1,6 @@
 +++
 authors = ["Stephen Caruso"]
-blurb = "The Pennsylvania House has approved $642 million in funding for Lincoln, Penn State, Pitt, and Temple universities. It’s unclear if the state Senate will get on board."
+blurb = "The Pennsylvania House has approved funding for Lincoln, Penn State, Pitt, and Temple universities with a mandate they freeze tuition. It’s unclear if the state Senate will get on board."
 byline = "Stephen Caruso of Spotlight PA"
 description = "State funding for Lincoln, Penn State, Pitt, and Temple universities is another step closer to PA Gov. Josh Shapiro’s desk."
 image = "2023/08/01jd-ah84-fged-ertg.jpeg"
