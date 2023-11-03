@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Public Safety"
 kicker = "Public Safety"
 linktitle = "Public Safety news from Spotlight PA"
+description = "The latest news on public safety issues affecting Pennsylvanians."
 +++

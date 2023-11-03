@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Environment"
 kicker = "Environment"
 linktitle = "Environmental news from Spotlight PA"
+description = "Understand the impact of laws and regulations on Pennsylvania's environment, from oil and gas, to plastic bag bans, to public utilities and more."
 +++

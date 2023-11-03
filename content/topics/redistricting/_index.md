@@ -7,5 +7,5 @@ kicker = "Redistricting"
 title = "Redistricting"
 title-tag = "Spotlight PA coverage of redistricting in Pennsylvania "
 linktitle = "Latest on redistricting in Pennsylvania "
-description = "The latest on redistricting in Pennsylvania "
+description = "Understand redestricting in Pennsylvania, including congressional district maps, gerrymandering, control of the legislature, and more."
 +++

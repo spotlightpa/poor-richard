@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Pensions"
 kicker = "Pensions"
 linktitle = "Ongoing coverage of the PSERS pensions scandal from Spotlight PA"
+description = "Understand Pennsylvania's pension funds, including the funds for state employees, public school teachers, and more."
 +++

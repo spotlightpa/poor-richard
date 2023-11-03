@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Criminal Justice"
 kicker = "Criminal Justice"
 linktitle = "Criminal justice news from Spotlight PA"
+description = "The latest news on Pennsylvania's criminal justice system, including state police, department of corrections, criminal courts, and more."
 +++
