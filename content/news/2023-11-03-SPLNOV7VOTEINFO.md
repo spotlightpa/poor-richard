@@ -53,7 +53,7 @@ Here’s what you can expect to see on your ballot:
 
 - All voters will have two options for one vacant seat on Pennsylvania’s Commonwealth Court: Matt Wolf (D) or Megan Martin (R). Read <a href="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-commonwealth-superior-court-candidates/">Spotlight PA’s guide on these candidates</a> and our explainer to learn more about what the <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-commonwealth-court-judges-rulings-cases-elections-explainer/">Commonwealth Court does</a>.
 
-- To learn about how these elected judges can shape policy on some of the most pressing issues in our commonwealth, check out <a href="http://n">Spotlight PA’s interactive tool</a>, where you can explore pivotal cases and decisions from the Supreme, Superior, and Commonwealth Courts on issues from abortion to education, and more.
+- To learn about how these elected judges can shape policy on some of the most pressing issues in our commonwealth, check out <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-judges-supreme-superior-commonwealth-court-interactive-tool/">Spotlight PA’s interactive tool</a>, where you can explore pivotal cases and decisions from the Supreme, Superior, and Commonwealth Courts on issues from abortion to education, and more.
 
 There will be no statewide proposed constitutional amendments on the ballot. However, there may be local ballot questions depending on where you live.
 
