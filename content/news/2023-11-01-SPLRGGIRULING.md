@@ -33,7 +33,7 @@ In one of the two cases Commonwealth Court considered, the plaintiffs included a
 
 In the other case, state legislative leaders are arguing the Wolf administration overstepped its power by trying to implement RGGI without their approval. Because this argument centers on the legislature’s power to issue taxes, it would mostly become moot if a higher court finds that RGGI costs are actually a fee.
 
-Pennsylvania first joined RGGI in 2019, but the move was quickly met with lawsuits from state Senate Republicans and energy interests. In 2022, Commonwealth Court issued an injunction that prevented Pennsylvania from moving forward with RGGI. This included a bar on the state participating in auctions in which companies buy and sell credits that allow them to emit carbon, a central part of the program.
+Pennsylvania first started the process of joining RGGI in 2019, but the move was quickly met with lawsuits from state Senate Republicans and energy interests. In 2022, Commonwealth Court issued an injunction that prevented Pennsylvania from moving forward with RGGI. This included a bar on the state participating in auctions in which companies buy and sell credits that allow them to emit carbon, a central part of the program.
 
 Following the court’s decisions, state Senate Majority Leader Joe Pittman (R., Indiana) said in a statement that Pennsylvania’s entrance into RGGI “may only be achieved through legislation duly enacted by the Pennsylvania General Assembly.
 
