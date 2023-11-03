@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-11-02-SPLUNIFUNDING.md"
+    "content/news/2023-11-03-SPLNOV7VOTEINFO.md"
   ],
   "subfeatures": [
     "content/news/2023-10-12-SPLCOURTTOOL.md",
-    "content/news/2023-10-17-SPLCODEEX.md",
-    "content/news/2023-09-28-SPLSEPBUDUP.md"
+    "content/news/2023-09-05-SPLSCOPAGEN23.md",
+    "content/news/2023-09-07-SPLAPPELLATEGEN23.md"
   ],
   "topSlots": [
-    "content/news/2023-11-02-SPLNEWSQUIZOCT30.md",
-    "content/news/2023-11-01-SPLRGGIRULING.md",
-    "content/news/2023-11-01-SPLPOLLSJOE.md"
+    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md",
+    "content/news/2023-11-02-SPLUNIFUNDING.md",
+    "content/news/2023-11-02-SPLNEWSQUIZOCT30.md"
   ],
   "topper": []
 }
