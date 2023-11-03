@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-10-18-SPL_LOCAL_PENSIONS.md"
+    "content/news/2023-10-30-SPLNO23COUNT.md"
   ],
   "subfeatures": [
-    "content/news/2023-08-02-SPLOPIOIDGUIDANCE.md",
-    "content/news/2023-06-01-SPLOPTRANSPARENCY0601.md",
-    "content/news/2023-05-09-SPLOPIOD525.md"
+    "content/news/2023-10-09-SPLNOV24FULLGU.md",
+    "content/news/2023-10-12-SPLCOURTTOOL.md"
   ],
   "topSlots": [
-    "content/news/2023-10-17-SPL_LOCAL_PENSIONS.md",
-    "content/news/2023-10-17-SPLCODEEX.md",
-    "content/news/2023-10-16-SPLMAGENGUI.md"
+    "content/news/2023-10-27-SPLTOLBILLS.md",
+    "content/news/2023-10-26-SPLCODEREV.md",
+    "content/statecollege/2023-10-26-SPLWILDSWORK.md"
   ],
   "topper": []
 }

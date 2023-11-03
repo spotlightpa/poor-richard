@@ -6,7 +6,7 @@ description = "Opioid payments for county governments and county district attorn
 image = "2023/10/01jj-y6q8-xcea-3a8e.jpeg"
 image-credit = "Ed Mahon / Spotlight PA"
 image-description = "Sullivan County commissioners used a portion of opioid settlement money to hire a county case manager. Her desk includes a box of the opioid overdose-reversal drug Narcan."
-internal-id = "SPL_LOCAL_PENSIONS"
+internal-id = "SPL_OPIOID_PAY1018"
 kicker = "Health"
 modal-exclude = false
 published = 2023-10-18T05:00:00-04:00
@@ -18,6 +18,8 @@ topics = ["Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+{{<audio src="https://files.data.spotlightpa.org/uploads/01jk/33sr/opiods-muni-funding.mp3" label="Click here to listen to an audio introduction to this story.">}}
 
 <strong>LAPORTE — </strong>A new Spotlight PA analysis of recently released opioid settlement payments shows which Pennsylvania counties are receiving the most money per resident to help them respond to an epidemic that continues to kill thousands of people each year in the state.
 

@@ -90,7 +90,7 @@ copy="""
   {{<featured/large>}}Funds for Spotlight PA are donated to the nonprofit <a href="https://www.lenfestinstitute.org/" class="text-yellow">Lenfest Institute for Journalism</a>, which then directs them to our work. As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
 
 """
-[blocks.cta]
+[[blocks.actions]]
 url = "/design/"
 copy = "Action in block two"
 

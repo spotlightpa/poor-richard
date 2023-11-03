@@ -48,7 +48,7 @@ It varies. [Mayo Clinic Laboratories](https://www.mayocliniclabs.com/test-catalo
 
 <strong>How long are people impaired from cannabis?</strong>
 
-That varies, too, but studies related to driving and cognition have shown that occasional recreational users “[return to a generally nonimpaired state within 3 to 6 hours after smoking marijuana](https://www.jhsph.edu/research/centers-and-institutes/johns-hopkins-education-and-research-center-for-occupational-safety-and-health/Marijuana%20in%20the%20Workplace%20Holland%202015.pdf),” according to a 2015 report from two occupational health groups.
+That varies, too, but studies related to driving and cognition have shown that occasional recreational users “[return to a generally nonimpaired state within 3 to 6 hours after smoking marijuana](https://web.archive.org/20220925161344/https://www.jhsph.edu/research/centers-and-institutes/johns-hopkins-education-and-research-center-for-occupational-safety-and-health/Marijuana%20in%20the%20Workplace%20Holland%202015.pdf),” according to a 2015 report from two occupational health groups.
 
 <strong>Is there a standard definition of impairment for cannabis?</strong>
 
@@ -72,14 +72,14 @@ No. Pennsylvania’s medical marijuana law doesn’t define impairment. Often th
 <summary>Sources (in order)</summary>
 
  - [Pennsylvania Department of Health, July
-   2022](https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
+   2022](https://web.archive.org/20220919201711/https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
 
  - [Pennsylvania Department of Health, July
-   2022](https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
+   2022](https://web.archive.org/20220919201711/https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
 
 
  - [Pennsylvania Department of Health, July
-   2022](https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
+   2022](https://web.archive.org/20220919201711/https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
 
  -  [Pennsylvania Department of Health, August
    2022](https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/#:~:text=Qualifying%20Medical%20Conditions&text=Autism.,spasticity%2C%20and%20other%20associated%20neuropathies.)
@@ -108,7 +108,7 @@ All of those laws include exceptions if federal laws or rules require drug testi
 
   - [Minnesota statutes](https://www.revisor.mn.gov/statutes/cite/152.32)
 
-  - [New York State Department of Labor guidance](https://dol.ny.gov/system/files/documents/2021/10/p420-cannabisfaq-10-08-21.pdf)
+  - [New York State Department of Labor guidance](https://web.archive.org/20220922231904/https://dol.ny.gov/system/files/documents/2021/10/p420-cannabisfaq-10-08-21.pdf)
 
   - [New Jersey Office of the Attorney General](https://www.documentcloud.org/documents/22268834-cannabis-compliance-memo-for-law-enforcement-3?responsive=1&title=1); [New Jersey statutes](https://law.justia.com/codes/new-jersey/2021/title-24/section-24-6i-52/)
 
@@ -170,7 +170,7 @@ The lack of clarity is frustrating for employers too. More than 30 employer grou
 
 “Employers in general are not opposed to medical marijuana,” Alex Halper, director of government affairs for the chamber, told Spotlight PA. “They just want to know what the rules are when they’re hiring for safety-sensitive positions.”
 
-The safety question is a complex one. Marijuana can impair a person’s judgment, coordination, and balance, according to a [report from the National Institute on Drug Abuse.](https://nida.nih.gov/download/1380/cannabis-marijuana-research-report.pdf?v=7fc7d24c3dc120a03cf26348876bc1e4) But multiple studies show that commonly used urine drug screens might indicate that someone used marijuana days or weeks ago. The tests don’t tell you whether an employee was impaired at work.
+The safety question is a complex one. Marijuana can impair a person’s judgment, coordination, and balance, according to a [report from the National Institute on Drug Abuse.](https://web.archive.org/20220914160444/https://nida.nih.gov/download/1380/cannabis-marijuana-research-report.pdf?v=7fc7d24c3dc120a03cf26348876bc1e4) But multiple studies show that commonly used urine drug screens might indicate that someone used marijuana days or weeks ago. The tests don’t tell you whether an employee was impaired at work.
 
 When Pennsylvania lawmakers successfully passed a medical marijuana bill in 2016, they set specific blood limits for users working in a few jobs: ones that require people to operate certain chemicals, high-voltage electricity, or any other public utility. But restrictions on other workers — such as those working at heights or in confined spaces — are more vague.
 

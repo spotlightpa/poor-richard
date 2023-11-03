@@ -115,21 +115,18 @@ sidebar = """
     {{<sidebar-link
     title="Last day to register to vote"
     date="2023-10-23"
-    dateVerbose="Oct. 23, 2023"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title="Last day to apply for mail ballot"
     date="2023-10-31"
-    dateVerbose="Oct. 31, 2023"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title="Election Day"
     date="2023-11-07"
-    dateVerbose="Nov. 7, 2023"
     link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
@@ -190,15 +187,19 @@ hed="Voter Ready"
 dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."
 date="2023-11-02"
 dateVerbose="Nov. 2, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
+registration="https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg"
 
 [[blocks.entries]]
 hed="Result Review"
 dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come. Registration coming soon."
 date="2023-11-16"
 dateVerbose="Nov. 16, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-results-event/"
+registration="https://zoom.us/webinar/register/WN_wf_P08sRQF-jRFrnG-T4NA"
 +++
 
-At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes. 
+At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes.
 
 Our goal is that the resources on this page will give you the critical information you need in order to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 

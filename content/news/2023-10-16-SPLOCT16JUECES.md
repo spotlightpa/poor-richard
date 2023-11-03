@@ -75,7 +75,7 @@ Los operadores de ambos partidos esperan ampliamente que esa carrera se conviert
 
 &#34;Hay gente deseando sacar de la banca a uno o a los tres bebés demócratas de 2015&#34;, dijo el consultor político del Partido Republicano Christopher Nicholas.
 
-<strong>&gt;&gt; LEER MÁS SOBRE LAS ELECCIONES 2023 DE SPOTLIGHT PA:</strong>
+<strong>&gt;&gt; LEER MÁS DE SPOTLIGHT PA SOBRE LAS ELECCIONES 2023:</strong>
 
 - <a href="https://www.spotlightpa.org/news/2023/10/pensilvania-eleccion-judicial-2023-colegio-electoral-voto-correo-guia-completa/">Elecciones de Pa. 2023: Una guía completa sobre quién está en la papeleta, cuándo votar, cómo votar, dónde votar, la emisión de votos por correo y más</a>
 
@@ -83,7 +83,7 @@ Los operadores de ambos partidos esperan ampliamente que esa carrera se conviert
 
 - <a href="https://www.spotlightpa.org/news/2023/09/elecciones-mancomunidad-pennsylvania-2023-candidatos-corte-superior/">Elecciones Pa. 2023: Una guía completa de los candidatos a la Commonwealth y las Cortes Superiores</a>
 
-- <a href="https://www.spotlightpa.org/news/2023/04/pa-eleccion-primaria-2023-candidatos-contienda-alcalde-concejal-juez-investigacion-guia/">Elecciones primarias Pa. 2023: Una guía básica para investigar a los candidatos a la junta escolar, para juez y más</a>
+- <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-votacion-por-correo-boleta-como-solicitar-llenar-devolver/">Elecciones Pa. 2023: Todo lo que necesita saber para solicitar, llenar y devolver su voto por correo</a>
 
 <h2 id="spl-heading-3">Los expedientes de los jueces de la Corte Superior a retener</h2>
 

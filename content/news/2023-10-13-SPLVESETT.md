@@ -19,6 +19,8 @@ topics = ["The Capitol", "Josh Shapiro"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Oct. 20: </em></strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-josh-shapiro-mike-vereb-sexual-harassment-settlement-amount/"><strong><em>Gov. Josh Shapiro’s office will pay $295K to settle sexual harassment allegation against top aide</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — Gov. Josh Shapiro’s office quietly entered into a settlement agreement to resolve allegations of sexual harassment against one of his most trusted senior aides weeks before the staffer resigned, Spotlight PA has learned.
 
 The settlement contains a clause that bars both sides from discussing the allegations, according to two sources familiar with the agreement. The sources were not authorized to publicly discuss the settlement and requested anonymity.
