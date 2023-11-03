@@ -6,6 +6,7 @@ description = "A complete guide to the Democratic candidate for the Pennsylvania
 image = "external/4x894j7de5j7hyhfjbv9rtnxdc.jpeg"
 image-credit = "Via campaign Facebook page"
 image-description = "Daniel McCaffery, a candidate for Pennsylvania Supreme Court"
+image-gravity = "ce"
 internal-id = "SPLMCCAFFERY"
 kicker = "Elections"
 modal-exclude = false
