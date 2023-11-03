@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Rural Issues"
 kicker = "Rural Issues"
 linktitle = "News affecting rural Pennsylvanians from Spotlight PA"
+description = "Understand the unique issues facing Pennsylvania's rural communities, including how state laws and the state budget affect these communities."
 +++

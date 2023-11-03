@@ -6,4 +6,5 @@ image-size = "hidden"
 kicker = "How Local Government Works"
 title = "How Local Government Works"
 linktitle = "Spotlight PA explains how Local Government really works"
+description = "Spotlight PA explains how Local Government works in Pennsylvania, including municipal planning, public record requests, and more."
 +++

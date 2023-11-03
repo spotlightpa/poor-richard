@@ -7,4 +7,5 @@ image-size = "hidden"
 kicker = "The Capitol"
 title = "The Capitol"
 linktitle = "Latest news from Harrisburg"
+description = "The latest news from Pennsylvania's Capitol in Harrisburg, including coverage of the state house of representatives, senate, budget, and governor's office."
 +++

@@ -2,7 +2,7 @@
 title = "News Archive for Spotlight PA"
 title-tag = "Latest News from Spotlight PA"
 linktitle = "News"
-description = "Read the latest news from Spotlight PA"
+description = "Independent, nonprofit, and free news covering statewide issues in Pennsylvania. High quality reporting focused on transparency and accountability."
 sort-by = "all"
 paginate = 60
 +++

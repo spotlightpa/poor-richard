@@ -9,6 +9,6 @@ image-size = "hidden"
 kicker = "Penn State"
 title = "Penn State University"
 linktitle = "Penn State news from Spotlight PA"
-description = ""
+description = "Vital reporting on Pennsylvania State University and University Park in State College, Pa., holding leadership to account and empowering the community."
 +++
 Our reporting on Pennsylvania State University and University Park in State College, Pa. goes far beyond Nittany Lions football, providing deep insights and vital reporting holding leadership to account and empowering people in the community to drive positive change. Our unique reporting is powered by the only investigative reporter in the country dedicated to Penn State, Pennsylvania's sole land grant institution.
