@@ -6,6 +6,7 @@ description = "A complete guide to the Republican candidate for the Pennsylvania
 image = "external/h5qj78jhctxxpa256886th33sm.jpeg"
 image-credit = "Via campaign Facebook page"
 image-description = "Carolyn Carluccio, a candidate for Pennsylvania Supreme Court"
+image-gravity = "ce"
 internal-id = "SPLCARLUCCIO"
 kicker = "Elections"
 modal-exclude = false
