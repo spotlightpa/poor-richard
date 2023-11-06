@@ -92,11 +92,11 @@ A 2017 report by former Pennsylvania Auditor General Eugene DePasquale found the
 
 DePasquale told Spotlight PA that each university audit his office conducted included a review of the institution’s Clery Act policies and practices. The recommendations his report offered to Penn State — such as standardizing the crime reporting system across campuses — resembled those his office made to other schools.
 
-A Penn State spokesperson declined to say whether the university uses a standardized reporting system across its Commonwealth Campuses or if it conducts internal Clery Act compliance reviews, another recommendation from the former auditor general.
+A Penn State spokesperson said the university uses a standardized reporting system across its Commonwealth Campuses but did not say if it conducts internal Clery Act compliance reviews, another recommendation from the former auditor general.
 
-“We do not plan to continue to respond to a report that is now six years old,” the spokesperson told Spotlight PA. “We provided a university response at the time and that has been previously shared with you.”
+The spokesperson initially declined to comment on the question and repeatedly referred Spotlight PA to a May 2017 statement, which did not provide the requested information.
 
-Penn State’s <a href="https://www.psu.edu/news/administration/story/penn-state-response-auditor-general-performance-audit-report/">response to the auditor general</a>, dated May 2017, said that the university was completing the first steps of implementing a standardized reporting system. The response also said that after fiscal year 2019 the university would decide whether to do internal Clery Act compliance reviews.
+“We do not plan to continue to respond to a report that is now six years old,” the spokesperson initially told Spotlight PA. “We provided a university response at the time and that has been previously shared with you.”
 
 Federal program reviews, like the one conducted on Penn State in 2011, are the main way the U.S. Department of Education enforces the Clery Act, said Abigail Boyer, associate executive director of the Clery Center, a Pennsylvania-based nonprofit that helps organizations follow the law.
 
