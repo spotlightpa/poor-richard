@@ -1,7 +1,7 @@
 {"list": [
   {
     "Name": "Gettysburg Connection",
-    "county": "Adams",
+    "County": "Adams",
     "City": "Gettysburg",
     "url": "https://gettysburgconnection.org/",
     "logo-url": "",
@@ -15,7 +15,7 @@
   },
   {
     "Name": "Gettysburg Times",
-    "county": "Adams",
+    "County": "Adams",
     "City": "Gettysburg",
     "url": "http://www.gettysburgtimes.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx77/gettysburg-times.png",
@@ -29,7 +29,7 @@
   },
   {
     "Name": "Allegheny Front",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.alleghenyfront.org/",
     "logo-url": "",
@@ -43,7 +43,7 @@
   },
   {
     "Name": "NextPittsburgh",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.nextpittsburgh.com/",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g9/882m/next-pittsburgh.png",
@@ -57,7 +57,7 @@
   },
   {
     "Name": "Post-Gazette",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.post-gazette.com/",
     "logo-url": "",
@@ -71,7 +71,7 @@
   },
   {
     "Name": "Postindustrial.com",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://postindustrial.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7b/postindustrial.png",
@@ -85,7 +85,7 @@
   },
   {
     "Name": "PRESENTE: Pittsburgh Latino Magazine",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://presentepgh.com/",
     "logo-url": "",
@@ -99,7 +99,7 @@
   },
   {
     "Name": "PublicSource",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.publicsource.org",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gk/1nrj/publicsource.png",
@@ -113,7 +113,7 @@
   },
   {
     "Name": "TribLIVE",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://triblive.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7g/triblive.svg",
@@ -127,7 +127,7 @@
   },
   {
     "Name": "WESA",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.wesa.fm/",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7c/wesa.png",
@@ -141,7 +141,7 @@
   },
   {
     "Name": "Gazette 2.0",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Stowe Township",
     "url": "https://www.gazette20.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx76/gazette.png",
@@ -155,7 +155,7 @@
   },
   {
     "Name": "Pittsburgh City Paper",
-    "county": "Allegheny",
+    "County": "Allegheny",
     "City": "Pittsburgh",
     "url": "https://www.pghcitypaper.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01hh/f6jd/citypaper.svg",
@@ -169,7 +169,7 @@
   },
   {
     "Name": "Beaver County Times",
-    "county": "Beaver",
+    "County": "Beaver",
     "City": "Beaver",
     "url": "https://www.timesonline.com/",
     "logo-url": "",
@@ -183,7 +183,7 @@
   },
   {
     "Name": "BCTV",
-    "county": "Berks",
+    "County": "Berks",
     "City": "Reading",
     "url": "https://www.bctv.org",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gy/dn82/bctv.png",
@@ -197,7 +197,7 @@
   },
   {
     "Name": "Altoona Mirror",
-    "county": "Blair",
+    "County": "Blair",
     "City": "Altoona",
     "url": "https://www.altoonamirror.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01h4/byew/altoona-mirror-logo.png",
@@ -211,7 +211,7 @@
   },
   {
     "Name": "Morrisons Cove Herald, Inc.",
-    "county": "Blair",
+    "County": "Blair",
     "City": "Martinsburg",
     "url": "https://www.mcheraldonline.com/",
     "logo-url": "",
@@ -225,7 +225,7 @@
   },
   {
     "Name": "The Intelligencer",
-    "county": "Bucks",
+    "County": "Bucks",
     "City": "Langhorne",
     "url": "https://www.theintell.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx77/intelligencer.png",
@@ -239,7 +239,7 @@
   },
   {
     "Name": "Delaware Valley News",
-    "county": "Bucks",
+    "County": "Bucks",
     "City": "Bensalem",
     "url": "https://delawarevalleynews.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx74/delaware-valley-news.png",
@@ -253,7 +253,7 @@
   },
   {
     "Name": "Bucks County Courier Times",
-    "county": "Bucks",
+    "County": "Bucks",
     "City": "Langhorne",
     "url": "https://www.buckscountycouriertimes.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx73/courier-times.png",
@@ -267,7 +267,7 @@
   },
   {
     "Name": "LevittownNow.com",
-    "county": "Bucks",
+    "County": "Bucks",
     "City": "Levittown",
     "url": "https://levittownnow.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx78/levittown-now.png",
@@ -281,7 +281,7 @@
   },
   {
     "Name": "NewtownPANow.com",
-    "county": "Bucks",
+    "County": "Bucks",
     "City": "Newtown",
     "url": "http://newtownpanow.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7a/newtown-now.png",
@@ -295,7 +295,7 @@
   },
   {
     "Name": "Cranberry Eagle",
-    "county": "Butler",
+    "County": "Butler",
     "City": "Cranberry Township",
     "url": "https://www.cranberryeagle.com/",
     "logo-url": "",
@@ -309,7 +309,7 @@
   },
   {
     "Name": "Butler Eagle",
-    "county": "Butler",
+    "County": "Butler",
     "City": "Butler",
     "url": "https://www.butlereagle.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01h9/ffn5/eaglelogo.png",
@@ -323,7 +323,7 @@
   },
   {
     "Name": "The Tribune-Democrat",
-    "county": "Cambria",
+    "County": "Cambria",
     "City": "Johnstown",
     "url": "http://tribune-democrat.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7c/tribune-democrat.png",
@@ -337,7 +337,7 @@
   },
   {
     "Name": "Times News",
-    "county": "Carbon",
+    "County": "Carbon",
     "City": "Lehighton",
     "url": "https://www.tnonline.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7b/times-news-online.png",
@@ -351,7 +351,7 @@
   },
   {
     "Name": "Centre Daily Times",
-    "county": "Centre",
+    "County": "Centre",
     "City": "State College",
     "url": "https://www.centredaily.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7d/centre-daily-times.svg",
@@ -365,7 +365,7 @@
   },
   {
     "Name": "WPSU",
-    "county": "Centre",
+    "County": "Centre",
     "City": "State College",
     "url": "https://wpsu.psu.edu",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01h4/97s4/wpsu-rgb-color.svg",
@@ -379,7 +379,7 @@
   },
   {
     "Name": "StateCollege.com",
-    "county": "Centre",
+    "County": "Centre",
     "City": "State College",
     "url": "https://www.statecollege.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01h4/pb2p/state-college.png",
@@ -393,7 +393,7 @@
   },
   {
     "Name": "Explore Clarion",
-    "county": "Clarion",
+    "County": "Clarion",
     "City": "Clarion",
     "url": "http://www.exploreclarion.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6y/explore-clarion.jpeg",
@@ -407,7 +407,7 @@
   },
   {
     "Name": "Explore 814",
-    "county": "Clarion",
+    "County": "Clarion",
     "City": "Clarion County",
     "url": "http://explore814.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx75/explore-814.png",
@@ -421,7 +421,7 @@
   },
   {
     "Name": "GANT Media",
-    "county": "Clearfield",
+    "County": "Clearfield",
     "City": "Clearfield",
     "url": "https://gantnews.com/",
     "logo-url": "",
@@ -435,7 +435,7 @@
   },
   {
     "Name": "The Record & TheRecord-Online.com",
-    "county": "Clinton",
+    "County": "Clinton",
     "City": "Mill Hall",
     "url": "https://therecord-online.com/",
     "logo-url": "",
@@ -449,7 +449,7 @@
   },
   {
     "Name": "BU Now",
-    "county": "Columbia",
+    "County": "Columbia",
     "City": "Bloomsburg",
     "url": "https://bunow.com/",
     "logo-url": "",
@@ -463,7 +463,7 @@
   },
   {
     "Name": "The Meadville Tribune",
-    "county": "Crawford",
+    "County": "Crawford",
     "City": "Meadville",
     "url": "https://www.meadvilletribune.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx79/meadville-tribune.png",
@@ -477,7 +477,7 @@
   },
   {
     "Name": "PennLive/The Patriot News",
-    "county": "Dauphin",
+    "County": "Dauphin",
     "City": "Harrisburg",
     "url": "https://www.pennlive.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7f/pennlive.svg",
@@ -491,7 +491,7 @@
   },
   {
     "Name": "WITF",
-    "county": "Dauphin",
+    "County": "Dauphin",
     "City": "Harrisburg",
     "url": "https://www.witf.org",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7g/witf.svg",
@@ -505,7 +505,7 @@
   },
   {
     "Name": "La Voz Latina Central",
-    "county": "Dauphin",
+    "County": "Dauphin",
     "City": "Harrisburg",
     "url": "https://www.lavozlatinacentralpa.com/",
     "logo-url": "",
@@ -519,7 +519,7 @@
   },
   {
     "Name": "Daily Press",
-    "county": "Elk",
+    "County": "Elk",
     "City": "City of St. Marys",
     "url": "https://www.smdailypress.com/",
     "logo-url": "",
@@ -533,7 +533,7 @@
   },
   {
     "Name": "Ridgway Record",
-    "county": "Elk",
+    "County": "Elk",
     "City": "Ridgway",
     "url": "https://www.ridgwayrecord.com/",
     "logo-url": "",
@@ -547,7 +547,7 @@
   },
   {
     "Name": "Happi (Lilly Broadcasting)",
-    "county": "Erie",
+    "County": "Erie",
     "City": "",
     "url": "",
     "logo-url": "",
@@ -561,7 +561,7 @@
   },
   {
     "Name": "Warren Radio",
-    "county": "Erie",
+    "County": "Erie",
     "City": "",
     "url": "https://warrenradio.com/",
     "logo-url": "",
@@ -575,7 +575,7 @@
   },
   {
     "Name": "WICU (Lilly Broadcasting)",
-    "county": "Erie",
+    "County": "Erie",
     "City": "",
     "url": "https://www.erienewsnow.com/",
     "logo-url": "",
@@ -589,7 +589,7 @@
   },
   {
     "Name": "WSEE",
-    "county": "Erie",
+    "County": "Erie",
     "City": "",
     "url": "https://www.erienewsnow.com/",
     "logo-url": "",
@@ -603,7 +603,7 @@
   },
   {
     "Name": "Erie Times-News",
-    "county": "Erie",
+    "County": "Erie",
     "City": "Erie",
     "url": "https://www.goerie.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx75/erie-times-news.png",
@@ -617,7 +617,7 @@
   },
   {
     "Name": "Herald-Standard",
-    "county": "Fayette",
+    "County": "Fayette",
     "City": "Uniontown",
     "url": "https://www.heraldstandard.com/",
     "logo-url": "",
@@ -631,7 +631,7 @@
   },
   {
     "Name": "Chambersburg Public Opinion",
-    "county": "Franklin",
+    "County": "Franklin",
     "City": "Chambersburg",
     "url": "https://www.publicopiniononline.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb20/po.png",
@@ -645,7 +645,7 @@
   },
   {
     "Name": "Franklin County Free Press",
-    "county": "Franklin",
+    "County": "Franklin",
     "City": "Chambersburg",
     "url": "https://fcfreepresspa.com/",
     "logo-url": "",
@@ -659,7 +659,7 @@
   },
   {
     "Name": "Greencastle Echo Pilot",
-    "county": "Franklin",
+    "County": "Franklin",
     "City": "Greencastle",
     "url": "https://www.echo-pilot.com/",
     "logo-url": "",
@@ -673,7 +673,7 @@
   },
   {
     "Name": "Waynesboro Record Herald",
-    "county": "Franklin",
+    "County": "Franklin",
     "City": "Waynesboro",
     "url": "https://www.therecordherald.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb20/trh.png",
@@ -687,7 +687,7 @@
   },
   {
     "Name": "Washington Observer-Reporter",
-    "county": "Greene",
+    "County": "Greene",
     "City": "Washington",
     "url": "https://observer-reporter.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7b/observer-reporter.png",
@@ -701,7 +701,7 @@
   },
   {
     "Name": "Huntingdon Daily News",
-    "county": "Huntingdon",
+    "County": "Huntingdon",
     "City": "Huntingdon",
     "url": "https://www.huntingdondailynews.com/",
     "logo-url": "",
@@ -715,7 +715,7 @@
   },
   {
     "Name": "Explore Jefferson",
-    "county": "Jefferson",
+    "County": "Jefferson",
     "City": "Jefferson County",
     "url": "https://www.explorejeffersonpa.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx75/explore-jefferson.png",
@@ -729,7 +729,7 @@
   },
   {
     "Name": "Scranton Times-Tribune",
-    "county": "Lackawanna",
+    "County": "Lackawanna",
     "City": "Scranton",
     "url": "https://www.thetimes-tribune.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx71/times-tribune.jpeg",
@@ -743,7 +743,7 @@
   },
   {
     "Name": "The Caucus",
-    "county": "Lancaster",
+    "County": "Lancaster",
     "City": "Harrisburg",
     "url": "https://caucuspa.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx72/caucus.png",
@@ -757,7 +757,7 @@
   },
   {
     "Name": "LNP Media Group",
-    "county": "Lancaster",
+    "County": "Lancaster",
     "City": "Lancaster",
     "url": "https://lnpmediagroup.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7e/lnp.svg",
@@ -771,7 +771,7 @@
   },
   {
     "Name": "La Voz Latina Central",
-    "county": "Lancaster",
+    "County": "Lancaster",
     "City": "Harrisburg",
     "url": "https://www.lavozlatinacentralpa.com/",
     "logo-url": "",
@@ -785,7 +785,7 @@
   },
   {
     "Name": "Ellwood City Ledger",
-    "county": "Lawrence",
+    "County": "Lawrence",
     "City": "Ellwood",
     "url": "https://www.ellwoodcityledger.com/",
     "logo-url": "",
@@ -799,7 +799,7 @@
   },
   {
     "Name": "New Castle News",
-    "county": "Lawrence",
+    "County": "Lawrence",
     "City": "New Castle",
     "url": "https://www.ncnewsonline.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7a/new-castle-news.png",
@@ -813,7 +813,7 @@
   },
   {
     "Name": "Lebanon Daily News",
-    "county": "Lebanon",
+    "County": "Lebanon",
     "City": "Lebanon",
     "url": "https://www.ldnews.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb1z/ldn.png",
@@ -827,7 +827,7 @@
   },
   {
     "Name": "LebTown",
-    "county": "Lebanon",
+    "County": "Lebanon",
     "City": "Lebanon",
     "url": "https://www.lebtown.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx77/lebtown.png",
@@ -841,7 +841,7 @@
   },
   {
     "Name": "Q'Hubo News",
-    "county": "Lebanon",
+    "County": "Lebanon",
     "City": "Lebanon",
     "url": "http://www.qhubonews.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gt/9zmr/qhubo-news.png",
@@ -855,7 +855,7 @@
   },
   {
     "Name": "WLVT",
-    "county": "Lehigh",
+    "County": "Lehigh",
     "City": "Bethlehem",
     "url": "https://www.wlvt.org/",
     "logo-url": "",
@@ -869,7 +869,7 @@
   },
   {
     "Name": "lehighvalleylive.com and the Express-Times",
-    "county": "Lehigh",
+    "County": "Lehigh",
     "City": "Easton",
     "url": "https://www.lehighvalleylive.com/",
     "logo-url": "",
@@ -883,7 +883,7 @@
   },
   {
     "Name": "Morning Call",
-    "county": "Lehigh",
+    "County": "Lehigh",
     "City": "Allentown",
     "url": "https://www.mcall.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6y/morning-call.jpeg",
@@ -897,7 +897,7 @@
   },
   {
     "Name": "Standard Speaker",
-    "county": "Luzerne",
+    "County": "Luzerne",
     "City": "Hazleton",
     "url": "https://www.standardspeaker.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx70/standard-speaker.jpeg",
@@ -911,7 +911,7 @@
   },
   {
     "Name": "WVIA",
-    "county": "Luzerne",
+    "County": "Luzerne",
     "City": "Pittston",
     "url": "https://www.wvia.org/",
     "logo-url": "",
@@ -925,7 +925,7 @@
   },
   {
     "Name": "The Citizens’ Voice",
-    "county": "Luzerne",
+    "County": "Luzerne",
     "City": "Wilkes-Barre",
     "url": "https://www.citizensvoice.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx73/citizens-voice.png",
@@ -939,7 +939,7 @@
   },
   {
     "Name": "Northcentralpa.com",
-    "county": "Lycoming",
+    "County": "Lycoming",
     "City": "Williamsport",
     "url": "https://www.northcentralpa.com/",
     "logo-url": "",
@@ -953,7 +953,7 @@
   },
   {
     "Name": "Williamsport Sun-Gazette",
-    "county": "Lycoming",
+    "County": "Lycoming",
     "City": "Williamsport",
     "url": "https://www.sungazette.com/",
     "logo-url": "",
@@ -967,7 +967,7 @@
   },
   {
     "Name": "Kane Republican",
-    "county": "McKean",
+    "County": "McKean",
     "City": "Kane",
     "url": "https://www.kanerepublican.com/",
     "logo-url": "",
@@ -981,7 +981,7 @@
   },
   {
     "Name": "The Sharon Herald",
-    "county": "Mercer",
+    "County": "Mercer",
     "City": "Sharon",
     "url": "https://www.sharonherald.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx70/sharon-herald.jpeg",
@@ -995,7 +995,7 @@
   },
   {
     "Name": "Pocono Record",
-    "county": "Monroe",
+    "County": "Monroe",
     "City": "Stroudsburg",
     "url": "https://www.poconorecord.com/",
     "logo-url": "",
@@ -1009,7 +1009,7 @@
   },
   {
     "Name": "NorthPennNow",
-    "county": "Montgomery",
+    "County": "Montgomery",
     "City": "West Point",
     "url": "http://northpennnow.com/",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7a/npn.png",
@@ -1023,7 +1023,7 @@
   },
   {
     "Name": "The Intelligencer",
-    "county": "Montgomery",
+    "County": "Montgomery",
     "City": "Langhorne",
     "url": "https://www.theintell.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx77/intelligencer.png",
@@ -1037,7 +1037,7 @@
   },
   {
     "Name": "Saucon Source",
-    "county": "Northampton",
+    "County": "Northampton",
     "City": "Hellertown",
     "url": "https://sauconsource.com/",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6z/saucon-source.jpeg",
@@ -1051,7 +1051,7 @@
   },
   {
     "Name": "The Standard-Journal",
-    "county": "Northumberland",
+    "County": "Northumberland",
     "City": "Milton",
     "url": "https://www.standard-journal.com/",
     "logo-url": "",
@@ -1065,7 +1065,7 @@
   },
   {
     "Name": "The News-Item",
-    "county": "Northumberland",
+    "County": "Northumberland",
     "City": "Shamokin? Milton?",
     "url": "https://www.newsitem.com/",
     "logo-url": "",
@@ -1079,7 +1079,7 @@
   },
   {
     "Name": "The Daily Item",
-    "county": "Northumberland",
+    "County": "Northumberland",
     "City": "Sunbury",
     "url": "https://www.dailyitem.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6w/daily-item.jpeg",
@@ -1093,7 +1093,7 @@
   },
   {
     "Name": "KYW",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "",
     "logo-url": "",
@@ -1107,7 +1107,7 @@
   },
   {
     "Name": "Resolve",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "https://resolvephilly.org/",
     "logo-url": "",
@@ -1121,7 +1121,7 @@
   },
   {
     "Name": "Technical.ly",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "https://technical.ly/",
     "logo-url": "",
@@ -1135,7 +1135,7 @@
   },
   {
     "Name": "The Philadelphia Inquirer",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "https://www.inquirer.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7d/inquirer.svg",
@@ -1149,7 +1149,7 @@
   },
   {
     "Name": "WHYY",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "http://whyy.org",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx71/whyy.jpeg",
@@ -1163,7 +1163,7 @@
   },
   {
     "Name": "The Republican Herald",
-    "county": "Schuylkill",
+    "County": "Schuylkill",
     "City": "Pottsville",
     "url": "https://republicanherald.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6z/republican-herald.jpeg",
@@ -1177,7 +1177,7 @@
   },
   {
     "Name": "Shenandoah Sentinel",
-    "county": "Schuylkill",
+    "County": "Schuylkill",
     "City": "Shenandoah",
     "url": "https://shensentinel.com/",
     "logo-url": "",
@@ -1191,7 +1191,7 @@
   },
   {
     "Name": "The Citizen Standard",
-    "county": "Schuylkill",
+    "County": "Schuylkill",
     "City": "Valley View",
     "url": "https://citizenstandard.com/",
     "logo-url": "",
@@ -1205,7 +1205,7 @@
   },
   {
     "Name": "Daily American",
-    "county": "Somerset",
+    "County": "Somerset",
     "City": "Somerset",
     "url": "https://www.dailyamerican.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx74/daily-american.png",
@@ -1219,7 +1219,7 @@
   },
   {
     "Name": "The Daily & Sunday Review",
-    "county": "Sullivan",
+    "County": "Sullivan",
     "City": "Towanda",
     "url": "https://www.thedailyreview.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6y/daily-review.jpeg",
@@ -1233,7 +1233,7 @@
   },
   {
     "Name": "The Daily & Sunday Review",
-    "county": "Sullivan",
+    "County": "Sullivan",
     "City": "Towanda",
     "url": "https://www.thedailyreview.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx6y/daily-review.jpeg",
@@ -1247,7 +1247,7 @@
   },
   {
     "Name": "Explore Venango",
-    "county": "Venango",
+    "County": "Venango",
     "City": "Venango County",
     "url": "http://explorevenango.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx76/explore-venango.png",
@@ -1261,7 +1261,7 @@
   },
   {
     "Name": "YourDailyLocal.com",
-    "county": "Warren",
+    "County": "Warren",
     "City": "Warren",
     "url": "https://yourdailylocal.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx72/yourdailylocal.jpeg",
@@ -1275,7 +1275,7 @@
   },
   {
     "Name": "Washington Observer-Reporter",
-    "county": "Washington",
+    "County": "Washington",
     "City": "Washington",
     "url": "https://observer-reporter.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx7b/observer-reporter.png",
@@ -1289,7 +1289,7 @@
   },
   {
     "Name": "Latrobe Bulletin",
-    "county": "Westmoreland",
+    "County": "Westmoreland",
     "City": "Latrobe",
     "url": "https://www.latrobebulletinnews.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gj/v37c/latrobe.png",
@@ -1303,7 +1303,7 @@
   },
   {
     "Name": "The Mon Valley Independent",
-    "county": "Westmoreland",
+    "County": "Westmoreland",
     "City": "Monessen",
     "url": "https://monvalleyindependent.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx79/mon-valley-independent.png",
@@ -1317,7 +1317,7 @@
   },
   {
     "Name": "The Hanover Evening Sun",
-    "county": "York",
+    "County": "York",
     "City": "Hanover",
     "url": "https://www.eveningsun.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb20/tes.png",
@@ -1331,7 +1331,7 @@
   },
   {
     "Name": "York Daily Record",
-    "county": "York",
+    "County": "York",
     "City": "York",
     "url": "https://www.ydr.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb21/ydr.png",
@@ -1345,7 +1345,7 @@
   },
   {
     "Name": "York Dispatch",
-    "county": "York",
+    "County": "York",
     "City": "York",
     "url": "https://www.yorkdispatch.com",
     "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx72/york-dispatch.jpeg",
@@ -1359,7 +1359,7 @@
   },
   {
     "Name": "La Voz Latina Central",
-    "county": "York",
+    "County": "York",
     "City": "Harrisburg",
     "url": "https://www.lavozlatinacentralpa.com/",
     "logo-url": "",
@@ -1373,7 +1373,7 @@
   },
   {
     "Name": "Belt Magazine",
-    "county": "",
+    "County": "",
     "City": "Cleveland, OH",
     "url": "https://beltmag.com/",
     "logo-url": "",
@@ -1387,7 +1387,7 @@
   },
   {
     "Name": "Black Wall Street",
-    "county": "",
+    "County": "",
     "City": "",
     "url": "https://www.blackwallstreet-pa.com/",
     "logo-url": "",
@@ -1401,7 +1401,7 @@
   },
   {
     "Name": "Chalkbeat Philadelphia",
-    "county": "Philadelphia",
+    "County": "Philadelphia",
     "City": "Philadelphia",
     "url": "https://philadelphia.chalkbeat.org/",
     "logo-url": "",
@@ -1415,7 +1415,7 @@
   },
   {
     "Name": "Erie Reader",
-    "county": "Erie",
+    "County": "Erie",
     "City": "Erie",
     "url": "https://www.eriereader.com/",
     "logo-url": "",
@@ -1429,7 +1429,7 @@
   },
   {
     "Name": "MoreThanTheCurve.com",
-    "county": "Montgomery",
+    "County": "Montgomery",
     "City": "Conshohocken",
     "url": "MoreThanTheCurve.com",
     "logo-url": "",
@@ -1443,7 +1443,7 @@
   },
   {
     "Name": "GlensideLocal.com",
-    "county": "Glenside",
+    "County": "Glenside",
     "City": "Abington",
     "url": "https://glensidelocal.com/",
     "logo-url": "",
@@ -1457,7 +1457,7 @@
   },
   {
     "Name": "AroundAmbler.com",
-    "county": "Montgomery",
+    "County": "Montgomery",
     "City": "Ambler",
     "url": "https://aroundambler.com/",
     "logo-url": "",
