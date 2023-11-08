@@ -4,13 +4,12 @@
   ],
   "subfeatures": [
     "content/news/2023-11-07-SPLSC23RES.md",
-    "content/news/2023-11-07-SPLCC23RES.md",
-    "content/news/2023-11-07-SPLNORISSUE.md"
+    "content/news/2023-11-07-SPLCC23RES.md"
   ],
   "topSlots": [
+    "content/news/2023-11-07-SPLNORISSUE.md",
     "content/statecollege/2023-11-06-SPLPSUCLERY.md",
-    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md",
-    "content/news/2023-11-02-SPLUNIFUNDING.md"
+    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md"
   ],
   "topper": []
 }
