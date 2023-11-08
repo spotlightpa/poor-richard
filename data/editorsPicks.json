@@ -1,12 +1,9 @@
 {
   "featuredStories": [
-    "content/news/2023-11-07-SPLNORISSUE.md"
+    "content/news/2023-11-07-SPLSC23RES.md"
   ],
   "subfeatures": [
-    "content/news/2023-11-03-SPLNOV7VOTEINFO.md",
-    "content/news/2023-11-03-SPLCARLUCCIO.md",
-    "content/news/2023-11-03-SPLMCCAFFERY.md",
-    "content/news/2023-09-07-SPLAPPELLATEGEN23.md"
+    "content/news/2023-11-07-SPLNORISSUE.md"
   ],
   "topSlots": [
     "content/statecollege/2023-11-06-SPLPSUCLERY.md",
