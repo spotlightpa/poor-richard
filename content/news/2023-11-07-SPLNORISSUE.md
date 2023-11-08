@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-11-07T18:11:48.413-05:00
 slug = "pennsylvania-election-2023-northampton-county-voting-machine-ballot-issue"
 suppress-date = false
-title = "Voting machines in Northampton County printed erroneous ballots in two judicial races"
+title = "Voting machines in Northampton County printed ballots with errors in two judicial races"
 title-tag = "Voting machines malfunction in Northampton County, PA"
 topics = ["Elections"]
 +++
