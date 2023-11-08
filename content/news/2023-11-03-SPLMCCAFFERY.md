@@ -20,6 +20,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Nov. 8: </em></strong><a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-election-results-supreme-court-daniel-mccaffery-carolyn-carluccio/"><strong><em>Democrat Daniel McCaffery beats Republican Carolyn Carluccio to win seat on Pennsylvania Supreme Court.</em></strong></a><em></em>
+
 HARRISBURG — The winner of the Nov. 7 election for a seat on the Pennsylvania Supreme Court will help determine the balance of the court in coming years, and Democrats are backing Daniel McCaffery, currently a judge on the state Superior Court.
 
 The state Supreme Court is the final stop for lawsuits in Pennsylvania. The court has seven members, and they get the final word on legal questions about everything from election policy to abortion. They also oversee the commonwealth’s other courts and regulate the legal profession, including administering the state bar and disciplining lawyers who violate ethics rules.
