@@ -2,7 +2,7 @@
 authors = ["Carter Walker"]
 blurb = "Jay Schneider knew Election Day would be tough as a judge of elections. Despite the stress and a few setbacks, he pulled off a smooth experience for voters in Chester County."
 byline = "Carter Walker of Votebeat"
-description = "Election judges lead poll workers and manage polling places. They face problems that can be unpredictable. Here’s what it was like for a first-timer."
+description = "PA election judges lead poll workers and manage polling places. They can face unpredictable problems. Here’s what it was like for one first-timer."
 image = "2023/11/01jm-tmvk-wsef-5zgk.jpeg"
 image-credit = "Hannah Yoon / For Votebeat"
 image-description = "John \"Jay\" Schneider, 76, stands for a portrait at the Caln Township building in Thorndale, PA., on October 30, 2023."
@@ -12,8 +12,8 @@ modal-exclude = false
 published = 2023-11-09T17:07:36.507-05:00
 slug = "chester-county-municipal-election-poll-worker-jay-schneider"
 suppress-date = false
-title = "“Hectic from the get-go”: How a new polling place chief in Pennsylvania navigated his first election"
-title-tag = "How a PA judge of elections handled a “hectic” Nov. 7"
+title = "'Hectic from the get-go': How a new polling place chief in Pennsylvania navigated his first election"
+title-tag = "How a PA judge of elections handled a 'hectic' Nov. 7"
 topics = ["Elections"]
 +++
 
