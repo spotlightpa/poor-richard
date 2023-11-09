@@ -47,7 +47,6 @@
   "sidebar-sticky-description": "Support Spotlight PA's nonpartisan journalism and your gift will be TRIPLED as part of our end-of-year fundraising drive.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01jm/2mae/newsmatch-2023-november-banners-triple-squares-14.png",
     "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-13.png",
     "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-9.png",
     "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-7.png"
@@ -59,8 +58,7 @@
   "sidebar-top-images": [
     "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-7.png",
     "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-9.png",
-    "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-13.png",
-    "https://files.data.spotlightpa.org/uploads/01jm/2mae/newsmatch-2023-november-banners-triple-squares-14.png"
+    "https://files.data.spotlightpa.org/uploads/01jm/2mad/newsmatch-2023-november-banners-triple-squares-13.png"
   ],
   "sidebar-top-link": "/donate/",
   "sidebar-top-width": 300,
@@ -89,7 +87,7 @@
   "topper-bg-color": "#050058",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01jm/nv3b/newsmatch-2022-tracker-banners-1350-x-175-px-3-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jm/rbmg/newsmatch-2022-tracker-banners-1350-x-175-px-4-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#050058",
@@ -97,7 +95,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01jm/nv3c/newsmatch-2022-rectangles-1024-512-px-42-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jm/rbmh/newsmatch-2022-rectangles-1024-512-px-43-.svg"
   ],
   "topper-mobile-width": 1024
 }
