@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
+    "content/news/2023-11-09-SPLJAYELEX.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-10-04-SPLSUPNEWCH.md",
-    "content/statecollege/2023-05-30-SPLDUBCASH.md",
-    "content/statecollege/2023-04-10-SPLHERMDUB.md"
+    "content/news/2023-11-01-SPLPOLLSJOE.md",
+    "content/news/2023-11-07-SPLSC23RES.md",
+    "content/news/2023-11-07-SPLNORISSUE.md"
   ],
   "topSlots": [
-    "content/news/2023-11-07-SPLSC23RES.md",
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
     "content/statecollege/2023-11-06-SPLPSUCLERY.md",
-    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md"
+    "content/news/2023-11-09-SPLNEWSQUIZNOV6.md"
   ],
   "topper": []
 }
