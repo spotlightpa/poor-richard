@@ -188,7 +188,6 @@ dek="Learn about your voting rights and ask your remaining questions ahead of El
 date="2023-11-02"
 dateVerbose="Nov. 2, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
-registration="https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg"
 
 [[blocks.entries]]
 hed="Result Review"
