@@ -7,5 +7,5 @@ image-caption = ""
 image = "external/we4kcp6yp9b8epdfrx4esjpkkw.jpeg"
 title = "Health"
 linktitle = "Health news from Spotlight PA"
-description = "Health news from Spotlight PA"
+description = "The latest health-related news for Pennsylvanians, covering public health, state hospitals, opioid settlements, mental health, and more. "
 +++

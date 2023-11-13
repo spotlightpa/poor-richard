@@ -6,6 +6,11 @@
       "url": ""
     },
     {
+      "display": "Amaranth Foundation",
+      "sort": "Amaranth",
+      "url": ""
+    },
+    {
       "display": "American Journalism Project",
       "sort": "American",
       "url": ""
@@ -13,6 +18,11 @@
     {
       "display": "Teresa Amott",
       "sort": "Amott",
+      "url": ""
+    },
+    {
+      "display": "Paul and Melissa Anderson",
+      "sort": "Anderson",
       "url": ""
     },
     {
@@ -46,6 +56,11 @@
       "url": ""
     },
     {
+      "display": "Stanley Basickes",
+      "sort": "Basickes",
+      "url": ""
+    },
+    {
       "display": "Kenneth Baumert",
       "sort": "Baumert",
       "url": ""
@@ -66,6 +81,11 @@
       "url": ""
     },
     {
+      "display": "James Beidler",
+      "sort": "Beidler",
+      "url": ""
+    },
+    {
       "display": "Amanda Bennett",
       "sort": "Bennett",
       "url": ""
@@ -81,12 +101,22 @@
       "url": ""
     },
     {
+      "display": "Diane Berman",
+      "sort": "Berman",
+      "url": ""
+    },
+    {
       "display": "R Thomas Berner",
       "sort": "Berner",
       "url": ""
     },
     {
       "display": "Rita Bernstein \u0026 Alan Zuckerman",
+      "sort": "Bernstein",
+      "url": ""
+    },
+    {
+      "display": "Nancy Bernstein",
       "sort": "Bernstein",
       "url": ""
     },
@@ -101,6 +131,11 @@
       "url": ""
     },
     {
+      "display": "Jeffrey Braff",
+      "sort": "Braff",
+      "url": ""
+    },
+    {
       "display": "Merrill \u0026 Nancy Brenner",
       "sort": "Brenner",
       "url": ""
@@ -111,8 +146,33 @@
       "url": ""
     },
     {
+      "display": "Heidi and Martin Brooks",
+      "sort": "Brooks",
+      "url": ""
+    },
+    {
+      "display": "Glenn Carr and Gay Brown",
+      "sort": "Brown",
+      "url": ""
+    },
+    {
       "display": "Wayne \u0026 Cynthia Bullaughey",
       "sort": "Bullaughey",
+      "url": ""
+    },
+    {
+      "display": "Beth Burrell and David Sorensen",
+      "sort": "Burrell",
+      "url": ""
+    },
+    {
+      "display": "Lee Butz",
+      "sort": "Butz",
+      "url": ""
+    },
+    {
+      "display": "Nicholas Carosella",
+      "sort": "Carosella",
       "url": ""
     },
     {
@@ -141,13 +201,28 @@
       "url": ""
     },
     {
+      "display": "Centre Foundation",
+      "sort": "Centre",
+      "url": ""
+    },
+    {
       "display": "Chandler - Shreve Family Fund",
       "sort": "Chandler",
       "url": ""
     },
     {
+      "display": "Bonnie Chang \u0026 Robert Hsu ",
+      "sort": "Chang",
+      "url": ""
+    },
+    {
       "display": "Nancy Chiswick and Arthur Patterson",
       "sort": "Chiswick",
+      "url": ""
+    },
+    {
+      "display": "Patrick Christmas",
+      "sort": "Christmas",
       "url": ""
     },
     {
@@ -158,6 +233,16 @@
     {
       "display": "Jeffrey Cogshall \u0026 Rosamond Ryan",
       "sort": "Cogshall",
+      "url": ""
+    },
+    {
+      "display": "Joan Cole",
+      "sort": "Cole",
+      "url": ""
+    },
+    {
+      "display": "Robert Conlon",
+      "sort": "Conlon",
       "url": ""
     },
     {
@@ -173,6 +258,11 @@
     {
       "display": "Vincent Crespi",
       "sort": "Crespi",
+      "url": ""
+    },
+    {
+      "display": "Mary Crozier",
+      "sort": "Crozier",
       "url": ""
     },
     {
@@ -211,9 +301,24 @@
       "url": ""
     },
     {
+      "display": "Ebe Emmons",
+      "sort": "Emmons",
+      "url": ""
+    },
+    {
+      "display": "David Erdman",
+      "sort": "Erdman",
+      "url": ""
+    },
+    {
       "display": "The Erie Community Foundation",
       "sort": "Erie",
       "url": "https://www.eriecommunityfoundation.org/"
+    },
+    {
+      "display": "Mary Evans",
+      "sort": "Evans",
+      "url": ""
     },
     {
       "display": "Thomas Eveslage",
@@ -233,6 +338,16 @@
     {
       "display": "Adelaide Ferguson and Ron Cahan",
       "sort": "Ferguson",
+      "url": ""
+    },
+    {
+      "display": "George Fernandez",
+      "sort": "Fernandez",
+      "url": ""
+    },
+    {
+      "display": "Winifred Fessenbecker",
+      "sort": "Fessenbecker",
       "url": ""
     },
     {
@@ -271,6 +386,11 @@
       "url": "https://miamifoundation.org/"
     },
     {
+      "display": "Jessica Gmeinder",
+      "sort": "Gmeinder",
+      "url": ""
+    },
+    {
       "display": "Good Words Foundation",
       "sort": "Good",
       "url": ""
@@ -286,6 +406,11 @@
       "url": "https://grable.org/"
     },
     {
+      "display": "Victoria Grant",
+      "sort": "Grant",
+      "url": ""
+    },
+    {
       "display": "David Gray",
       "sort": "Gray",
       "url": ""
@@ -293,6 +418,11 @@
     {
       "display": "Eliza Griswold \u0026 Steve Coll",
       "sort": "Griswold",
+      "url": ""
+    },
+    {
+      "display": "Janet Gross",
+      "sort": "Gross",
       "url": ""
     },
     {
@@ -326,6 +456,31 @@
       "url": ""
     },
     {
+      "display": "William \u0026 Peggy Hartman",
+      "sort": "Hartman",
+      "url": ""
+    },
+    {
+      "display": "Ellen Harvey",
+      "sort": "Harvey",
+      "url": ""
+    },
+    {
+      "display": "Pamela Hawman",
+      "sort": "Hawman",
+      "url": ""
+    },
+    {
+      "display": "The Heartful Fund of the Philadelphia Foundation",
+      "sort": "Heartful",
+      "url": ""
+    },
+    {
+      "display": "Don Hebel",
+      "sort": "Hebel",
+      "url": ""
+    },
+    {
       "display": "The Heinz Endowments",
       "sort": "Heinz",
       "url": "https://www.heinz.org/"
@@ -334,6 +489,16 @@
       "display": "Henry L. Hillman Foundation",
       "sort": "Henry",
       "url": "https://hillmanfamilyfoundations.org/"
+    },
+    {
+      "display": "Ardith Hilliard",
+      "sort": "Hilliard",
+      "url": ""
+    },
+    {
+      "display": "Mark Hirschman",
+      "sort": "Hirschman",
+      "url": ""
     },
     {
       "display": "Ruth \u0026 Bruce Hollender",
@@ -346,8 +511,18 @@
       "url": ""
     },
     {
+      "display": "Denise Horan",
+      "sort": "Horan",
+      "url": ""
+    },
+    {
       "display": "Avram Hornik",
       "sort": "Hornik",
+      "url": ""
+    },
+    {
+      "display": "John McCarthy and Patricia House",
+      "sort": "House",
       "url": ""
     },
     {
@@ -358,6 +533,11 @@
     {
       "display": "Xia Li \u0026 Jun Huangpu",
       "sort": "Huangpu",
+      "url": ""
+    },
+    {
+      "display": "Roger Huggard",
+      "sort": "Huggard",
       "url": ""
     },
     {
@@ -381,6 +561,11 @@
       "url": "https://independencemedia.org/"
     },
     {
+      "display": "The Ivywood Foundation",
+      "sort": "Ivywood",
+      "url": ""
+    },
+    {
       "display": "Christine Jacobs",
       "sort": "Jacobs",
       "url": ""
@@ -391,11 +576,6 @@
       "url": ""
     },
     {
-      "display": "The John S. and James L. Knight Foundation",
-      "sort": "Knight",
-      "url": "https://knightfoundation.org"
-    },
-    {
       "display": "Richard \u0026 Sally Kalin",
       "sort": "Kalin",
       "url": ""
@@ -403,6 +583,11 @@
     {
       "display": "Roberta Kangilaski",
       "sort": "Kangilaski",
+      "url": ""
+    },
+    {
+      "display": "Peter and Rhonda Keller",
+      "sort": "Keller",
       "url": ""
     },
     {
@@ -421,6 +606,16 @@
       "url": ""
     },
     {
+      "display": "The John S. and James L. Knight Foundation",
+      "sort": "Knight",
+      "url": "https://knightfoundation.org"
+    },
+    {
+      "display": "Janet Koch",
+      "sort": "Koch",
+      "url": ""
+    },
+    {
       "display": "Howard Kolus",
       "sort": "Kolus",
       "url": ""
@@ -436,6 +631,11 @@
       "url": ""
     },
     {
+      "display": "Darlene Kvaternik",
+      "sort": "Kvaternik",
+      "url": ""
+    },
+    {
       "display": "Lancaster County Community Foundation",
       "sort": "Lancaster",
       "url": "https://www.lancfound.org/"
@@ -443,6 +643,21 @@
     {
       "display": "James \u0026 Denise Lanning",
       "sort": "Lanning",
+      "url": ""
+    },
+    {
+      "display": "Timothy Larson",
+      "sort": "Larson",
+      "url": ""
+    },
+    {
+      "display": "Cindy Lawn",
+      "sort": "Lawn",
+      "url": ""
+    },
+    {
+      "display": "Patricia Leach",
+      "sort": "Leach",
       "url": ""
     },
     {
@@ -459,6 +674,11 @@
       "display": "The Lenfest Institute for Journalism",
       "sort": "Lenfest",
       "url": "https://www.lenfestinstitute.org/"
+    },
+    {
+      "display": "Dale Lenox",
+      "sort": "Lenox",
+      "url": ""
     },
     {
       "display": "Julie Linowes",
@@ -506,6 +726,11 @@
       "url": ""
     },
     {
+      "display": "The Richard \u0026 Susan Master Foundation",
+      "sort": "Master",
+      "url": ""
+    },
+    {
       "display": "Annie McCain Madonia",
       "sort": "McCain",
       "url": ""
@@ -513,6 +738,11 @@
     {
       "display": "Melissa Meier",
       "sort": "Meier",
+      "url": ""
+    },
+    {
+      "display": "Jane and Mark Mendlow",
+      "sort": "Mendlow",
       "url": ""
     },
     {
@@ -536,6 +766,21 @@
       "url": ""
     },
     {
+      "display": "James and Susan Morris",
+      "sort": "Morris",
+      "url": ""
+    },
+    {
+      "display": "Anthony Muir",
+      "sort": "Muir",
+      "url": ""
+    },
+    {
+      "display": "Lynn Myers",
+      "sort": "Myers",
+      "url": ""
+    },
+    {
       "display": "Ramona \u0026 Glenn Nelson",
       "sort": "Nelson",
       "url": ""
@@ -551,6 +796,11 @@
       "url": ""
     },
     {
+      "display": "Steve Noone",
+      "sort": "Noone",
+      "url": ""
+    },
+    {
       "display": "Karen O'Brien",
       "sort": "O'Brien",
       "url": ""
@@ -561,8 +811,13 @@
       "url": ""
     },
     {
-      "display": "Katie O'Toole",
+      "display": "Katie O'Toole \u0026 Gary Gray",
       "sort": "O'Toole",
+      "url": ""
+    },
+    {
+      "display": "Bill Oliver",
+      "sort": "Oliver",
       "url": ""
     },
     {
@@ -636,13 +891,33 @@
       "url": "https://www.post-gazette.com/"
     },
     {
+      "display": "Timothy Potts and Lu Conser",
+      "sort": "Potts",
+      "url": ""
+    },
+    {
       "display": "Donna Queeney",
       "sort": "Queeney",
       "url": ""
     },
     {
+      "display": "Douglas Quint",
+      "sort": "Quint",
+      "url": ""
+    },
+    {
+      "display": "Harry Rambo",
+      "sort": "Rambo",
+      "url": ""
+    },
+    {
       "display": "Elisa Rapaport",
       "sort": "Rapaport",
+      "url": ""
+    },
+    {
+      "display": "Catherine Raphael",
+      "sort": "Raphael",
       "url": ""
     },
     {
@@ -666,7 +941,17 @@
       "url": ""
     },
     {
+      "display": "Larry Rose",
+      "sort": "Rose",
+      "url": ""
+    },
+    {
       "display": "Dr. Michael Ryan \u0026 Dr. Linda Ryan",
+      "sort": "Ryan",
+      "url": ""
+    },
+    {
+      "display": "James Ryan",
       "sort": "Ryan",
       "url": ""
     },
@@ -678,6 +963,11 @@
     {
       "display": "Alletta Schadler",
       "sort": "Schadler",
+      "url": ""
+    },
+    {
+      "display": "Jim \u0026 Kathi Schaedler",
+      "sort": "Schaedler",
       "url": ""
     },
     {
@@ -706,6 +996,16 @@
       "url": ""
     },
     {
+      "display": "David Seltzer",
+      "sort": "Seltzer",
+      "url": ""
+    },
+    {
+      "display": "Peter Shelly",
+      "sort": "Shelly",
+      "url": ""
+    },
+    {
       "display": "Mark Sheppard",
       "sort": "Sheppard",
       "url": ""
@@ -713,6 +1013,11 @@
     {
       "display": "Kevin Shivers",
       "sort": "Shivers",
+      "url": ""
+    },
+    {
+      "display": "Gary Shorts",
+      "sort": "Shorts",
       "url": ""
     },
     {
@@ -726,6 +1031,11 @@
       "url": ""
     },
     {
+      "display": "David Skerpon",
+      "sort": "Skerpon",
+      "url": ""
+    },
+    {
       "display": "Ron \u0026 Sue Smith",
       "sort": "Smith",
       "url": ""
@@ -734,6 +1044,11 @@
       "display": "The Snider Foundation",
       "sort": "Snider",
       "url": "https://www.sniderfoundation.org/"
+    },
+    {
+      "display": "Christine Spolar",
+      "sort": "Spolar",
+      "url": ""
     },
     {
       "display": "Jane Sprecher",
@@ -756,8 +1071,23 @@
       "url": "https://steinmanfoundation.org/"
     },
     {
+      "display": "Andrea Stewart",
+      "sort": "Stewart",
+      "url": ""
+    },
+    {
       "display": "Catherine Stouch",
       "sort": "Stouch",
+      "url": ""
+    },
+    {
+      "display": "E. Marvin Stouffer",
+      "sort": "Stouffer",
+      "url": ""
+    },
+    {
+      "display": "Phil Straus",
+      "sort": "Straus",
       "url": ""
     },
     {
@@ -776,6 +1106,11 @@
       "url": ""
     },
     {
+      "display": "Steve Townsend",
+      "sort": "Townsend",
+      "url": ""
+    },
+    {
       "display": "Daniel \u0026 Linda Trevino",
       "sort": "Trevino",
       "url": ""
@@ -784,6 +1119,11 @@
       "display": "TribLIVE/Pittsburgh Tribune-Review",
       "sort": "Tribune-Review",
       "url": "https://triblive.com/"
+    },
+    {
+      "display": "Jeannine Turgeon",
+      "sort": "Turgeon",
+      "url": ""
     },
     {
       "display": "Elizabeth Useem",
@@ -811,6 +1151,11 @@
       "url": "https://votebeat.org/"
     },
     {
+      "display": "Margaret Wallace",
+      "sort": "Wallace",
+      "url": ""
+    },
+    {
       "display": "Steven \u0026 Patricia Walmer",
       "sort": "Walmer",
       "url": ""
@@ -826,6 +1171,21 @@
       "url": ""
     },
     {
+      "display": "Carol Weisman",
+      "sort": "Weisman",
+      "url": ""
+    },
+    {
+      "display": "David and Susan Werner",
+      "sort": "Werner",
+      "url": ""
+    },
+    {
+      "display": "Jean Weston",
+      "sort": "Weston",
+      "url": ""
+    },
+    {
       "display": "David Whiteman",
       "sort": "Whiteman",
       "url": ""
@@ -833,6 +1193,16 @@
     {
       "display": "Richard Williams",
       "sort": "Williams",
+      "url": ""
+    },
+    {
+      "display": "Connie and Sankey Williams",
+      "sort": "Williams",
+      "url": ""
+    },
+    {
+      "display": "Jo Schlesinger \u0026 Allan Willinger",
+      "sort": "Willinger",
       "url": ""
     },
     {
@@ -871,7 +1241,7 @@
       "url": ""
     },
     {
-      "display": "Cliff Zukin",
+      "display": "Debbie Walsh \u0026 Cliff Zukin",
       "sort": "Zukin",
       "url": ""
     }

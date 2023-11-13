@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-10-30-SPLNO23COUNT.md"
+    "content/news/2023-11-13-SPLBUDTHAW.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-09-SPLNOV24FULLGU.md",
-    "content/news/2023-10-12-SPLCOURTTOOL.md"
+    "content/news/2023-11-02-SPLUNIFUNDING.md"
   ],
   "topSlots": [
-    "content/news/2023-10-27-SPLTOLBILLS.md",
-    "content/news/2023-10-26-SPLCODEREV.md",
-    "content/statecollege/2023-10-26-SPLWILDSWORK.md"
+    "content/statecollege/2023-11-13-SPLTICKS.md",
+    "content/news/2023-11-09-SPLJAYELEX.md",
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "topper": []
 }

@@ -6,7 +6,7 @@ image-credit = "Amanda Berg / For Spotlight PA"
 kicker = "Elections"
 title = "Pennsylvania Election 2023"
 title-tag = "Official Pennsylvania Election Center 2023"
-description = "See how to vote, where to vote, polling places, sample ballots, candidate & issue guides, and more from Spotlight PA."
+description = "Full coverage of Pennsylvania's elections, including how to vote, where to vote, polling places, sample ballots, candidate guides, and more."
 dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more will appear on the Nov. 7 ballot."
 extended-kicker = "Pa. Election Center 2023"
 linktitle = "Everything you need to prepare for Pa.’s 2023 election"
@@ -188,7 +188,6 @@ dek="Learn about your voting rights and ask your remaining questions ahead of El
 date="2023-11-02"
 dateVerbose="Nov. 2, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
-registration="https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg"
 
 [[blocks.entries]]
 hed="Result Review"

@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA on Nov. 2 as we answer your voting questions ahead of Pa.’s 2023 Election."
+blurb = "Experts discuss voting rights in Pennsylvania, important dates and deadlines, and other key 2023 election information."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA on Nov. 2 as we answer your voting questions ahead of Pa.’s 2023 Election."
+description = "Experts discuss voting rights in Pennsylvania, important dates and deadlines, and other key 2023 election information."
 event-date = 2023-11-02T18:00:00-04:00
 event-title = "Voter Ready: A live guide to Pa. Election Day 2023"
 event-url = "https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg#/registration"
@@ -14,8 +14,8 @@ modal-exclude = false
 published = 2023-10-19T05:00:00.973-04:00
 slug = "pennsylvania-election-2023-voting-rights-event"
 suppress-date = false
-title = "You’re invited! A live guide on Pa. Election Day 2023"
-title-tag = "Your voting rights and understanding Pa.’s 2023 Election Day"
+title = "WATCH: A guide to Pa. Election Day 2023"
+title-tag = "Experts discuss voting rights, PA Election Day 2023"
 topics = ["Events"]
 +++
 
@@ -23,13 +23,9 @@ topics = ["Events"]
 
 On Nov. 7, voters across Pennsylvania will choose the next state Supreme Court justice and new judges to sit on Commonwealth and Superior Courts. They’ll also cast ballots in smaller municipal races for offices such as mayor and school board, and answer local ballot questions.
 
-Ahead of Election Day, Spotlight PA and Pennsylvania Voice — an nonprofit working to expand voting participation and secure equitable representation in state government — are holding a live election FAQ panel.
+Ahead of Election Day, Spotlight PA and Pennsylvania Voice — a nonprofit working to expand voting participation and secure equitable representation in state government — held a live election FAQ panel. Watch it below.
 
-On Thursday, Nov. 2 from 6-7 p.m. ET, join us on Zoom to discuss voting rights in Pennsylvania, important dates and deadlines, and other key election information.
-
-Have a question for our panelists? Send them in advance to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>.
-
-<strong>Our panelists will include:</strong>
+<strong>Our panelists were:</strong>
 
 - <strong>Elizabeth Estrada,</strong> democracy editor, Spotlight PA
 
@@ -37,7 +33,9 @@ Have a question for our panelists? Send them in advance to <a href="mailto:event
 
 - <strong>Jeff Greenburg</strong>, senior advisor, Committee of Seventy
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_BvVtaLERTR-TDsNQsxRBWg"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a><br/>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/880912855?h=dadad4aa4b&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<br/>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 

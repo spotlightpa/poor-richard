@@ -11,4 +11,3 @@ title-tag = "Latest Pennsylvania election news from Spotlight PA"
 linktitle = "Latest Pennsylvania election news from Spotlight PA"
 description = "Full coverage of Pennsylvania's 2023 primary and general elections, including voter and candidate guides, how to cast a ballot, and more."
 +++
-Pennsylvania's 2023 primary election day is May 16. Find everything you need to know to vote in the election — including voter and candidate guides, how to vote, where to vote, when polls open in PA, and more — by [visiting Spotlight PA's Official 2023 Election Center](https://www.spotlightpa.org/elections).

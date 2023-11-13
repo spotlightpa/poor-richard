@@ -21,7 +21,9 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-<br/>HARRISBURG — During Pennsylvania’s general election on Nov. 7, voters will select the newest state Supreme Court justice.
+<strong><em>Update, Nov. 8: </em></strong><a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-election-results-supreme-court-daniel-mccaffery-carolyn-carluccio/"><strong><em>Democrat Daniel McCaffery beats Republican Carolyn Carluccio to win seat on Pennsylvania Supreme Court.</em></strong></a><strong><em></em></strong>
+
+HARRISBURG — During Pennsylvania’s general election on Nov. 7, voters will select the newest state Supreme Court justice.
 
 The winner of the election — Democrat Daniel McCaffery or Republican Carolyn Carluccio — will have considerable power over the interpretation of laws in the commonwealth, and will help determine the balance of the court in coming years.
 
@@ -47,9 +49,9 @@ Justices serve 10-year terms with no term limits. However, they must retire at a
 
 ### Candidates
 
-1. <a href="#spl-heading-1">Republican Carolyn Carluccio</a>
+- <a href="#spl-heading-1">Republican Carolyn Carluccio</a>
 
-2. <a href="#spl-heading-2">Democrat Daniel McCaffery</a>
+- <a href="#spl-heading-2">Democrat Daniel McCaffery</a>
 
 {{<picture src="2023/08/01jf-1tyn-wnd8-fy2c.jpeg" description="Republican state Supreme Court candidate Carolyn Carluccio" caption="Republican state Supreme Court candidate Carolyn Carluccio" credit="Via campaign Facebook page">}}
 
