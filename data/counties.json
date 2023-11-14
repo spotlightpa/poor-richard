@@ -1,270 +1,337 @@
 [
-	{
-		"FIPS": "42001",
-		"name": "Adams County"
-	},
-	{
-		"FIPS": "42003",
-		"name": "Allegheny County"
-	},
-	{
-		"FIPS": "42005",
-		"name": "Armstrong County"
-	},
-	{
-		"FIPS": "42007",
-		"name": "Beaver County"
-	},
-	{
-		"FIPS": "42009",
-		"name": "Bedford County"
-	},
-	{
-		"FIPS": "42011",
-		"name": "Berks County"
-	},
-	{
-		"FIPS": "42013",
-		"name": "Blair County"
-	},
-	{
-		"FIPS": "42015",
-		"name": "Bradford County"
-	},
-	{
-		"FIPS": "42017",
-		"name": "Bucks County"
-	},
-	{
-		"FIPS": "42019",
-		"name": "Butler County"
-	},
-	{
-		"FIPS": "42021",
-		"name": "Cambria County"
-	},
-	{
-		"FIPS": "42023",
-		"name": "Cameron County"
-	},
-	{
-		"FIPS": "42025",
-		"name": "Carbon County"
-	},
-	{
-		"FIPS": "42027",
-		"name": "Centre County"
-	},
-	{
-		"FIPS": "42029",
-		"name": "Chester County"
-	},
-	{
-		"FIPS": "42031",
-		"name": "Clarion County"
-	},
-	{
-		"FIPS": "42033",
-		"name": "Clearfield County"
-	},
-	{
-		"FIPS": "42035",
-		"name": "Clinton County"
-	},
-	{
-		"FIPS": "42037",
-		"name": "Columbia County"
-	},
-	{
-		"FIPS": "42039",
-		"name": "Crawford County"
-	},
-	{
-		"FIPS": "42041",
-		"name": "Cumberland County"
-	},
-	{
-		"FIPS": "42043",
-		"name": "Dauphin County"
-	},
-	{
-		"FIPS": "42045",
-		"name": "Delaware County"
-	},
-	{
-		"FIPS": "42047",
-		"name": "Elk County"
-	},
-	{
-		"FIPS": "42049",
-		"name": "Erie County"
-	},
-	{
-		"FIPS": "42051",
-		"name": "Fayette County"
-	},
-	{
-		"FIPS": "42053",
-		"name": "Forest County"
-	},
-	{
-		"FIPS": "42055",
-		"name": "Franklin County"
-	},
-	{
-		"FIPS": "42057",
-		"name": "Fulton County"
-	},
-	{
-		"FIPS": "42059",
-		"name": "Greene County"
-	},
-	{
-		"FIPS": "42061",
-		"name": "Huntingdon County"
-	},
-	{
-		"FIPS": "42063",
-		"name": "Indiana County"
-	},
-	{
-		"FIPS": "42065",
-		"name": "Jefferson County"
-	},
-	{
-		"FIPS": "42067",
-		"name": "Juniata County"
-	},
-	{
-		"FIPS": "42069",
-		"name": "Lackawanna County"
-	},
-	{
-		"FIPS": "42071",
-		"name": "Lancaster County"
-	},
-	{
-		"FIPS": "42073",
-		"name": "Lawrence County"
-	},
-	{
-		"FIPS": "42075",
-		"name": "Lebanon County"
-	},
-	{
-		"FIPS": "42077",
-		"name": "Lehigh County"
-	},
-	{
-		"FIPS": "42079",
-		"name": "Luzerne County"
-	},
-	{
-		"FIPS": "42081",
-		"name": "Lycoming County"
-	},
-	{
-		"FIPS": "42083",
-		"name": "McKean County"
-	},
-	{
-		"FIPS": "42085",
-		"name": "Mercer County"
-	},
-	{
-		"FIPS": "42087",
-		"name": "Mifflin County"
-	},
-	{
-		"FIPS": "42089",
-		"name": "Monroe County"
-	},
-	{
-		"FIPS": "42091",
-		"name": "Montgomery County"
-	},
-	{
-		"FIPS": "42093",
-		"name": "Montour County"
-	},
-	{
-		"FIPS": "42095",
-		"name": "Northampton County"
-	},
-	{
-		"FIPS": "42097",
-		"name": "Northumberland County"
-	},
-	{
-		"FIPS": "42099",
-		"name": "Perry County"
-	},
-	{
-		"FIPS": "42101",
-		"name": "Philadelphia County"
-	},
-	{
-		"FIPS": "42103",
-		"name": "Pike County"
-	},
-	{
-		"FIPS": "42105",
-		"name": "Potter County"
-	},
-	{
-		"FIPS": "42107",
-		"name": "Schuylkill County"
-	},
-	{
-		"FIPS": "42109",
-		"name": "Snyder County"
-	},
-	{
-		"FIPS": "42111",
-		"name": "Somerset County"
-	},
-	{
-		"FIPS": "42113",
-		"name": "Sullivan County"
-	},
-	{
-		"FIPS": "42115",
-		"name": "Susquehanna County"
-	},
-	{
-		"FIPS": "42117",
-		"name": "Tioga County"
-	},
-	{
-		"FIPS": "42119",
-		"name": "Union County"
-	},
-	{
-		"FIPS": "42121",
-		"name": "Venango County"
-	},
-	{
-		"FIPS": "42123",
-		"name": "Warren County"
-	},
-	{
-		"FIPS": "42125",
-		"name": "Washington County"
-	},
-	{
-		"FIPS": "42127",
-		"name": "Wayne County"
-	},
-	{
-		"FIPS": "42129",
-		"name": "Westmoreland County"
-	},
-	{
-		"FIPS": "42131",
-		"name": "Wyoming County"
-	},
-	{
-		"FIPS": "42133",
-		"name": "York County"
-	}
+  {
+    "FIPS": "42001",
+    "name": "Adams",
+    "translate": "translate(421, 445)"
+  },
+  {
+    "FIPS": "42003",
+    "name": "Allegheny",
+    "translate": "translate(-13.50000, 318.00000)"
+  },
+  {
+    "FIPS": "42005",
+    "name": "Armstrong",
+    "translate": "translate(77, 217)"
+  },
+  {
+    "FIPS": "42007",
+    "name": "Beaver",
+    "translate": "translate(-60.5000, 278)"
+  },
+  {
+    "FIPS": "42009",
+    "name": "Bedford",
+    "translate": "translate(225, 393)"
+  },
+  {
+    "FIPS": "42011",
+    "name": "Berks",
+    "translate": "translate(605 320)"
+  },
+  {
+    "FIPS": "42013",
+    "name": "Blair",
+    "translate": "translate(242 310)"
+  },
+  {
+    "FIPS": "42015",
+    "name": "Bradford",
+    "translate": "translate(521 55)"
+  },
+  {
+    "FIPS": "42017",
+    "name": "Bucks",
+    "translate": "translate(745, 331)"
+  },
+  {
+    "FIPS": "42019",
+    "name": "Butler",
+    "translate": "translate(4, 219)"
+  },
+  {
+    "FIPS": "42021",
+    "name": "Cambria",
+    "translate": "translate(189, 313)"
+  },
+  {
+    "FIPS": "42023",
+    "name": "Cameron",
+    "translate": "translate(266, 137)"
+  },
+  {
+    "FIPS": "42025",
+    "name": "Carbon",
+    "translate": "translate(644, 229)"
+  },
+  {
+    "FIPS": "42027",
+    "name": "Centre",
+    "translate": "translate(335, 208)"
+  },
+  {
+    "FIPS": "42029",
+    "name": "Chester",
+    "translate": "translate(645, 406)"
+  },
+  {
+    "FIPS": "42031",
+    "name": "Clarion",
+    "translate": "translate(78, 168)"
+  },
+  {
+    "FIPS": "42033",
+    "name": "Clearfield",
+    "translate": "translate(233, 209)"
+  },
+  {
+    "FIPS": "42035",
+    "name": "Clinton",
+    "translate": "translate(356, 164)"
+  },
+  {
+    "FIPS": "42037",
+    "name": "Columbia",
+    "translate": "translate(537, 194)"
+  },
+  {
+    "FIPS": "42039",
+    "name": "Crawford",
+    "translate": "translate(-14.5000, 82)"
+  },
+  {
+    "FIPS": "42041",
+    "name": "Cumberland",
+    "translate": "translate(413.5, 393)"
+  },
+  {
+    "FIPS": "42043",
+    "name": "Dauphin",
+    "translate": "translate(490, 326)"
+  },
+  {
+    "FIPS": "42045",
+    "name": "Delaware",
+    "translate": "translate(700, 441)"
+  },
+  {
+    "FIPS": "42047",
+    "name": "Elk",
+    "translate": "translate(196, 131)"
+  },
+  {
+    "FIPS": "42049",
+    "name": "Erie",
+    "translate": "translate(-13, 2)"
+  },
+  {
+    "FIPS": "42051",
+    "name": "Fayette",
+    "translate": "translate(43, 428)"
+  },
+  {
+    "FIPS": "42053",
+    "name": "Forest",
+    "translate": "translate(112, 130)"
+  },
+  {
+    "FIPS": "42055",
+    "name": "Franklin",
+    "translate": "translate(332, 402)"
+  },
+  {
+    "FIPS": "42057",
+    "name": "Fulton",
+    "translate": "translate(278, 425)"
+  },
+  {
+    "FIPS": "42059",
+    "name": "Greene",
+    "translate": "translate(-45, 451)"
+  },
+  {
+    "FIPS": "42061",
+    "name": "Huntingdon",
+    "translate": "translate(302, 310)"
+  },
+  {
+    "FIPS": "42063",
+    "name": "Indiana",
+    "translate": "translate(125, 275)"
+  },
+  {
+    "FIPS": "42065",
+    "name": "Jefferson",
+    "translate": "translate(151, 182)"
+  },
+  {
+    "FIPS": "42067",
+    "name": "Juniata",
+    "translate": "translate(397, 319)"
+  },
+  {
+    "FIPS": "42069",
+    "name": "Lackawanna",
+    "translate": "translate(655, 127)"
+  },
+  {
+    "FIPS": "42071",
+    "name": "Lancaster",
+    "translate": "translate(560, 393)"
+  },
+  {
+    "FIPS": "42073",
+    "name": "Lawrence",
+    "translate": "translate(-55, 226)"
+  },
+  {
+    "FIPS": "42075",
+    "name": "Lebanon",
+    "translate": "translate(542, 346.5)"
+  },
+  {
+    "FIPS": "42077",
+    "name": "Lehigh",
+    "translate": "translate(664, 298)"
+  },
+  {
+    "FIPS": "42079",
+    "name": "Luzerne",
+    "translate": "translate(608, 169)"
+  },
+  {
+    "FIPS": "42081",
+    "name": "Lycoming",
+    "translate": "translate(447, 138)"
+  },
+  {
+    "FIPS": "42083",
+    "name": "McKean",
+    "translate": "translate(211, 59)"
+  },
+  {
+    "FIPS": "42085",
+    "name": "Mercer",
+    "translate": "translate(-45, 153)"
+  },
+  {
+    "FIPS": "42087",
+    "name": "Mifflin",
+    "translate": "translate(361, 289)"
+  },
+  {
+    "FIPS": "42089",
+    "name": "Monroe",
+    "translate": "translate(708, 202)"
+  },
+  {
+    "FIPS": "42091",
+    "name": "Montgomery",
+    "translate": "translate(706, 365)"
+  },
+  {
+    "FIPS": "42093",
+    "name": "Montour",
+    "translate": "translate(502, 223)"
+  },
+  {
+    "FIPS": "42095",
+    "name": "Northampton",
+    "translate": "translate(707, 258)"
+  },
+  {
+    "FIPS": "42097",
+    "name": "Northumberland",
+    "translate": "translate(503, 224)"
+  },
+  {
+    "FIPS": "42099",
+    "name": "Perry",
+    "translate": "translate(407, 332)"
+  },
+  {
+    "FIPS": "42101",
+    "name": "Philadelphia",
+    "translate": "translate(743, 425)"
+  },
+  {
+    "FIPS": "42103",
+    "name": "Pike",
+    "translate": "translate(748, 132)"
+  },
+  {
+    "FIPS": "42105",
+    "name": "Potter",
+    "translate": "translate(313, 58)"
+  },
+  {
+    "FIPS": "42107",
+    "name": "Schuylkill",
+    "translate": "translate(570, 267)"
+  },
+  {
+    "FIPS": "42109",
+    "name": "Snyder",
+    "translate": "translate(439, 281)"
+  },
+  {
+    "FIPS": "42111",
+    "name": "Somerset",
+    "translate": "translate(137, 401)"
+  },
+  {
+    "FIPS": "42113",
+    "name": "Sullivan",
+    "translate": "translate(522, 140)"
+  },
+  {
+    "FIPS": "42115",
+    "name": "Susquehanna",
+    "translate": "translate(628, 52)"
+  },
+  {
+    "FIPS": "42117",
+    "name": "Tioga",
+    "translate": "translate(412, 56)"
+  },
+  {
+    "FIPS": "42119",
+    "name": "Union",
+    "translate": "translate(438, 229)"
+  },
+  {
+    "FIPS": "42121",
+    "name": "Venango",
+    "translate": "translate(33, 131)"
+  },
+  {
+    "FIPS": "42123",
+    "name": "Warren",
+    "translate": "translate(107, 56)"
+  },
+  {
+    "FIPS": "42125",
+    "name": "Washington",
+    "translate": "translate(-39, 355)"
+  },
+  {
+    "FIPS": "42127",
+    "name": "Wayne",
+    "translate": "translate(709, 52)"
+  },
+  {
+    "FIPS": "42129",
+    "name": "Westmoreland",
+    "translate": "translate(75, 320)"
+  },
+  {
+    "FIPS": "42131",
+    "name": "Wyoming",
+    "translate": "translate(601, 125)"
+  },
+  {
+    "FIPS": "42133",
+    "name": "York",
+    "translate": "translate(501, 413)"
+  }
 ]
