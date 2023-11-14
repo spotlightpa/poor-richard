@@ -4,7 +4,7 @@
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   <div class="bg-black p-4 sm:py-8 md:py-12">
-    <nav class="flex items-end justify-between gap-8 sm:justify-center">
+    <h2 class="flex items-end justify-center gap-8">
       <a
         class="flex w-3/5 max-w-xs text-white hover:text-yellow md:w-1/2 md:max-w-md"
         href="/"
@@ -15,40 +15,13 @@
           {{ partial "helper/svg.html" "banner" }}
         </svg>
       </a>
-
-      <a
-        data-sf-campaign="701Dn000000YgogIAC"
-        data-ga-category="donate"
-        class="
-           group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
-           sm:flex sm:w-32 sm:justify-center md:w-52 md:px-7 md:py-4
-          "
-        href="/donate"
-      >
-        <span
-          class="
-          clip-triangle absolute inset-0 z-0 bg-red group-hover:bg-blue
-          "
-        ></span>
-        <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
-        >
-          <svg
-            class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
-            aria-hidden="true"
-          >
-            {{ partial "helper/svg.html" "heart" }}
-          </svg>
-          Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
-        </span>
-      </a>
-    </nav>
-    <h2
-      class="mx-auto my-7 text-center text-xs font-bold leading-relaxed tracking-wide text-white sm:max-w-md sm:text-base md:my-8 md:max-w-4xl md:text-2xl"
-    >
-      Spotlight PA relies on funding from foundations and readers like you who
-      are committed to accountability journalism that gets results.
     </h2>
+    <h3
+      class="mx-auto my-7 text-center text-lg leading-relaxed tracking-wide text-white sm:max-w-2xl md:my-8 md:px-6 md:text-2xl md:font-bold"
+    >
+      Get the top stories and best investigative journalism from across Pa. with
+      our free newsletters.
+    </h3>
 
     <form
       class=" mx-auto max-w-xl md:max-w-2xl"
@@ -59,11 +32,6 @@
       target="_blank"
     >
       {{ partial "newsletter/basic-hidden.html" . }}
-      <p
-        class="text-center text-2xl font-bold tracking-wide text-white md:text-3xl"
-      >
-        Sign up for our newsletters
-      </p>
       <div
         class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:items-center sm:gap-0 md:col-start-1 md:col-end-3"
       >
@@ -204,10 +172,51 @@
     {{ $context = dict
       "category" "support"
       "menu" site.Menus.support
-      "name" "Support Spotlight PA"
-      "link" "/support/"
+      "name" "Donate"
+      "link" "/donate"
     }}
-    {{ template "tw-footer" $context }}
+    {{ block "tw-support" $context }}
+      <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
+        <a
+          data-sf-campaign="701Dn000000YgogIAC"
+          data-ga-category="donate"
+          class="
+           group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7
+           hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2
+          "
+          href="{{ .link }}"
+        >
+          <span
+            class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
+          >
+            <svg
+              class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+              aria-hidden="true"
+            >
+              {{ partial "helper/svg.html" "heart" }}
+            </svg>
+            {{ .name }}
+          </span>
+        </a>
+        <ul class="mt-3 space-y-4 leading-tight">
+          {{ range .menu }}
+            <li>
+              <a
+                class="transition-color block text-black duration-500 hover:text-blue hover:underline"
+                href="{{ .URL }}"
+                {{ with .Params.dispatch }}
+                  x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+                  data-dispatch="{{ . }}"
+                {{ end }}
+              >
+                {{- .Name -}}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
   </nav>
   <nav
     class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg"
