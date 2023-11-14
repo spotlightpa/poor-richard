@@ -53,8 +53,10 @@
           />
         {{ end }}
 
-        {{ partial "helper/svg.html" "counties" }}
 
+        <g class="pointer-events-none">
+          {{ partial "helper/svg.html" "counties" }}
+        </g>
       </svg>
 
       {{ with .cta }}
