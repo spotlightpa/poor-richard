@@ -23,8 +23,7 @@
   "sizeHint" "(min-width: 1080px) 528px, (min-width: 850px) 40vw, 90vw"
   "eager" true
 }}
-
-{{ partial "tw/thumb-h-item.html" (dict
+{{ partial "tw/thumb-hv-item.html" (dict
   "imgOpts" $imgOpts
   "rubricLink" $featuredParams.rubric.RelPermalink
   "extendedEyebrow" $featuredParams.extendedKicker
@@ -33,10 +32,11 @@
   "hed" $featured.LinkTitle
   "dek" $featuredParams.blurb
   "byline" $featuredParams.byline
-  "hedSize" `text-2xl sm:text-xl md:text-2xl lg:text-3xl`
-  "dekSize" "sm:text-sm sm:leading-tight md:text-base lg:text-xl"
+  "hedSize" `text-xl md:text-2xl lg:text-3xl font-semibold`
+  "dekSize" "sm:text-sm sm:leading-relaxed md:text-base lg:text-xl"
   "subitemSize" "sm:text-sm md:text-base"
-  "thumbClass" "flex-1 mb-6 md:py-6 md:pr-8 md:mb-0 md:pt-0"
+  "wrapperClass" "w-full"
+  "thumbClass" "w-full mt-1"
   "storyClass" "flex-1"
   "subitems" $subitems
   )

@@ -1,4 +1,5 @@
 {{ $thumbClass := .thumbClass | default `w-full` }}
+{{ $wrapperClass := .wrapperClass | default `w-full` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-lg font-semibold` }}
 {{ $dekSize := .dekSize | default `text-xl` }}
@@ -9,8 +10,8 @@
 {{ $showByline := .showByline | default true }}
 
 
-<article class="{{ .wrapperClass }}">
-  <div data-ga-category="eyebrow">
+<article class="{{ $wrapperClass }}">
+  <div data-ga-category="eyebrow" class="w-full">
     {{ if .eyebrow }}
       {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
@@ -24,7 +25,7 @@
   <div class="{{ $thumbClass }}">
     {{ partial "tw/image-block.html" .imgOpts }}
   </div>
-  <div class="group mt-3">
+  <div class="group mt-3 flex-1">
     <h3 class="{{ $hedSize }} leading-tight text-hed">
       <a
         class="group-hover:underline"
@@ -79,7 +80,7 @@
       Related Stories
     </h4>
     <ul
-      class="list-outside space-y-3 border-b border-black pb-10 pt-2 font-sans font-light"
+      class="list-outside space-y-3 border-b border-black sm:border-none pb-10 pt-2 font-sans font-light"
     >
       {{ range .subitems }}
         <li class="ml-4 list-[square] leading-snug tracking-normal text-g-8">

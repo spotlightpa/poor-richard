@@ -1,0 +1,77 @@
+{{ $rows := .rows | default -1 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 3 }}
+{{ end }}
+{{ $pages := .pages }}
+{{ if $limit }}
+  {{ $pages = first $limit .pages }}
+{{ end }}
+
+
+<div class="order-0 max-w-full" data-ga-category="threeup">
+  {{ with .hed }}
+    <h2
+      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
+
+  <nav
+    class="mt-10 items-start space-y-7 sm:mt-0 sm:flex sm:w-full sm:gap-x-5 sm:space-y-0 xl:w-72 xl:flex-wrap xl:space-y-7"
+  >
+    {{ range $i, $page := $pages }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div data-ga-category="story-{{ add 1 $i }}">
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-hv-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-4"
+          "thumbClass" "w-1/3 sm:w-full"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          )
+        }}
+      </div>
+    {{ end }}
+  </nav>
+  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
+    <div
+      data-ga-category="readmore"
+      class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
+    >
+      <a href="{{ .readMoreLink }}">
+        {{- .readMore | default "Read More" -}}
+      </a>
+    </div>
+  {{ end }}
+</div>
