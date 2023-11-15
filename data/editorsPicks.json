@@ -1,12 +1,13 @@
 {
   "featuredStories": [
-    "content/news/2023-11-14-SPLGUNPROG.md"
+    "content/news/2023-11-15-SPL23CFFINAL.md"
   ],
   "subfeatures": [
-    "content/news/2023-10-27-SPLTOLBILLS.md"
+    "content/news/2023-11-07-SPLSC23RES.md",
+    "content/news/2023-11-13-SPLBUDTHAW.md"
   ],
   "topSlots": [
-    "content/news/2023-11-13-SPLBUDTHAW.md",
+    "content/news/2023-11-14-SPLGUNPROG.md",
     "content/statecollege/2023-11-13-SPLTICKS.md",
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
