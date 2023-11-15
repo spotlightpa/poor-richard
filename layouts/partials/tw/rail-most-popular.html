@@ -1,5 +1,5 @@
 <div
-  class="rounded border border-g-4 p-6 shadow"
+  class=""
   x-data="mostPopular"
   x-show="hasLoaded"
   x-cloak
@@ -14,23 +14,23 @@
     x-ref="mostPopSrc"
   />
   <h2
-    class="text-center font-sans text-base font-bold uppercase leading-none tracking-wider text-orange"
+    class="text-left font-sans text-base font-bold uppercase leading-none tracking-wider text-black"
   >
     Most Popular Stories
   </h2>
   <nav class="has-text-dark">
     <template x-for="(story, i) of stories">
       <a
-        class="ga-component:most-popular group mt-6 flex"
+        class="ga-component:most-popular itme group mt-6 flex"
         :href="story.url_path"
       >
         <span
-          class="mr-4 w-6 flex-shrink-0 font-sans text-3xl font-bold leading-none text-g-6"
+          class="mr-4 h-9 w-9 flex-shrink-0 rounded-full bg-black pr-[2px] text-right font-serif text-4xl font-bold leading-8 text-white"
           x-text="i + 1"
           data-ga-category="ranking"
         ></span>
         <span
-          class="tracking-tight text-black group-hover:underline"
+          class="font-semibold tracking-tight text-black group-hover:underline"
           data-ga-category="hed"
           x-text="story.title"
         ></span>
