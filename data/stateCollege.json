@@ -1,12 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-13-SPLTICKS.md"
+    "content/statecollege/2023-11-16-SPLPIPELINE.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2021-04-26-SPLMARINER26.md",
+    "content/news/2020-10-15-SPLPIPELINEONE15.md"
+  ],
   "topSlots": [
+    "content/statecollege/2023-11-13-SPLTICKS.md",
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/statecollege/2023-11-06-SPLPSUCLERY.md",
-    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md"
+    "content/statecollege/2023-11-06-SPLPSUCLERY.md"
   ],
   "topper": []
 }
