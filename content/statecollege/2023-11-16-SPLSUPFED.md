@@ -25,6 +25,8 @@ The city’s former administrative secretary Roberta Shaffer was also charged, a
 
 Federal prosecutors allege that beginning as early as 2008, Suplizio and Shaffer used the city’s tax identification number to create secret bank accounts. They then diverted city money into those accounts, including about $60,000 in fees that DuBois was supposed to receive under its waste management contract with a private company.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
+
 Prosecutors allege Suplizio and Shaffer made large cash withdrawals from these accounts, wrote checks to themselves and others, and obtained cashier’s checks with themselves listed as payees. The two also allegedly spent more than $450,000 from the accounts toward payments on Suplizio’s personal credit card.
 
 “Our communities entrust public officials like Suplizio with tremendous authority, and when that trust is violated — as is alleged here — this office and our federal and state law enforcement partners will hold them accountable to the fullest extent of the law,” United States Attorney Eric G. Olshan wrote in a statement.
@@ -34,6 +36,8 @@ Neither Suplizio nor Shaffer could be immediately reached for comment.
 Suplizio and Shaffer each face five counts total of conspiracy and federal program fraud.
 
 <em>This story will be updated.</em>
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 
