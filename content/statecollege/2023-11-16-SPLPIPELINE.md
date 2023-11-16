@@ -6,6 +6,7 @@ description = "The Pennsylvania Office of Attorney General brokered a $10M plea 
 image = "2023/11/01jn-9xbx-174h-2bwq.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
 image-description = "An illustration of the Mariner East II pipeline running across PA with drilling fluid leaks creating a dollar sign."
+image-gravity = "ce"
 internal-id = "SPLPIPELINE"
 kicker = "Rural Issues"
 modal-exclude = false
