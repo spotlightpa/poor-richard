@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-11-15-SPL23CFFINAL.md"
+    "content/statecollege/2023-11-16-SPLPIPELINE.md"
   ],
   "subfeatures": [
-    "content/news/2023-11-07-SPLSC23RES.md",
-    "content/news/2023-11-13-SPLBUDTHAW.md"
+    "content/news/2021-04-26-SPLMARINER26.md",
+    "content/news/2020-10-15-SPLPIPELINEONE15.md"
   ],
   "topSlots": [
+    "content/news/2023-11-15-SPL23CFFINAL.md",
     "content/news/2023-11-14-SPLGUNPROG.md",
-    "content/statecollege/2023-11-13-SPLTICKS.md",
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "topper": []
