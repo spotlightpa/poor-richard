@@ -1,49 +1,49 @@
 {{ $id := partial "helper/new-id" . }}
-<div class="overflow-hidden w-full rounded bg-g-9">
-<aside
-  data-ga-category="inline:slider"
-  x-data="slider"
-  class="relative mx-auto mt-8"
-  @keydown.space.prevent="handleSpace($event)"
->
-  <a class="sr-only font-sans text-sm focus:not-sr-only" href="#{{ $id }}"
-    >Skip slideshow…</a
+<div class="w-full overflow-hidden rounded bg-g-9">
+  <aside
+    data-ga-category="inline:slider"
+    x-data="slider"
+    class="relative mx-auto mt-8"
+    @keydown.space.prevent="handleSpace($event)"
   >
-  <div
-    class="
+    <a class="sr-only font-sans text-sm focus:not-sr-only" href="#{{ $id }}"
+      >Skip slideshow…</a
+    >
+    <div
+      class="
       custom-scrollbar flex select-none snap-x
       snap-mandatory flex-row flex-nowrap overflow-x-scroll
     "
-  >
-    {{ .Inner }}
-  </div>
-  <div
-    class="
+    >
+      {{ .Inner }}
+    </div>
+    <div
+      class="
       pointer-events-none absolute inset-y-0 left-0 hidden pl-1 text-g-3
       opacity-0
       transition-opacity duration-300 ease-in-out sm:flex
     "
-    :class="{'opacity-0': isFirst }"
-  >
-    <svg
-      class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
+      :class="{'opacity-0': isFirst }"
     >
-      {{ partial "helper/svg.html" "left" }}
-    </svg>
-  </div>
-  <div
-    class="
+      <svg
+        class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
+      >
+        {{ partial "helper/svg.html" "left" }}
+      </svg>
+    </div>
+    <div
+      class="
       pointer-events-none absolute inset-y-0 right-0 hidden pr-1 text-g-3 transition-opacity
       duration-300 ease-in-out sm:flex
     "
-    :class="{'opacity-0': isLast }"
-  >
-    <svg
-      class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
+      :class="{'opacity-0': isLast }"
     >
-      {{ partial "helper/svg.html" "right" }}
-    </svg>
-  </div>
-  <span id="{{ $id }}" class="sr-only">Story continues below…</span>
-</aside>
+      <svg
+        class="h-12 w-12 self-center fill-current opacity-75 drop-shadow filter lg:h-16 lg:w-16"
+      >
+        {{ partial "helper/svg.html" "right" }}
+      </svg>
+    </div>
+    <span id="{{ $id }}" class="sr-only">Story continues below…</span>
+  </aside>
 </div>
