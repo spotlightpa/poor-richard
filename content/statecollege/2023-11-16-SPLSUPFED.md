@@ -12,7 +12,7 @@ modal-exclude = false
 published = 2023-11-16T13:52:44.376-05:00
 slug = "dubois-pennsylvania-herm-suplizio-conspiracy-fraud-federal-charges"
 suppress-date = false
-title = "Embattled Pa. city manager used waste contract cash to pay his credit cards, feds say"
+title = "Feds take over corruption case against embattled Pa. city manager"
 title-tag = "DuBois’ Suplizio now facing federal corruption charges"
 topics = ["Local Government"]
 +++
@@ -23,9 +23,9 @@ HARRISBURG — Federal prosecutors on Thursday arrested and charged suspended Du
 
 The city’s former administrative secretary Roberta Shaffer was also charged, according to a <a href="https://www.justice.gov/usao-wdpa/pr/dubois-city-manager-and-employee-charged-stealing-hundreds-thousands-dollars-city">statement</a> by federal authorities.
 
-The new federal charges from the U.S. Attorney’s Office for the Western District of Pennsylvania deepen Suplizio’s already mounting legal troubles. The politically connected city manager was charged earlier this year by the Pennsylvania Office of Attorney General in a sweeping political corruption case.
+The new federal charges from the U.S. Attorney’s Office for the Western District of Pennsylvania further complicate Suplizio’s already mounting legal troubles. The politically connected city manager was charged earlier this year by the Pennsylvania Office of Attorney General in a sweeping political corruption case.
 
-Thursday’s federal charges closely mirror many of the allegations contained in Pennsylvania’s case and “will supplant” the state’s criminal allegations, Brett Hambright, a spokesperson for the state attorney general’s office, told Spotlight PA in an email. Hambright did not say whether that means the state will drop or dismiss the 23 criminal counts — including 13 felonies — it has brought against Suplizio.
+Thursday’s federal charges closely mirror many of the allegations contained in Pennsylvania’s case and “will supplant” the state’s criminal allegations, Brett Hambright, a spokesperson for the state attorney general’s office, told Spotlight PA in an email. Hambright said the state will drop the 23 criminal counts — including 13 felonies — it has brought against Suplizio.
 
 Like state prosecutors, federal authorities allege Suplizio diverted money that belonged to the city into secret bank accounts that only he and Shaffer controlled — and over which the city had no oversight. City Council did not approve the accounts, according to the federal indictment. The money they allegedly diverted included about $60,000 in annual fees that DuBois was supposed to receive under its waste management contract with a private company.
 
