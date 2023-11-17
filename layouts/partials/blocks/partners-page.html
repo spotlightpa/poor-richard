@@ -17,50 +17,52 @@
     data-ga-category="partners"
     x-data="{ selectedCounty: '' }"
   >
-    <div class="bg-g-2 py-8 md:py-24 
-    bg-gradient-to-b from-g-2  via-g-2 via-95% to-g-3 to-100%
-    ">
+    <div
+      class="bg-g-2 bg-gradient-to-b from-g-2 
+    via-g-2 via-95%  to-g-3 to-100% py-8 md:py-24
+    "
+    >
       <div class="mx-auto max-w-6xl px-5">
-      {{ with .title }}
-        <h2
-          class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
-        >
-          {{ . }}
-        </h2>
-      {{ end }}
-      {{ with $.Page.RenderString .copy }}
-        <div class="article-content my-4 text-xl lg:text-2xl">
-          {{ . }}
-        </div>
-      {{ end }}
-
-
-      <svg
-        class="mr-1 inline-block h-full w-full"
-        aria-label="Map of Pennsylvania"
-        viewBox="0 0 902 521"
-      >
-        {{ range site.Data.counties }}
-          <use
-            xlink:href="#{{ .name }}"
-            class="
-            {{ if index $hasPartner .name }}
-              cursor-pointer fill-g-5 hover:fill-blue-4
-            {{ else }}
-              fill-g-4
-            {{ end }}
-            stroke-white stroke-2
-            "
-            transform="{{ .translate }}"
-            @click="selectedCounty = '{{ .name }}'"
-          />
+        {{ with .title }}
+          <h2
+            class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
+          >
+            {{ . }}
+          </h2>
+        {{ end }}
+        {{ with $.Page.RenderString .copy }}
+          <div class="article-content my-4 text-xl lg:text-2xl">
+            {{ . }}
+          </div>
         {{ end }}
 
 
-        <g class="pointer-events-none">
-          {{ partial "helper/svg.html" "counties" }}
-        </g>
-      </svg>
+        <svg
+          class="mr-1 inline-block h-full w-full"
+          aria-label="Map of Pennsylvania"
+          viewBox="0 0 902 521"
+        >
+          {{ range site.Data.counties }}
+            <use
+              xlink:href="#{{ .name }}"
+              class="
+            {{ if index $hasPartner .name }}
+                cursor-pointer fill-g-5 hover:fill-blue-4
+              {{ else }}
+                fill-g-4
+              {{ end }}
+            stroke-white stroke-2
+            "
+              transform="{{ .translate }}"
+              @click="selectedCounty = '{{ .name }}'"
+            />
+          {{ end }}
+
+
+          <g class="pointer-events-none">
+            {{ partial "helper/svg.html" "counties" }}
+          </g>
+        </svg>
       </div>
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
@@ -77,9 +79,11 @@
     <div>
       {{ with $data }}
         <div class="m-auto w-full justify-center md:p-4 xl:px-0">
-          <header class="w-full bg-white  sticky top-0 shadow md:shadow-none md:relative">
+          <header
+            class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
+          >
             <div
-              class="m-auto max-w-screen-lg px-5 sm:flex md:px-0 md:items-center md:gap-3"
+              class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"
             >
               <h3
                 x-text="selectedCounty"
@@ -88,7 +92,7 @@
               ></h3>
 
               <div
-                class="no-js:hidden sticky mx-auto top-0 ml-auto w-96 max-w-full bg-white py-2 md:relative"
+                class="no-js:hidden sticky top-0 mx-auto ml-auto w-96 max-w-full bg-white py-2 md:relative"
               >
                 <select
                   @change="
@@ -126,11 +130,11 @@
             <div
               id="{{ . | urlize }}"
               x-show="selectedCounty === '{{ . }}'"
-              class="mx-auto max-w-screen-lg border-t border-g-4 p-5 pt-0 flex sm:gap-6"
+              class="mx-auto flex max-w-screen-lg border-t border-g-4 p-5 pt-0 sm:gap-6"
               :class="{'': selectedCounty === '{{ . }}' }"
             >
               {{ with . }}
-                <div class="hidden sm:flex w-80 max-w-xs justify-center pt-5">
+                <div class="hidden w-80 max-w-xs justify-center pt-5 sm:flex">
                   <svg
                     width="100%"
                     class="inline-block bg-none fill-blue stroke-white stroke-2"
@@ -142,7 +146,7 @@
                   </svg>
                 </div>
               {{ end }}
-              <span class="hidden sm:block w-0 border border-g-3"></span>
+              <span class="hidden w-0 border border-g-3 sm:block"></span>
               <ul
                 class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
               >
