@@ -9,112 +9,114 @@
 {{ end }}
 
 
-<div class="order-0 max-w-full" data-ga-category="threeup">
+<div
+  class="
+    flex flex-wrap gap-6 py-7
+    sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse
+  "
+>
   {{ with .hed }}
     <h2
-      class="mt-16 border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3"
+      class="mt-16 w-full border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3"
     >
       {{ . }}
     </h2>
   {{ end }}
 
-
-  <nav
-    class="group gap-6 py-7 sm:gap-x-12 md:flex md:items-start md:justify-between xl:gap-x-24"
-  >
-    {{ range $page | first 1 }}
-      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-      {{ $imgOpts := dict
-        "filename" (.Param "image")
-        "credit" (.Param "image-credit")
-        "description" (.Param "image-description")
+  {{ range $page | first 1 }}
+    {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+    {{ $imgOpts := dict
+      "filename" (.Param "image")
+      "credit" (.Param "image-credit")
+      "description" (.Param "image-description")
+      "link" $params.link
+      "widthRatio" 3
+      "heightRatio" 2
+      "widths" (slice 128 256 384 512 1280)
+      "figClass" "mt-2"
+      "sizeHint" "(min-width: 850px) 328px, 90vw"
+      "gravity" (.Param "image-gravity")
+    }}
+    <div
+      class="max-w-full md:w-5/12 md:flex-auto lg:w-8/12"
+      data-ga-category="story-1"
+    >
+      {{ $eyebrow := $params.published }}
+      {{ $rubricLink := $params.link }}
+      {{ $thumbClass := $params.thumbClass }}
+      {{ if eq $.eyebrow "rubric" }}
+        {{ $eyebrow = $params.kicker }}
+      {{ else if eq $.eyebrow "eventDate" }}
+        {{ $eyebrow = $params.eventDate | default $params.published }}
+      {{ end }}
+      {{ if eq $.rubricLink "rubric" }}
+        {{ $rubricLink = $params.rubric.RelPermalink }}
+      {{ end }}
+      {{ partial "tw/thumb-hv-item.html" (dict
+        "wrapperClass" "flex flex-wrap gap-x-9"
+        "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+        "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+        "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+        "imgOpts" $imgOpts
+        "rubricLink" $rubricLink
+        "eyebrow" $eyebrow
         "link" $params.link
-        "widthRatio" 3
-        "heightRatio" 2
-        "widths" (slice 128 256 384 512 1280)
-        "figClass" "mt-1"
-        "sizeHint" "(min-width: 850px) 328px, 90vw"
-        "gravity" (.Param "image-gravity")
+        "hed" .LinkTitle
+        "byline" $params.byline
+        "showDate" false
+        "showByline" $.showByline
+        "dek" $params.blurb
+        )
       }}
-      <div
-        class="max-w-full md:first:w-7/12 md:first:flex-auto md:last:w-3/12 md:last:flex-auto lg:first:w-8/12 lg:last:w-2/12"
-        data-ga-category="story-1"
-      >
-        {{ $eyebrow := $params.published }}
-        {{ $rubricLink := $params.link }}
-        {{ $thumbClass := $params.thumbClass }}
-        {{ if eq $.eyebrow "rubric" }}
-          {{ $eyebrow = $params.kicker }}
-        {{ else if eq $.eyebrow "eventDate" }}
-          {{ $eyebrow = $params.eventDate | default $params.published }}
-        {{ end }}
-        {{ if eq $.rubricLink "rubric" }}
-          {{ $rubricLink = $params.rubric.RelPermalink }}
-        {{ end }}
-        {{ partial "tw/thumb-hv-item.html" (dict
-          "wrapperClass" "flex flex-wrap gap-x-9"
-          "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
-          "hedSize" `text-xl md:text-2xl lg:text-3xl font-semibold`
-          "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
-          "imgOpts" $imgOpts
-          "rubricLink" $rubricLink
-          "eyebrow" $eyebrow
-          "link" $params.link
-          "hed" .LinkTitle
-          "byline" $params.byline
-          "showDate" false
-          "showByline" $.showByline
-          "dek" $params.blurb
-          )
-        }}
-      </div>
-    {{ end }}
-    {{ range after 1 $page }}
-      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-      {{ $imgOpts := dict
-        "filename" (.Param "image")
-        "credit" (.Param "image-credit")
-        "description" (.Param "image-description")
-        "link" $params.link
-        "widthRatio" 3
-        "heightRatio" 2
-        "widths" (slice 128 256 384 512 1280)
-        "figClass" "mt-1"
-        "sizeHint" "(min-width: 850px) 328px, 90vw"
-        "gravity" (.Param "image-gravity")
-      }}
-      <div
-        class="max-w-full md:first:w-3/5 md:first:flex-auto md:last:w-2/5 md:last:flex-auto lg:first:w-8/12 lg:last:w-2/12"
-        data-ga-category="story-2"
-      >
-        {{ $eyebrow := $params.published }}
-        {{ $rubricLink := $params.link }}
-        {{ $thumbClass := $params.thumbClass }}
-        {{ if eq $.eyebrow "rubric" }}
-          {{ $eyebrow = $params.kicker }}
-        {{ else if eq $.eyebrow "eventDate" }}
-          {{ $eyebrow = $params.eventDate | default $params.published }}
-        {{ end }}
-        {{ if eq $.rubricLink "rubric" }}
-          {{ $rubricLink = $params.rubric.RelPermalink }}
-        {{ end }}
-        {{ partial "tw/thumb-hv-item.html" (dict
-          "wrapperClass" "flex flex-wrap gap-x-4"
-          "thumbClass" "w-2/5 md:w-full"
-          "imgOpts" $imgOpts
-          "rubricLink" $rubricLink
-          "eyebrow" $eyebrow
-          "link" $params.link
-          "hed" .LinkTitle
-          "byline" $params.byline
-          "showDate" false
-          "showByline" $.showByline
-          )
-        }}
-      </div>
-    {{ end }}
+    </div>
+  {{ end }}
+  <span class="mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"></span>
 
-  </nav>
+  {{ range after 1 $page }}
+    {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+    {{ $imgOpts := dict
+      "filename" (.Param "image")
+      "credit" (.Param "image-credit")
+      "description" (.Param "image-description")
+      "link" $params.link
+      "widthRatio" 16
+      "heightRatio" 9
+      "widths" (slice 128 256 384 512 1280)
+      "figClass" "mt-2"
+      "sizeHint" "(min-width: 850px) 328px, 90vw"
+      "gravity" (.Param "image-gravity")
+    }}
+    <div
+      class="max-w-full md:w-2/12 md:flex-auto lg:w-2/12 xl:w-72"
+      data-ga-category="story-2"
+    >
+      {{ $eyebrow := $params.published }}
+      {{ $rubricLink := $params.link }}
+      {{ $thumbClass := $params.thumbClass }}
+      {{ if eq $.eyebrow "rubric" }}
+        {{ $eyebrow = $params.kicker }}
+      {{ else if eq $.eyebrow "eventDate" }}
+        {{ $eyebrow = $params.eventDate | default $params.published }}
+      {{ end }}
+      {{ if eq $.rubricLink "rubric" }}
+        {{ $rubricLink = $params.rubric.RelPermalink }}
+      {{ end }}
+      {{ partial "tw/thumb-hv-item.html" (dict
+        "wrapperClass" "flex flex-wrap gap-x-4"
+        "thumbClass" "w-2/5 md:w-full"
+        "imgOpts" $imgOpts
+        "rubricLink" $rubricLink
+        "eyebrow" $eyebrow
+        "link" $params.link
+        "hed" .LinkTitle
+        "byline" $params.byline
+        "showDate" false
+        "showByline" $.showByline
+        )
+      }}
+    </div>
+  {{ end }}
+
   {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"

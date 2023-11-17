@@ -20,7 +20,7 @@
 }}
 
 
-<div class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12">
+<div class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12 lg:space-y-16">
   <div
     class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,_auto)] xl:items-stretch xl:justify-evenly"
   >
@@ -105,11 +105,9 @@
     >
   </div>
 
-  <!-- Insert Callouts -->
-  {{ if .editorPicksCallout }}
-    <div
-      class="mt-16 md:col-span-9 md:row-start-3 md:mt-24 xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:row-end-5"
-    >
+  <div class="group">
+    <!-- Insert Callouts -->
+    {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
         "hed" "Editor's Picks"
@@ -118,9 +116,23 @@
         "rubricLink" "rubric"
         )
       }}
-    </div>
-  {{ end }}
+    {{ end }}
 
+    {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
+    {{ partial "tw/list-callout-story.html" (dict
+      "hed" "The Capitol"
+      "pages" $pages.RegularPages
+      "rubricLink" "rubric"
+      )
+    }}
+    {{ $pages := site.GetPage "content/statecollege/_index.md" }}
+    {{ partial "tw/list-callout-story.html" (dict
+      "hed" "State College"
+      "pages" $pages.RegularPages
+      "rubricLink" "rubric"
+      )
+    }}
+  </div>
 
   <!-- End Callouts -->
 
