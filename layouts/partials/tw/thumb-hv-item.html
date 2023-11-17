@@ -1,8 +1,8 @@
 {{ $thumbClass := .thumbClass | default `w-full` }}
 {{ $wrapperClass := .wrapperClass | default `w-full` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
-{{ $hedSize := .hedSize | default `text-lg font-semibold` }}
-{{ $dekSize := .dekSize | default `text-xl` }}
+{{ $hedSize := .hedSize | default `text-base sm:text-lg font-semibold` }}
+{{ $dekSize := .dekSize | default `text-sm sm:text-base` }}
 {{ $hedColor := .hedColor | default `text-hed` }}
 {{ $linkColor := .linkColor | default `text-dek ` }}
 {{ $subitemSize := .subitemSize | default `` }}
@@ -35,17 +35,6 @@
         {{ .hed }}
       </a>
     </h3>
-    {{ if .dek }}
-      <h4 class="{{ $dekSize }} mt-2 font-sans text-dek">
-        <a
-          href="{{ .link }}"
-          class="group-hover:underline"
-          data-ga-category="dek"
-        >
-          {{- .dek -}}
-        </a>
-      </h4>
-    {{ end }}
     {{ if ( and ( .byline ) ( $showByline ) ) }}
       <h4
         class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-blue"
@@ -56,6 +45,17 @@
           data-ga-category="byline"
         >
           {{- printf "by %s" .byline -}}
+        </a>
+      </h4>
+    {{ end }}
+    {{ if .dek }}
+      <h4 class="{{ $dekSize }} mt-2 font-sans text-dek">
+        <a
+          href="{{ .link }}"
+          class="group-hover:underline"
+          data-ga-category="dek"
+        >
+          {{- .dek -}}
         </a>
       </h4>
     {{ end }}
@@ -80,7 +80,7 @@
       Related Stories
     </h4>
     <ul
-      class="list-outside space-y-3 border-b border-black sm:border-none pb-10 pt-2 font-sans font-light"
+      class="list-outside space-y-3 border-b border-black pb-10 pt-2 font-sans font-light sm:border-none"
     >
       {{ range .subitems }}
         <li class="ml-4 list-[square] leading-snug tracking-normal text-g-8">

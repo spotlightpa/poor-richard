@@ -20,7 +20,7 @@
 }}
 
 
-<div class="mx-auto mb-5 max-w-screen-xl">
+<div class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12">
   <div
     class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,_auto)] xl:items-stretch xl:justify-evenly"
   >
@@ -74,7 +74,7 @@
         {{ partial "tw/newsletter-box-lg.html" (dict
           "newsletterHed" (page.Param "newsletter-hed")
           "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "p-4"
+          "newsletterWrapper" "p-4 rounded"
           )
         }}
       </div>
@@ -96,20 +96,57 @@
 
   <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
+  <div
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+  >
+    <span
+      class="mx-auto flex h-[90px] w-[970px] items-center justify-center bg-g-4"
+      >Ad</span
+    >
+  </div>
+
+  <!-- Insert Callouts -->
+  {{ if .editorPicksCallout }}
+    <div
+      class="mt-16 md:col-span-9 md:row-start-3 md:mt-24 xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:row-end-5"
+    >
+      {{ $pages := .editorPicksCallout }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "Editor's Picks"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        )
+      }}
+    </div>
+  {{ end }}
+
+
+  <!-- End Callouts -->
+
+  <div
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+  >
+    <span
+      class="mx-auto flex h-[90px] w-[970px] items-center justify-center bg-g-4"
+      >Ad</span
+    >
+  </div>
+
   {{ if .river }}
     <div
-      class="items-start md:grid md:grid-cols-3 lg:gap-x-8 max-w-screen-xl lg:px-20 mx-auto"
+      class="mx-auto mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:gap-x-8 lg:px-20"
       @mouseover.passive.once="load()"
       @touchstart.passive.once="load()"
     >
       <h2
-        class="border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3"
+        class="w-full border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide"
       >
         More top stories
       </h2>
 
       <div
-        class="justify-between py-8 md:col-span-2 md:row-start-2"
+        class="flex-1 justify-between py-6 sm:w-2/3"
         x-ref="archives"
         data-ga-category="river"
         data-sf-campaign="701Dn000000YgodIAC"
@@ -120,49 +157,47 @@
           @mouseover.once="load()"
           @touchstart.passive.once="load()"
         >
-          <div
-            class="mt-6 flex flex-col space-y-6 md:space-y-5"
-            x-ref="archives"
-          >
-            {{ range $i, $page := .river | first 30 }}
-      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-      {{ $imgOpts := dict
-        "filename" (.Param "image")
-        "credit" (.Param "image-credit")
-        "description" (.Param "image-description")
-        "link" $params.link
-        "widthRatio" 16
-        "heightRatio" 9
-        "widths" (slice 128 256 384 512 1280)
-        "figClass" "mt-1"
-        "sizeHint" "(min-width: 850px) 328px, 90vw"
-        "gravity" (.Param "image-gravity")
-      }}
-      <div data-ga-category="story-{{ add 1 $i }}">
-        {{ $eyebrow := $params.kicker }}
-        {{ $rubricLink := $params.link }}
-        {{ $thumbClass := $params.thumbClass }}
-        {{ if eq $.eyebrow "rubric" }}
-          {{ $eyebrow = $params.kicker }}
-        {{ else if eq $.eyebrow "eventDate" }}
-          {{ $eyebrow = $params.eventDate | default $params.published }}
-        {{ end }}
-        {{ if eq $.rubricLink "rubric" }}
-          {{ $rubricLink = $params.rubric.RelPermalink }}
-        {{ end }}
-        {{ partial "tw/thumb-hv-item.html" (dict
-          "wrapperClass" "flex flex-wrap gap-x-4"
-          "thumbClass" "w-1/3"
-          "imgOpts" $imgOpts
-          "rubricLink" $rubricLink
-          "eyebrow" $eyebrow
-          "link" $params.link
-          "hed" .LinkTitle
-          "byline" $params.byline
-          "showDate" false
-          "showByline" $.showByline
-          )
-        }}
+          <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+            {{ range $i, $page := .river | first 12 }}
+              {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+              {{ $imgOpts := dict
+                "filename" (.Param "image")
+                "credit" (.Param "image-credit")
+                "description" (.Param "image-description")
+                "link" $params.link
+                "widthRatio" 5
+                "heightRatio" 3
+                "widths" (slice 128 256 384 512 1280)
+                "figClass" "mt-1"
+                "sizeHint" "(min-width: 850px) 328px, 90vw"
+                "gravity" (.Param "image-gravity")
+              }}
+              <div data-ga-category="story-{{ add 1 $i }}">
+                {{ $eyebrow := $params.kicker }}
+                {{ $rubricLink := $params.link }}
+                {{ $thumbClass := $params.thumbClass }}
+                {{ if eq $.eyebrow "rubric" }}
+                  {{ $eyebrow = $params.kicker }}
+                {{ else if eq $.eyebrow "eventDate" }}
+                  {{ $eyebrow = $params.eventDate | default $params.published }}
+                {{ end }}
+                {{ if eq $.rubricLink "rubric" }}
+                  {{ $rubricLink = $params.rubric.RelPermalink }}
+                {{ end }}
+                {{ partial "tw/thumb-hv-item.html" (dict
+                  "wrapperClass" "flex flex-wrap gap-x-4"
+                  "thumbClass" "w-2/5 sm:w-1/3 md:w-2/5"
+                  "imgOpts" $imgOpts
+                  "rubricLink" $rubricLink
+                  "eyebrow" $eyebrow
+                  "link" $params.link
+                  "hed" .LinkTitle
+                  "byline" $params.byline
+                  "showDate" false
+                  "showByline" $.showByline
+                  "dek" $params.blurb
+                  )
+                }}
               </div>
               {{ if eq (mod $i 4) 3 | and $desktopImages }}
                 <div
@@ -214,7 +249,7 @@
       <div
         id="frontpage-sidebar"
         x-data="funnelStatus"
-        class="grid items-start justify-items-center gap-2 py-8 sm:max-lg:grid-cols-2 md:px-8 lg:col-start-3 lg:flex lg:flex-col lg:self-stretch"
+        class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
       >
         <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
           {{ partial "tw/promo-single.html" (dict
@@ -237,13 +272,13 @@
         {{ end }}
         {{ if page.Param "sidebar-sticky-images" }}
           <div
-            class="flex-1"
+            class="sticky top-0 mx-auto self-start"
             data-ga-category="sticky"
             data-sf-campaign="701Dn000000YgofIAC"
             x-intersect="$dispatch('close-sticky')"
           >
             {{ partial "tw/promo-single.html" (dict
-              "class" "pt-5 min-w-full no-js:hidden sticky top-0"
+              "class" "pt-5 min-w-full no-js:hidden"
               "images" (page.Param "sidebar-sticky-images")
               "width" (page.Param "sidebar-sticky-width")
               "height" (page.Param "sidebar-sticky-height")

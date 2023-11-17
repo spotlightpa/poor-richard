@@ -1,0 +1,128 @@
+{{ $rows := .rows | default 2 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 1 }}
+{{ end }}
+{{ $page := .pages }}
+{{ if $limit }}
+  {{ $page = first $limit .pages }}
+{{ end }}
+
+
+<div class="order-0 max-w-full" data-ga-category="threeup">
+  {{ with .hed }}
+    <h2
+      class="mt-16 border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
+
+  <nav
+    class="group gap-6 py-7 sm:gap-x-12 md:flex md:items-start md:justify-between xl:gap-x-24"
+  >
+    {{ range $page | first 1 }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 3
+        "heightRatio" 2
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div
+        class="max-w-full md:first:w-7/12 md:first:flex-auto md:last:w-3/12 md:last:flex-auto lg:first:w-8/12 lg:last:w-2/12"
+        data-ga-category="story-1"
+      >
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-hv-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-9"
+          "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+          "hedSize" `text-xl md:text-2xl lg:text-3xl font-semibold`
+          "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          "dek" $params.blurb
+          )
+        }}
+      </div>
+    {{ end }}
+    {{ range after 1 $page }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 3
+        "heightRatio" 2
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-1"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div
+        class="max-w-full md:first:w-3/5 md:first:flex-auto md:last:w-2/5 md:last:flex-auto lg:first:w-8/12 lg:last:w-2/12"
+        data-ga-category="story-2"
+      >
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-hv-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-4"
+          "thumbClass" "w-2/5 md:w-full"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          )
+        }}
+      </div>
+    {{ end }}
+
+  </nav>
+  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
+    <div
+      data-ga-category="readmore"
+      class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
+    >
+      <a href="{{ .readMoreLink }}">
+        {{- .readMore | default "Read More" -}}
+      </a>
+    </div>
+  {{ end }}
+</div>

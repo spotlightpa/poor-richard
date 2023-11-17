@@ -13,8 +13,10 @@
 
 {{ $pinnedStories := partial "helper/get-picks" "topSlots" }}
 
+{{ $editorPicksCallout := partial "helper/get-picks" "edCallout" }}
+
 {{ $paPost := site.GetPage "/newsletters/papost" }}
-{{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+{{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
 
 {{ $hasPromo := .Param "promo-active" }}
@@ -30,6 +32,7 @@
 {{ partial "tw/frontpage" (dict
   "featuredStories" $featuredStories
   "pinnedStories" $pinnedStories
+  "editorPicksCallout" $editorPicksCallout
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass

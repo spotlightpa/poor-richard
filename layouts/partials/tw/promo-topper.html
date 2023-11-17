@@ -16,20 +16,23 @@
 
 
 <section
-  class="no-js:hidden"
+  class="no-js:hidden px-auto bg-white py-8 sm:py-12"
   data-ga-category="topper"
   data-sf-campaign="701Dn000000YgojIAC"
-  style="
-    background-color: {{ $toppperBgColor }};
-    {{ if not $bannerActive }}
-    border-top: .25rem solid {{ $toppperDividerColor }};
-  {{ end }}
-  "
 >
-  <p>
+  <p class="flex items-center justify-center">
     {{ if $imgDesktop }}
       {{ with $link }}
-        <a class="hidden sm:block" data-ga-category="desktop" href="{{ . }}">
+        <a
+          class="hidden sm:block sm:max-w-full md:max-w-3xl lg:max-w-[960px]"
+          data-ga-category="desktop"
+          href="{{ . }}"
+          style="
+            background-color: {{ $toppperBgColor }};
+            max-width: {{ $widthDesktop }};
+            max-height: {{ $heightDesktop }};
+          "
+        >
           {{- partial "tw/image-rotator.html" (dict
             "images" $imgDesktop
             "width" $widthDesktop
@@ -41,7 +44,7 @@
           -}}
         </a>
       {{ else }}
-        <span class="hidden sm:block">
+        <span class="hidden sm:mx-auto sm:my-16 sm:block">
           {{- partial "tw/image-rotator.html" (dict
             "images" $imgDesktop
             "width" $widthDesktop
@@ -56,7 +59,14 @@
     {{ end }}
     {{ if $imgMobile }}
       {{ with $link }}
-        <a class="sm:hidden" data-ga-category="mobile" href="{{ . }}">
+        <a
+          class="mx-auto h-[250px] w-[300px] sm:hidden"
+          data-ga-category="mobile"
+          href="{{ . }}"
+          style="
+            background-color: {{ $toppperBgColor }};
+          "
+        >
           {{- partial "tw/image-rotator.html" (dict
             "images" $imgMobile
             "width" $widthMobile
@@ -68,7 +78,7 @@
           -}}
         </a>
       {{ else }}
-        <span class="sm:hidden">
+        <span class="hidden sm:mx-auto sm:my-16 sm:block">
           {{- partial "tw/image-rotator.html" (dict
             "images" $imgMobile
             "width" $widthMobile
