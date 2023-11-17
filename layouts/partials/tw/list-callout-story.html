@@ -70,7 +70,9 @@
       }}
     </div>
   {{ end }}
-  <span class="mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"></span>
+  <span
+    class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
+  ></span>
 
   {{ range after 1 $page }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
