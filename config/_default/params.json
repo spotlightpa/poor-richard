@@ -55,7 +55,7 @@
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our end-of-year fundraising drive.",
-  "sidebar-top-height": 250,
+  "sidebar-top-height": 600,
   "sidebar-top-images": [
     "https://files.data.spotlightpa.org/uploads/01jk/zmwx/newsmatch-2023-november-squares-5.png",
     "https://files.data.spotlightpa.org/uploads/01jk/zmwx/newsmatch-2023-november-squares-7.png",
@@ -87,11 +87,11 @@
   "takeover-link": "https://spotlightpa.fundjournalism.org/statecollege/?campaign=701Dn000000YqKfIAK",
   "topper-active": true,
   "topper-bg-color": "#050058",
-  "topper-desktop-height": 175,
+  "topper-desktop-height": 90,
   "topper-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01jn/837r/newsmatch-2022-tracker-banners-1350-x-175-px-9-.svg"
   ],
-  "topper-desktop-width": 1350,
+  "topper-desktop-width": 970,
   "topper-divider-color": "#050058",
   "topper-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our end-of-year fundraising drive.",
   "topper-link": "/donate/",
