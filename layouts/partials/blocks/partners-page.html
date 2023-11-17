@@ -17,7 +17,10 @@
     data-ga-category="partners"
     x-data="{ selectedCounty: '' }"
   >
-    <div class="mx-auto max-w-6xl px-5">
+    <div class="bg-g-2 py-8 md:py-24 
+    bg-gradient-to-b from-g-2  via-g-2 via-95% to-g-3 to-100%
+    ">
+      <div class="mx-auto max-w-6xl px-5">
       {{ with .title }}
         <h2
           class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
@@ -33,7 +36,7 @@
 
 
       <svg
-        class="-ml-6 -mt-2 mr-1 inline-block h-full w-full"
+        class="mr-1 inline-block h-full w-full"
         aria-label="Map of Pennsylvania"
         viewBox="0 0 902 521"
       >
@@ -58,7 +61,7 @@
           {{ partial "helper/svg.html" "counties" }}
         </g>
       </svg>
-
+      </div>
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
@@ -73,22 +76,32 @@
 
     <div>
       {{ with $data }}
-        <div class="m-auto w-full justify-center md:py-4 xl:px-0">
-          <header class="top-0 w-full bg-white md:relative">
+        <div class="m-auto w-full justify-center md:p-4 xl:px-0">
+          <header class="w-full bg-white  sticky top-0 shadow md:shadow-none md:relative">
             <div
-              class="m-auto max-w-screen-lg px-5 md:flex md:items-baseline md:gap-3"
+              class="m-auto max-w-screen-lg px-5 sm:flex md:px-0 md:items-center md:gap-3"
             >
               <h3
                 x-text="selectedCounty"
                 class="mb-2 py-2 font-sans text-3xl font-black leading-tight tracking-wide sm:text-4xl lg:text-5xl"
+                :class="{ 'w-full' : selectedCounty != '' }"
               ></h3>
 
               <div
-                class="no-js:hidden sticky top-0 mx-auto w-96 max-w-full bg-white px-5 py-2 shadow md:relative md:shadow-none"
+                class="no-js:hidden sticky mx-auto top-0 ml-auto w-96 max-w-full bg-white py-2 md:relative"
               >
                 <select
                   @change="
                     selectedCounty = $el.value;
+                        window.setTimeout(() => {
+                          document.
+                            getElementById('{{ . | urlize }}').
+                            scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start',
+                              inline: 'start',
+                            });
+                        }, 250);
                   "
                   class="spl-select text-xl"
                 >
@@ -113,11 +126,11 @@
             <div
               id="{{ . | urlize }}"
               x-show="selectedCounty === '{{ . }}'"
-              class="mx-auto max-w-screen-lg border-t border-g-4 p-5 pt-0 md:flex md:gap-6"
+              class="mx-auto max-w-screen-lg border-t border-g-4 p-5 pt-0 flex sm:gap-6"
               :class="{'': selectedCounty === '{{ . }}' }"
             >
               {{ with . }}
-                <div class="flex w-80 max-w-xs justify-center pt-5">
+                <div class="hidden sm:flex w-80 max-w-xs justify-center pt-5">
                   <svg
                     width="100%"
                     class="inline-block bg-none fill-blue stroke-white stroke-2"
@@ -129,7 +142,7 @@
                   </svg>
                 </div>
               {{ end }}
-              <span class="w-0 border border-g-3"></span>
+              <span class="hidden sm:block w-0 border border-g-3"></span>
               <ul
                 class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
               >
