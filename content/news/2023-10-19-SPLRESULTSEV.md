@@ -1,21 +1,21 @@
 +++
-blurb = "Join us Nov. 17 for a Q&A on Pa.’s 2023 Election Day results and how they’ll impact the state."
+blurb = "On Nov. 17, Spotlight PA held a live review of Pa.'s 2023 judicial election results and what they mean for the state."
 byline = "Spotlight PA Staff"
-description = "Join us Nov. 17 for a live review of Pa.’s 2023 judicial election results and what they mean for the state."
+description = "On Nov. 17, Spotlight PA held a live review of PA's 2023 judicial election results and what they mean for the state."
 event-date = 2023-11-16T00:00:00-05:00
 event-title = "RESULTS REVIEW: A free panel on Pa.’s 2023 election results"
 event-url = "https://zoom.us/webinar/register/WN_wf_P08sRQF-jRFrnG-T4NA#/registration"
-image = "external/e2m6zgj9chagydsjwwqnkx2kx8.jpeg"
+image = "2023/11/01jn-4rj6-3rk7-d9rx.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
-image-description = "Mail-in ballots are sorted and counted at Lehigh County Government Center in Allentown."
+image-description = "Workers sort mail ballots Nov. 7, 2023, at Northampton County Courthouse in Easton, Northampton County, Pennsylvania. "
 internal-id = "SPLRESULTSEV"
 kicker = "Events"
 modal-exclude = false
 published = 2023-10-19T05:00:00.628-04:00
 slug = "pennsylvania-election-2023-results-event"
 suppress-date = false
-title = "You’re invited! A free panel on Pa.’s 2023 election results"
-title-tag = "A guide to Pa.’s 2023 election results and what they mean for the state"
+title = "WATCH: A free panel on Pa.’s 2023 election results"
+title-tag = "What PA's 2023 election results mean for the state"
 topics = ["Events"]
 +++
 
