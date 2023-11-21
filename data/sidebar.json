@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "backgroundColor": "#99d9f1",
-      "label": "RSVP",
-      "labelColor": "#000000",
-      "linkColor": "#000000",
-      "page": "content/news/2023-10-19-SPLRESULTSEV.md"
-    },
-    {
       "backgroundColor": "#000000",
       "label": "New investigation",
       "labelColor": "#ffcb03",
