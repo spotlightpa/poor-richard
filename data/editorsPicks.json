@@ -1,12 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-20-SPLRUSHSOLAR.md"
+    "content/news/2023-11-21-SPL_COMPASSIONATE.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2022-04-21-SPLPETITIONER21.md",
+    "content/news/2022-04-05-SPLNUMBERS05.md",
+    "content/news/2022-03-30-SPLRELEASE30.md"
+  ],
   "topSlots": [
+    "content/statecollege/2023-11-20-SPLRUSHSOLAR.md",
     "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/news/2023-11-15-SPL23CFFINAL.md",
-    "content/news/2023-11-16-SPLNEWSQUIZNOV13.md"
+    "content/news/2023-11-15-SPL23CFFINAL.md"
   ],
   "topper": []
 }
