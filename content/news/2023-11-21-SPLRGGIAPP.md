@@ -12,20 +12,20 @@ modal-exclude = false
 published = 2023-11-21T15:27:11.934-05:00
 slug = "pennsylvania-josh-shapiro-climate-change-appeal-regional-greenhouse-gas-initiative-court-case"
 suppress-date = false
-title = "Gov. Josh Shapiro will appeal decision that struck down key climate program to Pa.’s highest court"
-title-tag = "PA Gov. Shapiro to appeal climate program ruling"
+title = "Gov. Josh Shapiro appeals decisions that struck down key climate program to Pa.’s highest court"
+title-tag = "PA Gov. Shapiro appeals climate program rulings"
 topics = ["Environment", "Josh Shapiro", "The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-HARRISBURG — Gov. Josh Shapiro’s office announced Tuesday that it will appeal an appellate court decision to strike down Pennsylvania’s participation in an interstate program to reduce carbon emissions and fight climate change.
+HARRISBURG — Gov. Josh Shapiro’s office said Tuesday that it has appealed two Commonwealth Court decisions that struck down Pennsylvania’s participation in an interstate program to reduce carbon emissions and fight climate change.
 
 Shapiro has been unwilling to commit to keeping Pennsylvania in the Regional Greenhouse Gas Initiative, and the administration made it clear that the appeal is not a pledge to do so.
 
-It’s now up to the state Supreme Court to decide whether it will take up the case.
+It’s now up to the state Supreme Court to decide whether it will take up the appeal.
 
-In a statement, Shapiro’s administration said the <a href="https://www.spotlightpa.org/news/2023/11/regional-greenhouse-gas-rggi-struck-down-pennsylvania-climate-change-fossil-energy/">Commonwealth Court decision on RGGI</a> was “limited to questions of executive authority, and our Administration must appeal in order to protect that important authority for this Administration and all future governors.”
+In a statement, Shapiro’s administration said the <a href="https://www.spotlightpa.org/news/2023/11/regional-greenhouse-gas-rggi-struck-down-pennsylvania-climate-change-fossil-energy/">Commonwealth Court decisions on RGGI</a> were “limited to questions of executive authority, and our Administration must appeal in order to protect that important authority for this Administration and all future governors.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
