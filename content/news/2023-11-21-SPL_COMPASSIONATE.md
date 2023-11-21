@@ -81,7 +81,7 @@ Their health care is significantly more expensive than that of their younger cou
 
 The legislation, sponsored by state Rep. Stephen Kinsey (D., Philadelphia), seeks to expand the conditions that would qualify someone for release, and decrease both the human and financial cost of keeping older people behind bars.
 
-Under Kinsey’s bill, incarcerated people would be able to apply for medical parole if they are at least 55 years old; have served at least half their minimum sentence or 25 years of a life sentence; and have a terminal, chronic, or debilitating health condition. Applications would then require parole board approval rather than a ruling from a judge.
+Under Kinsey’s bill, incarcerated people would be able to apply for medical parole if they are at least 55 years old and have served at least half their minimum sentence or 25 years of a life sentence; or have a terminal, chronic, or debilitating health condition. Applications would then require parole board approval rather than a ruling from a judge.
 
 People who have aged beyond 50 in prison are unlikely to reoffend on the outside, Kinsey told Spotlight PA.
 
