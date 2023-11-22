@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-11-21-SPL_COMPASSIONATE.md"
+    "content/news/2023-11-22-SPL_DOC_DATA.md"
   ],
   "subfeatures": [
-    "content/news/2022-04-21-SPLPETITIONER21.md",
-    "content/news/2022-04-05-SPLNUMBERS05.md",
-    "content/news/2022-03-30-SPLRELEASE30.md"
+    "content/news/2023-05-12-SPLMARIJDOC0512.md",
+    "content/news/2023-02-16-SPL_SUIT0215.md",
+    "content/news/2023-06-28-spl_advertising_0622.md"
   ],
   "topSlots": [
     "content/news/2023-11-21-SPLBARUL.md",
     "content/news/2023-11-21-SPLRGGIAPP.md",
-    "content/statecollege/2023-11-20-SPLRUSHSOLAR.md"
+    "content/news/2023-11-21-SPL_COMPASSIONATE.md"
   ],
   "topper": []
 }
