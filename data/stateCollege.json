@@ -1,12 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-20-SPLRUSHSOLAR.md"
+    "content/statecollege/2023-11-23-SPL5DUB.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
+  "subfeatures": [
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
     "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/statecollege/2023-11-17-SPLHOWDUB.md",
-    "content/statecollege/2023-11-16-SPLPIPELINE.md"
+    "content/statecollege/2023-11-17-SPLHOWDUB.md"
+  ],
+  "topSlots": [
+    "content/statecollege/2023-11-20-SPLRUSHSOLAR.md",
+    "content/statecollege/2023-11-16-SPLPIPELINE.md",
+    "content/statecollege/2023-11-13-SPLTICKS.md"
   ],
   "topper": []
 }
