@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-23-SPL5DUB.md"
+    "content/news/2023-11-24-SPLBIRDNAMES.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/statecollege/2023-11-17-SPLHOWDUB.md",
-    "content/statecollege/2023-11-16-SPLSUPFED.md"
+    "content/news/2023-09-01-SPLCIVWARTAILS.md",
+    "content/statecollege/2023-10-25-SPLALPCO.md"
   ],
   "topSlots": [
-    "content/news/2023-11-23-SPLPUZZLES23.md",
     "content/news/2023-11-22-SPL_DOC_DATA.md",
-    "content/news/2023-11-21-SPL_COMPASSIONATE.md"
+    "content/news/2023-11-21-SPL_COMPASSIONATE.md",
+    "content/news/2023-11-23-SPLNEWSQUIZNOV20.md"
   ],
   "topper": []
 }
