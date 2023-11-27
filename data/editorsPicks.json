@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-11-24-SPLBIRDNAMES.md"
+    "content/statecollege/2023-11-27-SPLPUBLICLANDS.md"
   ],
   "subfeatures": [
-    "content/news/2023-09-01-SPLCIVWARTAILS.md",
-    "content/statecollege/2023-10-25-SPLALPCO.md"
+    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md"
   ],
   "topSlots": [
     "content/news/2023-11-22-SPL_DOC_DATA.md",
     "content/news/2023-11-21-SPL_COMPASSIONATE.md",
-    "content/news/2023-11-23-SPLNEWSQUIZNOV20.md"
+    "content/news/2023-11-21-SPLBARUL.md"
   ],
   "topper": []
 }
