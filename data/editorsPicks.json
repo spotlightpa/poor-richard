@@ -1,14 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-11-27-SPLPUBLICLANDS.md"
+    "content/news/2023-11-28-SPLBUDIMP.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-03-SPLENVIROJUSTICE.md"
+    "content/news/2023-11-13-SPLBUDTHAW.md"
   ],
   "topSlots": [
-    "content/news/2023-11-22-SPL_DOC_DATA.md",
-    "content/news/2023-11-21-SPL_COMPASSIONATE.md",
-    "content/news/2023-11-21-SPLBARUL.md"
+    "content/news/2023-11-28-SPLEOYCOL.md",
+    "content/statecollege/2023-11-27-SPLPUBLICLANDS.md",
+    "content/news/2023-11-22-SPL_DOC_DATA.md"
   ],
   "topper": []
 }
