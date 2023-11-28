@@ -9,19 +9,21 @@
 {{ $idEmail := partial "helper/new-id" . }}
 
 
-  <div
-    class="mx-auto max-w-screen-lg px-4 py-6 bg-g-3 rounded"
-    data-ga-category="inline"
-  >
-    <div class="md:col-span-5 md:col-start-1 grid grid-cols-2 gap-x-4 gap-y-3">
-      <h2
-        class="col-start-2 col-span-1 max-w-md text-lg font-black leading-none text-bold"
-      >
-        {{ .hed }}
-      </h2>
-      <div class="col-start-2 col-span-1 row-start-2 font-sans my-2 max-w-md text-base">
-        {{ .dek }}
-      </div>
+<div
+  class="mx-auto max-w-screen-lg rounded bg-g-3 px-4 py-6"
+  data-ga-category="inline"
+>
+  <div class="grid grid-cols-2 gap-x-4 gap-y-3 md:col-span-5 md:col-start-1">
+    <h2
+      class="text-bold col-span-1 col-start-2 max-w-md text-lg font-black leading-none"
+    >
+      {{ .hed }}
+    </h2>
+    <div
+      class="col-span-1 col-start-2 row-start-2 my-2 max-w-md font-sans text-base"
+    >
+      {{ .dek }}
+    </div>
     {{ $name := .image }}
     {{ $imgOpts := dict
       "filename" $name
@@ -37,65 +39,64 @@
     }}
     {{ partial "tw/image-block.html" $imgOpts }}
 
-    </div>
-      <form
-        action="{{ site.Param `newsletters-action` }}"
-        method="post"
-        target="_blank"
-        class="font-sans text-black"
-        x-data
-        x-form="{{ $gaForm }}"
-        data-ga-category="{{ $gaCategory }}"
-      >
-        {{ partial $hiddenField . }}
-
-
-        <div class="mb-5 gap-3 flex flex-wrap justify-start align-baseline">
-          <p class="flex-[1_0_45%]">
-            <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
-              First Name
-            </label>
-            <input
-              id="{{ $idFname }}"
-              class="spl-input"
-              type="text"
-              name="FNAME"
-              placeholder="First Name"
-              required
-            />
-          </p>
-
-          <p class="flex-[1_0_45%]">
-            <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
-              Last Name
-            </label>
-            <input
-              id="{{ $idLname }}"
-              class="spl-input"
-              type="text"
-              name="LNAME"
-              placeholder="Last Name"
-              required
-            />
-          </p>
-          <p class="flex-[1_0_100%] sm:flex-auto">
-            <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
-              Email Address
-            </label>
-            <input
-              id="{{ $idEmail }}"
-              class="spl-input"
-              type="email"
-              name="EMAIL"
-              placeholder="Email address"
-              required
-            />
-          </p>
-          <button type="submit" class="btn-signup mt-4 self-end">
-            {{ $cta }}
-          </button>
-        </div>
-        <p class=" text-sm text-g-7">{{ .disclaimer }}</p>
-      </form>
-
   </div>
+  <form
+    action="{{ site.Param `newsletters-action` }}"
+    method="post"
+    target="_blank"
+    class="font-sans text-black"
+    x-data
+    x-form="{{ $gaForm }}"
+    data-ga-category="{{ $gaCategory }}"
+  >
+    {{ partial $hiddenField . }}
+
+
+    <div class="mb-5 flex flex-wrap justify-start gap-3 align-baseline">
+      <p class="flex-[1_0_45%]">
+        <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
+          First Name
+        </label>
+        <input
+          id="{{ $idFname }}"
+          class="spl-input"
+          type="text"
+          name="FNAME"
+          placeholder="First Name"
+          required
+        />
+      </p>
+
+      <p class="flex-[1_0_45%]">
+        <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+          Last Name
+        </label>
+        <input
+          id="{{ $idLname }}"
+          class="spl-input"
+          type="text"
+          name="LNAME"
+          placeholder="Last Name"
+          required
+        />
+      </p>
+      <p class="flex-[1_0_100%] sm:flex-auto">
+        <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+          Email Address
+        </label>
+        <input
+          id="{{ $idEmail }}"
+          class="spl-input"
+          type="email"
+          name="EMAIL"
+          placeholder="Email address"
+          required
+        />
+      </p>
+      <button type="submit" class="btn-signup mt-4 self-end">
+        {{ $cta }}
+      </button>
+    </div>
+    <p class=" text-sm text-g-7">{{ .disclaimer }}</p>
+  </form>
+</div>
