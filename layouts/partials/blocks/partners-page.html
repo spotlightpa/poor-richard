@@ -13,7 +13,7 @@
 
 
   <section
-    class="min-h-[65vh] bg-white py-20 text-g-9"
+    class="min-h-[65vh] bg-white pb-20 text-g-9"
     data-ga-category="partners"
     x-data="{ selectedCounty: '' }"
   >
@@ -22,7 +22,7 @@
     via-g-2 via-95%  to-g-3 to-100% py-8 md:py-24
     "
     >
-      <div class="mx-auto max-w-6xl px-5">
+      <div class="mx-auto max-w-4xl px-5 lg:px-0">
         {{ with .title }}
           <h2
             class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
@@ -76,9 +76,8 @@
       {{ end }}
     </div>
 
-    <div>
       {{ with $data }}
-        <div class="m-auto w-full justify-center md:p-4 xl:px-0">
+        <div class="m-auto w-full justify-center md:p-4 xl:px-0 lg:pt-10">
           <header
             class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
           >
@@ -87,7 +86,7 @@
             >
               <h3
                 x-text="selectedCounty"
-                class="mb-2 py-2 font-sans text-3xl font-black leading-tight tracking-wide sm:text-4xl lg:text-5xl"
+                class="mb-2 py-2 font-sans text-3xl font-bold leading-tight tracking-wide sm:text-4xl"
                 :class="{ 'w-full' : selectedCounty != '' }"
               ></h3>
 
@@ -173,6 +172,5 @@
           {{ end }}
         </div>
       {{ end }}
-    </div>
   </section>
 {{ end }}
