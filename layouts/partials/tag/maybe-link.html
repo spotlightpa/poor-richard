@@ -1,9 +1,9 @@
 {{ if .link }}
-  <a class="{{ .class }}" href="{{ .link }}">
+  <a class="{{ .eyebrowClass }} {{ .eyebrowColor }}" href="{{ .link }}">
     {{- .text -}}
   </a>
 {{ else }}
-  <span class="{{ .class }}">
+  <span class="{{ .eyebrowClass }} {{ .eyebrowColor }}">
     {{- .text -}}
   </span>
 {{ end }}

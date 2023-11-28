@@ -4,6 +4,7 @@
 {{ $dek := .newsletterDek }}
 {{ $showLogo := .showLogo }}
 {{ $wrapperStyle := .newsletterWrapper | default `p-4 sm:py-8 md:py-12` }}
+{{ $actionColor := .actionColor | default "#FFCB05" }}
 
 
 <div class="{{ $wrapperStyle }} bg-black font-sans">
@@ -29,7 +30,7 @@
     </h3>
   {{ end }}
   <p
-    class="mx-auto mb-7 mt-4 text-center text-lg leading-relaxed tracking-wide text-white sm:max-w-2xl md:px-6 md:text-2xl md:font-bold"
+    class="mx-auto mb-7 mt-4 text-center text-lg font-semibold leading-relaxed tracking-wide text-white sm:max-w-lg md:max-w-2xl md:px-6 md:text-xl lg:text-2xl"
   >
     {{ $dek }}
   </p>

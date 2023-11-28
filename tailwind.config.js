@@ -103,6 +103,22 @@ module.exports = {
       dropShadow: {
         outline: "0 1px 1px rgba(0, 0, 0, 0.5)",
       },
+      gridTemplateColumns: {
+        14: "repeat(14, 1fr)",
+      },
+      gridColumnStart: {
+        13: "13",
+        14: "14",
+        15: "15",
+      },
+      gridColumnEnd: {
+        13: "13",
+        14: "14",
+        15: "15",
+      },
+      gridColumn: {
+        "span-14": "1 / span 14",
+      },
       lineHeight: {
         normal: "1.6",
         hed: "1.15",

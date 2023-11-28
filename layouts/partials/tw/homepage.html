@@ -14,6 +14,8 @@
 {{ $pinnedStories := partial "helper/get-picks" "topSlots" }}
 
 {{ $editorPicksCallout := partial "helper/get-picks" "edCallout" }}
+{{ $edInvestigations := partial "helper/get-picks" "edInvestigations" }}
+{{ $edImpact := partial "helper/get-picks" "edImpact" }}
 
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
@@ -33,6 +35,8 @@
   "featuredStories" $featuredStories
   "pinnedStories" $pinnedStories
   "editorPicksCallout" $editorPicksCallout
+  "edInvestigations" $edInvestigations
+  "edImpact" $edImpact
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass

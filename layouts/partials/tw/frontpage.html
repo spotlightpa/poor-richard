@@ -67,14 +67,28 @@
     </div>
     <div
       data-ga-category="midpage"
-      class="row-start-4 md:col-span-9 xl:col-span-10"
-      x-data="funnelStatus"
+      class="row-start-4 md:relative md:col-span-9 md:overflow-hidden md:rounded xl:col-span-10"
+      x-data="{ isSticky: true }"
+      :class="isSticky ? '-mx-4 sticky bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
     >
-      <div x-show="!isSubscriber">
+      <div x-data="funnelStatus" x-show="!isSubscriber">
+        <button
+          class="flex text-g-4 md:hidden"
+          x-on:click="isSticky = ! isSticky"
+          :class="isSticky ? ' absolute -top-11 right-2' : 'hidden'"
+        >
+          <svg
+            class="my-auto box-content h-5 w-5 fill-black p-3"
+            style="margin-right: -2px;"
+          >
+            {{ partial "helper/svg.html" "close" }}
+          </svg>
+        </button>
+
         {{ partial "tw/newsletter-box-lg.html" (dict
           "newsletterHed" (page.Param "newsletter-hed")
           "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "p-4 rounded"
+          "newsletterWrapper" "p-4 sm:py-8"
           )
         }}
       </div>
@@ -100,12 +114,12 @@
     class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
   >
     <span
-      class="mx-auto flex h-[90px] w-[970px] items-center justify-center bg-g-4"
+      class="mx-auto flex h-[50px] w-80 items-center justify-center bg-g-4 md:h-[90px] md:w-[728px] lg:w-[970px]"
       >Ad</span
     >
   </div>
 
-  <div class="group">
+  <div class="mt-16 space-y-16 sm:space-y-24 md:mt-24">
     <!-- Insert Callouts -->
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
@@ -125,9 +139,41 @@
       "rubricLink" "rubric"
       )
     }}
+
+    {{ if .edInvestigations }}
+      {{ $pages := .edInvestigations }}
+      {{ partial "tw/list-callout-dark-story.html" (dict
+        "hed" "Investigations"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        "fullWidth" true
+        )
+      }}
+    {{ end }}
+
+    {{ if .edImpact }}
+      {{ $pages := .edImpact }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "Impact"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
+
+    {{ $pages := site.GetPage "content/newsletters/papost/_index.md" }}
+    {{ partial "tw/list-callout-newsletter.html" (dict
+      "hed" "Latest From Our Daily Newsletter"
+      "pages" $pages.RegularPages
+      "rubricLink" "rubric"
+      )
+    }}
+
     {{ $pages := site.GetPage "content/statecollege/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
-      "hed" "State College"
+      "hed" "State College Bureau"
       "pages" $pages.RegularPages
       "rubricLink" "rubric"
       )
@@ -140,7 +186,7 @@
     class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
   >
     <span
-      class="mx-auto flex h-[90px] w-[970px] items-center justify-center bg-g-4"
+      class="mx-auto flex h-[50px] w-80 items-center justify-center bg-g-4 md:h-[90px] md:w-[728px] lg:w-[970px]"
       >Ad</span
     >
   </div>
@@ -198,7 +244,7 @@
                 {{ end }}
                 {{ partial "tw/thumb-hv-item.html" (dict
                   "wrapperClass" "flex flex-wrap gap-x-4"
-                  "thumbClass" "w-2/5 sm:w-1/3 md:w-2/5"
+                  "thumbClass" "w-2/5 sm:w-full md:w-2/5"
                   "imgOpts" $imgOpts
                   "rubricLink" $rubricLink
                   "eyebrow" $eyebrow
@@ -264,15 +310,11 @@
         class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
       >
         <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
-          {{ partial "tw/promo-single.html" (dict
-            "class" "mb-5 min-w-full no-js:hidden"
-            "images" (page.Param "sidebar-top-images")
-            "width" (page.Param "sidebar-top-width")
-            "height" (page.Param "sidebar-top-height")
-            "link"  (page.Param "sidebar-top-link")
-            "description"  (page.Param "sidebar-top-description")
-            )
-          }}
+          <div
+            class="mx-auto flex h-[600px] w-[300px] items-center justify-center bg-g-4"
+          >
+            Ad
+          </div>
         </div>
 
         {{ range .edPicks }}

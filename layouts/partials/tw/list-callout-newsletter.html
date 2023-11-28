@@ -1,0 +1,139 @@
+{{ $rows := .rows | default 3 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 1 }}
+{{ end }}
+{{ $page := .pages }}
+{{ if $limit }}
+  {{ $page = first $limit .pages }}
+{{ end }}
+
+<div
+  class="
+    flex flex-wrap gap-6 sm:gap-x-12 md:grid md:grid-cols-14 md:items-start md:justify-between lg:odd:flex-row lg:even:flex-row-reverse
+  "
+>
+  {{ with .hed }}
+    <h2
+      class=" w-full border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-full"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+  <div class="flex flex-wrap gap-6 md:col-span-8 md:gap-y-14">
+    {{ range $page | first 1 }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 3
+        "heightRatio" 2
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-2"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div class="max-w-full" data-ga-category="story-1">
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-hv-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-9"
+          "thumbClass" "w-full lg:w-72"
+          "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+          "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          "dek" $params.blurb
+          )
+        }}
+      </div>
+    {{ end }}
+
+    {{ range after 1 $page }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-2"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div
+        class="w-5/12 flex-auto md:w-2/12 md:flex-auto lg:w-2/12 xl:w-72"
+        data-ga-category="story-2"
+      >
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-hv-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-4"
+          "thumbClass" "w-2/5 md:w-full"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          "showThumb" false
+          "dek" $params.blurb
+          )
+        }}
+      </div>
+    {{ end }}
+
+    {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
+      <div
+        data-ga-category="readmore"
+        class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
+      >
+        <a href="{{ .readMoreLink }}">
+          {{- .readMore | default "Read More" -}}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+  <div class=" md:col-span-6">
+    {{ partial "tw/newsletter-sidebar.html" (dict
+      "image" "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+      "dek" "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, and some fun, too. It's like your morning bowl of oats, with marshmallows."
+      "gaCategory" "newsletters:papost"
+      "gaForm" "newsletters:papost-full"
+      "hiddenField" "newsletter/papost-hidden.html"
+      "hed" "Get the PA POST in your inbox"
+      "cta" "Subscribe"
+      )
+    }}
+  </div>
+</div>

@@ -8,10 +8,10 @@
   {{ $page = first $limit .pages }}
 {{ end }}
 
-
+<div class="-mx-4 px-4 xl:mx-[calc(-50vw_+_50%)] bg-black text-white py-16 xl:px-0">
 <div
   class="
-    flex flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse
+     max-w-screen-xl mx-auto flex flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse
   "
 >
   {{ with .hed }}
@@ -55,10 +55,13 @@
         "wrapperClass" "flex flex-wrap gap-x-9"
         "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
         "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+        "hedColor" "text-white "
         "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+        "linkColor" "text-white "
         "imgOpts" $imgOpts
         "rubricLink" $rubricLink
         "eyebrow" $eyebrow
+        "eyebrowColor" `bg-white text-black`
         "link" $params.link
         "hed" .LinkTitle
         "byline" $params.byline
@@ -108,11 +111,15 @@
         "imgOpts" $imgOpts
         "rubricLink" $rubricLink
         "eyebrow" $eyebrow
+        "eyebrowColor" `bg-white text-black`
         "link" $params.link
+        "linkColor" "text-white "
+        "hedColor" "text-white "
         "hed" .LinkTitle
         "byline" $params.byline
         "showDate" false
         "showByline" $.showByline
+        "linkColor" "text-white"
         )
       }}
     </div>
@@ -128,4 +135,5 @@
       </a>
     </div>
   {{ end }}
+</div>
 </div>

@@ -3,9 +3,12 @@
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-base sm:text-lg font-semibold` }}
 {{ $dekSize := .dekSize | default `text-sm sm:text-base` }}
+{{ $eyebrowColor := .eyebrowColor | default `bg-eyebrow-bg text-eyebrow border-eyebrow-bg` }}
+{{ $eyebrowClass := .eyebrowClass | default `inline-block px-2 font-sans text-xs font-semibold uppercase border-2 md:text-sm` }}
 {{ $hedColor := .hedColor | default `text-hed` }}
 {{ $linkColor := .linkColor | default `text-dek ` }}
 {{ $subitemSize := .subitemSize | default `` }}
+{{ $showThumb := .showThumb | default true }}
 
 {{ $showByline := .showByline | default true }}
 
@@ -15,18 +18,20 @@
     {{ if .eyebrow }}
       {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
-        "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-xs font-semibold uppercase border-eyebrow-bg border-2 md:text-sm"
+        "eyebrowColor" $eyebrowColor
+        "eyebrowClass" $eyebrowClass
         "text" .eyebrow
         )
       -}}
     {{ end }}
   </div>
-
-  <div class="{{ $thumbClass }}">
-    {{ partial "tw/image-block.html" .imgOpts }}
-  </div>
+  {{ if $showThumb }}
+    <div class="{{ $thumbClass }}">
+      {{ partial "tw/image-block.html" .imgOpts }}
+    </div>
+  {{ end }}
   <div class="group mt-3 flex-1 md:mb-3 md:mt-0 md:self-end">
-    <h3 class="{{ $hedSize }} leading-tight text-hed">
+    <h3 class="{{ $hedSize }} leading-tight tracking-tight {{ $hedColor }}">
       <a
         class="group-hover:underline"
         href="{{ .link }}"
@@ -49,7 +54,7 @@
       </h4>
     {{ end }}
     {{ if .dek }}
-      <h4 class="{{ $dekSize }} mt-2 font-sans text-dek">
+      <h4 class="{{ $dekSize }} mt-2 font-sans {{ $linkColor }}">
         <a
           href="{{ .link }}"
           class="group-hover:underline"
