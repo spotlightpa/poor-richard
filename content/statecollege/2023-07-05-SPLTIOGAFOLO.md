@@ -26,7 +26,7 @@ Deb Relaford, who became the borough council president in the wake of the scanda
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
 
-In early May, Pennsylvania State Police investigated a charge of a debit card belonging to Tioga and <a href="https://www.psp.pa.gov/PIRRs/Mansfield%20Press%20Releases/F_MANS_17MAY2023_0015.pdf">found</a> that Relaford had used the card — intended for expenses related to Tioga’s public swimming pool — for a $40 service at a New York nail salon.
+In early May, Pennsylvania State Police investigated a charge of a debit card belonging to Tioga and <a href="https://web.archive.org/20230705093415/https://www.psp.pa.gov/PIRRs/Mansfield%20Press%20Releases/F_MANS_17MAY2023_0015.pdf">found</a> that Relaford had used the card — intended for expenses related to Tioga’s public swimming pool — for a $40 service at a New York nail salon.
 
 “Subsequent to the investigation being completed, The Tioga Borough declined to prosecute the actor in this case, and related that the money utilized will be paid back to the Borough through restitution,” the police report said.
 
