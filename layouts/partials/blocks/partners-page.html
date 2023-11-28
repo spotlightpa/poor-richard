@@ -76,25 +76,25 @@
       {{ end }}
     </div>
 
-      {{ with $data }}
-        <div class="m-auto w-full justify-center md:p-4 xl:px-0 lg:pt-10">
-          <header
-            class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
+    {{ with $data }}
+      <div class="m-auto w-full justify-center md:p-4 lg:pt-10 xl:px-0">
+        <header
+          class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
+        >
+          <div
+            class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"
           >
-            <div
-              class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"
-            >
-              <h3
-                x-text="selectedCounty"
-                class="mb-2 py-2 font-sans text-3xl font-bold leading-tight tracking-wide sm:text-4xl"
-                :class="{ 'w-full' : selectedCounty != '' }"
-              ></h3>
+            <h3
+              x-text="selectedCounty"
+              class="mb-2 py-2 font-sans text-3xl font-bold leading-tight tracking-wide sm:text-4xl"
+              :class="{ 'w-full' : selectedCounty != '' }"
+            ></h3>
 
-              <div
-                class="no-js:hidden sticky top-0 mx-auto ml-auto w-96 max-w-full bg-white py-2 md:relative"
-              >
-                <select
-                  @change="
+            <div
+              class="no-js:hidden sticky top-0 mx-auto ml-auto w-96 max-w-full bg-white py-2 md:relative"
+            >
+              <select
+                @change="
                     selectedCounty = $el.value;
                         window.setTimeout(() => {
                           document.
@@ -106,71 +106,71 @@
                             });
                         }, 250);
                   "
-                  class="spl-select text-xl"
-                >
-                  <option disabled selected>Select County…</option>
-                  {{ range $partnerCounties }}
-                    <option value="{{ . }}">{{ . }} County</option>
-                  {{ end }}
-                </select>
-                <span
-                  class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
-                  aria-hidden="true"
-                >
-                  <svg class="h-4 w-4 fill-g-5">
-                    {{ partial "helper/svg.html" "chevron" }}
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </header>
-
-          {{ range $partnerCounties }}
-            <div
-              id="{{ . | urlize }}"
-              x-show="selectedCounty === '{{ . }}'"
-              class="mx-auto flex max-w-screen-lg border-t border-g-4 p-5 pt-0 sm:gap-6"
-              :class="{'': selectedCounty === '{{ . }}' }"
-            >
-              {{ with . }}
-                <div class="hidden w-80 max-w-xs justify-center pt-5 sm:flex">
-                  <svg
-                    width="100%"
-                    class="inline-block bg-none fill-blue stroke-white stroke-2"
-                  >
-                    <use
-                      xlink:href="#{{ . }}"
-                      style="filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.1));"
-                    />
-                  </svg>
-                </div>
-              {{ end }}
-              <span class="hidden w-0 border border-g-3 sm:block"></span>
-              <ul
-                class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
+                class="spl-select text-xl"
               >
-                {{ range where $data "County" . }}
-                  <li class="flex-auto md:w-1/3">
-                    <h4 class="text-xl font-bold leading-5">
-                      {{ if .url }}
-                        <a
-                          href="{{ .url }}"
-                          class="no-underline underline-offset-2 hover:text-blue hover:underline"
-                          >{{ .Name }}</a
-                        >
-                      {{ else }}
-                        {{ .Name }}
-                      {{ end }}
-                    </h4>
-                    {{ with .City }}
-                      <p>{{ . }}, PA</p>
-                    {{ end }}
-                  </li>
+                <option disabled selected>Select County…</option>
+                {{ range $partnerCounties }}
+                  <option value="{{ . }}">{{ . }} County</option>
                 {{ end }}
-              </ul>
+              </select>
+              <span
+                class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
+                aria-hidden="true"
+              >
+                <svg class="h-4 w-4 fill-g-5">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </span>
             </div>
-          {{ end }}
-        </div>
-      {{ end }}
+          </div>
+        </header>
+
+        {{ range $partnerCounties }}
+          <div
+            id="{{ . | urlize }}"
+            x-show="selectedCounty === '{{ . }}'"
+            class="mx-auto flex max-w-screen-lg border-t border-g-4 p-5 pt-0 sm:gap-6"
+            :class="{'': selectedCounty === '{{ . }}' }"
+          >
+            {{ with . }}
+              <div class="hidden w-80 max-w-xs justify-center pt-5 sm:flex">
+                <svg
+                  width="100%"
+                  class="inline-block bg-none fill-blue stroke-white stroke-2"
+                >
+                  <use
+                    xlink:href="#{{ . }}"
+                    style="filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.1));"
+                  />
+                </svg>
+              </div>
+            {{ end }}
+            <span class="hidden w-0 border border-g-3 sm:block"></span>
+            <ul
+              class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
+            >
+              {{ range where $data "County" . }}
+                <li class="flex-auto md:w-1/3">
+                  <h4 class="text-xl font-bold leading-5">
+                    {{ if .url }}
+                      <a
+                        href="{{ .url }}"
+                        class="no-underline underline-offset-2 hover:text-blue hover:underline"
+                        >{{ .Name }}</a
+                      >
+                    {{ else }}
+                      {{ .Name }}
+                    {{ end }}
+                  </h4>
+                  {{ with .City }}
+                    <p>{{ . }}, PA</p>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
   </section>
 {{ end }}
