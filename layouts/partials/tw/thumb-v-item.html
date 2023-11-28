@@ -1,7 +1,9 @@
 {{ $thumbClass := .thumbClass | default `w-full` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
-{{ $hedSize := .hedSize | default `text-lg font-semibold` }}
-{{ $dekSize := .dekSize | default `text-xl` }}
+{{ $hedSize := .hedSize | default `text-base sm:text-lg font-semibold` }}
+{{ $dekSize := .dekSize | default `text-sm sm:text-base` }}
+{{ $eyebrowColor := .eyebrowColor | default `bg-eyebrow-bg text-eyebrow border-eyebrow-bg` }}
+{{ $eyebrowClass := .eyebrowClass | default `inline-block px-2 font-sans text-xs font-semibold uppercase border-2 md:text-sm` }}
 {{ $hedColor := .hedColor | default `text-hed` }}
 {{ $linkColor := .linkColor | default `text-dek ` }}
 {{ $subitemSize := .subitemSize | default `` }}
@@ -14,7 +16,8 @@
     {{ if .eyebrow }}
       {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
-        "class" "bg-eyebrow-bg text-eyebrow inline-block px-2 font-sans text-xs font-semibold uppercase border-eyebrow-bg border-2 md:text-sm"
+        "eyebrowColor" $eyebrowColor
+        "eyebrowClass" $eyebrowClass
         "text" .eyebrow
         )
       -}}

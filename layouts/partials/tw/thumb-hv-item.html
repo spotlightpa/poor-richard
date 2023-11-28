@@ -1,5 +1,5 @@
-{{ $thumbClass := .thumbClass | default `w-full` }}
-{{ $wrapperClass := .wrapperClass | default `w-full` }}
+{{ $thumbClass := .thumbClass | default `w-2/5 sm:w-full md:w-2/5` }}
+{{ $wrapperClass := .wrapperClass | default `flex flex-wrap gap-x-4` }}
 {{ $storyClass := .storyClass | default `w-full flex-grow` }}
 {{ $hedSize := .hedSize | default `text-base sm:text-lg font-semibold` }}
 {{ $dekSize := .dekSize | default `text-sm sm:text-base` }}
@@ -67,7 +67,7 @@
 
     {{- if .showDate }}
       <h3
-        class="font-sans text-base font-light leading-tight tracking-normal text-date"
+        class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
         data-ga-category="time"
       >
         <a href="{{ .link }}" class="group-hover:underline">
