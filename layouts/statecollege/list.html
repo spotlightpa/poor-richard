@@ -10,7 +10,7 @@
 
 {{ define "main" }}
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
-  {{ partial "tw/inline-cta.html" }}
+
   {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
     <div class=" bg-black">
       <div class="mx-auto max-w-screen-lg py-12">
