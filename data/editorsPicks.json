@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-11-28-SPLBUDIMP.md"
+    "content/news/2023-11-29-SPLSYROP.md"
   ],
   "subfeatures": [
-    "content/news/2023-11-13-SPLBUDTHAW.md"
+    "content/news/2023-10-18-SPL_LOCAL_PENSIONS.md",
+    "content/news/2023-08-02-SPLOPIOIDGUIDANCE.md",
+    "content/news/2023-04-18-SPLOPIOID0420.md"
   ],
   "topSlots": [
-    "content/news/2023-11-28-SPLEOYCOL.md",
+    "content/news/2023-11-28-SPLBUDIMP.md",
     "content/statecollege/2023-11-27-SPLPUBLICLANDS.md",
-    "content/news/2023-11-22-SPL_DOC_DATA.md"
+    "content/statecollege/2023-11-23-SPL5DUB.md"
   ],
   "topper": []
 }
