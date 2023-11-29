@@ -51,7 +51,7 @@
       </div>
     {{ end }}
     <div
-      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4"
     >
       <div
         class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
@@ -67,11 +67,14 @@
     </div>
     <div
       data-ga-category="midpage"
-      class="row-start-4 md:relative md:col-span-9 md:overflow-hidden md:rounded xl:col-span-10"
-      x-data="{ isSticky: true }"
-      :class="isSticky ? '-mx-4 sticky bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
+      x-data="funnelStatus"
+      class="row-start-4 md:col-span-9 xl:col-span-10"
     >
-      <div x-data="funnelStatus" x-show="!isSubscriber">
+      <div
+        class="md:relative md:overflow-hidden md:rounded"
+        x-data="{ isSticky: true }"
+        :class="isSticky ? '-mx-4 sticky bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
+      >
         <button
           class="flex text-g-4 md:hidden"
           x-on:click="isSticky = ! isSticky"
@@ -84,26 +87,27 @@
             {{ partial "helper/svg.html" "close" }}
           </svg>
         </button>
-
-        {{ partial "tw/newsletter-box-lg.html" (dict
-          "newsletterHed" (page.Param "newsletter-hed")
-          "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "p-4 sm:py-8"
-          )
-        }}
-      </div>
-      <div data-ga-category="donate" x-cloak x-show="isSubscriber">
-        {{ partial "tw/donate-prefill-lg-page.html" (dict
-          "wrapperClass" "rounded overflow-hidden"
-          "donateHed" (page.Param "donate-hed")
-          "donateDek" (page.Param "donate-text")
-          "donateCta" (page.Param "donate-cta")
-          "donateGaCategory" (page.Param "donate-ga-category")
-          "donateCampaign" (page.Param "donate-ga-campaign")
-          "donateTheme" (page.Param "donate-theme")
-          "donateAmounts" (page.Param "donate-amounts")
-          )
-        }}
+        <div x-data="funnelStatus" x-show="!isSubscriber">
+          {{ partial "tw/newsletter-box-lg.html" (dict
+            "newsletterHed" (page.Param "newsletter-hed")
+            "newsletterDek" (page.Param "newsletter-dek")
+            "newsletterWrapper" "p-4 sm:py-8"
+            )
+          }}
+        </div>
+        <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+          {{ partial "tw/donate-prefill-lg-page.html" (dict
+            "wrapperClass" "rounded overflow-hidden"
+            "donateHed" (page.Param "donate-hed")
+            "donateDek" (page.Param "donate-text")
+            "donateCta" (page.Param "donate-cta")
+            "donateGaCategory" (page.Param "donate-ga-category")
+            "donateCampaign" (page.Param "donate-ga-campaign")
+            "donateTheme" (page.Param "donate-theme")
+            "donateAmounts" (page.Param "donate-amounts")
+            )
+          }}
+        </div>
       </div>
     </div>
   </div>
@@ -120,7 +124,6 @@
   </div>
 
   <div class="mt-16 space-y-16 sm:space-y-24 md:mt-24">
-    <!-- Insert Callouts -->
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -179,8 +182,6 @@
       )
     }}
   </div>
-
-  <!-- End Callouts -->
 
   <div
     class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
