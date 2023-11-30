@@ -16,4 +16,5 @@ form ="""
 >}}
 """
 +++
-The support of readers like you allows Spotlight PA to share its unique investigative and public-service journalism free of charge with more than 90 community news partners in all corners of Pennsylvania. They include newspapers, digital outlets, radio, television, and more, collectively reaching millions of people across the state.
+Distribution partners allow us to share resources and maximize audience and reporting power. We provide our content free of charge to newsrooms across the state to help bolster local media and better inform the public.
+
