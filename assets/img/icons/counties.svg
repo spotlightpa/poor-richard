@@ -222,6 +222,8 @@
     <use id="Lackawanna-partners" x="743.221" y="172.443" xlink:href="#partners-1"/>
     <use id="Northumberland-partners" x="573.597" y="285.521" xlink:href="#partners-1"/>
     <use id="Union-partners" x="564.173" y="254.352" xlink:href="#partners-1"/>
+    <use id="Bradford-partners" xlink:href="#partners-1" x="628.829" y="107.708"/>
+    <use id="Sullivan-partners" xlink:href="#partners-1" x="616.829" y="157.708"/>
   </g>
 
 </svg>
