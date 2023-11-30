@@ -167,11 +167,11 @@
     <use xlink:href="#partners-12" transform="translate(61.1 341.335)" />
     <use id="Schuylkill-partners" xlink:href="#partners-2" transform="translate(601.143 318.14)"/>
     <use id="Lycoming-partners" xlink:href="#partners-2" transform="translate(530.103 194.189)"/>
-    <use id="Dauphin-partners" transform="translate(561.999 393.525)" xlink:href="#partners-2"/>
+    <use id="Dauphin-partners" transform="translate(567.999 393.525)" xlink:href="#partners-2"/>
     <use id="York-partners" transform="translate(573.597 455.138)" xlink:href="#partners-2"/>
     <use id="Adams-partners" transform="translate(497.483 483.408)" xlink:href="#partners-2"/>
     <use id="Franklin-partners" transform="translate(430.793 460.212)" xlink:href="#partners-2"/>
-    <use id="Blair-partners" transform="translate(318.435 343.51)" xlink:href="#partners-2"/>
+    <use id="Blair-partners" transform="translate(337.435 353.51)" xlink:href="#partners-1"/>
     <use id="Lehigh-partners-2" transform="translate(766.418 320.314)" xlink:href="#partners-2"/>
     <use id="Bucks-partners-2" transform="translate(852.68 405.123)" xlink:href="#partners-4"/>
     <use id="Lebanon-partners" transform="translate(612.74 370.33)" xlink:href="#partners-3"/>
@@ -186,7 +186,7 @@
     <use id="clearfield-partners" x="322.785" y="252.177" xlink:href="#partners-1"/>
     <use id="Venango-partners" x="121.99" y="173.893" xlink:href="#partners-1"/>
     <use id="Mercer-partners" x="41.527" y="185.49" xlink:href="#partners-1"/>
-    <use id="Mercer-partners-2" x="12.532" y="205.062" xlink:href="#partners-1"/>
+    <use id="Mercer-partners-2" x="15.532" y="205.062" xlink:href="#partners-1"/>
     <use id="Clarion-partners" x="173.457" y="219.559" xlink:href="#partners-1"/>
     <use id="Jefferson-partners" x="235.798" y="234.056" xlink:href="#partners-1"/>
     <use id="Laurence-partners" x="32.829" y="252.902" xlink:href="#partners-1"/>
@@ -198,16 +198,15 @@
     <use id="Fayette-partners" x="124.165" y="476.884" xlink:href="#partners-1"/>
     <use id="Westmoreland-partners" x="177.082" y="394.25" xlink:href="#partners-1"/>
     <use id="Somerset-partners" x="229.274" y="458.762" xlink:href="#partners-1"/>
-    <use id="Cambria-partners" x="248.121" y="394.25" xlink:href="#partners-1"/>
+    <use id="Cambria-partners" x="251.121" y="394.25" xlink:href="#partners-1"/>
     <use id="Blair-partners-2" x="340.182" y="396.424" xlink:href="#partners-1"/>
     <use id="Huntingdon-partners" x="388.75" y="362.356" xlink:href="#partners-1"/>
     <use id="Clinton-partners" x="468.488" y="236.955" xlink:href="#partners-1"/>
     <use id="Franklin-2" x="431.518" y="502.254" xlink:href="#partners-1"/>
     <use id="Franklin-3" x="454.715" y="508.778" xlink:href="#partners-1"/>
     <use id="Adams-partners-2" x="546.776" y="498.63" xlink:href="#partners-1"/>
-    <use id="Cumberland-partners" x="546.776" y="402.223" xlink:href="#partners-1"/>
     <use id="Lancaster-partners" x="651.16" y="450.789" xlink:href="#partners-1"/>
-    <use id="Northumberland-partners-2" x="609.841" y="299.293" xlink:href="#partners-1"/>
+    <use id="Northumberland-partners-2" x="619.841" y="299.293" xlink:href="#partners-1"/>
     <use id="Carbon-partners" x="738.872" y="289.145" xlink:href="#partners-1"/>
     <use id="Montgomery-partners" x="793.963" y="411.646" xlink:href="#partners-1"/>
     <use id="Bucks-partners" x="830.933" y="391.35" xlink:href="#partners-1"/>
@@ -220,8 +219,8 @@
     <use id="Luzerne-partners-2" x="711.326" y="205.786" xlink:href="#partners-1"/>
     <use id="Luzerne-partners" x="724.374" y="189.115" xlink:href="#partners-1"/>
     <use id="Lackawanna-partners" x="743.221" y="172.443" xlink:href="#partners-1"/>
-    <use id="Northumberland-partners" x="573.597" y="285.521" xlink:href="#partners-1"/>
-    <use id="Union-partners" x="564.173" y="254.352" xlink:href="#partners-1"/>
+    <use id="Northumberland-partners" x="583.597" y="285.521" xlink:href="#partners-1"/>
+    <use id="Columbia-partners" x="629.173" y="254.352" xlink:href="#partners-1"/>
     <use id="Bradford-partners" xlink:href="#partners-1" x="628.829" y="107.708"/>
     <use id="Sullivan-partners" xlink:href="#partners-1" x="616.829" y="157.708"/>
   </g>
