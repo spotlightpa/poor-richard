@@ -32,14 +32,75 @@ name = "2023"
 body = """
 ### National - Winners 
 
+Nonprofit News Awards: **Community Champion Award** (Medium division) <br>
+For [investigative reporting on Penn State University](https://www.spotlightpa.org/statecollege/transparency-tracker), shedding light on important issues and leading to increased transparency.
+
 National Headliner Awards: **Best Political Coverage** (Third Place) <br>
-For Spotlight PA’s coverage of money and influence in Pennsylvania
+For Spotlight PA’s coverage of money and influence in Pennsylvania.
 
-National Headliner Awards: **Online Investigative Reporting** (Third Place)  <br>
-For “[Cannabis Card Game](https://www.spotlightpa.org/series/unproven-unsafe/),” an ongoing Spotlight PA investigation into Pennsylvania’s medical marijuana program.
+National Headliner Awards: **Online Investigative Reporting** (Third Place) <br>
+For “[Cannabis Card Game](https://www.spotlightpa.org/series/unproven-unsafe/),” a Spotlight PA investigation into Pennsylvania’s medical marijuana program.
 
-Association of Health Care Journalists: **Health Policy** (Third Place)  <br>
-For “[Unimpaired, Unemployed](https://www.spotlightpa.org/news/2022/09/pennsylvania-medical-marijuana-job-fired/),” a Spotlight PA investigation into how workers with valid medical marijuana cards were facing backlash at work.
+Association of Health Care Journalists: **Health Policy** (Third Place) <br>
+For “[Unimpaired, Unemployed](https://www.spotlightpa.org/news/2022/09/pennsylvania-medical-marijuana-job-fired/),” a Spotlight PA investigation into how workers with valid medical marijuana cards have faced backlash at work.
+
+### National - Finalists
+
+Nonprofit News Awards: **Breaking Barriers Award** (Medium Division) <br>
+For “[A Criminal Solution](https://www.spotlightpa.org/series/a-criminal-solution/),” a series with The Pittsburgh Institute for Nonprofit Journalism about how Pennsylvania jails trap those suffering with mental illness.
+
+Nonprofit News Awards: **INNovatorAward** (Medium Division) <br>
+For “[One Vote, Two Pennsylvanias](https://www.spotlightpa.org/series/one-vote-two-pennsylvanias/),” Spotlight PA’s unique, voter-first reporting on the 2022 gubernatorial election.
+
+Nonprofit News Awards: **Nonprofit Newcomer of the Year** <br>
+Sarah Rafacz, State College Editor 
+
+
+LION Local Journalism Awards: **Product of the Year Award** <br>
+For “[One Vote, Two Pennsylvanias](https://www.spotlightpa.org/series/one-vote-two-pennsylvanias/),” Spotlight PA’s 2022 gubernatorial race coverage.
+
+ONA Online Journalism Awards: **Feature** (Small Newsroom) <br>
+“[Broken Borough](https://www.spotlightpa.org/series/broken-borough/),” a story about the controversy generated when the town of Tioga hired the police officer that killed Tamir Rice
+
+LION Local Journalism Awards: **Outstanding Coverage Award** <br>
+For Spotlight PA’s coverage of Pennsylvania’s [medical marijuana industry](https://www.spotlightpa.org/topics/medical-marijuana/).
+
+## State - Winners
+
+Pa. NewsMedia Association, Keystone Media Awards: **Public Service Award** <br>
+For “[One Vote, Two Pennsylvanias](https://www.spotlightpa.org/series/one-vote-two-pennsylvanias/),” Spotlight PA’s 2022 gubernatorial race coverage.
+
+Society of Professional Journalists’ (SPJ) Keystone Pro Chapter: **Education Writing** (First Place)<br>
+For Spotlight PA’s coverage of Penn State University. 
+
+Pennsylvania Bar Association: **PBA Media Awards**, (First Place, Newspapers)<br>
+For [“Unimpaired, Unemployed,”](https://www.spotlightpa.org/news/2022/09/pennsylvania-medical-marijuana-job-fired/) an investigation into the vague legal safeguards for medical marijuana users in Pennsylvania, which create confusion and force workers to choose between their job and a doctor-approved drug.
+
+Keystone Media Awards: **News Feature Story** (First Place)<br>
+For “[Broken 'compassionate release' rules strand Pa.'s sickest prisoners as costs to taxpayers soar](https://www.spotlightpa.org/news/2022/03/pa-prison-life-sentence-compassionate-release/),” a story about aging prisoners in Pa. and how few successfully petition for release.
+
+Keystone Media Awards: **Business or Consumer Story** (First Place) <br>
+For “[Draft bills and late‐night emails reveal cozy ties between Pa. state lawmaker, casino lobbyists](https://www.spotlightpa.org/news/2022/04/parx-casino-tommy-tomlinson-lobbyist-emails/),” about the drama surrounding unregulated “skill games” that generate millions in untaxed revenue. 
+
+Keystone Media Awards: **Sports Enterprise** (First Place) <br>
+For “[Why these Pa. teams got left out of the minor league baseball union](https://www.spotlightpa.org/news/2022/11/mlb-games-union-minor-league-baseball-mlbpa-pay-explainer/),” an examination of unionization in the minor leagues in Pennsylvania.
+
+Pennsylvania Bar Association:** PBA Media Awards**, (Second Place, Newspapers) <br>
+For [“A Criminal Solution,”](https://www.spotlightpa.org/news/2023/03/pa-mental-illness-jail-incompetent-treatment/) an investigation into how Pennsylvania laws designed to help people with mental illnesses often end up trapping them in jail. 
+
+## State - Finalists
+
+Keystone Media Awards: **News Beat Reporting** (Honorable Mention) <br>
+For Spotlight PA’s [criminal justice](https://www.spotlightpa.org/topics/criminal-justice/) reporting. 
+
+Keystone Media Awards: **Ongoing News Coverage** (Honorable Mention) <br>
+For Spotlight PA’s coverage of [redistricting](https://www.spotlightpa.org/topics/redistricting/) in Pennsylvania following the 2020 census.
+
+Keystone Media Awards: **News Feature Story** (Honorable Mention) <br>
+For “[Statewide Pennsylvania police hiring database hindered by loopholes, lack of enforcement](https://www.spotlightpa.org/news/2022/06/pennsylvania-police-hiring-misconduct-database/),” a story about flaws in a much-lauded system for tracking police misconduct.
+
+Keystone Media Awards: **Business or Consumer Story** (Honorable Mention) <br>
+For “[Rare disciplinary case against Pa. doctor offers glimpse into the big business of medical marijuana cards](https://www.spotlightpa.org/news/2022/11/pa-medical-marijuana-card-veriheal-doctor-disciplined/),” an examination of the state’s medical marijuana program and the lack of oversight and enforcement.
 """
 [[blocks.entries]]
 name = "2022"
@@ -47,10 +108,10 @@ body = """
 ###  National - Winners 
 
 Gerald Loeb Award: **Local category** <br>
-For **[How Pennsylvania's Biggest Pension Fund Squandered Billions, Hurt Taxpayers and Triggered an FBI Investigation](https://www.spotlightpa.org/series/the-psers-scandal/)**, Craig McCoy and Joseph DiStefano of The Philadelphia Inquirer and Angela Couloumbis of Spotlight PA 
+For “[How Pennsylvania's Biggest Pension Fund Squandered Billions, Hurt Taxpayers and Triggered an FBI Investigation](https://www.spotlightpa.org/series/the-psers-scandal/)”, Craig McCoy and Joseph DiStefano of The Philadelphia Inquirer and Angela Couloumbis of Spotlight PA 
 
 Investigative Reporters and Editors: **FOI Award** <br>
-For “The Hidden Tab,” an investigation into how[ taxpayers foot a huge bill to run Pa.’s full-time legislature, but are blocked from many details.](https://www.spotlightpa.org/series/the-hidden-tab/)
+For “The Hidden Tab,” an investigation into how [taxpayers foot a huge bill to run Pa.’s full-time legislature, but are blocked from many details.](https://www.spotlightpa.org/series/the-hidden-tab/)
 
 Institute for Nonprofit News, **Game-Changer Award** (Large Division - Winner)  <br>
 For Spotlight PA’s [redistricting coverage](https://www.spotlightpa.org/topics/redistricting/).
