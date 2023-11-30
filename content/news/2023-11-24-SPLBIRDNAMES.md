@@ -14,7 +14,7 @@ slug = "pennsylvania-birds-renamed-audobon-society-racism-slavery-inclusion"
 suppress-date = false
 title = "These Pa. birds will be renamed as watchers reckon with racism, inclusion"
 title-tag = "Why some PA birds are getting new names"
-topics = ["Environment"]
+topics = ["Environment", "Corrections"]
 +++
 
 <em>This story first appeared in PA Local, a weekly newsletter by Spotlight PA taking a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for free here</em></a><em>.</em>
