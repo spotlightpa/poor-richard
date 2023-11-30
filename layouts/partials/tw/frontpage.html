@@ -29,7 +29,7 @@
         class="row-start-1 mt-7 inline-flex w-[1px] bg-black md:col-start-6 md:mx-auto xl:col-start-4 xl:row-end-5 xl:mx-10"
       ></span>
       <div
-        class="row-start-1 w-full md:col-span-5 md:col-start-1 xl:col-span-6 xl:col-start-5 xl:row-end-4 xl:max-w-lg"
+        class="row-start-1 w-full md:col-span-5 md:col-start-1 xl:col-span-6 xl:col-start-5 xl:row-end-4 xl:min-w-[512px]"
       >
         {{ partial "tw/featured.html" .featuredStories }}
       </div>
@@ -51,7 +51,7 @@
       </div>
     {{ end }}
     <div
-      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4"
+      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
     >
       <div
         class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
@@ -67,13 +67,13 @@
     </div>
     <div
       data-ga-category="midpage"
-      x-data="funnelStatus"
-      class="row-start-4 md:col-span-9 xl:col-span-10"
+      class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded xl:col-span-10"
+      x-data="{ isSticky: true }"
+      :class="isSticky ? 'sticky -mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
     >
       <div
         class="md:relative md:overflow-hidden md:rounded"
-        x-data="{ isSticky: true }"
-        :class="isSticky ? '-mx-4 sticky bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
+        x-data="funnelStatus"
       >
         <button
           class="flex text-g-4 md:hidden"
@@ -87,7 +87,7 @@
             {{ partial "helper/svg.html" "close" }}
           </svg>
         </button>
-        <div x-data="funnelStatus" x-show="!isSubscriber">
+        <div x-show="!isSubscriber">
           {{ partial "tw/newsletter-box-lg.html" (dict
             "newsletterHed" (page.Param "newsletter-hed")
             "newsletterDek" (page.Param "newsletter-dek")
@@ -96,8 +96,7 @@
           }}
         </div>
         <div data-ga-category="donate" x-cloak x-show="isSubscriber">
-          {{ partial "tw/donate-prefill-lg-page.html" (dict
-            "wrapperClass" "rounded overflow-hidden"
+          {{ partial "tw/donate-prefill-lg.html" (dict
             "donateHed" (page.Param "donate-hed")
             "donateDek" (page.Param "donate-text")
             "donateCta" (page.Param "donate-cta")
@@ -135,6 +134,7 @@
       }}
     {{ end }}
 
+    {{ if .featuredTopics }}
     {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "The Capitol"
@@ -142,7 +142,7 @@
       "rubricLink" "rubric"
       )
     }}
-
+    {{ end }}
     {{ if .edInvestigations }}
       {{ $pages := .edInvestigations }}
       {{ partial "tw/list-callout-dark-story.html" (dict
@@ -166,6 +166,7 @@
       }}
     {{ end }}
 
+    {{ if .featuredNewsletter }}
     {{ $pages := site.GetPage "content/newsletters/papost/_index.md" }}
     {{ partial "tw/list-callout-newsletter.html" (dict
       "hed" "Latest From Our Daily Newsletter"
@@ -173,7 +174,7 @@
       "rubricLink" "rubric"
       )
     }}
-
+{{ end }}
     {{ $pages := site.GetPage "content/statecollege/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "State College Bureau"

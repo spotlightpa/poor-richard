@@ -23,6 +23,11 @@
     "content/news/2023-03-09-SPLCOMPETENCY.md",
     "content/news/2023-01-23-SPLMORTGAGE.md"
   ],
-  "topics": [],
+  "featuredTopics": [
+    "content/topics/the-capitol/_index.md"
+  ],
+  "featuredNewsletter": [
+    "content/newsletters/papost/_index.md"
+  ],
   "topper": []
 }
