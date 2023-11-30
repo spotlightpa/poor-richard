@@ -6,4 +6,5 @@ image-size = "hidden"
 title = "Economy"
 kicker = "Economy"
 linktitle = "Economic news from Spotlight PA"
+description = "Understand how Pennsylvania's economy affects you with the latest news on the state budget, minimum wage, unemployment, tax rebates, and more."
 +++

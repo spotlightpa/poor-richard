@@ -24,7 +24,7 @@
     </a>
   </div>
   <a
-    data-sf-campaign="701Dn000000YgogIAC"
+    data-sf-campaign="701Dn000000YgosIAC"
     data-ga-category="donate"
     class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:px-7 lg:py-4"
     href="/donate"
@@ -47,7 +47,7 @@
   <p
     class="flex-0 w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide lg:text-sm xl:text-base"
   >
-    Journalism that gets results for Pennsylvania
+    Journalism that Gets Results <span class="font-normal">&#8480;</span>
   </p>
   <div
     class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
@@ -71,7 +71,7 @@
   >
     <a
       href="/search/"
-      class="z-20 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
+      class="z-40 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
       data-ga-category="search"
       :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
       x-data
@@ -118,7 +118,7 @@
       id="hamburger-menu"
       x-cloak
       class="
-        absolute -top-2 left-2 right-2 z-[11] max-w-screen-md gap-y-2 rounded border border-g-5 bg-white px-4 pb-12
+        absolute -top-2 left-2 right-2 z-30 max-w-screen-md gap-y-2 rounded border border-g-5 bg-white px-4 pb-12
         sm:-top-4 sm:left-auto sm:grid-cols-2 sm:gap-8 sm:px-8"
       :class="{ 'hidden': !isOpen, 'grid': isOpen }"
       x-trap="isOpen"
@@ -172,7 +172,7 @@
     <button
       id="hamburger-button"
       class="
-        no-js:hidden group z-20 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+        no-js:hidden group z-40 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
       :class="isOpen ? '-translate-x-3' : ''"
       type="button"
       @click="isOpen = ! isOpen"
@@ -208,7 +208,7 @@
     </button>
     <!-- no JS fallback link to footer -->
     <a
-      class="no-js:flex group z-20 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+      class="no-js:flex group z-40 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
       href="#footer"
     >
       {{ template "nav-hamburger-button" . }}

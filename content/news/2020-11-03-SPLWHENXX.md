@@ -1,33 +1,21 @@
 +++
 arc-id = "PBV3QJVYIFFHNASRUPRCUXNHH4"
-internal-id = "SPLWHENXX"
-internal-budget = ""
-image = "2020/11/01ft30dnq77j9rqe.jpeg"
-image-description = "About 100 York County employees open and prepare mail ballots for counting after 8 p.m. Tuesday."
-image-caption = ""
-image-credit = "ED MAHON / Spotlight PA"
-image-size = ""
-published = 2020-11-03T16:19:01Z
-slug = "when-will-we-know-who-won-election-2020-results-pennsylvania"
-authors = []
-byline = "Spotlight PA Staff"
-title = "When do we find out who won the 2020 election?"
-subtitle = ""
-description = "We’re accustomed to finding out who won the election on election night. But for a number of reasons, that might not be the case in 2020."
 blurb = "We’re accustomed to finding out who won the election on election night. But for a number of reasons, that might not be the case in 2020."
+byline = "Spotlight PA Staff"
+description = "We’re accustomed to finding out who won the election on election night. But for a number of reasons, that might not be the case in 2020."
+image = "2020/11/01ft30dnq77j9rqe.jpeg"
+image-credit = "ED MAHON / Spotlight PA"
+image-description = "About 100 York County employees open and prepare mail ballots for counting after 8 p.m. Tuesday."
+internal-id = "SPLWHENXX"
 kicker = "Elections"
-topics = ["Elections"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-11-03T11:19:01-05:00
+slug = "when-will-we-know-who-won-election-2020-results-pennsylvania"
+suppress-date = false
+suppress-featured = false
+title = "When do we find out who won the 2020 election?"
+topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -52,7 +40,7 @@ But do these delays mean something nefarious is going on?
 
 No, it will simply take longer than normal to tally all the different kinds of votes — in-person, mail, and provisional (cast when a voter’s eligibility is in question). The head of elections in Pennsylvania, Kathy Boockvar, and county officials are confident the <a href="https://www.spotlightpa.org/news/2020/10/pa-kathy-boockvar-election-results-timely-tom-wolf-republicans-precanvassing/">overwhelming majority of votes will be counted by Friday</a>.
 
-The state has also <a href="https://www.votespa.com/About-Elections/Pages/Counting-Dashboard.aspx">launched a new dashboard</a> for you to track the counting over the next few days, and see how many of the different types of ballots are still outstanding. If you don’t want all of that detail, you can use their <a href="https://www.electionreturns.pa.gov/">more simplified results page</a>.
+The state has also <a href="https://web.archive.org/20201103025056/https://www.votespa.com/About-Elections/Pages/Counting-Dashboard.aspx">launched a new dashboard</a> for you to track the counting over the next few days, and see how many of the different types of ballots are still outstanding. If you don’t want all of that detail, you can use their <a href="https://web.archive.org/20201101015357/https://www.electionreturns.pa.gov/">more simplified results page</a>.
 
 So could we still have a projected winner tonight?
 

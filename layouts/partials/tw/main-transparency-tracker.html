@@ -46,11 +46,13 @@
       {{ $id := urlize .title }}
       {{ partial "blocks/block" (dict "Page" $ "block" .) }}
     {{ end }}
-    <article
-      class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
-    >
-      {{ .Page.RenderString (.Param "supplemental") }}
-    </article>
+    {{ with .Page.RenderString (.Param "supplemental") }}
+      <article
+        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+      >
+        {{ . }}
+      </article>
+    {{ end }}
   </div>
 
   <section

@@ -15,6 +15,11 @@
 {{ $focus := .Get "image-focus" }}
 {{ $gravity := .Get "image-gravity" }}
 {{ $artType := .Get "art-type" | default "Photo" }}
+{{ $secondCredit := .Get "second-credit" }}
+{{ $secondSource := .Get "second-source" }}
+{{ $secondDesc := .Get "second-description" }}
+{{ $secondType := .Get "second-type" | default "Photo" }}
+
 {{ $preposition := .Get "credit-relation" | default "of" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
 {{ $widths := slice 500 800 1100 1400 1700 2100 }}
@@ -83,6 +88,18 @@
           <span class="font-sans uppercase">{{ $imageSource }}</span>
         </div>
       {{ end }}
+      {{ if $secondCredit }}
+        <div class="mb-4 text-sm lg:mb-8">
+          {{ $secondType }} by
+          <span class="font-sans font-bold uppercase">
+            {{- $secondCredit -}}
+          </span>
+          {{ $preposition }}
+          <span class="font-sans uppercase">{{ $secondSource }}</span>
+        </div>
+      {{ end }}
+
+
       <div class="mt-4 font-sans">
         <a
           class="inline-flex items-baseline rounded bg-red px-3 py-1 font-semibold uppercase text-white"

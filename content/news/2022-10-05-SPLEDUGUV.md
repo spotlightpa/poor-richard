@@ -41,7 +41,7 @@ Pennsylvania’s State System of Higher Education, or PASSHE, is made up of 14 u
 
 The governor and the person they pick to be the state’s secretary of education serve on the board as well. Both roles can choose designees as stand-ins.
 
-In 2016, PASSHE began a redesign to cut costs and promote financial stability and access. In October 2021, the system <a href="https://www.passhe.edu/News/Pages/Releases.aspx?q=2021-10-14-Historic-Funding-Request">asked the state for an additional $73 million</a>, for a total of $550 million.
+In 2016, PASSHE began a redesign to cut costs and promote financial stability and access. In October 2021, the system <a href="https://web.archive.org/20221006183708/https://www.passhe.edu/News/Pages/Releases.aspx?q=2021-10-14-Historic-Funding-Request">asked the state for an additional $73 million</a>, for a total of $550 million.
 
 As a state senator, <b>Mastriano</b> <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=560">voted to send nearly $552.5 million</a> to the state system this summer. His campaign website makes no mention of his plans for the state system.
 

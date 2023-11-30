@@ -70,9 +70,7 @@
   {{ end }}
 </section>
 
-<div class="bg-white">
-  {{ .Page.RenderString (.Param "donate") }}
-</div>
+{{ .Page.RenderString (.Param "promo") }}
 
 {{ range $i, $blocks := .Params.blocks }}
   {{ $id := urlize .title }}
@@ -148,6 +146,11 @@
     {{ .Page.RenderString (.Param "form") }}
   </div>
 </section>
+
+<div class="bg-white">
+  {{ .Page.RenderString (.Param "donate") }}
+</div>
+
 <section
   class="bg-white p-6"
   id="credits"

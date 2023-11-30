@@ -8,6 +8,7 @@ image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The exterior of the Pennsylvania Judicial Center."
 internal-id = "SPLAPPELLATEGEN23"
 kicker = "Elections"
+linktitle = "A complete guide to the candidates for Commonwealth and Superior Courts"
 modal-exclude = false
 published = 2023-09-07T05:00:00.647-04:00
 series = ["Voting Guides 2023"]
@@ -19,6 +20,10 @@ topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+<strong><em>Update, Nov. 8: </em></strong><a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-election-2023-results-superior-court-maria-battista-jill-beck-timika-lane-harry-smail/"><strong><em>Democrats Jill Beck and Timika Lane win open seats on Superior Court.</em></strong></a><strong><em></em></strong>
+
+<a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-election-2023-results-commonwealth-court-matt-wolf-megan-martin/"><strong><em>Democrat Matt Wolf beats Republican Megan Martin for seat on Commonwealth Court</em></strong></a><strong><em>.</em></strong>
 
 HARRISBURG — On Nov. 7, Pennsylvanians will select a new judge for Commonwealth Court and two for Superior Court — and all of these new judges will immediately wield the power to referee legal disputes over state law and decide major criminal cases.
 
@@ -36,23 +41,23 @@ This election cycle also includes retention votes for two Superior Court judges,
 
 ### Courts and Candidates
 
-1. <a href="#spl-heading-1">Commonwealth Court</a>
+- <a href="#spl-heading-1">Commonwealth Court</a>
 
-2. <a href="#spl-heading-2">Republican candidate: Megan Martin</a>
+- <a href="#spl-heading-2">Republican candidate: Megan Martin</a>
 
-3. <a href="#spl-heading-3">Democratic candidate: Matt Wolf</a>
+- <a href="#spl-heading-3">Democratic candidate: Matt Wolf</a>
 
-4. <a href="#spl-heading-4">Superior Court</a>
+- <a href="#spl-heading-4">Superior Court</a>
 
-5. <a href="#spl-heading-5">Republican candidate: Maria Battista</a>
+- <a href="#spl-heading-5">Republican candidate: Maria Battista</a>
 
-6. <a href="#spl-heading-6">Republican candidate: Harry Smail</a>
+- <a href="#spl-heading-6">Republican candidate: Harry Smail</a>
 
-7. <a href="#spl-heading-7">Democratic candidate: Jill Beck</a>
+- <a href="#spl-heading-7">Democratic candidate: Jill Beck</a>
 
-8. <a href="#spl-heading-8">Democratic candidate: Timika Lane</a>
+- <a href="#spl-heading-8">Democratic candidate: Timika Lane</a>
 
-9. <a href="#spl-heading-9">Retention</a>
+  - <a href="#spl-heading-9">Retention</a>
 
 <h1 id="spl-heading-1">Commonwealth Court</h1>
 

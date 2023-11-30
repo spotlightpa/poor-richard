@@ -6,7 +6,7 @@ image-credit = "Amanda Berg / For Spotlight PA"
 kicker = "Elections"
 title = "Pennsylvania Election 2023"
 title-tag = "Official Pennsylvania Election Center 2023"
-description = "See how to vote, where to vote, polling places, sample ballots, candidate & issue guides, and more from Spotlight PA."
+description = "Full coverage of Pennsylvania's elections, including how to vote, where to vote, polling places, sample ballots, candidate guides, and more."
 dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more will appear on the Nov. 7 ballot."
 extended-kicker = "Pa. Election Center 2023"
 linktitle = "Everything you need to prepare for Pa.’s 2023 election"
@@ -57,10 +57,14 @@ credits = """
     email="jrummel@spotlightpa.org"
 >}}
 """
-donate ="""
-{{<donate-slim
-    title="Help Empower Voters. Support Our Vital Election Coverage."
-    cta="Donate"
+promo="""
+{{<featured/promo
+    id="court-tool"
+    image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
+    hed="See how electing judges affects you and the issues you care about most"
+    dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
+    cta="Use the tool →"
+    link="/court-tool/"
 >}}
 """
 form ="""
@@ -111,41 +115,42 @@ sidebar = """
     {{<sidebar-link
     title="Last day to register to vote"
     date="2023-10-23"
-    dateVerbose="Oct. 23, 2023"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title="Last day to apply for mail ballot"
     date="2023-10-31"
-    dateVerbose="Oct. 31, 2023"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title="Election Day"
     date="2023-11-07"
-    dateVerbose="Nov. 7, 2023"
     link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
   {{</sidebar-links>}}
 {{</landing-sidebar>}}
 """
+donate ="""
+{{<donate-slim
+    title="Help Empower Voters. Support Our Vital Election Coverage."
+    cta="Donate"
+>}}
+"""
 
 [[internal-links]]
 title = "Voter Guides"
 link = "guides"
 
+[[internal-links]]
+title = "Issues"
+link = "court-tool"
 
 [[internal-links]]
 title = "Election Event Series"
 link = "events"
-
-# [[internal-links]]
-# title = "Issues"
-# link = "issues"
-
 
 [[internal-links]]
 title = "Coverage"
@@ -172,26 +177,28 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
 [[blocks.entries]]
 hed="Court Primer"
-dek="Join Spotlight PA on Oct. 12 to learn more about the candidates running for state Supreme Court and more, and what these elections will mean for you."
+dek="Spotlight PA held a live event about the candidates running for state Supreme Court and more, and what these elections will mean for you."
 date="2023-10-12"
 dateVerbose="Oct. 12, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
-registration="https://zoom.us/webinar/register/WN_YOXkhwI5SHSHQCCoc-OJNA"
 
 [[blocks.entries]]
 hed="Voter Ready"
 dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."
 date="2023-11-02"
 dateVerbose="Nov. 2, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
 
 [[blocks.entries]]
 hed="Result Review"
 dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come. Registration coming soon."
 date="2023-11-16"
 dateVerbose="Nov. 16, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-results-event/"
+registration="https://zoom.us/webinar/register/WN_wf_P08sRQF-jRFrnG-T4NA"
 +++
 
-At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes. 
+At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes.
 
 Our goal is that the resources on this page will give you the critical information you need in order to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 

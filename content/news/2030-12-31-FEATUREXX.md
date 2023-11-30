@@ -61,6 +61,37 @@ series = []
   image-description="Pat Loughney (left) cared for his wife, Candy, in their home until she became ill after eating medicated soap. Candy is one of 280,000 Pennsylvanians over the age of 64 living with Alzheimer’s disease, the most common cause of dementia."
 >}}
 
+{{<featured/scroll-video 
+hed = "Pennsylvania's voting law is old — really, really old." 
+dek = "Because the law is old, there are still some rules on the books that don’t make much sense in 2023." 
+outro = "While these rules aren’t enforced, conflicting guidance and old language can still cause confusion for the people in charge of running elections."
+>}}
+
+{{<video-item 
+  id="22626910"
+  width="800"
+  height="450"
+  body="Melodium - Something You Lost (Coloribus)"
+>}}
+
+{{<video-item 
+  id="47037989"
+  width="800"
+  height="450"
+  body="E*Vax – Tide Pool"
+>}}
+
+
+{{<video-item 
+  id="684432250"
+  width="800"
+  height="450"
+  body="Aldous Harding ‘Imagining My Man’"
+>}}
+
+
+{{</featured/scroll-video>}}
+
 {{<featured/social-buttons>}}
 
 {{<featured/dropcap>}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{</featured/dropcap>}}
@@ -73,6 +104,8 @@ series = []
 {{<featured/sticky-trigger>}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
 
 {{<featured/picture
   src="2021/08/01gj-x582-5asm-wcx2.jpeg"

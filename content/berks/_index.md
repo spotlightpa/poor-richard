@@ -25,10 +25,10 @@ takeover = """
 supplemental = """
 {{<supplemental
 hed=""
-name="Heather Adams"
-role="Capitol Reporter"
-email="heather@spotlightpa.org"
-bio="Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
+creditName="Heather Adams"
+creditRole="Capitol Reporter"
+creditEmail="heather@spotlightpa.org"
+creditBio="Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
 >}}
 ## A Novel Approach to Reinvigorating Local News
 
@@ -38,11 +38,6 @@ Thanks to a planning grant from Berks County Community Foundation, Spotlight PA 
 
 credit = """
 {{<featured/credit-long
-hed=""
-name="Heather Adams"
-role="Capitol Reporter"
-email="heather@spotlightpa.org"
-bio="Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
 shortcode="{{<supplemental>}}"
 >}}"""
 

@@ -258,6 +258,11 @@ name = "How We're Funded"
 url = "/support/funders-and-members#major-donors-and-funders-since-launch"
 weight = 2
 
+[[support]]
+name = "Leaders in Action"
+url = "/support/leaders-in-action"
+weight = 3
+
 [[social]]
 name = "Social"
 url = "#"

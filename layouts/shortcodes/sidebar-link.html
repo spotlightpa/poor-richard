@@ -1,15 +1,23 @@
 {{ $title := .Get "title" }}
 {{ $link := .Get "link" }}
 {{ $date := .Get "date" }}
-{{ $dateVerbose := .Get "dateVerbose" }}
 {{ $emoji := .Get "emoji" }}
+
+{{ $show := "" }}
+{{ $dateVerbose := "" }}
+{{ $dateObj := false }}
+{{ if $date }}
+  {{ $dateObj = time $date }}
+  {{ $dateVerbose = partial "helper/date-apstyle" $dateObj.UTC }}
+  {{ $show = cond ($dateObj.After now) "add-to-cal" "expired" }}
+{{ end }}
 
 
 <li
   class="font-serif text-base md:text-lg"
   data-ga-category="{{ urlize $title }}"
 >
-  {{ if $date }}
+  {{ if eq $show "add-to-cal" }}
     <button
       @click.prevent="
         import(url).then((m) => m.atcb_action(data($el), $el))
@@ -37,6 +45,18 @@
         >Add to Calendar</span
       >
     </button>
+  {{ else if eq $show "expired" }}
+    <div class="text-left font-bold underline-offset-2">
+      <p class="font-bold underline-offset-2">
+        {{- $title -}}
+      </p>
+      <time
+        class="pt-1 font-sans text-sm font-bold uppercase tracking-wide text-black"
+        datetime="{{ $date }}"
+      >
+        {{- $dateVerbose -}}
+      </time>
+    </div>
   {{ else }}
     <a class="font-bold text-blue hover:text-g-6" href="{{ $link }}">
       {{ emojify $emoji }}

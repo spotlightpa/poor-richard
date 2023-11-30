@@ -10,22 +10,15 @@
       <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         id="{{ $idInput }}"
-        class="spl-input rounded-r-none"
+        class="spl-input scroll-mt-4 rounded-r-none"
         @input="isLoading = true"
         x-model.debounce.500ms="query"
         placeholder="Search Spotlight PA news…"
+        x-ref="top"
       />
     </div>
     <div class="z-10 mt-0">
-      <button
-        class="
-          h-full rounded-r-lg
-          border border-yellow-5 bg-yellow-4
-          px-4 py-2 font-bold
-          uppercase tracking-widest text-g-0 outline-none
-          ring-2 ring-transparent focus:ring-yellow
-        "
-      >
+      <button class="btn-signup-slim h-full rounded-l-none">
         <svg
           x-show="!isLoading"
           aria-label="Search"
@@ -63,5 +56,24 @@
     <template x-for="story in stories" :key="story.url">
       {{ partial "tw/thumb-h-story-js.html" . }}
     </template>
+    <div class="flex justify-between font-sans">
+      <button
+        x-show="hasPreviousPage"
+        class="btn-signup-slim w-auto"
+        type="button"
+        @click="previousPage"
+      >
+        Show previous results
+      </button>
+      <button
+        x-cloak
+        x-show="hasNextPage"
+        class="btn-signup-slim w-auto"
+        type="button"
+        @click="nextPage"
+      >
+        Show next results
+      </button>
+    </div>
   </div>
 </form>

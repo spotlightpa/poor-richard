@@ -9,22 +9,13 @@ image = "2023/01/01hv-rnbb-kdh9-51jb.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-gravity = "so"
 newsletter-active = false
-credits = """
-{{<featured/credit-long
-    hed="Meet Spotlight PA’s Penn State Investigative Reporter"
-    name="Wyatt Massey"
-    role="Capitol Reporter"
-    email="wmassey@spotlightpa.org"
-    bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
-    shortcode="{{<supplemental>}}"
->}}"""
 supplemental = """
 {{<supplemental
-hed="Meet Spotlight PA’s Penn State Investigative Reporter"
-name="Wyatt Massey"
-role="Capitol Reporter"
+creditHed="Meet Spotlight PA’s Penn State Investigative Reporter"
+creditName="Wyatt Massey"
+creditRole="Capitol Reporter"
 email="wmassey@spotlightpa.org"
-bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
+creditBio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
 >}}
 ## You can help us cover Penn State
 

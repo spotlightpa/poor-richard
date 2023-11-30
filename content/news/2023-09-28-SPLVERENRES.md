@@ -20,6 +20,8 @@ topics = ["The Capitol", "Josh Shapiro"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>UPDATE: </em></strong><a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-josh-shapiro-mike-vereb-sexual-harassment-settlement/"><strong><em>Gov. Josh Shapiro’s office quietly settled sexual harassment allegation against top aide</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — A top official and longtime ally of Gov. Josh Shapiro who abruptly resigned this week had been accused months earlier of sexually harassing a fellow administration employee.
 
 Mike Vereb, Shapiro’s former secretary of legislative affairs, was named in a complaint filed with the Pennsylvania Human Relations Commission. The document, obtained by Spotlight PA and dated May 26, details alleged harassment dating back to February, soon after the start of Shapiro’s administration.
