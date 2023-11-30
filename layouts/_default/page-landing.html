@@ -74,6 +74,10 @@
     <div class="py-9">
       {{ .Page.RenderString (.Param "supporters") }}
     </div>
+    {{ with .Page.RenderString (.Param "form") }}
+      {{ . }}
+    {{ end }}
+
   </section>
 {{ end }}
 
