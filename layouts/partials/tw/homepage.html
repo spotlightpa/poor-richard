@@ -16,7 +16,7 @@
 {{ $editorPicksCallout := partial "helper/get-picks" "edCallout" }}
 {{ $edInvestigations := partial "helper/get-picks" "edInvestigations" }}
 {{ $edImpact := partial "helper/get-picks" "edImpact" }}
-{{ $featuredTopics := partial "helper/get-picks" "topics"}}
+{{ $featuredTopics := partial "helper/get-picks" "topics" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}

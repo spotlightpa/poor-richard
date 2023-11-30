@@ -135,13 +135,13 @@
     {{ end }}
 
     {{ if .featuredTopics }}
-    {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
-    {{ partial "tw/list-callout-story.html" (dict
-      "hed" "The Capitol"
-      "pages" $pages.RegularPages
-      "rubricLink" "rubric"
-      )
-    }}
+      {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "The Capitol"
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        )
+      }}
     {{ end }}
     {{ if .edInvestigations }}
       {{ $pages := .edInvestigations }}
@@ -167,14 +167,14 @@
     {{ end }}
 
     {{ if .featuredNewsletter }}
-    {{ $pages := site.GetPage "content/newsletters/papost/_index.md" }}
-    {{ partial "tw/list-callout-newsletter.html" (dict
-      "hed" "Latest From Our Daily Newsletter"
-      "pages" $pages.RegularPages
-      "rubricLink" "rubric"
-      )
-    }}
-{{ end }}
+      {{ $pages := site.GetPage "content/newsletters/papost/_index.md" }}
+      {{ partial "tw/list-callout-newsletter.html" (dict
+        "hed" "Latest From Our Daily Newsletter"
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
     {{ $pages := site.GetPage "content/statecollege/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "State College Bureau"
