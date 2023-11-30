@@ -57,6 +57,14 @@
       "contentUrl": {{ $icon.Permalink }},
       "url": {{ $icon.Permalink }}
     }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ "/search/?from=sitelinks&q={search_term_string}" | absURL }}
+    },
+    "query-input": "required name=search_term_string"
   }
 }
 </script>
