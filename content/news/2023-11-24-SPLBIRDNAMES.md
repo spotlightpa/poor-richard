@@ -3,9 +3,9 @@ authors = ["Tanisha Thomas"]
 blurb = "Led by the American Ornithological Society, groups in PA and across the US are reviewing avian names to decouple birds from racism and boost inclusion."
 byline = "Tanisha Thomas of Spotlight PA"
 description = "Led by the American Ornithological Society, groups in PA and across the US are reviewing avian names to decouple birds from racism and boost inclusion."
-image = "2023/11/01jn-qh3t-d7hc-rmj5.jpeg"
+image = "2023/11/01jp-j3ny-n228-hbv2.jpeg"
 image-credit = "Flickr / U.S. Fish and Wildlife Service"
-image-description = "A Baltimore oriole perched on a feeder eats jelly. The birds are named after Lord Baltimore."
+image-description = "A Baird's sandpiper, one of over a dozen birds that breed in, migrate to, or visit Pennsylvania that could be getting a new name."
 internal-id = "SPLBIRDNAMES"
 kicker = "Environment"
 modal-exclude = false
@@ -35,8 +35,6 @@ The list below, provided by Saenger, notes some of the birds that breed in, migr
 
 - <a href="https://www.audubon.org/field-guide/bird/bairds-sandpiper">Baird&#39;s sandpiper</a>
 
-- <a href="https://www.audubon.org/field-guide/bird/baltimore-oriole">Baltimore oriole</a> (named after Lord Baltimore)
-
 - <a href="https://www.audubon.org/field-guide/bird/barrows-goldeneye">Barrow&#39;s goldeneye</a>
 
 - <a href="https://www.audubon.org/field-guide/bird/blackburnian-warbler">Blackburnian warbler</a>
@@ -62,6 +60,8 @@ The list below, provided by Saenger, notes some of the birds that breed in, migr
 - <a href="https://www.audubon.org/field-guide/bird/wilsons-snipe#:~:text=In%20breeding%20season%20mostly%20around,zigzag%20flight%2C%20uttering%20harsh%20notes.">Wilson&#39;s snipe</a>
 
 - <a href="https://www.audubon.org/field-guide/bird/wilsons-warbler">Wilson&#39;s warbler</a>
+
+<em>Correction: This article has been updated to remove a reference to the Baltimore oriole. An American Ornithological Society committee has recommended not renaming birds named after places, even if that place takes its name from a person, in this case Lord Baltimore.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
