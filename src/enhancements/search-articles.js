@@ -9,6 +9,12 @@ const indexName = `spotlightpa-content`;
 
 let baseURL = `https://${appID}-dsn.algolia.net/1/indexes/${indexName}?x-algolia-agent=spotlightpa&x-algolia-application-id=${appID}&x-algolia-api-key=${publicKey}&`;
 
+let initialQuery = "";
+let searchParams = new URLSearchParams(window.location.search);
+if (searchParams.get("from") === "sitelinks") {
+  initialQuery = searchParams.get("q");
+}
+
 function searchAPI(query, page = 0) {
   if (!query) {
     return Promise.resolve(null);
@@ -46,13 +52,14 @@ function normalize(obj) {
 
 export default function searchArticles() {
   return {
-    query: "",
+    query: initialQuery,
     results: null,
     error: null,
     isLoading: false,
     page: 0,
 
     init() {
+      this.search();
       this.$watch("query", () => {
         this.page = 0;
         this.search();
