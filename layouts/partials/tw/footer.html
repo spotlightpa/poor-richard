@@ -232,8 +232,7 @@
           {{ range .Children }}
             {{ template "social-link" . }}
           {{ end }}
-        {{ end }}
-        {{ if .HasChildren | not }}
+        {{ else }}
           {{ template "social-link" . }}
         {{ end }}
       {{ end }}
