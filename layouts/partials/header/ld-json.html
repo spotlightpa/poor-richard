@@ -65,24 +65,6 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://www.spotlightpa.org/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": {{ printf "%s/search/?from=sitelinks&q={search_term_string}" site.BaseURL }}
-    },
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-
-<!-- -->
-
-<script type="application/ld+json">
-{
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": {{ site.Title }},
@@ -171,3 +153,21 @@
     }
   </script>
 {{ end }}
+
+<!-- -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": {{ site.BaseURL }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ printf "%s/search/?from=sitelinks&q={search_term_string}" site.BaseURL }}
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
