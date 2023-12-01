@@ -62,7 +62,7 @@
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": {{ "/search/?from=sitelinks&q={search_term_string}" | absURL }}
+      "urlTemplate": {{ printf "%s/search/?from=sitelinks&q={search_term_string}" site.BaseURL }}
     },
     "query-input": "required name=search_term_string"
   }
