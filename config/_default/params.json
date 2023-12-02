@@ -47,20 +47,14 @@
   "sidebar-sticky-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our end-of-year fundraising drive.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01jp/d7df/10.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/7.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/8.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/9.png"
+    "https://files.data.spotlightpa.org/uploads/01jp/n35e/newsmatch-2022-squares-48-.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our end-of-year fundraising drive.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01jp/d7df/10.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/7.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/8.png",
-    "https://files.data.spotlightpa.org/uploads/01jp/d7dg/9.png"
+    "https://files.data.spotlightpa.org/uploads/01jp/n35e/newsmatch-2022-squares-48-.png"
   ],
   "sidebar-top-link": "/donate/",
   "sidebar-top-width": 300,
@@ -86,18 +80,18 @@
   "takeover-image": "2023/11/01jp-9jd8-gvvw-mrm5.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
   "topper-active": true,
-  "topper-bg-color": "#050058",
+  "topper-bg-color": "#4c50e9",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01jp/jkh1/newsmatch-2022-tracker-banners-1350-x-175-px-25-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jp/n35f/newsmatch-2022-tracker-banners-1350-x-175-px-26-.svg"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#050058",
+  "topper-divider-color": "#4c50e9",
   "topper-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our end-of-year fundraising drive.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01jp/jkh2/newsmatch-2022-rectangles-1024-512-px-65-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jp/n35f/newsmatch-2022-rectangles-1024-512-px-66-.svg"
   ],
   "topper-mobile-width": 1024
 }
