@@ -23,6 +23,48 @@
       "
 >
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
+    Inline Newsletter Box Lg Signup
+  </h3>
+  <div class=" mx-[calc(-50vw_+_50%)]">
+    {{ partial "tw/newsletter-box-lg.html" (dict
+      "newsletterHed" "Newsletter Full Box"
+      "newsletterDek" "Customize subscriber list via `newsletterField` option. Slide-down select list option featured"
+      "newsletterWrapper" "p-4 sm:py-8"
+      "newsletterField" "newsletter/basic-visible.html"
+      )
+    }}
+  </div>
+</div>
+
+<div
+  class="
+         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
+      "
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">
+    Sidebar Newsletter Signup
+  </h3>
+  <div class="max-w-xl">
+    {{ partial "tw/newsletter-sidebar.html" (dict
+      "image" "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+      "dek" "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, and some fun, too. It's like your morning bowl of oats, with marshmallows."
+      "gaCategory" "newsletters:papost"
+      "gaForm" "newsletters:papost-full"
+      "hiddenField" "newsletter/papost-hidden.html"
+      "hed" "Get the PA POST in your inbox"
+      "cta" "Subscribe"
+      )
+    }}
+
+  </div>
+</div>
+
+<div
+  class="
+         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
+      "
+>
+  <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Inline Newsletter Full Signup
   </h3>
   <div class=" mx-[calc(-50vw_+_50%)]">
