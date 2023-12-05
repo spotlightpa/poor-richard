@@ -9,7 +9,7 @@
 {{ $mobileImages := page.Param "river-promo-mobile-images" }}
 {{ $mobileWidth := page.Param "river-promo-mobile-width" }}
 {{ $mobileHeight := page.Param "river-promo-mobile-height" }}
-{{ $newsletter := site.GetPage "content/newsletters/papost/_index.md"}}
+{{ $newsletter := site.GetPage "content/newsletters/papost/_index.md" }}
 <!-- REDO BLURG & TITLE -->
 {{ $blurb := .blurb }}
 {{ $title := .title }}
@@ -55,40 +55,42 @@
       </div>
     {{ end }}
     {{ with $blurb }}
+      <div
+        class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+      >
+        <div class="article-content rounded bg-black p-6 font-sans text-white">
+          <h2 class="text-2xl font-extrabold">
+            About our {{ $title }} coverage
+          </h2>
+          <div class=" text-xl leading-relaxed">
+            {{ . }}
+          </div>
+        </div>
         <div
-      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
-    >
-      <div class="article-content rounded bg-black text-white p-6 font-sans">
-        <h2 class="font-extrabold text-2xl">About our {{ $title }} coverage</h2>
-        <div class=" text-xl leading-relaxed">
-      {{ . }}
-      </div>
-      </div>
-      <div
-        class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
-      >
-        <span
-          class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
-          >Ad</span
+          class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
         >
+          <span
+            class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
+            >Ad</span
+          >
+        </div>
       </div>
-    </div>
     {{ else }}
-    <div
-      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
-    >
       <div
-        class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
+        class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
       >
-        <span
-          class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
-          >Ad</span
+        <div
+          class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
         >
+          <span
+            class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
+            >Ad</span
+          >
+        </div>
+        <div class="w-full border-t py-12 md:border-none md:py-0 lg:max-w-xs">
+          {{ partial "tw/rail-most-popular.html" dict }}
+        </div>
       </div>
-      <div class="w-full border-t py-12 md:border-none md:py-0 lg:max-w-xs">
-        {{ partial "tw/rail-most-popular.html" dict }}
-      </div>
-    </div>
     {{ end }}
     <div
       data-ga-category="midpage"
@@ -159,13 +161,13 @@
       }}
     {{ end }}
 
-      {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
-      {{ partial "tw/list-callout-story.html" (dict
-        "hed" "The Capitol"
-        "pages" $pages.RegularPages
-        "rubricLink" "rubric"
-        )
-      }}
+    {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
+    {{ partial "tw/list-callout-story.html" (dict
+      "hed" "The Capitol"
+      "pages" $pages.RegularPages
+      "rubricLink" "rubric"
+      )
+    }}
     {{ if .edInvestigations }}
       {{ $pages := .edInvestigations }}
       {{ partial "tw/list-callout-dark-story.html" (dict
@@ -189,13 +191,13 @@
       }}
     {{ end }}
 
-      {{ $pages := $newsletter }}
-      {{ partial "tw/list-callout-newsletter.html" (dict
-        "hed" "Latest From Our Daily Newsletter"
-        "pages" $pages.RegularPages
-        "rubricLink" "rubric"
-        )
-      }}
+    {{ $pages := $newsletter }}
+    {{ partial "tw/list-callout-newsletter.html" (dict
+      "hed" "Latest From Our Daily Newsletter"
+      "pages" $pages.RegularPages
+      "rubricLink" "rubric"
+      )
+    }}
     {{ $pages := site.GetPage "content/statecollege/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "State College Bureau"
