@@ -38,7 +38,7 @@ Below we explain the major party candidates’ positions on a number of health i
 
 ## Medicaid
 
-The number of people <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-medicaid-enrollment-increase-map/">enrolled in Pennsylvania’s Medicaid program</a> skyrocketed during the pandemic, and enrollment now exceeds 3.5 million, recent figures show. The health insurance program is massive — it cost over $38 billion in state and federal money in a <a href="https://www.macpac.gov/wp-content/uploads/2022/08/EXHIBIT-16.-Medicaid-Spending-by-State-Category-and-Source-of-Funds-FY-2021-millions-1.pdf">recent fiscal year</a>. It provides coverage to eligible low-income adults, children, pregnant women, older adults, and people with disabilities.
+The number of people <a href="https://www.spotlightpa.org/news/2021/03/pa-coronavirus-medicaid-enrollment-increase-map/">enrolled in Pennsylvania’s Medicaid program</a> skyrocketed during the pandemic, and enrollment now exceeds 3.5 million, recent figures show. The health insurance program is massive — it cost over $38 billion in state and federal money in a <a href="https://web.archive.org/20221014095428/https://www.macpac.gov/wp-content/uploads/2022/08/EXHIBIT-16.-Medicaid-Spending-by-State-Category-and-Source-of-Funds-FY-2021-millions-1.pdf">recent fiscal year</a>. It provides coverage to eligible low-income adults, children, pregnant women, older adults, and people with disabilities.
 
 The next governor could exercise power over the Medicaid program in many ways — sometimes by signing or blocking legislation, and other times by controlling how the program works on a day-to-day basis or who qualifies for it.
 
