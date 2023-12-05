@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-12-04-SPLPROMISE.md"
+    "content/news/2023-12-05-SPLRULES.md"
   ],
   "subfeatures": [
-    "content/news/2023-11-28-SPLBUDIMP.md",
-    "content/news/2023-07-05-SPLHOUSEPASS.md",
-    "content/news/2023-11-21-SPLRGGIAPP.md"
+    "content/news/2023-02-27-SPLRULPRIMR.md",
+    "content/news/2023-03-01-SPLRULPASS.md"
   ],
   "topSlots": [
+    "content/news/2023-12-04-SPLPROMISE.md",
     "content/news/2023-11-30-SPLBALCONF23.md",
-    "content/news/2023-11-30-SPLNEWSQUIZNOV27.md",
     "content/news/2023-11-30-SPLLEGNDAS.md"
   ],
   "topper": []
