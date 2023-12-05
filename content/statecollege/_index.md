@@ -17,10 +17,11 @@ cta = "component/inline-cta.html"
 donate-theme = "statecollege"
 donate-amounts = "10,15,25"
 donate-ga-campaign = "701Dn000000Ygq1IAC"
-
+newsletter-hed = "Sign Up for Talk of the Town"
+newsletter-dek = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"
 nav = "statecollege"
 +++
-CONTENT
+The latest State College and North-Central Pennsylvania news and investigations. Join our historic effort to invigorate local news. Spotlight PA State College: North-Central Pennsylvania news and investigations.

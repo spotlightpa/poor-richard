@@ -44,7 +44,6 @@
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
-
   <section
     data-sf-campaign="701Dn000000Ygq1IAC"
     class="bg-white px-4 pb-2 pt-12 md:pb-6"
@@ -56,6 +55,8 @@
       "pinnedStories" $pinnedStories
       "river" $river
       "marginClass" $marginClass
+      "title" .Title
+      "blurb" .Content
       )
     }}
   </section>

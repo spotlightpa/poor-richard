@@ -9,6 +9,10 @@
 {{ $mobileImages := page.Param "river-promo-mobile-images" }}
 {{ $mobileWidth := page.Param "river-promo-mobile-width" }}
 {{ $mobileHeight := page.Param "river-promo-mobile-height" }}
+{{ $newsletter := site.GetPage "content/newsletters/papost/_index.md"}}
+<!-- REDO BLURG & TITLE -->
+{{ $blurb := .blurb }}
+{{ $title := .title }}
 
 {{ $btn := `inline-block
   rounded-lg bg-blue-6 py-3 px-4
@@ -50,6 +54,26 @@
         }}
       </div>
     {{ end }}
+    {{ with $blurb }}
+        <div
+      class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+    >
+      <div class="article-content rounded bg-black text-white p-6 font-sans">
+        <h2 class="font-extrabold text-2xl">About our {{ $title }} coverage</h2>
+        <div class=" text-xl leading-relaxed">
+      {{ . }}
+      </div>
+      </div>
+      <div
+        class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
+      >
+        <span
+          class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
+          >Ad</span
+        >
+      </div>
+    </div>
+    {{ else }}
     <div
       class="order-4 col-span-3 row-start-1 mt-7 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
     >
@@ -65,6 +89,7 @@
         {{ partial "tw/rail-most-popular.html" dict }}
       </div>
     </div>
+    {{ end }}
     <div
       data-ga-category="midpage"
       class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded xl:col-span-10"
@@ -134,7 +159,6 @@
       }}
     {{ end }}
 
-    {{ if .featuredTopics }}
       {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
       {{ partial "tw/list-callout-story.html" (dict
         "hed" "The Capitol"
@@ -142,7 +166,6 @@
         "rubricLink" "rubric"
         )
       }}
-    {{ end }}
     {{ if .edInvestigations }}
       {{ $pages := .edInvestigations }}
       {{ partial "tw/list-callout-dark-story.html" (dict
@@ -166,15 +189,13 @@
       }}
     {{ end }}
 
-    {{ if .featuredNewsletter }}
-      {{ $pages := site.GetPage "content/newsletters/papost/_index.md" }}
+      {{ $pages := $newsletter }}
       {{ partial "tw/list-callout-newsletter.html" (dict
         "hed" "Latest From Our Daily Newsletter"
         "pages" $pages.RegularPages
         "rubricLink" "rubric"
         )
       }}
-    {{ end }}
     {{ $pages := site.GetPage "content/statecollege/_index.md" }}
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "State College Bureau"
