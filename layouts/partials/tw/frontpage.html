@@ -115,10 +115,11 @@
           </svg>
         </button>
         <div x-show="!isSubscriber">
-          {{ partial "tw/newsletter-box-lg.html" (dict
+          {{ partial $nlBox (dict
             "newsletterHed" (page.Param "newsletter-hed")
             "newsletterDek" (page.Param "newsletter-dek")
             "newsletterWrapper" "p-4 sm:py-8"
+            "newsletterField" (page.Param "newsletter-field")
             )
           }}
         </div>
