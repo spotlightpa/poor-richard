@@ -14,6 +14,7 @@ kicker = "Local Government"
 layout = "featured"
 modal-exclude = false
 published = 2023-11-09T04:00:00-05:00
+series = ["Richest Little City"]
 slug = "dubois-pennsylvania-herm-suplizio-fraud-corruption-attorney-general"
 suppress-date = false
 title = "The inside story of how one man remade a small Pa. city while allegedly ripping off his neighbors"
