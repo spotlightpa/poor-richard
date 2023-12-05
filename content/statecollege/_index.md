@@ -8,7 +8,10 @@ image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"
 image-description = "Sunsrise over State College, PA"
 image-credit = "Abby Drey / Centre Daily Times"
 
-newsletter-box = "tw/inline-newsletter-white-sc.html"
+newsletter-box = "tw/newsletter-box-lg.html"
+newsletter-field = "newsletter/talkofthetown-hidden.html"
+newsletter-hed = "Sign Up for Talk of the Town"
+newsletter-dek = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
 river-promo-desktop-images = []
 modal-exclude = true
 donate-hed = "Vital Journalism for North-Central Pa."
@@ -17,8 +20,6 @@ cta = "component/inline-cta.html"
 donate-theme = "statecollege"
 donate-amounts = "10,15,25"
 donate-ga-campaign = "701Dn000000Ygq1IAC"
-newsletter-hed = "Sign Up for Talk of the Town"
-newsletter-dek = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"
