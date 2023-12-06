@@ -4,7 +4,7 @@ image-size = "inline"
 published = 2020-09-03T01:15:52.230Z
 title = "Sign up for PA Post"
 description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
-blurb = "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, helpful tips, and some fun, too. It's like your morning bowl of oats, but with marshmallows."
+blurb = "Top news from across PA, plus other fun reads, tips, and a daily puzzle."
 linktitle = "PA Post"
 modal-exclude = true
 layout = "news"
@@ -13,6 +13,7 @@ occurence = "Each weekday"
 
 [cascade]
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+image-gravity = "ea"
 
 +++
 
