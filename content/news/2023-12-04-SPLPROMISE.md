@@ -10,6 +10,7 @@ internal-id = "SPLPROMISE"
 kicker = "The Capitol"
 modal-exclude = false
 published = 2023-12-04T05:00:00-05:00
+series = ["Shapiro's Promises"]
 slug = "governor-josh-shapiro-promises-tracker-legislature-environment-economy"
 suppress-date = false
 title = "We tracked Josh Shapiro’s 11 biggest campaign promises through his first year. See how he did."
