@@ -1,3 +1,4 @@
+{{ $hiddenField := .hiddenField | default "newsletter/papost-hidden.html" }}
 {{ $rows := .rows | default 3 }}
 {{ $limit := 3 }}
 {{ if gt $rows 0 }}
@@ -129,9 +130,7 @@
     {{ partial "tw/newsletter-sidebar.html" (dict
       "image" "2021/06/01gc-4k5b-cx91-fppc.jpeg"
       "dek" "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, and some fun, too. It's like your morning bowl of oats, with marshmallows."
-      "gaCategory" "newsletters:papost"
-      "gaForm" "newsletters:papost-full"
-      "hiddenField" "newsletter/papost-hidden.html"
+      "hiddenField" $hiddenField
       "hed" "Get the PA POST in your inbox"
       "cta" "Subscribe"
       )

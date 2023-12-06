@@ -32,6 +32,8 @@
 
   {{ $pinnedStories := partial "helper/get-sc-picks" "topSlots" }}
 
+  {{ $newsletter := site.GetPage "/newsletters/talkofthetown/_index.md" }}
+  {{ $edNewsletter := "tw/list-callout-newsletter-sc.html" }}
   {{ $paPost := site.GetPage "/newsletters/talkofthetown" }}
   {{ $river := sort (union $paPost.RegularPages $sc.RegularPages) ".PublishDate" "desc" }}
   {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
@@ -54,6 +56,9 @@
     {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
       "pinnedStories" $pinnedStories
+      "edNewsletter" $edNewsletter
+      "newsletter" $newsletter
+      "newsletterHed" "Latest Talk of the Town"
       "river" $river
       "marginClass" $marginClass
       "title" .Title

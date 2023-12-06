@@ -16,7 +16,13 @@
 {{ $editorPicksCallout := partial "helper/get-picks" "edCallout" }}
 {{ $edInvestigations := partial "helper/get-picks" "edInvestigations" }}
 {{ $edImpact := partial "helper/get-picks" "edImpact" }}
-{{ $featuredTopics := partial "helper/get-picks" "topics" }}
+{{ $featuredTopics := partial "helper/get-picks" "featuredTopics" }}
+{{ $newsletter := site.GetPage "/newsletters/papost/_index.md" }}
+
+{{ $edNewsletter := "tw/list-callout-newsletter.html" }}
+
+{{ $hiddenField := "newsletter/papost-hidden.html" }}
+{{ $bureau := site.GetPage "/statecollege/" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
@@ -37,6 +43,12 @@
   "editorPicksCallout" $editorPicksCallout
   "edInvestigations" $edInvestigations
   "edImpact" $edImpact
+
+  "edNewsletter" $edNewsletter
+  "newsletter" $newsletter
+  "newsletterHed" "Latest From Our Daily Newsletter"
+  "bureau" $bureau
+  "hiddenField" $hiddenField
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass

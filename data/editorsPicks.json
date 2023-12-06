@@ -24,7 +24,8 @@
     "content/news/2023-01-23-SPLMORTGAGE.md"
   ],
   "featuredTopics": [
-    "the-capitol/"
+    "content/topics/the-capitol/_index.md",
+    "content/topics/rural-issues/_index.md"
   ],
   "featuredNewsletter": [
     "content/newsletters/papost/_index.md"

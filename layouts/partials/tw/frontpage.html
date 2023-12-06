@@ -9,7 +9,11 @@
 {{ $mobileImages := page.Param "river-promo-mobile-images" }}
 {{ $mobileWidth := page.Param "river-promo-mobile-width" }}
 {{ $mobileHeight := page.Param "river-promo-mobile-height" }}
-{{ $newsletter := site.GetPage "content/newsletters/papost/_index.md" }}
+
+{{ $hiddenField := .hiddenField }}
+{{ $edNewsletter := .edNewsletter }}
+{{ $newsletterHed := .newsletterHed | default "Latest From Our Daily Newsletter"}}
+
 <!-- REDO BLURG & TITLE -->
 {{ $blurb := .blurb }}
 {{ $title := .title }}
@@ -161,14 +165,18 @@
         )
       }}
     {{ end }}
-
-    {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
-    {{ partial "tw/list-callout-story.html" (dict
-      "hed" "The Capitol"
-      "pages" $pages.RegularPages
-      "rubricLink" "rubric"
-      )
-    }}
+    {{ if .featuredTopics }}
+      {{ $topicPicks := .featuredTopics }}
+      {{ range $topicPick := slice $topicPicks }}
+        {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
+        {{ partial "tw/list-callout-story.html" (dict
+          "hed" "The Capitol"
+          "pages" $pages.RegularPages
+          "rubricLink" "rubric"
+          )
+        }}
+      {{ end }}
+    {{ end }}
     {{ if .edInvestigations }}
       {{ $pages := .edInvestigations }}
       {{ partial "tw/list-callout-dark-story.html" (dict
@@ -191,21 +199,26 @@
         )
       }}
     {{ end }}
+    {{ if .edNewsletter }}
+      {{ $pages := .newsletter }}
+      {{ partial $edNewsletter (dict
+        "hed" $newsletterHed
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        "hiddenField" $hiddenField
+        )
+      }}
+    {{ end }}
+    {{ if .bureau }}
+      {{ $pages := .bureau }}
 
-    {{ $pages := $newsletter }}
-    {{ partial "tw/list-callout-newsletter.html" (dict
-      "hed" "Latest From Our Daily Newsletter"
-      "pages" $pages.RegularPages
-      "rubricLink" "rubric"
-      )
-    }}
-    {{ $pages := site.GetPage "content/statecollege/_index.md" }}
-    {{ partial "tw/list-callout-story.html" (dict
-      "hed" "State College Bureau"
-      "pages" $pages.RegularPages
-      "rubricLink" "rubric"
-      )
-    }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "State College Bureau"
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
   </div>
 
   <div
