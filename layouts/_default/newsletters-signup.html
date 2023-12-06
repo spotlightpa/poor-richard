@@ -79,7 +79,7 @@
                     "widthRatio" 4
                     "heightRatio" 3
                     "widths" (slice 128 256 384 512 1280)
-                    "figClass" "col-span-2 row-start-1 row-span-2 hidden sm:block"
+                    "figClass" "col-span-2 row-start-1 row-span-2 block mb-4"
                     "sizeHint" "400px"
                     "rounded" true
                     "gravity" (.Page.Param "image-gravity")
@@ -87,10 +87,10 @@
                   {{ partial "tw/image-block.html" $imgOpts }}
 
 
-                  <div class="col-span-3 col-start-3 row-start-1 space-y-2">
+                  <div class="col-span-3 col-start-3 row-start-1 space-y-1">
                     <div class="flex items-center">
                       <input
-                        class="peer mr-3 h-5 w-5 appearance-none rounded border border-g-4 opacity-0 sm:-ml-9 md:-ml-0 lg:-ml-9 "
+                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-4 opacity-0"
                         type="checkbox"
                         x-model="isChecked"
                         id="{{ $id }}"
@@ -117,15 +117,15 @@
                       </div>
                     </div>
 
-                    <h2 class="text-lg font-bold lg:text-2xl">
+                    <h2 class="text-xl font-bold lg:text-2xl">
                       {{ .LinkTitle }}
                     </h2>
 
-                    <p class="font-bold">
+                    <p class="text-sm font-bold md:text-base">
                       {{ $page.Params.occurence }}
                     </p>
 
-                    <p class=" text-base font-normal leading-snug">
+                    <p class="py-2 text-base font-normal leading-snug">
                       {{ $params.blurb }}
                     </p>
                     <p class="text-sm tracking-widest">
