@@ -12,7 +12,8 @@
 
 {{ $hiddenField := .hiddenField }}
 {{ $edNewsletter := .edNewsletter }}
-{{ $newsletterHed := .newsletterHed | default "Latest From Our Daily Newsletter"}}
+{{ $newsletterHed := .newsletterHed | default "Latest From Our Daily Newsletter" }}
+
 
 <!-- REDO BLURG & TITLE -->
 {{ $blurb := .blurb }}
@@ -201,11 +202,15 @@
     {{ end }}
     {{ if .edNewsletter }}
       {{ $pages := .newsletter }}
-      {{ partial $edNewsletter (dict
-        "hed" $newsletterHed
+      {{ partial "tw/list-callout-newsletter.html" (dict
+
+        "calloutHed" (page.Param "callout-hed")
+        "signupHed" (page.Param "signup-hed")
+        "signupDek" (page.Param "signup-dek")
+        "signupCta" (page.Param "signup-cta")
+        "signupImage" (page.Param "signup-image")
+        "signupField" (page.Param "signup-field")
         "pages" $pages.RegularPages
-        "rubricLink" "rubric"
-        "hiddenField" $hiddenField
         )
       }}
     {{ end }}

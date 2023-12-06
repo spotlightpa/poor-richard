@@ -1,4 +1,10 @@
-{{ $hiddenField := .hiddenField | default "newsletter/papost-hidden.html" }}
+{{ $signupField := .signupField | default "newsletter/papost-hidden.html" }}
+{{ $hed := .calloutHed | default "Latest from our newsletter" }}
+{{ $signupHed := .signupHed | default "Signup for our newsletter" }}
+{{ $signupDek := .signupDek | default "Get the latest Spotlight PA news in your inbox." }}
+{{ $signupCta := .signupCta | default "Subscribe" }}
+{{ $signupImage := .signupImage | default "2021/06/01gc-4k5b-cx91-fppc.jpeg" }}
+
 {{ $rows := .rows | default 3 }}
 {{ $limit := 3 }}
 {{ if gt $rows 0 }}
@@ -15,7 +21,7 @@
     flex flex-wrap gap-6 sm:gap-x-12 md:grid md:grid-cols-14 md:items-start md:justify-between lg:odd:flex-row lg:even:flex-row-reverse
   "
 >
-  {{ with .hed }}
+  {{ with $hed }}
     <h2
       class=" w-full border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:col-span-full"
     >
@@ -128,11 +134,12 @@
   </div>
   <div class="max-w-xl md:col-span-6">
     {{ partial "tw/newsletter-sidebar.html" (dict
-      "image" "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-      "dek" "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, and some fun, too. It's like your morning bowl of oats, with marshmallows."
-      "hiddenField" $hiddenField
-      "hed" "Get the PA POST in your inbox"
-      "cta" "Subscribe"
+      "image" $signupImage
+      "gravity" "ce"
+      "dek" $signupDek
+      "signupField" $signupField
+      "hed" $signupHed
+      "cta" $signupCta
       )
     }}
   </div>

@@ -35,7 +35,8 @@
   {{ $newsletter := site.GetPage "/newsletters/talkofthetown/_index.md" }}
   {{ $edNewsletter := "tw/list-callout-newsletter-sc.html" }}
   {{ $paPost := site.GetPage "/newsletters/talkofthetown" }}
-  {{ $river := sort (union $paPost.RegularPages $sc.RegularPages) ".PublishDate" "desc" }}
+  {{ $river := sort $sc.RegularPages ".PublishDate" "desc" }}
+
   {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
 
   {{ $hasPromo := .Param "promo-active" }}

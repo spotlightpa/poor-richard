@@ -9,4 +9,13 @@ donate-amounts = "10,15,25"
 newsletter-field = "newsletter/basic-visible.html"
 newsletter-hed = "Sign up for our newsletters"
 newsletter-dek = "Get the top stories and best investigative journalism from across Pa. with our free newsletters."
+
+
+callout-hed = "Latest From Our Daily Newsletter"
+signup-hed = "Get the PA POST in your inbox"
+signup-dek = "Every weekday, you’ll get the top news from across Pennsylvania, plus other good reads, and some fun, too. It's like your morning bowl of oats, with marshmallows."
+signup-cta = "Subscribe"
+signup-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+signup-field = "newsletter/papost-hidden.html"
+
 +++

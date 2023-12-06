@@ -1,6 +1,6 @@
 {{ $gaForm := .gaForm }}
 {{ $gaCategory := .gaCategory }}
-{{ $hiddenField := .hiddenField }}
+{{ $signupField := .signupField | default "newsletter/papost-hidden.html" }}
 {{ $hed := .hed }}
 {{ $cta := .cta }}
 
@@ -51,7 +51,7 @@
     x-form="{{ $gaForm }}"
     data-ga-category="{{ $gaCategory }}"
   >
-    {{ partial $hiddenField . }}
+    {{ partial $signupField . }}
 
 
     <div class="mb-5 flex flex-wrap justify-start gap-3 align-baseline">

@@ -20,6 +20,14 @@ cta = "component/inline-cta.html"
 donate-theme = "statecollege"
 donate-amounts = "10,15,25"
 donate-ga-campaign = "701Dn000000Ygq1IAC"
+
+callout-hed = "Latest Talk of the Town"
+signup-hed = "Get the Talk of the Town"
+signup-dek = "Every Thursday, get top news and notes for North-Central PA from our State College regional bureau."
+signup-cta = "Subscribe"
+signup-image = "2022/06/01hb-4958-4rxz-4t0q.png"
+signup-field = "newsletter/talkofthetown-hidden.html"
+
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"

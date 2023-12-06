@@ -21,7 +21,6 @@
 
 {{ $edNewsletter := "tw/list-callout-newsletter.html" }}
 
-{{ $hiddenField := "newsletter/papost-hidden.html" }}
 {{ $bureau := site.GetPage "/statecollege/" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
@@ -48,7 +47,6 @@
   "newsletter" $newsletter
   "newsletterHed" "Latest From Our Daily Newsletter"
   "bureau" $bureau
-  "hiddenField" $hiddenField
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass
