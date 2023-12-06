@@ -70,18 +70,16 @@
                 x-report-click
                 for="{{ $id }}"
               >
-                <article class="grid-row-3 grid-cols-5 gap-x-5 gap-y-2 sm:grid">
+                <article class="grid-cols-5 gap-x-5 sm:grid">
                   {{ $name := .Page.Param "image" }}
                   {{ $credit := .Page.Param "image-credit" }}
                   {{ $description := .Page.Param "image-description" }}
                   {{ $imgOpts := dict
                     "filename" $name
-                    "credit" "Georgianna Sutherland / For Spotlight PA"
                     "widthRatio" 4
                     "heightRatio" 3
                     "widths" (slice 128 256 384 512 1280)
-                    "figClass" "col-start-1 col-span-2 row-start-1 row-span-2 hidden sm:block"
-                    "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+                    "figClass" "col-span-2 row-start-1 row-span-2 hidden sm:block"
                     "sizeHint" "400px"
                     "rounded" true
                     "gravity" (.Page.Param "image-gravity")
@@ -131,7 +129,7 @@
                       {{ $params.blurb }}
                     </p>
                     <p
-                      class="col-start-2 col-end-2 self-end text-sm tracking-widest"
+                      class="text-sm tracking-widest"
                     >
                       <a
                         class="text-blue underline hover:text-blue-7"
