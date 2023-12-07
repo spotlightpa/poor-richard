@@ -425,8 +425,7 @@ Richard Kuprewicz, a pipeline safety expert and consultant, also based in Washin
   >}}
   {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
-    headshot="carl-johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
   >}}

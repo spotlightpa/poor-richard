@@ -355,8 +355,7 @@ Pennington worries that her daughters — ages 9, 7, and four months old — hea
   >}}
   {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
-    headshot="carl-johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
   >}}

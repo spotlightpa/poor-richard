@@ -1,9 +1,9 @@
 +++
 aliases = ["/mydistrict"]
 arc-id = "K5Y7MV2YKFGWZEGLDKEHZCJ2E4"
-authors = ["Kate Huangpu", "Carl Johnson"]
+authors = ["Kate Huangpu", "Carlana Johnson"]
 blurb = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts will change."
-byline = "Kate Huangpu of Spotlight PA and Carl Johnson of Spotlight PA"
+byline = "Kate Huangpu of Spotlight PA and Carlana Johnson of Spotlight PA"
 description = "Enter your address into Spotlight PA’s Pennsylvania redistricting tool to find out how the demographics of your congressional, state House, and state Senate districts will change."
 headers = ["Feature-Policy: geolocation *;"]
 image = "external/7x62vr0y13fc2fk8wf7tj1678r.jpeg"

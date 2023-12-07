@@ -314,8 +314,7 @@ There’s an easy way to fix the byzantine process the public must go through to
   >}}
   {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
-    headshot="carl-johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
   >}}
