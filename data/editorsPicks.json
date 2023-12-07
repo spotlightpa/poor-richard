@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-12-06-SPLPSUSUN.md"
+    "content/news/2023-12-07-SPL_Opioid_Allegheny.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-10-26-SPL_PSULETTER1026.md"
+    "content/news/2023-11-29-SPLSYROP.md",
+    "content/news/2023-10-18-SPL_LOCAL_PENSIONS.md",
+    "content/news/2023-08-02-SPLOPIOIDGUIDANCE.md"
   ],
   "topSlots": [
+    "content/statecollege/2023-12-06-SPLPSUSUN.md",
     "content/news/2023-12-05-SPLRULES.md",
-    "content/news/2023-12-04-SPLPROMISE.md",
-    "content/news/2023-11-30-SPLBALCONF23.md"
+    "content/news/2023-12-04-SPLPROMISE.md"
   ],
   "topper": []
 }
