@@ -46,14 +46,29 @@
   {{ end }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
+  {{ $linktitle :=  index .Page.Params "callout-title" }}
 
 
   <section
     data-sf-campaign="701Dn000000Ygq1IAC"
-    class="bg-white px-4 pb-2 pt-12 md:pb-6"
+    class="bg-white space-y-6 px-4 pb-2 pt-12 md:pb-6"
     data-sf-theme="statecollege"
   >
-    <h1 class="sr-only">{{ .Title }}</h1>
+    <header
+      class="flex mx-auto max-w-screen-xl w-full justify-between border-b border-black md:col-span-3"
+    >
+      <h2
+        class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide "
+      >
+        {{ with $linktitle }}
+          {{ . }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h2>
+      {{ partial "tw/breadcrumbs.html" . }}
+
+    </header>
     {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
       "pinnedStories" $pinnedStories
