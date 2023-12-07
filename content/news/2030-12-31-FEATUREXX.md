@@ -209,7 +209,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   >}}
   {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
   >}}
