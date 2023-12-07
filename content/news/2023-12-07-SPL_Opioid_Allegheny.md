@@ -20,6 +20,9 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+
+{{<audio src="https://files.data.spotlightpa.org/uploads/01jq/498d/opioids.mp3" label="Click here to listen to an audio introduction to this story.">}}
+
 <em>MCKEESPORT — </em>When Allegheny County government received its first opioid settlement payment last year, it missed out on<strong> </strong>nearly $328,000. Then, for its second payment, it missed out on another $494,000.
 
 And it stood to lose out on hundreds of thousands of dollars more with this year’s payment, scheduled for mid-December.
