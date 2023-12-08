@@ -147,7 +147,7 @@
         class="sticky bottom-0 -mx-4 w-screen bg-g-2 shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
       >
         <div
-          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
+          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
         >
           {{ $idFname := partial "helper/new-id" . }}
           {{ $idLname := partial "helper/new-id" . }}
@@ -158,47 +158,15 @@
             <h2 class=" text-xl font-black leading-none text-black">
               Sign up for free
             </h2>
-            <p class="my-5 text-lg">
-              Enter your name and email and click “Subscribe” to start receiving
+            <p class="my-2 text-lg">
+              Enter your email address and click “Subscribe” to start receiving
               selected newsletters.
             </p>
           </header>
 
           <div
-            class="flex flex-wrap justify-between align-baseline md:col-span-5 md:col-start-6"
+            class="flex flex-wrap justify-between align-bottom md:col-span-5 md:col-start-6"
           >
-            <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
-              <label
-                class="flex-[0_0_100%] font-sans text-sm font-black"
-                for="{{ $idFname }}"
-                >First Name</label
-              >
-              <input
-                id="{{ $idFname }}"
-                class="spl-input"
-                type="text"
-                name="FNAME"
-                placeholder="First Name"
-                required
-              />
-            </p>
-
-            <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
-              <label
-                class="flex-[0_0_100%] font-sans text-sm font-black"
-                for="{{ $idLname }}"
-                >Last Name</label
-              >
-
-              <input
-                id="{{ $idLname }}"
-                class="spl-input"
-                type="text"
-                name="LNAME"
-                placeholder="Last Name"
-                required
-              />
-            </p>
             <p class="relative mt-3 flex-[0_0_100%] sm:flex-[0_1_60%]">
               <label
                 class="flex-[0_0_100%] font-sans text-sm font-black"
@@ -207,14 +175,14 @@
               >
               <input
                 id="{{ $idEmail }}"
-                class="spl-input"
+                class="spl-input h-11"
                 type="email"
                 name="EMAIL"
                 placeholder="Email address"
                 required
               />
               <span
-                class="pointer-events-none absolute inset-y-0 right-3 top-9 inline-flex text-g-4"
+                class="pointer-events-none absolute inset-y-0 right-3 top-9 inline-flex h-4 text-g-4"
               >
                 <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
                   {{ partial "helper/svg.html" "email" }}
@@ -222,7 +190,9 @@
               </span>
             </p>
             <div class="mt-2 flex-1 self-end sm:ml-5">
-              <button type="submit" class="btn-signup w-full">Subscribe</button>
+              <button type="submit" class="btn-signup h-11 w-full">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
