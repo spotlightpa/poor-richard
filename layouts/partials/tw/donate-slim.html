@@ -1,11 +1,12 @@
 {{ $donateHed := .donateHed | default "Become a Supporter" }}
 {{ $donateCta := .donateCta | default "Contribute" }}
 {{ $donateTheme := .donateTheme }}
+{{ $donateUrl := .donateUrl  | default "/donate/" }}
 
 
 <div class="px-5 py-12 lg:scroll-mt-20" data-donate-theme="{{ $donateTheme }}">
   <a
-    href="/donate/"
+    href="{{ $donateUrl }}"
     class="mx-auto block max-w-screen-lg items-center justify-evenly rounded border-2 border-red bg-white px-4 pb-10 pt-10 font-serif text-black no-underline hover:text-black sm:flex"
   >
     <h2
