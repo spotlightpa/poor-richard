@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2023-12-08-SPLSESSION.md"
+    "content/news/2023-12-11-SPL_WHRIMPASS.md"
   ],
   "subfeatures": [
-    "content/news/2023-11-28-SPLBUDIMP.md",
-    "content/news/2023-08-30-SPLCODEPROGRESS.md",
-    "content/news/2023-08-23-SPLCODEEXP.md"
+    "content/news/2023-06-27-WHR-Investigator-0627.md"
   ],
   "topSlots": [
-    "content/news/2023-12-07-SPLNEWSQUIZDEC4.md",
+    "content/news/2023-12-08-SPLSESSION.md",
     "content/news/2023-12-07-SPL_Opioid_Allegheny.md",
     "content/statecollege/2023-12-06-SPLPSUSUN.md"
   ],
