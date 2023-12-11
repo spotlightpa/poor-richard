@@ -26,7 +26,7 @@ Paula Knudsen Burke, a lawyer for the Reporters Committee for Freedom of the Pre
 
 “By regularly meeting in secret, Penn State officials are not just violating the state’s Sunshine Act, they are also violating the public&#39;s trust. In order to hold an institution as large and influential as Penn State accountable, we must demand greater transparency,” Burke said of the lawsuit.
 
-The university could not be reached immediately by phone or email for comment.
+The university could not be reached by phone or email for comment.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
 
