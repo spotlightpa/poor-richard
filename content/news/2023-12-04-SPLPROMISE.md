@@ -154,8 +154,6 @@ The House has also passed legislation that would expand background checks to inc
 
 The state Senate, however, has not taken up the legislation and <a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-gun-control-red-flag-law-background-checks-ceasefire-campaign/">appears unlikely to do so</a>.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
 ## Voting rights
 
 Election security became a central issue after the 2020 election when former President Donald Trump made false claims of widespread voter fraud. During his campaign, Shapiro emphasized his work combatting lawsuits that attempted to overturn the election and framed his victory as a rejection of radicalism.
@@ -171,6 +169,38 @@ Shapiro signaled during his campaign that he would be willing to consider some R
 <strong>Status:</strong> In September, Shapiro directed the Pennsylvania Department of Transportation to <a href="https://www.spotlightpa.org/news/2023/09/pennsylvania-automatic-voter-registration-josh-shapiro-penndot/">enact a form of automatic voter registration</a>. Eligible voters are now automatically taken through the voter registration process while getting a driver’s license unless they opt out.
 
 Shapiro has not been presented with legislation that would achieve the other goals.
+
+## Education
+
+During his campaign, Shapiro was up against a Republican <a href="https://www.chalkbeat.org/philadelphia/2022/9/29/23378682/pennsylvania-governor-race-election-2022-doug-mastriano-josh-shapiro-philadelphia-schools-education/">who had proposed</a> dramatically cutting funding for public education and redistributing funds to voucher programs that would allow parents to send their children to private schools.
+
+Shapiro’s own positions on education stood in stark contrast: he wanted to increase education funding and backed efforts to route more cash to poorer districts. However, he also broke with many members of his party in <a href="https://www.pennlive.com/news/2022/09/josh-shapiro-voices-support-saturday-for-lifeline-scholarships-championed-by-school-choice-proponents.html">expressing support for a version of vouchers</a>.
+
+While in office, he has largely stuck to those positions.
+
+<strong>Promise: </strong>Shapiro pledged to increase funding for education.
+
+<strong>Status: </strong>The spending plan Shapiro signed into law this year included a nearly $570 million increase in basic education funding. It was, <a href="https://www.governor.pa.gov/newsroom/historic-investments-in-pennsylvania-schools-2023-24-budget-makes-largest-increase-in-basic-education-funding-ever/#:~:text=Today%20we%20celebrate%20the%20accomplishment,free%20universal%20breakfast%20for%20children.">the administration said</a>, the biggest single-year boost the commonwealth had seen.
+
+Some public education advocates argued the total should have been even higher, given a state court ruling this year that found Pennsylvania’s school system is unconstitutionally inequitable and ordered lawmakers to correct it. Talks are ongoing in the legislature about how best to accomplish this.
+
+Shapiro’s budget also included funding for universal free breakfast in public schools.
+
+<strong>Promise</strong>: Shapiro said during his campaign that he supported a school voucher program — specifically, one that would be targeted at children in low-achieving public schools, and would put state dollars toward their tuition in private schools.
+
+He also argued that it was possible to create a voucher program without <a href="https://investineducation.org/articles/shapiro-on-support-for-school-choice-its-what-i-believe/">taking funds away from public schools</a>, though critics pushed back that any funds used for school vouchers could always be better used to fund public education, and argued that bolstering private schools with state money would weaken public schools as an institution.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
+<strong>Status: </strong>Shapiro strenuously defended vouchers during budget negotiations, at one point going on Fox News to tout the proposal and declaring that “<a href="https://www.foxnews.com/media/pennsylvania-gov-defends-school-choice-every-child-god-deserves-quality-education">every child of God deserves a shot</a>.”
+
+He agreed to sign off on <a href="https://www.spotlightpa.org/news/2023/06/pa-senate-budget-private-school-voucher-pass-house-leaves/">a $100 million school voucher program</a> as part of a broader budget deal with the GOP-controlled state Senate. However, state House Democrats refused to vote for the deal until Shapiro said he would line-item veto the program.
+
+<a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-budget-pass-house-senate-shapiro-education/">He did so</a>. However, he said he still supports vouchers.
+
+<br/>“I think this is unfinished business. Along with minimum wage, along with statute of limitations reform,” Shapiro said <a href="https://www.wgal.com/article/pennsylvania-gov-josh-shapiro-says-he-remains-supportive-of-private-school-vouchers/44778463">during an interview last August</a> after he signed the budget into law. “What we need to do is reconcile those differences, pull people together and get it done. I&#39;m confident we&#39;ll be able to do that.&#34;
+
+<em>Note: This story has been updated with details about Shapiro’s education-related promises.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
