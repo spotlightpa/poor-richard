@@ -65,7 +65,7 @@
               {{ $slug := .File.Dir | path.Base }}
               {{ $id := partial "helper/new-id" . }}
               <label
-                class="flex"
+                class="flex cursor-pointer"
                 data-ga-category="toggle-newsletter:{{ $slug }}"
                 x-report-click
                 for="{{ $id }}"
@@ -90,7 +90,7 @@
                   <div class="col-span-3 col-start-3 row-start-1 space-y-1">
                     <div class="flex items-center">
                       <input
-                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-4 opacity-0"
+                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
                         type="checkbox"
                         x-model="isChecked"
                         id="{{ $id }}"
@@ -100,7 +100,7 @@
                         data-ga-category="toggle-newsletter:{{ $slug }}"
                       />
                       <svg
-                        class="mr-3 h-5 w-5 rounded border border-g-4 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
+                        class="mr-3 h-5 w-5 rounded border border-g-9 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
                         viewBox="0 0 1 1"
                       >
                         {{ partial "helper/svg.html" "check" }}
@@ -148,14 +148,14 @@
             {{ end }}
             <div
               class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
-              x-data="{ isChecked: true }"
+              x-data="{ isChecked: false }"
               :class="{ 'rounded bg-g-1': isChecked }"
             >
               {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
               {{ $slug := .File.Dir | path.Base }}
               {{ $id := partial "helper/new-id" . }}
               <label
-                class="flex"
+                class="flex cursor-pointer"
                 data-ga-category="toggle-newsletter:{{ $slug }}"
                 x-report-click
                 for="{{ $id }}"
@@ -182,7 +182,7 @@
                       <input
                         class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
                         type="checkbox"
-                        x-model="!isChecked"
+                        x-model="isChecked"
                         id="{{ $id }}"
                         name="{{ $slug }}"
                         value="0"
