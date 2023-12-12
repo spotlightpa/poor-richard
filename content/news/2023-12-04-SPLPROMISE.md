@@ -15,7 +15,7 @@ slug = "governor-josh-shapiro-promises-tracker-legislature-environment-economy"
 suppress-date = false
 title = "We tracked Josh Shapiro’s 11 biggest campaign promises through his first year. See how he did."
 title-tag = "Is PA Governor Josh Shapiro keeping campaign promises?"
-topics = ["The Capitol"]
+topics = ["Josh Shapiro", "The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
