@@ -10,6 +10,7 @@ internal-id = "SPLHOWDUB"
 kicker = "Local Government"
 modal-exclude = false
 published = 2023-11-17T04:00:00-05:00
+series = ["Richest Little City"]
 slug = "dubois-pennsylvania-herm-suplizio-attorney-general-corruption"
 suppress-date = false
 title = "How Spotlight PA reported its investigation into suspended DuBois City Manager Herm Suplizio"
