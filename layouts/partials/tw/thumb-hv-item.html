@@ -15,7 +15,24 @@
 
 <article class="{{ $wrapperClass }}">
   <div data-ga-category="eyebrow" class="w-full">
-    {{ if .eyebrow }}
+    {{ if .extendedEyebrow }}
+      <span class="inline-flex pb-4 text-sm md:pb-2 md:pr-8">
+        {{ partial "tag/maybe-link.html" (dict
+          "link" .rubricLink
+          "text" .extendedEyebrow
+          "eyebrowColor" $eyebrowColor
+          "eyebrowClass" $eyebrowClass
+          )
+        -}}
+        {{- partial "tag/maybe-link.html" (dict
+          "link" .rubricLink
+          "eyebrowColor" `bg-white text-black border-black`
+          "eyebrowClass" $eyebrowClass
+          "text" .eyebrow
+          )
+        }}
+      </span>
+    {{ else }}
       {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
         "eyebrowColor" $eyebrowColor
