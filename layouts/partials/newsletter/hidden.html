@@ -21,7 +21,8 @@
 <!-- Shibboleth field: server will reject message if too old -->
 <input
   type="hidden"
-  x-data
+  x-data="{ humanLike: false }"
+  x-init="setTimeout(()=>{ humanLike = true }, 5000)"
   :name="'shibboleth_timestamp'"
-  :value="new Date().toISOString()"
+  :value="humanLike? new Date().toISOString(): ''"
 />
