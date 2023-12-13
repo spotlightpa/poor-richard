@@ -232,6 +232,6 @@ For “Big Spending, Little Accountability,” a Spotlight PA collaborative inve
 layout = "social"
 title  = "Follow Us" 
 +++
-At Spotlight PA, we seek to positively impact the future of Pennsylvania through unfettered public access to nonpartisan investigative and public-service journalism that informs, equips, and empowers people in all parts of the state to individually and collectively drive change. 
+At Spotlight PA, we seek to positively impact the future of Pennsylvania through public access to nonpartisan investigative and public-service journalism that informs, equips, and inspires people in all parts of the state to individually and collectively drive change. 
 
 In short, we measure our success by the results we’re getting for you.
