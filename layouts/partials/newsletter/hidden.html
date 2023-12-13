@@ -23,6 +23,6 @@
   type="hidden"
   x-data="{ humanLike: false }"
   x-init="setTimeout(()=>{ humanLike = true }, 15000)"
-  :name="'shibboleth_timestamp'"
+  :name="humanLike? 'shibboleth_timestamp': ''"
   :value="humanLike? new Date().toISOString(): ''"
 />
