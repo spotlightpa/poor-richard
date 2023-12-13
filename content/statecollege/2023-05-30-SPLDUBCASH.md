@@ -13,6 +13,7 @@ internal-id = "SPLDUBCASH"
 kicker = "Local Government"
 modal-exclude = false
 published = 2023-05-30T05:00:00-04:00
+series = ["Richest Little City"]
 slug = "pa-dubois-herm-suplizio-toni-cherry-cash-city-hall"
 suppress-date = false
 title = "A DuBois official was arrested on corruption charges. Then nearly $100K in cash arrived at city hall."

@@ -75,6 +75,12 @@ parent = "Support Spotlight PA"
 url = "/support/funders-and-members"
 weight = 2
 
+[[main_support]]
+name = "Spotlight PA Store"
+parent = "Support Spotlight PA"
+url = "https://shop.spotlightpa.org"
+weight = 3
+
 [[main_more]]
 name = "News"
 url = "/news/"
@@ -257,6 +263,11 @@ weight = 2
 name = "Leaders in Action"
 url = "/support/leaders-in-action"
 weight = 3
+
+[[support]]
+name = "Spotlight PA Store"
+url = "https://shop.spotlightpa.org"
+weight = 4
 
 [[social]]
 name = "Facebook"

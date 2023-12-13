@@ -13,6 +13,7 @@ kicker = "Local Government"
 modal-exclude = false
 og-title = "How Herm Suplizio allegedly bilked DuBois, PA of $600K"
 published = 2023-04-10T05:00:00-04:00
+series = ["Richest Little City"]
 slug = "pa-attorney-general-dubois-herm-suplizio-charges"
 suppress-date = false
 title = "How a Pa. city manager allegedly stole thousands of taxpayer dollars with virtually no oversight"

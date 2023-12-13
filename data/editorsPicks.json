@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-12-05-SPLRULES.md"
+    "content/news/2023-12-13-SPLSHAYR1.md"
   ],
   "subfeatures": [
-    "content/news/2023-02-27-SPLRULPRIMR.md",
-    "content/news/2023-03-01-SPLRULPASS.md"
+    "content/news/2023-12-04-SPLPROMISE.md"
   ],
   "topSlots": [
-    "content/news/2023-12-04-SPLPROMISE.md",
-    "content/news/2023-11-30-SPLBALCONF23.md",
-    "content/news/2023-11-30-SPLLEGNDAS.md"
+    "content/news/2023-12-11-SPL_WHRIMPASS.md",
+    "content/news/2023-12-08-SPLSESSION.md",
+    "content/news/2023-12-07-SPL_Opioid_Allegheny.md"
   ],
   "edCallout": [
     "content/news/2023-11-15-SPL23CFFINAL.md",
