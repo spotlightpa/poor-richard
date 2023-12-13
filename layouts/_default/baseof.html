@@ -58,7 +58,7 @@
       {{ end }}
     {{ end }}
     {{ block "header" . }}
-      <header data-ga-category="header">
+      <header class=" bg-beige" data-ga-category="header">
         {{ block "banner" . }}
           {{ if .Param "banner-active" }}
             {{ partialCached "tw/banner.html" . }}
