@@ -16,8 +16,8 @@
   {{ end }}
   <section
     class="
-    mx-5 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 sm:gap-x-12 
-    md:mx-auto md:items-start md:justify-between lg:flex-row lg:gap-x-16 
+    mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 sm:gap-x-10 
+    xl:mx-auto md:items-start md:justify-between lg:flex-row lg:gap-x-16 
       "
   >
     <header
@@ -38,7 +38,7 @@
 
     {{ with $blurb }}
       <div
-        class="mt-7 flex self-stretch md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+        class="mt-7 flex self-stretch flex-auto sm:max-w-[300px] md:space-y-12 xl:col-start-12 xl:row-end-4"
       >
         <div class="article-content rounded bg-black p-6 font-sans text-white">
           <h2 class="text-2xl font-extrabold">
@@ -66,7 +66,7 @@
         "gravity" (.Param "image-gravity")
       }}
       <div
-        class="max-w-full md:w-5/12 md:flex-auto lg:w-8/12"
+        class="max-w-full sm:flex-1 md:w-7/12 md:flex-auto lg:w-7/12 xl:w-8/12"
         data-ga-category="story-1"
       >
         {{ $eyebrow := $params.published }}
@@ -105,7 +105,7 @@
         "gravity" (.Param "image-gravity")
       }}
       <div
-        class="max-w-full md:w-2/12 md:flex-1 lg:w-2/12 xl:w-72"
+        class="max-w-full md:w-2/12 md:flex-1 lg:w-1/6 xl:w-72"
         data-ga-category="story-2"
       >
         {{ $eyebrow := $params.published }}
@@ -164,12 +164,12 @@
   </div>
 
   <div
-    class="mx-auto mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:gap-x-8 lg:px-20"
+    class="mx-4 mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mx-auto md:mt-16 lg:gap-x-8 lg:px-20"
     @mouseover.passive.once="load()"
     @touchstart.passive.once="load()"
   >
     <h2
-      class="w-full border-b border-black font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide"
+      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
     >
       More stories about
       {{ $title }}
