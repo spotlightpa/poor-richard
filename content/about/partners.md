@@ -19,5 +19,4 @@ layout = "partners-page"
 dataSrc = "partners"
 
 +++
-Distribution partners allow us to share resources and maximize audience and reporting power. We provide our content free of charge to newsrooms across the state to help bolster local media and better inform the public.
-
+We provide our content free of charge to more than 100 newsrooms across the state to help bolster local media and better inform the public. Distribution partners allow us to share resources and maximize audience and reporting power.
