@@ -106,6 +106,12 @@ weight = 1
 
 [[main_more]]
 parent = "News"
+name = "Environment"
+url = "/topics/environment/"
+weight = 1
+
+[[main_more]]
+parent = "News"
 name = "State Capitol"
 url = "/topics/the-capitol/"
 weight = 1
