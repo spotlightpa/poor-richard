@@ -32,7 +32,7 @@
           )
         }}
       </span>
-    {{ else }}
+    {{ else if .eyebrow }}
       {{ partial "tag/maybe-link.html" (dict
         "link" .rubricLink
         "eyebrowColor" $eyebrowColor
