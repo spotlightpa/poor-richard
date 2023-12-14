@@ -11,14 +11,10 @@
 {{ $mobileHeight := page.Param "river-promo-mobile-height" }}
 
 {{ $hiddenField := .hiddenField }}
-{{ $edNewsletter := .edNewsletter }}
 {{ $newsletterHed := .newsletterHed | default "Latest From Our Daily Newsletter" }}
 
-
-<!-- REDO BLURG & TITLE -->
 {{ $blurb := .blurb }}
 {{ $title := .title }}
-
 {{ $btn := `inline-block
   rounded-lg bg-blue-6 py-3 px-4
   font-sans text-base font-bold
@@ -244,7 +240,11 @@
       <h2
         class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
       >
-        More top stories
+        {{ with .riverTitle }}
+          More {{ . }} Stories
+        {{ else }}
+          More top stories
+        {{ end }}
       </h2>
 
       <div

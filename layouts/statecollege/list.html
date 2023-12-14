@@ -46,7 +46,7 @@
   {{ end }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
-  {{ $calloutTitle :=  index .Page.Params "callout-title" }}
+  {{ $calloutTitle :=  index .Page.Params "link-title" }}
 
 
   <section
@@ -76,6 +76,7 @@
       "newsletter" $newsletter
       "newsletterHed" "Latest Talk of the Town"
       "river" $river
+      "riverTitle" $calloutTitle
       "marginClass" $marginClass
       "title" .Title
       "blurb" .Content
