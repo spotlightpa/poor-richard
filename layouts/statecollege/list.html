@@ -46,7 +46,7 @@
   {{ end }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
-  {{ $linktitle :=  index .Page.Params "callout-title" }}
+  {{ $calloutTitle :=  index .Page.Params "callout-title" }}
 
 
   <section
@@ -60,7 +60,7 @@
       <h2
         class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide "
       >
-        {{ with $linktitle }}
+        {{ with $calloutTitle }}
           {{ . }}
         {{ else }}
           {{ .Title }}

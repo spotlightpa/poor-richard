@@ -4,7 +4,7 @@
 
 {{ define "main" }}
   {{ $title := .Title }}
-  {{ $linktitle :=  index .Page.Params "callout-title" }}
+  {{ $calloutTitle :=  index .Page.Params "callout-title" }}
   {{ $blurb := .Page.Params.description }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
@@ -24,7 +24,7 @@
       <h2
         class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
       >
-        {{ with $linktitle }}
+        {{ with $calloutTitle }}
           {{ . }}
         {{ else }}
           {{ $title }}
