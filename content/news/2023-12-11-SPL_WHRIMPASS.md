@@ -36,7 +36,7 @@ Last year, state lawmakers agreed to use $125 million in federal pandemic aid to
 
 As counties have begun taking applications, overwhelming demand has left hundreds of people unable to get help, interviews with more than a dozen program administrators show. Another $50 million for the program was included in the state budget approved in August, but the money <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">remains in limbo</a> until state lawmakers can agree on additional legislation.
 
-<em>Update: The additional $50 million for the Whole-Home Repairs program was not included in the budget-enabling code bills passed and signed on Dec. 13.</em>
+<em>Update: The additional $50 million for the Whole-Home Repairs program was not included in the budget-enabling code bills passed on Dec. 13.</em>
 
 The program offers income-eligible homeowners grants to address problems like leaking roofs, unsafe electrical wiring, and broken furnaces. The funding can also be used to make properties more energy-efficient, or accessible for people with disabilities, as well as for construction-related workforce training.
 
