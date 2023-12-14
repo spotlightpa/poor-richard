@@ -286,7 +286,7 @@
                 {{ if eq $.rubricLink "rubric" }}
                   {{ $rubricLink = $params.rubric.RelPermalink }}
                 {{ end }}
-                {{ partial "tw/thumb-hv-item.html" (dict
+                {{ partial "tw/thumb-item.html" (dict
                   "wrapperClass" "flex flex-wrap gap-x-4"
                   "thumbClass" "w-2/5 sm:w-full md:w-2/5"
                   "imgOpts" $imgOpts

@@ -54,7 +54,7 @@
         {{ if eq $.rubricLink "rubric" }}
           {{ $rubricLink = $params.rubric.RelPermalink }}
         {{ end }}
-        {{ partial "tw/thumb-hv-item.html" (dict
+        {{ partial "tw/thumb-item.html" (dict
           "wrapperClass" "flex flex-wrap gap-x-9"
           "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
           "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
@@ -108,7 +108,7 @@
         {{ if eq $.rubricLink "rubric" }}
           {{ $rubricLink = $params.rubric.RelPermalink }}
         {{ end }}
-        {{ partial "tw/thumb-hv-item.html" (dict
+        {{ partial "tw/thumb-item.html" (dict
           "wrapperClass" "flex flex-wrap gap-x-4"
           "thumbClass" "w-2/5 md:w-full"
           "imgOpts" $imgOpts
