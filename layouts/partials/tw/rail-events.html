@@ -1,7 +1,7 @@
 {{ $events := site.GetPage "content/topics/events/_index.md" }}
 {{ $pages := $events.RegularPages }}
 {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
-{{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}
+{{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "asc" }}
 
 {{ if $upcomingEvents }}
   <div
