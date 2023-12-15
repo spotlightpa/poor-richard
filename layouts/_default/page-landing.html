@@ -2,7 +2,7 @@
   text-[16px] bg-beige font-sans leading-normal text-g-9
 {{ end }}
 {{ define "html-class" -}}
-  scroll-smooth scroll-pt-20
+  scroll-smooth
 {{- end }}
 
 {{ define "main" }}
@@ -71,14 +71,11 @@
         }}
       </div>
     {{ end }}
-    <div class="py-9">
-      {{ .Page.RenderString (.Param "supporters") }}
-    </div>
-    <div class="px-4">
-      {{ with .Page.RenderString (.Param "form") }}
+    {{ with .Page.RenderString (.Param "supporters") }}
+      <div class="py-9">
         {{ . }}
-      {{ end }}
-    </div>
+      </div>
+    {{ end }}
   </section>
 {{ end }}
 

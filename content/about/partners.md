@@ -1,6 +1,6 @@
 +++
 published = 2020-07-17T14:28:05.611Z
-title = "Unprecedented collaboration"
+title = "Unprecedented Collaboration"
 description = "Spotlight PA combines the strength of Philadelphia Inquirer, PennLive, and many more partners."
 linktitle = "Partners"
 layout = "page-landing"
@@ -19,4 +19,4 @@ layout = "partners-page"
 dataSrc = "partners"
 
 +++
-We provide our content free of charge to more than 100 newsrooms across the state to help bolster local media and better inform the public. Distribution partners allow us to share resources and maximize audience and reporting power.
+We provide Spotlight PA's content free of charge to more than 100 newsrooms across the state to help bolster local media and better inform the public. Distribution partners allow us to share resources and maximize audience and reporting power.
