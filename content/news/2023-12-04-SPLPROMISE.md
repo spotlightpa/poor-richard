@@ -13,7 +13,7 @@ published = 2023-12-04T05:00:00-05:00
 series = ["Shapiro's Promises"]
 slug = "governor-josh-shapiro-promises-tracker-legislature-environment-economy"
 suppress-date = false
-title = "We tracked Josh Shapiro’s 11 biggest campaign promises through his first year. See how he did."
+title = "We tracked Josh Shapiro’s 13 biggest campaign promises through his first year. See how he did."
 title-tag = "Is PA Governor Josh Shapiro keeping campaign promises?"
 topics = ["Josh Shapiro", "The Capitol"]
 +++
@@ -200,7 +200,7 @@ He agreed to sign off on <a href="https://www.spotlightpa.org/news/2023/06/pa-se
 
 <br/>“I think this is unfinished business. Along with minimum wage, along with statute of limitations reform,” Shapiro said <a href="https://www.wgal.com/article/pennsylvania-gov-josh-shapiro-says-he-remains-supportive-of-private-school-vouchers/44778463">during an interview last August</a> after he signed the budget into law. “What we need to do is reconcile those differences, pull people together and get it done. I&#39;m confident we&#39;ll be able to do that.&#34;
 
-<em>Note: This story has been updated with details about Shapiro’s education-related promises.</em>
+<em>Note: This story has been updated with details about Shapiro’s education-related promises, which brings the total number of promises tracked to 13.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
