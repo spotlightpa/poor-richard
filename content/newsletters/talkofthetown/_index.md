@@ -3,7 +3,7 @@ image = "2022/06/01hb-4958-4rxz-4t0q.png"
 image-size = "inline"
 title = "Sign up for Talk of the Town"
 description = "Top news and notes every Thursday for North-Central PA."
-blurb = "Every Thursday, you’ll get top news and notes for North-Central PA by Spotlight PA’s State College regional bureau."
+blurb = "Top news and notes for North-Central PA from our State College regional bureau."
 linktitle = "Talk of the Town"
 modal-exclude = true
 layout = "news"
@@ -13,6 +13,7 @@ list-title = "Latest From Our Weekly State College Newsletter"
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
+image-gravity = "ce"
 nav = "statecollege"
 +++
 Sign up for **Talk of the Town**, a free weekly newsletter every Thursday with top news and notes for North-Central PA by Spotlight PA’s State College regional bureau.

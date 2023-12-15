@@ -1,12 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2023-12-08-SPLMIL.md"
+    "content/statecollege/2023-12-15-SPLPILOT.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-12-14-SPLBUD23DONE.md"
+  ],
   "topSlots": [
-    "content/statecollege/2023-12-06-SPLPSUSUN.md",
-    "content/statecollege/2023-11-27-SPLPUBLICLANDS.md",
-    "content/statecollege/2023-11-23-SPL5DUB.md"
+    "content/statecollege/2023-12-14-SPLPSUINSIGHT.md",
+    "content/statecollege/2023-12-13-SPLCHRONICWASTING.md",
+    "content/statecollege/2023-12-08-SPLMIL.md"
   ],
   "topper": []
 }
