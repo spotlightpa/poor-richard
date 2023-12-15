@@ -24,6 +24,11 @@ to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
 [[redirects]]
+from = "/bizmember"
+to = "https://spotlightpa.fundjournalism.org/business-membership/?campaign=701Ub0000020CsuIAE"
+code = 302
+
+[[redirects]]
 from = "/almanack/"
 to = "https://almanack.data.spotlightpa.org"
 code = 302
