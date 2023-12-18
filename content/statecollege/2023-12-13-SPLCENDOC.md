@@ -1,4 +1,5 @@
 +++
+draft = true
 authors = ["Maggie Messitt", "Sarah Rafacz"]
 blurb = "The program, Centre Documents, trains and pays local residents and students to attend and document government meetings in six townships across Centre County."
 byline = "Maggie Messitt of News Lab at Penn State and Sarah Rafacz of Spotlight PA State College"
