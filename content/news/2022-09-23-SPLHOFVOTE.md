@@ -53,7 +53,7 @@ Husband and wife Shirley Bentzel, 84, and Glenn Bentzel, 86, of Gettysburg, were
 
 <div class="flourish-embed flourish-map" data-src="visualisation/11227511"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-Most of the Hall of Famers who spoke with PA Local said they didn’t apply for the recognition themselves (<a href="https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31">but you can</a>). Instead, they were nominated by state representatives, fellow election workers, or fellow members of a local political party committee. 
+Most of the Hall of Famers who spoke with PA Local said they didn’t apply for the recognition themselves (<a href="https://web.archive.org/20220926115945/https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31">but you can</a>). Instead, they were nominated by state representatives, fellow election workers, or fellow members of a local political party committee. 
 
 (The first members of the Voter Hall of Fame were inducted in 1982.) 
 
