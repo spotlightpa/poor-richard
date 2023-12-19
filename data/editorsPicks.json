@@ -1,12 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2023-12-15-SPLVBSURE.md"
+    "content/news/2023-12-19-SPLLEGYIR23.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
+  "subfeatures": [
+    "content/news/2023-12-14-SPLBUD23DONE.md",
     "content/news/2023-12-15-SPLJUSTICE.md",
-    "content/statecollege/2023-12-15-SPLPILOT.md",
-    "content/news/2023-12-11-SPL_WHRIMPASS.md"
+    "content/news/2023-12-13-SPLSHAYR1.md"
+  ],
+  "topSlots": [
+    "content/news/2023-12-15-SPLVBSURE.md",
+    "content/news/2023-12-15-SPLJUSTICE.md",
+    "content/statecollege/2023-12-15-SPLPILOT.md"
   ],
   "topper": []
 }
