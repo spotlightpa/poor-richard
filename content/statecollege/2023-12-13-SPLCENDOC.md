@@ -1,5 +1,4 @@
 +++
-draft = true
 authors = ["Maggie Messitt", "Sarah Rafacz"]
 blurb = "The program, Centre Documents, trains and pays local residents and students to attend and document government meetings in six townships across Centre County."
 byline = "Maggie Messitt of News Lab at Penn State and Sarah Rafacz of Spotlight PA State College"
@@ -28,7 +27,9 @@ And that means that sometimes our local elected officials conduct meetings when 
 
 So the News Lab at Penn State and Spotlight PA have partnered to launch Centre Documenters.
 
-Unlike journalists, documenters aren’t writing news stories or prioritizing what information they share. They simply take notes on what is discussed and decided at a meeting, and they make those notes available to anyone who wants them — via a newsletter, texting service, and the program’s website.
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?url=https%3A%2F%2Fwww.spotlightpa.org%2Fcentredocumenters&eyebrow=free%20newsletter&cta=sign%20up&body=Sign%20up%20for%20the%20Centre%20Documenters%20newsletter%2C%20which%20is%20free%20and%20delivered%20straight%20to%20your%20inbox%20twice%20a%20%20month."></div>
+
+Unlike journalists, documenters aren’t writing news stories or prioritizing what information they share. They simply take notes on what is discussed and decided at a meeting, and they make those notes available to anyone who wants them — via a newsletter, texting service, and the <a href="https://centredocumenters.org/">program’s website</a>.
 
 Our documenters attend and document meetings in six under-covered townships across rural Centre County — Benner, College, Gregg, Halfmoon, Snow Shoe, and Spring.
 
@@ -38,9 +39,11 @@ While the network has focused on cities, we saw Documenters as an important tool
 
 Like all documenters in the network, Centre Documenters are paid to participate in trainings and to attend and take notes at public meetings. Initial funding comes from the News Lab at Penn State, specifically the Arthur P. Miller Newsroom Fund and the Norman Eberly Faculty Endowment Fund in Journalism.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
 Since September, the News Lab has recruited and trained 20 student documenters and three student editors. They’ve worked to navigate the challenges residents face when attending public meetings: cancellations, transportation, locating agendas, understanding the topics being discussed, and sometimes being the only people in attendance. As part of their training, documenters have attended and taken notes at 25 meetings.
 
-Today, Centre Documenters published <a href="https://www.spotlightpa.org/centredocumenters/">its first newsletter</a>, just one way to stay informed about meetings and the program’s work. In 2024, Centre Documenters will cover 30 meetings and publish two newsletters each month.
+Today, Centre Documenters published <a href="https://mailchi.mp/spotlightpa/how-centre-documenters-makes-info-accessible">its first newsletter</a>, just one way to stay informed about meetings and the program’s work. In 2024, Centre Documenters will cover 30 meetings and publish two newsletters each month.
 
 Centre Documenters is also launching a <a href="https://joinsubtext.com/documenters">texting service,</a> allowing you to receive key takeaways and a link to meeting notes for a particular municipality or type of meeting. If you’re invested in water and sewer meetings across the county, you can receive texts after each. If you’re a resident of Benner Township and you’d like to stay on top of the decisions being made that affect you most, you can sign up to receive that information as a text message.
 
