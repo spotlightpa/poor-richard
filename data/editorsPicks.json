@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-12-19-SPLLEGYIR23.md"
+    "content/news/2023-12-20-spl_marijuana_data.md"
   ],
   "subfeatures": [
-    "content/news/2023-12-14-SPLBUD23DONE.md",
-    "content/news/2023-12-15-SPLJUSTICE.md",
-    "content/news/2023-12-13-SPLSHAYR1.md"
+    "content/news/2023-11-22-SPL_DOC_DATA.md",
+    "content/news/2023-02-16-SPL_SUIT0215.md"
   ],
   "topSlots": [
     "content/news/2023-12-19-SPLEX23ERR.md",
-    "content/news/2023-12-15-SPLVBSURE.md",
+    "content/news/2023-12-19-SPLLEGYIR23.md",
     "content/news/2023-12-15-SPLJUSTICE.md"
   ],
   "topper": []
