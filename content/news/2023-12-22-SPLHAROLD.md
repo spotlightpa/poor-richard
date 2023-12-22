@@ -33,7 +33,7 @@ Perhaps to Harold’s chagrin, the bar that bears his name has a history of prog
 
 When Howard’s closed, Flint feared the neighborhood would lose a lifeline. “I was worried that some corporate moneybags was going to come in … then we wouldn’t have one of the very few queer safe spaces in Millvale bars,” she said. “It really felt like there was so much forward momentum happening, and I didn&#39;t want to see it backslide.”
 
-{{<picture src="2023/12/01jr-8vcr-58ns-bgsp.jpeg" description="A plaque inside Harold’s Haunt is pictured." caption="A plaque inside Millvale "they bar" Harold's Haunt profiles the businesses' owners and namesake, a neighborhood ghost." credit="Sara Stewart / For Spotlight PA">}}
+{{<picture src="2023/12/01jr-8vcr-58ns-bgsp.jpeg" description="A plaque inside Harold’s Haunt is pictured." caption="A plaque inside Millvale “they bar” Harold's Haunt profiles the businesses' owners and namesake, a neighborhood ghost." credit="Sara Stewart / For Spotlight PA">}}
 
 <br/>They soon learned that the former Howard’s is also haunted, apparently by spirits less curmudgeonly than Harold. Flint’s friend Ringa Sunn, who’s been decorating the interior bathroom walls with pages of old books, has had the most brushes there with the supernatural, usually while working after hours. “The first time, they heard a voice and felt someone standing behind them, and assumed it was the contractors coming in to do work — and then turned around and no one was there,” Flint said.
 
