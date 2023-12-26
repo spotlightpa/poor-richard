@@ -36,7 +36,10 @@
         "sizeHint" "(min-width: 850px) 328px, 90vw"
         "gravity" (.Param "image-gravity")
       }}
-      <div data-ga-category="story-{{ add 1 $i }}">
+      <div
+        data-ga-category="story-{{ add 1 $i }}"
+        class="flex-auto sm:w-1/3 xl:w-full"
+      >
         {{ $eyebrow := $params.published }}
         {{ $rubricLink := $params.link }}
         {{ $thumbClass := $params.thumbClass }}
