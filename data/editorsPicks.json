@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2023-12-25-SPLANCDIS.md"
+    "content/statecollege/2023-12-26-SPLKANE.md"
   ],
   "subfeatures": [
-    "content/news/2023-12-21-SPLNEWSQUIZDEC18.md"
+    "content/statecollege/2023-12-15-SPLPILOT.md",
+    "content/statecollege/2023-12-13-SPLCHRONICWASTING.md"
   ],
   "topSlots": [
+    "content/news/2023-12-25-SPLANCDIS.md",
     "content/news/2023-12-22-SPLSHAPTRAN.md",
-    "content/statecollege/2023-12-21-SPLVACANCIES.md",
-    "content/news/2023-12-20-spl_marijuana_data.md"
+    "content/statecollege/2023-12-21-SPLVACANCIES.md"
   ],
   "topper": []
 }
