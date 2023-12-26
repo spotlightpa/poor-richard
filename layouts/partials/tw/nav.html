@@ -3,59 +3,159 @@
 </a>
 
 <div
-  class="mx-auto flex max-w-screen-xl flex-wrap items-end justify-between bg-beige px-3 pt-2 font-sans"
+  class="top-0 mx-auto gap-x-2 flex max-w-screen-xl flex-wrap items-center justify-between sm:gap-x-6 bg-beige px-3 py-2 font-sans sm:pb-0"
   data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-labelledby="top"
 >
   <div
-    class="max-sm:w-44 sm:flex sm:flex-auto sm:items-stretch sm:justify-center"
+    class="max-sm:flex-auto sm:order-0 sm:flex-grow-0 sm:flex sm:w-56 md:w-72 sm:flex-auto sm:items-stretch sm:justify-center"
   >
     <a
       id="top"
-      class="h-max flex-1 sm:mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md"
+      class="h-max flex-1 sm:mx-auto"
       href="/"
       data-ga-category="logo"
     >
-      <svg class="block h-8 w-full sm:h-14 md:h-16 lg:h-20">
+      <svg class="block w-40 h-10 sm:block sm:w-full sm:h-12 md:h-14">
         <title>Spotlight PA Home</title>
         {{ partial "helper/svg.html" "banner" }}
       </svg>
     </a>
   </div>
-  <a
-    data-sf-campaign="701Dn000000YgosIAC"
-    data-ga-category="donate"
-    class="group relative inline-flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:w-32 sm:justify-center lg:w-52 lg:px-7 lg:py-4"
-    href="/donate"
+
+<div class="sm:-order-1 sm:flex-1">
+  <button
+    id="hamburger-button"
+    class="no-js:hidden  sm-w-1/2
+       group z-40 mx-0 flex flex-row items-center gap-1 self-stretch"
+    :class="isOpen ? '-translate-x-3' : ''"
+    type="button"
+    @click="isOpen = ! isOpen"
+    aria-controls="hamburger-menu"
+    aria-haspopup="true"
+    data-ga-category="burger"
+    x-report-click
   >
-    <span
-      class="clip-triangle absolute inset-0 z-0 bg-red group-hover:bg-blue"
-    ></span>
-    <span
-      class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white lg:text-lg lg:leading-none"
-    >
-      <svg
-        class="mr-1 inline-block h-4 w-4 fill-current lg:h-5 lg:w-5"
-        aria-hidden="true"
+    {{ block "nav-hamburger-button" . }}
+      <span
+        class="hidden hover:underline hover:underline-offset-2 font-bold uppercase leading-none tracking-wide text-black text-sm md:leading-none sm:inline-block"
+        >Menu</span
       >
-        {{ partial "helper/svg.html" "heart" }}
+      <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
+        <span class="block space-y-1">
+          <span
+            class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
+          ></span>
+          <span
+            class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
+          ></span>
+          <span
+            class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
+            :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+          ></span>
+        </span>
+      </span>
+    {{ end }}
+  </button>
+</div>
+  <nav class="order-1 flex gap-5 justify-end items-center sm:flex-1 sm-w-1/2">
+    <a href="/newsletters" class="hidden font-bold uppercase leading-none tracking-wide text-black text-sm md:leading-none md:flex">Newsletters </a>
+    <a
+      data-sf-campaign="701Dn000000YgosIAC"
+      data-ga-category="donate"
+      class="
+          flex group items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
+          sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2
+          "
+      href="/donate"
+    >
+      <span
+        class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-sm md:leading-none"
+      >
+        <svg
+          class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+          aria-hidden="true"
+        >
+          {{ partial "helper/svg.html" "heart" }}
+        </svg>
+        Donate
+      </span>
+    </a>
+    <a
+      href="/search/"
+      class="z-40 hidden flex-row-reverse items-center justify-between lg:flex"
+      data-ga-category="search"
+      :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
+      x-data
+      @click.prevent="$dispatch('modal:search:open')"
+    >
+      <svg class="h-[14px] w-[14px]" aria-label="Search">
+        {{ partial "helper/svg.html" "search" }}
       </svg>
-      Support<span class="hidden sm:inline">&nbsp;Spotlight PA</span>
-    </span>
-  </a>
+      <span class="hidden">Search</span>
+    </a>
+  </nav>
+
+  <ul
+    id="hamburger-menu"
+    x-cloak
+    class="
+        absolute -top-2 left-2 right-2 z-30 max-w-screen-md gap-y-2 rounded border border-g-5 bg-white px-4 pb-12
+        sm:-top-4 sm:left-auto sm:grid-cols-2 sm:gap-8 sm:px-8"
+    :class="{ 'hidden': !isOpen, 'grid': isOpen }"
+    x-trap="isOpen"
+    role="menu"
+    aria-labelledby="hamburger-button"
+    :aria-expanded="isOpen"
+  >
+    <ul class="mt-14 flex flex-wrap gap-2 sm:hidden">
+      {{ range site.Menus.main }}
+        <li class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none">
+          <a
+            class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2"
+            href="{{ .URL }}"
+            data-ga-category="item"
+          >
+            {{- .Name -}}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    {{ range site.Menus.main_about }}
+      <li
+        class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
+      >
+        {{ template "nav-menu-item" . }}
+      </li>
+    {{ end }}
+
+    {{ range site.Menus.main_support }}
+      <li
+        class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
+      >
+        {{ template "nav-menu-item" . }}
+      </li>
+    {{ end }}
+
+    {{ range site.Menus.main_more }}
+      <li
+        class="
+            row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
+            sm:col-start-1 sm:row-start-1"
+      >
+        {{ template "nav-menu-item" . }}
+      </li>
+    {{ end }}
+  </ul>
   <p
-    class="flex-0 w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide lg:text-sm xl:text-base"
+    class="order-1 flex-0 hidden w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:flex sm:justify-center md:text-base xl:text-base"
   >
     Journalism that Gets Results <span class="font-normal">&#8480;</span>
   </p>
-  <div
-    class="-order-1 hidden text-xs font-extrabold leading-tight tracking-wide sm:block sm:w-32 lg:w-52 lg:text-sm xl:text-base"
-  >
-    <p>Independent</p>
-    <p>Nonpartisan</p>
-    <p>Nonprofit</p>
-  </div>
 </div>
 
 <nav
@@ -69,20 +169,6 @@
     class="
       relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
   >
-    <a
-      href="/search/"
-      class="z-40 mr-auto flex flex-[0_1_70px] flex-row-reverse items-center justify-between gap-1 text-sm font-bold leading-none tracking-wide md:pr-16"
-      data-ga-category="search"
-      :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
-      x-data
-      @click.prevent="$dispatch('modal:search:open')"
-    >
-      <svg class="h-[14px] w-[14px]" aria-label="Search">
-        {{ partial "helper/svg.html" "search" }}
-      </svg>
-      Search
-    </a>
-
     <ul
       class="
         ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
@@ -103,109 +189,6 @@
       {{ end }}
     </ul>
 
-    <div class="ml-auto hidden self-center px-6 text-sm leading-none md:block">
-      <a
-        class="
-        block py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:capitalize"
-        href="/about/"
-        data-ga-category="item"
-      >
-        About
-      </a>
-    </div>
-
-    <ul
-      id="hamburger-menu"
-      x-cloak
-      class="
-        absolute -top-2 left-2 right-2 z-30 max-w-screen-md gap-y-2 rounded border border-g-5 bg-white px-4 pb-12
-        sm:-top-4 sm:left-auto sm:grid-cols-2 sm:gap-8 sm:px-8"
-      :class="{ 'hidden': !isOpen, 'grid': isOpen }"
-      x-trap="isOpen"
-      role="menu"
-      aria-labelledby="hamburger-button"
-      :aria-expanded="isOpen"
-    >
-      <ul class="mt-14 flex flex-wrap gap-2 sm:hidden">
-        {{ range site.Menus.main }}
-          <li
-            class="flex h-11 flex-[1_0_45%] items-center text-sm leading-none"
-          >
-            <a
-              class="flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2"
-              href="{{ .URL }}"
-              data-ga-category="item"
-            >
-              {{- .Name -}}
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-
-      {{ range site.Menus.main_about }}
-        <li
-          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-
-      {{ range site.Menus.main_support }}
-        <li
-          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-
-      {{ range site.Menus.main_more }}
-        <li
-          class="
-            row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
-            sm:col-start-1 sm:row-start-1"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-    </ul>
-
-    <button
-      id="hamburger-button"
-      class="
-        no-js:hidden group z-40 order-1 mx-0 flex flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
-      :class="isOpen ? '-translate-x-3' : ''"
-      type="button"
-      @click="isOpen = ! isOpen"
-      aria-controls="hamburger-menu"
-      aria-haspopup="true"
-      data-ga-category="burger"
-      x-report-click
-    >
-      {{ block "nav-hamburger-button" . }}
-        <span class="hover:underline hover:underline-offset-2 sm:hidden"
-          >Menu</span
-        >
-        <span class="hover:underline hover:underline-offset-2 max-sm:hidden"
-          >More</span
-        >
-        <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
-          <span class="block space-y-1">
-            <span
-              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
-            ></span>
-            <span
-              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
-            ></span>
-            <span
-              class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
-            ></span>
-          </span>
-        </span>
-      {{ end }}
-    </button>
     <!-- no JS fallback link to footer -->
     <a
       class="no-js:flex group z-40 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
