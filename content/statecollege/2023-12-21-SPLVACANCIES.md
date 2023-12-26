@@ -15,7 +15,7 @@ slug = "centre-county-pennsylvania-local-government-vacancies-voters-public-meet
 suppress-date = false
 title = "Pa. voters play little role in choosing who fills vacant municipal offices"
 title-tag = "How Pennsylvania municipalities fill vacancies"
-topics = ["Local Government"]
+topics = ["Local Government", "Corrections"]
 +++
 
 <em>This story was produced collaboratively by the </em><a href="https://www.centredaily.com/"><em>Centre Daily Times</em></a><em> and the </em><a href="https://www.spotlightpa.org/statecollege"><em>State College regional bureau of Spotlight PA</em></a><em>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>Sign up for the bureau’s regional newsletter, Talk of the Town.</em></a>
