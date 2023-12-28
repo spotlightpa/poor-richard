@@ -191,9 +191,14 @@ url = "/contact/"
 weight = 7
 
 [[about]]
+name = "Berks County"
+url = "/berks/"
+weight = 6
+
+[[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 8
+weight = 10
 
 [[news]]
 name = "Investigations"

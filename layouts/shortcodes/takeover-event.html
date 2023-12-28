@@ -1,0 +1,23 @@
+{{ $hed := .Get "hed" }}
+{{ $link := .Get "link" }}
+{{ $registration := .Get "registration" }}
+{{ $date := .Get "date" }}
+{{ $dateVerbose := .Get "dateVerbose" }}
+
+
+<div>
+  <p class="my-2 font-sans text-lg">
+    <time datetime="{{ $date }}">{{ $dateVerbose }}</time>
+    {{ $hed }}
+    {{ if $registration }}
+      <a
+        class="font-bold text-yellow underline underline-offset-2 hover:text-white"
+        href="{{ $registration }}"
+        >Register</a
+      >
+    {{ else if $link }}
+      <a class="btn-signup" href="{{ $link }}">Watch</a>
+    {{ end }}
+
+  </p>
+</div>
