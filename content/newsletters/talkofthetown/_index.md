@@ -9,6 +9,7 @@ modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "Every Thursday"
+list-title = "Latest From Our Weekly State College Newsletter"
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"

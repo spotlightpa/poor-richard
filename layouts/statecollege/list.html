@@ -32,9 +32,15 @@
 
   {{ $pinnedStories := partial "helper/get-sc-picks" "topSlots" }}
 
+  {{ $newsletter := site.GetPage "/newsletters/talkofthetown/_index.md" }}
+  {{ $edNewsletter := "tw/list-callout-newsletter-sc.html" }}
   {{ $paPost := site.GetPage "/newsletters/talkofthetown" }}
-  {{ $river := sort (union $paPost.RegularPages $sc.RegularPages) ".PublishDate" "desc" }}
+  {{ $river := sort $sc.RegularPages ".PublishDate" "desc" }}
+
   {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
+
+  {{ $edPicks := partial "helper/get-items" "sidebar" }}
+  {{ $riverTitle :=  index .Page.Params "link-title" }}
 
   {{ $hasPromo := .Param "promo-active" }}
   {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
@@ -42,31 +48,39 @@
     {{ $marginClass = "mt-4" }}
   {{ end }}
 
-  {{ $edPicks := partial "helper/get-items" "sidebar" }}
-
 
   <section
     data-sf-campaign="701Dn000000Ygq1IAC"
-    class="bg-white px-4 pb-2 pt-12 md:pb-6"
+    class="space-y-6 bg-white px-4 pb-2 pt-12 md:pb-6"
     data-sf-theme="statecollege"
   >
-    <h1 class="sr-only">{{ .Title }}</h1>
+    <header
+      class="mx-auto flex w-full max-w-screen-xl justify-between border-b border-black md:col-span-3"
+    >
+      <h2
+        class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide "
+      >
+        {{ with $riverTitle }}
+          {{ . }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h2>
+      {{ partial "tw/breadcrumbs.html" . }}
+
+    </header>
     {{ partial "tw/frontpage" (dict
       "featuredStories" $featuredStories
       "pinnedStories" $pinnedStories
+      "edNewsletter" $edNewsletter
+      "newsletter" $newsletter
+      "newsletterHed" "Latest Talk of the Town"
       "river" $river
+      "riverTitle" $riverTitle
       "marginClass" $marginClass
+      "title" .Title
+      "blurb" .Content
       )
     }}
   </section>
-{{ end }}
-{{ define "before-footer" }}
-  {{ partialCached "tw/donate-prefill-lg.html" (dict
-    "donateHed" "Support Spotlight PA in State College"
-    "donateCta" "Give Today"
-    "donateCampaign" "701Dn000000YgqCIAS"
-    "donateTheme" "statecollege"
-    "donateAmounts" "10,15,25"
-    )
-  }}
 {{ end }}

@@ -7,7 +7,10 @@
 {{ end }}
 
 {{ define "main" }}
-  <section class="bg-white px-4 pb-2 pt-12 md:pb-6" data-ga-category="homepage">
+  <section
+    class="bg-white px-4 pb-2 md:pb-6 lg:pt-12"
+    data-ga-category="homepage"
+  >
     {{ partial "tw/homepage.html" . }}
   </section>
 {{ end }}
