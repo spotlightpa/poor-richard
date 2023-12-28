@@ -58,7 +58,12 @@
       {{ end }}
     {{ end }}
     {{ block "header" . }}
-      <header data-ga-category="header">
+      <header
+        x-data="{ atTop: true }"
+        data-ga-category="header"
+        @scroll.window="atTop = window.pageYOffset>200?false:true"
+        :class="atTop ? 'relative' : 'sticky top-0 z-[1000]'"
+      >
         {{ block "banner" . }}
           {{ if .Param "banner-active" }}
             {{ partialCached "tw/banner.html" . }}
@@ -67,15 +72,17 @@
         {{ block "nav" . }}
           {{ partial "tw/nav.html" . }}
         {{ end }}
-        {{ block "topper" . }}
-          {{ if .Param "topper-active" }}
-            {{ partialCached "tw/promo-topper.html" . }}
-          {{ end }}
-        {{ end }}
-        {{ block "promo" . }}
-          {{ partialCached "tw/promo-header.html" $ }}
-        {{ end }}
       </header>
+
+      {{ block "topper" . }}
+        {{ if .Param "topper-active" }}
+          {{ partialCached "tw/promo-topper.html" . }}
+        {{ end }}
+      {{ end }}
+      {{ block "promo" . }}
+        {{ partialCached "tw/promo-header.html" $ }}
+      {{ end }}
+
     {{ end }}
     <main data-ga-category="main">
       {{ block "before-main" . }}{{ end }}

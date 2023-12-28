@@ -3,49 +3,222 @@
 </a>
 
 <div
-  class="relative top-0 z-[1000] mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 bg-beige px-3 py-2 font-sans sm:gap-x-6 sm:pb-0 lg:relative"
+  class="top-0 z-[1000] border-b border-black bg-beige font-sans shadow-lg"
   x-data="{ isOpen: false }"
-  :class="isOpen ? 'sm:translate-y-2' : ''"
   data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-labelledby="top"
 >
   <div
-    class="sm:order-0 z-40 max-sm:flex-auto sm:flex sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:w-72"
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-6 lg:relative"
   >
-    <a id="top" class="h-11 flex-1 sm:mx-auto" href="/" data-ga-category="logo">
-      <svg class="block h-10 w-40 sm:block sm:h-12 sm:w-full md:h-14">
-        <title>Spotlight PA Home</title>
-        {{ partial "helper/svg.html" "banner" }}
-      </svg>
-    </a>
+    <div
+      class="sm:order-0 z-40 max-sm:flex-auto sm:flex sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:w-72  h-10 w-40 sm:h-12 md:h-14"
+      :class="isOpen ? 'sm:translate-y-2 lg:translate-y-0' : ''"
+    >
+      <a
+        id="top"
+        class="h-10 sm:h-12 md:h-14"
+        href="/"
+        data-ga-category="logo"
+      >
+        <svg 
+          class="block h-10 w-40 sm:h-12 sm:w-full md:h-14"
+          :class="{ 'hidden': !atTop, 'block': atTop }"
+        >
+          <title>Spotlight PA Home</title>
+          {{ partial "helper/svg.html" "banner" }}
+        </svg>
+        <svg 
+          class="hidden h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14"
+          :class="{ 'hidden': atTop, 'sm:block': !atTop }"
+        >
+          <title>Spotlight PA Home</title>
+          {{ partial "helper/svg.html" "logo" }}
+        </svg>
+      </a>
+    </div>
+
+    <nav
+      @keydown.escape.prevent.stop="isOpen = false"
+      @click.outside="isOpen = false"
+      @focusin.outside="isOpen = false"
+      class="sm:-order-1 sm:flex-1"
+    >
+      <div
+        id="hamburger-menu"
+        x-cloak
+        class="
+        max-w-screen absolute left-2 right-2 top-0 z-30 max-h-screen overflow-x-hidden rounded border border-g-5 bg-white py-12 after:absolute after:left-0
+        after:right-0 after:top-0 after:z-30 after:h-20 after:bg-gradient-to-b
+        after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:left-2 lg:right-auto lg:w-[66%]
+        "
+        :class="{ 'hidden': !isOpen, '': isOpen }"
+        x-trap="isOpen"
+        role="menu"
+        aria-labelledby="hamburger-button"
+        :aria-expanded="isOpen"
+      >
+        <ul
+          class=" grid max-h-[calc(100vh-120px)] gap-y-2 overflow-y-scroll px-4 sm:grid-cols-2 sm:gap-8 sm:px-8"
+        >
+          <ul 
+            class="mt-14 flex flex-wrap items-baseline gap-2 sm:col-span-4 sm:row-start-1"
+            :class="{ 'sm:hidden': atTop, 'sm:flex': !atTop }"
+          >
+            {{ range site.Menus.main }}
+              <li
+                class="flex h-11 flex-[1_0_45%] items-baseline text-sm leading-none"
+              >
+                <a
+                  class="flex-[0_0_auto] py-1 font-bold uppercase hover:underline hover:underline-offset-2"
+                  href="{{ .URL }}"
+                  data-ga-category="item"
+                >
+                  {{- .Name -}}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+
+          {{ range site.Menus.main_about }}
+            <li
+              class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
+            >
+              {{ template "nav-menu-item" . }}
+            </li>
+          {{ end }}
+
+          {{ range site.Menus.main_support }}
+            <li
+              class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none sm:row-start-3"
+            >
+              {{ template "nav-menu-item" . }}
+            </li>
+          {{ end }}
+
+          {{ range site.Menus.main_more }}
+            <li
+              class="
+            row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
+            sm:col-start-1 sm:row-start-2"
+            >
+              {{ template "nav-menu-item" . }}
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <button
+        id="hamburger-button"
+        class="no-js:hidden sm-w-1/2 group
+       relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch"
+        :class="isOpen ? 'sm:translate-x-8' : ''"
+        type="button"
+        @click="isOpen = ! isOpen"
+        aria-controls="hamburger-menu"
+        aria-haspopup="true"
+        data-ga-category="burger"
+        x-report-click
+      >
+        {{ block "nav-hamburger-button" . }}
+          <span
+            class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black hover:underline hover:underline-offset-2 sm:inline-block md:leading-none"
+            >Menu</span
+          >
+          <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
+            <span class="block space-y-1">
+              <span
+                class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+                :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
+              ></span>
+              <span
+                class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
+                :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
+              ></span>
+              <span
+                class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
+                :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
+              ></span>
+            </span>
+          </span>
+        {{ end }}
+      </button>
+    </nav>
+    <nav
+      class="sm-w-1/2 relative z-40 order-1 flex items-center justify-end gap-5 sm:flex-1"
+      :class="isOpen ? 'sm:-translate-x-6 lg:translate-x-0' : ''"
+    >
+      <a
+        href="/newsletters"
+        class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black md:flex md:leading-none"
+        >Newsletters
+      </a>
+      <a
+        data-sf-campaign="701Dn000000YgosIAC"
+        data-ga-category="donate"
+        class="
+          group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
+          sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2
+          "
+        href="/donate"
+      >
+        <span
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-sm md:leading-none"
+        >
+          <svg
+            class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "heart" }}
+          </svg>
+          Donate
+        </span>
+      </a>
+      <a
+        href="/search/"
+        class="z-40 hidden flex-row-reverse items-center justify-between lg:flex"
+        data-ga-category="search"
+        :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
+        x-data
+        @click.prevent="$dispatch('modal:search:open')"
+      >
+        <svg class="h-[14px] w-[14px]" aria-label="Search">
+          {{ partial "helper/svg.html" "search" }}
+        </svg>
+        <span class="hidden">Search</span>
+      </a>
+    </nav>
+
+    <p
+      class="mt-2 -mx-3 -mb-3 bg-white border-t border-black sm:bg-transparent sm:border-t-0 sm:m-0
+      flex-0 order-1 hidden w-screen py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:flex sm:justify-center md:text-base xl:text-base"
+      :class="{ 'hidden': !atTop, 'sm:flex': atTop }"
+    >
+      Journalism that Gets Results <span class="font-normal">&#8480;</span>
+    </p>
   </div>
 
-  <nav
-    @keydown.escape.prevent.stop="isOpen = false"
-    @click.outside="isOpen = false"
-    @focusin.outside="isOpen = false"
-    class="sm:-order-1 sm:flex-1"
+  <nav 
+    class="hidden h-11 border-t bg-white font-sans sm:block"
+    :class="{ 'sm:hidden': !atTop, 'sm:block': atTop }"
+
   >
-    <ul
-      id="hamburger-menu"
-      x-cloak
+    <div
       class="
-        max-w-screen w- absolute left-2 right-2 top-0 z-30 gap-y-2 rounded border border-g-5 bg-white px-4 py-12 sm:left-auto sm:right-3
-        sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 sm:gap-8 sm:px-8 lg:left-2 lg:right-auto lg:w-[66%]"
-      :class="{ 'hidden': !isOpen, 'grid': isOpen }"
-      x-trap="isOpen"
-      role="menu"
-      aria-labelledby="hamburger-button"
-      :aria-expanded="isOpen"
+      relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
     >
-      <ul class="mt-14 flex flex-wrap items-baseline gap-2 sm:hidden">
+      <ul
+        class="
+        ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
+      >
         {{ range site.Menus.main }}
           <li
-            class="flex h-11 flex-[1_0_45%] items-baseline text-sm leading-none"
+            class="
+            flex h-max w-1/2 flex-1 items-center text-sm leading-none md:justify-center"
           >
             <a
-              class="flex-[0_0_auto] py-1 font-bold uppercase hover:underline hover:underline-offset-2"
+              class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
               href="{{ .URL }}"
               data-ga-category="item"
             >
@@ -55,159 +228,21 @@
         {{ end }}
       </ul>
 
-      {{ range site.Menus.main_about }}
-        <li
-          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-
-      {{ range site.Menus.main_support }}
-        <li
-          class="mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-
-      {{ range site.Menus.main_more }}
-        <li
-          class="
-            row-span-2 mt-4 box-content flex-[0_0_100%] flex-wrap items-center bg-white text-sm leading-none
-            sm:col-start-1 sm:row-start-1"
-        >
-          {{ template "nav-menu-item" . }}
-        </li>
-      {{ end }}
-    </ul>
-
-    <button
-      id="hamburger-button"
-      class="no-js:hidden sm-w-1/2 group
-       relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch"
-      :class="isOpen ? 'sm:translate-x-8' : ''"
-      type="button"
-      @click="isOpen = ! isOpen"
-      aria-controls="hamburger-menu"
-      aria-haspopup="true"
-      data-ga-category="burger"
-      x-report-click
-    >
-      {{ block "nav-hamburger-button" . }}
-        <span
-          class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black hover:underline hover:underline-offset-2 sm:inline-block md:leading-none"
-          >Menu</span
-        >
-        <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
-          <span class="block space-y-1">
-            <span
-              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'translate-y-1.5 rotate-45' : ''"
-            ></span>
-            <span
-              class="block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
-            ></span>
-            <span
-              class="block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
-              :class="isOpen ? 'w-5 -translate-y-1.5 -rotate-45' : ''"
-            ></span>
-          </span>
-        </span>
-      {{ end }}
-    </button>
-  </nav>
-  <nav
-    class="sm-w-1/2 relative z-40 order-1 flex items-center justify-end gap-5 sm:flex-1"
-    :class="isOpen ? 'sm:-translate-x-6 lg:translate-x-0' : ''"
-  >
-    <a
-      href="/newsletters"
-      class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black md:flex md:leading-none"
-      >Newsletters
-    </a>
-    <a
-      data-sf-campaign="701Dn000000YgosIAC"
-      data-ga-category="donate"
-      class="
-          group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
-          sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2
-          "
-      href="/donate"
-    >
-      <span
-        class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-sm md:leading-none"
+      <!-- no JS fallback link to footer -->
+      <a
+        class="no-js:flex group z-40 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
+        href="#footer"
       >
-        <svg
-          class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
-          aria-hidden="true"
-        >
-          {{ partial "helper/svg.html" "heart" }}
-        </svg>
-        Donate
-      </span>
-    </a>
-    <a
-      href="/search/"
-      class="z-40 hidden flex-row-reverse items-center justify-between lg:flex"
-      data-ga-category="search"
-      :class="isOpen ? 'translate-x-3 sm:translate-x-0' : ''"
-      x-data
-      @click.prevent="$dispatch('modal:search:open')"
-    >
-      <svg class="h-[14px] w-[14px]" aria-label="Search">
-        {{ partial "helper/svg.html" "search" }}
-      </svg>
-      <span class="hidden">Search</span>
-    </a>
+        {{ template "nav-hamburger-button" . }}
+      </a>
+    </div>
   </nav>
-
-  <p
-    class="flex-0 order-1 hidden w-full py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:flex sm:justify-center md:text-base xl:text-base"
-  >
-    Journalism that Gets Results <span class="font-normal">&#8480;</span>
-  </p>
 </div>
 
-<nav class="h-11 border-b border-t bg-white font-sans">
-  <div
-    class="
-      relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
-  >
-    <ul
-      class="
-        ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
-    >
-      {{ range site.Menus.main }}
-        <li
-          class="
-            flex h-max w-1/2 flex-1 items-center text-sm leading-none md:justify-center"
-        >
-          <a
-            class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
-            href="{{ .URL }}"
-            data-ga-category="item"
-          >
-            {{- .Name -}}
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-
-    <!-- no JS fallback link to footer -->
-    <a
-      class="no-js:flex group z-40 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
-      href="#footer"
-    >
-      {{ template "nav-hamburger-button" . }}
-    </a>
-  </div>
-</nav>
 <!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
 <div hidden>
   <span
-    class="opacity-1 w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 sm:-translate-x-6 sm:translate-x-0 sm:translate-x-8"
+    class="opacity-1 w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 sm:-translate-x-6 sm:translate-x-0 sm:translate-x-8 sm:translate-y-2 lg:translate-y-0"
     hidden
   ></span>
 </div>
