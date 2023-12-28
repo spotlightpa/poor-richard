@@ -12,15 +12,36 @@ signupDek = "Sign up to receive a weekly review of articles from Spotlight PA an
 bg-img = true
 takeover = """
 {{<featured/main-takeover
-  title = "Help us write the future of journalism in Berks County."
-  dek = "Join our historic effort to invigorate local news."
-  image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
-  signupHed = "Join our mailing list "
-  signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
-  gaCategory = "newsletters:palocal"
-  gaForm = "newsletters:palocal-full"
-  hiddenField = "newsletter/berks-county-hidden.html"
+  title="Help us write the future of journalism in Berks County."
+  dek="Join our historic effort to invigorate local news."
+  image="2023/09/01jf-h6pe-1sks-18dz.jpeg"
+  signupHed="Join our mailing list "
+  signupDek="Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
+  gaCategory="newsletters:palocal"
+  gaForm="newsletters:palocal-full"
 >}}
+<h3>Seeking community input! Please join us to participate in a Spotlight PA Berks Project Listening Session.</h3>
+
+<p>A listening session is an informal, small-group discussion in which we are seeking your thoughts, opinions, and concerns on local news coverage, information access, community information needs, and news consumption habits. Sessions last no longer than 2 hours and are a maximum of 15 people, registration required.</p>
+{{<takeover-hed title="Please register for your preferred date and time:">}}
+
+{{<takeover-event
+hed="At Exeter Public Library"
+date="2024-01-13"
+dateVerbose="Saturday, January 13 – 10am-Noon"
+registration="https://spotlight-pa-berks.ticketleap.com/listening-session-exeter-library/"
+>}}
+{{<takeover-event
+hed="at Fleetwood Public Library"
+dateVerbose="Tuesday, January 23 – 5:30-7:30pm"
+registration="https://spotlight-pa-berks.ticketleap.com/listening-session-fleetwood-library/"
+>}}
+{{<takeover-event
+hed="at LGBT Center of Greater Reading"
+dateVerbose="Thursday, January 26 – 6:00-8:00pm"
+registration="https://spotlight-pa-berks.ticketleap.com/listening-session-lgbt-center/"
+>}}
+{{</featured/main-takeover>}}
 """
 supplemental = """
 {{<supplemental
@@ -41,10 +62,15 @@ credit = """
 shortcode="{{<supplemental>}}"
 >}}"""
 
+newsletter = """
+{{<newsletter/berks-full-form>}}
+"""
+
 [[blocks]]
 layout = "text-3"
 title = "About Spotlight PA"
 copy = """Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues. Spotlight PA was founded to address a crisis in journalism in Pennsylvania: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting across the state. With support from foundations, individuals, and more, Spotlight PA is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. Since its inception in 2019, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Its work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond."""
+
 +++
 
 
