@@ -6,158 +6,17 @@ weight = 1
 [[main]]
 name = "Events"
 url = "/topics/events/"
-weight = 4
+weight = 3
 
 [[main]]
-name = "Newsletters"
-url = "/newsletters/"
-weight = 3
+name = "About"
+url = "/about/"
+weight = 4
 
 [[main]]
 name = "State College"
 url = "/statecollege/"
 weight = 2
-
-[[main_about]]
-name = "About"
-url = "/about/"
-weight = 1
-
-[[main_about]]
-name = "Mission"
-parent = "About"
-url = "/about/mission/"
-weight = 1
-
-[[main_about]]
-name = "Meet the Team"
-parent = "About"
-url = "/about/staff/"
-weight = 1
-
-[[main_about]]
-name = "Our Partners"
-parent = "About"
-url = "/about/partners"
-weight = 1
-
-[[main_about]]
-name = "Careers"
-parent = "About"
-url = "/about/jobs/"
-weight = 1
-
-[[main_about]]
-name = "Contact"
-parent = "About"
-url = "/contact/"
-weight = 1
-
-[[main_about]]
-name = "Send a Tip"
-parent = "About"
-url = "/tips/"
-
-[[main_support]]
-name = "Support Spotlight PA"
-url = "/support/"
-weight = 2
-
-[[main_support]]
-name = "Ways to give"
-parent = "Support Spotlight PA"
-url = "/support/"
-weight = 1
-
-[[main_support]]
-name = "How we're funded"
-parent = "Support Spotlight PA"
-url = "/support/funders-and-members"
-weight = 2
-
-[[main_support]]
-name = "Spotlight PA Store"
-parent = "Support Spotlight PA"
-url = "https://shop.spotlightpa.org"
-weight = 3
-
-[[main_more]]
-name = "News"
-url = "/news/"
-weight = 3
-
-[[main_more]]
-parent = "News"
-name = "Criminal Justice"
-url = "/topics/criminal-justice/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Economy"
-url = "/topics/economy/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Elections"
-url = "/elections/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Environment"
-url = "/topics/environment/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "State Capitol"
-url = "/topics/the-capitol/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Health"
-url = "/topics/health/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "How Harrisburg Works"
-url = "/topics/how-harrisburg-works/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Local Government"
-url = "/topics/local-government/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Penn State"
-url = "/topics/penn-state/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "Rural Issues"
-url = "/topics/rural-issues/"
-weight = 1
-
-[[main_more]]
-parent = "News"
-name = "More Topics"
-url = "/topics/"
-weight = 10
-
-
-[[main_more]]
-parent = "News"
-name = "Archives"
-url = "/news/"
-weight = 1
 
 [[about]]
 name = "Our Mission"
@@ -193,37 +52,68 @@ weight = 7
 [[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 8
+weight = 10
 
 [[news]]
-name = "Investigations"
-url = "/investigations/"
-weight = 7
+name = "Criminal Justice"
+url = "/topics/criminal-justice/"
+weight = 1
 
 [[news]]
-name = "The Capitol"
+name = "Economy"
+url = "/topics/economy/"
+weight = 1
+
+[[news]]
+name = "Elections"
+url = "/elections/"
+weight = 1
+
+[[news]]
+name = "Environment"
+url = "/topics/environment/"
+weight = 1
+
+[[news]]
+name = "State Capitol"
 url = "/topics/the-capitol/"
-weight = 9
+weight = 1
+
+[[about]]
+name = "Berks County"
+url = "/berks/"
+weight = 10
+
+[[news]]
+name = "Health"
+url = "/topics/health/"
+weight = 1
+
+[[news]]
+name = "How Harrisburg Works"
+url = "/topics/how-harrisburg-works/"
+weight = 1
+
+[[news]]
+name = "Local Government"
+url = "/topics/local-government/"
+weight = 1
+
+[[news]]
+name = "Penn State"
+url = "/topics/penn-state/"
+weight = 1
+
+[[news]]
+name = "Rural Issues"
+url = "/topics/rural-issues/"
+weight = 1
 
 [[news]]
 name = "More Topics"
 url = "/topics/"
-weight = 11
-
-[[news]]
-name = "State College Region"
-url = "/statecollege/"
 weight = 10
 
-[[news]]
-name = "Events"
-url = "/events/"
-weight = 12
-
-[[news]]
-name = "Elections"
-url = "/election/"
-weight = 8
 
 [[news]]
 name = "Archives"
