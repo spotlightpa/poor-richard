@@ -35,7 +35,7 @@ twitter-title = "Discover how PA judges shape abortion, education, and more with
   image-focus="top 50% left 40%"
   image-gravity="ce"
   image-description="Gavel with election topics in the background"
->}}
+>}}{{</featured/main-takeover>}}
 
 
 {{<featured/social-buttons>}}
