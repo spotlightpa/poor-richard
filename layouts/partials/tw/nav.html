@@ -3,8 +3,9 @@
 </a>
 
 <div
-  class="top-0 z-[1000] border-b border-black bg-beige font-sans shadow-lg"
+  class="top-0 z-[1000] border-b border-black bg-beige font-sans"
   x-data="{ isOpen: false }"
+  :class="{ 'shadow-lg': !atTop, '': atTop }"
   data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-labelledby="top"
@@ -214,13 +215,12 @@
       relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
     >
       <ul
-        class="
-        ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
+        class="ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
       >
         {{ range site.Menus.main }}
           <li
             class="
-            flex h-max w-1/2 flex-1 items-center text-sm leading-none md:justify-center"
+            flex h-max w-1/2 items-center text-sm leading-none md:justify-center md:w-auto"
           >
             <a
               class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2 sm:font-normal"
