@@ -84,9 +84,10 @@
       </form>
     </div>
     {{ $name := .image }}
+    {{ $credit := .Page.Param "image-credit" }}
     {{ $imgOpts := dict
       "filename" $name
-      "credit" "Georgianna Sutherland / For Spotlight PA"
+      "credit" $credit
       "widthRatio" 4
       "heightRatio" 3
       "widths" (slice 128 256 384 512 1280)

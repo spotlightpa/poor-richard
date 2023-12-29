@@ -67,9 +67,12 @@
   {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"
-      class="mt-8 text-right text-lg font-semibold uppercase text-navy underline decoration-4 underline-offset-4 duration-500 hover:text-yellow"
+      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
     >
-      <a href="{{ .readMoreLink }}">
+      <a
+        href="{{ .readMoreLink }}"
+        class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
+      >
         {{- .readMore | default "Read More" -}}
       </a>
     </div>
