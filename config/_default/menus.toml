@@ -75,6 +75,11 @@ url = "/topics/environment/"
 weight = 1
 
 [[news]]
+name = "Events"
+url = "/events/"
+weight = 1
+
+[[news]]
 name = "State Capitol"
 url = "/topics/the-capitol/"
 weight = 1
