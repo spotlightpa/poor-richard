@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2023-12-29-SPLBESTOF23.md"
+    "content/news/2024-01-01-SPLHOUSE24BEG.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/news/2023-08-01-SPL_PHFA_TRANSITION.md",
-    "content/news/2023-03-09-SPLCOMPETENCY.md"
+    "content/news/2023-12-20-SPLPAYBUMP101.md"
   ],
   "topSlots": [
-    "content/news/2023-12-28-SPLNEWSQUIZDEC25.md",
+    "content/news/2023-12-29-SPLBESTOF23.md",
     "content/news/2023-12-28-SPL_HALL_ANN.md",
-    "content/news/2023-12-20-SPLPAYBUMP101.md"
+    "content/statecollege/2023-12-26-SPLKANE.md"
   ],
   "topper": []
 }
