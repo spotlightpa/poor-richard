@@ -53,7 +53,7 @@ Then, McClinton’s spring session calendar said that she planned to convene the
 
 In an email, Shapiro spokesperson Manuel Bonder didn’t comment on the location, noting only that the governor looks forward to addressing the legislature to outline his priorities “and rally leaders in both parties around the responsibility to get things done for all Pennsylvanians.”
 
-As of Dec. 21, the lower chamber had scheduled 34 session days between Jan. 1 and the June 30 budget deadline; this total does not include the budget address or nonvoting days when leadership handles procedural matters. The state Senate had scheduled 31, including six before the state House’s planned return.
+As of Jan. 1, the lower chamber had scheduled 34 session days between Jan. 1 and the June 30 budget deadline; this total does not include the budget address or nonvoting days when leadership handles procedural matters. The state Senate had scheduled 29, including four before the state House’s planned return.
 
 By mid-March, the state House is expected to again be at its full 203-member complement — likely led by a Democratic majority.
 
