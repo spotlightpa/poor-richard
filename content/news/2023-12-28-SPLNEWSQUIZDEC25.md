@@ -19,7 +19,7 @@ topics = ["News Quiz"]
 
 In this week’s quiz: A genealogist clashes with Ancestry.com, Shapiro sporting tickets draw criticism, and Pennsylvanians crown their fave Christmas movie.
 
-<div data-tf-live="01HJ405V0749T4GZ81A4RM1T2V"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<div data-tf-live="01HJKWAY3Z82MN1331N4NFZDNK"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (cdeppen@spotlightpa.org) with a heads up. And good luck!
 
