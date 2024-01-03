@@ -1,15 +1,14 @@
 {
   "featuredStories": [
-    "content/news/2024-01-02-SPLEXWISH24.md"
+    "content/statecollege/2024-01-03-SPLAPPINFLATION.md"
   ],
   "subfeatures": [
-    "content/news/2023-12-19-SPLEX23ERR.md",
-    "content/news/2023-10-26-SPLCODEREV.md"
+    "content/statecollege/2023-06-29-SPLSTATEAPP.md"
   ],
   "topSlots": [
+    "content/news/2024-01-02-SPLEXWISH24.md",
     "content/news/2024-01-01-SPLHOUSE24BEG.md",
-    "content/news/2023-12-29-SPLBESTOF23.md",
-    "content/news/2023-12-28-SPL_HALL_ANN.md"
+    "content/news/2023-12-29-SPLBESTOF23.md"
   ],
   "topper": []
 }
