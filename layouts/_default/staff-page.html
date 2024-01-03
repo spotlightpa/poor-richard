@@ -40,8 +40,9 @@
 
 {{ define "extra-main" }}
   {{ $reporters := slice }}
+  {{ $editorial := slice }}
   {{ $admin := slice }}
-  {{ $board := slice }}
+  {{ $special := slice }}
 
   {{ range sort .Site.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
@@ -49,8 +50,14 @@
       {{ if eq $author.role "reporter" }}
         {{ $reporters = $reporters | append $author }}
       {{ end }}
+      {{ if eq $author.role "editorial" }}
+        {{ $editorial = $editorial | append $author }}
+      {{ end }}
       {{ if eq $author.role "admin" }}
         {{ $admin = $admin | append $author }}
+      {{ end }}
+      {{ if eq $author.role "specialprojects" }}
+        {{ $special = $special | append $author }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -59,7 +66,7 @@
       <h2
         class="text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
       >
-        Reporters
+        Newsroom
       </h2>
       <ul
         class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
@@ -73,7 +80,22 @@
       <h2
         class="mt-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
       >
-        Leadership
+        Editorial &amp; Production
+      </h2>
+
+      <ul
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $editorial }}
+          {{ template "staff-page-card" . }}
+        {{ end }}
+      </ul>
+
+      <h2
+        class="mt-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+      >
+        Business &amp; Operations
       </h2>
 
       <ul
@@ -81,6 +103,21 @@
         data-ga-category="inline-footer:author"
       >
         {{ range $admin }}
+          {{ template "staff-page-card" . }}
+        {{ end }}
+      </ul>
+
+      <h2
+        class="mt-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+      >
+        Special Projects
+      </h2>
+
+      <ul
+        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $special }}
           {{ template "staff-page-card" . }}
         {{ end }}
       </ul>
