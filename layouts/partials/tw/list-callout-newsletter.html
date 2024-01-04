@@ -43,7 +43,7 @@
         "sizeHint" "(min-width: 850px) 328px, 90vw"
         "gravity" (.Param "image-gravity")
       }}
-      <div class="max-w-full" data-ga-category="story-1">
+      <div class="max-w-full" data-ga-category="newsletter-story-1">
         {{ $eyebrow := $params.published }}
         {{ $rubricLink := $params.link }}
         {{ $thumbClass := $params.thumbClass }}
@@ -74,7 +74,8 @@
       </div>
     {{ end }}
 
-    {{ range after 1 $page }}
+    {{ $page := $page | after 1 }}
+    {{ range $i, $page := $page }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
       {{ $imgOpts := dict
         "filename" (.Param "image")
@@ -90,7 +91,7 @@
       }}
       <div
         class="w-5/12 flex-auto md:w-2/12 md:flex-auto lg:w-2/12 xl:w-72"
-        data-ga-category="story-2"
+        data-ga-category="newsletter-story-{{ add 2 $i }}"
       >
         {{ $eyebrow := $params.published }}
         {{ $rubricLink := $params.link }}
