@@ -15,14 +15,14 @@ slug = "centre-county-pennsylvania-local-government-vacancies-voters-public-meet
 suppress-date = false
 title = "Pa. voters play little role in choosing who fills vacant municipal offices"
 title-tag = "How Pennsylvania municipalities fill vacancies"
-topics = ["Local Government"]
+topics = ["Local Government", "Corrections"]
 +++
 
 <em>This story was produced collaboratively by the </em><a href="https://www.centredaily.com/"><em>Centre Daily Times</em></a><em> and the </em><a href="https://www.spotlightpa.org/statecollege"><em>State College regional bureau of Spotlight PA</em></a><em>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>Sign up for the bureau’s regional newsletter, Talk of the Town.</em></a>
 
 STATE COLLEGE — Voters participate in local elections to pick who they want to represent them in government, but when a seat on a municipal governing board is vacant in Pennsylvania, the public has little to no say in who fills it — a situation that’s played out at least 28 times from 2020 to 2022 in Centre County.
 
-When an elected municipal official leaves office before their term is up, their remaining colleagues can appoint a new member for the rest of the term, according to Pennsylvania law. But unlike special elections that deal with vacancies in the state legislature, state law provides little guidance on what the process should look like, and public input is not required.
+When an elected municipal official leaves office before their term is up, their remaining colleagues can appoint a new member to serve until the next municipal election, according to Pennsylvania law. But unlike special elections that deal with vacancies in the state legislature, state law provides little guidance on what the process should look like, and public input is not required.
 
 In one Centre County municipality, a majority of a board of supervisors is now appointed, rather than elected. Three of the five Ferguson Township supervisors were chosen by fellow board members due to elected officials resigning. Those appointed officials have made decisions about budgets, projects, and other uses of taxpayer dollars.
 
@@ -116,6 +116,8 @@ Vacancies in local government are not uncommon, he said, and some smaller munici
 The larger issue, Brenner said, is that people aren’t as civically engaged with local government as they are at the state or federal level, even though the local level has more impact on their daily lives. Township supervisors and borough councils make decisions about streets, lights, public safety, parks, planning and zoning, and more.
 
 “Those have more of a direct impact on the day-to-day lives of the residents than the presidential election or the United States Senate election. Or, oftentimes, the governor or state legislator. These are local decisions made by local people that have a huge impact on your quality of life,” he said.
+
+<em>Correction: This story has been updated to clarify that a person appointed to fill a local government vacancy serves in that position until the next municipal election.</em>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results. Support the Centre Daily Times at </em><a href="https://www.centredaily.com/"><em>centredaily.com</em></a><em>.</em>
 

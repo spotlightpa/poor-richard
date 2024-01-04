@@ -1,6 +1,6 @@
 name = "George Fernandez"
 lastName = "Fernandez"
-board = "board"
+board = true
 active = true
 headshot = "2023/08/01je-9vks-2zg7-qaty.jpeg"
 
