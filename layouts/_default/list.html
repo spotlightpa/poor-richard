@@ -38,22 +38,18 @@
         {{ partial "tw/breadcrumbs.html" . }}
       </header>
 
-      {{ with $blurb }}
-        <div
-          class="mt-7 flex flex-auto self-stretch sm:max-w-[300px] md:space-y-12"
-        >
-          <div
-            class="article-content rounded bg-black p-6 font-sans text-white"
-          >
-            <h2 class="text-2xl font-extrabold">
-              About our {{ $title }} coverage
-            </h2>
-            <div class=" text-xl leading-relaxed">
-              {{ . }}
-            </div>
+      <div
+        class="mt-7 flex flex-auto self-stretch sm:max-w-[300px] md:space-y-12"
+      >
+        <div class="article-content rounded bg-black p-6 font-sans text-white">
+          <h2 class="text-2xl font-extrabold">
+            About our {{ $title }} coverage
+          </h2>
+          <div class=" text-xl leading-relaxed">
+            {{ $blurb }}
           </div>
         </div>
-      {{ end }}
+      </div>
 
       {{ range $page.ByParam "pinned" | first 1 }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
