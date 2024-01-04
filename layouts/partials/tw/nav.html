@@ -198,8 +198,8 @@
     </nav>
 
     <p
-      class="flex-0 order-1 -mx-3 -mb-3 mt-2 hidden w-screen border-t border-black
-      bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-t-0 sm:bg-transparent md:text-base xl:text-base"
+      class="flex-0 order-1 -mx-3 -mb-3 mt-2 hidden w-screen border-b border-t border-black
+      bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base"
       :class="{ 'hidden': !atTop, 'sm:flex': atTop }"
     >
       Journalism that Gets Results <span class="font-normal">&#8480;</span>
@@ -220,7 +220,7 @@
         {{ range site.Menus.main }}
           <li
             class="
-            flex h-max w-1/2 items-center text-sm leading-none md:w-auto md:justify-center"
+            flex h-max w-1/2 items-center text-sm leading-none sm:w-auto sm:justify-center"
           >
             <a
               class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2"
