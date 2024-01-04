@@ -11,46 +11,48 @@
   {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
   {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}
 
+  {{ if $upcomingEvents }}
 
-  <section
-    class=" mx-4
-    mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 bg-white sm:gap-x-10 
-    md:items-start md:justify-between lg:flex-row lg:gap-x-16 xl:mx-auto 
+    <section
+      class="
+        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 bg-white sm:gap-x-10 
+        md:items-start md:justify-between lg:flex-row lg:gap-x-16 xl:mx-auto 
       "
-  >
-    <header
-      class="flex w-full items-baseline justify-between border-b border-black"
     >
-      <h2
-        class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+      <header
+        class="flex w-full items-baseline justify-between border-b border-black"
       >
-        {{ with $calloutTitle }}
-          {{ . }}
-        {{ else }}
-          {{ $title }}
-        {{ end }}
-      </h2>
-      {{ partial "tw/breadcrumbs.html" . }}
-
-    </header>
-
-    {{ with $blurb }}
-      <div
-        class="mt-7 flex flex-auto self-stretch sm:max-w-[300px] md:space-y-12"
-      >
-        <div class="article-content rounded bg-black p-6 font-sans text-white">
-          <h2 class="text-2xl font-extrabold">
-            About our {{ $title }} coverage
-          </h2>
-          <div class=" text-xl leading-relaxed">
+        <h2
+          class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        >
+          {{ with $calloutTitle }}
             {{ . }}
+          {{ else }}
+            {{ $title }}
+          {{ end }}
+        </h2>
+        {{ partial "tw/breadcrumbs.html" . }}
+
+      </header>
+
+      {{ with $blurb }}
+        <div
+          class="mt-7 flex flex-auto self-stretch sm:max-w-[300px] md:space-y-12"
+        >
+          <div
+            class="article-content rounded bg-black p-6 font-sans text-white"
+          >
+            <h2 class="text-2xl font-extrabold">
+              About our {{ $title }} coverage
+            </h2>
+            <div class=" text-xl leading-relaxed">
+              {{ . }}
+            </div>
           </div>
         </div>
-      </div>
-    {{ end }}
-    {{ partial "tw/content-well.html" . }}
+      {{ end }}
+      {{ partial "tw/content-well.html" . }}
 
-    {{ if $upcomingEvents }}
       {{ $event := index (last 1  $upcomingEvents) 0 }}
       {{ $date := $event.Param "event-date" }}
       {{ $items := where $upcomingEvents `Params.event-date` "eq" $date }}
@@ -58,78 +60,221 @@
         class="max-w-full sm:flex-1 md:w-7/12 md:flex-auto lg:w-7/12 xl:w-8/12"
         data-ga-category="story-1"
       >
-        {{ template "upcoming-event" $items }}
+        {{ template "upcoming-event-lg" $items }}
       </div>
-    {{ end }}
-  </section>
+      {{ template "upcoming-event-reg" $items }}
+
+    </section>
+  {{ end }}
 {{ end }}
 
-{{ define "upcoming-event" }}
-  <section class="px-6 py-8" id="upcoming" data-ga-category="upcoming">
-    <div class="mx-auto max-w-screen-lg">
-      {{ $feat := index . 0 }}
-      {{ $params := partialCached "helper/page-params" $feat $feat.RelPermalink }}
-      {{ $subitems := slice }}
-      {{ range after 1 . }}
-        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-        {{ $subitems = $subitems | append (dict
-          "link" $params.link
-          "title" .Title
-          )
-        }}
-      {{ end }}
-      {{ $imgOpts := dict
-        "filename" $params.image
-        "credit" (index $params "image-credit")
-        "description" (index $params "image-description")
+{{ define "upcoming-event-lg" }}
+  <div class="mx-auto max-w-screen-lg">
+    {{ $feat := index . 0 }}
+    {{ $params := partialCached "helper/page-params" $feat $feat.RelPermalink }}
+    {{ $subitems := slice }}
+    {{ range after 1 . }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $subitems = $subitems | append (dict
         "link" $params.link
-        "widthRatio" 5
-        "heightRatio" 3
-        "widths" (slice 128 256 384 512 1280)
-        "figClass" "mt-1"
-        "sizeHint" "(min-width: 850px) 328px, 90vw"
-        "gravity" (index $params "image-gravity")
-      }}
-      {{ $eyebrow := $params.published }}
-      {{ $rubricLink := $params.link }}
-      {{ $thumbClass := $params.thumbClass }}
-      {{ partial "tw/thumb-item.html" (dict
-        "wrapperClass" "flex flex-wrap gap-x-9"
-        "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
-        "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
-        "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
-        "imgOpts" $imgOpts
-        "rubricLink" $rubricLink
-        "eyebrow" $eyebrow
-        "link" $params.link
-        "hed" $feat.LinkTitle
-        "byline" $params.byline
-        "showDate" false
-        "showByline" $params.showByline
-        "dek" $params.blurb
+        "title" .Title
         )
       }}
-    </div>
-  </section>
+    {{ end }}
+    {{ $imgOpts := dict
+      "filename" $params.image
+      "credit" (index $params "image-credit")
+      "description" (index $params "image-description")
+      "link" $params.link
+      "widthRatio" 5
+      "heightRatio" 3
+      "widths" (slice 128 256 384 512 1280)
+      "figClass" "mt-1"
+      "sizeHint" "(min-width: 850px) 328px, 90vw"
+      "gravity" (index $params "image-gravity")
+    }}
+    {{ $eyebrow := $params.published }}
+    {{ $rubricLink := $params.link }}
+    {{ $thumbClass := $params.thumbClass }}
+    {{ partial "tw/thumb-item.html" (dict
+      "wrapperClass" "flex flex-wrap gap-x-9"
+      "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+      "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+      "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+      "imgOpts" $imgOpts
+      "rubricLink" $rubricLink
+      "eyebrow" $eyebrow
+      "link" $params.link
+      "hed" $feat.LinkTitle
+      "byline" $params.byline
+      "showDate" false
+      "showByline" $params.showByline
+      "dek" $params.blurb
+      )
+    }}
+  </div>
+{{ end }}
+
+{{ define "upcoming-event-reg" }}
+  {{ $feat := index . 0 }}
+  {{ $params := partialCached "helper/page-params" $feat $feat.RelPermalink }}
+  {{ $subitems := slice }}
+  {{ range after 1 . }}
+    {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+    {{ $subitems = $subitems | append (dict
+      "link" $params.link
+      "title" .Title
+      )
+    }}
+  {{ end }}
+  {{ $imgOpts := dict
+    "filename" $params.image
+    "credit" (index $params "image-credit")
+    "description" (index $params "image-description")
+    "link" $params.link
+    "widthRatio" 5
+    "heightRatio" 3
+    "widths" (slice 128 256 384 512 1280)
+    "figClass" "mt-1"
+    "sizeHint" "(min-width: 850px) 328px, 90vw"
+    "gravity" (index $params "image-gravity")
+  }}
+  {{ $eyebrow := $params.published }}
+  {{ $rubricLink := $params.link }}
+  {{ $thumbClass := $params.thumbClass }}
+  <div
+    class="flex max-w-full md:w-2/12 md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
+    data-ga-category="story-2"
+  >
+    {{ partial "tw/thumb-item.html" (dict
+      "wrapperClass" "flex flex-wrap gap-x-4"
+      "thumbClass" "w-2/5 md:w-full"
+      "imgOpts" $imgOpts
+      "rubricLink" $rubricLink
+      "eyebrow" $eyebrow
+      "link" $params.link
+      "hed" $feat.LinkTitle
+      "byline" $params.byline
+      "showDate" false
+      "showByline" $params.showByline
+      "dek" $params.blurb
+      )
+    }}
+  </div>
 {{ end }}
 
 {{ define "extra-main" }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
+  {{ $title := .Title }}
 
 
-  <section class="bg-white px-4 pb-12 pt-6 font-serif">
-    <div class="mx-auto mb-8 mt-4 w-full max-w-screen-lg">
-      {{ partial "tw/social-buttons.html" . }}
+  <div
+    class="mx-4 mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:mx-auto lg:gap-x-8 lg:px-20"
+    @mouseover.passive.once="load()"
+    @touchstart.passive.once="load()"
+  >
+    <h2
+      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+    >
+      Past
+      {{ $title }}
+    </h2>
+
+    <div
+      class="flex-1 justify-between py-6 sm:w-2/3"
+      x-ref="archives"
+      data-ga-category="river"
+      data-sf-campaign="701Dn000000YgodIAC"
+    >
+      <nav
+        x-data="readmore(true)"
+        x-ref="root"
+        @mouseover.once="load()"
+        @touchstart.passive.once="load()"
+      >
+        <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+          {{ range $i, $page := $pages | after 5 }}
+            {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+            {{ $imgOpts := dict
+              "filename" (.Param "image")
+              "credit" (.Param "image-credit")
+              "description" (.Param "image-description")
+              "link" $params.link
+              "widthRatio" 5
+              "heightRatio" 3
+              "widths" (slice 128 256 384 512 1280)
+              "figClass" "mt-1"
+              "sizeHint" "(min-width: 850px) 328px, 90vw"
+              "gravity" (.Param "image-gravity")
+            }}
+            <div data-ga-category="story-{{ add 1 $i }}">
+              {{ $eyebrow := $params.published }}
+              {{ $rubricLink := $params.link }}
+              {{ $thumbClass := $params.thumbClass }}
+              {{ partial "tw/thumb-item.html" (dict
+                "wrapperClass" "flex flex-wrap gap-x-4"
+                "thumbClass" "w-2/5 sm:w-full md:w-2/5"
+                "imgOpts" $imgOpts
+                "rubricLink" $rubricLink
+                "eyebrow" $eyebrow
+                "link" $params.link
+                "hed" .LinkTitle
+                "byline" $params.byline
+                "showDate" false
+                "showByline" $params.showByline
+                "dek" $params.blurb
+                )
+              }}
+            </div>
+          {{ end }}
+        </div>
+
+        <div class="flex py-8">
+          <div class="mx-auto w-full max-w-screen-lg">
+            {{ partial "tw/paginator-level.html" .Paginator }}
+          </div>
+        </div>
+      </nav>
     </div>
-    {{ partial "tw/list-3-col-story.html" (dict
-      "pages" $pages
-      "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
-      "eyebrow" "eventDate"
-      )
-    }}
-    <div class="mx-auto max-w-screen-lg">
-      {{ partial "tw/paginator-level.html" .Paginator }}
+    <div
+      id="frontpage-sidebar"
+      x-data="funnelStatus"
+      class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
+    >
+      <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
+        <div
+          class="mx-auto flex h-[600px] w-[300px] items-center justify-center bg-g-4"
+        >
+          Rail Ad
+        </div>
+      </div>
+
+      <div class="w-full sm:max-w-xs">
+        {{ partial "tw/rail-events.html" (dict
+          "label" "Upcoming Events"
+          )
+        }}
+      </div>
+
+      {{ if page.Param "sidebar-sticky-images" }}
+        <div
+          class="sticky top-14 mx-auto self-start md:top-16"
+          data-ga-category="sticky"
+          data-sf-campaign="701Dn000000YgofIAC"
+          x-intersect="$dispatch('close-sticky')"
+        >
+          {{ partial "tw/promo-single.html" (dict
+            "class" "pt-5 min-w-full no-js:hidden"
+            "images" (page.Param "sidebar-sticky-images")
+            "width" (page.Param "sidebar-sticky-width")
+            "height" (page.Param "sidebar-sticky-height")
+            "link" (page.Param "sidebar-sticky-link")
+            "description" (page.Param "sidebar-sticky-description")
+            )
+          }}
+        </div>
+      {{ end }}
     </div>
-  </section>
+  </div>
 {{ end }}
