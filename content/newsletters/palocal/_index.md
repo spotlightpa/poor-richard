@@ -8,7 +8,7 @@ modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "Every Friday"
-
+weight = 3
 [cascade]
 image = "2022/02/01gz-k3bg-4tet-0as8.png"
 +++

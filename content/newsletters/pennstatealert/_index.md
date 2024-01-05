@@ -11,7 +11,7 @@ modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "When news breaks"
-
+weight = 6
 [cascade]
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
 nav = "statecollege"
