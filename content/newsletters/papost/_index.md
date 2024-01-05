@@ -10,7 +10,7 @@ modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "Each weekday"
-
+weight = 1
 [cascade]
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
 image-gravity = "ea"

@@ -11,7 +11,7 @@ layout = "news"
 sort-by = "month"
 occurence = "Every Thursday"
 image-gravity = "ce"
-
+weight = 2
 [cascade]
 image = "2021/06/01gc-4k5c-twja-965v.jpeg"
 +++

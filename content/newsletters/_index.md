@@ -11,6 +11,6 @@ aliases = ["/newsletters/covid/","/newsletters/covid-alerts-manage/"]
 paginate = 60
 +++
 
-### Get the best news from across PA straight to your inbox
+## Get the best news from across PA straight to your inbox
 
 Select any of the free newsletters below and enter your information to stay informed on the most important issues in our state.
