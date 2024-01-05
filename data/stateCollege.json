@@ -1,14 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-01-03-SPLAPPINFLATION.md"
+    "content/statecollege/2024-01-05-SPLSUPBILLS.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-06-29-SPLSTATEAPP.md"
+    "content/statecollege/2023-11-16-SPLSUPFED.md",
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
+    "content/statecollege/2023-05-30-SPLDUBCASH.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-01-03-SPLAPPINFLATION.md",
     "content/statecollege/2023-12-26-SPLKANE.md",
-    "content/statecollege/2023-12-21-SPLVACANCIES.md",
-    "content/statecollege/2023-12-13-SPLCENDOC.md"
+    "content/statecollege/2023-12-21-SPLVACANCIES.md"
   ],
   "topper": []
 }
