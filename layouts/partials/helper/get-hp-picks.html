@@ -1,0 +1,6 @@
+{{ $stories := partial "helper/get-stories" (dict
+  "src" "homepagePicks"
+  "name" .
+  )
+}}
+{{ return $stories }}

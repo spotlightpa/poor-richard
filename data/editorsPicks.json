@@ -12,24 +12,5 @@
     "content/news/2024-01-03-SPLHESS.md",
     "content/news/2024-01-02-SPLEXWISH24.md"
   ],
-  "edCallout": [
-    "content/news/2023-11-15-SPL23CFFINAL.md",
-    "content/news/2023-11-13-SPLBUDTHAW.md"
-  ],
-  "edInvestigations": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
-  ],
-  "edImpact": [
-    "content/news/2023-03-09-SPLCOMPETENCY.md",
-    "content/news/2023-01-23-SPLMORTGAGE.md"
-  ],
-  "featuredTopics": [
-    "content/topics/the-capitol/_index.md",
-    "content/topics/rural-issues/_index.md"
-  ],
-  "featuredNewsletter": [
-    "content/newsletters/papost/_index.md"
-  ],
   "topper": []
 }
