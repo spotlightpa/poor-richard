@@ -61,7 +61,7 @@
       <header
         x-data="{ atTop: true }"
         data-ga-category="header"
-        @scroll.window="atTop = window.pageYOffset>640?false:true"
+        @scroll.window.debounce="atTop = window.pageYOffset>640?false:true"
         :class="atTop ? 'relative' : 'sticky top-0 z-[1000]'"
       >
         {{ block "banner" . }}
