@@ -1,16 +1,14 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-01-05-SPLSUPBILLS.md"
+    "content/news/2024-01-08-SPL24PLANS.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/statecollege/2023-05-30-SPLDUBCASH.md"
+    "content/news/2024-01-02-SPLEXWISH24.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-01-05-SPLSUPBILLS.md",
     "content/news/2024-01-04-SPLANXRES.md",
-    "content/statecollege/2024-01-03-SPLAPPINFLATION.md",
-    "content/news/2024-01-03-SPLHESS.md"
+    "content/statecollege/2024-01-03-SPLAPPINFLATION.md"
   ],
   "topper": []
 }
