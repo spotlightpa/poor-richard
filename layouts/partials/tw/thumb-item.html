@@ -43,11 +43,11 @@
     {{ end }}
   </div>
   {{ if $showThumb }}
-    <div class="{{ $thumbClass }} mb-1">
+    <div class="{{ $thumbClass }}">
       {{ partial "tw/image-block.html" .imgOpts }}
     </div>
   {{ end }}
-  <div class="group mt-3 flex-1 md:mb-5 md:mt-0 md:self-end">
+  <div class="group mt-3 flex-1 md:mb-4 md:mt-0 md:self-end">
     <h3 class="{{ $hedSize }} {{ $hedColor }} leading-tight tracking-tight">
       <a
         class="group-hover:underline"
