@@ -64,7 +64,7 @@
           class="absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-r from-white to-transparent text-6xl"
           :aria-disabled="atBeginning"
           :tabindex="atBeginning ? -1 : 0"
-          :class="{ 'opacity-25 cursor-not-allowed': atBeginning }"
+          :class="{ 'opacity-1': atEnd, 'opacity-0': !atEnd }"
         >
           <span aria-hidden="true">
             <svg
@@ -112,8 +112,7 @@
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"
                 role="option"
-                class="mr-6 h-28 w-5/6 max-w-md snap-center border-b py-4 font-bold [&:nth-child(4n)]:border-transparent"
-                style="scroll-snap-align: start;"
+                class="mr-6 h-28 w-5/6 max-w-md snap-center border-b py-4 font-bold [&:nth-child(-n+4)]:snap-start [&:nth-last-child(-n+4)]:snap-end [&:nth-of-type(4n)]:border-b-transparent"
               >
                 {{ $params := partialCached "helper/page-params" . .RelPermalink }}
                 {{ $imgOpts := dict
@@ -154,10 +153,10 @@
         </div>
         <button
           @click="next()"
-          class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-white via-white to-transparent text-6xl"
+          class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-white to-transparent text-6xl"
           :aria-disabled="atEnd"
           :tabindex="atEnd ? -1 : 0"
-          :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
+          :class="{ 'opacity-1' : atBeginning, 'opacity-0': !atBeginning }"
         >
           <span aria-hidden="true">
             <svg
@@ -179,19 +178,19 @@
         </button>
       </div>
       <hr hidden />
-      <div
-        class="flex w-full items-center justify-center bg-black p-5 text-white"
-      >
-        {{ with $link }}
-          <a
-            href="{{ $link }}"
-            class="inline-flex min-w-[145px] items-center justify-center rounded bg-blue px-5 py-3 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-blue-7 focus:ring-blue-7 active:ring-blue-9 md:min-w-[218px] md:py-5"
-          >
-            {{ $cta }}</a
-          >
-        {{ end }}
-      </div>
     </nav>
+    <div
+      class="flex w-full items-center justify-center bg-black p-5 text-white"
+    >
+      {{ with $link }}
+        <a
+          href="{{ $link }}"
+          class="inline-flex min-w-[145px] items-center justify-center rounded bg-blue px-5 py-3 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-blue-7 focus:ring-blue-7 active:ring-blue-9 md:min-w-[218px] md:py-5"
+        >
+          {{ $cta }}</a
+        >
+      {{ end }}
+    </div>
   </div>
 {{ else }}
   {{ if site.IsServer }}
