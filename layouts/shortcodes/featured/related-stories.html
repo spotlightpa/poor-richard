@@ -1,0 +1,201 @@
+{{ $side := .Get "side" | default "left" }}
+{{ $limit := .Get "limit" | default 4 | int }}
+{{ $sideClass :=
+  cond (eq $side "right")
+  "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
+  "float-left sm:px-6 lg:-ml-24"
+}}
+{{ $self := .Page.RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page $self }}
+{{ $topic := $params.topic }}
+
+{{ $link := .Get "link" }}
+{{ $cta := .Get "cta" }}
+{{ $name := .Get "title" }}
+
+{{ with .Get "topic" }}
+  {{ $topic = (site.Taxonomies.topic.Get (urlize . )).Page }}
+  {{ $name = "Spotlight PA" }}
+{{ end }}
+{{ with .Get "title" }}
+  {{ $name = . }}
+{{ end }}
+{{ $pages := $topic.Pages.ByPublishDate }}
+{{ if gt $pages.Len 1 }}
+  {{ $jsOpts := dict
+    "minify" true
+  }}
+  {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
+<script type="module">
+  {{ $js.Content | safeJS }}
+</script>
+  <div x-data="carousel" class=" mx-auto w-full overflow-clip rounded shadow">
+    <nav class=" p-4 font-sans md:p-5">
+      <h2
+        class=" z-30 w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide text-black md:text-3xl"
+      >
+        <a
+          class="tracking-wide text-black no-underline hover:text-blue-9"
+          {{ with $link }}
+            href="{{ $link }}"
+          {{ else }}
+            href="{{ $topic.RelPermalink }}"
+          {{ end }}
+        >
+          {{ with $name }}
+            {{ . }}
+          {{ else }}
+            More Stories from
+            {{ $topic.Title }}
+          {{ end }}
+        </a>
+      </h2>
+      <div
+        x-on:keydown.right="next"
+        x-on:keydown.left="prev"
+        tabindex="0"
+        role="region"
+        aria-labelledby="carousel-label"
+        class="md:grid-cols-14 relative grid w-full grid-rows-1 gap-2 md:grid md:gap-5"
+      >
+        <!-- Prev Button -->
+        <button
+          x-on:click="prev"
+          class="absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-r from-white to-transparent text-6xl"
+          :aria-disabled="atBeginning"
+          :tabindex="atBeginning ? -1 : 0"
+          :class="{ 'opacity-25 cursor-not-allowed': atBeginning }"
+        >
+          <span aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-gray-600 -ml-4 h-16 w-16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </span>
+          <span class="sr-only">Skip to previous slide page</span>
+        </button>
+        <div
+          x-ref="slider"
+          tabindex="0"
+          role="listbox"
+          style="scroll-snap-type: x mandatory"
+          class="flex items-start justify-start overflow-y-hidden overflow-x-scroll"
+        >
+          <ul
+            @keydown.right.prevent.stop="$focus.wrap().next()"
+            @keydown.home.prevent.stop="$focus.first()"
+            @keydown.page-up.prevent.stop="$focus.first()"
+            @keydown.left.prevent.stop="$focus.wrap().prev()"
+            @keydown.end.prevent.stop="$focus.last()"
+            @keydown.page-down.prevent.stop="$focus.last()"
+            x-ref="slider"
+            tabindex="0"
+            role="region"
+            aria-labelledby="carousel-label"
+            class="
+              mt-4 flex h-[28rem] w-full snap-x
+              snap-mandatory flex-col flex-wrap overflow-x-scroll
+            "
+          >
+            {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | last $limit }}
+              <li
+                data-pos="{{ $i }}"
+                x-bind="disableNextAndPreviousButtons"
+                role="option"
+                class="mr-6 h-28 w-5/6 max-w-md snap-center border-b py-4 font-bold [&:nth-child(4n)]:border-transparent"
+                style="scroll-snap-align: start;"
+              >
+                {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+                {{ $imgOpts := dict
+                  "filename" (.Param "image")
+                  "credit" false
+                  "description" (.Param "image-description")
+                  "link" $params.link
+                  "widthRatio" 1
+                  "heightRatio" 1
+                  "widths" (slice 128 256 384 512 1280)
+                  "figClass" "mt-1"
+                  "sizeHint" "(min-width: 850px) 328px, 90vw"
+                  "gravity" (.Param "image-gravity")
+                }}
+                <div class="w-full flex-auto">
+                  {{ $eyebrow := false }}
+                  {{ $rubricLink := $params.RelPermalink }}
+                  {{ $thumbClass := $params.thumbClass }}
+                  {{ partial "tw/thumb-item.html" (dict
+                    "wrapperClass" "flex flex-wrap items-end gap-x-4"
+                    "thumbClass" "w-16"
+                    "hedSize" "text-base"
+                    "hedColor" "text-black hover:text-blue-9 no-underline"
+                    "imgOpts" $imgOpts
+                    "rubricLink" $rubricLink
+                    "eyebrow" $eyebrow
+                    "link" $params.link
+                    "hed" .LinkTitle
+                    "byline" $params.byline
+                    "showDate" false
+                    "showByline" false
+                    )
+                  }}
+                </div>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <button
+          @click="next()"
+          class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-white via-white to-transparent text-6xl"
+          :aria-disabled="atEnd"
+          :tabindex="atEnd ? -1 : 0"
+          :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
+        >
+          <span aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-gray-600 -mr-4 h-16 w-16"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </span>
+          <span class="sr-only">Skip to next slide page</span>
+        </button>
+      </div>
+      <hr hidden />
+      <div
+        class="flex w-full items-center justify-center bg-black p-5 text-white"
+      >
+        {{ with $link }}
+          <a
+            href="{{ $link }}"
+            class="inline-flex min-w-[145px] items-center justify-center rounded bg-blue px-5 py-3 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-blue-7 focus:ring-blue-7 active:ring-blue-9 md:min-w-[218px] md:py-5"
+          >
+            {{ $cta }}</a
+          >
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+{{ else }}
+  {{ if site.IsServer }}
+    {{ warnf "no topics" }}
+    <h3 class="text-lg font-bold uppercase">No topic stories</h3>
+  {{ end }}
+{{ end }}
