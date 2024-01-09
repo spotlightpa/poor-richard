@@ -132,7 +132,7 @@
                   {{ $rubricLink := $params.RelPermalink }}
                   {{ $thumbClass := $params.thumbClass }}
                   {{ partial "tw/thumb-item.html" (dict
-                    "wrapperClass" "flex flex-wrap items-end gap-x-4"
+                    "wrapperClass" "flex flex-wrap items-start gap-x-4 sm:items-end"
                     "thumbClass" "w-16"
                     "hedSize" "text-base"
                     "hedColor" "text-black hover:text-blue-9 no-underline"
