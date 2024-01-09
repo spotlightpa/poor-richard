@@ -26,9 +26,9 @@
     "minify" true
   }}
   {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-<script type="module">
-  {{ $js.Content | safeJS }}
-</script>
+  <script type="module">
+    {{ $js.Content | safeJS }}
+  </script>
   <div x-data="carousel" class=" mx-auto w-full overflow-clip rounded shadow">
     <nav class=" p-4 font-sans md:p-5">
       <h2
