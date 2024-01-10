@@ -103,17 +103,14 @@
             tabindex="0"
             role="region"
             aria-labelledby="carousel-label"
-            class="
-              mt-4 flex h-[28rem] w-full snap-x
-              snap-mandatory flex-col flex-wrap overflow-x-scroll
-            "
+            class="mt-4 flex h-[28rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
           >
             {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | last $limit }}
               <li
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"
                 role="option"
-                class="mr-6 h-28 w-5/6 max-w-md snap-center border-b py-4 font-bold [&:nth-child(-n+4)]:snap-start [&:nth-last-child(-n+4)]:snap-end [&:nth-of-type(4n)]:border-b-transparent"
+                class="mr-6 h-28 w-9/12 max-w-md snap-center border-b py-4 font-bold md:w-5/6 [&:nth-child(-n+4)]:snap-start [&:nth-last-child(-n+4)]:snap-end [&:nth-of-type(4n)]:border-b-transparent"
               >
                 {{ $params := partialCached "helper/page-params" . .RelPermalink }}
                 {{ $imgOpts := dict
@@ -134,12 +131,12 @@
                   {{ $thumbClass := $params.thumbClass }}
                   {{ partial "tw/thumb-item.html" (dict
                     "wrapperClass" "flex flex-wrap items-start gap-x-4 sm:items-end"
-                    "thumbClass" "w-16"
-                    "hedSize" "text-base"
+                    "thumbClass" "w-16 md:mb-4"
+                    "hedSize" "text-sm sm:text-base"
                     "hedColor" "text-black hover:text-blue-9 no-underline"
                     "imgOpts" $imgOpts
                     "rubricLink" $rubricLink
-                    "eyebrow" $eyebrow
+                    "eyebrow" false
                     "link" $params.link
                     "hed" .LinkTitle
                     "byline" $params.byline
