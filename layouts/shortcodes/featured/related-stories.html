@@ -103,7 +103,7 @@
             tabindex="0"
             role="region"
             aria-labelledby="carousel-label"
-            class="mt-4 flex h-[28rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
+            class="flex h-[28rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
           >
             {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | last $limit }}
               <li
