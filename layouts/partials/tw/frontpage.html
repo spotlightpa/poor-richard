@@ -107,7 +107,8 @@
       >
         <button
           class="flex text-g-4 md:hidden"
-          x-on:click="isSticky = ! isSticky"
+          aria-label="close"
+          x-on:click="isSticky = false"
           :class="isSticky ? ' absolute -top-11 right-2' : 'hidden'"
         >
           <svg
