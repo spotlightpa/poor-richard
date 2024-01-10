@@ -84,14 +84,12 @@
       </form>
     </div>
     {{ $name := .image }}
-    {{ $credit := .Page.Param "image-credit" }}
     {{ $imgOpts := dict
       "filename" $name
       "widthRatio" 4
       "heightRatio" 3
       "widths" (slice 128 256 384 512 1280)
       "figClass" "items-center hidden md:block justify-center self-center md:col-span-5 md:col-start-7"
-      "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
       "sizeHint" "400px"
       "rounded" true
       "gravity" .gravity
