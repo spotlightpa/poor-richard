@@ -118,13 +118,13 @@
 
       <button
         id="hamburger-button"
-        class="no-js:hidden sm-w-1/2 group
-       relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch"
+        class="no-js:hidden sm-w-1/2 group relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
         :class="isOpen ? 'sm:translate-x-8' : ''"
         type="button"
         @click="isOpen = ! isOpen"
         aria-controls="hamburger-menu"
         aria-haspopup="true"
+        aria-label="Toggle main menu"
         data-ga-category="burger"
         x-report-click
       >
