@@ -6,7 +6,7 @@
 
   {{ $title := .Title }}
   {{ $calloutTitle :=  index .Page.Params "callout-title" }}
-  {{ $blurb := .Page.Param.description }}
+  {{ $blurb := .Page.Params.description }}
   {{ $limit := 0 }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
