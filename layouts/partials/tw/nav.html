@@ -5,7 +5,7 @@
 <div
   class="top-0 border-b border-black bg-beige font-sans"
   x-data="{ isOpen: false }"
-  :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px]': atTop }"
+  :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px] transition-all overflow-hidden': atTop }"
   data-ga-category="top-banner"
   data-sf-campaign="701Dn000000YgosIAC"
   aria-labelledby="top"
@@ -198,11 +198,11 @@
     </nav>
 
     <p
-      class="flex-0 order-1 -mx-3 -mb-3 mt-2 hidden w-screen border-b border-t border-black bg-white py-3
-      text-center text-xs font-extrabold leading-none tracking-wide transition-opacity delay-150 sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base
-      
+      class="
+      flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white
+      text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base
       "
-      :class="{ 'opacity-0 -z-50': !atTop, 'sm:flex': atTop }"
+      :class="{ 'py-0 opacity-0': !atTop, 'py-3 sm:flex': atTop }"
     >
       Journalism that Gets Results <span class="font-normal">&#8480;</span>
     </p>
