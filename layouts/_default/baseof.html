@@ -48,7 +48,8 @@
   {{ if .Layout }}{{ $pageCat = print $pageCat ":" .Layout }}{{ end }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home" }}{{ end }}
   <body
-    class="{{ block `body-class` . }}{{ end }}"
+    class="{{ block `body-class` . }}
+    {{ end }} bg-white text-base leading-normal text-g-9"
     data-page-cat="{{ $pageCat }}"
     {{ block `body-attributes` . }}{{ end }}
   >
