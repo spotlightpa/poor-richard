@@ -50,11 +50,11 @@ The December legislation also directs the new committee to develop educational c
 
 The goal is to have the funds distributed thoughtfully, said Hughes, and provide support as data comes in.
 
-It won’t be enough to level the playing field, said Sara Jacobsen, director of the Public Defenders Association of Pennsylvania, who will serve on the committee. Prosecutors have received millions of state dollars for decades, she said.
+It won’t be enough to level the playing field, said Sara Jacobson, director of the Public Defenders Association of Pennsylvania, who will serve on the committee. Prosecutors have received millions of state dollars for decades, she said.
 
 But the $7.5 million might be able to address technological deficiencies that prevent local offices from measuring their caseloads and ensuring no single attorney has too many cases or all of the most difficult cases, she said.
 
-“There are new national public defender workload standards that are out this year that would help offices say for X number of cases we need Y number of lawyers,” Jacobsen said, “but offices in Pennsylvania can&#39;t even do that calculation if they don&#39;t have basic case management.”
+“There are new national public defender workload standards that are out this year that would help offices say for X number of cases we need Y number of lawyers,” Jacobson said, “but offices in Pennsylvania can&#39;t even do that calculation if they don&#39;t have basic case management.”
 
 And though the new funding marks a historic step forward, it does little to move Pennsylvania’s ranking among other states, said David Carroll, executive director of the Sixth Amendment Center, which tracks how states live up to the constitutional promise of free public defense.
 
