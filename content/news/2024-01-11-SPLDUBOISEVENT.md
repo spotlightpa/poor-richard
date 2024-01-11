@@ -27,7 +27,7 @@ Herm Suplizio helped make DuBois — located about 100 miles northeast of Pittsb
 
 But that’s not all the former city manager did, according to state and federal prosecutors. They allege he shrewdly used his power, political connections, and control over local organizations to line his own pockets for over a decade.
 
-Suplizio has pleaded not guilty and awaits trial.
+Suplizio has pleaded not guilty in the federal case and awaits trial.
 
 As the case unfolds, those in DuBois are left grappling with questions like: How could these alleged crimes go unnoticed for so long, and where does the city go from here?
 
@@ -45,9 +45,11 @@ Join us Thursday, Jan. 25 from 6-7:15 p.m. on Zoom for a free panel on the Supli
 
 - <strong>Rachael Heisler</strong>, Pittsburgh city controller
 
+- <strong>Jennifer</strong> <strong>Jackson</strong>, council member, City of DuBois
+
 - <strong>Other panelists to be announced.</strong>
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_TT3pe2oTTfOuomsi-ktqpg"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
 
-<strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
