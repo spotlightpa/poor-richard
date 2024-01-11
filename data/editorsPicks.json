@@ -1,14 +1,12 @@
 {
   "featuredStories": [
-    "content/news/2024-01-11-SPLINDDEF.md"
+    "content/news/2024-01-11-SPLEDREP.md"
   ],
   "subfeatures": [
-    "content/news/2023-12-14-SPLBUD23DONE.md",
-    "content/news/2023-12-04-SPLPROMISE.md",
-    "content/news/2023-04-26-SPLPUBDEF.md"
+    "content/statecollege/2024-01-10-SPLLEVELUP.md"
   ],
   "topSlots": [
-    "content/statecollege/2024-01-10-SPLLEVELUP.md",
+    "content/news/2024-01-11-SPLINDDEF.md",
     "content/news/2024-01-09-SPLIMPAY.md",
     "content/statecollege/2024-01-05-SPLSUPBILLS.md"
   ],
