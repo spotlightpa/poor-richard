@@ -24,6 +24,8 @@ HARRISBURG — Pennsylvania will soon convene a committee to decide how to spend
 
 In December, the Pennsylvania state legislature approved $7.5 million for criminal defense for those who cannot afford a lawyer, a constitutional right that counties paid for without state assistance.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+
 “Thanks to historic legislation signed by Gov. \[Josh\] Shapiro, Pennsylvania will no longer be one of only two states in the country that does not allocate state funding for public defenders,” said Manuel Bonder, spokesperson for the Democratic governor.
 
 Every person accused of a crime must have access to an attorney to aid in their defense, a right that has been enshrined in the 6th and 14th Amendments of the United States Constitution for 60 years. Until now, Pennsylvania state coffers did not contribute any funds to that purpose.
@@ -56,9 +58,15 @@ But the $7.5 million might be able to address technological deficiencies that pr
 
 “There are new national public defender workload standards that are out this year that would help offices say for X number of cases we need Y number of lawyers,” Jacobson said, “but offices in Pennsylvania can&#39;t even do that calculation if they don&#39;t have basic case management.”
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
 And though the new funding marks a historic step forward, it does little to move Pennsylvania’s ranking among other states, said David Carroll, executive director of the Sixth Amendment Center, which tracks how states live up to the constitutional promise of free public defense.
 
 “\[Pennsylvania’s\] indigent defense cost-per-capita figure rises only slightly (from $9.67 to $10.25),” Carroll wrote in an email to Spotlight PA. “For comparison, the national average in 2022 was $19.67.”
 
 Pennsylvania ranks 45th in total indigent defense funding, Carroll said. The states that spend less per capita are Mississippi, Hawaii, Oklahoma, Missouri, and Texas.
+
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+
+<em>Correction: This story has been updated to correct the spelling of Sara Jacobson’s last name.</em>
 
