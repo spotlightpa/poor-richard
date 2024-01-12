@@ -4,7 +4,7 @@
 
 {{ define "main" }}
   {{ $title := .Title }}
-  {{ $calloutTitle :=  index .Page.Params "callout-title" }}
+  {{ $calloutTitle := .Page.Param "callout-title" }}
   {{ $blurb := .Page.Params.description }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
