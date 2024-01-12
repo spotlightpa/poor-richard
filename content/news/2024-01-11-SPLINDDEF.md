@@ -15,7 +15,7 @@ slug = "pennsylvania-public-defense-state-funded"
 suppress-date = false
 title = "Pennsylvania provides state money for public defense for the first time"
 title-tag = "Pa. provides state funds for public defense for first time"
-topics = ["Criminal Justice"]
+topics = ["Criminal Justice", "Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
