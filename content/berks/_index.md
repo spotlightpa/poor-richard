@@ -35,6 +35,11 @@ hed="at LGBT Center of Greater Reading"
 dateVerbose="Thursday, January 26 – 6:00-8:00pm"
 registration="https://spotlight-pa-berks.ticketleap.com/listening-session-lgbt-center/"
 >}}
+{{<takeover-event
+hed="at West Lawn-Wyomissing Hills Library"
+dateVerbose="Wednesday February 21 – 5:30-7:30pm"
+registration="https://spotlight-pa-berks.ticketleap.com/westlawnwyohillssession/"
+>}}
 {{</featured/main-takeover>}}
 """
 supplemental = """
