@@ -47,8 +47,6 @@ Join us Thursday, Jan. 25 from 6-7:15 p.m. on Zoom for a free panel on the Supli
 
 - <strong>Jennifer</strong> <strong>Jackson</strong>, council member, City of DuBois
 
-- <strong>Other panelists to be announced.</strong>
-
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_TT3pe2oTTfOuomsi-ktqpg"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
