@@ -17,17 +17,26 @@
       class="sm:order-0 z-40 h-10 w-40 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0  sm:items-stretch sm:justify-center md:h-14 md:w-72"
       :class="isOpen ? 'sm:translate-y-2' : ''"
     >
-      <a id="top" class="h-10 sm:h-12 md:h-14" href="/" data-ga-category="logo">
+      <a
+        id="top"
+        class="flex h-10 sm:h-12 md:h-14"
+        href="/"
+        data-ga-category="logo"
+      >
         <svg
           class="block h-10 w-40 sm:h-12 sm:w-full md:h-14"
-          :class="{ 'hidden': !atTop, 'block': atTop }"
+          x-cloak
+          x-show="atTop"
+          x-transition.duration.300ms
         >
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "banner" }}
         </svg>
         <svg
-          class="hidden h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14"
-          :class="{ 'hidden': atTop, 'sm:block': !atTop }"
+          class="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14"
+          x-cloak
+          x-show="!atTop"
+          x-transition.delay.250ms.duration.300ms
         >
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "logo" }}
