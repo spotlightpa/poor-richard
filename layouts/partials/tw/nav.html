@@ -14,32 +14,27 @@
     class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-6 lg:relative xl:px-0"
   >
     <div
-      class="sm:order-0 z-40 h-10 w-40 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0  sm:items-stretch sm:justify-center md:h-14 md:w-72"
+      class="sm:order-0 z-40 h-10 w-40 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-72"
       :class="isOpen ? 'sm:translate-y-2' : ''"
     >
-      <a
-        id="top"
-        class="flex h-10 sm:h-12 md:h-14"
-        href="/"
-        data-ga-category="logo"
-      >
+      <a id="top" class="flex" href="/" data-ga-category="logo">
         <svg
-          class="block h-10 w-40 sm:h-12 sm:w-full md:h-14"
+          class="-sm:mr-1 h-8 w-auto flex-1 pb-[2px] sm:h-12 md:mr-0 md:h-14"
           x-cloak
           x-show="atTop"
-          x-transition.duration.300ms
+          x-transition:enter="transition ease-out duration-150"
+          x-transition:enter-start="opacity-0 scale-10"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-10"
         >
           <title>Spotlight PA Home</title>
-          {{ partial "helper/svg.html" "banner" }}
+          {{ partial "helper/svg.html" "spotlight" }}
         </svg>
-        <svg
-          class="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14"
-          x-cloak
-          x-show="!atTop"
-          x-transition.delay.250ms.duration.300ms
-        >
+        <svg class=" h-8 w-8 py-[2px] sm:h-12 sm:w-12 md:h-14 md:w-14">
           <title>Spotlight PA Home</title>
-          {{ partial "helper/svg.html" "logo" }}
+          {{ partial "helper/svg.html" "pa" }}
         </svg>
       </a>
     </div>
@@ -208,10 +203,17 @@
 
     <p
       class="
-      flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white
+      flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3
       text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base
       "
-      :class="{ 'py-0 opacity-0': !atTop, 'py-3 sm:flex': atTop }"
+      x-cloak
+      x-show="atTop"
+      x-transition:enter="transition ease-out duration-150"
+      x-transition:enter-start="opacity-0 scale-10"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-10"
     >
       Journalism that Gets Results <span class="font-normal">&#8480;</span>
     </p>
@@ -219,7 +221,14 @@
 
   <nav
     class="hidden h-11 border-t bg-white font-sans sm:block"
-    :class="{ 'opacity-0 -z-50': !atTop, 'sm:block': atTop }"
+    x-cloak
+    x-show="atTop"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="opacity-0 scale-10"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-10"
   >
     <div
       class="
