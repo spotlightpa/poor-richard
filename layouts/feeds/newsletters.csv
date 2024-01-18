@@ -2,12 +2,16 @@
 {{- $paPost := site.GetPage "/newsletters/papost/_index.md" -}}
 {{- $paLocal := site.GetPage "/newsletters/palocal/_index.md" -}}
 {{- $talk := site.GetPage "/newsletters/talkofthetown/_index.md" -}}
-{{ $newsletters := sort
-  (union
-    (union $invest.RegularPages $paPost.RegularPages)
-    (union $paLocal.RegularPages $talk.RegularPages))
-  "PublishDate" "desc"
-}}
+{{- $psa := site.GetPage "/newsletters/pennstatealerts/_index.md" -}}
+{{- $cd := site.GetPage "/newsletters/centredocumenters/_index.md" -}}
+{{- $newsletters :=  $invest.RegularPages |
+    union $paPost.RegularPages |
+    union $paLocal.RegularPages |
+    union $talk.RegularPages |
+    union $psa.RegularPages |
+    union $cd.RegularPages
+-}}
+{{- $newsletters = sort $newsletters "PublishDate" "desc" -}}
 {{- $p := $newsletters -}}
 {{- range $i, $p := $p -}}
   {{- if eq $i 0 -}}
