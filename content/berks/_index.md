@@ -55,9 +55,6 @@ creditEmail="heather@spotlightpa.org"
 creditBio="Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
 >}}
 
-## [Read our editors statement about this study](https://www.spotlightpa.org/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/)
-
-
 ### A Novel Approach to Reinvigorating Local News
 
 In Berks County, the severe decline in local reporting in recent years has stifled transparency and accountability at all levels, and has made it hard to understand what is happening. To address this issue head-on, Spotlight PA is exploring the creation of a potential new journalism bureau dedicated to covering Reading and Berks County. The bureau would be independent, nonpartisan, and nonprofit, with no opinion, endorsements, or political ads. This would be Spotlight PA’s second regional bureau; the newsroom launched its first in 2022, based in State College and [covering north-central Pa](//spotlightpa.org/statecollege).
