@@ -118,7 +118,7 @@ At that point, according to the rules, the report “shall be acted upon by the 
 
 If the report is accepted, the senator “may be subject to sanction by the full Senate,” according to the rules. Possible consequences include a warning, a written reprimand, an official censure, or an expulsion. The latter is rare.
 
-According to <a href="https://www.brennancenter.org/our-work/research-reports/unconstitutional-expulsion-legislators">the Brennan Center for Justice</a>, just 122 state legislators nationwide have been expelled by their colleagues since 1788.
+According to <a href="https://www.brennancenter.org/our-work/research-reports/unconstitutional-expulsion-legislators">the Brennan Center for Justice</a>, just 122 state legislators nationwide have been expelled by their colleagues since 1788. Four of those expulsions were in Pennsylvania, the center said. The most recent were two in 1975; the causes have ranged from mail fraud to spitting in another member’s face.
 
 Reports often don’t get a full vote.
 
