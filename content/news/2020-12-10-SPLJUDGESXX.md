@@ -383,8 +383,7 @@ _PennLive reporter Jan Murphy contributed to this story._
   >}}
   {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
-    headshot="carl-johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
   >}}

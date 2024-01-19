@@ -1,33 +1,22 @@
 +++
 arc-id = "X2QNIEY5XJF2FNCRZBWXOJEGLM"
-internal-id = "SPLCLEANXX"
-internal-budget = ""
-image = "external/tm1n0v1nm748kad8mnzj8hj0xm.jpeg"
-image-description = "County commissioners for months have pleaded for more flexibility to begin processing mail-in and absentee ballots before Election Day, a practice known as “pre-canvassing.”"
-image-caption = ""
-image-credit = "TIM TAI / Philadelphia Inquirer"
-image-size = ""
-published = 2020-10-08T17:40:45Z
-slug = "pa-election-mail-ballots-counties-legislature-talks"
 authors = ["Cynthia Fernandez"]
-byline = "Cynthia Fernandez of Spotlight PA"
-title = "Lawmakers mount new push to give Pa. counties more flexibility in counting mail-in ballots"
-subtitle = ""
-description = "County election officials say it’s the number one issue standing between them and a timely counting of votes: allowing them to begin processing mail-in ballots before Nov. 3."
 blurb = "County election officials say it’s the number one issue standing between them and a timely counting of votes: allowing them to begin processing mail-in ballots before Nov. 3."
+byline = "Cynthia Fernandez of Spotlight PA"
+description = "County election officials say it’s the number one issue standing between them and a timely counting of votes: allowing them to begin processing mail-in ballots before Nov. 3."
+image = "external/tm1n0v1nm748kad8mnzj8hj0xm.jpeg"
+image-credit = "TIM TAI / Philadelphia Inquirer"
+image-description = "County commissioners for months have pleaded for more flexibility to begin processing mail-in and absentee ballots before Election Day, a practice known as “pre-canvassing.”"
+internal-id = "SPLCLEANXX"
 kicker = "The Capitol"
-topics = ["The Capitol", "Elections"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2020-10-08T13:40:45-04:00
+slug = "pa-election-mail-ballots-counties-legislature-talks"
+suppress-date = false
+suppress-featured = false
+title = "Lawmakers mount new push to give Pa. counties more flexibility in counting mail-in ballots"
+topics = ["The Capitol", "Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -48,7 +37,7 @@ Now, with the election fast approaching, one House Democrat, Kevin Boyle, has in
 
 “There’s no reason that we can’t come to an agreement,” Boyle (D., Philadelphia) said, “unless — and I think with every passing day it’s looking more and more likely that this is the case — the Republicans don’t want additional pre-canvassing time for counties because it would not serve their political ends.”
 
-House Republicans this week participated in a call to discuss granting counties four or five days to pre-canvass ballots, the Associated Press <a href="https://apnews.com/article/election-2020-harrisburg-pennsylvania-legislation-elections-5603c90faf7328228a7b92cc36c4ac6c">first reported</a>.
+House Republicans this week participated in a call to discuss granting counties four or five days to pre-canvass ballots, the Associated Press <a href="https://www.wfmz.com/news/area/pennsylvania/talks-to-update-pennsylvanias-mail-in-voting-law-show-life/article_9f1cf8b4-08f6-11eb-bb52-8fb7de2bb85b.html">first reported</a>.
 
 Rep. Russ Diamond (R., Lebanon), who sits on a key committee and participated in the call, told Spotlight PA that lawmakers discussed amending an election bill that has advanced to the Senate to provide for pre-canvassing as well as instituting additional requirements to physically secure drop boxes.
 

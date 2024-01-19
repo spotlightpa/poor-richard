@@ -53,7 +53,7 @@ Husband and wife Shirley Bentzel, 84, and Glenn Bentzel, 86, of Gettysburg, were
 
 <div class="flourish-embed flourish-map" data-src="visualisation/11227511"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-Most of the Hall of Famers who spoke with PA Local said they didn’t apply for the recognition themselves (<a href="https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31">but you can</a>). Instead, they were nominated by state representatives, fellow election workers, or fellow members of a local political party committee. 
+Most of the Hall of Famers who spoke with PA Local said they didn’t apply for the recognition themselves (<a href="https://web.archive.org/20220926115945/https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31">but you can</a>). Instead, they were nominated by state representatives, fellow election workers, or fellow members of a local political party committee. 
 
 (The first members of the Voter Hall of Fame were inducted in 1982.) 
 
@@ -81,6 +81,6 @@ Elections have always been rancorous, he said, but the contemporary tone and fal
 
 He’s looking to future Hall of Famers to carry the mantle and “vote their conscience.”
 
-<i>Learn more about Pennsylvania’s Voter Hall of Fame </i><a href="https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31"><i>here</i></a><i>. Find inductees </i><a href="https://www.pavoterservices.pa.gov/Pages/voterhalloffamehomepage.aspx"><i>here</i></a><i>.</i>
+<i>Learn more about Pennsylvania’s Voter Hall of Fame </i><a href="https://web.archive.org/20220926115945/https://www.dos.pa.gov/SimplyStated/Pages/Article.aspx?post=31"><i>here</i></a><i>. Find inductees </i><a href="https://www.pavoterservices.pa.gov/Pages/voterhalloffamehomepage.aspx"><i>here</i></a><i>.</i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

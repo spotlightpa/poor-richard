@@ -75,6 +75,12 @@ parent = "Support Spotlight PA"
 url = "/support/funders-and-members"
 weight = 2
 
+[[main_support]]
+name = "Spotlight PA Store"
+parent = "Support Spotlight PA"
+url = "https://shop.spotlightpa.org"
+weight = 3
+
 [[main_more]]
 name = "News"
 url = "/news/"
@@ -96,6 +102,12 @@ weight = 1
 parent = "News"
 name = "Elections"
 url = "/elections/"
+weight = 1
+
+[[main_more]]
+parent = "News"
+name = "Environment"
+url = "/topics/environment/"
 weight = 1
 
 [[main_more]]
@@ -179,9 +191,14 @@ url = "/contact/"
 weight = 7
 
 [[about]]
+name = "Berks County"
+url = "/berks/"
+weight = 6
+
+[[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 8
+weight = 10
 
 [[news]]
 name = "Investigations"
@@ -257,6 +274,11 @@ weight = 2
 name = "Leaders in Action"
 url = "/support/leaders-in-action"
 weight = 3
+
+[[support]]
+name = "Spotlight PA Store"
+url = "https://shop.spotlightpa.org"
+weight = 4
 
 [[social]]
 name = "Facebook"

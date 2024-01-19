@@ -287,7 +287,7 @@ Seven players were cut before the season, although the university said it was no
 
 <strong>September 2014:</strong> Penn State <a href="https://www.psu.edu/news/university-park/story/results-released-penn-states-values-and-culture-survey/">releases the findings</a> of a 2013 culture survey of employees and students. Only a quarter of respondents who saw misconduct say they reported it.
 
-<strong>November 2016:</strong> The U.S. Department of Education <a href="https://content.govdelivery.com/accounts/USED/bulletins/16ff1a3">levels a record $2.4 million fine</a> for Penn State’s “longstanding failure to comply with federal requirements on campus safety and substance abuse.”
+<strong>November 2016:</strong> The U.S. Department of Education <a href="https://web.archive.org/20230719102451/https://content.govdelivery.com/accounts/USED/bulletins/16ff1a3">levels a record $2.4 million fine</a> for Penn State’s “longstanding failure to comply with federal requirements on campus safety and substance abuse.”
 
 <strong>June 2017:</strong> The Pennsylvania Department of the Auditor General releases a performance review of the university. The report finds, among other things, that Penn State has hosted potentially dozens of youth camps without conducting the necessary background checks on all employees. Penn State characterizes the claim as “assumed extrapolation” and “not based in fact.”
 

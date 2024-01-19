@@ -4,14 +4,14 @@ image-size = "inline"
 published = 2020-09-03T01:14:40.334Z
 title = "Sign up for Centre Documenters"
 description = "Sign up for Centre Documenters, a free biweekly newsletter"
-blurb = "Every Thursday, you’ll get exclusive, behind-the-scenes looks at our reporting, important updates from the state Capitol, and a roundup of the best accountability journalism from across Pennsylvania."
-linktitle = "Centre County Documenters"
+blurb = "Critical information and decisions from public meetings in Benner, College, Gregg, Halfmoon, Snow Shoe, and Spring Townships documented by trained students and local residents."
+linktitle = "Centre Documenters"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "First and Third Monday"
 url = "/centredocumenters/"
-
+weight = 5
 [cascade]
 image = "2023/11/01jm-5423-9jym-wv30.webp"
 +++

@@ -5,13 +5,13 @@ image-description = "To combat the loss of local news, Spotlight PA launched its
 image-size = "inline"
 title = "Sign up for Penn State Alerts"
 description = "Get breaking news alerts about Penn State."
-blurb = "Be the first to know about our latest investigative and accountability journalism about Penn State University."
+blurb = "Our latest investigative and accountability journalism about Penn State University."
 linktitle = "Penn State Alerts"
 modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "When news breaks"
-
+weight = 6
 [cascade]
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
 nav = "statecollege"

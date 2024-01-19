@@ -1,33 +1,22 @@
 +++
 arc-id = "N4QYS5H7UVCM5AEUURTGJMATGE"
-internal-id = "SPLTRACKXX"
-internal-budget = ""
-image = "external/we4kcp6yp9b8epdfrx4esjpkkw.jpeg"
-image-description = "After a slow start, Pennsylvania used the emergency procurement process to hire a consulting firm to help with the state's vaccine rollout."
-image-caption = ""
-image-credit = "Fred Adams / For Spotlight PA"
-image-size = ""
-published = 2021-07-30T09:00:39Z
-slug = "pa-emergency-contracts-coronavirus-by-the-numbers"
 authors = ["Jamie Martines"]
-byline = "Jamie Martines of Spotlight PA"
-title = "Tracking Pa.’s pandemic spending, by the numbers"
-subtitle = ""
-description = "Many emergency requests were straightforward, some led to scrutiny from Republican lawmakers, and others were downright curious."
 blurb = "Many emergency requests were straightforward, some led to scrutiny from Republican lawmakers, and others were downright curious."
+byline = "Jamie Martines of Spotlight PA"
+description = "Many emergency requests were straightforward, some led to scrutiny from Republican lawmakers, and others were downright curious."
+image = "external/we4kcp6yp9b8epdfrx4esjpkkw.jpeg"
+image-credit = "Fred Adams / For Spotlight PA"
+image-description = "After a slow start, Pennsylvania used the emergency procurement process to hire a consulting firm to help with the state's vaccine rollout."
+internal-id = "SPLTRACKXX"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+published = 2021-07-30T05:00:39-04:00
+slug = "pa-emergency-contracts-coronavirus-by-the-numbers"
+suppress-date = false
+suppress-featured = false
+title = "Tracking Pa.’s pandemic spending, by the numbers"
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -52,37 +41,37 @@ But they do shed light on how the administration responded to the pandemic and w
 
 <b>Most expensive pandemic-related requests:</b>
 
-- <b>$40 million</b>&nbsp;by the Pennsylvania Emergency Management Agency to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20560">AMI</a>&nbsp;to provide community vaccination clinics
+- <b>$40 million</b>&nbsp;by the Pennsylvania Emergency Management Agency to hire&nbsp;<a href="https://web.archive.org/20210730130858/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20560">AMI</a>&nbsp;to provide community vaccination clinics
 
-- <b>$28.5 million</b>&nbsp;by the Department of Health to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20156">Curative</a>&nbsp;to administer COVID-19 tests in long-term care facilities
+- <b>$28.5 million</b>&nbsp;by the Department of Health to hire&nbsp;<a href="https://web.archive.org/20210730130839/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20156">Curative</a>&nbsp;to administer COVID-19 tests in long-term care facilities
 
-- <b>$25 million</b>&nbsp;by the Department of Health to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18187">Insight Global</a>&nbsp;to administer the&nbsp;<a href="https://www.spotlightpa.org/news/2021/06/pa-coronavirus-data-breach-insight-global-google-drive/">contact tracing program</a>
+- <b>$25 million</b>&nbsp;by the Department of Health to hire&nbsp;<a href="https://web.archive.org/20210730130835/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18187">Insight Global</a>&nbsp;to administer the&nbsp;<a href="https://www.spotlightpa.org/news/2021/06/pa-coronavirus-data-breach-insight-global-google-drive/">contact tracing program</a>
 
-- <b>$13 million</b>&nbsp;by the Department of Labor and&nbsp;Industry to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=19287">Ernst &amp; Young</a>&nbsp;to assist with unemployment claims
+- <b>$13 million</b>&nbsp;by the Department of Labor and&nbsp;Industry to hire&nbsp;<a href="https://web.archive.org/20210730130818/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=19287">Ernst &amp; Young</a>&nbsp;to assist with unemployment claims
 
-- <b>$11.6 million</b>&nbsp;by the Department of Health to hire consulting firm&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20525">BCG</a>&nbsp;to advise on the vaccine rollout
+- <b>$11.6 million</b>&nbsp;by the Department of Health to hire consulting firm&nbsp;<a href="https://web.archive.org/20210730130844/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=20525">BCG</a>&nbsp;to advise on the vaccine rollout
 
 <b>Most expensive requests not related to pandemic response:</b>
 
-- <b>$12.5 million</b>&nbsp;by the Department of General Services to extend an existing contract with&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18440">Meggitt Training Systems</a>, which provides weapons training to law enforcement
+- <b>$12.5 million</b>&nbsp;by the Department of General Services to extend an existing contract with&nbsp;<a href="https://web.archive.org/20210730130910/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18440">Meggitt Training Systems</a>, which provides weapons training to law enforcement
 
-- <b>$11 million</b>&nbsp;to extend a contract with&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=15793">McKesson</a>&nbsp;while a new pharmaceutical procurement is finished
+- <b>$11 million</b>&nbsp;to extend a contract with&nbsp;<a href="https://web.archive.org/20200211101736/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=15793">McKesson</a>&nbsp;while a new pharmaceutical procurement is finished
 
-- <b>$6 million</b>&nbsp;by the Department of General Services to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17249">Inservco</a>&nbsp;to administer insurance benefit claims
+- <b>$6 million</b>&nbsp;by the Department of General Services to hire&nbsp;<a href="https://web.archive.org/20200530222344/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17249">Inservco</a>&nbsp;to administer insurance benefit claims
 
-- <b>$4 million</b>&nbsp;by the Department of Transportation for&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17776">motorcycle training providers</a>
+- <b>$4 million</b>&nbsp;by the Department of Transportation for&nbsp;<a href="https://web.archive.org/20210730130815/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17776">motorcycle training providers</a>
 
-- <b>$3.8 million</b>&nbsp;by the Department of Education to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=15788">University of Kansas Center for Research</a>&nbsp;to develop state tests
+- <b>$3.8 million</b>&nbsp;by the Department of Education to hire&nbsp;<a href="https://web.archive.org/20210730130855/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=15788">University of Kansas Center for Research</a>&nbsp;to develop state tests
 
 <b>Other notable requests:</b>
 
-- <b>$1.2 million</b>&nbsp;by the State Department for two orders of “sneeze guards” in <a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18479">August</a> and <a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18784">September</a> to be used by county election workers during the pandemic
+- <b>$1.2 million</b>&nbsp;by the State Department for two orders of “sneeze guards” in <a href="https://web.archive.org/20210730130813/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18479">August</a> and <a href="https://web.archive.org/20210730130836/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=18784">September</a> to be used by county election workers during the pandemic
 
-- <b>$358,437</b>&nbsp;by the Department of Transportation to hire&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=19705">Textron Aviation</a>&nbsp;to repair a plane damaged after it collided with a deer while taxiing at Chester County airport
+- <b>$358,437</b>&nbsp;by the Department of Transportation to hire&nbsp;<a href="https://web.archive.org/20210730130811/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=19705">Textron Aviation</a>&nbsp;to repair a plane damaged after it collided with a deer while taxiing at Chester County airport
 
-- <b>$207,731</b>&nbsp;by the Game Commission to print the annual Hunting and Trapping Digest using&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=16637">Liberty Press</a>
+- <b>$207,731</b>&nbsp;by the Game Commission to print the annual Hunting and Trapping Digest using&nbsp;<a href="https://web.archive.org/20210730130846/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=16637">Liberty Press</a>
 
-- <b>$81,264</b>&nbsp;by the Office of Attorney General to purchase “pole cameras”&nbsp;from&nbsp;<a href="http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17964">Crime Point, Inc.</a>&nbsp;to be used for surveillance during investigations
+- <b>$81,264</b>&nbsp;by the Office of Attorney General to purchase “pole cameras”&nbsp;from&nbsp;<a href="https://web.archive.org/20200630235213/http://www.emarketplace.state.pa.us/EP_Details.aspx?id=17964">Crime Point, Inc.</a>&nbsp;to be used for surveillance during investigations
 
 <b>Agencies that made the most requests:</b>
 
