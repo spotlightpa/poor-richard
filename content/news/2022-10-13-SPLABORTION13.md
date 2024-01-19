@@ -13,6 +13,7 @@ internal-id = "SPLABORTION13"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-13T05:00:59-04:00
 slug = "pa-election-2022-abortion-roe-dobbs-access"
 suppress-date = false
@@ -118,7 +119,7 @@ Providers also are investing in telehealth, which they say will make abortion pi
 
 Telehealth makes it easier for patients to get medication abortions, as they do not have to travel to physical clinics for their mandatory consultation with a physician, nor do they have to travel back after the 24-hour waiting period.
 
-Additionally, nearly all of Pennsylvania providers have been engaged in a lawsuit over whether abortion care — which <a href="https://www.plannedparenthood.org/planned-parenthood-western-pennsylvania/patients/fees-services">can range from $400 to $1,000</a> — can be covered by Medicaid in all cases, not just those of rape, incest, or the life of the parent. The case is currently before the state Supreme Court for oral arguments.
+Additionally, nearly all of Pennsylvania providers have been engaged in a lawsuit over whether abortion care — which <a href="https://web.archive.org/20220118222203/https://www.plannedparenthood.org/planned-parenthood-western-pennsylvania/patients/fees-services">can range from $400 to $1,000</a> — can be covered by Medicaid in all cases, not just those of rape, incest, or the life of the parent. The case is currently before the state Supreme Court for oral arguments.
 
 But beyond these efforts, reproductive care workers are largely focused on the day-to-day work of ensuring patients can access care now, a position that underscores how little say they have in what comes after the November election.
 
