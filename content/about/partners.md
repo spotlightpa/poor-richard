@@ -19,4 +19,4 @@ layout = "partners-page"
 dataSrc = "partners"
 
 +++
-We provide Spotlight PA's content free of charge to more than 100 newsrooms across the state to help bolster local media and better inform the public. Distribution partners allow us to share resources and maximize audience and reporting power.
+Quality journalism is a public good, not a commodity to be bought and sold. That's why Spotlight PA provides all of its high-quality reporting at no cost to more than 100 newsrooms in Pennsylvania — the largest collaborative network of its kind in the U.S. This approach bolsters the entire statewide news ecosystem, better informs the public, and maximizes the potential for our journalism to drive real impact.
