@@ -1,5 +1,5 @@
 {{ $side := .Get "side" | default "left" }}
-{{ $limit := .Get "limit" | default 4 | int }}
+{{ $limit := .Get "limit" | default 12 | int }}
 {{ $sideClass :=
   cond (eq $side "right")
   "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
