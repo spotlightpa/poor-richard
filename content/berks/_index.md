@@ -41,8 +41,6 @@ dateVerbose="Wednesday February 21 – 5:30-7:30pm"
 registration="https://spotlight-pa-berks.ticketleap.com/westlawnwyohillssession/"
 >}}
 
-<h3><a href="https://www.spotlightpa.org/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/" class="hover:underline hover:text-yellow">Read our editors statement about this study</a></h3>
-
 {{</featured/main-takeover>}}
 """
 
@@ -50,14 +48,14 @@ registration="https://spotlight-pa-berks.ticketleap.com/westlawnwyohillssession/
 layout = "promo"
 
 [[blocks.entries]]
-hed = "Read our editors statement about this study"
+hed = "Read our editor's statement about this study"
 actionUrl = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
 actionText = "Reading the article →"
 
 [[blocks.entries]]
 hed = "Take the Berks County News Consumption and Media Coverage Survey"
 actionUrl = "https://www.surveymonkey.com/r/SpotlightPABerksProject"
-actionText = "Begin survay →"
+actionText = "Begin survey →"
 
 
 [[blocks]]
