@@ -1,0 +1,27 @@
+{{- $items := slice -}}
+{{- $elections := site.GetPage "topics/elections" -}}
+{{- $stories := $elections.Pages -}}
+{{- range $stories -}}
+  {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $item := dict
+    "id" .Permalink
+    "url" .Permalink
+    "title" .Title
+    "date_published" $date
+    "author" (.Param "byline")
+    "authors" (.Param "authors")
+    "content_html" .Content
+  -}}
+  {{- $items = append $item $items -}}
+{{- end -}}
+
+{{- $json := dict
+  "version" "https://jsonfeed.org/version/1.1"
+  "title" $elections.Title
+  "description" $elections.Description
+  "home_page_url" $elections.Permalink
+  "feed_url" .Permalink
+  "items" $items
+-}}
+
+{{- $json | jsonify -}}
