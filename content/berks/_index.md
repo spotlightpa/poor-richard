@@ -52,7 +52,7 @@ layout = "promo"
 [[blocks.entries]]
 hed = "Read our editors statement about this study"
 actionUrl = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
-actionText = "Continue Reading →"
+actionText = "Reading the article →"
 
 [[blocks.entries]]
 hed = "Take the Berks County News Consumption and Media Coverage Survey"
