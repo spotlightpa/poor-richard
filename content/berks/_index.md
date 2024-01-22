@@ -43,33 +43,39 @@ registration="https://spotlight-pa-berks.ticketleap.com/westlawnwyohillssession/
 
 <h3><a href="https://www.spotlightpa.org/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/" class="hover:underline hover:text-yellow">Read our editors statement about this study</a></h3>
 
-
 {{</featured/main-takeover>}}
 """
-supplemental = """
-{{<supplemental
-hed=""
-creditName="Heather Adams"
-creditRole="Capitol Reporter"
-creditEmail="heather@spotlightpa.org"
-creditBio="Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
->}}
 
+[[blocks]]
+layout = "promo"
+
+[[blocks.entries]]
+hed = "Read our editors statement about this study"
+actionUrl = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
+actionText = "Continue Reading →"
+
+[[blocks.entries]]
+hed = "Take the Berks County News Consumption and Media Coverage Survey"
+actionUrl = "https://www.surveymonkey.com/r/SpotlightPABerksProject"
+actionText = "Begin survay →"
+
+
+[[blocks]]
+layout = "berks-full-form"
+
+[[blocks]]
+layout = "supplemental"
+creditName = "Heather Adams"
+creditRole = "Capitol Reporter"
+creditEmail = "heather@spotlightpa.org"
+creditBio = "Interested in learning more? Contact Heather Adams, Berks County Project Lead, at [heather@spotlightpa.org](mailto:heather@spotlightpa.org)"
+body = """
 ## A Novel Approach to Reinvigorating Local News
 
 In Berks County, the severe decline in local reporting in recent years has stifled transparency and accountability at all levels, and has made it hard to understand what is happening. To address this issue head-on, Spotlight PA is exploring the creation of a potential new journalism bureau dedicated to covering Reading and Berks County. The bureau would be independent, nonpartisan, and nonprofit, with no opinion, endorsements, or political ads. This would be Spotlight PA’s second regional bureau; the newsroom launched its first in 2022, based in State College and [covering north-central Pa](//spotlightpa.org/statecollege).
 
-Thanks to a planning grant from Berks County Community Foundation, Spotlight PA is working with a host of community partners in Berks County in 2023-4 to build a blueprint for revitalizing local news and investigative journalism. Heather Adams of Berks Community Television is serving as Spotlight PA’s Berks County Project Lead, guiding the planning process through June 2024. Her work involves assessing community needs in Berks County and studying feasibility for a bureau through conducting listening sessions and research, exploring content distribution methods, and developing the local bureau strategy with the input and direction of local voices. {{</supplemental>}}"""
-
-credit = """
-{{<featured/credit-long
-shortcode="{{<supplemental>}}"
->}}"""
-
-newsletter = """
-{{<newsletter/berks-full-form>}}
+Thanks to a planning grant from Berks County Community Foundation, Spotlight PA is working with a host of community partners in Berks County in 2023-4 to build a blueprint for revitalizing local news and investigative journalism. Heather Adams of Berks Community Television is serving as Spotlight PA’s Berks County Project Lead, guiding the planning process through June 2024. Her work involves assessing community needs in Berks County and studying feasibility for a bureau through conducting listening sessions and research, exploring content distribution methods, and developing the local bureau strategy with the input and direction of local voices. 
 """
-
 [[blocks]]
 layout = "text-3"
 title = "About Spotlight PA"
