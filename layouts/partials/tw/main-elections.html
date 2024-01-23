@@ -34,7 +34,7 @@
 <section class="bg-white px-6 py-6"></section>
 
 <section
-  class="sticky top-0 z-20 bg-white p-3 shadow-md lg:block"
+  class="sticky top-14 z-20 bg-white p-3 shadow-md md:top-16 lg:block"
   data-ga-category="internal-nav"
   x-data="{ aboutActive: '', isStuck: false }"
   @intersect:about.window="aboutActive = $event.detail"
@@ -44,7 +44,11 @@
 </section>
 
 <section
-  class="bg-white px-6 py-12 md:pt-16"
+  class="
+      mx-4 mb-5 mt-16 flex max-w-screen-xl flex-wrap gap-6 
+      sm:gap-x-10 md:mt-24 md:items-start md:justify-start lg:flex-row 
+      lg:gap-x-16 xl:mx-auto
+    "
   id="guides"
   data-ga-category="guides"
   x-data
@@ -59,12 +63,11 @@
   }}
   {{ if $newGuide }}
 
-    {{ partial "tw/list-3-col-story.html" (dict
+    {{ partial "tw/list-callout-collection.html" (dict
       "hed" "PA Election 2023: Candidate and Voting Guides"
       "pages" $newGuide
       "readMoreLink" $guide.RelPermalink
       "readMore" "Read More PA Election 2023 Guides"
-      "rows" 2
       )
     }}
   {{ end }}
@@ -160,7 +163,7 @@
 >
   <div class="mx-auto w-full max-w-prose">
     <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
     >
       Credits
     </h2>

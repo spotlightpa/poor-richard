@@ -44,9 +44,9 @@
     </div>
   {{ end }}
   <div class="group mt-3 flex-1 md:mb-4 md:mt-0 md:self-end">
-    <h3 class="{{ $hedSize }} leading-tight tracking-tight">
+    <h3 class="{{ $hedSize }} {{ $hedColor }} leading-tight tracking-tight">
       <a
-        class="{{ $hedColor }} group-hover:underline"
+        class="group-hover:underline"
         href="{{ .link }}"
         data-ga-category="hed"
       >

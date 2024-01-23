@@ -37,11 +37,18 @@ layout = "feature-plus-two"
 
 [[blocks.cta]]
 url = "/about/staff/"
-copy = "See More About Our Staff"
+body = "We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, we work for you, the public, and we would love to hear from you."
+actionText = "Connect with our team"
 
 [[blocks.cta]]
 url = "/about/board/"
-copy = "Meet Our Board"
+body = "TK - We’re led by a board of directors with a deep commitment to public-service journalism…"
+actionText = "Meet Our Board"
+
+[[blocks.cta]]
+url = "/about/partners/"
+body = "We share our unique, high-quality journalism free of charge with more than 90 community newsrooms across the state, making Spotlight PA a centralized, efficient model to bolster local media and better inform the public. "
+actionText = "Learn about our partners"
 
 [[blocks]]
 layout = "supplemental"

@@ -14,7 +14,9 @@
   "featuredStories": [
     "content/statecollege/2024-01-23-SPLFIREGAMES.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
+  ],
   "topSlots": [
     "content/news/2024-01-23-SPLDATALOSS.md",
     "content/news/2024-01-22-SPLBROADBAND0122.md",
