@@ -1,0 +1,13 @@
+<!-- Set the human-like shibboleth on form focus here -->
+<div x-data @focusin.once="$dispatch('human-like')">
+  {{ partial "tw/newsletter-full.html" (dict
+    "gaCategory" "newsletters:papost"
+    "gaForm" "newsletters:papost-full"
+    "hiddenField" "newsletter/berks-county-hidden.html"
+    "image" "2022/02/01h0-cwrk-fbjj-n32w.jpeg"
+    "hed" "Join our mailing list"
+    "dek" "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
+    "cta" "Subscribe"
+    )
+  }}
+</div>

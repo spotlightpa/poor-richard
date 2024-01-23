@@ -1,13 +1,11 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-01-18-SPLRECGOALS.md"
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
   ],
-  "subfeatures": [
-    "content/statecollege/2023-09-13-SPLOUTDOORREC.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/statecollege/2024-01-18-SPLRECGOALS.md",
     "content/statecollege/2024-01-15-SPL911.md",
-    "content/statecollege/2024-01-10-SPLLEVELUP.md",
     "content/news/2024-01-11-SPLDUBOISEVENT.md"
   ],
   "topper": []

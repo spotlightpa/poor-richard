@@ -9,6 +9,7 @@ image-description = "Gov. Josh Shapiro signs his first state budget spending pla
 internal-id = "SPLPROMISE"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-12-04T05:00:00-05:00
 series = ["Shapiro's Promises"]
 slug = "governor-josh-shapiro-promises-tracker-legislature-environment-economy"
@@ -188,7 +189,7 @@ Shapiro’s budget also included funding for universal free breakfast in public 
 
 <strong>Promise</strong>: Shapiro said during his campaign that he supported a school voucher program — specifically, one that would be targeted at children in low-achieving public schools, and would put state dollars toward their tuition in private schools.
 
-He also argued that it was possible to create a voucher program without <a href="https://investineducation.org/articles/shapiro-on-support-for-school-choice-its-what-i-believe/">taking funds away from public schools</a>, though critics pushed back that any funds used for school vouchers could always be better used to fund public education, and argued that bolstering private schools with state money would weaken public schools as an institution.
+He also argued that it was possible to create a voucher program without <a href="https://web.archive.org/20221205214533/https://investineducation.org/articles/shapiro-on-support-for-school-choice-its-what-i-believe/">taking funds away from public schools</a>, though critics pushed back that any funds used for school vouchers could always be better used to fund public education, and argued that bolstering private schools with state money would weaken public schools as an institution.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
