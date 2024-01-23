@@ -12,6 +12,7 @@ internal-id = "SPLPSURACE"
 kicker = "Penn State"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-12-16T05:00:00-05:00
 slug = "penn-state-psu-diversity-equity-inclusion-racial-justice"
 suppress-date = false
@@ -90,7 +91,7 @@ The document “was not presented to the Board of Trustees and therefore did not
 
 ## Mystery funding model
 
-In a <a href="https://vimeo.com/772604044/8e14ff1e20?embedded=true&source=video_title&owner=12944121">November town hall</a>, Bendapudi said a Center for Racial Justice would not “move the needle” on the issue because many universities were launching similar institutes. The president also cited budget concerns: The university is attempting to balance its budget by 2025 after operating at a $127 million deficit last fiscal year.
+In a <a href="https://web.archive.org/web/20221216163413/https://vimeo.com/772604044/8e14ff1e20?embedded=true&source=video_title&owner=12944121">November town hall</a>, Bendapudi said a Center for Racial Justice would not “move the needle” on the issue because many universities were launching similar institutes. The president also cited budget concerns: The university is attempting to balance its budget by 2025 after operating at a $127 million deficit last fiscal year.
 
 Key stakeholders who were in the midst of creating the center were <a href="https://www.spotlightpa.org/statecollege/2022/10/penn-state-psu-center-racial-justice-bendapudi/">told there was no money for the project</a> with the current budget shortfall. Bendapudi told the Pittsburgh Post-Gazette last month that Barron had not incorporated money for the center in the university budget.
 
@@ -106,7 +107,7 @@ The funds Barron referenced — how much and what they were used for — remain 
 
 In canceling the Center for Racial Justice, Penn State pledged to invest in the university’s existing racial justice efforts at a level that “will be at least as much as would have been committed” to the center over five years, a number that was later clarified to be at least <a href="https://www.spotlightpa.org/statecollege/2022/11/penn-state-university-psu-racial-justice-proud-boys-protest/">$3.5 million</a>.
 
-However, when asked about a financial commitment to diversity efforts during the <a href="https://vimeo.com/772604044/8e14ff1e20?embedded=true&source=video_title&owner=12944121">November town hall</a>, Bendapudi declined to provide a dollar figure on the commitment and said her administration should have a plan by early 2023.
+However, when asked about a financial commitment to diversity efforts during the <a href="https://web.archive.org/web/20221216163413/https://vimeo.com/772604044/8e14ff1e20?embedded=true&source=video_title&owner=12944121">November town hall</a>, Bendapudi declined to provide a dollar figure on the commitment and said her administration should have a plan by early 2023.
 
 “As we figure out a path forward, this is a priority,” Bendapudi said in November. “If I stand here, sit here, and tell you a number, I’m making that up. I don’t know yet.”
 

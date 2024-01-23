@@ -12,15 +12,15 @@
     "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
   ],
   "featuredStories": [
-    "content/news/2024-01-16-SPLCON24UP.md"
-  ],
-  "subfeatures": [
     "content/news/2023-01-12-SPLCONEXP.md"
   ],
+  "subfeatures": [
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
+  ],
   "topSlots": [
-    "content/statecollege/2024-01-15-SPL911.md",
-    "content/news/2024-01-12-SPLGUADLAW.md",
-    "content/news/2024-01-11-SPLEDREP.md"
+    "content/news/2024-01-22-SPLBROADBAND0122.md",
+    "content/news/2024-01-19-SPLMASTCOM.md",
+    "content/news/2024-01-18-SPLNEWSQUIZJAN1524.md"
   ],
   "topper": []
 }

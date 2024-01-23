@@ -42,11 +42,11 @@ Individuals or companies that want to dig new wells in Pennsylvania have to post
 
 If the driller fails to do that, the state Department of Environmental Protection can seize the bond and plug the well itself. But in practice, the agency rarely does that.
 
-The DEP said in a recent <a href="https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor%27s_Lapsing_Statement_Report_2022-12-29.pdf">report</a> it seized two bonds worth about $50,000 in total from uncooperative well operators between 2017 and 2021, a number that has been cited by at least one Republican lawmaker as evidence that forfeiture is not an effective tool. An agency spokesperson told Spotlight PA the number is higher when 2022 is factored in —11 bonds, worth roughly $423,000.
+The DEP said in a recent <a href="https://web.archive.org/20230105220315/https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor%27s_Lapsing_Statement_Report_2022-12-29.pdf">report</a> it seized two bonds worth about $50,000 in total from uncooperative well operators between 2017 and 2021, a number that has been cited by at least one Republican lawmaker as evidence that forfeiture is not an effective tool. An agency spokesperson told Spotlight PA the number is higher when 2022 is factored in —11 bonds, worth roughly $423,000.
 
 There have historically been discrepancies between the costs of a bond and plugging a well, and the <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=2644">bill</a> the legislature approved last year entrenched that gap.
 
-The law, which was enacted last July without then-Gov. Tom Wolf’s signature, froze the bond cost for a single conventional well at $2,500 for the next decade. In comparison, the DEP estimates the current average cost of <a href="https://www.dep.pa.gov/OurCommonWealth/pages/Article.aspx?post=91#:~:text=Once%20the%20well%20is%20plugged,to%20increase%20up%20to%20%24800%2C000.">plugging a single well is $33,000 and can get as high as $800,000</a>.
+The law, which was enacted last July without then-Gov. Tom Wolf’s signature, froze the bond cost for a single conventional well at $2,500 for the next decade. In comparison, the DEP estimates the current average cost of <a href="https://web.archive.org/20230204232300/https://www.dep.pa.gov/OurCommonWealth/pages/Article.aspx?post=91#:~:text=Once%20the%20well%20is%20plugged,to%20increase%20up%20to%20%24800%2C000.">plugging a single well is $33,000 and can get as high as $800,000</a>.
 
 Prior to the law, the Environmental Quality Board, an independent panel that oversees the regulations set by the DEP, had the <a href="https://www.post-gazette.com/business/powersource/2022/07/19/pennsylvania-new-abandoned-wells-state-law-freeze-well-bonding-oil-gas/stories/202207180082">power to adjust the costs</a> of bonds every two years.
 
@@ -90,7 +90,7 @@ But Barr also said that part of the blame rests on the department’s staff and 
 
 “They’re not doing their job. They have the tools and the ability. They fail to do so because they just don’t have the will,” Barr said. “It’s the fox guarding the henhouse.”
 
-A report released by the department last December showed that nearly <a href="https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor's_Lapsing_Statement_Report_2022-12-29.pdf">two-thirds of well developers</a> failed to submit annual production reports between 2017 and 2021, and its authors echoed Barr’s sentiment that the DEP has the legal authority and tools necessary to oversee the oil and gas industry.
+A report released by the department last December showed that nearly <a href="https://web.archive.org/20230105220315/https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor's_Lapsing_Statement_Report_2022-12-29.pdf">two-thirds of well developers</a> failed to submit annual production reports between 2017 and 2021, and its authors echoed Barr’s sentiment that the DEP has the legal authority and tools necessary to oversee the oil and gas industry.
 
 The report added that the department requires more resources, particularly more awyers, field inspectors, and geologists, but did not call for the legislature to increase funding.
 

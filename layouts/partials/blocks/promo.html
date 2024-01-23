@@ -13,36 +13,40 @@
           <li
             class="mb-2 flex flex-[0_0_100%] flex-wrap justify-between rounded bg-white p-5 shadow-md sm:flex-[0_0_48%]"
           >
-            <div
-              class="mb-2 flex flex-[0_0_160px] items-end sm:-order-1 sm:mr-5 sm:flex-[0_0_100%] md:order-none md:ml-5 md:flex-[0_0_160px]"
-            >
-              {{ $name := .image }}
-              {{ $imgOpts := dict
-                "filename" $name
-                "widthRatio" 34
-                "heightRatio" 27
-                "sizeHint" "25vw"
-                "credit" ""
-                "widths" (slice 128 256 384 512 1280)
-                "figClass" "col-start-1"
-                "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
-                "sizeHint" "400px"
-                "rounded" true
-                "shadow" false
-                "gravity" (.Page.Param "image-gravity")
-              }}
-              {{ partial "tw/image-block.html" $imgOpts }}
-            </div>
-            <h3
-              class="-order-1 mb-2 max-w-[21rem] flex-1 self-end text-4xl font-black"
-            >
-              {{- .hed -}}
+            {{ $name := .image }}
+            {{ $imgOpts := dict
+              "filename" $name
+              "widthRatio" 34
+              "heightRatio" 27
+              "sizeHint" "25vw"
+              "credit" ""
+              "widths" (slice 128 256 384 512 1280)
+              "figClass" "col-start-1"
+              "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+              "sizeHint" "400px"
+              "rounded" true
+              "shadow" false
+              "gravity" (.Page.Param "image-gravity")
+            }}
+            {{ with $name }}
+              <div
+                class="mb-2 flex w-40 flex-[0_0_160px] items-end sm:-order-1 sm:mr-5 sm:flex-[0_0_100%] md:order-none md:ml-5 md:flex-[0_0_160px]"
+              >
+                {{ partial "tw/image-block.html" $imgOpts }}
+              </div>
+            {{ end }}
+            <h3 class="-order-1 mb-2 flex-1 self-end text-4xl font-black">
+              {{ .hed }}
             </h3>
-            <p class="mb-5 max-w-sm flex-[0_0_100%]">{{- .body -}}</p>
+            {{ with .body }}
+              <p class="mb-5 max-w-sm flex-[0_0_100%]">{{ . }}</p>
+            {{ end }}
             <nav
               class="clear-both flex flex-[0_0_100%] items-center justify-between"
             >
-              <a class="font-bold underline" href="{{ .url }}">Learn More</a>
+              {{ with .url }}
+                <a class="font-bold underline" href="{{ . }}">Learn More</a>
+              {{ end }}
               <a class="btn-donate" href="{{ .actionUrl }}"
                 >{{ .actionText }}</a
               >

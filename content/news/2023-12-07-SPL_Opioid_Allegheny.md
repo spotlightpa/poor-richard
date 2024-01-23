@@ -10,6 +10,7 @@ image-description = "After questions from WESA and Spotlight PA, officials in Mc
 internal-id = "SPL_Opioid_Allegheny"
 kicker = "Health"
 modal-exclude = false
+pinned = false
 published = 2023-12-07T05:00:00-05:00
 slug = "pennsylvania-opioid-settlement-allegheny-payout"
 suppress-date = false
@@ -43,7 +44,7 @@ State Rep. Jim Gregory (R., Blair), a member of the trust that is responsible fo
 
 “I’m glad to know that everyone’s recognizing they play a role in getting this money out,” Gregory said. “And if there was a delay … we’re moving past that. The delay is done. Everybody’s on board. And now everybody recognizes that this money is meant to get out to the people of Pennsylvania.”
 
-<a href="https://tableau.alleghenycounty.us/t/PublicSite/views/OpioidSettlementFundSpending/ExpendituresandContractstoDate?iframeSizedToWindow=true&amp;%3Aembed=y&amp;%3AshowAppBanner=false&amp;%3Adisplay_count=no&amp;%3AshowVizHome=no&amp;%3Aorigin=viz_share_link#1">So far, Allegheny County has spent its settlement funds</a> on telehealth services, mobile treatment and recovery services, and <a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-opioid-settlement-syringe-services-harm-reduction/">harm-reduction efforts</a>, among other things, according to its public dashboard.
+<a href="https://web.archive.org/20231215012534/https://tableau.alleghenycounty.us/t/PublicSite/views/OpioidSettlementFundSpending/ExpendituresandContractstoDate?iframeSizedToWindow=true&%3Aembed=y&%3AshowAppBanner=false&%3Adisplay_count=no&%3AshowVizHome=no&%3Aorigin=viz_share_link#1">So far, Allegheny County has spent its settlement funds</a> on telehealth services, mobile treatment and recovery services, and <a href="https://www.spotlightpa.org/news/2023/11/pennsylvania-opioid-settlement-syringe-services-harm-reduction/">harm-reduction efforts</a>, among other things, according to its public dashboard.
 
 ## Slow to sign
 
