@@ -9,6 +9,7 @@ image-description = "Sullivan County commissioners used a portion of opioid sett
 internal-id = "SPL_OPIOID_PAY1018"
 kicker = "Health"
 modal-exclude = false
+pinned = false
 published = 2023-10-18T05:00:00-04:00
 slug = "pennsylvania-opioid-settlement-fund-receive"
 suppress-date = false
@@ -139,7 +140,7 @@ In Plum, interim manager David Soboslay said council members approved the approp
 
 And in the remaining municipality, McKeesport, an official told Spotlight PA and WESA that their “attorney is looking into this.”
 
-Allegheny County has a public dashboard that <a href="https://tableau.alleghenycounty.us/t/PublicSite/views/OpioidSettlementFundSpending/ExpendituresandContractstoDate?%3Adisplay_count=n&amp;%3Aembed=y&amp;%3AisGuestRedirectFromVizportal=y&amp;%3Aorigin=viz_share_link&amp;%3AshowAppBanner=false&amp;%3AshowVizHome=n">allows people to track its expenditures and plans </a>— a feature that’s lacking in many counties. The dashboard shows contract commitments for expanding telehealth to increase access to treatment, mobile interventions, syringe service programs, wrap-around services, and more.
+Allegheny County has a public dashboard that <a href="" data-gone="https://tableau.alleghenycounty.us/t/PublicSite/views/OpioidSettlementFundSpending/ExpendituresandContractstoDate?%3Adisplay_count=n&amp;%3Aembed=y&amp;%3AisGuestRedirectFromVizportal=y&amp;%3Aorigin=viz_share_link&amp;%3AshowAppBanner=false&amp;%3AshowVizHome=n">allows people to track its expenditures and plans </a>— a feature that’s lacking in many counties. The dashboard shows contract commitments for expanding telehealth to increase access to treatment, mobile interventions, syringe service programs, wrap-around services, and more.
 
 Montgomery County missed out on more than $143,000 from its first payment for not having enough municipal participation, according to information obtained through open records requests and later confirmed by state and county officials. But all of the required municipalities later signed on.
 
