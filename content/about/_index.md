@@ -11,6 +11,17 @@ modal-exclude = true
 
 [[blocks]]
 layout = "three-actions"
+title = "Learn more about who supports our work and how to join them"
+[[blocks.cta]]
+url = "/support/funders-and-members/"
+copy = "Meet our supporters"
+[[blocks.cta]]
+url = "/donate/"
+copy = "Become a Member"
+[[blocks.cta]]
+url = "/support/"
+copy = "Other Ways to Give"
+
 
 [[blocks]]
 layout = "series"
