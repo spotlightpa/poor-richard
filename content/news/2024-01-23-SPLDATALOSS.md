@@ -26,6 +26,8 @@ Though the majority of records have been restored, according to administration o
 
 The data was housed on servers managed by Shapiro’s Office of Administration, which oversees information technology services for most state agencies. Its spokesperson, Dan Egan, said in an emailed statement the data loss, which occurred on Jan. 3 during routine server maintenance, was “limited.” But he also said the office had launched “a thorough review” of its information technology policies and controls.
 
+Egan did not elaborate or respond to questions Tuesday seeking more information.
+
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 At least one Office of Administration employee was fired over the incident, according to two sources familiar with the matter.
@@ -36,11 +38,17 @@ Snyder said the Office of Administration has been able to restore access to “n
 
 One local law enforcement official who asked to remain anonymous told Spotlight PA that the data still missing involves evidence logs for more recent crimes — a loss that could affect how those cases are prosecuted in the future. That is because those logs document what is known in law enforcement circles as the chain of custody, or details on the time and place evidence was collected, who handled it, and where it was sent for analysis.
 
-The association representing Pennsylvania’s district attorneys did not respond to a request for comment. The association representing police chiefs in the state could not be reached for comment.
+The association representing Pennsylvania’s district attorneys said Tuesday it has not received any reports of problems so far.
 
-Shapiro’s office referred questions on the matter to the Office of Administration and State Police.
+Its executive director, Kelly Callihan, wrote in an email that her organization believes there should be “minimal impact on cases as PSP labs have policies for internally tracking evidence and documenting forensic testing that is done; often referred to as the ‘old-fashioned-way’ of managing evidence in terms of chain of custody.”
 
-Snyder said the State Police alerted district attorneys and other law enforcement officials of the data loss on Jan. 11, and another letter with updates was sent to them on Monday. Spotlight PA has requested a copy of the letter.
+The association representing police chiefs in the state did not return a request for comment.
+
+Shapiro’s office has also been silent on the issue, even though the Office of Administration falls under the governor’s jurisdiction.
+
+Among the questions his administration did not answer was whether the review of the office’s policies should be conducted by an outside agency, rather than internally.
+
+Snyder said the State Police alerted district attorneys and other law enforcement officials of the data loss on Jan. 11, and another letter with updates was sent to them on Monday. State Police did not respond to a request Tuesday for a copy of the letter.
 
 Also on Monday, Shapiro administration officials separately briefed legislative leaders on the matter.
 
@@ -55,8 +63,6 @@ There, sign-in data that allowed users to log into the system to review their pe
 Pennsylvania’s Office of Administration, which falls under the governor’s jurisdiction, is responsible for a broad swath of services, among them, overseeing information technology policies, standards, guidelines, and security for most state agencies.
 
 In 2017, as a cost-saving move amid budget problems, former Gov. Tom Wolf <a href="https://www.pennlive.com/politics/2017/01/wolf_administration_consolidat.html">directed the consolidation</a> of information technology across state agencies. Before that, many state agencies had their own IT staff and offices.
-
-<em>This story may be updated</em>.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
