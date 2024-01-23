@@ -35,11 +35,11 @@ copy = "See More About Our Impact"
 title = "Spotlight PA Team & Partners"
 layout = "feature-plus-two"
 
-[[blocks.actions]]
+[[blocks.cta]]
 url = "/about/staff/"
 copy = "See More About Our Staff"
 
-[[blocks.actions]]
+[[blocks.cta]]
 url = "/about/board/"
 copy = "Meet Our Board"
 
