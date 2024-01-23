@@ -36,33 +36,6 @@ All Pennsylvanians interested in state government issues are very well served by
 In an era where fraud and dishonesty among public officials (and their supporters) have become more frequent and blatant, it is critical to have a crusading press focused on exposing wrongdoing. This is especially true in Pennsylvania where regulations are lax or poorly enforced. The expertise and resources of Spotlight PA are essential to good government in this state.{{</testimonial-item>}}
 {{</testimonials-group>}}
 """
-supplemental = """
-{{<supplemental>}}
-## Supplemental Shortcode
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris augue. Eu nisl nunc mi ipsum faucibus. Maecenas pharetra convallis posuere morbi. 
-
-Massa vitae tortor condimentum lacinia quis vel eros. Ipsum nunc aliquet bibendum enim facilisis. Nisl suscipit adipiscing bibendum est ultricies integer quis. Curabitur vitae nunc sed velit dignissim sodales. Pharetra sit amet aliquam id diam maecenas ultricies. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet luctus venenatis lectus magna fringilla urna. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Et malesuada fames ac turpis. Quam id leo in vitae turpis. Pellentesque elit eget gravida cum sociis natoque.
-
-Aenean sed adipiscing diam donec. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Nunc sed velit dignissim sodales. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Duis convallis convallis tellus id interdum velit. 
-
-Magna fermentum iaculis eu non. Faucibus in ornare quam viverra orci sagittis eu volutpat. At erat pellentesque adipiscing commodo elit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Turpis egestas integer eget aliquet nibh praesent tristique. Semper quis lectus nulla at volutpat diam ut.
-
-Turpis nunc eget lorem dolor sed viverra ipsum. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Quisque sagittis purus sit amet volutpat consequat mauris. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Quis enim lobortis scelerisque fermentum dui faucibus in. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Nisl nisi scelerisque eu ultrices vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Felis bibendum ut tristique et. Ac turpis egestas sed tempus urna et pharetra. Lectus urna duis convallis convallis tellus. A cras semper auctor neque vitae. [Ullamcorper velit](//spotlightpa.org) sed ullamcorper morbi tincidunt ornare. Libero volutpat sed cras ornare arcu dui.
-
-
-*— Accepts **markdown***
-{{</supplemental>}}"""
-
-credit = """
-{{<featured/credit-long
-hed="Custom Credit-Long Shortcode"
-name="Wyatt Massey"
-role="Capitol Reporter"
-email="wmassey@spotlightpa.org"
-bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
-shortcode="{{<supplemental>}}"
->}}"""
 
 form ="""
 {{<featured/promo-contact-form
