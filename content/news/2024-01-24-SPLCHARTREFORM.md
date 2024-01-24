@@ -90,7 +90,7 @@ Lawmakers are entering talks on charter school policy with the understanding tha
 
 Lawmakers largely consider cyber charter schools to lie within that 10%. Enrollment in these online-only schools <a href="https://www.researchforaction.org/research-resources/k-12/the-negative-fiscal-impact-of-cyber-charter-school-expansion-in-pennsylvania-due-to-covid-19/">has ballooned since the pandemic</a>, making them a particular focus for legislators — especially because despite their lower facilities costs, they’re funded through the same formula that brick-and-mortar charters are.
 
-Legislative leaders say this consensus that the law doesn’t appropriately deal with cyber charter schools makes them an easier target for reform. For instance, some lawmakers, particularly in the GOP, have said they’re open to a tier system for disabled students’ tuition in cyber charters but not necessarily in brick-and-mortar charters. However, there is less agreement about applying similar changes to brick-and-mortar charter schools, which are on average larger and more establi
+Legislative leaders say this consensus that the law doesn’t appropriately deal with cyber charter schools makes them an easier target for reform. For instance, some lawmakers, particularly in the GOP, have said they’re open to a tier system for disabled students’ tuition in cyber charters but not necessarily in brick-and-mortar charters. 
 
 Schweyer, the Democrat, said he would personally be in favor of applying the tiers more broadly, but that “all of this is a hard sell.”
 
