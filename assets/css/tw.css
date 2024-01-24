@@ -206,7 +206,7 @@
 }
 
 .btn-signup-lg {
-  @apply inline-block rounded bg-yellow-4 px-8 py-5 font-sans text-xl font-bold tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
+  @apply inline-block rounded bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
 }
 
 .btn-donate {

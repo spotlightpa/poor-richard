@@ -39,6 +39,7 @@ layout = "feature-plus-two"
 url = "/about/staff/"
 body = "We’ve assembled some of the most talented reporters from across Pennsylvania and the United States to focus on issues and stories that would otherwise go untold. In short, we work for you, the public, and we would love to hear from you."
 actionText = "Connect with our team"
+image = "2024/01/01jv-232a-1476-j9pm.jpeg"
 
 [[blocks.cta]]
 url = "/about/board/"

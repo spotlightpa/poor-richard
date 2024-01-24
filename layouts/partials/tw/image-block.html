@@ -9,6 +9,7 @@
 {{ $rounded := cond (.rounded|not|not) "rounded" "" }}
 {{ $shadow := cond (.shadow|not|not) "shadow" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
+{{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
 
@@ -43,7 +44,7 @@
   itemtype="https://schema.org/ImageObject"
 >
   <div
-    class="{{ $rounded }} {{ $shadow }} relative w-full overflow-clip bg-g-3"
+    class="{{ $rounded }} {{ $shadow }} {{ $containerClass }}"
     {{ if .overlay }}
       x-data="{ showOverlay: true }"
     {{ end }}
