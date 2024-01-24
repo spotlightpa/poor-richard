@@ -22,7 +22,7 @@
 <input
   type="hidden"
   x-data="{ humanLike: false }"
-  x-init="setTimeout(()=>{ humanLike = true }, 15000)"
+  x-init="setTimeout(()=>{ humanLike = true }, 5000)"
   :name="humanLike? 'shibboleth_timestamp': ''"
   :value="humanLike? new Date().toISOString(): ''"
   @human-like.window="humanLike = true"
