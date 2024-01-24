@@ -1,6 +1,6 @@
 +++
 authors = ["Angela Couloumbis"]
-blurb = "Affected records may include information about how evidence was handled once it reached the lab, as well as communication logs and digital images, Smith said."
+blurb = "Affected records may include information about how evidence was handled once it reached the lab, as well as communication logs and digital images."
 byline = "Angela Couloumbis"
 description = "Affected PA State Police records may include information about how evidence was handled once it reached the lab."
 image = "2023/08/01jd-qpky-261c-kkxn.jpeg"
