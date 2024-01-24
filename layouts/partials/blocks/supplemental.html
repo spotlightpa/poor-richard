@@ -6,6 +6,8 @@
   {{ $role :=  .creditRole }}
   {{ $email :=  .creditEmail }}
   {{ $bio :=  .creditBio }}
+  {{ $imageWidth := .imageWidth | default 188 | int }}
+  {{ $imageHeight := .imageHeight | default 188 | int }}
   <article
     class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
   >
@@ -19,17 +21,17 @@
 
 
       <aside
-        class="sticky top-0 grid-cols-3 gap-3 self-start md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
+        class="sticky top-20 grid-cols-3 gap-3 self-start md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
       >
         {{ if $image }}
           {{ $imgOpt := dict
             "filename" $image
-            "width" 188
-            "height" 188
+            "width" $imageWidth
+            "height" $imageHeight
           }}
           {{ $thumb := partial "helper/imgproxy" $imgOpt }}
           <img
-            class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
+            class="row-span-2 row-start-1 mb-1 filter md:mb-6 md:w-48"
             src="{{ $thumb }}"
             alt="Picture of {{ $name }}"
           />

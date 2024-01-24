@@ -53,6 +53,12 @@ actionText = "Learn about our partners"
 
 [[blocks]]
 layout = "supplemental"
+creditName = "Spotlight PA Logo"
+creditImage = "2024/01/01jv-2e2e-gw97-m9rf.png"
+headshot = false
+creditBio = "&nbsp;"
+imageWidth = "253"
+imageHeight = "345"
 body = """
 ## Our History
 
