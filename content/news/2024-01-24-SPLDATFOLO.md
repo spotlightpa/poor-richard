@@ -13,7 +13,7 @@ pinned = false
 published = 2024-01-24T16:47:32.223-05:00
 slug = "pennsylvania-state-police-evidence-records-deleted-recovery-josh-shapiro-office-of-administration"
 suppress-date = false
-title = "Pa. State Police: Some deleted crime lab records ‘no longer accessible’"
+title = "Some deleted Pa. crime lab records ‘no longer accessible,’ State Police say"
 title-tag = "Some deleted PA State Police records ‘no longer accessible’"
 topics = ["Criminal Justice"]
 +++
