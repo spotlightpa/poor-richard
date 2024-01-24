@@ -26,11 +26,6 @@ takeover = """
 {{<takeover-hed title="Please register for your preferred date and time:">}}
 
 {{<takeover-event
-hed="at Fleetwood Public Library"
-dateVerbose="Tuesday, January 23 – 5:30-7:30pm"
-registration="https://spotlight-pa-berks.ticketleap.com/listening-session-fleetwood-library/"
->}}
-{{<takeover-event
 hed="at LGBT Center of Greater Reading"
 dateVerbose="Thursday, January 26 – 6:00-8:00pm"
 registration="https://spotlight-pa-berks.ticketleap.com/listening-session-lgbt-center/"
