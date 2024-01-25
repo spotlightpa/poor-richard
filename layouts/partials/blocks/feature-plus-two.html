@@ -12,8 +12,7 @@
         class="-mt-16 w-full sm:-mt-20 sm:grid sm:grid-cols-12 md:grid  md:grid-cols-14"
       >
         {{ range . }}
-          <a
-            href="{{ .url }}"
+          <div
             class="group relative col-span-6 flex flex-col items-center justify-end first:row-span-2 first:pt-60 sm:overflow-hidden sm:first:col-span-12 md:col-span-5 md:first:col-span-9 first:md:pt-[460px] lg:col-span-6 lg:first:col-span-8"
           >
             {{ $name := .image }}
@@ -45,16 +44,17 @@
               class="z-10 row-span-1 row-start-3 mx-4 my-10 mb-16 mr-4 flex max-w-md flex-wrap justify-end rounded border-b-4 border-black bg-black  group-first:max-w-none sm:mb-20 sm:ml-0 sm:rounded-l-none sm:rounded-r group-first:sm:mr-24 group-first:sm:border-yellow"
             >
               <p
-                class="w-full p-5 leading-relaxed sm:text-lg group-first:sm:max-w-xl"
+                class="w-full p-5 text-sm leading-relaxed group-first:sm:max-w-xl md:text-base lg:text-lg"
               >
                 {{ .body }}
               </p>
-              <span
+              <a
+                href="{{ .url }}"
                 class="btn-signup-lg -mb-12 mr-8 sm:mr-0 group-first:sm:-mr-10"
-                >{{ .actionText }}</span
+                >{{ .actionText }}</a
               >
             </div>
-          </a>
+          </div>
         {{ end }}
       </nav>
     {{ end }}

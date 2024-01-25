@@ -1,0 +1,22 @@
+{{ $items := slice }}
+{{ $src := index (index site.Data .) "impactbase" }}
+{{ range $src }}
+  {{ $item := dict
+    "date" .date
+    "body" .body
+    "dek" .dek
+    "eyebrow" .kicker
+    "url" .url
+  }}
+  {{ with $page := site.GetPage (.page | default "-") }}
+    {{ $params := partialCached "helper/page-params" $page.Page $page.RelPermalink }}
+    {{ $item = $item | merge (dict
+      "page" $page
+      "params" $params
+      )
+    }}
+  {{ end }}
+  {{ $items = $items | append $item }}
+{{ end }}
+
+{{ return $items }}
