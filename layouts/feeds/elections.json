@@ -4,7 +4,7 @@
 {{- range $stories -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $item := dict
-    "id" .Permalink
+    "id" .File.UniqueID
     "url" .Permalink
     "title" .Title
     "date_published" $date
