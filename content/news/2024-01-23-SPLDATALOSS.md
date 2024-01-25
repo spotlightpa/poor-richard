@@ -20,8 +20,7 @@ topics = ["Criminal Justice"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-<em><b>Update, Jan. 24: <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-state-police-evidence-records-deleted-recovery-josh-shapiro-office-of-administration/">Some deleted Pa. crime lab records ‘no longer accessible,’ according to State Police official.</a><em><b>
-
+<em>Update, Jan. 24: </em><a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-state-police-evidence-records-deleted-recovery-josh-shapiro-office-of-administration/"><em>Some deleted Pa. crime lab records ‘no longer accessible,’ according to State Police official.</em></a>
 
 HARRISBURG — Thousands of records, including evidence logs from the Pennsylvania State Police’s crime labs, were accidentally deleted from state servers at the start of the year — the result of “human error,” Gov. Josh Shapiro’s administration said.
 
