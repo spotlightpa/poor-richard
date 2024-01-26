@@ -14,14 +14,13 @@ layout = "three-actions"
 title = "Learn more about who supports our work and how to join them"
 [[blocks.cta]]
 url = "/support/funders-and-members/"
-copy = "Meet our supporters"
+actionText = "Meet our supporters"
 [[blocks.cta]]
 url = "/donate/"
-copy = "Become a Member"
+actionText = "Become a Member"
 [[blocks.cta]]
 url = "/support/"
-copy = "Other Ways to Give"
-
+actionText = "Other Ways to Give"
 
 [[blocks]]
 layout = "impact"
@@ -60,6 +59,7 @@ headshot = false
 creditBio = "&nbsp;"
 imageWidth = "253"
 imageHeight = "345"
+menuTitle = "About"
 body = """
 ## Our History
 
@@ -69,12 +69,24 @@ With support from foundations, individual members, and more, Spotlight PA — no
 
 Since its inception, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Our work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond. 
 """
+[[blocks.cta]]
+url = "/about/mission/"
+actionText = "Our Mission"
+[[blocks.cta]]
+url = "/about/annual-reports/"
+actionText = "Annual Reports"
+[[blocks.cta]]
+url = "/about/990-forms/"
+actionText = "990 Forms"
+[[blocks.cta]]
+url = "/about/faq/"
+actionText = "FAQ"
 
 +++
 Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more.
 
 Our work is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
 
-### Our Mission
+<h3><span class="mb-5 text-xl font-black sm:text-2x md:text-4xl">Our Mission</span></h3>
 
 The mission of Spotlight PA is to hold powerful public and private forces — especially governments, elected officials, businesses, and special interests — to account through urgent and compelling investigative and public-service journalism that drives change and strengthens our democracy, the state, and all who live here.
