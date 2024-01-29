@@ -12,13 +12,17 @@
     "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
   ],
   "featuredStories": [
-    "content/news/2024-01-26-SPLABORTSTATUS.md"
+    "content/news/2024-01-29-spl_geisinger_newsletter_0115.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2023-12-20-spl_marijuana_data.md",
+    "content/news/2024-01-04-SPLANXRES.md",
+    "content/news/2023-11-22-SPL_DOC_DATA.md"
+  ],
   "topSlots": [
+    "content/news/2024-01-26-SPLABORTSTATUS.md",
     "content/statecollege/2024-01-26-SPLPSUBUDCUT.md",
-    "content/news/2024-01-25-SPL_OPIOID125.md",
-    "content/news/2024-01-24-SPLDATFOLO.md"
+    "content/news/2024-01-25-SPL_OPIOID125.md"
   ],
   "topper": []
 }
