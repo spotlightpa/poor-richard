@@ -73,14 +73,36 @@ Since its inception, Spotlight PA has become a leading national model for indepe
 url = "/about/mission/"
 actionText = "Our Mission"
 [[blocks.cta]]
+url = "/about/team/"
+actionText = "Our Team"
+[[blocks.cta]]
+url = "/about/board/"
+actionText = "Board of Directors"
+[[blocks.cta]]
 url = "/about/annual-reports/"
 actionText = "Annual Reports"
 [[blocks.cta]]
 url = "/about/990-forms/"
 actionText = "990 Forms"
 [[blocks.cta]]
+url = "/about/partners/"
+actionText = "Partners"
+[[blocks.cta]]
+url = "/support/funders-and-members"
+actionText = "Supporters"
+[[blocks.cta]]
 url = "/about/faq/"
 actionText = "FAQ"
+[[blocks.cta]]
+url = "/about/jobs/"
+actionText = "Careers"
+[[blocks.cta]]
+url = "/contact/"
+actionText = "Contact Us"
+[[blocks.cta]]
+url = "/tips/"
+actionText = "Send a tip"
+
 
 +++
 Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more.
