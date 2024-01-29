@@ -20,6 +20,8 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Jan. 29: This story has been updated with details about a </em></strong><a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-abortion-rights-supreme-court-constitution-guarantee-ruling-commonwealth-court/"><strong><em>new state Supreme Court ruling</em></strong></a><strong><em>.</em></strong>
+
 HARRISBURG — Abortion is legal in Pennsylvania. And with a Democratic governor in power who supports access, it will almost certainly remain so for at least the next three years.
 
 But that doesn’t mean it’s as easy to get an abortion in the commonwealth as supporters want it to be.
@@ -28,7 +30,7 @@ It also doesn’t mean that attempts to restrict the procedure are dead. Less th
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-With new federal abortion laws not forthcoming post-<em>Roe v. Wade</em>,<em> </em>and decisions about access still firmly in states’ hands, here’s a primer on where abortion policy stands in Pennsylvania.
+With new federal abortion laws not forthcoming post-<em>Roe v. Wade</em>,<em> </em>decisions about access still firmly in states’ hands, and a big case working its way through Pennsylvania courts, here’s a primer on where abortion policy stands in the commonwealth.
 
 ## What is Pennsylvania’s abortion law?
 
@@ -68,13 +70,17 @@ One big question mark remaining about abortion access in Pennsylvania has to do 
 
 In 2019, abortion providers sued the state, arguing that the ban — which only excludes cases of rape, incest, and serious health risk — violates the state constitution’s equal protection provisions and Equal Rights Amendment.
 
-The case has been working its way through the courts and <a href="https://www.womenslawproject.org/2023/09/18/allegheny-reproductive-health-center-v-pa-department-of-human-services-medicaid-case/#:~:text=The%20central%20claim%20in%20the,a%20case%20called%20Fischer%20v.">is now before the Pennsylvania Supreme Court</a>, which heard oral arguments in 2022 and could rule at any time.
+The case has been working its way through the courts since. On Jan. 29, the Pennsylvania Supreme Court <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-abortion-rights-supreme-court-constitution-guarantee-ruling-commonwealth-court/">issued a ruling</a> that didn’t resolve the question but did offer insights into justices’ thinking and possible future decisions on abortion.
+
+In five separate opinions, the justices who participated in the case affirmed that they believe the Pennsylvania Constitution strongly protects against sex-based discrimination. They ordered the lower Commonwealth Court to reconsider the case, which it will have to do with the high court’s discrimination opinions in mind.
+
+The state Supreme Court did not decide whether Medicaid must cover abortions, though justices did hint that they may rule that at a later date. Two justices also said they believe the state Equal Rights Amendment should be interpreted as protecting the right to an abortion.
 
 The other abortion-related action currently happening in the commonwealth is likewise mostly geared toward expanding access.
 
 Until recently, the commonwealth’s legislature was fully controlled by Republicans. Under that status quo, abortion-restricting legislation came up frequently. Perhaps most significantly, the body began <a href="https://whyy.org/articles/pennsylvania-house-senate-constitutional-amendment-abortion-gop/">moving an amendment</a> in 2022 that would enshrine language in the state constitution that explicitly says abortion is not a protected right.
 
-The move would tie the state Supreme Court’s hands and prevent judges from ruling any abortion-restricting legislation unconstitutional.
+The move would tie the state Supreme Court’s hands and prevent judges from construing that the constitution, as it stands, protects the right to abortion. It could also prevent them from ruling future abortion-restricting legislation unconstitutional.
 
 Since the amendment passed its first legislative hurdle that year, two things have changed: Republicans’ gubernatorial candidate, state Sen. Doug Mastriano (R., Franklin), made abortion a major issue in his 2022 campaign and lost decisively to Shapiro; and Republicans lost the state House.
 
