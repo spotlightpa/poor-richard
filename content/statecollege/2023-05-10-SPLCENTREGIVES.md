@@ -11,6 +11,8 @@ internal-budget = "All donations to Spotlight PA during Centre Gives, a 36-hour 
 internal-id = "SPLCENTREGIVES"
 kicker = "Editor's Notes"
 modal-exclude = false
+no-index = true
+pinned = false
 published = 2023-05-10T08:00:00-04:00
 slug = "centre-county-gives-state-college-spotlight-pa-donate"
 suppress-date = false
@@ -23,7 +25,7 @@ Over the past year, Spotlight PA State College has established itself as a vital
 
 As a Centre County native, I’m proud to lead this bureau of journalists working tirelessly in pursuit of the truth. And today, you can help us continue this critical work.
 
-We’ve been given the tremendous opportunity to participate in Centre Gives, a 36-hour online fundraiser on May 10-11, to further our public-service mission. Donate to Spotlight PA’s Centre Gives campaign at <a href="https://centregives.org/organizations/273-spotlight-pa">centregives.org/organizations/273-spotlight-pa</a>.
+We’ve been given the tremendous opportunity to participate in Centre Gives, a 36-hour online fundraiser on May 10-11, to further our public-service mission. Donate to Spotlight PA’s Centre Gives campaign at centregives.org.
 
 Your support makes our impactful journalism possible, driving accountability, transparency, and positive change. A few examples:
 
@@ -53,4 +55,4 @@ Your financial support allows us to publish our work at no cost to readers, and 
 
 We’re grateful to our local partners for helping us deliver essential information to our Centre County readers.
 
-So this Centre Gives, donate to Spotlight PA to support the continued growth of vital local news in Centre County. Go to <a href="https://centregives.org/organizations/273-spotlight-pa">centregives.org/organizations/273-spotlight-pa</a> to make your donation.
+So this Centre Gives, donate to Spotlight PA to support the continued growth of vital local news in Centre County. Go to centregives.org to make your donation.
