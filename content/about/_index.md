@@ -27,7 +27,7 @@ layout = "impact"
 title = "Journalism that Gets Results"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 image = "2024/01/01jv-4sqp-ts1v-9498.jpeg"
-url = "/about/impact/"
+url = "/investigations/"
 actionText = "Read our investigations"
 body = "Short intro paragraph about transparency, accountability, and results. One featured story with image, description, and link to series. 3-4 statements of impact with link to story / series"
 
