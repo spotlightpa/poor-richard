@@ -12,16 +12,13 @@
     "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
   ],
   "featuredStories": [
-    "content/news/2024-01-30-ELECHOW2024.md"
+    "content/news/2024-01-31-SPLTRANSIT.md"
   ],
-  "subfeatures": [
-    "content/news/2024-01-16-SPLPRIM24DATE.md",
-    "content/news/2024-01-02-SPLEXWISH24.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2024-01-30-ELECHOW2024.md",
     "content/news/2024-01-29-SPLCOURTABORT.md",
-    "content/news/2024-01-29-spl_geisinger_newsletter_0115.md",
-    "content/statecollege/2024-01-26-SPLPSUBUDCUT.md"
+    "content/news/2024-01-29-spl_geisinger_newsletter_0115.md"
   ],
   "topper": []
 }
