@@ -3,12 +3,12 @@
 }}
 {{ $imageDescription := page.Param "river-promo-description" }}
 {{ $link := page.Param "river-promo-link" }}
-{{ $desktopImages := page.Param "river-promo-desktop-images" }}
-{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
-{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
-{{ $mobileImages := page.Param "river-promo-mobile-images" }}
-{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
-{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
+{{ $desktopImages := page.Param "promo-desktop-images" }}
+{{ $desktopWidth := page.Param "promo-desktop-width" }}
+{{ $desktopHeight := page.Param "promo-desktop-height" }}
+{{ $mobileImages := page.Param "promo-mobile-images" }}
+{{ $mobileWidth := page.Param "promo-mobile-width" }}
+{{ $mobileHeight := page.Param "promo-mobile-height" }}
 
 {{ $hiddenField := .hiddenField }}
 {{ $newsletterHed := .newsletterHed | default "Latest From Our Daily Newsletter" }}
@@ -91,8 +91,8 @@
             {{ partial "tw/promo-single.html" (dict
               "class" "mx-auto flex items-center justify-center"
               "images" (page.Param "ad-featured-images")
-              "width" 250
-              "height" 300
+              "width" 300
+              "height" 250
               "link" (page.Param "ad-featured-link")
               "description" (page.Param "ad-featured-description")
               )
