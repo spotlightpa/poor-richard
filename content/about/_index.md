@@ -27,9 +27,9 @@ layout = "impact"
 title = "Journalism that Gets Results"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 image = "2024/01/01jv-4sqp-ts1v-9498.jpeg"
-url = "/about/impact/"
+url = "/investigations/"
 actionText = "Read our investigations"
-body = "Short intro paragraph about transparency, accountability, and results. One featured story with image, description, and link to series. 3-4 statements of impact with link to story / series"
+body = "At Spotlight PA, we believe the most important stories are ones that follow the money, reveal systemic failures of our state government, and raise awareness about critical needs in our communities. Below are just a few of our investigations that have made an impact on our state."
 
 [[blocks]]
 title = "Spotlight PA Team & Partners"
@@ -43,12 +43,12 @@ image = "2024/01/01jv-232a-1476-j9pm.jpeg"
 
 [[blocks.cta]]
 url = "/about/board/"
-body = "TK - We’re led by a board of directors with a deep commitment to public-service journalism…"
+body = "We’re led by a board of directors with a deep commitment to nonprofit, public-service journalism."
 actionText = "Meet Our Board"
 
 [[blocks.cta]]
 url = "/about/partners/"
-body = "We share our unique, high-quality journalism free of charge with more than 90 community newsrooms across the state, making Spotlight PA a centralized, efficient model to bolster local media and better inform the public. "
+body = "We share our unique, high-quality journalism free of charge with more than 90 community newsrooms across the state, making Spotlight PA a centralized, efficient model to bolster local media and better inform the public."
 actionText = "Learn about our partners"
 
 [[blocks]]
@@ -63,29 +63,44 @@ menuTitle = "About"
 body = """
 ## Our History
 
-Spotlight PA was founded in 2019 by The Lenfest Institute for Journalism and a coalition of newsrooms from across Pennsylvania to address a crisis in journalism: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting in the state. 
+Spotlight PA was founded in 2019 by The Lenfest Institute for Journalism and a coalition of newsrooms from across Pennsylvania to address a crisis in journalism: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting in the state.
 
-With support from foundations, individual members, and more, Spotlight PA — now an independent 501c3 organization — is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania. 
+With support from foundations, individual members, and more, Spotlight PA — now an independent 501c3 organization — is uncovering stories that would otherwise go untold and cutting through partisanship and misinformation to deliver trusted, reliable journalism at no cost to all in Pennsylvania.
 
-Since its inception, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Our work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond. 
+Since its inception, Spotlight PA has become a leading national model for independent, collaborative journalism that empowers residents and gets results. Our work has won numerous state and national awards and driven meaningful change and policy reforms in the state capital and beyond.
+
 """
 [[blocks.cta]]
 url = "/about/mission/"
 actionText = "Our Mission"
 [[blocks.cta]]
-url = "/about/annual-reports/"
-actionText = "Annual Reports"
+url = "/about/team/"
+actionText = "Our Team"
 [[blocks.cta]]
-url = "/about/990-forms/"
-actionText = "990 Forms"
+url = "/about/board/"
+actionText = "Board of Directors"
+
 [[blocks.cta]]
-url = "/about/faq/"
-actionText = "FAQ"
+url = "/about/partners/"
+actionText = "Partners"
+[[blocks.cta]]
+url = "/support/funders-and-members"
+actionText = "Supporters"
+[[blocks.cta]]
+url = "/about/jobs/"
+actionText = "Careers"
+[[blocks.cta]]
+url = "/contact/"
+actionText = "Contact Us"
+[[blocks.cta]]
+url = "/tips/"
+actionText = "Send a tip"
+
 
 +++
 Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more.
 
-Our work is powered by thousands of members across Pennsylvania as well as a dedicated and growing group of institutional funders, foundations, and more. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
+We’re a nonprofit organization powered by thousands of donors, so we can bring you stories that are free from any political or corporate interests. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
 
 <h3><span class="mb-5 text-xl font-black sm:text-2x md:text-4xl">Our Mission</span></h3>
 
