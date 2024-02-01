@@ -13,6 +13,7 @@ internal-id = "SPLREBATEGUIDE"
 kicker = "Economy"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-28T05:00:00-04:00
 slug = "pa-property-tax-rebate-status-pennsylvania-guide"
 suppress-date = false
@@ -61,7 +62,7 @@ Yes! In July, state lawmakers approved a one-time increase to this year’s reba
 
 ## How do I get the bonus?
 
-If you’ve already filed your application for this year, you don’t have to do anything else. The one-time bonuses will be <a href="https://www.revenue.pa.gov/IncentivesCreditsPrograms/PropertyTaxRentRebateProgram/Pages/Bonus-Rebates.aspx">paid out</a> automatically, according to the Department of Revenue.
+If you’ve already filed your application for this year, you don’t have to do anything else. The one-time bonuses will be <a href="https://web.archive.org/20220804215347/https://www.revenue.pa.gov/IncentivesCreditsPrograms/PropertyTaxRentRebateProgram/Pages/Bonus-Rebates.aspx">paid out</a> automatically, according to the Department of Revenue.
 
 If you haven’t filed yet for 2021 — it’s not too late. You have until the end of the year. The department encourages you to apply <a href="https://mypath.pa.gov/_/">online</a>.
 
