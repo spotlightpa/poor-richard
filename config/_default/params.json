@@ -16,7 +16,7 @@
   "ad-rail-images": [],
   "ad-rail-link": "",
   "banner": "\u003cstrong\u003eWhat should Spotlight PA do next?\u003c/strong\u003e Tell us in our annual reader survey »",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ffcb03",
   "banner-link": "https://us21.list-manage.com/survey?u=efd97981722dbde9a2ba34455\u0026id=083ebf4cb6\u0026attribution=false",
   "banner-text-color": "#000000",
@@ -67,12 +67,12 @@
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Share your thoughts on what Spotlight PA should do next in our reader survey.",
+  "sidebar-top-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01jt/jgad/survey-v2-600-x-500.jpg"
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
   ],
-  "sidebar-top-link": "https://us21.list-manage.com/survey?u=efd97981722dbde9a2ba34455\u0026id=083ebf4cb6\u0026attribution=false",
+  "sidebar-top-link": "/newsletters",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
