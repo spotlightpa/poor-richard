@@ -14,12 +14,12 @@
     class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-6 lg:relative xl:px-0"
   >
     <div
-      class="sm:order-0 z-40 h-10 w-40 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-72"
+      class="sm:order-0 z-40 h-10 w-44 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-72"
       :class="isOpen ? 'sm:translate-y-2' : ''"
     >
-      <a id="top" class="flex" href="/" data-ga-category="logo">
+      <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
-          class="-sm:mr-1 h-8 w-auto flex-1 pb-[2px] sm:h-12 md:mr-0 md:h-14"
+          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-14 md:w-[15rem]"
           x-cloak
           x-show="atTop"
           x-transition:enter="transition ease-out duration-150"
@@ -170,7 +170,7 @@
         data-ga-category="donate"
         class="
           group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
-          sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2
+          sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4
           "
         href="/donate"
       >
