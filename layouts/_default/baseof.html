@@ -105,7 +105,7 @@
     {{ block "modal" . }}
       {{ if .Param "modal-exclude" | not }}
         {{ if .Param "sticky-active" }}
-          {{ partial "tw/modal-sticky.html" . }}
+          {{ partial "tw/modal-segment.html" . }}
         {{ end }}
         {{ if .Param "newsletter-active" }}
           {{ partial "tw/modal-ribbon.html" ( dict
