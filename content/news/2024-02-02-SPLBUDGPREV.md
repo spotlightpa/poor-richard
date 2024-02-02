@@ -70,7 +70,7 @@ And the plan would create a new, performance-based funding formula that would ap
 
 The administration hasn’t yet released details about paying for the plan, saying only that the governor will pitch “a significant investment.” In <a href="https://senatorpittman.com/2024/01/26/senate-majority-leader-pittman-responds-to-governor-shapiros-higher-education-proposal/">initial</a> press releases, Republican legislative leaders have said they support Shapiro’s proposals but want to see funding details.
 
-{{<picture src="external/08v6tmkadg07fyknwy3pb8sm3m.jpeg" description="PASSHE Chancellor Dan Greenstein" caption="PASSHE Chancellor Dan Greenstein said in 2020 that the system needed to “dramatically” accelerate a redesign." credit="Commonwealth Media Services">}}
+{{<picture src="external/r9gjy25x6j5zh5yxvrbkqs1dz0.jpeg" description="PASSHE Chancellor Dan Greenstein" caption="PASSHE Chancellor Dan Greenstein said in 2020 that the system needed to “dramatically” accelerate a redesign." credit="Commonwealth Media Services">}}
 
 Shapiro also announced that he would propose a $1.5 billion increase in state funding for public transit over the next five years, which would mean nearly $283 million for the next fiscal year. The funding would come from an increase in the amount of the state’s sales tax revenue that is dedicated to transit.
 
