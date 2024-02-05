@@ -4,8 +4,9 @@ blurb = "Billions of dollars are coming to states to help them respond to the op
 byline = "Ed Mahon of Spotlight PA and Sarah Boden of WESA"
 description = "Billions of dollars are coming to states to help them respond to the opioid epidemic, but Pennsylvania's drug paraphernalia law is creating conflict."
 image = "2024/02/01jw-1w38-jfh5-1d6r.jpeg"
+image-caption = "Westmoreland County commissioners approved giving $150,000 in opioid settlement money to the nonprofit FAVOR ~ Western PA, which serves people in addiction and recovery. But the county later pulled its funding."
 image-credit = "Nate Smallwood / For Spotlight PA"
-image-description = "Westmoreland County commissioners approved giving $150,000 in opioid settlement money to the nonprofit FAVOR ~ Western PA, which serves people in addiction and recovery. But the county later pulled its funding."
+image-description = "Outside the nonprofit FAVOR ~ Western PA, which serves people in addiction and recovery. "
 internal-id = "spl_wesa_FAVOR"
 kicker = "Health"
 modal-exclude = false
@@ -68,9 +69,9 @@ But on Dec. 21, county commissioners unanimously approved rescinding the agreeme
 
 Vital Strategies is providing funding to FAVOR for an electronic health record system to help the organization track the services it delivers. Financial support from Vital Strategies will also go toward the purchase of a vehicle that will help FAVOR take people to doctor’s appointments, court dates, and other places they need to go.
 
-“FAVOR is in an incredibly rural part of the state with an immense need,” said Soslow. “They’re doing incredible work saving people’s lives.”
+“FAVOR is in an incredibly rural part of the state with an immense need,” said Soslow. “They’re doing incredible work saving people’s lives.”<strong></strong>
 
-{{<picture src="2024/02/01jv-tzkq-vrr2-tdc8.jpeg" description="Photo of Kim Botteicher" caption="Kim Botteicher, executive director of a nonprofit service provider in Westmoreland County, wants Pennsylvania lawmakers to allow syringe services. “It’s right. It’s good. And it works,” she said." credit="Nate Smallwood / For Spotlight PA">}}
+{{<picture src="2024/02/01jw-1w9n-ky0c-v0nh.jpeg" width-ratio="2000" height-ratio="2800" description="Photo of Kim Botteicher" caption="Kim Botteicher, executive director of a nonprofit service provider in Westmoreland County, wants Pennsylvania lawmakers to allow syringe services. “It’s right. It’s good. And it works,” she said." credit="Nate Smallwood / For Spotlight PA">}}
 
 In January, Botteicher celebrated FAVOR’s expansion into a second location in Bolivar. The organization purchased a former Methodist church, which Botteicher intends to use as an emergency shelter. She said a person waiting to enter treatment recently stayed overnight at the building, sleeping on a couch. And Botteicher has bigger plans, including renovating the building.
 
