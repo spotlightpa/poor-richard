@@ -21,7 +21,7 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-<strong>BOLIVAR — </strong>Kim Botteicher decided to speak out about her work offering syringe services in Westmoreland County, hoping to prompt change that she believes would help save lives.
+BOLIVAR — Kim Botteicher decided to speak out about her work offering syringe services in Westmoreland County, hoping to prompt change that she believes would help save lives.
 
 But after she went public, county government officials pulled $150,000 in opioid settlement funding they had approved for her organization — money Botteicher said she planned to spend on hiring additional staff to work with people who are dealing with addiction and recovery, as well as their families. None of the funds<strong> </strong>would have gone to syringe services, she said in January.
 
@@ -121,7 +121,7 @@ In the Pennsylvania House, a bill that would create an exception for syringe ser
 
 Botteicher said she still believes syringe services programs are a critical harm-reduction tool.
 
-<br/>“It’s right. It’s good. And it works,” Botteicher told Spotlight PA and WESA.
+“It’s right. It’s good. And it works,” Botteicher told Spotlight PA and WESA.
 
 “We need these laws changed.”
 
