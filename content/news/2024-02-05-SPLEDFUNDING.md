@@ -20,6 +20,8 @@ topics = ["Education", "The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Feb. 6: </em></strong><a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-josh-shapiro-budget-2024-education-legal-marijuana-skill-games/"><strong><em>Shapiro pitches legal cannabis, regulated skill games in budget that bumps education spending by $2.2B</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — Pennsylvania likely needs billions of dollars to shore up its public schools following a landmark court ruling, but lawmakers are entering a new state budget cycle with few concrete proposals.
 
 In the coming months, the General Assembly and Democratic Gov. Josh Shapiro will debate the state’s next spending plan behind closed doors, and will ultimately be forced to put their ideas for finding revenue on the record.
