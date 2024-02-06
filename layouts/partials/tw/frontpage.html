@@ -73,10 +73,17 @@
         <div
           class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
         >
-          <span
-            class="mx-auto flex h-[250px] w-[300px] items-center justify-center bg-g-4"
-            >Featured Ad</span
-          >
+          {{ if page.Param "ad-featured-active" }}
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mx-auto flex items-center justify-center"
+              "images" (page.Param "ad-featured-images")
+              "width" 300
+              "height" 250
+              "link" (page.Param "ad-featured-link")
+              "description" (page.Param "ad-featured-description")
+              )
+            }}
+          {{ end }}
         </div>
       </div>
     {{ else }}
