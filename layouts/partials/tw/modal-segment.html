@@ -1,0 +1,78 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $alt := .Param "sticky-image-description" }}
+{{ $images := .Param "sticky-images" }}
+{{ $link := .Param "sticky-link" }}
+
+{{ $width := 0 }}
+{{ $height := 0 }}
+{{ $bgColor := "#000" }}
+<section
+  data-modal-kind="sticky"
+  class="max-w-screen fixed bottom-0 right-0 z-10 w-80"
+  x-data="sticky"
+  x-show="isOpen"
+  x-transition:enter="transition ease-out duration-500"
+  x-transition:enter-start="opacity-0 transform translate-x-8"
+  x-transition:enter-end="opacity-100 transform translate-x-0"
+  x-transition:leave="transition ease-in duration-500"
+  x-transition:leave-start="opacity-100 transform translate-x-0"
+  x-transition:leave-end="opacity-0 transform translate-x-8"
+  @open-sticky.window="show()"
+  @close-sticky.window="close()"
+  data-ga-category="modal:sticky"
+  @keydown.escape="close"
+  x-cloak
+>
+  <button
+    type="button"
+    class="absolute -top-1 left-1 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
+  >
+    <svg class="m-auto h-4 w-4 fill-current">
+      {{ partial "helper/svg.html" "times" }}
+    </svg>
+  </button>
+  <div
+    class="mx-4 my-2 flex rounded border-4 border-white bg-black shadow-md ring-yellow focus:outline-none focus:ring-2"
+    @click.capture="close()"
+    @click.outside="close()"
+  >
+    <div
+      class=" space-y-3 p-4 text-center font-sans text-white"
+      data-sf-campaign="701Dn000000YgofIAC"
+    >
+      <h3 class="text-xl font-black leading-none md:text-4xl">
+        Never miss <br />a story.
+      </h3>
+      <p>
+        Sign up for PA Post, our free daily email to get our best investigative
+        journalism.
+      </p>
+      <p class="relative flex-grow">
+        <label class="sr-only" for="email-label-hidden">Email address</label>
+        <input
+          id="email-label-hidden"
+          class="spl-input"
+          type="email"
+          name="EMAIL"
+          placeholder="Email address"
+          required
+        />
+        <span
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+          aria-hidden="true"
+        >
+          <svg class="h-4 w-4 fill-current">
+            {{ partial "helper/svg.html" "email" }}
+          </svg>
+        </span>
+      </p>
+
+      <button class="btn-signup-slim" type="submit" x-text="Finish →">
+        Signup
+      </button>
+    </div>
+  </div>
+</section>
