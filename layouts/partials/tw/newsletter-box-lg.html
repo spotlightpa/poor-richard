@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 {{ $newsletterAction := site.Param "newsletters-action" }}
-{{ $title := .newsletterHed | default "Signup for our Newsletter" }}
+{{ $title := .newsletterHed | default "Sign up for our Newsletter" }}
 {{ $dek := .newsletterDek | default "Get every Spotlight PA story and the best investigative journalism from across Pa." }}
 {{ $showLogo := .showLogo }}
 {{ $wrapperStyle := .newsletterWrapper | default `p-4 sm:py-8 md:py-12` }}

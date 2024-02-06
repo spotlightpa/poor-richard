@@ -171,7 +171,7 @@
     {{ end }}
   </div>
 
-  <div class="mt-16 space-y-16 sm:space-y-24 md:mt-24">
+  <div class="mt-16 space-y-8 sm:space-y-12">
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -298,7 +298,7 @@
                 "widthRatio" 5
                 "heightRatio" 3
                 "widths" (slice 128 256 384 512 1280)
-                "figClass" "mt-1"
+                "figClass" "mt-2"
                 "sizeHint" "(min-width: 850px) 328px, 90vw"
                 "gravity" (.Param "image-gravity")
               }}
@@ -329,7 +329,7 @@
                   )
                 }}
               </div>
-              {{ if eq (mod $i 4) 3 | and $desktopImages }}
+              {{ if eq (mod $i 5) 3 | and $desktopImages }}
                 <div
                   class="tile is-parent px-0 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
