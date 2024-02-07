@@ -1,15 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-02-02-SPL5DUBEV.md"
+    "content/statecollege/2024-02-07-SPLSWEDEN.md"
   ],
-  "subfeatures": [
-    "content/news/2024-01-11-SPLDUBOISEVENT.md",
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/statecollege/2024-02-02-SPL5DUBEV.md",
     "content/statecollege/2024-01-26-SPLPSUBUDCUT.md",
-    "content/statecollege/2024-01-23-SPLFIREGAMES.md",
-    "content/statecollege/2024-01-18-SPLRECGOALS.md"
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
   ],
   "topper": []
 }
