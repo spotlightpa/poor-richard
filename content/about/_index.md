@@ -43,12 +43,12 @@ image = "2024/01/01jv-232a-1476-j9pm.jpeg"
 
 [[blocks.cta]]
 url = "/about/board/"
-body = "We’re led by a board of directors with a deep commitment to nonprofit, public-service journalism."
+body = "Our board of directors includes leaders in journalism and business from across the state with a deep commitment to independent, nonprofit news that gets results."
 actionText = "Meet Our Board"
 
 [[blocks.cta]]
 url = "/about/partners/"
-body = "We share our unique, high-quality journalism free of charge with more than 90 community newsrooms across the state, making Spotlight PA a centralized, efficient model to bolster local media and better inform the public."
+body = "We share our unique, high-quality journalism free of charge with more than 100 community newsrooms across the state, making Spotlight PA a centralized, efficient model to bolster local media and better inform the public."
 actionText = "Learn about our partners"
 
 [[blocks]]

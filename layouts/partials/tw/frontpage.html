@@ -437,4 +437,22 @@
       </div>
     </div>
   {{ end }}
+
+
+  <div
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+    data-ga-category="headwater"
+  >
+    {{ if page.Param "ad-headwater-active" }}
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mx-auto flex items-center justify-center"
+        "images" (page.Param "ad-headwater-images")
+        "width" 970
+        "height" 90
+        "link" (page.Param "ad-headwater-link")
+        "description" (page.Param "ad-headwater-description")
+        )
+      }}
+    {{ end }}
+  </div>
 </div>
