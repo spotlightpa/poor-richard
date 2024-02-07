@@ -98,9 +98,9 @@ actionText = "Send a tip"
 
 
 +++
-Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more.
+Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues. We were founded as a bold, collaborative answer to the rapid and significant decline of corporate-owned, for-profit media in our state, resulting and drastically reduced coverage of issues vital to Pennsylvanians.
 
-We’re a nonprofit organization powered by thousands of donors, so we can bring you stories that are free from any political or corporate interests. Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
+We seek to return journalism in our state to its fundamental role as a check and balance on the powerful, especially politicians and policy makers, and a public resource to empower residents to take action and drive change. Our journalism is produced to serve the public interest — not profit motives. That's why we don't charge for access, and share our journalism with 100+ newsrooms in the state for republication at no cost.
 
 <h3><span class="mb-5 text-xl font-black sm:text-2x md:text-4xl">Our Mission</span></h3>
 
