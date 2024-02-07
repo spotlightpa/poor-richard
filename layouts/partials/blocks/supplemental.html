@@ -6,11 +6,21 @@
   {{ $role :=  .creditRole }}
   {{ $email :=  .creditEmail }}
   {{ $bio :=  .creditBio }}
+  {{ $imageWidth := .imageWidth | default 188 | int }}
+  {{ $imageHeight := .imageHeight | default 188 | int }}
+  {{ $menuTitle := .menuTitle }}
+
+  {{ $side := .side | default "right" }}
+  {{ $mobileReveal := .page.param "mobile-reveal" | default "false" | eq "true" }}
+
+  {{ $plusSVG := resources.Get "@fontawesome/solid/circle-plus.svg" }}
+
+
   <article
-    class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+    class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans sm:flex sm:flex-wrap sm:justify-between sm:gap-x-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3"
   >
     <div
-      class="article-content text-black md:col-span-6 md:col-start-3 md:row-span-1  md:row-start-2"
+      class="article-content max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
     >
       {{ .body | markdownify }}
     </div>
@@ -19,17 +29,17 @@
 
 
       <aside
-        class="sticky top-0 grid-cols-3 gap-3 self-start md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block"
+        class="top-20 grid-cols-3 gap-3 self-start sm:w-1/6 sm:flex-auto md:sticky md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block md:w-auto"
       >
         {{ if $image }}
           {{ $imgOpt := dict
             "filename" $image
-            "width" 188
-            "height" 188
+            "width" $imageWidth
+            "height" $imageHeight
           }}
           {{ $thumb := partial "helper/imgproxy" $imgOpt }}
           <img
-            class="row-span-2 row-start-1 mb-1 rounded-full grayscale filter md:mb-6 md:h-48 md:w-48"
+            class="row-span-2 row-start-1 mb-1 filter md:mb-6 md:w-48"
             src="{{ $thumb }}"
             alt="Picture of {{ $name }}"
           />
@@ -62,6 +72,65 @@
           </div>
         {{ end }}
       </aside>
+    {{ end }}
+
+    {{ with .cta }}
+
+      <nav
+        class="
+          sm:shape-outside relative my-4
+          h-56 w-auto py-4 font-sans text-sm
+          sm:my-0 sm:h-auto
+          sm:w-full sm:flex-auto md:col-span-2
+          md:row-span-2 md:row-start-1 md:py-2
+        "
+        data-ga-category="inline:sidebar"
+        x-data="{ isOpen: {{ $mobileReveal }} }"
+        :class="{'h-40': !isOpen}"
+      >
+        <hr hidden />
+        <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
+          <button
+            :aria-expanded="isOpen"
+            class="mb-4 leading-4 text-navy hover:text-yellow hover:underline"
+            @click="isOpen = true"
+            x-report-click
+            data-ga-category="toggle-sidebar"
+          >
+            <span aria-hidden="true">
+              <svg class="inline-block h-4 w-4 fill-current">
+                {{ $plusSVG.Content | safeHTML }}
+              </svg>
+            </span>
+            <span class="ml-2 align-bottom uppercase"> Show more… </span>
+          </button>
+        </div>
+        {{ with $menuTitle }}
+          <h2 class="mb-4 mt-0 text-2xl font-semibold leading-relaxed">
+            {{ . }}
+          </h2>
+        {{ end }}
+        <ul
+          class="relative h-24 overflow-y-hidden sm:flex sm:h-auto sm:flex-wrap sm:items-center sm:justify-start sm:space-x-4 sm:overflow-y-visible md:block  md:space-x-0 md:space-y-3"
+          :class="{'h-24': !isOpen, 'overflow-y-hidden': !isOpen}"
+        >
+          {{ range . }}
+            <li class="text-base">
+              <a class="font-bold text-blue hover:text-g-6" href="{{ .url }}">
+                <span class="underline underline-offset-2 hover:no-underline"
+                  >{{- .actionText -}}</span
+                >
+              </a>
+            </li>
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
+              x-show="!isOpen"
+            ></div>
+          {{ end }}
+        </ul>
+        <hr hidden />
+      </nav>
     {{ end }}
   </article>
 {{ end }}
