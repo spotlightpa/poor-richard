@@ -27,7 +27,7 @@ layout = "impact"
 title = "Journalism that Gets Results"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 image = "2024/01/01jv-4sqp-ts1v-9498.jpeg"
-url = "/investigations/"
+url = "https://files.data.spotlightpa.org/uploads/01jw/7hrw/selected-spotlight-pa-impact-since-launch.pdf"
 actionText = "Read our investigations"
 body = "At Spotlight PA, we believe the most important stories are ones that follow the money, reveal systemic failures of our state government, and raise awareness about critical needs in our communities. Below are just a few of our investigations that have made an impact on our state."
 
