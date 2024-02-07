@@ -7,6 +7,8 @@
 {{ $donateCampaign := .donateCampaign | default "701Dn000000YgouIAC" }}
 {{ $donateTheme := .donateTheme | default "donate" }}
 {{ $donateAmounts := .donateAmounts | default "10,15,25,50" }}
+{{ $msgWidth := .msgWidth | default "md:w-1/2" }}
+{{ $formWidth := .formWidth | default "md:w-1/2 flex-1" }}
 
 {{ $btnClass := ` btn-select font-black flex-auto border-none outline-none inline-block` }}
 {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
@@ -25,7 +27,7 @@
     data-inactive="{{ $inactiveClass }}"
     x-data="prefill"
   >
-    <div class="flex-1 md:w-1/2">
+    <div class="{{ $msgWidth }} flex-1">
       <h2
         class="text-2xl font-bold leading-tight tracking-wide text-white md:text-4xl"
       >
@@ -37,7 +39,7 @@
         <p class="my-4 font-sans text-lg text-white">{{ . }}</p>
       {{ end }}
     </div>
-    <div class="flex flex-1 flex-wrap justify-start gap-2 font-sans md:w-1/2">
+    <div class="{{ $formWidth }} flex flex-wrap justify-start gap-2 font-sans">
       <div class="hidden w-full justify-center gap-2 md:flex">
         <button
           type="button"

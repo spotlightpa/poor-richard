@@ -1,0 +1,44 @@
+<section
+  data-modal-kind="sticky"
+  x-data="sticky"
+  x-show="isOpen"
+  x-transition:enter="transition ease-out duration-500"
+  x-transition:enter-start="opacity-0 transform translate-y-8"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-in duration-500"
+  x-transition:leave-start="opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform translate-y-8"
+  @open-sticky.window="show()"
+  @close-sticky.window="close()"
+  data-ga-category="modal:sticky"
+  @keydown.escape="close"
+  x-cloak
+  class=" sticky bottom-0 z-10 w-screen bg-black p-5"
+>
+  <button
+    type="button"
+    class="absolute right-5 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
+  >
+    <svg class="m-auto h-4 w-4 fill-current">
+      {{ partial "helper/svg.html" "times" }}
+    </svg>
+  </button>
+
+  <div class="mx-auto max-w-5xl">
+    {{ partial "tw/donate-prefill-lg.html" (dict
+      "donateHed" "Journalism that Gets Results ℠"
+      "donateDek" "Looks like you've been busy on our site! We don't do paywalls here but if you enjoy Spotlight PA, please consider making a donation to sustain our work. Can you help us produce free, public service investigative journalism?"
+      "donateCta" "Yes, I’ll donate"
+      "donateGaCategory" (page.Param "donate-ga-category")
+      "donateCampaign" "701Dn000000YgouIAC"
+      "donateTheme" "donate"
+      "donateAmounts" "10,15,25"
+      "msgWidth" "md:w-7/12"
+      "formWidth" "md:w-5/12"
+      )
+    }}
+  </div>
+</section>
