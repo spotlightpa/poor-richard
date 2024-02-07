@@ -1,14 +1,19 @@
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
-{{ $alt := .Param "sticky-image-description" }}
-{{ $images := .Param "sticky-images" }}
-{{ $link := .Param "sticky-link" }}
+@click.capture="close()"
+{{ $gaForm :=  "newsletters:papost-full" }}
+{{ $gaCategory := "newsletters:papost" }}
+{{ $hiddenField := "newsletter/papost-hidden.html" }}
+{{ $hed := "Never miss <br />a story" }}
+{{ $cta := "Finish →" }}
 
-{{ $width := 0 }}
-{{ $height := 0 }}
-{{ $bgColor := "#000" }}
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+
+
 <section
   data-modal-kind="sticky"
-  class="max-w-screen fixed bottom-0 right-0 z-10 w-80"
+  class="max-w-screen fixed bottom-5 right-5 z-10"
   x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -25,7 +30,7 @@
 >
   <button
     type="button"
-    class="absolute -top-1 left-1 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
+    class="absolute -left-3 -top-3 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
     aria-label="close"
     @click="close"
     x-ref="close"
@@ -35,25 +40,33 @@
     </svg>
   </button>
   <div
-    class="mx-4 my-2 flex rounded border-4 border-white bg-black shadow-md ring-yellow focus:outline-none focus:ring-2"
-    @click.capture="close()"
-    @click.outside="close()"
+    class="mx-4my-2 flex cursor-pointer ring-yellow focus:outline-none focus:ring-2"
+    x-data="{showForm: false}"
+    @click="showForm = true"
   >
-    <div
-      class=" space-y-3 p-4 text-center font-sans text-white"
-      data-sf-campaign="701Dn000000YgofIAC"
+    <form
+      action="{{ site.Param `newsletters-action` }}"
+      method="post"
+      target="_blank"
+      x-data
+      x-form="{{ $gaForm }}"
+      data-ga-category="{{ $gaCategory }}"
+      class=" w-80 space-y-3 rounded border-4 border-white bg-black p-4 text-center font-sans shadow-md"
+      :class="showForm ? 'w-96' : 'w-80'"
     >
-      <h3 class="text-xl font-black leading-none md:text-4xl">
+      {{ partial $hiddenField . }}
+      <h3 class="text-xl font-black leading-none text-white md:text-4xl">
         Never miss <br />a story.
       </h3>
-      <p>
+      <p class=" text-white">
         Sign up for PA Post, our free daily email to get our best investigative
         journalism.
       </p>
-      <p class="relative flex-grow">
-        <label class="sr-only" for="email-label-hidden">Email address</label>
+
+      <p x-cloak x-show="showForm" x-transition class="relative flex-grow">
+        <label class="sr-only" for="{{ $idEmail }}">Email address</label>
         <input
-          id="email-label-hidden"
+          id="{{ $idEmail }}"
           class="spl-input"
           type="email"
           name="EMAIL"
@@ -69,10 +82,21 @@
           </svg>
         </span>
       </p>
-
-      <button class="btn-signup-slim" type="submit" x-text="Finish →">
+      <button
+        class="btn-signup-slim"
+        type="button"
+        :class="showForm ? 'hidden' : 'block'"
+      >
         Signup
       </button>
-    </div>
+
+      <button
+        class="btn-signup-slim"
+        type="submit"
+        :class="showForm ? 'block' : 'hidden'"
+      >
+        Finish →
+      </button>
+    </form>
   </div>
 </section>
