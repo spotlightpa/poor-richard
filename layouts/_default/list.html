@@ -128,14 +128,14 @@
     </section>
 
     <div
-      class="relative mx-4 mt-6 max-w-4xl overflow-hidden rounded md:mx-auto md:mt-16"
+      class="relative mx-4 mt-6 max-w-4xl md:mx-auto md:mt-16"
       x-data="funnelStatus"
     >
       <div x-show="!isSubscriber">
         {{ partial "tw/newsletter-box-lg.html" (dict
           "newsletterHed" (page.Param "newsletter-hed")
           "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "p-4 sm:py-8"
+          "newsletterWrapper" "bg-white border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
           "newsletterField" "newsletter/basic-visible.html"
           )
         }}
@@ -235,12 +235,18 @@
       x-data="funnelStatus"
       class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
     >
-      <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
-        <div
-          class="mx-auto flex h-[600px] w-[300px] items-center justify-center bg-g-4"
-        >
-          Rail Ad
-        </div>
+      <div data-ga-category="rail" data-sf-campaign="701Dn000000YgoeIAC">
+        {{ if page.Param "ad-rail-active" }}
+          {{ partial "tw/promo-single.html" (dict
+            "class" "mx-auto flex items-center justify-center"
+            "images" (page.Param "ad-rail-images")
+            "width" 300
+            "height" 600
+            "link" (page.Param "ad-rail-link")
+            "description" (page.Param "ad-rail-description")
+            )
+          }}
+        {{ end }}
       </div>
 
       <div class="w-full sm:max-w-xs">
