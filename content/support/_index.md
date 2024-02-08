@@ -72,13 +72,13 @@ Make a check out to Spotlight PA and send it to:
 
 Recommend a gift via your donor-advised fund. Please direct it to Spotlight PA, tax ID number 92-0577182.
 
-## Donate Shares of Stock
-
-For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org). 
-
 ## Become a Business Member
 
 Make a contribution through your business or organization to support Spotlight PA. Business members will receive special recognition on the Spotlight PA website, in our annual impact report, during select events, and elsewhere as appropriate. Visit the [Business Membership Program](//spotlightpa.org/bizmember).
+
+## Donate Shares of Stock
+
+For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org). 
 
 ## Employer Matching Gifts
 
