@@ -76,6 +76,10 @@ Recommend a gift via your donor-advised fund. Please direct it to Spotlight PA, 
 
 For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org). 
 
+## Become a Business Member
+
+Make a contribution through your business or organization to support Spotlight PA. Business members will receive special recognition on the Spotlight PA website, in our annual impact report, during select events, and elsewhere as appropriate. Visit the [Business Membership Program](//spotlightpa.org/bizmember).
+
 ## Employer Matching Gifts
 
 <script>var DDCONF = { API_KEY: "S7BzFpBrodEMpopT" };</script>  <script src="https://doublethedonation.com/api/js/ddplugin.js"></script> <link href="https://doublethedonation.com/api/css/ddplugin.css" rel="stylesheet"> <div id="dd-container" class="my-7 md:my-8 " ng-app="dd.plugin"> <div class="well"> <div ng-include="search_template"></div> <p><center><a href="https://doublethedonation.com/matching-grant-resources/matching-gift-basics/">Matching Gift</a> and <a href="https://doublethedonation.com/matching-grant-resources/volunteer-grant-basics/">Volunteer Grant</a> information provided by <br> <a href="https://doublethedonation.com"><img alt="Powered by Double the Donation" src="https://doublethedonation.com/api/img/powered-by.png" /></a></center></p> </div> </div>
