@@ -27,9 +27,9 @@ layout = "impact"
 title = "Journalism that Gets Results"
 series = ["Mariner East pipeline", "The PSERS Scandal"]
 image = "2024/01/01jv-4sqp-ts1v-9498.jpeg"
-url = "https://files.data.spotlightpa.org/uploads/01jw/7hrw/selected-spotlight-pa-impact-since-launch.pdf"
+url = "/investigations"
 actionText = "Read our investigations"
-body = "At Spotlight PA, we believe the most important stories are ones that follow the money, reveal systemic failures of our state government, and raise awareness about critical needs in our communities. Below are just a few of our investigations that have made an impact on our state."
+body = "At Spotlight PA, we believe the most important stories are ones that follow the money, reveal systemic failures of our state government, and raise awareness about critical needs in our communities. We measure our success across a broad spectrum of impact indicators."
 
 [[blocks]]
 title = "Spotlight PA Team & Partners"
@@ -74,7 +74,7 @@ Since its inception, Spotlight PA has become a leading national model for indepe
 url = "/about/mission/"
 actionText = "Our Mission"
 [[blocks.cta]]
-url = "/about/team/"
+url = "/about/staff/"
 actionText = "Our Team"
 [[blocks.cta]]
 url = "/about/board/"
