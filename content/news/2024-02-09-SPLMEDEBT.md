@@ -32,7 +32,7 @@ Such debt, Shapiro said in his <a href="https://www.spotlightpa.org/news/2024/02
 
 Wiping out $400 million in debt using just 1% of that amount is possible because of America’s peculiar market for medical debt.
 
-A <a href="https://www.healthsystemtracker.org/brief/the-burden-of-medical-debt-in-the-united-states/">2022 study</a> found that 23 million Americans owed a “significant” amount of medical debt — defined as more than $250 — and that people with disabilities, those in worse health, and low-income adults were most likely in that group.
+A <a href="https://web.archive.org/20240101164404/https://www.healthsystemtracker.org/brief/the-burden-of-medical-debt-in-the-united-states/">2022 study</a> found that 23 million Americans owed a “significant” amount of medical debt — defined as more than $250 — and that people with disabilities, those in worse health, and low-income adults were most likely in that group.
 
 When a patient does not pay their doctor or dentist bill, the provider can do two things: try to collect the outstanding obligation themselves, or sell it to someone else who can try, said Allison Sesso, president and CEO of RIP Medical Debt, a Boston-based nonprofit that relieves such burdens.
 
