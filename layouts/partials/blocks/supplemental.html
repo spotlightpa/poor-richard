@@ -17,10 +17,10 @@
 
 
   <article
-    class="article-content mx-auto max-w-screen-xl px-5 py-12 font-sans sm:flex sm:flex-wrap sm:justify-between sm:gap-x-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:py-24"
+    class="article-content mx-auto flex max-w-screen-xl flex-wrap px-5 py-12 font-sans sm:flex sm:flex-wrap sm:justify-between sm:gap-x-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:py-24"
   >
     <div
-      class="article-content max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
+      class="article-content w-2/3 max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
     >
       {{ .body | markdownify }}
     </div>
@@ -29,7 +29,7 @@
 
 
       <aside
-        class="top-20 grid-cols-3 gap-3 self-start sm:w-1/6 sm:flex-auto md:sticky md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block md:w-auto"
+        class="top-20 w-1/3 grid-cols-3 gap-3 self-start pl-3 sm:w-1/6 sm:flex-auto sm:pl-0 md:sticky md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block md:w-auto"
       >
         {{ if $image }}
           {{ $imgOpt := dict
