@@ -53,6 +53,7 @@ actionText = "Learn about our partners"
 
 [[blocks]]
 layout = "supplemental"
+title = "Our History"
 creditName = "Spotlight PA Logo"
 creditImage = "2024/01/01jv-2e2e-gw97-m9rf.png"
 headshot = false
@@ -61,7 +62,6 @@ imageWidth = "253"
 imageHeight = "345"
 menuTitle = "About"
 body = """
-## Our History
 
 Spotlight PA was founded in 2019 by The Lenfest Institute for Journalism and a coalition of newsrooms from across Pennsylvania to address a crisis in journalism: the ongoing and rapid decline of corporate-owned legacy news outlets, which is greatly diminishing access to trusted, contextual, and factual reporting in the state.
 

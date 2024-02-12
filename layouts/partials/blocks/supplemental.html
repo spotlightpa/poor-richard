@@ -1,4 +1,5 @@
 {{ with .block }}
+  {{ $title := .title }}
   {{ $eyebrow :=  .creditEyebrow }}
   {{ $hed :=  .creditHed }}
   {{ $name :=  .creditName }}
@@ -17,19 +18,21 @@
 
 
   <article
-    class="article-content mx-auto flex max-w-screen-xl flex-wrap px-5 py-12 font-sans sm:flex sm:flex-wrap sm:justify-between sm:gap-x-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:py-24"
+    class="article-content mx-auto max-w-screen-xl flex-wrap px-5 py-12 font-sans sm:flex sm:flex-wrap sm:justify-between sm:gap-x-5 md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-y-3 md:py-24"
   >
-    <div
-      class="article-content w-2/3 max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
-    >
-      {{ .body | markdownify }}
-    </div>
+    {{ with $title }}
+      <h2
+        class="w-full  md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-1"
+      >
+        {{ $title }}
+      </h2>
+    {{ end }}
     {{ with $name }}
       {{ $author := partial "helper/get-author" $name }}
 
 
       <aside
-        class="top-20 w-1/3 grid-cols-3 gap-3 self-start pl-3 sm:w-1/6 sm:flex-auto sm:pl-0 md:sticky md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-1 md:block md:w-auto"
+        class="top-20 float-right ml-4 w-5/12 grid-cols-3 gap-3 self-start sm:order-1 sm:ml-0 sm:w-1/6 sm:flex-auto md:sticky md:col-span-3 md:col-start-10 md:row-span-2 md:row-start-2 md:block md:w-auto"
       >
         {{ if $image }}
           {{ $imgOpt := dict
@@ -63,7 +66,9 @@
           </h3>
         {{ end }}
         {{ if $bio }}
-          <div class="col-span-2 col-start-2 text-base md:max-w-[192px]">
+          <div
+            class="col-span-2 col-start-2 text-sm md:max-w-[192px] md:text-base"
+          >
             {{ $bio|markdownify }}
           </div>
         {{ else if $author }}
@@ -73,20 +78,25 @@
         {{ end }}
       </aside>
     {{ end }}
+    <div
+      class="article-content max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
+    >
+      {{ .body | markdownify }}
+    </div>
 
     {{ with .cta }}
 
       <nav
         class="
-          sm:shape-outside relative my-4
-          w-auto py-4 font-sans text-sm
+          sm:shape-outside relative my-4 w-auto
+          py-4 font-sans text-sm sm:order-3
           sm:my-0 sm:w-full sm:flex-auto md:col-span-2
-          md:row-span-2 md:row-start-1 md:py-2
+          md:row-span-2 md:row-start-1 md:py-0
         "
         data-ga-category="inline:sidebar"
       >
         {{ with $menuTitle }}
-          <h2 class="mb-4 mt-0 text-2xl font-semibold leading-relaxed">
+          <h2 class="mb-4 mt-0 text-2xl font-semibold">
             {{ . }}
           </h2>
         {{ end }}
