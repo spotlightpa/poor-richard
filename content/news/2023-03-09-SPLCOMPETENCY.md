@@ -421,7 +421,7 @@ And state court administration has created a new position that will focus on dev
   side="right"
 >}}
 
-Some Pennsylvania counties, <a href="https://www.alleghenycounty.us/News/2022/6442479488.aspx" target="_blank">including Allegheny,</a> are exploring programs that would cut down on wait times for state hospitals and instead bring competency restoration therapy and additional mental health services to the community and <a href="https://www.ydr.com/story/news/local/2022/05/12/york-county-prison-feasibility-study-competency-restoration-center/65354974007/" target="_blank">the jails</a>.
+Some Pennsylvania counties, <a href="https://web.archive.org/20230309113550/https://www.alleghenycounty.us/News/2022/6442479488.aspx">including Allegheny,</a> are exploring programs that would cut down on wait times for state hospitals and instead bring competency restoration therapy and additional mental health services to the community and <a href="https://www.ydr.com/story/news/local/2022/05/12/york-county-prison-feasibility-study-competency-restoration-center/65354974007/" target="_blank">the jails</a>.
 
 But in-custody treatment and restoration is still a criminal solution, Slobogin said. 
 

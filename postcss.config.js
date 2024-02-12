@@ -13,6 +13,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
       /textarea/,
       // Don't purge attributes
       /disabled|multiple|readonly|type|x-cloak/,
+      // Hide MailChimp headers/footers on newsletter pages
+      /raw-content/,
     ],
     greedy: [],
   },

@@ -10,6 +10,7 @@ internal-id = "SPLSUPFED"
 kicker = "Local Government"
 modal-exclude = false
 published = 2023-11-16T13:52:44.376-05:00
+series = ["Richest Little City"]
 slug = "dubois-pennsylvania-herm-suplizio-conspiracy-fraud-federal-charges"
 suppress-date = false
 title = "Feds take over corruption case against embattled Pa. city manager"

@@ -23,7 +23,7 @@ topics = ["Rural Issues"]
 
 BELLEFONTE — Pennsylvania has updated the criteria for how it defines “environmental justice areas,” communities that are more vulnerable to climate and health risks and that get special attention from the state.
 
-Roughly 2.3 million people live in one of these areas under the Pennsylvania Department of Environmental Protection’s <a href="https://www.depgreenport.state.pa.us/elibrary/GetDocument?docId=5600403&amp;DocName=ENVIRONMENTAL%20JUSTICE%20POLICY.PDF%20%20%3cspan%20style%3D%22color:green%3b%22%3eCOMMENTS%20DUE%20OCTOBER%2029%2c%202023%3c/span%3e%20%3cspan%20style%3D%22color:blue%3b%22%3e%28NEW%29%3c/span%3e">revision</a> of the 20-year-old environmental justice policy, down from 3.7 million before. Officials argue the update and the new way it is identifying these communities will help it prioritize resources and improve communication about permits and projects under the department’s purview.
+Roughly 2.3 million people live in one of these areas under the Pennsylvania Department of Environmental Protection’s <a href="https://www.depgreenport.state.pa.us/elibrary/GetDocument?docId=5600403&amp;DocName=ENVIRONMENTAL%20JUSTICE%20POLICY.PDF">revision</a> of the 20-year-old environmental justice policy, down from 3.7 million before. Officials argue the update and the new way it is identifying these communities will help it prioritize resources and improve communication about permits and projects under the department’s purview.
 
 The policy, which took effect earlier this fall but could be further tweaked before taking full effect, outlines considerations DEP should make when evaluating permit applications, administering grant money, and holding violators accountable.
 

@@ -13,6 +13,7 @@ internal-id = "SPLSUPLIZIO"
 kicker = "Local Government"
 layout = "featured"
 modal-exclude = false
+pinned = false
 published = 2023-11-09T04:00:00-05:00
 series = ["Richest Little City"]
 slug = "dubois-pennsylvania-herm-suplizio-fraud-corruption-attorney-general"
@@ -186,7 +187,7 @@ However, earlier this year, the city provided a copy of an agreement between its
 
 Peter Varischetti, the foundation’s secretary according to its most recent tax filing, has publicly praised Suplizio’s contributions to the city.
 
-“Herm Suplizio gets results,” Varischetti, who did not respond to multiple requests for comment, [wrote in a 2020 op-ed](https://bloximages.chicago2.vip.townnews.com/tiogapublishing.com/content/tncms/assets/v3/editorial/d/77/d77dd192-a1ae-11ea-8f2e-c78faf176d60/5ed10b91f30bf.pdf.pdf).
+“Herm Suplizio gets results,” Varischetti, who did not respond to multiple requests for comment, [wrote in a 2020 op-ed](https://web.archive.org/20231109125649/https://bloximages.chicago2.vip.townnews.com/tiogapublishing.com/content/tncms/assets/v3/editorial/d/77/d77dd192-a1ae-11ea-8f2e-c78faf176d60/5ed10b91f30bf.pdf.pdf).
 
 “I am proud to call Herm a friend.”
 
@@ -369,7 +370,7 @@ Suplizio has yet to enter a plea. He and his lawyers have denied repeated reques
 
 Sandy Township and DuBois were moving toward a voter-approved consolidation when the criminal allegations against Suplizio became public in March. The township said the alleged “fraud, theft, and other issues concerning the City’s public accounts and finances” cast significant doubt on the basis upon which voters supported the referendum. 
 
-In June, Sandy Township asked the Clearfield County Court of Commons Pleas to pause the consolidation until the criminal case against Suplizio and a forensic audit into DuBois’ finances are completed. DuBois has argued that the township cannot demand the court overturn a decision made by voters. By September, 1,232 Sandy Township residents — over 10% of its 11,710 total population — [signed a petition in support](https://sandytownship.net/wp-content/uploads/2023/09/Citizen-Petitions.pdf) of the township’s request to halt the consolidation. (For reference, 1,576 Sandy Township voters approved the consolidation in 2021.) The petition was incorporated into the civil case. 
+In June, Sandy Township asked the Clearfield County Court of Commons Pleas to pause the consolidation until the criminal case against Suplizio and a forensic audit into DuBois’ finances are completed. DuBois has argued that the township cannot demand the court overturn a decision made by voters. By September, 1,232 Sandy Township residents — over 10% of its 11,710 total population — [signed a petition in support](https://web.archive.org/20231109133152/https://sandytownship.net/wp-content/uploads/2023/09/Citizen-Petitions.pdf) of the township’s request to halt the consolidation. (For reference, 1,576 Sandy Township voters approved the consolidation in 2021.) The petition was incorporated into the civil case. 
 
 In October, the city decided not to contest Sandy Township’s petition and agreed with a pause. 
 

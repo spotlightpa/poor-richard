@@ -10,6 +10,7 @@ internal-id = "SPLAPPELLATEGEN23"
 kicker = "Elections"
 linktitle = "A complete guide to the candidates for Commonwealth and Superior Courts"
 modal-exclude = false
+pinned = false
 published = 2023-09-07T05:00:00.647-04:00
 series = ["Voting Guides 2023"]
 slug = "pennsylvania-election-2023-commonwealth-superior-court-candidates"
@@ -65,7 +66,7 @@ This election cycle also includes retention votes for two Superior Court judges,
 
 <h1 id="spl-heading-2">Republican candidate: Megan Martin</h1>
 
-A Cumberland County resident and Widener University law school graduate, <a href="https://meganmartinforpa.com/">Martin</a> is the former parliamentarian of the state Senate. She entered the Commonwealth Court primary as the state GOP’s endorsed candidate, and won the nod by defeating gun rights attorney Joshua Prince 63% to 37%.
+A Cumberland County resident and Widener University law school graduate, <a href="https://web.archive.org/20230204031226/https://meganmartinforpa.com/">Martin</a> is the former parliamentarian of the state Senate. She entered the Commonwealth Court primary as the state GOP’s endorsed candidate, and won the nod by defeating gun rights attorney Joshua Prince 63% to 37%.
 
 As the secretary-parliamentarian, Martin advised the Pennsylvania Senate’s presiding officer on how to run floor proceedings in accordance with the state constitution, law, precedent, and chamber rules.
 

@@ -97,6 +97,16 @@ module.exports = {
       credit: "var(--credit-color)",
     },
     extend: {
+      animation: {
+        "become-sticky":
+          "becomeSticky 1s cubic-bezier(0.79, 0.1, 0.44, 0.83) forwards .25s",
+      },
+      keyframes: {
+        becomeSticky: {
+          "0%": { bottom: "-100%" },
+          "100%": { bottom: "0" },
+        },
+      },
       boxShadow: {
         beige: "0 0 0 3px #f4f1ee80",
       },

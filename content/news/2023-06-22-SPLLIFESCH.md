@@ -48,7 +48,7 @@ The bill does not specify how much money would be available annually, but it doe
 
 This is the program that a well-heeled coalition is now trying to promote to lawmakers.
 
-The newly formed group, <a href="https://onewayoutpa.com/">One Way Out</a>, launched a series of TV and digital ads this month that urge viewers to contact lawmakers and register their support for lifeline scholarships, arguing that many Pennsylvania students are “trapped” in underperforming schools. It plans to keep running ads through the June 30 budget deadline.
+The newly formed group, <a href="https://web.archive.org/20230610203500/https://onewayoutpa.com/">One Way Out</a>, launched a series of TV and digital ads this month that urge viewers to contact lawmakers and register their support for lifeline scholarships, arguing that many Pennsylvania students are “trapped” in underperforming schools. It plans to keep running ads through the June 30 budget deadline.
 
 One Way Out is backed by several groups that have championed public school alternatives like state-funded vouchers.
 

@@ -1,9 +1,11 @@
 {{ $donateHed := .Get "title" | default "Become a Supporter" }}
 {{ $donateCta := .Get "cta" | default "Contribute" }}
 {{ $donateTheme := .Get "theme" }}
+{{ $donateUrl := .Get "donateUrl" }}
 
 {{ partial "tw/donate-slim" (dict
   "donateHed" $donateHed
   "donateCta" $donateCta
+  "donateUrl" $donateUrl
   "donateTheme" $donateTheme )
 }}

@@ -33,36 +33,31 @@
     x-form="all-newsletters"
   >
     {{ partial "newsletter/basic-hidden.html" . }}
-    <section class="bg-white px-4 pb-2 pt-12 md:pb-6">
+    <section x-data class="bg-white px-4 pb-2 pt-12 md:pb-0">
       <header class="mx-auto w-full max-w-screen-lg">
         <h1
           class="text-center font-sans text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl md:text-6xl"
         >
           {{ .Title }}
         </h1>
-        <h2
-          class="mt-4 text-center font-sans text-lg font-semibold leading-tight text-g-6"
-        >
-          {{ $subtitle }}
-        </h2>
 
         {{ partial "tw/image-hero.html" . }}
       </header>
-      <div class="mx-auto max-w-screen-xl py-14 text-lg  font-medium lg:px-0">
+      <div class="mx-auto max-w-screen-xl py-14 text-lg font-medium lg:px-0">
         {{ with .Content }}
-          <div class="article-content mx-auto max-w-prose">
+          <div class="article-content mx-auto mb-6 max-w-prose md:mb-12">
             {{ . }}
           </div>
         {{ end }}
         <nav
           class="flex flex-wrap items-stretch justify-center gap-10 md:flex md:flex-wrap"
         >
-          {{ range $page := $pages }}
+          {{ range $page := first 1 $pages }}
             {{ if not (len $page.Pages) }}
               {{ continue }}
             {{ end }}
             <div
-              class=" flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:flex-[0_0_calc(50%_-_40px)]"
+              class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
               x-data="{ isChecked: true }"
               :class="{ 'rounded bg-g-1': isChecked }"
             >
@@ -70,90 +65,180 @@
               {{ $slug := .File.Dir | path.Base }}
               {{ $id := partial "helper/new-id" . }}
               <label
-                class="flex"
+                class="flex cursor-pointer"
                 data-ga-category="toggle-newsletter:{{ $slug }}"
                 x-report-click
                 for="{{ $id }}"
               >
-                <article
-                  class="grid-row-[auto,_1fr,_auto] grid-cols-[2fr,_3fr] gap-x-5 gap-y-2 space-y-3 sm:ml-9 sm:grid md:ml-0 md:block lg:ml-9 lg:grid lg:space-y-0"
-                >
+                <article class="grid-cols-5 gap-x-5 sm:grid">
                   {{ $name := .Page.Param "image" }}
                   {{ $credit := .Page.Param "image-credit" }}
                   {{ $description := .Page.Param "image-description" }}
                   {{ $imgOpts := dict
                     "filename" $name
-                    "credit" ""
-                    "widthRatio" 16
-                    "heightRatio" 9
+                    "widthRatio" 4
+                    "heightRatio" 3
                     "widths" (slice 128 256 384 512 1280)
-                    "figClass" "col-start-1"
-                    "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+                    "figClass" "col-span-2 row-start-1 row-span-2 block mb-4"
                     "sizeHint" "400px"
                     "rounded" true
                     "gravity" (.Page.Param "image-gravity")
                   }}
                   {{ partial "tw/image-block.html" $imgOpts }}
-                  <h2
-                    class=" col-span-2 col-start-1 row-start-1 flex flex-wrap items-center text-lg lg:items-baseline lg:text-2xl xl:flex-nowrap"
-                  >
-                    <span class=" order-2 font-bold ">
-                      {{ .LinkTitle }}:&nbsp;
-                    </span>
-                    <span class=" order-3 font-light xl:flex-1">
-                      {{ $page.Params.occurence }}
-                    </span>
-                    <input
-                      class="peer mr-3 h-5 w-5 appearance-none rounded border border-g-4 opacity-0 sm:-ml-9 md:-ml-0 lg:-ml-9 "
-                      type="checkbox"
-                      x-model="isChecked"
-                      id="{{ $id }}"
-                      name="{{ $slug }}"
-                      value="1"
-                      x-report-click
-                      data-ga-category="toggle-newsletter:{{ $slug }}"
-                    />
-                    <svg
-                      class="-ml-8 mr-3 h-5 w-5 rounded border border-g-4 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
-                      viewBox="0 0 1 1"
-                    >
-                      {{ partial "helper/svg.html" "check" }}
-                    </svg>
 
-                    <div
-                      class="order-1 flex flex-[0_1_calc(100%_-_36px)] items-center text-xs tracking-widest xl:order-4 xl:flex-auto xl:flex-grow-0"
-                    >
-                      <span x-show="isChecked">Selected</span>
-                      <span
-                        class=" hidden: isChecked"
-                        x-cloak
-                        x-show="!isChecked"
-                        >Click to select</span
+
+                  <div class="col-span-3 col-start-3 row-start-1 space-y-1">
+                    <div class="flex items-center">
+                      <input
+                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
+                        type="checkbox"
+                        x-model="isChecked"
+                        id="{{ $id }}"
+                        name="{{ $slug }}"
+                        value="1"
+                        x-report-click
+                        data-ga-category="toggle-newsletter:{{ $slug }}"
+                      />
+                      <svg
+                        class="mr-3 h-5 w-5 rounded border border-g-9 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
+                        viewBox="0 0 1 1"
                       >
+                        {{ partial "helper/svg.html" "check" }}
+                      </svg>
+
+                      <div class="order-1 text-sm font-bold tracking-widest">
+                        <span x-show="isChecked">Selected</span>
+                        <span
+                          class=" hidden: isChecked"
+                          x-cloak
+                          x-show="!isChecked"
+                          >Click to select</span
+                        >
+                      </div>
                     </div>
-                  </h2>
-                  <p class=" text-lg font-normal leading-snug">
-                    {{ $params.blurb }}
-                  </p>
-                  <p
-                    class="col-start-2 col-end-2 self-end text-sm tracking-widest"
-                  >
-                    <a
-                      class="text-blue underline hover:text-blue-7"
-                      href="{{ $page.RelPermalink }}#archives"
-                    >
-                      View Archives
-                    </a>
-                  </p>
+
+                    <h2 class="text-xl font-bold lg:text-2xl">
+                      {{ .LinkTitle }}
+                    </h2>
+
+                    <p class="text-sm font-bold md:text-base">
+                      {{ $page.Params.occurence }}
+                    </p>
+
+                    <p class="py-2 text-base font-normal leading-snug">
+                      {{ $params.blurb }}
+                    </p>
+                    <p class="text-sm tracking-widest">
+                      <a
+                        class="text-blue underline hover:text-blue-7"
+                        href="{{ $page.RelPermalink }}#archives"
+                      >
+                        View Archives
+                      </a>
+                    </p>
+                  </div>
+                </article>
+              </label>
+            </div>
+          {{ end }}
+
+          {{ range $page := after 1 $pages }}
+            {{ if not (len $page.Pages) }}
+              {{ continue }}
+            {{ end }}
+            <div
+              class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
+              x-data="{ isChecked: false }"
+              :class="{ 'rounded bg-g-1': isChecked }"
+            >
+              {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+              {{ $slug := .File.Dir | path.Base }}
+              {{ $id := partial "helper/new-id" . }}
+              <label
+                class="flex cursor-pointer"
+                data-ga-category="toggle-newsletter:{{ $slug }}"
+                x-report-click
+                for="{{ $id }}"
+              >
+                <article class="grid-cols-5 gap-x-5 sm:grid">
+                  {{ $name := .Page.Param "image" }}
+                  {{ $credit := .Page.Param "image-credit" }}
+                  {{ $description := .Page.Param "image-description" }}
+                  {{ $imgOpts := dict
+                    "filename" $name
+                    "widthRatio" 4
+                    "heightRatio" 3
+                    "widths" (slice 128 256 384 512 1280)
+                    "figClass" "col-span-2 row-start-1 row-span-2 block mb-4"
+                    "sizeHint" "400px"
+                    "rounded" true
+                    "gravity" (.Page.Param "image-gravity")
+                  }}
+                  {{ partial "tw/image-block.html" $imgOpts }}
+
+
+                  <div class="col-span-3 col-start-3 row-start-1 space-y-1">
+                    <div class="flex items-center">
+                      <input
+                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
+                        type="checkbox"
+                        x-model="isChecked"
+                        id="{{ $id }}"
+                        name="{{ $slug }}"
+                        value="0"
+                        x-report-click
+                        data-ga-category="toggle-newsletter:{{ $slug }}"
+                      />
+                      <svg
+                        class="mr-3 h-5 w-5 rounded border border-g-9 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
+                        viewBox="0 0 1 1"
+                      >
+                        {{ partial "helper/svg.html" "check" }}
+                      </svg>
+
+                      <div class="order-1 text-sm font-bold tracking-widest">
+                        <span x-show="isChecked">Selected</span>
+                        <span
+                          class=" hidden: isChecked"
+                          x-cloak
+                          x-show="!isChecked"
+                          >Click to select</span
+                        >
+                      </div>
+                    </div>
+
+                    <h2 class="text-xl font-bold lg:text-2xl">
+                      {{ .LinkTitle }}
+                    </h2>
+
+                    <p class="text-sm font-bold md:text-base">
+                      {{ $page.Params.occurence }}
+                    </p>
+
+                    <p class="py-2 text-base font-normal leading-snug">
+                      {{ $params.blurb }}
+                    </p>
+                    <p class="text-sm tracking-widest">
+                      <a
+                        class="text-blue underline hover:text-blue-7"
+                        href="{{ $page.RelPermalink }}#archives"
+                      >
+                        View Archives
+                      </a>
+                    </p>
+                  </div>
                 </article>
               </label>
             </div>
           {{ end }}
         </nav>
       </div>
-      <div class="-mx-4 w-screen bg-g-2">
+      <div
+        class=" sticky -mx-4 w-screen animate-become-sticky bg-g-2 shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
+      >
         <div
-          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
+          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
+          x-data="{ isOpen: false }"
         >
           {{ $idFname := partial "helper/new-id" . }}
           {{ $idLname := partial "helper/new-id" . }}
@@ -162,73 +247,60 @@
 
           <header class="md:col-span-4 md:col-start-1">
             <h2 class=" text-xl font-black leading-none text-black">
-              Get these newsletters now
+              Sign up for free
             </h2>
-            <p class="my-5 text-lg">
-              Add your name and email address and then click Subscribe to begin
-              receiving your selected Spotlight PA newsletters.
+            <div
+              class="mt-2 flex flex-1 flex-wrap justify-between self-end align-bottom md:hidden"
+            >
+              <button
+                class="btn-signup h-11 w-full"
+                @click="isOpen = true"
+                :class="{'hidden': isOpen}"
+              >
+                Subscribe
+              </button>
+            </div>
+            <p
+              class="my-2 text-lg"
+              :class="isOpen ? 'block' : 'hidden md:block'"
+            >
+              Enter your email address and click “Subscribe” to start receiving
+              selected newsletters.
             </p>
           </header>
 
-          <div
-            class="flex flex-wrap justify-between align-baseline md:col-span-5 md:col-start-6"
-          >
-            <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
-              <label
-                class="flex-[0_0_100%] font-sans text-sm font-black"
-                for="{{ $idFname }}"
-                >First Name</label
-              >
-              <input
-                id="{{ $idFname }}"
-                class="spl-input"
-                type="text"
-                name="FNAME"
-                placeholder="First Name"
-                required
-              />
-            </p>
-
-            <p class="flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)]">
-              <label
-                class="flex-[0_0_100%] font-sans text-sm font-black"
-                for="{{ $idLname }}"
-                >Last Name</label
-              >
-
-              <input
-                id="{{ $idLname }}"
-                class="spl-input"
-                type="text"
-                name="LNAME"
-                placeholder="Last Name"
-                required
-              />
-            </p>
-            <p class="relative mt-3 flex-[0_0_100%] sm:flex-[0_1_60%]">
-              <label
-                class="flex-[0_0_100%] font-sans text-sm font-black"
-                for="{{ $idEmail }}"
-                >Email Address</label
-              >
-              <input
-                id="{{ $idEmail }}"
-                class="spl-input"
-                type="email"
-                name="EMAIL"
-                placeholder="Email address"
-                required
-              />
-              <span
-                class="pointer-events-none absolute inset-y-0 right-3 top-9 inline-flex text-g-4"
-              >
-                <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
-                  {{ partial "helper/svg.html" "email" }}
-                </svg>
-              </span>
-            </p>
-            <div class="mt-2 flex-1 self-end sm:ml-5">
-              <button type="submit" class="btn-signup">Subscribe</button>
+          <div class="md:col-span-5 md:col-start-6">
+            <div
+              class="flex-wrap justify-between align-bottom md:flex"
+              :class="isOpen ? 'flex' : 'hidden md:flex'"
+            >
+              <p class="relative mt-3 flex-[0_0_100%] sm:flex-[0_1_60%]">
+                <label
+                  class="flex-[0_0_100%] font-sans text-sm font-black"
+                  for="{{ $idEmail }}"
+                  >Email Address</label
+                >
+                <input
+                  id="{{ $idEmail }}"
+                  class="spl-input h-11"
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Email address"
+                  required
+                />
+                <span
+                  class="pointer-events-none absolute inset-y-0 right-3 top-9 inline-flex h-4 text-g-4"
+                >
+                  <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
+                    {{ partial "helper/svg.html" "email" }}
+                  </svg>
+                </span>
+              </p>
+              <div class="mt-2 flex-1 self-end sm:ml-5">
+                <button type="submit" class="btn-signup h-11 w-full">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>

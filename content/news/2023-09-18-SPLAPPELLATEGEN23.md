@@ -10,6 +10,7 @@ internal-id = "SPLAPPELLATEGEN23"
 kicker = "Español"
 language-code = "es"
 modal-exclude = false
+pinned = false
 published = 2023-09-18T15:39:10.497-04:00
 slug = "elecciones-mancomunidad-pennsylvania-2023-candidatos-corte-superior"
 suppress-date = false
@@ -54,7 +55,7 @@ Corte de la Commonwealth
 
 <h1 id="spl-heading-1">Candidata republicana: Megan Martin</h1>
 
-Residente en el condado de Cumberland y licenciada en Derecho por la Universidad Widener, <a href="https://meganmartinforpa.com/">Martin</a> fue parlamentaria del Senado estatal. Se presentó a las primarias de la Corte de la Commonwealth como candidata del Partido Republicano del estado y ganó al derrotar con 63% sobre 37% al abogado Joshua Prince, defensor de los derechos de las armas.
+Residente en el condado de Cumberland y licenciada en Derecho por la Universidad Widener, <a href="https://web.archive.org/20230204031226/https://meganmartinforpa.com/">Martin</a> fue parlamentaria del Senado estatal. Se presentó a las primarias de la Corte de la Commonwealth como candidata del Partido Republicano del estado y ganó al derrotar con 63% sobre 37% al abogado Joshua Prince, defensor de los derechos de las armas.
 
 Como secretario parlamentario, Martin asesoraba al presidente del Senado de Pensilvania sobre cómo llevar a cabo los procedimientos en el hemiciclo de acuerdo con la Constitución estatal, la ley, los precedentes y las normas de la cámara.
 

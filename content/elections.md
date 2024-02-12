@@ -47,7 +47,7 @@ credits = """
 >}}
 {{<featured/credit
     eyebrow="Layout"
-    name="Carl Johnson"
+    name="Carlana Johnson"
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
 >}}

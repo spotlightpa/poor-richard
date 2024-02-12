@@ -1,15 +1,26 @@
 {
+  "edCallout": [
+    "content/news/2023-11-15-SPL23CFFINAL.md",
+    "content/news/2023-11-13-SPLBUDTHAW.md"
+  ],
+  "edImpact": [
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2023-01-23-SPLMORTGAGE.md"
+  ],
+  "edInvestigations": [
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
+    "content/statecollege/2023-07-19-SPLPSUACCOUNT.md"
+  ],
   "featuredStories": [
-    "content/statecollege/2023-11-17-SPLHOWDUB.md"
+    "content/news/2024-02-12-SPLHEHON.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
+    "content/news/2024-01-02-SPLEXWISH24.md"
   ],
   "topSlots": [
-    "content/news/2023-11-15-SPL23CFFINAL.md",
-    "content/statecollege/2023-11-16-SPLPIPELINE.md",
-    "content/news/2023-11-16-SPLNEWSQUIZNOV13.md"
+    "content/news/2024-02-09-SPLMEDEBT.md",
+    "content/news/2024-02-08-SPLGCLOB.md",
+    "content/statecollege/2024-02-07-SPLSWEDEN.md"
   ],
   "topper": []
 }

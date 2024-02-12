@@ -1,33 +1,24 @@
 +++
 arc-id = "RTDVFYGZEFDUPNNVZPQBJFNYX4"
-internal-id = "SPLHERSHEYXX"
-internal-budget = ""
-image = "external/y7a406zbshskkv7gnf2vcqr44g.jpeg"
-image-description = "In recent years, the Hershey School has been hit by lawsuits over student issues."
-image-caption = ""
-image-credit = "MARGO REED / Philadelphia Inquirer"
-image-size = ""
-published = 2020-09-30T22:53:50Z
-slug = "pa-hershey-school-expansion-josh-shapiro"
 authors = ["Bob Fernandez", "Charlotte Keith"]
-byline = "Bob Fernandez of The Philadelphia Inquirer and Charlotte Keith of Spotlight PA"
-title = "Hershey School proposes $350 million network of six early childhood centers in Pa."
-subtitle = ""
-description = "The Hershey School, the nation's richest private school, agrees under pressure from state Attorney General Josh Shapiro to expand across Pennsylvania."
 blurb = "The Hershey School, the nation's richest private school, agrees under pressure from state Attorney General Josh Shapiro to expand across Pennsylvania."
+byline = "Bob Fernandez of The Philadelphia Inquirer and Charlotte Keith of Spotlight PA"
+description = "The Hershey School, the nation's richest private school, agrees under pressure from state Attorney General Josh Shapiro to expand across Pennsylvania."
+image = "external/y7a406zbshskkv7gnf2vcqr44g.jpeg"
+image-credit = "MARGO REED / Philadelphia Inquirer"
+image-description = "In recent years, the Hershey School has been hit by lawsuits over student issues."
+internal-id = "SPLHERSHEYXX"
 kicker = "Education"
-topics = ["Education"]
-series = ["The Milton Hershey School"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2020-09-30T18:53:50-04:00
+series = ["The Milton Hershey School"]
+slug = "pa-hershey-school-expansion-josh-shapiro"
+suppress-date = false
+suppress-featured = false
+title = "Hershey School proposes $350 million network of six early childhood centers in Pa."
+topics = ["Education"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -52,7 +43,7 @@ Shapiro — who is facing reelection for attorney general in November against Re
 
 “Nine-hundred kids a year is a lot of kids for one entity to step forward and fund,” said Donna Cooper, executive director of Public Citizens for Children and Youth, a child advocacy group. But given the scale of the unmet needs in Pennsylvania, she said, “My real question is: Can they do more?”
 
-Experts say early childhood programs are the most effective at building children’s social skills, improving educational outcomes, and breaking the cycle of poverty. In Pennsylvania, limited state funding means that most kids who need early childhood education don’t get it. In 2019, <a href="http://nieer.org/wp-content/uploads/2020/04/Pennsylvania_YB2019.pdf">64% of four-year-old children in the state</a> were not enrolled in publicly funded pre-K or Head Start programs, according to the National Institute for Early Education Research.
+Experts say early childhood programs are the most effective at building children’s social skills, improving educational outcomes, and breaking the cycle of poverty. In Pennsylvania, limited state funding means that most kids who need early childhood education don’t get it. In 2019, <a href="https://web.archive.org/20200510004012/http://nieer.org/wp-content/uploads/2020/04/Pennsylvania_YB2019.pdf">64% of four-year-old children in the state</a> were not enrolled in publicly funded pre-K or Head Start programs, according to the National Institute for Early Education Research.
 
 “I just have to believe that given the enormity of the Hershey corporate entity, there’s the opportunity to do much more, and there’s certainly much more need,” Cooper said.
 

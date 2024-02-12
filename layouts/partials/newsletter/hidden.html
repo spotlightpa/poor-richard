@@ -18,3 +18,12 @@
 </div>
 <!-- Shibboleth field: server will reject message if blank -->
 <input type="hidden" x-data :name="'shibboleth'" :value="'PA Rocks!'" />
+<!-- Shibboleth field: server will reject message if too old -->
+<input
+  type="hidden"
+  x-data="{ humanLike: false }"
+  x-init="setTimeout(()=>{ humanLike = true }, 10000)"
+  :name="humanLike? 'shibboleth_timestamp': ''"
+  :value="humanLike? new Date().toISOString(): ''"
+  @human-like.window="humanLike = true"
+/>

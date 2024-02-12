@@ -30,11 +30,11 @@ Retention elections, Pennsylvania&#39;s process for keeping those judges in thei
 
 ### Table of Contents
 
-1. <a href="#spl-heading-1">What is a judicial retention election?</a>
+- <a href="#spl-heading-1">What is a judicial retention election?</a>
 
-2. <a href="#spl-heading-2">Who is running for retention in 2023?</a>
+- <a href="#spl-heading-2">Who is running for retention in 2023?</a>
 
-3. <a href="#spl-heading-3">The records of the Superior Court judges up for retention</a>
+- <a href="#spl-heading-3">The records of the Superior Court judges up for retention</a>
 
 <h2 id="spl-heading-1">What is a judicial retention election?</h2>
 
@@ -48,7 +48,7 @@ Since 1968, when the state’s constitution was last updated, voters have reject
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-That was in 2005, when voters were broadly frustrated with state lawmakers’ vote to increase their own salaries and those of judges. Former state Supreme Court Justice Russell Nigro was up for reelection that year, and while he had nothing to do with the pay hike, <a href="https://news.google.com/newspapers?id=1L4iAAAAIBAJ&amp;sjid=NLYFAAAAIBAJ&amp;pg=1358,2907716&amp;dq=russell+m+nigro&amp;hl=en">he lost his bid for retention</a> amid a widespread culling of incumbents.
+That was in 2005, when voters were broadly frustrated with state lawmakers’ vote to increase their own salaries and those of judges.
 
 If a judge loses their retention race, a special election is held to replace them in the next odd year. The governor can appoint a replacement in the interim, but two-thirds of the state Senate must approve the choice.
 
@@ -99,6 +99,8 @@ Notable recent opinions from Panella include one that <a href="https://www.pennl
 Stabile served as Cumberland County GOP chair before running for Superior Court in 2011, losing his first bid but prevailing two years later. In its recommendation of him, the bar association wrote that he “is highly regarded by his peers and is described by lawyers and judges alike as having a positive judicial temperament and broad legal knowledge.”
 
 In some of his recent high-profile decisions, Stabile <a href="https://6abc.com/amtrak-crash-deadly-amtrack-philadelphia/6185361/">reinstated charges</a> against an engineer in a deadly Amtrak crash on procedural grounds; <a href="https://www.law.com/thelegalintelligencer/2023/07/20/split-pa-superior-court-rules-ubers-arbitration-clause-is-unenforceable/">dissented in a decision</a> that found Uber had not met the legal bar for requiring users to waive jury trials (again on procedural grounds); and wrote an opinion <a href="https://www.nbcnews.com/news/us-news/ex-penn-state-president-spanier-convicted-over-sandusky-complaint-loses-n886811">upholding a misdemeanor child endangerment conviction</a> for former Penn State President Graham Spanier in relation to Jerry Sandusky’s child abuse.
+
+<em>This story was updated on Dec. 12 to remove a passage that oversimplified former state Supreme Court Justice Russell Nigro’s relationship to a pay hike approved by the legislature.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
