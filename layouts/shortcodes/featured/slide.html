@@ -21,40 +21,38 @@
 {{ $id := partial "helper/new-id" . }}
 
 
-<figure
-  class="group w-5/6 flex-none cursor-pointer snap-center px-2 pb-2 focus:outline-none sm:px-8"
-  :class="{'cursor-pointer': currentSlide !== +$el.dataset.slideId }"
-  x-intersect:enter.full="currentSlide = +$el.dataset.slideId"
-  data-slide-id="{{ .Ordinal }}"
-  @focus="center($event.currentTarget)"
-  tabindex="0"
-  data-ga-category="slide:{{ .Ordinal }}"
-  x-report-click
+<li
+  x-bind="disableNextAndPreviousButtons"
+  role="option"
+  class="h-full w-11/12 flex-[0_0_auto] snap-center px-0 font-bold md:w-11/12 [&:first-child]:snap-start [&:last-child]:snap-end"
 >
-  <div class="relative h-0 w-full pb-16x9">
-    <picture
-      class="
+  <figure
+    class="group flex-none cursor-pointer snap-center pb-2 focus:outline-none"
+  >
+    <div class="relative h-0 w-full pb-16x9">
+      <picture
+        class="
         absolute inset-0 block
-        overflow-hidden rounded
+        overflow-hidden
         bg-g-3 transition-shadow duration-300
         group-focus:shadow-md
       "
-    >
-      <source type="image/webp" srcset="{{ $srcset }}" />
-      <img
-        class="h-auto w-full"
-        alt="{{ $description }}"
-        title="{{ $description }}"
-        src="{{ $imgSmallSrc }}"
-        draggable="false"
-        decode="async"
-        loading="lazy"
-        :loading="loadingMode"
-      />
-    </picture>
-  </div>
-  <figcaption class="{{ $capClass }} select-text">
-    {{ $caption }}
-    {{ $credit }}
-  </figcaption>
-</figure>
+      >
+        <source type="image/webp" srcset="{{ $srcset }}" />
+        <img
+          class="h-auto w-full"
+          alt="{{ $description }}"
+          title="{{ $description }}"
+          src="{{ $imgSmallSrc }}"
+          draggable="false"
+          decode="async"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <figcaption class="{{ $capClass }} select-text px-16">
+      {{ $caption }}
+      {{ $credit }}
+    </figcaption>
+  </figure>
+</li>
