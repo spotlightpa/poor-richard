@@ -34,15 +34,13 @@ Here’s what you need to know about Pennsylvania’s 2024 presidential primary 
 
 - <a href="#spl-heading-3">Who can vote in Pennsylvania’s 2024 primary?</a>
 
-- <a href="#spl-heading-4">All registered voters can vote on local and statewide ballot initiatives during a primary election, as well as special elections that coincide with the primary date.</a>
+- <a href="#spl-heading-4">Will Pennsylvania move its 2024 primary date?</a>
 
-- <a href="#spl-heading-5">Will Pennsylvania move its 2024 primary date?</a>
+- <a href="#spl-heading-5">Why do some want to move the date of the primary?</a>
 
-- <a href="#spl-heading-6">Why do some want to move the date of the primary?</a>
+- <a href="#spl-heading-6">Is there a political benefit to moving Pennsylvania’s primary?</a>
 
-- <a href="#spl-heading-7">Is there a political benefit to moving Pennsylvania’s primary?</a>
-
-- <a href="#spl-heading-8">What are the arguments against moving the primary?</a>
+- <a href="#spl-heading-7">What are the arguments against moving the primary?</a>
 
 <h2 id="spl-heading-1">When is Pennsylvania’s 2024 primary election?</h2>
 
@@ -62,19 +60,19 @@ Other states hold presidential caucuses, including Idaho, where the Democratic c
 
 Pennsylvania has a closed primary system, meaning only registered Democrats and Republicans can vote for candidates during partisan spring elections.
 
-<h2 id="spl-heading-4">All registered voters can vote on local and statewide ballot initiatives during a primary election, as well as special elections that coincide with the primary date.</h2>
+All registered voters can vote on local and statewide ballot initiatives during a primary election, as well as special elections that coincide with the primary date.
 
-<h2 id="spl-heading-5">Will Pennsylvania move its 2024 primary date?</h2>
+<h2 id="spl-heading-4">Will Pennsylvania move its 2024 primary date?</h2>
 
 As of Jan. 16, it appears that the state will not move its 2024 presidential primary election date.
 
 The Democratic-controlled state House and Republican-controlled state Senate have been unable to agree on a different date, and election officials have warned that any such change should be made at least a year in advance.
 
-<h2 id="spl-heading-6">Why do some want to move the date of the primary?</h2>
+<h2 id="spl-heading-5">Why do some want to move the date of the primary?</h2>
 
 The current date conflicts with Passover, a holiday during which some Jews <a href="https://jmoreliving.com/2021/03/24/passover-rules-a-cheat-sheet-of-holiday-practices/">avoid</a> driving, writing, and other activities, as they do on the <a href="https://www.chabad.org/library/article_cdo/aid/95907/jewish/The-Shabbat-Laws.htm">Sabbath</a>.
 
-<h2 id="spl-heading-7">Is there a political benefit to moving Pennsylvania’s primary?</h2>
+<h2 id="spl-heading-6">Is there a political benefit to moving Pennsylvania’s primary?</h2>
 
 Some lawmakers argue that moving Pennsylvania’s primary to an earlier date would give the state more influence in the presidential election.
 
@@ -82,7 +80,7 @@ Some lawmakers argue that moving Pennsylvania’s primary to an earlier date wou
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-<h2 id="spl-heading-8">What are the arguments against moving the primary?</h2>
+<h2 id="spl-heading-7">What are the arguments against moving the primary?</h2>
 
 The county officials who run elections and other voting experts have <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-presidential-primary-date-2024-passover/">major logistical concerns</a> about moving the 2024 primary at this point.
 
