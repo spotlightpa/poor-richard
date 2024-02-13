@@ -24,7 +24,7 @@
       <!-- Prev Button -->
       <button
         x-on:click="prev"
-        class="absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-r from-black to-transparent text-6xl"
+        class="absolute bottom-0 left-0 top-0 z-20 flex w-20 cursor-pointer items-center justify-center bg-gradient-to-r from-black to-transparent text-6xl"
         :aria-disabled="atBeginning"
         :tabindex="atBeginning ? 1 : 1"
         :class="{'opacity-0': atBeginning }"
@@ -71,7 +71,7 @@
       </div>
       <button
         @click="next()"
-        class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-black to-transparent text-6xl"
+        class="absolute bottom-0 right-0 top-0 z-20 flex w-20 cursor-pointer items-center justify-center bg-gradient-to-l from-black to-transparent text-6xl"
         :aria-disabled="atEnd"
         :tabindex="atEnd ? 1 : 1"
         :class="{'opacity-0': atEnd }"
