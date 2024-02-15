@@ -12,6 +12,7 @@ internal-id = "SPLPSUACCOUNT"
 kicker = "Investigation"
 layout = "featured"
 modal-exclude = false
+pinned = true
 published = 2023-07-19T05:00:00-04:00
 series = ["Missed Conduct"]
 slug = "penn-state-sandusky-accountability-transparency-misconduct-retaliation"
