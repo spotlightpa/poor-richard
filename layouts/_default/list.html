@@ -49,7 +49,7 @@
       </div>
       {{ partial "tw/content-well.html" . }}
 
-      {{ range ($page.ByParam "pinned") | first 1 }}
+      {{ range $page | first 1 }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
           "filename" (.Param "image")
@@ -88,7 +88,7 @@
         </div>
       {{ end }}
 
-      {{ $pages := $page.ByParam "pinned" | after 1 | first 4 }}
+      {{ $pages := $page | after 1 | first 4 }}
       {{ range $i, $page := $pages }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
