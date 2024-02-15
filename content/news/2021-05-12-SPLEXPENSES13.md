@@ -1,33 +1,27 @@
 +++
-arc-id = "P3I37TMOFJETBJDADGEMPTKA5Q"
-internal-id = "SPLEXPENSES13"
-internal-budget = ""
-image = "external/fgwe0a6r008xrjryed0951ywv8.jpeg"
-image-description = "About $20 million went into Pennsylvania lawmakers’ pockets over four years in the form of reimbursements for meals, mileage subsidies, per diems, and other expenses."
-image-caption = ""
-image-credit = "Leise Hook / For Spotlight PA"
-image-size = ""
-published = 2021-05-12T09:00:00Z
-slug = "pa-legislature-expense-accounts-hidden-legislative-privilege"
-authors = ["Angela Couloumbis", "Mike Wereschagin", "Brad Bumsted", "Sam Janesch"]
-byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, and Sam Janesch of The Caucus"
-title = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details"
-subtitle = ""
-description = "A web of expense accounts, few reporting requirements, and questionable claims of “legislative privilege” help keep lawmaker spending obscured — and the public in the dark."
-blurb = "A web of expense accounts, few reporting requirements, and questionable claims of “legislative privilege” help keep lawmaker spending obscured — and the public in the dark."
-kicker = "The Capitol"
-topics = ["The Capitol"]
-series = ["The Hidden Tab"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
 aliases = ["/hidden-tab/"]
+arc-id = "P3I37TMOFJETBJDADGEMPTKA5Q"
+authors = ["Angela Couloumbis", "Mike Wereschagin", "Brad Bumsted", "Sam Janesch"]
+blurb = "A web of expense accounts, few reporting requirements, and questionable claims of “legislative privilege” help keep lawmaker spending obscured — and the public in the dark."
+byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, and Sam Janesch of The Caucus"
+description = "A web of expense accounts, few reporting requirements, and questionable claims of “legislative privilege” help keep lawmaker spending obscured — and the public in the dark."
+extended-kicker = "Special Investigation"
+image = "external/fgwe0a6r008xrjryed0951ywv8.jpeg"
+image-credit = "Leise Hook / For Spotlight PA"
+image-description = "About $20 million went into Pennsylvania lawmakers’ pockets over four years in the form of reimbursements for meals, mileage subsidies, per diems, and other expenses."
+internal-id = "SPLEXPENSES13"
+kicker = "The Capitol"
+layout = "featured"
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = "featured"
-extended-kicker = "Special Investigation"
+pinned = true
+published = 2021-05-12T05:00:00-04:00
+series = ["The Hidden Tab"]
+slug = "pa-legislature-expense-accounts-hidden-legislative-privilege"
+suppress-date = false
+suppress-featured = false
+title = "Taxpayers foot huge bill to run Pa.’s full-time legislature, but are blocked from many details"
+topics = ["The Capitol"]
 +++
 
 
