@@ -48,7 +48,7 @@ Public school districts and advocates have criticized these billing practices fo
 
 For one, the mechanism by which disabled students’ tuition is calculated uses an average that doesn’t take different kinds of disabilities, and their different costs, into account. Because districts’ payments for severe disabilities tend to inflate the total, charters can get more money than a particular student needs.
 
-As state Rep. Pete Schweyer (D., Lehigh) recently told Spotlight PA, “A child with spinal bifida is vastly more expensive to educate than a child with some level of hearing loss.” Schweyer chairs the state House Education Committee, which will play a key role in negotiating education overhauls, and he broadly supports changes to charter financing.
+As state Rep. Pete Schweyer (D., Lehigh) recently told Spotlight PA, “A child with spina bifida is vastly more expensive to educate than a child with some level of hearing loss.” Schweyer chairs the state House Education Committee, which will play a key role in negotiating education overhauls, and he broadly supports changes to charter financing.
 
 Lawmakers also face a challenge inherent to Pennsylvania’s funding structure for charters: When a student moves from a traditional public school to a charter, there is not a corresponding level of savings.
 

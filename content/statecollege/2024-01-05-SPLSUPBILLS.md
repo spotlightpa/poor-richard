@@ -10,6 +10,7 @@ image-gravity = "ce"
 internal-id = "SPLSUPBILLS"
 kicker = "Local Government"
 modal-exclude = false
+pinned = false
 published = 2024-01-05T04:00:00-05:00
 series = ["Richest Little City"]
 slug = "dubois-pennsylvania-suplizio-corruption-investigation-legal-bills"
@@ -21,7 +22,7 @@ topics = ["Local Government"]
 
 <em>A version of this story first appeared in Talk of the Town, a weekly newsletter by Spotlight PA’s State College regional bureau featuring the most important news and happenings in north-central Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>Sign up for free here.</em></a><em></em>
 
-STATE COLLEGE —&nbsp;DuBois has spent at least $274,00 in taxpayer money to cover the legal bills of former City Manager Herm Suplizio, who is <a href="https://www.spotlightpa.org/statecollege/2023/11/dubois-pennsylvania-herm-suplizio-fraud-corruption-attorney-general/">accused of stealing roughly double that amount</a> from the Pennsylvania city, its annual festival, and a local nonprofit over nearly a decade.
+STATE COLLEGE —&nbsp;DuBois has spent at least $274,000 in taxpayer money to cover the legal bills of former City Manager Herm Suplizio, who is <a href="https://www.spotlightpa.org/statecollege/2023/11/dubois-pennsylvania-herm-suplizio-fraud-corruption-attorney-general/">accused of stealing roughly double that amount</a> from the Pennsylvania city, its annual festival, and a local nonprofit over nearly a decade.
 
 The city has also spent more than $32,000 on legal representation for other people associated with DuBois who were interviewed as part of the corruption probe.
 
