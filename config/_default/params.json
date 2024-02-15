@@ -3,10 +3,12 @@
   "ad-breaker-image-description": "",
   "ad-breaker-images": [],
   "ad-breaker-link": "",
-  "ad-featured-active": false,
-  "ad-featured-image-description": "",
-  "ad-featured-images": [],
-  "ad-featured-link": "",
+  "ad-featured-active": true,
+  "ad-featured-image-description": "Get Spotlight PA's exclusive Pennsylvania tote bag, plus hats and more at the Spotlight PA store.",
+  "ad-featured-images": [
+    "https://files.data.spotlightpa.org/uploads/01jw/wrfq/the-perfect-gift-13-.png"
+  ],
+  "ad-featured-link": "https://shop.spotlightpa.org",
   "ad-headwater-active": false,
   "ad-headwater-image-description": "",
   "ad-headwater-images": [],
