@@ -1,22 +1,23 @@
 +++
-draft = false
-internal-id = "SPLCREDITMAIN23"
-image = "2019/11/st-peter.jpeg"
-image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati, dined at the St. Peter Stiftskulinarium restaurant in Austria in September 2016 and charged $246 to his campaign account. State law requires campaign money to be used for “influencing the outcome of an election,” but what qualifies is largely open to interpretation."
-image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
-image-size = "inline"
-published = 2019-10-22T09:00:00.000Z
+aliases = ["/news/pennsylvania/spl/pa-election-campaign-spending-hidden-expenses-spotlight-pa-20191022.html"]
 authors = ["Angela Couloumbis", "Mike Wereschagin", "Brad Bumsted", "Paula Knudsen", "Sam Janesch", "Alyssa Biederman"]
-byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, Paula Knudsen, Sam Janesch and Alyssa Biederman of The Caucus"
-title = "Lavish dinners, sports tickets, and nearly $3.5 million in other expenses by Pa. lawmakers you’ve never seen"
-description = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
 blurb = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
+byline = "Angela Couloumbis of Spotlight PA and Mike Wereschagin, Brad Bumsted, Paula Knudsen, Sam Janesch and Alyssa Biederman of The Caucus"
+description = "A year-long investigation uncovered other purchases, too: foreign trips, limos, fine wines and liquor, country club memberships and even a DNA test kit."
+draft = false
+image = "2019/11/st-peter.jpeg"
+image-credit = "Andre Schönherr / St. Peter Stiftskulinarium"
+image-description = "The most powerful lawmaker in the Pa. Senate, Joe Scarnati, dined at the St. Peter Stiftskulinarium restaurant in Austria in September 2016 and charged $246 to his campaign account. State law requires campaign money to be used for “influencing the outcome of an election,” but what qualifies is largely open to interpretation."
+image-size = "inline"
+internal-id = "SPLCREDITMAIN23"
 kicker = "Campaign Finance"
-slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
-aliases = [
-"/news/pennsylvania/spl/pa-election-campaign-spending-hidden-expenses-spotlight-pa-20191022.html"
-]
+modal-exclude = false
+pinned = true
+published = 2019-10-22T05:00:00-04:00
 series = ["Campaign Finance 2019"]
+slug = "lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen"
+suppress-date = false
+title = "Lavish dinners, sports tickets, and nearly $3.5 million in other expenses by Pa. lawmakers you’ve never seen"
 +++
 
 <script defer>
