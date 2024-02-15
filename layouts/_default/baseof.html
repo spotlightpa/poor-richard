@@ -48,7 +48,8 @@
   {{ if .Layout }}{{ $pageCat = print $pageCat ":" .Layout }}{{ end }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home" }}{{ end }}
   <body
-    class="{{ block `body-class` . }}{{ end }}"
+    class="{{ block `body-class` . }}
+    {{ end }} bg-white text-base leading-normal text-g-9"
     data-page-cat="{{ $pageCat }}"
     {{ block `body-attributes` . }}{{ end }}
   >
@@ -58,7 +59,12 @@
       {{ end }}
     {{ end }}
     {{ block "header" . }}
-      <header data-ga-category="header">
+      <header
+        x-data="{ atTop: true }"
+        data-ga-category="header"
+        @scroll.window.debounce="atTop = window.pageYOffset>10?false:true"
+        class="sticky top-0 z-[1000]"
+      >
         {{ block "banner" . }}
           {{ if .Param "banner-active" }}
             {{ partialCached "tw/banner.html" . }}
@@ -67,15 +73,17 @@
         {{ block "nav" . }}
           {{ partial "tw/nav.html" . }}
         {{ end }}
-        {{ block "topper" . }}
-          {{ if .Param "topper-active" }}
-            {{ partialCached "tw/promo-topper.html" . }}
-          {{ end }}
-        {{ end }}
-        {{ block "promo" . }}
-          {{ partialCached "tw/promo-header.html" $ }}
-        {{ end }}
       </header>
+
+      {{ block "topper" . }}
+        {{ if .Param "topper-active" }}
+          {{ partialCached "tw/promo-topper.html" . }}
+        {{ end }}
+      {{ end }}
+      {{ block "promo" . }}
+        {{ partialCached "tw/promo-header.html" $ }}
+      {{ end }}
+
     {{ end }}
     <main data-ga-category="main">
       {{ block "before-main" . }}{{ end }}

@@ -1,0 +1,25 @@
+{{ with .block }}
+  <section class="w-screen bg-g-2 p-4 sm:px-5 sm:py-8 md:py-12 lg:px-0">
+    {{ with .title }}
+      <h2 class="mx-auto max-w-5xl text-xl font-black sm:text-2xl">{{ . }}</h2>
+    {{ end }}
+    {{ with .cta }}
+      <nav
+        class="mx-auto mt-4 max-w-5xl justify-between gap-5 space-y-3 sm:flex sm:space-y-0 md:mt-6 lg:mt-9"
+      >
+        {{ range . }}
+          <a
+            href="{{ .url }}"
+            class="flex flex-1 last:justify-end even:justify-center hover:underline sm:even:border-l sm:even:border-r md:w-1/4"
+          >
+            <span
+              class="flex-auto text-2xl font-thin sm:px-5 sm:text-3xl md:max-w-[230px] md:px-0 md:text-5xl "
+              >{{ .actionText }}</span
+            >
+          </a>
+        {{ end }}
+      </nav>
+    {{ end }}
+
+  </section>
+{{ end }}

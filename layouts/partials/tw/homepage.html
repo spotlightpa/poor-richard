@@ -13,8 +13,17 @@
 
 {{ $pinnedStories := partial "helper/get-picks" "topSlots" }}
 
+{{ $editorPicksCallout := partial "helper/get-hp-picks" "edCallout" }}
+{{ $edInvestigations := partial "helper/get-hp-picks" "edInvestigations" }}
+{{ $edImpact := partial "helper/get-hp-picks" "edImpact" }}
+{{ $featuredTopics := "content/topics/the-capitol/_index.md" }}
+{{ $newsletter := site.GetPage "/newsletters/papost/_index.md" }}
+
+{{ $edNewsletter := "tw/list-callout-newsletter.html" }}
+
+{{ $bureau := site.GetPage "/statecollege/" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
-{{ $river := sort (union $paPost.RegularPages $news.RegularPages) ".PublishDate" "desc" }}
+{{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
 
 {{ $hasPromo := .Param "promo-active" }}
@@ -30,8 +39,17 @@
 {{ partial "tw/frontpage" (dict
   "featuredStories" $featuredStories
   "pinnedStories" $pinnedStories
+  "editorPicksCallout" $editorPicksCallout
+  "edInvestigations" $edInvestigations
+  "edImpact" $edImpact
+
+  "edNewsletter" $edNewsletter
+  "newsletter" $newsletter
+  "newsletterHed" "Latest From Our Daily Newsletter"
+  "bureau" $bureau
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass
+  "featuredTopics" $featuredTopics
   )
 }}

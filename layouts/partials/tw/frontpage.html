@@ -1,15 +1,20 @@
 {{ $nlBox := page.Param "newsletter-box" |
-  default "tw/inline-newsletter-white.html"
+  default "tw/newsletter-box-lg.html"
 }}
 {{ $imageDescription := page.Param "river-promo-description" }}
 {{ $link := page.Param "river-promo-link" }}
-{{ $desktopImages := page.Param "river-promo-desktop-images" }}
-{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
-{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
-{{ $mobileImages := page.Param "river-promo-mobile-images" }}
-{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
-{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
+{{ $desktopImages := page.Param "promo-desktop-images" }}
+{{ $desktopWidth := page.Param "promo-desktop-width" }}
+{{ $desktopHeight := page.Param "promo-desktop-height" }}
+{{ $mobileImages := page.Param "promo-mobile-images" }}
+{{ $mobileWidth := page.Param "promo-mobile-width" }}
+{{ $mobileHeight := page.Param "promo-mobile-height" }}
 
+{{ $hiddenField := .hiddenField }}
+{{ $newsletterHed := .newsletterHed }}
+
+{{ $blurb := .blurb }}
+{{ $title := .title }}
 {{ $btn := `inline-block
   rounded-lg bg-blue-6 py-3 px-4
   font-sans text-base font-bold
@@ -20,103 +25,265 @@
 }}
 
 
-<div class="mx-auto mb-5 max-w-screen-xl">
-  {{ define "topper" }}
-    {{ if .Param "topper-active" }}
-      {{ partialCached "tw/promo-topper.html" . }}
+<div
+  class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12 lg:space-y-16"
+  x-data="{ isSticky: true }"
+>
+  <div
+    class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,_auto)] xl:items-stretch xl:justify-evenly"
+  >
+    {{ if .featuredStories }}
+      <span
+        class="row-start-1 mt-7 inline-flex w-[1px] bg-black md:col-start-6 md:mx-auto xl:col-start-4 xl:row-end-5 xl:mx-10"
+      ></span>
+      <div
+        class="row-start-1 w-full md:col-span-5 md:col-start-1 xl:col-span-6 xl:col-start-5 xl:row-end-4 xl:min-w-[512px]"
+      >
+        {{ partial "tw/featured.html" .featuredStories }}
+      </div>
+      <span
+        class="row-start-1 row-end-4 mt-7 hidden w-[1px] bg-black xl:col-start-11 xl:mx-10 xl:inline-flex"
+      ></span>
     {{ end }}
-    {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-      {{ partial "tw/promo-topperarticle.html" $topperStories }}
+    {{ if .pinnedStories }}
+      <div
+        class="md:col-span-9 md:row-start-3 xl:col-span-3 xl:col-start-1 xl:row-start-1 xl:row-end-5"
+      >
+        {{ $pages := .pinnedStories }}
+        {{ partial "tw/list-3-row-story.html" (dict
+          "pages" $pages
+          "eyebrow" "rubric"
+          "rubricLink" "rubric"
+          )
+        }}
+      </div>
     {{ end }}
-  {{ end }}
-
-  {{ if .featuredStories }}
-    {{ partial "tw/featured.html" .featuredStories }}
-  {{ end }}
-  {{ if .pinnedStories }}
-    {{ $pages := .pinnedStories }}
-    {{ partial "tw/list-3-col-story.html" (dict
-      "pages" $pages
-      "wrapperClass" "mb-16 mx-auto"
-      "eyebrow" "rubric"
-      "rubricLink" "rubric"
-      )
-    }}
-  {{ end }}
-  <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-
-  <div data-ga-category="midpage" x-data="funnelStatus">
-    <div x-show="!isSubscriber">
-      {{ partial $nlBox . }}
-    </div>
-    <div data-ga-category="donate" x-cloak x-show="isSubscriber">
-      {{ partial "tw/donate-prefill-lg-page.html" (dict
-        "wrapperClass" "rounded overflow-hidden"
-        "donateHed" (page.Param "donate-hed")
-        "donateDek" (page.Param "donate-text")
-        "donateCta" (page.Param "donate-cta")
-        "donateGaCategory" (page.Param "donate-ga-category")
-        "donateCampaign" (page.Param "donate-ga-campaign")
-        "donateTheme" (page.Param "donate-theme")
-        "donateAmounts" (page.Param "donate-amounts")
-        )
-      }}
-    </div>
-  </div>
-  {{ if .river }}
+    {{ with $blurb }}
+      <div
+        class="order-4 col-span-3 row-start-1 mt-9 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+      >
+        <div class="article-content rounded bg-black p-6 font-sans text-white">
+          <h2 class="text-2xl font-extrabold">
+            About our {{ $title }} coverage
+          </h2>
+          <div class=" text-xl leading-relaxed">
+            {{ . }}
+          </div>
+        </div>
+        <div
+          class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
+        >
+          {{ if page.Param "ad-featured-active" }}
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mx-auto flex items-center justify-center"
+              "images" (page.Param "ad-featured-images")
+              "width" 300
+              "height" 250
+              "link" (page.Param "ad-featured-link")
+              "description" (page.Param "ad-featured-description")
+              )
+            }}
+          {{ end }}
+        </div>
+      </div>
+    {{ else }}
+      <div
+        class="order-4 col-span-3 row-start-1 mt-[34px] md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+      >
+        <div
+          class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
+          data-ga-category="featured"
+        >
+          {{ if page.Param "ad-featured-active" }}
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mx-auto flex items-center justify-center"
+              "images" (page.Param "ad-featured-images")
+              "width" 300
+              "height" 250
+              "link" (page.Param "ad-featured-link")
+              "description" (page.Param "ad-featured-description")
+              )
+            }}
+          {{ end }}
+        </div>
+        <div class="w-full border-t py-12 md:border-none md:py-0 lg:max-w-xs">
+          {{ partial "tw/rail-most-popular.html" dict }}
+        </div>
+      </div>
+    {{ end }}
     <div
-      class="items-start lg:grid lg:grid-cols-3 lg:gap-8"
-      @mouseover.passive.once="load()"
-      @touchstart.passive.once="load()"
+      data-ga-category="midpage"
+      class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded xl:col-span-10"
+      :class="isSticky ? 'sticky -mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
     >
       <div
-        id="frontpage-sidebar"
+        class="md:relative md:overflow-hidden md:rounded"
         x-data="funnelStatus"
-        class="grid items-start justify-items-center gap-2 py-8 sm:max-lg:grid-cols-2 md:px-8 lg:col-start-3 lg:flex lg:flex-col lg:self-stretch"
       >
-        <div data-ga-category="top" data-sf-campaign="701Dn000000YgoeIAC">
-          {{ partial "tw/promo-single.html" (dict
-            "class" "mb-5 min-w-full no-js:hidden"
-            "images" (page.Param "sidebar-top-images")
-            "width" (page.Param "sidebar-top-width")
-            "height" (page.Param "sidebar-top-height")
-            "link"  (page.Param "sidebar-top-link")
-            "description"  (page.Param "sidebar-top-description")
+        <button
+          class="flex text-g-4 md:hidden"
+          aria-label="close"
+          x-on:click="isSticky = false"
+          :class="isSticky ? ' absolute -top-11 right-2' : 'hidden'"
+        >
+          <svg
+            class="my-auto box-content h-5 w-5 fill-black p-3"
+            style="margin-right: -2px;"
+          >
+            {{ partial "helper/svg.html" "close" }}
+          </svg>
+        </button>
+        <div x-show="!isSubscriber">
+          {{ partial $nlBox (dict
+            "newsletterHed" (page.Param "newsletter-hed")
+            "newsletterDek" (page.Param "newsletter-dek")
+            "newsletterWrapper" "bg-g-1 border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
+            "newsletterField" (page.Param "newsletter-field")
             )
           }}
         </div>
-
-        <div class="w-full sm:max-w-xs">
-          {{ partial "tw/rail-most-popular.html" dict }}
+        <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+          {{ partial "tw/donate-prefill-lg.html" (dict
+            "donateHed" (page.Param "donate-hed")
+            "donateDek" (page.Param "donate-text")
+            "donateCta" (page.Param "donate-cta")
+            "donateGaCategory" (page.Param "donate-ga-category")
+            "donateCampaign" (page.Param "donate-ga-campaign")
+            "donateTheme" (page.Param "donate-theme")
+            "donateAmounts" (page.Param "donate-amounts")
+            )
+          }}
         </div>
-        {{ range .edPicks }}
-          {{ if .page }}
-            <div class="w-full sm:max-w-xs">
-              {{ partial "tw/rail-picks.html" . }}
-            </div>
-          {{ end }}
-        {{ end }}
-        {{ if page.Param "sidebar-sticky-images" }}
-          <div
-            class="flex-1"
-            data-ga-category="sticky"
-            data-sf-campaign="701Dn000000YgofIAC"
-            x-intersect="$dispatch('close-sticky')"
-          >
-            {{ partial "tw/promo-single.html" (dict
-              "class" "pt-5 min-w-full no-js:hidden sticky top-0"
-              "images" (page.Param "sidebar-sticky-images")
-              "width" (page.Param "sidebar-sticky-width")
-              "height" (page.Param "sidebar-sticky-height")
-              "link" (page.Param "sidebar-sticky-link")
-              "description" (page.Param "sidebar-sticky-description")
-              )
-            }}
-          </div>
-        {{ end }}
       </div>
+    </div>
+  </div>
+
+  <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+
+  <div
+    x-intersect:enter.margin.100px="isSticky = false"
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+    data-ga-category="breaker"
+  >
+    {{ if page.Param "ad-breaker-active" }}
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mx-auto flex items-center justify-center"
+        "images" (page.Param "ad-breaker-images")
+        "width" 970
+        "height" 90
+        "link" (page.Param "ad-breaker-link")
+        "description" (page.Param "ad-breaker-description")
+        )
+      }}
+    {{ end }}
+  </div>
+
+  <div class="mt-16 space-y-8 sm:space-y-12">
+    {{ if .editorPicksCallout }}
+      {{ $pages := .editorPicksCallout }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "Editor's Picks"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
+    {{ if .featuredTopics }}
+      {{ $topicPicks := .featuredTopics }}
+      {{ range $topicPick := slice $topicPicks }}
+        {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
+        {{ partial "tw/list-callout-story.html" (dict
+          "hed" "The Capitol"
+          "pages" $pages.RegularPages
+          "rubricLink" "rubric"
+          )
+        }}
+      {{ end }}
+    {{ end }}
+    {{ if .edInvestigations }}
+      {{ $pages := .edInvestigations }}
+      {{ partial "tw/list-callout-dark-story.html" (dict
+        "hed" "Investigations"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        "fullWidth" true
+        )
+      }}
+    {{ end }}
+
+    {{ if .edImpact }}
+      {{ $pages := .edImpact }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "Impact"
+        "pages" $pages
+        "eyebrow" "rubric"
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
+    {{ if .edNewsletter }}
+      {{ $pages := .newsletter }}
+      {{ partial "tw/list-callout-newsletter.html" (dict
+
+        "calloutHed" (page.Param "callout-hed")
+        "signupHed" (page.Param "signup-hed")
+        "signupDek" (page.Param "signup-dek")
+        "signupCta" (page.Param "signup-cta")
+        "signupImage" (page.Param "signup-image")
+        "signupField" (page.Param "signup-field")
+        "pages" $pages.RegularPages
+        )
+      }}
+    {{ end }}
+    {{ if .bureau }}
+      {{ $pages := .bureau }}
+
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "State College Bureau"
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
+  </div>
+
+  <div
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+    data-ga-category="headwater"
+  >
+    {{ if page.Param "ad-headwater-active" }}
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mx-auto flex items-center justify-center"
+        "images" (page.Param "ad-headwater-images")
+        "width" 970
+        "height" 90
+        "link" (page.Param "ad-headwater-link")
+        "description" (page.Param "ad-headwater-description")
+        )
+      }}
+    {{ end }}
+  </div>
+
+  {{ if .river }}
+    <div
+      class="mx-auto mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:gap-x-8 lg:px-20"
+      @mouseover.passive.once="load()"
+      @touchstart.passive.once="load()"
+    >
+      <h2
+        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+      >
+        {{ with .riverTitle }}
+          More {{ . }} Stories
+        {{ else }}
+          More top stories
+        {{ end }}
+      </h2>
+
       <div
-        class="justify-between py-8 md:col-span-2 md:row-start-1"
+        class="flex-1 justify-between py-6 sm:w-2/3"
         x-ref="archives"
         data-ga-category="river"
         data-sf-campaign="701Dn000000YgodIAC"
@@ -127,21 +294,49 @@
           @mouseover.once="load()"
           @touchstart.passive.once="load()"
         >
-          <h2
-            class="font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
-          >
-            More top stories
-          </h2>
-          <hr class="mt-1 border-2 border-black bg-black" />
-          <div
-            class="mt-3 flex flex-col space-y-8 md:space-y-6"
-            x-ref="archives"
-          >
-            {{ range $i, $page := .river | first 30 }}
-              <div data-ga-category="story-{{ $i| add 1 }}">
-                {{ partialCached "tw/thumb-h-story-river.html" $page $page.RelPermalink }}
+          <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+            {{ range $i, $page := .river | first 12 }}
+              {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+              {{ $imgOpts := dict
+                "filename" (.Param "image")
+                "credit" (.Param "image-credit")
+                "description" (.Param "image-description")
+                "link" $params.link
+                "widthRatio" 5
+                "heightRatio" 3
+                "widths" (slice 128 256 384 512 1280)
+                "figClass" "mt-2"
+                "sizeHint" "(min-width: 850px) 328px, 90vw"
+                "gravity" (.Param "image-gravity")
+              }}
+              <div data-ga-category="story-{{ add 1 $i }}">
+                {{ $eyebrow := $params.kicker }}
+                {{ $rubricLink := $params.link }}
+                {{ $thumbClass := $params.thumbClass }}
+                {{ if eq $.eyebrow "rubric" }}
+                  {{ $eyebrow = $params.kicker }}
+                {{ else if eq $.eyebrow "eventDate" }}
+                  {{ $eyebrow = $params.eventDate | default $params.published }}
+                {{ end }}
+                {{ if eq $.rubricLink "rubric" }}
+                  {{ $rubricLink = $params.rubric.RelPermalink }}
+                {{ end }}
+                {{ partial "tw/thumb-item.html" (dict
+                  "wrapperClass" "flex flex-wrap gap-x-4"
+                  "thumbClass" "w-2/5 sm:w-full md:w-2/5"
+                  "imgOpts" $imgOpts
+                  "rubricLink" $rubricLink
+                  "eyebrow" $eyebrow
+                  "link" $params.link
+                  "hed" .LinkTitle
+                  "byline" $params.byline
+                  "showDate" false
+                  "showByline" $.showByline
+                  "dek" $params.blurb
+                  )
+                }}
               </div>
-              {{ if eq (mod $i 4) 3 | and $desktopImages }}
+              {{ if eq (mod $i 5) 3 | and $desktopImages }}
                 <div
                   class="tile is-parent px-0 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
@@ -188,6 +383,76 @@
           </div>
         </nav>
       </div>
+      <div
+        id="frontpage-sidebar"
+        x-data="funnelStatus"
+        class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
+      >
+        <div data-ga-category="rail" data-sf-campaign="701Dn000000YgoeIAC">
+          {{ if page.Param "ad-rail-active" }}
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mx-auto flex items-center justify-center"
+              "images" (page.Param "ad-rail-images")
+              "width" 300
+              "height" 600
+              "link" (page.Param "ad-rail-link")
+              "description" (page.Param "ad-rail-description")
+              )
+            }}
+          {{ end }}
+        </div>
+
+        <div class="w-full sm:max-w-xs">
+          {{ partial "tw/rail-events.html" (dict
+            "label" "Upcoming Events"
+            )
+          }}
+        </div>
+        {{ range .edPicks }}
+
+          {{ if .page }}
+            <div class="w-full sm:max-w-xs">
+              {{ partial "tw/rail-picks.html" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+        {{ if page.Param "sidebar-sticky-images" }}
+          <div
+            class="sticky top-14 mx-auto self-start md:top-16"
+            data-ga-category="sticky"
+            data-sf-campaign="701Dn000000YgofIAC"
+            x-intersect="$dispatch('close-sticky')"
+          >
+            {{ partial "tw/promo-single.html" (dict
+              "class" "pt-5 min-w-full no-js:hidden"
+              "images" (page.Param "sidebar-sticky-images")
+              "width" (page.Param "sidebar-sticky-width")
+              "height" (page.Param "sidebar-sticky-height")
+              "link" (page.Param "sidebar-sticky-link")
+              "description" (page.Param "sidebar-sticky-description")
+              )
+            }}
+          </div>
+        {{ end }}
+      </div>
     </div>
   {{ end }}
+
+
+  <div
+    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+    data-ga-category="headwater"
+  >
+    {{ if page.Param "ad-headwater-active" }}
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mx-auto flex items-center justify-center"
+        "images" (page.Param "ad-headwater-images")
+        "width" 970
+        "height" 90
+        "link" (page.Param "ad-headwater-link")
+        "description" (page.Param "ad-headwater-description")
+        )
+      }}
+    {{ end }}
+  </div>
 </div>
