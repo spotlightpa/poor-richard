@@ -14,6 +14,7 @@ kicker = "Rural Issues"
 layout = "featured"
 modal-exclude = false
 no-index = false
+pinned = true
 published = 2022-06-02T05:00:00-04:00
 series = ["The Disconnect"]
 slug = "pennsylvania-broadband-internet-rural-expansion"
