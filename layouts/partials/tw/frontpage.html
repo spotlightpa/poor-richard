@@ -160,12 +160,12 @@
 
   <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
-  <div
-    x-intersect:enter.margin.100px="isSticky = false"
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="breaker"
-  >
-    {{ if page.Param "ad-breaker-active" }}
+  {{ if page.Param "ad-breaker-active" }}
+    <div
+      x-intersect:enter.margin.100px="isSticky = false"
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="breaker"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-breaker-images")
@@ -175,10 +175,11 @@
         "description" (page.Param "ad-breaker-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 
-  <div class="mt-16 space-y-8 sm:space-y-12">
+
+  <div class="mt-16 space-y-8 sm:space-y-12 md:mt-24">
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -249,11 +250,11 @@
     {{ end }}
   </div>
 
-  <div
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="headwater"
-  >
-    {{ if page.Param "ad-headwater-active" }}
+  {{ if page.Param "ad-headwater-active" }}
+    <div
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="headwater"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-headwater-images")
@@ -263,8 +264,8 @@
         "description" (page.Param "ad-headwater-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 
   {{ if .river }}
     <div
@@ -438,12 +439,11 @@
     </div>
   {{ end }}
 
-
-  <div
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="headwater"
-  >
-    {{ if page.Param "ad-headwater-active" }}
+  {{ if page.Param "ad-headwater-active" }}
+    <div
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="headwater"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-headwater-images")
@@ -453,6 +453,6 @@
         "description" (page.Param "ad-headwater-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 </div>
