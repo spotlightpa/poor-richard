@@ -44,7 +44,9 @@
     </div>
   {{ end }}
   <div class="group mt-2 flex-1 md:mb-4">
-    <h3 class="{{ $hedSize }} {{ $hedColor }} leading-tight tracking-tight">
+    <h3
+      class="{{ $hedSize }} {{ $hedColor }} text-balance leading-tight tracking-tight"
+    >
       <a
         class="group-hover:underline"
         href="{{ .link }}"
@@ -67,7 +69,7 @@
       </h4>
     {{ end }}
     {{ if .dek }}
-      <h4 class="{{ $dekSize }} {{ $linkColor }} mt-2 font-sans">
+      <h4 class="{{ $dekSize }} {{ $linkColor }} mt-2 text-pretty font-sans">
         <a
           href="{{ .link }}"
           class="group-hover:underline"
