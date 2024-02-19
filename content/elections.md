@@ -195,7 +195,6 @@ dek="And the winners are … Join us to learn about how the judicial election re
 date="2023-11-16"
 dateVerbose="Nov. 16, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-results-event/"
-registration="https://zoom.us/webinar/register/WN_wf_P08sRQF-jRFrnG-T4NA"
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes.
