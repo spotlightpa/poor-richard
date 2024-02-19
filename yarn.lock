@@ -13,17 +13,17 @@
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
 "@alpinejs/focus@^3.12.3":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@alpinejs/focus/-/focus-3.13.0.tgz#4310570d858896dec83611557ad5766e9cd908ad"
-  integrity sha512-8ls5d6oIYtsnIeYRMczPTo2uUW0Qj7uJQII5PIksaKVPqrHPU94qcmYWZnKJ4yW0moUGaC1/Km/XrA5GzVXeRA==
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/@alpinejs/focus/-/focus-3.13.5.tgz#024cffefbdff7214c4f18f81dde9b09dca8b9407"
+  integrity sha512-ViZ1W9M3/leZKNdsMyTZvGCu2DPMyUSbRwrbGNOnCkzHMHOIP6zdGpzPkD+1HyhQ2SuG7wRgf7YlrPnlE6tMqA==
   dependencies:
     focus-trap "^6.9.4"
     tabbable "^5.3.3"
 
 "@alpinejs/intersect@^3.12.3":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@alpinejs/intersect/-/intersect-3.13.0.tgz#4be5a14835fba2dd6812a038e517dcdcf88d14cb"
-  integrity sha512-3YGgJEmv656/hcr5alFgeIVnGi3n2QbY8wpILbvA9V0PCs4d3iN7XzGdTKsySN4M1fbk9Hm4WHUccJMf6dAfCA==
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/@alpinejs/intersect/-/intersect-3.13.5.tgz#097e584415c3bc55e6a089825079d4fc6a6827a7"
+  integrity sha512-wBveYNRuZoFFirRq4GmUx1JgD5/7S9b10l8Ps5wQJX/deiRXTY8f1Op0zVTkmIoHLpXyouSsOZz9/U/lPU3NZw==
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
@@ -1189,9 +1189,9 @@ ajv@^6.12.4:
     uri-js "^4.2.2"
 
 alpinejs@^3.12.3:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.13.0.tgz#0334d5f9edb612be33f1f8a7eb3a579b53e4f04e"
-  integrity sha512-7FYR1Yz3evIjlJD1mZ3SYWSw+jlOmQGeQ1QiSufSQ6J84XMQFkzxm6OobiZ928SfqhGdoIp2SsABNsS4rXMMJw==
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.13.5.tgz#c06f067e847a295085b4c6f76c42a6a35499d953"
+  integrity sha512-1d2XeNGN+Zn7j4mUAKXtAgdc4/rLeadyTMWeJGXF5DzwawPBxwTiBhFFm6w/Ei8eJxUZeyNWWSD9zknfdz1kEw==
   dependencies:
     "@vue/reactivity" "~3.1.1"
 
