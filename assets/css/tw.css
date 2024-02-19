@@ -315,13 +315,6 @@
   }
 }
 
-@supports (grid-template-rows: subgrid) {
-  .row-subgrid {
-    display: grid;
-    grid-template-rows: subgrid;
-  }
-}
-
 /* if backdrop support: very transparent and blurred */
 @supports (
   not (-webkit-backdrop-filter: none) and not (backdrop-filter: none)
