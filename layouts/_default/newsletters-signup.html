@@ -54,9 +54,12 @@
               {{ continue }}
             {{ end }}
             <div
-              class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
+              class="
+                mx-2 flex cursor-pointer p-5 transition-all
+                hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow
+                has-[:checked]:rounded has-[:checked]:bg-g-1
+                md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
               x-data="{ isChecked: {{ $checked }} }"
-              :class="{ 'rounded bg-g-1': isChecked }"
             >
               {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
               {{ $slug := .File.Dir | path.Base }}
