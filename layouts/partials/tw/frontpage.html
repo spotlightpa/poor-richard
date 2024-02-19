@@ -3,6 +3,7 @@
 }}
 {{ $imageDescription := page.Param "river-promo-description" }}
 {{ $link := page.Param "river-promo-link" }}
+{{ $riverActive := page.Param "promo-active" }}
 {{ $desktopImages := page.Param "promo-desktop-images" }}
 {{ $desktopWidth := page.Param "promo-desktop-width" }}
 {{ $desktopHeight := page.Param "promo-desktop-height" }}
@@ -337,7 +338,7 @@
                   )
                 }}
               </div>
-              {{ if eq (mod $i 5) 3 | and $desktopImages }}
+              {{ if eq (mod $i 5) 3 | and $riverActive }}
                 <div
                   class="tile is-parent px-0 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
