@@ -103,7 +103,7 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="row-subgrid relative  grid auto-rows-min grid-cols-5 gap-x-4 gap-y-8 rounded bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%_-_2rem)]"
+    class="relative grid auto-rows-min grid-cols-5 grid-rows-subgrid gap-x-4 gap-y-8 rounded bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%_-_2rem)]"
     x-data="{ isOpen: false }"
     :style="!isOpen && { height: '560px' }"
     :class="{'overflow-hidden': !isOpen}"
