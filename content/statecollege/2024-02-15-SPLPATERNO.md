@@ -20,6 +20,8 @@ topics = ["Penn State"]
 
 <em>This story was produced by the </em><a href="https://www.spotlightpa.org/statecollege"><em>State College regional bureau of Spotlight PA</em></a><em>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. Sign up for our north-central Pa. newsletter, Talk of the Town, at </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>spotlightpa.org/newsletters/talkofthetown</em></a>.<em></em>
 
+<em>Update: A trustee introduced a resolution to name the field after Paterno at the board's Feb. 16 meeting, but <a href="https://www.spotlightpa.org/statecollege/2024/02/penn-state-football-paterno-field-resolution-trustees-budget-cuts/">quickly withdrew it after objections.</a></em>
+
 STATE COLLEGE — Penn State trustees and high-ranking university representatives met privately twice in January to discuss whether to name the football field at Beaver Stadium after former coach Joe Paterno, according to three people with direct knowledge of the conversations.
 
 The meetings potentially violate a state law that requires governing bodies to conduct business in public view, and continue a <a href="https://www.spotlightpa.org/statecollege/2022/09/penn-state-board-of-trustees-sunshine-act-public-meetings/">decadelong pattern of the board convening behind closed doors</a>.
