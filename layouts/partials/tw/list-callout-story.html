@@ -3,17 +3,10 @@
 {{ if gt $rows 0 }}
   {{ $limit = mul $rows 1 }}
 {{ end }}
-{{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
-{{ $featuredStory := $featuredStory }}
 {{ $page := .pages }}
 {{ if $limit }}
   {{ $page = first $limit .pages }}
 {{ end }}
-{{ $pages := .pages }}
-{{ $pages := complement $pages $featuredStory }}
-{{ $p2 := $pages }}
-
-{{ $c2 := slice $pages }}
 
 
 <div
@@ -29,7 +22,7 @@
     </h2>
   {{ end }}
 
-  {{ range $pages | first 1 }}
+  {{ range $page | first 1 }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
@@ -80,7 +73,7 @@
     class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
   ></span>
 
-  {{ range first 1 (after 1 $pages)  }}
+  {{ range after 1 $page }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
