@@ -3,12 +3,12 @@
 }}
 {{ $imageDescription := page.Param "river-promo-description" }}
 {{ $link := page.Param "river-promo-link" }}
-{{ $desktopImages := page.Param "promo-desktop-images" }}
-{{ $desktopWidth := page.Param "promo-desktop-width" }}
-{{ $desktopHeight := page.Param "promo-desktop-height" }}
-{{ $mobileImages := page.Param "promo-mobile-images" }}
-{{ $mobileWidth := page.Param "promo-mobile-width" }}
-{{ $mobileHeight := page.Param "promo-mobile-height" }}
+{{ $desktopImages := page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
 
 {{ $hiddenField := .hiddenField }}
 {{ $newsletterHed := .newsletterHed }}
@@ -339,7 +339,7 @@
               </div>
               {{ if eq (mod $i 5) 3 | and $desktopImages }}
                 <div
-                  class="tile is-parent px-0 pt-0"
+                  class="px-0 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
                 >
                   {{ partial "tw/promo-double.html" (dict

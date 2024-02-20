@@ -3,6 +3,7 @@ title = "Our Champions"
 theme = "leaders"
 url = "/support/leaders-in-action/"
 layout = "support"
+aliases = ["/lia/"]
 donate = """
 {{<donate-slim
     title="Become a Leader in Action"
