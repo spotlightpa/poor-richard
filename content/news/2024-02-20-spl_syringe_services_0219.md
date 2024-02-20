@@ -64,7 +64,7 @@ A <a href="https://legislativeanalysis.org/wp-content/uploads/2023/11/Syringe-Se
 
 But Pennsylvania drug paraphernalia law says hypodermic syringes and needles are illegal drug paraphernalia if they are used or intended to be used to inject banned control substances.
 
-Under the bill co-sponsored by Sruzzi, the state’s definition of drug paraphernalia would not include syringes, needles, or other objects “used to reduce the risk of disease transmission or other harm” provided through a syringe services program. The legislation also would create specific exceptions for those items when provided by pharmacists and health care providers.
+Under the bill co-sponsored by Struzzi, the state’s definition of drug paraphernalia would not include syringes, needles, or other objects “used to reduce the risk of disease transmission or other harm” provided through a syringe services program. The legislation also would create specific exceptions for those items when provided by pharmacists and health care providers.
 
 Under the legislation, syringe services programs would have to directly provide or arrange a number of services, including access to sterile syringes and needles, safe disposal of the items, information about substance use disorder prevention and treatment, and help obtaining opioid overdose reversal medication.
 
