@@ -17,7 +17,7 @@
       class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
     >
       <header
-        class="flex w-full items-baseline justify-between border-b border-black"
+        class="flex w-full flex-wrap items-baseline justify-between border-b border-black md:flex-nowrap"
       >
         <h2
           class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
@@ -28,8 +28,29 @@
             {{ $title }}
           {{ end }}
         </h2>
-        {{ partial "tw/breadcrumbs.html" . }}
+        <div class="-order-1 w-full sm:order-1 sm:w-auto">
+          {{ partial "tw/breadcrumbs.html" . }}
+        </div>
       </header>
+      {{ with .Content }}
+        <div
+          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+        >
+          <div
+            class="mx-auto my-6 max-w-prose"
+            data-ga-category="content"
+            id="content"
+          >
+            <div
+              class="article-content w-full overflow-hidden leading-relaxed"
+              data-sf-campaign="701Dn000000YgozIAC"
+            >
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
 
       <div
         class="mt-7 flex flex-auto self-stretch sm:max-w-[280px] md:space-y-12 lg:max-w-[300px]"
@@ -43,7 +64,6 @@
           </div>
         </div>
       </div>
-      {{ partial "tw/content-well.html" . }}
 
       {{ range $featuredPages | first 1 }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
