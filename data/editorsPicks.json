@@ -12,17 +12,16 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-02-21-SPL_PHFA_REOPEN.md"
+    "content/news/2024-02-22-SPLCAN24BUDG.md"
   ],
   "subfeatures": [
-    "content/news/2023-08-01-SPL_PHFA_TRANSITION.md",
-    "content/news/2023-02-01-SPLPAHAF31.md",
-    "content/news/2023-01-23-SPLMORTGAGE.md"
+    "content/statecollege/2024-02-19-SPLRURALBUDGET.md",
+    "content/news/2024-02-16-SPLSHAPGAME.md"
   ],
   "topSlots": [
+    "content/news/2024-02-21-SPL_PHFA_REOPEN.md",
     "content/news/2024-02-21-SPLELEX24TURN.md",
-    "content/news/2024-02-20-spl_syringe_services_0219.md",
-    "content/news/2024-02-19-SPLSENPRE24.md"
+    "content/news/2024-02-20-spl_syringe_services_0219.md"
   ],
   "topper": []
 }
