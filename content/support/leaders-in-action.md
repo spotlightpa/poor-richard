@@ -1,6 +1,6 @@
 +++
 title = "Our Champions"
-theme = "page-landing"
+theme = "support"
 url = "/support/leaders-in-action/"
 layout = "support"
 aliases = ["/lia/"]
