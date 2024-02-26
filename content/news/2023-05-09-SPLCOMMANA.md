@@ -11,6 +11,7 @@ internal-budget = "Candidates running for key Pa. election posts wrongly believe
 internal-id = "SPLCOMMANA"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-05-09T12:00:24-04:00
 slug = "pa-primary-election-2023-election-fraud-donald-trump-county-commissioner"
 suppress-date = false
@@ -82,7 +83,7 @@ Candidates are not always direct in articulating their election views. Several i
 
 Roughly a dozen candidates have made references to “election integrity” without providing much, if any, definition. Groups that have pushed false narratives of widespread election fraud, like Butler PA Patriots, Audit the Vote PA, and a statewide coalition led by retired CIA officer Sam Faddis, have often used the term as a catch-all for their suspicions about electoral cheating.
 
-Both incumbent Republican commissioners in Union County <a href="https://www.dailyitem.com/election/boop-reber-seeking-reelection-in-union-county/article_7e717d48-abaf-11ed-b8c9-ff5e63b1c237.html">said they had</a> worked together to “fight for election integrity.” Republican candidate Jacqueline Rivera in Lehigh County <a href="https://www.jriveraforcommissioner.com/?fbclid=IwAR3cV70Z_K5-f1ydpfeBU6PdQ-myXxN7Nll8LpAhIPIx1a5HHrt9cL0i-n4">said she would</a> “defend election integrity.” And Republican candidate Scott Burford in York County put “election integrity” on his <a href="https://drive.google.com/file/d/1VwcJdhCNm0NmqVJB4UMxcN9YT-Rw-inA/view">checklist for success</a>. At least one Democrat running in an overwhelmingly blue county — Joanna Doven in Allegheny County — adopted the phrase as well when <a href="https://triblive.com/news/politics-election/4-democrats-enter-allegheny-county-council-races/">she said she would</a> focus on “restoring election integrity.”
+Both incumbent Republican commissioners in Union County <a href="https://www.dailyitem.com/election/boop-reber-seeking-reelection-in-union-county/article_7e717d48-abaf-11ed-b8c9-ff5e63b1c237.html">said they had</a> worked together to “fight for election integrity.” Republican candidate Jacqueline Rivera in Lehigh County <a href="https://web.archive.org/20230511012016/https://www.jriveraforcommissioner.com/">said she would</a> “defend election integrity.” And Republican candidate Scott Burford in York County put “election integrity” on his <a href="https://drive.google.com/file/d/1VwcJdhCNm0NmqVJB4UMxcN9YT-Rw-inA/view">checklist for success</a>. At least one Democrat running in an overwhelmingly blue county — Joanna Doven in Allegheny County — adopted the phrase as well when <a href="https://triblive.com/news/politics-election/4-democrats-enter-allegheny-county-council-races/">she said she would</a> focus on “restoring election integrity.”
 
 These elections look slightly different in the commonwealth’s seven home rule counties, which set up their own government structures rather than adopting the commissioner system most counties use.
 
