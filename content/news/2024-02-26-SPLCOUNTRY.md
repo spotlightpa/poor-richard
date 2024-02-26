@@ -70,7 +70,7 @@ Like Goodwin and Daniels, Rise has also worked with the Black Opry, and said liv
 
 “I feel grateful for the places that make a deliberate effort to highlight artists of color and LGBTQ artists,” Rise said.
 
-{{<picture src="2024/02/01jx-hhpj-7g3w-k5xs.jpeg" description="Country musician Sug Daniels poses with a guitar." caption="description" credit="Robert Pfieffer">}}
+{{<picture src="2024/02/01jx-hhpj-7g3w-k5xs.jpeg" description="Country musician Sug Daniels poses with a guitar." caption="" credit="Robert Pfieffer">}}
 
 Shawn David Young, a music director and professor at York College of Pennsylvania, said Beyoncé’s new turn follows a long history of country artists mixing genres.
 
