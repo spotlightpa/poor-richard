@@ -27,6 +27,13 @@
     data-ga-category="all-newsletters"
     x-data
     x-form="all-newsletters"
+    @submit="
+      let checkboxes = Array.from($el.querySelectorAll('input[type=checkbox]'));
+      let someChecked = checkboxes.some(el => el.checked);
+      if (!someChecked) {
+        $event.preventDefault();
+        alert('Please choose a newsletter to subscribe to.')
+      }"
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <section x-data class="bg-white px-4 pb-2 pt-12 md:pb-0">
