@@ -11,6 +11,7 @@ kicker = "Health"
 modal-exclude = false
 pinned = false
 published = 2023-10-18T05:00:00-04:00
+series = ["Opioid Settlement Money"]
 slug = "pennsylvania-opioid-settlement-fund-receive"
 suppress-date = false
 title = "Which Pa. counties are receiving the most opioid settlement money — and why"
