@@ -86,7 +86,7 @@ Krepps pointed to a DEP spreadsheet, obtained through a Right-to-Know request by
 
 According to Krepps, the DEP told the Sierra Club that if a well&#39;s owner can be identified, the agency will force them to pay back the cost of the plugging. Krepps said the Sierra Club plans to track payments on such wells.
 
-A <a href="https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor&#39;s_Lapsing_Statement_Report_2022-12-29.pdf">report</a> issued by the Wolf administration backed up Krepps’ concerns, finding that the oil and gas industry has a “culture of non-compliance” that leads to improperly abandoned becoming the responsibility of the state.
+A <a href="https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor&#39;s_Lapsing_Statement_Report_2022-12-29.pdf">report</a> issued by the Wolf administration backed up Krepps’ concerns, finding that the conventional oil and gas industry has a “culture of non-compliance” that leads to improperly abandoned becoming the responsibility of the state.
 
 Klapkowski said he would rather order owners to address their leaky wells than spend federal funding. But with limited time, he said, his priority was to get the money out.
 
