@@ -144,7 +144,7 @@
     </section>
 
     <div
-      class="relative mx-4 mt-6 max-w-4xl md:mx-auto md:mt-16"
+      class="relative mx-4 mt-6 max-w-5xl md:mx-auto md:mt-16"
       x-data="funnelStatus"
     >
       <div x-show="!isSubscriber">
@@ -156,7 +156,12 @@
           )
         }}
       </div>
-      <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+      <div
+        data-ga-category="donate"
+        x-cloak
+        x-show="isSubscriber"
+        class="md:relative md:overflow-hidden md:rounded"
+      >
         {{ partial "tw/donate-prefill-lg.html" (dict
           "donateHed" (page.Param "donate-hed")
           "donateDek" (page.Param "donate-text")
