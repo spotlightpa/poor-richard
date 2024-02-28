@@ -12,17 +12,17 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-02-27-SPLVOTMAC101.md"
+    "content/news/2024-02-28-SPLHO24PRE.md"
   ],
   "subfeatures": [
+    "content/news/2024-02-19-SPLSENPRE24.md",
     "content/news/2024-02-21-SPLELEX24TURN.md",
-    "content/news/2024-01-30-ELECHOW2024.md",
     "content/news/2024-01-16-SPLPRIM24DATE.md"
   ],
   "topSlots": [
     "content/news/2024-02-26-SPLWELLUPD.md",
-    "content/news/2024-02-23-SPLEASTSICK.md",
-    "content/news/2024-02-22-SPLCAN24BUDG.md"
+    "content/news/2024-02-27-SPLVOTMAC101.md",
+    "content/news/2024-02-23-SPLEASTSICK.md"
   ],
   "topper": []
 }
