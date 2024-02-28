@@ -194,7 +194,7 @@
       {{ $topicPicks := .featuredTopics }}
       {{ range $topicPick := slice $topicPicks }}
         {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
-        {{ partial "tw/list-callout-story.html" (dict
+        {{ partial "tw/list-callout-topic.html" (dict
           "hed" "The Capitol"
           "pages" $pages.RegularPages
           "rubricLink" "rubric"
