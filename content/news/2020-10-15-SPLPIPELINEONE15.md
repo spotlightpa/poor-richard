@@ -1,33 +1,26 @@
 +++
 arc-id = "JQ6XDPLU25CEVFKDBGEAJPCCHA"
-internal-id = "SPLPIPELINEONE15"
-internal-budget = ""
-image = "external/2g4mxn8jtws5w93vzrj3kn2hz4.jpeg"
-image-description = "Lisa Jones, a mother of eight, lives at Meadowbrook Mobile Home Park in York County. Many residents of the community live less than 100 feet from the Mariner East pipeline system."
-image-caption = ""
-image-credit = "STEVEN M. FALK / Philadelphia Inquirer"
-image-size = ""
-published = 2020-10-15T09:30:00Z
-slug = "pa-mariner-east-pipeline-accident-emergency-plans-investigation"
 authors = ["Rebecca Moss"]
-byline = "Rebecca Moss of Spotlight PA"
-title = "Along Mariner East pipelines, secrecy and a patchwork of emergency plans leave many at risk and in the dark"
-subtitle = ""
-description = "Despite being one of the most controversial projects in Pennsylvania history, many emergency managers and others along the route cannot confidently answer one pressing question: Are we prepared?"
 blurb = "Despite being one of the most controversial projects in Pennsylvania history, many emergency managers and others along the route cannot confidently answer one pressing question: Are we prepared?"
+byline = "Rebecca Moss of Spotlight PA"
+description = "Despite being one of the most controversial projects in Pennsylvania history, many emergency managers and others along the route cannot confidently answer one pressing question: Are we prepared?"
+extended-kicker = "Investigation"
+image = "external/2g4mxn8jtws5w93vzrj3kn2hz4.jpeg"
+image-credit = "STEVEN M. FALK / Philadelphia Inquirer"
+image-description = "Lisa Jones, a mother of eight, lives at Meadowbrook Mobile Home Park in York County. Many residents of the community live less than 100 feet from the Mariner East pipeline system."
+internal-id = "SPLPIPELINEONE15"
 kicker = "Environment"
-topics = ["Environment"]
-series = ["Mariner East pipeline"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
+layout = "featured"
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = "featured"
-extended-kicker = "Investigation"
+pinned = true
+published = 2020-10-15T05:30:00-04:00
+series = ["Mariner East pipeline"]
+slug = "pa-mariner-east-pipeline-accident-emergency-plans-investigation"
+suppress-date = false
+suppress-featured = false
+title = "Along Mariner East pipelines, secrecy and a patchwork of emergency plans leave many at risk and in the dark"
+topics = ["Environment"]
 +++
 
 {{<featured/header

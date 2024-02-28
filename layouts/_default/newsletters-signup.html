@@ -27,6 +27,13 @@
     data-ga-category="all-newsletters"
     x-data
     x-form="all-newsletters"
+    @submit="
+      let checkboxes = Array.from($el.querySelectorAll('input[type=checkbox]'));
+      let someChecked = checkboxes.some(el => el.checked);
+      if (!someChecked) {
+        $event.preventDefault();
+        alert('Please choose a newsletter to subscribe to.')
+      }"
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <section x-data class="bg-white px-4 pb-2 pt-12 md:pb-0">
@@ -48,14 +55,18 @@
         <nav
           class="flex flex-wrap items-stretch justify-center gap-10 md:flex md:flex-wrap"
         >
-          {{ range $page := first 1 $pages }}
+          {{ range $i, $page := $pages }}
+            {{ $checked := eq $i 0 }}
             {{ if not (len $page.Pages) }}
               {{ continue }}
             {{ end }}
             <div
-              class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
-              x-data="{ isChecked: true }"
-              :class="{ 'rounded bg-g-1': isChecked }"
+              class="
+                mx-2 flex cursor-pointer p-5 transition-all
+                hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow
+                has-[:checked]:rounded has-[:checked]:bg-g-1
+                md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
+              x-data="{ isChecked: {{ $checked }} }"
             >
               {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
               {{ $slug := .File.Dir | path.Base }}
@@ -88,102 +99,13 @@
                       <input
                         class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
                         type="checkbox"
-                        x-model="isChecked"
+                        x-model.fill="isChecked"
                         id="{{ $id }}"
                         name="{{ $slug }}"
                         value="1"
                         x-report-click
                         data-ga-category="toggle-newsletter:{{ $slug }}"
-                      />
-                      <svg
-                        class="mr-3 h-5 w-5 rounded border border-g-9 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"
-                        viewBox="0 0 1 1"
-                      >
-                        {{ partial "helper/svg.html" "check" }}
-                      </svg>
-
-                      <div class="order-1 text-sm font-bold tracking-widest">
-                        <span x-show="isChecked">Selected</span>
-                        <span
-                          class=" hidden: isChecked"
-                          x-cloak
-                          x-show="!isChecked"
-                          >Click to select</span
-                        >
-                      </div>
-                    </div>
-
-                    <h2 class="text-xl font-bold lg:text-2xl">
-                      {{ .LinkTitle }}
-                    </h2>
-
-                    <p class="text-sm font-bold md:text-base">
-                      {{ $page.Params.occurence }}
-                    </p>
-
-                    <p class="py-2 text-base font-normal leading-snug">
-                      {{ $params.blurb }}
-                    </p>
-                    <p class="text-sm tracking-widest">
-                      <a
-                        class="text-blue underline hover:text-blue-7"
-                        href="{{ $page.RelPermalink }}#archives"
-                      >
-                        View Archives
-                      </a>
-                    </p>
-                  </div>
-                </article>
-              </label>
-            </div>
-          {{ end }}
-
-          {{ range $page := after 1 $pages }}
-            {{ if not (len $page.Pages) }}
-              {{ continue }}
-            {{ end }}
-            <div
-              class=" mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
-              x-data="{ isChecked: false }"
-              :class="{ 'rounded bg-g-1': isChecked }"
-            >
-              {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-              {{ $slug := .File.Dir | path.Base }}
-              {{ $id := partial "helper/new-id" . }}
-              <label
-                class="flex cursor-pointer"
-                data-ga-category="toggle-newsletter:{{ $slug }}"
-                x-report-click
-                for="{{ $id }}"
-              >
-                <article class="grid-cols-5 gap-x-5 sm:grid">
-                  {{ $name := .Page.Param "image" }}
-                  {{ $credit := .Page.Param "image-credit" }}
-                  {{ $description := .Page.Param "image-description" }}
-                  {{ $imgOpts := dict
-                    "filename" $name
-                    "widthRatio" 4
-                    "heightRatio" 3
-                    "widths" (slice 128 256 384 512 1280)
-                    "figClass" "col-span-2 row-start-1 row-span-2 block mb-4"
-                    "sizeHint" "400px"
-                    "rounded" true
-                    "gravity" (.Page.Param "image-gravity")
-                  }}
-                  {{ partial "tw/image-block.html" $imgOpts }}
-
-
-                  <div class="col-span-3 col-start-3 row-start-1 space-y-1">
-                    <div class="flex items-center">
-                      <input
-                        class="peer mr-0 h-0 w-0 appearance-none rounded border border-g-9 opacity-0"
-                        type="checkbox"
-                        x-model="isChecked"
-                        id="{{ $id }}"
-                        name="{{ $slug }}"
-                        value="0"
-                        x-report-click
-                        data-ga-category="toggle-newsletter:{{ $slug }}"
+                        {{ if $checked }}checked{{ end }}
                       />
                       <svg
                         class="mr-3 h-5 w-5 rounded border border-g-9 bg-white fill-none p-0 peer-checked:bg-yellow peer-checked:fill-black"

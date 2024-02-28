@@ -14,6 +14,7 @@ kicker = "Health"
 layout = "featured"
 modal-exclude = false
 no-index = false
+pinned = true
 published = 2022-02-21T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-addiction-misleading-dangerous-websites"

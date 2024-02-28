@@ -20,7 +20,7 @@
 {{ with .Get "title" }}
   {{ $name = . }}
 {{ end }}
-{{ $pages := $topic.Pages.ByPublishDate }}
+{{ $pages := $topic.Pages.ByPublishDate.Reverse }}
 {{ if gt $pages.Len 1 }}
   {{ $jsOpts := dict
     "minify" true
@@ -54,7 +54,7 @@
         tabindex="0"
         role="region"
         aria-labelledby="carousel-label"
-        class="relative grid w-full grid-rows-1 gap-2 md:grid md:grid-cols-14 md:gap-5"
+        class="relative grid w-full grid-rows-1 gap-2 md:gap-5"
       >
         <!-- Prev Button -->
         <button
@@ -101,7 +101,7 @@
             aria-labelledby="carousel-label"
             class="flex h-[26rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
           >
-            {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | last $limit }}
+            {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | first $limit }}
               <li
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"

@@ -13,6 +13,7 @@ internal-id = "SPLMORTGAGE"
 kicker = "Economy"
 layout = "featured"
 modal-exclude = false
+pinned = true
 published = 2023-01-23T05:00:00-05:00
 series = ["The Waiting Game"]
 slug = "pa-homeowner-mortgage-utility-assistance-fund"

@@ -3,12 +3,12 @@
 }}
 {{ $imageDescription := page.Param "river-promo-description" }}
 {{ $link := page.Param "river-promo-link" }}
-{{ $desktopImages := page.Param "promo-desktop-images" }}
-{{ $desktopWidth := page.Param "promo-desktop-width" }}
-{{ $desktopHeight := page.Param "promo-desktop-height" }}
-{{ $mobileImages := page.Param "promo-mobile-images" }}
-{{ $mobileWidth := page.Param "promo-mobile-width" }}
-{{ $mobileHeight := page.Param "promo-mobile-height" }}
+{{ $desktopImages := page.Param "river-promo-desktop-images" }}
+{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
+{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
+{{ $mobileImages := page.Param "river-promo-mobile-images" }}
+{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
+{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
 
 {{ $hiddenField := .hiddenField }}
 {{ $newsletterHed := .newsletterHed }}
@@ -80,7 +80,7 @@
               "width" 300
               "height" 250
               "link" (page.Param "ad-featured-link")
-              "description" (page.Param "ad-featured-description")
+              "description" (page.Param "ad-featured-image-description")
               )
             }}
           {{ end }}
@@ -101,7 +101,7 @@
               "width" 300
               "height" 250
               "link" (page.Param "ad-featured-link")
-              "description" (page.Param "ad-featured-description")
+              "description" (page.Param "ad-featured-image-description")
               )
             }}
           {{ end }}
@@ -160,25 +160,26 @@
 
   <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
-  <div
-    x-intersect:enter.margin.100px="isSticky = false"
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="breaker"
-  >
-    {{ if page.Param "ad-breaker-active" }}
+  {{ if page.Param "ad-breaker-active" }}
+    <div
+      x-intersect:enter.margin.100px="isSticky = false"
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="breaker"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-breaker-images")
         "width" 970
         "height" 90
         "link" (page.Param "ad-breaker-link")
-        "description" (page.Param "ad-breaker-description")
+        "description" (page.Param "ad-breaker-image-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 
-  <div class="mt-16 space-y-8 sm:space-y-12">
+
+  <div class="mt-16 space-y-8 sm:space-y-12 md:mt-24">
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -249,22 +250,22 @@
     {{ end }}
   </div>
 
-  <div
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="headwater"
-  >
-    {{ if page.Param "ad-headwater-active" }}
+  {{ if page.Param "ad-headwater-active" }}
+    <div
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="headwater"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-headwater-images")
         "width" 970
         "height" 90
         "link" (page.Param "ad-headwater-link")
-        "description" (page.Param "ad-headwater-description")
+        "description" (page.Param "ad-headwater-image-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 
   {{ if .river }}
     <div
@@ -338,7 +339,7 @@
               </div>
               {{ if eq (mod $i 5) 3 | and $desktopImages }}
                 <div
-                  class="tile is-parent px-0 pt-0"
+                  class="px-0 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
                 >
                   {{ partial "tw/promo-double.html" (dict
@@ -396,7 +397,7 @@
               "width" 300
               "height" 600
               "link" (page.Param "ad-rail-link")
-              "description" (page.Param "ad-rail-description")
+              "description" (page.Param "ad-rail-image-description")
               )
             }}
           {{ end }}
@@ -438,21 +439,20 @@
     </div>
   {{ end }}
 
-
-  <div
-    class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
-    data-ga-category="headwater"
-  >
-    {{ if page.Param "ad-headwater-active" }}
+  {{ if page.Param "ad-headwater-active" }}
+    <div
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      data-ga-category="headwater"
+    >
       {{ partial "tw/promo-single.html" (dict
         "class" "mx-auto flex items-center justify-center"
         "images" (page.Param "ad-headwater-images")
         "width" 970
         "height" 90
         "link" (page.Param "ad-headwater-link")
-        "description" (page.Param "ad-headwater-description")
+        "description" (page.Param "ad-headwater-image-description")
         )
       }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
 </div>

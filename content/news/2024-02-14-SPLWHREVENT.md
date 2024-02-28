@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA Feb. 22 for a free panel on Pennsylvania’s Whole-Home Repairs Program and how advocates want to see it improved."
+blurb = "Experts discuss Pennsylvania’s Whole-Home Repairs Program and how advocates want to see it improved."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA Feb. 22 for a discussion on PA's Whole-Home Repairs Program and how advocates want to see it improved."
+description = "Experts discuss PA’s Whole-Home Repairs Program and how advocates want to see it improved."
 event-date = 2024-02-22T18:00:00-05:00
 event-title = "HOME IMPROVEMENT"
 event-url = "https://zoom.us/webinar/register/WN_jxo9LEU-SYu3FW4yZElZmQ"
@@ -15,8 +15,8 @@ pinned = false
 published = 2024-02-14T17:46:21.374-05:00
 slug = "housing-home-improvement-repairs-pennsylvania-saval-event"
 suppress-date = false
-title = "Learn about the future of Pa.’s popular housing repairs grant program"
-title-tag = "Attend a panel on PA’s home repairs grant program"
+title = "WATCH: A panel on Pa.’s popular housing repairs grant program"
+title-tag = "What’s the future of PA’s home repairs grant program?"
 topics = ["Events"]
 +++
 
@@ -26,9 +26,9 @@ Pennsylvania launched its Whole-Home Repairs Program in 2022 to help residents f
 
 Thousands applied for the funding, but the overwhelming demand for the $125 million program left counties unable to help every applicant. After the program was left out of the final deal on last year’s budget, advocates are now pushing for more funding, and consistency in grant distribution.<br/><br/>Gov. Josh Shapiro&#39;s recent budget proposal included an additional $50 million for the program. The final budget deal will be hashed out in Harrisburg in the coming months.
 
-Join Spotlight PA next Thursday, Feb. 22, from 6-7 p.m. ET on Zoom for a free panel discussion on the status and history of the Whole-Home Repairs program, and on how advocates want to see it improved.
+To discuss the issue, Spotlight PA held a panel on the status and history of the Whole-Home Repairs program, and on how advocates want to see it improved. Watch the talk below.
 
-<strong>Our panelists include:</strong>
+<strong>Our panelists were:</strong>
 
 - <strong>Charlotte Keith,</strong> investigative reporter, Spotlight PA
 
@@ -38,7 +38,7 @@ Join Spotlight PA next Thursday, Feb. 22, from 6-7 p.m. ET on Zoom for a free pa
 
 - <strong>Armando Jimenez</strong>, deputy organizing director, Make the Road Pennsylvania
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_jxo9LEU-SYu3FW4yZElZmQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/915998920?h=ed50099c8e&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 

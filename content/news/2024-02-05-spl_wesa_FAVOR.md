@@ -12,6 +12,7 @@ kicker = "Health"
 modal-exclude = false
 pinned = false
 published = 2024-02-05T04:00:00-05:00
+series = ["Opioid Settlement Money"]
 slug = "opioid-settlement-syringe-favor-cancelled"
 suppress-date = false
 title = "Opioid settlement money is supposed to expand syringe services. A Pa. nonprofit just lost $150K because of them."

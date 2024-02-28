@@ -9,6 +9,7 @@ image-description = "Harold's Haunt, a \"they bar\" in Millvale, near Pittsburgh
 internal-id = "SPLHAROLD"
 kicker = "PA Local"
 modal-exclude = false
+pinned = false
 published = 2023-12-22T04:00:00-05:00
 slug = "pittsburgh-they-bar-queer-community-harolds-haunt"
 suppress-date = false
@@ -19,7 +20,7 @@ topics = ["PA Local"]
 
 <br/><em>This story first appeared in PA Local, a weekly newsletter by Spotlight PA taking a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for free here.</em></a><br/>
 
-MILLVALE — Don&#39;t call <a href="https://www.maudespaperwinggallery.com/harolds-home">Harold&#39;s Haunt</a> a gay bar. Or a lesbian bar. The queer, Wiccan-owned watering hole bills itself as a &#34;they bar,&#34; a nod to its inclusive mission.
+MILLVALE — Don&#39;t call <a href="https://web.archive.org/20240105212144/https://www.maudespaperwinggallery.com/harolds-home">Harold&#39;s Haunt</a> a gay bar. Or a lesbian bar. The queer, Wiccan-owned watering hole bills itself as a &#34;they bar,&#34; a nod to its inclusive mission.
 
 “We talked about being a lesbian bar, because there are none in Pittsburgh,” owner Athena Flint told PA Local. “But that didn’t quite fit. I’m queer, not a lesbian, and my sibling is trans nonbinary. It’s important to me that the trans nonbinary community has lots of safe spaces, especially during this weird, chaotic time.”<br/><br/>With its lavender walls, vegan-friendly bar food, witchy entertainment on TV screens, and a cocktail menu that includes sober offerings, Harold’s is carving out a distinct and welcoming niche in the Pittsburgh area and beyond. So far, Flint hasn’t heard of another they bar. “So maybe it will be the beginning of something,” she said. “Who knows?”
 

@@ -12,6 +12,7 @@ internal-id = "SPL_PHFA_TRANSITION"
 kicker = "Housing"
 layout = "featured"
 modal-exclude = false
+pinned = true
 published = 2023-08-01T05:00:00-04:00
 series = ["The Waiting Game"]
 slug = "phfa-mortgage-relief-transition-struggles"

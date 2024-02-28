@@ -7,21 +7,17 @@
   {{ $title := .Title }}
   {{ $calloutTitle := .Page.Param "callout-title" }}
   {{ $blurb := .Page.Params.description }}
-  {{ $limit := 0 }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
-  {{ $page := $pages }}
-  {{ if $limit }}
-    {{ $page = first $limit .pages }}
-  {{ end }}
 
   {{ if eq .Paginator.PageNumber 1 }}
-
+    {{ $pinnedPages := where $pages "Params.pinned" true }}
+    {{ $featuredPages := union $pinnedPages $pages }}
     <section
       class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
     >
       <header
-        class="flex w-full items-baseline justify-between border-b border-black"
+        class="flex w-full flex-wrap items-baseline justify-between border-b border-black md:flex-nowrap"
       >
         <h2
           class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
@@ -32,8 +28,29 @@
             {{ $title }}
           {{ end }}
         </h2>
-        {{ partial "tw/breadcrumbs.html" . }}
+        <div class="-order-1 w-full sm:order-1 sm:w-auto">
+          {{ partial "tw/breadcrumbs.html" . }}
+        </div>
       </header>
+      {{ with .Content }}
+        <div
+          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+        >
+          <div
+            class="mx-auto my-6 max-w-prose"
+            data-ga-category="content"
+            id="content"
+          >
+            <div
+              class="article-content w-full overflow-hidden leading-relaxed"
+              data-sf-campaign="701Dn000000YgozIAC"
+            >
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
 
       <div
         class="mt-7 flex flex-auto self-stretch sm:max-w-[280px] md:space-y-12 lg:max-w-[300px]"
@@ -47,9 +64,8 @@
           </div>
         </div>
       </div>
-      {{ partial "tw/content-well.html" . }}
 
-      {{ range ($page.ByParam "pinned") | first 1 }}
+      {{ range $featuredPages | first 1 }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
           "filename" (.Param "image")
@@ -88,7 +104,7 @@
         </div>
       {{ end }}
 
-      {{ $pages := $page.ByParam "pinned" | after 1 | first 4 }}
+      {{ $pages := $featuredPages | after 1 | first 4 }}
       {{ range $i, $page := $pages }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
@@ -128,7 +144,7 @@
     </section>
 
     <div
-      class="relative mx-4 mt-6 max-w-4xl md:mx-auto md:mt-16"
+      class="relative mx-4 mt-6 max-w-5xl md:mx-auto md:mt-16"
       x-data="funnelStatus"
     >
       <div x-show="!isSubscriber">
@@ -140,7 +156,12 @@
           )
         }}
       </div>
-      <div data-ga-category="donate" x-cloak x-show="isSubscriber">
+      <div
+        data-ga-category="donate"
+        x-cloak
+        x-show="isSubscriber"
+        class="md:relative md:overflow-hidden md:rounded"
+      >
         {{ partial "tw/donate-prefill-lg.html" (dict
           "donateHed" (page.Param "donate-hed")
           "donateDek" (page.Param "donate-text")
@@ -159,6 +180,10 @@
 {{ define "extra-main" }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
+  {{ $pinnedPages := where $pages "Params.pinned" true }}
+  {{ $featuredPages := union $pinnedPages $pages | first 5 }}
+  {{ $river := complement $featuredPages $pages }}
+
   {{ $title := .Title }}
 
 
@@ -180,14 +205,9 @@
       data-ga-category="river"
       data-sf-campaign="701Dn000000YgodIAC"
     >
-      <nav
-        x-data="readmore(true)"
-        x-ref="root"
-        @mouseover.once="load()"
-        @touchstart.passive.once="load()"
-      >
+      <nav>
         <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
-          {{ range $i, $page := $pages | after 5 }}
+          {{ range $i, $page := $river }}
             {{ $params := partialCached "helper/page-params" . .RelPermalink }}
             {{ $imgOpts := dict
               "filename" (.Param "image")

@@ -14,7 +14,10 @@
   {{ if $upcomingEvents }}
 
     <section
-      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
+      class="
+        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 bg-white sm:gap-x-10
+        md:items-start md:justify-between lg:flex-row lg:gap-x-16 xl:mx-auto
+      "
     >
       <header
         class="flex w-full items-baseline justify-between border-b border-black"
@@ -160,6 +163,11 @@
 {{ define "extra-main" }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
+
+  {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
+  {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" | first 5 }}
+  {{ $riverPages := $pages }}
+
   {{ $title := .Title }}
 
 
@@ -181,14 +189,9 @@
       data-ga-category="river"
       data-sf-campaign="701Dn000000YgodIAC"
     >
-      <nav
-        x-data="readmore(true)"
-        x-ref="root"
-        @mouseover.once="load()"
-        @touchstart.passive.once="load()"
-      >
+      <nav>
         <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
-          {{ range $i, $page := $pages | after 5 }}
+          {{ range $i, $page := $riverPages }}
             {{ $params := partialCached "helper/page-params" . .RelPermalink }}
             {{ $imgOpts := dict
               "filename" (.Param "image")

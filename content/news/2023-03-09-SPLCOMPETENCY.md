@@ -15,6 +15,7 @@ internal-id = "SPLCOMPETENCY"
 kicker = "Criminal Justice"
 layout = "featured"
 modal-exclude = false
+pinned = true
 published = 2023-03-09T05:00:00-05:00
 series = ["A Criminal Solution"]
 slug = "pa-mental-illness-jail-incompetent-treatment"
