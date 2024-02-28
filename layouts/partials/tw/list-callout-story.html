@@ -4,7 +4,6 @@
   {{ $limit = mul $rows 1 }}
 {{ end }}
 {{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
-{{ $featuredStory := index $featuredStory }}
 {{ $page := .pages }}
 {{ $pages := index $page }}
 {{ if $limit }}
