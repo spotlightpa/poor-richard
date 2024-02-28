@@ -14,6 +14,11 @@ url = "/about/"
 weight = 4
 
 [[main]]
+name = "2024 Election"
+url = "/topics/elections/"
+weight = 4
+
+[[main]]
 name = "State College"
 url = "/statecollege/"
 weight = 2
