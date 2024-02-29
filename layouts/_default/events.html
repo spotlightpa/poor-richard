@@ -15,8 +15,8 @@
 
     <section
       class="
-        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 bg-white sm:gap-x-10
-        md:items-start md:justify-between lg:flex-row lg:gap-x-16 xl:mx-auto
+        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 
+        md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto
       "
     >
       <header
@@ -62,8 +62,6 @@
       >
         {{ template "upcoming-event-lg" $items }}
       </div>
-      {{ template "upcoming-event-reg" $items }}
-
     </section>
   {{ end }}
 {{ end }}
@@ -93,7 +91,7 @@
       "sizeHint" "(min-width: 850px) 328px, 90vw"
       "gravity" (index $params "image-gravity")
     }}
-    {{ $eyebrow := $params.published }}
+    {{ $eyebrow := $params.eventDate }}
     {{ $rubricLink := $params.link }}
     {{ $thumbClass := $params.thumbClass }}
     {{ partial "tw/thumb-item.html" (dict
@@ -150,7 +148,7 @@
       "thumbClass" "w-2/5 md:w-full"
       "imgOpts" $imgOpts
       "rubricLink" $rubricLink
-      "eyebrow" $eyebrow
+      "eyebrow" $params.eventDate
       "link" $params.link
       "hed" $feat.LinkTitle
       "byline" $params.byline
