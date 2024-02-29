@@ -12,14 +12,15 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/statecollege/2024-02-29-SPLPSUDEIB.md"
+    "content/news/2024-02-29-SPL_WHR_Takeaways.md"
   ],
   "subfeatures": [
-    "content/statecollege/2022-12-16-SPLPSURACE.md"
+    "content/news/2024-02-14-SPLWHREVENT.md",
+    "content/news/2023-12-11-SPL_WHRIMPASS.md"
   ],
   "topSlots": [
-    "content/news/2024-02-29-SPL_WHR_Takeaways.md",
-    "content/news/2024-02-28-SPLHO24PRE.md",
+    "content/news/2024-02-29-SPLBA24LOT.md",
+    "content/statecollege/2024-02-29-SPLPSUDEIB.md",
     "content/news/2024-02-26-SPLWELLUPD.md"
   ],
   "topper": []
