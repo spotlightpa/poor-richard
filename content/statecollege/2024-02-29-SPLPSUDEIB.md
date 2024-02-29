@@ -48,7 +48,7 @@ Lisa Powers, a university spokesperson, told Spotlight PA via email that the uni
 
 Penn State developed a misconduct reporting system, launched a <a href="https://hr.psu.edu/current-employee/deib">DEIB page</a> with information on hiring and training, and has a preliminary version of an online resource page for students, Powers wrote. The university also hired a “gender diverse care role” to support LGBTQ students and added two full-time positions in disability services, she wrote.
 
-A university spokesperson told Spotlight PA that Bendapudi allocated $2 million to diversity efforts from a president-controlled fund for fiscal years 2024 and 2025. Without specifying the amounts, the spokesperson said the administration provided additional funds for the Africana Research Center and the Center for Black Digital Research.
+A university spokesperson told Spotlight PA that Bendapudi allocated $2 million per year to diversity efforts from a president-controlled fund for fiscal years 2024 and 2025. Without specifying the amounts, the spokesperson said the administration provided additional funds for the Africana Research Center and the Center for Black Digital Research.
 
 “Penn State leaders do not plan to coalesce around one area of diversity, but are focused on a broader definition of diversity that encompasses many more stakeholders and supporters,” Powers wrote, including veterans, people with disabilities, members of religious groups, and those in the LGBTQ community, among others. (<a href="https://files.data.spotlightpa.org/uploads/01jx/z3a2/penn-state-full-response-feb-2024-deib-story.pdf">Read the university’s full response here.</a>)
 
@@ -144,6 +144,8 @@ A university spokesperson responded with a link to <a href="https://opair.psu.ed
 Mildred Mickle, an English professor at Penn State Greater Allegheny, told Spotlight PA that the university’s focus on graduation rates deflects from the root issue. Mickle co-authored one of the <a href="https://greaterallegheny.psu.edu/files/pdf/16871/2023/01/24/more-rivers-cross-black-faculty-and-academic-racism-penn-state-university-part-2-final.pdf">More Rivers to Cross reports</a>, which documented experiences of racism across Penn State’s campuses and recommended concrete fixes such as a five-year hiring plan and an oversight committee.
 
 “This is blaming the victim rather than addressing what the real problem is,” Mickle said. “Black students tend not to thrive well at Penn State campuses because they don’t have people who look like them in leadership positions, teaching classes.”
+
+<strong><em>Clarification: </em></strong><em>This story has been updated to make clear that Penn State has allocated $2 million per year from a president-controlled fund for fiscal years 2024 and 2025.</em>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20Penn%20State%3F%20We%20want%20to%20hear%20from%20you."></div>
 
