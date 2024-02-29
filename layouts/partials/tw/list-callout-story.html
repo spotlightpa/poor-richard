@@ -74,7 +74,7 @@
     class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
   ></span>
 
-  {{ range first 1 (after 1 $pages | complement $featuredStory) }}
+  {{ range first 1 ($pages | complement $featuredStory | after 1) }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
