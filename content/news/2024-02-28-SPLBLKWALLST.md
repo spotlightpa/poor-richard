@@ -38,7 +38,7 @@ Our panelists include:
 
 - <strong>Sharia Benn</strong>, artistic director, Sankofa African American Theater Company
 
-- <strong>Calobe Jackson Jr.,</strong> local historian, Harrisburg <strong></strong>
+- <strong>Calobe Jackson Jr.,</strong> resident historian, Historic Harrisburg Association<strong></strong>
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_T52KsSqISmqO3-903arN2w"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
 
