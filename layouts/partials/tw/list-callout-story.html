@@ -4,10 +4,9 @@
   {{ $limit = mul $rows 1 }}
 {{ end }}
 {{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
-{{ $page := .pages }}
-{{ $pages := index $page }}
+{{ $pages := .pages }}
 {{ if $limit }}
-  {{ $page = first $limit .pages }}
+  {{ $pages = first $limit .pages }}
 {{ end }}
 
 
@@ -24,7 +23,7 @@
     </h2>
   {{ end }}
 
-  {{ range $pages | first 1 | complement $featuredStory }}
+  {{ range $pages | complement $featuredStory | first 1 }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
