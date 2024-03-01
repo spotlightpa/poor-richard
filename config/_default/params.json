@@ -11,10 +11,12 @@
     "https://files.data.spotlightpa.org/uploads/01jx/qvvc/the-perfect-gift-14-.png"
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
-  "ad-headwater-active": false,
-  "ad-headwater-image-description": "",
-  "ad-headwater-images": [],
-  "ad-headwater-link": "",
+  "ad-headwater-active": true,
+  "ad-headwater-image-description": "Test",
+  "ad-headwater-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png"
+  ],
+  "ad-headwater-link": "/donate",
   "ad-rail-active": false,
   "ad-rail-image-description": "",
   "ad-rail-images": [],
