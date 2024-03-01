@@ -1,8 +1,10 @@
 {
-  "ad-breaker-active": false,
-  "ad-breaker-image-description": "",
-  "ad-breaker-images": [],
-  "ad-breaker-link": "",
+  "ad-breaker-active": true,
+  "ad-breaker-image-description": "Test",
+  "ad-breaker-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+  ],
+  "ad-breaker-link": "/donate",
   "ad-featured-active": true,
   "ad-featured-image-description": "Get Spotlight PA's exclusive beach towel ahead of Sunshine Week, March 10-16, and help us keep our government honest.",
   "ad-featured-images": [
