@@ -7,7 +7,7 @@ image = "2023/08/01jd-qpky-261c-kkxn.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "The exterior of the Pennsylvania State Police headquarters."
 internal-id = "SPLDATFOLO"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 pinned = false
 published = 2024-01-24T16:47:32.223-05:00
@@ -15,7 +15,7 @@ slug = "pennsylvania-state-police-evidence-records-deleted-recovery-josh-shapiro
 suppress-date = false
 title = "Some deleted Pa. crime lab records ‘no longer accessible,’ State Police say"
 title-tag = "Some deleted PA State Police records ‘no longer accessible’"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

@@ -8,14 +8,14 @@ image-caption = "Gareth and Fe Hall have lobbied the state legislature for impro
 image-credit = "Courtesy of Jeff Marocchi"
 image-description = "Gareth and Fe Hall have lobbied the state legislature for improvements to the 911 system after their son Christian was shot and killed by police in 2020."
 internal-id = "SPL_HALL_ANN"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-12-28T04:00:00-05:00
 slug = "mental-health-call-study-christian-hall"
 suppress-date = false
 title = "Three years ago, a police officer killed Christian Hall. Now, the legislature will study the role of 911 in mental health emergencies."
 title-tag = "Christian Hall’s death leads to 911, mental health study"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

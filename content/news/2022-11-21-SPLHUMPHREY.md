@@ -9,7 +9,7 @@ image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
 image-description = "The Pennsylvania Supreme Court chamber in Philadelphia's Old City Hall, where justice heard the Humphrey case."
 internal-budget = "The state Supreme Court closed a decades-old legal loophole that kept people who would never be competent to stand trial on criminal charges in jail or prison indefinitely."
 internal-id = "SPLHUMPHREY"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 og-title = "Judges in Pa. can now dismiss charges against people deemed mentally incompetent"
@@ -19,7 +19,7 @@ slug = "pennsylvania-supreme-court-ruling-humphrey-competency"
 suppress-date = false
 title = "Judges in Pa. can now dismiss charges against people ‘incompetent’ to stand trial, but flaws remain"
 title-tag = "Judges in PA can nix charges for mentally incompetent"
-topics = ["Criminal Justice", "Corrections"]
+topics = ["Justice System", "Corrections"]
 +++
 
 <i>This story is a collaboration between </i><a href="https://www.spotlightpa.org/" target="_blank"><i>Spotlight PA</i></a><i> and the </i><a href="https://pinjnews.org/" target="_blank"><i>Pittsburgh Institute for Nonprofit Journalism</i></a><i>, published as part of a Pittsburgh Media Partnership project. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s free newsletters</i></a><i>.</i>

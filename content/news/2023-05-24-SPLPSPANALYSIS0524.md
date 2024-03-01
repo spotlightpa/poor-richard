@@ -9,14 +9,14 @@ image-credit = "Jose F. Moreno / Philadelphia Inquirer"
 image-description = "A new report found PA State Police troopers were more likely to do optional searches of Black, Hispanic drivers."
 internal-budget = "Despite optional searches being more likely for Black and Hispanic drivers, contraband seizures from searches occurred more often for white drivers, according to new report"
 internal-id = "SPLPSPANALYSIS0524"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-05-24T16:00:00-04:00
 slug = "pennsylvania-state-trooper-search-bias-study"
 suppress-date = false
 title = "Pa. State troopers more likely to do optional searches for Black, Hispanic drivers than white ones"
 title-tag = "PA troopers search Black, Hispanic drivers more: report"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

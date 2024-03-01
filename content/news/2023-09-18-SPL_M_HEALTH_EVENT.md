@@ -8,7 +8,7 @@ image-caption = "Danielle Ohl, Brittany Hailer, Tanisha Long, Nev Jones, and Jer
 image-credit = "Yaasmeen Piper / Spotlight PA"
 image-description = "Danielle Ohl, Brittany Hailer, Tanisha Long, Nev Jones, and Jeremy Northup discuss the findings of Spotlight PA's \"A Criminal Solution\" investigation at an event in Pittsburgh."
 internal-id = "SPL_M_HEALTH_EVENT"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-09-18T05:00:00-04:00
 series = ["A Criminal Solution"]
@@ -16,7 +16,7 @@ slug = "pennsylvania-mental-health-incarceration-competency"
 suppress-date = false
 title = "Four takeaways from our event discussing incarceration and mental health in Pennsylvania"
 title-tag = "How PA jails highlight mental health care gaps"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

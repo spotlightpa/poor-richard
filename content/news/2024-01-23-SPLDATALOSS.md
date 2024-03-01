@@ -7,7 +7,7 @@ image = "2023/08/01jd-qpm0-jnps-z6dd.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "A Pennsylvania State Police vehicle."
 internal-id = "SPLDATALOSS"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 pinned = false
 published = 2024-01-23T09:52:19.517-05:00
@@ -15,7 +15,7 @@ slug = "pennsylvania-state-police-lab-records-deleted-office-of-administration-j
 suppress-date = false
 title = "Gov. Josh Shapiro’s admin blames ‘human error’ for deletion of Pa. State Police records"
 title-tag = "PA State Police lab records deleted after ‘human error’"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

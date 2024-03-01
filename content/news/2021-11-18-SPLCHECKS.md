@@ -9,14 +9,14 @@ image-credit = "Commonwealth Media Services"
 image-description = "Sen. Art Haywood (D., Montgomery) wants to change the way use-of-force cases are investigated in Pennsylvania so families of victims and the public will have more faith in the findings."
 internal-budget = "Elected district attorneys who work closely with police decide whether officers should be charged and rarely refer cases to the state attorney general."
 internal-id = "SPLCHECKS"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2021-11-18T06:00:00-05:00
 series = ["The Final Moments"]
 slug = "pa-police-killings-investigation-district-attorney-general"
 title = "Who investigates police killings in Pennsylvania, and why there are few checks and balances"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

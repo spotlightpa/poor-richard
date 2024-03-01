@@ -9,7 +9,7 @@ image-credit = "ELIZABETH ROBERTSON / Philadelphia Inquirer"
 image-description = "A survey of county jails like this one in Pennsylvania revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 internal-budget = "A statewide survey of county jails by Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism revealed many facilities openly admit they are not equipped for the growing mental health crisis."
 internal-id = "SPLSURVEY"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2022-10-20T05:00:00-04:00
@@ -18,7 +18,7 @@ slug = "pennsylvania-county-jail-mental-health-survey"
 suppress-date = false
 title = "Jail officials across Pa. sound alarm as mental health crisis puts people at risk, survey finds"
 title-tag = "Jails in PA report mental health crisis"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

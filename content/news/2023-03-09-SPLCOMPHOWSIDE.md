@@ -9,7 +9,7 @@ image-credit = "Nate Smallwood / For Spotlight PA and PINJ"
 image-description = "Rachel Bridgeman waited months in jail for a state hospital bed before advocates and family secured her release"
 internal-budget = "How Spotlight PA and PINJ reported ‘A Criminal Solution’"
 internal-id = "SPLCOMPHOWSIDE"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-03-09T05:00:01-05:00
 series = ["A Criminal Solution"]
@@ -17,7 +17,7 @@ slug = "how-spotlightpa-pinj-reported-a-criminal-solution-competency-mental-heal
 suppress-date = false
 title = "How Spotlight PA and PINJ reported ‘A Criminal Solution’"
 title-tag = "How Spotlight PA/PINJ reported ‘A Criminal Solution’"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

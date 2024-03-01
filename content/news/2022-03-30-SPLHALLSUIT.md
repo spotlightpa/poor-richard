@@ -9,7 +9,7 @@ image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Gareth Hall, left, and his wife Fe Hall, right, look on during a vigil for their late son Christian Hall in December. Their lawsuit claims troopers used excessive force, killing Hall as he tried to surrender and after they said they would not shoot him."
 internal-budget = "Parents of Christian Hall sue Pennsylvania State Police troopers who fatally shot their son"
 internal-id = "SPLHALLSUIT"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2022-03-30T13:37:21.02-04:00
@@ -17,7 +17,7 @@ series = ["The Final Moments"]
 slug = "christian-hall-pennsylvania-state-police-lawsuit"
 suppress-date = false
 title = "Parents of teen shot by Pennsylvania State Police sue troopers, local DA"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

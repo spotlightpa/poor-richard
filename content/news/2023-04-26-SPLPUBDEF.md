@@ -9,14 +9,14 @@ image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
 image-description = "About 500 attorneys and staff work on indigent defense in Philadelphia. That level of support isn't possible in many counties according to Keisha Hudson, the city's Chief Defender."
 internal-budget = "In his first budget as governor, Shapiro, a Democrat, has proposed $10 million of state money to support no-cost legal representation to “indigent” Pennsylvanians, those who have been accused of a crime but cannot afford an attorney."
 internal-id = "SPLPUBDEF"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-04-26T05:00:00-04:00
 slug = "pa-public-defense-gov-shapiro"
 suppress-date = false
 title = "Pa. doesn’t fund public defense. Shapiro’s budget would change that."
 title-tag = "Pa. doesn’t fund public defense. Shapiro’s budget would change that."
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

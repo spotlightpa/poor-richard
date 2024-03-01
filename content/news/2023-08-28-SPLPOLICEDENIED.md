@@ -8,14 +8,14 @@ image-caption = "Earlier this year, Pennsylvania State Police denied a records r
 image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania State Police headquarters"
 internal-id = "SPLPOLICEDENIED"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-08-28T05:00:00-04:00
 slug = "pennsylvania-police-officer-data-denied"
 suppress-date = false
 title = "Gov. Shapiro refuses to intervene on Pa. police officer data disclosure"
 title-tag = "Pa. won’t release state data of police officers"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

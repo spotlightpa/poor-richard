@@ -9,14 +9,14 @@ image-credit = "MONICA HERNDON / Philadelphia Inquirer"
 image-description = "A Pennsylvania law passed in 2020 after the police murder of George Floyd in Minneapolis and the ensuing protests created the hiring database and required law enforcement agencies to use it, but did not include any enforcement measures if they failed to comply."
 internal-budget = "The database was hailed as a model to stop bad officers from hopping from one job to another. But now State Police say legislative changes are needed to make it more effective."
 internal-id = "SPLDATABASE21"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2022-06-21T05:00:00-04:00
 slug = "pennsylvania-police-hiring-misconduct-database"
 suppress-date = false
 title = "Statewide Pennsylvania police hiring database hindered by loopholes, lack of enforcement"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

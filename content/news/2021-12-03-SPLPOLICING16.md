@@ -15,7 +15,7 @@ no-index = false
 published = 2021-12-03T14:45:00-05:00
 slug = "pa-police-shootings-justified-panel"
 title = "WATCH: A free discussion on why killings by police officers often are ruled justified"
-topics = ["Events", "Criminal Justice"]
+topics = ["Events", "Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

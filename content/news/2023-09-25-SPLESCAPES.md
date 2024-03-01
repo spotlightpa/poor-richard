@@ -7,14 +7,14 @@ image = "external/39rq978hghymsw37kcxqppqqhr.jpeg"
 image-credit = "Nate Smallwood / For Spotlight PA"
 image-description = "Exterior of Allegheny County Jail"
 internal-id = "SPLESCAPES"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-09-25T08:00:00-04:00
 slug = "pennsylvania-jail-prison-escapes"
 suppress-date = false
 title = "Jailbreaks in Pennsylvania are not as common as recent events imply"
 title-tag = "Data shows Pa. jailbreaks are uncommon in recent years"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the powerful to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
