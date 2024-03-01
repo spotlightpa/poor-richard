@@ -38,6 +38,11 @@ All Pennsylvanians interested in state government issues are very well served by
 In an era where fraud and dishonesty among public officials (and their supporters) have become more frequent and blatant, it is critical to have a crusading press focused on exposing wrongdoing. This is especially true in Pennsylvania where regulations are lax or poorly enforced. The expertise and resources of Spotlight PA are essential to good government in this state.{{</testimonial-item>}}
 {{</testimonials-group>}}
 """
+[[blocks]]
+title =  "Spotlight PA's volunteer chairs"
+layout = "team"
+authors = ["Jennifer Bertetto", "David M Erdman", "Katie O’Toole"]
+
 +++
 
 {{<picture-leaders-in-action src="2023/03/01j1-rzgq-rvdt-5ra7.png" description="Leaders In Action logo" width-ratio="100" height-ratio="77">}}
