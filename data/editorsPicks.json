@@ -8,19 +8,21 @@
     "content/news/2023-01-23-SPLMORTGAGE.md"
   ],
   "edInvestigations": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/news/2024-02-12-SPLHEHON.md"
+    "content/news/2024-02-12-SPLHEHON.md",
+    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-02-23-SPLEASTSICK.md"
+    "content/statecollege/2024-03-01-SPLMUNPOW.md"
   ],
   "subfeatures": [
-    "content/news/2023-06-12-SPLRAILODDS.md"
+    "content/statecollege/2023-12-08-SPLMIL.md",
+    "content/statecollege/2023-07-17-SPLMPC.md",
+    "content/statecollege/2023-05-22-SPLSOCIALRTK.md"
   ],
   "topSlots": [
-    "content/news/2024-02-22-SPLNEWSQUIZFEB2224.md",
-    "content/news/2024-02-22-SPLCAN24BUDG.md",
-    "content/news/2024-02-21-SPL_PHFA_REOPEN.md"
+    "content/news/2024-02-29-SPL_WHR_Takeaways.md",
+    "content/statecollege/2024-02-29-SPLPSUDEIB.md",
+    "content/news/2024-02-29-SPLNEWSQUIZFEB2624.md"
   ],
   "topper": []
 }

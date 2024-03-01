@@ -3,13 +3,11 @@
 {{- $paLocal := site.GetPage "/newsletters/palocal/_index.md" -}}
 {{- $talk := site.GetPage "/newsletters/talkofthetown/_index.md" -}}
 {{- $psa := site.GetPage "/newsletters/pennstatealerts/_index.md" -}}
-{{- $cd := site.GetPage "/newsletters/centredocumenters/_index.md" -}}
 {{- $newsletters :=  $invest.RegularPages |
     union $paPost.RegularPages |
     union $paLocal.RegularPages |
     union $talk.RegularPages |
-    union $psa.RegularPages |
-    union $cd.RegularPages
+    union $psa.RegularPages
 -}}
 {{- $newsletters = sort $newsletters "PublishDate" "desc" -}}
 {{- $p := $newsletters -}}

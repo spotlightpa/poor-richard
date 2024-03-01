@@ -1,18 +1,22 @@
 {
-  "ad-breaker-active": false,
-  "ad-breaker-image-description": "",
-  "ad-breaker-images": [],
-  "ad-breaker-link": "",
+  "ad-breaker-active": true,
+  "ad-breaker-image-description": "Test",
+  "ad-breaker-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+  ],
+  "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "Get Spotlight PA's exclusive Pennsylvania tote bag, plus hats and more at the Spotlight PA store.",
+  "ad-featured-image-description": "Get Spotlight PA's exclusive beach towel ahead of Sunshine Week, March 10-16, and help us keep our government honest.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01jw/wrfq/the-perfect-gift-13-.png"
+    "https://files.data.spotlightpa.org/uploads/01jx/qvvc/the-perfect-gift-14-.png"
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
-  "ad-headwater-active": false,
-  "ad-headwater-image-description": "",
-  "ad-headwater-images": [],
-  "ad-headwater-link": "",
+  "ad-headwater-active": true,
+  "ad-headwater-image-description": "Test",
+  "ad-headwater-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png"
+  ],
+  "ad-headwater-link": "/donate",
   "ad-rail-active": false,
   "ad-rail-image-description": "",
   "ad-rail-images": [],
@@ -65,7 +69,7 @@
   "sidebar-sticky-description": "Support Spotlight PA's nonprofit, nonpartisan journalism for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01js/5gqg/newsmatch-2023-squares.gif"
+    "https://files.data.spotlightpa.org/uploads/01jx/qw7q/spotlight-donate-square-ad-set-11-.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,

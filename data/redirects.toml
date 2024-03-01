@@ -37,3 +37,11 @@ code = 302
 from = "/imgproxy/*"
 to = "https://images.data.spotlightpa.org/:splat"
 code = 200
+
+[[redirects]]
+from = "/centredocumenters/*"
+to = "https://centredocumenters.org"
+
+[[redirects]]
+from = "/newsletters/centredocumenters/*"
+to = "https://centredocumenters.org"

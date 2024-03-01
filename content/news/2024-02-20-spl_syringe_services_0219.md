@@ -11,6 +11,7 @@ kicker = "Health"
 modal-exclude = false
 pinned = false
 published = 2024-02-20T04:00:00-05:00
+series = ["Opioid Settlement Money"]
 slug = "pennsylvania-syringe-service-legalization-bill"
 suppress-date = false
 title = "A bill to legalize syringe services in Pa. just passed a historic hurdle, but GOP opposition remains"
