@@ -1,8 +1,3 @@
-{{ $rows := .rows | default 2 }}
-{{ $limit := 0 }}
-{{ if gt $rows 0 }}
-  {{ $limit = mul $rows 1 }}
-{{ end }}
 {{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
 {{ $pinnedStories :=  partial "helper/get-picks" "topSlots" }}
 {{ $pages := .pages }}
@@ -117,17 +112,4 @@
     </div>
   {{ end }}
 
-  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
-    <div
-      data-ga-category="readmore"
-      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
-    >
-      <a
-        href="{{ .readMoreLink }}"
-        class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
-      >
-        {{- .readMore | default "Read More" -}}
-      </a>
-    </div>
-  {{ end }}
 </div>
