@@ -1,5 +1,5 @@
 {
-  "ad-breaker-active": true,
+  "ad-breaker-active": false,
   "ad-breaker-image-description": "Test",
   "ad-breaker-images": [
     "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
@@ -11,7 +11,7 @@
     "https://files.data.spotlightpa.org/uploads/01jx/qvvc/the-perfect-gift-14-.png"
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
-  "ad-headwater-active": true,
+  "ad-headwater-active": false,
   "ad-headwater-image-description": "Test",
   "ad-headwater-images": [
     "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png"
