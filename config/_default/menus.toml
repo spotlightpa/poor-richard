@@ -205,33 +205,41 @@ weight = 3
 icon = "ig"
 
 [[social]]
-name = "Apple News"
-url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
-weight = 5
+name = "Threads"
+url = "https://www.threads.net/@spotlightpennsylvania"
+weight = 4
 
 [social.params]
-icon = "apple"
+icon = "threads"
 
 [[social]]
 name = "Flipboard"
 url = "https://flipboard.com/@SpotlightPA"
-weight = 4
+weight = 5
 
 [social.params]
 icon = "flip"
 
 [[social]]
-name = "Github"
-url = "https://www.github.com/spotlightpa/"
-weight = 9
+name = "Apple News"
+url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
+weight = 6
 
 [social.params]
-icon = "gh"
+icon = "apple"
 
 [[social]]
 name = "Google News"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 6
+weight = 7
 
 [social.params]
 icon = "google"
+
+[[social]]
+name = "Github"
+url = "https://www.github.com/spotlightpa/"
+weight = 8
+
+[social.params]
+icon = "gh"
