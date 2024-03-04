@@ -1,13 +1,6 @@
-{{ $rows := .rows | default 2 }}
-{{ $limit := 0 }}
-{{ if gt $rows 0 }}
-  {{ $limit = mul $rows 1 }}
-{{ end }}
 {{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
+{{ $pinnedStories :=  partial "helper/get-picks" "topSlots" }}
 {{ $pages := .pages }}
-{{ if $limit }}
-  {{ $pages = first $limit .pages }}
-{{ end }}
 
 
 <div
@@ -23,7 +16,7 @@
     </h2>
   {{ end }}
 
-  {{ range $pages | complement $featuredStory | first 1 }}
+  {{ range $pages | complement $featuredStory $pinnedStories | first 1 }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
@@ -74,7 +67,7 @@
     class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
   ></span>
 
-  {{ range first 1 ($pages | complement $featuredStory | after 1) }}
+  {{ range first 1 ($pages | complement $featuredStory $pinnedStories | after 1) }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
@@ -119,17 +112,4 @@
     </div>
   {{ end }}
 
-  {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
-    <div
-      data-ga-category="readmore"
-      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
-    >
-      <a
-        href="{{ .readMoreLink }}"
-        class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
-      >
-        {{- .readMore | default "Read More" -}}
-      </a>
-    </div>
-  {{ end }}
 </div>
