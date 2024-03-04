@@ -6,4 +6,7 @@ kicker = "Elections 101"
 title = "Elections 101"
 linktitle = "This series from Spotlight PA protects you against election misinformation and empowers you to make informed decisions."
 description = "This series from Spotlight PA protects you against election misinformation and empowers you to make informed decisions. "
+aliases = [
+"/elections101"
+]
 +++
