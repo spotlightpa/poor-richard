@@ -16,7 +16,7 @@ published = 2022-05-18T05:00:00-04:00
 slug = "pa-covid-prison-mitigation-update"
 suppress-date = false
 title = "Despite high vaccination rates among Pa. prisoners, some COVID restrictions remain in place"
-topics = ["Coronavirus", "Criminal Justice"]
+topics = ["Coronavirus", "Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

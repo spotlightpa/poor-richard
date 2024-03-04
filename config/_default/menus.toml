@@ -65,8 +65,8 @@ url = "/tips/"
 weight = 10
 
 [[news]]
-name = "Criminal Justice"
-url = "/topics/criminal-justice/"
+name = "Justice System"
+url = "/topics/justice-system/"
 weight = 1
 
 [[news]]

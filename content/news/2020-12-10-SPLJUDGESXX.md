@@ -8,7 +8,7 @@ image = "external/rcyjxast1r5anfbc94h1kfg7fw.jpeg"
 image-credit = "Sean Simmers / PennLive"
 image-description = "An empty judicial chamber"
 internal-id = "SPLJUDGESXX"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 layout = "featured"
 modal-exclude = false
 no-index = false
@@ -19,7 +19,7 @@ slug = "pa-district-judges-investigation-workloads-caseloads-spotlight-pa-pennli
 suppress-date = false
 suppress-featured = false
 title = "Some local Pa. judges enjoy light workloads as taxpayers pay millions for salaries, pensions, health care"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <script defer src="https://pym.nprapps.org/pym.v1.min.js"></script>

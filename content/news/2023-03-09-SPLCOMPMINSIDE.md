@@ -10,7 +10,7 @@ image-description = "The Allegheny County Jail, where people deemed incompetent 
 image-gravity = "no"
 internal-budget = "Competency proceedings in Pa. typically involve minor crimes (sidebar)"
 internal-id = "SPLCOMPMINSIDE"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-03-09T05:00:02-05:00
 series = ["A Criminal Solution"]
@@ -18,7 +18,7 @@ slug = "pa-common-criminal-charges-competency-mental-health"
 suppress-date = false
 title = "Competency proceedings in Pa. typically involve minor crimes"
 title-tag = "PA competency proceedings typically involve minor crimes"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <i>This story is a collaboration between Spotlight PA and the </i><a href="https://pinjnews.org/"><i>Pittsburgh Institute for Nonprofit Journalism</i></a><i>, published as part of a Pittsburgh Media Partnership project. Sign up for Spotlight PA’s free newsletters </i><a href="https://www.spotlightpa.org/newsletters"><i>here</i></a><i>.</i>

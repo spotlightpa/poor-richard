@@ -9,14 +9,14 @@ image-credit = "MONICA HERNDON / Philadelphia Inquirer"
 image-description = "Protesters gather in front of the Philadelphia Police Headquarters in Philadelphia, Pa. in May 2020. "
 internal-budget = "The decision further undermines the effectiveness of a program once lauded as a national model and championed by Gov. Josh Shapiro when he was attorney general."
 internal-id = "SPLACT57PROBATION"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-01-31T05:00:00-05:00
 slug = "pa-police-misconduct-database-probation-officers-act-57"
 suppress-date = false
 title = "Some Pa. courts are excluding probation officers from requirements under police misconduct law"
 title-tag = "Courts find loophole in PA police misconduct checks"
-topics = ["Criminal Justice", "Public Safety"]
+topics = ["Justice System", "Public Safety"]
 +++
 
 <i>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for free here.</i></a>

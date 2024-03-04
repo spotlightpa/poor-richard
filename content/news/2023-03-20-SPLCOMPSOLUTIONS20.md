@@ -10,7 +10,7 @@ image-description = "Torrance State Hospital is one of only two hospitals in Pa.
 image-gravity = "ce"
 internal-budget = "What different counties and cities in the state are doing to fix the broken competency system and what they say they still need."
 internal-id = "SPLCOMPSOLUTIONS20"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-03-20T05:00:00-04:00
 series = ["A Criminal Solution"]
@@ -18,7 +18,7 @@ slug = "pa-competency-local-solutions"
 suppress-date = false
 title = "How some police, attorneys, and jails are trying to help Pa.’s ailing system for mentally ill people"
 title-tag = "Local PA fixes to prevent trapping mentally ill in jail"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

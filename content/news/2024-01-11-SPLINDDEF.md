@@ -7,7 +7,7 @@ image = "external/hrv6gh5799y89bbtrkwgv4jptc.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Pennsylvania Capitol in Harrisburg."
 internal-id = "SPLINDDEF"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 pinned = false
 published = 2024-01-11T04:00:00-05:00
@@ -15,7 +15,7 @@ slug = "pennsylvania-public-defense-state-funded"
 suppress-date = false
 title = "Pennsylvania provides state money for public defense for the first time"
 title-tag = "Pa. provides state funds for public defense for first time"
-topics = ["Criminal Justice", "Corrections"]
+topics = ["Justice System", "Corrections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

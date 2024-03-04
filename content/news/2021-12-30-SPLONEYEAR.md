@@ -8,14 +8,14 @@ image = "2021/12/01gw-wk0q-w12p-8bqk.jpeg"
 image-credit = "Steven M. Falk / Philadelphia Inquirer "
 internal-budget = "Christian Hall was killed one year ago by Pa. State Police. His family still wants answers."
 internal-id = "SPLONEYEAR"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2021-12-30T05:00:00-05:00
 series = ["The Final Moments"]
 slug = "christian-hall-state-police-shooting-one-year"
 title = "Christian Hall was killed one year ago by Pa. State Police. His family still wants answers."
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

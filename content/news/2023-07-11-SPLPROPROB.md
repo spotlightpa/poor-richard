@@ -8,14 +8,14 @@ image-caption = "Efforts to overhaul probation were inspired by Philadelphia rap
 image-credit = "Gov. Josh Shapiro / Commonwealth Media"
 image-description = "Meek Mill appears with Gov. Josh Shapiro and his family during the governor's inauguration party in January 2023."
 internal-id = "SPLPROPROB"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-07-11T13:00:00-04:00
 slug = "pa-probation-law-meek-mill-reform-alliance"
 suppress-date = false
 title = "Why some say an effort to fix Pa.’s outdated probation law does more harm than good"
 title-tag = "PA’s Meek Mill-inspired probation bill has critics"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <em>This story first appeared in The Investigator, a weekly newsletter by Spotlight PA featuring the best investigative and accountability journalism from across Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for free here.</em></a><em></em>

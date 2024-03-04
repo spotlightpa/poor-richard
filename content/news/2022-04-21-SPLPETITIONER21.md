@@ -9,7 +9,7 @@ image-credit = "Danielle Ohl / For Spotlight PA"
 image-description = "Bradford Gamble is one of only 33 people who have successfully petitioned to leave a Pennsylvania state prison in the past 13 years because of illness."
 internal-budget = "A late-stage cancer diagnosis left Bradford Gamble with a difficult decision: Receive treatment in a Pennsylvania state prison or die on the outside."
 internal-id = "SPLPETITIONER21"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 no-index = false
 published = 2022-04-21T05:00:00-04:00
@@ -17,7 +17,7 @@ series = ["Compassionate Release"]
 slug = "pa-compassionate-prison-release-petitioner"
 suppress-date = false
 title = "To successfully use Pennsylvania’s ‘compassionate release’ law, he had to choose to die"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

@@ -12,7 +12,7 @@ image-description = "Rachel Bridgeman spent 49 days in Allegheny County Jail wai
 image-gravity = "ce"
 internal-budget = "A Spotlight PA/PINJ investigation found few state hospital beds for those with severe mental illness, ill-equipped jails, and a system so broken some defense attorneys avoid it entirely."
 internal-id = "SPLCOMPETENCY"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 layout = "featured"
 modal-exclude = false
 pinned = true
@@ -22,7 +22,7 @@ slug = "pa-mental-illness-jail-incompetent-treatment"
 suppress-date = false
 title = "Determining if someone is mentally fit for trial in Pa. often traps them in the place making them worse — jail"
 title-tag = "Competency reviews in PA are trapping people in jails"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 {{<featured/header

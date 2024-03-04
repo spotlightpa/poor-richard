@@ -8,7 +8,7 @@ image-caption = "Mary Buffaloe holds a picture of her brother Raymond Caliman. W
 image-credit = "Joe Lamberti / For Spotlight PA"
 image-description = "Mary Buffaloe holds a picture of her brother Raymond Caliman."
 internal-id = "SPL_COMPASSIONATE"
-kicker = "Criminal Justice"
+kicker = "Justice System"
 modal-exclude = false
 published = 2023-11-21T05:00:00-05:00
 series = ["Compassionate Release"]
@@ -16,7 +16,7 @@ slug = "pennsylvania-prison-release-sick-elderly-compassionate-release-success-r
 suppress-date = false
 title = "A dying man won release from prison after Spotlight PA highlighted his case. It shouldn’t be that hard, advocates say."
 title-tag = "PA man released from prison after Spotlight PA reporting"
-topics = ["Criminal Justice"]
+topics = ["Justice System"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
