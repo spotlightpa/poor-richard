@@ -1,15 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-03-01-SPLMUNPOW.md"
+    "content/statecollege/2024-03-05-SPLEMDOM.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-12-08-SPLMIL.md",
-    "content/statecollege/2023-07-17-SPLMPC.md",
-    "content/statecollege/2023-05-22-SPLSOCIALRTK.md"
+    "content/statecollege/2024-02-19-SPLRURALBUDGET.md",
+    "content/statecollege/2024-02-07-SPLSWEDEN.md",
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-03-01-SPLMUNPOW.md",
     "content/statecollege/2024-02-29-SPLPSUDEIB.md",
-    "content/statecollege/2024-02-19-SPLRURALBUDGET.md",
     "content/statecollege/2024-02-16-SPLPSUFIELD.md"
   ],
   "topper": []
