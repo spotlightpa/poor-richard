@@ -9,13 +9,12 @@
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
   {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
-  {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" }}
+  {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "asc" }}
 
   {{ if $upcomingEvents }}
-
     <section
       class="
-        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 
+        mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10
         md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto
       "
     >
@@ -32,8 +31,26 @@
           {{ end }}
         </h2>
         {{ partial "tw/breadcrumbs.html" . }}
-
       </header>
+
+      {{ with .Content }}
+        <div
+          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+        >
+          <div
+            class="mx-auto my-6 max-w-prose"
+            data-ga-category="content"
+            id="content"
+          >
+            <div
+              class="article-content w-full overflow-hidden leading-relaxed"
+              data-sf-campaign="701Dn000000YgozIAC"
+            >
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
 
       {{ with $blurb }}
         <div
@@ -51,66 +68,88 @@
           </div>
         </div>
       {{ end }}
-      {{ partial "tw/content-well.html" . }}
 
-      {{ $event := index (last 1  $upcomingEvents) 0 }}
+      {{ $event := index (first 1  $upcomingEvents) 0 }}
       {{ $date := $event.Param "event-date" }}
-      {{ $items := where $upcomingEvents `Params.event-date` "eq" $date }}
       <div
         class="max-w-full sm:w-1/2 sm:flex-1 md:w-7/12 md:flex-auto xl:w-8/12"
         data-ga-category="story-1"
       >
-        {{ template "upcoming-event-lg" $items }}
+        <div class="mx-auto max-w-screen-lg">
+          {{ $params := partialCached "helper/page-params" $event $event.RelPermalink }}
+          {{ $imgOpts := dict
+            "filename" ($event.Param "image")
+            "credit" ($event.Param "image-credit")
+            "description" ($event.Param "image-description")
+            "link" $params.link
+            "widthRatio" 5
+            "heightRatio" 3
+            "widths" (slice 128 256 384 512 1280)
+            "figClass" "mt-2"
+            "sizeHint" "(min-width: 850px) 328px, 90vw"
+            "gravity" (index $params "image-gravity")
+          }}
+          {{ $eyebrow := $params.eventDate }}
+          {{ $rubricLink := $params.link }}
+          {{ $thumbClass := $params.thumbClass }}
+          {{ partial "tw/thumb-item.html" (dict
+            "wrapperClass" "flex flex-wrap gap-x-9"
+            "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+            "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+            "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+            "imgOpts" $imgOpts
+            "rubricLink" $rubricLink
+            "eyebrow" $eyebrow
+            "link" $params.link
+            "hed" $event.LinkTitle
+            "byline" $params.byline
+            "showDate" false
+            "showByline" $params.showByline
+            "dek" $params.blurb
+            )
+          }}
+        </div>
       </div>
+
+      {{ $pages := $upcomingEvents | after 1 | first 4 }}
+      {{ range $i, $page := $pages }}
+        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+        {{ $imgOpts := dict
+          "filename" (.Param "image")
+          "credit" (.Param "image-credit")
+          "description" (.Param "image-description")
+          "link" $params.link
+          "widthRatio" 16
+          "heightRatio" 9
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "mt-2"
+          "sizeHint" "(min-width: 850px) 328px, 90vw"
+          "gravity" (.Param "image-gravity")
+        }}
+        <div
+          class="flex max-w-full md:w-2/12 md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
+          data-ga-category="story-{{ add 2 $i }}"
+        >
+          {{ $eyebrow := $params.eventDate }}
+          {{ $rubricLink := $params.link }}
+          {{ $thumbClass := $params.thumbClass }}
+          {{ partial "tw/thumb-item.html" (dict
+            "wrapperClass" "flex flex-wrap gap-x-4"
+            "thumbClass" "w-2/5 md:w-full"
+            "imgOpts" $imgOpts
+            "rubricLink" $rubricLink
+            "eyebrow" $eyebrow
+            "link" $params.link
+            "hed" .LinkTitle
+            "byline" $params.byline
+            "showDate" false
+            )
+          }}
+        </div>
+      {{ end }}
+
     </section>
   {{ end }}
-{{ end }}
-
-{{ define "upcoming-event-lg" }}
-  <div class="mx-auto max-w-screen-lg">
-    {{ $feat := index . 0 }}
-    {{ $params := partialCached "helper/page-params" $feat $feat.RelPermalink }}
-    {{ $subitems := slice }}
-    {{ range after 1 . }}
-      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
-      {{ $subitems = $subitems | append (dict
-        "link" $params.link
-        "title" .Title
-        )
-      }}
-    {{ end }}
-    {{ $imgOpts := dict
-      "filename" $params.image
-      "credit" (index $params "image-credit")
-      "description" (index $params "image-description")
-      "link" $params.link
-      "widthRatio" 5
-      "heightRatio" 3
-      "widths" (slice 128 256 384 512 1280)
-      "figClass" "mt-2"
-      "sizeHint" "(min-width: 850px) 328px, 90vw"
-      "gravity" (index $params "image-gravity")
-    }}
-    {{ $eyebrow := $params.eventDate }}
-    {{ $rubricLink := $params.link }}
-    {{ $thumbClass := $params.thumbClass }}
-    {{ partial "tw/thumb-item.html" (dict
-      "wrapperClass" "flex flex-wrap gap-x-9"
-      "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
-      "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
-      "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
-      "imgOpts" $imgOpts
-      "rubricLink" $rubricLink
-      "eyebrow" $eyebrow
-      "link" $params.link
-      "hed" $feat.LinkTitle
-      "byline" $params.byline
-      "showDate" false
-      "showByline" $params.showByline
-      "dek" $params.blurb
-      )
-    }}
-  </div>
 {{ end }}
 
 {{ define "upcoming-event-reg" }}
@@ -166,7 +205,7 @@
 
   {{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
   {{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "desc" | first 5 }}
-  {{ $riverPages := $pages }}
+  {{ $riverPages := $pages | complement $upcomingEvents }}
 
   {{ $title := .Title }}
 
@@ -179,8 +218,7 @@
     <h2
       class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
     >
-      Past
-      {{ $title }}
+      Past Events
     </h2>
 
     <div
