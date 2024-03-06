@@ -12,6 +12,7 @@ internal-id = "SPLSPORTBAN"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-06-14T05:00:00-04:00
 slug = "pa-transgender-sports-ban-bill-anti-evidence"
 suppress-date = false
@@ -83,7 +84,7 @@ Pre-puberty, boys and girls have similar athletic abilities. <a href="https://ww
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Spotlight%20PA%20is%20investigating%20the%20treatment%20of%20LGBTQ%20people%20across%20the%20state.%20%3Cb%3ESee%20something%20we%20should%20be%20aware%20of%3F%3C%2Fb%3E%20Let%20us%20know."></div>
 
-In high school, there is already a variation in height, body shape, size, and strength between cisgender athletes, according to <a href="https://www.childrensmercy.org/profiles/christina-a-roberts/">Christina Roberts</a>, head of Mercy Children Kansas City’s adolescent medicine department. Hormone therapy can “wipe out” advantages outside the normal range of cisgender girls’ abilities, she said.
+In high school, there is already a variation in height, body shape, size, and strength between cisgender athletes, according to <a href="https://web.archive.org/20220614095840/https://www.childrensmercy.org/profiles/christina-a-roberts/">Christina Roberts</a>, head of Mercy Children Kansas City’s adolescent medicine department. Hormone therapy can “wipe out” advantages outside the normal range of cisgender girls’ abilities, she said.
 
 Transgender children can also begin gender-affirming care before puberty. The use of <a href="https://www.mayoclinic.org/diseases-conditions/gender-dysphoria/in-depth/pubertal-blockers/art-20459075">pubertal blockers prevents individuals from going through puberty</a>, meaning they won’t have the potential advantages of the chemical and physical changes that puberty causes. In people assigned male at birth, those edges include higher testosterone levels, greater strength, and increased height.
 
