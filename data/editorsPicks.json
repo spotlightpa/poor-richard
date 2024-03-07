@@ -16,12 +16,13 @@
   ],
   "subfeatures": [
     "content/news/2024-02-27-SPLVOTMAC101.md",
-    "content/news/2024-02-29-SPLBA24LOT.md"
+    "content/news/2024-02-29-SPLBA24LOT.md",
+    "content/news/2024-03-04-SPL24ELEXLIT.md"
   ],
   "topSlots": [
+    "content/news/2024-03-07-SPLGAMECON.md",
     "content/news/2024-03-06-spl_wesa_sunshine_0307.md",
-    "content/statecollege/2024-03-05-SPLEMDOM.md",
-    "content/news/2024-03-04-SPL24ELEXLIT.md"
+    "content/statecollege/2024-03-05-SPLEMDOM.md"
   ],
   "topper": []
 }
