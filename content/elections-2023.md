@@ -11,12 +11,10 @@ dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more w
 extended-kicker = "Pa. Election Center 2023"
 linktitle = "Everything you need to prepare for Pa.’s 2023 election"
 blurb = "Spotlight PA wants to empower voters to make an informed decision on May 16. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
-url = "/elections/"
-aliases = [
-    "/election/"
-]
+url = "/elections-2023/"
 layout = "elections"
 type = "elections"
+guide = "content/series/voting-guides-2023/_index.md"
 credits = """
 {{<featured/credit
     eyebrow="Reporting"
@@ -55,16 +53,6 @@ credits = """
     name="Jeff Rummel"
     role="News Developer"
     email="jrummel@spotlightpa.org"
->}}
-"""
-promo="""
-{{<featured/promo
-    id="court-tool"
-    image="2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
-    hed="See how electing judges affects you and the issues you care about most"
-    dek="From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
-    cta="Use the tool →"
-    link="/court-tool/"
 >}}
 """
 form ="""
@@ -140,6 +128,76 @@ donate ="""
 >}}
 """
 
+[[blocks]]
+title = "PA Election 2023: Candidate and Voting Guides"
+slug = "guides"
+layout = "story-collection"
+timeFilter = "2023-08-01"
+collection = "content/series/voting-guides-2023/_index.md"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "court-tool"
+image = "2023/10/01jh-nnsg-6zn1-3c7b.jpeg"
+hed = "See how electing judges affects you and the issues you care about most"
+dek = "From abortion to civil liberties to education, Pennsylvania judges regularly shape, define, and affect policies on some hot-button topics."
+cta = "Use the tool →"
+link = "/court-tool/"
+
+
+[[blocks]]
+layout = "events"
+id = "events"
+title = "Spotlight PA voter event series"
+image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
+
+
+[[blocks.entries]]
+hed="Court Primer"
+dek="Spotlight PA held a live event about the candidates running for state Supreme Court and more, and what these elections will mean for you."
+date="2023-10-12"
+dateVerbose="Oct. 12, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
+
+[[blocks.entries]]
+hed="Voter Ready"
+dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."
+date="2023-11-02"
+dateVerbose="Nov. 2, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
+
+[[blocks.entries]]
+hed="Result Review"
+dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come. Registration coming soon."
+date="2023-11-16"
+dateVerbose="Nov. 16, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-results-event/"
+
+[[blocks]]
+layout = "signup-inline"
+hed = "Sign Up For Our Free Newsletters "
+dek = "Get every Spotlight PA story and the best investigative journalism from across Pa."
+cta = "Sign Up"
+hiddenField = "newsletter/pennstatealert-hidden.html"
+gaCategory = "newsletters:pennstatealert"
+gaForm = "newsletters:pennstatealert-full"
+
+[[blocks]]
+title = "PA Election 2023: More Coverage "
+slug = "coverage"
+layout = "story-collection"
+timeFilter = "2023-08-01"
+collection = "content/topics/elections/_index.md"
+collectionReadMore = "Read More PA Election 2023 Stories"
+
+[[blocks]]
+title = " Elecciones Pa. 2023: Traducciones al Español "
+slug = "espanol"
+layout = "story-collection"
+timeFilter = "2023-08-01"
+collection = "content/topics/español/_index.md"
+collectionReadMore = "Leer Más Historias De La Elección PA 2023"
+
 [[internal-links]]
 title = "Voter Guides"
 link = "guides"
@@ -167,34 +225,6 @@ link = "contact"
 [[internal-links]]
 title = "Credits"
 link = "credits"
-
-
-[[blocks]]
-layout = "events"
-id = "events"
-title = "Spotlight PA voter event series"
-image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
-
-[[blocks.entries]]
-hed="Court Primer"
-dek="Spotlight PA held a live event about the candidates running for state Supreme Court and more, and what these elections will mean for you."
-date="2023-10-12"
-dateVerbose="Oct. 12, 2023 on Zoom"
-link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
-
-[[blocks.entries]]
-hed="Voter Ready"
-dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."
-date="2023-11-02"
-dateVerbose="Nov. 2, 2023 on Zoom"
-link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-voting-rights-event/"
-
-[[blocks.entries]]
-hed="Result Review"
-dek="And the winners are … Join us to learn about how the judicial election results will influence politics and policy in the years to come. Registration coming soon."
-date="2023-11-16"
-dateVerbose="Nov. 16, 2023 on Zoom"
-link="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-results-event/"
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes.
