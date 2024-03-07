@@ -1,19 +1,21 @@
 +++
-internal-id = "SPLCOMMUTATION25"
-image = "2020/02/01f5bch25g2mfdnr.jpeg"
-image-description = "Attorney General Josh Shapiro."
-image-credit = "ANTHONY PEZZOTTI / Philadelphia Inquirer"
-published = 2020-02-25T23:50:00.000Z
-slug = "pennsylvania-life-prison-josh-shapiro-john-fetterman"
 authors = ["Cynthia Fernandez"]
-byline = ""
-title = "Protesters call on Pennsylvania AG to ‘show mercy’ and commute more life sentences "
-description = "The rally targeted Attorney General Josh Shapiro's record as a member of the Board of Pardons."
 blurb = "The rally targeted Attorney General Josh Shapiro's record as a member of the Board of Pardons."
+description = "The rally targeted Attorney General Josh Shapiro's record as a member of the Board of Pardons."
+image = "2020/02/01f5bch25g2mfdnr.jpeg"
+image-credit = "ANTHONY PEZZOTTI / Philadelphia Inquirer"
+image-description = "Attorney General Josh Shapiro."
+internal-id = "SPLCOMMUTATION25"
 kicker = "Capitol Notebook"
-linktitle = ""
+modal-exclude = false
+pinned = false
+published = 2020-02-25T18:50:00-05:00
+slug = "pennsylvania-life-prison-josh-shapiro-john-fetterman"
+suppress-date = false
 suppress-featured = true
+title = "Protesters call on Pennsylvania AG to ‘show mercy’ and commute more life sentences "
 +++
+
 <i><b>Capitol Notebook by </b></i><a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> provides updates on important news and notes from the halls of power in Harrisburg. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our weekly newsletter.</i></a>
 
 HARRISBURG — More than a hundred people rallied in Philadelphia and Pittsburgh on Tuesday, a protest organizer says, calling on Attorney General Josh Shapiro to “show mercy” by supporting more commutations.
@@ -31,7 +33,7 @@ The protests outside Shapiro’s offices were organized by several reform organi
 
 A spokesperson for Shapiro said his “record is clear— he is a firm believer in second chances. That is a proven fact.”
 
-Pennsylvania has the second-highest number of prisoners serving life-without-parole sentences in the U.S., according to the reform organization <a href="https://famm.org/wp-content/uploads/FactSheet-memos_Pennsylvania.pdf">FAMM</a>. These sentences are mandatory for first- and second-degree murder convictions.
+Pennsylvania has the second-highest number of prisoners serving life-without-parole sentences in the U.S., according to the reform organization <a href="https://web.archive.org/20200626115449/https://famm.org/wp-content/uploads/FactSheet-memos_Pennsylvania.pdf">FAMM</a>. These sentences are mandatory for first- and second-degree murder convictions.
 
 For this population, commutation is often the only path to life outside of prison.
 
