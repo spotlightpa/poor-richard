@@ -59,16 +59,6 @@ credits = """
     email="jrummel@spotlightpa.org"
 >}}
 """
-promo="""
-{{<featured/promo
-    id="quiz"
-    image="2023/10/01jh-nnxp-qtw1-dsb0.jpeg"
-    hed="Which Pa. attorney general candidate do you align with?"
-    dek="TK"
-    cta="Take the quiz →"
-    link="/#/"
->}}
-"""
 form ="""
 {{<featured/promo-contact-form
   formName="elections"
@@ -156,6 +146,12 @@ hed = "Which Pa. attorney general candidate do you align with?"
 dek = "TK"
 cta = "Take the quiz →"
 link = "/#/"
+
+[[blocks]]
+layout = "signup-inline"
+hed = "Sign Up For Our Free Newsletters "
+dek = "Get every Spotlight PA story and the best investigative journalism from across Pa."
+cta = "Sign Up"
 
 [[blocks]]
 title = "PA Election 2023: More Coverage "

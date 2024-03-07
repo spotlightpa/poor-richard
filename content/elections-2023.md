@@ -178,9 +178,7 @@ layout = "signup-inline"
 hed = "Sign Up For Our Free Newsletters "
 dek = "Get every Spotlight PA story and the best investigative journalism from across Pa."
 cta = "Sign Up"
-hiddenField = "newsletter/pennstatealert-hidden.html"
-gaCategory = "newsletters:pennstatealert"
-gaForm = "newsletters:pennstatealert-full"
+
 
 [[blocks]]
 title = "PA Election 2023: More Coverage "
