@@ -20,6 +20,10 @@ topics = ["The Capitol"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, March 7:</em></strong><em> State Sen. Art Haywood (D., Montgomery) said he was informed in a letter that the chamber’s Ethics Committee will not investigate Doug Mastriano. Learn more </em><a href="https://www.facebook.com/SenatorArtHaywood/videos/380416851436786"><em>here</em></a><em>.</em>
+
+<strong><em>Original story</em></strong>
+
 HARRISBURG — A far-right Pennsylvania state senator is the subject of a new ethics complaint that alleges he helped incite the insurrection at the U.S. Capitol by supporters of former President Donald Trump.
 
 Ethics complaints against state lawmakers are rare, according to a source with knowledge of the process, which is cloaked in secrecy and seldom results in a public resolution.

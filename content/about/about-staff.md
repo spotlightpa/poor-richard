@@ -1,7 +1,7 @@
 +++
 published = 2020-01-07T14:44:14.713Z
 title = "Meet our team"
-description = "When the citizens of Pennsylvania pay their taxes, need help in a tough time, or vote a politician into office, we'll be there to make sure they get what they deserve."
+description = "Meet our talented investigative reporters and editors from across Pennsylvania, dedicated to holding the state government to account."
 url = "/about/staff/"
 layout = "staff-page"
 +++
