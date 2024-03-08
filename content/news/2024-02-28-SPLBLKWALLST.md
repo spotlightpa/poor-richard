@@ -32,13 +32,13 @@ Spotlight PA held a panel on the history of the street and the people hoping to 
 
 Our panelists were:
 
-- <strong>Tanisha Thomas</strong>, newsletter writer, Spotlight PA
+- <a href="https://www.spotlightpa.org/authors/tanisha-thomas/"><strong>Tanisha Thomas</strong></a>, newsletter writer, Spotlight PA
 
-- <strong>Dimitra</strong> <strong>Diggs</strong>, owner, Urban Snob
+- <a href="https://www.dimitrageneva.com/"><strong>Dimitra</strong> <strong>Diggs</strong></a>, owner, Urban Snob
 
-- <strong>Sharia Benn</strong>, artistic director, Sankofa African American Theater Company
+- <a href="https://www.sankofatheatrehbg.com/"><strong>Sharia Benn</strong></a>, artistic director, Sankofa African American Theater Company
 
-- <strong>Calobe Jackson Jr.,</strong> resident historian, Historic Harrisburg Association<strong></strong>
+- <a href="https://historicharrisburg.org/calobe-jackson-jr-bio/"><strong>Calobe Jackson Jr.</strong></a><strong>,</strong> resident historian, Historic Harrisburg Association<strong></strong>
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/921146780?h=553e3947a7&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
