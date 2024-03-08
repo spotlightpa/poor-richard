@@ -132,7 +132,7 @@ donate ="""
 >}}
 """
 [[blocks]]
-title = "Voter Guides"
+title = "PA Election 2024: Voter Guides"
 slug = "guides"
 layout = "story-collection"
 timeFilter = "2024-12-01"
@@ -157,20 +157,8 @@ title = "Voter Guides"
 link = "guides"
 
 [[internal-links]]
-title = "Attorney General"
-link = "quiz"
-
-[[internal-links]]
-title = "Election Event Series"
-link = "events"
-
-[[internal-links]]
 title = "Coverage"
 link = "coverage"
-
-# [[internal-links]]
-# title = "Español"
-# link = "#espan"
 
 [[internal-links]]
 title = "Ask Us"
