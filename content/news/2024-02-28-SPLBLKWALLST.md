@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA March 7 for a free panel on Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
+blurb = "Experts discuss Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA March 7 for a free panel on Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
+description = "Experts discuss Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
 event-date = 2024-03-07T18:00:00-05:00
 event-title = "PA’S BLACK WALL STREET"
 event-url = "https://zoom.us/webinar/register/WN_T52KsSqISmqO3-903arN2w#/registration"
@@ -15,8 +15,8 @@ pinned = false
 published = 2024-02-28T14:19:54.159-05:00
 slug = "black-wall-street-pennsylvania-history-harrisburg-event"
 suppress-date = false
-title = "Learn about the fight to preserve the legacy of Pa.’s Black Wall Street"
-title-tag = "Attend a panel on PA’s historic Black Wall Street"
+title = "WATCH: A panel on the legacy of Pa.’s Black Wall Street"
+title-tag = "Remembering PA’s historic Black Wall Street"
 topics = ["Events"]
 +++
 
@@ -28,9 +28,9 @@ Known as Pennsylvania’s Black Wall Street, this area provided welcoming servic
 
 Today, Black-owned businesses remain in the city, but are more scattered.
 
-On Thursday, March 7 from 6-7 p.m. ET on Zoom, join Spotlight PA for a free panel on the history of Harrisburg’s Black Wall Street and the people hoping to preserve its legacy and ensure a future for Black-owned businesses.
+Spotlight PA held a panel on the history of the street and the people hoping to preserve its legacy and ensure a future for Black-owned businesses. Watch it below.
 
-Our panelists include:
+Our panelists were:
 
 - <strong>Tanisha Thomas</strong>, newsletter writer, Spotlight PA
 
@@ -40,7 +40,7 @@ Our panelists include:
 
 - <strong>Calobe Jackson Jr.,</strong> resident historian, Historic Harrisburg Association<strong></strong>
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_T52KsSqISmqO3-903arN2w"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/921146780?h=553e3947a7&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
