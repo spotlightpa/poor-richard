@@ -64,7 +64,7 @@ form ="""
   formName="elections"
   hed="Ask Us Your Questions"
   recipient="Angela Couloumbis, Katie Meyer, Kate Huangpu"
-  dek="Spotlight PA is covering Pennsylvania's 2024 judicial and municipal elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
+  dek="Spotlight PA is covering Pennsylvania’s 2024 primary elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
   submit="Send Inquiry"
 >}}
 """
