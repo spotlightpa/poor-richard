@@ -32,10 +32,10 @@
     "https://files.data.spotlightpa.org/uploads/01jy/3sya/1.png"
   ],
   "ad-rail-link": "/donate",
-  "banner": "\u003cstrong\u003eWhat should Spotlight PA do next?\u003c/strong\u003e Tell us in our annual reader survey »",
-  "banner-active": false,
+  "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit?\u003c/strong\u003e Learn more about our nonpartisan journalism »",
+  "banner-active": true,
   "banner-bg-color": "#ffcb03",
-  "banner-link": "https://us21.list-manage.com/survey?u=efd97981722dbde9a2ba34455\u0026id=083ebf4cb6\u0026attribution=false",
+  "banner-link": "/about/",
   "banner-text-color": "#000000",
   "featured-promo-bg-color": "#050058",
   "featured-promo-height": 512,
