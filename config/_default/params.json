@@ -1,10 +1,8 @@
 {
-  "ad-breaker-active": false,
-  "ad-breaker-image-description": "Test",
-  "ad-breaker-images": [
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
-  ],
-  "ad-breaker-link": "/donate",
+  "ad-breaker-active": true,
+  "ad-breaker-image-description": "",
+  "ad-breaker-images": [],
+  "ad-breaker-link": "",
   "ad-featured-active": true,
   "ad-featured-image-description": "Get Spotlight PA's exclusive beach towel ahead of Sunshine Week, March 10-16, and help us keep our government honest.",
   "ad-featured-images": [
@@ -12,15 +10,18 @@
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
   "ad-headwater-active": false,
-  "ad-headwater-image-description": "Test",
-  "ad-headwater-images": [
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png"
+  "ad-headwater-image-description": "",
+  "ad-headwater-images": [],
+  "ad-headwater-link": "",
+  "ad-rail-active": true,
+  "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
+  "ad-rail-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3syx/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3syq/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3syg/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sya/1.png"
   ],
-  "ad-headwater-link": "/donate",
-  "ad-rail-active": false,
-  "ad-rail-image-description": "",
-  "ad-rail-images": [],
-  "ad-rail-link": "",
+  "ad-rail-link": "/donate",
   "banner": "\u003cstrong\u003eWhat should Spotlight PA do next?\u003c/strong\u003e Tell us in our annual reader survey »",
   "banner-active": false,
   "banner-bg-color": "#ffcb03",
@@ -66,10 +67,15 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Support Spotlight PA's nonprofit, nonpartisan journalism for Pennsylvania.",
+  "sidebar-sticky-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01jx/qw7q/spotlight-donate-square-ad-set-11-.png"
+    "https://files.data.spotlightpa.org/uploads/01jy/3t08/6.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3t04/5.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3t00/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3szv/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3szq/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3szb/1.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
@@ -101,15 +107,15 @@
   "takeover-hed": "Only 12 hours left to support Spotlight PA",
   "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01js/5j1k/spring-campaign-topper-tracker-18-.svg"
+    "https://files.data.spotlightpa.org/uploads/01jy/3t19/spring-campaign-topper-tracker-19-.svg"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#000000",
-  "topper-image-description": "Support Spotlight PA's nonprofit, nonpartisan journalism for Pennsylvania.",
+  "topper-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
