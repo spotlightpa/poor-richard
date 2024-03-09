@@ -1,18 +1,28 @@
 {
   "ad-breaker-active": true,
-  "ad-breaker-image-description": "",
-  "ad-breaker-images": [],
-  "ad-breaker-link": "",
+  "ad-breaker-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
+  "ad-breaker-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+  ],
+  "ad-breaker-link": "/donate",
   "ad-featured-active": true,
   "ad-featured-image-description": "Get Spotlight PA's exclusive beach towel ahead of Sunshine Week, March 10-16, and help us keep our government honest.",
   "ad-featured-images": [
     "https://files.data.spotlightpa.org/uploads/01jx/qvvc/the-perfect-gift-14-.png"
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
-  "ad-headwater-active": false,
-  "ad-headwater-image-description": "",
-  "ad-headwater-images": [],
-  "ad-headwater-link": "",
+  "ad-headwater-active": true,
+  "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
+  "ad-headwater-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+  ],
+  "ad-headwater-link": "/donate",
   "ad-rail-active": true,
   "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
   "ad-rail-images": [
