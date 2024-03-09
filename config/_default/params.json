@@ -110,12 +110,16 @@
   "topper-active": true,
   "topper-bg-color": "#000000",
   "topper-desktop-height": 225,
-  "topper-desktop-images": [],
+  "topper-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3t19/spring-campaign-topper-tracker-19-.svg"
+  ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#000000",
   "topper-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
-  "topper-mobile-images": [],
+  "topper-mobile-images": [
+    "https://files.data.spotlightpa.org/uploads/01jy/3tjb/sunshine-week-2024-1024-512-px-.svg"
+  ],
   "topper-mobile-width": 1024
 }
