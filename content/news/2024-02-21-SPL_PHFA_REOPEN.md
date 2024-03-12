@@ -21,6 +21,8 @@ topics = ["Economy"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, March 12, 2024: </em></strong><em>The Pennsylvania Housing Finance Agency recently announced that</em><a href="https://www.phfa.org/forms/press_releases/2024/pahaf-reopening-final-03112024.pdf"><em> applications for the mortgage relief program will reopen starting March 18</em></a><em>.</em>
+
 HARRISBURG — A Pennsylvania mortgage relief program to help homeowners catch up after the pandemic will reopen in March after being closed for more than a year to resolve a backlog of applications and a series of internal problems.
 
 The program will have an estimated $46 million remaining for new applicants, said Scott Elliott, a spokesperson for the Pennsylvania Housing Finance Agency, which runs the effort. That’s enough to cover roughly 3,350 more homeowners, according to a Spotlight PA analysis based on the average amount of assistance awarded so far.
