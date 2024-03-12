@@ -140,8 +140,8 @@ collection = "content/series/voting-guides-2024/_index.md"
 
 [[blocks]]
 layout = "signup-inline"
-hed = "Sign Up For Our Free Newsletters "
-dek = "Get every Spotlight PA story and the best investigative journalism from across Pa."
+hed = "Confidently cast your vote"
+dek = "Be the first to read our 2024 voting guides and other election stories by signing up for our free daily newsletter."
 cta = "Sign Up"
 
 [[blocks]]
