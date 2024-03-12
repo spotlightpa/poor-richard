@@ -135,7 +135,7 @@ donate ="""
 title = "PA Election 2024: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2024-12-01"
+timeFilter = "2023-12-01"
 collection = "content/series/voting-guides-2024/_index.md"
 
 [[blocks]]
