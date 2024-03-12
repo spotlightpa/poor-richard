@@ -11,6 +11,7 @@ kicker = "Economy"
 modal-exclude = false
 pinned = false
 published = 2024-02-21T04:00:00-05:00
+series = ["The Waiting Game"]
 slug = "phfa-mortgage-reopen-applications"
 suppress-date = false
 title = "Pennsylvania mortgage program, closed for more than a year to resolve backlog, will reopen in March, officials say"
