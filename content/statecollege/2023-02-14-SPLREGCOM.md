@@ -11,6 +11,7 @@ internal-budget = "Two Centre County municipalities have protections for LGBTQ p
 internal-id = "SPLREGCOM"
 kicker = "Local Government"
 modal-exclude = false
+pinned = false
 published = 2023-02-14T05:00:00-05:00
 slug = "state-college-lgbtq-anti-discrimination-centre-regional-commission"
 suppress-date = false
@@ -41,7 +42,7 @@ Ferguson Township’s supervisors voted unanimously Feb. 7 to adopt the anti-dis
 
 “This regional approach is unique in Pennsylvania,” Barlow told Spotlight PA. “A number of local elected officials have been pushing for this approach for several years.”
 
-More than 70 of the commonwealth’s 2,500-plus municipalities have anti-discrimination ordinances, which cover about 35% of the state’s LGBTQ population, according to advocacy group <a href="https://payouthcongress.org/localnondiscrimination/">Pennsylvania Youth Congress</a>.
+More than 70 of the commonwealth’s 2,500-plus municipalities have anti-discrimination ordinances, which cover about 35% of the state’s LGBTQ population, according to advocacy group <a href="https://web.archive.org/20230214110906/https://payouthcongress.org/localnondiscrimination/">Pennsylvania Youth Congress</a>.
 
 The borough has “what is possibly the strongest” anti-discrimination ordinance in Pennsylvania, Barlow told Spotlight PA. But people in nearby communities need protections too.
 

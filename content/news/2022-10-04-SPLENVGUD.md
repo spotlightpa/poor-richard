@@ -13,6 +13,7 @@ kicker = "Elections"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on energy and the environment"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-04T05:00:00-04:00
 series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-environment-rggi-fracking"
@@ -59,7 +60,7 @@ The state’s participation in the program immediately drew the ire of Republica
 
 Mastriano has vocally criticized Democratic Gov. Tom Wolf’s decision to join RGGI and pledged to pull out of the initiative as governor — a concept he introduced in his energy independence bill. He argues RGGI “<a href="https://senatormastriano.com/2021/11/05/mastriano-op-ed-the-regional-greenhouse-gas-initiative-will-haunt-pa-long-into-the-future/">will do far more harm than good</a>,” as its regulations would drive companies looking to invest in the energy industry to neighboring states.
 
-The Department of Environmental Protection predicts the program will <a href="https://www.dep.pa.gov/Citizens/climate/Pages/RGGI.aspx">create over 30,000 jobs</a>, and anticipates it will decrease coal generation. The coal industry employs over 10,000 workers, <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">according to the DEP</a>. One study of other states who participate in RGGI <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">found increased economic activity and job growth</a>. <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">.</a>
+The Department of Environmental Protection predicts the program will <a href="https://web.archive.org/20220102195334/https://www.dep.pa.gov/Citizens/climate/Pages/RGGI.aspx">create over 30,000 jobs</a>, and anticipates it will decrease coal generation. The coal industry employs over 10,000 workers, <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">according to the DEP</a>. One study of other states who participate in RGGI <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">found increased economic activity and job growth</a>. <a href="https://files.dep.state.pa.us/Energy/Office%20of%20Energy%20and%20Technology/OETDPortalFiles/2020EnergyReport/2020PAEnergyEmploymentReport.pdf">.</a>
 
 Mastriano has also called the effects of RGGI on climate change “<a href="https://senatormastriano.com/2021/11/05/mastriano-op-ed-the-regional-greenhouse-gas-initiative-will-haunt-pa-long-into-the-future/">negligible</a>.” However, carbon pricing has been shown to <a href="https://stateimpact.npr.org/pennsylvania/2020/09/14/rggi-behind-the-rhetoric-what-we-know-about-the-regional-greenhouse-gas-initiative/">reduce emissions, and most environmental, economic, and public policy academics</a> agree that the program will have at least a modest impact on slowing down climate change in the state.
 
