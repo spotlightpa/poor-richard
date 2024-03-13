@@ -19,7 +19,7 @@ title-tag = "PA News Quiz: Trump ruling and election games"
 topics = ["News Quiz"]
 +++
 
-In this week’s quiz:
+In this week’s quiz: U.S. Supreme Court ripple effects, Norfolk Southern crash, and arranging the names on Pennsylvania ballots.
 
 <div data-tf-live="01HRA3GMQEJZEH5VGCD75BYX16"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
