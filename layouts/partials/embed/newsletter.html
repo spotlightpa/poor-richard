@@ -1,7 +1,7 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
   class="rounded border border-red font-sans font-semibold leading-tight shadow"
-  action="{{ .Param `newsletters-action` }}"
+  action="{{ site.Param `newsletters-action` }}"
   method="post"
   target="_blank"
   x-form="newsletters:multi"
