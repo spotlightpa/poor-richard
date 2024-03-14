@@ -105,7 +105,6 @@
   {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
   {{ $imagename := "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg" }}
   {{ $actionColor := "#FFCB05" }}
-  {{ $newsletterAction := site.Param "newsletters-action" }}
 
 
   <div class=" mx-[calc(-50vw_+_50%)]">
@@ -139,7 +138,7 @@
             class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
           bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-data="{ hasFocused: false }"
-            action="{{ $newsletterAction }}"
+            action="{{ site.Param `newsletters-action` }}"
             method="post"
             target="_blank"
             tabindex="-1"

@@ -1,5 +1,4 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
-{{ $newsletterAction := site.Param "newsletters-action" }}
 {{ $title := .newsletterHed }}
 {{ $dek := .newsletterDek | default "Get every Spotlight PA story and the best investigative journalism from across Pa." }}
 {{ $showLogo := .showLogo }}
@@ -40,7 +39,7 @@
     class=" mx-auto max-w-xl md:max-w-2xl"
     x-form="newsletters:multi"
     x-data="{ hasFocused: false }"
-    action="{{ $newsletterAction }}"
+    action="{{ site.Param `newsletters-action` }}"
     method="post"
     target="_blank"
   >

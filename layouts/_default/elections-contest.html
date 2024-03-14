@@ -1029,7 +1029,7 @@
           @focusin="active = true"
           x-form="newsletters:multi"
           data-ga-category="tout"
-          action="https://email-alerts.data.spotlightpa.org/api/subscribe"
+          action="{{ site.Param `newsletters-action` }}"
           method="post"
           target="_blank"
         >
