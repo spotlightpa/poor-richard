@@ -17,7 +17,7 @@ takeover = """
   dek = "Pennsylvania’s April 23 primary election is fast approaching, and there’s a race on the ballot"
   image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
 >}}
-<div class="mt-9" data-tf-live="01HS8X1DTFCF3Q9KH0W69KG19W"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<div class="mt-9" data-tf-live="01HS8X1DTFCF3Q9KH0W69KG19W"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
 {{</featured/main-takeover>}}
 """
 +++
