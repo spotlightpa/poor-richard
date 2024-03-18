@@ -33,11 +33,6 @@ hed = "Read our editor's statement about this study"
 actionUrl = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
 actionText = "Reading the article →"
 
-[[blocks.entries]]
-hed = "Take the Berks County News Consumption and Media Coverage Survey"
-actionUrl = "https://www.surveymonkey.com/r/SpotlightPABerksProject"
-actionText = "Begin survey →"
-
 [[blocks]]
 layout = "supplemental"
 title = "A Novel Approach to Reinvigorating Local News"
