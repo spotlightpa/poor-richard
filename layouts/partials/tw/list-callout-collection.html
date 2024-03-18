@@ -1,5 +1,7 @@
 {{ $pages := .pages }}
 {{ $title := .hed }}
+{{ $readMoreText := .readMoreText }}
+{{ $readMoreLink := .readMoreLink }}
 
 
 <header
@@ -87,5 +89,18 @@
       "showDate" false
       )
     }}
+  </div>
+{{ end }}
+{{ with $readMoreText }}
+  <div
+    data-ga-category="readmore"
+    class="mx-auto mt-8 flex w-full max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
+  >
+    <a
+      href="{{ $readMoreLink }}"
+      class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
+    >
+      {{- $readMoreText | default "Read More" -}}
+    </a>
   </div>
 {{ end }}

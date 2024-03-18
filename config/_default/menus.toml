@@ -15,7 +15,7 @@ weight = 4
 
 [[main]]
 name = "2024 Election"
-url = "/topics/elections/"
+url = "/elections/"
 weight = 4
 
 [[main]]

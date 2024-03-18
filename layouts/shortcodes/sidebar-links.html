@@ -1,11 +1,11 @@
 {{ $hed := .Get "hed" }}
 
 
-<h2 class="mb-4 mt-8 font-sans text-xl font-bold md:text-2xl">
+<h2 class="mb-2 font-sans text-xl font-bold md:text-2xl">
   {{ $hed }}
 </h2>
 <ul
-  class="space-y-4"
+  class="mb-8 space-y-4"
   {{ with .Get "event" }}
     id="dates" data-ga-category="dates" x-data='{ url:
     "https://unpkg.com/add-to-calendar-button@1.14.6/npm_dist/mjs/index.js",

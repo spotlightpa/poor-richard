@@ -1,0 +1,37 @@
+{{ with .block }}
+  {{ $collection := .collection }}
+  {{ $collection := site.GetPage $collection }}
+  {{ $hed := .title }}
+  {{ $id := .slug }}
+  {{ $readMoreLink := $collection.RelPermalink }}
+  {{ $readMoreText := .collectionReadMore }}
+  {{ $timeFilter := .timeFilter }}
+
+  {{ $pages := $collection.RegularPages }}
+  {{ $primary := (time $timeFilter).Unix }}
+  {{ $collection := where $collection.RegularPages
+    ".PublishDate.Unix" "gt" $primary
+  }}
+
+
+  <section
+    class="
+      mx-4 mb-5 mt-16 flex max-w-screen-xl flex-wrap gap-6 
+      sm:gap-x-10 md:mt-24 md:items-start md:justify-start lg:flex-row 
+      lg:gap-x-16 xl:mx-auto
+    "
+    id="{{ $id }}"
+    data-ga-category="{{ $id }}"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+  >
+    {{ partial "tw/list-callout-collection.html" (dict
+      "hed" $hed
+      "pages" $collection
+      "readMoreLink" $readMoreLink
+      "readMoreText" $readMoreText
+      )
+    }}
+
+  </section>
+{{ end }}
