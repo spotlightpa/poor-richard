@@ -26,17 +26,14 @@ takeover = """
 """
 
 [[blocks]]
-layout = "promo"
-
-[[blocks.entries]]
+layout = "ballyhoo"
+id = "editors-statement"
+image = "external/rv5m343msdze1se1qsmtw2ta9c.jpeg"
 hed = "Read our editor's statement about this study"
-actionUrl = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
-actionText = "Reading the article →"
+dek = "The nonprofit newsroom seeks to revitalize investigative and public-service journalism in the greater Reading area."
+cta = "Read the article →"
+link = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
 
-[[blocks.entries]]
-hed = "Take the Berks County News Consumption and Media Coverage Survey"
-actionUrl = "https://www.surveymonkey.com/r/SpotlightPABerksProject"
-actionText = "Begin survey →"
 
 [[blocks]]
 layout = "supplemental"

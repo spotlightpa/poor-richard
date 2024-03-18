@@ -5,7 +5,7 @@
   {{ $dek := .dek }}
   {{ $cta := .cta }}
   {{ $link := .link }}
-  {{ $filename := .image | default "2023/10/01jh-nnsg-6zn1-3c7b.jpeg" }}
+  {{ $filename := .image }}
   {{ $sizes := slice
     (dict "width" 296 "height" 110)
     (dict "width" 1072 "height" 512)
@@ -24,10 +24,11 @@
         )
       }}
 
-
-      <figure class="flex overflow-hidden rounded md:w-5/12">
-        <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
-      </figure>
+      {{ with $filename }}
+        <figure class="flex overflow-hidden rounded md:w-5/12">
+          <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
+        </figure>
+      {{ end }}
       <div class="md:w-1/2">
         <h2 class="mt-2 text-2xl font-bold md:mt-0 md:text-3xl lg:text-4xl">
           {{ $hed }}
