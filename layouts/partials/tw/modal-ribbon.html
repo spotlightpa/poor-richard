@@ -1,7 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
 {{ $imagename := .filename }}
 {{ $actionColor := .actionColor | default "#FFCB05" }}
-{{ $newsletterAction := site.Param "newsletters-action" }}
 
 
 <div
@@ -63,7 +62,7 @@
           bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-form="newsletters:multi"
             x-data="{ hasFocused: false }"
-            action="{{ $newsletterAction }}"
+            action="{{ site.Param `newsletters-action` }}"
             method="post"
             target="_blank"
             tabindex="-1"

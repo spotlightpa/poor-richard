@@ -11,6 +11,7 @@ kicker = "Economy"
 modal-exclude = false
 pinned = false
 published = 2024-02-21T04:00:00-05:00
+series = ["The Waiting Game"]
 slug = "phfa-mortgage-reopen-applications"
 suppress-date = false
 title = "Pennsylvania mortgage program, closed for more than a year to resolve backlog, will reopen in March, officials say"
@@ -19,6 +20,8 @@ topics = ["Economy"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+<strong><em>Update, March 12, 2024: </em></strong><em>The Pennsylvania Housing Finance Agency recently announced that</em><a href="https://www.phfa.org/forms/press_releases/2024/pahaf-reopening-final-03112024.pdf"><em> applications for the mortgage relief program will reopen starting March 18</em></a><em>.</em>
 
 HARRISBURG — A Pennsylvania mortgage relief program to help homeowners catch up after the pandemic will reopen in March after being closed for more than a year to resolve a backlog of applications and a series of internal problems.
 

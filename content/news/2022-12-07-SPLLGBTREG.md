@@ -12,6 +12,7 @@ internal-id = "SPLLGBTREG"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-12-07T05:00:46-05:00
 slug = "pa-lgbtq-discrimination-law-tom-wolf-regulations"
 suppress-date = false
@@ -37,7 +38,7 @@ A little-noted proposal supported by Wolf, which is up for <a href="http://www.i
 
 “The governor has been clear — hate has no place in Pennsylvania, and that includes sex-based discrimination as defined by these regulations,” Wolf spokesperson Beth Rementer said in a statement.
 
-Wolf, a Democrat first elected in 2014, has asked Republican leaders in the General Assembly throughout his tenure to pass a bill that would add discrimination protections based on sexual orientation and gender identity to state law. Pennsylvania is the only state in the Northeast without such a law on the books, and <a href="https://freedomforallamericans.org/states/">one of 27</a> nationwide without an explicit law banning such discrimination.
+Wolf, a Democrat first elected in 2014, has asked Republican leaders in the General Assembly throughout his tenure to pass a bill that would add discrimination protections based on sexual orientation and gender identity to state law. Pennsylvania is the only state in the Northeast without such a law on the books, and <a href="https://web.archive.org/20220101195235/https://freedomforallamericans.org/states/">one of 27</a> nationwide without an explicit law banning such discrimination.
 
 The legislature has ignored Wolf’s prodding, as it has on many other issues. So, as he has on <a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-climate-carbon-rule-tom-wolf-20220703.html">climate change</a> and <a href="https://web.archive.org/web/20230116185945/https://www.governor.pa.gov/newsroom/gov-wolf-signs-executive-order-to-create-pennsylvania-state-law-enforcement-citizen-advisory-commission/">policing</a>, Wolf has turned to a channel that avoids state lawmakers.
 
