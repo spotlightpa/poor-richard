@@ -7,7 +7,7 @@
     "linkColor" .linkColor
     "backgroundColor" .backgroundColor
   }}
-  {{ with $page := site.GetPage (.page | default "-") }}
+  {{ with $page := site.GetPage (strings.TrimPrefix "content/" .page | default "-") }}
     {{ $params := partialCached "helper/page-params" $page.Page $page.RelPermalink }}
     {{ $item = $item | merge (dict
       "page" $page
