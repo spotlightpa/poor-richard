@@ -1,10 +1,8 @@
 {{ $stories := slice }}
 {{ $src := index site.Data .src }}
 {{ range index $src .name }}
-  {{ with site.GetPage (strings.TrimPrefix "content/" .) }}
+  {{ with site.GetPage . }}
     {{ $stories = $stories | append . }}
-  {{ else }}
-    {{ warnf "unknown story path %q" . }}
   {{ end }}
 {{ end }}
 

@@ -4,7 +4,7 @@
 */}}
 
 {{ $p := "" }}
-{{ if and .IsNode (ne .Kind "404") }}
+{{ if .IsNode }}
   {{ $sort := .Param "sort-by" }}
   {{ $size := .Param "paginate" | default 30 }}
   {{ if eq $sort "pub" | or (eq $sort "oldest") }}
