@@ -21,7 +21,7 @@
               "text" "w-full md:w-2/6 md:text-right"
             }}
           {{ end }}
-          {{ with index site.Taxonomies.series (urlize .) }}
+          {{ with $seriesPage := site.GetPage (printf "series/%s" (urlize .)) }}
             <div class="{{ $classes.block }}">
               <div class="{{ $classes.image }}">
                 {{ $name := .Page.Param "image" }}
@@ -56,7 +56,7 @@
                   ><p
                     class="mt-4 text-base uppercase tracking-wider decoration-yellow decoration-4 underline-offset-4 group-hover:underline"
                   >
-                    {{- printf "%d Articles" (len .) -}}
+                    {{- printf "%d Articles" (.RegularPages.Len) -}}
                   </p></a
                 >
               </div>
