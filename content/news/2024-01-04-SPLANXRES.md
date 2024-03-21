@@ -9,6 +9,7 @@ image-description = "A stylized illustration of a marijuana leaf"
 internal-id = "SPLANXRES"
 kicker = "Medical Marijuana"
 modal-exclude = false
+pinned = false
 published = 2024-01-04T04:00:00-05:00
 slug = "pennsylvania-medical-marijuana-anxiety-research-qualifying-conditions"
 suppress-date = false
@@ -25,7 +26,7 @@ A Spotlight PA analysis found that, in 2021, <a href="https://www.spotlightpa.or
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Anxiety ranked far ahead of chronic pain, post-traumatic stress disorder, and other conditions. Recently released data from the Pennsylvania Department of Health shows anxiety continued to dominate the <a href="https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/SMC%20Annual%20Summary.pdf">medical marijuana program in 2022.</a>
+Anxiety ranked far ahead of chronic pain, post-traumatic stress disorder, and other conditions. Recently released data from the Pennsylvania Department of Health shows anxiety continued to dominate the <a href="https://web.archive.org/20240104103232/https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/SMC%20Annual%20Summary.pdf">medical marijuana program in 2022.</a>
 
 If you’re considering using cannabis for anxiety, Spotlight PA collected some research and other resources that could be useful.
 
@@ -51,7 +52,7 @@ The committee also said there were research gaps, including those related to CBD
 
 ## Other states
 
-The <a href="https://www.health.state.mn.us/people/cannabis/petitions/docs/anxietyreview.pdf">Minnesota Department of Health’s</a> Office of Medical Cannabis published a 48-page report in 2021, reviewing the existing research around anxiety and cannabis while also evaluating the potential impact of adding it to the state’s list of qualified conditions.
+The <a href="https://web.archive.org/20240104103231/https://www.health.state.mn.us/people/cannabis/petitions/docs/anxietyreview.pdf">Minnesota Department of Health’s</a> Office of Medical Cannabis published a 48-page report in 2021, reviewing the existing research around anxiety and cannabis while also evaluating the potential impact of adding it to the state’s list of qualified conditions.
 
 “Overall, the available published research provides mixed evidence of efficacy,” the report said.
 
@@ -59,7 +60,7 @@ The report described several limitations in the relevant research, saying that m
 
 Cannabis’ status as a <a href="https://www.dea.gov/drug-information/drug-scheduling#:~:text=Schedule%20I%20drugs%2C%20substances%2C%20or,)%2C%20methaqualone%2C%20and%20peyote.">Schedule I drug</a> — a category the federal government uses for drugs it considers to have no currently accepted medical use and a high potential for abuse — complicates attempts to research the drug, the office said.
 
-In 2022, the <a href="https://www.hivguidelines.org/wp-content/uploads/2023/03/NYSDOH-AI-Therapeutic-Use-of-Medical-Cannabis-in-NYS_9-28-2023_HG.pdf">New York State Department of Health AIDS Institute</a> developed guidelines to help clinicians working with medical marijuana patients.
+In 2022, the <a href="https://web.archive.org/20240104103232/https://www.hivguidelines.org/wp-content/uploads/2023/03/NYSDOH-AI-Therapeutic-Use-of-Medical-Cannabis-in-NYS_9-28-2023_HG.pdf">New York State Department of Health AIDS Institute</a> developed guidelines to help clinicians working with medical marijuana patients.
 
 The guidelines didn’t examine whether cannabis is effective at treating anxiety. However, the report did offer advice to clinicians for treating patients who use cannabis.
 
@@ -79,7 +80,7 @@ Levine referred to “some of the key articles” she could provide board member
 
 The list included over 20 articles and reports. Their focus varied, and the guide did not clarify how Levine analyzed the information in them. Overall, the articles presented a nuanced take.
 
-In the first item listed in the resource guide, researcher Susan Stoner described the effects of marijuana on anxiety disorders as <a href="https://adai.uw.edu/pubs/pdf/2017mjanxiety.pdf">“complex.”</a>
+In the first item listed in the resource guide, researcher Susan Stoner described the effects of marijuana on anxiety disorders as <a href="https://web.archive.org/20240106042206/https://adai.uw.edu/pubs/pdf/2017mjanxiety.pdf">“complex.”</a>
 
 Stoner made a distinction between what she called the two primary active ingredients of marijuana, THC and CBD, which she said “appear to have differing effects with regard to anxiety.” While CBD is not considered an impairing compound, <a href="https://www.cdc.gov/marijuana/what-we-know.html">THC is.</a>
 
