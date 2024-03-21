@@ -14,7 +14,7 @@
 {{ $name := .Get "title" }}
 
 {{ with .Get "topic" }}
-  {{ $topic = (site.Taxonomies.topic.Get (urlize . )).Page }}
+  {{ $topic = site.GetPage (printf "topics/" (urlize . )) }}
   {{ $name = "Spotlight PA" }}
 {{ end }}
 {{ with .Get "title" }}

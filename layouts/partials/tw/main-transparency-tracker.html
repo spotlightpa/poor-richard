@@ -24,7 +24,7 @@
     id="transparency-tracker-stories"
     data-ga-category="guides"
   >
-    {{ $guide := site.GetPage "content/topics/transparency-tracker/_index.md" }}
+    {{ $guide := site.GetPage "topics/transparency-tracker/_index.md" }}
     {{ partial "tw/list-3-col-story.html" (dict
       "hed" "Transparency Stories"
       "pages" $guide.RegularPages
@@ -60,7 +60,7 @@
     id="penn-state-stories"
     data-ga-category="guides"
   >
-    {{ $guide := site.GetPage "content/topics/penn-state/_index.md" }}
+    {{ $guide := site.GetPage "topics/penn-state/_index.md" }}
     {{ partial "tw/list-3-col-story.html" (dict
       "hed" "All Penn State Stories"
       "pages" $guide.RegularPages

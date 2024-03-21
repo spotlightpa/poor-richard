@@ -2,8 +2,8 @@
 {{ $nameID := urlize . }}
 
 {{ $link := "" }}
-{{ with $pages := site.Taxonomies.authors.Get $nameID }}
-  {{ $link = $pages.Page.RelPermalink }}
+{{ with $page := site.GetPage (printf "authors/%s" $nameID) }}
+  {{ $link = $page.RelPermalink }}
 {{ end }}
 
 {{ $thumb := "" }}
