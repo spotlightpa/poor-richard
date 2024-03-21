@@ -10,7 +10,7 @@
 {{ $series := $params.series }}
 {{ $name := "This Series" }}
 {{ with .Get "series" }}
-  {{ $series = site.GetPage (printf "series/%s" (urlize .)) }}
+  {{ $series = (site.Taxonomies.series.Get (urlize . )).Page }}
   {{ $name = "Spotlight PA" }}
 {{ end }}
 {{ $pages := $series.Pages.ByPublishDate }}

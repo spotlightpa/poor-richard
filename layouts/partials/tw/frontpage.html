@@ -191,7 +191,7 @@
       }}
     {{ end }}
     {{ if .featuredTopics }}
-      {{ $pages := site.GetPage "topics/the-capitol/_index.md" }}
+      {{ $pages := site.GetPage "content/topics/the-capitol/_index.md" }}
       {{ partial "tw/list-callout-story.html" (dict
         "hed" "The Capitol"
         "pages" $pages.RegularPages

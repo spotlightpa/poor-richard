@@ -14,7 +14,7 @@ blurb = "Spotlight PA wants to empower voters to make an informed decision on Ma
 url = "/elections-2023/"
 layout = "elections"
 type = "elections"
-guide = "series/voting-guides-2023/_index.md"
+guide = "content/series/voting-guides-2023/_index.md"
 credits = """
 {{<featured/credit
     eyebrow="Reporting"
@@ -133,7 +133,7 @@ title = "PA Election 2023: Candidate and Voting Guides"
 slug = "guides"
 layout = "story-collection"
 timeFilter = "2023-08-01"
-collection = "series/voting-guides-2023/_index.md"
+collection = "content/series/voting-guides-2023/_index.md"
 
 [[blocks]]
 layout = "ballyhoo"
@@ -185,7 +185,7 @@ title = "PA Election 2023: More Coverage "
 slug = "coverage"
 layout = "story-collection"
 timeFilter = "2023-08-01"
-collection = "topics/elections/_index.md"
+collection = "content/topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2023 Stories"
 
 [[blocks]]
@@ -193,7 +193,7 @@ title = " Elecciones Pa. 2023: Traducciones al Español "
 slug = "espanol"
 layout = "story-collection"
 timeFilter = "2023-08-01"
-collection = "topics/español/_index.md"
+collection = "content/topics/español/_index.md"
 collectionReadMore = "Leer Más Historias De La Elección PA 2023"
 
 [[internal-links]]

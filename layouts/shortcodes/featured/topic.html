@@ -10,7 +10,7 @@
 {{ $topic := $params.topic }}
 {{ $name := $topic.Title }}
 {{ with .Get "topic" }}
-  {{ $topic = site.GetPage (printf "topics/" (urlize . )) }}
+  {{ $topic = (site.Taxonomies.topic.Get (urlize . )).Page }}
   {{ $name = "Spotlight PA" }}
 {{ end }}
 {{ with .Get "title" }}
