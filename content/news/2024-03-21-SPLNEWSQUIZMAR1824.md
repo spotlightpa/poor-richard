@@ -21,7 +21,7 @@ topics = ["News Quiz"]
 
 In this week’s quiz: President Joe Biden’s steel deal opposition, Pennsylvania’s March Madness moment, and a city’s “sanctuary” policy makes headlines.
 
-<div data-tf-live="01HRW6RRJWN3KXW7D3EA4ETEWD"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<div data-tf-live="01HSEKZX0YY911W5TKMW99ZBTM"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!
 
