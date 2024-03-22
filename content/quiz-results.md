@@ -17,10 +17,14 @@ slug = "guides"
 layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "content/series/voting-guides-2024/_index.md"
+
+[[blocks]]
+slug = "results"
+layout = "candidate-results"
+
+
 +++
 
-## Custom Results Page
+## Here’s how your answers aligned with each candidate. 
 
-Feature results in a nice design based on editor's recs including ranked results for selected party and candidate photos. Include callout collection from the [Candidate Guides Series](https://www.spotlightpa.org/series/voting-guides-2024) (below). 
-
-Potentially add Election events, signup, or donate CTA.
+Click here to take the quiz again.
