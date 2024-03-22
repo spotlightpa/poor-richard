@@ -147,8 +147,8 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
 
 [[blocks.entries]]
-hed="Q&A with top Pa. elections official Al Schmidt"
-dek="Join Spotlight PA April 2 for a live discussion on election systems and misinformation with Al Schmidt, Pennsylvania’s secretary of state."
+hed="Trusting Elections"
+dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmidt, Pennsylvania’s top election official."
 date="2023-04-02"
 dateVerbose="April. 2, 2024 on Zoom"
 link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
