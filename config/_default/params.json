@@ -1,5 +1,5 @@
 {
-  "ad-breaker-active": true,
+  "ad-breaker-active": false,
   "ad-breaker-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-breaker-images": [
     "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
@@ -14,7 +14,7 @@
     "https://files.data.spotlightpa.org/uploads/01jz/sqzm/the-perfect-gift-15-.png"
   ],
   "ad-featured-link": "https://shop.spotlightpa.org/",
-  "ad-headwater-active": true,
+  "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
     "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
@@ -23,7 +23,7 @@
     "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-headwater-link": "/donate",
-  "ad-rail-active": true,
+  "ad-rail-active": false,
   "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
   "ad-rail-images": [
     "https://files.data.spotlightpa.org/uploads/01jy/3syx/4.png",
