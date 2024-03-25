@@ -13,7 +13,7 @@ pinned = false
 published = 2024-03-25T04:00:00-04:00
 slug = "pennsylvania-team-pennsylvania-josh-shapiro-governors-residence-redesign"
 suppress-date = false
-title = "Upgrades to PA governor's mansion bankrolled by private group that won't disclose donors, full cost"
+title = "Upgrades to Pa. governor's mansion bankrolled by private group that won't disclose donors, full cost"
 title-tag = "Private group bankrolling PA governor's mansion upgrades"
 topics = ["Josh Shapiro"]
 +++
