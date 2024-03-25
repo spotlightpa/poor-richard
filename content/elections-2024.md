@@ -155,6 +155,16 @@ link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-suprem
 registration="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
 
 [[blocks]]
+title = "Elections 101"
+slug = "elections-101"
+layout = "story-collection"
+timeFilter = "2023-12-01"
+collection = "series/elections-101/_index.md"
+collectionReadMore = "Read More Elections 101 Stories"
+
+
+
+[[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
 dek = "Be the first to read our 2024 voting guides and other election stories by signing up for our free daily newsletter."
@@ -173,7 +183,15 @@ title = "Voter Guides"
 link = "guides"
 
 [[internal-links]]
-title = "Coverage"
+title = "Events"
+link = "events"
+
+[[internal-links]]
+title = "Elections 101"
+link = "elections-101"
+
+[[internal-links]]
+title = "More Coverage"
 link = "coverage"
 
 [[internal-links]]
