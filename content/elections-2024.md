@@ -160,7 +160,7 @@ slug = "elections-101"
 layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "series/elections-101/_index.md"
-collectionReadMore = "Read More PA Election 2024 Stories"
+collectionReadMore = "Read More Elections 101 Stories"
 
 
 
