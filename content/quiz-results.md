@@ -1,5 +1,5 @@
 +++
-title = "Custom Results Page"
+title = "Your Attorney General Match"
 link-title = "AG Quiz Results"
 title-tag = "AG Quiz Results"
 description = "AG Quiz Results"
@@ -12,19 +12,18 @@ signupDek = "Sign up to receive a weekly review of articles from Spotlight PA an
 url = "/elections-2024/candidate-quiz/results"
 
 [[blocks]]
+slug = "results"
+layout = "candidate-results"
+
+[[blocks]]
 title = "PA Election 2024: Voter Guides"
 slug = "guides"
 layout = "story-collection"
 timeFilter = "2023-12-01"
-collection = "content/series/voting-guides-2024/_index.md"
-
-[[blocks]]
-slug = "results"
-layout = "candidate-results"
-
+collection = "series/voting-guides-2024/_index.md"
 
 +++
 
-## Here’s how your answers aligned with each candidate. 
+## Here’s a breakdown of how your answers align with each Attorney General candidate from your party.
 
 Click here to take the quiz again.

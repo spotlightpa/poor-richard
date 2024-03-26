@@ -1,0 +1,51 @@
+[
+  {
+    "id": "kbradfordgrey",
+    "name": "Keir Bradford-Grey",
+    "title": "former Philadelphia chief public defender",
+    "image": "2024/03/01jz-v1t5-4g7e-ms7v.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "edepasquale",
+    "name": "Eugene DePasquale",
+    "title": "former Pennsylvania auditor general",
+    "image": "2024/03/01jz-v1t1-my8n-4eb4.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "jkhan",
+    "name": "Joe Khan",
+    "title": "former Bucks County solicitor",
+    "image": "2024/03/01jz-v1t4-m7kd-00fy.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "jsolomon",
+    "name": "Jared Solomon",
+    "title": "state representative",
+    "image": "2024/03/01jz-v1t2-y7me-eee1.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "jstollsteimer",
+    "name": "Jack Stollsteimer",
+    "title": "Delaware County district attorney",
+    "image": "2024/03/01jz-v1t1-9jtk-gd1y.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "dsunday",
+    "name": "David Sunday",
+    "title": "York County district attorney",
+    "image": "2024/03/01jz-v1t0-fp4j-wxya.jpeg",
+    "party": "rep"
+  },
+  {
+    "id": "cwilliams",
+    "name": "Craig Williams",
+    "title": "state representative and former federal prosecutor",
+    "image": "2024/03/01jz-v1sz-pvs5-b71v.jpeg",
+    "party": "rep"
+  }
+]
