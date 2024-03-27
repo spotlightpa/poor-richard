@@ -151,7 +151,7 @@ hed="Trusting Elections"
 dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmidt, Pennsylvania’s top election official."
 date="2023-04-02"
 dateVerbose="April 2, 2024 on Zoom"
-link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
+link="https://www.spotlightpa.org/news/2024/03/pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event/"
 registration="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
 
 [[blocks]]
