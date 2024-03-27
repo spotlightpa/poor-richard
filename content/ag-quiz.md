@@ -3,7 +3,7 @@ title = "Which Pa. attorney general candidate do you align with?"
 link-title = "AG Quiz"
 title-tag = "AG Quiz"
 description = "AG Quiz"
-image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 image-description = "AG Quiz"
 image-credit = ""
 layout = "page-landing"
@@ -15,7 +15,7 @@ takeover = """
 {{<featured/main-takeover
   title = "Which Pa. attorney general candidate do you align with?"
   dek = "Pennsylvania’s April 23 primary election is fast approaching, and there’s a race on the ballot"
-  image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+  image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 >}}
 <div class="mt-9" data-tf-live="01HS8X1DTFCF3Q9KH0W69KG19W"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
 {{</featured/main-takeover>}}
