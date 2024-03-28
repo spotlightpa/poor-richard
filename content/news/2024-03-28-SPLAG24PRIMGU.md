@@ -50,7 +50,7 @@ Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates
 
 - <a href="#spl-heading-1">¿Qué hace el fiscal general?</a>
 
-- <a href="#spl-heading-2">Candidatos demócratas</a>
+- <a href="#spl-heading-2">Demócratas</a>
 
   - <a href="#spl-heading-3">Keir Bradford-Grey</a>
 
@@ -88,7 +88,7 @@ Kane fue elogiada por grupos progresistas y <a href="https://www.pennlive.com/mi
 
 Aunque posteriormente un juez federal <a href="https://www.aclu.org/press-releases/federal-judge-strikes-down-pas-ban-marriage-same-sex-couples">anuló</a> la prohibición, la decisión de Kane ilustró que los fiscales generales <a href="https://www.publicsource.org/what-does-a-state-attorney-general-actually-do/">tienen un gran poder sobre la forma en que se tramitan los casos en la oficina, aunque rara vez comparezcan ante los tribunales</a>.
 
-<h2 id="spl-heading-2">Candidatos demócratas</h2>
+<h2 id="spl-heading-2">Demócratas</h2>
 
 {{<picture src="cas/j1ba-hf9g-p2a7-g3pk.jpeg" description="Candidata general demócrata Keir Bradford-Gray" caption="Candidata general demócrata Keir Bradford-Gray" credit="Courtesy candidate Facebook page">}}
 
