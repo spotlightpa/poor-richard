@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<a href="https://www.spotlightpa.org/news/2024/03/elecciones-pensilvania-2024-fiscal-general-candidatos-primarias/"><em>Leer en español</em></a><em><br/></em>
+
 HARRISBURG — Pennsylvania voters will elect a new attorney general this November, but Democrats and Republicans first must pick their candidates this spring.
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
