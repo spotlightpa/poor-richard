@@ -156,7 +156,7 @@ En una declaración a los <a href="https://www.pennlive.com/news/2024/02/video-s
 
 <strong>Apoyos: </strong><a href="https://votevets.org/">VoteVets</a>; <a href="https://www.pmrglv.com/">Grupo de Derechos Médicos de los Padres</a>.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 <h2 id="spl-heading-5">Republicano titular</h2>
 
