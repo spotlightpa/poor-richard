@@ -6,6 +6,7 @@ description = "Tim DeFoor, el actual titular, es el único candidato en la papel
 image = "2024/03/01jy-z6wa-s8v9-qyse.jpeg"
 image-credit = "Cortesía de las páginas de Facebook de las campañas"
 image-description = "De izquierda a derecha: Diputado Estatal Malcolm Kenyatta; Auditor General de Pensilvania Tim DeFoor; Contralor del Condado de Lehigh Mark Pinsley."
+image-gravity="ce"
 internal-id = "SPLAUD24PRIGU"
 kicker = "Español"
 modal-exclude = false
