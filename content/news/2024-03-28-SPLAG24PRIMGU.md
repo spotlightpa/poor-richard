@@ -4,10 +4,10 @@ blurb = "Cinco demócratas y dos republicanos aspiran a la nominación de su par
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Cinco demócratas y dos republicanos aspiran a la nominación de su partido y aparecerán en la papeleta de las primarias el 23 de abril."
 image = "2024/03/01jz-0zxt-tkw9-m5wr.jpeg"
-image-credit = "Kent M. Wilhelm / For Spotlight PA"
-image-description = "La Oficina del Fiscal General cerca del edificio del Capitolio en Harrisburg, Pensilvania.\n"
+image-credit = "KENT M. WILHELM / For Spotlight PA"
+image-description = "The Office of Attorney General location near the Capitol building in Harrisburg, Pennsylvania."
 internal-id = "SPLAG24PRIMGU"
-kicker = "Español"
+kicker = "Elections"
 modal-exclude = false
 pinned = false
 published = 2024-03-28T13:42:26.174-04:00
@@ -48,7 +48,27 @@ Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates
 
 ### Skip to section
 
-¿Qué hace el fiscal general? <strong></strong>
+- <a href="#spl-heading-1">¿Qué hace el fiscal general?</a>
+
+- <a href="#spl-heading-2">Candidatos demócratas</a>
+
+  - <a href="#spl-heading-3">Keir Bradford-Grey</a>
+
+  - <a href="#spl-heading-4">Eugene DePasquale</a>
+
+  - <a href="#spl-heading-5">Joe Khan</a>
+
+  - <a href="#spl-heading-6">Jared Solomon</a>
+
+  - <a href="#spl-heading-7">Jack Stollsteimer</a>
+
+- <a href="#spl-heading-8">Republicanos</a>
+
+  - <a href="#spl-heading-9">Dave Sunday</a>
+
+  - <a href="#spl-heading-10">Craig Williams</a>
+
+<h2 id="spl-heading-1">¿Qué hace el fiscal general?</h2>
 
 El fiscal general de Pensilvania supervisa a cientos de empleados repartidos entre las divisiones penal, civil y de protección pública.
 
@@ -60,7 +80,7 @@ El fiscal general también <a href="https://penncapital-star.com/criminal-justic
 
 Los fiscales generales elegidos a menudo aportan su propia marca fiscal al trabajo de la oficina, basándose en sus antecedentes y áreas jurídicas de interés particular. El cargo de fiscal general también ha servido como trampolín para aspirar a cargos más altos en Pensilvania, incluido el de gobernador.
 
-La fiscalía es una de las tres fiscalías independientes de Pensilvania (las otras dos son la del tesorero del Estado y la del <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta-mark-pinsley/">auditor general del Estado</a>), y al menos un anterior fiscal general ha aprovechado este hecho para tomar decisiones legales que han chocado con el gobernador — e incluso con las funciones establecidas que tiene la fiscalía.
+La fiscalía es una de las tres fiscalías independientes de Pensilvania (las otras dos son <a href="https://www.spotlightpa.org/news/2024/03/eleccion-pensilvania-2024-primarias-tesorero-candidatos-stacy-garrity-ryan-bizzarro-erin-mcclelland/">la del tesorero del Estado</a> y la <a href="https://www.spotlightpa.org/news/2024/03/elecciones-pennsylvania-2024-gu-completa-de-los-candidatos-las-primarias-para-auditor-general/">del auditor general del Estado</a>), y al menos un anterior fiscal general ha aprovechado este hecho para tomar decisiones legales que han chocado con el gobernador — e incluso con las funciones establecidas que tiene la fiscalía.
 
 Esa tensión alcanzó su punto álgido durante el mandato de Kane. En 2013, Kane <a href="https://www.aclu.org/press-releases/pa-attorney-general-announces-she-will-not-defend-states-unconstitutional-ban">se negó a defender</a> al entonces gobernador Tom Corbett y al secretario de salud del estado en una demanda federal que cuestionaba la constitucionalidad de la prohibición del matrimonio entre personas del mismo sexo en todo el estado.
 
@@ -68,11 +88,11 @@ Kane fue elogiada por grupos progresistas y <a href="https://www.pennlive.com/mi
 
 Aunque posteriormente un juez federal <a href="https://www.aclu.org/press-releases/federal-judge-strikes-down-pas-ban-marriage-same-sex-couples">anuló</a> la prohibición, la decisión de Kane ilustró que los fiscales generales <a href="https://www.publicsource.org/what-does-a-state-attorney-general-actually-do/">tienen un gran poder sobre la forma en que se tramitan los casos en la oficina, aunque rara vez comparezcan ante los tribunales</a>.
 
-Candidatos demócratas<strong></strong>
+<h2 id="spl-heading-2">Candidatos demócratas</h2>
 
-{{<picture src="cas/j1ba-hf9g-p2a7-g3pk.jpeg" description="Democratic attorney general candidate Keir Bradford-Grey" caption="Democratic attorney general candidate Keir Bradford-Grey" credit="Courtesy candidate Facebook page">}}
+{{<picture src="cas/j1ba-hf9g-p2a7-g3pk.jpeg" description="Candidata general demócrata Keir Bradford-Gray" caption="Candidata general demócrata Keir Bradford-Gray" credit="Courtesy candidate Facebook page">}}
 
-Keir Bradford-Grey<strong></strong>
+<h3 id="spl-heading-3">Keir Bradford-Grey</h3>
 
 <a href="https://www.keirforag.com/"><strong>Página web</strong></a>
 
@@ -98,9 +118,9 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante un deba
 
 <strong>Apoyos: </strong>Miembros demócratas de la legislatura estatal; funcionarios locales; organizaciones como Working Families Party, EMILYs List y Teamsters Local 623.
 
-{{<picture src="cas/3q7f-14rs-kt4w-t5ax.jpeg" description="Democratic attorney general candidate Eugene DePasquale seen in the Capitol building in Harrisburg, Pennsylvania." caption="Democratic attorney general candidate Eugene DePasquale seen in the Capitol building in Harrisburg, Pennsylvania." credit="Commonwealth Media Services">}}
+{{<picture src="cas/3q7f-14rs-kt4w-t5ax.jpeg" description="El candidato demócrata a fiscal general, Eugene DePasquale, en el edificio del Capitolio en Harrisburg, Pensilvania." caption="El candidato demócrata a fiscal general, Eugene DePasquale, en el edificio del Capitolio en Harrisburg, Pensilvania." credit="Commonwealth Media Services">}}
 
-Eugene DePasquale <strong></strong>
+<h3 id="spl-heading-4">Eugene DePasquale</h3>
 
 <a href="https://www.depasqualeforag.com/"><strong>Página web</strong></a>
 
@@ -124,9 +144,9 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante el mism
 
 <strong>Apoyos: </strong>Miembros demócratas de la legislatura; funcionarios locales y del condado; el ex diputado Mike Doyle (D., Pa.); organizaciones como Ricky&#39;s Pride PAC, Plumbers and Pipefitters Local 520 y la Federación de Profesores de Pittsburgh.
 
-{{<picture src="cas/4nfd-3whb-b8d5-ewz4.jpeg" description="Democratic attorney general candidate Joe Khan" caption="Democratic attorney general candidate Joe Khan" credit="Courtesy candidate website">}}
+{{<picture src="cas/4nfd-3whb-b8d5-ewz4.jpeg" description="Candidata general demócrata Joe Khan." caption="Candidata general demócrata Joe Khan." credit="Courtesy candidate website">}}
 
-Joe Khan<strong></strong>
+<h3 id="spl-heading-5">Joe Khan</h3>
 
 <a href="https://www.joekhan.com/"><strong>Página web</strong></a>
 
@@ -150,9 +170,9 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante un deba
 
 <a href="https://www.joekhan.com/endorsements"><strong>Apoyos</strong></a>: Miembros demócratas de la asamblea legislativa; funcionarios locales y del condado; organizaciones como Clean Air Action.
 
-{{<picture src="cas/0xpr-s0wv-txxe-pehb.jpeg" description="Democratic attorney general candidate Jared Solomon" caption="Democratic attorney general candidate Jared Solomon" credit="Courtesy candidate website">}}
+{{<picture src="cas/0xpr-s0wv-txxe-pehb.jpeg" description="El candidato demócrata a fiscal general, Jared Solomon." caption="El candidato demócrata a fiscal general, Jared Solomon." credit="Courtesy candidate website">}}
 
-Jared Solomon<strong></strong>
+<h3 id="spl-heading-6">Jared Solomon</h3>
 
 <a href="https://www.jaredsolomon.com/"><strong>Página web</strong></a>
 
@@ -176,9 +196,9 @@ También citó la financiación estatal que ayudó a conseguir para la organizac
 
 <a href="https://www.jaredsolomon.com/endorsements"><strong>Apoyos</strong></a><strong>: </strong>Miembros demócratas de la legislatura, incluido el líder de la mayoría en la Cámara de Representantes, Matt Bradford; organizaciones como la Asociación Profesional de Bomberos de Pensilvania, UFCW Local 1776 Keystone State, VoteVets y Local 22: el Sindicato de Bomberos y Paramédicos de Filadelfia.
 
-{{<picture src="cas/f4yf-c6a5-7tnd-qdjj.png" description="Democratic attorney general candidate Jack Stollsteimer" caption="Democratic attorney general candidate Jack Stollsteimer" credit="Courtesy candidate website">}}
+{{<picture src="cas/f4yf-c6a5-7tnd-qdjj.png" description="El candidato demócrata a fiscal general Jack Stollsteimer." caption="El candidato demócrata a fiscal general Jack Stollsteimer." credit="Courtesy candidate website">}}
 
-Jack Stollsteimer<strong></strong>
+<h3 id="spl-heading-7">Jack Stollsteimer</h3>
 
 <a href="https://www.jackforag.com/"><strong>Página web</strong></a>
 
@@ -212,11 +232,11 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante un deba
 
 <strong>Apoyos: </strong>Consejo de Oficios de Construcción y Edificación de Pensilvania, el Consejo de Oficios de Edificación de Filadelfia, Consejo Regional de Carpinteros de los Estados del Atlántico Este y el Consejo Conjunto 53 de Teamsters.
 
-Republicanos<strong></strong>
+<h2 id="spl-heading-8">Republicanos</h2>
 
-{{<picture src="cas/9886-egqh-x49t-wp62.png" description="Republican attorney general candidate Dave Sunday" caption="Republican attorney general candidate Dave Sunday" credit="Courtesy candidate Facebook page">}}
+{{<picture src="cas/9886-egqh-x49t-wp62.png" description="Candidato general republicano Dave Sunday." caption="Candidato general republicano Dave Sunday." credit="Courtesy candidate Facebook page">}}
 
-Dave Sunday<strong></strong>
+<h3 id="spl-heading-9">Dave Sunday</h3>
 
 <a href="https://www.davesundayforag.com/"><strong>Página web</strong></a>
 
@@ -248,9 +268,9 @@ Cuando se le preguntó por las dudas que persisten sobre la integridad de las el
 
 <strong>Apoyos: </strong><a href="https://www.inquirer.com/news/pennsylvania/pennsylvania-attorney-general-race-dave-sunday-20240122.html#:~:text=HARRISBURG%20%E2%80%94%20The%20Pennsylvania%20Republican%20Party,%2Dprofile%20state%2Dlevel%20race.">el Partido Republicano de Pensilvania</a>; <a href="https://republicanags.com/2023/11/13/raga-endorses-dave-sunday-for-pennsylvania-attorney-general/">la Asociación de Fiscales Generales Republicanos</a>; senadores estatales republicanos, incluida <a href="https://www.facebook.com/photo/?fbid=792933012841782&amp;set=pcb.792933202841763">la Presidenta Pro Tempore, Kim Ward</a>; el diputado federal <a href="https://www.facebook.com/photo/?fbid=840183464783403&amp;set=pcb.840183528116730">Lloyd Smucker</a>; la Tesorera <a href="https://www.facebook.com/photo/?fbid=747454900534028&amp;set=a.276749497604573">Stacy Garrity</a>; <a href="https://twitter.com/DaveSunday_/status/1767570810770714992">la Orden Fraternal de Policía de York nº 73</a><u>.</u>
 
-{{<picture src="cas/ev9m-50as-gbza-wvkj.png" description="Republican attorney general candidate Craig Williams" caption="Republican attorney general candidate Craig Williams" credit="Courtesy candidate Facebook page">}}
+{{<picture src="cas/ev9m-50as-gbza-wvkj.png" description="El candidato republicano a fiscal general Craig Williams." caption="El candidato republicano a fiscal general Craig Williams." credit="Courtesy candidate Facebook page">}}
 
-Craig Williams<strong></strong>
+<h3 id="spl-heading-10">Craig Williams</h3>
 
 <a href="https://www.craigwilliamsforpa.com/"><strong>Página web</strong></a>
 
