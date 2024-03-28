@@ -6,6 +6,7 @@ description = "Cinco demócratas y dos republicanos aspiran a la nominación de 
 image = "2024/03/01jz-0zxt-tkw9-m5wr.jpeg"
 image-credit = "Kent M. Wilhem / For Spotlight PA"
 image-description = "La Oficina del Fiscal General cerca del edificio del Capitolio en Harrisburg, Pensilvania."
+image-gravity = "ce"
 internal-id = "SPLAG24PRIMGU"
 kicker = "Español"
 modal-exclude = false
