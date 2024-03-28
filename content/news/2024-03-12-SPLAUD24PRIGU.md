@@ -2,7 +2,7 @@
 authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Incumbent Tim DeFoor is the only candidate on the Republican primary ballot. Democrats will choose between two candidates: state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
-description = "Incumbent Tim DeFoor is the only candidate on the Republican primary ballot. Democrats will choose between state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley."
+description = "Incumbent Tim DeFoor is the only candidate on the Republican primary ballot. Democrats will choose between two candidates: state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley."
 image = "2024/03/01jy-z6wa-s8v9-qyse.jpeg"
 image-credit = "Courtesy campaign Facebook pages"
 image-description = "From left: State Rep. Malcolm Kenyatta; Pennsylvania Auditor General Tim DeFoor; Lehigh County Controller Mark Pinsley"
@@ -21,6 +21,8 @@ topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+<a href="https://www.spotlightpa.org/news/2024/03/elecciones-pennsylvania-2024-gu-completa-de-los-candidatos-las-primarias-para-auditor-general/"><em>Leer en español</em></a><em></em>
 
 HARRISBURG —&nbsp;During the April 23 primary election, Pennsylvania Democrats and Republicans will pick their parties’ candidates for state auditor general, one of the commonwealth’s three elected row officers.
 
