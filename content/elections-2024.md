@@ -178,6 +178,15 @@ timeFilter = "2023-12-01"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2024 Stories"
 
+[[blocks]]
+title = " Elecciones Pa. 2024: Traducciones al Español "
+slug = "espanol"
+layout = "story-collection"
+timeFilter = "2024-01-01"
+collection = "topics/español/_index.md"
+collectionReadMore = "Leer Más Historias De La Elección PA 2024"
+
+
 [[internal-links]]
 title = "Voter Guides"
 link = "guides"
