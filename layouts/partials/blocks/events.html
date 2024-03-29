@@ -4,18 +4,18 @@
     data-ga-category="{{ .id }}"
     x-data
     x-intersect.half="$dispatch('intersect:about', $el.id)"
-    class="bg-black p-5 font-sans sm:py-5 md:py-12 xl:px-0"
+    class="bg-black p-5 font-sans sm:py-5 md:py-16 xl:px-0"
   >
     <h2
-      class="m-auto flex max-w-screen-xl items-baseline gap-3 text-base font-bold uppercase tracking-widest text-white"
+      class="m-auto flex max-w-screen-lg items-baseline gap-3 text-base font-bold uppercase tracking-widest text-white"
     >
       {{ .title }}
     </h2>
 
     <div
-      class="m-auto mt-4 max-w-screen-xl md:mt-6 md:flex md:items-stretch md:justify-between"
+      class="m-auto mt-4 max-w-screen-lg md:mt-6 md:flex md:items-stretch md:justify-between"
     >
-      <div class="flex-0 md:w-7/12">
+      <div class="flex-0 md:w-5/12">
         {{ $name := .image }}
         {{ $credit := "credit" }}
         {{ $description := "desc" }}
@@ -39,7 +39,7 @@
         class="hidden min-h-full w-0 border border-g-3 md:inline-flex"
       ></span>
       <div
-        class="mt-6 flex flex-col items-start space-y-6 text-white md:mt-0 md:w-4/12"
+        class="mt-6 flex flex-col items-start space-y-6 text-white md:mt-0 md:w-1/2"
       >
         {{ with .entries }}
           {{ range . }}

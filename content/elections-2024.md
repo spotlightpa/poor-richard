@@ -159,7 +159,7 @@ hed="Trusting Elections"
 dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmidt, Pennsylvania’s top election official."
 date="2023-04-02"
 dateVerbose="April 2, 2024 on Zoom"
-link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
+link="https://www.spotlightpa.org/news/2024/03/pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event/"
 registration="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
 
 [[blocks]]
@@ -183,6 +183,15 @@ layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2024 Stories"
+
+[[blocks]]
+title = " Elecciones Pa. 2024: Traducciones al Español "
+slug = "espanol"
+layout = "story-collection"
+timeFilter = "2024-01-01"
+collection = "topics/español/_index.md"
+collectionReadMore = "Leer Más Historias De La Elección PA 2024"
+
 
 [[internal-links]]
 title = "Voter Guides"
