@@ -1,7 +1,7 @@
 {
   "edCallout": [
-    "content/news/2024-02-08-SPLGCLOB.md",
-    "content/news/2024-02-05-spl_wesa_FAVOR.md"
+    "content/news/2024-03-28-SPLCFMOVE24.md",
+    "content/news/2024-03-25-SPL_67_counties.md"
   ],
   "edImpact": [
     "content/news/2023-03-09-SPLCOMPETENCY.md",
@@ -12,16 +12,16 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-03-28-SPLCFMOVE24.md"
+    "content/news/2024-03-29-SPLPOLLWATCH101.md"
   ],
   "subfeatures": [
-    "content/news/2023-03-31-SPLATT.md",
-    "content/news/2024-03-20-SPLATG24CF.md"
+    "content/news/2024-03-07-SPLEPOLL101.md",
+    "content/news/2024-02-27-SPLVOTMAC101.md"
   ],
   "topSlots": [
+    "content/news/2024-03-28-SPLNEWSQUIZMAR2824.md",
     "content/news/2024-03-28-SPLDATERUL3RD.md",
-    "content/statecollege/2024-03-27-SPLRURALBIRTH.md",
-    "content/news/2024-03-25-SPLRESPROJ.md"
+    "content/news/2024-03-28-SPLCFMOVE24.md"
   ],
   "topper": []
 }
