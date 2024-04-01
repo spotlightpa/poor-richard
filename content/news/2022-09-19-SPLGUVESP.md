@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía/", "/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía%20/"]
 arc-id = "EHQZVCHOBVHYLD7H5OCDCIOZAY"
 authors = ["Stephen Caruso", "Ethan Edward Coston", "Angela Couloumbis"]
 blurb = "La elección de 2022 para gobernador en Pensilvania podría cambiar dramáticamente el curso del estado. Esto es lo que necesitas saber para votar informadamente."
@@ -13,15 +14,12 @@ kicker = "Español"
 language-code = "es"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-19T05:00:00-04:00
 slug = "pa-eleccion-2022-mastriano-shapiro-gobernador-candidatura-completa-guia"
 suppress-date = false
 title = "Elecciones Pa. 2022: Su guía completa de los candidatos a gobernador"
 topics = ["Español"]
-aliases = [
-"/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía/",
-"/news/2022/09/pa-elección-2022-mastriano-shapiro-gobernador-candidatura-completa-guía%20/"
-]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> es una sala de redacción independiente y no partidista impulsada por The Philadelphia Inquirer en asociación con PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review y WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Inscríbete sin costo a nuestros boletines</i></a><i>.</i>
@@ -67,7 +65,7 @@ Cinco candidatos a gobernador estarán en la papeleta del 8 de noviembre, junto 
 
 <div id="spl-mastriano"></div>
 
-## <a href="https://www.doug4gov.com/">Doug Mastriano,</a> Republicano
+## <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">Doug Mastriano,</a> Republicano
 
 El coronel retirado del ejército del condado de Franklin ha pasado la mayor parte de su carrera en el ejército, convirtiéndose en un funcionario electo en 2019 cuando se unió al Senado estatal.
 
