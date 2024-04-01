@@ -12,6 +12,7 @@ internal-budget = "Top gaming regulators in Pa. met with casino lobbyists before
 internal-id = "SPLGAMBOR"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-02-16T05:00:00-05:00
 slug = "pa-skill-games-parx-casino-lobbyists-gaming-control-board"
 suppress-date = false
@@ -115,7 +116,7 @@ Any inadvertent ex parte communications, whether from a lobbyist or a lawmaker, 
 
 The agency’s seven-person board, whose members are appointed either by the governor or legislative leaders, also cannot have “non-ex parte” discussions (which are not defined) with representatives of any entity the board regulates unless the meeting takes place at their agency’s offices — and unless that meeting is disclosed on a separate log that is available for public inspection.
 
-The Gaming Control Board keeps two running logs on its website. The first details <a href="https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>. The second <a href="https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
+The Gaming Control Board keeps two running logs on its website. The first details <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>. The second <a href="https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
 
 The Jan. 17 meeting between the Gaming Board’s top staff and Parx’s lobbyists is not included on either list. Neither is the meeting between Tomlinson and the Gaming Control Board.
 
