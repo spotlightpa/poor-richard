@@ -70,7 +70,7 @@ Shapiro has yet to commit to staying in RGGI. On the campaign trail, he’s said
 
 ## Climate change and conservation
 
-Mastriano has called <a href="https://www.rollingstone.com/politics/politics-news/doug-mastriano-senate-lgbtq-islam-climate-dreamers-1397275/">global warming an academic fabrication</a> and makes no mention of climate change <a href="https://www.doug4gov.com/">on his campaign website.</a>
+Mastriano has called <a href="https://www.rollingstone.com/politics/politics-news/doug-mastriano-senate-lgbtq-islam-climate-dreamers-1397275/">global warming an academic fabrication</a> and makes no mention of climate change <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">on his campaign website.</a>
 
 His campaign has rarely mentioned conservation of natural resources. When asked how he would protect Pennsylvania’s environment in <a href="https://web.archive.org/web/20221117231618/http://onyourballot.vote411.org/race-detail.do?id=2901302">a candidate survey</a>, he wrote, “I’m an Eagle Scout and respect the environment — we are stewards of the land.”
 
