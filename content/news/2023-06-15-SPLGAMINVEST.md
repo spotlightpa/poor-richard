@@ -11,6 +11,7 @@ internal-budget = "Pa. lawmakers ask for investigations after gaming regulators 
 internal-id = "SPLGAMINVEST"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-06-15T05:00:54-04:00
 slug = "pa-parx-casino-gaming-control-board-lobbyist-investigations"
 suppress-date = false
@@ -50,7 +51,7 @@ The news organization previously revealed that top officials at the Gaming Contr
 
 Agency officials did not report the meeting on publicly available logs. The logs are required by the board’s <a href="https://gamingcontrolboard.pa.gov/files/regulations/ethics/PGCB_Code_of_Ethics.pdf">code of ethics</a>, which sharply restricts when and how companies regulated by the agency can communicate with its board members, as well as certain staff that advise the board.
 
-The Gaming Control Board publicizes two logs on its website. The first tracks <a href="https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>, which are defined as off-the-record conversations on matters that could “reasonably come before the Board in a contested, on the record proceeding.” The second log <a href="https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
+The Gaming Control Board publicizes two logs on its website. The first tracks <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>, which are defined as off-the-record conversations on matters that could “reasonably come before the Board in a contested, on the record proceeding.” The second log <a href="https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
 
 The latest entry on the ex parte log dates back a decade, to March 2013. On the second log, the latest entry dates back seven years, to May 2016.
 
