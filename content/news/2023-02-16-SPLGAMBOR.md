@@ -108,7 +108,7 @@ The records do not indicate how long the meeting ran, or if anyone else joined. 
 
 Within days of the Jan. 17 gathering, O’Toole, Sherman, and Stambaugh were scheduled to meet separately with Tomlinson, in the senator’s Capitol office, to discuss skill games, emails show. Tomlinson could not be reached for comment.
 
-The Gaming Control Board’s <a href="https://gamingcontrolboard.pa.gov/files/regulations/ethics/PGCB_Code_of_Ethics.pdf">code of ethics</a> sharply restricts when and how companies regulated by the board can communicate with the agency’s board members and certain staff that advise the board.
+The Gaming Control Board’s <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/regulations/ethics/PGCB_Code_of_Ethics.pdf">code of ethics</a> sharply restricts when and how companies regulated by the board can communicate with the agency’s board members and certain staff that advise the board.
 
 For instance, the code flat out bars board members, hearing officers, and staff attorneys who advise them from engaging in “ex parte” communications, which are defined as off-the-record conversations on matters that could “reasonably come before the Board in a contested, on the record proceeding.”
 
@@ -116,7 +116,7 @@ Any inadvertent ex parte communications, whether from a lobbyist or a lawmaker, 
 
 The agency’s seven-person board, whose members are appointed either by the governor or legislative leaders, also cannot have “non-ex parte” discussions (which are not defined) with representatives of any entity the board regulates unless the meeting takes place at their agency’s offices — and unless that meeting is disclosed on a separate log that is available for public inspection.
 
-The Gaming Control Board keeps two running logs on its website. The first details <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>. The second <a href="https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
+The Gaming Control Board keeps two running logs on its website. The first details <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/reports/PGCB_Inadvertant_Ex_Parte_Communication_Log.pdf">ex parte communications</a>. The second <a href="https://web.archive.org/20230216110401/https://gamingcontrolboard.pa.gov/files/reports/Applicant_Licensee_Lic%20Entity_Rep_Discussion_Log.pdf">lists discussions</a> that were held between board members and people representing gambling companies licensed by or applying to the board.
 
 The Jan. 17 meeting between the Gaming Board’s top staff and Parx’s lobbyists is not included on either list. Neither is the meeting between Tomlinson and the Gaming Control Board.
 
