@@ -11,6 +11,7 @@ internal-budget = "While four local police departments were reimbursed for servi
 internal-id = "SPLPSUSECURITY"
 kicker = "Penn State"
 modal-exclude = false
+pinned = false
 published = 2023-01-27T05:00:00-05:00
 slug = "penn-state-proud-boys-pennsylvania-state-police"
 suppress-date = false
@@ -25,7 +26,7 @@ STATE COLLEGE — Pennsylvania State Police sent 70 employees to Penn State’s 
 
 But unlike the local police departments that assisted Penn State police at the event, State Police were not reimbursed for their services.
 
-On Oct. 24, a Penn State student group hosted two far-right activists for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event, <a href="https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
+On Oct. 24, a Penn State student group hosted two far-right activists for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event, <a href="https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="https://web.archive.org/20220930191154/http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
 
 That evening, <a href="https://www.centredaily.com/news/local/education/penn-state/article267845797.html">protesters gathered outside the campus building where the event was scheduled</a>, and police did not immediately intervene when individuals in the crowd sprayed a chemical irritant at protesters, according to videos shared online.
 
