@@ -22,7 +22,7 @@
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   <div
     class="absolute inset-0 flex bg-blue-1 bg-cover"
-    style="background-image: url({{ $url }}); background-position: 38% 0; z-index: -1;"
+    style="background-image: url({{ $url }}); background-position: center; z-index: -1;"
     aria-hidden="true"
   >
     <div
@@ -128,3 +128,4 @@
 {{ with $story }}
   {{ partial "featured/content-area-start" . }}
 {{ end }}
+<span class="hidden py-9 md:-mx-20"></span>
