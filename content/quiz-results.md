@@ -14,6 +14,8 @@ url = "/elections-2024/candidate-quiz/results"
 [[blocks]]
 slug = "results"
 layout = "candidate-results"
+actionLink = "/elections-2024/candidate-quiz/"
+actionText = "Take the quiz again"
 
 [[blocks]]
 title = "PA Election 2024: Voter Guides"
@@ -25,5 +27,3 @@ collection = "series/voting-guides-2024/_index.md"
 +++
 
 ## Here’s a breakdown of how your answers align with each Attorney General candidate from your party.
-
-Click here to take the quiz again.
