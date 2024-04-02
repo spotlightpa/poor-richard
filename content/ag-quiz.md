@@ -14,10 +14,11 @@ bg-img = true
 takeover = """
 {{<featured/main-takeover
   title = "Which Pa. attorney general candidate do you align with?"
-  dek = "Pennsylvania’s April 23 primary election is fast approaching, and there’s a race on the ballot"
+  dek = "Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election."
   image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 >}}
 <div class="mt-9" data-tf-live="01HS8X1DTFCF3Q9KH0W69KG19W"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
+
 {{</featured/main-takeover>}}
 """
 +++
