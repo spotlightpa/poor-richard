@@ -84,7 +84,7 @@ Munroe told Spotlight PA that he has since convened a working group with Planned
 
 Both groups, he noted, are OK with the bill’s intent but disagree on the language. He plans to keep working on the issue.
 
-“I don&#39;t represent the ACLU. I don&#39;t represent Planned Parenthood. I represent the parents and the citizens of 140th District in this commonwealth,” Munroe said. “And I can tell you, from all the conversations I&#39;ve had, they want something done.”
+“I don&#39;t represent the ACLU. I don&#39;t represent Planned Parenthood. I represent the parents and the citizens of 144th District in this commonwealth,” Munroe said. “And I can tell you, from all the conversations I&#39;ve had, they want something done.”
 
 A similar <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=22">bill</a> has also struggled in the state Senate.
 
