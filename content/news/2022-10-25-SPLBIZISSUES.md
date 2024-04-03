@@ -12,6 +12,7 @@ internal-id = "SPLBIZISSUES"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-25T05:00:27-04:00
 series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-governor-mastriano-shapiro-inflation-gas-tax"
@@ -69,7 +70,7 @@ Mastriano told Spotlight PA in response to written questions that the tax cut wo
 
 Another point of agreement between the two candidates: Pennsylvania needs to cut the red tape that businesses run into when dealing with state government.
 
-Mastriano plans to eliminate <a href="https://www.doug4gov.com/the_plan">at least 55,000</a> state regulations in his first 100 days in office. He’s also said he’d work with the General Assembly on legislation that would <a href="https://www.facebook.com/photo?fbid=542602630560105&set=a.406114977542205">automatically review</a> all regulations that cost more than $1 million and eliminate two regulations for any new regulation created.
+Mastriano plans to eliminate <a href="https://web.archive.org/20230103171716/https://www.doug4gov.com/the_plan">at least 55,000</a> state regulations in his first 100 days in office. He’s also said he’d work with the General Assembly on legislation that would <a href="https://www.facebook.com/photo?fbid=542602630560105&set=a.406114977542205">automatically review</a> all regulations that cost more than $1 million and eliminate two regulations for any new regulation created.
 
 It would be faster to remove regulations via legislation than through an administrative process, which would require a 30-day public comment period, said Cary Coglianese, a law professor at the University of Pennsylvania and an expert on government regulation. But, he cautioned, “the number doesn’t matter,” since what counts as a regulation is somewhat arbitrary. Some regulations are obsolete, so neither scrapping nor keeping them would have any real impact, while others provide important benefits, Coglianese said. “A regulation is just a tool and sometimes those tools can be used in ways that are good and productive and sometimes not.”
 
