@@ -1,11 +1,11 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
-{{ $newsletterAction := site.Param "newsletters-action" }}
 
 
 <div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
   {{ partial "tw/newsletter-box-lg.html" (dict
     "showLogo" true
     "newsletterDek" "Sign up for PA Post to discover overlooked stories, unique investigations, and daily joy from across PA."
+    "newsletterField" "newsletter/papost-hidden.html"
     )
   }}
 
