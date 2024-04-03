@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA April 2 for a live discussion on election systems and misinformation with Al Schmidt, Pennsylvania’s secretary of state."
+blurb = "On April 2, Spotlight PA hosted a discussion on PA election systems and misinformation with Al Schmidt, the secretary of state."
 byline = "Spotlight PA Staff"
-description = "Join us April 2 for a live discussion on PA election systems and misinformation with Al Schmidt, the secretary of state."
+description = "On April 2, Spotlight PA hosted a discussion on PA election systems and misinformation with Al Schmidt, the secretary of state."
 event-title = "TRUSTING ELECTIONS"
 event-url = "https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
 image = "external/2730p9dhrqw4j3brdv7sdqvfd0.jpeg"
@@ -14,8 +14,8 @@ pinned = false
 published = 2024-03-20T17:23:46.033-04:00
 slug = "pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event"
 suppress-date = false
-title = "Attend a live Q&A with top Pa. elections official Al Schmidt"
-title-tag = "A live Q&A with PA’s top elections official"
+title = "WATCH: A Q&A with top Pa. election official Al Schmidt"
+title-tag = "Watch a Q&A with PA’s top election official"
 topics = ["Events"]
 +++
 
@@ -25,9 +25,9 @@ This year, Pennsylvania voters will cast their ballots for president, members of
 
 In 2020, the state was subjected to false claims of election fraud fueled by former President Donald Trump. The claims led to a flood of lawsuits, some of which went to the state’s Supreme Court, and sowed distrust in Pennsylvania’s election system.
 
-On Tuesday, April 2, at 6 p.m. ET on Zoom, Al Schmidt, head of the Pennsylvania Department of State, will join Spotlight PA to discuss how his agency is working to create trust in our election system and combat misinformation. Schmidt will take audience questions. The event will also include a Q&amp;A with a University of Pittsburgh researcher on how to spot election misinformation.
+On Tuesday, April 2, at 6 p.m. ET on Zoom, Al Schmidt, head of the Pennsylvania Department of State, joined Spotlight PA to discuss how his agency is working to create trust in our election system and combat misinformation. Schmidt took audience questions. The event also included a Q&amp;A with a University of Pittsburgh researcher on how to spot election misinformation.
 
-<strong>Our panelists will include:</strong>
+<strong>Our panelists included:</strong>
 
 - <strong>Carter Walker,</strong> reporter, Votebeat
 
@@ -37,9 +37,8 @@ On Tuesday, April 2, at 6 p.m. ET on Zoom, Al Schmidt, head of the Pennsylvania 
 
 - <strong>Beth Schwanke, </strong>executive director, Pitt Disinformation Lab
 
-Register for the event <a href="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw">here</a>. Submit your questions for our panelists using the form below.
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMygPLRUaPCpFxTBD3JyeOHZiNPzi47hlpRwzbE6RqJ4pQHw/viewform?embedded=true" width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/930298537?h=b151b07aa7&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/930298537">Trusting Elections</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
