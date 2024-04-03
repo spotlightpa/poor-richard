@@ -3,15 +3,11 @@
 {{ end }}
 
 {{ define "main" }}
-
   {{ $title := .Title }}
   {{ $calloutTitle := .Page.Param "callout-title" }}
   {{ $blurb := .Page.Params.description }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
-
-  {{ $pinnedPages := where $pages "Params.pinned" true }}
-  {{ $featuredPages := union $pinnedPages $pages | first 5 }}
 
   {{ if eq .Paginator.PageNumber 1 }}
     <section
@@ -66,7 +62,7 @@
         </div>
       </div>
 
-      {{ range $featuredPages | first 1 }}
+      {{ range $pages | first 1 }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
           "filename" (.Param "image")
@@ -105,7 +101,7 @@
         </div>
       {{ end }}
 
-      {{ $pages := $featuredPages | after 1 | first 4 }}
+      {{ $pages := $pages | after 1 | first 4 }}
       {{ range $i, $page := $pages }}
         {{ $params := partialCached "helper/page-params" . .RelPermalink }}
         {{ $imgOpts := dict
@@ -182,8 +178,7 @@
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
   {{ $pinnedPages := where $pages "Params.pinned" true }}
-  {{ $featuredPages := union $pinnedPages $pages | first 5 }}
-  {{ $river := complement $featuredPages $pages }}
+  {{ $river := $pages | after 5 }}
 
   {{ $title := .Title }}
 
