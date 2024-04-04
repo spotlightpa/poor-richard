@@ -14,10 +14,8 @@ bg-img = true
 takeover = """
 {{<featured/main-takeover
   title = "Which Pa. attorney general candidate do you align with?"
-  dek = ""
   image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 >}}
-
 {{</featured/main-takeover>}}
 """
 +++
