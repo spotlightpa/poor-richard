@@ -15,7 +15,11 @@
   <div class="relative z-10 mx-auto max-w-lg text-center font-sans text-white">
     <h2 class="text-3xl font-black uppercase tracking-widest">{{ $hed }}</h2>
     <p class="mb-6 mt-2 text-xl">{{ $dek }}</p>
-    <a class="btn-signup-slim inline" href="{{ $link }}">{{ $cta }}</a>
+    <a
+      class="btn-signup-slim inline no-underline hover:underline"
+      href="{{ $link }}"
+      >{{ $cta }}</a
+    >
   </div>
   {{ $srcset := partial "helper/build-srcset" (dict
     "filename" "2022/09/01hj-pfkr-0knb-0t41.jpeg"
