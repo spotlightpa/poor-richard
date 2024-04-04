@@ -15,8 +15,10 @@ no-index = true
 [[blocks]]
 slug = "results"
 layout = "candidate-results"
-actionLink = "/elections-2024/candidate-quiz/"
-actionText = "Take the quiz again"
+restartLink = "/elections-2024/candidate-quiz/"
+restartText = "Take the quiz again"
+actionLink = "/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/"
+actionText = "Meet the candidates"
 
 [[blocks]]
 title = "PA Election 2024: Voter Guides"
