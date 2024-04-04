@@ -37,10 +37,10 @@ Pennsylvania’s April 23 primary election is fast approaching, and Democrats an
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. The job has also served as a stepping stone for running for higher office in the commonwealth, including the governorship.
 
-This year, [five Democrats and two Republicans are running for the job](https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/). In many ways, the respective parties’ candidates are similar.
+This year, [five Democrats and two Republicans are running for Pennsylvania attorney general](https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/). In many ways, the respective parties’ candidates are similar.
 
 All five Democratic candidates have vowed to defend abortion access and the state’s election results while promising to take a holistic approach to addressing violent crime. The two Republican candidates — both veterans who have been prosecutors — are running on tough-on-crime platforms and say the state constitution doesn’t guarantee a right to abortion.
 
 To help highlight the limited differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz. 
 
-<div data-tf-live="01HTN9H526Y2WC57MWBH73CDVM"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
+<div data-tf-live="01HS8WCNQWYQDYRFMP14J0CVZ6"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
