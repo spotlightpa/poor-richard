@@ -1,10 +1,10 @@
 +++
-title = "Which Pa. attorney general candidate do you align with?"
-link-title = "AG Quiz"
-title-tag = "AG Quiz"
+title = "See which Pa. attorney general candidate is right for you"
+link-title = "Election 2024: See the best PA attorney general candidate for you"
+title-tag = "Election 2024: See the best PA attorney general candidate for you"
 description = "Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election."
 image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
-image-description = "AG Quiz"
+image-description = "PA attorney general candidates 2024"
 image-credit = ""
 layout = "page-landing"
 signupHed = "Join our mailing list "
@@ -13,7 +13,7 @@ url = "/elections-2024/candidate-quiz/"
 bg-img = true
 takeover = """
 {{<featured/main-takeover
-  title = "Which Pa. attorney general candidate do you align with?"
+  title = "See which Pa. attorney general candidate is right for you"
   image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 >}}
 {{</featured/main-takeover>}}
@@ -43,4 +43,4 @@ All five Democratic candidates have vowed to defend abortion access and the stat
 
 To help highlight the limited differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz. 
 
-<div data-tf-live="01HS8WCNQWYQDYRFMP14J0CVZ6"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
+<div data-tf-live="01HTN9H526Y2WC57MWBH73CDVM"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
