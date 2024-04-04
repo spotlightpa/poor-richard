@@ -18,6 +18,19 @@ takeover = """
 >}}
 {{</featured/main-takeover>}}
 """
+credits = """
+  {{<featured/credit
+    eyebrow="Illustration"
+    name="Leise Hook"
+    role="For Spotlight PA"
+  >}}
+  {{<featured/credit
+      eyebrow="Layout"
+      name="Jeff Rummel"
+      role="News Developer"
+      email="jrummel@spotlightpa.org"
+  >}}
+"""
 +++
 <div class="pt-9"></div>
 Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election.

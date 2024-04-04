@@ -77,6 +77,26 @@
       </div>
     {{ end }}
   </section>
+  {{ with .Page.RenderString (.Param "credits") }}
+    <section
+      class="bg-white p-6"
+      id="credits"
+      data-ga-category="credits"
+      x-data
+      x-intersect.half="$dispatch('intersect:about', $el.id)"
+    >
+      <div class="mx-auto w-full max-w-prose">
+        <h2
+          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        >
+          Credits
+        </h2>
+        <div class="space-y-12 py-8">
+          {{ . }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
 {{ end }}
 
 {{ define "before-footer" }}
