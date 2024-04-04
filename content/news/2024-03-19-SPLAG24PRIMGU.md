@@ -15,7 +15,7 @@ series = ["Voting Guides 2024"]
 slug = "pennsylvania-election-2024-attorney-general-primary-candidates"
 suppress-date = false
 title = "Pa. election 2024: A complete guide to the primary candidates for attorney general"
-title-tag = "Election 2024: PA attorney general candidate guide"
+title-tag = "Election 2024: A guide to the PA attorney general candidates"
 topics = ["Elections"]
 +++
 

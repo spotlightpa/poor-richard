@@ -132,7 +132,7 @@ Some lawmakers are on those small pluggers’ side. State Rep. Martin Causer (R.
 
 “My focus is making sure that we plug the maximum number of wells with the \[money\] that we have. The bureaucracy is sort of weighing that down,” Causer said.
 
-Klapowski said he considers all approaches to be on the table, from <a href="https://www.spotlightpa.org/news/2023/05/pa-legislature-abandoned-oil-gas-wells-bond-prices-climate-change/">changing bonding costs</a> to a program currently under development in which companies <a href="https://www.dep.pa.gov/Business/Energy/OilandGasPrograms/OilandGasMgmt/Pages/Methane-Emission-Reduction-Program-(MERP)-.aspx">would front the cost to plug wells</a> and then be reimbursed by the DEP.
+Klapowski said he considers all approaches to be on the table, from <a href="https://www.spotlightpa.org/news/2023/05/pa-legislature-abandoned-oil-gas-wells-bond-prices-climate-change/">changing bonding costs</a> to a program currently under development in which companies <a href="https://web.archive.org/20240226113426/https://www.dep.pa.gov/Business/Energy/OilandGasPrograms/OilandGasMgmt/Pages/Methane-Emission-Reduction-Program-(MERP)-.aspx">would front the cost to plug wells</a> and then be reimbursed by the DEP.
 
 Pennsylvania isn’t going to plug all of its wells anytime soon, he noted. He expects that decades from now, the DEP will still be finding and filling abandoned oil and gas wells.
 
