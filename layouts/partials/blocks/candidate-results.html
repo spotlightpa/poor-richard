@@ -16,7 +16,7 @@
         title: obj.title
       }));
 
-      let rankedCandidates = candidateObjs.filter(pol => pol.points > 0);
+      let rankedCandidates = candidateObjs.filter(pol => pol.points >= 0);
 
       rankedCandidates.sort((b, a) => a.points - b.points);
 
