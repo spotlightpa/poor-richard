@@ -90,7 +90,7 @@ Spotlight PA spoke to an Office of Attorney General official familiar with the a
 
 Duquette said that since his initial response, he has received additional letters saying his complaint was not substantiated and that a test wasn’t necessary.
 
-“I think if they offer, just my personal opinion, if they offer to test your well … that if you answer in the affirmative, they just test your water. They don’t turn it into a criminal complaint and find a way not to have to test your water.”
+“I think if they offer, just my personal opinion, if they offer to test your well … that if you answer in the affirmative, they just test your water.”
 
 ## Other hurdles
 
