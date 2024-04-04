@@ -4,20 +4,11 @@
   <script>
     function candidates() {
 
-      let urlParams = new URL(window.location).searchParams.entries();
       let candidateData = {{$data}}
 
-      function paramsToObject() {
-        const result = {};
-        for (const [key, value] of urlParams) {
-          result[key] = value;
-        }
-        return result;
-      }
+      let candidateScores = Object.fromEntries(new URL(window.location).searchParams.entries())
 
-      let candidateScores = paramsToObject()
-
-      let orderedCandidates = candidateData.map(obj => ({
+      let candidateObjs = candidateData.map(obj => ({
         name: obj.name,
         id: obj.id,
         points: Number(candidateScores[obj.id]),
@@ -25,16 +16,11 @@
         title: obj.title
       }));
 
-      let candidates = [];
-      for (let i= 0; i<orderedCandidates.length; i++) {
-          if (orderedCandidates[i].points >= 0 ) {
-              candidates = [...candidates, orderedCandidates[i]];
-          }
-      }
-      candidates.sort((b, a) => parseFloat(a.points) - parseFloat(b.points));
+      let rankedCandidates = candidateObjs.filter(pol => pol.points > 0);
 
-      // console.log(candidates)
-      return candidates;
+      rankedCandidates.sort((b, a) => a.points - b.points);
+
+      return rankedCandidates;
     }
   </script>
   <div x-data="candidates">
@@ -62,9 +48,11 @@
             class="mt-1 text-base leading-none text-g-8"
           ></p>
         </div>
-        <div class="flex h-6 w-full max-w-[248px] bg-g-3">
+        <div class="flex h-6 w-full max-w-[248px]">
           <template x-for="_ in new Array( candidate.points ).fill(null)">
-            <span class="mr-1 block h-6 w-6 bg-election-green last:mr-0"></span>
+            <span
+              class="mr-1 block h-6 w-6 rounded-sm bg-election-green last:mr-0"
+            ></span>
           </template>
         </div>
       </div>
