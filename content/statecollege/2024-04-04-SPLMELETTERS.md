@@ -1,7 +1,7 @@
 +++
-authors = ["Lilly Riddle"]
+authors = ["Lilly Riddle", "Spotlight PA State College"]
 blurb = "In 2022, the Pa. attorney general’s office reached a plea deal with Energy Transfer that included free water testing for residents who might have been affected by Mariner East II pipeline construction."
-byline = "Lilly Riddle for Spotlight PA State College"
+byline = "Lilly Riddle for the News Lab at Penn State and Spotlight PA State College"
 description = "Limited information is publicly available about water testing done in Pennsylvania as a result of Mariner East II construction pollution plea deal."
 image = "2024/04/01k0-nt3h-6f2r-0pkp.jpeg"
 image-credit = "Michael Bryant / Philadelphia Inquirer"
@@ -112,7 +112,7 @@ He added: “If it was a little more straightforward and a little easier to set 
 
 <em>News Lab at Penn State student journalists Abby Chachoute, Julia Mertes, Nick Stonesifer, Milan Varia, and McKenna Wall contributed reporting from Blair County.</em>
 
-<em>Lilly Riddle is an intern with Spotlight PA’s State College regional bureau.</em>
+<em>Lilly Riddle is a journalist for the News Lab at Penn State and an intern with Spotlight PA’s State College regional bureau.</em>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 
