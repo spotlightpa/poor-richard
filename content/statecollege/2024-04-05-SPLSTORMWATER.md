@@ -96,7 +96,7 @@ Combining a fee with a credit acknowledges that not every property owner relies 
 
 When Ferguson Township in Centre County implemented its stormwater fee two years ago, the municipality included a <a href="https://www.twp.ferguson.pa.us/sites/g/files/vyhlif9771/f/uploads/2021-05_stormwater_fee_credit_policy_manual_0.pdf">credit program</a> that can help residents reduce their bills by 40% if they remove impervious surfaces from their land or implement other best management practices.
 
-Silver Springs Township in Cumberland County offers agricultural property owners a chance to lower their stormwater bills by up to 90% under its <a href="https://www.sstwp.org/DocumentCenter/View/10423/Ag-Credit-Packet?bidId=">credit program</a>.
+Silver Spring Township in Cumberland County offers agricultural property owners a chance to lower their stormwater bills by up to 90% under its <a href="https://www.sstwp.org/DocumentCenter/View/10423/Ag-Credit-Packet?bidId=">credit program</a>.
 
 Many farms already embrace practices that would possibly make them eligible for credits.
 
