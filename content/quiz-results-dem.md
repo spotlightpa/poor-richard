@@ -154,7 +154,7 @@ answer-key = """
 
 {{</answer-key/q>}}
 
-{{<answer-key/q id="7" question="You prefer a candidate who says the Office of Attorney General should be prioritizing the following but isn’t now:">}}
+{{<answer-key/q id="7" question="You prefer a candidate who, when asked what the Office of Attorney General should be prioritizing but isn’t, said:">}}
   {{<answer-key/a name="Keir Bradford-Grey" party="Democrat"
     image="https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDUtNGc3ZS1tczd2LmpwZWc=.webp"
   >}}“I would want to make sure people have access to basic services that improve their quality of life.”{{</answer-key/a>}}
@@ -177,7 +177,7 @@ answer-key = """
 
 {{</answer-key/q>}}
 
-{{<answer-key/q id="8" question="You prefer a candidate who says the following about the attorney general’s role in protecting abortion access:">}}
+{{<answer-key/q id="8" question="You prefer a candidate who, when asked about the attorney general’s role in protecting abortion access, said:">}}
   {{<answer-key/a name="Keir Bradford-Grey" party="Democrat"
     image="https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDUtNGc3ZS1tczd2LmpwZWc=.webp"
   >}}“​​I don't want my daughter to live in a world that has less rights than I do. … We need to make sure we right the wrongs of health care equity.”{{</answer-key/a>}}

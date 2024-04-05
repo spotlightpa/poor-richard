@@ -80,7 +80,7 @@ answer-key = """
   >}}{{</answer-key/a>}}
 
 {{</answer-key/q>}}
-{{<answer-key/q id="7" question="You prefer a candidate who said the following about whether there are racial disparities in the criminal justice system:">}}
+{{<answer-key/q id="7" question="You prefer a candidate who, when asked whether there are racial disparities in the criminal justice system, said:">}}
 
   {{<answer-key/a name="David Sunday" party="Republican" answer=""
     image="https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDAtZnA0ai13eHlhLmpwZWc=.webp"
@@ -102,7 +102,7 @@ answer-key = """
   >}}Addressing gun violence by targeting “progressive” district attorneys who “are refusing to prosecute gun crimes,” addiction, and fraud against seniors.{{</answer-key/a>}}
 
 {{</answer-key/q>}}
-{{<answer-key/q id="9" question="You prefer a candidate who says the Office of Attorney General should:">}}
+{{<answer-key/q id="9" question="You prefer a candidate who, when asked what the Office of Attorney General should be prioritizing but isn’t, said:">}}
 
   {{<answer-key/a name="David Sunday" party="Republican" answer=""
     image="https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDAtZnA0ai13eHlhLmpwZWc=.webp"
