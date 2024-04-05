@@ -1,0 +1,32 @@
+{{ $q := .Get "question" }}
+{{ $id := .Get "id" }}
+
+
+<div
+  x-data="{
+        id: {{ $id }},
+        get expanded() {
+            return this.active === this.id
+        },
+        set expanded(value) {
+            this.active = value ? this.id : null
+        },
+    }"
+  role="region"
+>
+  <h2 class="mb-4 font-sans text-2xl font-extrabold leading-tight">
+    <button
+      x-on:click="expanded = !expanded"
+      :aria-expanded="expanded"
+      class="flex w-full items-center justify-between py-4 text-left text-xl font-bold"
+    >
+      <span class="w-full">Q: {{ $q }}</span>
+      <span x-show="expanded" aria-hidden="true" class="ml-4">&minus;</span>
+      <span x-show="!expanded" aria-hidden="true" class="ml-4">&plus;</span>
+    </button>
+  </h2>
+
+  <ul x-show="expanded" x-collapse class="mb-6 pl-0">
+    {{ .Inner }}
+  </ul>
+</div>
