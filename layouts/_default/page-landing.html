@@ -97,6 +97,10 @@
       </div>
     </section>
   {{ end }}
+  {{ with .Page.RenderString (.Param "promo") }}
+    {{ . }}
+  {{ end }}
+
 {{ end }}
 
 {{ define "before-footer" }}

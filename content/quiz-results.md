@@ -11,6 +11,7 @@ signupHed = "Join our mailing list "
 signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County."
 url = "/elections-2024/candidate-quiz/results"
 no-index = true
+promo = "{{<featured/election-promo>}}"
 
 [[blocks]]
 slug = "results"
@@ -26,7 +27,6 @@ slug = "guides"
 layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "series/voting-guides-2024/_index.md"
-
 +++
 
 ## Here’s a breakdown of how your answers align with each Attorney General candidate from your party.

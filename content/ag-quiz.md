@@ -31,6 +31,7 @@ credits = """
       email="jrummel@spotlightpa.org"
   >}}
 """
+promo = "{{<featured/election-promo>}}"
 +++
 <div class="pt-9"></div>
 Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election.
@@ -45,4 +46,3 @@ To help highlight the limited differences between the candidates, and show you w
 
 <div class="mb-8" data-tf-live="01HS8WCNQWYQDYRFMP14J0CVZ6"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
 
-{{<featured/election-promo>}}
