@@ -13,7 +13,8 @@ url = "/elections-2024/candidate-quiz/"
 bg-img = true
 takeover = """
 {{<featured/main-takeover
-  title = "See which Pa. attorney general candidate is right for you"
+  title = "Your Next AG"
+  dek = "Use our interactive tool to see which Pennsylvania candidates for attorney general most closely align with what matters to you."
   image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 >}}
 {{</featured/main-takeover>}}
