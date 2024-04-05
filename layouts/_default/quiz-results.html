@@ -74,9 +74,17 @@
     {{ with .Page.RenderString (.Param "answer-key") }}
       <div
         x-data="{ active: 1 }"
-        class="mx-auto max-w-2xl space-y-4 px-5 py-12 lg:px-0"
+        class="mx-auto max-w-2xl space-y-4 px-5 pb-12 pt-6 lg:px-0"
       >
-        <h2 class="leading-tight; mb-4 text-3xl font-bold">Answer Key</h2>
+        <h2 class="leading-tight; mb-4 text-3xl font-bold">
+          How the Candidates Stack Up
+        </h2>
+        <p
+          class="mt-2 text-pretty font-sans text-dek sm:text-base  sm:leading-relaxed md:text-lg lg:text-xl"
+        >
+          Here is how each question and answer in the quiz aligns with each
+          candidate.
+        </p>
         {{ . }}
       </div>
     {{ end }}
