@@ -60,7 +60,7 @@ In their letter, Schuyler and Kleppinger said Lubrano shared “confidential inf
 
 According to the board’s <a href="https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/7/64540/files/2019/03/Standing-Orders-2020-September.pdf">governing documents</a>, Penn State defines “confidential information” as any information about the university that is not public. For example, the board marked its 2022 trustee retreat schedule as confidential, according to records obtained by Spotlight PA.
 
-The Sunshine Act does not require that conversions held in executive sessions remain confidential, Melewsky told Spotlight PA. In fact, a director or board member may have a duty to speak openly if they feel the executive session rules are being improperly applied to thwart public disclosure, she added.
+The Sunshine Act does not require that conversations held in executive sessions remain confidential, Melewsky told Spotlight PA. In fact, a director or board member may have a duty to speak openly if they feel the executive session rules are being improperly applied to thwart public disclosure, she added.
 
 The letter also accused Lubrano of bypassing the board’s typical proposal process, which he said was untrue. He told Spotlight PA the board does not privately deliberate on other honorifics, such as its <a href="https://www.psu.edu/news/administration/story/committee-advances-plan-rename-chemistry-building-benkovic-building/">February vote</a> to name the chemistry building the “Benkovic Building.” Lubrano said he worked with other trustees on the proposal in the fall and board leadership knew he planned to present it in February.
 
