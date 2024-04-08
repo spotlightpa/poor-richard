@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2024/03/elecciones-pennsylvania-2024-gu-completa-de-los-candidatos-las-primarias-para-auditor-general/"]
 authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Tim DeFoor, el actual titular, es el único candidato en la papeleta de las primarias republicanas. Los demócratas elegirán entre dos candidatos: el Representante Estatal Malcolm Kenyatta y el Contralor del Condado de Lehigh Mark Pinsley."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
@@ -17,6 +18,7 @@ suppress-date = false
 title = "Elecciones Pa. 2024: Guía completa de los candidatos a las primarias para auditor general"
 title-tag = "Elecciones 2024: Su guía de candidatos a auditor general de PA"
 topics = ["Español"]
+url = "/news/2024/03/pensilvania-primarias-elecciones-2024-votar-informacion/"
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> es una redacción independiente, no partidista y sin fines de lucro que produce periodismo investigativo de servicio público que responsabiliza a los poderosos e impulsa cambios positivos en Pensilvania. Suscríbase </em><a href="https://www.spotlightpa.org/newsletters"><em>a nuestros boletines gratuitos</em></a><em>.</em>
