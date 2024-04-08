@@ -22,6 +22,8 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds the power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<a href="https://www.spotlightpa.org/news/2024/04/pensilvania-primarias-elecciones-2024-votar-informacion/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — On April 23, Democrats and Republicans across Pennsylvania will decide which candidates from their respective parties will go on to run in the general election.
 
 On the ballot are candidates for president, U.S. House and Senate, Pennsylvania’s three row offices (attorney general, auditor general, and treasurer), and state House and Senate. Across the state, depending on where you live, there might also be ballot questions.
