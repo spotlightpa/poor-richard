@@ -138,6 +138,14 @@ layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "series/voting-guides-2024/_index.md"
 
+[[blocks]]
+layout = "ballyhoo"
+id = "candidate-quiz"
+image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+hed = "Which Pa. attorney general candidate do you align with?"
+dek = "To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+cta = "Take the quiz →"
+link = "/elections-2024/candidate-quiz/"
 
 [[blocks]]
 layout = "events"
@@ -169,8 +177,6 @@ timeFilter = "2023-12-01"
 collection = "series/elections-101/_index.md"
 collectionReadMore = "Read More Elections 101 Stories"
 
-
-
 [[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
@@ -197,6 +203,10 @@ collectionReadMore = "Leer Más Historias De La Elección PA 2024"
 [[internal-links]]
 title = "Voter Guides"
 link = "guides"
+
+[[internal-links]]
+title = "Candidate Quiz"
+link = "candidate-quiz"
 
 [[internal-links]]
 title = "Events"

@@ -1,0 +1,72 @@
+{{ with .block }}
+  {{ $data := site.Data.candidates2024 }}
+
+  <script>
+    function candidates() {
+
+      let candidateData = {{$data}}
+
+      let candidateScores = Object.fromEntries(new URL(window.location).searchParams.entries())
+
+      let candidateObjs = candidateData.map(obj => ({
+        name: obj.name,
+        id: obj.id,
+        points: Number(candidateScores[obj.id]),
+        image: obj.image,
+        title: obj.title
+      }));
+
+      let rankedCandidates = candidateObjs.filter(pol => pol.points >= 0);
+
+      rankedCandidates.sort((b, a) => a.points - b.points);
+
+      return rankedCandidates;
+    }
+  </script>
+  <div x-data="candidates">
+    <template x-for="candidate in candidates">
+      <div
+        class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
+      >
+        <picture class="min-h-full w-7 bg-g-3 md:w-11">
+          <img
+            class="min-h-full min-w-full object-cover"
+            :alt="candidate.imageDescription"
+            :title="candidate.imageDescription"
+            :src="candidate.image"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="flex w-1/2 flex-col justify-end">
+          <h3
+            x-text="candidate.name"
+            class="text-xl font-bold leading-none"
+          ></h3>
+          <p
+            x-text="candidate.title"
+            class="mt-1 text-base leading-none text-g-8"
+          ></p>
+        </div>
+        <div class="flex h-6 w-full max-w-[248px]">
+          <template x-for="_ in new Array( candidate.points ).fill(null)">
+            <span
+              class="mr-1 block h-6 w-6 rounded-sm bg-election-green last:mr-0"
+            ></span>
+          </template>
+        </div>
+      </div>
+    </template>
+  </div>
+  <div class="mx-auto flex max-w-2xl items-center space-x-4 px-5 py-12 lg:px-0">
+    <a
+      href="{{ .actionLink }}"
+      class="inline-block rounded border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-blue-7 hover:bg-blue-5 focus:ring-2 focus:ring-blue-7 active:ring-blue-9"
+      >{{ .actionText }}</a
+    >
+    <span class="text-lg">or</span>
+    <a href="{{ .restartLink }}" class="text-lg underline underline-offset-2"
+      >{{ .restartText }}</a
+    >
+  </div>
+{{ end }}
