@@ -2,7 +2,7 @@
 title = "See which Pa. attorney general candidate is right for you"
 link-title = "INTERACTIVE: See which Pa. attorney general candidate is right for you"
 title-tag = "Election 2024: See the best PA attorney general candidate for you"
-description = "Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election."
+description = "Use our interactive tool to see which Pennsylvania candidates for attorney general most closely align with what matters most to you."
 image = "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
 image-description = "PA attorney general candidates 2024"
 image-credit = ""
