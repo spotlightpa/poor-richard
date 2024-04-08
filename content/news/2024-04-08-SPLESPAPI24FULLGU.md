@@ -15,6 +15,7 @@ slug = "pensilvania-primarias-elecciones-2024-votar-informacion"
 suppress-date = false
 title = "Elecciones Pa. 2024: Una guía completa de quién está en la papeleta de las primarias, cuándo votar, cómo votar, dónde votar, emitir votos por correo y más"
 title-tag = "Elecciones primarias de PA 2024: Guía para votar, papeletas y mucho más"
+topics = ["Español"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> es una redacción independiente, no partidista y sin fines de lucro que produce periodismo investigativo de servicio público que responsabiliza a los poderosos e impulsa cambios positivos en Pensilvania. Suscríbase </em><a href="https://www.spotlightpa.org/newsletters"><em>a nuestros boletines gratuitos</em></a><em>.</em>
