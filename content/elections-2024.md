@@ -152,7 +152,6 @@ dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmi
 date="2024-04-02"
 dateVerbose="April 2, 2024 on Zoom"
 link="https://www.spotlightpa.org/news/2024/03/pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event/"
-registration="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
 
 [[blocks.entries]]
 hed="PA attorney general Candidates"
