@@ -149,10 +149,17 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 [[blocks.entries]]
 hed="Trusting Elections"
 dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmidt, Pennsylvania’s top election official."
-date="2023-04-02"
+date="2024-04-02"
 dateVerbose="April 2, 2024 on Zoom"
 link="https://www.spotlightpa.org/news/2024/03/pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event/"
-registration="https://zoom.us/webinar/register/WN_Bf7tlt4uRMennvO7txiNlw"
+
+[[blocks.entries]]
+hed="PA attorney general Candidates"
+dek="Attend a free panel on Pa.’s candidates for attorney general, other row offices"
+date="2024-04-11"
+dateVerbose="April 11, 2024 on Zoom"
+link="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-day-2024-auditor-general-attorney-treasurer-event/"
+registration="https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"
 
 [[blocks]]
 title = "Elections 101"
