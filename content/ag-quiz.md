@@ -33,7 +33,11 @@ credits = """
   >}}
 """
 promo = "{{<featured/election-promo>}}"
+aliases = [
+  "/pennsylvania-primary-election-2024-attorney-general-candidates-guide-quiz/",
+]
 +++
+
 <div class="pt-9"></div>
 Pennsylvania’s April 23 primary election is fast approaching, and Democrats and Republicans will soon have to decide which attorney general candidate they want to send to the general election.
 
@@ -43,7 +47,6 @@ This year, [five Democrats and two Republicans are running for Pennsylvania atto
 
 All five Democratic candidates have vowed to defend abortion access and the state’s election results while promising to take a holistic approach to addressing violent crime. The two Republican candidates — both veterans who have been prosecutors — are running on tough-on-crime platforms and say the state constitution doesn’t guarantee a right to abortion.
 
-To help highlight the limited differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz. 
+To help highlight the limited differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz.
 
 <div class="mb-8" data-tf-live="01HS8WCNQWYQDYRFMP14J0CVZ6"></div><script src="//embed.typeform.com/next/embed.js?typeform-welcome=0"></script>
-
