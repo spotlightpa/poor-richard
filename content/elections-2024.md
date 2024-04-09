@@ -155,11 +155,12 @@ image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
 
 [[blocks.entries]]
-hed="Trusting Elections"
-dek="Join Spotlight PA for a live Q&A on voting and misinformation with Al Schmidt, Pennsylvania’s top election official."
-date="2024-04-02"
-dateVerbose="April 2, 2024 on Zoom"
-link="https://www.spotlightpa.org/news/2024/03/pennsylvania-elections-2024-al-schmidt-election-security-disinformation-event/"
+hed="Broken Primaries"
+dek="How our electoral system is fueling partisanship"
+date="2024-04-19"
+dateVerbose="April 19, 2024 on Zoom"
+link="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-2024-closed-independents-unaffiliated-ballot-pennsylvania-troiano/"
+registration="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-2024-closed-independents-unaffiliated-ballot-pennsylvania-troiano/"
 
 [[blocks.entries]]
 hed="PA attorney general Candidates"
