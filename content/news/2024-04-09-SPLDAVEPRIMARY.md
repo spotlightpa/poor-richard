@@ -7,6 +7,7 @@ image = "cas/9886-egqh-x49t-wp62.png"
 image-credit = "Courtesy candidate website"
 image-description = "Republican attorney general candidate Dave Sunday"
 internal-id = "SPLDAVEPRIMARY"
+kicker = "Candidate 101"
 modal-exclude = false
 pinned = false
 published = 2024-04-09T13:39:40.088-04:00
@@ -14,6 +15,7 @@ slug = "dave-sunday-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
 title = "Who is Dave Sunday, a Republican running for Pa. attorney general?"
 title-tag = "Who is Dave Sunday, Republican for PA attorney general?"
+topics = ["Candidate 101"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
