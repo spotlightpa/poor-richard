@@ -1,7 +1,7 @@
 {{ with .block }}
   {{ $data := site.Data.candidates2024 }}
-  {{ $url := .actionLink }}
-  {{ $text := .actionText }}
+  {{ $url := .shareLink }}
+  {{ $text := .shareText }}
 
   <script>
     function candidates() {
@@ -60,7 +60,16 @@
       </div>
     </template>
   </div>
-  <div class="mx-auto my-11 flex max-w-2xl">
+  <div class="mx-auto my-8 max-w-2xl px-5 lg:px-0">
+    <a href="{{ .actionLink }}" class="text-lg underline underline-offset-2"
+      >{{ .actionText }}</a
+    >
+    <span class="text-lg">or</span>
+    <a href="{{ .restartLink }}" class="text-lg underline underline-offset-2"
+      >{{ .restartText }}</a
+    >
+  </div>
+  <div class="mx-auto my-8 flex max-w-2xl">
     <a
       class="my-2 mr-3 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
       href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
