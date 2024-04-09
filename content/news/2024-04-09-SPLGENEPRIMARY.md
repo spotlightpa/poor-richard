@@ -15,7 +15,6 @@ slug = "eugene-depasquale-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
 title = "Who is Eugene DePasquale, a Democrat running for Pa. attorney general?"
 title-tag = "Who is Eugene DePasquale, Democrat for PA attorney general?"
-topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
