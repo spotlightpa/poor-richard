@@ -7,6 +7,7 @@ image = "cas/f4yf-c6a5-7tnd-qdjj.png"
 image-credit = "Courtesy candidate website"
 image-description = "Democratic attorney general candidate Jack Stollsteimer"
 internal-id = "SPLJACKPRIMARY"
+kicker = "Candidate 101"
 modal-exclude = false
 pinned = false
 published = 2024-04-09T13:35:54.106-04:00
@@ -14,6 +15,7 @@ slug = "jack-stollsteimer-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
 title = "Who is Jack Stollsteimer, a Democrat running for Pa. attorney general?"
 title-tag = "Who is Jack Stollsteimer, Democrat for PA attorney general?"
+topics = ["Candidate 101"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>

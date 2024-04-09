@@ -7,6 +7,7 @@ image = "cas/0xpr-s0wv-txxe-pehb.jpeg"
 image-credit = "Courtesy candidate website"
 image-description = "Democratic attorney general candidate Jared Solomon"
 internal-id = "SPLSOLOPRIMARY"
+kicker = "Candidate 101"
 modal-exclude = false
 pinned = false
 published = 2024-04-09T13:32:15.027-04:00
@@ -14,6 +15,7 @@ slug = "jared-solomon-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
 title = "Who is Jared Solomon, a Democrat running for Pa. attorney general?"
 title-tag = "Who is Jared Solomon, Democrat for PA attorney general?"
+topics = ["Candidate 101"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
