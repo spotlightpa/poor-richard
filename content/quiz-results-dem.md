@@ -210,7 +210,7 @@ restartText = "Take the quiz again"
 actionLink = "/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/"
 actionText = "Meet the candidates"
 shareLink = "https://www.spotlightpa.org/elections-2024/candidate-quiz/"
-shareText = "I just found out which primary candidate for Pennsylvania attorney general best aligns with my values. Who's right for you? Use @SpotlightPA 's interactive candidate finder quiz: https://www.spotlightpa.org/elections-2024/candidate-quiz/"
+shareText = "I just found out which primary candidate for Pennsylvania attorney general best aligns with my values. Who's right for you? Use @SpotlightPA 's interactive candidate finder quiz: "
 
 +++
 
