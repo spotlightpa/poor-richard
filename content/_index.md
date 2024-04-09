@@ -12,8 +12,8 @@ newsletter-dek = "Get the top stories and best investigative journalism from acr
 
 
 callout-hed = "Latest From Our Daily Newsletter"
-signup-hed = "Start your day with PA Post"
-signup-dek = "Discover overlooked stories, unique investigations, and daily joy from across PA - in less than five minutes."
+signup-hed = "Start your morning with PA Post"
+signup-dek = "We help you understand what's happening across Pennsylvania - in less than five minutes a day."
 signup-cta = "Subscribe"
 signup-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
 signup-field = "newsletter/papost-hidden.html"
