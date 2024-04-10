@@ -65,7 +65,7 @@ Antes de incorporarse a la Cámara, trabajó como empleada y luego como abogada 
 
 &#34;Soy una construccionista estricta&#34;, <a href="https://paforciviljusticereform.org/wp-content/uploads/2023/04/PPCJR-Megan-Martin-Candidate-Questionnaire-2023.pdf">escribió en respuesta a una encuesta</a> de la Coalición de Pensilvania para la Reforma de la Justicia Civil, una organización sin fines de lucro que aboga principalmente por leyes más favorables para la industria sanitaria y otros intereses empresariales en casos civiles. &#34;Soy textualista y originalista; no creo que la Constitución sea un &#39;documento vivo&#39;&#34;.
 
-En una <a href="https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">encuesta</a> del, socialmente conservador, Instituto de la Familia de Pensilvania, dijo que estaba de acuerdo con la opinión mayoritaria de la Corte Suprema de EE.UU. que anuló <em>Roe contra Wade, </em>que califica a Roe de decisión &#34;atrozmente errónea&#34; y la compara con Plessy contra Ferguson, que afirmó la constitucionalidad de la segregación.
+En una <a href="https://web.archive.org/20230608121428/https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">encuesta</a> del, socialmente conservador, Instituto de la Familia de Pensilvania, dijo que estaba de acuerdo con la opinión mayoritaria de la Corte Suprema de EE.UU. que anuló <em>Roe contra Wade, </em>que califica a Roe de decisión &#34;atrozmente errónea&#34; y la compara con Plessy contra Ferguson, que afirmó la constitucionalidad de la segregación.
 
 La campaña de Martin no respondió a la solicitud de comentarios sobre la encuesta.
 

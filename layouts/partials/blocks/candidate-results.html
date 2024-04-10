@@ -1,0 +1,100 @@
+{{ with .block }}
+  {{ $data := site.Data.candidates2024 }}
+  {{ $url := .shareLink }}
+  {{ $text := .shareText }}
+
+  <script>
+    function candidates() {
+
+      let candidateData = {{$data}}
+
+      let candidateScores = Object.fromEntries(new URL(window.location).searchParams.entries())
+
+      let candidateObjs = candidateData.map(obj => ({
+        name: obj.name,
+        id: obj.id,
+        points: Number(candidateScores[obj.id]),
+        image: obj.image,
+        title: obj.title
+      }));
+
+      let rankedCandidates = candidateObjs.filter(pol => pol.points >= 0);
+
+      rankedCandidates.sort((b, a) => a.points - b.points);
+
+      return rankedCandidates;
+    }
+  </script>
+  <div x-data="candidates">
+    <template x-for="candidate in candidates">
+      <div
+        class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
+      >
+        <picture class="min-h-full w-7 bg-g-3 md:w-11">
+          <img
+            class="min-h-full min-w-full object-cover"
+            :alt="candidate.imageDescription"
+            :title="candidate.imageDescription"
+            :src="candidate.image"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="flex w-1/2 flex-col justify-end">
+          <h3
+            x-text="candidate.name"
+            class="text-xl font-bold leading-none"
+          ></h3>
+          <p
+            x-text="candidate.title"
+            class="mt-1 text-base leading-none text-g-8"
+          ></p>
+        </div>
+        <div class="flex h-6 w-full max-w-[248px]">
+          <template x-for="_ in new Array( candidate.points ).fill(null)">
+            <span
+              class="mr-1 block h-6 w-6 rounded-sm bg-election-green last:mr-0"
+            ></span>
+          </template>
+        </div>
+      </div>
+    </template>
+  </div>
+  <div class="mx-auto my-8 max-w-2xl px-5 lg:px-0">
+    <a href="{{ .actionLink }}" class="text-lg underline underline-offset-2"
+      >{{ .actionText }}</a
+    >
+    <span class="text-lg">or</span>
+    <a href="{{ .restartLink }}" class="text-lg underline underline-offset-2"
+      >{{ .restartText }}</a
+    >
+  </div>
+  <div class="mx-auto my-8 flex max-w-2xl">
+    <a
+      class="my-2 mr-3 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
+      href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
+      data-ga-category="facebook"
+      title="Share your donation on Facebook"
+    >
+      <span class=" mr-3 h-6 w-6 fill-white">
+        <svg viewBox="0 0 1 1">
+          {{ partial "helper/svg.html" "fb" }}
+        </svg>
+      </span>
+      <span> Share on Facebook </span>
+    </a>
+    <a
+      class="m-2 flex items-center rounded bg-blue-4 px-5 py-2 font-black tracking-wider text-white shadow"
+      href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ $url }}&tw_p=tweetbutton"
+      data-ga-category="twitter"
+      title="Tweet about your donation"
+    >
+      <span class=" mr-3 h-6 w-6 fill-white">
+        <svg viewBox="0 0 1 1">
+          {{ partial "helper/svg.html" "twitter" }}
+        </svg>
+      </span>
+      <span> Share on Twitter </span>
+    </a>
+  </div>
+{{ end }}

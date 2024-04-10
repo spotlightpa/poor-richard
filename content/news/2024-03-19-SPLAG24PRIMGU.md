@@ -15,11 +15,13 @@ series = ["Voting Guides 2024"]
 slug = "pennsylvania-election-2024-attorney-general-primary-candidates"
 suppress-date = false
 title = "Pa. election 2024: A complete guide to the primary candidates for attorney general"
-title-tag = "Election 2024: PA attorney general candidate guide"
+title-tag = "Election 2024: A guide to the PA attorney general candidates"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+<a href="https://www.spotlightpa.org/news/2024/03/elecciones-pensilvania-2024-fiscal-general-candidatos-primarias/"><em>Leer en español</em></a><em><br/></em>
 
 HARRISBURG — Pennsylvania voters will elect a new attorney general this November, but Democrats and Republicans first must pick their candidates this spring.
 
@@ -76,6 +78,8 @@ The Commonwealth Attorneys Act prescribes the office’s <a href="https://www.at
 The official <a href="https://www.attorneygeneral.gov/the-office/#:~:text=protect%20life%2C%20property%2C%20and%20constitutional%20and%20consumer%20rights%2C%20so%20as%20to%20ensure%20safety%20and%20freedom%20for%20those%20living%20in%20and%20visiting%20the%20Commonwealth">mission</a> of the office is to protect “life, property, and constitutional and consumer rights, so as to ensure safety and freedom for those living in and visiting the Commonwealth.”
 
 The attorney general also <a href="https://penncapital-star.com/criminal-justice/fetterman-shapiro-say-they-both-believe-in-second-chances-pardons-board-votes-tell-two-different-stories/">sits</a> on the Board of Pardons and <a href="https://www.oca.pa.gov/">appoints</a> the state’s consumer advocate.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Cp1Fb3QtHrY?si=CwcJtIK_Z9scrx-p&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Elected attorneys general often bring their own prosecutorial brand to the office’s work, based on their backgrounds and particular legal areas of interest. The attorney general’s job has also served as a stepping stone for running for higher office in Pennsylvania, including the governorship.
 

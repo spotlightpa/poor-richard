@@ -1,0 +1,45 @@
+{{ $answer := .Get "answer" }}
+{{ $name := .Get "name" }}
+{{ $party := .Get "party" }}
+{{ $image := .Get "image" }}
+
+
+<li
+  class="mx-auto my-2 flex w-full flex-wrap items-center justify-stretch gap-3 rounded-lg px-2 py-2 odd:bg-g-2"
+>
+  <picture class="min-h-full w-7 bg-g-3 md:w-11">
+    <img
+      class="min-h-full min-w-full rounded object-cover"
+      :alt="candidate.imageDescription"
+      :title="candidate.imageDescription"
+      src="{{ $image }}"
+      loading="lazy"
+    />
+  </picture>
+
+  <div class="flex w-full flex-1 flex-col justify-end">
+    <h3 class="text-lg font-bold leading-none">{{ $name }}</h3>
+    <p class="mt-1 text-base leading-none text-g-8">{{ $party }}</p>
+  </div>
+  {{ with $answer }}
+    <div
+      class="
+      {{ if ( eq $answer "Yes") }}
+        bg-election-green border-election-green-darker text-g-1 border-2
+      {{ else }}
+        bg-yellow border-yellow-5 text-yellow-9 border-2
+      {{ end }} flex w-20 justify-center rounded px-5 py-1 text-base font-bold
+      uppercase
+    "
+    >
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{ with .Inner }}
+    <p class="w-full border-t-2 border-g-3 pt-1 text-lg italic text-g-8">
+      {{ . }}
+    </p>
+  {{ end }}
+
+</li>

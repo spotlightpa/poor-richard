@@ -34,6 +34,10 @@
           </div>
         {{ end }}
 
+        {{ range site.Data.counties }}
+          {{ .name }}
+        {{ end }}
+
 
         <svg
           class="mr-1 inline-block h-full w-full"
@@ -74,7 +78,7 @@
       {{ end }}
     </div>
 
-    {{ with $data }}
+    {{ with $partnerCounties }}
       <div class="m-auto w-full justify-center md:p-4 lg:pt-10 xl:px-0">
         <header
           class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
@@ -110,6 +114,7 @@
                 {{ range $partnerCounties }}
                   <option value="{{ . }}">{{ . }} County</option>
                 {{ end }}
+                <option value="Regional/At-large">Regional/At-large</option>
               </select>
               <span
                 class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
@@ -161,7 +166,7 @@
                     {{ end }}
                   </h4>
                   {{ with .City }}
-                    <p>{{ . }}, PA</p>
+                    <p>{{ . }}</p>
                   {{ end }}
                 </li>
               {{ end }}

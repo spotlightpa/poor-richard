@@ -1,0 +1,51 @@
+[
+  {
+    "id": "kbradfordgrey",
+    "name": "Keir Bradford-Grey",
+    "title": "former Philadelphia chief public defender",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDUtNGc3ZS1tczd2LmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "edepasquale",
+    "name": "Eugene DePasquale",
+    "title": "former Pennsylvania auditor general",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDEtbXk4bi00ZWI0LmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "jkhan",
+    "name": "Joe Khan",
+    "title": "former Bucks County solicitor",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDQtbTdrZC0wMGZ5LmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "jsolomon",
+    "name": "Jared Solomon",
+    "title": "state representative",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDIteTdtZS1lZWUxLmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "jstollsteimer",
+    "name": "Jack Stollsteimer",
+    "title": "Delaware County district attorney",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDEtOWp0ay1nZDF5LmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "dsunday",
+    "name": "David Sunday",
+    "title": "York County district attorney",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDAtZnA0ai13eHlhLmpwZWc=.webp",
+    "party": "rep"
+  },
+  {
+    "id": "cwilliams",
+    "name": "Craig Williams",
+    "title": "state rep and former federal prosecutor",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxc3otcHZzNS1iNzF2LmpwZWc=.webp",
+    "party": "rep"
+  }
+]

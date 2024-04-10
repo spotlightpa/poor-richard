@@ -19,6 +19,14 @@
       <path id="Fill-3" fill="#066186" d="M22 18.6h-2.5l-1.9-.1.1 1.7V23h-2.5v-2.7l.1-1.7-2.2.1H11v-2.4h2.1l2.2.1-.1-1.8V12h2.5v2.5l-.1 1.8 1.9-.1H22v2.4zm8.4 8.9c-1.4.6-3 .9-4.8.9-.6 0-1.1-.1-1.6-.2v-1.7c.4 0 .9.1 1.3.1 1 0 1.9-.2 2.8-.6.8-.4 1.5-1 2-1.7s.7-1.5.7-2.4c0-1.1-.3-1.8-.8-2.3-.5-.5-1.3-.7-2.3-.7-.5 0-1 .1-1.6.2-.6.1-1.1.3-1.5.4l-.7-.5 1.1-8.6h7.4l.2-.4h.4C30.2 4.1 24.3 0 17.3 0 7.8 0 0 7.8 0 17.5S7.8 35 17.3 35c6.3 0 11.8-3.4 14.9-8.5-.5.4-1.1.7-1.8 1z"/>
       <path id="Fill-6" fill="#066186" d="M34.1 13.2h-6.4l-.9 4.4c1.2-.6 2.4-.9 3.6-.9 1.6 0 2.8.4 3.7 1.2.4.4.7.8.9 1.3.1-.6.1-1.1.1-1.7 0-1.8-.3-3.6-.8-5.2l-.2.9z"/>
     </g>
+    <g id="partners-9">
+  <circle cx="21" cy="21" r="19" style="fill:#fff;stroke:#fff;stroke-width:4px"/>
+  <path d="m30 30.1-.9-1.7c3.4-.9 6.9-5.6 6.9-10.1s-.1-5.8-2.7-5.8-2.5.9-2.5 4.1.9 3.3 2.6 3.3 1.1-.1 1.5-.3l.5 1.1c-.4.7-1.5 1.7-3.7 1.7s-4.8-2.2-4.8-5.1 2.6-6.4 6.8-6.4 3.1.6 4.2 1.5C34.8 6.3 28.4 2 21 2 10.5 2 2 10.5 2 21s8.5 19 19 19 19-8.5 19-19v-1.6c-.9 5.5-5.4 10-9.9 10.8Zm-6.1-8.6h-4.2c0-.1.1 2.1.1 2.1v2.2h-3v-4.4c.1 0-1.7.1-1.7.1h-2.4v-3h4.2c0 .1-.1-2.1-.1-2.1v-2.5h3v4.6c-.1 0 1.7-.1 1.7-.1h2.4v3Z" style="fill:#0b506f;fill-rule:evenodd;stroke-width:0"/>
+    </g>
+    <g id="partners-11">
+	<circle cx="23" cy="23" r="21.6" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-width="4" clip-rule="evenodd"/>
+  <path d="M32 31.9v-1.8l3.3-.3V18.5c-.3.1-.9.2-1.7.4-.8.2-1.4.3-1.9.3l-.3-2.2c1.1-.2 2.2-.6 3.3-1.2 1.2-.6 2.1-1.1 2.8-1.7l2.6.3v15.4l3.1.3v.6c.9-2.4 1.4-5 1.4-7.7 0-11.9-9.7-21.6-21.6-21.6S1.4 11.1 1.4 23 11.1 44.6 23 44.6c8.8 0 16.3-5.2 19.7-12.7H32zm-15.6-7.6h-2.9l-2.2-.1.1 2.1v3.3h-3v-3.3l.1-2.1-2.6.1H3.3v-2.9h2.5l2.6.1-.1-2.2v-3.1h3v3.1l-.1 2.2 2.2-.1h2.9v2.9zm13.5 7.6H18.7v-1.8l3.3-.3V18.5c-.3.1-.9.2-1.7.4-.8.2-1.4.3-1.9.3l-.3-2.2c1.1-.2 2.2-.6 3.3-1.2 1.2-.6 2.1-1.1 2.8-1.7l2.6.3v15.4l3.1.3v1.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#0b506f"/>
+    </g>
     <g id="partners-12">
       <circle cx="23" cy="23" r="21.6" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-width="4" clip-rule="evenodd"/>
       <path id="Fill-3" fill="#0b506f" fill-rule="evenodd" d="M28.2 31.9H16.9v-1.8l3.3-.3V18.4c-.3.1-.9.2-1.7.4-.8.2-1.4.3-1.9.3l-.3-2.2c1.1-.2 2.2-.6 3.4-1.2 1.2-.6 2.1-1.1 2.8-1.7l2.6.3v15.4l3.1.3v1.9zm-12.9-7.6h-3l-2.2-.1.1 2.1v3.3h-3v-3.3l.1-2.1-2.6.1H2.2v-3h2.5l2.6.1-.1-2.2v-3.1h3v3.1l-.1 2.2 2.2-.1h3v3zm15 7.6-.7-1.7c2.6-1.6 4.7-3.2 6.3-5 1.6-1.8 2.4-3.5 2.4-5.2 0-.9-.3-1.5-.8-2-.6-.5-1.3-.8-2.3-.8-.6 0-1.2.1-1.7.3-.5.2-.9.4-1.3.6-.3.2-.7.5-1.2.9l-1.2-1.7c.4-.5.9-1 1.6-1.5.7-.5 1.6-.9 2.5-1.3 1-.3 1.9-.5 2.9-.5 1.4 0 2.6.2 3.6.7 1 .5 1.7 1.1 2.1 1.9.5.8.7 1.6.7 2.6 0 1.8-.8 3.5-2.5 5.3s-3.9 3.4-6.6 4.9l7.9-.8 1.1-2.4 1.2.3c.2-1.1.3-2.3.3-3.4C44.6 11 35 1.4 23 1.4S1.4 11 1.4 23 11 44.6 23 44.6c8.8 0 16.3-5.2 19.7-12.7H30.3z" clip-rule="evenodd"/>
@@ -94,7 +102,7 @@
   </defs>   
 
   <g id="partners">
-    <use xlink:href="#partners-12" transform="translate(61.1 341.335)" />
+    <use xlink:href="#partners-9" transform="translate(61.1 341.335)" />
     <use id="Schuylkill-partners" xlink:href="#partners-2" transform="translate(601.143 318.14)"/>
     <use id="Lycoming-partners" xlink:href="#partners-2" transform="translate(530.103 194.189)"/>
     <use id="Dauphin-partners" transform="translate(567.999 393.525)" xlink:href="#partners-2"/>
@@ -105,11 +113,14 @@
     <use id="Lehigh-partners-2" transform="translate(766.418 320.314)" xlink:href="#partners-2"/>
     <use id="Bucks-partners-2" transform="translate(852.68 405.123)" xlink:href="#partners-4"/>
     <use id="Lebanon-partners" transform="translate(612.74 370.33)" xlink:href="#partners-3"/>
-    <use id="Philadelphia-partners" transform="translate(812.81 444.99)" xlink:href="#partners-5"/>
-    <use id="Erie-partners" transform="translate(61.1 8.625)" xlink:href="#partners-5"/>
+    <use id="Philadelphia-partners" transform="translate(812.81 444.99)" xlink:href="#partners-11"/>
+    <use id="Erie-partners" transform="translate(61.1 8.625)" xlink:href="#partners-9"/>
     <use id="Center--3" transform="translate(398.173 287.695)" xlink:href="#partners-3"/>
-    <use id="Warren-partners" xlink:href="#partners-1" x="198.829" y="92.708"/>
-    <use id="Crawford-partners" x="65.449" y="123.877" xlink:href="#partners-1"/>
+    <use id="Warren-partners" xlink:href="#partners-4" x="198.829" y="92.708"/>
+    <use id="Crawford-partners" x="65.449" y="120.877" xlink:href="#partners-1"/>
+    <use id="Crawford-partners-2" x="125.449" y="126.877" xlink:href="#partners-1"/>
+    <use id="Cumberland-partners-2" transform="translate(557.999 413.525)" xlink:href="#partners-1"/>
+    <use id="Cumberland-partners" x="518.418" y="428.877" xlink:href="#partners-1"/>
     <use id="mckean-partners" x="268.418" y="123.877" xlink:href="#partners-1"/>
     <use id="Elk-partners" x="279.291" y="172.443" xlink:href="#partners-1"/>
     <use id="Elk-partners-2" x="305.387" y="170.268" xlink:href="#partners-1"/>
@@ -123,6 +134,7 @@
     <use id="Butler-partners" x="100.244" y="282.621" xlink:href="#partners-1"/>
     <use id="Butler-partners-2" x="67.623" y="312.341" xlink:href="#partners-1"/>
     <use id="Beaver-partners" x="26.305" y="314.515" xlink:href="#partners-1"/>
+    <use id="Indiana-partners" x="216.305" y="330.515" xlink:href="#partners-1"/>
     <use id="Washington-partners" x="42.252" y="415.271" xlink:href="#partners-1"/>
     <use id="Washington-partners-2" x="98.794" y="426.144" xlink:href="#partners-1"/>
     <use id="Fayette-partners" x="124.165" y="476.884" xlink:href="#partners-1"/>
@@ -138,7 +150,8 @@
     <use id="Lancaster-partners" x="651.16" y="450.789" xlink:href="#partners-1"/>
     <use id="Northumberland-partners-2" x="619.841" y="299.293" xlink:href="#partners-1"/>
     <use id="Carbon-partners" x="738.872" y="289.145" xlink:href="#partners-1"/>
-    <use id="Montgomery-partners" x="793.963" y="411.646" xlink:href="#partners-1"/>
+    <use id="Montgomery-partners" x="806.963" y="406.646" xlink:href="#partners-4"/>
+    <use id="Montgomery-partners-3" x="800.963" y="433.646" xlink:href="#partners-1"/>
     <use id="Bucks-partners" x="830.933" y="391.35" xlink:href="#partners-1"/>
     <use id="Lehigh-partners" x="800.487" y="337.711" xlink:href="#partners-1"/>
     <use id="Northampton-partners" x="816.435" y="315.965" xlink:href="#partners-1"/>

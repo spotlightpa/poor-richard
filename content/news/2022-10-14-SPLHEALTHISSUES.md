@@ -14,6 +14,7 @@ kicker = "Elections"
 linktitle = "Where governor candidates Mastriano, Shapiro stand on the opioid epidemic, medical marijuana, and other health issues"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-14T05:00:15-04:00
 series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-opioid-medicaid-abortion-health-issues"
@@ -120,7 +121,7 @@ In the state Senate, Mastriano proposed creating a mandatory-minimum sentence of
 
 Mastriano has also sponsored legislation that he says would help local officials respond to a spike in overdoses by using a mapping system. The bill would require first responders to report overdose incidents within 72 hours.
 
-Mastriano has called for other changes. At a Capitol rally in June, Mastriano handed the microphone over to speakers who called for more support of faith-based recovery programs, <a href="https://www.pennlive.com/news/2022/06/doug-mastriano-touts-three-part-plan-to-fight-opioid-abuse-in-capitol-appearance.html">PennLive reported.</a> Mastriano’s campaign website also promises that <a href="https://www.doug4gov.com/the_plan">“he’ll hold Pennsylvania’s elected officials accountable for cracking down on the fentanyl being snuck across our southern border.”</a>
+Mastriano has called for other changes. At a Capitol rally in June, Mastriano handed the microphone over to speakers who called for more support of faith-based recovery programs, <a href="https://www.pennlive.com/news/2022/06/doug-mastriano-touts-three-part-plan-to-fight-opioid-abuse-in-capitol-appearance.html">PennLive reported.</a> Mastriano’s campaign website also promises that <a href="https://web.archive.org/20230103171716/https://www.doug4gov.com/the_plan">“he’ll hold Pennsylvania’s elected officials accountable for cracking down on the fentanyl being snuck across our southern border.”</a>
 
 ## Abortion
 

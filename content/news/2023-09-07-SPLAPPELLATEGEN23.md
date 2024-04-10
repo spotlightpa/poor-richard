@@ -76,7 +76,7 @@ Before joining the chamber, she served as a staffer and then an attorney for for
 
 “I am a strict constructionist,” she <a href="https://paforciviljusticereform.org/wp-content/uploads/2023/04/PPCJR-Megan-Martin-Candidate-Questionnaire-2023.pdf">wrote in response to a survey</a> by the Pennsylvania Coalition for Civil Justice Reform, a nonprofit that primarily advocates for friendlier laws for the health care industry and other business interests in civil cases. “I am a textualist and an originalist; I do not believe the constitution is a ‘living document.’”
 
-In a <a href="https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">survey</a> by the socially conservative Pennsylvania Family Institute, she said she agreed with the U.S. Supreme Court majority opinion that overturned <em>Roe v. Wade</em>, which calls Roe an “egregiously wrong” decision and compares it to Plessy v. Ferguson, which affirmed the constitutionality of segregation.
+In a <a href="https://web.archive.org/20230608121428/https://www.pafamilyvoter.com/judge/judge-of-the-commonwealth-court/martin-megan/">survey</a> by the socially conservative Pennsylvania Family Institute, she said she agreed with the U.S. Supreme Court majority opinion that overturned <em>Roe v. Wade</em>, which calls Roe an “egregiously wrong” decision and compares it to Plessy v. Ferguson, which affirmed the constitutionality of segregation.
 
 Martin’s campaign did not respond to a request for comment on the survey.
 

@@ -13,6 +13,7 @@ internal-id = "SPLSPANVET"
 kicker = "Español"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-04T12:19:04.458-04:00
 slug = "pa-eleccion-2022-mastriano-shapiro-fetterman-oz-candidatos-investigacion-guia"
 suppress-date = false
@@ -69,7 +70,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Josh Shapiro (D), <a href="https://joshshapiro.org/">Sitio we</a>b | <a href="https://www.facebook.com/JoshShapiroPA/">Facebook</a>
 
-- Doug Mastriano (R), <a href="https://www.doug4gov.com/">Sitio web</a> | <a href="https://www.facebook.com/Fight4pa">Facebook</a>
+- Doug Mastriano (R), <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">Sitio web</a> | <a href="https://www.facebook.com/Fight4pa">Facebook</a>
 
 - Christina Digiulio (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/PKforPA">Facebook</a>
 

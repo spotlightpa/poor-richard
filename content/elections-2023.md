@@ -151,14 +151,6 @@ id = "events"
 title = "Spotlight PA voter event series"
 image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
-
-[[blocks.entries]]
-hed="Court Primer"
-dek="Spotlight PA held a live event about the candidates running for state Supreme Court and more, and what these elections will mean for you."
-date="2023-10-12"
-dateVerbose="Oct. 12, 2023 on Zoom"
-link="https://www.spotlightpa.org/news/2023/09/pennsylvania-election-2023-supreme-commonwealth-superior-event/"
-
 [[blocks.entries]]
 hed="Voter Ready"
 dek="Learn about your voting rights and ask your remaining questions ahead of Election Day. Registration coming soon."

@@ -13,6 +13,7 @@ kicker = "Elections"
 linktitle = "Your complete guide to the candidates for governor"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-12T05:00:00-04:00
 series = ["Voting Guides 2022"]
 slug = "pa-election-2022-mastriano-shapiro-governor-race-complete-guide"
@@ -65,7 +66,7 @@ Five gubernatorial candidates will be on the Nov. 8 ballot, alongside their part
 
 <div id="spl-mastriano"></div>
 
-### <a href="https://www.doug4gov.com/">Doug Mastriano</a>, Republican
+### <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">Doug Mastriano</a>, Republican
 
 The retired Army colonel from Franklin County has spent the majority of his career in the military, becoming an elected official in 2019 when he joined the state Senate.
 

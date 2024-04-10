@@ -13,6 +13,7 @@ kicker = "Penn State"
 modal-exclude = false
 no-index = false
 og-title = "Hundreds of Penn State faculty question commitment to racial justice"
+pinned = false
 published = 2022-11-11T11:38:00-05:00
 slug = "penn-state-university-psu-racial-justice-proud-boys-protest"
 suppress-date = false
@@ -40,7 +41,7 @@ In an email to Spotlight PA, Lisa Powers, senior director of university public r
 
 ## Proud Boys Protest
 
-On Oct. 24, a student group hosted two far-right activists — one with connections to the Proud Boys, a violent extremist group — for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event <a href="https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
+On Oct. 24, a student group hosted two far-right activists — one with connections to the Proud Boys, a violent extremist group — for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event <a href="https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="https://web.archive.org/20220930191154/http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
 
 That evening, <a href="https://www.centredaily.com/news/local/education/penn-state/article267845797.html">protesters gathered outside the campus building where the event was scheduled</a>, and police did not immediately intervene when individuals in the crowd sprayed a chemical irritant at protesters, according to videos shared online. Officers from local police departments, as well as Pennsylvania State Police on horseback, were on hand to help control the crowd. Penn State then <a href="https://www.psu.edu/news/story/threat-violence-causes-university-police-cancel-tonights-event">canceled the event</a> just before it was scheduled to begin due to “the threat of escalating violence.”
 
