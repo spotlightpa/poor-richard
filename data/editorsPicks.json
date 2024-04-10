@@ -15,7 +15,9 @@
     "content/news/2024-04-10-SPL24OPEN.md"
   ],
   "subfeatures": [
-    "content/news/2024-04-09-SPLSCHMIDTQA.md"
+    "content/news/2024-04-09-SPLSCHMIDTQA.md",
+    "content/news/2024-04-01-SPLPRI24FULLGU.md",
+    "content/elections.md"
   ],
   "topSlots": [
     "content/news/2024-04-09-spl_opioids_defense.md",
