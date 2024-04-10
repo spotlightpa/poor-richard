@@ -13,6 +13,7 @@ internal-id = "SPLMAILCOUNT"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-11-03T10:08:59.234-04:00
 slug = "pa-election-2022-mail-ballot-requests-data-counting-delays"
 suppress-date = false
@@ -80,6 +81,6 @@ Despite these claims, the Pennsylvania Republican Party told voters in an <a hre
 
 However, false narratives about fraudulent mail ballots might have already affected GOP voters’ willingness to use them. Voters registered as Republicans accounted for just 21% of the total mail ballot requests this election cycle. In 2020, that number was nearly 30%.
 
-During the primary, just <a href="https://www.electionreturns.pa.gov/Home/SummaryResults?ElectionID=94&ElectionType=P&IsActive=0">4%</a> of Mastriano voters cast their vote by mail, whereas over <a href="https://www.electionreturns.pa.gov/Home/SummaryResults?ElectionID=94&ElectionType=P&IsActive=0">40%</a> of voters who backed Democratic gubernatorial nominee Josh Shapiro did.
+During the primary, just <a href="https://web.archive.org/20221107164808/https://www.electionreturns.pa.gov/Home/SummaryResults?ElectionID=94&ElectionType=P&IsActive=0">4%</a> of Mastriano voters cast their vote by mail, whereas over <a href="https://web.archive.org/20221107164808/https://www.electionreturns.pa.gov/Home/SummaryResults?ElectionID=94&ElectionType=P&IsActive=0">40%</a> of voters who backed Democratic gubernatorial nominee Josh Shapiro did.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
