@@ -11,6 +11,7 @@ internal-budget = "18 local Pa. candidates who spread election misinformation ar
 internal-id = "SPLCOUWIN"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-05-26T16:30:00-04:00
 slug = "pa-election-deniers-voter-fraud-county-commissioners-general-election"
 suppress-date = false
@@ -50,7 +51,7 @@ Bradford County Commissioner Doug McLinko has repeatedly boosted Trump’s false
 
 “I got some good news,” he <a href="https://www.npr.org/transcripts/1115211891">told a crowd last spring</a> while trying to mobilize an army of poll watchers alongside Trump ally Cleta Mitchell. “Donald Trump did not lose Pennsylvania. He did not lose Pennsylvania.”
 
-Trump <a href="https://www.electionreturns.pa.gov/General/SummaryResults?ElectionID=83&ElectionType=G&IsActive=0">did in fact lose</a> Pennsylvania.
+Trump <a href="https://web.archive.org/20230210064729/https://www.electionreturns.pa.gov/General/SummaryResults?ElectionID=83&ElectionType=G&IsActive=0">did in fact lose</a> Pennsylvania.
 
 Marian Schneider, senior voting rights policy counsel at the ACLU of Pennsylvania, said she’s encouraged that only 18 such candidates won, and believes some of those aren’t assured of victory in November, particularly in counties such as Lancaster, where <a href="https://lancasteronline.com/news/local/could-lancaster-county-one-day-vote-democrat-here-is-what-recent-election-data-show/article_6f51326e-32fd-11ea-97be-73bc808d8337.html">voter demographics have shifted</a>.
 
