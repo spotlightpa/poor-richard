@@ -80,7 +80,7 @@ In <a href="https://www.legis.state.pa.us/cfdocs/legis/CMS/ArchiveDetails.cfm?Se
 
 Experts in the performance of transgender athletes don’t dispute the advantages that people who have gone through male puberty experience, but said focusing on those details oversimplifies the issue.
 
-Pre-puberty, boys and girls have similar athletic abilities. <a href="https://www.lboro.ac.uk/schools/sport-exercise-health-sciences/postgraduate-research/doctoral-researchers/joanna-harper/">Joanna Harper</a> — a transgender runner, a doctoral student at Loughborough University in the United Kingdom, and a leading researcher in transgender athletic performance — called the idea of keeping transgender girls out of girls’ sports before puberty “ridiculous” in an interview with Spotlight PA.
+Pre-puberty, boys and girls have similar athletic abilities. <a href="https://web.archive.org/20220614095831/https://www.lboro.ac.uk/schools/sport-exercise-health-sciences/postgraduate-research/doctoral-researchers/joanna-harper/">Joanna Harper</a> — a transgender runner, a doctoral student at Loughborough University in the United Kingdom, and a leading researcher in transgender athletic performance — called the idea of keeping transgender girls out of girls’ sports before puberty “ridiculous” in an interview with Spotlight PA.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Spotlight%20PA%20is%20investigating%20the%20treatment%20of%20LGBTQ%20people%20across%20the%20state.%20%3Cb%3ESee%20something%20we%20should%20be%20aware%20of%3F%3C%2Fb%3E%20Let%20us%20know."></div>
 
