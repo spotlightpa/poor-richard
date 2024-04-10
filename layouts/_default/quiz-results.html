@@ -71,6 +71,13 @@
         }}
       </div>
     {{ end }}
+
+    {{ partial "tw/donate-slim" (dict
+      "donateHed" "Did this tool help you? Support Spotlight PA's nonprofit, nonpartisan journalism."
+      "donateCta" "Donate"
+      "donateUrl" "/donate" )
+    }}
+
     {{ with .Page.RenderString (.Param "answer-key") }}
       <div
         x-data="{ active: 1 }"
