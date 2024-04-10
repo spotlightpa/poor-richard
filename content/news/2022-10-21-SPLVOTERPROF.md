@@ -12,6 +12,7 @@ internal-id = "SPLVOTERPROF"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-21T05:00:41-04:00
 slug = "pa-election-day-2022-mastriano-shapiro-fetterman-oz-voter-profiles"
 suppress-date = false
@@ -301,9 +302,9 @@ And if she were younger, she says she would march with people rallying for the r
 
 John Churnetski lives in one of the state’s most-watched voting hotspots: Luzerne County.
 
-Once a Democratic stronghold, in 2016 the county was among a handful that made headlines when its largely white, working-class voting base turned out in <a href="https://www.electionreturns.pa.gov/General/CountyResults?countyName=Luzerne&amp;ElectionID=54&amp;ElectionType=G&amp;IsActive=0">large numbers for Trump</a>, and helped propel him to a narrow victory in Pennsylvania.
+Once a Democratic stronghold, in 2016 the county was among a handful that made headlines when its largely white, working-class voting base turned out in <a href="https://web.archive.org/20220629125529/https://www.electionreturns.pa.gov/General/CountyResults?countyName=Luzerne&ElectionID=54&ElectionType=G&IsActive=0">large numbers for Trump</a>, and helped propel him to a narrow victory in Pennsylvania.
 
-The county again <a href="https://www.electionreturns.pa.gov/General/CountyResults?countyName=Luzerne&ElectionID=83&ElectionType=G&IsActive=0">voted overwhelmingly</a> for Trump in 2020 despite the edge Democrats hold in registrations there. Republican officials hope that the trend will continue into this year’s midterm elections, while Democrats seek to capture back some of those disaffected voters.
+The county again <a href="https://web.archive.org/20221021130058/https://www.electionreturns.pa.gov/General/CountyResults?countyName=Luzerne&ElectionID=83&ElectionType=G&IsActive=0">voted overwhelmingly</a> for Trump in 2020 despite the edge Democrats hold in registrations there. Republican officials hope that the trend will continue into this year’s midterm elections, while Democrats seek to capture back some of those disaffected voters.
 
 Churnetski, 81, a registered Democrat who owned an architecture and engineering company in Wilkes-Barre for 40 years, says he will not be choosing any of the Republicans at the top of the ballot.
 
