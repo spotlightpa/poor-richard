@@ -108,7 +108,9 @@
               >
                 <option disabled selected>Select County…</option>
                 {{ range $partnerCounties }}
-                  <option value="{{ . }}">{{ . }} County</option>
+                  {{ if ne . "Regional/At-large" }}
+                    <option value="{{ . }}">{{ . }} County</option>
+                  {{ end }}
                 {{ end }}
                 <option value="Regional/At-large">Regional/At-large</option>
               </select>
