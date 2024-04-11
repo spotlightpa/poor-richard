@@ -2,7 +2,7 @@
 internal-id = "ELEXCENTER2024"
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
-image-credit = "Amanda Berg / For Spotlight PA"
+image-credit = "Illustration by Leise Hook / For Spotlight PA"
 kicker = "Elections"
 title = "Pennsylvania Primary Election 2024"
 title-tag = "Official Pennsylvania Election Center 2024"
@@ -54,6 +54,11 @@ credits = """
     name="Elizabeth Estrada"
     role="Democracy Editor"
     email="eestrada@spotlightpa.org"
+>}}
+{{<featured/credit
+    eyebrow="Illustration"
+    name="Leise Hook"
+    role="For Spotlight PA"
 >}}
 {{<featured/credit
     eyebrow="Layout"
