@@ -1,8 +1,8 @@
 +++
 internal-id = "ELEXCENTER2024"
-image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
+image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
-image-credit = "Amanda Berg / For Spotlight PA"
+image-credit = "Illustration by Leise Hook / For Spotlight PA"
 kicker = "Elections"
 title = "Pennsylvania Primary Election 2024"
 title-tag = "Official Pennsylvania Election Center 2024"
@@ -19,6 +19,14 @@ aliases = [
 layout = "elections"
 type = "elections"
 guide = "series/voting-guides-2024/_index.md"
+takeover = """
+{{<featured/main-takeover
+  title = "Pennsylvania Primary Election 2024"
+  dek = "Candidates for president, U.S. House and Senate, row offices, and more will appear on the April 23 ballot."
+  image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
+>}}
+
+{{</featured/main-takeover>}}"""
 credits = """
 {{<featured/credit
     eyebrow="Reporting"
@@ -46,6 +54,11 @@ credits = """
     name="Elizabeth Estrada"
     role="Democracy Editor"
     email="eestrada@spotlightpa.org"
+>}}
+{{<featured/credit
+    eyebrow="Illustration"
+    name="Leise Hook"
+    role="For Spotlight PA"
 >}}
 {{<featured/credit
     eyebrow="Layout"
