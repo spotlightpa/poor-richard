@@ -1,4 +1,5 @@
 {{ $id := .id | default "promo" }}
+{{ $wrapperClass := .wrapper | default "md:flex md:py-16 lg:py-24"}}
 {{ $hed := .hed }}
 {{ $sub := .subhed }}
 {{ $dek := .dek }}
@@ -12,7 +13,7 @@
 
 
 <section id="{{ $id }}" class="bg-g-2 p-5 font-sans">
-  <div class="mx-auto w-full max-w-screen-lg justify-between md:flex">
+  <div class="mx-auto w-full max-w-screen-lg justify-between md:flex {{ $wrapperClass }}">
     {{ $srcset := partial "helper/build-srcset" (dict
       "filename" $filename
       "sizes" $sizes
