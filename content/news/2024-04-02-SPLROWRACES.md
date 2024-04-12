@@ -1,7 +1,7 @@
 +++
-blurb = "Spotlight PA held a free panel on Pa.’s 2024 primary candidates for treasurer, attorney general, and auditor general."
+blurb = "Spotlight PA held a free event on Pa.’s 2024 primary candidates for treasurer, attorney general, and auditor general."
 byline = "Spotlight PA Staff"
-description = "Watch a live guide to Pennsylvania’s 2024 primary candidates for treasurer, attorney general, and auditor general."
+description = "Watch a video guide to Pennsylvania’s 2024 primary candidates for treasurer, attorney general, and auditor general."
 event-date = 2024-04-11T18:00:00-04:00
 event-title = "ROW RACES"
 event-url = "https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"
