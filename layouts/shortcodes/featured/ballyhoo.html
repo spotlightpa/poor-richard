@@ -1,9 +1,21 @@
+{{ $id := .Get "id" | default "promo" }}
+{{ $hed := .Get "hed" }}
+{{ $sub := .Get "subhed" }}
+{{ $dek := .Get "dek" }}
+{{ $cta := .Get "cta" }}
+{{ $link := .Get "link" }}
+{{ $image := .Get "image" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 110)
+  (dict "width" 1072 "height" 512)
+}}
+
 {{ partial "tw/ballyhoo.html" (dict
-  "id" "candidate-quiz"
-  "image" "2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
-  "hed" "Which Pa. attorney general candidate do you align with?"
-  "dek" "To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
-  "cta" "Take the quiz →"
-  "link" "/elections-2024/candidate-quiz/"
+  "id" $id
+  "image" $image
+  "hed" $hed
+  "dek" $dek
+  "cta" $cta
+  "link" $link
   )
 }}
