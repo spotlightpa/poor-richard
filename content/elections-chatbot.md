@@ -11,6 +11,8 @@ url = "/elections/chatbot"
 layout = "page-landing"
 type = "elections"
 no-index = true
+promo = "{{<featured/election-promo>}}"
+
 +++
 ## Have questions about the 2024 election? Ask our AI-powered assistant. Get trusted answers and resources to learn more.
 
