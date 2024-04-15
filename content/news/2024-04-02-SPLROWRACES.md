@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA April 11 for a free panel on Pa.’s 2024 primary candidates for treasurer, attorney general, and auditor general."
+blurb = "Spotlight PA held a free event on Pa.’s 2024 primary candidates for treasurer, attorney general, and auditor general."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA April 11 for a live guide to Pennsylvania’s 2024 primary candidates for treasurer, attorney general, and auditor general."
+description = "Watch a video guide to Pennsylvania’s 2024 primary candidates for treasurer, attorney general, and auditor general."
 event-date = 2024-04-11T18:00:00-04:00
 event-title = "ROW RACES"
 event-url = "https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"
@@ -15,7 +15,7 @@ pinned = false
 published = 2024-04-02T13:42:19.651-04:00
 slug = "pennsylvania-primary-election-day-2024-auditor-general-attorney-treasurer-event"
 suppress-date = false
-title = "Attend a free panel on Pa.’s candidates for attorney general, other row offices"
+title = "WATCH: A free panel on Pa.’s candidates for attorney general, other row offices"
 title-tag = "Learn about PA’s 2024 races for attorney general, more"
 topics = ["Events"]
 +++
@@ -26,11 +26,9 @@ On April 23, Pennsylvania Democrats and Republicans will decide their parties’
 
 The winners will receive their party’s nomination and face off in the Nov. 5 general election.
 
-To help you cast an informed vote, Spotlight PA’s Capitol reporter Stephen Caruso is hosting a panel on the candidates’ backgrounds and their plans for the offices.
+To help you cast an informed vote, Spotlight PA’s Capitol reporter Stephen Caruso hosted an event on the candidates’ backgrounds and their plans for the offices. Watch it below.
 
-On Thursday, April 11 from 6-7 p.m. ET, join us on Zoom for a live guide to Pennsylvania’s row office candidates, and how their terms would impact you.
-
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/933728619?h=e200193e43&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <strong>» <em>Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
