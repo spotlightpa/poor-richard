@@ -14,7 +14,7 @@ no-index = true
 +++
 ## Have questions about the 2024 election? Ask our AI-powered assistant. Get trusted answers and resources to learn more.
 
-{{<width-screen>}}
+{{<dewey-embed>}}
 <script type="text/javascript">
     (function (e, o) {
       var deweyConfig = {
@@ -26,4 +26,4 @@ no-index = true
       var n = window.dewey = window.dewey || {}; if (n.invoked) { console.error("Dewey snippet included twice."); return } n.invoked = true; n.load = function (e, t) { return new Promise(((r, d) => { var i = o.createElement("script"); i.type = "text/javascript"; i.async = true; i.onload = r; i.onerror = d; i.src = `https://app.askdewey.co/dewey.js/v1/${e}/dewey.min.js`; n._loadOptions = t; o.head.appendChild(i) })) }; n.SNIPPET_VERSION = "0.0.2"; async function t() { try { await n.load(deweyConfig.key, deweyConfig.options); n.start() } catch (e) { console.error("Failed to load Dewey script:", e) } } t()
     })(window, document);
   </script>
-{{</width-screen>}}
+{{</dewey-embed>}}
