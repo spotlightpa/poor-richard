@@ -1,7 +1,7 @@
 {
   "edCallout": [
-    "content/news/2024-03-25-SPL_67_counties.md",
-    "content/news/2024-03-25-SPLRESPROJ.md"
+    "content/ag-quiz.md",
+    "content/news/2024-03-25-SPL_67_counties.md"
   ],
   "edImpact": [
     "content/news/2023-03-09-SPLCOMPETENCY.md",
@@ -12,17 +12,17 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-04-10-SPLUNDATAPP.md"
+    "content/news/2024-04-15-SPLMAIL101.md"
   ],
   "subfeatures": [
-    "content/news/2024-04-02-SPLROWRACES.md",
-    "content/news/2024-04-02-SPL3PARTYREQ.md",
-    "content/news/2024-04-01-SPLPRI24FULLGU.md"
+    "content/news/2024-03-29-SPLPOLLWATCH101.md",
+    "content/news/2024-03-07-SPLEPOLL101.md",
+    "content/news/2024-02-27-SPLVOTMAC101.md"
   ],
   "topSlots": [
-    "content/news/2024-04-10-SPL24OPEN.md",
-    "content/news/2024-04-09-spl_opioids_defense.md",
-    "content/ag-quiz.md"
+    "content/statecollege/2024-04-12-SPLMISDATA.md",
+    "content/news/2024-04-11-SPLLEGVET.md",
+    "content/news/2024-04-10-SPL24OPEN.md"
   ],
   "topper": []
 }

@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-04-06-SPLPSUTRUST.md"
+    "content/statecollege/2024-04-12-SPLMISDATA.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-12-06-SPLPSUSUN.md",
-    "content/statecollege/2024-02-16-SPLPSUFIELD.md",
-    "content/statecollege/2024-02-15-SPLPATERNO.md"
+    "content/statecollege/2023-07-19-SPLPSUACCOUNT.md",
+    "content/statecollege/2023-07-19-SPLPSUSURVEY.md",
+    "content/statecollege/2023-12-14-SPLPSUINSIGHT.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-04-06-SPLPSUTRUST.md",
     "content/statecollege/2024-04-05-SPLSTORMWATER.md",
-    "content/statecollege/2024-04-04-SPLMELETTERS.md",
-    "content/statecollege/2024-03-20-SPLPERFUND.md"
+    "content/statecollege/2024-04-04-SPLMELETTERS.md"
   ],
   "topper": []
 }
