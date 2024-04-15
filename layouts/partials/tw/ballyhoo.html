@@ -1,5 +1,7 @@
 {{ $id := .id | default "promo" }}
-{{ $wrapperClass := .wrapper | default "md:flex md:py-16 lg:py-24"}}
+{{ $wrapperClass := .wrapperClass | default "" }}
+{{ $hedSize := .hedText | default "text-xl md:text-2xl lg:text-3xl" }}
+{{ $dekSize := .dekText | default "text-base" }}
 {{ $hed := .hed }}
 {{ $sub := .subhed }}
 {{ $dek := .dek }}
@@ -12,8 +14,10 @@
 }}
 
 
-<section id="{{ $id }}" class="bg-g-2 p-5 font-sans">
-  <div class="mx-auto w-full max-w-screen-lg justify-between md:flex {{ $wrapperClass }}">
+<section id="{{ $id }}" class="bg-g-2 p-5 font-sans md:flex ">
+  <div
+    class="{{ $wrapperClass }} mx-auto w-full max-w-screen-lg justify-between md:flex"
+  >
     {{ $srcset := partial "helper/build-srcset" (dict
       "filename" $filename
       "sizes" $sizes
@@ -27,7 +31,7 @@
       </figure>
     {{ end }}
     <div class="md:w-1/2">
-      <h2 class="mt-2 text-2xl font-bold md:mt-0 md:text-3xl lg:text-4xl">
+      <h2 class="{{ $hedSize }} mt-2 font-bold md:mt-0">
         {{ $hed }}
       </h2>
       {{ with $sub }}
@@ -37,7 +41,7 @@
           {{ $sub }}
         </h3>
       {{ end }}
-      <p class="mt-2 max-w-lg text-lg">{{ $dek }}</p>
+      <p class="{{ $dekSize }} mt-2 max-w-lg">{{ $dek }}</p>
       <a href="{{ $link }}" class="btn-signup mt-10 block max-w-lg"
         >{{ $cta }}</a
       >
