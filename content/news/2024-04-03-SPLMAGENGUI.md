@@ -19,7 +19,9 @@ title-tag = "PA primary election 2024: A guide to mail voting"
 topics = ["Elections"]
 +++
 
-<a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em><strong><em></em></strong>
+<a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
+
+<a href="https://www.spotlightpa.org/news/2024/04/pensilvania-primarias-elecciones-2024-votar-correo-como-llenar/"><em>Leer en español</em></a><em></em>
 
 HARRISBURG — On April 23, Democrats and Republicans in Pennsylvania will vote for their parties’ candidates for president, U.S. House and Senate, state row offices (attorney general, auditor general, and treasurer), and the legislature.
 
