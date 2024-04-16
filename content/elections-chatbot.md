@@ -8,14 +8,12 @@ dek = "Candidates for Pennsylvania Supreme Court, Commonwealth Court, and more w
 linktitle = "Spotlight PA’s 2024 Election Assistant"
 blurb = "Have questions about the 2024 election in PA? Ask our AI-powered assistant and get a trusted answer based on Spotlight PA’s election coverage."
 url = "/elections/chatbot"
-layout = "page-landing"
+layout = "page-chatbot"
 type = "elections"
 no-index = true
 promo = "{{<featured/election-promo>}}"
 
 +++
-## Have questions about the 2024 election? Ask our AI-powered assistant. Get trusted answers and resources to learn more.
-
 {{<dewey-embed>}}
 <script type="text/javascript">
     (function (e, o) {
