@@ -126,3 +126,8 @@ Cache-Control = "public, max-age=31536000, immutable" # 1 year
 for = "/admin/*"
 [headers.values]
 X-Frame-Options = "DENY"
+
+[[headers]]
+for = "/elections/chatbot/*"
+[headers.values]
+Basic-Auth = "2024primary:harrisburg"
