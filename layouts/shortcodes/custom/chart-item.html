@@ -1,0 +1,48 @@
+{{ $percent := .Get "percent" | default 0 }}
+{{ $inner := .Get "body" }}
+{{ $number := .Get "number" }}
+
+<style>.w-{{ $percent }} {width: {{ $percent }}%;}.max-w-{{ $percent }} {max-width: {{ $percent }}%;}</style>
+<figure
+  x-data="{ onScreen: false }"
+  x-intersect.half="onScreen = true"
+  class="mx-auto flex max-w-5xl flex-col justify-center py-6"
+>
+  <div class="relative my-3 h-9 overflow-hidden rounded bg-yellow-7 md:h-12">
+    <span
+      x-show="onScreen"
+      class="max-w-{{ $percent }} block h-9 bg-yellow md:h-12"
+      x-transition:enter="transition-all ease-out duration-1000 delay-700"
+      x-transition:enter-start="w-0"
+      x-transition:enter-end="w-{{ $percent }}"
+    ></span>
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="absolute bottom-0 left-0 top-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-white md:text-4xl"
+    ></p>
+    <span
+      class="absolute bottom-0 right-0 top-0 block w-full bg-contain bg-repeat"
+      style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABiCAYAAAAx6tGTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjFJREFUeNrsmt1twjAQgJOIAbJBs0GzAWaClvdKDV0AmKBlAsgChUp9h04A3SAjMEIGqNTeVRfJtWJix04i1DvJ4i/2ffadfXcy4fvT6DsYUKJgYGEABmAABmCAwQFGDn1PymfRB0AJLYe2eXj9KuUfIKrG8LKANocWmw4YWoTjAtpEVawKgRyhpT59wEg5Cj0zoT5eAHDAqYlyBWJKfZ0BdjDg2da5qM/OB0DusFNyV4CyzeyVVShdAAoPZ01x1Uex8KBDOK0AHCz3bTWb9DUxwdxh9nMfAKLNKlAf4QMAZQsDphbK8dmtz1jwG2Bg4MxAeUbByCgihi2KU8wD3vC1OqRgjISW+9F254T/vjoeWS79p3S8ljV+Ujnq2NQUTQAYTj/A1gdDyEPNVryDltn6AM525hIJFZCEtqUwAcCEc9mFvUHXmhJXrRN2ppzyAxx7owMoulSuQBR1AKsed99KBSgtPN3HKhyqbRx5TL1apWpcHTMAAzAAAzAAAzBAJBUVfUssA6SQMou+NJOuVDXBvg8Iqpb2lwoTTBaXkDjuPCvG8mytmjvS2CbpYPJJna/xNrzeOyPaMUf6iJcZJzYBAzAAAzAAAzAAAzCAT4AbwzS77r1Obm0ATK5qx5r3dfkj1gPCBiCGTi8NCWkmfZU1lHULXQHcdHGJFwt//rSkK7GopJvJ9w408+dAuSeyAagGLiRbN9n7TC2gCjh2rQu09rvgnAmfAwzAAAxgKj8CDADNKa/9LPhwswAAAABJRU5ErkJggg==')"
+    ></span>
+  </div>
+  <figcaption class="w-full">
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="font-sans text-lg text-white"
+    >
+      {{ $inner | safeHTML }}
+    </p>
+  </figcaption>
+</figure>
