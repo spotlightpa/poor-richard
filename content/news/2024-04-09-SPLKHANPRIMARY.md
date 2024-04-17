@@ -26,9 +26,17 @@ Joe Khan is one of five Democrats running for his party’s nomination and will 
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Khan below:
+Learn more about Khan below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Joe Khan?
 
@@ -45,6 +53,8 @@ He was later appointed Bucks County solicitor and served in the role for three y
 As solicitor, he also <a href="https://levittownnow.com/2020/11/23/trump-campaign-appeals-bucks-county-judges-decision/">defended</a> the county against an attempt by former President Donald Trump’s legal team to <a href="https://whyy.org/articles/yet-another-trump-legal-challenge-to-bidens-victory-fails-this-time-in-bucks-county/">throw out</a> more than 2,000 absentee ballots that contained what a judge later called “minor irregularities” like unsealed privacy envelopes.
 
 Khan is currently a partner at Curtin &amp; Heefner.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 <strong>Top issues</strong>: On his <a href="https://www.joekhan.com/justice">candidate website</a>, Khan says he wants to tackle corporate and political corruption. If elected, he says he would focus on public safety, the housing crisis, enforcing the state’s <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Environmental Rights Amendment</a>, and maintaining abortion access.
 
