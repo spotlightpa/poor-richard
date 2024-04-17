@@ -26,9 +26,17 @@ Craig Williams is one of two Republicans running for his party’s nomination an
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Williams below:
+Learn more about Williams below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Craig Williams?
 
@@ -45,6 +53,8 @@ He later was a lawyer for Peco Energy Co., a Philadelphia-area electric and gas 
 Williams was elected to the Pennsylvania House in 2020 to represent District 160, which includes parts of Chester and Delaware Counties. While voters in this area have consistently supported Republicans for the state House, they have also picked Democrats at the top of the ticket.
 
 If the 2020 presidential election had been held under the current state House map, President Joe Biden would have won District 160 by almost seven percentage points. Williams has pointed to his success in the area as a reason Republicans should support him.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 In his first term, Williams introduced a bill that later became <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2412">a law</a> allowing the state National Guard to provide cybersecurity support and training to entities including state and local governments.
 
