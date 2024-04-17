@@ -12,16 +12,17 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/statecollege/2024-04-16-SPLAGDOLLARS.md"
+    "content/news/2024-04-17-SPLAGCF24CY2.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-04-05-SPLSTORMWATER.md",
-    "content/statecollege/2024-03-27-SPLRURALBIRTH.md",
-    "content/statecollege/2024-03-08-SPLAGBUDGET.md"
+    "content/news/2024-04-11-SPLLEGVET.md",
+    "content/news/2024-04-01-SPLPRI24FULLGU.md",
+    "content/news/2024-03-19-SPLAG24PRIMGU.md",
+    "content/news/2024-03-12-SPLAUD24PRIGU.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-04-16-SPLAGDOLLARS.md",
     "content/news/2024-04-15-SPLMAIL101.md",
-    "content/news/2024-04-11-SPLLEGVET.md",
     "content/statecollege/2024-04-12-SPLMISDATA.md"
   ],
   "topper": []
