@@ -56,6 +56,7 @@ Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates
   link="/elections-2024/candidate-quiz/"
 >}}
 
+
 ### Skip to section
 
 - <a href="#spl-heading-1">What does the attorney general do?</a>
