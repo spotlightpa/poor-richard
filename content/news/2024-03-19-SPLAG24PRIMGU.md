@@ -47,6 +47,16 @@ Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates
 
 <em>This story may be updated with additional information as the election approaches.</em>
 
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
+
 ### Skip to section
 
 - <a href="#spl-heading-1">What does the attorney general do?</a>
@@ -68,16 +78,6 @@ Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates
   - <a href="#spl-heading-9">Dave Sunday</a>
 
   - <a href="#spl-heading-10">Craig Williams</a>
-
-{{<featured/ballyhoo
-  id="candidate-quiz"
-  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
-  hed="Which Pa. attorney general candidate do you align with?"
-  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
-  cta="Take the quiz →"
-  link="/elections-2024/candidate-quiz/"
->}}
-<br>
 
 <h2 id="spl-heading-1">What does the attorney general do?</h2>
 
