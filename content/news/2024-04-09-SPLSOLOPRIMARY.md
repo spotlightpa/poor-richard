@@ -26,9 +26,17 @@ Jared Solomon is one of five Democrats running for his party’s nomination and 
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Solomon below:
+Learn more about Solomon below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Jared Solomon?
 
@@ -45,6 +53,8 @@ As a state representative, Solomon has championed good-government bills targetin
 He did find some rare success, however, passing bills in the then-Republican-controlled General Assembly in his first few terms in office. That includes <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2021&amp;sind=0&amp;body=H&amp;type=B&amp;bn=581">a 2022 law</a> that allows local governments to offer tax incentives to spur the creation of affordable housing, and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2017&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1231">a 2017 law</a> creating a voluntary state veterans registry to connect them with public services.
 
 At the request of Democratic leadership, Solomon <a href="https://www.pahousegop.com/News/31561/Latest-News/Speaker-Names-Impeachment-Managers-for-Krasner-Trial">served</a> as minority party impeachment manager for Philadelphia District Attorney Larry Krasner in 2022. Managers are charged with presenting the case for removal to the state Senate. However, no trial was held due to procedural issues and court challenges; Solomon himself <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1283">voted against</a> the effort and <a href="https://x.com/JaredGSolomon/status/1684248783465377794?s=20">called it</a> “a naked attempt to remove an elected official just because they disagree.”
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 <strong>Top issues: </strong>As a state representative, Solomon said his <a href="https://www.jaredsolomon.com/issues">top issues</a> are reducing crime and gun violence, promoting public schools, and defending abortion access. As attorney general, he said he would prioritize these issues on a larger scale and focus on protecting voter rights, promoting communities, and fighting corruption.
 

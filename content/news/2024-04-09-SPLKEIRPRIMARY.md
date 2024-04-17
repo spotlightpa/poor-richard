@@ -27,9 +27,17 @@ Keir Bradford-Grey is one of five Democrats running for her party’s nomination
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Bradford-Grey below:
+Learn more about Bradford-Grey below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Keir Bradford-Grey?
 
@@ -46,6 +54,8 @@ During a March debate, Bradford-Grey argued that her work representing “people
 She’s now a partner at Montgomery McCracken Walker &amp; Rhoads, focusing on “<a href="https://www.mmwr.com/attorney/keir-bradford-grey/">white collar and government investigations and criminal defense</a>.”
 
 If elected, Bradford-Grey would be the first Black attorney general in the state’s history. She would also be the state’s first attorney general with a <a href="https://apnews.com/article/pennsylvania-attorney-general-keir-bradford-grey-a0f1bdb0109e367b2d9d7d9e0a67038c">primarily public defender background</a>, according to the Associated Press.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 <strong>Top issues: </strong>If elected, Bradford-Grey said on her campaign website she will make “it a priority to restore the sense of security and safety to everyday working people.” She told Chestnut Hill Local that a big part of being attorney general is “<a href="https://www.chestnuthilllocal.com/stories/local-lawyer-is-one-of-five-candidates-for-state-ag,31005">consumer protection and financial protection.</a>”
 

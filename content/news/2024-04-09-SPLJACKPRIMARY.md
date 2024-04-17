@@ -26,9 +26,17 @@ Jack Stollsteimer is one of five Democrats running for his party’s nomination 
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Stollsteimer below:
+Learn more about Stollsteimer below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Jack Stollsteimer?
 
@@ -49,6 +57,8 @@ During a recent debate, Stollsteimer highlighted his role in <a href="https://wh
 He also cited a reduction in gun violence in the city of Chester. In October 2023, his office <a href="https://6abc.com/chester-homicides-delaware-county-gun-violence-pennsylvania-crime-da-jack-stollsteimer/13859574/">said</a> that there had been a 68% reduction in gun homicides since 2020 when it <a href="https://6abc.com/chester-homicides-delaware-county-gun-violence-pennsylvania-crime-da-jack-stollsteimer/13859574/">launched</a> a safe neighborhoods program.
 
 &#34;We want to work hand in glove with the community to solve the problems they know we can do together, and we can only solve them together,&#34; Stollsteimer said at a news conference when announcing the statistic.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 In 2022, Stollsteimer’s job performance was criticized by members of the Delaware County Coalition to Abolish Death by Incarceration, which had been an <a href="https://whyy.org/articles/hit-the-road-jack-protesters-call-for-accountability-from-delco-da-stollsteimer/">ally during his first campaign</a>, according to WHYY. Among the issues cited by the group was the office’s response to the death of 8-year-old Fanta Bility, who was shot by police as they fired into a crowd outside a high school football game.
 

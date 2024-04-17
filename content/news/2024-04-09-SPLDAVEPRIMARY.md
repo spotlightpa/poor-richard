@@ -26,9 +26,17 @@ Dave Sunday is one of two Republicans running for his party’s nomination and w
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about Sunday below:
+Learn more about Sunday below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Dave Sunday?
 
@@ -45,6 +53,8 @@ Sunday was <a href="https://www.ydr.com/story/news/politics/elections/2017/11/07
 The county has seen a <a href="https://www.ydr.com/story/news/local/2023/09/19/york-county-pa-s-most-influential-people-for-2023-politics/70610274007/">reduction</a> in crime and its prison population during his tenure, according to the York Daily Record. The city of York itself experienced <a href="https://www.ydr.com/story/news/2024/03/12/york-pas-battle-against-gun-violence-is-working-officials-say-gvi/72932179007/">a 36% drop</a> in gun crime from 2022 to 2023, the news outlet reported.
 
 “Everyone is given the opportunity to change their life,” Sunday told the paper of the York County Group Violence Intervention initiative. “The reality is, if you don’t do that, you’re going to be arrested and be prosecuted to the fullest extent of the law.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 During the early months of the COVID-19 pandemic, Sunday <a href="https://www.yorkdispatch.com/story/news/crime/2020/05/09/york-county-da-wont-prosecute-nonessential-businesses-violating-shutdown-order-tells-police-not-cite/3102105001/">directed</a> local law enforcement not to issue citations to businesses that violated former Democratic Gov. Tom Wolf’s ongoing business closure order. He issued a <a href="https://www.ydr.com/story/news/local/2021/09/03/york-county-district-attorney-dave-sunday-will-not-prosecute-alleged-violations-mask-mandate-schools/5717124001/">similar mandate</a> not to prosecute citations related to Wolf’s 2021 order requiring masking in schools.
 

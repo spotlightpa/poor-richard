@@ -28,7 +28,17 @@ HARRISBURG — On April 23, Democrats and Republicans across Pennsylvania will d
 
 On the ballot are candidates for president, U.S. House and Senate, Pennsylvania’s three row offices (attorney general, auditor general, and treasurer), and state House and Senate. Across the state, depending on where you live, there might also be ballot questions.
 
-To help you prepare for the 2024 primary in Pennsylvania, we’ve answered some of your most frequently asked questions below:
+To help you prepare for the 2024 primary in Pennsylvania, we’ve answered some of your most frequently asked questions below.
+
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ### Primary Election Day 2024 FAQ:
 

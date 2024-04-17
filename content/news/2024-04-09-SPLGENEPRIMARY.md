@@ -26,9 +26,17 @@ Eugene DePasquale is one of five Democrats running for his party’s nomination 
 
 The attorney general represents the interests of the state and the public, and defends Pennsylvania’s laws in court. In recent years, the office has defended the results of the 2020 presidential election against numerous attempts to overturn them.
 
-Learn more about DePasquale below:
+Learn more about DePasquale below.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
 
 ## Who is Eugene DePasquale?
 
@@ -43,6 +51,8 @@ In the latter role, DePasquale said his office identified roughly $103 million �
 His two terms as auditor general were marked by the regular release of special reports focused on policy issues critics say were beyond <a href="https://www.pennlive.com/news/2019/07/deep-cut-made-to-pa-auditor-generals-budget-lawmakers-say-they-are-fed-up-with-him-using-his-office-for-his-political-agenda.html">the traditional scope of the office</a>. One report laid out <a href="https://whyy.org/articles/state-watchdog-releases-recommendations-for-reducing-gun-violence/">12 recommendations</a> for reducing gun violence deaths. Another estimated how much <a href="https://www.inquirer.com/philly/business/cannabis/legalizing-marijuana-pa-auditor-general-tax-revenues-20180719.html">revenue the commonwealth was missing</a> by not taxing marijuana.
 
 DePasquale is currently an adjunct <a href="https://www.polisci.pitt.edu/people/eugene-depasquale">professor</a> at the University of Pittsburgh.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 He has never worked as a prosecutor, defense lawyer, or trial lawyer, according to the Associated Press. In an interview with that news outlet, he said his experience as auditor general is “the <a href="https://apnews.com/article/depasquale-attorney-general-pennsylvania-fc4647cc22cad7a7d5462a50fb39579f">kind of leadership</a> that Pennsylvania needs as its next attorney general.”
 

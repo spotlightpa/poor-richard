@@ -56,7 +56,7 @@ Shapiro also wants to use $10.3 million for a <a href="https://www.spotlightpa.o
 
 Farmers previously shared mixed views on the proposed grant dollars, telling Spotlight PA that while they support state efforts to optimize their work, they’d like the state to also help them adjust to industry trends like “agritainment.”
 
-The Pennsylvania Association for Sustainable Agriculture supports the innovation funds, said Lindsey Shapiro, who works as the group’s Farm Bill campaign organizer. She’s also a vegetable farmer in Berks County.
+Pasa Sustainable Agriculture supports the innovation funds, said Lindsey Shapiro, who works as the group’s Farm Bill campaign organizer. She’s also a vegetable farmer in Berks County.
 
 State Rep. Jordan Harris (D., Philadelphia) and state Sen. Vincent Hughes (D., Philadelphia) said the proposed grant program would help increase productivity and cut the workload for farmers and other producers — efforts that would make Pennsylvania more competitive.
 
