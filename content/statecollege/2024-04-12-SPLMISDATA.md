@@ -31,7 +31,7 @@ In January and February, the Penn State ethics hotline received 117 reports, com
 
 Grove told Spotlight PA the increase in hotline reports stemmed from efforts to <a href="https://www.spotlightpa.org/newsletters/talkofthetown/nov-16-psu-redesigns-misconduct-reporting-website/">redesign the reporting process</a> and raise awareness about available resources, and did not necessarily reflect an increase in alleged misconduct at the university.
 
-According to <a href="https://universityethics.psu.edu/assets/uploads/documents/Web-PDF-and-Doc.pdf">data available on the office’s website</a>, the university’s compliance units received 344 reports of alleged misconduct, 259 of which were resolved. Nearly half of the reports related to bias or human resources issues. More than 70% of the total complaints related to the University Park campus.
+According to <a href="https://web.archive.org/20240405040437/https://universityethics.psu.edu/assets/uploads/documents/Web-PDF-and-Doc.pdf">data available on the office’s website</a>, the university’s compliance units received 344 reports of alleged misconduct, 259 of which were resolved. Nearly half of the reports related to bias or human resources issues. More than 70% of the total complaints related to the University Park campus.
 
 <iframe title="Most common reports of misconduct at Penn State" aria-label="Bar Chart" id="datawrapper-chart-8hdP8" src="https://datawrapper.dwcdn.net/8hdP8/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="650" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
@@ -40,7 +40,7 @@ Those data, according to Penn State, come from reports received through the ethi
 
 But it’s not complete.
 
-“It’s important to note that this data does not encompass all units, particularly those within Student Affairs, and may not include every investigation or report due to the diverse range of issues addressed and ongoing enhancements to reporting systems,” <a href="https://universityethics.psu.edu/assets/uploads/documents/Web-PDF-and-Doc.pdf">the university’s website says</a>.
+“It’s important to note that this data does not encompass all units, particularly those within Student Affairs, and may not include every investigation or report due to the diverse range of issues addressed and ongoing enhancements to reporting systems,” <a href="https://web.archive.org/20240405040437/https://universityethics.psu.edu/assets/uploads/documents/Web-PDF-and-Doc.pdf">the university’s website says</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
