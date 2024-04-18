@@ -106,8 +106,6 @@ In Northampton, Commini downplayed the misfiled documents, noting that was only 
 
 The checklists in Northampton’s boxes weren’t just misfiled. Large numbers of them were incomplete or inconsistent. More than 200 did not have the back filled out, which includes steps like removing mock ballots from the machine after testing. Some inspectors completed some questions that others skipped. And in some cases, the same inspector would fill out the same checklist differently for two precincts’ machines. None of the checklists had the line for supervisors’ initials filled out to indicate the inspector’s work had been checked.
 
-<em>Story continues below graphic.</em>
-
 <side-chain src="https://s3.amazonaws.com/chalkbeatgraphics/dailygraphics/vb-missing-documents-20240409/index.html"></side-chain>
 <script src="https://projects.chalkbeat.org/sidechain/loader.js"></script>
 
