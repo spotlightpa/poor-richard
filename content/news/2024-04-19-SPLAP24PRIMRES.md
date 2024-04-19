@@ -147,7 +147,7 @@ Learn more about <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-
 
 A: Votes will be counted throughout the evening on April 23 after polls close at 8 p.m. and released in batches for several hours. By state law, Pennsylvania counties cannot process mail ballots before Election Day, and many have different procedures for counting votes and in what order.
 
-Still, election experts expect unofficial results for most races <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-results-2024-when-to-expect/">will be available on election night</a>.
+Still, election experts expect unofficial results for most races will be available on election night.
 
 <h3 id="spl-heading-12">Q: How can I find the latest election results in Pennsylvania?</h3>
 
