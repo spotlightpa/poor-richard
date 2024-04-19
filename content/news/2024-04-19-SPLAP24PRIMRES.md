@@ -27,8 +27,6 @@ For complete coverage of the 2024 primary election, <a href="https://www.spotlig
 
 <em>Last updated April 19, 2024, at 2:15 p.m.</em>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
-
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
 On April 23, Democratic and Republican voters will <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-day-2024-voter-information-registration/">cast their ballots in the primary election</a>. They will determine which candidates will go on to run in the general election for president, Congress (U.S. House and Senate), row offices (attorney general, auditor general, and treasurer), and the Pennsylvania legislature.
@@ -142,6 +140,8 @@ Learn more about <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-
 <iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12364.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
 
 <h2 id="spl-heading-10">Frequently asked questions</h2>
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 <h3 id="spl-heading-11">Q: When will we know the final results of the primary election?</h3>
 
