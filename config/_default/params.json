@@ -9,11 +9,11 @@
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "Join Spotlight PA for a special event at 6 p.m. April 19 on how our partisan primaries are fueling the national political divide.",
+  "ad-featured-image-description": "Support Spotlight PA's unmatched election reporting.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01k1/dr0j/spotlight-pa-live-row-races-final-300-x-250-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01k2/7g2m/sunshine-week-2024-300-x-250-.png"
   ],
-  "ad-featured-link": "https://spotlightpa.fundjournalism.org/events/?campaign=701Ub000006mhonIAA",
+  "ad-featured-link": "/donate",
   "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
@@ -77,9 +77,11 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
+  "sidebar-sticky-description": "Support Spotlight PA's unmatched election reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
-  "sidebar-sticky-images": [],
+  "sidebar-sticky-images": [
+    "https://files.data.spotlightpa.org/uploads/01k2/7g2g/sunshine-week-2024-300-x-250-1-.png"
+  ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
@@ -110,19 +112,19 @@
   "takeover-hed": "Only 12 hours left to support Spotlight PA",
   "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
-  "topper-active": false,
-  "topper-bg-color": "#000000",
+  "topper-active": true,
+  "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01k0/33gv/sunshine-week-website-toppertracker-1-.svg"
+    "https://files.data.spotlightpa.org/uploads/01k2/7g2j/spring-campaign-topper-tracker-32-.svg"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#000000",
-  "topper-image-description": "If you missed our Sunshine Week member drive, you can still give now at spotlightpa.org/donate",
+  "topper-divider-color": "#004590",
+  "topper-image-description": "Support trusted, unbiased election reporting for Pennsylvania.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01k0/32kx/sunshine-week-website-toppertracker-1024-x-512-px-.svg"
+    "https://files.data.spotlightpa.org/uploads/01k2/7g2k/spring-campaign-2023-rectangles-19-.svg"
   ],
   "topper-mobile-width": 1024
 }
