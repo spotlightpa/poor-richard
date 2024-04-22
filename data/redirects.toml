@@ -45,3 +45,7 @@ to = "https://centredocumenters.org"
 [[redirects]]
 from = "/newsletters/centredocumenters/*"
 to = "https://centredocumenters.org"
+
+[[redirects]]
+from = "/centre"
+to = "https://centregives.org/organizations/273-spotlight-pa"
