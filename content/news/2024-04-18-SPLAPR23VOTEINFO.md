@@ -27,6 +27,16 @@ On Tuesday, April 23, voters across the commonwealth will determine which candid
 
 Before you submit your ballot, here’s a last-minute checklist of everything you’ll need to vote.
 
+{{<featured/ballyhoo
+  id="candidate-quiz"
+  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
+  hed="Which Pa. attorney general candidate do you align with?"
+  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
+  cta="Take the quiz →"
+  link="/elections-2024/candidate-quiz/"
+>}}
+<br>
+
 First, the basics:
 
 - Make sure you’re registered. You can check your voter registration status <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">on the Pennsylvania Department of State website</a>. Unfortunately, if you’re not already registered, it’s too late to vote in this election cycle.

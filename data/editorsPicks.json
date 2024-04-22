@@ -12,18 +12,19 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-04-18-SPLCOMPPRI24.md"
+    "content/news/2024-04-22-SPL24PRIMRESWHEN.md"
   ],
   "subfeatures": [
+    "content/news/2024-04-18-SPLAPR23VOTEINFO.md",
     "content/news/2024-04-11-SPLLEGVET.md",
-    "content/news/2024-02-19-SPLSENPRE24.md",
-    "content/news/2024-04-23-SPLAPR23ELECINFO.md",
-    "content/news/2024-02-28-SPLHO24PRE.md"
+    "content/news/2024-03-12-SPLAUD24PRIGU.md",
+    "content/news/2024-03-26-SPLTR24PRGU.md",
+    "content/news/2024-03-19-SPLAG24PRIMGU.md"
   ],
   "topSlots": [
-    "content/news/2024-04-23-SPLAPR23ELECINFO.md",
-    "content/news/2024-04-17-SPLAGCF24CY2.md",
-    "content/statecollege/2024-04-16-SPLAGDOLLARS.md"
+    "content/news/2024-04-18-SPLNORTHDOCS.md",
+    "content/news/2024-04-18-SPLCOMPPRI24.md",
+    "content/news/2024-04-18-SPLNEWSQUIZAPR1524.md"
   ],
   "topper": []
 }
