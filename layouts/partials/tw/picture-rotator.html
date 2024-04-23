@@ -3,7 +3,10 @@
   If you don't have separate mobile and desktop ads, use image-rotator.
 -->
 {{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+
 {{ $bgClass := cond (not .transparent) "bg-g-3" "" }}
+{{ $hasDesktop := .desktopImages | not | not }}
+{{ $desktopClasses := cond $hasDesktop "sm:aspect-[var(--desktopRatio)] sm:w-[var(--desktopWidth)]" "" }}
 
 
 <picture
@@ -15,7 +18,7 @@
     --mobileWidth: {{ .mobileWidth }}px;
   "
 >
-  {{ if .desktopImages }}
+  {{ if $hasDesktop }}
     <source
       {{ if eq (len .desktopImages) 1 }}
         srcset="{{ index .desktopImages 0 }}"
@@ -41,10 +44,9 @@
 
   <img
     class="
-      {{ $bgClass }}
-      aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)]
-      max-w-full object-cover
-      sm:aspect-[var(--desktopRatio)] sm:w-[var(--desktopWidth)]
+      {{ $bgClass }} {{ $desktopClasses }}
+      aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)] max-w-full
+      object-cover
     "
     src="{{ $magicPixel }}"
     {{ if .eager }}
