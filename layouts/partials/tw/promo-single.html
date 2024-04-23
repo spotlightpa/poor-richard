@@ -1,16 +1,13 @@
-{{ $alt := index . "description" }}
-{{ $link := index . "link" }}
+{{ $link := .link }}
 {{ $wrapperClass := index . "class" | default "flex justify-center no-js:hidden" }}
 
-{{ $images := index . "images" }}
-{{ $width := index . "width" }}
-{{ $height := index . "height" }}
-
 {{ $img := partial "tw/image-rotator.html" (dict
-  "images" $images
-  "width" $width
-  "height" $height
-  "description" $alt
+  "images" .images
+  "width" .width
+  "height" .height
+  "description" .description
+  "eager" .eager
+  "transparent" .transparent
   )
 }}
 
