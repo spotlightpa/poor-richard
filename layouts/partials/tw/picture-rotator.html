@@ -1,0 +1,51 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $bgClass := cond (not .transparent) "bg-g-3" "" }}
+
+
+<picture
+  class="contents"
+  style="
+    --desktopRatio: {{ .desktopWidth }} / {{ .desktopHeight }};
+    --mobileRatio: {{ .mobileWidth }} / {{ .mobileHeight }};
+    --desktopWidth: {{ .desktopWidth }}px;
+    --mobileWidth: {{ .mobileWidth }}px;
+  "
+>
+  <source
+    {{ if eq (len .desktopImages) 1 }}
+      srcset="{{ index .desktopImages 0 }}"
+    {{ else }}
+      x-data="imageRotator(JSON.parse($el.dataset.images))"
+      data-images="{{ .desktopImages | jsonify }}" :srcset="choice"
+    {{ end }}
+    media="(min-width: 640px)"
+    width="{{ .desktopWidth }}"
+    height="{{ .desktopHeight }}"
+  />
+  <source
+    {{ if eq (len .mobileImages) 1 }}
+      srcset="{{ index .mobileImages 0 }}"
+    {{ else }}
+      x-data="imageRotator(JSON.parse($el.dataset.images))"
+      data-images="{{ .mobileImages | jsonify }}" :srcset="choice"
+    {{ end }}
+    width="{{ .mobileWidth }}"
+    height="{{ .mobileHeight }}"
+  />
+
+  <img
+    class="
+      {{ $bgClass }}
+      aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)]
+      max-w-full object-cover
+      sm:aspect-[var(--desktopRatio)] sm:w-[var(--desktopWidth)]
+    "
+    src="{{ $magicPixel }}"
+    {{ if .eager }}
+      fetchpriority="high"
+    {{ else }}
+      loading="lazy"
+    {{ end }}
+    alt="{{ .description }}"
+  />
+</picture>

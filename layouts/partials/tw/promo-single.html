@@ -6,26 +6,24 @@
 {{ $width := index . "width" }}
 {{ $height := index . "height" }}
 
+{{ $img := partial "tw/image-rotator.html" (dict
+  "images" $images
+  "width" $width
+  "height" $height
+  "description" $alt
+  )
+}}
+
 {{ if $images }}
   <aside class="{{ $wrapperClass }}" data-ga-category="promo-image">
     {{ with $link }}
       <a href="{{ . }}">
-        {{- partial "tw/image-rotator.html" (dict
-          "images" $images
-          "width" $width
-          "height" $height
-          "description" $alt
-          )
-        -}}
+        {{- $img -}}
       </a>
     {{ else }}
-      {{- partial "tw/image-rotator.html" (dict
-        "images" $images
-        "width" $width
-        "height" $height
-        "description" $alt
-        )
-      -}}
+      <span>
+        {{- $img -}}
+      </span>
     {{ end }}
   </aside>
 {{ end }}
