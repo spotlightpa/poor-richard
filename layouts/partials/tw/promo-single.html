@@ -1,20 +1,21 @@
-{{ $link := .link }}
-{{ $wrapperClass := index . "class" | default "flex justify-center no-js:hidden" }}
+{{ if .images }}
+  {{ $img := partial "tw/image-rotator.html" (dict
+    "images" .images
+    "width" .width
+    "height" .height
+    "description" .description
+    "eager" .eager
+    "transparent" .transparent
+    )
+  }}
 
-{{ $img := partial "tw/image-rotator.html" (dict
-  "images" .images
-  "width" .width
-  "height" .height
-  "description" .description
-  "eager" .eager
-  "transparent" .transparent
-  )
-}}
 
-{{ if $images }}
-  <aside class="{{ $wrapperClass }}" data-ga-category="promo-image">
-    {{ with $link }}
-      <a href="{{ . }}">
+  <aside
+    class="{{ .class | default `flex justify-center` }}"
+    data-ga-category="promo-image"
+  >
+    {{ if .link }}
+      <a href="{{ .link }}">
         {{- $img -}}
       </a>
     {{ else }}
