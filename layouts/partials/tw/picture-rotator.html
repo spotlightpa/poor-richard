@@ -15,17 +15,19 @@
     --mobileWidth: {{ .mobileWidth }}px;
   "
 >
-  <source
-    {{ if eq (len .desktopImages) 1 }}
-      srcset="{{ index .desktopImages 0 }}"
-    {{ else }}
-      x-data="imageRotator(JSON.parse($el.dataset.images))"
-      data-images="{{ .desktopImages | jsonify }}" :srcset="choice"
-    {{ end }}
-    media="(min-width: 640px)"
-    width="{{ .desktopWidth }}"
-    height="{{ .desktopHeight }}"
-  />
+  {{ if .desktopImages }}
+    <source
+      {{ if eq (len .desktopImages) 1 }}
+        srcset="{{ index .desktopImages 0 }}"
+      {{ else }}
+        x-data="imageRotator(JSON.parse($el.dataset.images))"
+        data-images="{{ .desktopImages | jsonify }}" :srcset="choice"
+      {{ end }}
+      media="(min-width: 640px)"
+      width="{{ .desktopWidth }}"
+      height="{{ .desktopHeight }}"
+    />
+  {{ end }}
   <source
     {{ if eq (len .mobileImages) 1 }}
       srcset="{{ index .mobileImages 0 }}"
