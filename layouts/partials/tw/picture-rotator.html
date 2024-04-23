@@ -12,9 +12,12 @@
 <picture
   class="contents"
   style="
+  {{ if $hasDesktop }}
     --desktopRatio: {{ .desktopWidth }} / {{ .desktopHeight }};
-    --mobileRatio: {{ .mobileWidth }} / {{ .mobileHeight }};
+    {{/* force line break in Prettier */}}
     --desktopWidth: {{ .desktopWidth }}px;
+  {{ end }}
+    --mobileRatio: {{ .mobileWidth }} / {{ .mobileHeight }};
     --mobileWidth: {{ .mobileWidth }}px;
   "
 >
