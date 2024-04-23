@@ -11,8 +11,10 @@ internal-id = "SPLCHILDCAREXX"
 kicker = "Coronavirus"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2020-10-06T11:03:11-04:00
 slug = "pa-child-care-center-closures-coronavirus-federal-aid"
+suppress-date = false
 suppress-featured = false
 title = "Hundreds of Pa. child-care centers have closed, and some fear it will get worse"
 topics = ["Coronavirus"]
@@ -121,7 +123,7 @@ She thinks providers need ongoing government aid.
 
 “Or I think we’re going to lose more centers,” Creevey said. “Everyone was hoping and thinking that the additional costs and additional expenses and difficulties presented by COVID-19 would disappear in the fall, and that’s not happening.”
 
-Federal lawmakers are at odds over providing more aid, <a href="https://web.archive.org/web/20220122081347/https://www.politico.com/states/florida/story/2020/09/10/senate-democrats-block-republican-covid-19-relief-proposal-1316371">along with other coronavirus relief measures</a>. A proposal, which passed out of the U.S. House in July, to provide <a href="https://appropriations.house.gov/news/press-releases/house-passes-child-care-is-essential-act">$50 billion to stabilize the child-care industry</a> has stalled in the Republican-controlled Senate.
+Federal lawmakers are at odds over providing more aid, <a href="https://web.archive.org/web/20220122081347/https://www.politico.com/states/florida/story/2020/09/10/senate-democrats-block-republican-covid-19-relief-proposal-1316371">along with other coronavirus relief measures</a>. A proposal, which passed out of the U.S. House in July, to provide <a href="https://web.archive.org/20200805085622/https://appropriations.house.gov/news/press-releases/house-passes-child-care-is-essential-act">$50 billion to stabilize the child-care industry</a> has stalled in the Republican-controlled Senate.
 
 In Pennsylvania, as the governor announced his fall legislative priorities, Wolf said he wanted lawmakers to approve $250 million to help families who need child care for school-aged children because their schools have switched to blended or remote learning.
 
