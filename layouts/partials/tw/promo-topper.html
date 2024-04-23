@@ -32,16 +32,16 @@
   data-ga-category="topper"
   data-sf-campaign="701Dn000000YgojIAC"
 >
-  <p class="flex items-center justify-center">
+  <p class="flex items-center justify-center px-4">
     {{ if $link }}
       <a
-        class="mx-auto px-4 sm:max-w-full md:max-w-3xl lg:max-w-[960px]"
+        class="mx-auto sm:max-w-full md:max-w-3xl lg:max-w-[960px]"
         href="{{ $link }}"
       >
         {{- $picture -}}
       </a>
     {{ else }}
-      <span class="mx-auto px-4 sm:max-w-full md:max-w-3xl lg:max-w-[960px]">
+      <span class="mx-auto sm:max-w-full md:max-w-3xl lg:max-w-[960px]">
         {{- $picture -}}
       </span>
     {{ end }}
