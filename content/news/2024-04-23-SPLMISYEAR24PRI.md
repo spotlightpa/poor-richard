@@ -34,13 +34,13 @@ On the Friday before the election, Deputy Secretary for Elections Jonathan Marks
 
 “It is the Department’s view that, if the date written on the ballot can reasonably be interpreted to be ‘the day upon which \[the voter\] completed the declaration,’ the ballot should not be rejected as having an ‘incorrect’ date or being ‘undated,’” Marks wrote, citing a 2022 Pennsylvania Supreme Court case.
 
-But the department’s emailed advice does not carry the force of law, and counties are making different decisions about whether to count the ballots. Votebeat and Spotlight PA contacted eight counties and found that Philadelphia, Allegheny, and Delaware counties are counting the ballots, while York, Lycoming, Lancaster, and Snyder counties are rejecting them. Montgomery County said it would make a decision next week.
+But the department’s emailed advice does not carry the force of law, and counties are making different decisions about whether to count the ballots. Votebeat and Spotlight PA contacted eight counties and found that Philadelphia, Allegheny, and Delaware Counties are counting the ballots, while York, Lycoming, Lancaster, and Snyder Counties are rejecting them. Montgomery County said it would make a decision next week.
 
 It’s unclear exactly how many voters will be affected by rejections. Philadelphia said those figures would not be available until Thursday. In Snyder County, 10 of the 21 ballots rejected for dating issues were properly dated except for the last two digits of the year, Election Director Devin Rhoads said.
 
 In Allegheny County, home to Pittsburgh, spokesperson Abigail Gardner said ballots with dating errors were the majority of the county’s mail ballots at risk of rejection, and this specific dating error was an “overwhelming” majority of those. Gardner said that until Friday, Allegheny County had been marking these ballots as improperly dated but changed that determination after receiving Marks’ email.
 
-Lycoming County Election Director Forrest Lehman said his county will reject ballots that lack the final two digits. He added that such ballots make up a “significant” number of the ones his staff was rejecting, though he did not have exact figures.
+Lycoming County election director Forrest Lehman said his county will reject ballots that lack the final two digits. He added that such ballots make up a “significant” number of the ones his staff was rejecting, though he did not have exact figures.
 
 Reacting to the Department of State’s advice, Lehman said, “I don’t know what they’re basing it on or why they decided to say it at the last minute.”
 
