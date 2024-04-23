@@ -14,7 +14,7 @@ published = 2024-04-19T13:52:27.916-04:00
 slug = "pennsylvania-election-results-2024-primary"
 suppress-date = false
 title = "Latest results from the 2024 Pennsylvania primary election"
-title-tag = "2024 Pennsylvania primary election results"
+title-tag = "PA primary election results 2024"
 topics = ["Elections"]
 url = "/elections-2024/results/"
 +++
