@@ -12,16 +12,14 @@
 }}
 
 
-<section class="{{ $wrapperClass }}" data-ga-category="promo-image">
-  <p>
-    {{ if $link }}
-      <a href="{{ $link }}">
-        {{- $picture -}}
-      </a>
-    {{ else }}
-      <span>
-        {{- $picture -}}
-      </span>
-    {{ end }}
-  </p>
-</section>
+<aside class="{{ $wrapperClass }}" data-ga-category="promo-image">
+  {{ if $link }}
+    <a href="{{ $link }}">
+      {{- $picture -}}
+    </a>
+  {{ else }}
+    <span>
+      {{- $picture -}}
+    </span>
+  {{ end }}
+</aside>
