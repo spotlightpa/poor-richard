@@ -175,7 +175,7 @@
                 @click="isOpen = true"
                 :class="{'hidden': isOpen}"
               >
-                Subscribe
+                Subscribe for free
               </button>
             </div>
             <p
@@ -187,12 +187,12 @@
             </p>
           </header>
 
-          <div class="md:col-span-5 md:col-start-6">
+          <div class="md:col-span-6 md:col-start-5">
             <div
               class="flex-wrap justify-between align-bottom md:flex"
               :class="isOpen ? 'flex' : 'hidden md:flex'"
             >
-              <p class="relative mt-3 flex-[0_0_100%] sm:flex-[0_1_60%]">
+              <p class="relative mt-3 flex-1">
                 <label
                   class="flex-[0_0_100%] font-sans text-sm font-black"
                   for="{{ $idEmail }}"
@@ -207,16 +207,16 @@
                   required
                 />
                 <span
-                  class="pointer-events-none absolute inset-y-0 right-3 top-9 inline-flex h-4 text-g-4"
+                  class="pointer-events-none absolute inset-y-0 right-3 top-10 inline-flex h-4 text-g-4"
                 >
                   <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "email" }}
                   </svg>
                 </span>
               </p>
-              <div class="mt-2 flex-1 self-end sm:ml-5">
+              <div class="flex-0 mt-2 self-end sm:ml-5">
                 <button type="submit" class="btn-signup h-11 w-full">
-                  Subscribe
+                  Subscribe for free
                 </button>
               </div>
             </div>
