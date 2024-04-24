@@ -16,7 +16,7 @@ published = 2022-02-15T05:00:00-05:00
 slug = "pa-courts-discrimination-opioid-use-disorder"
 suppress-date = false
 title = "Justice Department finds Pa. courts discriminated against people with opioid use disorder"
-topics = ["Health"]
+topics = ["Health", "Federal Government"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

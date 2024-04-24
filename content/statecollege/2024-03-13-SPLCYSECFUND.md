@@ -15,7 +15,7 @@ slug = "pennsylvania-cybersecurity-shapiro-budget-federal-funding-local-governme
 suppress-date = false
 title = "Pa. local governments want long-term state money for cybersecurity as federal grant fills the gap"
 title-tag = "PA local governments want more cybersecurity funds"
-topics = ["Local Government"]
+topics = ["Local Government", "Federal Government"]
 +++
 
 <em>This story was produced by the </em><a href="https://www.spotlightpa.org/statecollege"><em>State College regional bureau of Spotlight PA</em></a><em>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. Sign up for our north-central Pa. newsletter, Talk of the Town, at </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>spotlightpa.org/newsletters/talkofthetown</em></a>.
