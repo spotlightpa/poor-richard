@@ -6,6 +6,7 @@ description = "Erin McClelland won the Democratic primary election for state tre
 image = "2024/04/01k2-gsxk-5j1z-ppa5.jpeg"
 image-credit = "Courtesy candidate Facebook pages"
 image-description = "Treasurer candidates Stacy Garrity (Republican) and Erin McClelland (Democrat)"
+image-gravity = "ce"
 internal-id = "SPL24PRITRERES"
 kicker = "Elections"
 modal-exclude = false
