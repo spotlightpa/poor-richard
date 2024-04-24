@@ -27,7 +27,7 @@ The Associated Press called the race for McClelland at 10:11 p.m. Unofficial res
 
 McClelland won Tuesday’s election without the endorsement of the state Democratic Party — it backed Bizzarro, a state representative from Erie. Bizzarro also significantly outraised McClelland, a former substance abuse counselor and project manager for the Allegheny County Department of Human Services.
 
-On the GOP side, Garrity ran opposed for a second four-year term.
+On the GOP side, Garrity ran unopposed for a second four-year term.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
