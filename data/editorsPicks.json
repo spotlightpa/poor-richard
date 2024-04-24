@@ -12,16 +12,17 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-04-24-SPLPRI24LEGRES.md"
+    "content/news/2024-04-24-SPLBROADBANDCOST.md"
   ],
   "subfeatures": [
-    "content/news/2024-04-19-SPLAP24PRIMRES.md",
-    "content/news/2024-04-23-SPLMISYEAR24PRI.md"
+    "content/news/2024-01-22-SPLBROADBAND0122.md",
+    "content/news/2023-08-25-SPLBROADBANDHURDLES.md",
+    "content/news/2022-06-10-SPLBROADBANDRTK10.md"
   ],
   "topSlots": [
-    "content/news/2024-04-23-SPLPRI24AGRES.md",
+    "content/news/2024-04-23-SPL24PRITRERES.md",
     "content/news/2024-04-23-SPLPRI24AUGRES.md",
-    "content/news/2024-04-23-SPL24PRITRERES.md"
+    "content/news/2024-04-23-SPLPRI24AGRES.md"
   ],
   "topper": []
 }
