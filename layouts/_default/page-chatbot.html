@@ -57,7 +57,7 @@
     {{ end }}
     <div
       id="dewey-chat"
-      class="mx-[calc(-50vw_+_50%)] my-10 min-h-[90vh] w-[100vw] md:h-[716px]"
+      class="mx-5 my-10 min-h-[90vh] max-w-screen-xl rounded shadow md:mx-auto md:h-[716px]"
     ></div>
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
