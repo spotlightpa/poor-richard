@@ -20,6 +20,8 @@ topics = ["Candidate 101"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, April 24: </em></strong><a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-auditor-general-tim-defoor-malcolm-kenyatta/"><strong><em>Malcolm Kenyatta wins Democratic primary for Pa. auditor general, will face Republican Tim DeFoor this fall</em></strong></a><em></em>
+
 HARRISBURG — Pennsylvania voters will elect an auditor general this November, but Democrats and Republicans first must pick their candidates this spring.
 
 Malcolm Kenyatta is one of two Democrats running for his party’s nomination and will appear on the April 23 primary ballot.
