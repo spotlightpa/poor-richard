@@ -1,8 +1,8 @@
 +++
 authors = ["Katie Meyer"]
-blurb = "Republican Dave Sunday emerged victorious from a two-person race."
+blurb = "DePasquale defeated five primary opponents for attorney general, while Sunday emerged victorious from a two-person race."
 byline = "Katie Meyer of Spotlight PA"
-description = "Republican Dave Sunday emerged victorious from a two-person race."
+description = "Democrat Eugene DePasquale defeated his five primary opponents for attorney general, while Republican Dave Sunday emerged victorious from a two-person race."
 image = "2024/03/01jz-kpg1-wedt-3x4p.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "The seal of the Pennsylvania Office of Attorney General in Pittsburgh, Pennsylvania."
@@ -13,18 +13,18 @@ pinned = false
 published = 2024-04-23T21:34:22.568-04:00
 slug = "pennsylvania-election-results-2024-primary-attorney-general-dave-sunday"
 suppress-date = false
-title = "Republican Dave Sunday wins primary election for Pa. attorney general"
-title-tag = "PA attorney general results: Dave Sunday wins primary nod"
+title = "Democrat Eugene DePasquale, Republican Dave Sunday win primary elections for Pa. attorney general"
+title-tag = "PA attorney general results: Sunday, DePasquale win primary"
 topics = ["Elections"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-HARRISBURG — Republican Dave Sunday has won a two-way primary for his party’s nod for Pennsylvania attorney general.
+HARRISBURG — Eugene DePasquale has emerged victorious from a competitive, five-way Democratic primary for Pennsylvania attorney general, while party-endorsed candidate Dave Sunday won the two-man contest for the Republican nomination.
 
-The Associated Press called the race for Sunday at 9:25 p.m. on Tuesday. Unofficial results show Sunday with 67% of the vote to state Rep. Craig Williams’ 33%.
+The Associated Press called the race for DePasquale at 10 p.m. on Tuesday. Unofficial results show DePasquale with 39% of the vote.
 
-As of 9:30 p.m. Tuesday, the AP had not called the race for one of the five Democratic candidates.
+The race for Sunday was called at 9:25 p.m. on Tuesday. Unofficial results show Sunday with 67% of the vote to state Rep. Craig Williams’ 33%.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -63,6 +63,18 @@ The city of York experienced <a href="https://www.ydr.com/story/news/2024/03/12/
 Williams focused on his work in the legislature to give the state power over Philadelphia’s progressive district attorney, Larry Krasner, and defended his leadership role in a Republican effort to impeach Krasner (Sunday, in a debate, said he didn’t support that initiative). Williams also stressed his experience in the Marine Corps and sought to cast Sunday as insufficiently conservative, noting that he was <a href="https://delawarevalleyjournal.com/gop-attorney-general-candidates-spar-during-primary-debate/">once registered as a Democrat</a>.
 
 Both Republicans do not believe the state constitution protects the right to abortion access.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+
+## Up next: the November general election
+
+The two primary winners now enter a general election season that will see both major parties pull out all the stops to see them elected. DePasquale begins the next phase of the race with nearly $100,000 on hand as of April 8, while Sunday had $273,000.
+
+The race <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-2024-forward-party-attorney-general-treasurer-ballot-requirements/">could also feature a third-party candidate</a>, should he successfully collect enough signatures to get on the ballot and fend off likely legal challenges from the major parties. Health care industry lawyer Eric Settle, a former Republican from Montgomery County, is running as a member of the fledgling Forward Party.
+
+The Pennsylvania attorney general’s office has been under Democratic control almost continuously since 2013, except for a blip in August 2016; Republican Bruce Castor became acting attorney general after the conviction of former Democratic Attorney General Kathleen Kane for perjury and abuse of office.
+
+The general election will be held on Nov. 5.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
