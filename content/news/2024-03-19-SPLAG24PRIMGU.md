@@ -21,7 +21,9 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-<a href="https://www.spotlightpa.org/news/2024/03/elecciones-pensilvania-2024-fiscal-general-candidatos-primarias/"><em>Leer en español</em></a><em><br/></em>
+<a href="https://www.spotlightpa.org/news/2024/03/elecciones-pensilvania-2024-fiscal-general-candidatos-primarias/"><em>Leer en español</em></a><em></em>
+
+<strong><em>Update, April 24: </em></strong><a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-attorney-general-dave-sunday/"><strong><em>Democrat Eugene DePasquale, Republican Dave Sunday win primary elections for Pa. attorney general</em></strong></a><em></em>
 
 HARRISBURG — Pennsylvania voters will elect a new attorney general this November, but Democrats and Republicans first must pick their candidates this spring.
 
@@ -46,16 +48,6 @@ The office in recent years also became known for its <a href="https://www.inquir
 Shapiro <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-nominates-acting-attorney-general-michelle-henry-to-serve-as-attorney-general-2/">nominated</a> his former first deputy, Michelle Henry, to complete the remainder of his four-year term as attorney general after he won the governorship in 2022. That term ends early next year, and Henry is not running for the job.
 
 <em>This story may be updated with additional information as the election approaches.</em>
-
-{{<featured/ballyhoo
-  id="candidate-quiz"
-  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
-  hed="Which Pa. attorney general candidate do you align with?"
-  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
-  cta="Take the quiz →"
-  link="/elections-2024/candidate-quiz/"
->}}
-<br>
 
 ### Skip to section
 

@@ -1,6 +1,6 @@
 {
   "edCallout": [
-    "content/ag-quiz.md",
+    "content/news/2024-03-25-SPLRESPROJ.md",
     "content/news/2024-03-25-SPL_67_counties.md"
   ],
   "edImpact": [
@@ -12,21 +12,15 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-04-23-SPLAPR23ELECINFO.md"
+    "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
   ],
   "subfeatures": [
-    "content/news/2024-04-22-SPL24PRIMRESWHEN.md",
-    "content/ag-quiz.md",
-    "content/news/2024-04-11-SPLLEGVET.md",
-    "content/news/2024-04-18-SPLCOMPPRI24.md",
-    "content/news/2024-04-01-SPLPRI24FULLGU.md",
-    "content/news/2024-04-15-SPLMAIL101.md",
-    "content/news/2024-04-10-SPL24OPEN.md"
+    "content/news/2024-03-11-SPLHOUSINGBUDGET.md"
   ],
   "topSlots": [
-    "content/news/2024-03-19-SPLAG24PRIMGU.md",
-    "content/news/2024-03-12-SPLAUD24PRIGU.md",
-    "content/news/2024-03-26-SPLTR24PRGU.md"
+    "content/news/2024-04-23-SPL24PRITRERES.md",
+    "content/news/2024-04-23-SPLPRI24AUGRES.md",
+    "content/news/2024-04-23-SPLPRI24AGRES.md"
   ],
   "topper": []
 }

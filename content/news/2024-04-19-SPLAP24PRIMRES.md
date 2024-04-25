@@ -14,7 +14,7 @@ published = 2024-04-19T13:52:27.916-04:00
 slug = "pennsylvania-election-results-2024-primary"
 suppress-date = false
 title = "Latest results from the 2024 Pennsylvania primary election"
-title-tag = "2024 Pennsylvania primary election results"
+title-tag = "PA primary election results 2024"
 topics = ["Elections"]
 url = "/elections-2024/results/"
 +++
@@ -25,15 +25,15 @@ Results for races can also be found on the Department of State <a href="https://
 
 For complete coverage of the 2024 primary election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
-<em>Last updated April 19, 2024, at 2:15 p.m.</em>
+<em>Last updated April 23, 2024, at 8:25 p.m.</em>
 
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
-On April 23, Democratic and Republican voters will <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-day-2024-voter-information-registration/">cast their ballots in the primary election</a>. They will determine which candidates will go on to run in the general election for president, Congress (U.S. House and Senate), row offices (attorney general, auditor general, and treasurer), and the Pennsylvania legislature.
+On April 23, Democratic and Republican voters <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-day-2024-voter-information-registration/">cast their ballots in the primary election</a>. They will determine which candidates will go on to run in the general election for president, Congress (U.S. House and Senate), row offices (attorney general, auditor general, and treasurer), and the Pennsylvania legislature.
 
 To ensure we are reporting the most accurate results and to avoid contributing to confusion, Spotlight PA will not report on projected winners or publish results stories until the Associated Press calls the race. For many reasons, the AP may not make all calls on the night of the election.
 
-For voters interested in seeing rolling tallies, Spotlight PA will publish and make available for free a tool that displays Associated Press results. Those results will be displayed under each office noted below. Please check back as results will be updated regularly.<em></em>
+For voters interested in seeing rolling tallies, Spotlight PA is making available for free a tool that displays Associated Press results. Those results will be displayed under each office noted below. Please check back as results will be updated regularly.<em></em>
 
 ### Pa. Election Results
 
@@ -147,7 +147,7 @@ Learn more about <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-
 
 A: Votes will be counted throughout the evening on April 23 after polls close at 8 p.m. and released in batches for several hours. By state law, Pennsylvania counties cannot process mail ballots before Election Day, and many have different procedures for counting votes and in what order.
 
-Still, election experts expect unofficial results for most races will be available on election night.
+Still, election experts expect unofficial results for most races <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-results-2024-when-to-expect/">will be available on election night</a>.
 
 <h3 id="spl-heading-12">Q: How can I find the latest election results in Pennsylvania?</h3>
 
