@@ -16,21 +16,6 @@ aliases=["/news/pennsylvania/spl/pennsylvania-election-campaign-expenses-spotlig
 series = ["Campaign Finance 2019"]
 +++
 
-<script defer>
-(function() {
-  var l = function() {
-    new pym.Parent('310290d7-98f6-45bd-85fa-fbc41c167e3e', 'https://lawmaker-finder.data.spotlightpa.org/', {});
-
-  };
-  var h = document.getElementsByTagName("head")[0];
-  var s = document.createElement("script");
-  s.type = "text/javascript";
-  s.src = "https://pym.nprapps.org/pym.v1.min.js";
-  s.onload = l;
-  h.appendChild(s);
-})();
-</script>
-
 The Republican-controlled legislature abruptly reversed course Wednesday and said it would abandon a controversial measure that could make it [harder to find out how lawmakers and other elected officials spend millions of dollars in campaign cash](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/).
 
 The change comes a day after The Caucus and Spotlight PA [reported on the proposal](https://www.spotlightpa.org/news/2019/10/lawmakers-quietly-tucked-a-new-provision-into-a-bill-that-would-reduce-oversight/).
@@ -48,8 +33,6 @@ Mike Straub, a spokesman for the House Republican caucus, said several members r
 The investigation by The Caucus and Spotlight PA found lawmakers [use credit cards, gift cards and self-reimbursements to shield sometimes lavish campaign spending](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/). Expenses included pricey dinners, foreign trips, sports tickets, a country club membership and even a DNA test kit.
 
 None of those items were included in publicly available campaign finance reports. They were brought to light only after reporters used a little-known provision of state election law that requires campaigns to keep “vouchers,” or receipts, for the past three years and make them available upon request.
-
-<div id="310290d7-98f6-45bd-85fa-fbc41c167e3e"></div>
 
 The controversial provision added to the voting bill Tuesday would have removed oversight from the Department of State and left it up to politicians to respond to requests.
 

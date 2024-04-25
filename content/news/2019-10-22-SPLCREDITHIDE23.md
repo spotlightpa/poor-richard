@@ -15,20 +15,6 @@ slug = "lawmakers-quietly-tucked-a-new-provision-into-a-bill-that-would-reduce-o
 aliases=["/news/pennsylvania/spl/pennsylvania-elections-campaign-finance-less-oversight-campaign-expenses-20191022.html"]
 series = ["Campaign Finance 2019"]
 +++
-<script defer>
-(function() {
-  var l = function() {
-    new pym.Parent('310290d7-98f6-45bd-85fa-fbc41c167e3e', 'https://lawmaker-finder.data.spotlightpa.org/', {});
-
-  };
-  var h = document.getElementsByTagName("head")[0];
-  var s = document.createElement("script");
-  s.type = "text/javascript";
-  s.src = "https://pym.nprapps.org/pym.v1.min.js";
-  s.onload = l;
-  h.appendChild(s);
-})();
-</script>
 
 The same day an investigation revealed how Pennsylvania state lawmakers [hide millions of dollars in campaign spending from public scrutiny](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/), the Legislature advanced a measure that would make it even harder to hold them accountable.
 
@@ -69,5 +55,3 @@ Larry Otter, a Bucks County lawyer who specializes in election law, said Pennsyl
 “They’ve certainly made the records more secretive and that is not a good thing,” Otter said.
 
 He added, “I mean, how hard is this?”
-
-<div id="310290d7-98f6-45bd-85fa-fbc41c167e3e"></div>

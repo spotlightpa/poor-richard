@@ -24,8 +24,6 @@ aliases = ["/news/pennsylvania/spl/pa-liquor-wine-law-european-donor-trip-spotli
 (function() {
   var l = function() {
     new pym.Parent('container-vis-map-tile-usa-campaign-finance1', 'https://interactives.data.spotlightpa.org/2019/vis-map-tile-usa-campaign-finance1/', {});
-    new pym.Parent('310290d7-98f6-45bd-85fa-fbc41c167e3e', 'https://lawmaker-finder.data.spotlightpa.org/', {});
-
   };
   var h = document.getElementsByTagName("head")[0];
   var s = document.createElement("script");
@@ -89,8 +87,6 @@ Senate officials, however, said in response to a public records request that the
 Ben Wren, executive director of the Law and Justice Committee, said he could find no evidence the trip was discussed or approved.
 
 “It’s very unusual,” Wren said.
-
-<div id="310290d7-98f6-45bd-85fa-fbc41c167e3e"></div>
 
 _Paula Knudsen and Mike Wereschagin of The Caucus contributed to this article._
 
