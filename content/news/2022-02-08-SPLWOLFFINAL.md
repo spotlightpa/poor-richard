@@ -15,7 +15,7 @@ no-index = false
 published = 2022-02-08T11:34:01.412-05:00
 slug = "pennsylvania-budget-tom-wolf-education-federal-relief-dollars"
 title = "Wolf asks GOP-led legislature to spend Pa.’s federal aid dollars as he pitches $1.8B boost for education"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Federal Government"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>

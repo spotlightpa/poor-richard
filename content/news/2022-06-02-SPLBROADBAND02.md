@@ -20,7 +20,7 @@ series = ["The Disconnect"]
 slug = "pennsylvania-broadband-internet-rural-expansion"
 suppress-date = false
 title = "An obscure state law could blunt the impact of up to $1 billion in federal funding for Pennsylvania’s broadband expansion"
-topics = ["Rural Issues"]
+topics = ["Rural Issues", "Federal Government"]
 +++
 
 {{<block name="keypoints">}}
