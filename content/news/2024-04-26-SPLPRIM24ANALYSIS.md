@@ -4,7 +4,7 @@ blurb = "Tuesday’s election saw a major upset in the Democratic race for state
 byline = "Stephen Caruso, Angela Couloumbis, and Katie Meyer of Spotlight PA"
 description = "Pennsylvania’s 2024 primary saw a major upset in the Democratic race for state treasurer and a decisive win in a crowded attorney general field."
 image = "2024/04/01k2-j66f-9bqs-qkgh.jpeg"
-image-credit = "2024/04/01k2-j66f-9bqs-qkgh.jpeg"
+image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A sign displayed in the hallway at Northampton County Courthouse in Easton, Pennsylvania, on primary Election Day 2024."
 internal-id = "SPLPRIM24ANALYSIS"
 kicker = "Elections"
@@ -52,7 +52,7 @@ He received nearly 36% of the statewide vote, according to unofficial returns, w
 
 DePasquale was the sole candidate who had previously won statewide office — he did so twice — and benefited from being the only contender who was not based in southeastern Pennsylvania.
 
-The former auditor general “won everything west of Conshohocken,” Mustafa Rashed, a Philadelphia-based Democratic political operative, told Spotlight PA. “It’s fascinating he had all that territory to himself.”
+The former auditor general won much of central and western Pennsylvania, Mustafa Rashed, a Philadelphia-based Democratic political operative, told Spotlight PA. “It’s fascinating he had all that territory to himself.”
 
 The <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-auditor-general-tim-defoor-malcolm-kenyatta/">outcome of the Democratic race for auditor general</a> was less surprising, with party-endorsed state Rep. Malcolm Kenyatta of Philadelphia easily beating Lehigh County Controller Mark Pinsley by a margin of 64% to 36%, according to unofficial results.
 
