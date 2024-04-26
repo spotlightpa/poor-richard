@@ -14,3 +14,4 @@ no-index = true
 promo = "{{<featured/election-promo>}}"
 
 +++
+## Have questions about the 2024 election in PA? Ask our AI-powered assistant and get a trusted answer based on Spotlight PA’s election coverage and resources from the PA Department of State.
