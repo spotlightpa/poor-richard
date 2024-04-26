@@ -21,7 +21,6 @@ aliases = ["/news/2019/10/shelly-brown-credit-card-campaign-finance-abuse/","/ne
   var l = function() {
     new pym.Parent('container-vis-map-tile-usa-campaign-finance1', 'https://interactives.data.spotlightpa.org/2019/vis-map-tile-usa-campaign-finance1/', {});
     new pym.Parent( 'splcredit-shelly-brown3__graphic', 'https://media.inquirer.com/storage/inquirer/ai2html/splcredit-shelly-brown3/index.html');
-    new pym.Parent('310290d7-98f6-45bd-85fa-fbc41c167e3e', 'https://lawmaker-finder.data.spotlightpa.org/', {});
   };
   var h = document.getElementsByTagName("head")[0];
   var s = document.createElement("script");
@@ -93,6 +92,3 @@ The scandal spawned a series of high-profile prosecutions that ended with a half
 Though it did not move the legislature to enact sweeping reforms, the scandals did heighten awareness of the perils of mixing governing and campaigning. Kauffman said keeping government and campaign staffs distinctly separate is a good idea.
 
 “I think the public should have some assurance that regardless of politics, public officials — including their employees — will always be making decisions on behalf of taxpayers and voters,” he said.
-
-
-<div id="310290d7-98f6-45bd-85fa-fbc41c167e3e"></div>
