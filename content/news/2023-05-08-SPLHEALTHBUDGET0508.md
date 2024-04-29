@@ -11,6 +11,7 @@ internal-budget = "Shapiro's budget proposals include boosting money for public 
 internal-id = "SPLHEALTHBUDGET0508"
 kicker = "Health"
 modal-exclude = false
+pinned = false
 published = 2023-05-08T05:00:00-04:00
 slug = "pa-josh-shapiro-budget-public-health-covid-black-maternal-health-cannabis"
 suppress-date = false
@@ -122,7 +123,7 @@ Bogen told lawmakers she had not seen a specific proposal for adult-use cannabis
 
 “It’s going to take a lot of stakeholders at the table really talking about how we make those programs work together,” Bogen said during a state Senate budget hearing in April.
 
-The impact of adult-use legalization is broad: The change could affect workplace policies, traffic safety, and other issues, according to a <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/House_Appropriation_Response_Letter_3_17_2021.pdf">2021 analysis from Pennsylvania’s Independent Fiscal Office</a>. But the office’s director, Matthew Knittel, also noted that there are potential cost-savings associated with legalizing adult-use cannabis, including fewer public safety resources being dedicated to marijuana arrests.
+The impact of adult-use legalization is broad: The change could affect workplace policies, traffic safety, and other issues, according to a <a href="https://web.archive.org/20220210064104/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/House_Appropriation_Response_Letter_3_17_2021.pdf">2021 analysis from Pennsylvania’s Independent Fiscal Office</a>. But the office’s director, Matthew Knittel, also noted that there are potential cost-savings associated with legalizing adult-use cannabis, including fewer public safety resources being dedicated to marijuana arrests.
 
 Pennsylvania lawmakers in 2016 approved legalizing medical marijuana. Dispensaries have since reported $4.4 billion in sales, and there were more than 425,000 active certifications for patients as of late March. For next year’s budget, Shapiro’s administration estimates the medical marijuana program will bring in $37.5 million from a tax on sales to dispensaries, plus nearly $17 million from patient identification card fees.
 
