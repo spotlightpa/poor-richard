@@ -58,7 +58,7 @@ The county has seen a <a href="https://www.ydr.com/story/news/local/2023/09/19/y
 
 During the early months of the COVID-19 pandemic, Sunday <a href="https://www.yorkdispatch.com/story/news/crime/2020/05/09/york-county-da-wont-prosecute-nonessential-businesses-violating-shutdown-order-tells-police-not-cite/3102105001/">directed</a> local law enforcement not to issue citations to businesses that violated former Democratic Gov. Tom Wolf’s ongoing business closure order. He issued a <a href="https://www.ydr.com/story/news/local/2021/09/03/york-county-district-attorney-dave-sunday-will-not-prosecute-alleged-violations-mask-mandate-schools/5717124001/">similar mandate</a> not to prosecute citations related to Wolf’s 2021 order requiring masking in schools.
 
-“This order includes built-in justifications and the language of the order does not include the details of how they can be proven,” Sunday <a href="https://wjactv.com/york-county-da-enforcement-of-statewide-school-mask-mandate-is-difficult">said</a> at the time.
+“This order includes built-in justifications and the language of the order does not include the details of how they can be proven,” Sunday <a href="https://wjactv.com/news/local/york-county-da-enforcement-of-statewide-school-mask-mandate-is-difficult">said</a> at the time.
 
 <strong>Top issues:</strong> Public safety and the opioid epidemic are Sunday’s <a href="https://www.youtube.com/watch?v=VHp_yI5CuYk">top priorities</a>. He’s pointed to his collaborative work in York County as a model, and described his philosophy as “accountability and redemption.”
 
