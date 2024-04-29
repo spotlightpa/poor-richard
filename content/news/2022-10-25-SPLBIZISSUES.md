@@ -56,7 +56,7 @@ This year, the stalemate ended. Wolf and state lawmakers <a href="https://www.pe
 
 Mastriano and Shapiro both support the change but want the tax rate to be cut further and faster. Shapiro says it should be reduced to 4% by 2025. Mastriano wants to lower it to 2.4% by 2026 — or by 2030, if lawmakers won’t agree to cut it more quickly. Mastriano’s plan would make Pennsylvania’s tax rate the lowest in the nation, according to a Tax Foundation <a href="https://taxfoundation.org/pa-corporate-tax-cut/">comparison</a> of state rates as of July.
 
-The tax cut that passed the General Assembly this year, combined with other tweaks to the tax code, will cost the state $202 million in foregone revenue in the next fiscal year, according to a <a href="https://www.legis.state.pa.us/WU01/LI/BI/FN/2021/0/HB1342P3370.pdf">legislative analysis</a>. Cutting it further would cost even more.
+The tax cut that passed the General Assembly this year, combined with other tweaks to the tax code, will cost the state $202 million in foregone revenue in the next fiscal year, according to a <a href="https://web.archive.org/20220716171550/https://www.legis.state.pa.us/WU01/LI/BI/FN/2021/0/HB1342P3370.pdf">legislative analysis</a>. Cutting it further would cost even more.
 
 A spokesperson for Shapiro’s campaign said the tax cut could be offset by Pennsylvania’s billions of dollars in surplus, and that lower business taxes would lead to significant economic growth, boosting state tax revenues overall.
 
@@ -100,7 +100,7 @@ Mastriano has mentioned innovation far less, but told Spotlight PA that as gover
 
 ## Gas tax
 
-Pennsylvania has the <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/RB_2022_06_PA_Gasoline_Tax.pdf">highest gas tax</a> in the nation and with gas prices reaching record highs over the summer, many residents have been feeling the pinch.
+Pennsylvania has the <a href="https://web.archive.org/20220613140750/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/RB_2022_06_PA_Gasoline_Tax.pdf">highest gas tax</a> in the nation and with gas prices reaching record highs over the summer, many residents have been feeling the pinch.
 
 In June, average gas prices in Pennsylvania peaked at just over $5 per gallon, according to data from AAA. Prices have since fallen but remain about 40 cents higher than <a href="https://gasprices.aaa.com/?state=PA">this time last year</a>.
 
@@ -114,7 +114,7 @@ Instead, Shapiro has proposed a <a href="https://web.archive.org/web/20221106190
 
 Additionally, not all the money from the gas tax actually goes to pay for roads and bridges. Every year, hundreds of millions of dollars are <a href="https://triblive.com/news/pennsylvania/pa-roads-bridges-to-get-extra-175m-as-funding-is-freed-up-from-state-police/">transferred</a> to help fund Pennsylvania State Police.
 
-A report in 2019 by the state auditor general <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-penndot-audit-finds-4-2-billion-diverted-from-repairing-roads-bridges">found that</a> the $4.25 billion transferred since 2012 to State Police from the Motor License Fund — which provides about half of PennDOT’s budget — had delayed planned repairs. Last year, a state commission <a href="https://www.penndot.pa.gov/about-us/funding/Documents/TROC-Final-Report.pdf">recommended ending the transfers</a>, which would require the governor and lawmakers to agree on another way to pay for State Police.
+A report in 2019 by the state auditor general <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-penndot-audit-finds-4-2-billion-diverted-from-repairing-roads-bridges">found that</a> the $4.25 billion transferred since 2012 to State Police from the Motor License Fund — which provides about half of PennDOT’s budget — had delayed planned repairs. Last year, a state commission <a href="https://web.archive.org/20220303092357/https://www.penndot.pa.gov/about-us/funding/Documents/TROC-Final-Report.pdf">recommended ending the transfers</a>, which would require the governor and lawmakers to agree on another way to pay for State Police.
 
 Both candidates have said they support ending the transfers, but haven’t specified how they would replace the State Police funding.
 
