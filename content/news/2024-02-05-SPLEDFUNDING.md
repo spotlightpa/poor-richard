@@ -36,7 +36,7 @@ Still, many lawmakers from both major parties agree on at least one thing: More 
 
 Nearly a year ago, a Commonwealth Court judge ruled that the system Pennsylvania uses to fund its public schools is unconstitutionally inequitable. She ordered it to be overhauled but didn’t say precisely how; that’s up to the legislature, executive branch, and educators.
 
-Since then, the state has reconvened a bipartisan legislative commission to study the issue. After a series of statewide hearings, the panel approved a <a href="https://www.pahouse.com/files/Documents/2024-01-11_023404__MajorityReport.pdf">report</a> — without support from its Republican members — that <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-public-school-funding-lawsuit-report-recommendations/">proposed pouring billions of new dollars</a>, many of them recurring, into the state’s K-12 education system.
+Since then, the state has reconvened a bipartisan legislative commission to study the issue. After a series of statewide hearings, the panel approved a <a href="https://web.archive.org/20240116221719/https://www.pahouse.com/files/Documents/2024-01-11_023404__MajorityReport.pdf">report</a> — without support from its Republican members — that <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-public-school-funding-lawsuit-report-recommendations/">proposed pouring billions of new dollars</a>, many of them recurring, into the state’s K-12 education system.
 
 That includes a minimum of $5.4 billion in new money for underfunded districts and $955 million in aid to ease property tax burdens in high-tax districts, plus at least $900 million more to fund school construction and infrastructure upgrades, reimburse districts for <a href="https://www.spotlightpa.org/news/2024/01/charter-school-pennsylvania-education-funding-disability-formula-court-ruling/">charter school payments</a>, and expand mental health resources, among other priorities.
 
@@ -54,13 +54,13 @@ Half has been deposited into the state’s rainy day fund, the equivalent of a l
 
 Traditionally, legislative Democrats argue the state should spend the extra money on the deferred needs of communities, while their Republican counterparts favor sitting on excess dollars as insurance against recessions. The size of the state’s reserves and the potential financial obligations to meet the court order have supercharged that debate heading into budget season.
 
-As of the end of January, the state’s tax revenues were almost exactly aligned with projections. However, the state’s Independent Fiscal Office has <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2023.pdf">predicted</a> growing deficits beginning as soon as next year.
+As of the end of January, the state’s tax revenues were almost exactly aligned with projections. However, the state’s Independent Fiscal Office has <a href="https://web.archive.org/20231117000953/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2023.pdf">predicted</a> growing deficits beginning as soon as next year.
 
 Marc Stier, executive director of the progressive Pennsylvania Policy Center, estimated the commonwealth will use up its reserves by 2028 at its current spending rate.
 
 But state spending already has and likely will continue to increase.
 
-Lawmakers tapped the surplus in <a href="https://www.budget.pa.gov/Publications%20and%20Reports/CommonwealthBudget/Documents/2023-24%20Budget%20Documents/2023-24%20Enacted%20Budget%20Line%20Item%20Appropriations.Dec2023.pdf">last year’s budget</a>, Shapiro’s first. Spending then increased by more than $4 billion, including a $567 million boost to K-12 education, $175 million put into school building repairs and construction, and $10 million committed to student-teacher stipends, among other programs.
+Lawmakers tapped the surplus in <a href="https://web.archive.org/20240205055345/https://www.budget.pa.gov/Publications%20and%20Reports/CommonwealthBudget/Documents/2023-24%20Budget%20Documents/2023-24%20Enacted%20Budget%20Line%20Item%20Appropriations.Dec2023.pdf">last year’s budget</a>, Shapiro’s first. Spending then increased by more than $4 billion, including a $567 million boost to K-12 education, $175 million put into school building repairs and construction, and $10 million committed to student-teacher stipends, among other programs.
 
 Shapiro has <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-state-budget-governor-shapiro-education-university-transit/">proposed spending more on transit and higher education</a> in 2024. The commission’s report also suggested a downpayment of $871 million into K-12 education in the coming fiscal year. That alone adds up to over $1 billion in new spending.
 
@@ -108,7 +108,7 @@ Policymakers tried it once before.
 
 In the 1930s, the governor and legislature attempted to tax the rich at a higher rate than the poor to reduce property taxes while boosting education funding. The state Supreme Court ruled the law unconstitutional, saying it violated a provision that taxes be uniform “<a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness-constitution/">upon the same class of subjects</a>.”
 
-As a result, Pennsylvania has the 4th most regressive tax structure in the nation, according to <a href="https://media.itep.org/ITEP-Who-Pays-7th-edition.pdf">a recent report</a> by the Institute on Taxation and Economic Policy, a Washington, D.C.-based think tank.
+As a result, Pennsylvania has the 4th most regressive tax structure in the nation, according to <a href="https://web.archive.org/20240109214045/https://media.itep.org/ITEP-Who-Pays-7th-edition.pdf">a recent report</a> by the Institute on Taxation and Economic Policy, a Washington, D.C.-based think tank.
 
 Pennsylvanians pay an average of <a href="https://taxfoundation.org/data/all/state/state-local-tax-collections-per-capita-fy-2021/">$6,259 each year</a> in state and local taxes. This disproportionately impacts the bottom 20% of households — or those making less than $22,100 a year — who pay 15.1% of their household income in taxes, according to the ITEP. That’s the highest burden placed on the bottom quartile of earners in the country.
 
