@@ -12,8 +12,10 @@ internal-id = "SPLSIXBUD"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-02-01T05:00:00-05:00
 slug = "pennsylvania-tom-wolf-final-budget-address-preview"
+suppress-date = false
 title = "Gov. Tom Wolf’s final budget address will seek to cement his legacy"
 topics = ["The Capitol"]
 +++
@@ -40,7 +42,7 @@ Also expect the GOP to rebut this narrative by countering that the Wolf administ
 
 A decade ago, the legislature created the nonpartisan Independent Fiscal Office and tasked it with fairly and accurately assessing the state’s financial health.
 
-In a report on the <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2021.pdf">state’s budget outlook</a>, the IFO projected a “substantial surplus” in this fiscal year’s budget — “but operating deficits for future years.”
+In a report on the <a href="https://web.archive.org/20220118184045/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2021.pdf">state’s budget outlook</a>, the IFO projected a “substantial surplus” in this fiscal year’s budget — “but operating deficits for future years.”
 
 That means negotiations between Wolf and the legislature for the fiscal year that begins in July could be calmer, but the next administration can expect a financial headache. By the 2023-24 fiscal year, Pennsylvania could be staring at a nearly $2 billion deficit, according to the latest IFO report.
 
