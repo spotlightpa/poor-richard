@@ -255,7 +255,7 @@ El condado ha experimentado una <a href="https://www.ydr.com/story/news/local/20
 
 Durante los primeros meses de la pandemia de COVID-19, Sunday <a href="https://www.yorkdispatch.com/story/news/crime/2020/05/09/york-county-da-wont-prosecute-nonessential-businesses-violating-shutdown-order-tells-police-not-cite/3102105001/">ordenó a</a> las fuerzas de seguridad locales que no expidieran citaciones a los negocios que infringieran la orden en curso del cierre de negocios del ex gobernador demócrata Tom Wolf. Emitió un <a href="https://www.ydr.com/story/news/local/2021/09/03/york-county-district-attorney-dave-sunday-will-not-prosecute-alleged-violations-mask-mandate-schools/5717124001/">mandato similar</a> para no procesar las citaciones relacionadas con la orden de Wolf de 2021 que exigía el uso de mascarillas en las escuelas.
 
-&#34;Esta orden incluye justificaciones integradas y el lenguaje de la orden no incluye los detalles de cómo pueden probarse&#34;, <a href="https://wjactv.com/york-county-da-enforcement-of-statewide-school-mask-mandate-is-difficult">dijo</a> Sunday en ese momento.
+&#34;Esta orden incluye justificaciones integradas y el lenguaje de la orden no incluye los detalles de cómo pueden probarse&#34;, <a href="https://wjactv.com/news/local/york-county-da-enforcement-of-statewide-school-mask-mandate-is-difficult">dijo</a> Sunday en ese momento.
 
 <strong>Temas principales: </strong>La seguridad pública y la epidemia de opioides son las <a href="https://www.youtube.com/watch?v=VHp_yI5CuYk">principales prioridades</a> de Sunday. Ha señalado su trabajo colaborativo en el condado de York como modelo, y ha descrito su filosofía como &#34;responsabilidad y redención&#34;.
 
