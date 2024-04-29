@@ -11,6 +11,7 @@ internal-budget = "Tax credits for Pa. families worth billions of dollars are on
 internal-id = "SPLFAMCRED"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-06-21T05:00:21-04:00
 slug = "pa-child-care-earned-income-tax-credit-legislature-budget-shapiro"
 suppress-date = false
@@ -25,12 +26,12 @@ HARRISBURG — Pennsylvania families across the income spectrum could receive mo
 
 The proposals passed with bipartisan support, but they might not survive the GOP-controlled state Senate, a fate that showcases the political tensions at play as new Democratic Gov. Josh Shapiro and the split legislature attempt to negotiate a spending plan by the June 30 deadline.
 
-Pennsylvania’s coffers are full. The state has roughly $12 billion in cash reserves accumulated during the COVID-19 pandemic, mostly a result of income taxes on <a href="https://fred.stlouisfed.org/series/CP">increased corporate profits</a> and <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/PMTA_Presentation_April_2023.pdf">expanded federal spending</a> that augmented state budgets and upped individual tax payments.
+Pennsylvania’s coffers are full. The state has roughly $12 billion in cash reserves accumulated during the COVID-19 pandemic, mostly a result of income taxes on <a href="https://fred.stlouisfed.org/series/CP">increased corporate profits</a> and <a href="https://web.archive.org/20230419152002/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/PMTA_Presentation_April_2023.pdf">expanded federal spending</a> that augmented state budgets and upped individual tax payments.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-But the state’s Independent Fiscal Office, which analyzes Pennsylvania’s finances, <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_Presentation_2022.pdf">predicts</a> revenue shortfalls over the next five years will roughly equal the state’s current windfall.
+But the state’s Independent Fiscal Office, which analyzes Pennsylvania’s finances, <a href="https://web.archive.org/20230117135441/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_Presentation_2022.pdf">predicts</a> revenue shortfalls over the next five years will roughly equal the state’s current windfall.
 
 State lawmakers constantly battle over whether to spend or to save. But Democrats now control a legislative chamber and are bringing their own priorities to the table, a shift from budget skirmishes under former Democratic Gov. Tom Wolf.
 
@@ -54,7 +55,7 @@ Marc Stier, a policy analyst with the left-leaning Pennsylvania Policy Center, s
 
 “There’s a tremendous incentive to work, which is why it was originally a Republican idea going <a href="https://kansaspress.ku.edu/blog/2021/02/25/child-poverty-and-richard-nixons-family-security-act/">back to Richard Nixon</a>,” Stier told Spotlight PA.
 
-A 2020 Pennsylvania Budget &amp; Policy Center <a href="https://krc-pbpc.org/wp-content/uploads/State-EITC.pdf">study</a> co-authored by Stier found that almost 900,000 Pennsylvania taxpayers would benefit from such a policy.
+A 2020 Pennsylvania Budget &amp; Policy Center <a href="https://web.archive.org/20230402113636/https://krc-pbpc.org/wp-content/uploads/State-EITC.pdf">study</a> co-authored by Stier found that almost 900,000 Pennsylvania taxpayers would benefit from such a policy.
 
 A state-level earned income tax credit would cost $1.4 billion and the expanded child care tax credit would cost $1.1 billion over the next five years, according to fiscal analyses that the Pennsylvania Department of Revenue prepared for the legislature.
 
