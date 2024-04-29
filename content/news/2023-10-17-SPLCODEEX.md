@@ -9,6 +9,7 @@ image-description = "The interior of the Pennsylvania Capitol in Harrisburg."
 internal-id = "SPLCODEEX"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-10-17T05:00:00.088-04:00
 slug = "pennsylvania-budget-legislature-education-spending-tax-code"
 suppress-date = false
@@ -61,7 +62,7 @@ As Spotlight PA previously <a href="https://www.spotlightpa.org/news/2023/08/pen
 
 The bill also includes codes for regular allocations to hospitals and for judicial fees that courts rely on, and for which state authorization had expired at the end of July.
 
-It also would formalize approval of a suite of other programs that had already been moving ahead with their budget spending, and for <a href="https://senatorpittman.com/wp-content/uploads/sites/96/2023/08/8.2.23-Memo-from-Budget-Secretary-Uri-Monson.pdf">which the state budget secretary has not said</a> new codes were necessary. These include funding for community colleges, aid to public libraries, and reimbursements for schools to provide universal free breakfast.
+It also would formalize approval of a suite of other programs that had already been moving ahead with their budget spending, and for <a href="https://web.archive.org/20230808032701/https://senatorpittman.com/wp-content/uploads/sites/96/2023/08/8.2.23-Memo-from-Budget-Secretary-Uri-Monson.pdf">which the state budget secretary has not said</a> new codes were necessary. These include funding for community colleges, aid to public libraries, and reimbursements for schools to provide universal free breakfast.
 
 State House Democrats amended the state Senate proposal to authorize home repairs and other in-limbo programs, as well as several caucus proposals. Those include:
 
@@ -91,7 +92,7 @@ State House Democrats have also advanced an original bill that would <a href="ht
 
 The proposal also mandates combined reporting, which applies to companies that are incorporated out-of-state, to capture more of their income in-state for tax purposes. It has been a top Democratic priority for years.
 
-An <a href="https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/HB1219P2089.pdf">analysis</a> by state House Democratic staff estimates the proposed changes would cost the state about $1.6 billion in revenue over the next two years.
+An <a href="https://web.archive.org/20231017121352/https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/HB1219P2089.pdf">analysis</a> by state House Democratic staff estimates the proposed changes would cost the state about $1.6 billion in revenue over the next two years.
 
 The inclusion of combined reporting is “a poison pill,” Pennsylvania Chamber of Business and Industry CEO Luke Bernstein said in a statement last week. He encouraged the passage of the bill without combined reporting.
 
@@ -123,7 +124,7 @@ State House Democrats amended that bill and nearly doubled its length, adding in
 
 The proposal would also require that the Pennsylvania Department of Education collect and release data on scholarship recipients’ and applicants’ household income, disability status, and original school district, among other information — a measure aimed at making the <a href="https://whyy.org/articles/trapped-on-the-main-line-expensive-private-schools-that-benefit-from-pa-tax-credits-report-zero-low-income-students/">notoriously opaque</a> programs more transparent.
 
-In a <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Summary_Tax_Credit_Reviews_Oct_2023.pdf">report</a> last week, the Independent Fiscal Office, a legislative budget analysis agency, said that it was “unable to determine if the tax credit substantially enhances educational opportunities to all Pennsylvania students due to statutory limits on data that may be collected related to the program.”
+In a <a href="https://web.archive.org/20231013214916/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Summary_Tax_Credit_Reviews_Oct_2023.pdf">report</a> last week, the Independent Fiscal Office, a legislative budget analysis agency, said that it was “unable to determine if the tax credit substantially enhances educational opportunities to all Pennsylvania students due to statutory limits on data that may be collected related to the program.”
 
 The proposed expansion of any of the credits drew the ire of at least one Democratic-aligned group, the state chapter of the American Federation of Teachers, a union that mostly represents educators in urban districts.
 
