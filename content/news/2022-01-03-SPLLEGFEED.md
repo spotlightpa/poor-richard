@@ -11,6 +11,7 @@ internal-id = "SPLLEGFEED"
 kicker = "Redistricting"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-01-03T12:19:25.892-05:00
 slug = "pennsylvania-redistricting-house-senate-maps-feedback-get-involved"
 suppress-date = false
@@ -34,9 +35,9 @@ Here’s how you can get involved:
 
 The Legislative Reapportionment Commission <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-redistricting-hispanic-represenation-proposed-maps/" target="_blank">held four meetings the week of Jan. 3 to accept feedback on the maps</a>.
 
-<b>Thursday, Jan. 6 from 3–5 p.m.:</b> <a href="http://aws.redistricting.state.pa.us/Redistricting/Resources/Video/1-6-22%20LRC%20Session%201.mp4" target="_blank">Watch the hearing</a>
+<b>Thursday, Jan. 6 from 3–5 p.m.:</b> <a href="https://web.archive.org/20220108134531/http://aws.redistricting.state.pa.us/Redistricting/Resources/Video/1-6-22%20LRC%20Session%201.mp4" target="_blank">Watch the hearing</a>
 
-<b>Thursday, Jan. 6 from 6–8 p.m.:</b> <a href="http://aws.redistricting.state.pa.us/Redistricting/Resources/Video/010622-LRCHearing2.mp4" target="_blank">Watch the hearing</a>
+<b>Thursday, Jan. 6 from 6–8 p.m.:</b> <a href="https://web.archive.org/20220108081613/http://aws.redistricting.state.pa.us/Redistricting/Resources/Video/010622-LRCHearing2.mp4" target="_blank">Watch the hearing</a>
 
 <b>Friday, Jan. 7 from 9–11 a.m.: </b><a href="https://www.redistricting.state.pa.us/commission/article/1089" target="_blank">Learn more here</a>
 
