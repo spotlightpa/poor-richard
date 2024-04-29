@@ -12,8 +12,10 @@ internal-id = "SPLWOLFFINAL"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-02-08T11:34:01.412-05:00
 slug = "pennsylvania-budget-tom-wolf-education-federal-relief-dollars"
+suppress-date = false
 title = "Wolf asks GOP-led legislature to spend Pa.’s federal aid dollars as he pitches $1.8B boost for education"
 topics = ["The Capitol", "Federal Government"]
 +++
@@ -42,7 +44,7 @@ The state, administration officials said, also has access to roughly $2.2 billio
 
 The $2.6 billion in state taxpayer dollars that <a href="https://www.spotlightpa.org/news/2021/06/pa-40-billion-budget-2021-poorest-school-districts-federal-relief-money/">Wolf and the legislature put into the budget reserve</a> last year, nicknamed the rainy day fund, would remain untouched.
 
-Republicans countered that the state’s flush coffers are only temporary. A recent budget report by the nonpartisan Independent Fiscal Office projected a “substantial surplus” in this fiscal year’s budget, “but operating deficits for future years.” By the fiscal year that begins in July 2023, Pennsylvania could be staring at a nearly $2 billion deficit, according to the <a href="http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2021.pdf">IFO’s report</a>.
+Republicans countered that the state’s flush coffers are only temporary. A recent budget report by the nonpartisan Independent Fiscal Office projected a “substantial surplus” in this fiscal year’s budget, “but operating deficits for future years.” By the fiscal year that begins in July 2023, Pennsylvania could be staring at a nearly $2 billion deficit, according to the <a href="https://web.archive.org/20220118184045/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Five_Year_Outlook_2021.pdf">IFO’s report</a>.
 
 “While this year’s revenues continue to outpace estimates, the long-term financial picture for the commonwealth remains uncertain,” said state Sen. Pat Browne (R., Lehigh), who chairs the chamber’s powerful Appropriations Committee. “The governor’s revenue and spending projections over the next several years are unrealistic, do not align with traditional rates of growth, and will make worse our existing structural imbalance.”
 
