@@ -12,17 +12,17 @@
     "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
   ],
   "featuredStories": [
-    "content/news/2024-04-29-SPL_indigentgrant.md"
+    "content/statecollege/2024-04-29-SPLPSULIVER.md"
   ],
   "subfeatures": [
-    "content/news/2024-01-11-SPLINDDEF.md",
-    "content/news/2023-12-04-SPLPROMISE.md",
-    "content/news/2023-04-26-SPLPUBDEF.md"
+    "content/statecollege/2024-04-12-SPLMISDATA.md",
+    "content/statecollege/2024-04-06-SPLPSUTRUST.md",
+    "content/statecollege/2024-03-20-SPLPERFUND.md"
   ],
   "topSlots": [
+    "content/news/2024-04-29-SPL_indigentgrant.md",
     "content/news/2024-04-29-SPLSNYDERPRI24.md",
-    "content/news/2024-04-26-SPLPRIM24ANALYSIS.md",
-    "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
+    "content/news/2024-04-26-SPLPRIM24ANALYSIS.md"
   ],
   "topper": []
 }
