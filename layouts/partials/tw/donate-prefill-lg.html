@@ -1,7 +1,7 @@
 {{ $wrapperClass := .wrapperClass  | default "p-4 font-sans md:py-8" }}
 {{ $donateHed := .donateHed | default "Support Nonpartisan, Independent Journalism" }}
 {{ $donateDek := .donateDek | default "Spotlight PA's unique investigative and public-service journalism depends on reader support." }}
-{{ $donateCta := .donateCta | default "Contribute" }}
+{{ $donateCta := .donateCta | default "Contribute →" }}
 {{ $donateGaCategory := .donateGaCategory | default "donate-prefill-lg" }}
 {{ $donateGaForm := .donateGaForm | default "" }}
 {{ $donateCampaign := .donateCampaign | default "701Dn000000YgouIAC" }}
@@ -157,7 +157,7 @@
           :href="donateURL"
           data-ga-category="donate"
         >
-          <span> {{- $donateCta -}} &rarr;</span>
+          <span> {{- $donateCta -}}</span>
         </a>
       </div>
     </div>
