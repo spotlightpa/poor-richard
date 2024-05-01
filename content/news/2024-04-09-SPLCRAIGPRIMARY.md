@@ -40,7 +40,7 @@ Learn more about Williams below.
 
 ## Who is Craig Williams?
 
-<a href="https://www.craigwilliamsforpa.com/">Website</a>
+<a href="https://web.archive.org/web/20231129145656/https://www.craigwilliamsforpa.com/">Website</a>
 
 Born in Alabama, Williams graduated from Duke University, the University of Florida Levin College of Law, and Columbia Law School.
 
