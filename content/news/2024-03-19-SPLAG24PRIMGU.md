@@ -277,7 +277,7 @@ When asked about lingering doubts about election integrity, Sunday said that in 
 
 <h3 id="spl-heading-10">Craig Williams</h3>
 
-<a href="https://www.craigwilliamsforpa.com/"><strong>Website</strong></a><strong></strong>
+<a href="https://web.archive.org/web/20231129145656/https://www.craigwilliamsforpa.com/"><strong>Website</strong></a><strong></strong>
 
 Born in Alabama, Williams graduated from Duke University, the University of Florida Levin College of Law, and Columbia Law School.
 
