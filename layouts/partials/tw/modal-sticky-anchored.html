@@ -1,0 +1,117 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $gaForm :=  "newsletters:papost-full" }}
+{{ $gaCategory := "newsletters:papost" }}
+{{ $modalType := .type }}
+{{ $hiddenField := .hiddenField }}
+{{ $hed := .hed }}
+{{ $dek := .dek }}
+{{ $cta := .cta }}
+{{ $donateAmounts := .donateAmounts }}
+
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+
+
+<section
+  data-modal-kind="sticky"
+  x-data="sticky"
+  x-show="isOpen"
+  x-transition:enter="transition ease-out duration-500"
+  x-transition:enter-start="opacity-0 transform translate-y-8"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-in duration-500"
+  x-transition:leave-start="opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform translate-y-8"
+  @open-sticky.window="show()"
+  @close-sticky.window="close()"
+  data-ga-category="modal:sticky"
+  @keydown.escape="close"
+  x-cloak
+  class=" sticky bottom-0 z-10 w-screen bg-black p-5"
+>
+  <button
+    type="button"
+    class="absolute right-5 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
+  >
+    <svg class="m-auto h-4 w-4 fill-current">
+      {{ partial "helper/svg.html" "times" }}
+    </svg>
+  </button>
+
+  {{ with eq $modalType "newsletter" }}
+    <div
+      class="mx-auto w-full max-w-5xl gap-6 font-sans md:flex md:flex-wrap md:items-start"
+    >
+      <div class="flex-1 md:w-1/2">
+        <h2
+          class="text-2xl font-bold leading-tight tracking-wide text-white md:text-4xl"
+        >
+          {{ $hed }}
+        </h2>
+
+        {{ with $dek }}
+          <p class="my-4 font-sans text-lg text-white">{{ . }}</p>
+        {{ end }}
+      </div>
+      <form
+        action="{{ site.Param `newsletters-action` }}"
+        method="post"
+        target="_blank"
+        x-data
+        x-form="{{ $gaForm }}"
+        data-ga-category="{{ $gaCategory }}"
+        class="flex flex-wrap justify-start gap-2 font-sans md:w-1/2"
+      >
+        {{ partial $hiddenField . }}
+        <p class="relative mt-3 flex flex-1 flex-wrap">
+          <label
+            class="flex-[0_0_100%] font-sans text-sm font-black text-g-2"
+            for="{{ $idEmail }}"
+            >Email Address</label
+          >
+          <input
+            id="{{ $idEmail }}"
+            class="spl-input h-11"
+            type="email"
+            name="EMAIL"
+            placeholder="Email address"
+            required
+          />
+          <span
+            class="pointer-events-none absolute inset-y-0 right-3 top-10 inline-flex h-4 text-g-4"
+          >
+            <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
+              {{ partial "helper/svg.html" "email" }}
+            </svg>
+          </span>
+        </p>
+        <div class="flex-0 mt-2 self-end sm:ml-5">
+          <button type="submit" class="btn-signup h-11 w-full">
+            {{ $cta }}
+          </button>
+        </div>
+      </form>
+    </div>
+  {{ end }}
+
+  {{ with eq $modalType "donate" }}
+    <div class="mx-auto max-w-5xl">
+      {{ partial "tw/donate-prefill-lg.html" (dict
+        "donateHed" $hed
+        "donateDek" $dek
+        "donateCta" $cta
+        "donateGaCategory" (page.Param "donate-ga-category")
+        "donateCampaign" "701Dn000000YgouIAC"
+        "donateTheme" "donate"
+        "donateAmounts" $donateAmounts
+        "msgWidth" "md:w-7/12"
+        "formWidth" "md:w-5/12"
+        )
+      }}
+    </div>
+  {{ end }}
+</section>

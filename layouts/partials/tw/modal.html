@@ -1,0 +1,52 @@
+{{ $data := site.Data.segments }}
+
+{{ if eq $data.newsletterUserActive "true" }}
+  {{ partial $data.newsletterUserLayouts ( dict
+    "type" $data.newsletterUserModalType
+    "hed" $data.newsletterUserHed
+    "dek" $data.newsletterUserDek
+    "cta" $data.newsletterUserCta
+    "hiddenField" $data.newsletterUserNewsletter
+    "donateAmounts" $data.newsletterUserAmounts
+    )
+  }}
+{{ end }}
+
+{{ if eq $data.referralUserActive "true" }}
+  {{ partial $data.referralUserLayouts ( dict
+    "type" $data.referralUserModalType
+    "hed" $data.referralUserHed
+    "dek" $data.referralUserDek
+    "cta" $data.referralUserCta
+    "hiddenField" $data.referralUserNewsletter
+    "donateAmounts" $data.referralUserAmounts
+    "donateUrl" $data.referralUserDonateUrl
+    )
+  }}
+{{ end }}
+
+{{ if eq $data.searchUserActive "true" }}
+  {{ partial $data.searchUserLayouts ( dict
+    "type" $data.searchUserModalType
+    "hed" $data.searchUserHed
+    "dek" $data.searchUserDek
+    "cta" $data.searchUserCta
+    "hiddenField" $data.searchUserNewsletter
+    "donateAmounts" $data.searchUserAmounts
+    "donateUrl" $data.searchUserDonateUrl
+    )
+  }}
+{{ end }}
+
+{{ if eq $data.engagedUserActive "true" }}
+  {{ partial $data.engagedUserLayouts ( dict
+    "type" $data.engagedUserModalType
+    "hed" $data.engagedUserHed
+    "dek" $data.engagedUserDek
+    "cta" $data.engagedUserCta
+    "hiddenField" $data.engagedUserNewsletter
+    "donateAmounts" $data.engagedUserAmounts
+    "donateUrl" $data.engagedUserDonateUrl
+    )
+  }}
+{{ end }}

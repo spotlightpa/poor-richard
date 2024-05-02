@@ -1,0 +1,128 @@
+{{ $magicPixel := "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" | safeURL }}
+{{ $gaForm :=  "newsletters:papost-full" }}
+{{ $gaCategory := "newsletters:papost" }}
+{{ $modalType := .type }}
+{{ $hiddenField := .hiddenField }}
+{{ $hed := .hed }}
+{{ $dek := .dek }}
+{{ $cta := .cta }}
+{{ $donateUrl := .donateUrl }}
+{{ $donateAmounts := .donateAmounts }}
+
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+<section
+  data-modal-kind="sticky"
+  class="max-w-screen fixed bottom-0 right-0 z-10"
+  x-data="sticky"
+  x-show="isOpen"
+  x-transition:enter="transition ease-out duration-500"
+  x-transition:enter-start="opacity-0 transform translate-x-8"
+  x-transition:enter-end="opacity-100 transform translate-x-0"
+  x-transition:leave="transition ease-in duration-500"
+  x-transition:leave-start="opacity-100 transform translate-x-0"
+  x-transition:leave-end="opacity-0 transform translate-x-8"
+  @open-sticky.window="show()"
+  @close-sticky.window="close()"
+  data-ga-category="modal:sticky"
+  @keydown.escape="close"
+  x-cloak
+>
+  <button
+    type="button"
+    class="
+      absolute left-4 top-4 flex
+      h-6 w-6 rounded-full
+      bg-black bg-opacity-40 text-white
+      hover:text-yellow"
+    aria-label="close"
+    @click="close"
+    x-ref="close"
+  >
+    <svg class="m-auto h-4 w-4 fill-current">
+      {{ partial "helper/svg.html" "times" }}
+    </svg>
+  </button>
+  <div
+    class="mx-4my-2 flex cursor-pointer ring-yellow focus:outline-none focus:ring-2"
+    x-data="{showForm: false}"
+    @click="showForm = true"
+  >
+    {{ with eq $modalType "newsletter" }}
+      <form
+        action="{{ site.Param `newsletters-action` }}"
+        method="post"
+        target="_blank"
+        x-data
+        x-form="{{ $gaForm }}"
+        data-ga-category="{{ $gaCategory }}"
+        class=" w-80 space-y-3 rounded-lg border-4 border-white bg-black p-4 text-center font-sans shadow-md"
+        :class="showForm ? 'w-96' : 'w-80'"
+      >
+        {{ partial $hiddenField . }}
+        <h3 class="text-xl font-black leading-none text-white md:text-4xl">
+          {{ $hed | safeHTML }}
+        </h3>
+        <p class=" text-white">
+          {{ $dek }}
+        </p>
+
+        <p x-cloak x-show="showForm" x-transition class="relative flex-grow">
+          <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+          <input
+            id="{{ $idEmail }}"
+            class="spl-input"
+            type="email"
+            name="EMAIL"
+            placeholder="Email address"
+            required
+          />
+          <span
+            class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+            aria-hidden="true"
+          >
+            <svg class="h-4 w-4 fill-current">
+              {{ partial "helper/svg.html" "email" }}
+            </svg>
+          </span>
+        </p>
+        <button
+          class="btn-signup-slim"
+          type="button"
+          :class="showForm ? 'hidden' : 'block'"
+        >
+          Signup
+        </button>
+
+        <button
+          class="btn-signup-slim"
+          type="submit"
+          :class="showForm ? 'block' : 'hidden'"
+        >
+          {{ $cta }}
+        </button>
+      </form>
+    {{ end }}
+    {{ with eq $modalType "donate" }}
+      <div
+        class=" w-80 space-y-3 rounded-lg border-4 border-white bg-black p-4 text-center font-sans shadow-md"
+        data-donate-theme="donate"
+      >
+        <a href="{{ $donateUrl }}">
+          <h3 class="text-xl font-black leading-none text-white md:text-4xl">
+            {{ $hed }}
+          </h3>
+          <p class=" text-white">
+            {{ $dek }}
+          </p>
+          <span
+            class="btn-donate mt-2 inline-block w-full flex-auto border-none font-black outline-none"
+          >
+            {{ $cta }}</span
+          >
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>
