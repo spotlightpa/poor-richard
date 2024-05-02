@@ -21,6 +21,8 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+{{<audio label="Click here to listen to an audio introduction to this story." src="https://files.data.spotlightpa.org/uploads/01k3/72z8/opioid.mp3" >}}
+
 HARRISBURG — Records obtained by Spotlight PA and WESA offer the most comprehensive public accounting to date of how counties across the state have used tens of millions of dollars they received in opioid settlement money.
 
 The state’s billion-dollar opioid windfall has brought hope to a state where thousands of people each year die from drug overdoses. It’s also brought conflict about the best way to <a href="https://www.spotlightpa.org/news/2023/04/pa-opioid-settlement-money-cases-police-treatment-johnson-johnson/">use the money</a>.
