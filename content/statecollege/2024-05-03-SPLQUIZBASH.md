@@ -34,7 +34,7 @@ Buy your ticket now:
 <!-- Noscript content for added SEO -->
 <noscript><a href="https://www.eventbrite.com/e/clink-and-think-quiz-bash-fundraiser-with-spotlight-pa-tickets-883522308007" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
 <!-- You can customize this button any way you like -->
-<button id="eventbrite-widget-modal-trigger-883522308007" type="button">Buy Tickets</button>
+<button id="eventbrite-widget-modal-trigger-883522308007" type="button" class="btn-signup">Buy Tickets</button>
 
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
