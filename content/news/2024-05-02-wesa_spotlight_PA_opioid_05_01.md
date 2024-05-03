@@ -21,8 +21,6 @@ topics = ["Health"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-{{<audio label="Click here to listen to an audio introduction to this story." src="https://files.data.spotlightpa.org/uploads/01k3/72z8/opioid.mp3" >}}
-
 HARRISBURG — Records obtained by Spotlight PA and WESA offer the most comprehensive public accounting to date of how counties across the state have used tens of millions of dollars they received in opioid settlement money.
 
 The state’s billion-dollar opioid windfall has brought hope to a state where thousands of people each year die from drug overdoses. It’s also brought conflict about the best way to <a href="https://www.spotlightpa.org/news/2023/04/pa-opioid-settlement-money-cases-police-treatment-johnson-johnson/">use the money</a>.
@@ -60,11 +58,11 @@ In order to receive the money, counties had to agree to use it in ways that are 
 
 <a href="https://www.documentcloud.org/documents/24601352-cameron-response?responsive=1&amp;title=1">Cameron</a> and <a href="https://www.documentcloud.org/documents/24604438-mahon-ans?responsive=1&amp;title=1">Schuylkill</a> Counties initially denied open records requests from Spotlight PA, saying the trust had yet to determine whether the spending described in their reports complied with the requirements of the opioid settlements. After an appeal to the state Office of Open Records, Cameron provided <a href="https://www.documentcloud.org/documents/24628737-cameron?responsive=1&amp;title=1">its report</a>. The news organization’s appeal of Schuylkill’s denial was pending as of April 30.
 
-Earlier this year, members of the oversight board approved a plan to review these spending reports in secret committee meetings, <a href="https://www.spotlightpa.org/news/2024/03/opioid-settlement-secret-review/">despite a court order requiring that the trust follow the state’s open meetings law</a>. The trust says <a href="https://www.paopioidtrust.org/press-release/2024/opioid-trust-fund-recipients-report-expenditure">“additional review”</a> will take place at public meetings scheduled for May 2 and June 20.
+Earlier this year, members of the oversight board approved a plan to review these spending reports in secret committee meetings, <a href="https://www.spotlightpa.org/news/2024/03/opioid-settlement-secret-review/">despite a court order requiring that the trust follow the state’s open meetings law</a>. The trust took public action on programs on May 2 and says <a href="https://www.paopioidtrust.org/press-release/2024/opioid-trust-fund-recipients-report-expenditure">“additional review”</a> will take place at a public meeting on June 20.
 
 <a href="https://www.paopioidtrust.org/payment,-spending-and-reporting/reporting">The trust recently published</a> a summary of reported spending by category, but that information does not identify specific counties or other local agencies.
 
-While county officials wait to hear if the trust will publicly approve their strategies, people like Cathleen Palm are reviewing the available records to learn about counties’ decisions.
+In the meantime, people like Cathleen Palm are reviewing the available records to learn about counties’ decisions.
 
 The Berks County resident is the founder of the Center for Children’s Justice, which advocates for child protection and family issues. She said she believes the reports can help advocates with limited resources influence the process going forward.
 
@@ -125,6 +123,8 @@ In its spending report, the county said Project Sticker Shock is designed to “
 In response to questions from Spotlight PA and WESA, the county cited <a href="https://pubmed.ncbi.nlm.nih.gov/22712674/">two</a> academic journal <a href="https://www.jahonline.org/article/S1054-139X(12)00231-5/abstract">articles</a>, said many adults are not aware of the law and the penalties for providing alcohol to anyone under 21, and said the warning stickers have also been placed on pizza boxes.
 
 The county’s response said the program is consistent with Exhibit E, and argued it aligns with multiple approved uses, including for school-based and youth-focused initiatives “that have demonstrated effectiveness in preventing drug misuse and seem likely to be effective in preventing the uptake and use of opioids.”
+
+Members of the trust voted to disapprove of this use on May 2.
 
 Chester County’s spending report also describes dedicating funds for other initiatives, including access to opioid overdose reversal medication, expanded toxicology testing in its coroner’s office, and medication-assisted treatment treatment to people who are incarcerated.
 
