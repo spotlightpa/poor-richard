@@ -1,4 +1,5 @@
 +++
+aliases = ["/quizbash/"]
 blurb = "Join Spotlight PA for a “Clink and Think” quiz bash on Sunday, Sept. 15 from 4:30-7:30 p.m."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a “Clink and Think” quiz bash on Sunday, Sept. 15 from 4:30-7:30 p.m."
