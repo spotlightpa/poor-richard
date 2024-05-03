@@ -1,5 +1,4 @@
 +++
-aliases = ["/quizbash/"]
 blurb = "Join Spotlight PA for a \"Clink and Think\" quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a \"Clink and Think\" quiz bash on Sunday, Aug. 6, from 4:30-7:30 p.m."
@@ -11,6 +10,7 @@ image-description = "Spotlight PA Quizbash Fundraiser"
 internal-id = "SPLEVCLINK"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-06-26T15:02:40.696-04:00
 slug = "pa-state-college-anniversary-event"
 suppress-date = false
