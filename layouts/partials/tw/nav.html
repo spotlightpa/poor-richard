@@ -3,7 +3,7 @@
 </a>
 
 <div
-  class="top-0 border-b border-black bg-beige font-sans"
+  class="top-0 border-b border-black bg-beige font-sans transition-all sm:h-[145px] md:h-[165px]"
   x-data="{ isOpen: false }"
   :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px] transition-all': atTop }"
   data-ga-category="top-banner"
@@ -20,7 +20,6 @@
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
           class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-14 md:w-[15rem]"
-          x-cloak
           x-show="atTop"
           x-transition:enter="transition ease-out duration-150"
           x-transition:enter-start="opacity-0 scale-10"
@@ -120,6 +119,14 @@
         </div>
       </div>
 
+      <!-- no JS fallback link to footer -->
+      <a
+        class="no-js:flex sm-w-1/2 group relative z-40 mx-0 hidden flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
+        href="#footer"
+      >
+        {{ template "nav-hamburger-button" . }}
+      </a>
+
       <button
         id="hamburger-button"
         class="no-js:hidden sm-w-1/2 group relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
@@ -206,7 +213,6 @@
       flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3
       text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base
       "
-      x-cloak
       x-show="atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
@@ -221,7 +227,6 @@
 
   <nav
     class="hidden h-11 border-t bg-white font-sans sm:block"
-    x-cloak
     x-show="atTop"
     x-transition:enter="transition ease-out duration-150"
     x-transition:enter-start="opacity-0 scale-10"
@@ -252,14 +257,6 @@
           </li>
         {{ end }}
       </ul>
-
-      <!-- no JS fallback link to footer -->
-      <a
-        class="no-js:flex group z-40 order-1 mx-0 flex-[0_1_70px] flex-row items-center gap-1 self-stretch text-sm font-bold leading-none tracking-wide"
-        href="#footer"
-      >
-        {{ template "nav-hamburger-button" . }}
-      </a>
     </div>
   </nav>
 </div>

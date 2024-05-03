@@ -273,7 +273,7 @@ Cuando se le preguntó por las dudas que persisten sobre la integridad de las el
 
 <h3 id="spl-heading-10">Craig Williams</h3>
 
-<a href="https://www.craigwilliamsforpa.com/"><strong>Página web</strong></a>
+<a href="https://web.archive.org/web/20231129145656/https://www.craigwilliamsforpa.com/"><strong>Página web</strong></a>
 
 Nacido en Alabama, Williams se licenció en la Universidad de Duke, la Facultad de Derecho Levin de la Universidad de Florida y la Facultad de Derecho de Columbia.
 
