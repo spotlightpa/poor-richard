@@ -11,9 +11,8 @@
 {{ $donateAmount := split $donateAmounts "," }}
 {{ $donateFirst := index $donateAmount 0 }}
 {{ $donateDefault := int $donateFirst }}
-<pre class="p-5 text-white">
-{{ $donateAmounts }}
-</pre>
+
+
 <div
   class="flex flex-1 flex-wrap justify-start gap-2 font-sans md:w-1/2"
   data-ga-category="{{ $donateGaCategory }}"

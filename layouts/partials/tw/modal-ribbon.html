@@ -131,7 +131,7 @@
                 >
                 <input
                   id="{{ $idEmail }}"
-                  class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                  class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:flex-1 sm:rounded-br-none sm:rounded-tr-none"
                   @focus.once="hasFocused = true"
                   type="email"
                   name="EMAIL"
@@ -139,7 +139,7 @@
                   required
                 />
                 <button
-                  class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider text-yellow hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+                  class=" box-border w-full rounded bg-black py-2 font-black tracking-wider text-yellow hover:shadow sm:w-max sm:min-w-32 sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                   type="submit"
                 >
                   {{ $cta }}

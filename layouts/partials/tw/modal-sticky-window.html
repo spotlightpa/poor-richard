@@ -3,7 +3,7 @@
 {{ $gaCategory := "newsletters:papost" }}
 {{ $modalType := .type }}
 {{ $hiddenField := .hiddenField }}
-{{ $hed := .hed }}
+{{ $hed := .hed | safeHTML }}
 {{ $dek := .dek }}
 {{ $cta := .cta }}
 {{ $donateUrl := .donateUrl }}
@@ -32,7 +32,7 @@
   <button
     type="button"
     class="
-      absolute left-4 top-4 flex
+      absolute left-8 top-6 flex
       h-6 w-6 rounded-full
       bg-black bg-opacity-40 text-white
       hover:text-yellow"
@@ -45,7 +45,7 @@
     </svg>
   </button>
   <div
-    class="mx-4my-2 flex cursor-pointer ring-yellow focus:outline-none focus:ring-2"
+    class="mx-4 my-2 flex cursor-pointer ring-yellow focus:outline-none focus:ring-2"
     x-data="{showForm: false}"
     @click="showForm = true"
   >
@@ -62,7 +62,7 @@
       >
         {{ partial $hiddenField . }}
         <h3 class="text-xl font-black leading-none text-white md:text-4xl">
-          {{ $hed | safeHTML }}
+          {{ $hed }}
         </h3>
         <p class=" text-white">
           {{ $dek }}
@@ -106,7 +106,7 @@
     {{ end }}
     {{ with eq $modalType "donate" }}
       <div
-        class=" w-80 space-y-3 rounded-lg border-4 border-white bg-black p-4 text-center font-sans shadow-md"
+        class=" w-80 space-y-3 rounded-lg border-4 border-white bg-black px-6 py-12 text-center font-sans shadow-md md:p-6"
         data-donate-theme="donate"
       >
         <a href="{{ $donateUrl }}">

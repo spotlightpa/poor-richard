@@ -64,35 +64,37 @@
         x-data
         x-form="{{ $gaForm }}"
         data-ga-category="{{ $gaCategory }}"
-        class="flex flex-wrap justify-start gap-2 font-sans md:w-1/2"
+        class="font-sans md:w-1/2"
       >
         {{ partial $hiddenField . }}
-        <p class="relative mt-3 flex flex-1 flex-wrap">
-          <label
-            class="flex-[0_0_100%] font-sans text-sm font-black text-g-2"
-            for="{{ $idEmail }}"
-            >Email Address</label
-          >
-          <input
-            id="{{ $idEmail }}"
-            class="spl-input h-11"
-            type="email"
-            name="EMAIL"
-            placeholder="Email address"
-            required
-          />
-          <span
-            class="pointer-events-none absolute inset-y-0 right-3 top-10 inline-flex h-4 text-g-4"
-          >
-            <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
-              {{ partial "helper/svg.html" "email" }}
-            </svg>
-          </span>
-        </p>
-        <div class="flex-0 mt-2 self-end sm:ml-5">
-          <button type="submit" class="btn-signup h-11 w-full">
-            {{ $cta }}
-          </button>
+        <div class="flex flex-wrap justify-start gap-x-4">
+          <p class="relative mt-3 flex w-1/2 min-w-48 flex-1 flex-wrap">
+            <label
+              class="flex-[0_0_100%] font-sans text-sm font-black text-g-2"
+              for="{{ $idEmail }}"
+              >Email Address</label
+            >
+            <input
+              id="{{ $idEmail }}"
+              class="spl-input h-11"
+              type="email"
+              name="EMAIL"
+              placeholder="Email address"
+              required
+            />
+            <span
+              class="pointer-events-none absolute inset-y-0 right-3 top-8 inline-flex h-4 text-g-4"
+            >
+              <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
+                {{ partial "helper/svg.html" "email" }}
+              </svg>
+            </span>
+          </p>
+          <div class="mt-2 self-end">
+            <button type="submit" class="btn-signup h-11 w-full">
+              {{ $cta }}
+            </button>
+          </div>
         </div>
       </form>
     </div>
