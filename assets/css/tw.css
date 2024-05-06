@@ -349,4 +349,8 @@
   display: none;
 }
 
+.has-old-js .no-js\:static {
+  position: static;
+}
+
 /*! purgecss end ignore */
