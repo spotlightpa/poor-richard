@@ -1,6 +1,7 @@
 {{ $sizes := .sizes }}
 {{ $imagename := .filename }}
 {{ $gravity := .gravity }}
+{{ $absURL := .absURL }}
 {{ $imgs := slice }}
 
 {{ range $sizes }}
@@ -13,6 +14,7 @@
     "height" $height
     "gravity" $gravity
     "ext" "webp"
+    "absURL" $absURL
   }}
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   {{ $src := printf "%s %dw" $url $width }}
