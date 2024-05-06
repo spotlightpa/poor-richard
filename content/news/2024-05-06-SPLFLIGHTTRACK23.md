@@ -25,7 +25,7 @@ HARRISBURG — The two-engine, eight-seat Beechcraft King Air 350i took off from
 
 After a two-hour flight, it arrived at Hilton Head Island in South Carolina, a ritzy vacation spot known for beaches and golf courses, to meet its passenger — Gov. Josh Shapiro.
 
-The next day, the plane left Hilton Head at 7 a.m. for a flight back to Pennsylvania, bringing Shapiro to Scranton. It then deposited the Democrat back in South Carolina a little before 3 p.m.
+The next day, the plane left Hilton Head at 7 a.m. for a flight back to Pennsylvania, bringing Shapiro to Scranton to attend a funeral in his official capacity. It then deposited the Democrat back in South Carolina a little before 3 p.m.
 
 One last two-hour flight returned the plane to Harrisburg, where it arrived around 5:40 p.m. on Aug. 18.
 
