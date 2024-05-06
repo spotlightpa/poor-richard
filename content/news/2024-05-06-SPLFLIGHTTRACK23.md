@@ -3,7 +3,7 @@ aliases = ["stateplane"]
 authors = ["Stephen Caruso"]
 blurb = "Pennsylvania taxpayers paid $410,000 for state flights last year, the most since 2011. Shapiro took most of those flights."
 byline = "Stephen Caruso of Spotlight PA"
-description = "PA spent $410,000 for state flights last year, the most since 2011. Gov. Josh Shapiro took most of those flights."
+description = "Taxpayers spent $410,000 for state flights in 2023, the most since 2011. Gov. Josh Shapiro took most of those flights."
 image = "2024/05/01k3-9y2k-0sqk-efs9.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "An illustration of planes flying across Pennsylvania."
@@ -15,7 +15,7 @@ published = 2024-05-06T04:00:00-04:00
 slug = "pennsylvania-josh-shapiro-state-plane-taxpayer-cost"
 suppress-date = false
 title = "Gov. Josh Shapiro uses Pennsylvania’s state plane much more than his predecessor"
-title-tag = "PA plane use grows under Gov. Josh Shapiro"
+title-tag = "PA Gov. Josh Shapiro makes big use of taxpayer-paid plane"
 topics = ["Josh Shapiro"]
 +++
 
