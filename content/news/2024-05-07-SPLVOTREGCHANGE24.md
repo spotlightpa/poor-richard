@@ -14,7 +14,7 @@ published = 2024-05-07T04:00:00-04:00
 slug = "pennsylvania-election-2024-voter-registration-democrat-republican-independent"
 suppress-date = false
 title = "Where Pennsylvania has lost Democrats since 2008, and what it means for the November election"
-title-tag = "Where Pennsylvania is losing Democrats"
+title-tag = "PA Voter Registration: Dems Face Decline as Election Looms"
 topics = ["Elections"]
 +++
 
