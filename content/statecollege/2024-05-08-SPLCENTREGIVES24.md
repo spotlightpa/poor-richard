@@ -48,5 +48,5 @@ With your support, Xian can continue keeping our local elected officials honest.
 
 At Spotlight PA, we believe everyone should have access to critical news and information — no matter where they live or what they can afford. That’s why our essential journalism is free for everyone. We also share our work, at no cost, with more than 100 news outlets across Pennsylvania, including the Centre Daily Times, WPSU, and StateCollege.com.
 
-Ensuring this vital public service continues depends on your generosity today. Visit <a href="http://spotlight.org/centre">spotlight.org/centre</a> to make your donation. Also, stop by and say hi at our booth at Centre Gives Fest, 5-8 p.m. May 9 at Talleyrand Park in Bellefonte!
+Ensuring this vital public service continues depends on your generosity today. Visit <a href="https://www.spotlightpa.org/centre">spotlightpa.org/centre</a> to make your donation. Also, stop by and say hi at our booth at Centre Gives Fest, 5-8 p.m. May 9 at Talleyrand Park in Bellefonte!
 
