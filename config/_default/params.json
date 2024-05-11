@@ -30,7 +30,7 @@
   ],
   "ad-rail-link": "/donate",
   "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit?\u003c/strong\u003e Learn more about our nonpartisan journalism »",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ffcb05",
   "banner-link": "/about/",
   "banner-text-color": "#000000",
