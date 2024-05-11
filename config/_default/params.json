@@ -9,9 +9,9 @@
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "Support Spotlight PA's unmatched election reporting.",
+  "ad-featured-image-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01jz/sqzm/the-perfect-gift-15-.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
   ],
   "ad-featured-link": "/donate",
   "ad-headwater-active": false,
@@ -23,13 +23,10 @@
     "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-headwater-link": "/donate",
-  "ad-rail-active": false,
+  "ad-rail-active": true,
   "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
   "ad-rail-images": [
-    "https://files.data.spotlightpa.org/uploads/01jy/3syx/4.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3syq/3.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3syg/2.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sya/1.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yp2m/sunshine-week-2024-600-x-300-px-.png"
   ],
   "ad-rail-link": "/donate",
   "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit?\u003c/strong\u003e Learn more about our nonpartisan journalism »",
@@ -77,10 +74,10 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Support Spotlight PA's unmatched investigative and public-service reporting for Pennsylvania.",
+  "sidebar-sticky-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01k2/jb8m/general-donate-300-x-250-3-.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
@@ -98,33 +95,33 @@
   ],
   "sticky-link": "/newsletters",
   "support-active": true,
-  "support-bg-color": "#ffebeb",
+  "support-bg-color": "#ebf6ff",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CLICK TO CONTRIBUTE NOW »",
   "support-hed": "BEFORE YOU GO, A QUICK REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "I hope you appreciated this article. Before you move on, please consider supporting Spotlight PA's nonprofit journalism amid a high-stakes year for Pennsylvania and our democracy.\n\nOur 2024 coverage is unlike anything you’ll find anywhere else. We’re covering all angles of the upcoming election, focused squarely on the stakes for voters, not the horse race. We’re holding the Shapiro administration and our state legislature accountable. And we’re delivering insightful investigative and explanatory journalism about urgent statewide issues and policies. \n\nAcross this country, a small number of billionaire owners and mega-corporations have a grip on our community media outlets — or worse, they're stripping them for parts and profit. Spotlight PA is different. Our journalism is produced to serve the public interest and to serve you — not profit motives.\n\n\u003cstrong\u003eWe do this work for you, but we cannot do it without you.\u003c/strong\u003e\n\nNearly 1/3 of our total budget comes from individuals like you. Your support enables us to produce unique investigative and public-service reporting that demands accountability, inspires changes, and strengthens democracy. It's quick and any amount helps. Thank you for doing your part.\n\nWith gratitude,\nChristopher Baxter\nEditor in Chief, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "I hope you appreciated this article. Before you move on, please consider supporting Spotlight PA's nonprofit journalism amid a high-stakes year for Pennsylvania and our democracy. \u003cstrong\u003eAs a special bonus today, all gifts will be DOUBLED as part of our Spring Member Drive.\u003c/strong\u003e\n\nOur 2024 coverage is unlike anything you’ll find anywhere else. We’re covering all angles of the upcoming election, focused squarely on the stakes for voters, not the horse race. We’re holding the Shapiro administration and our state legislature accountable. And we’re delivering insightful investigative and explanatory journalism about urgent statewide issues and policies. \n\nAcross this country, a small number of billionaire owners and mega-corporations have a grip on our community media outlets — or worse, they're stripping them for parts and profit. Spotlight PA is different. Our journalism is produced to serve the public interest and to serve you — not profit motives.\n\n\u003cstrong\u003eWe do this work for you, but we cannot do it without you.\u003c/strong\u003e\n\nNearly 1/3 of our total budget comes from individuals like you. Your support enables us to produce unique investigative and public-service reporting that demands accountability, inspires changes, and strengthens democracy. It's quick and any amount helps — and right now it will be matched dollar-for-dollar. Thank you for doing your part.\n\nWith gratitude,\nChristopher Baxter\nEditor in Chief, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "Hurry a gift in support of trusted, nonpartisan journalism before our DOUBLE match expires at 11:59 p.m. tonight! Can we count on you now?",
   "takeover-hed": "Only 12 hours left to support Spotlight PA",
   "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
-  "topper-active": false,
+  "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01k2/cx1c/spring-campaign-topper-tracker.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-campaign-topper-tracker-1-.png"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#004590",
-  "topper-image-description": "Support trusted, unbiased election reporting for Pennsylvania.",
+  "topper-divider-color": "#ffffff",
+  "topper-image-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01k2/cxek/spring-campaign-2023-rectangles-24-.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-campaign-2023-rectangles-33-.png"
   ],
   "topper-mobile-width": 1024
 }
