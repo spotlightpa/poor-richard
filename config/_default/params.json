@@ -1,11 +1,11 @@
 {
-  "ad-breaker-active": false,
+  "ad-breaker-active": true,
   "ad-breaker-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-breaker-images": [
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yq78/1.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/4.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/3.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/2.png"
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
@@ -14,13 +14,13 @@
     "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
   ],
   "ad-featured-link": "/donate",
-  "ad-headwater-active": false,
+  "ad-headwater-active": true,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
-    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
+    "https://files.data.spotlightpa.org/uploads/01k3/yq78/1.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/4.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/3.png",
+    "https://files.data.spotlightpa.org/uploads/01k3/yq79/2.png"
   ],
   "ad-headwater-link": "/donate",
   "ad-rail-active": true,
