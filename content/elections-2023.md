@@ -12,7 +12,7 @@ extended-kicker = "Pa. Election Center 2023"
 linktitle = "Everything you need to prepare for Pa.’s 2023 election"
 blurb = "Spotlight PA wants to empower voters to make an informed decision on May 16. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
 url = "/elections-2023/"
-layout = "elections"
+layout = "page-landing"
 type = "elections"
 guide = "series/voting-guides-2023/_index.md"
 credits = """
@@ -129,6 +129,38 @@ donate ="""
 """
 
 [[blocks]]
+layout = "internal-links"
+
+
+[[blocks.link]]
+title = "Voter Guides"
+link = "guides"
+
+[[blocks.link]]
+title = "Issues"
+link = "court-tool"
+
+[[blocks.link]]
+title = "Election Event Series"
+link = "events"
+
+[[blocks.link]]
+title = "Coverage"
+link = "coverage"
+
+# [[internal-links]]
+# title = "Español"
+# link = "#espan"
+
+[[blocks.link]]
+title = "Ask Us"
+link = "contact"
+
+[[blocks.link]]
+title = "Credits"
+link = "credits"
+
+[[blocks]]
 title = "PA Election 2023: Candidate and Voting Guides"
 slug = "guides"
 layout = "story-collection"
@@ -187,34 +219,6 @@ layout = "story-collection"
 timeFilter = "2023-08-01"
 collection = "topics/español/_index.md"
 collectionReadMore = "Leer Más Historias De La Elección PA 2023"
-
-[[internal-links]]
-title = "Voter Guides"
-link = "guides"
-
-[[internal-links]]
-title = "Issues"
-link = "court-tool"
-
-[[internal-links]]
-title = "Election Event Series"
-link = "events"
-
-[[internal-links]]
-title = "Coverage"
-link = "coverage"
-
-# [[internal-links]]
-# title = "Español"
-# link = "#espan"
-
-[[internal-links]]
-title = "Ask Us"
-link = "contact"
-
-[[internal-links]]
-title = "Credits"
-link = "credits"
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to primers on obscure government processes.

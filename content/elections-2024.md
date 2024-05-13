@@ -16,7 +16,7 @@ aliases = [
     "/election/",
     "/elections/"
 ]
-layout = "elections"
+layout = "page-landing"
 type = "elections"
 guide = "series/voting-guides-2024/_index.md"
 takeover = """
@@ -144,6 +144,38 @@ donate ="""
     cta="Donate"
 >}}
 """
+
+[[blocks]]
+layout = "internal-links"
+
+[[blocks.link]]
+title = "Voter Guides"
+link = "guides"
+
+[[blocks.link]]
+title = "Candidate Quiz"
+link = "candidate-quiz"
+
+[[blocks.link]]
+title = "Events"
+link = "events"
+
+[[blocks.link]]
+title = "Elections 101"
+link = "elections-101"
+
+[[blocks.link]]
+title = "More Coverage"
+link = "coverage"
+
+[[blocks.link]]
+title = "Ask Us"
+link = "contact"
+
+[[blocks.link]]
+title = "Credits"
+link = "credits"
+
 [[blocks]]
 title = "PA Election 2024: Voter Guides"
 slug = "guides"
@@ -212,36 +244,6 @@ layout = "story-collection"
 timeFilter = "2024-01-01"
 collection = "topics/español/_index.md"
 collectionReadMore = "Leer Más Historias De La Elección PA 2024"
-
-
-[[internal-links]]
-title = "Voter Guides"
-link = "guides"
-
-[[internal-links]]
-title = "Candidate Quiz"
-link = "candidate-quiz"
-
-[[internal-links]]
-title = "Events"
-link = "events"
-
-[[internal-links]]
-title = "Elections 101"
-link = "elections-101"
-
-[[internal-links]]
-title = "More Coverage"
-link = "coverage"
-
-[[internal-links]]
-title = "Ask Us"
-link = "contact"
-
-[[internal-links]]
-title = "Credits"
-link = "credits"
-
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to [primers on election misinformation](https://www.spotlightpa.org/series/elections-101/). Our goal is that the resources on this page will give you the critical information you need to confidently cast your vote, and answer some questions you didn’t know you had in the process.
