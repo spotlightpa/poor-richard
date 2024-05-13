@@ -1,33 +1,23 @@
 +++
 arc-id = "VZD7LMO3RBB6FK3FWD6IKTXU4A"
-internal-id = "SPLDISTRICTS14"
-internal-budget = ""
-image = "external/grq2sbgmezfn647r38mh2dv2bg.jpeg"
-image-description = "Inside the Pennsylvania Supreme Court"
-image-caption = ""
-image-credit = "Christopher Millette / PennLive"
-image-size = ""
-published = 2021-01-13T18:14:10Z
-slug = "pennsylvania-judicial-districts-supreme-court-election-2020-rulings-republican-majority"
 authors = ["Marie Albiges"]
-byline = "Marie Albiges of Spotlight PA"
-title = "Angered by Pa. Supreme Court rulings, GOP moves to exert more control over judiciary branch "
-subtitle = ""
-description = "The majority party has made overhauling the courts a priority after a slew of unsuccessful litigation involving the administration of the 2020 election as well as the coronavirus pandemic."
 blurb = "The majority party has made overhauling the courts a priority after a slew of unsuccessful litigation involving the administration of the 2020 election as well as the coronavirus pandemic."
+byline = "Marie Albiges of Spotlight PA"
+description = "The majority party has made overhauling the courts a priority after a slew of unsuccessful litigation involving the administration of the 2020 election as well as the coronavirus pandemic."
+image = "external/grq2sbgmezfn647r38mh2dv2bg.jpeg"
+image-credit = "Christopher Millette / PennLive"
+image-description = "Inside the Pennsylvania Supreme Court"
+internal-id = "SPLDISTRICTS14"
 kicker = "The Capitol"
-topics = ["The Capitol"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2021-01-13T13:14:10-05:00
+slug = "pennsylvania-judicial-districts-supreme-court-election-2020-rulings-republican-majority"
+suppress-date = false
+suppress-featured = false
+title = "Angered by Pa. Supreme Court rulings, GOP moves to exert more control over judiciary branch "
+topics = ["The Capitol"]
 +++
 
 <i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
@@ -50,7 +40,7 @@ Lawmakers would redraw judicial districts every 10 years, as they do for congres
 
 But opponents of the amendment said it would threaten judges’ ability to render statewide decisions without influence, because they would be beholden to a regional constituency and to lawmakers who could draw them out of a district if they don’t like a judge’s ruling. Lawmakers could also gerrymander the districts to ensure the judges they want are elected.
 
-Only two states — <a href="http://www.judicialselection.us/judicial_selection/methods/selection_of_judges.cfm?state=">Illinois and Louisiana</a> — elect appellate court judges in partisan districts.
+Only two states — <a href="https://web.archive.org/20210114031701/http://www.judicialselection.us/judicial_selection/methods/selection_of_judges.cfm?state=">Illinois and Louisiana</a> — elect appellate court judges in partisan districts.
 
 “It’s really an attempt to hold the judiciary accountable and threaten their independence,” said Deborah Gross, president and CEO of Pennsylvanians for Modern Courts, which advocates for judges to be chosen through an independent merit selection process.
 

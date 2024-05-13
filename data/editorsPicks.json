@@ -1,28 +1,28 @@
 {
   "edCallout": [
-    "content/news/2024-03-25-SPLRESPROJ.md",
-    "content/news/2024-03-25-SPL_67_counties.md"
+    "content/news/2024-05-02-wesa_spotlight_PA_opioid_05_01.md",
+    "content/news/2024-05-03-SPLSHAP23GIFTS.md"
   ],
   "edImpact": [
     "content/news/2023-03-09-SPLCOMPETENCY.md",
     "content/news/2023-01-23-SPLMORTGAGE.md"
   ],
   "edInvestigations": [
-    "content/news/2024-02-12-SPLHEHON.md",
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
+    "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md",
+    "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-05-03-SPLSHAP23GIFTS.md"
+    "content/news/2024-05-13-SPLLEGETHICS24.md"
   ],
   "subfeatures": [
-    "content/news/2024-03-25-SPLRESPROJ.md",
-    "content/news/2023-12-22-SPLSHAPTRAN.md",
-    "content/news/2023-02-22-SPLTEAMPA.md"
+    "content/news/2024-05-06-SPLFLIGHTTRACK23.md",
+    "content/news/2024-05-03-SPLSHAP23GIFTS.md",
+    "content/news/2024-03-25-SPLRESPROJ.md"
   ],
   "topSlots": [
-    "content/news/2024-05-02-SPLNEWSQUIZAPR2924.md",
-    "content/news/2024-05-02-SPLVBCANVASS.md",
-    "content/news/2024-05-02-wesa_spotlight_PA_opioid_05_01.md"
+    "content/news/2024-05-13-SPLCOMPASS0524.md",
+    "content/news/2024-05-08-splchildca0422.md",
+    "content/news/2024-05-07-SPLVOTREGCHANGE24.md"
   ],
   "topper": []
 }
