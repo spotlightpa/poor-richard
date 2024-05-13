@@ -26,7 +26,7 @@ That includes trips to political conferences and other events bankrolled by camp
 
 Pennsylvania’s gift law is one of the loosest in the U.S. and places very few limits on what public officials can accept. They can accept gifts of any size, as long as they report those that meet a certain threshold on ethics filings.
 
-The law does bar lawmakers from taking gifts if doing so will influence their votes and positions. Under <a href="http://both">both</a> <a href="https://www.house.state.pa.us/rules.cfm">chambers’</a> ethics rules, lawmakers are also barred from accepting cash gifts from a lobbyist or anyone else seeking a specific legislative outcome.
+The law does bar lawmakers from taking gifts if doing so will influence their votes and positions. Under <a href="https://www.house.state.pa.us/rules.cfm">both chambers’</a> ethics rules, lawmakers are also barred from accepting cash gifts from a lobbyist or anyone else seeking a specific legislative outcome.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
