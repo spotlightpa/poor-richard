@@ -16,7 +16,6 @@
 
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
-  {{ $occurence := .Param "occurence" }}
   {{ $pages := where .Pages "Kind" "section" }}
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
@@ -57,9 +56,6 @@
         >
           {{ range $i, $page := $pages }}
             {{ $checked := eq $i 0 }}
-            {{ if not (len $page.Pages) }}
-              {{ continue }}
-            {{ end }}
             <div
               class="
                 mx-2 flex cursor-pointer p-5 transition-all
