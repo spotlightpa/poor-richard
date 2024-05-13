@@ -6,6 +6,9 @@ title-tag = "About Spotlight PA, a nonprofit newsroom"
 linktitle = "About"
 aliases = ["/about/faq/"]
 layout = "page-landing"
+
+
+
 [cascade]
 modal-exclude = true
 

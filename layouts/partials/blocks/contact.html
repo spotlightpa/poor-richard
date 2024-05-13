@@ -1,0 +1,11 @@
+{{ with .block }}
+  {{ partial "tw/form-contact.html" ( dict
+    "formID" .slug
+    "hed" .hed
+    "dek" .dek
+    "formName" .formName
+    "showAnon" .showAnon
+    "submit" .submit
+    )
+  }}
+{{ end }}
