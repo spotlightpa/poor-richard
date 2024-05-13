@@ -4,21 +4,44 @@ description = "An ongoing effort by Spotlight PA to document and share the ways 
 title-tag = "Transparency Tracker"
 linktitle = "Transparency Tracker"
 url = "/statecollege/transparency-tracker"
-layout = "transparency-tracker"
+layout = "page-landing"
 image = "2023/01/01hv-rnbb-kdh9-51jb.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-gravity = "so"
 newsletter-active = false
-supplemental = """
-{{<supplemental
+takeover = """
+{{<featured/main-takeover
+  title = "Penn State Transparency Tracker"
+  dek = "An ongoing effort by Spotlight PA to document and share the ways in which Penn State University is — and is not — being transparent with the community."
+  image = "2023/01/01hv-rnbb-kdh9-51jb.jpeg"
+>}}
+
+{{</featured/main-takeover>}}"""
+[[blocks]]
+title = "Transparency Stories"
+slug = "guides"
+layout = "story-collection"
+timeFilter = "2020-12-01"
+collection = "topics/transparency-tracker/_index.md"
+
+[[blocks]]
+layout = "contact"
+hed = "Send A Tip"
+showAnon=true
+submit="Submit"
+recipient="Wyatt Massey"
+dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at [wmassey@spotlightpa.org](mailto:wmassey@spotlightpa.org), or one of the methods described below."
+
+
+[[blocks]]
+layout = "supplemental"
+title = "You can help us cover Penn State"
 creditHed="Meet Spotlight PA’s Penn State Investigative Reporter"
 creditName="Wyatt Massey"
 creditRole="Capitol Reporter"
-email="wmassey@spotlightpa.org"
+creditEmail="wmassey@spotlightpa.org"
 creditBio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
->}}
-## You can help us cover Penn State
-
+body = """
 Unlike most public universities, Penn State is largely exempt from open records laws despite receiving taxpayer money.
 
 Beyond disclosing some basic financial information, the university mostly operates outside of the public eye. For example, Penn State does not have to make public the contracts it signs or how money is spent.
@@ -37,28 +60,17 @@ It’s important you know that we promise confidentiality if you share documents
 
 The best way to start is with a simple conversation, even if it’s off the record (meaning it’s not for publication). I look forward to hearing from you.
 
-*— **Wyatt Massey**, Penn State investigative reporter*
-{{</supplemental>}}"""
-credit = """
-{{<featured/credit-long
-hed="Meet Spotlight PA’s Penn State Investigative Reporter"
-name="Wyatt Massey"
-role="Capitol Reporter"
-email="wmassey@spotlightpa.org"
-bio="Wyatt Massey investigates how Penn State University operates, including its influence in the region and state. He previously covered faith and religion for the Chattanooga Times Free Press in Southeast Tennessee."
-shortcode="{{<supplemental>}}"
->}}"""
-form ="""
-{{<featured/promo-contact-form
-  hed="Send A Tip"
-  show-anon=true
-  recipient="Wyatt Massey"
-  dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at [wmassey@spotlightpa.org](mailto:wmassey@spotlightpa.org), or one of the methods described below."
->}}
-"""
-newsletter = """
-{{<newsletter/pennstatealert-full-form>}}
-"""
-+++
+*— **Wyatt Massey**, Penn State investigative reporter*"""
 
-The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.
+
+[[blocks]]
+title = "All Penn State Stories"
+slug = "guides"
+layout = "story-collection"
+timeFilter = "2010-12-01"
+collection = "statecollege/_index.md"
+
+[[blocks]]
+layout = "newsletter/pennstatealert"
+
++++
