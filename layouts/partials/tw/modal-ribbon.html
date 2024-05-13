@@ -83,8 +83,8 @@
                   class="-mt-14 flex aspect-video items-stretch justify-center self-stretch overflow-hidden rounded-tr md:col-start-3 md:row-start-1 md:row-end-4 md:mt-0 md:aspect-auto"
                 >
                   {{ $sizes := (slice
-                    (dict "width" 256 "height" 256)
-                    (dict "width" 512 "height" 512)
+                    (dict "width" 669 "height" 669)
+                    (dict "width" 1024 "height" 1024)
                     )
                   }}
                   {{ $srcset := partial "helper/build-srcset" (dict
@@ -96,21 +96,21 @@
 
                   {{ $imgOpt := dict
                     "filename" $imagename
-                    "width" 256
-                    "height" 256
+                    "width" 669
+                    "height" 669
                     "gravity" "ce"
                   }}
                   {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
                   {{ partial "tag/picture.html" (dict
                     "pictureClass" "w-full flex"
                     "imgClass" "w-full object-cover"
-                    "sizeHint" "256px"
+                    "sizeHint" "669px"
                     "eager" false
                     "description" ""
                     "srcset" $srcset
                     "src" $imgSmallSrc
-                    "width" 256
-                    "height" 256
+                    "width" 669
+                    "height" 669
                     )
                   }}
                 </div>
