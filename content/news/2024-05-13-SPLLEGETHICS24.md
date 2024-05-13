@@ -44,7 +44,7 @@ This loophole is apparently often used. In 2018, legislators and state employees
 
 In 2023, six lawmakers traveled to Arizona to attend a conference held by Kooth, which received a $3 million <a href="https://patreasury.gov/transparency/e-library//Home/ContractView?id=677877">contract</a> from the Department of Human Services to provide online mental health services to school districts.
 
-Four of those lawmakers — state Sens. Ryan Bizzarro (D., Erie), Jimmy Dillon (D., Philadelphia), Marty Flynn (D., Lackawanna), and Chris Gebhard (R., Lebanon) — reported travel expenses paid for by either Kooth or Kooth’s lobbyists, the DT Firm, totaling $8,500.
+Four of those lawmakers — state Rep. Ryan Bizzarro (D., Erie) and Sens Jimmy Dillon (D., Philadelphia), Marty Flynn (D., Lackawanna), and Chris Gebhard (R., Lebanon) — reported travel expenses paid for by either Kooth or Kooth’s lobbyists, the DT Firm, totaling $8,500.
 
 In a February 2023 press release, Kooth said the lawmakers went to Arizona to “highlight their work” on a panel.
 
