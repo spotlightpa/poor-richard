@@ -26,7 +26,7 @@ The vaguely worded update, which went into effect last week without the public f
 
 It has also heightened fears among pro-Palestinian and Muslim American groups that employees who express opinions that differ from the Democratic governor’s stance on the war could be unfairly punished.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/">/div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 In a May 8 email to cabinet secretaries, a Shapiro administration official wrote that the need for “moral clarity is especially pronounced today, as antisemitism, Islamophobia, and other forms of hate speech are increasing across not only Pennsylvania, but nationally and globally.”
 
