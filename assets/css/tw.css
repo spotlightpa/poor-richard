@@ -224,6 +224,15 @@
   @apply inline-block rounded border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
 }
 
+.spl-newsletter {
+  @apply my-2 ml-3 sm:float-right sm:w-1/2 md:max-w-[439px] lg:max-w-[475px];
+}
+.spl-donate {
+  @apply my-2 mr-3 sm:float-left sm:w-1/2 md:max-w-[439px] lg:max-w-[475px];
+}
+.spl-hidden {
+  @apply hidden;
+}
 .clip-triangle {
   clip-path: polygon(0 0, 0% 100%, 15% 50%);
 }
