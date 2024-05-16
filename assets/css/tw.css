@@ -225,10 +225,10 @@
 }
 
 .spl-newsletter {
-  @apply my-2 ml-3 sm:float-right sm:w-1/2 md:max-w-[439px] lg:max-w-[475px];
+  @apply my-2 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:-mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px];
 }
 .spl-donate {
-  @apply my-2 mr-3 sm:float-left sm:w-1/2 md:max-w-[439px] lg:max-w-[475px];
+  @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96 xl:max-w-[475px];
 }
 .spl-hidden {
   @apply hidden;
