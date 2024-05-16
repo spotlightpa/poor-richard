@@ -1,6 +1,6 @@
 {{ $data := site.Data.segments }}
 
-{{ if eq $data.newsletterUserActive "true" }}
+{{ if $data.newsletterUserActive }}
   {{ partial $data.newsletterUserLayouts ( dict
     "type" $data.newsletterUserModalType
     "hed" $data.newsletterUserHed
@@ -14,7 +14,7 @@
   }}
 {{ end }}
 
-{{ if eq $data.referralUserActive "true" }}
+{{ if $data.referralUserActive }}
   {{ partial $data.referralUserLayouts ( dict
     "type" $data.referralUserModalType
     "hed" $data.referralUserHed
@@ -27,7 +27,7 @@
   }}
 {{ end }}
 
-{{ if eq $data.searchUserActive "true" }}
+{{ if $data.searchUserActive }}
   {{ partial $data.searchUserLayouts ( dict
     "type" $data.searchUserModalType
     "hed" $data.searchUserHed
@@ -40,7 +40,7 @@
   }}
 {{ end }}
 
-{{ if eq $data.engagedUserActive "true" }}
+{{ if $data.engagedUserActive }}
   {{ partial $data.engagedUserLayouts ( dict
     "type" $data.engagedUserModalType
     "hed" $data.engagedUserHed
