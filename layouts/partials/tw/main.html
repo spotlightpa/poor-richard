@@ -95,7 +95,7 @@
     <div class="w-full print:!max-w-md">
       {{ partial "tw/image-hero.html" . }}
     </div>
-    <div class="md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
+    <div class="w-full md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
       {{ partial "tw/social-buttons.html" . }}
     </div>
     <div class="w-full max-w-screen-sm flex-1 md:mx-5 xl:-mr-8">
@@ -230,16 +230,28 @@
     data-ga-category="sidebar"
     id="sidebar"
   >
+    <div
+      data-ga-category="top"
+      data-sf-campaign="701Dn000000YgoeIAC"
+      class="row-start-1 mt-6 w-full"
+    >
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mb-5 w-0 min-w-full no-js:hidden flex justify-center lg:justify-start"
+        "images" (.Param "sidebar-top-images")
+        "width" (.Param "sidebar-top-width")
+        "height" (.Param "sidebar-top-height")
+        "link"  (.Param "sidebar-top-link")
+        "description"  (.Param "sidebar-top-description")
+        )
+      }}
+    </div>
+
     <div class="col-start-1 row-start-1 row-end-3">
       {{ partial "tw/rail-most-popular.html" dict }}
     </div>
-    {{ $edPicks := partial "helper/get-items" "sidebar" }}
-    {{ range $edPicks }}
-      {{ if .page }}
-        {{ if ne .page.RelPermalink $.RelPermalink }}
-          {{ partial "tw/rail-picks.html" . }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
+    {{ partial "tw/rail-events.html" (dict
+      "label" "Upcoming Events"
+      )
+    }}
   </aside>
 </section>
