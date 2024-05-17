@@ -75,7 +75,7 @@ Shapiro’s budget calls for $2.3 million to implement strategies and recommenda
 
 During one budget hearing, Acting Health Secretary Bogen referred to the proposed $2.3 million as “a great start.” State Rep. Gina Curry (D., Delaware) told Spotlight PA the proposal is an “initial investment” and “an acknowledgment that we haven’t seen in the past.”
 
-While pregnancy-related deaths are rare, <a href="https://www.cdc.gov/reproductivehealth/maternal-mortality/erase-mm/data-mmrc.html">research shows they are often preventable</a>, and maternal health advocates say they have a large impact.
+While pregnancy-related deaths are rare, <a href="https://web.archive.org/20230104202121/https://www.cdc.gov/reproductivehealth/maternal-mortality/erase-mm/data-mmrc.html">research shows they are often preventable</a>, and maternal health advocates say they have a large impact.
 
 “When moms die, it has a ripple effect — and lasting effect on children … on support people, on families, communities, and, quite frankly, the entire human race,” said Sharee Livingston, an obstetrician and gynecologist in Lancaster County, during recent testimony in Harrisburg.
 
