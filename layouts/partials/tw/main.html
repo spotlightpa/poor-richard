@@ -26,7 +26,7 @@
   >
     {{ if $params.rubric }}
       <a
-        class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
+        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
         href="{{ $params.rubric.RelPermalink }}"
         data-ga-category="eyebrow"
       >
@@ -34,7 +34,7 @@
       </a>
     {{ else if $params.kicker }}
       <p
-        class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
+        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
       >
         {{- $params.kicker -}}
       </p>
@@ -95,7 +95,7 @@
     <div class="w-full print:!max-w-md">
       {{ partial "tw/image-hero.html" . }}
     </div>
-    <div class="w-full md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
+    <div class="w-full sm:w-12 md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
       {{ partial "tw/social-buttons.html" . }}
     </div>
     <div class="w-full max-w-screen-sm flex-1 md:mx-5 xl:-mr-8">
