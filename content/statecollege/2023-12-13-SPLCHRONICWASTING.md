@@ -9,6 +9,7 @@ image-description = "A deer in the woods"
 internal-id = "SPLCHRONICWASTING"
 kicker = "Rural Issues"
 modal-exclude = false
+pinned = false
 published = 2023-12-13T12:00:00-05:00
 slug = "pennsylvania-hunting-deer-elk-chronic-wasting-disease-game-commission"
 suppress-date = false
@@ -27,7 +28,7 @@ The state first detected the disease in <a href="https://pacast.com/m?p=10158">2
 
 Krysten Schuler, a wildlife disease ecologist at Cornell University, said the uptick could come from deer in areas with dense populations or from <a href="https://www.agriculture.pa.gov/Animals/AHDServices/diseases/Chronic%20Wasting%20Disease%20Program/Pages/default.aspx">captive deer and elk herds</a> at farms overseen by the state Department of Agriculture.
 
-Prions — malfunctioning and <a href="https://www.niaid.nih.gov/diseases-conditions/prion-diseases#:~:text=Prion%20diseases%20are%20transmissible%2C%20untreatable,that%20cause%20infectious%20brain%20disease.">almost indestructible proteins</a> — cause chronic wasting disease, so disposal is key to mitigate further spread. Other <a href="https://www.cdc.gov/prions/index.html">prion diseases</a> include Creutzfeldt-Jakob disease, which is rare but the most common that affects humans, and mad cow disease.
+Prions — malfunctioning and <a href="https://www.niaid.nih.gov/diseases-conditions/prion-diseases#:~:text=Prion%20diseases%20are%20transmissible%2C%20untreatable,that%20cause%20infectious%20brain%20disease.">almost indestructible proteins</a> — cause chronic wasting disease, so disposal is key to mitigate further spread. Other <a href="https://web.archive.org/20230112152005/https://www.cdc.gov/prions/index.html">prion diseases</a> include Creutzfeldt-Jakob disease, which is rare but the most common that affects humans, and mad cow disease.
 
 “If you had to design the perfect pathogen, prions are right up there,” Schuler told Spotlight PA.
 
@@ -93,7 +94,7 @@ That’s where the Game Commission sends high-risk parts, Korman said.
 
 ## Can people eat meat from animals with chronic wasting disease?
 
-The CDC <a href="https://www.cdc.gov/prions/cwd/prevention.html#:~:text=Strongly%20consider%20having%20the%20deer,eat%20meat%20from%20that%20animal.">cautions against</a> eating meat from an animal with chronic wasting disease and urges people to test first.
+The CDC <a href="https://web.archive.org/20230111230853/https://www.cdc.gov/prions/cwd/prevention.html#:~:text=Strongly%20consider%20having%20the%20deer,eat%20meat%20from%20that%20animal.">cautions against</a> eating meat from an animal with chronic wasting disease and urges people to test first.
 
 There isn’t direct evidence of people getting chronic wasting disease, but there are confirmed mad cow disease cases in humans.
 
