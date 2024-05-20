@@ -12,17 +12,17 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-05-20-SPLDOCBUD0524.md"
+    "content/news/2024-05-20-SPLRELEASE0524.md"
   ],
   "subfeatures": [
-    "content/news/2024-05-16-SPLBUDPRE24.md",
-    "content/statecollege/2024-02-19-SPLRURALBUDGET.md",
-    "content/news/2024-02-02-SPLBUDGPREV.md"
+    "content/news/2024-05-13-SPLCOMPASS0524.md",
+    "content/news/2023-11-21-SPL_COMPASSIONATE.md",
+    "content/news/2022-04-21-SPLPETITIONER21.md"
   ],
   "topSlots": [
+    "content/news/2024-05-20-SPLDOCBUD0524.md",
     "content/statecollege/2024-05-17-SPLPSKIDN0524.md",
-    "content/news/2024-05-17-SPLJUDGESFI.md",
-    "content/news/2024-05-16-SPACLUCURE.md"
+    "content/news/2024-05-17-SPLJUDGESFI.md"
   ],
   "topper": []
 }
