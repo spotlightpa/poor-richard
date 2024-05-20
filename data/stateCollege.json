@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-05-15-SPLDAIRY.md"
+    "content/statecollege/2024-05-17-SPLPSKIDN0524.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-04-16-SPLAGDOLLARS.md",
-    "content/statecollege/2024-04-05-SPLSTORMWATER.md",
-    "content/statecollege/2024-02-19-SPLRURALBUDGET.md"
+    "content/statecollege/2024-04-29-SPLPSULIVER.md",
+    "content/statecollege/2024-05-08-SPLPSUBUY0524.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-05-15-SPLDAIRY.md",
     "content/statecollege/2024-05-10-SPLSCCON0524.md",
-    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md",
-    "content/statecollege/2024-05-08-SPLPSUBUY0524.md"
+    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md"
   ],
   "topper": []
 }
