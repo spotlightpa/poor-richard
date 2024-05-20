@@ -39,7 +39,7 @@
 {{ $idSubject := partial "helper/new-id" . }}
 {{ $idBody := partial "helper/new-id" . }}
 {{ $idAnonymous := partial "helper/new-id" . }}
-{{ $formName := .formName | default "contact-page" }}
+{{ $formName := .formName }}
 {{ $hed := .hed }}
 {{ $dek := .dek }}
 {{ $recipient := .recipient }}
@@ -59,7 +59,6 @@
     </header>
     <div class="text-base md:col-span-5 md:col-start-6">
       <form
-        name="{{ $formName }}"
         action="/contact/thanks/"
         method="post"
         netlify
