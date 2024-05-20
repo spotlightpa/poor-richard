@@ -1,4 +1,4 @@
-{{ $gaForm :=  "newsletters:papost-full" }}
+{{ $gaForm :=  .hiddenField | default "newsletters:papost-full" }}
 {{ $gaCategory := "newsletters:papost" }}
 {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
 {{ $imagename := .filename }}

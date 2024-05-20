@@ -1,5 +1,5 @@
 {{ $imagename := .filename }}
-{{ $gaForm :=  "newsletters:papost-full" }}
+{{ $gaForm :=  .hiddenField | default "newsletters:papost-full" }}
 {{ $gaCategory := "newsletters:papost" }}
 {{ $modalType := .type }}
 {{ $hiddenField := .hiddenField }}
