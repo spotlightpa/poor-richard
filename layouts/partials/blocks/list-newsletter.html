@@ -1,0 +1,29 @@
+{{ with .block }}
+  {{ $newsletter := .newsletter }}
+  {{ $newsletter := site.GetPage $newsletter }}
+
+  {{ $signupField := .signupField | default "newsletter/papost-hidden.html" }}
+  {{ $hed := .calloutHed | default "Latest from our newsletter" }}
+  {{ $signupHed := .signupHed | default "Signup for our newsletter" }}
+  {{ $signupDek := .signupDek | default "Get the latest Spotlight PA news in your inbox." }}
+  {{ $signupCta := .signupCta | default "Subscribe" }}
+  {{ $signupImage := .signupImage | default "2021/06/01gc-4k5b-cx91-fppc.jpeg" }}
+
+
+  <div
+    class="mx-auto my-8 mb-5 max-w-screen-xl space-y-6 sm:my-12 md:space-y-12 lg:space-y-16"
+    x-data="{ isSticky: true }"
+  >
+    {{ partial "tw/list-callout-newsletter.html" (dict
+
+      "calloutHed" $hed
+      "signupHed" $signupHed
+      "signupDek" $signupDek
+      "signupCta" $signupCta
+      "signupImage" $signupImage
+      "signupField" $signupField
+      "pages" $newsletter.RegularPages
+      )
+    }}
+  </div>
+{{ end }}

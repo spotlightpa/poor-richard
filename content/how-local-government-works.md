@@ -89,7 +89,13 @@ layout = "list-callout"
 
 
 [[blocks]]
-layout = "newsletter/talkofthetown"
+layout = "list-newsletter"
+newsletter = "/newsletters/talkofthetown/_index.md"
+signupField = "newsletter/talkofthetown-hidden.html"
+calloutHed = "Latest from Talk of the Town"
+signupHed = "Sign up for Talk of the Town"
+signupDek = "Top news and notes for North-Central PA from our State College regional bureau."
+signupImage = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
 
 [[blocks]]
 title = "Local Government Accountability Coverage"
