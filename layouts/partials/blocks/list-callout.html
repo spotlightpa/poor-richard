@@ -1,0 +1,21 @@
+{{ with .block }}
+  {{ $collection := .collection }}
+  {{ $collection := site.GetPage $collection }}
+
+  {{ $pages := $collection.RegularPages }}
+  {{ $pinnedPages := where $pages "Params.pinned" true }}
+  {{ $featuredPages := union $pinnedPages $pages | first 2 }}
+
+
+  <div
+    class="mx-auto my-8 mb-5 max-w-screen-xl space-y-6 sm:my-12 md:space-y-12 lg:space-y-16"
+    x-data="{ isSticky: true }"
+  >
+    {{ partial "tw/list-callout-story.html" (dict
+      "hed" "Investigations"
+      "pages" $featuredPages
+      "rubricLink" "rubric"
+      )
+    }}
+  </div>
+{{ end }}
