@@ -36,7 +36,7 @@ That’s why it’s more important than ever to understand who’s on your local
 
 To learn who is on the ballot, you should check with your county election office (see a list <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">here</a>). Some counties, such as <a href="https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery County</a>, publish sample ballots.
 
-<a href="https://www.ballotready.org/ec/">BallotReady</a> and the League of Women Voters’ <a href="https://www.vote411.org/">Vote411</a> initiative also provide sample ballots based on your address, though they don’t always include down-ballot races such as ones for school board.
+<a href="https://www.ballotready.org/us/pennsylvania/">BallotReady</a> and the League of Women Voters’ <a href="https://www.vote411.org/">Vote411</a> initiative also provide sample ballots based on your address, though they don’t always include down-ballot races such as ones for school board.
 
 ## Learn the basics
 

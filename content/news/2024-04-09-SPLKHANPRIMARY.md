@@ -40,7 +40,7 @@ Learn more about Khan below.
 
 ## Who is Joe Khan?
 
-<a href="https://www.joekhan.com/">Website</a>
+<a href="https://web.archive.org/20230608004310/https://www.joekhan.com/">Website</a>
 
 Khan grew up in Philadelphia, and attended Swarthmore College and the University of Chicago Law School.
 
@@ -56,13 +56,13 @@ Khan is currently a partner at Curtin &amp; Heefner.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-<strong>Top issues</strong>: On his <a href="https://www.joekhan.com/justice">candidate website</a>, Khan says he wants to tackle corporate and political corruption. If elected, he says he would focus on public safety, the housing crisis, enforcing the state’s <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Environmental Rights Amendment</a>, and maintaining abortion access.
+<strong>Top issues</strong>: On his <a href="https://web.archive.org/20240321214025/https://www.joekhan.com/justice">candidate website</a>, Khan says he wants to tackle corporate and political corruption. If elected, he says he would focus on public safety, the housing crisis, enforcing the state’s <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Environmental Rights Amendment</a>, and maintaining abortion access.
 
 He also says he would establish a Housing Justice Unit and hold “energy companies accountable for the damage they have done to our planet and the health risks facing our children.”
 
 When asked how he would address violent crime during a March debate, Khan said he would take a similar approach to when he coordinated a federal Violent Crime Impact Team nearly two decades ago. At that time, he said, the team focused on the small group of people most responsible for violence; he said the office also brought down gun trafficking rings and solved cold cases.
 
-<a href="https://www.joekhan.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; organizations including Clean Air Action.
+<a href="https://web.archive.org/20230927190752/https://www.joekhan.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; organizations including Clean Air Action.
 
 <strong><em>&gt;&gt;READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/"><strong><em>A complete guide to the primary candidates for attorney general</em></strong></a><strong><em></em></strong>
 

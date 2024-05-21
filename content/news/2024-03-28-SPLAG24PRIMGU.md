@@ -149,7 +149,7 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante el mism
 
 <h3 id="spl-heading-5">Joe Khan</h3>
 
-<a href="https://www.joekhan.com/"><strong>Página web</strong></a>
+<a href="https://web.archive.org/20230608004310/https://www.joekhan.com/"><strong>Página web</strong></a>
 
 Khan creció en Filadelfia y estudió en el Swarthmore College y en la Facultad de Derecho de la Universidad de Chicago.
 
@@ -163,13 +163,13 @@ Como procurador, también <a href="https://levittownnow.com/2020/11/23/trump-cam
 
 Khan es actualmente socio de Curtin &amp; Heefner.
 
-<strong>Temas principales: </strong>En la<strong> </strong><a href="https://www.joekhan.com/justice">página web de su candidatura</a>, Khan afirma que quiere hacer frente a la corrupción empresarial y política. Si es elegido, dice que se centrará en la seguridad pública, la crisis de vivienda, la aplicación de la <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Enmienda de Derechos Ambientales</a> del estado y el mantenimiento del acceso al aborto. <strong></strong>
+<strong>Temas principales: </strong>En la<strong> </strong><a href="https://web.archive.org/20240321214025/https://www.joekhan.com/justice">página web de su candidatura</a>, Khan afirma que quiere hacer frente a la corrupción empresarial y política. Si es elegido, dice que se centrará en la seguridad pública, la crisis de vivienda, la aplicación de la <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Enmienda de Derechos Ambientales</a> del estado y el mantenimiento del acceso al aborto. <strong></strong>
 
 También dice que crearía una Unidad de Justicia de la Vivienda y haría &#34;responsables a las empresas de energía del daño que han hecho a nuestro planeta y de los riesgos para la salud que afrontan nuestros hijos&#34;.
 
 Cuando se le preguntó cómo abordaría la delincuencia violenta durante un debate celebrado en marzo, Khan dijo que adoptaría un enfoque similar al de cuando coordinó un Equipo de Impacto contra la Delincuencia Violenta hace casi dos décadas. En aquella época, dijo, el equipo se centraba en el pequeño grupo de los principales responsables de la violencia; afirmó que la oficina también desmanteló redes de tráfico de armas y resolvió casos antiguos.
 
-<a href="https://www.joekhan.com/endorsements"><strong>Apoyos</strong></a>: Miembros demócratas de la asamblea legislativa; funcionarios locales y del condado; organizaciones como Clean Air Action.
+<a href="https://web.archive.org/20230927190752/https://www.joekhan.com/endorsements"><strong>Apoyos</strong></a>: Miembros demócratas de la asamblea legislativa; funcionarios locales y del condado; organizaciones como Clean Air Action.
 
 {{<picture src="cas/0xpr-s0wv-txxe-pehb.jpeg" description="El candidato demócrata a fiscal general, Jared Solomon." caption="El candidato demócrata a fiscal general, Jared Solomon." credit="Courtesy candidate website">}}
 
