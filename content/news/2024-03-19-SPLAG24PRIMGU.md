@@ -153,7 +153,7 @@ When asked how he would address violent crime during the same debate, Depasquale
 
 <h3 id="spl-heading-5">Joe Khan</h3>
 
-<a href="https://www.joekhan.com/"><strong>Website</strong></a><strong></strong>
+<a href="https://web.archive.org/20230608004310/https://www.joekhan.com/"><strong>Website</strong></a><strong></strong>
 
 Khan grew up in Philadelphia, and attended Swarthmore College and the University of Chicago Law School.
 
@@ -167,13 +167,13 @@ As solicitor, he also <a href="https://levittownnow.com/2020/11/23/trump-campaig
 
 Khan is currently a partner at Curtin &amp; Heefner.
 
-<strong>Top issues:</strong> On his <a href="https://www.joekhan.com/justice">candidate website</a>, Khan says he wants to tackle corporate and political corruption. If elected, he says he would focus on public safety, the housing crisis, enforcing the state’s <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Environmental Rights Amendment</a>, and maintaining abortion access.
+<strong>Top issues:</strong> On his <a href="https://web.archive.org/20240321214025/https://www.joekhan.com/justice">candidate website</a>, Khan says he wants to tackle corporate and political corruption. If elected, he says he would focus on public safety, the housing crisis, enforcing the state’s <a href="https://www.alleghenyfront.org/the-movement-to-add-an-enviromental-rights-amendment-to-every-states-constitution/">Environmental Rights Amendment</a>, and maintaining abortion access.
 
 He also says he would establish a Housing Justice Unit and hold “energy companies accountable for the damage they have done to our planet and the health risks facing our children.”
 
 When asked how he would address violent crime during a March debate, Khan said he would take a similar approach to when he coordinated a federal Violent Crime Impact Team nearly two decades ago. At that time, he said, the team focused on the small group of people most responsible for violence; he said the office also brought down gun trafficking rings and solved cold cases.
 
-<a href="https://www.joekhan.com/endorsements"><strong>Endorsements</strong></a>: Democratic members of the legislature; county and local officials; organizations including Clean Air Action.<strong></strong>
+<a href="https://web.archive.org/20230927190752/https://www.joekhan.com/endorsements"><strong>Endorsements</strong></a>: Democratic members of the legislature; county and local officials; organizations including Clean Air Action.<strong></strong>
 
 {{<picture src="cas/hqa6-aa0z-dkbp-yaq5.png" description="Democratic attorney general candidate Jared Solomon" caption="Democratic attorney general candidate Jared Solomon" credit="Courtesy candidate website">}}
 

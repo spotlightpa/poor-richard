@@ -9,7 +9,7 @@ modal-exclude = true
 layout = "news"
 sort-by = "month"
 occurence = "Every Thursday"
-weight = 4
+weight = 5
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
 image-gravity = "ce"

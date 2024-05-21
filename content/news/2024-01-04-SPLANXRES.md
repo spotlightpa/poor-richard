@@ -42,7 +42,7 @@ For instance, the committee of experts who created the consensus report in 2017 
 
 The evidence in support of cannabis and its compounds as a treatment for anxiety was weaker, the committee found.
 
-The report specifically looked at the potential benefits of the cannabis compound CBD, <a href="https://www.cdc.gov/marijuana/featured-topics/CBD.html#:~:text=Cannabidiol%20(CBD)%20is%20a%20compound,not%20cause%20a%20%E2%80%9Chigh.%E2%80%9D&amp;text=CBD%20can%20be%20derived%20from,mind%2Daltering%20substance%20in%20marijuana.">which does not cause impairment or produce a “high” feeling, according to the CDC</a>.
+The report specifically looked at the potential benefits of the cannabis compound CBD, <a href="https://web.archive.org/20230103225022/https://www.cdc.gov/marijuana/featured-topics/CBD.html#:~:text=Cannabidiol%20(CBD)%20is%20a%20compound,not%20cause%20a%20%E2%80%9Chigh.%E2%80%9D&amp;text=CBD%20can%20be%20derived%20from,mind%2Daltering%20substance%20in%20marijuana.">which does not cause impairment or produce a “high” feeling, according to the CDC</a>.
 
 The authors found there was limited evidence that CBD is effective for improving anxiety symptoms, as assessed by a public speaking test, for people with social anxiety disorders, and the report cited a randomized trial that compared a single dose of CBD to a placebo in 24 participants with generalized social anxiety disorder.
 
@@ -82,7 +82,7 @@ The list included over 20 articles and reports. Their focus varied, and the guid
 
 In the first item listed in the resource guide, researcher Susan Stoner described the effects of marijuana on anxiety disorders as <a href="https://web.archive.org/20240106042206/https://adai.uw.edu/pubs/pdf/2017mjanxiety.pdf">“complex.”</a>
 
-Stoner made a distinction between what she called the two primary active ingredients of marijuana, THC and CBD, which she said “appear to have differing effects with regard to anxiety.” While CBD is not considered an impairing compound, <a href="https://www.cdc.gov/marijuana/what-we-know.html">THC is.</a>
+Stoner made a distinction between what she called the two primary active ingredients of marijuana, THC and CBD, which she said “appear to have differing effects with regard to anxiety.” While CBD is not considered an impairing compound, <a href="https://web.archive.org/20240104155508/https://www.cdc.gov/marijuana/what-we-know.html">THC is.</a>
 
 “Pure THC appears to decrease anxiety at lower doses and increase anxiety at higher doses,” wrote Stoner, now a research associate professor at the Addictions, Drug &amp; Alcohol Institute at the University of Washington School of Medicine. “On the other hand, pure CBD appears to decrease anxiety at all doses that have been tested.”
 

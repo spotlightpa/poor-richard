@@ -11,15 +11,15 @@
   aria-labelledby="top"
 >
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-6 lg:relative xl:px-0"
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0"
   >
     <div
-      class="sm:order-0 z-40 h-10 w-44 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-72"
+      class="sm:order-0 z-40 h-10 w-36 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:flex-grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-64 lg:w-72"
       :class="isOpen ? 'sm:translate-y-2' : ''"
     >
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
-          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-14 md:w-[15rem]"
+          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-[15rem]"
           x-show="atTop"
           x-transition:enter="transition ease-out duration-150"
           x-transition:enter-start="opacity-0 scale-10"
@@ -31,7 +31,7 @@
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "spotlight" }}
         </svg>
-        <svg class=" h-8 w-8 py-[2px] sm:h-12 sm:w-12 md:h-14 md:w-14">
+        <svg class=" h-8 w-8 py-[2px] sm:h-12 sm:w-12 lg:h-14 lg:w-14">
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "pa" }}
         </svg>
@@ -169,23 +169,37 @@
     >
       <a
         href="/newsletters"
-        class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black md:flex md:leading-none"
-        >Newsletters
+        class="
+          group hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9
+          sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4
+          "
+      >
+        <span
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide  md:text-sm md:leading-none"
+        >
+          <svg
+            class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "email" }}
+          </svg>
+          Newsletters
+        </span>
       </a>
       <a
         data-sf-campaign="701Dn000000YgosIAC"
         data-ga-category="donate"
         class="
-          group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue
-          sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4
+          group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9
+          sm:justify-center md:-my-1 md:p-2 lg:px-4
           "
         href="/donate"
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-sm md:leading-none"
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
         >
           <svg
-            class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+            class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
             aria-hidden="true"
           >
             {{ partial "helper/svg.html" "heart" }}

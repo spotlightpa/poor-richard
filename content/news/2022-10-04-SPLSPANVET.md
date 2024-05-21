@@ -110,7 +110,7 @@ El Departamento de Estado de Pensilvania dispone de una <a href="https://www.pav
 
 Algunos condados, como el de <a href="https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery</a>, publican papeletas de muestra. Consulte con la oficina electoral de su condado para obtener una (<a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">vea la lista de oficinas aquí</a>).
 
-<a href="https://www.ballotready.org/ec/">BallotReady</a> y la <a href="https://www.vote411.org/">iniciativa Vote411</a> de la Liga de Mujeres Votantes también ofrecen modelos de papeletas de votación basados en su dirección.
+<a href="https://www.ballotready.org/us/pennsylvania/">BallotReady</a> y la <a href="https://www.vote411.org/">iniciativa Vote411</a> de la Liga de Mujeres Votantes también ofrecen modelos de papeletas de votación basados en su dirección.
 
 <div id="spl-lea"></div>
 
