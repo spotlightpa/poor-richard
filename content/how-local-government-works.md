@@ -103,6 +103,7 @@ slug = "guides"
 layout = "story-collection"
 timeFilter = "2020-12-01"
 collection = "topics/local-government/_index.md"
+collectionReadMore = "Read More Local Government Stories"
 
 
 [[blocks]]
