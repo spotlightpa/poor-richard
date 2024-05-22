@@ -154,9 +154,9 @@ When local elected officials approve a consolidation, they can draft an agreemen
 
 But when voters circumvent elected officials to put the question on a ballot, “the problem there is the citizens can’t get together ahead of time and propose a joint agreement,” Cross said.
 
-Former township Supervisor Kevin Salandra told Spotlight PA he voted against consolidation because of a crucial detail: He didn’t want the new city to have a council-manager form of government.
+Former township Supervisor Kevin Salandra told Spotlight PA he voted against consolidation because of a crucial detail: He didn’t want the new city to keep the optional “council-manager” plan for its form of government.
 
-DuBois is one of only two cities in Pennsylvania — the other being Altoona in Blair County — that has this setup. Under this structure, an appointed manager becomes a chief administrator and oversees nearly all functions of the city. In DuBois’ case, this arrangement contributed to the outsized influence of Suplizio.
+DuBois is one of only two cities in Pennsylvania — the other being Altoona in Blair County, until it changed to a home-rule charter in 2015 — that chose this setup. Under this structure, an appointed manager becomes a chief administrator and oversees nearly all functions of the city. In DuBois’ case, this arrangement contributed to the outsized influence of Suplizio.
 
 Salandra said he would have supported the consolidation if it set up a home-rule city, which would have given new DuBois more flexibility to govern itself — a status the economy league study also recommended.
 
@@ -205,6 +205,8 @@ At this point, Shenkle said she’s not entirely opposed to seeing the consolida
 But she wants to see leaders work proactively to instill confidence in the process among residents and deliver on their promises.
 
 Sandy Township and DuBois are “at a point of really turning a corner, a big time corner,” she said.
+
+<em>Correction: This story has been updated to clarify DuBois’ and Altoona’s forms of government.</em>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 

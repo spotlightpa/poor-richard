@@ -9,6 +9,7 @@ image-description = "Members of the community gather on Election Day 2023 at in 
 internal-id = "SPLNORISSUE"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-11-07T18:11:48.413-05:00
 slug = "pennsylvania-election-2023-northampton-county-voting-machine-ballot-issue"
 suppress-date = false
@@ -25,7 +26,7 @@ The county&#39;s pre-election testing should have caught the problem before the 
 
 Reports of problems voting in the judicial retention of Judge Jack Panella and Judge Victor P. Stabile began coming in from around the county Tuesday morning.
 
-“It appears that when a voter selects a ‘Yes’ or a ‘No’ for one of the candidates for retention to the Pennsylvania Superior Court, the selection is recorded on the paper ballot and on the machine for the other candidate,” <a href="https://www.northamptoncounty.org/CTYEXEC/Pages/Press-Releases.aspx">the county’s statement</a> read. “The issue is limited to the retention of Superior Court Judges, and is only an issue when recording the votes for when a voter selected a ‘Yes’ for one candidate and a ‘No’ for another candidate.”
+“It appears that when a voter selects a ‘Yes’ or a ‘No’ for one of the candidates for retention to the Pennsylvania Superior Court, the selection is recorded on the paper ballot and on the machine for the other candidate,” <a href="https://web.archive.org/20230602133121/https://www.northamptoncounty.org/CTYEXEC/Pages/Press-Releases.aspx">the county’s statement</a> read. “The issue is limited to the retention of Superior Court Judges, and is only an issue when recording the votes for when a voter selected a ‘Yes’ for one candidate and a ‘No’ for another candidate.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
