@@ -230,9 +230,6 @@
 .spl-donate {
   @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
 }
-.spl-hidden {
-  @apply hidden;
-}
 .clip-triangle {
   clip-path: polygon(0 0, 0% 100%, 15% 50%);
 }
