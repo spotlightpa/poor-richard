@@ -26,7 +26,7 @@ Zulene Mayfield sees history repeating. She heads Chester Residents Concerned fo
 
 “Historically, Black and brown communities have suffered under all of these ‘good’ new proposals,” Mayfield told Spotlight PA.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Stay%20up%20to%20date%20on%20Pennsylvania's%20criminal%20justice%20system%20with%20our%20free%20daily%20newsletter.&eyebrow=discover%20more&preselect=papost"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 As part of the Mid-Atlantic Clean Hydrogen Hub, also called MACH2, pipelines, hydrogen production plants, and hydrogen storage facilities are planned in and around Chester, though details on environmental and health impacts aren’t yet available.
 
@@ -146,7 +146,7 @@ Katie Blume, legislative director for Conservation Voters of Pennsylvania, said 
 
 “We need to demand the utmost transparency from these companies, and we need help from our elected officials,” she said.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 Echoing that call, John Detwiler, a member of the community advocacy group North Braddock Residents For Our Future, which formed in response to the fracking boom, said he wants more information.
 
@@ -155,4 +155,6 @@ He doesn’t blame the lack of concrete detail on developers. He pins it on the 
 Specifically, he doesn’t understand why the federal government didn’t mandate higher levels of disclosure considering the billions of dollars up for grabs and the size of the planned projects.
 
 “Nobody’s gonna want to slow down to bring new parties in the room,” Detwiler said of the developers’ motivations. “It’s not that they’re being malicious. It’s just nobody would want to do this if they don’t have to.”
+
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
