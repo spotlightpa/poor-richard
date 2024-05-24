@@ -103,7 +103,7 @@ hed="“Richest Little City”"
 dek="Spotlight PA hosted a discussion on the DuBois city manager corruption case and the weak government oversight that allowed the alleged crimes to happen."
 date="2024-01-25"
 dateVerbose="Jan. 25, 2024 on Zoom"
-link="https://www.spotlightpa.org/news/2024/01/dubois-pennsylvania-herm-suplizio-corruption-event/"
+link="https://www.spotlightpa.org/news/2023/01/tioga-tamir-rice-pennsylvania-local-accountability-event/"
 
 [[blocks.entries]]
 hed="How Local Government Works"
@@ -111,6 +111,15 @@ dek="Learn how to hold elected officials accountable and where you can turn to a
 date="2023-08-03"
 dateVerbose="Aug. 3, 2023 on Zoom"
 link="https://www.spotlightpa.org/news/2023/07/pennsylvania-local-government-accountability-explained-event/"
+
+
+[[blocks.entries]]
+hed="Broken Borough"
+dek="Spotlight PA hosted a panel on Pennsylvania’s local governments, and how their oversight — or lack thereof — impacts residents and governance."
+date="2023-01-26"
+dateVerbose="Jan. 26, 2023 on Zoom"
+link="https://www.spotlightpa.org/news/2023/07/pennsylvania-local-government-accountability-explained-event/"
+
 
 [[blocks]]
 title = "Investigations"
