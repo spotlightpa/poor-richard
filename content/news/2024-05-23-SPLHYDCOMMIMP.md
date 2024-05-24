@@ -15,7 +15,7 @@ slug = "pennsylvania-biden-administration-hydrogen-hubs-community-benefits-publi
 suppress-date = false
 title = "Communities fear health, environmental harms as they await more info on hydrogen hub projects"
 title-tag = "PA's hydrogen hubs stir concerns over health impacts"
-topics = ["Environment"]
+topics = ["Environment", "Corrections"]
 +++
 
 HARRISBURG — The federal government and private developers are collecting public feedback on two major hydrogen production networks that will be partly located in Pennsylvania as part of a multibillion-dollar Biden administration effort to cut carbon pollution and fight climate change.
