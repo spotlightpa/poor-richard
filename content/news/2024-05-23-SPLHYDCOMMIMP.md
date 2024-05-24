@@ -94,7 +94,7 @@ Representatives from MACH2 said many of the details community members are asking
 
 ARCH2 declined to comment on the community benefits process, referring Spotlight PA to an FAQ.
 
-Manny Citron, a MACH2 official who also works for the Philadelphia Department of Labor, said the tension between developers and residents is expected. “It’s a feature of the structure of all the moving parts. And no one’s wrong for being concerned that they haven’t had the chance to speak more with us.”
+Manny Citron, a MACH2 official and former chief of staff for Philadelphia’s Department of Labor, said the tension between developers and residents is expected. “It’s a feature of the structure of all the moving parts. And no one’s wrong for being concerned that they haven’t had the chance to speak more with us.”
 
 ## Health concerns
 
@@ -138,7 +138,7 @@ She cited a <a href="https://www.npr.org/2023/05/21/1172679786/carbon-capture-ca
 
 “We don&#39;t know enough about the technology to be able to say that it is safe,” Steele said. “But what we do know about some of the components that we&#39;ve seen in use in the field, it&#39;s a pretty safe assumption to say that communities around this infrastructure will be at increased health risk.”
 
-Citron, the MACH2 board member, noted that the hub developers have to abide by the National Environmental Policy Act, which mandates the DOE assess the environmental impacts of any proposed project before authorizing it.
+Citron, the MACH2 official, noted that the hub developers have to abide by the National Environmental Policy Act, which mandates the DOE assess the environmental impacts of any proposed project before authorizing it.
 
 The hub projects also must follow the federal Justice40 Initiative, which requires 40% of the economic benefits of the hubs go toward historically marginalized and disadvantaged communities. This can include investments in clean transit or affordable housing.
 
@@ -155,6 +155,8 @@ He doesn’t blame the lack of concrete detail on developers. He pins it on the 
 Specifically, he doesn’t understand why the federal government didn’t mandate higher levels of disclosure considering the billions of dollars up for grabs and the size of the planned projects.
 
 “Nobody’s gonna want to slow down to bring new parties in the room,” Detwiler said of the developers’ motivations. “It’s not that they’re being malicious. It’s just nobody would want to do this if they don’t have to.”
+
+<em>Correction: This story has been corrected to reflect that Manny Citron no longer works for the city of Philadelphia. It has also been updated to correct an editing error about his current title.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
