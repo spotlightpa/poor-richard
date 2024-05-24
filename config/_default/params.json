@@ -9,11 +9,11 @@
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
+  "ad-featured-image-description": "Sign up for How We Care, Spotlight PA's free weekly newsletter about the state of caregiving in Pennsylvania ",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01k4/z00m/how-we-care-promo.png"
   ],
-  "ad-featured-link": "/donate",
+  "ad-featured-link": "/newsletters/howwecare",
   "ad-headwater-active": true,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
@@ -113,7 +113,7 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01k4/tt76/spring-campaign-topper-tracker-12-.png"
+    "https://files.data.spotlightpa.org/uploads/01k4/ztfg/spring-campaign-topper-tracker-14-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -121,7 +121,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01k4/tt76/spring-campaign-2023-rectangles-43-.png"
+    "https://files.data.spotlightpa.org/uploads/01k4/ztfh/spring-campaign-2023-rectangles-45-.png"
   ],
   "topper-mobile-width": 1024
 }
