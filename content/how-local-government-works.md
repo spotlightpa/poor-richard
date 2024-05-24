@@ -12,11 +12,16 @@ layout = "page-landing"
 url = "/howlocalgovworks/"
 sidebar = """
 {{<landing-sidebar>}}
-  {{<sidebar-links hed="State Election Resources">}}
+  {{<sidebar-links hed="Resources">}}
     {{<sidebar-link
     title = "Right-to-Know Law"
     emoji = "🔍"
-    link = "https://www.openrecords.pa.gov/index.cfm"
+    link = "https://www.openrecords.pa.gov/RTKL/About.cfm"
+    >}}
+    {{<sidebar-link
+    title = "Office of Open Records"
+    emoji = "📝"
+    link = "https://www.openrecords.pa.gov/"
     >}}
 
     {{<sidebar-link
@@ -49,9 +54,35 @@ sidebar = """
     emoji = "📝"
     link = "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1968/0/0247..HTM"
     >}}
+
   {{</sidebar-links>}}
 {{</landing-sidebar>}}
 """
+
+
+[[blocks]]
+layout = "internal-links"
+
+[[blocks.link]]
+title = "How Local Government Works"
+link = "guides"
+
+[[blocks.link]]
+title = "Events"
+link = "events"
+
+[[blocks.link]]
+title = "Investigations"
+link = "investigations"
+
+[[blocks.link]]
+title = "Local Accountability"
+link = "accountability"
+
+[[blocks.link]]
+title = "Contact"
+link = "contact"
+
 
 [[blocks]]
 title = "How Local Government Works"
@@ -89,17 +120,11 @@ layout = "list-callout"
 
 
 [[blocks]]
-layout = "list-newsletter"
-newsletter = "/newsletters/talkofthetown/_index.md"
-signupField = "newsletter/talkofthetown-hidden.html"
-calloutHed = "Latest from Talk of the Town"
-signupHed = "Sign up for Talk of the Town"
-signupDek = "Top news and notes for North-Central PA from our State College regional bureau."
-signupImage = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
+layout = "newsletter/talkofthetown"
 
 [[blocks]]
-title = "Local Government Accountability Coverage"
-slug = "guides"
+title = "Local Accountability Coverage"
+slug = "accountability"
 layout = "story-collection"
 timeFilter = "2020-12-01"
 collection = "topics/local-government/_index.md"
@@ -108,15 +133,16 @@ collectionReadMore = "Read More Local Government Stories"
 
 [[blocks]]
 layout = "contact"
+slug = "contact"
 hed = "Ask Us Your Questions"
-showAnon=false
-submit="Submit"
-recipient="Min Xian"
-dek="What do you want to know about how local government works? Use the form to reach Local Accountability Reporter Min Xian."
+showAnon = false
+submit = "Submit"
+recipient = "Min Xian"
+dek = "What do you want to know about how local government works? Use the form to reach Local Accountability Reporter Min Xian."
 
 +++
 
-## Spotlight PA State College is working to make local government more accessible and understandable to all Pennsylvanians.
+## Spotlight PA State College is working to make local government more accessible to all Pennsylvanians.
 
 Pennsylvania has a patchwork system of local government that includes more than 2,500 cities, townships, and boroughs (and one town).
 

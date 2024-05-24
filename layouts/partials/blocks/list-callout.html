@@ -1,6 +1,7 @@
 {{ with .block }}
   {{ $collection := .collection }}
   {{ $collection := site.GetPage $collection }}
+  {{ $slug := .slug | default "guides" }}
 
   {{ $pages := $collection.RegularPages }}
   {{ $pinnedPages := where $pages "Params.pinned" true }}
@@ -8,6 +9,7 @@
 
 
   <div
+    id="{{ $slug }}"
     class="mx-auto my-8 mb-5 max-w-screen-xl space-y-6 sm:my-12 md:my-24 md:space-y-12 lg:space-y-16"
     x-data="{ isSticky: true }"
   >

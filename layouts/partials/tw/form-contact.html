@@ -39,6 +39,7 @@
 {{ $idSubject := partial "helper/new-id" . }}
 {{ $idBody := partial "helper/new-id" . }}
 {{ $idAnonymous := partial "helper/new-id" . }}
+{{ $formID := .formID | default "contact" }}
 {{ $formName := .formName }}
 {{ $hed := .hed }}
 {{ $dek := .dek }}
@@ -46,6 +47,7 @@
 {{ $anonymous := .showAnon | default false }}
 {{ $cta := .submit | default "Submit" }}
 <section
+  id="{{ $formID }}"
   class="relative -mx-4 bg-g-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
 >
   <div
