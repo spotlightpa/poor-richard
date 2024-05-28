@@ -28,7 +28,7 @@ In recent weeks, the health system stopped performing liver and kidney transplan
 
 The abdominal transplant program has been plagued by problems for years.
 
-In September 2022, a national oversight group <a href="https://optn.transplant.hrsa.gov/news/optn-board-declares-penn-state-milton-s-hershey-medical-center-a-member-not-in-good-standing/">declared</a> the hospital a “member not in good standing”​​after flagging problems with kidney and liver transplants — the most serious disciplinary action taken against a hospital in more than 15 years.
+In September 2022, a national oversight group <a href="https://optn.transplant.hrsa.gov/news/optn-board-declares-penn-state-milton-s-hershey-medical-center-a-member-not-in-good-standing/">declared</a> the hospital a “member not in good standing” ​​after flagging problems with kidney and liver transplants — the most serious disciplinary action taken against a hospital in more than 15 years.
 
 Afterward, Penn State Health leaders <a href="https://www.google.com/search?q=addo+liver+kidney+world+class&amp;rlz=1C5CHFA_enUS856US856&amp;oq=addo+liver+kidney+world+class&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRirAjIHCAYQIRirAtIBCDQ1MzhqMGo0qAIAsAIB&amp;sourceid=chrome&amp;ie=UTF-8">pledged to rebuild</a>. The health system hired new surgeons, updated its equipment, and promised to overhaul its internal operations.
 
