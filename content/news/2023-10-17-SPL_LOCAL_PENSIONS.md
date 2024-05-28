@@ -9,6 +9,7 @@ image-description = "Man peering at documents through magnifying glass."
 internal-id = "SPL_LOCAL_PENSIONS"
 kicker = "Local Government"
 modal-exclude = false
+pinned = false
 published = 2023-10-17T05:00:00-04:00
 slug = "pennsylvania-pensions-william-vescio-sec-allegations-somerset-tioga-wyoming"
 suppress-date = false
@@ -118,7 +119,7 @@ Advocates for the financial services industry and their allies have pushed back 
 
 The petition was filed prior to the SEC’s order against William Vescio and doesn’t make any reference to him. But the petition deals with similar alleged disclosure violations, and it described the enforcement efforts as an “unfair surprise.”
 
-While also not commenting on William Vescio’s case, a <a href="https://www.sec.gov/comments/4-761/4761-7312664-218287.pdf">representative for the Consumer Federation of America</a> countered that the SEC’s efforts on this topic were “laudable,” and said the agency “has simply been engaged in enforcing well-established and long-recognized fiduciary obligations … including the obligations to act in the best interests of the client.”
+While also not commenting on William Vescio’s case, a <a href="https://web.archive.org/20230408124527/https://www.sec.gov/comments/4-761/4761-7312664-218287.pdf">representative for the Consumer Federation of America</a> countered that the SEC’s efforts on this topic were “laudable,” and said the agency “has simply been engaged in enforcing well-established and long-recognized fiduciary obligations … including the obligations to act in the best interests of the client.”
 
 David Chase, a former SEC attorney who practices in Florida, said if the alleged conduct occurred as the SEC described it in William Vescio’s case, then “it’s not exemplary conduct” and “it shouldn’t have happened.”
 
