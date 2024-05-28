@@ -36,7 +36,7 @@ After her victory, she quickly received endorsements from key unions like United
 
 “I&#39;m looking forward to moving forward at a much greater pace with raising money and developing a real infrastructure that can win,” McClelland said.
 
-Mike Mikus, a Democratic strategist who isn’t involved in the Treasury race, said he doesn’t think McClelland’s lack of institutional backing during the primary means much for the general. Despite never holding office before, McClleland’s not a stranger to politics, he said. She unsuccessfully ran for Congress twice.
+Mike Mikus, a Democratic strategist who has worked with McClelland in the past, though not on the Treasury race, said he doesn’t think McClelland’s lack of institutional backing during the primary means much for the general. Despite never holding office before, McClleland’s not a stranger to politics, he said. She unsuccessfully ran for Congress twice. Mikus served as a consultant for her 2016 run.
 
 “She’s had relationships with a lot of these folks for years, so I think because of that, it&#39;s a pretty easy transition,” he said. “I don&#39;t think so much that they were opposing her as they were supporting her opponent.”
 
