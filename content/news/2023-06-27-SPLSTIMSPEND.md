@@ -11,6 +11,7 @@ internal-budget = "How Pennsylvania has (and hasn’t) spent its billions in COV
 internal-id = "SPLSTIMSPEND"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-06-27T05:00:13-04:00
 slug = "pa-covid-stimulus-money-american-rescue-plan-act-full-list"
 suppress-date = false
@@ -107,7 +108,7 @@ For example, lawmakers earmarked $100 million for mental health last July withou
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-Instead, the General Assembly established a commission to hash out a plan, which released its <a href="https://www.dhs.pa.gov/Services/Mental-Health-In-PA/Documents/Behavioral-Health-Commission-Report_October2022.pdf">recommendations</a> in October. They included expanding walk-in crisis centers and substance abuse disorder treatment, and providing higher pay to behavioral health workers.
+Instead, the General Assembly established a commission to hash out a plan, which released its <a href="https://web.archive.org/20221005152702/https://www.dhs.pa.gov/Services/Mental-Health-In-PA/Documents/Behavioral-Health-Commission-Report_October2022.pdf">recommendations</a> in October. They included expanding walk-in crisis centers and substance abuse disorder treatment, and providing higher pay to behavioral health workers.
 
 The state House adopted those recommendations in a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/bill_history.cfm?syear=2023&sind=0&body=H&type=B&bn=849">bipartisan vote</a> in early June, passing a bill that would provide <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2023&sessInd=0&billBody=H&billTyp=B&billNbr=0849&pn=1463">grants</a> for workforce development in the behavioral health field and expand public safety programs. The measure would also create new funding for mobile crisis teams, crisis walk-in centers, and crisis stabilization units as part of suicide prevention efforts.
 
