@@ -9,6 +9,7 @@ image-description = "Rep. Mike Schlossberg (D., Lehigh) inside the Pennsylvania 
 internal-id = "SPLELMAN FUND"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-07-27T16:52:26.473-04:00
 slug = "pennsylvania-legislature-budget-mental-health-funding-school-services"
 suppress-date = false
@@ -23,7 +24,7 @@ HARRISBURG — Pennsylvania’s stalled budget redirects $100 million earmarked 
 
 State lawmakers agreed last year to spend a portion of <a href="https://www.spotlightpa.org/news/2023/06/pa-covid-stimulus-money-american-rescue-plan-act-full-list/">Pennsylvania’s federal stimulus money on adult mental health services</a>, though they did not direct the funding to a specific purpose. Instead, the legislature convened a 24-member commission made up of lawmakers, doctors, and other professionals in the field to make recommendations.
 
-After holding 17 hours of hearings, the group delivered its <a href="https://www.dhs.pa.gov/Services/Mental-Health-In-PA/Documents/Behavioral-Health-Commission-Report_October2022.pdf">report</a> in October 2022; two lawmakers soon after introduced legislation to put the plan into action.
+After holding 17 hours of hearings, the group delivered its <a href="https://web.archive.org/20221005152702/https://www.dhs.pa.gov/Services/Mental-Health-In-PA/Documents/Behavioral-Health-Commission-Report_October2022.pdf">report</a> in October 2022; two lawmakers soon after introduced legislation to put the plan into action.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
