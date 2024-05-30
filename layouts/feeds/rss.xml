@@ -3,6 +3,7 @@
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
 {{- $stories := union $news.RegularPages $sc.RegularPages -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
+{{ $description := (site.GetPage "/_index.md").Description }}
 <rss
   version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
@@ -14,7 +15,7 @@
       {{- .Site.Title }}{{ with .Title }}: {{.}}{{ end -}}
     </title>
     <link>{{ ($news.Page.OutputFormats.Get "html").Permalink }}</link>
-    <description>{{ .Description }}</description>
+    <description>{{ $description }}</description>
     <generator>Hugo -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
     <managingEditor>newsroom@spotlightpa.org (Spotlight PA)</managingEditor>
