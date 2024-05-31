@@ -95,25 +95,25 @@
   ],
   "sticky-link": "/newsletters",
   "support-active": true,
-  "support-bg-color": "#ffebeb",
+  "support-bg-color": "#f2f2f2",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CLICK TO CONTRIBUTE NOW »",
-  "support-hed": "WAIT! BEFORE YOU GO...",
+  "support-hed": "HELP US WRITE THE NEXT CHAPTER...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
-  "support-text": "I hope you appreciated this article. As a nonprofit, Spotlight PA's unmatched investigative and public-service reporting cannot continue without your support. \u003cstrong\u003eAnd as a special bonus today, your gift will be DOUBLED by a generous donor as part of our Spring Member Drive.\u003c/strong\u003e\n\nOur 2024 coverage is unlike anything you’ll find anywhere else. We’re covering all angles of the upcoming election, focused squarely on the stakes for voters, not the horse race. We’re holding the Shapiro administration and our state legislature accountable. And we’re delivering insightful investigative and explanatory journalism about urgent statewide issues and policies. \n\nAcross this country, a small number of billionaire owners and mega-corporations have a grip on our community media outlets — or worse, they're stripping them for parts and profit. Spotlight PA is different. Our journalism is produced to serve the public interest and to serve you — not profit motives.\n\n\u003cstrong\u003eWe do this work for you, but we cannot do it without you.\u003c/strong\u003e\n\nNearly 1/3 of our total budget comes from individuals like you. Your support enables us to produce unique investigative and public-service reporting that demands accountability, inspires changes, and strengthens democracy. It's quick and any amount helps — and right now it will be matched dollar-for-dollar. Thank you for doing your part.\n\nWith gratitude,\nChristopher Baxter\nEditor in Chief, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "Thank you for reading. Investigative journalism is at the heart of what we do at Spotlight PA. It is also the most complex, resource-intensive reporting to produce, so before you move on, I wanted to ask if you would consider supporting our work.\n\nSpotlight PA is unlike other news outlets. As a nonprofit, we have no billionaire owner or shareholders to consider. Our journalism is produced to serve the public interest – not profit motives.\n\nAs an independent, strictly nonpartisan news outlet, our talented journalists produce stories you won't find anywhere else, tracking our hard-earned tax dollars, holding our officials accountable, and covering all angles of a hugely consequential election.\n\nQuality journalism is at the heart of a healthy democracy. But it costs a lot of money. Across Pennsylvania, readers can access Spotlight PA's paywall-free journalism because of our unique reader-supported model. That’s because of people like you.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone — whether they can afford to pay for news, or not.\n\nIf you can, please consider supporting Spotlight PA just once, or better yet, support us every month with a little more by making a sustaining gift. Thank you.\n\nChristopher Baxter\nEditor in Chief, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": false,
-  "takeover-dek": "Hurry a gift in support of trusted, nonpartisan journalism before our DOUBLE match expires at 11:59 p.m. tonight! Can we count on you now?",
-  "takeover-hed": "Only 12 hours left to support Spotlight PA",
+  "takeover-active": true,
+  "takeover-dek": "Spotlight PA's journalism can only continue with your support. Hurry a gift \u0026 get it DOUBLED before our deadline of 11:59 p.m. Saturday.",
+  "takeover-hed": "We're at a critical moment and need you",
   "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
   "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01k5/fhv7/spring-campaign-topper-tracker-20-.png"
+    "https://files.data.spotlightpa.org/uploads/01k5/jc0m/spring-campaign-topper-tracker-21-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -121,7 +121,7 @@
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01k5/fhv7/spring-campaign-2023-rectangles-50-.png"
+    "https://files.data.spotlightpa.org/uploads/01k5/jc0m/spring-campaign-2023-rectangles-51-.png"
   ],
   "topper-mobile-width": 1024
 }
