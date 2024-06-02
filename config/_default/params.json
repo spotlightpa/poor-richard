@@ -1,36 +1,39 @@
 {
-  "ad-breaker-active": true,
+  "ad-breaker-active": false,
   "ad-breaker-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-breaker-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yq78/1.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/4.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/3.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/2.png"
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "Sign up for How We Care, Spotlight PA's free weekly newsletter about the state of caregiving in Pennsylvania ",
+  "ad-featured-image-description": "Support Spotlight PA's unmatched election reporting.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01k4/z00m/how-we-care-promo.png"
+    "https://files.data.spotlightpa.org/uploads/01jz/sqzm/the-perfect-gift-15-.png"
   ],
-  "ad-featured-link": "/newsletters/howwecare",
-  "ad-headwater-active": true,
+  "ad-featured-link": "/donate",
+  "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yq78/1.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/4.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/3.png",
-    "https://files.data.spotlightpa.org/uploads/01k3/yq79/2.png"
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxr/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxk/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxf/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-headwater-link": "/donate",
-  "ad-rail-active": true,
+  "ad-rail-active": false,
   "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
   "ad-rail-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yp2m/sunshine-week-2024-600-x-300-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01jy/3syx/4.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3syq/3.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3syg/2.png",
+    "https://files.data.spotlightpa.org/uploads/01jy/3sya/1.png"
   ],
   "ad-rail-link": "/donate",
   "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit?\u003c/strong\u003e Learn more about our nonpartisan journalism »",
-  "banner-active": false,
+  "banner-active": true,
   "banner-bg-color": "#ffcb05",
   "banner-link": "/about/",
   "banner-text-color": "#000000",
@@ -74,19 +77,19 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
+  "sidebar-sticky-description": "Support Spotlight PA's unmatched investigative and public-service reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01k2/jb8m/general-donate-300-x-250-3-.png"
   ],
   "sidebar-sticky-link": "/donate",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
+  "sidebar-top-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01k3/yp2n/spring-2023-campaign-squares-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
   ],
-  "sidebar-top-link": "/donate",
+  "sidebar-top-link": "/newsletters",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
@@ -99,29 +102,29 @@
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CLICK TO CONTRIBUTE NOW »",
-  "support-hed": "HELP WRITE THE NEXT CHAPTER...",
+  "support-hed": "SO WHAT'S NEXT? A REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "/donate/",
   "support-text": "Thank you for reading. Investigative journalism is at the heart of what we do at Spotlight PA. It is also the most complex, resource-intensive reporting to produce, so before you move on, I wanted to ask if you would consider supporting our work.\n\nSpotlight PA is unlike other news outlets. As a nonprofit, we have no billionaire owner or shareholders to consider. Our journalism is produced to serve the public interest – not profit motives.\n\nAs an independent, strictly nonpartisan news outlet, our talented journalists produce stories you won't find anywhere else, tracking our hard-earned tax dollars, holding our officials accountable, and covering all angles of a hugely consequential election.\n\nQuality journalism is at the heart of a healthy democracy. But it costs a lot of money. Across Pennsylvania, readers can access Spotlight PA's paywall-free journalism because of our unique reader-supported model. That’s because of people like you.\n\nOur readers keep us independent, beholden to no outside influence, and accessible to everyone — whether they can afford to pay for news, or not.\n\nIf you can, please consider supporting Spotlight PA just once, or better yet, support us every month with a little more by making a sustaining gift. Thank you.\n\nChristopher Baxter\nEditor in Chief, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": true,
-  "takeover-dek": "Spotlight PA's journalism can only continue with your support. Hurry a gift \u0026 get it DOUBLED before our deadline of 11:59 p.m. Saturday.",
-  "takeover-hed": "We're at a critical moment and need you",
+  "takeover-active": false,
+  "takeover-dek": "Hurry a gift in support of trusted, nonpartisan journalism before our DOUBLE match expires at 11:59 p.m. tonight! Can we count on you now?",
+  "takeover-hed": "Only 12 hours left to support Spotlight PA",
   "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
-  "topper-active": true,
+  "topper-active": false,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01k5/mtm4/spring-campaign-topper-tracker-22-.png"
+    "https://files.data.spotlightpa.org/uploads/01k2/cx1c/spring-campaign-topper-tracker.png"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#ffffff",
-  "topper-image-description": "For a limited time, support Spotlight PA's unique investigative and public-service reporting and your gift will be DOUBLED.",
+  "topper-divider-color": "#004590",
+  "topper-image-description": "Support trusted, unbiased election reporting for Pennsylvania.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01k5/mtm5/spring-campaign-2023-rectangles-52-.png"
+    "https://files.data.spotlightpa.org/uploads/01k2/cxek/spring-campaign-2023-rectangles-24-.png"
   ],
   "topper-mobile-width": 1024
 }
