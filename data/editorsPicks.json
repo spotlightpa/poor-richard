@@ -12,15 +12,16 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-05-31-SPLMISS24ANA.md"
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "subfeatures": [
-    "content/news/2024-05-29-SPLACCOURTDATE.md",
-    "content/news/2024-05-16-SPACLUCURE.md"
+    "content/statecollege/2024-05-22-SPLSTORMWATER0524.md",
+    "content/statecollege/2024-04-16-SPLAGDOLLARS.md",
+    "content/statecollege/2024-03-27-SPLRURALBIRTH.md"
   ],
   "topSlots": [
+    "content/news/2024-05-31-SPLMISS24ANA.md",
     "content/statecollege/2024-05-31-SPLBEAVER0524.md",
-    "content/news/2024-05-30-SPLNEWSQUIZMAY2724.md",
     "content/news/2024-05-30-SPLCORONER0524.md"
   ],
   "topper": []
