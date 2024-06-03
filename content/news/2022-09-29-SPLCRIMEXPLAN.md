@@ -108,7 +108,7 @@ Citing the Wisconsin rampage, Mastriano claimed “the elimination of cash bail 
 
 There is no solid evidence that reducing bail costs leads to a rise in violent crime. A 2022 review of available studies by <a href="https://theappeal.org/bail-reform-crime-data-backlash/">The Appeal</a> found that “there’s very little rigorous research on how bail reform affects crime in general.”
 
-<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more, at our </b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
+<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more, at our </b><a href="https://www.spotlightpa.org/elections/"><b>Election Center 2022 website</b></a><b>.</b>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on...</b>
 

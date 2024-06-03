@@ -114,7 +114,7 @@ Shapiro told Spotlight PA that he will help lower the cost of farming production
 
 <hr>
 
-<b>Read our complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
+<b>Read our complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="https://www.spotlightpa.org/elections/"><b>Election Center 2022 website</b></a><b>.</b>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on:</b>
 

@@ -68,7 +68,7 @@ There will be no statewide proposed constitutional amendments on the ballot. How
 
 You can also check where constitutional amendments are in the legislative process using Spotlight PA’s amendment tracker, <a href="https://www.spotlightpa.org/news/2022/01/pennsylvania-constitution-amendments-tracker-complete-guide/">which you can find here</a>.
 
-Find our complete coverage, plus key dates, campaign finance data, sample ballots, and more at our <a href="http://spotlightpa.org/elections">Election Center 2023 website</a>.
+Find our complete coverage, plus key dates, campaign finance data, sample ballots, and more at our <a href="https://www.spotlightpa.org/elections/">Election Center 2023 website</a>.
 
 <b>A complete listing of Spotlight PA voter guides to:</b>
 

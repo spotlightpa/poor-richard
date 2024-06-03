@@ -130,7 +130,7 @@ Voters will also choose candidates for positions such as school board member, ma
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SPRING%20MEMBER%20DRIVE&teaser_text=Before%20you%20continue...%20This%20vital%20public-service%20journalism%20is%20only%20possible%20with%20your%20support.%20%3Cb%3EMake%20a%20gift%20to%20Spotlight%20PA%20now%20and%20it%20will%20be%20DOUBLED%20as%20part%20of%20our%20Spring%20Member%20Drive.%3C%2Fb%3E&cta_text=GET%20YOUR%20GIFT%20DOUBLED"></div>
 
 
-<i><b>Read our complete coverage, plus key dates, campaign finance data, sample ballots, and more at our </b></i><a href="http://spotlightpa.org/elections"><i><b>Election Center 2023 website</b></i></a><i><b>.</b></i>
+<i><b>Read our complete coverage, plus key dates, campaign finance data, sample ballots, and more at our </b></i><a href="https://www.spotlightpa.org/elections/"><i><b>Election Center 2023 website</b></i></a><i><b>.</b></i>
 
 <i>A complete listing of Spotlight PA voter guides to:</i>
 
