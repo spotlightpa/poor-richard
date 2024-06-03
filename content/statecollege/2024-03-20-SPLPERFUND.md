@@ -26,7 +26,7 @@ This new model would tie public funds for the universities to certain metrics, b
 
 In recent years, state House Republicans have <a href="https://www.spotlightpa.org/news/2022/06/pa-pittsburgh-fetal-tissue-research-budget/">delayed funding the schools</a> over political beliefs. Last budget cycle, funding for the universities was not approved until five months after the budget deadline, and passed alongside a separate bill that <a href="https://www.spotlightpa.org/statecollege/2023/12/penn-state-pennsylvania-legislature-budget-tuition-transparency-accountability/">increased transparency requirements</a> for the schools.
 
-“We need to fix the way we fund our state-relateds — Pitt, Penn State, and Temple — along with the nation’s oldest degree-granting HBCU, Lincoln University,” Shapiro said during his <a href="https://www.governor.pa.gov/newsroom/governor-shapiros-2024-25-budget-address-as-prepared/">February budget address</a>. “For too long, we’ve under-funded them and subjected them to political games.”
+“We need to fix the way we fund our state-relateds — Pitt, Penn State, and Temple — along with the nation’s oldest degree-granting HBCU, Lincoln University,” Shapiro said during his <a href="https://web.archive.org/20240206193423/https://www.governor.pa.gov/newsroom/governor-shapiros-2024-25-budget-address-as-prepared/">February budget address</a>. “For too long, we’ve under-funded them and subjected them to political games.”
 
 The proposed performance-based funding model is used by more than half of states across the country, though experts warn such plans can have unintended consequences if not constructed thoughtfully.
 
