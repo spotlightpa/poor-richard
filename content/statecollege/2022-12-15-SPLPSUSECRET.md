@@ -12,6 +12,7 @@ internal-id = "SPLPSUSECRET"
 kicker = "Penn State"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-12-15T05:00:00-05:00
 slug = "penn-state-trustee-secret-meeting-barron-diversity"
 suppress-date = false
@@ -30,7 +31,7 @@ Barron’s plan was the result of months of work by the Select Penn State Presid
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
 
-The trustees’ website has no record of any presentation, call, or meeting on that date. The board’s <a href="https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/7/64540/files/2019/03/Standing-Orders-2020-September.pdf">governing documents require</a> it to provide public notice at least three days before a regularly scheduled meeting and 24 hours prior to a special meeting.
+The trustees’ website has no record of any presentation, call, or meeting on that date. The board’s <a href="https://web.archive.org/20221007031141/https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/7/64540/files/2019/03/Standing-Orders-2020-September.pdf">governing documents require</a> it to provide public notice at least three days before a regularly scheduled meeting and 24 hours prior to a special meeting.
 
 The board is also required to make available the minutes for all public meetings, including those of committees and subcommittees.
 
