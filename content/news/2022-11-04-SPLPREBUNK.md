@@ -129,7 +129,7 @@ Those 18 ballots that were returned by drop box early “have been segregated un
 
 State law is completely silent on the specifics of drop boxes and security measures that should be used. It was county policy to open the boxes for use at a specific time, Pipe said. He added that in the future, “there will be a strong recommendation to have the drop box operational prior to ballots going out.”
 
-<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
+<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="https://www.spotlightpa.org/elections/"><b>Election Center 2022 website</b></a><b>.</b>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on:</b>
 

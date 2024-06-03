@@ -128,7 +128,7 @@ If you aren’t sure what your particular county’s policy is, you can find con
 
 <hr>
 
-<i><b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b></i><a href="http://spotlightpa.org/elections"><i><b>Election Center 2022 website</b></i></a><i><b>.</b></i>
+<i><b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b></i><a href="https://www.spotlightpa.org/elections/"><i><b>Election Center 2022 website</b></i></a><i><b>.</b></i>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on...</b>
 

@@ -80,7 +80,7 @@ The Natural Resource Defense Council Action Fund and the Conservation Voters of 
 
 As attorney general, Shapiro charged Energy Transfer, a <a href="https://www.wesa.fm/environment-energy/2022-08-07/energy-transfer-pleads-no-contest-to-criminal-charges-related-to-mariner-east-pipeline-construction">pipeline-building company</a>, with environmental crimes including causing damage to wetlands, waterways, and drinking water while constructing liquid natural gas pipelines. He also charged<a href="https://www.alleghenyfront.org/energy-transfer-facing-9-counts-of-environmental-crimes-for-2018-pipeline-blast/"> the company</a> with negligence over its role in a <a href="https://whyy.org/articles/mariner-east-pipeline-project-is-finished-after-years-of-environmental-damage-construction-delays/">2018 explosion</a>. <a href="https://whyy.org/articles/mariner-east-pipeline-project-is-finished-after-years-of-environmental-damage-construction-delays/">which led to an explosion in 2018.</a>
 
-<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="http://spotlightpa.org/elections"><b>Election Center 2022 website</b></a><b>.</b>
+<b>Read Spotlight PA’s complete coverage, plus key dates, campaign finance data, sample ballots &amp; more at our </b><a href="https://www.spotlightpa.org/elections/"><b>Election Center 2022 website</b></a><b>.</b>
 
 <b>Spotlight on the Issues: Where Mastriano and Shapiro stand on...</b>
 
