@@ -257,7 +257,7 @@ Her attorney asked whether she had any solid information about her application.
 
 “100% no.”
 
-Homeowners with federally backed mortgages, like Pollock, were supposed to be <a href="https://www.fhfa.gov/Media/PublicAffairs/Pages/Foreclosure-Suspension-for-Borrowers-Applying-for-Relief-through-the-Homeowner-Assistance-Fund.aspx">protected from foreclosure</a> for up to 60 days while they waited for help.
+Homeowners with federally backed mortgages, like Pollock, were supposed to be <a href="https://web.archive.org/20230308143449/https://www.fhfa.gov/Media/PublicAffairs/Pages/Foreclosure-Suspension-for-Borrowers-Applying-for-Relief-through-the-Homeowner-Assistance-Fund.aspx">protected from foreclosure</a> for up to 60 days while they waited for help.
 
 
 {{<featured/info>}}
