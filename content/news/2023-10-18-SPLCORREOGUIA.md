@@ -97,5 +97,5 @@ Lea la cobertura completa de Spotlight PA, incluidas guías electorales y de can
 
 - <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-2023-judicial-retention-superior-court-common-pleas/">Elecciones Pa. 2023: Lo que hay que saber sobre las preguntas de retención judicial en la papeleta de noviembre</a>
 
-<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en</em><a href="http://spotlightpa.org/donate"><em> spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por</em><a href="https://www.spotlightpa.org/support"><em> fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em><strong><em></em></strong>
+<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en</em><a href="https://www.spotlightpa.org/donate"><em> spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por</em><a href="https://www.spotlightpa.org/support"><em> fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em><strong><em></em></strong>
 

@@ -67,6 +67,6 @@ Whether Democrats and Republicans will be able to find common ground on anything
 
 “There was kind of an agreement between the Democrats and the Republicans that they would do away with the straight-party voting, which is what the Republicans wanted,” he said. “And the Democrats wanted mail-in voting, so the Republicans agreed to put both of those issues in the bill.”
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=What%20%3Cb%3Eelection%20stories%3C%2Fb%3E%20should%20Spotlight%20PA%20be%20covering%3F%20Tell%20us.%20"></div>

@@ -49,5 +49,5 @@ Though outside fundraising efforts are helpful, Marci Mowery, the foundation’s
 
 Pennsylvania parks hosted 40 million visitors in 2020, a 22.4% increase from the previous year. The Department of Conservation and Natural Resources <a href="https://www.dcnr.pa.gov/GoodNatured/pages/Article.aspx?post=224">says</a> that attendance has remained steady since the pandemic, reporting 42 million visits in 2021 and 38 million last year.
 
-<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
+<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 

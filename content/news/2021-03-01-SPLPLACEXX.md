@@ -42,9 +42,9 @@ In Pennsylvania, the governor has the power to appoint roughly 1,000 people to d
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The power is not intended to be absolute, as appointments must be approved by the state Senate. And there are strict timing requirements that any administration must follow when making nominations. All of that leads to placeholders like Yablonski. 
+The power is not intended to be absolute, as appointments must be approved by the state Senate. And there are strict timing requirements that any administration must follow when making nominations. All of that leads to placeholders like Yablonski.
 
-When a vacancy occurs, governors have <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=4&sctn=8&subsctn=0">90 days</a> to nominate someone. If that doesn’t happen, the seat remains vacant until the end of their term, according to administration officials. But governors are loath to give up that power, and instead turn to people to keep the seat warm — on paper only. 
+When a vacancy occurs, governors have <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=4&sctn=8&subsctn=0">90 days</a> to nominate someone. If that doesn’t happen, the seat remains vacant until the end of their term, according to administration officials. But governors are loath to give up that power, and instead turn to people to keep the seat warm — on paper only.
 
 Sometimes, particularly toward the end of a governor’s second term, it can take more than 90 days to find someone for a post. So they turn to people like Yablonski, who are just names on paper and are never intended to fill those positions, to fulfill the 90-day requirement.
 
@@ -54,4 +54,4 @@ His latest nominations — 45 in all — occurred just since October 2020.
 
 Just this month, Wolf submitted Yablonski’s name for a dozen new positions, including the high-profile job of state victim advocate. The last person to hold that title, Jennifer Storm, was not reconfirmed by the Senate, and the administration is now interviewing candidates to replace her.
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

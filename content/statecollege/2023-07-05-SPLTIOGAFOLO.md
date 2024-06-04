@@ -48,5 +48,5 @@ Mosher had filed complaints against Wilcox and Relaford in April, alleging that 
 
 The borough “just needs to find the right secretary,” Relaford told Spotlight PA. She said council members are working for Tioga’s benefit every day, and they need staff who wouldn’t “be swayed by drama in a small town.”
 
-<strong><em>SUPPORT THIS JOURNALISM</em></strong><em> and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
+<strong><em>SUPPORT THIS JOURNALISM</em></strong><em> and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 

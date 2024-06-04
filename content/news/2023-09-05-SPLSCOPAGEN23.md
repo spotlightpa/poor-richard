@@ -133,5 +133,5 @@ At a <a href="https://www.youtube.com/watch?v=102cYmo_GUM">candidate forum</a> h
 
 Asked about his planned recusal policy as a justice during the PMC forum, McCaffery differed from Carluccio. Rather than pledge to recuse himself from any case involving a donor, he said he would recuse himself from cases with “actual conflict,” and that when an attorney or party asks him to recuse, he plans to “take a look at the allegations of impropriety” and “recuse where necessary.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

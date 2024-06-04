@@ -299,7 +299,7 @@ The Wolf administration, on the other hand, argued that in areas where the elect
 
 The petitioners, including the Republican National Committee and the Pennsylvania GOP, filed a King’s Bench petition to the state Supreme Court, asking justices to use a special jurisdiction that allows them to review any case of urgent public interest. The state Supreme Court granted this request on Oct. 21, just a little over two weeks before Election Day. 
 
-[The ruling came down on Nov. 1](http://spotlightpa.org/news/2022/11/pa-election-2022-undated-mail-ballots-supreme-court-decision/), a week before the midterms, and the court sided with the Republicans who sued. 
+[The ruling came down on Nov. 1](https://www.spotlightpa.org/news/2022/11/pa-election-2022-undated-mail-ballots-supreme-court-decision/), a week before the midterms, and the court sided with the Republicans who sued. 
 
 “The Election Code commands absentee and mail-in electors to date the declaration that appears upon ballot return envelopes,” stated the opinion. “And failure to comply with that command renders a ballot invalid as a matter of Pennsylvania law.”
 

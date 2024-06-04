@@ -34,5 +34,5 @@ The festival takes place Thursday, Oct. 5 from 7-10 p.m. at the Bok building in 
 
 <strong>General admission tickets cost $25 and can be purchased </strong><a href="https://www.eventbrite.com/e/philly-story-fest-tickets-673483335787?aff=SpotlightPA"><strong>here</strong></a><strong>. Mark your calendars for a night of insights, inspiration, and connection. </strong>
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

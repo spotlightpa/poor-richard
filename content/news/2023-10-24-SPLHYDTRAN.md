@@ -107,5 +107,5 @@ The latter process <a href="https://www.energy.gov/eere/fuelcells/hydrogen-produ
 
 According to the Department of Energy, the project is expected to create 21,000 jobs — 18,000 in construction and more than 3,000 permanent jobs. At a press conference announcing the hubs, DOE said that some of the main sites will be in La Belle in Fayette County and West Keating Township in Clinton County.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

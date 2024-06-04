@@ -54,5 +54,5 @@ The new law, he said, does not address that perceived conflict. Nor does it crea
 
 Pennsylvania has <a href="https://www.pacourts.us/Storage/media/pdfs/20220915/194105-pasupremecourtadvisorycouncilreleaseslatestprogressreportanddataonelderabuseandguardianship.pdf">over 18,000 active guardianships</a>, nearly half of which involve people over the age of 60, according to data compiled by the state Supreme Court’s Advisory Council on Elder Justice in the Courts. Those guardians oversee more than $1.7 billion in assets.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

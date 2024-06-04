@@ -27,7 +27,7 @@ To learn about the drink’s globe-spanning history and how to make some yoursel
 
 Join us Thursday, Dec. 14 from 6-7 p.m. on Zoom for a free Q&amp;A and demonstration on crafting boilo, and as a bonus, try your hand at some Pennsylvania wintertime trivia in the last half hour for a chance to win Spotlight PA swag.<strong></strong>
 
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
-<strong><em>BEFORE YOU GO</em></strong><em>… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO</em></strong><em>… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

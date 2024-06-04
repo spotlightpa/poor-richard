@@ -22,9 +22,9 @@ Almost two years ago, Spotlight PA announced a historic local expansion of our a
 
 We’ve exposed systemic problems in Penn State’s misconduct reporting structure, resulting in improved transparency. We’ve delved into how rural communities are served (or not) by state agencies and lawmakers. And we’ve fought for and won public records in the local court.
 
-These and dozens of other stories likely would have never been written without Spotlight PA. But we’re just getting started, and <a href="http://spotlightpa.org/centre">the future of this vital effort depends on you</a>.
+These and dozens of other stories likely would have never been written without Spotlight PA. But we’re just getting started, and <a href="https://www.spotlightpa.org/centre">the future of this vital effort depends on you</a>.
 
-We’re thrilled to participate for the second year in Centre Gives, a 36-hour online fundraiser hosted by Centre Foundation on May 8-9, to continue our public-service mission. Make a gift in support of Spotlight PA State College right now at <a href="http://spotlightpa.org/centre">spotlightpa.org/centre</a>.
+We’re thrilled to participate for the second year in Centre Gives, a 36-hour online fundraiser hosted by Centre Foundation on May 8-9, to continue our public-service mission. Make a gift in support of Spotlight PA State College right now at <a href="https://www.spotlightpa.org/centre">spotlightpa.org/centre</a>.
 
 Your support powers our nonprofit, nonpartisan journalism. A few examples:
 

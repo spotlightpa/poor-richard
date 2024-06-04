@@ -113,5 +113,5 @@ In her training, Barsoum has stressed the importance of perception, Schneider sa
 
 “That’s a lot of daylight,” Schneider said. “I think a lot of people in this country have had some questions about the 2020 election, and if they see this, it&#39;s like, ‘Hey man, there’s no way to mess around with this, mess it up.’ I certainly feel like that.”<strong><em></em></strong>
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

@@ -33,4 +33,4 @@ For our first “How Harrisburg Works” event, Spotlight PA’s Stephen Caruso 
 
 “How Harrisburg Works” is Spotlight PA’s <a href="https://www.spotlightpa.org/topics/how-harrisburg-works/">ongoing series</a> on the Capitol’s inner workings, and this event is the first in a quarterly series to explain how the legislature works (or doesn’t) and how you can get involved.
 
-<i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>

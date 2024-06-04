@@ -78,5 +78,5 @@ Since then, the GOP has moved no significant abortion-restricting legislation. P
 
 While that amendment could still technically move, it hasn’t been reintroduced this legislative session and a spokesperson for the GOP-controlled state Senate recently <a href="https://www.spotlightpa.org/news/2024/01/abortion-legal-pennsylvania-law-viability-restriction-legislature-republican-democrat/">told Spotlight PA</a> that she was unaware of plans to do so.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

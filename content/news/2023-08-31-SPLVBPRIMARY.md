@@ -69,5 +69,5 @@ An earlier election date also poses a challenge for political campaigns. If the 
 
 Gov. Josh Shapiro — who has <a href="https://www.inquirer.com/politics/election/pennsylvania-election-passover-presidential-primary-20230412.html">said he does not want the primary to conflict with Passover</a> — <a href="https://www.post-gazette.com/news/politics-state/2023/08/20/lawmakers-pa-election-2024-primary-date/stories/202308170105">said earlier this month</a> that he was fine with whatever date the Legislature selects.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

@@ -50,5 +50,5 @@ In January, Maude’s will close due to the loss of its lease, but Flint hopes t
 
 <br/>Despite Harold’s off-putting personality, Flint says she plans to reach out to him when they leave Maude’s current locale. “I think I’m at the point where I will invite him if we have a new space,” she says. “But he’s not going to go to the bar, because we already have a set of spirits down there.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

@@ -88,6 +88,6 @@ In Lycoming County, where more than 15,000 people have requested a mail ballot, 
 
 So far, nearly 50% of the ballots that headed out the printing facilities' doors have been returned to county boards of elections, waiting to complete their final leg of the journey.
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Are%20you%20a%20Pennsylvania%20resident%20with%20a%20voting%20or%20election%20question%3F%20Send%20it%20to%20Spotlight%20PA%20and%20we'll%20do%20our%20best%20to%20answer%20it.&flag_text=election%202020"></div>

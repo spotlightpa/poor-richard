@@ -93,5 +93,5 @@ Other states have barred or severely restricted the use of such clauses in settl
 
 A year earlier, in 2018, Kansas’ legislature passed budget legislation with provisions <a href="https://web.archive.org/20180506002511/https://apnews.com/bdf2d82493bc4df28459aa8917563454">prohibiting the use of taxpayer money to settle sexual harassment claims</a> and barring state agencies from using public dollars to pursue nondisclosure agreements when settling claims.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

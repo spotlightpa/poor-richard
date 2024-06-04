@@ -66,5 +66,5 @@ Pennsylvania’s Office of Administration, which falls under the governor’s ju
 
 In 2017, as a cost-saving move amid budget problems, former Gov. Tom Wolf <a href="https://www.pennlive.com/politics/2017/01/wolf_administration_consolidat.html">directed the consolidation</a> of information technology across state agencies. Before that, many state agencies had their own IT staff and offices.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
