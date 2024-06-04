@@ -92,7 +92,7 @@ Of the upper chamber’s goals on abortion, she told Spotlight PA that, “Prote
 
 Democrats, meanwhile, have gotten more active on the issue.
 
-Soon after Shapiro took office, he extended an executive order from his predecessor, Tom Wolf, that pledges to <a href="https://www.governor.pa.gov/newsroom/shapiro-administration-launches-abortion-access-website-after-texas-ruling-reminds-pennsylvanians-medication-abortion-remains-legal-in-the-commonwealth/">protect people from other states</a> from any abortion-restricting laws those states have on the books.
+Soon after Shapiro took office, he extended an executive order from his predecessor, Tom Wolf, that pledges to <a href="https://web.archive.org/20230411200357/https://www.governor.pa.gov/newsroom/shapiro-administration-launches-abortion-access-website-after-texas-ruling-reminds-pennsylvanians-medication-abortion-remains-legal-in-the-commonwealth/">protect people from other states</a> from any abortion-restricting laws those states have on the books.
 
 The governor’s first state budget also <a href="https://apnews.com/article/abortion-pennsylvania-92c940a80f675f5b6cc6fd1642ea9ba3">ended a long-standing contract</a> that provided public funds to an anti-abortion counseling program.
 

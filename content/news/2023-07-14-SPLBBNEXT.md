@@ -9,6 +9,7 @@ image-description = "Pennsylvania still needs to make sure that federal money he
 internal-id = "SPLBBNEXT"
 kicker = "Rural Issues"
 modal-exclude = false
+pinned = false
 published = 2023-07-14T05:00:00.082-04:00
 slug = "pennsylvania-federal-broadband-funding-biden-admin-whats-next-explainer"
 suppress-date = false
@@ -21,7 +22,7 @@ topics = ["Rural Issues"]
 
 STATE COLLEGE — Before Pennsylvania can spend an almost $1.2 billion windfall of federal funding for high-speed internet, it must figure out how to use it.
 
-More than <a href="https://www.governor.pa.gov/newsroom/in-luzerne-county-governor-shapiro-highlights-administrations-plans-to-bring-high-speed-affordable-broadband-to-every-pennsylvania-community/">270,000 locations</a> across the commonwealth can’t get internet at speeds that meet the federal government’s minimum standard for broadband, hampering their access to government services, healthcare, and education.
+More than <a href="https://web.archive.org/20230714100010/https://www.governor.pa.gov/newsroom/in-luzerne-county-governor-shapiro-highlights-administrations-plans-to-bring-high-speed-affordable-broadband-to-every-pennsylvania-community/">270,000 locations</a> across the commonwealth can’t get internet at speeds that meet the federal government’s minimum standard for broadband, hampering their access to government services, healthcare, and education.
 
 State-level efforts to improve broadband availability have long been stymied by a lack of funding, given the scope of the problem. Now, long-awaited federal grant dollars will give fast, reliable internet connections to thousands of residents.
 
@@ -39,7 +40,7 @@ As the commonwealth prepares to receive this historic infrastructure investment,
 
 ## We still don’t know exactly who can’t get broadband.
 
-Despite recent improvements, the federal map used to allocate funding to states has some gaps. Before the money was divided up, state and local governments were able to submit challenges if they found that the map overlooked areas that lacked broadband.<strong> </strong>Pennsylvania’s broadband authority submitted around 50,000 challenges, <a href="https://www.governor.pa.gov/newsroom/in-luzerne-county-governor-shapiro-highlights-administrations-plans-to-bring-high-speed-affordable-broadband-to-every-pennsylvania-community/">more than half of which were upheld</a> by the federal government.
+Despite recent improvements, the federal map used to allocate funding to states has some gaps. Before the money was divided up, state and local governments were able to submit challenges if they found that the map overlooked areas that lacked broadband.<strong> </strong>Pennsylvania’s broadband authority submitted around 50,000 challenges, <a href="https://web.archive.org/20230714100010/https://www.governor.pa.gov/newsroom/in-luzerne-county-governor-shapiro-highlights-administrations-plans-to-bring-high-speed-affordable-broadband-to-every-pennsylvania-community/">more than half of which were upheld</a> by the federal government.
 
 But local officials complained that the deadlines were too tight and that it was unfair to expect residents without broadband access to submit their feedback online. Residents had “zero awareness” and the map was not user-friendly for the average person, said Clearfield County Commissioner Dave Glass.<br/>
 

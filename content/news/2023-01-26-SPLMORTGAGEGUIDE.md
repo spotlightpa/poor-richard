@@ -11,6 +11,7 @@ internal-budget = "The Pennsylvania Homeowner Assistance Fund can help people wh
 internal-id = "SPLMORTGAGEGUIDE"
 kicker = "Economy"
 modal-exclude = false
+pinned = false
 published = 2023-01-26T05:00:00-05:00
 series = ["The Waiting Game"]
 slug = "pa-homeowner-mortgage-utility-assistance-program-guide"
@@ -52,7 +53,7 @@ To qualify for help with your debt, you must be at least one month behind on you
 
 To receive help with ongoing mortgage payments, you have to be up to date on your mortgage and your payments must take up at least 30% of your monthly income.
 
-The property tied to your application must be your main residence, and the amount you borrowed for your mortgage must be below a <a href="https://www.fhfa.gov/DataTools/Downloads/Pages/Conforming-Loan-Limit.aspx">certain limit</a>, depending on the year you took out the loan and the location of your home.
+The property tied to your application must be your main residence, and the amount you borrowed for your mortgage must be below a <a href="https://web.archive.org/20230124161322/https://www.fhfa.gov/DataTools/Downloads/Pages/Conforming-Loan-Limit.aspx">certain limit</a>, depending on the year you took out the loan and the location of your home.
 
 You also need to meet <a href="https://www.huduser.gov/portal/datasets/haf-il.html?fbclid=IwAR0LfIHxil0mgrLbf5PVpeWsImQ9MO_xpi7aB3YmhHbp6rvsk6-cjY-JC-E">income requirements</a>, which vary based on your county or metro area.
 

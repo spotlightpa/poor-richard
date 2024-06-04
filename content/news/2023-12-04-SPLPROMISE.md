@@ -123,7 +123,7 @@ The grant is managed by the Pennsylvania Commission on Crime and Delinquency and
 
 The Local Law Enforcement Support Grant launched in 2022 under Wolf.
 
-This year’s budget included a <a href="https://www.governor.pa.gov/newsroom/2023-24-budget-follows-through-on-governor-shapiros-proposed-investments-in-public-safety-law-enforcement-and-violence-prevention/#:~:text=The%20budget%20allocates%20%2416.4%20million,and%20train%20384%20new%20troopers.">$16.4 million allocation</a> to pay for four new state police trooper classes, which would fund about <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-state-police-gas-tax-transfers-josh-shapiro-budget/">400 new cadets in total</a>.
+This year’s budget included a <a href="https://web.archive.org/20230923150915/https://www.governor.pa.gov/newsroom/2023-24-budget-follows-through-on-governor-shapiros-proposed-investments-in-public-safety-law-enforcement-and-violence-prevention/#:~:text=The%20budget%20allocates%20%2416.4%20million,and%20train%20384%20new%20troopers.">$16.4 million allocation</a> to pay for four new state police trooper classes, which would fund about <a href="https://www.spotlightpa.org/news/2023/08/pennsylvania-state-police-gas-tax-transfers-josh-shapiro-budget/">400 new cadets in total</a>.
 
 Last month, Shapiro also created the <a href="https://www.governor.pa.gov/wp-content/uploads/2023/11/20231102_EO-2023-21_PA-CLEAR-Commission.pdf">Pennsylvania Citizen Law Enforcement Advisory and Review Commission</a> through an executive order. According to the administration it marks a continuation of police oversight work Gov. Tom Wolf’s administration started in 2020 under a separate commission.
 
@@ -181,7 +181,7 @@ While in office, he has largely stuck to those positions.
 
 <strong>Promise: </strong>Shapiro pledged to increase funding for education.
 
-<strong>Status: </strong>The spending plan Shapiro signed into law this year included a nearly $570 million increase in basic education funding. It was, <a href="https://www.governor.pa.gov/newsroom/historic-investments-in-pennsylvania-schools-2023-24-budget-makes-largest-increase-in-basic-education-funding-ever/#:~:text=Today%20we%20celebrate%20the%20accomplishment,free%20universal%20breakfast%20for%20children.">the administration said</a>, the biggest single-year boost the commonwealth had seen.
+<strong>Status: </strong>The spending plan Shapiro signed into law this year included a nearly $570 million increase in basic education funding. It was, <a href="https://web.archive.org/20230901215305/https://www.governor.pa.gov/newsroom/historic-investments-in-pennsylvania-schools-2023-24-budget-makes-largest-increase-in-basic-education-funding-ever/#:~:text=Today%20we%20celebrate%20the%20accomplishment,free%20universal%20breakfast%20for%20children.">the administration said</a>, the biggest single-year boost the commonwealth had seen.
 
 Some public education advocates argued the total should have been even higher, given a state court ruling this year that found Pennsylvania’s school system is unconstitutionally inequitable and ordered lawmakers to correct it. Talks are ongoing in the legislature about how best to accomplish this.
 

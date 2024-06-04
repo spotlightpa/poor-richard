@@ -40,7 +40,7 @@ But when they do make mistakes, they&#39;re interpreted as being intentional or 
 
 So the Department of State has created this year a new training team to provide training to election administrators across the commonwealth. Our sessions usually have between 50 and 100 election administrators at senior levels participating: ones who have been around for decades and ones who are brand new. It’s a service the Department of State is providing to make sure that newer people know what to do and what to prepare for.
 
-<strong>I was wondering if you could tell us a little bit about the</strong><a href="https://www.governor.pa.gov/newsroom/governor-shapiro-launches-pennsylvania-election-threats-task-force-to-ensure-safe-secure-free-fair-election-this-november/"><strong> Election Threats Task Force</strong></a><strong>, describing its role, its members, the information that&#39;s being shared and how that will translate on Election Day. —Kate Huangpu, Spotlight PA</strong>
+<strong>I was wondering if you could tell us a little bit about the</strong><a href="https://web.archive.org/20240301063737/https://www.governor.pa.gov/newsroom/governor-shapiro-launches-pennsylvania-election-threats-task-force-to-ensure-safe-secure-free-fair-election-this-november/"><strong> Election Threats Task Force</strong></a><strong>, describing its role, its members, the information that&#39;s being shared and how that will translate on Election Day. —Kate Huangpu, Spotlight PA</strong>
 
 The Elections Threat Task Force is mainly designed to improve communication among people responsible for running elections and people responsible for law enforcement in the event we encounter any sort of ugliness like we encountered in 2020, and off and on, since 2020.
 
