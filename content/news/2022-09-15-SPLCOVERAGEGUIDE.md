@@ -27,7 +27,7 @@ There will be several key races on the ballot, and lots of attention within the 
 
 Specifically, this month we are launching a new election series — called “One Vote, Two Pennsylvanias” — to clearly articulate through policy proposals and issue-based reporting the vastly different visions the candidates for governor have for the future of our state.
 
-Regardless of your political affiliation, trusted, nonpartisan election reporting is the bedrock of an informed electorate and an informed vote. As always, all of our public-service election coverage will be free and available to all on <a href="http://spotlightpa.org/" target="_blank">spotlightpa.org</a> and through our more than 90 community newsroom partners across the state that republish our work.
+Regardless of your political affiliation, trusted, nonpartisan election reporting is the bedrock of an informed electorate and an informed vote. As always, all of our public-service election coverage will be free and available to all on <a href="https://www.spotlightpa.org/" target="_blank">spotlightpa.org</a> and through our more than 90 community newsroom partners across the state that republish our work.
 
 For the first time, Spotlight PA will be translating its election guides into Spanish and distributing them through our Spanish-language partners as well as in partnership with Latino Connection, a marketing and communications firm that specializes in reaching Latino communities.
 
@@ -63,7 +63,7 @@ Our government team also closely follows the 253-member General Assembly, but it
 
 <div id="spl-cover"></div>
 
-Spotlight PA will not publish “horse race” coverage — stories that focus on campaign stops, the latest attacks, or who is winning or losing in the polls. For one, other news outlets will provide that coverage, and we don’t see a need to duplicate it. If you’d like to follow the day-to-day developments on the campaign trail, <a href="http://spotlightpa.org/newsletters">sign up for Spotlight PA’s daily newsletter, PA Post</a>.
+Spotlight PA will not publish “horse race” coverage — stories that focus on campaign stops, the latest attacks, or who is winning or losing in the polls. For one, other news outlets will provide that coverage, and we don’t see a need to duplicate it. If you’d like to follow the day-to-day developments on the campaign trail, <a href="https://www.spotlightpa.org/newsletters">sign up for Spotlight PA’s daily newsletter, PA Post</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -116,8 +116,8 @@ Send a message using the form below (if you can’t see the form, <a href="https
 
 All of Spotlight PA’s election coverage will be available on our site and will be shared with our more than 90 newsroom partners across the state. We have also launched <a href="https://www.spotlightpa.org/elections" target="_blank">Spotlight PA’s new Election Center</a> with a voter toolbox, key dates, a feed of election-related stories, an interactive sample ballot, and a campaign finance tracker.
 
-If you’re subscribed to one of our newsletters, you’ll also get periodic Voter Alerts letting you know about our latest coverage, key developments, and important upcoming dates. If you’re not yet subscribed, you can do so at <a href="http://spotlightpa.org/newsletters">spotlightpa.org/newsletters</a>.
+If you’re subscribed to one of our newsletters, you’ll also get periodic Voter Alerts letting you know about our latest coverage, key developments, and important upcoming dates. If you’re not yet subscribed, you can do so at <a href="https://www.spotlightpa.org/newsletters">spotlightpa.org/newsletters</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
+<i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

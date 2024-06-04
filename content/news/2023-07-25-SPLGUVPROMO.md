@@ -41,5 +41,5 @@ Our <a href="https://www.spotlightpa.org/news/2023/01/tioga-tamir-rice-pennsylva
 
 <a href="https://www.spotlightpa.org/topics/how-local-government-works/"><em>How Local Government Works</em></a><em> is a series of articles and events that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable.</em>
 
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 

@@ -49,6 +49,6 @@ While moratoriums delay eviction filings, relief programs directly provide aid t
 
 “If there is a lot of money that hasn’t been spent, it doesn’t reflect a lack of need,” said Phyllis Chamberlain, executive director of the Housing Alliance of Pennsylvania. “It really reflects a program that had too many requirements.”
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Are%20you%20%3Cb%3Efacing%20eviction%20as%20a%20result%20of%20the%20coronavirus%20pandemic%3C%2Fb%3E%3F%20We%20want%20to%20hear%20from%20you."></div>

@@ -60,5 +60,5 @@ The corruption case against Suplizio was one of the most expansive in the state 
 
 DuBois City Council swore in three new members at its Jan. 2 reorganization meeting. Newly elected Mayor Pat Reasinger and council members Jennifer Jackson and Elliot Gelfand voted to accept resignation from Gleason, Cherry &amp; Cherry as the city’s solicitor and to terminate Suplizio’s employment with DuBois. He had been on paid administrative leave since March 2023.
 
-<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
+<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 

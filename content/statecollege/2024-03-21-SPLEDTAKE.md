@@ -78,5 +78,5 @@ Spicka also emphasized tracking where additional funding is spent, recommending 
 
 The two reporters on the panel, Forstadt and Stalnecker, said they are curious how a new funding model could affect property tax rates, or <a href="https://whyy.org/articles/what-is-a-millage-rate-and-how-does-it-affect-school-funding/">millage rates</a>, because tax revenue plays a key role in funding local education systems.
 
-<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
+<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 

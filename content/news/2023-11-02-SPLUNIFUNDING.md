@@ -85,5 +85,5 @@ State House Democrats tried to circumvent the requirement earlier this year by a
 
 The grant funding passed the state House in October as part of an omnibus budget-enabling code bill. However, state Senate Republicans expressed opposition to the overall package, <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">which also included several other Democratic priorities</a>.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

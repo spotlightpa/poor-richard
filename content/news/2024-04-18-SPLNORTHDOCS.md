@@ -187,5 +187,5 @@ Northampton&#39;s 2023 documentation may have been more complete if a supervisor
 
 “This is one of these things where experience matters,” Feaser said.
 
-<em>BEFORE YOU GO… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<em>BEFORE YOU GO… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

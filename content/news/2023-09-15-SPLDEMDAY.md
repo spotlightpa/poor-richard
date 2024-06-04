@@ -40,11 +40,11 @@ We are bringing journalism back to what it must be for the sake of our Democracy
 
 Your support makes this public service possible. As a nonprofit, we depend on readers like you to ensure Spotlight PA can continue to produce tough, unique reporting you won’t find anywhere else, and to make it available at no cost as a public benefit and a public good.
 
-Access to quality information is the bedrock of a strong Democracy, and today, in honor of Democracy Day, I’m hoping you’ll take action to ensure Spotlight PA’s reporting can continue by making a tax-deductible contribution in support of our work at <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
+Access to quality information is the bedrock of a strong Democracy, and today, in honor of Democracy Day, I’m hoping you’ll take action to ensure Spotlight PA’s reporting can continue by making a tax-deductible contribution in support of our work at <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
 As a special bonus, and for a limited time, all gifts in support of Spotlight PA’s work will be matched dollar-for dollar — doubling your gift — by The Lenfest Institute for Journalism.
 
-The good of our communities, our state, and our Republic depends on free and unfettered public access to trusted, accurate information about what’s happening, why, and how to drive positive change. And you can <a href="http://spotlightpa.org/donate">do your part to ensure that happens by making a gift now</a>.
+The good of our communities, our state, and our Republic depends on free and unfettered public access to trusted, accurate information about what’s happening, why, and how to drive positive change. And you can <a href="https://www.spotlightpa.org/donate">do your part to ensure that happens by making a gift now</a>.
 
 We can&#39;t leave the future of journalism and our Democracy at the whims of the economy and bottom lines. Our future depends on something better, but that will take our shared support and commitment.
 

@@ -86,7 +86,7 @@ Geffen said the organizations did not want to bring the new claim to Commonwealt
 
 ”You don&#39;t go to the ultimate backstop argument if there is a different solution that is available,” he said. “In light of that recent decision from the 3rd Circuit, this is the last remaining option to vindicate this right.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at cwalker@votebeat.org.</em>
 

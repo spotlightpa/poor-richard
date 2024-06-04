@@ -49,5 +49,5 @@ Baker said that CeaseFirePA has the right to “advance its agenda” in any man
 
 In 2021, 1,905 people <a href="https://www.cdc.gov/nchs/pressroom/sosmap/firearm_mortality/firearm.htm">died by gun</a> in Pennsylvania, according to the Centers for Disease Control and Prevention. A Franklin &amp; Marshall poll released in October found that 58% of voters either strongly or somewhat favor creating more laws regulating gun ownership.
 
-<em>BEFORE YOU GO… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<em>BEFORE YOU GO… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

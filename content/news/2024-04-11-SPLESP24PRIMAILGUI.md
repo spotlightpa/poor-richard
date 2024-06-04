@@ -114,5 +114,5 @@ Lea la cobertura completa de Spotlight PA, incluyendo guías sobre candidatos y 
 
 - <a href="https://www.spotlightpa.org/news/2024/04/pensilvania-primarias-elecciones-2024-votar-informacion/">Elecciones Pa. 2024: Una guía completa de quién está en la papeleta de las primarias, cuándo votar, cómo votar, dónde votar, emitir votos por correo y más</a>
 
-<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
+<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
 

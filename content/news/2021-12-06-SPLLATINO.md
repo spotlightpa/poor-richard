@@ -120,4 +120,4 @@ Martínez tiene la esperanza de que su testimonio se refleje en los borradores i
 
 “Si fuera fácil, cualquiera podría hacerlo”, dijo Martínez, refiriéndose a la comisión. “Para eso se inscribieron. Por lo tanto, debemos asegurarnos de hacerlos responsables”.
 
-<i><b>MIENTRAS ESTÁ AQUÍ ... </b></i><i>Si aprendió algo de esta historia, pague y conviértase en miembro de Spotlight PA para que alguien más pueda hacerlo en el futuro en </i><a href="http://spotlightpa.org/donate" target="_blank"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA está financiado por fundaciones y lectores como usted que están comprometidos con el periodismo de investigación que obtiene resultados.</i>
+<i><b>MIENTRAS ESTÁ AQUÍ ... </b></i><i>Si aprendió algo de esta historia, pague y conviértase en miembro de Spotlight PA para que alguien más pueda hacerlo en el futuro en </i><a href="https://www.spotlightpa.org/donate" target="_blank"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA está financiado por fundaciones y lectores como usted que están comprometidos con el periodismo de investigación que obtiene resultados.</i>

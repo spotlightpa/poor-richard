@@ -24,7 +24,7 @@ title-tag = "Answers to Spotlight PA’s Thanksgiving Day puzzles 2022"
 
 Rather than making you wait until next week, we’re providing answers to the Thanksgiving Day Scramblers, Riddlers, and PA Local trivia here. You’ll find the clues recapped up top and the answers below. We hope you have a great holiday, and we’ll get back to the news next week.
 
-If you’re feeling thankful for Spotlight PA’s fearless, independent journalism, you can <a href="http://spotlightpa.org/donate">become a member now.</a>
+If you’re feeling thankful for Spotlight PA’s fearless, independent journalism, you can <a href="https://www.spotlightpa.org/donate">become a member now.</a>
 
 <b>SCRAMBLER CLUES</b>
 
@@ -90,4 +90,4 @@ Case No. 176: Float the ball to the surface by pouring water from the bottle int
 
 5. The term “Black Friday” can be <a href="https://whyy.org/articles/the-marathon-known-as-black-friday-actually-has-its-roots-in-philadelphia/">traced back to Philly</a>.
 
-<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today: </i><a href="http://spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a>
+<i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a>

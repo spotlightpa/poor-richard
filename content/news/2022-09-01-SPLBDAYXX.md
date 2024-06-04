@@ -34,11 +34,11 @@ That does not mean we favor one political party over another or one particular p
 
 Making the government more transparent and accountable is a long and frustrating process, but we’ve shared in victories time and again. Whether it’s greater oversight of State Police, more transparency about how the legislature spends our money, or more than $19 million owed to the public due to a government error kept secret until our reporting — it adds up.
 
-<b>› READ MORE:</b> <a href="http://spotlightpa.org/investigations">Explore all of Spotlight PA’s hard-hitting investigations here</a>
+<b>› READ MORE:</b> <a href="https://www.spotlightpa.org/investigations">Explore all of Spotlight PA’s hard-hitting investigations here</a>
 
-Combine that vital investigative and public-service journalism with our <a href="http://spotlightpa.org/newsletters">newsletters</a> and <a href="http://spotlightpa.org/events">events</a> that are all crafted to better serve you and reflect your life — to bring you all the news you need from across our big state in one place, to celebrate our differences and see what more we have in common, and to empower you to get involved and drive change.
+Combine that vital investigative and public-service journalism with our <a href="https://www.spotlightpa.org/newsletters">newsletters</a> and <a href="https://www.spotlightpa.org/events">events</a> that are all crafted to better serve you and reflect your life — to bring you all the news you need from across our big state in one place, to celebrate our differences and see what more we have in common, and to empower you to get involved and drive change.
 
-And this year, we’ve taken our first step toward returning more reporters back to our local communities with the launch of our <a href="http://spotlightpa.org/statecollege">first-ever regional bureau based in State College</a>.
+And this year, we’ve taken our first step toward returning more reporters back to our local communities with the launch of our <a href="https://www.spotlightpa.org/statecollege">first-ever regional bureau based in State College</a>.
 
 Together, we’ve created something special, and it’s getting attention across the U.S. Just this week, Spotlight PA was named a finalist for two more national reporting awards, and new startups in other states are increasingly looking to replicate our success.
 
