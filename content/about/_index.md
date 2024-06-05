@@ -2,7 +2,7 @@
 published = 2020-07-17T14:22:15.114Z
 title = "Your Source for Pennsylvania News & Investigations"
 description = "Spotlight PA is an independent, nonpartisan newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues, including elections, voting, the governor, the legislature, rural communities, criminal justice, economic development, health, human services, and more."
-title-tag = "Spotlight PA: Pennsylvania news and investigations"
+title-tag = "About Spotlight PA, a nonprofit newsroom"
 linktitle = "About"
 aliases = ["/about/faq/"]
 layout = "page-landing"
