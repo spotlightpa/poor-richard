@@ -12,17 +12,16 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-06-04-SPLAFFORDCOLL.md"
+    "content/news/2024-06-05-SPLCAREACT0624.md"
   ],
   "subfeatures": [
-    "content/news/2024-05-16-SPLBUDPRE24.md",
-    "content/statecollege/2024-03-20-SPLPERFUND.md",
-    "content/statecollege/2024-01-03-SPLAPPINFLATION.md"
+    "content/news/2023-06-21-SPLFAMCRED.md",
+    "content/news/2022-07-12-SPLCHILD.md"
   ],
   "topSlots": [
+    "content/news/2024-06-04-SPLAFFORDCOLL.md",
     "content/statecollege/2024-06-03-SPLROCKSPRING0624.md",
-    "content/news/2024-05-31-SPLMISS24ANA.md",
-    "content/statecollege/2024-05-31-SPLBEAVER0524.md"
+    "content/news/2024-05-31-SPLMISS24ANA.md"
   ],
   "topper": []
 }
