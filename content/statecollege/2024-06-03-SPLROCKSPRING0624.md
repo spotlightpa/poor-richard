@@ -152,7 +152,7 @@ In January, Centrice Martin, the current township manager, requested an update v
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-## A law backfires
+## Concerns over higher bills
 
 Grant funding and loans could help a future owner, specifically the water authority, avoid placing undue financial pressure on existing customers; however, they’ll likely bear some of the costs of improvements.
 
@@ -162,7 +162,7 @@ The average residential Rock Spring customer pays $19.35 monthly based on water 
 
 If another private company bought Rock Spring, customers could face steep increases. The engineering firm noted in its report that the family-owned business previously met with a larger utility company to discuss a sale. That would have resulted in $50 to $100 monthly bill increases.
 
-Such high estimates are likely due to legislation passed by the then-Republican-controlled legislature and signed by former Democratic Gov. Tom Wolf in 2016. The law, known as <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2016&amp;sessInd=0&amp;act=12">Act 12</a>, let investor-owned utilities <a href="https://whyy.org/articles/act-12-explained-customers-more-likely-to-see-rates-rise-with-pas-new-water-privatization-process/">bake the costs of buying a system into PUC rate increase requests</a> for all customers, and created new rules for pricing water systems.
+Customers in areas across the state have experienced higher bills due to legislation passed by the then-Republican-controlled legislature and signed by former Democratic Gov. Tom Wolf in 2016. The law, known as <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2016&amp;sessInd=0&amp;act=12">Act 12</a>, let investor-owned utilities <a href="https://whyy.org/articles/act-12-explained-customers-more-likely-to-see-rates-rise-with-pas-new-water-privatization-process/">bake the costs of buying a municipal system into PUC rate increase requests</a> for all customers, and created new rules for pricing water systems.
 
 Lawmakers hoped the law would help distressed municipal systems and improve water service.
 
@@ -172,6 +172,8 @@ Patrick Cicero, Pennsylvania’s consumer advocate, has urged lawmakers to repea
 
 A group of state House lawmakers has introduced a <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41771">package of bills</a> that would cap the acquisition amount at 125% of the depreciated original cost and spread out any costs incurred by customers over time rather than all at once.
 
+Act 12 would not apply if Rock Spring were sold to the State College Borough Water Authority or a private company because it is not a municipal system. Instead, increased bills would likely be attributed to capital costs to improve the system.
+
 Republican state Rep. Kerry Benninghoff has represented parts of Centre County for 27 years, but told Spotlight PA he wasn’t familiar with Rock Spring. However, he cited a similar situation from the 1990s, when the College Township Water Authority <a href="https://www.pacodeandbulletin.gov/Display/pabull?file=/secure/pabulletin/data/vol26/26-29/1194.html">acquired</a> the now-liquidated Lemont Water Company after a local push from residents to take over.
 
 “These family-run operations are done on a short string. In return, they keep the costs down for customers,” Benninghoff said.
@@ -180,5 +182,7 @@ When a larger water company or municipal authority takes over operations, custom
 
 “People want better quality, better service, but that generally means it’s going to take more money to get that,” Benninghoff said. “It doesn’t matter what the utility is.”
 
-<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
+<em>Correction: This story has been updated to reflect Act 12’s impact on a potential acquisition of Rock Spring Water Company.</em>
+
+<strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
 
