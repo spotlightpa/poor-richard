@@ -15,7 +15,7 @@ slug = "pennsylvania-local-governments-dubois-sandy-township-clearfield-county-c
 suppress-date = false
 title = "Why a thorny union of two Pa. municipalities can still succeed despite lack of legal remedy"
 title-tag = "Clearfield County municipal consolidation exposes flaws in PA"
-topics = ["Local Government"]
+topics = ["Local Government", "Corrections"]
 +++
 
 <em>This story was produced by the </em><a href="https://www.spotlightpa.org/statecollege"><em>State College regional bureau of Spotlight PA</em></a><em>, an independent, nonpartisan newsroom dedicated to investigative and public-service journalism for Pennsylvania. Sign up for our north-central Pa. newsletter, Talk of the Town, at </em><a href="https://www.spotlightpa.org/newsletters/talkofthetown"><em>spotlightpa.org/newsletters/talkofthetown</em></a>.
