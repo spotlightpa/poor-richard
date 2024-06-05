@@ -24,6 +24,16 @@ to = "https://spotlightpa.fundjournalism.org/statecollege"
 code = 302
 
 [[redirects]]
+from = "/donate/berks"
+to = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+code = 302
+
+[[redirects]]
+from = "/berks/donate"
+to = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+code = 302
+
+[[redirects]]
 from = "/bizmember"
 to = "https://spotlightpa.fundjournalism.org/business-membership/?campaign=701Ub0000020CsuIAE"
 code = 302
