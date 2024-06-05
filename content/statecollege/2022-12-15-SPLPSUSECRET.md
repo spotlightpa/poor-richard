@@ -35,7 +35,7 @@ The trustees’ website has no record of any presentation, call, or meeting on t
 
 The board is also required to make available the minutes for all public meetings, including those of committees and subcommittees.
 
-Barron, <a href="https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/a/13525/files/2021/12/record_012621.pdf">during a Jan. 26, 2021, meeting of the university’s Faculty Senate</a>, said the trustees had “held a discussion” on the select commission’s report and his proposals. The president did not offer additional information at the time.
+Barron, <a href="https://web.archive.org/20221216134813/https://cpb-us-e1.wpmucdn.com/sites.psu.edu/dist/a/13525/files/2021/12/record_012621.pdf">during a Jan. 26, 2021, meeting of the university’s Faculty Senate</a>, said the trustees had “held a discussion” on the select commission’s report and his proposals. The president did not offer additional information at the time.
 
 Shannon Harvey, director of Penn State’s Office of the Board of Trustees, confirmed the date of the presentation and told Spotlight PA in an email that Barron’s presentation was not a meeting but rather a “conference” as defined under the state’s Sunshine Act.
 
@@ -45,7 +45,7 @@ Conferences, according to the state law, can only take place in limited circumst
 
 The Sunshine Act requires government bodies to make their meetings open to the public and provide advance notice before such meetings whenever there will be deliberation or official action. These groups are not allowed to deliberate during conferences.
 
-A <a href="https://blogs.law.widener.edu/envirolawcenter/files/2010/03/PA_Citizens_Guide_re_Sunshine_Act.pdf">citizen’s guide to the state’s open meetings law</a> created by the Widener University Commonwealth Law School, and based on case law, states that deliberation occurs when the majority of a group’s members discuss a topic and the conversation informs a decision on the matter.
+A <a href="https://web.archive.org/20220702072323/https://blogs.law.widener.edu/envirolawcenter/files/2010/03/PA_Citizens_Guide_re_Sunshine_Act.pdf">citizen’s guide to the state’s open meetings law</a> created by the Widener University Commonwealth Law School, and based on case law, states that deliberation occurs when the majority of a group’s members discuss a topic and the conversation informs a decision on the matter.
 
 “Simply discussing an issue to familiarize oneself with it can qualify as a deliberation, so long as a majority of the agency’s members are present,” the guide reads.
 
