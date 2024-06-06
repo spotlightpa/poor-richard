@@ -36,7 +36,7 @@ Bipartisan bills currently before <a href="https://www.legis.state.pa.us/cfdocs/
 
 The measure is also supported by <a href="https://www.pasenategop.com/news/policy-021424/">a wide swath of interest groups</a>, from the state’s hospital association to the Commonwealth Foundation, a conservative free market think tank.
 
-But opposition from key lawmakers and the Pennsylvania Medical society, a professional group that represents doctors, appears to have again stalled the legislation.
+But opposition from key lawmakers and the Pennsylvania Medical Society, a professional group that represents doctors, appears to have again stalled the legislation.
 
 And in the meantime, those health care provider shortages remain.
 
