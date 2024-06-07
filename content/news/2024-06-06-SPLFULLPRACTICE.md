@@ -74,7 +74,7 @@ Bartolotta noted that she’s toughened the language over the years. At first, t
 
 The changes to the legislation, however, have so far not swayed the doctors who oppose the measure. They have been boosted by their industry’s significant presence in Harrisburg and the backing of top legislators.
 
-The exact scope of lobbying in the Pennsylvania General Assembly is hard to grasp under the state’s laws. Lobbies are not required to note what bills they advocate for or against, and interest groups often juggle multiple priorities.
+The exact scope of lobbying in the Pennsylvania General Assembly is hard to grasp under the state’s laws. Lobbyists are not required to note what bills they advocate for or against, and interest groups often juggle multiple priorities.
 
 But since 2013, the Pennsylvania Medical Society alone has spent $6.6 million lobbying the General Assembly. In the same period, the nurse practitioners coalition spent $668,000. (Although over that span, the coalition has employed two well-known lobbying firms, including the recent hire of former top GOP state Sen. Joe Scarnati’s firm.)
 
@@ -94,9 +94,7 @@ In a statement, Ward’s spokesperson Erica Clayton Wright said that the senator
 
 Clayton Wright added that Ward’s “leadership position has no bearing on the trajectory of this legislation.”
 
-With new leadership at the nurse practitioners coalition, the Pennsylvania Medical Society, and in the legislature, Amanda Laskoskie, president of the nurse practitioner&#39;s coalition,
-
-said advocates hope to soon meet “with all involved stakeholders to help solve the patient access to health care crisis.”
+With new leadership at the nurse practitioners coalition, the Pennsylvania Medical Society, and in the legislature, Amanda Laskoskie, president of the nurse practitioner&#39;s coalition, said advocates hope to soon meet “with all involved stakeholders to help solve the patient access to health care crisis.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
