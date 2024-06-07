@@ -1,4 +1,4 @@
-{{ $minify := not site.IsServer }}
+{{ $minify := not hugo.IsServer }}
 {{ $defines := dict
   "process.env.NODE_ENV" `"production"`
   "ALPINE_VERSION" `"spl-dev"`
