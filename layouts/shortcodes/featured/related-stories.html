@@ -183,7 +183,7 @@
     {{ end }}
   </div>
 {{ else }}
-  {{ if site.IsServer }}
+  {{ if hugo.IsServer }}
     {{ warnf "no topics" }}
     <h3 class="text-lg font-bold uppercase">No topic stories</h3>
   {{ end }}
