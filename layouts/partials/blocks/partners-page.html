@@ -92,18 +92,7 @@
               class="no-js:hidden sticky top-0 mx-auto ml-auto w-96 max-w-full bg-white py-2 md:relative"
             >
               <select
-                @change="
-                    selectedCounty = $el.value;
-                        window.setTimeout(() => {
-                          document.
-                            getElementById('{{ . | urlize }}').
-                            scrollIntoView({
-                              behavior: 'smooth',
-                              block: 'start',
-                              inline: 'start',
-                            });
-                        }, 250);
-                  "
+                @change="selectedCounty = $el.value;"
                 class="spl-select text-xl"
               >
                 <option disabled selected>Select County…</option>
