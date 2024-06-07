@@ -14,6 +14,16 @@
     "authors" (.Param "authors")
     "content_html" .Content
   -}}
+  {{- with $imgName := .Param "image" -}}
+    {{- $imgOpt := dict
+        "filename" $imgName
+        "width" 800
+        "height" 1000
+        "absURL" true
+    -}}
+    {{- $url := partial "helper/imgproxy" $imgOpt -}}
+    {{- $item = $item | merge (dict "image" $url) -}}
+  {{- end -}}
   {{- $items = append $item $items -}}
 {{- end -}}
 
