@@ -11,6 +11,7 @@ kicker = "Penn State"
 modal-exclude = false
 pinned = false
 published = 2024-04-29T15:50:37.799-04:00
+series = ["Penn State Health"]
 slug = "penn-state-health-liver-transplants-hershey-medical-center-hospital-surgery"
 suppress-date = false
 title = "Penn State Health halts liver transplants as national oversight body reviews program"
