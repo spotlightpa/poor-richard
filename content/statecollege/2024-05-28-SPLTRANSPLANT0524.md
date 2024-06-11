@@ -11,6 +11,7 @@ kicker = "Penn State"
 modal-exclude = false
 pinned = false
 published = 2024-05-28T10:49:17.117-04:00
+series = ["Penn State Health"]
 slug = "penn-state-health-hershey-medical-center-liver-kidney-transplant-shutdown"
 suppress-date = false
 title = "Penn State Health discontinues kidney and liver transplant programs, citing ‘ongoing challenges’ and federal scrutiny"
