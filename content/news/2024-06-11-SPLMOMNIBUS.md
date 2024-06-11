@@ -34,7 +34,7 @@ Democrats, including those who control the state House, argue new spending on he
 
 Legislative leaders are working to craft a budget deal ahead of the June 30 deadline, and it’s possible some of these initiatives could end up in the final product amid fluid negotiations.
 
-Since May, the state House has passed bills that would expand access to maternal blood pressure monitoring, <a href="https://www.health.harvard.edu/blog/what-does-a-birth-doula-do-202311222995">doulas</a> — or nonmedical workers who provide support to pregnant people — and postpartum depression care.
+Since May, the state House has passed bills that would expand access to maternal blood pressure monitoring and postpartum depression care. Another bill would enact into statute a state Department of Human Services <a href="https://www.pa.gov/en/agencies/dhs/newsroom/shapiro-administration-announces-expansion-of-access-to-doulas-t.html">policy</a> that gives <a href="https://www.health.harvard.edu/blog/what-does-a-birth-doula-do-202311222995">doulas</a> — or nonmedical workers who provide support to pregnant people — a path to seek Medicaid reimbursement.
 
 Some portions of the Momnibus package have been controversial. Private insurers raised concerns about a bill that would reimburse patients for postpartum blood pressure monitors, while a Republican lawmaker said she was approached by medical providers who opposed a <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1203">bill</a> that would require postpartum depression screening.
 
