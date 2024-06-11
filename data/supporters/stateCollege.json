@@ -1,18 +1,28 @@
 {
   "list": [
     {
-      "display": "Tony Barbieri",
+      "display": "Mimi Barash Coppersmith",
+      "sort": "Barash Coppersmith",
+      "url": ""
+    },
+    {
+      "display": "Anthony Barbieri",
       "sort": "Barbieri",
       "url": ""
     },
     {
-      "display": "R Thomas Berner",
+      "display": "R Thomas and Paulette Berner",
       "sort": "Berner",
       "url": ""
     },
     {
-      "display": "Mimi Barash Coppersmith",
-      "sort": "Coppersmith",
+      "display": "Centre Foundation",
+      "sort": "Centre",
+      "url": ""
+    },
+    {
+      "display": "Nancy Chiswick and Arthur Patterson",
+      "sort": "Chiswick",
       "url": ""
     },
     {
@@ -51,11 +61,6 @@
       "url": ""
     },
     {
-      "display": "Donna Queeney and Nicholas Kerlin",
-      "sort": "Kerlin",
-      "url": ""
-    },
-    {
       "display": "The Lenfest Institute for Journalism",
       "sort": "Lenfest",
       "url": ""
@@ -66,18 +71,18 @@
       "url": ""
     },
     {
+      "display": "Martina Martin",
+      "sort": "Martin",
+      "url": ""
+    },
+    {
       "display": "John Nichols",
       "sort": "Nichols",
       "url": ""
     },
     {
-      "display": "Katie O'Toole",
+      "display": "Katie O'Toole and Gary Gray",
       "sort": "O'Toole",
-      "url": ""
-    },
-    {
-      "display": "Nancy Chiswick and Arthur Patterson",
-      "sort": "Patterson",
       "url": ""
     },
     {
@@ -86,13 +91,8 @@
       "url": ""
     },
     {
-      "display": "Mary Prunty",
-      "sort": "Prunty",
-      "url": ""
-    },
-    {
-      "display": "Report for America",
-      "sort": "Report",
+      "display": "Donna Queeney and Nicholas Kerlin",
+      "sort": "Queeney",
       "url": ""
     },
     {
@@ -101,8 +101,18 @@
       "url": ""
     },
     {
-      "display": "Susan F. and Ron Smith",
+      "display": "David Seltzer",
+      "sort": "Seltzer",
+      "url": ""
+    },
+    {
+      "display": "Susan and Ron Smith",
       "sort": "Smith",
+      "url": ""
+    },
+    {
+      "display": "Report for America",
+      "sort": "Report",
       "url": ""
     },
     {
