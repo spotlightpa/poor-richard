@@ -6,6 +6,7 @@ description = "Gov. Josh Shapiro and legislative Democrats want PA to invest mor
 image = "2024/06/01k6-ejq5-qnac-f2ca.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Acting Health Secretary Debra Bogen (right) toured Lifecycle WomanCare in Bryn Mawr to meet with reps from PA's stand-alone birthing centers."
+image-gravity = "ea"
 internal-id = "SPLMOMNIBUS"
 kicker = "Health"
 modal-exclude = false
