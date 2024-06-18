@@ -1,11 +1,13 @@
 {{ with .block }}
-  {{ $collection := .collection }}
-  {{ $collection := site.GetPage $collection }}
   {{ $slug := .slug | default "guides" }}
-
-  {{ $pages := $collection.RegularPages }}
-  {{ $pinnedPages := where $pages "Params.pinned" true }}
-  {{ $featuredPages := union $pinnedPages $pages | first 2 }}
+  {{ $stories := slice }}
+  {{ range .stories }}
+    {{ with site.GetPage (strings.TrimPrefix "content/" .) }}
+      {{ $stories = $stories | append . }}
+    {{ else }}
+      {{ warnf "unknown story path %q" . }}
+    {{ end }}
+  {{ end }}
 
 
   <div
@@ -15,7 +17,7 @@
   >
     {{ partial "tw/list-callout-story.html" (dict
       "hed" "Investigations"
-      "pages" $featuredPages
+      "pages" $stories
       "rubricLink" "rubric"
       )
     }}

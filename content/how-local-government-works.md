@@ -76,11 +76,11 @@ title = "Investigations"
 link = "investigations"
 
 [[blocks.link]]
-title = "Local Accountability"
+title = "More Coverage"
 link = "accountability"
 
 [[blocks.link]]
-title = "Contact"
+title = "Ask Us"
 link = "contact"
 
 
@@ -97,6 +97,8 @@ layout = "events"
 id = "events"
 title = "Local Government Events"
 image = "2024/05/01k4-sazp-x023-8y1k.jpeg"
+imageCredit = "Daniel Fishel for Spotlight PA"
+imageDescription = "An illustration of five elected officials sitting at a table."
 
 [[blocks.entries]]
 hed="“Richest Little City”"
@@ -124,9 +126,12 @@ link="https://www.spotlightpa.org/news/2023/07/pennsylvania-local-government-acc
 [[blocks]]
 title = "Investigations"
 slug = "investigations"
-collection = "series/richest-little-city/_index.md"
+source = "edInvestigations"
 layout = "list-callout"
-
+stories =  [
+  "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md",
+  "content/news/2024-02-12-SPLHEHON.md",
+]
 
 [[blocks]]
 layout = "newsletter/talkofthetown"
@@ -155,6 +160,6 @@ dek = "What do you want to know about how local government works? Use the form t
 
 Pennsylvania has a patchwork system of local government that includes more than 2,500 cities, townships, and boroughs (and one town).
 
-“How Local Government Works” is a series by Local Accountability Reporter Min Xian. This series focuses on issues and trends in Pennsylvania local governments and provides tools for you to hold your local officials accountable. 
+“How Local Government Works” is a series by Local Accountability Reporter Min Xian. This series focuses on issues and trends in Pennsylvania local governments and provides tools for you to hold your local officials accountable.
 
 Our goal is to help you understand how your municipal government functions, the powers it possesses, and what responsibility it has to residents. We also want to provide resources that empower you to obtain information, get involved, and spot when something’s going wrong.
