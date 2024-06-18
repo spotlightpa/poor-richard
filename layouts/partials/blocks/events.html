@@ -17,23 +17,23 @@
     >
       <div class="flex-0 md:w-5/12">
         {{ $name := .image }}
-        {{ $credit := "credit" }}
-        {{ $description := "desc" }}
-
-        {{ $imgOpts := dict
-          "filename" $name
-          "description" $description
-          "widthRatio" 5
-          "heightRatio" 3
-          "wrapperClass" "flex w-full h-full"
-          "pictureClass" "flex w-full items-center justify-stretch"
-          "imgClass" "self-center object-cover flex-1 h-full"
-          "widths" (slice 1024 1600 1500 2880)
-          "figClass" "flex flex-0 h-full overflow-hidden bg-red object-cover rounded"
-          "sizeHint" "400px"
-          "gravity" (.page.Param "image-gravity")
-        }}
-        {{ partial "tw/image-block.html" $imgOpts }}
+        {{ $credit := .imageCredit }}
+        {{ $description := .imageDescription }}
+        <div class="inline-block">
+          {{ $imgOpts := dict
+            "filename" $name
+            "description" $description
+            "widthRatio" 16
+            "heightRatio" 9
+            "credit" $credit
+            "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-white"
+            "imgClass" "self-center object-cover flex-1 h-full"
+            "widths" (slice 1024 1600 1500 2880)
+            "sizeHint" "400px"
+            "gravity" (.page.Param "image-gravity")
+          }}
+          {{ partial "tw/image-block.html" $imgOpts }}
+        </div>
       </div>
       <span
         class="hidden min-h-full w-0 border border-g-3 md:inline-flex"
