@@ -45,6 +45,7 @@
 {{ $dek := .dek }}
 {{ $recipient := .recipient }}
 {{ $anonymous := .showAnon | default false }}
+{{ $placeholder := .placeholder | default `Explain how we can help you` }}
 {{ $cta := .submit | default "Submit" }}
 <section
   id="{{ $formID }}"
@@ -173,7 +174,7 @@
             <textarea
               id="{{ $idBody }}"
               class="input min-h-[128px] w-full rounded border border-g-4 p-1 font-sans shadow"
-              placeholder="Explain how we can help you"
+              placeholder="{{ $placeholder }}"
               name="comment"
             ></textarea>
           </div>

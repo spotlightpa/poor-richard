@@ -244,6 +244,16 @@ layout = "story-collection"
 timeFilter = "2024-01-01"
 collection = "topics/español/_index.md"
 collectionReadMore = "Leer Más Historias De La Elección PA 2024"
+
+[[blocks]]
+layout = "contact"
+slug = "contact"
+hed = "Ask Us Your Questions"
+showAnon = false
+submit = "Submit"
+recipient = "Elections"
+dek = "What do you want to know about Pennsylvania elections? Use the form to ask us."
+placeholder = "What you want to know about Pennsylvania elections…"
 +++
 
 At Spotlight PA, we’re here to help you navigate the Pennsylvania election process — from important voting deadlines to candidate guides to [primers on election misinformation](https://www.spotlightpa.org/series/elections-101/). Our goal is that the resources on this page will give you the critical information you need to confidently cast your vote, and answer some questions you didn’t know you had in the process.
