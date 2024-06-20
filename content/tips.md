@@ -5,7 +5,6 @@ description = "Our reporters rely on readers like you to alert us to waste, frau
 modal-exclude = true
 type = "root"
 +++
-
 *PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
 
 <div class="my-12">
@@ -36,7 +35,7 @@ Snail mail remains one of the most secure ways of sending us information.
 
 **Address:**<br>
 Spotlight PA<br>
-228 Walnut St., #11728<br>
+PO Box 11728<br>
 Harrisburg, PA 17108-1728
 
 ## Signal
