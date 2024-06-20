@@ -129,8 +129,8 @@ slug = "investigations"
 source = "edInvestigations"
 layout = "list-callout"
 stories =  [
-  "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md",
-  "content/news/2024-02-12-SPLHEHON.md",
+  "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
+  "content/statecollege/2022-12-19-SPLTIOGA.md",
 ]
 
 [[blocks]]
