@@ -12,18 +12,13 @@
     "content/news/2024-02-12-SPLHEHON.md"
   ],
   "featuredStories": [
-    "content/news/2024-06-21-SPLUSASUIT.md"
+    "content/news/2024-06-24-SPLSWIPEFEE.md"
   ],
-  "subfeatures": [
-    "content/news/2024-03-04-SPL24ELEXLIT.md",
-    "content/news/2024-05-29-SPLACCOURTDATE.md",
-    "content/news/2024-05-16-SPACLUCURE.md",
-    "content/news/2024-04-10-SPLUNDATAPP.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2024-06-21-SPLUSASUIT.md",
     "content/news/2024-06-21-SPLISRAELFUNDS.md",
-    "content/statecollege/2024-06-20-SPLLYNCH.md",
-    "content/news/2024-06-19-SPLWEED24UPD.md"
+    "content/statecollege/2024-06-20-SPLLYNCH.md"
   ],
   "topper": []
 }
