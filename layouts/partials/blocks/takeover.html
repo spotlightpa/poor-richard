@@ -10,6 +10,7 @@
   {{ $gaForm := .gaForm }}
   {{ $hiddenField := .hiddenField }}
   {{ $content := .content }}
+  {{ $eager := .eager }}
   {{ partial "tw/takeover.html" (dict
     "image" $src
     "title" $hed
@@ -21,6 +22,7 @@
     "gaCategory" $gaCategory
     "gaForm" $gaForm
     "hiddenField" $hiddenField
+    "eager" $eager
     "content" $content
     )
   }}

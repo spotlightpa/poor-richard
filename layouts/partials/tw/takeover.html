@@ -9,15 +9,17 @@
 {{ $gaForm := .gaForm }}
 {{ $hiddenField := .hiddenField }}
 {{ $content := .content }}
+{{ $eager := .eager }}
 <header
   class="relative z-50 flex min-h-[80vh] flex-col justify-center bg-black text-white"
   style="min-height: 80vh;"
 >
   {{ $imgOpt := dict
     "filename" ($src)
-    "width" 2271
-    "height" 1431
+    "width" 1600
+    "height" 1000
     "gravity" "ce"
+    "eager" .eager
   }}
   {{ $url := partial "helper/imgproxy" $imgOpt }}
   <div
@@ -125,5 +127,3 @@
     </div>
   </div>
 </header>
-
-<span class="hidden py-9 md:-mx-20"></span>

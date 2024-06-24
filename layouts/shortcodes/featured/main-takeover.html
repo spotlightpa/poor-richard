@@ -8,6 +8,7 @@
 {{ $gaCategory := .Get "gaCategory" }}
 {{ $gaForm := .Get "gaForm" }}
 {{ $hiddenField := .Get "hiddenField" }}
+{{ $eager := .Get "eager" }}
 {{ partial "tw/takeover.html" (dict
   "image" $src
   "title" $hed
@@ -20,5 +21,6 @@
   "gaForm" $gaForm
   "hiddenField" $hiddenField
   "content" .Inner
+  "eager" $eager
   )
 }}
