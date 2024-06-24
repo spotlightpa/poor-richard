@@ -7,45 +7,46 @@
 
 {{ define "main" }}
   <section class="bg-white pb-6">
-    {{ if .Page.RenderString (.Param "takeover") }}
-      {{ .Page.RenderString (.Param "takeover") }}
-    {{ else }}
-      <div
-        class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
-      >
-        <h1
-          class="{{ if .Param "sidebar" }}
-            max-w-prose
-          {{ else }}
-            md:w-7/12
-          {{ end }}
+    {{ if not (page.Param "hide-topper") }}
+      {{ if $takeover := .Page.RenderString (.Param "takeover") }}
+        {{ $takeover }}
+      {{ else }}
+        <div
+          class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
+        >
+          <h1
+            class="{{ if .Param `sidebar` }}
+              max-w-prose
+            {{ else }}
+              md:w-7/12
+            {{ end }}
             mx-auto
             w-full max-w-prose pb-2 font-sans text-4xl font-bold leading-tight text-black md:w-7/12 lg:text-5xl
           "
+          >
+            {{ .Title }}
+          </h1>
+        </div>
+      {{ end }}
+      <div
+        class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
+        data-ga-category="content"
+      >
+        <div
+          class="article-content mx-auto w-full overflow-hidden leading-relaxed md:w-7/12"
         >
-          {{ .Title }}
-        </h1>
+          {{ with .Param "dek" }}
+            <h2
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              {{ . }}
+            </h2>
+          {{ end }}
+          {{ .Content }}
+        </div>
+        {{ .Page.RenderString (.Param "sidebar") }}
       </div>
     {{ end }}
-    <div
-      class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
-      data-ga-category="content"
-    >
-      <div
-        class="article-content mx-auto w-full overflow-hidden leading-relaxed md:w-7/12"
-      >
-        {{ with .Param "dek" }}
-          <h2
-            class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
-          >
-            {{ . }}
-          </h2>
-        {{ end }}
-        {{ .Content }}
-      </div>
-      {{ .Page.RenderString (.Param "sidebar") }}
-    </div>
-
     {{ .Page.RenderString (.Param "newsletter") }}
 
     {{ .Page.RenderString (.Param "testimonials-group") }}

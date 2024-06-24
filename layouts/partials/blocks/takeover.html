@@ -1,0 +1,29 @@
+{{ with .block }}
+  {{ $src := .image }}
+  {{ $hed := .title }}
+  {{ $dek := .dek }}
+  {{ $sub := .subhed }}
+  {{ $signupHed := .signupHed }}
+  {{ $signupDek := .signupDek }}
+  {{ $cta := .cta }}
+  {{ $gaCategory := .gaCategory }}
+  {{ $gaForm := .gaForm }}
+  {{ $hiddenField := .hiddenField }}
+  {{ $content := .content }}
+  {{ $eager := .eager }}
+  {{ partial "tw/takeover.html" (dict
+    "image" $src
+    "title" $hed
+    "dek" $dek
+    "subhed" $sub
+    "signupHed" $signupHed
+    "signupDek" $signupDek
+    "cta" $cta
+    "gaCategory" $gaCategory
+    "gaForm" $gaForm
+    "hiddenField" $hiddenField
+    "eager" $eager
+    "content" $content
+    )
+  }}
+{{ end }}
