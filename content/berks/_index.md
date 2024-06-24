@@ -27,13 +27,12 @@ takeover = """
 
 [[blocks]]
 layout = "ballyhoo"
-id = "editors-statement"
-image = "external/rv5m343msdze1se1qsmtw2ta9c.jpeg"
-hed = "Read our editor's statement about this study"
-dek = "The nonprofit newsroom seeks to revitalize investigative and public-service journalism in the greater Reading area."
-cta = "Read the article →"
-link = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
-
+id = "berk-report"
+image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
+hed = "Spotlight PA Berks Project Report"
+dek = "Blueprint for Berks: Journalism serves as the cornerstone of a vibrant and informed community, playing a crucial role in fostering transparency, accountability, and civic engagement. Local journalism, in particular, is a catalyst for positive change."
+cta = "Get the report →"
+link = "https://files.data.spotlightpa.org/uploads/01k7/kc91/blueprint-for-berks-full-report.pdf"
 
 [[blocks]]
 layout = "supplemental"
@@ -45,8 +44,18 @@ creditBio = "Interested in learning more? Contact Heather Adams, Berks County Pr
 body = """
 In Berks County, the severe decline in local reporting in recent years has stifled transparency and accountability at all levels, and has made it hard to understand what is happening. To address this issue head-on, Spotlight PA is exploring the creation of a potential new journalism bureau dedicated to covering Reading and Berks County. The bureau would be independent, nonpartisan, and nonprofit, with no opinion, endorsements, or political ads. This would be Spotlight PA’s second regional bureau; the newsroom launched its first in 2022, based in State College and [covering north-central Pa](//spotlightpa.org/statecollege).
 
-Thanks to a planning grant from Berks County Community Foundation, Spotlight PA is working with a host of community partners in Berks County in 2023-4 to build a blueprint for revitalizing local news and investigative journalism. Heather Adams of Berks Community Television is serving as Spotlight PA’s Berks County Project Lead, guiding the planning process through June 2024. Her work involves assessing community needs in Berks County and studying feasibility for a bureau through conducting listening sessions and research, exploring content distribution methods, and developing the local bureau strategy with the input and direction of local voices. 
+Thanks to a planning grant from Berks County Community Foundation, Spotlight PA is working with a host of community partners in Berks County in 2023-4 to build a blueprint for revitalizing local news and investigative journalism. Heather Adams of Berks Community Television is serving as Spotlight PA’s Berks County Project Lead, guiding the planning process through June 2024. Her work involves assessing community needs in Berks County and studying feasibility for a bureau through conducting listening sessions and research, exploring content distribution methods, and developing the local bureau strategy with the input and direction of local voices.
 """
+
+[[blocks]]
+layout = "ballyhoo"
+id = "editors-statement"
+image = "external/rv5m343msdze1se1qsmtw2ta9c.jpeg"
+hed = "Read our editor’s statement about this study"
+dek = "The nonprofit newsroom seeks to revitalize investigative and public-service journalism in the greater Reading area."
+cta = "Read the article →"
+link = "/news/2023/09/reading-pennsylvania-news-berks-county-spotlight-pennsylvania/"
+
 [[blocks]]
 layout = "text-3"
 title = "About Spotlight PA"
