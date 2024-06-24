@@ -9,21 +9,7 @@ image-credit = "Abby Drey / Centre Daily Times"
 layout = "page-landing"
 signupHed = "Join our mailing list "
 signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County."
-bg-img = true
-takeover = """
-{{<featured/main-takeover
-  title = "Help us write the future of journalism in Berks County."
-  dek = "Join our historic effort to invigorate local news."
-  image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
-  signupHed = "Join our mailing list "
-  signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
-  gaCategory = "newsletters:palocal"
-  gaForm = "newsletters:palocal-full"
-  hiddenField = "newsletter/berks-county-hidden.html"
->}}
-
-{{</featured/main-takeover>}}
-"""
+hide-topper = true
 
 [[blocks]]
 layout = "ballyhoo"
@@ -33,6 +19,17 @@ hed = "Spotlight PA Berks Project Report"
 dek = "Blueprint for Berks: Journalism serves as the cornerstone of a vibrant and informed community, playing a crucial role in fostering transparency, accountability, and civic engagement. Local journalism, in particular, is a catalyst for positive change."
 cta = "Get the report →"
 link = "https://files.data.spotlightpa.org/uploads/01k7/kc91/blueprint-for-berks-full-report.pdf"
+
+[[blocks]]
+layout = "takeover"
+title = "Help us write the future of journalism in Berks County."
+dek = "Join our historic effort to invigorate local news."
+image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
+signupHed = "Join our mailing list "
+signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
+gaCategory = "newsletters:palocal"
+gaForm = "newsletters:palocal-full"
+hiddenField = "newsletter/berks-county-hidden.html"
 
 [[blocks]]
 layout = "supplemental"
