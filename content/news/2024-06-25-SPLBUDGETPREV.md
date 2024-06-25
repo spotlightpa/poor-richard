@@ -26,6 +26,8 @@ Leaders in the split legislature say there are potential compromises on other ke
 
 But deciding how much money to spend on K-12 education remains an obstacle to closing a deal. Democrats who want to increase spending point to decades of funding inequality between rich and poor public school districts, while Republicans who want to curb costs warn of financial calamity if spending increases too quickly.
 
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+
 Lawmakers have to overhaul Pennsylvania’s funding system for basic education, following a judge last year ruling that the status quo is unconstitutionally inequitable. The commonwealth is also flush with cash, with $14 billion in reserves that have continued to grow this year.
 
 Budget negotiations kicked off in February when Gov. Josh Shapiro, a Democrat, made <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-josh-shapiro-budget-2024-education-legal-marijuana-skill-games/">his annual pitch</a> to the legislature. In it, he called for $48.3 billion in spending, an 8% increase from last year, and proposed that much of the new money should flow to the state’s K-12 education system. That spending would be covered using $3 billion of the state’s $14 billion in cash reserves, Shapiro proposed.
@@ -73,6 +75,8 @@ Last week, Pittman said the state Senate’s proposal was an attempt “to do so
 Bradford told Spotlight PA he is willing to look at tax cuts as part of a budget deal. He also argued that the best way to get money into working people’s pockets would be a state version of <a href="https://www.spotlightpa.org/news/2023/06/pa-child-care-earned-income-tax-credit-legislature-budget-shapiro/">the earned income tax credit</a>, a federal program that gives a tax break to people <a href="https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables#EITC%20Tables">under certain income levels</a>.
 
 A <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1272">bill</a> that would create such a program passed the state House last year but has lingered in the Senate.
+
+<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 The deadline for a deal is Sunday. Both chambers have scheduled voting session days through the weekend, which will likely be filled with closed-door negotiations, boisterous public rallies, and late-night votes.
 
