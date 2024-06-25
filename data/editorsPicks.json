@@ -1,24 +1,29 @@
 {
   "edCallout": [
-    "content/news/2024-05-02-wesa_spotlight_PA_opioid_05_01.md",
-    "content/news/2024-05-03-SPLSHAP23GIFTS.md"
+    "content/statecollege/2024-06-20-SPLLYNCH.md",
+    "content/news/2024-06-24-SPLRAINFOR0624.md"
   ],
   "edImpact": [
-    "content/news/2023-03-09-SPLCOMPETENCY.md",
-    "content/news/2023-01-23-SPLMORTGAGE.md"
+    "content/news/2024-06-19-SPLAWARDS0619.md",
+    "content/news/2023-03-09-SPLCOMPETENCY.md"
   ],
   "edInvestigations": [
-    "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md",
-    "content/news/2024-02-12-SPLHEHON.md"
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md",
+    "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
   ],
   "featuredStories": [
-    "content/news/2024-06-24-SPLSWIPEFEE.md"
+    "content/news/2024-06-25-SPLBUDGETPREV.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2024-05-16-SPLBUDPRE24.md",
+    "content/news/2024-06-10-SPLCYBREFORM.md",
+    "content/news/2024-06-19-SPLWEED24UPD.md",
+    "content/news/2024-06-18-SPLCAREACT0624.md"
+  ],
   "topSlots": [
-    "content/news/2024-06-21-SPLUSASUIT.md",
-    "content/news/2024-06-21-SPLISRAELFUNDS.md",
-    "content/statecollege/2024-06-20-SPLLYNCH.md"
+    "content/news/2024-06-25-SPLBERKS0624.md",
+    "content/news/2024-06-24-SPLSWIPEFEE.md",
+    "content/news/2024-06-21-SPLUSASUIT.md"
   ],
   "topper": []
 }
