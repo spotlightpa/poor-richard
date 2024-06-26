@@ -104,7 +104,7 @@ Major initiatives considered by the state Senate over the past year include:
 
 You can also understand a legislator&#39;s values by looking at the organizations that support them. As of April 10, the following notable organizations have endorsed candidates in some races:
 
-- The <a href="https://paaflcio.com/endorsed-candidates/">Pennsylvania AFL-CIO</a>, a federation of 51 public and private sector unions representing 700,000 workers.
+- The <a href="https://web.archive.org/20240301025832/https://paaflcio.com/endorsed-candidates/">Pennsylvania AFL-CIO</a>, a federation of 51 public and private sector unions representing 700,000 workers.
 
 - <a href="https://www.plannedparenthoodaction.org/planned-parenthood-pennsylvania-advocates/elections/pp-pa-pac-2024-endorsements">Planned Parenthood PA</a>, a statewide advocate for reproductive and sexual health care providers, including abortion services.
 
