@@ -18,7 +18,7 @@ image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 hed = "Spotlight PA Berks Project Report"
 dek = "Blueprint for Berks: Journalism serves as the cornerstone of a vibrant and informed community, playing a crucial role in fostering transparency, accountability, and civic engagement. Local journalism, in particular, is a catalyst for positive change."
 cta = "Get the report →"
-link = "https://files.data.spotlightpa.org/uploads/01k7/kc91/blueprint-for-berks-full-report.pdf"
+link = "https://files.data.spotlightpa.org/uploads/01k7/pznh/blueprint-for-berks-full-report.pdf"
 
 [[blocks]]
 layout = "takeover"
