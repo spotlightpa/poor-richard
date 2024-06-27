@@ -12,18 +12,19 @@
     "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
   ],
   "featuredStories": [
-    "content/news/2024-06-27-​​SPLGRIDRELY.md"
+    "content/news/2024-06-27-SPLGAMINGUPDATE.md",
+    "content/news/2024-06-19-SPLWEED24UPD.md"
   ],
   "subfeatures": [
-    "content/news/2024-05-23-SPLHYDCOMMIMP.md",
-    "content/news/2024-03-22-SPLSHAPCAP.md",
-    "content/news/2024-02-26-SPLWELLUPD.md",
-    "content/news/2024-05-16-SPLBUDPRE24.md"
+    "content/news/2024-05-16-SPLBUDPRE24.md",
+    "content/news/2024-06-19-SPLWEED24UPD.md",
+    "content/news/2024-06-10-SPLCYBREFORM.md",
+    "content/news/2024-06-11-SPLMOMNIBUS.md"
   ],
   "topSlots": [
+    "content/news/2024-06-27-​​SPLGRIDRELY.md",
     "content/news/2024-06-26-SPLTRUST0624.md",
-    "content/news/2024-06-25-SPLBUDGETPREV.md",
-    "content/news/2024-06-25-SPLBERKS0624.md"
+    "content/news/2024-06-25-SPLBUDGETPREV.md"
   ],
   "topper": []
 }
