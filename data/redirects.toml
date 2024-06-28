@@ -49,6 +49,11 @@ to = "https://images.data.spotlightpa.org/:splat"
 code = 200
 
 [[redirects]]
+from = "/feeds/most-popular-items.json"
+to = "https://files.data.spotlightpa.org/feeds/most-popular-items.json"
+code = 200
+
+[[redirects]]
 from = "/centredocumenters/*"
 to = "https://centredocumenters.org"
 
