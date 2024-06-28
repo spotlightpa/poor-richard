@@ -1,4 +1,4 @@
-<link rel="prefetch" as="fetch" href="/feeds/summary.json" x-ref="feedSrc" />
+<link rel="x-prefetch" as="fetch" href="/feeds/summary.json" x-ref="feedSrc" />
 <div class="space-y-8 sm:space-y-6" data-ga-category="readmore">
   <template x-for="story in stories" :key="story.url">
     {{ partial "tw/thumb-h-story-js.html" . }}
