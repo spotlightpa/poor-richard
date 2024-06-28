@@ -52,6 +52,8 @@
           x-data="imageRotator(JSON.parse($el.dataset.images))"
           src="{{ $magicPixel }}" :src="choice"
         {{ end }}
+        loading="lazy"
+        decoding="async"
         alt="{{ $alt }}"
         title="{{ $alt }}"
         style="max-height: 40vh;"
