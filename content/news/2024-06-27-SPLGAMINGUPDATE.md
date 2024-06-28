@@ -26,7 +26,7 @@ At the center of the dispute are skill games, untaxed and unregulated devices th
 
 Gov. Josh Shapiro, a Democrat, threw his weight behind regulating the games in his budget proposal as a way to boost state revenue. His administration projected that legalizing and taxing the machines’ revenues at 42% would bring in $150 million this coming fiscal year, and that the amount would double in the future.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 But the effort appears to be veering off track as lawmakers get caught between the powerful skill games and casino interests, which have spent millions of dollars on lobbying and campaign contributions over the years.
 
@@ -68,7 +68,7 @@ Without those new dollars, Pittman suggested that an increase in public transit 
 
 “They have to be done in tandem,” Pittman said. Otherwise, he said he’s “hard pressed to figure out where that revenue stream comes from.”
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 Shapiro has declined to wade into the specifics of policy debates ahead of the deadline, only saying that there has been “a very productive and a very honest dialogue.”
 
