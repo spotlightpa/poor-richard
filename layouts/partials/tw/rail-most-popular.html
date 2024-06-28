@@ -9,8 +9,12 @@
   <link
     rel="preload"
     as="fetch"
-    crossorigin
-    href="https://files.data.spotlightpa.org/feeds/most-popular-items.json"
+    {{ if not hugo.IsServer }}
+      href="/feeds/most-popular-items.json"
+    {{ else }}
+      crossorigin
+      href="https://files.data.spotlightpa.org/feeds/most-popular-items.json"
+    {{ end }}
     x-ref="mostPopSrc"
   />
   <h2
