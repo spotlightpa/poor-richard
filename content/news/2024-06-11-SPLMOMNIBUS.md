@@ -27,7 +27,7 @@ The measures are part of a “Momnibus” package championed by state House Demo
 
 Gov. Josh Shapiro has separately pitched an <a href="https://www.media.pa.gov/Pages/Health-Details.aspx?newsid=1880">increased investment</a> in maternal health as part of his $48.5 billion spending plan.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Get%20the%20latest%20on%20PA%E2%80%99s%20opioid%20settlements%2C%20medical%20marijuana%20program%2C%20and%20other%20health-related%20news%20with%20our%20daily%20newsletter.&eyebrow=stay%20informed&preselect=papost"></div>
+{{<embed/newsletter cta="Get the latest on PA’s opioid settlements, medical marijuana program, and other health-related news with our daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 The Democrat also wants lawmakers to set aside $3 million in this year’s budget to give public school students free access to tampons and pads, an idea popular with his party that has been met with skepticism by Republican leaders.
 
@@ -73,7 +73,7 @@ Most Republican representatives voted against the bill, including state Rep. Ste
 
 Immediately after Shapiro’s address, state Senate President Pro Tempore Kim Ward (R., Westmoreland) told the Pittsburgh Post-Gazette that the governor’s proposal was “straight-on, full-fledged, spend, spend, spend,” <a href="https://www.post-gazette.com/news/politics-state/2024/02/07/ward-costa-shapiro-pennsylvania-budget/stories/202402070094">citing his pitch to put “sanitary napkins in schools” as an example</a>.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 Pressed a week later in a TV interview, Ward struck a more conciliatory tone, <a href="https://www.abc27.com/this-week-in-pennsylvania/this-week-in-pennsylvania-kim-ward/">saying that she wasn’t criticizing the pitch</a> and that it was inexpensive.
 
