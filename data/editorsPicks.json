@@ -12,18 +12,19 @@
     "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
   ],
   "featuredStories": [
-    "content/news/2024-07-01-SPLPHARE.md"
+    "content/news/2024-07-01-SPLBDGTUPDATE2.md"
   ],
   "subfeatures": [
-    "content/news/2024-03-11-SPLHOUSINGBUDGET.md",
-    "content/statecollege/2024-02-19-SPLRURALBUDGET.md",
-    "content/statecollege/2024-06-28-SPLPROPTAX0625.md",
-    "content/news/2024-02-21-SPL_PHFA_REOPEN.md"
+    "content/news/2024-07-01-SPLPHARE.md",
+    "content/news/2024-06-28-SPLVOUCHDATA0624.md",
+    "content/news/2024-06-27-SPLGAMINGUPDATE.md",
+    "content/news/2024-06-25-SPLBUDGETPREV.md",
+    "content/news/2024-06-19-SPLWEED24UPD.md"
   ],
   "topSlots": [
+    "content/news/2024-07-01-SPLPHARE.md",
     "content/news/2024-06-28-SPLVOUCHDATA0624.md",
-    "content/news/2024-06-28-SPLMEDICARE0624.md",
-    "content/statecollege/2024-06-28-SPLPROPTAX0625.md"
+    "content/news/2024-06-28-SPLMEDICARE0624.md"
   ],
   "topper": []
 }
