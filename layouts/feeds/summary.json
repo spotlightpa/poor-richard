@@ -4,7 +4,7 @@
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
 {
   "items": [
-    {{ range $i, $p := first 800 $stories }}
+    {{ range $i, $p := first 200 $stories }}
       {{- $params := partialCached "helper/page-params" .Page .RelPermalink -}}
       {{ if ne $i 0 }},{{ end }}
       {

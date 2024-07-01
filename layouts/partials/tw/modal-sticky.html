@@ -3,9 +3,7 @@
 {{ $images := .Param "sticky-images" }}
 {{ $link := .Param "sticky-link" }}
 
-{{ $width := 0 }}
-{{ $height := 0 }}
-{{ $bgColor := "#000" }}
+
 <section
   data-modal-kind="sticky"
   class="max-w-screen fixed bottom-0 right-0 z-10"
@@ -38,22 +36,29 @@
       {{ partial "helper/svg.html" "times" }}
     </svg>
   </button>
-  <div class="mx-4 my-2 flex p-4">
-    <a
-      class="flex ring-yellow focus:outline-none focus:ring-2"
-      @click.capture="close()"
-      @click.outside="close()"
-      href="{{ $link }}"
-      data-sf-campaign="701Dn000000YgofIAC"
-      ><img
-        class="rounded shadow-beige"
-        x-data="imageRotator(JSON.parse($el.dataset.images))"
-        data-images="{{ $images | jsonify }}"
-        src="{{ $magicPixel }}"
-        :src="choice"
-        alt="{{ $alt }}"
-        title="{{ $alt }}"
-        style="max-height: 40vh;"
-    /></a>
-  </div>
+  {{ if false }}
+    <div class="mx-4 my-2 flex p-4">
+      <a
+        class="flex ring-yellow focus:outline-none focus:ring-2"
+        @click.capture="close()"
+        @click.outside="close()"
+        href="{{ $link }}"
+        data-sf-campaign="701Dn000000YgofIAC"
+        ><img
+          class="rounded shadow-beige"
+          {{ if eq (len $images) 1 }}
+            src="{{ index $images 0 }}"
+          {{ else }}
+            data-images="{{ $images | jsonify }}"
+            x-data="imageRotator(JSON.parse($el.dataset.images))"
+            src="{{ $magicPixel }}" :src="choice"
+          {{ end }}
+          loading="lazy"
+          decoding="async"
+          alt="{{ $alt }}"
+          title="{{ $alt }}"
+          style="max-height: 40vh;"
+      /></a>
+    </div>
+  {{ end }}
 </section>

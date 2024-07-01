@@ -1,6 +1,6 @@
 /* merriweather-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: optional;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: normal;
@@ -12,7 +12,7 @@
 
 /* merriweather-italic - latin */
 @font-face {
-  font-display: swap;
+  font-display: optional;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: italic;
@@ -24,7 +24,7 @@
 
 /* merriweather-700 - latin */
 @font-face {
-  font-display: swap;
+  font-display: optional;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: normal;
@@ -36,7 +36,7 @@
 
 /* merriweather-700italic - latin */
 @font-face {
-  font-display: swap;
+  font-display: optional;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Merriweather";
   font-style: italic;
