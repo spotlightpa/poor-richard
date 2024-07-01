@@ -7,7 +7,7 @@
   `grid-cols-1 lg:grid-cols-[theme(maxWidth.prose)_1fr] gap-x-20`
 }}
 {{ $mainWellClass := cond $isOneCol
-  `mx-auto min-w-0 w-full max-w-prose lg:max-w-screen-md`
+  `mx-auto min-w-0 w-full max-w-prose lg:max-w-screen-md contain-content`
   `col-start-1 min-w-0 mx-auto w-full max-w-prose`
 }}
 {{ $rightRailClass := cond $isOneCol
