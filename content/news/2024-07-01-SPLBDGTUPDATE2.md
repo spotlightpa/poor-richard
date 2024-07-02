@@ -20,7 +20,7 @@ topics = ["The Capitol"]
 twitter-title = "Pa. missed its budget deadline. What’s next?"
 +++
 
-HARRISBURG — For the second straight year, Pennsylvania’s budget is late, although top lawmakers say they’re hoping for a quick deal after a weekend of closed-door talks.
+HARRISBURG — For the third straight year, Pennsylvania’s budget is late, although top lawmakers say they’re hoping for a quick deal after a weekend of closed-door talks.
 
 “I am encouraged by the progress that has been made over the past several days,” state Senate Majority Leader Joe Pittman (R., Indiana) said in remarks Thursday as lawmakers filed out of the chamber. The Senate adjourned soon after, while the state House adjourned Friday just after noon.
 
@@ -85,6 +85,8 @@ Pittman didn’t directly comment on the funding in a conversation with reporter
 “There&#39;s, in my mind, no value in putting significant dollars in building sites for economic development if we can&#39;t get the shovels in the ground to make the work happen,” Pittman said.
 
 Both chambers have voting sessions scheduled through Wednesday. The Senate has also added voting days from Friday, after Independence Day, through Sunday.
+
+<strong><em>Correction: This story has been updated to reflect the correct number of late budgets Pennsylvania has had in a row. This year’s is the third.</em></strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
