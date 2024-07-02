@@ -13,7 +13,7 @@ layout = "promo"
 [[blocks.entries]]
 image = "2022/12/01hs-hn2r-zez7-rm35.png"
 hed = """
-Become a 
+Become a
 Leader in Action
 """
 body = "Interested in becoming a champion of Spotlight PA at a higher level?"
@@ -28,6 +28,15 @@ body = "Want to support our investigative journalism about Penn State and our St
 actionUrl = "/donate/statecollege?campaign=701Dn000000Ygq9IAC"
 actionText = "Support the Bureau →"
 url = "/support/state-college"
+
+[[blocks.entries]]
+image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
+hed = "Help us write the future of journalism in Berks County"
+body = "Join our historic effort to invigorate local news."
+actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+actionText = "Revitalize Local News →"
+url = "/berks/"
+
 [[blocks]]
 layout = "text-3"
 title = "Who Supports Us?"
@@ -35,7 +44,7 @@ show_partners = 4
 copy = """
 
   Spotlight PA’s unique model of public-service journalism relies on the generous support of individuals and institutions who understand the vital importance of Spotlight PA’s work to the future of Pennsylvania. The newsroom is supported by a dedicated group of local and national foundations, media partners, individual major donors (“Leaders in Action”), and thousands of readers from across Pennsylvania (“members”). Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
-  
+
   ## Learn more about who supports our work
 
   [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders-since-launch)
@@ -54,7 +63,7 @@ copy="""
   {{<featured/large>}}As part of our gift acceptance policy, and consistent with our promise to be fully transparent, we do not accept anonymous donations.{{</featured/large>}}
 """
 +++
-{{<featured/large>}}Spotlight PA produces investigative and public-service journalism that gets results, and shares that work at no cost with communities across Pennsylvania. But we can't do it without your support. Here are the several ways you can sustain our newsroom with a tax-deductible donation today:{{</featured/large>}} 
+{{<featured/large>}}Spotlight PA produces investigative and public-service journalism that gets results, and shares that work at no cost with communities across Pennsylvania. But we can't do it without your support. Here are the several ways you can sustain our newsroom with a tax-deductible donation today:{{</featured/large>}}
 
 {{<about/action-link href="/donate?campaign=701Dn000000Ygp9IAC">}}Donate With Credit Card  →{{</about/action-link>}}
 
@@ -65,7 +74,7 @@ copy="""
 Make a check out to Spotlight PA and send it to:
 
 **Spotlight PA** <br>
-**PO Box 11728** <br> 
+**PO Box 11728** <br>
 **Harrisburg, PA 17108-1728** <br>
 
 ## Use Your Donor-Advised Fund
@@ -78,7 +87,7 @@ Make a contribution through your business or organization to support Spotlight P
 
 ## Donate Shares of Stock
 
-For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org). 
+For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
 
 ## Other Ways to Give
 
