@@ -42,7 +42,7 @@ DeFoor served as a special agent for the state attorney general’s office, inve
 
 In 2015, DeFoor was elected Dauphin County controller. There, he <a href="https://www.dauphincounty.org/news_detail_T14_R36.php">won national awards</a> and created the county’s first audit division.
 
-In 2020, DeFoor was <a href="https://www.phillyvoice.com/2020-election-auditor-general-pennsylvania-timothy-defoor-nina-ahmad-results/">elected</a> Pennsylvania’s auditor general, defeating Democrat Nina Ahmad. DeFoor is the first person of color to win a statewide office in Pennsylvania and the first Republican to hold the auditor general position since 1997.
+In 2020, DeFoor was <a href="https://www.phillyvoice.com/2020-election-auditor-general-pennsylvania-timothy-defoor-nina-ahmad-results/">elected</a> Pennsylvania’s auditor general, defeating Democrat Nina Ahmad. DeFoor is the first person of color to win a statewide row office in Pennsylvania and the first Republican to hold the auditor general position since 1997.
 
 In his announcement that he would seek another four years in office, DeFoor <a href="https://www.penncapital-star.com/blog/pennsylvania-auditor-general-defoor-announces-reelection-bid/">said</a> his first term focused on transforming the auditor general’s office in a nonpartisan way, and that his second would center on “ensuring the job gets done.”
 
