@@ -1,0 +1,11 @@
+{{ $cta := .Get "cta" | htmlUnescape | default `Sign up for a free roundup of the top news from across Pennsylvania, all in
+  one daily or weekly email from Spotlight PA.`
+}}
+{{ $eyebrow := .Get "eyebrow" | htmlUnescape | default `Free Newsletter` }}
+{{ $button := .Get "button" | htmlUnescape | default `Sign Up` }}
+{{ $preselect := .Get "preselect" | htmlUnescape | default `` }}
+
+<p><i><a href="{{ absURL `/newsletters/` }}">
+  <b>{{- $eyebrow }}:</b>
+  {{ $cta | safeHTML -}}
+</a></i></p>
