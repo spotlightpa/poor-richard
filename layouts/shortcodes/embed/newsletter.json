@@ -5,7 +5,7 @@
 {{ $button := .Get "button" | htmlUnescape | default `Sign Up` }}
 {{ $preselect := .Get "preselect" | htmlUnescape | default `` }}
 
-<i><a href="{{ absURL `/newsletters/` }}">
+<p><i><a href="{{ absURL `/newsletters/` }}">
   <b>{{- $eyebrow }}:</b>
   {{ $cta | safeHTML -}}
-</a></i>
+</a></i></p>

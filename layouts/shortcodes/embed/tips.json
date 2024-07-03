@@ -2,7 +2,7 @@
 {{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
 {{ $form := .Get "form_name" | htmlUnescape | default `contact-page` }}
 
-<i><a href="{{ absURL `/tips/` }}">
+<p><i><a href="{{ absURL `/tips/` }}">
   <b>{{- $eyebrow }}:</b>
   {{ $tip | safeHTML -}}
-</a></i>
+</a></i></p>

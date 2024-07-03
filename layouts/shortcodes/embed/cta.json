@@ -3,7 +3,7 @@
 {{ $body := .Get "body" | htmlUnescape | default `Body` }}
 {{ $cta := .Get "cta" | htmlUnescape | default `Just Do It!` }}
 
-<i><a href="{{ absURL $url }}">
+<p><i><a href="{{ absURL $url }}">
   <b>{{- $eyebrow }}:</b>
   {{ $body | safeHTML -}}
-</a></i>
+</a></i></p>
