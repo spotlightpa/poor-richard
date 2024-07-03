@@ -2,7 +2,7 @@
 {{ $teaser := .Get "teaser_text" | htmlUnescape | default `If you learned something from this report, pay it forward and become a member of Spotlight PA so someone else can in the future.` }}
 {{ $cta := .Get "cta_text" | htmlUnescape | default `Click to Contribute` }}
 
-<a href="{{ absURL `/donate/` }}"><b>
+<p><i><a href="{{ absURL `/donate/` }}"><b>
   {{- $eyebrow }}:</b>
   {{ $teaser | safeHTML -}}
-</a>
+</a></i></p>
