@@ -3,7 +3,7 @@
 {{ $idTip := partial "helper/new-id" . }}
 
 {{ $tip := .Get "tip_text" | htmlUnescape | default `` }}
-{{ $flag := .Get "flag_text" | htmlUnescape | default `` }}
+{{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
 {{ $form := .Get "form_name" | htmlUnescape | default `contact-page` }}
 
 {{ partial "tag/content-well-end" . }}
@@ -18,7 +18,7 @@
     class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-show="!showSpanish"
   >
-    Tips
+    {{ $eyebrow }}
   </h2>
   <h2
     x-cloak
