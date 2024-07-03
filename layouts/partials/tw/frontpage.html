@@ -27,7 +27,8 @@
 
 <div
   class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12 lg:space-y-16"
-  x-data="{ isSticky: true }"
+  x-data="{ isSticky: !$el.dataset.takeoverActive }"
+  data-takeover-active="{{ cond (page.Param `takeover-active`) `1` `` }}"
 >
   <div
     class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,_auto)] xl:items-stretch xl:justify-evenly"
