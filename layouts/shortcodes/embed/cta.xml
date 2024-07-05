@@ -1,0 +1,9 @@
+{{ $eyebrow := .Get "eyebrow" | htmlUnescape | default `Eyebrow` }}
+{{ $url := .Get "url" | htmlUnescape | default `https://www.spotlightpa.org/` }}
+{{ $body := .Get "body" | htmlUnescape | default `Body` }}
+{{ $cta := .Get "cta" | htmlUnescape | default `Just Do It!` }}
+
+<p><i><a href="{{ absURL $url }}">
+  <b>{{- $eyebrow }}:</b>
+  {{ $body | safeHTML -}}
+</a></i></p>
