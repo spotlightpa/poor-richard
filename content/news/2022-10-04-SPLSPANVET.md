@@ -100,7 +100,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 - Daniel Wassmer (Partido Keystone de Pensilvania), <a href="http://www.wassmer4pa.com/">Sitio we</a>b | <a href="https://www.facebook.com/Wassmer4USSenate">Facebook</a>
 
-- Erik Gerhardt (L), <a href="https://erik4pa.com/">Sitio web</a> | <a href="https://www.facebook.com/erik4pa">Facebook</a>
+- Erik Gerhardt (L), <a href="https://web.archive.org/20220110134841/https://erik4pa.com/">Sitio web</a> | <a href="https://www.facebook.com/erik4pa">Facebook</a>
 
 Al menos dos personas están presentando campañas por escrito para el Senado de los Estados Unidos: <a href="https://www.facebook.com/ronjohnsonforsenate">Ron Johnson</a> del Partido de la Constitución y el independiente <a href="https://www.facebook.com/EverettSternFan">Everett Stern</a>.
 
