@@ -11,6 +11,7 @@ internal-budget = "A Spotlight PA investigation in January detailed major proble
 internal-id = "SPLmortgagecontract22"
 kicker = "Economy"
 modal-exclude = false
+pinned = false
 published = 2023-03-22T05:00:00-04:00
 series = ["The Waiting Game"]
 slug = "pa-mortgage-relief-delays-contractor"
