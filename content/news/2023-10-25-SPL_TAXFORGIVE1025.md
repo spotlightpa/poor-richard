@@ -10,6 +10,7 @@ image-description = "Pennsylvania state capitol in Harrisburg."
 internal-id = "SPL_TAXFORGIVE1025"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-10-25T05:00:00-04:00
 slug = "pennsylvania-low-income-tax-forgiveness"
 suppress-date = false
