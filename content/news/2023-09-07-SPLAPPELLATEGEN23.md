@@ -130,7 +130,7 @@ As of August, the PBA <a href="https://www.pabar.org/site/News-and-Publications/
 
 <h1 id="spl-heading-6">Republican candidate: Harry Smail</h1>
 
-<a href="https://votejudgesmail.com/">Smail</a> has been a Westmoreland County Court of Common Pleas judge since Corbett appointed him in 2014.
+<a href="https://web.archive.org/20230313232451/https://votejudgesmail.com/">Smail</a> has been a Westmoreland County Court of Common Pleas judge since Corbett appointed him in 2014.
 
 Before that, he was a private practice attorney who ran unsuccessfully for numerous county offices, and he served as a solicitor for two county row offices. He received his law degree from Duquesne University.
 
