@@ -119,7 +119,7 @@ En agosto, la PBA <a href="https://www.pabar.org/site/News-and-Publications/News
 
 <h1 id="spl-heading-4">Candidato republicano: Harry Smail</h1>
 
-<a href="https://votejudgesmail.com/">Smail</a> ha sido juez de la Corte de Causas Comunes del condado de Westmoreland desde que Corbett lo nombró en 2014.
+<a href="https://web.archive.org/20230313232451/https://votejudgesmail.com/">Smail</a> ha sido juez de la Corte de Causas Comunes del condado de Westmoreland desde que Corbett lo nombró en 2014.
 
 Antes de eso, ejerció como abogado privado, se presentó sin éxito a numerosos cargos del condado y ejerció como procurador en dos fiscalías del condado. Se licenció en Derecho por la Universidad de Duquesne.
 
