@@ -1,7 +1,8 @@
 {{ $svgPaths := dict
+  "android" "@fontawesome/brands/android.svg"
   "apple" "@fontawesome/brands/apple.svg"
-  "banner-state-college" "/img/logos/banner-state-college.svg"
   "banner" "/img/logos/banner-default-on-trans.svg"
+  "banner-state-college" "/img/logos/banner-state-college.svg"
   "bars" "@fontawesome/solid/bars.svg"
   "calendar" "@fontawesome/regular/calendar-check.svg"
   "chat" "@fontawesome/solid/comment.svg"
@@ -10,6 +11,7 @@
   "close" "@fontawesome/solid/circle-xmark.svg"
   "closequote" "/img/icons/close-quotations.svg"
   "copy" "@fontawesome/regular/copy.svg"
+  "counties" "/img/icons/counties.svg"
   "email" "@fontawesome/regular/envelope.svg"
   "fb" "@fontawesome/brands/facebook-f.svg"
   "flip" "@fontawesome/brands/flipboard.svg"
@@ -17,6 +19,7 @@
   "google" "@fontawesome/brands/google.svg"
   "heart" "@fontawesome/solid/heart.svg"
   "ig" "@fontawesome/brands/instagram.svg"
+  "ios" "@fontawesome/brands/app-store-ios.svg"
   "leaders-in-action" "/img/logos/leaders-in-action.svg"
   "left" "@fontawesome/solid/circle-arrow-left.svg"
   "logo" "/img/logos/circle-default-on-trans.svg"
@@ -36,7 +39,6 @@
   "times" "@fontawesome/solid/xmark.svg"
   "twitter" "@fontawesome/brands/twitter.svg"
   "user" "@fontawesome/solid/user.svg"
-  "counties" "/img/icons/counties.svg"
 }}
 <div hidden>
   {{ range $id, $_ := page.Store.Get "svgs" }}
