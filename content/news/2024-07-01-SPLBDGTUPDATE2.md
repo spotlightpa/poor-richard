@@ -20,6 +20,8 @@ topics = ["The Capitol"]
 twitter-title = "Pa. missed its budget deadline. What’s next?"
 +++
 
+<strong><em>Update, July 8: </em></strong><a href="https://www.spotlightpa.org/news/2024/07/education-budget-late-funding-poverty-pennsylvania/"><strong><em>A disagreement about measuring student poverty is delaying the Pa. budget</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — For the third straight year, Pennsylvania’s budget is late, although top lawmakers say they’re hoping for a quick deal after a weekend of closed-door talks.
 
 “I am encouraged by the progress that has been made over the past several days,” state Senate Majority Leader Joe Pittman (R., Indiana) said in remarks Thursday as lawmakers filed out of the chamber. The Senate adjourned soon after, while the state House adjourned Friday just after noon.
