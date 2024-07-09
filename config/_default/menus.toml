@@ -180,10 +180,28 @@ name = "Spotlight PA Store"
 url = "https://shop.spotlightpa.org"
 weight = 4
 
+
+[[social]]
+name = "iOS App"
+url = "https://apps.apple.com/us/app/spotlight-pa/id6498866659"
+weight = 1
+
+[social.params]
+icon = "ios"
+
+
+[[social]]
+name = "Android App"
+url = "https://play.google.com/store/apps/details?id=com.spotlightpa.digestapp&pli=1"
+weight = 2
+
+[social.params]
+icon = "android"
+
 [[social]]
 name = "Facebook"
 url = "https://www.facebook.com/SpotlightPennsylvania"
-weight = 1
+weight = 3
 
 [social.params]
 icon = "fb"
@@ -191,7 +209,7 @@ icon = "fb"
 [[social]]
 name = "Twitter"
 url = "https://www.twitter.com/SpotlightPA"
-weight = 2
+weight = 4
 
 [social.params]
 icon = "twitter"
@@ -199,7 +217,7 @@ icon = "twitter"
 [[social]]
 name = "Instagram"
 url = "https://www.instagram.com/Spotlightpennsylvania/"
-weight = 3
+weight = 5
 
 [social.params]
 icon = "ig"
@@ -207,7 +225,7 @@ icon = "ig"
 [[social]]
 name = "Threads"
 url = "https://www.threads.net/@spotlightpennsylvania"
-weight = 4
+weight = 6
 
 [social.params]
 icon = "threads"
@@ -215,7 +233,7 @@ icon = "threads"
 [[social]]
 name = "Flipboard"
 url = "https://flipboard.com/@SpotlightPA"
-weight = 5
+weight = 7
 
 [social.params]
 icon = "flip"
@@ -223,7 +241,7 @@ icon = "flip"
 [[social]]
 name = "Apple News"
 url = "https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
-weight = 6
+weight = 8
 
 [social.params]
 icon = "apple"
@@ -231,7 +249,7 @@ icon = "apple"
 [[social]]
 name = "Google News"
 url = "https://news.google.com/publications/CAAqBwgKMJOpkgswx-CnAw"
-weight = 7
+weight = 9
 
 [social.params]
 icon = "google"
@@ -239,7 +257,7 @@ icon = "google"
 [[social]]
 name = "Github"
 url = "https://www.github.com/spotlightpa/"
-weight = 8
+weight = 10
 
 [social.params]
 icon = "gh"
