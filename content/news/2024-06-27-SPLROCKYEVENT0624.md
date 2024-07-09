@@ -39,9 +39,9 @@ To learn more, join Spotlight PA Thursday, July 18 from 6-7 p.m. ET on Zoom for 
 
 - <strong>Patrick Cicero</strong>, consumer advocate, PA Office of Consumer Advocate
 
-- <strong>Other panelists to be announced.</strong>
+- <strong>Laura Dininni, </strong>former Ferguson Township supervisor
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
+<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
