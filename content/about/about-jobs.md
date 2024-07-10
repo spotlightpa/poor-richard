@@ -10,7 +10,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 * [Freelance Reporter, Berks County](#freelance-reporter-berks-county-contract)
-* [Multimedia Journalist, Democracy Initiative](#multimedia-journalist-democracy-initiative)
+* [Multimedia Journalist, Democracy Initiative](#multimedia-journalist-democracy-initiative-contract)
 
 - - -
 
@@ -39,7 +39,7 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 
 - - - -
 
-##  Multimedia Journalist, Democracy Initiative
+##  Multimedia Journalist, Democracy Initiative (contract)
 ### [Apply here](https://spotlightpa.applytojob.com/apply/rnDdccuevI/Multimedia-Journalist-Democracy-Initiative)
 
 **Summary:** We are seeking an experienced Multimedia Journalist to work with our team at Spotlight PA, an award-winning independent newsroom covering Pennsylvania’s Capitol and urgent statewide and regional issues. The mission of Spotlight PA is to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across more than 120 partner newsrooms, allowing our journalism to reach Pennsylvanians in all corners. The newsroom is supported by grants and donations from individual and institutional donors who believe in the value of the work and want to sustain it.
