@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2024/07/pennsylvania/"]
 authors = ["Carter Walker"]
 blurb = "The legislation seeks to prevent delays in finalizing Pennsylvania’s electoral votes, as seen in 2022."
 byline = "Carter Walker of Votebeat"
@@ -18,6 +19,7 @@ title = "To certify election results on time, Pa. looks to set new deadlines for
 title-tag = "Election-related legal challenges may get new deadlines"
 topics = ["Elections"]
 twitter-title = "To certify election results on time, Pa. looks to set legal challenge deadlines"
+url = "/news/2024/07/pennsylvania-election-electoral-college-deadline-legal-challenges-donald-trump-house-bill/"
 +++
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
