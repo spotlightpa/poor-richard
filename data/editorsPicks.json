@@ -12,16 +12,17 @@
     "content/news/2024-04-25-SPLHUDWHISTLEBLOW.md"
   ],
   "featuredStories": [
-    "content/news/2024-07-08-SPLEDFUNDUPDATE.md"
+    "content/news/2024-07-10-SPLCAREQA0724.md"
   ],
   "subfeatures": [
-    "content/news/2024-06-27-SPLGAMINGUPDATE.md",
-    "content/news/2024-07-01-SPLPHARE.md"
+    "content/news/2024-05-08-splchildca0422.md",
+    "content/news/2024-06-18-SPLCAREACT0624.md",
+    "content/news/2024-05-08-splchildca0422.md"
   ],
   "topSlots": [
+    "content/news/2024-07-08-SPLEDFUNDUPDATE.md",
     "content/news/2024-07-08-SPLAGABUSE101.md",
-    "content/news/2024-07-04-SPLSOLUPDATE.md",
-    "content/news/2024-07-02-SPLADHD0724.md"
+    "content/news/2024-07-04-SPLSOLUPDATE.md"
   ],
   "topper": []
 }
