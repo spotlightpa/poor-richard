@@ -12,13 +12,22 @@ signupDek = "Sign up to receive a weekly review of articles from Spotlight PA an
 hide-topper = true
 
 [[blocks]]
-layout = "ballyhoo"
-id = "berk-report"
+title = ""
+layout = "promo"
+
+[[blocks.entries]]
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 hed = "Spotlight PA Berks Project Report"
-dek = "Blueprint for Berks: Journalism serves as the cornerstone of a vibrant and informed community, playing a crucial role in fostering transparency, accountability, and civic engagement. Local journalism, in particular, is a catalyst for positive change."
-cta = "Get the report →"
-link = "https://files.data.spotlightpa.org/uploads/01k7/pznh/blueprint-for-berks-full-report.pdf"
+body = "Blueprint for Berks, a 12-month community research project, engaged Berks residents in a series of local discussions and an expansive survey to identify information gaps, coverage needs, and news preferences in the local market."
+actionText = "Get the report →"
+actionUrl = "https://files.data.spotlightpa.org/uploads/01k7/pznh/blueprint-for-berks-full-report.pdf"
+
+[[blocks.entries]]
+image = "external/271g68k54vbhc5t32ctj0yf24g.jpeg"
+hed = "Revitalize Local News"
+body = "Join our historic effort to invigorate local news."
+actionText = "Donate Now →"
+actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
 
 [[blocks]]
 layout = "takeover"
