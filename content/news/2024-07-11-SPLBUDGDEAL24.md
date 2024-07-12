@@ -80,7 +80,7 @@ Some environmental advocates and lawmakers pushed back against the bill, saying 
 
 Several changes to Pennsylvania’s higher education system also made it into the final deal, though the legislature did not adopt an ambitious overhaul of Pennsylvania’s higher education system pitched by Shapiro.
 
-Lawmakers approved <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">a new scholarship program</a>, <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-college-affordability-legislature-budget/">proposed by Republicans</a>, that gives students in an “approved course of study,” like nursing or education, up to $5,000 per academic year. They must stay and work in Pennsylvania after graduation for 15 months per grant received.
+Lawmakers approved <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">a new scholarship program</a>, <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-college-affordability-legislature-budget/">proposed by Republicans</a>, that gives students in an “approved course of study,” like nursing or education, up to $5,000 per academic year. They must stay and work in Pennsylvania after graduation for 12 months per grant received.
 
 Shapiro wanted to combine the systems that oversee Pennsylvania’s 10 state-run universities and 15 community colleges and eventually cap tuition at $1,000 per semester for many families. That plan didn’t make it into the final deal, but lawmakers did agree to create a new State Board of Higher Education, which will develop strategic plans for the systems and recommend ways for schools to coordinate.
 
