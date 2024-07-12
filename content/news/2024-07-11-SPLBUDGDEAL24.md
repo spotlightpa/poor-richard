@@ -102,7 +102,7 @@ The budget also gives employers tax credits if they help employees pay for child
 
 The deal includes a bevy of tax credits targeted at politically popular industries and causes. Lawmakers approve such credits as <a href="https://www.spotlightpa.org/news/2023/06/pa-child-care-earned-income-tax-credit-legislature-budget-shapiro/">a compromise</a> instead of increasing state spending.
 
-The deal expands an existing credit for <a href="https://www.alleghenyfront.org/stronghold-digital-mining-bitcoin-waste-coal-power-plant-pennsylvania/">companies that burn waste coal</a> and creates a special zone in Reading in which taxes paid by developers can instead be used to pay down any debt taken out to build in a pre-defined neighborhood.
+The deal expands an existing credit for <a href="https://www.alleghenyfront.org/stronghold-digital-mining-bitcoin-waste-coal-power-plant-pennsylvania/">companies that burn waste coal</a> and creates a special zone in Erie — and possibly in other cities in the future — in which taxes paid by developers can instead be used to pay down any debt taken out to build in a pre-defined neighborhood.
 
 One loser? Cryptocurrency companies, which will no longer be eligible for a tax exemption <a href="https://penncapital-star.com/labor/pa-passed-a-tax-break-for-data-centers-now-crypto-miners-are-taking-advantage/">that encourages</a> the development of data centers in Pennsylvania.
 
