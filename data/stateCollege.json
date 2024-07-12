@@ -1,17 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-07-11-SPLDUBOIS0724.md"
+    "content/statecollege/2024-07-12-SPLNOTICE0724.md"
   ],
   "subfeatures": [
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md",
-    "content/statecollege/2024-01-05-SPLSUPBILLS.md",
-    "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/statecollege/2023-06-07-SPLSTAY.md"
+    "content/statecollege/2024-06-28-SPLPROPTAX0625.md",
+    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md",
+    "content/statecollege/2024-03-01-SPLMUNPOW.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-07-11-SPLDUBOIS0724.md",
     "content/statecollege/2024-06-20-SPLLYNCH.md",
-    "content/statecollege/2024-06-28-SPLPROPTAX0625.md",
-    "content/statecollege/2024-06-14-SPLFOOTBALL0624.md"
+    "content/statecollege/2024-06-28-SPLPROPTAX0625.md"
   ],
   "topper": []
 }
