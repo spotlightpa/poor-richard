@@ -20,7 +20,7 @@ topics = ["The Capitol"]
 twitter-title = "What’s in Pennsylvania's new $47.6 billion budget?"
 +++
 
-HARRISBURG — Pennsylvania lawmakers have sent Gov. Josh Shapiro a $47.6 billion budget that increases public education spending, funnels new dollars into economic development, provides a one-time boost for transit systems, and creates a new college scholarship program.
+HARRISBURG — Gov. Josh Shapiro has signed a $47.6 billion budget that increases public education spending, funnels new dollars into economic development, provides a one-time boost for transit systems, and creates a new college scholarship program.
 
 Education defined budget conversations more than any other issue this year, as lawmakers grappled over how to handle a state appellate court ruling that found the commonwealth unconstitutionally underfunds public school districts.
 
