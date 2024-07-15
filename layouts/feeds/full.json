@@ -3,6 +3,7 @@
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
 {{- $stories := union $news.RegularPages $sc.RegularPages -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
+{{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
 {{- range first 15 $stories -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $item := dict
@@ -22,8 +23,8 @@
         "absURL" true
     -}}
     {{- $url := partial "helper/imgproxy" $imgOpt -}}
-    {{ $description := .Param "image-description" }}
-    {{ $credit := .Param "image-credit" }}
+    {{- $description := .Param "image-description" -}}
+    {{- $credit := .Param "image-credit" -}}
     {{- $item = $item | merge (dict
         "image" $url
         "image_description" $description
