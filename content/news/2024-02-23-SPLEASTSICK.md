@@ -16,6 +16,7 @@ suppress-date = false
 title = "Pennsylvanians say the East Palestine train derailment left them sick and without help"
 title-tag = "East Palestine train derailment made Pa. residents sick"
 topics = ["Environment", "Health"]
+content-source = "Inside Climate News"
 +++
 
 <em>This </em><a href="https://insideclimatenews.org/news/22022024/one-year-later-pennsylvanians-living-near-east-palestine-train-derailment-site-say-theyre-still-sick/"><em>article</em></a><em> originally appeared on Inside Climate News, a nonprofit, independent news organization that covers climate, energy, and the environment. It is republished with permission. Sign up for their newsletter </em><a href="https://insideclimatenews.org/newsletter/"><em>here</em></a><em>.</em>
@@ -157,4 +158,3 @@ When Darlington Township received <a href="https://www.yourerie.com/news/pennsyl
 “We&#39;re sitting here poisoned in our homes, and no one&#39;s helping us, and everyone&#39;s just pointing the finger at the other person,” she said. “It’s been a year now. This has been happening for too long.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em><strong><em></em></strong>
-

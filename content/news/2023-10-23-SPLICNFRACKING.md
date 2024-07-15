@@ -15,6 +15,7 @@ suppress-date = false
 title = "Major health survey links fracking in Pa., US to cancers, birth defects, other health harms"
 title-tag = "Health survey links fracking in PA to cancers, disease"
 topics = ["Environment"]
+content-source = "Inside Climate News"
 +++
 
 <em>This article originally appeared on </em><a href="https://insideclimatenews.org/news/20102023/new-evidence-pennsylvania-fracking-public-health-harms/"><em>Inside Climate News</em></a><em>, a nonprofit, independent news organization that covers climate, energy, and the environment. It is republished with permission. Sign up for their newsletter </em><a href="https://insideclimatenews.org/newsletter/"><em>here</em></a><em>.</em>
@@ -96,4 +97,3 @@ The compendium concluded that there is now ample evidence that fracking is not c
 “The only method of mitigating its grave threats to public health and the climate is a complete and comprehensive ban on fracking. Indeed, a fracking phase-out is a requirement of any meaningful plan to prevent catastrophic climate change.” <strong><em></em></strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
