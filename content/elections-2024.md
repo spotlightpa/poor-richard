@@ -205,7 +205,6 @@ dek="How our electoral system is fueling partisanship"
 date="2024-04-19"
 dateVerbose="April 19, 2024 on Zoom"
 link="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-2024-closed-independents-unaffiliated-ballot-pennsylvania-troiano/"
-registration="https://spotlightpa.fundjournalism.org/events/?campaign=701Ub000006mhonIAA"
 
 [[blocks.entries]]
 hed="PA attorney general Candidates"
@@ -213,7 +212,6 @@ dek="Attend a free panel on Pa.’s candidates for attorney general, other row o
 date="2024-04-11"
 dateVerbose="April 11, 2024 on Zoom"
 link="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-day-2024-auditor-general-attorney-treasurer-event/"
-registration="https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"
 
 [[blocks]]
 title = "Elections 101"
