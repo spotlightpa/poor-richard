@@ -16,6 +16,7 @@ suppress-date = false
 title = "Josh Shapiro’s embrace of energy interests undermines climate promises, advocates say"
 title-tag = "Environmentalists blast Shapiro’s natural gas stance"
 topics = ["Environment"]
+content-source = "Inside Climate News"
 +++
 
 <em>This article originally appeared on </em><a href="https://insideclimatenews.org/news/07022024/first-year-pennsylvania-governor-josh-shapiro-forged-alliances-with-natural-gas-industry/"><em>Inside Climate News</em></a><em>, a nonprofit, independent news organization that covers climate, energy, and the environment. It is republished with permission. Sign up for their newsletter </em><a href="https://insideclimatenews.org/newsletter/"><em>here</em></a><em>.</em>
@@ -135,4 +136,3 @@ At the end of his address, he returned to this idea. “Let’s take inspiration
 In his speech, Shapiro didn’t mention two of the other murals on the ceiling above him, both of which celebrate Pennsylvania’s <a href="https://academic.oup.com/occmed/article/72/5/286/6639537">long history of fossil fuel extraction</a>: “The Spirit of Light,” an ethereal image of an oil field, and “Science Revealing the Treasures of the Earth,” showing coal miners climbing into a mine while three figures hover overhead, each one personifying a different ideal: Fortune, Abundance and Science.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
