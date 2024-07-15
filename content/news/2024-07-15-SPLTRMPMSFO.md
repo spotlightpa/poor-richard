@@ -28,6 +28,8 @@ Mentions of Trump on social media soared up to 17 times the average daily amount
 
 Here&#39;s a look at the claims that surfaced online following the shooting:
 
+{{<embed/newsletter cta="No one is covering the 2024 Election in Pennsylvania quite like Spotlight PA. Sign up for our free daily newsletter." preselect="papost">}}
+
 ## Claims of an inside job or false flag are unsubstantiated
 
 Many of the more specious claims that surfaced immediately after the shooting sought to blame Trump or his Democratic opponent, President Joe Biden, for the attack.
@@ -57,6 +59,8 @@ Before authorities identified the suspect, photos of two different people circul
 In all the speculation and conjecture, others were trying to exploit the event financially. On X on Sunday morning, an account named Proud Patriots urged Trump supporters to purchase their assassination-attempt themed merchandise.
 
 “First they jail him, now they try to end him,” reads the ad for the commemorative Trump Assassination Attempt Trading Card. “Stand Strong &amp; Show Your Support!”
+
+{{<embed/donate>}}
 
 ## Republicans cast blame on Biden
 
