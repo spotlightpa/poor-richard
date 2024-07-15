@@ -15,7 +15,9 @@ slug = "trump-shooting-misinformation-debunking"
 suppress-date = false
 title = "Minutes after Trump shooting, misinformation started flying. Here are the facts."
 title-tag = "The top misinformation spreading after Trump shooting"
-topics = ["Elections", "AP"]
+topics = ["Elections"]
+feed-exclude = true
+content-source = "Associated Press"
 +++
 
 Within minutes of the gunfire, the attempted assassination of former President Donald Trump spawned a vast sea of claims — some outlandish, others contradictory — reflecting the frightening uncertainties of the moment as well as America&#39;s fevered, polarized political climate.
@@ -79,4 +81,3 @@ Westwood said he worries that Saturday&#39;s shooting could spur others to consi
 “There is a real risk that this spirals,” he said. “Even if someone doesn’t personally support violence, if they think the other side does, and they witness an attempted political assassination, there is a real risk that this could lead to escalation.”<strong></strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
