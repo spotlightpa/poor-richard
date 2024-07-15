@@ -15,7 +15,7 @@ slug = "trump-shooting-misinformation-debunking"
 suppress-date = false
 title = "Minutes after Trump shooting, misinformation started flying. Here are the facts."
 title-tag = "The top misinformation spreading after Trump shooting"
-topics = ["Elections"]
+topics = ["Elections", "AP"]
 +++
 
 Within minutes of the gunfire, the attempted assassination of former President Donald Trump spawned a vast sea of claims — some outlandish, others contradictory — reflecting the frightening uncertainties of the moment as well as America&#39;s fevered, polarized political climate.
