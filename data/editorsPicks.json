@@ -12,15 +12,17 @@
     "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "featuredStories": [
-    "content/news/2024-07-16-SPLPRISONHEAT0724.md"
+    "content/statecollege/2024-07-17-SPLRURALCOM0724.md"
   ],
   "subfeatures": [
-    "content/news/2024-05-20-SPLRELEASE0524.md"
+    "content/news/2024-06-06-SPLFULLPRACTICE.md",
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md",
+    "content/statecollege/2024-05-22-SPLSTORMWATER0524.md"
   ],
   "topSlots": [
     "content/news/2024-07-16-SPLPERIODBUDG.md",
-    "content/news/2024-07-16-SPLILK0724.md",
-    "content/news/2024-07-15-SPL24BUDLOSERS.md"
+    "content/news/2024-07-16-SPLPRISONHEAT0724.md",
+    "content/news/2024-07-16-SPLILK0724.md"
   ],
   "topper": []
 }
