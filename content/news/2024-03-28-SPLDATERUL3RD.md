@@ -3,6 +3,7 @@ authors = ["Carter Walker"]
 blurb = "The full impact of the ruling is still up in the air while the parties who brought the case decide whether to appeal."
 byline = "Carter Walker of Votebeat"
 description = "The full impact of the ruling is still up in the air while the parties who brought the case decide whether to appeal."
+feed-exclude = false
 image = "2023/11/01jn-4r6x-qsse-eper.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Lehigh County voter registration workers sort mail ballots on Nov. 7, 2023, in Allentown, Pennsylvania."
@@ -24,7 +25,7 @@ A federal appeals court decision upholding Pennsylvania’s rules for voting by 
 
 The full impact of the ruling is still up in the air while the parties who brought the case decide whether to appeal.
 
-A panel of the Third U.S. Circuit Court of Appeals <a href="https://wp.api.aclu.org/wp-content/uploads/2024/03/Opinions.pdf">ruled</a> 2-1 Wednesday that a Pennsylvania law requiring mail voters to hand-write a date on the return envelope did not violate a provision of the 1964 Civil Rights Act that’s meant to protect voters from being denied the right to register to vote.
+A panel of the Third U.S. Circuit Court of Appeals <a href="https://web.archive.org/20240329113600/https://wp.api.aclu.org/wp-content/uploads/2024/03/Opinions.pdf">ruled</a> 2-1 Wednesday that a Pennsylvania law requiring mail voters to hand-write a date on the return envelope did not violate a provision of the 1964 Civil Rights Act that’s meant to protect voters from being denied the right to register to vote.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -106,7 +107,7 @@ A 2021 case out of Lehigh County challenged the provision, citing the 1964 Civil
 
 In 2022, a separate three-judge panel of the Third U.S. Circuit Court of Appeals <a href="https://www.inquirer.com/politics/election/undated-mail-ballots-pennsylvania-lehigh-county-migliori-20220520.html">unanimously agreed</a> in the Lehigh case that the date issue was immaterial, but the U.S. Supreme Court nullified the ruling later that year, after one of the candidates in the race in question conceded.
 
-That left the question up in the air again ahead of the 2022 midterm election, until the <a href="https://www.inquirer.com/politics/election/pennsylvania-supreme-court-undated-mail-ballots-20221101.html">Pennsylvania Supreme Court ruled on Nov. 1</a> that counties should not count the ballots if they were missing a date or were misdated. <a href="https://www.pacourts.us/Storage/media/pdfs/20221105/170248-nov.5,2022-supplementalorder.pdf">The court defined</a> an incorrectly dated ballot as one that fell outside of the time range for acceptable ballots, Sept. 19 through Nov. 8, 2022, the first day mail ballots were sent out through the day of the election.
+That left the question up in the air again ahead of the 2022 midterm election, until the <a href="https://www.inquirer.com/politics/election/pennsylvania-supreme-court-undated-mail-ballots-20221101.html">Pennsylvania Supreme Court ruled on Nov. 1</a> that counties should not count the ballots if they were missing a date or were misdated. <a href="https://web.archive.org/20240219062433/https://www.pacourts.us/Storage/media/pdfs/20221105/170248-nov.5,2022-supplementalorder.pdf">The court defined</a> an incorrectly dated ballot as one that fell outside of the time range for acceptable ballots, Sept. 19 through Nov. 8, 2022, the first day mail ballots were sent out through the day of the election.
 
 In practice, this has often led to counties rejecting ballots that they know were cast in the correct time period.
 
