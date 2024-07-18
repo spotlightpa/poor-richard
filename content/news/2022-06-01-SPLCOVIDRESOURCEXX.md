@@ -39,7 +39,7 @@ The following pages provide data related to testing, case counts, and hospitaliz
 
 <b>If you’re looking for Pennsylvania-specific data, check these sources:</b>
 
-<a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania Department of Health</a>: Provides Pennsylvania-specific data on case counts, deaths, and hospitalizations by county and ZIP code. A separate dashboard shows detailed information about vaccinations, including boosters. This page also includes information about cases in nursing homes (referred to as long-term care facilities) and case counts among children 18 and younger.
+<a href="https://web.archive.org/20200319051230/https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania Department of Health</a>: Provides Pennsylvania-specific data on case counts, deaths, and hospitalizations by county and ZIP code. A separate dashboard shows detailed information about vaccinations, including boosters. This page also includes information about cases in nursing homes (referred to as long-term care facilities) and case counts among children 18 and younger.
 
 <a href="https://covid.cdc.gov/covid-data-tracker/#county-view?list_select_state=Pennsylvania&data-type=CommunityLevels">Centers for Disease Control and Prevention</a>: Includes data about Pennsylvania case counts, hospitalizations, vaccinations, and testing. This page also includes a map showing <a href="https://web.archive.org/20230101005656/https://www.cdc.gov/coronavirus/2019-ncov/your-health/covid-by-county.html">COVID community levels</a>, which some regions might use to determine what types of mitigation measures — like mask guidelines or mandates — to use to prevent the spread of the virus.
 
@@ -77,7 +77,7 @@ Most retail pharmacies carry at-home COVID tests.
 
 If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
 
-The state health department also runs <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
+The state health department also runs <a href="https://web.archive.org/20220101051324/https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
 
 The U.S. Postal Service restarted its <a href="https://special.usps.com/testkits">free at-home test program</a> in December. Each household can order one set of four rapid antigen tests.
 

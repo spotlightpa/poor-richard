@@ -52,7 +52,7 @@ Levine and Wolf were joined by a panel of public health professionals and doctor
 
 “As we all know, the heart attacks, the strokes, the GI bleeds — those kinds of things are still happening in our communities. And we, as hospitals and health systems, still have a responsibility to be available for that kind of care,” Dr. Jaewon Ryu, president of the health system Geisinger, said. “COVID has frankly stretched our ability to do that.”
 
-The state Department of Health <a href="https://www.spotlightpa.org/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">reported 11,972 new coronavirus cases</a> Thursday. As of this morning, hospitals in the southwest and south-central regions of the state were <a href="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">reporting that they anticipate staffing shortages within the next week</a>, state data show.
+The state Department of Health <a href="https://www.spotlightpa.org/news/2020/03/pa-coronavirus-updates-cases-map-live-tracker/">reported 11,972 new coronavirus cases</a> Thursday. As of this morning, hospitals in the southwest and south-central regions of the state were <a href="https://web.archive.org/20200319051230/https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">reporting that they anticipate staffing shortages within the next week</a>, state data show.
 
 Spotlight PA first learned the details of the mitigation efforts from a source on Wednesday. When asked for comment, Wolf’s spokesperson, Lyndsay Kensinger, said some of the information was inaccurate but would not elaborate. On Thursday, when again presented with details of the plan as confirmed by additional sources, Kensinger again cast doubt on Spotlight PA’s information.
 
