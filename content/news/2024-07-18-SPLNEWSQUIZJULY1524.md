@@ -22,7 +22,7 @@ topics = ["News Quiz"]
 
 In this week’s news quiz: Attempted assassination, vice presidential pick, budget loser, Biden naysayers, and a trace of snow.
 
-<div data-tf-live="01J30QHQ58JZ74MRFA7WP3250B"></div><script src="//embed.typeform.com/next/embed.js"></script>
+{{<embed/raw srcdoc="&lt;div data-tf-live=&#34;01J30QHQ58JZ74MRFA7WP3250B&#34;&gt;&lt;/div&gt;&lt;script src=&#34;//embed.typeform.com/next/embed.js&#34;&gt;&lt;/script&gt;">}}
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!
 
