@@ -5,6 +5,7 @@ description = "Join Spotlight PA July 18 for a live panel on Pa.’s private wat
 event-date = 2024-07-18T18:00:00-04:00
 event-title = "ROCKY WATERS"
 event-url = "https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"
+feed-exclude = false
 image = "2024/05/01k5-h3sv-3am7-896r.jpeg"
 image-caption = "A sign for the Rock Spring Water Company, which serves about 500 properties in rural Ferguson Township."
 image-credit = "Georgianna Sutherland / For Spotlight PA"
