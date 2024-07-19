@@ -6,6 +6,7 @@ description = "Spotlight PA staff shares their top book picks for summer, each w
 feed-exclude = false
 image = "2024/07/01k9-jgfj-w9rj-gzcf.png"
 image-description = "A collage of book covers."
+image-gravity = "ce"
 internal-id = "SPL24READINGRECS"
 kicker = "PA Local"
 modal-exclude = false
