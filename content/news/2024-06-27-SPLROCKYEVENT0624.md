@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA July 18 for a live panel on Pa.’s private water companies and their impact on communities."
+blurb = "Watch a panel discussion on Pa.’s private water companies and their impact on communities."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA July 18 for a live panel on Pa.’s private water companies and their impact on local quality of life."
+description = "Watch a panel discussion about Pa.’s private water companies and their impact on local quality of life."
 event-date = 2024-07-18T18:00:00-04:00
 event-title = "ROCKY WATERS"
 event-url = "https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"
@@ -18,7 +18,7 @@ pinned = false
 published = 2024-06-27T17:57:18.326-04:00
 slug = "pennsylvania-water-private-system-rock-spring"
 suppress-date = false
-title = "Spotlight PA Event: How unreliable water systems affect quality of life"
+title = "WATCH: How unreliable water systems affect quality of life"
 title-tag = "How unreliable water systems in PA affect communities"
 topics = ["Events"]
 twitter-title = "How unreliable water systems in Pa. affect quality of life"
@@ -30,9 +30,9 @@ Despite years of customer complaints, citations from state regulators, and low r
 
 The situation highlights issues facing communities that receive water from private companies.
 
-To learn more, join Spotlight PA Thursday, July 18 from 6-7 p.m. ET on Zoom for a live panel on Pennsylvania’s private water industry, how it is regulated, and how communities are affected when service is subpar.
+Spotlight PA held a free panel discussion on Pennsylvania’s private water industry, how it is regulated, and how communities are affected when service is subpar.
 
-<strong>Our panelists include:</strong>
+<strong>Our panelists were:</strong>
 
 - <strong>Marley Parish,</strong> rural affairs reporter, Spotlight PA
 
@@ -42,7 +42,9 @@ To learn more, join Spotlight PA Thursday, July 18 from 6-7 p.m. ET on Zoom for 
 
 - <strong>Laura Dininni, </strong>former Ferguson Township supervisor
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>.
+- <strong>Rikardo Hull,</strong> chief operating officer, National Association of Water Companies
+
+{{<embed/raw srcdoc="&lt;iframe src=&#34;https://player.vimeo.com/video/987122308?h=e1c4d233eb&amp;color=ffcb05&amp;title=0&amp;byline=0&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#10;&lt;p&gt;&lt;a href=&#34;https://vimeo.com/987122308&#34;&gt;Rocky Waters&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/user107055379&#34;&gt;Spotlight PA&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;">}}
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
