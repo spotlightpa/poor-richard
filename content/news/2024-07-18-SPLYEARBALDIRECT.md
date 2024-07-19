@@ -59,7 +59,7 @@ It would also resolve disparities among counties in how these ballots are handle
 
 <a href="https://www.statecollege.com/articles/elections/centre-county-judge-dismisses-republicans-challenge-of-improperly-dated-primary-mail-ballots/">Centre</a> and <a href="https://www.wvia.org/news/local/2024-05-23/052324luz-117thhouse">Luzerne</a> Counties were sued, by the county GOP and a GOP candidate, respectively, for counting the ballots. The Centre County case was dismissed at the county court level on technical grounds, and the Luzerne case is currently being appealed to the state Supreme Court.
 
-The Department of State argued in the Luzerne lawsuit that writing a year on the ballot was not necessary to satisfy the dating requirement. Asked why the state didn’t just do away with the year field altogether, Schmidt said that could be an option, but including the year makes it more clear when the ballot was voted.
+The Department of State argued in the Luzerne lawsuit that writing a year on the ballot was not necessary to satisfy the dating requirement. Asked why the state didn’t just do away with the year field altogether, Schmidt said that could be an option, but including the year makes it more clear when the ballot was voted and prevents further litigation over the issue in November
 
 Meanwhile, <a href="https://lancasteronline.com/news/local/lawsuit-challenges-lancaster-county-over-rejected-mail-in-ballots-in-april-primary-update/article_ac0d579a-2737-11ef-b215-a77c0889dfb8.html">Lancaster County</a> was sued for <em>not</em> counting the ballots, by the Pennsylvania Alliance for Retired Americans. But the group dropped its lawsuit last week after seeing the new Department of State directive on preprinting the full year.
 
@@ -106,6 +106,8 @@ But overall, Sisk said, any time counties can get direction that has the force o
 “The most important thing we can have is a consistent approach across the counties,” he said.
 
 Now, he said, it’s just a matter of “getting voters to know they still need to put the month and the day.”
+
+<em>This story was updated after publication with additional comments from Secretary Al Schmidt to clarify his interview.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
