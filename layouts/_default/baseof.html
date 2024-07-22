@@ -22,19 +22,24 @@
     {{ end }}
 
     {{ block "preload" . }}
+      {{ $css := resources.Get "css/tw.css" | resources.PostCSS (dict "inlineImports" true) }}
+      {{ if not hugo.IsServer }}
+        {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+      {{ end }}
+      <link rel="preload" href="{{ $css.RelPermalink }}" as="style" />
       <link
         rel="modulepreload"
         href="{{ partialCached `helper/get-enhancements` . }}"
       />
       {{ partial "header/preload-merri.html" . }}
     {{ end }}
+    {{ partial "header/google-analytics-meta.html" . }}
     {{ block "css" . }}
       {{ partial "header/css" . }}
       {{ partial "header/noscript.html" . }}
     {{ end }}
 
     {{ partial "header/favicons.html" . }}
-    {{ partial "header/google-analytics-meta.html" . }}
     {{ partial "header/feeds.html" . }}
 
 
