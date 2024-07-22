@@ -23,18 +23,23 @@
 
     {{ block "preload" . }}
       <link
+        rel="preload"
+        href="{{ partialCached `helper/build-tailwind` . }}"
+        as="style"
+      />
+      <link
         rel="modulepreload"
         href="{{ partialCached `helper/get-enhancements` . }}"
       />
       {{ partial "header/preload-merri.html" . }}
     {{ end }}
+    {{ partial "header/google-analytics-meta.html" . }}
     {{ block "css" . }}
       {{ partial "header/css" . }}
       {{ partial "header/noscript.html" . }}
     {{ end }}
 
     {{ partial "header/favicons.html" . }}
-    {{ partial "header/google-analytics-meta.html" . }}
     {{ partial "header/feeds.html" . }}
 
 
