@@ -3,6 +3,7 @@ authors = ["Stephen Caruso", "Angela Couloumbis"]
 blurb = "Legal experts say the quiet update to the administration's code of conduct is overly subjective and could be used to curtail First Amendment rights."
 byline = "Stephen Caruso and Angela Couloumbis of Spotlight PA"
 description = "Critics say the Pennsylvania governor’s order, which applies to state employees, is subjective and could curtail free speech."
+feed-exclude = false
 image = "2024/02/01jw-7n4g-26t9-krfe.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Gov. Josh Shapiro delivers his 2024 budget address in the Pennsylvania Capitol on Feb. 6."
@@ -20,13 +21,13 @@ topics = ["Josh Shapiro"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
-HARRISBURG — Amid protests over the war in Gaza, Gov. Josh Shapiro has quietly revised his administration’s code of conduct to bar state employees from engaging in “scandalous or disgraceful” behavior — actions that could lead to discipline or termination, Spotlight PA has learned.
+HARRISBURG — Amid protests over the war in Gaza, <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Gov. Josh Shapiro</a> has quietly revised his administration’s code of conduct to bar state employees from engaging in “scandalous or disgraceful” behavior — actions that could lead to discipline or termination, Spotlight PA has learned.
 
 The vaguely worded update, which went into effect last week without the public fanfare of some executive orders, is raising alarm among First Amendment advocates concerned that it could be used to unconstitutionally curtail free speech.
 
 It has also heightened fears among pro-Palestinian and Muslim American groups that employees who express opinions that differ from the Democratic governor’s stance on the war could be unfairly punished.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 In a May 8 email to cabinet secretaries, a Shapiro administration official wrote that the need for “moral clarity is especially pronounced today, as antisemitism, Islamophobia, and other forms of hate speech are increasing across not only Pennsylvania, but nationally and globally.”
 
@@ -84,7 +85,7 @@ Shapiro has repeatedly said his comments are his attempt to “speak and act wit
 
 As the New York Times recently reported, Shapiro has <a href="https://twitter.com/gardnerakayla/status/1745916051001372803?t=b2g5-1SlkpbGHVUOR-FJ1w&amp;s=19">criticized</a> Israeli Prime Minister Benjamin Netanyahu and expressed support for a two-state solution. He has not called for a ceasefire, which led some Muslim leaders to <a href="https://pa.cair.com/pressrelease/shapiro-meaningful-action/">boycott</a> a Ramadan celebration the governor held.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 “I am pro-the idea of a Jewish homeland, a Jewish state, and I will certainly do everything in my power to ensure that Israel is strong and Israel is fortified and will exist for generations,” Shapiro <a href="https://www.nytimes.com/2024/05/11/us/politics/josh-shapiro-pennsylvania.html">told</a> the New York Times this month.
 
@@ -92,5 +93,5 @@ Walczak, of the ACLU, said that recent actions by elected officials — from equ
 
 “Free speech is a value. Free speech doesn&#39;t give you the right to harass people. There are lines there,” Walczak said. “But much of the rhetoric by politicians pushing for action to combat antisemitism or Islamophobia crosses clear First Amendment lines.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
