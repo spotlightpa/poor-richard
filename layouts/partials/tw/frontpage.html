@@ -26,7 +26,7 @@
 
 
 <div
-  class="mx-auto mb-5 max-w-screen-xl space-y-6 md:space-y-12 lg:space-y-16"
+  class="mx-auto max-w-screen-xl"
   x-data="{ isSticky: !$el.dataset.takeoverActive }"
   data-takeover-active="{{ cond (page.Param `takeover-active`) `1` `` }}"
 >
@@ -61,7 +61,7 @@
     {{ end }}
     {{ with $blurb }}
       <div
-        class="order-4 col-span-3 row-start-1 mt-9 md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+        class="order-4 col-span-3 row-start-1 mt-9 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
       >
         <div class="article-content rounded bg-black p-6 font-sans text-white">
           <h2 class="text-2xl font-extrabold">
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div
-          class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
+          class="flex w-full items-center justify-center border-t py-12 md:mt-12 md:border-none md:py-0"
         >
           {{ if page.Param "ad-featured-active" }}
             {{ partial "tw/promo-single.html" (dict
@@ -89,7 +89,7 @@
       </div>
     {{ else }}
       <div
-        class="order-4 col-span-3 row-start-1 mt-[34px] md:space-y-12 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
+        class="order-4 col-span-3 row-start-1 mt-[34px] xl:col-start-12 xl:row-end-4 xl:w-[300px]"
       >
         <div
           class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
@@ -108,7 +108,9 @@
             }}
           {{ end }}
         </div>
-        <div class="w-full border-t py-12 md:border-none md:py-0 lg:max-w-xs">
+        <div
+          class="w-full border-t py-12 md:mt-12 md:border-none md:py-0 lg:max-w-xs"
+        >
           {{ partial "tw/rail-most-popular.html" dict }}
         </div>
       </div>
@@ -165,7 +167,7 @@
   {{ if page.Param "ad-breaker-active" }}
     <div
       x-intersect:enter.margin.100px="isSticky = false"
-      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:border-none md:py-0"
       data-ga-category="breaker"
     >
       {{ partial "tw/promo-single.html" (dict
@@ -181,7 +183,7 @@
   {{ end }}
 
 
-  <div class="mt-16 space-y-8 sm:space-y-12 md:mt-24">
+  <div class="mt-16 flex flex-col gap-y-8 sm:gap-y-12">
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -251,7 +253,7 @@
 
   {{ if page.Param "ad-headwater-active" }}
     <div
-      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:gap-y-12 md:border-none md:py-0"
       data-ga-category="headwater"
     >
       {{ partial "tw/promo-single.html" (dict
@@ -292,7 +294,7 @@
           @mouseover.once="load()"
           @touchstart.passive.once="load()"
         >
-          <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+          <div class="flex flex-col gap-6 md:gap-5" x-ref="archives">
             {{ range $i, $page := .river | first 12 }}
               {{ $params := partialCached "helper/page-params" . .RelPermalink }}
               {{ $imgOpts := dict
@@ -430,7 +432,7 @@
 
   {{ if page.Param "ad-headwater-active" }}
     <div
-      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:space-y-12 md:border-none md:py-0"
+      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:border-none md:py-0"
       data-ga-category="headwater"
     >
       {{ partial "tw/promo-single.html" (dict
