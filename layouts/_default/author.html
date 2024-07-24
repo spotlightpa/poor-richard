@@ -7,7 +7,7 @@
 
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
-  <section class=" bg-g-0 px-5 py-14 text-lg font-medium lg:px-0">
+  <section class="bg-g-0 px-5 py-14 text-lg font-medium lg:px-0">
     <div class="mx-auto max-w-screen-md">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
@@ -98,7 +98,7 @@
           <dl class="mt-3 flex flex-wrap">
             {{ with $author.email }}
               <dt class="flex-0 mr-2 flex items-center">
-                <span class=" mr-2 h-4 w-4">
+                <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "email" }}
                   </svg>
@@ -107,7 +107,7 @@
               </dt>
               <dd class="flex-[0_1_50%]">
                 <a
-                  class=" text-blue"
+                  class="text-blue"
                   data-ga-category="author-email"
                   href="mailto:{{ . }}"
                   title="Email"
@@ -118,7 +118,7 @@
             {{ end }}
             {{ with $author.twitter }}
               <dt class="flex-0 mr-2 flex items-center">
-                <span class=" mr-2 h-4 w-4">
+                <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "twitter" }}
                   </svg>
@@ -127,7 +127,7 @@
               </dt>
               <dd class="flex-[0_1_50%]">
                 <a
-                  class=" text-blue"
+                  class="text-blue"
                   data-ga-category="author-twitter"
                   href="https://www.twitter.com/{{ . }}"
                   title="Twitter"
@@ -138,7 +138,7 @@
             {{ end }}
             {{ with $author.tel }}
               <dt class="flex-0 mr-2 flex items-center">
-                <span class=" mr-2 h-4 w-4">
+                <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "phone" }}
                   </svg>
@@ -147,7 +147,7 @@
               </dt>
               <dd class="flex-[0_1_50%]">
                 <a
-                  class=" text-blue"
+                  class="text-blue"
                   title="Telephone"
                   href="tel:+1{{ replaceRE `\D` `` . }}"
                   >{{ . }}</a
@@ -156,7 +156,7 @@
             {{ end }}
             {{ with $author.signal }}
               <dt class="flex-0 mr-2 flex items-center">
-                <span class=" mr-2 h-4 w-4">
+                <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "chat" }}
                   </svg>
@@ -165,7 +165,7 @@
               </dt>
               <dd class="flex-[0_1_50%]">
                 <a
-                  class=" text-blue"
+                  class="text-blue"
                   title="Contact via the Signal app"
                   href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
                   >{{ . }}</a
@@ -187,7 +187,7 @@
     {{ end }}
 
 
-    <div class=" mx-auto max-w-screen-md" data-ga-category="author">
+    <div class="mx-auto max-w-screen-md" data-ga-category="author">
       <div>
         <h2
           class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"

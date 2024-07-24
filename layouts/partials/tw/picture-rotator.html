@@ -46,11 +46,7 @@
   />
 
   <img
-    class="
-      {{ $bgClass }} {{ $desktopClasses }}
-      aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)] max-w-full
-      object-cover
-    "
+    class="{{ $bgClass }} {{ $desktopClasses }} aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)] max-w-full object-cover"
     src="{{ $magicPixel }}"
     {{ if .eager }}
       fetchpriority="high"

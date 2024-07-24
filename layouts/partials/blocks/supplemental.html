@@ -22,7 +22,7 @@
   >
     {{ with $title }}
       <h2
-        class="w-full  md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-1 lg:mx-auto lg:max-w-xl"
+        class="w-full md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-1 lg:mx-auto lg:max-w-xl"
       >
         {{ $title }}
       </h2>
@@ -79,7 +79,7 @@
       </aside>
     {{ end }}
     <div
-      class="article-content max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto  md:w-auto"
+      class="article-content max-w-xl text-black sm:w-4/6 md:col-span-7 md:col-start-3 md:row-span-1 md:row-start-2 md:mx-auto md:w-auto"
     >
       {{ .body | markdownify }}
     </div>
@@ -87,12 +87,7 @@
     {{ with .cta }}
 
       <nav
-        class="
-          sm:shape-outside relative my-4 w-auto
-          py-4 font-sans text-sm sm:order-3
-          sm:my-0 sm:w-full sm:flex-auto md:col-span-2
-          md:row-span-2 md:row-start-1 md:py-0
-        "
+        class="sm:shape-outside relative my-4 w-auto py-4 font-sans text-sm sm:order-3 sm:my-0 sm:w-full sm:flex-auto md:col-span-2 md:row-span-2 md:row-start-1 md:py-0"
         data-ga-category="inline:sidebar"
       >
         {{ with $menuTitle }}
@@ -101,7 +96,7 @@
           </h2>
         {{ end }}
         <ul
-          class="relative sm:flex sm:h-auto sm:flex-wrap sm:items-center sm:justify-start sm:space-x-4 md:block  md:space-x-0 md:space-y-3"
+          class="relative sm:flex sm:h-auto sm:flex-wrap sm:items-center sm:justify-start sm:space-x-4 md:block md:space-x-0 md:space-y-3"
         >
           {{ range . }}
             <li class="text-base">

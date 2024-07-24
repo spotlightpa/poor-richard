@@ -36,7 +36,7 @@
 
   {{ range $i, $blocks := .Params.blocks }}
     {{ $id := urlize .title }}
-    <div data-ga-category="blocks" class=" -mx-4 w-full bg-g-1 md:mx-0">
+    <div data-ga-category="blocks" class="-mx-4 w-full bg-g-1 md:mx-0">
       {{ partial "blocks/block" (dict
         "Page" $
         "block" .

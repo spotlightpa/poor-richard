@@ -18,12 +18,12 @@
     x-data="{ selectedCounty: 'Allegheny' }"
   >
     <div
-      class="bg-navy-2 bg-gradient-to-b from-navy-1 via-navy-2 via-95%  to-navy-2 to-100% py-8 md:py-24"
+      class="bg-navy-2 bg-gradient-to-b from-navy-1 via-navy-2 via-95% to-navy-2 to-100% py-8 md:py-24"
     >
       <div class="mx-auto max-w-4xl px-5 lg:px-0">
         {{ with .title }}
           <h2
-            class="lg:mb0 mb-4 text-4xl font-black  uppercase leading-none opacity-40 md:text-6xl"
+            class="lg:mb0 mb-4 text-4xl font-black uppercase leading-none opacity-40 md:text-6xl"
           >
             {{ . }}
           </h2>
@@ -43,14 +43,11 @@
           {{ range site.Data.counties }}
             <use
               xlink:href="#{{ .name }}"
-              class="
-            {{ if index $hasPartner .name }}
+              class="{{ if index $hasPartner .name }}
                 cursor-pointer fill-g-5 hover:fill-blue-4
               {{ else }}
                 fill-g-4
-              {{ end }}
-            stroke-white stroke-2
-            "
+              {{ end }} stroke-white stroke-2"
               transform="{{ .translate }}"
               @click="selectedCounty = '{{ .name }}'"
             />
@@ -77,7 +74,7 @@
     {{ with $partnerCounties }}
       <div class="m-auto w-full justify-center md:p-4 lg:pt-10 xl:px-0">
         <header
-          class="sticky top-0  w-full bg-white shadow md:relative md:shadow-none"
+          class="sticky top-0 w-full bg-white shadow md:relative md:shadow-none"
         >
           <div
             class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"

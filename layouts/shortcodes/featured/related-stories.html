@@ -27,10 +27,10 @@
   }}
   {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
   <script src="{{ $js.RelPermalink }}" type="module"></script>
-  <div x-data="carousel" class=" mx-auto w-full overflow-clip">
-    <nav class=" pt-4 font-sans md:pt-5">
+  <div x-data="carousel" class="mx-auto w-full overflow-clip">
+    <nav class="pt-4 font-sans md:pt-5">
       <h2
-        class=" z-30 w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide text-black md:text-3xl"
+        class="z-30 w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide text-black md:text-3xl"
       >
         <a
           class="tracking-wide text-black no-underline hover:text-blue-9"

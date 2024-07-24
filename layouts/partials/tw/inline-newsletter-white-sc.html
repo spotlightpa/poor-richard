@@ -1,7 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-g-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8
-  "
+  class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-g-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8"
   x-data="{ active: false }"
   @focusin="active = true"
   x-form="newsletters:talkofthetown"
@@ -12,7 +11,7 @@
 >
   {{ partial "newsletter/talkofthetown-hidden.html" . }}
   <h6
-    class=" -ml-6 inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase leading-relaxed text-eyebrow md:-ml-8"
+    class="-ml-6 inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase leading-relaxed text-eyebrow md:-ml-8"
   >
     Newsletters
   </h6>

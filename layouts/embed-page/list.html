@@ -7,7 +7,7 @@
   {{ $hostJS = slice $hostJS | resources.Concat "/embed.js" }}
   {{ $scriptSrc := $hostJS.Permalink }}
   <section class="bg-white" data-ga-category="embed-list">
-    <div class="article-content mx-auto max-w-prose ">
+    <div class="article-content mx-auto max-w-prose">
       {{ range $page := .Pages }}
         {{ if .Param "hide-embed-list" | not }}
           {{ $params := .Param "page-query-params" }}
@@ -18,7 +18,7 @@
             "scriptSrc" $scriptSrc
           }}
           <div
-            class=" mb-10 rounded border border-g-4 bg-g-2 p-5 shadow"
+            class="mb-10 rounded border border-g-4 bg-g-2 p-5 shadow"
             x-data="embedList({
               url: $el.dataset.url,
               scriptSrc: $el.dataset.scriptSrc
@@ -27,7 +27,7 @@
             data-script-src="{{ $scriptSrc }}"
           >
             <h2
-              class=" mb-3 text-2xl font-black leading-none text-black md:text-5xl"
+              class="mb-3 text-2xl font-black leading-none text-black md:text-5xl"
             >
               {{ .Title }}
             </h2>
@@ -35,7 +35,7 @@
               {{ if $params }}
                 <h2 class="mt-5 font-sans text-2xl font-light">Parameters:</h2>
                 {{ range $param := $params }}
-                  <div class=" mb-1 mt-5">
+                  <div class="mb-1 mt-5">
                     <label
                       for="{{ $param.name }}-field"
                       class="font-sans font-black"
@@ -63,7 +63,7 @@
 
               <h3 class="mt-5 font-sans font-black">Code:</h3>
               <div class="mb-5" description="embed code">
-                <div class=" mb-1 mt-5">
+                <div class="mb-1 mt-5">
                   <div class="control">
                     <code
                       contenteditable="true"
@@ -77,7 +77,7 @@
                     <button
                       type="button"
                       title="Copy"
-                      class="m-2 mx-0 flex items-center rounded bg-blue px-5 py-2 font-black tracking-wider text-white  shadow"
+                      class="m-2 mx-0 flex items-center rounded bg-blue px-5 py-2 font-black tracking-wider text-white shadow"
                       @click="copy()"
                     >
                       <svg class="mr-3 h-6 w-6 fill-white">
