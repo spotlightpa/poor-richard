@@ -30,7 +30,7 @@
     @click.stop
     @keydown.escape="isOpen = false"
   >
-    <div class=" mt-36 w-full overflow-y-scroll pt-11">
+    <div class="mt-36 w-full overflow-y-scroll pt-11">
       <div
         style="background-color: {{ $actionColor }};"
         class="w-full border-b-2 border-t-2 font-sans"
@@ -40,7 +40,7 @@
         >
           <button
             style="color: {{ $actionColor }};"
-            class="col-start-6 flex text-g-4  md:col-start-10 md:row-start-1"
+            class="col-start-6 flex text-g-4 md:col-start-10 md:row-start-1"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -58,8 +58,7 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
-          bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-form="newsletters:multi"
             x-data="{ hasFocused: false }"
             action="{{ site.Param `newsletters-action` }}"
@@ -108,7 +107,7 @@
               </div>
             {{ end }}
             <header class="mx-5 mt-6 md:col-start-1 md:col-end-3">
-              <h2 class=" text-2xl font-extrabold md:text-3xl lg:text-4xl">
+              <h2 class="text-2xl font-extrabold md:text-3xl lg:text-4xl">
                 Investigative Journalism for Pennsylvania
               </h2>
               <p class="mt-2 max-w-lg text-xl">
@@ -122,7 +121,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                class="box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -131,14 +130,14 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+                class="box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                 type="submit"
               >
                 Sign up
               </button>
             </div>
             <div
-              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
+              class="col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
               x-cloak
               x-show="hasFocused"
               x-transition:enter="transition ease-in-out duration-300"
@@ -152,7 +151,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="papost"
                     value="1"
                     checked
@@ -167,7 +166,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="investigator"
                     value="1"
                     checked
@@ -183,7 +182,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="palocal"
                     value="1"
                     checked
@@ -197,7 +196,7 @@
             </div>
           </form>
           <p
-            class=" col-span-6 col-start-1 flex leading-tight md:col-span-7 md:col-start-3"
+            class="col-span-6 col-start-1 flex leading-tight md:col-span-7 md:col-start-3"
           >
             <button
               class="flex-initial py-3 pr-5 text-black underline md:mr-5"
@@ -208,7 +207,7 @@
               I’m already a subscriber
             </button>
             <button
-              class=" flex-initial py-4 pr-5 text-black  underline md:mr-5"
+              class="flex-initial py-4 pr-5 text-black underline md:mr-5"
               aria-label="close"
               type="button"
               @click="isOpen = false"

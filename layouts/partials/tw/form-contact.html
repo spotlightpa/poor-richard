@@ -55,7 +55,7 @@
     class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
   >
     <header class="md:col-span-4 md:col-start-1">
-      <h2 class=" text-2xl font-black leading-none text-black md:text-5xl">
+      <h2 class="text-2xl font-black leading-none text-black md:text-5xl">
         {{ $hed }}
       </h2>
       <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
@@ -87,7 +87,7 @@
           <h3 class="flex-[0_0_100%] font-sans font-black">From</h3>
 
           <p
-            class=" relative flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+            class="relative flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
           >
             <label class="hidden" for="{{ $idFrom }}">From</label>
             <input
@@ -128,7 +128,7 @@
           </p>
         </div>
 
-        <div class=" mb-3">
+        <div class="mb-3">
           {{ with $recipient }}
             <input type="hidden" name="CC" value="{{ . }}" />
           {{ else }}
@@ -189,7 +189,7 @@
               >
               <input
                 id="{{ $idAnonymous }}"
-                class=" mr-3 h-6 w-6 rounded border border-g-4 p-1 accent-yellow hover:accent-yellow-4"
+                class="mr-3 h-6 w-6 rounded border border-g-4 p-1 accent-yellow hover:accent-yellow-4"
                 type="checkbox"
                 name="anonymous"
               />

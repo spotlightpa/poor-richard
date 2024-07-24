@@ -28,14 +28,14 @@
           <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
         {{ end }}
         {{ with .Content }}
-          <div class=" article-content">
+          <div class="article-content">
             {{ . }}
           </div>
         {{ end }}
       </div>
     {{ end }}
     {{ with .Page.RenderString (.Param "newsletter") }}
-      <div class=" font-sans">
+      <div class="font-sans">
         {{ . }}
       </div>
     {{ end }}
@@ -45,7 +45,7 @@
     {{ with .Page.RenderString (.Param "supplemental") }}
 
       <article
-        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -57,7 +57,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class=" w-full bg-g-0"
+        class="w-full bg-g-0"
       >
         {{ partial "blocks/block" (dict
           "Page" $
@@ -248,7 +248,7 @@
         {{ with $author.email }}
           <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
-              <span class=" mr-2 h-4 w-4">
+              <span class="mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
                   {{ partial "helper/svg.html" "email" }}
                 </svg>
@@ -270,7 +270,7 @@
         {{ with $author.twitter }}
           <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="inline-flex items-center">
-              <span class=" mr-2 h-4 w-4">
+              <span class="mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1">
                   {{ partial "helper/svg.html" "twitter" }}
                 </svg>
@@ -292,7 +292,7 @@
         {{ with $author.tel }}
           <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
-              <span class=" mr-2 h-4 w-4">
+              <span class="mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
                   {{ partial "helper/svg.html" "phone" }}
                 </svg>
@@ -312,7 +312,7 @@
         {{ with $author.signal }}
           <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
-              <span class=" mr-2 h-4 w-4">
+              <span class="mr-2 h-4 w-4">
                 <svg viewBox="0 0 1 1" aria-hidden="true">
                   {{ partial "helper/svg.html" "chat" }}
                 </svg>

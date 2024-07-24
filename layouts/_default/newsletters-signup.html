@@ -57,11 +57,7 @@
           {{ range $i, $page := $pages }}
             {{ $checked := eq $i 0 }}
             <div
-              class="
-                mx-2 flex cursor-pointer p-5 transition-all
-                hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow
-                has-[:checked]:rounded has-[:checked]:bg-g-1
-                md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
+              class="mx-2 flex cursor-pointer p-5 transition-all hover:scale-105 hover:rounded hover:border-g-4 hover:bg-g-2 hover:shadow has-[:checked]:rounded has-[:checked]:bg-g-1 md:mx-0 md:flex-[0_0_calc(50%_-_40px)]"
               x-data="{ isChecked: {{ $checked }} }"
             >
               {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
@@ -113,7 +109,7 @@
                       <div class="order-1 text-sm font-bold tracking-widest">
                         <span x-show="isChecked">Selected</span>
                         <span
-                          class=" hidden: isChecked"
+                          class="hidden: isChecked"
                           x-cloak
                           x-show="!isChecked"
                           >Click to select</span
@@ -148,7 +144,7 @@
         </nav>
       </div>
       <div
-        class=" sticky -mx-4 w-screen animate-become-sticky bg-g-2 shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
+        class="sticky -mx-4 w-screen animate-become-sticky bg-g-2 shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
       >
         <div
           class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
@@ -160,7 +156,7 @@
 
 
           <header class="md:col-span-4 md:col-start-1">
-            <h2 class=" text-xl font-black leading-none text-black">
+            <h2 class="text-xl font-black leading-none text-black">
               Sign up for free
             </h2>
             <div

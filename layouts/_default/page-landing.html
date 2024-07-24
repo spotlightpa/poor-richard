@@ -19,10 +19,7 @@
               max-w-prose
             {{ else }}
               md:w-7/12
-            {{ end }}
-            mx-auto
-            w-full max-w-prose pb-2 font-sans text-4xl font-bold leading-tight text-black md:w-7/12 lg:text-5xl
-          "
+            {{ end }} mx-auto w-full max-w-prose pb-2 font-sans text-4xl font-bold leading-tight text-black md:w-7/12 lg:text-5xl"
           >
             {{ .Title }}
           </h1>
@@ -53,7 +50,7 @@
 
     {{ with .Page.RenderString (.Param "supplemental") }}
       <article
-        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -100,7 +97,7 @@
 
 {{ define "before-footer" }}
   {{ with .Page.RenderString (.Param "donate") }}
-    <div class=" bg-white font-sans">
+    <div class="bg-white font-sans">
       {{ . }}
     </div>
   {{ else }}

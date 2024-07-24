@@ -1,8 +1,4 @@
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Inline Newsletter Signup
   </h3>
@@ -17,15 +13,11 @@
   }}
 </div>
 
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4 font-sans">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Inline Newsletter Box Lg Signup
   </h3>
-  <div class=" mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw_+_50%)]">
     {{ partial "tw/newsletter-box-lg.html" (dict
       "newsletterHed" "Newsletter Full Box"
       "newsletterDek" "Customize subscriber list via `newsletterField` option. Slide-down select list option featured"
@@ -36,11 +28,7 @@
   </div>
 </div>
 
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4 font-sans">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Sidebar Newsletter Signup
   </h3>
@@ -59,15 +47,11 @@
   </div>
 </div>
 
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4 font-sans">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Inline Newsletter Full Signup
   </h3>
-  <div class=" mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw_+_50%)]">
     {{ partial "tw/newsletter-full.html" (dict
       "image" "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
       "dek" "Be the first to know about our latest investigative and accountability journalism about Penn State University. "
@@ -80,11 +64,7 @@
     }}
   </div>
 </div>
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4 font-sans">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Newsletter Javascript Embed
   </h3>
@@ -95,11 +75,7 @@
     data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?eyebrow=Custom%20Eyebrow&button=Customizable%20CTA&cta=Teaser%20Text%20of%20any%20length."
   ></div>
 </div>
-<div
-  class="
-         mt-10 space-y-4 border-b border-g-4 p-4 font-sans
-      "
->
+<div class="mt-10 space-y-4 border-b border-g-4 p-4 font-sans">
   <h3 class="mb-8 font-sans text-3xl italic leading-none">Ribbon Modal</h3>
 
   {{ $idEmail := partial "helper/new-id" . | printf "modal-newsletter-%s" }}
@@ -107,8 +83,8 @@
   {{ $actionColor := "#FFCB05" }}
 
 
-  <div class=" mx-[calc(-50vw_+_50%)]">
-    <div class=" mt-36 w-full overflow-y-scroll pt-11">
+  <div class="mx-[calc(-50vw_+_50%)]">
+    <div class="mt-36 w-full overflow-y-scroll pt-11">
       <div
         style="background-color: {{ $actionColor }};"
         class="w-full border-b-2 border-t-2 font-sans"
@@ -118,7 +94,7 @@
         >
           <button
             style="color: {{ $actionColor }};"
-            class="col-start-6 flex text-g-4  md:col-start-10 md:row-start-1"
+            class="col-start-6 flex text-g-4 md:col-start-10 md:row-start-1"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -135,8 +111,7 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2
-          bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-data="{ hasFocused: false }"
             action="{{ site.Param `newsletters-action` }}"
             method="post"
@@ -184,7 +159,7 @@
               </div>
             {{ end }}
             <header class="mx-5 mt-6 md:col-start-1 md:col-end-3">
-              <h2 class=" text-2xl font-extrabold md:text-3xl lg:text-4xl">
+              <h2 class="text-2xl font-extrabold md:text-3xl lg:text-4xl">
                 Investigative Journalism for Pennsylvania
               </h2>
               <p class="mt-2 max-w-lg text-xl">
@@ -198,7 +173,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class=" box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                class="box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -207,14 +182,14 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class=" box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+                class="box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                 type="submit"
               >
                 Sign Up
               </button>
             </div>
             <div
-              class=" col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
+              class="col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
               x-cloak
               x-show="hasFocused"
               x-transition:enter="transition ease-in-out duration-300"
@@ -228,7 +203,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="papost"
                     value="1"
                     checked
@@ -242,7 +217,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="investigator"
                     value="1"
                     checked
@@ -257,7 +232,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class=" mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
+                    class="mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4"
                     name="palocal"
                     value="1"
                     checked
@@ -270,7 +245,7 @@
             </div>
           </form>
           <p
-            class=" col-span-6 col-start-1 flex leading-tight md:col-span-7 md:col-start-3"
+            class="col-span-6 col-start-1 flex leading-tight md:col-span-7 md:col-start-3"
           >
             <button
               class="flex-initial py-3 pr-5 text-black underline md:mr-5"
@@ -281,7 +256,7 @@
               I’m already a subscriber
             </button>
             <button
-              class=" flex-initial py-4 pr-5 text-black  underline md:mr-5"
+              class="flex-initial py-4 pr-5 text-black underline md:mr-5"
               aria-label="close"
               type="button"
               @click="isOpen = false"

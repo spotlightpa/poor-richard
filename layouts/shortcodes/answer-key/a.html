@@ -23,14 +23,11 @@
   </div>
   {{ with $answer }}
     <div
-      class="
-      {{ if ( eq $answer "Yes") }}
+      class="{{ if ( eq $answer "Yes") }}
         bg-election-green border-election-green-darker text-g-1 border-2
       {{ else }}
         bg-yellow border-yellow-5 text-yellow-9 border-2
-      {{ end }} flex w-20 justify-center rounded px-5 py-1 text-base font-bold
-      uppercase
-    "
+      {{ end }} flex w-20 justify-center rounded px-5 py-1 text-base font-bold uppercase"
     >
       {{ . }}
     </div>

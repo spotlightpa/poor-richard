@@ -31,7 +31,7 @@
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "spotlight" }}
         </svg>
-        <svg class=" h-8 w-8 py-[2px] sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+        <svg class="h-8 w-8 py-[2px] sm:h-12 sm:w-12 lg:h-14 lg:w-14">
           <title>Spotlight PA Home</title>
           {{ partial "helper/svg.html" "pa" }}
         </svg>
@@ -47,11 +47,7 @@
       <div
         id="hamburger-menu"
         x-cloak
-        class="
-        max-w-screen absolute left-2 right-2 z-30 -mt-2 max-h-screen overflow-x-hidden rounded border border-g-5 bg-white py-12 after:absolute after:left-0
-        after:right-0 after:top-0 after:z-30 after:h-20 after:bg-gradient-to-b
-        after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:left-0 lg:right-0
-        "
+        class="max-w-screen absolute left-2 right-2 z-30 -mt-2 max-h-screen overflow-x-hidden rounded border border-g-5 bg-white py-12 after:absolute after:left-0 after:right-0 after:top-0 after:z-30 after:h-20 after:bg-gradient-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:left-0 lg:right-0"
         :class="{ 'hidden': !isOpen, '': isOpen }"
         x-trap="isOpen"
         role="menu"
@@ -169,13 +165,10 @@
     >
       <a
         href="/newsletters"
-        class="
-          group hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9
-          sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4
-          "
+        class="group hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9 sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide  md:text-sm md:leading-none"
+          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
         >
           <svg
             class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
@@ -189,10 +182,7 @@
       <a
         data-sf-campaign="701Dn000000YgosIAC"
         data-ga-category="donate"
-        class="
-          group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9
-          sm:justify-center md:-my-1 md:p-2 lg:px-4
-          "
+        class="group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9 sm:justify-center md:-my-1 md:p-2 lg:px-4"
         href="/donate"
       >
         <span
@@ -223,10 +213,7 @@
     </nav>
 
     <p
-      class="
-      flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3
-      text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base
-      "
+      class="flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base"
       x-show="atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
@@ -250,16 +237,14 @@
     x-transition:leave-end="opacity-0 scale-10"
   >
     <div
-      class="
-      relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
+      class="relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
     >
       <ul
         class="ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"
       >
         {{ range site.Menus.main }}
           <li
-            class="
-            flex h-max w-1/2 items-center text-sm leading-none sm:w-auto sm:justify-center"
+            class="flex h-max w-1/2 items-center text-sm leading-none sm:w-auto sm:justify-center"
           >
             <a
               class="block flex-[0_0_auto] font-bold uppercase hover:underline hover:underline-offset-2"
@@ -285,9 +270,7 @@
 
 {{ define "nav-menu-item" }}
   <a
-    class="
-      flex w-full flex-1 justify-start border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2
-      sm:block sm:h-11 sm:capitalize"
+    class="flex w-full flex-1 justify-start border-b py-4 font-bold uppercase hover:underline hover:underline-offset-2 sm:block sm:h-11 sm:capitalize"
     href="{{ .URL }}"
     data-ga-category="item"
   >

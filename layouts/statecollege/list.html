@@ -12,7 +12,7 @@
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
 
   {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-    <div class=" bg-black">
+    <div class="bg-black">
       <div class="mx-auto max-w-screen-lg py-12">
         {{ partial "tw/promo-topperarticle.html" $topperStories }}
       </div>
@@ -58,7 +58,7 @@
       class="mx-auto flex w-full max-w-screen-xl justify-between border-b border-black md:col-span-3"
     >
       <h2
-        class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide "
+        class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide"
       >
         {{ with $riverTitle }}
           {{ . }}

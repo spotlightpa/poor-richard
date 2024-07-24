@@ -33,14 +33,14 @@
           <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
         {{ end }}
         {{ with .Content }}
-          <div class=" article-content">
+          <div class="article-content">
             {{ . }}
           </div>
         {{ end }}
       </div>
     {{ end }}
     {{ with .Page.RenderString (.Param "newsletter") }}
-      <div class=" font-sans">
+      <div class="font-sans">
         {{ . }}
       </div>
     {{ end }}
@@ -50,7 +50,7 @@
     {{ with .Page.RenderString (.Param "supplemental") }}
 
       <article
-        class=" article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -62,7 +62,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class=" w-full"
+        class="w-full"
       >
         {{ partial "blocks/block" (dict
           "Page" $
@@ -87,7 +87,7 @@
           How the Candidates Stack Up
         </h2>
         <p
-          class="mt-2 text-pretty font-sans text-dek sm:text-base  sm:leading-relaxed md:text-lg lg:text-xl"
+          class="mt-2 text-pretty font-sans text-dek sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
         >
           Here is how each question and answer in the quiz aligns with each
           candidate.
@@ -145,7 +145,7 @@
 
 {{ define "before-footer" }}
   {{ with .Page.RenderString (.Param "donate") }}
-    <div class=" bg-white font-sans">
+    <div class="bg-white font-sans">
       {{ . }}
     </div>
   {{ else }}
