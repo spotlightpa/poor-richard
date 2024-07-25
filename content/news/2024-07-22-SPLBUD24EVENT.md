@@ -37,9 +37,11 @@ Join him on Thursday, July 25 from 6-7 p.m. on Zoom for a discussion on the majo
 
 - <strong>Stephen Caruso,</strong> Capitol reporter, Spotlight PA
 
-- <strong>Kristina Moon</strong>, senior attorney, Education Law Center
+- <strong>Kristina Moon,</strong> senior attorney, Education Law Center
 
 - <strong>Mustafa Rashed,</strong> president &amp; CEO, Bellevue Strategies
+
+- <strong>Stan Saylor,</strong> former House GOP appropriations chair
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_RNTwYiQ9QuuDy7A2hwX_-A"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
 
