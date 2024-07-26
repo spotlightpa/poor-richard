@@ -20,7 +20,7 @@ image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 hed = "Spotlight PA Berks Project Report"
 body = "Blueprint for Berks, a 12-month community research project, engaged Berks residents in a series of local discussions and an expansive survey to identify information gaps, coverage needs, and news preferences in the local market."
 actionText = "Get the report →"
-actionUrl = "https://files.data.spotlightpa.org/uploads/01k7/pznh/blueprint-for-berks-full-report.pdf"
+actionUrl = "https://files.data.spotlightpa.org/uploads/01ka/7ev6/blueprint-for-berks-full-report.pdf"
 
 [[blocks.entries]]
 image = "external/271g68k54vbhc5t32ctj0yf24g.jpeg"
