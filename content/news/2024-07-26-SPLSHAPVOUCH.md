@@ -1,4 +1,5 @@
 +++
+aliases = ["/josh-shapiro-vice-president-school-choice-voucher/"]
 authors = ["Stephen Caruso", "Angela Couloumbis", "Katie Meyer"]
 blurb = "Shapiro, believed to be on Kamala Harris’ vice president shortlist, did not express public support for school vouchers until running for governor."
 byline = "Stephen Caruso, Angela Couloumbis, and Katie Meyer of Spotlight PA"
