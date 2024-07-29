@@ -1,7 +1,7 @@
 +++
-blurb = "Join us July 25 for a free panel on what did — and didn’t — make it into Pennsylvania’s new budget."
+blurb = "Spotlight PA hosted a free panel on what did — and didn’t — make it into Pennsylvania’s new budget."
 byline = "Spotlight PA Staff"
-description = "Join us July 25 for a free panel on Pennsylvania’s budget winners and losers."
+description = "Spotlight PA hosted a free panel on Pennsylvania’s budget winners and losers."
 event-date = 2024-07-25T18:00:00-04:00
 event-title = "Budget Breakdown"
 event-url = "https://zoom.us/webinar/register/WN_RNTwYiQ9QuuDy7A2hwX_-A#/"
@@ -17,7 +17,7 @@ pinned = false
 published = 2024-07-22T15:38:51.151-04:00
 slug = "pennsylvania-budget-josh-shapiro-legislature-education-funding"
 suppress-date = false
-title = "Spotlight PA Event: What Pennsylvania’s new $47.6 billion budget means for you"
+title = "WATCH: What Pennsylvania’s new $47.6 billion budget means for you"
 title-tag = "Live event: Learn how PA’s new budget benefits you"
 topics = ["Events"]
 twitter-title = "Live event: Learn how PA’s new budget benefits you"
@@ -31,9 +31,9 @@ Still, <a href="https://www.spotlightpa.org/news/2024/07/pennsylvania-budget-pub
 
 For more insight on the spending plan, Spotlight PA’s Capitol reporter Stephen Caruso is hosting a live panel.
 
-Join him on Thursday, July 25 from 6-7 p.m. on Zoom for a discussion on the major components of the budget, the politics that shaped the deal, and what was left on the cutting room floor.
+Spotlight PA held a free panel discussion on the major components of the budget, the politics that shaped the deal, and what was left on the cutting room floor.
 
-<strong>Our panelists include:</strong>
+<strong>Our panelists were:</strong>
 
 - <strong>Stephen Caruso,</strong> Capitol reporter, Spotlight PA
 
@@ -43,7 +43,7 @@ Join him on Thursday, July 25 from 6-7 p.m. on Zoom for a discussion on the majo
 
 - <strong>Stan Saylor,</strong> former House GOP appropriations chair
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_RNTwYiQ9QuuDy7A2hwX_-A"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
+{{<embed/raw srcdoc="&lt;div style=&#34;padding:56.25% 0 0 0;position:relative;&#34;&gt;&lt;iframe src=&#34;https://player.vimeo.com/video/990627534?h=89f8de8242&amp;color=ffcb05&amp;title=0&amp;byline=0&#34; style=&#34;position:absolute;top:0;left:0;width:100%;height:100%;&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&#34;https://player.vimeo.com/api/player.js&#34;&gt;&lt;/script&gt;&#10;&lt;p&gt;&lt;a href=&#34;https://vimeo.com/990627534&#34;&gt;">}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
