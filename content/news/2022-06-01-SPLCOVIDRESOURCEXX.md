@@ -4,6 +4,7 @@ arc-id = "ETDW7CK7BREMRHKRK3QK6MJX3Y"
 blurb = "Where to find reliable data and information about Pennsylvania’s COVID response, including guidance on bivalent booster shots"
 byline = "Spotlight PA Staff"
 description = "Where to find reliable information about Pennsylvania’s COVID response, including updated booster shots."
+feed-exclude = false
 image = "external/c37n0b09pb7hb59d9z7tadgyc0.jpeg"
 image-credit = "Dan Nott / For Spotlight PA"
 image-description = "Illustration of Pennsylvania COVID guide to finding resources on cases, vaccines, and tests."
@@ -14,6 +15,7 @@ kicker = "Coronavirus"
 modal-exclude = false
 no-index = false
 og-title = "Pa. COVID updates: Your guide to finding resources on cases, vaccines, and tests"
+pinned = false
 published = 2022-06-01T14:22:00-04:00
 slug = "pennsylvania-covid-dashboard-updates-guides-resources-cases-vaccines-tests"
 suppress-date = true
@@ -75,7 +77,7 @@ You can find locations offering vaccines near you by entering your ZIP code at <
 
 Most retail pharmacies carry at-home COVID tests.
 
-If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
+If you’re looking for a PCR test, check with your local pharmacy, urgent care center, health clinic, doctor’s office, or hospital. <a href="https://web.archive.org/20200510105141/https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Find a community-based testing site near you here</a>.
 
 The state health department also runs <a href="https://web.archive.org/20220101051324/https://www.health.pa.gov/topics/disease/coronavirus/Pages/Public%20Testing.aspx">public testing sites in several counties</a>, offering both PCR tests and rapid antigen tests.
 
