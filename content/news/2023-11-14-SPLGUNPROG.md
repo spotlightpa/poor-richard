@@ -3,12 +3,14 @@ authors = ["Sarah Anne Hughes", "Stephen Caruso"]
 blurb = "Legislative Democrats and gun control advocates are pushing the Pennsylvania Senate to take up bills, but a GOP leader said she has no plans to."
 byline = "Sarah Anne Hughes of Spotlight PA and Stephen Caruso of Spotlight PA"
 description = "Gun control legislation has been advanced by the Democratic-controlled Pennsylvania House but not considered by the GOP-led Senate."
+feed-exclude = false
 image = "2023/11/01jn-50dp-ykke-eh1x.jpeg"
 image-credit = "Stephen Caruso / Spotlight PA"
 image-description = "An installation at the Pennsylvania Capitol shows how many days have passed since the House passed gun control bills."
 internal-id = "SPLGUNPROG"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-11-14T05:00:00.058-05:00
 slug = "pennsylvania-gun-control-red-flag-law-background-checks-ceasefire-campaign"
 suppress-date = false
@@ -33,7 +35,7 @@ The latter bill is known as a “red flag” law and would create what are known
 
 The state Senate, which Republicans control, has not considered either piece of legislation and likely won&#39;t. In a statement, state Sen. Lisa Baker (R., Luzerne), chair of the chamber’s Judiciary Committee, said she has &#34;no plans to advance the bills.&#34;
 
-In fall 2019, Baker’s committee held hearings on &#34;<a href="https://www.senatorbaker.com/2019/09/23/senate-judiciary-committee-holding-hearings-on-behavioral-health-second-amendment-rights-and-other-gun-related-issues/">Behavioral Health, Second Amendment Rights, and other Gun-Related Issues</a>,&#34; after which Baker said she solicited proposals that would be “constitutional, enforceable, and practical.” The proposals advanced by Democrats this year, she continued, do not meet that definition.
+In fall 2019, Baker’s committee held hearings on &#34;<a href="https://web.archive.org/20230326193728/https://www.senatorbaker.com/2019/09/23/senate-judiciary-committee-holding-hearings-on-behavioral-health-second-amendment-rights-and-other-gun-related-issues/">Behavioral Health, Second Amendment Rights, and other Gun-Related Issues</a>,&#34; after which Baker said she solicited proposals that would be “constitutional, enforceable, and practical.” The proposals advanced by Democrats this year, she continued, do not meet that definition.
 
 &#34;I believe the issue of helping individuals in crisis would be more appropriately addressed through a modernization of the mental health procedures law as it relates to gun rights to ensure those in need of treatment receive it and that due process is maintained,&#34; Baker said in a statement.
 
