@@ -1,33 +1,24 @@
 +++
 arc-id = "HJVJRNYYKVG2LNP72KA4A7XOFA"
-internal-id = "SPLBALLOTXX"
-internal-budget = ""
-image = "external/0k32ktx37ykr9b92yvzyqrfbtr.jpeg"
-image-description = "The Wolf administration has forcefully pushed back on the claim that it can only mandate business closures when a disaster declaration is in place, arguing that power resides with the state’s health secretary."
-image-caption = ""
-image-credit = "Commonwealth Media Services"
-image-size = ""
-published = 2021-05-19T14:20:04Z
-slug = "pa-primary-2021-ballot-question-disaster-declaration-results"
 authors = ["Sarah Anne Hughes"]
-byline = "Sarah Anne Hughes of Spotlight PA"
-title = "Voters back curtailing Wolf’s emergency powers in win for GOP lawmakers"
-subtitle = ""
-description = "The votes represent a victory for Republican lawmakers in what is widely seen as a referendum on the Wolf administration’s response to the coronavirus pandemic."
 blurb = "The votes represent a victory for Republican lawmakers in what is widely seen as a referendum on the Wolf administration’s response to the coronavirus pandemic."
+byline = "Sarah Anne Hughes of Spotlight PA"
+description = "The votes represent a victory for Republican lawmakers in what is widely seen as a referendum on the Wolf administration’s response to the coronavirus pandemic."
+feed-exclude = false
+image = "external/0k32ktx37ykr9b92yvzyqrfbtr.jpeg"
+image-credit = "Commonwealth Media Services"
+image-description = "The Wolf administration has forcefully pushed back on the claim that it can only mandate business closures when a disaster declaration is in place, arguing that power resides with the state’s health secretary."
+internal-id = "SPLBALLOTXX"
 kicker = "Elections"
-topics = ["Elections", "The Capitol", "Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2021-05-19T10:20:04-04:00
+slug = "pa-primary-2021-ballot-question-disaster-declaration-results"
+suppress-date = false
+suppress-featured = false
+title = "Voters back curtailing Wolf’s emergency powers in win for GOP lawmakers"
+topics = ["Elections", "The Capitol", "Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -50,7 +41,7 @@ Perhaps no decisions by the Wolf administration were as reviled in the GOP-contr
 
 The Wolf administration forcefully pushed back on the argument that it can only mandate business closures when a disaster declaration is in place, saying that power resides with the state’s health secretary.
 
-Wolf administration officials argued that inserting lawmakers into the process would take away flexibility when it’s most needed. These emergency orders are <a href="https://www.pema.pa.gov/Governor-Proclamations/Pages/default.aspx">traditionally issued</a> during weather-related events like floods or snowstorms so state officials may temporarily waive regulations, allow agencies to purchase supplies without going through the regular procurement process, and transfer money to cover relief expenses.
+Wolf administration officials argued that inserting lawmakers into the process would take away flexibility when it’s most needed. These emergency orders are <a href="https://web.archive.org/20210209091327/https://www.pema.pa.gov/Governor-Proclamations/Pages/default.aspx">traditionally issued</a> during weather-related events like floods or snowstorms so state officials may temporarily waive regulations, allow agencies to purchase supplies without going through the regular procurement process, and transfer money to cover relief expenses.
 
 “The impact of these amendments should not be viewed solely through the context of the COVID-19 pandemic, as they have far-reaching impacts for all future disasters regardless of cause,” Randy Padfield, director of the Pennsylvania Emergency Management Agency, said earlier this month.
 
