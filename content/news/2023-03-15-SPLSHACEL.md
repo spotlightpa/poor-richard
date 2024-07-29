@@ -4,6 +4,7 @@ authors = ["Kate Huangpu"]
 blurb = "Pennsylvania levies some of the highest taxes on cell phones in the country. Shapiro wants to eliminate two, which would fulfill a campaign promise."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Democratic Governor Josh Shapiro is pitching a plan to cut Pennsylvania’s high cell phone taxes."
+feed-exclude = false
 image = "external/qzh2h7xdhb61ww1y6a8a00s98r.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "PA Gov. Josh Shapiro’s plan would eliminate 11% in cell phone taxes."
@@ -11,6 +12,7 @@ internal-budget = "Breaking down Shapiro’s plan to eliminate two of Pa.’s ce
 internal-id = "SPLSHACEL"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-03-15T05:00:00-04:00
 series = ["Shapiro's Promises"]
 slug = "pa-cell-phone-taxes-josh-shapiro-budget"
@@ -31,7 +33,7 @@ Citing a desire to lower daily costs in the state, Shapiro wants to eliminate bo
 
 “There are commonsense solutions we can implement to take some of that burden off their shoulders,” Shapiro said in his budget address. “That’s real money back in their pockets.”
 
-At the same time, the governor has proposed increasing the <a href="https://www.pema.pa.gov/911-Program/Surcharge-Remittance/Pages/default.aspx#:~:text=Pennsylvania%20911%20Surcharge,by%20a%20provider%20or%20seller.">monthly fee phone users pay</a> to fund statewide 911 services and tying future increases to the inflation rate.
+At the same time, the governor has proposed increasing the <a href="https://web.archive.org/20230126110758/https://www.pema.pa.gov/911-Program/Surcharge-Remittance/Pages/default.aspx#:~:text=Pennsylvania%20911%20Surcharge,by%20a%20provider%20or%20seller.">monthly fee phone users pay</a> to fund statewide 911 services and tying future increases to the inflation rate.
 
 In order to implement the plan, Shapiro will need consent from the Democratic-controlled state House and the Republican-controlled state Senate. The deadline for a spending deal is June 30.
 
