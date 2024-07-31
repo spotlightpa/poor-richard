@@ -2,10 +2,11 @@
 
 
 <div class="flourish-embed flourish-table my-8" data-src="{{ $src }}"></div>
+
 {{ if page.Scratch.Get "has-flourish" | not }}
   {{ page.Scratch.Set "has-flourish" true }}
   <script
-    type="module"
+    defer
     src="https://public.flourish.studio/resources/embed.js"
   ></script>
 {{ end }}
