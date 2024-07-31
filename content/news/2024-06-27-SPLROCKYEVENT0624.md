@@ -44,7 +44,7 @@ Spotlight PA held a free panel discussion on Pennsylvania’s private water indu
 
 - <strong>Rikardo Hull,</strong> chief operating officer, National Association of Water Companies
 
-{{<embed/raw srcdoc="&lt;iframe src=&#34;https://player.vimeo.com/video/987122308?h=e1c4d233eb&amp;color=ffcb05&amp;title=0&amp;byline=0&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#10;&lt;p&gt;&lt;a href=&#34;https://vimeo.com/987122308&#34;&gt;">}}
+{{<vimeo id="987122308" secret="e1c4d233eb" >}}
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
