@@ -2,12 +2,10 @@
 {{ $secret := .Get "secret" | htmlUnescape }}
 
 
-<div class="relative my-8 aspect-video">
-  <iframe
-    class="absolute left-0 top-0 h-full w-full overflow-hidden"
-    src="https://player.vimeo.com/video/{{ $id }}?color=ffcb05&title=0&byline=0
+<iframe
+  class="my-8 aspect-video w-full"
+  src="https://player.vimeo.com/video/{{ $id }}?color=ffcb05&title=0&byline=0
     {{- with $secret -}}
-      &h={{ . }}
-    {{- end -}}"
-  ></iframe>
-</div>
+    &h={{ . }}
+  {{- end -}}"
+></iframe>
