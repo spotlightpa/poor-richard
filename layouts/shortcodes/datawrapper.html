@@ -1,0 +1,30 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $height := .Get "height" | htmlUnescape }}
+
+
+<iframe
+  aria-label="Chart"
+  src="{{ $src }}"
+  scrolling="no"
+  frameborder="0"
+  class="my-8 w-0 min-w-full border-none"
+  height="{{ $height }}"
+  data-external="1"
+></iframe>
+
+{{ if page.Scratch.Get "has-datawrapper" | not }}
+  {{ page.Scratch.Set "has-datawrapper" true }}
+  <script type="module">
+    window.addEventListener("message", function (a) {
+      if (void 0 !== a.data["datawrapper-height"]) {
+        var e = document.querySelectorAll("iframe");
+        for (var t in a.data["datawrapper-height"])
+          for (var r = 0; r < e.length; r++)
+            if (e[r].contentWindow === a.source) {
+              var i = a.data["datawrapper-height"][t] + "px";
+              e[r].style.height = i;
+            }
+      }
+    });
+  </script>
+{{ end }}

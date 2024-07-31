@@ -1,0 +1,11 @@
+{{ $id := .Get "id" | htmlUnescape }}
+{{ $secret := .Get "secret" | htmlUnescape }}
+
+
+<iframe
+  class="my-8 aspect-video w-full"
+  src="https://player.vimeo.com/video/{{ $id }}?color=ffcb05&title=0&byline=0
+    {{- with $secret -}}
+    &h={{ . }}
+  {{- end -}}"
+></iframe>
