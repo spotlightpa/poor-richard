@@ -22,7 +22,7 @@ topics = ["News Quiz"]
 
 In this week’s news quiz: In search of a 2024 running mate, Olympics in Paris, energy sources, and a costly IT outage.
 
-{{<embed/raw srcdoc="&lt;div data-tf-live=&#34;01J3JMWABVSJJDF28VN60ZP3ME&#34;&gt;&lt;/div&gt;&lt;script src=&#34;//embed.typeform.com/next/embed.js&#34;&gt;&lt;/script&gt;">}}
+{{<typeform id="01J3JMWABVSJJDF28VN60ZP3ME" >}}
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!
 
