@@ -2,18 +2,20 @@
 authors = ["Angela Couloumbis", "Katie Meyer"]
 blurb = "The settlement, paid for using taxpayer dollars, came after a top aide to Shapiro was accused of sexually harassing a female subordinate."
 byline = "Angela Couloumbis of Spotlight PA and Katie Meyer of Spotlight PA"
-description = "A top aide to Pennsylvania Gov. Josh Shapiro was accused of sexually harassing a female subordinate and later resigned."
+description = "Mike Vereb, a top aide to Pennsylvania Gov. Josh Shapiro, was accused of sexually harassing a female subordinate and later resigned."
+feed-exclude = false
 image = "2023/10/01jk-5943-a0eb-k5qb.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania Gov. Josh Shapiro speaks at a small business summit in Harrisburg."
 internal-id = "SPLSETTAMT"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-10-20T15:31:46.804-04:00
 slug = "pennsylvania-josh-shapiro-mike-vereb-sexual-harassment-settlement-amount"
 suppress-date = false
 title = "Gov. Josh Shapiro’s office agrees to pay $295K to settle sexual harassment allegation against top aide"
-title-tag = "Josh Shapiro’s office to pay $295K to settle harassment claim"
+title-tag = "Shapiro’s office to pay $295K to settle Vereb harassment claim"
 topics = ["The Capitol", "Josh Shapiro"]
 +++
 
