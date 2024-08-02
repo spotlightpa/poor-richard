@@ -3,12 +3,14 @@ authors = ["Wyatt Massey"]
 blurb = "A monthslong funding debate in the Pennsylvania legislature resulted in greater transparency rules for state-related universities and Penn State’s new accountability report."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "PA’s budget impasse resulted in new transparency requirements for state-related universities and Penn State’s new accountability report."
+feed-exclude = false
 image = "external/92gvdwrezf0v01cb3h9r784cqm.jpeg"
 image-credit = "Georgianna Sutherland / For Spotlight PA"
 image-description = "Old Main on Penn State’s University Park campus"
 internal-id = "SPLPSUINSIGHT"
 kicker = "Penn State"
 modal-exclude = false
+pinned = false
 published = 2023-12-14T12:00:00-05:00
 slug = "penn-state-pennsylvania-legislature-budget-tuition-transparency-accountability"
 suppress-date = false
@@ -27,7 +29,7 @@ A funding bill for Pennsylvania’s four state-related universities — Penn Sta
 
 In an October op-ed published during the funding debate, Penn State President Neeli Bendapudi wrote that her university was <a href="https://www.pennlive.com/opinion/2023/10/penn-state-president-pledges-accountability-urges-lawmakers-to-approve-2023-24-funding-opinion.html">proactively releasing a report and website</a> with “information our lawmakers and the public request most often, and that demonstrate Penn State’s value to Pennsylvania.”
 
-Penn State’s <a href="https://www.psu.edu/downloads/PSU-accountability-report-2023.pdf">11-page accountability report</a>, published Nov. 1, contains enrollment data, graduation rates, and demographic information about students and faculty. The president noted in her op-ed that much of the information in the report and the <a href="https://www.psu.edu/accountability/">accompanying website</a> is already available to the public in various locations.
+Penn State’s <a href="https://web.archive.org/web/20240722152736/https://www.psu.edu/downloads/PSU-accountability-report-2023.pdf">11-page accountability report</a>, published Nov. 1, contains enrollment data, graduation rates, and demographic information about students and faculty. The president noted in her op-ed that much of the information in the report and the <a href="https://www.psu.edu/accountability/">accompanying website</a> is already available to the public in various locations.
 
 Spotlight PA asked Penn State if there was additional context about what prompted the university to create the report beyond what Bendapudi wrote in her op-ed. The university’s Office of Strategic Communications did not respond to the request.
 
