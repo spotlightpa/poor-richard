@@ -4,6 +4,7 @@ authors = ["Stephen Caruso"]
 blurb = "The Pennsylvania legislature may expand the state’s child care tax credit and create a new program for working families based on the federal earned income tax credit."
 byline = "Stephen Caruso of Spotlight PA"
 description = "Pennsylvania may expand its child care tax credit and create a new program for working families based on the federal earned income tax credit. "
+feed-exclude = false
 image = "external/k5599q2kgasyp4ybvk59gb2nfc.jpeg"
 image-credit = "Tom Gralish / Philadelphia Inquirer"
 image-description = "The Pennsylvania Capitol building in Harrisburg."
@@ -79,7 +80,7 @@ State Rep. Seth Grove (R., York), state House Republicans’ chief budget negoti
 
 According to IRS data on Pennsylvanians’ 2020 tax returns, a little less than 50% of the tax credit’s almost 190,000 claimants make more than $100,000 a year, receiving $50 million in tax breaks.
 
-Grove also argued that the earned income tax credit would be an “expensive welfare program” riddled with mistakes and overpayments. <a href="https://www.eitc.irs.gov/tax-preparer-toolkit/frequently-asked-questions/fraud/fraud">According</a> to the IRS, about one in four EITC payments is made in error, although policy analysts debate whether this reflects <a href="https://budgetbook.heritage.org/income-security/reduce-fraud-earned-income-tax-credit/">fraud</a> or <a href="https://www.cbpp.org/research/federal-tax/reducing-overpayments-in-the-earned-income-tax-credit">filing mistakes</a>.
+Grove also argued that the earned income tax credit would be an “expensive welfare program” riddled with mistakes and overpayments. <a href="https://www.eitc.irs.gov/tax-preparer-toolkit/frequently-asked-questions/fraud/fraud">According</a> to the IRS, about one in four EITC payments is made in error, although policy analysts debate whether this reflects <a href="https://web.archive.org/20230110155003/https://budgetbook.heritage.org/income-security/reduce-fraud-earned-income-tax-credit/">fraud</a> or <a href="https://www.cbpp.org/research/federal-tax/reducing-overpayments-in-the-earned-income-tax-credit">filing mistakes</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
