@@ -22,7 +22,7 @@ topics = ["PA Local"]
 twitter-title = "Painting some of PA’s most powerful people"
 +++
 
-Ellen Cooper has spent days preparing to paint former state House speaker Bryan Cutler’s official portrait. Before putting brush to canvas, she toured the Capitol with the Lancaster County Republican, gathering the kinds of visual reference material — posture, countenance, accessories — that goes unnoticed by most.
+Ellen Cooper has spent days preparing to paint former state House Speaker Bryan Cutler’s official portrait. Before putting brush to canvas, she toured the Capitol with the Lancaster County Republican, gathering the kinds of visual reference material — posture, countenance, accessories — that goes unnoticed by most.
 
 When finished, the piece will be added to a Harrisburg gallery of faces spanning hundreds of years, something Cutler called “an honor” and “humbling” in a statement to PA Local. It will also join <a href="https://www.ellencooper.net/official-portraits">Cooper’s growing catalog</a>, which includes some of Pennsylvania’s most powerful — if not instantly recognizable — people.
 
