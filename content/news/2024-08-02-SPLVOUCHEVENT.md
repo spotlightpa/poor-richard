@@ -43,7 +43,7 @@ Join us Thursday, Aug. 8 from 6-7 p.m. on Zoom for a live panel on Pennsylvania�
 
 - <strong>Anthony Williams</strong>, state senator, serving parts of Delaware County and Philadelphia
 
-- <strong>Other panelists to be announced.</strong>
+- <strong>Susan Spicka</strong>, executive director, Education Voters of PA
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
