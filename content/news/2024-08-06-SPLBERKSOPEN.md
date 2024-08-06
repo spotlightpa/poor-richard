@@ -28,7 +28,7 @@ Earlier this year, Spotlight PA announced the results of a year-long study of ne
 
 Join Spotlight PA CEO &amp; President Christopher Baxter and Spotlight PA Berks Project Lead Heather Adams on Aug. 13 at Noon or Aug. 28 at 6 p.m. as they share the findings of Spotlight PA&#39;s research and answer audience questions across two 45-minute Zoom sessions.
 
-An RSVP is required for these events. You can register for the August 13 session <a href="https://zoom.us/meeting/register/tJUqc-mqrz4oEt1NXkz58slA5gdcdaqAJxXu">here at this link</a>, and the<a href="https://zoom.us/meeting/register/tJIud-2pqTIsHNT4Jl_cWt0LDZcgm87Lfzv5"> August 28 session here</a>.
+An RSVP is required for these events. You can register for the Aug. 13 session <a href="https://zoom.us/meeting/register/tJUqc-mqrz4oEt1NXkz58slA5gdcdaqAJxXu">here at this link</a>, and the<a href="https://zoom.us/meeting/register/tJIud-2pqTIsHNT4Jl_cWt0LDZcgm87Lfzv5"> Aug. 28 session here</a>.
 
 Spotlight PA was founded to address an ongoing crisis in Pennsylvania: the rapid decline of investigative and accountability journalism in service to residents across the state, especially outside the two major metropolitan areas of Pittsburgh and Philadelphia.
 
