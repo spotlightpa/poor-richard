@@ -2,7 +2,7 @@
 authors = ["Stephen Caruso", "Angela Couloumbis", "Kate Huangpu", "Katie Meyer"]
 blurb = "Shapiro, a centrist Democrat, came under intense criticism during the vetting process for his positions on Israel and school vouchers."
 byline = "Stephen Caruso, Angela Couloumbis, Kate Huangpu, and Katie Meyer of Spotlight PA"
-description = "Kamala Harris' decision ends weeks of vetting and speculation, which resurrected several controversies from PA Gov. Josh Shapiro's political career."
+description = "Kamala Harris' decision to pick Tim Walz ends weeks of vetting and speculation, which resurrected several controversies from Pennsylvania Gov. Josh Shapiro's political career."
 feed-exclude = false
 image = "2024/07/01ka-mp84-emwa-17f3.jpeg"
 image-credit = "Commonwealth Media Services"
@@ -10,15 +10,15 @@ image-description = "Pennsylvania Gov. Josh Shapiro"
 internal-id = "SPLSHAPNOTVP"
 kicker = "Josh Shapiro"
 modal-exclude = false
-og-title = "Kamala Harris did not pick Josh Shapiro to be her running mate"
+og-title = "Kamala Harris picks Tim Walz — not Josh Shapiro — to be her running mate"
 pinned = false
 published = 2024-08-06T09:04:25.947-04:00
 slug = "josh-shapiro-vice-president-kamala-harris-pennsylvania-governor-joe-biden"
 suppress-date = false
 title = "Pennsylvania Gov. Josh Shapiro isn’t Kamala Harris’ pick for vice president"
-title-tag = "Harris VP pick: Josh Shapiro not on ticket"
+title-tag = "Harris VP pick: Josh Shapiro passed over for Tim Walz"
 topics = ["Josh Shapiro"]
-twitter-title = "Kamala Harris did not pick Josh Shapiro to be her running mate"
+twitter-title = "Kamala Harris picks Tim Walz — not Josh Shapiro — to be her running mate"
 +++
 
 HARRISBURG — <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Pennsylvania Gov. Josh Shapiro</a> has not been tapped to run for vice president on the Democratic ticket with Kamala Harris, according to the Associated Press.
