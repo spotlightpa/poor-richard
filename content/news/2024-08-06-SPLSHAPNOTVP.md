@@ -23,7 +23,7 @@ twitter-title = "Kamala Harris picks Tim Walz — not Josh Shapiro — to be her
 
 HARRISBURG — <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Pennsylvania Gov. Josh Shapiro</a> has not been tapped to run for vice president on the Democratic ticket with Kamala Harris, according to the Associated Press.
 
-Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota, the AP reported citing multiple sources.
+Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota, the AP reported citing multiple sources. He’s still expected to speak at a Harris rally in Philadelphia this evening.
 
 Harris’ decision ends weeks of intense vetting and speculation, and comes shortly before the Democratic National Convention in Chicago. There, Harris will take President Joe Biden’s place as the Democratic presidential nominee following Biden’s momentous decision to drop out of the race and forgo a potential second term in the White House.
 
