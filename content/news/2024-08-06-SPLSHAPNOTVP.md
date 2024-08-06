@@ -2,7 +2,7 @@
 authors = ["Stephen Caruso", "Angela Couloumbis", "Kate Huangpu", "Katie Meyer"]
 blurb = "Shapiro, a centrist Democrat, came under intense criticism during the vetting process for his positions on Israel and school vouchers."
 byline = "Stephen Caruso, Angela Couloumbis, Kate Huangpu, and Katie Meyer of Spotlight PA"
-description = "Kamala Harris' decision to pick Tim Walz ends weeks of vetting and speculation, which resurrected several controversies from Pennsylvania Gov. Josh Shapiro's political career."
+description = "Kamala Harris' decision to pick Tim Walz ends weeks of vetting and speculation, which resurrected several controversies from PA Gov. Josh Shapiro's political career."
 feed-exclude = false
 image = "2024/07/01ka-mp84-emwa-17f3.jpeg"
 image-credit = "Commonwealth Media Services"
