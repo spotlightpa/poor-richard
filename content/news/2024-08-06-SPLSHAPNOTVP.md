@@ -2,7 +2,7 @@
 authors = ["Stephen Caruso", "Angela Couloumbis", "Kate Huangpu", "Katie Meyer"]
 blurb = "Shapiro, a centrist Democrat, came under intense criticism during the vetting process for his positions on Israel and school vouchers."
 byline = "Stephen Caruso, Angela Couloumbis, Kate Huangpu, and Katie Meyer of Spotlight PA"
-description = "Kamala Harris' decision to pick Tim Walz ends weeks of vetting and speculation, which resurrected several controversies from PA Gov. Josh Shapiro's political career."
+description = "Kamala Harris' decision to pick Tim Walz ends weeks of vetting and speculation, which resurrected several controversies from Pennsylvania Gov. Josh Shapiro's political career."
 feed-exclude = false
 image = "2024/07/01ka-mp84-emwa-17f3.jpeg"
 image-credit = "Commonwealth Media Services"
@@ -27,19 +27,65 @@ Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota
 
 “One of the things that stood out to me about Tim is how his convictions on fighting for middle class families run deep. It’s personal,” Harris <a href="https://www.instagram.com/p/C-VNhQYO01b/?hl=en">wrote</a> on social media Tuesday, announcing the pick. “We are going to build a great partnership. We are going to build a great team. We are going to win this election.”
 
-Shapiro released a statement expressing his support for Harris and Walz. He added that he looks forward to campaigning for the ticket across the commonwealth.
+Shapiro, a <a href="https://www.abc27.com/pennsylvania-politics/new-poll-highlights-josh-shapiro-approval-rating-during-vp-search/">popular</a> chief executive in a must-win state for Democrats, quickly emerged as a lead contender for the No. 2 spot. But his critics resurrected some of the <a href="https://www.spotlightpa.org/news/2024/08/pennsylvania-josh-shapiro-vice-president-voucher-israel-mike-vereb/">more controversial and embarrassing episodes in his political career</a>, including lingering questions about how he handled a sexual harassment complaint against a top advisor.
 
-“As I’ve said repeatedly over the past several weeks, the running mate decision was a deeply personal decision for the Vice President — and it was also a deeply personal decision for me,” he said in the statement. “Pennsylvanians elected me to a four-year term as their Governor, and my work here is far from finished — there is a lot more stuff I want to get done for the good people of this Commonwealth.”
+While Shapiro didn’t make the ticket, Pennsylvania is still at the center of the Harris campaign’s new chapter.
 
-Shapiro is expected to speak at a Harris rally in Philadelphia this evening.
+At a packed event at Philadelphia’s Temple University, Harris appeared alongside her new running mate and made a pitch focused on opposing abortion restrictions (which Republican nominee Donald Trump and his running mate J.D. Vance support), protecting the Affordable Care Act, and giving families stability.
+
+“Strengthening the middle class will be my defining goal when I am president of the United States,” Harris told the crowd.
+
+Also present and emphatically supportive of the Harris-Walz ticket? Shapiro, who served as a prominent Biden surrogate on the Pennsylvania campaign trail in 2020.
+
+He took the stage in Philly to thunderous applause, and kicked off his speech by assuring Pennsylvanians, “I love being your governor.”
+
+“I&#39;m going to be working my tail off to make sure we make Kamala Harris and Tim Walz the next leaders of the United States of America,” he said.
+
+Of Harris, he added, “She has a big heart and she is battle-tested and ready to go.” He called Walz “a great man.”
+
+“Tim Walz is an outstanding governor. Tim Walz is a teacher. Tim Walz is a guardsman. Tim Walz is a great patriot,” Shapiro said. “And I’ll tell you what else, Tim Walz is a dear friend.”
+
+Harris also made it clear that Shapiro will have a role in the campaign.
+
+“Josh is a dear, dear friend and an extraordinary leader,” she said. “He and I have been spending a lot of time together over the years, and I told Josh, look, I am so, so invested in our friendship and doing this together, because together with Josh Shapiro, we will win Pennsylvania.”
 
 {{<embed/newsletter>}}
 
 Harris’ decision ends weeks of intense vetting and speculation, and comes shortly before the Democratic National Convention in Chicago. There, Harris will take President Joe Biden’s place as the Democratic presidential nominee following Biden’s momentous decision to drop out of the race and forgo a potential second term in the White House.
 
-Shapiro quickly emerged as a lead contender for the No. 2 spot on the ticket. He’s a <a href="https://www.abc27.com/pennsylvania-politics/new-poll-highlights-josh-shapiro-approval-rating-during-vp-search/">popular</a> chief executive in a must-win state for Democrats. Shapiro has won three statewide elections, including races for attorney general in 2016 and 2020, outperforming Biden in the latter.
+As Democratic voters gathered Tuesday at Temple’s Liacouras Center, many told Spotlight PA they would have no trouble getting on board with Walz as vice president, even though he edged out their governor.
 
-But his critics resurrected some of the <a href="https://www.spotlightpa.org/news/2024/08/pennsylvania-josh-shapiro-vice-president-voucher-israel-mike-vereb/">more controversial and embarrassing episodes in his political career</a>, including lingering questions about how he handled a sexual harassment complaint against a top advisor.
+Rachel Farrow, a 30-year-old marketing director who said she has been knocking on doors for the Harris campaign, told Spotlight PA that, selfishly, she&#39;s happy Shapiro is staying in Pennsylvania because he makes her feel safe that her reproductive rights will be protected.
+
+She thinks Walz’s working-class roots will appeal to the kinds of voters who defected to Trump in 2016 and helped him win Pennsylvania.
+
+&#34;I think a person like Tim Walz represents Americana,&#34; Farrow said. &#34;A Midwest dad.&#34;
+
+Kelly Schaaf is also all in. Schaaf, who is 47 and works for the Philadelphia school district, was raised a Republican but changed her registration in part because of her disdain for the rise of Christian nationalism within the party.
+
+She said she’s looking forward to voting for a woman with a “solid track record of voting for people’s rights,” and added that the addition of Walz doesn’t hurt. “He does good work in education,” she said of the former geography teacher.
+
+Democrats weren’t the only ones campaigning in Pennsylvania on Tuesday.
+
+Just a few hours before Harris’ event at Temple, U.S. Sen J.D. Vance of Ohio, Trump’s running mate, appeared at a smaller rally at a South Philly venue best known for holding boxing matches.
+
+There, Vance debuted some of the Trump campaign’s criticisms of the newly formalized Democratic ticket. Harris and Walz, he said, are both far left.
+
+“The biggest problem with the Tim Walz pick — it&#39;s not Tim Walz himself. It&#39;s what it says about Kamala Harris, that when given an opportunity, she will bend the knee to the most radical elements of her party,” Vance said.
+
+Some members of the mostly local crowd at that event told Spotlight PA they had some misgivings about Vance joining Trump’s ticket.
+
+Angelina Banks, who traveled from Montgomery County to attend with her two young daughters, described herself as a dedicated conservative. She ran unsuccessfully for state House in 2022 and was an alternate delegate for Trump at this year’s Republican National Convention.
+
+When Trump initially chose Vance as a running mate, Banks said, she was “a little taken off guard” because of the 40-year-old’s relative youth. But, she added, “The more that I&#39;ve gotten to know him over the last few weeks, I can understand the choice, and I really support it.”
+
+Giovanna McKinley, a 21-year-old nursing student from South Philly, said she’s excited to vote for the ticket because of her concerns about inflation and the southern border. But she added she’s a little unsettled by Vance’s <a href="https://www.cnn.com/2024/07/17/politics/kfile-jd-vance-abortion-comments/index.html">previous full-throated support</a> for a nationwide abortion ban. He has more recently said he thinks states should make their own laws.
+
+“I mean, I&#39;m pro-women&#39;s rights. Definitely, that&#39;s one thing I am worried about,” she said. “But I don&#39;t think our rights will be stripped away completely. Obviously, he&#39;s for everyone. He&#39;s not just for, you know, the men.”
+
+## Shapiro weathered criticism before being passed over
+
+Though many Philadelphia voters told Spotlight PA they’re happy Shapiro is staying put, he didn’t emerge unscathed from the vice presidential vetting process.
 
 After a key aide — and longtime political ally —&nbsp;was accused of sexual harassment during Shapiro’s first year in office, his administration <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-josh-shapiro-mike-vereb-sexual-harassment-settlement-amount/">quietly negotiated and paid out</a> a $295,000 settlement. The aide resigned three weeks later.
 
