@@ -29,6 +29,8 @@ Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota
 
 Shapiro, a <a href="https://www.abc27.com/pennsylvania-politics/new-poll-highlights-josh-shapiro-approval-rating-during-vp-search/">popular</a> chief executive in a must-win state for Democrats, quickly emerged as a lead contender for the No. 2 spot. But his critics resurrected some of the <a href="https://www.spotlightpa.org/news/2024/08/pennsylvania-josh-shapiro-vice-president-voucher-israel-mike-vereb/">more controversial and embarrassing episodes in his political career</a>, including lingering questions about how he handled a sexual harassment complaint against a top advisor.
 
+{{<embed/newsletter>}}
+
 While Shapiro didn’t make the ticket, Pennsylvania is still at the center of the Harris campaign’s new chapter.
 
 At a packed event at Philadelphia’s Temple University, Harris appeared alongside her new running mate and made a pitch focused on opposing abortion restrictions (which Republican nominee Donald Trump and his running mate J.D. Vance support), protecting the Affordable Care Act, and giving families stability.
@@ -49,7 +51,7 @@ Harris also made it clear that Shapiro will have a role in the campaign.
 
 “Josh is a dear, dear friend and an extraordinary leader,” she said. “He and I have been spending a lot of time together over the years, and I told Josh, look, I am so, so invested in our friendship and doing this together, because together with Josh Shapiro, we will win Pennsylvania.”
 
-{{<embed/newsletter>}}
+{{<picture src="2024/08/01kb-5b0p-y209-2ctj.jpeg" description="Pa. Gov. Josh Shapiro takes the stage at a Kamala Harris campaign event in Philadelphia." caption="Pa. Gov. Josh Shapiro takes the stage at Kamala Harris’s Tuesday campaign event in Philadelphia." credit="Stephen Caruso / Spotlight PA">}}
 
 Harris’ decision ends weeks of intense vetting and speculation, and comes shortly before the Democratic National Convention in Chicago. There, Harris will take President Joe Biden’s place as the Democratic presidential nominee following Biden’s momentous decision to drop out of the race and forgo a potential second term in the White House.
 
