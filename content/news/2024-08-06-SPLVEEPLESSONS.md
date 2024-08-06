@@ -21,21 +21,23 @@ topics = ["Josh Shapiro"]
 twitter-title = "Everything we learned about Josh Shapiro during the veepstakes"
 +++
 
-HARRISBURG — As Pennsylvania Gov. Josh Shapiro emerged in recent weeks as one of the top contenders to be Kamala Harris’ vice presidential nominee, an intense vetting process has unfurled both behind the scenes in Washington, D.C. and in public.
+<em>This story has been updated to reflect that </em><a href="https://www.spotlightpa.org/news/2024/08/josh-shapiro-vice-president-kamala-harris-pennsylvania-governor-joe-biden/"><em>Kamala Harris has chosen Minnesota Gov. Tim Walz to be her running mate</em></a><em>.</em>
 
-Much of the public attention has focused on Shapiro’s long political career — in particular, on his evolving position on Israel, his knowledge of a former top aide’s conduct, and his relationships with national figures.
+HARRISBURG — As Pennsylvania Gov. Josh Shapiro emerged in recent weeks as one of the top contenders to be Kamala Harris’ vice presidential nominee, an intense vetting process unfurled both behind the scenes in Washington, D.C. and in public.
 
-Some of this attention has brought new revelations. A woman accused the former aide of threatening her in 2018, for instance, while The Inquirer resurfaced a college opinion article in which Shapiro called Palestinians “battle-minded.”
+In the end, <a href="https://www.spotlightpa.org/news/2024/08/josh-shapiro-vice-president-kamala-harris-pennsylvania-governor-joe-biden/">Harris didn’t pick Shapiro</a>. But the veepstakes did unearth several new revelations about the governor — not all of them positive.
+
+Much of the public attention has focused on Shapiro’s long political career — in particular, on his evolving position on Israel, his knowledge of a former top aide’s alleged misconduct, and his relationships with national figures.
+
+A woman also newly accused the former aide of threatening her in 2018, for instance, while The Inquirer resurfaced a college opinion article in which Shapiro called Palestinians “battle-minded.”
 
 {{<embed/newsletter>}}
-
-Harris is expected to announce early Tuesday who will be her running mate in the November presidential election against Donald Trump, as he attempts to again win the presidency.
 
 The vice presidency comes with few official duties, and has been unfavorably compared to <a href="https://briscoecenter.org/about/news/john-nance-garner-on-the-vice-presidency-in-search-of-the-proverbial-bucket/">“a bucket of warm spit.”</a> But it often serves as a springboard to a presidential run — eight VPs ran as their party&#39;s nominee for the presidency between 1960 and 2020.
 
 Though he rarely discusses his political endgame, supporters have often remarked that Shapiro’s ultimate goal is the White House.
 
-Below, Spotlight PA runs down some of the biggest revelations that have emerged from the recent veepstakes:
+Below, Spotlight PA runs down some of the biggest revelations that emerged from the veepstakes:
 
 ## A new allegation against a former aide
 
