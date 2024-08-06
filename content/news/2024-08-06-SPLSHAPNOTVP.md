@@ -21,13 +21,21 @@ topics = ["Josh Shapiro"]
 twitter-title = "Kamala Harris picks Tim Walz — not Josh Shapiro — to be her running mate"
 +++
 
-HARRISBURG — <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Pennsylvania Gov. Josh Shapiro</a> has not been tapped to run for vice president on the Democratic ticket with Kamala Harris, according to the Associated Press.
+HARRISBURG — <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Pennsylvania Gov. Josh Shapiro</a> has not been tapped to run for vice president on the Democratic ticket with Kamala Harris.
 
-Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota, the AP reported citing multiple sources. He’s still expected to speak at a Harris rally in Philadelphia this evening.
+Shapiro, 51, a centrist Democrat, was passed over for Gov. Tim Walz of Minnesota.
 
-Harris’ decision ends weeks of intense vetting and speculation, and comes shortly before the Democratic National Convention in Chicago. There, Harris will take President Joe Biden’s place as the Democratic presidential nominee following Biden’s momentous decision to drop out of the race and forgo a potential second term in the White House.
+“One of the things that stood out to me about Tim is how his convictions on fighting for middle class families run deep. It’s personal,” Harris <a href="https://www.instagram.com/p/C-VNhQYO01b/?hl=en">wrote</a> on social media Tuesday, announcing the pick. “We are going to build a great partnership. We are going to build a great team. We are going to win this election.”
+
+Shapiro released a statement expressing his support for Harris and Walz. He added that he looks forward to campaigning for the ticket across the commonwealth.
+
+“As I’ve said repeatedly over the past several weeks, the running mate decision was a deeply personal decision for the Vice President — and it was also a deeply personal decision for me,” he said in the statement. “Pennsylvanians elected me to a four-year term as their Governor, and my work here is far from finished — there is a lot more stuff I want to get done for the good people of this Commonwealth.”
+
+Shapiro is expected to speak at a Harris rally in Philadelphia this evening.
 
 {{<embed/newsletter>}}
+
+Harris’ decision ends weeks of intense vetting and speculation, and comes shortly before the Democratic National Convention in Chicago. There, Harris will take President Joe Biden’s place as the Democratic presidential nominee following Biden’s momentous decision to drop out of the race and forgo a potential second term in the White House.
 
 Shapiro quickly emerged as a lead contender for the No. 2 spot on the ticket. He’s a <a href="https://www.abc27.com/pennsylvania-politics/new-poll-highlights-josh-shapiro-approval-rating-during-vp-search/">popular</a> chief executive in a must-win state for Democrats. Shapiro has won three statewide elections, including races for attorney general in 2016 and 2020, outperforming Biden in the latter.
 
