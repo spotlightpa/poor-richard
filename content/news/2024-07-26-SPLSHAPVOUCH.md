@@ -18,7 +18,7 @@ slug = "josh-shapiro-vice-president-school-choice-voucher"
 suppress-date = false
 title = "Inside Pennsylvania Gov. Josh Shapiro’s support for private school vouchers"
 title-tag = "What’s behind Josh Shapiro’s support for school vouchers?"
-topics = ["Education"]
+topics = ["Education", "Josh Shapiro"]
 twitter-title = "What’s behind Josh Shapiro’s support for school vouchers?"
 +++
 

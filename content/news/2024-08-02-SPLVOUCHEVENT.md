@@ -33,7 +33,7 @@ Proponents argue they give children attending struggling public schools crucial 
 
 With almost no middle ground between the opposing sides, research and studies can give the public insight into how a voucher program would work here in Pennsylvania and how others have performed elsewhere.
 
-Join us Thursday, Aug. 8 from 6-7 p.m. on Zoom for a live panel on Pennsylvania’s school voucher fight.
+Join us Thursday, Aug. 8 from 6-7 p.m. on Zoom for a live panel on Pennsylvania’s school voucher fight. RSVP <a href="https://zoom.us/webinar/register/WN_CpmZwfNfTAib9sIDImfDcA">here</a>.
 
 <strong>Our panelists include:</strong>
 
@@ -43,7 +43,7 @@ Join us Thursday, Aug. 8 from 6-7 p.m. on Zoom for a live panel on Pennsylvania�
 
 - <strong>Anthony Williams</strong>, state senator, serving parts of Delaware County and Philadelphia
 
-- <strong>Other panelists to be announced.</strong>
+- <strong>Susan Spicka</strong>, executive director, Education Voters of PA
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
