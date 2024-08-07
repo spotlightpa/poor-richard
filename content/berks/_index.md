@@ -25,7 +25,7 @@ actionUrl = "https://files.data.spotlightpa.org/uploads/01ka/7ev6/blueprint-for-
 [[blocks.entries]]
 image = "external/271g68k54vbhc5t32ctj0yf24g.jpeg"
 hed = "Revitalize Local News"
-body = "Join our historic effort to invigorate local news."
+body = "Become a founding donor of the Spotlight PA Berks Bureau and help revitalize investigative and accountability reporting in Berks County."
 actionText = "Donate Now →"
 actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
 
