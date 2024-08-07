@@ -3,6 +3,7 @@ authors = ["Marley Parish"]
 blurb = "Pennsylvania has seen an increase in chronic wasting disease since 2012. While the state has implemented tracking and mitigation efforts, testing is still optional for hunters."
 byline = "Marley Parish of Spotlight PA State College"
 description = "Pennsylvania has new rules for hunters to limit the spread of “zombie deer disease.” Here’s how the state manages the fatal disease."
+feed-exclude = false
 image = "2023/12/01jq-kp72-t5hz-mqjs.jpeg"
 image-credit = "Photo By Mark Nale"
 image-description = "A deer in the woods"
@@ -26,7 +27,7 @@ Chronic wasting disease is a contagious prion disease that attacks the nervous s
 
 The state first detected the disease in <a href="https://pacast.com/m?p=10158">2012</a> at a captive deer facility in Adams County. A few months later, three white-tailed deer in Blair and Bedford Counties had it. Pennsylvania has <a href="https://pgcdatacollection.pa.gov/CWDResultsLookup">reported</a> nearly 1,300 chronic wasting disease cases across the commonwealth since the state Game Commission started tracking, a number that has increased annually.
 
-Krysten Schuler, a wildlife disease ecologist at Cornell University, said the uptick could come from deer in areas with dense populations or from <a href="https://www.agriculture.pa.gov/Animals/AHDServices/diseases/Chronic%20Wasting%20Disease%20Program/Pages/default.aspx">captive deer and elk herds</a> at farms overseen by the state Department of Agriculture.
+Krysten Schuler, a wildlife disease ecologist at Cornell University, said the uptick could come from deer in areas with dense populations or from <a href="https://web.archive.org/20230331024456/https://www.agriculture.pa.gov/Animals/AHDServices/diseases/Chronic%20Wasting%20Disease%20Program/Pages/default.aspx">captive deer and elk herds</a> at farms overseen by the state Department of Agriculture.
 
 Prions — malfunctioning and <a href="https://www.niaid.nih.gov/diseases-conditions/prion-diseases#:~:text=Prion%20diseases%20are%20transmissible%2C%20untreatable,that%20cause%20infectious%20brain%20disease.">almost indestructible proteins</a> — cause chronic wasting disease, so disposal is key to mitigate further spread. Other <a href="https://web.archive.org/20230112152005/https://www.cdc.gov/prions/index.html">prion diseases</a> include Creutzfeldt-Jakob disease, which is rare but the most common that affects humans, and mad cow disease.
 
@@ -72,7 +73,7 @@ The regular rifle season for buck and doe in Pennsylvania ended Dec. 9, so many 
 
 The Game Commission also collects samples from harvested deer collected at processors, road-killed deer within and around DMAs, and reported clinical suspect deer involved in other state programs, typically ones that look sick.
 
-The state collects more than 11,000 samples each year, Korman estimated. During the <a href="https://www.media.pa.gov/pages/game-commission-details.aspx?newsid=589#:~:text=HARRISBURG%2C%20PA%20%2D%20The%20Pennsylvania%20Game,the%20antlerless%20harvest%20at%20258%2C770.">2022-23 deer session</a>, hunters harvested about 423,000 white-tailed deer, which are abundant in the state.
+The state collects more than 11,000 samples each year, Korman estimated. During the <a href="https://web.archive.org/20230330200410/https://www.media.pa.gov/pages/game-commission-details.aspx?newsid=589#:~:text=HARRISBURG%2C%20PA%20%2D%20The%20Pennsylvania%20Game,the%20antlerless%20harvest%20at%20258%2C770.">2022-23 deer session</a>, hunters harvested about 423,000 white-tailed deer, which are abundant in the state.
 
 The Game Commission has a few contractors for testing and research across the state.
 
