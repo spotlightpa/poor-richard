@@ -14,7 +14,10 @@
   "featuredStories": [
     "content/news/2024-08-08-SPLSHOTCAM0824.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2024-08-08-SPL101GUID.md",
+    "content/news/2024-08-01-SPLPREBUNKADMIN.md"
+  ],
   "topSlots": [
     "content/statecollege/2024-08-07-SPLRURALBUD0824.md",
     "content/news/2024-08-06-SPLSHAPNOTVP.md",
