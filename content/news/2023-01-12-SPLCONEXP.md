@@ -4,6 +4,7 @@ authors = ["Kate Huangpu"]
 blurb = "It’s a lengthy process that requires passage in two legislative sessions and advertising by the Pennsylvania Department of State."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Amending the PA Constitution is a lengthy process that requires passage in two legislative sessions and advertising by the Department of State."
+feed-exclude = false
 image = "external/4fr1kzawwgrr5czqnmd8sxbax8.JPG"
 image-credit = "Heather Khalifa / Philadelphia Inquirer"
 image-description = "Test ballots were fed into voting machines ahead of Election Day 2022 in Chester County."
@@ -11,6 +12,7 @@ internal-budget = "How a constitutional amendment gets on the ballot in Pennsylv
 internal-id = "SPLCONEXP"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-01-13T05:00:00-05:00
 slug = "pa-legislature-constitutional-amendments-voter-id-abortion-explainer"
 suppress-date = false
@@ -52,7 +54,7 @@ After this step, the amendment appears as a referendum on ballots in the next st
 
 Once an amendment is placed on the ballot, it has a high chance of succeeding. <a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-constitutional-amendments-abortion-voter-id/">Nearly 90% of proposed amendments have been approved by voters since 1968</a>. Many have been put in front of voters in off-year elections, which typically have lower turnouts.
 
-Some good-government groups <a href="https://fairdistrictspa.com/updates/more-constitutional-amendments-we-need-to-oppose">criticized the legislature</a> for <a href="https://www.commoncause.org/clip/patriot-news-op-ed-pennsylvania-lawmakers-are-abusing-the-constitutional-amendment-process/">its frequent use of constitutional amendments</a> last session, calling it a strategy that sidesteps checks and balances and lacks public oversight. Democrats, the minority party in recent years, also contested this approach, saying it shuts them out of legislative conversations.
+Some good-government groups <a href="https://fairdistrictspa.com/updates/more-constitutional-amendments-we-need-to-oppose">criticized the legislature</a> for <a href="https://web.archive.org/20230113123918/https://www.commoncause.org/clip/patriot-news-op-ed-pennsylvania-lawmakers-are-abusing-the-constitutional-amendment-process/">its frequent use of constitutional amendments</a> last session, calling it a strategy that sidesteps checks and balances and lacks public oversight. Democrats, the minority party in recent years, also contested this approach, saying it shuts them out of legislative conversations.
 
 Republicans, with support from a handful of Democrats, advanced extremely controversial amendments last session, including ones that would expand voter ID requirements, declare there’s no constitutional right to abortion in the state, and further scale back the governor’s executive powers.
 
