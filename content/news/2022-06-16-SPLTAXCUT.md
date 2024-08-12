@@ -4,6 +4,7 @@ authors = ["Jaxon White"]
 blurb = "Pennsylvania levies a 9.99% tax on corporate net income, the second-highest rate in the country."
 byline = "Jaxon White for Spotlight PA"
 description = "Pennsylvania levies a 9.99% tax on corporate net income, the second-highest rate in the country."
+feed-exclude = false
 image = "external/bjt721zrgrcgv9zzxzy75n9wtc.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "Cutting that tax has become a rare area of bipartisan agreement between the Republican-controlled General Assembly and Wolf, a former businessman."
@@ -12,6 +13,7 @@ internal-id = "SPLTAXCUT"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-06-16T05:00:41-04:00
 slug = "pa-corporate-tax-cut-bipartisan-proposals"
 suppress-date = false
@@ -57,7 +59,7 @@ Supporters of lowering the current corporate net income tax rate argue that near
 
 Smith <a href="https://www.reuters.com/technology/intel-plans-new-chip-manufacturing-site-ohio-report-2022-01-21/">cited a recent decision by tech company Intel</a> to locate a new $20 billion project for a computer chip factory in Columbus, Ohio. He blames the current tax rate for keeping Pennsylvania cities like Pittsburgh out of contention for the facility.
 
-A <a href="https://www.senatoraument.com/wp-content/uploads/sites/69/2021/06/CNI-research.pdf">research paper</a> published by the office of state Sen. Ryan Aument (R., Lancaster) supports Smith’s argument, finding that the “states with the lowest CNI rates experienced 10% higher growth in state revenues from 2000 to 2020 compared to those states with higher CNI rates.”
+A <a href="https://web.archive.org/20220210135823/https://www.senatoraument.com/wp-content/uploads/sites/69/2021/06/CNI-research.pdf">research paper</a> published by the office of state Sen. Ryan Aument (R., Lancaster) supports Smith’s argument, finding that the “states with the lowest CNI rates experienced 10% higher growth in state revenues from 2000 to 2020 compared to those states with higher CNI rates.”
 
 The same paper also found that lowering the rate by one point could increase Pennsylvania’s population by roughly 18,000 people, while also raising the wages of workers in the state.
 
@@ -101,7 +103,7 @@ Innamorato would rather see funds appropriated to small business grants and loan
 
 In <a href="https://krc-pbpc.org/research_publication/corporate-taxes-without-combined-reporting-are-not-worth-the-cost/">a new study</a>, Stier found that the state House proposal to cut the tax would cost Pennsylvania $600 million in revenue per year once the reduction reaches 7.99%, and only generate roughly 23,000 jobs over a course of 10 years — estimating that only 20% of those jobs would go to current Pennsylvania residents.
 
-(An analysis of the bill prepared by the state House Appropriations Committee <a href="https://www.legis.state.pa.us/WU01/LI/BI/FN/2021/0/HB1960P3035.pdf">reported</a> that “each 1% of the CNIT currently generates approximately $400 to $450 million in a full tax year.”)
+(An analysis of the bill prepared by the state House Appropriations Committee <a href="https://web.archive.org/20220427160044/https://www.legis.state.pa.us/WU01/LI/BI/FN/2021/0/HB1960P3035.pdf">reported</a> that “each 1% of the CNIT currently generates approximately $400 to $450 million in a full tax year.”)
 
 Stier believes that Pennsylvania should adopt “combined reporting,” a practice that is used in 28 other states. This method would require corporations to combine profits from all of their subsidiaries, including ones that operate outside of Pennsylvania, to determine taxable income.
 
