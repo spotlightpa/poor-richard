@@ -1,7 +1,7 @@
 +++
-blurb = "Join us Aug. 8 for a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
+blurb = "On Aug. 8, Spotlight PA held a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
 byline = "Spotlight PA Staff"
-description = "Join us Aug. 8 for a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
+description = "On Aug. 8, Spotlight PA held a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
 event-date = 2024-08-08T18:00:00-04:00
 event-title = "Voucher Debate"
 event-url = "https://zoom.us/webinar/register/WN_CpmZwfNfTAib9sIDImfDcA#/registration"
@@ -17,7 +17,7 @@ pinned = false
 published = 2024-08-02T13:33:32.736-04:00
 slug = "pennsylvania-josh-shapiro-school-voucher-support-live-event"
 suppress-date = false
-title = "Spotlight PA Event: How school vouchers became Pa.’s messiest political fight"
+title = "WATCH: How school vouchers became Pa.’s messiest political fight"
 title-tag = "How school vouchers became PA’s messiest political fight"
 topics = ["Events", "Josh Shapiro"]
 twitter-title = "Learn how school vouchers became Pa.’s messiest political fight"
