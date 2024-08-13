@@ -37,7 +37,9 @@ Xian and panelists will address the challenges local governments face in attract
 
 - <strong>Bryce Taylor, </strong>Milesburg Borough resident and community activist
 
-- <strong>Dan Murphy, </strong>former member, State College Borough Council<strong></strong>
+- <strong>Dan Murphy, </strong>former member, State College Borough Council
+
+- Tim Kearney, state senator, Delaware County
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_1zi5TtGMSCudy9lA3Bvduw"><strong>here</strong></a><strong>. Submit your questions in advance to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
 
