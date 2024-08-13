@@ -73,7 +73,7 @@ Grove noted that deficits are less manageable for states than they are for the f
 
 The structural deficit — where annual costs exceed annual revenue — isn’t new.
 
-For a decade-plus, Pennsylvania has <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-budget-josh-shapiro-surplus-structural-deficit-explainer/&#39;">consistently spent more than it brings in</a> under Democratic and Republican leadership alike. Neither party has mustered the political will to find the right combination of spending cuts, tax increases, or growth-inducing policies to correct the issue.
+For a decade-plus, Pennsylvania has <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-budget-josh-shapiro-surplus-structural-deficit-explainer/">consistently spent more than it brings in</a> under Democratic and Republican leadership alike. Neither party has mustered the political will to find the right combination of spending cuts, tax increases, or growth-inducing policies to correct the issue.
 
 Instead, the commonwealth’s budget has raised one-time revenues by expanding gambling, taking on debt, or using budgetary tricks that shift costs around to balance the books each year.
 
