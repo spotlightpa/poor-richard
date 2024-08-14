@@ -177,9 +177,10 @@
 {{ define "extra-main" }}
   {{ $p := partial "helper/paginator" . }}
   {{ $pages := $p.Pages }}
-  {{ $pinnedPages := where $pages "Params.pinned" true }}
-  {{ $river := $pages | after 5 }}
-
+  {{ $river := $pages }}
+  {{ if eq .Paginator.PageNumber 1 }}
+    {{ $river = $pages | after 5 }}
+  {{ end }}
   {{ $title := .Title }}
 
   {{ if $river }}
