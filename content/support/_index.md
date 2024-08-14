@@ -85,6 +85,12 @@ Recommend a gift via your donor-advised fund. Please direct it to Spotlight PA, 
 
 Make a contribution through your business or organization to support Spotlight PA. Business members will receive special recognition on the Spotlight PA website, in our annual impact report, during select events, and elsewhere as appropriate. Visit the [Business Membership Program](//spotlightpa.org/bizmember).
 
+## Estate Planning
+
+Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in our constitution here in Pennsylvania almost 250 years ago, and it is the mission of Spotlight PA to ensure that it continues to thrive throughout our commonwealth. By adding a donation to Spotlight PA to your estate planning, known as a bequest, you can be a part of this legacy forever.
+
+Please let us know if you are including Spotlight PA in your plans, so we can help ensure that you have the most up-to-date and accurate information necessary and that your donation will be used in the exact way that you wish. This will also allow us to plan ahead as an organization. Please contact Sean O’Riordan at [soriordan@spotlightpa.org](mailto:soriordan@spotlightpa.org).
+
 ## Donate Shares of Stock
 
 For gifts of stocks and securities, contact [joanna@spotlightpa.org](mailto:joanna@spotlightpa.org).
