@@ -110,18 +110,18 @@
   "takeover-image": "external/1z7jwjg6fk0wbgs99th1m9kwbm.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
   "topper-active": true,
-  "topper-bg-color": "#ffffff",
+  "topper-bg-color": "#ff0000",
   "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kb/x59g/week-of-giving-rectangles-1350-225-px-10-.png"
+    "https://files.data.spotlightpa.org/uploads/01kb/zgrd/week-of-giving-rectangles-1350-225-px-11-.png"
   ],
   "topper-desktop-width": 1350,
-  "topper-divider-color": "#1F2938",
+  "topper-divider-color": "#ff0000",
   "topper-image-description": "All gifts to Spotlight PA will be DOUBLED as part of our annual Week of Giving.",
   "topper-link": "/donate/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kb/x59f/week-of-giving-2023-rectangles-1024-512-px-18-.png"
+    "https://files.data.spotlightpa.org/uploads/01kb/zgrc/week-of-giving-2023-rectangles-1024-512-px-19-.png"
   ],
   "topper-mobile-width": 1024
 }
