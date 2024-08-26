@@ -8,19 +8,21 @@
     "content/news/2023-03-09-SPLCOMPETENCY.md"
   ],
   "edInvestigations": [
-    "content/news/2024-07-03-SPLABUSE0724.md",
-    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
+    "content/news/2024-08-20-SPLSHOOTFAIL0824.md",
+    "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
+    "content/news/2024-08-26-SPLDOCTORS0824.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-08-SPLSHOTCAM0824.md"
+    "content/news/2022-02-21-SPLCANNABIS21.md",
+    "content/news/2023-11-22-SPL_DOC_DATA.md",
+    "content/news/2023-01-31-SPLANXIETY.md"
   ],
   "topSlots": [
-    "content/news/2024-08-19-SPLHHWSUCCESSION.md",
-    "content/news/2024-08-16-SPLFAKEEL24.md",
-    "content/news/2024-08-16-SPLSYRINGENUM0824.md"
+    "content/news/2024-08-25-SPLPAWPAW.md",
+    "content/statecollege/2024-08-22-SPLRENO0824.md",
+    "content/news/2024-08-21-SPLPSPTRAFFIC0824.md"
   ],
   "topper": []
 }
