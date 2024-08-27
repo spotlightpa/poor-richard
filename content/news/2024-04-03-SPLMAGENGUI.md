@@ -3,6 +3,7 @@ authors = ["Elizabeth Estrada"]
 blurb = "Pennsylvania has universal no-excuse mail voting. Here’s everything you need to know about the process ahead of the April 23 election."
 byline = "Elizabeth Estrada of Spotlight PA"
 description = "Pennsylvania has universal mail voting. Learn everything you need to know about the process ahead of the April 23 primary election."
+feed-exclude = false
 image = "external/77h831dfmhcmftwjkpy17bpxrg.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Mail ballots are seen on Election Day 2020 in Northampton County."
@@ -14,7 +15,7 @@ published = 2024-04-03T05:00:00.354-04:00
 series = ["Voting Guides 2024"]
 slug = "pennsylvania-primary-election-2024-mail-ballot-how-to-request-fill-out-return"
 suppress-date = false
-title = "Pa. election 2024: Everything you need to know about requesting, filling out, and returning your mail ballot"
+title = "Pa. primary election 2024: Everything you need to know about requesting, filling out, and returning your mail ballot"
 title-tag = "PA primary election 2024: A guide to mail voting"
 topics = ["Elections"]
 +++
