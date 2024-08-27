@@ -12,6 +12,18 @@ signupDek = "Sign up to receive a weekly review of articles from Spotlight PA an
 hide-topper = true
 
 [[blocks]]
+layout = "takeover"
+title = "Help us write the future of journalism in Berks County."
+dek = "Join our historic effort to invigorate local news."
+image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
+signupHed = "Join our Berks mailing list "
+signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
+gaCategory = "newsletters:berks"
+gaForm = "newsletters:berks-full"
+hiddenField = "newsletter/berks-county-hidden.html"
+eager = true
+
+[[blocks]]
 title = ""
 layout = "promo"
 
@@ -28,18 +40,6 @@ hed = "Revitalize Local News"
 body = "Become a founding donor of the Spotlight PA Berks Bureau and help revitalize investigative and accountability reporting in Berks County."
 actionText = "Donate Now →"
 actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
-
-[[blocks]]
-layout = "takeover"
-title = "Help us write the future of journalism in Berks County."
-dek = "Join our historic effort to invigorate local news."
-image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
-signupHed = "Join our mailing list "
-signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and occasional updates about our planning project in Berks County"
-gaCategory = "newsletters:berks"
-gaForm = "newsletters:berks-full"
-hiddenField = "newsletter/berks-county-hidden.html"
-eager = true
 
 [[blocks]]
 layout = "supplemental"
