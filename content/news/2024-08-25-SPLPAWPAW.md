@@ -22,7 +22,7 @@ topics = ["PA Local"]
 twitter-title = "The do’s and don’ts of pawpaw, Pennsylvania’s ‘secret tropical fruit’"
 +++
 
-<em>Editor’s note: This interview first appeared in Spotlight PA’s PA Local newsletter on Sept. 9, 2022.</em>
+<em>Editor’s note: This interview first appeared in Spotlight PA’s </em><a href="https://www.spotlightpa.org/newsletters/palocal/"><em>PA Local newsletter</em></a><em> on Sept. 9, 2022.</em>
 
 Pennsylvania’s fleeting pawpaw season has arrived, and for the next few weeks the commonwealth’s native tropical fruit — nicknamed the &#34;hillbilly mango&#34; — is ripe for the picking, assuming you can find one.
 
