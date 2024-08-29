@@ -4,6 +4,7 @@ authors = ["Angela Couloumbis", "Stephen Caruso"]
 blurb = "Mastriano emerged from a crowded GOP field of nine candidates who have spent the last several months crisscrossing the state to rally support from party elites and the rank-and-file alike."
 byline = "Angela Couloumbis of Spotlight PA and Stephen Caruso of Spotlight PA"
 description = "Mastriano emerged from a crowded GOP field of nine candidates who have spent the last several months crisscrossing the state to rally support from party elites and the rank-and-file alike."
+feed-exclude = false
 image = "external/9wbzyhkytyt1p2m5fjp3yadsfc.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Doug Mastriano"
@@ -12,6 +13,7 @@ internal-id = "SPLRESULTS"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-05-17T21:53:39.838-04:00
 slug = "pa-primary-2022-governor-election-results"
 suppress-date = false
@@ -41,7 +43,7 @@ A bombastic speaker who sprinkles his stump speeches with historical and Biblica
 
 He appeared at or near the top of polls before the primary, despite raising just $1.6 million since the start of 2021 — near the bottom of the nine-person GOP field. Much of that total came from <a href="https://www.spotlightpa.org/news/2022/05/pennsylvania-primary-2022-governor-election-april-fundraising/">small individual donations</a>, while <a href="https://billypenn.com/2022/05/12/martins-potato-rolls-doug-mastriano-governor-philadelphia-restaurants/">potato roll magnate Jim Martin</a> gave more than $100,000.
 
-First elected to the state Senate in a 2019 special election, Mastriano started his time in Harrisburg as a conservative backbencher, best known for sharing <a href="https://www.penncapital-star.com/government-politics/conspiratorial-anti-muslim-memes-populate-facebook-page-of-state-senate-candidate/">Islamophobic memes</a> on his campaign Facebook account and sponsoring <a href="https://senatormastriano.com/2019/10/21/sen-mastriano-rep-borowicz-unveil-heartbeat-legislation/">a six-week abortion ban</a>.
+First elected to the state Senate in a 2019 special election, Mastriano started his time in Harrisburg as a conservative backbencher, best known for sharing <a href="https://www.penncapital-star.com/government-politics/conspiratorial-anti-muslim-memes-populate-facebook-page-of-state-senate-candidate/">Islamophobic memes</a> on his campaign Facebook account and sponsoring <a href="https://web.archive.org/20200806072616/https://senatormastriano.com/2019/10/21/sen-mastriano-rep-borowicz-unveil-heartbeat-legislation/">a six-week abortion ban</a>.
 
 His profile began its meteoric rise in 2020, as the COVID-19 pandemic shut down the world.
 
