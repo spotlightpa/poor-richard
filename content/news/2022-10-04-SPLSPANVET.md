@@ -4,6 +4,7 @@ authors = ["Ethan Edward Coston"]
 blurb = "¿Quiere saber más sobre los candidatos a las elecciones de 2022 en Pensilvania? Aprenda a investigar quiénes están en su papeleta, sus posturas y quiénes financian sus campañas."
 byline = "Ethan Edward Coston of Spotlight PA"
 description = "¿Quiere saber más sobre los candidatos a las elecciones de 2022 en Pensilvania? Aprenda a investigar quiénes están en su papeleta, sus posturas y quiénes financian sus campañas."
+feed-exclude = false
 image = "external/cxczne8hpptcmz8kv5gqmk78a8.jpeg"
 image-credit = "ELIZABETH ROBERTSON, JOSE F. MORENO, HEATHER KHALIFA, STEVEN M. FALK  / PHILADELPHIA INQUIRER"
 image-description = "Desde arriba a la izquierda, en el sentido de las agujas del reloj: John Fetterman, candidato al Senado; Mehmet Oz, candidato al Senado; Josh Shapiro, candidato a gobernador; Doug Mastriano, candidato a gobernador."
@@ -80,7 +81,7 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 <b>Vicegobernador:</b>
 
-- Austin Davis (D), <a href="https://joshshapiro.org/austin/">Sitio web</a> | <a href="https://www.facebook.com/AustinDavisPA">Facebook</a>
+- Austin Davis (D), <a href="https://web.archive.org/20220104125221/https://joshshapiro.org/austin/">Sitio web</a> | <a href="https://www.facebook.com/AustinDavisPA">Facebook</a>
 
 - Carrie DelRosso (R), <a href="https://carrieforpa.com/">Sitio web</a> | <a href="https://www.facebook.com/CarrieForPA">Facebook</a>
 
