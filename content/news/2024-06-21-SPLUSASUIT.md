@@ -3,6 +3,7 @@ authors = ["Angela Couloumbis", "Carter Walker"]
 blurb = "A right-wing group’s lawsuit claims Pennsylvania is violating federal laws on voting system accuracy. But experts say that argument is based on a misunderstanding of how elections work."
 byline = "Angela Couloumbis of Spotlight PA and Carter Walker of Votebeat"
 description = "A lawsuit claims PA is violating federal law on voting system accuracy. Experts say the argument is based on a false premise."
+feed-exclude = false
 image = "2023/11/01jn-4r6x-qsse-eper.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Workers sort mail-in ballots Nov. 7, 2023, at Lehigh County Government Center in Allentown, Lehigh County, Pennsylvania."
@@ -68,7 +69,7 @@ When Votebeat and Spotlight PA pointed out the error to Castor and asked whether
 
 Votebeat and Spotlight PA were not immediately able to independently check other claims in the suit about the accuracy of the state’s voter rolls. Many of the claims come from Audit the Vote PA, which has <a href="https://lancasteronline.com/news/politics/audit-the-vote-gave-us-its-canvassing-data-to-check-the-results-it-was-riddled/article_8f0a6c2a-cd6e-11ec-9f73-b3e07fd7b64b.html">a history of making inaccurate claims</a> about the voter rolls.
 
-Previous independent reviews, such as <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-issues-audit-of-voter-registration-system-calls-for-changes-at-pennsylvania-department-of-state">from former Pennsylvania Auditor General Eugene DePasquale</a> in 2019, found that the rolls have contained some errors.
+Previous independent reviews, such as <a href="https://web.archive.org/20240621202531/https://www.paauditor.gov/press-releases/auditor-general-depasquale-issues-audit-of-voter-registration-system-calls-for-changes-at-pennsylvania-department-of-state">from former Pennsylvania Auditor General Eugene DePasquale</a> in 2019, found that the rolls have contained some errors.
 
 Election officials often attribute this to a variety of factors. Legal requirements often prevent officials from removing out-of-date registrations for several years. When the state switched from paper registrations to the current electronic system, data entry was imperfect, such as missing birthdates on paper records being replaced with Jan. 1, 1901, in the electronic system. Additionally, data extracted from the system is merely a snapshot in time and doesn’t accurately reflect a system that is constantly being updated as people move, die, or change their information.
 
