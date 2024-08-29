@@ -1,8 +1,9 @@
 +++
-authors = ["Stephen Caurso"]
+authors = ["Stephen Caruso"]
 blurb = "Gov. Josh Shapiro, meanwhile, wants to combine state-run universities and community colleges into one system with cheaper tuition for many students."
-byline = "Stephen Caurso of Spotlight PA"
+byline = "Stephen Caruso of Spotlight PA"
 description = "Gov. Josh Shapiro, meanwhile, wants to combine state-run universities and community colleges into one system with cheaper tuition for many students."
+feed-exclude = false
 image = "2019/11/hacc3.jpeg"
 image-credit = "Aneri Pattani / Spotlight PA"
 image-description = "One of the campuses of HACC, Central Pennsylvania's Community College. Under Gov. Josh Shapiro’s budget plan, state-run universities and community colleges would be run under one system with cheaper tuition for many students."
