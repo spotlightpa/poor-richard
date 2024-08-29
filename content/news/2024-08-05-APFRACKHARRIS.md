@@ -17,7 +17,7 @@ slug = "pennsylvania-fracking-kamala-harris-donald-trump-2024-election"
 suppress-date = false
 title = "Fracking in Pa. set to become key election issue as Harris, Trump jockey for votes"
 title-tag = "In PA visit Trump criticizes Harris' old fracking stance"
-topics = ["Election 2024"]
+topics = ["Elections", "Environment"]
 twitter-title = "Trump cites Harris’ old fracking stance in latest visit to PA"
 +++
 
