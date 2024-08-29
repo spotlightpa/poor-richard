@@ -3,6 +3,7 @@ authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Cinco demócratas y dos republicanos aspiran a la nominación de su partido y aparecerán en la papeleta de las primarias el 23 de abril."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Cinco demócratas y dos republicanos aspiran a la nominación de su partido y aparecerán en la papeleta de las primarias el 23 de abril."
+feed-exclude = false
 image = "2024/03/01jz-0zxt-tkw9-m5wr.jpeg"
 image-credit = "Kent M. Wilhem / For Spotlight PA"
 image-description = "La Oficina del Fiscal General cerca del edificio del Capitolio en Harrisburg, Pensilvania."
@@ -129,7 +130,7 @@ Nacido en Pittsburgh, DePasquale estudió en el College of Wooster, la Universid
 
 Fue legislador de la Cámara de Representantes del estado durante tres legislaturas y auditor general del estado durante dos.
 
-En este último rol, DePasquale dijo que su oficina identificó aproximadamente 103 millones de dólares &#34;<a href="https://local21news.com/news/local/state-waste-millions-of-your-dollars-uncovered">en fondos estatales malgastados o recuperables</a>&#34;, <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-new-state-data-show-97-percent-drop-in-backlogged-rape-kits-lowest-total-in-at-least-four-years">llamó</a> la atención sobre los kits de violación atrasados y descubrió que la línea directa de denuncias de abuso infantil del estado <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-audit-leads-to-major-changes-at-childline-helping-protect-more-at-risk-children">no respondió a 58.000 llamadas</a> entre enero de 2014 y junio de 2016.
+En este último rol, DePasquale dijo que su oficina identificó aproximadamente 103 millones de dólares &#34;<a href="https://local21news.com/news/local/state-waste-millions-of-your-dollars-uncovered">en fondos estatales malgastados o recuperables</a>&#34;, <a href="https://web.archive.org/20240304173240/https://www.paauditor.gov/press-releases/auditor-general-depasquale-new-state-data-show-97-percent-drop-in-backlogged-rape-kits-lowest-total-in-at-least-four-years">llamó</a> la atención sobre los kits de violación atrasados y descubrió que la línea directa de denuncias de abuso infantil del estado <a href="https://web.archive.org/20240321214027/https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-audit-leads-to-major-changes-at-childline-helping-protect-more-at-risk-children">no respondió a 58.000 llamadas</a> entre enero de 2014 y junio de 2016.
 
 Sus dos mandatos como auditor general se caracterizaron por la publicación periódica de informes especiales centrados en cuestiones normativas que, según los críticos, iban más allá del <a href="https://www.pennlive.com/news/2019/07/deep-cut-made-to-pa-auditor-generals-budget-lawmakers-say-they-are-fed-up-with-him-using-his-office-for-his-political-agenda.html">ámbito tradicional de la oficina</a>. En uno de ellos se formularon <a href="https://whyy.org/articles/state-watchdog-releases-recommendations-for-reducing-gun-violence/">12 recomendaciones</a> para reducir las muertes por violencia armada. Otro calculaba los <u>ingresos que dejaba de percibir la commonwealth</u> por no gravar la marihuana.
 
