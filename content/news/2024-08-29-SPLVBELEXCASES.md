@@ -33,7 +33,7 @@ The county and Republican groups involved in the case are currently deciding whe
 
 Another case, in Butler County, featured a conflict between the county and voters represented by civil rights groups. Their disagreement is over whether voters whose mail ballots are rejected can still cast provisional ballots and have them counted.
 
-A common pleas judge ruled that the county did not have to accept provisional ballots cast in these situations. The plaintiffs&#39; legal team has already appealed the case to Commonwealth Court.
+A Common Pleas judge ruled that the county did not have to accept provisional ballots cast in these situations. The plaintiffs&#39; legal team has already appealed the case to Commonwealth Court.
 
 “We want \[all voters’\] votes to count, we want their voices to be heard, and we don&#39;t think that minor technical mistakes on mail-in ballot envelopes should prevent access to voting,” said Mimi McKenzie, legal director at the Public Interest Law Center, which along with the American Civil Liberties Union of Pennsylvania is representing plaintiffs in both cases.
 
@@ -45,7 +45,7 @@ Pennsylvania law requires that voters sign and date the outer return envelope of
 
 During the April primary, roughly 8,500 ballots, or 1.22% of those returned, were rejected for failing to meet one or more of these standards, according to an analysis of Pennsylvania Department of State data.
 
-Those numbers are expected to be higher this fall, as more voters will turn out to vote in the presidential election and opt to cast their ballots by mail. Election experts <a href="https://www.votebeat.org/pennsylvania/2024/05/31/mail-ballot-rejections-2024-primary-election-envelope-redesign/">note</a> that general-election voters can be more prone to errors, since they are often not as up to date on the latest requirements as more-engaged primary voters.
+Those numbers are expected to be higher this fall, as more voters will turn out to vote in the presidential election and opt to cast their ballots by mail. Election experts <a href="https://www.votebeat.org/pennsylvania/2024/05/31/mail-ballot-rejections-2024-primary-election-envelope-redesign/">note</a> that general election voters can be more prone to errors, since they are often not as up-to-date on the latest requirements as more-engaged primary voters.
 
 ## Butler County case deals with a question about provisional ballots
 
@@ -69,11 +69,11 @@ But in Butler County, Court of Common Pleas Judge S. Michael Yeager <a href="htt
 
 In other words, he believes state law would need to change to explicitly allow voters who cast a provisional ballot in this situation to have that ballot counted.
 
-After the ACLU and Public Interest Law Center appealed the decision, the Commonwealth Court ordered all parties to submit their written arguments by Aug. 23.
+After the ACLU and Public Interest Law Center appealed the decision, Commonwealth Court ordered all parties to submit their written arguments by Aug. 23.
 
 “I think the Commonwealth Court is very much aware of the various cases that have great importance for the November election,” McKenzie said. “It&#39;s all but guaranteed in this \[case\] that no matter which way they rule at the appellate court, the case will be appealed to the Pennsylvania Supreme Court. Obviously it&#39;s really important to have this issue resolved prior to the November election.”
 
-A definitive decision from the Commonwealth Court or state Supreme Court could dictate how these kinds of provisional ballots are treated statewide in November, regardless of how individual counties have decided to count them in the past.
+A definitive decision from Commonwealth Court or the state Supreme Court could dictate how these kinds of provisional ballots are treated statewide in November, regardless of how individual counties have decided to count them in the past.
 
 ## In Washington County, voters’ right to know they made an error
 
