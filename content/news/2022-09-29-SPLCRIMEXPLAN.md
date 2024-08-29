@@ -4,6 +4,7 @@ authors = ["Danielle Ohl"]
 blurb = "The top candidates for Pennsylvania governor have different stances on increasing opportunities for parole, the use of cash bail, and more."
 byline = "Danielle Ohl of Spotlight PA"
 description = "The top candidates for Pennsylvania governor have different stances on increasing opportunities for parole, the use of cash bail, and more."
+feed-exclude = false
 image = "external/49xk4atmqyeh9fsr4ywn4g8h6c.jpeg"
 image-credit = "TIM TAI / Philadelphia Inquirer"
 image-description = "Inmates listen during an information session about the commutation process at SCI Dallas in Dallas, Pa., on Thursday, Oct. 10, 2019. Lt. Gov. John Fetterman urged the audience of about 200 inmates, many with life sentences, to apply for commutation even if they have been denied in the past."
@@ -12,6 +13,7 @@ internal-id = "SPLCRIMEXPLAN"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-29T05:00:00-04:00
 series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-governor-race-crime-prison-bail-reform"
@@ -74,7 +76,7 @@ When interviewed by Spotlight PA earlier this year, Shapiro pushed back on the i
 
 <b>Mastriano</b> strongly backs law enforcement, frequently expressing support for various officers and departments on his campaign’s Facebook page.
 
-He is the lead sponsor of a bill that would create a <a href="https://senatormastriano.com/2022/06/14/senate-committee-passes-mastriano-bill-to-fund-the-police-and-protect-neighborhoods/">grant program</a> to send more state money to municipal police departments.
+He is the lead sponsor of a bill that would create a <a href="https://web.archive.org/20220614214915/https://senatormastriano.com/2022/06/14/senate-committee-passes-mastriano-bill-to-fund-the-police-and-protect-neighborhoods/">grant program</a> to send more state money to municipal police departments.
 
 “On day one our administration will be a law and order administration,” Mastriano said in a recent video posted to his Facebook page. He has also promised to add additional prosecutorial resources to “high-crime” areas, according to his campaign website and various Facebook posts.
 
@@ -102,7 +104,7 @@ In public statements, <b>Mastriano</b> has criticized prosecutors who have reduc
 
 “At a time when PA has had the third highest increase in violent crime, Gov. Wolf and AG Shapiro want to make it easier for criminals to quickly be put back out on the streets,” Mastriano <a href="https://www.facebook.com/SenatorDougMastriano/posts/pfbid07518cGPbQPQgaNiStFiNAWQ9QciicD1jcrBAU6YsK6ESeawjTUHffG3VcD4UHyqPl">wrote</a> on his Facebook page, responding to a <a href="https://twitter.com/GovernorTomWolf/status/1534195979758485504">tweet</a> from Wolf advocating for revising the bail system. “This is madness.”
 
-After a Milwaukee man who was out of jail on $1,000 bail drove into a Christmas parade and killed six people in 2021, Mastriano <a href="https://senatormastriano.com/2021/12/10/op-ed-the-grim-consequences-of-soft-on-crime-policy-spreads-to-pennsylvania/?fbclid=IwAR3yKWA2_HvCXfl1OiQeuErT-Yq4noRTp7hzDVGHbhuRJ1MXhNOyneKlu6U">wrote</a> on his state Senate website that he opposes prosecutors who seek to reduce bail burdens.
+After a Milwaukee man who was out of jail on $1,000 bail drove into a Christmas parade and killed six people in 2021, Mastriano <a href="https://web.archive.org/20220125143115/https://senatormastriano.com/2021/12/10/op-ed-the-grim-consequences-of-soft-on-crime-policy-spreads-to-pennsylvania/">wrote</a> on his state Senate website that he opposes prosecutors who seek to reduce bail burdens.
 
 Citing the Wisconsin rampage, Mastriano claimed “the elimination of cash bail will almost certainly lead to an influx of violent crime from freshly released criminals.”
 
