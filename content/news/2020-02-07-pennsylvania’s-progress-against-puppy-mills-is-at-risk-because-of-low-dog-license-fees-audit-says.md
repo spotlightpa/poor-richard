@@ -15,7 +15,7 @@ slug = "pennsylvanias-progress-against-puppy-mills-is-at-risk-because-of-low-dog
 
 HARRISBURG — The Pennsylvania bureau tasked with discovering puppy mills and handling dangerous dogs expects to run out of money by this summer, in part because license fees for the state's canines are stuck at pre-2000 levels.
 
-In a [report](https://www.paauditor.gov/press-releases/auditor-general-depasquale-fights-for-adequate-funding-to-continue-dog-law-enforcement-efforts) released Thursday, state Auditor General Eugene DePasquale said the Bureau of Dog Law Enforcement’s financial situation means it may no longer be able to “make sure dogs and puppies offered for sale or held in boarding facilities are kept in safe, humane conditions.”
+In a [report](https://web.archive.org/20200215093452/https://www.paauditor.gov/press-releases/auditor-general-depasquale-fights-for-adequate-funding-to-continue-dog-law-enforcement-efforts) released Thursday, state Auditor General Eugene DePasquale said the Bureau of Dog Law Enforcement’s financial situation means it may no longer be able to “make sure dogs and puppies offered for sale or held in boarding facilities are kept in safe, humane conditions.”
 
 “We have made tremendous strides since 2007 when we were the puppy mill capital of the nation,” DePasquale said at a news conference Thursday in the Capitol. “We are not in the same state today, but we can and will do better.”
 

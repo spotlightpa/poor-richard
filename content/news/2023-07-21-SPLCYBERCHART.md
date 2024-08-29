@@ -87,7 +87,7 @@ The bill would also subject agencies that enter into contracts with cyber charte
 
 Unlike public schools, many of which have their own business offices, cyber charters hire financial management companies. Those companies handle millions of dollars in taxpayer funding, but their books can&#39;t be reviewed by state officials or the public because they are private organizations.
 
-Former Auditor General Eugene DePasquale, a Democrat, found that one such company was &#34;<a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-lincoln-learning-solutions-81-8-million-reserve-points-to-further-need-for-charter-school-law-reforms">operating without boundaries or accountability</a>&#34; and that it was unclear what services it had provided. The company had meanwhile been handing out pay raises to executives.
+Former Auditor General Eugene DePasquale, a Democrat, found that one such company was &#34;<a href="https://web.archive.org/20221108222520/https://www.paauditor.gov/press-releases/auditor-general-depasquale-lincoln-learning-solutions-81-8-million-reserve-points-to-further-need-for-charter-school-law-reforms">operating without boundaries or accountability</a>&#34; and that it was unclear what services it had provided. The company had meanwhile been handing out pay raises to executives.
 
 While debating the bill on the state House floor, Rep. Torren Ecker (R., Adams) said the Right-to-Know requirement is too broad — it would include companies hired for construction projects, for example.
 
@@ -106,4 +106,3 @@ Brouillette, the cyber charter advocate, said those ads are necessary.
 Under the bill, all paid media from cyber charter schools would have to disclose that the ads were paid for using taxpayer dollars. Cyber charters would also be prohibited from sponsoring public events.
 
 <em>DaniRae Renno is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

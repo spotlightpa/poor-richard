@@ -32,7 +32,7 @@ The horse-racing industry [disagrees](https://pennhorseracing.com/news/horse-rac
 
 If lawmakers agree to pull $204 million out of the fund for the scholarship program, it wouldn’t be the first time that particular piggy bank has been raided.
 
-Between 2010 and 2014, the legislature [diverted](https://www.paauditor.gov/press-releases/auditor-general-depasquale-warns-pennsylvania%E2%80%99s-horse-racing-industry-in-jeopardy-due-to-diversion-of-funds-declining-revenue-millions-of-dollars-intended-for-regulation-oversight-of-racing-industry-funneled-to-other-purposes) $212 million from the Race Horse Development Trust Fund, mostly to fill budget gaps, according to an audit. But it's hardly the only victim of fiscal maneuvers.
+Between 2010 and 2014, the legislature [diverted](https://web.archive.org/20201004011156/https://www.paauditor.gov/press-releases/auditor-general-depasquale-warns-pennsylvania%E2%80%99s-horse-racing-industry-in-jeopardy-due-to-diversion-of-funds-declining-revenue-millions-of-dollars-intended-for-regulation-oversight-of-racing-industry-funneled-to-other-purposes) $212 million from the Race Horse Development Trust Fund, mostly to fill budget gaps, according to an audit. But it's hardly the only victim of fiscal maneuvers.
 
 The Motor License Fund, for example, is bankrolled by license fees and gas taxes and was meant to be used to repair state highways. Instead, it now primarily pays for the Pennsylvania State Police.
 
