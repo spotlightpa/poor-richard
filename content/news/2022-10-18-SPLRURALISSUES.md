@@ -4,6 +4,7 @@ authors = ["Ashad Hajela", "Min Xian"]
 blurb = "The winner of the 2022 Pennsylvania race for governor will have the authority to address a wide range of issues affecting roughly 3.4 million people."
 byline = "Ashad Hajela and Min Xian of Spotlight PA State College"
 description = "The winner of the 2022 Pennsylvania race for governor will have the authority to address a wide range of issues affecting roughly 3.4 million people."
+feed-exclude = false
 image = "external/dp3t216qv6mf6ggcvz2pgyp3v4.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Pennsylvania’s $81.5 billion agriculture sector supported 301,900 jobs and $14.5 billion in labor income in 2019, according to the state Department of Agriculture."
@@ -12,6 +13,7 @@ internal-id = "SPLRURALISSUES"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-10-18T05:00:27-04:00
 series = ["One Vote, Two Pennsylvanias"]
 slug = "pa-election-2022-mastriano-shapiro-broadband-rural-farms-health-care"
@@ -40,7 +42,7 @@ In Pennsylvania, access to health care in rural regions is narrowing as some hos
 
 Both candidates support promoting access to telemedicine. Mastriano has supported a bill that would do so, and Shapiro voices support for expanding access to telemedicine on his campaign website.
 
-Mastriano also <a href="https://senatormastriano.com/2019/11/07/senator-mastriano-touts-progress-on-healthcare-issues/">supported</a> and voted for Peyton’s Law, which helps inform student-athletes and their parents about the importance of testing to identify heart conditions that can lead to sudden cardiac arrest, which is crucial in rural communities due to limited access to emergency services.
+Mastriano also <a href="https://web.archive.org/20200806062848/https://senatormastriano.com/2019/11/07/senator-mastriano-touts-progress-on-healthcare-issues/">supported</a> and voted for Peyton’s Law, which helps inform student-athletes and their parents about the importance of testing to identify heart conditions that can lead to sudden cardiac arrest, which is crucial in rural communities due to limited access to emergency services.
 
 Mastriano is also one of the lead sponsors of a bill that would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0957">cap insulin pricing</a>, which pertains to people in rural areas because they <a href="https://www.ruralhealthinfo.org/toolkits/diabetes/1/rural-concerns">face higher risk factors for diabetes</a> and have access to fewer services.
 
@@ -70,7 +72,7 @@ Shapiro’s campaign told Spotlight PA that he will prioritize expanding quality
 
 Shapiro was also part of a <a href="https://www.attorneygeneral.gov/taking-action/attorney-general-shapiro-to-fcc-dont-gut-broadband-consumer-protections/">bipartisan coalition of attorneys general who in 2017</a> opposed a petition from the broadband industry to stop states from enforcing false advertising laws on internet speeds.
 
-Mastriano did not respond to questions about his position on broadband, but in a <a href="https://senatormastriano.com/2022/03/25/mastriano-announces-over-800-thousand-in-grant-funding-to-expand-broadband-internet-in-franklin-county/">March press release, he reported grant funding of more than $800,000</a> that would go toward expanding high-speed broadband internet in Franklin County.
+Mastriano did not respond to questions about his position on broadband, but in a <a href="https://web.archive.org/20220520135753/https://senatormastriano.com/2022/03/25/mastriano-announces-over-800-thousand-in-grant-funding-to-expand-broadband-internet-in-franklin-county/">March press release, he reported grant funding of more than $800,000</a> that would go toward expanding high-speed broadband internet in Franklin County.
 
 ### Workforce development
 
