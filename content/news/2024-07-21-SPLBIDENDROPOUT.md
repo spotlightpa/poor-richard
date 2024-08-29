@@ -17,7 +17,7 @@ slug = "pennsylvania-joe-biden-2024-presidential-race-drops-out"
 suppress-date = false
 title = "President Joe Biden drops out of 2024 race, endorses VP Kamala Harris"
 title-tag = "President Joe Biden drops out of 2024 race"
-topics = ["Election 2024"]
+topics = ["Elections"]
 twitter-title = "President Joe Biden drops out of 2024 race"
 +++
 
