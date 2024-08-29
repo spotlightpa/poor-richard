@@ -46,7 +46,7 @@ More than 200 residential facilities and 600 outpatient providers are licensed b
 
 
 
-These facilities and providers are subject to a host of federal and state regulations. But a [2017 report from the auditor general](https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-multi-agency-attack-on-opioid-epidemic-shows-progress-audit-outlines-path-toward-greater-success) found the Pennsylvania agencies responsible for overseeing addiction treatment struggle to collect accurate data and monitor the effectiveness of their programs, in some cases due to underfunding and understaffing.
+These facilities and providers are subject to a host of federal and state regulations. But a [2017 report from the auditor general](https://web.archive.org/20191229233907/https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-multi-agency-attack-on-opioid-epidemic-shows-progress-audit-outlines-path-toward-greater-success) found the Pennsylvania agencies responsible for overseeing addiction treatment struggle to collect accurate data and monitor the effectiveness of their programs, in some cases due to underfunding and understaffing.
 
 
 

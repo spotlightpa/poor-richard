@@ -62,7 +62,7 @@ A spokesperson for Shapiro’s campaign said the tax cut could be offset by Penn
 
 Mastriano told Spotlight PA in response to written questions that the tax cut would bring new businesses and workers into the state, so the revenue loss would be “negligible.”
 
-{{<picture src="external/qcthq1vwbwjtnc8gcejg0nenfm.jpeg" description="Doug Mastriano, a state senator, plans to eliminate at least 55,000 state regulations in his first 100 days in office." caption="Doug Mastriano, a state senator, plans to eliminate at least 55,000 state regulations in his first 100 days in office." credit="Tyger Williams / Philadelphia Inquirer">}} 
+{{<picture src="external/qcthq1vwbwjtnc8gcejg0nenfm.jpeg" description="Doug Mastriano, a state senator, plans to eliminate at least 55,000 state regulations in his first 100 days in office." caption="Doug Mastriano, a state senator, plans to eliminate at least 55,000 state regulations in his first 100 days in office." credit="Tyger Williams / Philadelphia Inquirer">}}
 
 <div id="spl-reg"></div>
 
@@ -94,7 +94,7 @@ Shapiro has <a href="https://web.archive.org/web/20221105124311/https://joshshap
 
 Mastriano has mentioned innovation far less, but told Spotlight PA that as governor, he would “work to ensure that Pennsylvania attracts the best and brightest entrepreneurs.”
 
-{{<picture src="external/hpa0k6v45127t17f4nf53vfc1c.jpeg" description="Josh Shapiro has proposed a gas tax rebate of $250 per vehicle — for up to four vehicles per household — for all residents, regardless of income." caption="Josh Shapiro has proposed a gas tax rebate of $250 per vehicle — for up to four vehicles per household — for all residents, regardless of income." credit="Alejandro A. Alvarez / Philadelphia Inquirer">}} 
+{{<picture src="external/hpa0k6v45127t17f4nf53vfc1c.jpeg" description="Josh Shapiro has proposed a gas tax rebate of $250 per vehicle — for up to four vehicles per household — for all residents, regardless of income." caption="Josh Shapiro has proposed a gas tax rebate of $250 per vehicle — for up to four vehicles per household — for all residents, regardless of income." credit="Alejandro A. Alvarez / Philadelphia Inquirer">}}
 
 <div id="spl-gas"></div>
 
@@ -114,7 +114,7 @@ Instead, Shapiro has proposed a <a href="https://web.archive.org/web/20221106190
 
 Additionally, not all the money from the gas tax actually goes to pay for roads and bridges. Every year, hundreds of millions of dollars are <a href="https://triblive.com/news/pennsylvania/pa-roads-bridges-to-get-extra-175m-as-funding-is-freed-up-from-state-police/">transferred</a> to help fund Pennsylvania State Police.
 
-A report in 2019 by the state auditor general <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-penndot-audit-finds-4-2-billion-diverted-from-repairing-roads-bridges">found that</a> the $4.25 billion transferred since 2012 to State Police from the Motor License Fund — which provides about half of PennDOT’s budget — had delayed planned repairs. Last year, a state commission <a href="https://web.archive.org/20220303092357/https://www.penndot.pa.gov/about-us/funding/Documents/TROC-Final-Report.pdf">recommended ending the transfers</a>, which would require the governor and lawmakers to agree on another way to pay for State Police.
+A report in 2019 by the state auditor general <a href="https://web.archive.org/20220129055713/https://www.paauditor.gov/press-releases/auditor-general-depasquale-penndot-audit-finds-4-2-billion-diverted-from-repairing-roads-bridges">found that</a> the $4.25 billion transferred since 2012 to State Police from the Motor License Fund — which provides about half of PennDOT’s budget — had delayed planned repairs. Last year, a state commission <a href="https://web.archive.org/20220303092357/https://www.penndot.pa.gov/about-us/funding/Documents/TROC-Final-Report.pdf">recommended ending the transfers</a>, which would require the governor and lawmakers to agree on another way to pay for State Police.
 
 Both candidates have said they support ending the transfers, but haven’t specified how they would replace the State Police funding.
 
