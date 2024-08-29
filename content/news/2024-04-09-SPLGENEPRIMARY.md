@@ -3,6 +3,7 @@ authors = ["Félicie Jungels", "Maya Mehrara", "Sophia Takla"]
 blurb = "Here’s what Democrats need to know about Eugene DePasquale before they vote for attorney general April 23."
 byline = "Félicie Jungels, Maya Mehrara, and Sophia Takla for Spotlight PA"
 description = "Eugene DePasquale is one of five Democrats vying for the party’s nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "cas/3q7f-14rs-kt4w-t5ax.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Democratic attorney general candidate Eugene DePasquale"
@@ -46,7 +47,7 @@ Born in Pittsburgh, DePasquale attended the College of Wooster, the University o
 
 He served three terms as a state House lawmaker and was the state auditor general for two terms.
 
-In the latter role, DePasquale said his office identified roughly $103 million “<a href="https://local21news.com/news/local/state-waste-millions-of-your-dollars-uncovered">in misspent or recoverable state funds</a>,” <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-new-state-data-show-97-percent-drop-in-backlogged-rape-kits-lowest-total-in-at-least-four-years">brought attention</a> to backlogged rape kits, and found the state’s child abuse reporting hotline <a href="https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-audit-leads-to-major-changes-at-childline-helping-protect-more-at-risk-children">failed to answer 58,000 calls</a> between January 2014 and June 2016.
+In the latter role, DePasquale said his office identified roughly $103 million “<a href="https://local21news.com/news/local/state-waste-millions-of-your-dollars-uncovered">in misspent or recoverable state funds</a>,” <a href="https://web.archive.org/20240304173240/https://www.paauditor.gov/press-releases/auditor-general-depasquale-new-state-data-show-97-percent-drop-in-backlogged-rape-kits-lowest-total-in-at-least-four-years">brought attention</a> to backlogged rape kits, and found the state’s child abuse reporting hotline <a href="https://web.archive.org/20240321214027/https://www.paauditor.gov/press-releases/auditor-general-depasquale-says-audit-leads-to-major-changes-at-childline-helping-protect-more-at-risk-children">failed to answer 58,000 calls</a> between January 2014 and June 2016.
 
 His two terms as auditor general were marked by the regular release of special reports focused on policy issues critics say were beyond <a href="https://www.pennlive.com/news/2019/07/deep-cut-made-to-pa-auditor-generals-budget-lawmakers-say-they-are-fed-up-with-him-using-his-office-for-his-political-agenda.html">the traditional scope of the office</a>. One report laid out <a href="https://whyy.org/articles/state-watchdog-releases-recommendations-for-reducing-gun-violence/">12 recommendations</a> for reducing gun violence deaths. Another estimated how much <a href="https://www.inquirer.com/philly/business/cannabis/legalizing-marijuana-pa-auditor-general-tax-revenues-20180719.html">revenue the commonwealth was missing</a> by not taxing marijuana.
 
