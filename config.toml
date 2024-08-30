@@ -71,6 +71,7 @@ home = ["html", "redirects", "headers"]
 section = ["html"]
 
 [params]
+googleAnalytics = "GTM-NTQ87KG"
 imgproxy = "/imgproxy/"
 title = "Spotlight PA"
 logo = "/img/logos/circle-black-on-trans-920.png"
