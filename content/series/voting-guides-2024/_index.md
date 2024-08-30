@@ -7,4 +7,5 @@ title = "Voting Guides 2024"
 linktitle = "Pennsylvanians will be asked to vote on races for president, U.S. Senate, row offices, and more in 2024. Here’s what you need to know to make an informed vote."
 description = "Pennsylvanians will be asked to vote on races for president, U.S. Senate, row offices, and more in 2024. Here’s what you need to know to make an informed vote."
 link = ""
+aliases = ["/votingguides24/","/votinguides24/"]
 +++
