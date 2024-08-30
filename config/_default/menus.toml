@@ -40,19 +40,25 @@ url = "/about/partners"
 weight = 5
 
 [[about]]
+name = "Berks County"
+url = "/berks/"
+weight = 6
+
+[[about]]
 name = "Careers"
 url = "/jobs/"
-weight = 6
+weight = 7
+
+[[about]]
+name = "Mobile Apps"
+url = "/about/mobile-apps/"
+weight = 8
 
 [[about]]
 name = "Contact"
 url = "/contact/"
-weight = 7
+weight = 9
 
-[[about]]
-name = "Berks County"
-url = "/berks/"
-weight = 6
 
 [[about]]
 name = "Send a Tip"
