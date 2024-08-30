@@ -15,20 +15,29 @@
     "authors" (.Param "authors")
     "content_html" .Content
   -}}
-  {{- if $imgName := .Param "image" -}}
+  {{- $imgName := .Param "app-image" -}}
+  {{- $gravity := .Param "app-image-gravity" -}}
+  {{- $description := .Param "app-image-description" -}}
+  {{- $credit := .Param "app-image-credit" -}}
+  {{- if not $imgName -}}
+    {{- $imgName = .Param "image" -}}
+    {{- $gravity = .Param "image-gravity" -}}
+    {{- $description = .Param "image-description" -}}
+    {{- $credit = .Param "image-credit" -}}
+  {{- end -}}
+  {{- if $imgName -}}
     {{- $imgOpt := dict
         "filename" $imgName
         "width" 800
         "height" 1000
         "absURL" true
+        "gravity" $gravity
     -}}
     {{- $url := partial "helper/imgproxy" $imgOpt -}}
-    {{- $description := .Param "image-description" -}}
-    {{- $credit := .Param "image-credit" -}}
     {{- $item = $item | merge (dict
         "image" $url
-        "image_description" $description
-        "image_credit" $credit
+        "image_description" ($description | default "")
+        "image_credit" ($credit | default "")
     ) -}}
   {{- end -}}
   {{- $items = append $item $items -}}
