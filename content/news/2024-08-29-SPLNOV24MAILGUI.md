@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2024/04/01k2-j62a-z39p-6hg2.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Workers sort mail ballots on primary Election Day 2024 at Northampton County Courthouse in Easton, Pennsylvania."
+image-gravity = "no"
 internal-id = "SPLNOV24MAILGUI"
 kicker = "Elections"
 modal-exclude = false
