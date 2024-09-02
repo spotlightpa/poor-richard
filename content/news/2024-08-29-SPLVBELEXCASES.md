@@ -7,6 +7,7 @@ feed-exclude = false
 image = "external/7z605w11tn08h88fsrcxhnbqnm.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "Mail-in ballots are sorted and counted by workers on Election Day in Northampton County. "
+image-gravity = "we"
 internal-id = "SPLVBELEXCASES"
 kicker = "Elections"
 modal-exclude = false

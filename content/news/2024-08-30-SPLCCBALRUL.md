@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2023/11/01jn-4rmk-w3rm-9bm6.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A mail-in ballot drop box is displayed Nov. 7, 2023, at Northampton County Courthouse in Easton, Pennsylvania."
+image-gravity = "we"
 internal-id = "SPLCCBALRUL"
 kicker = "Elections"
 modal-exclude = false
