@@ -11,6 +11,7 @@ feed-exclude = false
 image = "2024/08/01kc-wf1p-md71-kjt0.png"
 image-credit = "Courtesy campaign Facebook pages"
 image-description = "Pennsylvania attorney general candidates Republican Dave Sunday and Democrat Eugene DePasquale."
+image-gravity = "ce"
 internal-id = "SPLAG24PRIMGU"
 kicker = "Elections"
 modal-exclude = false
