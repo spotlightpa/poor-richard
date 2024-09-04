@@ -1,8 +1,9 @@
 +++
 authors = ["Stephen Caruso"]
-blurb = "The entire Pennsylvania House and half of the state Senate will be on the ballot in 2024. Learn more about how to research the candidates."
+blurb = "All PA House lawmakers and half of the PA Senate will be on the ballot in 2024. Learn more about how to research the primary candidates."
 byline = "Stephen Caruso of Spotlight PA"
-description = "All PA House lawmakers and half of the PA Senate will be on the ballot in 2024. Learn more about how to research the candidates."
+description = "All PA House lawmakers and half of the PA Senate will be on the ballot in 2024. Learn more about how to research the primary candidates."
+feed-exclude = false
 image = "2023/08/01jd-ah70-ya37-gzhd.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "The dome of the Pennsylvania Capitol in Harrisburg."
@@ -14,8 +15,8 @@ published = 2024-04-11T04:00:00-04:00
 series = ["Voting Guides 2024"]
 slug = "pennsylvania-election-2024-legislative-house-senate-races-candidate-vetting-guide"
 suppress-date = false
-title = "Pa. election 2024: A guide to vetting primary legislative candidates"
-title-tag = "Election 2024: How to vet PA House and Senate candidates"
+title = "Pa. primary election 2024: A guide to vetting primary legislative candidates"
+title-tag = "Primary 2024: How to vet PA House and Senate candidates"
 topics = ["Elections"]
 +++
 
