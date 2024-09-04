@@ -20,7 +20,7 @@
 
 
   <nav
-    class="mt-10 items-start space-y-7 sm:mt-0 sm:flex sm:w-full sm:gap-x-5 sm:space-y-0 xl:w-72 xl:flex-wrap xl:space-y-7"
+    class="mt-10 flex flex-col items-start gap-y-7 sm:mt-0 sm:w-full sm:flex-row sm:gap-x-5 sm:gap-y-0 xl:w-72 xl:flex-wrap xl:space-y-7"
   >
     {{ range $i, $page := $pages }}
       {{ $params := partialCached "helper/page-params" . .RelPermalink }}
