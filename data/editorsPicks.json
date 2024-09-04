@@ -12,18 +12,17 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-03-SPLCARESTATS0924.md"
+    "content/news/2024-09-04-SPLDOCFOLLOW0924.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-27-SPLMEASLES24.md",
-    "content/news/2024-08-20-SPLSTROKE0819.md",
-    "content/news/2024-08-06-SPLHEATCARE0824.md",
-    "content/news/2024-08-13-SPLVOL0824.md"
+    "content/news/2024-08-26-SPLDOCTORS0824.md",
+    "content/news/2023-12-20-spl_marijuana_data.md",
+    "content/news/2024-01-04-SPLANXRES.md"
   ],
   "topSlots": [
+    "content/news/2024-09-03-SPLCARESTATS0924.md",
     "content/news/2024-09-02-SPLAG24PRIMGU.md",
-    "content/news/2024-08-30-SPLCCBALRUL.md",
-    "content/news/2024-08-30-SPLSCOPA24.md"
+    "content/news/2024-08-30-SPLCCBALRUL.md"
   ],
   "topper": []
 }
