@@ -2,6 +2,9 @@
 blurb = "Join us Sept. 19 for a live panel on the state’s child care staffing shortage and possible solutions"
 byline = "Spotlight PA Staff"
 description = "Join us Sept. 19 for a live event on Pennsylvania’s child care staffing shortage and potential solutions."
+event-date = 2024-09-19T18:00:00-04:00
+event-title = "CARE CRISIS: A live panel on Pennsylvania’s child care staffing shortage"
+event-url = "https://zoom.us/webinar/register/WN_1MeQvg5_ReazLc5CrxHkmw"
 feed-exclude = false
 image = "2024/05/01k3-j3mx-hzpz-jses.jpeg"
 image-credit = "Courtesy of Holli Zelinsky"
@@ -16,6 +19,7 @@ slug = "pennsylvania-child-care-crisis-shortage"
 suppress-date = false
 title = "Spotlight PA Event: How Pa.’s child care crisis affects you"
 title-tag = "What would it take to fix Pa.’s child care crisis?"
+topics = ["Events"]
 twitter-title = "What would it take to fix Pa.’s child care crisis?"
 +++
 
