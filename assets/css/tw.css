@@ -117,6 +117,25 @@
   @apply list-[circle];
 }
 
+.article-content .toc {
+  @apply my-8 rounded border border-g-3 bg-g-2 px-6 py-4 shadow;
+}
+
+.article-content .toc h3 {
+  @apply mb-2 text-xl font-semibold leading-tight;
+}
+.article-content .toc ul {
+  @apply list-disc pl-5;
+}
+
+.article-content .toc :where(ul, ol) :where(ul, ol) {
+  @apply pl-6;
+}
+
+.article-content .toc :where(ul, ol) ul {
+  @apply list-[circle];
+}
+
 .article-content > ol {
   @apply list-decimal pl-8;
 }
