@@ -3,6 +3,7 @@ authors = ["Elizabeth Estrada"]
 blurb = "En las primarias del 23 de abril, los ciudadanos de Pensilvania verán en sus papeletas candidatos a las elecciones estatales, incluido el fiscal general, así como para el Senado de EE.UU., entre otros."
 byline = "Elizabeth Estrada of Spotlight PA"
 description = "Sepa quién está en la papeleta, cuándo votar, cómo votar, encontrar su lugar de votación, emitir votos por correo, y más para las elecciones primarias de PA del 23 de abril."
+feed-exclude = false
 image = "2022/09/01hh-yc6r-egvv-nyac.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "A sign showing people where they should cast their ballots for an election."
@@ -27,6 +28,8 @@ HARRISBURG - El 23 de abril, demócratas y republicanos de toda Pensilvania deci
 En las papeletas hay candidatos a la presidencia, a la Cámara de Representantes y al Senado de EE.UU., a los tres cargos de fila de Pensilvania (fiscal general, auditor general y tesorero) y a la Cámara de Representantes y al Senado del estado. En todo el estado, dependiendo de dónde vivas, también puede haber preguntas en las papeletas.
 
 Para ayudarle a prepararse para las primarias de 2024 en Pensilvania, hemos respondido a algunas de sus preguntas más frecuentes a continuación:
+
+{{<toc>}}
 
 ### Preguntas más frecuentes sobre las elecciones primarias 2024:
 
@@ -68,6 +71,8 @@ Para ayudarle a prepararse para las primarias de 2024 en Pensilvania, hemos resp
 
   - <a href="#spl-heading-19">¿Qué más habrá en mi papeleta?</a>
 
+{{</toc>}}
+
 <h2 id="spl-heading-1">¿Cuándo son las elecciones primarias de 2024 en Pensilvania?</h2>
 
 Martes, 23 de abril de 2024. ¡Marque su calendario!
@@ -84,7 +89,7 @@ Puede registrarse en línea <a href="https://www.pavoterservices.pa.gov/pages/Vo
 
 Las solicitudes de registro de votantes en línea deben enviarse antes de las 11:59 p.m. de ese día. La junta electoral de su condado debe recibir las solicitudes por correo y en persona antes de las 5 p.m.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 <h2 id="spl-heading-4">¿Cómo puedo consultar mi registro electoral?</h2>
 
@@ -202,7 +207,7 @@ Actualmente, los demócratas controlan la <a href="https://www.spotlightpa.org/n
 
 Para saber quién se presenta en su distrito, visite <a href="https://www.vote411.org/es">VOTE411</a>, una herramienta del Fondo Educativo de la Liga de Mujeres Votantes.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 <h3 id="spl-heading-18">Oficinas de fila</h3>
 
@@ -232,5 +237,5 @@ En Filadelfia, se <a href="https://vote.phila.gov/media/2024P_Ballot_Questions.p
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Conozca más</a> sobre cómo Spotlight PA está cubriendo las elecciones de 2024.
 
-<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
+<strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
 
