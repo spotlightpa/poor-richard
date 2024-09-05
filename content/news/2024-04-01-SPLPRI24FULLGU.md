@@ -3,6 +3,7 @@ authors = ["Elizabeth Estrada"]
 blurb = "Pennsylvanians will see candidates for statewide races including attorney general, as well as U.S. Senate, and more on the April 23 primary election ballot."
 byline = "Elizabeth Estrada of Spotlight PA"
 description = "Learn who is on the ballot, when to vote, how to vote, find your polling place, cast mail ballots, and more for PA’s April 23 primary election."
+feed-exclude = false
 image = "2022/09/01hh-yc6r-egvv-nyac.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "A sign showing people where they should cast their ballots for an election."
@@ -28,17 +29,9 @@ HARRISBURG — On April 23, Democrats and Republicans across Pennsylvania will d
 
 On the ballot are candidates for president, U.S. House and Senate, Pennsylvania’s three row offices (attorney general, auditor general, and treasurer), and state House and Senate. Across the state, depending on where you live, there might also be ballot questions.
 
-To help you prepare for the 2024 primary in Pennsylvania, we’ve answered some of your most frequently asked questions below.
+To help you prepare for the 2024 primary in Pennsylvania, we’ve answered some of your most frequently asked questions below:
 
-{{<featured/ballyhoo
-  id="candidate-quiz"
-  image="2024/03/01k0-8hfj-zvrj-6vd3.jpeg"
-  hed="Which Pa. attorney general candidate do you align with?"
-  dek="To help highlight the limited differences between the candidates, Spotlight PA has created this quick quiz."
-  cta="Take the quiz →"
-  link="/elections-2024/candidate-quiz/"
->}}
-<br>
+{{<toc>}}
 
 ### Primary Election Day 2024 FAQ:
 
@@ -80,6 +73,8 @@ To help you prepare for the 2024 primary in Pennsylvania, we’ve answered some 
 
 - <a href="#spl-heading-19">What else will be on my ballot?</a>
 
+{{</toc>}}
+
 <h2 id="spl-heading-1">When is the 2024 primary Election Day in Pennsylvania?</h2>
 
 Tuesday, April 23, 2024. Mark your calendar!
@@ -96,7 +91,7 @@ You can register online <a href="https://www.pavoterservices.pa.gov/pages/VoterR
 
 Online voter registration applications must be submitted by 11:59 p.m. that day. Your county board of elections must receive mail and in-person applications by 5 p.m.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 <h2 id="spl-heading-4">How can I check my voter registration?</h2>
 
@@ -214,7 +209,7 @@ Currently, Democrats have control of the <a href="https://www.spotlightpa.org/ne
 
 To find who is running in your district, visit <a href="https://www.vote411.org/">VOTE411</a>, a tool from the League of Women Voters Education Fund.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 <h3 id="spl-heading-18">Row offices</h3>
 
@@ -244,5 +239,5 @@ In Philadelphia, there will be <a href="https://vote.phila.gov/media/2024P_Ballo
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Learn more</a> about how Spotlight PA is covering the 2024 election.
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
