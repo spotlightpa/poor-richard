@@ -49,6 +49,8 @@ Two TV debates, both featuring the two major party candidates, are currently sch
 
 <em>This guide may be updated as additional information about the candidates becomes available.</em>
 
+{{<toc>}}
+
 ### Skip to section
 
 - <a href="#spl-heading-1">What does the attorney general do?</a>
@@ -68,6 +70,8 @@ Two TV debates, both featuring the two major party candidates, are currently sch
   - <a href="#spl-heading-8">Richard L. Weiss, Green Party</a>
 
   - <a href="#spl-heading-9">Robert Cowburn, Libertarian</a>
+
+{{</toc>}}
 
 <h2 id="spl-heading-1">What does the attorney general do?</h2>
 
