@@ -112,6 +112,7 @@ export function addGAListeners() {
           .map((el) => el.dataset.gaCategory)
           .join(":");
         let donateURL = `https://spotlightpa.fundjournalism.org/${theme}?campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${medium}&utm_campaign=${campaign}`;
+        donateURL = `https://spotlightpa.donorsupport.co/page/donate-onetime?utm_source=${source}&utm_medium=${medium}&utm_campaign=temporary-redirect`;
         el.href = donateURL;
       }
     },
