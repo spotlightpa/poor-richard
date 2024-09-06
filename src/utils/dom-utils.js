@@ -62,6 +62,12 @@ export function loadItem(name, { useSession = false } = {}) {
   return JSON.parse(data);
 }
 
+export function pushItem(name, obj, { useSession = false } = {}) {
+  let a = loadItem(name, { useSession }) || [];
+  a.push(obj);
+  storeItem(name, a, { useSession });
+}
+
 export function storeDate(name, date, { useSession = false } = {}) {
   let data = +date;
   storeItem(name, data, { useSession });

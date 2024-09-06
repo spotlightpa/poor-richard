@@ -3,6 +3,7 @@ import {
   storeItem,
   loadDate,
   storeDate,
+  pushItem,
 } from "../utils/dom-utils.js";
 
 const onTestNewsletterPage = !!window.location.href.match(/debug=newsletter/);
@@ -107,6 +108,30 @@ export let modalKind = (() => {
   }
   return "sticky";
 })();
+
+/*
+- Is there a prior object? If not, load in the junk from before.
+- Push this page
+- Figure out what modals the page has
+- Rank the modals and decide what to push
+
+spl_user_hist is an Array of Events.
+An Event is an object with
+
+{
+  k: Kind - pageview, click, submit, view
+  t: Timestamp (+Date())
+  v: Value (pageview:path, click:action, submit:kind, view:kind)
+}
+*/
+let userHistory = loadItem("spl_user_history");
+
+if (!userHistory) {
+}
+
+export function pushUserHistory({ kind, value }) {
+  pushItem("spl_user_history", { k: kind, t: +now, v: value });
+}
 
 export function recordModalNewsletterView() {
   storeDate(SAW_NEWSLETTER_MODAL_KEY, now);

@@ -1,5 +1,9 @@
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
-import { recordNewsletterSignup, funnelStatus } from "./metrics.js";
+import {
+  recordNewsletterSignup,
+  funnelStatus,
+  pushUserHistory,
+} from "./metrics.js";
 
 export const DO_NOT_TRACK_KEY = "do-not-track";
 
@@ -137,5 +141,9 @@ export function analyticsPlugin(Alpine) {
       let valid = el.reportValidity();
       if (valid) recordNewsletterSignup();
     });
+  });
+
+  Alpine.magic("pushUserHistory", () => ({ kind, value }) => {
+    pushUserHistory({ kind, value });
   });
 }
