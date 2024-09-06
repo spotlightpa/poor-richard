@@ -5,37 +5,37 @@ code = 301
 
 [[redirects]]
 from = "/donate/"
-to = "https://spotlightpa.fundjournalism.org/donate"
+to = "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=slash-donate"
 code = 302
 
 [[redirects]]
 from = "/leaders"
-to = "https://spotlightpa.fundjournalism.org/leaders"
+to = "https://spotlightpa.donorsupport.co/page/LIA?utm_campaign=leaders-in-action-on-support-page"
 code = 302
 
 [[redirects]]
 from = "/donate/statecollege"
-to = "https://spotlightpa.fundjournalism.org/statecollege"
+to = "https://spotlightpa.donorsupport.co/page/sc-onetime?utm_campaign=slash-donate-statecollege"
 code = 302
 
 [[redirects]]
 from = "/statecollege/donate"
-to = "https://spotlightpa.fundjournalism.org/statecollege"
+to = "https://spotlightpa.donorsupport.co/page/sc-onetime?utm_campaign=slash-statecollege-donate"
 code = 302
 
 [[redirects]]
 from = "/donate/berks"
-to = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+to = "https://spotlightpa.donorsupport.co/page/berks-onetime?utm_campaign=slash-donate-berks"
 code = 302
 
 [[redirects]]
 from = "/berks/donate"
-to = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+to = "https://spotlightpa.donorsupport.co/page/berks-onetime?utm_campaign=slash-berks-donate"
 code = 302
 
 [[redirects]]
 from = "/bizmember"
-to = "https://spotlightpa.fundjournalism.org/business-membership/?campaign=701Ub0000020CsuIAE"
+to = "https://spotlightpa.donorsupport.co/page/business?utm_campaign=business-membership-page"
 code = 302
 
 [[redirects]]
