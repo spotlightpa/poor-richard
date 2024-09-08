@@ -1,30 +1,24 @@
 +++
 arc-id = "V5JRIA2HIRGZRI4UYKDZ2HZBCU"
-internal-id = "SPLFIREWORKS03"
-internal-budget = ""
-image = "external/ekfmbdf9x7hq7v8tznbbr3fegm.jpeg"
-image-description = "States lawmakers are considering a proposal that would allow certain municipalities to ban residents from setting off fireworks."
-image-caption = ""
-image-credit = "Paul Vasiliades / Flickr"
-image-size = ""
-published = 2020-07-03T10:30:00Z
-slug = "fireworks-pennsylvania-ban-repeal-complaints-lawmakers"
 authors = ["Cynthia Fernandez"]
-byline = "Cynthia Fernandez of Spotlight PA"
-title = "In Pa.’s growing fireworks war, it’s fed-up residents versus cold, hard cash"
-subtitle = ""
-description = "With sales booming and complaints pouring in, some lawmakers want to reinstate a ban, but the state desperately needs the tax revenue."
 blurb = "With sales booming and complaints pouring in, some lawmakers want to reinstate a ban, but the state desperately needs the tax revenue."
+byline = "Cynthia Fernandez of Spotlight PA"
+description = "With sales booming and complaints pouring in, some lawmakers want to reinstate a ban, but the state desperately needs the tax revenue."
+feed-exclude = false
+image = "external/ekfmbdf9x7hq7v8tznbbr3fegm.jpeg"
+image-credit = "Paul Vasiliades / Flickr"
+image-description = "States lawmakers are considering a proposal that would allow certain municipalities to ban residents from setting off fireworks."
+internal-id = "SPLFIREWORKS03"
 kicker = "The Capitol"
-topics = ["The Capitol"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
+pinned = false
+published = 2020-07-03T06:30:00-04:00
+slug = "fireworks-pennsylvania-ban-repeal-complaints-lawmakers"
+suppress-date = false
+suppress-featured = false
+title = "In Pa.’s growing fireworks war, it’s fed-up residents versus cold, hard cash"
+topics = ["The Capitol"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -52,7 +46,7 @@ The 2017 law levied a 12% tax on fireworks on top of the state’s 6% sales tax.
 
 This year, sales for fireworks have boomed, as families with young children look for outdoor summer activities at home, according to a spokesperson for the Pennsylvania Pyrotechnics Association.
 
-And at least anecdotally, people across Pennsylvania and the U.S. are reporting what seems like incessant fireworks, inspiring headlines including “<a href="https://www.thecut.com/2020/06/why-are-so-many-fireworks-going-off.html">What’s up with all these fireworks</a>” and “<a href="https://www.marketwatch.com/story/so-seriously-whats-up-with-the-fireworks-everywhere-these-days-2020-06-24">So seriously, what’s up with the fireworks everywhere these days</a>?”
+And at least anecdotally, people across Pennsylvania and the U.S. are reporting what seems like incessant fireworks, inspiring headlines including “<a href="https://web.archive.org/20200623145021/https://www.thecut.com/2020/06/why-are-so-many-fireworks-going-off.html">What’s up with all these fireworks</a>” and “<a href="https://web.archive.org/20200625033853/https://www.marketwatch.com/story/so-seriously-whats-up-with-the-fireworks-everywhere-these-days-2020-06-24">So seriously, what’s up with the fireworks everywhere these days</a>?”
 
 In Philadelphia, police fielded more than <a href="https://www.inquirer.com/news/philadelphia/fireworks-philadelphia-complaints-police-neighborhood-20200702.html">8,500 fireworks complaints</a> between May 29 and June 29, while in York, city officials have created a <a href="https://www.yorkdispatch.com/story/news/local/2020/06/26/fireworks-complaints-continue-rise-york-county/3251218001/">special police unit</a> to deal with the problem. Pittsburgh, too, has <a href="https://www.post-gazette.com/news/crime-courts/2020/06/26/Pittsburgh-forms-illegal-fireworks-task-force-complaints-increase-city-limits/stories/202006260102" target=_blank>set up a task force</a> to respond to complaints.
 
