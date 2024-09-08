@@ -4,6 +4,7 @@ authors = ["Stephen Caruso"]
 blurb = "The federal government has given providers the OK to get five shots out of a one-dose vaccine vial. The state may purchase syringes to make those shots possible."
 byline = "Stephen Caruso of Spotlight PA"
 description = "The federal government has given providers the OK to get five shots out of a one-dose vaccine vial. The state may purchase syringes to make those shots possible."
+feed-exclude = false
 image = "2023/04/01j3-b93z-hpye-6gsk.jpeg"
 image-credit = "Elizabeth Robertson / Philadelphia Inquirer"
 image-description = "The federal government has allocated nearly 18,000 doses of the monkeypox vaccine to Pennsylvania and another 8,390 to Philadelphia specifically, according to federal data."
@@ -12,6 +13,7 @@ internal-id = "SPLMONKAID"
 kicker = "Health"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-08-25T05:00:58-04:00
 slug = "monkeypox-vaccine-cases-pa-wolf-adminisration-syringes"
 suppress-date = false
@@ -39,9 +41,9 @@ Rementer said Pennsylvania has received the go-ahead from the federal government
 
 As of last week, the commonwealth was still seeking further guidance from the U.S. Department of the Treasury on the limits of that spending. The U.S. Treasury did not immediately reply to a request for comment.
 
-As of Aug. 24, more than 440 cases of monkeypox had been reported in Pennsylvania, according to <a href="https://www.cdc.gov/poxvirus/monkeypox/response/2022/us-map.html">federal data.</a> More than half of reported cases — 257 — are in Philadelphia, <a href="https://www.phila.gov/programs/acute-communicable-disease-program/monkeypox/">according</a> to the city’s data. Other parts of the state, including Pittsburgh and State College, have also reported cases.
+As of Aug. 24, more than 440 cases of monkeypox had been reported in Pennsylvania, according to <a href="https://web.archive.org/20220610212618/https://www.cdc.gov/poxvirus/monkeypox/response/2022/us-map.html">federal data.</a> More than half of reported cases — 257 — are in Philadelphia, <a href="https://www.phila.gov/programs/acute-communicable-disease-program/monkeypox/">according</a> to the city’s data. Other parts of the state, including Pittsburgh and State College, have also reported cases.
 
-The virus, which spreads through extended close personal contact, can lead to rashes as well as respiratory symptoms, per the <a href="https://www.cdc.gov/poxvirus/monkeypox/symptoms.html">CDC</a>.
+The virus, which spreads through extended close personal contact, can lead to rashes as well as respiratory symptoms, per the <a href="https://web.archive.org/20220120134511/https://www.cdc.gov/poxvirus/monkeypox/symptoms.html">CDC</a>.
 
 The federal government has allocated nearly 18,000 doses of the monkeypox vaccine to Pennsylvania and another 8,390 to Philadelphia specifically, <a href="https://aspr.hhs.gov/SNS/Pages/JYNNEOS-Distribution.aspx">according</a> to federal data.
 
