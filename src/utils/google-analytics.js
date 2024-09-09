@@ -100,7 +100,8 @@ export function addGAListeners() {
             source = new URL(hostPage).host;
           }
         }
-        let theme = el.closest("[data-sf-theme]")?.dataset.sfTheme || "";
+        let theme =
+          el.closest("[data-sf-theme]")?.dataset.sfTheme || "donate-onetime";
         let salesforceCampaign =
           el.closest("[data-sf-campaign]")?.dataset.sfCampaign ||
           "701Dn000000YgokIAC";
@@ -112,7 +113,7 @@ export function addGAListeners() {
           .map((el) => el.dataset.gaCategory)
           .join(":");
         let donateURL = `https://spotlightpa.fundjournalism.org/${theme}?campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${medium}&utm_campaign=${campaign}`;
-        donateURL = `https://spotlightpa.donorsupport.co/page/donate-onetime?utm_source=${source}&utm_medium=${medium}&utm_campaign=temporary-redirect`;
+        donateURL = `https://spotlightpa.donorsupport.co/page/${theme}?utm_source=${source}&utm_medium=${medium}&utm_campaign=temporary-redirect`;
         el.href = donateURL;
       }
     },
