@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2024/09/01kd-eb2d-hayb-d0w3.png"
 image-credit = "Courtesy of candidate Facebook pages"
 image-description = "Auditor general candidates Tim DeFoor (Republican incumbent) and Malcolm Kenyatta (Democratic challenger)"
+image-gravity = "ce"
 internal-id = "SPLAUDGEN24GUI"
 kicker = "Elections"
 modal-exclude = false
