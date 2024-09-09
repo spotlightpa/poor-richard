@@ -12,18 +12,17 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-06-SPLAMENDSTALL.md"
+    "content/news/2024-09-09-SPLAUDGEN24GUI.md"
   ],
   "subfeatures": [
-    "content/news/2023-01-12-SPLCONEXP.md",
-    "content/news/2024-07-04-SPLSOLUPDATE.md",
-    "content/news/2024-01-16-SPLCON24UP.md",
-    "content/news/2021-05-26-SPLINSPECT27.md"
+    "content/news/2024-09-06-SPLBUTCCRUL.md",
+    "content/news/2024-09-02-SPLAG24PRIMGU.md",
+    "content/news/2024-08-30-SPLCCBALRUL.md"
   ],
   "topSlots": [
-    "content/news/2024-09-06-SPLBUTCCRUL.md",
-    "content/news/2024-09-05-SPLNEWSQUIZSEPT0524.md",
-    "content/statecollege/2024-09-05-SPLWATER0924.md"
+    "content/news/2024-09-06-SPLAMENDSTALL.md",
+    "content/statecollege/2024-09-05-SPLWATER0924.md",
+    "content/news/2024-09-03-SPLBUTTERFLY.md"
   ],
   "topper": []
 }
