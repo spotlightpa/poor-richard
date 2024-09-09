@@ -50,14 +50,6 @@
         <button
           type="button"
           class="{{ $btnClass }} {{ $inactiveClass }} btn-donate px-0"
-          :class="btnClass(freq === 'y')"
-          @click="setAmt('y', '180')"
-        >
-          Yearly
-        </button>
-        <button
-          type="button"
-          class="{{ $btnClass }} {{ $inactiveClass }} btn-donate px-0"
           :class="btnClass(freq === 'o')"
           @click="setAmt('o', '180')"
         >

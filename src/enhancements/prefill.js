@@ -25,16 +25,15 @@ export default function prefill() {
       this.showOther = false;
     },
     get donateURL() {
-      let campaign =
-        this.$el.closest("[data-sf-campaign]")?.dataset.sfCampaign ||
-        "701Dn000000YgouIAC";
-      let theme = this.$el.closest("[data-sf-theme]")?.dataset.sfTheme || "";
+      let theme =
+        this.$el.closest("[data-sf-theme]")?.dataset.sfTheme ||
+        "donate-onetime";
       let period = {
         o: "once",
         m: "monthly",
         y: "yearly",
       }[this.freq];
-      return `https://spotlightpa.fundjournalism.org/${theme}?campaign=${campaign}&&amount=${this.amount}&frequency=${period}&utm_source=spotlightpa.org&utm_campaign=donate-prefill`;
+      return `https://spotlightpa.donorsupport.co/page/${theme}?amount=${this.amount}&recurring=${period}&utm_source=spotlightpa.org&utm_campaign=donate-prefill`;
     },
   };
 }
