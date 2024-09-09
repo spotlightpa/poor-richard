@@ -39,7 +39,7 @@ image = "external/271g68k54vbhc5t32ctj0yf24g.jpeg"
 hed = "Revitalize Local News"
 body = "Become a founding donor of the Spotlight PA Berks Bureau and help revitalize investigative and accountability reporting in Berks County."
 actionText = "Donate Now →"
-actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+actionUrl = "/donate/berks/"
 
 [[blocks]]
 layout = "supplemental"
