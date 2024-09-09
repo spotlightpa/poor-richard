@@ -12,15 +12,16 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-09-SPLAUDGEN24GUI.md"
+    "content/news/2024-09-09-SPLPHIFRAUD.md"
   ],
   "subfeatures": [
+    "content/news/2024-09-09-APPREDEBATE.md",
     "content/news/2024-09-06-SPLBUTCCRUL.md",
     "content/news/2024-09-02-SPLAG24PRIMGU.md",
     "content/news/2024-08-30-SPLCCBALRUL.md"
   ],
   "topSlots": [
-    "content/news/2024-09-09-APPREDEBATE.md",
+    "content/news/2024-09-09-SPLAUDGEN24GUI.md",
     "content/news/2024-09-06-SPLAMENDSTALL.md",
     "content/statecollege/2024-09-05-SPLWATER0924.md"
   ],
