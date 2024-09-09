@@ -35,14 +35,6 @@
       <button
         type="button"
         class="{{ $btnClass }} {{ $inactiveClass }}"
-        :class="btnClass(freq === 'y')"
-        @click="setAmt('y', '180')"
-      >
-        Yearly
-      </button>
-      <button
-        type="button"
-        class="{{ $btnClass }} {{ $inactiveClass }}"
         :class="btnClass(freq === 'o')"
         @click="setAmt('o', '180')"
       >
