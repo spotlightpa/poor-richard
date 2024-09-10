@@ -130,4 +130,4 @@ X-Frame-Options = "DENY"
 [[headers]]
 for = "/elections/chatbot/*"
 [headers.values]
-Basic-Auth = "2024primary:noteworthily"
+# Basic-Auth = "2024primary:noteworthily"
