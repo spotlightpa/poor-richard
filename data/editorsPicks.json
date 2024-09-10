@@ -12,17 +12,17 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-10-SPLLEGVET24GEN.md"
+    "content/news/2024-09-10-SPLFIRESPEECH.md"
   ],
   "subfeatures": [
-    "content/news/2024-09-09-APPREDEBATE.md",
-    "content/news/2024-09-09-SPLAUDGEN24GUI.md",
-    "content/news/2024-09-06-SPLBUTCCRUL.md"
+    "content/news/2024-05-14-SPLGAZAORDER.md",
+    "content/news/2024-08-06-SPLVEEPLESSONS.md",
+    "content/news/2024-07-26-SPLSHAPVOUCH.md"
   ],
   "topSlots": [
-    "content/news/2024-09-09-SPLPHIFRAUD.md",
-    "content/news/2024-09-06-SPLAMENDSTALL.md",
-    "content/news/2024-09-10-SPLCAREGUIDE0924.md"
+    "content/news/2024-09-10-SPLCAREGUIDE0924.md",
+    "content/news/2024-09-10-SPLLEGVET24GEN.md",
+    "content/news/2024-09-09-SPLPHIFRAUD.md"
   ],
   "topper": []
 }
