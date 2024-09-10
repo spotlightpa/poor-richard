@@ -1,6 +1,6 @@
 +++
 authors = ["Stephen Caruso"]
-blurb = "The entire Pennsylvania House and half of the state Senate will be on the ballot in 2024. Learn more about how to research the candidates."
+blurb = "The entire Pennsylvania House and half of the state Senate will be on the ballot in 2024. Learn more about how to research the candidates. "
 byline = "Stephen Caruso of Spotlight PA"
 description = "All PA House lawmakers and half of the PA Senate will be on the ballot in 2024. Learn more about how to research the candidates."
 feed-exclude = false
