@@ -19,8 +19,23 @@
 >
   {{ if eq $show "add-to-cal" }}
     <button
+      x-data='{
+        url: "https://unpkg.com/add-to-calendar-button@1.14.6/npm_dist/mjs/index.js",
+        data(el) {
+          return {
+            name: el.dataset.name,
+            startDate: el.dataset.date,
+            endDate: el.dataset.date,
+            options: ["Apple", "Google", "Outlook.com"],
+            timeZone: "America/New_York",
+            listStyle: "modal",
+            iCalFileName: el.dataset.name,
+          };
+        },
+      }'
+      @mouseover.once="import(url)"
       @click.prevent="
-        import(url).then((m) => m.atcb_action(data($el), $el))
+        import(url).then((m) => {window.m=m; m.atcb_action(data($el), $el)})
       "
       type="button"
       data-name="{{ $title }}"
