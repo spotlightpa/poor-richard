@@ -17,7 +17,7 @@ slug = "transit-utilities-hospitals-legislature-pennsylvania-fall-session"
 suppress-date = false
 title = "Public transit funding, utility protections, and more top Pa. legislature’s fall to-do list"
 title-tag = "Transit, utilities, and hospitals top PA legislative agenda"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Corrections"]
 twitter-title = "What’s on the Pa. legislature’s fall to-do list?"
 +++
 
@@ -103,9 +103,9 @@ Shapiro has publicly signaled support for parts of the lower chamber’s bill. T
 
 The expanded consumer protections are opposed by utility companies’ main lobby, the Energy Association of Pennsylvania, which argues the bills will give more leverage to customers who are behind on payments and lead to increased costs for all consumers. According to data from the Public Utility Commission — which regulates hundreds of providers across the state — gas and electric utilities <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-gas-electric-utility-shutoffs-protections-reauthorization-bill/">wrote off $187 million due to nonpayment in 2022</a>, out of a total of $11.2 billion they billed residential customers for services.
 
-Absent action, the law will expire on Dec. 31. If that happens, the Public Utility Commission will have to step in and develop new rules to regulate shut-offs while protections — such as the ban on winter utility disconnections — would go away.
-
 “It is our strong preference that the House and Senate reach a reasonable compromise and reauthorize the law rather than require the affected parties to go through another lengthy, difficult process at the PUC,” Terrance Fitzpatrick, president of the Energy Association of Pennsylvania, told Spotlight PA in an email.
+
+Absent action, the law will expire on Dec. 31. If that happens, the Public Utility Commission will have to step in and develop new rules to regulate shut-offs. However, the commission has already <a href="https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/052/chapter56/subchapEtoc.html&amp;d=reduce">adopted</a> some existing protections — such as the ban on winter utility disconnections — into its regulations, utility advocates say, and they will remain in force.
 
 <h2 id="spl-heading-3">Proposals target hospital staffing, transparency</h2>
 
@@ -132,6 +132,8 @@ Pittman declined to comment on the nurse staffing bill, but told Spotlight PA th
 The latter is sponsored by a mix of progressive Democrats and Freedom Caucus Republicans and is backed by conservative groups such as <a href="https://s3.us-east-2.amazonaws.com/pagopvideo/472355203.mp4">Americans for Prosperity</a>.
 
 “Transparency,” Pittman said of the proposal, “is always a positive for the consumer.”
+
+<em>Correction: This story originally misstated what will happen if Chapter 14 expires on Dec. 31.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
