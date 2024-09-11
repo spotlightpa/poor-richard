@@ -66,11 +66,6 @@ credits = """
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
 >}}
-{{<featured/credit
-    name="Jeff Rummel"
-    role="News Developer"
-    email="jrummel@spotlightpa.org"
->}}
 """
 form ="""
 {{<featured/promo-contact-form
