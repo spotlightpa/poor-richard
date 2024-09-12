@@ -188,6 +188,19 @@ cta = "Try Our Election Assistant →"
 link = "/elections/chatbot/"
 
 [[blocks]]
+layout = "events"
+id = "events"
+title = "Spotlight PA voter event series"
+image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
+
+[[blocks.entries]]
+hed="Row Races"
+dek="Join us for a live webinar covering everything you need to know about the row office candidates’ histories and campaign pledges, and the offices they hope to win."
+date="2024-04-19"
+dateVerbose="Oct. 3, 2024 on Zoom"
+registration="https://zoom.us/webinar/register/WN_vcjU4hM0TBSOlZeV_yK4fw"
+
+[[blocks]]
 title = "Elections 101"
 slug = "elections-101"
 layout = "story-collection"
