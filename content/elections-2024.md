@@ -185,7 +185,7 @@ image = "2023/11/01jn-4rb9-2sg8-pwpc.jpeg"
 hed = "Ask Spotlight PA’s 2024 election assistant your questions"
 dek = "Have questions about the 2024 election in Pennsylvania? Ask our new AI-powered assistant and get a trusted answer based on our reporting."
 cta = "Try Our Election Assistant →"
-link = "/elections/chatbot/"
+link = "/elections/assistant/"
 
 [[blocks]]
 layout = "events"
