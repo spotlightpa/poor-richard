@@ -24,7 +24,8 @@
 {{ $bureau := site.GetPage "/statecollege/" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
-{{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
+{{ $noIndex := where site.RegularPages ".Params.no-index" true }}
+{{ $river = $river | complement $featuredStory $pinnedStories $topperStory $noIndex }}
 
 {{ $hasPromo := .Param "promo-active" }}
 {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
