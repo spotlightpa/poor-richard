@@ -2,7 +2,7 @@
 {{- $elections := site.GetPage "topics/elections" -}}
 {{- $spanish := site.GetPage "topics/español" -}}
 {{- $ap := site.GetPage "authors/associated-press/" -}}
-{{- $stories := union $elections.Pages $spanish.Pages | symdiff $ap.Pages -}}
+{{- $stories := union $elections.Pages $spanish.Pages | complement $ap.Pages -}}
 {{- range $stories -}}
   {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $item := dict
