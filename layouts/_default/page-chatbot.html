@@ -20,42 +20,37 @@
     </header>
   {{ end }}
 
-
-  <div
-    id="dewey-chat"
-    class="mx-5 my-10 box-content max-w-screen-xl rounded-lg bg-g-1 p-4 shadow md:mx-auto"
-  ></div>
-
-  <section class="bg-white font-serif">
-    {{ if or (.Content) (.Page.Params.subhed) }}
+  {{ if .Param "disable-chatbot" }}
+    <div
+      class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
+      data-ga-category="content"
+    >
       <div
-        class="mx-auto max-w-2xl px-5 pb-10 text-lg font-medium md:px-0 lg:px-0"
+        class="article-content mx-auto w-full overflow-hidden rounded border border-g-4 bg-g-3 p-4 leading-relaxed shadow md:w-7/12"
       >
-        {{ with .Page.Params.subhed }}
-          <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
-        {{ end }}
-
-        {{ with .Content }}
-          <div class="article-content">
-            {{ . }}
-          </div>
-        {{ end }}
+        {{ .Param "disabled-text" | page.RenderString }}
       </div>
-    {{ end }}
-    {{ with .Page.RenderString (.Param "newsletter") }}
-      <div class="font-sans">
-        {{ . }}
-      </div>
-    {{ end }}
+    </div>
+  {{ else }}
+    <div
+      id="dewey-chat"
+      class="mx-5 my-10 box-content max-w-screen-xl rounded-lg bg-g-1 p-4 shadow md:mx-auto"
+    ></div>
+  {{ end }}
 
-    {{ with .Page.RenderString (.Param "supplemental") }}
-      <article
-        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
-      >
-        {{ . }}
-      </article>
-    {{ end }}
 
+  <section
+    class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
+    data-ga-category="content"
+  >
+    <div
+      class="article-content mx-auto w-full overflow-hidden leading-relaxed md:w-7/12"
+    >
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section class="bg-white">
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
