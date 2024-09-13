@@ -4,6 +4,7 @@ authors = ["Carter Walker"]
 blurb = "It’s uncertain where the decision leaves the state Senate GOP’s 2020 election review, which has languished for much of the past year while the subpoena dispute has moved through the courts."
 byline = "Carter Walker of Votebeat"
 description = "The PA Senate GOP’s 2020 election review has languished for much of the past year while the subpoena dispute has moved through the courts."
+feed-exclude = false
 image = "external/dnbbyhe2k6j3q805rxptefhxpr.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "The inquiry was motivated by reaction to former President Donald Trump’s unfounded claims of fraud."
@@ -11,6 +12,7 @@ internal-budget = "Court won’t force Pa. to release voter info for GOP’s 202
 internal-id = "SPLINQRULING"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-02-09T17:50:15.006-05:00
 slug = "pa-2020-election-audit-subpoena-voter-info-court-ruling"
 suppress-date = false
@@ -36,7 +38,7 @@ It’s uncertain where the decision leaves the state Senate GOP’s 2020 electio
 
 As the state Senate majority, Republicans still control the committee, though they have not made any apparent moves this session to continue the inquiry. The current chair, state Sen. Jarrett Coleman (R., Bucks), declined to comment and directed questions to the state Senate Republicans’ general counsel’s office, which did not immediately respond.
 
-In 2021, motivated by reaction to former President Donald Trump’s unfounded claims of fraud, the committee began subpoenaing <a href="https://paelectioninvestigation.com/wp-content/uploads/sites/110/2021/09/Intergovernmental-Operations-Requested-Document-List.pdf">documentation</a> such as communications with counties, audit reports, and also partial Social Security and driver’s license numbers for voters from the Department of State. 
+In 2021, motivated by reaction to former President Donald Trump’s unfounded claims of fraud, the committee began subpoenaing <a href="https://web.archive.org/20230211192042/https://paelectioninvestigation.com/wp-content/uploads/sites/110/2021/09/Intergovernmental-Operations-Requested-Document-List.pdf">documentation</a> such as communications with counties, audit reports, and also partial Social Security and driver’s license numbers for voters from the Department of State. 
 
 While the department provided some information, it argued that other information the committee was seeking contained sensitive private information about voters, which the state’s constitution prohibited the department from releasing.
 
