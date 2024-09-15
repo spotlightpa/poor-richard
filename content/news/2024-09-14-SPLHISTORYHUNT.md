@@ -26,8 +26,6 @@ An army of contractors has spent the past several years quietly fanning out acro
 
 The deployment, the first of its kind here since the 1980s, quickly produced leads.
 
-<p style="text-align: center;"><a href="#XHEPNKWD" style="display: none"></a></p>
-
 In year one, more than 7,500 properties in 17 rural counties were added to Pennsylvania&#39;s Historic Places Inventory, which is exactly what it sounds like. By the time the multiyear, 55-county architectural survey ended this June, more than 20,000 properties had been logged, along with 727 potential archaeological sites.
 
 The findings include Black churches and Croatian clubs in coal country; Chinese laundries; vintage ice cream stands; a stone altar on a Snyder County mountain; Northern Tier drive-ins; American Legion outposts galore; pyramids in Bucks County; the Liberty Theater in Nanty Glo, Cambria County; and mid-20th century homes in Upper Chichester, Delaware County.
