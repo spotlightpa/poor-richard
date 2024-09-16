@@ -1,7 +1,7 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 
 
-<div class="bg-beige font-sans" data-sf-campaign="701Dn000000YgovIAC">
+<div class="bg-beige font-sans" data-sf-campaign="footer">
   {{ partial "tw/newsletter-box-lg.html" (dict
     "showLogo" true
     "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
@@ -69,7 +69,7 @@
     {{ block "tw-support" $context }}
       <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
         <a
-          data-sf-campaign="701Dn000000YgogIAC"
+          data-sf-campaign="footer-promo"
           data-ga-category="donate"
           class="group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
           href="{{ .link }}"

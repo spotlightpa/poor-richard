@@ -33,7 +33,7 @@ url = "/support/state-college"
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 hed = "Help us write the future of journalism in Berks County"
 body = "Join our historic effort to invigorate local news."
-actionUrl = "https://spotlightpa.fundjournalism.org/berks/?campaign=701Ub000009RgCWIA0"
+actionUrl = "/donate/berks/"
 actionText = "Revitalize Local News →"
 url = "/berks/"
 
