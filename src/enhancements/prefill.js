@@ -26,7 +26,7 @@ export default function prefill() {
     },
     get donateURL() {
       let theme =
-        this.$el.closest("[data-sf-theme]")?.dataset.sfTheme ||
+        this.$el.closest("[data-fru-theme]")?.dataset.fruTheme ||
         "donate-onetime";
       let period = {
         o: "once",
