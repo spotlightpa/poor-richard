@@ -163,6 +163,14 @@ link = "elections-101"
 title = "More Coverage"
 link = "coverage"
 
+[[blocks]]
+ title = "Elecciones Pa. 2024: Traducciones al Español"
+ slug = "espanol"
+ layout = "story-collection"
+ timeFilter = "2024-06-01"
+ collection = "topics/español/_index.md"
+ collectionReadMore = "Leer Más Historias De La Elección PA 2024"
+
 [[blocks.link]]
 title = "Ask Us"
 link = "contact"
