@@ -3,6 +3,7 @@ authors = ["Stephen Caruso", "Kate Huangpu"]
 blurb = "During the Nov. 7 election, Democrat Daniel McCaffery and Republican Carolyn Carluccio will compete to fill an open seat on Pennsylvania’s Supreme Court."
 byline = "Stephen Caruso of Spotlight PA and Kate Huangpu of Spotlight PA"
 description = "The winner of the PA supreme court election — Daniel McCaffery (D) or Carolyn Carluccio (R) — will have considerable power to interpret state laws."
+feed-exclude = false
 image = "external/0xw0tndqfe9xz56gcxmj1ev4wc.jpeg"
 image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center."
@@ -10,6 +11,7 @@ internal-id = "SPLSCOPAGEN23"
 kicker = "Elections"
 linktitle = "A complete guide to the candidates for state Supreme Court"
 modal-exclude = false
+pinned = false
 published = 2023-09-05T05:00:00-04:00
 series = ["Voting Guides 2023"]
 slug = "pennsylvania-election-2023-supreme-court-candidates"
@@ -99,7 +101,7 @@ During a forum hosted by nonprofit advocacy group Pennsylvanians for Modern Cour
 
 <h2 id="spl-heading-2">Democrat Daniel McCaffery</h2>
 
-<a href="https://www.judgemccaffery.com/">Daniel McCaffery</a> was elected in 2019 to Superior Court, the Pennsylvania appellate body that handles all criminal and some civil appeals from the Court of Common Pleas.
+<a href="https://web.archive.org/20230120111229/https://www.judgemccaffery.com/">Daniel McCaffery</a> was elected in 2019 to Superior Court, the Pennsylvania appellate body that handles all criminal and some civil appeals from the Court of Common Pleas.
 
 McCaffery joined the military at age 18 and was honorably discharged after serving three years. He then attended Temple University for his undergraduate degree and law school.
 
@@ -107,7 +109,7 @@ His older brother is former state Supreme Court Justice Seamus McCaffery, who <a
 
 McCaffery began his professional career at the Philadelphia District Attorney’s office as a prosecutor in the Major Trials Unit in 1991, where he worked for six years. He then joined Montgomery County law firm Friedman Schuman, where he chaired the litigation department and served on its management committee until he joined the Court of Common Pleas in 2013.
 
-McCaffery has <a href="https://judgemccaffery.com/about/">a long history in Democratic politics</a>, having volunteered as legal counsel for the Philadelphia Democratic City Committee and been a member of the Pennsylvania Democratic State Committee. That political record lost him an endorsement from the Philadelphia Inquirer during the primary, which backed his opponent <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">and wrote that McCaffery is</a> “enmeshed in party politics.”
+McCaffery has <a href="https://web.archive.org/20230321092501/https://www.judgemccaffery.com/about/">a long history in Democratic politics</a>, having volunteered as legal counsel for the Philadelphia Democratic City Committee and been a member of the Pennsylvania Democratic State Committee. That political record lost him an endorsement from the Philadelphia Inquirer during the primary, which backed his opponent <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">and wrote that McCaffery is</a> “enmeshed in party politics.”
 
 He was named <a href="https://www.inquirer.com/philly/news/20140316_Kane_shut_down_sting_that_snared_Phila__officials.html">in 2014</a> news reports detailing then-Attorney General Kathleen Kane ending a sting operation that had captured Philadelphia lawmakers illegally accepting money. McCaffery, who like many Democrats had been a Kane supporter, had accepted some of those illegal “straw” donations (in which a person obfuscates their political contributions by donating through other people) during his unsuccessful 2009 bid for Philadelphia district attorney. McCaffery’s campaign returned the checks and reported the incident after discovering the donations were improper.
 
