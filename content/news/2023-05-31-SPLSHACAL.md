@@ -4,6 +4,7 @@ authors = ["Katie Meyer"]
 blurb = "The Democratic governor’s decision to withhold details about who he meets behind the scenes is legally sound, though experts said he could choose to reveal more."
 byline = "Katie Meyer of Spotlight PA"
 description = "PA Gov. Josh Shapiro’s decision to withhold details about who he meets behind the scenes is legally sound, though not without controversy. "
+feed-exclude = false
 image = "external/fm69jsnh2a3zwz5e2fygvvftkw.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Governor Josh Shapiro in Scranton, Pennsylvania."
@@ -11,6 +12,7 @@ internal-budget = "Shapiro won’t share calendars, a departure from previous go
 internal-id = "SPLSHACAL"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-05-31T05:00:00-04:00
 slug = "pa-josh-shapiro-daily-calendar-public-transparency"
 suppress-date = false
@@ -44,7 +46,7 @@ The administration’s calendar policy came to light due to an open records requ
 
 Attorneys for the governor told the group that Shapiro’s calendars are personal, don’t have an official purpose, and are not shared widely within the office — an explanation that elected officials in Pennsylvania have frequently offered in response to calendar requests. Documents that meet these standards, the attorneys argued, should be categorized as “personal notes and working papers” and aren’t subject to the state’s Right-to-Know Law.
 
-Citing Commonwealth Court cases from 2012 and 2014 involving officials from Philadelphia and the Pennsylvania Department of State, respectively, the OOR <a href="http://fec.gov/data/committee/C00817908/?tab=raising">agreed</a>.
+Citing Commonwealth Court cases from 2012 and 2014 involving officials from Philadelphia and the Pennsylvania Department of State, respectively, the OOR <a href="https://web.archive.org/20230531133353/http://fec.gov/data/committee/C00817908/?tab=raising">agreed</a>.
 
 Allan Blutstein, the America Rising senior vice president who requested Shapiro’s schedule, acknowledged that he did so for political reasons. The organization routinely requests Democratic governors’ calendars, especially early in their tenures, he told Spotlight PA.
 
