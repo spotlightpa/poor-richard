@@ -23,6 +23,8 @@ topics = ["Elections"]
 twitter-title = "Pa. election 2024: A complete guide to the candidates for auditor general"
 +++
 
+<a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-auditor-general-candidatos-tim-defoor-malcolm-kenyatta/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG —&nbsp;Voters will have five candidates for Pennsylvania auditor general to choose from on Nov. 5.
 
 Incumbent Auditor General Tim DeFoor, a Republican, was first elected in 2020 and is seeking a second term. He faces Democratic state Rep. Malcolm Kenyatta, Alan Goodrich of the Constitution Party, Libertarian Reece Smith, and the American Solidarity Party’s Eric K. Anton.
@@ -38,6 +40,8 @@ Pennsylvania <a href="https://www.paauditor.gov/about-the-department#:~:text=The
 Since the office’s creation, 25 Republicans and 22 Democrats have held the position. (The three other officeholders belonged to now-defunct third parties.)
 
 <em>This guide may be updated with additional information as the general election approaches.</em>
+
+{{<toc>}}
 
 ### Skip to section
 
@@ -56,6 +60,8 @@ Since the office’s creation, 25 Republicans and 22 Democrats have held the pos
   - <a href="#spl-heading-7">Alan Goodrich, Constitution Party</a>
 
   - <a href="#spl-heading-8">Reece Smith, Libertarian Party</a>
+
+{{</toc>}}
 
 <h2 id="spl-heading-1">What does Pennsylvania’s auditor general do?</h2>
 
