@@ -3,6 +3,7 @@ authors = ["Stephen Caruso", "Kate Huangpu", "Katie Meyer"]
 blurb = "A complete guide to the Democratic candidate for the Pennsylvania Supreme Court."
 byline = "Stephen Caruso of Spotlight PA, Kate Huangpu of Spotlight PA, and Katie Meyer of Spotlight PA"
 description = "A complete guide to the Democratic candidate for the Pennsylvania Supreme Court."
+feed-exclude = false
 image = "external/4x894j7de5j7hyhfjbv9rtnxdc.jpeg"
 image-credit = "Via campaign Facebook page"
 image-description = "Daniel McCaffery, a candidate for Pennsylvania Supreme Court"
@@ -10,6 +11,7 @@ image-gravity = "ce"
 internal-id = "SPLMCCAFFERY"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-11-03T15:29:21.065-04:00
 slug = "daniel-mccaffery-pennsylvania-supreme-court-election-2023"
 suppress-date = false
@@ -50,7 +52,7 @@ McCaffery also wrote that his most important decisions include opinions in which
 
 His older brother is former state Supreme Court Justice Seamus McCaffery, who <a href="https://www.pennlive.com/midstate/2014/10/the_fight_over_for_suspended_p.html">resigned from the post</a> after a review by the Pennsylvania attorney general’s office found he had sent sexually explicit images and videos to state officials through his government email. Daniel McCaffery, who was then a Common Pleas judge in Philadelphia, was among the recipients.
 
-McCaffery has <a href="https://judgemccaffery.com/about/">a long history in Democratic politics</a>, having volunteered as legal counsel for the Philadelphia Democratic City Committee and been a member of the Pennsylvania Democratic State Committee. That political record lost him an endorsement from the Philadelphia Inquirer during the primary, which backed his opponent <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">and wrote that McCaffery is</a> “enmeshed in party politics.”
+McCaffery has <a href="https://web.archive.org/20230321092501/https://www.judgemccaffery.com/about/">a long history in Democratic politics</a>, having volunteered as legal counsel for the Philadelphia Democratic City Committee and been a member of the Pennsylvania Democratic State Committee. That political record lost him an endorsement from the Philadelphia Inquirer during the primary, which backed his opponent <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">and wrote that McCaffery is</a> “enmeshed in party politics.”
 
 He was named <a href="https://www.inquirer.com/philly/news/20140316_Kane_shut_down_sting_that_snared_Phila__officials.html">in 2014</a> news reports detailing then-Attorney General Kathleen Kane ending a sting operation that had captured Philadelphia lawmakers illegally accepting money. McCaffery, who like many Democrats had been a Kane supporter, had accepted some of those illegal “straw” donations (in which a person obfuscates their political contributions by donating through other people) during his unsuccessful 2009 bid for Philadelphia district attorney. McCaffery’s campaign returned the checks and reported the incident after discovering the donations were improper.
 
