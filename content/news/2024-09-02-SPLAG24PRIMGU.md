@@ -25,6 +25,8 @@ title-tag = "Election 2024: A guide to the PA attorney general race"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-fiscal-general-candidatos-eugene-depasquale-dave-sunday/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — The race to become Pennsylvania’s next attorney general will be one of the more closely watched contests this fall, as six candidates jockey for the chance to occupy one of the most powerful offices in the state.
 
 With a budget of $144 million and a staff of 1,060 prosecutors, attorneys, investigators, and other staff, the Office of Attorney General is, at its core, the law firm that represents Pennsylvania’s vast government and defends its laws in court.
