@@ -1,9 +1,11 @@
 +++
+aliases = ["/news/2023/03/pa-primarias-elección-2023-corte-suprema/"]
 arc-id = "QURCDJ5ZYFARNH6OUCR62ZQOPA"
 authors = ["Kate Huangpu"]
 blurb = "Durante las elecciones primarias del 16 de mayo, demócratas y republicanos votarán por los candidatos para ocupar un puesto en la Corte Suprema de Pensilvania."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Durante las elecciones primarias del 16 de mayo, demócratas y republicanos votarán por los candidatos para ocupar un puesto en la Corte Suprema de Pa."
+feed-exclude = false
 image = "external/ynrdke7p3qtdndjfck6ryzpw2r.jpeg"
 image-credit = "Deborah Kunselman, Daniel McCaffery, Carolyn Carluccio photos via candidate Facebook pages; Patricia McCullough photo via 2021 campaign website."
 image-description = "Candidatos a la Corte Suprema de PA: Deborah Kunselman; Daniel McCaffery; Patricia McCullough; Carolyn Carluccio."
@@ -12,15 +14,13 @@ internal-id = "SPLSCGUESP"
 kicker = "Español"
 language-code = "es"
 modal-exclude = false
+pinned = false
 published = 2023-03-31T23:59:10-04:00
 slug = "pa-primarias-eleccion-2023-corte-suprema"
 suppress-date = false
 title = "Elecciones primarias Pa. 2023: Guía completa de los candidatos a la Corte Suprema del Estado"
 title-tag = "Guía para las elecciones primarias a la Corte Suprema de PA 2023"
 topics = ["Español", "Elections"]
-aliases = [
-"/news/2023/03/pa-primarias-elección-2023-corte-suprema/"
-]
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -81,7 +81,7 @@ Lea <a href="https://web.archive.org/20230314064241/https://www.pabar.org/public
 
 {{<picture src="external/4x894j7de5j7hyhfjbv9rtnxdc.jpeg" description="Daniel McCaffery" caption="Daniel McCaffery" credit="Via campaign Facebook page">}}
 
-<a href="https://judgemccaffery.com/">Daniel McCaffery</a>
+<a href="https://web.archive.org/20230120111229/https://www.judgemccaffery.com/">Daniel McCaffery</a>
 
 McCaffery, nativo de Filadelfia, fue elegido para la Corte Superior en 2019.
 
@@ -89,9 +89,9 @@ Veterano del ejército estadounidense, McCaffery comenzó su carrera jurídica c
 
 Tras su paso por la fiscalía, McCaffery se incorporó a un bufete privado con sede en el condado de Montgomery y pasó 16 años allí como abogado litigante civil.
 
-Antes de ser elegido miembro de la Corte de Causas Comunes de Filadelfia en 2013, McCaffery fue voluntario como asesor jurídico del Comité Demócrata de la Ciudad de Filadelfia y fue miembro del Comité Estatal Demócrata de Pensilvania. <a href="https://judgemccaffery.com/about/">El sitio web</a> de McCaffery señala que también ha trabajado en 50 campañas como gestor, recaudador de fondos y encuestador.
+Antes de ser elegido miembro de la Corte de Causas Comunes de Filadelfia en 2013, McCaffery fue voluntario como asesor jurídico del Comité Demócrata de la Ciudad de Filadelfia y fue miembro del Comité Estatal Demócrata de Pensilvania. <a href="https://web.archive.org/20230321092501/https://www.judgemccaffery.com/about/">El sitio web</a> de McCaffery señala que también ha trabajado en 50 campañas como gestor, recaudador de fondos y encuestador.
 
-McCaffery es el candidato apoyado por el Partido Demócrata de Pensilvania, y <a href="https://judgemccaffery.com/endorsements/">en su página web también figuran los apoyos</a> de la Asociación de Bomberos Profesionales de Pensilvania, la Conferencia de Teamsters de Pensilvania y el Consejo de Oficios de la Construcción del Estado de Pensilvania.
+McCaffery es el candidato apoyado por el Partido Demócrata de Pensilvania, y <a href="https://web.archive.org/20230321092500/https://www.judgemccaffery.com/endorsements/">en su página web también figuran los apoyos</a> de la Asociación de Bomberos Profesionales de Pensilvania, la Conferencia de Teamsters de Pensilvania y el Consejo de Oficios de la Construcción del Estado de Pensilvania.
 
 Fue <a href="https://web.archive.org/20230321092448/https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Supreme-Court">calificado</a> como “Altamente Recomendado” por el Colegio de Abogados de Pensilvania, que escribió que tiene “sólidos conocimientos de los principios jurídicos” y un historial de “participación en la comunidad.”
 
