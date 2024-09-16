@@ -3,6 +3,7 @@ authors = ["Stephen Caruso", "Kate Huangpu"]
 blurb = "En las elecciones del 7 de noviembre, el demócrata Daniel McCaffery y la republicana Carolyn Carluccio competirán para ocupar un asiento vacante en la Corte Suprema de Pensilvania."
 byline = "Stephen Caruso of Spotlight PA and Kate Huangpu of Spotlight PA"
 description = "El ganador de las elecciones a la Corte Suprema de Pensilvania — Daniel McCaffery (D) o Carolyn Carluccio (R) — tendrá un poder considerable en la interpretación de las leyes."
+feed-exclude = false
 image = "external/0xw0tndqfe9xz56gcxmj1ev4wc.jpeg"
 image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "Centro Judicial de Pensilvania."
@@ -10,6 +11,7 @@ internal-id = "SPLSCOPAGEN23"
 kicker = "Español"
 language-code = "es"
 modal-exclude = false
+pinned = false
 published = 2023-09-18T15:26:57.051-04:00
 slug = "pennsylvania-elecciones-2023-corte-suprema-candidatos"
 suppress-date = false
@@ -88,7 +90,7 @@ Durante un foro organizado por el grupo de defensa sin fines de lucro Pennsylvan
 
 {{<picture src="2023/08/01jf-1tps-g2e7-40ar.jpeg" description="El candidato demócrata a la Corte Suprema Daniel McCaffery" caption="El candidato demócrata a la Corte Suprema Daniel McCaffery" credit="Via página de Facebook de la campaña">}}
 
-<a href="https://www.judgemccaffery.com/">Daniel McCaffery</a> fue elegido en 2019 para la Corte Superior, el órgano de apelación de Pensilvania que se ocupa de todas las apelaciones penales y algunas civiles de la Corte de Causas Comunes.
+<a href="https://web.archive.org/20230120111229/https://www.judgemccaffery.com/">Daniel McCaffery</a> fue elegido en 2019 para la Corte Superior, el órgano de apelación de Pensilvania que se ocupa de todas las apelaciones penales y algunas civiles de la Corte de Causas Comunes.
 
 McCaffery se alistó en el ejército a los 18 años y fue licenciado con honores tras cumplir tres años de servicio. Después estudió en la Universidad de Temple y se licenció en Derecho.
 
@@ -96,7 +98,7 @@ Su hermano mayor es Seamus McCaffery, ex juez de la Corte Suprema del Estado, qu
 
 McCaffery comenzó su carrera profesional en la Fiscalía de Filadelfia como fiscal de la Unidad de Juicios Importantes en 1991, donde trabajó durante seis años. A continuación, se incorporó al bufete de abogados Friedman Schuman, del condado de Montgomery, donde presidió el departamento de litigios y formó parte de su comité de dirección hasta que se incorporó a la Corte de Causas Comunes en 2013.
 
-McCaffery tiene <a href="https://judgemccaffery.com/about/">un largo historial en la política demócrata</a>, habiendo sido voluntario como asesor jurídico del Comité Demócrata de la Ciudad de Filadelfia y miembro del Comité Estatal Demócrata de Pensilvania. Ese historial político le hizo perder el respaldo durante las primarias del Philadelphia Inquirer, que apoyó a su oponente <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">y escribió que McCaffery está</a> &#34;enredado en la política del partido&#34;.
+McCaffery tiene <a href="https://web.archive.org/20230321092501/https://www.judgemccaffery.com/about/">un largo historial en la política demócrata</a>, habiendo sido voluntario como asesor jurídico del Comité Demócrata de la Ciudad de Filadelfia y miembro del Comité Estatal Demócrata de Pensilvania. Ese historial político le hizo perder el respaldo durante las primarias del Philadelphia Inquirer, que apoyó a su oponente <a href="https://www.inquirer.com/opinion/editorials/deborah-kunselman-carolyn-carluccio-supreme-court-judicial-endorsement-20230512.html">y escribió que McCaffery está</a> &#34;enredado en la política del partido&#34;.
 
 Fue nombrado en las noticias de <a href="https://www.inquirer.com/philly/news/20140316_Kane_shut_down_sting_that_snared_Phila__officials.html">2014</a> en las que se detallaba que la entonces fiscal general Kathleen Kane había puesto fin a una operación encubierta que había captado a legisladores de Filadelfia aceptando dinero ilegalmente. McCaffery, que como muchos demócratas había sido partidario de Kane, había aceptado algunas de esas donaciones ilegales &#34;de paja&#34; (en las que una persona ofusca sus contribuciones políticas donando a través de otras personas) durante su infructuosa candidatura en 2009 a fiscal de distrito de Filadelfia. La campaña de McCaffery devolvió los cheques y denunció el incidente tras descubrir que las donaciones eran indebidas.
 
