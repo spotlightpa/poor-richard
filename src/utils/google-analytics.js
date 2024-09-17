@@ -104,7 +104,7 @@ export function addGAListeners() {
           el.closest("[data-fru-theme]")?.dataset.fruTheme || "donate-onetime";
         let campaign =
           el.closest("[data-fru-campaign]")?.dataset.fruCampaign ||
-          "701Dn000000YgokIAC";
+          "uncategorized";
 
         let medium = allClosest(el, "[data-page-cat]")
           .map((el) => el.dataset.pageCat)
