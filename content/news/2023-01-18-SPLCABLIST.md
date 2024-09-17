@@ -4,6 +4,7 @@ authors = ["Kate Huangpu", "Katie Meyer"]
 blurb = "The proposed cabinet would assemble people from across the ideological spectrum who already have experience at top levels of government and public service."
 byline = "Kate Huangpu of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "After winning the November 2022 election, Josh Shapiro gets to assemble a cabinet. His picks include  Al Schmidt, Val Arkoosh, and Pat Browne."
+feed-exclude = false
 image = "external/prpc7v02hz4ejj5tr9pw4c9sc4.jpeg"
 image-credit = "Tom Gralish / Philadelphia Inquirer"
 image-description = "PA Gov. Josh Shapiro, who has already made many of his cabinet picks, made his inaugural address at the Capitol."
@@ -11,6 +12,7 @@ internal-budget = "Who is in Pa. Gov. Josh Shapiro’s cabinet? (Full list)"
 internal-id = "SPLCABLIST"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-01-18T12:08:55.897-05:00
 slug = "pa-josh-shapiro-governor-cabinet-nominations-full-list"
 suppress-date = false
@@ -185,7 +187,7 @@ Padfield was the agency’s deputy director before his promotion. His other cred
 
 ## Environmental Protection: Rich Negrin
 
-Negrin, an attorney of Cuban descent, would be the <a href="https://aldianews.com/en/politics/elected-officials/negrin-tapped-state-role">first</a> Latino secretary of the Department of Environmental Protection. He has worked extensively in the private, public, and nonprofit sectors.
+Negrin, an attorney of Cuban descent, would be the <a href="https://web.archive.org/20230110190802/https://aldianews.com/en/politics/elected-officials/negrin-tapped-state-role">first</a> Latino secretary of the Department of Environmental Protection. He has worked extensively in the private, public, and nonprofit sectors.
 
 DEP’s secretary is in charge of enforcing environmental laws, issuing grants for environmentally friendly projects, releasing reports, and tracking potential hazards <a href="http://cedatareporting.pa.gov/Reportserver/Pages/ReportViewer.aspx?/Public/DEP/OG/SSRS/Abandoned_Orphan_Web">like abandoned wells</a>.
 
