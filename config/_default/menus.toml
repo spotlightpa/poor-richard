@@ -1,7 +1,12 @@
 [[main]]
+name = "Election 2024"
+url = "/elections-2024/"
+weight = 1
+
+[[main]]
 name = "Investigations"
 url = "/investigations/"
-weight = 1
+weight = 2
 
 [[main]]
 name = "Events"
