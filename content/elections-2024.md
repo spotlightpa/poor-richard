@@ -177,6 +177,7 @@ slug = "guides"
 layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "series/voting-guides-2024/_index.md"
+collectionReadMore = "Read More Voter Guides"
 
 [[blocks]]
 layout = "ballyhoo"
