@@ -12,7 +12,8 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-17-SPLNOV24POLLWRK.md"
+    "content/news/2024-09-17-SPLNOV24POLLWRK.md",
+    "content/news/2024-09-16-ESSPLAUDGEN24GUI.md"
   ],
   "subfeatures": [
     "content/elections-2024.md",
@@ -22,9 +23,9 @@
     "content/news/2024-09-09-SPLAUDGEN24GUI.md"
   ],
   "topSlots": [
+    "content/news/2024-09-17-PLFCFEES0924.md",
     "content/news/2024-09-16-ELECHOW2024.md",
-    "content/statecollege/2024-09-13-SPLDENTAL0924.md",
-    "content/news/2024-09-15-SPLDEMDAY0924.md"
+    "content/statecollege/2024-09-13-SPLDENTAL0924.md"
   ],
   "topper": []
 }
