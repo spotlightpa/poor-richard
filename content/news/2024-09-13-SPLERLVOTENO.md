@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<strong><em>UPDATE, Sept. 16</em></strong><em>: All third-party ballot access cases pending before the Pennsylvania Supreme Court have been resolved. The secretary of the commonwealth certified the November list of candidates Monday afternoon. It will still take counties some time to print ballots. Check the status of your county </em><a href="https://www.pa.gov/en/agencies/vote/voter-support/ballot-availability.html"><em>here</em></a><em>.</em>
+
 Early in-person voting will not start in Pennsylvania next week, despite what several national media outlets have reported this month.
 
 On Thursday, <a href="https://www.nytimes.com/2024/09/12/us/politics/early-voting-states-ballots.html">The New York Times wrote</a> that on Sept. 16 “Pennsylvania starts in-person early voting and begins sending mail-in ballots” to voters. <a href="https://www.usatoday.com/story/news/politics/elections/2024/09/10/when-is-election-day-2024/75088806007/">USA Today reported</a> on Tuesday that “early voting for some counties” in Pennsylvania would begin Monday. And <a href="https://www.foxnews.com/politics/trump-harris-keystone-collision-course-campaigns-pick-up-pace">Fox News reported</a> on Sept. 3 that “early voting begins on Sept. 16 in Pennsylvania.”
