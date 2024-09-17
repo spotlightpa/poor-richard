@@ -3,7 +3,7 @@
     {
       "backgroundColor": "#f5f5f5",
       "label": "Elections",
-      "labelColor": "#ffcb03",
+      "labelColor": "#000000",
       "linkColor": "#000",
       "page": "content/news/2024-01-30-ELECHOW2024.md"
     }
