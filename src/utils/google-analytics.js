@@ -101,19 +101,15 @@ export function addGAListeners() {
           }
         }
         let theme =
-          el.closest("[data-sf-theme]")?.dataset.sfTheme || "donate-onetime";
-        let salesforceCampaign =
-          el.closest("[data-sf-campaign]")?.dataset.sfCampaign ||
-          "701Dn000000YgokIAC";
+          el.closest("[data-fru-theme]")?.dataset.fruTheme || "donate-onetime";
+        let campaign =
+          el.closest("[data-fru-campaign]")?.dataset.fruCampaign ||
+          "uncategorized";
 
         let medium = allClosest(el, "[data-page-cat]")
           .map((el) => el.dataset.pageCat)
           .join(":");
-        let campaign = allClosest(el, "[data-ga-category]")
-          .map((el) => el.dataset.gaCategory)
-          .join(":");
-        let donateURL = `https://spotlightpa.fundjournalism.org/${theme}?campaign=${salesforceCampaign}&utm_source=${source}&utm_medium=${medium}&utm_campaign=${campaign}`;
-        donateURL = `https://spotlightpa.donorsupport.co/page/${theme}?utm_source=${source}&utm_medium=${medium}&utm_campaign=temporary-redirect`;
+        let donateURL = `https://spotlightpa.donorsupport.co/page/${theme}?utm_source=${source}&utm_medium=${medium}&utm_campaign=${campaign}`;
         el.href = donateURL;
       }
     },
