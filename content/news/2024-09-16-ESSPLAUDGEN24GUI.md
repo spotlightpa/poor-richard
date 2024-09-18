@@ -54,7 +54,7 @@ Desde su creación, han ocupado el cargo 25 republicanos y 22 demócratas. (Los 
 
 - <a href="#spl-heading-5">Candidatos de terceros partidos</a>
 
-  - <a href="#spl-heading-6">Erik Anton, Partido Solidaridad Americana</a>
+  - <a href="#spl-heading-6">Eric Anton, Partido Solidaridad Americana</a>
 
   - <a href="#spl-heading-7">Alan Goodrich, Partido de la Constitución</a>
 
@@ -162,11 +162,11 @@ En respuesta, DeFoor <a href="https://penncapital-star.com/election-2020/gop-leg
 
 <h2 id="spl-heading-5">Candidatos de terceros partidos</h2>
 
-<h3 id="spl-heading-6">Erik Anton, Partido Solidaridad Americana</h3>
+<h3 id="spl-heading-6">Eric Anton, Partido Solidaridad Americana</h3>
 
 <a href="https://www.solidarity-party.org/elected-officials-candidates">Página web</a>
 
-Erik Anton, del condado de Dauphin, se presenta a auditor general como miembro del Partido de Solidaridad Americana. No parece tener página web.
+Eric Anton, del condado de Dauphin, se presenta a auditor general como miembro del Partido de Solidaridad Americana. No parece tener página web.
 
 La <a href="https://www.solidarity-party.org/platform">plataforma</a> de este tercer partido dice: &#34;El Estado debe ser pluralista al tiempo que defiende una visión del bien común de todos y cada individuo, fundada en la tradición cristiana y que reconozca la primacía de la religión en la vida de cada persona&#34;.<strong></strong>
 
