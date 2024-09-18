@@ -3,6 +3,7 @@ authors = ["Kate Huangpu"]
 blurb = "Over the past decade, Democrats’ registration advantage has shrunk. Still, experts say registration can't tell you exactly how a closely divided state like Pennsylvania will vote."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Since 2008, the Democratic Party’s voter registration advantage in Pennsylvania has shrunk. Here’s what that means for the 2024 presidential election."
+feed-exclude = false
 image = "2024/04/01k2-j6kj-94wa-9by5.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A voting location sign is seen on primary Election Day 2024 at Bethlehem City Hall in Northampton County, Pennsylvania."
@@ -20,13 +21,15 @@ topics = ["Elections"]
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
 
+<strong><em>Update, Sept. 18: </em></strong><a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-voter-registration-2024-election-democrat-republican-independent-harris-trump/"><strong><em>Democrats in Pa. approach 2024 election with slimmest voter registration advantage in decades</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — For the first time in at least 16 years, the Democratic and Republican parties in Pennsylvania are within half a million registered voters of one another.
 
 Since 2008, Democrats’ registration edge over Republicans has steadily shrunk — from a 12% advantage in April 2008 to about a 4% advantage in April 2024, according to a Spotlight PA analysis of Department of State data.
 
 The number of people registered as independents or under a third party has also grown, from 11% of total registered voters in 2008 to 15% this year.
 
-<div class="flourish-embed flourish-chart" data-src="visualisation/17734121"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+{{<embed/raw srcdoc="&lt;div class=&#34;flourish-embed flourish-chart&#34; data-src=&#34;visualisation/17734121&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;">}}
 
 Political consultants who spoke with Spotlight PA said that while registration trends can signal an electorate&#39;s moods, they can&#39;t tell you everything about how a closely divided state like Pennsylvania will vote.
 
@@ -42,7 +45,7 @@ Sam Chen, a GOP political consultant based in the Lehigh Valley, pointed to the 
 
 “The Republican Party has shifted away from traditional conservativism into a more populist version of it, which speaks to traditional Democratic values like made-in-America union labor,” Chen said. “On the Democratic side, I think you see that shift away from traditional liberalism over to a little bit more of a progressivism.”
 
-<div class="flourish-embed flourish-map" data-src="visualisation/17821083"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+{{<embed/raw srcdoc="&lt;div class=&#34;flourish-embed flourish-map&#34; data-src=&#34;visualisation/17821083&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;">}}
 
 Wakabayashi noted that registration doesn’t always keep pace with quickly shifting political preferences.
 
@@ -54,7 +57,7 @@ However, in the latter year, Republicans Stacey Garrity and Tim DeFoor won state
 
 Political consultants and academics also say the increase in independent and third-party voters is significant and could indicate a growing disdain for the major political parties and a wider apathy that results in low voter turnout, such as during the 2024 primary election.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 This is particularly notable as Pennsylvania is one of 10 states with a <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-primary-election-2024-open-primaries-independent-third-party-voters/">closed primary system</a>, which excludes independent and third-party voters from choosing which major party candidates will end up on the November general election ballot.
 
@@ -62,5 +65,5 @@ Some experts noted that this system could lead to fewer voters who consider them
 
 “As our partisans are getting increasingly more partisan, there are a lot of people that are heading to either third parties or the middle of the road,” said Wakabayashi. “Some of that is disillusionment with the parties on both sides.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
