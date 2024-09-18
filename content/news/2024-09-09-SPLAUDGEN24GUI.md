@@ -55,7 +55,7 @@ Since the office’s creation, 25 Republicans and 22 Democrats have held the pos
 
 - <a href="#spl-heading-5">Third-party candidates</a>
 
-  - <a href="#spl-heading-6">Erik Anton, American Solidarity Party</a>
+  - <a href="#spl-heading-6">Eric Anton, American Solidarity Party</a>
 
   - <a href="#spl-heading-7">Alan Goodrich, Constitution Party</a>
 
@@ -163,7 +163,7 @@ In response, DeFoor <a href="https://penncapital-star.com/election-2020/gop-legi
 
 <h2 id="spl-heading-5">Third-party candidates</h2>
 
-<h3 id="spl-heading-6">Erik Anton, American Solidarity Party</h3>
+<h3 id="spl-heading-6">Eric Anton, American Solidarity Party</h3>
 
 <a href="https://www.solidarity-party.org/elected-officials-candidates">Website</a>
 
