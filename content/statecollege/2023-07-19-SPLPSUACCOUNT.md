@@ -4,6 +4,7 @@ authors = ["Wyatt Massey", "Josh Moyer"]
 blurb = "A yearlong Spotlight PA/CDT investigation of misconduct reporting systems at the university reveals widespread distrust, fear of retaliation, and reports of wrongdoing getting lost in the shuffle."
 byline = "Wyatt Massey of Spotlight PA State College and Josh Moyer of the Centre Daily Times"
 description = "An investigation of the Pa. university revealed widespread distrust in misconduct reporting systems and that the ethics office fell into chaos."
+feed-exclude = false
 image = "2023/07/01ja-tsgb-0fw5-05he.jpeg"
 image-caption = "A decade after the Sandusky child sex abuse scandal, Penn State investigates reported misconduct inconsistently and does not disclose the findings of investigations to the wider university community. The university also lacks a centralized way to track all cases of reported misconduct."
 image-credit = "Daniel Fishel / For Spotlight PA"
@@ -294,7 +295,7 @@ Seven players were cut before the season, although the university said it was no
 
 <strong>May 2018:</strong> Penn State <a href="https://www.psu.edu/news/administration/story/university-releases-2017-values-and-culture-survey-results/">releases the results of its 2017 culture survey</a>, a follow-up to the 2013 survey. The survey finds that 44% of faculty and 42% of staff believe Penn State does not retaliate against people who report wrongdoing.
 
-<strong>March 2020:</strong> The U.S. Department of Education <a href="https://www2.ed.gov/about/offices/list/ocr/docs/investigations/more/03146001-a.pdf">releases the findings of a follow-up investigation</a> of Penn State. The department concludes Penn State violated federal regulations barring sex-based discrimination and that there remain “serious inadequacies” in how Penn State handles claims of sexual harassment.
+<strong>March 2020:</strong> The U.S. Department of Education <a href="https://web.archive.org/20230705103331/https://www2.ed.gov/about/offices/list/ocr/docs/investigations/more/03146001-a.pdf">releases the findings of a follow-up investigation</a> of Penn State. The department concludes Penn State violated federal regulations barring sex-based discrimination and that there remain “serious inadequacies” in how Penn State handles claims of sexual harassment.
 {{</featured/info>}}
 A 2012 special report by Pennsylvania’s auditor general in the wake of the Sandusky scandal concluded that “by all appearances, Penn State has not welcomed governance transparency and, in fact, has impeded it.” A follow-up report five years later found that the university implemented some of the auditor general’s recommendations but problems with board transparency remained.
 
