@@ -1,4 +1,5 @@
 +++
+app-image = "2024/04/01k2-j6na-0hx7-cn5z.jpeg"
 authors = ["Kate Huangpu de Spotlight PA"]
 blurb = "La demócrata Erin McClelland, la republicana Stacy Garrity y otros tres candidatos compiten por convertirse en el próximo tesorero de Pensilvania."
 byline = "Kate Huangpu de Spotlight PA"
