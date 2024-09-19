@@ -5,12 +5,14 @@
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
 {{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
 {{- range first 15 $stories -}}
-  {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $pubdate := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $moddate := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $item := dict
     "id" .File.UniqueID
     "url" .Permalink
     "title" .Title
-    "date_published" $date
+    "date_published" $pubdate
+    "date_modified" $moddate
     "author" (.Param "byline")
     "authors" (.Param "authors")
     "content_html" .Content
