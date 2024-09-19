@@ -12,16 +12,14 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-18-SPLDEMREG24.md"
+    "content/news/2024-09-19-SPLMTPMERGER0924.md"
   ],
   "subfeatures": [
-    "content/elections-2024.md",
-    "content/news/2024-09-17-SPLNOV24POLLWRK.md",
-    "content/news/2024-09-16-ELECHOW2024.md",
-    "content/news/2024-09-13-SPLCCREJECT24.md",
-    "content/news/2024-09-18-ESPSPLTR24GENGU.md"
+    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md",
+    "content/statecollege/2023-06-07-SPLSTAY.md"
   ],
   "topSlots": [
+    "content/news/2024-09-18-SPLDEMREG24.md",
     "content/news/2024-09-17-SPLSPECELEXPHILLY.md",
     "content/news/2024-09-17-PLFCFEES0924.md",
     "content/news/2024-09-16-SPLTR24GENGU.md"
