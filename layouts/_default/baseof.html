@@ -138,7 +138,7 @@
       type="module"
       onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
     ></script>
-    {{ partial "header/gtm.html" . }}
+    {{ partial "header/third-party.html" . }}
     {{ partial "header/ld-json.html" . }}
   </body>
 </html>
