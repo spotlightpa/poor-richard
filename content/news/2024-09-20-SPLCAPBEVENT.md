@@ -41,7 +41,7 @@ Confirmed Guests:
 
 This in-person event is a unique opportunity to learn, connect, and be inspired. Don&#39;t miss out on this chance to celebrate and empower the Black community&#39;s political legacy in the City of Brotherly Love.
 
-The event begins at 5:30 p.m. at P4 Hub (4537 Wayne Ave., Ste. 202, Philadelphia, Pennsylvania, 19144). <strong>RSVP for free </strong><a href="https://www.eventbrite.com/e/philadelphia-black-political-power-tour-tickets-877551940477"><strong>here</strong></a><strong>.</strong>
+The event begins at 5:30 p.m., Thursday, Sept. 26 at P4 Hub (4537 Wayne Ave., Ste. 202, Philadelphia, Pennsylvania, 19144). <strong>RSVP for free </strong><a href="https://www.eventbrite.com/e/philadelphia-black-political-power-tour-tickets-877551940477"><strong>here</strong></a><strong>.</strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
