@@ -1,0 +1,6 @@
+{{ $id := .Get "id" }}
+
+
+<aside>
+  <a x-data :href="$el.dataset.href" data-href="#{{ $id }}"></a>
+</aside>
