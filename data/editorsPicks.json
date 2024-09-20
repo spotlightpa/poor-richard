@@ -12,17 +12,18 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/statecollege/2024-09-20-SPLMILESBURG0924.md"
+    "content/news/2024-09-20-SPLPREZPOLL.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-08-30-SPLPEOPLE0824.md",
-    "content/statecollege/2024-03-01-SPLMUNPOW.md",
-    "content/statecollege/2023-12-21-SPLVACANCIES.md"
+    "content/elections-2024.md",
+    "content/news/2024-09-09-SPLAUDGEN24GUI.md",
+    "content/news/2024-09-10-SPLLEGVET24GEN.md",
+    "content/news/2024-09-12-SPLNOV24COLLEGE.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-09-20-SPLMILESBURG0924.md",
     "content/news/2024-09-20-SPLPUMPKINSPICE.md",
-    "content/news/2024-09-19-SPLMTPMERGER0924.md",
-    "content/news/2024-09-19-SPLNEWSQUIZSEPT1624.md"
+    "content/news/2024-09-19-SPLMTPMERGER0924.md"
   ],
   "topper": []
 }
