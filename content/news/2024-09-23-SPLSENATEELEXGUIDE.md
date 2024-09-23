@@ -1,4 +1,5 @@
 +++
+app-image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 authors = ["Katie Meyer"]
 blurb = "Incumbent Democratic U.S. Sen. Bob Casey seeks a fourth term, while former hedge fund CEO Dave McCormick, a Republican, makes his second consecutive bid for a Senate seat."
 byline = "Katie Meyer of Spotlight PA"
@@ -7,6 +8,7 @@ feed-exclude = false
 image = "2024/09/01ke-v0eb-r13e-7t2r.png"
 image-credit = "Courtesy campaigns"
 image-description = "U.S. Senate candidates Dave McCormick, left, and Bob Casey, right."
+image-gravity = "ce"
 internal-id = "SPLSENATEELEXGUIDE"
 kicker = "Elections"
 modal-exclude = false
