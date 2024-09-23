@@ -20,6 +20,8 @@ title-tag = "Election 2024: How to become a poll worker in PA"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-como-convertirse-trabajador-electoral/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — When Pennsylvania holds its 2024 general election on Nov. 5, thousands of poll workers will ensure that voting runs smoothly. Poll workers are a critical component of our election process and you could be one of them. Counties are currently recruiting people to work at the state’s approximately 9,000 voting locations.
 
 Poll workers have the opportunity to serve their state and community, meet new people, and learn about elections in Pennsylvania. Plus, as a bonus for being a “champion of democracy,” they also get paid for their time.
