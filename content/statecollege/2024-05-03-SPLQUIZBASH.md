@@ -30,7 +30,7 @@ Thank you to Katie O’Toole, event chair, and her committee: R Thomas Berner, J
 
 Steve Jones, legendary announcer of Penn State sports, led the teams with competitive rounds of questions on Pennsylvania-themed trivia. Each of the top four teams received prize packages from Tait Farm Foods, Giant, Wegmans, Rapid Transit Sports, Shade Mountain Winery, Trader Joe’s, Family Clothesline, Parisi Gray Wealth Management, and Axemann Brewery.
 
-Our most grateful thanks to our event sponsors:
+<strong>Our most grateful thanks to our event sponsors:</strong>
 
 Young Writers of America
 
