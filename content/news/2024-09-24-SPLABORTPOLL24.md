@@ -27,7 +27,7 @@ Feelings vary widely by party. Just 17% of Republican respondents identified abo
 
 Critically, 49% of those polled who aren’t registered to either major party picked abortion as a top issue.<strong> </strong>In the <a href="https://www.spotlightpa.org/news/2024/09/kamala-harris-donald-trump-pennsylvania-poll-results-economy-jobs/">extremely tight race</a> between Democrat Kamala Harris and Republican Donald Trump, 5% of independent and third-party respondents said they were still undecided — making them a critical group in a state where the outcome will likely be decided by a slim margin.
 
-The poll, which was conducted by the MassINC Polling Group between Sept. 12 and 18, asked 800 likely voters whether a variety of issues matter to them in the presidential race. Abortion ranked below the economy (70%), the future of democracy (60%), immigration policy (57%), and gun policy (51%).
+The poll, which was conducted by the MassINC Polling Group between Sept. 12 and 18, asked 800 likely voters whether a variety of issues matter to them in the presidential race. Abortion ranked below the economy (69%), the future of democracy (60%), immigration policy (57%), and gun policy (51%).
 
 “The economy is No. 1, and that&#39;s the item where Donald Trump tends to do the best, and where, compared to Kamala Harris, he does quite well,” said Steve Koczela, president of the MassINC Polling Group. “I think if you&#39;re the Harris campaign, you would prefer that the election be more about those other issues than about the economy.”
 
