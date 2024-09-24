@@ -1,16 +1,12 @@
 {
   "featuredStories": [
-    "content/statecollege/2024-09-20-SPLMILESBURG0924.md"
+    "content/statecollege/2024-05-03-SPLQUIZBASH.md"
   ],
-  "subfeatures": [
-    "content/statecollege/2024-08-30-SPLPEOPLE0824.md",
-    "content/statecollege/2024-03-01-SPLMUNPOW.md",
-    "content/statecollege/2023-12-21-SPLVACANCIES.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/statecollege/2024-09-20-SPLMILESBURG0924.md",
     "content/statecollege/2024-09-13-SPLTRUSTEE0924.md",
-    "content/statecollege/2024-09-13-SPLDENTAL0924.md",
-    "content/statecollege/2024-09-05-SPLWATER0924.md"
+    "content/statecollege/2024-09-13-SPLDENTAL0924.md"
   ],
   "topper": []
 }
