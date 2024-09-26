@@ -39,6 +39,11 @@ to = "https://spotlightpa.donorsupport.co/page/business?utm_campaign=business-me
 code = 302
 
 [[redirects]]
+from = "/pearlman"
+to = "https://spotlightpa.donorsupport.co/page/pearlman"
+code = 302
+
+[[redirects]]
 from = "/almanack/"
 to = "https://almanack.data.spotlightpa.org"
 code = 302
