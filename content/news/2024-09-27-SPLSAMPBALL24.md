@@ -8,6 +8,7 @@ image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A ballot drop box is shown on primary Election Day 2024 at Northampton County Courthouse in Easton, Pennsylvania."
 internal-id = "SPLSAMPBALL24"
 kicker = "Elections"
+linktitle = "Use your address to see who will be on your Pa. ballot"
 modal-exclude = false
 og-title = "See which races will be on your ballot this November"
 pinned = false
