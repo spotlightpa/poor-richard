@@ -1,4 +1,3 @@
-{{ $id := .id | default "promo" }}
 {{ $wrapperClass := .wrapperClass | default "" }}
 {{ $hedSize := .hedText | default "text-xl md:text-2xl lg:text-3xl" }}
 {{ $dekSize := .dekText | default "text-base" }}
@@ -14,7 +13,12 @@
 }}
 
 
-<section id="{{ $id }}" class="bg-g-2 p-5 font-sans md:flex">
+<section
+  {{ with .id }}
+    id="{{ . }}" x-data x-intersect.half="$dispatch('intersect:about', $el.id)"
+  {{ end }}
+  class="bg-g-2 p-5 font-sans md:flex"
+>
   <div
     class="{{ $wrapperClass }} mx-auto w-full max-w-screen-lg justify-between md:flex"
   >
