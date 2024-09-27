@@ -152,8 +152,16 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
+title = "Sample Ballot"
+link = "sample-ballot"
+
+[[blocks.link]]
 title = "Election Assistant"
 link = "election-assistant"
+
+[[blocks.link]]
+title = "Events"
+link = "events"
 
 [[blocks.link]]
 title = "Elections 101"
@@ -178,6 +186,16 @@ layout = "story-collection"
 timeFilter = "2023-12-01"
 collection = "series/voting-guides-2024/_index.md"
 collectionReadMore = "Read More Voter Guides"
+
+[[blocks]]
+layout = "text-3"
+id = "sample-ballot"
+title = "Who’s on your PA ballot"
+copy = """
+Enter your address and get a customized list of races — from president to state House — you’ll consider this fall. The sample ballot does not feature local ballot initiatives. For that information, consult your <a href="https://www.pa.gov/en/agencies/vote/contact-us/contact-your-election-officials.html">county election office</a>.
+
+<script src="https://viz-sample-ballot-2024.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-sample-ballot-2024"></div><small><a href="https://viz-sample-ballot-2024.data.spotlightpa.org">Click here if you have trouble loading your sample ballot</a></small>
+"""
 
 [[blocks]]
 layout = "ballyhoo"

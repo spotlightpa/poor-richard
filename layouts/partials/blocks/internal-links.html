@@ -13,9 +13,7 @@
         <div class="no-js:hidden relative mx-auto w-96 max-w-full md:hidden">
           <select
             x-data
-            @change="
-        window.location.assign($event.target.value);
-      "
+            @change="window.location.assign($event.target.value);"
             class="spl-select text-xl"
           >
             <option disabled selected>Jump to Section…</option>
