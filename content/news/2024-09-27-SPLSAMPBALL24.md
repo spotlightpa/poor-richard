@@ -24,5 +24,5 @@ Attention, Pennsylvania voters: Spotlight PA has published a new interactive sam
 
 Enter your address and get a customized list of races — from president to state House — you’ll consider this fall. The sample ballot does not feature local ballot initiatives. For that information, consult your <a href="https://www.pa.gov/en/agencies/vote/contact-us/contact-your-election-officials.html">county election office</a>.
 
-{{<embed/raw srcdoc="&lt;script src=&#34;https://viz-sample-ballot-2024.data.spotlightpa.org/embed.js&#34; defer&gt;&lt;/script&gt;&lt;div data-spl-interactive=&#34;viz-redistricting-2020&#34;&gt;&lt;/div&gt;&lt;small&gt;&lt;a href=&#34;https://viz-sample-ballot-2024.data.spotlightpa.org&#34;&gt;Click here if you have trouble loading your sample ballot&lt;/a&gt;&lt;/small&gt;">}}
+{{<embed/raw srcdoc="&lt;script src=&#34;https://viz-sample-ballot-2024.data.spotlightpa.org/embed.js&#34; defer&gt;&lt;/script&gt;&lt;div data-spl-interactive=&#34;viz-sample-ballot-2024&#34;&gt;&lt;/div&gt;&lt;small&gt;&lt;a href=&#34;https://viz-sample-ballot-2024.data.spotlightpa.org&#34;&gt;Click here if you have trouble loading your sample ballot&lt;/a&gt;&lt;/small&gt;">}}
 
