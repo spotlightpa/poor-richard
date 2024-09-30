@@ -1,33 +1,24 @@
 +++
 arc-id = "VCOTWJYL5JAVJLGWQP2IXS2V3U"
-internal-id = "SPLUNEMPLOYED19"
-internal-budget = ""
-image = "external/5jnyzjfr17mqy11gw1j8f286b0.jpeg"
-image-description = "Pennsylvania Gov. Tom Wolf has asked all nonessential businesses in Pennsylvania to close."
-image-caption = ""
-image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
-image-size = ""
-published = 2020-03-19T10:00:00Z
-slug = "pennsylvania-new-jersey-unemployment-surge-coronavirus"
 authors = ["Angela Couloumbis", "Wendy Ruderman", "Dylan Purcell"]
-byline = "Angela Couloumbis of Spotlight PA and Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"
-title = "Unemployment claims in Pa. and N.J. surge in wake of the coronavirus"
-subtitle = ""
-description = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
 blurb = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
+byline = "Angela Couloumbis of Spotlight PA and Wendy Ruderman and Dylan Purcell of the Philadelphia Inquirer"
+description = "Pennsylvania officials received 120,000 claims for unemployment benefits in the space of two days — more than half of what they received in the entire first quarter of 2019."
+feed-exclude = false
+image = "external/5jnyzjfr17mqy11gw1j8f286b0.jpeg"
+image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
+image-description = "Pennsylvania Gov. Tom Wolf has asked all nonessential businesses in Pennsylvania to close."
+internal-id = "SPLUNEMPLOYED19"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2020-03-19T06:00:00-04:00
+slug = "pennsylvania-new-jersey-unemployment-surge-coronavirus"
+suppress-date = false
+suppress-featured = false
+title = "Unemployment claims in Pa. and N.J. surge in wake of the coronavirus"
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with the Pittsburgh Post-Gazette and PennLive/Patriot-News. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free weekly newsletter</i></a><i>.</i>
@@ -54,7 +45,7 @@ Pennsylvania and New Jersey officials could not immediately provide a breakdown 
 
 In Pennsylvania, state labor officials did not respond to questions about whether they were beefing up staffing levels to process the new claims, or how long they believed it would take to let people know about qualifying for benefits. Earlier in the week, the Wolf administration said it was eliminating the usual one-week waiting period to receive benefits.
 
-Labor officials in both states, however, urged <a href="https://www.uc.pa.gov/unemployment-benefits/file/Pages/File%20an%20Initial%20Claim.aspx">residents to apply online</a>, saying it will greatly speed up the process. Angela Delli Santi, spokesperson for the New Jersey Department of Labor &amp; Workforce Development, said Wednesday that <a href="https://web.archive.org/web/20210614121823/https://www.myunemployment.nj.gov/before/about/howtoapply/applyonline.shtml">the online site</a> was back up and running after the state added “more capacity” to the system in the wake of Monday’s meltdown.
+Labor officials in both states, however, urged <a href="https://web.archive.org/20200318081947/https://www.uc.pa.gov/unemployment-benefits/file/Pages/File%20an%20Initial%20Claim.aspx">residents to apply online</a>, saying it will greatly speed up the process. Angela Delli Santi, spokesperson for the New Jersey Department of Labor &amp; Workforce Development, said Wednesday that <a href="https://web.archive.org/web/20210614121823/https://www.myunemployment.nj.gov/before/about/howtoapply/applyonline.shtml">the online site</a> was back up and running after the state added “more capacity” to the system in the wake of Monday’s meltdown.
 
 Buccino said he set his alarm for 3 a.m. Tuesday to “try to beat other people to the punch" in filing online for unemployment insurance.
 
