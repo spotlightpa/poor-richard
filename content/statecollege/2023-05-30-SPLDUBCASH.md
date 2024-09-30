@@ -4,6 +4,7 @@ authors = ["Angela Couloumbis", "Min Xian"]
 blurb = "The mysterious money was apparently stored at a local nonprofit then delivered weeks after former DuBois City Manager Herm Suplizio was arrested on corruption charges."
 byline = "Angela Couloumbis of Spotlight PA and Min Xian of Spotlight PA State College"
 description = "The mysterious money was delivered weeks after former DuBois City Manager Herm Suplizio was arrested on corruption charges."
+feed-exclude = false
 image = "external/r59crxj5pt5fmv1y0qmygq57vc.jpeg"
 image-caption = "In early May, DuBois’ solicitor showed up at City Hall with $93,920 in cash tucked inside a cardboard box and packaged in a gift bag."
 image-credit = "Daniel Fishel / Spotlight PA"
@@ -12,6 +13,7 @@ internal-budget = "A DuBois official was arrested on corruption charges. Then ne
 internal-id = "SPLDUBCASH"
 kicker = "Local Government"
 modal-exclude = false
+pinned = false
 published = 2023-05-30T05:00:00-04:00
 series = ["Richest Little City"]
 slug = "pa-dubois-herm-suplizio-toni-cherry-cash-city-hall"
@@ -106,7 +108,7 @@ The city has a treasurer whose primary responsibility is to ensure its municipal
 
 There are also annual audits. Pennsylvania requires municipalities file yearly reports to disclose their revenues, expenditures, and cash balances, including petty cash, among other financial information. Separately, municipalities can, and often do, hire private firms to conduct even more detailed annual audits.
 
-State records show the City of DuBois has <a href="https://munstats.pa.gov/Reports/ReportInformation2.aspx?report=mAfrForm">regularly filed</a> those reports to the Pennsylvania Department of Community and Economic Development (municipalities that fail to do so are not eligible for coveted and frequently used state grant funding). DuBois also hired a third-party accounting firm to perform additional annual audits, documents Spotlight PA accessed through a public records request.
+State records show the City of DuBois has <a href="https://web.archive.org/20240114232308/https://munstats.pa.gov/Reports/ReportInformation2.aspx?report=mAfrForm">regularly filed</a> those reports to the Pennsylvania Department of Community and Economic Development (municipalities that fail to do so are not eligible for coveted and frequently used state grant funding). DuBois also hired a third-party accounting firm to perform additional annual audits, documents Spotlight PA accessed through a public records request.
 
 In one of those reports, released in 2020, auditors found that the city had in the previous year erroneously deposited “a significant amount of donations” made for a city ball field into the DuBois Area United Way’s account. The mistake was “not detected by the City’s internal controls,” according to the audit.
 
