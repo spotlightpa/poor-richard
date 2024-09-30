@@ -13,7 +13,7 @@ type = "elections"
 no-index = true
 promo = "{{<featured/election-promo>}}"
 disabled-text = "**The Election Assistant is currently unavailable.** To ensure the accuracy of the tool and allow time for review, we are limiting the number of users during the beta testing period."
-disable-chatbot = true
+disable-chatbot = false
 +++
 
 ### Why and how we built this
