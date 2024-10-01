@@ -12,20 +12,18 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-09-30-SPLCFUPDATEC4.md"
+    "content/news/2024-10-01-SPLAGELEX24.md"
   ],
   "subfeatures": [
+    "content/elections-2024.md",
     "content/news/2024-09-27-SPLSAMPBALL24.md",
-    "content/news/2024-09-02-SPLAG24PRIMGU.md",
-    "content/news/2024-05-29-SPLCFMAY.md",
-    "content/news/2024-04-23-SPLPRI24AGRES.md",
-    "content/news/2024-09-18-SPLDEMREG24.md",
-    "content/news/2024-09-24-SPLCCWASHCO24.md"
+    "content/news/2024-09-27-SPLAGCFC4.md",
+    "content/news/2024-09-26-SPLPBMELEX24.md"
   ],
   "topSlots": [
-    "content/news/2024-09-27-SPLAGCFC4.md",
-    "content/news/2024-09-26-SPLPBMELEX24.md",
-    "content/statecollege/2024-09-26-SPLROCKSPRING0924.md"
+    "content/news/2024-10-01-SPLDEATHCAF.md",
+    "content/news/2024-09-30-SPLCFUPDATEC4.md",
+    "content/news/2024-09-27-SPLNEWBEES.md"
   ],
   "topper": []
 }
