@@ -50,7 +50,7 @@
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": true,
+  "newsletter-active": false,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
@@ -77,14 +77,14 @@
   "sidebar-sticky-description": "Support Spotlight PA and as part of our Fall Member Drive, your gift will be DOUBLED.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/kc23/september-300x250-squares-18-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/phrb/september-300x250-squares-20-.gif"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support Spotlight PA and as part of our Fall Member Drive, your gift will be DOUBLED.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/kc23/september-300x250-squares-18-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/phrb/september-300x250-squares-20-.gif"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-top-width": 300,
@@ -95,25 +95,25 @@
   ],
   "sticky-link": "/newsletters",
   "support-active": true,
-  "support-bg-color": "#ddeb3f",
+  "support-bg-color": "#ffcb03",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "HURRY A GIFT NOW »",
   "support-hed": "A TIME-SENSITIVE REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can do it thanks to the generous support of Spotlight PA's thousands of members. That's what sets us apart from other newsrooms — in fact, there is no one quite like Spotlight PA. \n\n\u003cstrong\u003eBut we need your help to ensure this vital journalism can continue, and for a limited time, all gifts will be DOUBLED thanks to a special matching grant.\u003c/strong\u003e\n\nWe are independent, beholden to no corporate interests or profit motives. We're strictly nonpartisan, with no political agenda, no policy preferences, and no opinion content. And we are nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you.\n\nOur talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable. That reporting drives real and substantial change for the better.\n\nYour support of Spotlight PA allows us to continue this urgent work and mission, ensuring all in Pennsylvania can access trusted, quality journalism that's unique, relevant, illuminating, and inspiring. Donate right now and, as part of our Fall Member Drive, your gift will be matched dollar-for-dollar by the Lenfest Institute for Journalism. That's DOUBLE your money.\n\nThank you.\n\nChristopher Baxter\nCEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can only continue to do it with your support. \n\nThere is no one quite like Spotlight PA. We are independent, beholden to no corporate interests or profit motives. We’re strictly nonpartisan, with no political agenda, policy preferences, or opinion pieces. And we are a nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you. Our talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable.\n\n\u003cstrong\u003eDonate right now and, as part of our Fall Member Drive, your gift will be matched dollar-for-dollar — that's DOUBLED — by the Lenfest Institute for Journalism.\u003c/strong\u003e\n\nThank you.\n\nChristopher Baxter CEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": false,
-  "takeover-dek": "We're just a few hundred dollars from our goal and need your help now. Be the hero by making a gift \u0026 your gift will be DOUBLED »",
-  "takeover-hed": "We're SO close!",
-  "takeover-image": "2023/08/01jc-na64-bn8a-9vdz.jpeg",
+  "takeover-active": true,
+  "takeover-dek": "We're just $5,000 from our Fall Member Drive goal and need your help now. Support our unmatched journalism \u0026 your gift will be DOUBLED »",
+  "takeover-hed": "An urgent call for support",
+  "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
   "takeover-link": "https://spotlightpa.fundjournalism.org/donate/?campaign=701Dn000000YqKfIAK",
   "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/kc24/september-site-toppertracker-3-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/phra/september-site-toppertracker-4-.gif"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -121,7 +121,7 @@
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/kc24/september-campaign-mobile-topperrectangles-3-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/phrb/september-campaign-mobile-topperrectangles-4-.gif"
   ],
   "topper-mobile-width": 1024
 }
