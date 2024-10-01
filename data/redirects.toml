@@ -4,6 +4,11 @@ to = "/topics/events/"
 code = 301
 
 [[redirects]]
+from = "/agevent"
+to = "https://www.eventbrite.com/e/1030093546527"
+code = 302
+
+[[redirects]]
 from = "/donate/"
 to = "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=slash-donate"
 code = 302
