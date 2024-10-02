@@ -4,6 +4,7 @@ authors = ["Wyatt Massey"]
 blurb = "While four local police departments were reimbursed for services that night, the university has not cut a check for the 70 State Police employees on hand — and it won’t say why."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "Penn State University has not reimbursed Pennsylvania State Police for providing 70 employees for the event, which was canceled due to escalating violence."
+feed-exclude = false
 image = "external/vwfjrz8320a2rxzwh8e37n4jc4.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
 image-description = "Pennsylvania State Police on horseback try to control a crowd on Penn State's campus."
@@ -26,7 +27,7 @@ STATE COLLEGE — Pennsylvania State Police sent 70 employees to Penn State’s 
 
 But unlike the local police departments that assisted Penn State police at the event, State Police were not reimbursed for their services.
 
-On Oct. 24, a Penn State student group hosted two far-right activists for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event, <a href="https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="https://web.archive.org/20220930191154/http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
+On Oct. 24, a Penn State student group hosted two far-right activists for a “comedy” event on campus. Despite repeated public statements from Penn State leaders calling the speakers’ views “abhorrent,” officials declined public calls to cancel the event, <a href="https://web.archive.org/20230804182907/https://www.centredaily.com/news/local/education/penn-state/article267715632.html">citing the constitutional right to freedom of speech</a>. The student group <a href="https://web.archive.org/20220930191154/http://pennstateupac.org/wp-content/uploads/2022/09/9-6-22-Minutes.pdf">paid the activists $7,500 in student fees</a> for the appearance.
 
 That evening, <a href="https://www.centredaily.com/news/local/education/penn-state/article267845797.html">protesters gathered outside the campus building where the event was scheduled</a>, and police did not immediately intervene when individuals in the crowd sprayed a chemical irritant at protesters, according to videos shared online.
 
