@@ -106,7 +106,7 @@ Como directora de la Asociación de Defensores de Filadelfia, <a href="https://w
 
 Durante un debate celebrado en marzo, Bradford-Grey argumentó que su trabajo representando a &#34;personas en el sistema estatal y federal&#34; demostraba que tiene lo que &#34;hace falta para ir contra sistemas bien dotados&#34;.
 
-Ahora es socia de Montgomery McCracken Walker &amp; Rhoads, centrándose en &#34;<a href="https://www.mmwr.com/attorney/keir-bradford-grey/">investigaciones gubernamentales y de cuello blanco y defensa penal</a>&#34;.
+Ahora es socia de Montgomery McCracken Walker &amp; Rhoads, centrándose en &#34;<a href="https://web.archive.org/20240222145937/https://www.mmwr.com/attorney/keir-bradford-grey/">investigaciones gubernamentales y de cuello blanco y defensa penal</a>&#34;.
 
 De ser elegida, Bradford-Grey sería la primera fiscal general negra de la historia del estado. Según Associated Press, también sería la primera fiscal general del estado con un <a href="https://apnews.com/article/pennsylvania-attorney-general-keir-bradford-grey-a0f1bdb0109e367b2d9d7d9e0a67038c">historial principalmente de defensa pública</a>.
 
