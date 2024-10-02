@@ -4,7 +4,6 @@ blurb = "The Election Assistant leverages artificial intelligence to answer a va
 byline = "Christina Bruno of Spotlight PA"
 description = "Spotlight PA’s new AI Election Assistant provides Pennsylvania voters with quick, trusted answers on voting, candidates, and election processes."
 feed-exclude = true
-image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Illustration of American flag and Pennsylvania symbols"
 internal-id = "SPLELEXASSTNOTE"
