@@ -4,6 +4,7 @@ authors = ["Katie Meyer", "Stephen Caruso"]
 blurb = "The claims are being advanced by some of the same Pennsylvania Republicans that sought to undermine the election and voting results in 2020."
 byline = "Katie Meyer of Spotlight PA and Stephen Caruso of Spotlight PA"
 description = "The claims are being advanced by some of the same Pennsylvania Republicans that sought to undermine the election and voting results in 2020."
+feed-exclude = false
 image = "external/7wnckdwy1awevxg8xj6sckj7rc.jpeg"
 image-credit = "Tom Gralish / Philadelphia Inquirer"
 image-description = "A sign in Pennsylvania reminding people to vote in the 2022 election Nov. 8."
@@ -12,6 +13,7 @@ internal-id = "SPLPREBUNK"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-11-04T14:39:00-04:00
 series = ["Voting Guides 2022"]
 slug = "2022-pa-election-misinformation-unverified-ballots-drop-boxes-vote-delays"
@@ -48,10 +50,6 @@ Another conspiracy theory that has grown popular since 2020 is that there’s so
 But there’s nothing scandalous about the delay. It’s just a function of the commonwealth’s election law.
 
 Pennsylvania doesn’t allow counties to begin processing mail ballots until 7 a.m. on Election Day. That was fine when there was limited mail voting, but it became an issue after 2019, when the state dramatically expanded access to the practice.
-
-<p class="inq-p type-interstitial"><b>» SIGN UP: <a data-link-type="nl-interstitial" href="https://www.inquirer.com/newsletters/pa-elections/sign-up/">Election Day is coming. Are you ready? Get our free PA 2022 newsletter in your inbox and you will be.</a></b></p>
-
-
 
 Beginning in 2020, many more people voted by mail than ever before — Democrats in particular — and those ballots took counties more time to process. Many states with mail voting start processing ballots well before Election Day to speed things up, but while Pennsylvania counties regularly ask for a legislative change to allow it, the legislature and governor still haven’t agreed on a fix.
 
