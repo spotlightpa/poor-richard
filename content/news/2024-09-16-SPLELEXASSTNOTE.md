@@ -1,18 +1,25 @@
 +++
 authors = ["Christina Bruno"]
-blurb = "The tool leverages custom software and artificial intelligence (AI) to answer a variety of questions drawing on Spotlight PA’s reporting and trusted, public resources from the Pennsylvania Department of State."
+blurb = "The Election Assistant leverages artificial intelligence to answer a variety of questions drawing on Spotlight PA’s reporting and trusted, public resources from the Pennsylvania Department of State."
 byline = "Christina Bruno of Spotlight PA"
+description = "Spotlight PA’s new AI Election Assistant provides Pennsylvania voters with quick, trusted answers on voting, candidates, and election processes."
 feed-exclude = true
+image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
+image-credit = "Leise Hook / For Spotlight PA"
+image-description = "Illustration of American flag and Pennsylvania symbols"
 internal-id = "SPLELEXASSTNOTE"
 kicker = "Elections"
 modal-exclude = false
 no-index = true
+og-title = "Pennsylvania voters get real-time help with Spotlight PA’s AI tool"
 pinned = false
 published = 2024-09-16T03:00:00-04:00
 slug = "spotlight-pennsylvania-election-assistant-editors-note"
 suppress-date = true
 title = "How Spotlight PA’s Election Assistant leverages AI to answer voter questions in real time"
+title-tag = "How Spotlight PA’s AI tool helps answer 2024 election questions"
 topics = ["Elections"]
+twitter-title = "Pennsylvania voters get real-time help with Spotlight PA’s AI tool"
 +++
 
 We’re excited to launch <a href="https://www.spotlightpa.org/elections/assistant/">Spotlight PA’s 2024 Election Assistant</a>, an experimental tool to connect Pennsylvanians with immediate and relevant answers to their questions about the 2024 election.
