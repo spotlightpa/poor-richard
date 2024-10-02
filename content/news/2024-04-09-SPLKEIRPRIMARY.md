@@ -3,6 +3,7 @@ authors = ["Félicie Jungels", "Maya Mehrara", "Sophia Takla"]
 blurb = "Here’s what Democrats need to know about Keir Bradford-Grey before they vote for attorney general April 23."
 byline = "Félicie Jungels, Maya Mehrara, and Sophia Takla for Spotlight PA"
 description = "Keir Bradford-Gray is one of five Democrats vying for the party’s nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "cas/t1ww-e8f0-1xjf-db6n.jpeg"
 image-credit = "Courtesy candidate Facebook page"
 image-description = "Democratic attorney general candidate Keir Bradford-Grey"
@@ -51,7 +52,7 @@ As the head of the Defender Association of Philadelphia, she <a href="https://wh
 
 During a March debate, Bradford-Grey argued that her work representing “people in the state and federal system” demonstrated that she has what it “takes to go against well-resourced systems.”
 
-She’s now a partner at Montgomery McCracken Walker &amp; Rhoads, focusing on “<a href="https://www.mmwr.com/attorney/keir-bradford-grey/">white collar and government investigations and criminal defense</a>.”
+She’s now a partner at Montgomery McCracken Walker &amp; Rhoads, focusing on “<a href="https://web.archive.org/20240222145937/https://www.mmwr.com/attorney/keir-bradford-grey/">white collar and government investigations and criminal defense</a>.”
 
 If elected, Bradford-Grey would be the first Black attorney general in the state’s history. She would also be the state’s first attorney general with a <a href="https://apnews.com/article/pennsylvania-attorney-general-keir-bradford-grey-a0f1bdb0109e367b2d9d7d9e0a67038c">primarily public defender background</a>, according to the Associated Press.
 
