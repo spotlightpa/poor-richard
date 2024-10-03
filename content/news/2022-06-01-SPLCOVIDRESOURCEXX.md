@@ -89,7 +89,7 @@ If you lost your vaccine card, <a href="https://www.health.pa.gov/topics/disease
 
 ## Are there still statewide COVID mandates?
 
-Statewide COVID mitigation measures <a href="https://www.pa.gov/guides/responding-to-covid-19/#COVIDMitigationinPennsylvania">have been lifted in Pennsylvania</a>.
+Statewide COVID mitigation measures <a href="https://web.archive.org/20230101131604/https://www.pa.gov/guides/responding-to-covid-19/#COVIDMitigationinPennsylvania">have been lifted in Pennsylvania</a>.
 
 Counties and municipalities may implement stricter requirements. Businesses, performance venues, restaurants, or schools may also set their own COVID rules on masking, capacity limits, or proof of vaccination.
 
