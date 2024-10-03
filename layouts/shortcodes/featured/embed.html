@@ -3,10 +3,8 @@
 {{ $figClass := .Get "figure-class" | htmlUnescape | default "my-12 mx-auto lg:-mx-32 xl:-mx-48" }}
 {{ $capClass := .Get "caption-class" | htmlUnescape | default "max-w-content mx-auto text-g-7 text-sm mt-4" }}
 
-<figure
-  class="{{ $figClass }}"
-  data-ga-category="inline:embed"
->
+
+<figure class="{{ $figClass }}" data-ga-category="inline:embed">
   <div>
     {{ .Inner }}
   </div>
@@ -14,15 +12,14 @@
     <figcaption class="{{ $capClass }}">
       {{ if $link }}
         <a
-          class="text-g-8 hover:underline hover:text-yellow duration-500"
+          class="text-g-8 duration-500 hover:text-yellow hover:underline"
           href="{{ $link }}"
         >
-      {{ end }}
-      {{ $caption }}
-      {{ if $link }}
+          {{ $caption }}
         </a>
+      {{ else }}
+        {{ $caption }}
       {{ end }}
     </figcaption>
   {{ end }}
 </figure>
-

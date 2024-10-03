@@ -5,9 +5,18 @@
 {{ $email := .Get "email" }}
 {{ $author := partial "helper/get-author" $name }}
 
+{{ define "feature-credit-image" }}
+  <img
+    class="float-left mb-5 mr-4 h-16 w-16 rounded-full grayscale filter"
+    src="{{ .thumb }}"
+    alt="Picture of {{ .name }}"
+  />
+{{ end }}
+
+
 <div class="font-sans">
   {{ if $eyebrow }}
-    <h4 class="uppercase font-bold text-xs mb-4">{{ $eyebrow }}</h4>
+    <h4 class="mb-4 text-xs font-bold uppercase">{{ $eyebrow }}</h4>
   {{ end }}
   {{ if $image }}
     {{ $imgOpt := dict
@@ -16,31 +25,34 @@
       "height" 256
     }}
     {{ $thumb := partial "helper/imgproxy" $imgOpt }}
-    {{ with $author.link }}<a href="{{ . }}">{{ end}}
-    <img
-      class="float-left mr-4 mb-5 w-16 h-16 rounded-full filter grayscale"
-      src="{{ $thumb }}"
-      alt="Picture of {{ $name }}"
-    >
-    {{ with $author.link }}</a>{{ end}}
+    {{ with $author.link }}
+      <a href="{{ . }}">
+        {{ template "feature-credit-image" (dict "thumb" $thumb "name" $name) }}
+      </a>
+    {{ else }}
+      {{ template "feature-credit-image" (dict "thumb" $thumb "name" $name) }}
+    {{ end }}
+
   {{ else if $author.thumb }}
-    {{ with $author.link }}<a href="{{ . }}">{{ end}}
-    <img
-      class="float-left mr-4 mb-5 w-16 h-16 rounded-full filter grayscale"
-      src="{{ $author.thumb }}"
-      alt="Picture of {{ $name }}"
-    >
-    {{ with $author.link }}</a>{{ end}}
+    {{ with $author.link }}
+      <a href="{{ . }}">
+        {{ template "feature-credit-image" (dict "thumb" $author.thumb "name" $name) }}
+      </a>
+    {{ else }}
+      {{ template "feature-credit-image" (dict "thumb" $author.thumb "name" $name) }}
+    {{ end }}
   {{ end }}
-  <h3 class="uppercase font-bold">
+  <h3 class="font-bold uppercase">
     {{ with $author.link }}
       <a
         href="{{ . }}"
-        class="hover:text-yellow transition-colors duration-500"
+        class="transition-colors duration-500 hover:text-yellow"
       >
-    {{ end}}
-    {{ $name }}
-    {{ with $author.link }}</a>{{ end}}
+        {{ $name }}
+      </a>
+    {{ else }}
+      {{ $name }}
+    {{ end }}
   </h3>
   {{ if $role }}
     <div class="text-sm italic">{{ $role }}</div>
@@ -48,9 +60,10 @@
   {{ if $email }}
     <div class="text-sm">
       <a
-        class="underline text-navy hover:text-yellow transition-colors duration-500"
+        class="text-navy underline transition-colors duration-500 hover:text-yellow"
         href="mailto:{{ $email }}"
-      >{{ $email }}</a>
+        >{{ $email }}</a
+      >
     </div>
   {{ end }}
 </div>
