@@ -1,6 +1,3 @@
 layouts/partials/featured/content-area-end.html
 layouts/partials/featured/content-area-start.html
 layouts/partials/header/meta.html
-layouts/shortcodes/featured/credit.html
-layouts/shortcodes/featured/embed.html
-layouts/shortcodes/image.html
