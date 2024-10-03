@@ -29,7 +29,7 @@ Since 2008, Democrats’ registration edge over Republicans has steadily shrunk 
 
 The number of people registered as independents or under a third party has also grown, from 11% of total registered voters in 2008 to 15% this year.
 
-{{<embed/raw srcdoc="&lt;div class=&#34;flourish-embed flourish-chart&#34; data-src=&#34;visualisation/17734121&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;">}}
+{{<flourish src="visualisation/17734121" >}}
 
 Political consultants who spoke with Spotlight PA said that while registration trends can signal an electorate&#39;s moods, they can&#39;t tell you everything about how a closely divided state like Pennsylvania will vote.
 
@@ -45,7 +45,7 @@ Sam Chen, a GOP political consultant based in the Lehigh Valley, pointed to the 
 
 “The Republican Party has shifted away from traditional conservativism into a more populist version of it, which speaks to traditional Democratic values like made-in-America union labor,” Chen said. “On the Democratic side, I think you see that shift away from traditional liberalism over to a little bit more of a progressivism.”
 
-{{<embed/raw srcdoc="&lt;div class=&#34;flourish-embed flourish-map&#34; data-src=&#34;visualisation/17821083&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;">}}
+{{<flourish src="visualisation/17821083" >}}
 
 Wakabayashi noted that registration doesn’t always keep pace with quickly shifting political preferences.
 
