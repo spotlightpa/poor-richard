@@ -6,6 +6,7 @@ blurb = "Fired workers and frustrated employers are facing off in court battles 
 byline = "Ed Mahon of Spotlight PA"
 description = "Fired employees and frustrated employers are facing off in court battles over Pennsylvania’s vague safeguards for medical marijuana patients."
 extended-kicker = "Special Investigation"
+feed-exclude = false
 image = "external/f110jqs7y6aehexgean169fm90.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "A Pennsylvania medical marijuana card doesn't necessarily protect workers from facing demotion or firing at work."
@@ -16,6 +17,7 @@ kicker = "Health"
 layout = "featured"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-14T05:00:00-04:00
 series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-job-fired"
@@ -82,7 +84,7 @@ No. Pennsylvania’s medical marijuana law doesn’t define impairment. Often th
    2022](https://web.archive.org/20220919201711/https://www.health.pa.gov/topics/Documents/Programs/Medical%20Marijuana/MMAB%20Powerpoint%20for%20July%2028,%202022.pdf)
 
  -  [Pennsylvania Department of Health, August
-   2022](https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/#:~:text=Qualifying%20Medical%20Conditions&text=Autism.,spasticity%2C%20and%20other%20associated%20neuropathies.)
+   2022](https://web.archive.org/20220118034530/https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/#:~:text=Qualifying%20Medical%20Conditions&text=Autism.,spasticity%2C%20and%20other%20associated%20neuropathies.)
 </details>
 {{</block>}}
 
