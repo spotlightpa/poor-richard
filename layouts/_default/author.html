@@ -197,10 +197,7 @@
         </h2>
         <hr class="mb-5 border-b-2" />
       </div>
-      <div
-        class="mb-8 mt-3 flex flex-col space-y-8 sm:space-y-6"
-        x-ref="archives"
-      >
+      <div class="mb-8 mt-3 flex flex-col gap-y-8 sm:gap-y-6" x-ref="archives">
         {{ range $page := (partial "helper/paginator" .).Pages }}
           {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
         {{ end }}
