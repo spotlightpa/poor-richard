@@ -14,7 +14,8 @@ blurb = "Spotlight PA wants to empower voters to make an informed decision on Ma
 url = "/elections-2024/"
 aliases = [
     "/election/",
-    "/elections/"
+    "/elections/",
+    "/elections-2023/"
 ]
 layout = "page-landing"
 type = "elections"
