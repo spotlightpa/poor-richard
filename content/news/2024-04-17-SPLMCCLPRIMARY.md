@@ -3,18 +3,20 @@ authors = ["Jannelle Andes", "Genevieve Hartnett", "Alaysia Lane", "Bill Meincke
 blurb = "Here’s what Democrats need to know about Erin McClelland before they vote for treasurer on April 23."
 byline = "Jannelle Andes, Genevieve Hartnett, Alaysia Lane, Bill Meincke, and DJ Waller for Spotlight PA"
 description = "Erin McClelland is one of two Democrats vying for the party’s nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "cas/jv7c-80j4-pk1g-gxz8.jpeg"
 image-credit = "Courtesy candidate Facebook page"
 image-description = "Democratic treasurer candidate Erin McClelland"
 internal-id = "SPLMCCLPRIMARY"
 kicker = "Elections"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-17T10:27:43.147-04:00
 slug = "erin-mcclelland-pennsylvania-treasurer-primary-election-2024"
 suppress-date = false
-title = "Who is Erin McClelland, a Democrat running for Pa. treasurer?"
-title-tag = "Who is Erin McClelland, Democrat for PA treasurer?"
+title = "A primary guide to Erin McClelland, a Democrat running for Pa. treasurer"
+title-tag = "Primary guide to Erin McClelland, Democrat for PA treasurer"
 topics = ["Candidate 101"]
 +++
 
