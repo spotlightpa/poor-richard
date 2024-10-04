@@ -5,6 +5,7 @@ authors = ["Ed Mahon"]
 blurb = "An unprecedented Spotlight PA analysis of 1 million medical marijuana certifications reveals how a change by policymakers made it possible for virtually anyone to get a card."
 byline = "Ed Mahon of Spotlight PA"
 description = "After Pennsylvania made anxiety a qualifying condition to get a medical marijuana card, certifications skyrocketed. So can virtually anyone get one?"
+feed-exclude = false
 image = "external/p6hzphdq41etkabqv29crt9ezc.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "A Spotlight PA analysis of 1 million medical marijuana certifications reveals how a change by policymakers made it possible for virtually anyone to get a card. "
@@ -14,6 +15,7 @@ internal-id = "SPLANXIETY"
 kicker = "Medical Marijuana"
 layout = "featured"
 modal-exclude = false
+pinned = false
 published = 2023-01-31T05:00:00-05:00
 series = ["Unproven, Unsafe"]
 slug = "pa-medical-marijuana-certification-card-anxiety"
@@ -261,7 +263,7 @@ It is impossible to know how all certification companies and the state’s more 
 
 4\. Spotlight PA analysis, based on prices promoted online
 
-5\. [Pennsylvania Department of Health, January 2023](https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/)
+5\. [Pennsylvania Department of Health, January 2023](https://web.archive.org/20220118034530/https://www.pa.gov/guides/pennsylvania-medical-marijuana-program/)
 </details>
 
 {{</featured/info>}}Harris, the retired emergency room doctor from the Lehigh Valley, told Spotlight PA he spends about 40 minutes talking to patients before approving them for an initial certification. He also requires documentation from another provider to confirm an anxiety disorder diagnosis.
