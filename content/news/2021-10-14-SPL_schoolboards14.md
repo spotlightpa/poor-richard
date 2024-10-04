@@ -4,6 +4,7 @@ authors = ["Ethan Edward Coston"]
 blurb = "These races are more contentious than ever, but getting information on candidates and who is funding them is difficult. Use Spotlight PA's step-by-step guide to find the information you need."
 byline = "Ethan Edward Coston of Spotlight PA"
 description = "These races are more contentious than ever, but getting information on candidates and who is funding them is difficult. Use Spotlight PA's step-by-step guide to find the information you need."
+feed-exclude = false
 image = "external/29hb2dwwy5785ybbmxf038qq80.jpeg"
 image-credit = "DAVID MAIALETTI / Philadelphia Inquirer"
 image-description = "Rampant misinformation makes vetting candidates for Pennsylvania's coming school board races especially important."
@@ -12,8 +13,10 @@ internal-id = "SPL_schoolboards14"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-10-14T05:00:58-04:00
 slug = "pennsylvania-school-board-meetings-elections-2021-critical-race-theory"
+suppress-date = false
 title = "A basic guide to vetting your local candidates in Pennsylvania’s 2021 school board elections"
 topics = ["Education", "Elections"]
 +++
@@ -34,7 +37,7 @@ That’s why it’s more important than ever to understand who’s on your local
 
 ## Find who is on your ballot
 
-To learn who is on the ballot, you should check with your county election office (see a list <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">here</a>). Some counties, such as <a href="https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery County</a>, publish sample ballots.
+To learn who is on the ballot, you should check with your county election office (see a list <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">here</a>). Some counties, such as <a href="https://web.archive.org/20211014170849/https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery County</a>, publish sample ballots.
 
 <a href="https://www.ballotready.org/us/pennsylvania/">BallotReady</a> and the League of Women Voters’ <a href="https://www.vote411.org/">Vote411</a> initiative also provide sample ballots based on your address, though they don’t always include down-ballot races such as ones for school board.
 
