@@ -109,7 +109,7 @@ Todos los votantes elegirán también a su representante al Congreso y a la Cám
 
 El Departamento de Estado de Pensilvania dispone de una <a href="https://www.pavoterservices.pa.gov/pages/FindYourDistrict.aspx">herramienta que le permite encontrar sus distritos del Congreso, la Cámara de Representantes y el Senado del Estado</a>. Lo único que tienen que hacer los usuarios es introducir su condado y su dirección.
 
-Algunos condados, como el de <a href="https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery</a>, publican papeletas de muestra. Consulte con la oficina electoral de su condado para obtener una (<a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">vea la lista de oficinas aquí</a>).
+Algunos condados, como el de <a href="https://web.archive.org/20211014170849/https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery</a>, publican papeletas de muestra. Consulte con la oficina electoral de su condado para obtener una (<a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">vea la lista de oficinas aquí</a>).
 
 <a href="https://www.ballotready.org/us/pennsylvania/">BallotReady</a> y la <a href="https://www.vote411.org/">iniciativa Vote411</a> de la Liga de Mujeres Votantes también ofrecen modelos de papeletas de votación basados en su dirección.
 
