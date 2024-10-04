@@ -3,6 +3,7 @@ authors = ["Jannelle Andes", "Genevieve Hartnett", "Alaysia Lane", "Bill Meincke
 blurb = "Here’s what Republicans need to know about incumbent Stacy Garrity before they vote for auditor general on April 23."
 byline = "Jannelle Andes, Genevieve Hartnett, Alaysia Lane, Bill Meincke, and DJ Waller for Spotlight PA"
 description = "Incumbent Stacy Garrity is not facing an opponent for the Republican nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "2024/02/01jw-t1gv-63am-vhbm.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Republican Treasurer Stacy Garrity"
@@ -12,9 +13,9 @@ modal-exclude = false
 pinned = false
 published = 2024-04-17T10:16:05.532-04:00
 slug = "stacy-garrity-pennsylvania-treasurer-primary-election-2024"
-suppress-date = false
-title = "Who is Stacy Garrity, a Republican running for Pa. treasurer?"
-title-tag = "Who is Stacy Garrity, Republican for PA treasurer?"
+suppress-date = true
+title = "A primary guide to Stacy Garrity, a Republican running for Pa. treasurer"
+title-tag = "Primary guide to Stacy Garrity, Republican for PA treasurer"
 topics = ["Candidate 101"]
 +++
 
