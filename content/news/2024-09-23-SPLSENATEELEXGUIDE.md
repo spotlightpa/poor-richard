@@ -24,8 +24,6 @@ topics = ["Elections"]
 twitter-title = "Election 2024: Your guide to PA U.S. Senate candidates"
 +++
 
-cco
-
 <a href="https://www.spotlightpa.org/news/2024/10/pensilvania-elecciones-2024-candidatos-senado-bob-casey-dave-mccormick-terceros-partidos/"><em>Leer en español</em></a>
 
 HARRISBURG — Voters in Pennsylvania will help determine the balance of power in the U.S. Senate when they choose between five candidates on Nov. 5.
