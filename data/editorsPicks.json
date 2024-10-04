@@ -12,16 +12,16 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/statecollege/2024-10-03-SPLSUNDAYHUNT1024.md"
+    "content/news/2024-10-04-SPLTRUSTPOLL24.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-09-26-SPLROCKSPRING0924.md",
-    "content/statecollege/2024-09-13-SPLDENTAL0924.md",
-    "content/statecollege/2024-09-05-SPLWATER0924.md"
+    "content/elections-2024.md",
+    "content/news/2024-10-01-SPLAGELEX24.md",
+    "content/news/2024-09-30-SPLCFUPDATEC4.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-10-03-SPLSUNDAYHUNT1024.md",
     "content/news/2024-10-02-SPLNPMAR0924.md",
-    "content/news/2024-10-01-SPLAGELEX24.md",
     "content/news/2024-10-01-SPLDEATHCAF.md"
   ],
   "topper": []
