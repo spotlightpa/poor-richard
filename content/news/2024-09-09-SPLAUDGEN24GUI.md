@@ -27,7 +27,7 @@ twitter-title = "Pa. election 2024: A complete guide to the candidates for audit
 
 HARRISBURG —&nbsp;Voters will have five candidates for Pennsylvania auditor general to choose from on Nov. 5.
 
-Incumbent Auditor General Tim DeFoor, a Republican, was first elected in 2020 and is seeking a second term. He faces Democratic state Rep. Malcolm Kenyatta, Alan Goodrich of the Constitution Party, Libertarian Reece Smith, and the American Solidarity Party’s Eric K. Anton.
+Incumbent Auditor General Tim DeFoor, a Republican, was first elected in 2020 and is seeking a second term. He faces Democratic state Rep. Malcolm Kenyatta, Alan “Bob” Goodrich of the Constitution Party, Libertarian Reece Smith, and the American Solidarity Party’s Eric K. Anton.
 
 The auditor general monitors how public dollars are spent to catch waste, fraud, and graft. The office does this by conducting financial audits and monitoring whether state-funded programs are doing what they’re supposed to.
 
@@ -57,7 +57,7 @@ Since the office’s creation, 25 Republicans and 22 Democrats have held the pos
 
   - <a href="#spl-heading-6">Eric Anton, American Solidarity Party</a>
 
-  - <a href="#spl-heading-7">Alan Goodrich, Constitution Party</a>
+  - <a href="#spl-heading-7">Alan ‘Bob’ Goodrich, Constitution Party</a>
 
   - <a href="#spl-heading-8">Reece Smith, Libertarian Party</a>
 
@@ -171,7 +171,7 @@ Eric Anton, of Dauphin County, is running for auditor general as a member of the
 
 The third party’s <a href="https://www.solidarity-party.org/platform">platform</a> says, “The state should be pluralistic while upholding a vision of the common good of all and of each individual informed by Christian tradition and acknowledging the primacy of religion in each person’s life.”
 
-<h3 id="spl-heading-7">Alan Goodrich, Constitution Party</h3>
+<h3 id="spl-heading-7">Alan ‘Bob’ Goodrich, Constitution Party</h3>
 
 <a href="https://www.constitutionpartypa.com/">Website</a>
 
