@@ -24,6 +24,8 @@ topics = ["Elections"]
 twitter-title = "Election 2024: Your guide to PA U.S. Senate candidates"
 +++
 
+cco
+
 HARRISBURG — Voters in Pennsylvania will help determine the balance of power in the U.S. Senate when they choose between five candidates on Nov. 5.
 
 The choices include incumbent Democrat Bob Casey, who has spent decades in state politics and was first elected to the chamber in 2006, and Republican Dave McCormick, a former hedge fund CEO who lost the GOP nomination in 2022.
@@ -121,6 +123,8 @@ Major supporters include the PAC for the League of Conservation Voters, the labo
 {{<picture src="cas/k60h-d1mk-6yd5-gcrz.jpeg" description="U.S. Senate candidate Dave McCormick (right)" caption="U.S. Senate candidate Dave McCormick (right)" credit="Courtesy McCormick campaign">}}
 
 <h3 id="spl-heading-4">Dave McCormick, Republican</h3>
+
+<a href="https://www.davemccormickpa.com/">Website</a>
 
 McCormick, 59, primarily grew up around 60 miles from Bob Casey, near Bloomsburg, the Columbia County seat.
 
