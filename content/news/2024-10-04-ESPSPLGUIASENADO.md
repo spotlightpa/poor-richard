@@ -17,6 +17,7 @@ slug = "pensilvania-elecciones-2024-candidatos-senado-bob-casey-dave-mccormick-t
 suppress-date = false
 title = "Elecciones Pa. 2024: Guía completa de los candidatos al Senado de EE.UU."
 title-tag = "Elecciones 2024: Su guía para la carrera por el Senado de PA"
+topics = ["Español"]
 twitter-title = "Elecciones 2024: Guía de los candidatos al Senado  de Estados Unidos en PA"
 +++
 
