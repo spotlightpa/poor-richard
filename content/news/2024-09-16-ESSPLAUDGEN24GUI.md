@@ -2,7 +2,7 @@
 app-image = "2024/04/01k2-j6kj-94wa-9by5.jpeg"
 authors = ["Stephen Caruso"]
 blurb = "El demócrata Malcolm Kenyatta, el republicano Tim DeFoor y otros tres candidatos compiten por convertirse en el próximo auditor general de Pensilvania."
-byline = "Stephen Caruso of Spotlight PA"
+byline = "Stephen Caruso de Spotlight PA"
 description = "El demócrata Malcolm Kenyatta, el republicano Tim DeFoor y otros tres candidatos compiten por convertirse en el próximo auditor general de Pensilvania."
 feed-exclude = false
 image = "2024/09/01kd-eb2d-hayb-d0w3.png"
