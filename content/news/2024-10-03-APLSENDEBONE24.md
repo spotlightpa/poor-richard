@@ -1,4 +1,5 @@
 +++
+app-image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 authors = ["Associated Press"]
 blurb = "each candidate repeatedly accusing the other of lying and turning questions about energy, the sale of U.S. Steel and tariffs into personal attacks."
 byline = "Associated Press"
@@ -7,6 +8,7 @@ feed-exclude = false
 image = "2024/09/01ke-v0eb-r13e-7t2r.png"
 image-credit = "Courtesy campaigns"
 image-description = "U.S. Senate candidates Dave McCormick, left, and Bob Casey, right."
+image-gravity = "ce"
 internal-id = "APLSENDEBONE24"
 kicker = "Elections"
 modal-exclude = false
