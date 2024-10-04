@@ -202,12 +202,5 @@ Reconoce en la página web de su campaña que es un candidato con pocas probabil
 
 En 2023, Thomas se postuló sin éxito para la junta del distrito escolar de Armstrong con <a href="https://www.leadertimes.com/news/libertarian-john-thomas-announces-candidacy-for-asd-board-of-education-region-2/article_8474727c-c667-11ed-b2d3-33e7756a9aaf.html">una plataforma</a> que ofrecía alternativas a las escuelas públicas y combatía &#34;la llamada agenda &#39;woke&#39; que se ha infiltrado en nuestras escuelas locales.&#34;
 
-{{<featured/related-stories 
-  title="More Stories from the 2024 Election" 
-  link="/election"
-  cta="Visit the Election Center →"
-  limit="12"
->}}
-
 <strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
 
