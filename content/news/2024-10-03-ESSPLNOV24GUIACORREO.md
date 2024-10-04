@@ -1,7 +1,7 @@
 +++
 authors = ["Elizabeth Estrada"]
 blurb = "Pensilvania tiene voto por correo universal sin excusa. Aquí, todo lo que necesitas saber sobre el proceso antes de las elecciones del 5 de noviembre."
-byline = "Elizabeth Estrada of Spotlight PA"
+byline = "Elizabeth Estrada de Spotlight PA"
 description = "Pensilvania tiene voto por correo universal. Aprenda todo lo que necesita saber sobre el proceso antes de las elecciones del 5 de noviembre."
 feed-exclude = false
 image = "2024/04/01k2-j62a-z39p-6hg2.jpeg"
