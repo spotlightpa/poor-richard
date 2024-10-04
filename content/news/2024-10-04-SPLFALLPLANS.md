@@ -59,5 +59,5 @@ Pennsylvania has a significant population of people who <a href="https://pasdc.h
 
 ## Seek out scares
 
-Why do we pay people to scare us? I’m not here to answer such a deep question. Instead, I will point you toward the <a href="https://www.visitpa.com/article/haunted-places-pennsylvania#:~:text=REAL%20HAUNTED%20HOUSES%20IN%20PA">many haunted houses and attractions</a> Pennsylvania has to offer — <a href="https://lincolncaverns.com/event/38th-annual-ghosts-goblins/2024-10-04/">including at least one in a cave</a>!
+Why do we pay people to scare us? I’m not here to answer such a deep question. Instead, I will point you toward the <a href="https://www.visitpa.com/article/haunted-places-pennsylvania#:~:text=REAL%20HAUNTED%20HOUSES%20IN%20PA">many haunted houses and attractions</a> Pennsylvania has to offer — <a href="https://lincolncaverns.com/event/38th-annual-ghosts-goblins/">including at least one in a cave</a>!
 
