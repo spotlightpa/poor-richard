@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2024/09/01ke-v0eb-r13e-7t2r.png"
 image-credit = "Campañas de cortesía"
 image-description = "Los candidatos al Senado de EE.UU. Dave McCormick, izquierda, y Bob Casey, derecha."
+image-gravity = "ce"
 internal-id = "ESPSPLGUIASENADO"
 kicker = "Español"
 modal-exclude = false
