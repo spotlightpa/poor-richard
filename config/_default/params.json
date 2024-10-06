@@ -50,7 +50,7 @@
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": false,
+  "newsletter-active": true,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
@@ -74,21 +74,21 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Support Spotlight PA and as part of our Fall Member Drive, your gift will be DOUBLED.",
+  "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/zw3z/september-300x250-squares-28-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/zwwz/sunshine-week-2024-300-x-250-4-.png"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Support Spotlight PA and as part of our Fall Member Drive, your gift will be DOUBLED.",
+  "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/zw3z/september-300x250-squares-28-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kf/zwwz/sunshine-week-2024-300-x-250-4-.png"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-top-width": 300,
-  "sticky-active": false,
+  "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
@@ -98,18 +98,18 @@
   "support-bg-color": "#fcfcfc",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "HURRY A GIFT NOW »",
-  "support-hed": "MIDNIGHT DEADLINE!",
+  "support-cta": "SUPPORT SPOTLIGHT PA »",
+  "support-hed": "A QUICK REQUEST...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can only continue to do it with your support. \n\nThere is no one quite like Spotlight PA. We are independent, beholden to no corporate interests or profit motives. We’re strictly nonpartisan, with no political agenda, policy preferences, or opinion pieces. And we are a nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you. Our talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable.\n\n\u003cstrong\u003eDonate right now and, as part of our Fall Member Drive, your gift will be matched dollar-for-dollar — that's DOUBLED — by the Lenfest Institute for Journalism.\u003c/strong\u003e But hurry — this match expires at 11:59 p.m. tonight!\n\nThank you.\n\nChristopher Baxter CEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can only continue to do it with your support. \n\n\u003cstrong\u003eThere is no one quite like Spotlight PA.\u003c/strong\u003e\n\nWe are independent, beholden to no corporate interests or profit motives. We’re strictly nonpartisan, with no political agenda, policy preferences, or opinion pieces. And we are a nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you.\n\nOur talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable.\n\nThank you.\n\nChristopher Baxter CEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": true,
-  "takeover-dek": "Our DOUBLE match expires at 11:59 p.m. tonight and we need your help. Support our unmatched journalism \u0026 get your gift matched before time expires »",
-  "takeover-hed": "MIDNIGHT DEADLINE!!",
+  "takeover-active": false,
+  "takeover-dek": "We're just $1,000 from our Fall Member Drive goal and need your help now. Support our unmatched journalism \u0026 your gift will be DOUBLED »",
+  "takeover-hed": "Only 48 hours left!",
   "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-takeover",
-  "topper-active": true,
+  "topper-active": false,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
