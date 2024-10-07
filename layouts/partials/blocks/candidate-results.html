@@ -2,16 +2,14 @@
   {{ $data := site.Data.candidates2024 }}
   {{ $url := .shareLink }}
   {{ $text := .shareText }}
-
+  <div class="flex justify-center">
+    {{ partial "thirdparty/typeform.html" (dict "id" .typeformid) }}
+  </div>
 
   <div
     x-data="{ showResults: !!window.location.search.match(/show_results/) }"
     x-show="showResults"
   >
-    <div class="flex justify-center">
-      {{ partial "thirdparty/typeform.html" (dict "id" .typeformid) }}
-    </div>
-
     <div class="mx-auto my-8 flex max-w-2xl">
       <a
         class="my-2 mr-3 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
