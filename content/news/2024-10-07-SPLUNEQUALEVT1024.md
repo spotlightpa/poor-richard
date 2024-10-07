@@ -2,6 +2,7 @@
 blurb = "Join Spotlight PA for a virtual event on Oct. 17 to learn more about voting access in Pennsylvania and what your rights are."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a virtual event on Oct. 17 to learn more about voting access in Pennsylvania and what your rights are."
+event-date = 2024-10-17T18:00:00-04:00
 event-title = "Spotlight PA Event: How accessible are Pennsylvania’s elections?"
 event-url = "https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w#/registration"
 feed-exclude = false
