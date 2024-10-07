@@ -21,6 +21,7 @@
     "start": "hugo server -p 39019"
   },
   "dependencies": {
+    "@alpinejs/collapse": "^3.14.1",
     "@alpinejs/focus": "^3.12.3",
     "@alpinejs/intersect": "^3.12.3",
     "@babel/cli": "^7.22.9",

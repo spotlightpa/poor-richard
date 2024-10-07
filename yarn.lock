@@ -12,6 +12,11 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@alpinejs/collapse@^3.14.1":
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/@alpinejs/collapse/-/collapse-3.14.1.tgz#3e02f60c909bb5c297c05fc4fc57c95c7294d630"
+  integrity sha512-aI0pq8SjK7c43/nMIVL1Lt8naowPRepqQGNSb9KaG7adEneOwj/vq4ZaeZYjuGbd8sq1LKPwWU+klIZIXXujUA==
+
 "@alpinejs/focus@^3.12.3":
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/@alpinejs/focus/-/focus-3.14.1.tgz#b0bb74b19a7d21b6455af5869a390cd4b09c4612"
