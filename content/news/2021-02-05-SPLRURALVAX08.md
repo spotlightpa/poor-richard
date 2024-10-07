@@ -1,33 +1,24 @@
 +++
 arc-id = "YVNHK6ITVVA3TMUHPA4OUZ6LHE"
-internal-id = "SPLRURALVAX08"
-internal-budget = ""
-image = "2021/02/01g1s61bpda6fnfz.jpeg"
-image-description = "Rural counties like Sullivan are banding together to ensure older residents who lack transportation, access to providers, and internet connections can get the coronavirus vaccine."
-image-caption = ""
-image-credit = "FRED ADAMS / For Spotlight PA"
-image-size = ""
-published = 2021-02-05T10:00:00Z
-slug = "pennsylvania-coronavirus-rural-older-people-phase-1a-vaccinations-cvs-riteaid"
 authors = ["Jamie Martines"]
-byline = "Jamie Martines of Spotlight PA"
-title = "In race for COVID-19 vaccinations, older residents in rural Pa. face tough obstacles"
-subtitle = ""
-description = "Despite being among the most at risk, some lack transportation, access to chain pharmacies, and internet connections to get vaccine appointments."
 blurb = "Despite being among the most at risk, some lack transportation, access to chain pharmacies, and internet connections to get vaccine appointments."
+byline = "Jamie Martines of Spotlight PA"
+description = "Despite being among the most at risk, some lack transportation, access to chain pharmacies, and internet connections to get vaccine appointments."
+feed-exclude = false
+image = "2021/02/01g1s61bpda6fnfz.jpeg"
+image-credit = "FRED ADAMS / For Spotlight PA"
+image-description = "Rural counties like Sullivan are banding together to ensure older residents who lack transportation, access to providers, and internet connections can get the coronavirus vaccine."
+internal-id = "SPLRURALVAX08"
 kicker = "Coronavirus"
-topics = ["Coronavirus"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2021-02-05T05:00:00-05:00
+slug = "pennsylvania-coronavirus-rural-older-people-phase-1a-vaccinations-cvs-riteaid"
+suppress-date = false
+suppress-featured = false
+title = "In race for COVID-19 vaccinations, older residents in rural Pa. face tough obstacles"
+topics = ["Coronavirus"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -46,7 +37,7 @@ The pharmacy and medical center are too small to take on the work of administeri
 
 Scheduling a vaccine appointment in Pennsylvania is already a competitive process exacerbated by a short supply and patchwork online scheduling systems.
 
-But older residents — who are supposed to be among the first in line — in rural areas face more obstacles. They live far away from major chain pharmacies like CVS and RiteAid, and may not have internet or a means of transportation. Three rural counties — Forest, Fulton, and Sullivan — <a href="https://rupri.public-health.uiowa.edu/publications/policybriefs/2020/COVID%20Pharmacy%20Brief.pdf">do not have major chain pharmacies</a> that are participating in state and federal vaccine distribution programs, according to an analysis by Keith Mueller, director of the RUPRI Center for Rural Health Policy Analysis at the University of Iowa.
+But older residents — who are supposed to be among the first in line — in rural areas face more obstacles. They live far away from major chain pharmacies like CVS and RiteAid, and may not have internet or a means of transportation. Three rural counties — Forest, Fulton, and Sullivan — <a href="https://web.archive.org/20210103103614/https://rupri.public-health.uiowa.edu/publications/policybriefs/2020/COVID%20Pharmacy%20Brief.pdf">do not have major chain pharmacies</a> that are participating in state and federal vaccine distribution programs, according to an analysis by Keith Mueller, director of the RUPRI Center for Rural Health Policy Analysis at the University of Iowa.
 
 Rural counties also tend to have a larger share of older residents. About 17% of Pennsylvania’s 12.8 million residents are older than 65, Census data show. In many rural counties, older residents make up about 20% of the population.
 
