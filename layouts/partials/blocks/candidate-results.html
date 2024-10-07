@@ -52,8 +52,7 @@
             <picture class="min-h-full w-7 bg-g-3 md:w-11">
               <img
                 class="min-h-full min-w-full object-cover"
-                :alt="candidate.imageDescription"
-                :title="candidate.imageDescription"
+                :alt="`Picture of ${candidate.name}`"
                 :src="candidate.image"
                 loading="lazy"
               />
