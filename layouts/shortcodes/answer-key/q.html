@@ -1,10 +1,9 @@
 {{ $q := .Get "question" }}
-{{ $id := .Get "id" }}
 
 
 <div
   x-data="{
-        id: {{ $id }},
+        id: $id('q-and-a'),
         get expanded() {
             return this.active === this.id
         },
@@ -12,11 +11,12 @@
             this.active = value ? this.id : null
         },
     }"
+  :id="id"
   role="region"
 >
   <h2 class="mb-4 font-sans text-2xl font-extrabold leading-tight">
     <button
-      x-on:click="expanded = !expanded"
+      @click="expanded = !expanded"
       :aria-expanded="expanded"
       class="flex w-full items-center justify-between py-4 text-left text-xl font-bold"
     >

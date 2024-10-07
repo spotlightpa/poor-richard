@@ -45,16 +45,6 @@
       </div>
     {{ end }}
 
-    {{ .Page.RenderString (.Param "testimonials-group") }}
-
-    {{ with .Page.RenderString (.Param "supplemental") }}
-
-      <article
-        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
-      >
-        {{ . }}
-      </article>
-    {{ end }}
     {{ range $i, $blocks := .Params.blocks }}
       {{ $id := urlize .title }}
       <div
@@ -77,24 +67,6 @@
       "donateCta" "Donate"
       "donateUrl" "/donate" )
     }}
-
-    {{ with .Page.RenderString (.Param "answer-key") }}
-      <div
-        x-data="{ active: 1 }"
-        class="mx-auto max-w-2xl space-y-4 px-5 pb-12 pt-6 lg:px-0"
-      >
-        <h2 class="leading-tight; mb-4 text-3xl font-bold">
-          How the Candidates Stack Up
-        </h2>
-        <p
-          class="mt-2 text-pretty font-sans text-dek sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
-        >
-          Here is how each question and answer in the quiz aligns with each
-          candidate.
-        </p>
-        {{ . }}
-      </div>
-    {{ end }}
 
     {{ with .Page.RenderString (.Param "supporters") }}
       <div class="py-9">
