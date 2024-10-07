@@ -1,9 +1,3 @@
 {{ $id := .Get "id" | htmlUnescape }}
 
-
-<div class="my-8" data-tf-live="{{ $id }}"></div>
-
-{{ if page.Scratch.Get "has-typeform" | not }}
-  {{ page.Scratch.Set "has-typeform" true }}
-  <script defer src="//embed.typeform.com/next/embed.js"></script>
-{{ end }}
+{{ partial "thirdparty/typeform.html" (dict "id" $id) }}
