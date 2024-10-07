@@ -10,6 +10,7 @@ image-description = "Republican Treasurer Stacy Garrity"
 internal-id = "SPLGARPRIMARY"
 kicker = "Elections"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-17T10:16:05.532-04:00
 slug = "stacy-garrity-pennsylvania-treasurer-primary-election-2024"
