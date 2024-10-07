@@ -8,9 +8,11 @@
   <div
     x-data="{ showResults: !!window.location.search.match(/show_results/) }"
     x-show="showResults"
+    id="results"
+    class="scroll-mt-10"
   >
     <div class="mx-auto max-w-2xl px-5 md:px-0">
-      <h2 class="my-8 text-lg font-bold leading-snug" id="results">
+      <h2 class="my-8 text-lg font-bold leading-snug">
         Here’s how your answers aligned with each candidate.
       </h2>
 
