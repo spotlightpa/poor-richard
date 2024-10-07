@@ -21,7 +21,6 @@ typeformid = "01J9C9RWC3N5R06NKKC0PF770T"
 actionText = "Meet the candidates"
 actionLink = "/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/"
 restartText = "take the quiz again"
-shareLink = "https://www.spotlightpa.org/elections-2024/candidate-quiz/"
 shareText = "I just found out which primary candidate for Pennsylvania attorney general best aligns with my values. Who's right for you? Use @SpotlightPA 's interactive candidate finder quiz: "
 
 answer-key = """
