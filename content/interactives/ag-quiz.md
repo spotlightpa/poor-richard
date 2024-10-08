@@ -1,7 +1,7 @@
 +++
 title = "See which Pa. attorney general candidate is right for you"
 link-title = "INTERACTIVE: See the best PA attorney general candidate for you"
-title-tag = "Election 2024: See the best PA attorney general candidate for you"
+title-tag = "Eugene DePasquale or Dave Sunday: Who aligns with your views?"
 description = "Use our interactive tool to see which major party candidate for Pennsylvania attorney general most closely aligns with what matters to you."
 image = "2024/10/01kg-ahyw-6fsf-m5xx.jpeg"
 image-description = "PA attorney general candidates 2024"
@@ -70,7 +70,27 @@ answer-key = """
 
 {{<answer-key/q question="You prefer a candidate who supports allowing law enforcement to temporarily confiscate firearms from people deemed at risk of harming themselves or others:">}}
   {{<answer-key/a id="edepasquale" answer="Yes">}}{{</answer-key/a>}}
-  {{<answer-key/a id="dsunday" answer="No">}}{{</answer-key/a>}}
+  {{<answer-key/a id="dsunday" answer="">}}No public position{{</answer-key/a>}}
+{{</answer-key/q>}}
+
+{{<answer-key/q question="You prefer a candidate who says their top priorities are:">}}
+  {{<answer-key/a id="edepasquale" answer="">}}Protecting democracy, protecting seniors and consumers, and defending a “woman’s right to choose”{{</answer-key/a>}}
+  {{<answer-key/a id="dsunday" answer="">}}Addressing the deadly fentanyl epidemic, addressing internet crimes, and protecting seniors from fraud{{</answer-key/a>}}
+{{</answer-key/q>}}
+
+{{<answer-key/q question="You prefer a candidate who says he would not prosecute people who seek abortions or doctors who perform them, even if the state instituted a ban:">}}
+  {{<answer-key/a id="edepasquale" answer="Yes">}}{{</answer-key/a>}}
+  {{<answer-key/a id="dsunday" answer="">}}Would enforce state law but believes Pennsylvania would never institute such a ban{{</answer-key/a>}}
+{{</answer-key/q>}}
+
+{{<answer-key/q question="You prefer a candidate who says the following when asked, “How does immigration impact Pennsylvania?”">}}
+  {{<answer-key/a id="dsunday" answer="">}}“Legal immigration is a critical, foundational part of our society,” but there must be security at the southern border to stop the flow of fentanyl into the U.S.{{</answer-key/a>}}
+  {{<answer-key/a id="edepasquale" answer="">}}“We need common sense border security, and we also need to reform our immigration system so the people that are following the rules are able to go to the front of the line, and anyone that tries to cross over illegally is stopped.”{{</answer-key/a>}}
+{{</answer-key/q>}}
+
+{{<answer-key/q question="You prefer a candidate who says they would address crime by:">}}
+  {{<answer-key/a id="dsunday" answer="">}}Collaborating with the community, ensuring all agencies work together, and using a philosophy of accountability and redemption{{</answer-key/a>}}
+  {{<answer-key/a id="edepasquale" answer="">}}Building relationships with district attorneys, law enforcement, drug treatment programs, and job training programs{{</answer-key/a>}}
 {{</answer-key/q>}}
 """
 +++
