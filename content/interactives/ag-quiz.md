@@ -3,13 +3,16 @@ title = "See which Pa. attorney general candidate is right for you"
 link-title = "INTERACTIVE: See the best PA attorney general candidate for you"
 title-tag = "Election 2024: See the best PA attorney general candidate for you"
 description = "Use our interactive tool to see which major party candidate for Pennsylvania attorney general most closely aligns with what matters to you."
-image = "2024/10/01kf-yr8s-wv4h-f061.jpeg"
-image-description = "PA statewide candidates 2024"
+image = "2024/10/01kg-ahyw-6fsf-m5xx.jpeg"
+image-description = "PA attorney general candidates 2024"
 image-credit = "Illustration by Daniel Fishel / For Spotlight PA"
 layout = "quiz-results"
 signupHed = "Join our mailing list "
 signupDek = "Sign up to receive a weekly review of articles from Spotlight PA."
-url = "/elections-2024/ag-quiz/"
+url = "/news/2024/10/pennsylvania-election-2024-attorney-general-candidates-quiz/"
+aliases = [
+  "/elections-2024/ag-quiz/"
+]
 no-index = true
 promo = "{{<featured/election-promo>}}"
 
