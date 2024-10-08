@@ -3,18 +3,20 @@ authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Here’s what Democrats need to know about Malcolm Kenyatta before they vote for auditor general on April 23."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Malcolm Kenyatta is one of two Democrats vying for the party’s nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "2024/03/01jy-yp65-ww4q-w4yr.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Democratic candidate for auditor general Malcolm Kenyatta"
 internal-id = "SPLKENPRIMARY"
 kicker = "Elections"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-16T16:55:39.147-04:00
 slug = "malcolm-kenyatta-pennsylvania-auditor-general-primary-election-2024"
 suppress-date = false
-title = "Who is Malcolm Kenyatta, a Democrat running for Pa. auditor general?"
-title-tag = "Who is Malcolm Kenyatta, Democrat for PA auditor general?"
+title = "A primary guide to Malcolm Kenyatta, a Democrat running for Pa. auditor general"
+title-tag = "A primary guide to Malcolm Kenyatta, Democrat for PA auditor general"
 topics = ["Candidate 101"]
 +++
 
