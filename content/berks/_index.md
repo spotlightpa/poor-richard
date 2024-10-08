@@ -10,6 +10,7 @@ layout = "page-landing"
 signupHed = "Join our mailing list "
 signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and updates about our new reporting bureau in Reading and Berks County."
 hide-topper = true
+aliases = ["/berks-county/"]
 
 [[blocks]]
 layout = "takeover"
