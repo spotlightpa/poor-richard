@@ -3,18 +3,20 @@ authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Here’s what Republicans need to know about incumbent Tim DeFoor before they vote for auditor general on April 23."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Incumbent Tim DeFoor is not facing an opponent for the Republican nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "2024/03/01jy-ypa6-4mk3-vkkj.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Republican Auditor General Tim DeFoor"
 internal-id = "SPLDEFOORPRIMARY"
 kicker = "Elections"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-16T16:42:08.612-04:00
 slug = "tim-defoor-pennsylvania-auditor-general-primary-election-2024"
 suppress-date = false
-title = "Who is Tim DeFoor, a Republican running for Pa. auditor general?"
-title-tag = "Who is Tim DeFoor, Republican for PA auditor general?"
+title = "A primary guide to Tim DeFoor, a Republican running for Pa. auditor general"
+title-tag = "Primary guide to Tim DeFoor, Republican for PA auditor general"
 topics = ["Candidate 101"]
 +++
 
