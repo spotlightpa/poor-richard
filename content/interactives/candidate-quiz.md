@@ -49,7 +49,7 @@ promo = "{{<featured/election-promo>}}"
 
 Pennsylvania’s Nov. 5 election is fast approaching, and Pennsylvanians will soon have to decide which <a href="/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/">attorney general</a>, <a href="/news/2024/09/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta/">auditor general</a>, and <a href="/news/2024/09/pennsylvania-election-2024-treasurer-candidates-stacy-garrity-erin-mcclelland/">treasurer</a> candidates to support. 
 
-To help highlight the differences between the candidates, and show you which ones you best align with, Spotlight PA has created three quizzes — one for each race.
+To help highlight the differences between the candidates, and show you which ones you best align with, Spotlight PA will create three quizzes — one for each race.
 
 <div class="my-8 flex flex-row flex-wrap gap-4 justify-around">
 <a href="/elections-2024/ag-quiz/" class="btn-signup no-underline">AG Quiz</a>
