@@ -3,6 +3,7 @@ authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Incumbent Tim DeFoor is the only candidate on the Republican primary ballot. Democrats will choose between two candidates: state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Incumbent Tim DeFoor is the only candidate on the Republican primary ballot. Democrats will choose between two candidates: state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley."
+feed-exclude = false
 image = "2024/03/01jy-z6wa-s8v9-qyse.jpeg"
 image-credit = "Courtesy campaign Facebook pages"
 image-description = "From left: State Rep. Malcolm Kenyatta; Pennsylvania Auditor General Tim DeFoor; Lehigh County Controller Mark Pinsley"
@@ -32,7 +33,7 @@ The winners will face each other during the Nov. 5 general election.
 
 This year, incumbent Tim DeFoor is the only candidate on the Republican ballot. Democrats will choose between two candidates — Philadelphia state Rep. Malcolm Kenyatta and Lehigh County Controller Mark Pinsley.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 Pennsylvania’s primaries are closed, so only registered Democrats and Republicans can vote for candidates in their parties’ respective races during these spring contests. (Unaffiliated and third-party voters can vote on statewide ballot questions, local referenda, and special elections; all voters can participate in candidate elections in November.)
 
@@ -45,6 +46,8 @@ Pennsylvania <a href="https://www.paauditor.gov/about-the-department#:~:text=The
 Since the office’s creation, 25 Republicans and 22 Democrats have held the position (the three other officeholders belonged to now-defunct third parties).
 
 <em>This guide may be updated with additional information as the primary election approaches.</em>
+
+{{<toc>}}
 
 ### Table of Contents
 
@@ -59,6 +62,8 @@ Since the office’s creation, 25 Republicans and 22 Democrats have held the pos
 - <a href="#spl-heading-5">Republican incumbent</a>
 
   - <a href="#spl-heading-6">Tim DeFoor</a>
+
+{{</toc>}}
 
 <h2 id="spl-heading-1">What does Pennsylvania’s auditor general do?</h2>
 
@@ -111,8 +116,6 @@ The video was recorded inside the home of the <a href="https://penncapital-star.
 In a statement to <a href="https://delawarevalleyjournal.com/kenyatta-tells-committeewoman-his-primary-opponent-dont-like-black-people/">news</a> <a href="https://www.pennlive.com/news/2024/02/video-shows-kenyatta-saying-auditor-general-opponent-pinsley-dont-like-black-people.html?utm_campaign=pennlive_sf&amp;utm_medium=social&amp;utm_source=twitter">outlets</a>, Kenyatta did not explain the basis for the accusation, instead calling the video “<a href="https://penncapital-star.com/briefs/kenyatta-says-ring-video-recording-amounts-to-dirty-political-tricks/">dirty political tricks</a>.” Pinsley said the accusation is false and told Lehigh Valley News that it “<a href="https://www.lehighvalleynews.com/elections/lehigh-controller-pinsley-calls-out-auditor-general-opponent-who-accuses-him-of-racism">doesn’t show good temperament</a>.”
 
 <a href="https://www.malcolmkenyatta.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> <a href="https://www.inquirer.com/politics/pennsylvania/pa-democrats-2024-endorsements-attorney-general-20231216.html">Pennsylvania Democratic Party</a>; unions including the state chapter of the American Federation of Teachers and the Pennsylvania State Building and Construction Trades Council; the Working Families Party; Pittsburgh Mayor Ed Gainey; seven members of Pennsylvania’s congressional delegation; and members of the state legislature, including House Speaker Joanna McClinton of Philadelphia.<strong></strong>
-
-{{<picture src="cas/p313-fn7m-e35w-62rf.jpeg" width-ratio="940" height-ratio="788" description="Auditor General candidate Mark Pinsley" caption="Auditor General candidate Mark Pinsley" credit="Courtesy candidate Facebook page">}}
 
 <h3 id="spl-heading-4">Mark Pinsley</h3>
 
@@ -168,7 +171,7 @@ In a statement to <a href="https://delawarevalleyjournal.com/kenyatta-tells-comm
 
 <a href="https://www.defoor4pa.com/meet-tim">Website</a>
 
-A Dauphin County native, DeFoor graduated from Penn State University, the University of Pittsburgh, and the Harrisburg University of Science and Technology.
+A Dauphin County native, DeFoor graduated from the University of Pittsburgh and the Harrisburg University of Science and Technology.
 
 DeFoor served as a special agent for the state attorney general’s office, investigating Medicaid fraud. He was also a fraud investigator and internal auditor for the University of Pittsburgh Medical Center and as a federal contractor.
 
