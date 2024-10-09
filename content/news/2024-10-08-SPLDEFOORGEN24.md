@@ -32,7 +32,7 @@ Learn more about DeFoor below:
 
 <a href="https://www.defoor4pa.com/meet-tim">Website</a>
 
-A Dauphin County native, DeFoor graduated from Penn State University, the University of Pittsburgh, and the Harrisburg University of Science and Technology.
+A Dauphin County native, DeFoor graduated from the University of Pittsburgh and the Harrisburg University of Science and Technology.
 
 DeFoor, 62, served as a special agent for the state attorney general’s office, investigating Medicaid fraud. He was also a fraud investigator and internal auditor for UPMC and for several federal contractors.
 
@@ -48,7 +48,7 @@ He’s also tackled a handful of controversial issues. In September 2021, he rel
 
 He also released an audit that claimed a dozen school districts had raised local taxes “<a href="https://www.paauditor.gov/press-releases/auditor-general-defoor-questions-annual-property-tax-increases-for-12-school-districts-calls-on-legislature-to-close-loopholes">while holding millions of dollars in their General Funds</a>.” He said the audit identified districts that were moving around money to meet the state threshold to raise taxes, which he <a href="https://www.inquirer.com/news/auditor-general-defoor-pa-school-districts-act-1-taxes-20230125.html">called</a> a “shell game.” Critics said DeFoor <a href="https://www.wesa.fm/politics-government/2023-01-30/pa-auditor-general-defoor-responds-to-school-district-audit-criticism">lacked an understanding</a> of the districts’ budgeting processes.
 
-DeFoor also <a href="https://www.pennlive.com/news/2022/03/pa-auditor-general-to-close-school-audit-bureau-says-its-a-way-to-maximize-our-resources.html">closed</a> the bureau that audited schools, which his office said <a href="https://www.pennlive.com/news/2022/05/pa-house-democrats-criticize-auditor-generals-closure-of-school-audit-bureau.html">led</a> to 11 layoffs. Those responsibilities were transferred back to the state Department of Education.
+DeFoor also <a href="https://www.pennlive.com/news/2022/03/pa-auditor-general-to-close-school-audit-bureau-says-its-a-way-to-maximize-our-resources.html">closed</a> the bureau that audited schools, which his office said at the time <a href="https://www.pennlive.com/news/2022/05/pa-house-democrats-criticize-auditor-generals-closure-of-school-audit-bureau.html">led</a> to 11 layoffs. A spokesperson says eight of those employees applied for and were hired into other audit bureaus, while three did not interview and pursued employment elsewhere. Those responsibilities were transferred back to the state Department of Education.
 
 According to his campaign <a href="https://www.defoor4pa.com/meet-tim">website</a>, DeFoor’s second-term priorities include:
 
