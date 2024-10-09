@@ -38,7 +38,9 @@ The discussion will be led by Elizabeth Estrada, Spotlight PA’s democracy edit
 
 - <strong>Kate Huangpu</strong>, government reporter, Spotlight PA
 
-- <strong>Marian K. Schneider, </strong>senior policy counsel for voting rights, ACLU of Pennsylvania<strong><em></em></strong>
+- <strong>Marian K. Schneider, </strong>senior policy counsel for voting rights, ACLU of Pennsylvania
+
+- <strong>Peri Jude Radecic</strong>, chief executive officer, Disability Rights Pennsylvania
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w"><strong>here</strong></a><strong>.</strong>
 
