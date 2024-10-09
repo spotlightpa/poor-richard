@@ -65,7 +65,7 @@
               ></h3>
               <p
                 x-text="candidate.title"
-                class="mt-1 text-base leading-none text-g-8"
+                class="mt-1 text-base leading-tight text-g-8"
               ></p>
             </div>
             <div class="flex h-6 w-full max-w-[248px]">
@@ -79,26 +79,29 @@
         </template>
       </div>
 
-      <div class="mx-auto my-8 max-w-2xl px-5 lg:px-0">
-        <a
-          href="{{ .actionLink }}"
-          class="text-lg underline underline-offset-2"
-        >
-          {{- .actionText -}}
-        </a>
-        <span class="text-lg">or</span>
-        <button
-          onclick="document.querySelector('button[data-tf-popup]').click()"
-          class="text-lg underline underline-offset-2"
-        >
-          {{- .restartText -}}
-        </button>
+      <div
+        class="mx-auto my-8 max-w-2xl px-5 text-lg underline-offset-2 lg:px-0 [&_a]:underline [&_a]:underline-offset-2"
+      >
+        {{ with page.RenderString .flavorText }}
+          {{ . }}
+        {{ else }}
+          <a href="{{ .actionLink }}" class="underline underline-offset-2">
+            {{- .actionText -}}
+          </a>
+          <span>or</span>
+          <button
+            onclick="document.querySelector('button[data-tf-popup]').click()"
+            class="underline underline-offset-2"
+          >
+            {{- .restartText -}}
+          </button>
+        {{ end }}
       </div>
     </div>
 
-    <div class="mx-auto my-8 flex max-w-2xl">
+    <div class="mx-auto my-8 flex max-w-2xl gap-1">
       <a
-        class="my-2 mr-3 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
+        class="m-2 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
         href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ page.Permalink }}"
         data-ga-category="facebook"
         title="Share your donation on Facebook"

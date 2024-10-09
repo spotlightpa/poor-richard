@@ -1,4 +1,7 @@
 +++
+slug = "AGQUIZ"
+extended-kicker = "News Quiz"
+kicker = "Attorney General"
 title = "See which Pa. attorney general candidate is right for you"
 link-title = "INTERACTIVE: See the best PA attorney general candidate for you"
 title-tag = "Eugene DePasquale or Dave Sunday: Who aligns with your views?"

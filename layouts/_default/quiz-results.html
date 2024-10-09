@@ -15,7 +15,7 @@
       </div>
       <div class="mx-auto w-full max-w-2xl">
         <h1
-          class="font-sans text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
+          class="font-sans text-3xl font-bold leading-none text-black sm:text-4xl lg:text-5xl"
         >
           {{- .Title -}}
         </h1>
@@ -39,7 +39,7 @@
         {{ end }}
       </div>
     {{ end }}
-    {{ with .Page.RenderString (.Param "newsletter") }}
+    {{ with page.RenderString (.Param "newsletter") }}
       <div class="font-sans">
         {{ . }}
       </div>
