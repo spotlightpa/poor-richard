@@ -12,5 +12,19 @@
     "title": "York County district attorney",
     "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:75/MjAyNC8wMy8wMWp6LXYxdDAtZnA0ai13eHlhLmpwZWc=.webp",
     "party": "rep"
+  },
+  {
+    "id": "emcclelland",
+    "name": "Erin McClelland",
+    "title": "project manager for the Allegheny County Department of Human Services",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:85/Y2FzL2JhYjAtNjdueS1tNzl2LTRobXguanBlZw==.webp",
+    "party": "dem"
+  },
+  {
+    "id": "sgarrity",
+    "name": "Stacy Garrity",
+    "title": "incumbent Pennsylvania treasurer",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/q:85/Y2FzLzByajMtNjExdi13Z3p6LTZ0MXoucG5n.jpeg",
+    "party": "rep"
   }
 ]

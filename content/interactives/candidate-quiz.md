@@ -1,4 +1,6 @@
 +++
+slug = "CANDIDATEQUIZ"
+extended-kicker = "News Quiz"
 title = "Election 2024: See the best PA row office candidates for you"
 linktitle = "INTERACTIVE: See which Pa. statewide candidates are right for you"
 title-tag = "Election 2024: See the best PA row office candidates for you"
@@ -53,6 +55,6 @@ To help highlight the differences between the candidates, and show you which one
 
 <div class="my-8 flex flex-row flex-wrap gap-4 justify-around">
 <a href="/elections-2024/ag-quiz/" class="btn-signup no-underline">AG Quiz</a>
-<!--<a href="" class="btn-signup no-underline">Auditor Quiz</a>
-<a href="" class="btn-signup no-underline">Treasurer Quiz</a>-->
+<!--<a href="" class="btn-signup no-underline">Auditor Quiz</a>-->
+<a href="/elections-2024/treasurer-quiz/" class="btn-signup no-underline">Treasurer Quiz</a>
 </div>
