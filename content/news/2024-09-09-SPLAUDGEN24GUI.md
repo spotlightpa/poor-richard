@@ -37,6 +37,8 @@ The auditor general is elected for a four-year term, and an individual can hold 
 
 Pennsylvania <a href="https://www.paauditor.gov/about-the-department#:~:text=The%20auditor%20general%20was%20created,two%2C%20four%2Dyear%20terms.">created</a> the position as a politically appointed office in 1809. In 1850, it became an elected position. There have been 50 auditors general in Pennsylvania history, and this year’s incumbent was the 41st chosen by popular vote.
 
+<strong><em>&gt;&gt;TAKE THE QUIZ: </em></strong><a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-election-2024-auditor-general-candidates-quiz/"><strong><em>See which Pa. auditor general candidate is right for you</em></strong></a><strong><em></em></strong>
+
 Since the office’s creation, 25 Republicans and 22 Democrats have held the position. (The three other officeholders belonged to now-defunct third parties.)
 
 <em>This guide may be updated with additional information as the general election approaches.</em>
