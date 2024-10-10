@@ -41,6 +41,8 @@ The office has also produced some of the most notable investigations and prosecu
 
 There is no incumbent in the race this year. Attorney General Michelle Henry was appointed to the job in 2023 by her predecessor, Democrat Josh Shapiro, who stepped down before his term was over to become governor. She is not running for a full term.
 
+<strong><em>&gt;&gt;TAKE THE QUIZ: </em></strong><a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-election-2024-attorney-general-candidates-quiz/"><strong><em>See which Pa. attorney general candidate is right for you</em></strong></a><strong><em></em></strong>
+
 There are two major party candidates — Democrat Eugene DePasquale and Republican Dave Sunday — as well as four third-party contenders: Justin L. Magill of the Constitution Party, Eric Settle of the Forward Party, Green Party candidate Richard L. Weiss, and Libertarian Robert Cowburn.
 
 The winner will serve a four-year term in an office with a rich history dating back <a href="https://www.attorneygeneral.gov/the-office/#:~:text=Mission-,The%20Pennsylvania%20Office%20of%20Attorney%20General%20maintains%20the%20highest%20standards,in%20and%20visiting%20the%20Commonwealth.">nearly 400 years</a>. Yet the attorney general has been an elected position only since 1980, with the first elected candidate sworn into office in 1981.
