@@ -28,9 +28,6 @@ flavorText = """
 Learn more about [Erin McClelland](/news/2024/10/erin-mcclelland-pennsylvania-treasurer-election-2024/) and [Stacy Garrity](/news/2024/10/stacy-garrity-pennsylvania-treasurer-election-2024/) or <span>
 <button onclick="document.querySelector('button[data-tf-popup]').click()" class="text-lg underline underline-offset-2">take the quiz again</button></span>.
 """
-actionText = "Meet the candidates"
-actionLink = "/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/"
-restartText = "take the quiz again"
 shareText = "I just found out which primary candidate for Pennsylvania state treasurer best aligns with my values. Who's right for you? Use @SpotlightPA 's interactive candidate finder quiz: "
 
 answer-key = """
