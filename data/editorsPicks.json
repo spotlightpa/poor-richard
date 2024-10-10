@@ -12,20 +12,17 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/interactives/ag-quiz.md"
+    "content/news/2024-10-10-SPLAGABORTION24.md"
   ],
   "subfeatures": [
     "content/interactives/treasurer-quiz.md",
-    "content/news/2024-10-08-SPLLEGPOLL24.md",
-    "content/news/2024-10-07-SPLNOKING24.md",
     "content/elections-2024.md",
-    "content/news/2024-10-07-SPLUNEQUALEVT1024.md",
-    "content/news/2024-10-04-SPLTRUSTPOLL24.md"
+    "content/news/2024-10-01-SPLAGELEX24.md"
   ],
   "topSlots": [
+    "content/interactives/ag-quiz.md",
     "content/news/2024-10-08-SPLDOULA1024.md",
-    "content/news/2024-10-07-SPLVOUCHPOLL24.md",
-    "content/statecollege/2024-10-03-SPLSUNDAYHUNT1024.md"
+    "content/news/2024-10-07-SPLVOUCHPOLL24.md"
   ],
   "topper": []
 }
