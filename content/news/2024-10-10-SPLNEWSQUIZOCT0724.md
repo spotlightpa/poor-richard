@@ -25,7 +25,7 @@ title-tag = "PA News Quiz: Trump in Butler, Shapiro’s cabinet controversy"
 topics = ["News Quiz"]
 +++
 
-In this week’s news quiz:
+In this week’s news quiz: Election protection, Trump returns to Butler with a billionaire, and a Shapiro cabinet member is being threatened with jail by the state Senate.
 
 {{<typeform id="01J9RV08D34ZWW7KC51HBR0JCG" >}}
 
