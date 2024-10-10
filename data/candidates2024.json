@@ -26,5 +26,19 @@
     "title": "incumbent Pennsylvania treasurer",
     "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/q:85/Y2FzLzByajMtNjExdi13Z3p6LTZ0MXoucG5n.jpeg",
     "party": "rep"
+  },
+  {
+    "id": "mkenyatta",
+    "name": "Malcolm Kenyatta",
+    "title": "state representative from Philadelphia",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/q:85/MjAyNC8xMC8wMWtnLWc3M3MtNHB3bS0xZjliLmpwZWc=.jpeg",
+    "party": "dem"
+  },
+  {
+    "id": "tdefoor",
+    "name": "Tim DeFoor",
+    "title": "incumbent auditor general",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/q:85/MjAyNC8xMC8wMWtnLWc3M2stM2ZnOC03NzcwLmpwZWc=.jpeg",
+    "party": "rep"
   }
 ]
