@@ -231,7 +231,7 @@ id = "quiz"
 image = "2024/10/01kg-dw76-v4hn-egrq.jpeg"
 hed = "Find Your Candidate Match"
 dek = "Use our interactive tool to see which major party candidates for Pennsylvania attorney general, auditor general, and treasurer most closely align with what matters to you."
-cta = "Try Our Quizzes →"
+cta = "Take Our Quizzes →"
 link = "/elections-2024/candidate-quiz/"
 
 [[blocks]]
