@@ -163,7 +163,7 @@ link = "election-assistant"
 
 [[blocks.link]]
 title = "Events"
-link = "events"
+link = "event-promo"
 
 [[blocks.link]]
 title = "Quiz"
@@ -214,16 +214,21 @@ link = "/elections/assistant/"
 
 [[blocks]]
 layout = "events"
-id = "events"
+id = "event-promo"
 title = "Spotlight PA voter event series"
 image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 
 [[blocks.entries]]
 hed="Row Races"
-dek="Join us for a live webinar covering everything you need to know about the row office candidates’ histories and campaign pledges, and the offices they hope to win."
-date="2024-04-19"
-dateVerbose="Oct. 3, 2024 on Zoom"
-registration="https://zoom.us/webinar/register/WN_vcjU4hM0TBSOlZeV_yK4fw"
+dek="Everything you need to know about the row office candidates’ histories and campaign pledges, and the offices they hope to win."
+link="https://www.spotlightpa.org/news/2024/09/pennsylvania-row-office-election-candidates-2024-attorney-general-auditor-treasurer/"
+
+[[blocks.entries]]
+hed = "How accessible are Pennsylvania’s elections?"
+dateVerbose = "Oct. 17, 2024"
+date = "2024-10-17"
+dek = "Join us for a live panel discussion on the accessibility of Pennsylvania’s elections and how you can protect your right to vote."
+registration = "https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w#/registration"
 
 [[blocks]]
 layout = "ballyhoo"
