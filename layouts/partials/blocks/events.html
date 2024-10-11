@@ -52,11 +52,14 @@
                   <span>{{ $hed }}</span>
                 {{ end }}
               </h3>
-              <time
-                datetime="{{ .date }}"
-                class="my-2 font-sans text-sm font-bold uppercase tracking-wide"
-                >{{ .dateVerbose }}</time
-              >
+              {{ if .dateVerbose }}
+                <time
+                  datetime="{{ .date }}"
+                  class="my-2 font-sans text-sm font-bold uppercase tracking-wide"
+                >
+                  {{- .dateVerbose -}}
+                </time>
+              {{ end }}
               <p class="font-base">{{ .dek }}</p>
               {{ if .registration }}
                 <p class="my-4 font-sans text-sm tracking-wide">
