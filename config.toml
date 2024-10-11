@@ -4,9 +4,12 @@ title = "Spotlight PA"
 enableRobotsTXT = true
 enableGitInfo = true
 rssLimit = 60
-Paginate = 30
-
 googleAnalytics = "GTM-NTQ87KG"
+
+[pagination]
+disableAliases = false
+pagerSize = 30
+path = 'page'
 
 [markup]
 defaultMarkdownHandler = "goldmark"
