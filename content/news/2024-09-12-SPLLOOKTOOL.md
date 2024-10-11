@@ -49,7 +49,7 @@ So depending on which spelling of their town name a voter chooses, they may not 
 
 For example, in Beaver County, there is an &#34;Aliquippa&#34; and an &#34;Aliquippa PA&#34; option under the “City” dropdown menu. Selecting &#34;Aliquippa PA&#34; shows you the option for &#34;Straub Farm Rd&#34; under the street dropdown, but no other streets. Selecting &#34;Aliquippa&#34; would show you the other street names for the municipality, but not &#34;Straub Farm Rd.&#34;
 
-{{<embed/raw srcdoc="&lt;iframe width=&#34;100%&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/XbnubJm-ofk?si=Umnc0yFxgFLJ9uyK&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;">}}
+{{<youtube id="XbnubJm-ofk" loading="lazy">}}
 
 In Blair County, Hollidaysburg is misspelled “H0llidaysburg,” with a zero instead of an “o.”
 
