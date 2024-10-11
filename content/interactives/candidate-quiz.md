@@ -43,7 +43,7 @@ credits = """
       email="jrummel@spotlightpa.org"
   >}}
 
-Spotlight PA’s government team wrote this quiz based on information from candidate websites, published interviews, debates, and other statements. Send feedback to <a class="text-navy underline" href="mailto: shughes@spotlightpa.org">Deputy Editor Sarah Anne Hughes</a>.
+Spotlight PA’s government team wrote these quizzes based on information from candidate websites, published interviews, debates, and other statements. Send feedback to <a class="text-navy underline" href="mailto: shughes@spotlightpa.org">Deputy Editor Sarah Anne Hughes</a>.
   """
 promo = "{{<featured/election-promo>}}"
 +++

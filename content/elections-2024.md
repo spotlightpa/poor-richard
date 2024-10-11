@@ -166,6 +166,10 @@ title = "Events"
 link = "events"
 
 [[blocks.link]]
+title = "Quiz"
+link = "quiz"
+
+[[blocks.link]]
 title = "Elections 101"
 link = "elections-101"
 
@@ -220,6 +224,15 @@ dek="Join us for a live webinar covering everything you need to know about the r
 date="2024-04-19"
 dateVerbose="Oct. 3, 2024 on Zoom"
 registration="https://zoom.us/webinar/register/WN_vcjU4hM0TBSOlZeV_yK4fw"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "quiz"
+image = "2024/10/01kg-dw76-v4hn-egrq.jpeg"
+hed = "Find Your Candidate Match"
+dek = "Use our interactive tool to see which major party candidates for Pennsylvania attorney general, auditor general, and treasurer most closely align with what matters to you."
+cta = "Try Our Quizzes →"
+link = "/elections-2024/candidate-quiz/"
 
 [[blocks]]
 title = "Elections 101"
