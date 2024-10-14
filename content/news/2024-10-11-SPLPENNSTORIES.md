@@ -9,6 +9,7 @@ image = "cas/0xpr-s0wv-txxe-pehb.jpeg"
 image-caption = "State Rep. Jared Solomon (D., Philadelphia), a sponsor of the “What’s your Pennsylvania story?” bill."
 image-credit = "Courtesy of candidate website"
 image-description = "State Rep. Jared Solomon (D., Philadelphia), a sponsor of the “What’s your Pennsylvania story?” bill."
+image-gravity = "ce"
 internal-id = "SPLPENNSTORIES"
 kicker = "PA Local"
 modal-exclude = false
