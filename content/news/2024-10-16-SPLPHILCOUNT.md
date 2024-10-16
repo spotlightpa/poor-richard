@@ -14,8 +14,8 @@ pinned = false
 published = 2024-10-16T05:00:00.401-04:00
 slug = "pennsylvania-election-2024-philadelphia-allegheny-county-mail-ballot-count"
 suppress-date = false
-title = "Philadelphia doesn’t expect to finish counting mail ballots on Election Day. Allegheny County does."
-title-tag = "Philadelphia likely won't count all mail ballots on Election Day"
+title = "Philadelphia aims to speed up mail ballot processing on Election Day with newer equipment"
+title-tag = "Philadelphia aims to speed up ballot counting on Election Day"
 topics = ["Elections"]
 +++
 
