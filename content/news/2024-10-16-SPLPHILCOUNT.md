@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<strong><em>Update, Oct. 16: After this story was published, the commissioners affirmed at a public meeting that the city would use faster ballot-processing equipment this November. The story has been updated throughout.</em></strong>
+
 A few relatively minor changes would allow Philadelphia to process mail ballots much faster and finish counting them much sooner after polls close on Election Day, an analysis by Votebeat and Spotlight PA has found.
 
 The analysis found a wide disparity between Allegheny and Philadelphia — Pennsylvania’s two largest counties — in how quickly they counted mail ballots during the November 2022 election.
@@ -29,9 +31,7 @@ That year, Philadelphia processed ballots at a rate of 5,000 per hour, while All
 
 {{<embed/newsletter>}}
 
-While Philadelphia officials have publicly blamed counting delays on a state law that says poll workers can begin processing ballots only on the morning of Election Day, the analysis points to other culprits: outdated equipment and less staffing.
-
-Public records show Philadelphia already has equipment that can open ballot envelopes much more quickly than its current equipment. However, as of Oct. 15, the city still planned to use older machines this November — though commissioners who make election decisions appear to be divided on whether this is the right approach.
+Public records show Philadelphia already has equipment that can open ballot envelopes much more quickly than its current equipment. Yet — until Wednesday, less than a month before the election — it was unclear if the city commissioners who make election decisions planned to use faster machines. That changed after the publication of this story, when the board agreed during a public meeting to move forward with using both the older and newer machines on Nov. 5.
 
 The stakes of an accurate yet swift ballot count couldn’t be higher, because each day that unofficial election results are delayed could breed more mistrust in the outcome.
 
@@ -51,17 +51,25 @@ Allegheny County election officials said the “secret sauce” to their county�
 
 By comparison, Philadelphia has 22 Opex machines called extraction desks, which can each open up to 3,600 ballots per hour, <a href="https://www.opex.com/model-72/">according to the manufacturer</a>.
 
-Records show that the Philadelphia City Commissioners office, which makes election-related decisions, <a href="https://www.phlcontracts.phila.gov/bso/external/bidDetail.sdo?bidId=B2521790&amp;parentUrl=activeBids">purchased</a> four of the faster Opex Omation machines over the summer. Philadelphia also has a Bluecrest machine it uses to sort ballots, not to open them.
+Records show that the Philadelphia City Commissioners office <a href="https://www.phlcontracts.phila.gov/bso/external/bidDetail.sdo?bidId=B2521790&amp;parentUrl=activeBids">purchased</a> four of the faster Opex Omation machines over the summer. Philadelphia also has a Bluecrest machine it uses to sort ballots, not to open them.
 
-At least one of the three commissioners, Deeley, does not want to use the new equipment this November to open envelopes. She put a motion on the agenda for Wednesday’s commissioners&#39; meeting that calls for using only extraction desks or letter openers to open both the secrecy and return envelopes.
+At least one of the three commissioners, Deeley, does not want to use the new equipment this November to open envelopes. She made a motion at Wednesday’s commissioners&#39; meeting to only use the extraction desks or hand letter openers to open both the secrecy and return envelopes.
 
 Deputy City Commissioner Nick Custodio said Deeley opposes using the new Omation machines for opening ballots because they use a method that has been found with similar machines to damage the ballots inside. When that happens, election workers have to duplicate the ballot to tabulate it, a time-consuming process.
 
-“Our priority is accuracy over speed,” Deeley said in an interview Thursday. “It always has been and it remains that.”
+“Our priority is accuracy over speed,” Deeley said in an interview last Thursday. “It always has been and it remains that.”
 
-However, Chairman Omar Sabir said a decision had not yet been made about the new machines.
+However, Chairman Omar Sabir said last Friday that a decision had not yet been made about the new machines.
 
 “That’s like buying a Corvette and \[you\] don’t drive it,” he said. “We’ll do testing. We’ll see how it works. If it works the way we want it to work, we’ll use it.”
+
+At Wednesday’s meeting, Deeley again expressed concern about the way the new machines open envelopes, saying she did not want to have the nation waiting on Philadelphia to recreate damaged mail ballots.
+
+Joseph Lynch, director of election operations, said at the meeting he had tested the new equipment Tuesday and found no issues with it and would not recommend their use if he was not confident in their performance.
+
+In a comment to Votebeat and Spotlight PA, Forrest Lehman, elections director in Lycoming County, said he and many other counties also use the faster Omation machine. He said once it is adjusted properly, ballot damage rarely occurs.
+
+Deeley’s motion was unsuccessful as no other commissioner seconded it, meaning that the city will use both sets of machines — each for a different type of job — in the upcoming election.
 
 Other subtle differences between the two counties’ operations could also account for the disparity in speed.
 
@@ -91,7 +99,7 @@ As of Oct. 15, Allegheny County had approved more than 200,000 ballot applicatio
 
 {{<embed/donate>}}
 
-Philadelphia is projecting it will finish tabulating 75,000 to 100,000 mail ballots by shortly after 8 p.m. on Election Day, Custodio said. Allegheny County is projecting it will be done with all of its ballots in about the same timeframe.
+Prior to Wednesday’s meeting, Philadelphia was projecting it would finish tabulating 75,000 to 100,000 mail ballots by shortly after 8 p.m. on Election Day, Custodio said. Allegheny County is projecting it will be done with all of its ballots in about the same timeframe.
 
 “We have every intention of completing \[our mail ballot processing\] on Election Day,” Jessica Garofolo, director of administrative services for Allegheny County, said.
 
