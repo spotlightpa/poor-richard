@@ -77,3 +77,7 @@ This job is full-time and includes benefits, and can be based anywhere in the Un
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage members of underrepresented communities to submit an application, including women, people of color, veterans, LGBTQ+ people, and individuals with disabilities.
 
 ### [Apply here](https://spotlightpa.applytojob.com/apply/pAvf9AeGr7/Newsroom-Developer-Democracy-Initiative)
+
+## Sign up to receive alerts so you don't miss new job postings.
+
+{{<newsletter/jobs-form>}}
