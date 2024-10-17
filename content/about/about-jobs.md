@@ -78,6 +78,8 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 
 ### [Apply here](https://spotlightpa.applytojob.com/apply/pAvf9AeGr7/Newsroom-Developer-Democracy-Initiative)
 
+- - - -
+
 ## Sign up to receive alerts so you don't miss new job postings.
 
 {{<newsletter/jobs-form>}}
