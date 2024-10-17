@@ -20,7 +20,7 @@ slug = "spotlight-pennsylvania-berks-county-open-house"
 suppress-date = false
 title = "Get a sneak peek inside Spotlight PA’s plans for a new Berks County bureau"
 title-tag = "Join Spotlight PA to learn about our Berks County, PA Bureau"
-topics = ["Events"]
+topics = ["Events", "Berks County"]
 twitter-title = "Join Spotlight PA to learn about our Berks County bureau"
 +++
 
