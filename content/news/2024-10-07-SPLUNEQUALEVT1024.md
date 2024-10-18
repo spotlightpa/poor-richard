@@ -1,7 +1,7 @@
 +++
-blurb = "Join Spotlight PA for a virtual event on Oct. 17 to learn more about voting access in Pennsylvania and what your rights are."
+blurb = "Spotlight PA held a virtual event on voting access in Pennsylvania and what your rights are."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA for a virtual event on Oct. 17 to learn more about voting access in Pennsylvania and what your rights are."
+description = "Spotlight PA held a virtual event on voting access in Pennsylvania and what your rights are."
 event-date = 2024-10-17T18:00:00-04:00
 event-title = "Spotlight PA Event: How accessible are Pennsylvania’s elections?"
 event-url = "https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w#/registration"
@@ -18,7 +18,7 @@ pinned = false
 published = 2024-10-07T16:15:56.364-04:00
 slug = "pennsylvania-elections-accessibility-voting-rights"
 suppress-date = false
-title = "Spotlight PA Event: How accessible are Pennsylvania’s elections?"
+title = "WATCH: How accessible are Pennsylvania’s elections?"
 title-tag = "How accessible are Pennsylvania’s elections?"
 topics = ["Events"]
 twitter-title = "How accessible are Pennsylvania’s elections?"
@@ -30,11 +30,9 @@ Voters here do not have equal opportunities to correct mail ballots if they make
 
 And in recent years, civil rights organizations have revealed access issues affecting <a href="https://wearecasa.org/voting-rights-advocates-win-lawsuit-against-york-county-board-of-elections/">people who don’t speak English</a> or <a href="https://www.publicnewsservice.org/2024-09-09/civic-engagement-and-voting/access-for-all-making-voting-easier-for-pennsylvanians-with-disabilities/a92263-1#:~:text=Examples%20include%20inaccessible%20polling%20places%2C%20insufficient%20training%20for%20poll%20workers%20on%20accessible%20ballot%2Dmarking%20devices%2C%20and%20misconceptions%20about%20the%20capacity%20of%20disabled%20voters%2C%20and%20more.">who have a disability</a>.
 
-Join us on Thursday, Oct. 17 from 6-7 p.m. on Zoom for a live panel discussion on the accessibility of Pennsylvania’s elections and how you can protect your right to vote.
+On Thursday, Oct. 17, Spotlight PA held a live panel discussion on the accessibility of Pennsylvania’s elections and how you can protect your right to vote. The discussion was led by Elizabeth Estrada, Spotlight PA’s democracy editor.
 
-The discussion will be led by Elizabeth Estrada, Spotlight PA’s democracy editor.
-
-<strong>Panelists include:</strong>
+<strong>Panelists included:</strong>
 
 - <strong>Kate Huangpu</strong>, government reporter, Spotlight PA
 
@@ -42,7 +40,5 @@ The discussion will be led by Elizabeth Estrada, Spotlight PA’s democracy edit
 
 - <strong>Peri Jude Radecic</strong>, chief executive officer, Disability Rights Pennsylvania
 
-<strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w"><strong>here</strong></a><strong>.</strong>
-
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+{{<vimeo id="1021004555" >}}
 
