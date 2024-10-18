@@ -22,6 +22,8 @@ title-tag = "How to vote in PA's 2024 election: deadlines, ballots, and races"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2024/10/pensilvania-elecciones-generales-nov-2024-votar-informacion-registrar/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — On Nov. 5, voters across Pennsylvania will decide their candidates for president, U.S. House and Senate, the commonwealth’s three row offices (attorney general, auditor general, and treasurer), and state House and Senate.
 
 Pennsylvania is a key swing state, and these votes will be particularly important in determining the outcome of the presidential election.
