@@ -1,8 +1,10 @@
 +++
+aliases = ["/news/2024/02/passhe-report-racial-harrassment/"]
 authors = ["Charlotte Keith"]
 blurb = "A new report, launched after a 2020 Spotlight PA investigation, finds students of color face racial harassment and stereotypes in the classrooms of Pennsylvania’s public universities."
 byline = "Charlotte Keith of Spotlight PA"
 description = "A new report finds students of color face racial harassment and stereotypes in the classrooms of Pennsylvania’s public universities."
+feed-exclude = false
 image = "2021/11/01gs-7zgp-0bj6-0gv4.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Citing an August 2020 report by Spotlight PA that documented the mental and academic impact of ongoing racism at schools in the system, known as PASSHE, state Sen. Art Haywood criticized administrators and state leadership for failing to take meaningful action."
