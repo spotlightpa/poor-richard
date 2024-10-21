@@ -4,6 +4,7 @@ authors = ["Carter Walker"]
 blurb = "The Republican Philadelphia city commissioner famously stood up to former President Donald Trump’s claims of election fraud in 2020 while receiving death threats."
 byline = "Carter Walker of Votebeat"
 description = "After the 2020 presidential election in Pennsylvania, Republican Al Schmidt was attacked by former President Donald Trump."
+feed-exclude = false
 image = "external/esagdek72ynk0yqjke9wex3etm.jpeg"
 image-credit = "CHARLES FOX / Philadelphia Inquirer"
 image-description = "Shapiro's pick for Pennsylvania secretary of state, Al Schmidt, served as a Philadelphia city commissioner. "
@@ -13,6 +14,7 @@ internal-id = "SPLSECPICK"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2023-01-05T08:00:00-05:00
 slug = "pa-election-josh-shapiro-governor-al-schmidt-secretary-of-state"
 suppress-date = false
@@ -25,7 +27,7 @@ topics = ["The Capitol", "Elections"]
 
 Al Schmidt, a Republican who famously stood up to former President Donald Trump’s claims of election fraud in 2020 while receiving death threats, has been nominated to be Pennsylvania’s top election official.
 
-Gov.-elect Josh Shapiro, a Democrat, said in a news release that he selected Schmidt to lead the Pennsylvania Department of State because he was “an integral part of the effort to protect our democracy and stop Pennsylvanians’ votes from being thrown out” after the 2020 election. Schmidt served as a city commissioner overseeing elections in Philadelphia for <a href="https://seventy.org/staff-board/al-schmidt">10 years</a>.
+Gov.-elect Josh Shapiro, a Democrat, said in a news release that he selected Schmidt to lead the Pennsylvania Department of State because he was “an integral part of the effort to protect our democracy and stop Pennsylvanians’ votes from being thrown out” after the 2020 election. Schmidt served as a city commissioner overseeing elections in Philadelphia for <a href="https://web.archive.org/20230105132121/https://seventy.org/staff-board/al-schmidt">10 years</a>.
 
 “Al Schmidt has a proven track record of defending our democracy, protecting voting rights, and standing up to extremism — even in the face of grave threats — and I am proud to nominate him to be Pennsylvania’s next Secretary of the Commonwealth,” Shapiro said in the news release.
 
