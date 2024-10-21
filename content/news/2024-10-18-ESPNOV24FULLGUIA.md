@@ -1,4 +1,5 @@
 +++
+app-image = "2024/04/01k2-j6kj-94wa-9by5.jpeg"
 app-image-gravity = "ce"
 authors = ["Elizabeth Estrada de Spotlight PA"]
 blurb = "En las elecciones generales del 5 de noviembre, los ciudadanos de Pensilvania verán candidatos para las elecciones estatales, incluido el fiscal general, senador de EE.UU., entre otros."
