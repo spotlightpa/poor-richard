@@ -1,7 +1,7 @@
 {
   "edCallout": [
-    "content/news/2024-08-26-SPLDOCTORS0824.md",
-    "content/statecollege/2024-06-20-SPLLYNCH.md"
+    "content/statecollege/2024-10-17-SPLPSUPATIENTS1024.md",
+    "content/news/2024-08-26-SPLDOCTORS0824.md"
   ],
   "edImpact": [
     "content/news/2024-09-04-SPLDOCFOLLOW0924.md",
@@ -12,17 +12,15 @@
     "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "featuredStories": [
-    "content/news/2024-10-21-SPLPRECAN101.md"
+    "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "subfeatures": [
-    "content/news/2024-10-14-SPLNOV24FULLGU.md",
-    "content/interactives/candidate-quiz.md",
-    "content/news/2024-08-01-SPLPREBUNKADMIN.md",
-    "content/news/2024-09-12-SPLNOV24COLLEGE.md"
+    "content/news/2024-10-22-SPLAGWITHHELD24.md",
+    "content/news/2024-07-03-SPLABUSE0724.md"
   ],
   "topSlots": [
-    "content/statecollege/2024-10-17-SPLPSUPATIENTS1024.md",
-    "content/news/2024-10-18-SPLTAROTBAN.md",
+    "content/news/2024-10-22-SPLAGGUNS24.md",
+    "content/news/2024-10-21-SPLPRECAN101.md",
     "content/news/2024-10-18-SPLSENECON24.md"
   ],
   "topper": []
