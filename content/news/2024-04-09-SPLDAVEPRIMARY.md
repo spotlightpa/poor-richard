@@ -3,18 +3,20 @@ authors = ["Félicie Jungels", "Maya Mehrara", "Sophia Takla"]
 blurb = "Here’s what Republicans need to know about Dave Sunday before they vote for attorney general April 23."
 byline = "Félicie Jungels, Maya Mehrara, and Sophia Takla for Spotlight PA"
 description = "Dave Sunday is one of two Republicans vying for the party’s nomination in the upcoming Pennsylvania 2024 primary election."
+feed-exclude = false
 image = "cas/9886-egqh-x49t-wp62.png"
 image-credit = "Courtesy candidate website"
 image-description = "Republican attorney general candidate Dave Sunday"
 internal-id = "SPLDAVEPRIMARY"
 kicker = "Candidate 101"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-09T13:39:40.088-04:00
 slug = "dave-sunday-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
-title = "Who is Dave Sunday, a Republican running for Pa. attorney general?"
-title-tag = "Who is Dave Sunday, Republican for PA attorney general?"
+title = "A primary guide to Dave Sunday, a Republican running for Pa. attorney general"
+title-tag = "A primary guide to Dave Sunday, Republican for PA attorney general"
 topics = ["Candidate 101"]
 +++
 
