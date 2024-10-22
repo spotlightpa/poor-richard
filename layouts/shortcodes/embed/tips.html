@@ -4,7 +4,7 @@
 
 {{ $tip := .Get "tip_text" | htmlUnescape | default `` }}
 {{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
-{{ $form := .Get "form_name" | htmlUnescape | default `contact-page` }}
+{{ $formName := .Get "form_name" | htmlUnescape | default `contact-page` }}
 
 {{ partial "tag/content-well-end" . }}
 <div
@@ -57,6 +57,7 @@
   </div>
   <form
     class="flex flex-col gap-2 p-4"
+    name="{{ $formName }}"
     action="/contact/thanks/"
     method="post"
     netlify
@@ -64,7 +65,6 @@
     x-form="contact"
     target="_parent"
   >
-    <input type="hidden" name="form-name" value="{{ $form }}" />
     <p class="hidden">
       <label>
         Don’t fill this out if you're human:
