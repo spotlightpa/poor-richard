@@ -6,7 +6,7 @@ linktitle = "Partners"
 layout = "page-landing"
 
 form ="""
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="Become a partner"
   show-anon=false
   recipient="Joanna Zuckerman Bernstein "

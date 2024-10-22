@@ -32,7 +32,7 @@ featured-newsletter = """
     Promo Tips Shortcode
   </h3>
 
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="Send A Tip"
   show-anon=true
   recipient="Wyatt Massey"
@@ -47,7 +47,7 @@ featured-newsletter = """
   <h3 class="mb-8 font-sans text-3xl italic leading-none">
     Contact Form Shortcode
   </h3>
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="Contact Form"
   dek="For news tips, please see [our tips page](/tips/). For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use the form below. Other submissions, including press releases or events, will not receive a response."
   submit="Send Inquiry"
