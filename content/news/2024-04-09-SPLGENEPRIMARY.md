@@ -10,12 +10,13 @@ image-description = "Democratic attorney general candidate Eugene DePasquale"
 internal-id = "SPLGENEPRIMARY"
 kicker = "Elections"
 modal-exclude = false
+no-index = true
 pinned = false
 published = 2024-04-09T13:22:45.765-04:00
 slug = "eugene-depasquale-pennsylvania-attorney-general-primary-election-2024"
 suppress-date = false
-title = "Who is Eugene DePasquale, a Democrat running for Pa. attorney general?"
-title-tag = "Who is Eugene DePasquale, Democrat for PA attorney general?"
+title = "A primary guide to Eugene DePasquale, a Democrat running for Pa. attorney general"
+title-tag = "A primary guide to Eugene DePasquale, Democrat for PA attorney general"
 topics = ["Candidate 101"]
 +++
 
