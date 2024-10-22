@@ -8,7 +8,7 @@ type = "root"
 *PLEASE NOTE: The communication channels below are intended only for news tips to our reporters. For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use [the contact page](/contact/). Other submissions, including press releases or events, will not receive a response.*
 
 <div class="my-12">
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="Submit a tip"
   dek="Our reporters rely on readers like you to alert us to waste, fraud, abuse, or other problems involving state or local government, businesses, or individuals. The best tips are specific (with details we can use to guide our reporting) and newsworthy (affecting a large number of people or involving entities or individuals with power over a large number of people)."
   submit="Send Tip"
@@ -40,7 +40,7 @@ Harrisburg, PA 17108-1728
 
 ## Signal
 
-Signal is a free app with end-to-end encryption, meaning the content of messages and calls can only be read by you or your intended recipient. You must register a phone number to begin using the app, so if you want to protect your identity, consider the same steps listed above in terms of using a “burner” phone. 
+Signal is a free app with end-to-end encryption, meaning the content of messages and calls can only be read by you or your intended recipient. You must register a phone number to begin using the app, so if you want to protect your identity, consider the same steps listed above in terms of using a “burner” phone.
 
 Spotlight PA's reporters [each have their own Signal number](https://www.spotlightpa.org/about/staff/). You must add their number to your contacts before messaging, so use a fake name for the entry, and they'll do the same.
 

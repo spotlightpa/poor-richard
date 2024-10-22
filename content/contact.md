@@ -18,7 +18,7 @@ For questions about your membership, including how to change or cancel a gift, e
 For more information on supporting Spotlight PA, visit our [Ways to Give](/support) page.
 
 <div class="my-12">
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="General inquiries"
   dek="For news tips, please see [our tips page](/tips/). For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use the form below. Other submissions, including press releases or events, will not receive a response."
   submit="Send Inquiry"

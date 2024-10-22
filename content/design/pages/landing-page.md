@@ -17,7 +17,7 @@ supporters = """
 >}}
 """
 testimonials-group = """
-{{<testimonials-group 
+{{<testimonials-group
   title="Testimonials Group"
   featuredQuote="Featured Quote."
   featuredCite="Quote Credit">}}
@@ -38,7 +38,7 @@ In an era where fraud and dishonesty among public officials (and their supporter
 """
 
 form ="""
-{{<featured/promo-contact-form
+{{<form-contact-large
   hed="Contact Form"
   dek="Contact form allows you to specify recipient to bypass the Subject select menu and set 'show-anon' to true and display an anonymity checkbox"
 >}}
@@ -96,7 +96,7 @@ show_partners = 4
 copy = """
 
   Spotlight PA’s unique model of public-service journalism relies on the generous support of individuals and institutions who understand the vital importance of Spotlight PA’s work to the future of Pennsylvania. The newsroom is supported by a dedicated group of local and national foundations, media partners, individual major donors (“Leaders in Action”), and thousands of readers from across Pennsylvania (“members”). Consistent with our mission, we disclose the source of every dollar we receive, and we do not accept anonymous gifts.
-  
+
   ## Learn more about who supports our work
 
   [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders)
@@ -145,7 +145,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod
 tempor incididunt ut **labore et dolore magna aliqua**. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. 
+consequat.
 
 ---
 
@@ -185,4 +185,3 @@ ordered list:
 ###### Heading Level Six (h6)
 
 Let us do some links - this for example: https://github.com/MinhasKamal/github-markdown-syntax is **NOT** a link but this: is [GitHub](https://github.com/MinhasKamal/github-markdown-syntax)
-
