@@ -4,6 +4,7 @@ authors = ["Wyatt Massey"]
 blurb = "Penn State won’t answer important questions after student athletes were allegedly extorted into taking and sharing sexually explicit photos and videos of themselves and others."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "Penn State won’t answer important questions after student athletes were allegedly extorted into taking and sharing sexually explicit photos and videos of themselves and others."
+feed-exclude = false
 image = "external/aq5epz61n70zhd2n82md1ewrqr.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
 image-description = "People walk across Old Main lawn on the Penn State campus on Wednesday, May 19, 2021.  "
@@ -12,6 +13,7 @@ internal-id = "SPLPSURESPONSE"
 kicker = "Penn State"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-08-02T14:16:42.228-04:00
 slug = "penn-state-athletes-extortion-unanswered-questions"
 suppress-date = false
@@ -27,7 +29,7 @@ University officials rebuffed Spotlight PA’s questions about whether all indiv
 
 Penn State also declined to specify how many students were involved, when exactly campus police were brought in, and whether additional crimes were investigated.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20information%20relating%20to%20this%20case%20that%20we%20should%20investigate%3F%20Tell%20us%20now.&form_name=statecollege-embed"></div>
+{{<embed/tips form_name="statecollege-embed" tip_text="Do you have information relating to this case that we should investigate? Tell us now.">}}
 
 According to the search warrants, the videos showed naked or partially naked people in the locker room of the Penn State football team. Videos showing multiple men having sex with a woman were also shared with the alleged extortionist, law enforcement officials said in the documents.
 
