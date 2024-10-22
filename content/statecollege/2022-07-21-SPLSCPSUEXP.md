@@ -47,7 +47,7 @@ About three weeks later, on July 14, Paula Knudsen Burke, a First Amendment atto
 
 Hours later, the judge granted a motion filed days earlier by the district attorney’s office and ordered that the search warrants — with names and identifications of the victims redacted — be made publicly available.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 Our Penn State investigative reporter, Wyatt Massey, had the newly public search warrants in hand by 1 p.m. Friday and began discussing their contents with editors.
 
@@ -61,6 +61,6 @@ Massey is diligently working on getting answers about what happened, and a detai
 
 You can send tips or questions about the case to Massey at <a href="mailto:wmassey@spotlightpa.org">wmassey@spotlightpa.org</a> or 445-236-0562.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20information%20relating%20to%20this%20case%20that%20we%20should%20investigate%3F%20Tell%20us%20now.&form_name=statecollege-embed"></div>
+{{<embed/tips form_name="statecollege-embed" tip_text="Do you have information relating to this case that we should investigate? Tell us now.">}}
 
 <i><b>SUPPORT THIS JOURNALISM</b></i><i> and help us reinvigorate local news in north-central Pennsylvania at </i><a href="/donate?campaign=701Dn000000Ygq1IAC&utm_source=www.spotlightpa.org&utm_medium=statecollege:section&utm_campaign=statecollege:main"><i>spotlightpa.org/statecollege</i></a><i>. Spotlight PA is funded by </i><a href="https://www.spotlightpa.org/support"><i>foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability and public-service journalism that gets results.</i>
