@@ -4,6 +4,7 @@ authors = ["Sarah Rafacz"]
 blurb = "Spotlight PA fought to unseal search warrants involving Penn State student crime victims, but there were too many unanswered questions to rush a story once we had them."
 byline = "Sarah Rafacz of Spotlight PA State College"
 description = "Spotlight PA fought to unseal search warrants involving Penn State student crime victims, but there were too many unanswered questions to rush a story once we had them."
+feed-exclude = false
 image = "external/7psg3cvex4m9r9b3qgtbjxra7r.jpeg"
 image-credit = "Abby Drey / Centre Daily Times"
 image-description = "The Centre County Courthouse on Nov. 1, 2018."
@@ -12,6 +13,7 @@ internal-id = "SPLSCPSUEXP"
 kicker = "Editor's Notes"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-07-21T05:00:58-04:00
 slug = "penn-state-football-athletes-sexual-extortion"
 suppress-date = false
@@ -29,7 +31,7 @@ The contents of the file are disturbing. The documents include intimate details 
 
 Those questions required more time, reporting, and context than could be provided in the hours after we received the records Friday afternoon. So we decided not to rush to publish.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
+{{<embed/newsletter button="Sign Up Now" cta="Sign up for our new regional newsletter, &lt;b&gt;Talk of the Town&lt;/b&gt;, and get all the news and notes from State College and north-central PA." eyebrow="DON&#39;T MISS A BEAT" preselect="state_college">}}
 
 Centre County District Attorney Bernie Cantorna had been investigating the potential sexual extortion since October 2021, according to court documents. During that time, court records related to the open investigation were sealed, as is customary.
 
