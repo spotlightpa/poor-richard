@@ -113,3 +113,5 @@ Lisa Schaffer, executive director of the County Commissioners Association of Pen
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </em><a href="mailto:cwalker@votebeat.org"><em>cwalker@votebeat.org</em></a><em>.</em>
 
+{{<dewey-assistant>}}
+
