@@ -23,12 +23,12 @@
     "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-headwater-link": "/donate",
-  "ad-rail-active": false,
-  "ad-rail-image-description": "For a limited time, support Spotlight PA's nonprofit, nonpartisan journalism and your gift will be DOUBLED.",
+  "ad-rail-active": true,
+  "ad-rail-image-description": "",
   "ad-rail-images": [
-    "https://files.data.spotlightpa.org/uploads/01ke/958t/september-campaign-mobile-topperrectangles-1000-x-1640-px-300-x-600-px-.png"
+    "https://files.data.spotlightpa.org/uploads/01kh/fv4g/antislapp-300x600-04.png"
   ],
-  "ad-rail-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=river",
+  "ad-rail-link": "https://www.speakfreepa.org/",
   "banner": "\u003cstrong\u003eNew to voting in PA or need a refresher?\u003c/strong\u003e Visit our Election Center 2024 »",
   "banner-active": true,
   "banner-bg-color": " #7cdbfd",
@@ -42,27 +42,27 @@
   ],
   "featured-promo-link": "/donate/",
   "featured-promo-width": 1024,
-  "footer-promo-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Spring Member Drive!",
+  "footer-promo-description": "",
   "footer-promo-desktop-height": 90,
-  "footer-promo-desktop-images": [],
+  "footer-promo-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01kh/fvbg/antislapp-728x90-06.png"
+  ],
   "footer-promo-desktop-width": 728,
-  "footer-promo-link": "/donate",
+  "footer-promo-link": "https://www.speakfreepa.org/",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": false,
+  "promo-active": true,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01hk/8yz2/rally-round-our-coverage-2022-desktop-site-graphic-728-90-px-1-.png"
+    "https://files.data.spotlightpa.org/uploads/01kh/fvbg/antislapp-728x90-06.png"
   ],
   "promo-desktop-width": 728,
-  "promo-image-description": "Support Spotlight PA's vital election coverage ahead of Pennsylvania's high-stakes fall election.",
-  "promo-link": "/donate",
+  "promo-image-description": "",
+  "promo-link": "https://www.speakfreepa.org/",
   "promo-mobile-height": 250,
-  "promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01hk/8yz1/week-of-giving-2022-rectangles-1024-512-px-6-.png"
-  ],
+  "promo-mobile-images": [],
   "promo-mobile-width": 500,
   "promo-text": "Spotlight PA's vital investigative journalism depends on your support. It's that simple. Contribute now.",
   "promo-type": "image",
