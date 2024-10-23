@@ -74,5 +74,7 @@ Trump and the Republican National Committee he controls opted for an unorthodox 
 
 Republican activists in swing states said in September that they had seen little activity from the PAC&#39;s get-out-the-vote efforts.
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
