@@ -3,12 +3,14 @@ authors = ["Stephen Caruso"]
 blurb = "Pennsylvania voters will be asked to consider giving two Superior Court judges new 10-year terms. These little-noticed ballot questions can have huge ramifications."
 byline = "Stephen Caruso of Spotlight PA"
 description = "Find out which PA Superior Court judges are up for new 10-year terms in the general election and what the potential ramifications are."
+feed-exclude = false
 image = "external/2we6nackbaygshb3kb6dd6a2dr.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "A Pennsylvania voter in Camp Hill wears an I Voted sticker on Election Day, Nov. 8, 2022."
 internal-id = "SPLJUDRETEN"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-09-13T05:00:00.696-04:00
 series = ["Voting Guides 2023"]
 slug = "pennsylvania-election-2023-judicial-retention-superior-court-common-pleas"
@@ -88,7 +90,7 @@ As with all judicial elections, finding information on the candidates is tricky 
 
 Panella and Stabile are recommended for retention by <a href="https://www.pabar.org/site/For-Lawyers/Committees-Commissions/Judicial-Evaluation/Resources/JEC-Ratings/2023/Superior-Court">the state bar association</a>, which issues nonpartisan reviews of judges&#39; conduct and reputation when they stand for retention, along with recommendations for first-time candidates.
 
-Before his election to the court, Panella served as a judge in Northampton County’s Court of Common Pleas. He <a href="https://www.pottsmerc.com/2009/11/03/cash-drives-pennsylvania-judicial-elections/">ran unsuccessfully for state Supreme Court</a> in 2009. In 2018, his colleagues on Superior Court <a href="https://bucksbar.org/latest-news/jack-anthony-panella-elected-president-judge-of-pennsylvania-superior-court/">elected him to be the president judge</a>.
+Before his election to the court, Panella served as a judge in Northampton County’s Court of Common Pleas. He <a href="https://www.pottsmerc.com/2009/11/03/cash-drives-pennsylvania-judicial-elections/">ran unsuccessfully for state Supreme Court</a> in 2009. In 2018, his colleagues on Superior Court <a href="https://web.archive.org/web/20231009220950/https://bucksbar.org/latest-news/jack-anthony-panella-elected-president-judge-of-pennsylvania-superior-court/">elected him to be the president judge</a>.
 
 Panella has “an excellent reputation for high moral character, integrity and professionalism&#34; and “his legal opinions are well-written and well-reasoned,” the bar association wrote in its recommendation.
 
