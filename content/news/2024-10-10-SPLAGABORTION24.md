@@ -120,5 +120,7 @@ He added that he would consider suing the state if the governor and legislature 
 
 During a primary debate, Sunday <a href="https://www.abc27.com/pa-attorney-general-race/dave-sunday-wins-republican-attorney-general-primary-ap-projects/">said</a> he believes that there is no right to abortion guaranteed in the state constitution.
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
