@@ -3,12 +3,14 @@ authors = ["Stephen Caruso", "Katie Meyer"]
 blurb = "Here’s what you need to know about Panella before you consider his retention on the state Superior Court."
 byline = "Stephen Caruso of Spotlight PA and Katie Meyer of Spotlight PA"
 description = "Voters in the Pennsylvania 2023 election will consider whether to keep Panella on the state Superior Court."
+feed-exclude = false
 image = "external/5nkd2ahgmhkjqey197v3dghkwm.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A voter holds an “I Voted” sticker Nov. 8, 2022, at Memorial Hall in Jim Thorpe Carbon County, Pennsylvania."
 internal-id = "SPLPANELLA"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-11-01T14:22:52.572-04:00
 slug = "jack-panella-pennsylvania-judicial-retention-2023-election"
 suppress-date = false
@@ -37,7 +39,7 @@ So ahead of 2023 Election Day on Nov. 7, here’s the rundown on Panella, who se
 
 Panella, a Democrat, joined the Superior Court in 2003 and is one of the longest-tenured judges on the bench. He had previously served as a judge in Northampton County’s Court of Common Pleas.
 
-In 2018, his colleagues on the Superior Court <a href="https://bucksbar.org/latest-news/jack-anthony-panella-elected-president-judge-of-pennsylvania-superior-court/">elected him to be its president judge</a>. During his time on the bench he has authored or co-authored three benchbooks, which aim to help other judges navigate complex legal issues, on <a href="https://pcar.org/resource/pennsylvania-sexual-violence-benchbook">sexual violence</a> and <a href="https://www.pacourts.us/Storage/media/pdfs/20210526/234952-file-11360.pdf">restitution</a>.
+In 2018, his colleagues on the Superior Court <a href="https://web.archive.org/web/20231009220950/https://bucksbar.org/latest-news/jack-anthony-panella-elected-president-judge-of-pennsylvania-superior-court/">elected him to be its president judge</a>. During his time on the bench he has authored or co-authored three benchbooks, which aim to help other judges navigate complex legal issues, on <a href="https://pcar.org/resource/pennsylvania-sexual-violence-benchbook">sexual violence</a> and <a href="https://www.pacourts.us/Storage/media/pdfs/20210526/234952-file-11360.pdf">restitution</a>.
 
 Panella ran unsuccessfully for state Supreme Court in 2009 in a race that was, at the time, <a href="https://www.pottsmerc.com/2009/11/03/cash-drives-pennsylvania-judicial-elections/">seen as notably combative</a>. Panella’s opponent was Republican Joan Orie Melvin, who was then a fellow Superior Court judge and whose campaign funded ads accusing Panella of failing to appropriately respond to the notorious “kids for cash” scandal as a member of the state Judicial Conduct Board.
 
