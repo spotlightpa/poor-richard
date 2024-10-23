@@ -149,5 +149,7 @@ She added that the large difference between how much her campaign and Garrity’
 
 <em>Spotlight PA’s Katie Meyer contributed reporting for this story.</em>
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
