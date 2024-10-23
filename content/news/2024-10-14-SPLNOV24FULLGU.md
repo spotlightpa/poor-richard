@@ -226,12 +226,11 @@ If you’d like to see a sample ballot, you can use Spotlight PA’s <a href="ht
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Learn more</a> about how Spotlight PA is covering the 2024 election.
 
-{{<featured/related-stories 
-  title="More Stories from the 2024 Election" 
+{{<dewey-assistant>}}
+
+{{<featured/related-stories
+  title="More Stories from the 2024 Election"
   link="/election"
   cta="Visit the Election Center →"
   limit="12"
 >}}
-
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
