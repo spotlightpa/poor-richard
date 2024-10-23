@@ -53,7 +53,7 @@ In a dissent joined by two other justices, Justice P. Kevin Brobson wrote that t
 
 Neither Butler County Commissioner Kimberly Geyer nor Republican National Committee spokesperson Claire Zunk immediately responded to a request for comment.
 
-{{<embed/newsletter>}}
+{{<embed/donate>}}
 
 The case is one of three major cases on mail ballots the high court could rule on before the election.
 
