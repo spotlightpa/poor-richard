@@ -16,6 +16,7 @@ modal-exclude = false
 og-title = "Where Pa.’s attorney general candidates stand on abortion access"
 pinned = false
 published = 2024-10-10T04:00:00-04:00
+series = ["Voting Guides 2024"]
 slug = "pennsylvania-election-2024-attorney-general-abortion-eugene-depasquale-dave-sunday"
 suppress-date = false
 title = "Where Pa.’s attorney general candidates stand on abortion access"
