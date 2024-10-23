@@ -3,7 +3,7 @@
 {{ if or $desktop $mobile }}
   <div class="{{ .wrapperClass }}" data-fru-campaign="footer-promo">
     {{ partial "tw/promo-double.html" (dict
-      "class" "mt-5 px-5"
+      "class" "mt-5 px-5 flex justify-center"
       "imageDescription" (site.Param "footer-promo-description")
       "link" (site.Param "footer-promo-link")
       "desktopImages" $desktop
