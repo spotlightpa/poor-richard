@@ -81,5 +81,7 @@ She thinks the more that can be done to explain how ballots get counted, how mai
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </em><a href="mailto:cwalker@votebeat.org"><em>cwalker@votebeat.org</em></a><em>.</em>
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
