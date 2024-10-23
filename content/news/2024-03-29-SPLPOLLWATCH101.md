@@ -3,6 +3,7 @@ authors = ["Kate Huangpu"]
 blurb = "Poll watchers in Pennsylvania are appointed by candidates and political parties to observe the voting process. Since 2020, their work has become increasingly politicized."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Poll watchers in Pennsylvania are appointed by candidates and political parties to observe the voting process."
+feed-exclude = false
 image = "external/j040hqsrdfj0rtmwfms9fhh9e0.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "The sun sets over Pennsylvania as voters take to the polls in Harrisburg on Election Day, Nov. 8, 2022."
@@ -25,7 +26,7 @@ HARRISBURG — As the 2024 election heats up, voters in Pennsylvania may hear ca
 
 Poll watchers are a longstanding feature of elections in Pennsylvania and around the country, and both major parties use them to guard against malfeasance. But in 2020 they became the subject of mass scrutiny as former President Donald Trump <a href="https://web.archive.org/web/20201001165208/https://twitter.com/realDonaldTrump/status/1311051647687307264">made</a> <a href="https://abcnews.go.com/Politics/trump-falsely-claims-poll-watchers-blocked-observing-early/story?id=73345532">multiple</a> false or misleading claims about them.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 His campaign also brought unsuccessful lawsuits arguing its watchers should be <a href="https://www.inquirer.com/politics/election/trump-campaign-philadelphia-lawsuit-ruling-20201009.html">allowed in Philadelphia’s satellite mail ballot offices</a> and allowed to serve <a href="https://www.inquirer.com/politics/election/trump-loses-pennsylvania-voting-lawsuit-federal-court-20201010.html">in counties other than where they reside</a>.
 
@@ -39,6 +40,8 @@ Election directors broadly agree that poll watchers are crucial for improving co
 
 Here’s everything you need to know about poll watchers, what they can and can’t do, and how they will be used in the upcoming election.
 
+{{<toc>}}
+
 ### Skip to section
 
 - <a href="#spl-heading-1">What is a poll watcher? What does a poll watcher do?</a>
@@ -48,6 +51,8 @@ Here’s everything you need to know about poll watchers, what they can and can�
 - <a href="#spl-heading-3">Why were poll watchers scrutinized in 2020?</a>
 
 - <a href="#spl-heading-4">What was the impact?</a>
+
+{{</toc>}}
 
 <h2 id="spl-heading-1">What is a poll watcher? What does a poll watcher do?</h2>
 
@@ -106,8 +111,6 @@ This law remains the same in 2024.
 
 As a part of this effort, the Trump campaign filed multiple suits in <a href="https://www.pacourts.us/Storage/media/pdfs/20210604/113328-file-10376.pdf">state</a> and <a href="https://whyy.org/articles/trump-asks-federal-court-to-stop-vote-counting-in-phiadelphia/">federal</a> courts that sought to allow its poll watchers closer access to vote-counting centers in Philadelphia and to <a href="https://www.nbcphiladelphia.com/news/local/pennsylvania-judge-throws-out-trump-campaigns-poll-watching-lawsuit/2559833/">expand</a> who could serve as a poll watcher. However, all of the cases were dismissed.
 
-{{<picture src="cas/gzra-bxjz-3brf-tz0e.jpeg" description="Former President Donald Trump in Argentina, November 2018." caption="Former President Donald Trump in Argentina, November 2018." credit="U.S. Department of State photo">}}
-
 <h2 id="spl-heading-4">What was the impact?</h2>
 
 While Trump’s claims about his poll watchers being denied access in Pennsylvania were uniformly disproven or dismissed by judges by early 2021, the impacts on the state’s election process lasted longer.
@@ -134,7 +137,7 @@ Jeff Greenburg, an election administration advisor at the good-government group 
 
 “I know that the landscape has changed significantly since 2020. But nothing has changed as when it comes to the laws and rules surrounding poll watchers in Pennsylvania,” Greenburg said. “That was something I never worried about as a director, but something I would strongly consider now.”
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 Some election directors go beyond education to make poll watchers trust the voting process. Mercer County election director Thad Hall assigns bipartisan teams of poll watchers in precincts, working with state parties and candidates to organize them. Hall says that while that practice is not required, he believes it increases confidence in the results.
 
@@ -144,5 +147,7 @@ The current and former election directors who spoke with Spotlight PA all say th
 
 “They’re a legitimate part of the process, they have an important role to play in making sure the process is transparent,” he added. “But there are limitations on watchers’ conduct that they need to be aware of and respect.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+{{<dewey-assistant>}}
+
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
