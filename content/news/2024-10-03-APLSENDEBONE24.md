@@ -71,5 +71,7 @@ Both Casey and McCormick were uncontested for their party&#39;s nominations in t
 
 Also on the Nov. 5 Senate ballot are John Thomas of the Libertarian Party, Leila Hazou of the Green Party and Marty Selker of the Constitution Party. They were not invited to the debate.
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
