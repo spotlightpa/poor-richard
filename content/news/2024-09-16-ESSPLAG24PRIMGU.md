@@ -133,6 +133,8 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante el mism
 
 <a href="https://www.depasqualeforag.com/endorsements"><strong>Apoyos</strong></a><strong>:</strong> Miembros demócratas de la legislatura; funcionarios locales y del condado; el senador John Fetterman (demócrata, Pensilvania); el ex representante Mike Doyle (demócrata, Pensilvania); sindicatos como la Asociación de Educación del Estado de Pensilvania, AFSCME Council 13, IBEW Local 98 y la Asociación de Funcionarios Penitenciarios del Estado de Pensilvania; y organizaciones como el Giffords Law Center, Conservation Voters de PA y Planned Parenthood de Pennsylvania.
 
+{{<dewey-assistant>}}
+
 <h3 id="spl-heading-4">Dave Sunday, Republicano</h3>
 
 <a href="https://www.davesundayforag.com/"><strong>Página web</strong></a>
