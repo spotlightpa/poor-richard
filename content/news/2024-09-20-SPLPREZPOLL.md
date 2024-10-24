@@ -34,6 +34,8 @@ Harris’ edge is within the poll’s <a href="https://www.pewresearch.org/short
 
 Harris became the presumptive Democratic nominee after President Joe Biden dropped out in late July following a debate that intensified public calls for him to exit the race. Since then, Harris has made several visits to the commonwealth, where she has <a href="https://www.nytimes.com/2024/09/13/us/politics/harris-pennsylvania-rally.html">highlighted</a> a <a href="https://www.usatoday.com/story/news/politics/elections/2024/09/14/harris-college-requirement-jobs/75226318007/">pitch</a> to end degree requirements for some federal jobs and Trump’s role in appointing U.S. Supreme Court justices who overturned<em> Roe v. Wade.</em>
 
+{{<dewey-assistant>}}
+
 Trump won Pennsylvania in 2016 by just over 44,000 votes, contributing to his surprise presidential victory. He then lost here to Biden four years later by about twice as many ballots.
 
 He’s made the economy the centerpiece of his campaign, <a href="https://apnews.com/article/trump-harris-pennsylvania-economy-fracking-biden-scranton-d1e8098a7588bfd1af685327f18ab3a1">focusing</a> on the Biden administration’s record on inflation and specifically mentioning <a href="https://www.politifact.com/factchecks/2024/sep/08/donald-trump/fact-checking-donald-trump-on-the-scale-and-causes/">Harris&#39; tie-breaking vote</a> for the American Rescue Plan Act.
