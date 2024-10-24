@@ -119,6 +119,8 @@ Kenyatta won a two-way primary that was at times contentious. He accused his Dem
 
 <a href="https://www.malcolmkenyatta.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> the <a href="https://www.inquirer.com/politics/pennsylvania/pa-democrats-2024-endorsements-attorney-general-20231216.html">Pennsylvania Democratic Party</a>; unions including the state chapter of the American Federation of Teachers and the Pennsylvania State Building and Construction Trades Council; the Working Families Party; Pittsburgh Mayor Ed Gainey; seven members of Pennsylvania’s congressional delegation; and members of the state legislature, including House Speaker Joanna McClinton of Philadelphia.
 
+{{<dewey-assistant>}}
+
 <h3 id="spl-heading-4">Tim DeFoor, Republican</h3>
 
 <a href="https://www.defoor4pa.com/meet-tim">Website</a>
@@ -190,8 +192,6 @@ Smith, based in the Pittsburgh suburb of Crafton, is a financial planning <a hre
 He also says he’d have “regular press conferences reviewing audit results and letting you know exactly what your money was spent on.”
 
 <em>This guide adapts a primary version written by Jannelle Andes, Genevieve Hartnett, Alaysia Lane, Bill Meincke, and DJ Waller, graduate students at New York University in the American Journalism Online program. They reported this story as part of a collaboration with </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>.</em>
-
-{{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
