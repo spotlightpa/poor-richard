@@ -31,7 +31,7 @@ HARRISBURG — In 2022, after the U.S. Supreme Court struck down <em>Roe v. Wade
 
 The <a href="https://www.attorneygeneral.gov/taking-action/pa-attorney-general-josh-shapiro-releases-statement-on-scotus-decision-overturning-roe-w-wade/">statement</a> demonstrated both the symbolic and very real power that Pennsylvania’s top law enforcement official has when it comes to abortion access.
 
-{{<embed/newsletter>}}
+{{<dewey-assistant>}}
 
 This November, Pennsylvanians will choose the next person they want in that role, and the two major party candidates gunning for the job — <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/">Democrat Eugene DePasquale and Republican Dave Sunday</a> — have different views on the issue.
 
@@ -70,6 +70,8 @@ He has cited his personal history with abortion to explain his views, noting the
 Throughout his campaign, Sunday has declined to answer questions about his personal opinion on abortion. Instead, he’s pledged to uphold and defend the state’s laws.
 
 This is partly due, he says, to his view that the attorney general should function as a law enforcement official rather than a lawmaker. Sunday says he would leave decisions of abortion access up to the state legislature and governor.
+
+{{<embed/newsletter>}}
 
 “I fundamentally believe that when you have a district attorney or an attorney general that would ever refuse to enforce a law based on their own personal feelings, then you&#39;re usurping the will of 13 million Pennsylvanians,” Sunday told Spotlight PA.
 
@@ -119,8 +121,6 @@ He added that he would consider suing the state if the governor and legislature 
 “I would explore all options,” DePasquale said. “I reserve judgment until the bill exists, but it is something I would strongly consider.”
 
 During a primary debate, Sunday <a href="https://www.abc27.com/pa-attorney-general-race/dave-sunday-wins-republican-attorney-general-primary-ap-projects/">said</a> he believes that there is no right to abortion guaranteed in the state constitution.
-
-{{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
