@@ -41,6 +41,8 @@ The case began in Butler County, which rejected provisional ballots cast by two 
 
 The ACLU and Public Interest Law Center sued the county, arguing it had misinterpreted a section of the state’s Election Code in considering the rejected mailed ballots as “cast.”
 
+{{<dewey-assistant>}}
+
 The groups lost at the county court level, but that decision was overturned by the state’s Commonwealth Court in September. Republican groups that intervened in the case appealed it to the state Supreme Court. The ruling from the state’s highest court means it will apply statewide, not just in Butler County.
 
 Pennsylvania law requires voters to sign and date their ballot return envelopes, and to place the ballot in an inner secrecy envelope before being placed in the return envelope, in order for the ballot to be counted.
