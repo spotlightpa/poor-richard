@@ -44,6 +44,8 @@ Puede solicitar el voto por correo una sola vez o solicitar que se le añada a l
 
 Si tiene una urgencia y se le pasa el plazo, aún puede solicitar un <a href="https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/Mail-and-Absentee-Ballot-Spanish.aspx">formulario de urgencia para votar en ausencia</a>.
 
+{{<dewey-assistant>}}
+
 ## ¿Cómo puedo asegurarme de que se cuenta mi papeleta?
 
 La mejor manera de asegurarse de que su voto cuenta es <a href="https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/Mail-and-Absentee-Ballot-Spanish.aspx">seguir las instrucciones</a> de su papeleta de voto por correo, especialmente cuando se trata de fechar la correctamente.
