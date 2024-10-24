@@ -191,5 +191,7 @@ He also says he’d have “regular press conferences reviewing audit results an
 
 <em>This guide adapts a primary version written by Jannelle Andes, Genevieve Hartnett, Alaysia Lane, Bill Meincke, and DJ Waller, graduate students at New York University in the American Journalism Online program. They reported this story as part of a collaboration with </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>.</em>
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
