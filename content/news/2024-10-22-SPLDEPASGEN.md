@@ -28,7 +28,7 @@ But it also investigates and prosecutes everything from organized crime to polit
 
 Learn more about DePasquale below:
 
-{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
+{{<dewey-assistant>}}
 
 ## Who is Eugene DePasquale?
 
@@ -51,6 +51,8 @@ When he ran for auditor general in 2012, he often touted his record in the legis
 As auditor general, DePasquale made headlines with several of his office’s reports, including a 2019 <a href="https://www.paauditor.gov/wp-content/uploads/audits-archive/Media/Default/Reports/Department%20of%20State_SURE%20Audit%20Report%2012-19-19.pdf">performance audit</a> of the state’s voter registration system in which he criticized the administration of fellow Democrat, then-Gov. Tom Wolf, for denying access to key documents necessary for a thorough review.
 
 DePasquale’s office also revealed <a href="https://www.paauditor.gov/wp-content/uploads/audits-archive/Media/Default/Reports/Performance%20Audit%20of%20the%20PA%20Department%20of%20Human%20Services%20-%20ChildLine.pdf">troubling problems</a> with the state’s child abuse hotline — where nearly 58,000 calls went unanswered over two years — and brought attention to the backlog of untested rape kits.
+
+{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 Earlier this year, he snagged the Democratic nomination over four competitors in a cordial primary.
 
