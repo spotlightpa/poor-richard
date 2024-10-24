@@ -26,7 +26,7 @@ The auditor general monitors how public dollars are spent to catch waste, fraud,
 
 Learn more about DeFoor below:
 
-{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
+{{<dewey-assistant>}}
 
 ## Who is Tim DeFoor?
 
@@ -55,6 +55,8 @@ According to his campaign <a href="https://www.defoor4pa.com/meet-tim">website</
 - Cutting “wasteful government spending” to protect taxpayers and strengthen the economy.
 
 - Increasing transparency to make sure taxpayer dollars used in state programs are working.
+
+{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 DeFoor <a href="https://www.defoor4pa.com/meet-tim">serves</a> on the Harrisburg Area Community College Foundation Board of Directors, the State YMCA of Pennsylvania Board of Directors, and the Chris “Handles” Franklin Foundation Board of Directors. He is a member of the Greater Harrisburg Area NAACP and the Pennsylvania State Fraternal Order of Police Lodge \#78.
 
