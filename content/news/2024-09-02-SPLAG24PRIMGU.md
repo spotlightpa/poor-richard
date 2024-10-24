@@ -249,5 +249,7 @@ He also has said he would advocate for electoral reforms, including reducing bar
 
 <em>This guide includes language from a primary edition written by Félicie Jungels, Maya Mehrara, and Sophia Takla. They are graduate students at New York University in the American Journalism Online program and reported as part of a collaboration with </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>.</em>
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
