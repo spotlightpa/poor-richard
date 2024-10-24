@@ -22,11 +22,11 @@ topics = ["Elections"]
 
 Voters in most Pennsylvania counties will have the chance to fix errors with their mail ballots during this election and spare them from being rejected, according to a review of county policies by Votebeat and Spotlight PA.
 
-Thirty-four counties allow voters to fix errors with their mail ballots in some way, and in seven other counties mail voters can at least cast a provisional ballot at their polling place on Election Day if they make a mistake that disqualifies their mail ballot.
+Thirty-four counties allow voters to fix errors with their mail ballots in some way.
 
 The practice, referred to as notice-and-cure, is a policy some counties have adopted to inform voters of errors with their mail ballots that put those ballots at risk of rejection and allow those voters to correct the mistakes.
 
-At least 29 counties, however, will not offer voters the chance to fix errors, according to the survey.
+At least 29 counties, however, will not offer voters the chance to fix errors, according to the survey. However, in light of a <a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-election-mail-ballot-provisional-supreme-court/">new ruling from the state Supreme Court</a>, counties will at least have to accept valid provisional ballots cast on Election Day by those voters.
 
 The rules that can lead to mail ballots being rejected are outlined in Act 77, the 2019 law that expanded mail voting in Pennsylvania. It requires that voters place their ballot in a secrecy envelope before placing that envelope in the return envelope, and that voters sign and put the current date on the return envelope. Failing to do one of these things will prevent the county from counting the ballot.
 
@@ -50,7 +50,11 @@ Kantz, who formerly served as the chair of the Election Reform Committee in the 
 
 Since 2020, the legislature has tried to clarify what curing means and whether counties should be able to allow it, but no legislation has made it through Harrisburg’s partisan gridlock.
 
-Two cases pending at the state Supreme Court could provide some guidance. One, from Washington County, deals with whether counties are required to notify voters when they are going to cancel the voter’s mail ballot due to defects. The other, from Butler County, deals with whether voters whose mail ballots are rejected have the right to cast provisional ballots at their polling place on Election Day and have those votes counted.
+The state Supreme Court has just resolved one such question and stands to provide clarity on another.
+
+The court ruled late Wednesday in one case, from Butler County, that dealt with whether voters whose mail ballots are rejected have the right to cast provisional ballots at their polling place on Election Day and have those votes counted. The 4-3 decision found that these ballots must be counted.
+
+The other case, from Washington County, deals with whether counties are required to notify voters when they are going to cancel the voter’s mail ballot due to defects.
 
 {{<embed/donate>}}
 
