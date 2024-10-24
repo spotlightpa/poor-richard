@@ -120,6 +120,8 @@ As of Sept. 20, PACs spending on Casey’s behalf have put nearly $2 million int
 
 Major supporters include the PAC for the League of Conservation Voters, the labor union-affiliated PAC Workers Vote, the PAC for the union SEIU, and CASA in Action, a PAC primarily focused on engaging Latino and immigrant voters. WinSenate, the U.S. Senate Democrats’ campaign arm, also spent a lot of money opposing McCormick, as did the Natural Resources Defense Council.
 
+{{<dewey-assistant>}}
+
 {{<picture src="cas/k60h-d1mk-6yd5-gcrz.jpeg" description="U.S. Senate candidate Dave McCormick (right)" caption="U.S. Senate candidate Dave McCormick (right)" credit="Courtesy McCormick campaign">}}
 
 <h3 id="spl-heading-4">Dave McCormick, Republican</h3>
@@ -205,8 +207,6 @@ Thomas also describes himself as a devout Christian and as being very involved i
 He acknowledges on his campaign site that he’s a long-shot candidate, but says he wants to “serve as a strong voice for change that will stand up for Pennsylvanians tired of their hard-earned money going to foreign wars across the world and constantly being devalued by Federal Reserve printing-caused inflation.”
 
 In 2023, Thomas ran unsuccessfully for the board of the Armstrong School District on <a href="https://www.leadertimes.com/news/libertarian-john-thomas-announces-candidacy-for-asd-board-of-education-region-2/article_8474727c-c667-11ed-b2d3-33e7756a9aaf.html">a platform</a> of offering alternatives to public schools and combating “the so-called ‘woke’ agenda that has crept into our local schools.”
-
-{{<dewey-assistant>}}
 
 {{<featured/related-stories 
   title="More Stories from the 2024 Election" 
