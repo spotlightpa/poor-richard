@@ -129,6 +129,8 @@ McClelland también había <a href="https://penncapital-star.com/campaigns-elect
 
 <strong>Apoyos</strong>: el <a href="https://www.padems.org/candidates/">Partido Demócrata de Pensilvania</a>, <a href="https://paaflcio.com/endorsed-candidates-2024/">PA AFL-CIO</a>, <a href="https://www.afscme13.org/news/press-release-afscme-members-endorse-depasquale-for-ag-mcclelland-for-treasurer/">AFSCME Distrito Consejo 13</a>, United Steelworkers Distrito 10, Amalgamated Transit Union Pennsylvania Joint Conference Board, Pennsylvania State Education Association, Great Lakes Building Trades, <a href="https://www.plannedparenthoodaction.org/planned-parenthood-pennsylvania-advocates/elections/pp-pa-pac-2024-endorsements">Planned Parenthood PA PAC</a>, <a href="https://www.votetheridge.org/2024-endorsements">Vote the Ridge</a>, <a href="https://drive.google.com/file/d/1yMo9LMwVL_evBNTmLyI0cgOlarbsXZeO/view">Lehigh Valley for All</a>, AFSCME Distrito Consejo 47, Action Together NEPA.
 
+{{<dewey-assistant>}}
+
 <h3 id="spl-heading-4">Stacy Garrity, Republicana</h3>
 
 <a href="https://www.garrityforpa.com/">Página web</a>
