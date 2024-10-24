@@ -26,7 +26,7 @@ The state treasurer is one of three elected row officers in the commonwealth, an
 
 Learn more about McClelland below:
 
-{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
+{{<dewey-assistant>}}
 
 ## Who is Erin McClelland?
 
@@ -57,6 +57,8 @@ McClelland has <a href="https://img1.wsimg.com/blobby/go/6b9fb9ca-e3c0-4b50-994d
 While the bill <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=577">passed the state House</a> this legislative session with bipartisan support — including from state Rep. Ryan Bizzarro (D., Erie), who challenged McClelland during the Democratic primary — McClelland calls it the “George W. Bush Great Recession Starter Kit” and says it creates a “privatized, unregulated, self-directed, non-employer sponsored ‘retirement plan.’”
 
 According to her campaign website, McClelland would “protect our workers and our taxpayers from dangerous, unregulated financial products and scam investments like the Keystone Saves program.”
+
+{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 Citing the Biden administration’s 2021 signing of the Uyghur Forced Labor Prevention Act (UFLPA), McClelland argues for strengthening the state treasurer’s contract oversight authority. She would require companies in Pennsylvania to verify their supply chains are free of goods from countries with records of human rights abuses and deny them state contracts if they can’t show they’ve cut ties with these countries.
 
