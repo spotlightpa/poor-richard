@@ -28,7 +28,7 @@ But it also investigates and prosecutes everything from organized crime to polit
 
 Learn more about Sunday below:
 
-{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
+{{<dewey-assistant>}}
 
 ## Who is Dave Sunday?
 
@@ -45,6 +45,8 @@ He was also appointed by the Department of Justice in 2013 as a special assistan
 In an <a href="https://www.ydr.com/story/news/local/2023/07/10/york-county-da-dave-sunday-to-run-for-pa-attorney-general/70392243007/">interview last year</a> with the York Daily Record, Sunday said the first galvanizing moment in his career came in 2012 when he prosecuted a case involving a man who had repeatedly scammed an older York County resident with Alzheimer&#39;s disease out of thousands of dollars.
 
 The case, he told the newspaper, made his blood boil. It also made him realize that the criminal justice system needs to be more responsive to the people who unwittingly get entangled in it, including families of those charged with crimes.
+
+{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 The second galvanizing moment in his career was the opioid epidemic.
 
