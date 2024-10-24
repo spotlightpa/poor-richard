@@ -117,6 +117,8 @@ Kenyatta ganó una primaria con dos candidatos que por momentos fue polémica. A
 
 <a href="https://www.malcolmkenyatta.com/endorsements"><strong>Apoyos</strong></a><strong>: </strong>el <a href="https://www.inquirer.com/politics/pennsylvania/pa-democrats-2024-endorsements-attorney-general-20231216.html">Partido Demócrata de Pensilvania</a>; sindicatos como la sección estatal de la Federación Estadounidense de Profesores y el Consejo Estatal de Edificación y Construcción de Pensilvania; el Partido de las Familias Trabajadoras; el alcalde de Pittsburgh, Ed Gainey; siete miembros de la delegación de Pensilvania en el Congreso; y miembros de la legislatura estatal, como la presidenta de la Cámara de Representantes, Joanna McClinton, de Filadelfia.
 
+{{<dewey-assistant>}}
+
 <h3 id="spl-heading-4">Tim DeFoor, Republicano</h3>
 
 <a href="https://www.defoor4pa.com/meet-tim">Página web</a>
