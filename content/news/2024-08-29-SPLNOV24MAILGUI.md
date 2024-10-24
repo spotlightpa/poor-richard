@@ -45,6 +45,8 @@ You can apply for a one-time mail ballot or request to be added to the <a href="
 
 If you have an emergency and miss the deadline, you may still be able to request an <a href="https://www.pa.gov/en/agencies/vote/voter-support/mail-in-and-absentee-ballot/emergency-absentee-ballot.html">emergency application for an absentee ballot</a>.
 
+{{<dewey-assistant>}}
+
 ## How do I make sure my ballot is counted?
 
 The best way to ensure your vote counts is to <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">follow the instructions</a> on your mail ballot, especially when it comes to correctly dating it.
@@ -84,8 +86,6 @@ Otherwise, you must return your own ballot.
 Politicians have used isolated <a href="https://www.mcall.com/news/pennsylvania/mc-nws-pa-lehigh-ballot-drop-box-investigation-20220404-wk4ug6j25fgtffuhiwrxnai2ne-story.html">instances of illegal ballot returns</a> to challenge the security of mail voting, but these incidents do not indicate widespread fraudulent voting. In fact, <a href="https://www.cisa.gov/rumorcontrol">mail ballot fraud is extremely rare</a> given the security hurdles voters must clear to receive one, the tracking measures to which these ballots are subjected, and the auditing procedures states use to make sure that ballots aren’t cast by ineligible voters and that nobody votes twice.
 
 Visit <a href="https://www.vote.pa.gov/">vote.pa.gov</a> to <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">read the Pennsylvania Department of State’s rules for mail ballots</a>.
-
-{{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
