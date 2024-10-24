@@ -39,6 +39,8 @@ Anne Wakabayashi, a Democratic political consultant with public relations firm B
 
 The 2022 decision was unpopular among most of the likely voters surveyed by Spotlight PA — 54% said the court made the wrong decision, while 38% said it made the right one.
 
+{{<dewey-assistant>}}
+
 “We&#39;re seeing these really extreme stories coming out of states with abortion bans. It&#39;s deeply concerning for women, and it&#39;s personal,” Wakabayashi said.
 
 Trump, meanwhile, has tried to deflect attention from his <a href="https://www.npr.org/2024/04/18/1198911276/trump-stance-abortion-2024-election-republican-pro-life-change">record</a> on the issue, saying on social media and at a recent campaign rally that women “<a href="https://19thnews.org/2024/09/trump-abortion-women-voters/">will no longer be thinking about abortion</a>” if he wins.
