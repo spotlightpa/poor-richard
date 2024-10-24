@@ -42,6 +42,8 @@ The variation comes from the fact that curing is not a process defined by the st
 
 Some counties have interpreted that lack of clear direction to mean that they shouldn’t allow curing.
 
+{{<dewey-assistant>}}
+
 “Our board has consistently taken the stance that the law does not tell us, it doesn&#39;t say we ‘shall’ cure ballots,&#34; said Joe Kantz, chair of the Snyder County Board of Commissioners. “So because of that, we don&#39;t. Because when people go outside of what the law tells them to do, that&#39;s not usually a good thing.”
 
 Kantz, who formerly served as the chair of the Election Reform Committee in the County Commissioners Association of Pennsylvania, said many other counties take that viewpoint. He said he “would love nothing more” than to have uniformity across the state, but he said that requires legislators to “do their job.&#34;
