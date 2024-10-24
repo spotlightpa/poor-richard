@@ -206,6 +206,8 @@ He acknowledges on his campaign site that he’s a long-shot candidate, but says
 
 In 2023, Thomas ran unsuccessfully for the board of the Armstrong School District on <a href="https://www.leadertimes.com/news/libertarian-john-thomas-announces-candidacy-for-asd-board-of-education-region-2/article_8474727c-c667-11ed-b2d3-33e7756a9aaf.html">a platform</a> of offering alternatives to public schools and combating “the so-called ‘woke’ agenda that has crept into our local schools.”
 
+{{<dewey-assistant>}}
+
 {{<featured/related-stories 
   title="More Stories from the 2024 Election" 
   link="/election"
