@@ -26,7 +26,7 @@ The state treasurer is one of three elected row officers in the commonwealth, an
 
 Learn more about Garrity below:
 
-{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
+{{<dewey-assistant>}}
 
 ## Who is Stacy Garrity?
 
@@ -77,6 +77,8 @@ During her first term, Garrity <a href="https://www.patreasury.gov/newsroom/arch
 Garrity also took action on foreign policy issues. She voluntarily divested $3 million in Russian holdings when the country invaded Ukraine. Soon <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2447">after</a>, a bill that required the Treasury to do so became law. She also sold nearly all of the Treasury’s <a href="https://www.patreasury.gov/pdf/investment/Treasury-Annual-Investment-Report-2022.pdf">$394 million</a> investments in Chinese-associated securities, citing “geopolitical risks” and “human rights violations” as her justification.
 
 Following the October attack on Israel by the militant group Hamas, Garrity increased state investments <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-stacy-garrity-israel-bonds-palestine-protest-treasurer-election/">in Israel</a>.
+
+{{<embed/newsletter cta="Get the latest Spotlight PA candidate guides, voting guides, and other election stories through our free daily newsletter." eyebrow="stay informed" preselect="papost">}}
 
 Garrity has been criticized for her connections with former President Donald Trump, particularly for speaking at a rally that sought to cast doubt on the results of the 2020 election, a day before the Jan. 6 attack on the U.S Capitol.
 
