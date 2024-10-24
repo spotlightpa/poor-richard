@@ -85,5 +85,7 @@ Politicians have used isolated <a href="https://www.mcall.com/news/pennsylvania/
 
 Visit <a href="https://www.vote.pa.gov/">vote.pa.gov</a> to <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">read the Pennsylvania Department of State’s rules for mail ballots</a>.
 
+{{<dewey-assistant>}}
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
