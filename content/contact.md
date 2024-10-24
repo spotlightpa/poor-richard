@@ -20,7 +20,7 @@ For more information on supporting Spotlight PA, visit our [Ways to Give](/suppo
 <div class="my-12">
 {{<form-contact-large
   hed="General inquiries"
-  dek="For news tips, please see [our tips page](/tips/). For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For general comments, please use the form below. Other submissions, including press releases or events, will not receive a response."
+  dek="For news tips, please see [our tips page](/tips/). For technical problems, please email [webmaster@spotlightpa.org](mailto:webmaster@spotlightpa.org). For questions about the 2024 election, visit [www.spotlightpa.org/elections/assistant](/elections/assistant/). For general comments, please use the form below. Other submissions, including press releases or events, will not receive a response."
   submit="Send Inquiry"
 >}}
 </div>
