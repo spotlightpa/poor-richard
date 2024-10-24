@@ -53,7 +53,13 @@ The Pennsylvania Supreme Court <a href="https://www.votebeat.org/pennsylvania/20
 
 In a dissent joined by two other justices, Justice P. Kevin Brobson wrote that the state’s Election Code was “clear and unambiguous” that Butler County “not only lacked the authority to count Electors’ provisional ballots, \[but\] the Election Code expressly prohibited the Board from counting them.”
 
-Neither Butler County Commissioner Kimberly Geyer nor Republican National Committee spokesperson Claire Zunk immediately responded to a request for comment.
+Butler County Commissioner Kimberly Geyer said the county wasn’t looking to disenfranchise any voters, and the root cause of what is happening is ambiguities in the law and the legislature’s lack of action to address them.
+
+“Attorneys from special advocacy groups, such as the ACLU, including the Pennsylvania Department of State … is utilizing the courts to rewrite the election laws,” she said. “The bottom line is this: Counties are following the laws on the books, are then sued in court and the courts are making the final determination. Counties then are required to carry out the Supreme Court’s ruling.”
+
+Claire Zunk, a spokesperson for the Republican National Committee, which intervened in the case, said it was disappointed in the ruling.
+
+“The legislature has set clear, commonsense safeguards to protect the ballot, and those rules must be enforced. We will pursue all legal avenues to protect the vote for Pennsylvanians,” she said.
 
 {{<embed/donate>}}
 
