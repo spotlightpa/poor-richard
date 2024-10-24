@@ -40,6 +40,8 @@ Los estudiantes de secundaria de 17 años de edad pueden ser elegibles para ser 
 
 Por otra parte, los trabajadores electorales no pueden ser empleados o funcionarios públicos en activo, excepto jueces de distrito, notarios públicos o miembros de la Guardia Nacional de Pensilvania. Del mismo modo, las personas cuyos nombres figuran en la papeleta <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/resources-spanish/become-a-poll-worker-spanish.html">no pueden ser trabajadores electorales</a>, excepto los candidatos a la junta electoral local, incluidos los jueces electorales.
 
+{{<dewey-assistant>}}
+
 ## Los deberes
 
 Los trabajadores electorales deben estar disponibles durante toda la jornada electoral, antes de que abran los lugares de votación a las 7 de la mañana y después de que cierren a las 8 de la noche.
