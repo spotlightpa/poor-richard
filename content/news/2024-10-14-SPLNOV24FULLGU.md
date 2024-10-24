@@ -88,7 +88,7 @@ You can register online <a href="https://www.pavoterservices.pa.gov/pages/VoterR
 
 Online voter registration applications must be submitted by 11:59 p.m. that day. Your county board of elections must receive mail and in-person applications by 5 p.m.
 
-{{<embed/newsletter>}}
+{{<dewey-assistant>}}
 
 <h2 id="spl-heading-4">How can I check my voter registration?</h2>
 
@@ -113,6 +113,8 @@ If this is your first time voting or your first time voting since changing your 
 You can apply for a mail ballot until Oct. 29, either online or through the mail. However, your complete application must be received by the county office by 5 p.m. that day.
 
 <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">Here’s the application</a>. You’ll need to provide your name, date of birth, proof of identification, and signature.
+
+{{<embed/newsletter>}}
 
 <h2 id="spl-heading-9">How do I vote absentee?</h2>
 
@@ -225,8 +227,6 @@ There are no statewide ballot measures this year, but some voters may see local 
 If you’d like to see a sample ballot, you can use Spotlight PA’s <a href="https://viz-sample-ballot-2024.data.spotlightpa.org/">sample ballot tool</a>.
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Learn more</a> about how Spotlight PA is covering the 2024 election.
-
-{{<dewey-assistant>}}
 
 {{<featured/related-stories 
   title="More Stories from the 2024 Election" 
