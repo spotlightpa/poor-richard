@@ -139,6 +139,8 @@ When asked how he would address violent crime during the same debate, DePasquale
 
 <a href="https://www.depasqualeforag.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; U.S. Sen. John Fetterman (D., Pa.); former U.S. Rep. Mike Doyle (D., Pa.); labor unions including the Pennsylvania State Education Association, AFSCME Council 13, IBEW Local 98, and the Pennsylvania State Corrections Officers Association; and organizations including the Giffords Law Center, the Conservation Voters of PA and Planned Parenthood in Pennsylvania.
 
+{{<dewey-assistant>}}
+
 <h3 id="spl-heading-4">Dave Sunday, Republican</h3>
 
 <a href="https://www.davesundayforag.com/"><strong>Website</strong></a>
@@ -248,8 +250,6 @@ He argues public education has failed students — believing it emphasizes confo
 He also has said he would advocate for electoral reforms, including reducing barriers for third-party candidates to run for office.
 
 <em>This guide includes language from a primary edition written by Félicie Jungels, Maya Mehrara, and Sophia Takla. They are graduate students at New York University in the American Journalism Online program and reported as part of a collaboration with </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>.</em>
-
-{{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
