@@ -54,17 +54,19 @@ Regular poll workers, or clerks, help check in voters, manage lines, and guide v
 
 Poll workers are not partisan <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-poll-watcher-election-2024-donald-trump-explainer/">poll watchers</a>, who are appointed by candidates or political parties and can challenge the eligibility of a voter (<a href="https://www.vote.pa.gov/Your-Rights/Pages/Poll-Watchers.aspx">though they cannot directly question or speak to them</a>).
 
+{{<dewey-assistant>}}
+
 ## The training
 
 People who want to be poll workers must attend a mandatory training session in person or online before Election Day.
 
 Each county runs its own training, as voting systems vary. Some counties use optical scanners to process ballots, while others use <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-voting-machines-elections-101-prebunking/">different kinds of voting machines</a>.
 
-{{<embed/donate>}}
-
 Counties also handle training for safety threats differently. According to the Pennsylvania Department of State, every county addresses what to do in the event of general threats and disruptive behavior in the polling place. Poll workers are instructed accordingly.
 
 Supplementary training courses for poll workers <a href="https://www.vote.pa.gov/Resources/Poll-Worker-Training/Pages/default.aspx">can be found online</a>. They include videos and guides on checking in voters, inspecting voter identification, and accepting provisional ballots, which are those filled out by people whose eligibility cannot be immediately verified.
+
+{{<embed/donate>}}
 
 ## The pay
 
