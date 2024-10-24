@@ -69,3 +69,5 @@ We have already learned a great deal through the process of building and testing
 
 Ready to try the 2024 Election Assistant? <a href="https://www.spotlightpa.org/elections/assistant/">Here’s the link</a>. Let us know what you think!
 
+{{<dewey-assistant>}}
+
