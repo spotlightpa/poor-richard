@@ -103,6 +103,8 @@ Al rellenar el formulario, seleccione la casilla que dice &#34;cambio de partido
 
 Puede encontrar su colegio electoral <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, escribiendo su dirección.
 
+{{<dewey-assistant>}}
+
 <h2 id="spl-heading-7">¿Qué más necesito saber para votar en persona?</h2>
 
 Si es la primera vez que vota o la primera vez que vota después de cambiar de domicilio, deberá presentar un documento de identidad. Puede ser cualquier documento de identidad expedido por el gobierno, como una licencia de conducir o el pasaporte estadounidense; una factura de servicios públicos o un extracto bancario que incluya su nombre y dirección; o una identificación militar o de estudiante. <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/first-time-voters-spanish.html">Consulte la lista completa de opciones aquí</a>.
