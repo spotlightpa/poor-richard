@@ -60,6 +60,8 @@ How a lawmaker votes on bills, however, can be informative. Do they buck party l
 
 Both chambers have advanced some weighty proposals over the past year. You can see how your lawmakers voted by clicking the below links.
 
+{{<dewey-assistant>}}
+
 Major initiatives considered by the state House over the past year include:
 
 - The <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=445">2023</a> and <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1461">2024</a> state budget deal.
@@ -175,6 +177,8 @@ Donations are divided by size on the report, and by whether the money came from 
 Legislators have already filed <a href="https://www.pa.gov/en/agencies/dos/programs/voting-and-elections/campaign-finance.html">at least two</a> campaign finance reports; they won’t have to file a report showing how much they’ve raised over the summer and fall until Oct. 25.
 
 You also can look at candidates’ statements of financial interest, which show their sources of income, creditors, property, and gifts among other information. The state Ethics Commission holds onto them; you can search for one <a href="https://www.ethicsrulings.pa.gov/WebLink/CustomSearch.aspx?SearchName=SearchforStatementofFinancialInterestsForms&amp;dbid=0&amp;repo=Ethics">here</a>.
+
+{{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
