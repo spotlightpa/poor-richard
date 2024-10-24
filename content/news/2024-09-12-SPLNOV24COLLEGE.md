@@ -63,7 +63,7 @@ You can register to vote where you currently live, whether it’s on or off camp
 
 If you register at your prior home address and plan to vote in person, it’s important to consider how feasible it will be to travel to your polling place. Plan your Election Day accordingly and remember that as long as you are in line to vote by 8 p.m., you are allowed to cast your vote.
 
-{{<embed/newsletter>}}
+{{<dewey-assistant>}}
 
 <h2 id="spl-heading-2">If I am new to Pennsylvania and moved here to attend college, can I still register to vote with my college address?</h2>
 
@@ -82,6 +82,8 @@ If you are already registered to vote, have moved to a new address, and would li
 As long as you meet the additional requirements of being a United States citizen and being a resident of the election district where you plan to register for at least 30 days, you are eligible to vote if you are at least 18 years old on or before Election Day. This is true whether it’s a primary, special, municipal, or general election.
 
 The last day to <a href="https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx">register to vote</a> for the upcoming general election is Oct. 21.
+
+{{<embed/newsletter>}}
 
 <h2 id="spl-heading-6">I’m voting for the first time. How do I prepare and what should I expect?</h2>
 
