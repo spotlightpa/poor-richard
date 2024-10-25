@@ -27,7 +27,7 @@ I think my new house might be haunted.
 
 I’ve not experienced anything particularly unnerving there, to be clear. No apparitions. No voices. No sudden chills or shut doors. (There was a night light in the bathroom that violently strobed every time I walked by, but I’m pretty sure that was just a faulty sensor. Pretty sure.)
 
-My suspicions have to do with the age of the place — it’s almost as old as the Civil War —&nbsp;and its location. It directly abuts a former lumber yard that a neighbor, while struggling against the pull of his formidable corgi, told me was likely the scene of grisly accidents long ago.
+My suspicions have to do with the age of the place — it’s almost as old as the Civil War —&nbsp;and its location: It directly abuts a former lumber mill that a neighbor, while struggling against the pull of his formidable corgi, told me was likely the scene of grisly accidents long ago.
 
 So what do you do if you suspect your place might be possessed and you want to learn more? I asked Lou Bernard, a Clinton County-based paranormal investigator, author, and historian.
 
@@ -79,7 +79,7 @@ In Pennsylvania, you&#39;re required to have a title search done going back 50 y
 
 I always start with the assessment office. That&#39;s where they keep the records when it&#39;s been assessed for taxes. All you gotta do is ask, based on your address, and they will find a copy for you. It’ll list on it the most recent couple of deeds. They&#39;re labeled by books and pages generally, so it&#39;ll say something like, “Book 157, Page 203,” or whatever.
 
-Using that you go down to the register and recorder&#39;s office. You pull that particular book, go to that page, and it should have the most recent deed, presumably, where you or the current owner bought the house. You can use that deed to find the previous deed and so on, and you should be able to trace it all the way back to the beginning of your county.
+Using that you go down to the register and recorder&#39;s office. You pull that particular book, go to that page, and it should have the most recent deed, presumably, where you or the current owner bought the house. You can use that deed to find the previous deed and so on, and you should be able to trace it all the way back to the beginning of your county. (<em>Editor’s note</em>: Pennsylvania’s state library also <a href="https://www.statelibrary.pa.gov/GeneralPublic/Learn/Pages/Pennsylvania-House-Histories.aspx">suggests</a> the state archives’ searchable index of land records <a href="https://www.pa.gov/en/agencies/phmc/pa-state-archives/research-online/research-guides/land-records-overview.html">for older properties</a>, and an online land records and deeds directory <a href="https://www.publicrecords.onlinesearches.com/">for younger properties</a>.)
 
 {{<embed/donate>}}
 
@@ -105,7 +105,7 @@ Check obituaries, cemetery records, <a href="http://findagrave.com">findagrave.c
 
 Let&#39;s say a three-year-old child dies in the house. They&#39;re not likely to have an obit, but they&#39;ll have a gravestone. So you know, that&#39;s how you can find out that that kid passed away.
 
-What you&#39;re looking for is generally not death from old age but rather young death and violent death. That&#39;s the kind of thing that causes haunting.
+What you&#39;re looking for is generally not death from old age but rather young death and violent death. That&#39;s the kind of thing that causes a haunting.
 
 <em>Check out our previous coverage of Pennsylvania’s odd, paranormal history</em>:
 
