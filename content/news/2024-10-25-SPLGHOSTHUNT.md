@@ -23,6 +23,8 @@ topics = ["PA Local"]
 twitter-title = "How to know if your home is haunted"
 +++
 
+<em>This story appeared in PA Local, a weekly newsletter by Spotlight PA taking a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
+
 I think my new house might be haunted.
 
 I’ve not experienced anything particularly unnerving there, to be clear. No apparitions. No voices. No sudden chills or shut doors. (There was a night light in the bathroom that violently strobed every time I walked by, but I’m pretty sure that was just a faulty sensor. Pretty sure.)
