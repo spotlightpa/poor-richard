@@ -1,0 +1,12 @@
+name = "Asha Prihar"
+firstName = "Asha"
+lastName = "Prihar"
+title = "Newsletter Writer"
+email = "aprihar@spotlightpa.org"
+twitter = "ashaprihar"
+active = true
+content = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania's state government for The PLS Reporter. Asha was born and raised in south central Pennsylvania, where she fell in love with journalism at her school newspaper. She currently lives in Philadelphia."
+headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
+role = "reporter"
+beat = "Newsletters"
+focusHed = "Writer / Reporter"
