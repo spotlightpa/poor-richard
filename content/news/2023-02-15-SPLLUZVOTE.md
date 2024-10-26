@@ -4,6 +4,7 @@ authors = ["Carter Walker"]
 blurb = "Luzerne County’s unique government structure and high turnover in key positions are causing repeated errors in elections administration, observers say."
 byline = "Carter Walker of Votebeat"
 description = "Luzerne County in Pennsylvania ran out of ballot paper during the November 2022 election. Observers point to high turnover in key positions."
+feed-exclude = false
 image = "external/ykr3ehkmjx0gpetgbscm19rs4g.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Luzerne County experienced a ballot paper shortage on Election Day in November 2022."
@@ -11,6 +12,7 @@ internal-budget = "In northeast Pennsylvania, one county’s constant staff turn
 internal-id = "SPLLUZVOTE"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-02-15T12:29:27.428-05:00
 slug = "pa-luzerne-county-2022-election-paper-shortage-turnover"
 suppress-date = false
@@ -103,7 +105,7 @@ More recently, the council <a href="https://www.psdispatch.com/news/81468/electi
 
 Morgan said he thinks council members feel “they get the blame” when things go wrong and so they face pressure to act, even though they don’t have the same authority their colleagues in non-home rule counties might have.
 
-Election directors in Luzerne have sometimes had a very contentious relationship with members of the bodies overseeing them. Shelby Watchilla, a former elections director who oversaw the 2020 election and resigned shortly after it, <a href="https://www.standardspeaker.com/luzerne-county-council-to-consider-settlement-of-watchilla-griffith-suit/article_cd8b536f-b918-533b-9256-f90722e882ed.html">sued the county and a council member</a> for defamation over comments they made about her handling of the department. The case is ongoing, and the council member at the heart of the dispute resigned in January 2022 to take office as county controller.
+Election directors in Luzerne have sometimes had a very contentious relationship with members of the bodies overseeing them. Shelby Watchilla, a former elections director who oversaw the 2020 election and resigned shortly after it, <a href="https://web.archive.org/web/20230215222304/https://www.standardspeaker.com/luzerne-county-council-to-consider-settlement-of-watchilla-griffith-suit/article_cd8b536f-b918-533b-9256-f90722e882ed.html">sued the county and a council member</a> for defamation over comments they made about her handling of the department. The case is ongoing, and the council member at the heart of the dispute resigned in January 2022 to take office as county controller.
 
 “Number one, the pay is not worth what is demanded [and] I think that it is a hostile work environment,” said Alisha Hoffman-Mirilovich, executive director of the local progressive group Action Together NEPA.
 
