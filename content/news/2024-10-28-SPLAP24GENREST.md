@@ -120,7 +120,7 @@ The race for treasurer pits Republican incumbent <a href="https://www.garrityfor
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-treasurer-candidates-stacy-garrity-erin-mcclelland/">the candidates for treasurer here</a>.
 
-{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12368.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/20069.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-8">Pennsylvania House</h2>
 
