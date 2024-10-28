@@ -3,6 +3,7 @@ aliases = ["/news/2024/04/pennsylvania-election-results-2024-primary/"]
 blurb = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania primary election."
 byline = "Spotlight PA Staff"
 description = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania primary election."
+feed-exclude = false
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Pennsylvania 2024 election illustration"
@@ -34,6 +35,8 @@ On April 23, Democratic and Republican voters <a href="https://www.spotlightpa.o
 To ensure we are reporting the most accurate results and to avoid contributing to confusion, Spotlight PA will not report on projected winners or publish results stories until the Associated Press calls the race. For many reasons, the AP may not make all calls on the night of the election.
 
 For voters interested in seeing rolling tallies, Spotlight PA is making available for free a tool that displays Associated Press results. Those results will be displayed under each office noted below. Please check back as results will be updated regularly.<em></em>
+
+{{<toc>}}
 
 ### Pa. Election Results
 
@@ -69,6 +72,8 @@ For voters interested in seeing rolling tallies, Spotlight PA is making availabl
 
   - <a href="#spl-heading-16">Q: What is the process for certifying election results in Pennsylvania?</a>
 
+{{</toc>}}
+
 <h2 id="spl-heading-2">U.S. president</h2>
 
 In 2020, Pennsylvania was one of the decisive states in President Joe Biden’s victory after a highly contentious presidential election during the COVID-19 pandemic. Former President Donald Trump denied the loss, baselessly claimed fraud, and ultimately encouraged his supporters to march on the Capitol while votes were being certified, in what culminated in the Jan. 6 <a href="https://www.spotlightpa.org/news/2022/01/january-6-capitol-riot-pennsylvania-role/">riot and insurrection</a>.
@@ -77,13 +82,13 @@ Biden has already <a href="https://apnews.com/article/biden-presumptive-nominee-
 
 Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">secured the nomination</a> for the Republican Party; despite <a href="https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">dropping out of the race</a>, former South Carolina Gov. Nikki Haley will appear on the ballot here.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12357.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/20069.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-3">U.S. Senate</h2>
 
 This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12358.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12358.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-4">U.S. House</h2>
 
@@ -91,7 +96,7 @@ This year, the primary U.S. Senate race is <a href="https://penncapital-star.com
 
 To find who is running in your district, visit the state’s <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">legislator lookup tool</a>.<em></em>
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12361.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12361.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-5">Pennsylvania attorney general</h2>
 
@@ -101,7 +106,7 @@ Democrats Keir Bradford-Grey, Eugene DePasquale, Joe Khan, Jared Solomon, and Ja
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/">the candidates for attorney general here</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12365.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12365.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-6">Pennsylvania auditor general</h2>
 
@@ -109,7 +114,7 @@ The race for auditor general has Republican incumbent Tim DeFoor running unoppos
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta-mark-pinsley/">the candidates for auditor general here</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12367.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12367.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-7">Pennsylvania treasurer</h2>
 
@@ -117,7 +122,7 @@ The race for treasurer has Republican incumbent Stacy Garrity unopposed in her p
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-treasurer-primary-candidates-stacy-garrity-ryan-bizzarro-erin-mcclelland/">the candidates for treasurer here</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12368.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12368.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-8">Pennsylvania House</h2>
 
@@ -127,7 +132,7 @@ The state House has 203 members. All state representatives must run for reelecti
 
 Learn more about <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-2024-legislative-house-senate-races-candidate-vetting-guide/">how to vet your legislative candidates</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12362.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12362.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-9">Pennsylvania Senate</h2>
 
@@ -137,11 +142,11 @@ The state Senate consists of 50 members. The chamber’s senators are elected to
 
 Learn more about <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-2024-legislative-house-senate-races-candidate-vetting-guide/">how to vet your legislative candidates</a>.
 
-<iframe class="ap-embed" title="Live election results via the Associated Press" src="https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12364.html" width="100%" frameborder="0" scrolling="no" marginheight="0"></iframe><script defer src="https://interactives.ap.org/election-results/assets/microsite/resizeClient.js"></script>
+{{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12364.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-10">Frequently asked questions</h2>
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 <h3 id="spl-heading-11">Q: When will we know the final results of the primary election?</h3>
 
