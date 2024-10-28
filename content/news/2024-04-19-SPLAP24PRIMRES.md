@@ -1,5 +1,4 @@
 +++
-aliases = ["/news/2024/04/pennsylvania-election-results-2024-primary/"]
 blurb = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania primary election."
 byline = "Spotlight PA Staff"
 description = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania primary election."
@@ -17,7 +16,7 @@ suppress-date = false
 title = "Latest results from the 2024 Pennsylvania primary election"
 title-tag = "PA primary election results 2024"
 topics = ["Elections"]
-url = "/elections-2024/results/"
+url = "/news/2024/04/pennsylvania-election-results-2024-primary/"
 +++
 
 Results to watch include <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/">Pennsylvania attorney general</a>, <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-treasurer-primary-candidates-stacy-garrity-ryan-bizzarro-erin-mcclelland/">Pennsylvania treasurer</a>, and <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta-mark-pinsley/">Pennsylvania auditor general</a>. Results will begin to show after 8 p.m. on April 23.
