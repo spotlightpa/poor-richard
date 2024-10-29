@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2024/10/pennsylvania-election-results-2024-general/"]
 blurb = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania general election."
 byline = "Spotlight PA Staff"
 description = "See full results for presidential, congressional, row office, and legislative races in the 2024 Pennsylvania general election."
@@ -16,6 +17,7 @@ suppress-date = false
 title = "Latest results from the 2024 Pennsylvania general election"
 title-tag = "2024 Pennsylvania general election results"
 topics = ["Elections"]
+url = "/elections-2024/results/"
 +++
 
 Results to watch include Pennsylvania attorney general, Pennsylvania treasurer, and Pennsylvania auditor general. Results will begin to show after 8 p.m. on Nov. 5.
