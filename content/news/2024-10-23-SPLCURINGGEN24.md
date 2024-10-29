@@ -20,15 +20,17 @@ title-tag = "Mail ballot mistakes can be fixed in these PA counties"
 topics = ["Elections"]
 +++
 
+<strong><em>Update, Oct. 29: This story has been updated to reflect that Cambria and Lackawanna Counties allow ballot curing in person at their county elections offices.</em></strong>
+
 <strong><em>Update, Oct. 28: This story has been updated to reflect recent changes to Indiana County’s policy, as well as information on Mifflin County’s policy.</em></strong>
 
 Voters in most Pennsylvania counties will have the chance to fix errors with their mail ballots during this election and spare them from being rejected, according to a review of county policies by Votebeat and Spotlight PA.
 
-Thirty-six counties allow voters to fix errors with their mail ballots in some way.
+Thirty-eight counties allow voters to fix errors with their mail ballots in some way.
 
 The practice, referred to as notice-and-cure, is a policy some counties have adopted to inform voters of errors with their mail ballots that put those ballots at risk of rejection and allow those voters to correct the mistakes.
 
-At least 28 counties, however, will not offer voters the chance to fix errors, according to the survey. However, in light of a <a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-election-mail-ballot-provisional-supreme-court/">new ruling from the state Supreme Court</a>, counties will at least have to accept valid provisional ballots cast on Election Day by those voters.
+At least 26 counties, however, will not offer voters the chance to fix errors, according to the survey. However, in light of a <a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-election-mail-ballot-provisional-supreme-court/">new ruling from the state Supreme Court</a>, counties will at least have to accept valid provisional ballots cast on Election Day by those voters.
 
 The rules that can lead to mail ballots being rejected are outlined in Act 77, the 2019 law that expanded mail voting in Pennsylvania. It requires that voters place their ballot in a secrecy envelope before placing that envelope in the return envelope, and that voters sign and put the current date on the return envelope. Failing to do one of these things will prevent the county from counting the ballot.
 
@@ -64,7 +66,7 @@ The other case, from Washington County, deals with whether counties are required
 
 For now, counties continue to navigate this lack of clarity on their own. Just last week county commissioners in Bradford County, which previously allowed curing, <a href="https://www.morning-times.com/news/article_d7d593d4-8d98-11ef-9bf1-5f2a64cd58ad.html">voted to discontinue the practice</a>. Indiana County changed course in the opposite direction, <a href="https://www.indianagazette.com/news/indiana-county-election-board-gives-mail-in-voters-chance-to-correct-disqualifying-errors/article_22e79416-9182-11ef-943f-9bc96f96e983.html">voting to allow curing</a>.
 
-The analysis by Votebeat and Spotlight PA also shows that, contrary to popular belief, notice-and-cure is not a strongly partisan issue. Twelve counties that Joe Biden won in 2020 have implemented the practice, but so have 24 counties that Donald Trump won.
+The analysis by Votebeat and Spotlight PA also shows that, contrary to popular belief, notice-and-cure is not a strongly partisan issue. Thirteen counties that Joe Biden won in 2020 have implemented the practice, but so have 25 counties that Donald Trump won.
 
 Fayette County, in south-central Pennsylvania, is one of the Trump counties that have a notice-and-cure policy.
 
