@@ -13,6 +13,7 @@ modal-exclude = false
 og-title = "How the AG candidates plan to approach the opioid epidemic"
 pinned = false
 published = 2024-10-28T04:00:00-04:00
+series = ["Voting Guides 2024"]
 slug = "pennsylvania-election-2024-attorney-general-opioid-epidemic-drugs-prosecute"
 suppress-date = false
 title = "How Pa.’s attorney general candidates plan to approach the opioid epidemic"
