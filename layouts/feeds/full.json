@@ -7,6 +7,7 @@
 {{- range first 15 $stories -}}
   {{- $pubdate := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $moddate := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{ $params := partialCached "helper/page-params" . .RelPermalink }}
   {{- $item := dict
     "id" .File.UniqueID
     "url" .Permalink
@@ -16,6 +17,7 @@
     "author" (.Param "byline")
     "authors" (.Param "authors")
     "content_html" .Content
+    "category" $params.kicker
   -}}
   {{- $imgName := .Param "app-image" -}}
   {{- $gravity := .Param "app-image-gravity" -}}
