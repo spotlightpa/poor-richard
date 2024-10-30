@@ -59,17 +59,21 @@ In the Philadelphia case, a local judge ruled that the city erred in not countin
 
 The city commissioners appealed on the grounds that they did not want to be in a scenario where Philadelphia was the only county counting the ballots or was required to count the ballots for the special elections but not the November general election.
 
+“The Board appreciates the Commonwealth Court’s ruling in this case, which will enable the Board to avoid inconsistency, comply with the Election Code, and uphold the voting rights of electors under the Pennsylvania Constitution,” Ava Schwemler, a spokesperson for the city, said. “We are grateful for a resolution on this matter to guide consistent and equitable election operations.”
+
+Schwemler said the city will not be appealing to the state Supreme Court.
+
 Republican groups that intervened in the case argued the ACLU and Public Interest Law Center’s case had procedural defects, and the Philadelphia court’s ruling violated a legal principle of not changing the rules close to an election.
 
 {{<embed/donate>}}
 
-Philadelphia’s three city commissioners, the Department of State, and a spokesperson for the RNC did not immediately respond to a request for comment.
+A spokesperson for the RNC did not immediately respond to a request for comment.
+
+Amy Gulli, a spokesperson for the Pennsylvania Department of State, said it was “pleased with the result, which won’t interfere with the upcoming election and will only serve to enfranchise voters who otherwise would have their votes thrown out for meaningless mistake.”
 
 Bonin said he anticipated the state Supreme Court will take up the issue soon.
 
 “I assume that the state Supreme Court is going to bring clarity to this between now and when the counties are counting their ballots,” he said. “They have had multiple opportunities to bring finality to this. … The only way that this issue goes away is if all the courts close all the doors.”
-
-<em>This breaking news story may be updated.</em>
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </em><a href="mailto:cwalker@votebeat.org"><em>cwalker@votebeat.org</em></a><em>.</em><strong></strong>
 
