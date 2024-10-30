@@ -25,7 +25,7 @@ Philadelphia must count mail ballots from the September special elections that w
 
 While the ruling applies narrowly, it raises the possibility of additional action by the state Supreme Court and gives county officials yet another ruling to consider when deciding how to handle ballots this November.
 
-In the <a href="https://www.scribd.com/document/786111039/Brian-T-Baxter-and-Susan-T-Kinniry-v-Philadelphia-Board-of-Elections-Republican-National-Committee-and-Republican-Party-of-Pennsylvania">3-2 ruling</a> Wednesday, the state’s Commonwealth Court said that the city had to count ballots from mail voters who made dating errors in the Sept.17 special elections for two vacant legislative seats.
+In the <a href="https://www.scribd.com/document/786111039/Brian-T-Baxter-and-Susan-T-Kinniry-v-Philadelphia-Board-of-Elections-Republican-National-Committee-and-Republican-Party-of-Pennsylvania">3-2 ruling</a> Wednesday, the state’s Commonwealth Court said that the city had to count ballots from mail voters who made dating errors in the Sept. 17 special elections for two vacant legislative seats.
 
 {{<embed/newsletter>}}
 
