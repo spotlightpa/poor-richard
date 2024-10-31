@@ -7,6 +7,7 @@ feed-exclude = false
 image = "cas/gzra-bxjz-3brf-tz0e.jpeg"
 image-credit = "U.S. Department of State photo"
 image-description = "Former President Donald Trump in Argentina, November 2018."
+image-gravity = "we"
 internal-id = "APREGMISINFO24"
 kicker = "Elections"
 modal-exclude = false
