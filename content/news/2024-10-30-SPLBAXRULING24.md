@@ -21,6 +21,8 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<strong><em>Update, Oct. 31: </em></strong><em>The Pennsylvania Republican Party and Republican National Committee have appealed this case to the state Supreme Court.</em>
+
 Philadelphia must count mail ballots from the September special elections that were submitted with return envelopes that voters incorrectly dated or failed to date, a state appellate court ruled Wednesday in a decision that doesn’t explicitly apply to the November general election.
 
 While the ruling applies narrowly, it raises the possibility of additional action by the state Supreme Court and gives county officials yet another ruling to consider when deciding how to handle ballots this November.
@@ -67,7 +69,7 @@ Republican groups that intervened in the case argued the ACLU and Public Interes
 
 {{<embed/donate>}}
 
-A spokesperson for the RNC did not immediately respond to a request for comment.
+A spokesperson for the RNC did not immediately respond to a request for comment. On Thursday, the RNC and the Pennsylvania Republican Party appealed the decision to the Pennsylvania Supreme Court.
 
 Amy Gulli, a spokesperson for the Pennsylvania Department of State, said it was “pleased with the result, which won’t interfere with the upcoming election and will only serve to enfranchise voters who otherwise would have their votes thrown out for meaningless mistake.”
 
