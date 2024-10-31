@@ -43,6 +43,15 @@
   {{ $pubDateISO = .Format $isoFormat }}
 {{ end }}
 
+{{ $modDate := "" }}
+{{ $modDateISO := "" }}
+{{ with .Lastmod }}
+  {{ $modDateDay := partial "helper/date-apstyle" .Local }}
+  {{ $modDateTime := .Local.Format "3:04pm" }}
+  {{ $modDate = printf "%s at %s" $modDateDay $modDateTime }}
+  {{ $modDateISO = .Format $isoFormat }}
+{{ end }}
+
 {{ $eventDate := "" }}
 {{ $eventDateISO := "" }}
 {{ with .Param "event-date" }}
@@ -71,6 +80,8 @@
   "link" $link
   "published" $pubDate
   "publishedISO" $pubDateISO
+  "modified" $modDate
+  "modifiedISO" $modDateISO
   "eventDate" $eventDate
   "eventDateISO" $eventDateISO
   "evergreen" $evergreen
