@@ -4,17 +4,46 @@
 {{- $ap := site.GetPage "authors/associated-press/" -}}
 {{- $stories := union $elections.Pages $spanish.Pages | complement $ap.Pages -}}
 {{- range $stories -}}
-  {{- $date := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $pubdate := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $moddate := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- $params := partialCached "helper/page-params" . .RelPermalink -}}
   {{- $item := dict
     "id" .File.UniqueID
     "url" .Permalink
     "title" .Title
-    "date_published" $date
+    "date_published" $pubdate
+    "date_modified" $moddate
     "author" (.Param "byline")
     "authors" (.Param "authors")
     "content_html" .Content
+    "category" $params.kicker
     "language" (.Param "language-code" | default site.LanguageCode)
   -}}
+  {{- $imgName := .Param "app-image" -}}
+  {{- $gravity := .Param "app-image-gravity" -}}
+  {{- $description := .Param "app-image-description" -}}
+  {{- $credit := .Param "app-image-credit" -}}
+  {{- if not $imgName -}}
+    {{- $imgName = .Param "image" -}}
+    {{- $gravity = .Param "image-gravity" -}}
+    {{- $description = .Param "image-description" -}}
+    {{- $credit = .Param "image-credit" -}}
+  {{- end -}}
+  {{- if $imgName -}}
+    {{- $imgOpt := dict
+        "filename" $imgName
+        "width" 800
+        "height" 1000
+        "absURL" true
+        "gravity" $gravity
+    -}}
+    {{- $url := partial "helper/imgproxy" $imgOpt -}}
+    {{- $item = $item | merge (dict
+        "image" $url
+        "image_description" ($description | default "")
+        "image_credit" ($credit | default "")
+    ) -}}
+  {{- end -}}
   {{- $items = append $item $items -}}
 {{- end -}}
 
