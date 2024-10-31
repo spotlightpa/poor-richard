@@ -15,7 +15,7 @@ published = 2024-10-31T10:58:48.52-04:00
 slug = "pennsylvania-election-2024-donald-trump-voter-registration-misinfo"
 suppress-date = false
 title = "Investigations into voter registration forms in Pennsylvania lead to wave of misinformation"
-title-tag = "Investigations into voter registration forms in PA lead to wave of misinformation"
+title-tag = "Investigations into PA voter registration forms lead to misinformation"
 topics = ["Elections"]
 +++
 
