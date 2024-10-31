@@ -4,16 +4,14 @@
 {{- $ap := site.GetPage "authors/associated-press/" -}}
 {{- $stories := union $elections.Pages $spanish.Pages | complement $ap.Pages -}}
 {{- range $stories -}}
-  {{- $pubdate := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
-  {{- $moddate := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
   {{- $params := partialCached "helper/page-params" . .RelPermalink -}}
   {{- $item := dict
     "id" .File.UniqueID
     "url" .Permalink
     "title" .Title
-    "date_published" $pubdate
-    "date_modified" $moddate
-    "author" (.Param "byline")
+    "date_published" $params.publishedISO
+    "date_modified" $params.modifiedISO
+    "author" $params.byline
     "authors" (.Param "authors")
     "content_html" .Content
     "category" $params.kicker
