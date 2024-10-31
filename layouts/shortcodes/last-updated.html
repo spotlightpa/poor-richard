@@ -1,0 +1,4 @@
+{{- $params := partialCached "helper/page-params" .Page .Page.RelPermalink -}}
+<time datetime="{{ $params.modifiedISO }}">
+  {{- $params.modified -}}
+</time>
