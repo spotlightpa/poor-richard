@@ -26,7 +26,7 @@ Results for races can also be found on the Department of State <a href="https://
 
 For complete coverage of the 2024 general election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
-<em>Last updated Oct. 28, 2024</em>
+**Last updated: {{<last-updated>}}**
 
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
