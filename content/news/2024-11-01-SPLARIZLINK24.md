@@ -45,6 +45,8 @@ Field\+Media Corps operates voter registration drives for clients in Arizona, to
 
 Taylor said that Maricopa County prosecutors took the lead on investigating, because the forms were initially submitted there before being sent on to Navajo and Mohave. The Maricopa County Attorney’s Office confirmed the office opened a related investigation, but was unable to immediately provide more detail.
 
+{{<dewey-assistant>}}
+
 Asked about the Pennsylvania and Arizona investigations, Heredia said the company trains workers to fill out forms accurately. When asked about the characterization of some submitted forms as fraudulent, Heredia said Field\+Media Corps has a zero tolerance policy for workers who submit fraudulent forms.
 
 He said the Maricopa County Attorney’s Office contacted his company last year in connection with an investigation into two canvassers the company employed. Field\+Media Corps fired those two workers, Heredia said.
