@@ -44,16 +44,14 @@
   "featured-promo-width": 1024,
   "footer-promo-description": "",
   "footer-promo-desktop-height": 90,
-  "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kh/fvbg/antislapp-728x90-06.png"
-  ],
+  "footer-promo-desktop-images": [],
   "footer-promo-desktop-width": 728,
-  "footer-promo-link": "https://www.speakfreepa.org/",
+  "footer-promo-link": "",
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
   "newsletter-active": true,
-  "promo-active": true,
+  "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
     "https://files.data.spotlightpa.org/uploads/01kh/fvbg/antislapp-728x90-06.png"
