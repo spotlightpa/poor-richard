@@ -39,6 +39,8 @@ A coalition of voting rights groups is pushing back against the challenges, call
 
 According to Pennsylvania law, mail ballot applications can be challenged up until 5 p.m. the Friday before the election — for a fee of $10 each — on the grounds that the applicant is not qualified to vote.<strong></strong>
 
+{{<dewey-assistant>}}
+
 The challenges appear to be a coordinated effort. Broad and Liberty, a conservative Philadelphia-based news outlet, reported Monday that it had reviewed a list of the 865 challenges, targeting voters registered in Bucks, Chester, Montgomery, and Delaware Counties. Broad and Liberty did not name the group behind the effort, and reported that the challenges are mostly targeting Democratic voters’ applications.
 
 Votebeat and Spotlight PA confirmed with Bucks County that its election office had received 191 challenges Friday from the same person. Spokesperson Jim O&#39;Malley said a hearing by the board of elections would need to take place to determine the validity of the challenges, and that the hearing had not yet been scheduled.
