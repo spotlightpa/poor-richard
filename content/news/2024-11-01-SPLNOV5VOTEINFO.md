@@ -1,5 +1,5 @@
 +++
-app-image-gravity = "ce"
+app-image-gravity = "we"
 authors = ["Elizabeth Estrada"]
 blurb = "On Nov. 5, Pennsylvanians will vote for president, U.S. Senate, attorney general, and more."
 byline = "Elizabeth Estrada of Spotlight PA"
