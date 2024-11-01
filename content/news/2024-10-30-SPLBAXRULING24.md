@@ -41,6 +41,8 @@ In a dissenting opinion, Judge Matthew Wolf said the majority decision risked �
 
 “There simply was and is no reason to decide this question now, and the Majority certainly has not done so in ordinary course,” McCullough wrote. “Both the trial court and this Court should have declined to issue rushed and novel constitutional rulings that surely will confuse the expectations of both voters and county boards of elections alike.”
 
+{{<dewey-assistant>}}
+
 The decision leaves unresolved constitutional questions about counting undated or misdated ballots in the November election, though it does not force officials to count them.
 
 “Of course we hope they will, because if \[rejecting them is\] unconstitutional in September it is unconstitutional in November,” said Andy Hoover, a spokesperson for the American Civil Liberties Union of Pennsylvania, which along with the Public Interest Law Center brought the case on behalf of two voters. “And if they or any county don’t, this ruling sets up post-election litigation.”
