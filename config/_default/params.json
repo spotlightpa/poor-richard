@@ -104,20 +104,20 @@
   "takeover-dek": "On the eve of an unprecedented election, Spotlight PA's independent, nonpartisan journalism needs your support more than ever. Give now \u0026 get it TRIPLED »",
   "takeover-hed": "Friday, Nov. 1: An important update",
   "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
-  "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime",
-  "topper-active": false,
+  "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-takeover",
+  "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/zw3z/september-site-toppertracker-9-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kj/9w9p/newsmatch-2023-tracker-banners-1-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "Support Spotlight PA and for as part of our Fall Member Drive, your gift will be DOUBLED.",
+  "topper-image-description": "Support Spotlight PA and for our year-end member drive, your gift will be TRIPLED.",
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kf/zw40/september-campaign-mobile-topperrectangles-8-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kj/9w3x/newsmatch-2023-rectangles-1024-512-px-.png"
   ],
   "topper-mobile-width": 1024
 }
