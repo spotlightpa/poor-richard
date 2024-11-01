@@ -5,6 +5,7 @@ authors = ["Wyatt Massey"]
 blurb = "Neeli Bendapudi led the University of Louisville during a period of turmoil, but her sudden move to Happy Valley raised questions about her motivations and commitment."
 byline = "Wyatt Massey of Spotlight PA State College"
 description = "Neeli Bendapudi led the University of Louisville during a period of turmoil, but her sudden move to Happy Valley raised questions about her motivations and commitment."
+feed-exclude = false
 image = "external/x7vw7k14ph9qbn3yxdsapv8evr.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
 image-description = "Penn State President Neeli Bendapudi has often referenced the “glass cliff” that she and other leaders faced. The risk of failure is high. The edges of the cliff are transparent and could be anywhere."
@@ -15,6 +16,7 @@ kicker = "Penn State"
 layout = "featured"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-11-01T05:00:00-04:00
 slug = "penn-state-president-bendapudi-profile"
 suppress-date = false
@@ -132,7 +134,7 @@ In her first months as president, she dealt with the Papa Johns controversy and 
 
 Her business experience was a selling point in her candidacy for the role, said Burse, who helped oversee Bendapudi’s hiring. Burse praised the way she lobbied Louisville trustees in 2019 to support her plan for the university to purchase hospitals and other properties from <a href="https://wfpl.org/u-of-l-finalizes-kentuckyone-health-purchase-announces-name-changes/">KentuckyOne Health</a>, a regional care provider that was looking to leave the Louisville market.
 
-Some trustees adamantly opposed the purchase, Burse said, and they feared that taking on the massive health care system would tank the university’s finances. One of the major hospitals, and a key piece in the deal, had struggled financially for years, <a href="https://ci.uky.edu/kentuckyhealthnews/2018/12/04/jewish-hospitals-finances-remain-shaky-increasing-worries-in-the-louisville-area-that-it-cant-be-sold-and-will-close/">according to Kentucky Health News</a>. Details of the trustees’ conversations are not included in board meeting minutes from the time. The discussions likely occurred during executive sessions, which are not subject to open records laws.
+Some trustees adamantly opposed the purchase, Burse said, and they feared that taking on the massive health care system would tank the university’s finances. One of the major hospitals, and a key piece in the deal, had struggled financially for years, <a href="https://web.archive.org/20221101100831/https://ci.uky.edu/kentuckyhealthnews/2018/12/04/jewish-hospitals-finances-remain-shaky-increasing-worries-in-the-louisville-area-that-it-cant-be-sold-and-will-close/">according to Kentucky Health News</a>. Details of the trustees’ conversations are not included in board meeting minutes from the time. The discussions likely occurred during executive sessions, which are not subject to open records laws.
 
 Discussions had initially <a href="https://www.courier-journal.com/story/news/local/2019/06/12/university-louisville-ends-talks-buy-kentuckyone-health-assets/1439066001/">stalled during the summer of 2019</a>, but the possible closure of the hospital spurred Bendapudi and the university to renew talks, according to reporting from the Louisville Courier-Journal. The university also risked damage to its medical school and status as a research institution if the hospital system shuttered.
 
