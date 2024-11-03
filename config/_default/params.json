@@ -50,7 +50,7 @@
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": false,
+  "newsletter-active": true,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
@@ -104,7 +104,7 @@
   "support-text-color": "#000000",
   "takeover-active": true,
   "takeover-dek": "On the eve of an unprecedented election, Spotlight PA's independent, nonpartisan journalism needs your support more than ever. Give now \u0026 get it TRIPLED »",
-  "takeover-hed": "Saturday, Nov. 2: An urgent update",
+  "takeover-hed": "Sunday, Nov. 3: An urgent update",
   "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-takeover",
   "topper-active": true,
