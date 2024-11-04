@@ -12,17 +12,19 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-02-SPLLEGSPEND24.md"
+    "content/news/2024-11-04-SPLDISINFO24.md"
   ],
   "subfeatures": [
-    "content/news/2024-11-01-SPLNOV5VOTEINFO.md",
-    "content/news/2024-09-10-SPLLEGVET24GEN.md",
-    "content/news/2024-10-01-SPLLEGCAND24.md"
+    "content/news/2024-10-30-SPLDROPBOX101.md",
+    "content/news/2024-06-13-SPLRECOUNT101.md",
+    "content/news/2024-08-01-SPLPREBUNKADMIN.md",
+    "content/news/2024-08-08-SPL101GUID.md",
+    "content/news/2024-04-15-SPLMAIL101.md"
   ],
   "topSlots": [
+    "content/news/2024-11-02-SPLLEGSPEND24.md",
     "content/news/2024-11-01-SPLARIZLINK24.md",
-    "content/statecollege/2024-11-01-SPLROCKSPRING1124.md",
-    "content/news/2024-10-31-SPLNEWSQUIZOCT2824.md"
+    "content/statecollege/2024-11-01-SPLROCKSPRING1124.md"
   ],
   "topper": []
 }
