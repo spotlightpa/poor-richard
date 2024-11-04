@@ -61,6 +61,8 @@ One major donor is the Washington, D.C.-based PAC for America’s Future, which 
 
 It raised $14 million this year, according to state campaign finance filings, of which less than 1% came from Pennsylvania donors. Instead, the PAC raised its millions from the wealthy and famous, including Jonathan Soros — a prominent Democratic donor who alone donated $2 million — as well as checks from director Steven Spielberg, comedian Jimmy Fallon, actress Sarah Jessica Parker, and heirs to fortunes created by Walmart and Berkshire Hathaway.
 
+{{<dewey-assistant>}}
+
 In turn, the PAC has funneled its money to Democrats in swing states, including almost $6 million to Pennsylvania candidates and Democratic campaign committees that fight to defend incumbents and flip seats.
 
 In a statement, PAC for America’s Future said that state legislatures are “the strongest force for change in this country, and we power campaigns to create majorities that are committed to defending democracy, protecting personal freedoms and improving their constituents’ lives.”
