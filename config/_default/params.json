@@ -77,14 +77,14 @@
   "sidebar-sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01kj/9wmh/newsmatch-2023-squares.png"
   ],
-  "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
+  "sidebar-sticky-link": "/",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
     "https://files.data.spotlightpa.org/uploads/01kj/9wmh/newsmatch-2023-squares.png"
   ],
-  "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
+  "sidebar-top-link": "/",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
@@ -116,7 +116,7 @@
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
   "topper-image-description": "Support Spotlight PA and for our year-end member drive, your gift will be TRIPLED.",
-  "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
+  "topper-link": "/",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
     "https://files.data.spotlightpa.org/uploads/01kj/9w3x/newsmatch-2023-rectangles-1024-512-px-.png"
