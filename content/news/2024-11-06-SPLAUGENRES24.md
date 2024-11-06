@@ -19,7 +19,7 @@ title-tag = "Tim DeFoor wins PA auditor general race"
 topics = ["Elections"]
 +++
 
-HARRISBURG — Republican TimDefoor has won a second term as Pennsylvania auditor general, besting Democrat Malcolm Kenyatta in a little-noted race to remain the commonwealth&#39;s elected watchdog.
+HARRISBURG — Republican Tim DeFoor has won a second term as Pennsylvania auditor general, besting Democrat Malcolm Kenyatta in a little-noted race to remain the commonwealth&#39;s elected watchdog.
 
 The Associated Press called the race for DeFoor at 3:18 a.m. on Wednesday. Unofficial results show DeFoor with 51.3% of the vote to Kenyatta’s 45.9%.
 
