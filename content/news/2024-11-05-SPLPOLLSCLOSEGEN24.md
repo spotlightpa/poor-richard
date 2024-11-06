@@ -39,6 +39,8 @@ A handful of competitive races will also determine control of the closely divide
 
 Most polls closed at 8 p.m. A judge ordered polling places in Cambria County to <a href="https://www.wjactv.com/news/local/officials-acknowledge-cambria-co-voting-issues-file-for-voting-time-extension">stay open until 10 p.m.</a> because of issues with voting machine scanners, while Luzerne County was <a href="https://www.fox43.com/article/news/politics/elections/election-day-2024-polling-place-extended-hours-laflin-luzerne-county-court-ruling/521-868d9ccf-f91a-42f5-af46-9851d9ca3364">ordered to keep the polling location in Laflin Borough</a> open until 9:30 p.m.
 
+A handful of bomb threats were also reported in counties across Pennsylvania, including Clearfield and Centre. As of 9 p.m., there did not appear to be a credible threat.
+
 Counties were only able to begin processing mail ballots at 7 a.m. That’s been the case since 2020, the year after Pennsylvania lawmakers voted to institute no-excuse mail voting but failed to give county officials time before Election Day to process those ballots. In recent election cycles, it has sometimes taken days to count enough ballots for news agencies to project a winner, and weeks to officially certify election results.
 
 Trump took advantage of the slow count in 2020 to spread disinformation about mail voting, arguing falsely the election was stolen from him as counties continued processing ballots.
