@@ -26,25 +26,23 @@ At the moment, Democrats hold 102 seats in the 203-member chamber, giving the pa
 
 Not in question is which party will control the state Senate: Republicans currently hold 28 of 50 seats, and unofficial results indicate they will at least keep their majority.
 
-Democrats, Republicans, and their allies <a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-2024-state-house-senate-majority-spending/">spent tens of millions of dollars</a> ahead of Tuesday to defend their majorities and flip seats. Despite that spending, only a handful of districts are truly in play — with a single-vote majority likely to be the outcome in the state House, regardless of which party prevails.
+Democrats, Republicans, and their allies <a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-2024-state-house-senate-majority-spending/">spent tens of millions of dollars</a> ahead of Tuesday to defend their majorities and flip seats. Despite that spending, only a handful of districts were truly in play — with a single-vote majority likely to be the outcome in the state House, regardless of which party prevails.
 
 {{<embed/newsletter>}}
 
-## Which Pennsylvania House races are in play?
+## Which Pennsylvania House districts could flip?
 
-As of noon Wednesday, the Associated Press had not called eight races in the lower chamber. The AP <a href="https://www.ap.org/elections/our-role/how-we-call-races/">only calls races</a> when it determines that the trailing candidate no longer has a path to victory.
+As of 3 p.m. Wednesday, the Associated Press had not called two races in the lower chamber. The AP <a href="https://www.ap.org/elections/our-role/how-we-call-races/">only calls races</a> when it determines that the trailing candidate no longer has a path to victory.
 
-Capitol insiders from both major parties are focused on three races: the 72nd District in Western Pennsylvania, the 144th District in suburban Philadelphia, and the 172nd District in Northeast Philadelphia.
+Capitol insiders from both major parties were focused on three races: the 72nd District in Western Pennsylvania, the 144th District in suburban Philadelphia, and the 172nd District in Northeast Philadelphia. All three are held by Democrats.
 
-All three are held by Democrats. In the 72nd, state Rep. Frank Burns (D., Cambria) is seeking a ninth term, while state Rep. Brian Munroe (D., Bucks) seeks a second term in the 144th.
+In the 144th, state Rep. Brian Munroe (D., Bucks) sought a second term. The AP declared him the winner at 3:19 p.m. Wednesday with 51.3% of the vote.
 
-In the 172nd, newcomer Sean Dougherty, an attorney and scion of a local political family, seeks to retain the seat for Democrats after <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-state-house-bryan-cutler-kevin-boyle-incumbents/">defeating state Rep. Kevin Boyle (D., Philadelphia)</a> in the April primary.
-
-State House Democrats <a href="https://x.com/StephenJ_Caruso/status/1854161042596589586">declared</a> victory in the 144th on Wednesday; with 99% of votes counted, Monroe held a 1,001 vote lead, per the AP. No candidate had declared victory in the 172nd, where the AP shows Dougherty with a 282-vote edge with 95% of votes counted.
+In the 172nd, newcomer Sean Dougherty, an attorney and scion of a local political family, seeks to retain the seat for Democrats after <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-state-house-bryan-cutler-kevin-boyle-incumbents/">defeating state Rep. Kevin Boyle (D., Philadelphia)</a> in the April primary. State House Democrats <a href="https://x.com/PAHDCC/status/1854247251947761899">declared</a> victory in the race Wednesday; with 99% of votes counted, Dougherty held a 454 vote lead, according to the AP.
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/25504.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
-The race in the 72nd District, the state House’s most expensive and closely watched contest, has the most uncertainty. As of noon Wednesday, the Associated Press reported that just 31% of votes had been counted.
+In the 72nd, state Rep. Frank Burns (D., Cambria) is seeking a ninth term. The race, the state House’s most expensive and closely watched contest, has the most uncertainty. As of 3 p.m. Wednesday, the Associated Press reported that just 31% of votes had been counted.
 
 The culprit is an issue with the county’s ballot scanners.
 
@@ -70,7 +68,7 @@ It appears the partisan composition of the Pennsylvania Senate will remain uncha
 
 Democrats flipped an open seat that covers the city of Harrisburg and some of its surrounding suburbs. State Rep. Patty Kim (D., Dauphin) defeated Dauphin County Treasurer Nick DiFrancesco there 58% to 42%.
 
-But in a potential upset, Republicans are poised to flip a seat in Northeast Philadelphia. Former GOP congressional staffer Joe Picozzi led state Sen. Jimmy Dillon (D., Philadelphia) by almost 1,400 votes with 95% counted, per the AP.
+But in a potential upset, Republicans are poised to flip a seat in Northeast Philadelphia. Former GOP congressional staffer Joe Picozzi led state Sen. Jimmy Dillon (D., Philadelphia) by 862 votes with 98% counted, per the AP.
 
 Dillon had faced many critical news stories, including a report that <a href="https://www.nbcphiladelphia.com/news/politics/pennsylvania-philadelphia-democratic-sen-jimmy-dillon-denies-writing-racist-homophobic-tweets/3979929/">a social media account</a> for Dillon’s basketball academy posted racial slurs. Dillon denied he wrote the posts, saying others had access to the account.
 
