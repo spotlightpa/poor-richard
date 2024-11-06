@@ -12,15 +12,17 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-06-SPLAGRES24.md"
+    "content/news/2024-11-06-SPLHOUSEWATCH24.md"
   ],
   "subfeatures": [
+    "content/news/2024-11-02-SPLLEGSPEND24.md",
+    "content/news/2024-11-06-SPLPREZRES24.md",
     "content/news/2024-10-28-SPLAP24GENREST.md",
     "content/news/2024-11-05-SPLPOLLSCLOSEGEN24.md",
     "content/news/2024-11-05-SPLNOVLIVE24.md"
   ],
   "topSlots": [
-    "content/news/2024-11-06-SPLPREZRES24.md",
+    "content/news/2024-11-06-SPLAGRES24.md",
     "content/news/2024-11-06-SPLTRESRES24.md",
     "content/news/2024-11-06-SPLAUGENRES24.md"
   ],
