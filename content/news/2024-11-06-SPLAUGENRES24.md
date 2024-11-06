@@ -23,6 +23,8 @@ HARRISBURG — Republican Tim DeFoor has won a second term as Pennsylvania audit
 
 The Associated Press called the race for DeFoor at 3:18 a.m. on Wednesday. Unofficial results show DeFoor with 51.3% of the vote to Kenyatta’s 45.9%.
 
+Kenyatta formally conceded Wednesday morning, congratulating DeFoor in <a href="https://x.com/malcolmkenyatta/status/1854155282198253795">a post on social media</a> and thanking his campaign team and supporters.
+
 The victory secures DeFoor, 62, another four years in office, while allowing Republicans to hold onto a critical row office that can serve as a check on Democratic Gov. Josh Shapiro.
 
 The auditor general is responsible for conducting financial audits to track how public dollars are spent and check for malfeasance or waste.
