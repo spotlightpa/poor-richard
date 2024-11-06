@@ -26,8 +26,6 @@ Results for races can also be found on the Department of State <a href="https://
 
 For complete coverage of the 2024 general election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
-_Last updated: {{<last-updated>}}_
-
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
 On Nov. 5, Pennsylvania voters cast their ballots in the general election. They will pick candidates for president, Congress (U.S. House and Senate), row offices (attorney general, auditor general, and treasurer), and the Pennsylvania legislature.
