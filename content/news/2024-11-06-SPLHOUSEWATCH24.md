@@ -54,6 +54,8 @@ In consultation with the Pennsylvania Department of State, the county set up an 
 
 Provisional ballots are subject to extra scrutiny to make sure the voters who cast them are eligible, and are counted after all other ballots.
 
+Ron Robertson, a Cambria County official handling communications about the process, said the county’s goal is to have enough ballots tabulated that there can be unofficial results in the 72nd District race by Wednesday night.
+
 Burns, who has served in the state House since 2009, is trying to hold on to a district that voted for President-elect Donald Trump by a large margin in 2020.
 
 He has run a campaign focused on keeping Republican-aligned voters in the traditionally labor-aligned district on his side. His ads, funded by at least $3.4 million from the Pennsylvania House Democratic Campaign Committee, have focused on his <a href="https://www.facebook.com/100011402108097/videos/413697408127352/">support for police</a>, <a href="https://www.facebook.com/100011402108097/videos/376707458826952/">cutting taxes</a>, and <a href="https://www.facebook.com/100011402108097/videos/904735885019556/">accusing his opponent, Republican Amy Bradley</a>, of being “bought out by a Philadelphia billionaire-funded group.”
