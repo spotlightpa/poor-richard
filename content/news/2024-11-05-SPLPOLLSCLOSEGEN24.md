@@ -83,6 +83,8 @@ Processing operations appeared to be going smoothly across the state including i
 
 “\[We’re processing\] much quicker than 2020,” City Commissioner Seth Bluestein said.
 
+In Allegheny County, officials said 222,343 ballots had been scanned just before 8 p.m. “We anticipate results of 186,034 mail in ballots to post shortly after 8 pm,” the county <a href="https://x.com/Allegheny_Co/status/1853963765735141700">said</a> on social media. “The next batch of about 36,000 will post as soon as the data is done uploading.”
+
 County officials will tell the Pennsylvania Department of State at midnight how many ballots they have left to tabulate, which will enable observers to roughly calculate when they will be finished.
 
 Voters offered different reasons Tuesday for coming out in person, rather than submitting a mail ballot.
