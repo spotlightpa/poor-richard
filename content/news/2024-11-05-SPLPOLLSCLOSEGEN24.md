@@ -21,7 +21,7 @@ topics = ["Elections"]
 twitter-title = "The polls are closed in Pennsylvania. Now what?"
 +++
 
-HARRISBURG — The polls are closed in most of Pennsylvania after an Election Day that saw sporadic issues affecting in-person voting, long lines at college campuses, and what appears to be high turnout.
+HARRISBURG — The polls are closed in Pennsylvania after an Election Day that saw sporadic issues affecting in-person voting, long lines at college campuses, and what appears to be high turnout.
 
 Now, the real test begins.
 
