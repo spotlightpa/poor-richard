@@ -1,11 +1,11 @@
 [[main]]
-name = "Election 2024"
-url = "/elections-2024/"
+name = "Investigations"
+url = "/investigations/"
 weight = 1
 
 [[main]]
-name = "Investigations"
-url = "/investigations/"
+name = "State College"
+url = "/statecollege/"
 weight = 2
 
 [[main]]
@@ -17,11 +17,6 @@ weight = 3
 name = "About"
 url = "/about/"
 weight = 4
-
-[[main]]
-name = "State College"
-url = "/statecollege/"
-weight = 2
 
 [[about]]
 name = "Our Mission"
