@@ -22,7 +22,9 @@ topics = ["Elections"]
 
 HARRISBURG — Control of the closely divided Pennsylvania House is on the line, with just one race still undecided.
 
-At the moment, Democrats hold 102 seats in the 203-member chamber, giving the party control over the agenda and critical committees. All seats were on the ballot Tuesday.
+This session, Democrats hold 102 seats in the 203-member chamber, giving the party control over the agenda and critical committees.
+
+All seats were on the ballot Tuesday. As of Thursday, Democrats had won 101 races and Republicans had won 101.
 
 Not in question is which party will control the state Senate: Republicans currently hold 28 of 50 seats, and unofficial results indicate they will at least keep their majority.
 
