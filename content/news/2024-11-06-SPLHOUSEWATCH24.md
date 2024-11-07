@@ -20,15 +20,17 @@ title-tag = "Will Democrats keep their PA House majority?"
 topics = ["Elections"]
 +++
 
+<em>Updated: Nov. 7, 3:30 p.m.</em>
+
 HARRISBURG — Control of the closely divided Pennsylvania House is on the line, with just one race still undecided.
 
 This session, Democrats hold 102 seats in the 203-member chamber, giving the party control over the agenda and critical committees.
 
-All seats were on the ballot Tuesday. As of Thursday, Democrats had won 101 races and Republicans had won 101.
+All seats were on the ballot Tuesday. As of Thursday, Democrats had won 101 races and Republicans had won 101. One race had not been called by the Associated Press.
 
-Not in question is which party will control the state Senate: Republicans currently hold 28 of 50 seats, and unofficial results indicate they will at least keep their majority.
+Not in question is which party will control the state Senate: Republicans hold 28 of 50 seats, and unofficial results show they will keep their current majority.
 
-Democrats, Republicans, and their allies <a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-2024-state-house-senate-majority-spending/">spent tens of millions of dollars</a> ahead of Tuesday to defend their majorities and flip seats. Despite that spending, only a handful of districts were truly in play — with a single-vote majority likely to be the outcome in the state House, regardless of which party prevails.
+Democrats, Republicans, and their allies <a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-2024-state-house-senate-majority-spending/">spent tens of millions of dollars</a> ahead of Tuesday to defend their majorities and flip seats. Despite that spending, only a handful of districts were truly in play — with a single-vote majority the outcome in the state House, regardless of which party prevails.
 
 {{<embed/newsletter>}}
 
@@ -66,11 +68,11 @@ Bradley did indeed get almost all of her campaign cash from a PAC funded by Phil
 
 ## Which Pennsylvania Senate races are in play?
 
-It appears the partisan composition of the Pennsylvania Senate will remain unchanged, with a 28-22 Republican advantage.
+The partisan composition of the Pennsylvania Senate will remain unchanged, with a 28-22 Republican advantage.
 
 Democrats flipped an open seat that covers the city of Harrisburg and some of its surrounding suburbs. State Rep. Patty Kim (D., Dauphin) defeated Dauphin County Treasurer Nick DiFrancesco there 58% to 42%.
 
-But in a potential upset, Republicans are poised to flip a seat in Northeast Philadelphia. Former GOP congressional staffer Joe Picozzi led state Sen. Jimmy Dillon (D., Philadelphia) by 862 votes with 98% counted, per the AP.
+But in an upset, Republicans flipped a seat in Northeast Philadelphia. Former GOP congressional staffer Joe Picozzi beat state Sen. Jimmy Dillon (D., Philadelphia) by 946 votes. The Associated Press called the race Thursday afternoon.
 
 Dillon had faced many critical news stories, including a report that <a href="https://www.nbcphiladelphia.com/news/politics/pennsylvania-philadelphia-democratic-sen-jimmy-dillon-denies-writing-racist-homophobic-tweets/3979929/">a social media account</a> for Dillon’s basketball academy posted racial slurs. Dillon denied he wrote the posts, saying others had access to the account.
 
