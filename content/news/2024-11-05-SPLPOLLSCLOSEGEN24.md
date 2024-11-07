@@ -21,6 +21,8 @@ topics = ["Elections"]
 twitter-title = "The polls are closed in Pennsylvania. Now what?"
 +++
 
+<strong><em>Updated, Nov. 7 at 4:30 p.m.: </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-us-senate-bob-casey-dave-mccormick/"><strong><em>Republican Dave McCormick defeats Bob Casey to win U.S. Senate seat in Pennsylvania</em></strong></a><strong><em></em></strong>
+
 <strong><em>Update, Nov. 6 at 7 a.m.: </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-kamala-harris-donald-trump/"><strong><em>Donald Trump won Pennsylvania and the presidency</em></strong></a><strong><em>, while the GOP swept races for </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-attorney-general-dave-sunday-eugene-depasquale/"><strong><em>attorney general</em></strong></a><strong><em>, </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-auditor-general-tim-defoor-malcolm-kenyatta/"><strong><em>auditor general</em></strong></a><strong><em>, and </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-treasurer-stacy-garrity-erin-mcclelland/"><strong><em>treasurer</em></strong></a><strong><em>.</em></strong>
 
 <strong><em>Original story</em></strong>
