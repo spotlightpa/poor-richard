@@ -20,7 +20,7 @@ title-tag = "Will Democrats keep their PA House majority?"
 topics = ["Elections"]
 +++
 
-HARRISBURG — Control of the closely divided Pennsylvania House is on the line, with a handful of races still undecided.
+HARRISBURG — Control of the closely divided Pennsylvania House is on the line, with just one race still undecided.
 
 At the moment, Democrats hold 102 seats in the 203-member chamber, giving the party control over the agenda and critical committees. All seats were on the ballot Tuesday.
 
@@ -32,17 +32,17 @@ Democrats, Republicans, and their allies <a href="https://www.spotlightpa.org/ne
 
 ## Which Pennsylvania House districts could flip?
 
-As of 3 p.m. Wednesday, the Associated Press had not called two races in the lower chamber. The AP <a href="https://www.ap.org/elections/our-role/how-we-call-races/">only calls races</a> when it determines that the trailing candidate no longer has a path to victory.
+As of 3:30 p.m. Thursday, the Associated Press had yet to call one race in the lower chamber. The AP <a href="https://www.ap.org/elections/our-role/how-we-call-races/">only calls races</a> when it determines that the trailing candidate no longer has a path to victory.
 
 Capitol insiders from both major parties were focused on three races: the 72nd District in Western Pennsylvania, the 144th District in suburban Philadelphia, and the 172nd District in Northeast Philadelphia. All three are held by Democrats.
 
 In the 144th, state Rep. Brian Munroe (D., Bucks) sought a second term. The AP declared him the winner at 3:19 p.m. Wednesday with 51.3% of the vote.
 
-In the 172nd, newcomer Sean Dougherty, an attorney and scion of a local political family, seeks to retain the seat for Democrats after <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-state-house-bryan-cutler-kevin-boyle-incumbents/">defeating state Rep. Kevin Boyle (D., Philadelphia)</a> in the April primary. State House Democrats <a href="https://x.com/PAHDCC/status/1854247251947761899">declared</a> victory in the race Wednesday; with 99% of votes counted, Dougherty held a 454 vote lead, according to the AP.
+In the 172nd, newcomer Sean Dougherty, an attorney and scion of a local political family, sought to retain the seat for Democrats after <a href="https://www.spotlightpa.org/news/2024/04/pennsylvania-election-results-2024-primary-state-house-bryan-cutler-kevin-boyle-incumbents/">defeating state Rep. Kevin Boyle (D., Philadelphia)</a> in the April primary. The AP called his race Thursday at 3:19 p.m. with Dougherty leading by 454 votes.
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/25504.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
-In the 72nd, state Rep. Frank Burns (D., Cambria) is seeking a ninth term. The race, the state House’s most expensive and closely watched contest, has the most uncertainty. As of 3 p.m. Wednesday, the Associated Press reported that just 31% of votes had been counted.
+In the 72nd, state Rep. Frank Burns (D., Cambria) is seeking a ninth term. The race, the state House’s most expensive and closely watched contest, has the most uncertainty. As of 3 p.m. Thursday, the Associated Press reported that just 58% of votes had been counted.
 
 The culprit is an issue with the county’s ballot scanners.
 
