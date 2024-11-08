@@ -20,6 +20,8 @@ title-tag = "Will Democrats keep their PA House majority?"
 topics = ["Elections"]
 +++
 
+<em>Updated, Nov. 8: </em><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-state-house-democratic-republican-control/"><em>Democrats will again control Pennsylvania House after holding on to one-seat majority</em></a><em></em>
+
 <em>Updated: Nov. 7, 3:30 p.m.</em>
 
 HARRISBURG — Control of the closely divided Pennsylvania House is on the line, with just one race still undecided.
