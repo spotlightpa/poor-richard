@@ -51,7 +51,7 @@ Over the past week, counties held hearings on the challenges, featuring question
 
 The hearings also revealed who the challengers were. In at least seven counties, the person filing the challenge had attended PA Fair Elections meetings in the past or identified themselves as working with the group.
 
-Honey, the leader of the group, did not respond to a request for comment. The <a href="https://www.inquirer.com/politics/election/heather-honey-pa-fair-elections-vote-challenges-pennsylvania-20241101.html">Philadelphia Inquirer reported</a> that PA Fair Elections denied filing any change-of-address challenges or having any filed on its behalf.
+An unsigned statement from the group denied that the challenges were in any way coordinated or approved by them. Honey, the leader of the group, separately rejected any suggestion that the group was involved.
 
 In Lycoming County, a challenge was filed by Karen DiSalvo of the Election Research Institute, another group led by Honey. DiSalvo previously denied that her challenges were filed in association with the group.
 
@@ -65,7 +65,7 @@ Ashley Lunkenheimer, chair of the county board of elections, expressed frustrati
 
 {{<embed/donate>}}
 
-Voters targeted by Bleasdale’s challenges testified as well. Nicholas Maston invited Bleasdale to visit his home 1.6 miles away from where the hearing was held to verify his residency. The filing against him cited a years-old change-of-address to a home in Chicago, but didn’t acknowledge a more recent record changing his address to his current Delaware County home in August.
+Voters targeted by Bleasdale’s challenges testified as well. Nicholas Maston invited Bleasdale to visit his home 1.6 miles away from where the hearing was held to verify his residency. The filing against him cited a years-old change of address to a home in Chicago, but didn’t acknowledge a more recent record changing his address to his current Delaware County home in August.
 
 The claim that his vote in Pennsylvania should be ineligible “is to me a very serious allegation, and that’s why I&#39;m here today,” he said. “In addition to the assumptions that were made leading to this database and leading to these challenges being flawed, the data itself is flawed.”
 
