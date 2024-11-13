@@ -1,4 +1,6 @@
 +++
+app-image = "2024/11/01kj-n76r-3tep-ac6c.jpeg"
+app-image-gravity = "ce"
 authors = ["Carter Walker"]
 blurb = "Democrat Bob Casey was trailing Republican Dave McCormick by roughly 30,000 votes Wednesday afternoon."
 byline = "Carter Walker of Votebeat"
@@ -7,6 +9,7 @@ feed-exclude = false
 image = "2024/09/01ke-v0eb-r13e-7t2r.png"
 image-credit = "Courtesy campaigns"
 image-description = "Dave McCormick, left, and Bob Casey, right."
+image-gravity = "ce"
 internal-id = "SPLCASEYRECOUNT24"
 kicker = "Elections"
 modal-exclude = false
