@@ -2,7 +2,9 @@
 authors = ["Kiley Bense"]
 blurb = "Many of those affected by health issues that stem from the East Palestine train derailment are women, and they have often been stymied in their efforts to access resources."
 byline = "Kiley Bense of Inside Climate News"
+content-source = "Inside Climate News"
 description = "Many of those affected by health issues that stem from the East Palestine train derailment have been stymied in their efforts to access resources."
+feed-exclude = false
 image = "external/15g5bh9xt02xzn9seew1zm0qr4.jpeg"
 image-credit = "Office of Ohio Gov. Mike DeWine"
 image-description = "A pile of excavated soil waiting for removal from East Palestine, Ohio in March 2023."
@@ -16,7 +18,6 @@ suppress-date = false
 title = "Pennsylvanians say the East Palestine train derailment left them sick and without help"
 title-tag = "East Palestine train derailment made Pa. residents sick"
 topics = ["Environment", "Health"]
-content-source = "Inside Climate News"
 +++
 
 <em>This </em><a href="https://insideclimatenews.org/news/22022024/one-year-later-pennsylvanians-living-near-east-palestine-train-derailment-site-say-theyre-still-sick/"><em>article</em></a><em> originally appeared on Inside Climate News, a nonprofit, independent news organization that covers climate, energy, and the environment. It is republished with permission. Sign up for their newsletter </em><a href="https://insideclimatenews.org/newsletter/"><em>here</em></a><em>.</em>
@@ -59,7 +60,7 @@ Pennsylvania’s DEP and Department of Health say it is <a href="https://www.hea
 
 In a statement provided for this article, an EPA spokesperson said that “no lingering volatile organic compounds would be present in Pennsylvania based on our monitoring, sampling, and scientific understanding of these chemicals.”
 
-But a <a href="https://www.nationalacademies.org/documents/embed/link/LF2255DA3DD1C41C0A42D3BEF0989ACAECE3053A6A9B/file/D6FECEA686ED6FFB59981460EFA436F388245D51BBD0?noSaveAs=1">University of Kentucky</a> health tracking study found that 64% of adults and 63% of children in the area around the site had experienced a new upper respiratory symptom since the derailment. Survey respondents included residents living in Ohio and Pennsylvania, both close to the site and more than 10 miles away. Other symptoms included rashes, sore throat, nausea, eye irritation, headache, cough, lethargy, and shortness of breath.
+But a <a href="https://web.archive.org/20240206212029/https://www.nationalacademies.org/documents/embed/link/LF2255DA3DD1C41C0A42D3BEF0989ACAECE3053A6A9B/file/D6FECEA686ED6FFB59981460EFA436F388245D51BBD0?noSaveAs=1">University of Kentucky</a> health tracking study found that 64% of adults and 63% of children in the area around the site had experienced a new upper respiratory symptom since the derailment. Survey respondents included residents living in Ohio and Pennsylvania, both close to the site and more than 10 miles away. Other symptoms included rashes, sore throat, nausea, eye irritation, headache, cough, lethargy, and shortness of breath.
 
 {{<picture src="2024/02/01jx-ew5e-c15b-nkr8.png" description="The Environmental Protection Agency’s plume map of the soot released by the vent and burn." caption="The Environmental Protection Agency’s plume map of the soot released by the vent and burn." credit="Paul Horn / Inside Climate News">}}
 
