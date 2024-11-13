@@ -12,16 +12,18 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-12-SPLHOARD1124.md"
+    "content/news/2024-11-13-SPLAUDITELEX24.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-13-SPLVOL0824.md",
-    "content/news/2024-10-22-SPLAGINGCOMP24.md"
+    "content/news/2024-11-11-APRACISTTEXT24.md",
+    "content/news/2024-11-08-SPLBALCOUNT24.md",
+    "content/news/2024-11-07-APWHYSENCALL.md",
+    "content/news/2024-11-08-SPLLEGCONT24.md"
   ],
   "topSlots": [
+    "content/news/2024-11-12-SPLHOARD1124.md",
     "content/news/2024-11-11-SPLBURNSWHO.md",
-    "content/news/2024-11-08-SPLBALCHAL.md",
-    "content/news/2024-11-08-SPLLEGCONT24.md"
+    "content/news/2024-11-08-SPLBALCHAL.md"
   ],
   "topper": []
 }
