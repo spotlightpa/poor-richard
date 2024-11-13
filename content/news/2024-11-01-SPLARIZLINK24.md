@@ -51,7 +51,7 @@ Asked about the Pennsylvania and Arizona investigations, Heredia said the compan
 
 He said the Maricopa County Attorney’s Office contacted his company last year in connection with an investigation into two canvassers the company employed. Field\+Media Corps fired those two workers, Heredia said.
 
-Clients or past clients of Field\+Media Corps in Arizona include several prominent Arizona voter advocacy groups, including LUCHA, Chispa AZ and CPLC Action Fund, according to the company’s <a href="https://www.fieldandmedia.com/our-services">website</a>.
+Clients or past clients of Field\+Media Corps in Arizona include several prominent Arizona voter advocacy groups, including LUCHA, Chispa AZ and CPLC Action Fund, according to the company’s <a href="https://web.archive.org/20240620231357/https://www.fieldandmedia.com/our-services">website</a>.
 
 This election cycle, the Maricopa County Recorder’s Office has flagged FieldCorps, the parent company of Field\+Media Corps, for submitting a high percentage of incomplete or inaccurate forms, office spokesperson Sierra Ciaramella confirmed Wednesday.
 
