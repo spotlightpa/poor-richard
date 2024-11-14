@@ -24,6 +24,8 @@ twitter-title = "Voting is over. Audits, certification, and possible recounts ar
 
 <a href="https://www.spotlightpa.org/series/elections-101/"><em>Elections 101</em></a><em> from </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> protects you against election misinformation and empowers you to make informed decisions. This story is made possible through a collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting.</em>
 
+<strong><em>Update, Nov. 13: </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-bob-casey-dave-mccormick-recount/"><strong><em>Pennsylvania’s U.S. Senate race is getting a recount. Here’s how it will work.</em></strong></a><strong><em></em></strong>
+
 Election Day has come and gone in Pennsylvania, largely without issue. But for county officials in charge of voting around the state, the job isn’t over.
 
 For the most part, the state avoided high-profile missteps like the ballot paper shortage that <a href="https://www.votebeat.org/pennsylvania/2023/2/15/23601266/luzerne-county-voting-problems-ballot-paper-shortage-turnover/">Luzerne County experienced in 2022</a>. And with the exception of the U.S. Senate race, decisive margins and quick concessions have helped the state avoid a post-election period marred by disputes.
