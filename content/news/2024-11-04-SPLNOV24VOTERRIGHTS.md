@@ -116,7 +116,7 @@ If you moved longer ago but haven’t gotten around to updating your voter regis
 
 You voted and now you want to snap a celebratory photo to share on social media. Is that allowed?
 
-Pennsylvania law <a href="https://www.ncsl.org/elections-and-campaigns/secrecy-of-the-ballot-and-ballot-selfies">prohibits</a> letting your ballot be seen by other people “with the apparent intention of letting it be known how he is about to vote.”
+Pennsylvania law <a href="https://web.archive.org/20230128092207/https://www.ncsl.org/elections-and-campaigns/secrecy-of-the-ballot-and-ballot-selfies">prohibits</a> letting your ballot be seen by other people “with the apparent intention of letting it be known how he is about to vote.”
 
 However, <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/dos/resources/voting-and-elections/directives-and-guidance/2024-dos-guidance-rules-atthepollingplace-on-electionday-2.0.pdf">recent guidance</a> from the Pennsylvania Department of State says that you can take a &#34;ballot selfie,&#34; but recommends that &#34;voters who want to take a picture of themselves voting take care that they not disclose the selections of voters other than themselves.&#34;
 

@@ -46,7 +46,7 @@ The few gifts of note came largely before the first cases of COVID-19 were repor
 
 Still, the push to ban elected officials from accepting gifts and other perks continues in the state legislature, despite the fact that past efforts have largely been met with indifference and near-total inaction.
 
-Pennsylvania is in the <a href="https://www.ncsl.org/research/ethics/50-state-table-gift-laws.aspx">minority of states</a> with no limit on the size or number of gifts elected officials can accept — the only requirement is disclosure.
+Pennsylvania is in the <a href="https://web.archive.org/20210225193637/https://www.ncsl.org/research/ethics/50-state-table-gift-laws.aspx">minority of states</a> with no limit on the size or number of gifts elected officials can accept — the only requirement is disclosure.
 
 Even that has its limits: In their statements of financial interest filed with the <a href="https://www.ethicsrulings.pa.gov/WebLink/CustomSearch.aspx?SearchName=SearchforStatementsofFinancialInterestsforms&repo=EthicsLF8">State Ethics Commission</a> each May, they need only disclose gifts worth $250 or more, and transportation and hospitality worth $650 or more.
 

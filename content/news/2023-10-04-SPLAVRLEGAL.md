@@ -65,7 +65,7 @@ Manuel Bonder, a spokesperson for the governor, pointed to this section as justi
 
 ## Impact of automatic voter registration
 
-Shapiro’s move made Pennsylvania the 25th state to enact some form of automatic voter registration, <a href="https://tracker.votingrightslab.org/issues/automatic-voter-registration#issues_map">according to the Voting Rights Lab</a> — but the only one to do so via gubernatorial announcement, <a href="https://www.ncsl.org/elections-and-campaigns/automatic-voter-registration">according to the National Conference of State Legislatures</a>.
+Shapiro’s move made Pennsylvania the 25th state to enact some form of automatic voter registration, <a href="https://tracker.votingrightslab.org/issues/automatic-voter-registration#issues_map">according to the Voting Rights Lab</a> — but the only one to do so via gubernatorial announcement, <a href="https://web.archive.org/20230113004415/https://www.ncsl.org/elections-and-campaigns/automatic-voter-registration">according to the National Conference of State Legislatures</a>.
 
 Automatic voter registration has been primarily enacted by Democratic officials since Oregon became the first in 2016. Some Republican-controlled states — such as Alaska and West Virginia in 2016 — have adopted the program, and Republican governors in blue states such as Illinois, Maryland, and Massachusetts have supported it.
 
@@ -113,4 +113,3 @@ Similar to the state Senate, state House Republican Leadership has not gone as f
 As of Tuesday, no legal challenge against the change has been filed.<strong><em></em></strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

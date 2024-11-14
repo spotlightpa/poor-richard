@@ -46,7 +46,7 @@ Pollack argued that the legislature, swayed by donors and leadership, lacks the 
 
 Under Pennsylvania law, elected officials are allowed to accept gifts — for some, even cash — from lobbyists and others as long as they disclose them in annual reports.
 
-That places Pennsylvania in a minority of states with few or no restrictions on gifts, according to <a href="https://www.ncsl.org/research/ethics/50-state-table-gift-laws.aspx">a nationwide analysis</a> of gift laws by the National Conference of State Legislatures.
+That places Pennsylvania in a minority of states with few or no restrictions on gifts, according to <a href="https://web.archive.org/20220103131355/https://www.ncsl.org/research/ethics/50-state-table-gift-laws.aspx">a nationwide analysis</a> of gift laws by the National Conference of State Legislatures.
 
 During Wednesday’s news conference, Pollack said lawmakers have introduced 33 gift ban bills over the past 20 years. But no bill banning or even limiting gifts from lobbyists or others trying to influence public policy has received a floor vote.
 

@@ -35,7 +35,7 @@ Advocates for people with periods argue the allocation is not enough to provide 
 
 “We all know that menstrual products are extremely expensive,” said Lynette Medley, co-chief executive officer and founder of the SPOT Period, a “menstrual hub” that serves Philadelphia. “It’s going to be stretched to the limit.”
 
-At least 12 other states and the District of Columbia have <a href="https://www.ncsl.org/health/state-actions-to-increase-access-to-menstrual-products">passed laws to provide free menstrual products in schools</a>, according to the National Conference of State Legislatures.
+At least 12 other states and the District of Columbia have <a href="https://web.archive.org/20230330141339/https://www.ncsl.org/health/state-actions-to-increase-access-to-menstrual-products">passed laws to provide free menstrual products in schools</a>, according to the National Conference of State Legislatures.
 
 Advocates have sought to secure state money for free menstrual products for years, Medley said, and this new budget appropriation represents the first victory on the issue.
 
@@ -60,4 +60,3 @@ Parker — who pushed for her legislation using phrases including “Menstrual M
 “I know how humiliating it can be. We do not need that to happen to our children,” Parker said. “We have people right now who are using paper towels, using socks, using newspapers.”
 
 <em>Sarah Nicell is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em><strong><em></em></strong>
-

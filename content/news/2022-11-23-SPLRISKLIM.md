@@ -65,7 +65,7 @@ One fan is Jeff Greenburg, Mercer County’s former longtime elections director 
 
 After going through the process, Greenburg recognized its value, and the Department of State working group he was a part of recommended that the Pennsylvania legislature make the risk-limiting audit statutorily required. The legislature has yet to take up that recommendation.
 
-Only <a href="https://www.ncsl.org/research/elections-and-campaigns/risk-limiting-audits.aspx">15 states currently</a> perform risk-limiting audits, and only three of those statutorily mandate the process.
+Only <a href="https://web.archive.org/20220118072259/https://www.ncsl.org/research/elections-and-campaigns/risk-limiting-audits.aspx">15 states currently</a> perform risk-limiting audits, and only three of those statutorily mandate the process.
 
 ## How does it work?
 

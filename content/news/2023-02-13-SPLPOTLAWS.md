@@ -70,7 +70,7 @@ One bipartisan bill in the Senate last session would have reduced the penalty fo
 
 ## DUI protections
 
-Pennsylvania is one of 12 states that has a zero-tolerance law that prohibits driving with any amount of marijuana in the body, <a href="https://www.ncsl.org/transportation/drugged-driving-marijuana-impaired-driving">according to the National Conference of State Legislatures</a>. Drivers in Pennsylvania can face criminal charges if they have “any amount” of marijuana or its metabolites in their blood — even if they are registered medical marijuana patients.
+Pennsylvania is one of 12 states that has a zero-tolerance law that prohibits driving with any amount of marijuana in the body, <a href="https://web.archive.org/20230108222200/https://www.ncsl.org/transportation/drugged-driving-marijuana-impaired-driving">according to the National Conference of State Legislatures</a>. Drivers in Pennsylvania can face criminal charges if they have “any amount” of marijuana or its metabolites in their blood — even if they are registered medical marijuana patients.
 
 “Because of this, unimpaired patients currently face the risk of being arrested, prosecuted and convicted for using medicinal marijuana that has no bearing on their ability to drive a vehicle,” state Sen. Camera Bartolotta (R., Washington) wrote in a memo to her colleagues.
 

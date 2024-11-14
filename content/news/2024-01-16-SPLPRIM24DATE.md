@@ -48,7 +48,7 @@ Pennsylvania’s primary election is scheduled for April 23, 2024.
 
 <h2 id="spl-heading-2">Where does Pennsylvania’s 2024 presidential primary rank compared to other states?</h2>
 
-Pennsylvania has <a href="https://www.ncsl.org/elections-and-campaigns/2024-state-primary-election-dates">one of the latest dates</a> for a presidential primary election.
+Pennsylvania has <a href="https://web.archive.org/20230224014511/https://www.ncsl.org/elections-and-campaigns/2024-state-primary-election-dates">one of the latest dates</a> for a presidential primary election.
 
 Just 10 states — Indiana, Kentucky, Maryland, Montana, Nebraska, New Jersey, New Mexico, Oregon, South Dakota, and West Virginia — have later primary election dates for both Democrats and Republicans; Washington, D.C., will hold its Democratic primary in June.
 
@@ -89,4 +89,3 @@ In a September 2023 <a href="https://twitter.com/ByCarterWalker/status/170788132
 “In many instances, contracts to receive polling places are made a year in advance,” the board’s members — including lawmakers and county commissioners — wrote. “Clerks, inspectors, and volunteers have already been recruited and planned their schedules around the anticipated primary date.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

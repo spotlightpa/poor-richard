@@ -46,7 +46,7 @@ In the event of contested presidential election results, if a party in a case wa
 
 The bill also places requirements on the Department of State. The secretary of the commonwealth would be required to certify the state’s election results by the fifth Tuesday after the election, which also falls on Dec. 10. It would also require the secretary to notify legislative leaders if they are going to miss its federal deadline to certify the election.<strong></strong>
 
-Twelve states have passed similar laws since 2022 to clear up conflicts between their state law and the Electoral Court Reform Act, <a href="https://www.ncsl.org/elections-and-campaigns/enactments-relating-to-the-electoral-count-reform-act">according to the National Conference of State Legislatures</a>.
+Twelve states have passed similar laws since 2022 to clear up conflicts between their state law and the Electoral Court Reform Act, <a href="https://web.archive.org/20231114024017/https://www.ncsl.org/elections-and-campaigns/enactments-relating-to-the-electoral-count-reform-act">according to the National Conference of State Legislatures</a>.
 
 State Rep. Seth Grove (R., York) co-sponsored the bill, and two of his Republican colleagues joined him in voting for it. It passed 105 to 97.
 
@@ -67,4 +67,3 @@ A spokesperson for state Senate Republicans did not respond to a request for com
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </em><a href="mailto:cwalker@votebeat.org"><em>cwalker@votebeat.org</em></a><em>.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

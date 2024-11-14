@@ -57,7 +57,7 @@ Until June 1, 2023, the law did not apply to any former government official who 
 
 Enforcement of the <a href="https://www.ethics.pa.gov/Ethics-Act/Ethics-Act/Pages/Section-1109.aspx">state’s ethics law</a> is complaint-driven, and unless the attorney general files a criminal complaint, the penalties for violating the law are financial.
 
-At least ten states require a longer break between public service and private lobbying than Pennsylvania, including Alabama, New York, Oklahoma, and Oregon, <a href="https://www.ncsl.org/ethics/revolving-door-prohibitions">according</a> to the National Conference of State Legislatures.
+At least ten states require a longer break between public service and private lobbying than Pennsylvania, including Alabama, New York, Oklahoma, and Oregon, <a href="https://web.archive.org/20230207222323/https://www.ncsl.org/ethics/revolving-door-prohibitions">according</a> to the National Conference of State Legislatures.
 
 Most of those states set the cooling-off period at two years; Florida implemented <a href="https://ballotpedia.org/Florida_Amendment_12,_Lobbying_Restrictions_Amendment_(2018)">a six-year break</a> through a constitutional amendment in 2018.
 
@@ -68,4 +68,3 @@ The latter, Pollack said, is closer to his ideal of a five-year gap.
 <em>Correction: This article has been updated to reflect that the lobbying ban applies to public sector attorneys.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

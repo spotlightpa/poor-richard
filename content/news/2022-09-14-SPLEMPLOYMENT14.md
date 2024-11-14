@@ -56,7 +56,7 @@ That varies, too, but studies related to driving and cognition have shown that o
 
 No. Pennsylvania’s medical marijuana law doesn’t define impairment. Often this term is used in the context of drivers who pose a safety risk.
 
-“The nationally recognized level of impairment for drunken driving is .08 g/mL blood alcohol concentration,” according to the [National Conference of State Legislatures.](https://www.ncsl.org/research/transportation/drugged-driving-overview.aspx) “But there is no similar national standard for drugged driving.”
+“The nationally recognized level of impairment for drunken driving is .08 g/mL blood alcohol concentration,” according to the [National Conference of State Legislatures.](https://web.archive.org/20220110150702/https://www.ncsl.org/research/transportation/drugged-driving-overview.aspx) “But there is no similar national standard for drugged driving.”
 {{</block>}}
 
 {{<block name="numbers">}}
