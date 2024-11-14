@@ -99,9 +99,9 @@ As attorney general, Shapiro in 2018 promised to protect Pennsylvania’s medica
 
 The next administration will oversee the medical marijuana program. Among other responsibilities, the secretary of health has the power to add new medical conditions that qualify patients for the program if they are recommended by the state’s Medical Marijuana Advisory Board. There are currently 23 qualifying conditions, and more than 400,000 active patients in the program.
 
-Pennsylvania has stricter marijuana laws than many states. Nineteen other states have legalized recreational cannabis use for adults, and several others have decriminalized small amounts of marijuana, according to a recent analysis from the <a href="https://www.ncsl.org/research/civil-and-criminal-justice/marijuana-overview.aspx">National Conference of State Legislatures</a>.
+Pennsylvania has stricter marijuana laws than many states. Nineteen other states have legalized recreational cannabis use for adults, and several others have decriminalized small amounts of marijuana, according to a recent analysis from the <a href="https://web.archive.org/20220105072042/https://www.ncsl.org/research/civil-and-criminal-justice/marijuana-overview.aspx">National Conference of State Legislatures</a>.
 
-{{<picture src="external/pvngeyz6vpycvgn6ajqtdwgvng.jpeg" description="Josh Shapiro’s campaign has highlighted his experience as attorney general. " caption="Josh Shapiro’s campaign has highlighted his experience as attorney general. " credit="Rebecca Droke/For the Inquirer">}} 
+{{<picture src="external/pvngeyz6vpycvgn6ajqtdwgvng.jpeg" description="Josh Shapiro’s campaign has highlighted his experience as attorney general. " caption="Josh Shapiro’s campaign has highlighted his experience as attorney general. " credit="Rebecca Droke/For the Inquirer">}}
 
 ## Opioid epidemic
 

@@ -50,7 +50,7 @@ Much of President Donald Trump’s rhetoric this election season has centered ar
 
 In response, a solicitor for Philadelphia noted that, while third-party delivery is generally prohibited, “voters who require assistance delivering their ballot <a href="https://www.inquirer.com/politics/election/trump-campaign-surveillance-philadelphia-mail-ballot-drop-boxes-20201022.html">may appoint an agent to do so</a>.”
 
-Ten states allow a family member to return a ballot for a voter, and 26 states allow a voter to designate someone to return their ballot, although 12 states have limits on how many ballots someone can submit, according to the <a href="https://www.ncsl.org/research/elections-and-campaigns/vopp-table-10-who-can-collect-and-return-an-absentee-ballot-other-than-the-voter.aspx">National Conference of State Legislatures.</a>
+Ten states allow a family member to return a ballot for a voter, and 26 states allow a voter to designate someone to return their ballot, although 12 states have limits on how many ballots someone can submit, according to the <a href="https://web.archive.org/20200528012048/https://www.ncsl.org/research/elections-and-campaigns/vopp-table-10-who-can-collect-and-return-an-absentee-ballot-other-than-the-voter.aspx">National Conference of State Legislatures.</a>
 
 While it can seem like a harmless service — a neighbor offering to take your ballot to the post office along with his, for instance — there is potential for abuse.
 

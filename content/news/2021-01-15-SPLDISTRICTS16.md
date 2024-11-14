@@ -114,7 +114,7 @@ Also left unconsidered is a measure redistricting reformers have been pushing fo
 
 It’s impossible for such a panel to be in place to oversee the drawing of the legislative maps in 2021, as that change would require a constitutional amendment — a lengthy process. The legislature could, however, put an independent commission in charge of drawing the congressional maps by simply passing a bill, something <a href="https://web.archive.org/web/20230117040721/https://www.governor.pa.gov/newsroom/governor-wolf-supports-call-independent-redistricting-commission/">Wolf supports</a>.
 
-Redistricting commissions in <a href="https://www.ncsl.org/research/redistricting/creation-of-redistricting-commissions.aspx">nine states</a> are free of politicians, while several more comprise a mix of legislators and citizens. Supporters say getting lawmakers out of the process is essential to stopping gerrymandering.
+Redistricting commissions in <a href="https://web.archive.org/20210115141840/https://www.ncsl.org/research/redistricting/creation-of-redistricting-commissions.aspx">nine states</a> are free of politicians, while several more comprise a mix of legislators and citizens. Supporters say getting lawmakers out of the process is essential to stopping gerrymandering.
 
 Thomas, who also supports an independent redistricting commission, said her bill to add transparency to the process needs to pass soon if it is to be in effect for the 2021 redistricting.
 

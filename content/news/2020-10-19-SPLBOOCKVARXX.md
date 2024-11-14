@@ -72,7 +72,7 @@ Boockvar on Monday sidestepped a question about whether the state legislature co
 
 About 3 million Pennsylvanians are expected to vote by mail in the Nov. 3 general election. That’s twice as many that voted by mail during the June primary.
 
-Laws regarding when and how ballots may be processed varies by state. Pennsylvania is among seven that, for the 2020 general election, currently do not allow ballots to be processed until Election Day, according to <a href="https://www.ncsl.org/research/elections-and-campaigns/absentee-and-mail-voting-policies-in-effect-for-the-2020-election.aspx">data</a> tracked by the National Conference on State Legislatures.
+Laws regarding when and how ballots may be processed varies by state. Pennsylvania is among seven that, for the 2020 general election, currently do not allow ballots to be processed until Election Day, according to <a href="https://web.archive.org/20200906174302/https://www.ncsl.org/research/elections-and-campaigns/absentee-and-mail-voting-policies-in-effect-for-the-2020-election.aspx">data</a> tracked by the National Conference on State Legislatures.
 
 With 683,123 mail-in ballots returned as of Oct. 16, Boockvar said the state has not yet observed anything unusual. “But it is early,” Boockvar warned. “And we still have two weeks to go.”
 

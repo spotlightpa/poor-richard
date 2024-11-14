@@ -96,7 +96,6 @@ The budget eventually passed with wide bipartisan support.
 
 Critics of government, Manzo said, often want it to mirror business. Remote participation, he continued, is a common feature of the business world post-pandemic, and he said remote voting should likewise be “used cautiously to make sure the people&#39;s business gets done.”
 
-At least 18 states allow remote participation in floor proceedings as of 2023, <a href="https://www.ncsl.org/about-state-legislatures/rules-on-remote-participation">according </a>to the National Conference of State Legislatures.
+At least 18 states allow remote participation in floor proceedings as of 2023, <a href="https://web.archive.org/20240104184546/https://www.ncsl.org/about-state-legislatures/rules-on-remote-participation">according </a>to the National Conference of State Legislatures.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
