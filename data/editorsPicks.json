@@ -12,17 +12,17 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/statecollege/2024-11-14-SPLARPA1124.md"
+    "content/news/2024-11-15-SPLopioiddb1124.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-11-14-SPLARPAHOW1124.md",
-    "content/statecollege/2024-10-23-SPLSOLAR1024.md",
-    "content/statecollege/2024-09-20-SPLMILESBURG0924.md"
+    "content/news/2024-08-27-SPLPUBOPIOD0824.md",
+    "content/news/2024-06-07-SPLROTHMAN0624.md",
+    "content/news/2024-04-09-spl_opioids_defense.md"
   ],
   "topSlots": [
+    "content/statecollege/2024-11-14-SPLARPA1124.md",
     "content/news/2024-11-13-SPLCASEYRECOUNT24.md",
-    "content/news/2024-11-13-SPLAUDITELEX24.md",
-    "content/news/2024-11-11-SPLBURNSWHO.md"
+    "content/news/2024-11-13-SPLAUDITELEX24.md"
   ],
   "topper": []
 }
