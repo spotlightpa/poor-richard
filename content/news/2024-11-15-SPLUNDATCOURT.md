@@ -1,8 +1,8 @@
 +++
 authors = ["Carter Walker"]
-blurb = "At least four Pennsylvania counties opted to accept and count undated or misdated ballots, prompting a challenge from Republicans."
+blurb = "A few Pennsylvania counties opted to accept and count undated or misdated ballots, prompting a challenge from Republicans."
 byline = "Carter Walker of Votebeat"
-description = "At least four PA counties opted to count undated ballots, prompting a challenge from Republicans."
+description = "A few PA counties opted to count undated ballots, prompting a challenge from Republicans."
 feed-exclude = false
 image = "2024/11/01kj-n72h-wq41-5ztv.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
@@ -23,7 +23,7 @@ twitter-title = "New fight breaks out over mail ballot dating as Senate recount 
 
 <em>Votebeat is a nonprofit news organization reporting on voting access and election administration across the U.S. </em><a href="https://votebe.at/pennsylvanianewsletter"><em>Sign up for Votebeat Pennsylvania’s free newsletter here.</em></a><em></em>
 
-At least four Pennsylvania counties are accepting and counting mail ballots from last week’s election that lack a proper date on the envelope, prompting a new legal clash in a long-running disagreement over how to handle these ballots.
+At least three Pennsylvania counties are accepting and counting mail ballots from last week’s election that lack a proper date on the envelope, prompting a new legal clash in a long-running disagreement over how to handle these ballots.
 
 The Republican National Committee and the Pennsylvania Republican Party filed a lawsuit Thursday asking the state Supreme Court for an immediate ruling on the issue.
 
@@ -33,7 +33,9 @@ And the two campaigns are taking an active role in the dispute over which ballot
 
 {{<embed/newsletter>}}
 
-The GOP lawsuit names Philadelphia, Bucks, and Centre counties as having opted to count the undated and misdated ballots. At least one other county, Montgomery, has also confirmed it is counting them, after its board of elections voted 2-1 to approve the move Thursday.
+The GOP lawsuit names Philadelphia, Bucks, and Centre counties as having opted to count the undated and misdated ballots. Centre County Administrator John Franek said that the county did not count any undated ballots but that officials counted three challenged ballots that had issues with how the date was filled out.
+
+At least one other county, Montgomery, has also confirmed it is counting them, after its board of elections voted 2-1 to approve the move Thursday.
 
 “The issue for us is, and the reason that I&#39;m voting yes, is because we’re talking about constitutional rights,” said Neil Makhija, chair of the Montgomery County Board of Elections, at Thursday’s meeting. “I cannot take an action to throw out someone&#39;s ballot that is validly cast otherwise over an issue that … we know is immaterial.”
 
@@ -53,7 +55,7 @@ Pennsylvania’s election code requires voters to sign and date the outer return
 
 But enforcement of the dating requirement has been in dispute for years, with opponents, such as the American Civil Liberties Union of Pennsylvania, arguing that it is immaterial to a voter’s eligibility to vote and that rejecting on that basis violates their constitutional rights. Litigation has gone on continually since 2020.
 
-The three most recent cases, both resolved in the last three months, did not bring much clarity to the issue from the state’s highest courts.
+The three most recent cases, resolved in the last three months, did not bring much clarity to the issue from the state’s highest courts.
 
 First, in August, <a href="https://www.votebeat.org/pennsylvania/2024/08/30/undated-mail-ballots-case-commonwealth-court-ruling-aclu/">the Pennsylvania Commonwealth Court ruled</a> in a case brought by the ACLU and Public Interest Law Center that the dating requirement violated voters’ right to vote under the state constitution. But the state Supreme Court <a href="https://www.votebeat.org/pennsylvania/2024/09/13/supreme-court-voids-ruling-on-mail-ballot-envelope-date-requirement/">quickly voided that order</a> on technical grounds, though it did not rule on the merits of the constitutional question.
 
