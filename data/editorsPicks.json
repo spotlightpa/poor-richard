@@ -17,13 +17,12 @@
   "subfeatures": [
     "content/news/2024-10-24-SPLUNDVOTERS2024.md",
     "content/news/2024-11-06-SPLPREZRES24.md",
-    "content/news/2024-11-13-SPLCASEYRECOUNT24.md",
     "content/news/2024-11-11-SPLBURNSWHO.md"
   ],
   "topSlots": [
+    "content/news/2024-11-14-SPLNEWSQUIZNOV1124.md",
     "content/news/2024-11-15-SPLopioiddb1124.md",
-    "content/statecollege/2024-11-14-SPLARPA1124.md",
-    "content/news/2024-11-13-SPLCASEYRECOUNT24.md"
+    "content/statecollege/2024-11-14-SPLARPA1124.md"
   ],
   "topper": []
 }
