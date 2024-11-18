@@ -43,11 +43,7 @@ The Pennsylvania Department of State declined to say what the other 63 counties 
 
 Republicans, in their emergency petition Thursday, called for the Supreme Court to declare that the date requirement on ballots is mandatory and that counties shouldn’t count such ballots in this election.
 
-“Regrettably … the recalcitrant rulings of these county boards, issued in the wake of a hotly
-
-contested election in which millions of Pennsylvanians cast their ballots and made
-
-their voices heard, require the Court to \[act\],” the Republican groups wrote.
+“Regrettably … the recalcitrant rulings of these county boards, issued in the wake of a hotly contested election in which millions of Pennsylvanians cast their ballots and made their voices heard, require the Court to \[act\],” the Republican groups wrote.
 
 ## Enforcement of the date requirement contested for years
 
