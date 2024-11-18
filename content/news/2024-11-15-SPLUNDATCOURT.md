@@ -21,7 +21,7 @@ topics = ["Elections"]
 twitter-title = "New fight breaks out over mail ballot dating as Senate recount looms"
 +++
 
-<em>Votebeat is a nonprofit news organization reporting on voting access and election administration across the U.S. </em><a href="https://votebe.at/pennsylvanianewsletter"><em>Sign up for Votebeat Pennsylvania’s free newsletter here.</em></a><em></em>
+<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
 At least three Pennsylvania counties are accepting and counting mail ballots from last week’s election that lack a proper date on the envelope, prompting a new legal clash in a long-running disagreement over how to handle these ballots.
 
