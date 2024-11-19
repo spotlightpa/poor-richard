@@ -23,6 +23,8 @@ twitter-title = "New fight breaks out over mail ballot dating as Senate recount 
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<strong><em>Update, Nov. 18: </em></strong><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-undated-mail-ballot-explainer/"><strong><em>High court tells Pa. counties not to accept undated mail ballots for November election</em></strong></a><strong><em></em></strong>
+
 At least three Pennsylvania counties are accepting and counting mail ballots from last week’s election that lack a proper date on the envelope, prompting a new legal clash in a long-running disagreement over how to handle these ballots.
 
 The Republican National Committee and the Pennsylvania Republican Party filed a lawsuit Thursday asking the state Supreme Court for an immediate ruling on the issue.
