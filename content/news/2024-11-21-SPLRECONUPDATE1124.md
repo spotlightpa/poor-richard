@@ -26,7 +26,7 @@ Many Pennsylvania counties had already finished retabulating ballots Wednesday a
 
 Among counties that have finished their recounts are Chester, Lebanon, Somerset, Cambria, and Allegheny, while Philadelphia is expected to wrap up this week. The Pennsylvania Department of State said results will be announced via news release on Wednesday.
 
-The Pennsylvania Department of State said Thursday afternon the initial count of votes in all counties had been completed. As of 5 p.m., incumbent Democratic Sen. Bob Casey trailed Republican challenger Dave McCormick by 16,349 votes, or a margin of 0.24%, compared with about 0.43% a week earlier.
+The Pennsylvania Department of State said Thursday afternoon the initial count of votes in all counties had been completed. As of 5 p.m., incumbent Democratic Sen. Bob Casey trailed Republican challenger Dave McCormick by 16,349 votes, or a margin of 0.24%, compared with about 0.43% a week earlier.
 
 {{<embed/newsletter>}}
 
