@@ -26,7 +26,7 @@ Many Pennsylvania counties had already finished retabulating ballots Wednesday a
 
 Among counties that have finished their recounts are Chester, Lebanon, Somerset, Cambria, and Allegheny, while Philadelphia is expected to wrap up this week. The Pennsylvania Department of State said results will be announced via news release on Wednesday.
 
-As of 4 p.m., Thursday, incumbent Democratic Sen. Bob Casey trailed Republican challenger Dave McCormick by 16,349 votes, or a margin of 0.24%, compared with about 0.43% a week earlier.
+The Pennsylvania Department of State said Thursday afternon the initial count of votes in all counties had been completed. As of 5 p.m., incumbent Democratic Sen. Bob Casey trailed Republican challenger Dave McCormick by 16,349 votes, or a margin of 0.24%, compared with about 0.43% a week earlier.
 
 {{<embed/newsletter>}}
 
@@ -37,10 +37,6 @@ FairVote, a national nonprofit focused on ranked-choice voting, <a href="https:/
 Casey has drawn <a href="https://x.com/KimWardPA/status/1857110177121452534">criticism from the right</a> for not conceding the race earlier so the state could avoid a costly recount. McCormick made the same choice in 2022, <a href="https://www.inquirer.com/news/pennsylvania/bob-casey-recount-josh-shapiro-pennsylvania-election-2024-20241119.html">Gov. Josh Shapiro noted earlier this week</a>.
 
 All 67 counties must recount each ballot cast in the race and be finished by next Tuesday.
-
-Some counties are still finalizing the last batches of ballots from the original count. According to <a href="https://docs.google.com/spreadsheets/d/1N7NOlleN9QbJzxffRdPT00MnqJ7lQy3ssa7vtIsQqhY/htmlview?gid=468071042#gid=468071042">a tally by Decision Desk HQ</a>, as of Thursday nine counties still needed to make decisions about whether to accept roughly 5,550 provisional and overseas ballots.
-
-Even if all ballots were to be accepted — which is unlikely, since some voters make mistakes that disqualify their ballots — and counted for Casey, the closest the margin could be is 0.16%, a gap that historically has been hard, if not impossible, to overcome through a recount.
 
 The campaigns have also been <a href="https://penncapital-star.com/campaigns-elections/senate-casey-and-mccormick-are-now-fighting-over-provisional-ballots-in-a-dozen-pennsylvania-counties/">battling across the state</a> over which provisional ballots should be counted. Those are the ballots cast by people whose eligibility is in question.
 
