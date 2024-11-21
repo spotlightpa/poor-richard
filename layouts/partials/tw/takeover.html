@@ -5,7 +5,7 @@
 {{ $signupHed := .signupHed }}
 {{ $signupDek := .signupDek }}
 {{ $cta := .cta | default "Sign Up!" }}
-{{ $gaCategory := .gaCategory }}
+{{ $gaCategory := .gaCategory | default "takeover" }}
 {{ $gaForm := .gaForm }}
 {{ $hiddenField := .hiddenField }}
 {{ $content := .content }}
