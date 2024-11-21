@@ -12,17 +12,18 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-19-SPLSHAPSEPTA1124.md"
+    "content/statecollege/2024-11-21-SPLPSUTRUST1124.md"
   ],
   "subfeatures": [
-    "content/news/2024-10-15-SPLTRANSITUPDATE.md",
-    "content/news/2024-10-14-SPLEDGECREDIT24.md",
-    "content/news/2024-10-11-SPLNOBIDLIST24.md"
+    "content/statecollege/2024-05-31-SPLBEAVER0524.md",
+    "content/statecollege/2024-02-16-SPLPSUFIELD.md",
+    "content/statecollege/2024-04-06-SPLPSUTRUST.md",
+    "content/statecollege/2022-09-15-SPLPSUSUNSHINE.md"
   ],
   "topSlots": [
+    "content/news/2024-11-19-SPLSHAPSEPTA1124.md",
     "content/news/2024-11-19-SPLLEADSAFETY1124.md",
-    "content/news/2024-11-18-SPLUNDATED101.md",
-    "content/statecollege/2024-11-18-SPLRAFFLES1124.md"
+    "content/news/2024-11-18-SPLUNDATED101.md"
   ],
   "topper": []
 }
