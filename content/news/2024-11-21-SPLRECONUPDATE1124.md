@@ -22,6 +22,8 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<em>Updated, Nov. 22: </em><a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-recount-senate-bob-casey-dave-mccormick-over/"><em>Pennsylvania calls off recount in U.S. Senate race after Casey concedes to McCormick</em></a><em></em>
+
 Many Pennsylvania counties had already finished retabulating ballots Wednesday and Thursday as the recount of roughly 7 million total ballots in the U.S. Senate race got fully underway.
 
 Among counties that have finished their recounts are Chester, Lebanon, Somerset, Cambria, and Allegheny, while Philadelphia is expected to wrap up this week. The Pennsylvania Department of State said results will be announced via news release on Wednesday.
