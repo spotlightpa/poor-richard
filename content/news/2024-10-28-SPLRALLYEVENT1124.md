@@ -32,15 +32,15 @@ In <a href="https://www.spotlightpa.org/news/2024/08/trump-assassination-attempt
 
 The newsrooms spent weeks finding sources in several states, requesting records, and combing through data and hours of bodycam footage.
 
-To unpack how the reporters conducted their investigation, join us Thursday, Nov. 21, from 6-7 p.m. on Zoom for a free behind-the-scenes panel hosted by Melissa Melewsky, media law counsel for Pennsylvania NewsMedia Association. We’ll discuss how the newsrooms found records, sources, and analyzed data to get the story.
+To unpack how the reporters conducted their investigation, Spotlight PA held a behind-the-scenes panel hosted by Melissa Melewsky, media law counsel for the Pennsylvania NewsMedia Association.
 
-<strong>Our panelist include</strong>:
+<strong>Our panelists included</strong>:
 
 - <strong>Danielle Ohl</strong>, investigative reporter, Spotlight PA
 
 - <strong>Tracy Leturgey</strong>, assignments editor, Butler Eagle
 
-<strong>Register for the event </strong><a href="https://zoom.us/webinar/register/WN_hHgnyHvETlqsjXfOjkvtag"><strong>here</strong></a><strong>.</strong>
+{{<vimeo id="1032384041" >}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
