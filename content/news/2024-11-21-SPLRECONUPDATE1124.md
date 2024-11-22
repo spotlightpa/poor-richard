@@ -28,6 +28,8 @@ Among counties that have finished their recounts are Chester, Lebanon, Somerset,
 
 The Pennsylvania Department of State said Thursday afternoon the initial count of votes in all counties had been completed. As of 5 p.m., incumbent Democratic Sen. Bob Casey trailed Republican challenger Dave McCormick by 16,349 votes, or a margin of 0.24%, compared with about 0.43% a week earlier.
 
+Casey <a href="https://x.com/Bob_Casey/status/1859733833232662650">conceded</a> the race Thursday evening.
+
 {{<embed/newsletter>}}
 
 Since 2004, state law has automatically required a recount when the margin of a statewide race is within 0.5%, unless the losing candidate waives that right. None of the seven previous recounts triggered by the 0.5% rule resulted in a change of outcome, according to the Department of State. The last statewide recount also involved McCormick, who lost the Republican primary for U.S. Senate in 2022 to Mehmet Oz by fewer than 1,000 votes.
