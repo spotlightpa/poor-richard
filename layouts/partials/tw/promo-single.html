@@ -1,3 +1,4 @@
+{{ $gaCategory := .gaCategory | default "promo-image" }}
 {{ if .images }}
   {{ $img := partial "tw/image-rotator.html" (dict
     "images" .images
@@ -12,7 +13,8 @@
 
   <aside
     class="{{ .class | default `flex justify-center` }}"
-    data-ga-category="promo-image"
+    data-ga-category="{{ $gaCategory }}"
+    {{ if .id }}id="{{ .id }}"{{ end }}
   >
     {{ if .link }}
       <a href="{{ .link }}">
