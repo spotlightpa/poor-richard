@@ -32,9 +32,7 @@ Spotlight PA newsletter writer Asha Prihar and editor Colin Deppen will host a n
 
 Join us Dec. 12 from 6-7 p.m. on Zoom. RVSP for free <a href="https://zoom.us/webinar/register/WN_pCKe9mGRRa-BdCZ5sKDOqg">here</a>. <strong><em></em></strong>
 
-Any questions or comments can be directed to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a>
-
-{{<vimeo id="915998920" secret="ed50099c8e" >}}
+Any questions or comments can be directed to <a href="mailto:events@spotlightpa.org">events@spotlightpa.org</a> <strong></strong>
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
