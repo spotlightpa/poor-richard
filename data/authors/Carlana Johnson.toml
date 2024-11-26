@@ -3,6 +3,7 @@ firstName = "Carlana"
 lastName = "Johnson"
 title = "Technology Director"
 email = "cjohnson@spotlightpa.org"
+bluesky = "carlana.net"
 headshot = "2024/01/01js-dr81-58zp-xkas.jpeg"
 reporter = false
 role = "editorial"
