@@ -290,27 +290,27 @@
           </div>
         {{ end }}
         {{ with $author.bluesky }}
-        <div class="flex basis-0 items-start justify-start gap-2">
-          <dt class="inline-flex items-center">
-            <span class="mr-2 h-4 w-4">
-              <svg viewBox="0 0 1 1">
-                {{ partial "helper/svg.html" "bluesky" }}
-              </svg>
-            </span>
-            Bluesky:
-          </dt>
-          <dd>
-            <a
-              class="break-all text-blue"
-              data-ga-category="author-bluesky"
-              href="https://bsky.app/profile/{{ . }}"
-              title="Bluesky"
-            >
-              @{{ . }}
-            </a>
-          </dd>
-        </div>
-      {{ end }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="inline-flex items-center">
+              <span class="mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1">
+                  {{ partial "helper/svg.html" "bluesky" }}
+                </svg>
+              </span>
+              Bluesky:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                data-ga-category="author-bluesky"
+                href="https://bsky.app/profile/{{ . }}"
+                title="Bluesky"
+              >
+                @{{ . }}
+              </a>
+            </dd>
+          </div>
+        {{ end }}
         {{ with $author.tel }}
           <div class="flex basis-0 items-start justify-start gap-2">
             <dt class="flex items-center">
