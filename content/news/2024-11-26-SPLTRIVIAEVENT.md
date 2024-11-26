@@ -10,6 +10,7 @@ image = "2024/11/01km-c19x-bxrh-ckz7.png"
 image-caption = "A night of trivia and a chance to win Spotlight PA gear."
 image-credit = "Spotlight PA graphic"
 image-description = "A night of trivia and a chance to win Spotlight PA gear."
+image-size = "wide"
 internal-id = "SPLTRIVIAEVENT"
 kicker = "Events"
 modal-exclude = false
