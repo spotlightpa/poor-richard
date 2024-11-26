@@ -71,7 +71,7 @@
 
 
         <div
-          class="row-2 sm:row-1 col-span-5 row-span-1 mb-2 mt-6 flex h-52 max-w-xs flex-col items-start sm:col-span-3"
+          class="row-2 sm:row-1 col-span-5 row-span-1 mb-2 mt-6 flex h-max max-w-xs flex-col items-start sm:col-span-3"
         >
           {{ with $author.beat }}
             <h3 class="inline-block self-start leading-snug">
@@ -131,6 +131,26 @@
                   data-ga-category="author-twitter"
                   href="https://www.twitter.com/{{ . }}"
                   title="Twitter"
+                >
+                  @{{ . }}
+                </a>
+              </dd>
+            {{ end }}
+            {{ with $author.bluesky }}
+              <dt class="flex-0 mr-2 flex items-center">
+                <span class="mr-2 h-4 w-4">
+                  <svg viewBox="0 0 1 1">
+                    {{ partial "helper/svg.html" "bluesky" }}
+                  </svg>
+                </span>
+                Bluesky:
+              </dt>
+              <dd class="flex-[0_1_50%]">
+                <a
+                  class="text-blue"
+                  data-ga-category="author-bluesky"
+                  href="https://bsky.app/profile/{{ . }}"
+                  title="Bluesky"
                 >
                   @{{ . }}
                 </a>
