@@ -12,17 +12,17 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-26-SPLMAPFOLO1124.md"
+    "content/news/2024-11-26-SPLFOODBANK1124.md"
   ],
   "subfeatures": [
-    "content/news/2024-11-22-SPLNORECON1124.md",
-    "content/news/2024-11-02-SPLLEGSPEND24.md",
-    "content/news/2024-10-14-SPLEDGECREDIT24.md"
+    "content/news/2024-10-15-SPLCLOSURE1024.md",
+    "content/news/2024-11-05-SPLCARESCAM1124.md",
+    "content/news/2024-11-12-SPLHOARD1124.md"
   ],
   "topSlots": [
+    "content/news/2024-11-26-SPLMAPFOLO1124.md",
     "content/news/2024-11-25-SPLOPCOURT1124.md",
-    "content/news/2024-11-25-SPLFRAUDAPPS1124.md",
-    "content/statecollege/2024-11-23-SPLPSUCHEM1124.md"
+    "content/news/2024-11-25-SPLFRAUDAPPS1124.md"
   ],
   "topper": []
 }
