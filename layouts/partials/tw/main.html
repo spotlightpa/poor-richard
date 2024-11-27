@@ -200,6 +200,7 @@
         class="row-start-1 mt-6 w-full"
       >
         {{ partial "tw/promo-single.html" (dict
+          "id" "sidebar-top"
           "class" "mb-5 w-0 min-w-full no-js:hidden"
           "images" (.Param "sidebar-top-images")
           "width" (.Param "sidebar-top-width")
@@ -230,6 +231,7 @@
           x-intersect="$dispatch('close-sticky')"
         >
           {{ partial "tw/promo-single.html" (dict
+            "id" "sidebar-sticky"
             "class" "pt-5 w-0 min-w-full no-js:hidden"
             "images" (.Param "sidebar-sticky-images")
             "width" (.Param "sidebar-sticky-width")

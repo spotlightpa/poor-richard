@@ -420,6 +420,7 @@
             x-intersect="$dispatch('close-sticky')"
           >
             {{ partial "tw/promo-single.html" (dict
+              "id" "homepage-sticky"
               "class" "pt-5 min-w-full no-js:hidden"
               "images" (page.Param "sidebar-sticky-images")
               "width" (page.Param "sidebar-sticky-width")
