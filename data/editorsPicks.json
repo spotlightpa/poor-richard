@@ -12,15 +12,17 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-11-28-SPLPHEAA28.md"
+    "content/news/2024-11-29-SPLFARMSIT.md"
   ],
   "subfeatures": [
-    "content/news/2024-06-04-SPLAFFORDCOLL.md"
+    "content/news/2024-11-23-SPLMAYORLBG.md",
+    "content/news/2024-10-18-SPLTAROTBAN.md",
+    "content/news/2024-10-11-SPLPENNSTORIES.md"
   ],
   "topSlots": [
-    "content/news/2024-11-28-SPLPUZZLES24.md",
-    "content/statecollege/2024-11-27-SPLDEERSZN1124.md",
-    "content/news/2024-11-26-SPLFOODBANK1124.md"
+    "content/news/2024-11-28-SPLNEWSQUIZNOV2524.md",
+    "content/news/2024-11-28-SPLPHEAA28.md",
+    "content/statecollege/2024-11-27-SPLDEERSZN1124.md"
   ],
   "topper": []
 }
