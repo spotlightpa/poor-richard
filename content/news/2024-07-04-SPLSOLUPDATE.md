@@ -3,6 +3,7 @@ authors = ["Stephen Caruso"]
 blurb = "Mistakes and political fights have long delayed an amendment to give sexual abuse survivors a chance to sue the perpetrators. Now, the effort might fail again."
 byline = "Stephen Caruso of Spotlight PA"
 description = "PA lawmakers have a month to get a long-stalled childhood sexual abuse amendment that gives survivors a window to sue on the November ballot."
+feed-exclude = false
 image = "2023/08/01jd-ah85-c3ry-svfm.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "The exterior of the Pennsylvania Capitol in Harrisburg."
@@ -94,7 +95,7 @@ Gregory publicly split with Rozzi over the deal. But both lawmakers told Spotlig
 
 “He didn&#39;t have to do that, but I always knew he would,” Gregory said.
 
-However, the issue won&#39;t be without legislative advocates. Two lawmakers, state Reps. <a href="https://www.pahouse.com/InTheNews/NewsRelease/?id=129234">Maureen Madden</a> (D., Monroe) and <a href="https://www.pennlive.com/politics/2023/02/pressure-now-on-pa-senate-to-provide-child-sexual-abuse-survivors-with-chance-for-justice.html">La’Tasha Mayes</a> (D., Allegheny), told their own stories of surviving abuse last year.
+However, the issue won&#39;t be without legislative advocates. Two lawmakers, state Reps. <a href="https://web.archive.org/20230926125723/https://www.pahouse.com/InTheNews/NewsRelease/?id=129234">Maureen Madden</a> (D., Monroe) and <a href="https://www.pennlive.com/politics/2023/02/pressure-now-on-pa-senate-to-provide-child-sexual-abuse-survivors-with-chance-for-justice.html">La’Tasha Mayes</a> (D., Allegheny), told their own stories of surviving abuse last year.
 
 Rozzi added that Democrat Nathan Davidson, who is running for a state House seat the party is likely to win, has also expressed interest in backing the proposal.
 
