@@ -25,5 +25,5 @@
   x-init="setTimeout(()=>{ humanLike = true }, 10000)"
   :name="humanLike? 'shibboleth_timestamp': ''"
   :value="humanLike? new Date().toISOString(): ''"
-  @scroll.passive.window.once="humanLike = true"
+  @scroll.passive.window.once="setTimeout(()=>{ humanLike = true }, 1000)"
 />
