@@ -45,7 +45,7 @@ As of Aug. 24, more than 440 cases of monkeypox had been reported in Pennsylvani
 
 The virus, which spreads through extended close personal contact, can lead to rashes as well as respiratory symptoms, per the <a href="https://web.archive.org/20220120134511/https://www.cdc.gov/poxvirus/monkeypox/symptoms.html">CDC</a>.
 
-The federal government has allocated nearly 18,000 doses of the monkeypox vaccine to Pennsylvania and another 8,390 to Philadelphia specifically, <a href="https://aspr.hhs.gov/SNS/Pages/JYNNEOS-Distribution.aspx">according</a> to federal data.
+The federal government has allocated nearly 18,000 doses of the monkeypox vaccine to Pennsylvania and another 8,390 to Philadelphia specifically, <a href="https://web.archive.org/20220706223613/https://aspr.hhs.gov/SNS/Pages/JYNNEOS-Distribution.aspx">according</a> to federal data.
 
 Of those, about 18,000 have been shipped to the state as of Aug. 19.
 

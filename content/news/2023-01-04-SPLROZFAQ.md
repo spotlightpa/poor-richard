@@ -3,6 +3,7 @@ arc-id = "BW4P62SPUFED5MYQXAX3SKF2IA"
 blurb = "Democrats in the Pennsylvania House were joined by a handful of Republicans to pick Berks County’s Mark Rozzi to be speaker."
 byline = "Spotlight PA Staff"
 description = "Rozzi, a dark-horse candidate, was elected in November as a Democrat but immediately pledged to be an independent as speaker. "
+feed-exclude = false
 image = "external/7jz77cwa8rfdyd0egned5tm700.jpeg"
 image-credit = "House Democratic Caucus"
 image-description = "Mark Rozzi addresses the Pennsylvania House after being selected speaker."
@@ -11,6 +12,7 @@ internal-id = "SPLROZFAQ"
 kicker = "The Capitol"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2023-01-04T12:28:50.637-05:00
 slug = "pa-house-speaker-mark-rozzi"
 suppress-date = false
@@ -33,7 +35,7 @@ Here are the basics about the Berks County lawmaker, how he became speaker, and 
 
 Mark Rozzi is a state representative from Berks County who was first elected in 2012.
 
-He is a prominent advocate for survivors of childhood sexual abuse, having been <a href="https://www.readingeagle.com/2019/08/15/a-year-after-priest-abuse-report-state-rep-mark-rozzi-of-berks-is-still-undaunted/">raped by a Catholic priest when he was 13</a>. He supports <a href="https://www.pahouse.com/Rozzi/InTheNews/NewsRelease/?id=124314">creating</a> a retroactive two-year window for survivors to bring civil lawsuits.
+He is a prominent advocate for survivors of childhood sexual abuse, having been <a href="https://www.readingeagle.com/2019/08/15/a-year-after-priest-abuse-report-state-rep-mark-rozzi-of-berks-is-still-undaunted/">raped by a Catholic priest when he was 13</a>. He supports <a href="https://web.archive.org/20230104202457/https://www.pahouse.com/Rozzi/InTheNews/NewsRelease/?id=124314">creating</a> a retroactive two-year window for survivors to bring civil lawsuits.
 
 Spotlight PA will have more on Rozzi’s record in the coming days.
 
