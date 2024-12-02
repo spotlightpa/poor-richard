@@ -95,7 +95,7 @@ Aunque posteriormente un juez federal <a href="https://www.aclu.org/press-releas
 
 <h3 id="spl-heading-3">Eugene DePasquale, Demócrata</h3>
 
-<a href="https://www.depasqualeforag.com/"><strong>Página web</strong></a>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/"><strong>Página web</strong></a>
 
 {{<picture src="cas/yd1x-bjwb-r50b-9xak.jpeg" description="El candidato demócrata a fiscal general, Eugene DePasquale, en el edificio del Capitolio en Harrisburg, Pensilvania." caption="El candidato demócrata a fiscal general, Eugene DePasquale, en el edificio del Capitolio en Harrisburg, Pensilvania." credit="Commonwealth Media Services">}}
 
@@ -131,7 +131,7 @@ DePasquale es actualmente <a href="https://www.polisci.pitt.edu/people/eugene-de
 
 Cuando se le preguntó cómo abordaría la delincuencia violenta durante el mismo debate, DePasquale dijo que el estado necesita centrarse en la salud mental, además de alejar las armas de la &#34;gente mala&#34;. Dijo que el estado necesita implementar la llamada ley de &#34;bandera roja&#34;, que permitirá a las fuerzas del orden o a la familia solicitar a un juez que le retiren temporalmente las armas de fuego a un individuo si parece que esa persona puede hacerse daño a sí misma o a otros.
 
-<a href="https://www.depasqualeforag.com/endorsements"><strong>Apoyos</strong></a><strong>:</strong> Miembros demócratas de la legislatura; funcionarios locales y del condado; el senador John Fetterman (demócrata, Pensilvania); el ex representante Mike Doyle (demócrata, Pensilvania); sindicatos como la Asociación de Educación del Estado de Pensilvania, AFSCME Council 13, IBEW Local 98 y la Asociación de Funcionarios Penitenciarios del Estado de Pensilvania; y organizaciones como el Giffords Law Center, Conservation Voters de PA y Planned Parenthood de Pennsylvania.
+<a href="https://web.archive.org/20240122192547/https://www.depasqualeforag.com/endorsements"><strong>Apoyos</strong></a><strong>:</strong> Miembros demócratas de la legislatura; funcionarios locales y del condado; el senador John Fetterman (demócrata, Pensilvania); el ex representante Mike Doyle (demócrata, Pensilvania); sindicatos como la Asociación de Educación del Estado de Pensilvania, AFSCME Council 13, IBEW Local 98 y la Asociación de Funcionarios Penitenciarios del Estado de Pensilvania; y organizaciones como el Giffords Law Center, Conservation Voters de PA y Planned Parenthood de Pennsylvania.
 
 {{<dewey-assistant>}}
 

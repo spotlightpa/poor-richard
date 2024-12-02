@@ -42,7 +42,7 @@ Learn more about DePasquale below.
 
 ## Who is Eugene DePasquale?
 
-<a href="https://www.depasqualeforag.com/">Website</a>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Website</a>
 
 Born in Pittsburgh, DePasquale attended the College of Wooster, the University of Pittsburgh, and Widener University Commonwealth Law School.
 

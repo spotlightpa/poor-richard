@@ -32,7 +32,7 @@ Learn more about DePasquale below:
 
 ## Who is Eugene DePasquale?
 
-<a href="https://www.depasqualeforag.com/">Website</a>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Website</a>
 
 Eugene DePasquale, 53, has spent much of his career in elected office.
 
@@ -68,7 +68,7 @@ DePasquale is currently an adjunct <a href="https://www.polisci.pitt.edu/people/
 
 When asked how he would address violent crime during the same debate, DePasquale said the state needs to focus on mental health in addition to getting guns away from “bad people.” He said the state needs to implement a so-called “red flag” law, which would allow law enforcement or family to petition a judge to temporarily take away an individual&#39;s firearms if it appears that person may harm themselves or others.
 
-<a href="https://www.depasqualeforag.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; U.S. Sen. John Fetterman (D., Pa.); former U.S. Rep. Mike Doyle (D., Pa.); labor unions including the Pennsylvania State Education Association, AFSCME Council 13, IBEW Local 98, and the Pennsylvania State Corrections Officers Association; and organizations including the Giffords Law Center, the Conservation Voters of PA and Planned Parenthood in Pennsylvania.
+<a href="https://web.archive.org/20240122192547/https://www.depasqualeforag.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; U.S. Sen. John Fetterman (D., Pa.); former U.S. Rep. Mike Doyle (D., Pa.); labor unions including the Pennsylvania State Education Association, AFSCME Council 13, IBEW Local 98, and the Pennsylvania State Corrections Officers Association; and organizations including the Giffords Law Center, the Conservation Voters of PA and Planned Parenthood in Pennsylvania.
 
 <strong><em>&gt;&gt;READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday"><strong><em>Your guide to the candidates for attorney general</em></strong></a><strong><em></em></strong>
 

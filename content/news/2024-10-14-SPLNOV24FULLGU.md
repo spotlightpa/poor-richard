@@ -208,7 +208,7 @@ Pennsylvania has three elected row offices, all of which have competitive races 
 
 In the race for attorney general, Michelle Henry — who was appointed to replace Josh Shapiro after he departed the office to become governor — is not running to keep the role, which leaves the field open.
 
-Democrat <a href="https://www.depasqualeforag.com/">Eugene DePasquale</a> will face off against Republican <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Third-party candidates in the race include <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Constitution Party), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Forward Paty), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Green Party), and <a href="https://cowburnforag.com/">Robert Cowburn</a> (Libertarian).
+Democrat <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> will face off against Republican <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Third-party candidates in the race include <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Constitution Party), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Forward Paty), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Green Party), and <a href="https://cowburnforag.com/">Robert Cowburn</a> (Libertarian).
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/">the candidates for attorney general here</a>.
 

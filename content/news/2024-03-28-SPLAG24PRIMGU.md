@@ -124,7 +124,7 @@ Cuando se le preguntó cómo abordaría la delincuencia violenta durante un deba
 
 <h3 id="spl-heading-4">Eugene DePasquale</h3>
 
-<a href="https://www.depasqualeforag.com/"><strong>Página web</strong></a>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/"><strong>Página web</strong></a>
 
 Nacido en Pittsburgh, DePasquale estudió en el College of Wooster, la Universidad de Pittsburgh y la Facultad de Derecho Commonwealth de la Universidad Widener.
 
