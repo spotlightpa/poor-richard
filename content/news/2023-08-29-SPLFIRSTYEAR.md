@@ -3,6 +3,7 @@ authors = ["Kate Huangpu", "Angela Couloumbis"]
 blurb = "One of the biggest-ever classes of new lawmakers joined the Pa. legislature this year. Spotlight PA followed 3 of them as they navigated a freshman year full of power struggle and scandal."
 byline = "Kate Huangpu of Spotlight PA and Angela Couloumbis of Spotlight PA"
 description = "3 PA legislative freshmen recount a 1st legislative session full of power struggle, politicking, and scandal"
+feed-exclude = false
 image = "2023/08/01je-t47e-etqj-a2h6.png"
 image-credit = "Georgianna Sutherland, Amanda Berg, and Hannah Yoon / For Spotlight PA"
 image-description = "In order from left, Representatives Dallas Kephart, Justin Fleming, and Tarik Khan."
@@ -10,6 +11,7 @@ image-gravity = "ce"
 internal-id = "SPLFIRSTYEAR"
 kicker = "The Capitol"
 modal-exclude = false
+pinned = false
 published = 2023-08-29T05:00:00.429-04:00
 slug = "pennsylvania-house-lawmakers-first-budget-2023"
 suppress-date = false
@@ -140,7 +142,7 @@ Kephart said he often focuses on blocking bills he thinks would negatively impac
 
 “Sometimes the role is to prevent bad things from happening,” Kephart said.
 
-For most of the spring session leading up to summer budget negotiations, Democrats in the chamber pushed bills they had been blocked from advancing when they were in the minority in the previous decade. These included proposals to raise the <a href="https://www.pahouse.com/InTheNews/NewsRelease/?id=129484">minimum wage</a> and expand discrimination protections based on sexual orientation and gender identity.
+For most of the spring session leading up to summer budget negotiations, Democrats in the chamber pushed bills they had been blocked from advancing when they were in the minority in the previous decade. These included proposals to raise the <a href="https://web.archive.org/20230621172504/https://www.pahouse.com/InTheNews/NewsRelease/?id=129484">minimum wage</a> and expand discrimination protections based on sexual orientation and gender identity.
 
 Those measures passed along largely partisan lines.
 
