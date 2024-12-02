@@ -12,7 +12,11 @@
 }}
 
 
-<aside class="{{ $wrapperClass }}" data-ga-category="promo-image">
+<aside
+  class="{{ $wrapperClass }}"
+  data-ga-category="promo-image"
+  {{ with .id }}id="{{ . }}"{{ end }}
+>
   {{ if $link }}
     <a href="{{ $link }}">
       {{- $picture -}}
