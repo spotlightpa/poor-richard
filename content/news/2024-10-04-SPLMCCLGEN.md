@@ -78,12 +78,12 @@ In the post, she referenced choosing Cooper over a candidate that “\[swept\] s
 
 McClelland had also <a href="https://penncapital-star.com/campaigns-elections/mcclellands-pa-treasurer-campaign-raised-and-spent-money-months-before-it-officially-existed/">received criticism</a> for receiving donations and spending money on her campaign before registering her committee with the Pennsylvania Department of State. McClelland said that the issues were due to glitches in the Allegheny County campaign finance filing system. Ultimately, the Department of State found that there were <a href="https://x.com/ErinforPA/status/1816523281354359250">no violations</a> of campaign finance laws.
 
-<strong>Endorsements:</strong> the <a href="https://www.padems.org/candidates/">Pennsylvania Democratic Party</a>, <a href="https://paaflcio.com/endorsed-candidates-2024/">PA AFL-CIO</a>, <a href="https://www.afscme13.org/news/press-release-afscme-members-endorse-depasquale-for-ag-mcclelland-for-treasurer/">AFSCME District Council 13</a>, United Steelworkers District 10, Amalgamated Transit Union Pennsylvania Joint Conference Board, Pennsylvania State Education Association, Great Lakes Building Trades, <a href="https://www.plannedparenthoodaction.org/planned-parenthood-pennsylvania-advocates/elections/pp-pa-pac-2024-endorsements">Planned Parenthood PA PAC</a>, <a href="https://www.votetheridge.org/2024-endorsements">Vote the Ridge</a>, <a href="https://drive.google.com/file/d/1yMo9LMwVL_evBNTmLyI0cgOlarbsXZeO/view">Lehigh Valley for All</a>, AFSCME District Council 47, Action Together NEPA.
+<strong>Endorsements:</strong> the <a href="https://www.padems.org/candidates/">Pennsylvania Democratic Party</a>, <a href="https://paaflcio.com/endorsed-candidates-2024/">PA AFL-CIO</a>, <a href="https://www.afscme13.org/news/press-release-afscme-members-endorse-depasquale-for-ag-mcclelland-for-treasurer/">AFSCME District Council 13</a>, United Steelworkers District 10, Amalgamated Transit Union Pennsylvania Joint Conference Board, Pennsylvania State Education Association, Great Lakes Building Trades, <a href="https://www.plannedparenthoodaction.org/planned-parenthood-pennsylvania-advocates/elections/pp-pa-pac-2024-endorsements">Planned Parenthood PA PAC</a>, <a href="https://web.archive.org/20240916094030/https://www.votetheridge.org/2024-endorsements">Vote the Ridge</a>, <a href="https://drive.google.com/file/d/1yMo9LMwVL_evBNTmLyI0cgOlarbsXZeO/view">Lehigh Valley for All</a>, AFSCME District Council 47, Action Together NEPA.
 
 <strong><em>&gt;&gt;READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-treasurer-candidates-stacy-garrity-erin-mcclelland/"><strong><em>Your guide to the candidates for treasurer</em></strong></a><strong><em></em></strong>
 
-{{<featured/related-stories 
-  title="More Stories from the 2024 Election" 
+{{<featured/related-stories
+  title="More Stories from the 2024 Election"
   link="/election"
   cta="Visit the Election Center →"
   limit="12"

@@ -101,7 +101,7 @@ Though a federal judge later <a href="https://www.aclu.org/press-releases/federa
 
 <h3 id="spl-heading-3">Eugene DePasquale, Democrat</h3>
 
-<a href="https://www.depasqualeforag.com/"><strong>Website</strong></a>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/"><strong>Website</strong></a>
 
 {{<picture src="cas/yd1x-bjwb-r50b-9xak.jpeg" description="Democratic attorney general candidate Eugene DePasquale seen in the Capitol building in Harrisburg, Pennsylvania." caption="Democratic attorney general candidate Eugene DePasquale seen in the Capitol building in Harrisburg, Pennsylvania." credit="Commonwealth Media Services">}}
 
@@ -137,7 +137,7 @@ DePasquale is currently an adjunct <a href="https://www.polisci.pitt.edu/people/
 
 When asked how he would address violent crime during the same debate, DePasquale said the state needs to focus on mental health in addition to getting guns away from “bad people.” He said the state needs to implement a so-called “red flag” law, which would allow law enforcement or family to petition a judge to temporarily take away an individual&#39;s firearms if it appears that person may harm themselves or others.
 
-<a href="https://www.depasqualeforag.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; U.S. Sen. John Fetterman (D., Pa.); former U.S. Rep. Mike Doyle (D., Pa.); labor unions including the Pennsylvania State Education Association, AFSCME Council 13, IBEW Local 98, and the Pennsylvania State Corrections Officers Association; and organizations including the Giffords Law Center, the Conservation Voters of PA and Planned Parenthood in Pennsylvania.
+<a href="https://web.archive.org/20240122192547/https://www.depasqualeforag.com/endorsements"><strong>Endorsements</strong></a><strong>:</strong> Democratic members of the legislature; county and local officials; U.S. Sen. John Fetterman (D., Pa.); former U.S. Rep. Mike Doyle (D., Pa.); labor unions including the Pennsylvania State Education Association, AFSCME Council 13, IBEW Local 98, and the Pennsylvania State Corrections Officers Association; and organizations including the Giffords Law Center, the Conservation Voters of PA and Planned Parenthood in Pennsylvania.
 
 {{<dewey-assistant>}}
 

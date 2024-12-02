@@ -205,7 +205,7 @@ Pensilvania cuenta con tres cargos electos, todos ellos en contienda este año: 
 
 En la carrera por la fiscalía general, Michelle Henry — nombrada para sustituir a Josh Shapiro después de que dejó el cargo para convertirse en gobernador — no se presenta para mantener el cargo, lo que deja el campo abierto.
 
-El demócrata <a href="https://www.depasqualeforag.com/">Eugene DePasquale</a> se enfrentará al republicano <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Entre los candidatos de terceros partidos en liza figuran <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Partido de la Constitución), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Partido Forward), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Partido Verde) y <a href="https://cowburnforag.com/">Robert Cowburn</a> (Partido Libertario).
+El demócrata <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> se enfrentará al republicano <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Entre los candidatos de terceros partidos en liza figuran <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Partido de la Constitución), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Partido Forward), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Partido Verde) y <a href="https://cowburnforag.com/">Robert Cowburn</a> (Partido Libertario).
 
 Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-fiscal-general-candidatos-eugene-depasquale-dave-sunday/">los candidatos a fiscal general aquí</a>.
 
