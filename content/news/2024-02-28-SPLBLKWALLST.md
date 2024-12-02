@@ -5,6 +5,7 @@ description = "Experts discuss Harrisburg’s former Black commercial hub and th
 event-date = 2024-03-07T18:00:00-05:00
 event-title = "PA’S BLACK WALL STREET"
 event-url = "https://zoom.us/webinar/register/WN_T52KsSqISmqO3-903arN2w#/registration"
+feed-exclude = false
 image = "2024/02/01jx-z1g9-fr55-mgm8.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "The Urban Snob building at 1006 N. Third Street, Harrisburg, is pictured in October 2022."
@@ -34,7 +35,7 @@ Our panelists were:
 
 - <a href="https://www.spotlightpa.org/authors/tanisha-thomas/"><strong>Tanisha Thomas</strong></a>, newsletter writer, Spotlight PA
 
-- <a href="https://www.dimitrageneva.com/"><strong>Dimitra</strong> <strong>Diggs</strong></a>, owner, Urban Snob
+- <a href="https://web.archive.org/20240111193327/https://www.dimitrageneva.com/"><strong>Dimitra</strong> <strong>Diggs</strong></a>, owner, Urban Snob
 
 - <a href="https://www.sankofatheatrehbg.com/"><strong>Sharia Benn</strong></a>, artistic director, Sankofa African American Theater Company
 
