@@ -128,7 +128,7 @@ When asked how she would address violent crime during a March debate, Bradford-G
 
 <h3 id="spl-heading-4">Eugene DePasquale</h3>
 
-<a href="https://www.depasqualeforag.com/"><strong>Website</strong></a><strong></strong>
+<a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/"><strong>Website</strong></a><strong></strong>
 
 Born in Pittsburgh, DePasquale attended the College of Wooster, the University of Pittsburgh, and Widener University Commonwealth Law School.
 
