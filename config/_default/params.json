@@ -75,7 +75,6 @@
   "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01km/t64y/newsmatch-2023-squares-20-.png",
     "https://files.data.spotlightpa.org/uploads/01km/t64x/spring-2023-campaign-squares-8-.png"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
@@ -83,7 +82,6 @@
   "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01km/t64y/newsmatch-2023-squares-20-.png",
     "https://files.data.spotlightpa.org/uploads/01km/t64x/spring-2023-campaign-squares-8-.png"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
@@ -113,7 +111,7 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01km/t64z/newsmatch-2023-tracker-banners-12-.png"
+    "https://files.data.spotlightpa.org/uploads/01km/wy06/newsmatch-2023-tracker-banners-13-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -121,7 +119,7 @@
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01km/t64y/newsmatch-2023-rectangles-1024-512-px-13-.png"
+    "https://files.data.spotlightpa.org/uploads/01km/wy07/newsmatch-2023-rectangles-1024-512-px-14-.png"
   ],
   "topper-mobile-width": 1024
 }
