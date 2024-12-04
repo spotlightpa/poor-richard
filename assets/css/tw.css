@@ -372,4 +372,49 @@
   position: static;
 }
 
+.year-list li {
+  color: #b6b6b6;
+  margin: 7.5px 0;
+}
+
+.year-list li:first-child {
+  margin-top: 0;
+}
+
+.year-list li:last-child {
+  margin-bottom: 0;
+}
+
+.year-list li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.year-list li.active {
+  color: black;
+}
+
+.award-national-state {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.award-category {
+  font-weight: bold;
+}
+
+.award-story {
+  margin-bottom: 15px;
+}
+
+.award-story-link {
+  @apply text-navy underline;
+  @apply transition-colors duration-500;
+}
+
+.award-story-link:hover {
+  @apply text-yellow;
+}
+
 /*! purgecss end ignore */

@@ -9,7 +9,7 @@ At Spotlight PA, we seek to positively impact the future of Pennsylvania through
 In short, we measure our success by the results we're getting for you.
 """
 
-quote = "“If you live in Pennsylvania, you gotta have Spotlight PA.”"
+quote = "If you live in Pennsylvania, you gotta have Spotlight PA."
 quoteSource = "— John C., Spotlight PA member"
 
 howHead = "How We Track Impact"

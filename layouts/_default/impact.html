@@ -1,7 +1,9 @@
 {{ define "main" }}
   <section class="bg-white">
     {{ if .Params.pageTitle }}
-      <h1 class="mx-auto pt-16 text-4xl font-bold md:w-7/12 lg:text-5xl">
+      <h1
+        class="mx-auto px-4 pt-16 text-4xl font-bold md:w-7/12 md:px-0 lg:text-5xl"
+      >
         {{ .Params.pageTitle }}
       </h1>
     {{ end }}
@@ -9,7 +11,7 @@
 
     <div
       data-ga-category="content"
-      class="article-content mx-auto w-full py-6 pb-4 md:w-7/12"
+      class="article-content mx-auto w-full px-4 py-6 pb-4 md:w-7/12 md:px-0"
     >
       {{ if .Params.intro }}
         {{ .Params.intro | markdownify }}
@@ -17,9 +19,17 @@
     </div>
 
     {{ if .Params.quote }}
-      <div class="mx-auto max-w-4xl px-6 py-6">
-        <h3>
-          <span class="text-3xl font-bold">{{ .Params.quote }}</span>
+      <div class="mx-auto max-w-4xl px-4 py-6">
+        <h3 class="flex items-center">
+          <span class="flex items-center text-3xl font-bold">
+            <svg class="mr-2 h-8 w-8" aria-hidden="true" style="fill: #0cb4eb;">
+              {{ partial "helper/svg.html" "quote-left" }}
+            </svg>
+            {{ .Params.quote }}
+            <svg class="mr-2 h-8 w-8" aria-hidden="true" style="fill: #0cb4eb;">
+              {{ partial "helper/svg.html" "quote-right" }}
+            </svg>
+          </span>
         </h3>
         {{ if .Params.quoteSource }}
           <p class="text-gray-500 pb-16 pt-4 text-right font-normal italic">
@@ -32,16 +42,17 @@
 
     <div class="mb-16 h-[500px] w-full bg-beige"></div>
 
-    <div
-      data-ga-category="content"
-      class="article-content mx-auto w-full py-6 pb-4 md:w-7/12"
-    >
+    <div class="mx-auto w-full py-6 pb-4 md:w-7/12">
       {{ if .Params.howHead }}
-        <h2 class="mb-4 text-2xl font-bold">{{ .Params.howHead }}</h2>
+        <h2 class="mb-4 px-4 text-3xl font-bold md:px-0">
+          {{ .Params.howHead }}
+        </h2>
       {{ end }}
 
       {{ if .Params.how }}
-        <p class="text-gray-700 pb-16 text-lg font-normal leading-relaxed">
+        <p
+          class="text-gray-700 px-4 pb-16 text-lg font-normal leading-relaxed md:px-0"
+        >
           {{ .Params.how }}
         </p>
       {{ end }}
@@ -49,22 +60,58 @@
 
     {{ if .Params.awardHead }}
       <div class="h-auto w-full bg-beige pb-16">
-        <h2 class="mx-auto max-w-4xl px-6 py-6 text-4xl font-bold">
-          {{ .Params.awardHead }}
-        </h2>
-        <div class="mx-auto max-w-4xl px-6">
-          <div style="border-top: 2.5px solid black;"></div>
+        <div class="mx-auto flex max-w-4xl items-center px-4 pb-4 pt-16">
+          <svg class="mr-4 h-8 w-9" aria-hidden="true" style="fill: #b6b6b6;">
+            {{ partial "helper/svg.html" "trophy" }}
+          </svg>
+          <h2 class="text-4xl font-bold">
+            {{ .Params.awardHead }}
+          </h2>
         </div>
 
-        <div class="flex h-16 w-full px-6">
-          <div
-            class="h-full flex-none"
-            style="padding: 15px 15px 15px 25px; border-right: 2.5px solid black;"
-          >
-            <p class="font-bold">2024</p>
-          </div>
-          <div class="h-full flex-grow" style="padding: 15px 15px 15px 25px;">
-            <p class="font-bold">National Awards</p>
+        <div class="mx-auto max-w-4xl px-4">
+          <div style="border-top: 2.5px solid black; width: 100%;"></div>
+
+          <div class="flex w-full">
+            <div
+              class="font-bold"
+              style="padding: 15px 20px 15px 25px; border-right: 2.5px solid black;"
+            >
+              <ul class="year-list">
+                <li class="active">2024</li>
+                <li>2023</li>
+                <li>2022</li>
+                <li>2021</li>
+                <li>2020</li>
+                <li>2019</li>
+                <li>2018</li>
+              </ul>
+            </div>
+
+            <div style="padding: 15px 15px 15px 25px;">
+              <p class="award-national-state">National Awards</p>
+
+              <p class="award-entity">
+                Gerald Loeb Award:
+                <span class="award-category">Local category</span>
+              </p>
+
+              <p class="award-story">
+                For
+                <a
+                  class="award-story-link"
+                  href="https://www.spotlightpa.org/series/the-psers-scandal/"
+                  target="_blank"
+                  >How Pennsylvania's Biggest Pension Fund Squandered Billions,
+                  Hurt Taxpayers and Triggered an FBI Investigation</a
+                >, Craig McCoy and Joseph DiStefano of The Philadelphia Inquirer
+                and Angela Couloumbis of Spotlight PA
+              </p>
+
+              <p class="award-national-state">National Finalists</p>
+              <p class="award-national-state">State Awards</p>
+              <p class="award-national-state">State Finalists</p>
+            </div>
           </div>
         </div>
       </div>
