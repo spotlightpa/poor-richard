@@ -84,6 +84,9 @@ url = "/about/board/"
 actionText = "Board of Directors"
 
 [[blocks.cta]]
+url = "/about/impact/"
+actionText = "Impact"
+[[blocks.cta]]
 url = "/about/partners/"
 actionText = "Partners"
 [[blocks.cta]]
