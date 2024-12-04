@@ -1,0 +1,74 @@
+{{ define "main" }}
+  <section class="bg-white">
+    {{ if .Params.pageTitle }}
+      <h1 class="mx-auto pt-16 text-4xl font-bold md:w-7/12 lg:text-5xl">
+        {{ .Params.pageTitle }}
+      </h1>
+    {{ end }}
+
+
+    <div
+      data-ga-category="content"
+      class="article-content mx-auto w-full py-6 pb-4 md:w-7/12"
+    >
+      {{ if .Params.intro }}
+        {{ .Params.intro | markdownify }}
+      {{ end }}
+    </div>
+
+    {{ if .Params.quote }}
+      <div class="mx-auto max-w-4xl px-6 py-6">
+        <h3>
+          <span class="text-3xl font-bold">{{ .Params.quote }}</span>
+        </h3>
+        {{ if .Params.quoteSource }}
+          <p class="text-gray-500 pb-16 pt-4 text-right font-normal italic">
+            {{ .Params.quoteSource }}
+          </p>
+        {{ end }}
+      </div>
+    {{ end }}
+
+
+    <div class="mb-16 h-[500px] w-full bg-beige"></div>
+
+    <div
+      data-ga-category="content"
+      class="article-content mx-auto w-full py-6 pb-4 md:w-7/12"
+    >
+      {{ if .Params.howHead }}
+        <h2 class="mb-4 text-2xl font-bold">{{ .Params.howHead }}</h2>
+      {{ end }}
+
+      {{ if .Params.how }}
+        <p class="text-gray-700 pb-16 text-lg font-normal leading-relaxed">
+          {{ .Params.how }}
+        </p>
+      {{ end }}
+    </div>
+
+    {{ if .Params.awardHead }}
+      <div class="h-auto w-full bg-beige pb-16">
+        <h2 class="mx-auto max-w-4xl px-6 py-6 text-4xl font-bold">
+          {{ .Params.awardHead }}
+        </h2>
+        <div class="mx-auto max-w-4xl px-6">
+          <div style="border-top: 2.5px solid black;"></div>
+        </div>
+
+        <div class="flex h-16 w-full px-6">
+          <div
+            class="h-full flex-none"
+            style="padding: 15px 15px 15px 25px; border-right: 2.5px solid black;"
+          >
+            <p class="font-bold">2024</p>
+          </div>
+          <div class="h-full flex-grow" style="padding: 15px 15px 15px 25px;">
+            <p class="font-bold">National Awards</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+  </section>
+{{ end }}
