@@ -22,6 +22,8 @@ topics = ["PA Local"]
 twitter-title = "A daughter’s Capitol crusade"
 +++
 
+<em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zeJy242ijdI~jNY4XXHI"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
+
 Lynn Fiedler had just met with a roomful of Pennsylvania state senators to discuss new protections for older adults when one of the lawmakers pulled her aside to offer some advice.
 
 “She said, ‘You&#39;re used to sprinting, but I need you to understand the government is like a marathon,’” Fiedler recalled Lynda Schlegel Culver, a Northumberland County Republican, imparting.
