@@ -78,80 +78,138 @@
               style="padding: 15px 20px 15px 25px; border-right: 2.5px solid black;"
             >
               <ul class="year-list">
-                <li class="active">2024</li>
-                <li>2023</li>
-                <li>2022</li>
-                <li>2021</li>
-                <li>2020</li>
-                <li>2019</li>
+                {{ $years := slice }}
+                {{ range . }}
+                  {{ $years = $years | append .year }}
+                {{ end }}
+                {{ $sortedYears := uniq $years | sort }}
+                {{ $count := len $sortedYears }}
+
+                {{ range $index := seq 0 (sub $count 1) }}
+                  <li>{{ index $sortedYears (sub (sub $count 1) $index) }}</li>
+                {{ end }}
               </ul>
             </div>
 
+            {{ $awards := site.Data.awards }}
             <script>
               document.addEventListener("DOMContentLoaded", () => {
                 const yearList = document.querySelector(".year-list");
-                if (!yearList) {
-                  console.warn("No year list found.");
+                const awardsContainer =
+                  document.querySelector(".awards-container");
+
+                if (!yearList || !awardsContainer) {
+                  console.warn("No year list or awards container found.");
                   return;
                 }
 
                 const yearItems = yearList.querySelectorAll("li");
-                if (yearItems.length === 0) {
-                  console.warn("No year items found in the list.");
-                  return;
-                }
-
                 yearItems.forEach((item) => {
                   item.addEventListener("click", () => {
+                    const activeYear = item.textContent.trim();
+
                     yearItems.forEach((li) => li.classList.remove("active"));
                     item.classList.add("active");
+
+                    const awardSections =
+                      awardsContainer.querySelectorAll(".award-entity");
+                    awardSections.forEach((award) => {
+                      const awardYear = award.getAttribute("data-year");
+                      award.style.display =
+                        awardYear === activeYear ? "block" : "none";
+                    });
+
+                    const sections = [
+                      {
+                        header: ".national-awards-header",
+                        container: ".national-awards",
+                      },
+                      {
+                        header: ".national-finalists-header",
+                        container: ".national-finalists",
+                      },
+                      {
+                        header: ".state-awards-header",
+                        container: ".state-awards",
+                      },
+                      {
+                        header: ".state-finalists-header",
+                        container: ".state-finalists",
+                      },
+                    ];
+
+                    sections.forEach(({ header, container }) => {
+                      const section = awardsContainer.querySelector(container);
+                      const headerElement =
+                        awardsContainer.querySelector(header);
+                      const hasVisibleAwards = Array.from(
+                        section.querySelectorAll(".award-entity"),
+                      ).some((award) => award.style.display === "block");
+                      headerElement.style.display = hasVisibleAwards
+                        ? "block"
+                        : "none";
+                    });
                   });
                 });
 
-                yearItems[0].classList.add("active");
+                yearItems[0]?.click();
               });
             </script>
 
             <div style="padding: 15px 15px 15px 25px;">
-              <p class="award-national-state">National Awards</p>
-              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
-                <p class="award-entity">
-                  {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
+              <div class="awards-container">
+                <p class="award-national-state national-awards-header">
+                  National Awards
                 </p>
-                <p class="award-story">{{ .story }}</p>
-              {{ end }}
+                <div class="national-awards">
+                  {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
+                    <div class="award-entity" data-year="{{ .year }}">
+                      {{ .entity }}:
+                      <span class="award-category">{{ .award_category }}</span>
+                      <p class="award-story">{{ .story }}</p>
+                    </div>
+                  {{ end }}
+                </div>
 
-
-              <p class="award-national-state">National Finalists</p>
-              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
-                <p class="award-entity">
-                  {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
+                <p class="award-national-state national-finalists-header">
+                  National Finalists
                 </p>
-                <p class="award-story">{{ .story }}</p>
-              {{ end }}
+                <div class="national-finalists">
+                  {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                    <div class="award-entity" data-year="{{ .year }}">
+                      {{ .entity }}:
+                      <span class="award-category">{{ .award_category }}</span>
+                      <p class="award-story">{{ .story }}</p>
+                    </div>
+                  {{ end }}
+                </div>
 
-
-              <p class="award-national-state">State Awards</p>
-              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
-                <p class="award-entity">
-                  {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
+                <p class="award-national-state state-awards-header">
+                  State Awards
                 </p>
-                <p class="award-story">{{ .story }}</p>
-              {{ end }}
+                <div class="state-awards">
+                  {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
+                    <div class="award-entity" data-year="{{ .year }}">
+                      {{ .entity }}:
+                      <span class="award-category">{{ .award_category }}</span>
+                      <p class="award-story">{{ .story }}</p>
+                    </div>
+                  {{ end }}
+                </div>
 
-
-              <p class="award-national-state">State Finalists</p>
-              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
-                <p class="award-entity">
-                  {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
+                <p class="award-national-state state-finalists-header">
+                  State Finalists
                 </p>
-                <p class="award-story">{{ .story }}</p>
-              {{ end }}
-
+                <div class="state-finalists">
+                  {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                    <div class="award-entity" data-year="{{ .year }}">
+                      {{ .entity }}:
+                      <span class="award-category">{{ .award_category }}</span>
+                      <p class="award-story">{{ .story }}</p>
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
             </div>
           </div>
         </div>
