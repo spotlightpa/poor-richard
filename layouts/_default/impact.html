@@ -58,14 +58,14 @@
       {{ end }}
     </div>
 
-    {{ if .Params.awardHead }}
+    {{ with site.Data.awards }}
       <div class="h-auto w-full bg-beige pb-16">
         <div class="mx-auto flex max-w-4xl items-center px-4 pb-4 pt-16">
           <svg class="mr-4 h-8 w-9" aria-hidden="true" style="fill: #b6b6b6;">
             {{ partial "helper/svg.html" "trophy" }}
           </svg>
           <h2 class="text-4xl font-bold">
-            {{ .Params.awardHead }}
+            {{ $.Params.awardHead }}
           </h2>
         </div>
 
@@ -114,27 +114,44 @@
 
             <div style="padding: 15px 15px 15px 25px;">
               <p class="award-national-state">National Awards</p>
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
+                <p class="award-entity">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                </p>
+                <p class="award-story">{{ .story }}</p>
+              {{ end }}
 
-              <p class="award-entity">
-                Gerald Loeb Award:
-                <span class="award-category">Local category</span>
-              </p>
-
-              <p class="award-story">
-                For
-                <a
-                  class="award-story-link"
-                  href="https://www.spotlightpa.org/series/the-psers-scandal/"
-                  target="_blank"
-                  >How Pennsylvania's Biggest Pension Fund Squandered Billions,
-                  Hurt Taxpayers and Triggered an FBI Investigation</a
-                >, Craig McCoy and Joseph DiStefano of The Philadelphia Inquirer
-                and Angela Couloumbis of Spotlight PA
-              </p>
 
               <p class="award-national-state">National Finalists</p>
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <p class="award-entity">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                </p>
+                <p class="award-story">{{ .story }}</p>
+              {{ end }}
+
+
               <p class="award-national-state">State Awards</p>
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
+                <p class="award-entity">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                </p>
+                <p class="award-story">{{ .story }}</p>
+              {{ end }}
+
+
               <p class="award-national-state">State Finalists</p>
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <p class="award-entity">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                </p>
+                <p class="award-story">{{ .story }}</p>
+              {{ end }}
+
             </div>
           </div>
         </div>
