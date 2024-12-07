@@ -46,7 +46,7 @@ Fiedler’s advocacy earned her a nomination for our latest PA Local Heroes prof
 
 With the help of Culver and law enforcement who investigated her mother’s case, Fiedler created an abuse task force and began championing the adoption of new statewide safeguards.
 
-One piece of legislation, dubbed Alice’s Law, would create a registry for people convicted of or fired for abusing older adults in Pennsylvania. Two Heritage Springs employees, one 17 at the time and the other an adult, were fired for taking dehumanizing photos of Fiedler’s mother and more than a dozen other patients at the facility. The older employee, now 20, was sentenced to three months in jail, 18 months of house arrest, and years of probation on 12 misdemeanor counts.
+One piece of legislation, dubbed Alice’s Law, would create a registry for people convicted of or fired for abusing older adults in Pennsylvania. Two Heritage Springs employees, one 17 at the time and the other an adult, were fired for taking and sharing dehumanizing photos of Fiedler’s mother and more than a dozen other patients at the facility. The older employee, now 20, was sentenced to three months in jail, 18 months of house arrest, and years of probation on 12 misdemeanor counts.
 
 {{<picture src="2024/12/01kn-6d6g-p93f-hhkd.jpeg" description="Lynn Fiedler, state Sen. Lynda Schlegel Culver, and registered nurse Kim Rigel in the state Capitol." caption="Lynn Fiedler, state Sen. Lynda Schlegel Culver, and registered nurse Kim Rigel in the state Capitol." credit="Photo submitted">}}
 
