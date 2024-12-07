@@ -28,7 +28,7 @@ Lynn Fiedler had just met with a roomful of Pennsylvania state senators to discu
 
 “She said, ‘You&#39;re used to sprinting, but I need you to understand the government is like a marathon,’” Fiedler recalled Lynda Schlegel Culver, a Northumberland County Republican, imparting.
 
-Fiedler said she’d been visibly concerned that the competing interests in the room — “one person wanted this, the other that” — would delay a legislative push to create a state registry of people found to have abused older adults.
+Fiedler said she’d been visibly concerned that the competing interests in the room — “one person wanted this, the other that” — would delay a legislative push to create a state registry of people found to have abused older adults in settings like care homes. Industry employers would be required to confirm whether a prospective employee is or isn't on the registry before making a hire.
 
 Culver has proven correct. Things move slowly. But Fiedler, a sort of accidental activist, remains undaunted: “I have been pushing and pushing and pushing, and that&#39;s what it takes. But if anyone tells you one voice can&#39;t make a difference, that is untrue.”
 
