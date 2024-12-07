@@ -34,7 +34,9 @@ Culver has proven correct. Things move slowly. But Fiedler, a sort of accidental
 
 The former public school teacher added: “I used my voice and I gathered an army.”
 
-That would be Alice’s Army, named after her mother, whose abuse at the hands of two workers at the Heritage Springs Memory Care center near Lewisburg drew headlines, criminal charges, and lawsuits. The ordeal set the stage for Fiedler’s current calling.
+That would be Alice’s Army, named after her mother, whose abuse at the hands of two workers at the Heritage Springs Memory Care center near Lewisburg drew headlines, criminal charges, and lawsuits. (Memory care is for people with forms of dementia, including Alzheimer’s disease.)
+
+The ordeal set the stage for Fiedler’s current calling. 
 
 {{<embed/newsletter>}}
 
