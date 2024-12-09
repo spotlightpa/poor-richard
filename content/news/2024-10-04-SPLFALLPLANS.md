@@ -55,7 +55,7 @@ Several state parks — including <a href="https://events.dcnr.pa.gov/event/litt
 
 ## Ein Fest genießen
 
-Pennsylvania has a significant population of people who <a href="https://pasdc.hbg.psu.edu/sdc/pasdc_files/researchbriefs/GermanHeritage_RB.pdf">claim</a> German ancestry, but anyone can enjoy Oktoberfest. There are <a href="https://triblive.com/local/regional/western-pa-overflowing-with-oktoberfest-celebrations/">at least eight in Western Pennsylvania</a> alone (though some have already passed), and others in the <a href="https://www.steelstacks.org/festivals/oktoberfest/">Lehigh Valley</a>, the <a href="https://www.skibluemt.com/oktoberfest/">Poconos</a>, and <a href="https://www.readingliederkranz.com/oktoberfest">Reading</a>.
+Pennsylvania has a significant population of people who <a href="https://web.archive.org/20210115203247/https://pasdc.hbg.psu.edu/sdc/pasdc_files/researchbriefs/GermanHeritage_RB.pdf">claim</a> German ancestry, but anyone can enjoy Oktoberfest. There are <a href="https://triblive.com/local/regional/western-pa-overflowing-with-oktoberfest-celebrations/">at least eight in Western Pennsylvania</a> alone (though some have already passed), and others in the <a href="https://www.steelstacks.org/festivals/oktoberfest/">Lehigh Valley</a>, the <a href="https://www.skibluemt.com/oktoberfest/">Poconos</a>, and <a href="https://www.readingliederkranz.com/oktoberfest">Reading</a>.
 
 ## Seek out scares
 
