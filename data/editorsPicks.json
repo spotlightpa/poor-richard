@@ -12,17 +12,19 @@
     "content/news/2024-08-20-SPLSHOOTFAIL0824.md"
   ],
   "featuredStories": [
-    "content/news/2024-12-09-SPLELECCOLL1224.md"
+    "content/news/2024-12-10-SPLFUTUREPOL1224.md"
   ],
   "subfeatures": [
-    "content/news/2024-12-04-VBCERTF1224.md",
-    "content/news/2024-11-26-SPLMAPFOLO1124.md",
-    "content/news/2024-11-25-SPLFRAUDAPPS1124.md"
+    "content/news/2024-11-06-SPLTRESRES24.md",
+    "content/news/2024-10-04-SPLGARGEN.md",
+    "content/news/2024-02-15-SPLISBONDS.md",
+    "content/news/2024-03-11-SPL_TREASURY_UNCLAIMED.md",
+    "content/news/2024-12-04-VBCERTF1224.md"
   ],
   "topSlots": [
+    "content/news/2024-12-09-SPLELECCOLL1224.md",
     "content/statecollege/2024-12-05-SPLPSUVOTE1224.md",
-    "content/news/2024-12-04-SPLMTPENN1124.md",
-    "content/news/2024-12-03-SPLUTLREA1224.md"
+    "content/news/2024-12-04-SPLMTPENN1124.md"
   ],
   "topper": []
 }
