@@ -1,0 +1,156 @@
+<div class="carousel-container">
+  <div class="carousel-arrow left-arrow">
+    <svg class="h-20 w-20 fill-white">
+      {{ partial "helper/svg.html" "chevron-left" }}
+    </svg>
+  </div>
+
+  <div class="carousel-content">
+    <div class="carousel-blurb">
+      <div class="carousel-grid">
+        <div class="carousel-title">Spotlight PA Impact Since Launch</div>
+        <div class="carousel-tagline">Economy</div>
+        <div class="carousel-text">
+          A Spotlight PA investigation into Pennsylvania’s pandemic mortgage
+          relief program found that long delays and poor communication were
+          leaving thousands in limbo, with their homes and utilities on the
+          line. The story prompted the state to fire the third-party contractor
+          that was running the program.
+        </div>
+
+        <div class="read-the-series">
+          <a
+            href="https://www.spotlightpa.org/investigations/"
+            target="_blank"
+            style="text-decoration: none; color: inherit;"
+          >
+            Read the series
+            <svg class="h-5 w-5 fill-black">
+              {{ partial "helper/svg.html" "right" }}
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-photo"></div>
+  </div>
+
+  <div class="carousel-arrow right-arrow">
+    <svg class="h-20 w-20 fill-white">
+      {{ partial "helper/svg.html" "chevron-right" }}
+    </svg>
+  </div>
+</div>
+
+<style>
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .carousel-arrow.left-arrow {
+    left: 5px;
+  }
+
+  .carousel-arrow.right-arrow {
+    right: 5px;
+  }
+
+  .carousel-arrow svg {
+    fill: #ffffff;
+  }
+
+  .carousel-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .carousel-tagline {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .carousel-text {
+    color: #ffffff;
+  }
+
+  .read-the-series a {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .read-the-series a svg {
+    margin-left: 10px;
+  }
+
+  .carousel-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-photo,
+  .carousel-blurb {
+    flex: 1;
+    height: auto;
+  }
+
+  .carousel-photo {
+    background-color: blue;
+  }
+
+  .carousel-blurb {
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-grid {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .carousel-title {
+    margin-bottom: 10px;
+  }
+
+  .carousel-text {
+    margin-bottom: 10px;
+  }
+
+  .read-the-series {
+    margin-top: 20px;
+  }
+</style>
