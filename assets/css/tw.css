@@ -396,7 +396,7 @@
 
 .award-national-state {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 10px;
 }
 
@@ -415,6 +415,16 @@
 
 .award-story-link:hover {
   @apply text-yellow;
+}
+
+#award-quote-block {
+  border-left: 3px solid #cfcfcf;
+}
+
+@media (max-width: 849px) {
+  #award-quote-block {
+    margin: 0px 1rem;
+  }
 }
 
 /*! purgecss end ignore */

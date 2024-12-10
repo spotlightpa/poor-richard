@@ -9,36 +9,45 @@
     {{ end }}
 
 
-    <div
-      data-ga-category="content"
-      class="article-content mx-auto w-full px-4 py-6 pb-4 md:w-7/12 md:px-0"
-    >
-      {{ if .Params.intro }}
-        {{ .Params.intro | markdownify }}
-      {{ end }}
-    </div>
-
-    {{ if .Params.quote }}
-      <div class="mx-auto max-w-4xl px-4 py-6">
-        <h3 class="flex items-center">
-          <span class="flex items-center text-3xl font-bold">
-            <svg class="mr-2 h-8 w-8" aria-hidden="true" style="fill: #0cb4eb;">
-              {{ partial "helper/svg.html" "quote-left" }}
-            </svg>
-            {{ .Params.quote }}
-            <svg class="mr-2 h-8 w-8" aria-hidden="true" style="fill: #0cb4eb;">
-              {{ partial "helper/svg.html" "quote-right" }}
-            </svg>
-          </span>
-        </h3>
-        {{ if .Params.quoteSource }}
-          <p class="text-gray-500 pb-16 pt-4 text-right font-normal italic">
-            {{ .Params.quoteSource }}
-          </p>
+    <div class="pb-16">
+      <div
+        data-ga-category="content"
+        class="article-content mx-auto w-full px-4 py-6 pb-10 md:w-7/12 md:px-0"
+      >
+        {{ if .Params.intro }}
+          {{ .Params.intro | markdownify }}
         {{ end }}
       </div>
-    {{ end }}
 
+      <div id="award-quote-block" class="mx-auto md:w-7/12 md:px-0">
+        <li
+          class="article-content text-3xl md:px-0"
+          style="list-style-type: none; text-decoration: none; margin-left: 50px;"
+        >
+          <blockquote>
+            <p>
+              <svg
+                class="-ml-6 -mt-2 mr-1 inline-block h-9 w-9 fill-blue"
+                aria-label="Quote"
+              >
+                {{ partial "helper/svg.html" "openquote" }}
+              </svg>
+              <span class="font-bold">{{ .Params.quote }}</span>
+              <svg
+                class="-mt-2 mr-1 inline-block h-8 w-8 fill-blue"
+                aria-label="Quote"
+              >
+                {{ partial "helper/svg.html" "closequote" }}
+              </svg>
+            </p>
+
+            <cite class="mt-4 block text-lg italic text-right"
+              >&ndash; <span>{{ .Params.quoteSource }}</span></cite
+            >
+          </blockquote>
+        </li>
+      </div>
+    </div>
 
     <div class="mb-16 h-[500px] w-full bg-beige"></div>
 
@@ -166,7 +175,20 @@
                     <div class="award-entity" data-year="{{ .year }}">
                       {{ .entity }}:
                       <span class="award-category">{{ .award_category }}</span>
-                      <p class="award-story">{{ .story }}</p>
+                      <p class="award-story">
+                        {{ if .link }}
+                          <a
+                            href="{{ .link }}"
+                            class="award-story-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {{ .story }}
+                          </a>
+                        {{ else }}
+                          {{ .story }}
+                        {{ end }}
+                      </p>
                     </div>
                   {{ end }}
                 </div>
@@ -179,7 +201,20 @@
                     <div class="award-entity" data-year="{{ .year }}">
                       {{ .entity }}:
                       <span class="award-category">{{ .award_category }}</span>
-                      <p class="award-story">{{ .story }}</p>
+                      <p class="award-story">
+                        {{ if .link }}
+                          <a
+                            href="{{ .link }}"
+                            class="award-story-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {{ .story }}
+                          </a>
+                        {{ else }}
+                          {{ .story }}
+                        {{ end }}
+                      </p>
                     </div>
                   {{ end }}
                 </div>
@@ -192,7 +227,20 @@
                     <div class="award-entity" data-year="{{ .year }}">
                       {{ .entity }}:
                       <span class="award-category">{{ .award_category }}</span>
-                      <p class="award-story">{{ .story }}</p>
+                      <p class="award-story">
+                        {{ if .link }}
+                          <a
+                            href="{{ .link }}"
+                            class="award-story-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {{ .story }}
+                          </a>
+                        {{ else }}
+                          {{ .story }}
+                        {{ end }}
+                      </p>
                     </div>
                   {{ end }}
                 </div>
@@ -205,7 +253,20 @@
                     <div class="award-entity" data-year="{{ .year }}">
                       {{ .entity }}:
                       <span class="award-category">{{ .award_category }}</span>
-                      <p class="award-story">{{ .story }}</p>
+                      <p class="award-story">
+                        {{ if .link }}
+                          <a
+                            href="{{ .link }}"
+                            class="award-story-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {{ .story }}
+                          </a>
+                        {{ else }}
+                          {{ .story }}
+                        {{ end }}
+                      </p>
                     </div>
                   {{ end }}
                 </div>
