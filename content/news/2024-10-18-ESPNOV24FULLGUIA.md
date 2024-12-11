@@ -125,7 +125,7 @@ Si se le pasa la fecha límite del 29 de octubre, todavía puede solicitar una p
 
 <h2 id="spl-heading-10">He presentado mi solicitud, pero aún no he recibido el voto por correo o en ausencia. ¿Qué debo hacer?</h2>
 
-Puede comprobar el estado de su voto por correo o en ausencia <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
+Puede comprobar el estado de su voto por correo o en ausencia <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
 
 También puede acudir a la oficina electoral de su condado para solicitar una papeleta y rellenarla, o ir a su colegio electoral y votar en persona el día de las elecciones.
 
