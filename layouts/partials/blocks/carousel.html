@@ -1,47 +1,103 @@
-<div class="carousel-container">
+<div id="carousel-container" class="carousel-container pt-16">
   <div class="carousel-arrow left-arrow">
-    <svg class="h-20 w-20 fill-white">
+    <svg class="h-16 w-16 fill-white">
       {{ partial "helper/svg.html" "chevron-left" }}
     </svg>
   </div>
 
-  <div class="carousel-content">
-    <div class="carousel-blurb">
-      <div class="carousel-grid">
-        <div class="carousel-title">Spotlight PA Impact Since Launch</div>
-        <div class="carousel-tagline">Economy</div>
-        <div class="carousel-text">
-          A Spotlight PA investigation into Pennsylvania’s pandemic mortgage
-          relief program found that long delays and poor communication were
-          leaving thousands in limbo, with their homes and utilities on the
-          line. The story prompted the state to fire the third-party contractor
-          that was running the program.
+  <div id="carousel-content" class="carousel-content">
+    {{ range $index, $item := site.Data.carousel.items }}
+      <div class="carousel-item" data-index="{{ $index }}">
+        <div class="carousel-blurb">
+          <div class="carousel-grid">
+            <div class="carousel-title">{{ $item.title }}</div>
+            <div class="carousel-tagline">{{ $item.tagline }}</div>
+            <div class="carousel-text">{{ $item.text }}</div>
+            <div class="read-the-series">
+              <a href="{{ $item.link }}" target="_blank">
+                {{ $item.linkText }}
+                <svg class="h-5 w-5 fill-black">
+                  {{ partial "helper/svg.html" "right" }}
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <div class="read-the-series">
-          <a
-            href="https://www.spotlightpa.org/investigations/"
-            target="_blank"
-            style="text-decoration: none; color: inherit;"
-          >
-            Read the series
-            <svg class="h-5 w-5 fill-black">
-              {{ partial "helper/svg.html" "right" }}
-            </svg>
-          </a>
-        </div>
+        <div class="carousel-photo"></div>
       </div>
-    </div>
-
-    <div class="carousel-photo"></div>
+    {{ end }}
   </div>
 
   <div class="carousel-arrow right-arrow">
-    <svg class="h-20 w-20 fill-white">
+    <svg class="h-16 w-16 fill-white">
       {{ partial "helper/svg.html" "chevron-right" }}
     </svg>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const carouselContent = document.getElementById("carousel-content");
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
+
+    let currentIndex = 0;
+
+    function calculateMaxHeight() {
+      let maxHeight = 0;
+      carouselItems.forEach((item) => {
+        item.style.display = "flex";
+        const height = item.scrollHeight;
+        if (height > maxHeight) {
+          maxHeight = height;
+        }
+        item.style.display = "none";
+      });
+      return maxHeight;
+    }
+
+    function setCarouselHeight() {
+      const maxHeight = calculateMaxHeight();
+      carouselContent.style.minHeight = `${maxHeight}px`;
+    }
+
+    function updateCarousel() {
+      carouselItems.forEach((item, index) => {
+        item.style.display = index === currentIndex ? "flex" : "none";
+      });
+      updateArrowStates();
+    }
+
+    function updateArrowStates() {
+      leftArrow.style.opacity = currentIndex === 0 ? "0.3" : "1";
+      leftArrow.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+
+      rightArrow.style.opacity =
+        currentIndex === carouselItems.length - 1 ? "0.3" : "1";
+      rightArrow.style.pointerEvents =
+        currentIndex === carouselItems.length - 1 ? "none" : "auto";
+    }
+
+    function navigateCarousel(direction) {
+      if (direction === "left" && currentIndex > 0) currentIndex--;
+      if (direction === "right" && currentIndex < carouselItems.length - 1)
+        currentIndex++;
+      updateCarousel();
+    }
+
+    leftArrow.addEventListener("click", () => navigateCarousel("left"));
+    rightArrow.addEventListener("click", () => navigateCarousel("right"));
+
+    setCarouselHeight();
+    updateCarousel();
+
+    window.addEventListener("resize", () => {
+      setCarouselHeight();
+      updateCarousel();
+    });
+  });
+</script>
 
 <style>
   .carousel-container {
@@ -49,6 +105,7 @@
     align-items: center;
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
 
   .carousel-arrow {
@@ -84,12 +141,19 @@
     text-transform: uppercase;
     font-weight: 600;
     width: fit-content;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.5rem;
   }
 
   .carousel-text {
     color: #ffffff;
+  }
+
+  .carousel-text::first-letter {
+    font-size: 4rem;
+    font-weight: medium;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
   }
 
   .read-the-series a {
@@ -101,9 +165,9 @@
     padding: 10px 50px;
     border-radius: 5px;
     cursor: pointer;
-    width: fit-content;
     text-decoration: none;
     color: inherit;
+    max-width: 100%;
   }
 
   .read-the-series a svg {
@@ -115,12 +179,13 @@
     flex-direction: row;
     width: 100%;
     position: relative;
+    overflow: visible;
   }
 
   .carousel-photo,
   .carousel-blurb {
     flex: 1;
-    height: auto;
+    min-height: auto;
   }
 
   .carousel-photo {
@@ -133,6 +198,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
   }
 
   .carousel-grid {
@@ -142,15 +208,12 @@
     width: 100%;
   }
 
-  .carousel-title {
-    margin-bottom: 10px;
+  .carousel-item {
+    display: none;
+    flex-direction: row;
   }
 
-  .carousel-text {
-    margin-bottom: 10px;
-  }
-
-  .read-the-series {
-    margin-top: 20px;
+  .carousel-item.flex {
+    display: flex;
   }
 </style>

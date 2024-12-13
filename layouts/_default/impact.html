@@ -9,48 +9,54 @@
     {{ end }}
 
 
-    <div class="pb-16">
-      <div
-        data-ga-category="content"
-        class="article-content mx-auto w-full px-4 py-6 pb-10 md:w-7/12 md:px-0"
-      >
-        {{ if .Params.intro }}
-          {{ .Params.intro | markdownify }}
-        {{ end }}
-      </div>
+    <div
+      data-ga-category="content"
+      class="article-content mx-auto w-full px-4 py-6 pb-10 md:w-7/12 md:px-0"
+    >
+      {{ if .Params.intro }}
+        {{ .Params.intro | markdownify }}
+      {{ end }}
+    </div>
 
-      <div id="award-quote-block" class="mx-auto md:w-7/12 md:px-0">
-        <li
-          class="article-content text-3xl md:px-0"
-          style="list-style-type: none; text-decoration: none; margin-left: 50px;"
-        >
-          <blockquote>
-            <p>
+    <div id="award-quote-block" class="mx-auto md:w-7/12 md:px-0">
+      <div
+        class="article-content text-3xl md:px-0"
+        style="text-decoration: none; margin-left: 50px;"
+      >
+        <blockquote>
+          <p>
+            <span style="white-space: nowrap;">
               <svg
                 class="-ml-6 -mt-2 mr-1 inline-block h-9 w-9 fill-blue"
                 aria-label="Quote"
               >
                 {{ partial "helper/svg.html" "openquote" }}
               </svg>
-              <span class="font-bold">{{ .Params.quote }}</span>
+              <span class="font-bold">If</span>
+            </span>
+            <span class="font-bold">
+              you live in Pennsylvania, you gotta have Spotlight
+            </span>
+            <span style="white-space: nowrap;">
+              <span class="font-bold">PA.</span>
               <svg
                 class="-mt-2 mr-1 inline-block h-8 w-8 fill-blue"
                 aria-label="Quote"
               >
                 {{ partial "helper/svg.html" "closequote" }}
               </svg>
-            </p>
+            </span>
+          </p>
 
-            <cite class="mt-4 block text-right text-lg italic"
-              >&ndash; <span>{{ .Params.quoteSource }}</span></cite
-            >
-          </blockquote>
-        </li>
+          <cite class="mt-4 block text-right text-lg italic">
+            &ndash; <span>{{ .Params.quoteSource }}</span>
+          </cite>
+        </blockquote>
       </div>
     </div>
 
     <div id="carousel-outer-container" class="mb-16">
-      {{ partial "blocks/carousel.html" . }}
+      {{ partial "blocks/carousel.html" }}
     </div>
 
     <div class="mx-auto w-full py-6 pb-4 md:w-7/12">
