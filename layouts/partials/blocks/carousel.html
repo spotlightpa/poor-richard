@@ -7,7 +7,14 @@
 
   <div id="carousel-content" class="carousel-content">
     {{ range $index, $item := site.Data.carousel.items }}
+      {{ $w := int $item.width }}
+      {{ $h := int $item.height }}
       <div class="carousel-item" data-index="{{ $index }}">
+        <img
+          class="carousel-photo"
+          src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" $w "height" $h) }}"
+          alt="{{ $item.alt }}"
+        />
         <div class="carousel-blurb">
           <div class="carousel-grid">
             <div class="carousel-title">{{ $item.title }}</div>
@@ -23,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-photo"></div>
+        <div class="carousel-right-half"></div>
       </div>
     {{ end }}
   </div>
@@ -35,185 +42,342 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const carouselItems = document.querySelectorAll(".carousel-item");
-    const carouselContent = document.getElementById("carousel-content");
-    const leftArrow = document.querySelector(".left-arrow");
-    const rightArrow = document.querySelector(".right-arrow");
+<div class="bottom-bar">
+  <div class="bottom-bar-arrows">
+    <div class="bottom-bar-arrow left-bottom-arrow">
+      <svg class="h-8 w-8 fill-white">
+        {{ partial "helper/svg.html" "chevron-left" }}
+      </svg>
+    </div>
+    <div class="bottom-bar-arrow right-bottom-arrow">
+      <svg class="h-8 w-8 fill-white">
+        {{ partial "helper/svg.html" "chevron-right" }}
+      </svg>
+    </div>
+  </div>
 
-    let currentIndex = 0;
 
-    function calculateMaxHeight() {
-      let maxHeight = 0;
-      carouselItems.forEach((item) => {
-        item.style.display = "flex";
-        const height = item.scrollHeight;
-        if (height > maxHeight) {
-          maxHeight = height;
+  <div class="bottom-bar-boxes-container">
+    <div class="boxes-wrapper">
+      {{ range seq 1 10 }}
+        <div class="box"></div>
+      {{ end }}
+    </div>
+  </div>
+  
+  {{/*  {{ range $index, $item := site.Data.carousel.items }}  
+    <div class="bottom-bar-container">
+      <img
+        class="bottom-bar-image"
+        src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 300 "height" 200) }}"
+        alt="{{ $item.alt }}"
+      />
+      <div class="bottom-bar-text">
+        <div class="bottom-bar-tagline">{{ $item.tagline }}</div>
+        <div class="bottom-bar-title">{{ $item.short }}</div>
+      </div>  
+    </div>
+  {{ end }}  */}}
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const leftArrow = document.querySelector(".left-arrow");
+      const rightArrow = document.querySelector(".right-arrow");
+
+
+      const bottomLeftArrow = document.querySelector(".left-bottom-arrow");
+      const bottomRightArrow = document.querySelector(".right-bottom-arrow");
+      const bottomBarContainer = document.querySelector(".bottom-bar-boxes-container");
+      const boxWidth = 275;
+      const boxGap = 15;
+      const boxStep = boxWidth + boxGap; 
+
+      let currentIndex = 0; 
+
+      function updateCarousel() {
+        carouselItems.forEach((item, index) => {
+          item.style.display = index === currentIndex ? "flex" : "none";
+        });
+        updateCarouselArrowStates();
+      }
+
+      function updateCarouselArrowStates() {
+        leftArrow.style.opacity = currentIndex === 0 ? "0.5" : "1";
+        leftArrow.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+        rightArrow.style.opacity = currentIndex === carouselItems.length - 1 ? "0.5" : "1";
+        rightArrow.style.pointerEvents = currentIndex === carouselItems.length - 1 ? "none" : "auto";
+      }
+
+      function navigateCarousel(direction) {
+        if (direction === "left" && currentIndex > 0) currentIndex--;
+        if (direction === "right" && currentIndex < carouselItems.length - 1) currentIndex++;
+        updateCarousel();
+      }
+
+
+      function updateBottomBarArrowStates() {
+        const maxScrollLeft = bottomBarContainer.scrollWidth - bottomBarContainer.clientWidth;
+        const currentScrollLeft = bottomBarContainer.scrollLeft;
+
+
+        if (currentScrollLeft <= 0) {
+          bottomLeftArrow.style.opacity = "0.5";
+          bottomLeftArrow.style.pointerEvents = "none";
+        } else {
+          bottomLeftArrow.style.opacity = "1";
+          bottomLeftArrow.style.pointerEvents = "auto";
         }
-        item.style.display = "none";
-      });
-      return maxHeight;
-    }
 
-    function setCarouselHeight() {
-      const maxHeight = calculateMaxHeight();
-      carouselContent.style.minHeight = `${maxHeight}px`;
-    }
 
-    function updateCarousel() {
-      carouselItems.forEach((item, index) => {
-        item.style.display = index === currentIndex ? "flex" : "none";
-      });
-      updateArrowStates();
-    }
+        if (currentScrollLeft >= maxScrollLeft - 1) { 
+          bottomRightArrow.style.opacity = "0.5";
+          bottomRightArrow.style.pointerEvents = "none";
+        } else {
+          bottomRightArrow.style.opacity = "1";
+          bottomRightArrow.style.pointerEvents = "auto";
+        }
+      }
 
-    function updateArrowStates() {
-      leftArrow.style.opacity = currentIndex === 0 ? "0.3" : "1";
-      leftArrow.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+      function navigateBottomBar(direction) {
+        if (direction === "left") {
+          bottomBarContainer.scrollBy({left: -boxStep, behavior: 'smooth'});
+        } else if (direction === "right") {
+          bottomBarContainer.scrollBy({left: boxStep, behavior: 'smooth'});
+        }
+      }
 
-      rightArrow.style.opacity =
-        currentIndex === carouselItems.length - 1 ? "0.3" : "1";
-      rightArrow.style.pointerEvents =
-        currentIndex === carouselItems.length - 1 ? "none" : "auto";
-    }
+      leftArrow.addEventListener("click", () => navigateCarousel("left"));
+      rightArrow.addEventListener("click", () => navigateCarousel("right"));
 
-    function navigateCarousel(direction) {
-      if (direction === "left" && currentIndex > 0) currentIndex--;
-      if (direction === "right" && currentIndex < carouselItems.length - 1)
-        currentIndex++;
+      bottomLeftArrow.addEventListener("click", () => navigateBottomBar("left"));
+      bottomRightArrow.addEventListener("click", () => navigateBottomBar("right"));
+
+      bottomBarContainer.addEventListener("scroll", updateBottomBarArrowStates);
+
       updateCarousel();
-    }
+      updateBottomBarArrowStates();
 
-    leftArrow.addEventListener("click", () => navigateCarousel("left"));
-    rightArrow.addEventListener("click", () => navigateCarousel("right"));
-
-    setCarouselHeight();
-    updateCarousel();
-
-    window.addEventListener("resize", () => {
-      setCarouselHeight();
-      updateCarousel();
+      window.addEventListener("resize", () => {
+        updateCarousel();
+        updateBottomBarArrowStates();
+      });
     });
-  });
-</script>
+  </script>
 
-<style>
-  .carousel-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
+  <style>
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
 
-  .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    cursor: pointer;
-  }
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      cursor: pointer;
+    }
 
-  .carousel-arrow.left-arrow {
-    left: 5px;
-  }
+    .carousel-arrow.left-arrow {
+      left: 5px;
+    }
 
-  .carousel-arrow.right-arrow {
-    right: 5px;
-  }
+    .carousel-arrow.right-arrow {
+      right: 5px;
+    }
 
-  .carousel-arrow svg {
-    fill: #ffffff;
-  }
+    .carousel-arrow svg {
+      fill: #ffffff;
+    }
 
-  .carousel-title {
-    font-size: 2.5rem;
-    color: #ffffff;
-    font-weight: bold;
-  }
+    .carousel-title {
+      font-size: 2.5rem;
+      color: #ffffff;
+      font-weight: bold;
+    }
 
-  .carousel-tagline {
-    font-size: 0.75rem;
-    line-height: 1rem;
-    background-color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    width: fit-content;
-    padding: 0.5rem;
-  }
+    .carousel-tagline {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      background-color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: fit-content;
+      padding: 0.5rem;
+    }
 
-  .carousel-text {
-    color: #ffffff;
-  }
+    .carousel-text {
+      color: #fff;
+    }
 
-  .carousel-text::first-letter {
-    font-size: 4rem;
-    font-weight: medium;
-    float: left;
-    margin-right: 5px;
-    line-height: 1;
-  }
+    .carousel-text::first-letter {
+      font-size: 4rem;
+      font-weight: medium;
+      float: left;
+      margin-right: 5px;
+      line-height: 1;
+    }
 
-  .read-the-series a {
-    display: inline-flex;
-    align-items: center;
-    font-weight: bold;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 10px 50px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    max-width: 100%;
-  }
+    .read-the-series a {
+      display: inline-flex;
+      align-items: center;
+      font-weight: bold;
+      background-color: #fff;
+      text-align: center;
+      padding: 10px 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      max-width: 100%;
+    }
 
-  .read-the-series a svg {
-    margin-left: 10px;
-  }
+    .read-the-series a svg {
+      margin-left: 10px;
+    }
 
-  .carousel-content {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-    overflow: visible;
-  }
+    .carousel-content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      position: relative;
+      overflow: visible;
+    }
 
-  .carousel-photo,
-  .carousel-blurb {
-    flex: 1;
-    min-height: auto;
-  }
+    .carousel-item {
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
 
-  .carousel-photo {
-    background-color: blue;
-  }
+    .carousel-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
 
-  .carousel-blurb {
-    padding: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-  }
+    .carousel-blurb {
+      position: relative;
+      z-index: 2;
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 100px;
+    }
 
-  .carousel-grid {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 20px;
-    width: 100%;
-  }
+    .carousel-right-half {
+      flex: 1;
+      position: relative;
+      z-index: 2;
+      background: transparent;
+    }
 
-  .carousel-item {
-    display: none;
-    flex-direction: row;
-  }
+    .carousel-grid {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+      width: 100%;
+    }
 
-  .carousel-item.flex {
-    display: flex;
-  }
-</style>
+    @media (max-width: 815px) {
+      .carousel-item {
+        flex-direction: column;
+      }
+
+      .carousel-blurb {
+        order: 1;
+        padding: 80px;
+      }
+
+      .carousel-right-half {
+        order: 2;
+        min-height: 200px;
+      }
+
+      .carousel-title {
+        font-size: 1.5rem;
+      }
+
+      .carousel-text::first-letter {
+        font-size: 2rem;
+        float: none;
+        margin-right: 0;
+      }
+
+      .read-the-series a {
+        padding: 10px 20px;
+      }
+    }
+
+    .bottom-bar {
+      background: #545454;
+      width: 100%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bottom-bar-arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+      z-index: 3; 
+    }
+
+    .bottom-bar-arrow {
+      cursor: pointer;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .bottom-bar-arrow svg {
+      fill: #ffffff;
+    }
+
+    .bottom-bar-boxes-container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 80px;
+      right: 80px;
+      height: 150px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      z-index: 2;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; 
+    }
+
+    .bottom-bar-boxes-container::-webkit-scrollbar {
+      display: none; 
+    }
+
+    .boxes-wrapper {
+      display: inline-flex;
+      gap: 15px;
+    }
+
+    .box {
+      background: grey;
+      width: 275px;
+      height: 150px;
+      flex: 0 0 auto;
+    }
+  </style>
+</div>
