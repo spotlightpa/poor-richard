@@ -3,18 +3,21 @@ authors = ["Ed Mahon"]
 blurb = "The data could help identify outliers who might be bending or breaking Pennsylvania’s medical marijuana law."
 byline = "Ed Mahon of Spotlight PA"
 description = "The court’s decision comes more than a year after Spotlight PA’s initial request for data related to medical marijuana certifications."
+feed-exclude = false
 image = "external/p6hzphdq41etkabqv29crt9ezc.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "An illustration of a marijuana leaf."
 internal-id = "SPL_DOC_DATA"
 kicker = "Medical Marijuana"
 modal-exclude = false
+pinned = false
 published = 2023-11-22T05:00:00-05:00
+series = ["Unproven, Unsafe"]
 slug = "medical-marijuana-doctor-data-ordered-released"
 suppress-date = false
 title = "Court orders Pa. health department to release doctor data for medical marijuana certifications"
 title-tag = "Court orders release of Pa. medical marijuana data"
-topics = ["Medical Marijuana"]
+topics = ["Medical Marijuana", "Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
