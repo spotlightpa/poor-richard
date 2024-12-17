@@ -3,6 +3,7 @@ authors = ["Ed Mahon"]
 blurb = "Anxiety disorders are the leading reason doctors approve patients for a medical marijuana card in Pennsylvania. If you’re considering using cannabis for anxiety, here are some useful resources."
 byline = "Ed Mahon of Spotlight PA"
 description = "Anxiety disorders are the top reason for obtaining a medical marijuana card in Pennsylvania. However, evidence of the drug’s effectiveness is mixed."
+feed-exclude = false
 image = "external/p6hzphdq41etkabqv29crt9ezc.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "A stylized illustration of a marijuana leaf"
@@ -11,11 +12,12 @@ kicker = "Medical Marijuana"
 modal-exclude = false
 pinned = false
 published = 2024-01-04T04:00:00-05:00
+series = ["Unproven, Unsafe"]
 slug = "pennsylvania-medical-marijuana-anxiety-research-qualifying-conditions"
 suppress-date = false
 title = "Pa. medical marijuana cards and anxiety: What the research says"
 title-tag = "Is medical marijuana effective for anxiety disorders?"
-topics = ["Medical Marijuana"]
+topics = ["Medical Marijuana", "Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
