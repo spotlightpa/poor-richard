@@ -2,7 +2,7 @@
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idTip := partial "helper/new-id" . }}
 
-{{ $tip := .Get "tip_text" | htmlUnescape | default `` }}
+{{ $tip := .Get "tip_text" | htmlUnescape | safeHTML | default `` }}
 {{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
 {{ $formName := .Get "form_name" | htmlUnescape | default `contact-page` }}
 
