@@ -11,7 +11,7 @@ internal-id = "spl_advertising_0622"
 kicker = "Medical marijuana"
 modal-exclude = false
 published = 2023-06-28T05:00:00-04:00
-series = ["Unproven, Unsafe"]
+series = ["Cannabis Card Game"]
 slug = "medical-marijuana-advertising-ban-end"
 suppress-date = false
 title = "Medical marijuana law update would lift the advertising ban on Pa. doctors"
@@ -110,4 +110,3 @@ But he had a nuanced position about lifting the advertising ban on doctors. Thou
 “I think that’s wrong. I think it’s disingenuous,” Hanley told Spotlight PA. “And I think having something like this is probably the lesser of the two evils, that’s for sure.”<strong><em></em></strong>
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
