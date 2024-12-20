@@ -101,7 +101,7 @@ The duty goes beyond just answering questions, Schmidt said. Every election offi
 
 Whether the increased trust in elections sticks is still an open question. While the public’s confidence may have increased, there were still pockets of doubt in the post-election period that raise concerns. Republicans pointed to votes taken by boards of elections to count undated mail ballots as an attempt to steal the U.S. Senate race in Pennsylvania; some liberals turned toward conspiracy theories to explain Kamala Harris’ loss; and Trump and his allies haven’t abandoned the notion that the 2020 election was stolen.
 
-“I think everyone, including myself, took for granted the stability of our electoral process in the United States, and that was shaken a little bit in 2020,” Schmidt said. “We should be grateful to see the resurgence in confidence in our Democratic process. But we shouldn&#39;t take it for granted. We saw just several years ago that that can be easily shaken.”
+“I think everyone, including myself, took for granted the stability of our electoral process in the United States, and that was shaken a little bit in 2020,” Schmidt said. “We should be grateful to see the resurgence in confidence in our democratic process. But we shouldn&#39;t take it for granted. We saw just several years ago that that can be easily shaken.”
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at cwalker@votebeat.org.</em>
 
