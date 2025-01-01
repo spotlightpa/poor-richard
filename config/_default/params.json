@@ -74,12 +74,16 @@
   "river-promo-mobile-width": 500,
   "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
-  "sidebar-sticky-images": [],
+  "sidebar-sticky-images": [
+    "https://files.data.spotlightpa.org/uploads/01kq/ajj0/newsmatch-2023-squares-1-.gif"
+  ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
-  "sidebar-top-images": [],
+  "sidebar-top-images": [
+    "https://files.data.spotlightpa.org/uploads/01kq/ajj0/newsmatch-2023-squares-1-.gif"
+  ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-top-width": 300,
   "sticky-active": true,
@@ -96,7 +100,7 @@
   "support-hed": "Before you go, a quick request....",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We're sorry to interrupt, but please don't skip this 1-minute read.  I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can only continue to do it with your support.\n\nThere is no one quite like Spotlight PA.\n\nWe are independent, beholden to no corporate interests or profit motives. We’re strictly nonpartisan, with no political agenda, policy preferences, or opinion pieces. And we are a nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you.\n\nOur talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable. In short, we exist to serve you — but we can't continue without you.\n\nThank you.\n\nChristopher Baxter\nCEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
+  "support-text": "We're sorry to interrupt, but please don't skip this 1-minute read.  I hope you enjoyed this article. This kind of reporting takes a lot of time and resources, and we can only continue to do it in 2025 with your support today.\n\nThere is no one quite like Spotlight PA.\n\nWe are independent, beholden to no corporate interests or profit motives. We’re strictly nonpartisan, with no political agenda, policy preferences, or opinion pieces. And we are a nonprofit, allowing us to offer all of our journalism at no cost thanks to the generosity of readers like you.\n\nOur talented journalists produce stories you won’t find anywhere else, tracking our hard-earned tax dollars, exploring hugely consequential policy decisions, and holding our elected officials accountable. In short, we exist to serve you — but we can't continue without you.\n\nThank you.\n\nChristopher Baxter\nCEO/President, Spotlight PA\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA,\nPO Box 11728,\nHarrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "Independent, nonpartisan, no-nonsense reporting urgently needs your support. Give to Spotlight PA today \u0026 get your contribution TRIPLED »",
@@ -106,12 +110,16 @@
   "topper-active": true,
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
-  "topper-desktop-images": [],
+  "topper-desktop-images": [
+    "https://files.data.spotlightpa.org/uploads/01kq/ajhz/newsmatch-2023-tracker-banners.gif"
+  ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "Support Spotlight PA and for our year-end member drive, your gift will be TRIPLED.",
+  "topper-image-description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
   "topper-mobile-height": 512,
-  "topper-mobile-images": [],
+  "topper-mobile-images": [
+    "https://files.data.spotlightpa.org/uploads/01kq/ajhs/campaign-trackers-week-of-giving-1024-512-px-.gif"
+  ],
   "topper-mobile-width": 1024
 }
