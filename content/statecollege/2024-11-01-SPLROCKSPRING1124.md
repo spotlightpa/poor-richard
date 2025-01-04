@@ -14,6 +14,7 @@ modal-exclude = false
 og-title = "Owner of Pa. water company facing state investigation says he wants to sell"
 pinned = false
 published = 2024-11-01T04:00:00-04:00
+series = ["Rocky Waters"]
 slug = "rural-pennsylvania-rock-spring-water-company-centre-county-public-utilities-commission"
 suppress-date = false
 title = "Owner of troubled rural Pa. water company facing state investigation says he wants to sell"
