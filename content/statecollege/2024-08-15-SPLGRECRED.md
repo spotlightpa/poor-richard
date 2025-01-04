@@ -13,6 +13,7 @@ modal-exclude = false
 og-title = "Township missing $532K in public funds won’t say if it had financial safeguards in place"
 pinned = false
 published = 2024-08-15T09:45:00-04:00
+series = ["Half-Million Heist"]
 slug = "gregg-township-centre-county-local-government-misuse-public-funds-credit-card-policy"
 suppress-date = false
 title = "Did Pa. township missing $532K in taxpayer dollars have financial safeguards? Officials won't say."
