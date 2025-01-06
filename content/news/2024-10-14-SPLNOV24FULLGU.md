@@ -168,7 +168,7 @@ Pennsylvania’s U.S. Senate election is expected to be one of the most expensiv
 
 Currently, a narrow two-seat margin gives Democrats control of the chamber, but with <a href="https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 Democratic senators</a> on the ballot this year, that balance could easily shift.
 
-After an uncontested primary, Pennsylvania’s U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two major party candidates</a>: three-term Democratic incumbent <a href="https://www.casey.senate.gov/about/bob">Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+After an uncontested primary, Pennsylvania’s U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two major party candidates</a>: three-term Democratic incumbent <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
 Casey is a Scranton native who has held the seat since 2007, making him the <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">longest-serving Democratic U.S. senator</a> in Pennsylvania history. If reelected, it would be his fourth term. Before his Senate election, Casey served as Pennsylvania’s auditor general, then treasurer. His father, Bob Casey Sr., was a two-term Pennsylvania governor.
 
