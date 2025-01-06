@@ -4,6 +4,7 @@ authors = ["Kate Huangpu", "Ethan Edward Coston"]
 blurb = "The GOP field for Pennsylvania’s 2022 primary governor election remains crowded, while Democrats will see just one choice on the ballot."
 byline = "Kate Huangpu of Spotlight PA and Ethan Edward Coston of Spotlight PA"
 description = "The GOP field for Pennsylvania’s 2022 primary governor election remains crowded, while Democrats will see just one choice on the ballot."
+feed-exclude = false
 image = "external/gzq8jsbnppf4mjewb11der8zb8.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "Here’s what you need to know about the 2022 primary governor election before going to the polls."
@@ -12,6 +13,7 @@ internal-id = "SPLGUVGUIDE"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-04-18T05:00:00-04:00
 slug = "pa-primary-governor-election-2022-candidates-guide"
 suppress-date = false
@@ -211,7 +213,7 @@ In <a href="https://web.archive.org/20220418164116/https://www.davewhiteforgover
 
 <b>Read more:</b>
 
-- PoliticsPA: <a href="https://www.politicspa.com/who-is-dave-white-and-why-is-he-doing-so-well/99728/">Who is Dave White and Why Is He Doing So Well?</a>
+- PoliticsPA: <a href="https://web.archive.org/20220203225150/https://www.politicspa.com/who-is-dave-white-and-why-is-he-doing-so-well/99728/">Who is Dave White and Why Is He Doing So Well?</a>
 
 {{<picture src="external/pmeatgvnr2hsmdvsyptvfmty1m.jpeg" description="Nche Zama is a cardiothoracic surgeon who lives in the Poconos and immigrated to the United States from Cameroon as a teenager on a student visa. " caption="Nche Zama is a cardiothoracic surgeon who lives in the Poconos and immigrated to the United States from Cameroon as a teenager on a student visa. " credit="Courtesy Nche Zama campaign">}} 
 
