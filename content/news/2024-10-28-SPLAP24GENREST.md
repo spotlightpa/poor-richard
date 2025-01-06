@@ -84,7 +84,7 @@ Four candidates for president appear on Pennsylvania’s ballot: Republican Dona
 
 <h2 id="spl-heading-3">U.S. Senate</h2>
 
-Democratic incumbent and three-term <a href="https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a> is facing Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>. Also in the race are third-party candidates <a href="https://www.leilaforsenate.com/">Leila Hazou</a> (Green Party), <a href="https://www.martyselkerforsenate.com/">Marty Selker</a> (Constitution Party), and <a href="https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertarian).
+Democratic incumbent and three-term <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a> is facing Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>. Also in the race are third-party candidates <a href="https://www.leilaforsenate.com/">Leila Hazou</a> (Green Party), <a href="https://www.martyselkerforsenate.com/">Marty Selker</a> (Constitution Party), and <a href="https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertarian).
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/20061.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
