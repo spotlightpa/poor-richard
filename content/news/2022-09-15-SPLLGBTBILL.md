@@ -88,7 +88,7 @@ Aument and Martin’s bill would not explicitly ban classroom instruction on LGB
 
 Critics have noted that those terms include cisgender and heterosexual relationships. But in remarks on the state Senate floor, Martin made it clear the bill was a response to parental concerns about “inappropriate conversations about sexual preferences and gender transitioning.”
 
-Among the <a href="https://www.senatoraument.com/empowering-families-in-education/">specific concerns cited by the senators</a>:
+Among the <a href="https://web.archive.org/20220608222610/https://www.senatoraument.com/empowering-families-in-education/">specific concerns cited by the senators</a>:
 
 - An elementary school class read books about gender after a classmate came out as transgender.
 
@@ -110,7 +110,7 @@ Discussions of gender and sexual orientation are not simply “sex ed,” and eq
 
 ## ‘Parental rights’ v. student well-being
 
-Aument and Martin have argued that parents rather than schools should choose when and how to discuss gender identity and sexual orientation with kids, and that these discussions should only happen when a child is “<a href="https://www.senatoraument.com/empowering-families-in-education/">mature enough</a>” to understand the topic.
+Aument and Martin have argued that parents rather than schools should choose when and how to discuss gender identity and sexual orientation with kids, and that these discussions should only happen when a child is “<a href="https://web.archive.org/20220608222610/https://www.senatoraument.com/empowering-families-in-education/">mature enough</a>” to understand the topic.
 
 “Our bill empowers parents to educate their own children about these sensitive topics at their own pace without having their hand forced by the public school system,” the senators said in a statement. “While we may not agree on what moral, ideological, and religious values to teach or not to teach our children, we can certainly agree that it should be up to the parent to decide — not the government.”
 
