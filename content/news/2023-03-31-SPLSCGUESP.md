@@ -65,7 +65,7 @@ El 4 de abril es la <a href="https://www.dos.pa.gov/VotingElections/CandidatesCo
 
 {{<picture src="external/kjfgtkv1s32n25bf01etzp730w.jpeg" description="Deborah A. Kunselman" caption="Deborah A. Kunselman" credit="Via candidate ">}}
 
-<a href="https://kunselmanforpa.com/?fbclid=IwAR38Na06Z1j2CbamdmCXNFNk2vurhcNS1-UWuEZEtQf9jTtd79RINEl5xzU">Deborah Kunselman</a>
+<a href="https://web.archive.org/web/20230317192345/https://kunselmanforpa.com/">Deborah Kunselman</a>
 
 Kunselman está basada en el condado de Beaver. Comenzó su carrera judicial con una elección al Tribunal de Causas Comunes del condado en 2005, y ganó un puesto en la Corte Superior en 2017.
 
