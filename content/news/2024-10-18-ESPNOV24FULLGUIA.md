@@ -219,7 +219,7 @@ Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/09/pensilva
 
 <h2 id="spl-heading-18">¿Qué más habrá en mi papeleta?</h2>
 
-No hay medidas de votación a nivel estatal este año, pero algunos votantes podrán ver alguna pregunta de voto local en su papeleta. <a href="https://chescodems.org/2024G/735_E_WHITELAND_1.pdf">El municipio de East Whiteland en el condado de Chester</a>, por ejemplo, tendrá una. <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">Consulte con la oficina electoral de su condado para estar seguro</a>.
+No hay medidas de votación a nivel estatal este año, pero algunos votantes podrán ver alguna pregunta de voto local en su papeleta. <a href="https://chescodems.org/2024G/735_E_WHITELAND_1.pdf">El municipio de East Whiteland en el condado de Chester</a>, por ejemplo, tendrá una. <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">Consulte con la oficina electoral de su condado para estar seguro</a>.
 
 Si desea ver un modelo de papeleta, puede utilizar la <a href="https://viz-sample-ballot-2024.data.spotlightpa.org/">herramienta de</a> Spotlight PA.
 
