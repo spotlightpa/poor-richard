@@ -1,5 +1,5 @@
 +++
-aliases = ["/news/2023/03/pa-primarias-elección-2023-corte-suprema/"]
+aliases = ["/news/2023/03/pa-primarias-elección-2023-corte-suprema/", "/news/2023/03/pa-primarias-elecci%C3%B3n-2023-corte-suprema/"]
 arc-id = "QURCDJ5ZYFARNH6OUCR62ZQOPA"
 authors = ["Kate Huangpu"]
 blurb = "Durante las elecciones primarias del 16 de mayo, demócratas y republicanos votarán por los candidatos para ocupar un puesto en la Corte Suprema de Pensilvania."
@@ -21,6 +21,7 @@ suppress-date = false
 title = "Elecciones primarias Pa. 2023: Guía completa de los candidatos a la Corte Suprema del Estado"
 title-tag = "Guía para las elecciones primarias a la Corte Suprema de PA 2023"
 topics = ["Español", "Elections"]
+url = "/news/2023/03/pa-primarias-eleccion-2023-corte-suprema/"
 +++
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
