@@ -17,13 +17,12 @@
   "subfeatures": [
     "content/news/2023-01-05-SPLHOURULES.md",
     "content/news/2023-01-03-SPLNEWSPEAK.md",
-    "content/news/2023-04-12-SPLHOWMAJ.md",
-    "content/news/2025-01-03-SPLSPECEXCOSTS0125.md"
+    "content/news/2023-04-12-SPLHOWMAJ.md"
   ],
   "topSlots": [
+    "content/news/2025-01-07-SPLMEMOS0125.md",
     "content/news/2025-01-03-SPLSPECEXCOSTS0125.md",
-    "content/news/2025-01-02-SPLNEWSQUIZJAN0225.md",
-    "content/news/2024-12-30-SPLBESTINVEST1224.md"
+    "content/news/2024-12-31-spl_tvdocs1224.md"
   ],
   "topper": []
 }
