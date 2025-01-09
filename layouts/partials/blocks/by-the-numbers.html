@@ -1,24 +1,231 @@
 <div id="numbers-bar">
-
-<div class="numbers-bar-item"></div>
-
+  <div class="numbers-bar-item" id="first-div">
+    <div class="bar-content">
+      <div class="circle">
+        <span id="first-circle" class="circle-text">+163</span>
+      </div>
+      Reader tips
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="numbers-bar-item" id="second-div">
+    <div class="bar-content">
+      <div class="circle">
+        <span id="second-circle" class="circle-text">228</span>
+      </div>
+      Text goes here
+    </div>
+  </div>
 </div>
 
 <div id="numbers-page">
+  <div class="grid-container">
+    <div class="grid-item impact-numbers-title">
+      <div class="grey-bar"></div>
+      <span>Impact by the Numbers</span>
+    </div>
+    <div class="grid-item first-impact-block">
+      <div class="first-impact-symbol"></div>
+      <div class="first-impact-text">Policies changed</div>
+    </div>
+    <div class="grid-item impact-numbers-graf">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+      iaculis mauris. Curabitur non nulla sit amet nisl tempus convallis quis ac
+      lectus. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere
+      blandit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
+      accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus
+      et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet
+      aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero
+      malesuada feugiat.
+    </div>
+    <div class="grid-item second-impact-block">
+      <div class="second-impact-symbol"></div>
+      <div class="second-impact-text">Bills Introduced</div>
+    </div>
+  </div>
 </div>
 
-
-
 <style>
-
-#numbers-bar {
+  #numbers-bar {
     background-color: #ffcb03;
-    height: 170px;
-}
+    height: 150px;
+    display: flex;
+    font-family: 'Merriweather', serif;
+  }
 
-#numbers-page {
+  .numbers-bar-item {
+    height: 100%;
+  }
+
+  #first-div {
+    width: 50%;
+  }
+
+  #second-div {
+    width: 50%;
+  }
+
+  .bar-content {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle-text {
+    color: black;
+    font-weight: bold;
+    font-size: 64px;
+  }
+
+  #first-circle {
+    margin-left: -50px;
+  }
+
+  #second-circle {
+    margin-left: -20px;
+  }
+
+  .divider {
+    width: 3px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #numbers-page {
     background-color: #000;
     height: 550px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .impact-numbers-title {
+    background-color: black;
+    padding: 50px 50px 25px 50px;
+    color: white;
+    font-size: 4.5em;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    position: relative;
+  }
+
+  .grey-bar {
+    background-color: #545454;
+    height: 60px;
+    width: calc(100% - 100px);
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .impact-numbers-title span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .first-impact-block {
+    {{/*  background-color: blue;  */}}
+    position: relative;
+  }
+
+  .first-impact-symbol {
+    width: 60%;
+    height: 40%;
+    background-color: yellow;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+
+  .first-impact-text {
+    width: 60%;
+    height: 20%;
+    background-color: #ffcb03    ;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .impact-numbers-graf {
+    {{/*  background-color: green;  */}}
+    padding: 25px 50px 50px 50px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .second-impact-block {
+    {{/*  background-color: yellow;  */}}
+    position: relative;
+  }
+
+  .second-impact-symbol {
+    width: 60%;
+    height: 40%;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+
+  .second-impact-text {
+    width: 60%;
+    height: 20%;
+    background-color: #ffcb03
+
+    ;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 4px;
+  }
 </style>
