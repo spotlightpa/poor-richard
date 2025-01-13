@@ -2,67 +2,80 @@
   <div class="numbers-bar-item" id="first-div">
     <div class="bar-content">
       <div class="circle">
-        <span id="first-circle" class="circle-text">+163</span>
+        <span id="first-circle" class="circle-text">35</span>
       </div>
-      Reader tips
+      Policies Changed
     </div>
   </div>
   <div class="divider"></div>
   <div class="numbers-bar-item" id="second-div">
     <div class="bar-content">
       <div class="circle">
-        <span id="second-circle" class="circle-text">228</span>
+        <span id="second-circle" class="circle-text">14</span>
       </div>
-      Text goes here
+      Bills Introduced
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="numbers-bar-item" id="third-div">
+    <div class="bar-content">
+      <div class="circle">
+        <span id="third-circle" class="circle-text">8</span>
+      </div>
+      Legal Victories
     </div>
   </div>
 </div>
 
-<div id="numbers-page">
+
+<div id="numbers-page" class="pb-16">
   <div class="grid-container">
     <div class="grid-item impact-numbers-title">
       <div class="grey-bar"></div>
-      <span>Impact by the Numbers</span>
+      <span>Journalism that Gets Results</span>
     </div>
     <div class="grid-item first-impact-block">
-      <div class="first-impact-symbol"></div>
-      <div class="first-impact-text">Policies changed</div>
+      <div class="first-impact-symbol">
+
+        <svg aria-hidden="true" style="fill: #ffcb03;">
+          {{ partial "helper/svg.html" "envelope" }}
+        </svg>
+
+
+      </div>
+      <div class="first-impact-text">Reader Tips</div>
     </div>
     <div class="grid-item impact-numbers-graf">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-      iaculis mauris. Curabitur non nulla sit amet nisl tempus convallis quis ac
-      lectus. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere
-      blandit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
-      accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet
-      aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero
-      malesuada feugiat.
+      Spotlight PA's investigative and public-service journalism changes laws and lives. Our reporting drives government accountability and transparency at all levels, provides an independent check on power and influence, and  has saved Pennsylvania taxpayers millions of dollars.
     </div>
     <div class="grid-item second-impact-block">
-      <div class="second-impact-symbol"></div>
-      <div class="second-impact-text">Bills Introduced</div>
+      <div class="second-impact-symbol">    
+        
+        <svg aria-hidden="true" style="fill: #ffcb03;">
+        {{ partial "helper/svg.html" "gavel" }}
+      </svg>
+
+    </div>
+      <div class="second-impact-text">Right to Know Requests</div>
     </div>
   </div>
 </div>
+</div>
+
+
 
 <style>
+
   #numbers-bar {
     background-color: #ffcb03;
-    height: 150px;
+    height: 120px;
     display: flex;
     font-family: 'Merriweather', serif;
   }
 
   .numbers-bar-item {
     height: 100%;
-  }
-
-  #first-div {
-    width: 50%;
-  }
-
-  #second-div {
-    width: 50%;
+    width: 33%;
   }
 
   .bar-content {
@@ -77,8 +90,8 @@
   }
 
   .circle {
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 85px;
     background-color: white;
     border-radius: 50%;
     margin-right: 10px;
@@ -94,11 +107,15 @@
   }
 
   #first-circle {
-    margin-left: -50px;
+    margin-left: 10px;
   }
 
   #second-circle {
-    margin-left: -20px;
+    margin-left: 10px;
+  }
+
+  #third-circle {
+    margin-left: 20px;
   }
 
   .divider {
@@ -107,6 +124,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
 
   #numbers-page {
     background-color: #000;
@@ -121,7 +139,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0;
     width: 100%;
     height: 100%;
   }
@@ -135,11 +152,13 @@
     background-color: black;
     padding: 50px 50px 25px 50px;
     color: white;
-    font-size: 4.5em;
+    font-size: 3.5em;
     text-align: left;
     font-weight: bold;
     font-family: 'Merriweather', serif;
     position: relative;
+    max-width: 640px;
+    background-color: red;
   }
 
   .grey-bar {
@@ -151,6 +170,7 @@
     left: 50px;
     z-index: 1;
     border-radius: 50%;
+    max-width: 470px;
   }
 
   .impact-numbers-title span {
@@ -159,14 +179,13 @@
   }
 
   .first-impact-block {
-    {{/*  background-color: blue;  */}}
     position: relative;
+    background-color: green;
   }
 
   .first-impact-symbol {
     width: 60%;
     height: 40%;
-    background-color: yellow;
     position: absolute;
     top: 20%;
     left: 20%;
@@ -175,7 +194,7 @@
   .first-impact-text {
     width: 60%;
     height: 20%;
-    background-color: #ffcb03    ;
+    background-color: #ffcb03;
     position: absolute;
     top: 65%;
     left: 20%;
@@ -190,21 +209,21 @@
   }
 
   .impact-numbers-graf {
-    {{/*  background-color: green;  */}}
     padding: 25px 50px 50px 50px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    max-width: 640px;
+    background-color: blue;
   }
 
   .second-impact-block {
-    {{/*  background-color: yellow;  */}}
     position: relative;
+    background-color: purple;
   }
 
   .second-impact-symbol {
     width: 60%;
     height: 40%;
-    background-color: blue;
     position: absolute;
     top: 20%;
     left: 20%;
@@ -228,4 +247,16 @@
     text-align: center;
     border-radius: 4px;
   }
+
+  .first-impact-symbol, .second-impact-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .first-impact-symbol svg, .second-impact-symbol svg {
+    width: 110px;
+    height: 110px;
+  }
+  
 </style>
