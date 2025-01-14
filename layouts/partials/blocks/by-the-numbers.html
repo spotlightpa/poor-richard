@@ -1,3 +1,5 @@
+<div id="by-the-numbers-wrapper">
+
 <div id="numbers-bar">
   <div class="numbers-bar-item" id="first-div">
     <div class="bar-content">
@@ -36,15 +38,14 @@
     </div>
     <div class="grid-item first-impact-block">
       <div class="first-impact-symbol">
-
         <svg aria-hidden="true" style="fill: #ffcb03;">
           {{ partial "helper/svg.html" "envelope" }}
         </svg>
-
-
       </div>
+      <div class="symbol-number">3,000+</div>
       <div class="first-impact-text">Reader Tips</div>
     </div>
+    
     <div class="grid-item impact-numbers-graf">
       Spotlight PA's investigative and public-service journalism changes laws and lives. Our reporting drives government accountability and transparency at all levels, provides an independent check on power and influence, and  has saved Pennsylvania taxpayers millions of dollars.
     </div>
@@ -56,21 +57,25 @@
       </svg>
 
     </div>
+    <div class="symbol-number">1,400+</div>
       <div class="second-impact-text">Right to Know Requests</div>
     </div>
   </div>
 </div>
 </div>
 
-
+</div>
 
 <style>
+
+  #by-the-numbers-wrapper {
+    font-family: 'Merriweather', serif;
+  }
 
   #numbers-bar {
     background-color: #ffcb03;
     height: 120px;
     display: flex;
-    font-family: 'Merriweather', serif;
   }
 
   .numbers-bar-item {
@@ -85,7 +90,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-family: 'Merriweather', serif;
     font-size: 1.4em;
   }
 
@@ -128,7 +132,7 @@
 
   #numbers-page {
     background-color: #000;
-    height: 550px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,15 +154,14 @@
 
   .impact-numbers-title {
     background-color: black;
-    padding: 50px 50px 25px 50px;
+    padding: 50px 50px 25px 100px;
     color: white;
     font-size: 3.5em;
     text-align: left;
     font-weight: bold;
-    font-family: 'Merriweather', serif;
     position: relative;
     max-width: 640px;
-    background-color: red;
+    {{/*  background-color: red;  */}}
   }
 
   .grey-bar {
@@ -166,8 +169,8 @@
     height: 60px;
     width: calc(100% - 100px);
     position: absolute;
-    bottom: 25px;
-    left: 50px;
+    bottom: 35px;
+    left: 90px;
     z-index: 1;
     border-radius: 50%;
     max-width: 470px;
@@ -180,24 +183,36 @@
 
   .first-impact-block {
     position: relative;
-    background-color: green;
+    {{/*  background-color: green;  */}}
   }
 
   .first-impact-symbol {
     width: 60%;
     height: 40%;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 20%;
   }
 
-  .first-impact-text {
-    width: 60%;
+  .symbol-number {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5em; 
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+  .first-impact-text, .second-impact-text {
+    width: 50%;
     height: 20%;
     background-color: #ffcb03;
     position: absolute;
-    top: 65%;
-    left: 20%;
+    top: 80%;
+    left: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,43 +224,24 @@
   }
 
   .impact-numbers-graf {
-    padding: 25px 50px 50px 50px;
+    padding: 25px 50px 50px 100px;
     color: white;
     font-size: 18px;
     max-width: 640px;
-    background-color: blue;
+    {{/*  background-color: blue;  */}}
   }
 
   .second-impact-block {
     position: relative;
-    background-color: purple;
+    {{/*  background-color: purple;  */}}
   }
 
   .second-impact-symbol {
     width: 60%;
     height: 40%;
     position: absolute;
-    top: 20%;
+    top: 25px;
     left: 20%;
-  }
-
-  .second-impact-text {
-    width: 60%;
-    height: 20%;
-    background-color: #ffcb03
-
-    ;
-    position: absolute;
-    top: 65%;
-    left: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: black;
-    font-size: 1.4em;
-    text-align: center;
-    border-radius: 4px;
   }
 
   .first-impact-symbol, .second-impact-symbol {
@@ -255,8 +251,8 @@
   }
   
   .first-impact-symbol svg, .second-impact-symbol svg {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
   }
   
 </style>
