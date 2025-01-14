@@ -11,13 +11,9 @@ dek = "Candidates for president, U.S. House and Senate, row offices, and more wi
 extended-kicker = "Pa. Election Center 2024"
 linktitle = "Everything you need to prepare for Pa.’s 2024 election"
 blurb = "Spotlight PA wants to empower voters to make an informed decision on May 16. Our new Election Center features key dates, a campaign finance tracker, in-depth coverage, and more."
-url = "/elections-2024/"
+url = "/elections/2024/"
 aliases = [
-    "/election/",
-    "/elections/",
-    "/elections-2023/",
-    "/elections/contest/",
-    "/pa-election-2024/",
+  "/pa-election-2024/"
 ]
 layout = "page-landing"
 type = "elections"
