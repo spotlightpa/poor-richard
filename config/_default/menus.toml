@@ -172,20 +172,24 @@ url = "/support/"
 weight = 1
 
 [[support]]
+name = "Manage Your Membership"
+url = "https://spotlightpa.donorsupport.co"
+weight = 2
+
+[[support]]
 name = "How We're Funded"
 url = "/support/funders-and-members#major-donors-and-funders-since-launch"
-weight = 2
+weight = 3
 
 [[support]]
 name = "Leaders in Action"
 url = "/support/leaders-in-action"
-weight = 3
+weight = 4
 
 [[support]]
 name = "Spotlight PA Store"
 url = "https://shop.spotlightpa.org"
-weight = 4
-
+weight = 5
 
 [[social]]
 name = "iOS App"
