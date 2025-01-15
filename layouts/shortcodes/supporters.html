@@ -2,10 +2,13 @@
 {{ $id := .Get "id" }}
 {{ $category := .Get "category" }}
 {{ $dataSrc := .Get "dataSrc" }}
+{{ $content := .Get "content" }}
 
 {{ partial "tw/supporters" (dict
   "title" $title
   "id" $id
   "category" $category
-  "dataSrc" $dataSrc )
+  "dataSrc" $dataSrc
+  "content" $content
+  )
 }}
