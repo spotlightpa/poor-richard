@@ -20,10 +20,10 @@
       {{ . }}
     </h3>
   {{ end }}
-  <div
-    class="column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
-  >
-    {{ with $dataSrc }}
+  {{ with $dataSrc }}
+    <div
+      class="column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
+    >
       {{ $data := index site.Data.supporters . }}
       <!-- Sort by .sort and break ties with .display -->
       {{ $sorted := sort $data.list "display" "asc" }}
@@ -33,6 +33,12 @@
       {{ else }}
         {{ partial "tw/supporters-list.html" $sorted }}
       {{ end }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
+
+  {{ with .content }}
+    <div class="article-content w-full max-w-screen-lg pb-8">
+      {{ . | page.RenderString }}
+    </div>
+  {{ end }}
 </div>

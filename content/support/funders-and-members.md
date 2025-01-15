@@ -19,7 +19,7 @@ supporters = """
 {{<supporters
   id="all-donors"
   category="Members since launch"
-  dataSrc="members"
+  content="If you would like to see a full list of supporters since launch of any amount, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
 >}}
 """
 +++
