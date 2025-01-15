@@ -18,9 +18,6 @@
 {{ $edImpact := partial "helper/get-hp-picks" "edImpact" }}
 {{ $featuredTopics := "topics/the-capitol/_index.md" }}
 
-{{ $showNewsletterCallout := true }}
-{{ $newsletterCalloutRiver := site.GetPage "topics/PA Local/_index.md" }}
-
 {{ $bureau := site.GetPage "/statecollege/" }}
 {{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
@@ -44,8 +41,8 @@
   "edInvestigations" $edInvestigations
   "edImpact" $edImpact
 
-  "showNewsletterCallout" $showNewsletterCallout
-  "newsletterCalloutRiver" $newsletterCalloutRiver
+  "showNewsletterCallout" true
+  "newsletterCalloutRiver" (site.GetPage "topics/PA Local/_index.md")
   "newsletterHed" "Latest From Our Daily Newsletter"
   "bureau" $bureau
   "river" $river
