@@ -11,11 +11,11 @@ newsletter-hed = "Sign up for our newsletters"
 newsletter-dek = "Get the top stories and best investigative journalism from across Pa. with our free newsletters."
 
 
-callout-hed = "Latest From Our Daily Newsletter"
-signup-hed = "Start your morning with PA Post"
-signup-dek = "We help you understand what's happening across Pennsylvania - in less than five minutes a day."
+callout-hed = "Good News from Pennsylvania"
+signup-hed = "A weekly dose of positive news"
+signup-dek = "A fresh look at the incredible people, beautiful places, and delicious food Pennsylvania has to offer."
 signup-cta = "Sign up"
-signup-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-signup-field = "newsletter/papost-hidden.html"
+signup-image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
+signup-field = "newsletter/palocal-hidden.html"
 
 +++
