@@ -12,16 +12,18 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-01-14-SPLEDUPDATE0125.md"
+    "content/statecollege/2025-01-15-SPLROCKSPRING0125.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-14-SPLTAXEQ24.md",
-    "content/news/2024-07-11-SPL24BUDDEAL.md"
+    "content/statecollege/2024-11-22-SPLWATERMOU1124.md",
+    "content/statecollege/2024-11-01-SPLROCKSPRING1124.md",
+    "content/statecollege/2024-09-26-SPLROCKSPRING0924.md",
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "topSlots": [
+    "content/news/2025-01-14-SPLEDUPDATE0125.md",
     "content/news/2025-01-14-SPLBEREAVE0125.md",
-    "content/news/2025-01-10-SPLPJMEXPL0125.md",
-    "content/news/2025-01-10-spl_marijuana_0125.md"
+    "content/news/2025-01-10-SPLPJMEXPL0125.md"
   ],
   "topper": []
 }
