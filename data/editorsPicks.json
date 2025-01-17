@@ -12,17 +12,18 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-01-15-SPLLEGELEX0125.md"
+    "content/news/2025-01-17-SPLSKILLGAME0125.md"
   ],
   "subfeatures": [
-    "content/news/2025-01-03-SPLSPECEXCOSTS0125.md",
-    "content/news/2024-12-31-SPLTOPDONOR1224.md",
-    "content/news/2024-12-20-SPLSCHMIDTYIR1224.md"
+    "content/news/2024-02-16-SPLSHAPGAME.md",
+    "content/news/2022-04-11-SPLSKILLGAMES.md",
+    "content/news/2024-06-27-SPLGAMINGUPDATE.md",
+    "content/news/2024-10-15-SPLTRANSITUPDATE.md"
   ],
   "topSlots": [
+    "content/news/2025-01-15-SPLLEGELEX0125.md",
     "content/statecollege/2025-01-15-SPLROCKSPRING0125.md",
-    "content/news/2025-01-14-SPLEDUPDATE0125.md",
-    "content/news/2025-01-14-SPLBEREAVE0125.md"
+    "content/news/2025-01-14-SPLEDUPDATE0125.md"
   ],
   "topper": []
 }
