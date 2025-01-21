@@ -99,7 +99,7 @@ He’s also sponsored legislation on less high-profile issues, such as establish
 
 In addition to running for auditor general, Kenyatta is seeking reelection to the state House.
 
-Kenyatta has dabbled in national politics, serving as a <a href="https://www.inquirer.com/politics/election/biden-names-malcolm-kenyatta-josh-shapiro-to-campaign-advisory-board-20230510.html">surrogate</a> for President Joe Biden’s 2020 campaign. In 2023, Biden <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2023/04/21/president-biden-announces-key-appointments-to-boards-and-commissions-25/">appointed</a> Kenyatta the chair of the Presidential Advisory Commission on Advancing Educational Equity, Excellence, and Economic Opportunity for Black Americans.
+Kenyatta has dabbled in national politics, serving as a <a href="https://www.inquirer.com/politics/election/biden-names-malcolm-kenyatta-josh-shapiro-to-campaign-advisory-board-20230510.html">surrogate</a> for President Joe Biden’s 2020 campaign. In 2023, Biden <a href="https://web.archive.org/20230421202423/https://www.whitehouse.gov/briefing-room/statements-releases/2023/04/21/president-biden-announces-key-appointments-to-boards-and-commissions-25/">appointed</a> Kenyatta the chair of the Presidential Advisory Commission on Advancing Educational Equity, Excellence, and Economic Opportunity for Black Americans.
 
 Kenyatta was the <a href="https://www.pahouse.com/Kenyatta/About/Biography#:~:text=Representative%20Kenyatta%20is%20a%20barrier,Senate%20seat%20in%20American%20history.">first openly LGBTQ person of color</a> to seek a U.S. Senate seat — a bid he lost in the 2022 primary election to John Fetterman.
 
