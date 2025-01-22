@@ -29,9 +29,9 @@
     "https://files.data.spotlightpa.org/uploads/01kh/fv4g/antislapp-300x600-04.png"
   ],
   "ad-rail-link": "https://www.speakfreepa.org/",
-  "banner": "\u003cstrong\u003eNeed help voting in PA?\u003c/strong\u003e Visit our Election Center 2024 »",
-  "banner-active": false,
-  "banner-bg-color": " #7cdbfd",
+  "banner": "\u003cstrong\u003eShare your feedback in our annual reader survey »\u003c/strong\u003e ",
+  "banner-active": true,
+  "banner-bg-color": " #ffcb03",
   "banner-link": "/elections-2024/",
   "banner-text-color": "#000000",
   "featured-promo-bg-color": "#050058",
