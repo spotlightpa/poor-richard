@@ -56,13 +56,12 @@
     </div>
   </div>
 
-
   <div class="bottom-bar-boxes-container">
     <div class="impact-boxes-wrapper">
       {{ range $index, $item := site.Data.carousel.items }}
         <div class="impact-box" data-index="{{ $index }}">
           <div class="impact-box-photo">
-            <img 
+            <img
               src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 200 "height" 150) }}"
               alt="{{ $item.alt }}"
               class="impact-box-image"
@@ -75,7 +74,6 @@
         </div>
       {{ end }}
     </div>
-    
   </div>
 </div>
 
@@ -84,22 +82,26 @@
     const carouselItems = document.querySelectorAll(".carousel-item");
     const leftArrow = document.querySelector(".left-arrow");
     const rightArrow = document.querySelector(".right-arrow");
-  
+
     const bottomLeftArrow = document.querySelector(".left-bottom-arrow");
     const bottomRightArrow = document.querySelector(".right-bottom-arrow");
-    const bottomBarContainer = document.querySelector(".bottom-bar-boxes-container");
+    const bottomBarContainer = document.querySelector(
+      ".bottom-bar-boxes-container",
+    );
     const impactBoxes = document.querySelectorAll(".impact-box");
     const boxWidth = 450;
     const boxGap = 15;
     const boxStep = boxWidth + boxGap;
-  
+
     let currentIndex = 0;
-  
+
     function updateCarousel() {
       carouselItems.forEach((item, index) => {
         const photo = item.querySelector(".carousel-photo");
-        const impactBoxImage = document.querySelector(`.impact-box[data-index="${index}"] .impact-box-image`);
-  
+        const impactBoxImage = document.querySelector(
+          `.impact-box[data-index="${index}"] .impact-box-image`,
+        );
+
         if (index === currentIndex) {
           item.style.display = "flex";
           photo.classList.add("active");
@@ -110,52 +112,68 @@
           if (impactBoxImage) impactBoxImage.classList.remove("active");
         }
       });
-  
+
       scrollToActiveBox();
       updateCarouselArrowStates();
-  
-      document.querySelectorAll('.impact-box-text-container').forEach(container => {
-        container.classList.remove('active');
-      });
-      const activeImpactBox = document.querySelector(`.impact-box[data-index="${currentIndex}"] .impact-box-text-container`);
+
+      document
+        .querySelectorAll(".impact-box-text-container")
+        .forEach((container) => {
+          container.classList.remove("active");
+        });
+      const activeImpactBox = document.querySelector(
+        `.impact-box[data-index="${currentIndex}"] .impact-box-text-container`,
+      );
       if (activeImpactBox) {
-        activeImpactBox.classList.add('active');
+        activeImpactBox.classList.add("active");
       }
     }
-  
+
     function updateCarouselArrowStates() {
       leftArrow.style.opacity = currentIndex === 0 ? "0.5" : "1";
       leftArrow.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
-      rightArrow.style.opacity = currentIndex === carouselItems.length - 1 ? "0.5" : "1";
-      rightArrow.style.pointerEvents = currentIndex === carouselItems.length - 1 ? "none" : "auto";
+      rightArrow.style.opacity =
+        currentIndex === carouselItems.length - 1 ? "0.5" : "1";
+      rightArrow.style.pointerEvents =
+        currentIndex === carouselItems.length - 1 ? "none" : "auto";
     }
-  
+
     function navigateCarousel(direction) {
       if (direction === "left" && currentIndex > 0) currentIndex--;
-      if (direction === "right" && currentIndex < carouselItems.length - 1) currentIndex++;
+      if (direction === "right" && currentIndex < carouselItems.length - 1)
+        currentIndex++;
       updateCarousel();
     }
-  
+
     function scrollToActiveBox() {
-      const activeBox = document.querySelector(`.impact-box[data-index="${currentIndex}"]`);
+      const activeBox = document.querySelector(
+        `.impact-box[data-index="${currentIndex}"]`,
+      );
       if (activeBox) {
         const containerLeft = bottomBarContainer.scrollLeft;
         const containerRight = containerLeft + bottomBarContainer.clientWidth;
         const boxLeft = activeBox.offsetLeft;
         const boxRight = boxLeft + activeBox.offsetWidth;
-  
+
         if (boxLeft < containerLeft) {
-          bottomBarContainer.scrollBy({ left: boxLeft - containerLeft, behavior: 'smooth' });
+          bottomBarContainer.scrollBy({
+            left: boxLeft - containerLeft,
+            behavior: "smooth",
+          });
         } else if (boxRight > containerRight) {
-          bottomBarContainer.scrollBy({ left: boxRight - containerRight, behavior: 'smooth' });
+          bottomBarContainer.scrollBy({
+            left: boxRight - containerRight,
+            behavior: "smooth",
+          });
         }
       }
     }
-  
+
     function updateBottomBarArrowStates() {
-      const maxScrollLeft = bottomBarContainer.scrollWidth - bottomBarContainer.clientWidth;
+      const maxScrollLeft =
+        bottomBarContainer.scrollWidth - bottomBarContainer.clientWidth;
       const currentScrollLeft = bottomBarContainer.scrollLeft;
-  
+
       if (currentScrollLeft <= 0) {
         bottomLeftArrow.style.opacity = "0.5";
         bottomLeftArrow.style.pointerEvents = "none";
@@ -163,7 +181,7 @@
         bottomLeftArrow.style.opacity = "1";
         bottomLeftArrow.style.pointerEvents = "auto";
       }
-  
+
       if (currentScrollLeft >= maxScrollLeft - 1) {
         bottomRightArrow.style.opacity = "0.5";
         bottomRightArrow.style.pointerEvents = "none";
@@ -172,20 +190,21 @@
         bottomRightArrow.style.pointerEvents = "auto";
       }
     }
-  
+
     function navigateBottomBar(direction) {
-      const maxScrollLeft = bottomBarContainer.scrollWidth - bottomBarContainer.clientWidth;
+      const maxScrollLeft =
+        bottomBarContainer.scrollWidth - bottomBarContainer.clientWidth;
       const currentScrollLeft = bottomBarContainer.scrollLeft;
-  
+
       if (direction === "left" && currentScrollLeft > 0) {
-        bottomBarContainer.scrollBy({ left: -boxStep, behavior: 'smooth' });
+        bottomBarContainer.scrollBy({ left: -boxStep, behavior: "smooth" });
       } else if (direction === "right" && currentScrollLeft < maxScrollLeft) {
-        bottomBarContainer.scrollBy({ left: boxStep, behavior: 'smooth' });
+        bottomBarContainer.scrollBy({ left: boxStep, behavior: "smooth" });
       }
 
       setTimeout(updateBottomBarArrowStates, 300);
     }
-  
+
     function handleBottomBoxClick(event) {
       const clickedBox = event.target.closest(".impact-box");
       if (clickedBox) {
@@ -196,271 +215,269 @@
         }
       }
     }
-  
+
     leftArrow.addEventListener("click", () => navigateCarousel("left"));
     rightArrow.addEventListener("click", () => navigateCarousel("right"));
-  
+
     bottomLeftArrow.addEventListener("click", () => navigateBottomBar("left"));
-    bottomRightArrow.addEventListener("click", () => navigateBottomBar("right"));
-  
+    bottomRightArrow.addEventListener("click", () =>
+      navigateBottomBar("right"),
+    );
+
     bottomBarContainer.addEventListener("scroll", updateBottomBarArrowStates);
-  
-    impactBoxes.forEach(box => {
+
+    impactBoxes.forEach((box) => {
       box.addEventListener("click", handleBottomBoxClick);
     });
-  
+
     updateCarousel();
     updateBottomBarArrowStates();
-  
+
     window.addEventListener("resize", () => {
       updateCarousel();
       updateBottomBarArrowStates();
     });
   });
-  
-  
-  
 </script>
 
+<style>
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
-  <style>
-    .carousel-container {
-      display: flex;
-      align-items: center;
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+  }
 
-    .carousel-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 3;
-      cursor: pointer;
-    }
+  .carousel-arrow.left-arrow {
+    left: 5px;
+  }
 
-    .carousel-arrow.left-arrow {
-      left: 5px;
-    }
+  .carousel-arrow.right-arrow {
+    right: 5px;
+  }
 
-    .carousel-arrow.right-arrow {
-      right: 5px;
-    }
+  .carousel-arrow svg {
+    fill: #ffffff;
+  }
 
-    .carousel-arrow svg {
-      fill: #ffffff;
-    }
+  .carousel-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
 
-    .carousel-title {
-      font-size: 2.5rem;
-      color: #ffffff;
-      font-weight: bold;
-    }
+  .carousel-tagline {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0.5rem;
+  }
 
-    .carousel-tagline {
-      font-size: 0.75rem;
-      line-height: 1rem;
-      background-color: #fff;
-      text-transform: uppercase;
-      font-weight: 600;
-      width: fit-content;
-      padding: 0.5rem;
-    }
+  .carousel-text {
+    color: #fff;
+  }
 
-    .carousel-text {
-      color: #fff;
-    }
+  .carousel-text::first-letter {
+    font-size: 4rem;
+    font-weight: medium;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+  }
 
-    .carousel-text::first-letter {
-      font-size: 4rem;
-      font-weight: medium;
-      float: left;
-      margin-right: 5px;
-      line-height: 1;
-    }
+  .read-the-series a {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    max-width: 100%;
+  }
 
-    .read-the-series a {
-      display: inline-flex;
-      align-items: center;
-      font-weight: bold;
-      background-color: #fff;
-      text-align: center;
-      padding: 10px 50px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit;
-      max-width: 100%;
-    }
+  .read-the-series a svg {
+    margin-left: 10px;
+  }
 
-    .read-the-series a svg {
-      margin-left: 10px;
-    }
+  .carousel-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+  }
 
-    .carousel-content {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      position: relative;
-      overflow: visible;
-    }
+  .carousel-item {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
 
+  .carousel-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .carousel-blurb {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+  }
+
+  .carousel-right-half {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+  }
+
+  .carousel-grid {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+    width: 100%;
+  }
+
+  @media (max-width: 815px) {
     .carousel-item {
-      display: flex;
-      position: relative;
-      width: 100%;
-    }
-
-    .carousel-photo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1;
+      flex-direction: column;
     }
 
     .carousel-blurb {
-      position: relative;
-      z-index: 2;
-      flex: 1;
-      background-color: rgba(0, 0, 0, 0.7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 70px 100px;
+      order: 1;
+      padding: 80px;
     }
 
     .carousel-right-half {
-      flex: 1;
-      position: relative;
-      z-index: 2;
-      background: transparent;
+      order: 2;
+      min-height: 200px;
     }
 
-    .carousel-grid {
-      display: grid;
-      grid-template-rows: auto auto 1fr auto;
-      gap: 20px;
-      width: 100%;
+    .carousel-title {
+      font-size: 1.5rem;
     }
 
-    @media (max-width: 815px) {
-      .carousel-item {
-        flex-direction: column;
-      }
-
-      .carousel-blurb {
-        order: 1;
-        padding: 80px;
-      }
-
-      .carousel-right-half {
-        order: 2;
-        min-height: 200px;
-      }
-
-      .carousel-title {
-        font-size: 1.5rem;
-      }
-
-      .carousel-text::first-letter {
-        font-size: 2rem;
-        float: none;
-        margin-right: 0;
-      }
-
-      .read-the-series a {
-        padding: 10px 20px;
-      }
+    .carousel-text::first-letter {
+      font-size: 2rem;
+      float: none;
+      margin-right: 0;
     }
 
-    .bottom-bar {
-      background: #545454;
-      width: 100%;
-      height: 200px;
-      position: relative;
-      overflow: hidden;
+    .read-the-series a {
+      padding: 10px 20px;
     }
+  }
 
-    .bottom-bar-arrows {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
-      box-sizing: border-box;
-      z-index: 3; 
-    }
+  .bottom-bar {
+    background: #545454;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .bottom-bar-arrow {
-      cursor: pointer;
-      opacity: 1;
-      pointer-events: auto;
-    }
+  .bottom-bar-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 3;
+  }
 
-    .bottom-bar-arrow svg {
-      fill: #ffffff;
-    }
+  .bottom-bar-arrow {
+    cursor: pointer;
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-    .bottom-bar-boxes-container {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 80px;
-      right: 80px;
-      height: 150px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      z-index: 2;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; 
-    }
+  .bottom-bar-arrow svg {
+    fill: #ffffff;
+  }
 
-    .bottom-bar-boxes-container::-webkit-scrollbar {
-      display: none; 
-    }
+  .bottom-bar-boxes-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+    right: 80px;
+    height: 150px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 2;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
 
-    .impact-boxes-wrapper {
-      display: inline-flex;
-      gap: 15px;
-    }
+  .bottom-bar-boxes-container::-webkit-scrollbar {
+    display: none;
+  }
 
-    .impact-box {
-      width: 450px;
-      height: 150px;
-      display: flex;
-      flex: 0 0 auto;
-      cursor: pointer;
-    }
+  .impact-boxes-wrapper {
+    display: inline-flex;
+    gap: 15px;
+  }
 
-    .impact-box-photo {
-      width: 50%;
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-  
-    .impact-box-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  .impact-box {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex: 0 0 auto;
+    cursor: pointer;
+  }
 
-    .impact-box-image.active {
-      transition: opacity 0.3s ease;
-      opacity: 0.4; 
-    }
+  .impact-box-photo {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .impact-box-text-container {
-      width: 50%;
-      height: 100%;
-    }
+  .impact-box-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .impact-box-image.active {
+    transition: opacity 0.3s ease;
+    opacity: 0.4;
+  }
+
+  .impact-box-text-container {
+    width: 50%;
+    height: 100%;
+  }
 
   .impact-box-text-container.active {
     transition: background-color 0.3s ease;
@@ -472,7 +489,7 @@
     font-size: 0.8rem;
     background-color: black;
     font-weight: bold;
-    color: #FFF;
+    color: #fff;
     width: fit-content;
     max-width: 100%;
     padding: 1px 5px;
@@ -482,13 +499,11 @@
   .impact-box-text {
     font-size: 0.8rem;
     padding: 5px 0px 0px 10px;
-    color: #FFF;
+    color: #fff;
     width: 100%;
-    height: 70%; 
-    word-wrap: break-word; 
-    white-space: normal; 
+    height: 70%;
+    word-wrap: break-word;
+    white-space: normal;
     box-sizing: border-box;
   }
-    
-  </style>
-</div>
+</style>
