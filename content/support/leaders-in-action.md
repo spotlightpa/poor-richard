@@ -16,6 +16,7 @@ supporters = """
 {{<supporters
   title="Our Current Leaders"
   dataSrc="leadersInAction"
+  categorize="true"
 >}}
 """
 testimonials-group = """

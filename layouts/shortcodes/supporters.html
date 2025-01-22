@@ -3,6 +3,7 @@
 {{ $category := .Get "category" }}
 {{ $dataSrc := .Get "dataSrc" }}
 {{ $content := .Get "content" }}
+{{ $categorize := .Get "categorize" | not | not }}
 
 {{ partial "tw/supporters" (dict
   "title" $title
@@ -10,5 +11,6 @@
   "category" $category
   "dataSrc" $dataSrc
   "content" $content
+  "categorize" $categorize
   )
 }}
