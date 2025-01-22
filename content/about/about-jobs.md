@@ -39,7 +39,7 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 
 ## General Manager, State College bureau
 
-### [Apply here](https://spotlightpa.applytojob.com/apply/KI0Y4rFuyL/Managing-Editor-Berks-County-Bureau)
+### [Apply here](https://spotlightpa.applytojob.com/apply/KuTthvzRTI/General-Manager-Spotlight-PA-State-College)
 
 **Summary:** Spotlight PA is seeking a general manager to lead its local revenue, partnership, and community outreach/engagement initiatives for its regional bureau based in State College. Launched in 2022, Spotlight PA’s State College bureau ([spotlightpa.org/statecollege](http://spotlightpa.org/statecollege)) covers north-central Pennsylvania and produces award-winning journalism on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent. Spotlight PA is an independent, nonpartisan newsroom founded in 2019 to revitalize investigative and public-service reporting across Pennsylvania. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories regularly republished across 125+ partner newsrooms, allowing our vital reporting to reach Pennsylvanians in all corners and drive positive change. 
 
@@ -53,7 +53,7 @@ Applicants should include a resume and a one-page cover letter answering the fol
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
-### [Apply here](https://spotlightpa.applytojob.com/apply/KI0Y4rFuyL/Managing-Editor-Berks-County-Bureau)
+### [Apply here](https://spotlightpa.applytojob.com/apply/KuTthvzRTI/General-Manager-Spotlight-PA-State-College)
 
 
 - - -
