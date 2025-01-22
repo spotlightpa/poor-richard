@@ -1,90 +1,104 @@
 <div id="by-the-numbers-wrapper">
-
-<div id="numbers-bar">
-  <div class="numbers-bar-item" id="first-div">
-    <div class="bar-content">
-      <div class="circle">
-        <span id="first-circle" class="circle-text">35</span>
+  <div id="numbers-bar">
+    <div class="numbers-bar-item" id="first-div">
+      <div class="bar-content">
+        <div class="circle">
+          <span id="first-circle" class="circle-text">35</span>
+        </div>
+        Policies Changed
       </div>
-      Policies Changed
+    </div>
+    <div class="divider"></div>
+    <div class="numbers-bar-item" id="second-div">
+      <div class="bar-content">
+        <div class="circle">
+          <span id="second-circle" class="circle-text">14</span>
+        </div>
+        Bills Introduced
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="numbers-bar-item" id="third-div">
+      <div class="bar-content">
+        <div class="circle">
+          <span id="third-circle" class="circle-text">8</span>
+        </div>
+        Legal Victories
+      </div>
     </div>
   </div>
-  <div class="divider"></div>
-  <div class="numbers-bar-item" id="second-div">
-    <div class="bar-content">
-      <div class="circle">
-        <span id="second-circle" class="circle-text">14</span>
+
+  <div id="numbers-page" class="pb-16">
+    <div class="grid-container">
+      <div class="impact-numbers-title">
+        <div>Journalism that</div>
+        <div class="spotlight">
+          <span class="spotlight-text">Gets Results</span>
+        </div>
       </div>
-      Bills Introduced
+      <div class="impact-block" id="first-impact-block">
+        <div class="impact-row">
+          <div class="impact-symbol">
+            <svg aria-hidden="true" style="fill: #ffcb03;">
+              {{ partial "helper/svg.html" "envelope" }}
+            </svg>
+          </div>
+        </div>
+        <div class="impact-row symbol-number">3,000+</div>
+        <div class="impact-row impact-text">Reader Tips</div>
+      </div>
+
+      <div class="impact-numbers-graf">
+        Spotlight PA's investigative and public-service journalism changes laws
+        and lives. Our reporting drives government accountability and
+        transparency at all levels, provides an independent check on power and
+        influence, and has saved Pennsylvania taxpayers millions of dollars.
+      </div>
+      <div class="impact-block" id="second-impact-block">
+        <div class="impact-row">
+          <div class="impact-symbol">
+            <svg aria-hidden="true" style="fill: #ffcb03;">
+              {{ partial "helper/svg.html" "gavel" }}
+            </svg>
+          </div>
+        </div>
+        <div class="impact-row symbol-number">1,400+</div>
+        <div class="impact-row impact-text">Right to Know Requests</div>
+      </div>
     </div>
   </div>
-  <div class="divider"></div>
-  <div class="numbers-bar-item" id="third-div">
-    <div class="bar-content">
-      <div class="circle">
-        <span id="third-circle" class="circle-text">8</span>
-      </div>
-      Legal Victories
-    </div>
-  </div>
-</div>
-
-
-<div id="numbers-page" class="pb-16">
-  <div class="grid-container">
-    <div class="impact-numbers-title">
-      <div class="grey-bar"></div>
-      <span>Journalism that Gets Results</span>
-    </div>
-    <div class="first-impact-block">
-      <div class="first-impact-symbol">
-        <svg aria-hidden="true" style="fill: #ffcb03;">
-          {{ partial "helper/svg.html" "envelope" }}
-        </svg>
-      </div>
-      <div class="symbol-number">3,000+</div>
-      <div class="first-impact-text">Reader Tips</div>
-    </div>
-    
-    <div class="impact-numbers-graf">
-      Spotlight PA's investigative and public-service journalism changes laws and lives. Our reporting drives government accountability and transparency at all levels, provides an independent check on power and influence, and  has saved Pennsylvania taxpayers millions of dollars.
-    </div>
-    <div class="second-impact-block">
-      <div class="second-impact-symbol">    
-        
-        <svg aria-hidden="true" style="fill: #ffcb03;">
-        {{ partial "helper/svg.html" "gavel" }}
-      </svg>
-
-    </div>
-    <div class="symbol-number">1,400+</div>
-      <div class="second-impact-text">Right to Know Requests</div>
-    </div>
-  </div>
-</div>
-</div>
-
 </div>
 
 <style>
   #by-the-numbers-wrapper {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
   }
-  
+
   #numbers-bar {
     background-color: #ffcb03;
     height: 110px;
     display: flex;
+    width: 100%;
     align-items: center;
   }
-  
+
   .numbers-bar-item {
     width: 33%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
   }
-  
+
+  @media screen and (max-width: 930px) {
+    #numbers-bar {
+      justify-content: space-between;
+    }
+
+    .numbers-bar-item {
+      max-width: 290px;
+    }
+  }
+
   .bar-content {
     color: black;
     font-weight: bold;
@@ -93,24 +107,63 @@
     justify-content: center;
     font-size: 1.4em;
   }
-  
+
+  @media screen and (max-width: 930px) {
+    .bar-content {
+      padding: 0px 10px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .bar-content {
+      font-size: 22px;
+    }
+  }
+
   .circle {
     width: 85px;
     height: 85px;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 50%;
     margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+  @media screen and (max-width: 990px) {
+    .circle {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      min-height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .circle {
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 905px) {
+    .circle {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
   .circle-text {
     color: black;
     font-weight: bold;
     font-size: 64px;
   }
-  
+
+  @media screen and (max-width: 990px) {
+    .circle-text {
+      font-size: 48px;
+    }
+  }
+
   .divider {
     width: 3px;
     background-color: #000;
@@ -118,14 +171,42 @@
     margin-top: auto;
     margin-bottom: auto;
   }
-  
+
+  @media screen and (max-width: 730px) {
+    #numbers-bar {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .numbers-bar-item {
+      width: 100%;
+      max-width: none;
+      border: 2px solid black;
+      border-top: none;
+      padding: 0px 15px;
+    }
+
+    .numbers-bar-item:first-child {
+      border-top: 2px solid black;
+    }
+
+    .numbers-bar-item:last-child {
+      border-bottom: 2px solid black;
+    }
+
+    .bar-content {
+      white-space: nowrap;
+      padding: 0;
+      margin: 10px 0px;
+    }
+  }
+
   #numbers-page {
     background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
 
   .grid-container {
     display: grid;
@@ -134,26 +215,51 @@
   }
 
   .impact-numbers-title {
-    background-color: black;
     padding: 50px 50px 25px 100px;
     color: white;
-    font-size: 3.5em;
+    font-size: 56px;
     text-align: left;
     font-weight: bold;
     position: relative;
     max-width: 640px;
-    {{/*  background-color: red;  */}}
+    min-width: 630px;
   }
 
-  .grey-bar {
+  @media screen and (max-width: 990px) {
+    .impact-numbers-title {
+      font-size: 48px;
+      padding-left: 50px;
+    }
+  }
+
+  .spotlight {
     background-color: #545454;
     height: 60px;
     width: calc(100% - 100px);
     position: absolute;
-    bottom: 25px;
     left: 90px;
+    bottom: 25px;
     border-radius: 50%;
     max-width: 470px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .spotlight {
+      max-width: 400px;
+      left: 35px;
+    }
+  }
+
+  .spotlight-text {
+    position: absolute;
+    bottom: 35px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .spotlight-text {
+      bottom: 25px;
+      left: 10px;
+    }
   }
 
   .impact-numbers-title span {
@@ -161,62 +267,200 @@
     z-index: 2;
   }
 
-  .first-impact-block {
-    position: relative;
-    {{/*  background-color: green;  */}}
-  }
-
-  .symbol-number {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3.5em; 
-    color: #FFF;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-
-  .first-impact-text, .second-impact-text {
-      background-color: #ffcb03;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: black;
-      font-size: 1.4em;
-      text-align: center;
-      border-radius: 4px;
-      padding: 0px 10px;
-  }
-
   .impact-numbers-graf {
     padding: 25px 50px 50px 100px;
     color: white;
     font-size: 18px;
     max-width: 640px;
-    {{/*  background-color: blue;  */}}
   }
 
-  .second-impact-block {
-    position: relative;
-    {{/*  background-color: purple;  */}}
+  @media screen and (max-width: 990px) {
+    .impact-numbers-graf {
+      padding-left: 50px;
+    }
   }
 
-  .first-impact-symbol, .second-impact-symbol {
+  .impact-block {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    padding: 20px;
+    position: relative;
   }
-  
-  .first-impact-symbol svg, .second-impact-symbol svg {
+
+  .impact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .impact-symbol svg {
     width: 75px;
     height: 75px;
   }
-  
+
+  @media screen and (max-width: 990px) {
+    .impact-symbol svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .symbol-number {
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 990px) {
+    .symbol-number {
+      font-size: 2.75em;
+    }
+  }
+
+  .impact-text {
+    background-color: #ffcb03;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2.5px 10px;
+    max-width: fit-content;
+  }
+
+  @media screen and (max-width: 990px) {
+    .impact-text {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .impact-numbers-title {
+      min-width: 450px;
+      padding-right: 0px;
+    }
+
+    .spotlight {
+      bottom: 80px;
+    }
+
+    .impact-numbers-graf {
+      padding-right: 0px;
+    }
+
+    .grid-container {
+      grid-template-rows: 0.8fr 1fr;
+    }
+
+    .spotlight {
+      bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "title title"
+        "graf graf";
+    }
+
+    .impact-numbers-title {
+      grid-area: title;
+      padding: 20px 40px;
+    }
+
+    .impact-numbers-graf {
+      grid-area: graf;
+      padding: 20px 40px 0px 40px;
+    }
+
+    .spotlight {
+      position: relative;
+      left: 0px;
+      width: calc(100% - 250px);
+      height: 50px;
+      bottom: -10px;
+      min-width: 340px;
+    }
+
+    .spotlight-text {
+      bottom: 30px;
+      left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .impact-numbers-title {
+      font-size: 42px;
+    }
+
+    .spotlight-text {
+      bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "title"
+        "graf"
+        "block1"
+        "block2";
+    }
+
+    .impact-block {
+      width: 100%;
+    }
+
+    #first-impact-block {
+      grid-area: block1;
+    }
+
+    #second-impact-block {
+      grid-area: block2;
+    }
+  }
+
+  @media screen and (max-width: 435px) {
+    .impact-numbers-title {
+      font-size: 36px;
+      min-width: 0px;
+    }
+
+    .impact-numbers-graf {
+      font-size: 17px;
+    }
+
+    .spotlight {
+      min-width: 260px;
+    }
+
+    .spotlight-text {
+      bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 365px) {
+    .impact-numbers-title {
+      font-size: 30px;
+      min-width: 0px;
+    }
+
+    .spotlight {
+      height: 40px;
+      min-width: 230px;
+    }
+
+    .spotlight-text {
+      bottom: 10px;
+    }
+  }
 </style>
