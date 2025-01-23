@@ -78,3 +78,7 @@ to = "https://centregives.org/organizations/273-spotlight-pa"
 [[redirects]]
 from = "/lia/"
 to = "/support/leaders-in-action/#our-current-leaders"
+
+[[redirects]]
+from = "/LIA/"
+to = "/support/leaders-in-action/#our-current-leaders"
