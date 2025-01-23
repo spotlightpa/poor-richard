@@ -3,7 +3,7 @@ title = "Our Champions"
 theme = "leaders"
 url = "/support/leaders-in-action/"
 layout = "support"
-aliases = ["/lia/"]
+# aliases = ["/lia/"] # See redirects.toml
 donate = """
 {{<donate-slim
     title="Become a Leader in Action"
@@ -19,7 +19,7 @@ supporters = """
 >}}
 """
 testimonials-group = """
-{{<testimonials-group 
+{{<testimonials-group
   title="Testimonials"
   featuredQuote="Spotlight PA is a trustworthy news source in this era of misinformation and disinformation."
   featuredCite="David Martens">}}
