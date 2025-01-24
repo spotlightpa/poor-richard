@@ -1,0 +1,217 @@
+{{ with site.Data.awards }}
+  <div class="h-auto w-full bg-beige pb-16">
+    <div class="mx-auto flex max-w-4xl items-center px-4 pb-4 pt-16">
+      <svg class="mr-4 h-8 w-9" aria-hidden="true" style="fill: #b6b6b6;">
+        {{ partial "helper/svg.html" "trophy" }}
+      </svg>
+      <h2 class="text-4xl font-bold">Awards</h2>
+    </div>
+
+    <div class="mx-auto max-w-4xl px-4">
+      <div style="border-top: 2.5px solid black; width: 100%;"></div>
+
+      <div class="flex w-full">
+        <div
+        id="years-padding"
+          class="font-bold"
+          style="padding: 15px 20px 15px 25px; border-right: 2.5px solid black;"
+        >
+          <ul class="year-list">
+            {{ $years := slice }}
+            {{ range . }}
+              {{ $years = $years | append .year }}
+            {{ end }}
+            {{ $sortedYears := uniq $years | sort }}
+            {{ $count := len $sortedYears }}
+
+            {{ range $index := seq 0 (sub $count 1) }}
+              <li>{{ index $sortedYears (sub (sub $count 1) $index) }}</li>
+            {{ end }}
+          </ul>
+        </div>
+
+        {{ $awards := site.Data.awards }}
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const yearList = document.querySelector(".year-list");
+            const awardsContainer = document.querySelector(".awards-container");
+
+            if (!yearList || !awardsContainer) {
+              console.warn("No year list or awards container found.");
+              return;
+            }
+
+            const yearItems = yearList.querySelectorAll("li");
+            yearItems.forEach((item) => {
+              item.addEventListener("click", () => {
+                const activeYear = item.textContent.trim();
+
+                yearItems.forEach((li) => li.classList.remove("active"));
+                item.classList.add("active");
+
+                const awardSections =
+                  awardsContainer.querySelectorAll(".award-entity");
+                awardSections.forEach((award) => {
+                  const awardYear = award.getAttribute("data-year");
+                  award.style.display =
+                    awardYear === activeYear ? "block" : "none";
+                });
+
+                const sections = [
+                  {
+                    header: ".national-awards-header",
+                    container: ".national-awards",
+                  },
+                  {
+                    header: ".national-finalists-header",
+                    container: ".national-finalists",
+                  },
+                  {
+                    header: ".state-awards-header",
+                    container: ".state-awards",
+                  },
+                  {
+                    header: ".state-finalists-header",
+                    container: ".state-finalists",
+                  },
+                ];
+
+                sections.forEach(({ header, container }) => {
+                  const section = awardsContainer.querySelector(container);
+                  const headerElement = awardsContainer.querySelector(header);
+                  const hasVisibleAwards = Array.from(
+                    section.querySelectorAll(".award-entity"),
+                  ).some((award) => award.style.display === "block");
+                  headerElement.style.display = hasVisibleAwards
+                    ? "block"
+                    : "none";
+                });
+              });
+            });
+
+            yearItems[0]?.click();
+          });
+        </script>
+
+        <div id="awards-padding" style="padding: 15px 20px 15px 25px; display: flex; flex-wrap: wrap; width: 100%;">
+            <div class="awards-container" style="flex: 1 1 100%; word-break: break-word;">
+            <p class="award-national-state national-awards-header">
+              National Awards
+            </p>
+            <div class="national-awards">
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                  <p class="award-story">
+                    {{ if .link }}
+                      <a
+                        href="{{ .link }}"
+                        class="award-story-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {{ .story }}
+                      </a>
+                    {{ else }}
+                      {{ .story }}
+                    {{ end }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p class="award-national-state national-finalists-header">
+              National Finalists
+            </p>
+            <div class="national-finalists">
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                  <p class="award-story">
+                    {{ if .link }}
+                      <a
+                        href="{{ .link }}"
+                        class="award-story-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {{ .story }}
+                      </a>
+                    {{ else }}
+                      {{ .story }}
+                    {{ end }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p class="award-national-state state-awards-header">State Awards</p>
+            <div class="state-awards">
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                  <p class="award-story">
+                    {{ if .link }}
+                      <a
+                        href="{{ .link }}"
+                        class="award-story-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {{ .story }}
+                      </a>
+                    {{ else }}
+                      {{ .story }}
+                    {{ end }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p class="award-national-state state-finalists-header">
+              State Finalists
+            </p>
+            <div class="state-finalists">
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category">{{ .award_category }}</span>
+                  <p class="award-story">
+                    {{ if .link }}
+                      <a
+                        href="{{ .link }}"
+                        class="award-story-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {{ .story }}
+                      </a>
+                    {{ else }}
+                      {{ .story }}
+                    {{ end }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+
+<style>
+    @media screen and (max-width: 500px) {
+        #awards-padding {
+            padding: 15px 0px 15px 15px !important;
+        }
+
+        #years-padding {
+            padding: 15px 15px 15px 15px !important;
+        }
+    }
+</style>
