@@ -172,7 +172,17 @@
     margin-bottom: auto;
   }
 
-  @media screen and (max-width: 730px) {
+  @media screen and (max-width: 710px) {
+    .bar-content {
+      font-size: 18px;
+    }
+
+    .circle {
+      margin: 0px 5px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
     #numbers-bar {
       flex-direction: column;
       height: auto;
@@ -183,9 +193,11 @@
       max-width: none;
       border: 2px solid black;
       border-top: none;
-      padding: 0px 15px;
+      border-right: none;
+      border-left: none;
+      padding: 0px 40px;
+      justify-content: left;
     }
-
     .numbers-bar-item:first-child {
       border-top: 2px solid black;
     }
@@ -198,6 +210,22 @@
       white-space: nowrap;
       padding: 0;
       margin: 10px 0px;
+      font-size: 22px;
+    }
+
+    .circle {
+      margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .numbers-bar-item {
+      padding: 0px 20px;
+    }
+
+    .circle {
+      margin-right: 15px;
+      margin-left: 0px;
     }
   }
 
