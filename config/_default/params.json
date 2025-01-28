@@ -9,11 +9,11 @@
   ],
   "ad-breaker-link": "/donate",
   "ad-featured-active": true,
-  "ad-featured-image-description": "Get 20% off Spotlight PA's famous totes with exclusive designs made just for us.",
+  "ad-featured-image-description": "Please share your thoughts by taking our annual reader survey.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01kq/ajj0/newsmatch-2023-squares-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01ks/2eqy/2025-audience-survey-website.png"
   ],
-  "ad-featured-link": "https://shop.spotlightpa.org/",
+  "ad-featured-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
   "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
@@ -72,19 +72,19 @@
   "river-promo-mobile-height": 250,
   "river-promo-mobile-images": [],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Please share your thoughts by taking our annual reader survey.",
+  "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01ks/2eqy/2025-audience-survey-website.png"
-  ],
-  "sidebar-sticky-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
-  "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
-  "sidebar-top-height": 250,
-  "sidebar-top-images": [
     "https://files.data.spotlightpa.org/uploads/01kq/ajj0/newsmatch-2023-squares-1-.gif"
   ],
-  "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
+  "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
+  "sidebar-sticky-width": 300,
+  "sidebar-top-description": "Please share your thoughts by taking our annual reader survey.\n",
+  "sidebar-top-height": 250,
+  "sidebar-top-images": [
+    "https://files.data.spotlightpa.org/uploads/01ks/2eqy/2025-audience-survey-website.png"
+  ],
+  "sidebar-top-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
