@@ -43,6 +43,9 @@
 </div>
 
 <div class="bottom-bar">
+  <div class="bottom-bar-gradient-box left-gradient-box"></div>
+  <div class="bottom-bar-gradient-box right-gradient-box"></div>
+
   <div class="bottom-bar-arrows">
     <div class="bottom-bar-arrow left-bottom-arrow"></div>
     <div class="bottom-bar-arrow right-bottom-arrow"></div>
@@ -69,15 +72,15 @@
   </div>
 </div>
 
+
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+
     const carouselItems = document.querySelectorAll(".carousel-item");
     const leftArrow = document.querySelector(".left-arrow");
     const rightArrow = document.querySelector(".right-arrow");
-
-    const bottomBarContainer = document.querySelector(
-      ".bottom-bar-boxes-container",
-    );
+    const bottomBarContainer = document.querySelector(".bottom-bar-boxes-container");
     const impactBoxes = document.querySelectorAll(".impact-box");
 
     let currentIndex = 0;
@@ -86,7 +89,7 @@
       carouselItems.forEach((item, index) => {
         const photo = item.querySelector(".carousel-photo");
         const impactBoxImage = document.querySelector(
-          `.impact-box[data-index="${index}"] .impact-box-image`,
+          `.impact-box[data-index="${index}"] .impact-box-image`
         );
 
         if (index === currentIndex) {
@@ -108,12 +111,15 @@
         .forEach((container) => {
           container.classList.remove("active");
         });
+
       const activeImpactBox = document.querySelector(
-        `.impact-box[data-index="${currentIndex}"] .impact-box-text-container`,
+        `.impact-box[data-index="${currentIndex}"] .impact-box-text-container`
       );
       if (activeImpactBox) {
         activeImpactBox.classList.add("active");
       }
+
+      updateGradients();
     }
 
     function updateCarouselArrowStates() {
@@ -126,15 +132,18 @@
     }
 
     function navigateCarousel(direction) {
-      if (direction === "left" && currentIndex > 0) currentIndex--;
-      if (direction === "right" && currentIndex < carouselItems.length - 1)
+      if (direction === "left" && currentIndex > 0) {
+        currentIndex--;
+      }
+      if (direction === "right" && currentIndex < carouselItems.length - 1) {
         currentIndex++;
+      }
       updateCarousel();
     }
 
     function scrollToActiveBox() {
       const activeBox = document.querySelector(
-        `.impact-box[data-index="${currentIndex}"]`,
+        `.impact-box[data-index="${currentIndex}"]`
       );
       if (activeBox) {
         const containerLeft = bottomBarContainer.scrollLeft;
@@ -174,13 +183,36 @@
       box.addEventListener("click", handleBottomBoxClick);
     });
 
-    updateCarousel();
+    const leftGradient = document.querySelector(".left-gradient-box");
+    const rightGradient = document.querySelector(".right-gradient-box");
 
-    window.addEventListener("resize", () => {
-      updateCarousel();
-    });
+    function updateGradients() {
+      const scrollLeft = bottomBarContainer.scrollLeft;
+      const scrollWidth = bottomBarContainer.scrollWidth;
+      const clientWidth = bottomBarContainer.clientWidth;
+
+      if (scrollLeft > 0) {
+        leftGradient.style.display = "block";
+      } else {
+        leftGradient.style.display = "none";
+      }
+
+      if (scrollLeft + clientWidth < scrollWidth) {
+        rightGradient.style.display = "block";
+      } else {
+        rightGradient.style.display = "none";
+      }
+    }
+
+    bottomBarContainer.addEventListener("scroll", updateGradients);
+
+    window.addEventListener("resize", updateGradients);
+
+    updateCarousel();
+    updateGradients();
   });
 </script>
+
 
 <style>
   .carousel-container {
@@ -460,5 +492,33 @@
     padding: 5px 0px 0px 10px;
     color: #fff;
     white-space: normal;
+  }
+
+  .bottom-bar-gradient-box {
+    position: absolute;
+    top: 0;
+    width: 75px; 
+    height: 100%; 
+    z-index: 3;
+  }
+  
+  .left-gradient-box {
+    left: 35px;
+    background: linear-gradient(
+      to right,
+      rgba(66, 66, 66, 1) 0%, 
+      rgba(66, 66, 66, 1) 30%, 
+      rgba(66, 66, 66, 0) 100%
+    );
+  }
+
+  .right-gradient-box {
+    right: 35px;
+    background: linear-gradient(
+      to right,
+      rgba(66, 66, 66, 0) 0%,   
+      rgba(66, 66, 66, 1) 70%,
+      rgba(66, 66, 66, 1) 100% 
+    );
   }
 </style>
