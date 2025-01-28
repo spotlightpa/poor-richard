@@ -30,7 +30,7 @@
   ],
   "ad-rail-link": "https://www.speakfreepa.org/",
   "banner": "\u003cstrong\u003eShare your feedback in our annual reader survey »\u003c/strong\u003e ",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": " #ffcb03",
   "banner-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
   "banner-text-color": "#000000",
@@ -111,15 +111,15 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kq/ajhz/newsmatch-2023-tracker-banners.gif"
+    "https://files.data.spotlightpa.org/uploads/01ks/hz5e/2025-audience-survey-desktop-topper.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
-  "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-with-progress-bar",
+  "topper-image-description": "Please share your thoughts by taking our annual reader survey.",
+  "topper-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kq/ajhs/campaign-trackers-week-of-giving-1024-512-px-.gif"
+    "https://files.data.spotlightpa.org/uploads/01ks/hz5c/2025-audience-survey-mobile-topper.png"
   ],
   "topper-mobile-width": 1024
 }
