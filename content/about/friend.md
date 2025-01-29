@@ -4,8 +4,10 @@ description = "Join Our State College Community"
 url = "/friend/"
 modal-exclude = true
 no-index = true
-image = "2022/06/01hb-4958-4rxz-4t0q.png"
+image = "2025/01/01ks-n5q5-e9nq-3wha.png"
 +++
+
+{{<picture src="2025/01/01ks-n5q5-e9nq-3wha.png" width-ratio="3000" height-ratio="1200" focus="ce" description="Nab Our Swag!">}}
 
 Thanks for your interest in Spotlight PA State College. And thanks to your friend for referring you!
 
