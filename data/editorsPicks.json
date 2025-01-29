@@ -12,16 +12,15 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-01-28-SPLHOUSEMAJ0125.md"
+    "content/news/2025-01-28-SPLNONCOMPETE0125.md"
   ],
   "subfeatures": [
-    "content/news/2024-11-08-SPLLEGCONT24.md",
-    "content/news/2023-12-08-SPLSESSION.md",
-    "content/news/2025-01-03-SPLSPECEXCOSTS0125.md",
-    "content/news/2023-04-12-SPLHOWMAJ.md"
+    "content/news/2025-01-21-SPLEMPATH0125.md",
+    "content/news/2025-01-14-SPLBEREAVE0125.md",
+    "content/news/2025-01-07-SPLMEMOS0125.md"
   ],
   "topSlots": [
-    "content/news/2025-01-28-SPLNONCOMPETE0125.md",
+    "content/news/2025-01-28-SPLHOUSEMAJ0125.md",
     "content/statecollege/2025-01-27-SPLPSUCC0125.md",
     "content/news/2025-01-24-SPLCYBERAI0125.md"
   ],
