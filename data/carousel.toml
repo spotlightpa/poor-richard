@@ -6,8 +6,6 @@ short = "The state fired a third-party contractor after Spotlight PA revealed se
 link = "https://www.spotlightpa.org/series/the-waiting-game/"
 linkText = "Read the series"
 image = "external/s36w4vxgrg2nnpxjrf10fce26m.jpeg"
-width = "2400"
-height = "1600"
 alt = "Rooftops of homes in Blair County, Pennsylvania."
 
 [[items]]
@@ -18,8 +16,6 @@ short = "The Abolitionist Law Center helped secure the release of a dying man in
 link = "https://www.spotlightpa.org/series/compassionate-release/"
 linkText = "Read the series"
 image = "external/hwnfrvf2w1dn3kh88ayg1hm4wg.jpeg"
-width = "5000"
-height = "3571"
 alt = "Mary Buffaloe holds a picture of her brother Raymond Caliman."
 
 [[items]]
@@ -30,8 +26,6 @@ short = "Spotlight PA revealed how the state overcharged unemployed residents fo
 link = "https://www.spotlightpa.org/series/unemployment-error/"
 linkText = "Read the series"
 image = "external/f6ep1f7bhr8rpp8593ajs8qan8.jpeg"
-width = "5000"
-height = "3333"
 alt = "Outside the headquarters of the Pennsylvania Department of Labor and Industry in Harrisburg."
 
 [[items]]
@@ -42,8 +36,6 @@ short = "A Spotlight PA series into how lawmakers spend tax dollars and hide it 
 link = "https://www.spotlightpa.org/series/the-hidden-tab/"
 linkText = "Read the series"
 image = "2021/05/01g9-n3k6-wyge-26ya.jpeg"
-width = "2400"
-height = "1600"
 alt = "An illustration that shows a $100 bill disappearing."
 
 [[items]]
@@ -54,8 +46,6 @@ short = "Lawmakers introduced a bill after Spotlight PA found prior misconduct i
 link = "https://www.spotlightpa.org/series/cannabis-card-game/"
 linkText = "Read the series"
 image = "2024/09/01kd-exzm-5q45-9bgd.jpeg"
-width = "5000"
-height = "3571"
 alt = "An illustration of three doctors, with a hand holding two tokens, one of a red X and one of a marijuana leaf."
 
 [[items]]
@@ -66,7 +56,5 @@ short = "Investigations into suspected abuse and neglect of older residents are 
 link = "https://www.spotlightpa.org/series/elder-abuse/"
 linkText = "Read the series"
 image = "2024/07/01k8-5d1k-rmfp-kkm7.jpeg"
-width = "5000"
-height = "3333"
 alt = "An lllustration of an older person looking outside a window as days go by."
 

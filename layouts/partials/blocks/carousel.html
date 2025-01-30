@@ -12,7 +12,7 @@
       <div class="carousel-item" data-index="{{ $index }}">
         <img
           class="carousel-photo"
-          src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" $w "height" $h) }}"
+          src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 1200 "height" 800) }}"
           alt="{{ $item.alt }}"
         />
         <div class="carousel-blurb">
