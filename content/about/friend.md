@@ -1,6 +1,7 @@
 +++
-title = "Friend Referral Program"
-description = "Join Our State College Community"
+title-tag = "Spotlight PA State College Sign Up Form"
+title = "Join Our State College Community"
+description = "Subscribe to Talk of the Town, our free local newsletter covering State College and north central PA—and get your friend closer to free Spotlight PA gear."
 url = "/friend/"
 modal-exclude = true
 no-index = true
