@@ -1,6 +1,7 @@
 +++
-title = "Friend Referral Program"
-description = "Share Talk of the Town"
+title-tag = "Spotlight PA State College Referral Program"
+title = "Share Talk of the Town with Friends"
+description = "Earn free Spotlight PA swag by referring friends to Talk of the Town, our free local newsletter covering State College and north central PA."
 url = "/referafriend/"
 no-index = true
 modal-exclude = true
