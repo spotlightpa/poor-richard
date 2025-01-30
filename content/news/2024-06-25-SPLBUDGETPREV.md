@@ -21,6 +21,28 @@ topics = ["The Capitol"]
 twitter-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
 +++
 
++++
+authors = ["Stephen Caruso"]
+blurb = "With the PA budget deadline approaching, lawmakers have found common ground on taxes, permitting, and college. But crucially, they’re far from a deal on basic education funding."
+byline = "Stephen Caruso of Spotlight PA"
+description = "As PA's budget deadline nears, lawmakers have found common ground on taxes, permitting, and college. But they’re far from a deal on education funding."
+image = "2023/07/01jb-2wj9-7c7j-j9jk.jpeg"
+image-credit = "Commonwealth Media Services"
+image-description = "The Pennsylvania Capitol building in Harrisburg."
+internal-id = "SPLBUDGETPREV"
+kicker = "The Capitol"
+modal-exclude = false
+og-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
+pinned = false
+published = 2024-06-25T04:00:00-04:00
+slug = "budget-deadline-education-funding-surplus-deal-pennsylvania-taxes"
+suppress-date = false
+title = "A big education fight stands in the way of a Pa. budget deal"
+title-tag = "PA lawmakers clash over education funding as deadline nears"
+topics = ["The Capitol"]
+twitter-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
++++
+
 HARRISBURG — How much money to spend on Pennsylvania’s public education system has become a key barrier to a budget deal as lawmakers launch a barrage of talks ahead of the June 30 deadline.
 
 Leaders in the split legislature say there are potential compromises on other key topics, including overhauling the state&#39;s permitting process, making college cheaper, and creating new tax breaks.
@@ -45,7 +67,7 @@ Democratic lawmakers and the Shapiro administration <a href="https://www.spotlig
 
 The report estimated it would cost $5.4 billion over the next seven years just to bring each district up to the new standard, alongside billions in additional dollars for property tax relief, school construction, teacher training, and school mental health resources — among other programs.
 
-A <a href="https://web.archive.org/20240605030359/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=2370">bill</a> that would implement that plan, and that includes changes to the way <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-education-public-school-district-cyber-charter-reform-funding/">districts reimburse cyber charter schools</a> that could save districts millions of dollars, passed the state House with bipartisan support earlier this month.
+A <a href="https://web.archive.org/20240605030359/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2370">bill</a> that would implement that plan, and that includes changes to the way <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-education-public-school-district-cyber-charter-reform-funding/">districts reimburse cyber charter schools</a> that could save districts millions of dollars, passed the state House with bipartisan support earlier this month.
 
 Sustaining such spending would quickly drain Pennsylvania&#39;s cash reserves. But a University of Pennsylvania <a href="https://web.archive.org/20240618182321/https://static1.squarespace.com/static/583b86882e69cfc61c6c26dc/t/667097578a1eff2ba02be3b7/1718654807811/CBCSE_PAReport_061724.pdf">report</a> released last week found that the benefits of increased education spending would outweigh the cost to taxpayers by boosting graduation rates and leading to “improved individual earnings, health, economic productivity, and reduced crime and government dependency.”
 
@@ -61,13 +83,13 @@ State Senate Republicans have advanced a package of bills that would offer schol
 
 Republicans’ longtime push to rewrite how state regulators issue permits may also bear fruit this year.
 
-The state Senate passed a <a href="https://web.archive.org/20240117184051/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0350&pn=0718">bill</a> last year that would require agencies to set internal timelines for each permit request. Under the measure, the permit would be automatically approved if a requester didn’t get a response by those deadlines.
+The state Senate passed a <a href="https://web.archive.org/20240117184051/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0350&amp;pn=0718">bill</a> last year that would require agencies to set internal timelines for each permit request. Under the measure, the permit would be automatically approved if a requester didn’t get a response by those deadlines.
 
 Democrats and environmental groups have traditionally opposed such efforts, arguing the practice could lead to more pollution and <a href="https://web.archive.org/20240625111148/https://www.epa.gov/caa-permitting/delegation-clean-air-act-authority">potentially threaten</a> funding tied to enforcing federal environmental laws. But Shapiro has tried to speed up the permitting process within his administration, and Bradford said last week that he’s been “hearing out” the state Senate on its bills amid talks.
 
 “We believe a government that is efficient is in everyone&#39;s best interests,” Bradford said.
 
-Finally, tax policy appears to be a potential bargaining chip. Responding to Shapiro’s spending plan, state Senate Republicans passed <a href="https://web.archive.org/20240510080906/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=S&type=B&bn=0269">a $3 billion tax cut plan</a> in May with Democratic support, arguing that Pennsylvania’s good financial position should be a sign to reduce taxes rather than increase spending.
+Finally, tax policy appears to be a potential bargaining chip. Responding to Shapiro’s spending plan, state Senate Republicans passed <a href="https://web.archive.org/20240510080906/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=0269">a $3 billion tax cut plan</a> in May with Democratic support, arguing that Pennsylvania’s good financial position should be a sign to reduce taxes rather than increase spending.
 
 Their bill would slightly lower the state&#39;s flat income tax. The <a href="https://web.archive.org/20240520093704/https://pennpolicy.org/republicans-choose-tax-cuts-for-the-rich-over-funding-education/">benefits</a> of the plan would be small and would skew toward higher earners, the liberal Pennsylvania Policy Center said in a brief. According to the group’s data, the wealthiest 1% of taxpayers would save an average of $5,400 a year while the bottom 20% would get back just about $20.
 
@@ -75,7 +97,7 @@ Last week, Pittman said the state Senate’s proposal was an attempt “to do so
 
 Bradford told Spotlight PA he is willing to look at tax cuts as part of a budget deal. He also argued that the best way to get money into working people’s pockets would be a state version of <a href="https://www.spotlightpa.org/news/2023/06/pa-child-care-earned-income-tax-credit-legislature-budget-shapiro/">the earned income tax credit</a>, a federal program that gives a tax break to people <a href="https://web.archive.org/20240101204659/https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables#EITC%20Tables">under certain income levels</a>.
 
-A <a href="https://web.archive.org/20240130062537/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1272">bill</a> that would create such a program passed the state House last year but has lingered in the Senate.
+A <a href="https://web.archive.org/20240130062537/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1272">bill</a> that would create such a program passed the state House last year but has lingered in the Senate.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
