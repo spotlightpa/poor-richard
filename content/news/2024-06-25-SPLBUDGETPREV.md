@@ -21,28 +21,6 @@ topics = ["The Capitol"]
 twitter-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
 +++
 
-+++
-authors = ["Stephen Caruso"]
-blurb = "With the PA budget deadline approaching, lawmakers have found common ground on taxes, permitting, and college. But crucially, they’re far from a deal on basic education funding."
-byline = "Stephen Caruso of Spotlight PA"
-description = "As PA's budget deadline nears, lawmakers have found common ground on taxes, permitting, and college. But they’re far from a deal on education funding."
-image = "2023/07/01jb-2wj9-7c7j-j9jk.jpeg"
-image-credit = "Commonwealth Media Services"
-image-description = "The Pennsylvania Capitol building in Harrisburg."
-internal-id = "SPLBUDGETPREV"
-kicker = "The Capitol"
-modal-exclude = false
-og-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
-pinned = false
-published = 2024-06-25T04:00:00-04:00
-slug = "budget-deadline-education-funding-surplus-deal-pennsylvania-taxes"
-suppress-date = false
-title = "A big education fight stands in the way of a Pa. budget deal"
-title-tag = "PA lawmakers clash over education funding as deadline nears"
-topics = ["The Capitol"]
-twitter-title = "The Pa. budget deadline is Sunday. There’s still no deal on education."
-+++
-
 HARRISBURG — How much money to spend on Pennsylvania’s public education system has become a key barrier to a budget deal as lawmakers launch a barrage of talks ahead of the June 30 deadline.
 
 Leaders in the split legislature say there are potential compromises on other key topics, including overhauling the state&#39;s permitting process, making college cheaper, and creating new tax breaks.
