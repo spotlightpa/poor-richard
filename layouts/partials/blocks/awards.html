@@ -14,7 +14,7 @@
         <div
           class="border-r-[2.5px] border-black p-[15px] font-bold sm:pl-[25px] sm:pr-[20px]"
         >
-          <ul class="year-list">
+          <ul class="year-list flex flex-col gap-[15px] text-[#b6b6b6]">
             {{ $years := slice }}
             {{ range . }}
               {{ $years = $years | append .year }}
@@ -23,7 +23,9 @@
             {{ $count := len $sortedYears }}
 
             {{ range $index := seq 0 (sub $count 1) }}
-              <li>{{ index $sortedYears (sub (sub $count 1) $index) }}</li>
+              <li class="cursor-pointer hover:text-black [&.active]:text-black">
+                {{ index $sortedYears (sub (sub $count 1) $index) }}
+              </li>
             {{ end }}
           </ul>
         </div>
@@ -40,6 +42,7 @@
             }
 
             const yearItems = yearList.querySelectorAll("li");
+
             yearItems.forEach((item) => {
               item.addEventListener("click", () => {
                 const activeYear = item.textContent.trim();
@@ -77,6 +80,7 @@
                 sections.forEach(({ header, container }) => {
                   const section = awardsContainer.querySelector(container);
                   const headerElement = awardsContainer.querySelector(header);
+
                   const hasVisibleAwards = Array.from(
                     section.querySelectorAll(".award-entity"),
                   ).some((award) => award.style.display === "block");
@@ -98,19 +102,23 @@
             class="awards-container"
             style="flex: 1 1 100%; word-break: break-word;"
           >
-            <p class="award-national-state national-awards-header">
+            <p
+              class="award-national-state national-awards-header pb-[10px] text-[22px] font-bold"
+            >
               National Awards
             </p>
             <div class="national-awards">
               {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
-                  <p class="award-story">
+                  <span class="award-category font-bold"
+                    >{{ .award_category }}</span
+                  >
+                  <p class="award-story mb-5">
                     {{ if .link }}
                       <a
                         href="{{ .link }}"
-                        class="award-story-link"
+                        class="award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
                         rel="noopener noreferrer"
                       >
                         {{ .story }}
@@ -123,19 +131,23 @@
               {{ end }}
             </div>
 
-            <p class="award-national-state national-finalists-header">
+            <p
+              class="award-national-state national-finalists-header pb-[10px] text-[22px] font-bold"
+            >
               National Finalists
             </p>
             <div class="national-finalists">
               {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
-                  <p class="award-story">
+                  <span class="award-category font-bold"
+                    >{{ .award_category }}</span
+                  >
+                  <p class="award-story mb-5">
                     {{ if .link }}
                       <a
                         href="{{ .link }}"
-                        class="award-story-link"
+                        class="award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
                         rel="noopener noreferrer"
                       >
                         {{ .story }}
@@ -148,17 +160,23 @@
               {{ end }}
             </div>
 
-            <p class="award-national-state state-awards-header">State Awards</p>
+            <p
+              class="award-national-state state-awards-header pb-[10px] text-[22px] font-bold"
+            >
+              State Awards
+            </p>
             <div class="state-awards">
               {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
-                  <p class="award-story">
+                  <span class="award-category font-bold"
+                    >{{ .award_category }}</span
+                  >
+                  <p class="award-story mb-5">
                     {{ if .link }}
                       <a
                         href="{{ .link }}"
-                        class="award-story-link"
+                        class="award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
                         rel="noopener noreferrer"
                       >
                         {{ .story }}
@@ -171,19 +189,23 @@
               {{ end }}
             </div>
 
-            <p class="award-national-state state-finalists-header">
+            <p
+              class="award-national-state state-finalists-header pb-[10px] text-[22px] font-bold"
+            >
               State Finalists
             </p>
             <div class="state-finalists">
               {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category">{{ .award_category }}</span>
-                  <p class="award-story">
+                  <span class="award-category font-bold"
+                    >{{ .award_category }}</span
+                  >
+                  <p class="award-story mb-5">
                     {{ if .link }}
                       <a
                         href="{{ .link }}"
-                        class="award-story-link"
+                        class="award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
                         rel="noopener noreferrer"
                       >
                         {{ .story }}
@@ -201,52 +223,3 @@
     </div>
   </div>
 {{ end }}
-
-
-<style>
-  .year-list li {
-    color: #b6b6b6;
-    margin: 7.5px 0;
-  }
-
-  .year-list li:first-child {
-    margin-top: 0;
-  }
-
-  .year-list li:last-child {
-    margin-bottom: 0;
-  }
-
-  .year-list li:hover {
-    color: black;
-    cursor: pointer;
-  }
-
-  .year-list li.active {
-    color: black;
-  }
-
-  .award-national-state {
-    font-weight: bold;
-    font-size: 22px;
-    padding-bottom: 10px;
-  }
-
-  .award-category {
-    font-weight: bold;
-  }
-
-  .award-story {
-    margin-bottom: 20px;
-  }
-
-  .award-story-link {
-    color: #22416e;
-    text-decoration: underline;
-    transition: color 0.5s ease;
-  }
-
-  .award-story-link:hover {
-    color: #ffcb03;
-  }
-</style>
