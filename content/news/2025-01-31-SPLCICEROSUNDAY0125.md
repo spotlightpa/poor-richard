@@ -60,7 +60,7 @@ Created in 1976, the state consumer advocate is charged with representing the �
 
 “Prior to creation of offices like ours around the country, the utilities were always well represented,” said Sonny Popowsky, who was consumer advocate from 1990 to 2012, the longest anyone has held the position. “But for individual consumers, it was difficult, if not impossible.”
 
-The advocate’s work of representing consumers happens within a courtroom-like atmosphere under the jurisdiction of the Public Utility Commission (PUC). That agency regulates more than 9,000 utilities in Pennsylvania that provide electric, gas, water, broadband, telephone, or transportation services — nearly all of which are privately owned companies.
+The advocate’s work of representing consumers happens within a courtroom-like atmosphere under the jurisdiction of the Public Utility Commission (PUC). That agency regulates more than 9,000 utilities in Pennsylvania that provide electric, gas, water, telephone, or transportation services — nearly all of which are privately owned companies.
 
 Before these utilities can take major actions like merging, closing, raising rates, or changing services, they must get approval from the PUC. The commission also ensures utilities provide safe service.
 
