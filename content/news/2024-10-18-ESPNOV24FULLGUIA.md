@@ -83,7 +83,7 @@ La urnas abren a las 7 a.m. y cierran a las 8.00 p.m. Siempre que esté en la co
 
 El último día para registrarse es el 21 de octubre.
 
-Puede registrarse en línea <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">aquí</a>, o presentar un <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/Voter_Registration_Application_Spanish.pdf">formulario de inscripción</a> en persona o por correo en la oficina electoral de su condado antes de la misma fecha.
+Puede registrarse en línea <a href="https://web.archive.org/20240110045750/https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">aquí</a>, o presentar un <a href="https://web.archive.org/20240626005611/https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/Voter_Registration_Application_Spanish.pdf">formulario de inscripción</a> en persona o por correo en la oficina electoral de su condado antes de la misma fecha.
 
 Los formularios de inscripción de votantes en línea deben enviarse antes de las 11:59 p.m. de ese día. La junta electoral de su condado debe recibir las solicitudes por correo y en persona antes de las 5 p.m.
 
@@ -91,41 +91,41 @@ Los formularios de inscripción de votantes en línea deben enviarse antes de la
 
 <h2 id="spl-heading-4">¿Cómo puedo consultar mi registro electoral?</h2>
 
-Puede comprobar su registro <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">aquí</a>. Puede buscar utilizando su nombre, condado, código postal y fecha de nacimiento, o introduciendo los números de su permiso de conducir o de su tarjeta de identificación de PennDOT.
+Puede comprobar su registro <a href="https://web.archive.org/20240110050448/https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">aquí</a>. Puede buscar utilizando su nombre, condado, código postal y fecha de nacimiento, o introduciendo los números de su permiso de conducir o de su tarjeta de identificación de PennDOT.
 
 <h2 id="spl-heading-5">¿Cómo cambio de partido?</h2>
 
-Para cambiar de partido, rellene el mismo <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">formulario de inscripción</a> que utilizó la primera vez.
+Para cambiar de partido, rellene el mismo <a href="https://web.archive.org/20240110045750/https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">formulario de inscripción</a> que utilizó la primera vez.
 
 Al rellenar el formulario, seleccione la casilla que dice &#34;cambio de partido&#34;. Si ajusta su afiliación menos de 15 días antes de las elecciones, el cambio no tendrá lugar hasta el siguiente ciclo electoral.
 
 <h2 id="spl-heading-6">¿Cómo puedo encontrar mi colegio electoral?</h2>
 
-Puede encontrar su colegio electoral <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, escribiendo su dirección.
+Puede encontrar su colegio electoral <a href="https://web.archive.org/20240110043356/https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, escribiendo su dirección.
 
 {{<dewey-assistant>}}
 
 <h2 id="spl-heading-7">¿Qué más necesito saber para votar en persona?</h2>
 
-Si es la primera vez que vota o la primera vez que vota después de cambiar de domicilio, deberá presentar un documento de identidad. Puede ser cualquier documento de identidad expedido por el gobierno, como una licencia de conducir o el pasaporte estadounidense; una factura de servicios públicos o un extracto bancario que incluya su nombre y dirección; o una identificación militar o de estudiante. <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/first-time-voters-spanish.html">Consulte la lista completa de opciones aquí</a>.
+Si es la primera vez que vota o la primera vez que vota después de cambiar de domicilio, deberá presentar un documento de identidad. Puede ser cualquier documento de identidad expedido por el gobierno, como una licencia de conducir o el pasaporte estadounidense; una factura de servicios públicos o un extracto bancario que incluya su nombre y dirección; o una identificación militar o de estudiante. <a href="https://web.archive.org/20240626005557/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/first-time-voters-spanish.html">Consulte la lista completa de opciones aquí</a>.
 
 <h2 id="spl-heading-8">¿Aún puedo solicitar el voto por correo?</h2>
 
-Puede solicitar una papeleta de voto por correo hasta el 29 de octubre, ya sea en línea o <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_MailInApplication_Spanish.pdf">por correo</a>. Sin embargo, la oficina del condado debe recibir su solicitud completa antes de las 5.00 p.m. de ese día.
+Puede solicitar una papeleta de voto por correo hasta el 29 de octubre, ya sea en línea o <a href="https://web.archive.org/20240626005620/https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_MailInApplication_Spanish.pdf">por correo</a>. Sin embargo, la oficina del condado debe recibir su solicitud completa antes de las 5.00 p.m. de ese día.
 
-<a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">Aquí encontrará la solicitud</a>. Deberá indicar su nombre, fecha de nacimiento, documento de identidad y firma.
+<a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">Aquí encontrará la solicitud</a>. Deberá indicar su nombre, fecha de nacimiento, documento de identidad y firma.
 
 <h2 id="spl-heading-9">¿Cómo se vota en ausencia?</h2>
 
-El proceso para solicitar un voto en ausencia es similar al de solicitar el voto por correo. Puede presentar <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">la solicitud en línea</a> o <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_AbsenteeApplication-Spanish.pdf">descargar el formulario</a> y enviarlo a la oficina electoral de su condado. Sin embargo, la solicitud requiere que indique el motivo de su ausencia, a diferencia del voto por correo. Puede <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">encontrar la solicitud aquí</a>.
+El proceso para solicitar un voto en ausencia es similar al de solicitar el voto por correo. Puede presentar <a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">la solicitud en línea</a> o <a href="https://web.archive.org/20240626005641/https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_AbsenteeApplication-Spanish.pdf">descargar el formulario</a> y enviarlo a la oficina electoral de su condado. Sin embargo, la solicitud requiere que indique el motivo de su ausencia, a diferencia del voto por correo. Puede <a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin">encontrar la solicitud aquí</a>.
 
 El plazo de presentación de solicitudes finaliza el 29 de octubre a las 5 p.m. y debe ser recibida por oficina del condado antes de esa hora.
 
-Si se le pasa la fecha límite del 29 de octubre, todavía puede solicitar una papeleta de voto en ausencia de emergencia en la oficina electoral de su condado si sufre una enfermedad inesperada, una discapacidad o una ausencia de última hora. Puede <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_AuthorizeRepresentativeforEmergencyAbsenteeBallot-Spanish.pdf">solicitarlo aquí</a>.
+Si se le pasa la fecha límite del 29 de octubre, todavía puede solicitar una papeleta de voto en ausencia de emergencia en la oficina electoral de su condado si sufre una enfermedad inesperada, una discapacidad o una ausencia de última hora. Puede <a href="https://web.archive.org/20240626005611/https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/PADOS_AuthorizeRepresentativeforEmergencyAbsenteeBallot-Spanish.pdf">solicitarlo aquí</a>.
 
 <h2 id="spl-heading-10">He presentado mi solicitud, pero aún no he recibido el voto por correo o en ausencia. ¿Qué debo hacer?</h2>
 
-Puede comprobar el estado de su voto por correo o en ausencia <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
+Puede comprobar el estado de su voto por correo o en ausencia <a href="https://web.archive.org/20240108142928/https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
 
 También puede acudir a la oficina electoral de su condado para solicitar una papeleta y rellenarla, o ir a su colegio electoral y votar en persona el día de las elecciones.
 
@@ -133,11 +133,11 @@ También puede acudir a la oficina electoral de su condado para solicitar una pa
 
 En primer lugar, asegúrese <a href="https://www.spotlightpa.org/news/2024/10/pensilvania-elecciones-generales-2024-votar-correo-como-llenar/">de haberlo rellenado completamente y de que ha seguido todas las instrucciones</a>, incluida la de fechar correctamente el sobre de la papeleta y utilizar el sobre secreto interior. De lo contrario, es posible que su voto no se contabilice.
 
-Todo el mundo puede devolver su papeleta por correo o depositándola en la oficina electoral de su condado. Algunos condados también tienen buzones de entrega. <a href="https://www.pa.gov/en/agencies/vote/recursos-en-espanol/contact-us-spanish/county-contact-spanish.html">Encuentre aquí la información de contacto del condado</a>.
+Todo el mundo puede devolver su papeleta por correo o depositándola en la oficina electoral de su condado. Algunos condados también tienen buzones de entrega. <a href="https://web.archive.org/20240626005532/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/contact-us-spanish/county-contact-spanish.html">Encuentre aquí la información de contacto del condado</a>.
 
 La oficina electoral de su condado debe recibir su papeleta antes de las 8 p.m. del día de las elecciones. Los matasellos no cuentan.
 
-Si tiene una discapacidad que le impide devolver su propia papeleta, <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/Authorize-Designated-Agent-for-Mail-in-or-Absentee-Ballot-SPANISH.pdf">puede rellenar un formulario para designar a otra persona que la devuelva por usted</a>. Debe entregar el formulario con su solicitud de voto por correo, y la persona designada debe tener una copia a mano cuando devuelva su papeleta. De lo contrario, usted deberá devolver su propia papeleta.
+Si tiene una discapacidad que le impide devolver su propia papeleta, <a href="https://web.archive.org/20240626005707/https://www.pa.gov/content/dam/copapwp-pagov/en/vote/resources/documents-and-forms/Authorize-Designated-Agent-for-Mail-in-or-Absentee-Ballot-SPANISH.pdf">puede rellenar un formulario para designar a otra persona que la devuelva por usted</a>. Debe entregar el formulario con su solicitud de voto por correo, y la persona designada debe tener una copia a mano cuando devuelva su papeleta. De lo contrario, usted deberá devolver su propia papeleta.
 
 {{<picture src="2023/11/01jn-4rb9-2sg8-pwpc.jpeg" description="Un trabajador electoral sostiene pegatinas de votación para los miembros de la comunidad el 7 de noviembre de 2023, en la Escuela Primaria Central en Allentown, Condado de Lehigh, Pensilvania." caption="Un trabajador electoral sostiene pegatinas de votación para los miembros de la comunidad el 7 de noviembre de 2023, en la Escuela Primaria Central en Allentown, Condado de Lehigh, Pensilvania." credit="Matt Smith / For Spotlight PA">}}
 
@@ -153,9 +153,9 @@ En 2020, Pensilvania fue uno de los estados decisivos en la victoria del preside
 
 Cuatro años después, se espera que Pensilvania vuelva a ser uno de los estados que determinen quién gana la presidencia.
 
-La vicepresidenta <a href="https://kamalaharris.com/">Kamala Harris</a>, candidata demócrata, se enfrentará al ex presidente <a href="https://www.donaldjtrump.com/">Donald Trump</a>, republicano, después de que Biden abandonara la carrera en julio.
+La vicepresidenta <a href="https://web.archive.org/20240115074706/https://kamalaharris.com/">Kamala Harris</a>, candidata demócrata, se enfrentará al ex presidente <a href="https://web.archive.org/20240101010655/https://www.donaldjtrump.com/">Donald Trump</a>, republicano, después de que Biden abandonara la carrera en julio.
 
-También se presentan los candidatos de terceros partidos <a href="https://www.jillstein2024.com/">Jill Stein</a> (Partido Verde) y <a href="https://votechaseoliver.com/">Chase Oliver</a> (Libertario).
+También se presentan los candidatos de terceros partidos <a href="https://web.archive.org/20240101093111/https://www.jillstein2024.com/">Jill Stein</a> (Partido Verde) y <a href="https://web.archive.org/20240103142231/https://votechaseoliver.com/">Chase Oliver</a> (Libertario).
 
 <h3 id="spl-heading-14">Senado de EE.UU.</h3>
 
@@ -163,15 +163,15 @@ El Senado de EE.UU. está compuesto por dos senadores de cada estado, en total 1
 
 Se prevé que las elecciones al Senado de Pensilvania sean una de las más caras del año.
 
-Actualmente, un estrecho margen de dos escaños da a los demócratas el control de la cámara, pero con <a href="https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 senadores demócratas</a> en la papeleta de este año, ese equilibrio podría cambiar fácilmente.
+Actualmente, un estrecho margen de dos escaños da a los demócratas el control de la cámara, pero con <a href="https://web.archive.org/20240409061554/https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 senadores demócratas</a> en la papeleta de este año, ese equilibrio podría cambiar fácilmente.
 
-Tras unas primarias sin oposición, las elecciones al Senado de Pensilvania <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">se reducen a dos candidatos de los principales partidos</a>: el demócrata <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a>, que lleva tres mandatos, y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+Tras unas primarias sin oposición, las elecciones al Senado de Pensilvania <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">se reducen a dos candidatos de los principales partidos</a>: el demócrata <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a>, que lleva tres mandatos, y el republicano <a href="https://web.archive.org/20240109225236/https://www.davemccormickpa.com/">David McCormick</a>.
 
-Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
+Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://web.archive.org/20240222015724/https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
 
-McCormick, nacido en Washington, Pensilvania, es un antiguo gestor de fondos de cobertura. Se presentó como candidato al Senado en 2022, pero perdió por un estrecho margen frente a Mehmet Oz en las primarias. Su experiencia en cargos públicos incluye haber <a href="https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">sido subsecretario del Tesoro de Estados Unidos</a> y, más tarde, <a href="https://georgewbush-whitehouse.archives.gov/government/mccormick-bio.html">viceconsejero de Seguridad Nacional</a> durante el Gobierno de George W. Bush.
+McCormick, nacido en Washington, Pensilvania, es un antiguo gestor de fondos de cobertura. Se presentó como candidato al Senado en 2022, pero perdió por un estrecho margen frente a Mehmet Oz en las primarias. Su experiencia en cargos públicos incluye haber <a href="https://web.archive.org/20240226185747/https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">sido subsecretario del Tesoro de Estados Unidos</a> y, más tarde, <a href="https://web.archive.org/20240516082522/https://georgewbush-whitehouse.archives.gov/government/mccormick-bio.html">viceconsejero de Seguridad Nacional</a> durante el Gobierno de George W. Bush.
 
-También están en liza los candidatos de terceros partidos <a href="https://www.leilaforsenate.com/">Leila Hazou</a> (Partido Verde), <a href="https://www.martyselkerforsenate.com/">Marty Selker</a> (Partido de la Constitución) y <a href="https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertario).
+También están en liza los candidatos de terceros partidos <a href="https://web.archive.org/20240403154926/https://www.leilaforsenate.com/">Leila Hazou</a> (Partido Verde), <a href="https://web.archive.org/20240329232651/https://www.martyselkerforsenate.com/">Marty Selker</a> (Partido de la Constitución) y <a href="https://web.archive.org/20240923110417/https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertario).
 
 Puede leer más sobre los <a href="https://www.spotlightpa.org/news/2024/10/pensilvania-elecciones-2024-candidatos-senado-bob-casey-dave-mccormick-terceros-partidos/">candidatos al Senado de EE.UU. aquí</a>.
 
@@ -181,9 +181,9 @@ La Cámara de Representantes de Estados Unidos está compuesta por 435 miembros 
 
 Los miembros de la Cámara de Representantes tienen mandatos de dos años y se presentan a la reelección en los años pares.
 
-<a href="https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">Los 17 miembros de la delegación de Pensilvania</a> en la Cámara de Representantes — nueve demócratas y ocho republicanos — se presentan a la reelección en 2024. Quién aparece en su papeleta será dictado por el distrito congresional en el que vive.
+<a href="https://web.archive.org/20240215013829/https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">Los 17 miembros de la delegación de Pensilvania</a> en la Cámara de Representantes — nueve demócratas y ocho republicanos — se presentan a la reelección en 2024. Quién aparece en su papeleta será dictado por el distrito congresional en el que vive.
 
-Para saber quién se presenta en su distrito, visite la <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">herramienta de búsqueda de legisladores</a> del estado o utilice la <a href="https://viz-sample-ballot-2024.data.spotlightpa.org/">herramienta de papeletas de muestra</a> de Spotlight PA.
+Para saber quién se presenta en su distrito, visite la <a href="https://web.archive.org/20240228132606/https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">herramienta de búsqueda de legisladores</a> del estado o utilice la <a href="https://web.archive.org/20240918211440/https://viz-sample-ballot-2024.data.spotlightpa.org/">herramienta de papeletas de muestra</a> de Spotlight PA.
 
 <h3 id="spl-heading-16">Asamblea General</h3>
 
@@ -195,7 +195,7 @@ Los senadores de la cámara son elegidos para mandatos de cuatro años, y la mit
 
 En la actualidad, los demócratas <a href="https://www.spotlightpa.org/news/2024/10/pennsylvania-house-democratic-majority-november-election-2024-policy-agenda-poll/">tienen una mayoría de un voto en la Cámara de Representantes</a> estatal, mientras que los republicanos controlan el Senado estatal <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-state-senate-elections-2024-democratic-majority-flip-republican/">por seis</a>.
 
-Para saber quién se presenta en su distrito, visite <a href="https://www.vote411.org/es">VOTE411</a>, una herramienta del Fondo Educativo de la Liga de Mujeres Votantes.
+Para saber quién se presenta en su distrito, visite <a href="https://web.archive.org/20240104083812/https://www.vote411.org/es">VOTE411</a>, una herramienta del Fondo Educativo de la Liga de Mujeres Votantes.
 
 {{<embed/donate>}}
 
@@ -205,23 +205,23 @@ Pensilvania cuenta con tres cargos electos, todos ellos en contienda este año: 
 
 En la carrera por la fiscalía general, Michelle Henry — nombrada para sustituir a Josh Shapiro después de que dejó el cargo para convertirse en gobernador — no se presenta para mantener el cargo, lo que deja el campo abierto.
 
-El demócrata <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> se enfrentará al republicano <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Entre los candidatos de terceros partidos en liza figuran <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Partido de la Constitución), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Partido Forward), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Partido Verde) y <a href="https://cowburnforag.com/">Robert Cowburn</a> (Partido Libertario).
+El demócrata <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> se enfrentará al republicano <a href="https://web.archive.org/20240216062442/https://www.davesundayforag.com/">Dave Sunday</a>. Entre los candidatos de terceros partidos en liza figuran <a href="https://web.archive.org/20240126135155/https://www.constitutionpartypa.com/">Justin Magill</a> (Partido de la Constitución), <a href="https://web.archive.org/20240524233200/https://ericsettle4ag.com/">Eric Settle</a> (Partido Forward), <a href="https://web.archive.org/20240804211427/https://x.com/richardlweiss">Richard L. Weiss</a> (Partido Verde) y <a href="https://web.archive.org/20240516212505/https://cowburnforag.com/">Robert Cowburn</a> (Partido Libertario).
 
 Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-fiscal-general-candidatos-eugene-depasquale-dave-sunday/">los candidatos a fiscal general aquí</a>.
 
-En la carrera por el cargo de auditor general, el republicano y actual auditor general <a href="https://www.defoor4pa.com/meet-tim">Tim DeFoor</a> se enfrenta al demócrata <a href="https://malcolmkenyatta.com/">Malcolm Kenyatta</a>. Los candidatos de terceros partidos son <a href="https://www.solidarity-party.org/elected-officials-candidates">Eric Anton</a> (Partido de la Solidaridad Americana), <a href="https://www.constitutionpartypa.com/">Alan ‘Bob’ Goodrich</a> (Partido de la Constitución) y <a href="https://www.votereece.com/">Reece Smith</a> (Partido Libertario).
+En la carrera por el cargo de auditor general, el republicano y actual auditor general <a href="https://web.archive.org/20240415053855/https://www.defoor4pa.com/meet-tim">Tim DeFoor</a> se enfrenta al demócrata <a href="https://web.archive.org/20240202184211/https://malcolmkenyatta.com/">Malcolm Kenyatta</a>. Los candidatos de terceros partidos son <a href="https://web.archive.org/20240126064206/https://www.solidarity-party.org/elected-officials-candidates">Eric Anton</a> (Partido de la Solidaridad Americana), <a href="https://web.archive.org/20240126135155/https://www.constitutionpartypa.com/">Alan ‘Bob’ Goodrich</a> (Partido de la Constitución) y <a href="https://web.archive.org/20240415014528/https://www.votereece.com/">Reece Smith</a> (Partido Libertario).
 
 Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-auditor-general-candidatos-tim-defoor-malcolm-kenyatta/">los candidatos a auditor general aquí</a>.
 
-La carrera por la tesorería enfrenta a la republicana y actual tesorero <a href="https://www.garrityforpa.com/">Stacy Garrity</a> y a la demócrata <a href="https://erinmcclelland.com/">Erin McClelland</a>. Los candidatos de terceros partidos son <a href="https://home.forwardparty.com/foster_chris">Chris Foster</a> (Partido Forward), <a href="https://nickcforpa.com/">Nick Ciesielski</a> (Partido Libertario) y Troy Bowman (Partido de la Constitución).
+La carrera por la tesorería enfrenta a la republicana y actual tesorero <a href="https://web.archive.org/20240115193440/https://www.garrityforpa.com/">Stacy Garrity</a> y a la demócrata <a href="https://web.archive.org/20240216062642/https://erinmcclelland.com/">Erin McClelland</a>. Los candidatos de terceros partidos son <a href="https://web.archive.org/20240613073926/https://home.forwardparty.com/foster_chris">Chris Foster</a> (Partido Forward), <a href="https://web.archive.org/20240521103908/https://nickcforpa.com/">Nick Ciesielski</a> (Partido Libertario) y Troy Bowman (Partido de la Constitución).
 
 Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/09/pensilvania-elecciones-2024-tesorero-candidatos-stacy-garrity-erin-mccelland/">los candidatos a tesorero aquí</a>.
 
 <h2 id="spl-heading-18">¿Qué más habrá en mi papeleta?</h2>
 
-No hay medidas de votación a nivel estatal este año, pero algunos votantes podrán ver alguna pregunta de voto local en su papeleta. <a href="https://chescodems.org/2024G/735_E_WHITELAND_1.pdf">El municipio de East Whiteland en el condado de Chester</a>, por ejemplo, tendrá una. <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">Consulte con la oficina electoral de su condado para estar seguro</a>.
+No hay medidas de votación a nivel estatal este año, pero algunos votantes podrán ver alguna pregunta de voto local en su papeleta. <a href="https://web.archive.org/20241005062038/https://chescodems.org/2024G/735_E_WHITELAND_1.pdf">El municipio de East Whiteland en el condado de Chester</a>, por ejemplo, tendrá una. <a href="https://web.archive.org/20240927152420/https://www.pa.gov/en/agencies/vote/recursos-en-espanol/voter-support-spanish/mail-ballot-availability-spanish.html">Consulte con la oficina electoral de su condado para estar seguro</a>.
 
-Si desea ver un modelo de papeleta, puede utilizar la <a href="https://viz-sample-ballot-2024.data.spotlightpa.org/">herramienta de</a> Spotlight PA.
+Si desea ver un modelo de papeleta, puede utilizar la <a href="https://web.archive.org/20240918211440/https://viz-sample-ballot-2024.data.spotlightpa.org/">herramienta de</a> Spotlight PA.
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Conozca más</a> sobre cómo Spotlight PA cubre las elecciones de 2024.
 
