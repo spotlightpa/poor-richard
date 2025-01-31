@@ -73,6 +73,18 @@
 </div>
 
 <script>
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      const later = () => {
+        timeout = null;
+        func.apply(this, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const carouselItems = document.querySelectorAll(".carousel-item");
     const leftArrow = document.querySelector(".left-arrow");
@@ -203,9 +215,10 @@
       }
     }
 
-    bottomBarContainer.addEventListener("scroll", updateGradients);
+    const debouncedUpdateGradients = debounce(updateGradients, 20);
 
-    window.addEventListener("resize", updateGradients);
+    bottomBarContainer.addEventListener("scroll", debouncedUpdateGradients);
+    window.addEventListener("resize", debouncedUpdateGradients);
 
     updateCarousel();
     updateGradients();
