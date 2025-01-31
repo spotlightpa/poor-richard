@@ -1,11 +1,11 @@
-<div id="carousel-container" class="carousel-container pt-16">
+<div class="carousel-container">
   <div class="carousel-arrow left-arrow">
     <svg class="h-16 w-16 fill-white">
       {{ partial "helper/svg.html" "chevron-left" }}
     </svg>
   </div>
 
-  <div id="carousel-content" class="carousel-content">
+  <div class="carousel-content">
     {{ range $index, $item := site.Data.carousel.items }}
       {{ $w := int $item.width }}
       {{ $h := int $item.height }}
@@ -218,6 +218,7 @@
     align-items: center;
     position: relative;
     width: 100%;
+    background-color: #cfcfcf;
   }
 
   .carousel-arrow {
