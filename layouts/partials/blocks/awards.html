@@ -12,9 +12,7 @@
 
       <div class="flex w-full">
         <div
-          id="years-padding"
-          class="font-bold"
-          style="padding: 15px 20px 15px 25px; border-right: 2.5px solid black;"
+          class="border-r-[2.5px] border-black p-[15px] font-bold sm:pl-[25px] sm:pr-[20px]"
         >
           <ul class="year-list">
             {{ $years := slice }}
@@ -94,8 +92,7 @@
         </script>
 
         <div
-          id="awards-padding"
-          style="padding: 15px 20px 15px 25px; display: flex; flex-wrap: wrap; width: 100%;"
+          class="flex w-full flex-wrap pb-[15px] pl-[15px] pr-0 pt-[15px] sm:pl-[25px] sm:pr-[20px]"
         >
           <div
             class="awards-container"
@@ -255,15 +252,5 @@
 
   .award-story-link:hover {
     color: #ffcb03;
-  }
-
-  @media screen and (max-width: 500px) {
-    #awards-padding {
-      padding: 15px 0px 15px 15px !important;
-    }
-
-    #years-padding {
-      padding: 15px 15px 15px 15px !important;
-    }
   }
 </style>
