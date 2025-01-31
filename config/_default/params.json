@@ -8,7 +8,7 @@
     "https://files.data.spotlightpa.org/uploads/01jy/3sxa/1.png"
   ],
   "ad-breaker-link": "/donate",
-  "ad-featured-active": true,
+  "ad-featured-active": false,
   "ad-featured-image-description": "Please share your thoughts by taking our annual reader survey.",
   "ad-featured-images": [
     "https://files.data.spotlightpa.org/uploads/01ks/2eqy/2025-audience-survey-website.png"
@@ -79,12 +79,12 @@
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Please share your thoughts by taking our annual reader survey.\n",
+  "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01ks/2eqy/2025-audience-survey-website.png"
+    "https://files.data.spotlightpa.org/uploads/01kq/ajj0/newsmatch-2023-squares-1-.gif"
   ],
-  "sidebar-top-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
+  "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar",
   "sidebar-top-width": 300,
   "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
@@ -111,15 +111,15 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01ks/hz5e/2025-audience-survey-desktop-topper.png"
+    "https://files.data.spotlightpa.org/uploads/01kq/ajhz/newsmatch-2023-tracker-banners.gif"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "Please share your thoughts by taking our annual reader survey.",
-  "topper-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
+  "topper-image-description": "Support unmatched election and investigative reporting for Pennsylvania.",
+  "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01ks/hz5c/2025-audience-survey-mobile-topper.png"
+    "https://files.data.spotlightpa.org/uploads/01kq/ajhs/campaign-trackers-week-of-giving-1024-512-px-.gif"
   ],
   "topper-mobile-width": 1024
 }
