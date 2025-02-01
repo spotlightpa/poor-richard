@@ -111,10 +111,9 @@
               {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category font-bold"
-                    >{{ .award_category }}</span
-                  >
-
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
                   <p class="award-story mb-5">
                     {{ partial "tag/maybe-link.html" (dict
                       "link" .link
@@ -136,9 +135,9 @@
               {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category font-bold"
-                    >{{ .award_category }}</span
-                  >
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
                   <p class="award-story mb-5">
                     {{ partial "tag/maybe-link.html" (dict
                       "link" .link
@@ -160,9 +159,9 @@
               {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category font-bold"
-                    >{{ .award_category }}</span
-                  >
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
                   <p class="award-story mb-5">
                     {{ partial "tag/maybe-link.html" (dict
                       "link" .link
@@ -184,9 +183,9 @@
               {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
                 <div class="award-entity" data-year="{{ .year }}">
                   {{ .entity }}:
-                  <span class="award-category font-bold"
-                    >{{ .award_category }}</span
-                  >
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
                   <p class="award-story mb-5">
                     {{ partial "tag/maybe-link.html" (dict
                       "link" .link
