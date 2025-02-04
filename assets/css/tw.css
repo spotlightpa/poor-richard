@@ -295,10 +295,6 @@
   @apply bg-yellow-3/75 p-1 font-semibold;
 }
 
-.year-link.active {
-  @apply text-black;
-}
-
 @tailwind utilities;
 
 .print-exact {

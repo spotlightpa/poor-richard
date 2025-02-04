@@ -1,4 +1,6 @@
 {{ with site.Data.awards }}
+  <span class="hidden text-black"></span>
+
   <div class="h-auto w-full bg-beige pb-16">
     <div class="mx-auto flex max-w-4xl items-center px-4 pb-4 pt-16">
       <svg class="mr-4 h-8 w-9" aria-hidden="true" style="fill: #b6b6b6;">
@@ -47,10 +49,8 @@
               item.addEventListener("click", () => {
                 const activeYear = item.textContent.trim();
 
-                // Remove the 'active' class from all items
-                yearItems.forEach((li) => li.classList.remove("active"));
-                // Add 'active' to the clicked item
-                item.classList.add("active");
+                yearItems.forEach((li) => li.classList.remove("text-black"));
+                item.classList.add("text-black");
 
                 const awardSections =
                   awardsContainer.querySelectorAll(".award-entity");
@@ -93,7 +93,6 @@
               });
             });
 
-            // Trigger the first year item click on page load if it exists
             yearItems[0]?.click();
           });
         </script>
