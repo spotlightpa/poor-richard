@@ -23,7 +23,9 @@
             {{ $count := len $sortedYears }}
 
             {{ range $index := seq 0 (sub $count 1) }}
-              <li class="cursor-pointer hover:text-black [&.active]:text-black">
+              <li
+                class="year-link cursor-pointer hover:text-black"
+              >
                 {{ index $sortedYears (sub (sub $count 1) $index) }}
               </li>
             {{ end }}
@@ -47,7 +49,9 @@
               item.addEventListener("click", () => {
                 const activeYear = item.textContent.trim();
 
+                // Remove the 'active' class from all items
                 yearItems.forEach((li) => li.classList.remove("active"));
+                // Add 'active' to the clicked item
                 item.classList.add("active");
 
                 const awardSections =
@@ -82,7 +86,7 @@
                   const headerElement = awardsContainer.querySelector(header);
 
                   const hasVisibleAwards = Array.from(
-                    section.querySelectorAll(".award-entity"),
+                    section.querySelectorAll(".award-entity")
                   ).some((award) => award.style.display === "block");
                   headerElement.style.display = hasVisibleAwards
                     ? "block"
@@ -91,6 +95,7 @@
               });
             });
 
+            // Trigger the first year item click on page load if it exists
             yearItems[0]?.click();
           });
         </script>
@@ -119,8 +124,7 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                      )
-                    }}
+                    ) }}
                   </p>
                 </div>
               {{ end }}
@@ -143,8 +147,7 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                      )
-                    }}
+                    ) }}
                   </p>
                 </div>
               {{ end }}
@@ -167,8 +170,7 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                      )
-                    }}
+                    ) }}
                   </p>
                 </div>
               {{ end }}
@@ -191,8 +193,7 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                      )
-                    }}
+                    ) }}
                   </p>
                 </div>
               {{ end }}
