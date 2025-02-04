@@ -1,34 +1,46 @@
 <div id="by-the-numbers-wrapper">
-  <div id="numbers-bar">
-    <div class="numbers-bar-item" id="first-div">
-      <div class="bar-content">
-        <div class="circle">
-          <span id="first-circle" class="circle-text">35</span>
+  <div id="numbers-bar" class="flex h-[110px] w-full items-center bg-[#ffcb03]">
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">35</span>
         </div>
         Policies Changed
       </div>
     </div>
     <div class="divider"></div>
-    <div class="numbers-bar-item" id="second-div">
-      <div class="bar-content">
-        <div class="circle">
-          <span id="second-circle" class="circle-text">14</span>
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">14</span>
         </div>
         Bills Introduced
       </div>
     </div>
     <div class="divider"></div>
-    <div class="numbers-bar-item" id="third-div">
-      <div class="bar-content">
-        <div class="circle">
-          <span id="third-circle" class="circle-text">8</span>
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">8</span>
         </div>
         Legal Victories
       </div>
     </div>
   </div>
 
-  <div id="numbers-page" class="pb-16">
+  <div class="flex items-center justify-center bg-black pb-16">
     <div class="grid-container">
       <div class="impact-numbers-title">
         <div>Journalism that</div>
@@ -36,34 +48,56 @@
           <span class="spotlight-text">Gets Results</span>
         </div>
       </div>
-      <div class="impact-block" id="first-impact-block">
-        <div class="impact-row">
+      <div
+        class="impact-block relative flex flex-col items-center justify-center p-[20px]"
+      >
+        <div class="impact-row flex w-full items-center justify-center">
           <div class="impact-symbol">
-            <svg aria-hidden="true" style="fill: #ffcb03;">
+            <svg aria-hidden="true" class="h-[75px] w-[75px] fill-[#ffcb03]">
               {{ partial "helper/svg.html" "envelope" }}
             </svg>
           </div>
         </div>
-        <div class="impact-row symbol-number">3,000+</div>
-        <div class="impact-row impact-text">Reader Tips</div>
+        <div
+          class="impact-row symbol-number flex w-full items-center justify-center text-[3.5em] font-bold text-white"
+        >
+          3,000+
+        </div>
+        <div
+          class="impact-row impact-text flex w-full max-w-fit items-center justify-center rounded-[4px] bg-[#ffcb03] px-[10px] py-[2.5px] text-center text-[1.4em] font-bold text-black"
+        >
+          Reader Tips
+        </div>
       </div>
 
-      <div class="impact-numbers-graf">
+      <div
+        class="impact-numbers-graf max-w-[640px] px-[50px] pb-[50px] pl-[100px] pt-[25px] text-[18px] text-white"
+      >
         Spotlight PA's investigative and public-service journalism changes laws
         and lives. Our reporting drives government accountability and
         transparency at all levels, provides an independent check on power and
         influence, and has saved Pennsylvania taxpayers millions of dollars.
       </div>
-      <div class="impact-block" id="second-impact-block">
-        <div class="impact-row">
+      <div
+        class="impact-block relative flex flex-col items-center justify-center p-[20px]"
+      >
+        <div class="impact-row flex w-full items-center justify-center">
           <div class="impact-symbol">
-            <svg aria-hidden="true" style="fill: #ffcb03;">
+            <svg aria-hidden="true" class="h-[75px] w-[75px] fill-[#ffcb03]">
               {{ partial "helper/svg.html" "gavel" }}
             </svg>
           </div>
         </div>
-        <div class="impact-row symbol-number">1,400+</div>
-        <div class="impact-row impact-text">Right to Know Requests</div>
+        <div
+          class="impact-row symbol-number flex w-full items-center justify-center text-[3.5em] font-bold text-white"
+        >
+          1,400+
+        </div>
+        <div
+          class="impact-row impact-text flex w-full max-w-fit items-center justify-center rounded-[4px] bg-[#ffcb03] px-[10px] py-[2.5px] text-center text-[1.4em] font-bold text-black"
+        >
+          Right to Know Requests
+        </div>
       </div>
     </div>
   </div>
@@ -74,19 +108,29 @@
     font-family: "Merriweather", serif;
   }
 
-  #numbers-bar {
-    background-color: #ffcb03;
-    height: 110px;
-    display: flex;
-    width: 100%;
-    align-items: center;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-  .numbers-bar-item {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .impact-numbers-title {
+    padding: 50px 50px 25px 100px;
+    color: white;
+    font-size: 56px;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+    max-width: 640px;
+    min-width: 630px;
+  }
+
+  .divider {
+    width: 3px;
+    background-color: #000;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   @media screen and (max-width: 930px) {
@@ -97,15 +141,6 @@
     .numbers-bar-item {
       max-width: 290px;
     }
-  }
-
-  .bar-content {
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4em;
   }
 
   @media screen and (max-width: 930px) {
@@ -120,16 +155,6 @@
     }
   }
 
-  .circle {
-    width: 85px;
-    height: 85px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   @media screen and (max-width: 990px) {
     .circle {
       width: 70px;
@@ -152,24 +177,10 @@
     }
   }
 
-  .circle-text {
-    color: black;
-    font-weight: bold;
-    font-size: 64px;
-  }
-
   @media screen and (max-width: 990px) {
     .circle-text {
       font-size: 48px;
     }
-  }
-
-  .divider {
-    width: 3px;
-    background-color: #000;
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
   }
 
   @media screen and (max-width: 710px) {
@@ -229,30 +240,6 @@
     }
   }
 
-  #numbers-page {
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .impact-numbers-title {
-    padding: 50px 50px 25px 100px;
-    color: white;
-    font-size: 56px;
-    text-align: left;
-    font-weight: bold;
-    position: relative;
-    max-width: 640px;
-    min-width: 630px;
-  }
-
   @media screen and (max-width: 990px) {
     .impact-numbers-title {
       font-size: 48px;
@@ -295,38 +282,10 @@
     z-index: 2;
   }
 
-  .impact-numbers-graf {
-    padding: 25px 50px 50px 100px;
-    color: white;
-    font-size: 18px;
-    max-width: 640px;
-  }
-
   @media screen and (max-width: 990px) {
     .impact-numbers-graf {
       padding-left: 50px;
     }
-  }
-
-  .impact-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    position: relative;
-  }
-
-  .impact-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .impact-symbol svg {
-    width: 75px;
-    height: 75px;
   }
 
   @media screen and (max-width: 990px) {
@@ -336,27 +295,10 @@
     }
   }
 
-  .symbol-number {
-    font-size: 3.5em;
-    color: #fff;
-    font-weight: bold;
-  }
-
   @media screen and (max-width: 990px) {
     .symbol-number {
       font-size: 2.75em;
     }
-  }
-
-  .impact-text {
-    background-color: #ffcb03;
-    color: black;
-    font-weight: bold;
-    font-size: 1.4em;
-    text-align: center;
-    border-radius: 4px;
-    padding: 2.5px 10px;
-    max-width: fit-content;
   }
 
   @media screen and (max-width: 990px) {
@@ -439,21 +381,11 @@
       grid-template-rows: auto auto;
       grid-template-areas:
         "title"
-        "graf"
-        "block1"
-        "block2";
+        "graf";
     }
 
     .impact-block {
       width: 100%;
-    }
-
-    #first-impact-block {
-      grid-area: block1;
-    }
-
-    #second-impact-block {
-      grid-area: block2;
     }
   }
 
