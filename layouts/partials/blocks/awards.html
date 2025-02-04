@@ -23,9 +23,7 @@
             {{ $count := len $sortedYears }}
 
             {{ range $index := seq 0 (sub $count 1) }}
-              <li
-                class="year-link cursor-pointer hover:text-black"
-              >
+              <li class="year-link cursor-pointer hover:text-black">
                 {{ index $sortedYears (sub (sub $count 1) $index) }}
               </li>
             {{ end }}
@@ -86,7 +84,7 @@
                   const headerElement = awardsContainer.querySelector(header);
 
                   const hasVisibleAwards = Array.from(
-                    section.querySelectorAll(".award-entity")
+                    section.querySelectorAll(".award-entity"),
                   ).some((award) => award.style.display === "block");
                   headerElement.style.display = hasVisibleAwards
                     ? "block"
@@ -124,7 +122,8 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                    ) }}
+                      )
+                    }}
                   </p>
                 </div>
               {{ end }}
@@ -147,7 +146,8 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                    ) }}
+                      )
+                    }}
                   </p>
                 </div>
               {{ end }}
@@ -170,7 +170,8 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                    ) }}
+                      )
+                    }}
                   </p>
                 </div>
               {{ end }}
@@ -193,7 +194,8 @@
                       "link" .link
                       "text" .story
                       "class" "award-story-link text-[#22416e] underline transition-colors duration-500 ease-linear hover:text-[#ffcb03]"
-                    ) }}
+                      )
+                    }}
                   </p>
                 </div>
               {{ end }}
