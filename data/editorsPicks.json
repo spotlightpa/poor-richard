@@ -12,17 +12,18 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/statecollege/2025-02-06-SPLAUDITS0225.md"
+    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-12-19-SPLGREGGHOW1224.md",
-    "content/statecollege/2024-12-02-SPLGREGG1224.md",
-    "content/statecollege/2024-08-09-SPLGREGG0824.md"
+    "content/statecollege/2025-01-31-SPLROCKSPRING0131.md",
+    "content/statecollege/2025-01-15-SPLROCKSPRING0125.md",
+    "content/statecollege/2024-11-01-SPLROCKSPRING1124.md",
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-02-06-SPLAUDITS0225.md",
     "content/news/2025-02-05-SPLWEEDREAL0225.md",
-    "content/news/2025-02-04-SPLPAIDLEAVE0225.md",
-    "content/news/2025-02-04-SPLCURERESULT0225.md"
+    "content/news/2025-02-04-SPLPAIDLEAVE0225.md"
   ],
   "topper": []
 }
