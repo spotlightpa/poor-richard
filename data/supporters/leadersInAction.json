@@ -806,7 +806,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Phil Straus",
+      "display": "Phil Straus and Margaret Harris",
       "sort": "Straus",
       "url": "",
       "category": "$1,000-$2,499",
@@ -937,6 +937,13 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
+    },
+    {
+      "display": "Strausstown Rod and Gun Club",
+      "sort": "Strausstown",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     }
   ]
 }
