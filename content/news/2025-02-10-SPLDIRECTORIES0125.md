@@ -1,5 +1,6 @@
 +++
 authors = ["Charlotte Keith"]
+blurb = "Widespread errors in Pa. insurance provider listings are going uncorrected for months, raising concerns about access to care, a new report shows."
 byline = "Charlotte Keith of Spotlight PA"
 description = "Widespread errors in PA insurance provider listings are going uncorrected for months, raising concerns about access to care, a new report shows."
 feed-exclude = false
