@@ -14,7 +14,7 @@ pinned = false
 published = 2025-02-10T04:00:00-05:00
 slug = "pennsylvania-insurance-provider-directory-errors"
 suppress-date = false
-title = "Error-filled directories leaves thousands in Pa. unable to find health care providers"
+title = "Error-filled directories leave thousands in Pa. unable to find health care providers"
 title-tag = "Medical directory errors harm Pa. healthcare access"
 topics = ["Health"]
 +++
