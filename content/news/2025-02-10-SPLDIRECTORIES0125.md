@@ -49,7 +49,7 @@ The No Surprises Act, which took effect in 2022, aims to protect consumers natio
 
 The study also found that insurance companies removed bad info at significantly different rates. One follow-up survey found that Ambetter removed 35% of inaccurate listings, while Independence Blue Cross removed 9%.
 
-Some of the variations can be explained by differences in geography, Haeder said — insurers that <strong>mostly enroll customers in urban areas where there are more doctors likely see more provider turnover, which increases the likelihood of inaccuracies.</strong> But the variation also indicates companies take different approaches to verifying and updating directory information, and that some commit more resources to the task than others, the study concluded.
+Some of the variations can be explained by differences in geography, Haeder said — insurers that mostly enroll customers in urban areas where there are more doctors likely see more provider turnover, which increases the likelihood of inaccuracies. But the variation also indicates companies take different approaches to verifying and updating directory information, and that some commit more resources to the task than others, the study concluded.
 
 To address the problem, the study recommends several policy changes. The state Insurance Department could require insurers to share the steps they take to update provider information. Providers whose details can’t be properly verified could be kept out of directories. The department could also crack down on insurers and providers that don’t comply with the law by issuing steeper fines and penalties, the study suggests.
 
