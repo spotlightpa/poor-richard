@@ -53,9 +53,9 @@ Counties also typically use outside companies to print their ballots, which mean
 
 A spokesperson for the courts did not respond to a request for comment when asked when voters could expect a decision on the challenges.
 
-The Pennsylvania Department of State <a href="https://pa.gov/en/agencies/dos/programs/voting-and-elections/running-for-office/third-party-nomination-paperwork.html">has set up a webpage</a> where voters can keep track of the third-party ballot access cases that are delaying the ballots.
+The Pennsylvania Department of State <a href="https://web.archive.org/20240626005538/https://pa.gov/en/agencies/dos/programs/voting-and-elections/running-for-office/third-party-nomination-paperwork.html">has set up a webpage</a> where voters can keep track of the third-party ballot access cases that are delaying the ballots.
 
-Voters should check with <a href="https://pa.gov/en/agencies/vote/contact-us/contact-your-election-officials.html">their individual county elections office</a> for updated information on when ballots will be available in their county.
+Voters should check with <a href="https://web.archive.org/20240626005558/https://pa.gov/en/agencies/vote/contact-us/contact-your-election-officials.html">their individual county elections office</a> for updated information on when ballots will be available in their county.
 
 <em>Carter Walker is a reporter for Votebeat in partnership with Spotlight PA. Contact Carter at </em><a href="mailto:cwalker@votebeat.org"><em>cwalker@votebeat.org</em></a><em>.</em>
 
