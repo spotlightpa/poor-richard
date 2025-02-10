@@ -18,6 +18,11 @@ name = "About"
 url = "/about/"
 weight = 4
 
+[[main]]
+name = "Impact"
+url = "/about/impact/"
+weight = 5
+
 [[about]]
 name = "Our Mission"
 url = "/about/mission/"
@@ -40,30 +45,35 @@ url = "/about/partners"
 weight = 5
 
 [[about]]
+name = "Impact"
+url = "/about/impact/"
+weight = 6
+
+[[about]]
 name = "Berks County"
 url = "/berks/"
-weight = 6
+weight = 7
 
 [[about]]
 name = "Careers"
 url = "/jobs/"
-weight = 7
+weight = 8
 
 [[about]]
 name = "Mobile Apps"
 url = "/about/mobile-apps/"
-weight = 8
+weight = 9
 
 [[about]]
 name = "Contact"
 url = "/contact/"
-weight = 9
+weight = 10
 
 
 [[about]]
 name = "Send a Tip"
 url = "/tips/"
-weight = 10
+weight = 11
 
 [[news]]
 name = "Justice System"
