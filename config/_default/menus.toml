@@ -233,12 +233,12 @@ weight = 5
 icon = "ig"
 
 [[social]]
-name = "Threads"
-url = "https://www.threads.net/@spotlightpennsylvania"
+name = "YouTube"
+url = "https://www.youtube.com/@SpotlightPA"
 weight = 6
 
 [social.params]
-icon = "threads"
+icon = "youtube"
 
 [[social]]
 name = "Flipboard"
