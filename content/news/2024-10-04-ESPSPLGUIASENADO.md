@@ -1,5 +1,5 @@
 +++
-authors = ["Katie Meyer de Spotlight PA"]
+authors = ["Katie Meyer"]
 blurb = "El actual senador demócrata Bob Casey aspira a un cuarto mandato, mientras que el ex director general de un fondo de cobertura, el republicano Dave McCormick, presenta su segunda candidatura consecutiva al Senado."
 byline = "Katie Meyer de Spotlight PA"
 description = "El actual senador Bob Casey se enfrenta a Dave McCormick en la carrera por el Senado de Pensilvania, con encuestas que muestran una reñida contienda en temas de economía y el derecho al aborto."
