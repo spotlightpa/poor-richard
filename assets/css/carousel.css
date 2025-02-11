@@ -1,0 +1,156 @@
+.carousel-text::first-letter {
+  font-size: 48px;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  margin-top: -7px;
+}
+
+.bottom-bar-boxes-container::-webkit-scrollbar {
+  display: none;
+}
+
+.impact-box-image.active {
+  transition: opacity 0.3s ease;
+  opacity: 0.4;
+}
+
+.impact-box-text-container.active {
+  transition: background-color 0.3s ease;
+  opacity: 0.4;
+}
+
+.left-gradient-box {
+  background: linear-gradient(
+    to right,
+    rgba(66, 66, 66, 1) 0%,
+    rgba(66, 66, 66, 1) 30%,
+    rgba(66, 66, 66, 0) 100%
+  );
+}
+
+.right-gradient-box {
+  background: linear-gradient(
+    to right,
+    rgba(66, 66, 66, 0) 0%,
+    rgba(66, 66, 66, 1) 70%,
+    rgba(66, 66, 66, 1) 100%
+  );
+}
+
+@media (max-width: 550px) {
+  .bottom-bar-boxes-container {
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .bottom-bar-gradient-box {
+    display: none !important;
+  }
+}
+
+@media (max-width: 355px) {
+  .carousel-title {
+    font-size: 1.95rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel-item {
+    flex-direction: column;
+  }
+
+  .carousel-blurb {
+    order: 1;
+    padding: 80px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+  }
+
+  .carousel-right-half {
+    order: 2;
+    display: none;
+  }
+
+  .carousel-photo {
+    object-fit: cover;
+  }
+
+  .carousel-text::first-letter {
+    font-size: 32px;
+    float: none;
+    margin-right: 0;
+  }
+
+  .read-the-series a {
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 495px) {
+  .carousel-blurb {
+    padding: 40px;
+  }
+
+  .carousel-arrow svg {
+    height: 3rem;
+  }
+
+  .carousel-arrow.left-arrow {
+    left: -11px;
+  }
+
+  .carousel-arrow.right-arrow {
+    right: -11px;
+  }
+}
+
+@media (max-width: 525px) {
+  .carousel-content {
+    height: 350px;
+  }
+}
+
+.mobile-title {
+  display: none;
+}
+
+@media (max-width: 525px) {
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
+  }
+}
+
+.desktop-text {
+  display: block;
+}
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: 525px) {
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+  .mobile-text {
+    display: block;
+  }
+}
