@@ -25,12 +25,12 @@
             {{ range . }}
               {{ $years = $years | append .year }}
             {{ end }}
-            {{ $sortedYears := uniq $years | sort }}
-            {{ $count := len $sortedYears }}
-
-            {{ range $index := seq 0 (sub $count 1) }}
-              <li class="year-link cursor-pointer hover:text-black">
-                {{ index $sortedYears (sub (sub $count 1) $index) }}
+            {{ $yearsDesc := sort (uniq $years) "value" "desc" }}
+            {{ range $year := $yearsDesc }}
+              <li>
+                <button class="year-link hover:text-black" type="button">
+                  {{ $year }}
+                </button>
               </li>
             {{ end }}
           </ul>
