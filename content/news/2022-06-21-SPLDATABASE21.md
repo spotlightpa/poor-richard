@@ -4,6 +4,7 @@ authors = ["Danielle Ohl"]
 blurb = "The database was hailed as a model to stop bad officers from hopping from one job to another. But now State Police say legislative changes are needed to make it more effective."
 byline = "Danielle Ohl of Spotlight PA"
 description = "The database was hailed as a model to stop bad officers from hopping from one job to another. But now State Police say legislative changes are needed to make it more effective."
+feed-exclude = false
 image = "external/0fr8ckft2hfxgk5xd750t3589w.jpeg"
 image-credit = "MONICA HERNDON / Philadelphia Inquirer"
 image-description = "A Pennsylvania law passed in 2020 after the police murder of George Floyd in Minneapolis and the ensuing protests created the hiring database and required law enforcement agencies to use it, but did not include any enforcement measures if they failed to comply."
@@ -12,6 +13,7 @@ internal-id = "SPLDATABASE21"
 kicker = "Justice System"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-06-21T05:00:00-04:00
 slug = "pennsylvania-police-hiring-misconduct-database"
 suppress-date = false
@@ -33,7 +35,7 @@ Negotiations to get the bill passed with near-unanimous approval also narrowed t
 
 Legislators and officials from both political parties initially hailed the database as a crucial step toward ensuring police officers with histories of serious wrongdoing don’t bounce from department to department undetected.
 
-Attorney General Josh Shapiro, now the Democratic candidate for governor in this year’s general election, recently took credit for rallying support for the database among law enforcement groups. In late May, President Joe Biden signed an <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2022/05/25/executive-order-on-advancing-effective-accountable-policing-and-criminal-justice-practices-to-enhance-public-trust-and-public-safety/">executive order</a> that created a similar national accountability database to track police misconduct.
+Attorney General Josh Shapiro, now the Democratic candidate for governor in this year’s general election, recently took credit for rallying support for the database among law enforcement groups. In late May, President Joe Biden signed an <a href="https://web.archive.org/20220525215241/https://www.whitehouse.gov/briefing-room/presidential-actions/2022/05/25/executive-order-on-advancing-effective-accountable-policing-and-criminal-justice-practices-to-enhance-public-trust-and-public-safety/">executive order</a> that created a similar national accountability database to track police misconduct.
 
 “Our Pennsylvania effort was a clear building block that showed a path for this national effort,” Shapiro said in a <a href="https://www.attorneygeneral.gov/taking-action/ag-shapiro-statement-on-upcoming-white-house-announcement-on-policing-reforms/">news release</a> supporting the executive order.
 

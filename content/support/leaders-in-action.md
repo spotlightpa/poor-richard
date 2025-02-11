@@ -3,7 +3,7 @@ title = "Our Champions"
 theme = "leaders"
 url = "/support/leaders-in-action/"
 layout = "support"
-aliases = ["/lia/"]
+# aliases = ["/lia/"] # See redirects.toml
 donate = """
 {{<donate-slim
     title="Become a Leader in Action"
@@ -15,11 +15,13 @@ donate = """
 supporters = """
 {{<supporters
   title="Our Current Leaders"
+  category="Individuals and family foundations (2024)"
   dataSrc="leadersInAction"
+  categorize="true"
 >}}
 """
 testimonials-group = """
-{{<testimonials-group 
+{{<testimonials-group
   title="Testimonials"
   featuredQuote="Spotlight PA is a trustworthy news source in this era of misinformation and disinformation."
   featuredCite="David Martens">}}
@@ -49,5 +51,7 @@ authors = ["Jennifer Bertetto", "David M Erdman", "Katie O’Toole"]
 
 
 {{<featured/large>}}Leaders in Action are individual donors who are champions of Spotlight PA's mission at the highest level, contributing $1,000 or more annually to our newsroom. Leaders in Action help us to expand Spotlight PA's urgent investigative reporting, increase accessibility to quality, fact-based information for all Pennsylvanians, and advance our commitment to protecting democracy. Leaders in Action not only sustain—but directly advance—unique and vital reporting that drives change.{{</featured/large>}}
+
+{{<featured/large>}}We're so grateful to our individual donors and family foundations for supporting Spotlight PA at the leadership level, listed below. To see a list of our foundation donors, <a href="/support/funders-and-members/#major-donors-and-funders-since-launch">click here</a>.{{</featured/large>}}
 
 {{<featured/large>}}Have questions about joining Leaders in Action? Please contact Michelle Mertz at <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>. We are so grateful for your consideration!{{</featured/large>}}

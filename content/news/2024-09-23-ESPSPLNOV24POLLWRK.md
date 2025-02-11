@@ -1,5 +1,5 @@
 +++
-authors = ["Kate Huangpu y Elizabeth Estrada de Spotlight PA"]
+authors = ["Kate Huangpu", "Elizabeth Estrada"]
 blurb = "Los trabajadores electorales de Pensilvania ayudan a que la votación se desarrolle sin problemas el día de las elecciones. Aquí le explicamos cómo puede ser uno de ellos."
 byline = "Kate Huangpu y Elizabeth Estrada de Spotlight PA"
 description = "El 5 de noviembre, miles de trabajadores electorales de Pensilvania garantizarán que la votación se desarrolle sin problemas. Usted podría ser uno de ellos. He aquí cómo."

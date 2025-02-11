@@ -68,7 +68,7 @@ In the same year, Democratic Gov. Tom Wolf signed an executive order creating a 
 
 Whether the commission continues its work hinges on the governor’s continued support, as the next governor could rescind the executive order that created it.
 
-<b>Shapiro</b> has endorsements from <a href="https://www.padems.com/roundup-shapiro-gains-back-back-back-law-enforcement-endorsements/">many police groups</a>, and supports creating incentives to drive people to <a href="https://whyy.org/articles/pennsylvania-police-shortage-ag-shapiro-commissioner-outlaw-harrisburg/">apply for and stay in</a> law enforcement jobs.
+<b>Shapiro</b> has endorsements from <a href="https://web.archive.org/20220929095314/https://www.padems.com/roundup-shapiro-gains-back-back-back-law-enforcement-endorsements/">many police groups</a>, and supports creating incentives to drive people to <a href="https://whyy.org/articles/pennsylvania-police-shortage-ag-shapiro-commissioner-outlaw-harrisburg/">apply for and stay in</a> law enforcement jobs.
 
 He also took an active role in securing support among law enforcement officials for Act 57, which passed the state legislature with near-unanimous approval. But those negotiations also introduced some of the loopholes that Spotlight PA found undermine the law’s ability to achieve its stated purpose.
 

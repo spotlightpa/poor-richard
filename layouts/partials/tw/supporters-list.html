@@ -1,13 +1,12 @@
 <ul>
   {{ range . }}
     <li>
-      {{ if .url }}
-        <a class="text-blue hover:underline" href="{{ .url }}">
-          {{- .display -}}
-        </a>
-      {{ else }}
-        {{ .display }}
-      {{ end }}
+      {{ partial "tag/maybe-link.html" (dict
+        "linkClass" "text-blue hover:underline"
+        "text" .display
+        "link" .url
+        )
+      }}
     </li>
   {{ end }}
 </ul>

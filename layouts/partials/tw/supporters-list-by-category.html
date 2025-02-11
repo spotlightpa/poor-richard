@@ -1,0 +1,24 @@
+{{ $lastCategory := "" }}
+<div>
+  <ul>
+    {{ range . }}
+      {{ $categoryGroup := .category }}
+      {{ if ne $categoryGroup $lastCategory }}
+        {{ $lastCategory = $categoryGroup }}
+        <!-- Escape code to pacify Prettier -->
+        {{ `</ul></div>` | safeHTML }}
+        {{ `<div class="mb-6">` | safeHTML }}
+        <h2 class="font-sans text-3xl font-bold">{{ $lastCategory }}</h2>
+        {{ `<ul>` | safeHTML }}
+      {{ end }}
+      <li>
+        {{ partial "tag/maybe-link.html" (dict
+          "linkClass" "text-blue hover:underline"
+          "text" .display
+          "link" .url
+          )
+        }}
+      </li>
+    {{ end }}
+  </ul>
+</div>

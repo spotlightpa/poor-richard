@@ -3,6 +3,7 @@ authors = ["Elizabeth Estrada"]
 blurb = "On April 23, Pennsylvanians will cast their votes for president, U.S. Senate, attorney general, and more."
 byline = "Elizabeth Estrada of Spotlight PA"
 description = "Everything you need to know to vote in PA’s 2024 primary election, from who is on the ballot to where your polling place is, and more."
+feed-exclude = false
 image = "external/jkw9s44e6cp6g25zs96x18fxrc.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Pennsylvania voters take to the polls in Harrisburg on Election Day, Nov. 8, 2022."
@@ -59,7 +60,7 @@ Here’s what you can expect to see on your ballot:
 
 - For president, Republicans will see former President Donald Trump listed on the ballot, as well as former South Carolina Gov. Nikki Haley, despite her dropping out of the race. Democrats will see President Joe Biden listed, as well as U.S. Rep. Dean Phillips of Minnesota, even though he suspended his campaign back in March.
 
-- For U.S. Senate, there is one candidate on the Democratic ballot, three-term incumbent <a href="https://www.casey.senate.gov/about/bob">Bob Casey</a>, and one on the Republican ballot, <a href="https://www.davemccormickpa.com/">Dave McCormick</a>.
+- For U.S. Senate, there is one candidate on the Democratic ballot, three-term incumbent <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a>, and one on the Republican ballot, <a href="https://www.davemccormickpa.com/">Dave McCormick</a>.
 
 - For U.S. House, who is listed on your ballot will be dictated by the congressional district you live in. To find who is running in your district, visit <a href="https://www.vote411.org/">VOTE411</a>, a tool from the League of Women Voters Education Fund.
 

@@ -22,7 +22,7 @@ url = "/elections-2024/results/"
 
 Results to watch include Pennsylvania attorney general, Pennsylvania treasurer, and Pennsylvania auditor general. Results will begin to show after 8 p.m. on Nov. 5.
 
-Results for races can also be found on the Department of State <a href="https://www.electionreturns.pa.gov/">website</a>.
+Results for races can also be found on the Department of State <a href="https://web.archive.org/20240104115908/https://www.electionreturns.pa.gov/">website</a>.
 
 For complete coverage of the 2024 general election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
@@ -84,7 +84,7 @@ Four candidates for president appear on Pennsylvania’s ballot: Republican Dona
 
 <h2 id="spl-heading-3">U.S. Senate</h2>
 
-Democratic incumbent and three-term <a href="https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a> is facing Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>. Also in the race are third-party candidates <a href="https://www.leilaforsenate.com/">Leila Hazou</a> (Green Party), <a href="https://www.martyselkerforsenate.com/">Marty Selker</a> (Constitution Party), and <a href="https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertarian).
+Democratic incumbent and three-term <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a> is facing Republican <a href="https://web.archive.org/20240109225236/https://www.davemccormickpa.com/">David McCormick</a>. Also in the race are third-party candidates <a href="https://web.archive.org/20240403154926/https://www.leilaforsenate.com/">Leila Hazou</a> (Green Party), <a href="https://web.archive.org/20240329232651/https://www.martyselkerforsenate.com/">Marty Selker</a> (Constitution Party), and <a href="https://web.archive.org/20240923110417/https://johnthomaspa.substack.com/about">John C. Thomas</a> (Libertarian).
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/20061.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
@@ -100,7 +100,7 @@ Enter your address into <a href="https://www.spotlightpa.org/news/2024/09/pennsy
 
 In the race for attorney general, Michelle Henry — who was appointed to replace Josh Shapiro after he departed the office to become governor — is not running to keep the role, which leaves the field open.
 
-Democrat <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> will face off against Republican <a href="https://www.davesundayforag.com/">Dave Sunday</a>. Third-party candidates in the race include <a href="https://www.constitutionpartypa.com/">Justin Magill</a> (Constitution Party), <a href="https://ericsettle4ag.com/">Eric Settle</a> (Forward Paty), <a href="https://x.com/richardlweiss">Richard L. Weiss</a> (Green Party), and <a href="https://cowburnforag.com/">Robert Cowburn</a> (Libertarian).
+Democrat <a href="https://web.archive.org/20240111225243/https://www.depasqualeforag.com/">Eugene DePasquale</a> will face off against Republican <a href="https://web.archive.org/20240216062442/https://www.davesundayforag.com/">Dave Sunday</a>. Third-party candidates in the race include <a href="https://web.archive.org/20240126135155/https://www.constitutionpartypa.com/">Justin Magill</a> (Constitution Party), <a href="https://web.archive.org/20240524233200/https://ericsettle4ag.com/">Eric Settle</a> (Forward Paty), <a href="https://web.archive.org/20240804211427/https://x.com/richardlweiss">Richard L. Weiss</a> (Green Party), and <a href="https://web.archive.org/20240516212505/https://cowburnforag.com/">Robert Cowburn</a> (Libertarian).
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-attorney-general-candidates-eugene-depasquale-dave-sunday/">the candidates for attorney general here</a>.
 
@@ -108,7 +108,7 @@ You can read more about <a href="https://www.spotlightpa.org/news/2024/09/pennsy
 
 <h2 id="spl-heading-6">Pennsylvania auditor general</h2>
 
-The race for auditor general has Republican incumbent <a href="https://www.defoor4pa.com/meet-tim">Tim DeFoor</a> running against Democrat <a href="https://malcolmkenyatta.com/">Malcolm Kenyatta</a>. Third-party candidates include <a href="https://www.solidarity-party.org/elected-officials-candidates">Eric Anton</a> (American Solidarity Party), <a href="https://www.constitutionpartypa.com/">Alan ‘Bob’ Goodrich</a> (Constitution Party), and <a href="https://www.votereece.com/">Reece Smith</a> (Libertarian Party).
+The race for auditor general has Republican incumbent <a href="https://web.archive.org/20240415053855/https://www.defoor4pa.com/meet-tim">Tim DeFoor</a> running against Democrat <a href="https://web.archive.org/20240202184211/https://malcolmkenyatta.com/">Malcolm Kenyatta</a>. Third-party candidates include <a href="https://web.archive.org/20240126064206/https://www.solidarity-party.org/elected-officials-candidates">Eric Anton</a> (American Solidarity Party), <a href="https://web.archive.org/20240126135155/https://www.constitutionpartypa.com/">Alan ‘Bob’ Goodrich</a> (Constitution Party), and <a href="https://web.archive.org/20240415014528/https://www.votereece.com/">Reece Smith</a> (Libertarian Party).
 
 You can read more about the <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta/">candidates for auditor general here</a>.
 
@@ -116,7 +116,7 @@ You can read more about the <a href="https://www.spotlightpa.org/news/2024/09/pe
 
 <h2 id="spl-heading-7">Pennsylvania treasurer</h2>
 
-The race for treasurer pits Republican incumbent <a href="https://www.garrityforpa.com/">Stacy Garrity</a> against Democrat <a href="https://erinmcclelland.com/">Erin McClelland</a>. Third-party candidates include <a href="https://home.forwardparty.com/foster_chris">Chris Foster</a> (Forward Party), <a href="https://nickcforpa.com/">Nick Ciesielski</a> (Libertarian Party), and Troy Bowman (Constitution Party).
+The race for treasurer pits Republican incumbent <a href="https://web.archive.org/20240115193440/https://www.garrityforpa.com/">Stacy Garrity</a> against Democrat <a href="https://web.archive.org/20240216062642/https://erinmcclelland.com/">Erin McClelland</a>. Third-party candidates include <a href="https://web.archive.org/20240613073926/https://home.forwardparty.com/foster_chris">Chris Foster</a> (Forward Party), <a href="https://web.archive.org/20240521103908/https://nickcforpa.com/">Nick Ciesielski</a> (Libertarian Party), and Troy Bowman (Constitution Party).
 
 You can read more about <a href="https://www.spotlightpa.org/news/2024/09/pennsylvania-election-2024-treasurer-candidates-stacy-garrity-erin-mcclelland/">the candidates for treasurer here</a>.
 
@@ -152,11 +152,11 @@ A: Votes will be counted throughout the evening on Nov. 5 after polls close at 8
 
 <h3 id="spl-heading-12">Q: How can I find the latest election results in Pennsylvania?</h3>
 
-A: For statewide races and races for the General Assembly, you can check the Department of State’s election results website <a href="https://www.electionreturns.pa.gov/">here</a>.
+A: For statewide races and races for the General Assembly, you can check the Department of State’s election results website <a href="https://web.archive.org/20240104115908/https://www.electionreturns.pa.gov/">here</a>.
 
 <h3 id="spl-heading-13">Q: Can I track my mail ballot in Pennsylvania?</h3>
 
-A: Yes, the Pennsylvania Department of State allows you to track your ballot on its website. Go to <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">pavoterservices.pa.gov/Pages/BallotTracking.aspx</a>, where you will see a prompt to enter your name, date of birth, and county of residence. You can also contact your county election office to confirm the status of your ballot.
+A: Yes, the Pennsylvania Department of State allows you to track your ballot on its website. Go to <a href="https://web.archive.org/20240108142928/https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">pavoterservices.pa.gov/Pages/BallotTracking.aspx</a>, where you will see a prompt to enter your name, date of birth, and county of residence. You can also contact your county election office to confirm the status of your ballot.
 
 <h3 id="spl-heading-14">Q: What happens if there is a recount?</h3>
 
@@ -166,7 +166,7 @@ Three or more voters in a voting precinct can also request a <a href="https://ww
 
 A recount must be completed within three weeks of the election.
 
-Learn more <a href="https://www.inquirer.com/news/recount-election-pennsylvania-rules-law-20201106.html">about recounts from The Inquirer</a>.
+Learn more <a href="https://web.archive.org/20240623232332/https://www.inquirer.com/news/recount-election-pennsylvania-rules-law-20201106.html">about recounts from The Inquirer</a>.
 
 <h3 id="spl-heading-15">Q: How does the media get election results?</h3>
 

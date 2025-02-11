@@ -6,4 +6,5 @@ kicker = "Elder Abuse"
 title = "Elder Abuse"
 linktitle = "Most of Pennsylvania’s 52 county agencies responsible for protecting older adults are failing, in varying degrees, to swiftly review complaints of suspected abuse or neglect and craft plans to keep people safe — in some cases, even in emergencies."
 description = "Most of Pennsylvania’s 52 county agencies responsible for protecting older adults are failing, in varying degrees, to swiftly review complaints of suspected abuse or neglect and craft plans to keep people safe — in some cases, even in emergencies."
+aliases = ["/elderabuse/"]
 +++

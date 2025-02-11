@@ -1,40 +1,32 @@
 +++
 arc-id = "UXYFCR54ANAA3EIRLSBQC7YBME"
-internal-id = "SPLEVICTION12"
-internal-budget = ""
-image = "2020/12/01fx70a56hn1e0jd.jpeg"
-image-description = "A federal eviction ban ends expires at the end of the month, leaving hundreds of thousands of renters vulnerable to losing their homes."
-image-caption = ""
-image-credit = "Dan Nott / For Spotlight PA"
-image-size = ""
-published = 2020-12-11T10:00:00Z
-slug = "eviction-ban-unemployment-cdc-cares-act-rent-pennsylvania"
 authors = ["Charlotte Keith"]
-byline = "Charlotte Keith of Spotlight PA"
-title = "Thousands of Pa. families face potential eviction come the new year"
-subtitle = ""
-description = "Hundreds of thousands of families across Pennsylvania could lose their homes in January, after emergency unemployment benefits and federal eviction protections expire and as the state grapples with re"
 blurb = "Hundreds of thousands of families across Pennsylvania could lose their homes in January, after emergency unemployment benefits and federal eviction protections expire and as the state grapples with re"
+byline = "Charlotte Keith of Spotlight PA"
+description = "Hundreds of thousands of families across Pennsylvania could lose their homes in January, after emergency unemployment benefits and federal eviction protections expire and as the state grapples with re"
+feed-exclude = false
+image = "2020/12/01fx70a56hn1e0jd.jpeg"
+image-credit = "Dan Nott / For Spotlight PA"
+image-description = "A federal eviction ban ends expires at the end of the month, leaving hundreds of thousands of renters vulnerable to losing their homes."
+internal-id = "SPLEVICTION12"
 kicker = "Coronavirus"
-topics = ["Coronavirus", "Eviction"]
-series = ["Locked Out"]
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2020-12-11T05:00:00-05:00
+series = ["Locked Out"]
+slug = "eviction-ban-unemployment-cdc-cares-act-rent-pennsylvania"
+suppress-date = false
+suppress-featured = false
+title = "Thousands of Pa. families face potential eviction come the new year"
+topics = ["Coronavirus", "Eviction"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
 Hundreds of thousands of families across Pennsylvania could lose their homes in January, after emergency unemployment benefits and federal eviction protections expire and as the state grapples with record numbers of new coronavirus cases.
 
-A Centers for Disease Control and Prevention order has kept many eviction cases on hold for tenants across the state who have not been able to afford rent during the pandemic. It is for people like Cheryl Kull, who lives in an apartment in Bucks County with her mother. She owes her landlord more than $8,000, a small chunk of as much as $958 million in back rent owed by as many as 240,000 tenants across the state by January, according to <a href="https://www.ncsha.org/wp-content/uploads/Analysis-of-Current-and-Expected-Rental-Shortfall-and-Potential-Evictions-in-the-US_Stout_FINAL.pdf">one estimate</a>.
+A Centers for Disease Control and Prevention order has kept many eviction cases on hold for tenants across the state who have not been able to afford rent during the pandemic. It is for people like Cheryl Kull, who lives in an apartment in Bucks County with her mother. She owes her landlord more than $8,000, a small chunk of as much as $958 million in back rent owed by as many as 240,000 tenants across the state by January, according to <a href="https://web.archive.org/20201002215733/https://www.ncsha.org/wp-content/uploads/Analysis-of-Current-and-Expected-Rental-Shortfall-and-Potential-Evictions-in-the-US_Stout_FINAL.pdf">one estimate</a>.
 
 If she, or other tenants, cannot pay and their eviction cases move forward, they will be kicked out.
 
@@ -44,7 +36,7 @@ The countdown to 2021, for Kull, is agonizing.
 
 Unless the CDC extends its ban, or Congress passes another COVID-19 relief package that includes further protections, tenants like her have little hope of staying in their homes. Even with the CDC order in place, loopholes and a lack of clear statewide guidance have let some who should be protected <a href="https://www.spotlightpa.org/news/2020/11/pa-eviction-cdc-ban-loophole-renters-despair/">slip through the cracks</a>.
 
-Congress is considering a <a href="https://www.manchin.senate.gov/imo/media/doc/COVID%20Emergency%20Relief%20Framework.pdf?cb">$908 billion plan</a> put together by a bipartisan group of lawmakers, which includes $25 billion for housing and rental assistance. But it’s come after months of stalemate, and the plan remains in flux while details are being negotiated.
+Congress is considering a <a href="https://web.archive.org/20201201182712/https://www.manchin.senate.gov/imo/media/doc/COVID%20Emergency%20Relief%20Framework.pdf">$908 billion plan</a> put together by a bipartisan group of lawmakers, which includes $25 billion for housing and rental assistance. But it’s come after months of stalemate, and the plan remains in flux while details are being negotiated.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/"></div>
 
@@ -88,7 +80,7 @@ Not all eviction filings end with a tenant actually having to leave the property
 
 “There’s no way to tell for certain how many households will be evicted,” said Phyllis Chamberlain, executive director of the Housing Alliance of Pennsylvania, which advocates for tenants. But, she said, “it definitely looks scary.”
 
-In September, a <a href="https://www.ncsha.org/wp-content/uploads/Analysis-of-Current-and-Expected-Rental-Shortfall-and-Potential-Evictions-in-the-US_Stout_FINAL.pdf">report commissioned</a> by the National Council of State Housing Agencies, a nonprofit that works on affordable housing policies, estimated that as many as 240,000 Pennsylvania families could face eviction by January.
+In September, a <a href="https://web.archive.org/20201002215733/https://www.ncsha.org/wp-content/uploads/Analysis-of-Current-and-Expected-Rental-Shortfall-and-Potential-Evictions-in-the-US_Stout_FINAL.pdf">report commissioned</a> by the National Council of State Housing Agencies, a nonprofit that works on affordable housing policies, estimated that as many as 240,000 Pennsylvania families could face eviction by January.
 
 As the amount of rent owed continues to climb, so does the financial pain of landlords. The lost income is particularly difficult for those who own only a handful of units and rely on rental income to cover maintenance costs, mortgage payments, and property taxes.
 

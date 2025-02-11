@@ -3,6 +3,7 @@ authors = ["Ed Mahon"]
 blurb = "Pennsylvania’s medical marijuana program increased its transparency after a Spotlight PA open records victory, sharing more data with academic researchers and the broader public."
 byline = "Ed Mahon of Spotlight PA"
 description = "Spotlight PA is sharing records it won in court."
+feed-exclude = false
 image = "/external/w3vmfemzmtgq0ee60d2wt1f8pc.jpeg"
 image-caption = "Spotlight PA analyzed more than 1 million certifications to reveal the most common qualifying condition to get a Pennsylvania medical marijuana card."
 image-credit = "Leise Hook / For Spotlight PA"
@@ -10,12 +11,14 @@ image-description = "Pill bottles in a grid. One bottle has a marijuana leaf lab
 internal-id = "spl_marijuana_data"
 kicker = "Medical Marijuana"
 modal-exclude = false
+pinned = false
 published = 2023-12-20T04:00:00-05:00
+series = ["Cannabis Card Game"]
 slug = "pennsylvania-medical-marijuana-data-available"
 suppress-date = false
 title = "GET THE DATA: Spotlight PA makes info on why patients qualify for medical marijuana publicly available"
 title-tag = "Pennsylvania medical marijuana cards: See the data"
-topics = ["Medical Marijuana"]
+topics = ["Medical Marijuana", "Health"]
 +++
 
 <a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> is an independent, nonpartisan, and nonprofit newsroom producing investigative and public-service journalism that holds power to account and drives positive change in Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters"><em>Sign up for our free newsletters</em></a><em>.</em>
