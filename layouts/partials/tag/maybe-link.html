@@ -1,9 +1,9 @@
 {{ if .link }}
-  <a class="{{ .class }}" href="{{ .link }}">
+  <a class="{{ .class }}{{ .linkClass }}" href="{{ .link }}">
     {{- .text -}}
   </a>
 {{ else }}
-  <span class="{{ .class }}">
+  <span class="{{ .class }}{{ .textClass }}">
     {{- .text -}}
   </span>
 {{ end }}
