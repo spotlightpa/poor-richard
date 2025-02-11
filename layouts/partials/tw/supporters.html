@@ -2,6 +2,7 @@
 {{ $id := .id | default (urlize $title) }}
 {{ $category := .category }}
 {{ $dataSrc := .dataSrc }}
+{{ $categorize := .categorize }}
 <div
   id="{{ $id }}"
   class="m-auto flex max-w-screen-xl flex-wrap justify-center p-5 md:py-4 xl:px-0"
@@ -20,19 +21,28 @@
       {{ . }}
     </h3>
   {{ end }}
-  <div
-    class="column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
-  >
-    {{ with $dataSrc }}
+  {{ with $dataSrc }}
+    <div
+      class="column-gap-2 w-full max-w-screen-lg columns-2 gap-10 pb-8 pt-3 md:columns-3"
+    >
       {{ $data := index site.Data.supporters . }}
       <!-- Sort by .sort and break ties with .display -->
       {{ $sorted := sort $data.list "display" "asc" }}
       {{ $sorted = sort $sorted "sort" "asc" }}
-      {{ if gt (len $sorted) 100 }}
+      {{ if $categorize }}
+        {{ $sorted = sort $sorted "categoryRank" "asc" }}
+        {{ partial "tw/supporters-list-by-category.html" $sorted }}
+      {{ else if gt (len $sorted) 100 }}
         {{ partial "tw/supporters-list-by-letter.html" $sorted }}
       {{ else }}
         {{ partial "tw/supporters-list.html" $sorted }}
       {{ end }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
+
+  {{ with .content }}
+    <div class="article-content w-full max-w-screen-lg pb-8">
+      {{ . | page.RenderString }}
+    </div>
+  {{ end }}
 </div>

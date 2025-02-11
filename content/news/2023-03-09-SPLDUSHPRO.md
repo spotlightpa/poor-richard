@@ -4,6 +4,7 @@ authors = ["Carter Walker"]
 blurb = "Cris Dush, who chairs the state Senate committee that considers voting bills, rejected the results of the 2020 presidential election and led Republicans’ investigation attempt."
 byline = "Carter Walker of Votebeat"
 description = "PA Senator Cris Dush rejected the results of the 2020 presidential election and led Republicans’ investigation attempt."
+feed-exclude = false
 image = "external/vkf6j16pe8v228mqmt6yjfc0z0.jpeg"
 image-credit = "Courtesy Pennsylvania Capital-Star"
 image-description = "PA Senator Cris Dush is best known for leading an attempt to perform an Arizona-style investigation of the 2020 election."
@@ -11,6 +12,7 @@ internal-budget = "Key senator’s record on election policy has Democrats, voti
 internal-id = "SPLDUSHPRO"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-03-09T12:54:38.304-05:00
 slug = "pa-cris-dush-election-legislation-fraud-audit-policy"
 suppress-date = false
@@ -57,7 +59,7 @@ With Democrats in control of the state House, that path is effectively closed.
 
 “So you can’t just try to muscle through ideological positions without working across the aisle, or you reduce your position to rhetoric,” said state Sen. Anthony Williams, a Philadelphia Democrat who serves on the State Government Committee.
 
-For example, with the help of Dush’s committee, the Republican-controlled state Senate in January <a href="https://www.senatoraument.com/2023/01/11/senate-approves-voter-id-amendment-to-pa-constitution/">approved</a> a constitutional amendment that would expand Pennsylvania’s existing voter ID requirements — a top GOP priority. But the Democrat-controlled state House did not take up the measure, stopping it before it reached voters.
+For example, with the help of Dush’s committee, the Republican-controlled state Senate in January <a href="https://web.archive.org/20230111210608/https://www.senatoraument.com/2023/01/11/senate-approves-voter-id-amendment-to-pa-constitution/">approved</a> a constitutional amendment that would expand Pennsylvania’s existing voter ID requirements — a top GOP priority. But the Democrat-controlled state House did not take up the measure, stopping it before it reached voters.
 
 Any election legislation needs state House approval as well as Shapiro’s signature. The governor has repeatedly said he will not approve any measure he believes is restricting the right to vote. In addition, while campaigning for governor in Dush’s district last year, <a href="https://www.tiogapublishing.com/potter_leader_enterprise/news/local/gubernatorial-candidate-shapiro-visits-coudersport/article_4139a559-a539-5674-b9ad-29222f0dc34e.html">Shapiro called him</a> a “profoundly weak person” while talking about persistent claims of voter fraud from Republicans.
 

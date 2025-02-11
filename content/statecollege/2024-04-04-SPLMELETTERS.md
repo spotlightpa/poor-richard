@@ -1,8 +1,9 @@
 +++
-authors = ["Lilly Riddle", "Spotlight PA State College"]
+authors = ["Lilly Riddle"]
 blurb = "In 2022, the Pa. attorney general’s office reached a plea deal with Energy Transfer that included free water testing for residents who might have been affected by Mariner East II pipeline construction."
 byline = "Lilly Riddle for the News Lab at Penn State and Spotlight PA State College"
 description = "Limited information is publicly available about water testing done in Pennsylvania as a result of Mariner East II construction pollution plea deal."
+feed-exclude = false
 image = "2024/04/01k0-nt3h-6f2r-0pkp.jpeg"
 image-credit = "Michael Bryant / Philadelphia Inquirer"
 image-description = "Pipefitters work to connect a long segment of pipe that is being suspended in air to make it ready to be pulled underground in a residential area of West Chester, Pennsylvania, in November 2019."

@@ -4,6 +4,16 @@
 
 @tailwind components;
 
+/* Workaround for the sticky nav obscuring #anchor links. */
+/* Just push the scroll margin of all id="" elements down by 85px, */
+/* which is approximately enough for mobile and desktop. */
+/* Individual items can override the default scroll-margin if necessary. */
+/*! purgecss start ignore */
+[id] {
+  @apply scroll-mt-[100px];
+}
+/*! purgecss end ignore */
+
 .featured-content > p a {
   @apply text-navy underline;
   @apply transition-colors duration-500;

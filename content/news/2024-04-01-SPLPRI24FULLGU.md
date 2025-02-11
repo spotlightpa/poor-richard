@@ -175,11 +175,11 @@ Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republic
 
 The U.S. Senate is made up of 100 senators, two from each state. Senators are elected to six-year terms, and every two years, approximately one-third of the body goes up for reelection.
 
-This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
 Casey is a Scranton native who has held the seat since 2007, making him the <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">longest-serving Democratic U.S. senator</a> in Pennsylvania history. If reelected, it would be his fourth term. Before his Senate election, Casey served as Pennsylvania’s auditor general, then treasurer. His father, Bob Casey Sr., was a two-term Pennsylvania governor.
 
-Learn more about Casey on his <a href="https://www.casey.senate.gov/about/bob">campaign website</a>.
+Learn more about Casey on his <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">campaign website</a>.
 
 McCormick, who was born in Washington, Pennsylvania, is a former hedge fund manager and ran for U.S. Senate in 2022, but narrowly lost to Mehmet Oz in the primary. He <a href="https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">served as under secretary of treasury</a>, and later as <a href="https://georgewbush-whitehouse.archives.gov/government/mccormick-bio.html">deputy national security advisor</a> during the George W. Bush administration.
 

@@ -1,8 +1,9 @@
 +++
-authors = ["Lilly Riddle", "Spotlight PA State College"]
+authors = ["Lilly Riddle"]
 blurb = "$10 million of that total comes from a plea deal the state attorney general’s office brokered with Energy Transfer, but little has gone toward residents directly affected."
 byline = "Lilly Riddle for the News Lab at Penn State and Spotlight PA State College"
 description = "The Pennsylvania Office of Attorney General brokered a $10M plea deal with Energy Transfer in 2022 over Mariner East II pipeline construction."
+feed-exclude = false
 image = "2023/11/01jn-9xbx-174h-2bwq.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
 image-description = "An illustration of the Mariner East II pipeline running across PA with drilling fluid leaks creating a dollar sign."
@@ -10,6 +11,7 @@ image-gravity = "ce"
 internal-id = "SPLPIPELINE"
 kicker = "Rural Issues"
 modal-exclude = false
+pinned = false
 published = 2023-11-16T04:00:00-05:00
 slug = "mariner-east-pipeline-money-energy-transfer-pennsylvania-environmental-protection"
 suppress-date = false

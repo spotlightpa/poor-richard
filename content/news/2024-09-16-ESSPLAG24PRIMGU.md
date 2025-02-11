@@ -1,6 +1,6 @@
 +++
 app-image = "2023/11/01jn-4rb9-2sg8-pwpc.jpeg"
-authors = ["Angela Couloumbis de Spotlight PA"]
+authors = ["Angela Couloumbis"]
 blurb = "El demócrata Eugene DePasquale, el republicano Dave Sunday y otros cuatro candidatos compiten por convertirse en el próximo fiscal principal de Pensilvania."
 byline = "Angela Couloumbis de Spotlight PA"
 description = "El demócrata Eugene DePasquale, el republicano Dave Sunday y otros cuatro candidatos compiten por convertirse en el próximo fiscal general de Pensilvania."

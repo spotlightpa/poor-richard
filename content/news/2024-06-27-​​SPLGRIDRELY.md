@@ -3,6 +3,7 @@ authors = ["Kate Huangpu"]
 blurb = "Republicans say being too aggressive on clean energy could make PA’s electric grid unstable. Environmentalists say that’s an excuse."
 byline = "Kate Huangpu of Spotlight PA"
 description = "An influx of federal cash could help PA go green. But concerns about electric grid stability are complicating talks."
+feed-exclude = false
 image = "2024/01/01jt-g162-0mqx-mt7q.jpeg"
 image-credit = "Courtesy of U.S. Department of Energy"
 image-description = "A transformer substation."
@@ -36,7 +37,7 @@ PJM oversees a marketplace in which producers, like natural gas and coal plants 
 
 Pennsylvania is a major supplier of energy to PJM’s grid, accounting for up to a quarter of the total electricity produced, and is the <a href="https://www.eia.gov/state/rankings/?sid=PA#series/51">second biggest energy producer in the country</a>.
 
-In recent years, PJM has reported <a href="https://www.pjm.com/-/media/library/reports-notices/special-reports/2021/20210311-reliability-in-pjm-today-and-tomorrow.ashx">multiple</a> <a href="https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">times</a> that its energy demand is set to outpace its energy production, especially as more power plants close. The company has <a href="https://insidelines.pjm.com/pjm-details-resource-retirements-replacements-and-risks/">predicted</a> that over a fifth of its existing power generators, largely <a href="https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">coal and natural gas plants</a>, will retire by 2030.
+In recent years, PJM has reported <a href="https://web.archive.org/20210518053925/https://www.pjm.com/-/media/library/reports-notices/special-reports/2021/20210311-reliability-in-pjm-today-and-tomorrow.ashx">multiple</a> <a href="https://web.archive.org/20230224205134/https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">times</a> that its energy demand is set to outpace its energy production, especially as more power plants close. The company has <a href="https://insidelines.pjm.com/pjm-details-resource-retirements-replacements-and-risks/">predicted</a> that over a fifth of its existing power generators, largely <a href="https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">coal and natural gas plants</a>, will retire by 2030.
 
 Some states have already had issues meeting demand. In Maryland, a coal power plant notified PJM that it intended to close down, but PJM found that shuttering it would negatively affect grid reliability and refused to approve its closure. The plant, Brandon Shores, has been forced to stay open and could continue operating until <a href="https://www.canarymedia.com/articles/fossil-fuels/zombie-coal-plants-could-threaten-the-us-energy-transition">2028</a>. <a href="https://www.sierraclub.org/articles/2024/02/pjm-thwarts-maryland-s-coal-free-ambitions-while-costing-marylanders-millions">Environmental advocates accused</a> PJM of lacking foresight during its planning of the plant’s closure.
 

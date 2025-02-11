@@ -4,6 +4,7 @@ authors = ["Ethan Edward Coston"]
 blurb = " Educators fear a Florida-like proposed ban on elementary school instruction about gender identity and sexual orientation will teach children that being part of the LGBTQ community is wrong. Proponents contend it’s about “parental rights.”"
 byline = "Ethan Edward Coston of Spotlight PA"
 description = " Educators fear a Florida-like proposed ban on elementary school instruction about gender identity and sexual orientation will teach children that being part of the LGBTQ community is wrong. Proponents contend it’s about “parental rights.”"
+feed-exclude = false
 image = "external/aga3xdssdvaypcqr3kk0vm2yg0.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Legislation sponsored by Republican state Sens. Ryan Aument and Scott Martin of Lancaster County would ban classroom instruction on gender identity and sexual orientation in kindergarten through fifth grade, claiming it’s not “age appropriate.”"
@@ -13,6 +14,7 @@ internal-id = "SPLLGBTBILL"
 kicker = "Education"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-09-15T05:00:00-04:00
 slug = "pa-lgbtq-curriculum-ban-dont-say-gay-2022-election-governor"
 suppress-date = false
@@ -70,7 +72,7 @@ A “hostile school climate” can have profoundly negative impacts on LGBTQIA+ 
 
 “Those who survive and thrive will continue to deal with the trauma for the rest of their lives,” said Fisher, who said he’s still working through childhood incidents in therapy.
 
-In a news release, <a href="https://www.senatoraument.com/2022/06/29/martin-aument-bills-to-limit-sexual-content-in-pa-schools-pass-senate/">Aument and Martin</a> dismissed accusations that the bill would endanger children as “an extreme leap from alarmist opponents who seem to be determined to teach elementary school children about explicit and sexual topics behind their parents’ backs.”
+In a news release, <a href="https://web.archive.org/20230102031358/https://www.senatoraument.com/2022/06/29/martin-aument-bills-to-limit-sexual-content-in-pa-schools-pass-senate/">Aument and Martin</a> dismissed accusations that the bill would endanger children as “an extreme leap from alarmist opponents who seem to be determined to teach elementary school children about explicit and sexual topics behind their parents’ backs.”
 
 “We’re seeing an open debate about our community and youth and the cost is insurmountable right now,” said MK Strohman, an independent consultant on LGBTQ youth mental health training and a social worker at education agency Lancaster-Lebanon Intermediate Unit 13. “The cost of open dialogue is going to be devastating.”
 
@@ -86,7 +88,7 @@ Aument and Martin’s bill would not explicitly ban classroom instruction on LGB
 
 Critics have noted that those terms include cisgender and heterosexual relationships. But in remarks on the state Senate floor, Martin made it clear the bill was a response to parental concerns about “inappropriate conversations about sexual preferences and gender transitioning.”
 
-Among the <a href="https://www.senatoraument.com/empowering-families-in-education/">specific concerns cited by the senators</a>:
+Among the <a href="https://web.archive.org/20220608222610/https://www.senatoraument.com/empowering-families-in-education/">specific concerns cited by the senators</a>:
 
 - An elementary school class read books about gender after a classmate came out as transgender.
 
@@ -108,7 +110,7 @@ Discussions of gender and sexual orientation are not simply “sex ed,” and eq
 
 ## ‘Parental rights’ v. student well-being
 
-Aument and Martin have argued that parents rather than schools should choose when and how to discuss gender identity and sexual orientation with kids, and that these discussions should only happen when a child is “<a href="https://www.senatoraument.com/empowering-families-in-education/">mature enough</a>” to understand the topic.
+Aument and Martin have argued that parents rather than schools should choose when and how to discuss gender identity and sexual orientation with kids, and that these discussions should only happen when a child is “<a href="https://web.archive.org/20220608222610/https://www.senatoraument.com/empowering-families-in-education/">mature enough</a>” to understand the topic.
 
 “Our bill empowers parents to educate their own children about these sensitive topics at their own pace without having their hand forced by the public school system,” the senators said in a statement. “While we may not agree on what moral, ideological, and religious values to teach or not to teach our children, we can certainly agree that it should be up to the parent to decide — not the government.”
 

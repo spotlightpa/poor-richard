@@ -3,6 +3,7 @@ authors = ["Kate Huangpu"]
 blurb = "Can Gov. Josh Shapiro satisfy environmentalists and the GOP on climate change? With a proposed carbon cap-and-trade program, he’s trying."
 byline = "Kate Huangpu of Spotlight PA"
 description = "Can PA Gov. Josh Shapiro satisfy environmentalists and the GOP on climate change? With a new carbon cap-and-trade program, he’s trying."
+feed-exclude = false
 image = "2024/03/01jz-rz5f-mh1y-4527.jpeg"
 image-credit = "Commonwealth Media Services"
 image-description = "Gov. Josh Shapiro announced his new cap-and-trade program in March 2024 in Scranton, Pennsylvania."
@@ -136,7 +137,7 @@ Pittman did say there are a few pieces of Shapiro’s energy package that he fee
 
 To advance in the state Senate, the proposals must pass through its Environmental Resources and Energy Committee. State Sen. Gene Yaw (R., Lycoming) heads the committee and told Spotlight PA that he opposes all cap-and-trade programs.
 
-Yaw argued the state should be trying to increase energy production and that a cap-and-trade program would discourage companies from setting up shop in Pennsylvania. He cited a <a href="https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">study</a> by PJM, the state’s electricity provider, which found that future energy production may be insufficient to meet demand. Critics <a href="https://www.utilitydive.com/news/pjm-interconnection-capacity-shortfall-4rw-report-ohio/703295/">have argued</a> those concerns are overstated.
+Yaw argued the state should be trying to increase energy production and that a cap-and-trade program would discourage companies from setting up shop in Pennsylvania. He cited a <a href="https://web.archive.org/20230224205134/https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">study</a> by PJM, the state’s electricity provider, which found that future energy production may be insufficient to meet demand. Critics <a href="https://www.utilitydive.com/news/pjm-interconnection-capacity-shortfall-4rw-report-ohio/703295/">have argued</a> those concerns are overstated.
 
 Yaw added that he would consider changing renewable energy standards, saying that he supports energy diversification “in a global sense.” But any bill would need to address his concern regarding increasing the state’s overall energy production, he said.
 

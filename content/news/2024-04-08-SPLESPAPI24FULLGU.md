@@ -173,7 +173,7 @@ Trump se ha <a href="https://apnews.com/article/trump-haley-election-2024-republ
 
 El Senado de Estados Unidos está compuesto por 100 senadores, dos por cada estado. Los senadores son elegidos para mandatos de seis años y, cada dos años, aproximadamente un tercio del cuerpo se presenta a la reelección.
 
-Este año, las primarias para el Senado se <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+Este año, las primarias para el Senado se <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
 Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
 

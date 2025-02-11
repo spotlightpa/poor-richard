@@ -4,6 +4,7 @@ authors = ["Kate Mays", "Paige Willett", "Wynter Muro"]
 blurb = "Tim DeFoor, el actual titular, es el único candidato en la papeleta de las primarias republicanas. Los demócratas elegirán entre dos candidatos: el Representante Estatal Malcolm Kenyatta y el Contralor del Condado de Lehigh Mark Pinsley."
 byline = "Kate Mays, Paige Willett, and Wynter Muro for Spotlight PA"
 description = "Tim DeFoor, el actual titular, es el único candidato en la papeleta de las primarias republicanas. Los demócratas elegirán entre dos candidatos: el Representante Estatal Malcolm Kenyatta y el Contralor del Condado de Lehigh Mark Pinsley."
+feed-exclude = false
 image = "2024/03/01jy-z6wa-s8v9-qyse.jpeg"
 image-credit = "Cortesía de las páginas de Facebook de las campañas"
 image-description = "De izquierda a derecha: Diputado Estatal Malcolm Kenyatta; Auditor General de Pensilvania Tim DeFoor; Contralor del Condado de Lehigh Mark Pinsley."
@@ -85,7 +86,7 @@ También ha patrocinado leyes sobre temas menos destacados, como la creación <a
 
 Además de presentarse a auditor general, Kenyatta aspira a la reelección en la Cámara de Representantes del Estado.
 
-Kenyatta ha incursionado en la política nacional, actuando como <a href="https://www.inquirer.com/politics/election/biden-names-malcolm-kenyatta-josh-shapiro-to-campaign-advisory-board-20230510.html">s</a><u>ubrogante</u> del presidente Joe Biden en su campaña de 2020. En 2023, Biden <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2023/04/21/president-biden-announces-key-appointments-to-boards-and-commissions-25/">nombró</a> a Kenyatta presidente de la Comisión Asesora Presidencial para el Fomento de la Igualdad Educativa, la Excelencia y las Oportunidades Económicas de los Estadounidenses Negros.
+Kenyatta ha incursionado en la política nacional, actuando como <a href="https://www.inquirer.com/politics/election/biden-names-malcolm-kenyatta-josh-shapiro-to-campaign-advisory-board-20230510.html">s</a><u>ubrogante</u> del presidente Joe Biden en su campaña de 2020. En 2023, Biden <a href="https://web.archive.org/20230421202423/https://www.whitehouse.gov/briefing-room/statements-releases/2023/04/21/president-biden-announces-key-appointments-to-boards-and-commissions-25/">nombró</a> a Kenyatta presidente de la Comisión Asesora Presidencial para el Fomento de la Igualdad Educativa, la Excelencia y las Oportunidades Económicas de los Estadounidenses Negros.
 
 Kenyatta fue la <a href="https://www.pahouse.com/Kenyatta/About/Biography#:~:text=Representative%20Kenyatta%20is%20a%20barrier,Senate%20seat%20in%20American%20history.">primera persona de color abiertamente LGBTQ</a> en aspirar a un escaño en el Senado de EE.UU. — candidatura que perdió en las elecciones primarias de 2022 frente al senador John Fetterman.
 

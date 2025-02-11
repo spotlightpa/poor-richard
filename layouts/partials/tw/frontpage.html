@@ -227,10 +227,9 @@
         )
       }}
     {{ end }}
-    {{ if .edNewsletter }}
-      {{ $pages := .newsletter }}
+    {{ if .showNewsletterCallout }}
+      {{ $pages := .newsletterCalloutRiver }}
       {{ partial "tw/list-callout-newsletter.html" (dict
-
         "calloutHed" (page.Param "callout-hed")
         "signupHed" (page.Param "signup-hed")
         "signupDek" (page.Param "signup-dek")

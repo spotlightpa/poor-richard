@@ -85,7 +85,7 @@ Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republic
 
 <h2 id="spl-heading-3">U.S. Senate</h2>
 
-This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20130909022320/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12358.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 

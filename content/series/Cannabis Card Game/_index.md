@@ -1,5 +1,6 @@
 +++
 title-tag = "The truth behind Pa.'s medical marijuana card industry"
+slug = "cannabis-card"
 subhed = "A yearlong investigation into the big business of medical marijuana in Pennsylvania, including dangerous tactics by cannabis business, unequal and inconsistent enforcement by regulators, and legal grey areas for patients."
 published = 2022-02-21T10:00:00.000Z
 image = "2022/02/01h0-n397-9vb4-m2qq.jpeg"
@@ -8,7 +9,10 @@ image-credit = "Leise Hook / For Spotlight PA"
 image-size = "hidden"
 kicker = "Cannabis Card Game"
 title = "Cannabis Card Game"
-dek = "A yearlong investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
-linktitle = "A yearlong investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
-description = "A yearlong investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
+dek = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
+linktitle = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
+description = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
+aliases = [
+  "/series/unproven-unsafe/",
+]
 +++

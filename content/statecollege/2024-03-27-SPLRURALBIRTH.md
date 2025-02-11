@@ -3,6 +3,7 @@ authors = ["Marley Parish"]
 blurb = "The end of Penn Highlands’ birth services marks another huge maternal care loss for Pennsylvania’s shrinking rural counties."
 byline = "Marley Parish of Spotlight PA State College"
 description = "Penn Highlands Elk’s planned closure of labor and delivery services in its maternity care unit affects rural communities across the region."
+feed-exclude = false
 image = "2024/03/01k0-5vzw-3g2v-510q.jpeg"
 image-credit = "Nate Smallwood / For Spotlight PA"
 image-description = "An aerial view of Penn Highlands Elk in St. Marys."
@@ -126,7 +127,7 @@ Manuel Bonder, a spokesperson for Shapiro, told Spotlight PA that senior adminis
 
 The Hospital and Healthsystem Association of Pennsylvania has voiced support for the governor’s proposed maternal health and other health care investments.
 
-Thompson also requested a meeting with Fontaine earlier this month to discuss the closure and ways to expand health care access in Elk County. Through a spokesperson, Casey said pregnant people shouldn’t have to travel more than an hour to give birth “just because they live in a rural area” and cited his <a href="https://www.casey.senate.gov/news/releases/casey-grassley-introduce-bill-to-provide-financial-stability-and-security-to-rural-hospitals">past proposals to support</a> rural hospitals.
+Thompson also requested a meeting with Fontaine earlier this month to discuss the closure and ways to expand health care access in Elk County. Through a spokesperson, Casey said pregnant people shouldn’t have to travel more than an hour to give birth “just because they live in a rural area” and cited his <a href="https://web.archive.org/20240401100055/https://www.casey.senate.gov/news/releases/casey-grassley-introduce-bill-to-provide-financial-stability-and-security-to-rural-hospitals">past proposals to support</a> rural hospitals.
 
 Dush argued the state should find ways to address staffing shortages and financial challenges, citing a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1351">law</a> that took effect this year that ties Medicaid reimbursement to federal rates and pays whichever amount is higher. The law also reimburses emergency medical services organizations for 100% of the miles they travel with a patient.
 

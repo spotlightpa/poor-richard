@@ -3,6 +3,7 @@ authors = ["Stephen Caruso"]
 blurb = "Democrats who control the state House and Republicans who control the state Senate have put forth vastly different proposals."
 byline = "Stephen Caruso of Spotlight PA"
 description = "Democrats who control the state House and Republicans who control the state Senate have put forth vastly different proposals."
+feed-exclude = false
 image = "2023/08/01jd-ah82-hqqr-tc59.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "The interior of the Pennsylvania Capitol in Harrisburg."
@@ -72,7 +73,7 @@ State House Democrats amended the state Senate proposal to authorize home repair
 
 - Providing $100 million in state funding for <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-legislature-budget-mental-health-funding-school-services/">adult mental health services</a> through a series of grants for services like telemedicine, workforce retention and development, integrating behavioral health in substance use disorder treatment, and delivering psychiatric care in a primary care setting.
 
-- Amending a preexisting state grant program for sports marketing and tourism to allow for up to $25 million to be spent hosting and marketing an international sporting event. (Philadelphia is set to host World Cup games in <a href="https://www.phillyfwc26.com/">2026</a>.)
+- Amending a preexisting state grant program for sports marketing and tourism to allow for up to $25 million to be spent hosting and marketing an international sporting event. (Philadelphia is set to host World Cup games in <a href="https://web.archive.org/20230518205033/https://www.phillyfwc26.com/">2026</a>.)
 
 The fiscal code bill passed the state House 121-82. It also includes funding for the commonwealth’s four state-related universities: Lincoln, Penn State, Pitt, and Temple.
 
