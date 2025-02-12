@@ -1,7 +1,7 @@
 +++
-blurb = "Join us February 20 with Rep. Jordan Harris to discuss Gov. Shapiro’s latest Pa. budget proposal and what happens next on weed, transit, education, and more."
+blurb = "Join us Feb. 20 with Rep. Jordan Harris to discuss Gov. Shapiro’s latest Pa. budget proposal and what happens next on weed, transit, education, and more."
 byline = "Spotlight PA Staff"
-description = "Join us February 20 with Rep. Jordan Harris to talk Pa.’s latest budget proposal and what happens next on weed, education, and more."
+description = "Join us Feb. 20 with Rep. Jordan Harris to talk PA’s latest budget proposal and what happens next on weed, education, and more."
 event-date = 2025-02-20T18:00:00-05:00
 event-title = "BUDGET QUESTIONS: Ask a top PA Democrat about Shapiro’s latest pitch"
 event-url = "https://zoom.us/webinar/register/WN_iTNCxmiESO-veclcuvwVpQ"
@@ -24,7 +24,7 @@ topics = ["Events"]
 twitter-title = "Ask a top PA Democrat about Shapiro’s latest budget pitch"
 +++
 
-Gov. Josh Shapiro wants to send more money to Pennsylvania’s poorest public schools, tax skill games, and <a href="https://www.spotlightpa.org/news/2025/02/marijuana-cannabis-recreational-legalization-pennsylvania-josh-shapiro-budget-gop-support/">legalize</a> recreational cannabis <a href="https://www.spotlightpa.org/news/2025/02/josh-shapiro-pennsylvania-budget-legal-weed/">as part of his $51.4 billion budget proposal</a>.
+Gov. Josh Shapiro wants to send more money to Pennsylvania’s poorest public schools, tax skill games, and <a href="https://www.spotlightpa.org/news/2025/02/marijuana-cannabis-recreational-legalization-pennsylvania-josh-shapiro-budget-gop-support/">legalize</a> recreational cannabis <a href="https://www.spotlightpa.org/news/2025/02/josh-shapiro-pennsylvania-budget-legal-weed/">as part of his $51.5 billion budget proposal</a>.
 
 In his February address, Shapiro also threw his support behind <a href="https://www.spotlightpa.org/news/2025/02/eviction-sealing-pennsylvania-josh-shapiro-statewide-policy/">sealing certain eviction records</a> and increasing state oversight of private equity acquisitions of hospitals and nursing homes.
 
