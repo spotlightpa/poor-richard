@@ -17,9 +17,13 @@ supporters = """
   dataSrc="majorDonors"
 >}}
 {{<supporters
+  category="Current Leaders in Action"
+  content="For a list of our Leaders in Action, individuals and family foundation supporters 2024–5, [see here](/support/leaders-in-action/#our-current-leaders)."
+>}}
+{{<supporters
   id="all-donors"
   category="Members since launch"
-  content="If you would like to see a full list of supporters since launch of any amount, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org). For a list of our Leaders in Action, individuals and family foundation supporters 2024–5, [see here](/support/leaders-in-action/#our-current-leaders)."
+  content="If you would like to see a full list of supporters since launch of any amount, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
 >}}
 """
 +++
