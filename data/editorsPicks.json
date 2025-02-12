@@ -12,16 +12,17 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-02-11-SPLCAREBUDGET0225.md"
+    "content/news/2025-02-12-spl_welfare_0225.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-04-SPLPAIDLEAVE0225.md",
-    "content/news/2021-11-26-SPLNUMBERS.md"
+    "content/news/2024-12-27-spl_opioid_1224.md",
+    "content/news/2024-04-09-spl_opioids_defense.md",
+    "content/news/2024-11-15-SPLopioiddb1124.md"
   ],
   "topSlots": [
-    "content/news/2025-02-10-SPLDIRECTORIES0125.md",
-    "content/news/2025-02-07-SPLEVICTSEAL0225.md",
-    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md"
+    "content/statecollege/2025-02-12-SPLBIRDFLU0225.md",
+    "content/news/2025-02-11-SPLCAREBUDGET0225.md",
+    "content/news/2025-02-10-SPLDIRECTORIES0125.md"
   ],
   "topper": []
 }
