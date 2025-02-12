@@ -13,13 +13,13 @@ donate = """
 supporters = """
 {{<supporters
   id="major-donors-and-funders-since-launch"
-  category="Major donors and funders since launch"
+  category="Foundation and Institutional Supporters Since Launch"
   dataSrc="majorDonors"
 >}}
 {{<supporters
   id="all-donors"
   category="Members since launch"
-  content="If you would like to see a full list of supporters since launch of any amount, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
+  content="If you would like to see a full list of supporters since launch of any amount, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org). For a list of our Leaders in Action, individuals and family foundation supporters 2024–5, [see here](/support/leaders-in-action/#our-current-leaders)."
 >}}
 """
 +++
