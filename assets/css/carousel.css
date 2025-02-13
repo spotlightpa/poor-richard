@@ -104,12 +104,10 @@
     height: 3rem;
   }
 
-  .carousel-arrow.left-arrow {
-    left: -11px;
-  }
-
-  .carousel-arrow.right-arrow {
-    right: -11px;
+  @media (max-width: 495px) {
+    .carousel-arrow svg {
+      width: 2.75rem;
+    }
   }
 }
 
