@@ -1,7 +1,7 @@
 +++
-blurb = "Join us February 20 with Rep. Jordan Harris to discuss Gov. Shapiro’s latest Pa. budget proposal and what happens next on weed, transit, education, and more."
+blurb = "Join us Feb. 20 with Rep. Jordan Harris to discuss Gov. Shapiro’s latest Pa. budget proposal and what happens next on weed, transit, education, and more."
 byline = "Spotlight PA Staff"
-description = "Join us February 20 with Rep. Jordan Harris to talk Pa.’s latest budget proposal and what happens next on weed, education, and more."
+description = "Join us Feb. 20 with Rep. Jordan Harris to talk PA’s latest budget proposal and what happens next on weed, education, and more."
 event-date = 2025-02-20T18:00:00-05:00
 event-title = "BUDGET QUESTIONS: Ask a top PA Democrat about Shapiro’s latest pitch"
 event-url = "https://zoom.us/webinar/register/WN_iTNCxmiESO-veclcuvwVpQ"

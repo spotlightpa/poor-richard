@@ -13,8 +13,12 @@ donate = """
 supporters = """
 {{<supporters
   id="major-donors-and-funders-since-launch"
-  category="Major donors and funders since launch"
+  category="Foundation and Institutional Supporters Since Launch"
   dataSrc="majorDonors"
+>}}
+{{<supporters
+  category="Current Leaders in Action"
+  content="For a list of our Leaders in Action, individuals and family foundation supporters 2024–5, [see here](/support/leaders-in-action/#our-current-leaders)."
 >}}
 {{<supporters
   id="all-donors"
