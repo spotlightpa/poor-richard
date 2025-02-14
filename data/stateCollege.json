@@ -1,15 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2025-02-13-SPLRURALBUDGET0225.md"
+    "content/statecollege/2025-02-14-SPLCONSUMERAD0225.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-01-09-SPLWATER0125.md",
-    "content/statecollege/2024-07-17-SPLRURALCOM0724.md",
-    "content/statecollege/2023-10-06-SPLRURALBUDGET.md"
+    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md",
+    "content/statecollege/2025-01-31-SPLROCKSPRING0131.md",
+    "content/statecollege/2025-01-15-SPLROCKSPRING0125.md",
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-02-13-SPLRURALBUDGET0225.md",
     "content/statecollege/2025-02-12-SPLBIRDFLU0225.md",
-    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md",
     "content/statecollege/2025-02-06-SPLAUDITS0225.md"
   ],
   "topper": []
