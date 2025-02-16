@@ -4,6 +4,7 @@ authors = ["Stephen Caruso", "Kate Huangpu"]
 blurb = "Durante las elecciones primarias del 16 de mayo, demócratas y republicanos votarán por los candidatos a ocupar las vacantes de las Cortes Superiores y de la Commonwealth de Pensilvania. Los ganadores se enfrentarán en noviembre."
 byline = "Stephen Caruso of Spotlight PA and Kate Huangpu of Spotlight PA"
 description = "Durante las elecciones primarias del 16 de mayo, demócratas y republicanos votarán por candidatos para cubrir las vacantes de las Cortes Superiores y de la Commonwealth de Pensilvania. "
+feed-exclude = false
 image = "external/7760aqj3vp65p3jpzm9cn7ts2w.jpeg"
 image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center, located in Harrisburg, is the home of the Commonwealth Court."
@@ -11,6 +12,7 @@ internal-budget = "Elecciones primarias Pa. 2023: Una guía completa de los cand
 internal-id = "SPLSPANCOSUP"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-04-10T09:41:16.29-04:00
 slug = "pa-eleccion-primaria-2023-commonwealth-superior-corte-candidatos"
 suppress-date = false
@@ -37,15 +39,15 @@ La Corte la Commonwealth preside sobre las acciones civiles interpuestas por y c
 
 No todos los votantes podrán participar en las próximas primarias judiciales, que se celebrarán el 16 de mayo. Pensilvania es uno de los nueve estados con primarias cerradas, que impiden participar en las elecciones partidistas a los votantes de terceros partidos y no afiliados. (Los votantes no afiliados y de terceros partidos pueden, sin embargo, votar por preguntas de la papeleta, otros referendos y elecciones especiales durante unas primarias).
 
-<i><b>&gt;&gt;Regístrese para votar, cambie su inscripción, solicite una papeleta de voto por correo y mucho más en </b></i><a href="https://www.vote.pa.gov/Pages/default.aspx"><i><b>vote.pa.gov</b></i></a>
+<i><b>&gt;&gt;Regístrese para votar, cambie su inscripción, solicite una papeleta de voto por correo y mucho más en </b></i><a href="https://web.archive.org/20230101005531/https://www.vote.pa.gov/Pages/default.aspx"><i><b>vote.pa.gov</b></i></a>
 
-Pensilvania es <a href="https://www.brennancenter.org/judicial-selection-map">uno de los pocos estados</a> que eligen a los jueces en concursos partidistas, lo que significa que los candidatos se presentan bajo la bandera de un partido político, reúnen apoyos y recaudan fondos.
+Pensilvania es <a href="https://web.archive.org/20230203011744/https://www.brennancenter.org/judicial-selection-map">uno de los pocos estados</a> que eligen a los jueces en concursos partidistas, lo que significa que los candidatos se presentan bajo la bandera de un partido político, reúnen apoyos y recaudan fondos.
 
-Sin embargo, hay <a href="http://ethics.pacourts.us/electionfaq.htm">algunas diferencias clave</a> entre las elecciones judiciales y otras elecciones políticas en la Commonwealth. Los posibles jueces no pueden pedir de forma directa donaciones, aunque sus comités de campaña sí pueden hacerlo. Tampoco pueden prometer que emitirán fallos de determinada manera.
+Sin embargo, hay <a href="https://web.archive.org/20230329091837/http://ethics.pacourts.us/electionfaq.htm">algunas diferencias clave</a> entre las elecciones judiciales y otras elecciones políticas en la Commonwealth. Los posibles jueces no pueden pedir de forma directa donaciones, aunque sus comités de campaña sí pueden hacerlo. Tampoco pueden prometer que emitirán fallos de determinada manera.
 
 Dado que las elecciones judiciales suelen tener una participación electoral relativamente baja, y como los jueces tienen menos contacto directo con el público que los representantes locales, el apoyo de los partidos puede ser un poderoso factor determinante de quién gane unas primarias judiciales.
 
-Las calificaciones del Colegio de Abogados de Pensilvania (PBA) pueden ser igualmente importantes. El Colegio de Abogados clasifica a los candidatos judiciales como “muy recomendados”, “recomendados” o “no recomendados”, basándose <a href="http://pavotesmart.com/ratings-criteria/">en</a> el historial judicial del candidato y en las entrevistas con una comisión de evaluación judicial.
+Las calificaciones del Colegio de Abogados de Pensilvania (PBA) pueden ser igualmente importantes. El Colegio de Abogados clasifica a los candidatos judiciales como “muy recomendados”, “recomendados” o “no recomendados”, basándose <a href="https://web.archive.org/20230329091833/http://pavotesmart.com/ratings-criteria/">en</a> el historial judicial del candidato y en las entrevistas con una comisión de evaluación judicial.
 
 Spotlight PA ha tomado nota de estas clasificaciones, así como de otros detalles clave, en sus perfiles de los candidatos:
 
@@ -105,11 +107,11 @@ Lea <a href="https://web.archive.org/20230314064020/https://www.pabar.org/public
 
 Abogado del condado de Berks y graduado en Derecho de la Universidad Widener, Prince dirige un bufete especializado en litigios relacionados con armas de fuego.
 
-Prince ha demandado a la ciudad de Harrisburg para <a href="https://apnews.com/article/pennsylvania-gun-politics-harrisburg-e55a37a31ec6d6e1f82526e7009cd1c2">bloquear la aplicación</a> de antiguas leyes sobre armas de fuego, y ha demandado al gobierno estatal y al federal para bloquear las prohibiciones de <a href="https://www.firearmspolicy.org/lawsuit-challenging-trump-bump-stock-ban">los bump stocks</a> y los armazones parciales de armas de fuego que carecen de información identificativa, que los opositores han etiquetado como <a href="https://apnews.com/article/police-pennsylvania-lawsuits-gun-politics-af013cd0d14c2e28d4669c35db8f6359">“armas fantasma”. </a>
+Prince ha demandado a la ciudad de Harrisburg para <a href="https://web.archive.org/20230322110415/https://apnews.com/article/pennsylvania-gun-politics-harrisburg-e55a37a31ec6d6e1f82526e7009cd1c2">bloquear la aplicación</a> de antiguas leyes sobre armas de fuego, y ha demandado al gobierno estatal y al federal para bloquear las prohibiciones de <a href="https://web.archive.org/20230321172237/https://www.firearmspolicy.org/lawsuit-challenging-trump-bump-stock-ban">los bump stocks</a> y los armazones parciales de armas de fuego que carecen de información identificativa, que los opositores han etiquetado como <a href="https://web.archive.org/20230405095411/https://apnews.com/article/police-pennsylvania-lawsuits-gun-politics-af013cd0d14c2e28d4669c35db8f6359">“armas fantasma”. </a>
 
 Cuenta con el respaldo de un puñado de legisladores conservadores de base del Partido Republicano, sheriffs de condados y grupos de defensa de los derechos de las armas, entre ellos Firearms Owners Against Crime (Propietarios de Armas de Fuego contra la Delincuencia).
 
-En febrero, Prince asistió a un <a href="https://www.facebook.com/SusquehannaGOP/posts/pfbid0A6H2kQSigzDHB34a7d88rRf6mR7EgEYwS4LFyZnzQEH4psfJaxQfU3YCTjYJ4d29l">acto</a> de los republicanos del condado de Susquehanna y posó para una foto de grupo en la que aparecía Frank Scavo, <a href="https://www.penncapital-star.com/government-politics/republican-state-house-candidate-shared-clinton-conspiracy-theory-on-facebook/">ex candidato republicano a las legislativas</a> quien fue <a href="https://www.wnep.com/amp/article/news/local/lackawanna-county/frank-scavo-sentenced-to-prison-for-role-in-capitol-riot-federal-court-old-forge/523-f350908f-15d2-4a33-9b46-78a96f7c6103">condenado a 60 días de cárcel</a> por participar en los disturbios del 6 de enero en el Capitolio. La candidata republicana a la Corte Suprema del estado, Patricia McCullough, también salió en la foto.
+En febrero, Prince asistió a un <a href="https://web.archive.org/20230321092439/https://www.facebook.com/SusquehannaGOP/posts/pfbid0A6H2kQSigzDHB34a7d88rRf6mR7EgEYwS4LFyZnzQEH4psfJaxQfU3YCTjYJ4d29l">acto</a> de los republicanos del condado de Susquehanna y posó para una foto de grupo en la que aparecía Frank Scavo, <a href="https://web.archive.org/20230329091836/https://www.penncapital-star.com/government-politics/republican-state-house-candidate-shared-clinton-conspiracy-theory-on-facebook/">ex candidato republicano a las legislativas</a> quien fue <a href="https://web.archive.org/20230321092503/https://www.wnep.com/amp/article/news/local/lackawanna-county/frank-scavo-sentenced-to-prison-for-role-in-capitol-riot-federal-court-old-forge/523-f350908f-15d2-4a33-9b46-78a96f7c6103">condenado a 60 días de cárcel</a> por participar en los disturbios del 6 de enero en el Capitolio. La candidata republicana a la Corte Suprema del estado, Patricia McCullough, también salió en la foto.
 
 Prince declaró a Spotlight PA que desconocía los antecedentes de Scavo cuando se tomó la foto.
 
@@ -117,7 +119,7 @@ Prince declaró a Spotlight PA que desconocía los antecedentes de Scavo cuando 
 
 Prince no ha sido recomendado por el Colegio de Abogados del Estado, que <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">consideró</a> que “carece de la profundidad y amplitud de experiencia y preparación necesarias para asumir la función de mando de juez en la Corte de la Commonwealth.”
 
-En un correo electrónico, Prince dijo que no estaba de acuerdo con su calificación y <a href="https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">señaló el éxito de candidatos</a> que no contaban con la bendición del grupo.
+En un correo electrónico, Prince dijo que no estaba de acuerdo con su calificación y <a href="https://web.archive.org/20230113102217/https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">señaló el éxito de candidatos</a> que no contaban con la bendición del grupo.
 
 “Confío en que los votantes vean una vez más que el respaldo de una sola organización no es la plena medida de un candidato, y que basarán su decisión en la totalidad de la experiencia real, especialmente en los tribunales”, dijo Prince.
 
@@ -127,7 +129,7 @@ Lea <a href="https://web.archive.org/20230316111930/https://www.pabar.org/public
 
 La Corte Superior, compuesta por 15 miembros, se ocupa de todos los asuntos penales y civiles no relacionados con el gobierno. Los votantes de las primarias elegirán a dos candidatos de su propio partido; los dos demócratas y los dos republicanos más votados pasarán a las elecciones generales de noviembre.
 
-El papel principal del panel es revisar los veredictos de los tribunales inferiores. Entre las decisiones recientes más destacadas figura <a href="https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html">un dictamen de 2019</a> que anuló la condena del rapero Meek Mills por cargos de drogas y armas.
+El papel principal del panel es revisar los veredictos de los tribunales inferiores. Entre las decisiones recientes más destacadas figura <a href="https://web.archive.org/20230120144112/https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html">un dictamen de 2019</a> que anuló la condena del rapero Meek Mills por cargos de drogas y armas.
 
 Los jueces cumplen un mandato inicial de 10 años y después se someten a votaciones no partidistas de renovación, que suelen tener éxito.
 
@@ -181,7 +183,7 @@ A 23 de marzo, el Colegio de Abogados de Pensilvania no había asignado una cali
 
 Residente del condado de Clarion y licenciada en Derecho de la Universidad del Norte de Ohio, Battista trabajó anteriormente como asesora general adjunta de los departamentos de Salud y Estado bajo los anteriores gobernadores Tom Corbett, republicano, y Tom Wolf, demócrata. También fue fiscal en los condados de Franklin y Venango, y especialista en contratos del Departamento de Defensa.
 
-Desde entonces ha dejado ese trabajo para presentarse a las elecciones, según <a href="https://www.thecourierexpress.com/the_leader_vindicator/news/local/clarion-county-resident-endorsed-for-state-superior-court-judgeship/article_609d8196-ac94-11ed-ac02-2b6678b9bf0c.html">el Courier-Express</a>, y ahora trabaja como vicepresidenta de contratación estatal y federal para The Judge Group, una consultora con sede en Wayne.
+Desde entonces ha dejado ese trabajo para presentarse a las elecciones, según <a href="https://web.archive.org/20230219052309/https://www.thecourierexpress.com/the_leader_vindicator/news/local/clarion-county-resident-endorsed-for-state-superior-court-judgeship/article_609d8196-ac94-11ed-ac02-2b6678b9bf0c.html">el Courier-Express</a>, y ahora trabaja como vicepresidenta de contratación estatal y federal para The Judge Group, una consultora con sede en Wayne.
 
 Está respaldada por el Partido Republicano estatal.
 
@@ -195,11 +197,11 @@ Está respaldado por el Partido Republicano del estado. En su página web, el pa
 
 Ese año, Smail falló en contra de la Junta Electoral del condado de Westmoreland en un caso presentado por un candidato republicano al Senado estatal en unas elecciones muy reñidas.
 
-Ordenó a la junta que <a href="https://triblive.com/local/westmoreland/westmoreland-judge-tosses-more-than-200-ballots-elections-board-wanted-counted/">desechara</a> 204 votos provisionales — esos emitidos cuando no se puede verificar inmediatamente el registro de una persona — que quería contar. Esos 204 votos provisionales fueron emitidos por personas a las que los trabajadores electorales dijeron erróneamente que también tenían que firmar el cuaderno electoral de su distrito. Al firmar el cuaderno los votantes indicaban que habían votado usando una máquina de votación.
+Ordenó a la junta que <a href="https://web.archive.org/20230329091834/https://triblive.com/local/westmoreland/westmoreland-judge-tosses-more-than-200-ballots-elections-board-wanted-counted/">desechara</a> 204 votos provisionales — esos emitidos cuando no se puede verificar inmediatamente el registro de una persona — que quería contar. Esos 204 votos provisionales fueron emitidos por personas a las que los trabajadores electorales dijeron erróneamente que también tenían que firmar el cuaderno electoral de su distrito. Al firmar el cuaderno los votantes indicaban que habían votado usando una máquina de votación.
 
 Smail dictaminó que la junta electoral no actuó con la diligencia debida al aceptar esos 204 votos sin “más pruebas fehacientes” de que no habían votado dos veces.
 
-“Aunque la Corte se resiste a imponer las consecuencias de un fallo de la Junta a un electorado inocente... la corte debe aplicar las disposiciones del Código Electoral de forma coherente y tal como fueron redactadas por la legislatura”, <a href="https://www.pacourts.us/Storage/media/pdfs/20210604/011455-file-10674.pdf">escribió</a> Smail en la decisión de 12 páginas.
+“Aunque la Corte se resiste a imponer las consecuencias de un fallo de la Junta a un electorado inocente... la corte debe aplicar las disposiciones del Código Electoral de forma coherente y tal como fueron redactadas por la legislatura”, <a href="https://web.archive.org/20230124020414/https://www.pacourts.us/Storage/media/pdfs/20210604/011455-file-10674.pdf">escribió</a> Smail en la decisión de 12 páginas.
 
 El Colegio de Abogados calificó a Smail de “recomendado”, “basándose en su amplia trayectoria, capacidad jurídica y temperamento”.
 
