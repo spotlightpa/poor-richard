@@ -4,6 +4,7 @@ authors = ["Stephen Caruso", "Kate Huangpu"]
 blurb = "During the May 16 primary election, Democrats and Republicans will vote for candidates to fill open seats on Pennsylvania’s Commonwealth and Superior Courts. The winners will face off in November."
 byline = "Stephen Caruso of Spotlight PA and Kate Huangpu of Spotlight PA"
 description = "During the May 16 primary election, Democrats and Republicans will vote for candidates to fill open seats on PA Commonwealth and Superior Courts. "
+feed-exclude = false
 image = "external/0xw0tndqfe9xz56gcxmj1ev4wc.jpeg"
 image-credit = "Kent M. Wilhelm / Spotlight PA"
 image-description = "The Pennsylvania Judicial Center, located in Harrisburg, is the home of the Commonwealth Court."
@@ -11,6 +12,7 @@ internal-budget = "Pa. primary election 2023: A complete guide to the candidates
 internal-id = "SPLPRICOSU"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-03-29T05:00:00-04:00
 series = ["Voting Guides 2023"]
 slug = "pa-election-primary-2023-commonwealth-superior-court-candidates"
@@ -39,13 +41,13 @@ Not all voters will be able to participate in the upcoming judicial primaries, w
 
 <i><b>&gt;&gt;Register to vote, change your registration, request a mail ballot, and read more guides at </b></i><a href="https://www.spotlightpa.org/elections" target="_blank"><i><b>spotlightpa.org/elections</b></i></a>
 
-Pennsylvania is <a href="https://www.brennancenter.org/judicial-selection-map">one of a handful of states</a> that elect judges in partisan contests, meaning candidates run under the banner of a political party, collect endorsements, and raise money.
+Pennsylvania is <a href="https://web.archive.org/20230203011744/https://www.brennancenter.org/judicial-selection-map">one of a handful of states</a> that elect judges in partisan contests, meaning candidates run under the banner of a political party, collect endorsements, and raise money.
 
-There are <a href="http://ethics.pacourts.us/electionfaq.htm">a few key differences</a> between a judicial election and other political elections in the commonwealth, however. Prospective judges can’t directly ask for donations, though their campaign committees can. They also can’t make promises that they’ll rule in certain ways.
+There are <a href="https://web.archive.org/20230329091837/http://ethics.pacourts.us/electionfaq.htm">a few key differences</a> between a judicial election and other political elections in the commonwealth, however. Prospective judges can’t directly ask for donations, though their campaign committees can. They also can’t make promises that they’ll rule in certain ways.
 
 Because judicial elections tend to have relatively low voter turnout, and because judges have less direct contact with the public than local representatives, party endorsements can be a powerful determinant of who wins a judicial primary.
 
-Ratings from the Pennsylvania Bar Association can be similarly important. The bar ranks judicial candidates as “highly recommended,” “recommended,” or “not recommended” <a href="http://pavotesmart.com/ratings-criteria/">based on</a> the candidate’s judicial record and interviews with a judicial evaluation commission.
+Ratings from the Pennsylvania Bar Association can be similarly important. The bar ranks judicial candidates as “highly recommended,” “recommended,” or “not recommended” <a href="https://web.archive.org/20230329091833/http://pavotesmart.com/ratings-criteria/">based on</a> the candidate’s judicial record and interviews with a judicial evaluation commission.
 
 Spotlight PA has noted these rankings, as well as other key details, in its profiles of the candidates:
 
@@ -132,11 +134,11 @@ Read Martin’s answers to the PBA questionnaire <a href="https://web.archive.or
 
 A Berks County lawyer and Widener University law school graduate, Prince runs a firm that specializes in gun-related litigation.
 
-Prince has sued the city of Harrisburg to <a href="https://apnews.com/article/pennsylvania-gun-politics-harrisburg-e55a37a31ec6d6e1f82526e7009cd1c2">block the enforcement</a> of old gun laws, and sued the state and federal governments to block bans on <a href="https://www.firearmspolicy.org/lawsuit-challenging-trump-bump-stock-ban">bump stocks</a> and partial firearm frames that lack identifying information, which opponents have labeled <a href="https://apnews.com/article/police-pennsylvania-lawsuits-gun-politics-af013cd0d14c2e28d4669c35db8f6359">“ghost guns.”</a>
+Prince has sued the city of Harrisburg to <a href="https://web.archive.org/20230322110415/https://apnews.com/article/pennsylvania-gun-politics-harrisburg-e55a37a31ec6d6e1f82526e7009cd1c2">block the enforcement</a> of old gun laws, and sued the state and federal governments to block bans on <a href="https://web.archive.org/20230321172237/https://www.firearmspolicy.org/lawsuit-challenging-trump-bump-stock-ban">bump stocks</a> and partial firearm frames that lack identifying information, which opponents have labeled <a href="https://web.archive.org/20230405095411/https://apnews.com/article/police-pennsylvania-lawsuits-gun-politics-af013cd0d14c2e28d4669c35db8f6359">“ghost guns.”</a>
 
 He has the endorsement of a handful of conservative rank-and-file GOP lawmakers, county sheriffs, and gun rights groups, including Firearms Owners Against Crime.
 
-In February, Prince attended a Susquehanna County Republicans <a href="https://www.facebook.com/SusquehannaGOP/posts/pfbid0A6H2kQSigzDHB34a7d88rRf6mR7EgEYwS4LFyZnzQEH4psfJaxQfU3YCTjYJ4d29l">event</a> and <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02GDkkJsCy6kZ1C8R4GjmXC6n2i5Rs3aEqR4D47btQCgRH4D41ntoSiwZhjnY1wzW3l&id=100007541119284">posed for a group photo</a> that included Frank Scavo, a <a href="https://www.penncapital-star.com/government-politics/republican-state-house-candidate-shared-clinton-conspiracy-theory-on-facebook/">former Republican legislative candidate</a> who was <a href="https://www.wnep.com/amp/article/news/local/lackawanna-county/frank-scavo-sentenced-to-prison-for-role-in-capitol-riot-federal-court-old-forge/523-f350908f-15d2-4a33-9b46-78a96f7c6103">sentenced to 60 days in prison</a> for participating in the Jan. 6 riot at the U.S. Capitol. GOP state Supreme Court candidate Patricia McCullough was also in the photo.
+In February, Prince attended a Susquehanna County Republicans <a href="https://web.archive.org/20230321092439/https://www.facebook.com/SusquehannaGOP/posts/pfbid0A6H2kQSigzDHB34a7d88rRf6mR7EgEYwS4LFyZnzQEH4psfJaxQfU3YCTjYJ4d29l">event</a> and <a href="https://web.archive.org/20230321092430/https://www.facebook.com/permalink.php?story_fbid=pfbid02GDkkJsCy6kZ1C8R4GjmXC6n2i5Rs3aEqR4D47btQCgRH4D41ntoSiwZhjnY1wzW3l&id=100007541119284">posed for a group photo</a> that included Frank Scavo, a <a href="https://web.archive.org/20230329091836/https://www.penncapital-star.com/government-politics/republican-state-house-candidate-shared-clinton-conspiracy-theory-on-facebook/">former Republican legislative candidate</a> who was <a href="https://web.archive.org/20230321092503/https://www.wnep.com/amp/article/news/local/lackawanna-county/frank-scavo-sentenced-to-prison-for-role-in-capitol-riot-federal-court-old-forge/523-f350908f-15d2-4a33-9b46-78a96f7c6103">sentenced to 60 days in prison</a> for participating in the Jan. 6 riot at the U.S. Capitol. GOP state Supreme Court candidate Patricia McCullough was also in the photo.
 
 Prince told Spotlight PA that he wasn’t aware of Scavo’s background when he took the photo.
 
@@ -144,7 +146,7 @@ Prince told Spotlight PA that he wasn’t aware of Scavo’s background when he 
 
 Prince is not recommended by the state bar association, which <a href="https://web.archive.org/20230316111804/https://www.pabar.org/site/News-and-Publications/News/News-Releases/2023/Feb/Pennsylvania-Bar-Association-Judicial-Evaluation-Commission-Releases-Second-Round-of-2023-Ratings-for-Potential-Candidates-to-Fill-Seats-on-Pennsylvania-Appellate-Courts">found</a> that he “lacks the depth and breadth of experience and preparation necessary to take on the commanding role of judge on the Commonwealth Court.”
 
-In an email, Prince said he disagreed with his rating and <a href="https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">pointed to the success of candidates</a> who didn’t have the group’s blessing.
+In an email, Prince said he disagreed with his rating and <a href="https://web.archive.org/20230113102217/https://www.penncapital-star.com/criminal-justice/the-pa-bar-association-carefully-creates-judicial-candidate-ratings-but-do-they-actually-serve-voters/">pointed to the success of candidates</a> who didn’t have the group’s blessing.
 
 “I have confidence voters will once again see that a single organizational endorsement is not the full measure of a candidate, and that they will base their decision on the totality of actual experience, especially in the courtroom,” Prince said.
 
@@ -157,7 +159,7 @@ Read Prince’s answers to the PBA questionnaire <a href="https://web.archive.or
 
 The 15-member Superior Court handles all nongovernment-related criminal and civil cases. Primary voters will pick two candidates from their own party; the two Democrats and the two Republicans with the most votes will move on to the November general election.
 
-The panel’s main role is to review lower courts’ verdicts. Notable recent decisions include <a href="https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html">a 2019 opinion</a> tossing out rapper Meek Mills’s conviction on drug and gun charges.
+The panel’s main role is to review lower courts’ verdicts. Notable recent decisions include <a href="https://web.archive.org/20230120144112/https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html">a 2019 opinion</a> tossing out rapper Meek Mills’s conviction on drug and gun charges.
 
 Judges serve initial 10-year terms, then face nonpartisan retention votes, which usually succeed.
 
@@ -225,7 +227,7 @@ As of March 23, the Pennsylvania Bar Association had not assigned Dugan a rating
 
 A Clarion County resident who holds a law degree from Ohio Northern University, Battista previously served as assistant general counsel for the departments of Health and State under former Govs. Tom Corbett, a Republican, and Tom Wolf, a Democrat. She also was a prosecutor in Franklin and Venango Counties, and was a contract specialist for the Department of Defense.
 
-She has since left that job to run for office, according to <a href="https://www.thecourierexpress.com/the_leader_vindicator/news/local/clarion-county-resident-endorsed-for-state-superior-court-judgeship/article_609d8196-ac94-11ed-ac02-2b6678b9bf0c.html">the Courier-Express</a>, and now works as vice president of state and federal contracting for The Judge Group, a Wayne-based consulting firm.
+She has since left that job to run for office, according to <a href="https://web.archive.org/20230219052309/https://www.thecourierexpress.com/the_leader_vindicator/news/local/clarion-county-resident-endorsed-for-state-superior-court-judgeship/article_609d8196-ac94-11ed-ac02-2b6678b9bf0c.html">the Courier-Express</a>, and now works as vice president of state and federal contracting for The Judge Group, a Wayne-based consulting firm.
 
 She is endorsed by the state Republican Party.
 
@@ -241,14 +243,14 @@ He is endorsed by the state Republican Party. On its website, the party points t
 
 That year, Smail ruled against the Westmoreland County Board of Elections in a case brought by a Republican candidate for state Senate in an extremely close race.
 
-He ordered the board to <a href="https://triblive.com/local/westmoreland/westmoreland-judge-tosses-more-than-200-ballots-elections-board-wanted-counted/">throw out</a> 204 provisional ballots — those that are cast when a person’s registration cannot be immediately verified — it wanted to count. Those 204 provisional ballots were cast by people who were wrongly told by election workers that they also needed to sign their precinct’s pollbook. By signing the book, the voters instead indicated they cast a ballot using a voting machine.
+He ordered the board to <a href="https://web.archive.org/20230329091834/https://triblive.com/local/westmoreland/westmoreland-judge-tosses-more-than-200-ballots-elections-board-wanted-counted/">throw out</a> 204 provisional ballots — those that are cast when a person’s registration cannot be immediately verified — it wanted to count. Those 204 provisional ballots were cast by people who were wrongly told by election workers that they also needed to sign their precinct’s pollbook. By signing the book, the voters instead indicated they cast a ballot using a voting machine.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
 Smail ruled that the board of elections did not conduct due diligence in accepting those 204 votes without “further substantiating evidence” that they hadn’t voted twice.
 
-“While the Court is loath to impose the consequences of a failure of the Board onto an innocent electorate … the court must apply the provisions of the Elections Code consistently and as written by our legislature,” Smail <a href="https://www.pacourts.us/Storage/media/pdfs/20210604/011455-file-10674.pdf">wrote</a> in the 12-page decision.
+“While the Court is loath to impose the consequences of a failure of the Board onto an innocent electorate … the court must apply the provisions of the Elections Code consistently and as written by our legislature,” Smail <a href="https://web.archive.org/20230124020414/https://www.pacourts.us/Storage/media/pdfs/20210604/011455-file-10674.pdf">wrote</a> in the 12-page decision.
 
 The bar rated Smail “recommended,” “based on his extensive background, legal ability and temperament.”
 
