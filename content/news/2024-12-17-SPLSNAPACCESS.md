@@ -29,11 +29,11 @@ More than 2 million Pennsylvanians participate in SNAP, a federal program that h
 
 SNAP, formerly known as food stamps, is funded by the U.S. Department of Agriculture and administered by states. According to the federal agency, most households that use SNAP include older adults, people with disabilities, and families with kids.
 
-Accessing this support in Pennsylvania isn’t always easy, however, according to the recently released <a href="https://justharvest.org/wp-content/uploads/2024/12/Barriers-To-Benefits-Report.pdf">“Barriers to Benefits”</a> from Pittsburgh-based nonprofit Just Harvest. The organization, which advocates for policies that reduce hunger, found that SNAP’s complicated rules and extensive paperwork can stand in the way of people getting benefits.
+Accessing this support in Pennsylvania isn’t always easy, however, according to the recently released <a href="https://web.archive.org/20241220145413/https://justharvest.org/wp-content/uploads/2024/12/Barriers-To-Benefits-Report.pdf">“Barriers to Benefits”</a> from Pittsburgh-based nonprofit Just Harvest. The organization, which advocates for policies that reduce hunger, found that SNAP’s complicated rules and extensive paperwork can stand in the way of people getting benefits.
 
 {{<embed/newsletter cta="Get the latest on the state of caregiving in Pennsylvania with our free weekly newsletter, How We Care." eyebrow="Discover More" preselect="care">}}
 
-Ann Sanders, director of public benefits policy and programs at Just Harvest, spoke with How We Care about the findings of the report and ways SNAP could better serve Pennsylvania’s most vulnerable residents. In this conversation, which has been edited for length and clarity, Sanders discusses how the state’s administration of SNAP has improved since <a href="https://justharvest.org/wp-content/uploads/2013/11/Barriers-to-Benefits-2013.pdf">the group first analyzed it in 2013</a>, and where it continues to fall short.
+Ann Sanders, director of public benefits policy and programs at Just Harvest, spoke with How We Care about the findings of the report and ways SNAP could better serve Pennsylvania’s most vulnerable residents. In this conversation, which has been edited for length and clarity, Sanders discusses how the state’s administration of SNAP has improved since <a href="https://web.archive.org/20140926234729/https://justharvest.org/wp-content/uploads/2013/11/Barriers-to-Benefits-2013.pdf">the group first analyzed it in 2013</a>, and where it continues to fall short.
 
 <strong>Spotlight PA: The 2013 survey found that SNAP had major issues with paperwork, and the 2024 survey found this continues to be the case. What are the ramifications of someone going without SNAP support?</strong>
 
@@ -65,13 +65,13 @@ A lot of folks who have never applied for these benefits before are already hesi
 
 At an event that we had to release the “Barriers to Benefits” report on Dec. 5, \[Department of Human Services\] Secretary Val Arkoosh said her department intends to do more customer service training and trauma-informed training for staff. They agree that it’s not acceptable for someone who’s asking for help to be treated that way.
 
-<strong>Since the customer service can be so bad, why don’t people just apply for SNAP online through </strong><a href="https://www.compass.dhs.pa.gov/home/#/"><strong>Compass</strong></a><strong>?</strong>
+<strong>Since the customer service can be so bad, why don’t people just apply for SNAP online through </strong><a href="https://web.archive.org/20240617100426/https://www.compass.dhs.pa.gov/home/#/"><strong>Compass</strong></a><strong>?</strong>
 
 Although Compass has become more accessible, it is still a long application that asks you to create an account and a password. You have to remember the account and password later to check on the application’s status or send documents that way.
 
 And what we found is that some people, especially older adults, really do not feel comfortable using technology. They don’t necessarily trust it. Or they’re relying on family members to help. And when people feel like they’re forced to use technology they sometimes forgo benefits, or are delayed in getting benefits.
 
-Signing up for SNAP is actually a simplified process for older adults, because it’s just a <a href="https://www.pa.gov/agencies/dhs/resources/snap/snap-older-adults.html">two-page application</a>. But if you walk into the county assistance office and say, “I want to apply for SNAP,” they don’t ask you questions like, “Are you on a fixed income,” or “Are you over the age of 60?”
+Signing up for SNAP is actually a simplified process for older adults, because it’s just a <a href="https://web.archive.org/20241217093635/https://www.pa.gov/agencies/dhs/resources/snap/snap-older-adults.html">two-page application</a>. But if you walk into the county assistance office and say, “I want to apply for SNAP,” they don’t ask you questions like, “Are you on a fixed income,” or “Are you over the age of 60?”
 
 Instead, they give you a giant packet for all of the benefits at once. This is really intimidating and complex because it asks tons of questions, some of which are not relevant to getting SNAP.
 
