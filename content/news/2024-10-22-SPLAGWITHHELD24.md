@@ -14,7 +14,7 @@ modal-exclude = false
 og-title = "State agency didn’t disclose complete info on county compliance with elder abuse rules"
 pinned = false
 published = 2024-10-22T04:00:00-04:00
-series = ["Elder Abuse"]
+series = ["Unprotected"]
 slug = "pennsylvania-elder-abuse-investigations-department-of-aging-county-compliance-right-to-know"
 suppress-date = false
 title = "State agency didn’t disclose complete info on county compliance with elder abuse rules"
@@ -56,4 +56,3 @@ The department has argued it is not required to turn over that information becau
 Other state agencies, however, routinely make near-identical information public.
 
 The Department of Human Services, for instance, annually assesses county offices of children and youth services to determine the quality of service they provide. The Department of Human Services then makes those records <a href="https://www.pa.gov/en/agencies/dhs/resources/data-reports/ocyf-reports.html">available on its website</a> — records that include information about noncompliance with the law; the corrective actions required; the date by which those actions are required; and the provider’s corrective action plan.
-

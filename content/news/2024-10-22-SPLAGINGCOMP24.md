@@ -15,7 +15,7 @@ modal-exclude = false
 og-title = "Breaking rules intended to keep Pa.’s older adults safe is rarely met with state sanctions"
 pinned = false
 published = 2024-10-22T04:00:00-04:00
-series = ["Elder Abuse"]
+series = ["Unprotected"]
 slug = "pennsylvania-elder-abuse-area-agency-on-aging-department-compliance-information"
 suppress-date = false
 title = "Breaking rules intended to keep Pa.’s older adults safe is rarely met with state sanctions"
@@ -175,4 +175,3 @@ On the second to last day of August 2023, an Allegheny County caseworker checked
 They learned the person had died months earlier, in February 2023, in a hospital. The older adult had been taken there after a wound became infected.
 
 “We need to be open about this issue and fix it,” the Department of Aging specialist wrote, adding: “Please, I implore you, to give me some kind of response, some kind of direction so we can work towards a solution versus just continuing to observe the problem.”
-
