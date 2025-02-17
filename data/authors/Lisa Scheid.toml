@@ -1,0 +1,14 @@
+name = "Lisa Scheid"
+firstName = "Lisa"
+lastName = "Scheid"
+title = "Berks County Managing Editor"
+email = "lscheid@spotlightpa.org"
+headshot = "2025/02/01kv-6kzt-gs1j-1f8w.heic"
+content = """
+Lisa Scheid is the managing editor of Spotlight PA's Berks County Bureau. Born and raised in southeastern Pennsylvania, she has more than three decades of journalism experience, including various reporting, editing, and coordinating roles at the Reading Eagle.
+Prior to joining Spotlight PA, she was a business reporter for LNP|LancasterOnline. She was selected as a 2023 fellow to study economic data by the Society for Advancing Business Editing and Writing. Her business and agriculture reporting for the Eagle earned Keystone Press Awards in 2018 and 2019.
+
+As the Eagle's Business Weekly editor, she created the "40 Under 40" project and managed the Berks' Best Scholarship Program. Her agricultural coverage earned her the Bountiful Berks Award.
+"""
+role = "editorial"
+active = true
