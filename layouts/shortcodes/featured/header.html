@@ -19,6 +19,7 @@
 {{ $secondSource := .Get "second-source" }}
 {{ $secondDesc := .Get "second-description" }}
 {{ $secondType := .Get "second-type" | default "Photo" }}
+{{ $supplementalCredit := .Get "supplemental-credit" }}
 
 {{ $preposition := .Get "credit-relation" | default "of" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
@@ -96,6 +97,11 @@
           </span>
           {{ $preposition }}
           <span class="font-sans uppercase">{{ $secondSource }}</span>
+        </div>
+      {{ end }}
+      {{ if $supplementalCredit }}
+        <div class="mb-4 text-sm lg:mb-8">
+          {{ $supplementalCredit }}
         </div>
       {{ end }}
 
