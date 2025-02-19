@@ -12,17 +12,17 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-02-18-SPLNGINVEST0225.md"
+    "content/news/2025-02-19-splcallout0225.md"
   ],
   "subfeatures": [
-    "content/news/2024-07-03-SPLABUSE0724.md",
-    "content/news/2024-07-08-SPLAGABUSE101.md",
-    "content/news/2024-10-22-SPLAGINGCOMP24.md"
+    "content/news/2025-02-12-spl_welfare_0225.md",
+    "content/news/2024-12-27-spl_opioid_1224.md",
+    "content/news/2024-11-15-SPLopioiddb1124.md"
   ],
   "topSlots": [
+    "content/news/2025-02-18-SPLNGINVEST0225.md",
     "content/news/2025-02-18-SPLYOUNGCARE0225.md",
-    "content/statecollege/2025-02-18-SPLHOWTORUN0225.md",
-    "content/news/2025-02-17-SPLBHEALTH0225.md"
+    "content/statecollege/2025-02-18-SPLHOWTORUN0225.md"
   ],
   "topper": []
 }
