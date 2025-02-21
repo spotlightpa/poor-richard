@@ -29,7 +29,7 @@ Pennsylvania American Water Company — one of the state’s largest investor-ow
 
 The appointment, which requires approval from the state Public Utility Commission to take effect, could offer some relief to the company’s 1,000 customers who’ve endured<a href="https://www.spotlightpa.org/statecollege/2024/06/pennsylvania-rock-spring-water-company-ferguson-township-environment-utilities/"> more than a decade of unreliable service</a> in Centre County as regulators decide on a permanent solution.
 
-It’s not clear when the PUC might take up the issue. The agency said it would comment on next steps Friday afternoon.
+Nils Hagen-Frederiksen, a spokesperson for the PUC, told Spotlight PA that regulators “will work to address this matter in a timely fashion.” Next steps include reviewing the judge’s emergency order and briefs from those involved in the case, which are due in a week, he said.
 
 The decision came as a surprise to stakeholders and goes against requests from Rock Spring owner J. Roy Campbell, lawyers for the company, and even Pennsylvania American. All asked the judge to let the nearby State College Borough Water Authority assume interim control.
 
