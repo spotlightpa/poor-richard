@@ -2,7 +2,7 @@
 authors = ["Marley Parish"]
 blurb = "A state public utilities judge approved an emergency request from Pennsylvania’s Office of Consumer Advocate to put Rock Spring Water Company under new management."
 byline = "Marley Parish of Spotlight PA State College"
-description = "A Pennsylvania Public Utilities Commission judge approved a request to put Rock Spring Water Company in Centre County under new management."
+description = "Rock Spring customers have faced outages and poor service for years. A judge just ordered one of Pennsylvania’s largest investor-owned utilities to step in."
 feed-exclude = false
 image = "2024/05/01k5-h3pj-0hy4-sz4b.jpeg"
 image-credit = "Georgianna Sutherland / For Spotlight PA"
@@ -18,7 +18,7 @@ series = ["Rocky Waters"]
 slug = "rock-spring-water-company-pennsylvania-puc-public-utilities-commission-pennsylvania-american-state-college-centre-county"
 suppress-date = false
 title = "‘Imminent health threats’ to rural water customers lead judge to order temporary takeover"
-title-tag = "PA judge orders emergency takeover of private rural water company"
+title-tag = "PA judge orders emergency takeover of Rock Spring Water"
 topics = ["Rural Issues"]
 twitter-title = "‘Imminent health threats’ to water customers lead judge to order emergency takeover"
 +++
