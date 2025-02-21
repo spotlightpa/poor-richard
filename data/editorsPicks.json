@@ -12,18 +12,17 @@
     "content/news/2024-10-22-SPLAGINGCOMP24.md"
   ],
   "featuredStories": [
-    "content/news/2025-02-20-SPLSHAPQUIZ0225.md"
+    "content/news/2025-02-21-SPLRETENTIONPREV0225.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-11-SPLHARRISBUDGET0225.md",
-    "content/statecollege/2025-02-13-SPLRURALBUDGET0225.md",
-    "content/statecollege/2025-02-12-SPLBIRDFLU0225.md",
-    "content/news/2025-02-11-SPLCAREBUDGET0225.md"
+    "content/news/2023-10-12-SPLSCOPA101.md",
+    "content/news/2023-10-12-SPLSUP101.md",
+    "content/news/2023-10-12-SPLCOMM101.md"
   ],
   "topSlots": [
     "content/news/2025-02-18-SPLNGINVEST0225.md",
-    "content/news/2025-02-19-splcallout0225.md",
-    "content/statecollege/2025-02-18-SPLHOWTORUN0225.md"
+    "content/news/2025-02-20-SPLNEWSQUIZFEB1725.md",
+    "content/news/2025-02-20-SPLSHAPQUIZ0225.md"
   ],
   "topper": []
 }
