@@ -4,6 +4,7 @@
 <form
   class="mx-auto w-full rounded bg-g-2 p-4 font-sans shadow"
   data-ga-category="rail-newsletter"
+  x-data
   x-form="newsletters:talkofthetown"
   action="{{ site.Param `newsletters-action` }}"
   method="post"
@@ -40,5 +41,6 @@
       </svg>
     </span>
   </p>
-  <button class="btn-donate mt-2" type="submit">Subscribe</button>
+  <button class="btn-donate mt-2">Subscribe</button>
+  <div class="my-2"><span cf-target></span></div>
 </form>

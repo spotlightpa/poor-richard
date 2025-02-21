@@ -1,5 +1,6 @@
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
 import { recordNewsletterSignup, funnelStatus } from "./metrics.js";
+import importScript from "./import-script.js";
 
 export const DO_NOT_TRACK_KEY = "do-not-track";
 
@@ -124,6 +125,18 @@ export function addGAListeners() {
   }
 }
 
+async function promiseTurnstile(el) {
+  await importScript("https://challenges.cloudflare.com/turnstile/v0/api.js");
+  return new Promise((resolve) => {
+    // eslint-disable-next-line no-undef
+    let id = turnstile.render(el, {
+      sitekey: "0x4AAAAAAA9nUdX43ha0iWLD",
+      theme: "light",
+      callback: () => resolve(id),
+    });
+  });
+}
+
 export function analyticsPlugin(Alpine) {
   Alpine.directive("report-click", (el) => {
     buildGAClasses(el);
@@ -131,9 +144,24 @@ export function analyticsPlugin(Alpine) {
 
   Alpine.directive("form", (el) => {
     buildGAClasses(el);
-    el.addEventListener("submit", () => {
+    el.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      let id = null;
+      let cloudFlareBox = el.querySelector("[cf-target]");
+      // Should we alert if the box is misconfigured?
+      if (cloudFlareBox) {
+        id = await promiseTurnstile(cloudFlareBox);
+      }
       let valid = el.reportValidity();
-      if (valid) recordNewsletterSignup();
+      if (!valid) {
+        return;
+      }
+      recordNewsletterSignup();
+      el.submit();
+      if (id) {
+        // eslint-disable-next-line no-undef
+        turnstile.remove(id);
+      }
     });
   });
 }

@@ -219,7 +219,7 @@
 }
 
 .spl-input {
-  @apply w-full rounded border border-g-4 py-2 pl-4 pr-7 font-sans leading-normal outline-none ring-2 ring-transparent focus:ring-yellow;
+  @apply w-full rounded border border-g-4 py-2 pl-4 pr-7 font-sans leading-normal text-g-9 outline-none ring-2 ring-transparent focus:ring-yellow;
 }
 
 .spl-select {
