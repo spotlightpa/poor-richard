@@ -21,9 +21,7 @@
 <!-- Shibboleth field: server will reject message if too old -->
 <input
   type="hidden"
-  x-data="{ humanLike: false }"
-  x-init="setTimeout(()=>{ humanLike = true }, 10000)"
-  :name="humanLike? 'shibboleth_timestamp': ''"
-  :value="humanLike? new Date().toISOString(): ''"
-  @scroll.passive.window.once="setTimeout(()=>{ humanLike = true }, 1000)"
+  x-data
+  :name="'shibboleth_timestamp'"
+  :value="new Date().toISOString()"
 />
