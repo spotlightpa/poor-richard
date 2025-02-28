@@ -1,7 +1,8 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="rounded bg-black p-8 text-center font-sans text-white shadow md:px-12"
-  x-data
+  class="mx-auto my-6 max-w-3xl overflow-hidden rounded border border-g-3 bg-white px-6 pb-6 font-sans text-black shadow md:my-8 md:px-8 md:pb-8"
+  x-data="{ active: false }"
+  @focusin="active = true"
   x-form="newsletters:talkofthetown"
   data-ga-category="tout"
   action="{{ site.Param `newsletters-action` }}"
@@ -10,20 +11,16 @@
 >
   {{ partial "newsletter/talkofthetown-hidden.html" . }}
   <h6
-    class="bg-gradient-to-r from-orange via-yellow to-white bg-clip-text text-base font-bold uppercase tracking-widest text-transparent"
+    class="-ml-6 inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase leading-relaxed text-eyebrow md:-ml-8"
   >
-    Sign Up For Talk of the Town
+    Newsletters
   </h6>
 
-  <p class="mt-4 leading-tight">
+  <p class="mx-auto mt-6 max-w-xl text-center text-lg font-bold leading-tight">
     Sign up for <b>Talk of the Town</b>, a free weekly newsletter with top news
     and notes for North-Central PA by Spotlight PA’s State College regional
     bureau.
   </p>
-  <p class="mt-2 leading-tight">
-    <b>Talk of the Town</b> is delivered straight to your inbox every Thursday.
-  </p>
-
   <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
     <p class="relative flex-grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
@@ -48,4 +45,7 @@
       <button class="btn-signup" type="submit">Sign Up</button>
     </p>
   </div>
+  <p class="mx-auto mt-4 text-center text-sm font-normal leading-tight">
+    <b>Talk of the Town</b> is delivered straight to your inbox every Thursday.
+  </p>
 </form>

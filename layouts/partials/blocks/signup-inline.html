@@ -19,7 +19,7 @@
         @focusin="active = true"
         x-form="newsletters:multi"
         data-ga-category="tout"
-        action="{{ page.Param `newsletters-action` }}"
+        action="{{ .Page.Param `newsletters-action` }}"
         method="post"
         target="_blank"
       >
@@ -106,7 +106,6 @@
             </label>
           </p>
         </div>
-        <div class="my-2"><span cf-target></span></div>
       </form>
     </div>
   </section>
