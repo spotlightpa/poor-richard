@@ -13,7 +13,7 @@
 {{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
-{{ $captionClass := `mt-6 font-sans leading-tight text-g-8` }}
+{{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
