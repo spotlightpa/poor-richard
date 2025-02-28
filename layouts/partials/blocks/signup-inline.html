@@ -19,7 +19,7 @@
         @focusin="active = true"
         x-form="newsletters:multi"
         data-ga-category="tout"
-        action="{{ .Page.Param `newsletters-action` }}"
+        action="{{ page.Param `newsletters-action` }}"
         method="post"
         target="_blank"
       >
