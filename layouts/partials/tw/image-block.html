@@ -13,6 +13,7 @@
 {{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
+{{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
@@ -91,10 +92,7 @@
     </div>
   {{ end }}
   {{ with .caption }}
-    <figcaption
-      class="mt-6 font-sans leading-tight text-g-8"
-      itemprop="caption"
-    >
+    <figcaption class="{{ $captionClass }}" itemprop="caption">
       {{- . -}}
     </figcaption>
   {{ end }}

@@ -281,7 +281,6 @@ In a recent interview, Kelly still sounded baffled by the different advertising 
   caption="Shelly Hutchison’s business, Medical Marijuana Specialists, describes itself as a “one-stop” medical marijuana certification center. Hutchison, a registered nurse, told Spotlight PA she decided to start the company a few years ago and runs it from her Allegheny County home."
 >}}
 
-{{<featured/hr >}}
 
 ### An equal system?
 
