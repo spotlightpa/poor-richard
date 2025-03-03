@@ -42,6 +42,8 @@ Individual ticket sales will open in early April, based on availability. No tick
 
 Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, and Tony Muir.
 
+<div class="flex flex-wrap justify-around items-center [&>*]:max-w-[250px]">
+
 {{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="" credit="">}}
 
 {{<picture src="2025/02/01kw-40f5-cyb6-jtmv.png" width-ratio="300" height-ratio="91" description="Logo of Evans Wealth Strategies, a wealth advisor in the Lehigh Valley." caption="" credit="">}}
@@ -52,3 +54,4 @@ Thank you to our event chair, Janet Gross, and our committee members, David Erdm
 
 {{<picture src="2025/02/01kw-40f5-rxa2-yz15.jpeg" width-ratio="300" height-ratio="300" description="Logo of Working Dog Press." caption="" credit="">}}
 
+</div>
