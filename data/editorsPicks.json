@@ -12,17 +12,13 @@
     "content/statecollege/2024-12-19-SPLGREGGHOW1224.md"
   ],
   "featuredStories": [
-    "content/news/2025-03-04-SPLCYBERAUDIT0325.md"
+    "content/news/2025-03-03-SPL_STALLWORTH0325.md"
   ],
-  "subfeatures": [
-    "content/news/2025-01-24-SPLCYBERAI0125.md",
-    "content/news/2024-07-26-SPLSHAPVOUCH.md",
-    "content/news/2024-06-10-SPLCYBREFORM.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2025-03-03-SPL_STALLWORTH0325.md",
-    "content/news/2025-03-04-SPLMOMBILLS0325.md",
-    "content/statecollege/2025-03-03-SPLCCBOT0325.md"
+    "content/news/2025-03-03-SPLLVQUIZBASH.md",
+    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
+    "content/news/2025-02-28-SPLSTATEPLANE0225.md"
   ],
   "topper": []
 }
