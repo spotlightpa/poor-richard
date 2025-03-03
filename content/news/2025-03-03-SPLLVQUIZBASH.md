@@ -1,4 +1,5 @@
 +++
+aliases = ["/lvquizbash/"]
 blurb = "Test your knowledge of Pennsylvania trivia from 4-7p May 4 at Fegley’s Brew Works in Allentown with host Tony Iannelli."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a PA-themed trivia fundraiser hosted by Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce."
