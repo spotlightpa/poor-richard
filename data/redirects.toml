@@ -82,3 +82,11 @@ to = "/support/leaders-in-action/#our-current-leaders"
 [[redirects]]
 from = "/LIA/"
 to = "/support/leaders-in-action/#our-current-leaders"
+
+[[redirects]]
+from = "/referafriend/"
+to = "/statecollege/"
+
+[[redirects]]
+from = "/friend/"
+to = "/statecollege/"
