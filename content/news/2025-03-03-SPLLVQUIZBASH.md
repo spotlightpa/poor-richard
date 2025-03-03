@@ -42,13 +42,13 @@ Individual ticket sales will open in early April, based on availability. No tick
 
 Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, and Tony Muir.
 
-{{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="description" credit="width">}}
+{{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="" credit="">}}
 
-{{<picture src="2025/02/01kw-40f5-cyb6-jtmv.png" width-ratio="300" height-ratio="91" description="Logo of Evans Wealth Strategies, a wealth advisor in the Lehigh Valley." caption="description" credit="width">}}
+{{<picture src="2025/02/01kw-40f5-cyb6-jtmv.png" width-ratio="300" height-ratio="91" description="Logo of Evans Wealth Strategies, a wealth advisor in the Lehigh Valley." caption="" credit="">}}
 
-{{<picture src="2025/02/01kw-40f5-vjgs-97we.png" width-ratio="300" height-ratio="130" description="Logo of City Center Group." caption="description" credit="width">}}
+{{<picture src="2025/02/01kw-40f5-vjgs-97we.png" width-ratio="300" height-ratio="130" description="Logo of City Center Group." caption="" credit="">}}
 
-{{<picture src="2025/02/01kw-40f4-caq8-tyhp.png" width-ratio="300" height-ratio="108" description="Logo of Gross McGinley, attorneys at law in the Lehigh Valley." caption="description" credit="width">}}
+{{<picture src="2025/02/01kw-40f4-caq8-tyhp.png" width-ratio="300" height-ratio="108" description="Logo of Gross McGinley, attorneys at law in the Lehigh Valley." caption="" credit="">}}
 
-{{<picture src="2025/02/01kw-40f5-rxa2-yz15.jpeg" width-ratio="300" height-ratio="300" description="Logo of Working Dog Press." caption="description" credit="width">}}
+{{<picture src="2025/02/01kw-40f5-rxa2-yz15.jpeg" width-ratio="300" height-ratio="300" description="Logo of Working Dog Press." caption="" credit="">}}
 
