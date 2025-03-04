@@ -1,4 +1,5 @@
 +++
+aliases = ["/referafriend/", "/friend/"]
 image = "2022/06/01hb-4958-4rxz-4t0q.png"
 image-size = "inline"
 title = "Sign up for Talk of the Town"
