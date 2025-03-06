@@ -24,6 +24,8 @@ twitter-title = "Where farm animals go to thrive"
 
 <em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zeJy242ijdI~jNY4XXHI"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
 
+{{<picture src="2025/03/01kw-m6q2-5333-qchf.jpeg" width-ratio="200" height-ratio="100" description="The Ballard Spahr logo" caption="description" credit="Asha Prihar / Spotlight PA">}}
+
 The first farm animal that Karen Phillips rescued was a stray piglet named Isaac.
 
 “Years and years ago,” she recalled, Phillips was a veterinarian working at a Pittsburgh shelter when she came across Isaac in a kennel that neighbored a rottweiler’s.
