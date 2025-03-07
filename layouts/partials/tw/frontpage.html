@@ -119,25 +119,12 @@
     <div
       data-ga-category="midpage"
       class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded xl:col-span-10"
-      :class="isSticky ? 'sticky -mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
+      :class="isSticky ? '-mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
     >
       <div
         class="md:relative md:overflow-hidden md:rounded"
         x-data="funnelStatus"
       >
-        <button
-          class="flex text-g-4 md:hidden"
-          aria-label="close"
-          x-on:click="isSticky = false"
-          :class="isSticky ? ' absolute -top-11 right-2' : 'hidden'"
-        >
-          <svg
-            class="my-auto box-content h-5 w-5 fill-black p-3"
-            style="margin-right: -2px;"
-          >
-            {{ partial "helper/svg.html" "close" }}
-          </svg>
-        </button>
         <div x-show="!isSubscriber">
           {{ partial $nlBox (dict
             "newsletterHed" (page.Param "newsletter-hed")
