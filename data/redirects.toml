@@ -82,3 +82,8 @@ to = "/support/leaders-in-action/#our-current-leaders"
 [[redirects]]
 from = "/LIA/"
 to = "/support/leaders-in-action/#our-current-leaders"
+
+[[redirects]]
+from = "/.well-known/apple-developer-merchantid-domain-association"
+to = "/apple-developer-merchantid-domain-association"
+code = 200
