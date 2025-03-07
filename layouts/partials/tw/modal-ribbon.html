@@ -68,7 +68,7 @@
             @click.stop
             @keydown.escape="isOpen = false"
           >
-            {{ partial "newsletter/basic-hidden.html" . }}
+            {{ partial "newsletter/papost-hidden.html" . }}
             {{ with $imagename }}
               <div
                 class="-mt-14 flex aspect-video items-stretch justify-center self-stretch overflow-hidden rounded-tr md:col-start-3 md:row-start-1 md:row-end-4 md:mt-0 md:aspect-auto"
@@ -139,7 +139,7 @@
             <div
               class="col-span-3 col-start-1 rounded-b-sm border-t-2 bg-g-3 px-6 pb-9 pt-5"
               x-cloak
-              x-show="hasFocused"
+              x-show="false"
               x-transition:enter="transition ease-in-out duration-300"
               x-transition:enter-start="opacity-0"
               x-transition:enter-end="opacity-100"
