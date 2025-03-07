@@ -24,6 +24,10 @@ twitter-title = "A summer camp where HIV stigma stops"
 
 <em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
 
+<div class="max-w-[320px] -my-8">
+{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
+</div>
+
 For almost 30 summers, HIV-impacted children from Pennsylvania and surrounding states have traveled to the woods of Chester County to play.
 
 They ride boats and horses, and race go-karts on sprawling campgrounds a short drive from Kennett Square. They swim, attend concerts, and make crafts, bonding with each other and a small army of helpers that comes back year after year.
