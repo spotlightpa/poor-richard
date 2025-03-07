@@ -87,3 +87,7 @@ to = "/support/leaders-in-action/#our-current-leaders"
 from = "/.well-known/apple-developer-merchantid-domain-association"
 to = "/apple-developer-merchantid-domain-association"
 code = 200
+
+[[redirects]]
+from = "/membership/"
+to = "https://spotlightpa.donorsupport.co/login"
