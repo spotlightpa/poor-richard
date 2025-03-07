@@ -12,6 +12,7 @@ aliases = ["/jobs/"]
 * [General Manager, State College bureau](#general-manager-state-college-bureau)
 * [Finance Director](#finance-director)
 * [Lehigh Valley Project Lead (6-month contract)](#lehigh-valley-project-lead-6-month-contract)
+* [City/County Accountability Reporter (Reading/Berks County)](#city-county-accountability-reporter)
 
 - - -
 
@@ -166,6 +167,26 @@ This is a six-month contract position budgeted at $50,000 total. The position is
 * How would your past experience inform your work on this project? 
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
+
+- - -
+
+## City/County Accountability Reporter (Reading/Berks County) {#city-county-accountability-reporter}
+### [Apply here](https://spotlightpa.applytojob.com/apply)
+
+**Summary**: We are seeking an energetic, self-motivated reporter to provide vital accountability coverage of city and county government in Berks County for Spotlight PA, an award-winning independent, nonprofit, and nonpartisan newsroom in Pennsylvania. The mission of Spotlight PA is to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This reporter will be an integral part of Spotlight PA’s second local bureau launching this spring in Berks County, Pennsylvania.
+
+**What you’ll do**: This reporter will focus on holding Reading and Berks County elected officials accountable and explaining how their policies affect the everyday lives of residents. For too long, these governing bodies have gone without sustained scrutiny, providing ample opportunity for candidates eager to build sources and break important stories. In general, the reporter will be expected to produce 1-2 stories per week — sometimes less, sometimes more. This is an enterprise beat, and we’ll balance publishing expectations with the needs of each story. The reporter will be expected to publish stories that uncover and investigate issues that otherwise get little or no attention. This position will primarily allow for the reporter to take the time to go beneath the surface, scrutinize policies and services and their impact on people, and drive the local conversation. This reporter will also have the opportunity to collaborate with partners in Berks County.
+
+**Who we’re looking for**:  Ideal candidates will have experience and clips that showcase the persistence and tenacity needed to get inside a government institution, build a diverse network of sources, aggressively fight for and use public records, and execute accurate, impactful reporting. We want someone who can constantly pitch stories and who has the organizational skills and focus to keep several projects of varying lengths cooking at one time. The best candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters. 
+
+Some other ideal traits, though not required:
+
+
+*   Fluency in Spanish;
+*   Knowledge of Pennsylvania;
+*   Comfort with requesting, scrutinizing, and using data in the reporting process.
+
+This job is full-time and includes benefits. This reporter is expected to be based in or within commuting distance of Berks County. This hybrid position requires the reporter to be in a Reading-based newsroom at least once a week and to spend time in the communities they cover. The position is budgeted for a salary of $65,000-$75,000, depending on experience. We can provide a moving stipend for out-of-state candidates. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
 
 - - -
 
