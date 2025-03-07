@@ -55,7 +55,7 @@ We know not everyone reading this will fit exactly what we’ve described. We en
 - - -
 
 ## City/County Accountability Reporter (Reading/Berks County) {#city-county-accountability-reporter}
-### [Apply here](https://spotlightpa.applytojob.com/apply)
+### [Apply here](https://spotlightpa.applytojob.com/apply/4QtPKpyRjL/CityCounty-Accountability-Reporter-ReadingBerks-County)
 
 **Summary**: We are seeking an energetic, self-motivated reporter to provide vital accountability coverage of city and county government in Berks County for Spotlight PA, an award-winning independent, nonprofit, and nonpartisan newsroom in Pennsylvania. The mission of Spotlight PA is to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This reporter will be an integral part of Spotlight PA’s second local bureau launching this spring in Berks County, Pennsylvania.
 
