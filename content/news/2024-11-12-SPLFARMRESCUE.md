@@ -24,10 +24,6 @@ twitter-title = "Where farm animals go to thrive"
 
 <em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zeJy242ijdI~jNY4XXHI"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
 
-<div class="max-w-[320px] -my-8">
-{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
-</div>
-
 The first farm animal that Karen Phillips rescued was a stray piglet named Isaac.
 
 “Years and years ago,” she recalled, Phillips was a veterinarian working at a Pittsburgh shelter when she came across Isaac in a kennel that neighbored a rottweiler’s.
@@ -73,6 +69,10 @@ Farm sanctuaries are also more commonplace now, Phillips said, and she plans to 
 “Pittsburgh is such an amazing city and such an animal-loving community. It’s also an entrepreneur-loving community,” she said.
 
 “I think people love the ‘Little Engine That Could’ idea. I think that appeals to people and I’m hoping that will go a long way with our expansion and our upcoming capital campaign. Fingers crossed.”
+
+<div class="max-w-[320px] -my-8">
+{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
+</div>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
