@@ -183,7 +183,7 @@ weight = 1
 
 [[support]]
 name = "Manage Your Membership"
-url = "https://spotlightpa.donorsupport.co"
+url = "/membership/"
 weight = 2
 
 [[support]]
