@@ -34,8 +34,6 @@ Applicants should include a resume and a one-page cover letter answering the fol
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
-### [Apply here](https://spotlightpa.applytojob.com/apply/olT77Rl9Tb/General-Manager-Spotlight-PA-Berks-County)
-
 - - -
 
 ## Lehigh Valley Project Lead (6-month contract)
