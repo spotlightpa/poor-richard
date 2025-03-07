@@ -70,5 +70,9 @@ Farm sanctuaries are also more commonplace now, Phillips said, and she plans to 
 
 “I think people love the ‘Little Engine That Could’ idea. I think that appeals to people and I’m hoping that will go a long way with our expansion and our upcoming capital campaign. Fingers crossed.”
 
+<div class="max-w-[320px] -my-8">
+{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
+</div>
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 

@@ -1,27 +1,28 @@
 {
   "edCallout": [
-    "content/statecollege/2024-10-17-SPLPSUPATIENTS1024.md",
-    "content/news/2024-08-26-SPLDOCTORS0824.md"
+    "content/news/2025-02-21-SPLRETENTIONPREV0225.md",
+    "content/statecollege/2025-03-03-SPLCCBOT0325.md"
   ],
   "edImpact": [
-    "content/news/2024-10-25-spl_oversight_1024.md",
-    "content/news/2024-10-30-SPLNEXSTAR1024.md"
+    "content/news/2025-02-28-SPLSTATEPLANE0225.md",
+    "content/statecollege/2025-02-21-SPLROCKDECISION0225.md"
   ],
   "edInvestigations": [
     "content/news/2025-02-18-SPLNGINVEST0225.md",
-    "content/statecollege/2024-12-19-SPLGREGGHOW1224.md"
+    "content/news/2025-03-03-SPL_STALLWORTH0325.md"
   ],
   "featuredStories": [
-    "content/news/2025-03-04-SPLCYBERAUDIT0325.md"
+    "content/news/2025-03-07-SPLSCHMINT0325.md"
   ],
   "subfeatures": [
-    "content/news/2025-01-24-SPLCYBERAI0125.md",
-    "content/news/2024-06-10-SPLCYBREFORM.md"
+    "content/news/2025-03-05-SPLSURESIGN0325.md",
+    "content/news/2025-02-21-SPLRETENTIONPREV0225.md",
+    "content/statecollege/2025-02-18-SPLHOWTORUN0225.md"
   ],
   "topSlots": [
     "content/news/2025-03-03-SPL_STALLWORTH0325.md",
-    "content/news/2025-03-04-SPLMOMBILLS0325.md",
-    "content/statecollege/2025-03-03-SPLCCBOT0325.md"
+    "content/news/2025-03-06-SPLAGINGDATA0325.md",
+    "content/news/2025-03-06-SPLNEWSQUIZMAR0325.md"
   ],
   "topper": []
 }

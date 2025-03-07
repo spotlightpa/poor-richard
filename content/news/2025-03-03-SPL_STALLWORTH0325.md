@@ -254,7 +254,7 @@ In retrospect, officials acknowledged that procedural failures, miscommunication
 
 The fallout from his commutation had drastic and lasting consequences on the process.
 
-Lt. Gov. Mark Singel, until then considered Casey’s natural successor, lost the 1994 gubernatorial election to little-known challengerTom Ridge, who seized on Singel’s support for McFadden in a series of campaign advertisements.
+Lt. Gov. Mark Singel, until then considered Casey’s natural successor, lost the 1994 gubernatorial election to little-known challenger Tom Ridge, who seized on Singel’s support for McFadden in a series of campaign advertisements.
 
 {{<picture src="2025/02/01kw-1d09-5a0j-2ktr.jpeg" description="Former Gov. Tom Ridge (center) attends the inauguration of Josh Shapiro." caption="Former Gov. Tom Ridge won the 1994 election in part because of his tough-on-crime stance after the commutation of Reginald McFadden." credit="Commonwealth Media Services">}}
 
