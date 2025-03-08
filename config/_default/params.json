@@ -52,7 +52,7 @@
     "https://files.data.spotlightpa.org/uploads/01kw/gmdc/sunshine-week-2024-1024-512-px-1-.gif"
   ],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": true,
+  "newsletter-active": false,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
