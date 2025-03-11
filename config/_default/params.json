@@ -117,9 +117,9 @@
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-takeover",
   "topper-active": true,
   "topper-bg-color": "#ffffff",
-  "topper-desktop-height": 175,
+  "topper-desktop-height": 225,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/z8r0/september-site-toppertracker-12-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kx/173j/sunshine-week-website-toppertracker-3-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -127,7 +127,7 @@
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/z8qz/sunshine-week-2024-1024-512-px-5-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kx/173k/sunshine-week-2024-1024-512-px-5-.png"
   ],
   "topper-mobile-width": 1024
 }
