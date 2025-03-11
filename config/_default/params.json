@@ -40,17 +40,11 @@
   "featured-promo-width": 1024,
   "footer-promo-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Sunshine Week challenge.",
   "footer-promo-desktop-height": 90,
-  "footer-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/5.png",
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/7.png",
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/6.png"
-  ],
+  "footer-promo-desktop-images": [],
   "footer-promo-desktop-width": 728,
   "footer-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-728-90",
   "footer-promo-mobile-height": 250,
-  "footer-promo-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gmdc/sunshine-week-2024-1024-512-px-1-.gif"
-  ],
+  "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
   "newsletter-active": false,
   "promo-active": false,
