@@ -83,7 +83,9 @@ export function addGAListeners() {
       if (!el) return;
 
       let isInternal =
-        el.host === window.location.host || el.host.match(/spotlightpa\.org$/);
+        el.host === window.location.host ||
+        el.host.match(/spotlightpa\.org$/) ||
+        (el.protocol !== "http:" && el.protocol !== "https:");
 
       // Open external links in new window
       if (!isInternal) {
