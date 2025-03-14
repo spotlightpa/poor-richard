@@ -1,0 +1,5 @@
+{{ with .block }}
+  <div class="flex justify-center">
+    {{ partial "thirdparty/typeform.html" (dict "id" .typeformid) }}
+  </div>
+{{ end }}
