@@ -39,10 +39,10 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
   """
 
 [[blocks]]
-  layout = "show-results-start"
+  layout = "show-results"
   id = "results"
 
-[[blocks]]
+[[blocks.subblock]]
   layout = "content"
   content = """
 ### Results are next, but first...
@@ -59,25 +59,25 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 ## How Your Choices Compare
   """
 
-[[blocks]]
+[[blocks.subblock]]
   layout = "opioid-quiz-results"
   typeformid = "01JP6QA39V0FTX8RRGQ46G4G8E"
 
-[[blocks]]
+[[blocks.subblock]]
   layout = "opioid-quiz-key"
   id = "answer-key"
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Child care for parents with opioid use disorder"
   body = """The trust last year approved [about $906,000](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A5:L5) for an Allegheny County program that supports parents and guardians "who need child care support while undergoing treatment or job seeking and do not qualify for state funded child care subsidies."
 
   A national coalition of harm reduction, recovery, and other groups described this program as a [good use of settlement funds](https://static1.squarespace.com/static/640e4d9374e80160b84e0be4/t/66c356f3c1507d1a79044f69/1724077811524/A+Roadmap+for+Opioid+Settlement+Funds_+Supporting+Communities+%26+Ending+the+Overdose+.pdf). [Testimony](https://www.rural.pa.gov/download.cfm?file=Resources/PDFs/news/CHOP%20Testimony.pdf) from officials at PolicyLab at Children's Hospital of Philadelphia also highlighted this program and suggested other counties could consider a similar approach "to invest in child care system gaps."
   """
-[[blocks.answers]]
+  [[blocks.subblock.answers]]
   hed = "Salary increases for child welfare workers in Cameron County"
   body = """Funds were dedicated to increasing salaries in child welfare and probation offices that have historically not been "compensated fairly or equitably for the additional requirements the opioid epidemic has caused," [the county said](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A104:L104) in a spending report. The trust board [rejected the choice](https://www.spotlightpa.org/news/2025/02/pennsylvania-child-welfare-crisis-opioid-settlement-funding/). But after an appeal from Cameron County, the trust's Dispute Resolution Committee in January decided to send the issue back to the full board.
 
   At the board's public meeting in February, trust officials approved the [funds for the child welfare](https://bsky.app/profile/edmahon.bsky.social/post/3lhygpdu7vc2u) portion, which totaled about $9,000, but they did not reach a final decision on the county's probation workers."""
-[[blocks.answers]]
+  [[blocks.subblock.answers]]
   hed = "Outdoor activities and youth mentorship in Somerset County"
   body = """The trust rejected $30,000 for this program. The program is available to children in ninth through 12th grades from the county's largest school district, and it provides mentors and weekly opportunities for outdoor activities, according to [testimony as summarized in the county's appeal](https://www.documentcloud.org/documents/25545436-244-md-2024-memo-of-law-filed-1/).
 
@@ -85,13 +85,13 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 
   The county appealed to [Commonwealth Court](https://www.documentcloud.org/documents/25505658-somerset-county/) in October, arguing that the initiative was compliant as an evidence-informed program. [In response](https://www.documentcloud.org/documents/25505360-244-md-2022-answer-to-app-for-relief-nov/), attorneys for the trust maintained that the county's program is not compliant.
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Improvements to schools and parks in Philadelphia's Kensington neighborhood"
   body = """The trust originally [rejected these ](https://www.spotlightpa.org/news/2024/06/pennsylvania-opioid-cash-trust-decisions/)efforts in June. One member said that "the trust is not a community development program," while another said they needed "to do the letter of the law when it comes to [Exhibit E](https://www.attorneygeneral.gov/wp-content/uploads/2021/12/Exhibit-E-Final-Distributor-Settlement-Agreement-8-11-21.pdf)." That's a settlement document that describes approved uses for the money, but also says strategies "may include, but are not limited to," those listed.
 
   Philadelphia [appealed](https://www.documentcloud.org/documents/25365044-20240812-philadelphia-complaint-submitted-aug-9-7/), arguing that trust officials "ignored the empirical relationship between trauma and substance use"  and that interventions targeting the most at-risk communities "are effective at preventing opioid misuse and abuse."  A  committee of the trust [reversed the rejections for these initiatives](https://www.kensingtonvoice.com/en/opioid-trust-ruling-favors-kensington-schools-parks-and-rent-and-mortgage-relief-but-not-home-repairs-or-small-businesses/). At the same meeting, the committee also decided the city's use of the funds for [rent and mortgage assistance](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A389:L389) was compliant.
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Repairs for homes and support for small businesses in Philadelphia's Kensington neighborhood"
   body = """The trust originally [rejected these ](https://www.spotlightpa.org/news/2024/06/pennsylvania-opioid-cash-trust-decisions/)efforts in June. One member said that "the trust is not a community development program," while another said they needed "to do the letter of the law when it comes to [Exhibit E](https://www.attorneygeneral.gov/wp-content/uploads/2021/12/Exhibit-E-Final-Distributor-Settlement-Agreement-8-11-21.pdf)." That's a settlement document that describes approved uses for the money, but also says strategies "may include, but are not limited to," those listed. A committee of the trust  [upheld the rejections for these ](https://www.kensingtonvoice.com/en/opioid-trust-ruling-favors-kensington-schools-parks-and-rent-and-mortgage-relief-but-not-home-repairs-or-small-businesses/)initiatives.
 
@@ -99,7 +99,7 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 
   Attorneys for the [trust argued](https://www.documentcloud.org/documents/25497250-244-md-2022-memorandum-of-law-dec/#document/p6) that the city "failed to establish that providing handouts to residents and small business owners in Kensington would remediate or prevent" opioid use disorder or "mitigate the effects of the opioid epidemic."
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Advertising and media campaigns in multiple counties"
   body = """Settlement documents list funding media campaigns to prevent opioid use and misuse, as well as other public education efforts, as approved uses for the money.
 
@@ -109,13 +109,13 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 
   The county argued that all of the money should be allowed and that the "newsletter combined prominent placement of the 'Fake is Real' advertising with information about county resources." [In its response](https://www.documentcloud.org/documents/25510483-244-md-2022-answer-to-app-for-relief-dec/), attorneys for the trust said the "vast majority of the content in the County Newsletter has nothing to do with" opioid use disorder "remediation or prevention."
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Body scanner at the Clearfield County jail"
   body = """The trust approved $65,000 for this program, which the county said aimed to prevent the smuggling and distribution of illicit drugs. "Prior to installing this system we had an inmate smuggle opioids into the facility, resulting in 3 overdoses," the [county's report said.](https://www.documentcloud.org/documents/24489442-clearfield-county-opioid-settlement-report/#document/p3) "One of the three resulted in the death of an inmate."
 
   A national coalition of harm reduction, recovery, and other groups criticized a Michigan county for a similar use of settlement funds, calling a body scanner for a jail an example of [problematic spending](https://static1.squarespace.com/static/640e4d9374e80160b84e0be4/t/66c356f3c1507d1a79044f69/1724077811524/A+Roadmap+for+Opioid+Settlement+Funds_+Supporting+Communities+%26+Ending+the+Overdose+.pdf).
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Detective in Cameron County"
   body = """The trust rejected funds [for this initiative](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A103:L103). A county description referred to the creation of a "point person to build a coalition encompassing enforcement, treatment, and education." The trust has [released public guidance](https://www.paopioidtrust.org/about-us/faqs) saying "any type of policing activity would not be considered allowable spending." (The county's original report and trust records listed $20,000 for this program, [although additional county records](https://www.documentcloud.org/documents/25506941-second-follow-up-june-request-submission/) obtained through the state's Right-to-Know Law listed a lower amount.)
 
@@ -127,37 +127,34 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 
   The trust approved each of those programs. [A report](https://www.documentcloud.org/documents/25550109-2024-moud-report-update-print/#document/p1) from the [Pennsylvania Institutional Law Project](https://pilp.org/moud) said the expansion of opioid use disorder medication in jails is "an important and much-needed shift" but noted "much more work remains to be done." A [national coalition](https://static1.squarespace.com/static/640e4d9374e80160b84e0be4/t/66c356f3c1507d1a79044f69/1724077811524/A+Roadmap+for+Opioid+Settlement+Funds_+Supporting+Communities+%26+Ending+the+Overdose+.pdf) of harm reduction, recovery, and other groups supports using settlement funds to increase access to opioid use disorder medications in prisons and jails, but not as a replacement for existing money for these efforts.
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Allegheny County program that provides access to sterile syringes and other supplies to support safer drug use"
   body = """The trust in May approved the county's decision to dedicate [$325,000 for a syringe services program](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A14:L14), despite public opposition from one board member. These programs have widespread support in the medical community, but are widely considered [illegal in most of the state](https://kffhealthnews.org/news/article/clean-needles-syringe-services-programs-legal-gray-area-risk-pennsylvania/). [Philadelphia](https://www.phila.gov/media/20210602143030/executive-order-1992-04.pdf) and [Allegheny County](https://alleghenycounty.legistar.com/LegislationDetail.aspx?ID=1700380&GUID=4EAEF006-D2C2-4A07-A919-798D5E49E638&Options=ID%7CText%7C&Search=needle+exchange) officials took action years ago to allow them.
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Coroner offices in multiple counties"
   body = """The trust last year approved at least four coroner-related programs: $24,000 in [Mercer County](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A277:L277), $25,000 in [Lawrence County](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A261:L261), $30,600 in [Lehigh County](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A268:L268), and $140,000 in [Chester County](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A126:L126). Some advocates for people dealing with addiction said they were concerned the money would support prosecutions of people accused of providing drugs, or they thought the use drifted too far from the goal of [keeping people alive](https://www.spotlightpa.org/news/2024/05/opioid-settlement-money-coroner-controversy/). A trust member told Spotlight PA the funding could help relieve some of the stress the opioid crisis has put on coroners, and county officials described multiple benefits for the programs. A Chester County official told Spotlight PA it "has never been the intent to prosecute the individual suffering from substance use disorder."
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Assistant public defender in Elk County"
   body = """The trust offered guidance discouraging [this type of spending](https://www.spotlightpa.org/news/2024/04/opioid-settlement-cash-boon-to-pennsylvania-prosecutors-but-public-defenders-are-being-turned-away/), even though opioid settlement money flows to some district attorneys' offices in the state. The [trust's explanation](https://www.paopioidtrust.org/about-us/faqs) said "the services of an assistant public defender are required to be provided by the counties." A [national coalition](https://static1.squarespace.com/static/640e4d9374e80160b84e0be4/t/66c356f3c1507d1a79044f69/1724077811524/A+Roadmap+for+Opioid+Settlement+Funds_+Supporting+Communities+%26+Ending+the+Overdose+.pdf) of harm reduction, recovery, and other groups criticized the disparity between prosecutors and public defenders. In a lawsuit, the [ACLU of Pennsylvania](https://www.aclupa.org/sites/default/files/field_documents/warren_v_commonwealth_petition_for_review_-_final.pdf) did as well.
 
   The trust later approved funding for a social worker position within a public defender's office.
 """
-[[blocks.answers]]
+[[blocks.subblock.answers]]
   hed = "Public comment at regular meetings of the trust where these spending decisions are made"
   body = """A trust official previously told Spotlight PA and KFF Health News that state law doesn't require the trust to offer public comment at its meetings and the public is encouraged to participate at the local level.
 
   Pennsylvania's board is one of at least 14 similar opioid councils that routinely block the public from speaking at their meetings, [a first-of-its-kind survey](https://www.spotlightpa.org/news/2024/08/opioid-settlement-cash-public-comments-ignored/) from Spotlight PA and KFF Health News found last year. A former member of Maine's opioid council cited the findings as she urged her council to allow [comment at all regular meetings](https://www.youtube.com/watch?v=HPH6YOewdFM&t=7505s). And in a change, Pennsylvania's opioid settlement board in February agreed to [host a public listening session later in the year](https://bsky.app/profile/edmahon.bsky.social/post/3li3l336as223).
 """
 
-[[blocks]]
+[[blocks.subblock]]
 layout = "content"
 content = """
 ### How you would spend the money
 
 We're interested in hearing more from you on this topic. You can contact reporter Ed Mahon at [emahon@spotlightpa.org](mailto:emahon@spotlightpa.org) or submit your comments through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdZnu3M8z7JUlEAlz8l47UWesZ30JqjqvUvIQr4RFE0yNah6g/viewform?usp=header).
 """
-
-[[blocks]]
-  layout = "show-results-end"
 
 [[blocks]]
   layout = "credits"

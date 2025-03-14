@@ -1,4 +1,4 @@
-{{ $hed := .hed | default "Did this tool help you? Support Spotlight PA's nonprofit, nonpartisan journalism." }}
+{{ $hed := .block.hed | default "Did this tool help you? Support Spotlight PA's nonprofit, nonpartisan journalism." }}
 
 {{ partial "tw/donate-slim" (dict
   "donateHed" $hed
