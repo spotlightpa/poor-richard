@@ -1,0 +1,21 @@
+{{ with .block }}
+  <div
+    x-data="{ showResults: !!window.location.search.match(/show_results/) }"
+    x-show="showResults"
+    x-cloak
+  >
+    {{ range .subblock }}
+      <div
+        data-ga-category="blocks"
+        class="w-full"
+        {{ with .id }}id="{{ . }}"{{ end }}
+      >
+        {{ partial "blocks/block" (dict
+          "Page" $
+          "block" .
+          )
+        }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

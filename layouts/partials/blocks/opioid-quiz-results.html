@@ -2,14 +2,14 @@
   <div class="mx-auto max-w-2xl px-5 md:px-0">
     <div
       x-data="{
-      agree: 0,
-      disagree: 0
-    }"
+        agree: 0,
+        disagree: 0
+      }"
       x-init="
-      let params = new URL(window.location).searchParams;
-      agree = +params.get('agree');
-      disagree = +params.get('disagree');
-    "
+        let params = new URL(window.location).searchParams;
+        agree = +params.get('agree');
+        disagree = +params.get('disagree');
+      "
     >
       <div
         class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
