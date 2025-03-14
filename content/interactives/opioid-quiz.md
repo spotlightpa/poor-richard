@@ -1,13 +1,16 @@
 +++
+published = 2025-03-19
+authors = ["Ed Mahon"]
+byline = "Ed Mahon of Spotlight PA"
 blurb = "Use our interactive tool to decide how opioid settlement funds should be spent in Pennsylvania — and compare your results to a secretive oversight board."
 description = "Use this interactive tool to share your views on what types of spending should be approved for Pennsylvania’s opioid settlement funds."
 extended-kicker = "News Quiz"
 feed-exclude = false
 image = "2025/03/01kx-72ws-8643-y2p4.jpeg"
 image-credit = "Daniel Fishel for Spotlight PA"
-image-description = ""
+image-description = "Illustration of people holding a gavel"
 internal-id = "OPIOIDQUIZ"
-kicker = ""
+kicker = "Health"
 layout = "blocks"
 modal-exclude = true
 no-index = true
@@ -118,10 +121,10 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 [[blocks.subblock.answers]]
   hed = "Detective in Cameron County"
   body = """The trust rejected funds [for this initiative](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A103:L103). A county description referred to the creation of a "point person to build a coalition encompassing enforcement, treatment, and education." The trust has [released public guidance](https://www.paopioidtrust.org/about-us/faqs) saying "any type of policing activity would not be considered allowable spending." (The county's original report and trust records listed $20,000 for this program, [although additional county records](https://www.documentcloud.org/documents/25506941-second-follow-up-june-request-submission/) obtained through the state's Right-to-Know Law listed a lower amount.)
-
-  Opioid addiction medication for people in county jails
-
-  [Exhibit E](https://www.attorneygeneral.gov/wp-content/uploads/2021/12/Exhibit-E-Final-Distributor-Settlement-Agreement-8-11-21.pdf), a settlement document that describes allowable spending, specifically lists increasing funding for jails to provide treatment to inmates with opioid use disorder as a priority for the funds.
+"""
+[[blocks.subblock.answers]]
+  hed = "Opioid addiction medication for people in county jails"
+  body= """[Exhibit E](https://www.attorneygeneral.gov/wp-content/uploads/2021/12/Exhibit-E-Final-Distributor-Settlement-Agreement-8-11-21.pdf), a settlement document that describes allowable spending, specifically lists increasing funding for jails to provide treatment to inmates with opioid use disorder as a priority for the funds.
 
   Millions of dollars in settlement money have gone to medication, counseling, or other treatment-related purposes in Pennsylvania jails. Searching for "prison" or "jail" in Spotlight PA's [spending database](https://www.spotlightpa.org/news/2024/11/pennsylvania-opioid-settlement-money-spending-data/) shows more than 30 results, including in [Allegheny](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A13:L13), [Berks](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A29:L29), [Bucks](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A91:L91), [Butler](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A98:L98), [Chester](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A129:L129), [Clearfield](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A150:L150), [Cumberland](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A155:L155), [Elk](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A199:L199),[ Erie](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A205:L205), [Lancaster](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A249:L249), [Lehigh](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A266:L266), [McKean](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A274:L274), [Mrcer](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A279:L279), [Perry](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A315:L315), and [Westmoreland](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A443:L443) Counties. The level of detail available on each program through trust records varies widely.
 
