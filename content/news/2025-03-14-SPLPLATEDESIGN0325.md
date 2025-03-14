@@ -62,7 +62,7 @@ The catchphrase had its haters.
 
 Decades later, one Morning Call reader was still irked by the <a href="https://www.mcall.com/2017/09/14/youve-got-a-friend/">saying’s grammar</a>.
 
-{{<picture src="2025/03/01kx-6n0n-dk7p-k1kt.png" description="Pennsylvania license plates — some standard-issue, some optional — through the years." caption="Pennsylvania license plates — some standard-issue, some optional — through the years." credit="Collage by Asha Prihar. Photo sources from Wikimedia and Commonwealth of Pennsylvania">}}
+{{<picture src="2025/03/01kx-6n0n-dk7p-k1kt.png" width-ratio="1920" height-ratio="988" description="Pennsylvania license plates — some standard-issue, some optional — through the years." caption="Pennsylvania license plates — some standard-issue, some optional — through the years." credit="Collage by Asha Prihar. Photo sources from Wikimedia and Commonwealth of Pennsylvania">}}
 
 But that just shows how deeply the slogan, which was <a href="https://www.bizjournals.com/pittsburgh/print-edition/2013/08/30/campaigns-come-and-go-but-friend-is.html">dreamt up by an advertising firm</a> and also used in TV and radio spots, became rooted. Thirty years after its inception, Thornburgh called the “You’ve Got a Friend” tourism campaign one of his administration’s “prime accomplishments.”
 
