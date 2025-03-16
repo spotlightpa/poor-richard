@@ -211,6 +211,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Dianne and Dave Elderkin",
+      "sort": "Elderkin",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "David and Judy Migliore-Erdman",
       "sort": "Erdman",
       "url": "",
@@ -353,6 +360,13 @@
     {
       "display": "Ruth and Bruce Hollender",
       "sort": "Hollender",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Ray and Donna Holton",
+      "sort": "Holton",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
