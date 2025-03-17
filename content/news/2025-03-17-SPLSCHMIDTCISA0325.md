@@ -15,7 +15,7 @@ published = 2025-03-17T15:14:52.544-04:00
 slug = "secretary-commonwealth-al-schmidt-election-security-cisa-cuts-kristi-noem"
 suppress-date = false
 title = "‘Serious consequences’: Pennsylvania official warns feds against cuts to election security programs"
-title-tag = "Pa. official Schmidt warns against election security support cuts"
+title-tag = "PA official Schmidt warns against election security support cuts"
 topics = ["Elections"]
 +++
 
