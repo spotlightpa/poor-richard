@@ -2,8 +2,8 @@
 published = 2025-03-19
 authors = ["Ed Mahon"]
 byline = "Ed Mahon of Spotlight PA"
-blurb = "Use our interactive tool to decide how opioid settlement funds should be spent in Pennsylvania — and compare your results to a secretive oversight board."
-description = "Use this interactive tool to share your views on what types of spending should be approved for Pennsylvania’s opioid settlement funds."
+blurb = "Use our interactive tool to decide what type of opioid settlement spending should be allowed in Pennsylvania — and compare your results to a secretive oversight board."
+description = "Use our interactive tool to share your views on what types of spending should be approved for Pennsylvania’s opioid settlement funds."
 extended-kicker = "News Quiz"
 feed-exclude = false
 image = "2025/03/01kx-72ws-8643-y2p4.jpeg"
@@ -16,15 +16,15 @@ modal-exclude = true
 no-index = true
 pinned = false
 suppress-date = false
-title = "You can decide how billions to fight the opioid epidemic should be spent with this new tool"
+title = "You can decide how billions to fight the opioid epidemic should be spent with our new tool"
 title-tag = "Pa. opioid settlement money: How should it be spent?"
 url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 hide-title = true
 
 [[blocks]]
   layout = "takeover"
-  title = "You can decide how billions to fight the opioid epidemic should be spent with this new tool"
-  dek = "Use our interactive tool to decide how opioid settlement funds should be spent in Pennsylvania — and compare your results to a secretive oversight board."
+  title = "You can decide how billions to fight the opioid epidemic should be spent with our new tool"
+  dek = "Use our interactive tool to decide what type of opioid settlement spending should be allowed in Pennsylvania — and compare your results to a secretive oversight board."
   image = "2025/03/01kx-72ws-8643-y2p4.jpeg"
 
 [[blocks]]
