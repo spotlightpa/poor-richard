@@ -23,7 +23,7 @@ The middle of the Keystone State doesn’t lack much in the way of natural beaut
 
 But what it does lack is sufficient independent investigative and public-service journalism, which is why Spotlight PA has been working for more than a year on a historic effort to rebuild local news here.
 
-Today, I’m proud to announce the launch of our <a href="https://spotlightpa.us15.list-manage.com/track/click?u=77370ff1d001f9bb991fed9e7&id=0bb1442792&e=cae456dcb0">first regional news bureau</a> — based in State College and reporting on northern and central Pennsylvania. And we’re already out of the gate with a vital, in-depth story about <a href="https://www.spotlightpa.org/statecollege/2022/06/pfas-chemicals-drinking-water-benner-township-contamination/">drinking water contamination</a> in Benner Township.
+Today, I’m proud to announce the launch of our <a href="https://www.spotlightpa.org/statecollege">first regional news bureau</a> — based in State College and reporting on northern and central Pennsylvania. And we’re already out of the gate with a vital, in-depth story about <a href="https://www.spotlightpa.org/statecollege/2022/06/pfas-chemicals-drinking-water-benner-township-contamination/">drinking water contamination</a> in Benner Township.
 
 When we set out to build the bureau, we knew our communities needed more reporters on the ground. After all, independent, nonpartisan journalism is essential to the health of our region and our democracy. So we brought together a team with a mix of local experience and outside perspective, varying skill sets, and, most importantly, a commitment to high-quality public-service journalism.
 
