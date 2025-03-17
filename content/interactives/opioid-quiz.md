@@ -19,10 +19,19 @@ suppress-date = false
 title = "You can decide how billions to fight the opioid epidemic should be spent with this new tool"
 title-tag = "Pa. opioid settlement money: How should it be spent?"
 url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
+hide-title = true
+
+[[blocks]]
+  layout = "takeover"
+  title = "You can decide how billions to fight the opioid epidemic should be spent with this new tool"
+  dek = "Use our interactive tool to decide how opioid settlement funds should be spent in Pennsylvania — and compare your results to a secretive oversight board."
+  image = "2025/03/01kx-72ws-8643-y2p4.jpeg"
 
 [[blocks]]
   layout = "content"
-  content = """Hundreds of millions of dollars from opioid settlements have flowed into Pennsylvania to help the state respond to an epidemic that kills thousands of people each year — and even more money is expected in the years to come. But a powerful state oversight board has routinely blocked members of the public from having a meaningful say in how the money should be used.
+  content = """&nbsp;
+
+  Hundreds of millions of dollars from opioid settlements have flowed into Pennsylvania to help the state respond to an epidemic that kills thousands of people each year — and even more money is expected in the years to come. But a powerful state oversight board has routinely blocked members of the public from having a meaningful say in how the money should be used.
 
   Members of the Pennsylvania Opioid Misuse and Addiction Abatement Trust regularly [meet in secret](https://www.spotlightpa.org/news/2024/06/pennsylvania-opioid-settlement-board-secret-meetings-lawmaker-challenge/) and have not allowed [public comment](https://www.spotlightpa.org/news/2024/08/opioid-settlement-cash-public-comments-ignored/) at their open meetings. The trust can withhold future funds if board members decide counties or other local governments spent money inappropriately — but there have been big disagreements and even some court cases over what counts [as inappropriate spending](https://www.spotlightpa.org/news/2024/11/pennsylvania-opioid-settlement-money-commonwealth-court-spending-lawsuits/).
 
