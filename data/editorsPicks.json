@@ -12,18 +12,18 @@
     "content/news/2025-03-03-SPL_STALLWORTH0325.md"
   ],
   "featuredStories": [
-    "content/news/2025-03-17-SPLSCHMIDTCISA0325.md"
+    "content/statecollege/2025-03-18-SPLPSUSPEND0325.md"
   ],
   "subfeatures": [
-    "content/news/2025-03-07-SPLSCHMINT0325.md",
-    "content/news/2024-12-20-SPLSCHMIDTYIR1224.md",
-    "content/news/2025-03-05-SPLSURESIGN0325.md",
-    "content/news/2025-03-10-SPLPOLLELEX0325.md"
+    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
+    "content/statecollege/2025-01-27-SPLPSUCC0125.md",
+    "content/statecollege/2024-05-08-SPLPSUBUY0524.md",
+    "content/statecollege/2024-02-29-SPLPSUDEIB.md"
   ],
   "topSlots": [
+    "content/news/2025-03-17-SPLSCHMIDTCISA0325.md",
     "content/news/2025-03-17-SPLWEEDLOBBY0325.md",
-    "content/news/2025-03-17-SPLSUNCOL0325.md",
-    "content/news/2025-03-14-SPLPLATEDESIGN0325.md"
+    "content/news/2025-03-17-SPLSUNCOL0325.md"
   ],
   "topper": []
 }

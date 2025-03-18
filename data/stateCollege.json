@@ -1,14 +1,15 @@
 {
   "featuredStories": [
-    "content/statecollege/2025-03-05-SPLRURALPOP0325.md"
+    "content/statecollege/2025-03-18-SPLPSUSPEND0325.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-02-13-SPLRURALBUDGET0225.md",
-    "content/statecollege/2024-07-17-SPLRURALCOM0724.md",
-    "content/statecollege/2023-12-26-SPLKANE.md"
+    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
+    "content/statecollege/2025-01-27-SPLPSUCC0125.md",
+    "content/statecollege/2024-05-08-SPLPSUBUY0524.md",
+    "content/statecollege/2024-02-29-SPLPSUDEIB.md"
   ],
   "topSlots": [
-    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
+    "content/statecollege/2025-03-05-SPLRURALPOP0325.md",
     "content/statecollege/2025-02-21-SPLROCKDECISION0225.md",
     "content/statecollege/2025-02-18-SPLHOWTORUN0225.md"
   ],
