@@ -57,4 +57,6 @@ Thank you to our event chair, Janet Gross, and our committee members, David Erdm
 
 {{<picture src="2025/02/01kw-40f5-rxa2-yz15.jpeg" width-ratio="300" height-ratio="300" description="Logo of Working Dog Press." caption="" credit="">}}
 
+{{<picture src="2025/03/01kx-vb57-e88v-677w.png" width-ratio="1076" height-ratio="226" description="Logo of the Wildlife Conservancy." caption="" credit="">}}
+
 </div>
