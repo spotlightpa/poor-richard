@@ -45,6 +45,8 @@ twitter-title = "These powerful interests donated $18M to PA’s top lawmakers"
 
 {{<featured/dropcap>}}
 
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+
 HARRISBURG — Power plant operators, gambling magnates, charter school backers, and trade unions are among the interests that gave almost $18 million to Pennsylvania’s top lawmakers last session, ahead of debates over policies that affect their industries.
 
 {{</featured/dropcap>}}
