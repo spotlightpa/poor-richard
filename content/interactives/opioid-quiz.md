@@ -15,8 +15,9 @@ kicker = "Health"
 layout = "blocks"
 modal-exclude = true
 no-index = true
-pinned = false
+pinned = true
 published = 2025-03-19T05:00:00-04:00
+series = ["Opioid Settlement Money"]
 slug = "pennsylvania-opioid-settlement-decide-spending"
 suppress-date = false
 title = "You can decide how billions to fight the opioid epidemic should be spent with our new tool"
@@ -47,24 +48,24 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
   layout = "show-results"
 
   [[blocks.subblock]]
-      content = "## How Your Choices Compare"
-      layout = "content"
-      wrapperClass = "mt-8"
+    content = "## How Your Choices Compare"
+    layout = "content"
+    wrapperClass = "mt-8"
 
   [[blocks.subblock]]
     layout = "opioid-quiz-results"
     typeformid = "01JP6QA39V0FTX8RRGQ46G4G8E"
 
   [[blocks.subblock]]
-      wrapperClass = "mt-6 mb-8"
-      content = "[Learn more](#answer-key) about each of these topics from the interactive tool, [answer the questions again][again], or contribute to our reporting by sharing your  [thoughts and experiences](https://www.spotlightpa.org/news/2025/02/pennsylvania-opioid-settlement-tracking-public-input/) regarding the opioid crisis.\n\n[again]: javascript:document.querySelector('button[data-tf-popup]').click()"
-      layout = "content"
+    content = "[Learn more](#answer-key) about each of these topics from the interactive tool, [answer the questions again][again], or contribute to our reporting by sharing your  [thoughts and experiences](https://www.spotlightpa.org/news/2025/02/pennsylvania-opioid-settlement-tracking-public-input/) regarding the opioid crisis.\n\n[again]: javascript:document.querySelector('button[data-tf-popup]').click()"
+    layout = "content"
+    wrapperClass = "mt-6 mb-8"
 
   [[blocks.subblock]]
+    dek = "Here is how each question and answer aligns with the opioid trust."
+    hed = "Issue Guide"
     id = "answer-key"
     layout = "opioid-quiz-key"
-    hed = "Issue Guide"
-    dek = "Here is how each question and answer aligns with the opioid trust."
 
     [[blocks.subblock.answers]]
       body = "The trust last year approved [about $906,000](https://docs.google.com/spreadsheets/d/1o6PovO8zFXaD4mn9VhUK9hoKmECRMU4uzu2IBIRmemo/edit?gid=0#gid=0&range=A5:L5) for an Allegheny County program that supports parents and guardians \"who need child care support while undergoing treatment or job seeking and do not qualify for state funded child care subsidies.\"\n\n  A national coalition of harm reduction, recovery, and other groups described this program as a [good use of settlement funds](https://static1.squarespace.com/static/640e4d9374e80160b84e0be4/t/66c356f3c1507d1a79044f69/1724077811524/A+Roadmap+for+Opioid+Settlement+Funds_+Supporting+Communities+%26+Ending+the+Overdose+.pdf). [Testimony](https://www.rural.pa.gov/download.cfm?file=Resources/PDFs/news/CHOP%20Testimony.pdf) from officials at PolicyLab at Children's Hospital of Philadelphia also highlighted this program and suggested other counties could consider a similar approach \"to invest in child care system gaps.\"\n  "
@@ -119,13 +120,13 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
       hed = "Public comment at regular meetings of the trust where these spending decisions are made"
 
   [[blocks.subblock]]
-    wrapperClass = "mt-12"
     content = "### How you would spend the money\n\nWe're interested in hearing more from you on this topic. You can contact reporter Ed Mahon at [emahon@spotlightpa.org](mailto:emahon@spotlightpa.org) or submit your comments through [this form](https://docs.google.com/forms/d/e/1FAIpQLSdZnu3M8z7JUlEAlz8l47UWesZ30JqjqvUvIQr4RFE0yNah6g/viewform?usp=header)."
     layout = "content"
+    wrapperClass = "mt-12"
 
 [[blocks]]
-  layout = "content"
   content = "{{<embed/newsletter cta=\"Sign up for Spotlight PA's free daily newsletter and discover overlooked stories, unique investigations, and daily joy from across PA.\" preselect=\"papost\">}}"
+  layout = "content"
 
 [[blocks]]
   credits = "{{<featured/credit\n    eyebrow=\"Reporting\"\n    name=\"Ed Mahon\"\n    role=\"Investigative Reporter\"\n    email=\"emahon@spotlightpa.org\"\n>}}\n{{<featured/credit\n    eyebrow=\"Editing\"\n    name=\"Matt Dempsey\"\n    role=\"Senior Editor for Investigations\"\n    email=\"mdempsey@spotlightpa.org\"\n>}}\n{{<featured/credit\n    eyebrow=\"Illustration\"\n    name=\"Daniel Fishel\"\n    role=\"For Spotlight PA\"\n>}}\n{{<featured/credit\n    eyebrow=\"Layout\"\n    name=\"Carlana Johnson\"\n    role=\"Director of Technology\"\n    email=\"cjohnson@spotlightpa.org\"\n>}}"
@@ -134,3 +135,5 @@ url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 [[blocks]]
   layout = "donate-slim"
 +++
+
+
