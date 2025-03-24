@@ -10,6 +10,7 @@ image-description = "Photo illustration of the PA Capitol building, checks and b
 image-gravity = "we"
 internal-id = "SPLLEGISMONEY0325"
 kicker = "The Capitol"
+layout = "featured"
 modal-exclude = false
 og-title = "These powerful interests donated $18M to PA’s top lawmakers"
 pinned = false
