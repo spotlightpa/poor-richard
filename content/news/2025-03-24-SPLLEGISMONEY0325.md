@@ -45,8 +45,6 @@ twitter-title = "These powerful interests donated $18M to PA’s top lawmakers"
 
 {{<featured/dropcap>}}
 
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-
 HARRISBURG — Power plant operators, gambling magnates, charter school backers, and trade unions are among the interests that gave almost $18 million to Pennsylvania’s top lawmakers last session, ahead of debates over policies that affect their industries.
 
 {{</featured/dropcap>}}
@@ -138,7 +136,7 @@ Spotlight PA focused on the education, energy, gaming, and transportation sector
 
 Other big givers included individuals or groups linked to health care and real estate, which Spotlight PA plans to focus on in future stories.
 
-The analysis also omitted donors — like lobbyists, lawyers, some unions, and some PACs — whose interests were too varied to fit into a single industry. For example: The Washington, D.C.-based PAC for America’s Future — funded by a mix of out-of-state megadonors and celebrities — gave $7.5 million to state House and Senate Democrats’ campaign committees last session. However, it was omitted because it doesn’t have a single policy focus.
+The analysis also omitted donors — like lobbyists, lawyers, some unions, and some PACs — whose interests were too varied to fit into a single industry. For example: The Washington, D.C.-based [PAC for America’s Future](https://www.spotlightpa.org/news/2024/11/pennsylvania-election-2024-state-house-senate-majority-spending/) — funded by a mix of out-of-state megadonors and celebrities — gave $7.5 million to state House and Senate Democrats’ campaign committees last session. However, it was omitted because it doesn’t have a single policy focus.
 
 Former House Minority Leader Bryan Cutler (R., Lancaster) objected to such an omission. He said “arbitrarily grouping donations into those groups” gives “the appearance of campaign funding fairness, but misses the biggest source of money for House Democrats.” 
 
