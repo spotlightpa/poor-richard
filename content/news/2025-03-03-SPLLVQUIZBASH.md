@@ -27,6 +27,8 @@ Join Spotlight PA for our first-ever Quiz Bash in the Lehigh Valley on Sunday, M
 
 Get your friends, neighbors, coworkers, and family together to compete as teams of 2-6 players in our “Clink and Think” Quiz Bash. Test your knowledge of PA trivia with emcee Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce.
 
+Tickets are $50 per person and include delicious food buffets, non-alcoholic beverages, a swag bag, plenty of time for mingling, and 4 rounds of fun Pennsylvania-themed games! Plus, cash bar with a signature Spotlight Sangria and great prizes for the top 3 teams.<strong></strong>
+
 {{<embed/raw srcdoc="&lt;!-- Noscript content for added SEO --&gt;&#10;&lt;noscript&gt;&lt;a href=&#34;https://www.eventbrite.com/e/clink-and-think-quiz-bash-fundraiser-with-spotlight-pa-tickets-1295980585819&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34;&gt;Buy Tickets on Eventbrite&lt;/a&gt;&lt;/noscript&gt;&#10;&lt;!-- You can customize this button any way you like --&gt;&#10;&lt;button id=&#34;eventbrite-widget-modal-trigger-1295980585819&#34; class=&#34;btn-signup mx-auto block&#34; type=&#34;button&#34;&gt;Buy Tickets&lt;/button&gt;&#10;&#10;&lt;script src=&#34;https://www.eventbrite.com/static/widgets/eb_widgets.js&#34;&gt;&lt;/script&gt;&#10;&#10;&lt;script&gt;&#10;window.EBWidgets.createWidget({&#10;widgetType: &#39;checkout&#39;,&#10;eventId: &#39;1295980585819&#39;,&#10;modal: true,&#10;modalTriggerElementId: &#39;eventbrite-widget-modal-trigger-1295980585819&#39;,&#10;});&#10;&lt;/script&gt;">}}
 
 No tickets will be sold at the door.
@@ -45,6 +47,8 @@ All proceeds go to support Spotlight PA! Contact Michelle Mertz, Director of Ind
 
 Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, Tony Muir, and Kathleen Parrish.
 
+<div class="flex flex-wrap justify-around items-center [&>*]:max-w-[250px]">
+
 {{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="" credit="">}}
 
 {{<picture src="2025/02/01kw-40f4-caq8-tyhp.png" width-ratio="300" height-ratio="108" description="Logo of Gross McGinley, attorneys at law in the Lehigh Valley." caption="" credit="">}}
@@ -57,3 +61,4 @@ Thank you to our event chair, Janet Gross, and our committee members, David Erdm
 
 {{<picture src="2025/03/01kx-vb57-e88v-677w.png" width-ratio="1076" height-ratio="226" description="Logo of the Wildlife Conservancy." caption="" credit="">}}
 
+</div>
