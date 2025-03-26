@@ -1,58 +1,70 @@
 +++
 authors = ["Stephen Caruso"]
-blurb = "In two special elections Tuesday, Democrats hold the state House and the Republican says he came up “short” in a close Senate race."
+blurb = "The Lancaster County seat has been red since it moved to south-central Pennsylvania in the 1980s."
 byline = "Stephen Caruso of Spotlight PA"
-description = "Democrats restored their narrow PA House majority Tuesday night, while the Republican said he came up “a little short” in a close state Senate race."
+description = "Democrat James Malone unexpectedly flipped a PA Senate seat in Lancaster County that has been red since the 1980s."
 feed-exclude = false
 image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
-image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day in 2020."
+image-description = "Pennsylvania’s Capitol building in Harrisburg on the morning of Election Day in 2020."
 image-gravity = "ce"
 internal-id = "SPLSPECIALELEX0325"
 kicker = "Elections"
 modal-exclude = false
+og-title = "Democrat James Malone flips PA Senate seat in major upset"
 pinned = false
 published = 2025-03-25T23:21:23.977-04:00
 slug = "special-election-pennsylvania-lancaster-allegheny-house-senate"
 suppress-date = false
-title = "Republican says he came up ‘a little short’ in Pa. Senate special election, Dems keep House control"
-title-tag = "PA special elections: Democrats keep House"
+title = "Democrat James Malone wins Pa. Senate race in Trump +15 district, a major upset"
+title-tag = "Democrat James Malone flips Senate seat in PA special election"
 topics = ["Elections"]
+twitter-title = "Democrat James Malone flips PA Senate seat in major upset"
 +++
 
-HARRISBURG — Democrats will retain control of the narrowly divided Pennsylvania state House after Democrat Dan Goughnour won an Allegheny County special election Tuesday, according to unofficial results.
+HARRISBURG — Democrats have picked up a Pennsylvania Senate seat in a district that strongly supported Donald Trump, an unexpected victory that party leaders painted as a rebuke to the Republican president.
 
-As of 11 p.m., the Associated Press still had not called the second special election of the evening, a close race between East Petersburg Mayor James Malone and County Commissioner Josh Parsons.
+James Malone, mayor of East Petersburg in Lancaster County, defeated Commissioner Josh Parsons by 482 votes, unofficial results show. The Associated Press called the race Wednesday afternoon.
 
-However, Parsons <a href="https://x.com/Josh__Parsons/status/1904723673140822150">posted on social media</a> that, &#34;Obviously we are disappointed in the numbers. We are still reviewing them, but it appears we will come up a little short.&#34;
+&#34;Obviously we are disappointed in the numbers,” Parsons <a href="https://x.com/Josh__Parsons/status/1904723673140822150">posted on social media</a> late Tuesday. “We are still reviewing them, but it appears we will come up a little short.&#34;
 
-Parsons added that he would have a further statement Wednesday.
+Malone’s win does not affect control of the state Senate, but means Republicans’ edge in the upper chamber will be 27-23 after he’s sworn in.
+
+Also this week, Democrat Dan Goughnour easily won a separate special election for an Allegheny County state House seat. His win means Democrats will retain control of the narrowly divided lower chamber.
 
 {{<embed/newsletter>}}
 
-At publication time, Malone led with 50% of the vote to Parsons’ 49% with all precincts reporting, according to unofficial results. A third libertarian candidate got just under a percent of the vote.
+The Pennsylvania Senate Democratic Campaign Committee and party leaders like Gov. Josh Shapiro called Malone’s victory a rejection of Trump’s second-term agenda.
 
-The Senate Democratic Campaign Committee and party leaders like Gov. Josh Shapiro declared victory for Malone Tuesday night.
+“This is a referendum on the chaos Washington Republicans have brought to our state and the silence and inaction Harrisburg Republicans have responded with,” state Sen. Vincent Hughes (D., Philadelphia), who chairs the caucus’ campaign arm, said in a statement. “Voters are fed up, and they showed up tonight in Lancaster.”
 
-Malone had not been expected to win the conservative 36th Senate District. The district, which includes small towns, farmland, and burgeoning exurbs, backed President Donald Trump by 15 percentage points in November.
+Malone was considered a longshot. The 36th Senate District, which includes small towns, farmland, and burgeoning exurbs, backed Trump by 15 percentage points in November. It has not elected a Democrat since being moved to south-central Pennsylvania via redistricting in the 1980s.
 
-It has not elected a Democrat since being moved to south-central Pennsylvania via redistricting in the 1980s, though state Democrats have increasingly won voters in the region since the first Trump administration.
+The region’s voters, however, have increasingly supported Democrats in statewide elections since the first Trump administration.
 
-The seat was open after state Sen. Ryan Aument resigned in December to take a job with U.S. Sen. Dave McCormick (R., Pa.). A Democratic win would not affect control of the state Senate, but would mean Republicans’ edge in the upper chamber is now 27-23.
+The race also received little attention or money at first, said Stella Sexton, vice chair of the Lancaster County Democratic Committee and a co-campaign manager for Malone.
 
-Malone’s <a href="https://www.friendsofjamesmalone.org/">website</a> touted support for public education, housing and “lowering the cost of everyday essentials.”
+That changed in the final two weeks. Campaign finance reports show a flood of dollars to both candidates from a mix of in and out-of-state donors in that period. The race even got a shoutout from tech billionaire and Trump advisor Elon Musk, who used social media to warn that Republicans could lose the race.
 
-Parsons, a <a href="https://www.joinjoshparsons.com/accomplishments/">vocal conservative</a> and Trump ally who notably <a href="https://www.washingtonpost.com/opinions/2024/12/18/lancaster-lnp-newspaper-republican-attacks/">feuded</a> with the county’s newspaper, focused his campaign on his time as commissioner. That included keeping taxes low, opposition to mail voting and COVID-19 <a href="https://oneunitedlancaster.com/coronavirus-news-roundup/officials-say-lancaster-county-will-begin-to-reopen-with-or-without-gov-wolfs-ok/">lockdowns</a><u>, </u>and fighting local libraries over <a href="https://www.wgal.com/article/lancaster-county-commissioner-raises-concerns-about-drag-queen-story-hour-at-lancaster-public-library/60144596">drag queen visit</a><u>s.</u>
+Parsons, a <a href="https://www.joinjoshparsons.com/accomplishments/">vocal conservative</a> and Trump ally who notably <a href="https://www.washingtonpost.com/opinions/2024/12/18/lancaster-lnp-newspaper-republican-attacks/">feuded</a> with the county’s newspaper, focused his campaign on his time as commissioner. He touted accomplishments including keeping taxes low, opposition to mail voting and COVID-19 <a href="https://oneunitedlancaster.com/coronavirus-news-roundup/officials-say-lancaster-county-will-begin-to-reopen-with-or-without-gov-wolfs-ok/">lockdowns</a>, and fighting local libraries over <a href="https://www.wgal.com/article/lancaster-county-commissioner-raises-concerns-about-drag-queen-story-hour-at-lancaster-public-library/60144596">drag queen visit</a>s.
 
-The state House district that was up for election includes some small milltowns along the Monongahela River south of Pittsburgh, and has been represented by Democrats for the past 60 years.
+Malone’s <a href="https://www.friendsofjamesmalone.org/">website</a> says he supports public education, housing policies including helping first-time home buyers, and “lowering the cost of everyday essentials.” Sexton said the campaign deliberately focused on the same sort of issues that helped state House Democrats <a href="https://www.spotlightpa.org/news/2024/11/pennsylvania-election-results-2024-state-house-democratic-republican-control/">keep their one-vote majority</a> in the lower chamber in November.
 
-That win affirms the party will retain its majority in the lower chamber, at least until the next Democratic vacancy. Back at full power, Democrats lead the chamber by a margin of just 102 to 101.
+“Some of whatever makes people vote for Donald Trump doesn&#39;t translate to anybody who isn&#39;t Donald Trump,” Sexton said.
 
-With control of the agenda again secure, Democrats now have additional leverage in upcoming budget talks, as well as the power to decide what bills get a vote and which languish on the table.
+That — plus Malone’s easygoing, everyman personality — helped seal the race, she argued.
+
+“Lancaster County is worth investing in,” Sexton added. “It is not a safe Republican area anymore.”
+
+The seat was vacated by state Sen. Ryan Aument, who resigned in December to take a job with U.S. Sen. Dave McCormick (R., Pa.).
+
+The state House district that was up for election includes some small mill towns along the Monongahela River south of Pittsburgh, and has been represented by Democrats for the past 60 years.
+
+When Goughnour is sworn in, Democrats will again lead the chamber by a margin of just 102 to 101. That will give Democrats additional leverage in upcoming budget talks, as well as the power to decide what bills get a vote and which languish on the table.
 
 The Allegheny County seat was vacant after the sudden death of Democratic state Rep. Matt Gergely in January due to complications from a health emergency late last year.
 
-In Gergely’s place, the district’s voters picked Goughnour, a retired police officer and local school board member. The Associated Press called the race at 9:30 Tuesday evening; Goughnour leads with 63% of the vote against Republican Chuck Davis, a fire chief and local township councilor, according to unofficial results.
+In Gergely’s place, the district’s voters picked Goughnour, a retired police officer and local school board member, over Republican Chuck Davis, a fire chief and local township councilor. Unofficial results show Goughnour with 63% of the vote.
 
 {{<embed/donate>}}
 
@@ -60,5 +72,5 @@ Both chambers were in session this week as lawmaking restarted following weeks o
 
 While a similar vacancy in the state House in the first months of the previous session led to <a href="https://www.spotlightpa.org/news/2023/01/pennsylvania-house-rozzi-deadlock-amendment/">an acrimonious partisan battle</a>, this one hasn’t resulted in power struggles or ground action in the Capitol to a halt.
 
-Lawmakers have shown similar signs of compromise when it has come to policy this year. Democratic Gov. Josh Shapiro has already signed two laws since the start of 2025; it took him until May 2023 to sign his first law last session.
+Lawmakers have shown similar signs of compromise when it comes to policy. Shapiro has already signed two laws since the start of 2025; it took him until May 2023 to sign his first law in the session that began that year.
 
