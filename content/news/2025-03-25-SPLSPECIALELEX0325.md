@@ -56,6 +56,12 @@ That — plus Malone’s easygoing, everyman personality — helped seal the rac
 
 “Lancaster County is worth investing in,” Sexton added. “It is not a safe Republican area anymore.”
 
+State Republicans have so far offered little public comment on the race. A spokesperson for Pennsylvania Senate Republicans’ campaign arm did not reply to a request for comment, while Capitol sources privately expressed shock at the result.
+
+In a fundraising email Wednesday, Pennsylvania activist Cliff Maloney blamed Republicans for failing to push mail ballots or engage grassroots supporters. Maloney founded the door-knocking operation Pennsylvania Chase and made headlines las year for “<a href="https://www.cnn.com/2024/10/25/politics/benedictine-sisters-of-erie-pennsylvania-election-fraud-viral/index.html">falsely</a>” accusing nuns in Erie of voter fraud.
+
+&#34;This special election proves that if we do not CONSTANTLY fight the Dems at mail-in votes... we will lose,&#34; the email said.
+
 The seat was vacated by state Sen. Ryan Aument, who resigned in December to take a job with U.S. Sen. Dave McCormick (R., Pa.).
 
 The state House district that was up for election includes some small mill towns along the Monongahela River south of Pittsburgh, and has been represented by Democrats for the past 60 years.
