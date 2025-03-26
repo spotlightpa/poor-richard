@@ -1,8 +1,8 @@
 +++
 authors = ["Stephen Caruso"]
-blurb = "Democrats hold the state House after special election, while the Republican says he came up 'short' in a close state Senate race."
+blurb = "In two special elections Tuesday, Democrats hold the state House and the Republican says he came up “short” in a close Senate race."
 byline = "Stephen Caruso of Spotlight PA"
-description = "Democrats restored their narrow PA House majority Tuesday night, while the Republican said he came up 'a little short' in a close state Senate race."
+description = "Democrats restored their narrow PA House majority Tuesday night, while the Republican said he came up “a little short” in a close state Senate race."
 feed-exclude = false
 image = "external/cwszvjdnvs3e3q3ge64y5wjjx0.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
@@ -15,8 +15,8 @@ pinned = false
 published = 2025-03-25T23:21:23.977-04:00
 slug = "special-election-pennsylvania-lancaster-allegheny-house-senate"
 suppress-date = false
-title = "Republican says he came up 'a little short' in Pa. Senate special election, Dems keep House control"
-title-tag = "PA special elections: Apparent upset in state Senate race"
+title = "Republican says he came up “a little short” in Pa. Senate special election, Dems keep House control"
+title-tag = "PA special elections: Democrats restore House control"
 topics = ["Elections"]
 +++
 
