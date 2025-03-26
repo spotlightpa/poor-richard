@@ -15,18 +15,18 @@ pinned = false
 published = 2025-03-25T23:21:23.977-04:00
 slug = "special-election-pennsylvania-lancaster-allegheny-house-senate"
 suppress-date = false
-title = "Republican says he came up “a little short” in Pa. Senate special election, Dems keep House control"
-title-tag = "PA special elections: Democrats restore House control"
+title = "Republican says he came up ‘a little short’ in Pa. Senate special election, Dems keep House control"
+title-tag = "PA special elections: Democrats keep House"
 topics = ["Elections"]
 +++
 
 HARRISBURG — Democrats will retain control of the narrowly divided Pennsylvania state House after Democrat Dan Goughnour won an Allegheny County special election Tuesday, according to unofficial results.
 
-As of 11:00 p.m. the Associated Press still had not called the second special election of the evening, a close race between East Petersburg Mayor James Malone and County Commissioner Josh Parsons.
+As of 11 p.m., the Associated Press still had not called the second special election of the evening, a close race between East Petersburg Mayor James Malone and County Commissioner Josh Parsons.
 
 However, Parsons <a href="https://x.com/Josh__Parsons/status/1904723673140822150">posted on social media</a> that, &#34;Obviously we are disappointed in the numbers. We are still reviewing them, but it appears we will come up a little short.&#34;
 
-Parsons added that he will have a further statement Wednesday.
+Parsons added that he would have a further statement Wednesday.
 
 {{<embed/newsletter>}}
 
