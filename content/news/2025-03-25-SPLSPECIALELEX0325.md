@@ -36,9 +36,9 @@ The Senate Democratic Campaign Committee and party leaders like Gov. Josh Shapir
 
 Malone had not been expected to win the conservative 36th Senate District. The district, which includes small towns, farmland, and burgeoning exurbs, backed President Donald Trump by 15 percentage points in November.
 
-It has not elected a Democrat since being moved from south-central Pennsylvania via redistricting in the 1980s, though state Democrats have increasingly won voters in the region since the first Trump administration.
+It has not elected a Democrat since being moved to south-central Pennsylvania via redistricting in the 1980s, though state Democrats have increasingly won voters in the region since the first Trump administration.
 
-The seat was open after state Sen. Ryan Aument resigned in December to take a job with U.S. Sen. Dave McCormick (R., Pa.). The win does not affect control of the state Senate, and means Republicans’ edge in the upper chamber is now 27-23.
+The seat was open after state Sen. Ryan Aument resigned in December to take a job with U.S. Sen. Dave McCormick (R., Pa.). A Democratic win would not affect control of the state Senate, but would mean Republicans’ edge in the upper chamber is now 27-23.
 
 Malone’s <a href="https://www.friendsofjamesmalone.org/">website</a> touted support for public education, housing and “lowering the cost of everyday essentials.”
 
