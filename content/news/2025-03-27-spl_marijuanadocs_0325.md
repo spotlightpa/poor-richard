@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2025/03/01ky-4gjy-bh4a-z11j.jpeg"
 image-credit = "Ed Mahon / Spotlight PA"
 image-description = "Pennsylvania Secretary of Health Debra Bogen faced questions about her department's oversight of medical marijuana doctors, during a February 2025 state Senate budget hearing."
+image-gravity = "ce"
 internal-id = "spl_marijuanadocs_0325"
 kicker = "Health"
 modal-exclude = false
