@@ -74,8 +74,6 @@ During recent state Senate budget hearings, Brown highlighted a handful of docto
 
 “If you break that down, it’s a crazy amount … per day, per minute that they would prescribe,” <a href="https://vimeo.com/1058637942/6b8a4f03c0">she said</a>.
 
-{{<datawrapper src="https://datawrapper.dwcdn.net/Df1gN/9/" height="371" >}}
-
 Secretary of the Commonwealth Al Schmidt called the numbers “extraordinary.” Schmidt heads the Pennsylvania Department of State, which oversees physician licensing. He also said the department’s investigations are “complaint-driven.”
 
 A spokesperson for the agency later told Spotlight PA the department is “dedicated to protecting the health and safety of the public” and “reviews every potential license violation of which it becomes aware,” including ones based on notifications from other agencies and media reports.
@@ -83,6 +81,8 @@ A spokesperson for the agency later told Spotlight PA the department is “dedic
 In a <a href="https://vimeo.com/1058320399/2f39a564ae">separate budget hearing</a>, Secretary of Health Debra Bogen said in response to questioning that her agency monitors “certification processes,” refers concerns to the Department of State, and investigates complaints. But she also said the department’s “current authority is limited.”
 
 “We’re happy to discuss whether … that should change,” she added.
+
+{{<datawrapper src="https://datawrapper.dwcdn.net/Df1gN/9/" height="371" >}}
 
 A health department spokesperson previously told Spotlight PA that the number of certifications for individual doctors “can vary widely due to factors such as the practitioner’s specialty, practice setting, patient population, and geographic location.”
 
