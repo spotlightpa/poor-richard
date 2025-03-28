@@ -1,5 +1,5 @@
 {
-  "ad-breaker-active": true,
+  "ad-breaker-active": false,
   "ad-breaker-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-breaker-images": [
     "https://files.data.spotlightpa.org/uploads/01kw/gsve/5.png",
@@ -10,10 +10,10 @@
   "ad-featured-active": true,
   "ad-featured-image-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gmdd/spotlight-donate-square-ad-set-3-.gif"
+    "https://files.data.spotlightpa.org/uploads/01ky/bxw4/newsmatch-2023-squares-25-.gif"
   ],
   "ad-featured-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
-  "ad-headwater-active": true,
+  "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
     "https://files.data.spotlightpa.org/uploads/01kw/gsve/5.png",
@@ -62,11 +62,7 @@
   "promo-type": "image",
   "river-promo-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "river-promo-desktop-height": 90,
-  "river-promo-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/5.png",
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/7.png",
-    "https://files.data.spotlightpa.org/uploads/01kw/gtjk/6.png"
-  ],
+  "river-promo-desktop-images": [],
   "river-promo-desktop-width": 728,
   "river-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-river-728-90",
   "river-promo-mobile-height": 250,
@@ -77,14 +73,14 @@
   "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gmtr/spring-2023-campaign-squares-10-.png"
+    "https://files.data.spotlightpa.org/uploads/01ky/bxw4/newsmatch-2023-squares-25-.gif"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gmdd/spotlight-donate-square-ad-set-3-.gif"
+    "https://files.data.spotlightpa.org/uploads/01ky/bxw4/newsmatch-2023-squares-25-.gif"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
   "sidebar-top-width": 300,
@@ -99,10 +95,10 @@
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "GIVE \u0026 GET IT DOUBLED »",
-  "support-hed": "You're here just in time...",
+  "support-hed": "Your help urgently needed",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "Our world is changing fast, and we need journalists in Pennsylvania who can keep up. We only have \u003cstrong\u003e3 days left\u003c/strong\u003e to ensure Spotlight PA's nonprofit, nonpartisan reporting can continue. As a special bonus, all gifts today will be DOUBLED.\n\nWe're independent, with no corporate owner or profit motives. We’re nonpartisan, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eYour support of any amount will ensure our vital work can continue.\u003c/strong\u003e\n\nHurry! This DOUBLE match expires at 11:59 p.m. Saturday.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "Our world is changing fast, and we need journalists in Pennsylvania who can keep up. We only have \u003cstrong\u003e48 hours left\u003c/strong\u003e to ensure Spotlight PA's nonprofit, nonpartisan reporting can continue. As a special bonus, all gifts today will be DOUBLED.\n\nWe're independent, with no corporate owner or profit motives. We’re nonpartisan, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eYour support of any amount will ensure our vital work can continue.\u003c/strong\u003e\n\nHurry! This DOUBLE match expires at 11:59 p.m. tomorrow.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We only have 6 days left to raise $12,000 to ensure our unmatched nonpartisan, nonprofit reporting can continue. Give to Spotlight PA today \u0026 get it DOUBLED »",
@@ -113,7 +109,7 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/8s5j/september-site-toppertracker-8-.gif"
+    "https://files.data.spotlightpa.org/uploads/01ky/bxw3/september-site-toppertracker-22-.gif"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -121,7 +117,7 @@
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/8s5k/sunshine-week-2024-1024-512-px-15-.png"
+    "https://files.data.spotlightpa.org/uploads/01ky/bxw5/sunshine-week-2024-1024-512-px-17-.gif"
   ],
   "topper-mobile-width": 1024
 }
