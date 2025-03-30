@@ -10,7 +10,7 @@
   "ad-featured-active": true,
   "ad-featured-image-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "ad-featured-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/e1rc/newsmatch-2023-squares-27-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
   ],
   "ad-featured-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
   "ad-headwater-active": false,
@@ -21,7 +21,7 @@
     "https://files.data.spotlightpa.org/uploads/01kw/gsvf/6.png"
   ],
   "ad-headwater-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-970-90",
-  "ad-rail-active": true,
+  "ad-rail-active": false,
   "ad-rail-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-rail-images": [],
   "ad-rail-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail-600-300",
@@ -30,11 +30,11 @@
   "banner-bg-color": " #ffcb03",
   "banner-link": "https://www.surveymonkey.com/r/spotlightpawebsite",
   "banner-text-color": "#000000",
-  "featured-promo-bg-color": "#050058",
+  "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
   "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED as part of our Sunshine Week challenge.",
   "featured-promo-images": [
-    "https://files.data.spotlightpa.org/uploads/01kw/gmdc/sunshine-week-2024-1024-512-px-1-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/zr2e/newsmatch-2024-rectangles-1024-512-px-7-.png"
   ],
   "featured-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=via-longform-template",
   "featured-promo-width": 1024,
@@ -46,7 +46,7 @@
   "footer-promo-mobile-height": 250,
   "footer-promo-mobile-images": [],
   "footer-promo-mobile-width": 500,
-  "newsletter-active": false,
+  "newsletter-active": true,
   "promo-active": false,
   "promo-desktop-height": 90,
   "promo-desktop-images": [
@@ -73,18 +73,18 @@
   "sidebar-sticky-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/e1rc/newsmatch-2023-squares-27-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/e1rc/newsmatch-2023-squares-27-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
   "sidebar-top-width": 300,
-  "sticky-active": false,
+  "sticky-active": true,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
@@ -109,15 +109,15 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/e1ra/september-site-toppertracker-23-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/zqz8/newsmatch-2023-tracker-banners-37-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "For a limited time, all gifts in support of Spotlight PA will be doubled as part of our Sunshine Week Challenge.",
+  "topper-image-description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01ky/e1rb/sunshine-week-2024-1024-512-px-18-.gif"
+    "https://files.data.spotlightpa.org/uploads/01kv/zr2e/newsmatch-2024-rectangles-1024-512-px-7-.png"
   ],
   "topper-mobile-width": 1024
 }
