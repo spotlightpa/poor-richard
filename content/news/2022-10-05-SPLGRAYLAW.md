@@ -162,8 +162,6 @@ If you aren’t sure what your particular county’s policy is, you can find con
 
 <b>» </b><a href="https://www.spotlightpa.org/news/2022/09/pa-eleccion-2022-votacion-por-correo-boleta-como-solicitar-llenar-devolver/">Todo lo que necesita saber para votar por correo</a>
 
-<b>» </b><a href="https://spotlightpa.us15.list-manage.com/track/click?u=77370ff1d001f9bb991fed9e7&id=89ed636808&e=ebfd0c4eb5">Su guía completa de los candidatos a gobernador</a>
-
 <i><b>Correction:</b></i><i> A previous version of this story incorrectly stated that a lawsuit was pending over drop boxes in Lancaster County. That case was resolved, and the county removed its only drop box earlier this year. </i>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

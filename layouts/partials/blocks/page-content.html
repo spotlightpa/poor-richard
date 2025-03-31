@@ -1,0 +1,12 @@
+{{ with .block }}
+  <div class="mx-auto max-w-2xl px-5 pb-10 text-lg font-medium md:px-0 lg:px-0">
+    {{ with page.Params.subhed }}
+      <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
+    {{ end }}
+    {{ with page.Content }}
+      <div class="article-content">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
