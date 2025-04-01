@@ -2,6 +2,7 @@
 title = "Privacy Policy"
 description = "Your privacy is important to us at Spotlight PA and its affiliates and subsidiaries."
 url = "/about/privacy/"
+modal-exclude = false
 +++
 ## Spotlight PA Privacy Policy
 

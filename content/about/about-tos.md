@@ -2,6 +2,7 @@
 title = "Terms of Service"
 description = "Please Read These Terms Of Service Carefully Before Using This Website."
 url = "/about/terms/"
+modal-exclude = false
 +++
 
 ## Spotlight PA Terms of Service
