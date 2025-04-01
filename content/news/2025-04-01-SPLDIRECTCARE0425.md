@@ -51,11 +51,11 @@ State <a href="https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pac
 
 Argall’s bill would direct the Department of Human Services to administer the test, but doesn’t specify how, nor does it say who would write it or what exactly would be examined. According to the bill language, the exam would assess interpersonal communication skills, basic writing and reading comprehension, understanding of cultural and diverse communities, and awareness of mental and behavioral health needs.
 
-Kathy Cubit, an advocacy manager for the Center for Advocacy for the Rights and Interests of Elders, expressed reservations about loosening the educational rule.
+Kathy Cubit, an advocacy manager for the Center for Advocacy for the Rights and Interests of Elders (CARIE), expressed reservations about loosening the educational rule.
 
 To ensure dropping the requirement doesn’t diminish the quality of care, she would prefer to see the proposal piloted before it is implemented across the state.
 
-“There’s just so much at stake for both the worker and the resident, you want to make sure the work is being done right,” said Cubit, who otherwise supports the legislation.
+“There’s just so much at stake for both the worker and the resident, you want to make sure the work is being done right,” said Cubit. CARIE does not have a position on the legislation.
 
 The bill is part of a package of legislation Argall introduced to encourage people to work as caregivers as more Pennsylvanians reach retirement age.
 
@@ -71,5 +71,7 @@ Some critics called the proposal too narrow because it would apply only to <a hr
 
 Shapiro’s funding pitch faces long odds despite the relatively low cost. State Senate Republicans have pushed back against the governor’s proposed budget, arguing it would worsen <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-budget-josh-shapiro-surplus-structural-deficit-explainer/">Pennsylvania’s structural deficit</a>.
 
-Cody Jones, senior director of government affairs for the home care association, did not comment on Argall’s legislation, but emphasized that the state’s caregiver shortage “cannot be solved” without increased wages.<strong><em></em></strong>
+Cody Jones, senior director of government affairs for the home care association, did not comment on Argall’s legislation, but emphasized that the state’s caregiver shortage “cannot be solved” without increased wages.
+
+<em>Due to an editing error, this story originally misrepresented Kathy Cubit’s position on the legislation. It has also been updated to clarify that Cubit’s statements are personal and do not reflect CARIE’s position. </em>
 
