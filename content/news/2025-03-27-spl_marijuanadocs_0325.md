@@ -13,6 +13,7 @@ kicker = "Health"
 modal-exclude = false
 pinned = false
 published = 2025-03-27T05:00:00.178-04:00
+series = ["Cannabis Card Game"]
 slug = "pennsylvania-medical-marijuana-program-doctor-oversight"
 suppress-date = false
 title = "Medical marijuana oversight bill advances after Spotlight PA investigations reveal doctor concerns"
