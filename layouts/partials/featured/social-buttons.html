@@ -40,6 +40,18 @@
       </svg>
     </span>
   </a>
+  <a
+    class="{{ $btnClass }} hover:bg-bluesky-blue hover:text-white"
+    href="https://bsky.app/intent/compose?text={{ .LinkTitle }}{{ `— via @spotlightpa.org ` }}{{ .Permalink }}"
+    data-ga-category="bluesky"
+    title="Post about this page on Bluesky"
+  >
+    <span class="m-auto">
+      <svg class="h-6 w-6 fill-current">
+        {{ partial "helper/svg.html" "bluesky" }}
+      </svg>
+    </span>
+  </a>
   <button
     class="{{ $btnClass }} hover:bg-orange hover:text-white"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
