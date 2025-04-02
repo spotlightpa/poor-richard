@@ -40,6 +40,7 @@ module.exports = {
       beige: "#f4f1ee",
       "tw-blue": "#99d9f1",
       "fb-blue": "#009edb",
+      "bluesky-blue": "#1185fe",
       orange: "#ff6c36",
       green: "#78bc20",
       yellow: {
