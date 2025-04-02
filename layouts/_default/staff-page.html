@@ -143,20 +143,22 @@
         {{ end }}
       </ul>
 
-      <h2
-        class="mt-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
-      >
-        Special Projects
-      </h2>
+      {{ if $special }}
+        <h2
+          class="mt-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+        >
+          Special Projects
+        </h2>
 
-      <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
-        data-ga-category="inline-footer:author"
-      >
-        {{ range $special }}
-          {{ template "staff-page-card" . }}
-        {{ end }}
-      </ul>
+        <ul
+          class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+          data-ga-category="inline-footer:author"
+        >
+          {{ range $special }}
+            {{ template "staff-page-card" . }}
+          {{ end }}
+        </ul>
+      {{ end }}
     </div>
   </section>
 {{ end }}
