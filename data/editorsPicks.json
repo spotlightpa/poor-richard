@@ -1,7 +1,7 @@
 {
   "edCallout": [
-    "content/interactives/opioid-quiz.md",
-    "content/news/2025-02-21-SPLRETENTIONPREV0225.md"
+    "content/news/2025-03-24-SPLLEGISMONEY0325.md",
+    "content/interactives/opioid-quiz.md"
   ],
   "edImpact": [
     "content/news/2025-03-27-spl_marijuanadocs_0325.md",
@@ -12,17 +12,17 @@
     "content/news/2025-03-03-SPL_STALLWORTH0325.md"
   ],
   "featuredStories": [
-    "content/news/2025-04-01-SPLDIRECTCARE0425.md"
+    "content/news/2025-04-02-SPLFATALREV0425.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-11-SPLCAREBUDGET0225.md",
-    "content/news/2024-08-13-SPLVOL0824.md",
-    "content/news/2024-10-15-SPLCLOSURE1024.md"
+    "content/news/2025-03-06-SPLAGINGDATA0325.md",
+    "content/news/2025-02-24-SPLPCA0225.md",
+    "content/news/2025-02-18-SPLNGINVEST0225.md"
   ],
   "topSlots": [
-    "content/news/2025-03-31-SPLTRUMPTIMBER0325.md",
-    "content/news/2025-03-28-SPLTRAFFCAM0325.md",
-    "content/news/2025-03-27-SPLCFSOLUTIONS0325.md"
+    "content/statecollege/2025-04-02-SPLBIRDFLU0425.md",
+    "content/news/2025-04-01-SPLDIRECTCARE0425.md",
+    "content/news/2025-03-31-SPLTRUMPTIMBER0325.md"
   ],
   "topper": []
 }
