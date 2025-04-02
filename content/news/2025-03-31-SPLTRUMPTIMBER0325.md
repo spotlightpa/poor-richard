@@ -1,7 +1,7 @@
 +++
 authors = ["Abigail Hakas"]
 blurb = "Cash-strapped rural counties welcome a potential increase in federal timber harvesting, though forest management challenges remain."
-byline = "Abigail Hakas of New Generation Newsroom"
+byline = "Abigail Hakas of Next Generation Newsroom"
 description = "Cash-strapped PA counties welcome a potential increase in federal timber harvesting."
 feed-exclude = false
 image = "2025/03/01ky-dpjw-jfp7-yjt4.jpeg"
