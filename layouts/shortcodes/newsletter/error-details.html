@@ -11,7 +11,9 @@
   x-show="params.get('msg')"
 >
   <p>
-    <b x-template>Error details (${params.get('code')}):</b>
+    <b x-show="params.get('code')" x-template>
+      Error details (${params.get('code')}):
+    </b>
     <span x-text="params.get('msg')"></span>
   </p>
   <p x-show="validations.length">
