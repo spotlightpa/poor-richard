@@ -10,9 +10,8 @@ async function fetchOrRedirect(url, opts) {
     let errors = data.details
       ? encodeURIComponent(JSON.stringify(data.details))
       : "";
-    window.open(
+    window.location.assign(
       `/newsletters/sorry/?code=${code}&msg=${msg}&errors=${errors}`,
-      "_blank",
     );
     throw new Error("abort");
   }
