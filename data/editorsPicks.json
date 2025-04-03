@@ -12,17 +12,15 @@
     "content/news/2025-03-03-SPL_STALLWORTH0325.md"
   ],
   "featuredStories": [
-    "content/news/2025-04-02-SPLFATALREV0425.md"
+    "content/news/2025-04-03-SPL_Resolve_SS0425.md"
   ],
   "subfeatures": [
-    "content/news/2025-03-06-SPLAGINGDATA0325.md",
-    "content/news/2025-02-24-SPLPCA0225.md",
-    "content/news/2025-02-18-SPLNGINVEST0225.md"
+    "content/news/2025-04-03-SPL_ResolveHWR_425.md"
   ],
   "topSlots": [
+    "content/news/2025-04-02-SPLFATALREV0425.md",
     "content/statecollege/2025-04-02-SPLBIRDFLU0425.md",
-    "content/news/2025-04-01-SPLDIRECTCARE0425.md",
-    "content/news/2025-03-31-SPLTRUMPTIMBER0325.md"
+    "content/news/2025-04-01-SPLDIRECTCARE0425.md"
   ],
   "topper": []
 }
