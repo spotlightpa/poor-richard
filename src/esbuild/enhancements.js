@@ -5,6 +5,10 @@ import { analyticsPlugin } from "../utils/google-analytics.js";
 
 Alpine.plugin(analyticsPlugin);
 
+import newsletterPlugin from "../enhancements/newsletter.js";
+
+Alpine.plugin(newsletterPlugin);
+
 import carousel from "../enhancements/carousel.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
