@@ -14,6 +14,7 @@
     class="p-1 font-sans text-black"
     x-data="newsletter($el.dataset.baseUrl)"
     data-base-url="{{ page.Param `newsletters-base-url` }}"
+    @submit.prevent="submit"
     data-ga-category="{{ $gaCategory }}"
   >
     {{ partial $hiddenField . }}

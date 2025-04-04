@@ -20,19 +20,18 @@
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
-    action="{{ site.Param `newsletters-action` }}"
-    method="post"
-    target="_blank"
+    x-data="newsletter($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
     data-ga-category="all-newsletters"
-    x-data
-    x-form="all-newsletters"
-    @submit="
+    @submit.prevent="
       let checkboxes = Array.from($el.querySelectorAll('input[type=checkbox]'));
       let someChecked = checkboxes.some(el => el.checked);
       if (!someChecked) {
-        $event.preventDefault();
         alert('Please choose a newsletter to subscribe to.')
-      }"
+        return;
+      }
+      submit();
+    "
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <section x-data class="bg-white px-4 pb-2 pt-12 md:pb-0">
@@ -209,8 +208,21 @@
                 </span>
               </p>
               <div class="flex-0 mt-2 self-end sm:ml-5">
-                <button type="submit" class="btn-signup h-11 w-full">
+                <button
+                  type="submit"
+                  class="btn-signup h-11 w-full"
+                  :disabled="isLoading"
+                >
                   Sign up
+                  <svg
+                    x-cloak
+                    x-transition
+                    aria-label="Submitting"
+                    x-show="isLoading"
+                    class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+                  >
+                    {{ partial "helper/svg.html" "spinner" }}
+                  </svg>
                 </button>
               </div>
             </div>
