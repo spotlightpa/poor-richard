@@ -1,13 +1,11 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
   class="rounded bg-black p-8 text-center font-sans text-white shadow md:px-12"
-  x-data="{ active: false }"
   @focusin="active = true"
-  x-form="newsletters:multi"
   data-ga-category="tout"
-  action="{{ site.Param `newsletters-action` }}"
-  method="post"
-  target="_blank"
+  x-data="newsletter($el.dataset.baseUrl)"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+  @submit.prevent="submit"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
   <h6
@@ -41,7 +39,18 @@
       </span>
     </p>
     <p class="mt-4 sm:ml-1 sm:mt-0">
-      <button class="btn-signup" type="submit">Sign Up</button>
+      <button class="btn-signup" type="submit" :disabled="isLoading">
+        Sign Up
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </button>
     </p>
   </div>
   {{ $checkClass := `mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4` }}

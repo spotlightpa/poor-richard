@@ -43,13 +43,8 @@ async function submitNewsletter(baseURL, el) {
 function newsletter(baseURL) {
   return {
     isLoading: false,
-    init() {
-      this.$el.addEventListener("submit", (ev) => {
-        this.submit(ev);
-      });
-    },
-    submit(ev) {
-      ev.preventDefault();
+    active: false,
+    submit() {
       this.isLoading = true;
       submitNewsletter(baseURL, this.$el)
         .catch((e) => {

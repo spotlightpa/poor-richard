@@ -1,12 +1,11 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
   class="rounded border border-red font-sans font-semibold leading-tight shadow"
-  action="{{ site.Param `newsletters-action` }}"
-  method="post"
-  target="_blank"
-  x-form="newsletters:multi"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+  @submit.prevent="submit"
   data-ga-category="newsletter"
   x-data="{
+    ...newsletter($el.dataset.baseUrl),
     hasFocused: false,
     params: new URLSearchParams(window.location.search),
     _(name, fallback) {
@@ -37,7 +36,7 @@
     Sign up for a free roundup of the top news from across Pennsylvania, all in
     one daily or weekly email from Spotlight PA.
   </h2>
-  <div class="mx-auto mt-8 items-stretch px-4 sm:flex sm:max-w-2xl">
+  <div class="mx-auto mt-8 px-4 sm:flex sm:max-w-2xl">
     <p class="relative flex-grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
@@ -58,12 +57,17 @@
       </span>
     </p>
     <p class="mt-2 sm:ml-1 sm:mt-0">
-      <button
-        class="btn-donate"
-        type="submit"
-        x-text="_('button', $el.innerText)"
-      >
-        Sign Up
+      <button class="btn-donate h-full" type="submit" :disabled="isLoading">
+        <span x-text="_('button', $el.innerText)">Sign Up</span>
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
       </button>
     </p>
   </div>
