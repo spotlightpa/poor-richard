@@ -10,9 +10,7 @@ async function fetchOrRedirect(url, opts) {
     let errors = data.details
       ? encodeURIComponent(JSON.stringify(data.details))
       : "";
-    window.top.location.assign(
-      `/newsletters/sorry/?code=${code}&msg=${msg}&errors=${errors}`,
-    );
+    window.top.location.href = `/newsletters/sorry/?code=${code}&msg=${msg}&errors=${errors}`;
     throw new Error("abort");
   }
   return data;
@@ -37,7 +35,7 @@ async function submitNewsletter(baseURL, el) {
   });
 
   // Redirect to thanks page on successful submission
-  window.top.location.assign("/newsletters/thanks/");
+  window.top.location.href = "/newsletters/thanks/";
 }
 
 function newsletter(baseURL) {
