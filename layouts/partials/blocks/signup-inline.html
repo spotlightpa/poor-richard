@@ -19,7 +19,7 @@
         x-data="newsletter($el.dataset.baseUrl)"
         data-base-url="{{ page.Param `newsletters-base-url` }}"
         @submit.prevent="submit"
-        @focusin="active = true"
+        @focusin="hasFocused = true"
       >
         {{ partial "newsletter/basic-hidden.html" . }}
         <h6
@@ -67,7 +67,7 @@
           </p>
         </div>
         {{ $checkClass := `mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4` }}
-        <div x-show="active" x-transition x-cloak>
+        <div x-show="hasFocused" x-transition x-cloak>
           <p class="mt-4 text-left">
             <label>
               <input

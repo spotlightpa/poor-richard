@@ -44,13 +44,11 @@
 
   </div>
   <form
-    action="{{ site.Param `newsletters-action` }}"
-    method="post"
-    target="_blank"
     class="font-sans text-black"
-    x-data
-    x-form="{{ $gaForm }}"
     data-ga-category="{{ $gaCategory }}"
+    x-data="newsletter($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
+    @submit.prevent="submit"
   >
     {{ partial $signupField . }}
 
@@ -69,8 +67,21 @@
           required
         />
       </p>
-      <button type="submit" class="btn-signup mt-4 self-end">
+      <button
+        type="submit"
+        class="btn-signup mt-4 self-end"
+        :disabled="isLoading"
+      >
         {{ $cta }}
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
       </button>
     </div>
     <p class="text-sm text-g-7">{{ .disclaimer }}</p>

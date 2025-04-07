@@ -9,14 +9,10 @@
 {{ partial "tag/content-well-end" . }}
 <form
   class="my-6 rounded border border-red font-sans font-semibold leading-tight shadow"
-  action="{{ site.Param `newsletters-action` }}"
-  method="post"
-  target="_blank"
-  x-form="newsletters:multi"
   data-ga-category="embed:newsletter"
-  x-data="{
-    hasFocused: false,
-  }"
+  x-data="newsletter($el.dataset.baseUrl)"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+  @submit.prevent="submit"
   @focusin="hasFocused = true"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
@@ -54,8 +50,17 @@
       </span>
     </p>
     <p class="mt-2 sm:ml-1 sm:mt-0">
-      <button class="btn-donate" type="submit">
+      <button class="btn-donate h-full" type="submit" :disabled="isLoading">
         {{- $button -}}
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
       </button>
     </p>
   </div>

@@ -83,7 +83,6 @@ touch-icon = "/img/logos/square-white-on-black-920.png"
 images = ["2019/11/banner-white-on-capitol.jpeg"]
 description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
 headers = ["X-Frame-Options: DENY"]
-newsletters-action = "https://email-alerts.data.spotlightpa.org/api/subscribe-v2"
 newsletters-base-url = "https://email-alerts.data.spotlightpa.org"
 
 [security.exec]
