@@ -4,11 +4,9 @@
 <form
   class="mx-auto w-full rounded bg-g-2 p-4 font-sans shadow"
   data-ga-category="rail-newsletter"
-  x-data
-  x-form="newsletters:papost"
-  action="{{ site.Param `newsletters-action` }}"
-  method="post"
-  target="_blank"
+  x-data="newsletter($el.dataset.baseUrl)"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+  @submit.prevent="submit"
 >
   {{ partial "newsletter/papost-hidden.html" . }}
   <h2
@@ -39,5 +37,16 @@
       </svg>
     </span>
   </p>
-  <button class="btn-donate-slim mt-2" type="submit">Subscribe</button>
+  <button class="btn-donate-slim mt-2" type="submit" :disabled="isLoading">
+    Subscribe
+    <svg
+      x-cloak
+      x-transition
+      aria-label="Submitting"
+      x-show="isLoading"
+      class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+    >
+      {{ partial "helper/svg.html" "spinner" }}
+    </svg>
+  </button>
 </form>

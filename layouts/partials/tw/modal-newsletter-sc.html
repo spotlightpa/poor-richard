@@ -27,10 +27,9 @@
   >
     <form
       class="m-auto w-full max-w-prose overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
-      x-form="newsletters:multi"
-      action="{{ site.Param `newsletters-action` }}"
-      method="post"
-      target="_blank"
+      x-data="newsletter($el.dataset.baseUrl)"
+      data-base-url="{{ page.Param `newsletters-base-url` }}"
+      @submit.prevent="submit"
       tabindex="-1"
       @click.stop
       @keydown.escape="isOpen = false"
@@ -100,8 +99,18 @@
         <button
           class="mt-6 rounded bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow"
           type="submit"
+          :disabled="isLoading"
         >
           Sign me up
+          <svg
+            x-cloak
+            x-transition
+            aria-label="Submitting"
+            x-show="isLoading"
+            class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+          >
+            {{ partial "helper/svg.html" "spinner" }}
+          </svg>
         </button>
         <p class="mt-5 flex space-x-2">
           <button

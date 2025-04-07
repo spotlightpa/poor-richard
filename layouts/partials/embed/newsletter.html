@@ -6,7 +6,6 @@
   data-ga-category="newsletter"
   x-data="{
     ...newsletter($el.dataset.baseUrl),
-    hasFocused: false,
     params: new URLSearchParams(window.location.search),
     _(name, fallback) {
       return this.params.get(name) || fallback;

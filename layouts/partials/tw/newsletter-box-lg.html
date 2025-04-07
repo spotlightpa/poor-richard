@@ -37,11 +37,9 @@
 
   <form
     class="mx-auto max-w-xl md:max-w-2xl"
-    x-form="newsletters:multi"
-    x-data="{ hasFocused: false }"
-    action="{{ site.Param `newsletters-action` }}"
-    method="post"
-    target="_blank"
+    x-data="newsletter($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
+    @submit.prevent="submit"
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <div
@@ -61,8 +59,18 @@
       <button
         class="m-1 box-border w-full rounded bg-yellow p-3 font-black uppercase tracking-wider text-yellow-9 shadow-[0_0_0_4px] shadow-yellow sm:w-5/12 sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
         type="submit"
+        :disabled="isLoading"
       >
         Sign up
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
       </button>
     </div>
 

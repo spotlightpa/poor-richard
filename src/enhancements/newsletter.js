@@ -1,9 +1,20 @@
+import { after } from "../utils/timers.js";
+
 async function fetchOrRedirect(url, opts) {
   let data = await fetch(url, opts)
     .then((rsp) => rsp.json())
     .catch((err) => {
       return { error: `${err}` };
     });
+  // Retry Gateway Timeout once after a second
+  if (data.statuscode === 504) {
+    await after({ seconds: 1 });
+    data = await fetch(url, opts)
+      .then((rsp) => rsp.json())
+      .catch((err) => {
+        return { error: `${err}` };
+      });
+  }
   if (data.error) {
     let msg = encodeURIComponent(data.error);
     let code = data.statuscode ? encodeURIComponent(data.statuscode) : "";
@@ -41,7 +52,7 @@ async function submitNewsletter(baseURL, el) {
 function newsletter(baseURL) {
   return {
     isLoading: false,
-    active: false,
+    hasFocused: false,
     submit() {
       this.isLoading = true;
       submitNewsletter(baseURL, this.$el)
