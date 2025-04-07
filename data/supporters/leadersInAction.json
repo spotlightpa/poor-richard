@@ -1007,12 +1007,6 @@
       "url": "",
       "category": "$50,000 and above",
       "categoryRank": "1"
-    },
-    {
-      "display": "Display",
-      "sort": "Sort",
-      "url": "URL",
-      "category": "Range"
     }
   ]
 }
