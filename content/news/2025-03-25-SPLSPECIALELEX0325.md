@@ -22,6 +22,8 @@ topics = ["Elections"]
 twitter-title = "Democrat James Malone flips PA Senate seat in major upset"
 +++
 
+<strong><em>READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2025/04/lancaster-senate-special-election-democratic-upset-victory-analysis/"><strong><em>What Democrat James Malone’s surprise win means for the 2026 midterms</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — Democrats have picked up a Pennsylvania Senate seat in a district that strongly supported Donald Trump, an unexpected victory that party leaders painted as a rebuke to the Republican president.
 
 James Malone, mayor of East Petersburg in Lancaster County, defeated Commissioner Josh Parsons by 482 votes, unofficial results show. The Associated Press called the race Wednesday afternoon.
