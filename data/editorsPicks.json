@@ -4,8 +4,8 @@
     "content/interactives/opioid-quiz.md"
   ],
   "edImpact": [
-    "content/news/2025-03-27-spl_marijuanadocs_0325.md",
-    "content/news/2025-02-28-SPLSTATEPLANE0225.md"
+    "content/news/2025-04-08-SPLLOBSUIT0425.md",
+    "content/news/2025-03-27-spl_marijuanadocs_0325.md"
   ],
   "edInvestigations": [
     "content/news/2025-04-03-SPL_Resolve_SS0425.md",
@@ -20,9 +20,9 @@
     "content/news/2025-03-10-SPLPOLLELEX0325.md"
   ],
   "topSlots": [
+    "content/news/2025-04-10-SPLFORCON0425.md",
     "content/news/2025-04-08-SPLCHILDADVO0425.md",
-    "content/news/2025-04-09-SPLLANCSEN0425.md",
-    "content/news/2025-04-08-SPLLOBSUIT0425.md"
+    "content/news/2025-04-09-SPLLANCSEN0425.md"
   ],
   "topper": []
 }
