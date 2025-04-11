@@ -12,17 +12,17 @@
     "content/news/2025-02-18-SPLNGINVEST0225.md"
   ],
   "featuredStories": [
-    "content/news/2025-04-10-SPLMAY20MAIL.md"
+    "content/statecollege/2025-04-11-SPLAMAZON0425.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-04-SPLCURERESULT0225.md",
-    "content/news/2024-10-23-SPLCURINGGEN24.md",
-    "content/news/2025-03-10-SPLPOLLELEX0325.md"
+    "content/statecollege/2025-03-24-SPLARPABUD0325.md",
+    "content/statecollege/2025-02-06-SPLAUDITS0225.md",
+    "content/statecollege/2024-12-19-SPLGREGGHOW1224.md"
   ],
   "topSlots": [
+    "content/news/2025-04-10-SPLMAY20MAIL.md",
     "content/news/2025-04-10-SPLFORCON0425.md",
-    "content/news/2025-04-08-SPLCHILDADVO0425.md",
-    "content/news/2025-04-09-SPLLANCSEN0425.md"
+    "content/news/2025-04-08-SPLCHILDADVO0425.md"
   ],
   "topper": []
 }
