@@ -14,7 +14,9 @@
   "featuredStories": [
     "content/news/2025-04-13-SPLGOVARSON0425.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2024-07-22-SPLSHAPIRO101.md"
+  ],
   "topSlots": [
     "content/news/2025-04-10-SPLNEWSQUIZAPRIL0725.md",
     "content/news/2025-04-10-SPLMAY20MAIL.md",
