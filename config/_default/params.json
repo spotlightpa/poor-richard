@@ -84,7 +84,7 @@
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
   "sidebar-top-width": 300,
-  "sticky-active": true,
+  "sticky-active": false,
   "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
