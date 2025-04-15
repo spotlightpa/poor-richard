@@ -1,24 +1,57 @@
 +++
-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-image-size = "inline"
-published = 2020-09-03T01:15:52.230Z
-title = "Sign up for PA Post"
-description = "Sign up for PA Post, Spotlight PA's free daily newsletter"
-blurb = "Understand what's happening across PA - in less than five minutes a day."
-linktitle = "PA Post"
+layout = "individual-newsletter"
+
+title = "Your Guide to PA"
+white-subhead = "Sign up for"
+yellow-subhead = "PA Post, Spotlight PA’s free daily newsletter"
+deck = "Get the day’s most important statewide news from Spotlight PA and beyond."
+
+bullets = [
+  "Delivered straight to your inbox every Monday-Saturday morning",
+  "A five-minute read to start your day",
+  "Overlooked stories, unique investigations, and more to help you understand PA"
+]
+
+device-image =  "2025/04/01kz-vkkd-3q47-ba89.png"
+
+quote = "“It’s fresh, well written, and unbiased.”"
+quote-source = "— PA Post reader"
+
 modal-exclude = true
-layout = "news"
-sort-by = "month"
-occurence = "Each weekday"
-weight = 1
-[cascade]
-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-image-gravity = "ea"
+linktitle = "PA Post"
+
+[[staff]]
+name = "Colin Deppen"
+title = "Newsletter Editor"
+description = "Colin Deppen is a newsletter editor/reporter with Spotlight PA. He crafts and grows the site’s daily and weekly newsletters, while contributing to the organization’s mission of producing journalism that serves readers and holds powerful people to account."
+headshot = "2021/06/01gd-pm19-gyb5-dy5q.jpeg"
+
+[[staff]]
+name = "Asha Prihar"
+title = "Newsletter Writer"
+description = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania’s state government for The PLS Reporter."
+headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
+
+[[explore]]
+newsletter = "PA Local"
+schedule = "Every Friday"
+description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
+link = "https://www.spotlightpa.org/newsletters/palocal"
+
+[[explore]]
+newsletter = "The Investigator"
+schedule = "Every Thursday"
+description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
+link = "https://www.spotlightpa.org/newsletters/investigator"
+
+[[explore]]
+newsletter = "How We Care"
+schedule = "Every Tuesday"
+description = "Original reporting, guidance, and resources to empower home and professional caregivers in PA."
+image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
+link = "https://www.spotlightpa.org/newsletters/howwecare"
 
 +++
 
-Sign up for PA Post, Spotlight PA’s free daily newsletter. Understand what's happening across Pennsylvania - in less than five minutes a day.
-
-PA Post is delivered straight to your inbox every Monday-Saturday. If you don’t receive it, please add `newsletters@spotlightpa.org` to your contacts, or check your spam folder and mark it as “not spam.”
-
-{{<newsletter/papost-form>}}
