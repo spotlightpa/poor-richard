@@ -16,14 +16,13 @@
   ],
   "subfeatures": [
     "content/news/2025-04-14-SPLGOVHAMMER0425.md",
-    "content/news/2025-04-14-SPLBALMER0425.md",
     "content/news/2025-04-13-SPLGOVARSON0425.md",
     "content/news/2024-07-22-SPLSHAPIRO101.md"
   ],
   "topSlots": [
-    "content/news/2025-04-11-SPLPRORISE0425.md",
-    "content/news/2025-04-11-SPLPHOENIXVILLE0425.md",
-    "content/statecollege/2025-04-11-SPLAMAZON0425.md"
+    "content/news/2025-04-14-SPLBALMER0425.md",
+    "content/news/2025-04-15-SPLMEASLESQA0425.md",
+    "content/news/2025-04-11-SPLPRORISE0425.md"
   ],
   "topper": []
 }
