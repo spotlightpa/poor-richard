@@ -1,0 +1,90 @@
+<section class="mb-6 w-full bg-[#2E2E2E] pt-12">
+  {{ $maxWidth := .Param "max-width" }}
+  {{ $breakpoint := cond (eq $maxWidth "prose") "750px" $maxWidth }}
+  <style>
+    @media (max-width: {{ $breakpoint }}) {
+      .hide-at-max-width {
+        display: none;
+      }
+      .stack-at-max-width {
+        flex-direction: column;
+      }
+      .stack-child-full {
+        width: 100%;
+        padding-right: 0;
+      }
+      .min-h-push {
+        padding-bottom: 4rem;
+      }
+    }
+  </style>
+
+  <div
+    class="{{ if eq $maxWidth "prose" }}
+      max-w-prose
+    {{ else }}
+      max-w-[{{ $maxWidth }}]
+    {{ end }} mx-auto px-4 pb-6"
+  >
+    <div
+      class="stack-at-max-width {{ if not (and (.Param "quote") (.Param "quote-source")) }}
+        min-h-push
+      {{ end }} flex"
+    >
+      <div class="stack-child-full w-full sm:w-3/5 sm:pr-6">
+        <h1 class="my-4 text-4xl font-semibold text-white">
+          {{ .Title }}
+        </h1>
+
+        <h2 class="mb-4 text-lg font-semibold">
+          <span class="text-white">{{ .Param "white-subhead" }}</span>
+          <span class="text-yellow">{{ .Param "yellow-subhead" }}</span>
+        </h2>
+
+        <p class="text-white">
+          {{ .Param "deck" }}
+        </p>
+
+        <ul class="my-4 mb-7 ml-4 list-outside list-disc text-base text-white">
+          {{ range .Params.bullets }}
+            <li>{{ . | safeHTML }}</li>
+          {{ end }}
+        </ul>
+
+        {{ partial "tw/individual-newsletter-form.html" . }}
+      </div>
+
+      <div
+        class="{{ if not (and (.Param "quote") (.Param "quote-source")) }}
+          mb-16
+        {{ end }} hide-at-max-width mt-4 w-2/5 items-start justify-center"
+      >
+        {{ $name := .Param "device-image" }}
+        {{ $imgOpts := dict
+          "filename" $name
+          "description" "Screenshot of the newsletter on a mobile device"
+          "widthRatio" (.Param "device-image-width")
+          "heightRatio" (.Param "device-image-height")
+          "widths" (slice 512 768 1024 1280 1600)
+          "containerClass" "w-full flex justify-center items-start"
+        }}
+        {{ with $name }}
+          <div class="flex w-full justify-center">
+            {{ partial "tw/image-block.html" $imgOpts }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ if and (.Param "quote") (.Param "quote-source") }}
+      <p
+        class="mb-2 mt-8 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
+      >
+        {{ .Param "quote" }}
+      </p>
+      <p class="mb-5 text-right italic text-white">
+        {{ .Param "quote-source" }}
+      </p>
+    {{ end }}
+  </div>
+</section>
