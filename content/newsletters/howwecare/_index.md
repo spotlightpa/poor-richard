@@ -12,7 +12,7 @@ bullets = [
   "Perspectives on child care, maternal care, family care, and aging"
 ]
 
-device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image = "2025/04/01m0-1bfy-1xyd-mtp1.png"
 device-image-width = 956
 device-image-height = 1712
 

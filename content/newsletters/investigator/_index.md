@@ -13,7 +13,7 @@ bullets = [
   "Curated accountability journalism from across PA"
 ]
 
-device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image = "2025/04/01m0-1bbb-bqgg-rjr1.png"
 device-image-width = 956
 device-image-height = 1712
 
