@@ -52,6 +52,8 @@ newsletter = "PA Local"
 schedule = "Every Friday"
 description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
 image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
+width = 1200
+height = 1009
 link = "https://www.spotlightpa.org/newsletters/palocal"
 
 [[explore]]
@@ -59,6 +61,8 @@ newsletter = "The Investigator"
 schedule = "Every Thursday"
 description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
+width = 480
+height = 270
 link = "https://www.spotlightpa.org/newsletters/investigator"
 
 +++

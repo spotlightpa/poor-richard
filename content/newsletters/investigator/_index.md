@@ -52,6 +52,8 @@ newsletter = "PA Local"
 schedule = "Every Friday"
 description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
 image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
+width = 1200
+height = 1009
 link = "https://www.spotlightpa.org/newsletters/palocal"
 
 [[explore]]
@@ -59,6 +61,8 @@ newsletter = "How We Care"
 schedule = "Every Tuesday"
 description = "Original reporting, guidance, and resources to empower home and professional caregivers in PA."
 image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
+width = 3200
+height = 2400
 link = "https://www.spotlightpa.org/newsletters/howwecare"
 
 +++
