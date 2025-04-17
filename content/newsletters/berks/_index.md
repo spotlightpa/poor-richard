@@ -1,29 +1,29 @@
 +++
 layout = "individual-newsletter"
-max-width = "730px"
+max-width = "715px"
 
-title = "News for north-central PA"
+title = "Local news, fresh daily"
 white-subhead = "Sign up for"
-yellow-subhead = "Talk of the Town for essential news from our State College bureau"
-deck = "The news that matters to your community — from the PA Wilds to Happy Valley"
+yellow-subhead = "Good Day, Berks - Spotlight PA’s free daily newsletter for Berks County"
+deck = "Your daily dose of Berks County essentials"
 
 bullets = [
-  "Delivered straight to your inbox every Thursday",
-  "Local stories that dig deep, unique events, and natural beauty",
-  "Covers rural communities, local accountability, and Penn State"
+  "Delivered straight to your inbox every Monday-Friday morning",
+  "What matters most in our community in five minutes or less",
+  "Curated local stories, practical updates, and community highlights"
 ]
 
 device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
 device-image-width = 956
 device-image-height = 1712
 
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
+gaCategory = "newsletters:berks"
+gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/papost-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "Talk of the Town"
+linktitle = "Good Day, Berks"
 
 
 [[staff]]
