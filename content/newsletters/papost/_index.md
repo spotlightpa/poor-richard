@@ -1,10 +1,11 @@
 +++
 layout = "individual-newsletter"
+max-width = "prose"
 
-title = "Your Guide to PA"
+title = "Your guide to PA"
 white-subhead = "Sign up for"
 yellow-subhead = "PA Post, Spotlight PA’s free daily newsletter"
-deck = "Get the day’s most important statewide news from Spotlight PA and beyond."
+deck = "Get the day’s most important statewide news from Spotlight PA and beyond"
 
 bullets = [
   "Delivered straight to your inbox every Monday-Saturday morning",
@@ -12,10 +13,17 @@ bullets = [
   "Overlooked stories, unique investigations, and more to help you understand PA"
 ]
 
-device-image =  "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image-width = 956
+device-image-height = 1712
 
 quote = "“It’s fresh, well written, and unbiased.”"
 quote-source = "— PA Post reader"
+
+gaCategory = "newsletters:papost"
+gaForm = "newsletters:papost-full"
+hiddenField = "newsletter/papost-hidden.html"
+cta = "Sign up"
 
 modal-exclude = true
 linktitle = "PA Post"
@@ -42,7 +50,7 @@ link = "https://www.spotlightpa.org/newsletters/palocal"
 [[explore]]
 newsletter = "The Investigator"
 schedule = "Every Thursday"
-description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+description = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 link = "https://www.spotlightpa.org/newsletters/investigator"
 
