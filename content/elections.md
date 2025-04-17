@@ -67,6 +67,11 @@ credits = """
     role="Director of Technology"
     email="cjohnson@spotlightpa.org"
 >}}
+{{<featured/credit
+    name="Alexandra Harris"
+    role="Newsroom Developer"
+    email="aharris@spotlightpa.org"
+>}}
 """
 form ="""
 {{<form-contact-large
@@ -157,10 +162,6 @@ title = "Election Assistant"
 link = "election-assistant"
 
 [[blocks.link]]
-title = "Quiz"
-link = "quiz"
-
-[[blocks.link]]
 title = "More Coverage"
 link = "coverage"
 
@@ -188,15 +189,6 @@ hed = "Ask Spotlight PA’s 2025 election assistant your questions"
 dek = "Have questions about the 2025 election in Pennsylvania? Ask our new AI-powered assistant and get a trusted answer based on our reporting."
 cta = "Try Our Election Assistant →"
 link = "/elections/assistant/"
-
-[[blocks]]
-layout = "ballyhoo"
-id = "quiz"
-image = "2024/10/01kg-dw76-v4hn-egrq.jpeg"
-hed = "Find Your Candidate Match"
-dek = "Use our interactive tool to see which major party candidates for Pennsylvania attorney general, auditor general, and treasurer most closely align with what matters to you."
-cta = "Take Our Quizzes →"
-link = "/elections-2024/candidate-quiz/"
 
 [[blocks]]
 layout = "signup-inline"
@@ -228,4 +220,7 @@ Spotlight PA is here to help you navigate the Pennsylvania election process — 
 
 This May, Democrats and Republicans across Pennsylvania will cast their ballots in municipal races. Depending on where you live, your ballot could include races for mayor, school board, city council, various judicial offices, district attorney, and more. While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area. 
 
-We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about how we’re covering the 2025 Pennsylvania election.
+We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/04/pennsylvania-2025-primary-election-coverage-municipal/).
+
+
+
