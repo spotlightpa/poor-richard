@@ -190,22 +190,6 @@ cta = "Try Our Election Assistant →"
 link = "/elections/assistant/"
 
 [[blocks]]
-layout = "events"
-id = "event-promo"
-title = "Spotlight PA voter event series"
-image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
-
-[[blocks.entries]]
-hed = "How accessible are Pennsylvania’s elections?"
-dek = "Join us for a live panel discussion on the accessibility of Pennsylvania’s elections and how you can protect your right to vote."
-link = "/news/2024/10/pennsylvania-elections-accessibility-voting-rights/"
-
-[[blocks.entries]]
-hed="Row Races"
-dek="Everything you need to know about the row office candidates’ histories and campaign pledges, and the offices they hope to win."
-link="/news/2024/09/pennsylvania-row-office-election-candidates-2024-attorney-general-auditor-treasurer/"
-
-[[blocks]]
 layout = "ballyhoo"
 id = "quiz"
 image = "2024/10/01kg-dw76-v4hn-egrq.jpeg"
@@ -217,7 +201,7 @@ link = "/elections-2024/candidate-quiz/"
 [[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
-dek = "Be the first to read our 2024 voting guides and other election stories by signing up for our free daily newsletter."
+dek = "Be the first to read our 2025 voting guides and other election stories by signing up for our free daily newsletter."
 cta = "Sign Up"
 
 [[blocks]]
