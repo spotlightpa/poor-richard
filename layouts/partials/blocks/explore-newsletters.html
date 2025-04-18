@@ -1,0 +1,54 @@
+<section class="mb-[72px] w-full pt-12">
+  <div class="mx-auto max-w-prose px-4">
+    <h3
+      class="border-b-2 border-[#e2e2e2] pb-2 text-2xl font-bold text-[#2E2E2E]"
+    >
+      More Newsletters
+    </h3>
+    <p class="my-4">Explore other free newsletters from Spotlight PA.</p>
+
+    {{ range .Params.explore }}
+      <a
+        href="{{ .link }}"
+        class="block hover:no-underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="mt-[20px] flex min-h-52 w-full transform transition hover:scale-[1.02]"
+        >
+          <div
+            class="h-auto w-full rounded bg-[#F9F9F9] p-[20px] transition-colors duration-200 hover:bg-[#ececec]"
+          >
+            <div class="flex h-auto w-full flex-col sm:flex-row">
+              <div
+                class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
+              >
+                <div
+                  class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
+                >
+                  {{ partial "tw/image-block.html" (dict
+                    "widths"       (slice 128 256 384 512 1280)
+                    "filename"     .image
+                    "description"  (printf "Picture of %s" .newsletter)
+                    "widthRatio"   .width
+                    "heightRatio"  .height
+                    "imgClass"     "object-contain w-auto max-h-full"
+                    )
+                  }}
+                </div>
+              </div>
+              <div
+                class="flex w-full flex-col justify-center text-[#2E2E2E] sm:ml-2.5 sm:w-7/12"
+              >
+                <h4 class="text-[20px] font-bold">{{ .newsletter }}</h4>
+                <p class="mb-3 mt-1 text-sm font-semibold">{{ .schedule }}</p>
+                <p class="mt-2 text-sm">{{ .description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>

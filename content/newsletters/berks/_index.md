@@ -1,31 +1,29 @@
 +++
 layout = "individual-newsletter"
-max-width = "prose"
+max-width = "715px"
 
-title = "Sharing stories of essential work"
+title = "Local news, fresh daily"
 white-subhead = "Sign up for"
-yellow-subhead = "How We Care, a free weekly newsletter on the state of caregiving and health in PA"
+yellow-subhead = "Good Day, Berks - Spotlight PA’s free daily newsletter for Berks County"
+deck = "Your daily dose of Berks County essentials"
 
 bullets = [
-  "Delivered straight to your inbox every Tuesday",
-  "Original reporting, guidance, and resources",
-  "Perspectives on child care, maternal care, family care, and aging"
+  "Delivered straight to your inbox every Monday-Friday morning",
+  "What matters most in our community in five minutes or less",
+  "Curated local stories, practical updates, and community highlights"
 ]
 
-device-image = "2025/04/01m0-1bfy-1xyd-mtp1.png"
+device-image = "2025/04/01m0-5ccv-txkj-1e7f.png"
 device-image-width = 956
 device-image-height = 1712
 
-quote = "“Thank you for elevating this important issue.”"
-quote-source = "— How We Care reader"
-
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
+gaCategory = "newsletters:berks"
+gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/papost-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "How We Care"
+linktitle = "Good Day, Berks"
 
 
 [[staff]]

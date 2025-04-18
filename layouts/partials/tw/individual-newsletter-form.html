@@ -1,0 +1,52 @@
+{{ $gaForm := .Param "gaForm" }}
+{{ $gaCategory := .Param "gaCategory" }}
+{{ $hiddenField := .Param "hiddenField" }}
+{{ $cta := .Param "cta" }}
+
+{{ $idEmail := partial "helper/new-id" . }}
+
+
+<form
+  class="mt-4 font-sans text-black"
+  x-data="newsletter($el.dataset.baseUrl)"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+  @submit.prevent="submit"
+  data-ga-category="{{ $gaCategory }}"
+>
+  {{ partial $hiddenField . }}
+
+
+  <div
+    class="flex h-[44px] w-full items-center justify-between rounded-md border-[1px] border-[#CFCFCF] bg-white px-[20px]"
+  >
+    <input
+      id="{{ $idEmail }}"
+      class="w-full bg-white font-bold text-g-8 placeholder-g-6 focus:outline-none"
+      type="email"
+      name="EMAIL"
+      placeholder="Email address"
+      required
+    />
+
+    <svg aria-hidden="true" class="ml-2 h-[20px] w-[20px] fill-[#CFCFCF]">
+      {{ partial "helper/svg.html" "envelope" }}
+    </svg>
+  </div>
+
+  <button
+    type="submit"
+    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-[#EFB403] bg-yellow text-lg font-bold uppercase text-[#733E10]"
+    :disabled="isLoading"
+  >
+    {{ $cta }}
+    <svg
+      x-cloak
+      x-transition
+      aria-label="Submitting"
+      x-show="isLoading"
+      class="-mt-0.5 ml-1 inline-block h-4 w-4 animate-spin fill-current"
+    >
+      {{ partial "helper/svg.html" "spinner" }}
+    </svg>
+  </button>
+</form>
