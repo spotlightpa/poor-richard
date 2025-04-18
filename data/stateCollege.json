@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2025-04-16-SPLPAAMERICAN0425.md"
+    "content/statecollege/2025-04-18-SPLCALENDAR0425.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-03-21-SPLPUC0325.md",
-    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md",
-    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
+    "content/statecollege/2023-03-23-SPLHOWLOCAL.md",
+    "content/statecollege/2025-03-24-SPLARPABUD0325.md",
+    "content/statecollege/2024-12-19-SPLGREGGHOW1224.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-04-16-SPLPAAMERICAN0425.md",
     "content/statecollege/2025-04-11-SPLAMAZON0425.md",
-    "content/statecollege/2025-04-02-SPLBIRDFLU0425.md",
-    "content/statecollege/2025-03-24-SPLARPABUD0325.md"
+    "content/statecollege/2025-04-02-SPLBIRDFLU0425.md"
   ],
   "topper": []
 }
