@@ -14,6 +14,7 @@ blurb = "Spotlight PA is here to help you navigate the Pennsylvania election pro
 url = "/elections/"
 aliases = [
     "/election/",
+    "/elections-2023/",
     "/elections-2025/",
     "/elections/contest/",
 ]
