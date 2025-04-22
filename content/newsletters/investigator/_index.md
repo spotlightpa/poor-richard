@@ -17,9 +17,10 @@ device-image = "2025/04/01m0-1bbb-bqgg-rjr1.png"
 device-image-width = 956
 device-image-height = 1712
 
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
-hiddenField = "newsletter/papost-hidden.html"
+gaCategory = "newsletters:investigator"
+gaForm = "newsletters:investigator-full"
+hiddenField = "newsletter/investigator-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true

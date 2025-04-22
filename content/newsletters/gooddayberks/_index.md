@@ -19,7 +19,8 @@ device-image-height = 1712
 
 gaCategory = "newsletters:berks"
 gaForm = "newsletters:berks-full"
-hiddenField = "newsletter/papost-hidden.html"
+hiddenField = "newsletter/berks-county-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true

@@ -19,9 +19,10 @@ device-image-height = 1712
 quote = "“Thank you for elevating this important issue.”"
 quote-source = "— How We Care reader"
 
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
-hiddenField = "newsletter/papost-hidden.html"
+gaCategory = "newsletters:howwecare"
+gaForm = "newsletters:howwecare-full"
+hiddenField = "newsletter/howwecare-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true

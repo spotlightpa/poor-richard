@@ -17,9 +17,10 @@ device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
 device-image-width = 956
 device-image-height = 1712
 
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
-hiddenField = "newsletter/papost-hidden.html"
+gaCategory = "newsletters:pennstatealert"
+gaForm = "newsletters: pennstatealert-full"
+hiddenField = "newsletter/pennstatealert-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true

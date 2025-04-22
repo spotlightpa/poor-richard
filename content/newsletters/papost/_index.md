@@ -23,6 +23,7 @@ quote-source = "— PA Post reader"
 gaCategory = "newsletters:papost"
 gaForm = "newsletters:papost-full"
 hiddenField = "newsletter/papost-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true

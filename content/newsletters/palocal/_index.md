@@ -20,6 +20,7 @@ device-image-height = 1712
 gaCategory = "newsletters:palocal"
 gaForm = "newsletters:palocal-full"
 hiddenField = "newsletter/palocal-hidden.html"
+
 cta = "Sign up"
 
 modal-exclude = true
