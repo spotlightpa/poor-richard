@@ -85,7 +85,7 @@ Las urnas abren a las 7 a.m. y cierran a las 8 p.m. Mientras que esté en la col
 
 El último día para inscribirse es el 8 de abril.
 
-Puede registrarse en línea <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">aquí</a>, o presentar un <a href="https://www.vote.pa.gov/Resources/Documents/PA%20Voter%20Services_Spanish_Web%20Version.pdf">formulario de inscripción</a> en persona o por correo en la oficina electoral de su condado antes de la misma fecha.
+Puede registrarse en línea <a href="https://web.archive.org/20240110045750/https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">aquí</a>, o presentar un <a href="https://web.archive.org/20240328223358/https://www.vote.pa.gov/Resources/Documents/PA%20Voter%20Services_Spanish_Web%20Version.pdf">formulario de inscripción</a> en persona o por correo en la oficina electoral de su condado antes de la misma fecha.
 
 Las solicitudes de registro de votantes en línea deben enviarse antes de las 11:59 p.m. de ese día. La junta electoral de su condado debe recibir las solicitudes por correo y en persona antes de las 5 p.m.
 
@@ -93,11 +93,11 @@ Las solicitudes de registro de votantes en línea deben enviarse antes de las 11
 
 <h2 id="spl-heading-4">¿Cómo puedo consultar mi registro electoral?</h2>
 
-Puede comprobar su registro <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">aquí</a>. Puede buscar utilizando su nombre, condado, código postal y fecha de nacimiento, o introduciendo los números de su permiso de conducir o de su tarjeta de identificación de PennDOT.
+Puede comprobar su registro <a href="https://web.archive.org/20240110050448/https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">aquí</a>. Puede buscar utilizando su nombre, condado, código postal y fecha de nacimiento, o introduciendo los números de su permiso de conducir o de su tarjeta de identificación de PennDOT.
 
 <h2 id="spl-heading-5">¿Cómo cambio de partido?</h2>
 
-Para cambiar de partido, rellene el mismo <a href="https://www.vote.pa.gov/Resources/Documents/PA%20Voter%20Services_Spanish_Web%20Version.pdf">formulario de inscripción</a> que utilizó la primera vez.
+Para cambiar de partido, rellene el mismo <a href="https://web.archive.org/20240328223358/https://www.vote.pa.gov/Resources/Documents/PA%20Voter%20Services_Spanish_Web%20Version.pdf">formulario de inscripción</a> que utilizó la primera vez.
 
 Al rellenar el formulario, seleccione la casilla que dice &#34;cambio de partido&#34;. Si te registras menos de 15 días antes de las elecciones, el cambio no tendrá lugar hasta el siguiente ciclo electoral.
 
@@ -111,21 +111,21 @@ Los votantes no afiliados y de terceros partidos pueden participar en elecciones
 
 <h2 id="spl-heading-7">¿Cómo puedo encontrar mi colegio electoral?</h2>
 
-Puede encontrar su colegio electoral <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, introduciendo su dirección.
+Puede encontrar su colegio electoral <a href="https://web.archive.org/20240110043356/https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, introduciendo su dirección.
 
 <h2 id="spl-heading-8">¿Qué más necesito saber para votar en persona?</h2>
 
-Si es la primera vez que vota o la primera vez que vota después de cambiar de domicilio, deberá presentar un documento de identidad. Puede ser cualquier documento de identidad expedido por el gobierno, como la licencia de conducir o el pasaporte estadounidense; una factura de servicios públicos o un extracto bancario que incluya su nombre y dirección, o una tarjeta de identificación militar o de estudiante. <a href="https://www.vote.pa.gov/Resources/espanol/Register-To-Vote/Pages/Voter-ID-for-First-Time-Voters-Spanish.aspx">Consulte la lista completa de opciones</a>.
+Si es la primera vez que vota o la primera vez que vota después de cambiar de domicilio, deberá presentar un documento de identidad. Puede ser cualquier documento de identidad expedido por el gobierno, como la licencia de conducir o el pasaporte estadounidense; una factura de servicios públicos o un extracto bancario que incluya su nombre y dirección, o una tarjeta de identificación militar o de estudiante. <a href="https://web.archive.org/20240111172230/https://www.vote.pa.gov/Resources/espanol/Register-To-Vote/Pages/Voter-ID-for-First-Time-Voters-Spanish.aspx">Consulte la lista completa de opciones</a>.
 
 <h2 id="spl-heading-9">¿Puedo solicitar el voto por correo?</h2>
 
 Puede solicitar una papeleta de voto por correo hasta el 16 de abril, en línea o por correo. Sin embargo, la oficina del condado debe recibir su solicitud completa antes de las 5.pm. de ese día.
 
-<a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">Aquí tiene la solicitud</a>. Tendrá que indicar su nombre, fecha de nacimiento, documento de identidad y firma.
+<a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">Aquí tiene la solicitud</a>. Tendrá que indicar su nombre, fecha de nacimiento, documento de identidad y firma.
 
 <h2 id="spl-heading-10">¿Cómo se vota en ausencia?</h2>
 
-El proceso para solicitar un voto en ausencia es similar al de solicitar un voto por correo. Puede solicitarlo por Internet o <a href="https://www.vote.pa.gov/Voting-in-PA/Documents/Absentee%20Ballot%20Application-SPANISH.pdf">descargar el formulario</a> y enviarlo a la oficina electoral de su condado. Sin embargo, la solicitud requiere que indique el motivo de su ausencia, a diferencia del voto por correo. Puede encontrar la solicitud <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">aquí</a>.
+El proceso para solicitar un voto en ausencia es similar al de solicitar un voto por correo. Puede solicitarlo por Internet o <a href="https://www.vote.pa.gov/Voting-in-PA/Documents/Absentee%20Ballot%20Application-SPANISH.pdf">descargar el formulario</a> y enviarlo a la oficina electoral de su condado. Sin embargo, la solicitud requiere que indique el motivo de su ausencia, a diferencia del voto por correo. Puede encontrar la solicitud <a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">aquí</a>.
 
 El plazo de presentación de solicitudes finaliza el 16 de abril a las 5 p.m. y deben llegar a la oficina de su condado antes de esa fecha.
 
@@ -133,7 +133,7 @@ Si no cumple el plazo del 16 de abril, aún puede solicitar un voto en ausencia 
 
 <h2 id="spl-heading-11">He presentado mi solicitud, pero aún no he recibido mi papeleta de voto por correo o en ausencia. ¿Qué debo hacer?</h2>
 
-Puede comprobar el estado de su voto por correo o en ausencia <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
+Puede comprobar el estado de su voto por correo o en ausencia <a href="https://web.archive.org/20240108142928/https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">aquí</a>. Si le preocupa que su papeleta no llegue con tiempo suficiente para devolverla, puede <a href="https://web.archive.org/20240114074329/https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">llamar a la oficina electoral de su condado</a> para que le indiquen cómo proceder.
 
 También puede acudir a la oficina electoral de su condado para solicitar una papeleta y rellenarla allí mismo, o ir a su colegio electoral y votar en persona el día de las elecciones.
 
@@ -141,7 +141,7 @@ También puede acudir a la oficina electoral de su condado para solicitar una pa
 
 En primer lugar, asegúrese de <a href="https://www.spotlightpa.org/news/2023/04/pa-primary-election-2023-mail-ballot-deadline-request-guide/">haberla rellenado completamente y de haber seguido todas las instrucciones</a>, incluida la de fechar correctamente el sobre de la papeleta. De lo contrario, es posible que su papeleta no se contabilice.
 
-Cada quien puede devolver su papeleta a través del correo o depositándola en la oficina electoral de su condado. Algunos condados también disponen de buzones. <a href="https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">Encuentre la información de contacto del condado aquí</a>.
+Cada quien puede devolver su papeleta a través del correo o depositándola en la oficina electoral de su condado. Algunos condados también disponen de buzones. <a href="https://web.archive.org/20240114074329/https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">Encuentre la información de contacto del condado aquí</a>.
 
 La oficina electoral de su condado debe recibir su papeleta antes de las 8 p.m. del día de las elecciones.
 
@@ -173,9 +173,9 @@ Trump se ha <a href="https://apnews.com/article/trump-haley-election-2024-republ
 
 El Senado de Estados Unidos está compuesto por 100 senadores, dos por cada estado. Los senadores son elegidos para mandatos de seis años y, cada dos años, aproximadamente un tercio del cuerpo se presenta a la reelección.
 
-Este año, las primarias para el Senado se <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+Este año, las primarias para el Senado se <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
 
-Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
+Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://web.archive.org/20240222015724/https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
 
 Más información sobre Casey en el <u>sitio web de su campaña</u>.
 
@@ -183,7 +183,7 @@ McCormick, nacido en Washington, Pensilvania, es un antiguo gestor de fondos de 
 
 Aunque las primarias no son disputadas, se espera que las elecciones generales de Pensilvania al Senado sean una de las más caras de este año.
 
-Actualmente, un estrecho margen de dos escaños da a los demócratas el control de la cámara, pero con <a href="https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 senadores demócratas</a> en la papeleta de este año, ese equilibrio podría cambiar fácilmente.
+Actualmente, un estrecho margen de dos escaños da a los demócratas el control de la cámara, pero con <a href="https://web.archive.org/20240409061554/https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 senadores demócratas</a> en la papeleta de este año, ese equilibrio podría cambiar fácilmente.
 
 <h3 id="spl-heading-16">Cámara de los Estados Unidos</h3>
 
@@ -233,7 +233,7 @@ Este año no hay medidas de ámbito estatal en las urnas, pero es posible que al
 
 En Filadelfia, se <a href="https://vote.phila.gov/media/2024P_Ballot_Questions.pdf">votará en las primarias</a> si la ciudad debe ayudar a pagar la defensa legal de las organizaciones comunitarias registradas, o por sus siglas en inglés: RCOs.
 
-<a href="https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">Compruébelo en la oficina electoral de su condado</a>.
+<a href="https://web.archive.org/20240114074329/https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">Compruébelo en la oficina electoral de su condado</a>.
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Conozca más</a> sobre cómo Spotlight PA está cubriendo las elecciones de 2024.
 
