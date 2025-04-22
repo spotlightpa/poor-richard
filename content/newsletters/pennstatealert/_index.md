@@ -26,6 +26,12 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "Penn State Alerts"
 
+weight = 6
+image-size = "inline"
+
+[cascade] 
+image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
+
 
 [[staff]]
 name = "Colin Deppen"

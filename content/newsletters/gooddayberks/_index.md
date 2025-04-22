@@ -27,6 +27,14 @@ modal-exclude = true
 linktitle = "Good Day, Berks"
 
 
+image-size = "inline"
+image-gravity = "ea"
+weight = 4 
+
+[cascade]
+image = "2023/09/01jf-h6pe-1sks-18dz.jpeg" 
+
+
 [[staff]]
 name = "Colin Deppen"
 title = "Newsletter Editor"

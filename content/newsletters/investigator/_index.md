@@ -26,6 +26,13 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "The Investigator"
 
+image-size = "inline" 
+published = 2020-09-03T01:14:40.334Z 
+image-gravity = "ce" 
+weight = 2 
+
+[cascade] 
+image = "2021/06/01gc-4k5c-twja-965v.jpeg" 
 
 [[staff]]
 name = "Colin Deppen"
@@ -65,6 +72,8 @@ image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
 width = 3200
 height = 2400
 link = "https://www.spotlightpa.org/newsletters/howwecare"
+
+
 
 +++
 

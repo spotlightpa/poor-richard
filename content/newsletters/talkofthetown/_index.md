@@ -26,6 +26,13 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "Talk of the Town"
 
+weight = 7
+image-gravity = "ce"
+image-size = "inline"
+
+[cascade]
+image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
+
 
 [[staff]]
 name = "Colin Deppen"

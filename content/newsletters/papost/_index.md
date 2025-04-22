@@ -29,6 +29,14 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "PA Post"
 
+image-size = "inline"
+published = 2020-09-03T01:15:52.230Z
+image-gravity = "ea"
+weight = 1
+
+[cascade] 
+image = "2021/06/01gc-4k5b-cx91-fppc.jpeg" 
+
 [[staff]]
 name = "Colin Deppen"
 title = "Newsletter Editor"

@@ -26,6 +26,12 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "PA Local"
 
+image-size = "inline"
+image-gravity = "ea"
+weight = 3 
+
+[cascade]
+image = "2022/02/01h0-cwrk-fbjj-n32w.jpeg" 
 
 [[staff]]
 name = "Colin Deppen"
